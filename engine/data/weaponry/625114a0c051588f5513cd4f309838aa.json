@@ -42,5 +42,42 @@
     "cult_following",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Arcturus MX-1 'Cerberus'",
+    "Brecken Yılmaz-Osei",
+    "Nika Svensson-Kone",
+    "Ringo PD-1 'Citizen'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA TC-3 'Crucible'",
+    "TESSERA TK-4 'Hellhound'",
+    "The Burden Clause",
+    "The Crucible",
+    "The Meridian Lock",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
+    "the_meridian_office_park"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist engineering statement — three barrels splayed in a distinct triangular cluster from a heavily reinforced frame, immediately marking it as unconventional. The silhouette is wider and denser than a standard revolver, with the triple-barrel arrangement dominating the front profile. Despite its complexity, it maintains a coherent, almost organic geometry reminiscent of its namesake.",
+    "dimensions": "Overall length 22-28 cm (barrel-dependent alignment). Frame width at barrel cluster: 8.5 cm. Cylinder diameter: 4.2 cm. Two-inch barrel: 5 cm. Four-inch barrel: 10 cm. Six-inch barrel: 15 cm. Barrel cluster projection: 6 cm forward of frame.",
+    "weight_description": "Decidedly hefty — 1.38 kg with substantial forward weight bias. Feels planted and grounded in the hand, with the triple-barrel cluster creating noticeable muzzle-heavy characteristics. Requires confident grip strength; not a weapon for casual carry or quick-draw specialists.",
+    "primary_material": "Hardened steel frame and barrel cluster with aerospace-grade aluminum alloy receiver housing. Cylinder of tool steel with precision-bored chambers.",
+    "finish": "Matte gunmetal grey with selective brushed steel accents on the barrel cluster edges. Visible machine marks and precision-cut cooling grooves along the barrel housing. Minimal polish — engineering over aesthetics.",
+    "color_scheme": "Gunmetal grey primary with brushed chrome/steel highlights on barrel selector mechanism and cylinder release. Accent: deep burnt orange/copper oxidation patina developing on higher-wear edges (intentional or age-dependent).",
+    "grip_texture": "Textured synthetic polymer grip with fine crosshatch pattern for secure purchase despite the weapon's forward weight. Thumb selector positioned for ergonomic rotation — slightly raised, knurled surface for positive feedback.",
+    "distinctive_features": [
+      "Triangular triple-barrel cluster with visible spacing grooves for heat dissipation",
+      "Rotary barrel selector thumb switch with click-stop detents (3-position)",
+      "Precision-machined barrel alignment channels visible on frame sides",
+      "Crucible Industries maker's mark stamped on frame above trigger guard",
+      "Serial plate inset into right grip panel with enhanced registration ID overlay",
+      "Visible torque wrench marks on triple-barrel assembly bolts",
+      "Cooling vents machined into barrel cluster housing",
+      "Target crown visible on six-inch barrel (slight beveled edge)",
+      "Custom engravings: 'CERBERUS-357 HELLHOUND' script along cylinder spine"
+    ],
+    "manufacturer_markings": "Crucible Veterinary Genomics serif logo stamped above trigger guard. 'CERBERUS-357 | HELLHOUND' engraved along the cylinder spine in angled modern sans-serif. Enhanced registration hologram embedded in right grip panel (reflects light at specific angles). Model number etched on frame base beneath cylinder.",
+    "condition_typical": "Field-maintained condition — clean barrel bores from regular use, light fingerprint oils on grip, minor scratch patterns on selector mechanism from repeated thumb operation. Muzzle edges show subtle wear from hundreds of draws. No rust, but atmospheric oxidation patina is expected and considered characteristic."
+  },
+  "image_prompt": "Cyberpunk weapon catalog shot: Crucible Industries Cerberus-357 Hellhound revolver with distinctive triangular triple-barrel cluster, displayed on dark gunmetal surface. Dramatic side-lighting from cool blue-white source emphasizing the three barrels' dimensional separation and precision machining. Gloved hand (dark tactical glove, visible augmentation port on wrist) holding grip at 45-degree angle to showcase barrel selector thumb switch and cylinder relief. Matte gunmetal finish with brushed steel accents catching light. Background: softly blurred cyberpunk cityscape with neon signage blur. Close-up detail showing engraved 'HELLHOUND' script and Crucible maker's mark. Product photography aesthetic: clinical, sharp focus, professional lighting setup revealing mechanical complexity and engineering intentionality. --ar 3:2 --v 6"
 }

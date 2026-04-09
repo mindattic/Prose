@@ -45,5 +45,34 @@
     "tier 1",
     "non_lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Fatoumata Belov-Ntim",
+    "GLMZ",
+    "Lacuna Genomics",
+    "Nika Svensson-Kone",
+    "Street Custom 'Lighthouse' Improvised Area Illumination Flare",
+    "TESSERA TC-3 'Crucible'"
+  ],
+  "physical_description": {
+    "visual_profile": "A chunky, industrial signal launcher with a pronounced break-action breech. The silhouette is deliberately utilitarian — all function, minimal ergonomic flourish. The barrel dominates the profile, slightly flared at the muzzle to stabilize the large 26.5mm round. It reads as a tool first, a weapon second, though the distinction feels deliberately maintained.",
+    "dimensions": "220mm overall length, 65mm width at breech, 45mm barrel diameter. The break-action hinge sits at the gun's midpoint, making it compact enough for one-handed operation but substantial enough to feel like serious equipment.",
+    "weight_description": "Hefty without being unwieldy — 0.4kg gives it real presence in the hand, distributed toward the muzzle. The weight feels honest, industrial, designed to absorb recoil from the magnesium round's launch force.",
+    "primary_material": "Reinforced polymer composite frame with steel breech and barrel. The polymer is impact-resistant engineering grade, not cheap polymer, with visible stress-relief ridges molded into the body.",
+    "finish": "Matte charcoal polymer with brushed steel barrel and breech housing. The finish shows deliberate practicality — non-reflective, resistant to glare. High-contact areas show evidence of coating wear, revealing pale polymer beneath.",
+    "color_scheme": "Charcoal gray primary with steel-silver accents. Safety markings in high-visibility yellow stripe running along the barrel. The Crucible Educational Foundation logo appears in muted white.",
+    "grip_texture": "Rubberized polymer grip with aggressive diamond-pattern texturing. The texture is designed for gloved operation — corporate security gloves, emergency responder gloves, even grimy street-tier work gloves find purchase. The grip extends slightly forward of the trigger guard.",
+    "distinctive_features": [
+      "Prominent break-action hinge with visible lugs",
+      "Large muzzle flare with vertical cooling slots",
+      "Recessed safety lever just behind the trigger guard, color-coded yellow",
+      "Integrated sighting groove machined into the top of the barrel",
+      "Pressure-relief vents along the upper polymer body",
+      "Magnesium residue staining (brownish discoloration) around the muzzle and vents on used units",
+      "Serial number plate on the left side of the breech, stamped rather than laser-etched"
+    ],
+    "manufacturer_markings": "Crucible Educational Foundation logo (stylized lighthouse symbol in a circle) printed in white on the right polymer panel. Smaller text below reads 'SG-3 LIGHTHOUSE' in technical sans-serif. The safety marking 'SIGNAL DEVICE' appears in yellow along the barrel — a deliberate legal positioning.",
+    "condition_typical": "Well-maintained but visibly used. Corpo security units are pristine. Street-tier operators show scuff marks, polymer stress marks from aggressive handling, magnesium burn residue that doesn't fully clean. Many field units have improvised grip wraps or custom sights added by users."
+  },
+  "image_prompt": "Product photograph of the Crucible SG-3 Lighthouse signal launcher, mounted on a dark brushed steel surface. Dramatic side-lighting from the left, casting sharp shadows across the barrel and breach mechanism. The 26.5mm round sits beside the launcher, gleaming slightly. Close-up detail showing the textured grip, safety lever in yellow, and visible magnesium residue around the muzzle. Cyberpunk industrial aesthetic — clinical, functional, ominous. Shot from a 45-degree angle emphasizing the break-action mechanism and barrel flare. Cool color temperature with amber accent lighting on the Crucible logo. --ar 3:2 --v 6"
 }

@@ -49,5 +49,32 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "GLMZ",
+    "Helix Biosystems",
+    "Kadiatou Kobayashi-Appiah-Kubi",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA PG-2 'Signature'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, deliberately unsexy hovering cube with a predatory patience built into its lines. The CIDD-3 resembles a small autonomous cube-drone, but its proportions are subtly off—slightly flattened, with weight distributed toward the center, making it look heavier and more grounded than typical aerial platforms. The front face features a dark, recessed lens array that doesn't reflect light the way cameras normally do; it absorbs it. This absence of reflection is deeply unsettling. The overall impression is clinical, almost medical—something that belongs in a sterile facility, not a combat zone.",
+    "dimensions": "28cm L × 14cm W × 14cm H. Compact enough to fit in a large hand, awkward enough that no one wants to hold it for long.",
+    "weight_description": "Deceptively dense in hand—1.8kg distributed to feel heavier. The battery pack is mounted low, giving it a bottom-heavy quality that makes it feel anchored, purposeful. Not a weapon that feels nimble; it feels methodical.",
+    "primary_material": "Anodized aerospace-grade aluminum chassis with reinforced polymeric dampening mounts. The frame is rigid, designed to absorb vibration from sustained beam emission without drift.",
+    "finish": "Matte gunmetal gray with micro-texturing that kills reflections. The central lens array is deep matte black. Minimal shine anywhere—every surface treated to disappear into shadow.",
+    "color_scheme": "Gunmetal gray primary with black accent array and subtle teal indicator lines running along the power coupling points. Minimal branding.",
+    "grip_texture": "Not designed for gripping, but the corners are beveled with a slight rubberized grip compound for securing to mounting brackets.",
+    "distinctive_features": [
+      "Central recessed lens array (moisture-differential sensor cluster) that sits dark and unreflective",
+      "Four discrete positioning vents (one per face) for thermal management",
+      "Faint teal LED indicators along power coupling edges—visible only when powered",
+      "Mounting hardpoint on undercarriage for deployment rig attachment",
+      "Micro-hairline seams where the catalytic emission chamber joins the main chassis",
+      "Heat-treated discoloration around the lens array (faint purple-gray hue from sustained beam testing)"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo (a double-helix motif) stamped in raised relief on the upper left face, approximately 2cm across. Below it: 'CIDD-3' model designation and a serial plate with batch code and manufacturing date. All markings are matte and small—designed for documentation, not advertising.",
+    "condition_typical": "Field-used units show light scuffing on the mounting hardpoints and thermal discoloration (faint purple-gray oxidation) around the lens assembly from sustained operation. Battery housing develops minor stress marks from repeated charge cycles. Overall condition is meticulous—HELIX maintains these like laboratory equipment because that's what they are."
+  },
+  "image_prompt": "Product photograph of the CIDD-3 'Husk' drone hovering 15cm above a brushed steel surface, angled 45 degrees to reveal the front lens array and thermal vents. Dramatic side-lighting from a single cool-toned source (5000K LED), casting deep shadows across the matte gray aluminum, emphasizing the unreflective nature of the surfaces. The central lens array should appear as an absolute void—pure black with no light scatter. Faint teal LED indicators glowing subtly along power coupling edges. The background is deep charcoal with a slight gradient to near-black, suggesting an interrogation room or clinical facility. Small depth-of-field blur on the mounting hardpoint details. Include subtle atmospheric haze suggesting the dry, saline odor signature. Cyberpunk aesthetic: utilitarian, medical, sinister through precision rather than aesthetics. Tier 3+ military/corporate custody. --ar 3:2 --v 6"
 }

@@ -53,5 +53,28 @@
     "TESSERA PG-2 'Signature'",
     "The Shelf",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately fragmented, low-profile silhouette built for surveillance evasion and rapid movement. The look reads as intentionally broken-in and self-maintained — someone who assembles function from discarded parts. Slim and angular, with strategic bulk only where it serves concealment or insulation. The overall impression is ghost-like: minimal reflectance, neutral tones, designed to slip through crowds and camera dead zones.",
+    "fit": "Compression-tight through the torso and arms; slim-straight through the legs. The deconstructed puffer vest hangs loosely over the fitted base layer, creating visual noise and silhouette distortion. Everything is calibrated for mobility — no excess fabric, no billowing, nothing to catch or snag.",
+    "primary_material": "Matte black moisture-wicking jersey (base layer); peeling anti-reflective coated nylon (vest shell); dark grey ripstop cotton-poly blend (trousers); faded indigo cotton (scarf); compression blend synthetics (socks); vulcanized rubber and re-glued canvas (sneakers)",
+    "texture": "Worn smooth and matte where fabric has thinned; visible pilling and stress creases; uneven puffing in the vest creates raised quilted patches alternating with flat, deflated sections; peeling anti-reflective coating shows silvered underlayers; hook-and-loop closures worn to near-silk; scuffed and scavenged aesthetic throughout",
+    "color_scheme": "Matte black, charcoal grey, and faded indigo as primary palette. Anti-reflective coating creates subtle silver-grey shimmer in low light. Neutral, desaturated — nothing to draw attention in dim corridors or surveillance feeds.",
+    "closures": "Industrial webbing belt with salvaged cargo clip buckle; hook-and-loop on all three thigh pockets (worn smooth); carabiners clipping hood to collar; friction-fit and re-glued construction on sneakers",
+    "distinctive_features": [
+      "Non-functional salvaged BCI neural port interface sewn into left collar — worn as talisman or trophy",
+      "Deconstructed puffer vest with unevenly redistributed insulation creating textured, disrupted silhouette",
+      "Peeling anti-reflective coating on vest shell — still functional in low light, deliberately left un-restored",
+      "Three hook-and-loop sealed patch pockets running down right thigh, worn to smoothness from repeated use",
+      "Deployable hood (separated from original jacket) clipped to back collar with carabiners — seconds-to-deploy coverage",
+      "Doubled industrial webbing belt, salvaged cargo clip buckle",
+      "Faded indigo scarf wound once around neck, tucked into vest for quick-release access",
+      "Sneakers with re-glued uppers (at least twice) and reinforced toe cap — field-repaired multiple times",
+      "Thin compression socks under low-profile sneakers with thick gum soles"
+    ],
+    "tier_indicator": "Tier 4-5 boundary. This is functional sub-grade assembly — built from salvage and discarded military/medical surplus, self-maintained, deliberately un-restored. The anti-reflective coating and BCI port suggest prior Tier 2-3 origins, but the current owner has stripped it of status markers and weaponized it for invisibility rather than display.",
+    "cultural_context": "Shelf runner, surveillance evader, or ungoverned zone operative. This is the uniform of someone who moves through contested corridors and GLMZ blind spots intentionally. The salvaged neural port and cargo clip suggest military or corporate security background (or theft thereof). Wearing this signals: 'I move unseen, I assemble my own gear, I know the gaps in the net.'",
+    "condition_typical": "Perpetually weathered and field-worn. Elbows thin at the fabric; sneakers held together by will and adhesive; hook-and-loop closures almost smooth from constant use. Nothing is pristine — every component shows its history. This is not a look that ages into vintage; it ages into function."
+  },
+  "image_prompt": "Thin, mixed-heritage model in Circuit Ghost Wrap standing in a dim GLMZ Shelf corridor, 2226. Matte black moisture-wicking base layer visible at collar and wrists where the deconstructed puffer vest gaps; uneven quilting and peeling anti-reflective coating catching faint neon bleed from distant signs. Indigo scarf wound tight, deployable hood clipped to back collar. Close-up detail of worn hook-and-loop on thigh pocket, salvaged BCI port sewn into collar, re-glued sneaker uppers. Low-angle shot from waist up. Moody industrial lighting, surveillance camera frame visible in background but slightly out of focus. Grain and slight desaturation. Model's stance: alert, compact, ready to move. Dark concrete walls, distant holographic ad flicker. --ar 2:3 --v 6"
 }

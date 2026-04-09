@@ -39,5 +39,32 @@
     "tier 1",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "TESSERA ES-4 'Perimeter'",
+    "The Cutters Guild",
+    "VitaCore SteadyThread Precision Motor Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist tube launcher resembling a hybrid between a flare gun and an industrial spring mechanism. Aggressive, purpose-built aesthetic with exposed mechanical components. The barrel is a wide, ridged steel tube that flares slightly at the muzzle. Everything about it screams improvised lethality.",
+    "dimensions": "Launcher body: 38cm length, 12cm barrel diameter, 8cm grip width. Overall footprint suggests handheld but requires two-hand operation.",
+    "weight_description": "Heavy and unwieldy in one hand, but balanced for two-handed grip. The weight sits forward in the barrel assembly, making it feel like a sledgehammer with a trigger.",
+    "primary_material": "Welded structural steel frame with hardened steel tube barrel. Battery housing is scuffed aluminum alloy. Spring mechanism is visible through reinforced polymer side panels.",
+    "finish": "Matte gunmetal with heavy scoring and oxidation. Patches of rust bloom at welds. Barrel edges are sharp and unfinished. No attempt at polish or refinement—purely functional.",
+    "color_scheme": "Gunmetal grey with charcoal blacks and rust-orange corrosion. Electrical contacts are bare copper. Single accent: thin blue LED status indicator on the grip module.",
+    "grip_texture": "Textured polymer grip with grooved channels for two-handed hold. Deliberately rough, almost abrasive—designed to not slip even in blood or sweat. Metal trigger guard is exposed steel.",
+    "distinctive_features": [
+      "Exposed helical spring visible through reinforced polycarbonate side panel",
+      "Segmented barrel with pronounced ridging for structural rigidity",
+      "Thumb-operated electrical arming switch with raised metal guard",
+      "Battery status LED pulsing soft blue when charged",
+      "Copper contact leads running from grip module to barrel electrode",
+      "Crude pressure gauge mounted on right side showing wire bundle compression",
+      "Welded cable loop for tactical sling attachment",
+      "Heat scarring around barrel mouth from discharge impact"
+    ],
+    "manufacturer_markings": "Crude stamped 'SPIDERBITE' across top of barrel. Street shop serial number etched into grip—hand-scratched, not official. No corporate logos; entirely black-market manufacture.",
+    "condition_typical": "Well-maintained but deliberately scarred. Users treat it as a tool, not a showpiece. Barrel edges are sharp from use. Electrical contacts show green verdigris from humidity exposure. Wire bundle cartridges show visible heat damage from repeated discharge cycles."
+  },
+  "image_prompt": "Industrial product photo of a brutal electrified wire launcher. Gunmetal steel tube with exposed spring mechanism behind polycarbonate panel, mounted horizontally on dark concrete surface. Gloved tactical hand gripping the textured polymer handle. Copper electrical leads trailing from grip. Close-up detail showing ridged barrel and faint blue LED indicator. Dramatic side-lighting with harsh shadows emphasizing welded seams and rust bloom. Scattered barbed wire coil nearby, some strands catching light to show metallic sheen. Dark, gritty GLMZ warehouse aesthetic. Cyberpunk weaponry catalog style. --ar 3:2 --v 6"
 }

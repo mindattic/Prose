@@ -46,5 +46,25 @@
     "SynapTech AromaVeil Olfactory Filter",
     "Synaptrel",
     "The United Workers Front"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian six-panel structured cap with a pronounced stiffened brim, designed for functionality over fashion. The integrated face filter creates a distinctive dual-purpose silhouette—part transit worker gear, part respiratory protection. When filter is deployed, it reads as quasi-medical; when stowed, purely industrial.",
+    "fit": "Structured and slightly generous through the crown to accommodate shift-workers and augmented cranial ports. The ear panels are soft and unlined, designed for extended wear comfort. Adjustable rear closure (implied by transit worker standard). Filter panel sits flush against lower face when deployed.",
+    "primary_material": "Ripstop synthetic in Kelvex's proprietary charcoal-grey—durable, stain-resistant, designed for high-traffic environments. Interior band is moisture-wicking synthetic terrycloth. Filter panel is medical-grade N95 composite material.",
+    "texture": "Ripstop weave creates subtle grid pattern visible up close. Filter panel has slight mesh texture. Terrycloth interior is soft and absorbent. Brim has reinforced structure, neither floppy nor rigid.",
+    "color_scheme": "Charcoal-grey base with reflective orange Kelvex logo patch on left panel. Logo acts as both branding and low-light visibility marker.",
+    "closures": "Snap-track deployment system for filter panel (integrated magnetic or friction snaps). Likely rear velcro or plastic adjuster for head circumference.",
+    "distinctive_features": [
+      "Fold-down N95 filter panel integrated into front brim on snap-track mechanism",
+      "Reflective orange Kelvex logo patch (left panel) serves as visibility marker",
+      "Soft, unlined ear panels for augmentation compatibility",
+      "Moisture-wicking terrycloth interior band for shift-worker comfort",
+      "Reinforced brim stiffening for durability",
+      "Ripstop weave throughout for damage resistance"
+    ],
+    "tier_indicator": "Tier 3 (working class). Functional gear issued or purchased by transit system employees and infrastructure workers. Not luxury, not salvage—practical corporate-adjacent.",
+    "cultural_context": "This cap signals essential worker status in the GLMZ transit infrastructure. Wearing it identifies the wearer as part of Kelvex Transit Systems' operational workforce—drivers, platform attendants, maintenance personnel. The deployed filter suggests hazard exposure (dust, particulate, air quality concerns in the industrial zones). Augmented workers appreciate the unlined ear panels for port access.",
+    "condition_typical": "Typically broken-in and well-maintained by workers who depend on it. Brim may show creasing. Filter panel might have slight discoloration from use. Reflective patch remains bright (regularly replaced by Kelvex). No major wear unless belonging to a long-term veteran worker."
+  },
+  "image_prompt": "Cyberpunk transit worker wearing a Kelvex Transit Ground Filter Cap, charcoal-grey ripstop with reflective orange logo on left panel. Close-up angle showing both stowed and deployed filter panel state on separate shots. Model has visible cybernetic augmentation (subtle cranial port or enhanced optics). Shot in dim underground transit station with neon accent lighting and industrial metal backdrop. Moody, desaturated color grading with orange neon reflecting off the cap's ripstop texture. Dark concrete and steel environment. Professional catalog style. --ar 2:3 --v 6"
 }

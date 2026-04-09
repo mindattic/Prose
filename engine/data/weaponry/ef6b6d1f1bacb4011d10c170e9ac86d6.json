@@ -41,5 +41,36 @@
     "tungsten-ceramic",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Nurlan Holmberg-Dembele",
+    "Praevex",
+    "Slagworks Industrial"
+  ],
+  "physical_description": {
+    "visual_profile": "A longsword-proportioned weapon with an aggressive, functional aesthetic. The blade tapers to a sharp point with a subtle fuller running its length. When inactive, it appears as a dark, utilitarian melee weapon with industrial overtones. When active, the cutting edge glows brilliant orange-white, creating an unsettling halo effect that radiates visible heat shimmer into the air around it.",
+    "dimensions": "Blade length 85 cm, total length 118 cm, blade width approximately 5 cm at the widest point near the crossguard",
+    "weight_description": "Hefty but well-balanced — 2.1 kg distributed evenly along the blade and handle, making it feel substantial in hand without being unwieldy. The weight favors the blade slightly, giving momentum to cuts.",
+    "primary_material": "Tungsten-ceramic composite blade with a steel or titanium alloy spine and crossguard. Handle is reinforced polymer or anodized aluminum with integrated fuel cell housing.",
+    "finish": "Blade has a dark gunmetal matte finish with faint striations where the thermal insulation layer meets the cutting edge. The spine shows brushed metal treatment. Handle features a textured non-slip polymer coating, slightly weathered from field use.",
+    "color_scheme": "Charcoal gray and dark gunmetal primary; glowing orange-white cutting edge when active. Accent details in anodized blue or red (manufacturer color-coding visible on crossguard and pommel cap).",
+    "grip_texture": "Deeply textured thermoplastic polymer with embedded grip channels, slightly rubberized to prevent slipping when sweat or moisture is present. Warm to the touch even when inactive due to residual heat from the fuel cell.",
+    "distinctive_features": [
+      "Visible thermal insulation layer as a darker band running parallel to the cutting edge",
+      "Small LED indicator near the crossguard showing fuel cell status (green/yellow/red)",
+      "Venting slots along the blade spine for heat dissipation",
+      "Crossguard with angled, aggressive geometry — designed to catch and bind opponent weapons while the heated edge remains exposed",
+      "Pommel cap with fuel cell access panel and recessed status display",
+      "Fine hairline cracks or discoloration in the blade finish from repeated thermal cycling",
+      "Subtle scoring marks along the blade from previous breaching operations"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (stylized 'Φ' symbol merged with a thermal wave motif) stamped into the crossguard. Serial number etched along the blade's spine near the hilt. Restricted weapon classification mark (red triangle with thermal warning symbol) visible on the pommel cap.",
+    "condition_typical": "Well-maintained but showing field wear — minor surface scoring, faint heat discoloration near the tip, grip slightly worn in high-contact areas. Fuel cell housing shows signs of regular maintenance access. Overall condition suggests professional use by trained operatives rather than street-level combat."
+  },
+  "image_prompt": "Product photography of an active Arcturus Cauterizer thermal longsword against a dark composite surface, photographed from a slight upward angle. The blade glows brilliant orange-white along its cutting edge with visible heat shimmer distorting the air around it, while the dark gunmetal spine and handle remain cool and detailed. Dramatic side-lighting emphasizes the thermal gradient and the weapon's angular geometry. The crossguard casts sharp shadows. LED status indicators glow softly near the crossguard. Professional military precision aesthetic with cyberpunk edge. Shot on dark matte black background with shallow depth of field. Cinematic tungsten-ceramic craftsmanship. --ar 3:2 --v 6"
 }

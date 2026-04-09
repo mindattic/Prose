@@ -42,5 +42,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Brecken Yılmaz-Osei",
+    "Kennel",
+    "Nika Svensson-Kone",
+    "Sterling-Nakamura Augmented Reality Court System",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "The Collective",
+    "Volkov-Saito Precision VS-44 'Fenris'"
+  ],
+  "physical_description": {
+    "visual_profile": "A modular support rifle with a distinctly predatory stance—angular, compact, built for synchronized movement. The profile suggests intelligence and coordination, with pronounced rails and mounting points indicating networked integration. Not a solo weapon; it reads as part of something larger.",
+    "dimensions": "113 cm length, 8 cm width at receiver, 6 cm height including top rail. 58 cm barrel.",
+    "weight_description": "Hefty but balanced—8.2 kg distributes forward to the magazine well. Designed for sustained operation; the weight feels purposeful rather than burdensome, settling naturally in the firing position.",
+    "primary_material": "Titanium-reinforced polymer lower receiver with steel barrel assembly and carbon-composite handguard. BCI neural interface module (anthracite aluminum) integrated into the upper receiver.",
+    "finish": "Matte gunmetal with brushed steel accents. The BCI module features a subtle phosphorescent inlay that glows faintly under low light—neural synchronization status indicator.",
+    "color_scheme": "Charcoal gray primary with gunmetal steel accents. Neon blue threading on the BCI coupling interface and faint bioluminescent green tracers within the transparent magazine well.",
+    "grip_texture": "Rubberized polymer grip with subtle ergonomic ridges; textured enough for gloved operation but smooth enough for direct skin contact during BCI synchronization.",
+    "distinctive_features": [
+      "Prominent BCI neural-link port (blue-threaded, recessed into upper receiver)",
+      "Twin heat dissipation vents along the handguard—ventilation for continuous suppressive fire",
+      "Integrated status LEDs near the charging handle: green (synced), amber (ready), red (network lag)",
+      "200-round box magazine with transparent sidewalls showing caseless round configuration",
+      "Modular top rail with pre-drilled mounting points for tactical accessories",
+      "Subtle engraved pack-hierarchy indicator on the left side of the receiver—numbered 1-8",
+      "Reinforced magazine well with quick-release latch for rapid reloads under fire",
+      "Internal dual-feed spring mechanism visible through ejection port"
+    ],
+    "manufacturer_markings": "FENRIS BALLISTICS logo stamped in brushed relief on the lower receiver. Serial number etched beneath. 'FB-12 ALPHA' designation laser-marked on the dust cover. Tier 4+ licensing hologram embedded in the BCI module housing.",
+    "condition_typical": "Field-ready and battle-worn. Scuff marks on the polymer from deployment. Carbon buildup around the heat vents from extended synchronized fire cycles. The BCI module shows microscopic corrosion from neural sweat infiltration—a badge of veteran synchronization."
+  },
+  "image_prompt": "Product photography: Fenris Ballistics FB-12 Alpha support rifle on a dark matte gunmetal surface, photographed from a 45-degree angle. Close-up on the BCI neural-link module glowing subtle neon blue in dramatic side-lighting. Operator's gloved hand (black synthetic leather, faint chrome fingertip augmentation visible) gripping the rubberized polymer stock. The 200-round magazine visible with translucent caseless rounds. Background: dark industrial cyberpunk hangar lighting, single cool-blue accent light illuminating the heat vents. Foreground: shallow focus on the modular rail system. Emphasize the networked readiness, the predatory symmetry of the design, and the faint bioluminescent tracers in the magazine well. Dark, tactical, synchronized. --ar 3:2 --v 6"
 }

@@ -57,5 +57,38 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "GLMZ",
+    "Kang-Petrov Arms KPM-6 'Equalizer'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Ouroboros PG-2 'Blackout'",
+    "Street-Custom Gutter Katana 'Flatline'",
+    "TESSERA PG-2 'Signature'",
+    "The Nearfield",
+    "Zheng-Dao Marrow-Pulse Implant",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, cylindrical charge device with an aggressive technical aesthetic. The body tapers slightly toward a reinforced detonator cap, giving it an almost organic, predatory appearance. Despite its modest size, it projects density and purpose — no wasted material, every surface functional.",
+    "dimensions": "Height: 12 cm, Diameter: 6.5 cm at widest point, Detonator cap protrusion: 1.8 cm",
+    "weight_description": "Surprisingly heavy for its volume — 1.8 kg feels like solid purpose in the palm. The weight is centered low, creating an intuitive balance point. Carries the heft of precision engineering rather than crude bulk.",
+    "primary_material": "Reinforced polymer composite outer shell (blast-rated) with internal steel casing. Detonator cap is machined aluminum alloy with copper-trace electromagnetic coil windings visible beneath translucent inspection panel.",
+    "finish": "Matte tactical black with brushed metallic accents on the aluminum cap. Industrial weathering from field handling — micro-scratches, faint scuff marks. Grip section features knurled texture worn smooth in high-contact areas.",
+    "color_scheme": "Primary: Deep matte black. Accents: Brushed silver-gray (detonator cap), faint copper beneath translucent polymer inspection window. Safety bands in high-visibility orange/red striping near the base.",
+    "grip_texture": "Knurled polymer grip section with aggressive cross-hatching, worn smooth from tactical handling. Slightly tacky to the touch — moisture-resistant coating. Trigger well is deeply recessed for gloved operation.",
+    "distinctive_features": [
+      "Translucent inspection panel on detonator cap revealing copper coil windings and circuit trace pathways",
+      "Three-position trigger selector (timer/remote/proximity) with tactile detents",
+      "Dual indicator lights: red (armed), amber (countdown/active), green (standby)",
+      "Fine EM-field shielding mesh visible at the cap seam",
+      "Manufacturer's microstamped serial plate with Zheng-Dao ideographic mark",
+      "Scoring lines etched into casing at 6m and 12m radius intervals (blast effect reference)",
+      "Heavy-duty retention pin (now missing in well-used units) slot",
+      "Faint heat discoloration on upper casing from internal reaction staging"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC stamped in corporate serif font on upper casing. Microstamped serial number and date code below. Small ideographic mark (DAO character) embossed into grip. Regulatory compliance stamps in corner: 'ANTI-DRONE ONLY' in fading ink.",
+    "condition_typical": "Field-worn but meticulously maintained. Polymer shows handling scuffs and minor impact marks. Detonator cap is pristine — critical component. Inspection window has developed faint micro-scratches from checking the coil status. Safety bands are often graffitied or marked by operators with unit callsigns. Well-maintained units show evidence of regular EM-shielding inspection."
+  },
+  "image_prompt": "Professional product photography of the Electromagnetic Overpressure Charge EOC-8 lying on a dark matte black surface, slightly tilted to show the detonator cap and trigger assembly. Dramatic side-lighting from the left casts deep shadows, highlighting the brushed aluminum detonator cap and the translucent inspection panel revealing copper coil windings inside. The indicator lights glow faintly — red and amber — casting subtle colored light onto the surrounding surface. Hands in tactical gloves frame the lower portion, fingers positioned near the trigger selector without touching it. Background is a soft blur of industrial metal and circuitry. Cyberpunk aesthetic with high technical detail, clean but weaponized, showing wear consistent with field deployment. Shallow depth of field focuses on the cap and trigger mechanism. High contrast, cool color temperature with warm accent lighting on metallic surfaces. --ar 3:2 --v 6"
 }

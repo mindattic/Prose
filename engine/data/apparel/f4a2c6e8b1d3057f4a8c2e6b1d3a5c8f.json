@@ -53,5 +53,25 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist hardshell with an athletic-influenced silhouette. The matte finish reads as understated sophistication—no logos screaming from the chest, no tactical webbing. When worn, it creates clean vertical lines and a slightly tapered waist. The overall impression is 'functional elegance'—someone who values efficiency but doesn't broadcast it.",
+    "fit": "Slim but not tight; allows layering of thermal wear or augmentation rigs underneath without excess fabric. Designed for urban commuters who move through crowds and climate-controlled transit hubs. Arm mobility is unrestricted; torso is gently contoured.",
+    "primary_material": "Three-layer bonded synthetic membrane—hydrophobic nylon exterior bonded to a breathable polyurethane interlayer and a soft polyester lining. Fully seam-sealed with internal tape work.",
+    "texture": "Matte finish with a subtle micro-texture that catches light subtly. The exterior feels smooth and slightly grippy, designed to shed water quickly. No visible stitching mars the surface; all construction is internal.",
+    "color_scheme": "Available in slate (cool grey), sand (warm beige), and signature deep teal. The teal variant has become iconic in GLMZ—it's the shade of Lake Michigan on overcast days, a visual shorthand for 'I commute seriously in this city.'",
+    "closures": "Waterproof slider zipper with storm flap backing. Hood drawcord is minimalist—thin, same-color cord without toggles. Pocket zips are recessed and sealed.",
+    "distinctive_features": [
+      "Hood stows completely into the collar when not in use—no bunching at the neckline",
+      "Seam-sealed internal construction; zero external stitching visible",
+      "Two hand pockets + one chest pocket, all waterproof-zipped",
+      "Subtle Helios-Nomad logo embossed (not printed) on the left chest—visible only up close or in certain light",
+      "Ventilation grommets hidden under arm seams for emergency moisture release",
+      "Reflective trim along lower hem and collar edge—visible only when backlit, unobtrusive otherwise"
+    ],
+    "tier_indicator": "Tier 2 executive commuter aesthetic with Tier 3 accessibility. Price point around 350-450 Φ positions it as aspirational for working-class buyers, essential for mid-level corpo staff.",
+    "cultural_context": "The uniform of GLMZ's professional class—visible on the 6:47 AM monorail, in corpo shuttle fleets, during lunch-break walks along the Chicago shore. Worn by logistics coordinators, junior analysts, and field technicians. It signals 'I have my life organized, I move through the city with purpose, I don't have time for weather.'",
+    "condition_typical": "Pristine or lightly broken-in. Minor water spots disappear within hours of drying. Seams remain sealed indefinitely if cared for. After 2-3 years of commuter wear, may show subtle discoloration at collar/cuffs from sweat contact, but structure remains intact."
+  },
+  "image_prompt": "A Helios-Nomad Stormline Shell in deep teal, photographed on a lean androgynous model with subtle chrome neck augmentation visible above the collar. Model shot from the front in a three-quarter stance, hands in pockets. The shell's matte surface catches cool blue-grey studio lighting. Moody backdrop: rain-slicked concrete platform or monorail station with neon reflection pools. Shallow depth of field. Overcast mood, minimalist composition. The image should feel like a commuter fashion moment—practical, poised, urban. --ar 2:3 --v 6"
 }

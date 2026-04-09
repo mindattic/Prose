@@ -39,5 +39,36 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Ezio Kaboré-Malhotra",
+    "GLMZ",
+    "Mika Sorel",
+    "Palladian Construction",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A jury-rigged spray weapon that disguises lethal intent beneath mundane utility. Most commonly appears as a modified Super Soaker or garden sprayer with amateur reinforcements — the classic silhouette of a child's toy perverted into something predatory. The nozzle is often wider than stock, with crude welding marks or epoxy-sealed seams. Acidic corrosion stains the trigger mechanism and lower body in irregular amber-brown patterns.",
+    "dimensions": "Typical water pistol variant: 35-45cm length, 8-12cm width. Larger garden sprayer variant: 60-80cm length, 15-20cm width. Nozzle tip diameter: 8-15mm depending on spray pattern desired.",
+    "weight_description": "Deceptively light when empty (under 200g), but noticeably heavier when fully loaded with acid (500g-1.5kg depending on capacity). The weight distribution feels front-heavy due to fluid concentration, making it awkward to aim with sustained pressure.",
+    "primary_material": "Polymers salvaged from consumer spray equipment — polypropylene tanks, ABS plastic trigger housings. Internal components often feature chemically-resistant tubing (silicone or PTFE hose stolen from industrial sites). Cheaper variants use standard garden hose with exposed joints sealed with industrial-grade epoxy or silicone sealant.",
+    "finish": "Worn and weathered polymer with aggressive acid damage. The exterior shows blistered paint, discolored splotches, and small pits where acid has leaked from poor seals. Stains range from pale yellow-brown to deep rust where sulfuric acid has eaten into the plastic and underlying metal reinforcement bands. No attempt at aesthetics — function over appearance.",
+    "color_scheme": "Original bright toy colors (neon yellow, electric blue, hot pink) now faded and marred. Acid stains create an unintended camo effect of browns, ambers, and bleached patches. Metal reinforcement bands show raw steel or tarnished copper patina. Accents of exposed wiring or hose clamps in dull gunmetal or rust.",
+    "grip_texture": "Sticky from acid vapor residue and poor ventilation storage. Either the original molded plastic grip (now slightly warped and slick) or wrapped in dirty athletic tape / frayed fabric to improve purchase and conceal staining. Some operators wrap the trigger housing in cloth to prevent acid burns to their own hands during filling or operation.",
+    "distinctive_features": [
+      "Crude valve modifications — oversized or filed-open nozzle to increase spray area",
+      "Hand-written tier markings on the tank body in permanent marker: concentration %, batch date, or crude pictograms (skull, acid-drop icon)",
+      "Sealed seams reinforced with visible epoxy beads or amateur welding",
+      "Chemical warning stickers (faded or deliberately obscured) still partially visible",
+      "Acid-etched serial numbers on the original toy frame, now barely legible",
+      "Improvised pressure release valve (sometimes just a puncture hole covered by duct tape)",
+      "Drip patterns down the barrel from chronic micro-leaks",
+      "Burnt or discolored areas on the tank from heat-concentration process",
+      "Makeshift sight notches filed into the plastic near the nozzle"
+    ],
+    "manufacturer_markings": "Original toy branding (NERF, Supersoaker, brand logos) partially sanded away or deliberately obscured. Crude 'COPPERHEAD' scratched or marker-etched somewhere on the body — sometimes styled as a snake head icon. No legitimate manufacturer claim; street custom stamps or gang tags may appear on the underside.",
+    "condition_typical": "Battle-worn and neglected. Active user weapons show constant acid weeping from stress fractures. The tank interior is visibly discolored through translucent sections. Nozzle often encrusted with dried acid residue that makes the spray pattern unpredictable. Trigger mechanism sticks or responds sluggishly. Repair tape visible at multiple joints. Smells of caustic chemical vapor even when supposedly empty."
+  },
+  "image_prompt": "Product photography of a crude street-modified acid sprayer built from a yellow and blue Super Soaker water gun, laying on a dark steel table under dramatic cool side-lighting. The weapon is scarred and pitted with chemical burn marks in amber and rust-brown. Visible acid stains creep down the barrel and tank seams sealed with epoxy. The nozzle is crude and over-widened. Wrapped grip tape. Handwritten threat markings visible on the tank. Shallow depth of field emphasizing the corroded nozzle tip. Cyberpunk GLMZ underground aesthetic, utilitarian brutalism. Moody blue and amber lighting casting sharp shadows. --ar 3:2 --v 6"
 }

@@ -51,5 +51,24 @@
     "3.2mm Ferromagnetic Tungsten Dart FTD-3",
     "Street Custom 'Molotov Standard' Incendiary Bottle",
     "The Nearfield"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, pen-sized auto-injector with a tapered cylindrical body that fits naturally in a closed fist. The design prioritizes ergonomics and rapid deployment—no fumbling, no confusion in high-stress situations. The top third features a textured grip zone in contrasting material; the lower two-thirds taper to a flat delivery end with a translucent window revealing the micro-needle array beneath. The overall impression is clinical precision married with street-ready functionality.",
+    "dimensions": "15 cm length, 1.8 cm diameter—comparable to a thick permanent marker or fountain pen",
+    "weight_description": "Negligible (50g)—easily pocket-carried, belt-clipped, or secured in a med-pouch without noticeable burden",
+    "primary_material": "Aircraft-grade polymer body with reinforced titanium alloy tip housing; injection window is sapphire composite",
+    "finish": "Matte charcoal polymer with anodized silver accents; the delivery window has a faint frosted appearance to obscure the internal mechanism while remaining translucent enough to verify liquid payload",
+    "color_scheme": "Charcoal gray primary with emergency-orange grip stripe and Lazarus Pharmaceuticals' signature teal accent ring at the midpoint. Glowing teal status indicator beneath the grip zone",
+    "interface_elements": "Single large convex activation button (silver) on the upper grip zone, recessed slightly to prevent accidental discharge. Teal LED indicator (off when armed, solid when depleted). Micro-text labeling along the barrel in multiple languages. Small dial at the base showing contents level and expiry date readout",
+    "distinctive_features": [
+      "Micro-needle array visible through sapphire window—hundreds of hair-thin needles arranged in a circular pattern",
+      "Teal status LED that glows softly when armed",
+      "Emergency-orange grip stripe that extends partway down the barrel",
+      "Haptic feedback button with tactile click confirmation",
+      "Pressure-sensitive tip that prevents activation unless pressed firmly against tissue"
+    ],
+    "manufacturer_markings": "LAZARUS PHARMACEUTICALS embossed on upper barrel in metallic silver; FTI-5 model designation and batch number laser-etched below; small Φ symbol with price tier indicator (1+); regulatory compliance marks for GLMZ medical authority",
+    "condition_typical": "Pristine when new—no visible wear. In field use, slight scuffing on grip zone from extraction and impact; the translucent window may show residual medication staining if recently discharged. Often carried in dedicated med-pouch or quick-draw holster on tactical harnesses"
+  },
+  "image_prompt": "Lazarus Pharmaceuticals FTI-5 trauma injector displayed on a sleek stainless steel medical workbench, angled 45 degrees to showcase the micro-needle delivery window catching dramatic blue surgical lighting. Translucent sapphire window glows faintly, revealing the circular micro-needle array within. Teal LED indicator glowing softly at the grip zone. Matte charcoal polymer body with emergency-orange grip stripe sharply contrasted by cool overhead lighting. Shallow depth of field with blurred medical instruments and Lazarus Pharmaceuticals logo in background. Cyberpunk aesthetic with neon rim lighting on the injector body, clinical precision combined with street-ready brutalism. Shot from above on textured metal surface with scattered medical data-pads nearby. --ar 3:2 --v 6"
 }

@@ -46,5 +46,25 @@
     "Carrion Defense Works",
     "Irontide Tidal Energy",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A ruggedized tactical assessment unit resembling a high-end equipment case crossed with medical diagnostics hardware. Compact, angular, military-grade aesthetic with integrated sampling ports and a recessed touchscreen interface. Designed for rapid field deployment by hazmat and corporate security teams.",
+    "dimensions": "38cm wide × 26cm deep × 16cm tall (briefcase-sized, slightly larger than a lunchbox)",
+    "weight_description": "3.8kg total — handheld but requires two-handed carry for extended periods; fits in vehicle equipment racks with carrying handles",
+    "primary_material": "Carbon-composite reinforced polymer housing with internal aluminum chassis and impact-resistant polycarbonate sensor covers",
+    "finish": "Matte tactical black with rubberized grip zones; brushed metal accents around sensor arrays; textured non-slip base panels",
+    "color_scheme": "Dominant matte black with chrome-silver sensor module faces; safety-orange markings on hazmat sampling ports; Carrion Defense Works crimson logo stripe along top edge",
+    "interface_elements": "5-inch recessed tactical display (dimmable for low-light ops), three-button interface cluster (SAMPLE/ANALYZE/PURGE), atmospheric intake grille with magnetic cap, contact swab port (spring-loaded), liquid sample inlet with sealed cap, micro-USB charging port, status LED indicator array (green/yellow/red threat warnings)",
+    "distinctive_features": [
+      "Modular sensor cartridge visible through polycarbonate window — stacked microfluidic and spectral analysis chips glowing faintly during analysis cycles",
+      "Magnetic quick-release sampling heads (removable for field replacement)",
+      "Integrated UV-reactive compound detection window that illuminates during chemical analysis",
+      "Threat database status display showing last update timestamp and current active threat count",
+      "Biometric lock pad below screen (fingerprint/retinal scanner) — Tier 2+ security feature",
+      "Faint blue status glow when powered, transitioning to red during active threat detection"
+    ],
+    "manufacturer_markings": "Carrion Defense Works logo and 'NTAK-2' designation on top panel; serial number plaque; regulatory compliance stamps (GLMZ certified, corpo-grade hazmat rated); threat level classification chart etched on interior lid",
+    "condition_typical": "In field use: surrounded by protective equipment, often mounted on tactical vests or vehicle dashboards; screen shows active threat analysis with real-time compound matching; occasional condensation on lens covers in humid environments"
+  },
+  "image_prompt": "Carrion Defense Works NTAK-2 threat assessment kit on a stainless steel workbench in harsh overhead LED lighting. The hardened black case is open, displaying the recessed touchscreen mid-analysis cycle (glowing blue), with sampling port covers visible and a small red hazmat warning light active. Photorealistic tactical equipment photography, shallow depth of field. Dramatic cyberpunk lighting with deep shadows. Include a gloved hand pointing at the status display. Urban laboratory setting, Great Lakes Metropolitan Zone aesthetic, 2226. --ar 3:2 --v 6"
 }

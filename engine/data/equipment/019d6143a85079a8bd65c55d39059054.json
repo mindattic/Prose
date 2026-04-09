@@ -69,5 +69,25 @@
     "The Quiet Room",
     "The Seam",
     "Vantablack-CNX"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A flat, envelope-like enclosure that unfolds into a rigid box. When folded, it resembles a high-end document sleeve with subtle metallic sheen. Deployed, it's a rectangular Faraday cage with clean, engineered lines and minimal ornamentation—purely functional industrial design.",
+    "dimensions": "Folded: 210mm × 150mm × 8mm (letter-sized envelope). Deployed: 380mm × 280mm interior, ~60mm tall when fully erected.",
+    "weight_description": "340g—light enough for field carry in a tactical vest pocket or equipment bag, but substantial enough to feel precision-engineered. Handheld or bag-mounted.",
+    "primary_material": "Ferrolattice composite (proprietary 12-layer laminate with conductive mesh interlayers). Exterior fabric backing appears matte graphite-gray with subtle electromagnetic shielding texture visible under magnification.",
+    "finish": "Matte non-reflective outer surface to avoid detection; inner walls show fine metallic mesh weave. Magnetic compression rail runs the perimeter with subtle brushed-steel finish.",
+    "color_scheme": "Charcoal gray outer fabric with gunmetal-gray magnetic compression seals. Arcturus branding in flat white and corporate teal. Interior lining is conductive copper-tone mesh barely visible through translucent reinforcement strips.",
+    "interface_elements": "Magnetic closure points (8–10 evenly spaced) along the top seam create the null-seam compression lock. Subtle alignment etches guide proper deployment. Thin status indicator strip (LEDs, optional add-on) shows magnetic seal integrity when engaged. Carry loop of braided aramid webbing stitched into one corner.",
+    "distinctive_features": [
+      "Magnetic compression seals with precise contact points—no visible gaps at closure",
+      "Translucent corner reinforcements showing internal mesh weave without compromising shielding",
+      "Asymmetrical fold pattern allows single-handed deployment",
+      "Faint Faraday cage grid pattern embossed into outer fabric for authenticity",
+      "Military-spec Arcturus logo and 'DEFENSE SOLUTIONS' text in flat white sans-serif",
+      "IP67 rating badge and attenuation specs (120dB+) printed in small type near closure"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (angular geometric design) embossed/printed on upper left. Regulatory stamps: 'MILITARY GRADE SIGNAL ISOLATION | 120dB+ ATTENUATION | 100Hz–40GHz' in small sans-serif. Manufacturing date code and batch number in discrete location. Optional tamper-evident hologram near closure.",
+    "condition_typical": "Pristine condition shows as a compact, tool-like object—no scratches or wear visible on field-grade examples. Used examples show minor creasing from deployment cycles, faded branding, and dust residue in creases. Sometimes deployed on workbenches with devices partially inserted, magnetic seals partially engaged for testing."
+  },
+  "image_prompt": "Product photography of a partially deployed Faraday enclosure on a brushed-steel workbench, dramatic overhead and side lighting casting sharp shadows. The shroud is mid-deployment showing the magnetic compression seals engaging; a encrypted data drive sits nearby as if about to be inserted. Cinematic cyberpunk lighting with teal and amber accents hitting the metallic compression rail. Shallow depth of field. Moody, industrial aesthetic. --ar 3:2 --v 6"
 }

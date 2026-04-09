@@ -43,5 +43,25 @@
     "Arcturus Defense Solutions Cryogenic Projector CP-4 'Frostbite'",
     "The Filament",
     "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Form-fitting tubular sleeves that cling to the forearm and upper arm, creating a sleek geometric silhouette when worn over chrome augmentations. The matte finish absorbs light, making augmented limbs appear less reflective and more integrated with the body. Safety orange variants glow subtly under neon environments.",
+    "fit": "Compression fit — snug against the arm without restricting movement, designed to conform to the contours of cylindrical chrome cyberlimbs. Stretches slightly for donning/doffing but maintains contact pressure for thermal efficiency.",
+    "primary_material": "Neoprene analog (synthetic thermal polymer) with embedded graphene heating filament matrix. Outer shell is matte-finish ballistic-grade synth-rubber.",
+    "texture": "Smooth, slightly tacky outer surface with fine ribbed interior facing. Subtle texture variation where heating filaments run parallel to the sleeve length. Edges reinforced with overlocked seams.",
+    "color_scheme": "Matte black (primary — preferred by corpo users) or safety orange (high-visibility, favored in industrial/hazard zones). Both finishes have minimal branding — small embossed Crucible logo at wrist cuff.",
+    "closures": "Dual magnetic snap closures positioned along the inner forearm seam, allowing one-handed application over chrome without removal of augmentation. Closures are recessed to prevent snagging.",
+    "distinctive_features": [
+      "Embedded graphene heating filaments visible as thin parallel lines running down the sleeve",
+      "Seamless wrist opening with elasticated cuff for secure fit",
+      "Inner thermal-conductive coating reflects body heat back to augmentation",
+      "Magnetic closure system compatible with ferrous chrome alloys",
+      "Slight wear pattern at magnetic closure points from repeated fastening",
+      "No external pockets — purely functional thermal wear"
+    ],
+    "tier_indicator": "Tier 2-3 functional equipment. Expensive enough to signal augmentation ownership and safety consciousness (Tier 2 corporate chrome workers), but practical and mass-produced enough for Tier 3 street workers who maintain their own augmentations.",
+    "cultural_context": "Worn by augmented workers in cold-climate zones, industrial districts, and corporate chrome maintenance crews. Signals someone who invests in gear longevity and thermal safety — not flashy, but competent. Common in the Detroit Sector and northern GLMZ territories.",
+    "condition_typical": "Broken-in but maintained — minor discoloration at magnetic closure points from repeated use. Graphene filaments may show slight fading after 12-18 months of daily use. Generally kept clean, as functionality depends on material integrity."
+  },
+  "image_prompt": "Close-up fashion photograph of a sleek cyberpunk model with a visible chrome arm augmentation, wearing a pair of Crucible ThermoSleeve Chrome Liners in matte black, magnetic closures slightly visible along the inner forearm. The sleeves glow faintly from integrated heating filaments under moody blue-and-red neon backlighting. Dark industrial urban backdrop — corrugated metal walls, steam venting in background. Dramatic side-lighting emphasizing the smooth texture and thermal efficiency of the gear. Model's expression neutral, professional. --ar 2:3 --v 6"
 }

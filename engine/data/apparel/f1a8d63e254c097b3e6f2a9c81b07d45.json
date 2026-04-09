@@ -41,5 +41,26 @@
   "related_entities": [
     "MERIDIAN",
     "Ringo DV-4 'Courier'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek, aggressive low-cut silhouette with a pronounced forward-lean aesthetic. The shoe tapers sharply from ankle to toe, creating a wedge-like profile optimized for speed. High-contrast signal orange panels dominate the upper, contrasted by clean white synthetic accents on the toe box and heel counter. The midsole visibly bulges with mechanical complexity—a dead giveaway of internal spring assist tech.",
+    "fit": "Form-fitting through the midfoot and heel, with a snug ankle collar that sits just above the malleolus. The toe box is noticeably narrow and pointed, designed for quick weight transfer. Compression-responsive—the shoe visibly compresses and rebounds under load.",
+    "primary_material": "Ballistic weave upper with sealed seams; thermoplastic polyurethane (TPU) heel cup; compressed elastomer midsole housing helical spring coils; treated synthetic rubber outsole with grip-pattern channels.",
+    "texture": "Smooth, taut ballistic weave with subtle directional stitching visible at stress points. The midsole has a faintly quilted appearance where spring chambers are stitched through. Outsole is lightly textured for traction, often showing minor wear grooves from repeated impact.",
+    "color_scheme": "Signal orange (Pantone 802 equivalent) dominates 70% of the upper; stark white synthetic panels on toe box, heel tab, and side stripe. Minimal branding in matte charcoal gray. Midsole often appears translucent white/amber where spring mechanisms are visible through the sole window.",
+    "closures": "Single-pull friction-fit lacing system with integrated tension lock at the midfoot; magnetic snap collar closure at ankle for rapid on/off.",
+    "distinctive_features": [
+      "Visible midsole spring mechanism with transparent window showing internal coil compression",
+      "Forward-lean heel geometry (8mm drop) engineered for courier sprints",
+      "Reinforced toe box with micro-abrasion protection for stairwell wear",
+      "Lateral ankle brace stripe in reflective white—visibility standard for skyway couriers",
+      "Treaded heel patch designed to grip metal stair edges and transit platform lips",
+      "Lancer branding (angular, minimalist) embossed on heel counter",
+      "Ventilation mesh on midfoot—couriers sweat heavily during rush deliveries"
+    ],
+    "tier_indicator": "Tier 3 functional—mid-tier working class. The spring-assist tech is affordable augmentation, not luxury. Couriers prize these as essential kit; ownership signals active participation in the logistics economy.",
+    "cultural_context": "Courier culture, specifically the Meridian delivery fleet. Wearing Lancer Sprints marks someone as a time-conscious logistics worker, street-savvy, body-modified through gear rather than chrome. Also common among parkour practitioners and low-level corpo runners. Signal orange makes the wearer immediately identifiable in crowd scenes—a badge of speed work.",
+    "condition_typical": "Broken-in after 2–3 weeks of use; minor scuff marks on toe box from stairwell corners. The heel brace stripe typically shows faded wear patterns. Spring mechanism remains functional even when upper shows significant creasing. Couriers rotate shoes every 6–8 months; used pairs are common in Tier 4–5 secondhand markets."
+  },
+  "image_prompt": "Lancer Sprint Courier Shoe in signal orange and white on a muscular, tattooed courier model mid-stride on a dimly lit GLMZ skyway platform. Close-up shot capturing the aggressive forward-lean silhouette, transparent midsole spring mechanism visible through the side window, and scuffed toe box from stairwell wear. Urban cyberpunk setting: neon signage reflecting off wet metal, rain-slicked concrete, distant Iowan Behemoth silhouette in haze. High-contrast moody lighting emphasizing the orange pop against industrial grays. --ar 2:3 --v 6"
 }

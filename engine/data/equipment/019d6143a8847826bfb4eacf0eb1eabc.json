@@ -84,5 +84,24 @@
     "VitaCore FlowGuard Hemodynamic Regulator",
     "Yuki Nwosu-Petrenko",
     "Zheng-dao Bioelectric"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A surgical precision instrument resembling heavy-duty forceps or a calibrated clamp, with a clinical yet utilitarian aesthetic. The device tapers from a control housing at the grip to two flat, paddle-shaped contact arms that curve slightly inward. The overall impression is of a tool engineered for delicate, high-stakes intervention—purposeful and unadorned.",
+    "dimensions": "21 cm in length; approximately 4 cm wide at the paddle contacts; grip diameter ~1.8 cm. Handheld, single-operator device.",
+    "weight_description": "340g; substantial enough to feel solid and controlled in the hand, but not burdensome. Requires firm grip during application but portable for emergency medical kits.",
+    "primary_material": "Aerospace-grade brushed titanium alloy housing; grip sleeve in matte black polymer composite for thermal and electrical isolation.",
+    "finish": "Satin-brushed metallic body with minimal reflectivity; non-skid textured grip zone. Contact paddles have a faint iridescent sheen from the biocompatible conductive polymer coating (easily replaced). Minimal chrome detailing at hinge points.",
+    "color_scheme": "Predominant titanium silver-gray with matte black grip sections. Accent color: clinical white on the contact paddles and control housing. Digital readout backlit in cool cyan-blue. Single warning LED in amber near the power indicator.",
+    "interface_elements": "A five-position rotary dial (Suppress / Moderate Suppress / Neutral Monitor / Moderate Stimulate / Stimulate) with tactile detents and printed markings. Small digital LCD readout (approximately 2 x 1.5 cm) displaying real-time heart rate (BPM) in white numerals and a vagal tone index bar graph. Power indicator light (green during operation, amber during low-battery). A narrow cartridge bay on the underside for quick-swap conductive polymer contact pads. No buttons; all control is through dial and tactile feedback.",
+    "distinctive_features": [
+      "Two flat, rounded contact paddles with subtle ridged texture to prevent slip during application to the neck.",
+      "Minimalist control dial with no digital buttons or touch surface—purely mechanical, designed for operation with gloved hands or tremoring fingers.",
+      "Small cyan-blue backlit LCD display recessed into the control housing, visible from above and at a slight angle.",
+      "Single amber LED mounted near the power socket; glows softly during low-battery conditions.",
+      "Cartridge bay with a small release button and color-coded polymer contact pads (typically white or translucent) visible on insertion."
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC embossed in clean sans-serif font on the upper control housing. Regulatory stamps: GLMZ Medical Authority approval, TIER 3+ licensing mark, and a small serial number plate. Warning label in white and red on the grip: 'CAROTID APPLICATION ONLY — CERTIFIED OPERATOR REQUIRED.' Manufacturing date code laser-marked on the cartridge bay.",
+    "condition_typical": "Clinical and sterile in appearance; often carried in a padded foam insert within a hard-shell medical case. In active use, the contact paddles may show slight residue from conductive gel or skin contact, but are wiped clean after each procedure. The dial shows minor cosmetic wear from repeated repositioning but no visible damage. Battery indicator is monitored closely between uses."
+  },
+  "image_prompt": "A Zheng-Dao Bioelectric Vagal Interrupt Clamp photographed on a surgical steel workbench under clinical overhead LEDs. The device lies at a 45-degree angle, with the paddle contacts facing slightly toward the camera. A fresh conductive polymer cartridge (translucent white) is partially inserted into the cartridge bay. The small cyan-blue LCD readout is dimly glowing, displaying '82 BPM' and a vagal tone bar. The surrounding surface is clean, with a single stainless steel instrument tray visible in soft focus behind. Cyberpunk medical aesthetic: cool, precise, slightly cold. Dramatic rim lighting from the left highlights the brushed titanium edges and the glossy contact paddles. A small puddle of conductive gel reflects light nearby. --ar 3:2 --v 6"
 }

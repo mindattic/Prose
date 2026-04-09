@@ -44,5 +44,25 @@
   "related_entities": [
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Tessera Nexus Town Car"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A crisp, professional polo shirt with corporate precision. Neat, tailored silhouette that reads 'low-level authority' — the uniform of gatekeepers and clipboard holders. Sits at the intersection of casual and formal, designed to be forgettable and trustworthy.",
+    "fit": "Slim to regular through the torso, structured but not restrictive. Sleeves taper slightly at the bicep. Collar stands firm but yields to skin contact. Cut to flatter without drawing attention.",
+    "primary_material": "Synth-blend moisture-wicking jersey — smooth, polymer-based fibers with slight sheen under office fluorescents",
+    "texture": "Butter-smooth surface, almost slick to touch. Fabric has minimal texture; designed for wrinkle resistance and easy care. Seams are cleanly finished, thread-locked at stress points.",
+    "color_scheme": "Slate blue (reception/client services — cool, neutral, approachable), charcoal (facilities — serious, professional), or white (executive support — sterile, premium). All colorways are muted and corporate-safe.",
+    "closures": "Four-button placket with reinforced buttonholes. Buttons are injection-molded polymer with subtle Omex logo embossing.",
+    "distinctive_features": [
+      "Silver-thread embroidered Omex wordmark on left chest — precise, professional lettering",
+      "Employee ID slot sewn into right cuff — functional security theater",
+      "Reinforced shoulder seams for durability under repeated wear",
+      "Interior neck tape with moisture-wicking treatment",
+      "Company laundry code stitched at side seam in tiny letters",
+      "Subtle tonal texture knit to mask sweat stains"
+    ],
+    "tier_indicator": "Tier 2-3 corporate functional wear. Signals employment in the middle management-adjacent service tier. Expensive enough to be quality, cheap enough to be disposable.",
+    "cultural_context": "Uniform of the unglamorous corporate gatekeepers. Wearing this says: 'I work for a mid-tier service provider, I follow dress codes, I have security clearance to exactly one building, I will remember your badge number.' Association with Omex — a sprawling corporate services contractor — marks the wearer as reliable, compliant, and replaceable.",
+    "condition_typical": "Pristine when new; develops worn collar edges and faint buttonhole stretching after 6-12 months of constant wear. Occasional bleach spots from over-cleaning. Fabric pills slightly at cuffs where ID badges rub. Collars may hold a slight crease if stored poorly."
+  },
+  "image_prompt": "Professional cyberpunk fashion photograph of a pristine slate-blue Omex Corporate Services polo shirt on a dark chrome mannequin, positioned in a sterile office building corridor with floor-to-ceiling windows overlooking the GLMZ skyline at dusk. Cool LED panel lighting casts clinical shadows. The polo's silver embroidered chest logo catches the light. Shallow depth of field, corporate minimalist aesthetic, hyperreal fabric detail. Moody, cool color grading with blue and gray tones. --ar 2:3 --v 6"
 }

@@ -41,5 +41,25 @@
     "The Crucible",
     "Vantablack VS-3 'Skin Job'",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A tailored formal suit with an almost studied anonymity—structured jacket and trousers that read as diplomatic formality without advertising corporate allegiance. The matte finish absorbs light, creating a visual flatness that resists categorization. On a wearer, it conveys precision and deliberate neutrality rather than power or wealth.",
+    "fit": "Precision tailored but intentionally ambiguous—shoulders structured but not sharp, jacket length sits mid-hip, trousers have a straight taper without being slim or baggy. The cut avoids the specific silhouettes used by individual Corponations, making it impossible to read tier or faction from drape alone.",
+    "primary_material": "Proprietary matte-finish synth-wool blend; the surface has a light-absorbing quality that prevents chromatic BCI analysis. Non-reflective, slightly warm to the touch, with a subtle texture that resists shine.",
+    "texture": "Smooth but not glossy; the matte finish reads as understated luxury without flash. Up close, fine weave pattern is visible but deliberately non-distinctive. No embossing, no raised details.",
+    "color_scheme": "Neutral monochromatic palette—charcoal, deep gray, or near-black. Zero accent colors. The matte finish prevents the color from reading as either warm or cool, keeping it visually inert.",
+    "closures": "Brushed titanium alloy buttons and magnetic-snap hybrid closures. All hardware is deliberately colorless—matches no corporate standard palette. Subtle, flush-mounted magnetic anchor points for augment-compatible access panels.",
+    "distinctive_features": [
+      "Geneware-compatible modular rear panel system (barely visible seaming)",
+      "Port-access panels concealed by jacket construction",
+      "Proprietary light-absorbing fabric blocks chromatic BCI reads",
+      "Hardware deliberately matches no Corponation standard",
+      "Quarterly design updates via subscription maintain neutrality as visual languages evolve",
+      "Zero branding or visible manufacturer marks"
+    ],
+    "tier_indicator": "Tier 3-4 accessible luxury—expensive enough to signal investment in diplomatic presence, but explicitly designed to avoid Tier 1-2 corpo ostentation",
+    "cultural_context": "Worn by negotiators, diplomats, and political operatives who need to enter spaces without broadcasting faction. The suit itself is a statement of intent: 'I am here to listen and negotiate, not declare affiliation.' Recognized primarily by those trained to read absence of signal.",
+    "condition_typical": "Pristine when new; shows minimal visible wear even after extended use due to matte finish and neutral palette. Hardware may be swapped quarterly per subscription. Well-maintained, rarely patched—the suit's value lies in its maintained neutrality."
+  },
+  "image_prompt": "A tailored formal suit on a cyberpunk diplomat model, shot against a dark industrial GLMZ backdrop—faint neon signage blurred in deep background. The suit's matte charcoal finish absorbs studio lighting evenly, creating minimal shadow definition. Detail shot on brushed titanium button, then wide shot showing full silhouette under moody blue-gray overhead light. Model has visible subcutaneous augmentation tracery on neck/temple. Suit conveys precision and deliberate political neutrality. No branding visible. --ar 2:3 --v 6"
 }

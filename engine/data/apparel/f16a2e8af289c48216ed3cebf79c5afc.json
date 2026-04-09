@@ -37,5 +37,25 @@
     "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
     "Crucible TR-7 'Triage'",
     "SynapTech ReadRoom Social Cue Enhancer"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek medical glove with a clinical yet cybernetic edge—fitted hand coverage with subtle metallic accents at fingertips. Appears almost ordinary at first glance, but closer inspection reveals embedded sensor nodes that catch light. Suggests competence and invasive intimacy.",
+    "fit": "Precision-fitted, second-skin compression that allows dexterous finger articulation without bulk. Snug around wrist with a slight flare to accommodate bracers or augmentation interfaces.",
+    "primary_material": "Medical-grade synthetic polymer with conductive graphene-weave underlayer and biosensor integration. Breathable mesh panels across knuckles and palm sides.",
+    "texture": "Smooth, slightly tacky surface designed for grip without slipping. Fingertips have raised micro-nodules where sensors sit. Wrist band features subtle ribbing for secure fastening. Overall: clinical, precise, slightly cold to touch.",
+    "color_scheme": "Sterile white base with gunmetal grey and teal accent lines running along fingertips and wrist band. Small Cascade Biotech logo (circular, minimalist) in corner of back hand. Optional variations: gunmetal silver for high-tier clinics, salvage grey for sub-grade practitioners.",
+    "closures": "Magnetic closure band at wrist with secondary friction-fit velcro backup. Allows quick removal while maintaining seal integrity.",
+    "distinctive_features": [
+      "Embedded biometric sensors at all ten fingertips with visible micro-circuitry",
+      "Conductive threading for AR/display connection at wrist junction",
+      "Micro-sampling ports on index and middle fingertips for toxicology",
+      "Real-time data transmission indicator (subtle LED pinprick on palm)",
+      "Reinforced fingertip nodes resistant to bodily fluids and contamination",
+      "Ergonomic sensor calibration markers visible under certain light"
+    ],
+    "tier_indicator": "Tier 2-3 medical equipment—accessible to licensed clinics and field response teams, but out of reach for street-level sub-grade practitioners unless salvaged or black-market sourced.",
+    "cultural_context": "Worn by field medics, triage coordinators, corporate wellness officers, and unlicensed back-alley doctors. Signals medical authority, invasive knowledge, and the ability to read a person's body like an open file. Wearing these says: 'I know what's wrong with you before you finish your first breath.'",
+    "condition_typical": "Professional clinics keep them pristine; field medics show wear at fingertips and wrist band from constant use. Black-market variants are patched, recalibrated, or running on degraded sensors. Deep staining from blood and bodily fluids is common—often not fully cleaned due to hazmat protocols."
+  },
+  "image_prompt": "Medical-grade white and gunmetal biometric gloves displayed on pale cybernetic hands, fingertips glowing faint teal with embedded sensor nodes. Close-up detail shot showing micro-circuitry and conductive threading at wrist. Dark clinical background, cold blue-white lighting casting sharp shadows. Second image: medic wearing gloves mid-scan, hand pressed against patient's wrist, AR data streams visible in air. Moody, sterile, clinical atmosphere. Urban underground clinic setting. --ar 2:3 --v 6"
 }

@@ -42,5 +42,38 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Concrete",
+    "GLMZ",
+    "Iowan Behemoth — 'Palisade'",
+    "Nika Svensson-Kone",
+    "Steel",
+    "TESSERA PG-2 'Signature'",
+    "TESSERA TC-3 'Crucible'",
+    "The Furnace"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist thermal projector assembly mounted on a heavy armature — blocky, industrial, purposeful. The business end is dominated by a massive cylindrical barrel shroud housing the infrared emitter, flanked by brutal heat-sink fins and cooling jacket vents. Looks less like a weapon and more like a piece of demolition equipment bolted to a tank.",
+    "dimensions": "Overall length 240cm, barrel shroud diameter 18cm, mounting footprint 80cm × 60cm, emitter lens assembly 12cm diameter",
+    "weight_description": "Crushingly heavy — 340kg of steel and composite engineering. Requires vehicle mounting; the weapon system itself has the heft of an industrial engine block. Feels immobile, permanent, designed to stay put and burn.",
+    "primary_material": "Hardened steel frame with composite heat-resistant barrel shroud (ceramic-matrix composite), aluminum cooling jacket, reinforced titanium mounting brackets",
+    "finish": "Matte industrial gray-black with visible thermal stress marks — areas around the barrel shroud show discoloration from sustained heat cycling. Cooling fins are brushed bare metal with oxidation patina in seams. Welding seams are rough, unpolished — function over aesthetics.",
+    "color_scheme": "Gunmetal gray primary with charred black heat-stress zones around the emitter. Accent colors include dull copper-red oxidation on exposed cooling surfaces and reflective danger-stripe yellow/black bands on the mounting arms.",
+    "grip_texture": "Not applicable for hand operation — weapon features vehicle-mounted control interfaces with rubberized haptic feedback grips on operator console. Physical contact points (maintenance access panels) are textured bare steel, cold and unforgiving.",
+    "distinctive_features": [
+      "Massive infrared emitter lens assembly with visible thermal window (appears slightly opalescent)",
+      "Brutal aluminum cooling fins radiating from barrel shroud — some visibly warped from heat stress",
+      "Thermal bleed vents along the cooling jacket, darkened from heat exhaust",
+      "Red maintenance access panels on mounting frame with Φ cost warnings stenciled in white",
+      "Targeting laser sight mounted on upper rail (green laser point)",
+      "Heavy-gauge cable bundling for power and cooling fluid circulation",
+      "Scorch marks and melted composite residue along barrel shroud edges from previous engagements",
+      "DANGER: EXTREME THERMAL HAZARD placard in Mandarin, Spanish, and English on mounting arm"
+    ],
+    "manufacturer_markings": "Crucible Industries logo (stylized furnace icon) stamped into steel frame at 45° angle. Serial plate mounted on rear cooling jacket in white-lettered black anodized aluminum. 'CF-15 MELTDOWN' designation stenciled in aggressive capitals down the left side of barrel shroud.",
+    "condition_typical": "Field-worn and heat-damaged. Operational units show blackened scorch marks, warped fins, and cooling fluid stains. Mounting hardware shows signs of repeated thermal stress. Some examples display jury-rigged reinforcement plating around the cooling jacket — evidence of catastrophic overheating incidents."
+  },
+  "image_prompt": "Industrial thermal cutting laser mounted on heavy armature, photographed from 45° angle on dark metal surface. Massive cylindrical barrel shroud dominates composition, surrounded by brutal aluminum cooling fins warped from heat stress. Thermographic coloration visible around emitter — reds and oranges fading to charred black. Dramatic side-lighting emphasizes welding seams and oxidation patina. Stenciled 'MELTDOWN' designation visible. Cooling fluid stains on mounting frame. Scorch marks and melted composite residue along barrel edges. GLMZ Tier-5 industrial aesthetic — Soviet-brutal meets corporate demolition equipment. Shot as if documenting weapon specification for black-market catalog. Cinematic color grading with thermal overtones. --ar 3:2 --v 6"
 }

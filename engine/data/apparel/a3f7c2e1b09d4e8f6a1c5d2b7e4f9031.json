@@ -48,5 +48,28 @@
     "The Underlayer Collective",
     "Tiare Nishi-Anim",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Imposing full-body tactical silhouette: a human-shaped fortress of matte-black and charcoal layers, angular and utilitarian. The figure reads as armored corporate authority—broad shoulders from the hard-plate vest, tapered waist from compression layers, straight-legged stance stabilized by reinforced boots. The integrated helmet dominates, giving an inhuman, sealed-off presence.",
+    "fit": "Form-fitting compression base with intentionally oversized tactical jacket layered over hard-plate vest for mobility under armor. Cargo trousers sit at natural waist, cut straight to accommodate thigh holster rigs. Boots are snug at ankle with rigid ankle-brace channels. Overall: engineered for function over flattery, every element locked into position.",
+    "primary_material": "Ballistic weave composite (helmet and vest), moisture-wicking synthetic compression (underlayer), ripstop graphite canvas (trousers), matte-anodized aluminum alloys (hardware and chrome arm-sleeve panels)",
+    "texture": "Helmet: smooth composite shell with recessed visor line. Vest: rigid segmented plating with elasticated gussets. Jacket: slightly pebbled synthetic leather with chrome-smooth arm panels. Trousers: fine ripstop weave with reinforced knee patches of denser ballistic fabric. Boots: scuffed industrial-grade synthleather.",
+    "color_scheme": "Matte black primary (helmet, vest plating), dark charcoal secondary (jacket, trousers), graphite accents (inner layers visible at seams), chrome-silver arm panels and mag-closures for tactical contrast",
+    "closures": "Magnetic snap jacket closure (silent operation), friction-fit helmet seal at gorget collar, belt-loop + compression-snap trousers, mag-lock ankle straps on boots, integrated neural-port passthrough (sealed magnetic coupling at helmet rear)",
+    "distinctive_features": [
+      "Integrated AR visor with matte-black anti-glare coating",
+      "Neural port passthrough at helmet occiput for direct command-feed",
+      "Gorget collar with chem-particulate sealing gasket",
+      "Spinal-rig channel running center-back of vest for data/power conduits",
+      "Chrome-arm sleeve splits (EM-suppressant plating)",
+      "Thigh holster mounting brackets (standard Goretek universal slots)",
+      "Knee-pad insert pockets (field-replaceable ceramic or ballistic foam)",
+      "Mag-lock boot coupling for prosthetic integration (ankle-brace compatible)",
+      "Matte-finished all hardware (suppresses EM and thermal signature)"
+    ],
+    "tier_indicator": "Tier 1-2 corporate luxury: only top-tier CorpSec operatives, executive protection, and special-operations contractors can afford Goretek Mk-7. Price point: Φ45,000+ for full loadout.",
+    "cultural_context": "Wearing this signals: I am corporate-authorized lethal force. Corpo security, not street muscle. The integrated tech and EM-suppression indicate counter-hacking capability and corporate espionage/counter-espionage work. Wearer is either highly trained enforcement or a corpo exec paranoid enough to fund their own protection.",
+    "condition_typical": "Pristine or battle-worn with extreme visibility: scuffed boots, scorched vest plates, cracked visor replacements, frayed mag-closure edges. No middle ground—either just-issued or heavily deployed. Field units show tape-reinforced seams and swapped-out knee-pad inserts."
+  },
+  "image_prompt": "A hyper-tactical cyberpunk CorpSec operative in full Goretek Mk-7 loadout, standing at 3/4 angle in moody industrial warehouse lighting. Matte-black ballistic helmet with integrated AR visor glowing faint cyan at the visor-line. Dark charcoal ops jacket with visible chrome arm-panel splits catching hard rim-light. Graphite ripstop cargo trousers, reinforced knee pads, steel-toe mag-lock boots. Spinal-rig channel visible down center-back. Model statue-still, weapon-ready stance, harsh shadows defining every angle of the loadout. Background: rain-slicked GLMZ industrial façade, neon corpo logos just out of focus. Cinematic, professional, intimidating. --ar 2:3 --v 6"
 }

@@ -38,5 +38,34 @@
     "irritant",
     "tier_2"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "GLMZ",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Tourniquet",
+    "Tympanic Membrane Galvanic Rupture Carbine",
+    "Veslemøy Achebe-Tursynov",
+    "Zurab Ivanov-Appiah"
+  ],
+  "physical_description": {
+    "visual_profile": "A fitted tactical vest with a sleek, minimalist silhouette when inert. The back and shoulder panels have a subtly ribbed texture hinting at the retractable spine mechanism beneath. When activated, it transforms into a defensive porcupine—24 blunt polymer spines bristling outward at 3cm intervals across the upper back and shoulder blades, creating an aggressive defensive posture.",
+    "dimensions": "Vest body: 58cm length (shoulder to waist), 42cm width (armpit to armpit). Extended spines project 3cm from surface. Available in XS to 3XL sizing.",
+    "weight_description": "Surprisingly light and balanced—280g total weight distributed evenly across the torso. Sits close to the body with minimal bulk, allowing natural movement when spines are retracted.",
+    "primary_material": "Core vest: reinforced polymer composite base layer with integrated mechanical spine channels. Spines: rigid polymer rods with injection-molded joints. Activation mechanism: lightweight alloy framework with synthetic squeeze switches.",
+    "finish": "Matte charcoal polymer body with satin-finish spine rods. Contact irritant coating appears as a slight chemical sheen on the spine tips—barely visible but present under close inspection.",
+    "color_scheme": "Gunmetal gray primary with matte black accent panels around the spine deployment zones. Spine tips have a faint amber tint from the contact irritant coating.",
+    "grip_texture": "Squeeze switches embedded in vest side panels feature rubberized, textured grip zones for reliable activation with gloved or wet hands. Vest panels themselves are smooth-finished for comfort against clothing.",
+    "distinctive_features": [
+      "24 evenly-spaced retractable polymer spines across back and shoulders",
+      "Dual squeeze switches (left and right sides) for ambidextrous activation",
+      "Visible spine guide channels running vertically down the back when spines retracted",
+      "Amber-tinted irritant coating visible on spine tips under direct light",
+      "Subtle VOLTLINE brand embossing on left shoulder panel",
+      "Mechanical snap points where spines lock fully extended",
+      "Heat-dissipation vents between spine channels for extended wear comfort"
+    ],
+    "manufacturer_markings": "VOLTLINE PERSONAL ELECTRONICS logo stamped on left shoulder in raised relief. Serial number plate mounted on interior center panel with manufacturing date. Care instructions and irritant recoating schedule printed on interior back panel in eight languages.",
+    "condition_typical": "Generally clean and well-maintained in working-class use (Tier 2-3). Spine rods show minor scuff marks from deployment cycles. Contact irritant coating gradually dulls to a pale yellow-brown over the 90-day recoating interval. Frequent users may show wear patterns on squeeze switches from repeated activation."
+  },
+  "image_prompt": "Product photography of the VoltLine SpineBurst SB-7 'Hedgehog' tactical vest displayed on a mannequin torso from behind, spines fully extended and bristling outward. Dramatic side-lighting from the left casts sharp shadows between the polymer spine rods, highlighting their 3cm projection. The charcoal polymer vest body appears matte and sleek, while the amber-tinted spine tips catch light with a chemical sheen. Gloved hands visible on the mannequin holding the squeeze switches, fingers relaxed. Background is a dark cyberpunk urban setting—concrete wall or industrial surface slightly out of focus. Tight crop focusing on the spine deployment area. Include subtle VOLTLINE branding on the shoulder. Cinematic, high-contrast lighting emphasizing the defensive, porcupine-like aesthetic. Professional tactical gear photography style. --ar 3:2 --v 6"
 }

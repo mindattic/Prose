@@ -48,5 +48,25 @@
     "The Shelf",
     "Veslemøy Achebe-Tursynov",
     "Volkov-Saito Precision Custom Shop VSCS-1 'Masterwork'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A fitted, athletic-cut zip-up vest that reads as casual sportswear at first glance. The silhouette is sleek and modern, hugging the torso with subtle structural definition. When examined closer, the material has a distinctive density and weight that betrays its protective purpose. Worn by security contractors, cautious journalists, and neighborhood watch organizers across contested zones.",
+    "fit": "Slim to fitted through the chest and torso, with enough stretch to accommodate light augmentation at the shoulders and arms. The cut allows for layering over base clothing without bulk. Arm holes are generous enough for standard subcutaneous mods but require custom tailoring for heavy chrome.",
+    "primary_material": "Outer shell of high-abrasion-resistant synthetic polymer; middle layer of flexible ceramic-fiber composite trauma paneling; inner lining of moisture-wicking bio-mesh.",
+    "texture": "Smooth, dense outer surface with a subtle sheen. The material is noticeably thicker than casual athletic wear. Middle paneling has a faint quilted texture from the trauma-dispersion grid. Inner lining is soft and friction-minimal against skin.",
+    "color_scheme": "Available in stark black, industrial gray, and tactical dark olive. Minimal branding—small embossed Ironclad logo on left chest. No reflective elements or high-visibility markings.",
+    "closures": "Full-length YKK industrial-grade zipper with reinforced pull tab. Two hidden magnetic snap closures at the sides for emergency quick-release.",
+    "distinctive_features": [
+      "Layered trauma-dispersion paneling rated for low-velocity rounds and blunt impact",
+      "Reinforced stress panels along the sides and lower ribs",
+      "Hidden interior zippered pocket suitable for small devices or documentation",
+      "Graduated stitching pattern that reinforces impact zones without creating visible seams",
+      "Custom sizing available for integrated arm augmentation",
+      "Moisture-wicking inner layer prevents sweat accumulation during extended wear"
+    ],
+    "tier_indicator": "Tier 2-3 functional. Expensive enough to signal intent and resources (Φ800-1200), but accessible through non-corpo channels. Not luxury; purely utilitarian.",
+    "cultural_context": "Worn by private security operatives, cautious journalists covering Shelf-adjacent zones, neighborhood watch organizers in contested blocks, and Tier 3 individuals who move through dangerous spaces professionally. Signals preparedness without aggression—a calculated risk assessment made visible.",
+    "condition_typical": "Usually pristine or barely broken-in. Wear patterns minimal because users rotate them to preserve integrity. Occasional scuff marks on the shoulder or side from augmentation contact. Well-maintained, as replacement cost is significant for the tier that wears them."
+  },
+  "image_prompt": "A fitted black Ironclad concealment vest displayed on a androgynous cyberpunk model or dark chrome mannequin in a dimly-lit urban warehouse. Three-quarter view showing the athletic zip-up silhouette and subtle material density. Moody amber and blue neon backlighting emphasizing the protective construction without visible paneling. Bare augmented arm visible at one shoulder, subtle chrome joints catching the light. Gritty industrial backdrop with rain-slicked concrete and distant GLMZ skyline. High contrast, cinematic lighting. --ar 2:3 --v 6"
 }

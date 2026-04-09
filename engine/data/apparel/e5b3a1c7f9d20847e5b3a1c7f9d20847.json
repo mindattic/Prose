@@ -47,5 +47,26 @@
     "The Shelf",
     "Vespid Dynamics Neural Feedback Dart NFD-2 'Scream'",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively utilitarian M65-style field jacket with classic military proportions — straight-cut, hip-length, substantial presence without aggressive styling. At first glance, indistinguishable from vintage surplus or working-class outerwear. The silhouette reads 'practical' rather than 'armed,' which is entirely intentional.",
+    "fit": "Relaxed, slightly oversized through the shoulders and torso to accommodate concealed armor without binding. Articulated sleeve construction allows natural arm movement. Cut long enough to cover the hip line where plate pockets sit.",
+    "primary_material": "Cotton-nylon ripstop blend — the same weave used in genuine military field gear. Tight weave prevents snagging and distributes impact load across fabric.",
+    "texture": "Crisp, slightly stiff ripstop texture visible up close; the signature raised grid pattern characteristic of ripstop weave. Seams reinforced with heavy bar-tacks at stress points. Soft interior lining (synthetic blend) for comfort over armor inserts.",
+    "color_scheme": "Available in olive drab or coyote tan — both weathered, desaturated military tones. No logos or visible branding; identification marks are subtle interior stamps only.",
+    "closures": "Heavy-duty brass zippers down the front (primary) and side vents; magnetic snaps on the chest and cargo pockets for quick access; friction-fit strap closures on wrist cuffs.",
+    "distinctive_features": [
+      "Stowaway hood nested in the collar — compact and unobtrusive",
+      "Four cargo pockets with reinforced stitching and magnetic closures",
+      "Removable soft-armor panel system invisibly integrated into jacket construction",
+      "Rigid plate pocket placement disguised as standard interior padding",
+      "No visible attachment points or tactical webbing that would suggest armor",
+      "Reinforced lateral seams accommodate hidden insert pockets",
+      "Interior label marked only with serial number — no brand visibility"
+    ],
+    "tier_indicator": "Tier 2–3 boundary: expensive enough to signal serious self-preservation, functional enough to avoid corporate ostentation. Licensed versions skew Tier 2 corporate security; unlicensed street versions are Tier 3–4.",
+    "cultural_context": "Signals: cautious professional, private security contractor, or careful urban dweller with means. Worn by bounty contractors, licensed bodyguards, and civilians who've decided the city demands armor. The non-tactical cut suggests someone who does not want to advertise preparedness — a practical measure, not a statement.",
+    "condition_typical": "Typically worn broken-in but maintained. Ripstop ages slowly and develops subtle creasing at flex points. Unlicensed versions may show careful wear or modification (removed insignia, stitching evidence of pocket alteration). Licensed security versions tend to be kept clean and uniform."
+  },
+  "image_prompt": "A Drexel Armory Conceal-Plate Field Jacket displayed on a dark mannequin or worn by a mixed-heritage cyberpunk model with visible forearm augmentation. Olive drab ripstop fabric catches cool blue-tinted industrial lighting. Shot against a backdrop of corrugated steel or warehouse concrete, moody and utilitarian. Close detail shows the stowed hood and cargo pocket stitching. The overall mood is professional restraint — gear that works, not gear that performs. Cinematic urban security aesthetic. --ar 2:3 --v 6"
 }

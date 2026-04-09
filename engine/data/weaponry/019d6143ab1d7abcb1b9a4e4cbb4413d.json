@@ -38,5 +38,33 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Biometric Denial Charge BDC-1",
+    "Carrion Defense Works",
+    "Street-Custom Rebar Shiv 'Tetanus Kiss'",
+    "The Heritage Vault"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, utilitarian launcher built on a modified 40mm grenade platform. The body is compact and angular, designed for single-handed operation with a pronounced curve at the breech. The aesthetic is deliberately clinical and unmarked — no flash, no ornamentation. It reads as a tool engineered for quiet, deniable work.",
+    "dimensions": "48 cm length, 12 cm width at widest point (magazine housing), 8 cm height. Barrel: 15 cm. 6-capsule rotary magazine extends 6 cm below frame.",
+    "weight_description": "Deceptively light at 3.8 kg — feels almost fragile until you feel the density in the lower receiver. Balanced toward the breech. The capsules themselves are nearly weightless, which contributes to an unsettling impression of lethality without mass.",
+    "primary_material": "Reinforced polymer composite (likely polyetheretherketone or equivalent) for the frame and grip. Stainless steel breech block and barrel. Titanium capsule magazine housing.",
+    "finish": "Matte gray-black polymer, weathered to a dull charcoal. The metal components are brushed stainless — no shine, no reflection. Deliberately designed not to catch light. Surface shows micro-scratches consistent with field use and intentional wear-marking to defeat recognition patterns.",
+    "color_scheme": "Slate gray primary body, dull steel accents. No branding colors. Capsules themselves appear as translucent or frosted amber tubes, contents invisible.",
+    "grip_texture": "Textured polymer grip with shallow checkering — designed for gloved operation. Slightly tacky, non-slip surface. The trigger guard is oversized, accommodating reinforced tactical gloves.",
+    "distinctive_features": [
+      "Unmarked rotary magazine with numbered capsule positions (1-6) in faint gray laser etching",
+      "Breech block features a tiny pressure-relief vent disguised as manufacturing artifact",
+      "Barrel has microscopic rifling-like grooves to ensure capsule spin for aerosol dispersal pattern optimization",
+      "No sights — designed for point-and-fire use at close range",
+      "Magazine release is a concealed push-button on the grip, not a lever",
+      "Muzzle opening is slightly flared, optimized for capsule burst dispersal cone rather than ballistic accuracy",
+      "Serial number etched in near-invisible nano-scale characters on the lower receiver",
+      "Faint stress fractures in polymer suggest previous use without maintenance logs"
+    ],
+    "manufacturer_markings": "No visible Carrion Defense Works logo or branding anywhere. A single laser-etched line under the barrel reads 'AGRICULTURAL DISPERSAL UNIT' with a six-digit code. This is plausible deniability: the official designation obscures the weapon's true function.",
+    "condition_typical": "Well-maintained but deliberately worn. No dirt or corrosion, but surface shows deliberate marking and scuffing to avoid pattern-recognition systems. Capsule magazines show slight oxidation on the metal housing, suggesting field storage in humid conditions. The launcher itself is operational and clean, but gives the impression of being used sporadically and covertly rather than regularly drilled."
+  },
+  "image_prompt": "Product photography of the Carrion PDS-4 'Typhoid' biological weapon launcher. Sleek gray-black polymer and brushed steel frame, positioned at a 45-degree angle on a dark carbon-fiber surface. Dramatic side-lighting casting deep shadows, emphasizing the austere, clinical design. Six translucent amber capsules visible in the rotary magazine, backlit to show their contents as faint clouded suspension. Gloved hand (tactical black leather, reinforced knuckles) grips the weapon, revealing textured polymer grip and oversized trigger guard. Shallow depth of field. Cyberpunk aesthetics: neon purple rim-light on the capsule housing, warm tungsten key-light on the matte polymer. No visible branding. Atmosphere: utilitarian threat, deniable lethality, sub-grade black-market procurement. Shot against a background of dark metal grating and circuit-board texture. --ar 3:2 --v 6"
 }

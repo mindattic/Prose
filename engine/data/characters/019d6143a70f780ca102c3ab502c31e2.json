@@ -287,5 +287,13 @@
     "posture_movement": "Holds themselves with unconscious elegance, particularly the elongated neck—slight forward tilt when concentrating. Hands move with surgical precision; fingers rarely fidget. Walking gait is economical, minimal wasted motion. Tendency to make direct eye contact while listening, assessing.",
     "clothing_style": "Deliberately unremarkable: muted mid-tones (grays, dark beiges, charcoal), soft fabrics that don't reflect light. No logos, no chrome accents, nothing that triggers automated recognition systems. Practical Tier 4 workwear—reinforced cargo pants, fitted undershirts, neutral layering jacket. Cheap, durable synthleather gloves worn during fine work. No jewelry except a thin steel ring on the right middle finger (document fabricator's calling card among the underground)."
   },
-  "image_prompt": "cyberpunk character portrait, nonbinary person of West African descent, 27 years old, extremely lean angular build, elongated neck held with elegant posture, very dark ebony skin, thick locs dyed gradient from deep black roots to vivid neon green tips glowing softly, dark brown eyes with faint amber retinal HUD overlay circuitry visible, precise surgical hands with barely visible tremor-dampener scarring on inner wrists, wearing muted gray and charcoal non-reflective clothing designed to evade recognition systems, dark synthleather gloves, minimal jewelry, serious composed expression, dramatic low-light indoor workshop setting with soft UV lighting illuminating the bioluminescent green locs, cyberpunk aesthetic, intricate technical mood, shallow depth of field focusing on hands and face, film noir lighting, high contrast --ar 2:3 --v 6"
+  "image_prompt": "cyberpunk character portrait, nonbinary person of West African descent, 27 years old, extremely lean angular build, elongated neck held with elegant posture, very dark ebony skin, thick locs dyed gradient from deep black roots to vivid neon green tips glowing softly, dark brown eyes with faint amber retinal HUD overlay circuitry visible, precise surgical hands with barely visible tremor-dampener scarring on inner wrists, wearing muted gray and charcoal non-reflective clothing designed to evade recognition systems, dark synthleather gloves, minimal jewelry, serious composed expression, dramatic low-light indoor workshop setting with soft UV lighting illuminating the bioluminescent green locs, cyberpunk aesthetic, intricate technical mood, shallow depth of field focusing on hands and face, film noir lighting, high contrast --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 39.8,
+    "East Asian": 16.0,
+    "South Asian": 12.5,
+    "Hispanic/Latin American": 11.9,
+    "Sub-Saharan African": 11.5,
+    "Northern European": 8.3
+  }
 }

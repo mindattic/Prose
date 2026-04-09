@@ -41,5 +41,33 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Free Assembly",
+    "Guttersnipe",
+    "Kamala Nystrom-Keita",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Street Custom 'Glass Garden' Caltrops"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist pipe-and-steel contraption resembling a crude mortar or signal flare launcher. Oversized breach at the rear, tapered barrel of mismatched diameter tubing. The entire frame reads as industrial salvage held together by necessity rather than design—angular, unforgiving, built to fire once and worry about longevity later.",
+    "dimensions": "Launcher body: 58cm long, 12cm barrel diameter (irregular), 8cm wide at breech. Cluster munition: roughly spherical, 14cm diameter, 8cm height when bundled.",
+    "weight_description": "Hefty and front-heavy. The launcher alone feels like swinging a crowbar—2kg of dead mass that demands respect. Cluster rounds are dense, compact, deceptive in weight despite modest size. Favors two-handed shouldering.",
+    "primary_material": "Salvaged steel plumbing: Schedule 40 pipe, flanged couplings, brass fittings. Breech block welded from flat stock. Firing pin assembly is jury-rigged spring steel and hardened rod.",
+    "finish": "Industrial corrosion with deliberate preservation—unpainted bare steel showing orange rust bloom, intentionally retained for weight distribution and authentic DIY aesthetic. Welds are rough, visible, unskilled. Brass fittings retain dull tarnish.",
+    "color_scheme": "Dull rust-orange steel, aged brass, matte gunmetal grey on the firing mechanism. No paint, no finish—pure material honesty.",
+    "grip_texture": "Bare steel with shallow knurling marks from vice work. Cold to the touch. No ergonomic consideration—wrapped sections of frayed electrical tape at grip points where previous users' hands have worn the metal smooth.",
+    "distinctive_features": [
+      "Misaligned barrel seams visible as dark stress lines",
+      "Hand-stamped serial numbers scratched into the breech: 'RK-7' or similar gang markers",
+      "Airburst fuse mechanism: crude brass pressure-release valve protruding from the side",
+      "Impact dimples and dents from field use and crude manufacturing",
+      "Rope-and-cleat aiming notch cut into the rear sight block",
+      "Residual black powder staining around the firing pin housing",
+      "Wire-wrapped cluster rounds nestled in a canvas sling, wires clearly visible"
+    ],
+    "manufacturer_markings": "No corporate logo. Hand-scratched gang initials or fabricator tags stamped inside the barrel. Stamped 'STREET CUSTOM' in crude block letters on the breech flange, barely legible under rust.",
+    "condition_typical": "Field-worn and well-used. Surface corrosion is active, not static. Firing pin shows bluing wear from repeated strikes. Evidence of jury-rigged repairs: re-welded stress points, replaced fittings. Residual powder burns and char marks around the muzzle and breech from dozens of fires. Looks dangerous because it is."
+  },
+  "image_prompt": "Overhead product photography of a cobbled-together pipe-and-steel cluster munition launcher on dark matte gunmetal surface. Foreground: worn bare-steel plumbing-fixture launcher with visible rust, misaligned seams, and crude brass airburst valve. Background: six wire-bound cluster munitions arranged in tactical spacing. Harsh dramatic side-lighting from above-left, casting deep shadows across the steel, emphasizing welds and corrosion texture. Gloved hand (chrome-augmented fingers visible) grasping the rough-welded breech for scale. Cyberpunk industrial aesthetic with tactile, grimy realism. Dark, desaturated color palette—rust orange, dull brass, gunmetal. Shot composition evokes DIY weapons catalog from Tier 1 gang fabrication network. --ar 3:2 --v 6"
 }

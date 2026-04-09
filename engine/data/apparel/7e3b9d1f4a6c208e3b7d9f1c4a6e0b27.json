@@ -46,5 +46,24 @@
     "Tessera Nexus Town Car",
     "The Underlayer Collective",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A streamlined crew-neck pullover with athletic undertones and subtle technological integration. The silhouette is clean and understated, appearing at first glance like premium sportswear until the careful observer notices the barely-visible port-access geometry at the nape. Projects quiet competence and practical augmentation without flashiness.",
+    "fit": "Slightly athletic and tailored—fitted through the shoulders and chest without compression, with a relaxed taper at the torso. Designed to layer or stand alone. Mobility-focused seams suggest functional design rather than fashion-forward cut.",
+    "primary_material": "Matte charcoal softshell synthetic blend—durable, moisture-wicking, with embedded low-conductivity inner lining for BCI hardware compatibility",
+    "texture": "Smooth, almost muted surface with a subtle technical weave visible on close inspection. The matte finish absorbs light rather than reflecting it. Inner lining has a slightly tacky, anti-static texture.",
+    "color_scheme": "Flat charcoal gray with zero contrast elements. Deliberately neutral and corporate. Magnetic flap covers at base of skull match the fabric tone exactly.",
+    "closures": "Pullover construction with seamless crew neckline. Two subtle magnetic flap ports at base of skull—barely raised, friction-fit flush with the fabric.",
+    "distinctive_features": [
+      "Twin magnetic port-access panels at the base of the skull for BCI maintenance",
+      "Low-conductivity inner lining visible along collar and cuffs",
+      "Minimal branding—small Halo Dynamics logo embossed on left chest",
+      "Seams reinforced with thermal-fused edging",
+      "Subtle grid texture on inner lining suggests circuit geometry"
+    ],
+    "tier_indicator": "Tier 3 functional—mid-range BCI ecosystem hardware. Accessible augmentation tech for working-class professionals and technical workers.",
+    "cultural_context": "Worn by BCI users, systems integrators, technical workers, medical augmentation clients. Signals someone augmented but not heavily modded. Reads as 'adapted' rather than 'enhanced.' Common in corporate offices, medical facilities, and tech labs across the GLMZ.",
+    "condition_typical": "Pristine to well-maintained. Halo includes these in adaptation kits, so most are relatively new. May show minor wear around port covers from repeated access cycles. No intentional distressing—this is maintenance gear, treated with care."
+  },
+  "image_prompt": "Charcoal matte softshell pullover on a sleek androgynous model with visible subdermal circuitry beneath translucent temple skin, shot against a dark industrial GLMZ backdrop of stacked server cores and soft blue diagnostic lighting. Close detail on the back of the neck showing the two magnetic BCI port flaps. Moody cyberpunk fashion photography with cool color grading, shallow depth of field focusing on the port details. Model's posture is neutral and professional. --ar 2:3 --v 6"
 }

@@ -37,5 +37,32 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Cryogenic Fracture Disbursement Mine CFDM-4"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist industrial projector with a distinctly asymmetrical profile—thick cylindrical pressure vessel dominates the rear, tapering forward into a reinforced nozzle assembly. Reads as aggressive and purposeful, with the aesthetic of repurposed cryogenic equipment retrofitted for lethality.",
+    "dimensions": "68 cm overall length, 12 cm barrel diameter, 18 cm height at pressure coupling. Nozzle protrudes 8 cm with adjustable cone disperser.",
+    "weight_description": "Hefty and front-weighted when pressurized (6.5 kg loaded). Requires two-handed stability; balanced adequately across the grip despite the forward mass concentration. Cold to the touch even when idle due to thermal conductivity.",
+    "primary_material": "Reinforced aluminum alloy pressure vessel with steel-lined nozzle assembly and carbon-composite insulation wrapping around the reservoir section.",
+    "finish": "Matte industrial gray on pressure housing, brushed stainless steel nozzle with visible frost buildup and ice-crystal patterns under normal use. Heavy anodized protection showing micro-scratches from field handling.",
+    "color_scheme": "Gunmetal gray primary with cold-silver nozzle; blue accent striping along pressure relief vents indicating cryogenic hazard rating.",
+    "grip_texture": "Double-wrapped insulated textile (aramid-blend) handle to prevent thermal transfer. Textured polymer trigger guard with tactile ridging for gloved operation.",
+    "distinctive_features": [
+      "Dual pressure relief vents with blue hazard indicator stripes running the length of the reservoir",
+      "Pressure gauge with bright red zone marking (overpressure threshold)",
+      "Adjustable nozzle cone with mechanical detent positions for stream/spray modes",
+      "Thermal status LED (blue = operational, red = thermal warning) embedded in grip collar",
+      "Condensation management channels etched into the barrel shroud—ice never forms inside, only exterior frost patterns",
+      "Industrial-grade quick-disconnect coupling for rapid cartridge swaps",
+      "Reinforced mounting points for tactical rail accessories (but rarely modified in the field)",
+      "Manufacturer's caution placard laser-etched near the trigger: 'LIQUID NITROGEN—EXTREME COLD HAZARD'"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (interlocking A and D in a shield) stamped on the pressure vessel near the trigger guard. 'CP-4 FROSTBITE' printed in block letters along the insulation wrap. Serial plate (stainless steel) mounted on the left side below the pressure gauge. Iron Point Ammunition subsidiary stamp on the magazine coupling.",
+    "condition_typical": "Well-maintained industrial aesthetic with visible use. Light to moderate frost accumulation on nozzle and forward sections after firing. No heavy battle scars, but working examples show micro-dents on the pressure housing and worn grip tape. Pressure gauge typically shows mid-range readings on field units. Some users add custom cord wraps or equipment tags—functional modifications rather than decorative."
+  },
+  "image_prompt": "Product photography of the Arcturus CP-4 Frostbite cryogenic projector mounted on a dark gunmetal surface, three-quarter angle. Thick ice crystals and frost patterns visible on the nozzle and front barrel shroud, glistening under dramatic cool-toned side-lighting. Pressurized aluminum reservoir dominates the rear, matte gray finish with visible blue hazard striping and a red pressure gauge glowing subtly. Insulated grip with worn aramid-textile wrapping in sharp focus. Cyberpunk industrial aesthetic—clean but brutalist, corporate equipment repurposed for combat. Cold blue highlights contrasting against metallic shadows. Subtle ambient cryogenic mist around the nozzle. Shot against black composite background with stainless steel accents. Studio lighting emphasizing thermal danger. --ar 3:2 --v 6"
 }

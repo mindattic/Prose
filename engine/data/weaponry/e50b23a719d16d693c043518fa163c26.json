@@ -43,5 +43,35 @@
     "accurate",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Brecken Yılmaz-Osei",
+    "GLMZ",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Nika Svensson-Kone",
+    "Volkov-Saito Precision VS-10 Match 'Deadlock'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, competition-oriented rimfire pistol with an elongated profile. The bull barrel dominates the silhouette, extending well forward of the slide in a distinctive tapered cylinder. The overall impression is purposeful and refined—clearly a tool for precision rather than combat. The frame sits low and balanced, with an aggressive forward rake to the grip.",
+    "dimensions": "Length: 22.5 cm | Height: 13 cm | Width: 3.2 cm | Barrel length: 12.7 cm",
+    "weight_description": "Surprisingly light and well-balanced. The bull barrel's mass is forward-biased, creating minimal muzzle rise during rapid fire. Feels almost delicate compared to duty-caliber platforms, yet substantial enough to inspire confidence.",
+    "primary_material": "Aluminum alloy frame with stainless steel slide and bull barrel",
+    "finish": "Matte stainless steel slide with a brushed aluminum frame. The barrel wears a polished stainless finish that catches light at the chamber. Minimal wear patterns on examples used for training.",
+    "color_scheme": "Silver and gunmetal gray with black polymer accents on the grip and safety lever",
+    "grip_texture": "Textured black polymer grip panels with lateral serrations. The backstrap features a subtle palm swell. Dry, professional feel—no rubberization, just engineered ergonomics.",
+    "distinctive_features": [
+      "Extended bull barrel with prominent taper—the signature feature, clearly designed for sight radius and accuracy",
+      "Adjustable target rear sight on a dovetail mount, elevation and windage knobs with clear detent clicks",
+      "Red fiber-optic front sight post",
+      "Undercut trigger guard for precision grip",
+      "Minimal slide serrations (top only) to reduce glint and weight",
+      "Ambidextrous safety lever in the same position as the KP-19 duty weapon",
+      "Magazine release paddle positioned identically to duty platform for muscle-memory transfer",
+      "Lightening cuts in the slide visible under side-lighting",
+      "No tactical rail or modern accessories—intentionally stripped for focus"
+    ],
+    "manufacturer_markings": "KANG-PETROV ARMS stamped in crisp serif font on the left side of the slide. KP-22 SPORT engraved below in smaller text. Serial number on the right side. MADE IN GLMZ (Great Lakes Metropolitan Zone) stamp on the frame. A small Φ currency symbol discrete near the frame serial—indicating standard civilian pricing tier.",
+    "condition_typical": "Pristine to lightly worn. Training weapons show fine scratches from holster draw practice and handling marks on the barrel from snap-cap drills. No corrosion. Slides may show light wear at the muzzle from thousands of loading cycles. Shooters maintain these religiously."
+  },
+  "image_prompt": "Product photography of a Kang-Petrov KP-22 Sport pistol displayed three-quarter right view on a dark matte black surface. Dramatic side-lighting from upper left, creating sharp shadows and highlights on the polished stainless bull barrel. The extended barrel is the focal point, showing its clean taper and precision geometry. Silver slide and aluminum frame contrast subtly under cool LED lighting. Black grip panels visible with textured detail. Red fiber-optic sight post glints. Blurred cyberpunk training facility background—holographic target display and brass casings. Clean, professional presentation emphasizing precision engineering over tactical aesthetics. Shot with shallow depth of field. --ar 3:2 --v 6"
 }

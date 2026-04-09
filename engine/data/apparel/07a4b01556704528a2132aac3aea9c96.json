@@ -38,5 +38,26 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Pure Hand",
     "The Spire"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, utilitarian delivery uniform that reads as organized motion—cobalt blue weathershell jacket with silver retroreflective striping that catches light at shoulders, chest, and cuffs. The silhouette is athletic and slightly tapered, built for speed and agility. Paired with dark reinforced cargo trousers featuring visible expandable knee panels. The overall impression is professional infrastructure: trusted, present, and constantly moving through the city.",
+    "fit": "Slim athletic through the torso with articulated sleeve construction; cargo trousers have a relaxed thigh with reinforced knee panel gussets that allow full range of motion for cycling or climbing. All closures designed for one-handed manipulation. Collar is generously sized to accommodate neck/jaw augmentation without constriction.",
+    "primary_material": "Weathershell jacket in treated synthetic composite (waterproof to IP68); moisture-wicking technical base-layer in recycled polyester blend; cargo trousers in ballistic-weave reinforced nylon with ripstop paneling at stress points.",
+    "texture": "Jacket exterior has a subtle matte finish with tactile retroreflective trim that feels slightly raised; interior is smooth technical lining with minimal drag. Trousers have a crisp weave with reinforced, slightly textured panels at knees and seat. Everything designed to shed water and resist snag.",
+    "color_scheme": "Primary cobalt blue (SwiftRoute corporate identity) with silver retroreflective geometric striping on shoulders, chest, sleeve cuffs, and back panel. Dark charcoal or navy cargo trousers. Minimal branding—small SwiftRoute woven label only.",
+    "closures": "Magnetic snap chest panel; friction-fit magnetic wrist cuffs; snap-closure cargo pockets; split magnetic vents at jacket back. All closures operable with single hand or gloved hand.",
+    "distinctive_features": [
+      "Mesh GPS antenna pattern woven into left sleeve—visible as subtle metallic threading",
+      "Split-vent jacket back panel accommodating tail-modified geneware",
+      "Port-access panel at left wrist with BCI scanning hardware integration points",
+      "Expandable knee panels on trousers for riders spending shifts on e-cargo bikes",
+      "Collar designed to seal quickly against weather without two-handed operation",
+      "Retroreflective striping positioned for visibility from vehicle-level and above",
+      "Reinforced stress-point paneling at seat, crotch, and inner thigh"
+    ],
+    "tier_indicator": "Tier 2-3: working professional. The uniform signals reliability and authorized access, worn by workers trusted enough to move between tiers daily. Not luxury (Tier 1) but distinctly above salvage tier.",
+    "cultural_context": "SwiftRoute drivers are infrastructure—they're everywhere in M88 and represent one of the few job categories with cross-tier mobility. The cobalt blue is recognized and carries a separate reputation from the corporation itself; drivers have cultivated trust as individuals. The GPS tracking hardware is an open secret; most drivers have made peace with the monitoring or simply accepted it as cost of employment. Wearing this uniform signals reliability, but also visibility and trackeability.",
+    "condition_typical": "Delivered in pristine condition but breaks in quickly to a 'lived-in professional' state—minor scuffs on knee panels, faint creasing where closures flex repeatedly, light weathering on sleeve edges. The retroreflective trim remains bright; the uniform is regularly replaced on rotation to maintain visibility standards and GPS hardware integrity."
+  },
+  "image_prompt": "Cyberpunk fashion photography of a SwiftRoute delivery driver in full uniform: cobalt blue weathershell jacket with silver retroreflective striping visible under moody neon lighting, reinforced cargo trousers with visible knee panel articulation. Model posed mid-stride, captured from slightly above to emphasize the shoulder and chest striping. Urban warehouse backdrop with rain-slick concrete and distant neon signage. One hand slightly raised showing wrist port-access panel detail. Atmospheric haze and cool blue-tinted lighting. Dark, professional, utilitarian. --ar 2:3 --v 6"
 }

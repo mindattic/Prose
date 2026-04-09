@@ -38,5 +38,26 @@
     "Arcturus Exo-Runner Frame",
     "GLMZ",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A formidable full-body tactical platform that dominates the silhouette—broad-shouldered, chest-forward, with a commanding presence. The suit reads as military-industrial, unapologetically aggressive in form. It transforms the wearer into a moving fortress, sleek yet heavily armored.",
+    "fit": "Compression-tailored with articulated joints that allow combat mobility despite the weight. The torso is form-fitted to the chest and ribs, with segmented side panels that flex. Arms and legs feature articulated plating that permits full range of motion at shoulders, elbows, hips, and knees.",
+    "primary_material": "High-grade ballistic weave base layer with interlocking ceramic composite plating. Vital zones reinforced with Level IV ceramic insert plates. Secondary layers of synthetic aramid fibers and treated neoprene at joints.",
+    "texture": "Smooth ceramic plates with a subtle matte finish; rippled texture from the ballistic weave where exposed between panels. Articulation joints show ribbed compression mesh. Weathered micro-scratches typical on plate surfaces from field use.",
+    "color_scheme": "Gunmetal grey and deep charcoal as primary colors, with muted tactical black accents. Faint heat-dissipation striping in dark blue runs along the spine and major joints. Korvain Dynamics branding in metallic silver at the chest and shoulders.",
+    "closures": "Magnetic pressure-locks at the shoulders and sides; friction-fit segmented plating that nests together. Central torso fastens with reinforced servo-assisted mag-locks. Helmet mounting system uses quick-release titanium lugs.",
+    "distinctive_features": [
+      "Recessed mounting brackets for modular weapon attachments on shoulders",
+      "Integrated comms antenna port at left temple",
+      "Reinforced ceramic plate inserts at sternum, ribs, and back",
+      "Articulated elbow and knee joints with internal gyroscopic stabilizers",
+      "Heat-dissipation vents along the spine",
+      "Tactical rail system running across the shoulders",
+      "Korvain Dynamics embossed logo on chest plate"
+    ],
+    "tier_indicator": "Tier 1-2 corporate asset—costs more than most working-class residents earn annually. Only deployed by well-funded security contractors and corpo response teams.",
+    "cultural_context": "Signals military authority, corpo enforcement, high-threat operations, and legal grey-zone private security. Wearing it identifies the wearer as either corporate muscle or a freelance operative with serious credentials. Street culture views it with wariness and respect.",
+    "condition_typical": "Usually field-worn with minor impact scuffing on plate surfaces, faint burn marks from energy weapons, and occasional field repairs. However, Tier 1 operators maintain immaculate conditioning—cosmetic damage is professional liability."
+  },
+  "image_prompt": "A Korvain Dynamics Ballistic Assault Suit on a tall augmented model in a dimly lit corporate breach facility. The suit dominates the frame in gunmetal grey and charcoal, ceramic plates catching cold blue neon accent lighting. The wearer's posture is tactical and alert, one hand resting on a modular weapon mounting rail. Dark urban backdrop—concrete walls, faint holographic targeting reticles in the air. Moody, high-contrast cyberpunk aesthetic. Studio lighting emphasizing the plate geometry and articulation joints. --ar 2:3 --v 6"
 }

@@ -44,5 +44,25 @@
     "Deniz Nyberg-Sarpong",
     "Sterling-Nakamura Heritage Roadster",
     "The Corridor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A understated, utilitarian long-sleeve henley with athletic proportions and subtle heritage appeal. Projects quiet competence and layering readiness. The extended back hem and flatlock seaming signal functional design over fashion statement. Reads as approachable working-class staple.",
+    "fit": "Athletic cut — relaxed through the chest and shoulders with enough room for underlayers or movement. Not tailored or slim. Slightly extended back hem adds coverage without excess. Designed for comfort over eight-hour shifts.",
+    "primary_material": "Brushed thermal knit with waffle-textured interior, smooth face exterior. Synthetic blend optimized for temperature regulation in lower-city climates.",
+    "texture": "Exterior: smooth, soft-hand brushed finish. Interior: textured waffle knit for thermal trapping. Flatlock stitching throughout creates a seam-flat construction that won't chafe under layering or augmentation harnesses.",
+    "color_scheme": "Cinder — a dark charcoal that photographs as near-black but reads as warm gunmetal-grey in natural light. Timeless, non-seasonal, hides wear and staining.",
+    "closures": "Four-button henley placket in matte finish. Buttons are utility-grade polymer, designed for durability and ease of operation in cold/gloved conditions.",
+    "distinctive_features": [
+      "Waffle-textured interior for thermal retention",
+      "Extended back hem for coverage during activity",
+      "Flatlock stitching throughout — seams lie flush against skin",
+      "Brushed exterior with subtle nap",
+      "Four-button placket (henley cut)",
+      "No visible branding beyond interior tag"
+    ],
+    "tier_indicator": "Tier 2-3 boundary. Affordable mass-production quality, available at transit hubs and corner stores, but engineered with durability and comfort. Not luxury, but never cheap.",
+    "cultural_context": "Worn by transit workers, warehouse staff, maintenance crews, and anyone spending long hours in the lower city. Also worn by off-duty corpo security and working parents. The uniform of people who prioritize function and layering over trend. A shirt that doesn't draw attention because it's too busy being useful.",
+    "condition_typical": "Broken-in after first wash. Softens with wear. Flatlock seams prevent unraveling even after heavy use. After months of wear, the cinder colorway develops subtle fading at the collar and cuffs, which only makes it look more authentic. Rarely looks 'new' after first week, but can last years."
+  },
+  "image_prompt": "A dark-skinned model wearing the Coldwall Thermal Henley in cinder, three buttons undone, layered under a lightweight tactical vest with minimalist augmentation ports visible on forearms. Standing in a rain-slicked lower-city alley lit by amber sodium vapor lights and the glow of a nearby transit hub sign. Shallow depth of field, cinematic side-lighting emphasizing the texture of the fabric. Dark, moody, 2220s working-class aesthetic. No logo emphasis. --ar 2:3 --v 6"
 }

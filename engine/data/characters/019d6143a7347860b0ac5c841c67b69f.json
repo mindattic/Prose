@@ -213,5 +213,12 @@
     "posture_movement": "Quick and economical, moving through crowds as if reading the spaces between people. Hands are often occupied — fidgeting, repacking layers, adjusting straps. They stand at angles rather than facing directly forward, a posture that maximizes sightlines and minimizes scanner exposure. When still, there is coiled alertness beneath their easy expression.",
     "clothing_style": "Deliberately non-reflective layered salvage: matte-black thermal underlayer, charcoal canvas overshirt with the collar cut away to show the collarbones, dark grey cargo pants with numerous small pockets repurposed from reclaimed fabric. All seams are carefully dulled. Boots are military surplus, resoled multiple times. Nothing matches, nothing is new, nothing catches light. Tier 5 survival fashion — practical anti-visibility rather than aesthetic statement."
   },
-  "image_prompt": "Androgynous 24-year-old with shaved dark head except for one rust-orange uneven forelock, deep warm brown skin, alert dark eyes. Lean wiry build, dressed in layered matte-black and charcoal salvage clothing deliberately chosen to avoid reflective surfaces. Small geometric self-inflicted tattoos visible on shoulders and ribs. Standing in a tight drainage tunnel, cyberpunk setting, faint blue-green bioluminescent tracery glowing subtly along collarbones from geneware in the dim lighting. Expression combines easy smile with sharp calculation. Moody dystopian lighting, cool tones, cinematic depth, gritty urban underground aesthetic. --ar 2:3 --v 6"
+  "image_prompt": "Androgynous 24-year-old with shaved dark head except for one rust-orange uneven forelock, deep warm brown skin, alert dark eyes. Lean wiry build, dressed in layered matte-black and charcoal salvage clothing deliberately chosen to avoid reflective surfaces. Small geometric self-inflicted tattoos visible on shoulders and ribs. Standing in a tight drainage tunnel, cyberpunk setting, faint blue-green bioluminescent tracery glowing subtly along collarbones from geneware in the dim lighting. Expression combines easy smile with sharp calculation. Moody dystopian lighting, cool tones, cinematic depth, gritty urban underground aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 50.5,
+    "South Asian": 26.2,
+    "Hispanic/Latin American": 15.4,
+    "East Asian": 5.4,
+    "Middle Eastern": 2.5
+  }
 }

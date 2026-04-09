@@ -46,5 +46,40 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus KS-11 'Coffin Nail'",
+    "Brecken Yılmaz-Osei",
+    "Crucible Industries CX-1 'Golem'",
+    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'",
+    "Nika Svensson-Kone",
+    "Orbital Drop Pod",
+    "Street Custom 'Gallows' Recurve Bow",
+    "Street Custom 'Nail Biter' Pipe Pistol",
+    "The Shelf",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutal, compact cluster weapon: four steel pipe barrels bundled into a tight square formation, resembling a corroded industrial component or jury-rigged grenade launcher. The crude striker assembly protrudes from the rear like a mechanical spider leg. Its unrefined geometry reads as dangerous improvisation rather than manufactured precision.",
+    "dimensions": "Overall length: 180-220mm (including striker assembly). Barrel cluster width: 35-45mm square cross-section. Barrel length per tube: 80-120mm. Compact enough to palm, bulky enough to require deliberate carry.",
+    "weight_description": "Hefty and unbalanced. The four-barrel cluster creates forward mass that sits heavy in the hand. Feels like swinging a section of industrial scrap — crude momentum rather than ergonomic balance.",
+    "primary_material": "Low-grade steel pipe (Schedule 40 or industrial surplus) for barrels. Hastily welded or wire-taped cluster. Striker mechanism fashioned from scrap steel plate or spring steel. No polymer components—purely utilitarian metal.",
+    "finish": "Matte oxide black with visible weld seams and mill scale. Surface shows tool marks, grinding dust, and corrosion spotting. Electrical tape wrapping visible where barrels meet the cluster joint. Some units display crude brazing drips or flux residue.",
+    "color_scheme": "Gun-metal black with dull steel grays where welds oxidize differently. Occasional brass-colored tape wrapping or copper wire bindings. No cosmetic finishes—purely functional.",
+    "grip_texture": "Bare welded steel or electrical tape-wrapped metal where the operator grips. Sharp burrs from poorly finished welds. Textured only by corrosion and crude finishing. Unforgiving on bare skin.",
+    "distinctive_features": [
+      "Four parallel barrel bores visible in square cluster arrangement",
+      "Rotary striker plate with crude serrations for thumb manipulation",
+      "Visible weld beads along cluster seams with oxidation bloom",
+      "No sight apparatus—designed for point-blank aim",
+      "Electrical tape or wire bindings securing barrels where welding is insufficient",
+      "Crude chamber mouths with file marks and metal shavings caught in ports",
+      "Heat discoloration around striker pivot point from repeated use",
+      "Asymmetrical wear patterns indicating field use and barrel rotation stress"
+    ],
+    "manufacturer_markings": "None. Street Custom variants bear no serial plates or logos. Some units display owner initials scratched into the barrel cluster or striker plate. Rare engraved names or gang marks on heavily modified specimens.",
+    "condition_typical": "Battle-worn and jury-rigged. Field weapons show carbon fouling in barrel mouths, lead deposits, and corroded contact surfaces. Electrical tape wrappings come loose and re-taped repeatedly. Striker mechanism loosens over use and requires hammer blows to rotate. Functional but deteriorating."
+  },
+  "image_prompt": "Overhead product shot of a Street Custom Four Horsemen pepperbox on brushed gunmetal surface. Four parallel steel pipe barrels welded in tight square cluster, visible weld seams with oxide bloom, crude rotary striker plate protruding from rear. Electrical tape binding visible at cluster joint. Matte black finish with industrial corrosion spotting. Gloved hand (reinforced tactical glove, fingers splayed) positioned to show striker rotation mechanism. Dramatic side-lighting casting deep shadows between barrel tubes, emphasizing crude construction. Dark cyberpunk studio aesthetic, high contrast. Shallow depth of field. --ar 3:2 --v 6"
 }

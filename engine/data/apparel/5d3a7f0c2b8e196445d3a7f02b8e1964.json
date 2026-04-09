@@ -48,5 +48,26 @@
     "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
     "Tessera Industries Memory Rounds MR-2 'Recall'",
     "Variable Impedance Rifle VIR-9 'Switchback'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A relaxed, approachable midweight pullover hoodie with a contemporary minimalist aesthetic. The silhouette is slightly loose through the shoulders and torso with a subtle drop-tail hem that extends just past the hip. The hood sits comfortably without excess fabric, creating a streamlined profile even when drawn up. Overall impression is functional sophistication—street-ready without aggression.",
+    "fit": "Relaxed through the chest and shoulders with a gentle taper at the waist. The sleeves are straight and uncinched, designed for layering. The drop-tail hem creates visual interest and adds practical coverage. Not oversized, but deliberately not fitted—built for comfort during extended wear and movement between environments.",
+    "primary_material": "Proprietary adaptive microfibre blend (Kova's signature tech). The weave appears consistent but contains embedded microfibres that respond to body temperature changes. Feels soft and substantial to touch, with a subtle pearlescent quality under certain lighting that hints at the technical construction beneath.",
+    "texture": "Smooth face with a fine, brushed finish. The adaptive microfibres create an almost imperceptible texture variation—closer inspection reveals a dense, engineered quality rather than traditional fleece nap. The interior is lightly fleece-backed for comfort without bulk.",
+    "color_scheme": "Comes in seven muted, desaturated tones: charcoal grey, burnt sienna, deep navy, sage green, warm taupe, slate blue, and muted plum. No bold branding or graphic elements. The fabric has a subtle matte finish with barely-there tonal variation in the weave structure.",
+    "closures": "Pullover construction with a flat, unbranded drawcord in matching or neutral tone. No front zip or magnetic snaps—the design prioritizes simplicity and thermal integrity.",
+    "distinctive_features": [
+      "Embedded adaptive microfibres that shift weave density with body temperature (4-minute response time)",
+      "Front kangaroo pocket with subtle topstitching",
+      "Lined hood with flat drawcord and grommet reinforcement",
+      "Drop-tail hem with subtle curved shaping",
+      "Small woven Kova tab logo at hem (brand transparency move, visible only to wearer or close observers)",
+      "Thumb loops integrated into sleeve cuffs (subtle, functional detail)",
+      "Double-stitched seams throughout for durability"
+    ],
+    "tier_indicator": "Tier 3 functional luxury—not corpo-level but well above survival-tier. Signals someone with disposable income who values practicality and subtle engineering over brand visibility.",
+    "cultural_context": "Worn by commuters, students, field workers in knowledge jobs, and anyone navigating variable microclimates of the GLMZ. Signals someone who spends significant time moving between controlled indoor environments and unpredictable outdoor conditions. Associated with lifestyle convenience and micro-optimization rather than status or subculture. Popular among augmented workers (the adaptive tech appeals to people managing cybernetic heat dissipation).",
+    "condition_typical": "Breaks in beautifully. New pieces show clean seaming and uniform color. After 6-12 months of regular wear, the fabric develops a subtle patina—the microfibres show minor fading in high-stress areas (shoulders, cuffs), and the hood drawcord develops character. Most owners keep these for 3+ years; they're durable enough to show selective wear rather than catastrophic failure."
+  },
+  "image_prompt": "Fashion product photography of a charcoal-grey Kova Adaptive Hoodie displayed on a relaxed pose, sleek cyberpunk model with subtle chrome neck implants visible when hood is down. Moody overhead industrial lighting casting sharp shadows. Urban backdrop: rain-slicked brutalist building facade, neon Φ symbol reflecting wet concrete. Hood drawn casually around face, revealing lined interior. Drop-tail hem visible. Kangaroo pocket catch subtle light. Dark teal and amber color grading. Cinematic, desaturated, emphasizing the fabric's engineered texture and muted sophistication. Shot from 3/4 angle. --ar 2:3 --v 6"
 }

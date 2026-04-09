@@ -54,5 +54,47 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus Defense Solutions",
+    "Carrion Defense Works Autonomous Perimeter Defense Ecosystem",
+    "Crisanto Dela Torre-Ångström",
+    "Djeneba Park-Traore",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Malika Zhukov-Wiredu",
+    "Narrowcast",
+    "Ringo Corponation",
+    "Synaptrel",
+    "The Filament",
+    "The Peninsula",
+    "The Pure Hand",
+    "The Question",
+    "The Undertow",
+    "Vesna Čolić-Strand"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, angular two-handed projector with a distinctly predatory silhouette. Twin parallel barrels angle slightly downward from a reinforced central spine, giving it the asymmetrical posture of something coiled and ready to strike. The weapon has an almost skeletal aesthetic — all structural necessity, no ornamentation.",
+    "dimensions": "71 cm length overall; 34 cm grip-to-rear-sight span; twin barrels separated 8 cm center-to-center; approximately 18 cm depth at the cassette housing",
+    "weight_description": "Hefty but well-balanced across the two-hand grip. The 5.9 kg loaded weight feels distributed toward the barrel assemblies, creating a slight forward-heavy sensation that rewards aggressive two-handed control. Unloaded (4.2 kg) it feels almost delicate by comparison, deceptively light for its lethality.",
+    "primary_material": "Reinforced polymer chassis (titanium-carbon composite in military-spec models) with steel barrel sleeves and electromagnetic anchor emitters. The cassette housing is tool-steel with brushed finish.",
+    "finish": "Matte charcoal polymer with brushed steel barrel sleeves showing micro-etching from manufacturing. Military contractor versions feature light battle-wear — scuffed edges, faint stress marks around the cassette release, occasional tool-mark scratches suggesting field maintenance.",
+    "color_scheme": "Gunmetal gray primary body with darker charcoal polymer grip sections. Subtle teal accent striping (ARCTURUS DEFENSE house color) along the upper receiver and cassette release lever. Steel anchor emitter tips show dull metallic shine.",
+    "grip_texture": "Dual ergonomic grip zones with cross-hatched rubberized polymer designed for both bare-hand and gloved operation. The rear grip slightly narrower than the forward grip, encouraging a natural two-handed weapon mount. Palm swell prominent to reduce recoil stress from electromagnetic discharge.",
+    "distinctive_features": [
+      "Twin parallel barrels with visible aperture tuning rings etched in 1mm increments",
+      "Electromagnetic emitter nodes recessed into barrel ends — faint blue-green LED indicators pulse during charge cycle",
+      "Dual cassette housing with bayonet-lock mechanism and witness holes showing filament spool status",
+      "Upper-receiver-mounted targeting reference laser (Class 3, visible only under low-light conditions)",
+      "Vent ports along barrel sleeves allowing electromagnetic discharge cooling",
+      "Recessed maintenance access panel with hex-socket fasteners",
+      "Safety lever integrated into trigger guard with three-position detent: SAFE, ARMED, DEPLOY",
+      "Faint serial plate on the lower receiver with ARCTURUS DEFENSE logo and military spec designation"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (stylized compass rose) embossed on the upper rear receiver. Serial plate mounted on lower left side reads 'TFP-6/GAR-7' with batch designation and production date. Small restrictive-use warning stamp on both cassette housings. Contractor marks and field modifications common on veteran units.",
+    "condition_typical": "Military examples show field-worn aesthetic: scuffed polymer, faded accent striping, residual scoring on barrel sleeves from equipment contact. Electronics fully functional but cosmetic wear evident. Well-maintained contractor units show evidence of regular cleaning and calibration. No cosmetic rust (electronics-sealed construction), but polymer degradation visible near grip zones from operator perspiration and handling."
+  },
+  "image_prompt": "Product photography of the Torsional Filament Projector TFP-6 'Garrote' mounted on a tactical display rack, three-quarter view from the left side. Weapon photographed against a charcoal-black matte surface with dramatic side-lighting from the upper right, creating sharp shadows beneath the twin barrels and emphasizing the skeletal geometry. Tactical gloved hand (black synthetic leather with reflective piping) gripping the rear grip zone, fingers positioned for deployment. Close-up detail on the cassette housing showing witness holes and the teal accent striping. Electromagnetic emitter nodes at barrel ends faintly glowing teal-blue, suggesting active charge cycle. Background: soft-focused military contractor workshop environment with tool rack visible. Lighting should emphasize the metallic barrel sleeves and create a cold, clinical atmosphere. Cyberpunk color grade with slightly desaturated greens and enhanced shadow contrast. --ar 3:2 --v 6"
 }

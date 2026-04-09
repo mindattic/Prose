@@ -81,5 +81,24 @@
     "TESSERA PG-2 'Signature'",
     "The Composite Index",
     "The Resonance Communion"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A rugged, modular sensor platform combining a flat contact plate assembly with a dedicated handheld display unit. The contact plate is a reinforced circular or polygonal base designed to make firm ground contact; the main body is a compact angular box housing the pulse generation and analysis electronics, tethered to the contact plate via a armored flex-conduit. The display screen protrudes from the upper face at a readable angle.",
+    "dimensions": "280mm × 180mm × 90mm main body; contact plate approximately 250mm diameter. Handheld to backpack-mounted range.",
+    "weight_description": "3.2kg total — handheld with carrying strap or shoulder mount, practical for field teams but not pocketable",
+    "primary_material": "Die-cast aluminum chassis with rubberized grip zones; contact plate is hardened steel or composite impact-resistant polymer",
+    "finish": "Matte industrial gray with textured non-slip surfaces; contact plate has wear-resistant steel facing; slight weathering typical in field units",
+    "color_scheme": "Charcoal gray primary body with safety-yellow accents on grips and status indicators; Ouroboros Energy branding in silver or white; LED indicators in cyan and amber",
+    "interface_elements": "Monochrome or low-res LCD display (8–12cm diagonal) showing cross-sectional density maps in real-time; three frequency selector buttons or touchpad; power and scan-trigger controls; data export port (fiber optic or hardened connector); environmental sensors (temperature, tilt) for calibration feedback",
+    "distinctive_features": [
+      "Contact plate tether with visible reinforced shielding to protect pulse/return signal lines",
+      "Three discrete frequency LEDs on the face indicating active pulse band (80Hz green, 400Hz blue, 2kHz red)",
+      "Circular scanning progress indicator that illuminates during 45–90 second scan cycles",
+      "Radial depth-scale etched or printed on the display bezel showing 0–12m range markers",
+      "Reference library version badge (e.g., 'REF DB v.14') printed near manufacturer mark"
+    ],
+    "manufacturer_markings": "OUROBOROS ENERGY logo (stylized serpent circle or recursive symbol) on upper face; regulatory stamps (GLMZ compliance marks, power/safety certifications); serial number and calibration date tag on rear housing",
+    "condition_typical": "Field-used units show dust coating on contact plate, minor scuff marks on grip zones, occasional mud residue on tether. Display screen may show faint fingerprints or minor UV bleaching. Well-maintained corporate units appear almost pristine; extraction-team or underground-faction units show heavier weathering and improvised protective tape on connectors."
+  },
+  "image_prompt": "Cyberpunk equipment product shot: Ouroboros Energy Subsurface Resonance Imager on a dark steel workbench, contact plate base positioned downward as if about to scan, handheld display unit angled toward camera showing a glowing cross-sectional density map on the screen. Dramatic overhead neon lighting in cyan and amber casting hard shadows. Atmospheric haze in background. Close-up detail showing the three-band frequency LEDs glowing, armored flex-conduit tether, industrial wear on the device. Foreground: scattered soil, concrete fragments, or ripple marks on the workbench suggesting subsurface survey context. Cinematic, high contrast, moody urban-industrial aesthetic. --ar 3:2 --v 6"
 }

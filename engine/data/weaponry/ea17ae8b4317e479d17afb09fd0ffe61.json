@@ -44,5 +44,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Bogdan Achebe-Svanstrom",
+    "Makena Johanssen-Diallo",
+    "Nika Svensson-Kone",
+    "Saodat Mirzoyan-Fubara",
+    "Tessera Corponation",
+    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'",
+    "Zheng-Dao Bioelectric Axonal Frequency Bridge"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, almost futuristic brick of precision engineering — barely larger than a thick smartphone when folded. The Synapse resembles a minimalist slab rather than a traditional gun, with clean lines and no protruding features. Its profile is intentionally featureless to avoid catching on clothing or tactical gear.",
+    "dimensions": "200mm length (stock folded), 120mm height, 45mm width. Barrel length: 85mm.",
+    "weight_description": "Deceptively dense for its size — 900 grams feels substantial in palm, suggesting concentrated precision rather than mass. Balanced slightly forward, designed to be wielded between thumb and fingers rather than gripped fully.",
+    "primary_material": "Titanium-aluminum composite frame with polymer grip panels. Barrel: reinforced steel micro-bore.",
+    "finish": "Matte gunmetal with brushed titanium accents. Minimal reflectivity — designed to disappear in low light. Subtle wear marks from lab testing visible on edges.",
+    "color_scheme": "Gunmetal gray primary with matte black grip panels. Barely-visible amber LED indicator beneath the trigger guard (dormant until neural link active).",
+    "grip_texture": "Textured polymer with slight grip-tape overlay — enough purchase for wet-glove operation but designed not to snag on undercover clothing.",
+    "distinctive_features": [
+      "Recessed neural-link port on left side near trigger — magnetic alignment pins flush with surface",
+      "Minimalist iron sights integrated into top slide but deliberately undersized (secondary aiming when BCI unavailable)",
+      "Flush magazine well with no protruding release — magazine seats level with frame",
+      "Integrated charging handle folded into right side of frame, requires fingernail or tool to deploy",
+      "Faint crosshatch machining patterns on magazine to aid gripping and loading",
+      "Micro-vent ports along barrel assembly (heat dissipation for 1,000 rpm burst fire)",
+      "Serial number engraved in white-filled block lettering on left side: TEST-7742"
+    ],
+    "manufacturer_markings": "Perfect Recall Storage logo — stylized Φ symbol — stamped in lower left of grip. 'TMP-2 SYNAPSE' and 'RESTRICTED — INTELLIGENCE USE' embossed horizontally on top slide in 8pt font.",
+    "condition_typical": "Immaculate when fielded. This is a laboratory-precision weapon, rarely exposed to environmental contamination. Operatives maintain it obsessively. Minor scuffing only appears after extensive field deployment."
+  },
+  "image_prompt": "Tessera Micro-PDW TMP-2 Synapse micro-SMG product photograph: ultra-compact titanium-aluminum tactical sidearm, 200mm folded length, matte gunmetal finish with black polymer grip. Weapon rests on dark carbon-fiber surface, angled 45 degrees. Dramatic side-lighting from upper left reveals micro-vent ports and neural-link port details. Gloved operative hand (tactical black leather) holds weapon from above in two-finger pinch grip, demonstrating scale. Close-up detail of amber LED indicator beneath trigger guard and white-filled serial number visible. Cyberpunk intelligence agency aesthetic — sterile, minimalist, expensive. High-contrast harsh shadows. 2226 GLMZ deep-cover operative gear. --ar 3:2 --v 6"
 }

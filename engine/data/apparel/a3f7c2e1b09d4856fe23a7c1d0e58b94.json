@@ -44,5 +44,26 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Shelf",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A study in contradiction — haute couture gutted by time and poverty. Sharp tailored silhouette undermined by visible repairs and staining. The overcoat's structured shoulders still command presence despite the degradation. Worn by someone who remembers better circumstances.",
+    "fit": "Tailored through the chest and shoulders, slightly oversized through the body in a way that suggests weight loss or intentional slouching to hide the garment's true cut. Trousers hang straight but slack at the hips.",
+    "primary_material": "Pressed wool-analog overcoat (original Coldseam construction); Tier 3 synthetic cotton dress shirt; synth-leather trousers; Caelum IX pressure-form shoes",
+    "texture": "Overcoat: smooth, dense weave with subtle sheen from chrome-thread piping catching light. Duct tape patches: matte, rough, plasticky. Dress shirt: soft but worn thin at collar and cuffs. Trousers: leather-analog has developed a creased, papery texture at stress points. Shoes: molded pressure-form with subtle grip patterning, still maintaining slight iridescence.",
+    "color_scheme": "Overcoat: charcoal gray with silver chrome-thread accent piping along lapels and cuffs. Duct tape patches: industrial gray-silver. Dress shirt: off-white fading to yellow-brown at armpits and collar. Trousers: deep slate gray, faded to ash-gray at knees. Shoes: matte black with faint iridescent undertones.",
+    "closures": "Overcoat: magnetic snap buttons (original Coldseam hardware, still functional, showing tarnish). Dress shirt: worn plastic buttons, one missing at collar. Trousers: friction-fit waistband with deteriorated elastic. Shoes: pressure-form molded fit, no closures.",
+    "distinctive_features": [
+      "Chrome-thread piping on overcoat lapels and cuffs still catching light despite overall wear",
+      "Asymmetrical duct tape patches at both elbows — right patch larger, applied more recently",
+      "Hand-repaired hem with mismatched thread (reddish polyester on charcoal wool)",
+      "Original Coldseam maker's mark still visible inside overcoat collar",
+      "Missing collar button on dress shirt, hole slightly frayed",
+      "Severe knee wear on trousers showing repeated kneeling or prolonged sitting",
+      "Caelum IX pressure-form shoes — the expensive holdout, still pristine relative to outfit"
+    ],
+    "tier_indicator": "Tier 3 functional wear masquerading as Tier 1-2 heritage. The overcoat screams former wealth; everything else screams current poverty. Mixed signals that read as 'fallen' rather than 'never had.'",
+    "cultural_context": "Spire Slummer — someone who once occupied corporate housing (evident from Coldseam ownership) and has since dropped into the Shelf (mid-level ungoverned zones). Likely trades on former status or education. The refusal to discard Caelum IX shoes suggests stubborn pride or genuine attachment to last remaining asset. Military or medical background possible (pressure-forms indicate past augmentation access).",
+    "condition_typical": "Worn, patched, stained, fading. Not deliberately distressed — this is genuine weathering and repair from lack of resources. Maintained but not cared-for. The overcoat is dry-cleaned once annually if at all; the rest is hand-washed in cold water."
+  },
+  "image_prompt": "A figure in a battered charcoal Coldseam overcoat with visible silver duct tape patches at both elbows, worn over a faded cream dress shirt with a missing collar button and gray-kneed synth-leather trousers. Feet in pristine matte-black Caelum IX pressure-form shoes. Standing under cold neon light in a Shelf corridor, rain-slicked concrete behind. Overcoat catches moody blue-gray light along its chrome-thread piping. Model has mixed heritage features, augmentation ports visible at neck/jawline. Fashion photography but documentary-realist style. Cinematic, slightly desaturated palette. --ar 2:3 --v 6"
 }

@@ -44,5 +44,25 @@
     "Réginald Asomaning-Čabarkapa",
     "Sulfur Crown Agriculture",
     "Tessera Industries Phantom Wire PW-1 'Tripwire'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek wraparound visor that dominates the upper face, extending from temple to temple with a slight downward curve. Minimalist cyberpunk aesthetic—purely functional with zero decorative elements. Sits proud on the face without touching augmented BCI hardware, giving the wearer an uncluttered, streamlined appearance.",
+    "fit": "Precision-engineered to clear standard temple arrays; adjustable neoprene strap distributes weight evenly across the occipital region, avoiding neural port clusters. Sits just above the brow line with minimal pressure points.",
+    "primary_material": "Matte black recycled polycarbonate; UPF-80 tinted shield (dark amber-gray lens)",
+    "texture": "Smooth, slightly grainy matte finish on the polycarbonate body; subtle grooved channels visible on the inner surface for sweat management; neoprene strap has light ribbed texture for grip",
+    "color_scheme": "Matte black frame with dark amber-tinted shield; minimal contrast, pure stealth aesthetic",
+    "closures": "Adjustable neoprene strap with friction-fit tension (no visible buckles or snaps)",
+    "distinctive_features": [
+      "Sweat-drain grooves etched into inner lens surface",
+      "Temple cutouts designed to clear BCI antenna arrays",
+      "Crown-safe neoprene design avoids neural port pressure",
+      "Gridline logo subtly embossed on left temple",
+      "UPF-80 rating stamped on inner strap",
+      "Anti-glare coating visible as faint blue-shift on lens surface"
+    ],
+    "tier_indicator": "Tier 3-4 working class; affordable functional tech for delivery and field operators",
+    "cultural_context": "Courier culture, delivery runners, field logistics, outdoor data-mules. Worn by people who move through the GLMZ in daylight, augmented but not chrome-heavy, practical and purpose-built. No status play—pure utility.",
+    "condition_typical": "Broken-in but maintained; subtle scuff marks from regular use, but frame integrity preserved. Lens may show light dust or sweat residue from active courier runs."
+  },
+  "image_prompt": "A weathered courier wearing a matte black Gridline SolarBlock visor, face partially obscured by the dark amber-tinted wraparound shield. Urban rooftop setting in the GLMZ, afternoon sun casting sharp shadows across chrome-and-concrete architecture behind. The visor's sweat-drain grooves catch side lighting. Model wearing plain tech-fabric shirt. Dark moody color grade with amber sun flare. Close-up of visor placement shows BCI temple array visible but clear of the strap. Cyberpunk fashion photography. --ar 2:3 --v 6"
 }

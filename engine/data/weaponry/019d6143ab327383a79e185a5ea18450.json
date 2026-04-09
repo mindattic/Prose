@@ -56,5 +56,40 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Lebedev-Tutu",
+    "Arcturus Defense Solutions",
+    "Bioelectric Muscle Fiber",
+    "Biometric Denial Charge BDC-1",
+    "Cezar Watanabe-Gyasi",
+    "Coronal Discharge Projector CDP-9 'Sunburn'",
+    "GLMZ",
+    "Palladian Construction",
+    "Slagworks Industrial",
+    "Solina Barreto-Kiptoo",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Resonance Communion"
+  ],
+  "physical_description": {
+    "visual_profile": "A imposing, rifle-form factor with a distinctly medical-scientific aesthetic — all sharp angles and exposed component housing. The emitter dominates the forward profile, a textured cylindrical aperture ringed with concentric cooling fins. The receiver is modular and slightly asymmetrical, suggesting tool-swappable internal architecture. Overall impression is clinical precision weaponized: something designed in a biotech lab rather than an armory.",
+    "dimensions": "Length: 118 cm overall | Barrel/emitter: 34 cm | Width at receiver: 9 cm | Depth at stock: 12 cm",
+    "weight_description": "Hefty and substantial — 4.8 kg loaded — with weight distributed forward toward the emitter assembly. Feels anchored and deliberate in hand; not unwieldy but demanding respect from smaller-framed operators. The balance point sits slightly ahead of the trigger guard.",
+    "primary_material": "Aerospace-grade polymer composite (body/stock), anodized aluminum receiver housing, surgical-grade stainless steel emitter assembly with copper alloy heat-sink fins",
+    "finish": "Matte gunmetal gray on polymer, brushed aluminum on receiver with light oxidation marks, polished stainless on emitter aperture. Heat-stress discoloration (faint purple-bronze patina) visible on fin edges where violet corona bleeds during sustained operation.",
+    "color_scheme": "Dominant: steely gray-blue | Accents: brushed silver, burnt copper on heat fins, faint violet at emitter mouth (when powered) | Trim: black polymer grip and rail sections",
+    "grip_texture": "Rubberized polymer with crosshatch texture for secure purchase even in wet conditions. Grip wraps both pistol grip and forward rail section. Warm to the touch under normal conditions; develops heat signature under sustained fire.",
+    "distinctive_features": [
+      "Concentric copper alloy cooling fins surrounding emitter aperture — visually distinctive, functionally necessary for repeated discharge",
+      "Modular rail system along entire top and sides — suggests aftermarket optics, power taps, secondary emitters",
+      "Violet corona glow at emitter aperture when powered but not firing — the 'bruise' operators reference",
+      "Digital readout on right side of receiver displaying charge state, shot count, and frequency tuning",
+      "Recessed access panel on stock hiding dedicated power cell bay — Iron Point branding stamped in serif font",
+      "Subtle asymmetry in cooling fin arrangement — left side vents more densely than right, suggesting heat pathway optimization",
+      "Worn score marks and grip tape patches on aftermarket examples — evidence of field modification and intensive use"
+    ],
+    "manufacturer_markings": "Iron Point Ammunition logo (stylized point within circle) stamped on left side of receiver in 2cm height | Serial plate on stock in white-on-black industrial font | Small biomedical warning symbol (mitochondrion outline) above trigger guard | Frequency tuning range specifications etched along barrel shroud in tiny numerics",
+    "condition_typical": "Field-worn examples show scuffed matte finish, worn grip tape, minor heat-stress discoloration on fins, and accumulated dust in cooling assembly. Well-maintained contractor weapons appear nearly pristine except for micro-abrasions around emitter from frequent lens cleaning. Heavily deployed units show charred polymer on grip from repeated charging cycles and visible copper oxidation bloom on fins."
+  },
+  "image_prompt": "Product photography of a Mitochondrial Depolarization Pulse Rifle against matte black laboratory surface. Weapon positioned at 45-degree angle, right side facing camera to showcase cooling fin detail and emitter aperture. Dramatic single-source side-lighting from upper left, creating sharp shadows and highlighting brushed aluminum receiver. Subtle violet glow emanating from emitter mouth in low-power state. Gloved hand (tactical gray polymer) gripping stock to show scale and ergonomics. Close detail shot of digital readout on receiver showing charge state and frequency. Background: soft focus laboratory or corporate security facility interior, neutral gray tones. Materials and textures razor-sharp — aluminum grain visible, rubber grip texture rendered in detail, copper oxide patina on heat fins prominent. Cyberpunk aesthetic: clinical, precise, militarized biotech. Professional equipment photography style. --ar 3:2 --v 6"
 }

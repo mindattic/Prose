@@ -47,5 +47,40 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": "Ouroboros Energy"
+  "parent_corponation": "Ouroboros Energy",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus PG-3 'Aegis'",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "Ouroboros Energy",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "The Shelf",
+    "Vuk Yamamoto-Darko",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A stubby, business-end derringer with an unmistakably compact silhouette — barely larger than a closed fist. The over-under barrel arrangement creates a stacked, almost vertical presentation that reads as 'serious' despite its toy-like dimensions. Aesthetic sits between sleek minimalism and brutal pragmatism.",
+    "dimensions": "140mm length, 65mm height, 28mm width. Twin 75mm barrels stacked vertically create a narrow profile optimized for ankle carry.",
+    "weight_description": "Featherweight in hand — 0.3kg feels almost insubstantial, like holding a dense pocket watch. This lightness belies the dual-caliber capability; perfect for long-term ankle carry without fatigue.",
+    "primary_material": "Brushed titanium-alloy frame with polymer grip panels. Barrel assembly uses hardened steel with DLC (diamond-like carbon) coating.",
+    "finish": "Matte gunmetal gray with brushed titanium accents on the frame. The DLC-coated barrels have a dark graphite sheen that doesn't reflect light — tactical stealth aesthetic. Trigger guard and barrel selector lever feature polished stainless highlights.",
+    "color_scheme": "Gunmetal gray primary, dark graphite barrels, brushed titanium frame edges, stainless steel controls. Minimal branding keeps the aesthetic understated.",
+    "grip_texture": "Textured polymer grip with shallow diamond knurling — not aggressive, designed for secure control without sharp edges. Ergonomic contour fits the web of thumb and forefinger despite compact size.",
+    "distinctive_features": [
+      "Dual barrel-select lever on left frame side — raised slightly, indexed for tactile identification in low-light",
+      "Double-action trigger with smooth, controlled break",
+      "Minimal iron sights (blade front, notch rear) molded into top strap",
+      "Recessed ejector rod with push-forward release for quick unloading",
+      "Frame-mounted safety lever positioned for thumb manipulation",
+      "Overstrike indicator pin visible from rear",
+      "Subtle stippling on grip panels for sweat resistance",
+      "Barrel address and caliber markings engraved on top strap in sans-serif typeface"
+    ],
+    "manufacturer_markings": "Ouroboros Solar Array Division logo — a stylized serpent consuming its tail — stamped on left grip panel. Serial number engraved on frame underside. Caliber/model designation (.410/.45 AEGIS) engraved on top strap between sights.",
+    "condition_typical": "Typically well-maintained with light operational wear. Grip panels show minor scuffing from holster friction. Barrel selector lever may show patina from repeated use. No rust — DLC coating prevents corrosion even in wet conditions. Most civilian examples remain pristine; professional backup weapons show honest wear around muzzle and ejector rod."
+  },
+  "image_prompt": "Ouroboros Aegis derringer pistol photographed from 45-degree angle on dark matte black surface, side-lit by dramatic cool-blue cyberpunk neon glow from left. Weapon sits next to brass ammunition — one .410 shotshell, one .45 Colt round — for scale reference. Close-up macro detail showing barrel-select lever and caliber markings. Gloved hand (chrome knuckle augmentation visible) holding weapon in ready position. Emphasize compact size, gunmetal-gray finish with graphite-dark barrels, brushed titanium frame edges. Deep shadows under barrel assembly. High-contrast lighting. Professional product photography style merged with cyberpunk aesthetic. --ar 3:2 --v 6"
 }

@@ -46,5 +46,25 @@
   "related_entities": [
     "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A ruggedized briefcase-sized SIGINT platform with a modular top-mounted antenna array. The unit presents as a utilitarian black case with integrated cooling vents and a deployable screen assembly that folds up from the main housing. Multiple antenna connectors protrude from reinforced mounting points, suggesting serious RF collection capability.",
+    "dimensions": "42cm W × 28cm D × 16cm H (closed); antenna mast extends 35cm when deployed",
+    "weight_description": "2 kg—handheld but designed for sustained carrying with an integrated shoulder strap and reinforced carry handles",
+    "primary_material": "Aluminum composite chassis with rubberized polymer edge cladding; stainless steel antenna mounts",
+    "finish": "Matte black anodized aluminum with non-reflective black urethane coating on panels; textured grip surfaces on handles",
+    "color_scheme": "Matte charcoal-black primary with gunmetal gray antenna hardware; accent LEDs in cold blue and warning amber",
+    "interface_elements": "8-inch flexible OLED screen (recesses into top panel when folded), 12-button membrane keypad with haptic feedback, 6 SMA RF connectors, USB-C data port, power button, mode selector dial, three status LED clusters (signal/lock/recording), small cooling grille on right side",
+    "distinctive_features": [
+      "Modular antenna array with three telescoping elements that deploy vertically from spring-loaded mounts",
+      "Recessed OLED screen with anti-glare coating that folds flush into briefcase lid",
+      "Heat-dissipation fins on left panel indicating active cooling systems",
+      "Axiom Systems proprietary RF shielding seals around panel edges (visible as thin metallic gaskets)",
+      "Dual-mode carrying system: briefcase handles + quick-release shoulder strap with carabiners",
+      "Subtle scanning-pattern etching on top panel—a geometric wave design that catches light"
+    ],
+    "manufacturer_markings": "AXIOM SYSTEMS logo embossed on top (silver); 'PSS-2 PORTABLE SIGINT STATION' stenciled on right side in small military-style lettering; regulatory compliance stamps and CE marking on back panel; laser-etched serial number on bottom",
+    "condition_typical": "In field use: antenna array deployed vertically, OLED screen tilted up at 60° angle, blue signal-lock LED illuminated, faint cooling fan hum audible, carrying strap worn over operator's shoulder with excess cable looped through connector ports"
+  },
+  "image_prompt": "A Axiom Systems PSS-2 SIGINT station lies open on a weathered steel workbench in a dimly lit safehouse. The briefcase-sized black unit has three antenna masts deployed vertically, emitting a subtle blue glow from indicator LEDs. The recessed OLED screen displays streaming RF traffic in cyan waveforms. Dramatic side-lighting from a single work lamp casts sharp shadows across the antenna hardware. Urban cyberpunk setting, neon blue accent lighting reflecting off the matte black chassis, scattered network cables and RF connectors nearby, depth of field with blurred bokeh of GLMZ city lights through a nearby window. Studio product photography aesthetic merged with tactical field equipment aesthetic. --ar 3:2 --v 6"
 }

@@ -53,5 +53,39 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "GLMZ",
+    "Kamala Larsen-Mensah",
+    "Lazarus LX-2 'Lab Rat'",
+    "Narrowcast",
+    "Osvaldo Mensah-Kovalenko",
+    "Ouroboros Energy",
+    "Palladian Construction",
+    "The Nearfield",
+    "The Resonance Communion",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A heavy, asymmetrical crew-served apparatus dominated by a large parabolic dish emitter mounted on a stabilized tripod frame. The dish is the visual anchor—a wide, shallow satellite-dish-like structure bristling with concentric resonance rings. The operator's station sits forward of the emitter on a reinforced polymer mounting plate, with a grip assembly and targeting interface. A separate backpack power unit completes the system.",
+    "dimensions": "Emitter array: 140 cm height (mounted), 110 cm dish diameter. Operator frame: 85 cm length, 45 cm width. Capacitor backpack: 55 cm height × 30 cm width × 20 cm depth. Total footprint when operational: roughly 2 meters forward to back.",
+    "weight_description": "Hefty and deliberate. The emitter assembly feels solid and grounded—designed to anchor against its own resonance output. The operator frame is balanced but muscular. The capacitor backpack is genuinely heavy (18 kg), requiring both shoulder straps and a waist support frame. Not a weapon for solo operation.",
+    "primary_material": "Steel load-bearing frame reinforced with carbon-composite struts. Parabolic emitter dish is fabricated from resonance-dampening aluminum alloy to focus wave propagation. Operator interface is rubberized polymer over a hardened steel skeleton. Capacitor backpack housing is brushed titanium.",
+    "finish": "Industrial and worn. The steel frame shows a dull gunmetal finish with light surface oxidation in high-stress areas. The parabolic dish has a brushed, almost granular appearance—residue buildup from substrate contact. The operator grips are heavily scored from gloved hands. The capacitor backpack bears scuff marks and stress fractures in the titanium casing, suggesting field repairs.",
+    "color_scheme": "Primary: Gunmetal gray and brushed titanium. Accents: Matte black polymer controls and cable routing. Faded safety orange warning bands on the dish perimeter. The capacitor backpack has a dull metallic bronze tint from oxidation.",
+    "grip_texture": "Operator grips are textured rubber with reinforced knuckle guards—aggressive, non-slip. The targeting interface is smooth polymer with tactile button detents. The backpack shoulder straps are wrapped in wear-resistant synthetic fabric with integrated padding.",
+    "distinctive_features": [
+      "Parabolic resonance dish with visible concentric etching—each ring corresponds to a harmonic frequency layer",
+      "Array of six sub-emitter apertures arrayed around the primary dish centerline, small black tubes that emit the actual resonance waves",
+      "Twin stabilization struts that lock into place during operation, reducing recoil drift",
+      "Amber-colored indicator LEDs along the operator console—power state, field strength, substrate compatibility readout",
+      "Heat venting louvers on the capacitor backpack, arranged vertically along both flanks",
+      "Heavy cable bundle connecting operator interface to backpack, wrapped in protective braid with quick-disconnect couplings",
+      "Faint scorch marks and substrate residue deposits around the base of the emitter—visible evidence of field use",
+      "Recalibration dial on the dish assembly—mechanical adjustment for field diameter and frequency modulation"
+    ],
+    "manufacturer_markings": "PALLADIAN CONSTRUCTION logo stamped in chrome on the backpack housing, flanked by a batch code and serial plate. A smaller resonance-frequency certification plate is affixed to the operator frame, partially worn. Warning symbols in a dozen languages are stenciled across the capacitor unit.",
+    "condition_typical": "Battle-worn but maintained. Field crews treating this as equipment know it must function under pressure—visible repairs, replaced cables, reinforced joint tape, but no major structural compromise. Substrate residue cakes the lower third of the parabolic dish and the stabilization struts. The operator interface shows heavy use: scratched screens, worn button labels."
+  },
+  "image_prompt": "Product shot of a heavy crew-served resonance weapon. Center-frame: large brushed-aluminum parabolic dish emitter mounted on industrial steel tripod, operator console forward, capacitor backpack to the rear. Dark matte background—worn concrete floor. Dramatic side-lighting from upper left, casting hard shadows across the stabilization struts and revealing substrate residue buildup on the dish. Detail shot of the operator interface with amber indicator LEDs glowing. Show cable bundles and quick-couplings in sharp focus. Cyberpunk industrial aesthetic—utilitarian, weathered, designed for function over form. Sci-fi construction equipment meets weapons system. --ar 3:2 --v 6"
 }

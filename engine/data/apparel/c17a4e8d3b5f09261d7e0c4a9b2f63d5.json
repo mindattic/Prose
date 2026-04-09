@@ -41,5 +41,25 @@
     "Fanta Kato-Adomako",
     "Kenji Guerrero-Osei-Mensah",
     "Narrowcast"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian slim-straight silhouette with a deliberately austere profile. Sits close to the leg without restriction, projecting competence and technical precision. The matte finish absorbs light, creating a subtle visual weight despite the fabric's actual lightness. Reads as purpose-built rather than fashionable.",
+    "fit": "Slim-straight cut through hip and thigh, tapering slightly at the ankle. Flat front with no pleating. Cut for layering over undersuit tech or direct skin contact. Allows full range of motion in confined spaces while maintaining a streamlined appearance.",
+    "primary_material": "Anti-static conductive weave—synthetic blend (polyester core with carbon-fiber threading for conductivity). Matte finish eliminates reflectivity. Lightweight but structurally rigid, designed to maintain shape under repeated flexing in equipment bays.",
+    "texture": "Smooth matte surface with a subtle micro-ribbed weave visible only under close inspection. Low-friction finish reduces snagging on metal edges and conduit. No pile or nap—purely functional tactile profile.",
+    "color_scheme": "Matte black throughout with no printed graphics or visible branding. Seams are stitched in matching black thread using conductive polyester. Zero accent colors or panels.",
+    "closures": "Non-metal closure system: friction-fit waistband with internal elastic core and external gripstripe texture. Reinforced YKK polymer coil zipper (non-conductive). No buttons, snaps, or grommets anywhere on the garment.",
+    "distinctive_features": [
+      "Anti-static carbon-fiber weave rated for low-voltage environments",
+      "Two slim thigh pockets (7.5cm wide × 12cm deep) sized for diagnostic tablets and modular tool sets",
+      "Reinforced seam stitching at inseam and crotch using ballistic-grade thread",
+      "Zero external hardware—all fasteners are polymer or conductive fiber",
+      "Internal cable routing loops on hip seams for securing diagnostic leads",
+      "Ankle-hem reinforcement strip to prevent fraying in high-traffic equipment bays"
+    ],
+    "tier_indicator": "Tier 3 functional workwear. Mid-grade technical apparel signaling skilled labor and systems access credentials. Not luxury, not salvage—purpose-built for infrastructure work.",
+    "cultural_context": "Worn by licensed electricians, HVAC technicians, and systems integrators working in the GLMZ's grid infrastructure. Signals training, certification, and access to restricted spaces. Common among independent techs and mid-tier corpo maintenance crews. The anti-static feature specifically codes the wearer as someone who works around sensitive electronics rather than heavy machinery.",
+    "condition_typical": "Usually broken-in but well-maintained. The matte black shows wear patterns (slight shine developing at hip and knee flexion points) but rarely appears truly distressed. Seams hold even after 200+ hours of conduit work. Pockets show characteristic wear from repeated tool insertion/removal. Rarely patched—the fabric's durability means these pants are often worn until they're retired for minor tears, not major damage."
+  },
+  "image_prompt": "A lean cyberpunk technician wearing matte black Fenmark ToughSeam electrician pants, posed half-in-shadow beside an illuminated equipment bay. Close-up detail shot of the right thigh pocket with a faint diagnostic device barely visible inside. Dark industrial warehouse lighting, cool blue-tinted overhead glow casting the anti-static weave into subtle relief. Model's augmented wrist (glowing neural port) visible at frame edge, suggesting active connection to the equipment behind. Weathered concrete floor, spare composition. --ar 2:3 --v 6"
 }

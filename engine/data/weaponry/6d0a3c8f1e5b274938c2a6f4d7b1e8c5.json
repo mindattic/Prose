@@ -42,5 +42,37 @@
     "controversial",
     "crowd_control"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Free Assembly",
+    "Kairos",
+    "MERIDIAN",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Patient Zero",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA ES-4 'Perimeter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact cylindrical aerosol canister with a distinctly clinical appearance — sleek, purpose-built, deliberately non-threatening in form. The slow-release valve at the top is the only mechanical element, giving it an almost pharmaceutical quality despite its weaponized function.",
+    "dimensions": "17cm height × 6cm diameter",
+    "weight_description": "Light and balanced — 280 grams distributed evenly along the cylinder's length, designed for single-hand operation with minimal fatigue during deployment",
+    "primary_material": "Aerospace-grade aluminum alloy housing with pressure-rated interior chamber",
+    "finish": "Matte blue-gray powder coat with a subtle satin sheen — deliberately chosen to match the visual signature of the deployed aerosol, creating visual continuity between weapon and effect",
+    "color_scheme": "Primary: cool blue-gray metallic. Accents: matte black valve assembly and pressure gauge bezel",
+    "grip_texture": "Knurled aluminum grip section with recessed finger detents — textured for gloved operation, designed for rapid targeting and deployment without slipping",
+    "distinctive_features": [
+      "Precision slow-release valve mechanism with micrometering capability for area saturation control",
+      "Integrated pressure gauge with red-line indicator (shows deployment threshold)",
+      "Three discrete status indicator lights (green/yellow/red) embedded flush into the grip",
+      "Serialized batch coding etched into the base plate",
+      "ARCTURUS DEFENSE SOLUTIONS corporate mark stamped cleanly below the grip",
+      "Safety collar ring around the valve stem — requires deliberate rotation to unlock",
+      "Faint residual blue-gray powder coating on the valve tip from manufacturing QC testing"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (angular A-D monogram) centered on the cylinder body, 4cm from top. Serial batch number and Meridian regulatory compliance stamp on the base plate. 'PanicFront PF-2 / ADS-Phob-2' designation printed in small sans-serif type along the lower third.",
+    "condition_typical": "Factory-pristine to lightly worn — the restricted military/law enforcement market keeps most units in controlled inventory condition. Field-used examples show minor scuffing on the grip from tactical holster wear and faint fingerprint smudges on the pressure gauge from gloved operation. Never truly 'battle-scarred' because the weapon leaves no forensic evidence and sees limited documented deployment."
+  },
+  "image_prompt": "Product photography of a blue-gray aerosol canister (PanicFront PF-2) held vertically in a gloved tactical hand, resting against a matte black surface. Dramatic side-lighting from the left casts sharp shadows, emphasizing the cylindrical geometry and valve assembly. The finish shows a subtle satin sheen catching the light. Extreme close detail on the valve mechanism, pressure gauge, and status lights glowing faint amber. Corporate marking visible on the body. Dark industrial background suggesting a secure weapons catalog or military armory setting. Cyberpunk aesthetic: cold, clinical, clinical precision meets psychological weapon design. Atmosphere of quiet menace. --ar 3:2 --v 6"
 }

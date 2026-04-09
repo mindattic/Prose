@@ -51,5 +51,38 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Crucible Industries Thermal Cascade TC-5 'Flashover'",
+    "GLMZ",
+    "Hearthstone Firearms Single-20 'Farmhand'",
+    "Iowan Behemoth — 'Thunderhead'",
+    "Lazarus LX-2 'Lab Rat'",
+    "Narrowcast",
+    "Nurlan Holmberg-Dembele",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally compact break-action mortar with a pronounced stubby barrel and reinforced breech. The silhouette reads as a sawed-off grenade launcher crossed with a flare gun—all business, no elegance. The grip dominates the lower half, thickened by the integrated digital fuse programmer module.",
+    "dimensions": "61 cm length overall; barrel bore 40 mm; grip width 8 cm; depth 12 cm at the breech assembly",
+    "weight_description": "Hefty but balanced—4.1 kg feels substantial in the hand without being unwieldy. The weight sits slightly forward in the barrel, encouraging a stable two-handed firing posture.",
+    "primary_material": "Reinforced polymer composite frame with steel barrel liner and aluminum breech block. Internal pressure vessel is hardened steel.",
+    "finish": "Matte tactical polymer—olive-drab green base with charcoal accents. Steel barrel shows light oxidation and micro-scarring from pressurized canister ejection cycles.",
+    "color_scheme": "Sage green polymer body; gunmetal gray barrel and breech hardware; digital display backlit in acidic amber on the grip module",
+    "grip_texture": "Textured rubberized polymer with raised grip panels; the fuse programmer module beneath has a slight dimpled finish for tactile button feedback. Bare aluminum charging lever on the side.",
+    "distinctive_features": [
+      "Prominent break-action lever extending from the breech—chunky, mechanical, requires significant leverage to cycle",
+      "3x3 cm digital LCD screen recessed into the grip showing altitude/delay/dispersion mode readouts in glowing amber text",
+      "Four rubber-capped pressure vent ports along the barrel (2 per side) for canister bleed-off",
+      "Charging handle with witness holes for round confirmation",
+      "Integrated accessory rail (Picatinny) along the top, typically bare or bearing only a simple backup iron sight",
+      "Faint engraved serial plate (ARCTURUS model stamp) on the left breech face",
+      "Slight carbon scoring and powder residue buildup around the barrel muzzle—typical field condition"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS stamp in sans-serif font on the left side of the breech block, just above the break-action lever. Small QR-code engraving (unreadable without magnification) adjacent to the serial plate.",
+    "condition_typical": "Field-worn but well-maintained. Polymer shows scuff marks and minor impact scarring consistent with tactical equipment transport. Barrel interior cleaned regularly; breech seals show light wear. Digital display occasionally exhibits minor pixel dropout from thermal cycling."
+  },
+  "image_prompt": "Product photograph of the Catalytic Aerosol Mortar CAM-3 'Lungful' lying horizontally on a dark matte gunmetal surface, slightly angled to showcase the break-action breech and digital grip module. Dramatic side-lighting from the upper left casts sharp shadows across the barrel and highlights the texture of the polymer grip. A gloved hand (black tactical glove, subtle chrome knuckle reinforcement) grips the weapon from above, fingers positioned near the break-action lever. The LCD display faintly glows amber in the grip shadow. Background is deep charcoal, slightly out of focus, with a faint geometric grid overlay suggesting an industrial workspace. Cinematic cyberpunk color grading: cool shadows with warm amber accent light on the display and barrel edge. High detail on metal imperfections, polymer texture, and engraving clarity. --ar 3:2 --v 6"
 }

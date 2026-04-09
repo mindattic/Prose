@@ -33,5 +33,32 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "GLMZ",
+    "Ngaire Rojas-Yeboah",
+    "Synaptrel"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, low-profile forearm-mounted mechanism that hugs the inner wrist like a predator's skeletal limb. The blade sits flush against the arm when retracted, creating barely a bulge under fabric. When deployed, a wicked 15cm steel tooth snaps forward with mechanical precision.",
+    "dimensions": "Mechanism body: 18cm long × 4cm wide × 2.5cm deep when mounted. Blade extends 15cm total from wrist mount point. Mounting strap spans 12-16cm around forearm circumference.",
+    "weight_description": "Deceptively light — feels like a heavy watch or slim bracer rather than a weapon. High-tier builds (titanium/precision) are nearly weightless; street-tier versions have noticeable heft from crude steel.",
+    "primary_material": "Machined steel or titanium frame depending on build tier. Blade is hardened steel or ceramic composite. Mounting strap is reinforced synthetic or leather.",
+    "finish": "High-tier: Brushed titanium with precision milling marks visible. Street-tier: Dull black oxide or rust-resistant coating with visible wear, tool marks, and improvised welds. Mid-tier: Matte gunmetal with subtle scratches from repeated deployment.",
+    "color_scheme": "Primary: Matte black or gunmetal gray. Accent: Blade gleams cold silver or gun-blue depending on steel type. High-end builds show brushed metallic finishes.",
+    "grip_texture": "Mounting strap is rough textured — either knurled metal rivets, wraparound leather, or rubberized synthetic webbing for secure grip under the forearm without slipping during use.",
+    "distinctive_features": [
+      "Spring mechanism housing with visible coil tension points",
+      "Wrist-flexion trigger—a small lever or pressure plate integrated into the inner forearm contact",
+      "Manual release button positioned for thumb access when blade is deployed",
+      "Blade retention teeth or locking groove visible when extended",
+      "Faint scratch patterns from thousands of micro-deployments in street builds",
+      "Heat discoloration on blade tip in well-used units (dark purple or bronze tint)",
+      "Quick-release buckle or clasp for emergency removal"
+    ],
+    "manufacturer_markings": "Street Custom: crude stamped initials 'SC' on housing (often worn illegible). High-tier builds may have serial numbers laser-etched inside the spring housing. Most street versions have no markings to avoid tracing.",
+    "condition_typical": "Street-tier: Scratched, slightly bent housing with visible rust spots on blade edges and dried blood stains in crevices. Mid-tier: Clean but worn, light scratches, blade shows minor discoloration. High-tier: Pristine, barely used, shows only faint handling marks."
+  },
+  "image_prompt": "Professional product photography of a Street Custom 'Mantis' wrist blade in both retracted and deployed positions, lying on matte black gunmetal surface. Retracted version shows as slim forearm-mounted device with leather mounting strap, deployed version displays 15cm razor-sharp steel blade locked at aggressive angle. Dramatic side-lighting with cyan and orange neon glow highlighting blade edge and spring mechanism details. Close-up detail shot of wrist-flexion trigger mechanism. Worn titanium finish with visible tool marks. Cyberpunk aesthetic, gritty GLMZ street-combat styling. Shot against industrial dark background with faint depth-of-field bokeh. --ar 3:2 --v 6"
 }

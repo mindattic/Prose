@@ -38,5 +38,34 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions ARC-SLP 'Diplomat'",
+    "Carbon Fiber",
+    "GLMZ",
+    "Idris Forsberg-Quaye",
+    "Nika Svensson-Kone",
+    "Vantablack BC-1 'Briefcase'"
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively elegant, almost minimalist pistol that resembles a high-end personal device more than a weapon. Its flat, rectangular profile and credit-card-thin dimensions give it the appearance of a premium tech accessory — something you'd expect in a corpo executive's briefcase rather than a lethal instrument.",
+    "dimensions": "12 cm length, 3.2 cm width, 1.8 cm depth at grip; barrel bore approximately 5mm",
+    "weight_description": "Feather-light and perfectly balanced — 180 grams feels almost insubstantial in the palm, more like holding a thick piece of composite material than a firearm. The low mass creates an unsettling disconnect between its lethality and its gossamer feel.",
+    "primary_material": "Ceramic barrel core, reinforced polymer frame, carbon-fiber internal mechanisms and trigger assembly. No steel, no ferrous metals anywhere in the construction.",
+    "finish": "Satin-smooth ceramic surfaces with subtle translucent quality — almost opalescent under light. The polymer sections are finished in a pearl-white or deep charcoal matte, designed to blend with luxury corporate aesthetics.",
+    "color_scheme": "Primary: matte ceramic white or charcoal black. Accent colors: subtle brushed-titanium-colored polymer trim along the grip and slide rails, minimal branding in gunmetal gray.",
+    "grip_texture": "Finely textured polymer with a grip-enhancing microtexture reminiscent of premium smartphone casings — soft-touch, non-reflective, with subtle diamond-pattern knurling for index finger purchase.",
+    "distinctive_features": [
+      "Integrated safety lever recessed flush into the frame — barely visible unless you know where to look",
+      "Minimalist rear sight notch machined into the ceramic slide itself — no protruding elements",
+      "Loading port positioned along the grip spine for ceramic-round insertion, sealed with a sliding polymer latch",
+      "Faint Sterling-Nakamura logo embossed — not engraved — into the grip, blending seamlessly with the material",
+      "Barrel port has a barely-perceptible flare at the muzzle, designed for ceramic-round stabilization",
+      "Micro-texture finish throughout to defeat fingerprint and reflection detection",
+      "Ultra-thin trigger guard, barely a finger's width, integrated into the frame profile"
+    ],
+    "manufacturer_markings": "Sterling-Nakamura corporate logo (subtle embossed mark, not stamped) on the left grip panel. Serial number laser-etched on the interior of the slide in micro-print, invisible from external view. No visible caliber or warning markings.",
+    "condition_typical": "Pristine when issued — these weapons are regularly maintained by corporate security teams and rarely see heavy use. When fielded, they show minimal wear due to their material composition. Well-maintained examples appear almost new; heavily used examples may show micro-scratches on ceramic surfaces and slight ceramic degradation at the barrel crown."
+  },
+  "image_prompt": "Professional product photograph of the Sterling-Nakamura EDP-1 'Handshake' pistol: Ultra-compact ceramic and polymer pistol, credit-card-thin profile, lying flat on a dark brushed-steel surface. Dramatic side-lighting from the left, casting sharp shadows that emphasize the razor-thin depth. Close-up detail shot showing the satin ceramic barrel and matte polymer frame in pearl-white and charcoal black. Hands in black nitrile gloves holding the weapon at a 45-degree angle, fingers avoiding the trigger guard. Cyberpunk aesthetic: cool blue-white side-light, hint of ambient neon reflection on the ceramic surfaces. Minimalist, high-end corporate weapon design. Ultra-detailed materials: visible texture on the grip, subtle embossed logo, micro-etched elements. Professional studio lighting, shallow depth of field, weapon in sharp focus against dark background. --ar 3:2 --v 6"
 }

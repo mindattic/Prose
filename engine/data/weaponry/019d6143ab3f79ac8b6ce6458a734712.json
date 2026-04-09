@@ -56,5 +56,36 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Inoue-Aidoo",
+    "Ezio Kaboré-Malhotra",
+    "GLMZ",
+    "Galvanic Interstitial Fluid Displacement Lance",
+    "Kamala Nystrom-Keita",
+    "Palladian Construction",
+    "Stonepath Logistics"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact dual-chamber cylindrical device resembling an industrial caulking gun crossed with a demolition tool. Two stacked reservoirs dominate the body, connected by visible pressure-regulation tubing. The nozzle assembly protrudes forward like a reinforced applicator tip. Overall impression: purpose-built, industrial, deliberately unglamorous.",
+    "dimensions": "23cm length overall, 8cm width at widest (dual reservoirs), 6cm depth. Nozzle extension adds 4cm. Trigger guard spans 5cm vertically.",
+    "weight_description": "Deceptively dense — feels balanced but substantial in hand when fully loaded (520g). The dual reservoirs create a slightly front-heavy bias that steadies aim but requires controlled grip pressure to manage recoil during activation.",
+    "primary_material": "Reinforced polymer composite body (fire-resistant polyamide blend) with internal steel pressure vessels. Nozzle assembly is hardened aluminum with tungsten carbide tip.",
+    "finish": "Industrial matte gray with functional black accents. Surfaces are deliberately unpolished — scratches, minor gouges, and wear marks are intentional design cues signaling durability over aesthetics. Some units show light oxidation on metal components.",
+    "color_scheme": "Gunmetal gray primary with charcoal black grip panels and safety collar. High-visibility orange pressure indicators on reservoir coupling. Palladian Construction branding in white stencil.",
+    "grip_texture": "Textured polymer grip with subtle ribs for secure handling in wet or gloved conditions. The trigger guard is wrapped in thin rubber gasket material to dampen vibration during high-pressure actuation.",
+    "distinctive_features": [
+      "Dual transparent pressure gauges on each reservoir showing chemical levels — greenish-tinted polycarbonate domes",
+      "Yellow-and-black hazard striping along the nozzle shroud",
+      "Manual catalyst-timing dial on the right side (adjustable 0.5–6 second curing window)",
+      "Pressure relief valve positioned prominently on the top — small brass nipple with tension spring",
+      "Serial plate with Palladian Construction logo and contractor certification codes stamped on left side",
+      "Faint residue staining (dried polyurethane foam) around nozzle edges — evidence of field use",
+      "Chemical compatibility warnings laser-etched on both sides",
+      "Integrated safety pin tether (bright red synthetic cord) looped through trigger guard"
+    ],
+    "manufacturer_markings": "Palladian Construction logo (angular geometric 'P') stamped in white on upper left reservoir. Serial number and 'RFC-11 BLOAT' designation engraved below. Contractor certification plate on grip. Patent markings and chemical warning symbols stenciled on right side. Some street-market variants have markings deliberately defaced or over-painted.",
+    "condition_typical": "Well-maintained commercial units show minimal wear. Street-market combat variants are noticeably battle-scarred: nozzle tips often bent or damaged from impact use, grip panels scuffed or repaired with electrical tape, pressure gauges clouded from repeated blast cycles, and reservoir couplings showing stress fractures sealed with adhesive putty. Field-modified units frequently have the timing dial super-glued in fixed positions or the safety pin missing entirely."
+  },
+  "image_prompt": "Product photograph of the RFC-11 'Bloat' demolition charge, front three-quarter view, resting on a dark brushed-steel workshop surface. Gloved hand (tactical black leather, visible cybernetic fingers with LED palm circuitry) grips the device firmly, finger positioned near trigger guard. Sharp side-lighting from the left reveals texture on polymer body and casts deep shadows across dual reservoirs. Orange pressure indicator domes glow faintly under light. Background is a dark industrial concrete wall with subtle GLMZ corporate stenciling. Shallow depth of field keeps focus on nozzle tip and pressure gauges. Color grading emphasizes cool grays and dangerous orange accents. Cyberpunk aesthetic: functional brutalism, no romance, pure industrial lethality. --ar 3:2 --v 6"
 }

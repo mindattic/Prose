@@ -81,5 +81,25 @@
     "Vantablack VS-3 'Skin Job'",
     "Vantablack-CNX",
     "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting bodysuit that appears as a human-shaped void or absence—smooth, matte, and aggressively non-reflective. The surface has a faintly segmented appearance under close inspection, revealing the honeycomb pattern of metamaterial tiles beneath a dark, almost charcoal-black graphene substrate. In bright light, it reads as visually 'flat' and dimensionless, difficult for the eye to lock onto. The wearer becomes a silhouette with no surface detail.",
+    "dimensions": "Full-body garment: approximately 170–190 cm total length when worn; torso width ~40 cm, arm and leg circumferences proportional to standard human anatomy",
+    "weight_description": "Lightweight and pocketable when compressed; 2.1 kg total weight means it drapes naturally without burden. Handheld or roll-packed for transport.",
+    "primary_material": "Layered graphene substrate with micro-actuated photonic crystal metamaterial tiles bonded throughout. Passive thermal-bleed membrane integrated into outer layer.",
+    "finish": "Matte, ultra-low-reflectance coating across all visible surfaces. Tile seams are almost imperceptible to the naked eye but create a faint microscopic texture pattern. Zero gloss; extreme visual flatness.",
+    "color_scheme": "Near-absolute black with charcoal undertones. Accent seams between tiles occasionally catch ambient light with a faint silvery-gray edge (structural metal traces). No visible branding or color variation.",
+    "interface_elements": "Minimal. Small recessed power indicator (dim red LED, 3mm) on left inner wrist. Kinetic harvest cell mesh woven throughout (invisible to casual observation). Recalibration vent mesh on upper back and shoulders—small perforated panels that emit faint mechanical whisper during operation. Standard tactical pockets and attachment points along hips and thighs (Velcro loops, non-reflective). Modular hood attachment point at neckline (magnetic snap).",
+    "distinctive_features": [
+      "Honeycomb tile seaming visible only under magnification—creates a barely-perceptible hexagonal surface texture",
+      "Kinetic harvest cell grid running through substrate, visible only as faint threadlike traces under extreme close inspection",
+      "Recalibration vent mesh on upper back—small perforated aluminum panel (matte-finished) that whispers audibly when tiles adjust",
+      "Micro-actuator points distributed across body—no visible bulges, but faint indentations suggest internal mechanical complexity",
+      "Thermal-bleed membrane edge detail along wrists and ankles—barely visible darker seam",
+      "Zero-reflectance surface creates an eerie visual 'absence' quality—the wearer appears as a human-shaped hole in space"
+    ],
+    "manufacturer_markings": "Small woven ARCTURUS DEFENSE SOLUTIONS label (white text on black, 2cm × 1cm) on inner left shoulder seam. Regulatory compliance stamp (GLMZ Tier-3 Optics Clearance) printed in gray on inner waistband. Serial number etched on rear neckline tag (barely visible unless suit is removed).",
+    "condition_typical": "In use, the suit hugs the wearer's silhouette perfectly, creating an uncanny visual flatness. Movement causes no shimmer or reflection—the wearer appears to move as a two-dimensional cutout through three-dimensional space. In rest state, it drapes naturally without folds or wrinkles that catch light. Recalibration whisper becomes audible when moving between drastically different lighting zones (bright to dark or vice versa). Urban legends speak of operatives 'disappearing' into crowds wearing these—the suit's visual denial is profound enough to trigger mild disorientation in observers."
+  },
+  "image_prompt": "Close-up product shot of Arcturus Albedo Negation Shell draped over a tactical mannequin, displayed on a brushed-steel workbench in a dimly lit black-market safehouse. Dramatic single-source lighting from the left casts sharp shadows, but the suit itself appears as an eerie visual void—a human-shaped absence with no reflections, no highlights, just profound flatness and optical nothingness. Zoom in on the faint honeycomb tile seaming at the shoulder and upper arm, showing the microscopic texture and barely-visible kinetic harvest cell traces beneath the graphene substrate. The recalibration vent mesh on the back is slightly visible, small aluminum perforations catching light. Foreground shows a ceramic coffee cup with Φ symbol and scattered tactical gear (magazines, data-chip, black cable) to establish GLMZ corporate safehouse aesthetic. Cyberpunk noir mood: cool blue ambient light, high contrast, grain texture. --ar 3:2 --v 6"
 }

@@ -323,5 +323,10 @@
     "posture_movement": "Stands with weight balanced, ready to move in any direction. Movement is economical and fluid — no wasted motion, no flourish. Eyes constantly scanning, cataloging exits and threats. She moves like someone who has learned that survival is a series of micro-decisions made at speed.",
     "clothing_style": "Tier 3-4 practical: reinforced synthetic-leather jacket (charcoal grey, well-maintained), fitted tactical pants with cargo pockets, heavy-duty boots with grip-soles. Minimal jewelry except a worn silver ring on her right hand (inherited from mentor). Gear is always accessible, always ready. Fabrics are functional — nothing that catches or restricts. She dresses for the job, not the social tier."
   },
-  "image_prompt": "Cyberpunk character portrait: athletic 30-year-old Black woman with West African and Eastern European heritage, dark skin with golden undertones, sharp cheekbones, deep brown alert eyes. Hair pulled back tightly, revealing visible chrome augmentation ports at the nape of neck glowing faint amber. Thin scar along left temple. Wearing charcoal grey reinforced tactical jacket and cargo pants, heavy boots. Neutral calculated expression, posture balanced and ready. Studio lighting with neon rim light highlighting the chrome augmentations, dark background, gritty urban cyberpunk aesthetic, professional extraction specialist vibe --ar 2:3 --v 6"
+  "image_prompt": "Cyberpunk character portrait: athletic 30-year-old Black woman with West African and Eastern European heritage, dark skin with golden undertones, sharp cheekbones, deep brown alert eyes. Hair pulled back tightly, revealing visible chrome augmentation ports at the nape of neck glowing faint amber. Thin scar along left temple. Wearing charcoal grey reinforced tactical jacket and cargo pants, heavy boots. Neutral calculated expression, posture balanced and ready. Studio lighting with neon rim light highlighting the chrome augmentations, dark background, gritty urban cyberpunk aesthetic, professional extraction specialist vibe --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 38.3,
+    "Hispanic/Latin American": 34.2,
+    "East Asian": 27.5
+  }
 }

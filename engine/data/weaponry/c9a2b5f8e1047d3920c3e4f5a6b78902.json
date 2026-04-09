@@ -42,5 +42,40 @@
     "aerosol",
     "professional"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Alper Inoue-Aidoo",
+    "Arcturus Defense Solutions Laminar Pursuit Frame",
+    "Bogdan Achebe-Svanstrom",
+    "Free Assembly",
+    "Slagworks Industrial",
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
+    "Street Custom 'Glass Garden' Caltrops",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "The Bazaar",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, professional-grade aerosol canister with a distinctly engineered appearance—longer and more angular than consumer pepper spray, with a pronounced grip and precision nozzle assembly that suggests industrial precision. The overall silhouette reads as 'control' rather than brute force.",
+    "dimensions": "Height: 14.2cm, diameter (body): 3.8cm, depth with nozzle assembly: 4.1cm. Thumb rest adds 1.2cm to overall profile when engaged.",
+    "weight_description": "Hefty for its size—90ml of pressurized liquid gives it substantial heft without being unwieldy. Balanced toward the grip; feels authoritative in the hand rather than fragile.",
+    "primary_material": "Anodized 6061 aircraft-grade aluminum body; polymer grip insert and nozzle assembly housing",
+    "finish": "Satin-brushed anodized aluminum—warm gunmetal tone with micro-texture that catches light subtly. The nozzle assembly features a polished chrome micro-valve seat. Minimal reflectivity by design.",
+    "color_scheme": "Primary: gunmetal gray-silver (anodized aluminum). Accent: matte black polymer on grip and nozzle collar. Minimal branding in brushed stainless—purposefully understated.",
+    "grip_texture": "Textured polymer with radial friction ridges optimized for gloved or augmented hands. Thumb rest is slightly raised and rubberized, with a deliberate concave shape for positive purchase.",
+    "distinctive_features": [
+      "Precision micro-valve nozzle with visible internal geometry—suggests engineered dual-mode function",
+      "Angled nozzle tip designed to minimize blowback trajectory",
+      "Integrated thumb rest with subtle ergonomic shaping",
+      "Fine radial machining marks visible on aluminum body—industrial rather than tactical aesthetic",
+      "Small embossed DirectStream logo on canister shoulder",
+      "Pressure gauge indicator window (translucent amber) on canister body",
+      "Subtle wear polish at edges consistent with professional handling",
+      "No aggressive texturing or 'tactical' aesthetic—understated and corporate"
+    ],
+    "manufacturer_markings": "ShieldTech logo (circular badge) on upper canister shoulder, approximately 0.8cm diameter. Model designation 'SPP-3' embossed below grip. Micro serial stamp on base. Markings are restrained and professional—consistent with licensed/regulated product aesthetic.",
+    "condition_typical": "Well-maintained, clean. Slight micro-scratches on anodized surface from professional carry. Nozzle assembly shows minimal wear—indicates regular maintenance protocol. Pressure indicator at full (opaque amber). No signs of jury-rigging or improvisation; this is a tool maintained to specification."
+  },
+  "image_prompt": "Professional product photography of ShieldTech SPP-3 oleoresin capsicum spray canister. Gunmetal-gray anodized aluminum body with black polymer grip, positioned on dark matte surface (obsidian or charcoal). Dramatic side-lighting (key light 45°, cool color temp) emphasizing micro-valve nozzle detail and anodized texture. Hand in tactical glove (gray or matte black) holding canister at natural grip angle, thumb rest engaged. Shallow depth-of-field isolating the precision micro-valve assembly and pressure gauge window. Cyberpunk aesthetic: cool LED accent lighting (blue-tint rim light on aluminum), minimalist corporate design language, licensed professional equipment feel. No blur, clinical focus. Atmospheric mist or particulate haze in background suggesting GLMZ industrial environment. --ar 3:2 --v 6"
 }

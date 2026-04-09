@@ -43,5 +43,42 @@
     "Nepalese",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Amara Diallo-Ranginui",
+    "Avon Curve",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "GLMZ",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
+    "Lazarus EC-4 'Companion'",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Sustrel",
+    "TESSERA TC-3 'Crucible'",
+    "The Belly",
+    "The Crucible",
+    "The Heritage Vault"
+  ],
+  "physical_description": {
+    "visual_profile": "A distinctly curved chopping knife with the iconic inward-sweeping silhouette of a traditional Nepalese kukri, but rendered in sleek modern composite materials. The blade curves dramatically inward from mid-point to tip, creating a distinctive belly that catches light. The overall impression is of controlled aggression—a weapon that looks equally at home in a survival kit or a martial artist's hands.",
+    "dimensions": "Main blade length: 30 cm, total length: 42 cm, blade width at widest point: 4.5 cm, grip length: 10 cm",
+    "weight_description": "Noticeably light for its size—feels almost delicate in hand despite its lethal profile. The 380g weight (40% lighter than steel) creates an uncanny combination of minimal fatigue and maximum impact efficiency. Balanced toward the blade's belly, giving it a natural pendulum swing.",
+    "primary_material": "Aerogel-reinforced carbon composite—a material that appears almost luminescent under certain angles, with a subtle internal structure visible beneath the surface finish",
+    "finish": "Matte charcoal with subtle iridescent undertones where light catches the composite layers. The blade surface shows a fine crosshatch pattern from the material's layup construction. Scabbard is natural leather with carbon composite fittings.",
+    "color_scheme": "Charcoal gray composite blade with darker grip/handle. Brass or copper-colored fittings around the blade spine. The companion blades (karda and chakmak) visible in scabbard showing contrasting finishes.",
+    "grip_texture": "Wrapped in textured cord or leather—traditionally styled but optimized for secure purchase even when wet or gloved. Slight grip swelling at the widest point for ergonomic control during chopping motions.",
+    "distinctive_features": [
+      "Dramatic inward-curving blade belly that concentrates impact force",
+      "Visible composite layup structure giving the blade subtle depth and texture",
+      "Two companion blades visible in leather scabbard—karda (utility) and chakmak (fire-starter)",
+      "Piezoelectric fire-striking surface on chakmak showing crystalline faceting",
+      "Traditional kukri pommel with period-accurate curve",
+      "Fine groove running along blade spine where composite layers meet",
+      "Burnished brass fittings at blade base and guard",
+      "Subtle Crucible Industries maker's mark stamped near the guard"
+    ],
+    "manufacturer_markings": "Crucible Industries logo and 'CK-7 GURKHA' designator stamped in silver into the composite just above the guard. Serial number etched into the brass fittings. No aggressive branding—deliberately understated to respect the weapon's traditional heritage.",
+    "condition_typical": "Pristine to well-maintained. Even field-used examples show minimal wear due to the composite's durability. Users tend to keep the Gurkha in excellent condition as a mark of respect for the weapon's cultural significance and engineering investment."
+  },
+  "image_prompt": "Product photography of a Crucible Industries Composite Kukri CK-7 'Gurkha' blade displayed on dark matte background. The main kukri blade dominates the frame with its distinctive inward curve, charcoal gray carbon composite material showing subtle iridescent reflections. Dramatic side-lighting emphasizes the blade's recursive geometry and reveals the fine crosshatch texture of the material's internal layup structure. The leather scabbard positioned below displays the two companion blades—karda and chakmak—with brass fittings catching warm highlights. Traditional Nepalese aesthetic meets cyberpunk materials science. Grimdark, professional, high-contrast lighting. Shot at slight angle to showcase the blade's curved profile and material depth. --ar 3:2 --v 6"
 }

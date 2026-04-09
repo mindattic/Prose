@@ -42,5 +42,43 @@
     "universal",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Aphelion",
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "GLMZ",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Nika Svensson-Kone",
+    "Patient Zero",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Solange Mbeki-Vásárhelyi",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "The Hearthstone",
+    "The Human Baseline Alliance",
+    "The Pure Hand",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, rounded revolver with a distinctly stubby profile. The shrouded hammer creates a smooth, bulbous crown at the rear. The short barrel gives it an almost toy-like appearance until you notice the serious muzzle and the weight-forward balance of the cylinder. It reads as 'practical' rather than intimidating — a working-class tool, not a showpiece.",
+    "dimensions": "Overall length 16.5 cm, cylinder diameter 4.2 cm, barrel length 5 cm, grip height 10 cm",
+    "weight_description": "Light and balanced — the aluminum frame keeps it featherweight (380g), distributing mass evenly between grip and cylinder. Feels responsive in the hand, not front-heavy despite the compact proportions.",
+    "primary_material": "Aluminum alloy frame, steel cylinder and barrel, polymer grip panels",
+    "finish": "Matte gunmetal gray on frame, dark blued steel on cylinder and barrel. The shrouded hammer features a slightly brushed nickel accent. Worn in typical field units with minor scuffs and handling marks.",
+    "color_scheme": "Gunmetal gray with dark blue-black steel accents, charcoal polymer grip panels",
+    "grip_texture": "Textured polymer with shallow grip lines for purchase — nothing fancy, designed for quick acquisition from a coat pocket. Slightly tacky feel, worn smooth in high-contact areas.",
+    "distinctive_features": [
+      "Shrouded hammer — smooth rounded profile with no exposed spur",
+      "Milled sight groove in top strap — functional minimalism",
+      "Five-shot cylinder with visible round heads",
+      "Stubby 5cm barrel with sharp muzzle crown",
+      "Cylinder release button integrated flush with frame",
+      "No adjustable sights or accessory rail",
+      "Minor holster wear on frame edges and grip panels",
+      "Faint factory rust preventative patina on steel"
+    ],
+    "manufacturer_markings": "HEARTHSTONE FIREARMS stamped in serif font on left frame above trigger guard. DEFENDER-38 model designation micro-etched on barrel. Serial number on bottom of frame near cylinder pin. Caliber marking (.38 SPECIAL) on cylinder top strap. Minimal branding — strictly functional.",
+    "condition_typical": "Well-maintained but battle-worn. Shows the patina of frequent carry and use — light holster rubs, slight cylinder-to-frame play from regular use, but mechanically sound. Kept functional rather than pristine."
+  },
+  "image_prompt": "Product photography of a compact steel and aluminum revolver on dark matte surface, shot from slight left side angle. Five-shot cylinder visible, shrouded hammer prominent. Dramatic warm-toned side-lighting casting long shadows, emphasizing the rounded profiles and minimalist design. Include a worn leather pocket holster and five copper-cased .38 Special rounds nearby. Cyberpunk gritty aesthetic, industrial background, emphasizing working-class pragmatism. Shot from above, 45-degree angle. --ar 3:2 --v 6"
 }

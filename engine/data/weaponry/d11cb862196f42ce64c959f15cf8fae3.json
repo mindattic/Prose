@@ -37,5 +37,36 @@
     "vestibular_disruption",
     "tier_2"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Deku Barrientos-Osei",
+    "Endolymphatic Pressure Cascade Rifle",
+    "Free Assembly",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+    "Tessera Corponation",
+    "The Portico",
+    "Zheng-Dao Marrow-Pulse Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular rectangle with a slightly tapered front face — resembles a high-end electric razor or miniature phase rifle. The device has a purposeful, clinical aesthetic despite its diminutive size. No wasted curves; every edge serves the directional emitter array. Evokes medical instrumentation crossed with tactical gear.",
+    "dimensions": "90 mm length × 60 mm width × 20 mm depth. Emitter face is recessed slightly, creating a beveled profile that guides the infrasonic cone forward.",
+    "weight_description": "Deceptively hefty for its size — 140 grams feels substantial in the palm, dense with the weight of the miniaturized acoustic assembly. Not light or toy-like; grips with gravitas.",
+    "primary_material": "Aircraft-grade aluminum chassis with a secondary polymer casing. The emitter face is a composite polymer with embedded acoustic focusing elements.",
+    "finish": "Matte gunmetal gray with a soft-touch rubberized overmold. The aluminum edges are anodized to a slightly darker charcoal. Minimal reflectivity — designed to absorb light rather than catch it.",
+    "color_scheme": "Charcoal gray with gunmetal accents. Activation button is a contrasting matte black. A single accent line of deep blue runs along the device's spine — Tessera Industries signature.",
+    "grip_texture": "Soft-touch rubberized polymer with subtle diamond knurling for secure, non-slip grip even in gloved hands. Wrist lanyard attachment point is reinforced and clearly marked.",
+    "distinctive_features": [
+      "Recessed emitter array on the front face with visible internal focusing lattice (honeycomb acoustic grille)",
+      "Simple single-button activation on the top spine — large enough for quick operation but not accidental",
+      "Minimal status LED indicator (dim blue when charged, dims to amber when low on battery)",
+      "Tessera Industries serial plate embossed on the rear, small but prominent",
+      "Wrist lanyard attachment point with reinforced polymer eyelet",
+      "Slightly beveled front face to define the infrasonic cone's direction",
+      "No external vents or cooling (passive dissipation only)",
+      "Subtle wear resistance: matte finish shows minimal fingerprints or smudging"
+    ],
+    "manufacturer_markings": "TESSERA INDUSTRIES logo embossed on the rear in small chrome letters. Model designation 'PP-3' engraved on the spine. No licensing stamps visible (civilian-legal version). Serial number on rear face in small, precise font.",
+    "condition_typical": "Immaculate. Tier 2-3 users maintain these carefully — they're expensive and rely on precision. Expected to show minimal cosmetic wear. Battery indicator will age; older units may show faded LED housings. No battle-scars; this is a prevention tool carried by people who rarely use it."
+  },
+  "image_prompt": "Close product photography of the Tessera PP-3 'Migraine' infrasonic weapon on a matte charcoal surface, angled 45 degrees to show profile and emitter face. Gloved cybernetic hand (chrome knuckles, dark tactical glove) gripping the device naturally. Dramatic side-lighting from cool blue-white highlights the gunmetal finish and emphasizes the recessed acoustic lattice. Shallow depth of field. Wrist lanyard barely visible at frame edge. Minimalist dark background. Corporate, clinical aesthetic. Professional tactical gear photography. --ar 3:2 --v 6"
 }

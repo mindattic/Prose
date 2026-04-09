@@ -59,5 +59,33 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Ouroboros Energy"
+  "parent_corponation": "Ouroboros Energy",
+  "related_entities": [
+    "GLMZ",
+    "Kadiatou Bergstrom-Konate",
+    "Ouroboros Energy",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+    "The Oxidian Market"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist industrial projector weapon with a distinctly asymmetrical profile—heavy rear-loaded design suggests a flamethrower-adjacent device, but the front assembly is more clinical and precise. The nozzle cluster sits elevated above a reinforced grip assembly, giving it an almost praying mantis appearance. Functional and threatening, with no aesthetic pretense.",
+    "dimensions": "920mm overall length, 180mm width at widest point (canister bulge), 140mm height at nozzle assembly",
+    "weight_description": "Genuinely hefty—4.8kg requires committed two-handed control. Feels front-heavy due to canister positioning, demanding braced stance or mounting for sustained use. The weight distribution fatigues the arms quickly in extended engagement.",
+    "primary_material": "Reinforced polymer composite frame with brushed titanium alloy heat-dispersal shrouding around the nozzle assembly. Canister body is stainless steel with visible seam-welding.",
+    "finish": "Matte industrial gray with oxidized steel accents. The nozzle shroud shows intentional heat-scorching and discoloration from test fires. Canister bears faint factory mill marks and light surface rust in stress-concentration areas.",
+    "color_scheme": "Gunmetal gray primary, with brushed steel nozzle shroud and dark anodized aluminum grip panels. The OX-7 canister is unmarked stainless steel with minimal branding.",
+    "grip_texture": "Textured rubberized polymer with embossed hexagonal pattern for purchase; dual secondary grips positioned for two-handed control. Some wear from industrial handling; residual oxidation stains in grip crevices suggest field use.",
+    "distinctive_features": [
+      "Tri-nozzle plasma excitation cluster at muzzle—three offset apertures arranged in triangular pattern for stream coherence",
+      "Rear-mounted OX-7 canister with pressure-release valve and gauge (analog mechanical readout, not digital)",
+      "Integrated plasma coil housing visible through reinforced viewport window on right side—faint blue-white glow when powered",
+      "Cable conduit running from battery chamber to excitation assembly, industrial-grade shielded wiring",
+      "Canister quick-release lever with wear-polished engagement surfaces",
+      "Exhaust vents along upper barrel—scorched aluminum with internal discoloration from heat cycling",
+      "Faint residue staining on nozzle shroud suggesting OX-7 compound exposure or spillage during maintenance"
+    ],
+    "manufacturer_markings": "SERPENTINE DATA CENTERS stamped in small serif font on left side of canister, below pressure gauge. Serial number etched on rear of polymer grip. Faded OUROBOROS ENERGY logo on canister shoulder (original industrial variant marking). Black-market weaponized variants show obliterated or filed-down manufacturer stamps.",
+    "condition_typical": "Industrial variants appear clean and well-maintained with minimal external wear. Black-market weaponized variants show battle-scarring: scuffed polymer, scratched coil viewport, residue buildup around nozzle, and stress marks on quick-release mechanisms from repeated canister swaps in field conditions."
+  },
+  "image_prompt": "Cyberpunk industrial weapon photography: A Directed Oxidation Lance DOL-3 'Rustmaker' laid at 45-degree angle on brushed dark steel surface, three-quarter view emphasizing the rear-mounted OX-7 canister and tri-nozzle cluster. Dramatic side-lighting from upper left casts sharp shadows through nozzle assembly, highlights oxidation stains and wear patterns on titanium shrouding. Gloved hand (black tactical polymer) gripping the textured rubberized grip, fingers extended for scale. Close detail of the plasma coil viewport showing faint blue-white internal glow. Materials: weathered gunmetal polymer, brushed steel, anodized aluminum, stainless canister with pressure gauge. Cyberpunk aesthetic—industrial, utilitarian, menacing. Product photography with dark moody atmosphere, shallow depth of field on nozzle detail. --ar 3:2 --v 6"
 }

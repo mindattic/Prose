@@ -41,5 +41,38 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "GLMZ",
+    "HarborTech SafeScream SS-1 'Banshee'",
+    "Harlan Dray",
+    "Ilhan Sandstrom-Badu",
+    "Narrowcast",
+    "Nika Svensson-Kone",
+    "Patient Zero",
+    "Street Custom 'Choir Boy' Ultrasonic Emitter",
+    "Vantablack Media",
+    "VitaCore SteadyThread Precision Motor Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular launcher resembling a hybrid between a rifle and a specialized deployment system. The profile is aggressive and forward-swept, with a pronounced muzzle housing that appears to breathe or pulse. The weapon has an almost organic quality — sharp edges meet smooth curves in a design that suggests controlled violence.",
+    "dimensions": "127 cm overall length, 8 cm width at the widest point (breach), 6.5 cm height at charging handle. Muzzle assembly extends 18 cm from the receiver. Spool cartridge sits elevated above the bore axis.",
+    "weight_description": "Hefty but balanced — 5.8 kg distributed across the frame creates a weapon that feels grounded and purposeful in the shoulder. The compressed-gas system adds weight forward, creating a natural pivot point around the grip.",
+    "primary_material": "Titanium-reinforced polymer composite chassis with steel breech assembly and magnetic guide rails. Carbon-nanotube spool housing visible through transparent polymer viewport.",
+    "finish": "Matte gunmetal with brushed steel breech and guide rails. Thermal-reactive paint on the muzzle assembly shifts from deep charcoal to dark blue under stress, indicating pressure buildup.",
+    "color_scheme": "Matte charcoal-black primary with silver-steel accents on the breech block, gas coupling, and rail system. The spool housing window reveals the wound monofilament as a faint crystalline shimmer.",
+    "grip_texture": "Textured polymer grip with integrated pressure sensors — rough, aggressive texturing that grips even sweaty or augmented hands. Rubberized charging handle with defined serrations.",
+    "distinctive_features": [
+      "Transparent polycarbonate viewport revealing the wound monofilament spool — shows the nearly-invisible wire in faint reflections",
+      "Forward-mounted magnetic guide cage — a series of small electromagnetic coils visible along the top of the barrel housing",
+      "Pressure readout display integrated into the left side of the receiver — small red-to-green gradient bar indicating gas cartridge depletion",
+      "Sonic resonance chamber at the muzzle — honeycomb porting designed to amplify shockwave generation",
+      "Spool cartridge ejection port with spring-loaded mechanism on the right side",
+      "Heat-sink fins along the muzzle assembly in a triangular pattern, giving it a predatory aesthetic"
+    ],
+    "manufacturer_markings": "VANTA ORDNANCE logo etched into the left side of the receiver in italicized chrome lettering. Serial number plate stamped into the titanium breech block. Small monofilament hazard symbol (three parallel lines with a warning triangle) embossed near the muzzle.",
+    "condition_typical": "Field-ready and pristine when deployed, though many operator examples show faint scoring along the guide rails from repeated monofilament deployment. The spool housing may show micro-scratches from high-velocity wire unspooling. Gas coupling shows minor corrosion from humidity in the GLMZ climate — a bronze patina develops with age."
+  },
+  "image_prompt": "Product photography of the Vanta Ordnance Void Screamer VS-3 Banshee Wire lying on a dark matte black surface, slightly tilted to show the right profile. Gloved hand in frame gripping the textured polymer stock — hand wearing tactical glove with servo-assist augmentation visible at wrist. Dramatic side-lighting from the left casts the weapon in sharp relief, highlighting the brushed steel breech, transparent spool viewport (faintly showing crystalline monofilament), and the honeycomb muzzle porting. The heat-sink fins catch light with subtle shadows. Small holographic label floating near the spool cartridge showing Φ pricing and military authorization code. Cyberpunk aesthetic — cool blue-tinted fill light, warm harsh key light, cinematic depth of field. Background is technician's workbench with tool shadows. --ar 3:2 --v 6"
 }

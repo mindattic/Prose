@@ -58,5 +58,39 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Free Assembly",
+    "GLMZ",
+    "Helix Biosystems",
+    "Iowan Behemoth — 'Cathedral'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Narrowcast",
+    "Philibert Mwangi-Djordjevic",
+    "TESSERA PG-2 'Signature'",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purposeful energy weapon with a distinctly medical-industrial aesthetic — part surgical instrument, part thermal deterrent. The RTL-8 presents as a tapered rifle with a prominent barrel assembly and a pronounced heat-management spine running the length of the receiver. Its silhouette is angular but refined, suggesting precision engineering rather than brute-force lethality.",
+    "dimensions": "Length: 54 cm | Barrel assembly: 18 cm | Grip-to-trigger guard: 12 cm | Width across radiator array: 6.5 cm",
+    "weight_description": "Balanced and surprisingly manageable at 2.7 kg — the thermal battery housing sits low in the stock, creating a stable center of gravity. Feels substantial without being unwieldy; the weight distribution favors forward control during sustained operation.",
+    "primary_material": "Matte ceramic barrel shroud (heat-resistant composite) with aerospace-grade aluminum alloy receiver frame. Zinc selenide optical assembly (visible as a subtle amber-tinted focusing lens at barrel terminus). Reinforced polymer furniture with integrated thermal venting.",
+    "finish": "Matte ceramic white-gray barrel exterior with brushed charcoal aluminum receiver. Satin-black grip and stock sections. High-contrast aesthetic suggests clinical precision over tactical anonymity.",
+    "color_scheme": "Primary: matte ceramic white and brushed charcoal gray | Accents: deep amber (zinc selenide lens), copper-bronze radiator fins | Glowing amber undertones during operation",
+    "grip_texture": "Rubberized polymer with subtle grip ridges for wet-environment handling. Textured control surfaces around mode-selector buttons. Cool to the touch until sustained operation begins.",
+    "distinctive_features": [
+      "Prominent radiator spine with copper-bronze heat-dissipation fins running the full weapon length",
+      "Amber-tinted zinc selenide focusing lens at barrel terminus — faintly luminescent even in standby",
+      "Three discrete mode-selector buttons (pulse/sustained/cathedral) with tactile detents, marked with Φ currency symbols indicating restricted availability",
+      "Heat-bleed indicator ring around barrel mid-section that shifts from matte to glossy finish under thermal load",
+      "Dual exhaust vents along the sides of the receiver — sealed during normal operation, venting vapor during cathedral mode",
+      "Integrated passive radiator array that visibly glows deep amber during sustained cycles",
+      "Minimalist ARCTURUS DEFENSE SOLUTIONS plate inset into the stock, deliberately understated",
+      "Charging port recessed beneath the radiator spine — medical-grade connector suggesting original HELIX BIOSYSTEMS origin"
+    ],
+    "manufacturer_markings": "Stamped ARCTURUS DEFENSE SOLUTIONS logo (angular 'A' design) on the stock, positioned low and to the right. Smaller HELIX BIOSYSTEMS heritage mark laser-etched near the charging port — a subtle acknowledgment of surgical origins. Serial designation on the left side of the receiver in military alphanumeric format.",
+    "condition_typical": "Typically observed well-maintained with minimal field wear on high-use examples — the ceramic barrel shows micro-stress fractures from repeated thermal cycling, appearing as fine spider-web patterns under close inspection. Radiator fins may display residual amber discoloration from repeated cycling. Professional operators keep the zinc selenide lens meticulously clean; neglected examples show faint amber haze from dust accumulation."
+  },
+  "image_prompt": "Overhead product photography of the Radiant Thermal Lance RTL-8 on a dark brushed-steel surface, weapon angled 45 degrees to the right. Dramatic side-lighting from upper left emphasizing the prominent radiator spine and heat-dissipation fins in warm amber tones. Zinc selenide lens catching highlights with subtle amber luminescence. Close detail shot showing the textured ceramic barrel shroud and copper-bronze radiator fins. Include a gloved hand (black tactical polymer glove) gripping the weapon at the stock, revealing the rubberized grip texture. Cyberpunk color grading: cool shadows contrasting with warm amber thermal accents. Hyper-detailed material rendering of matte ceramic, brushed aluminum, and faintly glowing optical assembly. Suggest the clinical precision and thermal heritage of the weapon. --ar 3:2 --v 6"
 }

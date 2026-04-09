@@ -277,5 +277,11 @@
     "posture_movement": "Posture is upright and economical; she moves with deliberate precision, nothing wasted. Her gait is steady and unhurried, the movement of someone who has spent her life in climate-controlled corporate spaces. She sits with her spine straight, hands folded or occupied with something productive. Her expression defaults to neutral observation; she does not make eye contact easily but does not avoid it either—a compromise born of professional habit.",
     "clothing_style": "Corporate-adjacent, deliberately bland: charcoal grey blazers over navy or white fitted shirts, tailored trousers in muted tones, clean and structured to pass unnoticed in administrative buildings. Worn leather satchel containing physical documents and a single encrypted datapad. Practical shoes without augmentation ports. Everything is clean, well-maintained, and at least five years out of current fashion—the clothing of someone who dresses to be forgotten, not seen."
   },
-  "image_prompt": "Portrait of a tall, angular Black Caribbean-French woman in her late fifties with long silver locs pulled back tightly, wearing reading glasses on a chain; her face is lined with patient intelligence and controlled tension, wearing a charcoal blazer over a navy shirt, standing in the fluorescent-lit beige administrative hallway of a corporate building, soft amber light reflecting off dormant retinal scanner circuitry visible in her left eye, photograph-realistic, cinematic lighting, sharp focus on her expression, melancholic and precise, professional archival photography style, cyberpunk noir atmosphere, cool color grading with warm accent on eye implant, 35mm film grain, --ar 2:3 --v 6"
+  "image_prompt": "Portrait of a tall, angular Black Caribbean-French woman in her late fifties with long silver locs pulled back tightly, wearing reading glasses on a chain; her face is lined with patient intelligence and controlled tension, wearing a charcoal blazer over a navy shirt, standing in the fluorescent-lit beige administrative hallway of a corporate building, soft amber light reflecting off dormant retinal scanner circuitry visible in her left eye, photograph-realistic, cinematic lighting, sharp focus on her expression, melancholic and precise, professional archival photography style, cyberpunk noir atmosphere, cool color grading with warm accent on eye implant, 35mm film grain, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 41.5,
+    "South Asian": 30.8,
+    "Southeast Asian": 17.3,
+    "East Asian": 10.4
+  }
 }

@@ -38,5 +38,33 @@
     "tier_2",
     "push_field"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions Thermal Longsword TL-3 'Cauterizer'",
+    "Arcturus PG-3 'Aegis'",
+    "Patient Zero",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Tessera Industries Memory Rounds MR-2 'Recall'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist rectangular device resembling a high-end smartphone or personal security badge. Its compact form factor belies its heavy-duty engineering — the BarrierBand presents as a slim, professional accessory rather than an obvious weapon, designed to be worn discreetly on the hip or integrated into everyday carry gear.",
+    "dimensions": "14 cm (length) × 7 cm (width) × 2 cm (depth). Roughly the size of a luxury smartwatch or personal tablet, fitting comfortably in a closed fist.",
+    "weight_description": "Substantial for its size — 240 grams imparts a reassuring heft that feels purposeful without being cumbersome. The weight is concentrated along the spine due to the high-density capacitor, creating a slight forward-heavy balance when gripped.",
+    "primary_material": "Aircraft-grade aluminum alloy chassis with reinforced polymer backing. The frame is engineered to withstand the stress of repeated electromagnetic discharge cycles.",
+    "finish": "Brushed anodized aluminum with a satin gunmetal appearance. The surface shows minimal reflectivity to avoid drawing attention; a matte coating on accent panels reduces glint.",
+    "color_scheme": "Gunmetal gray primary with matte black polymer backing and accent strips. A subtle iridescent shimmer on the capacitor housing hints at the electromagnetic systems within — faint purple-blue undertones visible under direct light.",
+    "grip_texture": "Textured rubber grip panels on the sides with rubberized hip-contact surface. The activation button area features fine knurling for positive thumb engagement even in gloved or wet conditions.",
+    "distinctive_features": [
+      "Recessed activation button positioned for right-hip thumb access",
+      "Three small LED indicators (white) along the top edge showing charge status — arranged in a linear progression",
+      "Electromagnetic coil vent ports along the lateral edges (subtle honeycomb patterns, not obviously dangerous)",
+      "Capacitor status window on the rear showing internal charge state through translucent polymer",
+      "Integral belt clip mechanism with quick-release latch, chrome-plated with security detent",
+      "Aegis logo embossed (not engraved) on the upper left corner",
+      "Safety interlock indicator — small amber LED near the activation button"
+    ],
+    "manufacturer_markings": "AEGIS PERSONAL SYSTEMS logo stamped discretely on upper left. Model designation 'BB-5' and 'COCOON' laser-etched on the back, along with serial number and manufacturing date. FCC/regulatory stamps are present but minimal.",
+    "condition_typical": "Field units typically show minor wear around the belt clip attachment points and subtle scuffing on the rubber grip panels from repeated draw-and-activate cycles. Well-maintained units retain their brushed finish; heavily-used examples may show polishing wear on the activation button area. Military-grade models occasionally appear battle-scarred, but consumer BB-5s are usually well-preserved given their high cost."
+  },
+  "image_prompt": "Product photography of the Aegis BarrierBand BB-5 'Cocoon' personal electromagnetic barrier. Device shown from three angles: front-facing with LED indicators visible, side profile emphasizing the slim 2cm depth, and detail shot of the activation button and grip texture. Held in a gloved tactical hand (black synthetic leather) against a dark matte surface, angled 30 degrees toward dramatic side-lighting that catches the brushed aluminum and reveals the iridescent shimmer in the capacitor housing. Cool white LED indicators glow subtly on top. Cyberpunk aesthetic with moody blue-gray ambient lighting, shallow depth of field focusing on the device's controls. The background is dark charcoal concrete or black technical fabric. Include subtle glow effects around the vent ports suggesting dormant electromagnetic systems. Product shot emphasizes corporate design language and professional tactical aesthetic. --ar 3:2 --v 6"
 }

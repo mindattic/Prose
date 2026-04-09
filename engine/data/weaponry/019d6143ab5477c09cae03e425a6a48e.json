@@ -53,5 +53,35 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Cezar Watanabe-Gyasi",
+    "GLMZ",
+    "Ihaia Nystrom-Keita",
+    "Nenad Vargas-Baffour",
+    "Nurlan Holmberg-Dembele",
+    "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
+    "The Crucible"
+  ],
+  "physical_description": {
+    "visual_profile": "A stubby, cylindrical grenade with an aggressive industrial aesthetic. The shell tapers slightly toward a blunt nose cone, giving it a purposeful, almost organic appearance despite its synthetic origin. The casing is segmented by visible pre-scored fracture lines running circumferentially, like stress points waiting to bloom open. The overall impression is one of contained violence — compact, dense, unapologetically lethal.",
+    "dimensions": "40mm diameter shell body, 85mm total length including nose cone. Compact enough to nest in a standard grenade launcher magazine.",
+    "weight_description": "Hefty and front-weighted. The 0.9 kg payload feels concentrated, suggesting density rather than bulk. Sits heavy in the palm with an unmistakable sense of thermal mass waiting to be unleashed.",
+    "primary_material": "Hardened steel outer casing with electrostatically-treated nano-particulate thermite compound suspension in the core chamber. Internal baffles of composite ceramic to withstand pre-ignition pressures.",
+    "finish": "Matte gunmetal gray with darker charcoal striping along the pre-scored fracture seams. The nose cone is slightly more polished to reduce drag, catching light differently than the body. Signs of oxidation or minor scarring typical of field ordnance.",
+    "color_scheme": "Industrial gray and charcoal with rust-red accents appearing along the seam lines where the casing material has weathered. Minimal branding — functional, not decorative.",
+    "grip_texture": "Smooth and slightly cool to touch, with subtle grip dimpling near the base for secure launching. The nose cone is marginally rougher, possibly for detonator contact.",
+    "distinctive_features": [
+      "Circumferential pre-scored fracture seams visible as dark stress grooves",
+      "Blunt, slightly flattened nose cone designed for impact detonation",
+      "Faint electrostatic discharge scoring on the metal surface — hairline traces of the charging process",
+      "Manufacturer serial etching near the base, barely legible without magnification",
+      "Subtle color gradient from gray body to darker charcoal at the seams, suggesting thermal stress distribution",
+      "Slight asymmetry to the nose cone — designed to tumble and orient for optimal cavity penetration"
+    ],
+    "manufacturer_markings": "Blackwood Commercial Group stamp on the lower third of the casing — a circular BCG logo with ARCTURUS DEFENSE sublicense notation. Serial number and hazard class etched in micro-script, visible only at close range under magnification. No bright warnings — this is black market ordnance, discretion built in.",
+    "condition_typical": "Field-worn but serviceable. Minor scuffing on the casing from magazine friction, possible discoloration from thermal stress during storage. Nose cone may show microscopic impact scarring. Often found in military-grade storage containers or syndicate armory cloth, suggesting careful handling despite its devastating purpose."
+  },
+  "image_prompt": "Close-up product photography of a 40mm TCDS-3 thermite grenade on a dark brushed steel surface, positioned at a slight angle to emphasize the circumferential fracture seams. Single shell casing dominates the frame. Dramatic side-lighting from upper left casts deep shadows along each pre-scored groove, making the segmentation appear menacing and deliberate. The nose cone catches a subtle highlight, appearing polished and purposeful. Blackwood Commercial Group markings barely visible on the lower body. Background is deep matte black with minimal context. Photorealistic, industrial, clinical. Cyberpunk 2226 aesthetic — the banality of extreme violence rendered as commercial product. Shot against carbon composite substrate with single chrome reflector catching edge light. --ar 3:2 --v 6"
 }

@@ -42,5 +42,44 @@
     "precision",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "Crucible UB-2 'Umbrella'",
+    "Djeneba Park-Traore",
+    "GLMZ",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Glenville Sound",
+    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
+    "LifeWire SolarShield UV Dermal Protection Layer",
+    "Narrowcast",
+    "NeuralPath HarmonicRoot Perfect Pitch Mod",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "TESSERA PG-2 'Signature'",
+    "TESSERA TC-3 'Crucible'",
+    "The Resonance Communion",
+    "The Signal"
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively elegant thrusting blade with an almost needle-like silhouette. The rapier presents a refined, aristocratic form that belies its armor-piercing brutality — the blade appears almost gossamer-thin from most angles, widening only marginally near the cross-guard. The guard itself is minimalist and functional rather than ornate.",
+    "dimensions": "Blade length 90 cm, total length 112 cm, blade width only 12 mm at its widest point. Compact enough for concealment in specialized carriers despite its reach.",
+    "weight_description": "Deceptively light at 0.6 kg — barely over half a kilogram — giving it an almost weightless feel in hand despite its rigid carbon-lattice construction. The balance point sits forward of the guard, favoring precision thrusts.",
+    "primary_material": "Carbon-lattice composite blade — a proprietary woven structure that appears almost crystalline when caught by light. The guard and pommel are reinforced polymer with integrated capacitor housing.",
+    "finish": "Matte charcoal with a subtle geometric etching pattern running along the blade's flat surfaces — micro-circuitry traces for vibration distribution. The guard features brushed gunmetal accents where vibration actuators interface with the blade.",
+    "color_scheme": "Deep charcoal grey blade with silver-grey vibration nodes along the spine. Guard and pommel in matte black with chrome micro-circuitry visible beneath semi-transparent polymer coating.",
+    "grip_texture": "Wrapped in textured non-slip polymer with subtle haptic feedback zones — the grip itself is engineered to transmit vibration harmonics to the user's hand, allowing experienced operators to 'feel' the resonance cascade during penetration.",
+    "distinctive_features": [
+      "Longitudinal vibration nodes visible as small hemispherical actuators running the blade's length",
+      "Capacitor housing integrated into the pommel with faint LED status indicator (blue when charged)",
+      "Extremely narrow blade profile — appears almost flat from tip-on view",
+      "Micro-circuitry tracery etched along blade surface in geometric precision patterns",
+      "Guard designed with minimal surface area to avoid catching on armor seams",
+      "Faint resonance shimmer visible along blade edge during operation (28 kHz vibration creates subtle optical distortion)",
+      "Serial plate on guard reads 'Crucible Industries VR-2 FENCER' with manufacturing date and batch code",
+      "Cross-section reveals hollow blade structure for vibration dampening and weight reduction"
+    ],
+    "manufacturer_markings": "Crucible Industries logo (a stylized crucible symbol) stamped on the pommel. 'VR-2 FENCER' designation etched in small caps along the fuller. BioInk 3D Printing secondary mark near the guard indicates additive manufacturing origin.",
+    "condition_typical": "Corporate-maintained examples appear pristine with perfect edge geometry and flawless polymer finish. Field-used variants show micro-scoring on the blade from repeated armor penetration (hairline scratches in the carbon-lattice), slight discoloration of the polymer grip from blood contact, and worn LED indicators. Some operatives customize their grips with additional wrapping or adhesive coating for specialized glove compatibility."
+  },
+  "image_prompt": "Product photography of the Crucible Industries Vibro-Rapier VR-2 'Fencer' blade-on-flat against a dark gunmetal surface, angled 15 degrees to catch dramatic side-lighting that illuminates the micro-circuitry tracery and vibration nodes along the impossibly thin blade. Overhead shot showing the needle-thin profile. Include a gloved hand gripping the textured pommel, augmented fingers with visible chrome knuckle plating. Close-up detail of the guard's capacitor housing with faint blue LED glow. Moody cyberpunk studio lighting with cool blue and gunmetal accents, shallow depth-of-field emphasizing the blade's crystalline carbon-lattice structure and geometric etchings. Showcase the weapon's surgical precision and elite corporate assassin aesthetic. --ar 3:2 --v 6"
 }

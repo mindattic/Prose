@@ -36,5 +36,24 @@
     "Lazarus Pharmaceuticals",
     "Ouroboros Energy",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A crisp, clinical silhouette that reads as both institutional authority and accessible care. The fitted white tunic creates a clean vertical line broken only by the emblematic green cross at the chest. The mandarin collar sits neat and professional without stiffness. Overall impression: trustworthy, regulated, slightly austere.",
+    "fit": "Tailored but not restrictive. The tunic skims the torso without clinging; sleeves taper to the forearm where subdermal clearance panels create subtle reinforced zones. Trousers are straight-leg with a slight taper at the ankle, designed for practicality and movement around a dispensary counter.",
+    "primary_material": "Antimicrobial polyester-cotton blend (65/35 ratio). Treated with self-cleaning photocatalytic coating reactive to UV light.",
+    "texture": "Smooth, medical-grade finish with a subtle matte sheen. Deliberately designed to appear sterile without being cold. The medication-grade pocket on the right thigh has a raised, reinforced texture for durability and tamper-evidence visibility.",
+    "color_scheme": "Pristine white as primary. Lazarus green cross embroidered at left chest (RGB: 34, 139, 34). Small accent stitching in subdued gray along seams and pocket edges.",
+    "closures": "Friction-fit tunic (pulls over the head). Trousers feature a discrete friction-sealed waistband with hidden snap closure. The right-thigh medication pocket has a tamper-evident sealed zipper with green indicator stripe running its length.",
+    "distinctive_features": [
+      "Embroidered Lazarus green cross (medical authority marker)",
+      "Small BCI port notch at neckline (barely visible, integrated into mandarin collar design)",
+      "Reinforced subdermal implant clearance panels at shoulders and forearms (visible as subtle topstitched zones)",
+      "Sealed, tamper-evident medication-grade pocket with indicator stripe",
+      "Photocatalytic self-cleaning treatment (no visible residue under normal light)"
+    ],
+    "tier_indicator": "Tier 2-3 institutional. Signals regulated employment, access to controlled substances, and licensed medical proximity. A white Lazarus uniform grants entry to spaces that require credentials.",
+    "cultural_context": "The wearer is a gatekeeper to pharmaceutical access across the GLMZ. This uniform carries institutional weight—patients trust it, corps enforce it, and street-level residents see it as a potential resource or barrier depending on their tier. The white tunic is recognized instantly across all districts; wearing it outside a Lazarus facility is conspicuous and consequential.",
+    "condition_typical": "Pristine to barely worn. The photocatalytic coating means even frequent use appears fresh. Fading occurs only after 2-3 years of daily UV cycling. Wear patterns on the tunic are virtually invisible due to the antimicrobial treatment; the medication pocket shows subtle creasing from repeated use but never stains."
+  },
+  "image_prompt": "Fashion photography of a Lazarus Pharmacy Counter Technician uniform on a dark-skinned model with visible subdermal implant scars on the forearms and shoulders. The tunic is pristine white with a crisp mandarin collar and a green embroidered medical cross at the chest. Model stands behind a pharmacy counter aesthetic with soft blue pharmaceutical lighting overhead casting shadows across the uniform's reinforced panel work. Right thigh pocket with tamper-evident zipper is visible and emphasized. Background shows blurred rows of medication dispensers in a Tier 3 district clinic setting. Moody, institutional lighting with cool color temperature. Shot from mid-torso up to emphasize the authority and approachability of the uniform. --ar 2:3 --v 6"
 }

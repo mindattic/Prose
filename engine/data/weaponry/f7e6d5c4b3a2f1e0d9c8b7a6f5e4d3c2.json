@@ -48,5 +48,40 @@
     "community",
     "tier 1"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Brecken Yılmaz-Osei",
+    "Free Assembly",
+    "Lacuna Genomics",
+    "Lazarus IDP-1 'Teeth'",
+    "Lazarus Pharmaceuticals",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "TESSERA CORPONATION Elysia Sensorum Totalis",
+    "The Pure Hand",
+    "The Reclamation Assembly",
+    "The Shelf",
+    "Vantablack PA-1 'Pacifier'",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A smooth, flesh-tone ovoid capsule roughly the size of a large vitamin — innocuous at first glance, designed to pass as medical implant or biotech device. The silicone sleeve is opaque and slightly translucent under direct light, revealing a faint metallic glint of the firing mechanism within. The illusion of medical legitimacy is deliberate and complete.",
+    "dimensions": "7.2 cm length × 2.8 cm width × 2.1 cm height. Compact enough to conceal in a closed fist or implant subcutaneously along the ribcage or inner thigh.",
+    "weight_description": "Deceptively light — only 45 grams. The user feels almost nothing until the moment of detonation. This weightlessness contributes to its disguise; it shifts easily under skin or rests in a closed palm without resistance.",
+    "primary_material": "Medical-grade bio-compatible silicone housing (exterior); standard 12-gauge shotgun shell (interior payload); spring-loaded steel firing pin mechanism; wireless micro-detonator scavenged from commercial blasting equipment.",
+    "finish": "Matte translucent silicone with a subtle pearl or flesh tone. The surface is smooth, unmarked, and deliberately featureless to avoid triggering security scanners or cursory body checks. No visible seams or manufacturing markers.",
+    "color_scheme": "Pale nude/beige silicone with a dull metallic glint visible through the semi-opaque material — the steel firing pin and shell primer catching light like a faint star within tissue-tone plastic.",
+    "grip_texture": "Silicone is smooth and slightly tacky, warm to the touch. No grip texture — the device is not meant to be held like a traditional weapon. It rests against skin or nestles in a palm with biological neutrality.",
+    "distinctive_features": [
+      "Wireless trigger receiver integrated into the silicone — no external antenna or electronic signature",
+      "Faint metallic shimmer visible through translucent silicone where the firing mechanism sits",
+      "No visible manufacturer marking, serial number, or safety mechanisms",
+      "Designed to feel and appear identical to legitimate subcutaneous medical implants or augmentation housings",
+      "Manual pin lock (small indent on one end) is the only external control feature",
+      "Zero external electrical components — entirely passive until wireless detonation signal received"
+    ],
+    "manufacturer_markings": "Hand-printed cards accompany each unit with the statement: 'If the system won't protect us, the system doesn't get to decide how we protect ourselves.' The Dentata itself bears no markings — this is intentional. Shelf weaponsmiths produce these in residential kitchens with no corporate branding or accountability trail.",
+    "condition_typical": "Brand new units appear clinical and perfect — indistinguishable from a medical implant fresh from a black-market bioengineer. Field units are single-use only; once activated, the device no longer exists as a discrete object. Pre-activation, a Dentata shows no wear — there is no field-worn variant because the device is not maintained or modified. It is created, distributed, concealed, and detonated."
+  },
+  "image_prompt": "Clinical product photography of a medical silicone implant capsule, pale beige-nude bio-compatible polymer, resting on a dark matte surface. Dramatic side-lighting with cool blue-white LED backlight revealing faint metallic glint of internal firing mechanism through translucent silicone. Shallow depth of field, macro lens perspective. Cyber-noir aesthetic — the device appears innocent, clinical, legitimately medical, but the sharp shadows and high-contrast lighting suggest something lethal beneath the surface. Include a wireless ring trigger beside the capsule, brushed steel band with recessed button. Cyberpunk product catalog style, sterile and cold, shot against black carbon-weave backdrop. --ar 3:2 --v 6"
 }

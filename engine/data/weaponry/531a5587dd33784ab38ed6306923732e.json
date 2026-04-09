@@ -43,5 +43,42 @@
     "combat",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Brecken Yılmaz-Osei",
+    "GLMZ",
+    "Glenville Sound",
+    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
+    "Nika Svensson-Kone",
+    "Parveen Saab-Quiñones",
+    "Patient Zero",
+    "TESSERA TC-3 'Crucible'",
+    "Talon Systems Grav-Pulse Emitter GPE-3 'Downdraft'",
+    "The Crucible",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist combat shotgun with aggressive angular geometry. The Storm-12 presents a compact, purpose-built silhouette dominated by its heavy barrel and integral breaching muzzle. The full-length Picatinny rail runs the length of the top, creating a clean datum line that emphasizes the weapon's modular, tactical character. The adjustable stock extends the rear profile, and the detachable box magazine protrudes prominently beneath the action — a visible statement of reload-speed engineering.",
+    "dimensions": "Total length: 92 cm (stock collapsed) to 105 cm (fully extended). Barrel length: 51 cm with integral breaching device. Magazine well: 8 cm deep. Height over rail: 7 cm.",
+    "weight_description": "Hefty but well-balanced. The 3.6 kg mass is distributed forward into the heavy-profile barrel and breaching device, creating natural point-of-aim stability. Not light, but the ergonomic design prevents it from feeling unwieldy in tactical use.",
+    "primary_material": "Aircraft-grade 7075-T6 aluminum alloy receiver with steel barrel and breaching muzzle assembly. Polymer furniture (foregrip, cheek rest) is reinforced nylon composite rated for impact.",
+    "finish": "Matte anodized black aluminum with a textured, non-reflective surface. The steel barrel exhibits a dull parkerized gray-black finish. Breaching muzzle shows wear-resistant hard-coat anodizing in flat charcoal.",
+    "color_scheme": "Flat tactical black with charcoal-gray accents on the muzzle device and rail surfaces. Some units show ghost-ring sights in matte stainless or tritium-filled wells.",
+    "grip_texture": "Textured polymer pistol grip with aggressive vertical ribbing for positive purchase even in wet conditions. The foregrip features deep checkering. Gas tube beneath the barrel has a smooth machined finish.",
+    "distinctive_features": [
+      "Integral dual-port breaching muzzle device with reinforced steel face for hinge-removal strikes",
+      "Full-length Picatinny rail with integrated iron sight mounts (ghost ring rear, ramp front)",
+      "Prominent detachable box magazine with numbered witness holes for round-count visibility",
+      "Gas-port regulator dial beneath the barrel (unmarked, set at factory)",
+      "Charging handle positioned on left side of receiver, oversized for gloved operation",
+      "Bolt-release lever integrated into trigger guard",
+      "Heat vent slots along foregrip to manage barrel heat",
+      "Sling attachment points at receiver and stock",
+      "Serial number plate mounted on left side of receiver below rail",
+      "Corpus-red Crucible Industries logo stamp on grip and receiver"
+    ],
+    "manufacturer_markings": "Crucible Industries stylized Φ logo (QUANTA symbol doubled as brand mark) stamped in red anodize on left grip panel. 'STORM-12 THUNDERCLAP' engraved in block letters on barrel above gas tube. Serial number on machined stainless steel plate riveted to lower receiver. 'CRUCIBLE INDUSTRIES / GLMZ' micro-etched on breaching muzzle face.",
+    "condition_typical": "Well-maintained field condition. Scratch patterns on Picatinny rail from optic/accessory mounting and dismounting. Breaching muzzle shows scuffing and minor deformation from contact with door frames. Magazine witness holes exhibit carbon-buildup staining. Rail surfaces retain matte finish; receiver may show minor operational wear. Chrome plating on internal components visible through ejection port."
+  },
+  "image_prompt": "Product photography of Crucible Industries Storm-12 'Thunderclap' shotgun. Weapon laid at 45-degree angle on matte black tactical surface, profile view showcasing full barrel length and integral breaching muzzle. Harsh dramatic side-lighting (single source, left) casts deep shadows along receiver and foregrip, emphasizing angular geometry and muzzle device detail. Gloved tactical hand (black synthetic leather) gripping pistol position in sharp focus. Textured matte-black anodizing and gray-charcoal breaching muzzle in crisp detail. Picatinny rail reflects minimal light, appearing non-reflective. Red Crucible Industries logo visible on grip. Detachable box magazine positioned separate on surface beside weapon, witness holes visible. Cyberpunk aesthetic: cool metallic tones, zero-warmth lighting, industrial product catalog style. 16mm gun-focused composition. Shallow depth of field on grip area. --ar 3:2 --v 6"
 }

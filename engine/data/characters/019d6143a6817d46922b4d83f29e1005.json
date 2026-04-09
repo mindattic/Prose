@@ -264,5 +264,13 @@
     "clothing_style": "Tier 3-4 working artist aesthetic refined by age and confidence. Favors dark, durable fabrics (technical cotton blends, industrial weave) in blacks, deep grays, and charcoal. Usually wears fitted but unadorned vests or sleeveless high-neck shirts to show the cochlear implants without fanfare. Functional pants or cargo-style bottoms with enough pockets for tools and cables. Worn leather boots (same pair rebuilt three times). A single piece of jewelry: a thin silver band on her right ring finger, nothing ornate. When DJing, adds a long dark overshirt in some technical fabric. No logos, no brand signaling — clothes are tools.",
     "affectations": "Constant low awareness of sound in any space; her head tilts slightly when listening to ambient noise. Habit of tapping finger patterns on surfaces (muscle memory from decades of beatmaking). Eyes track speakers and sound sources automatically."
   },
-  "image_prompt": "Portrait of a sixty-two-year-old West African woman with silver locs threaded with ceramic beads, deep brown skin, and a lined face showing decades of intensity and no regret. She has bilateral cochlear implant housings visible behind her ears in subtle chrome. Large, grounded posture with extraordinary stillness. Wearing a dark fitted sleeveless high-neck shirt, industrial weave cargo pants, worn leather boots. Standing in dim lighting against the brick and neon of an underground music venue, evening atmosphere with soft blue and amber light from stage fixtures. Confident, alert expression; hands at rest. Cyberpunk noir, documentary realism, shot in photorealistic style with emphasis on texture and lived experience. --ar 2:3 --v 6"
+  "image_prompt": "Portrait of a sixty-two-year-old West African woman with silver locs threaded with ceramic beads, deep brown skin, and a lined face showing decades of intensity and no regret. She has bilateral cochlear implant housings visible behind her ears in subtle chrome. Large, grounded posture with extraordinary stillness. Wearing a dark fitted sleeveless high-neck shirt, industrial weave cargo pants, worn leather boots. Standing in dim lighting against the brick and neon of an underground music venue, evening atmosphere with soft blue and amber light from stage fixtures. Confident, alert expression; hands at rest. Cyberpunk noir, documentary realism, shot in photorealistic style with emphasis on texture and lived experience. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 32.5,
+    "East Asian": 19.7,
+    "South Asian": 14.5,
+    "Middle Eastern": 14.3,
+    "Sub-Saharan African": 13.9,
+    "Eastern European": 5.1
+  }
 }

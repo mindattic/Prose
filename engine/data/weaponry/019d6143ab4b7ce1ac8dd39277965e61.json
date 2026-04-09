@@ -39,5 +39,33 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Adaeze Volkov-Tuilagi",
+    "Obinna Ferhat-Tuilagi",
+    "Tympanic Membrane Galvanic Rupture Carbine",
+    "Yannick Tambadou-Reinholt"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist chunk of salvaged industrial machinery—squat, aggressive, purposefully unrefined. The silhouette is dominated by a massive flared muzzle and a bulging compressed air tank forming the stock. It reads as pure function over form: a street fighter's answer to precision weapons.",
+    "dimensions": "Overall length: 85–110 cm | Barrel bore: 15–20 cm diameter | Tank body: 30–40 cm | Width at muzzle: 22–25 cm",
+    "weight_description": "Hefty and unbalanced—the bulk of mass concentrated in the air tank rear, making it front-heavy and requiring two-handed control. Feels raw and substantial, not refined.",
+    "primary_material": "Welded steel pipe, salvaged compressed air cylinders (likely industrial grade or scavenged HVAC/pneumatic systems), rough-cast or cut sections joined with visible seams",
+    "finish": "Industrial bare steel with heavy oxidation and surface rust in patches. Worn, scuffed, and dented from field use and impact. Some sections show welding slag and grinding marks. Occasional grease stains and concrete dust residue embedded in seams.",
+    "color_scheme": "Gunmetal gray and rust-brown over bare steel; accent of faded yellow safety stripe or warning paint on the air tank (often worn away or deliberately obscured). No intentional cosmetics—only the patina of street fabrication.",
+    "grip_texture": "Bare welded steel pipe wrapped with electrical tape, paracord, or friction tape for grip. Rough, utilitarian, no padding. May have sharp edges or burrs from amateur fabrication.",
+    "distinctive_features": [
+      "Massive flared muzzle opening—dented and scarred from concrete friction",
+      "Visible PSI gauge mounted on the air tank (often cracked or illegible)",
+      "Manual air valve and release lever (crude casting, sometimes leaking)",
+      "Welding seams and patches across the entire frame",
+      "Ejection ports venting excess air pressure with visible scorching",
+      "Improvised sight rail or notch filed into the top (if added)",
+      "Concrete dust and impact marks around the muzzle face",
+      "Possible jury-rigged stabilizer fins cut from sheet metal and bolted on"
+    ],
+    "manufacturer_markings": "No corporate logos. Hand-stamped initials or gang tags scratched into the tank body. Original manufacturer markings from the salvaged air cylinders may still be visible (industrial codes, pressure ratings). Some units bear owner's name or alias etched or spray-painted.",
+    "condition_typical": "Battle-worn and jury-rigged. Dents, welding repairs, and patches common. Air seals degraded over time, requiring frequent refills. Concrete residue caked in the barrel. The weapon looks dangerous not because of its design, but because of its blatant disregard for any safety standard."
+  },
+  "image_prompt": "Close-up product shot of a brutal salvaged pneumatic launcher, industrial bare steel and rust, massive flared muzzle pointing left, mounted on a dark concrete surface next to scattered concrete blocks and brick debris. Gloved hand (chrome-augmented fingers visible) stabilizing the rear air tank. Dramatic side-lighting casting deep shadows across welding seams and oxidized surfaces, highlighting texture and raw brutality. Cyberpunk street-level aesthetic—functional, lethal, utterly unprofessional. Shallow depth of field focusing on the muzzle detail. --ar 3:2 --v 6"
 }

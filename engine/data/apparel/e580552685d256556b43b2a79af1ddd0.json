@@ -37,5 +37,25 @@
   "related_entities": [
     "The Question",
     "Vantablack Media Parasocial Carrier Mask"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Nearly invisible when worn against skin; appears as a barely perceptible shimmer or faint holographic grid pattern across the torso, limbs, and torso. When displayed unworn, reveals an intricate lattice of gossamer conductive filaments creating a second-skin silhouette.",
+    "fit": "Compression fit, second-skin adherence without restriction. Stretches to accommodate all body types and movement ranges. Conforms intimately to musculature without bunching or slipping.",
+    "primary_material": "Graphene-infused bio-reactive polymer mesh interwoven with conductive metallic nano-filaments. Translucent synthetic substrate with embedded sensor nodes.",
+    "texture": "Impossibly smooth and frictionless against skin; slightly tacky to touch when removed, clinging to fingers. Creates an almost imperceptible tingling sensation on initial contact due to bio-electrical calibration.",
+    "color_scheme": "Translucent with barely-visible iridescent blue-cyan threading in the conductive pathways. Barely registers as present until light hits it at certain angles, revealing the sensor grid pattern.",
+    "closures": "None — full-body slip-on design. Self-adhesive bio-reactive surface bonds temporarily to skin without adhesive residue.",
+    "distinctive_features": [
+      "Embedded micro-sensor nodes at major joints and muscle groups",
+      "Embedded haptic feedback nodes for real-time biometric alerts",
+      "Wireless transmission nodes at shoulders and lower back",
+      "Nano-scale data transmission LEDs (invisible to naked eye in normal light)",
+      "Nimbus Fabrication logo in micro-text along inner collar",
+      "Calibration markers printed in near-infrared ink"
+    ],
+    "tier_indicator": "Tier 1-2 luxury/professional-grade. Expensive medical and athletic technology accessible to corporates and elite independent contractors.",
+    "cultural_context": "Medical professionals, elite athletes, corpo security personnel undergoing performance optimization, and covert interrogation specialists. Signals access to cutting-edge biometric tech and either legitimate medical authority or morally flexible resources.",
+    "condition_typical": "Pristine and nearly invisible when fresh; develops barely-perceptible wear patterns at high-movement joints after weeks of use. Degrades gradually in effectiveness if worn beyond recommended 6-month lifespan."
+  },
+  "image_prompt": "A sleek androgynous figure in a dimly-lit high-tech facility wearing a nearly invisible Nimbus Fabrication sensor-mesh bodysuit, skin glowing faintly with cyan bio-electrical patterns. Close-up detail shots reveal the intricate graphene filament grid mapping across shoulders and chest. Soft neon blue ambient lighting highlights the sensor nodes at joints. Dark minimalist background suggesting medical or corporate lab environment. Atmospheric volumetric mist. Cyberpunk aesthetic, clinical and precise. --ar 2:3 --v 6"
 }

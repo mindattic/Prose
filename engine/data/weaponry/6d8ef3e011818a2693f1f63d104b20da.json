@@ -44,5 +44,34 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Mirrorface",
+    "Nika Svensson-Kone",
+    "Tessera Corponation",
+    "Tessera Dynamics TD-MK4 'Opponent'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modular DMR with an angular, almost geometric silhouette. The rifle has a pronounced sensor cluster mounted above the barrel in a raised cage-like structure, giving it an asymmetrical, predatory appearance. The overall design suggests precision engineering married to computational capacity — it looks like it *thinks* as much as it shoots.",
+    "dimensions": "Overall length: 112 cm | Barrel length: 55 cm | Width (with sensor array): 8 cm | Height (with optics mount): 14 cm",
+    "weight_description": "Hefty but balanced. At 5.0 kg, the weight is distributed across the sensor array and reinforced receiver, creating a rifle that feels planted and deliberate in the shoulder. Not light, but purposeful.",
+    "primary_material": "Aerospace-grade carbon composite chassis with reinforced aluminum receiver. Sensor array housing is brushed titanium alloy. Barrel is chrome-molybdenum steel.",
+    "finish": "Matte charcoal composite body with brushed titanium sensor cage. The receiver has a subtle satin finish to reduce glare. Heat-dispersal venting shows micro-etched cooling channels.",
+    "color_scheme": "Gunmetal gray primary with titanium-silver sensor array accents. Subtle teal indicator lights embedded in the sensor cluster. Polymer furniture in deep anthracite.",
+    "grip_texture": "Textured polymer grip with integrated sensor contact points — raised nodules that interface with shooter's palm biodata. Feels technical, almost circuit-like beneath the fingers.",
+    "distinctive_features": [
+      "Prominent multi-sensor array cage above barrel housing thermal, ballistic trajectory, and supersonic analysis sensors",
+      "Recessed BCI interface port on the receiver (glows faint teal when powered)",
+      "Heat-dissipation vents along the barrel shroud with visible micro-etching",
+      "Modular quick-detach points for field sensor upgrades",
+      "Small LCD readout window in the rail system (displays targeting confidence %)",
+      "Caseless ammunition chamber with visible feed mechanism",
+      "Integrated shock absorber in the stock (visible pneumatic piston)",
+      "Cognitive Wellness Foundation holographic nameplate on the lower receiver"
+    ],
+    "manufacturer_markings": "Cognitive Wellness Foundation logo (abstract neural network symbol) etched in brushed titanium on the left receiver side. Serial number laser-burned on the mag well. Small 'TAMP-5 MIMIC' designation on the dust cover in Eurostyle sans-serif font.",
+    "condition_typical": "Typically field-maintained in Tier 4 hands — clean sensor array, minor wear on grip texture, occasional scuff marks on the composite furniture from tactical harness friction. Heavily used examples show carbon scoring around the muzzle and slight discoloration from heat cycling."
+  },
+  "image_prompt": "Product photography of the Tessera TAMP-5 Mimic DMR mounted on a dark carbon-weave workbench, angled 45° to showcase the sensor array cage above the barrel. Dramatic side-lighting in cool teal and silver tones emphasizing the titanium sensor cluster and chrome-molybdenum barrel. Shallow depth of field with the sensor array in sharp focus, heat vents and integrated indicators clearly visible. Gloved hand (augmented with visible subcutaneous circuitry on wrist) grips the textured polymer furniture. Cyberpunk aesthetic: sharp lines, precision engineering, faint LED glow in the BCI port. Dark studio background, perhaps subtle GLMZ cityscape bokeh in deep background. --ar 3:2 --v 6"
 }

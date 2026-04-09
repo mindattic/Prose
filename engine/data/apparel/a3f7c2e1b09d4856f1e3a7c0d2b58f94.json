@@ -49,5 +49,27 @@
     "Nkechi Alvarado-Ostrowski",
     "Sorin Ekwensi-Balasanyan",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A bulky, industrial full-body suit with an imposing silhouette—broad shoulders, reinforced limbs, and a functional aesthetic that reads utilitarian and battle-worn. The gray-brown exterior has a weathered, tactile appearance with visible stitching and mismatched repair sections. The integrated helmet dominates the upper profile with a cracked visor and breathing apparatus jutting forward.",
+    "fit": "Compression-forward with rigid structural support; articulated at joints with deliberate lockdown points. The suit hugs the torso and limbs snugly over thermal padding, allowing freedom of movement while maintaining structural integrity for crawling and climbing in confined spaces.",
+    "primary_material": "Outer shell: vulcanized rubber composite with gray-brown coloration. Inner lining: quilted thermal foam with embedded micro-vibration dampeners. Knee/elbow reinforcement: salvage ballistic weave panels in contrasting grays and blacks. Helmet: scuffed polycarbonate with functional rebreather mechanism.",
+    "texture": "Abraded and rough on the exterior with a matte finish; visible stress cracks on the helmet visor. The rubber composite shows weathering and micro-pitting. Quilted interior creates a ridged, tactile appearance where visible at seams. Mismatched patches create a patchwork texture map across knees, shoulders, and back.",
+    "color_scheme": "Dominant gray-brown vulcanized rubber with darker charcoal and gunmetal accents. Salvage panels introduce irregular patches of slate gray, weathered black, and rust-tinged browns. The visor has amber/gold tint with crack webbing. Faded corporate logos peek beneath stitched-over patches.",
+    "closures": "Heavy-duty magnetic quick-release seals along the torso; friction-fit compression segments at wrists and ankles; hardpoint buckles at shoulder harness attachment points. Helmet seals via quarter-turn threaded collar.",
+    "distinctive_features": [
+      "Integrated HUD helmet with cracked polycarbonate visor showing faint amber glow",
+      "Dual-stage rebreather apparatus extending from helmet face",
+      "Ratcheting lockout joints at knees and elbows for crawl-work stability",
+      "Rigid polycarb ribcage lattice visible through translucent side panels",
+      "Spine-mounted micro-vibration dampener array (visible as ridged stripe down back)",
+      "Scavenged corporate patches stitched over original branding in 3-4 visible locations",
+      "Mismatched repair panels at shoulders and knees in contrasting materials",
+      "Multiple cargo attachment points and D-ring anchors for equipment tethering"
+    ],
+    "tier_indicator": "Tier 5 salvage/sub-grade with Tier 3 functional utility; street-manufactured by Ashgrain label. The suit is purpose-built for the ungoverned collapsed zones but shows the ingenuity and desperation of lower economic strata.",
+    "cultural_context": "Worn by tunnel runners, deep-infrastructure scavengers, and sub-level miners who operate in the dangerous voids beneath the GLMZ. This suit signals survival expertise, willingness to work in lethal environments, and a direct relationship with the collapsed undercity economy. Wearing this marks someone as street-level, industrial, and unbeholden to corpo oversight.",
+    "condition_typical": "Perpetually weathered and patched; the wearer expects visible wear, stress cracks, and field repairs. The suit is more functional than aesthetic—pristine condition would suggest it hasn't been used. Typical wear includes dust accumulation in crevices, scuff marks on the helmet, and recently added patches from recent salvage runs."
+  },
+  "image_prompt": "A full-body cyberpunk mining suit photographed on a dark mannequin in a dimly-lit industrial warehouse setting. The suit features prominent gray-brown vulcanized rubber panels with visible mismatched black and slate gray salvage patches at the shoulders and knees. An imposing integrated helmet dominates the upper profile with a cracked amber visor and functional rebreather apparatus extending downward. Harsh sidelight from overhead industrial rigs casts deep shadows, highlighting the texture of the abraded rubber composite and quilted thermal padding visible at compression seams. In the background: stacked metal containers and dripping condensation on concrete walls. The overall mood is dystopian, utilitarian, and lived-in—this is a tool for survival, not fashion. Cinematic, moody, gritty. --ar 2:3 --v 6"
 }

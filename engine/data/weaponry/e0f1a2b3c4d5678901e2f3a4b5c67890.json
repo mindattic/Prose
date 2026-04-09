@@ -42,5 +42,40 @@
     "durable",
     "logged"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Bogdan Achebe-Svanstrom",
+    "CONDUCTOR",
+    "Fanta Kato-Adomako",
+    "Ira Volkov",
+    "Kang-Petrov Arms KPM-12 'Steadfast'",
+    "MERIDIAN",
+    "Mika Sorel",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "The Shelf",
+    "ZhengDao Bioelectric LumbarBrace Pro",
+    "the_meridian_office_park"
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian riot control baton with a distinctly institutional aesthetic — angular, purposeful, designed to project authority rather than aggression. The form factor is deliberately unambiguous: a tool of enforcement, not a civilian object.",
+    "dimensions": "Length: 60 cm (24 inches). Diameter at grip: approximately 3.2 cm. Grip section: 12 cm. Active strike head: conical, tapering from 2.8 cm to 1.4 cm point.",
+    "weight_description": "Balanced and compact at 0.88 kg (1.9 lbs). Sits comfortably in extended one-hand carry without fatigue. Center of mass shifts toward the strike head during deployment, creating intuitive weight distribution for jabbing motions.",
+    "primary_material": "High-impact polymer composite rated for vehicle crush and submersion. Non-conductive for operator safety. Internal aluminum power cell housing and discharge grid.",
+    "finish": "Matte hard-coat polymer with subtle grip texture progression. Standard variant: institutional grey with minimal reflection. Hi-vis transit variant: fluorescent yellow with reflective striping at intervals.",
+    "color_scheme": "Primary: gunmetal grey or hi-vis yellow. Accent: black grip section with integrated silver lanyard attachment point. LED charging indicator (blue when ready, red during discharge cycle) recessed into pommel.",
+    "grip_texture": "Contoured polymer with deep crosshatch pattern — engineered for wet-hand retention and gloved operation. Slightly rubberized polymer overlay in critical contact zones. Lanyard retention loop (paracord-compatible) integrated at pommel.",
+    "distinctive_features": [
+      "Recessed LED status indicator in pommel (blue/red charging state display)",
+      "Integrated lanyard retention loop — designed for quick-draw deployment from duty belt",
+      "Discharge grid visible through translucent panel on strike head — visible arc chamber confirms charge state",
+      "Manufacturer stamp on grip: 'ADS RCB-5 REV5.2' with serial number in raised lettering",
+      "Small maintenance port near base of grip (removable security plug for ProCell-3 swap)",
+      "Faint etching indicating strike zones at four positions along shaft",
+      "Impact-rated polymer shows minimal cosmetic wear but heavy operational scuffing typical of field use"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (stylized 'A' with discharge arc motif) stamped on upper grip section. 'MERIDIAN CERTIFIED' and 'IP67' ratings laser-etched below. Serial plate recessed into pommel cap. Discharge log access port marked with Arcturus proprietary data connector.",
+    "condition_typical": "Well-maintained but visibly deployed — minor impact scarring on strike head from contact with bodies and barriers. Grip polymer shows slight discoloration from extended field handling and sweat exposure. Lanyard loop shows wear from repeated deployment draws. No cosmetic corrosion (polymer prevents oxidation); battery indicator likely shows blue (ready state) on units in active rotation."
+  },
+  "image_prompt": "Product photography of Arcturus RCB-5 'Steadfast' shock baton lying diagonally on dark matte black surface, alongside a gloved hand (tactical enforcement glove, dark polymer with knuckle reinforcement) gripping it at the lower third of shaft. Dramatic side-lighting from upper left reveals matte grey polymer finish, subtle crosshatch grip texture, and small blue LED glowing in pommel. Translucent discharge grid on strike head catches light showing internal arc chamber. Serial number and ADS logo crisp and readable on grip section. Background: neutral dark grey with subtle bokeh of urban security setting (blurred corridor wall, high-contrast lighting suggesting enforcement facility). Lighting: sharp, clinical, emphasizing durability and institutional function. Include close detail shot of lanyard retention loop and maintenance port. Cyberpunk aesthetic: cold, precise, functional — the weapon as bureaucratic apparatus. Canon 5D Mark IV, f/2.8, 50mm, tungsten key light at 45°, rim light on baton shaft --ar 3:2 --v 6"
 }

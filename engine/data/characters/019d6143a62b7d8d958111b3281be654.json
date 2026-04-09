@@ -325,5 +325,12 @@
     "posture_movement": "Stands rooted, weight distributed evenly across both feet — a defensive stance become default. Moves economically, no wasted motion. Shoulders slightly forward, creating a compact silhouette. When sitting, he's coiled rather than relaxed. Turns his whole body to look at things rather than just his head — old habit, neural dampener limits certain directional vulnerabilities.",
     "clothing_style": "Tier 4-5 utilitarian: reinforced cargo pants in charcoal synth-cotton, pockets weighted with tools and dead drop keys. Worn synthetic leather jacket over a plain dark thermal shirt with the collar cut away to expose the neural dampener scar. Combat boots, scuffed, re-soled twice. No visible logos or corporate wear. Everything is maintenance-ready, replaceable, unremarkable — the uniform of someone who moves through ungoverned space and doesn't want to be remembered."
   },
-  "image_prompt": "52-year-old Polynesian-West African male, heavy broad-shouldered frame, weathered bronze-brown skin, dark graying hair cropped short, sharp tired eyes, broken nose. Visible chrome neural dampener scar at right temple catching light. Wearing worn black synth-leather jacket over dark thermal shirt, cargo pants, combat boots. Standing in industrial Ashfield squatter district at dusk, half-burned buildings and neon signage in soft focus behind him, amber and cyan rim lighting, gritty film noir cyberpunk aesthetic, professional runner, dangerous competence in posture, volumetric haze from air pollution, shot at 3/4 profile, cinematic, detailed weathering, noir mood --ar 2:3 --v 6"
+  "image_prompt": "52-year-old Polynesian-West African male, heavy broad-shouldered frame, weathered bronze-brown skin, dark graying hair cropped short, sharp tired eyes, broken nose. Visible chrome neural dampener scar at right temple catching light. Wearing worn black synth-leather jacket over dark thermal shirt, cargo pants, combat boots. Standing in industrial Ashfield squatter district at dusk, half-burned buildings and neon signage in soft focus behind him, amber and cyan rim lighting, gritty film noir cyberpunk aesthetic, professional runner, dangerous competence in posture, volumetric haze from air pollution, shot at 3/4 profile, cinematic, detailed weathering, noir mood --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Pacific Islander": 29.3,
+    "Northern European": 24.3,
+    "Hispanic/Latin American": 23.9,
+    "East Asian": 16.1,
+    "Sub-Saharan African": 6.4
+  }
 }

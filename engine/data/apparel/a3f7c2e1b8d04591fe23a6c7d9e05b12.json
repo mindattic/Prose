@@ -35,5 +35,24 @@
     "everyday",
     "basic"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "physical_description": {
+    "visual_profile": "Timeless straight-leg silhouette with a relaxed yet structured appearance. Classic five-pocket construction visible on front and back. The indigo fading through high-wear areas creates a lived-in character that reads authentically worn rather than artificially distressed.",
+    "fit": "Mid-rise with a straight leg from hip to ankle. Not tight, not baggy — engineered for functionality and comfort during long shifts. Sits naturally at the waist without requiring adjustment.",
+    "primary_material": "Heavy-weight indigo denim, 100% cotton or cotton-blend synthetic. Durable enough to resist snags from industrial environments and rough handling.",
+    "texture": "Tightly woven with a subtle diagonal twill weave visible up close. The thighs and knees show soft, fabric-worn texture from repeated movement and washing. Edges remain crisp at seams and pocket openings.",
+    "color_scheme": "Deep indigo base with significant fading through the thighs, knees, and inner seams where friction occurs. Contrast white stitching throughout; flat metal rivets at pocket corners.",
+    "closures": "Button fly with traditional five-point rivet reinforcement at stress points. Simple metal button and single-loop belt pass.",
+    "distinctive_features": [
+      "Flat-riveted stress points at all pocket corners — standard durability marker",
+      "No integrated tech, AR panels, or augmentation mounts",
+      "Minimal branding — small woven Rolen label at back waistband only",
+      "Authentic wear patterns on thighs and knees from actual use, not factory distressing",
+      "Selvedge edge visible on inseam (optional detail)"
+    ],
+    "tier_indicator": "Tier 3-4 working class. Not luxury, not salvage — reliable everyday wear for people whose income depends on gear that doesn't fail.",
+    "cultural_context": "Factory workers, warehouse crew, maintenance technicians, street engineers. The uniform of someone who works with their hands in the lower Metropolitan zones. No affectation, no status signaling — just practical.",
+    "condition_typical": "Broken-in and well-worn. Fading is natural from months of use, not chemical treatment. May show minor repairs at stress points. Still structurally sound."
+  },
+  "image_prompt": "Flat-lay fashion photo of Rolen Standard Straight Denim on dark gray concrete surface, shot from above. Indigo denim with visible wear fading on thighs and knees. Close-up detail of flat-riveted pocket corner and white stitching. Moody industrial lighting with cool blue-gray tones. Secondary angle: denim on dark mannequin torso, shot from waist down, standing against a gritty M88 warehouse backdrop with steel mesh and dim neon signage. Cyberpunk aesthetic, no excessive chrome or glitch effects — authenticity over flash. --ar 2:3 --v 6"
 }

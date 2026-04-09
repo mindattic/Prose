@@ -46,5 +46,36 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "GLMZ",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Helix Biosystems DermRenew Cellular Renewal Lattice",
+    "Lazarus Pharmaceuticals",
+    "The Human Baseline Alliance",
+    "The Shore Dogs",
+    "Zheng-Dao Bioelectric Galvanic Dermis Overlay"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist wrist-mounted device resembling a medical bracelet crossed with tactical hardware. The form factor is deceptively civilian — designed to blend into everyday wear while housing precise mechanical systems beneath its surface. The silhouette is low-profile and ergonomic, curving naturally around the wrist without sharp protrusions.",
+    "dimensions": "Wrist band width: 3.2cm, circumferential span: 16-20cm (adjustable), micro-dart chamber assembly: 4.8cm length × 2.1cm depth, total profile thickness: 1.4cm at widest point",
+    "weight_description": "Feather-light despite its sophistication — barely noticeable once worn. The 120g mass is perfectly balanced across the wrist, distributed to prevent fatigue during all-day wear. Feels more like expensive jewelry than weaponry.",
+    "primary_material": "Surgical-grade titanium alloy frame with flexible polymer band segments. The dart chamber is reinforced carbon-composite with precision-machined firing mechanisms.",
+    "finish": "Brushed matte titanium with soft-touch silicone coating on contact surfaces. The band features a subtle gradient from charcoal to gunmetal, suggesting both medical device and tactical hardware.",
+    "color_scheme": "Primary: cool metallic gray and matte black. Accent: soft blue LED indicators (biometric monitoring status) and subtle crimson power indicator. The silicone band available in clinical white, midnight black, or discretionary grey.",
+    "grip_texture": "The band is wrapped in breathable, moisture-wicking silicone with fine knurling for secure positioning. The wrist contact area is smooth and hypoallergenic — designed for continuous, comfortable wear against skin or over light clothing.",
+    "distinctive_features": [
+      "Three flush-mounted micro-dart ports arranged in a triangular pattern, sealed until deployment",
+      "Subtle biometric sensor array ring (heart rate, galvanic skin response, cortisol micro-sampling) embedded along inner band",
+      "Soft-glow blue LED indicators showing active monitoring status — dims during sleep mode, pulses during elevated stress detection",
+      "Recessed calibration port disguised as a simple charging contact",
+      "MoodBridge wellness app integration button (small capacitive sensor on band exterior)",
+      "Deployment mechanism produces almost no visible recoil — micro-pneumatic system contained entirely within device",
+      "Faint etched serial number and regulatory certification marks on the inside band"
+    ],
+    "manufacturer_markings": "Small MoodBridge logo (a nested circle-within-circle design suggesting connection and monitoring) subtly laser-etched on the outer band. Below it: 'Lazarus PD-4 Guardian Angel' in minimalist sans-serif. Regulatory marks and licensing information engraved on the inner wrist contact surface, visible only when removed.",
+    "condition_typical": "Maintained in pristine condition by most users — it's a personal healthcare/safety device and treated with the care of medical equipment. Some well-worn examples show minor scuffing on the band from extended use, though the mechanisms remain factory-perfect. Rarely modified or customized due to regulatory restrictions."
+  },
+  "image_prompt": "Product photography of Lazarus PD-4 Guardian Angel wrist-mounted defense system. Display the device on a dark matte surface (charcoal grey) alongside a gloved hand wearing the unit on the wrist, showing the three micro-dart ports visible from above. Dramatic side-lighting revealing the brushed titanium finish and soft blue LED indicators glowing gently. Close-up detail of the biometric sensor array and MoodBridge branding. Sterile, clinical aesthetic mixed with tactical cyberpunk elements. Show the device's medical-device sophistication and sleek minimalism. Cool lighting temperature with accent highlights on metallic surfaces. --ar 3:2 --v 6"
 }

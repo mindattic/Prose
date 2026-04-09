@@ -78,5 +78,25 @@
     "Ouroboros Energy",
     "TESSERA PG-2 'Signature'",
     "The Nearfield"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A rectangular thermal composite sheet with a matte, slightly pearlescent surface that clings conformably to contoured surfaces. The material has an almost fabric-like drape despite its synthetic composition, with subtle iridescence visible under oblique light — shifts of pale blue and silver across the matte field. Edges are cleanly finished but slightly flexible. The overall appearance is clinical yet organic, resembling high-tech cerecloth.",
+    "dimensions": "200cm × 80cm (approximately 2 meters long, 0.8 meters wide). Thin profile — roughly 1-2mm in thickness despite structural integrity.",
+    "weight_description": "340 grams total — light enough to carry flat or rolled in a field med kit, but substantial enough to feel engineered. Easily portable for emergency responders.",
+    "primary_material": "Ouroboros proprietary phase-change thermal composite — synthetic polymer matrix with embedded phase-change material (PCM) microencapsulation.",
+    "finish": "Matte surface with antimicrobial coating (HB-Surface-1). Slightly iridescent — visible color shift of pale blue-silver under directional lighting. Non-reflective in normal conditions, giving clinical appearance. Conformable texture, almost fabric-like to touch despite being plastic composite.",
+    "color_scheme": "Pale gray-white primary with subtle iridescent shimmer (blue-silver undertones). No bright accent colors — utilitarian medical aesthetic. Ouroboros branding in dark gray or black.",
+    "interface_elements": "Minimal. Two corner attachment points (reinforced polymer loops or subtle velcro-compatible sections) for field securing. Serial number and reset indicator printed/embossed on one corner. Lot number and manufacturing date visible. No screens, no active displays — purely passive thermal material.",
+    "distinctive_features": [
+      "Iridescent phase-change material visible as subtle color-shift under light",
+      "Conformable drape that clings to body contours without adhesive",
+      "Matte antimicrobial surface coating gives clinical, slightly organic appearance",
+      "Extremely thin despite high thermal capacity — almost gauze-like in cross-section",
+      "Edge treatment shows material composition — slight translucency when backlit",
+      "Thermal indicator patch (temperature-sensitive label) on one corner showing charge status"
+    ],
+    "manufacturer_markings": "Ouroboros Energy Applied Materials division logo (likely circular/recursive symbol referencing company name). 'CERECLOTH™' or 'THERMAL STABILIZATION WRAP' embossed or printed. Batch/lot number, manufacturing date, reset temperature requirement (60°C / 3min). Regulatory stamps for GLMZ medical classification. Infinite Loop Recycling subsidiary mark.",
+    "condition_typical": "Folded compactly in field med kits or stored flat in climate-controlled settings. When deployed, draped over patient and conforming closely to body, with subtle iridescent sheen visible under clinical or emergency lighting. May show minor creasing from storage but quickly conforms when applied to body heat."
+  },
+  "image_prompt": "Close product photography of a folded gray-white thermal wrap with subtle iridescent blue-silver shimmer, displayed on a dark medical workbench under cool LED surgical lighting. One corner unfolds to show the thin, conformable material and embossed Ouroboros branding and thermal reset indicator. Shallow depth of field emphasizes the matte iridescent surface texture. Dramatic side-lighting creates subtle color-shift effect across the composite. Nearby: a heated metal cylinder (60°C reset tool) and a sterilization tray. Cyberpunk medical aesthetic — clinical, utilitarian, slightly dystopian. --ar 3:2 --v 6"
 }

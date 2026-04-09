@@ -53,5 +53,28 @@
     "MERIDIAN",
     "Ouroboros PG-2 'Blackout'",
     "Veldtmann Steelcap 7"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A crisp, utilitarian silhouette built for authority and visibility in underground transit corridors. The structured navy jacket sits squared at the shoulders with deliberate institutional tailoring, projecting competence and regulated status. Reflective orange accents create visual rhythm along the edges—shoulders, cuffs, heel tabs—making the wearer a functional beacon in tunnel lighting. The overall impression is mid-Tier 2: corpo-issued, standardized, reliable. This person operates critical infrastructure.",
+    "fit": "Precisely tailored for function over fashion—straight-cut trousers with reinforced stress points, jacket fitted through the torso but loose enough to layer and move. The augmentation channel running along the right forearm is cut wide, visibly designed to accommodate chrome without compromise. Everything sits deliberately, nothing loose or sloppy.",
+    "primary_material": "Navy synth-twill jacket (durable, wrinkle-resistant, corpo-standard); charcoal moisture-wicking base layer with grid texture (thermal regulation for station environments); navy dyed leather Veldtmann Steelcap boots (oil-resistant, rated for wet decking); black nitrile-coated work gloves (chemical and fluid resistant).",
+    "texture": "Crisp, institutional—the synth-twill has a tight weave with a subtle sheen, structured to hold shape through repeated wear. The base layer features a micro-grid emboss for moisture management. Boots show functional wear patterns; leather is treated matte. Gloves grip-textured on palms.",
+    "color_scheme": "Dominant navy blue (stability, authority, corporate identity) with charcoal undertones. High-contrast reflective orange piping on shoulders, cuffs, and heel tabs (visibility, safety mandate). White and gold embroidery on left breast patch (KELVEX TRANSIT — MERIDIAN CORRIDOR). Matte black alloy belt buckle.",
+    "closures": "Jacket: standard vertical zip with reinforced wind guard. Cargo pockets: magnetic snap closures (silent, reliable, no jangling). Belt: matte alloy buckle with web strap. Boots: laced with quick-release design for rapid emergency removal. Gloves: fitted with no closures (tucked through belt loops when not in use).",
+    "distinctive_features": [
+      "Embroidered left-breast patch: KELVEX TRANSIT — MERIDIAN CORRIDOR in white and gold thread",
+      "Mandarin collar (corpo-standard professional touch)",
+      "Reinforced elbows (wear-intensive point on a twelve-hour shift)",
+      "Right forearm aug channel—visible zip-open seam rated for standard chrome integration without garment removal",
+      "Reflective orange piping (not decoration; GLMZ safety mandate for elevated rail operators)",
+      "Magnetic clip on transit cap for BCI sync badge (connects operator to M88 network systems)",
+      "Web belt designed for multitool sheath and scanner holster (functional load-bearing)",
+      "Reinforced inner thighs on trousers (contact wear from climbing, platform work)",
+      "Veldtmann Steelcap 7 footwear (signature transit authority boot, recognizable silhouette)"
+    ],
+    "tier_indicator": "Tier 2 Corpo-issued. This is not expensive clothing—it's standardized, mass-manufactured by Stratum Logistics under contract. But it signals employed, credentialed, infrastructure-critical status. The augmentation channel proves the wearer is expected to carry legal chrome as part of their job function.",
+    "cultural_context": "The wearer is a Kelvex Transit Authority operator on the Meridian Corridor M88 elevated rail network. They are middle-management adjacent, trusted with lives and schedules. Wearing this uniform in public commands a specific deference—this person has legitimate authority in station spaces. Off-duty, the uniform marks them as systemically embedded, probably augmented for network connectivity, definitely trained in emergency protocol. In the ungoverned zones, the uniform means 'I work for the corporation; don't rob me.'",
+    "condition_typical": "Pressed and maintained to institutional standard—no wrinkles, no stains, no modifications beyond issued configuration. Boots show scuff marks from platform work but are regularly polished. The aug channel zip might show stress creasing from repeated use. After a twelve-hour shift, the wearer will show fatigue, maybe perspiration on the base layer at the neckline, but the uniform itself remains structured. Gloves tucked through belt loops, cap slightly askew from removal and replacement during shift changes."
+  },
+  "image_prompt": "A Kelvex Transit Authority operator stands in a dimly lit elevated rail station platform, fluorescent strips casting cool blue-white pools of light overhead. The figure wears a crisp navy synth-twill jacket with white-and-gold KELVEX TRANSIT embroidery on the left breast, structured mandarin collar, and reflective orange piping along shoulders and cuffs that catches the harsh station lighting like neon edges. Navy straight-cut trousers with reinforced seams, tucked into navy-dyed Veldtmann Steelcap 7 boots with orange reflective heel tabs. The right forearm shows a visible aug channel zip running down the jacket seam—clearly designed for chrome. A wide black web belt with matte alloy buckle holds a multitool sheath and scanner holster. Navy transit cap with gold Kelvex livery sits at regulation angle. Thin black nitrile-coated work gloves tucked through belt loops. The operator's posture is alert, professional, a subtle chrome accent visible at the wrist (BCI integration suggested). Background: concrete platform, distant tunnel darkness, a sleek train nose visible through the haze. Moody, institutional lighting. Shot on dark mannequin or cyberpunk model. --ar 2:3 --v 6"
 }

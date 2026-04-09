@@ -56,5 +56,28 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Veslemøy Achebe-Tursynov",
     "Yannick Tambadou-Reinholt"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Practical, utilitarian outfit built for dock labor and freight hauling. Heavy-duty silhouette with visible functionality — rolled sleeves, tool vest over work shirt, cargo trousers with multiple pockets. Weathered but maintained. Projects competence and independence rather than style.",
+    "fit": "Relaxed through the torso and shoulders for mobility; cargo trousers have generous thigh and hip pockets; vest sits unstructured over the shirt; sleeves rolled to elbows for movement; wide belt anchors the waist. Sized for freedom of motion over a base moisture-wick layer.",
+    "primary_material": "Heavy canvas work shirt (rust-brown, faded); safety-orange nylon tool vest with reinforced seams; Goretek-spec reinforced synthetic trousers (charcoal); synth-canvas wide-brim hat; waterproof composite-toed boots with aggressive lugs",
+    "texture": "Canvas shows soft breakin and creasing; vest nylon is rigid and utilitarian with visible stitching; trouser double-layer seat is thick and textured; boots are salt-stained and scuffed with deep tread. Overall weathered but not damaged.",
+    "color_scheme": "Rust-brown work shirt faded to lighter tan at cuffs; safety-orange tool vest; charcoal trousers with black reinforced knees; white moisture-wick tank at collar; khaki wide-brim hat; black/grey composite-toed boots",
+    "closures": "Pearl-snap closures on work shirt; canvas tab-buttons on rolled sleeves; hook-and-loop sealed cargo pockets on trousers; heavy roller buckle on leather-analog belt; carabiner clip at left hip for access fob ring",
+    "distinctive_features": [
+      "Hand-stitched white and orange Hookline patch on left chest (anchor over circuit node)",
+      "Clear ID badge window on vest right shoulder",
+      "Map-fold document slot on vest",
+      "Utility carabiner at left hip with dock access fob ring",
+      "Rolled and tab-buttoned sleeves exposing white wick tank",
+      "Salt stains and scuff marks on boots indicating active use",
+      "Wide-brim synth-canvas hat with faded weathering",
+      "Reinforced knee panels on trousers",
+      "Aug-channel strap option for chrome-armed operators (right sleeve removable)"
+    ],
+    "tier_indicator": "Tier 3-4 working class. Not corpo-issued, not salvage — this is the outfit of a skilled independent operator with access to reliable equipment and job network. Functional investment rather than fashion.",
+    "cultural_context": "Street-level dock hauler, independent freight operator, union-adjacent (Hookline network). Wearing this signals self-employment, manual labor expertise, reliability in high-risk environments. No corporate loyalty markers — autonomy is the signal.",
+    "condition_typical": "Broken-in and weathered but maintained. Canvas shows soft fading and crease patterns; boots are salt-stained and scuffed but structurally sound; vest retains its rigidity and pocket integrity. Gear is refreshed periodically, not disposable."
+  },
+  "image_prompt": "Gritty cyberpunk fashion photography: a weathered independent freight hauler in rust-brown faded canvas work shirt with pearl snaps, safety-orange multi-pocket tool vest with visible carabiner and access fobs, charcoal reinforced cargo trousers, and salt-stained composite-toed boots. Wide khaki synth-canvas hat. Left chest shows hand-stitched white-and-orange Hookline patch (anchor over circuit node). Sleeves rolled to elbows, white moisture-wick tank visible at collar. Posed against a rain-slick Great Lakes dock backdrop with container stacks and acid-rain mist. Moody industrial lighting, desaturated color palette with safety orange accents. Mannequin shot showing gear detail, or model with visible aug ports. --ar 2:3 --v 6"
 }

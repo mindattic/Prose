@@ -46,5 +46,33 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "GLMZ",
+    "Ira Volkov",
+    "The Bazaar",
+    "The Shelf"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist baton with an oversized contact head — chunky and deliberately intimidating. The design reads as purpose-built for pain rather than precision. Thick shaft tapers slightly toward a ribbed grip, then flares dramatically into a reinforced striking head roughly the size of a clenched fist, faceted for contact pressure distribution.",
+    "dimensions": "55 cm overall length. Contact head approximately 8 cm wide × 6 cm deep. Grip section 12 cm. Shaft diameter 2.8 cm.",
+    "weight_description": "Hefty but balanced — 0.8 kg distributed toward the contact head. Feels purposeful in hand, designed to be swung with authority but controlled enough for one-handed application against restrained subjects.",
+    "primary_material": "Reinforced polymer frame with carbon-composite core. Contact head is hardened steel with embedded electrical conductors. Internal architecture houses capacitor array and power regulation systems.",
+    "finish": "Matte charcoal polymer body with a brushed-steel contact head showing faint oxidation marks and micro-scratches from repetitive contact applications. Power indicator strip along shaft finished in semi-gloss black.",
+    "color_scheme": "Charcoal gray primary with gunmetal steel contact head. Subtle blue accent lines running along the grip indicate active power state when charged.",
+    "grip_texture": "Deeply textured rubberized polymer with aggressive grip ridges. Designed to prevent slipping during sustained application. Slightly tacky to the touch, engineered for reliability in gloved hands.",
+    "distinctive_features": [
+      "Oversized faceted contact head with visible electrical conductor ports",
+      "Power status indicator strip (blue when charged, amber when depleted) running 8 cm down the shaft",
+      "Circular reset port on grip base for battery cycling",
+      "Micro-serrations on contact head edges for pressure concentration",
+      "Two small venting ports near the grip where heat dissipates during operation",
+      "Slight discoloration marks on contact head from accumulated bioelectric residue"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS stamped in raised letters on the grip shaft. Serial plate (titanium) inset flush into polymer near the power port. Legal disclaimer etched in micro-text below manufacturer stamp.",
+    "condition_typical": "Field-worn. Contact head shows surface scarring and faint burn marks from thousands of applications. Grip texture remains intact but polymer body exhibits minor scuffs and the patina of institutional use. Power indicator may be obscured by residue that requires periodic cleaning."
+  },
+  "image_prompt": "Product photograph of the Arcturus BW-3 'Bonesaw' stun baton on a dark gunmetal surface, shot under dramatic side-lighting that emphasizes the brutal geometry of the contact head. Gloved hand (black tactical glove, chrome-reinforced knuckles) gripping the shaft, thumb positioned near the power indicator. Close detail on the faceted steel contact head with its visible conductor ports catching harsh white light. Mid-distance blur of a detention facility wall in the background. Cyberpunk noir aesthetic — cool blue and amber accent tones. 55cm baton oriented diagonally across frame. Materials highly visible: brushed steel, textured polymer, faint electrical residue on contact surface. --ar 3:2 --v 6"
 }

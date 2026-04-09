@@ -77,5 +77,25 @@
     "Helix Biosystems",
     "Iowan Behemoth — 'Cathedral'",
     "Neural Feedback Carbine NFC-3 'Mirrorgun'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, professional-grade medical intervention kit housed in a rigid polymer clamshell case with a hinged lid. The exterior presents clean corporate medical aesthetics — industrial-utilitarian design with prominent safety warnings and step-by-step pictographs. The interior reveals a precisely organized compartment layout with color-coded instrument slots and embossed instruction sequences on the lid interior.",
+    "dimensions": "18cm × 9cm × 4cm hard case; palm-to-two-hand sized, fits easily into emergency medical bags or jacket cargo pockets",
+    "weight_description": "210g total — light enough for single-handed carry, substantial enough to feel purpose-built; handheld or strap-mounted to medical harness",
+    "primary_material": "Hard polymer composite case (likely polycarbonate or reinforced thermoplastic); stainless steel and memory-titanium internal instruments; medical-grade silicone cannula housing",
+    "finish": "Textured matte polymer exterior for grip security; precision-molded interior with soft-touch foam compartments. Metal instruments exhibit satin-brushed finish with minimal reflection to reduce glare during field use.",
+    "color_scheme": "Clinical white and gunmetal gray exterior with safety-orange accent striping along case edges and the micro-cricothyrotomy tool handle. Helix Biosystems branding in metallic silver. Internal components visible through translucent sections — memory-titanium cannula gleams pale silver.",
+    "interface_elements": "Snap-latch closure system with integrated emergency-release finger tabs; embossed two-color instruction sequence on interior lid with numbered steps (1–7) and pictographic flow; color-coded syringes and instrument holders; pressure-fit cannula cartridge with visible window showing cannula status; integrated timer dial (optional Tier 2+ models) on case exterior",
+    "distinctive_features": [
+      "Embossed step-by-step instruction lid designed for high-stress field literacy (not requiring extended reading)",
+      "Translucent window sections revealing memory-titanium cannula in its neutral state",
+      "Safety-orange obturator wire spool with resistance-feedback tactile grip design",
+      "HB-Seal-3 syringe with pre-measured doses and color-phase indicator (clear to pale blue when ready)",
+      "Micro-cricothyrotomy tool with non-reflective blade and ergonomic finger-stop design",
+      "Sterile drape configured as integrated pouch rather than loose material"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo (interlocking double helix in silver) centered on case exterior; regulatory stamps (GLMZ Medical Authority, North American Standards compliance, Tier 2+ licensing requirement notation); batch/serial number on underside; expiration date in embossed numerals; lot tracability QR code",
+    "condition_typical": "Pristine condition when new; field-used kits show protective case scuffing, worn orange striping, and adhesive residue from emergency-room mounting. Opened kits reveal organized absence of deployed items — empty cannula cartridge slot, depleted syringe, and soiled sterile drape."
+  },
+  "image_prompt": "Product photography of Helix Biosystems Tracheal Anchor Kit 'The Sexton' on a surgical steel workbench. Open clamshell case showing interior foam compartments with color-coded instruments including satin-brushed memory-titanium cannula, orange-handled micro-cricothyrotomy tool, and pre-loaded HB-Seal-3 syringe. Dramatic forensic lighting with cool blue LED accent on instruments and warm practical white on the embossed instruction lid. Shallow depth of field emphasizing the translucent cannula window. Cyberpunk medical aesthetic, clinical yet urgent. Scattered medical glove and sterile drape in background. Close-up detail shot showing Helix double-helix branding and GLMZ Medical Authority stamps. --ar 3:2 --v 6"
 }

@@ -48,5 +48,25 @@
     "Carrion Defense Works",
     "Helix Cortex Laminate — 'The Second Skin'",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A full-body encapsulation suit with a distinctive bulbous helmet featuring a wide transparent visor and integrated breathing apparatus. The suit presents as a continuous sealed garment from neck to ankles, with reinforced glove seals and boot covers. Heavy-duty construction with visible layering at joints and seams.",
+    "dimensions": "180–200 cm tall when worn; approximately 60 cm shoulder width",
+    "weight_description": "12 kg total with air supply — requires both hands to don/doff; worn as a complete system, not pocketable",
+    "primary_material": "Laminated chemical-resistant polymer composite exterior; inner activated carbon fabric layer; outer vapor-barrier membrane; silicone and neoprene seals at joints",
+    "finish": "Matte rippled surface with slight iridescence from the polymer laminate; textured grip zones at shoulders and thighs; non-reflective to minimize visual signature",
+    "color_scheme": "Flat industrial gray primary with high-visibility neon yellow striping along spine, wrists, and ankles; black silicone seals and trim",
+    "interface_elements": "Helmet visor with integrated heads-up display (cyan/green data overlay visible), communication microphone array integrated into mask, two rotary dials for air management on chest pack, quick-disconnect connectors for air supply (bright red), pressure gauge on shoulder harness, environmental sensor cluster (small circular array) mounted on sternum",
+    "distinctive_features": [
+      "Oversized domed helmet with internal breathing apparatus visible through translucent sections",
+      "Integrated air tank/SCBA backpack mounted as spinal column element with pressure indicators",
+      "Yellow-and-gray chevron warning pattern on thighs and calves",
+      "Sealed finger compartments with individual articulation grooves",
+      "Bright chemical-hazard trefoil symbol on both shoulders",
+      "Red emergency deflation tabs at neck and ankles"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS logo (angular phoenix silhouette) stamped on left chest; EPA Level A certification hologram on right shoulder; batch/serial number on arm cuff; CBRN warning labels across lower back in three languages",
+    "condition_typical": "When deployed, suit shows use-worn polymer with minor scuff marks; air supply gauge visibly decreasing; HUD display active with threat-level readouts; gloves show talc residue from donning; equipment secured tightly at all closure points"
+  },
+  "image_prompt": "A Carrion Defense Works CHO-4 chemical hazard suit standing upright on a reinforced steel workbench in a corporate CBRN decontamination bay. Dramatic sidelighting casts sharp shadows across the suit's laminated polymer surface. The suit's HUD visor glows with cyan threat-level data overlays. Industrial fluorescent lighting reflects off the helmet dome. High-visibility yellow chevrons and warning symbols are sharp and visible. Air supply tank detail visible on the spine, with pressure gauge indicators. Empty decontamination shower stall behind suit. Cyberpunk aesthetic with corporate military equipment presentation. Product photography style, 3:2 aspect ratio --ar 3:2 --v 6"
 }

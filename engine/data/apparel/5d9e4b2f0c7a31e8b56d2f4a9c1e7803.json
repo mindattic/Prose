@@ -58,5 +58,32 @@
     "Sorin Ekwensi-Balasanyan",
     "The Pure Hand",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A robust, utilitarian silhouette built for heavy labor. The burnt-orange high-visibility vest dominates, creating a compact, cautious appearance—someone visible on a chaotic dock. Broad shoulders from the vest's cut, tapered at the waist by cargo pant geometry. Overall impression: practical, weather-worn, deliberately visible.",
+    "fit": "Relaxed and spacious through the torso to accommodate exo-harness attachment points; cargo pants sit low on the hips with a straight leg taper to the boots. All closures and seams positioned for maximum mobility during load-bearing work.",
+    "primary_material": "Burnt-orange ballistic nylon vest with silver reflective webbing; charcoal synth-canvas work shirt with flannel lining; heavy cotton-blend navy cargo trousers; thick orange leather grip gloves; black chemical-resistant rubber-over-leather dock boots.",
+    "texture": "Rough, industrial—ballistic weave showing micro-abrasion patterns; synth-canvas slightly stiff and salt-stained; leather gloves burnished pale at the knuckles from repeated friction; rubber boots textured for anti-slip grip.",
+    "color_scheme": "Burnt orange and silver (high-visibility primary); charcoal and white (base layers); navy cargo (lower half); black boots grounding the palette. Reflective silver accents throughout.",
+    "closures": "Magnetic snaps on vest front; hook-and-eye back seam on work shirt (exo-harness compatible); zip + velcro closures on thigh pockets; lace-up boots with secondary magnetic ankle straps; friction-fit hard hat.",
+    "distinctive_features": [
+      "Wide reflective silver X-straps across chest and back",
+      "Heat-pressed Meridian Harbor Authority patch (repaired, re-pressed multiple times)",
+      "Split back seam with hook-and-eye for low spinal rig/exo-harness mount",
+      "Reinforced knee panels (visible wear)",
+      "Gusseted crotch for squat/load movement",
+      "Thigh pocket containing folded work order tablet sleeve",
+      "Velcro-closure thigh pocket with reflective tape strips for equipment marking",
+      "Yellow hard hat with cracked brim, silver adhesive repair tape",
+      "Name 'VADUVA-OSEI' written in permanent marker on back of helmet",
+      "Safety glasses D-ring clipped to vest front",
+      "Thick orange leather palm-reinforced grip gloves, knuckles worn pale",
+      "Chemical-splash-rated magnetic-latch safety toe boots",
+      "Faint hydraulic fluid and lake water patina"
+    ],
+    "tier_indicator": "Tier 4 (working class). Government-issued components (vest, hard hat) mixed with street-market self-purchased workwear. Functional above aesthetic, maintained through repeated repair.",
+    "cultural_context": "Dock and freight handler. The wearer is a visible, essential cog in GLMZ logistics. Augmentation-ready (exo-harness compatibility), weather-hardened, and marked as authority-tracked labor. This is the uniform of someone moving cargo in all conditions, traceable by name and kit.",
+    "condition_typical": "Broken-in and patched. Reflective tape scuffed, vest seams stress-worn, hard hat brim crack stabilized with adhesive tape, glove leather burnished pale at high-friction points. Not pristine; honest wear from daily dock labor."
+  },
+  "image_prompt": "Midjourney cyberpunk fashion shoot: full-body shot of a worker in burnt-orange high-visibility dock vest with silver reflective X-straps over a charcoal synth-canvas work shirt, navy cargo pants with reinforced knees, and black chemical-resistant dock boots. Yellow hard hat with cracked brim and silver repair tape, name 'VADUVA-OSEI' visible on back. Orange leather grip gloves rest at sides. Hard industrial lakefront backdrop—corrugated steel shipping containers, moody amber-tinted dock lighting, faint hydraulic haze. Dark mannequin presentation or stoic worker pose. Gritty, functional aesthetic. Moody amber and shadow lighting. --ar 2:3 --v 6"
 }

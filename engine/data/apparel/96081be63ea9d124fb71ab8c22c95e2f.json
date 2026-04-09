@@ -36,5 +36,25 @@
   "related_entities": [
     "Lazarus HZ-4 'Cleanroom'",
     "The Pure Hand"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Nearly invisible second-skin gloves that cling to the hand like a surgical membrane. They appear almost translucent until light hits them at an angle, revealing an iridescent shimmer. The wearer's fingers remain distinctly visible but appear slightly abstracted, as if viewed through distortion field. Worn by both corpo security and street operatives—a visual marker of intent.",
+    "fit": "Form-fitting compression throughout, molding to individual hand geometry with no bunching or excess material. Seamless at the wrist with a subtle cuff that blends into forearm. Elastic memory ensures perfect tension without restricting blood flow.",
+    "primary_material": "Ultra-thin polymer composite with proprietary molecular anti-adhesion coating. Base layer is synthetic spider-silk derivative, outer layer is hydrophobic graphene-infused polymer.",
+    "texture": "Smooth and slick to touch, almost frictionless. Under magnification, the outer surface shows a microscopic lattice pattern designed to repel organic material. The inner surface has imperceptible micro-texturing that prevents grip slippage despite the slickness.",
+    "color_scheme": "Translucent gunmetal grey with subtle iridescent shift—appears silver-blue under certain light angles. Zero branding visible on the surface.",
+    "closures": "None—friction-fit elastic cuff at wrist, no seams or fasteners. Donned by stretching and settling against skin.",
+    "distinctive_features": [
+      "Proprietary anti-adhesion molecular coating prevents DNA/fingerprint transfer",
+      "Zero impression capability on touched surfaces",
+      "Iridescent shift visible only in certain light",
+      "Seamless construction with no detectable seams",
+      "Marketed as 'cleanroom handling equipment' but universally known as ghost gloves",
+      "Law enforcement scanner-readable microtag embedded in left wrist cuff (legal requirement)"
+    ],
+    "tier_indicator": "Tier 2-3 crossover—expensive enough to signal intention and resources, accessible enough for mid-level operators and security specialists",
+    "cultural_context": "Worn by corporate security, forensic cleanup crews, black-market couriers, and anyone who needs plausible deniability. Possession at crime scene immediately signals premeditation to law enforcement. Street communities refer to wearers as 'ghosts' or 'cleaners.'",
+    "condition_typical": "Pristine when new; develops barely-visible wear patterns after extended use. Edges may show micro-delamination after months of use, but this requires close inspection to notice."
+  },
+  "image_prompt": "Close-up fashion shot of Phantom Line Stealth Manipulation Gloves on a pale cyberpunk model's hands, hands positioned as if holding an invisible object. The gloves are nearly invisible, only visible as a faint iridescent shimmer catching neon blue and purple light. Dark urban warehouse backdrop with rain-slicked metal surfaces. Moody atmospheric lighting with strong side-angle light revealing the gloves' ethereal shimmer against black shadow. The model wears dark tactical gear. High-end product photography aesthetic with forensic precision detail. --ar 2:3 --v 6"
 }

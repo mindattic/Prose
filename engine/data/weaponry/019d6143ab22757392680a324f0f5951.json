@@ -55,5 +55,40 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Biometric Denial Charge BDC-1",
+    "Bogdan Achebe-Svanstrom",
+    "GLMZ",
+    "Ihaia Nystrom-Keita",
+    "Marrowvault Cryogenics",
+    "Nurlan Holmberg-Dembele",
+    "Ouroboros Energy PiezoCore LD-5 Pedestrian Kinetic Harvesting Grid",
+    "PulsePoint ThermoLayer Thermal Regulation Implant",
+    "Street Luge",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A low-profile disc mine with a brutalist, industrial aesthetic — flat and purposeful, resembling a pressure cooker lid welded to a concrete pad. The casing appears deliberately dense and cold to the eye, with subtle frost-pattern etching across its surface that catches light like crystallized glass. No soft curves; every edge is functional and sharp.",
+    "dimensions": "110mm diameter, 45mm height. Footprint roughly equivalent to a standard dinner plate with approximately 8mm casing walls.",
+    "weight_description": "Dense and substantial in hand — 2.1 kg distributed across a compact footprint creates a sensation of concentrated mass. Feels heavier than its actual weight due to the high-density materials used in the pressure chamber. Balanced evenly from all directions.",
+    "primary_material": "Titanium-aluminum composite casing with internal pressure vessel of reinforced aerospace-grade polymer. The disbursement manifold is steel-jacketed. Coolant reservoir occupies roughly 60% of internal volume.",
+    "finish": "Matte gunmetal gray with microscopically etched frost-pattern texture across the top surface — a deliberate manufacturing aesthetic referencing the weapon's cryogenic function. The underside shows brushed steel anti-corrosion plating. Subtle iridescent sheen in certain light angles from proprietary coolant-resistant coating.",
+    "color_scheme": "Gunmetal gray primary with glacial blue accent stripes running radially from center to edge (marking the disbursement charge positions). Frost-white stenciled manufacturer stamp on top face.",
+    "grip_texture": "Not designed for handheld grip — the perimeter features a series of shallow grip notches for placement/disarming only. These notches have a slightly tacky, rubberized polymer coating to prevent accidental drop during field installation.",
+    "distinctive_features": [
+      "Eight radial micro-explosive charge ports visible as recessed dimples around the upper surface, arranged in a precise geometric pattern",
+      "Central raised hub (approximately 2cm diameter, 8mm tall) housing the pressure relief and trigger mechanism — this shows exposed sensor contacts and a small LED indicator well (typically dark, illuminates red if armed)",
+      "Concentric circular grooves across the top surface suggesting internal pressure compartmentalization and serving as ice-fracture guidance channels",
+      "Tiny frost-crystals that spontaneously form in the immediate vicinity during transport due to cryogenic coolant seepage — deliberate design feature to telegraph the device's thermal nature",
+      "Bottom face shows three contact points (tripod feet) with shallow rubber damping pads, slightly yellowed from age and coolant exposure",
+      "Manufacturer serial plate (approximately 3cm × 1cm) stamped into the underside in Mandarin and Standard English: 'ZHENG-DAO BIOELECTRIC / CFDM-4 / CLASSIFIED MILITARY ORDNANCE'",
+      "Faint electromagnetic shielding grid pattern visible in certain light angles — suggests internal trigger hardening against EMP"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC corporate sigil (a stylized DNA helix interlocked with a circuit pattern) stamped in frost-white on the top center. Serial number and date-of-manufacture etched below the sigil. A small certification stamp indicating military contract fulfillment appears on the underside. All markings are deliberately subtle — designed not to catch tactical light signatures in the field.",
+    "condition_typical": "Field-deployed units show subtle frost accumulation around the perimeter seal, minimal cosmetic wear but evidence of thermal cycling (hairline stress patterns in the coating). Well-maintained surplus units retain the factory sheen; heavily used or black-market units may have improvised trigger modifications, filed serial numbers, or corrosion from improper storage in humid environments. The LED indicator well is often covered with matte tape in operational settings."
+  },
+  "image_prompt": "Product photography of ZHENG-DAO CFDM-4 cryogenic mine — a gunmetal gray disc (110mm diameter) with radial micro-explosive ports and central trigger hub, positioned on a dark brushed steel surface. Overhead three-quarter view with dramatic cool-toned side-lighting emphasizing the frost-pattern texture and glacial blue accent stripes. Subtle ice crystals forming around the edges. Bare gloved hand (cybernetic chrome fingers) visible placing or handling the device, showing the scale and density. High contrast lighting separates the device from a dark background. Materials: titanium composite, reinforced polymer, visible sensor contacts glowing faint red. Cyberpunk military ordnance aesthetic — precise, cold, lethal. Corporate branding and serial markings visible. --ar 3:2 --v 6"
 }

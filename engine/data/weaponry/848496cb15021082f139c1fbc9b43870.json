@@ -42,5 +42,36 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions MAR-8X 'Longbow Mk.II'",
+    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
+    "Nika Svensson-Kone",
+    "Osvaldo Mensah-Kovalenko",
+    "Plot 17",
+    "Sagyn Padilla-Nti"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular assault rifle with a distinctly modular appearance. The KPA-25EM Tempest presents as a refined second-generation platform—less brutish than its Thunderclap predecessor, with clean lines and purposeful ergonomics. The weapon suggests precision engineering rather than improvised power, with distributed components along the receiver creating subtle visual rhythm. The profile is aggressive but controlled, built for professional operators rather than chrome-heavy enthusiasts.",
+    "dimensions": "1,045mm overall length, 85mm width at receiver, 65mm height at charging handle. 385mm barrel with progressive electromagnetic coil geometry visible through translucent polymer sections.",
+    "weight_description": "Hefty but well-balanced. 4.1 kg distributed evenly across the frame prevents muzzle-heaviness. Feels substantial in the hands—a weapon engineered for extended engagements without fatigue compensation.",
+    "primary_material": "Brushed aluminum receiver with reinforced polymer furniture. Distributed capacitor housing uses carbon-composite panels along the handguard and upper receiver. Barrel assembly is hardened steel with embedded electromagnetic induction coils.",
+    "finish": "Matte charcoal-gray anodized aluminum with satin-black polymer accents. Tactical rail surfaces feature light tool marks suggesting functional design priority. Some units show micro-texturing for grip security.",
+    "color_scheme": "Gunmetal gray primary with jet-black polymer components. Accent pieces in dark bronze where capacitor modules interface. Status LEDs glow amber during charge cycle.",
+    "grip_texture": "Textured polymer grip with integrated capacitive charge indicators. Handguard features aggressive crosshatch pattern for secure grip, even with liquid polymer combat gloves. Magazine well has subtle ribbing for positive insertion feedback.",
+    "distinctive_features": [
+      "Translucent polymer access panels along upper receiver exposing internal electromagnetic coil progression",
+      "Distributed capacitor module covers with segmented design—four visible segments running length of weapon",
+      "Integrated charge status indicator strip running along right side of receiver (amber when charging, green when ready)",
+      "Electromagnetic rail system mounted at 0° and 45° angles for optics and auxiliary systems",
+      "Muzzle brake designed as electromagnetic flux director—unconventional geometry with slotted venting",
+      "Quick-disconnect capacitor coupling system visible at rear receiver",
+      "Heat-dissipation vents along capacitor segments with angular, almost art-deco aesthetic",
+      "Serial number plate (KPA-25EM series) laser-etched on left receiver"
+    ],
+    "manufacturer_markings": "KANG-PETROV ARMS in crisp sans-serif font stamped on left side of upper receiver. KPA logo (stylized linked geometric shapes) embossed on charging handle. 'TEMPEST' designation etched below safety selector in smaller text.",
+    "condition_typical": "Field weapons typically show light surface wear on polymer handguards and minor scuffing on aluminum receiver. Capacitor module covers often display dust accumulation around cooling vents. Well-maintained units show no corrosion; heavily used examples may have abraded finish around magazine well and charging handle from repeated manipulation."
+  },
+  "image_prompt": "Product photograph of Kang-Petrov Arms KPA-25EM Tempest electromagnetic assault rifle on dark gunmetal surface, angled 45 degrees. Dramatic side-lighting from upper left revealing matte gray anodized aluminum receiver, translucent polymer capacitor access panels glowing faintly amber, and textured black polymer furniture. Gloved hand in tactical combat glove cradling magazine well area. Macro detail visible on electromagnetic coil geometry through polymer sections and modular capacitor coupling. Cyberpunk industrial aesthetic with clean engineering lines. Shallow depth of field. --ar 3:2 --v 6"
 }

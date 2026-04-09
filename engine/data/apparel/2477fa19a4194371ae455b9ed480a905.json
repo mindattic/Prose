@@ -38,5 +38,26 @@
     "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "The Pure Hand"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian three-layer jacket with a distinctly functional silhouette. Medium grey base with high-contrast orange route-arrow branding at chest and back. High-visibility retroreflective striping runs vertically along sleeves in bright white. The overall impression is industrial-practical—designed to be seen moving through urban sprawl at speed.",
+    "fit": "Relaxed through the torso with reinforced shoulder articulation for repetitive reaching and scanning motions. Geneware-tolerant—tail accommodation gussets at lower back and waist, adjustable hood side clearance for non-standard ear augmentations. Sleeves cut long enough to accommodate wrist-worn routing displays without binding.",
+    "primary_material": "Three-layer composite: hydrophobic ripstop outer shell (chemical-resistant treatment for acid-tinged precipitation), thermally-regulating mid-layer (exertion-responsive insulation), moisture-wicking inner face. GPS-conductive thread network woven through left sleeve structure.",
+    "texture": "Outer shell has subtle ripstop texture with slight technical sheen. Retroreflective striping has micro-prismatic texture visible at angles. Inner lining is soft, quick-dry synthetic. BCI-compatible collar port sits as a smooth recessed interface point.",
+    "color_scheme": "Medium grey base (corporate neutrality, dust-resistant). PolyRoute orange (#FF6B35 approximate) on chest and back logos. High-visibility white retroreflective striping on sleeves. Subtle grey-on-grey tonal variation in thermal layer visible at sleeve cuffs and hood interior.",
+    "closures": "Primary center zip with friction-fit storm flap overlay. Magnetic snaps at cuff closure for quick one-handed fastening while holding packages. Hood cinch uses friction-lock toggles. Chest scanner holster secured with reinforced hook-and-loop.",
+    "distinctive_features": [
+      "GPS-conductive thread network in left sleeve connecting to routing display interface",
+      "Chest-mounted scanner holster with reinforced retention stitching",
+      "BCI-compatible recessed collar port (upper left, minimalist design)",
+      "Geneware accommodation gussets at lower back and waist (tail-capable)",
+      "Adjustable hood side clearance for non-standard ear/head augmentations",
+      "Retroreflective striping runs full sleeve length for visibility in low-light districts",
+      "Route-arrow logo (PolyRoute branding) occupies 40% of chest—marks wearer as contractor"
+    ],
+    "tier_indicator": "Tier 1-2 contractor uniform (issued, not owned—rental-deducted from earnings, which signals precarity despite tier classification)",
+    "cultural_context": "PolyRoute delivery driver. Wearer is a gig-economy contractor navigating GLMZ's districts as logistics node. The jacket marks them as someone who knows the city's back routes, service corridors, and unofficial shortcuts better than corporate planners. Knowledge-bearer and visible urban worker simultaneously. Generates ambivalent respect and resentment—essential infrastructure worker treated as disposable labor.",
+    "condition_typical": "Broken-in. Visible creasing at sleeve articulation points from repetitive scanning motions. Light weathering on shoulders and hood from acid-rain exposure (faint etching patterns). Holster shows wear polish from package scanner contact. Zipper slider may show minor patina. Despite heavy use, the ripstop resists tears—these jackets survive the job."
+  },
+  "image_prompt": "Cyberpunk fashion photography: weathered delivery driver in grey PolyRoute Weathershell, captured mid-motion in a rain-slicked Great Lakes service alley at dusk. Orange route-arrow branding glows softly under industrial light. High-visibility white striping on sleeves catches neon reflection from nearby storefront. Driver's wrist-mounted routing display casts pale blue interface light. Heavy shadows, acid-rain atmosphere, wet pavement reflecting city glow. Geneware accommodation details visible at waist gussets. BCI collar port subtle but visible. Shot from three-quarter angle emphasizing sleeve GPS-thread network detail and functional posture. Moody, gritty, urban-worn aesthetic. Shallow depth of field on jacket details. --ar 2:3 --v 6"
 }

@@ -59,5 +59,28 @@
     "The Seam",
     "Veslemøy Achebe-Tursynov",
     "Zheng-Dao Bioelectric Fascia Conductor Mesh"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, utilitarian silhouette built for nocturnal cargo work. Dark base layers (navy, brown) anchored by high-vis orange safety vest create a deliberate visual contrast—visibility for safety, darkness for anonymity. The figure reads as someone who moves through loading docks and circuit-level corridors with practiced efficiency. No corporate insignia. All presence, no branding.",
+    "fit": "Relaxed through the torso for layering and movement; cargo trousers sit at natural waist with a slightly flared ankle to accommodate left-side digitigrade prosthetic. Henley fitted but not restrictive. Vest sits loose over layers. Boots secure at ankle. Gloves fingerless—practical over comfort.",
+    "primary_material": "Goretek heavyweight synthetic-wool blend cargo trousers; Sable Freight thermal henley (merino-synth mix); generic ballistic-weave safety vest; Dockmaster reinforced synth-leather boots; synth-wax treated rain hat; gray synth-leather gloves",
+    "texture": "Heavy, industrial. Cargo fabric has visible nap and slight pilling from use. Henley is soft but dense—thermal layer. Safety vest has a slight plastic quality from the reflective strips. Boots are scuffed and water-stained. Hat has a matte, almost weathered finish despite synth composition. Orange industrial thread stitching on left trouser seam is deliberately visible and unrefined.",
+    "color_scheme": "Charcoal navy base (trousers), warm dark brown (henley), matte black (hat, boots), high-vis orange (safety vest band, radio holster stripe, contrast stitching). Silver reflective strips at chest and hem. Accent of warm amber from magnetic work light.",
+    "closures": "Goretek cargo trousers: standard button fly + reinforced compression buckles on side-cargo pockets. Dockmaster boots: side-zip (fast removal in emergency). Vest: open front, no closure. Hat: none (friction fit). Gloves: none (fingerless design). Radio holster: magnetic snap.",
+    "distinctive_features": [
+      "Left trouser leg hand-restitched with orange industrial thread to accommodate digitigrade prosthetic—visible mod, functional statement",
+      "Six cargo pockets with dual compression buckles on side cargo pockets",
+      "Kangaroo chest pocket on henley sized for flex-screen manifest",
+      "High-vis safety vest with multiple D-ring attachment points (harness-ready)",
+      "Integrated radio holster on left chest strap",
+      "Magnetic clip-mount personal light (warm amber) on vest shoulder strap",
+      "Wide-brimmed rain hat with synth-wax finish and hi-vis orange crown band",
+      "Steel-toe Dockmaster boots with side-zip and visible wear scuffing",
+      "Absence of any corporate branding, name patch, or affiliation marker"
+    ],
+    "tier_indicator": "Tier 4 (working class). No luxury markers. All kit is functional, sourced independently from mid-range manufacturers. The self-modifications and visible repairs signal someone who maintains their own gear and cannot afford corporate-issued equipment. The care taken (obsessive maintenance, custom stitching) elevates this above pure salvage, but the age and mix of manufacturers places it firmly in the working independent freight sector.",
+    "cultural_context": "Independent dock hauler. Night shift. Circuit-level cargo corridors. Someone outside corporate structure, self-reliant, digitally augmented, and profoundly practical. The lack of branding is deliberate—anonymity is part of the work. Wearing this says: 'I move freight, I know the docks, I work nights, I fix my own kit, and I don't answer to a corpo.' Possibly sub-contract, possibly ungoverned, but definitely working.",
+    "condition_typical": "Worn but maintained. Trousers show fading in the thighs and creasing at the knees. The henley has a slightly faded brown tone from repeated washing. Boots are scuffed, salt-stained, the leather creased at the ankle. The vest still has bright orange and silver reflectivity but shows general grime and the fabric is slightly pilled at stress points. The hat's wax finish is uneven from weather exposure. The whole kit has the quality of something cared-for but actively used—not pristine, never pristine, but functional."
+  },
+  "image_prompt": "Fashion photography: a lean figure in a matte-black rain hat and high-vis orange safety vest over dark brown thermal henley and navy cargo trousers, standing in three-quarter profile on a rain-slicked dock or circuit-level loading platform. The left pant leg is visibly hand-restitched with orange thread where it flares for a digitigrade prosthetic. Steel-toe boots catch a warm amber glow from a magnetic work light clipped to the vest shoulder strap. The figure's gloved hands rest at sides. The background is industrial—corrugated metal shipping containers, overhead catwalks in shadow, acid-drizzle atmosphere. Moody cool-toned lighting with strategic warm amber highlights. No sunlight. Nightshift aesthetic. Dark urban cyberpunk dock environment. Shot from waist-up, tight crop on vest and prosthetic-side trouser seam detail. Textured, weathered, functional. --ar 2:3 --v 6"
 }

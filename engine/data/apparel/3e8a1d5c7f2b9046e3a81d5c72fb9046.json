@@ -39,5 +39,27 @@
   "parent_corponation": "",
   "related_entities": [
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sturdy, no-nonsense workwear silhouette with a straight leg and mid-rise waist. The trousers read as authentically worn-in despite their industrial origins—they carry the patina of multiple owners and repairs. On-body, they project durability and utilitarian competence, the kind of pants that have actually *done* work.",
+    "fit": "Relaxed through the hip and thigh with a straight leg that tapers minimally toward the ankle. Comfortable enough for eight-hour shifts but not fashionably loose—function dictates form. Sits naturally at the natural waist.",
+    "primary_material": "Heavy 14-16 oz woven canvas, original synthetic-cotton blend now stiffened further by age and labor. The weave is tight and visible, almost grainy in texture.",
+    "texture": "Rough, broken-in canvas with a slightly napped surface from repeated washing and wear. Knees show deliberate reinforcement stitching—visible cross-hatching or patches where original wear has been addressed with secondary canvas overlays. Some areas may show subtle fading or color variation from repair work.",
+    "color_scheme": "Deep olive-brown or dark chocolate brown, faded unevenly across the thighs and seat from sitting and work stress. Repair patches in slightly contrasting or mismatched canvas create intentional visual breaks. No dyes or artificial aging—this is authentic patina.",
+    "closures": "Brass or steel button fly, original hardware possibly worn or replaced once. Waist closure is functional button with a thick leather or synthetic patch behind it for durability. Cord loops at the waist instead of fabric belt loops—hand-sewn replacements in natural linen or hemp cord.",
+    "distinctive_features": [
+      "Double-stitched inseams in heavy thread, visible throughout",
+      "Reinforced knee panels with cross-hatched repair stitching",
+      "Secondary hand-sewn canvas patches over original knee reinforcement",
+      "Replaced belt loops in natural cord, clearly hand-tied or stitched",
+      "Faded wear marks on the thighs and seat showing authentic labor stress",
+      "Possible visible mending on inner thighs or crotch area with matching or mismatched thread",
+      "Hem that may be uneven or re-hemmed by a previous owner",
+      "Minimal branding—small woven Hartwell label, possibly faded or partially lost"
+    ],
+    "tier_indicator": "Tier 4-5 functional wear. These are working-class pants passed through the resale economy, now in the hands of someone who either can't afford new or appreciates the honest wear.",
+    "cultural_context": "Worn by construction crews, maintenance workers, salvage crews in the ungoverned zones, and sub-grade laborers. Also adopted by anti-corpo aesthetes and Tier 3 warehouse workers who value durability over status. Signals honest labor, practical self-reliance, and a disregard for fashion hierarchy.",
+    "condition_typical": "Heavily worn, patched, and re-patched. Stiff despite age. Visible repair history including hand-stitched mends, replaced hardware, and layered reinforcement. Still fully functional but unmistakably secondhand—five or more owners visible in the accumulated wear and care marks."
+  },
+  "image_prompt": "Hartwell Workline Canvas Trousers displayed on a weathered dark mannequin, studio lighting emphasizing heavy canvas texture and visible repair stitching on knees. Close-up detail of double-stitched inseams and mismatched fabric patches. Deep olive-brown canvas with authentic faded wear stress marks on thighs. Urban warehouse backdrop, industrial scaffolding, neon accent lighting casting shadows across the garment. Moody, honest workwear aesthetic. Cyberpunk 2226 utilitarian fashion. --ar 2:3 --v 6"
 }

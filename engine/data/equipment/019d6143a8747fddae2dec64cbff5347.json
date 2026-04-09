@@ -75,5 +75,23 @@
     "The Measure of You (BCI Drift Version)",
     "The Nearfield",
     "Vantablack-CNX"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A minimalist rectangular device with the austere aesthetic of high-end corporate security hardware. The form reads as deliberately unremarkable — a matte black slab designed for discretion rather than statement. When mounted, it sits flush against the inner forearm like a tactical bracelet; in a pocket, it vanishes entirely.",
+    "dimensions": "13cm × 6cm × 1.8cm; compact enough to conceal in a jacket pocket or wear under a loose sleeve, yet substantial enough to feel engineered rather than consumer-grade",
+    "weight_description": "120g — light enough for all-day wrist wear without fatigue, heavy enough to feel solid and purposeful in the hand",
+    "primary_material": "Brushed titanium-composite chassis with matte anodized aluminum faceplate",
+    "finish": "Non-reflective matte black with subtle radial brushing that catches light only at extreme angles; no gloss or chrome to betray position",
+    "color_scheme": "Matte charcoal-black primary; discrete gunmetal-gray accent trim around edges; minimal branding in dark silver",
+    "interface_elements": "Single recessed 3.5mm earpiece jack on right edge; four unmarked pressure-capacitive buttons arranged in a vertical column on left edge (visible only as subtle depressions); a single faint blue LED indicator beneath the faceplate that pulses once per hop event; no screen, no haptic feedback display — all interaction is tactile and audio-only",
+    "distinctive_features": [
+      "The hop-synchronization LED: a barely-visible blue pulse that blinks every 4.3 seconds (or 30 seconds on licensed models), revealing the device's core function to anyone who knows what they're looking at",
+      "Absence of branding on the front face — only a embossed Tessera Corponation logo on the rear, deliberate anonymity in design",
+      "A faint thermal gradient visible under infrared: the device continuously dissipates processing heat from real-time relay calculation",
+      "Mounting bracket with quick-release clasp designed for one-handed attach/detach, allowing rapid concealment or repositioning"
+    ],
+    "manufacturer_markings": "Tessera Corponation stylized Φ logo embossed on rear case (consumer versions only); unlicensed units bear no manufacturer marks, often showing microweld scars from field modification or black-market reproduction; FCC-equivalent GLMZ regulatory stamp (meaningless — enforcement is minimal) on bottom edge",
+    "condition_typical": "Worn units show micro-scratches and dulling of the matte finish from pocket carry; the earpiece jack accumulates lint; the mounting bracket develops slight play from repeated clicking; heavy users report the blue LED developing a faint cyan tint after 18 months of continuous use, suggesting capacitor aging"
+  },
+  "image_prompt": "Product photography of a matte black rectangular tactical comms device, approximately credit-card-sized but thicker, lying on a reflective steel workbench. Dramatic side-lighting from a single cold blue-white light source catches the brushed texture without revealing reflections. A thin black earpiece cable coils beside it. In soft focus background: a mesh router with visible node lights, suggesting urban signal architecture. The device's minuscule LED pulses faintly blue, frozen mid-blink. Cyberpunk aesthetic with industrial minimalism — no chrome, no neon, only cold precision. Shot from above at slight angle to emphasize flatness and discretion. --ar 3:2 --v 6"
 }

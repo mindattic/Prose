@@ -50,5 +50,25 @@
     "The Underlayer Collective",
     "Tshiamo Vukić-Arellano",
     "Vantablack Media Parasocial Carrier Mask"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively simple athletic underlayer with a sleek, form-fitting silhouette that conceals its tactical purpose. From the outside, it appears as a premium performance base layer — understated and professional enough to wear beneath corpo dress shirts without raising suspicion. The matte slate finish has a subtle luster that catches light without sheen.",
+    "fit": "Slim-cut and body-conforming, engineered to compress against the torso without visible bulk under outerwear. The fit is snug but not restrictive, designed to maximize protection panel coverage while maintaining freedom of movement. Minimal print-through when worn under fitted garments.",
+    "primary_material": "Para-aramid matrix with shear-thickening fluid suspension in inner panels; outer layer is breathable synth-blend athletic knit",
+    "texture": "Matte, almost velvety outer surface with barely perceptible hexagonal weave pattern visible only at collar and cuff edges. Inner panels have a slightly tacky, dampening quality when touched directly — the signature feel of active ballistic weave",
+    "color_scheme": "Matte slate gray throughout with black micro-ribbing at collar, cuffs, and hem. No visible branding on exterior surface",
+    "closures": "Seamless friction-fit construction; crew neck with reinforced binding; short sleeves with elastic cuff",
+    "distinctive_features": [
+      "Six overlapping ballistic weave panels across torso and upper back — invisible from outside",
+      "Shear-thickening fluid suspension hardens on impact, disperses kinetic energy",
+      "Gene-channel vents along lower back for tail-base and spinal-column augmentations",
+      "Flat-lock seams throughout to prevent snagging on internal tech or modifications",
+      "Moisture-wicking inner surface designed to interface with subcutaneous cooling implants",
+      "Pragma Systems discreet label at back neckline only"
+    ],
+    "tier_indicator": "Tier 3-4 functional — accessible to working-class security, medical responders, and field operatives, but represents genuine ballistic-grade protection rather than cosmetic styling",
+    "cultural_context": "Worn by corporate security personnel, field medics, independent fixers, and anyone who needs protection but can't advertise it. Signals 'I've thought about survival' without screaming 'tactical gear.' Popular in the GLMZ among those navigating volatile sectors.",
+    "condition_typical": "Pristine to lightly worn when new; develops subtle creasing at articulation points (shoulders, elbows, lower back) with regular use. The matte finish hides dust and minor staining well. Ballistic panels degrade slowly — noticeable loss of shear-thickening response after 18-24 months of regular defensive use"
+  },
+  "image_prompt": "Close-fitting athletic underlayer in matte slate gray displayed on a dark chrome mannequin with visible augmentation ports. Zoom detail shot of hexagonal weave texture at collar and cuff edges. Moody cyberpunk studio lighting with cold LED glow highlighting the barely-visible inner panel seams through the translucent weave. Dark industrial background with subtle corpo branding elements out of focus. Mannequin positioned to show lower-back gene-channel vents. High contrast, desaturated color grading with slate and black tones dominant. --ar 2:3 --v 6"
 }

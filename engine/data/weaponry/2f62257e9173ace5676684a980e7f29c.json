@@ -45,5 +45,39 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Breck Tannen",
+    "CHROMEWORKS Sable Precision Surgical Arm",
+    "Fanta Popov-Adjei",
+    "Focadrin",
+    "GLMZ",
+    "MERIDIAN",
+    "Nika Svensson-Kone",
+    "Parliament",
+    "The Bazaar",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modernist precision carbine with an almost surgical aesthetic. The MPC-9 Scalpel presents a minimalist silhouette—no unnecessary protrusions, no tactical mall-ninja ornamentation. The compact 400mm barrel gives it a balanced, almost pistol-like front end despite its rifle length. The profile suggests engineered efficiency rather than aggressive styling.",
+    "dimensions": "Overall length: 825mm (stock extended), 675mm (stock collapsed). Barrel length: 400mm. Height over rail: 95mm. Width: 65mm at receiver.",
+    "weight_description": "Notably light for a precision platform at 3.6kg—it handles with the nimbleness of a carbine but feels purposeful and solid. Balanced slightly forward of the receiver, encouraging one-handed weapon manipulation in confined spaces.",
+    "primary_material": "Aerospace-grade aluminum receiver with carbon-composite furniture. Barrel is hard-chromed steel with fluted exterior for thermal management.",
+    "finish": "Matte charcoal gray with brushed titanium accents around the optics rail and magazine well. The receiver displays a subtle satin finish that resists glare. Components show precision machining marks—visible tool marks that read as intentional rather than sloppy.",
+    "color_scheme": "Charcoal gray primary with brushed titanium and gunmetal accents. Minimal color variation; the weapon reads as a grayscale object.",
+    "grip_texture": "Rubberized pistol grip with subtle micro-texturing for secure purchase even in wet conditions. Fore-end features aggressive stippling that bites into gloved fingers.",
+    "distinctive_features": [
+      "Integrated BCI interface plate behind the optics rail—subtle, flush-mounted, barely visible unless you know to look for it",
+      "Fluted barrel visible in the handguard cutouts, dissipating heat along its length",
+      "Open-architecture optics rail with tool-less quick-detach points machined into the receiver",
+      "Compact muzzle brake with three asymmetrical ports—optimized for recoil management without excessive blast",
+      "Recessed magazine well with beveled edges for one-handed mag changes",
+      "No dust cover—the design philosophy rejects unnecessary moving parts",
+      "Minimalist charging handle integrated flush with the upper receiver",
+      "Ambidextrous fire selector controls—subtle levers rather than extended switches"
+    ],
+    "manufacturer_markings": "Meridian Munitions logo (angular M in a circle) etched into the left side of the receiver. 'MPC-9 SCALPEL' stenciled in small, clean serif font directly below. Serial plate mounted on the right side of the lower receiver with raised alphanumerics. Caliber and ballistic computer firmware version printed on the dust cover of the magazine well.",
+    "condition_typical": "Field-worn but meticulously maintained. Light scratches on the aluminum from urban operations—tool marks and scuffs from tactical entries rather than battle damage. Optics rail shows micro-wear from repeated scope mounting/unmounting. The weapon suggests professional use by operators who clean and maintain their equipment scrupulously."
+  },
+  "image_prompt": "Product photography of the Meridian Munitions MPC-9 Scalpel DMR in a professional armorer's workspace. The compact carbine-length precision rifle is positioned at a three-quarter angle on a dark gunmetal surface, with a gloved operative hand (augmented with subtle chrome finger-joints) gripping the fore-end. Dramatic side-lighting emphasizes the fluted barrel profile and the machined precision of the receiver. The brushed titanium optics rail catches highlights. The basic 1-8x scope mounted on top shows crisp glass reflections. Cyberpunk aesthetic: cool blue-white accent lighting from the BCI interface plate, subtle holographic reticle glow visible in the scope. Matte charcoal finish contrasts with the metallic accents. Background is a blurred tactical equipment rack with ammunition and ballistic computers. The image conveys precision, compactness, and professional engineering without aggressive styling. --ar 3:2 --v 6"
 }

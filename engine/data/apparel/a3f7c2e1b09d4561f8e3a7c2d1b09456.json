@@ -41,5 +41,26 @@
     "The Shelf",
     "The Undertow",
     "Zheng-Dao Bioelectric Chemoreceptive Dermal Patch"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian silhouette dominated by visible patchwork across the lower body. The pants read as functional salvage—multiple fabric types create an intentional chaos aesthetic. Worn by Tier 5 workers who prioritize durability over aesthetics.",
+    "fit": "Relaxed through hip and thigh with a straight leg. Designed for movement and layering of protective gear. Not fitted; allows for cargo and the constant repositioning of worn patches.",
+    "primary_material": "Base layer appears to be standard work-grade cotton twill, now mostly obscured by overlays of repaired synth-canvas, denim scraps, and heat-fused mylar strips.",
+    "texture": "Heavily textured and tactile—rough twill base broken by smoother denim patches, crinkled mylar sections that catch light, and visible stitch lines from hand or crude machine repairs. Areas between patches show fraying and worn nap.",
+    "color_scheme": "Faded indigo base with navy and medium blue denim patches. Translucent amber and silver mylar strips add reflective accents. The overall palette is muted and weathered, with no intentional color coordination.",
+    "closures": "Worn brass button fly, likely original. Heavy-gauge zipper shows corrosion but functions. No belt loops—cargo belt worn separately.",
+    "distinctive_features": [
+      "Six functional cargo pockets—thigh, hip, and side panels",
+      "Prominent patching at knees (double-layered synth-canvas), seat (mylar-reinforced), and inner thighs (mixed denim)",
+      "Visible mending lines and irregular stitching patterns",
+      "Heat-fused mylar reflects ambient light, marking repair zones",
+      "Frayed cuff edges and worn hem from constant foot drag",
+      "Small burn marks and chemical stains suggesting shelf-work exposure",
+      "Original garment label removed or worn away"
+    ],
+    "tier_indicator": "Tier 5 sub-grade. No branding, purely functional. The patchwork itself signals someone who cannot afford replacement and must sustain gear through improvisation.",
+    "cultural_context": "Worn by autonomous machine handlers, shelf workers, or independent salvagers in ungoverned sectors. Signals practical competence, resourcefulness, and comfort with hand-maintenance. No corpo affiliation. This is clothing that has earned its scars.",
+    "condition_typical": "Always patched and weathered. Condition improves slightly mid-shift when new patches are applied. Never pristine. The wearer considers this optimal—the more patches, the more valuable the garment."
+  },
+  "image_prompt": "Close-up fashion photograph of worn cargo pants on a lean, augmented model standing against a rain-slicked concrete wall in the GLMZ industrial sector. Harsh neon blue and amber streetlight catches the reflective mylar patches across the thighs and knees. Visible stitch lines and frayed edges show years of field repair. Dark, moody cyberpunk aesthetic. Shallow depth of field. Model wears minimal jewelry—data-port visible on wrist. Gritty, unflinching realism. --ar 2:3 --v 6"
 }

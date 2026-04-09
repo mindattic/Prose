@@ -51,5 +51,36 @@
     "rights",
     "lethal"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "CortexDynamics Apex Drive Performance Neural BCI",
+    "GLMZ",
+    "Irontide Tidal Energy",
+    "Lazarus Pharmaceuticals",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "TESSERA PG-2 'Signature'"
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively clinical instrument resembling a medical auto-injector or pharmaceutical delivery pen. The spike is nearly invisible in its thinness—a barely-there needle profile that betrays nothing of its lethal internal architecture. The overall silhouette is elongated and slender, designed to vanish in a closed fist or medical kit.",
+    "dimensions": "Total length: 36cm (22cm spike + 14cm handle). Spike diameter: 3–4mm. Handle width: 2.5cm. Compact enough to palm or conceal in a medical pouch.",
+    "weight_description": "Deceptively light in hand—290g feels almost insubstantial, like holding a fountain pen filled with mercury. The weight distribution is balanced slightly toward the handle, giving it a clinician's precision grip rather than a weapon's authority.",
+    "primary_material": "Tungsten-alloy electrode core sheathed in non-conductive ceramic composite. The handle is polymer-based with integrated capacitor bank—industrial-grade thermoplastic reinforced with carbon strands.",
+    "finish": "Matte ceramic on the spike with a barely-perceptible gradient from opaque ivory to translucent at the needle point. The handle is satin-finish medical white with faint hairline scratches from field use. The capacitor housing shows subtle thermal discoloration from repeated charging cycles.",
+    "color_scheme": "Clinical white and cool gray—the aesthetic of pharmaceutical precision. The spike tip fades to near-translucence. Faint traces of oxidized copper visible at the handle/spike junction where the electrode wiring meets the sheath.",
+    "grip_texture": "Smooth medical-grade polymer with a subtle knurled section in the mid-handle for tactile indexing without visual disruption. The surface has a slightly tacky finish to prevent slip—mimics surgical instrument design.",
+    "distinctive_features": [
+      "Needle-thin spike that appears almost fragile at casual inspection",
+      "Minimal electrode contacts recessed into the handle—barely visible grooves",
+      "Faint LED indicator (recessed flush with the polymer) glows soft red when capacitor bank is charged; invisible from certain angles",
+      "Deliberate medicinal branding: subtle LAZARUS PHARMA glyph etched near the base in microscopic text",
+      "Thermal stress lines radiating from the capacitor chamber—evidence of rapid charging cycles",
+      "Slight ceramic texture variation along the spike shaft from manufacturing, resembling natural material variation",
+      "No guard, no crosspiece—pure hypodermic form factor"
+    ],
+    "manufacturer_markings": "LAZARUS PHARMACEUTICALS logo (stylized helix) etched in 2mm text on the handle's lower third, positioned to be read when held in clinical delivery position. Serial number stamped in microdots on the capacitor housing—visible only under magnification. No barcode or QR code; completely analog and non-scannable.",
+    "condition_typical": "Field-worn but meticulously maintained. The ceramic shows microscopic stress fractures from impact during extraction post-strike, but the handle is kept clean—operators understand that residue can leave evidence. Microscopic blood traces may be present on the spike despite cleaning; ceramic is porous enough to retain biological material in deep micro-fractures."
+  },
+  "image_prompt": "Product photography of the Subdermal Current Lance SCL-1, displayed horizontally on a dark gunmetal surface. The weapon lies at a slight angle, its nearly-invisible ceramic spike catching dramatic side-lighting that reveals its translucent needle profile—barely-there surgical precision. The polymer handle glows faintly under cool LED work-lighting, revealing subtle thermal stress marks and the recessed charge indicator. A chrome-gloved finger (augmented with visible subcutaneous circuitry lines visible through translucent palm skin) hovers near the handle for scale. Shallow depth of field keeps the spike needle-sharp in focus while background blurs. The aesthetic is clinical dystopia—pharmaceutical precision meets lethal intent. Cinematic side-rim lighting throws the spike's thinness into stark relief, emphasizing its hypodermic lethality. Medical-device color palette: clinical whites, cool grays, faint copper oxidation visible at electrode junction. No context clues—pure weapon isolation. Cyberpunk 2226 aesthetic: functionality over form, designed to pass as medical equipment. --ar 3:2 --v 6"
 }

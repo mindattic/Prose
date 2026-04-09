@@ -44,5 +44,36 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Arcturus Defense Solutions Neural PDW ANPD-1 'Impulse'",
+    "Concrete",
+    "Dawnlight Industries LuxDefend LD-1 'Clutch'",
+    "Ebele Medina-Quaye",
+    "Nika Svensson-Kone",
+    "TERMINUS",
+    "TESSERA TC-3 'Crucible'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist monument to kinetic violence. The AMDMR-5 presents as a squared-off, deliberately austere platform — part rifle, part portable artillery. Its profile is dominated by a massive receiver block and an oversized barrel shroud that houses the hydraulic recoil system. The gun reads as purpose-built and uncompromising, with no aesthetic concessions to ergonomics or fashion.",
+    "dimensions": "Overall length 127cm, barrel length 71cm, receiver width 8.5cm at widest point. Magazine well sits 12cm forward of trigger group.",
+    "weight_description": "Hefty and unforgiving. 9.0kg unloaded demands respect in the hand — this is a weapon that requires commitment to shoulder, not a tool to be casually manipulated. The weight distribution is rear-heavy due to the hydraulic buffer assembly.",
+    "primary_material": "Receiver and barrel shroud: forged steel with carbon-composite reinforcement panels. Barrel: chrome-lined heavy-profile steel. Stock and furniture: carbon-composite polymer with internal tubular steel reinforcement.",
+    "finish": "Matte black Cerakote on steel surfaces, weathered to a dull gunmetal gray at contact points. Carbon-composite panels show a subtle crosshatch texture beneath the finish. Magazine well shows polished wear from repeated loading.",
+    "color_scheme": "Primary: deep matte black with gunmetal gray wear patterns. Accents: brushed steel on the loading plate and bolt carrier; burnt orange safety lever; pale cyan BCI interface panels recessed into the left receiver rail.",
+    "grip_texture": "Textured polymer grip wrapped in worn black cordura tape, providing purchase even with armored gloves. Oversized charging handle is brushed steel wrapped in ribbed rubber. Magazine release is knurled stainless steel.",
+    "distinctive_features": [
+      "Massive hydraulic cylinder visible beneath the barrel shroud, marked with pressure relief ports",
+      "Long-travel recoil buffer housing with graduated witness marks for wear assessment",
+      "BCI interface pod mounted on left receiver rail — pale cyan LED indicators beneath reinforced polymer cover",
+      "Anti-shine ribbed barrel shroud with integrated heat vents",
+      "Oversized muzzle brake with three expansion chambers, designed to direct muzzle blast downward",
+      "Magazine catch shows deep wear grooves from field use",
+      "Picatinny rails on top and sides, scratched and marked by mounting hardware",
+      "Factory serial plate on receiver shows Lacuna Countermeasures Division logo (stylized delta symbol in a circle)"
+    ],
+    "manufacturer_markings": "Lacuna Countermeasures Division logo (delta-in-circle) stamped on left side of receiver. Serial plate below logo shows manufacturing date code. 'VERDICT' etched into charging handle in sans-serif capital letters. Caliber marking '12.7MM CASELESS' stamped on barrel shroud in white inlaid text.",
+    "condition_typical": "Well-maintained but thoroughly used. Finish shows consistent wear at contact points — thumb shelf, safety lever, magazine well. The hydraulic buffer shows faint scoring from extended firing cycles. BCI interface covers show minor scratches. Overall: a weapon that sees regular use by someone who respects its maintenance requirements."
+  },
+  "image_prompt": "Close-up product photograph of the Crucible Industries AMDMR-5 'Verdict' anti-materiel DMR, positioned at three-quarter angle on a dark industrial metal surface. The rifle is held partially by a gloved hand (reinforced tactical glove, left side) gripping the cordura-wrapped pistol grip. Dramatic side-lighting from the left reveals the matte black Cerakote finish and highlights the massive hydraulic recoil buffer housing running beneath the barrel shroud. The cyan BCI interface pods on the receiver glow subtly. Foreground shows sharp detail on the ribbed barrel shroud and oversized muzzle brake; background is dark, slightly out-of-focus industrial setting with hint of neon city light reflection. The image conveys industrial brutality and precision engineering. Cyberpunk aesthetic dominated by blacks, grays, and cold cyan accents. Shot in 3:2 aspect ratio, high contrast, cinematic. --ar 3:2 --v 6"
 }

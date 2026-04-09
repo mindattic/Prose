@@ -44,5 +44,26 @@
     "Dzemal Acholonu-Patagiri",
     "Obafemi Szczypiński-Lautoa",
     "The Underlayer Collective"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A visibly handmade thermal base layer that reads as utilitarian survival wear. The silhouette is loose and slightly shapeless, prioritizing function over form. Patchwork sections in mismatched grays, rusted oranges, and industrial yellows create an unplanned, almost abstract aesthetic. The overall impression is of something cobbled together from necessity rather than design — authentic sub-grade fabrication.",
+    "fit": "Relaxed and oversized through the torso and shoulders, with a slightly tapered waist to prevent bunching under outer layers. Sleeves are long and loose-fitting, ending in bound cuffs of mismatched cord and ribbon.",
+    "primary_material": "Salvaged insulation batting, reclaimed synth-fleece strips, and thermal foil remnants stitched together. Binding edges use whatever scavenged ribbon or paracord was available.",
+    "texture": "Deliberately uneven and lumpy, with visible hand-stitching throughout. Double and triple-stitched seams create raised ridges of waxed thread. The surface has a quilted, padded quality with intentional bulk to trap heat. Edges are deliberately worn and fraying, bound with rough utility cord.",
+    "color_scheme": "Primary palette of industrial gray, rust orange, and faded yellow. Sections are arranged in irregular patches with no aesthetic pattern — purely functional placement. Waxed thread seams read as darker, weathered lines across the fabric.",
+    "closures": "None — pulls on over the head. No zippers or fasteners; the garment relies on friction fit and layering.",
+    "distinctive_features": [
+      "Visible hand-stitching with waxed thread throughout",
+      "Multiple re-stitched sections showing repair history",
+      "Uneven, lumpy insulation padding visible through thin spots",
+      "Mismatched binding on sleeve cuffs and neckline using scavenged rope and ribbon",
+      "No manufacturer label — completely unmarked",
+      "Thermal foil reflective patches visible in places where batting has worn thin",
+      "Frayed edges and distressed wear suggesting extended use in harsh conditions"
+    ],
+    "tier_indicator": "Tier 5 — Sub-grade salvage wear. No manufacturing overhead, no brand recognition, purely self-crafted survival gear.",
+    "cultural_context": "Marks the wearer as Shelf-dweller or ungoverned zone resident. The aesthetic communicates acceptance of hardship and self-sufficiency through hand-labor. Wearing this signals either poverty or deliberate rejection of corpo supply chains. Associated with acid-rain communities, cold-storage zones, and off-grid survival networks.",
+    "condition_typical": "Perpetually worn-in and patched. Shows signs of repeated thermal stress and acid-rain exposure. Some seams are visibly re-worked. Thermal foil is peeling or absent in high-friction areas. The garment is never pristine — it's a living, evolving piece of repair work."
+  },
+  "image_prompt": "A weathered figure wearing a visibly hand-stitched thermal underlayer in mismatched gray, rust, and industrial yellow patches. The garment is lumpy with salvaged insulation, covered in double and triple hand-stitched seams with waxed thread. Close-up detail of frayed binding and re-stitched sections. Dark urban backdrop with acid-rain ambiance, moody cyan and amber neon casting harsh shadows. The model's posture is functional, utilitarian. Shot on dark, worn mannequin or real figure in dimly-lit Shelf district setting. Textured, gritty aesthetic highlighting poverty and resilience. --ar 2:3 --v 6"
 }

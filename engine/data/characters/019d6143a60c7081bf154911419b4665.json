@@ -267,5 +267,13 @@
     "posture_movement": "Moves with quiet efficiency—the particular grace of someone accustomed to working in very small spaces without wasted motion. Leans forward when listening, creating an impression of genuine focus. Hands are frequently in motion (counting pills, gesturing while explaining medication interactions, fidgeting with compounding tools). Cat ears swivel and flatten with emotion he doesn't always recognize in himself: skepticism, concern, pleasure, embarrassment. His posture is open but his movements are self-contained.",
     "clothing_style": "Tier 4 practical with careful intentionality. White or pale grey lab coat (clean but with faint stains) worn over simple, well-fitted clothes—typically dark cargo pants with deep pockets and plain long-sleeve shirts in muted colors (black, charcoal, slate blue). Wears durable, quiet shoes suitable for standing 12+ hours. No jewelry or corpo insignia. Occasionally wears an old digital watch his mother gave him. Overall impression: someone who spent money on education and is now investing in reliability rather than status."
   },
-  "image_prompt": "Portrait of a young South Asian-West African man, age 29, slight build with fine features and warm brown skin, close-cropped black hair with fading geometric dye patterns visible above his ear. Striking genetic tawny cat ears with visible fur, expressive and alert. Wearing a pale grey lab coat over dark practical clothing, standing in a cramped pharmacy filled with compounding equipment and medication vials in soft warm lighting. Tired but attentive expression, hands positioned as if holding medication bottles. Cyberpunk pharmacist aesthetic, intimate and realistic rather than stylized. Shallow depth of field. High quality, grounded character portrait. --ar 2:3 --v 6"
+  "image_prompt": "Portrait of a young South Asian-West African man, age 29, slight build with fine features and warm brown skin, close-cropped black hair with fading geometric dye patterns visible above his ear. Striking genetic tawny cat ears with visible fur, expressive and alert. Wearing a pale grey lab coat over dark practical clothing, standing in a cramped pharmacy filled with compounding equipment and medication vials in soft warm lighting. Tired but attentive expression, hands positioned as if holding medication bottles. Cyberpunk pharmacist aesthetic, intimate and realistic rather than stylized. Shallow depth of field. High quality, grounded character portrait. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 41.3,
+    "Northern European": 26.3,
+    "Southeast Asian": 15.1,
+    "East Asian": 7.3,
+    "South Asian": 5.5,
+    "Pacific Islander": 4.5
+  }
 }

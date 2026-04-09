@@ -76,5 +76,24 @@
     "The Threshold",
     "Tomasz Wren",
     "Yelena Okafor-Chen"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, ergonomic handheld probe resembling a high-end diagnostic device crossed with a medical scanning tool. The main body tapers from a slightly bulbous grip section to a narrow neck that terminates in a flexible, semi-translucent sensor pad. The overall silhouette suggests precision instrumentation — industrial but refined.",
+    "dimensions": "180mm length × 60mm width at grip; sensor pad extends ~40mm when deployed. Handheld, fits comfortably in one hand for extended contact work.",
+    "weight_description": "290g — light enough for one-handed operation during calibration sweeps, but substantial enough to feel professionally engineered. No carrying strap required; designed for pocket or tech-satchel storage.",
+    "primary_material": "Aerospace-grade polymer composite body (impact-resistant, thermally stable); sensor pad is laminated piezoelectric film layered with elastomeric damping material in translucent amber-tinted housing.",
+    "finish": "Matte gunmetal-gray anodized aluminum accents with soft-touch rubberized grip zones. The sensor pad has a subtle iridescent sheen where piezo layers catch light, hinting at sophisticated material science.",
+    "color_scheme": "Gunmetal gray primary body; warm amber/honey translucent sensor window; discrete charcoal-black trim and grip bands. Single accent line in corporate teal (Tessera branding) runs along the neck.",
+    "interface_elements": "Minimal: a single recessed pressure-touch activation button on the grip; small OLED status indicator (blue standby, green active, red calibration); micro-USB charging port under a sealed cap; 3.5mm bone-conduction jack recessed into the tail. No external screen — all feedback is haptic or audio.",
+    "distinctive_features": [
+      "Flexible sensor pad that conforms to uneven surfaces, edged with faint micro-ridges for surface grip",
+      "Subtle pulsing of the teal accent line during calibration mode (indicates micro-vibration sweep in progress)",
+      "Translucent amber window revealing layered internal structure — viewers can see the laminated material stack",
+      "Ergonomic finger detents molded into grip for natural probe positioning",
+      "Barely-visible laser-etched serial number on the tail end"
+    ],
+    "manufacturer_markings": "Vasquez Biocompatible Materials logo (angular, geometric) embossed on grip; small 'TESSERA LASP-4' text along the teal accent stripe; regulatory compliance marks and frequency certifications micro-stamped near the charging port.",
+    "condition_typical": "Usually shows light wear on the sensor pad from contact with rough surfaces; dust accumulation around the neck junction if field-used. High-end examples have protective silicone sleeves. Some field operators add grip tape or cable wraps for clandestine work. Battery indicator often visible during extended surveillance operations."
+  },
+  "image_prompt": "Tessera Laminated Acoustic Stratum Probe lying diagonally across a dark carbon-fiber workbench, dramatic single-source overhead lighting casting sharp shadows. The translucent amber sensor pad glows warmly under the light, revealing internal piezo layer structure. A bone-conduction earpiece coils nearby. Subtle neon-blue accent lighting reflected on the gunmetal body. Close-up detail showing the micro-ridged sensor surface and the teal branding stripe. Cyberpunk surveillance equipment aesthetic, slightly clinical. Shot against a blurred background of city lights through a high-rise window. Telephoto depth of field. --ar 3:2 --v 6"
 }

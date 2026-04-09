@@ -42,5 +42,38 @@
     "augmentation",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "GLMZ",
+    "Neuromorphic Pressure Cestus",
+    "Nika Svensson-Kone",
+    "Nodar Kuznetsov-Adu",
+    "Street Custom 'Tombstone' Concrete Block Launcher",
+    "TESSERA TC-3 'Crucible'",
+    "The Human Baseline Alliance",
+    "The Riveters' Round"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist sniper rifle with an aggressive, utilitarian stance. The Tombstone presents itself as an industrial tool rather than a precision instrument — all hard angles, pronounced mechanical elements, and uncompromising geometry. Its heavy profile suggests devastating capability over elegance.",
+    "dimensions": "Length: 127cm | Barrel length: 71cm | Width (at stock): 8.5cm | Height (with scope): 22cm",
+    "weight_description": "Hefty and substantial — 14.2kg feels present in the shoulder, demanding respect and proper technique. The weight distribution leans forward, anchoring the shooter into a solid firing position.",
+    "primary_material": "Tungsten-steel composite frame with reinforced polymer furniture. The receiver is machined from solid tungsten-steel billet, while the stock and fore-end utilize military-grade carbon-reinforced polymer.",
+    "finish": "Matte charcoal-black with worn, brushed steel showing through high-friction points. Deliberately austere — no shine, minimal reflection. Scattered micro-abrasions and stress marks suggest field use.",
+    "color_scheme": "Matte black primary with dark gunmetal steel accents. Minimal color variation — pure industrial aesthetic with no decorative elements.",
+    "grip_texture": "Deeply textured, hard-molded polymer grip with pronounced finger grooves. The material is gritty, slightly adhesive in feel, designed for retention even in wet conditions or gloved hands.",
+    "distinctive_features": [
+      "Prominent EMP charge indicator window on the magazine housing — a small crystalline component that glows faint amber when armed",
+      "Heavy muzzle brake with distinctive trapezoidal vents for EMP payload dispersal",
+      "Integrated mounting rail system running full length of top receiver with Picatinny sections",
+      "Mechanical safety lever with tactile detents at the rear of the receiver",
+      "Charging handle positioned high and rearward, oversized for gloved operation",
+      "Magazine well with exposed witness marks indicating round count",
+      "Faint electromagnetic shielding patterns etched into the receiver (functional, not decorative)",
+      "Serial plate mounted on the left side with Crucible Industries corporate hex logo"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES stamp on the receiver in sans-serif industrial font. Hexagonal Crucible logo below. 'CR-40 TOMBSTONE' designation etched into the barrel shroud. Military licensing marks stamped near the magazine well.",
+    "condition_typical": "Well-maintained field weapon — clean mechanicals, properly serviced, but showing evidence of regular deployment. The finish bears the patina of professional military use without being neglected."
+  },
+  "image_prompt": "Product photography of the Crucible Industries Sentinel CR-40 'Tombstone' sniper rifle on a dark matte gunmetal surface, angled 45 degrees to showcase the receiver and scope mounting. Heavy dramatic side-lighting casts deep shadows across the muzzle brake and fore-end, emphasizing the brutalist geometry. Close detail of the EMP charge indicator window glowing faint amber. The weapon's matte black finish contrasts sharply against cool blue-tinted ambient lighting. Cyberpunk military aesthetic, industrial precision engineering, anti-augmentation weaponry. Tungsten-steel and polymer materials catching directional light. --ar 3:2 --v 6"
 }

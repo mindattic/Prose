@@ -319,5 +319,11 @@
     "posture_movement": "Moves with economical efficiency — no wasted motion. Stands with weight distributed to ball of feet, ready to pivot or run. Hands rest in lap or at sides, never crossed over torso. Default expression: guarded neutrality. Eyes constantly scanning environment. Speaks quietly, listens more than talks.",
     "clothing_style": "Tier 3-4 utilitarian. Unmarked dark synthfabric cargo pants with multiple pockets for tools and supplies. Reinforced work boots with chemical-resistant soles, scuffed and stained. Sleeveless or short-sleeved tops that expose the jack — a deliberate choice, not accidental. Thin leather gloves (left hand missing two fingers on the glove — modification to accommodate regular neural jack insertion). No corporate branding, no status indicators. Clothing is expendable and replaceable; color palette is grays, blacks, deep greens."
   },
-  "image_prompt": "A 32-year-old nonbinary Japanese-West African person with wiry athletic build and sharp angular features, dark brown eyes, black hair with silver threading pulled in tight braid. Visible chrome neural interface jack at base of skull with scarring. Chemical burn marks on knuckles. Wearing dark utilitarian cargo pants and sleeveless synthfabric top, reinforced boots. Standing in moody industrial geothermal district with steam vents and chemical haze, neon signs reflecting off wet concrete. Cool blue and green lighting mixed with warm amber industrial glow. Posture alert and economical, expression carefully neutral. Cyberpunk noir, gritty and worn, highly detailed, professional lighting, cinematic composition --ar 2:3 --v 6"
+  "image_prompt": "A 32-year-old nonbinary Japanese-West African person with wiry athletic build and sharp angular features, dark brown eyes, black hair with silver threading pulled in tight braid. Visible chrome neural interface jack at base of skull with scarring. Chemical burn marks on knuckles. Wearing dark utilitarian cargo pants and sleeveless synthfabric top, reinforced boots. Standing in moody industrial geothermal district with steam vents and chemical haze, neon signs reflecting off wet concrete. Cool blue and green lighting mixed with warm amber industrial glow. Posture alert and economical, expression carefully neutral. Cyberpunk noir, gritty and worn, highly detailed, professional lighting, cinematic composition --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 87.8,
+    "Sub-Saharan African": 5.8,
+    "Hispanic/Latin American": 5.2,
+    "Northern European": 1.2
+  }
 }

@@ -41,5 +41,35 @@
     "classified",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Dragan Asiedu-Kovalchuk",
+    "NeuralPath Horizon Standard Neural Mesh",
+    "Nika Svensson-Kone",
+    "Stormvein Dynamics PelagicStride DP-3 Aquatic Leg",
+    "The Riveters' Round"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purposeful precision instrument with an almost surgical aesthetic. The Dawnbreak reads as a marriage of cutting-edge ballistics and minimalist industrial design — a rifle that looks engineered to perfection rather than cobbled together. The profile is unusually compact for a sniper platform, with a tapered receiver that narrows toward an elegant muzzle brake. No bullpup awkwardness, no excessive rail systems; every curve and angle serves function.",
+    "dimensions": "Total length: 112 cm | Barrel length: 68 cm | Width at receiver: 4.2 cm | Height with integrated scope mount: 8.9 cm",
+    "weight_description": "Surprisingly light for a railgun platform at 8.4 kg — it feels balanced and purposeful in the shoulder, neither feather-light nor burdensome. The weight distribution is anterior-heavy, settling naturally into a sniper's stance. Supercapacitor cells in the stock provide counterbalance that makes sustained aim feel effortless.",
+    "primary_material": "Aerospace-grade carbon composite frame with tungsten-reinforced receiver sections. Barrel is electromagnetic coil matrix encased in layered steel. Heat dissipation fins are integrated titanium alloy.",
+    "finish": "Deep matte gunmetal with subtle iridescent sheen on barrel sections where electromagnetic coils are visible beneath translucent thermal panels. Receiver features brushed charcoal composite. All surfaces treated with anti-reflective mil-spec coating. Minimal wear-through design suggests deliberate aesthetic choice rather than durability compromise.",
+    "color_scheme": "Primary: gunmetal gray and charcoal composite | Accents: arctic blue LED indicators along the receiver and scope mount, faint golden highlights where tungsten penetrator rounds nest in the sealed magazine.",
+    "grip_texture": "Textured polymer grip with micro-ridged surface for bare-hand contact. Wraparound is wrapped in thin composite material that feels cool and slightly grippy — designed for precision rather than comfort. Trigger guard is oversized for gloved operation, textured steel.",
+    "distinctive_features": [
+      "Integrated atmospheric compensation sensor array visible as small optical ports along the left receiver side — three discrete windows with faint blue tints",
+      "Sealed 6-round magazine with translucent polymer viewing port showing tungsten penetrator round tips — faintly luminescent under certain angles",
+      "Supercapacitor indicator lights (5-segment LED display) embedded in the stock",
+      "Muzzle brake with asymmetric design — appears to have electromagnetic dampening vanes rather than traditional flash suppression",
+      "Scope mounting system is integrated directly into the receiver via recessed Φ-standard interface — no riser rails",
+      "Subtle engraving along the barrel reads 'ARCTURUS | HORIZON ADS-18 | DAWNBREAK' in military-grade sans serif",
+      "Heat dissipation panels on barrel emit faint warmth signature after firing",
+      "Ejection port is minimal and sealed — no visible round extraction mechanism, suggesting integrated magazine system"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (stylized 'A' overlaying a north star) embossed on the receiver just above the grip. Serial number plate is a small composite tab inset flush with the stock. Classification marking — 'RESTRICTED | MIL-SPEC ONLY' — stamped in red ink on the left receiver wall. Arcturus corporate watermark is etched subtly along the handguard.",
+    "condition_typical": "Field specimens typically appear pristine, almost surgical in their cleanliness. The sealed magazine system and self-destructing ammunition design means operators treat the weapon as an expendable precision tool rather than a cherished heirloom. Scuff marks are rare; when present, they indicate actual field deployment. Supercapacitor indicator lights may dim slightly with age, but the weapon is usually cycled out before degradation occurs."
+  },
+  "image_prompt": "Product photography of the Arcturus Horizon ADS-18 'Dawnbreak' sniper railgun, displayed on a dark carbon-fiber surface under dramatic side-lighting that emphasizes the gunmetal finish and iridescent barrel sections. The weapon is angled 45 degrees to show both profile and detail of the integrated atmospheric compensation sensor ports along the receiver. Gloved tactical hand gripping the textured polymer grip, showing scale. LED indicator lights on the supercapacitor battery glow arctic blue in the shadowed areas. Tungsten penetrator rounds visible through the sealed magazine's translucent viewing port, faintly luminescent. Minimalist, high-tech aesthetic with emphasis on precision engineering and aerospace materials. Cyberpunk GLMZ setting, 2226. Professional catalog photography. --ar 3:2 --v 6"
 }

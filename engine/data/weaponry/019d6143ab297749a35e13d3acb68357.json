@@ -51,5 +51,32 @@
     "market",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "GLMZ",
+    "Kadiatou Kobayashi-Appiah-Kubi",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular hoverdrone with a pronounced central pressure chamber. The silhouette reads as predatory but clinical—all sharp edges and purposeful asymmetry. The ferrofluid reservoir forms a visible bulge along the drone's underbelly, giving it a weighted, unbalanced appearance despite stable flight mechanics.",
+    "dimensions": "19cm length × 16cm width × 10cm height. Spray nozzle extends 2–3cm forward from the chassis nose. Rotor span approximately 24cm when arms fully extended.",
+    "weight_description": "Dense and deliberate in hand—1.4kg feels heavier than its size suggests, due to the pressurized reservoir and dual lithium-ceramic cells. A weapon that demands respect; pilots report it has a 'loaded' feel, even at rest.",
+    "primary_material": "Aerospace-grade polymer chassis (reinforced carbon-epoxy composite) with embedded magnetic induction coils. Ferrofluid reservoir is borosilicate glass with titanium-alloy feed lines and pressure regulation hardware.",
+    "finish": "Matte gunmetal gray with oxide-resistant clear-coat. The reservoir window is frosted to obscure fluid levels from casual observation, but the rust-red tint of the ferrofluid is visible as a faint amber glow under direct light. Rotor blades are bare anodized aluminum—reflective and minimal.",
+    "color_scheme": "Dominant gunmetal gray; accents of deep rust-red (ferrofluid visible through reservoir port), black polymer shrouding, and brushed titanium feed hardware. Minimal branding—only functional labels.",
+    "grip_texture": "Not designed for sustained hand-holding. The launch platform incorporates a textured polymer cradle with rubberized contact points. If gripped directly, the chassis presents a knurled titanium handhold near the power cell cluster—cold, industrial, engineered for gloved operation.",
+    "distinctive_features": [
+      "Pressurized ferrofluid reservoir with graduated etching marks along the borosilicate window",
+      "Exposed magnetic induction coil array visible as black wire-wrapped rings beneath clear chassis panels",
+      "Twin rotor arms with asymmetrical pitch for precision hover and rapid directional changes",
+      "Spray nozzle assembly with micro-adjustable targeting cross-hairs integrated into the forward optics pod",
+      "Dual lithium-ceramic cell housings with status indicator LEDs (green/amber/red) visible through translucent port",
+      "Faint electromagnetic shimmer visible around the induction coil clusters when powered (subtle but unsettling)",
+      "Corrosion-resistant feed lines running from reservoir to nozzle in exposed titanium—no concealment of function"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo (stylized double-helix with circuit pattern) stamped in small raised relief on the left rotor arm. Serial plate affixed to the aft chassis: white anodized aluminum with black laser-etched designation (typically FDID-6–[XXXX]). Regulatory prohibition stamps in Chinese, English, and Russian on the battery shroud.",
+    "condition_typical": "Military-issue units appear pristine and meticulously maintained. Field-deployed examples show microscopic rust discoloration around the nozzle from ferrofluid micro-leakage—unavoidable wear that makes active units subtly identifiable. Some operators file or scratch the ZHENG-DAO logo for plausible deniability."
+  },
+  "image_prompt": "Product photography of the FDID-6 Ferrofluid Dermal Infiltration Drone on a textured dark steel surface, viewed from a slight 3/4 angle. The matte gunmetal gray chassis catches dramatic side-lighting that reveals the embedded magnetic induction coils glowing faintly amber beneath the transparent panels. The borosilicate ferrofluid reservoir glows rust-red from within, luminescent against the shadows. Rotor blades are folded and still. A gloved operator's hand—dark tactical leather with augmented finger joints visible—steadies the drone from above, showing the scale and heft. Ambient underglow from nearby neon (far background, out of focus) casts cool blue shadows. Cyberpunk aesthetic: clinical, lethal, bio-military. Ultra-sharp focus on the nozzle assembly and LED status indicators. --ar 3:2 --v 6"
 }

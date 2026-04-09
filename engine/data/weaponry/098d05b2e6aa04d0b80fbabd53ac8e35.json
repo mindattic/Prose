@@ -46,5 +46,34 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "Brecken Yılmaz-Osei",
+    "GLMZ",
+    "Lazarus Pharmaceuticals",
+    "NeuralPath CalmLine Chronic Pain Suppressor",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist medical device disguised as a weapon — all hard angles and clinical efficiency. The CH-3 resembles a grenade launcher crossed with a pressurized fire extinguisher, with a compact bullpup-style configuration that emphasizes stability over ergonomics. The silhouette suggests something designed for hospitals that learned to be used in alleys.",
+    "dimensions": "420mm length, 120mm width at grip, 85mm height. Canister slots protrude 60mm from the main body.",
+    "weight_description": "Hefty and front-weighted — 3.2 kg distributed toward the canister magazine. Feels authoritative in both hands, but fatiguing during extended hold positions due to pressure-system mass concentration.",
+    "primary_material": "Aircraft-grade aluminum frame with medical-grade polymer housing. Canister magazine is stainless steel with pressure-relief valve integration.",
+    "finish": "Brushed stainless steel with matte clinical white polymer panels — deliberately sterile-looking, like surgical equipment. Wear patterns expose bare aluminum beneath.",
+    "color_scheme": "Primary: surgical white and brushed stainless. Accents: safety orange pressure-release indicators, gunmetal gray barrel shroud.",
+    "grip_texture": "Rubberized polymer grip with aggressive finger grooves designed for gloved operation. Slightly tacky, medical-grade silicone — utilitarian, not comfortable.",
+    "distinctive_features": [
+      "Four visible 40mm canister slots arranged in rotating magazine assembly",
+      "Pressure-release valve with safety orange indicator cap on top",
+      "Digital readout display showing canister status and deployment counter (dim LED, rarely illuminated in field)",
+      "Integrated charging handle with safety lever — styled like medical restraint hardware",
+      "Canister retention clips that resemble surgical clamps",
+      "Heat dissipation vents along barrel shroud (redundant for gas deployment, present anyway)",
+      "Internal pressure gauge visible through reinforced viewport on magazine",
+      "Faint surgical markings and pressure specification labels in clinical sans-serif font"
+    ],
+    "manufacturer_markings": "UPHR (Upper Peninsula Research Holdings) logo stamped in brushed panel at 10 o'clock, with 'LAZARUS SYSTEM CH-3' in surgical font below. Serial number etched on canister magazine. Medical certification stamps on pressure valve. Liability disclaimer in 6pt font on grip.",
+    "condition_typical": "Usually well-maintained — the chemical agents inside are too precious and dangerous to neglect. Exterior shows fingerprint smudges on white panels, faint corrosion patterns on stainless steel from sweat and humidity. Canister magazines show loading wear but rarely firing wear, since each deployment is a single massive event rather than sustained use."
+  },
+  "image_prompt": "Product photography of the Lazarus CH-3 'Mercy Fog' gas launcher in a cyberpunk medical-industrial setting. The weapon is mounted on a dark stainless steel examination table, angled 45 degrees toward the camera. Dramatic side-lighting from the left reveals brushed aluminum and white polymer panels with surgical precision. The four canister slots are visible, with safety orange indicators catching the light. The background is a blurred hospital equipment rack or surgical suite wall in cool blues and grays. Harsh, clinical lighting emphasizing the weapon's medical origins and utilitarian brutalism. Every surface reflects with pharmaceutical-grade sterility. A gloved hand (latex or medical polymer glove) grips the rubberized handle, fingers positioned on the safety lever. Show pressure gauge viewport faintly illuminated from within. Atmospheric haze suggesting sedative aerosol residue in the air. --ar 3:2 --v 6"
 }

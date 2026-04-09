@@ -36,5 +36,26 @@
     "Nodar Kuznetsov-Adu",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Variable Impedance Rifle VIR-9 'Switchback'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A floor-length formal gown with an austere, almost clinical elegance. The silhouette is conservative and symmetrical—no dramatic draping, no cultural markers. It reads as deliberately invisible, designed to be forgotten rather than admired. The wearer becomes the focal point, not the garment.",
+    "fit": "Tailored but not form-fitting; structured at the shoulders and torso, flowing gently from the waist. The cut is universally proportioned—no curves emphasized, no angles exaggerated. Accommodates spinal augmentation runs and shoulder-mounted tech via flush magnetic seaming. Tail accommodation available.",
+    "primary_material": "Cool-toned off-white silk-analog with engineered neutral color temperature. Privacy-weave lining throughout. The fabric reads identically under warm and cool lighting—a precise technical achievement.",
+    "texture": "Smooth, almost clinical. The silk-analog has a subtle sheen that registers as neither luxury nor utilitarian. The privacy-weave creates a faint structural grid visible only under close inspection.",
+    "color_scheme": "Off-white with no secondary colors or patterns. The hue sits deliberately between warm and cool, rejecting any association with cultural or corporate chromatics.",
+    "closures": "Magnetic snaps along the back seam—invisible when closed, silent, adjustable. No zippers, no buckles, no visual interruption.",
+    "distinctive_features": [
+      "Flush magnetic seaming at shoulders for augmentation accommodation",
+      "Spine-run channel with magnetic alignment points",
+      "Privacy-weave lining—RF-shielded and optically opaque",
+      "Tail accommodation built into hem (discrete, unobtrusive)",
+      "Zero ornamentation—no buttons, badges, insignia, or trim",
+      "Perfectly symmetrical front and back",
+      "BCI-responsive elements deliberately absent"
+    ],
+    "tier_indicator": "Tier 4-5 professional wear. The price point is high (Nullweave Diplomatic Atelier is exclusive), but the garment signals function over status—a paradoxically expensive statement of anti-status.",
+    "cultural_context": "Worn by diplomatic liaisons, neutral arbitrators, corporate representatives attending faction-sensitive events, and synthetic beings at legal proceedings. Signals: 'I am here to be evaluated on merit, not affiliation. You will find nothing to react to except my words.'",
+    "condition_typical": "Always pristine. This is not a garment that develops character or patina. Wear does not improve it. It exists in a state of permanent newness, a deliberate choice."
+  },
+  "image_prompt": "Nullweave Diplomatic Formal Gown on a tall, augmented model or neutral mannequin in a sterile grey gallery space. The gown is floor-length, off-white silk-analog, geometrically perfect, with magnetic seaming visible at spine and shoulders. Cool architectural lighting from above creates minimal shadow. The backdrop is corporate-grey with clean sight lines. The model's face is neutral, expression blank. No jewelry, no accessories, no color. Hyper-detailed fabric texture showing privacy-weave grid. Cyberpunk formal wear that achieves invisibility through precision. Moody, clinical, intentionally unbeautiful. --ar 2:3 --v 6"
 }

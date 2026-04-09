@@ -77,5 +77,24 @@
     "The Cutters Guild",
     "VitaCore ClearCourse Addiction Suppressor",
     "Zheng-dao Bioelectric"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A precision writing instrument crossed with industrial maintenance tool — deliberately mimics an oversized marker pen or technical stylus to avoid drawing attention. The form is ergonomic and cylindrical, tapering slightly toward the business end. Despite its innocuous appearance, the weightiness and precision engineering are immediately apparent to anyone who's held professional tools.",
+    "dimensions": "162mm length, approximately 12mm diameter barrel — fits standard pen pockets and utility holsters without modification",
+    "weight_description": "94g with cell installed; handheld and pocket-portable, no carrying strap required. Substantial enough to feel professional-grade, light enough for extended use without fatigue",
+    "primary_material": "Brushed titanium-alloy barrel with embedded polymer grip zones; tungsten-carbide composite tip assembly",
+    "finish": "Matte anodized titanium with fine cross-hatch grip texture. The tip housing features a subtle directional marker etched into the metal. All edges are beveled to minimize snag points.",
+    "color_scheme": "Gunmetal gray barrel with silver-gray accent bands at the grip section. The charge indicator bar is integrated as three vertical segments along the upper face — amber, amber, green when fully charged. Minimal branding.",
+    "interface_elements": "Three-segment charge indicator bar (amber/green LEDs flush-mounted), subtle pressure-activation zone along the barrel, recessed 9V cell compartment at the rear with Zheng-Dao and aftermarket compatibility markings, minimal tactile feedback button near the tip collar",
+    "distinctive_features": [
+      "Tungsten-carbide tip that appears almost jewel-like under close inspection, slightly beveled for electrochemical contact",
+      "Integrated charge indicator designed to blend seamlessly with the barrel geometry",
+      "Absence of conventional branding — only small regulatory stamps and QR codes in deep etch",
+      "Faint ionic shimmer visible around the tip when powered but dormant, barely perceptible",
+      "Heat-dissipation slots machined into the rear barrel section"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC etched in small characters on the upper barrel, barely 2mm tall. Standard regulatory marks for GLMZ compliance. Serial number on the cell compartment. No holographic security features — unnecessary for the intended market.",
+    "condition_typical": "In use, the tip develops a faint oxidation halo around the impact point — electrochemical scorching that doesn't degrade performance but serves as a visual record of use. Palming marks and carry scratches accumulate naturally on the barrel. The device shows wear as distinction, not degradation."
+  },
+  "image_prompt": "Product photography of the Zheng-Dao Bioelectric Faradaic Breach Stylus positioned on a stainless steel workbench next to a corroded lock cylinder and a 9V bioelectric cell. Dramatic side-lighting casting the tungsten-carbide tip into sharp relief, with a subtle electrical shimmer around the business end. The pen-like form contrasts deliberately with industrial maintenance equipment scattered nearby — corroded terminals, wire cutters, control panel doors. Cyberpunk aesthetic with cool color temperature, faint neon accent lighting reflecting off the brushed titanium barrel. Shallow depth of field focusing on the precision tip. --ar 3:2 --v 6"
 }

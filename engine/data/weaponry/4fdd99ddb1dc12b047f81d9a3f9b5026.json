@@ -43,5 +43,45 @@
     "extreme",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Arcturus Defense Solutions Neural PDW ANPD-1 'Impulse'",
+    "Ballistic Resonance Carbine BRC-6 'Kettledrum'",
+    "Constance",
+    "Ebele Medina-Quaye",
+    "Ferrogate Metro Bus",
+    "GLMZ",
+    "Hearthstone Firearms Single-20 'Farmhand'",
+    "Narrowcast",
+    "Nika Svensson-Kone",
+    "TESSERA TC-3 'Crucible'",
+    "Tenzin Popov-Adjei",
+    "The Crucible",
+    "The Mill",
+    "The Shelf",
+    "Vantablack-CNX",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist siege weapon disguised as a shotgun — massive, angular, and purposefully intimidating. The Maelstrom-12 reads as industrial violence: a thick receiver with protruding gas tubes, a barrel shroud that dominates the silhouette, and a drum magazine that extends downward like a fuel tank. The entire profile suggests compression and controlled chaos.",
+    "dimensions": "Overall length: 94 cm | Barrel length: 51 cm | Drum magazine diameter: 18 cm | Height with mounted optics: 32 cm",
+    "weight_description": "Hefty and front-heavy even when empty (5.8 kg loaded). The constant-recoil system distributes mass deliberately — the barrel assembly is substantial, but the receiver feels engineered for absorption rather than lightness. Not a weapon you carry one-handed for extended periods.",
+    "primary_material": "Reinforced polymer composite (receiver and handguard), chrome-moly steel barrel and gas tubes, aluminum alloy furniture",
+    "finish": "Matte battleship grey with brushed steel accents on the barrel shroud and gas system. The drum magazine is phosphate-coated steel with a slightly worn patina. Finish shows strategic wear — areas around the magazine well and grip are polished smooth from handling.",
+    "color_scheme": "Gunmetal grey primary with charcoal polymer black secondary. Crucible Industries' corporate red accent trim on the safety lever and magazine release. The drum magazine contrasts in darker steel tone.",
+    "grip_texture": "Textured polymer pistol grip with aggressive checkering; feels designed to be held even with wet gloves or in zero-G. The fore-grip is rubberized and wrapped with tactical cord for additional purchase. Both surfaces are slightly warm to the touch from synthetic materials.",
+    "distinctive_features": [
+      "Massive gas tube assembly running along the top of the barrel with visible pressure ports",
+      "Over-sized charging handle with numbered position indicator for recoil cycle phase",
+      "Twenty-round drum magazine with numbered round counter windows (1-5-10-15-20)",
+      "Integrated mounting rail system across the top and sides for optics/thermal imaging",
+      "Muzzle brake designed to cascade recoil backward along the frame axis rather than upward",
+      "Heat vents cut into the barrel shroud in diagonal patterns",
+      "Spent shell deflector angled sharply downward and forward",
+      "Crucible Industries corporate sigil stamped in red on the magazine housing"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES / MAELSTROM-12 'GRINDER' stamped into the receiver in military block font. Serial number engraved on the frame beneath the drum magazine. Contract designation 'GLMZ-DEFENSE-TIER-4' etched below the barrel. Warning labels in three languages (English, Mandarin, Spanish) on the safety mechanism.",
+    "condition_typical": "Field units show consistent wear: scuffed polymer from tactical gear contact, carbon fouling around the gas ports, cosmetic dings on the drum magazine from drum changes in the field. The finish remains intact because these weapons are maintained obsessively — they're too valuable and too tracked to allow degradation. Black carbon residue typically visible around the muzzle brake from sustained fire cycles."
+  },
+  "image_prompt": "Product photography: Crucible Industries Maelstrom-12 shotgun lying on a dark matte steel surface, angled 45 degrees to showcase the profile. Dramatic side-lighting from the left casts deep shadows across the gas tube assembly and muzzle brake. The twenty-round drum magazine is visible and prominent, round counter windows catching highlights. A gloved hand (military-grade synth-leather, grey) grips the fore-grip from above, showing the texture and control design. The background is deep charcoal with subtle bokeh of out-of-focus tactical gear. Slight lens flare off the chrome-moly barrel. Color grading emphasizes cool greys and steels with red Crucible Industries accent trim popping in the highlights. Cyberpunk dystopian military aesthetic, hard industrial lighting, 2226 GLMZ conflict-grade weaponry. Shot as if for a corpo armory catalog. --ar 3:2 --v 6"
 }

@@ -76,5 +76,24 @@
     "The Signal",
     "Vantablack Media Confessor Tap — 'The Booth'",
     "Zheng-Dao Bioelectric Chemoreceptive Dermal Patch"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A slim, translucent tan-colored patch roughly the size of a postage stamp, with a barely-visible raised center where the micro-needle array sits beneath the biocompatible membrane. The patch has a smooth, almost skin-like finish with a subtle convex crown. Under magnification or good light, faint grid markings are visible where the 144 micro-needles are arranged in a honeycomb pattern.",
+    "dimensions": "38mm × 28mm, approximately 2.1mm thick at center, tapering to paper-thin edges",
+    "weight_description": "18 grams — pocketable, negligible once applied; applicator backing card adds minimal weight",
+    "primary_material": "Biocompatible thermoplastic polymer backing with integrated logic module; semi-permeable hydrogel adhesive layer; stainless steel micro-needle array",
+    "finish": "Matte translucent with a faint pearlescent sheen; edges have a micro-beveled chamfer; the needle matrix creates a subtle internal depth effect",
+    "color_scheme": "Translucent tan/sand primary with matte charcoal micro-injection ports visible at the perimeter; faint Ringo Corponation corporate red accent stripe along one edge; internal capillary channels appear as thin gold threads under light",
+    "interface_elements": "No user interface — patch is completely passive post-application. Small indicator dot at corner shows green (active/reading), amber (low payload remaining), or red (malfunction). Peel-back adhesive liner with release paper. Minimal branding on backing.",
+    "distinctive_features": [
+      "The honeycomb micro-needle grid visible as a subtle geometric pattern beneath the membrane",
+      "Faint capillary-like gold threading inside the patch showing pharmaceutical distribution channels",
+      "Transparent quality allows observation of the internal logic module as a small gray rectangle",
+      "Edges have a barely-visible shimmering edge-glow effect from the biological adhesive",
+      "The pearlescent quality shifts tone slightly depending on viewing angle"
+    ],
+    "manufacturer_markings": "Small Ringo Corponation logo (crimson Φ symbol with corporate serif lettering) on backing card; batch code, application date, and regulatory marks (GLMZ Medical Authority stamp) printed in micro-text on edge; lot number and three-language warning label on backing liner",
+    "condition_typical": "Applied directly to skin, barely visible once adhered — appears as a translucent, nearly-flesh-toned circle on neck or wrist with a faint shimmer. After 8 hours, shows slight discoloration at edges and the indicator dot shifts amber before manual removal. Used patches retain adhesive residue and must be carefully peeled."
+  },
+  "image_prompt": "Close-up product photography of a Ringo Corponation Adrenal Sequencing Patch on a brushed stainless steel workbench, shot from above at 45 degrees. The patch is positioned on a pale forearm model or translucent skin-tone substrate, with soft bluish-white medical lighting creating dramatic shadows that highlight the honeycomb micro-needle pattern beneath the biocompatible membrane. Faint gold threading of pharmaceutical channels glows subtly under the light. In the soft-focused background, a medical applicator pen and backing card are visible. The patch's pearlescent finish catches light with a faint rainbow shimmer. Cyberpunk medical aesthetic, sterile-yet-ominous mood, shallow depth of field. --ar 3:2 --v 6"
 }

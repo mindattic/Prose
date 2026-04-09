@@ -53,5 +53,25 @@
     "Neural Feedback Carbine NFC-3 'Mirrorgun'",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist haptic interface glove that signals high-tier augmentation integration. The brushed slate polymer gives it a matte, professional appearance—neither chrome-bright nor street-worn. Sits at the intersection of medical device and luxury tech wear. Worn across all Tier 1-2 corpo environments and by augmented professionals.",
+    "fit": "Precision-tailored to the hand and wrist with elastic compression zones at the palm and wrist cuff. Form-fitting but not restrictive—designed to work over residual biological limbs or directly interface with chrome forearms. The wrist port connector sits snug against the augmentation mounting point.",
+    "primary_material": "Brushed slate polymer composite with embedded copper-trace conductive circuits. Semi-transparent dorsal panel reveals the circuit architecture beneath. Fingertip pads are layered conductive haptic material over micro-actuator arrays. Wrist cuff reinforced with ballistic weave for durability.",
+    "texture": "Matte, slightly textured brushed finish on the exterior polymer. The dorsal panel has a subtle translucent quality—you can see the copper traces catching light. Fingertip pads have a softer, more tactile texture than the palm. The wrist cuff feels slightly rigid from reinforcement.",
+    "color_scheme": "Brushed slate gray as the primary color. Copper-trace circuits visible through the dorsal panel create warm metallic accents. The port connector at the cuff is gunmetal with a small embossed Rolen mark in faint silver.",
+    "closures": "Friction-fit elastic cuff with a standardized Rolen ChromeSeam port connector at the wrist—magnetic-locking mechanical interface. No visible zippers or buckles. The glove sits open at the wrist end, designed to slide over or dock with augmentation hardware.",
+    "distinctive_features": [
+      "Semi-transparent dorsal panel revealing copper-trace circuit lines",
+      "Conductive haptic pads on all fingertips with embedded micro-actuator arrays",
+      "Standardized Rolen ChromeSeam port connector at wrist cuff",
+      "Small embossed port-mark (Rolen branding) at cuff—minimal corporate marking",
+      "Available in full-hand and half-finger configurations",
+      "Reinforced ballistic weave at wrist compression zone"
+    ],
+    "tier_indicator": "Tier 1-2 luxury/professional. The precision engineering, haptic integration, and corpo-standard port spec mark this as high-end augmentation accessory. Not salvage, not street-tier.",
+    "cultural_context": "Worn by augmented corpo workers, medical technicians, neural interface specialists, and chrome-augmented professionals navigating the GLMZ's digital economy. Signals seamless integration between flesh and machine—the wearer is post-human by choice and resource. A status object in circles where augmentation is normalized and expected.",
+    "condition_typical": "Pristine to well-maintained. Rolen products are durable; these rarely show wear unless heavily used in field conditions. Fingertip pads may show minor contact wear over time. Kept clean by corpo users—visible dirt or damage would signal inferior augmentation care."
+  },
+  "image_prompt": "Close-up fashion photograph of a Rolen ChromeSync Interface Glove on a cyberpunk-styled hand model with visible chrome forearm augmentation. The glove's brushed slate polymer exterior is center-frame, semi-transparent dorsal panel glowing subtly with visible copper-trace circuit lines. Conductive haptic pads on fingertips catch studio light. Wrist port connector docked cleanly into chrome forearm. Dark moody lighting with cool cyan-amber accent lights emphasizing the circuit pathways. Shallow depth of field on the glove details. Urban neo-corporate backdrop—glass and steel reflections. High-end product photography aesthetic. --ar 2:3 --v 6"
 }

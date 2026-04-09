@@ -47,5 +47,25 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Shelf",
     "The United Workers Front"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian work jacket with a boxy, purposeful silhouette. Structured and confident without attempting style—the kind of garment that announces competence and durability at a glance. Sits somewhere between heritage Americana and post-industrial pragmatism.",
+    "fit": "Relaxed and roomy through the torso and shoulders, designed for layering over thermals or light augmentation rigs. Sleeves are straight and unfitted. Overall impression is that it could swallow you or fit perfectly depending on your frame—it simply doesn't care.",
+    "primary_material": "Heavyweight synthetic-cotton duck blend; the texture of real canvas but engineered for thermal regulation and resistance to industrial solvents. Fades to soft gray-khaki or rust-brown with age.",
+    "texture": "Coarse and honest when new; gradually softens and creases into deep furrows that map the wearer's movements. Seams are visibly thick and proud. The corduroy collar lining is warm and slightly fuzzy against skin.",
+    "color_scheme": "Faded khaki or engine-room brown as primary; natural weathering creates uneven tone variation. Contrast stitching in off-white or cream stands out against the base color, especially at bartacks.",
+    "closures": "Heavy-duty snap buttons down the front—brass or brass-look fasteners that age to a dull patina. Four large exterior patch pockets with snap flaps.",
+    "distinctive_features": [
+      "Corduroy-lined collar—a heritage detail that refuses obsolescence",
+      "Triple-stitched seams throughout",
+      "Heavy bartacking at stress points (shoulders, pocket corners, armholes)",
+      "Four deep patch pockets positioned for function, not form",
+      "Worn hems and collar edges that fray slightly and then stabilize",
+      "Subtle Carhartt-Seo branding on the inside back neck or lower pocket"
+    ],
+    "tier_indicator": "Tier 2 functional—expensive enough to signal serious work, affordable enough to be disposable if truly destroyed. Occasionally worn aspirationally by Tier 3 people.",
+    "cultural_context": "Fabrication yards, warehouse logistics, lower transit corridors, unregulated industrial spaces. Signals someone who works with their hands and their environment—reliable, unkempt by choice, no pretense.",
+    "condition_typical": "Broken-in and creased after months of wear; fabric softens and darkens from sweat and handling. Minor oil stains, frayed hems, faded seams. Looks better after two years than it did at purchase."
+  },
+  "image_prompt": "Carhartt-Seo Ironwall chore coat in faded khaki displayed on a weathered dark mannequin in a moody warehouse setting. Dramatic side-lighting casting sharp shadows across the heavy duck fabric, highlighting the triple-stitched seams and corduroy collar detail. Industrial background with rusted metal and dim neon signage. Gritty, tactile aesthetic emphasizing durability and honest craftsmanship. Tight crop on upper torso showing pocket definition and fabric texture. Cool color grade with amber accent lighting. Cyberpunk utility wear aesthetic. --ar 2:3 --v 6"
 }

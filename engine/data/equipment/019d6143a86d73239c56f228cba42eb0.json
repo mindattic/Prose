@@ -44,5 +44,25 @@
   "parent_corponation": "",
   "related_entities": [
     "Idris Forsberg-Quaye"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A professional-grade forensic kit housed in a modular hard case system. The primary transport case is a sleek aluminum briefcase with integrated smart-lock panel. Internal organization features a custom foam insert with precisely cut compartments. The scanner unit is a compact handheld device with a 3-inch display screen. Collection bags are semi-transparent polymer with holographic security threads visible under UV light.",
+    "dimensions": "Transport case: 55cm × 35cm × 12cm. Scanner unit: palm-sized, approximately 12cm × 8cm × 4cm.",
+    "weight_description": "4 kg total kit — briefcase-sized, requires two-handed carrying or shoulder strap for extended transport",
+    "primary_material": "Brushed aircraft-grade aluminum case exterior; anti-static polymer internal trays; sterile polypropylene for collection tools and bags",
+    "finish": "Matte anodized aluminum with textured grip panels; semi-gloss holographic overlay on evidence bags; scanner has soft-touch matte black finish with chrome accent trim",
+    "color_scheme": "Primary: gunmetal gray and matte black. Accents: electric blue LED indicators and holographic security threads (cyan-to-purple shift). Sterling-Nakamura branding in chrome silver.",
+    "interface_elements": "Scanner display: 3-inch high-contrast screen with touch-sensitive edge controls. Case smart-lock: biometric pad with status LED ring. Evidence bags: QR-code labels with embedded blockchain chip visible as small metallic squares. Interior: labeled compartments for tweezers, swabs, scrapers, measurement rulers, protective gloves, and chemical analysis strips.",
+    "distinctive_features": [
+      "Holographic security threads embedded in evidence bags that shift color when tampered",
+      "Blockchain chip verification indicators — small metallic nodules visible on bag seals",
+      "Scanner unit with integrated UV verification light for authenticity checks",
+      "Environmental monitoring display on case interior showing temperature/humidity graph",
+      "Cryptographic timestamp LED that pulses when logging chain-of-custody data",
+      "Modular foam insert with tool silhouettes for inventory verification"
+    ],
+    "manufacturer_markings": "Sterling-Nakamura corporate logo (geometric interlocking S-N symbol) embossed on case lid in chrome. BGP (Blockchain Governance Protocol) certification seal. Serial number and blockchain registry QR-code on interior label. Tier-2 authorization stamp.",
+    "condition_typical": "Well-maintained but showing active use — slight scuffs on case corners from field transport, adhesive residue from evidence tags on foam, scanner screen with protective film still applied, blue LED indicators glowing softly when powered"
+  },
+  "image_prompt": "Sterling-Nakamura LEPK-2 forensic kit open on stainless steel workbench, dramatic side-lighting revealing holographic security threads on evidence bags shimmering cyan-to-purple, scanner unit positioned at center with display glowing, chrome interior case details catching light, neon-blue LED status indicators active, cyberpunk noir aesthetic, dark background with bokeh city lights, product photography style, forensic evidence scattered on black velvet cloth nearby, --ar 3:2 --v 6"
 }

@@ -43,5 +43,34 @@
     "interrogation",
     "less_lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Arcturus EW-3 'Migraine'",
+    "GLMZ",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Tessera Corponation",
+    "Vespid Dynamics Neural Disruptor ND-4 'Brainstorm'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, deliberately clinical baton with an almost medical instrument aesthetic—rigid and purposeful, with a tapered design that suggests precision engineering over brute force. The form reads as 'interrogation tool' rather than combat weapon, embodying corporate sterility.",
+    "dimensions": "45 cm total length, 3.2 cm diameter grip, 2.8 cm diameter shaft tapering to 2.1 cm at the impact head",
+    "weight_description": "Surprisingly light and balanced—520g feels like holding a weighted pen rather than a weapon. The mass is distributed toward the grip, making it feel nimble and controllable despite its rigidity.",
+    "primary_material": "Carbon-fiber reinforced polymer composite core wrapped in conductive tungsten mesh for electromagnetic field propagation",
+    "finish": "Matte gunmetal gray with a subtle brushed texture that conceals fingerprints and wear. The conductive mesh creates a faint crosshatch pattern visible under direct light.",
+    "color_scheme": "Cold gunmetal gray body with sapphire-blue accent bands at the grip and a single blue LED status indicator near the pommel",
+    "grip_texture": "Textured polymer grip with micro-ridges, wrapped in a thin layer of conductive fabric that interfaces with operator gloves. Feels clinical and deliberately non-aggressive.",
+    "distinctive_features": [
+      "Sapphire-blue LED charge indicator that pulses subtly when armed",
+      "Thin capacitor cooling vents running the length of the shaft (recessed, barely visible)",
+      "Impact head features concentric rings of conductive mesh—designed for maximum neural coupling on contact",
+      "Minimalist pommel with a recessed activation button (blue-anodized aluminum)",
+      "No aggressive spikes or serrations—smooth, almost medical appearance",
+      "Tessera corporate logo etched subtly into the grip in reflective ink",
+      "Electromagnetic field harmonizer nodes visible as small raised nodes along the shaft"
+    ],
+    "manufacturer_markings": "TESSERA CORPONATION stamped in block letters on the upper grip, below which sits a cryptic serial code (format: NDB-1-████████). Quality certification marks positioned near the pommel in micro-print.",
+    "condition_typical": "Usually immaculate—Tessera security personnel maintain these as precision instruments. Rarely shows battle wear, though heavy-use units develop faint burnishing on the impact head where mesh contact is repeated."
+  },
+  "image_prompt": "Tessera NDB-1 'Migraine' Neural Disruptor Baton photographed as sleek interrogation tool, lying on dark matte surface or held in gloved corporate security hand, dramatic side-lighting revealing the conductive tungsten mesh crosshatch pattern and sapphire-blue LED indicator. Close detail on the clinical impact head with concentric conductive rings. Gunmetal gray finish catches light to show textured precision engineering. Cyberpunk corporate aesthetic—medical instrument meets non-lethal weapon, zero blood, maximum psychological dread. Professional product photography style, clinical lighting. --ar 3:2 --v 6"
 }

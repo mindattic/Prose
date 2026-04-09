@@ -43,5 +43,32 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Nika Svensson-Kone",
+    "TESSERA PG-2 'Signature'"
+  ],
+  "physical_description": {
+    "visual_profile": "A razor-thin, almost skeletal SMG with an aggressive forward rake. The Stiletto presents as a precision instrument disguised in a compact form — all hard angles and purposeful geometry. Its silhouette resembles a surgical blade more than a firearm, with a prominent top-mounted optical rail and minimal ergonomic flourish. The overall impression is cold, engineered, uncompromising.",
+    "dimensions": "Length: 38 cm (stock collapsed), Barrel length: 15 cm, Width at receiver: 4.2 cm",
+    "weight_description": "Surprisingly balanced despite its 2.0 kg mass — the weight concentrates forward into the match-grade barrel assembly, creating a natural pivot point that rewards practiced trigger control. Not light, but purposeful; every gram accounts for precision.",
+    "primary_material": "Aircraft-grade aluminum receiver with carbon-composite furniture. Steel barrel and bolt assembly. Polymer grip frame with integrated capacitive sensor nodes for BCI linkage.",
+    "finish": "Matte gunmetal grey with brushed titanium accents on the barrel shroud. The receiver shows a subtle cross-hatch machining pattern visible under harsh light — evidence of the precision manufacturing.",
+    "color_scheme": "Charcoal grey primary body with gunmetal steel barrel, platinum-silver BCI contact nodes along the grip, and subtle red accent lines marking the two-stage trigger housing.",
+    "grip_texture": "Textured polymer with subtle ridging — not aggressive, designed for precise finger placement rather than vice-grip security. Capacitive nodes integrated into the grip material create a barely-perceptible tactile signature.",
+    "distinctive_features": [
+      "Top-mounted full-length optical rail with integrated cable conduit for BCI neural link",
+      "Precision-machined feed ramp visible through a small dust cover window",
+      "Adjustable two-stage match trigger visible through the lower receiver opening",
+      "Micro-LED status indicators (green/amber/red) positioned on the right side of the receiver — barely noticeable unless active",
+      "Barrel shroud features three precision cooling vents arranged in a triangular pattern",
+      "Ambidextrous safety selector with tactical groove patterns",
+      "Weapon-learning dataport recessed flush in the grip tang — barely breaks the silhouette",
+      "Ultra-thin magazine with witness holes every two rounds for round count at a glance"
+    ],
+    "manufacturer_markings": "VOLKOV-SAITO PRECISION etched in Cyrillic-Latin hybrid script along the left side of the receiver. VSP-11 designation stamped on the barrel shroud. Serial number laser-engraved on the dust cover in microfont. Warranty seal at the magazine well.",
+    "condition_typical": "Factory-fresh examples show near-flawless finish with protective cosmoline residue. Field-maintained weapons develop a distinctive patina — wear marks on the charging handle, subtle polishing on the trigger guard from gloved use, occasional scorching on the barrel shroud from sustained semi-auto fire. The weapon-learning system means older examples develop individual character; no two veteran Stilettos look identical."
+  },
+  "image_prompt": "Product photography of the Volkov-Saito Precision VSP-11 Stiletto SMG positioned at a 45-degree angle on a dark matte surface, with right-side dramatic side-lighting casting sharp shadows. The weapon rests in the grip of a tactical-gloved hand, fingers positioned on the match-grade trigger housing. Zoom captures intricate detail: the precision barrel shroud cooling vents, micro-LED status nodes, and top-mounted optical rail with BCI conduit. The brushed titanium accents catch light while the matte gunmetal grey body recedes. Background is deep charcoal with subtle bokeh suggesting a precision manufacturing workspace. Cyberpunk aesthetic: cool color temperature, subsurface lighting on the barrel, faint holographic glow from inactive BCI nodes. Ultra-sharp focus on trigger assembly and magazine feed geometry. --ar 3:2 --v 6"
 }

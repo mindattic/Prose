@@ -47,5 +47,24 @@
   "related_entities": [
     "Nika Svensson-Kone",
     "TESSERA ES-4 'Perimeter'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Flat, rigid rectangular panel that resembles an industrial architectural element or oversized tactical shield. When packed, appears as a slim composite slab with beveled edges and tactile grip zones. Deployed state reveals a substantial free-standing wall with visible layered composite construction and reinforced corner brackets.",
+    "dimensions": "Packed: 60×40×10 cm (briefcase-sized). Deployed: 200×100×10 cm (man-height wall section)",
+    "weight_description": "Heavy handheld per panel (12 kg / ~26 lbs). Single operator manageable with carrying handle; requires two hands for comfortable manipulation",
+    "primary_material": "Layered ballistic composite—likely ceramic-steel laminate with foam damping core visible at edges",
+    "finish": "Matte non-reflective coating with texture grip surface. Minimal gloss to avoid tactical visibility signatures",
+    "color_scheme": "Gunmetal gray primary with charcoal accent struts. Subtle safety orange edge markers on deployment hinges and interlocking tabs",
+    "interface_elements": "Spring-loaded release button on spine of packed panel. Interlocking male/female tab system along top and side edges. Stabilizer feet fold from base. Luminescent deployment indicator strip runs along hinge line",
+    "distinctive_features": [
+      "Accordion-fold deployment mechanism visible as compressed hinge line running horizontally across pack",
+      "Reinforced corner brackets with visible welding on deployed state",
+      "Quick-detach interlocking tabs with tactile teeth pattern",
+      "Stabilizer foot brackets fold flush when packed",
+      "Ballistic composite striations visible where edges are beveled"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS logo embossed on top pack surface. Model designation RFS-3 stamped in white text. NIJ Level IV certification label. Manufacturing date and serial number on lower right corner",
+    "condition_typical": "Field-worn examples show abraded matte finish, minor dents on stabilizer feet, dust accumulation in hinge mechanisms. Fresh units have protective shrink-wrap. Battle-scarred variants show impact deformation, soot scoring, and puckering from ballistic impacts"
+  },
+  "image_prompt": "Overhead tactical product photography of Carrion Defense Works RFS-3 ballistic panel kit. Foreground shows three panels in various states: one fully deployed as 2m tall wall catching harsh side-lighting to reveal composite layering, one mid-deployment showing spring mechanism in motion blur, one flat-packed with deployment handle prominent. Dark gunmetal gray composite with orange safety accents. Concrete tactical workbench with spent cartridge casings scattered nearby. Cool blue-white LED work lights casting sharp shadows. Gritty Great Lakes urban warehouse aesthetic, weathered and utilitarian. Close detail shot of interlocking tabs and corner bracket welds. Dramatic high-contrast cyberpunk industrial lighting. --ar 3:2 --v 6"
 }

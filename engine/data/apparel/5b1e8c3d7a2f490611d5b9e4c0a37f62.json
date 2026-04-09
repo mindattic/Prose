@@ -42,5 +42,27 @@
     "Aybek Alvarez-Okonkwo",
     "Synaptrel",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A crisp, utilitarian ensemble projecting clinical precision and corporate authority. The slate-blue color palette reads as both professional and sterile, creating a visual hierarchy from torso (lab coat) down through matched trousers to grounded white footwear. The silhouette is neat and contained—no excess fabric, every element locked in place. Goggles rest high on the face; the fitted cap creates a sealed appearance around the head. Overall impression: a body optimized for controlled environments and measurable work.",
+    "fit": "Tailored but not form-fitting; the lab coat sits straight from shoulder to mid-thigh with minimal taper. Trousers are straight-leg with a slight taper at the ankle. The cap is snug to the scalp. All closures are deliberate and secure—nothing loose or billowing. Movement is unrestricted but contained.",
+    "primary_material": "Anti-static synth-cotton blend (lab coat and trousers), treated polymer cap with mesh ventilation panels, borosilicate/polycarbonate lenses (goggles), powder-free nitrile gloves (violet-dyed for sterile tracking), white rubber-composite shoe uppers with non-slip tread",
+    "texture": "Smooth, slightly matte synth-cotton with a soft nap; cool to the touch. Goggles have a smooth, hard finish with slight anti-reflective coating visible at certain angles. Gloves are thin, elastic, and tactilely responsive. Shoes have a slightly tacky, non-slip sole surface.",
+    "color_scheme": "Slate-blue (primary) across coat and trousers; bright violet accent gloves; white goggles frame and shoe uppers; gunmetal-gray QR strips at collar and cuff; chrome or silver-tone snap-rings and tool fixtures on chest panel",
+    "closures": "Magnetic-snap placket on lab coat (silent, secure, anti-static); friction-fit trousers with hidden elasticated waistband; snap-ring glove seals at wrist; velcro-backed QR tags (non-removable without leaving residue); goggles secured with adjustable silicone strap",
+    "distinctive_features": [
+      "Ferrochem corporate QR strip at collar and cuff (encrypted employee ID and clearance level)",
+      "Integrated chest panel with labeled reagent vial holders and calibration tool slots",
+      "Compact sample scanner holster (magnetic attachment point)",
+      "Anti-static fabric throughout (conductive microscopic fiber grid visible under close inspection)",
+      "Anti-fog coating on goggles (hydrophilic surface prevents condensation)",
+      "Neural port-access fitted cap with discrete mesh panels for thermal regulation",
+      "Powder-free nitrile gloves in non-standard violet (enables real-time particle tracking in lab systems)",
+      "Non-slip rubber-composite shoe sole with geometric tread pattern"
+    ],
+    "tier_indicator": "Tier 2 luxury/corporate equipment—this is mid-to-high-tier corpo issue, expensive enough to be tracked, standardized enough to be issued to qualified technicians at Ferrochem facilities",
+    "cultural_context": "Signals a laboratory technician or researcher with corpo affiliation and security clearance. Wearer is trusted with sensitive biotech or chemical work. The gear says: regulated, credentialed, compliant, and loyal to Ferrochem. Street-tier individuals would never own this—it's non-transferable property.",
+    "condition_typical": "Pristine to well-maintained. Ferrochem washes and inspects these rigs weekly. QR tags remain crisp and scannable. Goggles are replaced at the first sign of scratch or coating degradation. Gloves are single-use; a fresh pair is issued daily. The look is always clean, organized, and inspection-ready."
+  },
+  "image_prompt": "Ferrochem VeriLab technician in full slate-blue lab rig standing in a sterile, neon-lit laboratory corridor. Overhead clinical lighting casts cool shadows across the figure. Anti-static lab coat hangs perfectly straight; matching trousers end at white rubber-composite shoes with visible tread. Violet nitrile gloves snap-sealed at wrists. Anti-fog goggles rest on fitted cap covering neural port access. Chest panel displays labeled reagent vials and sample scanner holster. Dark concrete and chrome lab walls in background. QR tags at collar glow faintly under blacklight. Moody, corporate clinical aesthetic. Fashion catalog style, 3/4 view. --ar 2:3 --v 6"
 }

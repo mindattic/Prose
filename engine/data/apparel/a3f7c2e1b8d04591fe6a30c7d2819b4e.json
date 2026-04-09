@@ -42,5 +42,29 @@
     "3.2mm Ferromagnetic Tungsten Dart FTD-3",
     "Cezar Watanabe-Gyasi",
     "Tympanic Membrane Galvanic Rupture Carbine"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Imposing full-ankle silhouette with visible segmented armor plating across the upper foot and shin. Aggressive industrial stance — purpose-built for impact resistance rather than aesthetics. The boot commands attention through sheer functional geometry.",
+    "fit": "Snug compression fit through the arch and ankle, locked down by side-zip closure. Reinforced collar sits mid-calf with structured support. Steel toe cap creates a slightly bulbous forefoot profile. Built for stability over movement fluidity.",
+    "primary_material": "Thermite-treated layered polymer shell with embedded steel-reinforced toe cap and heel strike plate. Metal lacing eyelets. Internal pressure-responsive dampening layer.",
+    "texture": "Matte polymer finish with tactile segmented ridging across upper surface. Sharp metal eyelets contrast smooth side-zip track. Minimal shine — anti-glare industrial treatment. Subtle grip-pattern sole.",
+    "color_scheme": "Matte dark olive (official Tier 3 utility green). Charcoal-grey accent ridging on armor segments. Gunmetal metal hardware and eyelets. Black sole with grey tread channels.",
+    "closures": [
+      "Side-zip closure with metal track and pull tab for rapid on/off",
+      "Metal lacing eyelets running full length — can be laced or left loose with zip closed",
+      "Friction-fit internal ankle collar with memory foam"
+    ],
+    "distinctive_features": [
+      "Segmented armor plating with force-channeling ridge geometry",
+      "Steel-reinforced toe cap visible as subtle raised seam",
+      "Metal heel strike plate creates audible impact signature",
+      "Korvan Industrial Footwear embossed logo on tongue",
+      "Integrated drainage grommets for wet environment use",
+      "Treaded sole with embedded micro-channels for traction on slick surfaces"
+    ],
+    "tier_indicator": "Tier 3 functional — working-class safety and industrial standard. Affordable durability without luxury finish or customization.",
+    "cultural_context": "Security personnel, factory workers, field technicians, construction crews. Signals preparedness and practical self-sufficiency. Worn by people who expect their feet to take punishment. Sub-military aesthetic without official military branding.",
+    "condition_typical": "Arrives pristine with visible factory ridging. Quickly shows scuff marks and sole wear. Metal eyelets develop patina. Armor segments accumulate minor stress fractures and gouges from regular impact. Often seen with mud crusted in tread channels or industrial staining."
+  },
+  "image_prompt": "Korvan Ironclad Combat Boot on a cyberpunk industrial worker model with augmented calf port visible above the boot collar. Low-angle ground-level shot emphasizing the armored segmentation and steel toe cap. Dark metallic warehouse backdrop with neon green safety signage blurred in background. Boot resting on wet concrete floor reflecting overhead sodium lights. Moody amber and blue color grading. Shallow depth of field focusing on armor ridge detail and metal eyelets. --ar 2:3 --v 6"
 }

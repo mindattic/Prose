@@ -80,5 +80,24 @@
     "The Pit Boss",
     "The Pure Hand",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A chunky, segmented exoskeleton-style armor suit with pronounced ceramic-composite plating. The design reads industrial and purposeful rather than sleek—oversized shoulder pauldrons, thick forearm guards, and hefty thigh plates that suggest genuine load-bearing capacity. The undersuit is visible in gaps between panels, a dark graphite weave that contrasts with the lighter armor segments. Overall silhouette is blocky and geometric, optimized for function over form.",
+    "dimensions": "Torso-mounted primary plates measure ~35cm wide by ~40cm tall; shoulder pauldrons extend ~20cm laterally. Full suit spans roughly 180cm on an average-frame wearer. Forearm guards ~25cm long, thigh plates ~30cm each.",
+    "weight_description": "Heavy but wearable—9.4 kg distributed across torso, shoulders, and limbs. Requires active postural adjustment and conditioning to wear for extended periods. Not cumbersome enough to prevent basic movement, but noticeable load.",
+    "primary_material": "Ceramic-polymer composite panels (primary armor); graphene-reinforced polyaramid weave undersuit; stress-redistribution lattice framework in semi-rigid elastomer.",
+    "finish": "Matte ceramic surface on panels with subtle micro-texture from controlled fracture patterns. Undersuit has a technical, tight-weave appearance with faint grid-line texture from the lattice structure visible beneath translucent graphite polymer.",
+    "color_scheme": "Panels: industrial beige, grey-white, and muted sage undertones (practical jobsite colors). Undersuit: dark charcoal grey with faint metallic sheen from graphene weave. Accent elements in orange/warning-yellow stripe detailing along shoulder and hip assembly edges.",
+    "interface_elements": "Minimal visible interface—small status indicators (pressure-sensor readout) on left shoulder in small LCD format showing load metrics. Modular quick-release cartridge slots visible on torso and limb sections (tool-free latches recessed slightly). Adjustable straps and tension points with industrial-style D-ring fasteners in brushed steel. Small embossed pressure-sensing membrane outline visible on undersuit torso beneath panels.",
+    "distinctive_features": [
+      "Visible microfracture web patterns on ceramic panels—hairline cracks that stay sealed, evidence of impact redistribution",
+      "Recessed modular panel cartridge slots with quick-swap mechanism, color-coded for different coverage zones",
+      "Integrated shoulder and hip bracing assemblies visible as reinforced articulation points with small pneumatic assist cylinders",
+      "Pressure-sensor membrane outline woven into undersuit—subtle geometric grid pattern visible at torso",
+      "Tool-less fastening system; everything designed for field replacement without technician support"
+    ],
+    "manufacturer_markings": "PALLADIAN CONSTRUCTION logo (geometric P-frame symbol) stamped on upper left shoulder plate. Regulatory compliance labels on right bicep (Class IV impact rating, temperature range, material composition). Serial number and batch code etched along interior hip assembly. Small instructional pressure-sensor diagram on undersuit chest panel.",
+    "condition_typical": "In active use, panels show wear patterns—scuff marks, minor cracks that follow the lattice redistribution pattern, occasional replacement panels in slightly different shade indicating fieldwork. Straps show compression marks and sweat staining. The suit looks worn-in and practical rather than pristine, conveying extensive use on sites or in street enforcement."
+  },
+  "image_prompt": "Cyberpunk product photography: Palladian Construction Compressive Load Carapace armor suit displayed on an articulated industrial mannequin in a dimly lit workbench environment. Dramatic side-lighting from above-left reveals the geometric ceramic panel texture and microfracture patterns. The suit dominates the frame—chunky, beige and grey, utilitarian. Close-up detail showing the pressure-sensor membrane grid visible through the dark graphene undersuit at the torso. Quick-swap panel cartridge slots recessed and color-coded. Weathered, working-class patina visible—scuff marks, minor stress fractures. Background: blurred industrial workshop with neon safety signage (orange, cyan), scattered tool racks, holo-display screens showing load stress diagrams. Metal workbench surface reflects cool overhead light. Atmosphere: functional, industrial, no-nonsense cyberpunk gear—this is street armor, not fashion. Cinematic contrast between the suit's solid materiality and the digital workshop environment. --ar 3:2 --v 6"
 }

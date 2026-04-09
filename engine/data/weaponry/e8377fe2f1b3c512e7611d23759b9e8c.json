@@ -45,5 +45,34 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Axiom Systems White Noise Bubble Generator WNB-1",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, hydrodynamic pistol with a distinctly aquatic design philosophy. The Barracuda resembles a scaled-down speargun crossed with military-grade hardware — sleek, purposeful, and engineered for hostile underwater environments. Its profile is aggressive but refined, suggesting precision rather than brutality.",
+    "dimensions": "230mm length, 45mm width at grip, 65mm height including gas chamber. Barrel extends 120mm forward of the slide.",
+    "weight_description": "Dense and balanced — 1.1 kg feels substantial in a gloved hand without becoming unwieldy. The weight distribution favors the barrel, anchoring the weapon against recoil impulse in water.",
+    "primary_material": "Reinforced titanium-polymer composite frame with steel barrel assembly. The gas-generating sabot chamber is precision-machined stainless steel with internal corrosion-resistant coatings.",
+    "finish": "Deep matte gunmetal with brushed titanium accents on the slide. The barrel shows a distinctive satin finish to resist salt-water oxidation. All exposed steel surfaces are hardcoat anodized.",
+    "color_scheme": "Primary gunmetal gray with brushed silver-titanium accents on the slide and trigger guard. Heat-dispersal vents along the gas chamber are highlighted in navy blue — a practical design choice and manufacturer signature.",
+    "grip_texture": "Textured polymer with subtle ribbing for underwater purchase. Treated with a hydrophobic coating that prevents algae growth and maintains grip security even with heavy glove material.",
+    "distinctive_features": [
+      "Gas-generation chamber prominently bulged beneath the barrel — the weapon's most visually distinctive element",
+      "Eight-round drum magazine with transparent polycarbonate section showing dart position",
+      "Aggressive cooling vents along the gas chamber in a triangular array pattern",
+      "Depth-pressure gauge integrated into the left side of the slide (thin circular window)",
+      "Suppression port at muzzle with five radial chambers designed to direct supercavitation bubble formation",
+      "Safety lever with three positions: SAFE, FIRE, VENT (hydrogen release)",
+      "Weapon rail on underside for tactical light or rangefinder attachment",
+      "Corrosion-resistant serial plate engraved on gas chamber showing manufacturing batch and pressure rating"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo stamped on the slide in raised lettering. Serial number and pressure certification (max depth 500m) engraved on the gas chamber. Small ⚠ symbol next to the VENT safety position.",
+    "condition_typical": "Field weapons show salt residue buildup around vents and minor scoring on the barrel from repeated supercavitating discharge. Well-maintained examples display evidence of regular chemical treatment. Combat-worn examples show chipped paint on edges and micro-corrosion around the trigger assembly — signs of extended submersion operations."
+  },
+  "image_prompt": "Product photography of the Arcturus UW-8 Barracuda underwater pistol. Weapon displayed on a dark metallic surface with water droplets and salt residue. Dramatic side-lighting from a cool blue-white source creates sharp shadows across the gas-generation chamber and suppression port. Titanium and gunmetal surfaces catch the light with gunmetal and silver highlights. Close-up detail showing the transparent magazine drum with visible dart positioning. Background is deep navy fading to black, suggesting underwater depth. The weapon is crisp and in-focus, emphasizing precision engineering and corrosion-resistant materials. Cyberpunk GLMZ aesthetic: military-industrial design language, advanced materials, purpose-built lethality. Atmospheric: small air bubbles visible in the water droplets on the surface around the weapon. --ar 3:2 --v 6"
 }

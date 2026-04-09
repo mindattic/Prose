@@ -42,5 +42,36 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Graviton Lens GL-3 'Crush Depth'",
+    "Cem Watanabe-Amponsah",
+    "Erkin Nordin-Asante-Mensah",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Nika Svensson-Kone"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, anvil-shaped emitter cannon with a pronounced barrel assembly that flares outward like an inverted trumpet. The weapon's silhouette suggests raw, uncompromising force — all sharp angles and purposeful mass. At first glance, it reads as heavy ordnance masquerading as crowd control, industrial and imposing rather than sleek.",
+    "dimensions": "Length: 94 cm | Width (at emitter flare): 32 cm | Height: 28 cm | Barrel extension: 38 cm",
+    "weight_description": "Hefty and grounded — 14 kg of dense engineering that demands respect. The weight is front-loaded toward the flared emitter, creating a deliberate downward bias that mirrors the weapon's gravitational function. Requires a firm two-handed grip; single-handed operation is possible but exhausting over repeated use.",
+    "primary_material": "Reinforced titanium-composite frame with aluminum heat-dispersal fins. The emitter cone is constructed from aerospace-grade carbon-ceramic to withstand repeated gravitational pulse discharge without warping.",
+    "finish": "Matte gun-metal gray with brushed titanium accents. The emitter cone features a subtle iridescent sheen — a telltale sign of the gravitational field calibration layer. Surface is deliberately non-reflective to prevent targeting laser detection.",
+    "color_scheme": "Primary: gunmetal gray | Accents: brushed titanium silver | Emitter interior: deep charcoal with faint cyan energy tracery",
+    "grip_texture": "Textured polymer grip with embedded cooling channels running lengthwise. The texture is aggressive — fine diagonal crosshatching — designed to prevent slip even with wet or gloved hands. Warm to the touch after extended use due to passive heat dissipation.",
+    "distinctive_features": [
+      "Flared emitter cone with radiating acceleration rings visible on interior surface",
+      "Integrated thermal management vents along the barrel shaft — five horizontal slits per side",
+      "Cyan-blue power cell indicator ring that circles the grip junction, pulsing with charge state",
+      "Recessed targeting reticle plate above the grip — no traditional sight, only calibration markings",
+      "Gravitational field harmonics display strip along the left side — three digital readouts showing pulse frequency, cone angle, and force magnitude",
+      "Heavy-duty Picatinny rail on dorsal surface for mounting stabilization equipment",
+      "Discharge chamber vents with faint residual electromagnetic shimmer after firing",
+      "Rubber-capped cable port on rear for field power coupling"
+    ],
+    "manufacturer_markings": "TALON SYSTEMS stamped in bold sans-serif font on the upper receiver. Model designation 'GPE-3' etched into the left side of the barrel. Serialization plate mounted flush on the grip with GLMZ compliance certificates and power safety ratings. Faint Φ currency stamp indicating military-contractor tier pricing.",
+    "condition_typical": "Field units show battle-worn finish with scuffed matte coating, micro-fractures in the emitter cone ceramic from repeated gravitational stress, and carbonized heat streaking around the discharge vents. Well-maintained examples retain the brushed titanium shine; heavy use specimens develop a dull, almost charred appearance from thermal cycling."
+  },
+  "image_prompt": "A Talon Systems Grav-Pulse Emitter GPE-3 'Downdraft' resting on a dark metallic table, three-quarter view angled to emphasize the flared emitter cone. The weapon's gunmetal gray finish catches dramatic side-lighting that picks out the brushed titanium accents and heat vent geometry. The cyan power indicator ring glows softly at the grip junction. Subtle electromagnetic shimmer distorts the air immediately around the emitter opening. Foreground: a gloved tactical hand gripping the textured polymer handle for scale. Background: out-of-focus industrial cyberpunk environment with neon signage. Cinematic product photography with deep blacks and high contrast. Professional equipment aesthetic. --ar 3:2 --v 6"
 }

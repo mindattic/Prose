@@ -79,5 +79,24 @@
     "TESSERA PG-2 'Signature'",
     "The Nearfield",
     "The Quiet Room"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A tailored heavy-weave tactical coat with a deceptively civilian appearance—structured shoulders, clean lines, and a fitted silhouette that reads as high-end streetwear rather than military hardware. The coat's exterior betrays no obvious tech integration; the metamaterial suppression system is entirely internal, visible only as subtle geometric quilting patterns running along the interior lining.",
+    "dimensions": "Standard adult jacket; chest width 45–50cm when laid flat, length 65–72cm, sleeve length 60–65cm depending on wearer",
+    "weight_description": "2.1kg total with battery cell installed. Handheld-weight distributed across shoulders and torso; worn weight is negligible due to balanced load distribution across the coat structure",
+    "primary_material": "Outer shell: reinforced synthetic blend (polymer-cotton hybrid) in matte finish; inner lining: interlocking metamaterial panels (composite resin with embedded resonance tuning elements)",
+    "finish": "Outer fabric has a soft, tactile matte finish with subtle texture—resembles high-grade tactical fabric but reads as premium civilian outerwear. Inner metamaterial lining has a faint iridescent quality visible only in specific light angles, hinting at its technological nature",
+    "color_scheme": "Four colorways: midnight charcoal (primary), urban grey, midnight blue, and matte black. Minimal accent color—subtle reflective piping along seams in dim grey or slate",
+    "interface_elements": "Single tactile pressure switch embedded in left inner cuff (recessed, press-and-hold activation). Small status indicator light (dim blue LED when active, amber during battery swap mode) inside left chest pocket. Battery cell access panel on left interior seam (concealed snap-closure, requires 90-second manual swap). No visible screens or prominent controls",
+    "distinctive_features": [
+      "Geometric quilting pattern on interior lining—organic-looking but precisely structured, hinting at metamaterial lattice beneath",
+      "Faint iridescent shimmer visible on metamaterial lining only in certain light angles",
+      "Nearly invisible battery cell—sleek cylindrical module no larger than a power bank, integrated into coat's internal pocket structure",
+      "Textured inner seam work—metamaterial panels create subtle raised patterns on the inside surface",
+      "Concealed activation switch—requires knowing exactly where to press; no obvious controls visible"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS discreet woven label inside left collar (small, professional typeface, no logo decoration). Regulatory compliance stamp and frequency band documentation tucked inside battery compartment",
+    "condition_typical": "In use, appears as an ordinary high-quality tactical or technical wear jacket. When active, no external indicators of function—the 3-meter suppression field is entirely invisible. After 4 hours of continuous operation, a subtle warmth develops in the inner lining due to metamaterial harmonic activity"
+  },
+  "image_prompt": "Product photography: Arcturus Ironveil Jammer Cloak displayed on a torso mannequin in a darkened workbench setting, shot from 3/4 angle. Dramatic side lighting reveals the matte weave texture of the charcoal outer fabric while subtle blue accent lighting from above catches the faint iridescent shimmer of the exposed inner metamaterial lining as the coat hangs open. The left interior cuff is visible, showing the barely-perceptible pressure switch. Scattered around the base: a detached battery cell glowing faintly with amber status light, a small regulatory compliance card, and circuit analysis schematics on a dimly-lit screen in the background. Cyberpunk aesthetic with cool color grading, volumetric shadows, and the coat exuding high-end tactical sophistication. Gritty, professional product shot evoking advanced GLMZ military-grade equipment. --ar 3:2 --v 6"
 }

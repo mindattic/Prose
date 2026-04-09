@@ -43,5 +43,26 @@
     "Iowan Behemoth — 'The Foundry'",
     "Slagworks Industrial",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Brutalist utilitarian sneaker with exaggerated proportions—chunky, wide-set silhouette that reads industrial and unapologetically functional. The platform sole dominates the profile, making the wearer appear slightly elevated. Despite its bulk, it has an honest, no-frills aesthetic that signals practical necessity over fashion.",
+    "fit": "Deliberately oversized through the toe box and midfoot to accommodate prosthetic augmentations of varying sizes and weight distributions. Relaxed, almost boxy fit with aggressive arch support. Three width options available for custom accommodation.",
+    "primary_material": "Ballistic nylon upper with reinforced synthetic leather panels at heel and toe strike zones. Chunky rubber outsole in industrial gray-black compound. Removable footbed system with nylon-backed insole.",
+    "texture": "Rough, utilitarian—matte nylon with slightly textured synthetic leather overlays. The outsole has deep lugs with visible molding seams. Insole stack is firm and modular, designed for frequent adjustment.",
+    "color_scheme": "Charcoal gray nylon upper with black synthetic leather reinforcements. Outsole in deep anthracite with worn concrete-gray platform. Minimal branding in faded white stencil.",
+    "closures": "Standard lace system with friction-lock eyelets. No magnetic or tech-assisted fastening—reliability over novelty.",
+    "distinctive_features": [
+      "Removable modular footbed system with included adjustment shims",
+      "Exceptionally deep and wide toe box to clear prosthetic feet",
+      "Chunky flat platform sole (approximately 1.5 inches) for weight distribution",
+      "Reinforced heel and toe strike zones in synthetic leather",
+      "Faded 'Foundry Goods Co.' stencil on tongue and heel",
+      "Visible stitching and seams—no attempt to hide construction",
+      "Three width variants (Standard, Wide, XWide) marked subtly on insole"
+    ],
+    "tier_indicator": "Tier 2-3 functional. Ubiquitous on the Shelf and lower Tier 2—the working aug's standard-issue footwear.",
+    "cultural_context": "Worn by augmented laborers, industrial workers, prosthetic users, and anyone whose augmentation requires accommodation over aesthetics. Signals no-nonsense practicality and acceptance of cyborg existence. Zero fashion pretension.",
+    "condition_typical": "Broken-in and scuffed within weeks. Outsole shows worn flat spots at heel and ball of foot. Laces often frayed or replaced with industrial cord. The shoe looks better the more beaten it gets—its utilitarian purpose becomes more evident with wear."
+  },
+  "image_prompt": "Foundry Broadfoot Work Sneaker displayed on dark minimalist mannequin foot, shot from three-quarter angle against brushed concrete wall. Harsh neon accent light revealing the chunky gray outsole platform and faded white Foundry branding. Studio lighting emphasizes the utilitarian seams and ballistic nylon texture. Moody cyberpunk industrial aesthetic. Dark background, no lifestyle context. --ar 2:3 --v 6"
 }

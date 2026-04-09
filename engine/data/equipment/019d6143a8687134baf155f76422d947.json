@@ -78,5 +78,23 @@
     "TESSERA PA-5 'Attendant'",
     "TESSERA PG-2 'Signature'",
     "The Bazaar"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A slim, flat rectangular device resembling a thick credit card or small adhesive patch. Clean, minimalist industrial design with no visible branding to the untrained eye. Designed to be inconspicuous when affixed to infrastructure.",
+    "dimensions": "8.5cm × 5.4cm × 0.3cm (playing card form factor, fits in a palm)",
+    "weight_description": "Extremely lightweight at 18g — pocketable, negligible carrying weight",
+    "primary_material": "Matte-finished composite polymer housing with embedded RF antenna traces and passive energy harvesting circuitry visible as faint metallic lattice patterns beneath translucent resin layer",
+    "finish": "Satin-matte textured polymer on top surface; adhesive backing (slightly tacky to touch) on underside with subtle industrial grip pattern. No gloss or shine — designed for visual silence.",
+    "color_scheme": "Charcoal gray primary with minimal accent — a single thin line of muted amber/copper running along one edge indicating the RF collection ridge. Sometimes unmarked; some variants show faint Ringo Corporation engineering stamps in micro-print.",
+    "interface_elements": "No visible user interface. A recessed micro-USB port (barely visible, flush-mounted) on the narrow edge for initial session key provisioning; indicator LED (sub-surface, only visible when powered and receiving signal) glows faint blue-green at ~2Hz when parasiting active connection.",
+    "distinctive_features": [
+      "RF antenna ridge visible as hairline metallic trace along one edge",
+      "Nearly invisible operation — designed to vanish against surfaces",
+      "Passive energy harvesting topology leaves faint thermal signature under IR inspection",
+      "Removal leaves zero residue or surface marking"
+    ],
+    "manufacturer_markings": "Ringo Corporation logo stamped in micro-print on one corner (often deliberately obscured); Community Investment Trust regulatory compliance stamp on underside (less than 2mm, gray-on-gray). Some units bear no markings at all.",
+    "condition_typical": "Affixed to concrete utility boxes, steel structural beams, or glass smart-building surfaces, nearly invisible to casual observation. When powered (parasiting a nearby node), only distinguishable by sub-surface amber trace glow and barely-perceptible thermal warmth. After 2+ years in field, adhesive may show minor dust accumulation but remains functional."
+  },
+  "image_prompt": "Product photography of a slim charcoal-gray rectangular device the size of a thick credit card, lying flat on a worn steel workbench next to a soldering iron and dismantled mesh node. Dramatic top-down lighting reveals faint copper-amber RF trace lines and nearly-invisible micro-USB port. Background: blurred bokeh of GLMZ infrastructure — concrete wall, industrial piping. Moody cyberpunk aesthetic with cool blue-green accent lighting reflecting off the device's matte surface. Shallow depth of field emphasizes the device's minimalist, threatening simplicity. --ar 3:2 --v 6"
 }

@@ -47,5 +47,26 @@
     "GLMZ",
     "Nika Svensson-Kone",
     "Tessera Nexus Town Car"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular full-coverage tactical helmet with a pronounced forward-swept visor. The design prioritizes protection without sacrificing visibility—the visor wraps nearly 180 degrees around the wearer's face. The helmet has a distinctly modern military aesthetic with subtle corpo-sleek refinement; it's aggressive but not brutal.",
+    "dimensions": "Approximately 28 cm tall, 24 cm wide, 22 cm deep. Medium/large adult head-sized form factor.",
+    "weight_description": "Handheld-light; under 2 kg with integrated systems. Designed for all-day wear without neck fatigue.",
+    "primary_material": "Composite boron carbide ceramic faceplate and crown with ultra-high-molecular-weight polyethylene backing layers. Matte black and gunmetal base with reinforced impact zones.",
+    "finish": "Textured matte ceramic on strike surfaces; satin gunmetal accents on structural ribbing. Visor has a faint amber anti-reflective coating visible at oblique angles.",
+    "color_scheme": "Deep matte black primary body. Gunmetal gray reinforcement ribs and mounting brackets. Amber/gold tinted visor with subtle green AR reticle glow when powered. Minimal corpo branding in matte gray.",
+    "interface_elements": "Integrated HUD visor with multi-mode display (thermal/low-light/AR toggles via temple-mounted haptic controls). Two recessed buttons on left side (comms cycle, overlay select). Bone-conduction speaker grilles visible at temples and rear neck. Rebreather port on lower left jaw with NBC filter cartridge (magnetic-snap fit). Micro-LED status indicators (power, comms, filter saturation) along rear neck band. Modular headset connector jack at right temple.",
+    "distinctive_features": [
+      "Panoramic wraparound visor with faint prismatic distortion pattern visible in certain light—signature AR display tech",
+      "Integrated thermal imaging bloom visible as faint red pinpoints behind the visor when active",
+      "Reinforced cheekbone and jaw guards with subtle ribbed texture for impact dispersion",
+      "Articulated neck guard with articulated ceramic-lined rear section",
+      "Hexagonal vent ports on crown for heat dissipation, arranged in Arcturus Defense Solutions logo pattern",
+      "Amber pneumatic pressure relief valve on left side—indicates NBC filter status",
+      "Fine toolmark patterns on ceramic surfaces from precision CNC finishing"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS embossed in sans-serif block letters on rear crown. Model designation 'BH-9 IRONHEAD' printed in small white text on right temple. GLMZ Regulatory Commission NIJ Level IV certification stamp on interior left band. Serial number etched into internal padding.",
+    "condition_typical": "Worn with minor wear patterns on forward visor rim and impact zones; scratches and dust streaks from field use are common. Rebreather cartridge frequently replaced/dirty. Status LEDs visible but dimmed in normal light. Visor often has fingerprint/dust residue when not freshly cleaned."
+  },
+  "image_prompt": "Product photograph of the Arcturus BH-9 Ironhead tactical helmet, mounted on a carbon-fiber helmet stand on a steel workbench. Dramatic side-angled lighting casts sharp shadows across the ceramic surfaces, highlighting the angular geometric form. The wraparound visor glows faintly with embedded green AR reticles. Hexagonal vent ports on the crown reflect cool blue-white studio light. Rebreather port on lower jaw is visible with a fresh NBC filter cartridge installed. Background is a blurred GLMZ corporate lab environment with holographic displays. Cyberpunk aesthetic with high-contrast shadows, cool color temperature, and sharp detail focus on the visor and reinforcement ribbing. Visible status LEDs along rear neck band emit soft amber light. Hyperrealistic material rendering showing matte ceramic texture and metallic gunmetal accents. Composition emphasizes the helmet's forward-swept aggression and advanced protection geometry. --ar 3:2 --v 6"
 }

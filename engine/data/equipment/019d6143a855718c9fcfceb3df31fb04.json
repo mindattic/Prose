@@ -49,5 +49,25 @@
   "parent_corponation": "",
   "related_entities": [
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, pen-sized diagnostic wand with a tapered grip and reinforced tip connector. Resembles a high-end stylus crossed with clinical instrumentation. The device has a distinctly medical precision aesthetic—clean lines, no unnecessary bulk.",
+    "dimensions": "18 cm long, 1.2 cm diameter barrel",
+    "weight_description": "Ultra-lightweight (150g), easily pocketable, designed for one-handed operation",
+    "primary_material": "Aircraft-grade aluminum alloy chassis with medical-grade polycarbonate grip section",
+    "finish": "Brushed satin metallic on barrel, textured rubberized grip with micro-knurling for moisture resistance",
+    "color_scheme": "Gunmetal gray body with white accent trim; soft blue indicators along the length",
+    "interface_elements": "Micro-LED status ring near the tip (green/yellow/red diagnostics), single capacitive activation button on grip, recessed micro-USB-C charging port at base, holographic data projection lens at tapered tip",
+    "distinctive_features": [
+      "Diagnostic port connector with spring-loaded alignment guides",
+      "Soft blue breathing LED during active scan",
+      "Holographic micro-display projects results onto nearby surface or AR overlay",
+      "Integrated thermal dissipation vanes along barrel",
+      "AXIOM SYSTEMS embossed logo with serial number above grip",
+      "Faint cybernetic circuit-pattern etched into grip section"
+    ],
+    "manufacturer_markings": "AXIOM SYSTEMS NIDT-3 printed in white sans-serif on upper barrel; Φ 2,800-4,200 price range indicator; regulatory certification marks for GLMZ medical standard compliance",
+    "condition_typical": "Carried in dedicated quick-draw wrist holster or lab coat pocket; minor micro-scratches on barrel from diagnostic port insertions; faint bioelectric residue patterns on connector tip from recent interface checks"
+  },
+  "image_prompt": "Axiom Systems NIDT-3 neural diagnostic wand displayed on brushed stainless steel medical workbench, tilted at 45 degrees. Close-up macro photography showing the metallic tapered tip with micro-LED diagnostic ring glowing soft blue, holographic data particles floating above the connector end. Cyberpunk med-tech aesthetic with cool accent lighting—blue and cyan neon reflecting off the brushed aluminum barrel. Blurred background of neural interface sockets and diagnostic cables. Dramatic side-lighting emphasizing the precision engineering and clinical precision. Dark moody GLMZ clinic setting with scattered haptic displays showing neural scan readouts. Professional product photography, hyper-detailed, surgical precision --ar 3:2 --v 6"
 }

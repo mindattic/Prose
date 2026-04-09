@@ -22,7 +22,7 @@ public class FactDiscoveryService
 
     public FactDiscoveryService(IPathProvider paths)
     {
-        dbPath = Path.Combine(paths.DataRoot, "v3", "truth-discovery", "facts.db");
+        dbPath = Path.Combine(paths.DataRoot, "v3", "python", "facts.db");
     }
 
     public bool IsAvailable => File.Exists(dbPath);

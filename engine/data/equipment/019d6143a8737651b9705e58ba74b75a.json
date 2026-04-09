@@ -79,5 +79,24 @@
     "Thermal Signature Inverter TSI-2 'Cold Case'",
     "Vantablack Media Spectral Barrier Display System",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist rectangular slab with the austere geometry of a luxury cigarette case. The form factor is intentionally unremarkable—designed to disappear in a pocket or palm. Its absolute flatness and sharp edges give it an almost brutalist aesthetic, like a piece of industrial design from the early 21st century, which is precisely the point: something that would not draw a second glance.",
+    "dimensions": "95mm × 55mm × 12mm (roughly the size of a classic cigarette pack, or a thick credit card wallet)",
+    "weight_description": "180g—substantial enough to feel engineered and expensive, light enough for pocket carry without burden. Sits confidently in a closed fist.",
+    "primary_material": "Aerospace-grade anodized aluminum chassis with embedded Vasquez Biocompatible resin buffer layer for shock absorption and signal isolation",
+    "finish": "Deep matte black with a near-invisible ceramic scratch-resistant coating. No reflective surfaces; designed to absorb light rather than catch it. Edges beveled to a 1.5mm radius, slightly chamfered to catch edge light subtly.",
+    "color_scheme": "Primary: forensic matte black. Accents: brushed gunmetal gray on the recessed dial ring; muted arctic blue LED indicators visible only when powered and receiving signal.",
+    "interface_elements": "Single recessed rotary dial (45mm diameter, recessed 3mm flush into the chassis) marked with subtle index hash marks in gray; no numbers or labels—keys are memorized by touch. Flush-mounted speaker grille (8mm × 25mm) behind a perforated stainless mesh. Micro-USB-C port on the right edge, recessed slightly. Three flush indicator LEDs: Arctic blue (signal lock), dim amber (battery <20%), red (key mismatch/dead air).",
+    "distinctive_features": [
+      "The recessed rotary dial is the only tactile control—deliberately analog and mechanical to resist electronic probing",
+      "Speaker grille uses a hyperbolic sound-directing chamber underneath for directional audio projection without visible hardware",
+      "Absolutely featureless except for the dial; no branding visible on the front face",
+      "Edges catch only the thinnest sliver of light due to the matte finish and micro-beveling",
+      "When powered, the interior chassis emits an almost imperceptible low-frequency hum—a side effect of the Spectral Smear Engine's harmonic frequency distribution"
+    ],
+    "manufacturer_markings": "Micro-etched on the bottom edge in 2pt type: 'TESSERA CORPORATION | SPECTRAL SMEAR ENGINE | VBM CHASSIS | GLMZ REG. TIER 2+' and a serial number. A discreet Vasquez Biocompatible Materials holographic verification seal (5mm diameter) embedded flush into the back panel, visible only at specific angles.",
+    "condition_typical": "Pristine. Because there are no moving parts except the dial, these units show almost no wear even after years of use. The dial may develop a slight patina from fingertip oils over time, but this only deepens the matte black aesthetic. Units in the field are typically wrapped in nondescript ballistic nylon sleeves (unmarked, gray or black) to further reduce visual profile."
+  },
+  "image_prompt": "Overhead product shot of a Tessera Corporation Gradient Veil Transceiver on a brushed steel workbench, next to a standard micro-USB charging cable and a throat microphone connector. The device is positioned at a 35-degree angle showing the recessed dial detail and flush speaker grille. Dramatic cool-blue accent lighting from the upper left casts the matte black chassis into near-silhouette, with a single rim light revealing the beveled edges in gunmetal gray. A faint arctic-blue LED indicator glows from the front face. Background is out-of-focus dark metal and cable conduit. Cyberpunk noir aesthetic, ultra-clean, minimalist framing. Product photography style, shallow depth of field. --ar 3:2 --v 6"
 }

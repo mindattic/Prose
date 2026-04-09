@@ -39,5 +39,26 @@
   "related_entities": [
     "Dzemal Acholonu-Patagiri",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian silhouette with a distinctly patched, jury-rigged appearance. The trousers read as heavy-duty workwear that has been systematically reconstructed with visible silver tape seams running vertically along the legs, across the crotch panel, and horizontally at stress points. Despite the ad-hoc repair work, there's an almost architectural quality to the tape placement—suggesting functional intention rather than pure desperation.",
+    "fit": "Relaxed, straight-leg cut through the thigh with a slight taper at the ankle. The tape reinforcement adds subtle rigidity to certain sections, creating micro-bunching where adhesive overlaps. Moves with a stiff, industrial quality; less flexible than standard fabric trousers but provides compression at key stress points.",
+    "primary_material": "Degraded base fabric (likely salvaged synth-cotton blend or recycled composite weave, indeterminate original color) patched and held together with Goretek industrial-grade bonding tape—a silvery, reflective polyester-backed adhesive rated for sub-zero and high-heat environments.",
+    "texture": "The base fabric is worn smooth with age, slightly fuzzy in places where the nap has lifted. The tape creates raised, tactile seams with a semi-glossy finish that catches light. Edges of tape show slight curling or lifting at corners, giving micro-texture variation. Running your hand along the seams would feel the transition between soft worn fabric and smooth, slightly tacky adhesive backing.",
+    "color_scheme": "Muddy grey-brown base (sun-faded, stained with oil and grime) contrasted sharply with Goretek's signature industrial silver-grey tape. The tape dominates the visual field—vertical stripes, cross-hatching, and irregular patch placement create a striped or lattice pattern depending on viewing angle. Discoloration and darkening around tape edges from dirt accumulation.",
+    "closures": "Friction-fit waistband (likely original, now elasticated with wear) with a single industrial-duty snap or magnetic clasp at the fly—often replaced with additional tape wrap for security. No zipper; any original closure has been superseded by tape infrastructure.",
+    "distinctive_features": [
+      "Systematic silver tape reinforcement creating a structural exoskeleton—not random patches but deliberate seam rebuilding",
+      "Double-layered tape at high-stress areas: inner thighs, knee zones, crotch panel",
+      "Visible wear patterns where tape has partially peeled and been re-applied, showing layers",
+      "Possible hand-scrawled identification marks or cargo identification codes written on tape sections with permanent marker",
+      "Tapered cuffs wrapped in additional tape for durability and to prevent fraying",
+      "Faint Goretek branding visible on tape itself—part of the garment's unintentional aesthetic",
+      "Oil stains and industrial grime embedded into fabric; tape shows fingerprints and handling marks"
+    ],
+    "tier_indicator": "Tier 4-5 (working class to sub-grade). While technically functional, these are a visible marker of economic necessity and life on the Shelf. Someone wearing these is not avoiding labor or maintaining corporate presentation standards.",
+    "cultural_context": "Worn by dock workers, Behemoth wranglers, salvage crews, and contract labor. The wearer signals: 'My clothes need to survive what I do, and I solve problems with available materials.' There's a subcultural respect for this kind of visible repair—it reads as honest, practical, refusing to discard and replace. Also signals familiarity with industrial adhesives and hands-on work; possible affiliation with informal repair networks or self-sufficiency culture.",
+    "condition_typical": "Weathered and visibly aged. The tape itself shows 3-6 months of use per application—slight yellowing, micro-tears, and lifting at edges are normal. The base fabric underneath is thin and often stained. These trousers are never pristine; they're a document of continuous repair and re-repair."
+  },
+  "image_prompt": "Close-up fashion photograph of Goretek tape-reinforced work trousers on a lean, chrome-augmented model or dark industrial mannequin. The trousers dominate the frame, showing detailed silvery duct-tape seams running down both legs in intersecting patterns, with visible wear, dirt accumulation, and partial peeling at tape edges. Dim warehouse lighting casts shadows across the tape ridges, emphasizing texture. Grimy concrete wall or corrugated steel backdrop. The fabric reads as worn, functional, almost brutalist. Ultra-high detail on tape surface imperfections. Moody, unflinching documentation style. --ar 2:3 --v 6"
 }

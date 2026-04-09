@@ -40,5 +40,25 @@
     "Arcturus Exo-Runner Frame",
     "Lazarus LX-2 'Lab Rat'",
     "TESSERA PG-2 'Signature'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Second-skin compression legging with a sleek, athletic silhouette. High-waisted cut emphasizes the torso. Segmented paneling creates a subtle visual rhythm down the legs, adapting to augmentation geometry. Appears almost medical-grade in its precision but maintains streetwear appeal.",
+    "fit": "Compression fit throughout, with strategic widening at knee and ankle housings to accommodate prosthetic and chrome augmentation bulk, then tapering at the calves and shins. High rise sits at natural waist. Zero excess fabric—clingy without restriction.",
+    "primary_material": "Synth-elastane blend with smart-weave compression fibers. Outer surface treated with friction-resistant coating to prevent snagging on chrome edges.",
+    "texture": "Smooth, almost liquid-looking surface. Inner side has a soft brushed microfiber feel. Segmented zones have subtle ribbed texture for reinforcement without visible ridging on the outside.",
+    "color_scheme": "Deep navy (nearly black in low light), with matte finish. Embossed Ovex wordmark at hip in subtle reflective thread.",
+    "closures": "High-waisted elastic band with internal drawcord adjustment. No external fasteners—friction-fit construction.",
+    "distinctive_features": [
+      "Segmented paneling engineered around augmentation joint housings",
+      "Wider compression zones at knees and ankles for prosthetic/chrome coverage",
+      "Tapered shafts to prevent bunching at chrome edges",
+      "Friction-resistant outer coating",
+      "Embossed Ovex branding at hip",
+      "Internal drawcord for micro-adjustments"
+    ],
+    "tier_indicator": "Tier 2-3 crossover. Premium prosthetic/augmentation wear, affordable for working-class augmented individuals, aspirational for Tier 4.",
+    "cultural_context": "Signals augmentation ownership and active integration into corpo or street medical ecosystems. Wearer is cyborg-positive, likely relies on prosthetics or chrome limbs daily. Practical, unashamed visibility.",
+    "condition_typical": "Appears pristine when new, develops subtle micro-scratches around ankle/knee areas from chrome contact over 6-12 months of wear. Rarely tears; usually worn until friction-resistant coating degrades."
+  },
+  "image_prompt": "Close-up fashion product shot of deep navy Ovex ChromeFit leggings on a dark-skinned model with a visible chrome prosthetic left leg. Model stands in a power stance, full-length from waist to toe. Moody neon-lit warehouse setting with cool blue and violet accent lighting reflecting off the chrome prosthetic. Sharp focus on the segmented paneling and the seamless transition between compression zones. Subtle embossed Ovex wordmark visible at hip. Dark concrete backdrop with scattered holographic ads. Cinematic, clinical precision meets streetwear confidence. --ar 2:3 --v 6"
 }

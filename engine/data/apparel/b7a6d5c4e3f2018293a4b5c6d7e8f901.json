@@ -50,5 +50,29 @@
     "Street Custom 'Coyote' Improvised Terrain Vehicle",
     "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
     "The Heritage Vault"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A substantial, structured knee-length silhouette with pronounced shoulders. The deep forest green creates an authoritative presence against urban concrete. The coyote-fur hood trim frames the face with luxurious fullness, contrasting sharply against the utilitarian canvas body. Reads as serious, capable, built for survival rather than aesthetics.",
+    "fit": "Relaxed through the torso with enough room for layering beneath. Slightly tapered at the waist to prevent bulk. Sleeves cut long enough to cover wrist augmentation ports. Hood designed to accommodate various head shapes and internal tech without compression.",
+    "primary_material": "Heavyweight waxed cotton canvas — industrial-grade, naturally water-resistant, develops a patina with use. Geneware coyote fur trim (ethically sourced, lab-grown to spec). 800-fill down insulation in baffle-box construction.",
+    "texture": "Canvas is stiff when new, with a subtle waxy sheen that dulls with wear. Develops creases and soft folds over time. Fur is dense and tactile, shedding-resistant. Interior knit cuffs are soft against skin. Brass hardware ages to a warm patina.",
+    "color_scheme": "Deep forest green (primary) — a shade chosen for visibility in whiteout conditions and absence of corpo branding colors. Coyote fur trim in warm tan-gray. Brass zippers and toggle buttons add warm metallic notes. Interior lining is neutral charcoal.",
+    "closures": "Heavy-duty brass YKK zipper with storm placket overlay. Four brass toggle buttons at chest. Brass buckles on side vents for adjustability. Wrist cuffs have internal elastic with knit draft stoppers — no external closure needed.",
+    "distinctive_features": [
+      "Storm placket prevents wind infiltration along main zipper",
+      "Dual-entry hand pockets cut deep for extended glove wear",
+      "Two chest pockets (one accessible, one internal security pocket for valuables)",
+      "Internal security pocket positioned at sternum for documents or currency chips",
+      "Geneware fur trim indistinguishable from wild-caught — ethical sourcing without compromise",
+      "Baffle-box down construction eliminates cold spots and maintains loft",
+      "Vents at side seams with adjustable buckles for temperature regulation",
+      "Reinforced stress points at shoulders, underarms, and pocket entries",
+      "No integrated tech — pure analog, fully repairable",
+      "Solvang woven label at interior collar (understated branding)"
+    ],
+    "tier_indicator": "Tier 4 primary market (working-class professionals, skilled labor, independent contractors). Occasional Tier 2 purchase (corporate workers saving for quality). Resale value strong — secondhand Solvang parkas common in Tier 4-5 markets.",
+    "cultural_context": "Signals practical competence, preparedness, and connection to pre-digital manufacturing values. Worn by maintenance workers, logistics coordinators, outdoor researchers, and anyone who takes winter survival seriously. Absence of tech or augmentation-specific features reads as 'I don't need smart to stay alive.' Milwaukee heritage and Norwegian ancestry appeal to working-class diaspora communities in GLMZ.",
+    "condition_typical": "Pristine when new, but quickly develops character — canvas creases follow the wearer's posture, fur loses initial fluffiness, brass develops patina. Typical worn example shows scuff marks at cuff edges, slight graying of canvas where hands frequently contact, and broken-in collar that molds to neck shape. This wear is considered desirable; it proves functionality."
+  },
+  "image_prompt": "A deep forest green expedition parka displayed on a weathered mannequin or worn by a stoic model with visible subcutaneous augmentation ports at wrists. Close-up detail of coyote-fur trim around hood, showing texture and density. Waxed canvas material catching moody amber and blue lighting in a Milwaukee-style warehouse setting, rain-slicked concrete visible. Brass hardware glinting softly. The overall mood is utilitarian luxury—built for brutal winters, worn by people who respect the cold. Harsh overhead industrial lighting with deep shadows. --ar 2:3 --v 6"
 }

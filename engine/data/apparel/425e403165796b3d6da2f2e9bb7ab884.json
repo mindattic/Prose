@@ -36,5 +36,25 @@
   "related_entities": [
     "Ambrosia Fekete-Waiyaki",
     "Aybek Alvarez-Okonkwo"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek, minimalist gloves that hug the hand like a second skin. The carbon-fiber weave creates a subtle sheen with fine geometric patterning. A thin grounding strip runs along the inner wrist in contrasting metallic silver. Fingertips appear slightly raised with visible micro-texture. Overall impression: precision tool disguised as apparel.",
+    "fit": "Form-fitting and compression, following every contour of the hand and wrist. No bulk or excess material. Designed for maximum tactile sensitivity and dexterity.",
+    "primary_material": "Carbon-fiber weave synthetic blend with conductive properties. Anti-slip micro-textured polymer coating on fingertips.",
+    "texture": "Smooth with subtle grid pattern from carbon weave. Fingertips have pronounced micro-roughness (like fine sandpaper) for grip. Inner wrist grounding strip feels like thin conductive tape.",
+    "color_scheme": "Matte charcoal grey base with silver-grey metallic grounding strip at wrist. Fingertip texture adds slight depth variation.",
+    "closures": "Friction-fit elastic cuff with integrated grounding contact point. No additional closures needed.",
+    "distinctive_features": [
+      "Continuous conductive grounding strip running along inner wrist",
+      "Micro-textured fingertip coating (visible as raised pattern)",
+      "Carbon-fiber grid weave visible across back of hand",
+      "Seamless construction with reinforced palm pad",
+      "Conductive stitching along wrist seam",
+      "Minimal branding — small Helion Manufacturing embossed logo on cuff"
+    ],
+    "tier_indicator": "Tier 3 functional equipment. Ubiquitous in manufacturing and repair sectors, affordable but specialized.",
+    "cultural_context": "Marks the wearer as factory tech, augmentation specialist, or component technician. Signals precision work and technical competence. Wearing them outside industrial settings suggests someone who works with their hands on delicate electronics.",
+    "condition_typical": "Worn-in but maintained. Micro-texture on fingertips shows flattening from extended use. Grounding strip may have visible oxidation or scuffing. Hand-washed regularly to maintain conductivity."
+  },
+  "image_prompt": "Close-up fashion photography of form-fitting Helion Manufacturing ESD gloves on a cyberpunk technician's hand. Hand positioned handling a microchip or circuit board in dramatic side-lighting. Carbon-fiber weave texture visible with reflective silver grounding strip at wrist catching light. Dark industrial workshop background with blue neon accent lighting. Model wears gloves with natural hand positioning suggesting precision work. Shallow depth of field focusing on fingertip micro-texture and wrist grounding strip. Moody, clinical lighting emphasizing the gloves' functional beauty. --ar 2:3 --v 6"
 }

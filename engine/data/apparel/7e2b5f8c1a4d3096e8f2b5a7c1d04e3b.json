@@ -42,5 +42,26 @@
   "related_entities": [
     "Slagworks Industrial",
     "The Circuit"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A versatile, military-adjacent field jacket with clean utilitarian lines and subtle tech integration. The taupe exterior reads as professional-grade workwear with understated copper accents that catch light. The silhouette is deliberately roomier through the back and shoulders to accommodate augmentation infrastructure, giving it a slightly forward-leaning posture when worn. It conveys competence and adaptability.",
+    "fit": "Relaxed through the torso and shoulders with extra accommodation in the upper back for spinal rigs and shoulder geneware. Sleeves cut to a standard length but removable. Waist remains relatively fitted to prevent excess fabric drag. Overall impression: functional but not baggy, designed for mobility and tech integration rather than fashion.",
+    "primary_material": "High-grade synth-wool blend with ballistic weave reinforcement at stress points. Warm taupe base with subtle copper threading woven through shoulder and closure areas.",
+    "texture": "Smooth, tightly woven exterior with a soft hand. Subtle horizontal quilting visible in the thermal liner (zip-out component). Magnetic closure nodes have a precision-machined texture, slightly raised against the fabric.",
+    "color_scheme": "Warm taupe (primary), copper/rose-gold accent nodes along shoulder seams and closure points. Neutral, corporate-leaning palette that reads as Tier 2-3 professional equipment.",
+    "closures": "Magnetic-snap system along front placket with visible copper-tone nodes. Sleeves detach via embedded magnetic locks at shoulder seams. Thermal liner zips in/out. Collar fastens with friction-fit molded clips (stowable) or magnetic locks when raised to chin-block position.",
+    "distinctive_features": [
+      "Detachable magnetic sleeves — can be worn sleeveless, one-sleeved, or full configuration",
+      "Zip-out thermal liner for temperature regulation",
+      "Roll-up collar that transforms into a high windblock or lies flat",
+      "Copper-toned magnetic closure nodes as visible tech/design element",
+      "Reinforced back panel cut wide to clear spinal augmentation rigs",
+      "Shoulder seams designed around standard shoulder geneware integration points",
+      "Discrete internal cable routing channels for integrated tech"
+    ],
+    "tier_indicator": "Tier 2-3 hybrid: expensive enough to signal corpo-adjacent professional work, yet practical enough for field operators and augmentation-heavy workers. Premium functional rather than luxury.",
+    "cultural_context": "Worn by field technicians, augmentation specialists, corpo security personnel, and independent contractors who work across the GLMZ's temperature zones and trust their gear to accommodate expensive body modifications. Signals someone who invests in reliable equipment over fashion.",
+    "condition_typical": "Broken-in but meticulously maintained. Expected to show light wear on sleeve magnetic nodes and collar stow mechanisms from repeated use. Thermal liner may show signs of thermal cycling. No patching — Tier 2-3 users replace rather than repair."
+  },
+  "image_prompt": "Fashion photograph of a taupe Orvana ClimateShift convertible field jacket displayed on a dark chrome mannequin or worn by a mixed-heritage model with visible shoulder cybernetics. Three inset detail shots showing: magnetic sleeve detach mechanism with copper nodes, zip-out thermal liner partially deployed, and collar in both rolled-up windblock and stowed-flat positions. Cool neon accent lighting highlighting the copper closure hardware. Dark industrial background with rain-slicked concrete and distant GLMZ skyline. Moody, precise, technical aesthetic. --ar 2:3 --v 6"
 }

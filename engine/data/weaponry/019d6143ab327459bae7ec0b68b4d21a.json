@@ -59,5 +59,42 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Brecken Yılmaz-Osei",
+    "Dermal Induction Flayer DIF-2 'Saltwater'",
+    "Dewpoint",
+    "GLMZ",
+    "Galvanic Myofibril Lash",
+    "Hearthstone Firearms Single-20 'Farmhand'",
+    "Ihaia Mori-Sefa",
+    "Patient Zero",
+    "The Pure Hand",
+    "The Reclamation Assembly",
+    "Zheng-Dao Marrow-Pulse Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A distinctly industrial long-arm with an aggressive, asymmetrical stance. The MHPR-2 reads as purposefully brutalist—dual barrels stacked vertically with a pronounced electromagnetic coil arrangement visible along the upper receiver. The weapon has the menacing presence of something designed for hostile aquatic environments, with reinforced polymer housing that suggests it was built to survive saltwater corrosion and repeated stress.",
+    "dimensions": "127 cm total length, 8.5 cm width at receiver, 11 cm height including coil assembly. Primary barrel length 67 cm with secondary saline mist injector running parallel and slightly recessed.",
+    "weight_description": "Substantial but balanced—4.3 kg distributed across the dual-barrel assembly gives it a purposeful heft without being unwieldy. The weight concentrates toward the mid-receiver where the MHD cell pack housing sits, creating a natural pivot point that experienced operators exploit for quick target transitions.",
+    "primary_material": "Reinforced polymerized titanium composite frame with stainless steel barrel lining and electromagnetic coil windings. Internal reservoir uses pressure-tested polymer lined with conductive graphene coating.",
+    "finish": "Matte gunmetal gray with aggressive salt-etching patterns worn into the polymer—evidence of chronic saline exposure and repeated immersion. The electromagnetic coils show darker blue-black anodization, contrasting sharply with the weathered frame. Cooling fins along the barrel assembly display oxidized copper patina.",
+    "color_scheme": "Dominant matte gunmetal gray with deep blue-black electromagnetic coil detailing. Accent colors: corroded brass-green at pressure seals, faint copper oxide patina on heat dissipation surfaces, neon cyan power indicator strips along the MHD cell pack housing.",
+    "grip_texture": "Textured rubberized polymer with pronounced finger grooves, designed for gloved operation in wet conditions. The grip wraps partially around the firing mechanism housing and terminates in a ridged palm swell. Slight tackiness from residual salt crystallization.",
+    "distinctive_features": [
+      "Dual coaxial barrels—primary electromagnetic discharge tube above, secondary saline mist injector below",
+      "Prominent electromagnetic coil assembly visible along upper receiver, wrapped in heat-dissipation fins",
+      "Transparent polymer sight-line running the barrel length with internal pressure gauge visible as a glowing cyan line",
+      "MHD cell pack housing as pronounced box-form module at mid-receiver with cyan power indicator that pulses during recharge cycle",
+      "Internal saline reservoir (40-shot capacity) viewable through frosted sight port on left side—fluid level marked with descending etched lines",
+      "Copper-colored pressure release valve at barrel junction, slightly recessed and sealed with locking ring",
+      "Cooling radiator fins along final 20 cm of barrel assembly, angled for water-flow hydrodynamics",
+      "Worn cable conduit routing from cell pack to barrel—evidence of field repairs with mismatched solder joints",
+      "Faint etched markings along the stock: depth rating stamps, serial batch numbers, and maintenance logs in military notation"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS block-letter stamping on the upper receiver behind the sight line, approximately 8 cm long. Serial plate bolted to the mid-receiver showing military designation MHPR-2 and manufacturing date stamp. Smaller laser-etched warnings along the barrel near the mist injector (hazard symbols for electrical discharge and saline irritant).",
+    "condition_typical": "Well-maintained but visibly field-worn. Salt corrosion creates a patterned gray-white bloom across the polymer surfaces in operators who frequent canal districts. Solder joints at cable conduits often show jury-rigged repair work. The transparent sight-line frequently develops minor scratches and internal condensation. MHD cell packs are routinely replaced but housings show carbon scoring from heat cycling. Overall impression: a military-issue weapon that has seen consistent subsurface and wet-environment deployment, respected enough to be kept functional but worn enough to display its combat history."
+  },
+  "image_prompt": "Product photography of the MHPR-2 Saltwater rifle displayed at 45-degree angle on a dark wet surface, water droplets visible on matte gunmetal polymer. Dramatic side-lighting from the left casts sharp shadows across the dual-barrel assembly and electromagnetic coil structure, highlighting texture and corrosion patterns. Cyan power indicator lines glow softly from the MHD cell pack housing. Gloved tactical hand visible gripping the textured rubberized stock, fingers positioned at firing mechanism. Background: dark industrial cyberpunk setting with blurred neon cyan reflections suggesting flooded canal district environment. Visible details: salt crystallization on receiver, faint laser-etched warnings on barrel, pressure-gauge sight port catching light. Cinematic, military-aesthetic product showcase capturing both lethal engineering and environmental adaptation. --ar 3:2 --v 6"
 }

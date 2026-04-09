@@ -46,5 +46,26 @@
     "Quilt",
     "Sulfur Crown Agriculture",
     "Synaptrel"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A standalone hood with a relaxed, slightly oversized crown that reads as both utilitarian and thoughtfully designed for augmented features. The silhouette is softly rounded at the peak with subtle vertical relief seams that hint at integrated geneware accommodation. When worn alone, it sits confidently as a statement piece; when attached, it integrates seamlessly into layered outerwear. The integrated neckwarmer band creates a unified, cocoon-like presence around the shoulders.",
+    "fit": "Relaxed and accommodating — not tight, but structured enough to maintain shape. The crown sits with gentle ease on the head, while the horn-relief gussets (widened seams running vertically) allow subtle expansion without visible distortion. The neckwarmer band fits snugly but comfortably around the neck and upper shoulders. Designed to fit small-to-medium augmented frames as well as baseline anatomy.",
+    "primary_material": "Crofton wool-analog — a genetic-mill synthetic-wool hybrid with merino warmth and oilcloth water-shedding properties. Outer shell provides genuine thermal insulation and moderate weather resistance. Fully lined interior in brushed fleece for comfort against skin.",
+    "texture": "Visible slub texture across the outer surface — intentional nubby irregularities that catch light and add visual depth. The wool-analog has a slightly rough, artisanal hand-feel despite synthetic origin. The brushed fleece lining is soft and warm to the touch, creating contrast between exterior durability and interior comfort.",
+    "color_scheme": "Deep teal-brown heather — a complex blend that reads as both cool and warm depending on light. The slub creates subtle color variation across the surface, with darker and lighter fibers creating depth. No bold accent colors; the palette is sophisticated and understated.",
+    "closures": "Concealed magnetic snap collar system designed to attach to compatible Tier 3–4 outerwear. The snaps are hidden within the neckwarmer band, maintaining clean aesthetic lines. Can be worn freely without attachment via the integrated neckwarmer band.",
+    "distinctive_features": [
+      "Two discreet horn-relief seams (vertical gussets) that widen to accommodate small-to-medium geneware horns without distortion",
+      "Ear panels cut with extra depth for animal-ear geneware or augmented auditory hardware",
+      "Integrated neckwarmer band that functions independently or as a magnetic attachment point",
+      "Concealed magnetic snap collar system for seamless integration with most outerwear",
+      "Visible slub texture as a design feature, not defect",
+      "Fully lined brushed fleece interior",
+      "Halversen & Co. branding (discrete, likely embossed or woven into label)"
+    ],
+    "tier_indicator": "Tier 3–4 functional premium — affordable enough for working-class adoption, but with quality construction and thoughtful design details that signal investment. The magnetic attachment system and geneware accommodation suggest this is designed for people with bodily agency and augmentation access.",
+    "cultural_context": "Worn by street-level operatives, gig workers, augmented laborers, and those comfortable with visible genetic modifications. The Halversen & Co. brand carries associations with practical durability and inclusive design. Wearing this signals you modify your body, engage with street culture, and value function over corporate aesthetic compliance.",
+    "condition_typical": "Typically worn in broken-in condition — the slub texture may show slight matting in high-friction areas (crown, ear panels) after weeks of wear. The wool-analog develops subtle patina. Well-maintained examples show no fraying or pilling; neglected ones show weather staining on the exterior and possible compression matting of the fleece lining."
+  },
+  "image_prompt": "Fashion photography of a Halversen & Co. Detach Hood in deep teal-brown heather Crofton wool, displayed on a dark cyberpunk mannequin with subtle geneware horn protrusions. The hood is shown both attached (magnetic snap visible on neckwarmer band) and freestanding. Close-up detail shots reveal the slub texture and brushed fleece lining. Moody underground market lighting with cool teal and amber accent lights. Urban GLMZ backdrop — industrial concrete wall, faint neon signage blur. Model wears the hood alone, showing relaxed crown and ear panel depth. High-fashion editorial tone with street-tech aesthetic. --ar 2:3 --v 6"
 }

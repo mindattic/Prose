@@ -49,5 +49,26 @@
     "Crucible Industries Battle Rifle BR-11 'Tribunal'",
     "Oxidative Plasma Breath Lance OPBL-1 'Vestment'",
     "The Blackout Syndicate"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A figure of deliberate de-ranking: formal silhouette gutted of authority. The robe drapes like a shed skin, its former importance mapped in pale seams and phantom piping lines. The overall impression is spectral — a person transitioning between worlds, shedding jurisdiction like a molt.",
+    "fit": "Robe is tailored but worn loose, almost theatrical in its surrender. Undershirt is crisp and high-collared, sitting rigid against the neck. Trousers are slim-fitted at the waist but deliberately worn at the knees, signaling active degradation rather than time alone.",
+    "primary_material": "Robe: premium synth-wool in charcoal, now stripped; undershirt: treated linen blend in ash-white; trousers: ballistic weave in dark gray; monitor casing: brushed titanium-composite",
+    "texture": "Robe surface is smooth but marked by visible removal scars — slight pilling where insignia were unpicked, faint creasing from rank piping that no longer exists. Undershirt is crisp with visible thread-tension lines. Knee wear on trousers is authentic fabric breakage, not stylized distressing.",
+    "color_scheme": "Charcoal and ash-gray dominant. Ash-white undershirt provides clinical contrast. Left ankle monitor adds amber blink (active status light) — only chromatic accent. Overall palette: desaturated, institutional, mourning.",
+    "closures": "Robe: magnetic snap system (court-standard, now blank-faced). Undershirt: traditional button-front in pewter metal. Trousers: friction-fit waistband with no visible hardware. Monitor: sealed biometric lock, non-removable.",
+    "distinctive_features": [
+      "Ghost-lines of removed rank piping visible in robe fabric sheen",
+      "Deliberate absence of judicial insignia — removal marks visible",
+      "Vanthorpe Judicial Systems ankle monitor: blinking amber status light, court-issue GPS + bio-signature tracking",
+      "Pristine footwear contrasting with degraded garments above — last vestige of authority",
+      "High neckline of undershirt creates choking silhouette",
+      "Worn-through knee panels on trousers showing underlying weave",
+      "No styling, no augmentation jewelry, no accessories"
+    ],
+    "tier_indicator": "Tier 1→5 transition. The robe was Tier 1 formal wear; its current state is Tier 5 stripped-asset. The monitor is Tier 5 court-issued control.",
+    "cultural_context": "Judicial exile. The wearer is being read in real-time: once had power, lost it this morning. The monitor broadcasts it. No corpo would wear this. No street-tier person would have owned the original robe. This is the uniform of defrocking, of public fall.",
+    "condition_typical": "Worn as an act of statement, not time. Fresh removal marks. Trousers deliberately worn at knees — active choice or active wear from pacing. Robe shows no other damage, only intentional stripping. Footwear buffed despite everything else — either habit or defiance."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a tall figure in a stripped judicial robe, charcoal with visible removal seams, over an ash-white high-collar shirt. Dark trousers worn at the knees. Left ankle displays an amber-blinking Vanthorpe monitor. Immaculate dark shoes. Head unstyled, severe. Figure stands against a GLMZ Spire's brutalist concrete wall, moody blue-gray overhead lighting catching the ghost-lines in the robe fabric. Amber ankle light reflected on floor. The pose is formal but hollowed — judicial authority drained. Cinematic, desaturated palette, high contrast. Shot from mid-thigh up. Dark background. --ar 2:3 --v 6"
 }

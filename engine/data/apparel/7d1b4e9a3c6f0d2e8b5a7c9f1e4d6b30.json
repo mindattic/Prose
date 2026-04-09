@@ -46,5 +46,25 @@
     "Dzemal Acholonu-Patagiri",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Tessera Nexus Town Car"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A calculated departure from corporate conformity—sharp, composed, subtly individualized. The silhouette reads as polished professional with understated confidence: straight shoulders, a clean vertical line broken only by the strategic flash of copper-rust when the blazer moves. This is someone who has learned the exact millimeters of acceptable deviation.",
+    "fit": "Precisely tailored without appearing bespoke. Trousers sit with a slightly higher rise than standard-issue, leg cut just wide enough to signal intent without triggering oversight algorithms. Blazer is close-fitted through the torso, sleeves cut to accommodate aug hardware. The shirt drapes—expensive fabric language for 'not struggling to contain a body.'",
+    "primary_material": "Wool-analog selvedge-weave (trousers), premium Coolweave cotton-derivative (shirt), herringbone wool blend (blazer), brushed titanium hardware",
+    "texture": "Herringbone blazer reads with subtle visual texture even under flat light; shirt has a soft, almost liquid drape; trousers show the tight weave characteristic of selvedge construction. All surfaces project 'handled with intention,' not worn to softness—worn to purpose.",
+    "color_scheme": "Deep charcoal trousers, pale cream shirt, dark slate herringbone blazer with a shocking copper-rust half-lining visible only in movement. Oxblood oxfords ground the palette. Brushed titanium catches ambient light without announcing itself.",
+    "closures": "Standard button front on blazer (titanium), magnetic snap aug-channel seam on left sleeve, traditional lacing on oxfords—no visible tech integration, all augmentation seamlessly accommodated",
+    "distinctive_features": [
+      "Augmentation-channel seam running elbow to cuff on left sleeve with magnetic closure",
+      "Copper-rust half-lining that flashes only in motion—coded signal of careful individualism",
+      "Brushed-titanium BCI port cover at right temple, matching blazer buttons",
+      "Embedded security badge—no lanyard, no visible ID",
+      "Resoled oxfords showing one repair cycle—suggests either longevity or inability to replace",
+      "Selvedge-weave edges visible on trouser hems—subtle quality signal"
+    ],
+    "tier_indicator": "Tier 4 aspirational—too refined for Tier 3 salvage culture, too intentional to be Tier 2 corpo-standard, too functional to be Tier 1 luxury display",
+    "cultural_context": "A specialist who has decoded the system: this outfit says 'I know the rules precisely well enough to bend them without breaking.' Worn by data architects, mid-level analysts, security specialists who interface with corporate infrastructure but retain agency in presentation. The augmentation visibility is professional, not flash.",
+    "condition_typical": "Pristine in all respects except the oxfords, which carry one visible resoling—everything else reads as deliberately maintained, purchased for specific function rather than status collection"
+  },
+  "image_prompt": "Tier 4 corporate specialist in full analytical dress standing in a climate-controlled office overlooking the Great Lakes industrial zone at dusk. Moody cool-blue ambient light from massive windows casting long shadows across brushed concrete flooring. The model's left arm raised slightly, copper-rust lining of the blazer catching the last amber sunlight. Right temple shows the brushed-titanium BCI port cover. Herringbone texture of the blazer visible in sharp detail, oxblood oxfords positioned with slight weight forward—the posture of someone mid-thought. Dark minimal background, perhaps a single corporate branding element or window frame. The overall mood: controlled intelligence, meticulous deviation, the aesthetic of someone who has memorized acceptable variance. Cinematic lighting. --ar 2:3 --v 6"
 }

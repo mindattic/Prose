@@ -51,5 +51,24 @@
     "Narrowcast",
     "TESSERA ES-4 'Perimeter'",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist wrist band with an almost jewelry-like appearance, betraying its critical function through subtle technological detailing. The bracelet sits flush against the skin with an air of understated corporate authority. Its polished surface catches light in a way that makes it appear both expensive and intimidating.",
+    "dimensions": "17-19cm circumference (adjustable), 8mm band width, 4mm thickness",
+    "weight_description": "Featherweight (50g) — barely noticeable when worn, feels like high-end smart jewelry rather than security hardware",
+    "primary_material": "Brushed titanium alloy with inlaid quantum-encrypted biometric module",
+    "finish": "Mirror-polished satin with ceramic-coated accent stripe; anti-reflective matte panel on ventral side housing the biometric sensor",
+    "color_scheme": "Gunmetal gray primary with Sterling-Nakamura's signature platinum accent stripe running axially along the band; faint bioluminescent teal glow emanating from the biometric window during active broadcast",
+    "interface_elements": "Minimal — a small translucent sapphire window (5mm diameter) on the inner wrist showing status indicator (solid teal = broadcasting, amber = low battery, red = tamper alert); micro-haptic feedback pulses along the band for alerts; no visible buttons or ports (induction charging via contact points)",
+    "distinctive_features": [
+      "Faint quantum encryption indicator — a slowly pulsing geometric Φ symbol visible through the sapphire window",
+      "Seamless titanium construction with no visible seams or fasteners",
+      "Subtle 'STERLING-NAKAMURA' etched along the inner surface in micro-text, only visible under magnification",
+      "A hair-thin wire embedded along the band's circumference — the broadcast antenna, invisible unless light hits at the right angle",
+      "Micro-perforations around the biometric window for environmental monitoring"
+    ],
+    "manufacturer_markings": "Corporate holographic security seal embossed on inner band (only readable with IR scanner); tiny regulatory GLMZ compliance stamp barely visible on the rear edge",
+    "condition_typical": "Pristine and meticulously maintained — diplomatic staff keep these polished like mirrors. Occasional micro-scratches on the brushed surface from daily wear, but the teal biometric glow always remains active and steady, a constant reminder of the wearer's legal standing."
+  },
+  "image_prompt": "Close-up product photography of a Sterling-Nakamura Diplomatic Immunity Bracelet DIB-1 resting on a dark carbon-fiber workbench. The bracelet gleams under dramatic directional lighting, its titanium surface mirror-polished and reflecting cool blue accent lighting. The inner biometric window glows faint bioluminescent teal with a pulsing Φ symbol barely visible through the sapphire crystal. Shot from slightly above, showing both the polished exterior and the subtle inner details. Cyberpunk aesthetic, neon accents in the background suggesting a GLMZ corporate office. Corporate branding visible but not intrusive. Shallow depth of field emphasizing the bracelet's craftsmanship. --ar 3:2 --v 6"
 }

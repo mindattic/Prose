@@ -38,5 +38,24 @@
   "parent_corponation": "",
   "related_entities": [
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Chunky, hand-crafted legwear with an intentionally chaotic aesthetic—irregular vertical stripes and woven texture that reads as both utilitarian and artisanal. Sits close to the leg with slight gathering at ankles. Gives an impression of resourcefulness and creative resilience.",
+    "fit": "Fitted through hip and thigh, tapered at ankle with gentle bunching. Compression-adjacent without being restrictive—follows body contours while accommodating layering underneath.",
+    "primary_material": "Recycled jersey knit blended with salvaged textile selvage strips; hand-loomed or machine-assisted construction using scrap-bin materials",
+    "texture": "Thick, uneven ribbed weave with visible knit irregularities; slightly nubby surface from mixed fiber composition; some areas softer (jersey) and others stiffer (selvage edges)",
+    "color_scheme": "Chaotic multicolor stripe pattern—burnt orange, faded teal, charcoal, muddy yellow, industrial gray layered randomly. No two pairs identical. Matte finish with occasional sheen variation from fiber type differences",
+    "closures": "Elastic waistband (salvaged, often a contrasting color); friction-fit at ankle with intentional loose edge or minimal cuff",
+    "distinctive_features": [
+      "Hand-visible knit inconsistencies and dropped stitches left as design feature",
+      "Visible selvage edge details woven into stripes",
+      "No branding or labels—purely functional markers of maker",
+      "Likely reinforced at high-wear areas (inner thigh, calf) with patch layering",
+      "Ankle cuff often unfinished or raw-edged for authentic scrap aesthetic"
+    ],
+    "tier_indicator": "Tier 5 / Shelf craft—signals sub-grade maker economy, creative poverty, skilled hands",
+    "cultural_context": "Street-tier self-sufficiency; worn by Shelf dwellers, waste-stream salvagers, and anti-corpo craftspeople. Communicates rejection of mass-manufacture and investment in DIY skill. Associated with off-grid communities in the GLMZ ungoverned zones.",
+    "condition_typical": "Worn-in from first wear—pilling expected, minor snags normalized, slight stretching at waistband over time. Patched repairs visible and accepted as part of garment evolution"
+  },
+  "image_prompt": "Close-up fashion shot of scrap-knit leggings on a lean, augmented model with exposed subcutaneous neck port, posed sitting cross-legged in dim warehouse lighting. Garment detail emphasizes chaotic multicolor stripes and thick, uneven hand-knit texture. Neon green industrial glow casting shadows across fabric weave. Concrete floor and metal shipping container edge in soft-focus background. Dark, moody cyberpunk aesthetic with emphasis on tactile craftsmanship. Model wears minimal top to showcase leg styling. --ar 2:3 --v 6"
 }

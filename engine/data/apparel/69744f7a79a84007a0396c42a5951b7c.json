@@ -40,5 +40,27 @@
     "Tessera Corponation",
     "The Filament",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, clinical bodysuit with an unsettling sterile aesthetic. The pale white surface reads almost medical—more laboratory coat than tactical gear. The raised double-helix emblem at the left breast anchors an otherwise minimalist design. When sealed, the hood creates an insectoid silhouette. The suit moves with an organic suppleness that suggests living material rather than static fabric.",
+    "fit": "Precision-tailored through the torso and limbs with strategic slack at joints for mobility. Wide accommodation cuts at shoulders, spine, and hip joints allow for augmented physiology. The thigh and forearm have subtle bulges where specimen pouches integrate seamlessly into the weave.",
+    "primary_material": "Mycoweave—engineered fungal filament textile grown from TESSERA biotech matrices. Living, responsive, requires quarterly maintenance cycles.",
+    "texture": "Smooth and almost skin-like in neutral state, with a subtle raised pattern of threadwork visible on close inspection. When activated by biohazard detection, the surface tightens microscopically. The collar seam has an almost translucent quality, optimized for bioluminescent signaling.",
+    "color_scheme": "Pale clinical white as primary, with TESSERA's double-helix rendered in raised metallic-silver stitching at chest. The collar seam and hood interior contain veins of dormant bioluminescent threading—barely visible until activated.",
+    "closures": "BCI-integrated gesture command sealing system. Hood raises and locks to collar seamlessly with neural input. Specimen pouches use pressure-sealed mycoweave integration rather than traditional fasteners.",
+    "distinctive_features": [
+      "Living mycoweave with pathogen-detection capability and pore-tightening response",
+      "Bioluminescent pulse signaling along collar seam when biohazards detected",
+      "Integrated specimen pouches on thighs and forearms with sealed containment",
+      "Geneware accommodation: tail clearance, dorsal wing slits, horn-clearance hood options",
+      "Hood assembly seals with single BCI gesture command",
+      "Raised double-helix emblem at left breast in metallic silver",
+      "Wide shoulder and spine cutouts for augmented physiology",
+      "Microfiber reinforcement at movement joints despite organic construction"
+    ],
+    "tier_indicator": "Tier 3-4 working class with corpo infrastructure dependency. The suit signals access to TESSERA's biotech resources but tethers the wearer to quarterly maintenance dependency.",
+    "cultural_context": "TESSERA security—the clinical face of corporate biotech extraction. Wearing this marks you as part of the surveillance and specimen-recovery apparatus. In geneware communities, being approached by someone in BioOps whites triggers immediate unease: you are being observed, catalogued, assessed. This is the uniform of the 'swabber'—the one who collects data and samples, not the one who threatens with obvious force.",
+    "condition_typical": "Always maintained to clinical pristine—any degradation of the mycoweave compromises the detection system. Operatives wear them clean and immaculate, which only amplifies their unsettling presence. After a deployment involving specimen containment, faint biological residue may be visible at pouch seams before decontamination."
+  },
+  "image_prompt": "A pale TESSERA BioOps operative in a white mycoweave field suit stands under cool laboratory lighting, the raised double-helix emblem visible at the chest. The hood is raised and sealed, creating an insectoid profile. Soft bioluminescent green pulses faintly along the collar seam, as though the suit has just detected a biohazard. The operative's silhouette suggests augmented physiology—wide shoulders, possible tail clearance. Dark urban lab environment with contamination warning striping in the background. The suit appears almost skin-like, organic yet clinical. Cinematic, unsettling, precision-engineered. --ar 2:3 --v 6"
 }

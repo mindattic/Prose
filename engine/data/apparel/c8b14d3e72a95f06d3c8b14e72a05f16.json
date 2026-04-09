@@ -39,5 +39,26 @@
     "ARCHIVE",
     "Arcturus Exo-Runner Frame",
     "Variable Impedance Rifle VIR-9 'Switchback'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek, minimalist silhouette with a subtle architectural quality. Appears as a sharp professional pant in static form, but the thigh, knee, and calf regions show barely-perceptible dimensional quilting that hints at adaptive tech beneath. The overall impression is corpo-clean but engineered—something designed for bodies that aren't standard.",
+    "fit": "Slim through the hip and thigh, with a generous internal waistband featuring adjustment cords for micro-fitting. The knee and calf taper naturally, but memory-fiber panels create subtle gathers that expand laterally when worn by limbs in geometric flux. Sits high on the waist, contemporary professional cut.",
+    "primary_material": "Matte black synth-wool blend with embedded memory-fiber composite panels. The synth-wool provides structure and a refined finish; the memory-fiber is micro-textured and pressure-responsive.",
+    "texture": "Smooth matte finish on primary synth-wool surfaces. The memory-fiber panels are subtly quilted in a geometric diamond or honeycomb pattern, creating a tactile depth that catches light only at sharp angles. No sheen; all surfaces are subdued and professional.",
+    "color_scheme": "Solid matte black with minimal visual contrast. The memory-fiber panel quilting creates shadow-play rather than color variation—it reads as tonal depth rather than pattern.",
+    "closures": "High-security magnetic snap at waistband with redundant friction-fit closure. Side zip at ankle (both legs) for easy on/off with variable limbs. Internal adjustment cords at waist and hip for fine-tuning fit around non-standard leg geometries.",
+    "distinctive_features": [
+      "Memory-fiber expansion panels at thigh, knee, and calf that deform and reform silently",
+      "Internal waistband adjustment cords with tension locks",
+      "Ankle-side magnetic zips for accessibility with augmented limbs",
+      "Reinforced stress-points at hip and knee for durability",
+      "Kelden manufacturer micro-etching at interior waistband",
+      "Subtle internal tech-routing channels for haptic feedback integration",
+      "Zero external branding—corporate minimalism"
+    ],
+    "tier_indicator": "Tier 1-2 luxury augmentation wear. The price point and engineering suggest corpo-class clientele with high-end cyber-limb augmentations.",
+    "cultural_context": "Worn by corpo executives, military cyber-enhanced operatives, and wealthy private augmentation clients. Signals someone whose body is valuable enough to customize—and whose customization is professional, not street-level. No rebellion in the aesthetics; this is seamless integration tech.",
+    "condition_typical": "Pristine or broken-in to soft comfort. The memory-fiber panels show no wear—they're designed for durability. Any visible condition would be from accident or combat, not from normal use."
+  },
+  "image_prompt": "Full-body fashion shot of a sleek matte black slim trouser on a androgynous cyberpunk model with visible chrome augmentation (metal arm or leg). Model standing in contrapposto pose to show limb geometry. Cinematic neon-lit urban interior, rain-slicked floor reflecting cool blue and violet light. Close detail shot of memory-fiber panel quilting on thigh, catching edge light. Dark gradient background, professional catalog styling. Moody, corporate-tech aesthetic. --ar 2:3 --v 6"
 }

@@ -42,5 +42,25 @@
     "Mika Sorel",
     "O'Hare Sovereign",
     "Ringo DV-4 'Courier'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting balaclava that hugs the skull and neck with surgical precision. The pre-cut ports along the back and sides create an industrial, modular aesthetic—clean geometric apertures that signal integrated neural hardware. The face remains fully covered except for eyes and mouth, creating an anonymized, utilitarian silhouette.",
+    "fit": "Compression fit, snug against the scalp and neck without bunching. The ports are reinforced with subtle ribbing that maintains structural integrity around the hardware cutouts. Flexible enough to accommodate various BCI module sizes.",
+    "primary_material": "Merino-analog (synthetic proprietary blend) interwoven with graphene-conductive threads for thermal regulation and signal passthrough. Windproof outer face with fleece lining on interior.",
+    "texture": "Smooth, almost matte finish on the exterior; soft, brushed fleece interior that's warm without bulk. The port reinforcements have a slightly raised, ribbed texture.",
+    "color_scheme": "Available in charcoal (deep grey-black), deep navy (almost black-blue), and transit grey (a Tier 2 status symbol—lighter battleship grey with subtle sheen).",
+    "closures": "Friction-fit; the material itself grips without zippers or snaps, ensuring no exposed hardware that could catch on cable ports.",
+    "distinctive_features": [
+      "Pre-cut BCI ports along occipital and temporal lines—precision-engineered apertures",
+      "Graphene-thread conductive weave for neural signal integrity",
+      "Windproof face panel with sealed seams",
+      "Reinforced port edges to prevent fraying and hardware interference",
+      "Halverson & Mäki woven label at nape (usually visible only when hood is worn)",
+      "Minimal branding—purely functional aesthetic"
+    ],
+    "tier_indicator": "Tier 2–3 crossover. Affordable for corporate wage-workers and upper-working-class individuals who've invested in BCI augmentation. The transit grey version signals early-adopter status among Tier 2 professionals.",
+    "cultural_context": "Worn by: neural-augmented data analysts, port technicians, augmentation clinic staff, corpo field operatives who need hands-free comms. The pre-cut ports say 'I have integrated hardware and I'm not hiding it.' It's functional vanity.",
+    "condition_typical": "Typically worn clean and well-maintained—these are expensive enough to justify care. After 6+ months, minor pilling may appear at high-friction points (neck, jaw line). Port reinforcements may show faint ghosting from repeated hardware insertion/removal."
+  },
+  "image_prompt": "A sleek cyberpunk model wearing a charcoal Halverson Ironweave balaclava, face fully covered except eyes and mouth, visible pre-cut geometric ports glowing faintly with soft blue BCI module light along the temples and back of head. Moody overhead lighting casting sharp shadows. Austere Great Lakes industrial backdrop—corrugated steel wall, dim neon sign reflecting off wet concrete. Close detail shot emphasizing the texture of graphene threads and port reinforcement. Photorealistic, editorial cyberpunk fashion aesthetic. --ar 2:3 --v 6"
 }

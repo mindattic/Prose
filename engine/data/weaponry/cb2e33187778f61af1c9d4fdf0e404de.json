@@ -39,5 +39,36 @@
     "tier_1",
     "street_level"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Carrion Defense Works",
+    "GLMZ",
+    "Kang-Petrov Arms KPM-6 'Equalizer'",
+    "Street-Custom Gutter Katana 'Flatline'",
+    "The Pure Hand",
+    "The Threshold"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist self-defense canister with aggressive industrial aesthetics. Compact cylinder tapering toward a reinforced nozzle assembly. The form factor reads as 'weapon first, tool second' — no attempt at concealment or ergonomic softening. Dominates the palm like a grenade.",
+    "dimensions": "Height: 12.5 cm | Diameter: 5.2 cm | Nozzle protrusion: 2.1 cm | Trigger guard depth: 1.8 cm",
+    "weight_description": "Dense and substantial — 210g feels heavier than its compact size suggests. Sits low in the hand with a ballast-like presence. Not light enough to be casual, not heavy enough to fatigue. Built for retention and impact.",
+    "primary_material": "Impact-rated polymer shell (likely polycarbonate-reinforced urethane composite) with steel reinforcement around pressure chamber and nozzle coupling",
+    "finish": "Matte industrial black with high-visibility hazard-yellow safety striping (chevron pattern on lower third and nozzle collar). Raw, unpolished — no gloss or chrome. Textured surface to resist sweat-slip and chemical corrosion.",
+    "color_scheme": "Primary: flat black (RAL 9005 equivalent) | Accent: hazard yellow (RAL 1003) | Secondary: brushed steel nozzle and trigger assembly",
+    "grip_texture": "Cross-hatched rubberized overmold with aggressive grip ridges. Textured like sandpaper medium-grit. No padding — designed for bare-hand retention during struggle. Cool to touch, slightly tacky.",
+    "distinctive_features": [
+      "Reinforced pressure coupling (visible hexagonal retention collar)",
+      "Directional stream nozzle with fine-spray limiting mechanism",
+      "Embossed capacity indicator: four horizontal ridges marking burst reserves",
+      "Thumb-safety lever recessed into trigger guard (red anodized)",
+      "Large embossed hazard symbol on canister body",
+      "Serial number plate (stamped steel) below safety lever",
+      "Pressure release valve with warning label on cap",
+      "Wear-resistant coating on nozzle tip (brass-colored)",
+      "Micro-abrasions and micro-scratches typical of field use"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS embossed across upper canister in tall sans-serif (industrial block letters). CDW logo (stylized carrion bird silhouette) stamped below. Model designation 'CS-6' and 'GUTTER RAIN' printed on adhesive label on lower body. Batch number and manufacturing date on underside. Warning text in white: 'CAUSES CHEMICAL BURNS — NEUTRALIZER REQUIRED FOR REMOVAL'",
+    "condition_typical": "Field-worn but maintained. Rubber grip shows subtle scuff marks and skin oils. Nozzle assembly shows light oxidation and residue buildup from compound exposure. Pressure indicator scratched from repeated checking. No visible corrosion — the synthetic compound doesn't degrade the materials, but evidence of field deployment is present. Looks like it's been carried, used, and re-holstered hundreds of times."
+  },
+  "image_prompt": "Industrial product photograph of the Carrion Defense Works CS-6 'Gutter Rain' chemical defense canister. Shot from three-quarter angle, resting on a brushed-steel tabletop in dramatic side-lighting (cool blue-white from the left, warm amber shadow on the right). Matte black polymer body with hazard-yellow safety striping catches light unevenly. Reinforced nozzle assembly gleams with slight brass-colored patina. Rubberized grip texture visible, tactile and worn. Out-of-focus GLMZ megacity skyline (neon signs, rain-slicked buildings) in background bokeh. Overhead rim-light catches the pressure valve and safety lever. Cyberpunk gritty aesthetic — this is a weapon for desperate times, not aspirational. Canon 5D Mark IV, 85mm f/2.8, f/4 depth of field, color-graded with crushed blacks and elevated yellows. --ar 3:2 --v 6"
 }

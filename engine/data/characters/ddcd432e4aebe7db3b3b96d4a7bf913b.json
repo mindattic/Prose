@@ -98,5 +98,12 @@
     "posture_movement": "Deliberate and economical. Moves with minimal wasted motion. Sits with perfect posture at a terminal but slouches slightly when walking, as if conserving energy for thought. Hands move with precision when gesturing — no flourish, no emphasis, just necessary communication.",
     "clothing_style": "Aggressively forgettable. Gray or navy slacks, white or light blue dress shirts, dark blazers from mid-tier retailers (Nexus Professional, Meridian). No logos, no chrome accents, no smart-fabric displays. Shoes are black leather, well-maintained but unremarkable. Watch is a simple digital with no AR functions — practical, not status-signaling. Dresses for Tier 3 corporate environments deliberately, never standing out."
   },
-  "image_prompt": "A lean East Asian-African man in his late 40s, sharp-featured with graying temples, wearing a plain navy blazer and white dress shirt, sitting motionless in a bland beige corporate office under fluorescent lighting. Dark eyes focused downward, expression utterly neutral and forgettable. Minimalist aesthetic, no augmentations visible, slightly slouched shoulders. Cyberpunk noir detective, muted color palette, realistic photography style, office drone aesthetic, cinematic lighting from overhead panels, nobody-notices-him energy, --ar 2:3 --v 6"
+  "image_prompt": "A lean East Asian-African man in his late 40s, sharp-featured with graying temples, wearing a plain navy blazer and white dress shirt, sitting motionless in a bland beige corporate office under fluorescent lighting. Dark eyes focused downward, expression utterly neutral and forgettable. Minimalist aesthetic, no augmentations visible, slightly slouched shoulders. Cyberpunk noir detective, muted color palette, realistic photography style, office drone aesthetic, cinematic lighting from overhead panels, nobody-notices-him energy, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 28.8,
+    "East Asian": 23.7,
+    "Southeast Asian": 21.5,
+    "South Asian": 21.3,
+    "Hispanic/Latin American": 4.7
+  }
 }

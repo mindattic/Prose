@@ -42,5 +42,38 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Dzemal Acholonu-Patagiri",
+    "Eshe Pena-Baah",
+    "Iowan Behemoth — 'Obelisk'",
+    "Lazarus LP-3 'Clinic Spider'",
+    "Nika Svensson-Kone",
+    "Osvaldo Nkrumah-Serebryakov",
+    "Vespid Dynamics"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular precision instrument resembling a high-end medical device crossed with industrial equipment. Distinctly non-threatening at first glance — more laboratory tool than combat weapon. The barrel assembly is unusually thin and tapered, with visible electromagnetic coil windings beneath translucent polymer housing. The overall silhouette is compact and ergonomic, designed for controlled precision rather than aggressive bulk.",
+    "dimensions": "Length: 38cm | Width: 6cm at grip | Height: 8cm (including coil assembly) | Barrel section: 22cm with 1.2cm diameter",
+    "weight_description": "Surprisingly light in hand — approximately 3.4kg distributed across the body with slight forward bias toward the barrel assembly. Feels balanced and deliberate, not hefty or unwieldy. The weight suggests precision engineering rather than raw power.",
+    "primary_material": "Aerospace-grade carbon composite chassis with brushed titanium accents at the breech and magazine interface. Translucent engineering polymer windows reveal the electromagnetic coil array beneath.",
+    "finish": "Matte gunmetal gray with satin brushed titanium highlights. The transparent barrel housing reveals copper-wound coils with faint iridescent curing marks. Minimal wear on field units; pristine examples show sharp edges and clean lines.",
+    "color_scheme": "Gunmetal gray primary body with brushed titanium accents. Copper-gold electromagnetic coil visible through transparent housing. Accent lighting: soft blue LED power indicators along the grip spine.",
+    "grip_texture": "Textured composite with microscopic grip patterning — feels like fine sandpaper under gloved fingers. Ergonomic contours suggest medical precision instruments. The magazine well is wrapped in rubberized polymer for secure handling.",
+    "distinctive_features": [
+      "Translucent barrel section revealing electromagnetic coil windings and faint current traces during operation",
+      "Micro-calibration dial on the left side of the receiver — adjusts needle cloud dispersion pattern",
+      "Capacitor status indicator: soft blue LED gradient along spine (full to critical)",
+      "Magazine power coupling with integrated circuit contacts visible on underside",
+      "Thermal vent strips along the coil assembly — glow faintly orange during sustained fire",
+      "Extremely thin, tapered barrel with no traditional muzzle brake — just a flush aperture",
+      "Ambidextrous safety lever integrated into the trigger guard",
+      "Manufacturer serial plate in minimalist sans-serif font",
+      "Weapon behaves nearly invisibly in operation — no flash, no sound, only soft electromagnetic hum"
+    ],
+    "manufacturer_markings": "HOLLOW POINT PRECISION logo (a stylized targeting reticle with a dot-center) stamped in matte black on the left side of the receiver. Serial number etched in micro-font below logo. 'NP-8 ACUPUNCTURE' designation laser-engraved on the magazine housing.",
+    "condition_typical": "Security contractors maintain these in near-pristine condition — the precision nature of the weapon demands cleanliness. Field-used units show minimal wear: slight discoloration around the thermal vents from heat cycling, microscopic stress marks around the magazine coupling, nearly imperceptible scratches on the grip texture. Never truly battle-scarred; too expensive and specialized for field neglect."
+  },
+  "image_prompt": "Product photography of the Hollow Point Precision NP-8 'Acupuncture' micro-flechette weapon on a dark matte surface, slight three-quarter angle. Gloved hand (black tactical glove) cradling the receiver from below. Dramatic side-lighting emphasizing the translucent barrel section and revealing the copper-wound electromagnetic coils within, glowing faintly blue. Cool-toned key light from upper left, warm rim light catching the brushed titanium accents. The capacitor indicator glows soft electric blue along the grip spine. Minimal environmental reflection. Cyberpunk aesthetic: clean, clinical precision instrument design. Shallow depth of field with magazine visible nearby, slightly out of focus. Shallow background blur of GLMZ city lights. Hyper-detailed polymer texture and metal finish clarity. --ar 3:2 --v 6"
 }

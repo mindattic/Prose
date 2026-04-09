@@ -77,5 +77,24 @@
     "Palladian Construction",
     "The Burden Clause",
     "Zurab Ivanov-Appiah"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist hexapod hauler with a pronounced angular cab mounted forward-left of a long, modular spine chassis. Six independently articulated wheels with deep treading protrude asymmetrically from reinforced mounting arms. The chassis tapers rearward, terminating in a standardized cargo interface plate. Overall silhouette suggests a mechanical insect adapted for industrial salvage work.",
+    "dimensions": "14.2 meters long, approximately 3.8 meters wide at wheel track, 2.9 meters to cab roof",
+    "weight_description": "Heavy vehicle requiring dedicated parking infrastructure; fully laden (38,000 kg payload + dry weight ~16,000 kg) demands reinforced loading zones",
+    "primary_material": "Welded steel frame with composite reinforcement panels; cast aluminum wheel hubs",
+    "finish": "Industrial matte coating with visible weld seams; weather-worn patina on working units showing rust bloom and abrasion marks from site work",
+    "color_scheme": "Palladian corporate slate gray base with high-visibility safety striping (reflective white/orange) on wheel wells and cab edges; hydraulic fluid stains and rust streaks typical on operational vehicles",
+    "interface_elements": "Cab features wraparound forward viewports with polarizing smart-glass; side-mounted status displays showing load distribution, fuel state, and AI module activity; manual steering wheel with integrated haptic feedback; roof-mounted beacon (amber/red toggle); exterior pressure-point indicators for load sensors",
+    "distinctive_features": [
+      "Ballast Cognition Module indicator lights (blue LEDs) cycling along chassis spine to show active weight redistribution zones",
+      "Six independent wheel modules with visible articulation joints, each capable of ±45° rotation",
+      "Hydrogen stack access panels marked with caution chevrons, recessed into undercarriage with exposed thermal dissipation vanes",
+      "Modular cargo spine with standardized hardpoint receptacles spaced every 1.2 meters",
+      "Operator cab slightly elevated above chassis centerline for terrain visibility despite full load"
+    ],
+    "manufacturer_markings": "Large PALLADIAN CONSTRUCTION logo (stylized P in geometric sans-serif) embossed on cab side; construction-grade regulatory stamps (GLMZ Autonomous Load Certification, Hydrogen Safety Class 3); vehicle ID plate mounted below driver viewport",
+    "condition_typical": "Working units show compacted soil in wheel tread, minor dents on cargo interface from repeated coupling cycles, and faint hydraulic seepage patterns around joint articulations. High-hour units exhibit chrome wear on actuator arms and discolored thermal vanes from repeated hydrogen stack cycling."
+  },
+  "image_prompt": "Industrial product photography of a massive six-wheeled exoskeleton hauler-rig on a brutalist concrete job site in dystopian Great Lakes Metropolitan Zone. Dramatic three-quarter front view from low angle emphasizing scale. Overhead neon-cyan work lights cast sharp shadows across weathered slate-gray chassis and independent wheel modules. Visible blue LED indicators cycling along the cargo spine showing the Ballast Cognition Module active. Operator cab with polarized windows reflects orange construction scaffolding behind. Nearby stacks of industrial composite cargo pallets. Cyberpunk industrial aesthetic, volumetric fog, cinematic lighting emphasizing the mechanical articulation joints and hydrogen compression stack vents. Gritty, functional design language. --ar 3:2 --v 6"
 }

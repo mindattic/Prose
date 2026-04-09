@@ -54,5 +54,40 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Castling",
+    "GLMZ",
+    "Helix Biosystems",
+    "Nenad Vargas-Baffour",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "NeuralPath HarmonicRoot Perfect Pitch Mod",
+    "Palladian Construction",
+    "Phased Acoustic Neurostimulator PAN-3 'Tinnitus'",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "The Resonance Communion"
+  ],
+  "physical_description": {
+    "visual_profile": "A grotesque marriage of organic and mechanical engineering—a shoulder-mounted cannon with a translucent central column that glows with bioluminescent fluid. The silhouette suggests both a deep-sea creature and a piece of laboratory equipment. When dormant, it resembles a pressurized biological containment unit; when active, it pulses with an eerie blue-green luminescence that dominates the entire form.",
+    "dimensions": "94 cm length overall; central column diameter 8 cm; shoulder mount base 22 cm wide; breech assembly extends 12 cm behind operator's shoulder",
+    "weight_description": "Hefty and deliberate—6.8 kg demands respect and commitment. The weight distribution favors the central column, creating a forward-heavy feel that locks the operator into a braced stance. Feels alive in a way that unsettles most handlers.",
+    "primary_material": "Reinforced polymer composite frame with transparent polycarbonate pressure sleeves; stainless steel mounting brackets and articulation joints; medical-grade silicone seals throughout",
+    "finish": "Matte black polymer with brushed steel accents; the central column is crystal-clear polycarbonate to showcase the bioluminescent fluid within. Heat vents along the barrel assembly are anodized gunmetal gray.",
+    "color_scheme": "Primary matte black frame with pulsing blue-green interior (fluid-dependent coloration); brushed steel hardware; accent lines in wet-chrome where mechanical components meet biological chambers",
+    "grip_texture": "Rubberized shoulder yoke with deep grip grooves; forestock wraps in textured silicone treated to prevent biological fluid transfer; trigger guard lined with soft polymer to accommodate gloved operation",
+    "distinctive_features": [
+      "Central translucent column containing visible bioluminescent fluid that glows passively and pulses rhythmically during operation",
+      "Three graduated pressure-sealed chambers stacked within the main barrel, each visibly distinct through transparent walls",
+      "Nutrient cartridge slot with biometric lock on the rear mount—requires daily feeding ritual",
+      "Harmonic tuning rings etched into barrel exterior, visibly resonating when weapon is armed",
+      "Small exhaust vents that produce faint condensation during the 8-second recharge cycle",
+      "Capacitor cell housing with health indicator strip (glows amber when depleted)",
+      "Operator feedback display showing fluid viability percentage and temperature status"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo embossed in the rear mounting plate; weapon designation 'BAD-2' stenciled in white on the left side of the stock; biological media batch number and expiration date printed on a laminated strip attached to the nutrient cartridge slot; serial number engraved into the polycarbonate column itself, visible from all angles",
+    "condition_typical": "Well-maintained examples show meticulous care—operators know that neglect kills the living medium. Field-worn specimens display condensation residue inside the polycarbonate (mineral deposits from repeated thermal cycling), faded batch-number stickers, and scuff marks from careless mounting/unmounting. Battle-scarred units show cracks in the pressure sleeves (sealed with biopolymer patch tape), discolored fluid (age-darkened from optimal blue-green), and corrosion around the nutrient cartridge slot from repeated biological feeding cycles."
+  },
+  "image_prompt": "Product photography of the Bioluminescent Acoustic Disruptor BAD-2 'Choral' mounted on a black carbon fiber rest, angled 45 degrees to showcase the translucent central column glowing with ethereal blue-green bioluminescent fluid. Dramatic side-lighting from above casts sharp shadows across brushed steel components while illuminating the pulsing interior chambers. Close detail shot of the nutrient cartridge slot and pressure seals. Cyberpunk aesthetic: wet-lab meets military hardware, organic horror meets precision engineering. The glowing fluid inside should appear to move and shimmer independently of the weapon's physical form. Shot against a dark composite surface with subtle reflection. Include blurred HELIX BIOSYSTEMS logo in soft focus background. --ar 3:2 --v 6"
 }

@@ -40,5 +40,36 @@
     "arcturus",
     "controversial"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Carrion Defense Works Neural Lash NL-3 'Agony'",
+    "MERIDIAN",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Quiet Room"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, brutalist canister with the aggressive stance of a less-lethal enforcement tool. The form is utilitarian and deliberately intimidating—a cylinder that reads as 'pain in a can.' No curves, no marketing softness. Pure function.",
+    "dimensions": "16cm height × 5cm diameter. Compact enough to ride a duty belt or fit in a reinforced holster. Proportionally dense.",
+    "weight_description": "Substantial for its size. 240 grams—heavy enough to feel purposeful in the hand, but not cumbersome. The weight sits forward in the palm when gripped, giving the sense of a directed payload.",
+    "primary_material": "Reinforced polymer composite with steel internal pressure vessel. The casing is blast-rated to prevent rupture under thermal stress or impact.",
+    "finish": "Matte black powder coat—non-reflective, tactical, designed to absorb rather than shine. Surface shows micro-texturing to prevent light reflection. Purposefully absent of chrome or gloss.",
+    "color_scheme": "Primary: charcoal matte black. Accents: cold steel gray on pressure seal ring and nozzle head. Minimal branding in recessed lettering (gunmetal gray).",
+    "grip_texture": "Rubberized polymer with aggressive knurling in the palm grip area. Slightly tacky to discourage slipping during wet or high-stress deployment. Grip extends from mid-canister to base.",
+    "distinctive_features": [
+      "Recessed trigger guard—molded inset to prevent accidental discharge and indicate controlled activation",
+      "180-degree adjustable nozzle articulating from canister head—allows rotation between stream (narrow, 4m effective) and 60-degree fan spray (2m effective)",
+      "Pressure relief valve visible as small recessed dot on upper canister body",
+      "Serial number and batch code etched in microscopic lettering on lower third (Arcturus/Blackwood corporate compliance)",
+      "Nozzle head finished in brushed steel with micro-perforations visible only on close inspection",
+      "Safety collar: a rotating lock ring beneath trigger guard bearing faint 'SAFE/LIVE' markings",
+      "Faint oil residue visible on nozzle from pressurized compound—perpetually 'loaded'",
+      "Wear marks typical on duty models: scuffing on canister walls from holster friction, small dents from impact"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (minimalist geometric A) recessed 2cm from canister top. Below: 'NociStrike NS-3 / ADS-NC3' in sans-serif block lettering. 'BLACKWOOD COMMERCIAL GROUP' stamped near base. Meridian Council licensing mark (circular embossed seal) on opposite side. All markings are recessed or etched to avoid snagging.",
+    "condition_typical": "Field-worn but maintained. Matte finish shows micro-scratches from holster draw-and-secure cycles. Nozzle may show slight discoloration from residual aerosol compound exposure. Overall condition suggests regular deployment and proper maintenance by trained security personnel. Battle-scarred units show impact marks and occasional trigger guard stress marks from high-intensity deployment scenarios."
+  },
+  "image_prompt": "Product photography of a tactical aerosol canister (Arcturus NociStrike NS-3) mounted on a dark gray matte background, positioned at 45-degree angle. Steel-gray-gloved hand gripping canister from left side, nozzle articulated to fan position. Dramatic side-lighting from upper left reveals matte black polymer texture and recessed lettering details. Cool blue-white key light creates subtle shadow beneath nozzle head showing micro-perforations. Atmospheric volumetric fog (light cyan) suggests aerosol payload. Close-up detail inset (lower right corner) shows pressure seal ring and Arcturus logo engravings. Cyberpunk aesthetic: clinical, corporate, austere—no warmth. --ar 3:2 --v 6"
 }

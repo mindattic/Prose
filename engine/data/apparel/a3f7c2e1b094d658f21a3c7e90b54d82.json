@@ -54,5 +54,28 @@
     "Ringo DV-4 'Courier'",
     "The Shelf",
     "Yusra Ntambwe-Cakić"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A complete tactical ensemble designed for anonymous urban movement. The silhouette reads as working-class utilitarian—neither bulky nor fitted—with layered functionality that blends seamlessly into Tier 2-3 foot traffic. The reversible jacket dominates: brick-burgundy courier-worn on one side, slate-grey maintenance-tech on the other. Beneath sits a teal compression layer suggesting augmentation compatibility. The overall impression is deliberate understatement—built to be forgettable.",
+    "fit": "Athletic compression through the torso with strategic room at the hips and thighs. The jacket sits mid-thigh with tailored shoulders that allow mag-panel detachment without bunching. Trousers are straight-cut with functional ease at the knees, neither slim nor baggy. Boots are low-profile, minimizing visual height signature.",
+    "primary_material": "Jacket: ballistic-weave synthetic with Nullthread-X scanner-resistant lining. Henley: performance compression blend with conductive threading. Trousers: reinforced cotton-synthetic composite. Boots: scuffed synthetic leather with composite toe reinforcement.",
+    "texture": "Jacket exterior: matte with deliberate stress creasing and worn thread-bare patches mimicking authentic wear. Interior hexagonal texture reads flat at distance. Henley: smooth stretch with subtle ribbed power-routing channels. Trousers: canvas-like finish with reinforced knee panels showing subtle thread-wear. Boots: weathered leather with dull composite toe capping.",
+    "color_scheme": "Primary: brick-burgundy and deep slate-grey (reversible). Secondary: dusty teal compression layer. Tertiary: rust-brown trousers. Accent: aged grey synthetic leather boots. Palette reads as low-visibility urban neutral.",
+    "closures": "Jacket: magnetic snap shoulder panels (quick-detach). Henley: discrete friction-fit aug-power zip at wrist. Trousers: traditional button fly with magnetic thigh-pocket closures and hidden ankle zip-pocket. Boots: standard lace with friction-grip sole.",
+    "distinctive_features": [
+      "Reversible jacket with two distinct social-read profiles",
+      "Mag-detach shoulder panels for modular reconfiguration",
+      "Nullthread-X scanner-resistant internal lining",
+      "Reinforced left-ribcage holster channel (integrated, invisible externally)",
+      "Aug-power routing channels stitched along compression shirt left sleeve",
+      "Wrist zip-port for device tethering without hardware exposure",
+      "Deep magnetic-closure thigh pockets",
+      "Hidden ankle zip-pocket for blade/med-patch storage",
+      "Deliberately scuffed boots to signal authentic working-class wear"
+    ],
+    "tier_indicator": "Tier 2-3 functional—expensive enough to be durable, anonymous enough to avoid attention. Price point suggests streetside custom work, not corpo manufacturing.",
+    "cultural_context": "Street operator, courier, maintenance-tier augmented personnel, or low-profile corpo asset. Wearing this signals either genuine working-class status or calculated infiltration. The reversibility suggests someone who needs to shift identities in real-time—whether for survival, employment, or evasion.",
+    "condition_typical": "Deliberately broken-in, with authentic stress wear and intentional scuffing. Never pristine; always reads as already-in-use, which is the entire design philosophy."
+  },
+  "image_prompt": "Cyberpunk fashion photography: androgynous model wearing Cindershift Reversible Crowd-Runner Rig photographed from mid-thigh up, facing camera with neutral street-operative expression. Left side of frame shows model in brick-burgundy jacket (courier profile), right side shows same model in slate-grey hexagonal texture (maintenance profile)—a split-screen reversible reveal. Teal compression henley visible at collar and sleeves, showing subtle conductive threading under moody cyan-amber mixed lighting. Dark alley backdrop with rain-slicked concrete and neon flicker. Deep bokeh shadows. Gritty, authentic wear visible on fabric. Emphasize the scanner-resistant lining as subtle shimmer. Ground-level detail: scuffed synthetic leather boots with composite toe catching rim light. Atmosphere: anonymous, functional, built for forgetting. Shot on dark grey cyclorama. Cinematic noir-tech aesthetic. --ar 2:3 --v 6"
 }

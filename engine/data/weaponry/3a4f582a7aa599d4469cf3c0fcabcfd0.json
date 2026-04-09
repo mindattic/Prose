@@ -43,5 +43,37 @@
     "premium",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus ST-4 'Verdict'",
+    "Lacuna Genomics",
+    "Nika Svensson-Kone",
+    "Stainless Steel",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "The Nearfield",
+    "Undertow",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A substantial, purposeful revolver with a distinctly wider frame than conventional magnums. The eight-round cylinder creates a noticeably bulbous profile, but the overall silhouette remains balanced and professional rather than blocky. The longer sight radius and adjustable rear sight give it a target-pistol aesthetic despite its revolver form.",
+    "dimensions": "Overall length 254mm, cylinder width 52mm (notably wider than standard), frame width 38mm, barrel length 127mm (4-inch standard configuration)",
+    "weight_description": "Substantial but well-balanced — 1.12kg settles naturally in the hand with no muzzle flip. Dense enough to feel engineered rather than hastily assembled, yet not punishing for extended shooting",
+    "primary_material": "Precision-machined stainless steel frame and cylinder, creating a durable, corrosion-resistant foundation. Suggests durability in GLMZ's industrial environments without requiring constant maintenance",
+    "finish": "Brushed stainless steel with mirror-polished cylinder — the contrast between matte frame and reflective cylinder emphasizes the engineering precision. No cosmetic chrome; this is functional finish",
+    "color_scheme": "Silver-gray stainless steel primary with darker steel trigger and hammer. Minimal visual noise — the weapon speaks through geometry rather than decoration",
+    "grip_texture": "Proprietary ergonomic polymer grip with subtle textured surface — slightly stippled for positive purchase without being aggressive. Wraparound design that fills the gap created by the wider frame, creating an intuitive hold despite the non-standard geometry",
+    "distinctive_features": [
+      "Eight-round cylinder — visibly wider and longer than standard revolver cylinders, creating distinctive bulge in the cylinder area",
+      "Adjustable target-style rear sight mounted on top strap — two-dot configuration with fine windage/elevation adjustment screws",
+      "Ramp front sight with contrasting white outline — competition-grade visibility",
+      "Recessed ejector rod head flush with cylinder face — clean engineering detail",
+      "Fluted cylinder walls — both aesthetic and weight-saving, revealing precision machining",
+      "Competition trigger with crisp edges and polished face",
+      "Visible timing marks on cylinder underside where it aligns with frame",
+      "Minimal external hammer spur with clean geometry"
+    ],
+    "manufacturer_markings": "VOLKOV-SAITO PRECISION engraved on left frame in sans-serif font, MODEL VS-R8 'VERDICT' on barrel with serial number on frame below cylinder axis. Subtle certification marks indicate enhanced registration compliance for Tier 3+ legality",
+    "condition_typical": "Usually found in well-maintained condition — this is a precision instrument owned by shooters who respect it. Minimal wear on grip, possible light holster marks on frame from professional carry, occasional burn marks on cylinder from repeated .357 mag cycling"
+  },
+  "image_prompt": "Professional product photograph of Volkov-Saito VS-R8 'Verdict' revolver. Eight-round revolver positioned on dark brushed metal surface, cylinder open and slightly rotated to display eight recessed chamber openings. Dramatic side-lighting from left, creating depth across brushed stainless frame and mirror-polished cylinder. Adjustable target sights in sharp relief. Ergonomic polymer grip visible, showing stippled texture. Background deep charcoal, minimal props. Cyberpunk precision aesthetic — engineering visible in every line. Shot from three-quarter angle emphasizing distinctive wide cylinder and frame geometry. 2226 GLMZ corporate precision tool photography style. Φ symbol optional watermark. --ar 3:2 --v 6"
 }

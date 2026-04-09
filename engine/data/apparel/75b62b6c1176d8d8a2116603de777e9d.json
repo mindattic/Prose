@@ -37,5 +37,26 @@
     "Arcturus Exo-Runner Frame",
     "Birgitta Asante-Papadopoulos",
     "Coherent Radiation Scalpel CRS-7 'Suture'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting ankle wrap that hugs the lower leg with a subtle bulge on the inner ankle where the sheath sits. The integrated blade pocket creates minimal visual disruption, appearing as a natural contour of the wrap rather than an obvious weapon carrier. When worn under boots or tapered pants, it reads as functional compression gear rather than tactical equipment.",
+    "fit": "Compression-fit around the ankle and lower calf, secured with adjustable closures that allow customization for different boot heights and leg sizes. Sits snugly enough to prevent shifting during movement but loose enough for all-day wear without cutting off circulation.",
+    "primary_material": "High-grade neoprene blend with moisture-wicking synthetic interior lining and reinforced ballistic weave on the sheath pocket itself",
+    "texture": "Smooth, slightly tacky neoprene exterior; ribbed interior for grip and comfort against skin; the sheath area has a subtle quilted texture for blade retention",
+    "color_scheme": "Matte charcoal gray base with red accent stitching along the sheath seam and a small Redline Combat crimson logo patch on the outer ankle. Some variants feature black-on-black for deeper concealment.",
+    "closures": "Medical-style velcro straps with friction-fit reinforcement at the top and bottom; magnetic micro-closure on sheath flap for silent blade access",
+    "distinctive_features": [
+      "Handle-down blade orientation allows cross-draw from crouching/kneeling positions",
+      "Accepts fixed blades up to 12cm",
+      "Seamless integration with standard combat boots",
+      "Moisture-wicking interior prevents sweat accumulation",
+      "Red accent stitching visible under pant leg when worn",
+      "Reinforced ballistic panel surrounding sheath pocket",
+      "Designed to sit underneath pant leg without obvious printing"
+    ],
+    "tier_indicator": "Tier 3-4 functional working class to street operative; affordable tactical gear for people who can't afford corpo-grade redundancy systems",
+    "cultural_context": "Street soldiers, maintenance workers, underleveled corp security, anyone operating in mid-tier conflict zones. Signals preparedness, street smarts, and assumption of violence. Worn by people who've learned the hard way that primary weapons get compromised.",
+    "condition_typical": "Well-broken-in with visible wear patterns on the velcro, scuffed neoprene from boot friction, and slight discoloration from sweat stains that resist full cleaning. The red stitching often fades slightly from UV exposure."
+  },
+  "image_prompt": "Close-up fashion photograph of a Redline Combat Ankle Sheath worn on a cyberpunk operative's lower leg, boot removed to reveal the gray neoprene wrap with red accent stitching. The sheath pocket is visible on the inner ankle with integrated fixed-blade knife handle showing at handle-down angle. Model has augmented leg with visible chrome joint at ankle. Dark industrial backdrop with neon red accent lighting reflecting off the velcro straps. Shot from side angle emphasizing the wrap's compression fit and seamless integration. Moody, tactical aesthetic. --ar 2:3 --v 6"
 }

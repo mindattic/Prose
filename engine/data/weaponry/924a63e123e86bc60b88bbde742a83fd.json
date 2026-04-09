@@ -44,5 +44,33 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Aybek Alvarez-Okonkwo",
+    "Breck Tannen",
+    "Kang-Petrov Arms KPM-6 'Equalizer'",
+    "Nika Svensson-Kone",
+    "The Riveters' Round"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist designated marksman rifle with aggressive utilitarian lines. The KPM-12 reads as a working weapon—no frills, intentional geometry. The profile is notably compact for a DMR, with a thick, purposeful barrel that dominates the upper receiver. The weapon has an almost industrial density to it, suggesting engineered durability over elegance.",
+    "dimensions": "Overall length: 96 cm | Barrel length: 48 cm | Width (with rail): 8 cm | Height (stock to rail top): 12 cm",
+    "weight_description": "Hefty but balanced. At 4.5 kg, it sits firmly in the hand without feeling cumbersome. The weight distribution favors the barrel, suggesting the shooter carries the gun's momentum into aimed fire rather than fighting recoil.",
+    "primary_material": "Steel barrel with chrome-lined bore | Titanium-aluminum composite receiver | Reinforced polymer furniture | Integrated rail system of brushed steel",
+    "finish": "Matte tactical black with weathered anodized aluminum accents. The barrel shows micro-scratches from field use. Heat-dissipation fins along the barrel are finished in darker gunmetal to manage thermal signature visibility.",
+    "color_scheme": "Primary: Military matte black | Secondary: Brushed gunmetal aluminum (barrel fins, rail sections) | Accent: Minimal—subdued QUANTA-price engraving and KPA logo in dark gray",
+    "grip_texture": "Aggressive texturized polymer with shallow vertical serrations. Designed to grip through gloved hands without slipping. The charging handle has knurled knobs for positive manipulation under stress.",
+    "distinctive_features": [
+      "Oversized barrel with integrated heat-dissipation fins running the length of the handguard",
+      "BCI neural-link contact points mounted flush on the charging handle and above the grip—subtle raised pads for thumb activation",
+      "Thermal management vents along the lower handguard in a staggered pattern",
+      "Heavy-duty Picatinny rail system running full length of receiver",
+      "Ambidextrous controls with enlarged magazine release",
+      "Small circular thermal-sensor window (1cm diameter) inset into the barrel shroud",
+      "Wear patterns showing hard field use: scuffed edges, minor dents on the magazine well, carbon scoring around the ejection port"
+    ],
+    "manufacturer_markings": "KPA (Kang-Petrov Arms) logo stamped in dark gray on the left side of the receiver, below the rail. Serial number etched into the barrel shroud. 'KPM-12 STEADFAST' designation lasered onto the right side of the stock in industrial sans-serif type. Φ3,500 price marking in small text below the KPA logo—a corporate affectation common in Tier 2 markets.",
+    "condition_typical": "Well-maintained but visibly deployed. The weapon shows signs of active use—carbon buildup around the action, minor scratches on the polymer, wear marks on the thermal fins from equipment contact. Not battle-scarred, but lived-in. The kind of rifle that's cleaned regularly but never babied."
+  },
+  "image_prompt": "Product photography of a Kang-Petrov Arms KPM-12 'Steadfast' designated marksman rifle. The weapon lies angled across a dark brushed-steel surface, positioned at 45 degrees to the camera. Dramatic sidelight from the left reveals the brutal geometry of the heavy barrel and thermal dissipation fins, casting deep shadows that emphasize the industrial silhouette. The matte black finish contrasts sharply with metallic gunmetal accents. Close detail: show the BCI neural-link contact points on the charging handle catching light. In soft focus background, a gloved tactical hand (augmented with visible subcutaneous circuitry at the wrist) is positioned near the magazine well, suggesting field readiness. The composition emphasizes the weapon's hybrid nature—precision instrument married to assault-element durability. Cyberpunk aesthetic: neon blue highlights on the thermal sensor window and KPA logo. The steel surface reflects faint QUANTA currency symbols in holographic text. Professional armory lighting. --ar 3:2 --v 6"
 }

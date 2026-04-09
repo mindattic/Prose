@@ -59,5 +59,41 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Biometric Denial Charge BDC-1",
+    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
+    "Focadrin",
+    "GLMZ",
+    "Lazarus LX-2 'Lab Rat'",
+    "Narrowcast",
+    "Nenad Vargas-Baffour",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Tessera Corponation",
+    "The Resonance Communion",
+    "WELLSPRING",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, precision-engineered rifle with an almost medical aesthetic—more laboratory instrument than street weapon. The profile is angular and purposeful, dominated by a prominent cylindrical resonance emitter mounted coaxially above the barrel. The overall impression is clinical efficiency: every surface serves a function.",
+    "dimensions": "Length: 94 cm | Barrel length: 52 cm | Width at emitter: 8 cm | Height with scope: 32 cm",
+    "weight_description": "Hefty but balanced—3.8 kg distributed evenly between the magnetic acceleration chamber and resonance emitter. Feels authoritative in the grip without being unwieldy; designed for sustained aim over extended negotiations.",
+    "primary_material": "Aerospace-grade carbon composite frame with brushed titanium reinforcement around the magnetic coil assembly. The resonance emitter housing is anodized aluminum.",
+    "finish": "Matte charcoal composite with brushed steel accents. The magnetic coil housing shows light oxidation marks—evidence of active ionic discharge. No gloss; all surfaces are non-reflective to prevent scope glint.",
+    "color_scheme": "Charcoal gray primary with brushed steel emitter band. Accent: pale cyan indicator strip along the resonance field strength readout.",
+    "grip_texture": "Ergonomic rubberized polymer with subtle hexagonal texturing for wet-hand control. The thumbwheel selector for activation mode is knurled bare aluminum—designed to be operated through tactical gloves.",
+    "distinctive_features": [
+      "Coaxial resonance emitter—a 6 cm cylindrical housing running parallel to the barrel, visibly humming with contained field energy",
+      "Integrated digital targeting scope with cyan reticle and compound distance/resonance-field overlap display",
+      "Aerosol payload chamber with translucent section showing crystalline compound in suspended state—faintly opalescent",
+      "Field strength indicator: soft blue LED strip that intensifies as resonance field activates",
+      "Thumbwheel selector with three detents: SAFE, SINGLE-ACTIVATE, MASS-ACTIVATE",
+      "Magnetic charging port on the underside—inductive, no exposed contacts",
+      "Serial plate: 'MASCR-4 | TESSERA ORBITAL LABS | Licensed Medical Systems Division'"
+    ],
+    "manufacturer_markings": "Tessera corporate logo (stylized geometric prism Φ) laser-etched on the left side of the composite frame. Serial number and 'NON-LETHAL COMPLIANCE CERTIFIED' stamp on the charging port panel. Subtle warning labels in five languages along the emitter housing.",
+    "condition_typical": "Well-maintained institutional finish. Light handling wear around the grip and thumbwheel selector. The translucent payload chamber shows sediment settling—evidence of regular use but careful storage. No battle damage; this weapon doesn't see field combat, only deployment in controlled environments."
+  },
+  "image_prompt": "Product photography of MASCR-4 rifle on matte black surface, shot at 45-degree angle under dramatic side-lighting that catches the brushed steel emitter band. Payload chamber backlit to show faintly luminescent crystalline compound in suspension. Scope reticle faintly glowing cyan. Thumbwheel selector in sharp detail. Tessera corporate markings visible on frame. Cyberpunk aesthetic with clinical precision—surgical tool meets institutional authority. Hands in black tactical gloves positioning the weapon, showing grip texture and selector mechanics. Shallow depth of field. Cool color temperature with highlights in pale cyan and brushed steel. --ar 3:2 --v 6"
 }

@@ -49,5 +49,25 @@
     "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
     "Slagworks Industrial",
     "Vantablack Media Parasocial Carrier Mask"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Second-skin-tight bodysuit that clings from neck to ankles in matte obsidian black, with hairline gold-copper circuitry patterns that catch light like veins of precious metal running beneath the fabric. The tracery glows subtly at key points where chrome interfaces meet skin. Appears almost liquid in dim light, architectural and technical in bright light.",
+    "fit": "Compression fit, zero excess fabric, anatomically mapped to standard humanoid and digitigrade morphologies. Seams are molecularly bonded and invisible; the suit reads as a single unified layer rather than assembled panels.",
+    "primary_material": "Nano-bonded synthetic polymer composite with conductive copper-gold thread weave embedded at sub-surface level. Matte finish prevents reflective signature.",
+    "texture": "Smooth, almost frictionless to the touch; fabric has a micro-scaled texture that reduces static. Feels like high-grade athletic performance wear crossed with industrial biotech. Slight tackiness at conductive interface points.",
+    "color_scheme": "Matte midnight black base with hairline gold-copper tracery in geometric, circuit-like patterns. Traces brighten to soft amber-gold luminescence at wrist, ankle, spine, and neural port cutouts under direct light or ambient chrome glow.",
+    "closures": "None visible — the suit is pulled on as a single unit. Port cutouts feature magnetic retention clips and conductive lip seals that lock chrome interface hardware in place.",
+    "distinctive_features": [
+      "Strategically placed port-open cutouts sized for standard neural jack, spinal rig, wrist socket, and ankle coupler access",
+      "Conductive lip seals around each port that glow faintly when active",
+      "Hairline gold-copper data traces following biomechanical load paths visible under direct light",
+      "Zero-bulk seam construction with nano-bonded panel edges",
+      "Integrated thermal regulation microstructure (invisible but functional)",
+      "Ambidextrous wrist and ankle sizing to support both standard and chrome-limb attachment"
+    ],
+    "tier_indicator": "Tier 4-5 boundary — expensive augmentation infrastructure tech with working-class adoption. Signals serious chrome investment and technical sophistication, not wealth display.",
+    "cultural_context": "Worn by augmented laborers, chrome-heavy operators, and industrial workers in the GLMZ. Indicates commitment to body modification, technical competence, and integration into the augmentation economy. Street credibility among those with significant chrome. Associated with rigging, data-jockey, and heavy-mod subcultures.",
+    "condition_typical": "Pristine when new; develops subtle wear patterns around port cutouts and heat-stress areas with use. Conductive traces may dull slightly from repeated chrome contact. High-end maintenance extends lifespan indefinitely."
+  },
+  "image_prompt": "Close-up fashion photograph of a Vanthorpe NeuralRoute Aug-Interface bodysuit on a lean, dark-skinned androgynous model with visible chrome wrist socket and spinal jack, wearing only the matte black bodysuit and industrial boots. Hairline gold-copper circuitry glows softly under moody blue-amber studio lighting. The model's augmentation ports interface seamlessly with the suit's conductive lip seals. Shot against a blurred cyberpunk industrial backdrop — corrugated metal walls, neon accent light reflecting off chrome. Volumetric atmospheric haze. Technical, clinical fashion catalog aesthetic. --ar 2:3 --v 6"
 }

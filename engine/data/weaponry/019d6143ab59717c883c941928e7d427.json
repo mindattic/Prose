@@ -40,5 +40,32 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Nika Svensson-Kone",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Vespid Dynamics"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular sidearm with an aggressive forward rake. The rotating drum magazine dominates the grip area, creating a bulbous profile that tapers toward a short, precisely machined muzzle. Resembles a scaled-down rotary cannon crossed with a dental tool — purposeful, clinical, predatory.",
+    "dimensions": "Total length 16 cm, height 10 cm, width 4.5 cm. Muzzle length 3.2 cm with visible acceleration ports",
+    "weight_description": "Dense and balanced despite compact size — 0.9 kg feels substantial in the palm, suggesting concentrated engineering rather than bulk. Sits low and forward in hand due to magazine distribution",
+    "primary_material": "Aerospace-grade aluminum alloy frame with tungsten-carbide acceleration sleeve. Rotating drum is hardened steel with visible chamber ports",
+    "finish": "Matte gunmetal gray with brushed titanium accents around trigger guard and safety lever. Micro-abraded grip section for secure purchase. Faint tool marks visible on drum housing, suggesting precision manufacturing",
+    "color_scheme": "Gunmetal gray primary with silver-gray barrel sleeve and black polymer trigger guard. Faint blue LED indicator near drum axis (piezo-charge status)",
+    "grip_texture": "Textured polymer with embedded cooling grooves — deliberately abraded to prevent slipping. Feels slightly warm to touch due to integrated charge dissipation",
+    "distinctive_features": [
+      "Exposed rotating drum with 120 visible micro-dart chambers arranged in tight helical pattern",
+      "Muzzle cluster of 4 precision acceleration ports arranged in diamond pattern",
+      "Piezo-indicator LED (blue when charged, amber when depleted) embedded near mag release",
+      "Safety lever with VESPID embossed lettering — aggressive serif font",
+      "Micro-serrated edges along top rail for accessory mounting",
+      "Faint burnish marks on drum where rounds have cycled — sign of heavy use",
+      "Vented heat dissipation slots along barrel assembly",
+      "Trigger with trigger guard safety — deep, defensive geometry"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS logo stamped on left grip plate (hexagon with stylized wasp silhouette). Serial number engraved on drum axis. 'NS-4 PINCUSHION' designation stenciled in small capitals on barrel sleeve. Small compliance certification plate under grip",
+    "condition_typical": "Field units show burnished chamber ports from sustained fire, light scoring on drum from rapid cycling, and micro-pitting on muzzle crown. Grip texture worn smooth in high-contact areas. Piezo-indicator may show inconsistent illumination after extended deployment"
+  },
+  "image_prompt": "Professional product photography of the Vespid Dynamics Needlestorm NS-4 'Pincushion' flechette pistol. Compact gray-and-titanium sidearm with rotating drum magazine, displayed at 45-degree angle on matte black surface. Gloved hand (chrome knuckle augmentation visible) gripping lower frame, finger off trigger. Dramatic side-lighting emphasizing the precision-machined muzzle cluster and rotating drum chamber pattern. Cool blue LED charge indicator glowing softly. Background: dark, bokeh-blurred industrial setting with faint neon glow. Shallow depth of field on trigger guard details. Cyberpunk aesthetic, clinical and menacing. Ultra-detailed metal texture, every micro-groove visible. --ar 3:2 --v 6"
 }

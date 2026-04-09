@@ -47,5 +47,24 @@
   "related_entities": [
     "GLMZ",
     "Pikasso Wemba-Þórðarson"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A professional-grade environmental analysis system presented as a compact field kit. The main unit is a reinforced case containing a handheld display unit with ruggedized construction, flanked by a grid of 12 identical sensor stakes arranged in foam cutouts. The display dominates visually with its bright screen, while the stakes appear as sleek cylindrical probes with sensor arrays at their tips.",
+    "dimensions": "Main case: 45cm × 35cm × 12cm. Handheld display: 18cm × 12cm × 3cm. Individual stakes: 25cm length, 2.5cm diameter",
+    "weight_description": "Moderate handheld case—requires two-handed carrying or shoulder strap; easily transported by field operative, not pocket-sized",
+    "primary_material": "Reinforced polymer composite case with anodized aluminum frame; sensor stakes feature titanium alloy bodies with ceramic sensor tips",
+    "finish": "Textured non-slip grip surfaces on case; matte charcoal composite with brushed aluminum accents; sensor stakes have burnished metallic finish with translucent sensor windows",
+    "color_scheme": "Matte dark gray and gunmetal primary, with high-visibility safety orange rubber bumpers and accents; display screen glows with color-coded green-yellow-orange-red gradient mapping interface",
+    "interface_elements": "7-inch tactical display screen with gloved-hand touch capability; recessed physical button array for menu navigation; four indicator LEDs (power, signal, contamination alert, stake sync status); USB-C charging port; weathersealing gaskets around all openings; Φ-credit authorization panel on case lid",
+    "distinctive_features": [
+      "Sensor stakes feature pulsing status LEDs that glow faint blue when active",
+      "Display generates real-time topographic contamination heat map with animated threat corridors",
+      "Magnetic mounting brackets molded into case interior for deployment organization",
+      "Carrying strap is reinforced with reflective threading for low-visibility work zones",
+      "Each stake has a unique RFID tag embedded for deployment tracking"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS logo embossed on case lid in silver; model designation TEMK-2 printed on display bezel; regulatory stamps for GLMZ tier-1 hazmat compliance; serial number engraved on aluminum frame",
+    "condition_typical": "Field-weathered but maintained—scuff marks on case from deployment, slight corrosion on stake tips from repeated soil contact, display screen showing active contamination mapping with multiple warning indicators"
+  },
+  "image_prompt": "Overhead product photography of Carrion Defense Works TEMK-2 toxic environment mapping kit on steel workbench. Open gray reinforced case displaying organized sensor stakes in foam cutout, handheld display unit showing real-time contamination heat map in vivid orange-red gradients. Scattered sensor stakes deployed across workbench surface with faint blue LED status lights glowing. Industrial cyberpunk aesthetic with cold blue-white LED worklight casting sharp shadows, hints of hazard tape and biohazard warning stickers visible on case edges. Metallic surfaces catching dramatic sidelighting. High-tech rugged field equipment aesthetic --ar 3:2 --v 6"
 }

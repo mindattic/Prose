@@ -47,5 +47,28 @@
     "Lazarus HZ-4 'Cleanroom'",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "VitaCore LinguaSync Real-Time Translation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A long, deliberately austere overcoat with rigid shoulders and an almost military bearing. The silhouette is boxy and utilitarian, designed for function over form. Reaches ankle-length with a high, structured collar that reads as protective rather than fashionable. Visual impression is industrial-practical: something you wear because the air outside is unsafe.",
+    "fit": "Oversized and intentionally loose through the torso to accommodate layering and movement. Shoulders are reinforced and squared-off. Sleeves are straight and generous, ending with sealed cuffs that cinch down. The overall cut prioritizes coverage and barrier integrity over body-conforming silhouette.",
+    "primary_material": "Laminated multi-layer barrier fabric — a synthweave composite rated for splash resistance. The outer shell has a slight sheen and stiffness characteristic of industrial laminates. Rough cotton-poly blend lining that is deliberately cheap and utilitarian.",
+    "texture": "Smooth, slightly waxy outer surface with micro-texture designed for easy decontamination wiping. The lamination creates subtle visual stratification. Lining is coarse and prone to pilling. All seams are flat-stitched and visibly utilitarian.",
+    "color_scheme": "Industrial yellow-tan (safety-rated visibility color), sometimes with reflective striping on seams or collar edge. No decorative patterning; any variations are material-based or wear-induced.",
+    "closures": "Full-length heavy-duty zipper with pull-tab rated for industrial use. Reinforced snaps at collar for face-seal compatibility. Cuff cinches use friction-fit or simple friction closures — nothing that might catch on contaminated material.",
+    "distinctive_features": [
+      "High collar with filtration-compatible face seal ridge along upper edge",
+      "Sealed cuffs that cinch over gloves",
+      "Flat utilitarian seams designed for easy decontamination",
+      "Ankle-length cut for full leg coverage",
+      "Reinforced shoulder panels with visible stitching",
+      "Heavy-duty industrial zipper with oversized pull-tab",
+      "Oxweld Safety Systems branding typically stamped or sewn into lining",
+      "No internal pockets (easier to decontaminate)",
+      "Slight chemical-resistant sheen on outer surface"
+    ],
+    "tier_indicator": "Tier 1–2 boundary. Manufactured by a corpo subsidiary, distributed through official channels and company stores, but affordable enough for Shelf residents. Signals economic precarity at the edge of corpo safety infrastructure.",
+    "cultural_context": "Worn by industrial workers, chemical corridor residents, waste management staff, and anyone living downwind of processing zones who cannot afford full hazmat protection. Signals: living in a contaminated zone, employed in industrial labor, close to the economic bottom of corpo-adjacent work, acceptance of environmental hazard as lifestyle cost.",
+    "condition_typical": "Usually broken-in and slightly stained from actual use. The outer surface may show faint discoloration from repeated decontamination wiping. Lining is often chafed and pilled. Seams may show stress from repeated cinching. Worn overcoats have a tired, weathered appearance but remain functionally intact."
+  },
+  "image_prompt": "Cyberpunk fashion photography: Oxweld ChemBarrier Overcoat displayed on a dark industrial mannequin or worn by a worker-class model with visible augmentation scars on neck/hands. Yellow-tan laminated fabric under moody, sickly green-tinted industrial lighting suggesting contaminated air. Dark warehouse or chemical corridor backdrop with rusted pipes and warning signage. Close detail shot of high collar face-seal edge and cuff cinch mechanism. Overhead shot showing ankle-length silhouette. Mood: utilitarian survival wear, not fashion. Gritty, unglamorous, honest. --ar 2:3 --v 6"
 }

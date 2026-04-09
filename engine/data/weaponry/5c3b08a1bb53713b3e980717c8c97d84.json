@@ -44,5 +44,37 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Aybek Alvarez-Okonkwo",
+    "Irontide Tidal Energy",
+    "Kamala Blomberg-Konadu",
+    "Nika Svensson-Kone",
+    "ShieldTech CLA-3 'Cascade'",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, forward-weighted marksman rifle with an almost organic quality — the barrel and receiver flow into a distinctly angular, swept-back stock. The weapon has a predatory grace, all sharp lines and purposeful geometry. Chrome neural conduits snake along the left side of the receiver like industrial veins. It reads as expensive and specialized: a thinking weapon, not a brutal one.",
+    "dimensions": "1,120mm overall length, 85mm width at receiver, 65mm height with mounted targeting module. Barrel length 560mm.",
+    "weight_description": "Substantial but not burdensome — 4.4kg feels purposeful in the hands, with weight distributed toward the breach to counterbalance the precision barrel. Balanced enough that extended aim feels natural, yet heavy enough to communicate lethal intent.",
+    "primary_material": "Aerospace-grade carbon composite frame with brushed titanium receiver. Barrel is cold-forged steel with chromium nitride coating.",
+    "finish": "Matte gunmetal gray primary finish with brushed titanium accents around the action. The neural integration points are polished chrome that catches light like circuit traces.",
+    "color_scheme": "Gunmetal gray dominant, with contrasting brushed chrome neural conduits, black polymer furniture, and faint violet ambient lighting along the BCI coupling interface.",
+    "grip_texture": "Textured polymer grip with subtle geometric patterns — not aggressive, but providing assured purchase. The stock wraps with rubberized coatings that feel almost medical in their precision.",
+    "distinctive_features": [
+      "Dual neural coupling nodes mounted on the left rail — smooth chrome discs with faint violet LED indication",
+      "Predictive targeting module integrated into the upper receiver with a small, retracting optical array",
+      "Caseless ammunition magazine with translucent polymer revealing the distinctive round geometry",
+      "Thermal management vents running along the barrel in staggered lines",
+      "Engraved 'CASSANDRA' nameplate on the receiver in serif font, with Lucid Dreams Sleep Technology logo",
+      "Subtle wear patterns on the charging handle and magazine release suggesting careful, precise use",
+      "A small biometric pad on the pistol grip that glows faintly when powered"
+    ],
+    "manufacturer_markings": "Lucid Dreams Sleep Technology logo appears as a stylized closed eye on the upper receiver. Serial plate mounted on the right side of the stock in minimalist sans-serif. TPMR-4 designation stamped into the barrel collar.",
+    "condition_typical": "Immaculate to well-maintained — a weapon at this tier and price point is treated as precision equipment. Show use on the charging handle and magazine release, but the neural coupling interface and optics are kept scrupulously clean. Operators understand that this weapon is as much computer as firearm."
+  },
+  "image_prompt": "Professional product photography of the Tessera TPMR-4 Cassandra DMR rifle, angled 45 degrees on a dark matte black surface. Dramatic side-lighting from the left reveals the brushed titanium receiver and polished chrome neural conduits glowing faintly violet. The sleek carbon composite frame catches highlights, emphasizing the forward weight and predatory geometry. Close detail shot showing the dual neural coupling nodes and biometric pad on the grip. Cyberpunk aesthetic with cool color grading, subtle blue-violet ambient lighting reflecting off chrome accents. High-end catalog photography, sharp focus, moody and precise. --ar 3:2 --v 6"
 }

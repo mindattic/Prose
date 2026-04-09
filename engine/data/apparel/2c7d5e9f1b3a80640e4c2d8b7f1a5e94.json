@@ -41,5 +41,28 @@
   ],
   "related_entities": [
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sterile, clinical silhouette dominated by teal and translucent layers. The wearer appears encased in protective geometry—a figure optimized for contamination control rather than fashion. The clear overgown creates a ghostly second skin, while the respirator hood gives an almost alien quality. The hip-mounted specimen tray and gene-reader wand mark this unmistakably as working biotech.",
+    "fit": "Compression-fit base scrubs hugging the torso; oversized sterile overgown worn loose for donning/doffing efficiency. The respirator hood is snug at the neck, sealing against skin. Gloves and boots fitted precisely to prevent gaps. Overall silhouette is rectangular and utilitarian—form serves function entirely.",
+    "primary_material": "Teal bioseal synthetic weave (scrubs); transparent medical-grade polymer overgown; medical-grade respirator fabric with silicone seals; double-layer glove system (inner bioskin latex, outer reinforced polymer); antimicrobial vulcanized rubber boots",
+    "texture": "Scrubs: smooth, slightly grippy bioseal weave. Overgown: slick, crinkly transparent plastic with faint anti-static texture. Respirator: ribbed silicone seals contrasting smooth filter mesh. Gloves: inner latex powdery-soft, outer polymer slightly tacky. Boots: dense, smooth rubber with subtle grip treads.",
+    "color_scheme": "Primary teal (scrubs and undershirt), pure white (boots, glove underlayers), clear/transparent (overgown with color-coded hemline striping—red, yellow, green zones indicating contamination gradients). Small chrome accents on specimen tray and gene-reader wand.",
+    "closures": "Overgown: rear velcro seals and friction-fit front overlap. Respirator: locking collar seal with twist-lock mechanism. Gloves: elastic wrist cuffs over gown sleeves. Boots: slip-on with interior grip lining. Specimen tray: magnetic attachment to hip seal-ring.",
+    "distinctive_features": [
+      "Gene-compatible hip and tail-channel vents in rear scrub panel (for variant morphologies)",
+      "Clear respirator hood face panel with internal anti-fog coating",
+      "Color-coded hemline contamination zones visible through transparent overgown",
+      "Double-glove system allowing tactile feedback during cell work",
+      "Integrated hip specimen tray with magnetic culture plate holders",
+      "Gene-reader wand holstered on right hip (retractable tether)",
+      "TESSERA Genomics embroidered patch on left chest",
+      "Aerosol/particulate filter cartridges visible on respirator sides",
+      "Seamless boot-to-gown seal with integrated ankle cuff"
+    ],
+    "tier_indicator": "Tier 2-3 boundary. The outfit itself is premium (TESSERA corp labwear), but signals working-class biotech labor, not executive status. Expensive but worn by wage earners.",
+    "cultural_context": "Medical/biotech worker identity. Wearing this rig signals competence in genetic and cellular work, institutional affiliation with a major genomics corp, and daily exposure to hazardous biologics. The wearer is credentialed, employed, and bound by strict contamination protocols. Not corpo elite, but trusted specialist.",
+    "condition_typical": "Meticulously maintained. Any visible wear (faint discoloration, micro-tears) triggers replacement under TESSERA safety protocols. Scrubs show faint creasing from repeated sterilization cycles. The overgown is typically pristine per shift—disposed and replaced hourly. Gloves show latex powder residue. Boots maintain their antimicrobial sheen."
+  },
+  "image_prompt": "A figure in full TESSERA Genomics biotech labwear stands in a sterile white clinic environment under cold fluorescent lighting. Teal bioseal scrubs visible beneath a translucent protective overgown with color-coded contamination zones (red-yellow-green hemline stripes) glowing faintly. A clear-faced respirator hood seals at the neck, interior filter cartridges subtly visible. Double-layered gloves (bioskin inner, polymer outer) hold a sleek gene-reader wand. White antimicrobial boots grip a polished biolab floor. Hip-mounted specimen tray displays labeled culture plates. Moody clinical aesthetic—cool tones, sharp focus on seals and interfaces, soft backlighting catching the transparent overgown. Dark chrome accents. Professional, sterile, slightly dystopian. Shot from mid-torso upward. --ar 2:3 --v 6"
 }

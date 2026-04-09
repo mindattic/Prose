@@ -40,5 +40,25 @@
   "parent_corponation": "",
   "related_entities": [
     "Lazarus HZ-4 'Cleanroom'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively ordinary low-top athletic sneaker that reads as worn-in casual wear at first glance. Streamlined silhouette with subtle angular panels suggesting reinforcement. The faded colorway and slightly scuffed appearance make it blend into street wear, masking its specialized function.",
+    "fit": "Snug around the heel and midfoot with minimal padding, designed for extended walking without fatigue. Toe box is slightly roomy to accommodate industrial socks or foot monitors. Overall fits true to size with a performance-oriented profile.",
+    "primary_material": "Chemically-treated synthetic microfiber upper with sealed seams; acid-tolerant vulcanized rubber sole with deep tread. Lining is moisture-wicking nano-treated mesh.",
+    "texture": "Smooth synthetic exterior with a faint matte finish from chemical coating. Sole has visible grip patterns. Upper shows micro-scratching and light discoloration from chemical exposure—intentionally stressed during manufacturing.",
+    "color_scheme": "Faded off-white and cool grey with barely-visible dark grey accent piping. Upper shows deliberate bleach-like discoloration patches. Sole is dark charcoal with faint metallic undertones from acid-resistant additives.",
+    "closures": "Standard lace system with friction-fit tongue; laces are synthetic aramid blend. Secondary magnetic micro-locks at heel collar (barely visible).",
+    "distinctive_features": [
+      "Sealed seam reinforcement visible on lateral side panels",
+      "Subtle Solvent Field Gear logo embossed (not printed) on tongue",
+      "Recessed drainage channels in sole for liquid runoff",
+      "Chemical-test certification marking subtly etched into heel counter",
+      "Toe and heel show strategic wear patterns suggesting authentic field use",
+      "Inner collar has RFID-readable tag pocket"
+    ],
+    "tier_indicator": "Tier 3-4 functional working class. Too specialized for corpo tier, too purpose-built for street tier. Signals employment in hazardous industrial roles.",
+    "cultural_context": "Worn by Shelf-side fixers, contamination site investigators, waste processing workers, and black-market salvagers. Communicates quiet competence and field experience—someone who works in dangerous zones but doesn't advertise it. A practical choice that prioritizes anonymity over obvious protective signaling.",
+    "condition_typical": "Worn-in and subtly weathered. Never pristine, always showing faint chemical residue marks and scuff patterns. The patina of actual field use is part of the design language."
+  },
+  "image_prompt": "Close-up fashion shot of a white and grey Solvent Driftwalker hazmat sneaker on a figure's foot, standing on a reflective chemical-slicked industrial floor. Dark moody lighting with amber safety glow reflecting off the wet surface. Side profile shows sealed seam detail and scuffed toe. Blurred urban industrial backdrop with warning stripe patterns. Shot from low angle emphasizing tread and durability. Cyberpunk aesthetic with subtle neon reflection on the rubber sole. --ar 2:3 --v 6"
 }

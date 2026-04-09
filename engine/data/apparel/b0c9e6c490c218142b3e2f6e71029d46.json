@@ -36,5 +36,25 @@
   "related_entities": [
     "Ambrosia Fekete-Waiyaki",
     "The Collective"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular wrist cuff with a hinged clamshell design that wraps around the wrist. When closed, it presents as a sleek, minimalist bracelet with no visible seams or openings. When open, it reveals a recessed pocket holding a smartwatch or comm device. The overall silhouette suggests purposeful restraint—less jewelry, more instrument.",
+    "fit": "Snug against the wrist with adjustable friction-fit bands; adds approximately 8mm of bulk to the wrist profile without feeling heavy or obstructive. Sits between fitted watch and rigid cuff.",
+    "primary_material": "Matte-finished ballistic composite with internal copper-mesh Faraday shielding; exterior shell is treated graphene-reinforced polymer.",
+    "texture": "Smooth, almost matte on the exterior with subtle micro-etching; internal pocket surfaces show fine mesh pattern from shielding layer. Hinges are precision-machined and feel deliberate when operated.",
+    "color_scheme": "Gunmetal gray or charcoal black as standard; accent details in dull copper or bronze where Faraday mesh is visible through thin gaps. Some units feature burnt orange accent lines along hinge seams.",
+    "closures": "Precision magnetic snap closure with tactile detent feedback; opens with deliberate pressure, closes with a distinct 'lock' sensation. Dual-stage magnets prevent accidental opening.",
+    "distinctive_features": [
+      "Embedded copper-mesh Faraday cage interior",
+      "Visible hinge mechanism with precision-machined aesthetic",
+      "Minimal branding—small Chronotek logomark on clasp",
+      "Interior pocket sized for standard 44mm smartwatch faces",
+      "Micro-ventilation holes to prevent condensation buildup",
+      "Custom etching options for owner identification or deadpan slogans ('OFF THE GRID,' 'GHOSTING,' 'SIGNAL DENIED')"
+    ],
+    "tier_indicator": "Tier 2–3 boundary. Expensive enough to signal deliberate privacy consciousness; practical enough for working-class street operators. Not luxury, not budget—specialized tool.",
+    "cultural_context": "Worn by corporate security specialists who need selective connectivity, street informants avoiding corpo tracking, medical workers managing data sensitivity, and privacy advocates making a statement. Signals distrust of ambient surveillance and preference for controlled visibility. Also popular among underground network operators and black-market couriers.",
+    "condition_typical": "Pristine when new; develops subtle micro-scratches on the exterior with age. Internal mesh occasionally shows fine dust accumulation visible through seams (cosmetic only). Magnetic snaps may show faint wear marks from repeated opening. Well-maintained units look intentional and deliberate; neglected ones look paranoid."
+  },
+  "image_prompt": "Close-up fashion photograph of a matte gunmetal Chronotek Signal-Blocking Watch Case worn on a pale wrist. Case shown both closed (sleek cuff appearance) and cracked open to reveal the copper Faraday mesh interior and nested smartwatch. Moody blue-gray cyberpunk lighting with sharp shadows highlighting the precision hinges and magnetic snap details. Dark urban backdrop with soft bokeh of city neon. Product-focused but worn authentically. Shallow depth of field on the open hinge mechanism. --ar 2:3 --v 6"
 }

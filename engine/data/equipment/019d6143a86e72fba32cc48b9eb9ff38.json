@@ -47,5 +47,23 @@
   "related_entities": [
     "Ouroboros PG-2 'Blackout'",
     "PulsePoint ThermoLayer Thermal Regulation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A large, lightweight fabric sheet with a subtle metallic sheen from embedded conductive mesh. Appears draped or folded, revealing the copper-nickel weave pattern beneath the dark textile backing. The material has a soft, almost textile appearance despite its technical function—not rigid or industrial-looking.",
+    "dimensions": "2m x 3m when fully extended; compresses to roughly 40cm x 50cm when folded",
+    "weight_description": "Handheld and portable—1.5 kg allows one person to carry it easily in a messenger bag or backpack, or drape it over one shoulder",
+    "primary_material": "Copper-nickel mesh woven into flexible fabric backing (cotton-synthetic blend)",
+    "finish": "Matte on the fabric side with visible metallic grid pattern from the conductive mesh; edges are professionally hemmed with reinforced stitching",
+    "color_scheme": "Charcoal gray base fabric with subtle copper and nickel highlights visible in the mesh weave; faint silver threading along seams",
+    "interface_elements": "None—purely passive hardware. Small woven label tag at one corner with manufacturer marking and washing/care instructions in multiple languages",
+    "distinctive_features": [
+      "Visible copper-nickel mesh pattern across surface creates a fine, almost textile-like grid appearance",
+      "Reinforced corner grommets (brushed steel) for anchor points when creating enclosures",
+      "Selvage edge treatments to prevent fraying and signal leakage",
+      "Subtle iridescent quality where light catches the metallic mesh at certain angles"
+    ],
+    "manufacturer_markings": "'Street Custom' woven label in bottom corner; small regulatory compliance tag noting 80 dB attenuation specifications and wash durability (200+ cycles)",
+    "condition_typical": "Slightly creased from storage; worn but pristine example shows light surface handling marks; appears semi-translucent when held to light due to mesh density"
+  },
+  "image_prompt": "Cinematic product photography of a 2m x 3m copper-nickel mesh Faraday Blanket draped across a workbench in a neon-lit cyberpunk workshop. Dramatic side-lighting reveals the metallic grid weave pattern, casting fine shadows. One corner folded back to show the dark fabric backing and reinforced grommet. Cool blue and orange accent lighting reflects off the mesh. Scattered around it: a wireless router with a red LED, a smartphone showing signal loss, disconnected neural interface cables. Shallow depth of field. --ar 3:2 --v 6"
 }

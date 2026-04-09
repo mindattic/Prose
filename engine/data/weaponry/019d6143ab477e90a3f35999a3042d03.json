@@ -38,5 +38,32 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Dielectric Filament Anchor Drone DFAD-1 'Cobweb'",
+    "Last Word",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'"
+  ],
+  "physical_description": {
+    "visual_profile": "A heavily modified industrial paint sprayer with an aggressive, purpose-built aesthetic. The body has been reinforced and customized with visible welds, heat-resistant cladding, and an oversized nozzle assembly. It reads as part tool, part weapon — brutalist and functional, with the worn patina of street-level engineering.",
+    "dimensions": "68 cm overall length, 12 cm width at widest point (pump handle), 28 cm height including nozzle assembly. Nozzle extends 8 cm from main body.",
+    "weight_description": "Hefty when loaded (2.5-3 kg), with a low center of gravity that settles into the operator's grip. The weight distribution favors the pump mechanism, making it feel controlled rather than unwieldy despite the bulk.",
+    "primary_material": "Modified aluminum pressure vessel (original sprayer core), reinforced with welded steel bands and heat-treated steel around the ignition assembly. Grip reinforced with carbon-fiber-reinforced polymer overlay.",
+    "finish": "Matte industrial gunmetal with scorched and discolored patches from repeated use. Heat damage visible around the nozzle assembly — anodizing burned away in patches, exposing raw metal. Polymer grip shows scratches and grip tape wear.",
+    "color_scheme": "Predominant gunmetal gray with charred black streaking around the nozzle. Accent colors vary — custom crews often add single-color band wraps or spray-painted markers (red, silver, or phosphorescent yellow) on the reservoir body as signatures.",
+    "grip_texture": "Textured grip tape (skateboard-style, worn smooth in high-contact areas), wrapped around a reinforced polymer handle. The trigger area is bare textured polymer, slightly tacky from residual gel overspray.",
+    "distinctive_features": [
+      "Oversized piezoelectric ignition assembly at nozzle tip — visible ceramic element with copper contact points",
+      "Heat vents along the nozzle housing to prevent gel ignition in the barrel",
+      "Pressure gauge mounted on the side of the reservoir (analog dial, often removed or obscured)",
+      "Custom welded steel reinforcement bands around the pump mechanism",
+      "Residual gel drip marks and burn scars on the outer casing from field use",
+      "Quick-release safety collar around the pump trigger guard",
+      "Etched or spray-painted crew tags or artist signatures on the underside of the reservoir"
+    ],
+    "manufacturer_markings": "Original manufacturer logos (Devolt or similar industrial brand) are often scratched or deliberately obscured. Street Custom builders typically add unsigned marks — crew symbols burned or scratched into the steel bands, or temporary stickers applied to the reservoir that are regularly replaced.",
+    "condition_typical": "Field-worn and personalized. Signs of heavy use include scorching around the nozzle, gel residue crusted on the pump handle, slight corrosion on exposed welds, and grip tape worn to bare polymer. Custom modifications are visible — aftermarket nozzles, rewrapped handles, added pressure vents. Each unit is unique and bears the marks of its operator's technique."
+  },
+  "image_prompt": "Product photo of a modified industrial paint sprayer reimagined as a flamethrower, mounted on a dark concrete surface. The weapon is positioned at a 45-degree angle to emphasize the modified nozzle assembly and reinforced pump mechanism. Dramatic side-lighting from a single harsh light source casts sharp shadows, highlighting the heat-scorched aluminum body, welded steel bands, and textured grip tape. The nozzle glows faintly warm, suggesting active readiness. Include detail of dried flammable gel residue on the trigger guard and streaked burn marks on the casing. Cyberpunk industrial aesthetic — gritty, street-level engineering, no chrome polish, raw functionality. Dark background emphasizes the weapon's utilitarian brutalism. --ar 3:2 --v 6"
 }

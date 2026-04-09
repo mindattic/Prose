@@ -80,5 +80,24 @@
     "Variable Impedance Rifle VIR-9 'Switchback'",
     "WELLSPRING",
     "Zoë Mbekele-Thorvaldsdóttir"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, industrial-grade power harvesting system centered around a cylindrical spool mechanism. The device presents as two integrated components: a drum-like induction spool housing and a sleek rectangular power conditioning unit with modular output connectors. The overall aesthetic is utilitarian but refined—engineered for field technicians and underground operators.",
+    "dimensions": "Spool drum: 18cm diameter × 12cm depth. Conditioning unit: 22cm wide × 10cm tall × 7cm deep. Coil deploys to 30m when fully extended.",
+    "weight_description": "Compact and handheld. Spool weighs 2.2kg, conditioning unit 0.9kg. Total system weighs just over 3kg—easily carried in a field pack or worn on a carry strap during extended operations.",
+    "primary_material": "Aluminum alloy chassis with carbon-fiber reinforced spool drum. Shielded magnetic core head wrapped in nonconductive polymer jacket.",
+    "finish": "Matte gunmetal gray anodized aluminum with brushed steel accent panels. Coil wire displays copper windings visible through semi-transparent spool housing.",
+    "color_scheme": "Charcoal gray primary body with bright copper-tone coil highlights. Conditioning unit features dark slate gray with neon cyan status indicator accents.",
+    "interface_elements": "Six color-coded output ports (5V/12V/24V/48V plus dual configurable) with magnetic quick-connect adapters. Dual-line cyan LED display on conditioning unit showing real-time harvest output (kW/V readout). Tactile mode selector switch. Coil spool features indexed detent positions to lock wrapped lengths. Manual tension lever on drum.",
+    "distinctive_features": [
+      "Visible copper induction coil wound through translucent spool housing",
+      "Magnetic core head shaped like a C-clamp for wrapping around power conduits",
+      "Pulsing cyan status LEDs that intensify with active harvest current",
+      "Weatherproof cable entry port with integrated strain relief",
+      "OUROBOROS ENERGY proprietary load-balancing circuit visible through diagnostic window on conditioning unit"
+    ],
+    "manufacturer_markings": "OUROBOROS ENERGY logo (serpent consuming its tail) embossed on spool housing. Model designation 'TIS-30M' stamped on power unit. Regulatory compliance marks for GLMZ industrial equipment standard. Small warning label (yellow/black) regarding electromagnetic field exposure.",
+    "condition_typical": "In field use, the spool drum sits on work surface or clamps to equipment rig. Coil extends toward target power infrastructure with the magnetic core head wrapped or positioned against high-current conduits. Conditioning unit tethered via 2m armored cable, positioned nearby for operator access to output ports and status display. Light operational dust and scuff marks typical on field units."
+  },
+  "image_prompt": "Cyberpunk product photography: OUROBOROS ENERGY Tidal Induction Spool displayed on a worn industrial workbench surrounded by high-voltage warning signage. Foreground shows the cylindrical spool drum with visible copper coil windings lit by cool cyan diagnostic LEDs, while the sleek rectangular conditioning unit sits to the right with its bright display panel active. The magnetic core head is draped around a thick industrial power conduit prop in the background. Dramatic side-lighting casts sharp shadows across the equipment, emphasizing the matte-gunmetal finish and copper wire details. Neon glow reflects off brushed steel accents. Graffiti-marked concrete wall and cable bundles in soft-focus background suggest GLMZ lower-ring industrial zone. --ar 3:2 --v 6"
 }

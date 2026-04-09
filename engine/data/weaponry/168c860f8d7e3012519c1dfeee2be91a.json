@@ -42,5 +42,40 @@
     "controversial",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Axiom Systems Cognitive Grenade CG-1 'Brainstorm'",
+    "Cezar Watanabe-Gyasi",
+    "Ezio Kaboré-Malhotra",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Nika Svensson-Kone",
+    "The Fathom Line",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Vespid Dynamics"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular directed-energy weapon resembling a hybrid between a precision rifle and a medical diagnostic device. The silhouette is deliberately clinical — sharp lines and minimal ornamentation suggest surgical precision rather than combat brutality. The barrel assembly is unusually compact and features a distinctive honeycomb venting pattern. Overall impression: a tool of control rather than destruction.",
+    "dimensions": "Length: 68 cm | Width at grip: 4.5 cm | Height (including targeting optics): 12 cm | Barrel assembly: 22 cm",
+    "weight_description": "Balanced and deceptively light at 4.2 kg — the weight sits forward in the barrel assembly where the pulse capacitors are housed, creating an intuitive aim-point feel. Handles like a precision instrument, not a bludgeon.",
+    "primary_material": "Aerospace-grade carbon composite frame with reinforced polymer grip housing. Barrel assembly is brushed titanium with embedded copper coil matrices visible through semi-translucent side panels.",
+    "finish": "Matte gunmetal gray with brushed titanium accents. The barrel features a distinctive satin finish with faint copper undertones from the electromagnetic coils beneath. Wear-resistant nano-coating shows minimal patina even after extended field use.",
+    "color_scheme": "Primary: cool gunmetal gray with black polymer accents. Secondary: brushed titanium and faint copper-gold visible through translucent barrel vents. Power indicator strips glow soft blue (minimum), amber (medium), or warning red (maximum).",
+    "grip_texture": "Soft-touch rubberized polymer with subtle non-slip ribbing. Ergonomic finger wells suggest the weapon was designed for precision trigger control rather than sustained grip strength. Slightly tacky feel aids handling in wet conditions.",
+    "distinctive_features": [
+      "Honeycomb electromagnetic venting pattern along barrel (functional AND aesthetic)",
+      "Semi-translucent side panels revealing copper electromagnetic coil matrix",
+      "Integrated targeting laser (invisible IR mode available)",
+      "Unlabeled rotary power dial on the receiver (1-10 scale, intentionally obscured)",
+      "Pulsing blue status LED on the top rail (indicates charge state and thermal load)",
+      "Capacitor charging whine audible during power-up (tactical warning)",
+      "No visible magazine or ammunition feed — entirely self-contained",
+      "Precision alignment crosshairs etched into the top rail",
+      "Recessed impact dimples on the polymer body (durability reinforcement)",
+      "Field-replaceable power cell slot with magnetic latch on the left side"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS logo (stylized wasp silhouette) stamped in recessed relief on the left side of the receiver. Serial plate below the logo features microscopic text. ND-4 variant identifier laser-etched into the top rail. No product name — Vespid leaves that to the street.",
+    "condition_typical": "Meticulously maintained in corporate hands; shows minimal wear. In field use among Tier 4 operatives, exhibits light scuffing on the polymer and faint discoloration from repeated capacitor thermal cycling. Rarely heavily damaged — the weapon's non-kinetic nature means it survives encounters intact."
+  },
+  "image_prompt": "Product photography of Vespid Dynamics Neural Disruptor ND-4 'Brainstorm' resting on a dark gunmetal surface, angled 45 degrees to showcase the honeycomb barrel venting and translucent side panels revealing copper coil matrices. Dramatic side-lighting from the left casts sharp shadows across the carbon composite body, highlighting the brushed titanium barrel accents in cool blue-white light. A gloved hand in tactical polymer grips the weapon from the right, fingers positioned on the trigger guard. Close-up detail of the unlabeled rotary power dial visible near the grip. Cool cyberpunk color grading with slight cyan-blue tint to the lighting. Shallow depth of field with the barrel assembly in sharp focus. Studio background dark charcoal, seamless. The weapon appears clinical, precise, and ominous — a tool of control rather than destruction. --ar 3:2 --v 6"
 }

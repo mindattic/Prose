@@ -57,5 +57,38 @@
     "TESSERA TC-3 'Crucible'",
     "Tiare Sjostrom-Kwarteng",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A weathered, deliberately asymmetrical survivor's silhouette. The figure reads as a walking archive of salvage and repair — layers of protection stacked without aesthetic concern, only function. The mismatched sleeve colors create visual tension. Everything is oversized enough to move in, tight enough to stay secured. The overall impression is grimy resilience: someone who has crawled through industrial infrastructure and lived to tell it.",
+    "fit": "Deliberately relaxed and utilitarian. Compression base layer hugs torso for heat retention; quilted vest adds bulk without restriction; work jacket hangs loose for layering and quick movement. Cargo pants sit low on hips with room in the thighs for gear loops and tool access. Boots are chunky and heavy. All seams and closures are sized for gloved hands.",
+    "primary_material": "Base: faded synthetic thermal weave (originally branded, now illegible). Vest: salvaged foam insulation panels. Jacket: washed olive canvas with charcoal wool replacement sleeve. Pants: dark charcoal synthetic twill. Belt: worn leather. Boots: cracked leather uppers, thick rubber soles. Reinforcements: orange self-repair tape, black upholstery thread, riveted leather patches, rubber-backed fabric, black rubber sealant, pop rivets, recycled polymer sheeting.",
+    "texture": "Deeply tactile and lived-in. The compression shirt is soft but pilled from wear. Quilted vest has visible stitch lines creating texture grid. Canvas is stiff and worn smooth in high-contact areas. Wool sleeve is slightly fuzzy. Leather is cracked with raised sealant ridges. Orange tape is fraying at edges. Boots are sealed and re-sealed, creating a bumpy, reinforced texture. Balaclava is loose-knit with visible hand-stitching repairs.",
+    "color_scheme": "Muted, industrial palette: faded ash-gray base, orange self-repair tape (worn to pale orange), rust-brown quilted panel, charcoal wool, olive-washed canvas, dark charcoal twill, black thread and sealant, weathered leather browns, dark gray knit. No bright colors. Everything is either washed-out or artificially dulled by wear and chemical exposure.",
+    "closures": [
+      "Thermal shirt: side seams reinforced with overlapping orange tape",
+      "Vest: hand-stitched with thick black upholstery thread, no traditional closures",
+      "Jacket: canvas snap buttons (some missing, improvised with rope ties on some)",
+      "Cargo pants: mismatched industrial snap closures on all thigh pockets",
+      "Belt: worn leather with brass buckle",
+      "Boots: salvaged laces, pop rivets securing steel toe caps",
+      "Balaclava: pull-over, no closures"
+    ],
+    "distinctive_features": [
+      "Asymmetrical jacket: entire left sleeve replaced with charcoal wool from different source",
+      "Polymer sheeting collar reinforcement for acid-rain deflection",
+      "Riveted leather chest pocket reinforcements — visible hardware",
+      "Double-patched rubber-backed knee panels designed for crawling on industrial grating",
+      "Four deep thigh cargo pockets per leg with industrial snaps",
+      "Utility loops on belt hips for tool attachment",
+      "Boots with salvaged steel plate toe caps fixed with pop rivets",
+      "Hand-stitched balaclava with visible moth-damage repairs",
+      "Orange repair tape throughout, itself fraying — showing layered repair history",
+      "Visible black upholstery thread stitching in X-patterns on vest",
+      "All original branding worn to illegibility — no corporate markers"
+    ],
+    "tier_indicator": "Tier 5 (sub-grade/ungoverned). This is salvage assembled over years, not purchased. No corporate manufacture markers, no warranty seals, no new-purchase crispness. Every repair is visible and permanent. The wearer has chosen function over status.",
+    "cultural_context": "This is the uniform of the Shelf-dweller, the scrap-crawler, the infrastructure salvager. Wearing this announces: 'I work in industrial ruins, I am not connected to corpo supply chains, I repair rather than replace, I know how to move through dangerous spaces.' The visible repairs are not aesthetic choices — they are badges of survival. This outfit says the wearer has hands-on knowledge of acid-rain zones, industrial grating, confined spaces, and equipment maintenance.",
+    "condition_typical": "Perpetually broken-in. This is not a outfit that looks 'new' or 'pristine' at any point in its lifecycle. The visible orange tape is already fraying. The sealant on the boots is cracked and will crack again. The balaclava has been repaired by hand and will need repairs again. Wearing this outfit means accepting that it will only get more weathered — the goal is to keep it functional, not fashionable."
+  },
+  "image_prompt": "Fashion photography of a worn Tier 5 survivor's patchwork outfit displayed on a dark industrial mannequin or worn by a model with visible augmentation ports. Shot against a weathered concrete wall with acid-rain streaks and faded industrial stenciling. Moody, desaturated lighting emphasizing the mismatched textures: faded ash-gray compression layer visible at neck and wrists, quilted vest with visible black X-stitch patterns, olive canvas jacket with contrasting charcoal wool left sleeve, heavy cargo pants with riveted leather reinforcements, cracked work boots with steel-plate toe caps. Close detail shots of fraying orange repair tape, hand-stitched balaclava, and weathered leather belt. Overall mood: utilitarian, unflinching documentation of survival gear. Shot in cool tones with shadows emphasizing wear patterns and repair seams. --ar 2:3 --v 6"
 }

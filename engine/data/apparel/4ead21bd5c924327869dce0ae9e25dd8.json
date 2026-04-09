@@ -38,5 +38,25 @@
     "Lazarus Pharmaceuticals",
     "Solina Barreto-Kiptoo",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A modest, carefully assembled formal two-piece that reads as honest effort rather than luxury. The shirt hangs with slight asymmetry, collar crisp but betraying hand-pressing. The slacks drape with understated simplicity, a visible vertical seam on the left knee breaking the uniform surface—a scar of repair worn openly. Together, the set conveys working-class dignity: worn but dignified, patched but present.",
+    "fit": "Relaxed through the shoulders and torso; the shirt sits slightly loose at the waist, suggesting it was tailored to multiple bodies over time. Slacks have a straight leg, modest taper, sitting comfortably at the hip rather than clinging. No aggressive tailoring—this is made to fit whoever wears it.",
+    "primary_material": "Faded ivory synth-cotton (shirt); dark charcoal wool-blend or heavy cotton (slacks). Both show age and handling—the fabrics have softened with wear, lacking the stiffness of new formal wear.",
+    "texture": "Shirt collar carries visible diagonal starch ridges and a slight papery crispness. Fabric body is soft, almost napped from repeated washing. Slacks surface is smooth with a subtle nub weave; the knee seam presents raised stitching—hand-sewn with visible thread tension variation, unmistakably repaired.",
+    "color_scheme": "Ivory (yellowed, not bright) paired with charcoal gray. The replaced third button on the shirt is a noticeably different shade—pearl or slightly warm white—creating an unintended asymmetry. No patterns; the set's only visual interest is its own wear and repair.",
+    "closures": "Shirt: standard button front with 4-hole buttons (3 original, 1 replacement that sits slightly proud). Slacks: traditional fly zipper, likely well-worn but functional. No magnetic or modern closures.",
+    "distinctive_features": [
+      "Mismatched third button—stands as a functional repair, not hidden",
+      "Hand-stitched knee seam on left slacks leg—raised stitching, slightly uneven tension",
+      "DIY cornstarch starch on collar—visible in crispness and faint white dust residue in creases",
+      "Signs of alteration: hemmed slacks show pin holes from temporary adjustments",
+      "Faded color variation across both pieces—darker at seams, paler on body, suggesting different wash cycles",
+      "No augment ports, no tech integration, no branding—intentionally anonymous"
+    ],
+    "tier_indicator": "Tier 3–4 functional, bordering Tier 5 salvage. The set signals working-class or sub-grade origin; wearing it to a job interview is an act of respectability politics, presenting oneself as capable and serious despite material constraints.",
+    "cultural_context": "Shelf-culture formal wear. Worn to custody hearings, funerals, school events, job interviews—moments when presentation matters in ways that bypass street authority. The visible repair and mismatch are not hidden because hiding them would require resources this wearer doesn't have. The honesty of the repair becomes its own statement: 'I showed up. I tried.'",
+    "condition_typical": "Worn but maintained. The shirt is clean, collar freshly starched for this occasion. Slacks are pressed (under a textbook overnight, likely). Both pieces show age and handling—fabric pills slightly, seams hold but show strain. This is formal wear that gets worn hard and cared for carefully, because replacing it is not an option."
+  },
+  "image_prompt": "Cyberpunk fashion photography: a Shelf-resident model in faded ivory synth-cotton dress shirt and charcoal hand-repaired slacks, standing against a rust-stained concrete wall under cold blue-white LED strips. The shirt collar is crisp and slightly uneven; the left knee seam visible, stitched by hand with obvious care. A mismatched pearl button catches the light. The model's posture is dignified but tired, augmented limbs subtly visible (chrome fingertips, a glowing subdermal on the neck)—formal wear stretched across a body marked by the streets. Moody, desaturated color palette with cool overhead lighting casting sharp shadows. Shallow depth of field, focus on the knee seam and the replacement button. GLMZ industrial backdrop, worn metal and concrete. Dark, respectful tone. --ar 2:3 --v 6"
 }

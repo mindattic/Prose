@@ -45,5 +45,24 @@
     "MERIDIAN",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Wool"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively simple crewneck that reads as understated elegance. The oatmeal tone is warm and lived-in without appearing worn. On the body it creates a calm, grounded silhouette—neither fashion statement nor utilitarian gear, but something that suggests the wearer has moved beyond the need to signal status visibly.",
+    "fit": "Relaxed but tailored. Sits close enough to show clean shoulders and chest without compression or cling. Sleeves hit at the wrist with slight ease. Cut long enough to tuck if needed, short enough to wear loose. Designed for both sedentary work and movement.",
+    "primary_material": "Geneware-enhanced merino wool, 12-gauge knit. Sourced from cooperative flocks in former Patagonia. The fiber is finer and more resilient than pre-Collapse merino.",
+    "texture": "Smooth, almost imperceptibly napped surface. The knit is tight and uniform, with minimal pilling except at high-friction zones (cuffs). Feels substantial in hand—substantial enough to justify the price without announcing it.",
+    "color_scheme": "Oatmeal—a warm, desaturated beige with hints of cream and grey. Deliberately undyed or dyed to appear undyed. Ribbing at collar, cuffs, and hem in a fractionally darker tone, nearly imperceptible unless looked for directly.",
+    "closures": "None. Pullover style with crew neckline.",
+    "distinctive_features": [
+      "Woven label inside left hem: 'H&C / MERIDIAN 88 / NATURAL SERIES'",
+      "No external branding or logos",
+      "Contrasting ribbing (collar, cuffs, hem) so subtle it reads as intentional restraint rather than design choice",
+      "Tight 12-gauge knit that holds shape through repeated wear and washing",
+      "Slight pilling at cuffs after months of use—a mark of authenticity, not defect"
+    ],
+    "tier_indicator": "Tier 1-2 subtle luxury. The price-to-appearance ratio signals wealth to those educated enough to recognize it. Not flashy; the opposite of flashy.",
+    "cultural_context": "Worn by people who have moved past corpo displays and street affectation. Researchers, independent contractors, older money, and those with enough security to dress invisibly. Common in Tier 3 workshop communities where craft is respected. Signals taste and restraint rather than disposable income.",
+    "condition_typical": "Worn-in but not aged. Minor pilling at cuffs. Slight fading after multiple wash cycles, which only deepens its appeal. Holds its shape. A 2-3 year garment shows no structural wear."
+  },
+  "image_prompt": "Fashion photograph of a Halverson & Crane merino crewneck on a lean figure against a dark industrial backdrop—exposed concrete, soft amber lighting from a single source. The model is three-quarter turned, arms relaxed. The oatmeal knit glows warmly under the light, texture visible but not exaggerated. No jewelry. The setting is sparse: urban GLMZ warehouse or Tier 3 workshop space. Moody, intimate, documentary-style. The garment should read as effortlessly expensive without trying. Cinematic. Quiet confidence. --ar 2:3 --v 6"
 }

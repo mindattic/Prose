@@ -56,5 +56,26 @@
     "Pellucid Systems",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A full-body cleanroom coverall that reads as clinical and otherworldly—pristine white with a sealed hood and integrated visor that obscures the wearer's face entirely. The silhouette is loose but structured, with deliberate apertures at the spine and crown that hint at augmentation compatibility. Moves with a whisper-quiet, synthetic quality.",
+    "fit": "Relaxed through torso and limbs to accommodate layering and movement in lab environments; sealed at wrists, ankles, and neck via friction-fit elasticated cuffs. Hood pulls tight around the face. Designed for function over form.",
+    "primary_material": "Ultrasonic-welded polyethylene fabric with silver anti-static threading woven throughout. Polycarbonate visor panel. Elasticated seals at apertures.",
+    "texture": "Smooth, almost frictionless outer surface with sealed inward seams. The visor is optically clear but slightly frosted from microbial coating. Silver threading creates a subtle grid pattern visible under close inspection.",
+    "color_scheme": "Sterile white with fine silver anti-static grid. Yellowing along seams and visor edges indicates age and sterilization fluid exposure. Faint brownish discoloration at geneware apertures from repeated field-opening.",
+    "closures": "Positive-pressure sealed collar with filtered air delivery nozzle. Wrist and ankle cuffs with sterile-lock ring connectors for gloves. Sealed geneware apertures ship closed; user opens via controlled tear or heat-activation.",
+    "distinctive_features": [
+      "Integrated polycarbonate visor with anti-fog micro-etching",
+      "Sealed elasticated apertures at base of spine and crown for tail/horn geneware",
+      "Silver anti-static threading throughout fabric",
+      "Smooth-faced inward seams to prevent particulate shedding",
+      "Positive-pressure filtered air delivery system at collar",
+      "Sterile-lock ring cuff connectors (gloves sold separately)",
+      "Faint sterilization fluid yellowing on worn units"
+    ],
+    "tier_indicator": "Tier 4-5: Licensed biotech equipment designed for high-grade geneware labs. Stolen surplus reaches unlicensed Shelf clinics and black-market modification clinics.",
+    "cultural_context": "Worn by legitimate biotech technicians and unauthorized geneware modders. Signals either professional credentials or dangerous underground work. In the Shelf, it reads as 'someone who modifies augmentations'—either clinician or desperate.",
+    "condition_typical": "Pristine factory units are blinding white with perfect seals. Used units show yellowing, faint discoloration at apertures from repeated opening, micro-scratches on visor, and a faint chemical smell from sterilization cycling. Some show burn marks where sealed apertures were force-opened with heated tools."
+  },
+  "image_prompt": "A full-body cleanroom lab suit displayed on a dark metallic mannequin or worn by a cyberpunk model with visible augmentations (tail, horns, or chrome limbs). The suit is pristine white with silver anti-static threading visible under moody blue-green laboratory lighting. The integrated polycarbonate visor reflects cold light, obscuring the face. Sealed apertures at the base of the spine and crown are visible. Backdrop: industrial biotech lab interior with stainless steel surfaces and soft bioluminescent accent lighting. Slightly grainy, clinical aesthetic. --ar 2:3 --v 6"
 }

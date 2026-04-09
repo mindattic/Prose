@@ -45,5 +45,42 @@
     "restricted",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Castillo-Ababio",
+    "Arcturus Defense Solutions",
+    "Brighton Arc",
+    "Crucible VE-7 'Arc Welder'",
+    "Ghost Protocol",
+    "Irontide Tidal Energy",
+    "Kamala Blomberg-Konadu",
+    "Nika Svensson-Kone",
+    "Parliament",
+    "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
+    "The Bazaar",
+    "The Convergence Ministry",
+    "Ximena Bautista-Nwosu",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modular semi-automatic pistol with an almost clinical aesthetic. The frame appears purposefully minimalist — no unnecessary texture or ornamentation. The slide features a subtle ribbed pattern along the top, and the entire weapon has the precision-engineered look of aerospace-grade equipment rather than traditional guncraft. Notable are the small circular sensor pods integrated into the slide and frame, barely protruding but undeniably present.",
+    "dimensions": "Length: 19.2 cm | Barrel length: 10.1 cm | Width: 3.6 cm | Height: 13.7 cm",
+    "weight_description": "Exceptionally balanced. At 0.82 kg, it feels lighter than expected for its size — the distribution favors the grip, creating a natural point-of-aim feel. The weight centers naturally in the palm, with no front-heavy drag despite the integrated sensor suite.",
+    "primary_material": "Aerospace-grade aluminum alloy frame with reinforced polymer slide housing the micro-LIDAR and ballistic computer. The barrel is hardened steel.",
+    "finish": "Matte black DLC (diamond-like carbon) coating on the slide with brushed titanium accents around the sensor housings. The frame features a subtle satin-gray anodized finish that resists reflection.",
+    "color_scheme": "Matte charcoal-black primary body with brushed titanium-silver sensor pod accents and minimal accent lines in ice-blue along the frame seams.",
+    "grip_texture": "Textured polymer with integrated micro-grip patterns — not rubberized, but precision-molded with thousands of microscopic pyramidal surfaces for secure purchase even with synthetic hand augmentations. Slightly cool to the touch.",
+    "distinctive_features": [
+      "Twin circular micro-LIDAR sensor pods mounted flush on either side of the slide, just forward of the ejection port",
+      "Barely-visible blue status LED indicator nested in the lower frame rail — glows soft cyan when BCI-linked and active",
+      "Minimalist iron sights (backup only) integrated into the slide with almost no profile",
+      "Atmospheric sensor intake vents along the triggerguard as fine horizontal grooves",
+      "Custom engagement safety: a small neural-touch pad on the grip that activates only when BCI signal is verified",
+      "Serial number engraved in microscopic text on the frame side, readable only under magnification",
+      "Subtle cooling vents along the barrel shroud in a radial pattern"
+    ],
+    "manufacturer_markings": "The Arcturus Defense Solutions logo — a minimalist arc symbol — appears in polished relief on the left slide. Below it, stamped in small serif type: 'ARC-SL9 GHOST PROTOCOL | NEURAL-LINKED | BCI REQUIRED'. The model designation and serial number appear microscopically engraved on the frame beneath the triggerguard. No safety warnings or traditional manufacturer text visible at casual glance.",
+    "condition_typical": "Pristine to well-maintained. These weapons are rarely battle-worn because they're precision tools requiring constant calibration. When field-used, they show minor scuff marks on the slide edges and grip sides, but never pitting or corrosion — the DLC and anodizing prevent degradation. Some units display accumulated dust in the sensor vents from active use."
+  },
+  "image_prompt": "Product photograph of the Arcturus ARC-SL9 'Ghost Protocol' pistol lying on a dark matte surface, shot from above at a slight 30-degree angle. The weapon is positioned with the grip pointing toward lower-left, slide facing slightly upward to catch dramatic side-lighting. Overhead rim-light in cool blue-white highlights the sensor pod details and the subtle ice-blue frame lines. The matte black DLC finish should appear nearly black but with a barely-visible texture under the dramatic lighting. The titanium sensor accents catch sharp specular highlights. A gloved hand (synthetic chrome-finish fingers) gently cradles the grip in the background, showing scale. The surface is pure noir — dark carbon or matte black, with soft diffuse fill-light to reveal frame detail. The overall mood is corporate, precision, austere — no weathering or battle-damage. Cyberpunk aesthetic emphasizing clean neural-interface technology over traditional firearm aesthetics. --ar 3:2 --v 6"
 }

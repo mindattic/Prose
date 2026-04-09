@@ -74,5 +74,23 @@
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "TESSERA PG-2 'Signature'",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A tactical stealth kit comprising three distinct components: a form-fitting body garment embedded with conductive mesh, a small cylindrical module resembling a military-grade flask, and a coin-sized disc. The ensemble presents as professional security equipment rather than improvised hardware — industrial-grade but deliberately unmarked.",
+    "dimensions": "Vest fits standard torso; jammer module 12cm height × 6cm diameter; beacon coin 3cm diameter × 0.8cm thickness. Full kit compresses to roughly 35cm × 25cm × 10cm when packed.",
+    "weight_description": "Light enough for all-day wear — 1.4 kg distributed across three pieces. Vest adds negligible burden under clothing; jammer and beacon are pocket-portable.",
+    "primary_material": "Vest: woven carbon-fiber mesh over moisture-wicking synthetic backing. Jammer module: anodized aluminum chassis with embedded ferrite cores. Beacon: composite polymer shell with internal cellular battery.",
+    "finish": "Vest surface is matte-black with subtle RF-absorbing texture (reminiscent of anechoic chamber material). Jammer module shows industrial finish with faint machine marks; beacon is unmarked matte-gray polymer.",
+    "color_scheme": "Monochromatic — blacks, dark grays, anodized silver accents. No branding colors visible. Deliberately dull.",
+    "interface_elements": "Vest: internal contact points for jammer module dock (magnetic quick-release). Jammer: single recessed power button, tri-color LED indicator (amber/green/red), micro USB charging port. Beacon: external activation dial (12-position setting ring for device profile selection), micro-contact charging pads on base.",
+    "distinctive_features": [
+      "Jammer module's tri-LED status ring: amber indicates standby, green = silent suppression active, red = saturation warning",
+      "Beacon's mechanical profile-selector dial with barely-visible numerical index (1-12), requiring tactile memory or external reference",
+      "Vest's internal conductive weave visible at seams and neckline — suggests technical sophistication to trained observers",
+      "Absence of any manufacturer branding on visible surfaces (RINGO markings appear only on warranty card inside packaging)"
+    ],
+    "manufacturer_markings": "RINGO CORPORATION subdued laser-etched on inner vest panel and jammer module base (easily obscured). Regulatory stamps on jammer appear generic (intentionally vague compliance labeling). Beacon unmarked.",
+    "condition_typical": "In use: vest worn under tactical jacket or oversized hoodie; jammer module clipped to waistband or secured in chest rig; beacon deployed on window ledge, roof access, or dead drop location several meters from operator. Equipment shows minor cosmetic wear (scuff marks on jammer, fabric pilling on vest seams) consistent with repeated deployment."
+  },
+  "image_prompt": "Product photography of a three-component electronic warfare kit arranged on a carbon-fiber workbench: a black conductive mesh tactical vest lying flat with internal RF-absorbing texture visible, a small brushed-aluminum cylindrical jammer module beside it with visible tri-color LED ring, and a gray polymer coin-sized beacon positioned in sharp focus. Cyberpunk aesthetic with cold blue-white LED rim lighting casting sharp shadows, neon green secondary accent light reflecting off the jammer's aluminum body. Dark workbench background with holographic grid overlay barely visible. Everything arranged in flat-lay tactical composition, suggesting military-grade security equipment. Depth of field emphasizes the jammer module's status LEDs. --ar 3:2 --v 6"
 }

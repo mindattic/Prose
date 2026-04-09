@@ -82,5 +82,23 @@
     "TESSERA CC-6 'Shepherd'",
     "Tessera Nexus Town Car",
     "The Gauze"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A modest, utilitarian sealed pouch with a distinctly agricultural aesthetic despite its trauma medicine application. The pack has a slightly translucent breathable membrane allowing visibility of the granular contents — fine, pale tan to cream-colored zeolite crystals with a faint iridescent sheen from the chitosan-analog coating. The pouch tapers slightly at the top for ergonomic grip during emergency deployment.",
+    "dimensions": "Approximately 15cm tall × 10cm wide × 3cm thick when sealed; palm-to-hand-sized",
+    "weight_description": "Handheld, approximately 350-400g total with pouch material; light enough for emergency carry but substantial enough to feel substantial in field medic kits",
+    "primary_material": "Agricultural-grade breathable polymer composite (polypropylene-based with microporous mesh layer for breathability)",
+    "finish": "Matte finish on outer surface with subtle texture from mesh weave; inner surface glossy to prevent granule adhesion to pouch walls",
+    "color_scheme": "Cream-white pouch body with tan/beige granule contents clearly visible; olive-drab practical labeling with no-frills typography; minimal accent color except for green agricultural safety stripe along top edge",
+    "interface_elements": "Simple tear-notch at top sealed edge; no electronic components; product identification printed directly on pouch in functional sans-serif font; QR code for batch tracking (compliance gesture) positioned bottom-right; no buttons, screens, or interactive elements",
+    "distinctive_features": [
+      "Visible granular contents through translucent membrane — the granules' iridescent chitosan coating catches light subtly",
+      "Asymmetrical top design with integrated grip-friendly taper",
+      "Agricultural equipment branding (wheat stalk icon) coexisting with informal medical field markings (hand-written '72h' breakdown timer notation common in outer ring use)",
+      "Pragmatic lack of medical device aesthetic — looks like farming supply, functions as trauma medicine"
+    ],
+    "manufacturer_markings": "IRONCLAD AGRISYSTEMS logo and angular corporate typeface; '300g HEMOSTATIC GRAIN PACK' printed in functional labeling; regulatory classification printed in small text: 'MOISTURE MANAGEMENT & SUBSTRATE STABILIZATION MATERIAL'; batch/date codes; no medical device licensing marks",
+    "condition_typical": "Field-worn examples show minor creasing on pouch corners, tape reinforcement around tear-notch, scuff marks from medic kit storage; cache-fresh examples show pristine seal integrity and granules in uniform suspension throughout pouch"
+  },
+  "image_prompt": "Product photography: Ironclad Agrisystems Hemostatic Grain Pack on brushed steel workbench beside open field medic kit. Sealed pouch in foreground showing pale tan granule contents through translucent membrane, captured in harsh sideling LED work light creating subtle iridescent shimmer off chitosan coating. Pouch top with tear-notch in sharp focus. Blurred background shows GLMZ outer-ring clinic environment — worn equipment, practical industrial lighting. Agricultural branding visible on label contrasting with trauma medicine context. Cyberpunk aesthetic: functional, jury-rigged, purpose-built rather than polished. --ar 3:2 --v 6"
 }

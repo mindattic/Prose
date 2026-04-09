@@ -43,5 +43,24 @@
     "ShieldTech SB-3 'Groundstrike'",
     "Sulfur Crown Agriculture",
     "The Seam"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A classic flat cap silhouette with a modest rounded crown and small structured brim. The overall impression is deliberately humble—salvage-coded and hand-repaired, suggesting working-class street culture rather than fashion statement. Sits low on the forehead with a slightly lived-in slouch.",
+    "fit": "Relaxed but structured; the re-blocking gives it intentional shape rather than limp drape. Fits snug at the sweatband, accommodating most head sizes with subtle give.",
+    "primary_material": "Salvaged denim—likely recycled from industrial or consumer garments, repurposed into a cap form",
+    "texture": "Worn and softened denim with visible creasing at stress points. The inner sweat-stain ring shows darker indigo pooling. White repair thread is raised and tactile where the crown seam was re-stitched. The brim has a stiff, slightly plasticky feel from the peel-and-stick repair board underneath.",
+    "color_scheme": "Faded indigo-to-grey-blue denim with pronounced darker blue sweat-stain ring at the band. White repair stitching creates visual contrast at the crown seam.",
+    "closures": "None—pull-on style, fits via natural give of salvaged denim and interior sweatband tension",
+    "distinctive_features": [
+      "Heavy white-thread re-stitching visible along crown seam",
+      "Dark sweat-stain ring at inner sweatband—authentic wear marker",
+      "Peel-and-stick repair board reinforcing the brim (slightly visible at edges)",
+      "Uneven fading creating subtle color variation across crown and brim",
+      "No manufacturer label or branding—handmade origin"
+    ],
+    "tier_indicator": "Tier 4-5 functional/salvage. The handmade construction and reclaimed materials signal sub-grade or street-tier resourcefulness, not luxury.",
+    "cultural_context": "Street-tier, working-class, salvage-positive. Worn by logistics workers, street technicians, scrapyard crews, or anyone who values practical function over brand status. Signals self-sufficiency and rejection of corpo consumer culture.",
+    "condition_typical": "Worn and patched. The cap looks like it's been in rotation for months—the sweat stain is genuine, the repairs are visible, the denim is soft and faded. It's functional, not pristine."
+  },
+  "image_prompt": "Cyberpunk flat cap made from faded reclaimed denim with visible white repair stitching at the crown seam and a dark sweat-stain ring inside the band. Photographed on a gaunt, augmented model with subdued street-tier fashion—perhaps weathered synth-leather jacket visible at shoulders. Dark moody warehouse lighting, metal scaffolding and exposed cable runs in soft focus background. Close-up detail shot showing the hand-stitched seam and peel-and-stick brim repair. Urban industrial aesthetic, lived-in and functional. --ar 2:3 --v 6"
 }

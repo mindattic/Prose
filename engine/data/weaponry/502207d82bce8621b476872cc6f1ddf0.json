@@ -42,5 +42,35 @@
     "boutique",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Egg Window",
+    "Ilhan Sandstrom-Badu",
+    "Iowan Behemoth — 'Palisade'",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Nika Svensson-Kone",
+    "Vantablack Media"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular coilgun sniper rifle with a distinctly futuristic profile. The body tapers from a boxy breech assembly to a slender, tubular barrel. Its silhouette suggests precision engineering over brute force—refined rather than imposing. Electromagnetic coils wrap the barrel in visible segments, creating a segmented aesthetic that immediately identifies it as magnetic-acceleration weaponry.",
+    "dimensions": "Overall length: 118 cm. Barrel length: 62 cm. Width across coil assembly: 8 cm. Height at charging handle: 12 cm.",
+    "weight_description": "Hefty but well-balanced. The 7.8 kg weight is distributed toward the rear capacitor bank, creating a natural pivot point. Feels substantial in the shoulder without being unwieldy—engineered for long-duration engagements.",
+    "primary_material": "Aerospace-grade carbon composite chassis with titanium-reinforced coil housing. Breech assembly is hardened steel. Barrel sections are precision-wound electromagnetic windings embedded in carbon sleeves.",
+    "finish": "Matte charcoal-black composite with brushed titanium accents around the coil segments. Subtle wear patterns along the charging handle and magazine well indicate field use. The coil housing has a faint iridescent sheen under direct light—a signature of Vanta's proprietary electromagnetic windings.",
+    "color_scheme": "Dominant matte black with gunmetal-gray coil segments and titanium-silver breech detailing. Accent touches of dark cyan along the capacitor indicator strip.",
+    "grip_texture": "Textured synthetic polymer with fine cross-hatching for purchase in both bare and gloved hands. The charging handle is wrapped in thin plasma-dissipation mesh to prevent capacitor feedback burns.",
+    "distinctive_features": [
+      "Segmented electromagnetic coils running the barrel length—each segment marked with faint targeting reference lines",
+      "A narrow LED targeting reticle band that illuminates along the top rail in low-light conditions",
+      "Exposed capacitor bank window on the left side showing blue-green charge state via transparent polymer, with a small amber warning indicator below",
+      "Vented heat sinks positioned above and below the barrel assembly, necessary for managing residual electromagnetic discharge",
+      "Integrated ceramic round feed system with a transparent 6-round magazine window showing the distinctive milky-white fragmenting penetrators seated in magnetic alignment chambers",
+      "A small pressure-release valve on the breech marked with the VANTA circled-Φ logo",
+      "Faint stress fractures on the carbon composite near the magazine well—visible evidence of high-energy weapon handling"
+    ],
+    "manufacturer_markings": "VANTA ORDNANCE stamped in small sans-serif characters on the left side of the breech. Serial plate riveted to the capacitor housing. A small circled-Φ currency symbol embossed below the serial, indicating licensed corporate military tech. 'VN-6 FLATLINE' engraved in block lettering along the top rail.",
+    "condition_typical": "Well-maintained but not pristine. This is a working precision tool. The composite shows micro-scratches and sweat staining in the grip area. The magazine window has faint thermal hazing from repeated capacitor cycling. The barrel's coil segments show subtle oxidation—entirely normal for a weapon that cycles high-amperage discharge regularly."
+  },
+  "image_prompt": "Product photography of the VANTA Ordnance VN-6 'Flatline' coilgun sniper rifle, angled 45 degrees against a dark matte-black surface. Dramatic side-lighting emphasizing the segmented electromagnetic coil architecture, casting shadows that define each coil segment. The capacitor bank window glows with deep cyan charge state. Nearby, a gloved tactical hand grips the textured polymer receiver, showing scale and ergonomic design. Extreme shallow depth-of-field focuses on the transparent magazine loaded with milky-white ceramic fragmenting penetrators. Background fades to deep charcoal gradient. Cyberpunk aesthetic: cool color grading, high contrast, metallic highlights on titanium accents and coil segments. Cinematic, high-end gear catalog photography. --ar 3:2 --v 6"
 }

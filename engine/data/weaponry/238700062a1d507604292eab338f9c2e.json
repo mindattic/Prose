@@ -44,5 +44,40 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "GLMZ",
+    "Green Bay Community Table",
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "MERIDIAN",
+    "Nika Svensson-Kone",
+    "Ringo Heavy Transit MagRail Levitation Transport Network",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Tomasz Wren",
+    "Vespid Dynamics Pheromone Marker Gun PMG-1 'Breadwinner'",
+    "ZhengDao Bioelectric LumbarBrace Pro"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular bullpup assault rifle with a distinctly modular aesthetic. The weapon presents a forward-heavy silhouette with prominent accessory rails dominating the upper receiver and sides. Its purposeful, utilitarian design reads as a tool built for professionals who value flexibility over fashion.",
+    "dimensions": "Overall length: 685mm | Barrel length: 450mm | Height (with picatinny rail): 95mm | Width: 65mm",
+    "weight_description": "Balanced and manageable at 3.0kg. The weight distribution favors the front end due to the caseless mechanism, creating a naturally steadied aim platform. Feels substantial without being burdensome—designed for extended operational periods.",
+    "primary_material": "Reinforced polymer receiver with steel barrel assembly and hybrid aluminum/steel accessory rail framework. The bullpup layout concentrates harder materials toward the firing mechanism.",
+    "finish": "Matte charcoal polymer with brushed steel rail sections. Strategic areas show anodized gunmetal gray where materials meet. Deliberately subdued—designed for environments where tactical black might be too conspicuous.",
+    "color_scheme": "Primary: dark charcoal gray with gunmetal steel accents. Secondary: Φ green data-port indicators around the BCI interface housing. Minimal branding presence.",
+    "grip_texture": "Textured polymer grip with slight ribbing for positive purchase even through gloved hands. The magazine well features aggressive forward serrations. Rail surfaces maintain a fine-tooth machining pattern to reduce reflection.",
+    "distinctive_features": [
+      "Integrated BCI interface module mounted on the left side of the receiver—visible as a small hexagonal data port with soft Φ-green LED indicator",
+      "Open-standard picatinny rails across upper receiver, both sides, and bottom—visually emphasizes the modular architecture",
+      "Caseless ammunition feed system visible through translucent magazine with round count markings",
+      "Tactical/accessory picatinny rail sections show manufacturing hash marks and tolerance stamps",
+      "Forward assist charging handle positioned for left-hand manipulation in bullpup configuration",
+      "Vented heat shroud along the barrel—small parallel slots suggest efficient thermal management",
+      "Magazine catch positioned for ambidextrous reload operation"
+    ],
+    "manufacturer_markings": "MERIDIAN MUNITIONS etched in small caps across the upper receiver just forward of the charging handle. Small mm-4 designator stamped below. Serial plate mounted on lower receiver rear. Φ2,800 price point sometimes laser-engraved inside magazine well by dealers.",
+    "condition_typical": "Field-maintained but not pristine. Polymer shows light scuff marks from equipment contact. Rails may display minor wear from accessory changes. BCI interface usually protected with a quick-release dust cover. Well-kept operators maintain this weapon—it responds to care with reliability."
+  },
+  "image_prompt": "Product photography of Meridian Munitions MM-4 Breadwinner assault rifle positioned at 45-degree angle on matte black industrial surface. Weapon held steady in gloved tactical hands, fingers clear of trigger. Dramatic side-lighting from upper left creates sharp shadows across the modular rail system and caseless magazine. Cool blue-tinted key light, warm amber accent light on right side emphasizing the steel barrel and heat vents. Shallow depth of field isolates the weapon. Close-up detail visible on the BCI interface port with soft Φ-green glow. Cyberpunk industrial aesthetic. Gritty, professional, corporate-grade reliability on display. --ar 3:2 --v 6"
 }

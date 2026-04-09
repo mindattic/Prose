@@ -62,5 +62,28 @@
     "TESSERA ES-4 'Perimeter'",
     "The Shelf",
     "VitaCore VocalStone Laryngeal Endurance System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A figure built for invisible vigilance — long, dark, and volumetric without bulk. The silhouette is essentially a vertical column of matte charcoal and gray, broken only by the structured hood and the slight protrusion of cargo pockets. On a wearer, it reads as both protective and self-effacing: the kind of outfit that doesn't want to be remembered.",
+    "fit": "Layered and deliberately non-fitted. The coat drapes long (past hip, approaching mid-thigh), with enough internal structure from the thermal batting to hold shape independently, but relaxed enough to move freely. Sleeves are generous, allowing the long cuffs of the mid-layer to roll down and add wrist coverage. Trousers are close-cut through the leg without being tight — mobility optimized, not silhouette-conscious. The hood, when raised, creates a tunnel of shadow around the face.",
+    "primary_material": "Outer coat: dense synthetic weave, visibly industrial-grade (salvaged blackout curtaining). Interior: salvaged thermal batting, uneven density. Mid-layer: heather-gray knit pullover. Base layer: faded black thermal weave. Trousers: close-weave dark gray synthetic. Boots: matte black synthetic leather upper with thick rubber sole. Face wrap: charcoal cotton blend. Gloves: worn dark leather, right hand exposing matte-black cybernetic finger.",
+    "texture": "Matte, non-reflective throughout. The outer coat has a slightly nubby, light-absorbing weave. The thermal batting creates subtle quilting where visible at seams. Leather gloves are cracked and aged, showing use and creasing. The cybernetic finger on the right hand is smooth chrome with a visible articulation joint. Boot sole is deliberately scraped smooth — deliberate weathering for silence.",
+    "color_scheme": "Near-monochromatic darkness: charcoal outer coat, heather gray mid-layer, faded black thermal base, dark gray trousers, charcoal face wrap, black boots. The only break is the matte-black cybernetic finger (which reads as a darker accent rather than a contrast). All colors are desaturated; no brights.",
+    "closures": "Coat: drawstring hood closure, cinches to narrow opening. Trousers: friction-closure strips on cargo pockets (not zippers — noise-conscious). Boots: likely lace or friction-fit (no hard closures). Gloves: fingerless, worn leather, no closures. Pullover: pullover style, no closures. Face wrap: wraps and tucks.",
+    "distinctive_features": [
+      "Deliberately uneven thermal batting distribution — thicker at torso/upper arms, thinner at forearms for dexterity",
+      "Deep, structured hood designed to maintain shape and create shadow",
+      "Friction-closure strips on cargo pockets instead of zippers (noise reduction)",
+      "Exposed cybernetic finger (right hand, index) — older-generation matte-black chrome with audible joint articulation",
+      "Soft-soled mid-calf boots with deliberately scraped smooth outer edge for silent movement on metal surfaces",
+      "Long, rollable pullover cuffs providing extra wrist coverage",
+      "Battered hand-built earpiece with concealed cord under collar",
+      "Face wrap as integrated component (functional, not purely stylistic)",
+      "All fabric choices optimized for light absorption rather than visibility"
+    ],
+    "tier_indicator": "Tier 5 sub-grade. Every piece is salvaged, repurposed, or self-assembled. No brand presence, no new manufacturing. The outfit is functional poverty — optimized for survival, not aesthetics or status.",
+    "cultural_context": "Street-level shelter security; informal perimeter watch; Shelf community survival. Wearing this signals: 'I hold ground here. I don't have corporate resources. I watch through the cold hours.' It's the outfit of someone living in ungoverned territory, someone whose augmentations are older and pieced together, someone who understands how to move unseen.",
+    "condition_typical": "Worn and weathered as a starting point. The leather gloves are cracked and creased. The boots are scuffed. Seams show age. The coat's interior batting is lumpy with uneven settling. The cybernetic finger is visibly older-generation, with minor scratches and a slightly oxidized matte finish. This is not an outfit that looks new; it looks lived-in from day one, and that's the point."
+  },
+  "image_prompt": "Cyberpunk fashion photograph: a lean figure in a long charcoal matte coat with deep structured hood raised, face obscured by shadow and a dark wrap pulled up to bridge of nose. The figure stands motionless against a rain-slicked industrial backdrop — rusted shipping containers, stacked pallets, cold fluorescent spill from a distant window. Left hand rests against torso, gloves visible and worn; right hand at side, cybernetic matte-black finger catching the faintest light, small audible joint articulation hinted by reflection. Dark gray trousers, soft-soled black boots with scraped heel edges. Battered earpiece visible in left ear, cord disappearing under collar into the thermal layers. Mist hangs low. No movement, complete stillness. The figure is not looking at camera — gaze is directed outward, watchful. High contrast, cool color grading, moody 2:3 portrait composition. Ambient light from distant signage and industrial floods, no direct illumination on face. --ar 2:3 --v 6"
 }

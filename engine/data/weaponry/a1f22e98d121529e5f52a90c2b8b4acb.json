@@ -45,5 +45,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Eshe Pena-Baah",
+    "GLMZ",
+    "SentryGuard PepperShot PS-1 'Sting'",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "The Third Rail",
+    "Tympanic Membrane Galvanic Rupture Carbine"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, compact repeating crossbow with an almost medical aesthetic — more precision instrument than lethal weapon. The profile is angular and ergonomic, with a pronounced cheek rest and integrated sight rail. The overall impression is clinical efficiency wrapped in dark composite materials.",
+    "dimensions": "Length: 380mm | Width: 65mm at widest point (limb span) | Height: 110mm including sight rail | Bolt length: 95mm",
+    "weight_description": "Light and well-balanced — 2.0 kg feels negligible in hand, shifting weight toward the grip. No heaviness, no unwieldy recoil. Designed for sustained rapid fire without fatigue.",
+    "primary_material": "Carbon-composite frame with reinforced polymer limbs and aluminum pressure chambers for the chemical injection system",
+    "finish": "Matte charcoal-black composite with brushed titanium accents around the pressure-activated bolt heads and sight rail. The finish shows deliberate non-reflectivity — tactical stealth, not showmanship.",
+    "color_scheme": "Charcoal black primary | brushed titanium silver accents | faint blue micro-LED indicators around the bolt magazine and pressure chamber",
+    "grip_texture": "Textured non-slip polymer with subtle grid pattern — medical-grade, antiseptic feel. Grip is thin and ergonomic, designed for extended hold without hand strain.",
+    "distinctive_features": [
+      "12-bolt gravity-feed magazine mounted horizontally along the top — transparent polymer allows visual inventory of loaded bolts",
+      "Micro-reservoir chambers visible at the base of each bolt nock, faintly colored (red, clear, amber) indicating chemical payload type",
+      "Pressure-activated plunger heads on each bolt tip — tiny silver cylinders that glint when light catches them",
+      "Integrated sight rail with 3-dot tritium sight and low-profile red-dot mounting point",
+      "Chemical payload indicator dial on the left side — rotates to show current load type and remaining payload volume",
+      "Faint TESSERA logo (geometric trefoil) etched into the grip, barely visible",
+      "Minimal spring-tension readout window on the limb assembly — shows charge status",
+      "Air vents along the limb sides for pressure regulation — horizontal slits in the composite"
+    ],
+    "manufacturer_markings": "TESSERA ASANTE etched in microscrpt below the sight rail. Serial number plate (brushed aluminum) mounted on the underside. Discreet green manufacturer's sticker on the magazine housing with lot number and approved payload designation codes.",
+    "condition_typical": "Field operators maintain these meticulously — chemical contamination risk demands cleanliness. Usually pristine or lightly worn, with minor scuffs on the composite from case transport. Bolt reservoirs may show residual staining from payload agents. Professional upkeep, no jury-rigging."
+  },
+  "image_prompt": "Professional product photography: TESSERA CB-5 Viper Strike crossbow mounted horizontally on a dark gunmetal-gray surface, side-lit with dramatic edge lighting that highlights the carbon composite texture and titanium accents. The 12-bolt magazine is fully loaded, bolts visible through transparent housing with faintly colored micro-reservoirs. A black nitrile-gloved hand grips the weapon from the right, fingers positioned on the trigger mechanism. Close detail shot of the pressure-activated bolt heads showing silver plunger tips. Cool cyberpunk studio lighting with blue-tinted LED indicators glowing softly. Shallow depth of field focuses on the bolt magazine and sight rail. Hyper-realistic materials with visible polymer texture, metallic sheen, and slight reflection on the dark background. Medical-clinical aesthetic. --ar 3:2 --v 6"
 }

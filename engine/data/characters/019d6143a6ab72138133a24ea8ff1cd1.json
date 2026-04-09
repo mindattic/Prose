@@ -213,5 +213,13 @@
     "posture_movement": "Stands with vertical spine and minimal wasted movement. Walks with purpose and economic efficiency—no idle gesturing. Her gaze is unflinching and direct, scanning environments for practical information rather than threat. She holds herself with the bearing of someone rationing emotional energy.",
     "clothing_style": "Tier 5 migrant-grade practicality. Worn synthetic work pants with multiple pockets, reinforced at knees and thighs. Faded long-sleeve thermal shirt under a water-resistant outer jacket missing one functional zipper. Waterproof pack with visible cable-tie repairs securing a broken clasp. No jewelry except the wrist tattoo. Shoes are scuffed utility boots, maintained but aged. All clothing shows signs of extended wear and salt-water exposure. No corporate branding or tier markers."
   },
-  "image_prompt": "Portrait of a 41-year-old tall angular Scandinavian-West African woman, pale skin with permanent rosy-raw cheekbones from sun exposure, deep auburn hair pulled back in rough knot with stylus pin, grey-green direct unflinching eyes, cartographic coastline tattoo on left wrist. Wearing faded synthetic work pants and water-resistant jacket with broken zipper, holding large weathered waterproof pack secured with cable ties. Standing in harsh fluorescent lighting of institutional processing center, Grand Crossing Gate, near industrial metal walls and kiosk screens. Expression flat and efficient, no visible despair but profound exhaustion. Photorealistic, documentary style, shallow depth of field, cool color grading, 2226 cyberpunk aesthetic but grounded in migrant reality rather than chrome fantasy. --ar 2:3 --v 6"
+  "image_prompt": "Portrait of a 41-year-old tall angular Scandinavian-West African woman, pale skin with permanent rosy-raw cheekbones from sun exposure, deep auburn hair pulled back in rough knot with stylus pin, grey-green direct unflinching eyes, cartographic coastline tattoo on left wrist. Wearing faded synthetic work pants and water-resistant jacket with broken zipper, holding large weathered waterproof pack secured with cable ties. Standing in harsh fluorescent lighting of institutional processing center, Grand Crossing Gate, near industrial metal walls and kiosk screens. Expression flat and efficient, no visible despair but profound exhaustion. Photorealistic, documentary style, shallow depth of field, cool color grading, 2226 cyberpunk aesthetic but grounded in migrant reality rather than chrome fantasy. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Central Asian": 27.6,
+    "South Asian": 23.9,
+    "Sub-Saharan African": 15.5,
+    "Eastern European": 14.4,
+    "Hispanic/Latin American": 11.4,
+    "Northern European": 7.2
+  }
 }

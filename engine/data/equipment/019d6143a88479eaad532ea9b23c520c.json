@@ -51,5 +51,25 @@
   "related_entities": [
     "Shelf Life",
     "The Quiet Room"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Cylindrical canister resembling a high-end water bottle, with a domed safety cap at the top. The body tapers slightly toward the base. Industrial, utilitarian aesthetic with premium finish suggesting life-critical function.",
+    "dimensions": "23 cm tall, 7.5 cm diameter",
+    "weight_description": "0.8 kg — handheld, fits securely in tactical vest pouch or emergency kit",
+    "primary_material": "Aerospace-grade aluminum alloy housing with reinforced steel collar",
+    "finish": "Brushed metallic with anodized thermal-resistant coating; matte non-reflective surface to reduce glint",
+    "color_scheme": "Gunmetal grey body with high-visibility safety orange band wrapping the upper third; chrome accent collar ring",
+    "interface_elements": "Prominent red safety pin with pull-ring lanyard at top; integrated pressure gauge dial (0-3 bar) on upper shoulder; silicone breathing mask with quick-detach coupling mounted along lower body; small printed activation instructions on side panel",
+    "distinctive_features": [
+      "Dual activation modes: standard pull-pin and emergency hard-pull override",
+      "Integrated flow-control dial with three settings (slow/normal/emergency)",
+      "Micro-LED indicator that glows green during oxygen output, red when depleted",
+      "Hydrophobic inlet valve with salt-water erosion resistance",
+      "Thermally insulated grip section with diamond-pattern texture",
+      "Mandarin and English labels reflecting Zheng-Dao's Pan-Asian origin"
+    ],
+    "manufacturer_markings": "ZHENG-DAO HEAVY INDUSTRIES stamped in serif font across upper band; holographic authenticity seal; batch code engraved; GLMZ regulatory compliance stamp (Φ certified); manufacturing date in year-month format",
+    "condition_typical": "Clean, pristine condition when unopened; slight residual heat on exterior post-activation; breathing mask seals stored in sealed pouch attached to side"
+  },
+  "image_prompt": "Cinematic product photograph of the Zheng-Dao EOG-2 oxygen generator standing upright on a carbon-fiber workbench, dramatic blue-white emergency lighting from above casting sharp shadows. The safety pin is highlighted with shallow depth-of-field. Surrounding props: tactical gloves, a rolled emergency beacon, droplets of water on the surface suggesting underwater deployment scenario. Cyberpunk color grading with cool cyan undertones and safety orange pop. Shot against a dark composite background suggesting industrial facility. Technical, clinical presentation. --ar 3:2 --v 6"
 }

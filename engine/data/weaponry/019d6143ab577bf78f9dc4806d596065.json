@@ -61,5 +61,47 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions EL-9 'Heron'",
+    "Cem Lund-Bangura",
+    "Crucible Industries CT-X 'Gauntlet'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Erkin Wendt-Frempong",
+    "GLMZ",
+    "Independent Darknet Node Architecture",
+    "Kadiatou Reyes-Abubakar",
+    "MERIDIAN",
+    "Myoelectric Seizure Projector MSP-6 'Marionette'",
+    "Nenad Vargas-Baffour",
+    "NeuralPath FlowState Focus Regulator",
+    "NeuralPath HarmonicRoot Perfect Pitch Mod",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Tessera Neural Assault System TNAS-1 'Puppeteer'",
+    "The Corridor",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purpose-built shoulder-mounted emitter with an aggressive forward profile. The barrel assembly tapers to a precise point, resembling a tuned antenna more than a traditional weapon. The overall silhouette is compact but purposeful—a predator's tool designed for surgical precision rather than brute force.",
+    "dimensions": "Emitter: 34 cm length, 12 cm width at widest point, 8 cm depth. Barrel: 18 cm protruding forward. Control gauntlet: 26 cm circumference, fits over wrist and forearm.",
+    "weight_description": "The emitter feels deceptively light—2.8 kg distributed across a wide mounting bracket creates negligible shoulder burden. The gauntlet is barely perceptible on the wrist, giving the operator a ghost-limb sensation. The fiber-optic tether connecting them is nearly weightless.",
+    "primary_material": "Titanium-reinforced polymer chassis for the emitter; aerospace-grade carbon composite for the mounting bracket. The control gauntlet is wrapped in flex-steel micro-articulation frame with conductive smart-textile overlay.",
+    "finish": "Matte gunmetal gray with brushed titanium accents. The barrel tip is polished to a mirror shine—a cosmetic choice that betrays the weapon's neural-targeting precision. Subtle iridescent oil-slick patterns visible under certain light angles where the conductive pathways run beneath the surface.",
+    "color_scheme": "Charcoal gray primary with high-contrast silver/chrome barrel assembly. Accent lighting runs along the emitter spine in pale blue (power indicator) and amber (lock status). The gauntlet features black fabric with silver thread tracking.",
+    "grip_texture": "The emitter shoulder mount is wrapped in textured elastomer for nonslip contact. The gauntlet uses a woven conductive fabric that feels like tactical glove material—slightly tacky, designed for gross motor gesture recognition without slipping under stress-sweat.",
+    "distinctive_features": [
+      "Harmonic resonance chamber visible as parallel venting slots along the emitter barrel—the source of the weapon's distinctive 'singing'",
+      "Three-stage status indicator cluster: blue power LED, amber beam-lock LED, red thermal warning LED arranged vertically on the right flank",
+      "Fiber-optic tether interface—a glowing umbilical of pale blue light running from emitter to gauntlet, visible in dark environments",
+      "Gestural control feedback haptics on the gauntlet—subtle vibration motors that pulse when the target's motor response is locked",
+      "Antenna-like calibration prongs extending from the barrel tip—used to establish autonomic nerve mapping before deployment",
+      "Wear-resistant scoring marks on the mounting bracket from repeated deployment cycles; micro-abrasions suggesting heavy field use",
+      "Neural-targeting reticule etched into the emitter housing—a subtle crosshair pattern indicating the precision targeting zone"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC cipher stamp on the left flank below the power cell access panel—a stylized ZD in interlocking brushstrokes. Serial number engraved in micro-font along the barrel. Military classification marker: red triangle with Greek phi symbol (Φ) indicating restricted bioweapon status. Control frequency spec sheet sealed in a transparent polymer pouch affixed to the gauntlet.",
+    "condition_typical": "Field units show evidence of heavy use: stress micro-fractures in the polymer housing, discoloration around the power cell from thermal cycling, worn edges on the mounting bracket from repeated shoulder-firing. The fiber-optic tether often shows kinks and creasing from being coiled hastily. Well-maintained units have reinforced the emitter spine with aftermarket carbon-fiber bracing. Black market variants show crude modifications—exposed circuitry, field-repaired power cells, and jury-rigged gauntlet modifications."
+  },
+  "image_prompt": "Product photograph of the TACP-1 'Puppeteer' emitter mounted on a tactical shoulder harness, positioned at a 45-degree angle on a dark composite surface. The emitter is rendered in matte gunmetal gray with polished titanium barrel, backlit by cool blue-and-amber accent lighting that illuminates the harmonic resonance vents and status indicator cluster. A segmented fiber-optic tether coils nearby, glowing pale blue. The control gauntlet lies adjacent, fingers splayed in a gesture position, conductive threads catching dramatic side-light. The overall aesthetic is surgical and precise—cyberpunk biotech rather than kinetic weaponry. Include subtle thermal distortion near the power cell and a faint harmonic shimmer effect around the barrel tip. Shallow depth of field with manufacturer stamps and calibration details crisply visible. Cinematic cyberpunk tactical equipment photography, clinical lighting, hyper-detailed materials. --ar 3:2 --v 6"
 }

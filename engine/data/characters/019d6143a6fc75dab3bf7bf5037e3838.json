@@ -273,5 +273,13 @@
     "posture_movement": "Slightly slouched standing posture, as if perpetually tired but alert. Movements are efficient and minimal — checkpoint operator economy of motion. Hands rest on the console or in lap during routine processing. Eye contact is deliberate and selective, used as a tool rather than a default. When bored, he rocks very slightly in his chair.",
     "clothing_style": "Clay-gray Ferrogate Transit Security uniform worn with resigned precision — the collar frequently sits slightly askew, and the fit is loose enough to suggest he has stopped caring about minor grooming standards. The uniform is clean but shows wear. Off-shift clothing is understated: neutral-toned second-hand synthetics, practical boots, no visible branding or tier markers. Avon Curve resident aesthetic — cheap, functional, deliberately non-distinct."
   },
-  "image_prompt": "Portrait of a 29-year-old lanky male, mixed West African and Serbian heritage, dark brown eyes with subtle chrome retinal scanner overlay on right iris, natural dark brown curly hair pulled back in loose knot. Medium brown complexion with high cheekbones. Faint bioluminescent blue freckles constellation across cheekbones pulsing softly. Wearing clay-gray Ferrogate Transit Security checkpoint uniform, collar slightly askew. Neutral, pleasantly vacant expression masking sharp observation. Standing in fluorescent-lit transit station checkpoint booth with blurred commuters in background. Cool blue-gray lighting, cyberpunk neo-noir aesthetic, realistic portraiture, subtle LED glow on face from retinal scanner and bioluminescent freckles, overhead industrial fluorescents, slightly tired expression. --ar 2:3 --v 6"
+  "image_prompt": "Portrait of a 29-year-old lanky male, mixed West African and Serbian heritage, dark brown eyes with subtle chrome retinal scanner overlay on right iris, natural dark brown curly hair pulled back in loose knot. Medium brown complexion with high cheekbones. Faint bioluminescent blue freckles constellation across cheekbones pulsing softly. Wearing clay-gray Ferrogate Transit Security checkpoint uniform, collar slightly askew. Neutral, pleasantly vacant expression masking sharp observation. Standing in fluorescent-lit transit station checkpoint booth with blurred commuters in background. Cool blue-gray lighting, cyberpunk neo-noir aesthetic, realistic portraiture, subtle LED glow on face from retinal scanner and bioluminescent freckles, overhead industrial fluorescents, slightly tired expression. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 32.0,
+    "Southeast Asian": 30.6,
+    "Sub-Saharan African": 14.7,
+    "Central Asian": 13.2,
+    "Northern European": 8.0,
+    "Indigenous American": 1.5
+  }
 }

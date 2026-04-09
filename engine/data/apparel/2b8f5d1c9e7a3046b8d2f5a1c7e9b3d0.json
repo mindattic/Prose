@@ -53,5 +53,27 @@
     "The Shelf",
     "Veslemøy Achebe-Tursynov",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A structured, utilitarian tactical vest with a pronounced geometric silhouette. Sits square on the shoulders with a defined waist, projecting authority and preparedness. The multiple cargo pockets create a grid-pattern visual rhythm across the torso. Appears heavier than standard workwear due to internal armor architecture, but the exterior maintains a professional, almost corporate aesthetic rather than overtly military.",
+    "fit": "Tailored athletic to slightly relaxed through the torso; designed to accommodate layering beneath. Side panels allow adjustment for variable body types and equipment loadout. Shoulders are reinforced but not exaggerated. Sits approximately 2-3cm below the natural waist to clear hip mobility.",
+    "primary_material": "Outer shell: ballistic-rated synthetic canvas blend (DWR-treated). Inner lining: moisture-wicking mesh. Concealed panels: ceramic-composite laminate over Kevlar-alternative weave. Closures and trim: high-strength nylon webbing.",
+    "texture": "Smooth, tight weave on exterior with slight ripple texture from underlying armor geometry. Reinforced stress points show subtle ribbing. Inner mesh is soft, almost jersey-like. All edges are finished with bound seams; no fraying. Ceramic panels create subtle weight distribution visible in how fabric drapes.",
+    "color_scheme": "Coyote tan (warm khaki) or urban charcoal (near-black gray). Both are muted, non-reflective. Minimal contrast stitching in olive or tan. No visible branding on standard issue; some civilian purchases show subtle embroidered Axiom Defense Concepts wordmark on interior neck tape.",
+    "closures": "Heavy-duty side-panel friction-fit velcro strips for adjustment. Center front uses industrial-grade magnetic snap fasteners (silent closure, no audible click). Shoulder and waist straps use mil-spec webbing with side-release buckles. Drag handle at rear collar (often removed) uses friction-fit attachment.",
+    "distinctive_features": [
+      "Six exterior cargo pockets arranged in functional grid pattern",
+      "Removable rear drag handle at collar (orange warning fabric visible when attached)",
+      "Concealed ballistic panel geometry creates subtle surface topography",
+      "High-visibility interior lining (blaze orange or white) visible at neck and armholes",
+      "Adjustable side panels with retention loops for gear attachment",
+      "Integrated magazine retention loops on front panels",
+      "Moisture-management mesh vents along sides",
+      "Reinforced shoulder caps showing subtle edge binding"
+    ],
+    "tier_indicator": "Tier 2–3 crossover. Licensed security tier pricing (Φ800–1200 new retail). Signals affluence or official employment, but not luxury. Corporate subsidiary manufacturing keeps cost accessible while maintaining legal liability position.",
+    "cultural_context": "Worn by licensed private security, corporate protection details, municipal rapid-response teams, and cautious Tier 3 residents in contested zones. Indicates either employment in security sector or preparation for urban volatility. Presence of one signals either professional authorization or deliberate risk-assessment by wearer. Rarely seen among Tier 1 (preferred concealed systems) or Tier 5 (unaffordable at legitimate retail).",
+    "condition_typical": "New purchases appear pristine with visible stitching perfection and uniform color saturation. Worn examples show salt-stained sweat rings, faded coyote tan, slight pilling on interior mesh, and darkened stress points at buckles and panel seams. Heavily used units exhibit fraying at pocket edges and flattened velcro. Black-market 'salvage' versions often show mismatched panel degradation and suspicious weight distribution."
+  },
+  "image_prompt": "Close-up fashion photograph of a coyote tan Axiom Defense Concepts Sentinel tactical vest on a lean, mixed-race male cyberpunk model with visible subdermal LED implants at temples. Model wears minimal black undergarment beneath. Moody warehouse lighting from above creates shadow play across cargo pockets and shoulder reinforcement. Grimy concrete wall backdrop, industrial chain-link fence slightly out of focus. Model stands three-quarter pose, hand resting on front pocket. Grain texture and slight blue color cast in shadows. Great Lakes Metropolitan Zone warehouse aesthetic. --ar 2:3 --v 6"
 }

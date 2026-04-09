@@ -43,5 +43,24 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Bazaar",
     "The Seam"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A fluid, refined blouse that reads sophisticated without formality. The semi-sheer voile creates an ethereal quality—the garment seems to float slightly off the body, catching light in subtle ways. On-body, it projects understated confidence: elegant enough for high-stakes meetings, relaxed enough to wear without armor or augmentation displays. The geometric print—merging kente and pojagi aesthetics—signals cultural fluency and deliberate taste.",
+    "fit": "Relaxed but tailored through the shoulders. The three-quarter sleeves are cut to suggest movement rather than constraint. The overall silhouette is slightly loose, allowing the voile to drape naturally without clinging. Length hits mid-hip, suitable for tucking or leaving free.",
+    "primary_material": "Synthetic voile—a lightweight, breathable polymer blend designed to mimic natural fiber drape. The semi-sheer quality is engineered, not fragile; the material has subtle luminescence under direct light without being reflective.",
+    "texture": "Smooth with a slight papery hand. The weave is open enough to see skin through it without being transparent. Subtle texture variation from the print creates gentle dimensionality. Running fingers across it feels like touching thin silk, but with modern durability.",
+    "color_scheme": "Deep terracotta, slate blue, and off-white geometric pattern. The colors are muted, slightly desaturated—expensive-looking rather than vibrant. The pattern is balanced and intentional, not busy.",
+    "closures": "Front button placket with subtle branded buttons (likely subtle Osei & Park logo work). Mandarin collar requires no closure at the neck.",
+    "distinctive_features": [
+      "Mandarin collar—relaxed, not stiff, allowing open-throat styling",
+      "Three-quarter sleeves with simple rolled cuffs—a detail that signals finished tailoring",
+      "Geometric print combining kente (angular, triangular) and pojagi (diagonal patchwork) motifs—bicultural design language",
+      "Semi-transparent voile creating subtle layering effects over skin or undershirts",
+      "Osei & Park branding subtly integrated into button design"
+    ],
+    "tier_indicator": "Tier 2-3 boundary. Accessible aspirational—high enough quality and design to signal taste and cultural awareness, priced for working professionals and upper-working-class aesthetes. Not corpo-exclusive, but not street-tier.",
+    "cultural_context": "Worn by people who care about representation, craft, and intentional aesthetics. Signals someone navigating corporate or creative spaces who refuses to abandon cultural heritage for assimilation. Popular among mixed-heritage professionals, artists, and culture workers in the GLMZ.",
+    "condition_typical": "Pristine to broken-in. The voile develops a beautiful patina—slight softening at cuffs and collar, possible delicate creasing at stress points. Some wearers treat it as precious (dry-clean only); others embrace a lived-in quality that actually makes the garment look better."
+  },
+  "image_prompt": "Fashion photograph of an Osei & Park Voile Blouse displayed on a high-cheekbone model or sleek dark mannequin. The blouse is semi-sheer geometric print in terracotta, slate blue, and off-white, with mandarin collar and three-quarter rolled cuffs. Captured in moody studio lighting with a single warm side-light source that catches the subtle luminescence of the synthetic voile fabric. Urban cyberpunk backdrop: neon signage reflected in rain-slicked concrete, or a minimalist brutalist wall with accent lighting. The drape of the fabric should be clearly visible and fluid. Professional fashion photography aesthetic. --ar 2:3 --v 6"
 }

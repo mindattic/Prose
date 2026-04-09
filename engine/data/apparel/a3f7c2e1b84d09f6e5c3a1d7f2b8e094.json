@@ -54,5 +54,30 @@
     "Tanaquil Sow-Radovanović",
     "The Seam",
     "Vestigial Horn Induction"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A complete industrial work uniform that reads utilitarian and purposeful. The charcoal coverall dominates the silhouette with its wide-cut sleeves and reinforced front, creating a blocky, no-nonsense appearance. Hi-vis orange bands break the neutral palette horizontally across chest and arms, commanding visibility. The cracked hard hat and steel-toe boots anchor the look as serious protective gear. Overall impression: shift worker, machinery handler, union-adjacent corpo factory labor.",
+    "fit": "Relaxed and deliberately oversized through the torso and sleeves to accommodate augmentations and layering. The right forearm features intentionally wider cut for chrome prosthetic clearance. Tapered at the ankle with reinforced ankle cuffs. Allows full range of motion and multiple layers underneath without binding.",
+    "primary_material": "Heavyweight charcoal synth-cotton blend for the coverall; slate grey sweat-wicking thermal base layer; composite-toe boots with oil-resistant rubber sole; nitrile-coated synth-leather work gloves; rigid plastic hard hat shell.",
+    "texture": "Coverall fabric is sturdy and slightly stiff when new, softening with wear into a broken-in suppleness. Reflective tape creates smooth, slick tactile contrast. Knee pads show molded indentation from repeated use. Hard hat has a textured grip surface on the sides. Boot sole is slightly tacky, designed for grip on industrial floors.",
+    "color_scheme": "Charcoal grey as dominant base. Safety orange hi-vis bands across chest and arms; orange heel striping on boots; orange hard hat. Slate grey thermal base layer visible at collar. Black boots with orange accents. Faded white Veldtmann logo on chest. Overall palette is industrial and high-contrast for visibility in low-light factory environments.",
+    "closures": "Heavy-duty friction-fit front zip on coverall with snap-over storm flap for weather protection. Magnetic closure cuff around right forearm to seal aug interfaces cleanly. Standard laces on boots. D-ring hip attachment for glove clip. Reinforced bar-tack stitching at stress points (cargo pocket, knee pad channels).",
+    "distinctive_features": [
+      "Magnetic closure cuff sized for standard chrome prosthetic interfaces",
+      "Wide right forearm cut to accommodate cybernetic limbs",
+      "Built-in knee pad channels with molded inserts showing wear patterns",
+      "Twin hi-vis orange reflective bands for visibility",
+      "Sewn name patch on right chest (personalization slot)",
+      "Faded white Veldtmann Manufacturing logo stamped on left chest",
+      "Three tool loops and reinforced zip cargo pocket on left thigh",
+      "Cracked hard hat brim re-taped at seam",
+      "Steel-toe composite boots with orange heel striping",
+      "D-ring hip clip for work gloves",
+      "Sweat-wicking thermal base layer built into uniform system"
+    ],
+    "tier_indicator": "Tier 3 (working class). This is subsidized corpo-issued gear, not luxury, but not salvage. Veldtmann Manufacturing provides it to employees as part of their compensation structure. Quality is reliable and functional, not aspirational.",
+    "cultural_context": "Signals factory worker, machine operator, or floor technician in a corpo manufacturing setting. Wearing full kit indicates shift-ready compliance. The worn condition suggests someone actively on the job, not office-bound. Augmentation accommodation suggests this person has integrated chrome, marking them as someone who's invested in staying employable in industrial work. Suggests GLMZ lower-tier manufacturing sector, possibly auto, parts, or heavy goods assembly.",
+    "condition_typical": "Coverall arrives pristine from Veldtmann supply but within one month shows weathering: stains that don't fully wash out, minor fraying at edges, faded logos. Knee pads develop shine marks from repeated kneeling. Hard hat accumulates micro-scratches and tape becomes discolored. Boots retain structural integrity but develop scuff patterns and salt stains. Gloves show oil residue and minor punctures. The garment is maintained but not precious — functional wear is expected and accepted."
+  },
+  "image_prompt": "A Veldtmann Manufacturing factory worker in full charcoal coverall with hi-vis orange reflective bands, standing in a moody industrial setting under harsh LED bay lighting. The model wears the outfit as-issued: cracked safety orange hard hat, steel-toe boots with orange heel striping, heavy nitrile work gloves clipped to hip D-ring. Visible at the collar is slate grey thermal base layer. The right forearm shows the magnetic closure cuff designed for chrome prosthetic interface. Worn-in knee pads visible on thighs. Faded Veldtmann logo on left chest catches the light. Dark metal backdrop, industrial warehouse with stacked materials in soft focus. Gritty, unflinching lighting emphasizes the utilitarian functionality of the kit. Model has mixed heritage augmentation visible on exposed right arm. Shot from mid-thigh up, slightly angled to show profile of the wide-cut sleeve and tool loop details. Moody color grade emphasizing the charcoal and orange contrast. --ar 2:3 --v 6"
 }

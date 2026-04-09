@@ -50,5 +50,27 @@
     "Tiare Nishi-Anim",
     "Tshiamo Vukić-Arellano",
     "VitaCore LinguaSync Real-Time Translation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately neutral, forgettable silhouette designed for cross-tier anonymity. Lean and functional without drawing attention—neither aspirational nor visibly struggling. The modular construction creates subtle visual interest without standing out.",
+    "fit": "Fitted through the torso with tailored taper at wrists and ankles. Slim cargo trousers with no excess fabric. Compression-adjacent without being athletic. Designed to accommodate augmentations (chrome limbs, tail rigs, subcutaneous tech) without obvious adjustments.",
+    "primary_material": "Charcoal poly-merino base layer, Circuit-worker grade ballistic weave mid-layer (reversible), graphite ripstop cargo fabric, scuff-resistant synthleather crosstrainers, recycled nylon satchel with magnetic attachment webbing",
+    "texture": "Base layer has subtle ribbed texture. Mid-layer reverses from matte (grey side) to soft pearl-finish (slate side). Cargo fabric shows tight weave with reinforced stress points. Cap brim incorporates flexible AR-mesh—barely perceptible to touch.",
+    "color_scheme": "Dominant: charcoal, graphite, slate grey. Accents: matte black (shoes, zippers). No branding visible. Deliberately desaturated palette—colors that exist in every tier without signaling wealth or poverty.",
+    "closures": "Magnetic snaps on modular shoulder/forearm attachment points. YKK friction-lock zippers on cargo pockets (silent operation). Magnetic closure on collapsible satchel. Cap secured with friction-fit adjustable band.",
+    "distinctive_features": [
+      "Modular magnetic attachment points along shoulders and forearms for tool/data exchange",
+      "Reversible mid-layer (Circuit-worker grey vs. Tier-4 slate)",
+      "Concealed ankle gussets for cybernetic leg accommodation",
+      "Collapsible satchel expands/compresses via magnetic frame skeleton",
+      "AR-transparent cap brim—designed to work with neural overlays without obstruction",
+      "Silent-operation YKK zippers (courier standard)",
+      "Reinforced stress points at wrists, knees, ankles",
+      "No visible branding or tier signifiers"
+    ],
+    "tier_indicator": "Tier 3 functional aesthetic with Tier 1 modular engineering. Deliberately unmarked—signals 'working professional' across all tiers without revealing economic status.",
+    "cultural_context": "Courier culture. Inter-tier mobility. Someone who needs to be invisible and trusted everywhere. Movement through restricted zones. Likely carries sensitive data or packages. No corp affiliation visible—independent operator or neutral third-party logistics.",
+    "condition_typical": "Pristine to broken-in depending on assignment length. Expected to show minor scuffs on shoes and satchel after 2-3 weeks active use. Synthetic materials resist staining. Designed to maintain professional appearance under harsh conditions."
+  },
+  "image_prompt": "A cyberpunk courier in full Driftmark Tier-Skip gear stands against a rain-slicked industrial wall, half-lit by neon bleeding from a nearby storefront. Charcoal fitted base layer with subtle mag-attachment points visible under cool LED lighting. Reversible mid-layer (matte grey side visible) drapes naturally. Slim graphite cargos with reinforced ankle gussets accommodate a glimpse of chrome underneath. Black cross-trainers show minimal wear. Collapsible satchel hangs at hip, magnetic skeleton visible through translucent panels. Nondescript ballcap with AR-transparent brim, head slightly tilted. Model's expression neutral, forgettable. Urban Great Lakes Metropolitan backdrop: brutalist concrete, holographic delivery advertisements, rain streaks. Moody teal and amber color grading. Fashion photography meets documentary realism. --ar 2:3 --v 6"
 }

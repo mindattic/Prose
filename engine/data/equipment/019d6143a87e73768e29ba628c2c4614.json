@@ -50,5 +50,24 @@
     "Arcturus Siege Platform",
     "Vespid Dynamics",
     "Ximena Bautista-Nwosu"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek hip-mounted tactical carrier resembling a segmented insect thorax. Hexagonal modular sections stack vertically, each containing micro-drone cradles visible through translucent polymer panels. Deployment tubes protrude from the front face like a wasp's ovipositor, with articulated positioning arms. The overall silhouette is organic yet mechanical—biomimetic engineering meets corpo efficiency.",
+    "dimensions": "28cm tall × 16cm wide × 12cm deep; fits snugly against operator's hip via reinforced magnetic mount",
+    "weight_description": "2.8 kg loaded; worn via padded hip harness with load-distribution straps. Balanced asymmetrically to prevent torso drag during movement.",
+    "primary_material": "Carbon-composite chassis with reinforced titanium vertebrae; translucent polycarbonate drone cradle panels",
+    "finish": "Matte gunmetal gray with iridescent oil-slick accents on panel seams; non-reflective tactical coating to minimize detection signatures",
+    "color_scheme": "Gunmetal gray primary, electric teal accent LEDs, translucent panel insets showing neon-blue charging cradle lights",
+    "interface_elements": "Wrist-mounted neural-link receptor pad (left side), 12 tactile hex buttons for manual swarm commands, holographic micro-display (2-inch projection above hip mount showing real-time drone telemetry), 3 physical deployment tubes with motorized iris mechanisms, status indicator ring around center spine",
+    "distinctive_features": [
+      "Animated LED pulse patterns along deployment tubes during active launch sequences",
+      "Visible micro-drones resting in cradles through translucent panels—tiny chrome insectoid forms with folded wings",
+      "Articulated deployment arm assembly that tracks operator hand gestures",
+      "Soft blue charging glow from internal cradle array when powered",
+      "Vespid Dynamics hexagonal logo (interlocking V shapes) stamped on left panel in brushed silver"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS in angular sans-serif font; regulatory cert stamps (GLMZ Aerial Device Compliance, Swarm Authorization Class-3); serial number laser-etched on mounting bracket",
+    "condition_typical": "Active unit shows faint heat shimmer from charging cradles; occasional soft mechanical clicks during auto-cycling. Deployed unit trails microscopic drone shadows across its surface. Operator's gear typically shows scuff marks on mounting bracket and cradle dust accumulation."
+  },
+  "image_prompt": "Cyberpunk product photography: Vespid MDC-1 micro-drone swarm carrier mounted on operator's hip via tactical harness, worn by anonymous corpo/street operative in low-light GLMZ warehouse setting. Dramatic top-down sidelight revealing translucent panels with glowing blue charging cradles inside; three micro-drones (chrome insectoid forms, folded wings) frozen mid-deployment from deployment tubes in sharp focus. Holographic display showing swarm formation patterns projects soft teal light onto operator's torso. Dark moody atmosphere, neon accent lighting reflecting off polycarbonate surfaces. Shallow depth of field emphasizing carrier details. --ar 3:2 --v 6"
 }

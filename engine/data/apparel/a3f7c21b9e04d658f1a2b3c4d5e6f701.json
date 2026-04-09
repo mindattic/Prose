@@ -46,5 +46,27 @@
     "Hearthstone Firearms Trail-357 'Pathfinder'",
     "TESSERA TC-3 'Crucible'",
     "The Boilermaker"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, handcrafted face shield that reads as post-apocalyptic armor. Angular and asymmetrical, with overlapping steel panels creating a jagged, almost crown-like silhouette when viewed from above. Visually aggressive but functionally protective—appears worn by someone who prioritizes survival over aesthetics.",
+    "fit": "Loose, adjustable fit secured by variable chin straps. Sits proud on the face with minimal contouring to skull anatomy. Forehead brace creates a rigid contact point; cheek and jaw coverage varies depending on panel overlap. Slightly oversized to accommodate layering or augmentation hardware underneath.",
+    "primary_material": "Salvaged industrial press plates (mild steel), mismatched rivet stock, polycarbonate sheet (transit shelter salvage), reclaimed foam padding, friction tape, knotted paracord or stripped copper wire",
+    "texture": "Heavily weathered and tactile—hammered steel with visible tool marks, acid-rain pitting creating a deeply pocked surface, rust bloom in corners and seams, scratched and clouded polycarbonate visor with micro-fractures, friction tape worn smooth in high-contact areas",
+    "color_scheme": "Dominant grey-steel with rust-orange oxidation blooming across rivet heads and panel edges. Patchy darkening from acid rain exposure. Clear-to-amber polycarbonate visor with internal hazing and mineral deposits. Charcoal friction tape at forehead brace.",
+    "closures": "Knotted paracord or stripped wire chin straps (maker's choice), friction-fit panels held by mismatched rivet heads, no magnetic or electronic systems",
+    "distinctive_features": [
+      "Hand-hammered panel seams with visible overlap",
+      "Mismatched rivet heads creating irregular surface texture",
+      "Acid-rain pitting across all steel surfaces",
+      "Scratched polycarbonate visor strip with internal clouding",
+      "Friction-tape-wrapped foam forehead brace",
+      "No two shields identical—maker's individual variations visible",
+      "Chin strap knotted or twisted, often asymmetrical",
+      "Rust-orange oxidation patina, especially around fasteners"
+    ],
+    "tier_indicator": "Tier 5 — sub-grade/ungoverned. This is pure salvage-tier aesthetics. Zero corporate finish, zero mass production. Signals someone operating outside formal economy.",
+    "cultural_context": "Worn by Shelf dwellers, scrappers, autonomous-zone workers, and those in ungoverned districts. Indicates self-reliance, rejection of corpo supply chains, and comfort with DIY augmentation culture. Signals toughness and practical necessity over style—but also craftsmanship pride within constraints.",
+    "condition_typical": "Heavily weathered and patched. Visor typically clouded and micro-scratched from use. Friction tape fraying at edges. Rust actively blooming in seams. Looks like it's been through seasons of acid rain and daily impact. Chinstrap often re-knotted or spliced with additional cord."
+  },
+  "image_prompt": "Close-up fashion shot of a Slagside Rivet-Crown Face Shield mounted on a dark industrial mannequin head, three-quarter view. Emphasize the hammered steel texture, acid-rain pitting, and overlapping mismatched panels. Polycarbonate visor catches moody violet-amber neon glow reflected from rain-slick urban backdrop. Harsh side-lighting reveals every tool mark and rivet head. Background: blurred GLMZ skyline at night, water-stained concrete underpass, faint holographic graffiti. Gritty, tactile, survival-focused. Shot in cinematic cyberpunk realism style. --ar 2:3 --v 6"
 }

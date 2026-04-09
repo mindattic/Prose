@@ -42,5 +42,47 @@
     "cheap",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "AXIOM-PRIME",
+    "Arcturus AMR-9 'Condor'",
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Arcturus HD-1 'Homestead'",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Electrochemical Dissolution Sprayer EDS-2 'Lacquer'",
+    "GLMZ",
+    "Glenville Sound",
+    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "New Windsor / Novaya Windsorka",
+    "Nika Svensson-Kone",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Talon Systems Grav-Pulse Emitter GPE-3 'Downdraft'",
+    "The Hearthstone",
+    "The Peninsula",
+    "The Shelf",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian pump-action shotgun with a distinctly no-nonsense aesthetic. Compact and stocky, built for close-quarters work rather than elegance. The receiver sits low and purposeful, the foregrip prominent for the characteristic pump cycling motion. Silhouette reads as purely functional—honest industrial design.",
+    "dimensions": "Overall length 97 cm, barrel 45.7 cm, receiver width 5.2 cm. Tubular magazine runs beneath the barrel from muzzle to trigger guard.",
+    "weight_description": "Hefty but manageable—2.8 kg settles firmly in the hands with reassuring mechanical solidity. Feels built to absorb recoil and punishment rather than impress with balance.",
+    "primary_material": "Stamped steel receiver and barrel, cost-conscious manufacturing evident in the fabrication method rather than material weakness. Hardwood furniture—real lacquered wood, not polymer substitutes.",
+    "finish": "Matte blued steel with light surface oxidation patterns suggesting honest use. Lacquered hardwood with visible grain, finish slightly worn at edges from handling. Bead front sight catches light like a dull pearl.",
+    "color_scheme": "Gunmetal gray-blue receiver and barrel contrasted with warm tan-brown lacquered hardwood stock and foregrip. Minimal contrast intentional—designed to be noticed, not admired.",
+    "grip_texture": "Lacquered hardwood stock with subtle grain texture, slightly slick from repeated hand oils. Pump foregrip wrapped in scored hardwood, deeply grooved for secure manipulation under stress.",
+    "distinctive_features": [
+      "Single bead front sight mounted on barrel—only aiming reference",
+      "Tubular magazine tube with cross-pin retention visible beneath barrel",
+      "Pump lever with deliberate mechanical feedback",
+      "Trigger guard with functional geometry, no aesthetic flourish",
+      "Muzzle crown shows simple machining lines",
+      "Stamped receiver visible construction seams",
+      "Factory trigger lock installed through trigger guard"
+    ],
+    "manufacturer_markings": "\"HEARTHSTONE FIREARMS\" stamped in simple block letters on left side of receiver. Serial number stamped into steel below the markings. Minimal branding—manufacturer's confidence expressed through restraint.",
+    "condition_typical": "Well-maintained within economic constraints. Finish shows honest wear from regular handling and maintenance cycles. No cosmetic damage, but patina develops naturally from use. This is a working tool that ages gracefully through function."
+  },
+  "image_prompt": "Professional product photography of a Hearthstone Homestead-12 shotgun positioned on dark brushed steel surface, three-quarter view showing receiver, pump action, and hardwood stock. Dramatic side-lighting reveals gunmetal blue receiver texture and warm lacquered wood grain. Tactile details emphasized: bead front sight catching rim light, pump handle geometry in sharp relief, stamped manufacturer markings visible. Utilitarian cyberpunk aesthetic, 2226 era. Minimal styling—this is honest industrial design in the Great Lakes Metropolitan Zone. Dark moody lighting, shallow depth of field on action mechanism. --ar 3:2 --v 6"
 }

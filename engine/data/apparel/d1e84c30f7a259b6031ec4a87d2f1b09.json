@@ -48,5 +48,25 @@
     "Free Assembly",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Synaptrel"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian skullcap that hugs the head like a second skin, designed around the practical reality of exposed neural ports. The matte charcoal body recedes into the background while three brushed-steel port collars command attention across the crown—industrial, functional, unadorned. Sits low and tight, emphasizing the back of the skull and nape.",
+    "fit": "Snug, compression-like fit across the entire scalp. Stretches to accommodate port hardware without shifting. Sits deliberately low on the brow to protect, high on the nape for full coverage. No excess fabric—engineered for contact work.",
+    "primary_material": "Matte charcoal stretch-neoprene body with injection-molded ABS reinforcement crown panel. Brushed-steel grommet collars and silicone dust covers at each port access point. Conductive mesh lining underneath.",
+    "texture": "Smooth, slightly tacky neoprene exterior with a faint grip texture. Crown panel is rigid ABS with a slightly grainy, industrial finish. Steel collars are brushed—catching light but not reflective. Silicone covers are matte, designed for repeated opening/closing.",
+    "color_scheme": "Dominant matte charcoal gray with brushed-steel metallic accents at the three port collars. Silicone dust covers in muted gunmetal or matching gray. Minimal contrast—designed for visual subtlety in workspace environments.",
+    "closures": "Silicone snap-shut dust covers over each of the three port grommets. No traditional closures on the cap itself—stretch-fit secures it to the head with passive tension.",
+    "distinctive_features": [
+      "Three pre-positioned BCI port-access grommets arranged across the crown in standard hardware configuration",
+      "Brushed-steel collars ringed around each grommet for reinforcement and visual definition",
+      "Snap-shut silicone dust covers to protect exposed jacks from debris and moisture",
+      "Interior conductive mesh lining for static dissipation and port protection",
+      "Injection-molded ABS reinforcement panel under crown stress points",
+      "Low-profile design minimizes snag risk on industrial equipment"
+    ],
+    "tier_indicator": "Tier 3-4 functional. Affordable protective hardware for working-class neural-augmented laborers. Not luxury, not salvage—purpose-built for the factory floor and transit hub.",
+    "cultural_context": "Worn by factory workers, transit operators, warehouse staff, and anyone with exposed BCI hardware in high-contact environments. Signals augmentation without status. Communicates pragmatism and industrial work life. Common in the ungoverned zones around the GLMZ's manufacturing sectors.",
+    "condition_typical": "Worn appearance standard—minor dust residue on the grommets, slight discoloration on the nape where sweat accumulates, dust covers showing micro-scratches from repeated use. Not pristine, but well-maintained by someone who depends on their ports staying clean."
+  },
+  "image_prompt": "Ferrocast NP-3 Neural Port Cap on a medium-skinned model with visible temple-mounted augmentation hardware, shot from a three-quarter overhead angle to emphasize the three steel-ringed port grommets across the crown. Matte charcoal neoprene catches dim workshop lighting. Background: blurred industrial factory floor with overhead gantries and warm sodium vapor lamps. Model's neck and jaw visible, showing the cap's precise low-brow, high-nape fit. Steel collars gleam subtly. Silicone dust covers catch a faint highlight. Moody, practical, unglamorous. Shot in a utilitarian workshop or manufacturing bay. Cinematic, hyperrealistic. --ar 2:3 --v 6"
 }

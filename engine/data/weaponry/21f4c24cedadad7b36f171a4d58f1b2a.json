@@ -41,5 +41,37 @@
     "classified",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Bathysphere Networks",
+    "Cavitation Pulse Carbine CPC-2 'Bends'",
+    "GLMZ",
+    "Narrowcast",
+    "Nika Svensson-Kone",
+    "Réginald Asomaning-Čabarkapa",
+    "Zheng-Dao Heavy Industries Portable Fusion Battery PFB-2"
+  ],
+  "physical_description": {
+    "visual_profile": "A massive, brutalist directed-energy apparatus resembling a hybrid between a particle accelerator and a mining tool. The weapon has a pronounced angular geometry with a wide, flared muzzle assembly that widens toward the front, giving it a funnel-like or lens-shaped barrel profile. Heavy and imposing, it reads as experimental military hardware rather than a refined service weapon.",
+    "dimensions": "Overall length: 127 cm. Barrel assembly width: 38 cm (flared). Depth: 22 cm. Power pack: 48 x 28 x 18 cm (tethered via armored conduit)",
+    "weight_description": "Brutally heavy and front-heavy. Requires both hands and solid stance to aim. The weight distribution pulls downward, demanding core strength and braced positioning. Not a weapon for quick-draw combat.",
+    "primary_material": "Titanium-reinforced steel frame with graphene-composite focusing array. Weapon body is steel; power pack is reinforced polymer with internal heat-sink ribbing.",
+    "finish": "Industrial matte gunmetal gray with heat-scorched sections around the muzzle. Thermal stress marks radiate outward from the barrel in concentric burn patterns. Deep scratches and scuff marks indicate field use. The focusing lens at the barrel tip is blackened quartz with hairline fractures visible under close inspection.",
+    "color_scheme": "Matte gunmetal gray primary. Charred black thermal scorch marks around muzzle and focusing lens. Accent details in brushed steel. Power cells glow faint blue-white when active.",
+    "grip_texture": "Chunky textured polymer grip with integral palm rest. Metal trigger guard with rubberized contact points. The weapon is designed to be shouldered and cradled rather than handheld like a rifle — more reminiscent of a mounted plasma cannon adapted for portable use.",
+    "distinctive_features": [
+      "Flared graviton lens focusing array at barrel tip — appears as concentric rings of blackened quartz and metallic focusing coils",
+      "Three large capacitor banks visibly integrated into the frame, each marked with blue charge-status LEDs that pulse during recharge cycles",
+      "Heavy ribbed heat sinks along the sides of the barrel, glowing dull red after sustained use",
+      "A transparent polymer observation window on the left side revealing internal circuitry and graviton field stabilizers",
+      "Spatial distortion visible around the muzzle when powered — faint shimmer effect even at rest",
+      "Recessed ammunition counter display (shows remaining pulses: 0-8) mounted on the right side",
+      "Tether connection point for the external power pack, reinforced with armored coupling",
+      "Service plate stamped: 'ARCTURUS DEFENSE SOLUTIONS GL-3 CRUSH DEPTH — MILITARY RESTRICTED'"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (stylized 'A' with gravitational wave motif) etched into the frame just above the trigger guard. 'CRUSH DEPTH' designation stenciled in degraded white lettering across the barrel. Military serial number and gravity manipulation license requirement stamped into the steel near the focusing lens. Ironside Armaments manufacturing date and batch code on the power pack.",
+    "condition_typical": "Battle-worn and field-maintained. The weapon shows heavy use: scorch marks around the focusing array, micro-fractures in the observation window, worn grip texture, and dents in the steel frame. Internal components are kept in functional condition despite external abuse. Capacitor banks may show minor corrosion at connection points. The blackened quartz lens is visibly damaged but still operational."
+  },
+  "image_prompt": "Product photograph of the Arcturus Graviton Lens GL-3 'Crush Depth' resting on dark metallic surface, angled 45 degrees to showcase the massive flared muzzle and focusing array. Weapon is positioned horizontally with power pack visible behind it, tethered by reinforced cable. Dramatic side-lighting from upper left casts sharp shadows, illuminating the heat-scorched thermal patterns and brushed steel accents. The blackened quartz lens at barrel tip catches light with subtle iridescent shimmer. Matte gunmetal gray frame contrasts against burnt charcoal thermal stress marks. LEDs on capacitor banks glow faint electric blue. Background is deep charcoal gray concrete, suggesting an underground armory or weapons testing facility. Close-up detail visible on the observation window showing internal graviton stabilizer coils. Cyberpunk aesthetic: industrial, brutal, militaristic hardware rendered with technical precision. --ar 3:2 --v 6"
 }

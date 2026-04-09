@@ -45,5 +45,25 @@
     "Dzemal Acholonu-Patagiri",
     "Patient Zero",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sharp, asymmetrical two-piece suit that treats augmentation as a design feature rather than a flaw. The open left sleeve creates a striking visual asymmetry that reads immediately as deliberate status—chrome augmentation becomes part of the formal presentation. Structured, tailored silhouette with subtle light-absorbing surface that conveys understated corporate authority.",
+    "fit": "Precisely tailored through the torso with a structured single-breasted jacket. Right sleeve is standard full-length; left sleeve is rolled and hemmed to cleanly frame exposed augmentation at the shoulder and arm. Trousers have a slim, professional cut with internal pressure seaming along the right leg for active prosthetic or exo-brace compatibility. Overall impression is sharp and intentional, not relaxed.",
+    "primary_material": "Obsidian micro-textured composite weave (jacket and trousers); micro-rib synth-silk for turtleneck; synthetic leather for Oxford shoes",
+    "texture": "Jacket surface is micro-textured and light-absorbing, almost imperceptibly dimpled—reads as matte in some angles but with subtle depth. Synth-silk turtleneck has fine ribbing that catches minimal light. Synthetic leather Oxfords are smooth and finished with a faint sheen.",
+    "color_scheme": "Deep obsidian black throughout (jacket, trousers, turtleneck, shoes) with silver thread detailing along right leg seam and collar reinforcement. Chrome augmentation serves as primary accent color—intentionally framed and displayed.",
+    "closures": "Jacket: standard button front (obsidian or gunmetal). Trousers: magnetic snap waist for quick integration with prosthetic systems. Oxfords: magnetic heel lock system. Turtleneck: friction-fit neck opening with reinforced BCI collar collar for smooth port insertion.",
+    "distinctive_features": [
+      "Deliberately asymmetrical single-sleeve design—left arm fully exposed to display augmentation",
+      "Clean rolled edge hemming on left sleeve, creating a frame for chrome hardware",
+      "Reinforced BCI collar on turtleneck accommodating wide neural array profiles (senior technical staff credential)",
+      "Internal pressure seaming on right leg disguised as decorative silver stitching—active exo-brace/prosthetic compatible",
+      "Light-absorbing micro-texture on primary fabrics creates visual depth and minimizes reflection",
+      "Magnetic heel lock on Oxfords for exo-leg or powered prosthetic integration"
+    ],
+    "tier_indicator": "Tier 4 working-class professional—expensive enough to signal status and specialization, but not corps-tier luxury. The augmentation display reads as credential, not decoration.",
+    "cultural_context": "Worn by mid-level technical specialists, augmentation-dependent professionals, industrial engineers, and skilled field operatives whose chrome is part of their professional identity. Suggests someone whose augmentation is not a limitation to hide but a qualification to present. Corpo-adjacent but street-aware.",
+    "condition_typical": "Typically pristine or very well-maintained—the kind of outfit that signals investment in professional presentation. May show minor wear at the collar interface from repeated BCI port use, but generally kept in sharp condition."
+  },
+  "image_prompt": "Cyberpunk fashion photography: tall androgynous model wearing Nullweave Tier-4 formal suit standing in moody industrial setting. Deep obsidian jacket with deliberately open left sleeve exposing a chrome-plated mechanical arm with intricate stitching and wiring. Right sleeve full-length in matching black. Fitted micro-rib synth-silk turtleneck with reinforced collar visible. Slim black trousers with subtle silver seam detailing down right leg, paired with clean black synthetic-leather Oxfords. Backlighting emphasizes the light-absorbing texture of the jacket fabric and catches chrome details on exposed augmentation. Dark urban warehouse backdrop with blue-tinted neon accent lighting. Sharp, professional, deliberately asymmetrical composition. Fashion editorial style. --ar 2:3 --v 6"
 }

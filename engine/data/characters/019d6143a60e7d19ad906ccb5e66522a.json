@@ -319,5 +319,12 @@
     "posture_movement": "Economical and controlled — she moves with purpose, never wasted motion. Slight forward lean in the shoulders, as if perpetually ready to move. Eyes track exits and sightlines instinctively. In civilian mode, deliberately adopts a more rounded posture and relaxed gait to avoid drawing attention.",
     "clothing_style": "Off-duty: neutral Tier 4 basics — fitted dark grey or black synthetic-weave pants, unmarked hoodies or fitted long-sleeves, minimal branding. Worn work boots with good tread. A grey canvas messenger bag, overstuffed and practical. During contracts: reinforced jacket with internal pockets, tactical harness beneath outer layer, gloves. Everything muted, functional, forgettable. Nothing that screams 'runner' — the goal is to blend into the Shelf's existing tension and noise."
   },
-  "image_prompt": "cyberpunk portrait of a 28-year-old East Asian and Black woman, slight wiry build, narrow face with high cheekbones, dark almond eyes with amber undertones, black hair in tight practical braid, olive skin tone with warm undertones, visible chrome neural interface jack at base of skull protruding through skin, three parallel white scars on inner right forearm, small geometric tattoo on right wrist, wearing fitted dark grey synthetic-weave hoodie and worn tactical boots, sitting in dim neon-lit shelter built onto megastructure exterior, moody and tense expression, cool tungsten and cyan lighting, shallow depth of field, gritty cyberpunk atmosphere, photorealistic, film noir undertones --ar 2:3 --v 6"
+  "image_prompt": "cyberpunk portrait of a 28-year-old East Asian and Black woman, slight wiry build, narrow face with high cheekbones, dark almond eyes with amber undertones, black hair in tight practical braid, olive skin tone with warm undertones, visible chrome neural interface jack at base of skull protruding through skin, three parallel white scars on inner right forearm, small geometric tattoo on right wrist, wearing fitted dark grey synthetic-weave hoodie and worn tactical boots, sitting in dim neon-lit shelter built onto megastructure exterior, moody and tense expression, cool tungsten and cyan lighting, shallow depth of field, gritty cyberpunk atmosphere, photorealistic, film noir undertones --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 52.9,
+    "Pacific Islander": 32.4,
+    "South Asian": 7.3,
+    "Sub-Saharan African": 4.9,
+    "Hispanic/Latin American": 2.5
+  }
 }

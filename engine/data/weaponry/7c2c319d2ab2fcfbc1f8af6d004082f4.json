@@ -42,5 +42,37 @@
     "shelf",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Brecken Yılmaz-Osei",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Nika Svensson-Kone",
+    "Nurlan Holmberg-Dembele",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Tessera Nexus Town Car",
+    "The Hearthstone"
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately diminutive semi-automatic pistol with the proportions of a toy gun — stubby barrel, shallow grip, almost cartoonish in its compactness. The silhouette reads as 'learner's weapon' or 'novelty item' at first glance, not a serious firearm.",
+    "dimensions": "Total length: 16.5 cm | Barrel length: 10.2 cm | Height: 10.8 cm | Width: 2.8 cm",
+    "weight_description": "Featherlight — feels almost insubstantial in the hand, like holding a hardened water bottle. No heft, no authority. A child could manage its recoil.",
+    "primary_material": "Zinc-alloy slide over injection-molded polymer frame — cost-optimized construction visible in every angle",
+    "finish": "Matte zinc with a faint metallic sheen, deliberately non-tactical. The polymer frame has a slightly glossy consumer-grade appearance, like sporting goods store inventory",
+    "color_scheme": "Flat gunmetal gray slide with natural black polymer grip — intentionally boring, bordering on dingy",
+    "grip_texture": "Smooth, slightly waxy polymer with minimal texture — designed for comfort over control, feels like a toy pistol to trained hands",
+    "distinctive_features": [
+      "Comically short barrel with a slightly flared muzzle",
+      "Oversized trigger guard suggesting this was designed for gloved or large hands",
+      "Simple sights that look almost cosmetic",
+      "Exposed blowback mechanism with minimal concealment",
+      "Small safety lever that looks incidental rather than integral",
+      "Magazine well with generous beveling for easy insertion",
+      "Visible wear around ejection port from countless plinking rounds",
+      "No rails, no accessory hardpoints — deliberately minimal"
+    ],
+    "manufacturer_markings": "Hearthstone Firearms stamped in thin serif font on the left slide; serial number etched in tiny digits below barrel; 'MADE IN SETTLEMENT LAKES INDUSTRIAL ZONE' on the frame in nearly illegible print",
+    "condition_typical": "Scuffed and worn from casual use — handling marks on the grip, slide scratches from being tossed into range bags, carbon fouling around the chamber from neglectful maintenance. Never well-maintained, but also never abused hard enough to break"
+  },
+  "image_prompt": "Product photography of a Hearthstone Firearms Plinker-22 pistol lying on a worn metal workbench next to scattered .22 LR brass casings and a spent magazine. Dramatic sidelit cyberpunk product photography with cool blue-white rim light against a dark matte background. The weapon gleams dully under harsh lighting, showing zinc texture and polymer wear. Include a small Hearthstone Firearms logo card beside it. Cinematic depth of field. The pistol should look simultaneously cheap, harmless, and ubiquitous — like sporting equipment not a weapon. Professional catalog photography with neon accent lighting in the background. --ar 3:2 --v 6"
 }

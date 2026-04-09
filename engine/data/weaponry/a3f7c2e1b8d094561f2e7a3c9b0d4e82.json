@@ -39,5 +39,35 @@
     "municipal",
     "pharmaceutical"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "Lazarus Pharmaceuticals",
+    "MERIDIAN",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Shelf Life",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Human Baseline Alliance",
+    "The Shelf"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact handheld aerosol disperser resembling a dental anesthetic injector crossed with a compact fire extinguisher. Angular, utilitarian design with a pronounced grip trigger and pressurized chamber. Clinical and pharmaceutical in appearance — designed to look medical rather than aggressive.",
+    "dimensions": "14cm length × 4cm diameter; compact enough to fit in a jacket pocket or security belt holster",
+    "weight_description": "Lightweight and well-balanced — 0.19kg feels almost insubstantial in hand, deceptively so given its incapacitating payload. Pressurized canister has a subtle heft that belies its diminutive size.",
+    "primary_material": "Anodized aluminum pressure vessel with reinforced polymer grip housing; medical-grade stainless steel valve assembly",
+    "finish": "Matte pharmaceutical white with chrome micro-valve accents; polished steel pressure seals. Clean, sterile appearance — no weathering or battle-scars typical of this device.",
+    "color_scheme": "Clinical white primary body with metallic chrome valve housing and pressure indicator band; BrightSmile Dental Care branding in soft blue accent",
+    "grip_texture": "Rubberized polymer grip with micro-texture for wet-hand security; textured to prevent fumbling under stress",
+    "distinctive_features": [
+      "Pressurized micro-valve nozzle with precision cone-spread adjustment marking",
+      "Color-coded pressure indicator band (green-yellow-red) on cylinder wall",
+      "BrightSmile Dental Care logo embossed on grip — pharmaceutical branding deliberately clinical",
+      "Numbered burst counter (0-6) etched near trigger guard",
+      "Small medical cross symbol below manufacturer mark",
+      "Faint residual condensation on exterior after storage — sign of internal pressure stability"
+    ],
+    "manufacturer_markings": "BrightSmile Dental Care corporate logo in soft blue on grip face; 'LAZARUS PHARMACEUTICAL LP-EMETIC-9' stamped on pressure vessel in small clinical font; holographic authenticity seal near valve; batch number and expiration date on base",
+    "condition_typical": "Pristine and laboratory-clean — maintained under strict municipal/corporate protocols. Rarely field-weathered; treated as consumable medical equipment rather than personal weapon. Pressure seals kept tight; nozzle dust-capped when holstered."
+  },
+  "image_prompt": "Product photography of a compact pharmaceutical aerosol spray canister, 14cm white anodized aluminum cylinder with chrome micro-valve, laid horizontally on dark gunmetal surface under dramatic side-lighting. Hands in black nitrile gloves holding the device, showing rubberized grip and numbered burst counter. Soft blue BrightSmile Dental Care branding visible on body. Pressure indicator band glowing faintly green in moody sidelight. Clinical, sterile aesthetic mixed with cyberpunk threat — medical device masquerading as tool of control. Sharp focus on valve mechanism and pressure seals. Dark teal and silver color grading. Professional, cold lighting suggesting corporate pharmaceutical origins. --ar 3:2 --v 6"
 }

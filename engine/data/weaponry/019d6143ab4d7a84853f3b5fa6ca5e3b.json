@@ -55,5 +55,38 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Ekundayo Vásárhelyi-Nkemdirim",
+    "Focadrin",
+    "GLMZ",
+    "Piezoelectric Fracture Pistol PFP-7 'Hairline'",
+    "Ringo Corponation Tandem Fold Microvan",
+    "TESSERA PG-2 'Signature'",
+    "Tympanic Membrane Galvanic Rupture Carbine",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A precision rifle with an austere, surgical aesthetic. The body is dominated by a ribbed barrel assembly containing the piezoelectric stack array, flanked by cooling fins that run the weapon's length. The overall silhouette is angular and rectilinear—no curves, no ornamentation. It reads as a tool engineered for a single, terrible purpose.",
+    "dimensions": "780mm total length, 45mm barrel diameter, 160mm scope rail length. Compact enough for vehicle or close-quarters deployment but undeniably a full rifle platform.",
+    "weight_description": "Surprisingly light for its size—the piezoelectric stack is dense but compact, and the polymer frame minimizes mass. Feels balanced around the trigger assembly, with slight muzzle-heavy bias from the cooling fins. Manageable in sustained aim, but the weight distribution is unfamiliar to conventional riflemen.",
+    "primary_material": "Aerospace-grade polymer chassis (carbon-reinforced polycarbonate) with titanium barrel shroud and cooling fin array. Piezoelectric stack visible through service panels along the receiver.",
+    "finish": "Matte gunmetal gray with brushed titanium accents on the barrel and fins. The cooling fins have a subtle heat-anodized bronze patina from operational use. Polymer shows minimal wear—this is a precision weapon kept in strict condition.",
+    "color_scheme": "Gunmetal gray primary, titanium and bronze secondary, with jet-black grip and rail components. Accent color: faint cyan bioluminescent targeting reticle visible in the scope housing.",
+    "grip_texture": "Rubberized polymer grip with fine knurl pattern for enhanced purchase. The trigger guard is bare titanium, cold to the touch. Charging handle is wrapped in thin para-cord for silent operation.",
+    "distinctive_features": [
+      "Piezoelectric stack array visible through translucent service panel, arranged in concentric rings",
+      "Radial cooling fins extending from barrel—functional and intimidating",
+      "Integrated targeting scope with cyan-lit impedance-mapping reticle overlay",
+      "Modular power cell housing with tool-free quick-swap mechanism at rear stock",
+      "No conventional muzzle brake or flash hider—beam emission is silent and invisible",
+      "Resonance tuning dial on left side of barrel, marked in MHz increments (0.8–2.4)",
+      "Weapon status indicator LEDs (green/amber/red) embedded in the grip",
+      "Service placard on right side listing frequency range and tissue/implant impedance values"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS stamped in small block letters on the upper receiver. Serial plate on left side of frame in raised titanium. Smaller warning label on barrel in multiple languages: 'ACOUSTIC DISCONTINUITY PROJECTOR — PROHIBITED CIVILIAN SALE'.",
+    "condition_typical": "Immaculate. This weapon is too rare and too controlled to show field wear. Maintenance records are meticulous. The only evidence of use is faint carbon scoring on the barrel shroud and subtle salt residue around the cooling fins—suggesting deployment in corrosive environments, but nothing more."
+  },
+  "image_prompt": "Product photograph of the Subdermal Shear Projector SSP-1 'Faultline' against a matte black background. Weapon displayed horizontally, three-quarter angle to emphasize the ribbed barrel and radial cooling fins. Dramatic side-lighting from the left, casting deep shadows across the piezoelectric stack array visible through the service panel, rendering it in cold cyan. The titanium barrel shroud catches hard light, creating sharp highlights. Integrated scope glows faintly with cyan targeting reticle. Nearby, a gloved hand (tactical leather, chrome knuckle plating visible) rests on the grip, showing scale and material contrast. Lighting should be clinical, surgical—the aesthetic of precision weaponry designed for silent lethality. Weapon should appear almost laboratory-clean, every surface intentional. No blood, no gore; only cold engineering and implied violence. Cyberpunk noir mood, corporate-military aesthetic. --ar 3:2 --v 6"
 }

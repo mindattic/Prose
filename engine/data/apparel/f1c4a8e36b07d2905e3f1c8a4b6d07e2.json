@@ -49,5 +49,26 @@
     "Nullform",
     "Sefunatu Drăghici-Khalil",
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek, minimalist operator gloves that disappear under clothing. Near-black with an almost invisible matte finish that suggests professional concealment rather than fashion. The silhouette is tight and anatomical, following the hand's natural contours without excess material. Presents as tactical and purposeful—the kind of glove worn by someone who needs to move unseen.",
+    "fit": "Compression-tight through the palm and fingers, conforming precisely to hand geometry. The cuff sits just above the wrist, elasticated for secure hold under jacket or sleeve without creating visible bunching. Zero slack in the construction—every millimeter accounted for.",
+    "primary_material": "Electrospun polymer-skin composite with micro-textured gecko-adhesion compound on contact surfaces. The fingertip overlay is a breathable electrospun film that masks biometric signatures without reducing tactile sensitivity.",
+    "texture": "Smooth, almost liquid-like matte finish on the back of hand; microscopically textured grip zones on palms and fingertips that feel adhesive without stickiness. The print-masking film is imperceptibly thin, adding no perceptible texture to the fingertips from the wearer's perspective.",
+    "color_scheme": "Near-black with zero-contrast construction—no accent stitching, no visible seams, no tonal variation. Designed to vanish against dark clothing or in low light.",
+    "closures": "Elasticated cuff with friction-fit closure. No zippers, snaps, or buckles—complete absence of mechanical fasteners that could catch or be detected.",
+    "distinctive_features": [
+      "Zero-seam construction at all fingertips",
+      "Gecko-adhesion micro-texture for vertical surface climbing",
+      "Electrospun biometric masking film on fingertips",
+      "Short elasticated cuff designed for concealment under sleeves",
+      "No visible branding or manufacturer marks",
+      "Featherweight construction—barely perceptible when worn",
+      "Card-reader compatible tactile sensitivity"
+    ],
+    "tier_indicator": "Tier 5 sub-grade/ungoverned. Unlicensed street manufacture. The sophistication of the tech suggests someone with black-market access, but the distribution model and lack of corpo finish scream underground economy.",
+    "cultural_context": "Street operative, infiltrator, or bypass specialist. The wearer is someone engaged in unauthorized access, surveillance evasion, or theft. Possibly corpo extraction team operating outside official channels. Not for civilian use—this is purpose-built for people who need to leave no trace.",
+    "condition_typical": "Appears pristine on purchase, but the gecko-adhesion compound will show microscopic wear patterns from repeated climbing or surface contact. Over time, the fingertip masking film may show minor delamination at the edges, requiring replacement. Used pairs are nearly impossible to date because the gloves leave no wear signature."
+  },
+  "image_prompt": "Close-up fashion shot of Nullform Ghostgrip Infiltration Gloves on dark-skinned hands against a black mannequin torso. Dramatic side-lighting reveals the matte polymer-skin texture and the almost-invisible gradient of the gecko-adhesion compound on the palm. The hand is positioned touching brushed steel or dark glass to suggest grip functionality. Urban backdrop: rain-slicked rooftop edge or industrial vent shaft in deep shadow. Neon accent light (cold blue or purple) catches the edge of the cuff. Cinematic, noir infiltration aesthetic. --ar 2:3 --v 6"
 }

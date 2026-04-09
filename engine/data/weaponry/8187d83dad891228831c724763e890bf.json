@@ -46,5 +46,33 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Ebele Medina-Quaye",
+    "Nika Svensson-Kone",
+    "Tessera Corponation",
+    "The Consensus"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular assault rifle with a distinctly modular architecture. The Consensus has a forward-swept profile with pronounced mounting rails integrated into the upper receiver. Its silhouette reads as purposefully networked — clusters of sensor ports and BCI interface nodes break up the traditional rifle form, giving it an almost distributed, multi-component appearance despite being a unified weapon.",
+    "dimensions": "965mm overall length, 210mm width at rail cluster, 85mm height at charging handle. Barrel length: 405mm. Modular receiver accepts variable-length tactical packages.",
+    "weight_description": "Surprisingly balanced despite its 3.8kg mass — the distributed smart-attachment interface centers weight around the midline, making it feel nimble in trained hands. The electromagnetic rail assembly in the stock area adds subtle heft toward the rear without feeling nose-heavy.",
+    "primary_material": "Aerospace-grade carbon-composite chassis with reinforced aluminum alloy upper receiver. Polymer-injected components reduce weight while maintaining structural rigidity. The EM-acceleration rail assembly uses hardened steel internals.",
+    "finish": "Matte graphite-black composite with brushed titanium accent panels along the modular attachment points. The upper receiver features a subtle iridescent coating that shifts faintly blue-to-purple under certain light angles — a Thoughtline signature. Wear surfaces show raw composite texture beneath the matte treatment.",
+    "color_scheme": "Dominant matte black with brushed titanium/silver accents. LED indicator clusters glow soft cyan when networked, shifting to amber when in autonomous mode. Internal rail systems show faint copper-bronze coloring.",
+    "grip_texture": "Rubberized polymer grip with integrated pressure sensors (detectable as micro-texture ridges). The charging handle is wrapped in textured aramid fiber. Magazine well has precision-molded grip ridges for swift magazine changes.",
+    "distinctive_features": [
+      "Integrated BCI neural-link socket mounted above the charging handle — three contact points flush with the receiver",
+      "Distributed sensor cluster: three small LiDAR ports along the top rail, two thermal sensing windows in the foregrip mounting",
+      "Electromagnetic acceleration rail visible through semi-transparent polymer access panel in stock — faint electrical tracery visible within",
+      "Modular attachment rail system with 12-point quick-disconnect nodes across upper and side receivers",
+      "Ammo counter display in the magazine housing — small LED window showing round count",
+      "Heat venting louvers along the barrel shroud in geometric V-pattern",
+      "Thoughtline logo embossed (not stamped) on the left side of upper receiver — subtle, matte-on-matte aesthetic",
+      "Encrypted dataport near the trigger guard for weapon firmware updates"
+    ],
+    "manufacturer_markings": "Thoughtline Messaging logo (stylized Φ symbol integrated into a mesh network pattern) embossed on left upper receiver. Serial number laser-etched in microscopic text on the mag well. 'CONSENSUS TAR-12' marked along the barrel in minimalist sans-serif font. Tiny regulatory compliance stamps on the safety selector.",
+    "condition_typical": "Field units show subtle wear patterns: scuff marks on the composite from gear contact, micro-scoring on the modular rail points from repeated attachment cycles, and slight discoloration around the BCI socket from repeated neural-link coupling. Well-maintained by operators who understand the weapon's complexity — batteries topped, firmware current, sensor windows kept clear."
+  },
+  "image_prompt": "Product photography: Tessera TAR-12 'Consensus' assault rifle positioned at 45-degree angle on dark matte-black surface, shot from slightly above. Dramatic side-lighting emphasizing the matte graphite finish and brushed titanium accent rail nodes. Cyan LED indicators subtly illuminated near the BCI socket. Show the distributed sensor cluster and transparent EM-rail access panel catching the light. Gloved hand (black tactical glove with silver augmentation seams visible on fingers) gripping the weapon, hovering slightly above the surface. Background: dark gray cyber-aesthetic environment, slight bokeh of circuit-pattern reflections. Emphasize the modular, networked aesthetic and the integration of electronics into the mechanical form. High-resolution product-catalog style with professional studio lighting, shallow depth of field on the BCI interface. --ar 3:2 --v 6"
 }

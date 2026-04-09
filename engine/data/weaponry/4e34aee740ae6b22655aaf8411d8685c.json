@@ -42,5 +42,40 @@
     "safety",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Eshe Pena-Baah",
+    "Ezio Kaboré-Malhotra",
+    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'",
+    "Nika Svensson-Kone",
+    "Oumarou Svec-Ranginui",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "TESSERA TN-1 'Cradle'",
+    "The Hearthstone",
+    "The Peninsula",
+    "The Pure Hand",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A distinctly civilian-oriented compact pistol with generous proportions—bulbous, almost comforting in its roundness. The frame is noticeably oversized relative to its .380 caliber, creating a squat, approachable silhouette that reads 'safe' rather than 'lethal.' No aggressive angles; every surface curves inward as if designed to fit trembling hands.",
+    "dimensions": "Overall length 160mm, slide width 32mm, grip height 105mm, barrel length 85mm",
+    "weight_description": "Light but dense; 620 grams feels reassuring rather than substantial—a gentle heft that suggests control without intimidation",
+    "primary_material": "Polymer frame (matte finished reinforced polycarbonate) with steel slide",
+    "finish": "Matte charcoal-gray polymer body with brushed stainless steel slide; intentionally unmarked and subdued to avoid drawing attention",
+    "color_scheme": "Gunmetal gray and matte black; neutral, domestic aesthetic—the color palette of a household appliance",
+    "grip_texture": "Deeply textured rubber grip with horizontal grooves; soft-touch material designed for sweaty or unsteady hands",
+    "distinctive_features": [
+      "Oversized triggerguard accommodating gloved fingers",
+      "Visible tritium-painted chamber indicator port on left side of slide (faintly glowing green in darkness)",
+      "Heavy external hammer with serrated striking surface (telegraphs firing intent visually)",
+      "Loaded chamber indicator—a small pin that protrudes when round is chambered",
+      "Integrated trigger lock mechanism with minimal visual footprint",
+      "Rounded edges throughout; no sharp corners or snag points",
+      "Fourth-grade friendly instruction molded into grip in raised text"
+    ],
+    "manufacturer_markings": "HEARTHSTONE FIREARMS logo and GUARDIAN-12 designation stamped on left side of slide in sans-serif font; serial number on frame; minimal branding overall—understated corporate restraint",
+    "condition_typical": "Mint to lightly used; nightstand wear (light dust, occasional fingerprints, possible fade from bedside lamp light). Users maintain these religiously due to safety-conscious ownership culture; negligible field damage"
+  },
+  "image_prompt": "Product photography of Hearthstone Guardian-12 'Bedside' pistol: matte charcoal-gray polymer frame with brushed steel slide, resting on dark walnut wood surface (nightstand aesthetic). Gloved hand (leather, grey-toned) cradling grip from behind. Dramatic side-lighting revealing texture of grip grooves and faint glow of tritium chamber indicator port. Shallow depth of field with soft-focus nightstand background (lamp, book, water glass). Cyberpunk residential aesthetic—warm lamp light mixing with cool LED indicator glow. Ultra-detailed macro on safety features. --ar 3:2 --v 6"
 }

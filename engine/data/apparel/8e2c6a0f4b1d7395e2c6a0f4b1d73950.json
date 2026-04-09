@@ -48,5 +48,26 @@
     "Tessera Industries Memory Rounds MR-2 'Recall'",
     "The Question",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively casual utility vest that reads as streetwear at first glance—structured but not overtly tactical. The matte olive colorway and relaxed exterior pocket placement make it blend into Tier 3 urban wear. The mock-suede shoulder panels add a subtle designer touch that keeps it from looking purely functional. On a body, it sits between the chest and hips with a clean vertical line, neither bulky nor slim.",
+    "fit": "Close-fitting through the torso without compression; allows free shoulder movement. Cut to prevent printing or showing the weight of internal systems. Armholes are generous enough for layering or accessing side holsters. Length hits mid-hip.",
+    "primary_material": "Exterior: tightly woven synthetic ballistic composite (proprietary Redline weave, non-reflective). Mock-suede accent panels at shoulders (treated polymer). Interior lining: soft ballistic-resistant panel rated for standard kinetic rounds (polyester/aramid blend).",
+    "texture": "Exterior feels smooth and dense to the touch, almost leatherlike in matte finish. Mock-suede shoulders have subtle nap. Interior lining is slightly tacky, designed to grip and stabilize holstered items. All seams are professionally finished but visible.",
+    "color_scheme": "Matte dark olive as primary (borrows from military heritage but desaturated for civilian wear). Black reinforcement stitching throughout. Interior lining dark charcoal. Zipper hardware: gunmetal grey with subtle Redline branding on pulls.",
+    "closures": "Full-length YKK zipper down center front with dual pulls. Four exterior pockets secured by heavy-duty friction-fit zips. Internal holster straps use adjustable velcro retention with magnetic quick-release hardware (silent deployment).",
+    "distinctive_features": [
+      "Four visible exterior utility pockets (no visible internal holster hints from outside)",
+      "Mock-suede shoulder panels (aesthetic/functional—reduced glare on skin during draw)",
+      "Ballistic-resistant soft-panel lining (marked with faint Redline Armory QR code for registration verification)",
+      "Four internal holster positions: two shoulder mounts, two hip-flank mounts with adjustable retention",
+      "Magnetic quick-release system (barely audible—purpose is plausible deniability)",
+      "Non-reflective exterior finish (resists casual scanning)",
+      "Concealed interior document pocket (registration papers, permit copy)"
+    ],
+    "tier_indicator": "Tier 3–4 crossover. Licensed civilians and private security wear openly; Tier 5 residents wear to avoid attention but signal capability.",
+    "cultural_context": "Wearer is armed, regulated or not. Projects quiet competence and threat awareness. Popular with off-duty enforcement, private contractors, and people who believe their neighborhood requires self-sufficiency. Wearing it signals either legal authorization or calculated risk.",
+    "condition_typical": "Pristine to broken-in. High-end units show minimal wear (occasional holster scuffing on interior). Street units often show shoulder seam stress, zipper patina, and subtle creasing from repeated access. Older models may have velcro pilling."
+  },
+  "image_prompt": "A sleek matte dark olive utility vest on a cyberpunk model with visible augmentation ports on neck and collarbone, posed three-quarter profile in a dimly lit underground parking garage. Harsh neon-blue overhead light creates sharp shadows across the chest and shoulders. The vest's zipper is slightly open, revealing the interior ballistic lining. The model's hand rests near the hip, where an internal holster position is subtly visible. Urban decay backdrop: concrete pillars, wet asphalt, distant Iowan Behemoth scaffolding. Moody, professional catalog lighting. Film noir undertone. --ar 2:3 --v 6"
 }

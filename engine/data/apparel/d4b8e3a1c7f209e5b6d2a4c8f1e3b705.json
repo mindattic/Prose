@@ -47,5 +47,25 @@
   "related_entities": [
     "Mika Sorel",
     "Specter ID Spoofer — 'Janus Mask'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian half-face respirator with industrial minimalism—covers nose to chin, leaving eyes and forehead exposed. The matte charcoal surface has a subtle anatomical curve that follows facial geometry. Presents as functional street-wear, neither threatening nor medical, striking a balance between safety equipment and urban fashion statement.",
+    "fit": "Compression-fitted via dual adjustable silicone straps that anchor at temple and jaw. Sits flush against facial contours with minimal gap. Tight enough for seal integrity, loose enough for all-day wear without pressure marks.",
+    "primary_material": "Matte charcoal thermoplastic (injection-molded) body with medical-grade silicone seal components and hex-threaded aluminum cartridge ports.",
+    "texture": "Smooth, hard thermoplastic face with subtle debossed hexagon logo. Silicone straps have slight grip texture. Cartridge filters have fine mesh screening visible at intake.",
+    "color_scheme": "Matte charcoal grey as primary. Accent colors on swappable cartridges: grey (particulate), amber (chemical), red (biological). Straps are dark charcoal with minimal contrast stitching.",
+    "closures": "Dual silicone elastomer straps with friction-fit adjustment (no buckles or velcro). Hex-threaded cartridge ports allow tool-free swap via hand-tight engagement.",
+    "distinctive_features": [
+      "Debossed Kolvex hexagon mark on left cheek panel",
+      "Dual asymmetric filter cartridge ports with color-coded cartridges",
+      "Exhalation valve centered below mouth area",
+      "Anatomical contour molding for face-fit",
+      "Tool-free cartridge swap system",
+      "Silicone dual-strap system with temple and jaw anchors"
+    ],
+    "tier_indicator": "Tier 3–4 functional crossover. Mass-produced by major corpo division, affordable for working class, common in transit/industrial labor but increasingly adopted as street-wear aesthetic.",
+    "cultural_context": "Signals practical survivalism without subcultural affiliation. Worn by transit workers, environmental activists, street-level corpo employees, and urban dwellers in high-pollution zones. Also adopted by style-conscious Tier 3–4 residents as marker of 'honest utility' ethos. Not medical (those are full-face), not military (no comms integration).",
+    "condition_typical": "Usually pristine to lightly worn when new. With age: silicone straps show slight discoloration, minor scratches on thermoplastic body, cartridge ports accumulate dust, possible replacement cartridges indicate heavy use."
+  },
+  "image_prompt": "Close-up fashion photograph of Kolvex FilterMask FM-12 on a sharp-featured cyberpunk model with mixed heritage features, half-face angle, dark streetwear aesthetic. Matte charcoal mask sits flush against skin with visible silicone straps curving from temple to jaw. Color-coded cartridges (grey and amber) visible on sides. Soft neon glow reflecting off thermoplastic surface—cool blue and amber accent lighting. Dark urban background: wet concrete wall with rain reflections, faint Kolvex signage blur. Model's eyes visible above mask, piercing and direct. Moody, industrial atmosphere. Shallow depth of field on mask detail. --ar 2:3 --v 6"
 }

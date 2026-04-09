@@ -45,5 +45,34 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Breck Tannen",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Ilhan Sandstrom-Badu",
+    "Nika Svensson-Kone",
+    "TESSERA PG-2 'Signature'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular designated marksman rifle with a distinctly futuristic profile. The weapon features a pronounced, elongated barrel shroud housing the electromagnetic acceleration chambers. The overall silhouette is svelte and precision-focused, lacking the chunky proportions of chemical-propellant DMRs. Clean lines and minimal protrusions give it an almost surgical appearance.",
+    "dimensions": "1080mm overall length, 65mm width at receiver, 95mm height with scope rail. Barrel assembly (acceleration chamber) extends 520mm from receiver.",
+    "weight_description": "Surprisingly light in hand at 5.8kg (rifle only), with well-distributed balance. The weight shifts slightly forward into the acceleration chamber, but ergonomic design prevents fatigue. Feels precision-engineered rather than hefty.",
+    "primary_material": "Aerospace-grade aluminum-titanium composite frame with reinforced carbon-fiber barrel shroud. Internal electromagnetic components mounted in hardened steel staging rings.",
+    "finish": "Matte gunmetal gray with brushed titanium accents around the receiver and acceleration chamber ports. Wear-resistant DLC (diamond-like carbon) coating on all handling surfaces to minimize fingerprints and thermal signature.",
+    "color_scheme": "Charcoal gray primary with silver-gray highlights. Capacitor pack connector glows faint blue when charged.",
+    "grip_texture": "Textured polymer grip with integrated pressure-sensitive panels that interface with the BCI link. Slight grip knurling for secure purchase even with tactical gloves.",
+    "distinctive_features": [
+      "Three visible electromagnetic coil stages along the barrel shroud, each marked with faint circular indent patterns",
+      "Capacitor connection port at rear receiver (glows faint cyan when energized)",
+      "Minimal aperture sight rails; designed for integrated BCI targeting overlay",
+      "Ventilation ports along the barrel shroud for thermal management of acceleration coils",
+      "No muzzle brake or suppressor—acceleration occurs entirely within the shroud",
+      "Neural interface contact points on the charging handle (subtle gold-plated contacts)",
+      "Tungsten penetrator magazine mounted horizontally below the receiver, translucent polymer showing 3mm round profile"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions engraved in small caps along the left side of the receiver. Iron Point Ammunition maker's mark stamped on the capacitor pack. Serial plate recessed into the stock with encrypted QR encoding.",
+    "condition_typical": "Immaculate in-contract service. Weapons are maintained to exacting standards and rarely see field abuse due to their restricted military deployment. Typically shows zero to minimal wear; any visible damage indicates heavy combat history."
+  },
+  "image_prompt": "Product photography of the Arcturus AEDM-3 Gauss electromagnetic DMR rifle, mounted horizontally on a black brushed steel surface. Dramatic side-lighting casting sharp shadows, highlighting the three-stage electromagnetic coil shroud and the sleek, angular receiver geometry. The translucent tungsten penetrator magazine visible below the chassis. Capacitor pack with faint cyan glow positioned to the right. Overhead view of the weapon's minimal profile emphasizes the absence of a traditional muzzle brake. Cold cyberpunk aesthetic with clinical precision. Shot from the starboard side to showcase the Arcturus engraving and ventilation ports. Dark matte background. Professional catalog lighting. --ar 3:2 --v 6"
 }

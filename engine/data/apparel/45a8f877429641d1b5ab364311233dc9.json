@@ -37,5 +37,25 @@
     "ShieldTech SB-3 'Groundstrike'",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Tessera Industries Memory Rounds MR-2 'Recall'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sharp, structured blazer with clean lines and subtle professional geometry. The right shoulder bears a nearly invisible seam that breaks the traditional jacket silhouette—evidence of engineering rather than pure tailoring. Sits with quiet confidence on the frame, neither oversized nor aggressively fitted. The overall impression is competent, purposeful, and deliberately transparent about its wearer's augmentation status.",
+    "fit": "Tailored but not restrictive. Shoulders sit squared and defined. Sleeves taper slightly toward the wrist without binding. The right shoulder panel sits fractionally looser to accommodate chrome or articulated joints beneath. Torso follows the body without clinging. Cut for movement and layering over tech-wear.",
+    "primary_material": "Synth-wool blend (70% synthetic polymer, 30% recycled natural fiber). Matte finish with subtle surface memory. Resists wrinkles and staining without the cost or maintenance of genuine wool.",
+    "texture": "Smooth to the touch with a soft nap that catches light slightly. Crisp at the seams and edges. The aug-access panels are seamlessly woven—no perceptible texture difference, but the fabric weight is fractionally denser in those zones.",
+    "color_scheme": "Charcoal gray as primary (Halverson's signature neutral). Single-stitch detailing in muted silver along the interior of the aug-cut seam. Lining in black synthetic with subtle geometric grid pattern (functional—helps with wear visibility and thermal regulation).",
+    "closures": "Two-button front closure (mother-of-pearl-effect polymer, not genuine). The concealed right-shoulder magnetic closure is invisible from outside. Left cuff port-access panel secured by four small friction-fit snaps that blend into the cuff stitching.",
+    "distinctive_features": [
+      "Concealed right-shoulder magnetic seam (aug-access)",
+      "Left cuff BCI tether port panel (three-standard compatible)",
+      "Reinforced shoulder and upper-back paneling (supports weight of chrome)",
+      "Internal chest pocket with RFID-blocking weave",
+      "Silver-tone Halverson & Crane woven label, visible on interior",
+      "Wear-resistant patches at inner elbows and cuff edges"
+    ],
+    "tier_indicator": "Tier 2 aspirational / Tier 3 entry-level. The blazer signals ambition and augmentation readiness without claiming wealth.",
+    "cultural_context": "Worn by mid-tier corporate candidates, functional augmented professionals, and anyone betting on themselves. Not flashy enough to alienate conservative corpo sectors; augment-aware enough to signal you're integrated and not hiding modifications. A bridge garment—the outfit you wear when your paygrade is about to change.",
+    "condition_typical": "Immaculate when new or freshly dry-cleaned. Develops subtle scuffing at the cuffs and shoulder seams with regular wear. The magnetic closure may show faint wear marks around the edges after 6+ months of use, but remains fully functional. Creasing follows body contours naturally."
+  },
+  "image_prompt": "Sleek cyberpunk fashion photograph: Halverson Aug-Cut blazer displayed on a lean augmented model or glossy dark chrome mannequin, three-quarter pose showing the right shoulder's engineered seam catch with cool ambient light. The left cuff is angled toward camera to hint at the discreet port-access panel. Urban neo-noir backdrop—rain-wet concrete, faint holographic signage, moody blue and cyan ambient lighting. Fabric texture visible at close focal depth, subtle sheen catching overhead light. Professional, aspirational, purposeful. Cinematic depth of field, cyberpunk product photography aesthetic --ar 2:3 --v 6"
 }

@@ -47,5 +47,26 @@
     "Ringo DV-4 'Courier'",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purposeful moto jacket with a slightly forward-hunched silhouette optimized for riding posture. Minimal visual noise—flat black expanse broken only by a subtle asymmetric zip and low-profile hardware. Projects quiet competence rather than flash. The forward-positioned shoulder seams create a subtle forward pitch to the frame.",
+    "fit": "Close and athletic without restriction. Tailored through the torso and shoulders to accommodate a rider's forward lean. Arm length positioned for bent-elbow riding geometry. Sits between fitted and relaxed—neither spray-on nor oversized.",
+    "primary_material": "Full-grain synthetic leather in matte finish—durable, non-reflective, engineered for abrasion resistance and wind shear.",
+    "texture": "Smooth, slightly waxy synthetic leather surface. Quilted nylon lining visible at collar and cuff edges. Minimal visible stitching; construction is clean and precise.",
+    "color_scheme": "Flat matte black throughout. No contrast stitching, no accent colors. All hardware (zips, snaps, buckles) in gunmetal or brushed steel—deliberately anti-chrome.",
+    "closures": "Asymmetric primary zipper (slightly off-center, functional design choice). Magnetic snaps at cuffs. Collar zip-close mechanism. No excess buckles or straps.",
+    "distinctive_features": [
+      "Removable CE-rated armor inserts at shoulders, elbows, and full spine channel",
+      "Detachable quilted nylon lining for seasonal adjustment",
+      "Medium-height collar that zips fully closed against wind",
+      "Forward-positioned shoulder seams for riding ergonomics",
+      "Chrome-free hardware throughout—deliberate anti-flash design philosophy",
+      "Minimal stitching detail; clean, industrial construction",
+      "Subtle asymmetric zip placement"
+    ],
+    "tier_indicator": "Tier 2–3 functional/accessible. Not luxury, not salvage. Street-level practical gear with genuine performance credentials.",
+    "cultural_context": "Worn by actual motorcycle couriers, delivery runners, and urban commuters. Also adopted by those who respect the aesthetic of practical competence—people who move through the city with purpose. Signals 'I know how to survive in motion' rather than 'I bought a look.' Anti-corpo, anti-fashion-statement.",
+    "condition_typical": "Broken-in but well-maintained. Scuff marks on shoulders and elbows from contact. Creasing at joints from repeated riding posture. Lining may show signs of heavy wear. Overall aged gracefully, not neglected."
+  },
+  "image_prompt": "Revv Moto Blackline motorcycle jacket displayed on a lean, augmented model in a darkened urban garage. Matte black synthetic leather catches moody cool-blue and amber accent lighting. Close-up detail of the asymmetric zip and brushed steel hardware. Model in riding posture—shoulders forward, arms bent. Industrial concrete wall and hanging chain visible in soft-focus backdrop. Gritty, functional aesthetic. Cyberpunk street courier vibe. --ar 2:3 --v 6"
 }

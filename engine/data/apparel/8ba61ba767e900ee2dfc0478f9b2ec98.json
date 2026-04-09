@@ -36,5 +36,24 @@
   "related_entities": [
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Ringo DV-4 'Courier'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting second-skin base layer with visible padded modules at strategic impact zones. The compression creates a streamlined silhouette with subtle geometric bulges at shoulders, elbows, hips, knees, and along the spine. Worn under heavier gear, it reads as athletic and purpose-built.",
+    "fit": "Compression fit — snug against the body without restricting movement, designed to hold impact-gel pads flush against joints and vulnerable areas. Tapered at wrists and ankles.",
+    "primary_material": "Nano-weave synthetic compression fabric (elasticated polyurethane-blend) with embedded thermoreactive impact-gel capsules",
+    "texture": "Smooth, moisture-wicking compression knit base with localized firm gel pads that flex softly under pressure but develop a firmer, almost rubbery surface when struck",
+    "color_scheme": "Matte charcoal-gray base with neon-cyan gel pad accents at impact zones; subtle Apex Dynamics branded trim in silver at collar and cuffs",
+    "closures": "None — full pull-over design with friction-fit cuffs at wrists and ankles",
+    "distinctive_features": [
+      "Thermoreactive impact-absorbing gel pads at shoulders, elbows, hips, knees, and spine",
+      "Molecular compression weave maintains pad positioning under duress",
+      "Sublimated Apex Dynamics logo at chest in reflective silver",
+      "Moisture-management micro-channels visible under close inspection",
+      "Reinforced seams at impact pad boundaries"
+    ],
+    "tier_indicator": "Tier 3 — working-class professional safety wear; functional rather than luxury, but reliable mid-range corpo tech",
+    "cultural_context": "Worn by couriers, parkour runners, delivery drivers, stunt performers, and anyone in high-impact occupations. Signals street-competence, danger-acceptance, and practical investment in survival over style.",
+    "condition_typical": "Broken-in but maintained; gel pads may show slight discoloration from repeated impacts, surface compression fabric slightly faded at shoulders and knees from heavy use"
+  },
+  "image_prompt": "A courier in an Apex Dynamics Impact-Gel Compression Layer base layer, visible under an open armored vest, photographed mid-stride on a rain-slicked GLMZ rooftop. Neon-cyan gel pads glow faintly under harsh streetlight. Model's augmented arm visible on one side. Dark moody rain, urban skyline in soft focus. Shot from torso-up, emphasizing the compression fit and strategic padding. Cinematic cyberpunk aesthetic. --ar 2:3 --v 6"
 }

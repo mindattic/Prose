@@ -50,5 +50,25 @@
     "The Pure Hand",
     "The Quiet Room",
     "WELLSPRING"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Ethereal floor-length opera gloves that extend from fingertip to upper arm, creating an elongated, elegant silhouette. The fabric appears to shimmer and shift with movement, creating an iridescent quality that commands attention in dim lighting. On tier-1 bodies, they read as pure luxury; on augmented limbs, they signal tasteful concealment of chrome.",
+    "fit": "Precision-tailored compression fit through the palm and fingers, gradually relaxing to a loose drape at the forearm and upper arm. Seamless construction through the hand; the chrome-cover variant features an inner polymer sleeve that molds invisibly to cybernetic limbs without visible seams.",
+    "primary_material": "Biopearl silk (primary); opalescent synthetic thread woven throughout; micro-crystal beading (New Osaka origin); matte polymer inner sleeve (chrome variant only)",
+    "texture": "Smooth, liquid-like surface with a subtle ribbed structure from the opalescent weave. The laser-cut cuff has dimensional relief—fretwork creates negative space revealing skin or chrome beneath. Micro-crystals catch light and create tactile texture under fingertips.",
+    "color_scheme": "Ivory base with opalescent threading that shifts from cool blue-cyan in cool light to warm amber-gold in warm light. The micro-crystal beading adds white and prismatic highlights throughout the cuff.",
+    "closures": "None—friction-fit design. The upper arm cuff sits snugly but slides on/off easily; no zippers, snaps, or fasteners.",
+    "distinctive_features": [
+      "Opalescent thread weave creates chromatic shift (blue-to-amber)",
+      "Laser-cut geometric fretwork on upper-arm cuff",
+      "Micro-crystal beading sourced from New Osaka artisans",
+      "Chrome-cover variant with seamless inner polymer sleeve designed to conceal chrome cybernetic hands",
+      "Floor-length construction extends past typical opera length",
+      "Zero visible seams in standard variant (seamless hand construction)"
+    ],
+    "tier_indicator": "Tier 1 luxury—Dawngate Atelier is a high-end corpo fashion house. Pricing in Φ reflects exclusivity and artisan craftsmanship.",
+    "cultural_context": "Worn by corpo elite, augmented socialites, and high-tier operatives who view chrome augmentation as something to frame rather than hide. Signals wealth, taste, and comfort with body modification. The chrome-cover variant suggests someone who wants their augmentations present but refined—not militant or street.",
+    "condition_typical": "Pristine. These are investment pieces maintained carefully. The biopearl silk resists staining; micro-crystals never dull. A worn pair would show crystal loss or fading of the opalescent effect—rare enough to be noteworthy."
+  },
+  "image_prompt": "Fashion photograph of floor-length ivory opalescent evening gloves displayed on a sleek chrome-augmented hand and arm, fingers gracefully extended. The laser-cut fretwork cuff catches blue and amber light in a moody gallery setting. Micro-crystals sparkle subtly. Dark background with soft rim lighting emphasizing the silk's lustrous shift from cool to warm tones. Ultra-luxe, corpo aesthetic. Close-up detail of beading visible on cuff. --ar 2:3 --v 6"
 }

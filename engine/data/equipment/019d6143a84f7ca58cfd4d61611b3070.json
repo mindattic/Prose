@@ -48,5 +48,24 @@
     "Patient Zero",
     "The Question",
     "Ximena Bautista-Nwosu"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact hexacopter with a distinctive cylindrical communications pod mounted centrally beneath the frame. The drone presents an aggressive, utilitarian silhouette with exposed motor housings and carbon-fiber struts. The central pod resembles a small thermos or ammunition magazine, housing antenna arrays and encryption hardware. Propellers are carbon-composite with matte black finish.",
+    "dimensions": "38 cm diameter rotor span; 12 cm tall (body only); communication pod 8 cm diameter × 15 cm length",
+    "weight_description": "5 kg total — easily hand-throwable with assisted electric launch; carries its own weight without fatigue for extended field deployment",
+    "primary_material": "Carbon-fiber composite frame; titanium motor mounts; reinforced polymer shrouds around the central communications pod",
+    "finish": "Matte gunmetal gray with anodized titanium accents; non-reflective coating to minimize aerial detection; exposed wiring uses braided polymer sleeves",
+    "color_scheme": "Matte gray-black frame with contrasting arctic-blue accents on propeller hubs and the communications pod; red LED indicator strip running around the pod's circumference",
+    "interface_elements": "Top-mounted status display (3 cm LCD screen showing altitude, signal strength, user count); 4 physical buttons (launch, mode select, emergency cut, reset); 2 external antenna mounts at 45° angles; micro-USB charging port recessed under rear shroud; encrypted data jack on pod underside",
+    "distinctive_features": [
+      "Hexagonal rotor arrangement with variable-pitch propellers for stability in wind",
+      "Pulsing red LED ring around the central pod — visible from ground to confirm active relay status",
+      "Quantum-lock indicator: small holographic shimmer display on pod face showing encryption cipher rotation",
+      "Frequency-hopping antenna array with 4 directional elements splayed like a crown",
+      "Thermal dissipation fins visible on the rear of the pod — encryption processing generates heat"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (stylized star-burst) embossed on pod; military-grade serial number on frame strut; small regulatory stamp: 'GLMZ-APPROVED COMMS RELAY TIER 3+' on base shroud; FCC-equivalent QUANTA compliance seal (Φ symbol)",
+    "condition_typical": "In field use: hovering at 500m altitude with red LED pulsing; antenna array oriented in cardinal directions; slight drone vibration visible in propeller blur; dirt and dust accumulation on shrouds from repeated launches; scuff marks from hand-throw impact pads on undercarriage"
+  },
+  "image_prompt": "Product photography of a military-spec hexacopter communication drone on a reinforced carbon-fiber workbench, surrounded by technical schematics and deployment cases. The BCD-4 is airborne 30 cm above the surface via invisible rig, its red LED ring pulsing. Dramatic side-lighting in cold cyan-blue emphasizing the central communications pod and antenna crown. Shallow depth of field with a blurred background of GLMZ skyline through rain-streaked industrial windows. Cyberpunk aesthetic with neon accent lighting on nearby tactical equipment. Shot from 45° angle showing rotor detail and pod configuration. Professional military equipment photography style. --ar 3:2 --v 6"
 }

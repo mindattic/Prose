@@ -59,5 +59,44 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Carrion Defense Works Neural Lash NL-3 'Agony'",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "Electrocyte Organ Array",
+    "GLMZ",
+    "Glenville Sound",
+    "Lazarus Pharmaceuticals Nociceptive Threshold Adjuster",
+    "Myelin Shunt Induction Carbine MSIC-3 'Stutterbox'",
+    "NeuralPath HarmonicRoot Perfect Pitch Mod",
+    "Spire Light on Still Water",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "The Bazaar",
+    "The Resonance Communion",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular energy weapon with a distinctly organic curve to its receiver. The VRD-3 resembles a marriage between a stun baton and a precision instrument — aggressive yet clinical. The barrel is not a traditional muzzle but rather a resonance emitter array, a honeycomb of conductive apertures arranged in a widening funnel. The overall silhouette is compact and forward-weighted, designed for one-handed tactical deployment.",
+    "dimensions": "34 cm length overall; 8 cm width at the widened emitter head; 6 cm depth at grip; emitter array spans 5 cm diameter",
+    "weight_description": "Hefty but well-balanced — 1.9 kg distributed toward the emitter creates a natural pointing tendency. Feels purposeful in hand, never awkward, despite the asymmetrical geometry.",
+    "primary_material": "Matte polymer composite frame over a conductive internal cage of copper-nickel lattice; emitter head is reinforced titanium-edged ceramic",
+    "finish": "Matte charcoal polymer body with a subtle industrial texture to prevent slip. The conductive cage visible through translucent sections of the housing glows faintly under certain light. Emitter apertures have a brushed metallic finish that catches light in nested patterns.",
+    "color_scheme": "Charcoal matte primary; gunmetal gray conductive elements; accent lines in electric cyan running along the spine of the receiver and framing the power indicator",
+    "grip_texture": "Textured polymer with shallow grip channels; slightly tacky rubberized surface for retention even in wet conditions. The trigger guard is oversized and angular, designed for gloved operation.",
+    "distinctive_features": [
+      "Rotating resonance-tuning dial on the left receiver side, marked with frequency bands in small luminescent numerals",
+      "Honeycomb-pattern emitter array at the barrel, flared like a speaker horn",
+      "Power indicator LED strip running along the spine — cycles from blue (charged) to white (peak resonance) to amber (decay)",
+      "Faint geometric etching along the grip depicting harmonic wave patterns",
+      "Capacitor charging nodes visible as raised titanium nodes along the internal cage visible through translucent housing sections",
+      "Micro-vent ports along the rear receiver to dissipate resonance bleed-off",
+      "ZHENG-DAO serial plate mounted on the right side of the grip in microdot format"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo (stylized sine wave) embossed on the grip; 'VRD-3 LIVEWIRE' designation in small block lettering above the trigger; model serial number in microdot on right receiver panel; 'INCAPACITATION MODE STANDARD CONFIGURATION' warning stamp in three languages on the power cell bay",
+    "condition_typical": "Well-maintained units show minimal wear; the matte finish masks micro-scratches well. Field-used units develop scorching marks around the emitter apertures from resonance bleed, discoloration in cyan-to-amber gradients. Modified units (with lethal setting restored) often show evidence of hastily re-soldered circuit traces near the tuning dial; the thermal stress creates subtle warping in the plastic housing that marks it to trained eyes. Street units in the lower tiers show pitting in the emitter ceramic and burn marks along the vent ports."
+  },
+  "image_prompt": "Product photography of the Voltaic Resonance Disruptor VRD-3 'Livewire' energy weapon, held at waist angle in a black-gloved tactical hand against a matte charcoal backdrop. The honeycomb emitter array faces slightly toward the camera. Dramatic side-lighting from the left casts sharp shadows across the matte polymer body, highlighting the textured grip and the geometric etching. The translucent housing sections reveal the faint glow of internal conductive lattice and capacitor nodes. Cyan accent lines running along the spine catch the light and glow subtly. The resonance tuning dial is clearly visible, marked with frequency bands. The power indicator LED strip shows a cool blue-to-white charging cycle. Microdot serial markings visible on the right receiver. Cyberpunk product shot aesthetic with high contrast and material-focused detail. Dark moody studio lighting with a single strong key light. --ar 3:2 --v 6"
 }

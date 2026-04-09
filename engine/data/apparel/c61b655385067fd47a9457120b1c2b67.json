@@ -37,5 +37,26 @@
     "Arcturus Defense Solutions Thermal Longsword TL-3 'Cauterizer'",
     "Sorin Ekwensi-Balasanyan",
     "Wulfric Diallo-Svartengren"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A heavy, imposing leather-analog jacket with structured shoulders and a slightly cropped waist. The back dominates with a large heat-pressed wolf skull over crossed wrenches in high contrast. The silhouette reads as protective and territorial—worn by people who move through contested space with purpose.",
+    "fit": "Relaxed through the shoulders and chest, slightly tapered at the waist. Designed to layer over body armor or augmentation rigs without restriction. Sleeves are long enough to cover wrist-mounted tech.",
+    "primary_material": "Heavy-duty synthetic leather analog—ballistic-grade polyurethane weave with reinforced seams. Resistant to abrasion and minor impact. Feels like treated leather but engineered for durability in high-friction environments.",
+    "texture": "Smooth face with subtle grain texture; back panel has a slightly raised heat-press finish where the insignia sits. Collar edges are slightly distressed from wear and repeated adjustment. Seams are double-stitched and visibly reinforced.",
+    "color_scheme": "Deep charcoal-black primary, with the wolf skull and wrenches in bone white or silver. Chapter color threads run through the left collar (crimson, deep blue, or emerald depending on chapter house). Rank patches on right sleeve in muted earth tones and metals.",
+    "closures": "Heavy-duty metal zippers with rubberized pulls. Magnetic snaps at collar points. Secondary friction-fit straps at wrist cuffs.",
+    "distinctive_features": [
+      "Large back patch: wolf skull over crossed wrenches, heat-pressed and semi-rigid",
+      "Left collar: colored thread weaving indicating specific chapter affiliation (earned, not gifted)",
+      "Right sleeve: vertical row of cloth rank patches, each representing earned status within the chapter",
+      "Interior breast pocket with reinforced stitching for tools or secured items",
+      "Shoulder panels slightly thickened for impact resistance",
+      "Wear patterns: scuffs and minor abrasions concentrated on forearms and elbows from street work",
+      "No corporate branding—pure gang colors and earned insignia only"
+    ],
+    "tier_indicator": "Tier 4-5 street. Not luxury, but highly valued within its subculture. Cost-prohibitive only in terms of earning the right to wear it, not material wealth.",
+    "cultural_context": "This jacket is a literal membership card in the Iron Wolves—a gang operating out of the Shelf districts where legal authority is nominal. Wearing it signals: (1) you are part of an organized group that will retaliate against violence against you, (2) you have earned your standing through proven loyalty and action, (3) you move through specific territories with sanction. In GLMZ governance, gang affiliations like this operate as shadow infrastructure—de facto protection and resource distribution in ungoverned zones.",
+    "condition_typical": "Worn-in but maintained. The jacket is too important to neglect. Surface scuffs and scrapes show street use, but seams are intact and insignia is kept sharp. A well-maintained Iron Wolves jacket is a source of pride; a damaged one signals decline in standing."
+  },
+  "image_prompt": "A weathered figure in a heavy black leather-analog jacket, standing in profile against an industrial Shelf district backdrop—corrugated metal, neon signage, shadow and sodium light. The back of the jacket is the focal point: a large bone-white wolf skull over crossed wrenches dominating the scene. Crimson threads visible at the left collar. Right sleeve shows faded rank patches. The fabric has visible wear—scuffed forearms, creased leather, but immaculate stitching. Moody, high-contrast lighting with cool blues and amber neon. Street photography aesthetic. Dark mannequin or figure, no face visible. Gritty, territorial energy. --ar 2:3 --v 6"
 }

@@ -42,5 +42,36 @@
     "poverty",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "Djeneba Park-Traore",
+    "GLMZ",
+    "Nimbus Security ShockRing NR-1 'Kiss'",
+    "Steel",
+    "Tomasz Wren",
+    "Tympanic Membrane Galvanic Rupture Carbine"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally utilitarian stabbing weapon—roughly tapered steel rod culminating in a ground point. The shaft retains visible corrugation from its original construction material, creating a deliberate texture that defines its lethality. Wrapped grip section shows irregular layering of salvaged grip tape in mismatched colors. Appears hastily finished but deliberately sharpened.",
+    "dimensions": "15-30 cm total length (blade 10-20 cm, grip 5-10 cm); roughly 8-12 mm diameter at shaft, tapering to 2-3 mm point",
+    "weight_description": "Compact and balanced despite crude construction; feels weighty for its size due to steel density. Hefty enough to generate force in close quarters, light enough for extended concealment.",
+    "primary_material": "Construction-grade rebar steel (likely recycled/salvaged from GLMZ infrastructure)",
+    "finish": "Heavily oxidized and pitted; surface shows rust bloom in irregular patches. Ground point area has worn, exposed metal with dull sheen. Corrugations create shadow patterns along the shaft.",
+    "color_scheme": "Predominant oxidized rust-brown with patches of darker gunmetal gray. Grip tape in contrasting salvaged colors—typically faded neon, industrial yellow-green, or worn black electrical tape layered unevenly",
+    "grip_texture": "Multiple overlapping strips of salvaged grip tape (skateboard, tool handles, worn clothing tape)—textured and slightly tacky, designed for desperate retention rather than comfort. Tape edges may be frayed or peeling.",
+    "distinctive_features": [
+      "Visible corrugations along full shaft length—intentionally preserved for wound trauma",
+      "Irregular grinding marks visible near point where stone/wheel contacted steel unevenly",
+      "Dark oxidation stains and rust bloom—some areas deliberately unwashed to propagate infection risk",
+      "Crude point—not symmetrical; angled from off-center grinding",
+      "Grip tape seams and overlaps visible; multiple color layers showing material scarcity",
+      "Possible small notches or scoring in shaft from being honed on concrete or stone",
+      "No markings, serial numbers, or manufacturer identification"
+    ],
+    "manufacturer_markings": "None. Occasionally faint stamped numbers or construction codes from original rebar may be partially visible under rust, but deliberately worn or ground away by maker.",
+    "condition_typical": "Weathered and deliberately neglected. Rust and oxidation are features, not flaws. Grip tape shows signs of repeated handling and sweat damage. Sharp point maintained through occasional honing on concrete. Overall appearance suggests it has drawn blood."
+  },
+  "image_prompt": "Close product photography of a handmade rebar shiv 'Tetanus Kiss' positioned on dark concrete surface under harsh side-lighting that emphasizes corrugated shaft texture and rust oxidation. Steel point sharp and menacing, highlighted by dramatic shadows. Grip section wrapped in mismatched salvaged tape (neon yellow, faded black, weathered colors layered unevenly). Shallow depth of field with blurred concrete texture background. Cyberpunk street weapon aesthetic—brutal, functional, no glamour. Gritty lower-tier GLMZ materials. Shot from 45-degree angle showing point and corrugations clearly. Cold, clinical lighting revealing rust bloom and wear patterns. --ar 3:2 --v 6"
 }

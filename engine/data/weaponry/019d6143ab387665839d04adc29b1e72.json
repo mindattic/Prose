@@ -54,5 +54,39 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "CONDUCTOR",
+    "Endolymphatic Pressure Cascade Rifle",
+    "GLMZ",
+    "Helix Biosystems",
+    "Ilhan Sandstrom-Badu",
+    "Kairos",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "TESSERA PG-2 'Signature'",
+    "The Resonance Communion"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purposeful impact baton with a subtly aggressive aesthetic—60cm of tapered polymer over titanium, culminating in a bulbous striking end densely clustered with micro-transducers. The grip flares slightly at the base, housing the tuning dial. Overall impression: a precision instrument disguised as blunt trauma, with an almost medical sterility to its finish.",
+    "dimensions": "60cm length × 4.2cm grip diameter × 7cm striking head diameter",
+    "weight_description": "Hefty but balanced—890g distributes evenly along the shaft, making it feel authoritative in hand without excessive fatigue during extended use. The titanium core adds substantive presence without unwieldy bulk.",
+    "primary_material": "Titanium core wrapped in dense polymer composite shell",
+    "finish": "Matte gunmetal gray polymer with brushed titanium accents at the grip base and transducer array housing. Minor wear patterns consistent with field use.",
+    "color_scheme": "Primary: gunmetal gray polymer. Accents: brushed titanium silver at cap and grip collar. Recessed dial rim in muted copper tone.",
+    "grip_texture": "Rubberized polymer with subtle cross-hatching for secure hand purchase, slightly tacky to facilitate quick repositioning during strikes",
+    "distinctive_features": [
+      "14-element micro-transducer array visible as precision-drilled dimples across the 3cm striking surface",
+      "Recessed grip-base dial (copper-toned ring, labeled 1-3 in ultra-thin lettering for pain/vertigo/structural modes)",
+      "Tapered shaft with slight swelling toward striking end to house transducer power distribution",
+      "Helix Biosystems logo (interlocking DNA-like helix) stamped into grip collar",
+      "Small amber LED positioned in grip collar base (indicates power cell status—green when charged, amber when depleted)",
+      "Minimal air vents along grip shaft to manage heat dissipation during extended use"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS embossed on grip collar in clean sans-serif. Serial number etched into grip base beneath recessed dial. Faint regulatory licensing stamp on lower shaft (barely visible without close inspection).",
+    "condition_typical": "Well-maintained and field-ready. Polymer shows minimal scuffing; transducer array kept immaculate for optimal contact transmission. Operated by trained security personnel rather than street users, so cosmetic condition usually exceeds functional condition indicators."
+  },
+  "image_prompt": "Product photograph of the Ossic Resonance Baton ORB-3 'Earbreaker,' laid diagonally across a brushed steel surface, gripped by a gloved hand in tactical black. Dramatic side-lighting emphasizing the matte gunmetal polymer shaft and the precision micro-transducer dimples on the striking end. Close-up detail of the recessed tuning dial visible at grip base. Shallow depth of field with blurred cyberpunk cityscape (neon signs, rain-slicked surfaces) in background. Cold color grading with hints of amber from power indicator. Helix Biosystems watermark subtle in corner. Cinematic, sterile, authoritative. --ar 3:2 --v 6"
 }

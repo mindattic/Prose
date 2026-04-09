@@ -37,5 +37,34 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "GLMZ",
+    "KESSLER KINETICS VectorStrike Digi Sprint Mk4",
+    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
+    "Street Custom 'Rosary' Bead Garrote",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A worn wooden crucifix approximately 30cm tall, traditional Christian iconography with darkened brass accents. At first glance, indistinguishable from a devotional object found in any GLMZ chapel or home shrine. The corpus figure shows careful hand-carving; the crossbeam and vertical post exhibit subtle reinforcement beneath aged finish. Weight distribution feels deliberately unbalanced—heavier toward the base than authentic religious pieces.",
+    "dimensions": "Height: 28-32cm | Width: 16-18cm | Depth: 2-3cm | Hidden blade cavity: 12-15cm length, recessed 0.8cm into crossbeam",
+    "weight_description": "Deceptively heavy for its size—approximately 800-1100 grams. Feels substantial in palm, not fragile like museum pieces. The weight settles unnaturally low, suggesting concealed material. A trained hand recognizes the density is wrong.",
+    "primary_material": "Outer: aged oak or reclaimed wood (darkened with stain). Inner reinforcement: steel leaf spring or surgical steel blade folded into crossbeam cavity. Brass ferrule and mounting hardware show legitimate patina.",
+    "finish": "Weathered natural wood with dark walnut stain. Brass accents exhibit genuine verdigris and oxidation. Carved corpus shows hand-tool marks consistent with street craftwork—not machine-precise. Surface appears genuinely aged, with micro-scratches and lacquer wear from years of devotional handling.",
+    "color_scheme": "Deep brown-black wood body | Oxidized green-brass accents | Pale bone or resin corpus figure | Hidden steel blade reveals dull gunmetal when deployed",
+    "grip_texture": "Smooth worn wood, slightly tacky from years of handling oils and incense residue. The vertical post tapers slightly for palm grip. Brass cross-guard provides texture break. No intentional grip enhancement—authenticity maintained.",
+    "distinctive_features": [
+      "Hairline seam running along one side of crossbeam where blade cavity is sealed",
+      "Slightly off-center weight distribution—base-heavy",
+      "Brass mounting hardware shows file marks from field modification",
+      "Corpus figure's hands positioned to obscure blade release mechanism",
+      "Faint prayer inscriptions etched into rear face—genuine devotional text or camouflage unclear",
+      "Small brass hinge concealed within right arm socket—hint of mechanical integration",
+      "Scent of old incense permanently absorbed into wood grain",
+      "Minor burn marks on base suggesting use in actual religious ceremonies"
+    ],
+    "manufacturer_markings": "No corporate branding. Hand-carved initials or prayer abbreviations on rear: possibly 'S.S.' (Street Smith) or religious notation in Aramaic/Latin. Unmarked to maintain plausible deniability as authentic artifact.",
+    "condition_typical": "Field-worn but meticulously maintained. Shows genuine age patina but no obvious damage. The contradiction—too pristine to be truly centuries old, too weathered to be new—creates uncanny valley effect. Scratches appear from actual use in religious practice, not combat. Some examples show deliberate scuff-marks added during fabrication to increase authenticity."
+  },
+  "image_prompt": "Product photograph of a wooden crucifix lying on dark velvet, angled 45 degrees to show subtle crossbeam seam. Dramatic side-lighting from cold LED strips emphasizing wood grain and brass oxidation. Close-up detail shot of concealment hinge mechanism barely visible near corpus figure. Hands: gloved in worn brown leather, holding crucifix with reverent care but positioning reveals suspicious weight distribution. Background: blurred GLMZ chapel interior with stained glass. Color grade: desaturated, cool blue-shadows, warm amber on wood highlights. Style: high-end product photography meeting contraband documentation. Include atmospheric dust particles catching light. Cinematic cyberpunk realism. --ar 3:2 --v 6"
 }

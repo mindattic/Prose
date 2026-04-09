@@ -47,5 +47,25 @@
     "Mika Sorel",
     "O'Hare Sovereign",
     "Saodat Mirzoyan-Fubara"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist wrist-mounted interface that reads as understated corporate tech. Sits flush against the forearm with a subtle presence despite its function—neither bulky nor delicate. The curved face catches light with a soft sheen, suggesting precision engineering.",
+    "fit": "Segmented and adjustable; conforms to standard human wrists and chrome prosthetic limbs alike. Sits snug against the skin or prosthetic surface without restriction, micro-hinge joints allow natural arm flexion.",
+    "primary_material": "Matte-titanium casing with carbon-composite segmented band. Electroluminescent display window with sealed BCI-sync port",
+    "texture": "Brushed titanium surface—smooth but non-reflective, reducing glare. Carbon-composite band has subtle ribbed segmentation beneath the fingers. Port cap has a smooth magnetic friction feel.",
+    "color_scheme": "Matte gunmetal gray-silver with a faint amber electroluminescent glow at the sync port during operation. Display face is dark with soft green/white data feed text and analog clock markings.",
+    "closures": "Magnetic dust cap on BCI-sync port; segmented band self-adjusts via micro-hinge micro-locking system—no traditional clasp needed",
+    "distinctive_features": [
+      "Dual persistent display: analog clock overlay + real-time data scrolling feed",
+      "Flush-mounted BCI-sync port with amber pulse indicator during neural sync",
+      "Ambidextrous design for dominant forearm wear",
+      "Chrome prosthetic compatibility—hinged segments conform to rigid synthetic wrists",
+      "Magnetic dust cap prevents environmental contamination of neural interface",
+      "No visible branding—minimal industrial aesthetic"
+    ],
+    "tier_indicator": "Tier 1-2 luxury; specialized professional equipment. Not street-accessible. Suggests corporate affiliation or high-end independent contractor status.",
+    "cultural_context": "Worn by data analysts, neural-synced specialists, junior corp researchers, and augmented professionals who need tactile biofeedback without full ocular HUD. Signals competence and neural augmentation without ostentatious display.",
+    "condition_typical": "Pristine to lightly worn. Kept clean and maintained; any visible wear would suggest field use (minor scratches on titanium, slight discoloration of dust cap from frequent port access)."
+  },
+  "image_prompt": "Close-up fashion shot of a matte-titanium wrist interface mounted on a cyberpunk model's dominant forearm. The curved electroluminescent face glows faintly with soft amber and green data feed text, analog clock visible. Carbon-composite segmented band conforms perfectly to skin or subtle chrome prosthetic. Moody blue-gray lighting against an urban rooftop backdrop, rain-slicked metal surfaces. Shallow depth of field focusing on the device face. Dark minimalist aesthetic. Shot from wrist-angle perspective showing both the interface and surrounding arm augmentation details. --ar 2:3 --v 6"
 }

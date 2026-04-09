@@ -44,5 +44,40 @@
     "titanium",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions ARC-SL9 'Ghost Protocol'",
+    "Arcturus HW-1 'Goliath'",
+    "Brighton Arc",
+    "Nika Svensson-Kone",
+    "Slagworks Industrial",
+    "The Pure Hand",
+    "The Warden",
+    "Warden",
+    "Waxwing Neuromedia",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A distinctly traditional revolver silhouette with subtle cybernetic integration—compact and purposeful, neither sleek nor angular. The Warden reads as 'old technology elevated' rather than 'new technology disguised.' The cylinder dominates the profile, positioned prominently. Minimal extraneous details; function-forward design.",
+    "dimensions": "Total length: 23.8 cm | Barrel length: 10.2 cm | Cylinder diameter: 4.1 cm | Height at grip: 14.5 cm | Width at frame: 3.2 cm",
+    "weight_description": "Surprisingly balanced despite magnum caliber. Hefty but not unwieldy—1.18 kg settles naturally in the hand with a low, stable center of gravity. Feels engineered rather than crude.",
+    "primary_material": "Forged titanium alloy frame and cylinder; CeraShield-coated barrel; reinforced polymer grip module with embedded haptic feedback nodes",
+    "finish": "CeraShield barrel exhibits a satin gunmetal-grey finish with subtle iridescent heat-stress patterning. Titanium frame in anodized matte charcoal-grey with micro-brushed highlights catching light. Cylinder rotates with precise mechanical resistance—visible wear grooves from firing.",
+    "color_scheme": "Charcoal-grey titanium with gunmetal accents. Grip inlays in tactical black with silver BCI connector interface at the rear.",
+    "grip_texture": "Textured polymer with raised diamond-pattern grip surface for secure purchase even with tactical gloves. Warm to the touch—material absorbs body heat rather than conducting it. Haptic feedback nodes embedded subtly beneath the surface; imperceptible unless actively receiving neural input.",
+    "distinctive_features": [
+      "Integrated BCI neural-link interface—silver contact array recessed into the grip backing, barely visible until examined",
+      "Cylinder features engraved round-count markers (1-6) along the frame interface; small LED indicator beneath frame shows ammunition status (micro-display, active only during neural link)",
+      "Cocking nib (hammer) refined to military precision—distinct audible and tactile feedback with each rotation",
+      "Trigger guard slightly oversize to accommodate neural-integrated trigger mechanism; micro-actuators visible beneath polymer casing",
+      "Hammer safety detent engraved with ARCTURUS logo and serial plate on the left side—minimalist branding",
+      "Muzzle crown exhibits visible stress-polishing from magnum pressures; CeraShield coating shows minor burn marks from heavy field use—expected wear",
+      "Cylinder arbor interface shows precision manufacturing tolerances—no wobble, no rattle",
+      "Rear sight is low-profile with tritium dot (faintly glowing green); front sight is sharp and reduced for BCI overlay compatibility"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS laser-etched in small, precise lettering along the left barrel flat. Serial number and BCI registration code stamped discreetly on the frame beneath the cylinder. ARC-R6 MODEL designation on right side of frame. No chrome plating or ostentatious branding—professional restraint.",
+    "condition_typical": "Field-maintained and well-used. The CeraShield barrel shows burn patterns and minor oxidation from sustained fire; the cylinder exhibits light striations from ammunition rotation. Grip shows minor wear from repeated draw cycles. Everything functions with machined precision—this is a weapon that sees regular use and receives proper maintenance. Not pristine, not battle-scarred; lived-in professional condition."
+  },
+  "image_prompt": "Product photography of a Arcturus Defense Solutions ARC-R6 'Warden' revolver positioned on a dark gunmetal surface, three-quarter view showing the cylinder and BCI grip interface. Dramatic side-lighting from the left highlighting the satin CeraShield barrel and anodized titanium frame. The silver BCI contact array at the grip should catch light subtly. Close-up detail showing the cylinder arbor precision and engraved round-count markers. Cyberpunk aesthetic: dark matte backgrounds, cool color temperature lighting, hints of faint green tritium glow in the sights. Professional tactical photography style—weapon in focus, sharp details on the trigger mechanism and smart-link interface. Worn but meticulously maintained condition. Include a gloved hand (black tactical glove) grasping the grip from below, showing scale and haptic feedback nodules. --ar 3:2 --v 6"
 }

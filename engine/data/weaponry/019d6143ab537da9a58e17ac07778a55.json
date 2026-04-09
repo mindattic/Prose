@@ -62,5 +62,49 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Anatoliy Faye-Nkrumah",
+    "Axiom Systems Cortical Bomb CB-1 'Leash'",
+    "Breck Tannen",
+    "Fanta Kato-Adomako",
+    "Free Assembly",
+    "GLMZ",
+    "Helix Biosystems Synaptic Throttle — 'The Governor'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Neuromorphic Pressure Cestus",
+    "Nodar Kuznetsov-Adu",
+    "Slagworks Industrial",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA PG-2 'Signature'",
+    "The Circuit",
+    "The Filament",
+    "Vantablack BC-1 'Briefcase'",
+    "Vantablack-CNX",
+    "Zheng-Dao Marrow-Pulse Implant",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, insectoid quadcopter suspended by an almost imperceptible thread. The drone's body is compact and angular, with four ducted fan shrouds arranged in an X-pattern. The undercarriage bristles with sensor clusters and a visible filament-projection port. From below, it appears to float in impossible stillness, defying gravity.",
+    "dimensions": "Drone: 62cm rotor span, 18cm fuselage length, 14cm height. Tether: up to 180 meters, 0.3mm diameter (nearly invisible to naked eye). Ground station: 28cm × 22cm × 12cm briefcase form factor.",
+    "weight_description": "The drone feels almost weightless in hover — deliberately engineered for minimal inertia. The ground station is deceptively dense; its 4.2kg mass is concentrated in a compact package designed to be shouldered or mounted to a vehicle hardpoint. The monofilament tether is imperceptible in hand until tension is applied.",
+    "primary_material": "Drone frame: carbon-fiber composite with titanium motor mounts. Ducted fans: reinforced polymer composites. Tether: tungsten-carbon composite monofilament. Ground station chassis: magnesium alloy with embedded power capacitor arrays. Heat-dissipation fins visible on station exterior.",
+    "finish": "Drone body: matte gunmetal gray with slight iridescent sheen from carbon weave. Sensor housings: matte black polymer with faint blue accent lighting around optical arrays. Ducted fans: brushed aluminum with faint scorch marks from electrothermal discharge bleed. Ground station: weathered bare magnesium with oxidation patina, scuffed polymer control surfaces. Tether barely visible unless backlit.",
+    "color_scheme": "Gunmetal gray primary, matte black accents, faint electric blue indicator rings around sensor clusters. Station uses industrial safety yellow on control edges. Worn natural metal tones where finish is compromised.",
+    "grip_texture": "Ground station control surfaces: rubberized polymer with subtle grip ridges. The handheld interface dial is knurled steel. All touch points are designed for operation with augmented fingers or gloved hands.",
+    "distinctive_features": [
+      "Nearly invisible monofilament tether visible only in strong backlight or when dripping water",
+      "Four counter-rotating ducted fans in X-configuration with minimal acoustic signature",
+      "Undercarriage filament-projection port — a small triangular aperture with faint carbon scoring",
+      "Thermal sensor cluster mounted forward; small red indicator lens",
+      "Blue LED pulse indicators on drone body that strobe during charge cycles",
+      "Ground station cooling fins dissipating waste heat in visible warping patterns",
+      "Wear marks on station from field deployment and cable routing",
+      "Faint corona discharge marks visible on tether connection points under magnification"
+    ],
+    "manufacturer_markings": "Zheng-Dao Bioelectric hexagonal logo etched into ground station chassis near power input; serial plate on drone fuselage reads in Hanzi and English; 'TORSD-7' stamped on control interface. Black market Barefoot variants have markings filed or obscured.",
+    "condition_typical": "Military/contract units are immaculately maintained with fresh finishes and tight tolerances. Field-deployed units show carbon scoring from filament discharge, minor warping on station heat sinks, and scuffed control surfaces. Black market Barefoot variants display heavy wear, improvised repairs, corrosion, and crude modifications to tether anchor points."
+  },
+  "image_prompt": "Product photography of a TORSD-7 Kitestring tethered drone system photographed against matte black background. Foreground: the briefcase-sized ground station with exposed magnesium chassis and cooling fins, weathered from field use, with its handheld control interface mounted atop. Mid-ground: the tether rises almost invisibly from the station, backlit by dramatic side-lighting to catch its monofilament structure. Background: the insectoid quadcopter hovering in sharp focus, matte gunmetal gray with four ducted fans, blue indicator LEDs active, sensor cluster visible on undercarriage. Lighting: cold-white sidelighting emphasizing the tether's presence, warm amber glow from station capacitor arrays. Cyberpunk aesthetic: utilitarian military hardware, visible wear and deployed condition, minimal ornamentation. Shot from 45-degree angle. Include faint electrical corona glow around tether anchor points. --ar 3:2 --v 6"
 }

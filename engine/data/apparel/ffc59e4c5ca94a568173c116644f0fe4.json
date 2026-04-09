@@ -38,5 +38,27 @@
     "Ouroboros Energy",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A tailored single-breasted jacket with refined geometry and architectural intention. The silhouette reads corporate—structured shoulders, clean lines—but the chrome-display panels along the left lapel and cuffs create a deliberate visual interrupt: polished composite frames that showcase the visible edge of an augmented forearm or wrist implant as intentional hardware architecture rather than concealed enhancement. The effect is confident, calculated, and distinctly Tier 3-4 corporate.",
+    "fit": "Precision-tailored to corporate standard. Slim through the torso, allowing for layering or direct wear. Open channels run along both inner forearms to accommodate augment housings without binding. The reinforced collar stay is engineered to seat a cervical BCI without bunching or distortion. Cut to move with augmented limbs—fabric drapes around integrated hardware with engineered slack.",
+    "primary_material": "High-thread-count polysilk blend with self-correcting weave. The base is a refined synthetic-natural hybrid that resists wrinkling for up to 72 hours under normal corporate use. Chrome-display panels are polished composite strip-framing—not pure chrome, but composite engineered to catch light with architectural precision.",
+    "texture": "Smooth, almost liquid drape to the polysilk. The weave has a subtle luminescence under indoor lighting—the self-correcting technology creates a faint shimmer when the fabric moves. Chrome panels are mirror-polish, contrasting sharply with the matte finish of the surrounding textile. At close range, the seams along augment channels show reinforced stitching in tonal thread.",
+    "color_scheme": "Conservative corporate palette: charcoal grey, deep navy, or black as base. The chrome-display panels read as silver-mirror in standard lighting. Subtle tonal stitching (matching or one shade lighter than base). No pattern—the augment display *is* the pattern. Optional shirt layering in white, pearl grey, or deep teal.",
+    "closures": "Magnetic snap buttons disguised as traditional tailored buttons. The snaps are seamless—designed to release smoothly without catching on augment housing. Interior closure runs magnetic for reliability and silent operation.",
+    "distinctive_features": [
+      "Chrome-display panels framing visible augment edges on left lapel and both cuffs",
+      "Open forearm channels engineered for augment accommodation",
+      "Reinforced collar stay designed to seat cervical BCI housing without bunching",
+      "Self-correcting polysilk weave resists wrinkling for 72 hours",
+      "Magnetic snap closures disguised as tailored buttons",
+      "Architectural precision in proportions—every measurement intentional",
+      "Interior augment-access channels with reinforced stitching",
+      "Ouroboros subsidiary branding (subtle, interior pocket)"
+    ],
+    "tier_indicator": "Tier 3-4 formal wear. The price point is Tier 3 accessibility but the confidence it projects signals Tier 2-3 executive positioning. Wearing this suit means you can afford to display your augments correctly.",
+    "cultural_context": "The Stratum Executive suit is the default formal uniform of Ouroboros executive floors and appears at inter-corponation negotiation sessions, Arcturus contractor reviews, and Lazarus board presentations. The chrome-display aesthetic originated in Arcturus defense culture (where augmentation is always visible and functional) and was translated into corporate formal language by Stratum Clothiers. Wearing this suit signals: augmented, unashamed, and competent enough to afford the framing. In Tier 4 formal contexts, executives who hide their chrome in cheaper suits are read as either embarrassed or unable to afford the intentional display.",
+    "condition_typical": "Pristine on first wear, remaining crisp for 72 hours due to self-correcting weave. With regular care, shows minimal wrinkling or wear at stress points. Chrome panels maintain mirror-polish under normal maintenance. The augment channels show no visible strain or fraying—engineered for durability. Over extended use, the fabric develops a subtle patina, the weave settles into the body's contours, and the chrome panels may require occasional re-polish, but the suit maintains executive presentation indefinitely."
+  },
+  "image_prompt": "A sleek corporate executive in a charcoal Stratum Executive Augment-Display suit stands against a darkened floor-to-ceiling window overlooking the GLMZ skyline at dusk. Left arm extended to show the polished chrome-display panel framing a visible forearm implant housing—the chrome catches the ambient light from downtown corporate towers. The jacket is tailored with precise geometry, magnetic buttons catching highlights. Interior BCI cervical housing visible at the collar, framed by reinforced stay without bunching. The polysilk blend has subtle luminescence. Moody gel lighting: cool blue and steel grey. The augment is displayed as architectural credential, not concealment. Shot from a three-quarter angle emphasizing the left lapel chrome framing. Dark minimal background with subtle corpo-tower bokeh. --ar 2:3 --v 6"
 }

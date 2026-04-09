@@ -36,5 +36,25 @@
   "related_entities": [
     "NeuralPath VaultPay Subdermal Transaction Node",
     "The Pure Hand"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Form-fitting medical gloves that hug the hand like a second skin, with visible graduated compression zones running from wrist to fingertips. Sleek, clinical aesthetic with subtle tech-forward details. Sits between functional prosthetic and high-end wellness wear.",
+    "fit": "Compression-fitted throughout, contoured to individual finger anatomy. Snug at wrist with graduated release toward fingertips. Allows full range of motion despite tight profile.",
+    "primary_material": "Smart-responsive synth-polymer blend with embedded sensor threads; outer layer is breathable medical-grade elastane composite with moisture-wicking properties",
+    "texture": "Smooth, almost liquid-like surface with subtle ribbed compression channels running lengthwise. Warm to touch. Micro-perforations visible under close inspection for thermal regulation.",
+    "color_scheme": "Gunmetal gray primary with bioluminescent pressure-indicator striping along knuckles and finger joints (faint blue-green glow that intensifies with swelling). Matte finish with satin accent piping at wrist cuff.",
+    "closures": "Magnetic closure system at wrist; friction-fit design requires careful donning but ensures no pressure points",
+    "distinctive_features": [
+      "Embedded biometric sensors at palm and finger joints",
+      "Real-time compression adjustment visible via subtle LED accent lines",
+      "Reinforced knuckle and thumb-opposition zones",
+      "Solace Medical embossed logo on back of hand in raised tactile print",
+      "Micro-ventilation channels along inner palm",
+      "Smart-fabric memory: adapts compression profile to individual hand geometry over first week of wear"
+    ],
+    "tier_indicator": "Tier 2-3 crossover: affordable medical-grade tech, not luxury but premium functional. Accessible to working-class augmentation patients and aging laborers through corpo health plans or sub-market resale.",
+    "cultural_context": "Worn by factory workers, dock laborers, surgical patients, augmentation-integration patients managing rejection. Signals resilience, chronic pain management, continued economic participation despite bodily deterioration. Street credibility among those who refuse to stop working.",
+    "condition_typical": "Broken-in and well-used; compression zones show slight discoloration from sweat and wear. Bioluminescent striping may flicker inconsistently in heavily-used units. Often patched at knuckles or reinforced with additional wrapping. Rarely pristine."
+  },
+  "image_prompt": "Close-up fashion photography of Solace Medical Compression Therapy Gloves on weathered, augmented hands of a middle-aged worker. Hands positioned flat on dark industrial surface, showing graduated compression zones and faint bioluminescent blue-green accent striping along knuckles glowing softly. Gunmetal gray synth-material with visible micro-ventilation channels. Harsh overhead lighting casting dramatic shadows, cyberpunk clinic aesthetic. Background: blurred chrome and concrete factory wall. Model's hands show signs of wear—visible scars, pale skin tone contrasting against glove material. Moody, clinical, documentary-style. Shot at macro depth to emphasize sensor threading and compression ribbing texture. --ar 2:3 --v 6"
 }

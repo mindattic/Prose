@@ -40,5 +40,25 @@
     "Eshe Pena-Baah",
     "Ringo DV-4 'Courier'",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Aggressive, utilitarian silhouette with a pronounced mid-calf cut. Angular buckle straps across the ankle create visual tension and promise grip. The scuffed leather reads as earned rather than affected—a boot that's been through something. Low stacked heel keeps the wearer grounded and ready to move. Overall impression: functional elegance with street credibility.",
+    "fit": "Snug through the ankle with compression-style buckle straps that customize the fit. Mid-calf shaft sits just below the knee when worn, allowing flex at the joint. Toe box is reinforced but not bulbous—accommodates augmented feet without excessive material.",
+    "primary_material": "Scuffed synthetic leather (ballistic-grade treatment) with oil-resistant elastomer sole. Buckle hardware appears to be brushed steel or anodized aluminum.",
+    "texture": "Leather surface is deliberately worn—small creases, scuff marks, and micro-abrasions visible across the vamp and heel counter. Sole has deep lug pattern for traction on wet urban surfaces. Straps have a smoother, more finished texture than the boot body.",
+    "color_scheme": "Primary: deep black or storm grey with optional oxblood variant featuring uneven fade at the toe (deliberate wear pattern or material degradation). Buckles and hardware in muted silver or gunmetal.",
+    "closures": "Two adjustable buckle straps—one across the ankle, one across the instep. Friction-fit around the calf with no additional closures. Straps are wide enough to feel secure but not cumbersome.",
+    "distinctive_features": [
+      "Double buckle strap system (ankle + instep)",
+      "Reinforced synthetic leather toe cap with visible stitching",
+      "Oil-resistant lug sole with deep tread pattern",
+      "Uneven fade/wear on oxblood variant suggesting authentic use",
+      "Low stacked heel (1-inch) for extended standing",
+      "Scuffed finish throughout—no mirror shine or pristine treatment"
+    ],
+    "tier_indicator": "Tier 2 luxury with Tier 3 accessibility. Premium material and engineering justify the price, but the worn aesthetic appeals to working-class riders and couriers who need authenticity over flash.",
+    "cultural_context": "Courier culture, motorcycle subculture, transit workers, and corpo field operatives who need to move fast and look capable. The boot signals: I work for a living, I know my way around the city, I don't have time for unnecessary decoration.",
+    "condition_typical": "Worn and broken-in immediately. The scuffed leather is factory-finished to look lived-in. Owners expect the boot to accumulate more marks, creases, and character over time. Patina is encouraged."
+  },
+  "image_prompt": "Close-up fashion photography of black Valkres Moto-Hitch boots on a dark-skinned model with visible augmented chrome ankle joint, standing in a wet courier station with neon blue and amber ambient lighting. Boot buckle straps in sharp focus, scuffed leather catching harsh light. Dark concrete floor with oil stains, overhead industrial scaffolding visible but out of focus. Moody, atmospheric, gritty cyberpunk courier aesthetic. Shot from low angle emphasizing the boot's aggressive profile and traction sole. --ar 2:3 --v 6"
 }

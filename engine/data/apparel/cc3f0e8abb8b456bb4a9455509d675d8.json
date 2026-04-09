@@ -38,5 +38,26 @@
     "Ngaire Arai-Ofori-Atta",
     "O'Hare Sovereign",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian, broad-shouldered silhouette with visible reinforcement geometry. The suit reads as industrial-grade protective wear—imposing but not militarized. Ceramic composite panels catch light along the shoulders, elbows, and knees, creating a patchwork of matte and subtle sheen. The overall impression is of worn competence: something that's saved lives and borne the scars of honest labor.",
+    "fit": "Intentionally relaxed and wide through the chest, shoulders, and hips to accommodate both natural frame variance and cybernetic augmentations. The cut allows full overhead mobility for crane work and container handling. Tapered at the wrists and ankles for secure closure without binding.",
+    "primary_material": "Heavy ballistic nylon shell (450+ denier) in charcoal gray-black. Lead-bismuth microfiber radiation-shielding liner visible at the torso and upper arm seams.",
+    "texture": "The ballistic nylon is slightly stiff and weathered, with a subtle grid weave visible under harsh light. Ceramic composite panels have a matte, slightly granular finish. The microfiber lining shows a fine ribbed texture where exposed at cuffs and collar.",
+    "color_scheme": "Charcoal-black primary with slate-gray ceramic panels. Faded silver accent stitching along seams. High-visibility orange binding at wrist rad-counter ports and anchor loop edges. Weathered patina suggests years of salt spray and dock work.",
+    "closures": "Heavy-duty YKK zipper running center-front. Magnetic snap collar. Friction-fit wrist cuffs with adjustable microfiber velcro. Rear zip tail gusset for full squat mobility.",
+    "distinctive_features": [
+      "Integrated wrist-mounted rad-counter ports on both sleeves (flush sensor arrays)",
+      "Anchor loop attachment points along belt line rated for tether systems",
+      "Ceramic-composite reinforcement panels at high-impact zones (shoulders, elbows, knees) in contrasting matte finish",
+      "Rear zip tail gusset for cargo work mobility",
+      "Lead-bismuth microfiber lining visible at seams—functional and visible proof of radiation shielding",
+      "Port Authority supply division stamp (faded) on left chest pocket",
+      "Subtle wear patterns: salt-stained cuffs, abraded ceramic panels, frayed anchor loop stitching"
+    ],
+    "tier_indicator": "Tier 2-3 functional. The suit is neither disposable salvage nor corporate luxury—it's issue gear for workers who matter enough to protect, but not enough to replace easily.",
+    "cultural_context": "Worn by lower dock workers in the irradiated Great Lakes freight zones. This suit is a visible badge of earned hazard pay and cumulative exposure. A wearer is trusted with dangerous work, marked as competent and expendable in equal measure. The suit reads as: 'I handle what others won't, and I've got the radiation scars to prove it.'",
+    "condition_typical": "Broken-in and weathered. Ceramic panels show stress fractures and scuffing. Salt spray has bleached sections of the nylon. Stitching at anchor loops is frayed from repetitive tether attachment. The wearer accepts patina as proof of use."
+  },
+  "image_prompt": "A weathered dock worker wearing a heavy charcoal ballistic nylon cargo handler suit, standing in harsh port lighting. The suit's ceramic composite shoulder and elbow panels catch white overhead light, creating geometric shadows. Visible stitching at the wrist rad-counter ports glows faint orange. The worker's posture is grounded and confident—one hand resting on an anchor loop. The background is a dark Great Lakes dock at dusk: shipping containers stacked, water-damaged metal infrastructure, ambient industrial neon reflected in puddles. Cinematic, gritty, documentary-style cyberpunk. --ar 2:3 --v 6"
 }

@@ -38,5 +38,35 @@
     "everyday_carry",
     "keychain"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Cezar Watanabe-Gyasi",
+    "GLMZ",
+    "Glenville Sound",
+    "Kang-Petrov Arms KPM-6 'Equalizer'",
+    "LifeWire TrueNorth Subdermal Navigation Core",
+    "Nnenna Boateng-Szymański",
+    "SentryGuard PepperShot PS-1 'Sting'",
+    "Vespid Dynamics Neural Feedback Dart NFD-2 'Scream'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, oblong personal alarm resembling a small rounded rectangle—something between a lighter and a car key fob. Its diminutive size belies its acoustic violence. Designed to be instantly graspable and deployable, it sits in a palm like a worry stone but with purpose-built aggression.",
+    "dimensions": "4 cm length × 2.5 cm width × 1.5 cm depth. Small enough to clip to a keychain or slip into a jacket pocket unnoticed.",
+    "weight_description": "Deceptively light at 22 grams—nearly weightless in hand, giving it an almost disposable feel despite its serious function. The lightness makes it easy to carry constantly without fatigue or bulk.",
+    "primary_material": "High-impact ABS polymer composite shell housing an internal piezoelectric emitter assembly and coin-cell battery compartment.",
+    "finish": "Matte polymer surface with a slight grip-optimized texture. Impact-resistant but showing micro-scratches and scuff marks from daily keychain abrasion and pocket carry. Some units display wear patterns around the pull-pin mechanism from repeated practice activations.",
+    "color_scheme": "Safety-orange primary body with black accent bands framing the piezoelectric emitter port. The contrast serves dual function: visibility in dimly-lit urban environments and instant recognition of its purpose.",
+    "grip_texture": "Slightly textured ABS with micro-ribbing designed for secure grip even when wet or gloved. The pull-pin mechanism is knurled stainless steel, providing positive tactile feedback during draw.",
+    "distinctive_features": [
+      "Protruding stainless-steel pull-pin with a textured ring head—visible and immediately graspable in high-stress situations",
+      "Circular recessed port on one end marking the piezoelectric emitter outlet",
+      "Small battery indicator LED (dim red when inactive, bright when recently deployed)",
+      "Micro-serrated edge around the emitter port to prevent accidental muffling if palm-cupped during activation",
+      "Molded safety warnings and frequency specifications in white text on the orange body",
+      "Slight manufacturing seam lines visible along the shell, typical of mass-production cost optimization"
+    ],
+    "manufacturer_markings": "HARBORTECH CONSUMER ELECTRONICS stamped in a recessed oval on the flat face. Serial number engraved beneath the battery access panel (rarely visible without disassembly). 'SS-1 BANSHEE' printed in block letters below the manufacturer name. Small compliance symbols indicating unrestricted sale in GLMZ.",
+    "condition_typical": "Most field units show moderate wear—the orange polymer faded to burnt amber from UV exposure and pocket heat. The pull-pin mechanism remains bright despite handling. Battery compartment may show corrosion patterns if left in humid environments. Units carried by Tier 2-3 residents often show nicks from contact with keys and loose change. Tier 1 devices are typically pristine."
+  },
+  "image_prompt": "Product photography of the HarborTech SafeScream SS-1 Banshee personal alarm: a small burnt-orange and black ABS polymer keychain device photographed against a dark brushed-steel surface, side-lit with dramatic cyan and orange gels creating harsh cyberpunk shadows. Close-up detail showing the protruding stainless-steel pull-pin with its textured ring head, the recessed piezoelectric emitter port, and worn micro-scratches on the matte polymer surface. Secondary shot shows the device being held between thumb and forefinger in a black nitrile-gloved hand, pull-pin clearly visible and ready for deployment. Moody lighting emphasizes the safety-orange color as a point of visual interest against shadow. High-contrast, clinical product photography style with shallow depth of field focusing on the emitter port. Include subtle motion blur suggesting kinetic deployment. Cyberpunk aesthetic with slight grain and color grading toward cool/warm contrast. --ar 3:2 --v 6"
 }

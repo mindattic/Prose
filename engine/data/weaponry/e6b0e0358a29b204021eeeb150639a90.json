@@ -41,5 +41,39 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Alper Lebedev-Tutu",
+    "Carrion Defense Works Autonomous Perimeter Defense Ecosystem",
+    "Crucible Industries CT-X 'Gauntlet'",
+    "GLMZ",
+    "Iowan Behemoth — 'Thunderhead'",
+    "Nika Svensson-Kone",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "Vantablack PA-1 'Pacifier'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, angular grenade launcher with a distinctly Chinese industrial aesthetic. The Thunderhead presents as a compact, muscular system dominated by a revolving cylinder drum mounted horizontally beneath a short, flared barrel. The overall silhouette suggests controlled violence — minimalist, purposeful, with no wasted geometry. The weapon sits low in the hand, betraying its support-weapon classification through sheer mechanical confidence.",
+    "dimensions": "Overall length: 68 cm. Barrel length: 22 cm. Cylinder diameter: 8 cm. Width across cylinder: 12 cm at widest point. Height from grip to top rail: 16 cm.",
+    "weight_description": "Hefty and substantial — 6.8 kg loaded feels like genuine heft in the shoulder, but the weight distribution is forward-biased toward the cylinder, making it feel balanced rather than nose-heavy. The gun demands respect and deliberate movement.",
+    "primary_material": "Reinforced titanium-steel alloy frame with polymer composite furniture. The cylinder is precision-machined steel with visible chamber walls. Rail systems are hardened steel.",
+    "finish": "Matte gunmetal gray with strategic brushed-steel accents on the cylinder and breech face. The polymer handguard and grip are textured anthracite with subtle iridescent wear marks suggesting field use. Exposed mechanical surfaces show micro-weathering consistent with field maintenance.",
+    "color_scheme": "Primary: gunmetal gray with charcoal undertones. Accents: brushed steel (cylinder faces, breech), anthracite polymer (grips, handguard). Minimal branding in white stencil. BCI interface panel features faint cyan luminescence in the charging handle area.",
+    "grip_texture": "The pistol grip is deeply textured thermoplastic polymer with aggressive radial ribbing — designed for tactical gloves. The handguard is wrapped in a thin, bonded rubber coating with directional grip patterns. The charging handle is knurled steel with a subtle curve.",
+    "distinctive_features": [
+      "Six visible, individual breech-loading chambers in the revolving cylinder — each can be independently toggled open",
+      "A sleek charging handle integrated into the right side of the receiver, with subtle detent notches",
+      "Integrated BCI interface: a small hexagonal panel on the left rail with recessed touch-points and faint cyan LED indicators (orange when armed, cyan when standby)",
+      "A short, flared muzzle brake with four symmetrical ports, designed to manage recoil from airburst rounds",
+      "Picatinny rail on top and bottom for mounting optics, fire-control modules, or sensor packages",
+      "Heat vents cut into the front of the handguard in a radiating chevron pattern",
+      "Mechanical round-counter dial on the cylinder body, marking each of the six positions",
+      "A manual safety lever integrated into the trigger guard, marked with Chinese characters and Φ currency symbol (indicating military contract origin)"
+    ],
+    "manufacturer_markings": "ZHENG-DAO HEAVY INDUSTRIES embossed in small white stencil on the left side of the receiver, just forward of the trigger guard. A serial plate (brushed aluminum) is affixed above the magazine well. The left rail bears laser-etched manufacturing date and batch code. Military contract stamps appear on the cylinder body.",
+    "condition_typical": "Well-maintained and field-proven. The matte finish shows subtle micro-scratches consistent with tactical deployment — no deep gouges, indicating careful handling by trained operators. The polymer shows faint discoloration from sweat and environmental exposure. All mechanical systems appear tight and precise. This is a weapon that has seen use but is meticulously maintained between operations."
+  },
+  "image_prompt": "Product photography of the Zheng-Dao Thunderhead ZD-20 'Cloudburst' grenade launcher. The weapon rests on a matte black titanium surface, positioned at a slight three-quarter angle to showcase the revolving cylinder and flared muzzle. A gloved hand (tactical black polymer glove, fingers extended) grips the weapon from the right, with the trigger finger positioned outside the guard. Dramatic side-lighting from the left casts the cylinder and breech in sharp relief, revealing the brushed-steel chamber faces and mechanical precision. The BCI interface panel glows with faint cyan LEDs against the anthracite polymer. Background: deep matte black with subtle geometric grid pattern suggesting a corporate armory or testing facility. Foreground: subtle depth-of-field blur on ammunition rounds (visible 25mm grenade shells in a ammunition block to the left). The lighting emphasizes the industrial brutalism of the design — no softness, all precision and purpose. Cyberpunk aesthetic: cool color temperature, high contrast, metallic sheen on exposed steel surfaces, subtle chromatic aberration on the edges. 35mm equivalent lens focal length. --ar 3:2 --v 6"
 }

@@ -56,5 +56,29 @@
     "ShieldTech SB-3 'Groundstrike'",
     "Sulfur Crown Agriculture",
     "Synaptrel"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian full-body coverall silhouette designed for underground infrastructure work. The charcoal grey base is broken by safety-orange shoulder yokes and sleeve stripes, with retroreflective tape creating a linear visual grid down the legs and across the upper back. Worn appearance with visible staining and patched repairs. The overall impression is practical, hardened, distinctly working-class—a person built for descending into the dark.",
+    "fit": "Relaxed, functional fit throughout the torso and legs; designed to accommodate layering and augmentation. Reinforced articulation points at elbows and knees. Sleeves and pant legs cut long enough to clear wrist and ankle augmentation hardware. The triple-snap aug-channel seams at forearms and upper back create visible panel lines.",
+    "primary_material": "Heavy-duty synth-cotton blend with ballistic-weave reinforcement panels at high-stress points (shoulders, elbows, knees). Neoprene neck balaclava. Chemical-resistant insulated work boots with steel midsole.",
+    "texture": "Tough, slightly rough weave with visible wear patterns. Retroreflective tape has a subtle ridged surface. Seams are triple-stitched and raised. The balaclava is soft against skin but durable. Boots show scuff marks and chemical discoloration typical of corridor work.",
+    "color_scheme": "Charcoal grey base with safety-orange shoulder yokes, sleeve stripes, and hard hat. White stenciled Ironpass logo on back panel. Black neoprene balaclava. Retroreflective silver-grey tape. Visible stains in amber, brown, and rust tones from sealant and corrosion work.",
+    "closures": "Triple magnetic snaps on aug-channel panels (forearms, upper back). Standard two-way zipper running chest-to-crotch. Elastic cuff closures at wrists and ankles. Buckle straps on boots.",
+    "distinctive_features": [
+      "Detachable tool loop panel on left thigh with nylon grid holding crew-specific tools",
+      "Integrated LED work light on articulated arm mounted to hard hat",
+      "Ironpass Infrastructure Services logo stenciled on back panel",
+      "Sewn name patch and crew number tag on chest",
+      "Retroreflective tape running outer leg seams and upper back",
+      "Wide BCI port gap in balaclava allowing neural interface access",
+      "Visible repair patches in slightly-mismatched charcoal grey",
+      "Detachable personal light clip-ons (secondary headlamp, chem-glow identifier)",
+      "Chemical-resistant sole on boots",
+      "Sealant stains and scorch marks from active use"
+    ],
+    "tier_indicator": "Tier 3–4 functional working-class. Corpo-issued (Ironpass Infrastructure Services), but plainly utilitarian. The kit's durability and safety features mark it as legitimate infrastructure work, not sub-grade salvage.",
+    "cultural_context": "M88 transit corridor maintenance crew. The wearer is part of the nocturnal infrastructure caste—essential, underpaid, and largely invisible to daytime city dwellers. Wearing this openly signals you descend into the deep systems. Augmentation mods and third-party port upgrades are common among crew members, marking adaptation to harsh working conditions.",
+    "condition_typical": "Broken-in to heavily worn. Stains, scorch marks, and patch repairs are the norm rather than exception. The retroreflective tape may be degraded or peeling. The balaclava shows repeated use. Boots are salt-stained and chemically scarred. A crew member's personal light and any aftermarket neural upgrades are added details."
+  },
+  "image_prompt": "A weathered maintenance worker in full Ironpass night crew kit stands in a dark urban tunnel environment, charcoal grey coverall with bright safety-orange shoulders and leg tape, hard hat with integrated LED light casting sharp shadows. The balaclava covers the lower face, leaving only eyes visible. Tool panel on thigh is laden with equipment and a secondary light clip. Visible stains and repair patches on the coverall. Steel-toed boots planted firmly on wet corridor floor. Moody cyan and amber tunnel lighting, reflected off wet concrete. Dystopian infrastructure backdrop—pipes, conduits, and cable runs visible overhead. The figure embodies hard labor in a cyberpunk megacity. Professional fashion photography, sharp focus on garment details. --ar 2:3 --v 6"
 }

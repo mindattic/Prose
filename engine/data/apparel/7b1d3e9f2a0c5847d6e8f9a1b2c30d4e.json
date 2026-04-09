@@ -52,5 +52,25 @@
     "The Filament",
     "Vantablack VS-3 'Skin Job'",
     "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting second-skin bodysuit that clings to the wearer like a living organism. The matte black base creates a void-like silhouette punctuated by rivers of light that pulse and bloom across the chest, shoulders, and limbs. When dormant, it appears as pure shadow; when activated by bass or BCI input, it transforms into a kinetic light show. The optional hood adds a halo effect, framing the face in soft, diffused luminescence.",
+    "fit": "Compression fit — second-skin tight, contoured to every muscle and curve without restriction. Ergonomic stretch allows full range of motion for dancing and movement. Seams are nearly invisible except at functional access points.",
+    "primary_material": "Matte black synthmesh threaded with 4,000 micro-LED filaments. Smart-responsive polymer blend with embedded bioelectric sensors and BCI compatibility.",
+    "texture": "Smooth, almost liquid-looking matte finish to the naked eye. Up close, barely perceptible grid of micro-LEDs creates subtle texture. Fabric feels cool and slightly stretchy, with a membrane-like quality.",
+    "color_scheme": "Base: deep matte black. Active colors: magenta and electric teal (bass response), white-gold (excitement/peaks), white (drop peaks), deep violet (calm state). Colors bloom and cascade dynamically.",
+    "closures": "Magnetic snaps (hood attachment only). Otherwise seamless with friction-fit at wrists and ankles. No traditional closures — entire suit is pull-on.",
+    "distinctive_features": [
+      "4,000 embedded micro-LED filaments responding to bass frequencies and ambient sound",
+      "BCI stress-signal integration for color-temperature shifts based on wearer's emotional state",
+      "Invisible seams except at spine and forearm aug-access panels",
+      "Optional magnetically-snapped hood with secondary reactive light layer",
+      "Sternum-bloom pattern for low-register frequency response",
+      "Diffused halo effect around face when hood is attached"
+    ],
+    "tier_indicator": "Tier 3-4 aspirational. Street-level luxury — expensive enough to signal cultural capital and tech access, affordable to underground circuit regulars through payment plans or black-market resale.",
+    "cultural_context": "Rave culture, underground music circuits, Circuit district street fashion. Signals BCI augmentation, sound-frequency affinity, youth subculture participation, and embrace of body-as-display technology. Wearer is plugged into the sensory-immersion scene.",
+    "condition_typical": "Pristine when new; develops micro-scuffs and worn patches at pressure points (elbows, knees, sternum) with heavy use. LED filaments remain bright even after months of wear. Hood attachment points may show magnetic wear."
+  },
+  "image_prompt": "Fashion photography: Voltex PulseFlesh rave bodysuit on an androgynous cyberpunk model with visible wrist augmentations and glowing iris implants. The suit is dormant—deep matte black—except for subtle magenta and teal LED pulses blooming across the chest in rhythm with distant bass. Hood is magnetically snapped, creating a soft diffused halo around the model's face. Background: dark underground rave venue with distant neon signs reflecting off wet pavement, moody purple and cyan ambient lighting. Close-up detail shot of seams and forearm aug-access panel visible. Model posed dynamically, mid-movement, as if dancing. Cinematic, high-contrast, cyberpunk aesthetic, humid underground club atmosphere. --ar 2:3 --v 6"
 }

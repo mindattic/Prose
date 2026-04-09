@@ -41,5 +41,25 @@
     "Cezar Watanabe-Gyasi",
     "The Ghost Ronin",
     "The United Workers Front"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A structured six-panel cap with military-utilitarian precision. The silhouette is crisp and formal—a stark contrast to street fashion. The retro-reflective stripe above the brim catches light in harsh, clinical angles. Worn by security personnel, traffic wardens, and low-tier corporate enforcers. Projects authority without wealth.",
+    "fit": "Fitted crown with minimal depth, sitting high on the head. Adjustable rear closure for one-size compliance. No slouch or casual drape—designed for visibility and regulation compliance.",
+    "primary_material": "Dark navy 12oz cotton canvas—industrial-grade, treated for stain resistance and UV degradation. Not luxury; built for durability and easy replacement.",
+    "texture": "Smooth, tightly woven exterior with a subtle sheen from treatment. The sweatband interior is absorbent terrycloth, slightly raised ribs for moisture management. The reflective stripe is raised synthetic material with a plasticky feel.",
+    "color_scheme": "Flat dark navy (#1a2340) body. High-contrast retro-reflective stripe in silver-white with faint Omex corporate cyan accent. No gradients—stark, corporate geometry.",
+    "closures": "Plastic snap adjustment at rear, industrial-grade. Friction-fit crown seam. No premium hardware.",
+    "distinctive_features": [
+      "Heat-pressed employee number on front panel (white serif numerals, faded after cleaning cycles)",
+      "Retro-reflective stripe engineered for night visibility—glows under flash photography",
+      "Omex Corporate Services serif logo embroidered on side panel in white thread",
+      "Sweatband frequently replaced due to job-site wear",
+      "Slight discoloration around brim edge from perspiration and environmental exposure",
+      "No personalization allowed—regulation issue only"
+    ],
+    "tier_indicator": "Tier 3–4. Functional workwear for corporate-contracted service roles. Not cheap salvage, but mass-produced regulation issue. Signals employment rather than status.",
+    "cultural_context": "Worn by municipal contractors, corporate security tiers 3–4, traffic enforcement, and facilities management. Identifies the wearer as part of the corporate infrastructure. Instantly recognizable in the GLMZ as 'one of theirs'—neither street nor elite. Suggests compliance and algorithmic management of labor.",
+    "condition_typical": "Broken-in after 3–6 months of daily wear. Visible rim stains from sweat, faded numerals, slightly cracked plastic snap. The reflective stripe begins to dull. Replacement issued annually per contract. Never pristine for long."
+  },
+  "image_prompt": "Omex CivServ reflective patrol cap on a Tier 3 corporate worker model, side profile under harsh sodium-vapor streetlight. Retro-reflective stripe glowing white against deep navy, employee number faintly visible. Dark urban backdrop—industrial warehouse, corporate plaza at night. Sweat-stained interior sweatband visible at brim edge. Moody, utilitarian lighting. Corporate geometry. --ar 2:3 --v 6"
 }

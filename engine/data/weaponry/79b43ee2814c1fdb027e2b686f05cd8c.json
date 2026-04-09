@@ -40,5 +40,33 @@
     "tier_1",
     "dual_mode"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "HarborTech SafeScream SS-1 'Banshee'",
+    "SentryGuard PepperShot PS-1 'Sting'",
+    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
+    "Umbraline PhoneShell PS-X 'Last Call'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, compact keychain fob resembling a minimalist car remote or high-end USB dongle. Rounded rectangular silhouette with a distinctive tapered end housing concealed stun electrodes. Sits comfortably in a closed fist or dangles unobtrusively from a keyring among standard keys.",
+    "dimensions": "60mm length × 25mm width × 15mm depth; electrode tip adds ~8mm functional reach",
+    "weight_description": "Featherlight—barely noticeable in a pocket or keychain, yet substantial enough to feel purposeful in the palm. Dense polymer construction masks the 26-gram mass effectively.",
+    "primary_material": "Impact-rated polymer composite frame with recessed stainless steel electrode contacts at the tapered tip",
+    "finish": "Matte black polymer body with a subtle satin sheen. Electrode tips feature brushed steel contacts. Ventilation slot details have a dark metallic accent.",
+    "color_scheme": "Matte black primary with stainless steel electrode accents; optional safety indicator rim in deep gunmetal gray",
+    "grip_texture": "Smooth, slightly textured matte polymer—designed for secure grip even with sweaty or augmented hands. Tapered end fits naturally between knuckles or extended between fingers.",
+    "distinctive_features": [
+      "Concealed electrode housing disguised as a decorative fob tip",
+      "Dual-function button interface with short/long press activation",
+      "Hidden speaker grilles appearing as subtle ventilation slots along the side",
+      "Minimalist industrial design with no visible branding on the primary surface",
+      "Recessed CR2032 battery compartment (internal)",
+      "Smooth edges designed for keyring integration without snagging"
+    ],
+    "manufacturer_markings": "UMBRALINE PERSONAL DEFENSE logo embossed subtly on the rear face in raised lettering; serial/batch code etched on the battery compartment interior; regulatory compliance marks on the underside",
+    "condition_typical": "Fresh units appear pristine with sharp edges and unmarred polymer. Field-worn examples show minor scuffing on the matte finish, worn grip texture from repeated pocket carry, and possible micro-scratches around the electrode tip from contact with key fobs. Never shows structural damage—the impact-rated polymer is durable. Older units may have faded lettering or dulled electrodes."
+  },
+  "image_prompt": "Product photography of a compact black keychain stun device (Umbraline KeyGuard KG-2 'Fang') lying on a dark brushed metal surface next to standard silver keys, shot with dramatic side-lighting that catches the tapered steel electrode tip and ventilation slot details. Close-up macro angle showing the matte black polymer texture and minimalist industrial design. Cyberpunk aesthetic: cool blue-tinted accent light on the electrode contacts, warm practical light on the housing, shallow depth of field isolating the fob from the keyring. High-resolution product catalog style, emphasizing the deceptive simplicity and dual-function capability. Shot from above at 45 degrees to show form factor and scale against keys. --ar 3:2 --v 6"
 }

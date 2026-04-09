@@ -43,5 +43,25 @@
     "Dzemal Acholonu-Patagiri",
     "Ringo DV-4 'Courier'",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modular silhouette that reads as both utilitarian and thoughtfully engineered. The diagonal copper zippers across the chest create a visual rhythm that suggests motion and customization. The spinal-rig channel down the back signals technical capability without shouting it. On-body, it projects resourcefulness—someone who adapts rather than replaces.",
+    "fit": "Fitted through the shoulders and torso with minimal excess; designed to layer under heavier outerwear or worn solo. The modular front panels sit flush when attached, creating clean lines. Armholes are cut high and tight for unrestricted movement. Intended to move with the wearer, not constrain.",
+    "primary_material": "Lightweight synthetic quilted shell—likely a poly-blend composite with thermal retention properties but minimal weight. The dusty olive hue suggests a durable ballistic or treated nylon base. Copper-tone hardware is anodized aluminum or similar corrosion-resistant alloy.",
+    "texture": "Smooth outer shell with subtle quilting ridges running perpendicular to the zip panels. The quilting creates micro-trapezoid sections that catch light differently. Velcro on the spinal-rig covers is industrial-grade, audibly tactile when engaged.",
+    "color_scheme": "Dusty olive as primary—a muted, earthy tone that reads as practical and neutral. Copper-tone zippers and hardware provide warm metallic accents that contrast subtly against the matte shell. No visible branding or logos; the zipper geometry is the design language.",
+    "closures": "Diagonal-running zip panels (front, each detachable independently). Velcro strips secure the spinal-rig channel covers. No traditional collar or front buttons; modular attachment points use proprietary snap or friction-fit systems.",
+    "distinctive_features": [
+      "Zip-off front panels—each quilted section removes independently",
+      "Copper-tone zippers running diagonally across chest for visual interest and functional access",
+      "Full-length spinal-rig channel down the back seam with velcro-close covers",
+      "Modular design philosophy—built for reconfiguration and adaptation",
+      "Minimal branding; Gridline's identity is the engineering, not the logo",
+      "Thermal quilting visible only when examined closely"
+    ],
+    "tier_indicator": "Tier 3 functional—transit worker or field-ops grade. The modularity and practical design signal someone who works for a living and invests in gear that adapts. Not corpo luxury, but genuinely considered engineering. Accessible to working-class buyers in the GLMZ.",
+    "cultural_context": "Worn by transit technicians, logistics specialists, field medics, urban explorers, and augmentation specialists who need to move between temperature zones or adjust loadouts mid-shift. The spinal-rig channel appeals to those with back-mounted hardware or storage solutions. Signals someone who plans for contingency.",
+    "condition_typical": "Usually broken-in after first month of wear. Zippers show patina. Velcro may be slightly pilled from repeated engagement. Some users customize by removing front panels for specific tasks, creating a patchwork aesthetic. Rarely pristine; this is working gear."
+  },
+  "image_prompt": "A Tier 3 transit worker in a dusty olive Gridline ZipPanel modular vest with diagonal copper zippers, standing in an industrial maintenance bay lit by flickering sodium vapor lights. The spinal-rig channel runs visibly down the back seam. One front panel is partially unzipped, showing the modular construction. Dark concrete walls, scattered tool crates, and overhead cable runs in soft focus. Moody, functional cyberpunk aesthetic. Shot from 3/4 angle to highlight the diagonal zipper geometry and vest's architectural precision. --ar 2:3 --v 6"
 }

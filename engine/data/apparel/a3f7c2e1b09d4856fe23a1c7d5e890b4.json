@@ -48,5 +48,26 @@
     "Kenji Guerrero-Osei-Mensah",
     "Sulfur Crown Agriculture",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist industrial helmet with a jagged, asymmetrical crown silhouette. Appears jury-rigged from scrap metal panels welded and bolted together. Evokes a Mad Max aesthetic merged with working-class tool-wear. Sits heavy and deliberate on the head, suggesting both protection and intimidation.",
+    "fit": "Loose to semi-fitted depending on wire-wrap adjustment at crown. Interior padding creates variable comfort. Horn cutouts sit high above natural hairline. Designed for function over ergonomics — wearer adjusts fit to personal need.",
+    "primary_material": "Salvaged pressed-steel panels, corrugated steel conduit strips, cracked polycarbonate face shields, transit foam padding, recycled bicycle tire rubber lining",
+    "texture": "Surface is rough and scarred — oxidized rust patches, ground-smooth bare aluminum, soot residue, filed edges. Bolts protrude slightly. Interior padding is soft but uneven. Face shield is clouded and scratched.",
+    "color_scheme": "Mottled rust-orange dominating, deep soot-black accents, exposed brushed aluminum, hints of faded paint. No cohesive palette — pure salvage aesthetics.",
+    "closures": "Mismatched bolts and rivets throughout. Wire wrapping around crown for sizing adjustment. No traditional fastening — sits via weight and pad pressure.",
+    "distinctive_features": [
+      "Crude torch-cut horn cutouts, filed smooth",
+      "Visibly bolted polycarbonate face shield panels",
+      "Exposed corrugated conduit strips forming structural ribs",
+      "Heavy patina and rust oxidation across all surfaces",
+      "Asymmetrical assembly with no two bolts matching",
+      "Bare metal patches where coating has worn through",
+      "Interior bicycle tire rubber lining for shock absorption"
+    ],
+    "tier_indicator": "Tier 5 sub-grade salvage. Raw material cost near zero. Signals ungoverned fabrication and resource scarcity.",
+    "cultural_context": "Slagside Shelf collective — autonomous maker community operating outside corpo supply chains. Wearer is either a scrap worker, Behemoth salvager, or militant sub-grade operative. Anti-establishment signal.",
+    "condition_typical": "Always weathered and patched. Fresh welds and new bolt additions common. Never pristine. Visible repair history is the design."
+  },
+  "image_prompt": "Brutalist salvage helmet mounted on dark industrial mannequin, shot against rust-stained concrete wall. Harsh single-source lighting from upper left reveals oxidized surface texture and protruding bolt heads. Cracked polycarbonate face shield catches light like fractured ice. Soot and metal dust visible in crevices. Gritty, tactile, dystopian. Dark amber and deep shadow color grading. --ar 2:3 --v 6"
 }

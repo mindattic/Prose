@@ -44,5 +44,38 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Ouroboros Energy"
+  "parent_corponation": "Ouroboros Energy",
+  "related_entities": [
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus Defense Solutions Magnetic Accelerator Rifle MAR-8 'Longbow'",
+    "Concrete",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Iowan Behemoth — 'Palisade'",
+    "Ouroboros Energy",
+    "TESSERA PG-2 'Signature'",
+    "The Shelf"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist siege weapon resembling a colossal crossbow scaled for vehicular mounting. The Arbalest presents as a compact, purposeful mechanism—all mechanical honesty with no ergonomic softness. Its profile is dominated by a massive torsion spring housing bracketed between twin steel arms, tapering toward a reinforced bolt channel that extends forward like a predator's jaw. The powered gimbal base is a stabilized platform of welded steel and servo-assist hydraulics.",
+    "dimensions": "Overall length: 240 cm (bolt channel), width: 180 cm (spring arm spread), height: 95 cm (above gimbal base). Bolt: 100 cm length. Gimbal mount footprint: 140 × 120 cm.",
+    "weight_description": "Immensely heavy and brutally solid—85 kg of pure mechanical mass designed to absorb 400 kg of spring tension without deflection. When hand-held for inspection, the Arbalest feels like handling structural steel. On vehicle mounts, it settles with the finality of mounted artillery.",
+    "primary_material": "Welded structural steel frame and spring housings. Reinforced aluminum gimbal base. Hardened steel bolt channel and draw mechanism. Composite polymer shock-absorbing pads at pressure points.",
+    "finish": "Industrial matte black powder coat with heavy wear patterns revealing bare steel underneath. Hydraulic components feature brushed steel with minor corrosion from fluids. The bolt channel is polished to a dull sheen from repeated bolt friction. Assembly welds are visible and unfinished—function over aesthetics.",
+    "color_scheme": "Charcoal matte black as primary, with steel gray exposed metal and burnt orange hydraulic fluid staining around connection points. Serpentine Data Centers' logo appears in faded silver.",
+    "grip_texture": "Not user-gripped in traditional sense—the weapon is gimbal-mounted with control via haptic feedback gloves or hardwired targeting systems. Physical access points (adjustment levers, hydraulic pressure valve) are bare knurled steel or rubberized grip tape worn thin from field handling.",
+    "distinctive_features": [
+      "Twin massive coiled torsion spring housings with visible spring arms under extreme tension",
+      "Hydraulic pressure gauge mounted on left spring housing, needle often in yellow warning zone",
+      "Electromagnetic acceleration coils visible through reinforced polycarbonate window in bolt channel—faint blue capacitor glow when charged",
+      "Powered gimbal base with servo motors at traverse and elevation points, marked with worn rotation indices",
+      "Heavy bolts stored in reinforced steel magazine cradle—visible 1-meter dark gray shafts with flattened heads",
+      "Scorch marks and impact dents from field testing and live-fire breaching operations",
+      "Drainage ports and weep holes suggesting aggressive hydraulic fluid management",
+      "Hand-painted squad markings and unit designations on gimbal base in silver paint—often obscured by road grime"
+    ],
+    "manufacturer_markings": "Serpentine Data Centers logo (intertwined spiral snake) stamped into left spring housing. Serial plate bolted to gimbal base: 'OUROBOROS SB-1 ARBALEST / SDC-2224-04782'. Hydraulic system placard warning of 400 kg spring tension mounted prominently. Maintenance log plate on base shows field service dates.",
+    "condition_typical": "Well-maintained but obviously deployed. Hydraulic seals show minor weeping, bolt channel has micro-scratches from high-velocity friction, gimbal servos emit faint electronic hum under load. Paint is scuffed from equipment transport and weather exposure. The weapon's condition reflects professional military/paramilitary use—not pristine, but meticulously functional."
+  },
+  "image_prompt": "Professional product photograph of the Ouroboros SB-1 Arbalest heavy crossbow mounted on dark matte black platform, shot from 45-degree low angle to emphasize brutal mechanical scale. Dramatic side-lighting from upper left reveals industrial welds, torsion spring housings under tension, and polished bolt channel. Close detail on hydraulic gauge needle in yellow warning zone and faint electromagnetic coil glow visible through reinforced window. A single 1-meter hardened steel bolt lies horizontally in foreground on dark metal surface, showing flattened impact head. Gunmetal and burnt orange color grading. Cyberpunk tactical aesthetic with visible manufacturer stamps and field-worn finish. Studio lighting creates sharp shadows across spring mechanisms. Mounted gimbal shows servo motors and wear-marked rotation indices. --ar 3:2 --v 6"
 }

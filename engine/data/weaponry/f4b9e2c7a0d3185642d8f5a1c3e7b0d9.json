@@ -42,5 +42,38 @@
     "controversial",
     "civil_rights"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "GLMZ",
+    "HarborTech SafeScream SS-1 'Banshee'",
+    "Irontide Tidal Energy",
+    "MERIDIAN",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Human Baseline Alliance",
+    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact aerosol canister with an aggressive, utilitarian aesthetic. The cylindrical body tapers slightly toward a reinforced grip section, with a sequential dual-valve dispenser assembly that dominates the upper end. The overall impression is clinical and purposeful—designed to be drawn quickly and deployed with precision.",
+    "dimensions": "15cm height × 4.5cm diameter (cylindrical body); dual-valve head assembly adds 1.2cm; effective stream projection to 2.5m",
+    "weight_description": "Light and well-balanced in a gloved hand—0.20kg allows for rapid deployment and extended holding without fatigue. The weight sits forward in the palm, with the grip providing confident control.",
+    "primary_material": "Aerospace-grade aluminum alloy body with reinforced polymer grip section; stainless steel dual-valve assembly with precision-machined dispensing ports",
+    "finish": "Anodized matte gunmetal gray with chemical-resistant polymer coating. The dual-valve assembly has a subtle brushed stainless finish that contrasts with the body. Minimal wear resistance due to frequent handling in field conditions.",
+    "color_scheme": "Matte gunmetal gray primary body with stainless steel valve assembly accents. The grip section features ShieldTech's corporate accent stripe in cool blue-gray, with warning hazard striping in phosphorescent yellow near the dispersion ports.",
+    "grip_texture": "Textured rubberized polymer with aggressive cross-hatching designed for gloved manipulation. The grip is ergonomically contoured to the web between thumb and forefinger, with finger grooves that accommodate both standard and reinforced tactical gloves.",
+    "distinctive_features": [
+      "Dual sequential-dispersal valve head with two distinctly labeled dispersion ports—one marked with a molecular polymer icon, the other with a sensor array symbol",
+      "Pressure release micro-valve on the grip spine, accessible without repositioning the hand",
+      "Phosphorescent yellow hazard striping around the trigger assembly and both dispersion ports",
+      "Graduated pressure indicator—a small window showing remaining compound level via color gradient (blue = full, amber = half, red = depleted)",
+      "Serial number and manufacturing date etched into the grip section in small, precise characters",
+      "Fine crosshatch texturing on the barrel section to reduce glare reflection",
+      "Reinforced trigger guard designed for use with heavy-duty tactical gloves"
+    ],
+    "manufacturer_markings": "ShieldTech logo (a geometric shield outline) stamped in relief on the upper grip section. Below it: 'SynthSolve SS-1 PEEL' in clean sans-serif lettering. Small Meridian regulatory compliance stamp (synthetic compliance instrument classification) on the barrel. Manufacturing batch code laser-etched on the pressure indicator window.",
+    "condition_typical": "Field-deployed units show light cosmetic wear—minor scuffs on the aluminum body, slight discoloration on the grip from perspiration and cleaners, occasional residue staining around the dispersion ports from compound exposure. Well-maintained examples retain the factory phosphorescence of the hazard striping; heavily used units show dull patina on the stainless steel valve assembly from repeated handling and cleaning."
+  },
+  "image_prompt": "Product photography of the ShieldTech SynthSolve SS-1 'Peel' spray canister. Shot from a three-quarter angle, held in a black-gloved tactical hand against a dark composite surface. Dramatic side-lighting emphasizes the brushed stainless dual-valve assembly and the matte gunmetal finish of the aluminum body. Shallow depth of field isolates the weapon. Close-up detail visible: phosphorescent yellow hazard striping, the gradient pressure indicator window showing mid-level fill, and the ShieldTech corporate logo on the grip. Cool blue accent stripes reflect the side-light. Cyberpunk aesthetic with clinical precision; cold color grading with slight teal tint. Industrial laboratory lighting. High resolution detail capture. --ar 3:2 --v 6"
 }

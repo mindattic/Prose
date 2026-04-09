@@ -46,5 +46,26 @@
     "Lazarus HZ-4 'Cleanroom'",
     "Pellucid Systems",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A ethereal, ghost-like full-body silhouette in translucent pearl-white. The suit creates a cocoon effect, obscuring the wearer's natural form while maintaining visibility of movement and positioning. The integrated hood and clear polycarbonate face shield give an alien, clinical appearance — part medical worker, part containment protocol.",
+    "fit": "Precisely tailored yet allowing freedom of movement for precise surgical gestures. Not baggy, but not compression-tight — a functional middle ground that prioritizes dexterity and observable limb placement. Cuffed wrists and ankles create secure seals.",
+    "primary_material": "Electrostatically-dissipative translucent polymer film layered over sealed microfiber base. The outer layer is smooth and slightly glossy; the inner microfiber provides structural integrity and comfort against skin.",
+    "texture": "Outer surface: slick, almost frictionless polymer film with a faint sheen. Inner surface: soft microfiber with subtle texture. Fine silver-thread grid creates a barely-perceptible raised pattern across the entire suit — visible up close but seamless from distance.",
+    "color_scheme": "Translucent pearl-white with an underlying slight iridescence. The silver-thread ESD grid appears as a faint geometric web, most visible at seams and under strong lighting. The polycarbonate face shield is completely clear with slight amber tinting at edges.",
+    "closures": "RF-welded seams throughout — no traditional closures. Full-body entry via a rear torso RF-weld seam (opened during doffing procedures). Integrated collar port accepts filtered-air tubing via friction-fit connection. No zippers, buckles, or exposed fasteners.",
+    "distinctive_features": [
+      "Integrated clear polycarbonate face shield molded into hood",
+      "Filtered-air collar port with friction-fit tubing connector",
+      "Silver-thread ESD grid woven into outer film for equipment protection",
+      "RF-welded seams throughout for complete environmental seal",
+      "Translucency allows supervisor observation of hand and limb positioning",
+      "Sealed single-use packaging but rated for up to 30 decontamination cycles",
+      "Fine microfiber inner shell for comfort during extended wear"
+    ],
+    "tier_indicator": "Tier 3-4 functional. Expensive enough to signal institutional access and technical credibility, but utilitarian rather than luxury. The single-use packaging and decontamination cycle rating indicate mid-tier facility deployment.",
+    "cultural_context": "Marks the wearer as a geneware technician, genomics researcher, or surgical theater specialist. Signals institutional authority, sterile protocol adherence, and access to sensitive biotech facilities. The suit creates psychological distance — a barrier between the wearer's humanity and the sterile work environment.",
+    "condition_typical": "Pristine when first worn, with visible creasing from sealed packaging. After 5-10 cycles: minor surface scuffing, slight cloudiness at high-flex points (elbows, knees), but still functional. By cycle 25-30: accumulating micro-abrasions, clouding at seams, but seal integrity maintained."
+  },
+  "image_prompt": "Close-up fashion photograph of a translucent pearl-white biotech cleanroom suit on a dark-skinned model or chrome-limbed mannequin, shot against a blurred laboratory backdrop with cool blue-white LED lighting. The suit's translucency catches light, revealing the faint silver-thread ESD grid pattern across the torso. The integrated hood and clear polycarbonate face shield are prominent, with subtle amber tinting visible. Moody, clinical atmosphere. Shot from waist-up, emphasizing the suit's seamless construction and ethereal quality. Cinematic depth-of-field. --ar 2:3 --v 6"
 }

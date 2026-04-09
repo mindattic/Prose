@@ -74,5 +74,24 @@
     "Tessera Corponation",
     "Vantablack-CNX",
     "Vespid Dynamics Neural Feedback Dart NFD-2 'Scream'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A hardened cylindrical emergency transmitter resembling a high-grade flare or signal cartridge. The form factor is deliberately military-industrial: compact, purposeful, built for grip. The casing tapers slightly at both ends, with a recessed activation cap at the top. Visually austere — no unnecessary ornamentation. It reads as a device designed to be deployed, not displayed.",
+    "dimensions": "18cm length × 3.5cm diameter — handheld, pocket-sized with effort, easily carried in a tactical vest pouch or field pack",
+    "weight_description": "300 grams — light enough to pocket, substantial enough to feel engineered. Pocketable but not weightless; the heft conveys precision manufacturing",
+    "primary_material": "Aerospace-grade composite ceramic-reinforced titanium alloy casing with internal ablative shielding",
+    "finish": "Matte, non-reflective industrial gray with subtle heat-treatment discoloration along the mid-barrel. Texture is slightly rough, tactile, purposefully un-polished. Designed to resist fingerprinting and thermal imaging",
+    "color_scheme": "Gunmetal gray primary with black anodized aluminum activation collar. Accent: a single narrow band of deep indigo near the top, marking the Tessera Corponation proprietary encryption standard (visible only at certain angles)",
+    "interface_elements": "Recessed twist-lock activation cap (requires two-handed engagement to prevent accidental trigger). No visible screen or display—the device is entirely passive until armed. A small pressure-release valve near the base (barely visible). No indicator LEDs. When armed, a faint amber glow emanates from a thin line around the activation collar during the 60–90 second charge cycle—the only feedback mechanism",
+    "distinctive_features": [
+      "Thermally-etched serial number on the barrel (unique to each unit, laser-burned deep into the metal)",
+      "A hairline fracture pattern etched into the lower third of the casing—decorative but functional, marking stress-relief points that guide thermal destruction",
+      "Subtle Tessera Corponation logo (three interlocking squares forming a tessellated pattern) embossed on the collar, filled with metallic ink that catches light at specific angles",
+      "Slight bulge at the mid-point where the capacitor banks sit—creates an almost organic, stressed curve to the cylinder",
+      "The top cap bears a tiny recessed groove for a fingernail or tool—no button, deliberately tactile and deliberate"
+    ],
+    "manufacturer_markings": "TESSERA CORPONATION — etched in small sans-serif caps below the logo. A regulatory stamp (GLMZ-certified, non-recoverable ordnance classification). Batch code and manufacturing date laser-printed on the base in near-invisible gray-on-gray",
+    "condition_typical": "Pristine, handled sparingly. Field units show slight surface oxidation or scratches from gear contact. Units in actual use are rare; most observers never see a fired Epitaph (only the residue—fused slag). A pristine unit suggests someone who hasn't needed to scream yet"
+  },
+  "image_prompt": "Product photography: Tessera Corponation Cenotaph Burst Transmitter isolated on a dark brushed-steel workbench, angled 30 degrees to camera. Overhead key light emphasizes the matte gray finish and thermally-etched details. A second rim light from the left catches the indigo proprietary band and creates subtle highlights along the edge, revealing the faint fracture-pattern etching. Surrounding context: a disassembled Cenotaph receiver unit (small passive module, partially deconstructed) in soft focus beside it, and a single brass shell casing for scale. Near-black background, cyberpunk workshop aesthetic with cold blue-and-amber accent lighting. Capture the austere, irreversible weight of a last-resort device. Dramatic, clinical. --ar 3:2 --v 6"
 }

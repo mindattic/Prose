@@ -59,5 +59,39 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Aybek Alvarez-Okonkwo",
+    "GLMZ",
+    "Lazarus APC-2 'Locust'",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Nurlan Holmberg-Dembele",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Sustrel",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tessera Corponation",
+    "The Swarm"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, cylindrical launch canister with a distinctly organic, segmented appearance—like a metallic insect thorax. The surface is studded with small inductive relay nodes arranged in a hexagonal pattern. A faint mesh of hairline seams suggests internal compartmentalization. The overall impression is simultaneously mechanical and biomimetic, deliberately evoking the swarm it contains.",
+    "dimensions": "Canister: 18 cm length × 8 cm diameter. Individual drone unit: 22mm × 14mm × 8mm (thumbnail-sized). Launch profile occupies roughly 15 cm when fitted to underbarrel rail.",
+    "weight_description": "Deceptively hefty for its size—2.1 kg of concentrated capacitor density. Feels dense and purposeful in a gloved hand, balanced toward the grip end to distribute recoil evenly during underbarrel deployment.",
+    "primary_material": "Titanium-reinforced polymer casing over a segmented internal lattice of solid-state capacitor arrays. Individual drones use carbon-composite frames with conductive trace routing.",
+    "finish": "Brushed gunmetal-gray anodized titanium, with a subtle matte sheen that minimizes reflectivity. The inductive relay nodes are polished to a high shine, creating deliberate visual contrast.",
+    "color_scheme": "Gunmetal gray primary with silver-white inductive relay nodes. Accent striping in electric blue runs along the seams where capacitor segments meet, subtly glowing faint blue under low light when charged.",
+    "grip_texture": "Textured polymer grip panel with fine knurling and integrated palm rest. The junction between canister and grip is wrapped in a thin thermal-dispersal band of braided copper mesh, slightly rough to the touch.",
+    "distinctive_features": [
+      "Hexagonal lattice of inductive relay nodes across the canister surface, each faintly luminous when charged",
+      "Linear seam pattern suggesting 12–14 internal capacitor segments, each capable of independent discharge",
+      "Threaded underbarrel rail mount with quick-disconnect coupling",
+      "Faint QR-scannable manufacturer serial etched on the grip panel",
+      "Small red LED status indicator (armed/disarmed state) recessed near the trigger assembly",
+      "Faint acoustic dampening grille at the canister tip to muffle the pre-dispersal mesh hum",
+      "Micro-ports along the sides—release points for the swarm"
+    ],
+    "manufacturer_markings": "Empathic Analytics corporate sigil (a stylized neural network wrapped around a circle) stamped in raised relief on the grip. Beneath: 'SDDN-3 LOCUST' in sans-serif block letters. Serial number and manufacturing date laser-etched on the underside of the grip panel. Small 'TESSERA CORPORATION' subsidiary logo printed in faded white on the canister body.",
+    "condition_typical": "Usually field-worn but scrupulously maintained. Micro-scratches and scorching on the muzzle end from repeated dispersals. Faint residue of copper oxidation on the relay nodes from inductive cycling. No visible rust or corrosion—standard paramilitary care protocols. Some operators add custom grip tape or engravings, but the SDDN-3's industrial aesthetic resists cosmetic modification."
+  },
+  "image_prompt": "Swarm Dielectric Dispersal Node SDDN-3 canister held in a gloved operator's hand against a dark composite surface, viewed from a 45-degree angle. Dramatic blue-tinted side-lighting emphasizes the inductive relay nodes glowing softly with stored charge. Gunmetal-gray finish catches highlights, with electric-blue accent seams subtly luminous. Background is blurred industrial setting—scaffolding or server farm infrastructure. Shallow depth of field keeps focus on the canister's segmented, biomimetic texture. High contrast cinematic lighting. --ar 3:2 --v 6"
 }

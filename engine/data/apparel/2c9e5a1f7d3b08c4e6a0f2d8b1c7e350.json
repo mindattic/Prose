@@ -46,5 +46,26 @@
   "related_entities": [
     "Arcturus Defense Solutions Proprioceptive Lattice Sleeve",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist tactical harness worn over the torso and shoulders. Creates a streamlined silhouette with strategic weight distribution across chest and flanks. The matte-black finish absorbs light, making the wearer appear almost shadowless in dim environments. Ghost-stitching creates subtle linear patterns that catch only at oblique angles. Projects competent, understated lethality.",
+    "fit": "Precision-engineered compression fit that conforms to the upper body without restricting movement. Sits snug against the ribs and shoulders, distributing load evenly. Adjustable strap geometry via ceramic buckles allows customization for different frame sizes and augmentation profiles. Designed to layer cleanly over mid-weight jackets without bulk or bunching.",
+    "primary_material": "Recycled ballistic nylon, matte-black finish. High-tensile synthetic weave rated for industrial-grade durability and abrasion resistance.",
+    "texture": "Smooth, slightly rubbery surface with subtle weave texture visible under close inspection. Ghost-stitching in grey creates raised linear ridges along load-bearing channels. Ceramic buckles are cool and slightly grippy to touch.",
+    "color_scheme": "Matte black primary with grey ghost-stitching accent lines running vertically down chest and flanks. All hardware (ceramic buckles, attachment points) in gunmetal grey or flat chrome.",
+    "closures": "Ceramic slide buckles on adjustable shoulder and flank straps. Modular quick-release connections on holster mounts for rapid reconfiguration. Dorsal channel uses friction-fit cable management clips.",
+    "distinctive_features": [
+      "Four modular holster mounts (2 chest, 2 flank) with standard-format compatibility",
+      "Dorsal spine channel for spinal rig externals and neural port cable routing",
+      "Ghost-stitching in grey along all load-bearing channels for low-visibility design",
+      "Ceramic slide buckles engineered to hold 200kg lateral pull",
+      "Recessed attachment points that accept custom inserts",
+      "Cable management clips integrated into dorsal channel",
+      "Lightweight yet reinforced synthetic composite weave"
+    ],
+    "tier_indicator": "Tier 2-3 professional operative equipment. High-end enough to signal serious capability and investment, but deliberately understated to avoid drawing corpo-level attention.",
+    "cultural_context": "Worn by security contractors, independent operatives, black-market couriers, and anyone who needs tactical functionality without advertising their work. The 'ghost' aesthetic appeals to those who prefer anonymity over status signaling. Worn by both corpo-tier fixers and Tier 3 street operatives, depending on context.",
+    "condition_typical": "Maintained in pristine or near-pristine condition. The matte-black finish conceals minor scuffs and wear. Cables and attachment points are regularly inspected and recalibrated. Weathering would suggest heavy field use, which actually increases street credibility."
+  },
+  "image_prompt": "Sleek matte-black tactical harness with grey ghost-stitching on a lean cyberpunk operative, shot from a three-quarter angle. Model wears the harness over a dark fitted jacket. Moody neon-blue and amber backlighting creates sharp shadows along the load-bearing channels and straps. Harsh overhead key light emphasizes the ghost-stitching details. Urban rooftop or warehouse backdrop with rain-slicked surfaces. Cinematic, professional tactical aesthetics. High contrast, cool color grading. Model expressionless, confident posture. --ar 2:3 --v 6"
 }

@@ -43,5 +43,40 @@
     "surveillance",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Breck Tannen",
+    "Enver Svensson-Asante",
+    "GLMZ",
+    "Nenad Vargas-Baffour",
+    "Nika Svensson-Kone",
+    "Ouroboros Energy Helion Compact Reactor",
+    "TESSERA ES-4 'Perimeter'",
+    "Tessera Corponation",
+    "Zheng-Dao Heavy Industries Portable Fusion Battery PFB-2"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular sniper platform with a distinctly predatory aesthetic—part precision instrument, part autonomous hunter. The railgun barrel dominates the upper profile, extending from a compact receiver housing. The entire assembly sits atop a stabilization gimbal with three articulated servo mounts, giving it an insectoid quality. Sensor clusters bulge from the sides like compound eyes.",
+    "dimensions": "Platform body: 89cm length × 34cm width × 52cm height. Railgun barrel: 127cm from breach to muzzle. Footprint of stabilization base: 60cm × 60cm",
+    "weight_description": "Hefty and imposing—32kg platform weight demands secure mounting. The power unit (12kg) is a separate dense block suggesting extreme energy density. Feels engineered for permanence rather than portability.",
+    "primary_material": "Titanium-reinforced composite frame with steel barrel assembly. Sensor housings in smart polymer with embedded conductors. Gimbal joints are hardened steel with ceramic bearings.",
+    "finish": "Matte charcoal composite with brushed gunmetal accents on barrel and mechanical joints. Weatherproof coating shows micro-abrasion patterns from deployment. Sensor domes have a faint iridescent quality under angled light—anti-glint treatment.",
+    "color_scheme": "Gunmetal gray dominant, with black composite sections and deep blue accent strips along sensor arrays. Tessera branding in cold silver on the receiver block.",
+    "grip_texture": "No traditional grip—the platform is mounted, not handheld. Control surfaces feature rubberized keypads with tactile feedback for field calibration. Mounting points have textured steel flanges.",
+    "distinctive_features": [
+      "Hyperlinear railgun barrel with precision rifling visible at muzzle",
+      "Three-axis gimbal stabilization system with servo motors visibly articulated",
+      "Sensor cluster array: LIDAR dome, thermal imaging window, optical tracking system stacked along right flank",
+      "Magazine cartridge on left side—sealed 20-round tungsten flechette magazine with status indicators",
+      "Cable management: thick fiber-optic tether for BCI operator link, power umbilical to fusion cell",
+      "Cooling radiator fins along rear housing—suggests active thermal management during sustained fire",
+      "Tessera corporate logo and model designation stamped in gray on black composite nameplate",
+      "LED status indicators: green (standby), amber (tracking), red (target lock) arranged vertically on rear",
+      "Modular quick-release mounts at base for rapid repositioning"
+    ],
+    "manufacturer_markings": "TESSERA embossed in sans-serif on upper receiver block. OWP-3 'PANOPTICON' designation in smaller text below. Serial plate mounted on gimbal base housing—brushed steel with laser-etched identifier. Regulatory exemption number engraved beneath barrel—a legal scar on the weapon itself.",
+    "condition_typical": "Well-maintained, meticulous. These units are expensive corporate assets. Likely shows field use—dust accumulation in gimbal joints, minor scuff marks on composite from transport cases, faint discoloration on barrel from thermal cycling. Optics may show faint condensation halos from climate stress. Despite wear, visibly maintained to operational standards."
+  },
+  "image_prompt": "Professional product photography of the Tessera OWP-3 Panopticon sniper platform mounted on tactical stand, three-quarter view angled from below. Dramatic side-lighting with deep blue-white key light emphasizing the gimbal articulation and sensor clusters. Matte gunmetal and black composite surfaces catch highlights; railgun barrel rendered in sharp focus. Faint cooling radiator fins visible with thermal bloom suggestion. Mounted on dark urban concrete surface. Fiber-optic tether coiled nearby, power umbilical visible. Blurred corporate secure facility background. Cinematic cyberpunk surveillance aesthetic. Cold, menacing, precise. --ar 3:2 --v 6"
 }

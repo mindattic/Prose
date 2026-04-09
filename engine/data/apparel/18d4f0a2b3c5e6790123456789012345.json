@@ -48,5 +48,24 @@
     "TESSERA PG-2 'Signature'",
     "The Clock",
     "Vantablack-CNX"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, fitted polo shirt in deep teal that reads as corporate-clean and deliberately approachable. The garment sits at the intersection of professional polish and subtle performance wear—tailored enough to convey competence, relaxed enough to suggest accessibility. The moisture-wicking sheen catches light in a way that suggests investment in presentation.",
+    "fit": "Slim tailored cut—fitted through the shoulders and torso without constraint, allowing arm mobility for gesture-based client interaction. The cut subtly emphasizes posture and confidence while remaining comfortable enough for an 8-hour shift.",
+    "primary_material": "Moisture-wicking synthetic blend (likely polyester-elastane composite), engineered for performance under warm clinic lighting and designed to resist visible perspiration marks.",
+    "texture": "Smooth with subtle texture-woven pattern integrated into the weave itself—fine enough to be invisible from a distance but visible up close, adding depth without obvious visual noise. The fabric has a controlled sheen that photographs well under warm incandescent light.",
+    "color_scheme": "Signature deep teal (Nexagen brand color #0B4F6C equivalent), solid throughout with minimal pattern. The embroidered chest logo and quarterly-updated collar hem codes are rendered in muted gunmetal gray.",
+    "closures": "Clean two-button placket at the collar; buttons appear to be functional but the placket design suggests minimal adjustment is expected once fitted.",
+    "distinctive_features": [
+      "Subtle texture-woven Nexagen logo on left chest—understated enough to suggest confidence rather than corporate loudness",
+      "Embroidered lot codes on interior collar hem (updated quarterly for authentication/black market tracking)",
+      "Collar stays integrated or reinforced to maintain crisp appearance through full shift",
+      "Moisture-wicking treatment optimized for warm consultation floor lighting",
+      "Hidden construction details suggesting garment is designed to photograph well under specific lighting conditions"
+    ],
+    "tier_indicator": "Tier 2 luxury corporate issue—not available for purchase, only issued to vetted employees. The garment is aspirational for lower tiers but carries institutional markers that make it recognizable to security.",
+    "cultural_context": "Wearer is Nexagen-vetted, trained in proprietary protocols, and positioned at the client-facing interface of medical/wellness services. The polo signals institutional trust, professional training, and access to restricted spaces. Off-duty, it carries psychological weight—wearing it off-hours suggests either pride in employment or inability to mentally separate from work.",
+    "condition_typical": "Pristine to lightly broken-in when issued; professional maintenance is expected. Any visible wear (fading, pilling, loose threads) is generally replaced before it becomes noticeable. Black market specimens often show signs of heavy cleaning or attempted color-matching repairs."
+  },
+  "image_prompt": "Cyberpunk fashion catalog shot: a Tier-2 corpo employee wearing a fitted deep teal Nexagen polo with subtle texture-woven logo on left chest, positioned in a warm-lit corporate consultation room or medical-adjacent setting. The model has mixed global heritage features and visible subcutaneous augmentation ports along the jawline. The polo's moisture-wicking sheen is clearly visible under clinical warm lighting. The background is a sleek Nexagen interior—soft warm tones, ergonomic furniture, subtle branding. The employee's posture suggests trained client-interaction confidence. Secondary detail: visible embroidered lot code on interior collar hem catches light. Shot at 2:3 portrait aspect, moody professional lighting emphasizing the fabric's sheen and the uncanny perfection of the fit. --ar 2:3 --v 6"
 }

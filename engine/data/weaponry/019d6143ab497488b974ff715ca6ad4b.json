@@ -41,5 +41,32 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Dielectric Filament Anchor Drone DFAD-1 'Cobweb'",
+    "Dragan Petersen-Bah",
+    "Kang-Petrov Arms KPM-6 'Equalizer'",
+    "Sinan Haugen-Coulibaly"
+  ],
+  "physical_description": {
+    "visual_profile": "A simple glass bottle silhouette with an asymmetrical, hand-wrapped cloth wick protruding from the neck — deceptively crude yet purposeful. The amber or clear glass catches light, revealing the viscous amber-to-dark fluid sloshing inside. No refinement, pure street pragmatism.",
+    "dimensions": "Height: 18-24 cm, Diameter: 8-10 cm (bottle body), Wick extends 3-5 cm above rim",
+    "weight_description": "Substantial but not unwieldy — 0.5-1 kg of dense, sloshing liquid gives it a satisfying heft without fatigue. Balanced low, stable when held.",
+    "primary_material": "Salvaged or mass-produced glass bottle (common liquor or industrial containers), cotton or synthetic cloth wick, polymeric thread or wire wrapping at neck",
+    "finish": "Raw, unrefined — glass shows fingerprints and dust. Cloth wick is slightly singed at edges from testing or handling. Minimal protection on bottle body; some examples show threadbare wrapping at stress points.",
+    "color_scheme": "Amber or clear glass revealing deep amber, dark orange, or rust-red gelled fuel inside. Wick is off-white, cream, or charred gray. Wrapping around neck in dull blacks, grays, or industrial tape colors.",
+    "grip_texture": "Bare or wrapped glass — smooth, cool, slightly oily from fuel residue. Cloth wrapping at neck provides minimal grip texture, rough hemp or synthetic binding.",
+    "distinctive_features": [
+      "Visible fuel meniscus sloshing behind glass",
+      "Hand-wrapped cloth wick with frayed edges",
+      "Dark staining around bottle mouth from repeated wick soaking",
+      "Occasional chemical-burn marks on glass exterior",
+      "Simple knot or twist-tie securing wick to bottle rim",
+      "Wear marks from repeated handling and transport in pockets or satchels",
+      "Translucent polymer tape or electrical wrap reinforcing weak points"
+    ],
+    "manufacturer_markings": "None intentional — some bottles retain original manufacturer logos (beer, industrial solvent brands) beneath the fuel staining. Street chemists sometimes scratch initials or small symbols into glass for personal marking.",
+    "condition_typical": "Deliberately rough — scuffed glass, singed wick, minor leakage stains at cap or neck. Appears hastily assembled, ready for immediate deployment. No attempt at cosmetic finish; pure functionality."
+  },
+  "image_prompt": "Product photograph of a street-custom Molotov incendiary bottle on dark concrete surface, angled to show amber gelled fuel sloshing inside clear glass. Hand in worn black tactical glove reaches toward bottle from frame edge. Cotton wick protrudes from neck, slightly charred and frayed. Dramatic side-lighting from industrial LED highlights viscous fuel texture and glass reflections. Gritty, worn aesthetic with slight chemical residue visible on bottle exterior. Dark cyberpunk environment, moody amber and shadow tones. Shallow depth of field focusing on wick and bottle mouth. --ar 3:2 --v 6"
 }

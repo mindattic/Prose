@@ -45,5 +45,25 @@
     "The Crucible",
     "Tshiamo Vukić-Arellano",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Raw, stripped-down fighter's silhouette — muscular frame displayed with minimal coverage, built for kinetic efficiency. The look is intentionally brutal and street-coded: someone who lives in underground fight circuits, not corpo gyms. Aesthetic reads as deliberate poverty mixed with hard-won respect.",
+    "fit": "Compression-tight through the torso and limbs; the vest clings like a second skin. Shorts sit low on the hips with a deep cut for mobility and aug accommodation. Everything is tailored for maximum range of motion, zero excess fabric.",
+    "primary_material": "Matte-finish ballistic weave (abrasion-resistant synthetic). Compression fabric throughout. Gray fleece on the jacket (cheap, worn stock). Fingerless gloves in moisture-wicking synth-leather. Wraps in crude white athletic tape (reused, stained).",
+    "texture": "Vest surface is smooth but grainy, with a subtle sheen from repeated sweat and impact. Tape wraps are rough, slightly frayed at the edges. Fleece is soft but pilled from heavy use. Gloves show creasing and darkened stains around the knuckles.",
+    "color_scheme": "Matte black vest as the core. Deep indigo shorts. Dirty white tape wraps with dark sweat rings. Gray fleece jacket faded to near-white at stress points. Single sponsor tag remnant (scorched, unreadable).",
+    "closures": "Friction-fit compression on the vest (no closures). Flex-waistband shorts with magnetic snap at the fly. Gloves laced tight with tape. Jacket held casually over shoulders, hood down.",
+    "distinctive_features": [
+      "Chrome aug-mount cutouts on the vest shoulders — cleanly machined, exposing the skin beneath",
+      "Reinforced stitching along the shorts' side seams, rated for appendage stress",
+      "Bare-knuckle grip wraps wrapped over fingerless gloves in a stacked technique",
+      "Sponsor tag on jacket partially burned or laser-scorched (indicates illegal fight history or arena damage)",
+      "Multiple small tears in the fleece, sealed but visible",
+      "Sweat stains darkening the fabric at the armpits and inner thighs"
+    ],
+    "tier_indicator": "Tier 5 (sub-grade/ungoverned). This is salvage-and-street-market gear, illegal fight circuit exclusive. No corp branding, no warranty, no legitimacy.",
+    "cultural_context": "Underground fighter. Illegal augmentation infrastructure. Pitwall House loyalty (criminal sports syndicate). Wearing this signals: I fight for money I need, in places the law doesn't reach. Anti-corpo. Augmented (likely).  Dangerous.",
+    "condition_typical": "Weathered and patched. Fabric showing impact scarring, sweat saturation, small repairs. The tape wraps are dirty, sometimes re-wound mid-fight. Everything smells like concrete dust, adrenaline sweat, and cheap antiseptic."
+  },
+  "image_prompt": "Shirtless cyberpunk fighter in a pitch-black compression vest with visible chrome augmentation mount points on the shoulders, wearing deep indigo reinforced fight shorts and wrapped knuckles. Dirty white tape wraps visible over fingerless gloves. Gray fleece warm-up jacket draped loose over the shoulders, one sleeve burned at the sponsor tag. Scars and impact marks visible on the torso. Dark urban gym backdrop with harsh red neon lighting from above, concrete floor, water droplets catching the light. Moody, gritty, underground fight circuit aesthetic. Model has visible subcutaneous augmentation traces along the neck. --ar 2:3 --v 6"
 }

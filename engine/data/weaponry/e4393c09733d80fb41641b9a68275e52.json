@@ -45,5 +45,38 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus KS-11 'Coffin Nail'",
+    "Carrion Defense Works",
+    "Chromeworks Silhouette-S Ghost Walker Leg",
+    "GLMZ",
+    "Magpie",
+    "NeuralPath HarmonicRoot Perfect Pitch Mod",
+    "Nika Svensson-Kone",
+    "Patient Zero",
+    "The Riveters' Round"
+  ],
+  "physical_description": {
+    "visual_profile": "A skeletal, purpose-built precision instrument that screams extreme-range lethality. The AMR-3's defining characteristic is its exceptionally long, pencil-thin barrel that dominates the entire weapon profile — it's all business, stripped of everything unnecessary. The stock is minimalist and angular, the action utterly exposed, giving it the appearance of a surgical tool rather than a firearm. There's something almost predatory about its proportions: a weapon designed to kill from beyond the horizon.",
+    "dimensions": "1,900mm assembled length; 1,200mm barrel; compact when broken into three field-packed sections (each ~650mm when disassembled)",
+    "weight_description": "Substantial at 16kg, but distributed along the barrel for balance. Feels heavy enough to demand respect, yet not unwieldy when properly supported — a precision instrument that requires commitment, not a spray weapon",
+    "primary_material": "Chromium-molybdenum steel barrel with aerospace-grade aluminum receiver and titanium action components. Composite stock of carbon-fiber-reinforced polymer with steel reinforcement points",
+    "finish": "Matte black Cerakote coating on steel surfaces with a gunmetal gray anodize on aluminum. The barrel has a distinctive honed, almost brushed appearance — evidence of precision machining and harmonic tuning marks visible under close inspection",
+    "color_scheme": "Primary matte black with gunmetal gray accents. Minimal visual noise — pure functional aesthetics. Bare titanium action bolts visible as small silver points",
+    "grip_texture": "Textured composite grip with micro-pattern texture for secure holding in field conditions. Bare aluminum furniture with subtle knurling for positive control. Cool to the touch, industrial feel",
+    "distinctive_features": [
+      "Extraordinarily long, precision-honed barrel with visible machine marks indicating harmonic dampening treatment",
+      "Exposed precision bolt with zero-play engineering visible on the receiver face",
+      "Three-point rapid-disassembly system with flush quick-release pins color-coded (red/blue/yellow)",
+      "Integral Picatinny rails on receiver and barrel for optics and ballistic computers",
+      "Ammunition storage cavity in stock base containing weapon-specific ballistic profile cards (laminated, wear-resistant)",
+      "Serial number and factory test-fire data engraved on receiver with microscopic precision",
+      "Heat vents along receiver to manage thermal signature from sustained use",
+      "Minimal muzzle device — just a small precision crown with no flash hider (designed for 2,500m+ where muzzle flash is irrelevant)"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS stamped on receiver in small, utilitarian sans-serif font. Weapon-specific serial number and factory test-fire coordinates laser-etched on aluminum rail. Caliber marking (12.7x108mm MATCH) beneath the chamber. Tier-5 military-only classification stamp on the stock (small red triangle with Greek phi symbol Φ inside)",
+    "condition_typical": "Factory-fresh condition when deployed (the Gravedigger is too specialized for field maintenance). Shows minimal wear due to low round count. May display light surface marks from storage and transport, but the precision surfaces remain pristine. This is a weapon that gets broken down and stored immediately after use"
+  },
+  "image_prompt": "Ultra-detailed product photograph of a futuristic anti-materiel rifle against charcoal-black brushed metal surface. Extreme long-barrel sniper rifle with skeletal titanium and aluminum construction, matte black Cerakote finish with gunmetal gray accents, precision-machined exposed action, thin pencil-barrel 1200mm long. Dramatic moody side-lighting from cool blue-white LED source revealing micro-machining details and harmonic tuning marks on barrel. Gloved hand in tactical gear gripping composite stock to show scale. Cyberpunk weapon catalog aesthetic, industrial precision manufacturing. Military-tier weaponry. Shot from 45-degree angle showing barrel length dominance. --ar 3:2 --v 6"
 }

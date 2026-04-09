@@ -44,5 +44,35 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Free Assembly",
+    "Magpie",
+    "Nika Svensson-Kone",
+    "TESSERA PG-2 'Signature'",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, competition-grade assault rifle with an almost surgical aesthetic. The VSX-7 presents a minimalist profile — no unnecessary rails or modular clutter. Its lines are clean and purposeful, suggesting engineered precision rather than tactical brutality. The receiver shows subtle milling marks that speak to hand-fitted craftsmanship. It looks expensive and fragile.",
+    "dimensions": "Overall length: 96 cm | Barrel length: 55 cm | Width at receiver: 4.2 cm | Height with integral scope mount: 12 cm",
+    "weight_description": "Surprisingly light in hand at 3.9 kg — balances forward-heavy toward the barrel, but the weight distribution feels intentional and refined. Hefty enough to feel substantial, but never clumsy. Assumes professional-grade operator strength.",
+    "primary_material": "Titanium-alloy receiver and barrel shroud; precision-lapped steel match-grade barrel; carbon-composite furniture and handguard with embedded thermal management channels",
+    "finish": "Matte gun-metal gray on receiver with mirror-polished barrel; carbon-composite furniture in deep charcoal with subtle brushed sapphire accents. Overall aesthetic: understated luxury rather than tactical aggression.",
+    "color_scheme": "Gun-metal gray (receiver), polished steel (barrel), charcoal black (stock/handguard), sapphire blue accent striping along the rail system",
+    "grip_texture": "Ergonomic polymer grip with microscopic cross-hatch texturing — just enough friction for wet or gloved hands without being abrasive. Wrapped in a thin synthetic leather racing-style sheath.",
+    "distinctive_features": [
+      "Integral BCI neural interface port — recessed, flush-mounted at the rear receiver, marked with small Φ symbol",
+      "Weapons Learning AI indicator — three tiny LED dots (amber, cyan, green) that glow faintly based on ballistic profile maturity",
+      "Precision-lapped barrel visible through a carbon-fiber side-mounted observation window showing internal machining marks",
+      "Match-grade chamber — chrome-polished, visibly tighter tolerance than standard rifles",
+      "Minimal iron sights (competition-grade backup aperture) integrated into receiver — no fixed front post, clean top line",
+      "Serial plate on left receiver: hand-engraved gunsmith initials and rifle number (e.g., '047/200')",
+      "Heat-management channels along handguard with microscopic corrugations — functional and aesthetic",
+      "VOLKOV-SAITO logo (Cyrillic 'В' interlocked with Japanese character) laser-etched onto safety lever",
+      "Match-grade trigger housing — visible through dust cover when open, showing internal precision components"
+    ],
+    "manufacturer_markings": "VOLKOV-SAITO PRECISION — laser-etched in Cyrillic and English along the top-left receiver. Serial plate (hand-engraved) on left side below charging handle. Individual gunsmith's initials etched into trigger housing. 'STRELOK' stamped in small letters above the magazine well.",
+    "condition_typical": "Pristine or extremely well-maintained. These weapons are babied by their owners. Micro-scratches from careful handling, but no dings or corrosion. Match ammunition brass casings kept immaculate. The rifle arrives in a climate-controlled case and stays there when not in use. Field-used examples show minimal wear — just the faintest patina on grip areas."
+  },
+  "image_prompt": "Product photography of Volkov-Saito Precision VSX-7 Strelok assault rifle. Weapon mounted on dark brushed steel surface or cradled in tactical gloved hands. Dramatic side-lighting accentuates the polished barrel and precision milling marks. Close-up detail of the recessed BCI interface port with faint LED glow (sapphire blue). Show hand-engraved serial plate and gunsmith initials. Emphasize the surgical precision aesthetic — clean lines, no tactical clutter, competition-grade DNA. Shallow depth of field isolating barrel and receiver. Cyberpunk color grading: cool gun-metal tones, slight cyan-sapphire accent lighting. Product-grade clarity. Professional gunsmith workshop background slightly out of focus. --ar 3:2 --v 6"
 }

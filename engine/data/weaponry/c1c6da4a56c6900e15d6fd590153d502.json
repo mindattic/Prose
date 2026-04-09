@@ -43,5 +43,37 @@
     "accurate",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Ebele Medina-Quaye",
+    "Nika Svensson-Kone",
+    "Oleander Tetteh-Vasyliev",
+    "Parliament",
+    "The Burden Clause",
+    "Vanta Ordnance Phalanx VO-8 'Centurion'",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A full-size combat pistol with aggressive, purposeful geometry. The slide is prominently beveled and serrated; the frame sits low and wide with a pronounced dust cover extending forward. The oversized trigger guard creates a distinctive squared-off silhouette. It reads as serious, purpose-built hardware — no aesthetic compromises.",
+    "dimensions": "Length: 21.6 cm | Height: 13.7 cm (including sights) | Width: 3.3 cm | Barrel length: 12.7 cm",
+    "weight_description": "Substantial and reassuring in hand — 1.15 kg gives it genuine heft without feeling unwieldy. The steel frame provides ballast that settles the weapon during recoil management.",
+    "primary_material": "Forged steel frame and slide with hand-fitted precision tolerances. Match-grade steel barrel with polished feed ramp.",
+    "finish": "CeraShield proprietary ceramic-polymer coating in gunmetal gray with a matte, slightly textured surface resistant to gloss and reflection.",
+    "color_scheme": "Gunmetal gray primary with dark charcoal accents on the slide serrations. Stainless steel trigger and small internal components visible through the oversized trigger guard.",
+    "grip_texture": "Aggressive grip texture — aggressive 25 LPI checkering in a diagonal pattern covering the front and back strap. Feels like fine sandpaper under gloved fingers.",
+    "distinctive_features": [
+      "Aggressive front and rear slide serrations with sharp, pronounced edges",
+      "Oversized trigger guard (can accommodate two fingers or heavy tactical gloves)",
+      "Integrated Picatinny rail under the dust cover, precisely machined flush",
+      "Beveled magazine well for rapid reloads",
+      "Night sight dovetails (white outline rear, white-dot front)",
+      "Match-grade barrel crown visible in the muzzle",
+      "Heavily stippled grip panels with ergonomic undercut behind the trigger guard",
+      "Recessed slide stop and magazine release — no sharp snags"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS etched in block capitals along the left slide. ARC-P1 CENTURION stamped below. Serial plate mounted on the frame beneath the slide, engraved. CeraShield™ trademark marked discreetly on the left frame near the trigger guard.",
+    "condition_typical": "Factory fresh or well-maintained field condition. Even heavily used examples show minimal cosmetic wear due to CeraShield durability — finish remains matte and unmarred. Internally immaculate with tight tolerances preserved through component quality."
+  },
+  "image_prompt": "Close product photography of a full-size steel combat pistol chambered in .45 ACP, displayed on a matte black gunmetal surface with dramatic side-lighting casting deep shadows across the slide serrations. The weapon is angled 45 degrees to showcase the integrated Picatinny rail, oversized trigger guard, and match-grade barrel crown. Gloved tactical hand (dark leather or polymer) grips the checkered stippling. Gunmetal-gray CeraShield finish catches sharp highlights; night sight dovetails visible. Corporate minimalist studio setting with cool blue ambient light and warm key light emphasizing texture. Cyberpunk 2226 aesthetic — expensive, precision-engineered, built for consequence. Canon EOS R5, 100mm macro lens, f/2.8, studio strobes --ar 3:2 --v 6"
 }

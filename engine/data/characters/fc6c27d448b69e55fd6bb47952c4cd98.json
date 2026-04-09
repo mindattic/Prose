@@ -99,5 +99,12 @@
     "posture_movement": "Alert and grounded. Stands with weight balanced slightly forward, ready to move. Moves with purposeful economy — no wasted motion. Climbs and descends with practiced confidence. In conversation, maintains steady eye contact and often leans in slightly when listening.",
     "clothing_style": "Tier 4 practical. Heavy-duty cargo pants in dark gray or tan with multiple pockets, often salt-stained. Worn steel-toed boots, leather creased and scuffed from dock work. Layered with a fitted athletic underlayer and a windproof jacket in charcoal or navy — brands are functional (Cargotech, Harborfit), not flashy. Often carries a tool belt or cargo vest. No jewelry except a simple steel watch that's water-resistant to 200m depth. Overall impression: someone who owns one or two outfits and wears them until they need replacing."
   },
-  "image_prompt": "A weathered Polynesian-Russian woman in her late thirties, athletic build, dark braided hair with salt-bleached highlights, standing on an industrial dock at dawn. She wears practical cargo pants, worn steel-toed boots, and a charcoal windproof jacket over athletic gear. Faint scars visible on her left forearm. Lake Michigan visible in soft morning light behind her, shipping containers stacked in the background, moody blue-gray cyberpunk port atmosphere. She has the bearing of someone who understands water and metal. Film noir meets industrial realism, cinematic lighting with cool shadows, shot at eye level, gritty and authentic --ar 2:3 --v 6"
+  "image_prompt": "A weathered Polynesian-Russian woman in her late thirties, athletic build, dark braided hair with salt-bleached highlights, standing on an industrial dock at dawn. She wears practical cargo pants, worn steel-toed boots, and a charcoal windproof jacket over athletic gear. Faint scars visible on her left forearm. Lake Michigan visible in soft morning light behind her, shipping containers stacked in the background, moody blue-gray cyberpunk port atmosphere. She has the bearing of someone who understands water and metal. Film noir meets industrial realism, cinematic lighting with cool shadows, shot at eye level, gritty and authentic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 48.8,
+    "Pacific Islander": 34.5,
+    "Hispanic/Latin American": 6.3,
+    "South Asian": 5.9,
+    "Sub-Saharan African": 4.5
+  }
 }

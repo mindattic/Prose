@@ -48,5 +48,26 @@
     "TESSERA TC-3 'Crucible'",
     "The Crucible",
     "Thermal Induction Breaching Charge TIBC-1 'Slagwall'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Heavy-duty protective apron with industrial presence. Deep charcoal grey split-leather body dominated by matte black hexagonal carbon-ceramic tiles across chest and thighs. Asymmetrical wear patterns and impact marks create a lived-in, battle-tested aesthetic. Paired shoulder bib wraps the upper torso. Silhouette is broad-shouldered and imposing when worn—designed for thermal and impact protection in high-heat environments.",
+    "fit": "Relaxed, oversized cut to accommodate layering and movement. Hangs from shoulders with adjustable straps; ceramic tile panels sit flush against the body with slight flex. Length extends mid-thigh. Designed to be worn over standard workwear without restriction. Quick-release buckles allow one-handed emergency removal.",
+    "primary_material": "Split leather (charcoal grey), carbon-ceramic composite tiles. Street-salvage versions use reclaimed industrial leather with ghost impressions of prior manufacturer marks.",
+    "texture": "Leather is worn smooth in high-contact areas, rough and textured elsewhere. Hexagonal tiles are matte-finish ceramic with subtle surface irregularities from thermal stress and impact. Edges slightly beveled. Individual tiles show micro-fractures and discoloration from years of spatter accumulation.",
+    "color_scheme": "Deep charcoal grey leather body. Matte black hexagonal tiles. Burnished bronze or chrome buckle hardware. Organic rust-orange and white spatter stains accumulate across tiles over time, creating a unique signature pattern per wearer.",
+    "closures": "Quick-release buckles on shoulder straps rated for 2-second emergency removal. Secondary friction-fit adjustment points. Chrome arm wearers often remove left strap entirely.",
+    "distinctive_features": [
+      "Overlapping hexagonal carbon-ceramic tiles on chest and thigh panels",
+      "Unique spatter-burn signature develops per wearer over career",
+      "Shoulder bib wrap configuration",
+      "Two-second emergency strip-off rated straps",
+      "Street versions: visible ghost logos and brand marks from reclaimed leather",
+      "Asymmetrical wear patterns indicating dominant hand and movement habits",
+      "Micro-fractures in tile matrix visible under close inspection"
+    ],
+    "tier_indicator": "Tier 3-4 working class. GeneFit manufacture signals official sector affiliation. Street-salvage versions (Crucible district) indicate Tier 4-5 fringe industrial workers.",
+    "cultural_context": "Marks the wearer as a forge worker, smelter tech, or heavy industrial fabricator. Spatter patterns function as a de facto résumé—depth and distribution of marks indicate years of experience and specialization. Wearing a 'clean' rig signals either apprenticeship or recent equipment rotation. Modified single-strap configuration with chrome arm removal is common among augmented workers.",
+    "condition_typical": "Always battle-worn. Tiles show accumulated thermal discoloration, spatter marks, and minor fractures. Leather creased and darkened from sweat and heat exposure. Buckles tarnished or corroded. Visible repair patches on street-salvage versions. The more damage and spatter, the higher the wearer's status in forge culture."
+  },
+  "image_prompt": "Cyberpunk fashion photograph: close-up and full-body shot of Slagwall Forge Apron on augmented industrial worker. Deep charcoal leather with matte black hexagonal ceramic tiles across chest and thighs, visible spatter stains in rust-orange and white. Quick-release buckles catch moody overhead lighting. Dark warehouse backdrop with heat-haze distortion and distant foundry glow. Model's left shoulder shows chrome arm cyberlimb. Tiles show micro-fractures and thermal stress marks. Gritty, worn authenticity—no pristine surfaces. Shallow depth of field on tile detail. Heavy contrast, cool-blue shadows, amber-orange spatter highlights. --ar 2:3 --v 6"
 }

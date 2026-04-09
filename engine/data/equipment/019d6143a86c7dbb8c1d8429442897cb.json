@@ -48,5 +48,25 @@
   "parent_corponation": "",
   "related_entities": [
     "Lazarus Pharmaceuticals"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, professional-grade medical case with a distinctive two-tone design: matte charcoal upper panel with brushed steel lower compartment. The lid features an integrated diagnostic scanner head that retracts into the case. Angular, utilitarian aesthetic with soft-edge industrial styling. Appears purpose-built for rapid deployment by corporate security personnel.",
+    "dimensions": "25cm width × 15cm depth × 8cm height — compact enough for a shoulder bag, roughly the size of a thick hardcover book",
+    "weight_description": "2.1 kg — handheld but substantial; designed to be carried in a protective sling or mounted to corporate security tactical gear",
+    "primary_material": "Aerospace-grade aluminum alloy frame with impact-resistant polymer composite panels",
+    "finish": "Matte powder-coat on charcoal sections; brushed steel lower compartment with a subtle satin sheen. Edges are beveled and reinforced with nickel-plated corners",
+    "color_scheme": "Deep matte charcoal (RAL 7016) with polished steel accents; interior lined with medical-grade white and pale cyan sections. Accents of emerald green on diagnostic interface bezels",
+    "interface_elements": "Top-mounted diagnostic scanner with a small circular lens array (5cm diameter); recessed pressure-touch activation pad; secondary interface port on right side for neural crash kit connection; three individually labeled injection ports (color-coded: red for nanite, blue for antitoxin, green for foam). Small LED status indicator strip along the front edge cycling blue-to-green when functional",
+    "distinctive_features": [
+      "Integrated scanner arm that extends 12cm when deployed, then retracts into lid for storage",
+      "Holographic AR overlay display on the inside of the lid showing real-time diagnostics",
+      "Sterling-Nakamura proprietary locking mechanism with biometric fingerprintensor on handle",
+      "Military-spec carry handle with rubberized grip and mounting points for carabiners",
+      "Translucent side panels revealing organized compartments for each medical compound",
+      "Thermally isolated compartments for temperature-sensitive pharmaceuticals (visible via faint frost patterns during use)"
+    ],
+    "manufacturer_markings": "STERLING-NAKAMURA logo embossed in top-left corner; 'EMK-3' designation in small silver lettering; regulatory compliance stamps (GLMZ Medical Authority, North American Corp Standards); Lazarus Pharmaceuticals sub-license marking on nanite injection ports",
+    "condition_typical": "Pristine in professional environments; shows minor scuff marks and wear on handle corners from regular field use. Diagnostic lens may show slight residue from biological scanning. Interior compounds remain sealed in individual pods until deployment"
+  },
+  "image_prompt": "Sterling-Nakamura EMK-3 medical kit displayed open on a stainless steel surgical workbench, diagnostic scanner arm extended and glowing with soft blue scanning light. Dark charcoal case with brushed steel lower panel, interior compartments visible with color-coded nanite injectors and hemostatic foam canisters. Holographic medical readout projecting from the scanner lens. Cyberpunk medical facility setting with cool cyan and emerald accent lighting, dramatic shadows cast by overhead surgical lights. Corporate-sterile aesthetic with military precision. Close-up detail shot showing biometric lock mechanism and Φ currency price tag. Product photography style, shallow depth of field. --ar 3:2 --v 6"
 }

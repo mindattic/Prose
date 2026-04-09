@@ -80,5 +80,23 @@
     "Vantablack Media Parasocial Carrier Mask",
     "Vantablack-CNX",
     "Zheng-Dao Bioelectric Chemoreceptive Dermal Patch"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A minimalist two-piece system: a flesh-tone dermal patch resembling a medical adhesive strip, paired with a discrete metallic clip-module no larger than a thumbnail. Designed for invisibility, not aesthetics. The patch sits flush against skin with barely-visible circuitry traces; the processor unit is industrial and utilitarian.",
+    "dimensions": "Patch: 40mm × 20mm; Processor module: 18mm × 12mm × 4mm (thumbnail-sized)",
+    "weight_description": "Featherweight — 18g combined. Pocketable/wearable without any tactile burden. Designed for zero-friction insertion into daily routine.",
+    "primary_material": "Patch: silicone-polymer substrate with printed conductive tracery. Processor: machined titanium alloy chassis with ceramic capacitor banks visible through translucent inspection port.",
+    "finish": "Patch: matte flesh-tone with micro-textured grip surface. Processor: brushed metal with satin-black accents around connection nodes.",
+    "color_scheme": "Patch: skin-tone beige with copper-colored conductive traces barely visible. Processor: gunmetal gray with obsidian black port surrounds and a single amber LED indicator (dormant until active pairing).",
+    "interface_elements": "Patch: nearly imperceptible — only contact pads for skin coupling visible on underside. Processor clip: single amber diagnostic LED, micro-USB hidden beneath spring-loaded access panel, textile collar-clip attachment point, subtle haptic feedback motor housing (felt as vibration rather than seen).",
+    "distinctive_features": [
+      "Conductive tracery pattern on patch resembles organic neural pathways — intentional design language",
+      "Processor's translucent inspection port reveals layered ceramic and polymer internals in precise strata",
+      "Amber LED pulses in specific rhythm patterns during encryption key sync (recognizable to trained operators)",
+      "Haptic feedback signature is distinctive — three micro-bursts means successful transmission, single long pulse means pairing mode active"
+    ],
+    "manufacturer_markings": "RINGO CORPONATION wordmark (minimized to 3mm) on processor clip in white reverse-print. Regulatory stamps on patch substrate include GLMZ biocompatibility certification and cryptographic authority sigil (Φ-certified). Serial number etched on processor interior, invisible without disassembly.",
+    "condition_typical": "In use: patch nearly invisible under sleeve cuff or integrated into palm-side wrist wear; processor clip secured inside collar or hoodie drawstring, amber LED dark unless actively syncing. Worn appearance shows minor dermal adhesive degradation after 2-3 weeks, requiring patch replacement; processor remains pristine if not damaged by impact."
+  },
+  "image_prompt": "Product photography of a bioelectric communication patch system in cyberpunk aesthetic: dermal patch (4cm silicone square with copper circuit traces) and thumbnail-sized titanium processor clip displayed on matte black workbench. Dramatic side-lighting with cool blue and amber neon glow, highlighting the conductive tracery on the patch and the single amber LED on the processor module. One patch shown in-place on a pale wrist model, the other laid flat beside the processor unit. Shallow depth of field with chrome precision tools blurred in background. Technical, clinical, utilitarian aesthetic — designed-for-invisibility makes it look more sinister. Cinematic cyberpunk product shot, clean workspace, no clutter. --ar 3:2 --v 6"
 }

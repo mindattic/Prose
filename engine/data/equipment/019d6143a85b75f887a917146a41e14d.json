@@ -82,5 +82,24 @@
     "Vantablack Media Parasocial Carrier Mask",
     "Zheng-Dao Heavy Industries MGL-8 'Thresher'",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist neck collar or wrist band that mimics high-end biometric jewelry. At first glance, indistinguishable from corporate wellness trackers or status symbols worn by GLMZ commuters. The form is organic and elegant — no aggressive edges or tactical aesthetics that might raise suspicion.",
+    "dimensions": "Collar band: 28 cm circumference, 1.8 cm width, 0.9 cm depth. Fits standard adult neck or wrist; adjustable micro-clasp system. Overall compact and unobtrusive.",
+    "weight_description": "85 grams — light enough to forget you're wearing it. Sits like a thin piece of jewelry against skin; no carrying strap needed.",
+    "primary_material": "Brushed titanium alloy housing with internal RF shielding. Polished stainless steel micro-clasp. Flexible polymer backing where it contacts skin.",
+    "finish": "Matte brushed titanium with satin-polished stainless accents. Deliberately industrial-minimalist, designed to blend into corporate aesthetic. No reflective surfaces; subdued and professional.",
+    "color_scheme": "Gunmetal grey primary, with silver/platinum micro-accents around the clasp and inductive port. No chromatic flourishes — deliberately dull and forgettable.",
+    "interface_elements": "Recessed inductive charging port on inner face (shielded). Subtle haptic feedback micro-motors embedded in contact surface for vibration alerts. No visible screen or button interface — all control is via encrypted companion app on external device. Single indicator LED (hidden under curve of band) for power/sync status.",
+    "distinctive_features": [
+      "Inductive port sits flush within inner band, disguised as aesthetic design element",
+      "Haptic feedback system produces skin-level vibrations — proprioceptive rather than audible alerts",
+      "Zero external buttons or input surfaces — completely passive visual presentation",
+      "Micro-weight distribution ensures no audible noise or movement when worn",
+      "Brushed finish eliminates fingerprints and reflections — anti-surveillance design"
+    ],
+    "manufacturer_markings": "TESSERA CORPORATION logo micro-etched on clasp (requires close inspection). Regulatory marking denoting 'Passive Biometric Device' in compliance with GLMZ Wearable Standards. Serial number stamped internally on band interior.",
+    "condition_typical": "Worn continuously around neck or wrist, blending seamlessly with other jewelry and smart-accessories. Often paired with similar-looking legitimate biometric collars to provide plausible cover. Shows minimal wear; high-grade materials resist scratching and discoloration from sweat/exposure."
+  },
+  "image_prompt": "Close-up product photography of a brushed titanium neck collar laid flat on a dark composite workbench, angled to catch dramatic side-lighting that emphasizes its minimal geometry. Shallow depth of field with blurred encrypted data streams or radio frequency visualization in bokeh background. Inductive port interior glowing faintly with blue RF indicator. Cyberpunk aesthetic: cool tungsten lighting, moody shadows, hint of holographic interference patterns on the brushed metal surface. Photorealistic detail on material grain and subtle wear. Shot from above, portrait orientation. --ar 3:2 --v 6"
 }

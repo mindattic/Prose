@@ -42,5 +42,37 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Free Assembly",
+    "GLMZ",
+    "Ionic Thermoclastic Rifle ITR-5 'Ashmaker'",
+    "Nika Svensson-Kone",
+    "The Nearfield",
+    "Zheng-Dao Heavy Industries Plasma Cutter PC-X1 'Dragon's Breath'",
+    "Zheng-Dao Heavy Industries Portable Fusion Battery PFB-2",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist precision instrument with aggressive thermal management—long, angular sniper profile dominated by a massive cryogenically-jacketed barrel assembly. The weapon has an ominous, purposeful stance: all hard lines, heat dissipation fins, and barely-contained industrial violence. Frost perpetually clings to its exterior, giving it an almost cursed appearance.",
+    "dimensions": "145cm total length, 8cm barrel diameter (with cooling jacket), 6cm width at receiver, scope rails extending 18cm above centerline",
+    "weight_description": "Substantial but balanced—14kg rifle feels distributed across the lengthy barrel and stock. The 6kg cooling pack mounts dorsally, shifting weight toward the user's support shoulder. Hefty without being unwieldy; designed for mounted or braced fire.",
+    "primary_material": "Titanium-alloy barrel assembly with integrated cryogenic circulation channels, reinforced polymer composite stock, hardened steel receiver",
+    "finish": "Matte gunmetal gray with persistent frost coating on all thermal surfaces. Heat-scorched carbon scoring around the muzzle where plasma containment fields collapse. Cooling jacket shows faint ice crystal patterns and thermal stress discoloration—purples and blues from repeated cryogenic cycling.",
+    "color_scheme": "Gunmetal gray primary, with accent bands of deep blue-purple frost discoloration on barrel. Muzzle ring glows faintly amber at the plasma generation point when powered. Cooling pack's circulation tubes visible through semi-transparent polymer—liquid nitrogen flows in pale blue.",
+    "grip_texture": "Textured polymer grip with integrated thermal glove anchor points. Slightly tacky to prevent slipping from condensation. Magazine well has raised ridges for gloved manipulation.",
+    "distinctive_features": [
+      "Crystalline frost formations permanently etched into barrel cooling jacket—never fully melts",
+      "Prominent muzzle ring with magnetic containment coils visible as concentric circles",
+      "Vertical cooling pack mounted above stock with transparent circulation windows showing cryogenic fluid flow",
+      "Dual thermal status LEDs (one for barrel temp, one for plasma charge level) embedded in stock",
+      "Heat stress scarring radiating from muzzle like burn marks",
+      "Zheng-Dao ideogram stamped on cooling pack in copper-colored inlay",
+      "Cryogenic warning labels in Mandarin and English on cooling pack",
+      "Precision elevation/windage adjusters with thermal compensation scales"
+    ],
+    "manufacturer_markings": "ZHENG-DAO HEAVY INDUSTRIES logo on cooling pack in embossed copper. Serial number and thermal weapons registration plate mounted on left receiver side in small brass inset. Pressure relief valve caps labeled with ideographic safety warnings.",
+    "condition_typical": "Field units show heavy frost accumulation, scorch marks around the muzzle expanding in concentric rings from repeated shots. Cooling tubes may show slight discoloration from extended use. Polymer stock develops micro-fractures from thermal cycling. Dust and ice buildup in cooling fins—operators must regularly purge with compressed air to maintain heat dissipation."
+  },
+  "image_prompt": "Close product photograph of the Zheng-Dao Dragon's Breath DB-8 Kiln sniper rifle, mounted on a dark gunmetal workbench. Weapon positioned at three-quarter angle to show full barrel length and dorsal cooling pack. Dramatic side-lighting from upper left casts sharp shadows across the frost-encrusted barrel jacket, emphasizing the crystalline thermal scoring. The cooling pack's semi-transparent panels glow faintly with pale blue liquid nitrogen visible inside circulation tubes. Muzzle ring's magnetic containment coils catch highlights, appearing as concentric circles of reflected light. Heavy frost and ice crystals coat all thermal surfaces, with heat-stress burn marks radiating from the muzzle in purple-brown discoloration. Zheng-Dao ideogram visible on cooling pack. Overhead ambient light is cool and clinical, suggesting a black-market armory environment. Cyberpunk aesthetic: industrial, militaristic, thermally dangerous. --ar 3:2 --v 6"
 }

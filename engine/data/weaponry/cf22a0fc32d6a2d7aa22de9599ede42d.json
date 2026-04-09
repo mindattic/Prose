@@ -44,5 +44,41 @@
     "breaching",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Aslan Granlund-Tawiah",
+    "Concrete",
+    "Crucible CX-0 'Lazarus Heap'",
+    "Crucible Industries CT-X 'Gauntlet'",
+    "Crucible Industries Kinetic Knuckles KK-3 'Jackhammer'",
+    "Free Assembly",
+    "GLMZ",
+    "Kairos",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Tender Collapse"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist gauntlet with industrial purposefulness — bulky forearm casing that tapers into reinforced knuckles, giving it a sledgehammer-fist appearance. The pneumatic system is visible as a honeycomb of pressure ports and relief valves running along the dorsal side. First impression: engineered violence dressed as construction equipment.",
+    "dimensions": "Gauntlet length (wrist to fingertip): 32 cm. Forearm casing width: 11 cm. Knuckle assembly protrusion: 4 cm. Overall weight distributed to forearm.",
+    "weight_description": "Hefty but balanced — the 2.1 kg mass sits naturally on the forearm, with the pneumatic cartridge housing providing counterweight that prevents arm fatigue during extended operations. Feels anchored, intentional.",
+    "primary_material": "Hardened composite shell with embedded titanium alloy reinforcement at impact zones. Forearm section houses brushed steel pneumatic manifold.",
+    "finish": "Matte charcoal composite with satin-finish steel valving. The knuckle strike plate shows polished titanium beneath a network of fine stress fractures from repeated impacts — battle-scarred but maintained.",
+    "color_scheme": "Dominant charcoal gray composite with brushed steel accents. Pressure gauge dial features red warning zones. Cartridge housing collar is anodized aluminum silver.",
+    "grip_texture": "Textured rubberized polymer with integrated grip ridges, designed for both bare hand and armored gauntlet use. Slightly tacky, high-friction surface.",
+    "distinctive_features": [
+      "Pneumatic piston visible as a recessed metal cylinder in the knuckle assembly with chrome firing rod",
+      "Array of small pressure relief ports along the forearm creating a distinctive vent pattern",
+      "Analog pressure gauge (0-300 bar) mounted on outer forearm with red needle indicator",
+      "Quick-release cartridge collar with indexed rotation alignment marks",
+      "Impact scars and micro-dents across knuckle plate showing concrete dust residue in crevices",
+      "Weep holes for condensation drainage running along the wrist band",
+      "Riveted seam lines where composite shell bonds to steel internal framework"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (interlocking A-D) stamped into the heel of the gauntlet. Serial number engraved on forearm manifold beneath pressure gauge. 'PILE DRIVER PG-1' etched in sans-serif type on the cartridge collar. Iron Point Ammunition cartridge packaging symbol visible on stored gas cylinders.",
+    "condition_typical": "Field-worn but meticulously maintained. The composite shows cosmetic scuffing and impact marks consistent with industrial demolition work, but all seals are clean and the pneumatic system is regularly serviced. Pressure gauge is slightly discolored from handling, needle tracking smoothly."
+  },
+  "image_prompt": "Product photography of a pneumatic gauntlet weapon mounted on an articulated industrial mannequin hand, positioned mid-punch against a dark matte surface. The gauntlet is rendered in charcoal composite and brushed steel with visible pressure ports and a polished titanium knuckle strike plate bearing impact scars. Dramatic side-lighting from upper left creates sharp shadows across the pneumatic manifold and emphasizes the depth of the vent ports. The pressure gauge glows faintly red in the highlights. Background is deep charcoal fading to black. A loose gas cartridge with silver aluminum collar rests beside the gauntlet. Cyberpunk aesthetic: industrial, utilitarian, battle-tested. High resolution, sharp detail on impact wear patterns and riveted seams. --ar 3:2 --v 6"
 }

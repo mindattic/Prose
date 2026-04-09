@@ -41,5 +41,24 @@
     "Ambrosia Fekete-Waiyaki",
     "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
     "Shelf Zipline Network"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek, minimalist arm sleeves that hug the bicep and forearm with a subtle athletic taper. They read as utilitarian and modular—designed to be peeled on and off without ceremony. The thumb-loops create small anchor points at the wrists, giving the sleeves a finished, intentional look even when removed.",
+    "fit": "Compression-fitted through the upper arm, gradually relaxing toward the wrist. Stretchy enough to accommodate augmented limbs without restriction, but snug enough to stay in place during movement or labor.",
+    "primary_material": "Thermal-mesh synth-blend—breathable yet insulating, engineered for rapid temperature regulation.",
+    "texture": "Smooth, faintly raised herringbone weave visible under direct light. Stretchy micro-ribbed interior for grip and moisture-wicking. The chrome socket cutouts have smooth, beveled edges.",
+    "color_scheme": "Charcoal grey as primary. Chrome socket fittings provide subtle metallic accents at the inner elbow. Faint herringbone pattern breaks up the flatness without drawing attention.",
+    "closures": "Magnetic zip closure at the shoulder seam (quick-release design). Friction-fit thumb loops at wrist anchoring.",
+    "distinctive_features": [
+      "Chrome-socket cutouts at inner elbow—sized for standard augmentation quick-connect fittings",
+      "Magnetic shoulder zip rated for one-handed operation",
+      "Thumb-loop anchors prevent sleeve drift during repetitive motion",
+      "Herringbone weave texture adds visual interest without pattern noise",
+      "Seam-sealed edges reduce fraying and extend wear life"
+    ],
+    "tier_indicator": "Tier 3 functional—affordable working-class gear with practical augmentation compatibility. Not luxury, not salvage.",
+    "cultural_context": "Worn by dock workers, maintenance techs, warehouse operators, and anyone with cybernetic augmentations working variable-temperature environments. Signals hands-on labor and integration with chrome, but not desperation or wealth.",
+    "condition_typical": "Broken-in but maintained. Minor pilling on the interior where it contacts skin. Thermal-mesh fibers may show faint discoloration from sweat or industrial dust. Magnetic zips remain responsive."
+  },
+  "image_prompt": "Cyberpunk fashion close-up: pair of charcoal grey thermal-mesh arm sleeves draped over a dark chrome mannequin arm, showing the herringbone weave texture and chrome socket cutouts at the inner elbow. Magnetic shoulder zip visible and partially open. One sleeve's thumb-loop detail sharp in focus. Cool industrial lighting casting blue-grey shadows. Wet concrete and rust-stained metal backdrop. Shallow depth of field emphasizing textile quality. --ar 2:3 --v 6"
 }

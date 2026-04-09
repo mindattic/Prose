@@ -57,5 +57,42 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Bathysphere Networks",
+    "Cezar Watanabe-Gyasi",
+    "GLMZ",
+    "MindBridge SpectraLens Chromatic Expansion Module",
+    "Narrowcast",
+    "Nurlan Holmberg-Dembele",
+    "Philibert Mwangi-Djordjevic",
+    "Plot 17",
+    "The Composite Index",
+    "The Nearfield",
+    "The Portico",
+    "The Question",
+    "VitaCore BloomFilter Olfactory Modulation Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular rifle with a pronounced forward-swept profile. The barrel assembly dominates the upper half, appearing almost organic with its curved cooling channels. The stock tapers sharply toward the rear, creating an aggressive wedge silhouette. Overall impression is predatory and surgical — form follows function with zero aesthetic compromise.",
+    "dimensions": "94cm overall length, 12cm width at widest point (cooling array), 8.5cm height at receiver, barrel length approximately 52cm",
+    "weight_description": "Hefty but well-balanced. The 4.2kg mass sits forward in the barrel assembly, but the ergonomic stock placement prevents top-heaviness. Feels purposeful and planted in the hands rather than unwieldy.",
+    "primary_material": "Primary frame is aerospace-grade titanium composite with integrated heat-sink ribbing. Barrel assembly housing is polished chalcogenide glass lenses mounted in tool steel rings. Cooling circulation manifolds are visible high-grade aluminum with micro-tubing.",
+    "finish": "Matte gunmetal grey with deliberate burnishing. The chalcogenide lens array has a faint amber-to-violet iridescence under certain light angles. Cooling vents are brushed steel with slight thermal discoloration halos around exhaust ports.",
+    "color_scheme": "Primary: cool gunmetal grey with charcoal anodizing. Accents: brushed steel on thermal bleed vents, faint violet-amber iridescence on optics, subtle deep blue along the micro-circulation tubing beneath translucent polymer protective shrouds.",
+    "grip_texture": "Rubberized polymer with embedded heat-dissipating carbon fiber weave. Deeply textured, almost aggressive grip that bites into the palm. The charging handle is wrapped in braided thermal-resistant cord for sustained-fire use.",
+    "distinctive_features": [
+      "Three stacked chalcogenide lens rings visible in the forward barrel shroud, each with subtle refractive shimmer",
+      "Prominent cooling manifold running the full length of the top, with visible amber micro-tubing",
+      "Thermal bloom indicators — small LED arrays at 3 and 9 o'clock on the receiver that glow orange-to-red as weapon heats",
+      "Precision frequency modulation dial on the left side of the receiver with seventeen marked positions in Arc Font numbering",
+      "Passive bleed vents running along both sides of the barrel, with heat-scarred edges showing previous heavy use",
+      "Power cell interface on the underbody with three gold-plated electrical contact pins and status indicators",
+      "Micro-adjustable thermal sight rail with integrated ranging laser in faint red (635nm) when powered"
+    ],
+    "manufacturer_markings": "IRONSIDE ARMAMENTS stamped in small sans-serif font on the left side of the receiver. Serial number laser-etched on the mounting rail. Small Φ symbol (QUANTA pricing mark) stamped near the power cell compartment. No corporate logos — purely utilitarian marking convention.",
+    "condition_typical": "Well-maintained examples show careful handling with evidence of regular thermal cycling. Field-used units bear distinctive burnt halos around cooling vents and micro-scoring on the lens shroud from particulate exposure. Black market examples often show crude repairs to cooling manifolds and overstressed thermal indicators. Professional security contractor weapons exhibit meticulous maintenance with fresh lens coatings and recalibrated frequency arrays."
+  },
+  "image_prompt": "Product photography of a futuristic thermal rifle against a dark matte surface, three-quarter angle view. The weapon sits on brushed gunmetal grey textile backdrop with a gloved hand gripping the stock. Dramatic side-lighting from the left at 45 degrees, emphasizing the barrel's curved cooling channels and refractive lens array with amber-to-violet shimmer. Overhead key light reveals the parallel ribbing and thermal vents. The micro-circulation tubing glows faintly with cool blue undertones. Thermal bloom indicator LEDs emit a subtle amber hue near the receiver. High contrast, moody cyberpunk aesthetic with cool color temperature grading. Sharp focus on lens optics. Shot from slightly above, --ar 3:2 --v 6"
 }

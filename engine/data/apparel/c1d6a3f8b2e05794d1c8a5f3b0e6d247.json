@@ -49,5 +49,26 @@
     "The Corridor",
     "The Heritage Vault",
     "The United Workers Front"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A commanding knee-to-ankle duster with a deliberate, utilitarian silhouette that carries understated heritage. The coat drapes with authority—broad across the shoulders, tapering subtly at the waist, with a dramatic rear split that suggests both practicality and a hint of theatrical movement. The waxed canvas catches light with a soft, aged sheen that deepens toward the hem. Worn by someone with augmented lower body anatomy, it reads as intelligent accommodation; worn by a corpo on inherited savings, it reads as curated restraint.",
+    "fit": "Generously cut through shoulders and chest with room for layering or augmentation. Relaxed but intentional taper through the torso. Back split from hem to mid-thigh allows unrestricted leg movement and accommodates non-standard body modifications. Wrist adjusters with studs provide precision fit at cuffs. Silhouette suggests 2150s-2200s workwear lineage—functional, never cramped.",
+    "primary_material": "Heavy waxed cotton canvas (mid-weight standard). The wax finish is applied and maintained to develop patina; each coat becomes darker, more textured over years. Interior lined in printed flannel—tactile, muted, seasonal variations.",
+    "texture": "Exterior: smooth with slight nap, develops creasing and shadow marks at stress points (elbows, shoulders, hem folds). The wax sits cool to touch, almost buttery. Stress points darken naturally, creating a relief map of wear. Interior flannel is soft, slightly napped, with fine geometric print.",
+    "color_scheme": "Tobacco brown or charcoal primary (most popular). Antique brass hardware develops verdigris patina. Interior flannel in muted colorways—slate, sand, sage, never vibrant. Over time, the waxed exterior develops darker pooling at creases.",
+    "closures": "Antique brass press-studs down the front (8-10 studs, spaced for overlap). Wrist adjusters with matching studs. No collar closure—designed to wear open or partially buttoned.",
+    "distinctive_features": [
+      "Full rear split from hem to mid-thigh—signature Solvang design, accommodates augmented legs and tails",
+      "Antique brass studs that oxidize and develop character over years",
+      "Printed flannel lining with rotating seasonal patterns, always muted geometric",
+      "Waxed finish develops darker stress-point patina that is part of the aesthetic",
+      "No visible branding—understated heritage label",
+      "Generously cut shoulders and chest for layering or augmentation accommodation",
+      "Hem likely sits at calf to ankle depending on wearer's proportions"
+    ],
+    "tier_indicator": "Tier 3 professional grade with Tier 2 aspirational crossover. A Tier 1 corpo wearing one signals inherited taste or deliberate slumming. A Tier 5 salvager in one signals a prized find or long-term savings goal.",
+    "cultural_context": "Signals someone who moves between zones with intention. Fixers, journalists, independent contractors, medical workers, geneware users with non-standard bodies. Worn by Tier 3 professionals as 'deliberate choice.' Represents Norwegian-heritage craftsmanship and 80+ years of corridor reputation. Reads as practical intelligence rather than fashion statement—though it is both.",
+    "condition_typical": "Ranges from pristine (new purchase) to heavily patinated (5+ years wear). Most examples show visible stress-point darkening at shoulders, elbows, and hem folds. Wax finish may show slight cracking at deep creases—this is considered desirable aging. Flannel lining often more worn than exterior. Over time, the coat becomes more visually distinctive, never looking 'broken.'"
+  },
+  "image_prompt": "Flat-lay fashion photography of a Solvang Duster in tobacco brown waxed canvas, displayed on a dark matte mannequin with exaggerated shoulders and elongated proportions suggesting augmentation. The coat is buttoned halfway, rear split visible and dramatic. Antique brass studs catch moody amber accent lighting. Close-up inset showing the printed flannel lining—muted sage geometric pattern—and patinated brass hardware with verdigris bloom. Dark concrete or weathered steel backdrop. 2226 GLMZ corridor aesthetic. Slight film grain. --ar 2:3 --v 6"
 }

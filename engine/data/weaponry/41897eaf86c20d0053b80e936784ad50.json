@@ -42,5 +42,36 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Crucible Industries Siege-12 'Battering Ram'",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "The Shelf",
+    "The United Workers Front",
+    "Vantablack FH-20 'Convoy'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist wedge of industrial purpose—a massive tungsten-composite blade angled forward like a medieval prow, mounted flush against a reinforced vehicle's front end. The blade's leading edge is needle-sharp where it meets the bumper assembly, then thickens dramatically toward the hydraulic integration points. The overall impression is predatory momentum made solid.",
+    "dimensions": "Overall blade width: 240 cm (vehicle-specific mounting). Blade depth: 85 cm front-to-back. Height above bumper: 110 cm. Tungsten-composite cutting edge: 3.5 cm thick tapering to 1.2 cm point",
+    "weight_description": "Feels like concentrated gravity—400 kg of blade mass plus 200 kg of hydraulic/structural integration creates a felt impression of inexorable force. The vehicle's suspension noticeably compresses under the weight; movement is deliberate and massive.",
+    "primary_material": "Tungsten-composite blade (70% tungsten, 30% hardened steel matrix). Hydraulic cylinder bodies: chrome-plated steel. Shock absorption struts: reinforced aluminum frame with elastomer dampening sleeves.",
+    "finish": "Blade: deep gunmetal gray with micro-etched surface for reduced ricochet (industrial non-reflective). Hydraulic components: worn brushed steel with oil residue hazing. Impact scarring visible across blade face—concrete dust burnishing on the leading edge.",
+    "color_scheme": "Tungsten-gray blade (slightly darker toward leading edge due to impact oxidation). Hydraulic assemblies in industrial steel silver. Accent striping in Zheng-Dao corporate red (5cm bands at mounting points).",
+    "grip_texture": "N/A — vehicle-integrated weapon. Control interface: reinforced pressure-switch mounted on driver's console (textured rubber button with tactile feedback), approximately 4cm diameter.",
+    "distinctive_features": [
+      "Progressive-stage hydraulic cylinders (4 visible units, each 25cm bore, staggered along blade base for load distribution)",
+      "Concrete dust impact rings—visible scoring patterns where previous barriers have been breached",
+      "Zheng-Dao Heavy Industries serial plate (15cm x 8cm, mounted on right-side hydraulic housing) with stamped maintenance log cutouts",
+      "Leading edge micro-serrations (6mm teeth pattern) for structural engagement rather than slipping",
+      "Oil-stained underframe where hydraulic return lines route to vehicle's main system",
+      "Reinforced bumper brackets showing weld-point stress marks from impact cycling",
+      "Pressure gauge cluster (3x analog gauges, 7cm diameter each) mounted on accessible hydraulic manifold",
+      "Wear pattern: central blade strike zone shows marble-white concrete residue in micro-crevices"
+    ],
+    "manufacturer_markings": "Zheng-Dao Heavy Industries full corporate logotype (15cm wide) red-inlaid into steel mounting plate on right-side hydraulic assembly. Serial number etched into blade root: 'ZD-VR10-[XXXXXX]'. Installation certification plate (stainless steel, 8x12cm) bolted to underside hydraulic manifold with current maintenance date and authorized technician cipher.",
+    "condition_typical": "Field-worn and still operational. Blade retains manufacturing micro-finish on protected surfaces but shows heavy concrete scarring, steel-gray showing through where impacts have stripped micro-etching. Hydraulic components clean but oil-residue-stained. No rust (tungsten-composite resists corrosion) but visible stress whitening around weld points. Pressure gauges show consistent use history."
+  },
+  "image_prompt": "Zheng-Dao VR-10 'Plow' ram blade mounted on reinforced truck bumper assembly, angled forward in attack posture. Close product photography showing tungsten-composite gray blade with concrete-dust impact scarring and micro-serrated leading edge. Hydraulic cylinders beneath blade visible with chrome finish and oil residue. Dramatic side-lighting emphasizing blade geometry and strike-zone wear patterns. Pressure gauges and Zheng-Dao red corporate markings visible on hydraulic manifold. Dark matte background, gritty industrial cyberpunk aesthetic. Show scale with gloved hand gripping pressure-control switch on driver console detail insert. Brutalist, worn, military-grade equipment photography. --ar 3:2 --v 6"
 }

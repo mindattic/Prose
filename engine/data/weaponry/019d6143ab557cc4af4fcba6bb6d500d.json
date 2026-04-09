@@ -55,5 +55,37 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Arcturus VMG-4 'Turret'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Eshe Petersen-Bah",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Nurlan Holmberg-Dembele"
+  ],
+  "physical_description": {
+    "visual_profile": "A dense, ovoid grenade with a pronounced asymmetrical ridge running along one hemisphere—the control baffle. Sits heavy in the palm, slightly flattened at the base with a knurled fuse collar at the apex. The ridge catches light distinctly, suggesting internal complexity beneath the shell.",
+    "dimensions": "62mm diameter (widest point), approximately 68mm height including fuse assembly. Compact enough for a tactical vest pouch, substantial enough to demand respect.",
+    "weight_description": "Hefty and deliberate—340 grams concentrated in a small form factor creates a satisfying heft that demands proper grip. Not unwieldy, but dense enough that casual handling reads as dangerous.",
+    "primary_material": "Ceramic-zirconium composite shell—harder than standard steel, engineered to contain internal pressures without fragmentation.",
+    "finish": "Matte thermal-grey with light oxidation marks; the ceramic composite has a slightly chalky, heat-resistant appearance. The baffle ridge features fine machine knurling to aid tactile orientation in gloved hands.",
+    "color_scheme": "Gunmetal grey body with burnt-orange accent striping along the baffle ridge (thermal warning colorant). Fuse collar in brushed stainless steel with small red indicator dot at the impact-detonation position.",
+    "grip_texture": "The lower hemisphere is wrapped in thin, synthetic heat-dissipation tape—slightly tacky, designed for wet or bloodied hands. The baffle ridge itself is bare ceramic, intentionally textured for positive grip orientation.",
+    "distinctive_features": [
+      "Pronounced asymmetrical baffle ridge—the weapon's defining feature, running apex-to-base",
+      "Three small circular ports (dispersal vents) arranged in a forward-facing arc, barely visible until light catches them",
+      "Fuse selector collar with three engraved detent positions: impact (I), 2s (II), 4s (IV), 6s (VI)",
+      "Micro-etched ARCTURUS Defense Solutions branding along the equator, partially obscured by thermal tape",
+      "Heat-stress micro-fractures visible in the ceramic under close inspection—evidence of extreme internal temperatures during testing",
+      "Slight bulge at the grenade's widest point where the thermite slurry chamber pressurizes the outer shell"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS embossed in sans-serif block lettering around the equator, approximately 4mm tall. Model designation 'TDG-9' stamped below. A small production-date code and serial number acid-etched near the base.",
+    "condition_typical": "Field units show thermal discoloration—darkened patches where the shell absorbed radiant heat during dispersal. The baffle ridge often displays minor contact scars from magazine/pouch friction. Tape may show sweat stains or polymer degradation from harsh environments. Functionally pristine; cosmetic wear is expected and accepted."
+  },
+  "image_prompt": "Overhead product photograph of a TDG-9 Dragonspittle thermite grenade on a dark matte-black tactical mat. Grenade is positioned to show the asymmetrical baffle ridge in sharp relief, illuminated by dramatic side-lighting from the 45-degree left, creating harsh shadows that emphasize the ceramic texture and baffle geometry. A gloved tactical hand (dark synthetic material) reaches from the right edge, fingers near the fuse collar. Shallow depth of field softens the background. Gunmetal and burnt-orange colorway clearly visible. Environmental context: faint industrial ceiling grating texture in blurred background. Cyberpunk color grading with slight cyan cast. Photorealistic, cinematic lighting, extremely detailed surface texture. --ar 3:2 --v 6"
 }

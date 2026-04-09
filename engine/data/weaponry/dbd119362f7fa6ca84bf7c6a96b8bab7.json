@@ -44,5 +44,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "GLMZ",
+    "Myoelectric Seizure Projector MSP-6 'Marionette'",
+    "Nika Svensson-Kone",
+    "Patient Zero",
+    "Tessera Corponation",
+    "Tessera Neural Assault System TNAS-1 'Puppeteer'"
+  ],
+  "physical_description": {
+    "visual_profile": "Compact, aggressive PDW with a distinctly neural-integrated architecture. The frame presents as a tight bundle of purposeful curves — bulbous receiver housing, swept-back grip, minimal profile. Looks designed to be felt rather than seen, a weapon that prioritizes neural interface fidelity over traditional ergonomics.",
+    "dimensions": "38cm overall length, 24cm height with interface crown, 6cm width at widest point. 15cm barrel length, shrouded within thermal management sleeve.",
+    "weight_description": "Deceptively light — feels insubstantial in hand until the neural coupling engages. Then its weight becomes almost irrelevant; the weapon feels like an extension of intention rather than steel.",
+    "primary_material": "Aerospace-grade carbon composite frame with embedded conductive polymers for neural signal distribution. Steel internals, titanium breach block.",
+    "finish": "Matte anthracite composite with brushed nickel accents around the neural interface crown. Deliberate battle-wear finish that reads as intentional, not neglected.",
+    "color_scheme": "Deep gunmetal grey primary with crimson accent striping along the neural coupling nodes. Black grip panel with faint Arcturus branding in muted silver.",
+    "grip_texture": "Textured polymer grip with micro-ridges designed to minimize sweating interference with contactless neural detection. Slightly tacky, almost organic feel — deliberate skin-contact design.",
+    "distinctive_features": [
+      "Crown-mounted neural interface cluster with eight micro-contact points visible as burnished titanium dots",
+      "Dual thermal exhaust vents along receiver sides — aggressive asymmetric cooling design",
+      "Threat-assessment LED indicator ring (crimson/amber/green) recessed into grip housing",
+      "Caseless ammunition feed system with visible polymer magazine well integration",
+      "Attention-tracking lens mounted coaxially above barrel — small optical element with faint blue tint",
+      "Pre-fire state indicator: subtle amber glow along interface crown during active threat detection",
+      "Custom grip stippling with neural-response warning patterns etched as micro-warnings"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions hexagonal logo stamped into left side of frame in muted silver. Serial plate mounted below interface crown with liability waiver microtexting. 'IMPULSE ANPD-1' engraved in sans-serif along barrel shroud.",
+    "condition_typical": "Field-deployed units show micro-scratches around interface crown from repeated coupling/decoupling. Residual polymer dust from fast-draw holster practice. Thermal vents often show carbon scoring from extended engagement heat. Despite wear, the neural interface points maintain mirror finish — kept religiously clean."
+  },
+  "image_prompt": "Cyberpunk neural PDW product photography: Arcturus Impulse ANPD-1 lying diagonally across brushed steel table surface, or gripped in augmented hand wearing tactical glove with visible subcutaneous interface lights. Dramatic side-lighting emphasizing the burnished neural interface crown and thermal vents. Close-up on the threat-assessment LED indicator glowing soft amber. Shallow depth of field isolating the weapon against soft-focus GLMZ 2226 urban backdrop — neon reflection from distant arcology towers on the composite frame. Caseless ammunition cartridges scattered nearby. Cyberpunk aesthetic: cold blue-grey color grading, slight chromatic aberration, neural connection metaphor in lighting. --ar 3:2 --v 6"
 }

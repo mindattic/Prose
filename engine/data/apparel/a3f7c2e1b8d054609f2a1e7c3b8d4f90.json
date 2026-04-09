@@ -44,5 +44,27 @@
     "The Shelf",
     "Witness",
     "Yannick Tambadou-Reinholt"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A patchwork sleeveless tank with visibly mismatched fabric panels creating a deliberately fragmented aesthetic. The silhouette is lean and close-fitting, emphasizing the body's natural lines. Reads as street-salvaged and hand-assembled rather than manufactured—the visual chaos is the point. On a wearer, it communicates resourcefulness and Shelf authenticity.",
+    "fit": "Slim, close to the body with minimal excess fabric. Cut to hug the torso without restriction, allowing for mobility and layering underneath. Slightly cropped in some iterations depending on panel arrangement.",
+    "primary_material": "Salvaged mixed textiles: faded corporate workwear cotton-blend, West African kente-print cotton, silver-gray thermal synthetic lining, heavy raw denim. Each panel sourced from end-of-life garments and scrap bins.",
+    "texture": "Visibly varied—smooth sections alternate with rougher denim weave, thermal panels show subtle quilting. Raw, hand-curled hem at the bottom. Heavy visible stitching, sometimes doubled or imperfect, adds tactile roughness. Fabrics show fading, minor fraying at seams.",
+    "color_scheme": "Primary palette of muted tones: faded indigo and gray corporate fabric, deep kente-print ochre and burgundy stripes, silver-gray thermal accent, dark raw denim shoulder band. Worn, desaturated overall impression with pops of traditional West African color.",
+    "closures": "None. Pulls on over the head. Fit is integral to design.",
+    "distinctive_features": [
+      "Visibly hand-stitched seams—raw, sometimes doubled or offset",
+      "Kente-print panel integration (cultural textile repurposing)",
+      "Raw, curled hem at bottom edge",
+      "Unexpected interior pocket sewn into kente section",
+      "Heavy denim reinforcement along one shoulder",
+      "Silver-gray thermal lining patch (likely repurposed from insulation)",
+      "No visible branding—street-assembled anonymity",
+      "Seams show wear and washable deterioration"
+    ],
+    "tier_indicator": "Tier 5 / Shelf sub-grade. Signals resourcefulness and street economy participation, not poverty but rejection of corpo supply chains.",
+    "cultural_context": "Shelf kid uniform. Worn by those who source from street markets, value repair culture over consumption, and exist outside formal tier hierarchies. Kente integration signals diasporic heritage normalization in GLMZ. Reads as authentic to those who navigate ungoverned zones.",
+    "condition_typical": "Deliberately worn-in and imperfect. Never pristine. Shows visible use—minor fraying, faded seams, slight curl to raw hem after multiple washes. Patched seams occasionally reinforced by wearer with mismatched thread. Weathered authenticity is the design intent."
+  },
+  "image_prompt": "Caldero patchwork tank on a lean model with visible arm augmentation—chrome wrist joint catching moody blue-green light. Tank shows mismatched fabric panels: kente-print stripe, silver thermal patch, raw denim shoulder band, visible hand-stitching. Model positioned against weathered Tier 5 industrial backdrop—corrugated metal, graffiti, neon Φ sign partially visible. Moody cyan and amber practical lighting. Raw hem and interior pocket detail visible. Street market energy. --ar 2:3 --v 6"
 }

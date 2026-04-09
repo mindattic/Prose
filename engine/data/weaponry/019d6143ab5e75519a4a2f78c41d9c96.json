@@ -40,5 +40,32 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Biometric Denial Charge BDC-1",
+    "Erkin Fujita-Mensah",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A massive, angular weapon platform resembling a hybrid between industrial particle accelerator and military gun emplacement. The NE-1 presents a brutalist silhouette — a long, ribbed barrel assembly mounted on a heavy tripod base with prominent heat dissipation fins. The overall aesthetic is utilitarian and deliberately intimidating, with no aesthetic ornamentation; every surface serves functional purpose.",
+    "dimensions": "Barrel length: 180 cm; Overall width (mounted): 120 cm; Height to sight rail: 95 cm; Depth with stabilizers: 140 cm",
+    "weight_description": "Extremely heavy and imposing — 85 kg on vehicle mount, requiring anchored installation or dedicated transport. Even from across a room, the weapon conveys massive inertia and immovable authority.",
+    "primary_material": "Reinforced steel frame with tungsten-lined barrel housing; borated polyethylene shielding panels integral to structure",
+    "finish": "Industrial matte gunmetal gray with scattered scorch marks and thermal discoloration patterns from repeated use. Surfaces show oxidized patches and heat-stress streaking consistent with neutron generation cycles.",
+    "color_scheme": "Dominant gunmetal gray with burnt sienna heat-stress zones around barrel breach; black borated shielding panels; safety-yellow striping on power conduits and mounting hardware",
+    "grip_texture": "N/A — weapon is crew-operated stationary platform; control surfaces feature textured rubberized panels with integrated emergency cutoff grip (bright red, bare polymer)",
+    "distinctive_features": [
+      "Ribbed cooling fins running the entire barrel length in chevron pattern",
+      "Glowing blue-white accelerator chamber visible through reinforced viewport at breach point",
+      "Three lead-glass observation ports with radiation-warning trefoil symbols etched at 120° intervals",
+      "Massive toroidal coil assembly surrounding the midpoint of barrel — visible as dark metallic ring with faint electromagnetic shimmer",
+      "Heavy-duty electrical umbilical bundle (thick thermally-insulated cables) feeding into power distribution collar behind trigger mechanism",
+      "Mechanical countdown timer dial mounted on left stabilizer arm — analog readout with radiation-hazard markings in GLMZ standard yellow/black",
+      "Worn operational markings: distance tick-marks scored into barrel shroud, faded targeting references, impact dents from field transport"
+    ],
+    "manufacturer_markings": "ZHENG-DAO HEAVY INDUSTRIES stamped in aggressive block letters across the barrel shroud (30 cm from muzzle); serial plate mounted on right stabilizer arm with holographic security foil (heavily scratched); small red inspection seal affixed to power conduit (broken/obsolete); faint factory test stamps visible on barrel bore cover when opened",
+    "condition_typical": "Battle-worn and actively maintained. Surfaces show heavy use and field deployment — thermal stress marks, radiation-induced material brittleness visible as micro-fracture lines in steel, scorch patterns around exhaust vents. Regular maintenance evident in clean, functional components despite weathered exterior. No cosmetic effort; purely operational condition."
+  },
+  "image_prompt": "Professional weapons catalog photography of the Zheng-Dao NE-1 'Clean Sweep' neutron emitter mounted on tactical stand against dark industrial background. Show the massive ribbed barrel assembly with glowing blue accelerator chamber visible through reinforcement viewport. Hard dramatic side-lighting emphasizing the weapon's brutal geometry and heat-stress discoloration patterns. Include close detail of the toroidal coil assembly and electrical power umbilical. Capture the worn operational markings, yellow radiation warnings, and borated polyethylene shielding panels. Foreground shows gloved operator hand near the rubberized control surface with red emergency cutoff. Deep matte gunmetal finish with burnt orange thermal stress zones. Cyberpunk industrial aesthetic, cold clinical lighting, ultra-high resolution. --ar 3:2 --v 6"
 }

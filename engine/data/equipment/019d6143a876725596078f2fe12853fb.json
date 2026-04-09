@@ -46,5 +46,24 @@
   "parent_corponation": "Tessera Corponation",
   "related_entities": [
     "Tessera Corponation"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, militaristic rectangular box with a hinged top access panel. The form factor suggests serious industrial purpose — all hard angles and thermal-resistant casing. Visually resembles a high-end portable safe crossed with lab equipment. No unnecessary styling; pure functional brutalism.",
+    "dimensions": "35cm wide × 28cm deep × 22cm tall (briefcase-sized)",
+    "weight_description": "2 kg — handheld but requires two hands for sustained carrying; fits in a tactical bag with effort",
+    "primary_material": "Titanium-composite external shell with thermal-resistant ceramic lining visible through side vents",
+    "finish": "Matte gunmetal with heat-stress discoloration patterns (browns, purples) across the upper thermite chamber section from previous use cycles. Deliberate wear aesthetic — this is a tool, not show",
+    "color_scheme": "Dark gunmetal gray primary; burnt copper and charcoal accents around ventilation grilles; neon-orange warning stripe along the hinge edge",
+    "interface_elements": "Two recessed pushbuttons (red and black) mounted flush on the top face; small neural-link contact pad (3mm circular, silver-toned) center-mounted for authorization handshake; dual exhaust ports with thermal louvers on rear; hinged front access panel with magnetic closure",
+    "distinctive_features": [
+      "Faint scorch marks and thermal bloom patterns across the upper half indicating active use",
+      "Ventilation grilles that glow faintly orange/red when thermal chamber is active",
+      "Recessed button wells to prevent accidental activation",
+      "Neural-link contact pad with subtle status LED that cycles blue-to-amber during authorization",
+      "Magnetic closure latch that clicks with satisfying mechanical precision"
+    ],
+    "manufacturer_markings": "Tessera Industries logo (geometric T in chrome) stamped on top; 'VASQUEZ BIOCOMPATIBLE MATERIALS' etched below in small sans-serif; serial number and batch code on rear panel; regulatory disposal codes in micro-print; warning triangle with thermite and EMP symbols",
+    "condition_typical": "Micro-scratches and handling wear on edges; subtle carbon scoring on the thermal vents; neural-pad may show faint discoloration from repeated bioelectric contact. Despite rugged appearance, unit maintains pristine internal precision — user-facing surfaces show evidence of professional handling"
+  },
+  "image_prompt": "Product photography: Tessera Industries CED-2 evidence destroyer positioned on brushed-steel workbench beside scattered burnt circuit boards and ash residue. Device lid partially open revealing the ceramic thermite chamber interior glowing faintly amber. Dramatic side-lighting casts deep shadows across the matte gunmetal casing, highlighting scorch marks and thermal stress patterns. Neon-orange warning stripe catches electric blue accent light. Neural-link contact pad glows soft cyan. Moody cyberpunk lab atmosphere, shallow depth of field, cinematic shadows. Shot from three-quarter angle. Professional destruction equipment aesthetic. --ar 3:2 --v 6"
 }

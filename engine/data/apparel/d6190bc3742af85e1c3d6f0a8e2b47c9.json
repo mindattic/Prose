@@ -48,5 +48,26 @@
   "related_entities": [
     "Dzemal Acholonu-Patagiri",
     "The Pure Hand"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian single-strap sling pack with a distinctly worn, hand-me-down aesthetic. The silhouette is compact and angled, sitting comfortably across the torso from shoulder to hip. Projects working-class durability and practical street utility.",
+    "fit": "Adjustable strap length accommodates various body types; sits snug against the ribs during movement, distributes weight evenly across the shoulder and chest for dock labor and transit navigation.",
+    "primary_material": "Heavy-gauge recycled polyweave shell—salvaged synthetic fibers compressed and bonded. Nylon reinforcement tape. Padded strap core of dense EVA foam wrapped in moisture-wicking mesh.",
+    "texture": "Shell is slightly stiff and grainy, with visible seams and stress creasing from repeated use. Strap padding is soft but slightly tacky from sweat absorption. Double-stitched seams create subtle ridges.",
+    "color_scheme": "Faded slate-green primary color with cream-colored nylon reinforcement tape at corners and stress points. Reflective silver strip runs the full strap length. Older stencil markings—worn logos, previous owner tags—visible in ghost-white on the shell.",
+    "closures": "Wide U-zip main compartment opening. Magnetic chest buckle for quick-access security during heavy dock work. Friction-fit compression straps optional.",
+    "distinctive_features": [
+      "Reflective strip full-length on strap for dock-floor safety",
+      "Double-stitched nylon reinforcement at all seams and stress corners",
+      "U-zip main compartment with wide throat opening",
+      "Chest-mounted magnetic buckle—quick-release design",
+      "Visible wear scarring, frayed strap edges, faded stencil marks from previous owners",
+      "Padded moisture-wicking strap—designed for sweaty dock conditions",
+      "Hard-use patina: creasing, slight discoloration, evidence of multiple hands"
+    ],
+    "tier_indicator": "Tier 4 (working class, street functional)",
+    "cultural_context": "Circuit dock workers, transit couriers, ungoverned zone scavengers. Signals practical labor, minimal corporate affiliation, resourcefulness. A pack that's been through cycles of ownership—repurposed, repaired, respected.",
+    "condition_typical": "Intentionally weathered and broken-in. Frayed edges, visible creasing, ghost-marks from old stickers or paint. Signs of repair (patched seams, reinforced stress points). Patina is worn but structurally sound—this is a pack that's proven itself."
+  },
+  "image_prompt": "A faded slate-green Hookline sling pack slung across the chest of a weathered cyberpunk dock worker, shot against a rain-slicked industrial loading dock at dusk. The reflective strap strip catches sodium-vapor light. Close detail of the worn U-zip, frayed strap edges, and ghost-white stencil markings. Dark moody ambient lighting, shallow depth of field on the magnetic buckle. Cinematic cargo aesthetic. --ar 2:3 --v 6"
 }

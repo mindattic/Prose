@@ -221,5 +221,13 @@
     "posture_movement": "Unhurried and precise. Moves like someone appraising objects — careful, economical, weighing everything. Stands with weight shifted slightly forward, ready to lean over a counter. Hands are rarely still; they're always touching something, assessing texture and weight. Eye contact is steady and slightly unnerving",
     "clothing_style": "Layered mid-tier secondhand corporate wear in grays, blacks, and muted blues — Tessera office clothes from people who fell down the economic tiers. Nothing new, nothing expensive, nothing that draws attention. Worn but clean. A long coat most days, pockets always full of small tools, magnifiers, RFID readers. No visible branding or affiliation markers. Dresses like someone who is always one conversation away from needing to look respectable"
   },
-  "image_prompt": "Portrait of a 44-year-old man with mixed West African and Scandinavian heritage, lean angular build, weathered pale complexion, dark hair graying at temples cropped short. Close-cropped beard with contrasting fine and coiled textures. Most striking feature: augmented amber iris replacements with pale gold secondary ring that glows softly. Standing in dim fluorescent light of a cluttered pawn shop, surrounded by half-visible shelves of electronics and salvage. Wearing layered gray and black secondhand corporate clothing, long coat, hands positioned near counter assessing an object. Cool color temperature, moody shop lighting, sharp focus on face and eyes, cyberpunk noir aesthetic, slight lens aberration suggesting augmented vision overlay, atmospheric haze of dust in air --ar 2:3 --v 6"
+  "image_prompt": "Portrait of a 44-year-old man with mixed West African and Scandinavian heritage, lean angular build, weathered pale complexion, dark hair graying at temples cropped short. Close-cropped beard with contrasting fine and coiled textures. Most striking feature: augmented amber iris replacements with pale gold secondary ring that glows softly. Standing in dim fluorescent light of a cluttered pawn shop, surrounded by half-visible shelves of electronics and salvage. Wearing layered gray and black secondhand corporate clothing, long coat, hands positioned near counter assessing an object. Cool color temperature, moody shop lighting, sharp focus on face and eyes, cyberpunk noir aesthetic, slight lens aberration suggesting augmented vision overlay, atmospheric haze of dust in air --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 32.8,
+    "Hispanic/Latin American": 18.8,
+    "Northern European": 16.7,
+    "Sub-Saharan African": 16.5,
+    "Pacific Islander": 13.0,
+    "Eastern European": 2.2
+  }
 }

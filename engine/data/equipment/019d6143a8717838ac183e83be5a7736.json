@@ -53,5 +53,24 @@
     "GLMZ",
     "Narrowcast",
     "Tessera Nexus Town Car"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A weathered, modular shoulder bag with a utilitarian silhouette — boxy yet ergonomic, suggesting function over form. The exterior shows visible patching and reinforced stitching, with equipment pouches arranged for rapid access. It reads as rugged, purpose-built field gear that's been through heavy use in hostile environments.",
+    "dimensions": "38 cm wide × 28 cm tall × 15 cm deep — backpack-sized, fits snugly across chest or shoulder",
+    "weight_description": "2.5 kg loaded — handheld carrying strap with quick-release buckle, designed for balance during low-light navigation",
+    "primary_material": "Rubberized industrial canvas exterior with reinforced corner brackets; internal compartments feature waterproof thermoplastic dividers",
+    "finish": "Matte weathered texture with deliberate scuff marks and discoloration from moisture exposure. Seams sealed with visible thermoplastic welding. Zipper sliders show oxidation patina.",
+    "color_scheme": "Gunmetal gray primary with acid-yellow safety trim along seams and pocket edges. Ink-black nylon webbing straps. Internal compartments line-marked in faded glow-in-the-dark paint.",
+    "interface_elements": "Five labeled zippered pockets (chemicals, maps, sensors, rebreather, tools). Gas detection badge clipped to front flap — circular, thumb-sized, with color gradient panel visible. Sonic locator mounted in quick-access side pouch with small LCD screen (2×2 cm). Main compartment contains waterproof map case (A5-sized laminated folder with hand-written tunnel annotations in blue ink).",
+    "distinctive_features": [
+      "Integrated chemical light quiver — 20 slim glow-stick tubes visible through semi-transparent side panel",
+      "Gas badge color-change indicator: baseline gray, shifts to amber/red/purple depending on detected hazard type",
+      "Sonic locator displays radial sonar mapping on monochrome LCD — faint green phosphor glow",
+      "Hand-copied tunnel charts visible in case: amateur cartography with scrawled route notes, dead-ends marked with red X",
+      "Worn manufacturer patch (faded Street Custom logo) on front flap — stylized rat silhouette in reflective thread"
+    ],
+    "manufacturer_markings": "Street Custom woven label on interior flap; laser-etched serial number on zipper slider; regulatory water-rating symbol stamped near base (submersion rated 5 meters × 72 hours)",
+    "condition_typical": "Visual signs of field use — salt deposits around seams, faint algal staining on lower edge, chemical light adhesive residue on quiver panel. Zippers show minor corrosion. Map case corners show soft creasing from repeated unfolding. Overall impression: trusted, proven equipment of someone who spends significant time beneath the city."
+  },
+  "image_prompt": "Cyberpunk product photography: Street Custom Sewer Rat Navigation Kit displayed on industrial concrete workbench, partial water droplets visible on canvas surface. Dramatic overhead lighting with one blue side-light casting shadows of zipper pulls. Open compartments reveal glowing chemical light sticks and monochrome LCD screen of sonic locator. Waterlogged tunnel map case partially unrolled, annotations barely visible. Rust-spotted metal equipment hooks in soft focus background. Film noir-influenced color grading with emphasis on acid-yellow safety trim and green LCD phosphor. Weathered, street-smart aesthetic suggesting real operational use in GLMZ undercity. --ar 3:2 --v 6"
 }

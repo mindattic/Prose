@@ -53,5 +53,39 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Ouroboros Energy"
+  "parent_corponation": "Ouroboros Energy",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Breck Tannen",
+    "Crucible Industries Furnace CF-15 'Meltdown'",
+    "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
+    "GLMZ",
+    "Narrowcast",
+    "Osvaldo Mensah-Kovalenko",
+    "Ouroboros Energy",
+    "TESSERA PG-2 'Signature'",
+    "The Question",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A flat, industrial disc hovering silently — part ceiling fan, part furnace. The OTDD-4 reads as a purposeful piece of thermal machinery scaled down to drone size. Its shape suggests stability over speed; wide stance, minimal protrusions. At rest, it looks inert. In operation, the air around it distorts.",
+    "dimensions": "40 cm diameter disc, 18 cm depth (chassis). Catalytic emitter array extends 6 cm below fuselage.",
+    "weight_description": "Dense but manageable — 2.3 kg feels substantial in hand, suggests high-grade materials and internal thermal plumbing. Not light, not unwieldy. Balanced weight distribution.",
+    "primary_material": "Brushed titanium alloy chassis with embedded copper thermal cycling channels visible as fine lines across the disc surface. Underslung catalytic emitter housing is hardened polymer composite, heat-treated to dull bronze.",
+    "finish": "Matte titanium-grey on the primary disc with oxidation staining around the emitter vents — rust-colored thermal scarring from operational heat bleed. Copper channels show a deliberate brushed pattern that catches light.",
+    "color_scheme": "Gunmetal grey primary with burnt copper accents. The emitter housing transitions from charcoal to deep rust-orange at the heat vents. Minimal branding colors.",
+    "grip_texture": "Recessed grip points on the disc perimeter lined with textured silicone — non-slip, heat-resistant. Cool to the touch even after operation.",
+    "distinctive_features": [
+      "Copper thermal cycling channels etched in visible lines across the top surface",
+      "Recessed emitter array underneath with honeycomb heat dissipation grille",
+      "Three flush-mount indicator LEDs (status, thermal load, battery) in a subtle triangle near the edge",
+      "Hairline thermal stress fractures in the polymer emitter housing from repeated use",
+      "Asymmetrical rotor arrangement — four rotors positioned off-center for stable hover over hot columns",
+      "Heat-reactive paint showing operation history as faint purple zones where temperatures peaked",
+      "Diagnostic port on the side rim (OUROBOROS proprietary connector)"
+    ],
+    "manufacturer_markings": "OUROBOROS ENERGY logomark stamped in the center of the top surface (slightly recessed to avoid snag). Model number OTDD-4 etched along the rim in small, professional lettering. Serial plate on the side (thermal-resistant adhesive label, partially heat-damaged on field units).",
+    "condition_typical": "Well-maintained examples show the intentional wear — thermal scarring, dust buildup around the emitter grille, slight discoloration from repeated heat cycling. Black-market combat-tuned units often show stress fractures or evidence of firmware modification (small solder points visible near the processor access panel). Civilian units look cleaner, almost sterile."
+  },
+  "image_prompt": "Product photography of the OTDD-4 'Ember' drone: a matte gunmetal-grey titanium disc (40 cm diameter) photographed from a 45-degree angle against a dark charcoal backdrop. The drone is suspended 5 cm above the surface on an invisible mount, casting a sharp shadow. Dramatic side-lighting from the left reveals the brushed copper thermal cycling channels etched across the top surface, creating fine lines of warm reflection. The underslung catalytic emitter housing (burnt-orange polymer composite) faces downward, its honeycomb grille visible and detailed. Three small status LED indicator points glow faintly in cool blue. The surrounding air shows subtle heat-distortion ripples around the emitter vents — rendered as barely-visible shimmer. Surface shows authentic operational wear: thermal stress discoloration, faint purple heat marks, dust accumulation in the grille, and hairline fractures in the polymer. In the background, reflective glass and chrome surfaces amplify the cyberpunk industrial aesthetic. Nikon macro lens rendering. Ultra-sharp detail on materials and texture. --ar 3:2 --v 6"
 }

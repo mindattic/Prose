@@ -83,5 +83,24 @@
     "The Crossing",
     "The Keel",
     "Zheng-Dao Bioelectric Pelagic Scout Drone — 'The Remora'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, teardrop-shaped submersible with a minimalist industrial aesthetic. The hull tapers from a bulbous forward section to a streamlined stern, optimized for silent water displacement. The profile suggests organic hydrodynamic engineering — almost biomechanical, reminiscent of a deep-sea creature stripped of all ornamentation and redesigned as pure function. No visible propeller or rotor; water intake and exhaust vents are subtly recessed into the hull geometry.",
+    "dimensions": "5.8 meters in length, 1.2 meters at maximum beam. Medium-sized submersible — larger than a personal drone pod, compact enough for single-occupant piloting from confined harbor slips, with room for a second crew member in the tandem cockpit.",
+    "weight_description": "Heavy—requires mechanical winch or crane deployment from surface vessels or dock infrastructure. Not hand-portable; vehicle-class equipment.",
+    "primary_material": "Double-skinned carbon-laminate composite hull over sound-absorbing foam core. Outer skin shows a subtle weave pattern under dramatic lighting. Pressure-resistant and designed for minimal acoustic reflection.",
+    "finish": "Matte charcoal-gray with slight texture from the carbon weave. Non-reflective to minimize passive sonar detection. Outer panels show micro-abrasion marks and light corrosion patina consistent with regular saltwater exposure—deliberately weathered industrial finish rather than polished.",
+    "color_scheme": "Primary: deep charcoal gray with faint gunmetal highlights on edges and seams. Accent: Ouroboros Energy corporate cyan (Φ-logo cyan) appears only on a small hull marker and interior instrumentation. Overall effect is subdued, tactical, designed for concealment rather than visibility.",
+    "interface_elements": "Two recessed circular portholes (reinforced acrylic, set flush with hull contour). Forward-facing array of small sensor blisters—passive sonar domes, inertial units, current-mapping lidar. A single entry hatch with pressure-seal mechanism mounted on the dorsal surface. Interior visible through ports: reclined pilot/copilot seats with overhead control panels, soft blue-green instrument glow. Minimal external controls; most operation is hands-off once submerged.",
+    "distinctive_features": [
+      "Magnetohydrodynamic drive: no visible propeller—water intake grilles are the only hint of propulsion, recessed and symmetrical",
+      "Tidal current navigation mapping: subtle antenna array on the dorsal ridge for passive current-mapping updates",
+      "Sound-dampening foam exterior: surface has a barely-visible quilted texture, evidence of acoustic engineering",
+      "Recessed sensor cluster forward of cockpit: flat, integrated design with no protruding domes",
+      "Induction charging port: small circular recess on the ventral surface (visible when vehicle is tilted) for field recharging"
+    ],
+    "manufacturer_markings": "Ouroboros Energy logo (cyan Φ symbol within a serpent-circle motif) stamped in small white lettering on both port and starboard hulls near the waterline. Hull designation number in contrasting paint. Minimal regulatory markings—gray-market operators often sand or overpaint GLMZ harbor authority stamps.",
+    "condition_typical": "Subtle salt-spray patina, with occasional barnacle growth or algae bloom depending on how long the vehicle was at depth. Micro-scratches on the portholes from repeated pressure-seal cycles. The finish shows honest wear—industrial equipment that operates in the harbor's corrosive environment without cosmetic concern. Some units show evidence of field repairs (patched areas, slightly mismatched panel texture), especially those operating in the black market."
+  },
+  "image_prompt": "Product photography: overhead three-quarter view of a sleek, teardrop-shaped submersible resting on a harbor maintenance dock, metal chains and winch rigging visible. Matte charcoal hull with barely-visible carbon weave texture catches dramatic side-lighting—cool blue-white key light from the left, casting sharp shadows. Small cyan Ouroboros Energy logos glow faintly under floodlights. Recessed sensor array and water-intake grilles visible on the forward section, showing meticulous industrial design. Interior cockpit barely visible through two circular portholes, with soft bioluminescent instrument panel glow. Wet saltwater patches on the hull surface reflect light. Cyberpunk aesthetic: gritty, tactical, no-nonsense industrial. Shot in a corporate maintenance facility at dusk, with orange harbor sunset sky reflecting on the dock's wet steel surface. Cinematic, atmospheric, emphasizing the vehicle's silent predatory design. --ar 3:2 --v 6"
 }

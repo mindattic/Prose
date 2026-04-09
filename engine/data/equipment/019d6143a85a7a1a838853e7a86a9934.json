@@ -44,5 +44,24 @@
   "related_entities": [
     "Iowan Behemoth — 'Thunderhead'",
     "TESSERA ES-4 'Perimeter'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Cylindrical canister with ribbed grip section and pull-ring activation mechanism. Compact, designed for belt carry or vest attachment. Metallic body with a domed fuse cap and safety pin loop.",
+    "dimensions": "10 cm height × 5 cm diameter",
+    "weight_description": "Handheld (300g) — easily pocketable or worn on tactical harness",
+    "primary_material": "Zinc alloy body with steel fuse assembly",
+    "finish": "Matte tactical finish with light surface texture to prevent slipping",
+    "color_scheme": "Muted olive-drab green body, black ribbed grip section, silver fuse cap, yellow safety pin",
+    "interface_elements": "Pull-ring attached to safety pin, ribbed grip panels for secure handling, embossed directional arrows indicating safe throwing direction, recessed fuse well",
+    "distinctive_features": [
+      "Radial ribbing along grip zone for wet/gloved operation",
+      "Bright yellow safety pin contrasts sharply against drab body",
+      "CDW manufacturer stamp in military-spec serif font",
+      "Pressure-seal line marking around mid-body",
+      "Small perforated vents near base for chaff dispersal"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS / TSG-5 / MULTI-SPEC / 90SEC / Φ2,400 price code / military regulation stamps",
+    "condition_typical": "Clean, slightly weathered grip tape on sides, minor scuffs from equipment contact, fuse mechanism pristine and ready for deployment"
+  },
+  "image_prompt": "Close-up product photography of a tactical smoke grenade TSG-5 on dark matte workbench surface, angled 45 degrees to show cylindrical form and yellow safety pin clearly. Dramatic blue-white rim lighting emphasizing metallic edges, warm amber accent light on grip texture. Shallow depth of field with blurred warehouse/armory background. Cyberpunk military catalog aesthetic, professional yet gritty. Beside it: small cloud of dense white smoke dissipating in mid-air to suggest multi-spectrum obscuration. --ar 3:2 --v 6"
 }

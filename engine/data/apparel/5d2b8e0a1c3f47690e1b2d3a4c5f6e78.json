@@ -37,5 +37,25 @@
   "parent_corponation": "",
   "related_entities": [
     "Arcturus Exo-Runner Frame"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A distinctly non-human silhouette that transforms a digitigrade wearer into a sleek, predatory figure. The high knee break and dramatically tapered calf create an inverted triangle from hip to ankle, emphasizing the reverse-bend leg geometry. On standard bipeds, deeply unsettling; on augmented digitigrade frames, architecturally perfect.",
+    "fit": "Precision-engineered compression through the thigh, with a sharp taper that begins mid-calf and extends to a geometrically calculated hem angled to match a raised heel stance (approximately 35-40 degree forward lean). The knee joint sits 2-3 inches higher than standard trouser proportions.",
+    "primary_material": "Warm oat canvas—a durable, slightly nubby synthetic-natural blend with subtle color variation that reads as professional-grade workwear",
+    "texture": "Firmly woven with minimal stretch; the surface has a matte finish with slight directional nap. Seams are reinforced with contrast stitching visible at stress points.",
+    "color_scheme": "Warm oat beige with subtle tonal variation; charcoal reinforcement stitching at seams and angle points; minimal branding",
+    "closures": "Magnetic snap fly with hidden retention strap; waistband tension-lock with friction fit (no traditional belt loops)",
+    "distinctive_features": [
+      "Anatomically contoured calf panel that mirrors reverse-bend leg structure",
+      "High knee articulation point with reinforced gusset",
+      "Angled hem precisely cut to sit flush against digitigrade heel positioning",
+      "Integrated micro-adhesive strip at inner calf for non-slip stance",
+      "Hidden access panel at outer thigh for augmentation maintenance",
+      "Kallow brand emboss (small, metallic) at rear waistband"
+    ],
+    "tier_indicator": "Tier 2-3 specialized augmentation wear; expensive enough to signal invested body modification, accessible to working-class augmented labor",
+    "cultural_context": "Worn by digitigrade-augmented warehouse workers, courier runners, combat-frame operatives, and corporate security with leg mods. Signals accepted transhumanism and practical augmentation investment. Rarely seen on unmodified bodies.",
+    "condition_typical": "Broken-in with visible creasing at knee articulation and heel point; minor fraying at hem from repeated stance-release cycles; possible scuff marks from industrial environments"
+  },
+  "image_prompt": "Fashion photograph of Kallow DigitEase Articulated Trousers displayed on a sleek cybernetic mannequin with digitigrade leg augmentations, oat canvas fabric draping naturally into that distinctive angled hem. The model's reverse-bend legs perfectly showcase the tapered calf and high knee articulation. Shot against a dark industrial backdrop with moody cyan-and-amber neon rim lighting catching the reinforcement stitching. Close detail of the angled hem showing the precision fit against raised heel stance. Cyberpunk aesthetic, clinical precision, augmentation-focused fashion. --ar 2:3 --v 6"
 }

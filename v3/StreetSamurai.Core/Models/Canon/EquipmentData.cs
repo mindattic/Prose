@@ -28,4 +28,5 @@ public class EquipmentData : ICanonEntity
     [JsonPropertyName("known_users")] public List<string> KnownUsers { get; set; } = [];
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonExtensionData] public Dictionary<string, JsonElement>? ExtraData { get; set; }
 }

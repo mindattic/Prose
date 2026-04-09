@@ -58,5 +58,35 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus EW-3 'Migraine'",
+    "Arcturus Exo-Runner Frame",
+    "GLMZ",
+    "Helix Biosystems",
+    "MERIDIAN",
+    "Nodar Kuznetsov-Adu",
+    "The Human Baseline Alliance"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purpose-built rifle with an oversized hemispherical emitter dish dominating the muzzle. The overall silhouette evokes an anti-materiel platform — long, angular, predatory — but the dish's organic curve and the absence of any traditional barrel breach create an unsettling asymmetry. It reads as medical precision weaponized.",
+    "dimensions": "Length: 112 cm. Emitter dish diameter: 14 cm. Receiver depth: 8 cm. Stock-to-trigger: 38 cm.",
+    "weight_description": "Hefty but balanced. The 6.1 kg load distributes forward into the dish, creating a front-heavy feel that demands braced shooting. Shoulder-mounted or bipod-mounted; unsustainable in unsupported aim for more than 10 seconds.",
+    "primary_material": "Titanium-alloy receiver and barrel housing. The emitter dish is a monocrystalline sapphire composite with embedded osmotic-induction coils visible through translucent sections.",
+    "finish": "Matte gunmetal gray receiver with brushed titanium accents. The sapphire dish has a faint opalescent sheen under light, shifting faintly blue-to-violet as internal power states cycle. All edges beveled and polished — clinical, not tactical.",
+    "color_scheme": "Gunmetal and brushed steel primary. Accent stripes in surgical blue along the action rails. The emitter dish interior glows faintly with violet undertones when charged. Helix Biosystems' circular molecular logo inlaid in chrome on the left side of the receiver.",
+    "grip_texture": "Textured polymer grip with faint ergonomic dimpling. Cool to the touch. A rubberized palm swell near the trigger guard is wrapped in a thin synthetic cord in the same surgical blue as the accent stripes — prevents slippage when wet or bloodied.",
+    "distinctive_features": [
+      "Large hemispherical sapphire emitter dish with visible coil matrices beneath surface",
+      "Digital intensity readout (LED numerals 1–9) mounted on top rail, cycling faintly in sleep mode",
+      "Twin thermal vents along the receiver sides — radiating subtle heat even when idle",
+      "A recessed secondary aiming port (laser-sighted) below the main optics rail for mid-range precision",
+      "Cooldown indicator light (red → amber → green) below the charging receptacle",
+      "Faint etching around the dish rim denoting safety certification and intracranial pressure threshold warnings",
+      "Osmotic-induction cell port (thumb-release clip) positioned beneath the action, glowing faintly when loaded"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS in sans-serif chrome lettering across the upper receiver. Circular molecular helix logo inlaid on the left side. Tiny serial placard (forensically registered) mounted on the underside of the stock. Medical-device regulation stamps embossed near the grip in gray.",
+    "condition_typical": "Typically well-maintained. Expensive enough to warrant armorer oversight. Field examples show minor scorching on the thermal vents and faint wear on the rubberized grip. No visible battle damage; if damaged, the weapon is decommissioned and recycled by Helix rather than field-repaired. Cosmetic scratches on the sapphire dish are common — the material is resilient but shows every contact."
+  },
+  "image_prompt": "Product photography of the Osmotic Cranial Pressure Induction Rifle OCPIR-3 'Headwater' lying at a 15-degree angle on a dark matte-black metal surface. The large hemispherical sapphire emitter dish is front and center, catching dramatic side-lighting that reveals faint violet undertones and internal coil matrices. Gunmetal receiver gleams under hard directional light. A gloved hand (black tactical polymer, chrome knuckle reinforcement) holds the grip, finger resting along the frame. Thermal vents glow subtly red from residual charge. Background is deep charcoal, slightly out of focus. Harsh side-light creates sharp shadows emphasizing the clinical precision of the design. Top-mounted intensity dial (showing level 5) is visible and illuminated. Cooling indicator glows amber. Urbane, cold, medical, dangerous. Cyberpunk corpo-security aesthetic. Professional weapon catalog photography. --ar 3:2 --v 6"
 }

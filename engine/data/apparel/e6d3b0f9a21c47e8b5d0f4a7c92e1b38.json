@@ -50,5 +50,25 @@
     "Street Custom 'Glass Garden' Caltrops",
     "Tessera Corponation Ambient Signal Displacement Array",
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Nearly invisible second-skin gloves that appear as bare hands at casual distance. Only the subtle micro-texture and slight iridescent shimmer at certain angles betray their presence. Gives wearer an uncanny, almost too-smooth appearance that reads as unsettling to trained observers.",
+    "fit": "Compression-tight, hugging every contour of the hand without bulk. Five-finger design with no padding or reinforcement. Seams are virtually undetectable; edges fuse seamlessly with skin tone.",
+    "primary_material": "Gecko-polymer outer surface with biometric-scatter membrane lining. Designed as consumable-grade synthetic with minimal durability.",
+    "texture": "Outer surface is micro-textured at nano-scale, appearing smooth to the naked eye but providing molecular grip. Inner surface is membrane-soft with scattered metallic disruption points. Overall feel is like a second dermis.",
+    "color_scheme": "Twelve human skin-tone variants ranging from deep brown through pale ivory, plus two synthetic-skin finishes (matte chrome-gray and translucent pearl). Available in current batch: warm caramel, cool ash, rich mahogany, pale rose.",
+    "closures": "Friction-fit only; gloves slip on like a second layer of skin with no visible fasteners, seams, or closures.",
+    "distinctive_features": [
+      "Gecko-polymer grip adheres to glass, polished metal, and composites without suction devices",
+      "Biometric-scatter membrane disrupts fingerprint and thermal imaging at contact points",
+      "Designed as tear-prone consumable — single-use to limited multi-use",
+      "Sold vacuum-sealed in packs of three pairs",
+      "Twelve skin-tone match variants suggest intentional infiltration use-case",
+      "No visible branding; Ghostline label only on packaging"
+    ],
+    "tier_indicator": "Tier 4-5 street-operation tool. Too specialized and deliberately ungoverned for legal retail. Prices on underground markets: 180-220 Φ per three-pack.",
+    "cultural_context": "Signals infiltration specialist, data thief, or sub-grade operative. Wearing these visibly marks you as someone prepared for close-access work — corporate espionage, secure facility breach, or black-market acquisition. Corpo security would flag this immediately.",
+    "condition_typical": "Worn condition shows small tears at fingertips and stress points along the knuckle. Biometric-scatter membrane begins visibly degrading after 3-5 uses. Users expect consumable lifespan of 1-3 shifts before disposal."
+  },
+  "image_prompt": "Close-up fashion shot of a dark-skinned cyberpunk operative's hand wearing nearly invisible ghostline infiltration gloves, fingers splayed against frosted glass or polished chrome surface, the micro-texture catching moody blue and amber neon light. The glove is so thin it reads as bare skin until the light hits the gecko-polymer grip, revealing an uncanny shimmer. Dark urban warehouse backdrop with security lattice visible behind. Cinematic noir lighting, shallow depth of field. --ar 2:3 --v 6"
 }

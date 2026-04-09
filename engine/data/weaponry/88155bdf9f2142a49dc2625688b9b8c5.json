@@ -42,5 +42,36 @@
     "standard_issue",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "Patient Zero",
+    "Tessera Corponation",
+    "Tessera Nexus Town Car",
+    "The Shelf",
+    "Tshiamo Vukić-Arellano"
+  ],
+  "physical_description": {
+    "visual_profile": "A clean, corporate-aesthetic striker-fired pistol with aggressive geometry softened by premium finishing. The grip module features a prominent biometric sensor panel that catches light distinctively. Angular, purposeful lines suggest both military heritage and boardroom polish. Unmistakably a tier-2 corporate issue weapon.",
+    "dimensions": "18.5cm overall length, 12.8cm grip height, 3.2cm slide width. 10.2cm barrel length.",
+    "weight_description": "Balanced and controllable in-hand despite the polymer frame. Feels substantial without being fatiguing — designed for extended duty wear. The biometric module adds tactile weight to the grip.",
+    "primary_material": "Reinforced polymer frame with hardened steel slide. The biometric sensor housing is a composite material with embedded conductive elements.",
+    "finish": "Satin-brushed steel slide contrasting with matte charcoal polymer frame. The biometric grip panel has a subtle metallic sheen under direct light, suggesting embedded circuitry.",
+    "color_scheme": "Gunmetal grey slide, midnight charcoal frame, with accent lighting in the biometric sensor housing that cycles blue when active. Tessera corporate silver trim on the trigger guard.",
+    "grip_texture": "Aggressively textured polymer grip with embedded sensor surface — not quite rubberized, more like finely-grooved industrial composite. The biometric panel feels smooth, slightly warm to touch.",
+    "distinctive_features": [
+      "Prominent biometric sensor plate on grip — rectangular, with subtle LED indicators",
+      "Tessera Media Group corporate logo laser-etched on slide in silver",
+      "Serial number plate integrated into trigger guard",
+      "Textured vertical grip serrations fore and aft of trigger guard",
+      "Recessed optics rail on slide — pre-drilled for sights",
+      "Magazine release button marked with Φ currency symbol",
+      "Small status light in grip that illuminates when biometric lock engages",
+      "Wear marks typically visible on biometric sensor from heavy duty use"
+    ],
+    "manufacturer_markings": "Tessera Media Group logo prominently etched on slide in corporate silver, positioned above rear sight. 'TK-7 SERVICE PISTOL' stamped along the frame rail. Serial number and manufacturing date on left side of trigger guard. Caliber marking 9x19mm on barrel.",
+    "condition_typical": "Exceptionally well-maintained in active service — Tessera issues replacements on wear cycles. Biometric sensor panel shows accumulated fingerprint oils and faint wear from thousands of authentication attempts. Occasionally seen with micro-scratches on slide finish from duty holster contact. Never truly battle-worn; Tessera replaces damaged units rather than field-repair."
+  },
+  "image_prompt": "Professional product photography of the Tessera TK-7 Service Pistol positioned on matte dark gunmetal surface. Dramatic side-lighting emphasizing the contrast between satin-brushed steel slide and charcoal polymer frame. Biometric grip sensor panel glowing subtly blue with embedded circuitry visible. Tessera corporate logo catching silver highlights. Close detail showing textured grip and integrated serial number. Cyberpunk corporate weaponry aesthetic, clean industrial styling with subtle tech elements. Corporate security equipment photography style. Shot from 45-degree angle showing full profile. High-gloss surface beneath weapon reflecting overhead lights. Ultra-professional finish showing zero wear. --ar 3:2 --v 6"
 }

@@ -58,5 +58,41 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Crucible PD-3 'Watchdog'",
+    "GLMZ",
+    "Helix Biosystems",
+    "Kwabena Ilyich Ferreira-Sattout",
+    "Lazarus EC-4 'Companion'",
+    "Lazarus LX-2 'Lab Rat'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
+    "Stonepath Logistics",
+    "SynapTech Clarity Pro Neural Interface",
+    "The Human Baseline Alliance",
+    "Zheng-Dao Marrow-Pulse Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, clinical handgun with an almost medical aesthetic—compact and purposeful, resembling a precision instrument rather than traditional ballistic weaponry. The profile suggests advanced optics and electronics rather than kinetic force.",
+    "dimensions": "28cm length, 6cm width, 5cm height. Compact single-hand profile with minimal bulk.",
+    "weight_description": "Notably light at 0.9kg—feels almost insubstantial in hand, with weight distributed toward the grip. Lacks the heft of conventional firearms; hangs effortlessly.",
+    "primary_material": "Aerospace-grade polymer composite with embedded heat-dissipation channels. Heatsinking ribs visible along the barrel housing to manage photonic cell discharge.",
+    "finish": "Matte charcoal polymer with brushed titanium accents around emitter aperture. Clinical, unmarred surface suggesting frequent maintenance protocols.",
+    "color_scheme": "Gunmetal gray primary with matte black grip section. Accent panels in dark cyan—subtle reference to the weapon's signature afterimage.",
+    "grip_texture": "Rubberized polymer with subtle geometric texturing for secure purchase even in sweating hands. Non-reflective to avoid weapon detection in surveillance.",
+    "distinctive_features": [
+      "Recessed emitter aperture at barrel tip—slightly concave, suggesting lens optics beneath",
+      "Three stacked indicator LEDs (red/amber/green) on upper receiver showing cell charge status",
+      "Passive infrared rangefinder module integrated into top rail—appears as dark optical window",
+      "Secondary fire mode selector dial (Focused/Spread) below trigger guard",
+      "Heat-dissipation vent slits running along barrel sides in symmetrical pattern",
+      "Photonic cell magazine housing transparent at grip—shows glowing photon-state charge indicator pulsing faintly",
+      "Minimal mechanical detail—predominantly smooth surfaces to minimize catching or snagging"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS embossed subtly on left receiver, barely raised above surface. Serial plate recessed into grip panel. Small warning diamond (biohazard-adjacent) beneath trigger guard indicating chemical agent compatibility.",
+    "condition_typical": "Maintained to clinical standards—field-deployed examples show zero wear, suggesting regular field-stripping and optical calibration. Any scratch or blemish indicates heavy use."
+  },
+  "image_prompt": "Product photography of the Retinal Cascade Emitter RCE-6 'Whiteout' handgun, sleek matte charcoal polymer with brushed titanium emitter aperture, resting on dark tactical mat. Dramatic side-lighting emphasizing the geometric heat-dissipation ribs and recessed optical components. Close-up on indicator LEDs glowing soft red. Shallow depth of field. Cyberpunk medical-instrument aesthetic. Minimal reflections. Include subtle cyan ambient glow reflecting the weapon's signature wavelength. 28cm compact profile, obviously non-ballistic, clinical precision design. Professional armory photography style. --ar 3:2 --v 6"
 }

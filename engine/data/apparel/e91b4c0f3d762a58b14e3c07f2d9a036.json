@@ -41,5 +41,24 @@
   "related_entities": [
     "PulsePoint MoodGlyph Affective Display Implant",
     "The Underlayer Collective"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively conventional office silhouette concealing tactical modifications. Charcoal blazer projects corporate respectability while the subtle armor lines beneath and oversized thigh pocket betray a second life. The wearer appears professionally groomed on the surface but carries themselves with coiled readiness.",
+    "fit": "Blazer tailored to standard office proportions but deliberately slightly loose through shoulders to accommodate underlayer; slacks sit clean and pressed with a noticeably deeper thigh pocket that creates subtle asymmetry; shoes fitted for rapid movement rather than comfort",
+    "primary_material": "Synth-wool blazer (Vanthorpe standard), ballistic-weave underlayer (third-party retrofit), cotton-polymer blend slacks, composite rubber-soled loafers",
+    "texture": "Blazer smooth and corporate matte; underlayer creates subtle quilted texture visible at neckline and cuffs; slacks crisp and professional; shoe soles finely textured for grip",
+    "color_scheme": "Primary charcoal gray blazer and slacks, black underlayer peeking at collar and wrists, dark brown loafers, muted palette suggesting careful anonymity",
+    "closures": "Blazer: standard button closure (magnetic, corporate-standard); slacks: waistband magnetic snap and friction-fit; thigh pocket: hand-stitched heavy-duty seam with friction closure; loafers: friction-fit",
+    "distinctive_features": [
+      "Visibly patched underlayer at shoulders indicating improvised armor installation",
+      "Hand-sewn deep thigh pocket sized for compact firearm storage",
+      "Shoulder binding slightly strained from underlayer bulk",
+      "Non-marking loafer soles indicating tactical consideration",
+      "Mixed wear patterns—blazer pristine, pocket seams show stress, shoes scuffed at toe from running"
+    ],
+    "tier_indicator": "Tier 3 functional with Tier 5 street modifications—signals working-class pretension with sub-grade survival pragmatism",
+    "cultural_context": "Accountant by day, gig-economy fixer or black-market runner by night. Wears corporate identity as operational camouflage. The modifications speak to someone living between legitimate and ungoverned economy, taking calculated personal safety measures without drawing scrutiny.",
+    "condition_typical": "Blazer and slacks externally presentable and work-ready; underlayer visibly patched; pocket seams show thread stress and minor fraying; shoes worn at heel and toe from heavy use; overall impression of something maintained just well enough to pass office inspection while clearly serving double duty"
+  },
+  "image_prompt": "Full-body fashion shot of Tier 3 accountant in charcoal synth-wool blazer and pressed slacks, standing against industrial concrete backdrop with blue-tinted neon signage. Camera catches glimpse of black ballistic underlayer at neckline and wrists. Model poses with subtle tension, hand near thigh pocket. Cool moody lighting emphasizes the barely-hidden tactical layer beneath corporate exterior. Loafers show scuff marks from street wear. Shot composition balances professional office presentation against subtle visual tells of street-level survival. --ar 2:3 --v 6"
 }

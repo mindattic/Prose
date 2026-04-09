@@ -44,5 +44,38 @@
     "corporate",
     "tessera"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Aybek Alvarez-Okonkwo",
+    "GLMZ",
+    "Mika Sorel",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "NullPoint Technologies SynapseJam SJ-3 'Migraine'",
+    "Prosper Akinwale-Grunewald",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, clinical aerosol dispenser with a minimalist design that reads as medical-grade rather than weaponized. The form factor resembles a high-end inhaler or precision spray applicator — ergonomic, refined, almost pharmacy-counter legitimate. The silhouette is tapered and purposeful, designed for one-handed deployment with thumb-actuated trigger.",
+    "dimensions": "12cm height × 4.2cm width × 3.8cm depth. Valve stem protrudes 0.8cm from cap. Pressurized chamber comprises roughly 60% of total volume.",
+    "weight_description": "Surprisingly light — barely 140 grams when full. The heft is concentrated in the lower third (pressurized chamber), creating a bottom-heavy balance that feels stable and controlled in the palm. Feels like holding a precision tool rather than a weapon.",
+    "primary_material": "Anodized aluminum body with surgical-grade stainless steel valve assembly and pressurized chamber. Polymer actuator trigger and thumb-rest. Internal delivery lines are medical-grade silicone.",
+    "finish": "Matte silver-gray anodization with a brushed texture that resists fingerprints and reflects light evenly. The aluminum has a clinical, almost sterile appearance — no visible wear marks on new units, though used examples show faint handling marks on the grip area.",
+    "color_scheme": "Primary: matte gunmetal gray. Accents: stainless steel valve cap (polished), minimalist black safety band around trigger guard, subtle electric-blue indicator dot on the pressure gauge window (glows faintly under UV).",
+    "grip_texture": "Textured polymer grip surface with micro-ridges for tactile control, slightly tacky to discourage slipping when wet. The feel is clinical and precise — designed for security professional hands wearing nitrile or latex gloves.",
+    "distinctive_features": [
+      "Transparent polycarbonate pressure gauge window with blue-tinted gradient readout showing remaining volume and pressure status",
+      "Fine-mist actuator nozzle (adjustable between 0.5m tight spray and 2m diffuse cloud) with secondary precision tip attachment",
+      "CLARITY MEDITATION corporate seal embossed on the lower chamber (small, understated)",
+      "TX-119 concentration and batch date printed in white on the spine in corporate sans-serif font",
+      "Safety interlock trigger guard prevents accidental discharge",
+      "Integrated locking cap that doubles as a pressure release valve",
+      "Faint residue marks on professional-used units — microscopic whitish deposits near the nozzle from TX-119 compound settling"
+    ],
+    "manufacturer_markings": "CLARITY MEDITATION logo (geometric tessellation pattern) discreetly embossed on the chamber side. Serial number and compliance stamps (GLMZ 44.7, licensed security only) printed in small white text on the upper spine. Batch/manufacturing date etched into the metal near the base.",
+    "condition_typical": "Fresh units appear pristine and clinical — almost pharmacy-counter legitimate. Field-used examples show minimal wear: slight grip polish, microscopic scratches from holster contact, occasional faint crystalline deposits near the nozzle from compound exposure. Well-maintained professional gear; rarely shows heavy battle damage because the NV-2 is not designed for combat durability but for precision application."
+  },
+  "image_prompt": "Product photography of a sleek, clinical aerosol spray dispenser in gunmetal gray and stainless steel, positioned on a dark matte surface under dramatic side-lighting that emphasizes the brushed aluminum finish and polycarbonate pressure gauge. Shot from a three-quarter angle showing the ergonomic grip and precision nozzle assembly. Minimalist composition suggesting pharmaceutical/medical aesthetics but with subtle cyberpunk edge — perhaps a gloved hand (black tactical glove) holding it against a dark background with faint blue ambient light reflecting off the stainless steel valve. The image should evoke precision, clinical authority, and corporate polish while hinting at its disruptive neural purpose. Include shallow depth of field with the nozzle in sharp focus. --ar 3:2 --v 6"
 }

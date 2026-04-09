@@ -40,5 +40,38 @@
     "common",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Ebele Medina-Quaye",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "MERIDIAN",
+    "Nika Svensson-Kone",
+    "Oleander Tetteh-Vasyliev",
+    "Oumarou Svec-Ranginui",
+    "Patient Zero",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A diminutive, almost toy-like pistol with a blunt profile and minimal visual aggression. The compact silhouette screams 'ankle holster special' — something designed to disappear rather than intimidate. Its proportions are slightly stubby, lacking the sleek lines of higher-tier firearms.",
+    "dimensions": "Length: 16.5 cm, Width: 3.2 cm, Height: 10.8 cm, Barrel length: 6.1 cm",
+    "weight_description": "Feels hollow in the hand — light but not elegant, more like holding a scaled-down toy than a serious implement. The flex in the composite frame is immediately noticeable when gripped firmly.",
+    "primary_material": "Single-piece carbon composite frame with stamped steel slide; plastic trigger guard",
+    "finish": "Matte black coating on slide with visible stress fractures and edge wear; dull charcoal composite frame with slight waffle-textured molding marks",
+    "color_scheme": "Matte black slide with charcoal gray composite frame; small brushed steel breech face visible",
+    "grip_texture": "Cheap molded polymer with shallow grip serrations that feel more cosmetic than functional; slightly tacky to the touch",
+    "distinctive_features": [
+      "Visible manufacturing seams on frame",
+      "Thin, flimsy-looking slide with pronounced flex when pressed",
+      "Tiny ejection port",
+      "Minimalist sights — almost more etched than raised",
+      "Visible chipping on slide edges where black coating is wearing through to bare steel",
+      "Frame shows faint factory mold lines",
+      "Six-round magazine with witness holes",
+      "Oversized trigger guard relative to trigger size"
+    ],
+    "manufacturer_markings": "Small 'MERIDIAN MUNITIONS' stamp on left slide side, barely legible; tiny caliber marking '.32 ACP' near breech; generic serial number stamped directly into frame with visible imperfections",
+    "condition_typical": "Field-worn within weeks — edge-chipped slide finish, loose-feeling frame with micro-movements, trigger slightly scratchy from lint accumulation, magazines showing spring fatigue from repeated loading cycles"
+  },
+  "image_prompt": "Product photography of a Meridian Munitions Compact-7 'Rat Trap' .32 ACP subcompact pistol, small and unremarkable, sitting on a brushed steel surface next to a gloved hand wearing working-class synthweave gloves. Dramatic side-lighting reveals the cheap matte black coating chipping at edges and the pale charcoal composite frame. Show the thin stamped steel slide, minimalist sights, and visible manufacturing imperfections. Cyberpunk catalog aesthetic — clinical, detached, slightly unflattering lighting that emphasizes the budget-tier construction. Dark background with neon accent reflecting off the worn finish. Product shot with merchandise photography style, weapon slightly angled to show profile and slide. --ar 3:2 --v 6"
 }

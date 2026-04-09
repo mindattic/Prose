@@ -45,5 +45,37 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Exo-Runner Frame",
+    "Cutter Vane",
+    "GLMZ",
+    "Ilhan Nakamura-Bello",
+    "Ringo DV-4 'Courier'",
+    "Sterling-Nakamura Heritage Roadster",
+    "Tessera Nexus Town Car",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, brutalist launcher resembling a flare gun crossed with a pneumatic tool — angular and industrial, with a pronounced barrel shroud housing the deployment mechanism. The silhouette suggests controlled violence: all sharp lines and purposeful geometry.",
+    "dimensions": "350mm length, 120mm width at grip, 85mm height. Barrel shroud extends 180mm from receiver.",
+    "weight_description": "Hefty and front-heavy at 2.5 kg — the mass concentrated in the barrel assembly where the bola cartridge seats. Feels like shouldering a responsibility.",
+    "primary_material": "Reinforced polymer composite frame (charcoal gray) with steel barrel shroud and tungsten-weighted internals visible through diagnostic ports.",
+    "finish": "Matte tactical polymer with brushed steel accents. Wear patterns show the shroud has taken impact — micro-scratches and small dents typical of field use. Grip shows slight fading from gloved handling.",
+    "color_scheme": "Matte charcoal gray frame, gunmetal steel barrel shroud, black rubberized grip with burgundy accent stripe along the top rail.",
+    "grip_texture": "Deeply textured rubberized polymer with subtle finger grooves — engineered for retention even in wet conditions or through padded gloves. Slightly tacky to the touch.",
+    "distinctive_features": [
+      "Hex-shaped barrel shroud with thermal vent ports running the length",
+      "Spring-tensioned bola cartridge magazine visible through translucent polymer inspection window on right side",
+      "Ratchet-lock status indicator — small LED that glows amber when mechanism is armed, green when locked",
+      "Proprietary grip-mounted tool cavity (sealed with red polymer cap) containing the single release key",
+      "Dual pressure-release vents near muzzle (safety mechanism to prevent accidental deployment)",
+      "Serialized steel nameplate recessed into left grip: 'ZHENG-DAO BL-5' with manufacturing date stamp",
+      "Tungsten weight preview ports — small circular openings showing the dull gleam of the 200g spheres"
+    ],
+    "manufacturer_markings": "Zheng-Dao Heavy Industries logo (stylized double-stroke character Φ in corporate cyan) stamped into the grip at thumb position. Serial number and compliance markings on left side beneath shroud. Licensing insignia (Tier 2+ Law Enforcement Only) laser-etched above trigger guard.",
+    "condition_typical": "Well-maintained but operationally weathered — the finish shows field scuffs and minor impact marks consistent with duty use. No rust or deep corrosion; regular maintenance evident. Grip shows compression wear from heavy gloved use but remains secure."
+  },
+  "image_prompt": "Product photography of the Zheng-Dao BL-5 'Bola Gun' lying on a dark tactical mat, shot from a 3/4 angle with dramatic side-lighting casting sharp shadows across the brushed steel barrel shroud. The tungsten weights are visible through the inspection port, catching reflected light. A gloved hand (black tactical glove with Φ currency symbol embroidered) grips the weapon from above, fingers positioned at the pressure-release vents. Background is deep charcoal with subtle circuit-board texture. Neon cyan accent lighting (Zheng-Dao corporate color) illuminates the logo and status indicator LED in amber. Cinematic cyberpunk industrial aesthetic, highly detailed surface textures, 2226 technology level --ar 3:2 --v 6"
 }

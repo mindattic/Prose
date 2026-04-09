@@ -37,5 +37,30 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Iowan Behemoth — 'Thunderhead'",
+    "The Swarm",
+    "Vespid Dynamics"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact cylindrical canister resembling a high-tech aerosol dispenser, sleek and sinister. The housing suggests contained chaos — a sealed vessel of distributed death. At first glance, it could pass for a cologne atomizer or industrial lubricant can, but the precision engineering and warning markings betray its true purpose.",
+    "dimensions": "Height: 12 cm, Diameter: 4.5 cm, Launch port diameter: 0.8 cm",
+    "weight_description": "Deceptively light — only 2.5 kg total, creating a jarring contrast between its lethal payload and its handheld convenience. Sits in the palm without resistance, belying the 50-unit swarm it contains.",
+    "primary_material": "Carbon-composite polymer shell with internal titanium-reinforced micro-reservoir grid. Launch mechanism uses surgical-grade stainless steel.",
+    "finish": "Matte charcoal black with a subtle iridescent oil-slick sheen across the upper hemisphere, suggesting the volatile chemical payload beneath. The finish is deliberately unmarked to suggest illegality.",
+    "color_scheme": "Matte black primary with acid-green accent lines tracing the micro-drone egress ports in a hexagonal grid pattern. Tiny bioluminescent warning symbols glow faintly in the dark: Φ-marked prohibition stamps.",
+    "grip_texture": "Bare titanium knurling on the lower half, deliberately uncomfortable to discourage casual handling. The upper release mechanism is smooth, tempered polymer — cold and surgical.",
+    "distinctive_features": [
+      "Six micro-apertures arranged in a hexagonal pattern around the upper circumference, each barely visible but precisely machined",
+      "A small digital readout (3mm LED screen) displaying drone count and battery status in sickly amber numerals",
+      "Faint metallic striations visible through semi-translucent polymer sections, hinting at the drone storage grid within",
+      "A thumb-press activation point with a recessed safety cap featuring a biometric lock",
+      "Microscopic etching around the base: 'VESPID DYNAMICS | VMS-3 | DEPLOYMENT ONLY | DO NOT OPEN'",
+      "A small pressurized indicator gauge on the side — a thin red line that moves with internal drone readiness"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS logo embossed in raised letters on the lower front, deeply stamped to prevent erosion. Serial number laser-etched vertically along the rear seam. Tier 5 warning symbols (red Φ symbol and crossed-out city icon) stamped on opposite sides.",
+    "condition_typical": "Street units show scuffing and micro-abrasions from illicit courier handling. Black finish develops a faded, weathered patina from repeated exposure to humid Great Lakes air. Some units show evidence of hasty field repairs or component swaps. Biometric locks may be scratched or bypassed. The readout screens frequently flicker or display corrupted data on older units."
+  },
+  "image_prompt": "Product photography of a sleek, menacing cylindrical canister resting on dark brushed-steel surface, bathed in harsh side-lighting that emphasizes the hexagonal micro-apertures. The matte black finish reflects amber warning symbols. Shot from a 45-degree angle to showcase the pressurized gauge and digital readout glowing faintly in shadow. Close-up detail of the thumb-press activation mechanism in sharp focus. Cyberpunk aesthetic with cool blue-green rim lighting suggesting the toxic payload within. A gloved hand (chrome-fingered augmentation visible) hovers nearby as if about to deploy. Shallow depth of field, dramatic chiaroscuro. --ar 3:2 --v 6"
 }

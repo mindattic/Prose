@@ -42,5 +42,36 @@
     "precision",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Nika Svensson-Kone",
+    "Vesna Kiptoo-Ravelonarison",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purposeful sporting shotgun with an elegant profile emphasizing length and balance. The 28-inch barrel dominates the silhouette, creating a smooth, swept appearance optimized for swing. The stock is noticeably adjustable with visible comb hardware. Overall impression: refined competitor's tool, not a combat weapon.",
+    "dimensions": "Length: 127 cm | Barrel: 71 cm | Height at comb: 12 cm | Receiver width: 5.5 cm",
+    "weight_description": "Balanced and manageable—3.2 kg distributed forward to the barrel for smooth tracking. Feels lighter than it is due to mass concentration, enabling fast target acquisition on doubles.",
+    "primary_material": "Aluminum alloy receiver with steel barrel and gas tube. Foregrip and stock utilize aerospace-grade polymer reinforced with carbon fiber weave for vibration damping.",
+    "finish": "Matte black anodized aluminum receiver with satin-chrome gas system components. Barrel features a non-reflective deep-bore finish to reduce glint. Stock has a subtle brushed charcoal texture.",
+    "color_scheme": "Primary: matte black receiver and barrel | Accents: satin chrome gas system, silver adjustment knobs on comb, gunmetal gray foregrip",
+    "grip_texture": "Foregrip wrapped in thin, tacky polymer with fine radial ridging for secure mounting during swing. Stock features a rubberized adjustable comb pad and textured Monte Carlo cheekrest.",
+    "distinctive_features": [
+      "Adjustable comb mechanism with numbered detent settings visible on left side",
+      "Oversized ejection port with polished chrome surround",
+      "Red anodized gas system pressure relief valve stem",
+      "Volkov-Saito competition rib with sight bead and mid-rib reference line",
+      "Custom engraved receiver panel: 'VS-S12 SPORT SKEETMASTER' in serif font",
+      "Fine spiral porting along final 8 cm of barrel (2×3 pattern)",
+      "Shell carrier on side of receiver showing patent date",
+      "Safety lever with detent click feedback, positioned for index finger",
+      "Glossy black VOLKOV-SAITO medallion inlaid in right side of stock"
+    ],
+    "manufacturer_markings": "Large 'VOLKOV-SAITO PRECISION' stamp on top of receiver near comb | 'VS-S12 SPORT' engraved in script below ejection port | Serial number on left-side barrel flat | Patent references micro-stamped on gas tube | Small Cyrillic character Φ (currency mark homage) inlaid near magazine tube",
+    "condition_typical": "Well-maintained, often with light scuff marks from competition carry cases. Barrel shows minor handling marks. Stock may display tape residue from custom comb adjustments. Gas system kept clean and lubricated. Receiver free of corrosion but showing character from regular range use."
+  },
+  "image_prompt": "Professional product photograph of a Volkov-Saito VS-S12 Sport Skeetmaster sporting shotgun displayed on a dark gunmetal gray surface, angled 45 degrees to show barrel length and adjustable comb profile. Shot held by a gloved hand in shooter's position on right side, glove texture visible in detail. Dramatic side-lighting from upper left creating chrome highlights on gas system and satin barrel finish. Deep black background with subtle GLMZ metropolitan grid pattern barely visible. Emphasis on precision engineering: sharp focus on adjustable comb detents, competition rib sight line, and Volkov-Saito engraving. Cyberpunk aesthetic through: matte anodized finish catching light like worn future-material, red pressure relief valve glowing subtly, overall tone cool and professional—no blood, pure sporting craft. Shot from slightly elevated angle to showcase 28-inch barrel sweep and balanced weight distribution. Photography style: luxury catalog meets corporate precision aesthetic. --ar 3:2 --v 6"
 }

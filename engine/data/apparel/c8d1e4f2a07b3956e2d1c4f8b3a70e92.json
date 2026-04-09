@@ -46,5 +46,26 @@
     "Ferrogate Enforcer Cruiser",
     "Ringo Corponation Tandem Fold Microvan",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian full-body coverall with high-visibility industrial yellow as the dominant color, broken by bold black chemical-resistance rating stripes across the chest and thighs. The silhouette is practical and blocky—shoulders sit squared-off, arms hang straight, legs are wide through the thigh. The detachable hood adds a technical, modular appearance when attached. Overall impression: no-nonsense safety worker, unglamorous but purpose-built.",
+    "fit": "Relaxed and intentionally loose through the torso and limbs to allow layering and movement in hazardous environments. Accordion gussets at elbows and knees provide articulation without restricting motion. The shoulders are stiff and structured, tapering slightly at wrists and ankles where elastic cuffs grip. Designed for function over form.",
+    "primary_material": "Thermoplastic-bonded polyaramid—a synthetic composite rated for acid and chemical exposure. The outer shell is rigid and shell-like, with a matte industrial finish that gradually burnishes to a worn sheen with use.",
+    "texture": "Matte, slightly rough to the touch with a plasticky, reinforced quality. Accordion gussets at joints have a ribbed, folded appearance. Triple-welded seams create subtle ridges. Scuffs and micro-abrasions develop naturally with wear, adding tactile variety to the finish.",
+    "color_scheme": "Flat industrial yellow (Φ-grade safety standard) with crisp black chemical-resistance rating stripes running horizontally across chest and thighs. No fading intended; any weathering is from physical damage, not dye degradation. Color-coded seams (likely red, orange, green, blue) by hazard class.",
+    "closures": "Front-center heavy-duty zipper running full length from crotch to chin. Quarter-turn collar locks secure the detachable hood. Elastic cuffs at wrists and ankles. No additional buckles or snaps—all closures are functional and sealed.",
+    "distinctive_features": [
+      "Detachable, modular hood with quarter-turn locking mechanism",
+      "Triple-welded seams with color-coded rating stripes (hazard classification system)",
+      "Accordion gussets at elbows and knees for articulation",
+      "Integrated chest pocket with folded decon wipe sleeve storage",
+      "Thermoplastic-bonded shell resistant to acid, caustics, and industrial solvents",
+      "Matte finish that scuffs and wears to a reflective sheen",
+      "Wide, loose cut designed for hazmat responders and chemical plant workers"
+    ],
+    "tier_indicator": "Tier 3-4 working class. This is standard-issue safety wear for Circuit-tier industrial workers, chemical handlers, and hazmat responders. Affordable, durable, and regulation-compliant—not luxury, but not salvage either.",
+    "cultural_context": "Wearing this signals honest industrial labor, chemical exposure risk tolerance, and regulatory compliance. The wearer is likely a plant worker, hazmat specialist, or decon technician in the GLMZ manufacturing sectors. It's not street wear; it's visible proof of a dangerous job.",
+    "condition_typical": "New: stiff, bright yellow, pristine matte finish. Worn (1-3 shifts): micro-scuffing visible, elastic cuffs slightly relaxed. Heavy use (1+ month): visible scratches on the yellow shell, seams show wear patterns, hood may be detached and clipped to the belt. Industrial wear is expected and not considered damage."
+  },
+  "image_prompt": "Industrial hazmat coverall on a stocky, augmented worker model in a dimly-lit chemical processing facility. Flat industrial yellow coverall with black rating stripes across chest and thighs, detached hood hanging from shoulder strap. Heavy triple-welded seams visible under cool blue-white overhead lights. Dark oil-stained concrete floor, distant glowing vat or reactor in soft crimson light. Model's chrome arm joint visible at detached sleeve. Matte texture catches light unevenly, showing scuff marks and wear. Moody, utilitarian, unromantic. --ar 2:3 --v 6"
 }

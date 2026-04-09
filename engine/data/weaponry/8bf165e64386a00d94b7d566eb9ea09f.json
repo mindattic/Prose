@@ -37,5 +37,37 @@
     "area_denial",
     "tier_2"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Aphelion",
+    "Bathysphere Networks",
+    "Glenville Sound",
+    "MERIDIAN",
+    "Meridian Munitions Dispatch-45 'Last Word'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Omnipex",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "The Resonance Communion",
+    "Volkov-Saito Precision VS-40 'Magistrate'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, perfectly spherical self-defense device with a soft, approachable appearance that belies its acoustic lethality. The rounded form resembles a high-tech stress ball or training sphere, making it unassuming enough to carry in a pocket or palm. The top hemisphere features a subtle twist-lock mechanism that's barely visible when armed.",
+    "dimensions": "6 cm diameter sphere; compact enough to fit in a closed fist",
+    "weight_description": "Light and balanced — 95 grams feels almost negligible in hand, lending itself to easy throwing and concealment. The weight distribution is perfectly neutral, centering in the palm without tilting.",
+    "primary_material": "Rubberized polymer composite with internal speaker array matrix and high-density capacitor core",
+    "finish": "Matte rubberized exterior with a subtle non-slip coating; the twist-lock seam on the top hemisphere is barely perceptible, finished flush with the sphere's surface",
+    "color_scheme": "Charcoal gray primary with thin accent lines of electric blue running along the seam line where the hemispheres meet; subtle Meridian Audio Concepts branding in silver",
+    "grip_texture": "Rubberized, slightly tacky polymer surface designed for secure grip even with sweaty or augmented hands; micro-textured to prevent slipping during the throwing motion",
+    "distinctive_features": [
+      "Minimal twist-lock mechanism at the top (90-degree rotation to arm) — almost invisible when not engaged",
+      "Faint circular perforations forming a grid pattern across the surface, concealing the multi-directional speaker array",
+      "Electric blue accent seam separating the two hemispheres",
+      "Small silver serial number stamp on the lower hemisphere",
+      "Impact-sensing nodules barely visible as slight dimples at cardinal points",
+      "No external indicators or LEDs — silent and dark until deployment"
+    ],
+    "manufacturer_markings": "Meridian Audio Concepts logo and 'SirenSphere S-7' embossed in silver on the upper hemisphere; serial number stamped in micro-font on the lower hemisphere; Φ85 cost marking visible on the glossy interior of the packing sleeve",
+    "condition_typical": "Factory-pristine and inert until armed; once deployed, the sphere becomes a scorched, acoustically-dead husk — the capacitor burns out completely, leaving the device non-recoverable and technically trash. Customers typically see only pre-deployment units."
+  },
+  "image_prompt": "Midjourney product photography: A single Meridian Audio Concepts SirenSphere S-7 'Dome' sonic deterrent sphere, 6cm diameter, sitting on a matte black reflective surface under dramatic side-lighting that emphasizes its spherical form. The charcoal gray rubberized exterior gleams subtly; the electric blue seam line glows faintly under the light. One gloved hand (augmented, chrome knuckles visible) holds the sphere in the background, slightly out of focus, showing scale and grip texture. The perforations forming the speaker grid are visible as subtle shadows across the surface. Cyberpunk aesthetic: cold, clinical lighting with high contrast; shallow depth of field isolating the sphere as the focal point. Include the twist-lock mechanism at the top visible as a nearly imperceptible seam. The background is deep matte black with slight reflections suggesting an industrial testing facility. Cinematic, product-showcase style photography. --ar 3:2 --v 6"
 }

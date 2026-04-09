@@ -60,5 +60,28 @@
     "Tafara Quiñones-Saarinen",
     "The United Workers Front",
     "Witness"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A street-hardened night vendor's layered utility uniform that reads as working-class functional with personal adaptation. The silhouette is compact and mobile — nothing loose or flowing — with visible augmentation integration. The burgundy henley peeks from under the charcoal apron creating a subtle color contrast. The modified trousers accommodate non-standard leg geometry, signaling both cybernetic enhancement and resourceful tailoring. The overall impression is someone built for 8-hour shifts in tight quarters, processing transactions and handling hot food without stopping.",
+    "fit": "Tailored for movement and accessibility — the henley is fitted through the torso but not restrictive, the apron sits high at the waist with deep front pockets positioned for easy reach, trousers are straight-cut with intentional calf expansion to accommodate digitigrade geneware. The cap sits snug, the overhatch clips securely. Everything designed for rapid removal or adjustment mid-shift.",
+    "primary_material": "Heat-transfer printed henley (synthetic blend), heavy-duty waxed canvas apron, tape-reinforced Goretek work trousers (ballistic weave), matte-finish Foundry work sneakers (reinforced synthetic/rubber composite), charcoal cotton-weave skull cap with waterproof overhatch",
+    "texture": "Waxed canvas is stiff and water-resistant with a subtle sheen; the henley is soft cotton-poly blend with slight pilling from repeated washing; trousers show tight, sturdy weave with visible reinforcement tape at stress points; sneakers have deep tread and grippy sole; the contrasting calf panel is raw charcoal canvas, slightly rougher than the main trouser material",
+    "color_scheme": "Deep burgundy henley with metallic heat-transfer logo, charcoal waxed canvas apron, dark navy trousers with charcoal panel inserts, matte black sneakers, matching charcoal skull cap. The chrome payment-reader interface on the right forearm provides an accent of clinical silver.",
+    "closures": "Apron ties wrap twice around waist and knot at front for quick removal; trousers use standard snap fly; cap has internal elastic and brim clips for the overhatch; sneakers are lace-less slip-on design with friction-fit heel; belt is canvas with friction-lock buckle",
+    "distinctive_features": [
+      "GridFeed logo heat-transfer on left chest — stylized bowl over power grid node",
+      "Waxed canvas apron with wide front pockets and hanging towel loop",
+      "Reinforced bib panel deflecting steam and hot grease",
+      "Custom tailor-modified trousers with let-out inner seams and contrasting charcoal calf panels for digitigrade geneware accommodation",
+      "Charcoal skull cap with detachable waterproof overhatch and clip-rail system",
+      "Chrome payment-reader interface mount on right forearm",
+      "Phone-and-fob loop clipped at left hip",
+      "Matte black Broadfoot sneakers with 8-hour standing rating",
+      "Evidence of heavy use — slight grease staining on apron bib, faint scuff marks on trousers and footwear"
+    ],
+    "tier_indicator": "Tier 3-4 working class. The GridFeed franchise issues standard pieces (apron, henley, cap) that are durable but not luxury; the personal additions (Goretek trousers, Foundry footwear, independent tailoring) show self-investment in quality tools for a demanding job. The chrome augmentation interface is functional, not decorative.",
+    "cultural_context": "Street vendor, night-shift food service, augmented working class. Wearing this outfit signals you're part of the informal economy, physically adapted for non-standard work, and comfortable with geneware modifications. The GridFeed branding marks you as franchised labor — a step above completely independent but still sub-tier-2. The custom tailoring indicates you've been in this role long enough to invest in proper adaptation.",
+    "condition_typical": "Broken-in and working-worn. The apron shows faint grease staining around the bib and pocket edges; the trousers have creasing at the knees and cuffs from repeated eight-hour shifts; the sneakers are scuffed at the toes and sides but kept clean; the henley may have small, nearly-invisible bleach spots from steam exposure; the cap's sweatband is slightly darkened. Everything is functional and maintained, not pristine, but clearly cared-for within the constraints of street-work reality."
+  },
+  "image_prompt": "A cyberpunk street vendor in full GridFeed night cart uniform photographed against a rain-slick alley backdrop, neon signs reflecting off wet pavement. Focus on the burgundy henley and charcoal waxed-canvas apron with visible logo heat-transfer, the custom-modified trousers showing charcoal calf panels accommodating digitigrade geometry, matte black Foundry sneakers planted firmly on wet concrete. The right forearm catches moody blue-amber light on the chrome payment-reader interface mount. The charcoal skull cap sits low, the detachable waterproof overhatch clipped to the brim. A faint aura of steam and five-spice lingers. Shot with moody street photography lighting, cool tones dominating, the subject framed as a hardworking augmented figure embedded in the GLMZ night economy. Dark urban backdrop with distant vendor cart silhouette. --ar 2:3 --v 6"
 }

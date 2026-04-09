@@ -42,5 +42,40 @@
     "flanged",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Brighton Arc",
+    "Djeneba Park-Traore",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Ira Volkov",
+    "Narrowcast",
+    "Sterling-Nakamura Augmented Reality Court System",
+    "TESSERA TC-3 'Crucible'",
+    "Vantablack VS-3 'Skin Job'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist fusion of medieval weaponry and cyberpunk technology — a thick, stubby mace head bristling with six conductive flanges arranged radially around a central impact core. The head resembles a industrial ball bearing or planetary gear, but more aggressive. The handle extends downward in a reinforced grip, creating an overall silhouette that reads as 'compact devastation.' At rest, it's an ominous chunk of engineered violence; when charged, it becomes a arcing halo of electrical fury.",
+    "dimensions": "Total length: 55 cm (45 cm handle + 10 cm head). Head diameter across flanges: 10 cm. Handle grip section: 8 cm circumference.",
+    "weight_description": "Hefty but balanced — 1.8 kg concentrates toward the head, creating a purposeful forward-weighted feel that encourages momentum-driven swings. Not unwieldy despite the mass; designed for sustained combat use.",
+    "primary_material": "Conductive carbon-lattice composite flanges over a steel impact core. Handle is reinforced polymer with embedded power conduits.",
+    "finish": "Matte gunmetal with deliberate industrial wear. The flanges show a subtle iridescence from the carbon-lattice weave. Impact zones are scuffed and dull from use.",
+    "color_scheme": "Deep charcoal-gray flanges with darker (nearly black) steel core. Electrical accent trim in pale blue running along power conduits in the handle. When inactive, the weapon is a study in grays; when active, the arcs dominate the visual field.",
+    "grip_texture": "Rubberized polymer with fine diamond-plate texturing for all-weather grip. The grip tapers slightly toward the pommel. Capacitor housing on the pommel is smooth, finished steel — slightly warm to the touch.",
+    "distinctive_features": [
+      "Six radially-arranged conductive flanges with visible insulating gaps between each",
+      "Central impact cone slightly recessed, designed to concentrate kinetic force",
+      "Blue-white LED indicator strip running down the back of the handle (glows brighter as capacitor charges)",
+      "Subtle etched grid pattern across flanges showing the electrical discharge pathways",
+      "Small capacitor housing at pommel with faint electromagnetic hum when powered",
+      "Wear patterns on flanges showing repeated arcing (slight carbon scoring, micro-pitting)",
+      "Phenotype District Management serial plate on lower handle — industrial alphanumeric stamp",
+      "Thermal scoring around flange gaps from accumulated electrical discharge",
+      "Impact flattening on the central strike zone from armor contact"
+    ],
+    "manufacturer_markings": "Phenotype District Management logo (a stylized double helix) stamped into the pommel steel. Serial number etched on the lower handle in sans-serif numerals. 'CRUCIBLE INDUSTRIES' and 'ARC MACE AM-2' embossed on the upper handle grip.",
+    "condition_typical": "Field-worn but maintained. The handle shows signs of extended use (slightly polished grip from sweat and combat gloves) and the flanges bear scars from repeated electrical discharge and armor contact. Not pristine, but clearly a weapon that has proven itself and is kept functional. Light scorching around the flange bases from arc bleed."
+  },
+  "image_prompt": "Cyberpunk melee weapon photograph: Crucible Industries Arc Mace AM-2 'Thunderhead' held vertically in a gloved tactical grip against a dark matte surface, angled to show the six radial conductive carbon-lattice flanges. Dramatic side-lighting from blue-white LED that illuminates the flange geometry and thermal scoring marks. The flanges should cast sharp shadows, emphasizing their three-dimensional arrangement. Include subtle electrical effect: faint arcing between two or three flanges, rendered as delicate blue lines of ionization. The pommel capacitor housing visible at bottom, faintly glowing. Handle grip texture visible, industrial and worn. Background: deep charcoal gradient fading to black. Mood: aggressive, purposeful, intimidating. High-contrast lighting emphasizing materials and engineering. --ar 3:2 --v 6"
 }

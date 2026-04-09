@@ -47,5 +47,26 @@
     "Narrowcast",
     "Symbiotic Bioluminescent Colony",
     "VitaCore BloomFilter Olfactory Modulation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, athletic bodysuit that clings to the form like a second skin. At rest, it appears as a matte charcoal compression garment with subtle geometric panel lines across the chest and torso. Under bass frequencies, the surface erupts with fluid color blooms—violets bleeding into acid greens in wavelike patterns that move across the wearer's body. The open back creates a dramatic negative space, exposing the spine and shoulder blades. High hip cut emphasizes the waist and thighs.",
+    "fit": "Compression fit throughout—second-skin snug without restriction. Structured chest panel provides subtle shaping. Open-back design allows full shoulder mobility and ventilation. High hip rise sits just at the pelvic bone.",
+    "primary_material": "Sound-reactive chromolux mesh layered over matte-black tensile synthetic base. The chromolux is a smart-responsive polymer composite; the base is ballistic-grade synth-weave for durability and moisture management.",
+    "texture": "Smooth, almost liquid appearance when still. The chromolux layer has a subtle iridescent sheen in certain angles. Close inspection reveals fine mesh grid pattern beneath the color-reactive surface. Tensile base beneath has a slight anti-slip texture.",
+    "color_scheme": "Matte black foundation. Sound-reactive chromolux displays violet → magenta → acid green spectrum. At rest: flat charcoal gray. Active: bioluminescent bloom patterns that pulse and cascade with bass frequency intensity.",
+    "closures": "Seamless construction with friction-fit integration at the neural port access collar. No visible zippers or magnetic snaps—the suit is pulled on as one continuous piece. The collar features a recessed port interface for BCI sync.",
+    "distinctive_features": [
+      "Sound-reactive chromolux mesh layer with frequency-responsive color shifting",
+      "Integrated neural port access collar—allows BCI passthrough for manual light-pattern override",
+      "Open-back architectural design for dramatic visual impact and ventilation",
+      "Seamless construction with no visible seams or fasteners",
+      "Geometric panel lines on chest and torso that emphasize musculature",
+      "High-hip cut with structured waist panel",
+      "Anti-sweat moisture-wicking tensile base layer"
+    ],
+    "tier_indicator": "Tier 4 working-class with Tier 3 aspirational elements. The suit is expensive enough to signal circuit-scene authenticity and access to underground tech, but affordable within the mid-tier club culture economy.",
+    "cultural_context": "A Circuit-district street label piece worn by bass-culture enthusiasts, rave participants, and BCI-modded individuals. Signals membership in the underground electronic music and club scene. Wearing this means you're connected to the MagLine tunnel raves, possess or have access to BCI augmentation, and embrace the hyper-individualist aesthetic of the post-industrial club movement.",
+    "condition_typical": "When new: pristine and matte, barely visible under normal light. Heavily used pieces show minor stress fading at the seams and collar, slight texture wear at contact points (shoulders, hips). The chromolux layer remains responsive even after heavy use but may show slight color drift or slower response times. Patched versions exist—tape-reinforced at stress points, or panels replaced with similar (but not identical) chromolux mesh."
+  },
+  "image_prompt": "Fashion photograph of a Voltface Fracture Rave Bodysuit on an androgynous cyberpunk model with subtle chrome cheekbone augmentations and neural port visible at the base of the skull. Model stands in a relaxed contrapposto pose inside an abandoned MagLine tunnel station. Moody blue-violet ambient lighting from underground neon signage. The bodysuit is at rest—flat charcoal matte black with geometric panel lines just barely visible. A secondary inset image shows the same suit under simulated bass-frequency lighting with violet-to-acid-green color blooms cascading across the torso and thighs in organic wave patterns. Dark industrial concrete backdrop, graffiti tags in faded circuit-board motifs. Dramatic rim lighting on the open back panel. Film noir cyberpunk aesthetic with high contrast. --ar 2:3 --v 6"
 }

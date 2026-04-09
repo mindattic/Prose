@@ -47,5 +47,27 @@
     "GLMZ",
     "Street Custom 'Ghostwriter' Grafitti Flamethrower",
     "The Bazaar"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian, boxy silhouette that reads as instantly recognizable across the GLMZ—the default armor against Great Lakes winters. Broad shoulders, a generous cut through the torso, and a length that extends to mid-thigh. The hood dominates the upper profile when raised, creating a bunker-like protective frame around the face. No pretense, no excess—pure functional geometry.",
+    "fit": "Relaxed and generous, designed for layering over climate-control undergarments and flexible enough to accommodate light tactical gear. The sleeves are straight and unnarrow, ending in reinforced cuffs. The torso has room to move but isn't oversized; this is a coat that trusts its wearer to dress themselves properly underneath.",
+    "primary_material": "Tightly woven synthetic outer shell (DuPont-equivalent ballistic weave) bonded to high-loft recycled synthetic fill rated to -25°C. The outer layer is water-shedding and abrasion-resistant; the fill is compressed but springy, designed to retain loft through repeated compression and laundering.",
+    "texture": "The outer shell is smooth and slightly plasticky to the touch, with a faint grid-weave pattern visible under close inspection. The fill, where visible at seams or ventilation zips, has a quilted, almost puffy appearance. The interior lining is a soft nylon tricot that slides easily over other layers.",
+    "color_scheme": "Flat black is the dominant choice (roughly 60% of street wear), with utility grey, safety orange, and deep navy as secondary options. The black absorbs ambient city light and heat, practical for both visibility in low-light conditions and thermal efficiency. No logos on the exterior; Okafor branding appears only on a small collar tag.",
+    "closures": "A robust #10 YKK zipper runs center-front from chin guard to hem, flanked by a two-way storm flap secured with friction-fit magnetic snaps. The hood cinches via a braided drawcord with plastic toggles. Two patch pockets at the hip have hidden magnetic closures; interior zippered pockets are standard.",
+    "distinctive_features": [
+      "Wire-reinforced hood brim that maintains shape in high winds and accommodates motorcycle/exo helmets",
+      "Helmet-compatible neck gasket with DWR treatment",
+      "Pit zips for emergency ventilation during high-exertion movement",
+      "Reinforced elbow and shoulder panels (ballistic weave over base shell)",
+      "Interior tech harness loops for securing comm gear or medical monitors",
+      "Grommet drainage holes at hem and cuffs",
+      "Twenty-year design continuity—spare parts and repairs are trivial",
+      "No visible branding; indistinguishability is a feature, not a bug"
+    ],
+    "tier_indicator": "Tier 2–3 functional wear. Affordable enough for working-class adoption (Φ80–120 base model), robust enough for corpo field operatives who value reliability over status signaling. The anti-brand approach makes it invisible as a class marker.",
+    "cultural_context": "The coat of transit workers, dock crews, construction teams, field medics, and anyone who spends sustained time in Great Lakes microclimate extremes. Wearing one signals 'I work outdoors' or 'I take environmental hazard seriously'—not wealth, not fashion, not allegiance. A Tier 5 salvage operator in a battered Okafor and a Tier 2 corpo in a pristine one are both saying the same thing: I need this to not die.",
+    "condition_typical": "Most street-worn ThermoShells show twenty-to-fifty hours of use: minor scuffs on the shoulders from pack straps, faint salt stains on the lower hem from lakefront spray, maybe a patched pit zip or a taped seam. The black absorbs dirt effectively, so wear patterns emerge as a subtle lightening of stressed areas rather than obvious damage. Longevity is built in; a five-year-old coat is not considered 'old.'"
+  },
+  "image_prompt": "Flat black Okafor Systems ThermoShell Parka on a lean cyberpunk model with visible subcutaneous implant tracery, standing in a harshly lit industrial dock setting. Hood raised, wire brim visible, face half-shadowed. Rain-slicked concrete, neon signage reflecting off water puddles, winter mist rising from dark water in the background. The coat's simplicity contrasts sharply with the augmented chrome joints visible at the model's wrists and neck. Moody, overhead industrial lighting creating sharp shadows. No visible branding. --ar 2:3 --v 6"
 }

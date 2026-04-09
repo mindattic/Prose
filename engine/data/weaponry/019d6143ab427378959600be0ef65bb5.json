@@ -37,5 +37,36 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions ARC-SLP 'Diplomat'",
+    "Carbon Fiber",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "Idris Forsberg-Quaye",
+    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
+    "SafeStep Promenade Defender PD-2 'Elderwood'",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "Synaptrel",
+    "The Shaft"
+  ],
+  "physical_description": {
+    "visual_profile": "An elegant, refined walking cane with the bearing of refined diplomatic accessories—straight shaft tapering subtly toward a polished ferrule, topped with a slightly bulbous handle suggesting traditional craftsmanship rather than tactical purpose. The overall silhouette reads as civilian professional, deliberately understated.",
+    "dimensions": "95 cm total length, shaft diameter 2.2 cm, handle circumference 8.5 cm, ferrule diameter 2.8 cm",
+    "weight_description": "Noticeably denser than a standard cane despite its slender profile—balanced slightly forward toward the ferrule, giving it purposeful heft without obvious weaponization",
+    "primary_material": "Carbon fiber shaft with polished brass fittings and ferrule, hardwood grip inlay",
+    "finish": "Matte graphite carbon fiber shaft with mirror-polished brass accents; handle grip exhibits subtle wood grain under clear lacquer",
+    "color_scheme": "Charcoal gray carbon fiber with warm antique brass fittings; handle in rich walnut or ebony wood tone",
+    "grip_texture": "Smooth hardwood with fine crosshatch texture underneath—professional, comfortable grip with no obvious tactical knurling; slight friction without aggression",
+    "distinctive_features": [
+      "Concealed seam running the shaft length where blade retracts—barely visible unless examined closely",
+      "Subtle twist-grooves in the upper handle suggesting the deployment mechanism",
+      "Breech-load access point disguised as decorative brass collar beneath the handle",
+      "Ferrule with barely-perceptible contact points for the taser system",
+      "Sterling-Nakamura maker's mark engraved in elegant serif font on the brass band",
+      "Serial number etched discretely on the shaft near the base"
+    ],
+    "manufacturer_markings": "Sterling-Nakamura logo (interlocking SN monogram) engraved on the brass band 12cm below handle; diplomatic authorization stamp on the ferrule collar",
+    "condition_typical": "Immaculate, polished, maintained like a luxury accessory—no battle wear, though may show light handling marks from diplomatic use; kept pristine by design"
+  },
+  "image_prompt": "Product photography of an elegant carbon fiber walking cane with brass fittings, held vertically against a dark matte background or cradled in a gloved hand wearing diplomatic-grade augmented reality gloves, side-lit with dramatic chiaroscuro to emphasize the weapon's hidden sophistication. Close detail on the polished brass ferrule and handle seams. Cyberpunk-noir aesthetic balancing refined human craftsmanship with lethal concealment. High-end ambassador's accessory with understated menace. --ar 3:2 --v 6"
 }

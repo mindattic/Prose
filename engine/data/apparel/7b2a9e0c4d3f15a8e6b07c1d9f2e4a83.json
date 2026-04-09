@@ -41,5 +41,27 @@
     "LifeWire DermaCast Programmable Skin Display",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Tiare Nishi-Anim"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian full-body coverall with a boxy, industrial silhouette. The garment reads as pure function—no aesthetic concession. Broad shoulders, straight torso, and tapered ankles create a uniform column of graphite gray punctuated by safety yellow. Worn primarily by Tier 3 and Tier 4 machine operators, maintenance crews, and industrial workers across the GLMZ.",
+    "fit": "Relaxed, deliberate. Cut for layering over undergarments and light augmentation hardware. The modular torso allows custom length configuration; limb-extension kits accommodate both natural and synthetic limbs. Armholes are generous for prosthetic shoulders. Ankle cuffs are adjustable via friction-lock.",
+    "primary_material": "Heavy graphite-toned canvas—a ballistic-weave synthetic blend rated for chemical splash and thermal stress. The material is matte, industrial-grade, with no sheen. Designed for durability over 2,000+ operating hours per configuration.",
+    "texture": "Coarse, rigid when new; softens with use into a broken-in suppleness. The double-welded seams create subtle ridge lines that catch light. Replaceable knee and elbow panels are riveted, creating small raised circles of texture against the flat base fabric.",
+    "color_scheme": "Dominant graphite gray (70%), with hi-vis safety yellow chevrons running full-width across the chest and mirrored on the back. No additional branding or pattern—the yellow is the only visual accent.",
+    "closures": "Heavy-duty magnetic snap front placket (military-grade, rated for repeated use). Wrist cuffs and ankle cuffs close via friction-lock cinch bands. No conventional zippers—all seams are sealed.",
+    "distinctive_features": [
+      "Replaceable rivet-press knee and elbow panels",
+      "Modular torso length configuration (seven lengths per assignment)",
+      "Interchangeable limb-extension kits for prosthetic accommodation",
+      "Double-welded seams throughout for chemical resistance",
+      "Stamped lot number only (no corporate branding)",
+      "Integrated tool-loop rings on hips and thighs",
+      "Reflective safety chevron strips (hi-vis yellow)",
+      "No pockets—everything is external clip-mount"
+    ],
+    "tier_indicator": "Tier 3–4 working class. This is assignment clothing—issued, not purchased. Signals stable industrial employment and corpo-adjacent infrastructure work.",
+    "cultural_context": "The uniform of GLMZ machine operators, maintenance technicians, chemical processors, and autonomous Iowan Behemoth handlers. Wearing this says: *I am infrastructure. I work with my hands and augmentations. I follow assignments.* It is seen in factories, refineries, water treatment plants, and the lower levels of corpo arcologies. No street cred—pure utilitarian.",
+    "condition_typical": "Worn but maintained. Minor stains from solvents and grease. Knee and elbow panels are often visibly patched or recently replaced. Seams remain intact. The graphite canvas develops a lighter sheen on high-friction areas (hips, shoulders). Never pristine; always working."
+  },
+  "image_prompt": "A Tier 3 industrial worker in a heavy graphite Ironpass HullWork coverall, standing in a cavernous factory floor illuminated by harsh sodium lights. The hi-vis yellow chevrons glow against the muted gray canvas. Close-up of the riveted elbow panel and double-welded seam detail. The worker's arm—a matte chrome prosthetic—emerges from the coverall cuff. Dark, industrial backdrop with metal scaffolding and steam. Moody, utilitarian aesthetic. Fashion catalog lighting emphasizing fabric texture and function. --ar 2:3 --v 6"
 }

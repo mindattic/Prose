@@ -43,5 +43,37 @@
     "collector",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Aphelion",
+    "Biometric Denial Charge BDC-1",
+    "GLMZ",
+    "Kang Athletics KA-200 'Padwork'",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Meridian Social Club",
+    "Nika Svensson-Kone",
+    "The Bazaar"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, elegant break-action over-under shotgun with a refined sporting profile. The long 30-inch barrels dominate the silhouette, creating a graceful upward taper from receiver to muzzle. The wood furniture gleams with figured grain patterns, giving the weapon an heirloom quality rarely seen in modern arms. Despite its lethal purpose, it reads as sculptural—more instrument than tool.",
+    "dimensions": "Overall length: 114 cm | Barrel length: 76 cm (30 inches) | Receiver width: 8 cm | Stock length: 38 cm",
+    "weight_description": "Perfectly balanced at 3.4 kg—feels substantial but not burdensome in the hands. The weight distribution favors the barrel slightly, creating a natural pointing dynamic that encourages smooth swing transitions. Hefty enough to absorb recoil cleanly, light enough for sustained competitive shooting.",
+    "primary_material": "Steel receiver and barrels; figured walnut stock and foregrip; chrome-plated internal action components",
+    "finish": "Polished steel with a satin sheen on the barrel flats; high-gloss varnished walnut stock with oil-finished grip areas. The receiver features a deep blue-black finish with subtle hand-brushed texture marks visible under direct light.",
+    "color_scheme": "Deep blue-black steel barrels, rich honey-to-chocolate figured walnut stock with natural grain variation, brushed steel trigger guard and selector lever accents",
+    "grip_texture": "Walnut stock has a smooth, oiled finish with subtle grip ridges carved into the wrist area. The foregrip features a slight palm swell with fine checkering (20 lines per inch) for secure mounting. No modern rubberized elements—all organic materials.",
+    "distinctive_features": [
+      "Unique hand-engraved geometric patterns on the receiver—no two identical across all units produced",
+      "Single selective trigger with visible position indicator (small lever near trigger guard to select top or bottom barrel)",
+      "Auto-ejector system ports visible on receiver bottom—small spring-loaded gates that flip open under the action",
+      "Walnut grain figure varies dramatically across each weapon—natural wood variation as design element",
+      "Traditional drop-at-heel stock design with no tactical furniture or rails",
+      "Ventilated rib running the full length of barrels (1.2 cm wide) with bead sight at muzzle",
+      "Engraving detail extends to the inside of the action—visible when broken open",
+      "Serial number etched subtly into the barrel flats in fine script"
+    ],
+    "manufacturer_markings": "\"VOLKOV-SAITO PRECISION\" engraved in elegant serif script on the top barrel flat near the breech. Year of manufacture (2-digit) and serial number stamped inside the action on the receiver. A maker's mark—a small geometric Volkov-Saito house symbol—appears on the trigger guard, integrated into the engraving pattern.",
+    "condition_typical": "Factory-fresh to lightly used. Premium owners maintain these weapons meticulously. Walnut may show minor handling marks or light contact wear on the stock wrist. Barrels remain mirror-polished. No rust, corrosion, or mechanical wear visible. Appears as a treasured sporting instrument rather than a field weapon."
+  },
+  "image_prompt": "High-end product photography of a Volkov-Saito Precision VS-O/U Sport shotgun displayed on a dark charcoal background. The weapon is positioned at a 45-degree angle, barrel pointing upper-left, showing the full length and the gorgeous figured walnut stock with honey-brown grain patterns. Dramatic side-lighting from the left emphasizes the deep blue-black finish of the steel barrels and receiver, creating a subtle reflection along the ventilated rib. The hand-engraved geometric patterns on the receiver are visible in the light, intricate and unique. A gloved hand (black leather, augmented with subtle wrist interface threads visible at the cuff) cradles the foregrip, showing the checkering detail and the natural oils of the walnut. Include selective trigger detail and the auto-ejector port. Lighting is moody and atmospheric—cyberpunk luxury aesthetic—with subtle highlights catching the bead sight and the engraved maker's mark. The overall mood should evoke both precision craftsmanship and competitive sport. Shallow depth of field. --ar 3:2 --v 6"
 }

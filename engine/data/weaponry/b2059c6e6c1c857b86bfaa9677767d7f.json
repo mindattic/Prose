@@ -42,5 +42,38 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
+    "Ilhan Sandstrom-Badu",
+    "Irontide Tidal Energy",
+    "Nika Svensson-Kone",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "Sustrel",
+    "Tessera Corponation",
+    "Tessera Plasma Channeler PC-9 'Stormcaller'",
+    "Vespid Dynamics",
+    "Zheng-Dao Bioelectric Axonal Frequency Bridge"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, compact directed-energy weapon resembling a stylized pistol crossed with medical instrumentation. Its form factor suggests concealment and precision rather than brute force—angular yet ergonomic, with a tapered muzzle that appears almost delicate despite its lethal capability.",
+    "dimensions": "18 cm length, 6 cm width at grip, 4 cm depth. Muzzle extends 3 cm beyond the main housing.",
+    "weight_description": "Balanced and light in hand—1.6 kg feels almost negligible, creating a false sense of benignity. The weight distribution favors the grip, making it point naturally without fatigue.",
+    "primary_material": "Aircraft-grade aluminum alloy chassis with carbon-composite grip housing. Internal capacitor assembly visible through translucent polymer side panels.",
+    "finish": "Brushed gunmetal with anodized blue-gray accents along the ionization chamber. The muzzle lip features a micro-etched grid pattern to optimize air ionization. Minimal wear tolerance by design—surface imperfections degrade performance.",
+    "color_scheme": "Gunmetal gray primary body with electric blue accent striping along the power conduits and targeting module. Matte black grip with textured friction pads.",
+    "grip_texture": "Rubberized polymer with micro-ridge texturing designed for tactical glove compatibility. Slightly tacky to the touch, engineered for secure handling under stress or moisture.",
+    "distinctive_features": [
+      "Twin LED indicator strip along the right side—green for safe/charged, amber for capacitor buildup, red for discharge cycle",
+      "Translucent polymer side window revealing the layered capacitor array within, a design choice that prioritizes operator confidence visualization over durability",
+      "Micro-laser sight emitter recessed into the upper chassis—projects a barely-visible ionization trace at target",
+      "Heat dissipation vents along the muzzle housing, arranged in a radial pattern resembling a flower bloom",
+      "Modular power cell magazine beneath the grip—quick-release mechanism with tactile feedback",
+      "Scoring marks along the grip from field testing or operator customization"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS logo embossed in low-relief on the left side of the grip. Serial number laser-engraved on the capacitor housing (visible through translucent panel). 'NL-5 SYNAPSE' designation stamped beneath the grip safety. Lethality mode selector marked with EN-LEGAL and EN-LETHAL symbols rather than words.",
+    "condition_typical": "Well-maintained and clinical—operators keep the Synapse pristine because any surface degradation impacts ionization efficiency. Field units show minimal cosmetic wear but may exhibit slight discoloration on the muzzle from repeated ionization cycling. The grip often bears personalized tape wrapping or glove-worn shine patterns."
+  },
+  "image_prompt": "Product photography of a compact neuroelectric weapon on dark matte gunmetal surface. The Vespid Dynamics Neuroelectric Lance NL-5 'Synapse' rests at 45-degree angle, muzzle pointing toward upper right. Dramatic side-lighting from left reveals brushed aluminum body and blue accent striping, with translucent side panels glowing faintly to show internal capacitor layers. Twin LED indicators emit soft green glow. Micro-laser sight creates a thin blue line toward imagined target. Surrounding area shrouded in cyberpunk shadow with faint circuit-pattern reflections on the dark surface. Shallow depth of field keeps weapon crisp while background blurs into neon-tinted haze. Include hint of futuristic GLMZ aesthetic—subtle holographic shimmer in background. Weapon appears both medical and lethal, elegant and dangerous. Professional tactical photography style. --ar 3:2 --v 6"
 }

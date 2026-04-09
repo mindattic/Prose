@@ -48,5 +48,26 @@
   "related_entities": [
     "Hearthstone Firearms Defender-38 'Snubnose'",
     "Vespid Dynamics"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A modular backpack-mounted electronic warfare system with three distinct functional units: a rigid upper chassis housing the detection radar and control interface, a central junction box for signal processing, and a lower emission pod containing the jammer and EMP emitter. Angular, utilitarian design with aggressive forward-swept geometry suggesting active threat detection capability.",
+    "dimensions": "Backpack form factor, approximately 60cm height × 45cm width × 25cm depth",
+    "weight_description": "5 kg total, distributed across backpack frame with padded shoulder straps and waist stabilizers for load bearing during active operations",
+    "primary_material": "Reinforced polymer composite chassis with aluminum alloy heat sinks and stainless steel electromagnetic shielding",
+    "finish": "Matte tactical grey with brushed aluminum accents; mil-spec non-reflective coating on all external surfaces",
+    "color_scheme": "Gunmetal grey primary with high-visibility warning yellow trim around the EMP emitter pod and radar aperture; amber and red indicator lights",
+    "interface_elements": "Rugged 8cm monochrome tactical display with touch-sensitive navigation pad, three physical mode selector switches (DETECT/JAM/SPOOF/PULSE), battery level indicator bar, signal strength meters, target lock confirmation button, emergency kill-switch, antenna connectors, and micro-USB charging port",
+    "distinctive_features": [
+      "Phased-array radar dish (12cm diameter) mounted on articulated gimbal arm with 270-degree sweep range",
+      "Cylindrical directional jammer module with rotating emission aperture and graduated distance calibrations (0-500m markings)",
+      "Hemispherical EMP emitter pod with concentric lens array visible through clear protective cover",
+      "Heat-dissipation fins running along entire rear chassis",
+      "Modular quick-disconnect coupling points for field reconfiguration",
+      "Woven cable management harnesses routing between modules",
+      "Tactical carabiners for accessory attachment"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS corporate logo embossed on upper chassis; regulatory compliance stamps (GLMZ-EW-03 certification, Φ525,000 MSRP callout); serial number plate on rear; warning labels in tri-language format (English/Mandarin/Spanish) regarding electromagnetic emission hazards",
+    "condition_typical": "In active use: radar gimbal rotates in search pattern, status display cycles through target data, antenna ports emit faint high-frequency whine, heat sinks warm to touch after sustained operation, warning lights pulse amber during threat detection"
+  },
+  "image_prompt": "Tactical electronic warfare backpack mounted on tactical workbench, dramatic side-angle view showing modular construction. Phased-array radar gimbal extended and rotating, directional jammer pod forward-facing. Workspace has overhead industrial lighting casting sharp shadows across matte grey composite surfaces. Aluminum heat sinks gleaming under key light. Tactical carabiners and cable routing visible. Monochrome display glowing with green target acquisition data. Background shows cyberpunk workshop with circuit board schematics and drone detection screens on walls. Cinematic product photography, professional military contractor aesthetic. Cyberpunk tech aesthetic with utilitarian design language. Shot from 45-degree angle emphasizing modular pod arrangement. --ar 3:2 --v 6"
 }

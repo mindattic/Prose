@@ -40,5 +40,36 @@
     "city_agency",
     "unknown_origin"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus DM-1 'Pallbearer'",
+    "Birgitta Asante-Papadopoulos",
+    "Burnside Pocket",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
+    "Noor Farouk",
+    "The Shelf",
+    "Tshiamo Vukić-Arellano"
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively ordinary utility knife with no distinguishing features—the kind of blade that could belong to anyone, anywhere. Its unmarked simplicity is almost unsettling; it demands nothing and announces nothing. The silhouette is clean, functional, without flourish or ego.",
+    "dimensions": "Blade length: 15cm. Overall length (handle to tip): approximately 28cm. Blade width at widest point: 3.2cm. Handle: 13cm. Thickness: 4mm at spine, tapering to edge.",
+    "weight_description": "Balanced and light in the hand—roughly 180 grams. It settles into the palm with the naturalness of something that was always meant to be there. No heft, no burden. It feels like it weighs less than it should.",
+    "primary_material": "Unknown alloy (metallurgical analysis yields contradictory results). Surface composition suggests hybrid metallic structure—dense, impossible to classify. Blade core appears subtly iridescent under certain angles, though analysis cannot confirm composition.",
+    "finish": "Matte gunmetal gray with microscopic surface variations that catch light strangely. The finish never wears, never patinas, never shows age despite heavy use. It appears both brand-new and timeless simultaneously. No scratch marks, no oxidation, no weathering.",
+    "color_scheme": "Uniform matte gray blade (RGB approximation: 100, 105, 110). Handle in neutral polymer—charcoal or light gray. No accent colors. Deliberately featureless.",
+    "grip_texture": "Understated textured polymer grip—neither warm nor cold to the touch. Slightly rough, designed for secure holding without drawing attention. Ergonomic but anonymous. It adapts to the user's hand without seeming to.",
+    "distinctive_features": [
+      "Complete absence of manufacturer marks, logos, or serial numbers",
+      "Blade edge that never dulls, rust, chips, bends, or breaks—visually indistinguishable from a normal sharp edge",
+      "Micro-iridescent surface anomaly visible only at oblique angles",
+      "No patina layer despite unknown age",
+      "Handle joins blade with imperceptible seam—no visible rivets or welding",
+      "Weight distribution creates unsettling sense of 'rightness' in hand",
+      "Blade spine maintains perfect straightness across all inspection methods"
+    ],
+    "manufacturer_markings": "None. Completely absent. No stamps, no engravings, no batch codes, no country of origin, no certification marks. The blank space where a maker's mark should be is the only mark it bears.",
+    "condition_typical": "Always pristine. Identical across all 200 known examples. Shows no wear, no patina, no individual history despite circulation through hands and lives across the Shelf. Appears untouched by time."
+  },
+  "image_prompt": "Unmarked utility knife blade on dark matte surface, shot from slightly above at 45-degree angle. Single-edge 15cm blade in matte gunmetal gray with subtle iridescent quality catching dramatic side-lighting. Charcoal polymer grip, no visible seams or markings. Perfectly sharp, impossibly pristine, ageless. Cinematic cyberpunk product photography with moody blue-gray lighting, shallow depth of field. The blade appears both ordinary and deeply unsettling—a tool the city left behind. Hyper-detailed, 8K clarity, emphasizing the blank absence of any manufacturer identity. Shot against brushed charcoal backdrop with single harsh key light from upper left, creating metallic sheen and emphasizing the anomalous surface quality. Include faint reflection on dark surface below blade. Atmospheric, mysterious, mundane-yet-impossible aesthetic. --ar 3:2 --v 6"
 }

@@ -79,5 +79,24 @@
     "The Pure Hand",
     "Vantablack VS-3 'Skin Job'",
     "Vantablack-CNX"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting full-body garment resembling a high-tech tactical bodysuit. The surface exhibits a subtle iridescent shimmer across its weave, with a faint hexagonal lattice pattern visible under direct light. The material appears to shift and ripple slightly depending on viewing angle, creating an unsettling almost-invisible quality. Hood integrated, articulated at neck with micro-adjustment tabs.",
+    "dimensions": "Tailored to individual measurements; typical lay-flat dimensions approximately 160cm × 80cm when spread. Compact enough to roll into a backpack bundle when not worn.",
+    "weight_description": "Lightweight and wearable; 1.8 kg distributed across full body. Handheld when stored, requires wearing harness when active to avoid heat stress.",
+    "primary_material": "Proprietary metamaterial lattice weave with aerogel composite thermal layer. Surface feels like reinforced synthetic silk with subtle texture variation. Second-skin quality without being sticky.",
+    "finish": "Matte with micro-hexagonal cell pattern creating fractured light refraction. Surface is slightly hydrophobic. Back panel features reinforced stitching around integrated spine battery housing.",
+    "color_scheme": "Neutral gray-black base with oil-slick iridescent undertones. Seams and stress points reinforced with gunmetal thread. Battery spine panel marked with minimal anthracite ARCTURUS branding.",
+    "interface_elements": "Micro-toggle power switch concealed at left collarbone (3mm recessed). Standard charging port (micro-USB equivalent) on lower spine, protected by weatherproof flap. Subtle LED status indicator (orange = charging, green = ready, red = low battery) near left hip. No visible screen; tactile feedback only.",
+    "distinctive_features": [
+      "Visible hexagonal honeycomb surface pattern catches light in hypnotic way",
+      "Back panel shows rigid spine of integrated battery as subtle linear ridge",
+      "Hood transitions smoothly into neck cowl with micro-articulated adjustment tabs",
+      "Material appears to ripple/shift slightly in peripheral vision even when stationary",
+      "Gloved wrists feature reinforced gripping zones with subtle grip-texture pattern"
+    ],
+    "manufacturer_markings": "Small woven ARCTURUS DEFENSE SOLUTIONS logo near right hip (15mm × 10mm). Minimal serial number stamped on battery spine housing in machine-readable code. No other branding — stealth-focused design prioritizes anonymity.",
+    "condition_typical": "Worn as second skin under or over light tactical gear. Active use shows minor scuff marks on knees/elbows, faint cable creasing across back panel from battery flexing. Dust clings slightly to hexagonal surface pattern. When powered off, appears as unremarkable gray tactical suit; powered on, creates faint visual distortion halo."
+  },
+  "image_prompt": "Product photography of Veil-9 Thermoptic Shroud: full-body tactical suit draped over matte black mannequin on brushed steel workbench. Dramatic three-point lighting highlighting hexagonal lattice surface pattern with iridescent shimmer. Close-up detail shot of power toggle and battery spine on second image. Dark cyberpunk lab environment, industrial fluorescent ceiling panels casting cool shadows. Material appears to shift and ripple subtly, almost invisible. Small ARCTURUS marking visible on hip. Telephoto macro lens capturing metamaterial texture detail. Color graded cool tones with highlights on seams and edges. Cyberpunk stealth gear aesthetic. --ar 3:2 --v 6"
 }

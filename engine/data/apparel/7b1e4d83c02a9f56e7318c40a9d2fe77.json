@@ -52,5 +52,27 @@
     "Nodar Kuznetsov-Adu",
     "The Resonance Communion",
     "Yusra Ntambwe-Cakić"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A low-profile, utilitarian silhouette designed for urban concealment. The structured forest-green overshirt creates visual bulk in the shoulders while the loose torso breaks body definition. Layered appearance with visible teal base layer at collar and wrists. Dark navy trousers ground the outfit. Overall impression: a runner prepared for extended fieldwork in dense urban environments, dressed to blend into Tier 2-3 crowds.",
+    "fit": "Deliberately oversized through the shoulders and chest to conceal augmentation hardware and body armor; tapered slightly at the waist to prevent silhouette printing; straight-leg trousers with articulated knee panels for mobility without flare. Base layer compression-fitted at chest and arms. The scarf wraps loose or tight depending on operational need.",
+    "primary_material": "Overshirt: ballistic-weave synth-wool blend with embedded thermal-baffling in back panel. Base layer: breathable synth-silk with BCI-port integration. Trousers: dark twill workwear cotton-hybrid with reinforced stress points. Footwear: composite athletic material with vibration-dampening sole. Scarf: signal-blocking fabric with rust-dyed surface.",
+    "texture": "Overshirt features a subtle woven texture — matte, non-reflective. Back panel reads as smooth, scanner-neutral cotton to passive tech. Base layer has a slight sheen, silk-smooth to touch. Trousers have a structured, workwear nap. Shoe sole textured for grip; upper material slightly padded. Scarf has a tight, dense weave.",
+    "color_scheme": "Deep forest green overshirt (primary), dark teal base layer (secondary), navy straight-leg trousers, muted olive-grey footwear, rust-orange wrap scarf. Accents: dark magnetic closures on interior pockets, minimal visible branding.",
+    "closures": "Overshirt: magnetic snap front closure (quiet, fast). Interior pockets: reinforced magnetic catches on mid-torso weapon-retention pockets; standard seams on chest pockets. Base layer: magnetic flaps sealing BCI-port access cuts at temples and nape. Trousers: standard waistband with hidden storage channel. Scarf: wraps and friction-ties; no fixed closure.",
+    "distinctive_features": [
+      "Six strategically placed interior pockets with different retention levels",
+      "Thermal-baffled back panel designed to defeat passive thermal scanners",
+      "BCI-port access cuts in base layer (temples and nape) with magnetic seal flaps",
+      "Articulated knee panels in trousers allowing digitigrade or wide geneware accommodation",
+      "Continuous internal thigh channel for blade or tool carry on right leg",
+      "Vibration-dampening footwear sole that kills metal-floor resonance",
+      "Rust-orange dual-function scarf: face cover, signal-blocking layer, or emergency sling",
+      "Split-toe shoe last for non-human foot morphology compatibility"
+    ],
+    "tier_indicator": "Tier 2-3 functional streetwear. High-end manufacturing with tactical purpose, but designed to read as working-class urban wear, not luxury. The absence of visible branding and focus on utility over status signals street-level competence.",
+    "cultural_context": "Worn by runners, infiltrators, corporate security contractors, and urban operatives who need to move through dense crowds without drawing attention. The outfit signals: 'I have augmentations, I carry tools, I know how to stay invisible.' Appeals to people with subcutaneous upgrades and field experience, not showboating corpo elite.",
+    "condition_typical": "When new: pristine, all fasteners secure, scarf pressed. After 4-8 weeks of use: subtle wear at elbows and knees, magnetic closures slightly less crisp, scarf frayed at edges from repeated field wrapping, minor stress creasing at stress points. The garment is built to weather use without looking destroyed."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a lean androgynous model wearing the Ashveil Duskwalk rig, standing in three-quarter profile against a rain-slicked GLMZ building facade. The overshirt's forest green catches cool blue neon from a distant corpo billboard while shadows pool in the loose folds of fabric. The rust-orange scarf is loosely wrapped, one end trailing over the shoulder. Visible BCI-port magnetic seals glint at the nape of the neck. The model's hand rests near the right thigh — the internal tool channel subtly visible beneath taut trousers. Split-toe shoes ground the figure on wet concrete. Moody cyan and orange atmospheric lighting. Shot with shallow depth of field; the background is a bokeh of rain, industrial geometry, and distant street noise. Cinematic, street-level, runner aesthetic. --ar 2:3 --v 6"
 }

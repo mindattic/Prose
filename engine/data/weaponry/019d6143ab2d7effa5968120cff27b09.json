@@ -60,5 +60,48 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Breck Tannen",
+    "CHROMEWORKS FlexSheath Graphene Spinal Wrap",
+    "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
+    "GLMZ",
+    "Helix Cortex Laminate — 'The Second Skin'",
+    "Ihaia Nystrom-Keita",
+    "Iowan Behemoth — 'Ironclad'",
+    "Ironclad Agrisystems",
+    "Kadiatou Bergstrom-Konate",
+    "Lazarus Pharmaceutical Emetix-9 'Purge'",
+    "Lazarus Pharmaceuticals",
+    "Ringo AX-12 'Harvester'",
+    "Sinan Vasquez-Chatterjee",
+    "Subdermal Shear Projector SSP-1 'Faultline'",
+    "The Pure Hand",
+    "Vantablack PA-1 'Pacifier'",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "physical_description": {
+    "visual_profile": "A long, imposing anti-materiel rifle with a distinctly industrial aesthetic. The dominant feature is a heavily corrugated coil housing that runs nearly the full length of the barrel, giving the weapon a ribbed, almost segmented appearance — like a mechanical serpent or industrial heat exchanger. The overall silhouette is angular and purposeful, with minimal ergonomic flourish. It reads as brutally functional rather than elegant.",
+    "dimensions": "Overall length: 142 cm | Barrel with coil housing: 96 cm | Receiver width: 8 cm | Magazine well depth: 6 cm",
+    "weight_description": "Hefty and front-heavy. The 6.8 kg mass is concentrated forward in the coil array, creating a pronounced muzzle-down bias that demands shoulder support and proper bracing. It feels like shouldering a steel pipe loaded with precision machinery.",
+    "primary_material": "Aluminum-titanium alloy chassis with ductile-iron coil housings. The capacitor banks are encased in reinforced polymer. Barrel insert is hardened steel with embedded electromagnetic coils.",
+    "finish": "Matte gunmetal gray with industrial charcoal accents. The coil housing bears a fine crosshatch texture from manufacturing — not polished away, left as functional wear. Capacitor casing is deep black polymer with a slight sheen from thermal cycling.",
+    "color_scheme": "Charcoal gray (primary) with matte black accents. Subtle steel gray highlights on coil edges and the receiver rail. The spin-rate adjustment wheel is anodized in pale gunmetal.",
+    "grip_texture": "Textured polymer grip with deep knurling for gloved or augmented hands. The receiver rail has a rubberized microdot pattern. The adjustment wheel on the receiver is knurled steel with minimal grip resistance.",
+    "distinctive_features": [
+      "Corrugated coil housing with 14 visible segmented sections running the barrel length",
+      "Digital spin-rate display (small LED array) mounted on the right receiver side in bright cyan numerals",
+      "Coil-health indicator strip running along the top of the housing — changes from green to amber to red under heat stress",
+      "Integrated coolant sleeve jacket with visible thermal cycling stress marks and faint heat-discoloration rings",
+      "Thumb-wheel spin-rate adjuster on the receiver (pale gunmetal, deeply knurled)",
+      "Dual capacitor bank housings visible beneath the receiver — black polymer with faint power-indicator LEDs",
+      "Muzzle compensator designed for torsional bleed-off — multi-angled vanes with slight carbon scoring",
+      "Ceramic-sleeve cassette magazine dock (12 rounds) with reinforced polymer feed guide",
+      "Charging handle positioned far rearward, minimalist steel loop design"
+    ],
+    "manufacturer_markings": "Iron Point Ammunition logo stamped in serif font on the left receiver side above the magazine well. Serial designation 'HVP-4' etched in sharp sans-serif below. 'CORKSCREW' designation stamped smaller on the coil housing mid-barrel. ADS certification stamp on the capacitor bank cover — a small circular embossed mark.",
+    "condition_typical": "Battle-worn and thermally stressed. The coil housing shows faint burn marks and minor pitting where coolant has boiled away. The muzzle compensator bears carbon scoring and micro-chipping. The grip shows wear patterns from gloved and augmented hands. The digital display is often dimmed or flickering from field use. Despite abuse, the weapon maintains mechanical integrity — it is built to sustain punishment."
+  },
+  "image_prompt": "Product photograph of the Helical Vortex Penetrator HVP-4 'Corkscrew' anti-materiel rifle laid across a dark brushed-steel surface. The weapon is angled to showcase the full corrugated coil housing running the barrel length, with dramatic side-lighting revealing the segmented texture and thermal stress marks. The muzzle compensator points toward frame right. A gloved hand in dark tactical polymer grips the receiver, fingers positioned near the spin-rate adjustment wheel. The digital spin-rate display glows pale cyan, reading '145,000 RPM'. The coil-health indicator strip shows amber coloration from recent sustained fire. Moody dark background with industrial concrete visible. Cinematic lighting emphasizes the weapon's industrial brutality and mechanical complexity. Cyberpunk military aesthetic. 2226 GLMZ manufacturing quality. --ar 3:2 --v 6"
 }

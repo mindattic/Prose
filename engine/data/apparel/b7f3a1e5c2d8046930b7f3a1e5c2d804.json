@@ -44,5 +44,25 @@
     "Slagworks Industrial",
     "The Loft",
     "Tiare Nishi-Anim"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A refined, understated turtleneck with subtle luminescence in certain angles. The silhouette is sleek and body-conscious without being restrictive — it moves with the wearer rather than clinging. The high collar sits snugly at the throat with a refined finish. Overall impression is professional restraint with barely-perceptible technical sophistication.",
+    "fit": "Slim, contoured fit through the torso and shoulders. Not compression-tight, but form-following. Sleeves taper gently to the wrist. The turtleneck collar is firm but not choking — engineered for comfort across repeated wear cycles.",
+    "primary_material": "Smart-fiber synthetic blend — primarily phase-change microfiber composite mimicking high-grade merino wool. Internal loft structure is algorithmic at the fiber level; shifts density response passively based on thermal conditions.",
+    "texture": "Smooth, fine-gauge knit surface with minimal pilling potential. Subtle matte finish at rest; develops a faint sheen under direct light. Touch is soft and slightly cool to bare skin. At microscopic level, the weave shows deliberate irregularity — intentionally 'imperfect' to appear organic.",
+    "color_scheme": "Primary options: pure black (most common, unremarkable), deep forest green (subtle luxury read), graphite gray (corporate neutral), warm rust-oxide (limited run, collector's item among Tier 3-4). Colors are flat and non-reflective unless caught in side-lighting.",
+    "closures": "None — pullover design. No visible seams on front or sides; construction suggests zero-waste manufacturing.",
+    "distinctive_features": [
+      "Embossed Auris Textiles tab at back neck collar — small, tactile, no visible branding",
+      "Internal thermal-responsive fiber structure (invisible, passive, no electronics)",
+      "Seamless shoulder construction for unrestricted arm mobility",
+      "Slight horizontal micro-ribbing visible only under magnification",
+      "Collar edge finished with integrated binding that never rolls",
+      "Faint iridescence in certain angles — byproduct of smart-fiber weave, not intentional"
+    ],
+    "tier_indicator": "Tier 2-3 boundary. Expensive enough to signal disposable income and access to corpo-subsidiary retail, but unmarked enough to avoid ostentatious display. Commonly seen in corpo office settings, transit terminals, medical facility staff.",
+    "cultural_context": "The wearer is someone who values invisible optimization over visible status. Worn by: mid-level corporate professionals, private sector technicians, independent consultants, medical practitioners, anyone who needs to maintain controlled body temperature across variable environments without drawing attention. Anti-hype positioning is itself aspirational among Tier 3 professionals.",
+    "condition_typical": "Pristine to gently worn. The smart-fiber maintains its appearance across seasons — no pilling, no fading, no visible stress points. A year of daily wear looks like a month of regular use. Collars on vintage examples may show soft creasing from repeated wear, which paradoxically increases value among cognoscenti."
+  },
+  "image_prompt": "Cyberpunk fashion photography: Auris Adaptive Turtleneck on a professional-appearing model, Tier 3 street casual, posed against rain-slicked industrial architecture. The turtleneck's fabric catches moody blue-and-amber neon from overhead, revealing its faint sheen. Shot in three-quarter profile, model's augmented wrist visible (discrete chrome accent). Lighting emphasizes the fabric's thermal-responsive micro-texture. Urban backdrop: wet concrete, geometric shadow, distant GLMZ skyline. Cool color grade, slight chromatic aberration. Emphasis on the garment's quiet confidence — no visible logos, no flashy elements, just understated technical elegance. --ar 2:3 --v 6"
 }

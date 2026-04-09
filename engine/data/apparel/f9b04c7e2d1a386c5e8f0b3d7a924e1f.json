@@ -48,5 +48,25 @@
     "Dzintars Ababio-Suleimenov",
     "Neural Feedback Carbine NFC-3 'Mirrorgun'",
     "The Pure Hand"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Second-skin gloves that blur the line between fashion and functional augmentation. The charcoal base creates a sleek, almost liquid appearance, while the visible silver conductive traces read as deliberate design—circuit diagrams mapped across the hand like a technical blueprint. Fingertip cutouts on index and middle fingers expose metallic conductive rings, suggesting direct neural integration. The overall effect is forensic precision meets street-tech utility.",
+    "fit": "Compression-fit through the palm and wrist, with articulated finger zones that allow full dexterity. The stretch-neoprene hugs the hand like a second skin without restricting movement. Wrist strap is snug but not tourniquet-tight—designed for all-day wear without circulation compromise.",
+    "primary_material": "Charcoal stretch-neoprene with embedded silicone haptic actuator nodes and silver conductive-trace threading",
+    "texture": "Smooth and slightly tacky to the touch—neoprene gives a moisture-resistant, grippy feel. The silver traces create fine linear ridges that catch light. Fingertip rings have a cool metallic smoothness, slightly raised at the edges.",
+    "color_scheme": "Charcoal gray base with silver-white conductive traces forming grid and circuit patterns. The traces are semi-translucent against the neoprene, creating depth and luminescence in dim light. Conductive trim rings at fingertips have a brushed-chrome finish.",
+    "closures": "Friction-fit wrist strap with integrated dongle clip; no traditional closures—the glove rolls onto the hand",
+    "distinctive_features": [
+      "Visible haptic actuator nodes at each fingertip and distributed across palm grid",
+      "Open-cut fingertip design on index and middle fingers of both hands",
+      "Silver conductive traces visible through semi-translucent neoprene",
+      "Wrist-mounted calibration dongle clip",
+      "BCI-to-haptic signal translation capability indicated by design",
+      "Vansen Systems branding embossed on inner wrist"
+    ],
+    "tier_indicator": "Tier 1-2 luxury augmentation tech—expensive, cutting-edge, corporate-adjacent",
+    "cultural_context": "Corpo surgeon, remote-ops specialist, high-end AR interface user, or someone with significant chrome augmentation who needs a bridge between organic and synthetic sensory feedback. Signals wealth, technical sophistication, and deep integration with neural implants.",
+    "condition_typical": "Pristine or very lightly worn—these gloves are maintained like precision instruments. Any wear would be minor discoloration on the palm grid from frequent contact, never torn or patched."
+  },
+  "image_prompt": "Close-up fashion photography of Vansen SyncPulse Haptic Interface Gloves on a cybernetically augmented hand with visible chrome finger joints and neural port at wrist. Charcoal neoprene with luminescent silver circuit traces glowing softly under blue-tinted studio lighting. Dark urban backdrop with holographic tech interface elements softly out of focus. Moody, clinical atmosphere. Shallow depth of field focusing on fingertip conductive rings and open-cut index/middle finger design. --ar 2:3 --v 6"
 }

@@ -44,5 +44,43 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Lebedev-Tutu",
+    "Arcturus Defense Solutions",
+    "Celestine Mwamba-Quispe",
+    "Ebele Medina-Quaye",
+    "Free Assembly",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "Serafin",
+    "Slagworks Industrial",
+    "Street Custom 'Sunday School' Weaponized Religious Artifact",
+    "The Shelf",
+    "the_meridian_office_park"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist mechanical beast — a chunky, industrial rotary grenade launcher with the deliberate overbuilt aesthetic of a Cold War relic crossed with near-future pragmatism. The visible cylinder dominates the profile, a hexagonal drum that speaks to reliable simplicity. Compact and purposeful, with no unnecessary curves or smoothing.",
+    "dimensions": "680mm overall length, 220mm cylinder diameter, 110mm width across the stock. Cylinder rotates flush with the receiver.",
+    "weight_description": "Substantial and reassuring in hand — 6.2kg unloaded feels dense but balanced. The recoil stock shifts weight forward slightly, making it feel deliberately designed for controlled aggression rather than finesse.",
+    "primary_material": "Blackened steel cylinder and barrel, reinforced aluminum alloy receiver, composite polymer furniture. Internal mechanisms are hardened steel — visible through inspection ports as dark mechanical detail.",
+    "finish": "Matte gunmetal black with deliberate machine-marks visible on the cylinder. The barrel shows faint tool marks and wear patterns. Polymer handguard is textured matte black with light scratch marks suggesting field use.",
+    "color_scheme": "Charcoal black primary with brushed steel accent highlights on the cylinder firing pin, trigger guard in dull chrome, and orange safety indicator ring (40mm-standard marking).",
+    "grip_texture": "Rubberized pistol grip with deep checkering for wet/gloved operation. The forestock is wrapped textured polymer with subtle diamond pattern. Metal surfaces around the trigger are smooth, worn shiny from regular handling.",
+    "distinctive_features": [
+      "Visible hexagonal cylinder with six numbered position marks (1-6) engraved in white",
+      "Mechanical double-action trigger with substantial travel distance",
+      "Spring-loaded cylinder rotation detent with audible click at each position",
+      "Top-mounted iron sight bracket with protected aperture",
+      "Vented cooling slots along the barrel jacket",
+      "Open breech inspection port showing internal mechanical linkages",
+      "Recoil-dampening stock with pneumatic buffer visible as dual cylinders",
+      "Ammunition loading guide etched along the top rail",
+      "Worn manual safety lever (forward: fire, rear: safe) in dull brass",
+      "Faint laser-etched serial plate on the left receiver face"
+    ],
+    "manufacturer_markings": "Blackwood Commercial Group logo (stylized arrow) stamped on the left receiver. Model designation 'GL-6' and 'SERMON' engraved in small caps below the cylinder. Serial number and manufacturing date (2224 or 2225) on the lower receiver plate, partially obscured by use.",
+    "condition_typical": "Well-maintained but clearly used. The black finish shows micro-scratches from field handling, dust residue in the mechanical recesses, light carbon scoring around the muzzle. The safety lever shows shine-wear from repeated manipulation. No visible rust or corrosion — this is a weapon that gets regular care despite heavy deployment."
+  },
+  "image_prompt": "Product photography of the Arcturus GL-6 'Sermon' grenade launcher, displayed from the right side at a 45-degree angle on a dark brushed steel surface. The weapon is cradled in a gloved hand wearing tactical combat gloves, fingers positioned near the trigger guard. Dramatic side-lighting emphasizes the mechanical hexagonal cylinder and tool marks on the barrel. The background is deep charcoal with subtle grid texture suggesting a corpo armory. Shot with cool blue-white fill light on the left, warm amber highlights catching the metallic edges and worn grip surfaces. High detail on the spinning cylinder detents, visible mechanical linkages, and engraved numbering. Cyberpunk industrial aesthetic, weathered military hardware, no digital displays or holograms — pure mechanical reliability. --ar 3:2 --v 6"
 }

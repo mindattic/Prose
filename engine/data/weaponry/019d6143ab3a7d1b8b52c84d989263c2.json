@@ -53,5 +53,39 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "Endolymphatic Pressure Cascade Rifle",
+    "GLMZ",
+    "Irontide Tidal Energy",
+    "MERIDIAN",
+    "Slagworks Industrial",
+    "Street Custom 'Glass Garden' Caltrops",
+    "The Resonance Communion",
+    "The Third Rail",
+    "Vantablack Media"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, brutalist device resembling a high-intensity flashlight crossed with medical instrumentation. The forward end tapers into a wide sensor ring studded with acoustic transducers. The overall impression is clinical and sinister—designed for precision rather than intimidation.",
+    "dimensions": "23 cm length, 8 cm barrel diameter, 6 cm grip diameter. The sensor ring extends 2 cm beyond the emitter head.",
+    "weight_description": "Dense and balanced at 1.6 kg—hefty enough to feel purposeful in the hand, but light enough for sustained aiming. The weight sits forward of the grip, creating a slight forward bias that encourages steady two-handed holds.",
+    "primary_material": "Brushed titanium alloy frame with carbon-composite grip housing. Internal phasing array is potted in aerospace-grade polymer for shielding.",
+    "finish": "Matte gunmetal-gray titanium with anodized black accents around the sensor ring. The grip section shows a subtle brushed texture. Industrial-minimal aesthetic with zero ornamentation.",
+    "color_scheme": "Gunmetal gray (primary) with deep matte black (sensor ring, mode toggle, power indicators). Accent LEDs glow pale blue when armed, cycling to amber during waveform adaptation.",
+    "grip_texture": "Textured carbon-composite with shallow diamond knurling. Designed for precision two-handed grip. Ergonomic finger notches on both sides suggest professional operator-class ergonomics.",
+    "distinctive_features": [
+      "Forward-facing sensor ring: 12 evenly-spaced acoustic transducers in recessed mounts, giving the appearance of a technical crown or medical targeting reticule",
+      "Blue standby indicator LED positioned above the grip, visible from operator perspective",
+      "Physical mode toggle (Precision/Scatter) on the left side—a thick cylindrical knob with tactile detents",
+      "Flush power cell access port on the underside with a quick-release lever",
+      "Fine serial hash marks etched into the frame—ARCTURUS DEFENSE manufacturing marks",
+      "Hairline heat vents along the barrel body, suggesting thermal management for continuous-duty operation",
+      "Recessed wear scratches and minor corrosion patina on field-used units, particularly around the grip and sensor ring"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (serif 'A' within a triangle) stamped below the mode toggle. Barely-visible VANTABLACK MEDIA subtext etched into the barrel near the front—often obscured by field wear. Serial number on the underside. No weapons classification marking; the device appears almost unmarked.",
+    "condition_typical": "Well-maintained field specimens show light wear on the grip and minor oxidation on the sensor ring from repeated use in humid Great Lakes environments. Black-market surplus units often display deeper scratching and occasional dents from rough handling. The sensor ring is the most vulnerable component; damaged units often show signs of crude field repair or sensor replacements."
+  },
+  "image_prompt": "Product photography: Phased Acoustic Neurostimulator PAN-3 'Tinnitus' weapon lying on dark gunmetal surface, angled three-quarter view. Dramatic side-lighting emphasizing the forward sensor ring's geometric transducers with cool blue rim-light. Close detail of the textured grip and mode toggle. Secondary shot of the device held in a gloved tactical hand (black synthetic polymer glove, cybernetic finger joints visible). Industrial minimalist aesthetic, cold color temperature. Emphasize the clinical, non-lethal appearance—more medical device than firearm. Show the sensor ring's intricate transducer array in sharp focus. Moody blue ambient LED indicators glowing softly. Weathered but professional condition. Cyberpunk GLMZ 2226 aesthetic. --ar 3:2 --v 6"
 }

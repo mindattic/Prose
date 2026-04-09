@@ -57,5 +57,42 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Neural PDW ANPD-1 'Impulse'",
+    "Ekundayo Vásárhelyi-Nkemdirim",
+    "GLMZ",
+    "Guardian PocketShock PSR-1 'Nudge'",
+    "Kamala Larsen-Mensah",
+    "Lazarus Pharmaceuticals",
+    "Mika Sorel",
+    "Nika Svensson-Kone",
+    "Piezoelectric Ceramic",
+    "Street Custom 'Glass Garden' Caltrops",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, snub-nosed scatter pistol with an unusually flared, ported barrel that widens toward the muzzle. The overall silhouette is squat and aggressive — more club than conventional firearm. The break-action mechanism dominates the upper receiver, giving it a skeletal, almost mechanical appearance. First impression: a tool designed for close, desperate work.",
+    "dimensions": "185mm overall length, 110mm height, 55mm width at grip. Barrel length approximately 65mm with visible porting holes along final 20mm.",
+    "weight_description": "Hefty but balanced — 0.6kg feels substantial in the palm without being fatiguing. The weight sits forward in the barrel assembly, creating a slight nose-heavy feel that aids point-shooting control.",
+    "primary_material": "Reinforced polymer frame with carbon-composite reinforcement at stress points. Internal piezoelectric stack assembly and pneumatic ram visible through partial frame cutaway on left side. Gas reservoir housing is anodized aluminum.",
+    "finish": "Matte gunmetal gray polymer body with brushed-aluminum accents on the break-lever and gas port. Well-maintained examples show minimal wear; field-used pistols display scuffed polymer and slight carbon scoring around the muzzle ports.",
+    "color_scheme": "Charcoal gray primary with brushed silver-aluminum receiver and gas-canister interface. Grip wrapping is black synthetic rubber.",
+    "grip_texture": "Deeply textured, aggressive grid-pattern rubberized grip — designed for quick indexing and retention even with gloved hands. Finger grooves are pronounced and slightly forward-raked.",
+    "distinctive_features": [
+      "Flared, trumpet-shaped muzzle with seven visible porting holes cut at 45-degree angles",
+      "Break-action lever on left side — chrome-plated aluminum with serrated edges",
+      "Partial frame cutaway revealing piezoelectric crystal stack glinting faintly under light",
+      "Proprietary gas-cartridge port at rear — accepts standard CO2 inhaler-style canisters",
+      "No rails, no optics mounts — deliberately minimalist",
+      "Fine crosshatch serrations on top slide",
+      "Small vent hole near trigger guard for pressure relief",
+      "ARCTURUS Defense Solutions logo stamped in small caps above the grip"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS stamped in small sans-serif capitals on the left frame, above grip. Serial number engraved on the gas-port shroud in microdot format. 'PSP-2 GRAVEL' designation laser-etched faintly on the top slide. No caliber markings — the weapon's scanner-invisibility is its selling point.",
+    "condition_typical": "Corporate-sourced examples remain pristine with sharp edges and intact polymer finish. Field-carried versions show polymer wear at edges, carbon residue around muzzle ports, and occasional grip-wrap fraying. Piezoelectric stack visible through frame cutaway may show slight discoloration from gas vapor exposure after extended use."
+  },
+  "image_prompt": "Product photograph of the Piezoelectric Scatter Pistol PSP-2 'Gravel' resting on a dark matte-black surface, shot from 45-degree overhead angle. Weapon positioned with muzzle facing upper-left. Dramatic side-lighting from cool blue-tinted source reveals matte polymer grain and brushed aluminum details in sharp contrast. Gas reservoir canister sits disconnected to the right. Close-up detail of the flared muzzle ports catching rim light. Cyberpunk aesthetic: cold, clinical, industrial. Minimal color palette — grays, blacks, silver accents. Shallow depth of field with sharp focus on trigger mechanism and frame cutaway revealing piezoelectric crystal stack. Clean, sterile product-catalog photography in a near-future weapons showroom style. --ar 3:2 --v 6"
 }

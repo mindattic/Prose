@@ -43,5 +43,37 @@
     "heavy",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Alper Lebedev-Tutu",
+    "Ebele Medina-Quaye",
+    "Nika Svensson-Kone",
+    "Rongo Delgado-Opoku",
+    "Stainless Steel",
+    "TESSERA TC-3 'Crucible'",
+    "The Burden Clause",
+    "The Crucible",
+    "The Riveters' Round"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally compact powerhouse — a massive revolver with aggressive proportions that immediately communicates raw stopping power. The six-inch barrel dominates the silhouette, paired with a thick, blocky frame that suggests immovable force. Not designed to hide; designed to be seen and respected.",
+    "dimensions": "Overall length: 28.6 cm | Barrel length: 15.2 cm | Cylinder diameter: 4.8 cm | Height at grip: 14.2 cm",
+    "weight_description": "Hefty and purposeful — 1.48 kg loaded creates substantial heft in the hand, but the weight distribution is balanced enough for controlled double-action shots. Feels engineered, not light or compromised.",
+    "primary_material": "Brushed stainless steel frame and cylinder | Hardened steel internal components | High-grip polymer grip panels in black",
+    "finish": "Matte brushed stainless steel throughout, service-grade without mirror polish — functional rather than decorative. Minor wear and patina marks typical on working examples.",
+    "color_scheme": "Gunmetal gray stainless steel primary | Black polymer grip panels with subtle diamond checkering | Muzzle brake vents in darker gray",
+    "grip_texture": "Textured black polymer with aggressive diamond-pattern checkering — designed for retention even with gloved hands or sweaty palms. Slightly pronounced backstrap",
+    "distinctive_features": [
+      "Six parallel cooling vents running the length of the barrel — functional and visually aggressive",
+      "Cylinder release button positioned for quick reloads",
+      "Heavy ejector rod shroud extending below barrel",
+      "Pronounced triggerguard sized for gloved fingers",
+      "Hexagonal cylinder with visible alignment notches",
+      "Minimal sights — fixed front blade and rear notch, designed for close work",
+      "Heavy frame-mounted recoil-absorbing shoulders"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES HAVOC-44 stamped on left barrel in bold sans-serif | 'MAULER' engraved above cylinder on right frame | .44 MAGNUM stamped on barrel rear | Serial plate mounted on right grip panel below cylinder",
+    "condition_typical": "Well-maintained, rarely pristine — working guns show wear on grip panels, minor finish loss on barrel from holster contact, and bright spots on cylinder from repeated reloading. Functional cleanliness maintained by serious users."
+  },
+  "image_prompt": "Product photography of Crucible Industries Havoc-44 'Mauler' .44 Magnum revolver, side-view three-quarter angle on dark gunmetal surface. Dramatic side-lighting emphasizing barrel vents and stainless steel finish. Gloved hand (tactical glove) partially gripping lower frame, showing scale and weight. Brushed steel catch subtle highlights, black polymer grip panels in shadow relief. Cyberpunk Great Lakes aesthetic — slightly worn, functional, purpose-built. High-contrast lighting with cool cyan-tinged rim-light on barrel. Clean background, industrial warehouse setting subtle in blur. Professional military hardware catalog style. --ar 3:2 --v 6"
 }

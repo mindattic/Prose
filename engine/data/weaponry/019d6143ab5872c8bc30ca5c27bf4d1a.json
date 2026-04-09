@@ -56,5 +56,42 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions Electromagnetic DMR AEDM-3 'Gauss'",
+    "Cezar Watanabe-Gyasi",
+    "Ebele Larsen-Mensah",
+    "Ebele Medina-Quaye",
+    "IRONLIMB Revenant Void-Form Digi Leg",
+    "Kadiatou Bergstrom-Konate",
+    "PulsePoint ThermoLayer Thermal Regulation Implant",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular linear accelerator rifle with a pronounced forward-swept profile. The barrel is notably thicker than conventional firearms, housing the magnetic coil array beneath a carbon-composite shroud. The overall impression is lean and purposeful—built for precision and adaptability rather than raw bulk. The trigger guard region features a distinctive rotating collar that breaks the rifle's otherwise streamlined silhouette.",
+    "dimensions": "Overall length: 94 cm. Barrel length: 52 cm. Magazine well depth: 8 cm. Rotating impedance collar diameter: 4.2 cm.",
+    "weight_description": "Balanced and manageable at 3.4 kg loaded—lighter than conventional rifle systems of comparable range, with weight distributed toward the receiver to reduce muzzle drift during impedance adjustments. Feels composed and stable in a two-handed grip despite the electromagnetic stress the system endures.",
+    "primary_material": "Carbon-composite barrel shroud over an aluminum alloy receiver frame. The coil array housing is reinforced steel with thermal management fins running along the upper surface. Ferromagnetic dart magazine is steel-bodied with transparent polymer witness window.",
+    "finish": "Matte charcoal gray with brushed aluminum accents on the receiver rails and charging handle. The barrel shroud has a subtly textured non-reflective coating. Heat dissipation fins along the top are burnished steel, showing early oxidation patterns from thermal cycling.",
+    "color_scheme": "Primary: gunmetal gray. Accents: brushed aluminum silver on controls and mounting points. Selector collar features anodized blue markings (stages 1-12) recessed into the rotating surface for tactile feedback.",
+    "grip_texture": "Wraparound ergonomic grip in high-traction rubberized polymer with subtle finger indexing. The charging handle is textured steel bar stock. The impedance selector collar has knurled edges for secure adjustment under stress.",
+    "distinctive_features": [
+      "12-stage rotatable impedance selector collar mounted coaxially around the trigger guard—operable without breaking firing grip",
+      "Thermal management fins running along the barrel shroud's upper surface, darkened from repeated heat cycling",
+      "Integrated ammo counter window on the magazine showing ferromagnetic dart stack",
+      "Subtle LED status indicator (green/amber/red) mounted on the left receiver rail, indicating thermal throttle state",
+      "Forward-swept barrel profile with slight downward rake, housing magnetic coil array",
+      "Recessed TESSERA CORPONATION logo stamped into the receiver just above the mag well",
+      "Modular rail system (MIL-standard equivalent) mounted above and below for sight and accessory attachment",
+      "Visible coil array housing seams running the length of the barrel shroud, suggesting internal complexity"
+    ],
+    "manufacturer_markings": "TESSERA CORPONATION stamped discreetly into the upper receiver. Model designation 'VIR-9' etched below the charging handle. Serial plate mounted on the left side of the receiver with alphanumeric identifier and manufacturing date code (GLMZ production line marked).",
+    "condition_typical": "Well-maintained but showing operational wear—minor scoring on the barrel shroud from field use, slight discoloration on thermal fins from heat stress cycling, and faint fingerprint patina on the rubberized grip from repeated use. Not battle-scarred, but clearly a working weapon rather than a showpiece."
+  },
+  "image_prompt": "Product photography of the TESSERA VIR-9 'Switchback' gauss rifle laid at a 45-degree angle on a matte black composite surface. Weapon positioned left to right, showing the distinctive barrel shroud and prominent 12-stage impedance selector collar in sharp focus. Dramatic side-lighting (cool blue-white LED light source) raking across the brushed aluminum receiver and thermal fins, emphasizing the coil array housing geometry and heat management ridges. Subtle warm accent light reflecting off the ferromagnetic tungsten dart magazine's transparent window, revealing the dense stack of projectiles within. Soft shadow detail on the rubberized grip. Cyberpunk aesthetic: futuristic materials science emphasized, industrial precision visible in every seam and surface treatment. Dark background with subtle grid pattern (hinting at holographic UI elements). Close detail crop showing the anodized blue impedance stage markings. No gloved hand visible. Professional corporate weapons catalog presentation style. --ar 3:2 --v 6"
 }

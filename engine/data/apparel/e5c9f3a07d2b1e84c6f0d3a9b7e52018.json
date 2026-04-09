@@ -47,5 +47,25 @@
     "The Corridor",
     "The Heritage Vault",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A striking wide-cut poncho that drapes generously from shoulders to mid-thigh, creating a bold silhouette against the body. The geometric kente-inspired weaving creates visual rhythm and movement; worn, it reads as both protective armor and cultural statement. The deep hood with stiffened brim gives a focused, almost militaristic crown despite the vibrant patterning.",
+    "fit": "Deliberately oversized and unstructured; accommodates baseline and modified bodies equally. Arm slits with press-seal closures allow adjustment from loose drape to fitted coverage. The width suggests intentional community — you can move freely, gesture broadly, exist without constraint.",
+    "primary_material": "Heavy-gauge recycled nylon, waterproofed but not plasticky; the weave itself is structural, not a coating. Substantial weight, designed for durability across seasons.",
+    "texture": "The kente bands have subtle textural relief from the weaving process — geometric patterns catch light differently than the black base. The nylon is slightly stiff when new, softening with age but retaining crisp panel definition. Surface has a matte, almost fabric-like quality despite being synthetic.",
+    "color_scheme": "Deep black base with bold geometric woven panels in saffron yellow, forest green, and deep indigo. The bands create diagonal and angular patterns, African textile-inspired but read as distinctly contemporary in execution.",
+    "closures": "Press-sealed side slits for arm access and rain coverage control. No front closure — poncho pulls on over the head. The hood sits secured by the garment's own structure and weight.",
+    "distinctive_features": [
+      "Kente patterns woven into fabric, not printed — material innovation that signals craft and refusal of fast-fashion shortcuts",
+      "Stiffened hood brim for rain management and visual definition",
+      "Generous cut sized for multiple body types and augmentation profiles",
+      "Mid-thigh length balances coverage with mobility",
+      "Press-seal technology on arm slits allows graduated protection without removing garment",
+      "Subtle wear-in; quality construction means patina rather than degradation"
+    ],
+    "tier_indicator": "Tier 2 accessible luxury — premium materials and construction, but street-manufactured and anti-corpo ethos. Price point intentionally kept below corporate markup.",
+    "cultural_context": "Wearing this signals Lagos-Chicago diaspora heritage, community alignment, and deliberate refusal of corpo assimilation. On the Shelf, it's a uniform of cultural continuity. Geneware-modified wearers and baseline bodies alike adopt it; it's genuinely inclusive infrastructure, not performative.",
+    "condition_typical": "Broken-in; the nylon softens and gains character with weather exposure. Color stays vivid due to woven integration. Visible water stains and acid-rain patina are expected and respected. Patches or repairs are worn as testimony, not hidden."
+  },
+  "image_prompt": "A Tier 2 South Corridor resident, baseline or chrome-limbed, standing in acid rain under flickering neon signage, wearing an Ekwueme kente-panel poncho in deep black with saffron, forest green, and indigo geometric woven stripes. The poncho drapes generously, hood drawn but brim visible, rain cascading off the waterproofed nylon in prismatic sheets. Side-arm slits visible, press-seals engaged. Moody amber and blue lighting reflects off wet pavement and the garment's subtle textural weave. The background shows warehouse-scaffold Tier 2 architecture, acid rain haze, faint glow of workshop lights. Fashion photography, documentary realism, richly textured nylon catching light. --ar 2:3 --v 6"
 }

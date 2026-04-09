@@ -49,5 +49,27 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Shelf",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A bulky, geometric silhouette with pronounced shoulder structure and a forward-lean posture. The figure reads as heavily armored despite being protective rather than combat-oriented. The modular construction creates visible panel lines at shoulders, elbows, hips, and knees. Worn examples show a slightly sagged appearance at the torso from repeated use.",
+    "fit": "Intentionally oversized and rigid. Designed for layering underneath and mobility in contaminated environments rather than body-conforming. The shoulders sit high and squared. Arm and leg assemblies create a slightly robotic gait when worn. Compression is minimal; instead, the suit maintains structural separation from skin.",
+    "primary_material": "Pewter-grey woven lead-polymer composite — heavy, stiff, and chemically treated. The weave is visible as a subtle crosshatch pattern under direct light. Polycarbonate helmet dome with dark tinting and visible internal filtration cartridges.",
+    "texture": "Rough, industrial weave with a matte finish. Joints and seal points show reinforced ribbing. Older suits develop micro-cracks in the polymer shell. Dosimeter patches (faded or missing) create ghost-mark rectangles on chest and forearm. Metal locking rings at joints show wear polish or oxidation depending on condition.",
+    "color_scheme": "Dominant pewter-grey with matte charcoal accents at seal joints and ring closures. Faded dosimeter patches read as washed-out yellow or tan on secondhand units. Internal filtration cartridges visible through helmet dome in dark grey or black.",
+    "closures": "Locking ring seals at five modular connection points (shoulders, elbows, hips, knees, neck). Friction-fit helmet dome with quarter-turn lock mechanism. No traditional zippers or snaps; the suit is entered by unbolting the torso section or removing the helmet entirely.",
+    "distinctive_features": [
+      "Modular five-piece construction with visible locking ring seals",
+      "Polycarbonate helmet dome with integrated air filtration scrubber",
+      "Stitched dosimeter patch locations (often faded or missing on secondhand units)",
+      "Lead-polymer weave with industrial crosshatch visible pattern",
+      "Forward-lean structural bias built into torso and shoulders",
+      "Internal cartridge housing visible through transparent helmet sections",
+      "Ghost marks from removed or degraded patches",
+      "Radcore Systems manufacturer stamp (usually on left shoulder or hip)"
+    ],
+    "tier_indicator": "Tier 2-3 industrial. New suits Tier 2 (corpo technician). Secondhand black-market units Tier 4-5 (sub-grade contamination workers, scrappers, illegal zone explorers).",
+    "cultural_context": "Signals hazmat work, reactor maintenance, or illegal contamination zone activity. Wearing a Radcore suit without proper licensing marks the wearer as either a licensed technician or someone salvaging/black-marketing protective gear. In the GLMZ, seen frequently among Shelf dwellers, industrial salvagers, and unauthorized zone runners.",
+    "condition_typical": "Secondhand suits show wear at seal points, faded or missing dosimeter patches, micro-cracks in polycarbonate helmet, oxidized locking rings, and a slight chemical smell overtone. New suits are pristine, antiseptic, with bright yellow dosimeter patches and perfectly clear helmets."
+  },
+  "image_prompt": "Fashion-industrial photography: A model wearing a Radcore NeutronVeil Class-4 radiation suit, standing in a three-quarter pose against a dark urban backdrop — crumbling concrete wall, faint bioluminescent graffiti. Moody cyan-and-amber lighting from above, casting sharp shadows across the suit's rigid shoulder structure and modular panel lines. Close detail on the pewter-grey lead-polymer weave, the locking ring seals at joints, and the polycarbonate helmet dome (slightly fogged, internal filtration cartridges visible). The model's posture shows the characteristic forward-lean of long-term wear. Dosimeter patch ghost-marks visible on chest and forearm. Shot on dark mannequin alternative: suit displayed on headless industrial stand, helmet dome positioned separately to show interior mechanisms. Cinematic, gritty, tech-noir mood. --ar 2:3 --v 6"
 }

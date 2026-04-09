@@ -39,5 +39,24 @@
     "TESSERA PG-2 'Signature'",
     "The Shelf",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally utilitarian slip-on with a slouched, broken-in silhouette. The shoe reads as deliberately unglamorous—a canvas base transformed into armored footwear through crude industrial application. The Tenex coating gives it an organic, weathered appearance, like concrete that's been exposed to years of moisture and foot traffic.",
+    "fit": "Loose, relaxed slip-on fit with minimal structure. The thin sole allows natural foot flex, creating a worn, molded appearance at the toe and heel.",
+    "primary_material": "Canvas base with heavy Tenex industrial sealant coating (rubberized polymer composite). The sealant obscures original fabric beneath.",
+    "texture": "Lumpy, brush-applied coating with visible directional sweep marks. Cracked and spider-webbed at the toe flexion point where the shoe bends. Surface is semi-gloss, matte in cracks. Rough to the touch, uneven thickness.",
+    "color_scheme": "Muddy grey-brown base with darker stress-crack lines forming at flex points. Occasional lighter streaks where sealant pooled. Monochromatic, industrial aesthetic.",
+    "closures": "None—elastic friction fit slip-on design.",
+    "distinctive_features": [
+      "Crude brush-applied Tenex sealant creating intentionally imperfect coverage",
+      "Visible cracks at ball-of-foot and toe bend points",
+      "Threadbare sole with visible wear-through at ball of foot",
+      "No visible branding or finishing touches",
+      "Hand-modified appearance suggesting street-level customization"
+    ],
+    "tier_indicator": "Tier 4-5 functional/salvage footwear. Cheap base material elevated by industrial utility.",
+    "cultural_context": "Street survivor, maintenance worker, or ungoverned zone inhabitant. Someone who values water-sealing over aesthetics. Practical modification culture—making do with what's available.",
+    "condition_typical": "Perpetually weathered and broken-in. Expected to show cracks and flaking sealant with regular wear. Condition worsens gradually but remains functional."
+  },
+  "image_prompt": "Close-up fashion shot of a worn Tenex Seal-Coat slip-on shoe displayed on a dark metal mannequin foot, angled to show the cracked toe flexion and lumpy grey-brown sealant coating. Urban industrial backdrop with rain-slicked concrete and neon signage reflection. Moody blue-amber lighting highlighting the texture and imperfections. Shallow depth of field. Cyberpunk utilitarian aesthetic. --ar 2:3 --v 6"
 }

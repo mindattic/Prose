@@ -1,9 +1,9 @@
 {
   "id": "4f765426d0d1d96620a913d8575582e4",
-  "name": "NullPoint Technologies CortexVeil CV-1 'Silence'",
+  "name": "NullPoint Technologies CortexVeil CV-1 'Deadzone'",
   "type": "weapon",
   "aliases": [
-    "Silence",
+    "Deadzone",
     "CV-1",
     "Brain Dome",
     "Neural Condom"
@@ -39,5 +39,33 @@
     "tier_2",
     "passive"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Axiom Systems Binder Launcher BL-6 'Cocoon'",
+    "GLMZ",
+    "Saltmarsh Telecom AtmoVolt CV-1 Atmospheric Capacitive Energy Harvesting Antenna",
+    "The Bazaar",
+    "The Human Baseline Alliance"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist headband with a subtle futuristic aesthetic—more medical device than fashion accessory, though designed to blend into everyday wear. The form factor suggests both utility and discretion, sitting low across the forehead and temples without drawing attention.",
+    "dimensions": "Circumference adjusts 54–62 cm. Width across forehead: 3.2 cm. Depth at temples: 1.8 cm. Total height when worn: approximately 2.5 cm above scalp.",
+    "weight_description": "Exceptionally light and balanced—barely noticeable once worn. The 45g weight is distributed evenly to prevent fatigue during extended wear.",
+    "primary_material": "Conductive mesh composite woven with flexible polymer skeleton. The mesh itself is a silver-threaded nano-weave embedded in a soft elastomer backing.",
+    "finish": "Matte charcoal with subtle metallic shimmer where the conductive mesh is visible. The mesh itself has a brushed-silver appearance with faint blue undertones from embedded circuit pathways.",
+    "color_scheme": "Charcoal gray primary with silver-blue conductive threading visible beneath translucent sections. Accent colors vary by model—matte black, midnight blue, or gunmetal options available.",
+    "grip_texture": "The inner surface (against skin) is soft, moisture-wicking elastomer with a faint grip pattern. The outer band has a smooth, slightly rubberized texture for stability. Adjustable fabric covers available in cotton-poly blend or synthetic leather.",
+    "distinctive_features": [
+      "Hidden status LED (inner temple surface, only visible to wearer) pulses red during intrusion attempts",
+      "Barely visible silver-thread conductive mesh pattern throughout the band—more apparent under direct light",
+      "Wireless induction charging contacts recessed along the rear temples (rose-gold plating)",
+      "Adjustment micro-clasps at both temples with tactile click-feedback",
+      "Faint etched serial number and model designation on the rear band (CV-1)",
+      "Temperature-responsive fabric sections that lighten/darken slightly with body heat",
+      "Ultra-thin profile allows seamless wear under hats, hoods, or hair"
+    ],
+    "manufacturer_markings": "NullPoint Technologies logo (stylized Φ symbol with neural nodes) embossed on rear center clasp. Small 'CV-1 DEADZONE' text laser-etched into left temple clasp. FCC/GLMZ compliance stamp on interior back band.",
+    "condition_typical": "Maintained in pristine to lightly worn condition. Regular users show minimal wear—occasional creasing where adjustment clasps operate, faint discoloration on inner elastomer from perspiration (normal and inconsequential). Some units show light dust accumulation on the silver mesh, giving them a slightly aged aesthetic after months of continuous use."
+  },
+  "image_prompt": "Product photography of a silver-threaded conductive headband (CortexVeil CV-1) displayed on a black matte surface and held in a gloved hand (chrome-tipped fingers visible). The headband is positioned to show the inner mesh pattern and barely-visible blue circuit threading. Dramatic side-lighting with cool blue accent light emphasizes the metallic shimmer and conductive weave. Dark cyberpunk aesthetic with shallow depth of field. Neural interface aesthetic: sleek, medical-grade, minimalist. High-resolution detail showing texture of elastomer backing and silver micro-threading. Modern GLMZ tech photography style. --ar 3:2 --v 6"
 }

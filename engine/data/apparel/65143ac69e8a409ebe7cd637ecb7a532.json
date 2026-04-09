@@ -37,5 +37,26 @@
     "GLMZ",
     "The Collective",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A robust, authoritative work jacket with military-industrial undertones. Broad shoulders with reinforced structure, slightly oversized through the torso for layering and movement. The retroreflective gold-orange panels create bold horizontal stripes across shoulders and forearms, making the wearer immediately visible in low-light dock environments. The silhouette reads as functional and assertive — a garment that commands presence.",
+    "fit": "Relaxed through the body with articulated sleeves for crane operation and cargo handling. Slightly tapered at the waist to avoid bulk. Designed to accommodate thermal liners without compression. Cuffs are fitted but not tight, allowing wrist augmentation interfaces to be visible if worn.",
+    "primary_material": "Heavyweight Dyneema-reinforced ballistic canvas outer shell; brushed synthetic-wool blend thermal lining (removable); sealed synthetic leather on collar and cuff reinforcement panels",
+    "texture": "Rough, weathered canvas with a slight waxy finish from treatment. Dyneema weave creates subtle diagonal ribbing. Collar and reinforcement panels are smooth and worn with age. Gold-orange retroreflective panels have a subtle dimpled texture for light diffusion.",
+    "color_scheme": "Industrial charcoal-gray canvas base with bold gold-orange retroreflective horizontal stripes on shoulders and forearms. Black synthetic-leather collar and cuff trim. HarborGrid Collective patch features deep navy with gold border (supervisor tier), bright white embroidered lettering.",
+    "closures": "Heavy-duty YKK brass zipper down center front with reinforced storm flap. Magnetic snap collar closures for quick removal. Thermal lining attaches via friction-fit connectors at shoulder seams and waistband.",
+    "distinctive_features": [
+      "GPS-linked beacon chip embedded in right collar point (subtle antenna visible as reinforced stitching)",
+      "HarborGrid Collective union patch on left chest with gold-bordered supervisor version",
+      "Sealed document pocket on right hip rated for water/spray exposure",
+      "Dedicated radiation dosimeter clip slot on right waist (permanently stitched retention loop)",
+      "Reinforced elbow and shoulder panels in darker charcoal with abrasion resistance",
+      "Inner collar embossed with wearer's shift authorization code (thermal-printed)",
+      "Radiation warning iconography subtly woven into interior pocket lining"
+    ],
+    "tier_indicator": "Tier 2-3 functional; the gold-bordered patch elevates it to Tier 2 status within the working class, signaling earned authority and union protection",
+    "cultural_context": "Wearing this jacket means you belong to the HarborGrid Collective — one of GLMZ's last worker-organized power centers. The gold-bordered supervisor patch is a credential, not just decoration; it signals years of service, technical competence, and union seniority. Non-union dock workers view this jacket with a mix of envy and resentment. Corporate logistics managers recognize it as a warning: the wearer's first loyalty is to the Collective, not corpo directives.",
+    "condition_typical": "Well-maintained but visibly worn. Canvas shows stress creases from repeated wear, particularly around shoulders and elbows. The thermal lining may show minor separations at stress points. Retroreflective panels are dulled slightly from repeated dock spray and salt air exposure, but still functional. The HarborGrid patch shows proud wear; many supervisors have small memorial stitches or modified edges acknowledging lost crew members."
+  },
+  "image_prompt": "A muscular dock worker in their mid-40s wearing a weathered HarborGrid Crane & Dock Supervisor Jacket, standing against a rain-slicked concrete pier backdrop. Golden-orange retroreflective panels glow under moody sodium-vapor lighting. Lake Michigan industrial cranes loom in the background, silhouetted against a steel-gray sky. Close detail shot of the gold-bordered HarborGrid Collective supervisor patch on the jacket's left chest. The wearer's augmented chrome fingers are visible on one hand, resting on the sealed document pocket. Rain beads on the Dyneema-treated canvas. The right collar beacon chip catches light with a faint blue pulse. 2226 aesthetic: functional, lived-in, union-proud. Shot from a slight upward angle to emphasize authority. Cinematic, documentary-style realism. --ar 2:3 --v 6"
 }

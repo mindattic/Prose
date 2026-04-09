@@ -42,5 +42,28 @@
     "Eshe Petersen-Bah",
     "Nneka Lindqvist-Okafor",
     "Saoirse Tambadou-Nystr��m"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Imposing brutalist silhouette dominated by angular composite plating. Heavy, architectural presence suggesting industrial utility crossed with tactical combat function. Wearer appears broadened and reinforced, almost mechanized.",
+    "fit": "Rigid compression fit over a structured combat-grade fatigues base. Plates are mounted externally on a load-bearing skeleton, creating distinct layering. Deliberate unyielding stance—designed for functionality, not comfort.",
+    "primary_material": "Composite plate armor (matte-black polymer-ceramic blend) layered over ballistic weave fatigues. Steel-frame modular webbing. Magnesium-alloy reinforced foundry-grade boots. Polymer-graphite helmet shell.",
+    "texture": "Matte non-reflective surfaces with industrial texture. Armor plates show subtle stippling and slight corrosion patina. Webbing has dense, rigid weave. Visor is hard-polished and slightly reflective. Heavy, tactile, unforgiving.",
+    "color_scheme": "Primary matte black with industrial rust-red accent plating. Iron-grey embossed SK-anvil logo on chest and helmet crest. Dark olive fatigues visible at joints and beneath armor.",
+    "closures": "Heavy-duty friction-fit modular connections. Ballistic fatigues feature reinforced magnetic snap closures. Helmet locks via pressure-fit collar mechanism. Load-bearing webbing uses mil-spec buckles and carabiners.",
+    "distinctive_features": [
+      "Full-skull blast-rated helmet with integrated thermal overlay and hard visor",
+      "Angular SK-anvil logo embossed in iron-grey on chest plate and helmet crest",
+      "Modular steel-frame load-bearing webbing system",
+      "Reinforced composite plating with industrial stipple finish",
+      "Integrated thermal imaging overlay in visor",
+      "Modular attachment points for breaching tools and suppression rounds",
+      "Corded industrial torch mount on webbing",
+      "Foundry-grade magnesium-alloy boot reinforcement",
+      "Visible ballistic fragmentation rating markings on plates"
+    ],
+    "tier_indicator": "Tier 2 corporate military—high-end tactical equipment manufactured by major defense contractor. Price point signals corpo security or PMC deployment.",
+    "cultural_context": "Stahl-Koenig corporate security, PMC operator, or elite industrial-site enforcement. Wearer signals allegiance to manufacturing bloc and willingness for direct combat engagement. Heavy gear = serious threat.",
+    "condition_typical": "Factory-fresh or showing minimal combat scuffing. Matte black remains pristine; rust-red accents may show light oxidation from foundry conditions. Equipment is routinely maintained and replaced under Stahl-Koenig service contracts."
+  },
+  "image_prompt": "A heavily armored corpo security operator in full Stahl-Koenig IronGuard Assault Kit standing in industrial three-quarter profile. Matte-black composite plate armor dominates the frame, with rust-red accent plating catching moody amber-blue neon light. Full-skull helmet with thermal visor overlay glows faintly. Steel-frame load-bearing webbing stretches across chest and shoulders, carrying tools and ordnance. Magnesium-alloy foundry boots grip a grated metal floor. Dark blue-grey fatigues visible at joints and neck. SK-anvil logo embossed in iron-grey catches light. Backdrop is brutalist concrete foundry interior with orange furnace glow and cyan-tinted skylights. Cinematic rim lighting emphasizes angular armor plates and tactical geometry. Gritty, industrial, utterly impassive. Cyberpunk military aesthetic. --ar 2:3 --v 6"
 }

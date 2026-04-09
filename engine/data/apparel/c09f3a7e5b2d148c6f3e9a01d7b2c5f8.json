@@ -45,5 +45,25 @@
     "Mika Sorel",
     "Sulfur Crown Agriculture",
     "Synaptrel"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian standalone hood with a streamlined, forward-tilted silhouette. The low crown and close face-framing creates a focused, almost predatory aesthetic. Worn independently or snapped to collar rings, it reads as tactical street-wear with medical/augmentation undertones. The proportions suggest function over fashion—a tool disguised as apparel.",
+    "fit": "Close-fitting around the crown and face, with enough slack at the rear to accommodate BCI hardware and augmentation ports. The brim sits just above eyebrow level, leaving clear sightlines. Compression-style at the neck when worn solo; magnetic snap points allow rigid coupling to standard collar rings without excess material.",
+    "primary_material": "Outer: ballistic-weave charcoal synth-blend (impact-resistant, water-shed). Inner: brushed thermal fleece (recycled polyester composite with heat-retention grid).",
+    "texture": "Exterior is smooth, slightly matte with faint ripple texture from weave. Interior is soft, brushed, with subtle ribbed channels for thermal circulation. The rear seam where the neural port slot runs is reinforced with visible topstitching.",
+    "color_scheme": "Charcoal gray exterior with warm cream/ivory thermal lining visible at face opening. Matte finish overall; no logos or branding visible—pure function.",
+    "closures": "Magnetic snap attachment points (typically 4) for collar-ring integration. Friction-fit pull-on construction with no external fasteners. Magnetic flap cover seals the neural port access slot.",
+    "distinctive_features": [
+      "Integrated neural port access slot along rear seam with magnetic flap cover",
+      "Low-crown geometry optimized for augmented vision without obstruction",
+      "Snap-attachment collar-ring compatible (universal standard)",
+      "Brushed thermal lining with embedded heat-retention grid channels",
+      "Reinforced rear seam for port hardware stress distribution",
+      "No branding—industrial minimalist design language"
+    ],
+    "tier_indicator": "Tier 3-4 functional. Affordable utility augmentation-ready gear. Not luxury (no custom tailoring), but above salvage-grade. This is working-class augmentation infrastructure.",
+    "cultural_context": "Street techs, field medics, augmentation technicians, port-workers, autonomous vehicle supervisors. Wearing this signals someone regularly interfacing with BCI hardware or managing augmentation systems. It's practical, not aspirational.",
+    "condition_typical": "Broken-in and well-maintained. The thermal lining shows minor pilling from regular friction; the rear seam may show signs of repeated port access (slight creasing). Not weathered—this is equipment that gets cleaned and cared for."
+  },
+  "image_prompt": "Close-up fashion shot of Nullweave SnapLayer Thermal Hood worn by a mixed-heritage cyberpunk model with visible chrome neck-port augmentation. Hood pulled low, charcoal exterior catching moody neon—blues and magentas. The cream lining glows softly at the face opening, framing determined expression. Rear view inset shows magnetic port-flap detail. Gritty Great Lakes industrial backdrop: rusted steel, holographic ads, rain-slick streets. Dramatic side-lighting emphasizes textile weave and thermal lining contrast. --ar 2:3 --v 6"
 }

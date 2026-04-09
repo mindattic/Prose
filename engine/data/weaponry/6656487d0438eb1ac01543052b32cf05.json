@@ -42,5 +42,43 @@
     "boutique",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "GLMZ",
+    "Georgi Jorgensen-Toure",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Nika Svensson-Kone",
+    "Sable",
+    "Slagworks Industrial",
+    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
+    "TESSERA PG-2 'Signature'",
+    "The Riveters' Round",
+    "VESPER AESTHETICS Mirage Dual-Mode Social Eye",
+    "Vantablack-CNX",
+    "VitaCore BloomFilter Olfactory Modulation Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modernist bolt-action rifle with a distinctly futuristic aesthetic. The weapon has an elongated profile dominated by a prominent cryo-jacket that wraps the barrel in metallic bands and cooling vents. The stock is angular and minimalist, with a thermal regulation mesh panel running along the shooter's-side of the cheek rest. Overall impression is one of surgical precision and cutting-edge thermal technology — more laboratory instrument than brutal firearm.",
+    "dimensions": "Length: 122 cm | Barrel length: 66 cm | Width (at widest point): 8.2 cm | Height (scope rail to bottom): 6.5 cm",
+    "weight_description": "Noticeably hefty despite ergonomic design. The cryogenic jacket adds substantial weight forward of the action, creating a barrel-heavy balance that demands controlled handling. Feels engineered rather than organic — precision instrument weight.",
+    "primary_material": "Titanium-alloy receiver and action, carbon-composite furniture, aerospace-grade aluminum cryo-jacket with embedded copper cooling channels",
+    "finish": "Matte gunmetal gray receiver with brushed titanium accents. The cryo-jacket has a satin-finish aluminum exterior with subtle frost patterns from thermal cycling. Thermal regulation mesh on stock is dark charcoal with a fine lattice pattern.",
+    "color_scheme": "Dominant: matte gunmetal gray and brushed titanium. Accents: arctic white frost patina on cryo-jacket, charcoal mesh inlays, subtle cyan glow from cryo-cell indicator window",
+    "grip_texture": "Rubberized polymer pistol grip with micro-texturing for non-slip purchase in gloved hands. The thermal mesh stock section is slightly rough, intentionally designed to break light reflection and reduce tactile signature.",
+    "distinctive_features": [
+      "Prominent cryogenic barrel jacket with six copper cooling fins running lengthwise",
+      "Micro cryo-cell indicator window on the right side of the receiver glowing faint cyan",
+      "Thermal regulation mesh panel on left side of stock — woven copper and carbon fibers",
+      "Precision-machined bolt handle with minimal protrusion",
+      "Rail-mounted scope platform with integrated cooling conduit passthrough",
+      "Serial number hand-etched on the receiver in small, precise numerals",
+      "Frost bloom patterns around cryo-jacket seams from sustained thermal differential",
+      "Minimal suppressor threading on muzzle (accommodates optional cryo-rated suppressors)"
+    ],
+    "manufacturer_markings": "SABLE PRECISION WORKS logo laser-etched on the receiver above the magazine well in angular, minimalist font. Individual production number stamped on the left side of the cryo-jacket. Warranty plate inset into the stock with small text specifying cryo-cell replacement intervals.",
+    "condition_typical": "Meticulously maintained by contractors who understand they're operating million-Φ hardware. Cryo-jacket shows expected frost patina but is kept clean of corrosion. Finish remains sharp; any battle scars are negligible. Thermal mesh stock may show minor wear from insertion into firing positions."
+  },
+  "image_prompt": "Product photography of the Sable Precision Works Mirage SPW-7 sniper rifle lying diagonally on a matte black carbon-fiber surface. Dramatic side-lighting from the left reveals the cryogenic barrel jacket's aluminum cooling fins casting sharp shadows. The thermal regulation mesh on the stock glows subtly under cool blue accent lighting. A gloved hand (corporate-grade kevlar reinforced glove) grips the pistol section, fingers barely touching the trigger guard. Micro cryo-cell indicator window emits a faint cyan luminescence. Frost patterns visible on the cryo-jacket from thermal cycling. Minimalist cyberpunk aesthetic, clean product photography with shallow depth of field. Dark studio background with subtle specular reflections on the titanium receiver. Include environmental bokeh suggesting a corporate security facility. --ar 3:2 --v 6"
 }

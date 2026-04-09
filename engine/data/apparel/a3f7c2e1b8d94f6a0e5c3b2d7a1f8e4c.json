@@ -52,5 +52,29 @@
     "Tshiamo Vukić-Arellano",
     "Veldtmann Steelcap 7",
     "VitaCore LinguaSync Real-Time Translation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sharp, authoritative uniform silhouette with military-adjacent formality. Broad shoulders from structured jacket; tapered waist via fitted base layer; commanding presence from mandarin collar and peaked cap. Reads as institutional, trustworthy, and deliberately visible from distance.",
+    "fit": "Tailored but not restrictive — jacket sits close to the torso with articulated elbows for platform movement; trousers have precision press crease and sit flat at the hip; base layer compression-fit at torso, loose at shoulders for mobility.",
+    "primary_material": "Navy poly-cotton blend jacket (70/30 synthetic-natural weave); moisture-wicking charcoal synthetic base layer; deep navy thermal-creased trousers in performance blend; black slip-resistant Veldtmann rubber-soled boots.",
+    "texture": "Jacket fabric has subtle matte finish with reinforced ballistic weave at elbows; base layer shows fine ribbed texture; trousers maintain sharp factory crease; boots show grippy tread pattern and scuff-resistant coating.",
+    "color_scheme": "Deep navy as dominant color (jacket, cap, trousers); charcoal base layer; black boots; gold-thread embroidery on breast patch and sleeve cuff; safety-orange reflective piping along outer trouser seams.",
+    "closures": "Jacket: six-button front with snap-together magnetic reinforcement at lower buttons. Base layer: half-zip neck. Trousers: concealed magnetic closure at fly, snap-secured cargo pocket flaps on thighs. Belt: rigid stamped utility belt with friction-lock buckle. Cap: adjustable rear snap closure.",
+    "distinctive_features": [
+      "Gold-thread embroidered Kelvex Transit Authority patch (left breast)",
+      "Gold-thread corporate logo running along right sleeve cuff",
+      "Mandarin collar for passenger-facing formality",
+      "Reinforced ballistic weave at elbows",
+      "Fare-scanner holster and emergency protocol card pouch attachments",
+      "Safety-orange reflective tape on outer trouser seams",
+      "Magnetic seam detachment along left shoulder (aug-compatible for chrome rigs)",
+      "Neural port cover snaps (optional navy discs included)",
+      "Thermally pre-creased center crease on trousers",
+      "Veldtmann Steelcap 7 boots with wet-surface slip-resistant rating"
+    ],
+    "tier_indicator": "Tier 3 — corporate-issued functional; not luxury, but legitimate corpo employment with equipment budget.",
+    "cultural_context": "Wearer is Kelvex Transit Authority staff, frontline public-facing worker. Signals reliability, institutional authority, and professional competence. Commands respect on platform; marks wearer as part of the megacorp transit infrastructure.",
+    "condition_typical": "Pristine on first day; broken-in after one shift; develops scuff marks on boots and minor wrinkles despite thermal creasing; uniform is regularly cleaned and re-pressed by corpo laundry service."
+  },
+  "image_prompt": "Professional cyberpunk fashion photograph of a Kelvex MagRail Platform Operator uniform displayed on a dark chrome mannequin or worn by a model with subtle augmentation ports visible at the collar. Sharp focus on navy poly-cotton jacket with gold-embroidered Kelvex patch and sleeve logo, charcoal base layer with half-zip visible, navy thermal-pressed trousers with safety-orange reflective seams, black Veldtmann slip-resistant boots. Peaked cap resting on mannequin head. Moody overhead neon lighting casting cool blue and amber shadows. Urban transit station backdrop — sleek platform edge, holographic fare displays, rain-slicked flooring reflecting light. Cinematic depth of field. Corporate-clean aesthetic with edge of weathering. --ar 2:3 --v 6"
 }

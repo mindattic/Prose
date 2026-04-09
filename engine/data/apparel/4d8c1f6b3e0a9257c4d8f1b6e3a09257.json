@@ -50,5 +50,27 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A heavily armored, utilitarian silhouette that reads as industrial and imposing. The matte olive-drab base is interrupted by bold high-vis orange panels at the torso and thighs, creating a stark safety-first aesthetic. The wearer appears broader, more geometric, almost architectural in presence.",
+    "fit": "Rigid and oversized for maximum armor accommodation. The suit prioritizes protection over mobility, creating a boxy, squared-off profile that restricts natural movement. Arms are noticeably stiff and padded; torso is heavily reinforced.",
+    "primary_material": "Multi-ply ballistic nylon exterior over rigid ceramic-composite trauma plates; interior moisture-wicking synthetic blend; reinforced spine-mounted polymer housing for chiller unit",
+    "texture": "Matte, weathered nylon with a slightly rough finish; ceramic plates visible through semi-transparent access panels; ribbed padding along arms and shoulders; smooth integrated tubing at collar assembly",
+    "color_scheme": "Matte olive-drab as dominant color; high-vis international orange at torso and thighs for visibility and regulatory compliance; dark charcoal at collar and arm reinforcements",
+    "closures": "Heavy-duty Velcro-sealed access panels for armor plate removal; integrated magnetic snap closures at shoulders; friction-fit helmet ring assembly; sealed micro-chiller dock at spine",
+    "distinctive_features": [
+      "Removable ceramic-composite trauma plates at chest, abdomen, thighs via Velcro panels",
+      "Integrated ballistic collar and rigid neck brace assembly",
+      "Spine-mounted micro-chiller unit with interior cooling tube network",
+      "Kestrel Dynamics raptor-wing crest embossed on both shoulders",
+      "Helmet ring locking mechanism at neck assembly",
+      "High-vis orange safety panels meeting EOD protocol standards",
+      "Reinforced arm padding limiting fine motor control",
+      "Industrial-grade stitching and binding throughout"
+    ],
+    "tier_indicator": "Tier 1-2 luxury/military — this is corporate defense equipment, expensive and purpose-built, accessible only to authorized military, corporate security, or government EOD teams",
+    "cultural_context": "Military-industrial, government contractor, hazmat/EOD specialist. Wearing this signals professional training, danger-proximity work, and corpo-military affiliation. In civilian contexts, it reads as ex-military or active threat-response personnel.",
+    "condition_typical": "Pristine to lightly weathered depending on deployment history. Dust and scuff marks common; ceramic plates may show impact signatures; cooling tubes may have visible condensation; Velcro panels show repeated use wear"
+  },
+  "image_prompt": "Professional product photography of a Kestrel Dynamics BlastSeal EOD suit displayed on a matte-black industrial mannequin in a sterile laboratory setting. Matte olive-drab body with bold high-vis orange torso and thigh panels. Close-up detail shots showing removable ceramic-composite trauma plate Velcro access panels, integrated ballistic neck collar locking assembly, and spine-mounted micro-chiller unit. Moody blue-grey laboratory lighting with hard shadows. Kestrel raptor-wing crest visible on shoulders. Overhead rim lighting emphasizing ballistic nylon texture and orange safety compliance markings. Cyberpunk tactical equipment aesthetic, 2226 GLMZ military contractor branding. Shot on dark seamless, --ar 2:3 --v 6"
 }

@@ -38,5 +38,32 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Cavitation Pulse Carbine CPC-2 'Bends'",
+    "The Nearfield"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, angular apparatus resembling a mounted cannon crossed with a particle accelerator. The emitter sits atop a heavily braced pedestal base, with a wide, flared muzzle that terminates in a ribbed aperture. The overall impression is industrial, deliberately intimidating — built for power rather than elegance.",
+    "dimensions": "Emitter head: 48cm long, 32cm diameter at muzzle. Pedestal mount: 110cm height total. Power unit module: 38cm × 28cm × 24cm.",
+    "weight_description": "Brutally hefty. The 35kg mass is distributed low through the stabilized base, but the emitter itself feels dense and front-heavy. Designed for fixed mounting or braced deployment — not shoulder-fired.",
+    "primary_material": "Tungsten-alloy frame with carbon-composite bracing struts. The emitter core is shielded in layered steel and ceramic heat-dispersion tiles.",
+    "finish": "Industrial matte black with exposed brushed steel reinforcement bands. Thermal tiles on the muzzle show scorch marks and subtle heat discoloration from fusion-cell proximity.",
+    "color_scheme": "Charcoal black primary with steel gray accents. Warning stripe (sodium yellow) wraps the mid-section where the power coupling interfaces. Internal ribbing hints at deep blue coolant lines visible through vented sections.",
+    "grip_texture": "Mounting points feature rubberized polymer grips for repositioning. Control panel surfaces are bare anodized aluminum — utilitarian, slightly grippy from age and fingerprint oil.",
+    "distinctive_features": [
+      "Radial ribbing around the muzzle aperture (gravity field modulation channels)",
+      "Three vertical coolant vent stacks running the length of the emitter",
+      "Recessed pressure-release valve assembly (glowing amber indicator when charged)",
+      "Mechanical safety lever (bright red, oversized for gloved operation)",
+      "Fusion micro-cell module visible through reinforced viewport — faint blue luminescence when primed",
+      "Scorched thermal discoloration radiating from the muzzle in concentric rings",
+      "Etched circuit tracery visible on the steel bands (gravity field distribution geometry)",
+      "Heavy cable junction with military-grade connectors at the base"
+    ],
+    "manufacturer_markings": "Ironside Armaments stamp (block serif, laser-etched) on the left side of the pedestal. Serial plate affixed below: 'GSP-1 ARCTURUS DEFENSE SOLUTIONS — PROTOTYPE XX / AUTHORIZED MILITARY TESTING ONLY.' Smaller warning placard in four languages (EN, Mandarin, Hindi, Portuguese) below the control panel.",
+    "condition_typical": "Field-tested but maintained. Light scoring on the ceramic tiles, minor cable fraying at the junction. The red safety lever shows micro-scratches from repeated use. Dust accumulation in the vent stacks suggests deployment in ungoverned zones (Tier 5 salvage environments)."
+  },
+  "image_prompt": "Dramatic top-down perspective of the GSP-1 Graviton Shield Projector mounted on a dark industrial surface, photographed in high-contrast side-lighting that casts sharp shadows across the muzzle ribbing and thermal tiles. Focus on the flared aperture and the faint blue glow of the fusion micro-cell visible through the reinforced viewport. Include scuffed metal textures, worn safety indicators, and the etched gravitational field geometry on the steel bands. Cyberpunk aesthetic with industrial brutalism — suggest the massive power coiled within. Product photography style with dramatic neon side-accent lighting in electric blue reflecting off the brushed steel reinforcement bands. --ar 3:2 --v 6"
 }

@@ -44,5 +44,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Free Assembly",
+    "Nika Svensson-Kone",
+    "The United Workers Front",
+    "Vantablack BC-1 'Briefcase'",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek executive briefcase indistinguishable from high-end corporate carry luggage — perfectly mimics premium business aesthetics with subtle ergonomic curves and professional geometry. Only upon activation does the weapon nature become apparent as the front panel retracts to reveal a compact polymer SMG chassis integrated into the case structure.",
+    "dimensions": "Case: 42cm W × 30cm H × 12cm D. Integrated barrel assembly: 18cm concealed within front panel cavity. Total deployed weapon length from handle grip point: approximately 38cm when panel open.",
+    "weight_description": "Deceptively hefty for its size — 2.5kg distributed across the entire case structure creates balanced, professional carry feel. The weight suggests valuable cargo without betraying mechanical components. Handle accommodates one-handed carrying despite integrated systems.",
+    "primary_material": "Aircraft-grade aluminum chassis with carbon-composite internal framework for component distribution. External synthetic leather facing with reinforced polymer panels. Barrel assembly: hardened steel.",
+    "finish": "Matte charcoal gray synthetic leather exterior with brushed aluminum trim. Internal barrel and mechanism show bare steel with light grease patina. Front panel interior (concealed until deployment) shows industrial polymer with precision machining marks.",
+    "color_scheme": "Professional charcoal gray and brushed silver with minimal branding. Accent: subtle Arcturus logo in matte black near handle. Internal components visible only when deployed — burnished steel and polymer black.",
+    "grip_texture": "Executive carry handle wrapped in conditioned synthetic leather with subtle grip-enhancement weave. Trigger assembly emerges from case structure with textured polymer for positive engagement despite integrated mounting.",
+    "distinctive_features": [
+      "Motorized front panel with millisecond deployment mechanism",
+      "Concealed barrel outlet disguised as ventilation grille until activation",
+      "Integrated sensor array distributed across top surface (appears as subtle textured panels)",
+      "BCI interface contact points subtly recessed into handle underside",
+      "Internal magazine cavity molded into case bottom — no external magazine ports",
+      "Heat dissipation grilles integrated into side panels (appear as design elements)",
+      "Cable routing channels mimicking professional cable management",
+      "Mechanical detents disguised as latch mechanisms"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo embossed in matte black near handle. Serial number engraved on underside of handle in small, professional font. Model designation 'ESM-2' appears only on concealed internal barrel assembly plate. Regulatory compliance marking on interior surface (normally hidden).",
+    "condition_typical": "Factory-pristine when in active service — the disguise depends on flawless appearance. Well-maintained internal mechanisms with light operational wear. After deployment, the case typically shows stress fractures around panel deployment mechanism and cosmetic damage to briefcase finish."
+  },
+  "image_prompt": "Professional product photograph of a charcoal gray executive briefcase resting on dark matte surface, shot from three-quarter angle with dramatic side-lighting emphasizing metallic trim and texture. Insert inset close-up showing the retracted front panel with barely-visible barrel outlet disguised as ventilation grille. Show integrated handle detail with subtle BCI contact points. Lighting should create depth between matte leather and brushed aluminum, with cool color temperature reinforcing corporate aesthetic while hinting at lethal integration. Add second image showing panel fully deployed mid-deployment sequence, revealing internal barrel assembly and polymer SMG chassis. Background: sleek data-noir gradient from black to deep charcoal. Include Φ15,000 price tag in corner. --ar 3:2 --v 6"
 }

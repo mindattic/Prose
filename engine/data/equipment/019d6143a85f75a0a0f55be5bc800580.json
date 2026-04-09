@@ -44,5 +44,25 @@
     "poison",
     "tier 1"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "physical_description": {
+    "visual_profile": "A rice-grain-sized bioelectronic capsule, barely visible to the naked eye. When exposed during installation or removal, it appears as a sleek metallic-ceramic hybrid with a subtle iridescent sheen. Once implanted, completely invisible beneath the skin.",
+    "dimensions": "8mm length × 2mm width × 2mm height (subcutaneous implant); External receiver device approximately 12cm × 8cm × 1.5cm",
+    "weight_description": "Implant itself negligible (under 0.5g); External linked device handheld and pocketable",
+    "primary_material": "Biocompatible titanium-ceramic composite shell with sapphire sensor arrays; gold-plated microcontact pins",
+    "finish": "Implant has a polished, slightly iridescent finish resistant to biofluids; external receiver has a matte charcoal polymer housing with anodized aluminum trim",
+    "color_scheme": "Implant: gunmetal gray with hints of violet under light; Receiver: matte black housing with Lazarus Pharmaceuticals' trademark cyan-blue accent stripe along top edge",
+    "interface_elements": "Implant: no user interface (fully passive once inserted). Receiver device: small OLED status display (2.5-inch), capacitive touch panel for menu navigation, dual indicator LEDs (green for normal, amber for alert, red for emergency), inductive charging coil with alignment markers, encrypted Bluetooth indicator light, subtle haptic feedback system",
+    "distinctive_features": [
+      "Microscopic laser-etched serial number on implant barrel",
+      "Receiver device features a soft breathing pulse animation on standby (cyan glow cycling)",
+      "Inductive charging pad glows faintly blue when device is charging",
+      "Emergency alert mode triggers rapid red LED pulsing across top edge",
+      "Subtle medical-grade packaging with temperature monitoring label",
+      "Lazarus Pharmaceuticals holographic authentication seal on receiver"
+    ],
+    "manufacturer_markings": "Lazarus Pharmaceuticals logo (stylized caduceus with circuit pattern) on receiver back panel; FDA/GLMZ medical compliance stamps; 5-year warranty seal; model number BMI-6 laser-printed on rear; manufacturing batch code and date",
+    "condition_typical": "Implant: sealed within sterile biocompatible housing during insertion; Receiver: kept in leather or synthetic carry pouch, screen may show active vitals dashboard with color-coded parameter readouts; periodic soft blue glow during sync cycles with medical network"
+  },
+  "image_prompt": "Sleek medical implant product photography: extreme close-up of a rice-grain-sized titanium-ceramic biomonitor capsule on a sterile white surface, surrounded by its sleek matte-black receiver device displaying cyan vital signs on OLED screen. Implant glimmers with iridescent sheen under soft clinical lighting. Receiver sits on polished chrome workbench with inductive charging dock nearby, subtle blue glow emanating from alignment coils. Professional medical aesthetic with cyberpunk edge—Lazarus Pharmaceuticals branding visible, holographic security seals catching light. Dramatic side-lighting casts sharp shadows, emphasizes biotech precision. High-end corporate medical laboratory setting, cool color temperature with cyan accent lighting. --ar 3:2 --v 6"
 }

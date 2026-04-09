@@ -53,5 +53,30 @@
     "Sovan Dziedzic-Kamara",
     "The United Workers Front",
     "Tiare Nishi-Anim"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, utilitarian silhouette that reads athletic from the front but reveals tactical sophistication on closer inspection. The ombre hoodie creates a graduated shadow effect from burgundy to near-black, while the split back panel hints at augmentation without announcing it. Worn by someone built for vertical movement and rapid transitions between environments. Layered visual complexity — smooth face fabric conceals serious functionality.",
+    "fit": "Tailored compression through the torso with strategic articulation at shoulders and hips. The hoodie sits close enough to not snag on rooftop edges but loose enough to accommodate internal holsters and padding. Cargo trousers are fitted at the thigh but cut with gussets at the knee for climbing and crouching. Overall impression: movement-optimized, not restrictive.",
+    "primary_material": "Ballistic weave blend for the hoodie (burgundy-black ombre treatment); ripstop nylon for cargo trousers in deep plum; matte-finish synthetic leather reinforcements at stress points. Battery routing strip is flexible polymer composite.",
+    "texture": "Smooth, almost liquid-feeling face fabric on the hoodie belies the armor underneath. Ripstop creates a subtle grid pattern visible in certain light angles. Back split panel has clean, flush magnetic closures with minimal surface drag. Hood interior is lined with soft friction-weave for silent, secure fitting.",
+    "color_scheme": "Deep burgundy fading to near-black across the back and shoulders (ombre effect). Plum cargo bottoms create a monochromatic, low-visibility palette. Matte graphite boots ground the look. Mag-clip closures and battery strip are brushed steel — only glint when deliberately exposed.",
+    "closures": "Magnetic quick-release clips along the back split (silent, secure, fast separation for geneware access). Hoodie drawstring is woven steel-core. Cargo pockets use friction-fit magnetic flaps. Trousers fasten with a hidden side-zip and magnetic waistband integration.",
+    "distinctive_features": [
+      "Removable back split panel with flush-mounted quick-release mag-clips (geneware accommodation)",
+      "Four concealed cargo pockets behind smooth face fabric",
+      "Flat holster sleeve integrated into left chest interior",
+      "Tool loop array across right interior (up to 6 loops)",
+      "Wire-framed hood shaped into a face-shadowing cowl",
+      "Articulated knee panels with concealed prosthetic channel on left outer leg",
+      "Ankle dump pockets accessible by touch alone",
+      "Battery routing strip woven into waistband (for chrome lower-body augmentation)",
+      "Slim chest harness with two utility pouches (reads as courier rig)",
+      "Split-sole rooftop boot with magnetic toe-cap",
+      "Textured grip tread across both sole sections"
+    ],
+    "tier_indicator": "Tier 3-4 boundary. The build quality and customization suggest someone with serious Φ to spend or serious connections (Scaleback Workshop commissions aren't cheap). But the tactical functionality and wear-ready aesthetic prevent it from reading as Tier 1 luxury — this is built for work, not display.",
+    "cultural_context": "Runner kit. Someone who moves through the city vertically and horizontally, who needs to blend on the street but operate in the margins. Likely augmented (the back split and battery routing don't exist on baseline anatomy). Suggests self-sufficiency, operational discipline, and access to fabricators outside corporate supply chains. Not military (too individual, too custom), not corpo (too visibly tactical), but street-level operative — extraction runner, infiltration specialist, courier with secondary capabilities.",
+    "condition_typical": "Broken-in but maintained. The ombre fades slightly unevenly from actual use (rooftop weathering, body heat wear patterns). Mag-clips show minor shine from repeated open/close cycles. Holster sleeve interior has subtle creasing from regular loadout cycles. Cargo pocket seams show honest use but no tears — Scaleback builds last. Boots have scuff marks on the toe-cap from rooftop landings but the grip tread is still sharp."
+  },
+  "image_prompt": "A lean cyberpunk runner model wearing the Ironveil Splitback Recon Rig, photographed from a three-quarter angle against a moody urban backdrop — concrete brutalism with neon undertones. The ombre burgundy-to-black hoodie catches side-lighting that emphasizes the split back panel and closed mag-clips. Model's posture is casual but ready, weight shifted toward one leg. The chest harness and utility pouches are visible but not prominent. Foreground: shallow depth of field catching a rooftop edge or ladder rung. Background: rain-slick building facade, distant neon signage in cool greens and purples. Moody, film noir aesthetic with cyberpunk saturation. Grain and slight chromatic aberration. Cinematic. --ar 2:3 --v 6"
 }

@@ -56,5 +56,45 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Chameleon Dermal Shift",
+    "Chibundo Reinholt-Sarpong",
+    "GLMZ",
+    "Iowan Behemoth — 'Thunderhead'",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Nenad Vargas-Baffour",
+    "Sagyn Ibarra-Prempeh",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "The Quiet Room",
+    "Vantablack-CNX",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist bioweapon masquerading as industrial equipment. The HVIC-3 reads as a heavily modified pump-action carbine with a pronounced, bulbous lower receiver that dominates the weapon's visual center of gravity. The overall impression is aggressive and medical simultaneously—a thing designed to dispense invisible death with the ergonomic familiarity of a shotgun. Its silhouette is chunky, purposeful, unapologetically utilitarian.",
+    "dimensions": "74 cm overall length; bulbous canister housing extends 12 cm beneath the barrel; upper receiver width approximately 5 cm; stock-to-muzzle depth creates a compact but dense profile",
+    "weight_description": "Hefty and front-weighted. At 4.2 kg loaded, the carbine feels anchored by the canister—not unwieldy, but demanding respect and deliberate handling. The mass sits forward, requiring proper stance.",
+    "primary_material": "Aircraft-grade aluminum chassis with reinforced titanium canister vessel. The receiver is reinforced carbon-composite polymer with integrated thermal management vents. Secondary emitter assembly is surgical-grade stainless steel.",
+    "finish": "Brushed gunmetal gray with clinical precision. The canister housing features a matte anodized finish that resists fingerprints. Selective areas—trigger guard, magazine well, emitter ports—show a slightly darker, almost blackened treatment suggesting repeated exposure to near-infrared discharge residue.",
+    "color_scheme": "Institutional gray-silver primary with gunmetal accents. The canister displays faint amber-tinted indicator windows along its length. Secondary emitter aperture has a subtle copper glow when powered.",
+    "grip_texture": "Textured rubberized polymer wrap in dark charcoal, providing secure purchase even through light exposure suits. The grip is ergonomic but deliberately utilitarian—no comfort, only control.",
+    "distinctive_features": [
+      "Bulbous crystalline-look canister housing with internal visible particulate suspension (faintly opalescent under light)",
+      "Amber LED indicator strip running the length of the canister showing charge/load status",
+      "Secondary near-infrared emitter array recessed into the upper receiver, visible as a cluster of tiny dark ports",
+      "Pressure relief vents along the canister sides, aesthetically resembling industrial cooling fins",
+      "Biometric exclusion profile interface—a small palm-print scanner mounted on the right side of the receiver",
+      "Subtle copper-colored oxidation rings around muzzle end from aerosol discharge residue",
+      "Mechanical safety lever positioned for right-hand operation, marked with warning glyphs in ZHENG-DAO corporate red",
+      "Power indicator—faint blue LED beneath the rear sight mount"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC corporate logo (stylized DNA helix) stamped in matte on the upper receiver near the rear. Serial plate mounted on the left side of the canister in raised characters. Technical specifications and biohazard warnings etched below the canister in multiple languages. A small red warning triangle with the company symbol appears near the muzzle.",
+    "condition_typical": "Field-maintained but never pristine. The brushed finish shows micro-scratches from regular disassembly and cleaning. Slight discoloration around the secondary emitter ports from repeated activation. No rust or deep scarring—this is a weapon kept in working condition by contractors who understand its lethality. The canister may show faint particulate settling or residual opalescence from repeated fills."
+  },
+  "image_prompt": "Product photograph of the Hemolytic Vapor Induction Carbine HVIC-3 against a sterile dark charcoal surface. Weapon positioned at a slight 45-degree angle, showcasing the bulbous canister housing and upper receiver simultaneously. Held in a gloved tactical hand (black neoprene with steel knuckle reinforcement). Dramatic cool side-lighting emphasizing the brushed aluminum and the amber indicator strip along the canister. Subtle blue glow from the rear power indicator visible in shadow. The near-infrared emitter ports catch light with a faint copper luminescence. Background is industrial and clinical—concrete texture, minimalist composition. Atmosphere is cold, authoritative, medical-sinister. Shallow depth of field with sharp focus on the biometric scanner and trigger guard. Cyberpunk aesthetic: clinical precision meets weaponized biotech. Subtle ambient glow from the indicator systems. --ar 3:2 --v 6"
 }

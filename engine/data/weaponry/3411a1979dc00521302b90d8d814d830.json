@@ -42,5 +42,42 @@
     "thermal",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "Doru Fofana-Câmpeanu",
+    "GLMZ",
+    "Ouroboros Energy Tokamak City-Scale Fusion Reactor",
+    "Praevex",
+    "Saoirse Tambadou-Nystr��m",
+    "Street-Loaded Piezoelectric Overcharge Bead PZO-4",
+    "Svetlana Boateng-Quiñonez",
+    "TESSERA TC-3 'Crucible'",
+    "The Nearfield",
+    "Tomasz Wren",
+    "VitaCore BloomFilter Olfactory Modulation Implant",
+    "VitaCore ClearCourse Addiction Suppressor"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist bearded axe with a subtly asymmetrical head — the cutting edge appears thicker and more deliberately engineered than traditional axes. The design emphasizes industrial utility over ornamentation. At rest, the head has an ominous quality: the cutting edge seems to shimmer faintly even when unpowered, hinting at the plasma containment system beneath. The profile is aggressive but purposeful.",
+    "dimensions": "Total length: 82 cm (60 cm handle + 22 cm head), head width at cutting edge: 22 cm, blade depth (front to back): 8 cm",
+    "weight_description": "Substantial and deliberate — 2.4 kg feels heavy in the hand without being cumbersome. The weight is distributed toward the head, creating momentum for breaching strikes. Balanced enough for a two-handed swing, but the tokamak cell in the haft adds unexpected heft toward the grip.",
+    "primary_material": "Aerospace-grade carbon composite body with embedded tokamak containment vessel; cutting head is hardened steel with plasma channel matrix running the edge length; polymer-wrapped handle with reinforced core",
+    "finish": "Matte charcoal composite with brushed steel accents on the blade assembly. The cutting edge has a faint iridescent sheen from the plasma-conductive coating. Heavy scuffing and heat-stress marks along the head from repeated activation cycles.",
+    "color_scheme": "Charcoal grey primary with brushed gunmetal steel on the cutting head; subtle amber/orange discoloration along the edge from plasma thermal cycling. Grip wrapping is industrial black with thin silver alignment markers.",
+    "grip_texture": "Tightly woven polymer cord wrapped around carbon core — provides secure, non-slip purchase even when wet or gloved. Textured enough for bare-hand grip but designed for armored hand wear. Small ridged sections every 5 cm for positioning reference.",
+    "distinctive_features": [
+      "Plasma channel matrix visible as faint metallic seams running along the entire cutting edge",
+      "Activation panel on the haft just below the head — raised metallic button with recessed safety toggle",
+      "Heat dissipation vents arranged in a grid pattern along both sides of the head",
+      "Tokamak cell housing visible as a fist-sized cylindrical bulge in the upper haft — glowing slightly when charged",
+      "Radiant heat damage visible as charred material splatter on the lower head and upper handle from previous uses",
+      "Faint scorch marks and plasma-burn patterns on the blade face from contact with various materials",
+      "Crucible Industries diamond-mark stamp on the spine of the head, partially obscured by wear"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES logo (stylized flame within a geometric frame) stamped on the haft 10 cm below the head; PE-2 designation engraved into the activation panel housing; serial number laser-etched on the tokamak cell housing (visible through transparent polymer window)",
+    "condition_typical": "Well-maintained but battle-worn — the weapon shows heavy use patterns: scoring and heat discoloration on the blade face, visible plasma-burn trails on the head geometry, slight warping at the corners of the cutting edge from repeated thermal cycling. The handle wrapping is worn smooth in grip zones but the structural integrity remains pristine. Field operators keep this weapon in functional condition; cosmetic preservation is secondary to operational reliability."
+  },
+  "image_prompt": "Product photograph of a brutal industrial plasma-edge axe, Crucible PE-2 Sunstrike, positioned vertically on a matte black steel surface. Gloved hand (armored exosuit gauntlet, gunmetal grey) grips the textured polymer-wrapped haft. The axe head fills the upper third of frame, showing the faint iridescent plasma-channel matrix running the cutting edge, heat-stress scorch marks, and grid-pattern dissipation vents. Dramatic side-lighting at 45 degrees emphasizes the metallic seams and thermal damage patterns. The tokamak cell housing glows with faint amber undertone from internal charge indicator. Dark grey workshop background. Cinematic cyberpunk industrial aesthetic, studio lighting with subtle thermal bloom effect around the blade. --ar 3:2 --v 6"
 }

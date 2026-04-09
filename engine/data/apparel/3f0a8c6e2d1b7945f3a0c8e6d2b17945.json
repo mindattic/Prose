@@ -57,5 +57,27 @@
     "The Shelf",
     "Tshiamo Vukić-Arellano",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, adaptable silhouette designed for seamless code-switching between corporate and street environments. The reversible jacket is the centerpiece—flip it and the entire aesthetic transforms from street operative to junior corpo. Layered, compact, and deliberately unremarkable; built to blend rather than stand out.",
+    "fit": "Fitted through the torso with tapered legs; compression-friendly without being restrictive. The long-sleeve base is snug at wrists and collar. Pants have articulated knees for mobility. Overall impression: efficient, athletic, travel-ready.",
+    "primary_material": "Base layer: synth-blend heather grey with moisture-wicking properties. Reversible shell: ballistic-weave nylon with matte finish on olive side, smooth technical weave on charcoal. Pants: stretch-integrated dark navy composite. Shoes: molded TPE sole with tech-mesh upper. Pack: waxed nylon with RF-shielded compartments.",
+    "texture": "Smooth to matte overall; the olive side reads slightly textured, the charcoal side glass-smooth. Cargo pockets are reinforced with subtle quilting. Knees feature articulated flex panels. Neural collar is lined with soft conductive mesh. Pack surface is waxy, slightly grip-textured.",
+    "color_scheme": "Heather grey base, reversible jacket in matte olive and charcoal, dark navy tapered pants, dark grey runner shoes. All colors desaturated and professional—nothing that flags attention at checkpoints.",
+    "closures": "Reversible jacket: friction-fit magnetic toggles disguised as standard zippers on both sides. Base layer: magnetic thermal snaps at collar (housing neural port pass-through). Pants: concealed magnetic fly with hidden zip pockets on thighs. Shoes: tension-lock laces. Pack: recessed magnetic snap flap with redundant friction-seal.",
+    "distinctive_features": [
+      "Sealed neural port collar with conductive mesh lining—allows quick augment interface without removing jacket",
+      "Reversible shell jacket: olive side reads street/courier, charcoal side reads junior corpo",
+      "Hidden zip pockets on pants thighs (contents invisible when closed)",
+      "False-bottom compartment in sling pack with RFID-blocking Faraday mesh",
+      "Articulated knee panels for stairs and climbing",
+      "Cargo pockets on olive side with discrete reinforcement stitching",
+      "All zippers and fasteners matte-finished to avoid reflective giveaways",
+      "Waxed pack surface resists scanner interference and moisture"
+    ],
+    "tier_indicator": "Tier 3-4 functional wear with Tier 2 materials and construction quality. Signals working professional with street credibility. Expensive enough to pass scrutiny, understated enough to not invite theft.",
+    "cultural_context": "Courier, data-runner, or someone with legitimate reasons to move between corporate and street zones. The outfit says: 'I belong everywhere and nowhere.' Worn by freelancers, transit workers, and those with augment subscriptions that span multiple networks.",
+    "condition_typical": "Pristine when new (signals recent Φ spend), but designed to weather well—scuffs on shoes look intentional, minor creases in the pack suggest actual use. Never looks neglected, always looks functional."
+  },
+  "image_prompt": "A sharp fashion shot of a lean, mixed-heritage model wearing the Coldseam Tier-Hop set—charcoal side of reversible jacket facing camera, creating a clean corporate silhouette. The model stands in a neo-brutalist GLMZ transit hub, cool LED strips overhead casting blue-white light. One hand adjusts the neural port collar, revealing the conductive mesh beneath. The black waxed sling pack hangs diagonally across the torso. Second image shows the model mid-flip, jacket reversing to olive with cargo details visible, suggesting transformation mid-mission. Moody, cinematic, high contrast, gritty urban cyberpunk aesthetic. Dark background with neon grid reflections. --ar 2:3 --v 6"
 }

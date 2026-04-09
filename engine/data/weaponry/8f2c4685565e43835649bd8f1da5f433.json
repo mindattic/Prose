@@ -42,5 +42,37 @@
     "civilian",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus NX-1 'Sandman'",
+    "GLMZ",
+    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'",
+    "Lazarus BioGuard AllerGen Suppressor",
+    "Nika Svensson-Kone",
+    "Rashid Tuiasosopo-Erkens",
+    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+    "Tessera TX-15 'Cradle Song'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, utilitarian semi-automatic pistol with a distinctly domestic aesthetic. The profile is conservative and non-aggressive—clean lines, no tactical rails or aggressive angles. The detachable suppressor dominates the muzzle end, giving the weapon an elongated silhouette that suggests 'whisper' rather than 'warrior.' At rest, it reads as civilian-market responsible rather than military-grade.",
+    "dimensions": "Pistol frame: 19cm length, 13cm height, 3.2cm width. Suppressor: 12cm length, 4.1cm diameter. Total with suppressor: 31cm.",
+    "weight_description": "Balanced and manageable. Without suppressor: hangs naturally in the palm. With suppressor: front-heavy but not unwieldy—the suppressor's weight is distributed forward, making it feel planted and stable rather than nose-heavy.",
+    "primary_material": "Polymer frame (reinforced thermoplastic composite), steel slide, aluminum suppressor body with steel baffle stack",
+    "finish": "Matte gunmetal gray on the slide with subtle brushed texture. Polymer frame in soft anthracite gray with slightly raised grip panels in charcoal. Suppressor in satin aluminum with knurled threads.",
+    "color_scheme": "Gray-on-gray minimalism—gunmetal slide, anthracite polymer frame, aluminum suppressor. Blue-tip identification band on subsonic ammunition visible in magazine.",
+    "grip_texture": "Slightly tacky textured polymer, reminiscent of industrial rubber rather than aggressively aggressive tactical grip. Designed for user comfort during extended holding, not operator aggression. Subtle radial texturing provides purchase without feeling aggressive.",
+    "distinctive_features": [
+      "Quick-mount suppressor with visible quarter-turn threading collar",
+      "Low-profile sights integrated into slide—minimalist tritium dots in soft green",
+      "Nkomo-Lindqvist logo (interlocking NK) on slide in metallic inlay",
+      "Serial plate on frame with engraved 'NL-9SD LULLABY' designation in sans-serif type",
+      "Magazine witness holes showing round count in blue-tipped subsonic ammunition",
+      "Decocker lever (no manual safety) in natural aluminum",
+      "Heat dissipation vents on suppressor body as subtle horizontal lines",
+      "Wear marks typical on grip from deliberate handling during training sessions"
+    ],
+    "manufacturer_markings": "Nkomo-Lindqvist logo (interlocked NK monogram) on left slide in metallic inlay. 'NL-9SD' and 'LULLABY' engraved on right frame in small sans-serif. Serial number plate on frame. 'SUBSONIC 9x19mm' printed in small type on magazine. Made in GLMZ origin stamp on frame.",
+    "condition_typical": "Well-maintained and deliberately handled—clean but showing signs of responsible use. Suppressor shows light oil residue and minor handling marks. Polymer frame unmarred. Slide retains full finish. Represents a weapon kept in secure home storage, periodically field-tested but not combat-worn."
+  },
+  "image_prompt": "Professional product photography of the Nkomo-Lindqvist NL-9SD 'Lullaby' semi-automatic pistol. Shot on dark matte charcoal surface under dramatic side-lighting from upper left, creating sharp highlights on the gunmetal slide and satin aluminum suppressor. The weapon is positioned at 45-degree angle, suppressor pointing upper right, showing full profile with detachable quick-mount suppressor threaded on. A gloved hand in dark tactical polymer grips the frame naturally. Close detail shows the blue-tipped subsonic 9mm round in the transparent magazine witness holes. Minimalist cyberpunk aesthetic—clean lines, industrial materials, purposeful design. Cool color temperature. No background clutter. Emphasize the civilian-market responsiveness and hearing-protection focus rather than tactical aggression. Product-catalog lighting, sharp focus. --ar 3:2 --v 6"
 }

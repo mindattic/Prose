@@ -66,5 +66,43 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Emeka Johansson-Orozco",
+    "GLMZ",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Lazarus Pharmaceuticals Coagulant Bloom Injector — 'The Bridesmaid'",
+    "Narrowcast",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Ouroboros Energy ThermalSink UR-3 District Waste Heat Exchange Network",
+    "PulsePoint AuraGland Pheromone Synthesis Node",
+    "Ringo Corponation",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek carbine that deliberately mimics civilian semi-automatic rifle aesthetics while concealing its true lethal mechanism. The overall silhouette is deceptively conventional — long barrel, integrated scope rail, curved magazine well — but the muzzle assembly is distinctly unusual: a tapered, multi-chambered ultrasonic emitter pod rather than a conventional muzzle brake. The weapon has the confident ergonomics of a professional tool rather than the aggressive stance of a combat rifle.",
+    "dimensions": "68 cm length overall; 12 cm muzzle emitter pod diameter; 22 cm across the widest point of the receiver; compact enough to be carried in a rifle case or under a long coat",
+    "weight_description": "Moderate and balanced at 3.1 kg — noticeably lighter than a conventional carbine of equivalent length, which reinforces its deceptive appearance as a sporting or civilian-market firearm. The weight distribution favors the muzzle slightly due to the ultrasonic transducer assembly, creating a natural aiming bias.",
+    "primary_material": "Medical-grade titanium alloy receiver (for ultrasonic frequency isolation and minimal electromagnetic interference), reinforced composite polymer handguard and furniture, shielded internal waveguide of hardened synthetic sapphire",
+    "finish": "Flat matte gunmetal gray with brushed titanium accents around the emitter pod. The finish is deliberately utilitarian and unmarked — no aggressive aesthetic flourishes. Designed to disappear in a corporate or clinical setting.",
+    "color_scheme": "Primary: cool gunmetal gray. Accents: brushed titanium silver on the muzzle pod and receiver rails. Interior of emitter pod: faint iridescent sapphire blue when examined at oblique angles (visible only under direct inspection)",
+    "grip_texture": "Ergonomic rubberized polymer grip with subtle vertical ridging — medical-tool precision rather than tactical aggressiveness. Cool to the touch, slightly tacky to maintain control without fatigue during extended aiming",
+    "distinctive_features": [
+      "Oversized multi-chambered muzzle emitter pod with internal wave-shaping geometry barely visible through translucent sapphire viewport",
+      "Integrated digital targeting display mounted on left receiver rail showing vessel-proximity indicators when paired with transducer wand",
+      "Recessed power cell cartridge on the right side — 22-discharge ultrasonic cell clearly visible through burnished window",
+      "Absence of charging handle or traditional ammunition magazine — replaced by smooth receiver profile",
+      "Included transducer wand dock integrated into the handguard — a small magnetic mounting point that houses the vessel-locating accessory",
+      "Whisper-quiet mechanical safety that produces no audible click",
+      "Minimal venting along the receiver — weapon produces almost no heat signature"
+    ],
+    "manufacturer_markings": "Wei Financial Products corporate insignia (stylized balance scale) discretely laser-etched into the titanium receiver just forward of the trigger guard in 4 mm characters. Serial plate embedded flush in the lower receiver with only model designation 'VREC-4' visible; full serial hidden beneath removable inspection port. No visible marketing nomenclature — the 'Clotter' designation exists only in underground networks.",
+    "condition_typical": "Maintained in pristine condition by operators — this is a tool of calculated precision, not field combat. Owners maintain meticulous cleaning protocols to prevent mineral deposits in the ultrasonic waveguide. Most examples show zero cosmetic wear; any visible degradation is deliberate, to maintain the illusion of a civilian hunting rifle. Some operators intentionally age the finish or add scratch patterns to pass security cameras as a 'used' commercial piece."
+  },
+  "image_prompt": "Professional product photograph of a VREC-4 'Clotter' carbine positioned on a matte black reflective surface, angled 45 degrees to show the distinctive multi-chambered ultrasonic muzzle pod in sharp detail. The weapon is cradled by a gloved hand (black leather, chrome-reinforced knuckles suggesting augmentation) at the grip. Dramatic side-lighting from the left creates rim-lighting on the titanium receiver and casts deep shadows through the emitter pod, revealing the faint blue sapphire interior geometry. The integrated targeting display on the left rail glows with soft amber vessel-proximity indicators. In soft focus background: a medical laboratory aesthetic — stainless steel work surface, diagnostic displays. The transducer wand (compact, pen-sized, with micro-LED indicator) lies separately beside the carbine, its magnetic dock point faintly visible on the handguard. Color grading: cool gunmetal and clinical titanium tones, with cyberpunk amber and iridescent sapphire accents. Cinematic, cold, clinical precision. Professional assassination equipment masquerading as sporting rifle. --ar 3:2 --v 6"
 }

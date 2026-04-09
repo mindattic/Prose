@@ -38,5 +38,25 @@
   "related_entities": [
     "Arcturus Exo-Runner Frame",
     "MERIDIAN"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Practical, utilitarian silhouette that sits at the knee with a relaxed but structured leg. The shorts read as blue-collar and functional, with visible pocket architecture that dominates the thigh. On-body, they convey quick-access efficiency and climate-adaptive practicality.",
+    "fit": "Relaxed through hip and thigh with a straight, knee-length cut. Designed for layering with compression sleeves or chrome augmentation below the knee. Waistband is articulated for bending and crouching.",
+    "primary_material": "Stretch-twill composite weave (70% recycled polyester, 25% cotton, 5% elastane blend). Treated for moisture-wicking and abrasion resistance.",
+    "texture": "Smooth yet slightly textured surface with subtle ribbing. Durable hand-feel, not soft. Velcro patches are industrial-grade and show wear marks from repeated closure.",
+    "color_scheme": "Faded olive, weathered khaki, or subdued charcoal black. Stitching in contrasting tan or gray. Velcro closures typically jet-black or dark earth tones.",
+    "closures": "Four cargo pockets with velcro-close flaps; main waistband closure is magnetic snap with backup friction-fit belt loops. Reinforced anchor points for tool attachment.",
+    "distinctive_features": [
+      "Oversized cargo pockets with diagonal stitching and excess fabric for load-bearing",
+      "Reinforced back panel with triple-stitched seams to prevent tearing under pressure",
+      "Integrated anchor loops (D-rings) on side seams for tool tethering",
+      "Cuff hem designed to accommodate compression sleeves without bunching",
+      "Internal mesh thigh lining for climate control zones",
+      "Faded, sun-worn patina on most units — color bleeding at pocket edges"
+    ],
+    "tier_indicator": "Tier 3-4 functional workwear. Affordable, durable, and purpose-built for wage-labor environments.",
+    "cultural_context": "Warehouse workers, logistics personnel, environmental technicians, and augmented laborers in the GLMZ interior. Signals practical skill and climate-zone adaptation over fashion. Often paired with visible chrome below the knee.",
+    "condition_typical": "Worn-in and broken-in. Velcro shows pilling. Small discolorations from sweat and industrial dust. Cuffs may be frayed. Stitching intact but visible stress marks at stress points."
+  },
+  "image_prompt": "A weathered warehouse worker in Strakka Flexline cargo shorts, knee-length in faded olive, standing in dim warehouse lighting with visible chrome augmentation visible below one knee paired with compression sleeve. Shots framed from waist to mid-shin. Velcro pocket flaps visible and slightly worn. Urban industrial backdrop with heat-shimmer and neon warehouse signage. Moody blue-green ambient lighting. Product-focused but environment-narrative. --ar 2:3 --v 6"
 }

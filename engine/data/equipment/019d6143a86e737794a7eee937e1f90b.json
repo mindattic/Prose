@@ -55,5 +55,26 @@
     "KESSLER KINETICS VectorStrike Digi Sprint Mk4",
     "Ringo DV-4 'Courier'",
     "Tessera Nexus Town Car"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A skeletal, improvised electric vehicle with exposed frame geometry and visible wiring. The Coyote reads as a purposeful hack—motorcycle DNA evident in the lean chassis, but wildly customized. Handlebars or steering column protrude at odd angles. Battery packs sit exposed or poorly shrouded. No aesthetic unity; function-first design language.",
+    "dimensions": "2.1–2.8m long, 0.9–1.2m wide, 0.8–1.1m tall depending on configuration (trike vs. quad). Compact enough to thread alleys and service corridors.",
+    "weight_description": "50–150 kg total; light enough for solo transport and evasion, but requires deliberate handling. Handheld carry is impractical; ridden or towed.",
+    "primary_material": "Salvaged steel and aluminum motorcycle frames, welded and bolted together. Some plastic fairings (often mismatched or absent). Exposed tubing predominates.",
+    "finish": "Raw welds, patina from multiple lifetimes of use, inconsistent paint jobs or bare metal. Heavy tool marks and modification scars. No factory smoothness.",
+    "color_scheme": "Highly variable—primer grey, faded corporate liveries from source machines, flat blacks, rust oranges. Accents of high-visibility tape, electrical harness colors (red/black), and owner customization (graffiti, LED accent strips in cyans and magentas).",
+    "interface_elements": "Minimal—basic hand throttle, mechanical brakes (sometimes hydraulic), exposed killswitch. Aftermarket digital dash or jury-rigged phone mount showing charge level. Headlight/taillight often LED salvage. No touchscreen; purely mechanical or basic analog instruments.",
+    "distinctive_features": [
+      "Visible battery pack modules (cylindrical or rectangular, often duct-taped or clamped to frame)",
+      "Trailing wiring harnesses—bright colored, poorly sheathed",
+      "Asymmetrical design—one side pristine salvage, other side modified for fit",
+      "Custom welded reinforcements and struts at stress points",
+      "Owner marks: spray-painted callsigns, district gang symbols, or cryptic maintenance notes",
+      "Mismatched wheels and tires",
+      "Exposed motor mount with visible cooling fins"
+    ],
+    "manufacturer_markings": "None official. Stamped 'Street Custom' or handwritten builder tag on frame (sometimes hidden). Source components retain faded corp logos (Yamaha, industrial battery house insignia, drone maker marks) beneath modifications.",
+    "condition_typical": "Road-worn and actively maintained. Visible dirt from recent rides, fresh welds still dark, tape repairs alongside precision machine work. Smells of ozone, hot metal, and recent electrical work. Evidence of constant tweaking—tools nearby, spare parts strapped to frame."
+  },
+  "image_prompt": "Close-up of a Street Custom 'Coyote' three-wheeled electric bike in a dim, rain-slicked warehouse garage. Exposed steel frame, visible battery modules with trailing wires (cyan and red), welded reinforcements catching harsh neon pink and blue workshop lights. One side shows pristine salvage motorcycle components; the other, jury-rigged modifications. Mismatched wheels, a hand-painted district symbol on the fuel tank location, stray tools scattered on the concrete floor. Cyberpunk gritty, dramatic overhead lighting casting sharp shadows on raw welds and patina. Rain drips on the frame. --ar 3:2 --v 6"
 }

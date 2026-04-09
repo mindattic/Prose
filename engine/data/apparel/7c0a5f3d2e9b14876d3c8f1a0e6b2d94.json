@@ -60,5 +60,27 @@
     "Nodar Kuznetsov-Adu",
     "Synaptrel",
     "Tiare Nishi-Anim"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately unremarkable modular combat outfit. The matte grey-brown jacket reads as utilitarian and forgettable at first glance, but its four independently swappable snap-panels hint at tactical flexibility. The silhouette is athletic and compact—hip-length blouson that doesn't advertise its function. Paired with near-black slate trousers bearing a maroon pinstripe barely visible at distance. The overall impression is 'someone who needs to move without being remembered.'",
+    "fit": "Slim but not tight—built for unrestricted movement and layering of gear beneath. The jacket sits close to the torso but with enough room for concealed hardware and spinal rig accommodation. Trousers are straight-legged with a low, secure waistband. Footwear is minimal and ground-responsive, designed for sprint work.",
+    "primary_material": "Jacket outer: proprietary synth-wool blend in matte finish, designed to dampen visual and thermal signature. Interior panels: ballistic-weave composite. Trousers: treated nanofibre cotton blend. Footwear: graphite synthetic mesh bonded to hard composite plate. Balaclava: microfibre thermal-neutral microknit.",
+    "texture": "The jacket exterior has a flat, almost chalky matte finish—no sheen to catch light. Snap-off panels have subtle raised edges for tactile removal in darkness. Interior reveals tightly woven ballistic texture, almost felt-like. Trousers fabric is smooth but gripping. Shoe sole is hard and unforgiving. Balaclava is soft, frictionless microfibre.",
+    "color_scheme": "Base jacket and balaclava: weathered grey-brown (ferrocrete grey). Trousers: near-black slate with maroon pinstripe thin enough to disappear at 10 meters. Footwear: dark graphite. The interchangeable snap panels suggest potential for color-blocking—neutral palette dominates, with tactical accent possibilities.",
+    "closures": "Jacket: silent magnetic tabs along spinal channel for rear venting; snap-bar expansion frames for dorsal geneware; four heavy-duty snaps securing each exterior panel. Trousers: friction-fit waistband with discrete magnetic closure, dual thigh zips with scanner-lining. Footwear: single diagonal friction strap, no laces. Balaclava: no closure—pull-on.",
+    "distinctive_features": [
+      "Four independently swappable snap-off exterior panels (chest x2, shoulder x2) enabling sub-90-second silhouette/color changes",
+      "Double-wall front concealing reconfigurable rigid holster frame (2 compact / 1 full-frame / tool loop layouts)",
+      "Full spinal channel along back yoke with silent magnetic tab closure for external rig accommodation",
+      "Gene-compatible rear venting panels with snap-bar expansion for non-functional wings or dorsal geneware",
+      "Thigh zip pockets with internal scanner-lining for passive metal detection masking",
+      "Integrated grey-brown microfibre balaclava stored in inside collar pocket",
+      "Lace-free footwear with minimal profile and hard composite plate for silent movement",
+      "Deliberately unremarkable factory finish—designed to blend with urban infrastructure"
+    ],
+    "tier_indicator": "Tier 2–3 hybrid. The modular design and internal hardware frame signal corporate or specialist training. The matte finish and color palette allow Tier 3 entry into corporate lobbies while retaining street-viable anonymity. Price point and manufacturing origin (unlicensed Shelf-adjacent workshop) push it toward accessible mid-tier rather than corpo luxury.",
+    "cultural_context": "Worn by corporate security contractors, street-tier fixers, black-ops runners, and anyone who needs to change appearance on a dime without drawing attention. The engineering screams 'military-adjacent'—but the unlicensed Greymarrow origin keeps it deniable. This is the outfit of someone who moves through the GLMZ with purpose and wants no witnesses.",
+    "condition_typical": "New-condition examples are pristine, with crisp snap-panel engagement and unmarked fabric. Field-worn sets show subtle creasing along movement lines, minor scuffs on the shoe composite, and slight fading of the maroon pinstripe. The interior holster frame may show wear marks from hardware. Storage pouches for spare panels often develop small tears. Balaclava may be lint-dusted from collar pocket residence."
+  },
+  "image_prompt": "Fashion photo of a sleek, unremarkable grey-brown modular night ops jacket on a lean cyberpunk model with visible minimal augmentation (maybe a subtle neck port or biolume fingertips). Model wears the jacket with near-black slate trousers and graphite runners. Four detachable snap panels are visible on chest and shoulders, each panel slightly offset to show the interlock system. The model's hand reaches toward a thigh pocket, scanner-lined interior faintly visible. Dark industrial warehouse backdrop—ferrocrete walls, blue neon edge lighting casting cool shadows. Balaclava is folded visibly in the inside collar pocket. The overall mood is tense, professional, utterly forgettable. Shot in moody side-lighting that emphasizes the matte texture and the deliberate lack of visual signature. Ultra-sharp detail on hardware snaps and rig mounting points. --ar 2:3 --v 6"
 }

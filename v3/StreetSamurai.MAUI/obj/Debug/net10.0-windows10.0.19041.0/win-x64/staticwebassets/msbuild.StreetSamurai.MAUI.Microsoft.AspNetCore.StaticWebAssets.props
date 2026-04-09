@@ -32,12 +32,12 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>jik9uyjtog</Fingerprint>
-      <Integrity>G+aE9ow94+V9Ic9e11CQTfr63Y5YJ1vUxTHlZo5jjc4=</Integrity>
+      <Fingerprint>qckn91zrsy</Fingerprint>
+      <Integrity>NvzpGf0u23K0AvWPIc8YnXuGBykvt7HwtejtpQ3gdPQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <FileLength>2097</FileLength>
-      <LastWriteTime>Tue, 07 Apr 2026 17:19:33 GMT</LastWriteTime>
+      <FileLength>2148</FileLength>
+      <LastWriteTime>Thu, 09 Apr 2026 15:32:12 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\graph-interop.js'))">
@@ -119,6 +119,26 @@
       <FileLength>22001</FileLength>
       <LastWriteTime>Thu, 09 Apr 2026 04:28:49 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\meridian-map.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\treemap-interop.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>StreetSamurai.MAUI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>/</BasePath>
+      <RelativePath>js/treemap-interop.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>z4guopeisq</Fingerprint>
+      <Integrity>zdaxlNH4fOK8PIGtrYwvtfWW4B8H+IC4sunOnQ87V00=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>4895</FileLength>
+      <LastWriteTime>Thu, 09 Apr 2026 06:55:47 GMT</LastWriteTime>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\treemap-interop.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))">
       <SourceType>Package</SourceType>

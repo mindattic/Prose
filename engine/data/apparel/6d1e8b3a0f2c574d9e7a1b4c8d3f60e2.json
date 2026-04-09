@@ -52,5 +52,25 @@
     "The Filament",
     "The Pure Hand",
     "VitaCore LinguaSync Real-Time Translation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Elegant opera-length gloves extending past the elbow, creating a refined silhouette that reads haute couture. The matte surface catches light subtly until activated, then transitions to a liquid shimmer. On wearers with BCI integration, faint auroral pulses of gold or rose travel across the fabric in response to emotional states.",
+    "fit": "Precision tailored to the hand and forearm with a second-skin compression fit. The chrome-cover variant accommodates prosthetic geometry seamlessly beneath, creating the visual illusion of flawless organic hands.",
+    "primary_material": "Bioluminescent silk-analog base woven with micro-filament conductive threads. Chrome-cover variant uses soft chromatic poly-foam inner sleeve bonded to the exterior.",
+    "texture": "Exterior is matte silk-like to the touch at rest; seams are hand-finished and completely invisible. Under movement or gallery lighting, the surface develops a liquid, oil-slick sheen. Micro-threads create an imperceptible texture variation.",
+    "color_scheme": "Available in obsidian (deep black with rose-gold pulse), bone (cream with warm gold glow), and deep lacquer crimson (dark wine with rose undertones). Bioluminescent elements create dynamic accent colors based on wearer mood-state.",
+    "closures": "Single hidden magnetic clasp at wrist, minimalist and invisible when fastened. No visible hardware.",
+    "distinctive_features": [
+      "BCI mood-state reactive bioluminescence with gold and rose color options",
+      "Micro-filament conductive threading throughout",
+      "Hand-finished invisible seams",
+      "Matte-to-liquid shimmer transition under specific lighting conditions",
+      "Chrome-cover inner sleeve option for seamless augmentation concealment",
+      "Opera length extending past elbow"
+    ],
+    "tier_indicator": "Tier 1-2 luxury. Solenne Couture is a premium corpo fashion house; pricing reflects exclusive bioluminescent technology and hand-finishing.",
+    "cultural_context": "Worn by corpo elites, gallery patrons, diplomatic figures, and augmented individuals seeking to project wealth while masking prosthetic modifications. The mood-state reactivity signals BCI integration without being ostentatious.",
+    "condition_typical": "Always pristine and flawless. The hand-finished seams and invisible closures ensure these gloves appear museum-quality even after wear. No patina or distressing is acceptable at this tier."
+  },
+  "image_prompt": "Closeup fashion photograph of opera-length bioluminescent gloves on an elegant cyberpunk model's outstretched arm, hand posed gracefully. Obsidian variant with subtle rose-gold luminescence pulsing faintly across the silk-analog surface. Matte finish at rest, shimmering liquid sheen catching moody gallery lighting. Invisible seams visible only as subtle line work. Dark minimalist backdrop, dramatic spotlight from above. High-end boutique aesthetic. Shallow depth of field. --ar 2:3 --v 6"
 }

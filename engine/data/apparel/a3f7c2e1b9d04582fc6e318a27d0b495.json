@@ -52,5 +52,28 @@
     "TESSERA TN-1 'Cradle'",
     "The Underlayer Collective",
     "The Undertow"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A imposing, militaristic full-body tactical ensemble that reads as corporate security made flesh. The silhouette is broad-shouldered and fortress-like, with hard geometric angles and a zero-compromise stance. Dominated by matte black surfaces interrupted by exposed chrome conduit channels running down the arms like circuitry made visible. Conveys authority, readiness, and the kind of expense account that doesn't blink at ballistic certification.",
+    "fit": "Combat-tailored with deliberate volume at shoulders and chest for armor integration; tapered at waist and legs for mobility. Compression elements in the underlayer, articulated at joints for full range of motion during extended field operations. The overall effect is purposefully muscular without being baggy—designed for someone who needs to move fast under load.",
+    "primary_material": "Ceramic-weave ballistic composite (torso and helmet), TacWeave (charcoal primary layer), pulse-dampening synthetic under-weave (proprietary Rheon blend), treated steel reinforcements at knees and feet",
+    "texture": "Matte finish on armor panels with a slight pebbled grip texture; exposed chrome channels have a polished industrial sheen; the underlayer shows subtle ribbing where compression weaving is visible at cuffs and collar; ceramic has a faint woven pattern visible under close inspection",
+    "color_scheme": "Matte black as dominant color across all panels; charcoal TacWeave mid-layer visible at joints and edges; high-contrast polished chrome running channels and accents; steel-grey toe caps and greave edges; subtle thermal-reflective edging in dark grey at collar and cuffs",
+    "closures": "Magnetic quick-release buckles on spinal rig (4x heavy-duty), friction-fit polymer bands at cuffs and ankles, mag-lace boots with redundant snap-locks, flip visor on helmet secured with friction hinges, chest badge plate held by electromagnetic mount",
+    "distinctive_features": [
+      "Exposed chrome arm channels designed for neural interface cable routing",
+      "Full spinal rig cradle with quick-release buckles for rapid equipment swap",
+      "Swappable badge plate on chest accepting corporate insignia (Rheon default pre-loaded)",
+      "Articulated ceramic-plate knee greaves with tactical flex points",
+      "Integrated heating elements visible as faint thermal conduit lines in torso shell",
+      "Micro-filter respirator collar (deployable)",
+      "Thigh-mounted multi-tool holster with retention cord",
+      "Flip visor with neural port passthrough on helmet",
+      "Steel-toed mag-lace boots with redundant grip treading"
+    ],
+    "tier_indicator": "Tier 1 corporate luxury—this is top-end corpo security. The price point sits at 45,000+ Φ, marking it as equipment for dedicated corporate forces, not street operators.",
+    "cultural_context": "CorpSec identity. Wearing this means you work enforcement for Rheon Systems or a tier-1 corpo contractor. It signals: trained, augment-compatible, authorized to use force in contested zones, and accountable to a chain of command. Not civilian, not black-market, not street. Professional military-grade.",
+    "condition_typical": "Pristine on issue; after field rotation shows minor scuff marks on ceramic plates, dust accumulation in chrome channels, micro-scratches on visor. Well-maintained kits show no rust or corrosion; neglected ones show oxidation on steel elements and clouding on the visor from micro-impact pitting."
+  },
+  "image_prompt": "Tactical full-body CorpSec armor kit displayed on a dark matte mannequin or worn by a cyberpunk model with visible neural port augmentations. Matte black ceramic plating with exposed polished chrome arm channels catching moody blue-green atmospheric lighting. Steel-toed mag-lace boots grounded on rain-slicked concrete. Urban industrial backdrop—warehouse district, GLMZ sector signage blurred in the background. Helmet flip-visor slightly raised. High-contrast lighting emphasizing the geometry of the armor plates and the industrial sheen of the spinal rig cradle. --ar 2:3 --v 6"
 }

@@ -82,5 +82,24 @@
     "Vantablack Media Parasocial Carrier Mask",
     "WELLSPRING",
     "Zheng-dao Bioelectric"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A thin, translucent biosynthetic patch resembling a medical transdermal delivery system, but with visible internal structure — a lattice of iridescent protein filaments suspended in a clear hydrogel matrix. The surface appears slightly wet or viscous, with a faint bioluminescent glow at the edges. Organic and unsettling in the way it catches light.",
+    "dimensions": "40mm x 25mm rectangular patch; thickness approximately 2-3mm",
+    "weight_description": "Negligible (8g); pocketable as part of a larger kit, but worn directly on skin",
+    "primary_material": "Bioengineered protein matrix in hydrogel substrate with thin polyamide backing layer",
+    "finish": "Translucent, slightly tacky adhesive surface; interior shows pearlescent shimmer from protein receptor lattice. Faint moisture sheen.",
+    "color_scheme": "Clear/colorless hydrogel with iridescent protein filaments that shift between cyan and violet under light; subtle bioluminescent amber glow at perimeter. Backing layer is matte charcoal with Zheng-Dao branding.",
+    "interface_elements": "No user-facing buttons or screens on patch itself — all interaction via haptic feedback (vibration patterns encoded into hydrogel layer) and companion Zheng-Dao CDP Reader device (separate palm-sized unit with small OLED display, encrypted wireless link indicator)",
+    "distinctive_features": [
+      "Visible protein receptor filament lattice creating internal geometric shimmer",
+      "Faint bioluminescent edge glow indicating active enzymatic state",
+      "Ultra-thin form factor that conforms to skin contours",
+      "Slight moisture presence suggesting living biological substrate",
+      "Variant color-coding on backing: ND (cyan stripe), EP (red stripe), TIC (yellow stripe), C-variant (unmarked/opaque black)"
+    ],
+    "manufacturer_markings": "Zheng-Dao Bioelectric logo (stylized DNA double helix) on backing layer; batch code, expiration timestamp (72-hour countdown from application), and regulatory certification stamps (GLMZ Port Authority approval, corporate medical device certification)",
+    "condition_typical": "Worn adhered to inner wrist or neck; slight perspiration visible around perimeter; companion reader clipped to belt or held in hand during active detection sweeps. After 72 hours, patch appears slightly desiccated at edges before disposal."
+  },
+  "image_prompt": "Close-up product photography of a biotech chemoreceptive dermal patch on a dark laboratory workbench, mounted on an artificial synthetic skin sample under dramatic side lighting. The translucent hydrogel substrate glows faintly with bioluminescent amber edges, internal protein filaments visible as an iridescent lattice catching blue-violet light. Companion Zheng-Dao CDP Reader sits nearby with small OLED screen active. Cyberpunk laboratory aesthetic: cold neon accent lighting, shallow depth of field, metallic surface reflections. Shot from 45-degree angle to emphasize translucency and internal structure. Sterile, unsettling, high-tech bioware feel. --ar 3:2 --v 6"
 }

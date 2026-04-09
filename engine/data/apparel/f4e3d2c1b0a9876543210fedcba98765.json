@@ -48,5 +48,26 @@
     "Nullform",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Sulfur Crown Agriculture"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting full-coverage balaclava that reads as minimalist tactical wear. The matte black creates a void-like silhouette, broken only by faint luminescent grid lines visible under certain light angles. The face panel has a subtle sheen—not quite rigid, not quite fabric—suggesting embedded tech without announcing it. Wearers appear shadowlike, intentionally faceless.",
+    "fit": "Second-skin compression fit. Stretches to conform to head and neck geometry without bunching. The semi-rigid face panel sits flush against cheekbones and jaw, allowing full articulation of mouth and expression underneath while maintaining a blank external appearance.",
+    "primary_material": "Matte black stretch-mesh composite blended with AR-conductive micro-thread weave. Face panel is breathable semi-rigid polymeric layer with integrated microdisplay substrate.",
+    "texture": "Smooth, almost frictionless mesh exterior with subtle grid texture from embedded emitter threads. Face panel feels slightly textured—not quite rubbery, closer to treated synthetic leather. Internally, soft knit backing prevents chafing.",
+    "color_scheme": "Flat matte black throughout. AR emitter grid only visible under UV or in extreme backlighting—otherwise invisible. No accent colors; absolute chromatic minimalism.",
+    "closures": "Silent magnetic port-access flaps on crown panel for BCI hardware insertion. Main balaclava has no visible closures—friction-fit and elastic tension maintain position. Fully reversible pull-on design.",
+    "distinctive_features": [
+      "Embedded AR micro-emitter grid running across entire surface",
+      "Semi-rigid breathable face panel doubling as minimal AR display",
+      "Crown reinforcement panel with dual magnetic-sealed port flaps for augmentation access",
+      "Reinforced jaw and chin seams rated for high-impact physical activity",
+      "Programmable blank-face HUD projection mode for crowd anonymity",
+      "Zero external branding or identification markers",
+      "Biometric readout capability integrated into face panel display"
+    ],
+    "tier_indicator": "Tier 2-3 crossover. Premium enough for corpo aug-users and technical operatives; accessible enough for street-level BCI enthusiasts and sub-tier identity workers.",
+    "cultural_context": "Worn by netrunners, black-ops contractors, identity fugitives, and anyone requiring coordinated anonymity with augmentation access. The tech-forward design signals competence and investment in hardware. No faction affiliation—deliberately neutral.",
+    "condition_typical": "Maintained pristine when new; quickly develops micro-scuffs and creasing around port flaps from repeated access. Long-term wear shows minor UV-bleaching on grid pattern from constant emitter activation. Breathable face panel may show faint wear rings where jaw contact is heaviest."
+  },
+  "image_prompt": "A figure in matte black Nullform AR balaclava photographed against a darkened GLMZ skyline backdrop, neon rain reflections streaking across wet pavement. Close-up focus on the face panel showing the faintest grid of AR threads barely luminescent under moody blue-purple light. BCI port flaps visible at crown, slightly open. The figure's silhouette is void-like, faceless, with only the faint glow of the embedded HUD projection casting a ghost-pale outline. High-contrast cyberpunk mood, cinematic side-lighting revealing the semi-rigid composite texture of the face panel. Shot on dark urban mannequin or augmented model. --ar 2:3 --v 6"
 }

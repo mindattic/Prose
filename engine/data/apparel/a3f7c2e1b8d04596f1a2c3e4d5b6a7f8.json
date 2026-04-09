@@ -39,5 +39,26 @@
   "parent_corponation": "",
   "related_entities": [
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A boxy, broad-shouldered silhouette that reads authoritative and grounded. The jacket has a workwear attitude—intentionally oversized through the chest and arms, with a dropped shoulder seam that sits naturally on varied frame sizes. When worn, it commands presence without trying.",
+    "fit": "Generous and relaxed through the torso, with room for layering underneath. The sleeves are straight and slightly long, ending just below the wrist bone. The length hits at mid-hip. Built for movement, not restriction.",
+    "primary_material": "Heavy-weight raw indigo-black denim, selvedge edge construction. Stiff and rigid when new; develops unique creasing and fading patterns with wear. The fabric has visible nubs and irregularities from traditional loom weaving.",
+    "texture": "Crisp and slightly rough to the touch when new, with a subtle nap. Stitching creates raised seams that soften over time. Elbows feature a tighter weave for durability. The collar is raw-edged and unstructured, prone to curling naturally.",
+    "color_scheme": "Deep indigo-black base with burnt orange contrast stitching on all seams, pocket edges, and button reinforcement. The indigo fades to lighter blue-gray at stress points with age, creating an organic wear map.",
+    "closures": "Four exterior pockets with individual button closures. Dual-button chest configuration (stacked vertically, spaced 3 inches apart). Metal shank buttons in brushed steel, designed for gloved hands.",
+    "distinctive_features": [
+      "Reinforced elbows with double-layer denim patch",
+      "Burnt orange contrast stitching throughout",
+      "Oversized, unlined collar that turns up easily",
+      "Visible selvage edge on pocket openings",
+      "Double-button chest unique to Carrow's signature",
+      "No logos, no branding patches—bare tag sewn inside",
+      "Designed to develop unique creasing and fade patterns"
+    ],
+    "tier_indicator": "Tier 2–3 boundary. Carrow is accessible working-class wear with quality that justifies the price. Appeals to people who see clothing as investment, not disposal.",
+    "cultural_context": "Worn by dock workers, fabricators, students, and anyone in the GLMZ who respects durability and simplicity. No augmentation necessary—this jacket works alongside chrome and skin equally. It signals: I work, I plan to be here a while, I don't follow trends.",
+    "condition_typical": "Pristine and stiff when new (first 3–6 months). Gradually broken-in, with creases forming at elbows and shoulders. After a year, fading appears at pocket corners, cuffs, and seams. Well-worn examples show patina; some wearers patch rips with visible repair stitching rather than retire the jacket."
+  },
+  "image_prompt": "A Carrow Dockside Denim Jacket displayed on a broad-shouldered dark mannequin or worn by a cyberpunk model with visible augmentation (chrome forearm, neural port neck scars). Heavy indigo-black raw denim with burnt orange contrast stitching clearly visible on seams and pockets. Oversized collar turned up slightly. Shot in a moody warehouse or dockside industrial setting with cool blue-green neon accent lighting. Shallow depth of field focusing on the jacket's texture and worn creasing. Dark background suggesting GLMZ urban sprawl. Photorealistic, fashion editorial style, high contrast. --ar 2:3 --v 6"
 }

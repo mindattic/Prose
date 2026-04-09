@@ -39,5 +39,25 @@
     "Pyroelectric Sebum Volatilization Projector",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A crisp, austere single-button blazer that reads formal despite its mass-produced origins. Dark navy creates authority; the silhouette is slightly boxy and institutional. From a distance it passes for office wear. Up close, the construction shortcuts become apparent—fused rather than sculpted, with a utilitarian precision that feels bureaucratic rather than tailored.",
+    "fit": "Relaxed through the shoulders with a slightly wide set; the torso is roomier than modern tailored cuts. Designed to accommodate varied body types in office environments. Sleeves hit mid-wrist. The cut accommodates augmentations poorly without modification.",
+    "primary_material": "Dark navy synth-polyester blend—durable, low-maintenance, with a subtle sheen that catches fluorescent light. Cheap interfacing fused rather than stitched into the front panels.",
+    "texture": "Smooth, almost plastic surface with minimal drape. The beige acetate lining is slick and generates static cling. Seams are tight and uniform, machine-finished. Fused panels lack natural give.",
+    "color_scheme": "Deep navy blue with beige acetate lining visible at cuffs and collar roll. No pattern or accent colors—pure utilitarian monochrome.",
+    "closures": "Single button closure—dark navy resin, slightly recessed. No secondary fasteners. Buttonhole is machine-stitched and tight.",
+    "distinctive_features": [
+      "Single internal patch pocket on left side",
+      "Shoulder seams sit noticeably wide, suggesting one-size-fits-most manufacturing",
+      "Fused interfacing visible as subtle ridging at lapels when examined closely",
+      "Many worn examples feature crude cut port-access slits in back panel, hemmed with iron-on tape or hand-stitching",
+      "Static-prone acetate lining catches on skin",
+      "Buttonhole tension often causes slight puckering over time"
+    ],
+    "tier_indicator": "Tier 1-2 accessible; functionally Tier 3. The gray-market resale network keeps it in constant circulation—Φ22 places it in the 'affordable formal' category where aspiration meets budget reality.",
+    "cultural_context": "Called 'the hearing jacket' or 'the interview jacket' on the Shelf—shorthand for 'doing your best with what you have.' Ubiquitous at job fairs, mediation hearings, community events, and family occasions where formality is required but budget is tight. Tier 1 corpo wearers regard it with polite distance. Tier 3 workers recognize themselves in it.",
+    "condition_typical": "New examples are pristine but cheap-feeling. Worn examples show softened sheen at collar, cuffs, and button area from handling. Static cling leaves acetate lining slightly creased. Many feature obvious back-panel alterations for augment compatibility, reducing perceived value further."
+  },
+  "image_prompt": "Ashvale navy synth-polyester blazer on a mixed-heritage cyberpunk model, posed in harsh fluorescent overhead lighting against a gray concrete wall. Single button fastened. Slight shimmer of the cheap acetate lining visible at cuff and collar. One worn example shows crude iron-on tape hemming at a visible port-access slit in the back panel. Moody GLMZ bureaucratic aesthetic—corporate mediocrity rendered as formal wear. Dark background, cool color grading. --ar 2:3 --v 6"
 }

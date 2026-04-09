@@ -45,5 +45,25 @@
     "Slagworks Industrial",
     "TESSERA PG-2 'Signature'",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist low-profile sneaker with an almost ethereal quality. The upper catches light subtly, shifting between soft white and pale silver depending on angle and ambient conditions. Clean lines, no aggressive branding—reads as understated luxury rather than technical sportswear. Sits comfortably between fashion sneaker and adaptive tech piece.",
+    "fit": "Precision athletic fit—snug around the heel and midfoot with a natural toe box. Designed for all-day urban wear without feeling constrictive. Responsive cushioning in the midsole suggests both comfort and durability.",
+    "primary_material": "Woven aerogel composite upper with thermally adaptive properties; responsive polymer midsole; sensor-embedded thermoplastic outsole",
+    "texture": "Upper has a fine, almost imperceptible weave—smooth to touch but with subtle depth. Matte finish with occasional light-reactive shimmer. Outsole shows embedded sensor nodes (barely visible, brushed metal accents). Overall: refined, not rough.",
+    "color_scheme": "Primary: soft white to pale silver (shifts with light). Midsole: cool gray with barely-visible silver accent striping. Outsole: charcoal with micro-etched sensor grid patterns.",
+    "closures": "Precision friction-fit lacing system with hidden magnetic anchors at the heel tab—laces stay tied but release magnetically for quick on/off",
+    "distinctive_features": [
+      "Thermally responsive aerogel weave that shifts white-to-silver in changing light",
+      "Sensor nodes embedded in outsole (temperature, humidity, UV detection)",
+      "Micro-etched thermal regulation panel visible on inner heel",
+      "Magnetic quick-release lacing system",
+      "Barely-visible Lumen logo embossed (not printed) on tongue",
+      "Moisture-shedding coating on upper—water beads rather than absorbs"
+    ],
+    "tier_indicator": "Tier 3–4 professional. Expensive enough to signal disposable income, practical enough to justify the cost. No ostentatious branding—status through subtle tech and material quality.",
+    "cultural_context": "Worn by mobile professionals, climate-zone commuters, corporate field agents, and anyone who needs to move between environments (humid manufacturing plants to arctic server farms) without wardrobe changes. Signals competence, adaptability, and refusal to compromise on appearance.",
+    "condition_typical": "Pristine to well-maintained. Shows minimal wear; any scuffing is minor. The aerogel weave resists discoloration. Owners baby these because the tech justifies the investment."
+  },
+  "image_prompt": "Close-up fashion photography of the Lumen Adaptive Climate Sneaker on a dark mannequin foot, angled to show the subtle shift from soft white to pale silver in the aerogel upper. Moody studio lighting—cool blue and silver gels casting dramatic shadows across the weave texture. Visible sensor nodes glinting faintly. Urban cyberpunk backdrop: rain-slicked concrete, neon reflection in puddles. Crisp, clinical focus on the shoe; blurred industrial environment behind. Minimalist, high-end product photography aesthetic. --ar 2:3 --v 6"
 }

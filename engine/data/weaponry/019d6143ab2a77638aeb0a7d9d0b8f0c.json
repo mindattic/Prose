@@ -54,5 +54,39 @@
     "energy",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions EL-9 'Heron'",
+    "CHROMEWORKS Auris Focal Directional Hearing Suite",
+    "Coronal Discharge Projector CDP-9 'Sunburn'",
+    "GLMZ",
+    "Hearthstone Firearms Single-20 'Farmhand'",
+    "Helix Biosystems",
+    "Irontide Tidal Energy",
+    "Narrowcast",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA PG-2 'Signature'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular pistol with an oversized barrel assembly that tapers to a needle-fine emitter tip. The overall silhouette suggests surgical precision rather than ballistic brutality — more medical instrument than conventional firearm. The emitter head dominates the visual profile, appearing almost organic in its elongated taper.",
+    "dimensions": "28 cm overall length, 6.2 cm width at grip, 4.8 cm height. Emitter barrel extends 12 cm from the frame. Saline capacitor pack sits flush against the lower receiver at 8 cm length.",
+    "weight_description": "Surprisingly light and well-balanced — 2.7 kg distributes evenly across the grip and barrel assembly. Feels purposeful in hand without the heft of kinetic weapons, almost delicate despite its function.",
+    "primary_material": "Titanium-reinforced polymer frame with brushed surgical steel emitter assembly. Saline capacitor pack is carbon-composite housing with transparent viewing port showing electrolyte fluid level.",
+    "finish": "Matte gunmetal gray on the polymer frame with polished stainless steel on the emitter tip. The capacitor pack interior glows faintly with pale blue-white electrolyte, visible through the viewing port even at rest.",
+    "color_scheme": "Gunmetal gray primary, with stainless steel accents and pale bioluminescent blue highlights from the saline electrolyte within the capacitor pack. Emitter tip catches light with clinical silver shine.",
+    "grip_texture": "Rubberized polymer with subtle hexagonal micro-texturing for grip security. The texture is smooth and cold to the touch, clinical in feel.",
+    "distinctive_features": [
+      "Dual-mode emitter head with visible mode selector ring marked 'FOCAL' and 'FLOOD' in clean sans-serif lettering",
+      "Transparent capacitor viewing port on the lower receiver showing electrolyte fluid level and faint blue luminescence",
+      "Fine corona discharge points visible along the emitter barrel in high-magnification detail",
+      "Modular quick-disconnect emitter head allowing field swap between focal and flood configurations",
+      "Subtle engraved cooling vanes running along the barrel to manage thermal buildup from electrolytic discharge",
+      "Minimalist LED indicator cluster (charge status, mode, ready state) mounted on upper receiver in cold white light",
+      "Faint etched distance scale marked in meters along the barrel length"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo embossed in small serif type on the grip panel. Model designation 'GIFDL-2' stamped cleanly on the barrel just ahead of the emitter head. Medical research exemption certification stamp on capacitor housing in fine print, almost illegible at casual distance.",
+    "condition_typical": "Appears laboratory-maintained despite black market distribution. Finish is typically pristine to lightly scuffed, capacitor fluid clear with no sediment. Field-used examples show minor wear on the grip texturing and occasional fingerprint smudging on the polished emitter tip."
+  },
+  "image_prompt": "Product photography of the GIFDL-2 galvanic lance in three-quarter view resting on a brushed steel surgical table under dramatic side-lighting from upper left. Titanium-polymer frame catches light in cool gunmetal tones, the translucent capacitor pack glowing with ethereal pale blue electrolyte beneath. Emitter tip polished to mirror finish reflecting harsh surgical white light. Background is deep shadow with subtle grid pattern suggesting laboratory environment. Fine detail of the mode selector ring clearly visible. Fingers of a hand wearing black nitrile glove support the weapon at grip to show scale and handling ergonomics. Cyberpunk medical-tech aesthetic with cold, clinical lighting and razor-sharp focus on materials and craftsmanship. --ar 3:2 --v 6"
 }

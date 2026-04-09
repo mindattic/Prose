@@ -38,5 +38,34 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Charnel Propulsion",
+    "Eshe Pena-Baah",
+    "TESSERA PG-2 'Signature'",
+    "Vantablack-CNX",
+    "Vespid Dynamics"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, predatory rifle with a distinctly organic aesthetic — the body curves like a serpent's spine, tapering toward a slim muzzle. The overall silhouette is compact and purposeful, built for close-quarters precision work rather than distance engagement. Its pneumatic engineering gives it an almost medical appearance, clinical and sterile.",
+    "dimensions": "Total length 94 cm, barrel 38 cm, stock-to-trigger 32 cm. Compact enough for one-handed support, long enough for accurate targeting.",
+    "weight_description": "Balanced and light in hand — 2.8 kg feels almost insubstantial, the weight distributed evenly along the frame. Designed for extended surveillance work where fatigue is a liability.",
+    "primary_material": "Carbon-composite body with aerospace-grade polymer chassis. The barrel assembly is reinforced steel with internal hardening for precision dart acceleration.",
+    "finish": "Deep matte black with a subtle iridescent sheen visible only under direct light — a coating that minimizes glint. Wear reveals dark graphite beneath.",
+    "color_scheme": "Primary black (99% of visible surface), accent trim in brushed gunmetal gray along the rail system. The rotary toxin chamber visible through reinforced polymer housing shows color-coded dart tips: blue, yellow, red, green.",
+    "grip_texture": "Rubberized polymer grip with aggressive micro-texturing for gloved operation. The foregrip features shallow ridges designed for thumb-over-bore positioning.",
+    "distinctive_features": [
+      "Integrated 4x thermal optic mounted flush to the upper receiver — no glass glint, fully digital readout",
+      "Rotary 5-dart toxin chamber visible from the side, color-coded payloads backlit by faint LED indicator ring",
+      "Curved, serpentine rail system suggesting the weapon's 'Asp' designation",
+      "Ultra-slim suppressor integrated into the barrel assembly — appears as a subtle tapered extension",
+      "Pressure gauge (analog needle, barely 2cm wide) set into the stock junction",
+      "Manual selector lever with three positions: SAFE, SINGLE, RAPID (pneumatic pulse mode)",
+      "Faint engraving of a coiled viper striking downward along the receiver",
+      "Wear patterns on the grip and cheek rest consistent with daily tactical use"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS stamped in clean sans-serif lettering just above the trigger guard. Beneath that, small text: TDR-3 / ASP / PNEUMATIC TOXIN DELIVERY. A small holographic serial plate mounted on the left side of the receiver, iridescent blue when tilted.",
+    "condition_typical": "Field-worn but maintained. Micro-scratches in the polymer, faint carbon residue around the dart chamber, a thin layer of synthetic oil on the rail system. The thermal optic shows signs of dust exposure despite protective lens coating. This is a tool actively in use, not a showpiece."
+  },
+  "image_prompt": "Vespid Dynamics TDR-3 'Asp' toxin dart rifle photographed in three-quarter view, resting on a dark matte gunmetal surface. Dramatic side-lighting from the left reveals the matte black carbon-composite finish and the faintly illuminated rotary toxin chamber showing color-coded payloads (blue, yellow, red, green). The integrated thermal optic catches light with a subtle green glow. Cyberpunk aesthetic: minimalist composition, clinical precision, hint of biohazard danger. Gloved hand (chrome-knuckle tactical glove) gripping the weapon at the fore-grip, showing texture and context. Background is deep shadow with faint neon grid pattern suggesting corporate black ops. Sharp focus on the barrel suppressor and Chamber mechanism. Vespid Dynamics branding clearly visible on receiver. --ar 3:2 --v 6"
 }

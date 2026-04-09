@@ -60,5 +60,38 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "GLMZ",
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Meridian Core",
+    "O'Hare Sovereign",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Resonance Communion",
+    "Vantablack PA-1 'Pacifier'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, forward-heavy carbine with an organic, almost biological aesthetic. The barrel tapers to a distinctive conical emitter assembly that resembles a predator's open mouth. The overall silhouette is compact and purposeful, designed for close-quarters work. At first glance, it reads as high-tech medical equipment rather than a weapon.",
+    "dimensions": "490mm overall length, 65mm width at the receiver, 45mm height at the stock. Conical muzzle sheath extends 120mm from barrel terminus.",
+    "weight_description": "Surprisingly light in hand despite its density—2.9 kg distributed toward the front end. The forward weight creates a natural pointing bias, requiring active stabilization. Feels purposeful and precise rather than hefty.",
+    "primary_material": "Brushed titanium-aluminum composite frame with carbon-fiber reinforced polymer panels. The muzzle sheath is precision-cast bioelectric ceramic, capable of withstanding internal pressure cycling.",
+    "finish": "Satin gray titanium with matte carbon-black accents around the power cell housing and grip. The ceramic muzzle sheath has a subtle iridescent quality—faint blue and violet highlights under direct light, suggesting electromagnetic activity.",
+    "color_scheme": "Gunmetal gray primary with deep charcoal and electric blue secondary accents. The power cell housing glows faint cyan when active.",
+    "grip_texture": "Textured polymer with embedded conductive strips for biometric unlocking. Slightly tacky to prevent slipping under moisture. Ergonomically contoured for precise trigger control.",
+    "distinctive_features": [
+      "Conical Resonant Pressure Sheath at muzzle—flared opening resembles an organic horn or bell mouth",
+      "Integrated pressure gauge on the left receiver showing real-time discharge capacity as a glowing bar",
+      "Three-position power mode selector (rotary dial) marked with icons: water droplet (Sublethal), spiral (Cavity Induction), sunburst (Full Rupture)",
+      "Muzzle alignment indicator: a thin LED ring that pulses when target is in optimal cavitation zone",
+      "Zheng-Dao bioelectric cell window: transparent polymer housing showing the swirling cyan-tinged fluid inside",
+      "Fine tool marks and micro-scratches across the frame suggesting precision manufacturing and careful handling",
+      "Heat dissipation ports along the upper receiver in a subtle geometric pattern",
+      "No traditional sights—target acquisition relies on the alignment indicator and muscle memory"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo (stylized circuit-pattern dragon) stamped beneath the power cell window. Serial number etched in raised numerals along the lower receiver. Statutory warning in Mandarin and English: 'CAVITATION HAZARD—BIOLOGICAL TARGETS ONLY' laser-printed on the stock.",
+    "condition_typical": "Well-maintained on the open market; black market variants show wear—scratched ceramic, dimpled composite, and improvised grip tape. The most common modification is a crude second grip strap for two-handed operation. Frequent users show oxidation around the power cell contacts from repeated charging."
+  },
+  "image_prompt": "Product photograph of a cyberpunk cavitation carbine, sleek titanium-aluminum composite frame with matte charcoal finish, conical ceramic muzzle sheath with subtle iridescent blue-violet shimmer suggesting electromagnetic charge. Weapon positioned on its side across a wet obsidian surface, dramatic side-lighting from the left revealing micro-tool marks and heat vent geometry. Cyan glow emanates from the bioelectric cell window. A gloved hand—chrome-knuckled synthetics, tactical polymer—grasps the textured grip firmly. Background is dark industrial: blurred server banks and rain-streaked metal. Fine mist around the muzzle sheath hints at residual cavitation pressure. ZHENG-DAO branding visible beneath the power gauge. Sharp, clinical lighting emphasizing precision engineering and dangerous capability. Cyberpunk aesthetic, ultra-realistic materials. --ar 3:2 --v 6"
 }

@@ -36,5 +36,25 @@
     "TESSERA PG-2 'Signature'",
     "The Shelf",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately austere formal set that reads as rebuilt dignity. The shirt hangs with precise tailoring despite its composite origins, banded collar creating a stark frame. The trousers maintain sharp creasing through the leg until the left knee, where a carefully applied fabric patch interrupts the line — not disguised but presented as honest repair. Together they project a figure who understands formal presentation but operates outside corpo polish.",
+    "fit": "Tailored through the shoulders and torso with slight accommodation for subcutaneous augmentation; trousers cut with a clean, contemporary line through hip and thigh, slightly wider at wrist openings and cuffs to clear forearm data-ports without binding.",
+    "primary_material": "Shirt: processed grain-starch cotton blend with structural body, sourced from bolt-end corporate surplus (primarily Ouroboros-grade gray). Trousers: similar surplus weave with reinforced twill at stress points. Knee patch: visibly different textile bolt, intentionally near-match rather than seamless.",
+    "texture": "Shirt: crisp and pressed, almost rigid from grain-byproduct starch treatment, with a slight paper-like quality that softens marginally with wear. Trousers: smooth twill with subtle ribbing at seams; the patch carries a slightly rougher nap, creating tactile distinction.",
+    "color_scheme": "Ouroboros gray (cool, industrial, faintly purple-tinted) as base. Shirt and trousers unified in this tone. Knee patch: slightly warmer gray or muted taupe — a deliberate near-match that reads as 'from the same era, different bolt.'",
+    "closures": "Shirt: friction-fit horn buttons down center front, wider cut sleeves with reinforced barrel cuffs that accommodate augmentation. Trousers: magnetic snap waistband (common Shelf modification for quick dressing/undressing around augmentation sites), reinforced zip fly.",
+    "distinctive_features": [
+      "Banded collar with visible press creases — signals hand-tailoring",
+      "Left knee patch applied with visible topstitching — honest, not hidden",
+      "Shirt cuffs cut 2cm wider than standard to clear forearm data-ports",
+      "Waistband interior marked with Coldseam Collective's maker's cipher (faint hand-stitched Φ symbol)",
+      "Slight color variation between shirt and trousers suggesting separate fabric lots",
+      "Seams reinforced at stress points with visible thread color shift"
+    ],
+    "tier_indicator": "Tier 3 functional with Tier 1-2 presentation intent. Price point (Φ14) and sourcing signal working-class origin, but tailoring quality and conscious design reading suggest aspiration or cultural literacy.",
+    "cultural_context": "Coldseam wearer signals: I know my community, I value local trade, I understand that formal presentation doesn't require corporate branding or pristine surfaces. The visible patch is a statement of practical honesty — 'I own the repair, I don't hide it.' Mid-tier observers often read this as striking aesthetics without understanding the Shelf economics behind it. Augmented individuals appreciate the cut.",
+    "condition_typical": "Appears carefully maintained but not pristine. The patch shows wear-softening at edges. Collar creases remain sharp through multiple wearings. Fabric shows subtle wear marks at fold points but no tears or staining — evidence of deliberate care by someone with limited access to replacement."
+  },
+  "image_prompt": "Fashion photograph of Coldseam Collective formal shirt and trousers on an augmented dark-skinned model with visible forearm chrome data-port, posed against peeling concrete wall in lower Meridian drainage district. Cool industrial lighting casts sharp shadows across banded collar and deliberate knee patch. Shirt cuffs positioned to frame augmentation without concealing it. Moody, desaturated color palette dominated by Ouroboros gray with subtle taupe accent at knee. Shallow depth of field emphasizes topstitched patch detail. Shot on dark mannequin alternative: headless form wearing set, positioned in converted storage unit with dim neon tubing overhead, fabric bolts and measuring tools visible in soft-focus background. Cinematic, documentary-style lighting. --ar 2:3 --v 6"
 }

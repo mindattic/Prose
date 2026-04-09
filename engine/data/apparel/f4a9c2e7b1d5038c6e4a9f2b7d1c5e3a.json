@@ -46,5 +46,26 @@
     "The Heritage Vault",
     "The Spire",
     "ZhengDao Bioelectric LumbarBrace Pro"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A austere, purposeful silhouette that reads \"function over form.\" The Drift Parka hangs straight from the shoulders, hitting mid-thigh with a subtle A-line from the torso. The oversized hood creates a rounded, protective frame that dominates the upper half when drawn. The overall impression is solid, reliable, and deeply utilitarian—the kind of garment that disappears into someone's daily life rather than announcing itself.",
+    "fit": "Relaxed through the torso with tapered wrists; designed to layer without restriction. The hood fits generously around the head and neck, accommodating augmentation ports, heavy insulation, or a climate-sealed helmet. Armholes sit slightly dropped to allow free shoulder movement in complex urban climbing or traversal.",
+    "primary_material": "Matte ripstop polyester shell with a subtle grid weave visible only up close. Down-analog synthetic fill (likely algae-derived or lab-cultured protein matrix) rated for extreme cold retention without animal products.",
+    "texture": "The shell has a soft, non-reflective matte finish that resists gloss and radar signature. Micro-ripples across the surface create subtle depth. The fill adds gentle quilting visible as diagonal stitching patterns that stabilize the insulation without creating bulk.",
+    "color_scheme": "Glacier white as primary (Solvang's signature) or dark navy as alternative. Both are deliberately desaturated—no vibrant branding colors. The combination reads 'winter landscape' rather than 'fashion statement.' Small embossed logo at chest zip in tonal color matching.",
+    "closures": "Full-length YKK or equivalent heavy-duty two-way slider zipper with a storm flap. Drawstring hood with friction-fit adjusters. Elastic cuffs at wrists; no additional buckles or fasteners.",
+    "distinctive_features": [
+      "Oversized hood engineered to fit over helmet or augmentation crown",
+      "Insulation extends to the knuckles—no exposed wrist on the interior",
+      "Subtle internal quilting grid visible only when worn",
+      "Minimal branding: single embossed chest logo, no visible text",
+      "Matte finish deliberately avoids reflectivity in low-light urban environments",
+      "Two-way slider allows venting from bottom or top independently",
+      "Reinforced stress points at shoulders and sleeve seams"
+    ],
+    "tier_indicator": "Tier 3-4 boundary. Expensive enough to signal stability and investment in quality, but not conspicuous wealth. A Tier 2 corpo might wear it as genuine outerwear for fieldwork; a Tier 4 worker wears it as their best jacket.",
+    "cultural_context": "Worn by wilderness guides, environmental researchers at Great Lakes monitoring stations, climbers using elevated walkway networks in winter, and anyone who spends serious time outside in subzero conditions. Signals 'I actually work outdoors' or 'I take cold weather seriously' rather than 'I can afford status gear.' Associated with Scandinavian pragmatism and Great Lakes regional identity.",
+    "condition_typical": "Pristine to lightly broken-in. These parkas age beautifully—matte surface develops character through use but doesn't show stains obviously. A well-worn Drift Parka might have slightly softened edges or faint salt stains from lake-effect snow, but the construction is robust enough that it looks 'seasoned' rather than 'damaged.'"
+  },
+  "image_prompt": "Cyberpunk fashion photography: Solvang Drift Parka in glacier white on a androgynous model with visible subcutaneous bioluminescent port tracery at the neck, standing in profile against a Great Lakes industrial backdrop at dusk. Hood drawn up, small embossed logo visible at chest, matte ripstop surface catching cold blue-grey light. Elevated walkway and frost-rimed guardrail visible behind. Moody, desaturated color palette with cool shadows. Studio-quality lighting emphasizing the parka's no-nonsense construction. --ar 2:3 --v 6"
 }

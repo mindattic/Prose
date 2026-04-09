@@ -44,5 +44,24 @@
     "control",
     "tier 3"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "physical_description": {
+    "visual_profile": "A sleek, pocket-sized quantum encryption device with a distinctive dual-chamber design. The upper half houses the quantum random number generator beneath a translucent sapphire window, while the lower section contains power cells and output interfaces. Resembles a premium smartphone crossed with laboratory equipment — clinical precision meets street-tech aesthetics.",
+    "dimensions": "14cm tall × 8cm wide × 3cm thick — fits comfortably in a palm or jacket pocket",
+    "weight_description": "200 grams — handheld, lightweight enough for extended carry without fatigue",
+    "primary_material": "Brushed titanium alloy chassis with reinforced polymer frame; sapphire crystal viewport",
+    "finish": "Satin-brushed metallic with anti-reflective coating; matte black polymer accents; microscopically etched circuit traces visible through viewport",
+    "color_scheme": "Gunmetal gray primary with deep matte black secondary panels; accent lighting in cool cyan-blue; TESSERA branding in silver",
+    "interface_elements": "USB-C port (recessed, gold-plated); small holographic status display (1.5-inch projection capable); four tactile verification buttons (top edge); wireless pairing indicator LEDs; subtle haptic feedback panel on rear",
+    "distinctive_features": [
+      "Quantum state indicator: animated cyan particle effects visible through sapphire window during generation",
+      "Entanglement monitor: real-time graphical display of key-pair coherence on recessed micro-screen",
+      "Neural sync port: barely visible inductive coupling ring around base for direct rig integration",
+      "Thermal dissipation fins: subtle geometric ridges along sides (functional and aesthetic)",
+      "Security biometric scanner: fingerprint reader integrated into power button"
+    ],
+    "manufacturer_markings": "TESSERA INDUSTRIES logo embossed on rear; QKG-2 model designation in micro-text; regulatory stamps (GLMZ-certified, quantum-graded Tier 3+); serial number laser-etched on base",
+    "condition_typical": "Usually seen with faint cyan glow from internal quantum processes; slight warmth to touch during continuous operation; mounted on desk stands or secured in tactical holsters with release mechanisms"
+  },
+  "image_prompt": "Close-up product photography of TESSERA QKG-2 quantum key generator on a brushed aluminum workbench, angled 45 degrees. Dramatic side-lighting reveals translucent sapphire chamber with animated cyan quantum particles flowing inside. Surrounding elements: fiber optic cables, neural interface jack, scattered QUANTA currency chips. Cyberpunk aesthetic with neon cyan accents reflecting off polished titanium. Dark gunmetal background. High contrast, cinematic lighting. Professional equipment catalog style. --ar 3:2 --v 6"
 }

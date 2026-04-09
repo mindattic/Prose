@@ -54,5 +54,26 @@
     "Symbiotic Bioluminescent Colony",
     "The Fathom Line",
     "The United Workers Front"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sophisticated club-ready silhouette celebrating genetic modification as aesthetic. The draped halter top creates an ethereal, layered effect that moves fluidly with the wearer, while the low-slung holographic waistband anchors the look with sharp geometric contrast. The wide-leg trousers maintain an elegant line despite rear tail accommodation. Overall impression: high-fashion, unapologetically augmented, designed for bodies that don't fit standard human baseline.",
+    "fit": "Relaxed through the legs with strategic tailoring; halter top sits draped and loose across the shoulders with minimal constraint; waistband sits low on hips, neither tight nor oversized; intentionally designed for non-standard body geometry without compromise to silhouette.",
+    "primary_material": "Iridescent sheer synth-polymer (halter panels), semi-rigid holographic-trim synth-leather (waistband and footwear), matte-black flowing rayon-synthetic blend (trousers), chrome hardware accents",
+    "texture": "Halter panels: gossamer-thin, translucent, slightly fluid; holographic waistband: smooth yet with tactile prismatic texture that catches fingerprints; trouser fabric: luxuriously matte with subtle drape; chrome horn rings: polished metallic with friction-grip interior",
+    "color_scheme": "Deep teal, bronze, and black in layered opacity on halter; matte black trousers; holographic waistband and footwear throwing dynamic prismatic scatter (rainbow-iridescent shift across surfaces); chrome hardware provides cool metallic accent",
+    "closures": "Halter ties at back of neck with trailing ribbon; holographic waistband sits friction-fitted on hips; trouser tail pleat secured with hidden magnetic closure; ankle wraps coil with tension-lock design; sandal straps with micro-buckles",
+    "distinctive_features": [
+      "Overlapping sheer panels of varying opacity creating depth illusion",
+      "Long trailing neck-tie ribbon falling between shoulder blades",
+      "Completely open upper back for spinal rig or wing-bud accommodation",
+      "Rear pleat tailored specifically for tail mobility with magnetic keep-line closure",
+      "Included chrome horn rings threaded with matching iridescent sheer",
+      "Semi-rigid holographic waistband designed to scatter prismatic light onto surrounding environment",
+      "Bioluminescent skin amplification through sheer panel placement"
+    ],
+    "tier_indicator": "Tier 3 working-class luxury — boutique pricing reflects specialized manufacturing for niche body modifications, not corporate elite exclusivity",
+    "cultural_context": "Wearer signals GLMZ club culture, genetic body modification pride, post-human aesthetic acceptance, mid-market disposable income, membership in geneware community; deliberately rejects baseline-normative fashion compromise",
+    "condition_typical": "Pristine when new; develops subtle wear at magnetic closures and holographic waistband from repeated use; sheer panels may show light creasing from packing or movement, which adds to the lived-in elegance"
+  },
+  "image_prompt": "Fashion photograph of a cyberpunk model with visible genetic modifications—bioluminescent skin, subtle tail, small chrome horns—wearing the Prismveil Night Set in a dark GLMZ nightclub setting. The halter top's iridescent sheer panels catch moody blue and violet stage lighting, creating shifting depth and prismatic scatter across surrounding chrome and glass surfaces. The holographic waistband throws rainbow light across the model's torso and nearby environment. Wide-leg black trousers flow elegantly with the pose, rear pleat evident. Strappy holographic sandals reflect neon from the floor. Upper back is exposed and open, emphasizing the outfit's design for augmented bodies. Atmospheric haze, industrial club architecture in background, cool color palette with occasional warm neon accent. High fashion editorial quality, shot against dark urban nightclub backdrop. --ar 2:3 --v 6"
 }

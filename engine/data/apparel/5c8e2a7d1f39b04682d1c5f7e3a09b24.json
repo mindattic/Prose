@@ -38,5 +38,26 @@
   "related_entities": [
     "Arcturus Exo-Runner Frame",
     "Cem Osei-Petrov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian cargo silhouette with a pronounced wide-leg cut through hip and thigh, tapering slightly at the ankle. Heavy, structured appearance suggesting durability over fashion. Weathered aesthetic typical of dock and maritime work.",
+    "fit": "Relaxed through hip and thigh with ample room for layering and movement; slight taper at ankle; high waistband for secure wear during physical labor; allows unrestricted leg mobility",
+    "primary_material": "Rubberized synthetic outer shell (ballistic-grade waterproof weave) laminated over insulating fleece liner; sealed seam construction throughout",
+    "texture": "Outer surface has subtle ribbed pattern from rubberization; slight tackiness to touch preventing slippage when wet; interior fleece soft and brushed; visible salt crystallization along lower legs on worn pairs",
+    "color_scheme": "Primary navy or dark teal with characteristic salt-fade gradient (lighter at calf and shin from repeated saltwater exposure); rust-orange oxidation stains at hem and pocket edges",
+    "closures": "Heavy-duty friction-fit waistband with reinforced magnetic snap; dual zippered fly with rubberized pulls; cargo pockets with friction closures to prevent water infiltration",
+    "distinctive_features": [
+      "Sealed seam tape running along all major construction points",
+      "Reinforced double-layer panel at knees and seat for abrasion resistance",
+      "Integrated drain grommets at ankle and cargo pockets",
+      "Reflective piping along outer seams (safety standard)",
+      "Woven manufacturer's label with QR-code tracking at waistband",
+      "Evidence of heavy patching or repair on thighs typical of heavily-worn pairs",
+      "Salt bloom discoloration forming natural patterns across lower legs"
+    ],
+    "tier_indicator": "Tier 3-4 (working class functional); accessible to dockworkers and maritime labor across multiple income brackets",
+    "cultural_context": "Signals maritime/dock worker, industrial laborer, or coastal trade sector employment; worn by unionized cargo handlers, ship maintenance crews, and GLMZ Great Lakes freight operators",
+    "condition_typical": "Heavily weathered; salt-stained legs with visible fade gradient; minor tears patched with rubberized tape; scuffed knees; rust-colored mineral deposits; still functionally sealed"
+  },
+  "image_prompt": "Overhead flat-lay shot of worn Tidal Dockline waterproof work pants in navy-teal, displayed on dark industrial mannequin legs against a wet concrete dock surface. Harsh sodium vapor lighting casting orange-tinted shadows. Close detail visible of salt-stained lower legs showing natural fade gradient, sealed seam construction, and reinforced knee panels. Weathered texture prominent. Rain droplets beading on rubberized surface. Moody, utilitarian aesthetic. Industrial harbor setting blurred in background. --ar 2:3 --v 6"
 }

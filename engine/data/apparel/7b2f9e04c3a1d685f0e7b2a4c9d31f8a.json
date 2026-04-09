@@ -50,5 +50,24 @@
     "Synaptrel",
     "The Pure Hand",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting glove that bridges biological and augmented hands with seamless professionalism. The graphene weave creates a uniform, almost liquid-metal appearance that catches light subtly. Worn by augmented workers in corporate or medical environments, it reads as refined functionality—neither ostentatiously chromed nor aggressively utilitarian.",
+    "fit": "Compression-tailored, second-skin tight around the palm and fingers. Designed to hug chrome hand augments without bunching, while conforming snugly to biological hands. The wrist section sits just below the forearm, creating a clean transition line.",
+    "primary_material": "Conductive graphene-weave composite with haptic mesh palm lining. Dorsal seam houses a thin signal cable terminating in a magnetic snap connector.",
+    "texture": "Matte charcoal surface with fine iridescent threading visible at certain angles—creates subtle rainbow shimmer across knuckles and palm. The haptic mesh beneath the outer layer feels slightly textured to the touch, almost like fine chainmail.",
+    "color_scheme": "Matte charcoal gray with embedded iridescent threads that shift from teal to purple in side-lighting. No loud branding—Rolen's logo is a minimal embossed detail on the wrist snap.",
+    "closures": "Magnetic snap connector at wrist for BCI cable attachment. Individual micro-zipper tabs on each fingertip for modular detachment. No additional fasteners needed—compression fit alone secures the glove.",
+    "distinctive_features": [
+      "Dorsal seam integrating signal cable routed to wrist magnetic snap",
+      "Five individually detachable fingertips via micro-zipper tabs",
+      "Haptic mesh palm that reads surface texture and pressure",
+      "BCI-compatible connector system",
+      "Cosmetic smoothing design to bridge chrome augments with biological wrist"
+    ],
+    "tier_indicator": "Tier 2-3 boundary: mid-market augment accessory. Affordable enough for working professionals with aug enhancements, premium enough to signal corpo or medical sector affiliation.",
+    "cultural_context": "Corporate augment user, medical technician, skilled tradesperson with cybernetics. The wearer is neither cutting-edge chrome-heavy nor street-salvage—they're integrated into formal or semi-formal augmented work culture. Signals competence and investment in aug-compatible gear.",
+    "condition_typical": "Pristine to lightly worn. The graphene weave resists scuffing; typical wear shows only minor dulling of the iridescent threading from repeated micro-zipper use on fingertips. Kept clean and functional—this is professional equipment."
+  },
+  "image_prompt": "Close-up fashion photograph of a sleek matte charcoal graphene-weave glove on an augmented chrome hand, the iridescent threading catching cool blue and purple light. The glove's wrist section shows the magnetic snap connector. One fingertip is mid-detachment, revealing the micro-zipper tab. Dark urban backdrop with neon reflected in the glove's surface. Moody, professional cyberpunk aesthetic. Shot against a brushed steel surface. --ar 2:3 --v 6"
 }

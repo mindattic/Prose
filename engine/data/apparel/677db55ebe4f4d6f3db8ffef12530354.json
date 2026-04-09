@@ -41,5 +41,24 @@
     "Lazarus HZ-4 'Cleanroom'",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting second skin that disappears under outer layers. When visible alone, it presents as a matte, almost liquid-looking garment with an imperceptible shimmer from embedded carbon-nanotube weave. Covers from neck to wrists to ankles in one continuous surface.",
+    "fit": "Compression fit, anatomically contoured to follow body lines without restriction. Stretches with movement but maintains contact with skin for optimal charge dissipation. Snug at wrists and ankles where grounding occurs.",
+    "primary_material": "Synth-cotton blend interwoven with carbon-nanotube conductive threads, creating a breathable yet electrically active fabric. Non-allergenic and moisture-wicking.",
+    "texture": "Smooth, slightly tacky to the touch—almost like a second dermis. Microscopic grid pattern visible under magnification from nanotube lattice. Feels cool against skin.",
+    "color_scheme": "Charcoal gray with silver conductive lines barely visible in certain light angles, following paths to foot pads. Apex Dynamics minimalist branding in reflective thread at center chest.",
+    "closures": "Full-length biometric zip at rear spine with magnetic nano-locks at neck and ankles. Magnetic closure prevents accidental opening during work.",
+    "distinctive_features": [
+      "Conductive foot pads reinforced with silver-threaded mesh at soles",
+      "Integrated biometric monitoring thread that syncs with worker ID",
+      "Imperceptible grid weave of carbon nanotubes across entire surface",
+      "Grounding terminals at both wrists (optional external attachment points)",
+      "Manufacturer serial code embedded in back-neck seam for cleanroom tracking"
+    ],
+    "tier_indicator": "Tier 2-3 industrial/corporate. Only provided by manufacturing employers; not sold retail. Signals skilled technical worker or assembly-line employee.",
+    "cultural_context": "Manufacturing sector worker, cleanroom certified, electronics industry. Wearing this marks someone as essential infrastructure—trusted with expensive equipment. A badge of industrial competence.",
+    "condition_typical": "Usually pristine or barely used, as it's replaced regularly by employer. Rarely seen alone in public; always layered under corporate-issued cleanroom smocks or assembly uniforms. When visible, indicates worker is either between shifts or in violation of protocol."
+  },
+  "image_prompt": "Professional product photography of Apex Dynamics Electrostatic Dissipation Bodysuit on a pale-skinned android model with minimalist augmentations, posed in a sterile manufacturing cleanroom with cool LED overhead lighting. The bodysuit's charcoal-gray compression fit hugs the figure, conductive silver threads catching light along the spine and at the wrists. Chromatic aberration and neon blue accent lighting on foot pads showing grounding activation. Reflective surfaces and anti-static flooring visible in composition. Shot from behind to emphasize rear-spine zip and grid weave pattern. Apex Dynamics logo barely visible on chest. Corporate, cold, utilitarian aesthetic. --ar 2:3 --v 6"
 }

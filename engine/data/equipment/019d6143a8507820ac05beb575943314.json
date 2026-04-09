@@ -78,5 +78,24 @@
     "The Pure Hand",
     "Tshiamo Vukić-Arellano",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutal, utilitarian spike approximately the length of a hand. The business end is a sharpened tungsten point with shallow grooves for grip during impact. The handle is a reinforced composite cylinder with aggressive knurling, designed for gloved operation. Industrial, purposeful, resembling a specialized climbing tool or demolition implement rather than consumer electronics.",
+    "dimensions": "22cm overall length; 4cm diameter handle; spike tapers to 8mm point",
+    "weight_description": "280g — hefty enough to drive with one strong strike, but pocketable on a load-bearing tactical rig or tool belt",
+    "primary_material": "Tungsten carbide spike; titanium-reinforced composite handle; embedded stainless steel reinforcement collar at transition point",
+    "finish": "Spike: gunmetal gray with light machine marks and a dull matte polish. Handle: textured rubberized non-slip coating in deep charcoal with visible wear patterns from gloved use. Collar: polished to a satin sheen.",
+    "color_scheme": "Monochromatic industrial grays and blacks. Single accent: a tiny Φ (QUANTA) currency symbol laser-etched near the handle base in faint red.",
+    "interface_elements": "Minimal: recessed pressure sensor pad (4mm diameter) on handle face for activation/negotiation. Tiny status LED (amber/green) embedded below the sensor, visible only in darkness. Micro-port for forensic drain (standard Arcturus Defense connector) hidden beneath a tungsten dust cap.",
+    "distinctive_features": [
+      "Shallow helical grooves running down the spike shaft — both for grip during insertion and to facilitate current flow across varied wiring gauges",
+      "Asymmetric handle knurling: rough on one side (striking face) and smoother on the opposite (grip face) for directional impact control",
+      "Arcane Arcturus Defense logo (a stylized shield-and-spike motif) laser-marked on the handle in barely-visible dark gray",
+      "Faint manufacturing serial number and batch code stamped on the collar in tiny characters",
+      "A single drop of dried sealant visible near the handle-shaft junction — evidence of field repair or environmental sealing"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions corporate logo on handle. Faint text: 'MORTISE CHANNEL SPIKE' and regulatory certification stamps (defense contractor only). QUANTA price equivalent etched discretely.",
+    "condition_typical": "Worn but functional. Micro-scratches and scoring on the spike from contact with conduit materials. Handle shows polishing wear from repeated gloved deployment. The pressure sensor may show faint dust or corrosion from damp breaches. Field units often have improvised grip tape or electrical tape wrapping added by operators."
+  },
+  "image_prompt": "Tactical product photography: Mortise Channel Spike laid flat on a scarred metal workbench, next to a disassembled section of copper electrical conduit and a Φ-denominated Arcturus Defense contract document. Moody blue-green cyberpunk lighting from above, casting sharp shadows. Close-up macro shot emphasizing the tungsten point's matte finish and the handle's knurling texture. Shallow depth of field. Industrial, worn aesthetic. Metal background with electrical schematic blueprints out of focus. Hint of neon reflect in condensation on the spike. Overhead three-quarter angle. --ar 3:2 --v 6"
 }

@@ -45,5 +45,26 @@
     "Alper Castillo-Ababio",
     "Irkalla",
     "Zheng-Dao Bioelectric Chemoreceptive Dermal Patch"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular mid-thigh parka with a dramatic architectural split down the back, creating two distinct panels that can be tensioned apart. The silhouette is deliberately asymmetrical when worn over augmentation hardware, reading as both utilitarian and avant-garde. Presents as a statement piece for those with significant spinal or wing modifications.",
+    "fit": "Relaxed through the torso with articulated seams; the splitback design allows the garment to expand and contract via adjustable tension straps. Tapered at wrists and hem for weather sealing. Designed to drape over cybernetic frames without restriction.",
+    "primary_material": "Matte charcoal ripstop synthetic composite with bonded seams; interior lined with synthetic down insulation rated -40C",
+    "texture": "Ripstop weave creates a subtle diagonal pattern under direct light; smooth matte finish on exterior, soft quilted down visible through the split-back panels when tensioned",
+    "color_scheme": "Matte charcoal grey primary; optional fur trim on hood in synthetic white or deep slate; interior quilted sections visible in cream or silver-grey",
+    "closures": "Primary storm-flap zip system with reinforced pull tabs; adjustable tension straps (magnetic snap or friction-fit) along split-back seams; detachable hood secured by friction clips",
+    "distinctive_features": [
+      "Full split-back panel with dual adjustable tension straps for hardware accommodation",
+      "Removable faux-fur trimmed hood (optional)",
+      "Bonded seams for durability in harsh weather",
+      "Storm-flap zip system with reinforced stops",
+      "Internal tech-compatible pockets (designed for subcutaneous port access)",
+      "Asymmetrical paneling that emphasizes augmentation silhouette",
+      "Helios-Nomad woven badge at left chest"
+    ],
+    "tier_indicator": "Tier 2–3 crossover: premium workwear pricing with professional-grade materials, marketed toward augmented operatives with stable income",
+    "cultural_context": "Street-level cyborg culture, augmented laborers, wing-modded runners, spinal-rig technicians. Signals someone comfortable with visible modification and needing practical gear that doesn't hide it. Common in free-territory settlements and GLMZ industrial corridors.",
+    "condition_typical": "Worn-in but maintained; minor scuffing on ripstop, creased seams, tension straps showing slight discoloration from repeated adjustment. Usually spotted with light weathering—rain stains, dust, occasional grease smudges—but never heavily damaged"
+  },
+  "image_prompt": "Fashion photograph of a matte charcoal ripstop parka displayed on a dark chrome mannequin, back turned to camera. The splitback panels are tensioned open via adjustable magnetic straps, revealing quilted cream synthetic-down interior. Model has subtle augmentation visible at nape (subdermal port scarring). Moody blue-grey warehouse lighting casts sharp shadows across the fabric's ripstop weave. Urban backdrop: concrete wall with faint graffiti, rain-slick surface reflecting overhead neon. Removable hood with optional faux-fur trim draped alongside the mannequin. Product photography, cyberpunk fashion editorial style --ar 2:3 --v 6"
 }

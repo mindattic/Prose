@@ -60,5 +60,31 @@
     "Synaptrel",
     "Tessera Nexus Town Car",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian one-piece coverall silhouette with bold diagonal front closure, suggesting industrial competence and mid-tier corporate identity. The teal-and-silver branding and structured back panel read as functional, purpose-built engineering wear rather than fashion. On the wearer, it projects pragmatic efficiency—a body prepared for machinery interaction.",
+    "fit": "Fitted through the torso with strategic extra volume at forearms and thighs. Compression-adjacent without being restrictive. The diagonal hip-to-shoulder zipper creates a dynamic visual line that emphasizes asymmetric movement capability. Sleeves accommodate prosthetic forearms without bunching.",
+    "primary_material": "Deep charcoal grey synth-twill (main coverall); matte black moisture-wicking turtleneck (base layer); matte charcoal composite-toe boot with ESD-rated sole",
+    "texture": "Smooth, industrial-grade synthetic twill with slight sheen under factory lighting. Turtleneck has a fine ribbed texture. Knee pad hard-shell inserts read as glossy polymer. Boot leather is treated composite—durable and scuff-resistant.",
+    "color_scheme": "Dominant charcoal grey coverall with teal-and-silver angular Solberg-Maru logo on left chest. Matte black turtleneck base. Teal-tinted safety glasses. Teal bump cap. Minimal accent color—the teal acts as corporate identifier and brand consistency.",
+    "closures": "Heavy-gauge diagonal front zipper (hip to right shoulder, one-handed operation). Secondary snap-seam elbow-to-wrist for prosthetic accommodation. Magnetic attachment points on spine panel for exo-assist harness. Quick-eject knee pad buttons.",
+    "distinctive_features": [
+      "Diagonal front zipper (ergonomic one-handed design)",
+      "Solberg-Maru teal-and-silver angular logo on left chest",
+      "Block-letter name patch on right chest",
+      "Forearm expansion panels for chrome augmentation fit",
+      "Snap-seam elbow-to-wrist for full prosthetic forearms",
+      "Structured magnetic spine panel for exo-assist rigging",
+      "Built-in hard-shell knee pads with quick-eject buttons",
+      "Wide-mouth composite-toe boot tongue for accessibility",
+      "Modular tool belt with snap-clip loops",
+      "Integrated holster for diagnostic tablet",
+      "Teal bump cap with corporate branding",
+      "ESD-rated boot soles"
+    ],
+    "tier_indicator": "Tier 2–3 boundary: Corporation-issued manufacturing wear signaling employed mid-tier status and steady Circuit income. The fit and materials suggest functional quality rather than luxury, but the brand ownership and integrated augmentation accommodation mark this as legitimate corpo employee dress, not street salvage.",
+    "cultural_context": "Solberg-Maru manufacturing floor identity. Wearer is factory-bound, production-line embedded, augmentation-ready, and corporate-loyal. The uniform communicates reliability, technical competence, and acceptance of industrial hierarchy. Safety-first ethos. Suggests someone with semi-stable income, access to corpo healthcare, and compliance with plant protocols.",
+    "condition_typical": "Pristine to well-maintained when fresh from the plant. With regular wear, shows minor abrasion on knee pads, possible small oil stains or synthetic residue on cuffs and lower forearms, scuffing on boot toes. The zipper remains functional but may show dust accumulation. Overall: clean-professional with honest wear marks that signal active duty."
+  },
+  "image_prompt": "Solberg-Maru factory technician in fitted charcoal grey synth-twill coverall with diagonal front zipper, teal-and-silver logo on left chest, matte black turtleneck base layer, and composite-toe ESD boots. Safety glasses with teal tint pushed up on forehead, teal bump cap with corporate branding, heavy tool belt with modular snap-clip loops and diagnostic tablet holster across hips. Model has visible chrome augmentation on left forearm, sleeve snapped open to show integration. Standing in moody neon-lit fabrication bay, industrial machinery silhouetted in background. Overhead fluorescent and teal accent lighting casting sharp shadows. Dark urban-industrial aesthetic, worn concrete floor. Posture is ready, competent, plant-bound. --ar 2:3 --v 6"
 }

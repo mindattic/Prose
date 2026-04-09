@@ -42,5 +42,41 @@
     "simple",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Ebele Medina-Quaye",
+    "Meridian Munitions Coach-12 'Stagecoach'",
+    "Nika Svensson-Kone",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Patient Zero",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Ringo PD-1 'Citizen'",
+    "Synaptrel",
+    "The Hearthstone",
+    "The Peninsula",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian, almost agricultural shotgun—all business with no flash. The break-action design creates a distinctive hinged silhouette that opens like a trapdoor. Compact and purposeful, with the exposed hammer dominating the rear profile. Looks like something a rural family would hang above a door without thought.",
+    "dimensions": "Overall length: 112 cm. Barrel length: 66 cm. Stock depth: 35 cm. Receiver width: 4.5 cm.",
+    "weight_description": "Light and manageable—2.2 kg makes it easy for a teenager or smaller-framed adult to shoulder and hold steady. No unnecessary mass. Feels balanced at the receiver.",
+    "primary_material": "Blued steel receiver and barrel. Walnut or polymer hardwood furniture depending on market tier. Hammer and trigger group are milled steel.",
+    "finish": "Traditional matte blue-black on barrel and receiver. Exposed metal shows honest wear—not polished, not coated with chrome. Working-gun patina. Wood furniture is satin or oil-finished, deliberately understated.",
+    "color_scheme": "Matte blue-black barrel and action, warm tan to dark walnut stock. No accent colors. No anodizing. Brass bead sight at muzzle—the only bright element.",
+    "grip_texture": "Walnut or hardened polymer stock with light checkering for traction. Smooth, worn grain. Hammer spur has shallow knurling for thumb access. Nothing fancy—grip is honest and textureless.",
+    "distinctive_features": [
+      "Exposed external hammer—visible safety indicator when cocked",
+      "Break-action hinge with clean mechanical separation",
+      "Simple brass bead front sight (no rear sight)",
+      "Spent shell ejector on the underside of the barrel lug",
+      "Minimal trigger guard—functional, not protective",
+      "Open receiver design—easy to visually confirm load status",
+      "Single trigger blade with no safety lever",
+      "Flat-topped comb suitable for slugs or buckshot"
+    ],
+    "manufacturer_markings": "\"HEARTHSTONE FIREARMS\" stamped in serif font on the left barrel flat. Gauge marking (20 GA) on the barrel underside. Serial number on the receiver underside, shallow-etched. No logo—just text. Deliberately forgettable.",
+    "condition_typical": "Well-maintained but showing honest use. Barrel may have minor dings. Stock shows handling wear but remains solid. Metal is patina'd but not rusted. Often kept loaded and accessible—the hammer is frequently in the cocked position from repeated use."
+  },
+  "image_prompt": "Product photograph of a Hearthstone Single-20 'Farmhand' shotgun positioned on a dark weathered wood surface, break-action open to show the empty chamber. Dramatic side-lighting from upper left reveals the blued steel barrel's patina and the walnut stock's grain texture. A gloved hand (worn leather work glove, right side of frame) rests on the stock. Close detail of the brass bead sight and exposed hammer. Cyberpunk aesthetic: cool tungsten side-light casting sharp shadows across the receiver, subtle bokeh of an out-of-focus rural setting in background (weathered fence, dawn light). Color grade: cool blue-gray tones, desaturated browns. Mounted on a tarped Iowan Behemoth shipping crate partially visible. This is a family's first gun—humble, honest, indestructible. --ar 3:2 --v 6"
 }

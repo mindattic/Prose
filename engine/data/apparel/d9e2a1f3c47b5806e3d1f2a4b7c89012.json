@@ -40,5 +40,25 @@
   ],
   "related_entities": [
     "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian work trousers with a distinctly patched, salvaged appearance. The silhouette is slightly asymmetrical due to visible repairs, reading as authentic street-wear rather than intentionally styled. Conveys practical durability mixed with resource scarcity.",
+    "fit": "Relaxed through the hip and thigh with a straight leg. The altered waistband sits naturally but slightly loose, suggesting field modifications rather than tailored fit. Double-kneed construction adds subtle bulk at the knee.",
+    "primary_material": "Heavy-duty canvas, original weave faded to rust-brown from exposure and use. Re-stitched areas show thread variation from repair work.",
+    "texture": "Rough, worn canvas with visible creasing and fading patterns. Silver repair tape has a metallic, slightly reflective quality with peeling edges that create tactile irregularity. Fresh stitching appears coarser than original seaming.",
+    "color_scheme": "Primary rust-brown canvas faded to pale ochre in high-friction areas. Silver repair tape provides stark metallic accents. Waistband extension is visibly mismatched in tone—slightly darker canvas from salvage origin.",
+    "closures": "Standard button fly with worn metal button. Salvaged zipper on one pocket is noticeably different hardware (likely scavenged replacement). No magnetic or tech-integrated closures.",
+    "distinctive_features": [
+      "Double-kneed reinforcement with visible silver repair tape peeling at one edge",
+      "Re-stitched inner thigh seams in contrasting thread",
+      "Four functional pockets with one sealed by mismatched salvaged zipper",
+      "Waistband extended with fabric strip from different garment source",
+      "Multiple visible stitch patterns indicating field repairs over time",
+      "Fading and wear concentrated at knees, hip pockets, and cuff edges"
+    ],
+    "tier_indicator": "Tier 4-5 — Working class to sub-grade. Signals someone who repairs their own gear rather than replacing it, or cannot afford replacement.",
+    "cultural_context": "Worn by warehouse workers, field technicians, scrappers, or anyone in the ungoverned zones. Suggests mechanical aptitude, resource frugality, and practical necessity over fashion. The visible repairs indicate either long tenure in a hard profession or life in tier 5 settlements.",
+    "condition_typical": "Heavily patched and weathered. These trousers are never pristine—the wear patterns and repairs are the point. They show active use and multiple iterations of maintenance."
+  },
+  "image_prompt": "Gripmend Canvas Work Trouser on a weathered cyberpunk model with visible augmentation ports on one arm, shot in profile against a dark industrial backdrop of corrugated metal and neon signage. Hard sidelight emphasizes the silver repair tape and faded rust-brown canvas texture. Shallow depth of field. Moody cyan and amber neon reflections cast across the fabric. The model stands in a relaxed stance suggesting manual labor. Close-up detail of the peeling repair tape visible on inner thigh. Shot in gritty photorealism with slight chromatic aberration. --ar 2:3 --v 6"
 }

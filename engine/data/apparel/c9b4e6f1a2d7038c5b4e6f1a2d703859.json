@@ -44,5 +44,25 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "TESSERA PA-5 'Attendant'",
     "The Clock"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, corporate-casual top that reads as professional restraint. The mandarin collar and slim athletic cut create a streamlined silhouette that sits between athletic wear and business casual. Under light, the fabric catches a subtle sheen that signals synthetic quality without screaming chrome or flash.",
+    "fit": "Slim athletic — tapered through the torso with slight taper at the sides, allowing freedom of movement without excess fabric. Designed for bodies that move, not sit in offices.",
+    "primary_material": "Moisture-wicking micro-polyester, bonded construction — a mid-tier technical synthetic optimized for durability and easy care",
+    "texture": "Smooth with micro-grid texture visible on close inspection. Bonded seams create a seamless, clean appearance on the torso. Subtle sheen under direct light, matte in shadow — deliberately designed to shift appearance with environment.",
+    "color_scheme": "Slate gray or deep navy as primary colors. Both read as corporate neutral. No patterns; the fabric itself has minimal tonal variation. The embroidered Kestrel logo on left chest is the only visual break.",
+    "closures": "Hidden zip pocket at back hem (discrete, functional). No visible front closure — implied invisible or magnetic snap system consistent with corporate functionality.",
+    "distinctive_features": [
+      "Structured mandarin collar — professional without formality",
+      "Small embroidered Kestrel logo (stylized wing-and-circuit mark) on left chest",
+      "Bonded seams rather than stitched — creates seamless torso panel",
+      "Hidden rear zip pocket — suggests minimal visual profile",
+      "Moisture-wicking treatment — practical for field ops",
+      "Subtle sheen shift between light and shadow — technical but not flashy"
+    ],
+    "tier_indicator": "Tier 2-3 crossover. Corporate issue, but mid-tier corporation. Signals stability and employment rather than wealth or street credibility.",
+    "cultural_context": "Wearing this marks you as Kestrel Systems personnel — security, logistics, or field operations. Off-duty wear suggests either company loyalty, economic pragmatism, or a blurred line between work and personal life. In certain neighborhoods (Tier 1 corporate zones), it opens doors. In others (Tier 5 ungoverned sectors), it flags you as corporate and potentially marks you as a target.",
+    "condition_typical": "Pristine to well-maintained. Company-issued uniforms rarely show wear because replacements are subsidized. When worn off-duty, it develops subtle creasing at shoulders and elbows from repeated movement. Faded logos after 18+ months of regular washing."
+  },
+  "image_prompt": "A sleek androgynous model wearing a slate gray Kestrel Systems ops shirt with mandarin collar, slim athletic fit, shot in a moody industrial setting. Soft overhead lighting catches the subtle sheen of the micro-polyester fabric; shadows emphasize the bonded seamless torso panels. The embroidered wing-and-circuit logo is just visible on the left chest. Dark urban backdrop with fractured neon — suggests a corporate lobby or security checkpoint. Model's expression neutral, professional. High contrast, cool color grading. --ar 2:3 --v 6"
 }

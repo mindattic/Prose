@@ -46,5 +46,26 @@
     "The Bleach Boys",
     "Tympanic Membrane Galvanic Rupture Carbine",
     "Ximena Engstrom-Fofana"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian surgical ensemble that reads as street-clinic pragmatism—slate-teal scrubs with clinical geometry, layered with a knee-length sterile apron that transforms the wearer into a mobile augmentation workstation. The silhouette is functional and compressed, suggesting serious work and minimal wasted motion.",
+    "fit": "Tailored-relaxed throughout; scrubs have a slight taper at the wrists and ankles for seal integrity, drawstring trousers sit at natural waist, apron drapes with structured panels to distribute tool weight evenly across the torso.",
+    "primary_material": "BioWeave fluid-resistant synth-polymer base (scrubs and apron), nitrile-grip composite (gloves), reinforced canvas-weave apron with magnetic contact strips, elastomer-soled clogs with puncture-resistant ballistic layer.",
+    "texture": "Scrubs have a soft micro-matte finish; apron fabric is slightly stiff and noise-dampening, designed to shed fluids without pooling. Gloves have textured grip pads on palms and haptic-sensitive fingertips. Clogs have a rubberized non-slip tread.",
+    "color_scheme": "Primary slate-teal with charcoal grey reinforced panels on apron shoulders and lower hem. Chrome tool-strip accent across chest glints under surgical lighting. White trim at wrist and ankle cuffs for contamination visibility.",
+    "closures": "Scrub top: concealed snap buttons down left side. Trousers: drawstring with locking toggle. Apron: magnetic latch neck piece, side velcro straps. Gloves: friction-fit pull-on with wrist band. Visor: friction-lock to padded headband.",
+    "distinctive_features": [
+      "Chest-mounted magnetic tool-strip holding scalpels, neural probes, chrome calibration wands",
+      "Flip-up magnifying visor with integrated headband padding",
+      "Rear neck pocket sized specifically for sterile BCI tap tool",
+      "Haptic feedback pads at fingertip of gloves for precision neural work",
+      "Bleach-rated seams throughout for rapid decontamination",
+      "Puncture-resistant sole on clogs—standard against dropped sharp instruments",
+      "Fluid-resistant BioWeave treated to shed biofluid without absorbance"
+    ],
+    "tier_indicator": "Tier 3-4 working class, elevated by specialization—marks the wearer as licensed street-clinic talent with access to quality synth materials, but clearly operational rather than corporate-polished.",
+    "cultural_context": "Street augmentation surgeon or mobile RipDoc operative. Signals medical competence, illegal-or-gray autonomy, and deep familiarity with the GLMZ's underground prosthetic economy. Wearing this announces: 'I will put chrome in your spine in a back-alley clinic and make it *stick*.'",
+    "condition_typical": "Well-maintained but bearing visible traces of work—faint stains on apron hem (always cleaned but never gone), micro-scratches on tool-strip from constant magnetic attachment/release, gloves replaced frequently (usually shows fresh pair), visor lens occasionally fogged from exertion."
+  },
+  "image_prompt": "Cyberpunk augmentation surgeon in slate-teal BioWeave scrubs and sterile apron with magnetic tool-strip across chest, gloved hands holding chrome neural probe and calibration wand, magnifying visor flipped up on headband, standing in moody neon-lit back-alley clinic with surgical lights casting harsh shadows, augmented client visible in background on surgical chair, rain-wet concrete floors, gritty urban Great Lakes Metropolitan Zone aesthetic, high contrast lighting, professional medical precision meets street-level grit --ar 2:3 --v 6"
 }

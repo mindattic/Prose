@@ -47,5 +47,26 @@
   "related_entities": [
     "Arcturus Exo-Runner Frame",
     "Ilhan Nakamura-Bello"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A chunky, institutional monitoring device that dominates the ankle with brutal authority. The matte black polymer housing creates a stark, utilitarian silhouette that reads as surveillance technology first, fashion never. The high-visibility yellow ratchet band creates an unavoidable contrast that screams state control. Impossible to ignore or conceal.",
+    "fit": "Locked circumferentially around the ankle with no adjustment once secured. Rigid, immovable, sits approximately 38mm thick. The ratchet band cinches tightly enough to be secure but not so tight as to cause circulation issues—designed for long-term wear, not comfort.",
+    "primary_material": "Matte black polymer housing with embedded circuit traces visible under the surface. High-visibility yellow thermoplastic ratchet band rated for durability and weather resistance. Stainless steel locking mechanism.",
+    "texture": "Smooth, industrial matte finish on the black polymer with subtle embossed Ovex branding. The yellow band has a slightly textured grip surface to prevent slipping. Housing feels cold and hard—deliberately unyielding.",
+    "color_scheme": "Matte black polymer contrasted aggressively with safety-yellow ratchet band. Status indicators: steady green pulse (compliant), amber (warning zone), red (violation). The yellow is intentionally high-visibility—no color theory, pure function.",
+    "closures": "Tamper-evident ratchet band with locking teeth that only tighten, never loosen. Once secured by enforcement personnel, it requires bolt-cutters or authorized release tools to remove. No user-accessible closures.",
+    "distinctive_features": [
+      "Pulsing status light indicator (green/amber/red) visible every four seconds",
+      "Embossed Ovex Compliance Systems branding on outer face",
+      "Tamper-evident design—any cutting or forced removal triggers immediate alert",
+      "Integrated GPS and biometric monitoring (invisible to wearer)",
+      "Rigid polymer construction designed to resist damage and tampering",
+      "Yellow band color mandated by GLMZ law enforcement standards",
+      "No way to disguise under standard pants—visibility is intentional punishment"
+    ],
+    "tier_indicator": "Tier 5 sub-grade indicator. Wearing this device immediately signals legal entanglement, probation, or custody within GLMZ jurisdiction. A visible marker of state control.",
+    "cultural_context": "Worn by individuals under legal monitoring—probationers, parolees, detention diversion subjects, or those awaiting trial. Signals that the wearer is monitored, restricted, and operating under state surveillance. Creates immediate social stigma and legal visibility. Marks the wearer as legally compromised.",
+    "condition_typical": "Always pristine and functional—any sign of tampering or damage triggers alerts. The black polymer shows micro-scratches from daily wear but is designed to weather without degradation. The yellow band may fade slightly but remains visible. No patching or repair—this is state property."
+  },
+  "image_prompt": "Close-up fashion photography of a cyberpunk ankle monitor on a model's leg, cinched tightly with high-visibility yellow ratchet band contrasting against matte black polymer housing. Status light pulses soft green. Dark urban setting, moody neon backlighting casting shadows across the device. Emphasize the industrial, unavoidable nature of the restraint. Shot from ankle-height perspective showing the device's dominance. Cold, institutional atmosphere. --ar 2:3 --v 6"
 }

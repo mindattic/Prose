@@ -42,5 +42,42 @@
     "impact",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Kairos",
+    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
+    "Magpie",
+    "Patient Zero",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "TESSERA PG-2 'Signature'",
+    "TESSERA TC-3 'Crucible'",
+    "Tessera Dynamics TD-MK4 'Opponent'",
+    "The Fathom Line",
+    "The Pure Hand",
+    "Zurab Ivanov-Appiah"
+  ],
+  "physical_description": {
+    "visual_profile": "A set of four articulated metallic knuckle guards that sit flush over the knuckles of a fitted tactical glove. The plates are sleek and purposeful, with a pronounced convex geometry that suggests contained force. When worn, they appear as reinforced knuckle protection—nothing obviously lethal at casual glance. The wrist cuff is a slim, angular band of brushed steel.",
+    "dimensions": "Knuckle plates: 4.2 cm wide × 3.8 cm tall × 2.1 cm deep (each). Wrist cuff: 8 cm wide × 6 cm tall × 1.8 cm thick. Conductive threading runs 28 cm from cuff to fingertips.",
+    "weight_description": "Surprisingly balanced despite the tungsten core—280 grams distributed across both hands feels substantial but not unwieldy. The weight settles naturally in the knuckles, creating a sense of leverage and concentration. The wrist cuff is light, almost unnoticeable.",
+    "primary_material": "Aerospace-grade carbon composite exterior with tungsten-impregnated striking surface. Wrist cuff is brushed titanium alloy housing a compact capacitor bank. Conductive threading is woven smartfiber with silver-trace conductivity.",
+    "finish": "Matte gunmetal on the knuckle plates with a satin-polished tungsten face. The wrist cuff is brushed titanium with minimal reflectivity. The glove itself is charcoal synthetic leather with reinforced stitching at stress points.",
+    "color_scheme": "Gunmetal gray and deep charcoal, with subtle brushed steel accents on the cuff. Minimal branding—Crucible Industries logo etched in low-contrast serif on the wrist plate.",
+    "grip_texture": "The glove interior is soft, form-fitted synthetic leather with moisture-wicking mesh. The knuckle plates have a subtly textured striking surface—not rough, but micro-machined to prevent slipping during impact. The wrist cuff is bare brushed metal, cool and firm against skin.",
+    "distinctive_features": [
+      "Four independent articulated knuckle plates that flex with finger movement",
+      "Flush-mounted impact sensors on each plate—nearly invisible unless you know to look",
+      "Fine conductive threading woven through the glove webbing in a geometric pattern",
+      "Slim cylindrical power port on the wrist cuff (proprietary Crucible connector)",
+      "Status indicator LED on cuff—discrete blue dot that pulses during recharge cycles",
+      "Tungsten striking surfaces show micro-scratches and scuff marks even on new units",
+      "Articulation joints are reinforced with minimal visible hardware"
+    ],
+    "manufacturer_markings": "Crucible Industries wordmark etched on the inside of the wrist cuff in sans-serif caps. Serial number laser-stamped on the capacitor housing beneath the cuff. Tier certification stamp (3+) on the interior glove at the wrist.",
+    "condition_typical": "Field-worn Jackhammers show impact scarring on the tungsten striking surfaces—shallow dents and linear marks from repeated contact. The glove leather develops creases at knuckle flex points. The wrist cuff accumulates minor scratches and discoloration from sweat and outdoor elements. Active operators' units show carbon scoring around the impact sensors from repeated discharge."
+  },
+  "image_prompt": "Product photograph of Crucible Industries Kinetic Knuckles KK-3 'Jackhammer' knuckle augmentation system. Tactical glove with integrated metallic knuckle plates displayed on dark matte surface, angled to show both the articulated knuckle detail and the wrist-mounted capacitor cuff. Side-lit with dramatic cyan-white accent lighting highlighting the tungsten striking surfaces and brushed titanium cuff. Close detail shot of impact sensor geometry and conductive threading pattern visible in glove weave. Cyberpunk tactical aesthetic, industrial photography style, worn but well-maintained condition. Include subtle blue LED indicator glow on cuff. Dark charcoal background with metallic reflection. --ar 3:2 --v 6"
 }

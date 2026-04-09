@@ -50,5 +50,30 @@
     "Arcturus Exo-Runner Frame",
     "Kenji Guerrero-Osei-Mensah",
     "Sorin Ekwensi-Balasanyan"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian night-shift worker silhouette — practical, low-profile, designed for mobility and durability. Slate grey jacket with faded yellow-orange municipal patch creates a deliberately unremarkable appearance suitable for navigating industrial infrastructure zones after dark. The wide raglan sleeves and articulated knees telegraph functional augmentation accommodation rather than style.",
+    "fit": "Relaxed but tailored for movement — jacket mid-thigh with drawstring hem for adjustability, raglan sleeves wide enough to clear cybernetic limbs, articulated knee panels for climbing and crouching. All proportions favor access and tool-carrying capacity over silhouette.",
+    "primary_material": "Slate grey synth-canvas jacket (waterproof, acid-resistant), navy thermal synth-cotton henley, charcoal ToughSeam articulated trousers with waterproof polymer coating on lower legs and seat, worn black leather-analog tool belt",
+    "texture": "Canvas has a slightly weathered matte finish; henley is soft-knit with reinforced canvas elbow patches showing faint fraying; trousers have a technical ripstop weave with subtle articulation stitching at knees; tool belt shows genuine creasing and patina from repeated use",
+    "color_scheme": "Primary: slate grey and charcoal with navy accents. Secondary: faded yellow-orange embroidered municipal patch (circuit-board hexagon). Reflective piping in pale silver along hood edge and cuffs — subtle but visible to vehicle sensors.",
+    "closures": "Jacket: drawstring hood and hem, raglan sleeve adjustment points. Henley: standard buttons. Trousers: standard waistband closure plus six pockets sealed with hook-and-bar (cargo pockets), allowing quick access without fumbling. Tool belt: traditional leather loops and magnetic snaps.",
+    "distinctive_features": [
+      "Large embroidered GridPatch municipal maintenance patch on jacket back — circuit-board hexagon in faded yellow-orange",
+      "Reflective piping along hood edge and cuffs for vehicle visibility without aesthetic compromise",
+      "Reinforced navy canvas elbow patches on henley showing wear patterns from scaffolding work",
+      "Articulated knee panels on trousers with reinforced stitching",
+      "Waterproof polymer coating on lower legs and seat (visible as slight sheen)",
+      "Wide raglan sleeves engineered to accommodate full chrome prosthetics with underarm tool strap routing",
+      "Worn black leather-analog tool belt with spanner loops, multi-tool holster, and lamp clip",
+      "Hook-and-bar sealed cargo pockets (practical for wet environments and quick access)",
+      "Hard-foam bump cap with integrated LED strip headlamp",
+      "Charcoal knit neck gaiter (functions as acid-drizzle face protection)",
+      "Composite-toe mid-cut waterproof work boots with deep lug sole"
+    ],
+    "tier_indicator": "Tier 3 functional — working-class infrastructure maintenance. Quality is genuine and built to last; the outfit signals competence and grid-system authorization rather than wealth.",
+    "cultural_context": "Municipal infrastructure worker on permanent night shift. This outfit signals legitimacy in industrial zones and conduit access areas — the GridPatch patch is functional security clearance made visible. The wearer is invisible to the city during daylight but essential after dark. Suggests someone comfortable with augmentation, chemical/environmental hazards, and solo fieldwork.",
+    "condition_typical": "Broken-in and well-maintained but not pristine. The jacket patch fades naturally from UV and acid spray; elbows show gentle fraying; tool belt leather has creases and polish marks from repeated use. The overall impression is 'this person actually works,' not parade-ready."
+  },
+  "image_prompt": "Cyberpunk fashion photograph: a night-shift infrastructure worker in slate grey synth-canvas jacket with faded yellow-orange GridPatch hexagon patch, navy reinforced henley, charcoal ToughSeam trousers with articulated knees, worn black tool belt with spanner loops and multi-tool holster, waterproof work boots with composite toe, charcoal neck gaiter, and hard-foam bump cap with LED strip. Standing in shadow under an elevated conduit framework with mist and acid-drizzle, industrial scaffolding and circuit-board patterns visible in background. Reflective piping catches dim neon from distance. Dark, moody urban infrastructure aesthetic. Worn but competent. --ar 2:3 --v 6"
 }

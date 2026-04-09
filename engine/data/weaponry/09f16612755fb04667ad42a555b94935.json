@@ -44,5 +44,37 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Ebele Medina-Quaye",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Lacuna Genomics",
+    "Nenad Vargas-Baffour",
+    "Nika Svensson-Kone",
+    "The Human Baseline Alliance",
+    "The Pure Hand",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist assault rifle with exaggerated proportions — oversized receiver, prominent heat dissipation fins, and a barrel assembly that dominates the silhouette. The Fenris reads as industrial and purposeful, designed for augmented physiology rather than ergonomic compromise. Its profile suggests contained violence: squared shoulders, aggressive angles, no unnecessary curves.",
+    "dimensions": "Overall length 1,090mm | Barrel length 510mm | Width across receiver 65mm | Receiver depth 85mm (accommodating BCI interface housing)",
+    "weight_description": "Hefty and demanding — 4.9kg of unforgiving mass that rewards augmented strength. Balanced slightly forward of the magazine well to account for muzzle-heavy barrel geometry. An unaugmented operator would experience significant fatigue; in augmented hands, weight becomes stabilizing authority.",
+    "primary_material": "Hardened steel receiver with titanium-alloy barrel assembly. Polymer furniture (lower receiver, handguard) is reinforced glass-fiber composite rated for sustained thermal stress.",
+    "finish": "Matte gunmetal gray with heat-anodized bronze accents on the barrel. Upper receiver shows service wear — micro-scratches and carbon scoring from sustained firing. Some panels exhibit deliberate stippling for grip enhancement.",
+    "color_scheme": "Gunmetal gray primary | Bronze/copper heat-dissipation accents | Matte black polymer grips | Small touches of signal-red on BCI interface connector",
+    "grip_texture": "Stippled polymer handguard with deeply textured palm swell — aggressive enough to bite through synthetic gloves. Magazine well features coarse checkering. Pistol grip wraps in rubberized synthetic with subtle grip grooves, designed for armored gauntlets.",
+    "distinctive_features": [
+      "Oversized muzzle brake with pronounced recoil-compensation fins visible from the front",
+      "Chunky heat-sink assemblies running along the barrel — heavy-duty cooling for sustained fire",
+      "Pronounced spinal-mount interface block at the rear receiver (raised, reinforced tang with alignment pins)",
+      "Top-mounted rail system with proprietary Volkov-Saito quick-detach indexing — allows BCI harness attachment",
+      "Recessed magazine well with anti-tilt geometry for reliable feeding of heavy 8.6mm caseless rounds",
+      "Thermal witness marks (discoloration rings) on barrel and heat sinks from extended use",
+      "Small BCI circuit-board visible through a recessed red-tinted window on the left side of the receiver"
+    ],
+    "manufacturer_markings": "VOLKOV-SAITO PRECISION stamped in sharp Cyrillic-Latin hybrid font along the left receiver wall | Model designation VS-44 FENRIS in white infill below the rail system | Serial number on lower receiver in small caps | Small Φ currency symbol (denoting expensive premium tier) embedded in the pistol grip cap",
+    "condition_typical": "Field-worn but maintained. Operators who use the Fenris are professionals — the weapon shows carbon deposits and heat-stress patina rather than neglect. Occasional improvised repairs or modifications (tape wrapping on thermal areas, custom sling mounts) common among independent operators. Never pristine; always purpose-scarred."
+  },
+  "image_prompt": "Professional product photograph of the Volkov-Saito VS-44 Fenris assault rifle. Weapon mounted at 45-degree angle on a dark matte-black surface, detail visible from left side. Dramatic side-lighting emphasizing the barrel's heat-sink fins and thermal scorching. Augmented operator hand (chrome knuckles, reinforced palm plating visible) gripping the pistol grip, demonstrating scale and operator interface. Shallow depth of field isolates the weapon against a soft-focus industrial cyberpunk background (blurred chrome architectural panels, neon Φ symbols). Muzzle brake and recoil compensation fins in sharp focus. Cold hard-light supplemented with warm amber accent on BCI interface connector. 2226 GLMZ utilitarian aesthetic — no glamor, pure function. Subtle motion-blur ghost on the charging handle suggesting deployment readiness. --ar 3:2 --v 6"
 }

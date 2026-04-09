@@ -56,5 +56,38 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "Alper Inoue-Aidoo",
+    "Biometric Denial Charge BDC-1",
+    "GLMZ",
+    "Kairos",
+    "Kamala Mori-Sefa",
+    "Lazarus Pharmaceutical Emetix-9 'Purge'",
+    "Lazarus Pharmaceuticals",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Nenad Vargas-Baffour",
+    "TESSERA PG-2 'Signature'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, cylindrical pressurized canister with a distinctly pharmaceutical aesthetic — clinical and deliberately non-threatening in appearance. The form evokes an aerosol dispenser or compressed gas cartridge rather than a weapon, with smooth curves and a tapered nozzle. The design is intentionally ambiguous: it could pass cursory inspection as a legitimate medical or industrial aerosol product.",
+    "dimensions": "Height: 18 cm, diameter: 6.5 cm, nozzle protrusion: 2 cm",
+    "weight_description": "Compact and deceptively light in hand — 600 grams feels almost negligible, creating a false sense of innocuousness. The weight distribution is balanced toward the center, making it easy to palm or conceal in a jacket pocket.",
+    "primary_material": "Aerospace-grade aluminum alloy body with a polycarbonate pressure-relief cap. The internal chamber uses a specialized inert polymer coating to prevent premature catalytic degradation.",
+    "finish": "Matte ceramic white with surgical-grade precision — the finish is almost sterile in appearance, mimicking pharmaceutical packaging. The nozzle is brushed stainless steel with micro-etching to prevent corrosion from the catalytic compound.",
+    "color_scheme": "Primary: clinical white with subtle gray gradients. Accent: cold stainless steel nozzle and pressure gauge. A single teal highlight stripe runs vertically — LAZARUS PHARMACEUTICALS house color — with the corporate phi-symbol (Φ) embossed in microscopic lettering.",
+    "grip_texture": "Smooth, slightly textured silicone grip band in the mid-section for secure handling without glove interference. The grip deliberately avoids any aggressive ergonomic design — it feels like holding a medical device, not a weapon.",
+    "distinctive_features": [
+      "Pressurized gauge window with analog readout on the side — shows internal compound saturation",
+      "Recessed safety collar with dual-release mechanism requiring sequential activation",
+      "Micro-perforations along the nozzle housing for calibrated dispersal cone control",
+      "Serial identifier plate with scrambled alphanumeric code and batch designation",
+      "Hairline fractalization pattern visible under magnification on the canister surface — signature of the catalytic nano-droplet suspension within",
+      "Faint phosphorescent trace elements that glow under UV light (manufacturer tracking feature, not visible to naked eye)",
+      "Minute scoring marks on the base suggesting field modification and operator customization"
+    ],
+    "manufacturer_markings": "LAZARUS PHARMACEUTICALS corporate logotype embossed subtly on the upper third. Below: 'ATMOSPHERIC REMEDIATION COMPOUND — RESEARCH USE ONLY' in microscopically small text. A teal Φ symbol centered on the pressure gauge. Internal serial plate visible only if the canister is disassembled — intentionally obscured from casual inspection.",
+    "condition_typical": "Immaculate and pristine — the clinical white finish is maintained religiously by operators, as any contamination or corrosion could compromise the pressure seal. The device is treated like a vial in a biosecurity lab rather than a field weapon. Signs of actual deployment are virtually undetectable."
+  },
+  "image_prompt": "Product photography: VACC-6 catalytic charge canister centered on a black matte surface, slight angle to show the pressurized gauge window and nozzle detail. Dramatic side-lighting from cool-toned LED source casting sharp shadows that emphasize the cylinder's precision engineering. Gloved hand (chrome-knuckled tactical glove) holding the device at mid-grip, fingers relaxed. Extreme close-up on the pressure gauge showing internal compound saturation at 89%. Shallow depth of field with the gauge in sharp focus. Matte white and stainless steel surfaces catch light with pharmaceutical sterility. Teal Φ accent barely visible in ambient light. Cold, clinical, slightly sinister — the aesthetic of something designed to look harmless but operate lethally. Dark laboratory or secure storage background. Cyberpunk noir lighting. --ar 3:2 --v 6"
 }

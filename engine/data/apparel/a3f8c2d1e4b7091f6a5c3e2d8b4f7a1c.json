@@ -47,5 +47,27 @@
     "GLMZ",
     "Tabula",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A blocky, utilitarian silhouette that dominates the frame—broad shoulders, generous body, and a length that reaches mid-thigh. The parka reads as pure function: no tailoring, no flourish, just volume. On a person, it creates an impression of mass and solidity, like wearing a portable shelter.",
+    "fit": "Deliberately boxy and relaxed through the torso and sleeves, with enough room to accommodate layered thermals, subcutaneous augmentation rigs, or light exoskeletons without restriction. The cut prioritizes movement and thermal air pockets over body definition.",
+    "primary_material": "Matte-finish ripstop nylon shell (waterproof, wind-resistant) over recycled synthetic down insulation—sourced from post-consumer synth-fiber waste streams common in GLMZ textile recovery.",
+    "texture": "The outer shell has a subtle grid texture from ripstop weave, slightly matte to avoid shine and glare reflection in snow. The interior fleece lining is soft and densely piled, visibly worn at collar and cuffs. Down clusters visible at any small tears, creating an authentically broken-in appearance.",
+    "color_scheme": "Primary colorways: slate gray (industrial, neutral), rust brown (warm, oxidized), or faded olive (deliberately pre-weathered, moss-like). All three read as deliberately desaturated—colors chosen to blend into urban industrial landscapes, not stand out.",
+    "closures": "Heavy-duty plastic coil zipper down the front (industrial, not precious), with a storm flap and magnetic snap closures for secondary seal. Hood cinches via a single paracord-style pull—one-handed operation even with augmented fingers or numb hands.",
+    "distinctive_features": [
+      "Oversized, adjustable hood lined with fleece—designed to fit over helmet comms or augmented sensor rigs",
+      "Four exterior pockets (two hip, two lower) sized for tools, ammo, or survival kit items",
+      "Two interior pockets for documents or temperature-sensitive tech",
+      "Waterproof-zipped chest pocket—standard for GLMZ workers carrying credentials or currency chips",
+      "Reinforced shoulder and elbow areas showing scuff marks and slight wear",
+      "Storm flap extends past zipper to prevent wind intrusion",
+      "Drawcord at hem can cinch to waist for custom silhouette",
+      "Carrholt logo stamped (not embroidered) on chest—minimal, utilitarian branding"
+    ],
+    "tier_indicator": "Tier 3-4 (working class, functional)—this is the coat of dock workers, construction crews, water treatment technicians, and anyone who works outside in GLMZ winters. Expensive enough to indicate steady employment, cheap enough that losing it doesn't mean financial ruin.",
+    "cultural_context": "Wearing a Carrholt Lakefront signals honest labor and climate practicality. It's anti-fashion—a rejection of corpo aesthetic and sub-grade improvisation alike. The wearer is someone who works in weather, values durability over status, and trusts equipment more than augmentation to keep them alive.",
+    "condition_typical": "Always slightly worn—salt stains visible around the hem and cuffs, small tears showing synthetic down peeking through, zipper showing minor corrosion from salt spray, hood interior fleece matted from repeated use, overall patina of actual use rather than showroom condition."
+  },
+  "image_prompt": "Brutalist fashion photography: slate-colored Carrholt Lakefront Parka on a broad-shouldered mannequin or weathered model, positioned against the concrete face of a Lake Michigan waterfront industrial building. Dim, diffused winter light casting long shadows across the ripstop texture. Close crop on the chest and shoulders showing the logo and storm flap detail. Visible salt spray residue and creasing in the fabric. In the background, blurred shapes of wind-worn pier infrastructure and grey water. Moody, desaturated palette. Cold color temperature. No filters—raw industrial aesthetic. --ar 2:3 --v 6"
 }

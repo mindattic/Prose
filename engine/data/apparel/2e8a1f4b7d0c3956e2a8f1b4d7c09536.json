@@ -44,5 +44,25 @@
     "Brecken Yılmaz-Osei",
     "Sulfur Crown Agriculture",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A formless, utilitarian silhouette that drapes loosely from shoulders to mid-thigh, reading as pure function over form. The poncho creates a tent-like profile that obscures the wearer's body entirely—deliberately anonymous and mass-produced looking. On the Shelf, this reads as survival kit, not fashion.",
+    "fit": "Completely oversized and shapeless—designed to layer over heavy clothing or augmentation rigs without constraint. The drawstring hood cinches at the crown but the body hangs baggy and unrestricted. Mobility is prioritized over silhouette.",
+    "primary_material": "Heavy-duty recycled polyurethane—dense, chemical-smelling, industrial. Waterproof but plasticky, with a slight sheen that shows dirt and hand oils easily.",
+    "texture": "Smooth but with a subtle granular quality from recycled content. Heat-welded seams create visible ridges that catch light. Slightly stiff when new, becoming more pliable with weathering. Prone to cracking at stress points.",
+    "color_scheme": "Predominantly grey (most common), olive drab, or faded rust-orange. No patterns. Discoloration and watermarks from heavy use are standard. Branding (if present) is minimal stamped text on chest or hem.",
+    "closures": "Single drawstring hood pulled tight at the crown. No other closures—the garment simply pulls on overhead. Slash pockets have no zippers or snaps, relying on design geometry to stay mostly watertight.",
+    "distinctive_features": [
+      "Heat-welded seams instead of stitching—more durable, visible as raised ridges",
+      "Folds into its own compact pouch for transit storage",
+      "Two slash pockets positioned at waist, sized for tools, ration packs, or data-chip carriers",
+      "Drawstring hood with metal or plastic cord-locks",
+      "Crown opening reinforced to prevent tearing",
+      "Micro-brand stamps (Greycoast, Dura-Lo, Westpont Basics) often faded or partially illegible"
+    ],
+    "tier_indicator": "Tier 4–5. This is working-poor and sub-grade equipment. No corpo would wear it unless deep undercover. It signals economic precarity, transit dependency, and Shelf origin.",
+    "cultural_context": "Shelf dweller, transit worker, refugee, or anyone living in the ungoverned zones of the GLMZ. Wearing one announces you're used to weather, don't have access to climate-controlled spaces, and need waterproofing more than aesthetics. Also worn by corpo field teams doing intentional slumming.",
+    "condition_typical": "Worn examples show weathered seams, micro-cracking along folds, faded color, and accumulated dirt in the heat-sealed ridge-lines. Some show small patches where the material has split. The drawstring cord frays. Despite this, they remain functional—the design is built for abuse."
+  },
+  "image_prompt": "A tired Shelf dweller in a faded grey Shelf Standard Rain Poncho, photographed in heavy rain under the shadow of an elevated transit line in the GLMZ industrial sector. The poncho drapes shapeless and utilitarian, drawstring hood tight around their head, obscuring their face partially. Visible augmentation seams on their neck/shoulder suggest military-grade mods. Dark, moody overhead lighting casts the scene in cool blues and greys. The background shows stacked shipping containers and water pooling on cracked pavement. The texture of the recycled polyurethane catches the wet light. Cinematic, gritty cyberpunk documentary style. --ar 2:3 --v 6"
 }

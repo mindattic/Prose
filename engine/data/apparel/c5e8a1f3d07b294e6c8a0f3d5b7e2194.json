@@ -42,5 +42,24 @@
     "Dzemal Acholonu-Patagiri",
     "Zheng-Dao Heavy Industries Space Elevator Tether System",
     "ZhengDao Bioelectric LumbarBrace Pro"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian slip-on with minimalist upper and pronounced industrial sole. Sleek and purposeful from the ankle down, anonymous from the ankle up. Signals function over form—the kind of shoe that disappears into a worker's routine.",
+    "fit": "Close and sock-like through the upper, with elastic stretch-mesh conforming to the foot. The sole sits deliberately flat and grounded, creating a stable, magnetic-lock-ready platform.",
+    "primary_material": "Stretch-mesh upper (synthetic blend), ferromagnetic steel-composite plate in sole with reinforced polymer backing",
+    "texture": "Upper is soft and breathable with a fine mesh weave; sole is smooth on the magnet-contact face, slightly textured underfoot with a visible industrial seam line separating the mag-plate insert from the surrounding composite",
+    "color_scheme": "Charcoal grey or matte black upper; steel-grey ferromagnetic plate visible along sole perimeter",
+    "closures": "None—pure slip-on design for quick deck transitions",
+    "distinctive_features": [
+      "Visible ferromagnetic plate seam running heel-to-toe",
+      "Slightly oversized sole profile extending beyond upper edge",
+      "Reinforced toe box for gantry work",
+      "Magnetic lock contact point marked with industrial hash marks",
+      "Replacement mag-plate cartridge slot clearly visible"
+    ],
+    "tier_indicator": "Tier 3-4 working class / industrial augment user",
+    "cultural_context": "Transit workers, gantry laborers, augmented dock personnel, maglev maintenance crews. A shoe that says 'I work infrastructure' and has zero pretense about it.",
+    "condition_typical": "Broken-in and scuffed; ferromagnetic plate shows contact wear and minor surface corrosion; upper may have reinforced patches at stress points"
+  },
+  "image_prompt": "Flat-lay overhead shot of grey slip-on shoe with industrial ferromagnetic sole plate visible, placed on a metallic magnetic-lock floor panel with subtle blue-grey lighting. Close-up detail of the sole's steel-composite insert and seam line. Dark neutral background. Cyberpunk workwear aesthetic. Moody industrial fluorescent rim-light. --ar 2:3 --v 6"
 }

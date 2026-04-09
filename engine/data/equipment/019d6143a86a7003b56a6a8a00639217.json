@@ -75,5 +75,25 @@
     "TESSERA PG-2 'Signature'",
     "The Human Baseline Alliance",
     "Vantablack Media Spectral Barrier Display System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular imaging device resembling a professional compact camera crossed with a precision instrument. The chassis features a distinctive trapezoidal profile when viewed from above, with a pronounced optical block at the front housing the folded prism cascade. The device tapers slightly toward the grip section, creating an ergonomic form factor optimized for one-handed operation during reconnaissance work.",
+    "dimensions": "190mm x 130mm x 55mm; hardcover book-sized, fitting comfortably into a shoulder bag or tactical vest pocket",
+    "weight_description": "620g; light enough for extended handheld use without fatigue, heavy enough to feel precision-engineered. Sits solidly in one palm with thumb access to all primary controls.",
+    "primary_material": "Brushed titanium-aluminum composite chassis with reinforced polymer grip sections; internal optical path shielded with signal-blocking mesh",
+    "finish": "Matte gunmetal with subtle brushed striations; non-reflective to minimize visual detection during surveillance operations. Grip areas feature micro-textured rubber with faint grip-pattern indentations.",
+    "color_scheme": "Gunmetal gray primary with accent striping in signal-red along the optical barrel and control edge; OLED display bezel in deep charcoal with white indicator LEDs",
+    "interface_elements": "4-inch OLED touchscreen occupying the rear third of the device (high-contrast monochrome or false-color overlay modes); top-mounted dual control wheel for band selection and zoom; side-mounted physical buttons for record/pause, anomaly toggle, and composite/single-band mode; micro-USB port and secure digital slot recessed beneath a fitted door; indicator LEDs (power, recording, license-lock status) clustered around the display bezel",
+    "distinctive_features": [
+      "Hexagonal optical aperture with visible multi-layer coating (faint rainbow iridescence from prism cascade visible through transparent lens surround)",
+      "Micro-textured cooling fins running along the upper edges (passive thermal management for extended microwave-band use)",
+      "Signal-red crosshair marking etched into the top plate above the optical axis",
+      "Subtle Ringo Corporation geometric logo (angular Φ symbol) on lower left grip",
+      "Faint green phosphorescence visible in internal prism stack when powered, visible through small inspection port",
+      "Mechanical zoom ring around optical barrel with click-stop detents"
+    ],
+    "manufacturer_markings": "Ringo Corporation 'Signal Wireless Division' logo (embossed) on grip; model designation 'SPECTRAL FOLD SFI-8.2' stamped below display; regulatory frequency-band stamps on rear plate; serial number etched into titanium frame",
+    "condition_typical": "In use, the display shows rapid-updating false-color composite imagery with overlaid geometric anomaly markers (boxes, heat outlines, electronic pulse indicators) in contrasting hues. Micro-cooling fans audible during extended microwave-band scanning. Grip shows fingerprint oils; lens may show condensation fog in humid environments due to sealed optical cavity."
+  },
+  "image_prompt": "Ringo Spectral Fold Imager product photography: sleek gunmetal imaging device held at a slight angle on a matte black workbench surface, rear OLED display active and glowing with false-color thermal composite image showing hidden wall cavity and heat signature; dramatic top-side blue-spectrum LED lighting catching the hexagonal optical aperture and revealing the faint rainbow iridescence of internal prism layers; surrounding the device, scattered technical reference materials and a small cooling rig; bokeh city skyline background suggesting GLMZ urban environment; cyberpunk surveillance aesthetic with emphasis on high-tech precision and industrial materials; --ar 3:2 --v 6"
 }

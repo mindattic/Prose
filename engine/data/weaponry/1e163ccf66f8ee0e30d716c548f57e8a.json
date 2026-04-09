@@ -43,5 +43,38 @@
     "artisan",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions Compressed Lattice Ascender",
+    "Birgitta Asante-Papadopoulos",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "Crucible Genomics",
+    "Dzintars Ababio-Suleimenov",
+    "GLMZ",
+    "Sagyn Ogawa-Twumasi",
+    "TESSERA CC-6 'Shepherd'",
+    "The Collective",
+    "The Pure Hand",
+    "Veslemøy Achebe-Tursynov"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, brutal fist weapon resembling a knuckle duster merged with a short blade—the T-handle grip dominates, with a stubby ceramic point protruding forward like a scorpion's stinger. The overall impression is industrial and asymmetrical, built for one devastating punch rather than sustained combat.",
+    "dimensions": "Total length 14 cm (grip 6 cm, blade 8 cm), width across T-handle approximately 4.5 cm, depth 2.8 cm",
+    "weight_description": "Surprisingly dense and balanced—95 grams feels heavier than its size suggests, with weight concentrated toward the blade tip to amplify penetration force. Sits heavy in a closed fist, almost like holding a ball-peen hammer's head.",
+    "primary_material": "Ablonite-KR reactive ceramic blade mounted in a reinforced polymer grip frame with internal tungsten-alloy weight distribution core",
+    "finish": "Matte ceramic blade with subtle rainbow microcracking visible under light (reactive surface showing stress-response potential). Grip frame has a weathered industrial plastic finish with light machine scoring from manufacturing.",
+    "color_scheme": "Pale bone-white ceramic blade contrasting against charcoal polymer grip; minimal accent—only faint Forge-Smith collective hallmark etched into the T-handle crossbar in silver",
+    "grip_texture": "Texturized polymer with fine cross-hatching to prevent slip during punch delivery; T-handle arms are wrapped in thin synthetic cordage for additional grip security under blood or sweat",
+    "distinctive_features": [
+      "Microcracked reactive surface on blade indicating Ablonite-KR compound readiness",
+      "Subtle stress fractures radiating from blade tip—sign of material's hardness threshold",
+      "T-handle configuration positioned for knuckle-duster fit in closed fist",
+      "Blade edge is nearly imperceptible—ultra-sharp ceramic point rather than traditional bevel",
+      "Small circular indentation on grip where thumb naturally rests for striking force direction",
+      "Faint wear patterns on grip where repeated palm friction has smoothed high points"
+    ],
+    "manufacturer_markings": "Small 'FS' collective symbol laser-etched into the T-handle crossbar (3mm, silver fill); no serial number visible (unlicensed production). Occasional batch-marking scratches on grip underside, suggesting artisan hand-finishing.",
+    "condition_typical": "Field-worn with visible micro-scratches on grip from equipment carry; blade shows light patina but remains pristine—ceramic doesn't rust, only accumulates microscopic wear patterns from contact strikes against armor plate"
+  },
+  "image_prompt": "Cyberpunk product photography: Forge-Smith Collective Bone Key push dagger on dark brushed steel surface, angled 45 degrees to catch dramatic side-lighting across the bone-white ceramic blade. Gloved hand (fingerless tactical glove showing augmented subcutaneous port scars) gripping the T-handle in closed-fist configuration, demonstrating striking posture. Blade's microcracked surface catches harsh rim light, creating pale shadows that emphasize reactive ceramic hardness. Deep charcoal background with subtle GLMZ industrial neon reflection. Extreme macro detail on blade tip and grip texture. High contrast, cold color temperature, cyberpunk noir aesthetic. --ar 3:2 --v 6"
 }

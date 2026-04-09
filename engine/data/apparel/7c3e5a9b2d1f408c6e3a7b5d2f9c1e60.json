@@ -43,5 +43,26 @@
     "Crucible Industries Orbital Elevator Graviton Assist",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
     "SynapTech GripTrue Palmar Adhesion Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, asymmetrical climbing shoe with a wrapped ankle collar that hugs the lower leg. The sole shows a subtle iridescent sheen from the programmable friction polymer. The overall silhouette is aggressive and performance-oriented, with a pronounced heel cup and downturned toe. High-tech aesthetic with minimal visual bulk despite complex internal systems.",
+    "fit": "Close-fitting and compression-oriented throughout the foot and ankle. The wrap upper molds to the lower leg without traditional lacing. Snug at the midfoot for precision, with a structured heel counter. The ankle collar sits just below the malleolus, allowing full range of motion while providing proprioceptive feedback.",
+    "primary_material": "Programmable friction polymer sole; ballistic-weave synthetic upper with integrated flex zones; reinforced heel cup in treated neo-leather; breathable mesh panels along the arch and ankle collar",
+    "texture": "Sole surface has a subtly granular, almost gel-like appearance with micro-dimpling visible under light. Upper is smooth yet slightly grippy to the touch. Ankle collar features fine ribbing for tactile feedback during pressure-dial adjustments.",
+    "color_scheme": "Matte charcoal-gray upper with silver-gray iridescent sole. Accent stitching in electric cyan running along the arch and around the ankle collar. The manual pressure dial features gunmetal finish with white numeric markers.",
+    "closures": "No traditional laces. Magnetic snap at the ankle collar for quick closure; friction-fit wrap system with secondary retention. Manual stiffness dial (friction-fit knob) positioned on the lateral ankle strap. BCI neural link receptor embedded in the heel counter (invisible external feature).",
+    "distinctive_features": [
+      "Programmable friction polymer sole that responds to lateral pressure",
+      "Dual stiffness control: manual dial on ankle strap and BCI neural interface",
+      "Iridescent coating on sole suggests active polymer state",
+      "Integrated ankle brace structure without external straps",
+      "Micro-venting mesh panels to prevent sweat pooling",
+      "Wear indicators on sole that fade under friction load",
+      "Reinforced toe zone for rail and edge contact"
+    ],
+    "tier_indicator": "Tier 1-2 luxury performance. Premium pricing, cutting-edge material science, active tech integration.",
+    "cultural_context": "Urban infrastructure climbers, corpo security personnel with climbing certifications, professional sport climbers, maintenance teams working on Behemoth structures and elevated corporate architecture. Signals investment in vertical mobility and technical skill.",
+    "condition_typical": "Pristine when new, with polymer sole showing grip-wear patterns after 20-30 climbs. Heel counter may show slight creasing from repeated use. Mesh panels remain clean if wearer maintains regular maintenance cycles."
+  },
+  "image_prompt": "Close-up fashion shot of the Ascent Variform Climbing Shoe on a dark mannequin leg, displayed at a 45-degree angle to show sole and profile simultaneously. The foot is positioned as if gripping an invisible edge. Moody blue-gray lighting from above casts the sole's iridescent polymer into soft cyan highlights. Cyberpunk warehouse backdrop with industrial scaffolding and climbing holds slightly out of focus behind. Shallow depth of field emphasizes the shoe's texture. Water-droplet bokeh in the background suggests recent rain on infrastructure. --ar 2:3 --v 6"
 }

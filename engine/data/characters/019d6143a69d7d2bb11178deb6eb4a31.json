@@ -239,5 +239,13 @@
     "posture_movement": "Moves quietly and efficiently, minimal wasted motion. Slight forward hunch from hours spent cleaning low fixtures and reading in dim light. Eyes track rooms and people with an invisible cataloguing motion—the stillness of someone accustomed to being overlooked. Hands move with precision when working; in stillness, often occupied with fidgeting (pen, fabric, notebook edge).",
     "clothing_style": "Tessera-brand oversized cleaner coveralls (two sizes too large, hemmed and repaired extensively—cuffs are patchwork of different fabric colors and textures from multiple repairs). Layered under with plain gray thermal shirt. Worn utility boots with reinforced soles. Small canvas satchel for notebook and personal effects. All clothing is Tier 4 utilitarian, maintenance-focused, showing deep use and careful stewardship."
   },
-  "image_prompt": "Portrait of a 26-year-old nonbinary person with deep warm brown skin and long untamed black hair pulled back loosely, slight angular build, wearing oversized heavily-repaired Tessera-brand cleaner coveralls in muted gray-blue. Bioluminescent lichen-pattern geneware glowing faintly blue-green across collarbones and shoulders. Deep observant brown eyes, fine-featured angular face, minimal expression. Holding a worn physical notebook. Cyberpunk setting, nighttime, subtle blue and green neon ambient lighting reflecting off skin modifications. Cinematic, hyperreal, intimate character study, moody atmosphere, overhead practical work lighting, melancholic and thoughtful mood. --ar 2:3 --v 6"
+  "image_prompt": "Portrait of a 26-year-old nonbinary person with deep warm brown skin and long untamed black hair pulled back loosely, slight angular build, wearing oversized heavily-repaired Tessera-brand cleaner coveralls in muted gray-blue. Bioluminescent lichen-pattern geneware glowing faintly blue-green across collarbones and shoulders. Deep observant brown eyes, fine-featured angular face, minimal expression. Holding a worn physical notebook. Cyberpunk setting, nighttime, subtle blue and green neon ambient lighting reflecting off skin modifications. Cinematic, hyperreal, intimate character study, moody atmosphere, overhead practical work lighting, melancholic and thoughtful mood. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 29.3,
+    "Central Asian": 27.2,
+    "South Asian": 22.2,
+    "East Asian": 14.1,
+    "Sub-Saharan African": 5.2,
+    "Middle Eastern": 2.0
+  }
 }

@@ -46,5 +46,26 @@
     "Immaculée Dalgaard-Nwosu",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A flowing, asymmetrical silhouette designed for synthetic bodies with elongated proportions. The warm ochre overshirt drapes with architectural precision over non-standard torso geometry, while deep indigo palazzo trousers create a striking two-tone contrast. The overall impression is fluid yet structured—simultaneously soft and engineered.",
+    "fit": "Custom-tailored for synthetic frame proportions: elongated limbs, exaggerated torso depth, sensor mounting points at skull and shoulders. The wrap-front overshirt provides accommodation without compression. Palazzo trousers use six-panel construction for extended leg ratios. Deliberately oversized where humans would be standard.",
+    "primary_material": "Warm ochre structural jersey (overshirt), deep indigo modular synth-cotton blend (trousers), tension-responsive elastane panels at clip points",
+    "texture": "Smooth, engineered finish on the jersey with subtle ribbed seam reinforcement. Trousers have a matte fluid drape with visible panel stitching at modular connection points. Tension-lace shoes feature minimal texture for sensor clarity.",
+    "color_scheme": "Warm ochre (primary overshirt) with deep indigo (trousers and accent bands). Neutral metallic gray at magnetic snap points and clip hardware. No patterns—clean, intentional color blocking.",
+    "closures": "Magnetic tension bands on overshirt (no traditional buttons), six clip-point system for full panel detachment, tension-lace systems on footwear",
+    "distinctive_features": [
+      "Fully modular construction—all panels detach at standardized clip points for body modification swaps",
+      "Shoulder wrap designed to accommodate external sensor arrays without compression",
+      "Magnetic tension closure system instead of traditional fastening",
+      "Six-panel trousers engineered for extended leg ratios",
+      "Visible seam reinforcement at all load-bearing joints",
+      "Flat-wrap shoe design for non-standard foot geometry",
+      "Sensor-accessible neckline and shoulder cutouts"
+    ],
+    "tier_indicator": "Tier 4—street-collective functional wear. Affordable for working synthetic bodies, not corpo-grade, but intentionally well-designed rather than salvage.",
+    "cultural_context": "Worn by synthetic workers, corporate replicant labor, modified humans who've chosen synthetic limbs. Signals street-collective affiliation (Nullframe), embrace of non-human embodiment, and DIY body modification culture. 'Civic Day' branding suggests everyday, public-facing wear for synthetics navigating GLMZ society.",
+    "condition_typical": "Pristine when new, but expected to show wear at clip points and magnetic snap edges. Modular panels may be swapped frequently, creating a 'lived-in' customized look over time."
+  },
+  "image_prompt": "Fashion photography of a sleek synthetic humanoid model wearing a warm ochre structural jersey wrap-front overshirt and deep indigo fluid palazzo trousers, tailored for elongated limb proportions. The model has visible chrome sensor clusters at shoulders and skull. Magnetic snap closures gleam under cool blue-white studio lighting. Six-panel trousers flow dramatically. Dark urban backdrop with rain-slicked concrete. Moody, minimalist composition emphasizing the geometric precision of the garment's modular construction. Shot on dark mannequin optional. Cyberpunk fashion editorial aesthetic. --ar 2:3 --v 6"
 }

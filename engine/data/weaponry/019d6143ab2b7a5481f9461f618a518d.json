@@ -59,5 +59,40 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Blessing Ó Treasaigh-Nanumea",
+    "Cutter Vane",
+    "GLMZ",
+    "Helix Biosystems",
+    "Ihaia Nystrom-Keita",
+    "Irontide Tidal Energy",
+    "Kairos",
+    "Lazarus LX-2 'Lab Rat'",
+    "LifeWire PalateTrue Gustatory Calibration System",
+    "Nenad Vargas-Baffour"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, clinical emitter device with a subtly menacing elegance—somewhere between a medical diagnostic wand and a compact pistol. The silhouette is asymmetrical, with a tapered muzzle assembly that flares slightly at the emission aperture. The overall impression is of precision biotech rather than crude weaponry, which is precisely why it's so effective in crowds.",
+    "dimensions": "19 cm length, 7 cm width at grip, 5.5 cm height. Emission aperture: 8 mm diameter. Reservoir chamber extends 6 cm from trigger guard.",
+    "weight_description": "Deceptively light at 2.1 kg—balanced forward toward the muzzle with a hollow, almost delicate feel. Users often describe it as 'feeling like it shouldn't be lethal,' which is part of its psychological advantage.",
+    "primary_material": "Medical-grade polymer composite body with reinforced titanium alloy internal conduction pathways. Saline vapor reservoir in thermally insulated polymer.",
+    "finish": "Satin anodized aluminum muzzle assembly with a matte charcoal polymer grip section. The galvanic cell housing has a subtle pearlescent sheen under direct light—medical instrumentation aesthetics rather than military.",
+    "color_scheme": "Charcoal gray primary body with brushed silver/titanium accents at the muzzle and emission aperture. Accent indicators: subtle blue LED beneath the trigger guard (power status).",
+    "grip_texture": "Textured medical-polymer grip with shallow finger recesses—designed for precise trigger control rather than combat grip. Slightly tacky, non-slip surface that feels clinical rather than aggressive.",
+    "distinctive_features": [
+      "Hairline fracture pattern etched faintly into the grip—a grim designer's signature",
+      "Miniature saline reservoir with internal pressure gauge visible through translucent side panel",
+      "Tapered muzzle with ionization charge rings visible as fine grooves spiraling toward aperture",
+      "Integrated thermal dissipation vanes along the barrel—designed to look like cooling ribs",
+      "Subtle HELIX BIOSYSTEMS logo stamped in microscopically small text along the reservoir",
+      "Galvanic cell indicator dial on the grip: a small numbered wheel showing remaining charges (0-18)",
+      "Vapor exhaust ports disguised as aesthetic venting along the top of the barrel",
+      "No traditional safety mechanism—operation via biometric palm recognition on trigger guard"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS nameplate in microscopically detailed font along the top of the receiver. Serial number etched into the galvanic cell housing. Model designation 'GPFE-4' stamped on the underside of the grip—intentionally subtle, designed to avoid casual identification.",
+    "condition_typical": "Field units typically appear pristine or near-pristine, as the weapon is rarely subjected to impact stress or kinetic trauma. Saline reservoirs may show slight discoloration from mineral buildup. Used units often bear discrete tape patches over the serial number. Black market units sometimes have custom engravings or identifier scratches."
+  },
+  "image_prompt": "Galvanic Periosteal Fatigue Emitter GPFE-4 on dark brushed steel surface, angled 45 degrees to show tapered muzzle aperture and grip detail. Dramatic blue-white side-lighting emphasizing the clinical precision of the design and the subtle shimmer of the anodized aluminum. Shallow depth of field with soft focus on the saline vapor reservoir in the background. Cyberpunk medical-tech aesthetic—imagine a bone-density scanner designed by assassins. Include the faint hairline fracture pattern etched into the grip catching the light. Moody, clinical, menacing restraint. --ar 3:2 --v 6"
 }

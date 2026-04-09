@@ -42,5 +42,24 @@
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
     "Lazarus LX-2 'Lab Rat'",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, performance-oriented running shoe with a minimal aesthetic. The silhouette is modern and athletic—slightly tapered at the heel, generous toebox, with a subtle forward rake to the profile. On-foot, it presents as a premium sport shoe without aggressive visual augmentation cues.",
+    "fit": "Snug, responsive fit through the midfoot with a secure heel cup. The toebox offers room without excess volume. Designed to work equally well for biological and prosthetic feet—accommodates varying stride mechanics without compromise.",
+    "primary_material": "High-performance synthetic composite upper with reinforced mesh panels. Midsole features Voss's proprietary 'pressure-adaptive lattice'—a semi-rigid polymer framework that flexes and redistributes load dynamically. Outsole is durable carbon-reinforced rubber.",
+    "texture": "Smooth, engineered feel. The upper is tightly woven with a slight sheen. The midsole shows a visible honeycomb lattice structure when viewed from the side—technical but not ostentatious. Outsole has micro-textured grip patterns.",
+    "color_scheme": "Clean, sport-minimal palette. Primary colorways: matte graphite, arctic white, deep navy, or muted charcoal. Accent striping in subtle silver or electric cyan along the lateral side. The 'A+' heel tab mark appears in matching metallic.",
+    "closures": "Traditional lace system with friction-lock eyelets, designed for quick adjustment. No magnetic or tech-integrated closures—pure mechanical reliability.",
+    "distinctive_features": [
+      "Pressure-adaptive midsole lattice visible through semi-translucent side panel",
+      "Small 'A+' marking on heel tab (aug-compatibility indicator)",
+      "Asymmetrical heel cup geometry for prosthetic ankle accommodation",
+      "Reinforced medial and lateral arch zones",
+      "Minimal branding—only Voss wordmark on tongue"
+    ],
+    "tier_indicator": "Tier 3 functional—premium working-class tech. Not corpo luxury, but investment-level performance gear with accessibility focus.",
+    "cultural_context": "Signals serious augmentation integration without broadcasting it. Worn by augmented athletes, rehab patients, chrome-positive physicality-focused individuals. Says: 'I take my augmentations seriously, and I'm active despite or because of them.' Respectable in gym, clinic, or street contexts.",
+    "condition_typical": "Pristine or well-broken-in depending on user commitment. High-tier examples show clean wear patterns; Tier 3 users tend to maintain them carefully due to cost. May show light scuffing on outsole or creasing at the toe box, but overall durable and resistant to distressing."
+  },
+  "image_prompt": "Close-up fashion shot of Voss Adaptive Runner shoes on a cyberpunk runner's feet, shot from a dynamic low angle during stride. One shoe in mid-step, visible lattice midsole glowing faintly under moody blue-grey studio lighting. The model has subtle chrome prosthetic details visible at the ankle joint. Dark industrial backdrop with geometric shadow play. Minimalist sport aesthetic, technical precision emphasized. Professional athletic photography style. --ar 2:3 --v 6"
 }

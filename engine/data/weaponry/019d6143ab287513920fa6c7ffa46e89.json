@@ -57,5 +57,37 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Ferrogate Enforcer Cruiser",
+    "GLMZ",
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Subdermal Shear Projector SSP-1 'Faultline'",
+    "TESSERA PG-2 'Signature'",
+    "The Resonance Communion",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact bullpup carbine with an organic, almost skeletal aesthetic. The frame curves and tapers unnaturally, suggesting biomechanical engineering rather than conventional firearms design. The emission aperture dominates the forward profile—a wide, flared muzzle that looks more like a speaker horn than a barrel. No visible bolt, charging handle, or traditional mechanical complexity; instead, the body is dominated by smooth, flowing polymer surfaces interrupted only by discrete sensor arrays and a minimal control interface.",
+    "dimensions": "Overall length: 58 cm; barrel/emission chamber: 22 cm; width at widest (grip): 8 cm; height with mounted display: 16 cm",
+    "weight_description": "Deceptively light in hand—3.1 kg distributed along the bullpup frame creates perfect balance. Feels like it's made of air despite its solid construction. Users describe it as 'impossibly easy to shoulder,' with no muzzle heaviness whatsoever.",
+    "primary_material": "Advanced polymer composite (ZHENG-DAO proprietary thermoplastic reinforced with carbon-fiber threads), aluminum alloy subframe for sensor mounts and internal waveguide structure",
+    "finish": "Matte tactical black polymer with subtle anthracite weathering in high-contact areas. The aluminum internal structures visible through cutout windows show brushed gunmetal patina. No reflective surfaces—engineered for minimal visual signature.",
+    "color_scheme": "Primary: deep charcoal matte black; Secondary: brushed aluminum gray (visible in sensor mounting rings and waveguide elements); Accent: faint teal LED glow from the adaptive targeting array (visible only when powered)",
+    "grip_texture": "Rubberized polymer with fine crosshatch texture for secure purchase even in wet environments. The grip is substantially curved, almost organic, with a palm swell that feels almost biological.",
+    "distinctive_features": [
+      "Wide, flared emission aperture (22 cm diameter) resembling a speaker horn—no traditional barrel",
+      "Recessed sensor array along the top rail with pinhole microphones and pressure-calibration points",
+      "Small liquid-crystal display inset into the charging area showing frequency readout and power state",
+      "Three discrete venting slots along the left side (thermal dissipation for capacitor banks)",
+      "Absence of a visible trigger guard—trigger is a pressure-sensitive pad recessed into the grip",
+      "Waveguide cutout windows showing internal aluminum resonance chambers (aesthetic + functional weight reduction)",
+      "Faint thermal bloom patterns etched into polymer near the aperture from factory thermal cycling tests",
+      "ZHENG-DAO nameplate in minimal sans-serif font on the right side of the receiver, barely raised above the surface"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC stamped in minimal gray lettering on the right side of the polymer housing, approximately 12 cm from the aperture. Serial number and compliance codes laser-etched into an inconspicuous aluminum plate recessed into the grip. Manufacturing date encoded as a QR microprint near the capacitor access panel (visible only under magnification).",
+    "condition_typical": "Operators maintain the EPCR-3 in meticulous condition—any polymer scoring or aperture degradation directly affects targeting precision. Well-used examples show fingerprint oils on the grip and minor thermal stress marks around the sensor array. Battle-worn units are rare; the weapon is too specialized and too restricted for sustained field wear. When damaged, it is typically retired rather than field-repaired."
+  },
+  "image_prompt": "Product photograph of the ZHENG-DAO EPCR-3 Endolymphatic Pressure Cascade Rifle positioned on a dark matte surface, angled 45 degrees to emphasize the flared emission aperture. Gloved hand (tactical black synthleather) grips the bullpup stock, fingers positioned near the recessed pressure-pad trigger. Dramatic side-lighting from the left reveals the smooth polymer transitions and the brushed aluminum waveguide windows. Teal targeting LED faintly illuminated. Background: deep charcoal gradient fading to black. Shallow depth of field isolates the weapon against a cyberpunk interior (dimly lit data center aesthetic). Close-up inset showing the recessed sensor array with pinhole microphones. No smoke, no impact, no violence—sterile product photography aesthetic. Futuristic, clinical, unsettling. --ar 3:2 --v 6"
 }

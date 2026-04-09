@@ -45,5 +45,37 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": "Vantablack Media"
+  "parent_corponation": "Vantablack Media",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions ARC-SLP 'Diplomat'",
+    "GLMZ",
+    "Glenville Sound",
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "Nika Svensson-Kone",
+    "Patient Zero",
+    "Street Custom 'Glass Garden' Caltrops",
+    "SynapTech GripTrue Palmar Adhesion Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A premium executive briefcase indistinguishable from high-end corporate luggage — clean lines, professional geometry, no visible weapon indicators. The case presents as functional business equipment: leather-wrapped, structurally rigid, with a centered carry handle and subtle corner reinforcement. At first glance, entirely unremarkable.",
+    "dimensions": "450mm length × 320mm width × 100mm depth. Barrel concealed behind false panel on 450mm end. Overall profile suggests compact document case rather than weapons platform.",
+    "weight_description": "Deceptively substantial — 3.8 kg loaded feels like a case containing laptop and files, not automatic firepower. Balanced weight distribution mimics legitimate briefcase cargo. No obvious heaviness that would suggest weapon integration.",
+    "primary_material": "Premium leather exterior (likely synthetic composite in GLMZ 2226, lab-grown or reclaimed) stretched over aluminum or carbon-composite frame. Leather suggests luxury; frame provides structural support for internal weapon assembly and recoil management.",
+    "finish": "Matte black or deep charcoal leather with hand-stitched detailing. Brushed aluminum corner caps and latch hardware. Minimal reflectivity — designed to absorb rather than reflect light. Surface shows subtle grain patterns consistent with high-grade executive luggage.",
+    "color_scheme": "Primary: matte black leather. Accents: brushed silver or gunmetal aluminum hardware, subtle tan or cream stitching. Entirely corporate, entirely forgettable.",
+    "grip_texture": "Leather carry handle is soft but grip-textured — genuine tactile feel, not slick. Hidden firing grip inside handle is likely rubberized polymer with subtle ridging for trigger-finger purchase. Exterior shows no evidence of internal mechanism.",
+    "distinctive_features": [
+      "Recessed latches with minimal protrusion — designed to close flush",
+      "False document compartment with spring-loaded panel (visually seamless)",
+      "Integrated X-ray scatter lining creates visual noise on screening — appears as electronics clutter",
+      "Subtle reinforcement stitching around perimeter suggests structural integrity for weapon system",
+      "Barrel end false panel is cosmetically identical to case end — no visible seam without close inspection",
+      "Magazine compartment beneath functional document holder — accessible without opening case",
+      "Vantablack branding likely minimal: understated metal plate or embossed logo, positioned like standard designer mark"
+    ],
+    "manufacturer_markings": "Vantablack Mobility logo discretely placed on interior leather label or embossed subtly near base corner — intentionally forgettable, designed to blend with executive briefcase aesthetic. Serial number likely etched internally only, never on exterior. Minimal exterior branding maintains civilian appearance.",
+    "condition_typical": "Field-condition BC-1s show subtle wear: scuffed corners from courier duty, worn handle leather where grip pressure accumulates, faint scratches from checkpoint X-ray conveyor belts. Despite use, maintained in professional condition — operatives cannot afford appearance of damaged/suspicious luggage. Interior mechanisms show maintenance evidence (light lubrication, tight tolerances) but weapon integration remains invisible to external inspection."
+  },
+  "image_prompt": "Product photography of a matte black premium leather executive briefcase, 45cm long, photographed from three-quarter view on a dark gunmetal surface. Professional lighting with dramatic side-light creating subtle shadows across leather grain, emphasizing texture without revealing internal mechanism. Close detail of brushed aluminum corner cap and carry handle grip. Briefcase styled as luxury corporate equipment — utterly civilian, utterly forgettable. Atmospheric cyberpunk lighting: cool tones, minimal reflection. No weapon visible; case appears as innocent business luggage. Shot includes slight overhead angle suggesting it rests on an executive desk. GLMZ aesthetic: high-end corpo equipment, 2226 materials. --ar 3:2 --v 6"
 }

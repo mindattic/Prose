@@ -56,5 +56,39 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Helix Biosystems",
+    "TESSERA CR-12 'Whisper'",
+    "TESSERA ES-4 'Perimeter'",
+    "The Question",
+    "The Quiet Room",
+    "The Threshold",
+    "The Underlayer Collective",
+    "Vesna Čolić-Strand"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, insectoid hexapod drone with a distinctive bulbous central thorax housing the filament spool. Its silhouette reads as almost delicate—spider-like rather than militaristic—with thin articulated legs splayed outward. The design deceives: it's purpose-built infrastructure, not pursuit.",
+    "dimensions": "28 cm length (nose to rotor array), 14 cm width (leg-tip to leg-tip when folded), approximately 9 cm height at thorax. Filament deployment nozzle protrudes 3 cm forward.",
+    "weight_description": "Deceptively light in hand—1.1 kg feels almost fragile, encouraging a false sense of security. The weight distribution is rear-heavy due to spool mass, creating subtle imbalance.",
+    "primary_material": "Aerospace-grade carbon composite chassis with reinforced polymer articulation joints. Spool housing is brushed titanium alloy to house piezoelectric filament safely.",
+    "finish": "Matte charcoal composite with dull titanium accents around spool housing. Deliberately non-reflective to minimize visibility in low-light deployment. Micro-adhesive piton launcher barrel shows faint wear scoring from repeated pneumatic cycles.",
+    "color_scheme": "Charcoal gray primary with brushed gunmetal spool housing. Faint HELIX BIOSYSTEMS logo in dark blue on thorax. Minimal visual signaling—designed for architectural camouflage, not aesthetic.",
+    "grip_texture": "Tactile carry handle (5 cm × 2 cm) runs along dorsal surface with rubberized polymer coating, slightly tacky to prevent fumbling during deployment setup.",
+    "distinctive_features": [
+      "Six articulated hexapod legs with micro-adhesive contact pads (barely visible)",
+      "Central rotary spool visible through semi-transparent titanium housing—spooled filament appears as gossamer thread",
+      "Micro-adhesive piton launcher mounted ventral-forward: small pneumatic muzzle (8 mm diameter), barely larger than a pen nib",
+      "UV-reactive panel on dorsal surface (visible only under ultraviolet light as faint geometric lattice)",
+      "Battery status indicator LED recessed into rear thorax—single amber/green point light",
+      "Rotor array (six rotors) mounted on articulated gimbal, designed for low-altitude hover stability",
+      "Filament tension sensor visible as thin crystalline window on port side of spool housing"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS stamped in 4 mm sans-serif font on port side of thorax, accompanied by serial number in micro-etched format. Regulatory restriction notice (RESTRICTED - TIER 2+) printed on undercarriage in 2 mm reflective lettering. Faint batch code laser-etched near rotor gimbal.",
+    "condition_typical": "Field-deployed units show minimal cosmetic wear but accumulated micro-scratches on rotor blades and spool housing. Dried filament residue sometimes visible on piton launcher. Battery indicator yellows with cycle count. Well-maintained units appear virtually pristine; heavily-used units show visible spool wear and dull rotor articulation from debris exposure."
+  },
+  "image_prompt": "Product photograph of a compact hexapod drone against matte black backdrop, angled 45 degrees left. Drone positioned on brushed steel platform. Dramatic side-lighting from upper left reveals matte charcoal composite chassis and brushed titanium spool housing with gossamer filament visible inside. Three of six legs extended, others folded. Micro-adhesive piton launcher nozzle prominent in foreground. Minimal reflections. Cyberpunk aesthetic: cold blue-gray color temperature, subtle geometric shadow casting. Include faint HELIX BIOSYSTEMS branding visible on thorax. Optional UV light effect showing faint reactive panel on dorsal surface. Sterile, clinical product presentation emphasizing architectural precision and invisibility. Shot as if from corporate weapons catalog. --ar 3:2 --v 6"
 }

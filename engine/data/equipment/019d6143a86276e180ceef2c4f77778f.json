@@ -77,5 +77,23 @@
     "Street Custom 'Mercy' Veterinary Tranquilizer Gun",
     "The Signal",
     "Zoë Mbekele-Thorvaldsdóttir"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately unremarkable hardcase unit designed to resemble industrial electrical equipment—deliberately bland to avoid drawing attention on a workbench or equipment rack. The transmitter has the functional aesthetic of grid-integration hardware: solid, recessed, minimalist. Clean lines, no unnecessary details. When installed, it's meant to vanish into the visual noise of a server room or electrical closet.",
+    "dimensions": "18cm × 12cm × 4cm (roughly thick paperback form factor); compact enough for a briefcase or server rack mounting",
+    "weight_description": "Handheld but dense; approximately 1.2–1.5 kg. Feels substantial without being cumbersome. Designed to be carried in one hand or secured to a mounting bracket.",
+    "primary_material": "Aluminum alloy chassis with rubberized grip panel on upper surface; interior potted epoxy for signal isolation and environmental durability",
+    "finish": "Matte industrial gray with minimal branding; powder-coat finish to resist static buildup. Top surface has subtle texture for grip. All edges beveled slightly to suggest wear-resistance.",
+    "color_scheme": "Gunmetal gray body with black electrical interface panel (bottom). Ouroboros Energy logo in subdued teal on top-left corner—small enough to read but not to advertise. Standard warning labels in yellow/black on rear.",
+    "interface_elements": "Front: dual-position rotary dial (segment ID selector, 1–8), recessed pushbutton for mode toggle, compact LCD screen (3×1 cm, shows encryption state and grid load). Rear: industrial-grade IEC 60320 power inlet (standard grid connector), LED status indicator (discrete amber glow when active). Side: small reset pinhole, temperature range label.",
+    "distinctive_features": [
+      "Laminar-phase modulation indicator: faint holographic gradient on top surface that shifts subtly under light, visualizing 'signal riding on noise floor'",
+      "Self-powered operation means no external PSU needed—intentional design choice visible in minimal rear connectors",
+      "LCD screen uses low-refresh, power-efficient display design—barely visible unless actively transmitting",
+      "Segment ID dial is tactilely satisfying, numbered 1–8 in both Arabic and standardized industrial iconography"
+    ],
+    "manufacturer_markings": "OUROBOROS ENERGY™ in teal sans-serif on top-left; Model OBO-LDT-7.2 stamped on rear; 'GRID-INTEGRATED TELEMETRY SOLUTION' in small text below model number; GLMZ regulatory stamp (authentic but intentionally generic); manufacturing date code (2224 typical).",
+    "condition_typical": "Sits on equipment racks or tucked into electrical closets; minimal fingerprints due to matte finish and careful design. In active use: amber LED glows softly, LCD shows cryptic alphanumeric state codes. Cable management around IEC connector suggests it's been part of the infrastructure long enough to deserve cable ties and labels."
+  },
+  "image_prompt": "Ouroboros Energy Laminar Drift Transmitter: hardcase electronics unit, gunmetal gray industrial aluminum, 18×12×4cm, sitting on a cable-strewn steel workbench in a dimly lit server room. Single overhead work lamp casting sharp shadow; teal Ouroboros logo catches warm light. IEC power cable coiled nearby. LCD screen glowing faint amber. Surrounding equipment blurred in background—racks, conduit, electrical panels. Cyberpunk industrial aesthetic: functional, purpose-built, intentionally unmarked. Dramatic side-lighting emphasizing the beveled edges and texture. No people. --ar 3:2 --v 6"
 }

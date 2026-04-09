@@ -44,5 +44,37 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Magnetic Accelerator Rifle MAR-8 'Longbow'",
+    "GLMZ",
+    "Glenville Sound",
+    "Ouroboros Energy",
+    "Synaptrel",
+    "TESSERA PG-2 'Signature'"
+  ],
+  "physical_description": {
+    "visual_profile": "A skeletal, angular tactical crossbow with no visible limbs or string — the frame is pure geometry: a rigid polymer chassis with integrated electromagnetic rails running the length of the body. It reads as a weapon of pure function stripped of ornament, resembling an industrial coilgun more than a traditional bow. The silhouette is aggressive and minimalist.",
+    "dimensions": "800mm overall length, 120mm width at the widest point (rail assembly), 95mm height. Magazine well sits high, creating an asymmetrical profile.",
+    "weight_description": "Hefty but balanced — 5.1 kg distributes along the centerline, making it manageable despite its density. Feels solid and deliberately engineered rather than ergonomic.",
+    "primary_material": "Reinforced polymer composite chassis with internal steel rail assemblies and ferromagnetic coil windings. Heat-dissipation fins integrated into the rail shroud.",
+    "finish": "Matte charcoal polymer with brushed steel accents where the rails interface. The aluminum coil housing shows intentional wear patterns — scuffed matte gunmetal with micro-scratches from field use.",
+    "color_scheme": "Charcoal gray primary with gunmetal steel secondary. Minimal accent — a single blue LED indicator at the magazine well (power status) and faint green charging contacts.",
+    "grip_texture": "Textured polymer grip with subtle ridges — designed for bare hand or gloved operation. The rear of the frame has a stippled rubber overmold for secure handling under recoil.",
+    "distinctive_features": [
+      "Linear 8-bolt magazine mounted top-center, visible ferromagnetic bolt casings visible through translucent polymer insert",
+      "Dual electromagnetic rail shrouds running full length of body, with heat-dissipation fin vanes",
+      "Integrated capacitor array visible as bulges along the right side of the chassis",
+      "Charging port recessed under a hinged dust cover (right side, rear)",
+      "Illuminated LED power indicator (blue) and round selector (safety/semi/auto) with tactile detents",
+      "Integrated scope rail (Picatinny) running full top length",
+      "Acoustic suppressor housing at the muzzle — a cylindrical ferrite chamber designed to dampen electromagnetic discharge signatures",
+      "Featureless muzzle end with concentric electromagnetic coil housing — no barrel bore visible"
+    ],
+    "manufacturer_markings": "Ironside Armaments logo (angular sans-serif 'IA') stamped on the left side of the polymer chassis just forward of the grip. Serial plate (2mm aluminum) riveted to the underside of the frame, difficult to read without disassembly. Legal classifier stamp — 'ARCHERY DEVICE' — etched in small font above the safety selector (a deliberate regulatory fiction).",
+    "condition_typical": "Well-maintained field-ready. Polymer shows minor scuff marks and micro-scratches consistent with operator use. Rail shrouds exhibit heat discoloration (bronze-purple oxidation) from recent discharge cycles. Dust cover shows small dent (impact damage). Internally clean — no obvious fouling or corrosion."
+  },
+  "image_prompt": "Product photography of the Arcturus HCB-3 'Longbow' coilgun crossbow, overhead 3/4 angle on dark composite surface. Weapon lies at slight diagonal, showing top-mounted 8-bolt magazine and full electromagnetic rail assembly. Dramatic side-lighting from upper left, casting sharp shadows that emphasize the skeletal rail geometry and ferromagnetic coil housings. Muzzle suppressor chamber in sharp focus. Charcoal polymer and brushed steel surfaces catch light, showing heat discoloration marks. Blue LED power indicator glowing faintly. Gloved tactical hand enters frame from right, fingers hovering near the charging port (open). Cyberpunk tactical aesthetic — cold, functional, legally ambiguous. Dark grays and gunmetals dominate. Background is near-black with subtle texture suggesting industrial setting. --ar 3:2 --v 6"
 }

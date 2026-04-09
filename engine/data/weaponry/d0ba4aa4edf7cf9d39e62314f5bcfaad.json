@@ -43,5 +43,36 @@
     "traditional",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Auris Spire Concert Hall",
+    "Emiljan Nzinga-Kovačević",
+    "MERIDIAN",
+    "Nika Svensson-Kone",
+    "The Peninsula",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately retro side-by-side shotgun with an aggressive, compact stance. Twin barrels dominate the profile, flared slightly at the muzzles. Exposed hammer spurs rise above the receiver like predatory ears. The wooden furniture evokes 19th-century craftsmanship, yet the precise metalwork and tight tolerances scream modern manufacturing. A weapon that looks both timeless and deliberately defiant against trend.",
+    "dimensions": "Overall length: 112 cm | Barrel length: 46 cm | Width across barrels at muzzle: 4.2 cm | Stock length of pull: 36 cm",
+    "weight_description": "Hefty but well-balanced. The 2.6 kg distributes naturally between the barrels and stock, encouraging shouldering. Not light, but purposeful—every gram serves function.",
+    "primary_material": "Blued steel receiver and barrels; walnut or walnut-grain composite stock and fore-end. Steel trigger assembly with hardened sear components.",
+    "finish": "Deep matte blue on all steel surfaces—not glossy, but rich and absorptive. The wood finish is satin, revealing natural grain without artifice. Minimal cosmetic polish; emphasis on durability over shine.",
+    "color_scheme": "Gunmetal blue-black as primary | Natural walnut brown as secondary | Brushed steel on trigger guards and hammer spurs as accent",
+    "grip_texture": "Walnut stock with traditional checkering pattern cut into pistol grip and fore-end—fine crosshatch texture for secure purchase even with gloved hands. Slightly raised comb. Warm wood feel contrasts with cool steel trigger assembly.",
+    "distinctive_features": [
+      "Dual exposed hammer spurs with pronounced knurling for thumb-cocking",
+      "Break-action hinge pin visible on right side of receiver",
+      "Twin trigger assembly: front trigger fires right barrel, rear trigger fires left barrel",
+      "Simple bead front sight on top rib",
+      "Ventilated rib between barrels",
+      "Ejector pods on breech face—bright metal showing when action opens",
+      "Minimal safety lever (if present) integrated into trigger guard",
+      "No rails, no optics mounts, no accessory points",
+      "Faint manufacturing witness marks on barrel flats"
+    ],
+    "manufacturer_markings": "MERIDIAN MUNITIONS stamped in serif font on top rib between barrels. Serial number etched on left side of receiver. COACH-12 marked on barrel flat. '12 GA' stamped on breech face. Simple blocky logo—no elaborate branding.",
+    "condition_typical": "Field units show honest wear: scuffed wood from sling swivels or holster contact, light patina on steel surfaces (not rust, but honest oxidation), possible handling marks on receiver. Mechanically pristine—these weapons are maintained religiously by owners who understand simplicity equals reliability. Never tacticool, never cosmetically modified. Functional beauty."
+  },
+  "image_prompt": "Product photograph of a Meridian Munitions Coach-12 'Stagecoach' shotgun, break-action side-by-side, positioned on a dark gunmetal surface at 45-degree angle. Dual 18-inch barrels parallel to viewer, twin exposed hammers catching dramatic side-lighting from upper left. Walnut wood grain visible with deep matte blue steel finish showing micro-texture. Gloved hand (tactical black leather, some augment scarring on wrist) steadying the stock, thumb near hammer spur. Cold white LED product lights from above creating hard shadows beneath receiver. Cyberpunk aesthetic: matte black platform surface with faint holographic serial number display floating nearby. Minimal background—industrial concrete texture, slight chromatic aberration. Timeless weapon with zero chrome, zero neon. Pure form, pure function. --ar 3:2 --v 6"
 }

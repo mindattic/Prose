@@ -42,5 +42,35 @@
     "cultural",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Djeneba Park-Traore",
+    "GLMZ",
+    "Iowan Behemoth — 'Palisade'",
+    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
+    "NeuralPath LinkGuard Secure Civic Identity BCI",
+    "TESSERA TC-3 'Crucible'",
+    "The Gutter Prophets",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A katana-length blade with deliberately irregular, almost raw aesthetic. The silhouette is recognizably traditional but rougher than any corporate equivalent—asymmetries in the edge line, visible seams in composite construction, a guard that looks salvaged rather than forged. First impression: dangerous but jury-rigged, a weapon born from necessity rather than design.",
+    "dimensions": "Blade length 60-72 cm (varies by maker), total length 85-100 cm, grip approximately 24-28 cm",
+    "weight_description": "Variable but generally hefty without being unwieldy—1.0-1.8 kg depending on construction. High-quality examples balance weight toward the blade; poor examples feel front-heavy and demand compensation through strength.",
+    "primary_material": "Heat-treated carbon-lattice composite (industrial offcuts), structural polymer or composite backing, scavenged or fabricated handle core",
+    "finish": "Matte, intentionally unpolished. The blade surface shows visible grain structure from the carbon-lattice material, with dull gray-black coloration. No mirror finish—this is anti-corporate by design. Edge line irregular from hand-sharpening. Handle often shows wear from use and age.",
+    "color_scheme": "Charcoal gray and matte black blade with visible carbon striations. Handle wrapping typically dark—black cordage, charred leather, or grimy composite tape. Guard often bare metal (copper, steel) or anodized matte gray.",
+    "grip_texture": "Rough, honest—wrapped cord (synthetic or salvaged natural fiber), worn composite tape, or bare textured polymer. No ergonomic contouring; the grip shape follows the maker's hand, not industrial standards. Slight tackiness from handling oils and residue.",
+    "distinctive_features": [
+      "Horizontal etching near the guard (the 'Flatline' maker's mark)—a simple line that proves chain-of-custody through the smithing lineage",
+      "Visible seams and composite layering along the blade spine—no attempt to hide construction",
+      "Irregular edge with micro-variations from hand-sharpening (high-quality examples show consistent, fine variations; poor examples show crude gaps)",
+      "Heat-treatment patina: variable discoloration from the annealing process, creating organic-looking color gradients",
+      "Crude or absent fuller—some examples have grooved spines, others are flat and thick for durability over weight savings",
+      "No manufacturers' logos or corporate branding; Flatline mark is the only intentional marking"
+    ],
+    "manufacturer_markings": "A single horizontal line etched near the guard (tsuba area), typically 3-5 cm long and shallow-cut. This is the Flatline lineage marker—the only 'signature' the anonymous smiths provide. Some examples may have maker's initials scratched nearby, visible only to those who know where to look.",
+    "condition_typical": "Well-maintained through obsessive practice, but showing honest wear. The blade edge typically has minor nicks from cutting tests or occasional use. Handle wrapping shows sweat stains and color variation from repeated handling. No cosmetic preservation—users keep these functional, not pristine. Battle-worn examples show chips in the edge and dark staining (rust, blood, or both)."
+  },
+  "image_prompt": "Close product photograph of a Gutter Katana 'Flatline' katana blade laid diagonally across a dark industrial surface (concrete or scarred steel), held at one end by a gloved cybernetic hand with subtle chrome joints. The blade shows visible carbon-lattice grain texture and matte gray-black finish. Dramatic side-lighting from the upper left casts sharp shadows across the composite layers and irregular edge line, emphasizing hand-forged imperfections. The horizontal maker's mark etched near the guard is visible in the light. Background is deep shadow with faint industrial detail (rusted metal, circuit patterns). Gritty, lower-tier aesthetic—functional weapon of resistance, not corporate polish. Cyberpunk, GLMZ street-smith craftsmanship. --ar 3:2 --v 6"
 }

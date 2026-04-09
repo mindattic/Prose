@@ -58,5 +58,43 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Cezar Watanabe-Gyasi",
+    "GLMZ",
+    "Ihaia Mori-Sefa",
+    "Iowan Behemoth — 'Thunderhead'",
+    "Lacuna Genomics",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Ringo Corponation",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA ES-4 'Perimeter'",
+    "The Question",
+    "Vantablack Media Parasocial Carrier Mask",
+    "WELLSPRING",
+    "West Engelheim"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular pistol with an oversized chamber housing and pronounced venting grilles. The silhouette suggests biotech rather than ballistic—organic curves interrupted by geometric precision. The muzzle is wider than conventional firearms, flared slightly like a diffuser. Overall impression is clinical, almost medical.",
+    "dimensions": "22cm overall length; 4.2cm grip width; 6.8cm height at slide; muzzle opening 2.1cm diameter",
+    "weight_description": "Surprisingly light for its size—1.1kg loaded feels balanced in the palm, front-heavy due to the induction chamber, but not unwieldy. The weight distribution favors precision aiming rather than brute recoil control.",
+    "primary_material": "Titanium-aluminum composite frame with reinforced polymer grip housing. Induction chamber is surgical-grade stainless steel with internal copper coil windings visible through translucent polymer port windows.",
+    "finish": "Brushed titanium body with a satin sheen; the induction chamber features a polished chrome accent band. High-wear areas show micro-scratches consistent with frequent field use. Muzzle grilles have a dull gunmetal patina.",
+    "color_scheme": "Gunmetal gray primary with brushed silver induction chamber. Grip is matte charcoal with subtle iridescent circuit-trace patterns molded into the polymer. Accent band is polished chrome.",
+    "grip_texture": "Textured matte polymer with micro-grip ridges, designed for both bare hand and gloved operation. Slight curvature and forward angle facilitate natural aiming posture. Thumb rest is slightly rubberized for non-slip control.",
+    "distinctive_features": [
+      "Translucent polymer port windows revealing copper induction coils and saline-metallic solution reservoir",
+      "Flared diffuser muzzle with angled venting grilles—unusual for a pistol, more medical-device aesthetic",
+      "Minimalist LED indicator strip on the slide (blue = charged, amber = low reservoir)",
+      "Graduated pressure-release valve on chamber housing—chrome-plated and visible",
+      "Internal solution level gauge etched into the left side of the frame",
+      "Serial number stamped on the trigger guard in minute font—Dhaka Infrastructure Partners product line designation",
+      "Slight corona of crystallized mineral deposits around the muzzle rim (residual saline vapor)",
+      "No visible hammer or external safety—all controls are pressure-activation based"
+    ],
+    "manufacturer_markings": "Dhaka Infrastructure Partners logo (stylized DIP monogram) embossed subtly on the grip backstrap. 'GVDP-1 SALTLICK' engraved in sans-serif font along the slide. Product certification stamps on the chamber housing near the valve.",
+    "condition_typical": "Field-maintained and moderately worn. Evidence of regular use without abuse—minor scratches on the slide, slight discoloration around venting grilles from ionic residue, polymer grip showing subtle wear patterns from holster contact. Induction chamber remains pristine due to protective port covers."
+  },
+  "image_prompt": "Galvanic Vapor Diffusion Pistol GVDP-1 'Saltlick' on dark brushed steel surface, angled three-quarter view. Dramatic side-lighting from upper left reveals brushed titanium body and polished chrome induction chamber. Translucent polymer port windows glow faintly with internal copper coil detail. Diffuser muzzle in sharp focus, mineral deposits visible at rim. Gloved hand (insulated tactical glove) steadying the grip, foreground slightly blurred. Dark studio environment with cyan accent lighting reflecting off the metallic surfaces. High contrast, cyberpunk corporate security aesthetic. Close-up detail shot emphasizing the hybrid bio-tech and industrial design. --ar 3:2 --v 6"
 }

@@ -39,5 +39,39 @@
     "common",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Bogdan Achebe-Svanstrom",
+    "Dielectric Hemorrhage Emitter DHE-4 'Blister'",
+    "Ebele Medina-Quaye",
+    "Nika Svensson-Kone",
+    "Pullman Works",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Ringo DV-4 'Courier'",
+    "The Hearthstone",
+    "Tomasz Wren"
+  ],
+  "physical_description": {
+    "visual_profile": "A blocky, utilitarian semi-automatic pistol with aggressive angularity and no aesthetic pretense. The profile reads cheap and mass-produced—all sharp edges and functional geometry with no flourishes. The frame dominates visually, appearing slightly too large for the proportions, while the slide seems thin and stamped rather than milled. At first glance it reads as a tool, not a weapon—the kind of thing you'd expect to find in a clearance bin.",
+    "dimensions": "Overall length: 19.5 cm | Slide width: 3.2 cm | Grip height: 10.8 cm | Barrel length: 9.7 cm (unrifled)",
+    "weight_description": "Light and hollow-feeling, with an unpleasant plasticky responsiveness to movement. Carries with a tinny quality—more rattle than presence. Feels cheaper in hand than its already-minimal price suggests, lacking the reassuring heft of even mid-tier firearms.",
+    "primary_material": "Injection-molded polymer frame (cheap virgin plastic, not recycled) with stamped steel slide and barrel. Springs and internals are similarly cost-reduced steel stampings.",
+    "finish": "Industrial matte gray polymer with dull black stamped steel slide. The finish is functionally absent—no coating, no polish. Bare injection mold marks visible on the frame. Early scuffing from packaging and handling appears even on 'new' units.",
+    "color_scheme": "Institutional gray polymer with flat black steel components. No accent colors or branding polish—purely utilitarian corporate monochrome.",
+    "grip_texture": "Rough injection-molded polymer with minimal texturing—almost slick when gloved, prone to sweat-slip. The grip is slightly too wide for comfort and has sharp edges where the polymer seams don't blend cleanly. No grip panels or aftermarket upgrades appear on stock units.",
+    "distinctive_features": [
+      "Rudimentary plastic post sights—white paint worn and chipped",
+      "Magazine release with visible manufacturing flash",
+      "Unrifled barrel (early runs) creating visible bore striations",
+      "Stamped steel slide with visible tool marks from production",
+      "No safety markings or indicator dots",
+      "Heavy, gritty trigger visible through frame gaps",
+      "Magazine well designed for friction fit rather than positive retention",
+      "Serial number stamped in tiny digits on the slide, difficult to read",
+      "Tiny Hearthstone logo heat-stamped into polymer frame, already fading"
+    ],
+    "manufacturer_markings": "Tiny 'HEARTHSTONE FIREARMS' text molded into grip panel (often upside-down from mold orientation). Serial number stamped into slide in 0.8mm font. No other markings. No safety or caliber warnings printed anywhere.",
+    "condition_typical": "Shelf-worn even when 'new'—packaging wear, minor scuffs, loose muzzle crown from handling. Paint already beginning to fade on sights. Magazine springs show slight compression set. The 'well-maintained' version of this weapon still looks neglected; the 'battle-worn' version is indistinguishable."
+  },
+  "image_prompt": "Product photography of a Hearthstone Firearms Model 9 'Payday' 9mm pistol, viewed at 45-degree angle on a worn metal shelf under harsh industrial lighting. Cheap polymer frame with dull gray matte finish, stamped black steel slide, rudimentary white plastic sights. Photographed alongside a blister pack and prepper chip wrapper, suggesting convenience store purchase. Dramatic side-lighting emphasizes rough injection-mold seams and manufacturing imperfections. Cyberpunk desperation aesthetic—the firearm of the desperate and resigned. Shallow depth of field, gritty texture, desaturated color palette with institutional grays and flat blacks. Shot with worn tactical glove gripping the grip to show scale and contextual poverty. --ar 3:2 --v 6"
 }

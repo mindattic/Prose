@@ -48,5 +48,24 @@
     "The Signal",
     "Vantablack Media Spectral Barrier Display System",
     "Vespid Dynamics"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek monocle lens assembly with a minimalist frame that curves around the eye socket. The primary optic is a dark, slightly convex lens with subtle iridescent coating that hints at its multi-spectral capabilities. The frame is precision-engineered with minimal bulk—almost surgical in appearance—projecting an air of high-end tactical equipment rather than consumer tech.",
+    "dimensions": "Lens diameter: 32mm; frame depth: 18mm; total width: 48mm. Compact enough to sit naturally against the eye without protruding into peripheral vision.",
+    "weight_description": "30 grams—featherweight, barely perceptible when worn. Designed to be forgotten after 30 seconds of use.",
+    "primary_material": "Aerospace-grade polycarbonate frame with sapphire-coated optical glass lens. Interior components are titanium-aluminum alloy with carbon fiber reinforcement.",
+    "finish": "Matte gunmetal gray frame with a faint non-reflective coating. The lens has a dark smoky tint with internal holographic micro-etching that creates subtle rainbow distortion at certain angles.",
+    "color_scheme": "Gunmetal gray primary, with accent lines in burnt orange (Vespid Dynamics signature). The lens itself appears deep charcoal with hints of cyan when powered and receiving signal.",
+    "interface_elements": "Micro-LED indicator strip (cyan-to-amber) along the frame's inner edge shows power and mode status. Ultra-thin touch-sensitive contact point on the temple arm for mode cycling (two-finger double-tap). Barely-visible neural port (gold-plated contact point) sits flush at the 6 o'clock position of the frame. Minimal physical buttons—all interaction is gesture or neural.",
+    "distinctive_features": [
+      "Iridescent lens coating that shifts between dark purple and deep blue under different light angles",
+      "Near-invisible neural interface port with haptic feedback node",
+      "Micro-articulated frame hinge allowing 15-degree tilt adjustment for perfect eye alignment",
+      "Integrated heat-dispersal mesh visible as faint grid pattern around the lens perimeter",
+      "Subtle Vespid logo etched into the frame (stylized wasp silhouette) only visible up close"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS embossed on inner temple arm in 4pt serif font; WE-3 model designation stamped on the frame's rear curve; regulatory hologram (GLMZ safety cert) visible on the inside surface of the frame arm",
+    "condition_typical": "When powered on, a faint cyan glow emanates from the inner frame edges. In use, the lens surface occasionally shows subtle scan lines or thermal bloom effects if the wearer is cycling through modes. Well-maintained units retain their matte finish; heavy field use shows micro-scratches on the frame but the sapphire lens remains pristine."
+  },
+  "image_prompt": "Close-up product shot of the Vespid Dynamics Wasp Eye WE-3 tactical monocle mounted on a precision articulated display stand, positioned at a 3/4 angle showing the lens and frame detail. Dramatic three-point lighting setup: cool blue-white key light from upper left casting sharp shadows, warm amber accent light from right highlighting the frame texture, and subtle backlight creating a subtle glow around the lens edge. Dark matte workbench surface (carbon composite) with shallow depth of field. Macro photography detail of the lens coating showing iridescent micro-patterns and faint etched Vespid logo. Cyberpunk aesthetic with high-tech minimalism. Shallow focus foreground showing blurred micro-circuit test probes nearby. --ar 3:2 --v 6"
 }

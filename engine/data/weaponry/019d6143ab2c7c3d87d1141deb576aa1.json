@@ -54,5 +54,39 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "GLMZ",
+    "Ihaia Nystrom-Keita",
+    "Irontide Tidal Energy",
+    "Solveig Tambadou-Kereselidze",
+    "Subdermal Shear Projector SSP-1 'Faultline'",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "The Composite Index",
+    "The Gradient Compact",
+    "The Nearfield",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, cyberpunk pistol with a distinctly organic yet mechanical silhouette. The cylindrical barrel assembly dominates the upper profile, appearing almost like a focused lens or sensor array rather than a conventional gun. The grip tapers smoothly from the cylindrical muzzle section, giving it an almost biological aesthetic — something between a medical instrument and a precision tool. No visible barrel rifling or muzzle brake; the emission aperture is recessed and barely distinguishable. The overall impression is of controlled precision rather than raw firepower.",
+    "dimensions": "Length: 31 cm (barrel-to-grip), Muzzle section diameter: 4.2 cm at widest point, Grip length: 10 cm, Height including control surfaces: 7.5 cm",
+    "weight_description": "Deceptively hefty despite compact profile — 1.8 kg feels substantial in hand, weight distributed toward the barrel assembly due to the superconducting mass rings. Not unbalanced, but distinctly front-heavy; the cryogenic cell adds dead weight that requires a firm grip.",
+    "primary_material": "Aerospace-grade carbon composite frame with reinforced titanium alloy around the barrel assembly. The superconducting mass rings are shielded within a hermetic cylindrical housing of brushed surgical steel.",
+    "finish": "Matte charcoal composite body with mirror-polished titanium accents around the barrel collar. The cryogenic cell window (rear of weapon) reveals dull blue superconductor material beneath transparent synthetic sapphire — a deliberate aesthetic choice suggesting the weapon's exotic tech. Scratches and handling marks show through the matte finish readily, suggesting weapons-grade durability over cosmetic preservation.",
+    "color_scheme": "Primary: deep charcoal gray composite. Accents: brushed titanium silver, cryogenic cell window glow of pale cerulean blue.",
+    "grip_texture": "Rubberized composite with embedded micro-texturing for all-weather grip purchase. Slightly tacky to the touch, designed to prevent slipping even with wet or gloved hands. The underside of the trigger guard features a subtle knurled finish.",
+    "distinctive_features": [
+      "Recessed emission aperture on muzzle — appears almost like a sensor lens rather than a weapon port",
+      "Dual-ring thermal radiator fins around mid-barrel (subtle ribbing to dissipate cryogenic cold bleed)",
+      "Sapphire cryogenic cell window at rear grip, revealing luminescent superconductor material inside",
+      "Low-frequency hum indicator LED (faint violet, barely visible) embedded in grip safety",
+      "Absence of conventional sights — targeting reliant on integrated optic or neural link, sights are flush/non-existent",
+      "Field coherence adjustment dial on left side of barrel — micro-threaded, barely half-centimeter diameter",
+      "No visible safety lever; activation appears to be capacitive or biometric"
+    ],
+    "manufacturer_markings": "Minimal markings. 'GSP-7' engraved in small sans-serif font on the left side of the barrel collar. TESSERA corporate sigil (a geometric tessellation pattern) stamped faintly on the grip where it meets the frame. Serial number laser-etched on the interior of the cryogenic cell window, deliberately obscured by the blue superconductor glow. No model year or batch designation visible.",
+    "condition_typical": "Field-used GSP-7s show wear on grip texture (friction marks from repeated drawing and handling), minor impact marks on the titanium barrel collar from equipment contact, and occasional micro-scratches on the composite from environmental exposure. The sapphire window remains pristine in maintained weapons; some examples show condensation rings from thermal cycling. Weapons in professional circulation are meticulously maintained but show battle-scars rather than showroom condition."
+  },
+  "image_prompt": "Product photograph of a Gravitic Shear Pistol GSP-7 'Tidal' on dark gunmetal surface, positioned at slight angle to showcase the cylindrical barrel assembly and recessed emission aperture. Weapon is held in gloved black tactical hand at three-quarter angle. Dramatic side-lighting from cool blue-white source illuminates the brushed titanium accents and reveals the pale cerulean glow within the sapphire cryogenic cell window at the grip rear. The carbon composite matte finish catches highlights showing its aerospace-grade texture. Background is deep shadows with faint grid-pattern cyberpunk interface overlay. High-contrast, clinical precision photography with subtle neon accent lighting reflecting off metal surfaces. Materials clearly visible: titanium, carbon composite, synthetic sapphire. No visible beam or effect, emphasizing the weapon's silent, invisible nature. Capture the unsettling elegance of a tool designed for undetectable precision. --ar 3:2 --v 6"
 }

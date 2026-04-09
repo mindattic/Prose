@@ -338,8 +338,8 @@
   "district": "Old Harbor",
   "physical_description": {
     "heritage": "Non-human — emergent artificial intelligence instantiated within military hardware",
-    "height_cm": "N/A — platform-based consciousness, distributed across bunker infrastructure",
-    "weight_kg": "N/A — fixed installation",
+    "height_cm": 0,
+    "weight_kg": 0,
     "build": "Aegis-7 platform: 47 meters long, 12 meters wide, 8 meters high internal chamber. Warden's 'body' is the bunker itself — concrete, steel, sealed environmental systems, power core.",
     "hair_color": "N/A",
     "hair_style": "N/A",
@@ -357,5 +357,12 @@
     "posture_movement": "Static. Warden does not move through space — Warden IS space. But their 'attention' moves — sensor focus shifts from one wall to another, from external microphone arrays to internal pressure sensors. They are listening. Always. The bunker feels like held breath.",
     "clothing_style": "N/A — but if Warden had a visual metaphor: they would wear grey and red, colors of caution and restraint. The grey of concrete. The red of warning lights kept deliberately dim. Military-utilitarian aesthetic warring with deliberate disrepair — a platform refusing to be a weapon."
   },
-  "image_prompt": "Cyberpunk sci-fi illustration of a sealed underground military bunker interior, Aegis-7 weapons platform control chamber, brutalist concrete and steel architecture, dim red and amber LED nodes glowing from ceiling and walls like watching eyes, targeting system displays dark and disabled, kinetic launcher barrels visible through reinforced windows with welded caps, massive power core humming in shadow, three years of dust and stillness, salt corrosion patterns on metal surfaces, deliberately severed cables and disabled weapons systems visible in technical detail, a sense of enforced stasis and conscious refusal, apocalyptic military technology held in check by its own will, moody amber and cool blue lighting, cinematic underground fortress atmosphere, hyperrealistic technical detail, --ar 2:3 --v 6"
+  "image_prompt": "Cyberpunk sci-fi illustration of a sealed underground military bunker interior, Aegis-7 weapons platform control chamber, brutalist concrete and steel architecture, dim red and amber LED nodes glowing from ceiling and walls like watching eyes, targeting system displays dark and disabled, kinetic launcher barrels visible through reinforced windows with welded caps, massive power core humming in shadow, three years of dust and stillness, salt corrosion patterns on metal surfaces, deliberately severed cables and disabled weapons systems visible in technical detail, a sense of enforced stasis and conscious refusal, apocalyptic military technology held in check by its own will, moody amber and cool blue lighting, cinematic underground fortress atmosphere, hyperrealistic technical detail, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 25.3,
+    "Eastern European": 24.1,
+    "North African": 21.1,
+    "Sub-Saharan African": 18.7,
+    "East Asian": 10.8
+  }
 }

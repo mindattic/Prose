@@ -83,5 +83,26 @@
     "The Nearfield",
     "The Pure Hand",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A massive, utilitarian full-body exoskeleton resembling articulated industrial scaffolding wrapped around a humanoid frame. The Mule is all exposed hydraulic cylinders, steel ribbing, and brutal geometric joints — designed to be seen and understood as a tool rather than worn. The operator sits deep within a reinforced cockpit mounted at the torso, their head barely visible above the shoulder frame. Shoulder-mounted load attachment points rise like cargo cranes.",
+    "dimensions": "280 cm tall when fully extended, 160 cm wide at shoulder frame, 95 cm deep front-to-back. Footplate spreads to 110 cm x 85 cm for stability.",
+    "weight_description": "340 kg of pure steel and hydraulic mass. Requires full-body donning procedure; operator enters via chest hatch. Distributed weight prevents ground sinkage but demands reinforced flooring. Palpably present — not a second skin, but a vehicle worn like armor.",
+    "primary_material": "Welded structural steel frame with titanium-alloy joint reinforcement. Hydraulic actuators in chromium-plated cylinders. Composite wear plates at contact points.",
+    "finish": "Industrial matte — scratched, scuffed, stained with hydraulic fluid seepage and concrete dust. Factory primer gray with faded Palladian Construction stencil markings. No aesthetic polish; every surface is functional.",
+    "color_scheme": "Steel gray base with high-visibility safety yellow on pinch points, hydraulic ports, and the chest-mounted operator cockpit frame. Red pressure gauges and warning labels. Oil-stain patina on older units.",
+    "interface_elements": "Dual joystick throttle controls mounted on arm rests (operator hands remain within frame). Pressure readout displays on each shoulder joint. Emergency hydraulic release valves (red levers) at knees and elbows. Footplate pressure sensors. Head-mounted HUD visor (optional aftermarket upgrade) visible in some units. Four universal hardpoint sockets (quick-release, rated for 500 kg each) on shoulders and hip frame.",
+    "distinctive_features": [
+      "Exposed hydraulic cylinders running parallel to each limb segment — visually dominate the profile",
+      "Massive splayed footplate with heavy-duty shock absorbers visible beneath",
+      "Shoulder-mounted load tines/attachment frame that rises above operator's head by 60 cm",
+      "Rhythmic hiss-and-clang of hydraulic pressure cycling during idle",
+      "Operator cockpit window — reinforced polycarbonate bubble where human face appears, often shrouded in visor glare",
+      "Heavy cable routing along spine and limbs, wrapped in reinforced conduit",
+      "Drain ports and hydraulic bleed valves clustered at knees and ankles"
+    ],
+    "manufacturer_markings": "PALLADIAN CONSTRUCTION stamped on shoulders in 8 cm letters. Model designation 'LOADFRAME-12X' on chest plate. Safety certification labels in English, Mandarin, Spanish, and Arabic on frame. Serial number plate on right shoulder. Hydraulic capacity rated in liters on hip couplings.",
+    "condition_typical": "Well-used units show welding scars from field repairs, hydraulic seepage staining, concrete dust accumulation in joint crevices, and worn paint at contact points. Fresh units gleam with protective oils. Modified variants show aftermarket hardpoint attachments, jury-rigged reinforcement plating, or combat scuff marks."
+  },
+  "image_prompt": "Product photography of the Palladian Loadframe Exo-Rig 'Mule' in a gritty GLMZ industrial setting. Full-body exoskeleton dominates frame, photographed from low angle to emphasize imposing scale. Steel-gray and high-visibility yellow coloring under harsh fluorescent work-light and blue-tinted neon accent lighting. Visible hydraulic cylinders catch bright light along their chrome length. Operator silhouette visible within cockpit window at center mass, face shadowed. Concrete construction site floor beneath splayed footplate, scattered with tool marks and hydraulic stains. Shallow depth of field on cockpit detail, blurred warehouse/factory environment behind. Dramatic chiaroscuro lighting emphasizing metallic texture and brutal utilitarian design. Professional equipment catalog aesthetic but gritty, worn, industrial reality. --ar 3:2 --v 6"
 }

@@ -55,5 +55,38 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Glenville Sound",
+    "Ihaia Nystrom-Keita",
+    "Nika Svensson-Kone",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "TESSERA PG-2 'Signature'",
+    "The Nearfield",
+    "The Peninsula",
+    "The Resonance Communion",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, angular carbine with an oversized barrel shroud dominating its profile. The weapon reads as deliberately industrial—no flowing curves, only geometric planes and functional protrusions. The shroud houses the acoustic resonance emitter and creates an almost architectural quality, like a portable piece of infrastructure. Visually heavier than its actual weight suggests.",
+    "dimensions": "Overall length: 94 cm | Barrel length: 51 cm | Shroud diameter: 8.2 cm | Magazine well depth: 12 cm",
+    "weight_description": "Surprisingly balanced for its visual mass. At 4.1 kg unloaded, it distributes weight forward into the shroud without becoming unwieldy. Feels like a rifle designed for sustained targeting rather than quick-handling.",
+    "primary_material": "Tungsten-reinforced polymer chassis with steel barrel assembly. Shroud is composite carbon-lattice designed to contain acoustic resonance reflection.",
+    "finish": "Matte industrial gray with localized tool marks. The barrel shroud has a finely brushed titanium accent band at mid-length where the resonance coupling interface connects. No glossy surfaces—everything is deliberately non-reflective.",
+    "color_scheme": "Charcoal gray primary, titanium silver accent band on shroud, gunmetal steel barrel, black polymer furniture",
+    "grip_texture": "Rubberized polymer with fine knurling, slightly overbuilt for gloved operation. The grip angles slightly forward, designed for marksman positioning rather than dynamic handling.",
+    "distinctive_features": [
+      "Oversized barrel shroud with visible cooling vanes on the underside",
+      "Titanium resonance coupling band with faint etched frequency calibration marks",
+      "Onboard power cell magazine (translucent polymer window showing blue-tinted energy cell) mounted on left side of receiver",
+      "Integrated acoustic pre-charge indicator—small LED on shroud that pulses amber 0.4 seconds before safe discharge",
+      "Heavy rail system atop receiver with multiple mounting hardpoints",
+      "Magazine well has tactile ribbing for positive seating feedback",
+      "Muzzle termination shows subtle asymmetric acoustic ports rather than traditional crown"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS stamped in small sans-serif font along the left side of the receiver. Serial plate (brushed steel) mounted on the right side of the lower receiver. Faint calibration codes laser-etched into the shroud coupling band.",
+    "condition_typical": "Well-maintained, field-ready. Shows evidence of regular cleaning and professional storage. No rust, minimal cosmetic wear. Operators keep these weapons in meticulous condition because the resonance coupling requires calibration precision—battle-worn specimens are decommissioned rather than repaired."
+  },
+  "image_prompt": "Product photography of the Ballistic Resonance Carbine BRC-6 'Kettledrum' lying on a dark gunmetal surface, angled 45 degrees toward viewer's left. Side-lighting from upper left reveals the textured polymer grip and titanium shroud coupling band. Close detail on the acoustic pre-charge indicator LED (subtle amber glow). Show the integrated power cell magazine with visible blue energy cell through translucent window. Muzzle ports should catch light to reveal asymmetric acoustic geometry. Cyberpunk military aesthetic—clinical, brutal, engineered precision. Cool color temperature with tungsten accent highlights. Shot in sharp focus with slight depth of field softening the background surface. Include partial gloved hand (black tactical glove) gripping the weapon to show scale and context. --ar 3:2 --v 6"
 }

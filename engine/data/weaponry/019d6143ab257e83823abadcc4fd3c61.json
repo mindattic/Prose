@@ -53,5 +53,38 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "GLMZ",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Nimbus",
+    "Ouroboros Energy",
+    "Ringo Corponation",
+    "Tessera Plasma Channeler PC-9 'Stormcaller'",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "The Corridor"
+  ],
+  "physical_description": {
+    "visual_profile": "A boxy, utilitarian quadcopter with a blocky industrial silhouette. The EVSD-4 reads as an unglamorous utility platform—think atmospheric processor rather than combat platform. The frame is angular, with four thick articulated arms splaying outward from a squat central chassis. The underslung vapor reservoir dominates the visual center, a translucent polytube tank containing barely-visible opalescent liquid that shifts faintly iridescent in light. The overall impression is deliberately mundane: something you'd see on a corporate maintenance schedule, not a weapons roster.",
+    "dimensions": "620mm x 580mm (rotor span fully articulated), 200mm chassis depth. Central fuselage approximately 180mm cube. Vapor reservoir hangs 120mm below main frame. Rotor arms extend ~310mm from center",
+    "weight_description": "Noticeably hefty for its size—4.1kg makes it feel substantial but manageable. The weight distribution is bottom-heavy due to the liquid reservoir, giving it a slightly unbalanced feel in hand. Not light, not unwieldy; deliberate and industrial.",
+    "primary_material": "Reinforced polymer composite frame (likely polycarbonate/ABS hybrid) with anodized aluminum arm struts. The vapor reservoir is rigid polytube (polycarbonate or PMMA) to withstand internal pressure and allow liquid visibility. Mounting brackets and motor housings are brushed steel.",
+    "finish": "Matte industrial gray with scuffed, wear-resistant polymer. The aluminum struts show brushed-metal finish with minor oxidation streaks. No gloss—everything is textured and deliberately non-reflective. The polytube reservoir has a faint manufacturing haze, visible fingerprints clouding the interior when full.",
+    "color_scheme": "Gunmetal gray primary frame, brushed silver aluminum accents, pale gray polytube reservoir. The vapor suspension inside ranges from nearly colorless to faint pearl-blue depending on concentration and light angle. Subtle yellow warning stripe runs along motor mounts.",
+    "grip_texture": "Not designed for hand-holding during operation, but the carry handles (integrated into the frame) are textured polymer—rough, slightly grippy, with raised dimples for wet-hand control. The reservoir cap is ridged TPR rubber.",
+    "distinctive_features": [
+      "Translucent vapor reservoir dominating underslung position—visible liquid suspension is the signature visual",
+      "Four brushed-aluminum articulated rotor arms with exposed motor housings and minimal shrouding",
+      "Cluster of pressure-release micro-vents along reservoir base (metallic mesh screens visible)",
+      "Industrial safety markings: yellow and black chevron tape on motor housings and frame edges",
+      "Faint serial plate (OUROBOROS Energy designation + RINGO subsidiary stamping) mounted on rear fuselage in small silver rectangle",
+      "Two small LED status lights (amber and green) on dorsal fuselage—deliberately low-profile, almost hidden",
+      "Vapor dispersal mesh at four cardinal points along lower frame—looks like rectangular ventilation grilles",
+      "Wear pattern: light scratches on polymer, possible impact marks on leading edges of arms, dust accumulation in motor shrouds suggesting field use"
+    ],
+    "manufacturer_markings": "OUROBOROS ENERGY corporate logo (concentric circle with spiral) stamped in small font on reservoir. RINGO CORPORATION subsidiary marking ('HOMETOWN LAUNDRY SYSTEMS') appears on a discrete brushed-steel nameplate mounted rear-left of fuselage. Model designation 'EVSD-4' and serial number embossed on same plate. Markings are deliberately understated—designed to read as industrial rather than military.",
+    "condition_typical": "Moderately field-worn. Paint matte finish is natural, not battle-damaged. The polytube reservoir shows minor scratches and dust accumulation. Motor shrouds have faint circular discoloration from rotor blade wear. Electrical connectors (visible where arms meet fuselage) show corrosion-resistant coating but signs of frequent connection cycles. Overall condition reads as 'regularly maintained field equipment,' not pristine lab specimen."
+  },
+  "image_prompt": "Product photograph of EVSD-4 'Rainmaker' atmospheric seeding drone, shot directly overhead on dark textured concrete surface. Dramatic side-light from upper left casting sharp shadows from rotor arms. The underslung translucent polytube reservoir filled with pale iridescent electrochemical vapor suspension dominates center composition—liquid catches highlights showing faint blue-white pearl shimmer. Four brushed-aluminum articulated arms spread symmetrically, motor housings visible and industrial. Yellow safety chevrons on frame edges catch warm sidelighting. Small OUROBOROS and RINGO subsidiary markings visible on rear fuselage nameplate. Matte polymer chassis shows subtle wear and dust accumulation in motor shrouds. The entire composition reads as deliberate industrial utility—a atmospheric processor mistaken for a tool rather than a weapon. Cyberpunk near-future aesthetic, hyper-realistic materials, shallow depth of field background blur. --ar 3:2 --v 6"
 }

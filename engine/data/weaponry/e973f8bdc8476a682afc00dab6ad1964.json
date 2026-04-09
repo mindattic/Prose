@@ -44,5 +44,40 @@
     "advanced",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Brighton Arc",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "Piezoelectric Scatter Pistol PSP-2 'Gravel'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Street Custom 'Glass Garden' Caltrops",
+    "TESSERA PG-2 'Signature'",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist electromagnetic scatter gun with an aggressive, angular geometry. The weapon's most striking feature is its open rectangular muzzle assembly—no traditional barrel, just a squared-off electromagnetic aperture with visible coil geometry. The receiver is heavily ribbed and vented to dissipate electromagnetic heat. It reads as purpose-built military hardware: utilitarian, intimidating, devoid of decorative elements.",
+    "dimensions": "Overall length: 94 cm | Receiver width: 8.5 cm | Stock-to-muzzle: 62 cm barrel equivalent | Muzzle aperture: 6 × 4 cm rectangular opening",
+    "weight_description": "Hefty but balanced—4.5 kg distributed well across the stock-mounted capacitor assembly. The weight sits rearward, making it shoulder-friendly despite the forward electromagnetic assembly.",
+    "primary_material": "Reinforced carbon-composite receiver with aerospace-grade aluminum electromagnetic coil housing. Steel reinforcement ribs along the handguard. Polymer-phenolic synthetic stock.",
+    "finish": "Matte gunmetal gray on the coil housing with visible anodized aluminum striping. The composite receiver is satin black with deliberate weathering—worn edges, micro-abrasions suggesting field use. Heat-scorched polymer around the muzzle aperture.",
+    "color_scheme": "Primary: matte black and gunmetal gray | Accents: deep blue power indicators along the capacitor assembly, faint copper oxidation on exposed coil edges",
+    "grip_texture": "Textured polymer grip with subtle ribbing for wet-weather handling. The charging mechanism is wrapped in rubberized cable conduit. Handguard features aggressive checkering.",
+    "distinctive_features": [
+      "Open rectangular electromagnetic aperture with visible acceleration coils",
+      "Variable-pattern dial on receiver side (mechanical + digital readout)",
+      "Capacitor bank spine running along top of stock with status LED strip (blue = charged, amber = charging)",
+      "Heat vents positioned in three rows along the receiver sides",
+      "Ferromagnetic flechette loader port on upper receiver",
+      "Charging cable terminator (magnetic quick-disconnect) mounted on lower stock",
+      "No traditional safety—electromagnetic interlock prevents firing with dead capacitors",
+      "Muzzle aperture shows heat discoloration from electromagnetic discharge"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (interlocking 'A' + stylized star) stamped in gray anodized aluminum on the upper receiver. Serial plate mounted flush on left side. 'IRON POINT AMMUNITION' subsidiary marking on the stock. Warning placards in English and Mandarin on the capacitor assembly.",
+    "condition_typical": "Field-worn but meticulously maintained. The polymer shows micro-scratches and scuff marks indicating active use. Coil housing exhibits light heat stress—no rust or corrosion (aluminum construction). The muzzle aperture shows burn marks from repeated electromagnetic discharge. Well-lubricated mechanical components suggest professional upkeep."
+  },
+  "image_prompt": "Product photograph of the Arcturus ARC-EM12 'Scatterstorm' electromagnetic scatter gun, mounted on a dark matte black composite surface. Dramatic side-lighting from upper left, casting deep shadows across the rectangular muzzle aperture and emphasizing the ribbed receiver geometry. The capacitor assembly along the stock glows faintly with blue LED indicators. Close detail shot of the variable-pattern dial showing the mechanical adjustment mechanism. Highlight the open coil housing and heat-stressed muzzle aperture. Cyberpunk military aesthetic, 2226 GLMZ tech level. Include a gloved hand (ballistic polymer, dark gray) gripping the textured polymer handguard to show scale. Moody, industrial lighting with cool color temperature. Ultra-detailed materials: weathered composite, anodized aluminum, heat-scorched polymers. --ar 3:2 --v 6"
 }

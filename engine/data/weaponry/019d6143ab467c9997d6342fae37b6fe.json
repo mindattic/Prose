@@ -39,5 +39,32 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Nika Svensson-Kone",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "The Riveters' Round",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A high-end prosthetic hand or forearm with seamless chrome-titanium plating that conceals lethal engineering beneath. At rest, it appears to be premium corpo-grade cybernetic — sleek, functional, expensive. Only the subtle exhaust vents along the knuckles and the reinforced palm structure hint at its true purpose. The firing port between the knuckles or at the heel of the palm is designed to be invisible during casual inspection.",
+    "dimensions": "Full prosthetic hand: 22cm length (palm to fingertips); forearm variant: 35-40cm (wrist to elbow); concealed barrel: 8-15cm depending on configuration; firing port aperture: 0.8-1.2cm diameter",
+    "weight_description": "Noticeably hefty despite being a prosthetic — the user feels the weight of the integrated barrel and firing mechanism as a subtle density imbalance in the palm. When gripped, it feels like grasping a precision instrument. The neural integration masks the true heft, but the kinetic recoil on firing is brutal and localized to the limb itself.",
+    "primary_material": "Aerospace-grade titanium alloy frame with reinforced composite barrel shroud; chrome-plated steel internal firing mechanism; carbon-ceramic breach block to contain pressure and prevent backblast into the user's own arm",
+    "finish": "Brushed chrome with matte black accents on the reinforced knuckle guard and palm heel. The surface is deliberately unmarked and featureless to defeat visual inspection — no seams, no rivets, no obvious weapon housing. Battle-worn variants show micro-scratches and faint discoloration around the firing port from repeated use and thermal stress.",
+    "color_scheme": "Primary: brushed gunmetal chrome with pearl-white highlights on the finger joints; Accents: matte black on reinforcement bands and the palm cavity perimeter; Internal glow: faint amber or red LED indicator visible only through translucent polymer sections when neural trigger is armed",
+    "grip_texture": "The palm surface is textured polymer with a diamond-knurled pattern for grip security — feels organic, not mechanical. The inner palm cavity (concealing the breach) is smooth aerospace-grade polymer to allow smooth round insertion during manual reload. Finger joints are wrapped in medical-grade synthetic skin that flexes and feels warm to the touch.",
+    "distinctive_features": [
+      "Concealed firing port: subtle aperture between knuckles or at the heel of the palm, invisible unless you know to look",
+      "Neural interface contact points: microscopic conductive nodes scattered across the palm surface, barely visible under chrome plating",
+      "Exhaust vents: three horizontal slits running along the outer knuckle ridge to vent firing gases away from the user's body",
+      "Reinforced knuckle guard: thicker plating across the back of the hand to absorb and distribute recoil stress",
+      "Maintenance access panel: small recessed hatch at the wrist or forearm junction, locked and flush-mounted, for manual round loading and breach clearing",
+      "Heat dissipation channels: subtle grooves etched into the palm surface, designed to radiate thermal energy from the barrel shroud",
+      "Synthetic skin overlay: seamless, warm-toned medical polymer that covers all joints and vents, making the weapon indistinguishable from luxury prosthetics at a glance"
+    ],
+    "manufacturer_markings": "Street Custom's signature is minimal and deliberate: a laser-etched Φ symbol (currency mark, also a circle within a circle — homage to the distributed network philosophy) on the inside of the wrist, visible only when the hand is fully flexed or the maintenance panel is opened. No brand name, no model number — plausible deniability by design. Some underground variants have owner-added engravings on the interior: names, dates, personal symbology.",
+    "condition_typical": "Premium variants are immaculate — pristine chrome, flawless synthetic skin, all vents clear. Field-worn specimens show scuffing around the firing port, discoloration from residue buildup, minor cracks in the synthetic skin at the finger joints from repeated firing and recoil. Heavily used ones may have jury-rigged patches over damaged sections, visible battery tape on the neural interface contacts, or replacement synthetic skin that doesn't quite match the chrome tone. The most dangerous ones look almost broken — all cosmetic maintenance abandoned to focus on keeping the firing mechanism running."
+  },
+  "image_prompt": "Product photography of a premium prosthetic hand mounted on a dark matte black surface or held in a gloved hand against a gunmetal background. The prosthetic is brushed chrome and matte black with no visible seams or weapon ports. Dramatic side-lighting emphasizes the metallic contours and the subtle exhaust vents along the knuckles. Close-up detail shot showing the knuckle ridge and the barely-perceptible firing aperture between the fingers. The synthetic skin should catch light to appear organic and warm, contrasting with the cold chrome. Cyberpunk aesthetic: neon accent lighting in the background (amber or red), slight depth-of-field to emphasize the craftsmanship. Clean, corporate, deadly. No obvious weapon — that's the point. --ar 3:2 --v 6"
 }

@@ -52,5 +52,25 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Shelf",
     "Zheng-Dao Marrow-Pulse Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian ankle-worn band that reads as institutional restraint—sleek but oppressive. The matte-black polymer has a quasi-medical aesthetic that sits between penal hardware and biometric monitoring device. On-person, it creates a visual anchor point that draws the eye downward, signaling control and surveillance regardless of the wearer's tier.",
+    "fit": "Snug circumferential fit around the ankle with minimal adjustment tolerance. Designed for security, not comfort—the band sits flush against skin with no flex or give. The 28mm width is substantial enough to be visible even under loose pant legs.",
+    "primary_material": "Matte-black polycarbonate; tamper-evident ceramic locking pin with polymer sheath",
+    "texture": "Smooth, scratch-resistant outer film worn to a dull finish from repetitive contact with skin and clothing. The ceramic seal has a slightly raised tactile edge. Under harsh light, micro-abrasions catch like scars on dark ice.",
+    "color_scheme": "Matte black primary with amber, orange, or blue pulse-indicator light cycling every four seconds beneath a worn protective film. Black-market variants sport spoofed green pulses. The branding (Ouroboros serpent symbol) is deliberately subtle, almost subliminal.",
+    "closures": "Permanent ceramic pin-lock seal with tamper-detection—not designed for user removal. Street rumors suggest plasma cutters and electromagnetic pulse tools exist to bypass; official removal requires authorized LoopCell technician or court order.",
+    "distinctive_features": [
+      "Embedded LED pulse-indicator (color-coded by status: orange=court-mandated, blue=employer-voluntary, green=street-spoofed)",
+      "Tamper-evident ceramic seal that fractures visibly if removal is attempted",
+      "Scratch-resistant film overlay protecting the Ouroboros logo",
+      "Minimal weight design to reduce friction and skin irritation during extended wear",
+      "Court-issue versions often bear scuffed date stamps or registry codes on the inner surface",
+      "Real-time biometric uplink capability (pulse, temperature, location broadcast)"
+    ],
+    "tier_indicator": "Tier 3–5 marker. Tier 1–2 corpo employees rarely wear them; when they do, it signals legal liability or voluntary corporate wellness programs (coded as 'voluntary bonding'). Street presence indicates either systemic surveillance (court mandate) or economic desperation (employer condition for work access). Tier 5 wearing a spoofed green variant is high-risk—visible false compliance.",
+    "cultural_context": "Wearing one marks the wearer as legally monitored, debt-bonded to an employer, or under rehabilitation contract. The pulse color broadcasts status to anyone reading the street—orange is state control, blue is corpo-debt, green is either freedom or lies. In some GLMZ subcultures, modified bands are worn as anti-establishment statement jewelry, intentionally misrepresenting status.",
+    "condition_typical": "Worn units show polished patches from ankle movement, faded logos under the film, and micro-cracks around the seal from attempted tampering. Long-term wearers develop calluses visible around the band's edges. Court-mandated versions accumulate minor cosmetic damage; employer-issue bands are often swapped out quarterly and therefore cleaner."
+  },
+  "image_prompt": "Close-up fashion shot of a matte-black Ouroboros compliance anklet on a model's ankle, pulsing amber light against dark skin. The band gleams under industrial LED downlight in a brutalist concrete interior. Model wears distressed black tactical pants cuffed to expose the full anklet. Shallow depth of field—the anklet sharp, background GLMZ street-level blurred behind industrial scaffolding. Moody cyan and amber color grade. The pulse indicator glows softly, just visible mid-cycle. Shot from low angle to emphasize the weight and permanence of the device. Dark mannequin alternative: spotlit band on featureless black plastic leg, polymer surface reflecting cool warehouse light. Aesthetic: surveillance, control, obligation. --ar 2:3 --v 6"
 }

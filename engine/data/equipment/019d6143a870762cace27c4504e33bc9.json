@@ -47,5 +47,25 @@
     "New Windsor / Novaya Windsorka",
     "The Quiet Room",
     "Tomasz Wren"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian messenger bag system dominated by a bulky belt-mounted battery pack connected via reinforced umbilical cable to a handheld plasma cutting wand. The wand resembles a modified industrial torch with an exaggerated nozzle housing and diagnostic LED ring. Accompanying tools nest in custom foam: three graduated titanium pry bars (flat, curved, and angled), a leather pouch of lock-picking implements, and a spring-loaded hinge extractor assembly. Overall aesthetic is brutalist—function-first design with exposed cable routing and modular attachment points.",
+    "dimensions": "Messenger bag form factor approximately 45cm × 35cm × 12cm when packed; plasma wand barrel 28cm length; battery belt unit 60cm circumference × 8cm depth",
+    "weight_description": "3.2 kg total—handheld for the wand during operation, but the battery pack requires a reinforced hip belt for extended carrying. Single operator can manage, though mounting to tactical harness is common",
+    "primary_material": "Messenger bag: synthetic ballistic weave (black/charcoal); battery pack housing: matte aluminum alloy; plasma wand: tungsten carbide nozzle on steel body; pry bars: aerospace-grade titanium",
+    "finish": "Matte black anodized aluminum with scorched heat-stress discoloration around plasma nozzle from repeated use. Cable insulation shows minor abrasion scuffs. Weathered appearance standard—these tools are field-worn, not display items",
+    "color_scheme": "Predominant matte black with steel gray accents; battery pack features faded warning stripe decals (orange/yellow). Plasma arc ignition point glows cyan-white during operation. LED status indicators: green (charged), yellow (in-use), red (low power)",
+    "interface_elements": "Plasma wand: trigger-grip ignition, rotary nozzle adjustment dial, inline power readout LCD (2-inch monochrome); battery pack: belt-mounted dual indicator lights, quick-disconnect connector (armored jack), pressure relief valve; lock tool pouch: labeled compartments with roll-out canvas organizer",
+    "distinctive_features": [
+      "Reinforced umbilical cable with redundant shielding (visible braided mesh underneath fraying insulation)",
+      "Plasma nozzle modified with external cooling fins—residual heat scorch marks visible",
+      "Custom foam insert molded to kit contents—shows indentation wear patterns and staining from repeated use",
+      "Belt-mounted battery pack has mounted holster attachment point for wand when not in use",
+      "Lock-pick organizer labeled with worn street-slang nomenclature instead of technical names",
+      "Hinge extractor assembly features spring-loaded pin pusher mechanism with visible rust staining"
+    ],
+    "manufacturer_markings": "Street Custom proprietary logo (stylized wrench-and-lightning symbol) stamped on battery pack and canvas bag flap; faint regulatory compliance stamps (GLMZ 2224 certification); no serial numbers visible—likely removed",
+    "condition_typical": "Well-maintained but operationally scarred. Plasma nozzle shows carbon buildup from previous cuts. Cable has minor kinks from field coiling. Tool arrangement in foam shows signs of frequent access (some picks permanently displaced). Battery pack exterior has scratches and dents consistent with belt-mounted transport over rough urban terrain"
+  },
+  "image_prompt": "Overhead flatlay of Street Custom Rathole cutting kit laid out on oil-stained workbench, dramatic side-lighting casting shadows. Black ballistic messenger bag open, contents arranged: matte aluminum belt-mounted battery pack with glowing LED indicators (green), coiled umbilical power cable with reinforced connectors, plasma cutting wand with scorched tungsten carbide nozzle pointed toward camera, three titanium pry bars in graduated sizes, worn leather lock-pick pouch with tools visible, spring-loaded hinge extractor assembly. Gritty urban workshop aesthetic—concrete bench, splatter marks, scattered scrap metal. Neon cyan accent lighting reflecting off plasma torch nozzle. Cyberpunk gear photography, technical documentation style, volumetric dust particles in light beams --ar 3:2 --v 6"
 }

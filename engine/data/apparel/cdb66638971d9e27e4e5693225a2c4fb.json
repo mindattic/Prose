@@ -36,5 +36,28 @@
   "related_entities": [
     "Lazarus LX-2 'Lab Rat'",
     "Ringo DV-4 'Courier'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek, minimalist cross-body sling bag worn diagonally across the torso. Angular silhouette with subtle industrial geometry. Sits compact against the hip or lower back, creating a lean, professional profile. The unremarkable grey finish blends into urban environments while the reinforced strap creates visible structural definition.",
+    "fit": "Compact and close-fitting against the body. Strap sits at chest-to-hip angle, designed for active movement without swing or displacement. Sized for essentials and high-value cargo rather than bulk.",
+    "primary_material": "Ballistic weave exterior with Faraday mesh interior lining. Steel cable-reinforced shoulder strap with synthetic leather or rubberized grip points.",
+    "texture": "Smooth, matte ballistic fabric exterior with subtle weave pattern. Interior reveals layered mesh with slight metallic sheen from embedded shielding. Strap has reinforced, tactile grip zones.",
+    "color_scheme": "Signal grey primary with gunmetal steel hardware. Minimal branding. Darker accent stitching where Faraday mesh meets compartment edges.",
+    "closures": [
+      "Magnetic quick-access snap on front pocket",
+      "Primary compartment secured with friction-fit flap closure",
+      "Strap attachment points use tool-resistant fasteners"
+    ],
+    "distinctive_features": [
+      "Visible steel cable weaving through shoulder strap",
+      "Signal-blocking Faraday mesh lining visible at compartment edges",
+      "Duskline Apparel discreet logo debossed (not printed) on main body",
+      "Multiple quick-access external pockets designed for courier work",
+      "Reinforced stress points at strap attachment and base"
+    ],
+    "tier_indicator": "Tier 3–4 functional. Premium materials and shielding tech place it above standard working-class gear, but the lack of chrome aesthetics and minimalist branding keep it street-practical rather than luxury.",
+    "cultural_context": "Courier culture. Street runners, data operatives, and anyone transporting high-value untrackable goods. Signals competence, discretion, and technical awareness without advertising wealth or corp affiliation.",
+    "condition_typical": "Well-maintained but deliberately worn-in. Surface scuffs and strap creasing from heavy use. Interior mesh shows handling but no tears. Patina of street use—trusted equipment rather than showpiece."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a Duskline Apparel messenger sling bag slung across a figure in tactical street wear, shot in moody neon-lit alleyway. Close detail on the steel-reinforced strap and signal-mesh interior compartment. Harsh blue and violet light casting shadows across unremarkable grey ballistic weave exterior. Urban industrial backdrop with wet concrete and warning holo-signs. Model wears minimal augmentation visible, street courier aesthetic. Cinematic depth of field focusing on bag hardware and reinforcement details. --ar 2:3 --v 6"
 }

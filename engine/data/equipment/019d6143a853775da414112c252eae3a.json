@@ -77,5 +77,24 @@
     "TESSERA PG-2 'Signature'",
     "Uncle Jun's Synth-Noodle Window",
     "Vantablack-CNX"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, rectangular device resembling a hardcover book or thick tablet. Angular, purposeful industrial design with slightly beveled edges. The form factor suggests both portability and deliberate concealment—it could pass as a technical manual or datapad at a glance. Asymmetrical weight distribution favors one end, suggesting internal heat-sink architecture.",
+    "dimensions": "24cm × 15cm × 4.5cm (hardback book size); palm-sized when oriented vertically",
+    "weight_description": "1.1kg — easily handheld, comfortable for sustained operation, requires carrying strap or cargo pocket for extended fieldwork",
+    "primary_material": "Reinforced polymer composite with embedded aluminum heatsink core; rubberized grips on short edges",
+    "finish": "Matte gunmetal with microscopic texture to reduce reflectivity and fingerprinting; anodized aluminum accent bezel",
+    "color_scheme": "Charcoal grey primary, brushed titanium accents on edges and control elements. Amber warning indicators recessed into top surface",
+    "interface_elements": "Top surface: 7.6cm monochrome LCD display (low-power e-ink style), recessed to minimize profile. Physical controls: rotating directional dial (15°–120° spread), power toggle, preset frequency bank selector (4-position), mode indicator lights (green=operator-reserved channels active, amber=suppression active, red=thermal warning). Bottom: reinforced magnetic mounting plate with grip studs. Rear-facing port cluster (covered by rubberized flap): proprietary charging connector, firmware update port, wired operator terminal jack.",
+    "distinctive_features": [
+      "Asymmetrical heat-sink venting along rear spine — visible parallel fins indicating active thermal management",
+      "Recessed antenna array on top surface, barely visible unless backlit — suggests protocol-layer sophistication",
+      "Magnetic mounting system reinforced with visible steel inserts at corners",
+      "Operator-reserved frequency windows displayed as small amber LEDs in a linear array below main display",
+      "Subtle Arcturus Defense Solutions etched logo on lower right corner, deliberately understated"
+    ],
+    "manufacturer_markings": "Small 'Arcturus Defense Solutions / Murmuration Systems' text on bottom plate in 4pt font. Regulatory stamps (GLMZ Tier 3+ licensed equipment marking) and serial number printed on rear. Black market variants show filing damage on manufacturer stamps or replaced plates.",
+    "condition_typical": "In active use: display glowing with suppression envelope metrics and affected protocol counts; amber LEDs indicating operator band reserve status. Slight warmth radiating from rear venting during sustained operation. Magnetic mounting leaves minor dust accumulation around edges. Licensed units show wear patterns consistent with vehicle dashboard mounting; black market units often carry signs of field repair or component swaps."
+  },
+  "image_prompt": "Product photography: Arcturus Tactical Mesh Suppressor lying on a worn metal workbench, angled 45 degrees to show depth and venting. Dramatic side lighting revealing matte gunmetal texture and amber indicator lights glowing softly. Magnetic mounting plate visible, casting sharp shadows. Cyberpunk aesthetic: scattered nearby tools (frequency analyzer, soldering iron), holographic frequency readout floating above display, neon purple and cyan accent lighting reflecting off polished aluminum edges. Concrete wall background with faint grid pattern suggesting corporate security suite. Shallow depth of field, sharp focus on device. Cinematic, high-contrast, cool-toned color grade. --ar 3:2 --v 6"
 }

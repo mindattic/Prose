@@ -47,5 +47,26 @@
     "Lazarus HZ-4 'Cleanroom'",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian knee-length overcoat with an almost clinical aesthetic — structured and purposeful without appearing overtly hazmat. The silhouette is slightly boxy but not unfashionable, sitting with quiet authority on the frame. The pale grey laminated shell reads as professional, almost medical, until you notice the sealed seams and collar architecture.",
+    "fit": "Relaxed through the shoulders and torso to allow layering and mobility; tapered slightly at the wrists with adjustable seal cuffs. The cut prioritizes function and breathing room over body-conforming tailoring. Knee-length proportions allow full leg movement for fieldwork.",
+    "primary_material": "Laminated barrier fabric (pale grey) — a multi-ply synthetic composite with chemical-resistant properties and water-repellent outer facing. The material is wipeable and designed to shed particulates rather than absorb them.",
+    "texture": "Smooth, slightly matte outer surface with a subtle sheen from the laminate seal. The lamination gives it a faint plasticity without feeling cheap — more medical-grade than industrial. Inner lining is breathable mesh-weave to prevent sweat accumulation during extended wear.",
+    "color_scheme": "Pale grey primary (neutral, professional, conceals industrial dust). Dark charcoal or black trim at collar, cuffs, and hem for contrast and to highlight seal points. Optional muted tonal stitching in taupe or grey.",
+    "closures": "Front placket with magnetic snap or friction-lock buttons (faster than traditional buttons for emergency deployment). Wrist cuffs feature adjustable velcro or micro-clasp seals. Collar has a hidden seal track for the particulate filter hood, secured with friction-fit connectors.",
+    "distinctive_features": [
+      "Integrated particulate filter hood that tucks compactly into the collar and deploys in seconds",
+      "Sealed seam construction throughout — visible on close inspection as reinforced stitching",
+      "Reinforced panel on left chest for carrying small tools or filters",
+      "Hidden interior pockets with sealed zippers for keeping documents or medication dry",
+      "Hem vent slits sealed with overlapping flaps for ventilation without compromising the barrier",
+      "Subtle Nkemdirim & Soh embossed badge on the right cuff (minimalist — just initials and a small circle symbol)",
+      "Faint wear patterns expected: scuff marks from industrial contact, discoloration where filters have been deployed"
+    ],
+    "tier_indicator": "Tier 2-3 crossover. Expensive for subsistence workers (Tier 4-5), but subsidized bulk procurement makes it accessible to community health programs. Signals neither corpo wealth nor street poverty — marks the wearer as someone in hazard zones by necessity, not choice.",
+    "cultural_context": "Worn by industrial workers, environmental remediation crews, hazmat handlers, medical responders in contaminated zones, and Shelf residents who cannot afford full protective suits. Wearing this announces exposure to slow-kill environments and a commitment to staying alive in them. It's the uniform of the survival-minded working class.",
+    "condition_typical": "Broken-in but meticulously maintained. Expected to show scuff marks, faint chemical stains that don't wash out completely, small creases from deployment cycles, and occasional patch repairs on the outer shell. The seals are regularly inspected and cuffs may show wear from repeated adjustment."
+  },
+  "image_prompt": "A chemical-resistant overcoat in pale grey displayed on a lean, cybernetically-augmented figure in a dimly-lit industrial zone. The model is positioned three-quarter profile, showing the coat's utilitarian silhouette and sealed seams under harsh overhead lighting that casts long shadows. The particulate filter hood is slightly visible tucked in the collar. Behind them, blurred processing yards with hazy particulate mist and warning lights. Foreground detail shot of the wrist seal cuff with adjustable closure. Moody, clinical color grading with desaturated greens and industrial cool tones. The coat looks worn but carefully maintained — a daily survival tool, not fashion. --ar 2:3 --v 6"
 }

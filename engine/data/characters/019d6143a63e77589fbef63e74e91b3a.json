@@ -322,5 +322,12 @@
     "posture_movement": "Moves with deliberate efficiency — no wasted motion, no fidgeting. Stands with weight balanced and slightly forward, ready to shift direction. Eyes track exits and sightlines constantly. Handshake is firm but brief. Speech is measured, with calculated pauses that suggest either precision or careful emotional suppression.",
     "clothing_style": "Favors Tier 3-4 pragmatism — durable synthetics in dark colors (black, charcoal, deep blue) that resist wear and staining. Typically wears a fitted longline jacket with internal pockets over a simple turtleneck. Pants are tactical cut with reinforced seams. Shoes are unmarked but expensive, chosen for quiet movement and ankle support. No visible branding or status markers — the opposite of advertising. When maintaining cover, adopts identical neutrality to avoid memorable details."
   },
-  "image_prompt": "Cyberpunk character portrait, tall lean African-Scandinavian male, age 32, dark brown hair with silver at temples, hazel eyes, sharp defined cheekbones, cool controlled expression. Visible chrome augmentation on right shoulder and chest with faint blue bioluminescent lines, titanium-alloy plating. Dark tactical clothing — fitted black longline jacket over charcoal turtleneck, professional infiltrator aesthetic. Scar visible along left temple. Standing in Crucible Square, neon market stall lights reflected in chrome, dystopian evening lighting with warm amber and cold cyan contrast, shallow depth of field, hyper-realistic skin texture, sharp focus on face and augmentation detail. Cinematic noir cyberpunk. --ar 2:3 --v 6"
+  "image_prompt": "Cyberpunk character portrait, tall lean African-Scandinavian male, age 32, dark brown hair with silver at temples, hazel eyes, sharp defined cheekbones, cool controlled expression. Visible chrome augmentation on right shoulder and chest with faint blue bioluminescent lines, titanium-alloy plating. Dark tactical clothing — fitted black longline jacket over charcoal turtleneck, professional infiltrator aesthetic. Scar visible along left temple. Standing in Crucible Square, neon market stall lights reflected in chrome, dystopian evening lighting with warm amber and cold cyan contrast, shallow depth of field, hyper-realistic skin texture, sharp focus on face and augmentation detail. Cinematic noir cyberpunk. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 35.7,
+    "Hispanic/Latin American": 22.1,
+    "Northern European": 18.6,
+    "East Asian": 14.1,
+    "Southeast Asian": 9.5
+  }
 }

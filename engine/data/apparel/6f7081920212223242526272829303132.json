@@ -44,5 +44,25 @@
   "related_entities": [
     "Ambrosia Fekete-Waiyaki",
     "Forge-Smith Collective Composite Tonfa 'Riot Answer'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, understated compression top that reads as minimalist corporate wear at first glance. The matte finish and clean lines create an almost clinical aesthetic—precisely engineered rather than fashionable. On an augmented wearer, small irregularities in the shoulder and upper arm seams become visible: micro-articulations that follow the geometry of subdermal chrome like a second skin.",
+    "fit": "Compression fit through the torso and sleeves; snug but not restrictive. Follows the body's contours closely enough to accommodate bulky augmentations without bunching. The fabric hugs muscular or cybernetic arms equally well.",
+    "primary_material": "Synthetic blend with woven thermal-regulation mesh; the mesh is passive—no power requirement. Matte finish suggests treated microfiber or advanced polyamide composite.",
+    "texture": "Smooth and almost rubber-like to the touch, with subtle ribbed texture where thermal mesh is densest. Flat-lock seams create zero friction points. Wrist edges designed for clean heat-sealing and minimal fraying.",
+    "color_scheme": "Charcoal grey or off-white, deliberately neutral. No branding visible on the front; optional discrete Pragma Systems logo on inner collar or shoulder blade.",
+    "closures": "Crew neck, no closures required. Designed to layer under or wear as standalone. Wrists are open-ended for customization.",
+    "distinctive_features": [
+      "Micro-articulated shoulder and upper arm seams that flex around subdermal augmentations",
+      "Passive thermal-regulation mesh woven throughout fabric",
+      "Heat-sealable wrist panels for custom port openings or sensor array integration",
+      "Flat seams throughout to avoid pressure points over implants",
+      "Reinforced panels on shoulders sized to accommodate chrome cyberlimbs",
+      "Unmarked construction—no visible branding except interior label"
+    ],
+    "tier_indicator": "Tier 2-3 boundary. Pragma Systems positions it as Tier 2 'active professional' wear, but street price and aug-community adoption place it functionally Tier 3.",
+    "cultural_context": "Signals augmentation-friendly practicality. Worn by corpo augmentation consultants, street med-techs, underground surgeons, and any embodied professional who's too smart to ignore their chrome's physical needs. The lack of branding appeals to those who want function without visible corporate loyalty.",
+    "condition_typical": "Worn pristine by recent purchasers; develops minor wear patterns at wrist edges and shoulder seams with use. Heat-sealed custom openings create intentional irregularities that look deliberate rather than damaged."
+  },
+  "image_prompt": "Cyberpunk fashion catalog photo: close-up on the torso and shoulders of an augmented model wearing a matte charcoal Pragma Systems Adaptive Base Layer. The compression fit accentuates the geometric lines of shoulder seams, which curve subtly around visible chrome subdermal augmentation at the shoulder joint. Cool, clinical lighting emphasizes the material's texture and thermal mesh weave. Background: dark urban environment, maybe a corpo med-clinic or street-level augmentation workshop with cool blue and grey tones. Model's arms are partially visible—one natural, one cybernetic—to show how the fabric conforms equally to both. --ar 2:3 --v 6"
 }

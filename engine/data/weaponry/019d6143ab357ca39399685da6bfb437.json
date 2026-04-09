@@ -53,5 +53,34 @@
     "shelf",
     "lethal"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "GLMZ",
+    "Lazarus Pharmaceuticals",
+    "Magpie",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Shelf Life",
+    "Tabula",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact spherical grenade with a subtle industrial aesthetic. The body appears smooth and purposeful, neither aggressive nor innocuous — designed to blend into the hands of authorized operators. A central activation mechanism sits recessed slightly into the upper hemisphere, surrounded by faint circular grip indentations. The overall impression is clinical, pharmaceutical rather than militaristic.",
+    "dimensions": "58mm diameter sphere; activation plunger extends 12mm above surface when armed",
+    "weight_description": "Hefty for its size — 280g creates a solid, deliberate feel in the palm. Balanced weight distribution makes it sit naturally in a closed fist without rolling. Feels engineered rather than thrown.",
+    "primary_material": "Composite polymer shell with internal steel reaction chamber housing binary precursor compartments. Polymer exterior rated for pressure containment and thermal stress.",
+    "finish": "Matte technical gray with subtle surface texture — not glossy, designed to minimize reflection and visual attention. Polymer has a faint industrial sheen where wear patterns show from handling.",
+    "color_scheme": "Matte gunmetal gray dominant; recessed activation zone features pale cyan accent ring (indicating binary compound status and LAZARUS branding). Small band of darker charcoal at equator marks precursor separation line.",
+    "grip_texture": "Textured polymer with microscopic grip nodes — feels slightly tacky, engineered to prevent accidental dropping even in wet conditions or with synthetic fiber gloves. Surface has subtle warmth from material composition.",
+    "distinctive_features": [
+      "Recessed activation plunger with subtle cyan illumination ring (passive — indicates armed status)",
+      "Faint circular grip indentations across upper hemisphere",
+      "Hairline separation groove at equatorial centerline (visual indicator of binary chamber division)",
+      "Tiny pressure relief valve vent (barely visible, pinhead-sized)",
+      "Serial microprint band beneath equatorial groove",
+      "Slight iridescent quality to polymer under angled light (anti-counterfeit coating)"
+    ],
+    "manufacturer_markings": "LAZARUS COMPOUND OPERATIONS logo — minimalist geometric Φ symbol integrated into cyan accent ring. Below equator: tiny embossed text 'NDG-2 | LZR-7 | RESTRICTED' in sans-serif font. Serial number printed in microtext on bottom pole.",
+    "condition_typical": "Field-deployed examples show wear on grip texture from gloved handling and faint discoloration from exposure to solvents and sweat. Activation rings occasionally show micro-scratches. Well-maintained examples are virtually pristine; heavily used units retain gray finish but lose tactile grip texture on high-contact areas."
+  },
+  "image_prompt": "Product photography of a neurochemical dispersal grenade, matte gunmetal gray sphere 58mm diameter, resting on black carbon composite surface. Top-down angle showing recessed activation plunger with pale cyan accent ring glowing subtly. Dramatic side-lighting casting sharp shadow, emphasizing smooth polymer texture and hairline equatorial separation groove. Latex-gloved hand entering frame from left, fingertip approaching activation zone. Clinical laboratory aesthetic, cool cyan and steel tones, slight depth-of-field blur on background. LAZARUS Φ symbol visible on upper hemisphere. Cyberpunk corporate pharmaceutical styling, moody and controlled. Suggest precision engineering and synthetic chemistry. --ar 3:2 --v 6"
 }

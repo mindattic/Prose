@@ -37,5 +37,25 @@
   "parent_corponation": "",
   "related_entities": [
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian ankle boot with a blunt, squared-off toe and minimal design language. Sits just above the ankle with a rigid shaft. The silhouette is intentionally unremarkable—a functional base layer of street fashion rather than a statement piece. Looks worn and creased even when brand new.",
+    "fit": "Straight-cut, slightly boxy through the foot and shaft. No contour or tailoring. Designed for quick manufacturing rather than ergonomic fit. Comfortable enough for 8-hour shifts but not broken in naturally—wearers adjust to the boot rather than vice versa.",
+    "primary_material": "Cheap synth-leather composite, likely recycled polymer base with a thin PU coating. Splits easily along stress lines.",
+    "texture": "Slick and uniform out of the box with a plastic sheen. Creases develop immediately at the ball of the foot and heel—white stress marks become visible within days of wear, creating an aged, haggard appearance.",
+    "color_scheme": "Industrial grey with natural white creasing that develops organically. No dye variation or intentional weathering—the boot ages itself through use.",
+    "closures": "Side zip running from toe box to mid-calf. Zipper pull is basic stamped metal, often catches or jams by month two.",
+    "distinctive_features": [
+      "Visibly loose seams at toe box and heel counter",
+      "Factory threading that appears already pulling on new pairs",
+      "Flat rubber sole with minimal tread pattern",
+      "No branding or logos—purely functional",
+      "Creases white at flex points within first week",
+      "Side zip prone to failure under stress"
+    ],
+    "tier_indicator": "Tier 4-5. The boot of the working precariat and unregistered. Affordable enough for bulk purchase but cheap enough that failure is built-in.",
+    "cultural_context": "Worn by warehouse workers, delivery couriers, street-level service jobs, and anyone without corp benefits or access to tier-locked retail. Buying two pairs simultaneously signals acceptance of disposability as economic reality. Common in the GLMZ's labor-surplus districts.",
+    "condition_typical": "Pristine pairs look already distressed due to material choice. After 3-4 weeks: seams separating at toe, creasing permanent and exaggerated, zip sticking. After 3 months: typically one boot is non-functional. Wearers often patch with friction tape or cheap adhesive rather than replace."
+  },
+  "image_prompt": "Close-up fashion photograph of a grey synth-leather Greywalk Flatboot on a dark urban mannequin or worn by a gritty cyberpunk character with visible augmentations on their leg. The boot's toe box shows white creasing and slightly loose seams. Hard fluorescent overhead lighting casts sharp shadows, revealing the plastic sheen and manufacturing imperfections of the cheap material. Concrete industrial background with rain-wet pavement reflection. The boot sits flat, utilitarian, against a dark warehouse or street-market stall setting. Moody, desaturated color grading. --ar 2:3 --v 6"
 }

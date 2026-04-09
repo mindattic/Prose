@@ -45,5 +45,25 @@
     "Sable",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A substantial, workwear-inspired flannel shirt with a relaxed yet structured silhouette. The traditional two-color plaid pattern (navy/grey or rust/charcoal) reads as deliberately understated—functional rather than fashionable. Worn open over layers or buttoned, it projects honest utility and weathered authenticity.",
+    "fit": "Generously cut through chest and shoulders with enough room for thermal base layers underneath. Straight through the torso with long tails that hit mid-hip when untucked. Sleeves are full enough to accommodate augmentation interfaces or heavy gloves without binding. Deliberately non-tapered—built for work, not ego.",
+    "primary_material": "Brushed synthetic-wool blend. Replicates traditional flannel hand-feel without compression fatigue. Maintains softness and loft through repeated washing cycles. Slightly heavier weight than casual flannels—substantial enough to hold structure even when layered.",
+    "texture": "Soft brushed nap on surface with a subtle grid weave underneath. Worn examples develop a faded, slightly fuzzy patina. Not slick or synthetic-feeling despite being lab-grown fibers. Collar and cuffs show subtle reinforcement stitching visible up close.",
+    "color_scheme": "Traditional two-tone plaid: either navy and grey (cooler, professional) or rust and charcoal (earthier, warmer). The pattern is classic, symmetrical, and reads instantly as 'working class authenticity.' Off-white button thread and minimal branding.",
+    "closures": "Full button front with standard resin buttons. Chest pockets have reinforced button closures. No zippers or snaps—pure analog fastening.",
+    "distinctive_features": [
+      "Small Sable Freight logo tag (commonly removed by second and third-hand wearers)",
+      "Reinforced collar, cuffs, and pocket corners with visible topstitching",
+      "Dual chest pockets with button closures",
+      "Long tails designed for tucking or leaving out",
+      "No integrated tech—purely mechanical construction",
+      "Worn examples show faded plaid and softened edges"
+    ],
+    "tier_indicator": "Tier 2-3 boundary. Tier 2 corp families and Tier 3 working class both claim ownership. Marketed as logistics uniform supplement but adopted across demographics because quality is genuinely good and pricing is fair.",
+    "cultural_context": "Signals honest labor, reliability, and practical aesthetics. Worn by dock workers, Iowan Behemoth maintenance crews, cold-weather delivery personnel, and anyone who values durability over hype. The removed logo tag (or presence of it) indicates whether wearer is active logistics or scavenged/secondhand. Anti-fashion statement—very GLMZ.",
+    "condition_typical": "Broken-in and comfortable. Plaid fades slightly with washing. Collar edges soften. Active workers show grease stains, small tears patched or left raw. Secondhand versions may have faded unevenly or show ink marks from previous owners. Rarely pristine—the aesthetic demands lived-in authenticity."
+  },
+  "image_prompt": "Cyberpunk fashion photography: muscular model with visible augmentation ports on neck and wrist, wearing navy-and-grey Sable Freight flannel layered over a fitted black thermal, sleeves rolled to show forearm tech. Standing in the loading dock of a rain-slicked mega-warehouse, neon signage reflecting off wet concrete. Dramatic side-lighting from warehouse floods casting sharp shadows. Film noir color grading with cool blue-grey tones. The flannel reads as honest workwear against industrial brutalism. Close-up detail shot of button-down plaid weave and reinforced pocket stitching. --ar 2:3 --v 6"
 }

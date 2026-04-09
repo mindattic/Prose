@@ -74,5 +74,24 @@
     "The Nearfield",
     "The Resonance Communion",
     "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular deployment platform resembling a collapsed spider or angular crab. When packed, it appears as a flattened titanium case with recessed handles. Deployed, it transforms into a six-legged stance with pneumatic cylinders visibly articulated at each joint, spike housings protruding downward like predatory fangs. The frame has an intentionally utilitarian, almost skeletal aesthetic — no excess paneling, all structural ribs exposed.",
+    "dimensions": "Packed: 38cm × 22cm × 12cm (briefcase-sized). Deployed: approximately 60cm × 50cm footprint, 35cm height to frame apex.",
+    "weight_description": "2.8 kg packed (single-carry strap capable), 4.2 kg deployed (light enough for one-handed repositioning, heavy enough to feel substantial). Handheld and backpack-portable.",
+    "primary_material": "Titanium-alloy frame members with reinforced polymer joint housings. Spike barrels are hardened steel. Pneumatic cylinders chrome-plated brass.",
+    "finish": "Brushed titanium with industrial satin coating showing minor machine marks. Intentionally unglamorous — purposeful scuffing and wear are cosmetically acceptable. Spike tips are matte black with shallow scoring marks from impact testing.",
+    "color_scheme": "Gunmetal gray frame, matte black spike clusters, silver pneumatic cylinder rods. Accent colors: burnt orange manufacturer label, faint acid-yellow safety striping on two anchor spikes (regulatory requirement).",
+    "interface_elements": "Large recessed deploy/retract toggle switch (oversized for gloved operation). Green status LED on power module. Pressure gauge dial (analog, 0-300 PSI scale) on main pneumatic manifold. Two vent ports with perforated shrouds. Charging port (magnetic quick-disconnect) embedded in frame undercarriage. Tension adjustment dials (3) on gyro module, recessed to prevent accidental turning.",
+    "distinctive_features": [
+      "Six spike housings with visible piston rods — each fires with independent micro-timing visible as slight sequential motion",
+      "Exposed micro-gyroscope module mounted on central platform (visible as a small rotating element under transparent acrylic cover)",
+      "Retraction motor housing with acoustic dampening vanes (distinctive ribbed cylinder on frame)",
+      "Wear patterns on spike tips from extensive field use — shallow scoring and impact marks typical",
+      "Faint residue streaking on frame from salt, concrete dust, and industrial runoff"
+    ],
+    "manufacturer_markings": "PALLADIAN CONSTRUCTION embossed and acid-etched on frame (burnt orange fill). Serial number laser-etched on undercarriage. Regulatory certification stamps (GLMZ Bureau of Heavy Equipment, Structural Safety Tier 2 clearance). Subtle Φ price marking ($4,200Φ tier 1 retail) on underside label.",
+    "condition_typical": "Lightly weathered from field deployment. Minimal visible rust or corrosion (titanium-alloy resists). Paint and finish show realistic scuffing on edges and spike housings from repeated deployment cycles. Pressure gauge may show minor dust accumulation on lens. LED status indicator is bright amber-green (indicates mid-charge battery state after typical use day)."
+  },
+  "image_prompt": "Product photography of a deployed Palladian Seismic Anchor Cradle on a cracked industrial concrete workbench, spike array fully extended and glistening under cool LED work-lights. Six matte-black spike tips point downward into concrete, visible pressure gauges and pneumatic cylinders gleaming. Shallow depth-of-field emphasizing the micro-gyroscope module under its acrylic cover (internal elements just barely visible, hinting at precision engineering). Dramatic shadow play across the titanium frame from angled workshop lighting, with faint orange safety stripe and burnt-orange manufacturer label legible. Background slightly blurred industrial setting with ferroconcrete walls and cable runs. Cyberpunk utilitarian aesthetic, tactile and worn. --ar 3:2 --v 6"
 }

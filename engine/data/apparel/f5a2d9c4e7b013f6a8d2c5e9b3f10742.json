@@ -64,5 +64,27 @@
     "SynapTech AromaVeil Olfactory Filter",
     "The Shelf",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A lean, efficient silhouette built for speed and tight spaces. The figure reads as a shadow moving through urban decay—monochromatic, purposeful, with visible wear that speaks to genuine use rather than aesthetic. The asymmetrical chrome forearm plate creates visual tension against the soft grays and blacks, suggesting both improvisation and hard-won survivalism.",
+    "fit": "Compression-tight throughout. The base layer and leggings cling to the body without restricting movement; the vest sits snug over the torso but allows shoulder rotation. Thigh pockets are strapped directly to skin-tight legs. Everything is designed to move with the wearer, not against them.",
+    "primary_material": "Matte charcoal synthetic-polymer base layer with rubberized coating; salvaged Vantablack tactical fabric (vest); reinforced charcoal leggings with articulated yoga-mat knee panels; paracord lacing; nylon webbing straps; gray filter cloth wrap; dead chrome alloy forearm plate.",
+    "texture": "Mixed tactile landscape: smooth rubberized sections on forearms and shoulders contrast with the subtle grip-texture of Vantablack fabric. Patched areas show hand-stitching variations. Knee pads are deliberately rough and utilitarian. The chrome plate is cold and weathered, its circuit traces visible but inert.",
+    "color_scheme": "Monochromatic: charcoal, matte black, gun-metal gray. The chrome forearm plate provides the only metallic accent, dull and oxidized. Hand-stitched patches on the vest vary subtly between black and gray fabrics—a camouflage of repairs.",
+    "closures": "Mix of functional and improvised: magnetic closures (original, still working); fishing-line-sewn pockets (permanent closure); open pockets for fast access; nylon webbing straps for thigh pockets (friction and buckle); paracord relacing on shoes.",
+    "distinctive_features": [
+      "Sixteen asymmetrically-sized torso pockets (various closure methods)",
+      "Rubberized forearm and shoulder coating for friction-free crawling",
+      "Articulated yoga-mat knee panels (visible padding, purposefully ugly)",
+      "Salvaged chrome forearm plate with dead circuit traces (mounted as tool surface and shield)",
+      "Hand-stitched gray/black fabric patches covering original tactical branding",
+      "Filter cloth face wrap (improvised, civilian-grade)",
+      "Paracord shoe relacing and rubber adhesive patches",
+      "Thigh-mounted strapped pockets independent of main garment"
+    ],
+    "tier_indicator": "Tier 5 salvage/sub-grade. Every piece is either salvaged, repurposed, or hand-repaired. Nothing is new. The craftsmanship is genuine but born from necessity, not luxury.",
+    "cultural_context": "Tunnel runner, infrastructure scavenger, Shelf dweller. Someone who moves through the ungoverned spaces beneath the city—maintenance tunnels, abandoned sub-infrastructure, the spaces between corporate authority. Wearing this signals competence in the dark and acceptance of Tier 5 existence. No corporate affiliation. Self-sufficient.",
+    "condition_typical": "Worn-in and actively used. Not pristine, but not falling apart—maintained through constant field repair. Visible creasing at joints, scuff marks on the chrome plate, discoloration on the filter cloth from filtered tunnel air. Everything shows honest wear."
+  },
+  "image_prompt": "A lean figure in matte charcoal compression gear stands in profile against a rain-slicked industrial tunnel backdrop, lit by cold blue-green overhead grating light. The asymmetrical dead chrome forearm plate catches a sharp highlight. Sixteen pockets are visible across the torso, each slightly different—some with magnetic snaps, others roughly stitched. Dark filter cloth wraps the lower face. Articulated knee pads catch reflected light. Paracord-laced shoes are positioned as if mid-stride on wet concrete. The overall mood is functional dread: this is not fashion, this is survival equipment worn by someone who has descended into the infrastructure and learned to move through it. Film noir cyberpunk realism. High contrast. Moody. --ar 2:3 --v 6"
 }

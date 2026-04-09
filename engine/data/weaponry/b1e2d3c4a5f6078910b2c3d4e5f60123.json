@@ -40,5 +40,37 @@
     "security",
     "multi-target"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Brighton Arc",
+    "CONDUCTOR",
+    "Fanta Kato-Adomako",
+    "MERIDIAN",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Stonepath Logistics",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'"
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian shock baton with aggressive minimalism — deceptively simple straight-line form factor that belies its chain-discharge lethality. Reads as corporate security equipment at first glance, but the grip ergonomics and weighted balance suggest something more calculated. No visible arc-generation hardware; the danger is entirely internal.",
+    "dimensions": "65 cm length overall; 4.2 cm grip diameter; 2.8 cm baton shaft diameter; rear toggle switch positioned 8 cm from butt end",
+    "weight_description": "Hefty but balanced — 0.95 kg distributes evenly along the shaft, making it feel substantial in hand without being unwieldy. The weight settles toward the striking end, giving momentum without sacrifice of control.",
+    "primary_material": "Matte polymer composite (shock-resistant, non-conductive outer shell) over internal conductive core; grip section wrapped in rubberized compound for operator isolation",
+    "finish": "Flat matte grey polymer, industrial and featureless; wear patterns typically show at the striking tip and along the grip where gloved hands make contact during prolonged deployments",
+    "color_scheme": "Institutional grey (RAL 7040 equivalent) with black grip section and subtle dark grey accent bands at 15 cm intervals along the shaft; no bright markings — designed for low visual profile",
+    "grip_texture": "Deeply textured rubberized polymer with thin horizontal ridges, engineered to remain secure even in wet conditions or through latex gloves; slightly tacky to bare skin",
+    "distinctive_features": [
+      "Rear-grip physical toggle switch (silver anodized aluminum, roughly 1.5 cm long) with unlabeled positions (ARC/STANDARD mode unmarked to avoid training documentation liability)",
+      "Subtle capacitor charge-state indicator LED (amber-to-green gradient) recessed into grip butt — only visible when held at specific angles",
+      "Small circular conductive contact pad (brushed steel, 1 cm diameter) at the striking tip, discretely recessed into polymer casing",
+      "Faint horizontal reinforcement ridges along the shaft spaced at 10 cm intervals, suggests rigidity without advertising design intent",
+      "Series of barely-visible pinhole vents along the lower shaft (cooling circulation, but imperceptible to casual inspection)",
+      "No printed branding on the barrel — ShieldTech logo and serial plate mounted only on the grip collar, deliberately obscured during normal use"
+    ],
+    "manufacturer_markings": "ShieldTech corporate logo (angular shield with Φ symbol) stamped on grip collar; serial number and specifications laser-etched on grip butt in 4-point font (deliberately difficult to read without removing glove); legal compliance stamp on rear toggle assembly (barely visible)",
+    "condition_typical": "Field units show concentrated wear at the striking tip (micro-scarring, discoloration from repeated arc discharge residue) and grip darkening from sweat/conduit fluid contact; toggle mechanism shows minimal wear due to operator reluctance to switch modes during active deployment; capacitor housing often shows light heat-stress discoloration in the 2-3 cm zone above the grip"
+  },
+  "image_prompt": "Product photograph of a ShieldTech CLA-3 Cascade shock baton — matte grey polymer 65cm baton held at slight diagonal in a gloved tactical hand (black synthetic leather glove, forearm partially visible). Dark reflective surface beneath (wet concrete texture, suggesting transit environment). Dramatic side-lighting from upper left revealing subtle grip texture and reinforcement ridges along shaft; rear toggle switch catch highlight in cool white. Close detail insert showing the recessed strike-tip contact pad and capacitor indicator LED (amber glow). Cyberpunk color grading: cool grey tones, amber accent lighting, subtle chromatic fringing on the edges. No branding visible on barrel. Background hints at Meridian transit station platform (blurred neon signage). Shot emphasizes deceptive simplicity and concealable lethality. --ar 3:2 --v 6"
 }

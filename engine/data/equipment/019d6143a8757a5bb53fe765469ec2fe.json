@@ -66,5 +66,24 @@
     "Tessera TK-20 Apex 'Mandate'",
     "The Dead Channel",
     "The Ledger"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A minimalist rectangular slab with no affordances — flat matte surfaces meeting clean edges, deliberately designed to resist interaction. The form factor is deliberately blank, suggesting purpose through absence rather than decoration.",
+    "dimensions": "9cm × 6cm × 1.8cm (slightly larger than a standard playing card deck, pocket-sized)",
+    "weight_description": "Handheld, negligible weight — easily pocketable, feels substantial but not burdensome",
+    "primary_material": "Vasquez biocompatible composite — industrial-grade polymer matrix with embedded signal damping lattice",
+    "finish": "Matte black with micro-textured surface treatment; absorbs light rather than reflecting it. No shine, no gloss — surface feels slightly grippy and warm to touch",
+    "color_scheme": "Flat matte black throughout; subtle dark-gray edge bevels where top and side panels meet. No accent colors, no branding visible at casual glance",
+    "interface_elements": "Single recessed pairing port (barely visible as a shallow circular depression, flush with the surface, approximately 4mm diameter). No buttons, screens, LEDs, or status indicators of any kind. Absolute visual silence",
+    "distinctive_features": [
+      "Complete absence of user-facing controls or feedback mechanisms — intentional design philosophy of opacity",
+      "Barely-perceptible seam line running horizontally across the center where device halves would separate internally",
+      "Recessed pairing port is the only break in the flat surface plane — requires deliberate seeking to locate",
+      "Edges are beveled at approximately 2mm, softening the hard geometry",
+      "Slight thermal gradient visible under extreme close inspection — cooler at the center where key-sync substrate is housed"
+    ],
+    "manufacturer_markings": "Tessera Corporation logo (Φ icon) laser-etched in 2mm text on the bottom-left corner of the rear face — easily missed unless actively searched for. No regulatory stamps or serial numbers visible; all documentation is digital or on the substrate itself",
+    "condition_typical": "Looks identical whether powered or dormant. In use, indistinguishable from an inactive device. Users develop tactile familiarity rather than visual feedback — they know it's working because they receive data on the paired unit, not because the Ledger tells them so"
+  },
+  "image_prompt": "Product photography of a matte black rectangular device the size of a playing card, positioned on a brushed steel workbench under sharp cool LED lighting that emphasizes its absolute flatness and lack of visual features. The recessed pairing port is barely visible as a shallow circular depression. Surrounding the Ledger are scattered components suggesting active corporate espionage countermeasures — decrypted message fragments, a paired unit in soft focus, wireless analyzer equipment in the background. Cyberpunk aesthetic emphasizing paranoia and signal-layer warfare. Shallow depth of field. Dark, high-contrast lighting. The device should look both mundane and ominous — a tool that hides in plain sight. --ar 3:2 --v 6"
 }

@@ -84,5 +84,24 @@
     "Switchboard",
     "Tessera Industries Memory Rounds MR-2 'Recall'",
     "The Collective"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular throwable unit resembling a hardened tactical grenade with pronounced ribbed armor plating. The beacon's form factor is deliberately aggressive — all sharp edges and recessed surfaces designed to minimize snag points. Upon activation, it becomes inert while its payload disperses; the unit itself serves as both launcher and control node.",
+    "dimensions": "11 cm x 9 cm x 7 cm (fist-sized), thumbnail-scale relays (1.2 cm diameter each)",
+    "weight_description": "Handheld and throwable at 340 grams; balanced for underhand or overhand deployment",
+    "primary_material": "Titanium-alloy frame with Faraday-wrapped core; relays feature radar-absorbent ceramic composite coating",
+    "finish": "Matte gunmetal with micro-textured grip sections; relay nodes have a dull charcoal ceramic veneer with visible micro-hook attachment points",
+    "color_scheme": "Gunmetal gray primary with deep charcoal accents; minimal branding in muted industrial orange (Mensah logo); relay nodes show faint iridescent sheen from ceramic coating under oblique light",
+    "interface_elements": "Recessed activation button (pressure-sensitive), removable magnetic access panel revealing timer display and trigger port; minimal—designed to resist accidental activation. Small indicator LED (amber/red) flush-mounted on top surface. Proprietary docking port for remote trigger module.",
+    "distinctive_features": [
+      "Aggressive ribbed armor plating creates deliberately hostile aesthetic",
+      "Visible micro-hook arrays on thumbnail relays, resembling industrial barbs or thorns",
+      "Radar-absorbent ceramic gives relays a slightly dull, non-reflective quality",
+      "Recessed, minimalist interface suggests military-grade durability over user convenience",
+      "Faraday-wrapped core visible as subtle shimmer around edges of access panel"
+    ],
+    "manufacturer_markings": "Mensah Protective Equipment logo (stylized shield with thorned edge) in muted orange on ribbed side panel; small regulatory stamps in Cyrillic and Latin character sets; series number laser-etched on base",
+    "condition_typical": "Appears battle-ready even unused — scuff marks on armor plating are cosmetic. Relays pre-packed in magnetic ejection cartridge visible through translucent retention window on beacon body. Well-maintained units show slight patina on titanium; field-worn examples display ceramic spalling on ejected relay casings."
+  },
+  "image_prompt": "Product photography of a Thornwire Mesh Beacon on tactical workbench, gunmetal ribbed throwable unit centered in frame, surrounded by scattered thumbnail-sized ceramic relay nodes with visible barbed micro-hooks catching dramatic red/amber tactical lighting. Faraday-wrapped core subtly visible through recessed access panel. Dark industrial workspace background with scattered tools. Moody cyberpunk lighting with hard shadows, hint of electromagnetic field visualization (subtle blue arc effects near beacon). Close-up detail shot shows micro-hook geometry on individual relay node. --ar 3:2 --v 6"
 }

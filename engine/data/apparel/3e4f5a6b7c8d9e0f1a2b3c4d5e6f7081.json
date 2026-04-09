@@ -48,5 +48,25 @@
     "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
     "GLMZ",
     "Tiare Nishi-Anim"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, clinical monitoring device that sits prominently above the ankle bone like a corporate seal. The matte graphite finish reads as institutional and inescapable—a constant visual reminder of legal constraint. On a wearer, it catches light subtly but never lets the eye forget it's there.",
+    "fit": "Snug and contoured, sits directly above the ankle bone without gap or slip. The curved polymer shell follows the leg's natural geometry. Designed for 24/7 wear without chafing, though the psychological fit is suffocating.",
+    "primary_material": "Matte graphite polymer shell (scuff-resistant, temperature-regulated) over titanium locking core (tamper-resistant, cannot be cut or bypassed without triggering alert)",
+    "texture": "Smooth polymer exterior with a subtle stippled grip pattern; barely perceptible to touch but visible under raking light. The embossed Vanthorpe crest creates a raised tactile marker—a brand burned into the skin's memory.",
+    "color_scheme": "Matte graphite (corporate gray) with amber LED indicator that pulses steadily during normal operation. Red LED activation signals tamper attempt or zone breach.",
+    "closures": "Locking titanium clasps sealed at manufacture—no user-accessible closures. Removal only possible by authorized Vanthorpe technicians or court order.",
+    "distinctive_features": [
+      "Embossed Vanthorpe corporation crest (readable only up close, impossible to ignore)",
+      "Single amber LED pulsing every 8 seconds (switches to red on tamper/breach)",
+      "Contoured polymer shell that follows ankle bone geometry",
+      "Titanium core resistant to cutting, prying, or physical bypass",
+      "Subtle stippled grip pattern on polymer surface",
+      "Temperature-regulation systems prevent discomfort but ensure constant presence awareness"
+    ],
+    "tier_indicator": "Tier 4-5 indicator (marks wearer as legally processed, sub-grade civil status, restricted movement rights)",
+    "cultural_context": "Worn by court-processed individuals, parolees, and those under provisional freedom conditions. Signals legal entanglement, restricted autonomy, and corporate-judicial control. The Vanthorpe crest is a brand—you belong to the system monitoring you.",
+    "condition_typical": "Pristine on installation, then accumulates micro-scratches, dust in the stippled texture, occasional condensation under the polymer shell. Long-term wear shows darkening around the LED window from repeated activation cycles. Never truly 'worn in'—it remains clinical and foreign."
+  },
+  "image_prompt": "Close-up of a matte graphite ankle monitor clamped above the ankle bone on a pale-skinned model's leg, amber LED pulsing faintly in shadow. Dark industrial backdrop with harsh sidelight revealing the Vanthorpe crest embossed on the polymer shell. Cinematic cyberpunk fashion photography, moody blue-gray color grading, shallow depth of field on the device. The monitor glows subtly against dark clothing. --ar 2:3 --v 6"
 }

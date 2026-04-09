@@ -79,5 +79,25 @@
     "The Nearfield",
     "Vantablack Media",
     "Vantablack-CNX"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting full-body hooded garment that appears as a perfect visual void—the fabric doesn't reflect light so much as *eliminate* it. The weave creates a depth-less silhouette, almost like looking at a humanoid absence rather than a person wearing black. The hood extends to cover the face, with subtle mesh panels at eye level that are imperceptible unless specifically searched for.",
+    "dimensions": "Full-body garment (170–200 cm deployed length); compresses to a 25×20×8 cm pouch when rolled",
+    "weight_description": "1.1 kg total—light enough to wear for extended periods without fatigue, handheld as a compression bundle",
+    "primary_material": "Proprietary Vantablack Media photon-harvesting microfiber woven with embedded micro-actuated chromophore cells; outer layer treated with radar-diffusing aerogel coating",
+    "finish": "Matte ultra-black with an almost liquid-like visual quality; surface appears to *drink* light rather than reflect it. Subtle iridescent shimmer visible only at oblique angles (chromophore activity indicator). Aerogel coating gives a faint powdery texture appearance in bright direct light, like disturbed carbon dust.",
+    "color_scheme": "Primary: absolute black (Vantablack™ designation). Accents: faint teal/cyan micro-LED indicators embedded at wrists and along the spine when active mode is engaged. Interior lining is matte charcoal gray.",
+    "interface_elements": "Minimalist: two tactile pressure nodes at left wrist (static/active mode toggle, battery status), micro-USB charging port concealed in right cuff with waterproof cap, thermoelectric strip grid visible as subtle embossed lines along torso and upper legs (body heat harvesting), subtle blue LED indicator in left palm area (passive/active status and power remaining—cycles slowly when inactive, pulses when active)",
+    "distinctive_features": [
+      "The garment appears to have *no reflection*—it absorbs rather than bounces light, creating an unsettling visual void",
+      "Micro-actuated chromophore cells create barely-perceptible shimmer patterns when active (dynamic blending mode), like heat haze made solid",
+      "Hood design includes reinforced mesh eyeholes that are visually seamless from 1 meter away",
+      "Thermoelectric strip grid creates subtle geometric embossing across the weave—functional and aesthetic",
+      "Faint aerosol particulate coating on outer surface (radar treatment) creates grainy texture under extreme magnification",
+      "Spine-mounted teal status LEDs glow softly when active, creating thin vertical line of light in darkness"
+    ],
+    "manufacturer_markings": "Anchor Broadcasting Platform logo (subtle embossed anchor symbol) on interior left shoulder; discrete serial number laser-etched on charging port cap; regulatory label on inner collar (reads as 'Broadcast Field Equipment — Vantablack Media Division'); warranty barcode on compression pouch",
+    "condition_typical": "Deployed: worn as seamless full-body garment, hood drawn, gloves pulled to wrist, appearing as a human-shaped void in low-light environments. Inactive: color and light-absorption at their peak, completely non-reflective. In use during movement: micro-ripples of teal-cyan light trace across surface as chromophore cells actively sample and redistribute ambient light patterns. Storage: compressed into pouch, surface appears powdery (aerogel coating) until deployed again."
+  },
+  "image_prompt": "A Vantablack Media Chromatic Null Shroud laid flat on a brushed steel workbench under dramatic workshop lighting. The garment appears as an absolute void—pure black emptiness that seems to swallow light entirely. A single 1-meter soft-key light rakes across the fabric, revealing only the faintest shimmer of its surface texture and the barely-perceptible thermoelectric strip grid. The hood is positioned center-frame, face opening toward camera, revealing nothing but absolute darkness within. The compression pouch sits nearby, its fabric showing powdery aerogel coating in sharp focus. A small status indicator glows soft teal-cyan from the wrist area. Surrounding environment: dimly lit GLMZ workshop—scattered tools, a retro CRT monitor, scattered cable spools. Cyberpunk aesthetic with cool color grading, dramatic shadows. The garment's impossibly black surface contrasts against matte steel and warm tungsten fixtures. Shallow depth of field emphasizes the fabric's light-eating quality. Shot from 45-degree angle, revealing the garment's form without it appearing flat. --ar 3:2 --v 6"
 }

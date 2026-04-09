@@ -42,5 +42,36 @@
     "skill_enhancing",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions ARC-SL45 'Kingmaker'",
+    "Ghost Protocol",
+    "Kamala Blomberg-Konadu",
+    "Lacuna Genomics",
+    "Nika Svensson-Kone",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purpose-built semi-automatic pistol with a distinctly modern aesthetic—compact yet authoritative. The frame tapers smoothly from trigger guard to grip, suggesting both precision engineering and ergonomic refinement. A subtle metallic sheen along the slide contrasts with matte polymer surfaces, giving it an almost surgical appearance. The overall impression is 'refined tool' rather than flashy hardware.",
+    "dimensions": "Length: 19.5 cm | Barrel length: 10.2 cm | Height: 13 cm | Width: 3.2 cm",
+    "weight_description": "Balanced and purposeful at 940 grams—substantial enough to feel serious, light enough for extended carry. The polymer-steel hybrid distribution centers weight in the hand without feeling bottom-heavy or unwieldy.",
+    "primary_material": "Hardened steel slide over polymer-composite frame with integrated neural-interface coupling points",
+    "finish": "Brushed matte gunmetal slide with anodized black polymer frame; subtle satin sheen on trigger assembly and safety mechanisms",
+    "color_scheme": "Primary: gunmetal gray and matte black | Accents: polished steel trigger, faint teal LED indicator beneath the slide (neural-sync status)",
+    "grip_texture": "Textured rubberized polymer with subtle radial grip pattern for secure purchase with gloved or augmented hands; thin copper-trace wiring visible at grip base leading to neural coupling",
+    "distinctive_features": [
+      "Teardrop-shaped neural-interface port recessed into grip tang (silver contact rings)",
+      "Faint teal LED indicator strip under the slide showing BCI sync status and battery level",
+      "Minimalist iron sights (standard backup; often unused when linked)",
+      "Volkov-Saito precision-cut slide serrations with micro-grip texture",
+      "Ambidextrous safety levers with raised serrations",
+      "Magazine witness dots (three-round intervals) in clean white paint",
+      "Charging handle with subtle knurling—ergonomic but understated"
+    ],
+    "manufacturer_markings": "VOLKOV-SAITO PRECISION stamped in clean serif font along left side of slide; 'VS-SL40' designation on right; 'PARTISAN' engraved in smaller capitals below the slide; serial number on frame below trigger guard in micro-etched numerals; faint Φ symbol (QUANTA currency) stamped near grip base",
+    "condition_typical": "Field-maintained and professional—well-kept but bearing honest wear. Slide may show light scuffing from holster carry; grip shows minor handling marks; neural port contacts kept clean but showing micro-scratches from repeated BCI coupling/uncoupling; no corrosion or neglect"
+  },
+  "image_prompt": "Product photography: Volkov-Saito VS-SL40 Partisan pistol displayed at three-quarter angle on matte black surface, held in gloved cybernetic hand with visible synthetic knuckle joints. Dramatic side-lighting from left (cool LED blue) emphasizing brushed gunmetal slide texture and polymer matte finish. Neural-interface port on grip subtly illuminated with faint teal glow. Background: dark composite with hint of GLMZ cityscape bokeh. Shallow depth of field. Cinematic cyberpunk aesthetic, professional armory tone. --ar 3:2 --v 6"
 }

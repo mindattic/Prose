@@ -48,5 +48,24 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "The Peninsula",
     "The Quiet Room"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A worn leather tool roll, roughly the size of a pencil case, with a utilitarian aesthetic. When unrolled, it reveals a grid of pockets and slots containing an eclectic mix of hand-ground steel picks, electronic modules the size of matchboxes, and cable assemblies. The overall impression is deliberately low-tech on the surface—vintage locksmith meets contemporary tech smuggler.",
+    "dimensions": "22 cm long × 12 cm wide when rolled; expands to approximately 45 cm when fully unrolled",
+    "weight_description": "Handheld, roughly 300 grams; light enough to slip into a jacket pocket or courier bag without bulk",
+    "primary_material": "Worn brown or black leather outer roll; interior fabric dividers; steel and brass pick components; polymer housings for electronics",
+    "finish": "Leather shows creasing and patina from heavy use; metal picks have a raw, hand-ground appearance with slight surface irregularities; electronic modules have matte black or industrial gray finish",
+    "color_scheme": "Primary: dark brown or charcoal leather with aged tan creases; Accents: bare steel and brass metallics for picks, matte black electronics, occasional red indicator LEDs on bypass modules",
+    "interface_elements": "Small rubberized buttons on the electronic bypass module; micro-USB charging port (barely visible); RFID cloner has a tiny LCD screen (2cm diagonal) showing signal strength; various pick slots and compartments; brass tension wrench handles with subtle knurling",
+    "distinctive_features": [
+      "Hand-lettered or etched 'Coffin Nail' branding on leather exterior",
+      "Asymmetrical wear patterns suggesting years of field use",
+      "Thin red fabric booklet inside roll containing pick profiles and decoder calibration notes (hand-annotated)",
+      "Custom-soldered circuit boards visible in bypass module, no corporate heat-shrinking",
+      "Leather retaining strap with vintage brass buckle or paracord tie-off"
+    ],
+    "manufacturer_markings": "Stamped or burned 'Street Custom' mark on leather; open-source hardware logos on circuit boards (Arduino, esp8266 silkscreen); no regulatory certifications, intentionally absent",
+    "condition_typical": "Well-maintained despite weathering; picks stored in exact slots to prevent damage; electronic modules wrapped in foam or paper to dampen vibration; leather darkened from handling oils and occasional rain; small repair patches on pockets"
+  },
+  "image_prompt": "A worn brown leather tool roll, closed with a brass buckle, lies on a scratched metal workbench next to scattered lockpicks and a small electronic bypass module. Unrolled sections reveal hand-ground steel picks, a matchbox-sized keycard cloner with a faint red LED, and a decoder device with minimal LCD display. Dramatic side-lighting casts long shadows across aged leather creases. Graffiti-tagged wall and neon reflection in background. Cyberpunk catalog aesthetic, moody and utilitarian. --ar 3:2 --v 6"
 }

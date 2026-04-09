@@ -42,5 +42,42 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "8.6x70mm Electrothermal Chemical Projectile ETC-86",
+    "Alper Holmberg-Dembele",
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Glenville Sound",
+    "Harlan Dray",
+    "Irontide Tidal Energy",
+    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
+    "Nika Svensson-Kone",
+    "Stonepath Logistics",
+    "Sustrel",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "Tessera Phased Array Disruptor PAD-3 'Sunspot'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular rifle with a pronounced forward-swept design. The weapon has an aggressive, lightning-bolt aesthetic — sharp edges and tapered lines that suggest electrical energy. The barrel assembly dominates the profile, appearing almost like a tuning fork with dual ionization vents. Overall impression is cutting-edge and dangerous, with an almost organic, predatory quality.",
+    "dimensions": "127 cm length overall, 34 cm width at widest point (capacitor banks), 16 cm height. Barrel assembly extends 52 cm from receiver. Charging grip rises 8 cm above the rail system.",
+    "weight_description": "Substantial and front-heavy at 11.4 kg — the capacitor bank assembly pulls the balance forward. Feels muscular and deliberate in hand, requiring confident two-handed stance. The weight distribution encourages aggressive posture rather than precision hold.",
+    "primary_material": "Titanium-reinforced carbon composite frame with exposed capacitor housings. Barrel ionization assembly is anodized aluminum with quartz lens elements.",
+    "finish": "Matte gunmetal gray with brushed titanium accents. The dual capacitor banks feature a slightly translucent deep violet tint, suggesting charged electrical potential. Scorch marks and micro-fractures common on well-used examples.",
+    "color_scheme": "Gunmetal gray primary, deep violet capacitor casings, chrome charging terminals. Occasional burnt sienna heat-stress discoloration on the ionization vents.",
+    "grip_texture": "Textured rubberized polymer with embedded micro-ridges for wet-hand grip. The charging handle is bare brushed steel with slight electrical burn marks. Ergonomic curves suggest corpo-level refinement despite the weapon's Tier 5 accessibility.",
+    "distinctive_features": [
+      "Dual ionization vents positioned like a predator's snarling teeth at barrel terminus",
+      "Violet-glowing capacitor charge indicators visible through translucent side panels",
+      "Micro-fracture web visible in composite frame from electrical stress",
+      "Chrome charging terminals that arc faintly during recharge cycle",
+      "Scorched carbon deposits around the muzzle assembly from atmospheric ionization",
+      "Heat-sink fins along the barrel in a spiral pattern",
+      "Targeting reticle projected via small LED assembly mounted on dorsal rail"
+    ],
+    "manufacturer_markings": "TESSERA logo stamped in chrome on left capacitor housing. 'PC-9 STORMCALLER' engraved in italics above the charging mechanism. Serial number etched on the titanium frame just behind the trigger guard. Military authorization hologram seal (faded/scratched on field units) near the power cell socket.",
+    "condition_typical": "Field-worn with visible scorch marks, composite micro-fractures from electrical cycling stress, and burn-tarnished chrome. The weapon operates reliably despite cosmetic degradation. Dust and residue accumulates in the ionization vents. Charging terminals show blue-white oxidation from repeated arcing."
+  },
+  "image_prompt": "Product photography of the Tessera Plasma Channeler PC-9 'Stormcaller' plasma rifle positioned diagonally across a matte black aircraft-grade aluminum surface. Dramatic side-lighting from upper left casts sharp shadows, highlighting the angular titanium frame and dual capacitor housings with their deep violet translucent glow. The ionization vents at the barrel tip catch light like teeth. Slight electrical arc effect visible between the charging terminals. Gloved hand in reinforced tactical glove (dark gray synthetic leather) gripping the rubberized charging handle, fingers resting on the trigger guard. Background is dark gunmetal with subtle circuit-board pattern overlay suggesting cyberpunk setting. The weapon shows field-wear — micro-fractures in composite, scorched heat-sink fins, tarnished chrome details. Cool color temperature with accent lighting emphasizing the violet capacitor glow and micro-arcs. Shot from 45-degree angle showing full profile and dimensional depth. Professional product catalog aesthetic with cyberpunk industrial design. --ar 3:2 --v 6"
 }

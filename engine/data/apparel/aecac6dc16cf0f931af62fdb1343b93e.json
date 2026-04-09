@@ -36,5 +36,24 @@
   "related_entities": [
     "LifeWire SolarShield UV Dermal Protection Layer",
     "O'Hare Sovereign"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimal skullcap covering only the cranial region where neural-port hardware protrudes. Hugs the back and crown of the head like a second skin, leaving the face completely exposed. The silhouette is smooth and aerodynamic, with no bulk or ornamentation—purely functional.",
+    "fit": "Compression-tight, form-fitting. Seats snugly over the neural-port installation without gaps. Flexible enough to move with the wearer's head, rigid enough to maintain structural integrity around the port hardware.",
+    "primary_material": "Medical-grade silicone with embedded Faraday mesh weave. The mesh is imperceptible from the outside but provides EM shielding.",
+    "texture": "Smooth, almost rubbery to the touch with a subtle matte finish. The silicone has a slight tackiness that keeps it in place. No seams visible from the outside.",
+    "color_scheme": "Clinical white or matte black, no patterns. Some units show faint grid marks where the Faraday mesh lies beneath the surface.",
+    "closures": "Friction-fit and elasticated edges—no fasteners. Slides on and seats naturally against the skull.",
+    "distinctive_features": [
+      "Embedded Faraday mesh for electromagnetic interference shielding",
+      "Precise port opening cutout, custom-fit to standard neural-port dimensions",
+      "Moisture-seal ridge around the port opening",
+      "Barely visible branding—small Kaida Fabrication logo on the back",
+      "Micro-ventilation channels along the crown to prevent sweat buildup"
+    ],
+    "tier_indicator": "Tier 3–4 functional medical device. Affordable necessity, not luxury. Most users are industrial workers or street-level augmented individuals.",
+    "cultural_context": "Worn by neural-port users in harsh environments—factory workers, dock laborers, maintenance crews in the lower GLMZ districts. Signals augmentation, work ethic, and survival in ungoverned or industrial zones. A practical necessity, not a fashion choice.",
+    "condition_typical": "Broken-in and cleaned regularly. Slight clouding on white versions from dust and handling. Black versions show scratches from repeated insertion/removal. Most users keep theirs meticulously maintained because a damaged shield means port damage and potential medical crisis."
+  },
+  "image_prompt": "Close-up fashion shot of a matte black Kaida Fabrication Neural-Port Shield on a cyberpunk model's head, viewed from the 3/4 rear angle showing the back and crown coverage. Dramatic side-lighting emphasizes the smooth silicone surface and faint Faraday mesh grid pattern. Dark industrial backdrop—concrete wall, faint neon glow from blue/purple ambient light. Rain-wet surfaces nearby. The model's face is visible in profile, augmented eyes glowing softly. Shallow depth of field focusing on the shield's texture. Moody, clinical atmosphere. --ar 2:3 --v 6"
 }

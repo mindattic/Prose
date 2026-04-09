@@ -44,5 +44,25 @@
     "The Bleach Boys",
     "The Pale Mile",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A worn, heavily modified hoodie that reads as street-salvage with utilitarian repairs. The silhouette is relaxed and slightly oversized, slouching at the shoulders. Bleach damage creates an accidental, asymmetrical tie-dye effect that gives it character despite (or because of) its deterioration.",
+    "fit": "Relaxed and oversized through the body and arms, with a dropped shoulder seam. Hood sits generously over the head without compression. Kangaroo pocket hangs slightly loose due to age.",
+    "primary_material": "Mid-weight cotton-synthetic blend, likely salvaged or mass-produced pre-2210. Fabric has softened from repeated washing and wear.",
+    "texture": "Soft, broken-in surface with slight pilling at stress points. Bleach damage creates matte white streaks against the dull grey. Restitched seams are slightly raised and more rigid than surrounding fabric.",
+    "color_scheme": "Base charcoal grey faded to a murky slate. Irregular pale bleach blotches concentrated on left shoulder and lower hem. Stark white paracord drawstring and visible white running stitch on pocket create high-contrast repair details.",
+    "closures": "Traditional drawstring hood using thin paracord (replacement) threaded through original metal eyelets. No front zipper — pure pullover. Kangaroo pocket is open.",
+    "distinctive_features": [
+      "Asymmetrical bleach staining (accidental or intentional weathering)",
+      "Paracord replacement drawstring — clearly knotted, not factory",
+      "Visible white running stitch on kangaroo pocket seam (hand-repaired)",
+      "Original metal eyelets surviving despite garment age",
+      "No visible manufacturer mark or branding",
+      "Slight fading and color variation suggesting multiple wash cycles"
+    ],
+    "tier_indicator": "Tier 4-5 — Working class salvage or sub-grade personal wear. No corporate finish, fully functional but clearly repaired.",
+    "cultural_context": "Worn by street-level workers, salvage runners, or undercity residents who value function over aesthetics. The visible repairs signal self-sufficiency and DIY culture. Could belong to someone operating in the ungoverned zones or living paycheck-to-paycheck in the GLMZ underbelly.",
+    "condition_typical": "Weathered and broken-in. Bleach damage is permanent and uneven. Repairs are visible and intentional. Would show additional wear with use — fraying drawstring, slight holes forming at seams, progressive fading."
+  },
+  "image_prompt": "Cyberpunk fashion photo of a faded charcoal-grey hoodie pullover draped on a dark chrome mannequin or worn by a lean model with subtle augmentations. Hood up, revealing the thin paracord drawstring knotted through metal eyelets. Bleach stains visible on left shoulder and hem in pale white streaks. Close-up detail showing the white running stitch repair on the kangaroo pocket. Moody neon-blue and amber backlighting casting shadows across the fabric. Industrial concrete wall and scattered LED strips in background. Gritty, lived-in aesthetic. Film noir cyberpunk style. --ar 2:3 --v 6"
 }

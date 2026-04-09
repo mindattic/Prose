@@ -43,5 +43,37 @@
     "anti-armor",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Crucible Genomics",
+    "GLMZ",
+    "Nurlan Holmberg-Dembele",
+    "Red Circuit RC-Pit 'Dogfighter'",
+    "Ringo RM-4 'Thresher'",
+    "Sterling-Nakamura Augmented Reality Court System",
+    "The Collective",
+    "The Shaft",
+    "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
+  ],
+  "physical_description": {
+    "visual_profile": "A commanding polearm with aggressive angular geometry—a curved, swept-back glaive blade mounted at the end of a long shaft. The weapon reads as purpose-built for community defense: utilitarian rather than ceremonial, with visible heat management systems running the length. At rest, it conveys controlled danger; in motion, sweeping lethality.",
+    "dimensions": "Total length: 220 cm (shaft 180 cm, blade 40 cm). Blade profile: curved crescent with reinforced spine running the length of the curve.",
+    "weight_description": "Hefty but well-balanced—2.8 kg distributed along the shaft allows for extended holding without arm fatigue, but demands space and momentum to wield effectively. The weight is present but not burdensome for trained operators.",
+    "primary_material": "Reinforced steel shaft with integrated ferrocerium chemical fuel channels running the core length. Glaive blade is tempered steel with thermal-conduction overlay. Fuel system encased in tooled steel with ventilation ports.",
+    "finish": "Matte black steel with brushed highlights where wear has exposed bare metal. Thermal-active sections show oxidized copper coloration from repeated heat cycling. The blade edge gleams with a faint amber tint from residual heat retention.",
+    "color_scheme": "Gunmetal black primary, with burnt-copper and rust-red accents where the thermal system interfaces. The fuel port at the base glows faintly amber when active.",
+    "grip_texture": "Wrapped in heat-resistant cord (likely para-synthetic) with textured polymer grip panels. Bare steel reinforcement bands at the midpoint and base for structural integrity and secondary grip points. Rough, workmanlike texture—friction over comfort.",
+    "distinctive_features": [
+      "Integrated fuel ports with visible ferrocerium cartridge access points along the shaft",
+      "Heat-management vents cut into the steel at regular intervals to dissipate thermal bleed",
+      "Reinforced hook at the blade's curve for catching and destabilizing armored opponents",
+      "Faint thermal scarring and discoloration along the blade from repeated ignition cycles",
+      "Forge-Smith Collective stamp embossed into the shaft base",
+      "Amber glow visible in thermal ports when fuel system is active"
+    ],
+    "manufacturer_markings": "FORGE-SMITH COLLECTIVE stamped into the steel midway down the shaft in utilitarian block lettering. A maker's mark (circular symbol with hammer-and-anvil motif) etched near the blade attachment point. Serial number scratched into the grip area—artisan production, not corporate stamping.",
+    "condition_typical": "Well-maintained but visibly used. Thermal scarring on the blade and heat discoloration on the shaft are normal. Minor nicks and wear patterns on the edge where it's been tested on armor composites. The grip shows polishing from repeated use. Kept in functional condition rather than cosmetic perfection—this is a tool, not a trophy."
+  },
+  "image_prompt": "A Forge-Smith Collective Thermal Lance Glaive 'Red Harvest' leaning diagonally across a dark concrete surface, shot from a low angle to emphasize its commanding length. The matte black steel shaft is illuminated by dramatic side-lighting that catches the brushed highlights and heat-scarred copper discoloration. The curved glaive blade at the tip gleams with subtle amber reflection, suggesting residual thermal potential. The grip wrapping and textured polymer panels are sharply detailed in the foreground. A gloved hand (tactical black leather with reinforced knuckles) grips the mid-shaft, conveying weight and control. Cyberpunk industrial background: concrete floor, geometric shadows, faint neon rim-light from unseen urban source. The fuel ports along the shaft are clearly visible, suggesting active ferrocerium integration. Moody, industrial aesthetic—weapon as community defense infrastructure. --ar 3:2 --v 6"
 }

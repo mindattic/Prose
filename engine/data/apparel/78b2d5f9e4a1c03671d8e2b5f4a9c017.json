@@ -54,5 +54,27 @@
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
     "The Pure Hand",
     "The United Workers Front"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, hardworking silhouette built for endurance. The rust-orange henley and matching cap create a warm visual anchor against industrial greys. The heavy olive canvas apron dominates the front, creating visual weight and practical bulk. The overall effect reads as approachable, lived-in, and deliberately functional — someone you'd buy from at 2 AM on a Circuit street corner.",
+    "fit": "Relaxed through the shoulders and torso for movement and ventilation; straight-cut through the legs with subtle stretch for standing comfort. The apron sits high and wide, designed to protect and distribute load across the hips rather than cinch at the waist. Everything is sized for twelve-hour shifts, not aesthetics.",
+    "primary_material": "Deep rust-orange cotton-blend henley; waxed dark olive canvas apron (Hollenbeck sourced); black synth-canvas trousers with elastane stretch; nylon utility belt; black natural rubber work shoes",
+    "texture": "The henley has a soft, worn cotton nap. The apron is stiff and textured initially, becoming softer and more pliable with use — a broken-in piece shows creases and a subtle sheen from handling. The trousers have a slight synthetic sheen and a tight weave. Shoe sole is deeply textured for grip; upper is smooth, treated rubber.",
+    "color_scheme": "Rust-orange as primary (henley, cap); dark olive as secondary (apron); black as accent and base (trousers, shoes, belt, leather change pouch); white paint-marker text on cap brim; occasional grease and food stains that blend into the color palette",
+    "closures": "Henley: standard buttons (4-5, often undone at collar). Apron: doubled crossed straps at back (no buckles; weight-distributed knot). Trousers: magnetic snap fly with hidden side zip (Circuit labor standard). Belt: friction-fit nylon with utility loop attachments. Shoes: standard lacing with quick-release eyelets.",
+    "distinctive_features": [
+      "Waxed canvas apron with full bib and dual front pockets — one fitted for a flat-folded order tablet, one for stylus pens and zip ties",
+      "Crossed-back apron straps for ergonomic weight distribution during long standing shifts",
+      "Nylon utility belt with integrated heat-seal tool loop, change pouch (worn black leather), and thermal bag sleeve attachment points",
+      "Short-brimmed cap with space for white paint-marker stall identifier or vendor name",
+      "Reinforced pocket seams on trousers; black synthetic canvas with stretch through thigh",
+      "Low-cut work shoes with wide toe box, textured grip sole rated for wet and greasy surfaces",
+      "Thin heat-resistant gloves stored in apron pocket (not visible when worn)",
+      "Subtle food stains and wear patterns integrated into the color palette — rust-orange hides the reality of the work"
+    ],
+    "tier_indicator": "Tier 3-4: working class, self-assembled, not corpo-issued but built with corpo-level utilitarian logic. Pieces sourced from street market suppliers, budget Circuit outlets, and independent makers like Hollenbeck Canvas Goods.",
+    "cultural_context": "Street vendor, Circuit food seller, market stall operator, independent tradesperson. Wearing this signals survival through hustle, expertise in a specific craft, and the kind of autonomy that comes with running your own operation. It's also a signal of resilience — you're out here, not in a climate-controlled corpo tower.",
+    "condition_typical": "Broken-in and working. The apron shows creases and a subtle darkening from repeated handling. The henley may have small stains or discoloration in the armpits and forearms (heat and contact). The shoes are scuffed but maintained — they're too important to neglect. The cap brim has legible paint-marker text (name or stall ID). Everything smells like what the vendor sells: smoke, spices, grease, sometimes fish or fermentation. Not dirty, but never clean."
+  },
+  "image_prompt": "A lean androgynous figure in a rust-orange henley and matching short-brimmed cap stands in three-quarter profile against the neon-soaked backdrop of a Circuit street market at dusk. Heavy dark olive waxed canvas apron dominates the front, pockets visibly stuffed with stylus pens and utility items. Black synth-canvas trousers taper to low-cut black grip-sole work shoes. A worn black leather change pouch and heat-seal tool hang from a nylon utility belt at the hips. The figure's hands are bare, relaxed at their sides. Moody cool-blue and amber neon light spills from storefront rigs behind them; rain-slicked concrete reflects the light. The entire outfit reads as lived-in, functional, and durable — the uniform of someone who has been standing and working for ten hours and will do it again tomorrow. Hyperrealistic fabric texture; shallow depth of field. --ar 2:3 --v 6"
 }

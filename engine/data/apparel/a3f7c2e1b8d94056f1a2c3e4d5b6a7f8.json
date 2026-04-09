@@ -45,5 +45,25 @@
     "Ringo Heavy Transit MagRail Levitation Transport Network",
     "The Cutters Guild",
     "The Undertow"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist accessory that reads as functional salvage—wide, low-slung utility belt that dominates the hip line. The streaky ochre-brown coloration creates a weathered industrial aesthetic, almost camouflaged against concrete and rust. Sits deliberately loose and slightly asymmetrical, suggesting constant use and improvisation. Commands attention through raw honesty rather than polish.",
+    "fit": "Worn low on the hips, intentionally loose to accommodate layered clothing and movement. Heavy enough to anchor itself without tightness. Draped rather than tailored—the wearer adjusts it, not the other way around.",
+    "primary_material": "Salvaged heavy-gauge conveyor webbing—industrial-strength synthetic blend, likely reclaimed from GLMZ manufacturing districts. Heat-fused edges show signs of manual repair.",
+    "texture": "Coarse and tactile—the webbing has a ribbed, slightly fuzzy surface from age and exposure. The heat-fused edges create subtle ridges. Stains and discoloration are permanent, embedded into the fibers. Brass and steel clips show oxidation and patina.",
+    "color_scheme": "Dominant streaky ochre-brown with irregular tan and rust undertones—the result of prolonged exposure to industrial runoff and weather. No deliberate patterning; the discoloration tells a story. Clips and loops add scattered metallic accents in tarnished brass and matte steel.",
+    "closures": "Repurposed mag-lock housing serving as the main buckle—manually latched, slightly temperamental, requires a specific angle to engage. Secondary closure is friction-fit webbing wrap.",
+    "distinctive_features": [
+      "Seven mismatched loops and clips—no two from the same manufacturer, suggesting scavenged origins",
+      "Heat-fused frayed edges showing manual repair work",
+      "Repurposed mag-lock housing buckle with visible wear",
+      "Integrated attachment points for wire cutters, ration packs, tools",
+      "Uneven dye and industrial staining that serves as pseudo-camouflage",
+      "Asymmetrical wear patterns indicating heavy, unbalanced use"
+    ],
+    "tier_indicator": "Tier 5 salvage—unmistakably sub-grade and ungoverned. No corporate manufacturing stamps. Every component is a second-life object.",
+    "cultural_context": "Street engineer, salvage specialist, or gig-worker in the informal economy. Wearing this signals self-sufficiency, practical skill, and comfort with impermanence. The wearer fixes things and keeps moving.",
+    "condition_typical": "Perpetually weathered and patched. Never pristine, always functional. Stains are permanent; new damage accumulates over time. The belt improves with wear—each scratch and discoloration adds legitimacy."
+  },
+  "image_prompt": "A worn Driftpile Scraplink Utility Belt draped low on the hips of a lean, augmented figure wearing torn synth-fabric layers underneath. Close-up detail shot emphasizing the mismatched brass clips, heat-fused webbing edges, and repurposed mag-lock buckle. Ochre-brown streaked with rust-colored stains. Moody industrial warehouse lighting casting sharp shadows across the webbing texture. Dark concrete wall and scattered metal debris in background. Cyberpunk utility aesthetic, gritty and lived-in. --ar 2:3 --v 6"
 }

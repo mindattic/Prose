@@ -76,5 +76,24 @@
     "The Human Baseline Alliance",
     "Vantablack VS-3 'Skin Job'",
     "Zheng-dao Bioelectric"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, second-skin undersuit with a matte charcoal finish and subtle iridescent shimmer where the thermoelectric mesh catches light. The garment clings to the body without bulk, resembling a high-end compression suit or athletic base layer. Fine silver tracery is visible across the chest, shoulders, and limbs — the embedded peltier channel network — creating an aesthetic impression of circuitry woven into fabric.",
+    "dimensions": "Full-body garment; fits like a long-sleeved shirt and full-length leggings with hand and foot coverings",
+    "weight_description": "Handheld weight (0.85 kg); negligible burden when worn, designed for concealment beneath standard clothing",
+    "primary_material": "Blended synthetic polymer base (polyamide/elastane composite) with integrated biocompatible mesh grid and thermoplastic conduit channels",
+    "finish": "Matte charcoal with brushed metallic accents; micro-textured surface reduces visible reflectance. Seams are flat-lock and nearly invisible.",
+    "color_scheme": "Gunmetal gray primary with silver tracery; inner surfaces feature faint bioluminescent blue grid pattern (active only during operation). Accent stitching in muted cyan.",
+    "interface_elements": "Minimalist design: single recessed power button at the collarbone (integrated biometric lock), micro-USB recharge port at the nape of neck, status indicator LED (green idle, blue active, amber low-battery). Optional threat-receiver module docks magnetically at the left shoulder; compatible models feature small circular inductive contact point.",
+    "distinctive_features": [
+      "Visible silver peltier channel network etched across major muscle groups and joints",
+      "Micro-thermistor contact points (dark pinprick indentations) distributed across inner arm and torso",
+      "Faint bioluminescent grid activation pattern visible when powered (interior only)",
+      "Integrated flex-polymer battery creates subtle ridge along the lower spine",
+      "Hand and foot coverings include diffuser vents (microscopic pores visible at sole heel and palm edges)"
+    ],
+    "manufacturer_markings": "Zheng-Dao Bioelectric logo (stylized circuit-spiral character) embossed discreetly at collarbone; regulatory compliance tags sewn into neckline (ISO medical grade cert, GLMZ-approved). Serial number etched in fine print on interior neck tag.",
+    "condition_typical": "When inactive, appears as an unremarkable compression garment. When powered, barely perceptible warmth on the skin; no visible heat shimmer or steam. Worn beneath loose street clothes, entirely concealable. After extended use, minor perspiration evident at balaclava line, but thermal signature remains suppressed."
+  },
+  "image_prompt": "Catalog product shot of Zheng-Dao Bioelectric Dermacalm Thermal Liner: form-fitting charcoal undersuit on featureless mannequin torso, shot from front-left angle. Dramatic key lighting from above reveals subtle silver peltier mesh tracery across chest and shoulders, glowing faintly cyan where the circuitry is brightest. Ambient cool blue backlighting emphasizes the matte texture and creates thin silhouette halo. Background is industrial dark steel or brushed aluminum workbench. Secondary shot inset: close-up detail of mesh weave and thermistor contact points on inner arm, macro focus with shallow depth of field. Cyberpunk aesthetic with corporate product photography lighting. Cool color temperature. --ar 3:2 --v 6"
 }

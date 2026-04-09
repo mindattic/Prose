@@ -41,5 +41,38 @@
     "utility",
     "urban_survival"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "GLMZ",
+    "Korrath",
+    "MERIDIAN",
+    "Ringo DV-4 'Courier'",
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tessera Nexus Town Car",
+    "Tessera TK-20 Apex 'Mandate'",
+    "The Human Baseline Alliance",
+    "The Peninsula",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, utilitarian canister with a distinctly industrial aesthetic — resembles a shortened firefighter's horn or compressed air cartridge more than a consumer spray product. The form factor is deliberately chunky and grip-friendly, designed for rapid deployment even in low-light sub-level conditions. The orange tint visible through the translucent pressure gauge gives it an immediate visual identity in emergency situations.",
+    "dimensions": "15cm height × 4.5cm diameter; compact enough to fit in a utility belt pouch but substantial enough to command attention in hand",
+    "weight_description": "Hefty and reassuring — the 0.21kg feels like concentrated purpose, neither light nor cumbersome. Balanced around the grip actuator for one-handed operation. The weight distribution suggests durability over portability.",
+    "primary_material": "Impact-resistant polymer composite with reinforced sidewalls; the housing has the matte, slightly textured finish of industrial-grade thermoplastic rated for temperature extremes and mechanical abuse",
+    "finish": "Satin charcoal gray with high-visibility safety orange accent bands around the pressure gauge and actuator button. The orange has a slightly translucent quality where the pressurized compound glows faintly beneath the polymer housing. Minimal reflectivity — designed not to catch light in tactical contexts.",
+    "color_scheme": "Charcoal gray primary with safety orange accents; the internal compound visible as an orange-tinted gradient through the gauge window",
+    "grip_texture": "Deeply textured polymer with pronounced ridge patterns — designed to be operable with heavy work gloves, augmented hands, or wet/muddy conditions. The actuator button is large, slightly recessed, and has a rubberized non-slip surface with faint tactile feedback dimpling",
+    "distinctive_features": [
+      "Large translucent pressure gauge on the canister body showing orange-tinted compound level",
+      "Oversized single actuator button dominating the grip area — red-orange with safety warning embossing",
+      "Integrated clip-mounting system on the back edge for harness attachment",
+      "Two thin vent holes near the base suggesting internal pressure regulation",
+      "Subtle warning iconography molded directly into the polymer: stylized animal silhouettes crossed with directional arrows",
+      "Faint product serial numbering etched into the base in small clean font"
+    ],
+    "manufacturer_markings": "SAFESTEP logo (clean, sans-serif corporate mark) embossed on the upper third of the canister in metallic inlay; product designation 'AFD-6' stamped below in smaller font; 'WARDOFF' brand name in italics along the grip band; IP67 waterproof rating symbol and regulatory compliance marks near the base",
+    "condition_typical": "Usually seen in well-maintained condition — Tier 1+ workers and utility crews treat these as reliable safety equipment, not weapons. However, sub-level infrastructure units show weathering: micro-scratches in the polymer finish from tunnel walls, faint corrosion blooming on the metal clip from humidity, dust accumulation around the pressure gauge. Still always functional — maintenance is understood to be survival."
+  },
+  "image_prompt": "Close-up product photograph of the SafeStep AFD-6 'Wardoff' fauna deterrent canister. Mounted horizontally on a dark brushed steel surface, slightly angled to show the translucent pressure gauge with orange compound visible inside. Gloved hand (worn tactical glove, synthetic leather) gripping the textured polymer from above, thumb positioned near the red-orange actuator button. Dramatic side-lighting from upper left reveals the matte charcoal finish and safety orange accent bands; cool blue-cyan rim-light from the right edge emphasizing the industrial polymer texture and gauge window. Background: shallow depth of field showing out-of-focus sub-level infrastructure — corroded metal grating, concrete, faint neon signage reflecting off wet surfaces. GLMZ cyberpunk aesthetic: utilitarian, worn, purpose-built, survival-focused. Product shot quality with studio-grade clarity on the canister details, moody environmental context suggesting urban underground environment --ar 3:2 --v 6"
 }

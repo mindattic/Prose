@@ -39,5 +39,35 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Free Assembly",
+    "Nika Svensson-Kone",
+    "Ringo Heavy Transit MagRail Levitation Transport Network",
+    "Solveig Tambadou-Kereselidze",
+    "Vanta Ordnance Railgun Pistol RP-1 'Thumbtack'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, angular pistol with a pronounced forward-heavy stance. The weapon resembles a compact electromagnetic device more than a traditional firearm — all purposeful geometry and industrial aggression. The dual-stage rail system creates visible parallel channels along the top of the barrel assembly, giving it a distinctly mechanical, engineered appearance. Heat sinks protrude asymmetrically from the frame, and the overall silhouette is compact but dense with purpose.",
+    "dimensions": "Length: 18 cm | Width: 4.5 cm | Height: 7 cm (including rail channels) | Barrel section: 11 cm",
+    "weight_description": "Dense and front-heavy. At 1.8 kg, it feels substantial in hand — every gram is engineered metal and capacitive technology. The weight distribution pulls forward, requiring a firm grip to manage recoil impulse from hypersonic acceleration.",
+    "primary_material": "Tungsten-reinforced steel frame with carbon-composite rail housing. Supercapacitor banks encased in brushed titanium alloy.",
+    "finish": "Utilitarian matte gunmetal gray on steel surfaces. Carbon-composite rail housing features a subtle crosshatch texture (friction-optimized). Titanium accents show brushed finish with minor oxidation patina, suggesting operational wear. Minimal polish — function over aesthetics.",
+    "color_scheme": "Gunmetal gray primary with brushed titanium silver accents. Rail channels show faint copper oxidation from arc scoring. Supercapacitor vents feature industrial orange warning stripes (ZHENG-DAO standard).",
+    "grip_texture": "Textured polymer wraparound with embedded cooling channels visible as fine ribbing. Designed for secure purchase with or without combat gloves. Slightly warm to the touch even when idle — passive heat dissipation from the integrated supercapacitor.",
+    "distinctive_features": [
+      "Dual parallel electromagnetic rail channels running the length of the barrel — precision-machined with visible feed slots",
+      "Asymmetrical heat sink fins extending from the left rail housing, angled to shed thermal load",
+      "Recessed capacitor vent ports (3×) along the grip spine with faint orange warning etching",
+      "Charging port on the right side of the frame, recessed beneath a rubberized flip cover",
+      "Ammunition counter digital display (3mm red LED) mounted above the trigger guard — cycles 4, 3, 2, 1, EMPTY",
+      "Heavy scoring and micro-pitting on the barrel assembly from rail erosion — visible arc damage from previous 60+ round cycles",
+      "Integrated pressure relief valve (tiny threaded port) visible at the rear of the frame near the magwell",
+      "ZHENG-DAO corporate seal laser-etched into the left rail shroud"
+    ],
+    "manufacturer_markings": "ZHENG-DAO HEAVY INDUSTRIES logo (stylized geometric character) stamped in brushed titanium on the left side of the frame, just forward of the grip. Model designation RP-2 and serial number laser-etched on the underside of the barrel housing. Mandatory military restriction warning symbol (Φ enclosed in a red octagon) on the right grip panel.",
+    "condition_typical": "Field-worn but maintained. Evidence of moderate use: the barrel shows the expected rail erosion scarring from operational cycling. Heat sink fins bear light carbon scoring from sustained fire. Grip texture remains intact with minimal polish wear on high-contact areas. Charging port cover shows minor stress cracking. Overall impression: a weapon in active service with a professional operator who understands the maintenance demands."
+  },
+  "image_prompt": "Close-up product photography of the Zheng-Dao RP-2 'Verdict' rail pistol. Compact electromagnetic sidearm with visible dual-rail channels running the length of the barrel, asymmetrical heat sink fins, and recessed charging ports. Tungsten-reinforced steel frame in gunmetal gray with brushed titanium accents and carbon-composite rail housing. Small red LED ammo counter display above trigger guard. Weapon resting on dark matte surface, held at 45-degree angle in a gloved tactical hand wearing reinforced polymer gloves. Dramatic side-lighting emphasizing the parallel rail channels and heat dissipation fins, creating sharp shadows in the vents. Cool blue-white accent lighting on the supercapacitor housing and orange warning stripe details. Industrial, utilitarian cyberpunk aesthetic — mechanical and unforgiving. Shallow depth of field focusing on the barrel assembly and rail system. Professional military hardware photography. --ar 3:2 --v 6"
 }

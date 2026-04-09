@@ -42,5 +42,37 @@
     "wearable",
     "tier_2"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Nimbus",
+    "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
+    "Stainless Steel",
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
+    "The Convergence Ministry",
+    "Vantablack Media Orphan Signal Cartridge"
+  ],
+  "physical_description": {
+    "visual_profile": "A sophisticated chunky bracelet that masquerades as high-end fashion jewelry. Wide, substantial presence on the wrist with a seamless brushed metal band interrupted by sleek composite inlays. At first glance, indistinguishable from luxury wear—the weapon systems are completely concealed beneath the polished surface.",
+    "dimensions": "Inner diameter: 5.5–6.5 cm (adjustable), outer width: 2.2 cm, thickness: 1.1 cm at widest point. Spray nozzle and stun electrodes recess flush when inactive.",
+    "weight_description": "Noticeably hefty for a bracelet—78 grams—with a balanced, reassuring heft. Sits low on the wrist with subtle downward pull, felt rather than seen. Wearer quickly forgets it's there until activated.",
+    "primary_material": "Brushed stainless steel band with inlaid carbon-composite polymer panels housing the functional systems. Modular pepper spray cartridge clips into interior housing with precision engineering.",
+    "finish": "Brushed satin stainless steel with matte composite inlays in charcoal grey. Zero chrome or reflective surfaces—designed for understated elegance. Minimal branding to preserve fashion aesthetic.",
+    "color_scheme": "Brushed silver-grey stainless steel base with charcoal composite accents. Subtle rose-gold accent trim around the composite panels suggests luxury watch heritage.",
+    "grip_texture": "The steel band has a soft brushed texture that catches skin without friction. Composite inlays provide micro-grip for gesture activation. Inner surface features subtle knurled zones where fingers naturally rest during wrist movements.",
+    "distinctive_features": [
+      "Flush-mounted pepper spray nozzle concealed behind composite panel (detectable only by slight recessed line)",
+      "Twin stun electrodes embedded in opposing composite sections, barely visible as polished circles",
+      "Hidden activation button disguised as a decorative rivet near the clasp",
+      "Barely-visible antenna thread woven through the composite material for distress beacon",
+      "Modular cartridge release mechanism accessed from inner wrist (no external seams when locked)",
+      "Wireless charging coil creates subtle circular indentation on inner band",
+      "Minimalist LED indicator under composite (only visible when powered on—soft amber glow)",
+      "Serial number etched microscopic on the clasp"
+    ],
+    "manufacturer_markings": "NIMBUS SECURITY logo stamped in 3mm letters on the inner clasp area—only visible when removing or adjusting the bracelet. Product code 'WS-5' micro-etched on the hidden button. No exterior branding to maintain fashion-forward aesthetic.",
+    "condition_typical": "Worn examples show light wear on the brushed steel (micro-scratches from daily contact, slight polish loss on high points). Composite panels maintain their finish longer due to harder surface. After pepper spray deployment, the visible difference is the new cartridge—slightly shinier plastic compared to the original."
+  },
+  "image_prompt": "Product photography of a Nimbus Security WristSafe WS-5 'Viper' bracelet displayed on a dark matte surface and held in a gloved hand wearing tactical leather gloves. The brushed stainless steel band gleams under dramatic side-lighting, creating sharp shadows along the edges. Charcoal composite inlay panels catch highlights subtly. The hidden pepper spray nozzle and stun electrode circles are barely visible as recessed details. Close-up detail shot showing the inner mechanisms with the modular cartridge housing, then a full-wrist shot showing the bracelet worn naturally. Cyberpunk aesthetic with cool color temperature lighting, slight blue/cyan ambient glow. The bracelet reads as high-end fashion jewelry disguising lethal self-defense tech. Background shows blurred GLMZ neon signage (Great Lakes Metropolitan Zone corporate logos). Ultra-detailed finish, luxe product photography style. --ar 3:2 --v 6"
 }

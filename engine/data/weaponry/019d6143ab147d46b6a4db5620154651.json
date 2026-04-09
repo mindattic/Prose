@@ -39,5 +39,33 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Ilhan Sandstrom-Badu",
+    "Nika Svensson-Kone",
+    "TESSERA PG-2 'Signature'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular precision rifle with a distinctly futuristic geometry. The extended barrel dominates the profile, appearing almost disproportionately long relative to the receiver. The weapon has a predatory, stretched silhouette — less bulky than kinetic rifles, more elegant and purposeful. Clean lines and minimal ornamentation suggest military-grade engineering prioritizing function over aesthetics.",
+    "dimensions": "Overall length: 142 cm | Barrel length: 80 cm | Width at receiver: 8 cm | Height with rail system: 12 cm",
+    "weight_description": "Balanced and surprisingly manageable despite its length — the 5.8 kg rifle distributes weight along the barrel, requiring the shooter to commit to stance but rewarding precision. The disconnected 4.5 kg backpack power supply shifts the platform's center of mass, creating an unusual but deliberate weight signature.",
+    "primary_material": "Aerospace-grade titanium alloy frame with carbon fiber composite panels. The 16-stage magnetic accelerator barrel is hardened steel with electromagnetic coil jacketing.",
+    "finish": "Matte gunmetal gray with selective brushed titanium accents. The barrel shows subtle iridescent heat-stress discoloration from repeated electromagnetic discharge — deep blues and purples bleeding into the gray. All electronic interfaces are anodized black.",
+    "color_scheme": "Charcoal gray primary with brushed silver/titanium accents. Accent colors: Deep iridescent blue/purple along the barrel, matte black on all electronic housings and rail systems.",
+    "grip_texture": "Textured polymer with embedded heat-dissipation channels. The grip is slightly larger than conventional rifle stocks to accommodate the recoil dynamics of electromagnetic discharge. Wrapped in synthetic fiber-weave for positive purchase even with wet gloves.",
+    "distinctive_features": [
+      "Exposed magnetic coil spirals along the entire 80cm barrel, visible as recessed grooves with faint copper-colored contacts",
+      "Three capacitive targeting nodes mounted along the upper rail — small circular sensor pods with soft blue LED indicators (dormant: dark, armed: pale cyan glow)",
+      "Heat-dissipation vents in a geometric honeycomb pattern along the receiver sides",
+      "Charging port on the left side of the receiver (dedicated umbilical connection point for the backpack supercapacitor)",
+      "Rail-mounted power readout display — small LCD screen showing capacitor charge state and shot counter",
+      "Minimal sights: an integrated laser aiming module with redundant mechanical aperture sight (battle-loss backup)",
+      "Muzzle design: flared slightly, vented on all sides to reduce secondary shock effects. A faint corona of copper-tinted metal at the accelerator exit",
+      "Wear patterns: light scoring on the barrel from repeated electromagnetic discharge; the grip shows index-finger wear from precision shooting; cable routing shows battle-field improvisation marks"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo embossed on the left side of the receiver (minimalist: a stylized angular 'A' with circuit-trace accents). Serial number laser-etched on the right rail. Military authorization stamp (faded red ink) on the underside of the charging port cover. Arcturus's corporate security sigil appears on the power pack connector.",
+    "condition_typical": "Field-worn but meticulously maintained. This is a Tier 5 weapon — owned by someone who understands its value and danger. Battle scars are present but localized: minor dents on the left side of the receiver (cover fire impact), faint carbon scoring around the muzzle, and abraded polymer on the grip from heavy use. The barrel shows the discoloration of repeated firing cycles. Despite wear, all electronic systems function perfectly — the capacitor pack shows disciplined maintenance protocols."
+  },
+  "image_prompt": "Arcturus MAR-8 'Longbow' electromagnetic rifle on dark composite surface, angled 45 degrees left. Dramatic side-lighting highlighting the exposed magnetic coil barrel with iridescent heat-stress patina. Close detail of the receptor node lights in pale cyan glow. Muzzle detail showing faint copper corona. Worn titanium finish catching sharp highlights. Show the rail-mounted power display screen active with charge readout. Cyberpunk military aesthetic, ultra-precise engineering, Tier 5 black-market combat hardware. Shallow depth of field emphasizing barrel geometry. --ar 3:2 --v 6"
 }

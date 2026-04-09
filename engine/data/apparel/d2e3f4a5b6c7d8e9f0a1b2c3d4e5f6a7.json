@@ -35,5 +35,25 @@
     "stretch",
     "everyday"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "physical_description": {
+    "visual_profile": "A minimalist Chelsea-style boot with a soft, forgiving silhouette. The elastic upper wraps the foot and lower leg in a gentle, almost second-skin manner. Low squared heel and clean lines create an understated, practical aesthetic that reads neither flashy nor utilitarian—just honest everyday wear.",
+    "fit": "Pull-on, compression fit through the elastic upper. The fabric stretches bidirectionally to conform to individual foot and ankle anatomy without pressure points. Relaxed but supportive, accommodating both baseline human feet and augmented/geneware variants.",
+    "primary_material": "Close-weave elastic synthetic composite (likely elastane-polyester blend with structural warp). Breathable but durable, designed for flex without degradation.",
+    "texture": "Smooth, slightly matte finish with subtle ribbed give when touched. The fabric has a soft drape but maintains structural integrity. Rubber sole block is grippy with fine tread texture.",
+    "color_scheme": "Available in three colorways: matte black (most common), off-white (cream undertone), and warm terracotta (rust-orange). Minimal branding; monochromatic design with matching sole.",
+    "closures": "None—pure pull-on design. No zippers, buckles, or friction-fit mechanisms. Elastic upper provides all necessary retention.",
+    "distinctive_features": [
+      "Bidirectional stretch upper accommodates non-standard foot morphology",
+      "Low, squared heel for stability and easy donning",
+      "Chelsea-panel side cuts allow easy pull-on access",
+      "Seamless aesthetic—no visible stitching on upper",
+      "Rubber block sole with subtle anti-slip patterning",
+      "Minimal Ashvale branding (small heat-stamped logo on heel counter)"
+    ],
+    "tier_indicator": "Tier 3 functional everyday—affordable quality for working-class buyers. No luxury markers, no salvage patina. Pure utility-meets-simplicity.",
+    "cultural_context": "Worn by warehouse workers, transit operators, field maintenance crews, geneware recipients seeking accommodation, and anyone prioritizing comfort and ease over fashion statement. Popular in the GLMZ outside corpo districts.",
+    "condition_typical": "Broken-in quickly but ages well. Typical wear shows minor creasing at the instep, slight sole scuffing, and gradual fabric softening. Rarely shows major distress unless actively abused."
+  },
+  "image_prompt": "Cyberpunk fashion photography: Ashvale Softform pull-on boot on a dark mannequin leg, shot from three-quarter angle. Black variant gleaming under moody teal and amber neon lighting. Urban warehouse interior backdrop with corrugated metal and faint holographic advertisement blur. Boot positioned against worn concrete floor. Tight focus on the clean, soft silhouette of the elastic upper. Ambient glow highlights the smooth synthetic texture. Geneware-augmented model hand adjusting boot cuff in secondary shot. Cinematic, street-level. --ar 2:3 --v 6"
 }

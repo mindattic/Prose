@@ -44,5 +44,35 @@
     "controversial",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "Nnenna Boateng-Szymański",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA PG-2 'Signature'",
+    "Vuk Jorgensen-Toure"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, squat cylindrical pod resembling a stubby concrete-anchored mine or autonomous sentry emplacement. Low-profile design meant to be partially buried or concealed. Top-mounted sensor array gives it a watchful, predatory appearance despite its stationary nature.",
+    "dimensions": "Height: 18cm (above ground) | Diameter: 22cm | Buried depth: 10-15cm typical | Mounting base: 30×30cm",
+    "weight_description": "Deceptively dense. 4.2kg feels substantial for its size — the heft of industrial engineering and propellant payload concentrated in a small footprint.",
+    "primary_material": "Reinforced polymer composite (lower housing), hardened steel (internal firing mechanism and ball bearing magazine), aluminum heat sink collar",
+    "finish": "Matte tactical gray with powder-coat weatherproofing. Upper sensor dome in black anodized aluminum. Mounting base shows bare steel or rust-preventative coating.",
+    "color_scheme": "Slate gray primary with black sensor cap. Accent strips in Axiom Systems corporate orange-red along the equipment ID band. Weathered appearance with micro-abrasion marks.",
+    "grip_texture": "Not handheld — textured grip ridges molded into the cylindrical sides for field handling during emplacement. Top-mounted carrying handle in reinforced polymer.",
+    "distinctive_features": [
+      "Prominent passive infrared sensor dome mounted on top — dark, convex, slightly recessed",
+      "Radial blast ports arranged in a 90-degree forward arc — small openings suggesting high-velocity dispersal pattern",
+      "Serial number and 'LIVE PERIMETER' warning stencils on sides in reflective white paint",
+      "Chemical propellant ignition indicator (small pin or witness mark visible from top)",
+      "Axiom Systems corporate logo (triangular geometric form) stamped into metal nameplate",
+      "Thermal expansion vents as fine linear grooves around the mid-body",
+      "Mounting points for chaining adjacent units together (recessed flanges, rust-resistant bolts)"
+    ],
+    "manufacturer_markings": "AXIOM SYSTEMS logo and 'PDS-4 CORDON' designation stamped into aluminum nameplate on upper body. Serial number, manufacture date, and 'LICENSED LETHAL SYSTEM' warning in three languages molded into base plate.",
+    "condition_typical": "Field-deployed units show weathering — salt spray oxidation on exposed steel, micro-scratches in polymer from deployment impact, sensor dome occasionally dust-hazed. Well-maintained corporate installations appear almost pristine; neglected perimeter deployments show rust bloom and algae growth on exposed surfaces."
+  },
+  "image_prompt": "Product photography of a Axiom Systems PDS-4 Cordon mine unit. Compact gray tactical cylinder with black sensor dome on top, mounted on weathered steel base plate. Shot from 45-degree angle on dark gunmetal background. Dramatic side-lighting casting sharp shadows from radial blast ports. Close detail of warning stencils and corporate orange-red accent stripe visible. Mounted hand-mounted deployment scenario or positioned in sand/dirt for context. Cyberpunk industrial aesthetic, matte tactical finishes reflecting cool LED accent light. Focus on menacing simplicity and autonomous predatory design. --ar 3:2 --v 6"
 }

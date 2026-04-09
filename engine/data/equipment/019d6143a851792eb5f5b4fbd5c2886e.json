@@ -83,5 +83,24 @@
     "The Collective",
     "The Lattice",
     "Vantablack-CNX"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A modular sensor network system presented as a compact deployment kit. The central control unit resembles a reinforced tactical communications box with a wraparound handle; the micro-receiver pods are discrete, lens-like ovoids with subtle angular faceting. The overall aesthetic is utilitarian and purpose-built — form follows hostile-environment function.",
+    "dimensions": "Control unit: 24cm × 16cm × 8cm. Individual pods: 38mm × 22mm × 8mm (thumb-flattened ovoid). Kit deployed across up to 800 square meters of coverage area.",
+    "weight_description": "Control unit and 12-pod standard kit total 480g — easily handheld or mounted via integrated tactical rail interface. Pods themselves are weightless in practical terms; entire kit fits in a hardened case the size of a field rations box.",
+    "primary_material": "Control unit: anodized aluminum chassis with reinforced polycarbonate viewport. Pods: composite ceramic-polymer shell with embedded mesh antenna matrix beneath surface.",
+    "finish": "Matte charcoal with mil-spec texture grip panels. Pod surfaces feature subtle iridescent optical interference coating — appears gunmetal-gray in direct light, faint violet shimmer in shadows. Minimal reflectivity.",
+    "color_scheme": "Charcoal gray primary; accent colors are dim amber (status LEDs on control unit), faint cyan circuit-trace etching visible on pod housings under close inspection. Manufacturer markings in white sans-serif.",
+    "interface_elements": "Control unit features: small monochrome tactical display (vector threat map), tactile rubberized buttons for mode selection, encrypted burst-transmit indicator (dim blue pulse when active), mini-USB secure port under rubberized cap, quick-release pod cartridge dock. Pods feature no visible user interface — completely passive receivers.",
+    "distinctive_features": [
+      "Micro-pods designed for scatter deployment — no larger than thumbnail thumbnails, facilitating covert placement",
+      "Iridescent ceramic-polymer coating on pods subtly shifts color with viewing angle",
+      "Control unit integrates fold-down tactical mounting bracket for helmet or vest rail",
+      "Hexagonal topology etching laser-marked on unit casing — visual reference to node-cluster geometry",
+      "Pod cartridge magazine — transparent polymer case holding 12 pods in custom foam inserts, stackable for multi-kit deployments"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (stylized angular star) embossed on top of control unit. Regulatory stamps: GLMZ tier-3+ compliance mark, encrypted-transmission certification (red diamond), serial number engraved on rear chassis. Product designation 'PARALLAX THREAT LATTICE v7.2' printed on quick-reference spec sheet affixed to cartridge housing.",
+    "condition_typical": "In active deployment: control unit mounted on operator's tactical vest or weapon platform; pods scattered across perimeter in concealed positions (window ledges, vegetation, debris). On standby: unit powered down in hardened case with pod cartridges stacked in custom foam. In use: faint blue status pulse on control unit indicates active mesh; tiny amber LEDs on scattered pods glow subtly when powered (visible only in darkness)."
+  },
+  "image_prompt": "Overhead tactical shot of Arcturus Parallax Threat Lattice kit displayed on a dark composite workbench. Matte-gray aluminum control unit positioned center-frame with monochrome tactical display glowing softly. Transparent cartridge magazine with twelve iridescent ceramic-polymer pods arranged beside it, each catching dramatic sidelight with faint violet shimmer. Rubberized tactical mounting bracket folded down on unit. Harsh single-source cyan-tinted lighting from upper left; deep shadows. Stainless steel workbench surface. Faint holographic threat-map overlay visible on control unit screen. High-end cyberpunk product photography, cold color grade, spec-sheet clarity. --ar 3:2 --v 6"
 }

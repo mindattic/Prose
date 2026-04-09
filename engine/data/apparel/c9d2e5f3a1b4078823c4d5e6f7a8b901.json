@@ -38,5 +38,25 @@
   "parent_corponation": "",
   "related_entities": [
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Brutalist, asymmetrical silhouette. Mid-calf height with a heavy, chunky profile. Deliberately crude construction reads as both functional and hostile—a boot that announces survival over aesthetics. The visible patchwork of leather panels creates an organic, almost modular appearance.",
+    "fit": "Snug around the ankle with reinforced structure, relaxed through the calf to accommodate layered clothing or protective wraps. The sole is rigid and unbending—designed for standing, not grace.",
+    "primary_material": "Salvaged leather panels (mixed grades, some worn thin, some thick-hide), monofilament scavenged from industrial cable, waxed thread, truck tire tread rubber",
+    "texture": "Rough, weathered leather with visible stitching imperfections. Seams are prominent—some raised, some sunken. Sole is deeply treaded with ragged wear patterns. Areas where materials meet are raw and unfinished.",
+    "color_scheme": "Muted palette: grays, blacks, browns from aged leather. Accent yellows and oranges from oxidized waxed thread. Dark tire-rubber sole with visible dust and grime accumulation.",
+    "closures": "Mismatched lacing system: traditional eyelets on one side, knotted cord threaded through punched holes on the other. Laces are cord-scrap and hemp, tied in crude knots rather than bow.",
+    "distinctive_features": [
+      "Visible seams with uneven stitching—some waxed thread, some monofilament",
+      "Asymmetrical eyelet systems on left/right",
+      "Thick truck-tire tread sole bonded with contact cement",
+      "Raw leather edges, no finish work",
+      "Patina of street use—dust, scuffs, possible oil stains",
+      "Reinforced toe and heel panels (thicker leather patches)"
+    ],
+    "tier_indicator": "Tier 5 salvage—sub-grade footwear with zero corporate finish or brand signaling",
+    "cultural_context": "Street-made, survival-oriented. Worn by ungoverned zone dwellers, dock workers, scrappers, and anyone who needs feet that can handle broken pavement and industrial debris. Signal of self-sufficiency and rejection of consumer markets.",
+    "condition_typical": "Weathered and patched. Soles show uneven wear from favoring one side. Laces are re-tied repeatedly. Leather is creased and cracked in high-flex areas. No intention of 'breaking in'—these boots are already broken."
+  },
+  "image_prompt": "Close-up fashion shot of a worn Coldwall Combat Boot on a Tier 5 street dweller's foot, standing on cracked concrete in the GLMZ industrial sector. Boot fills frame, emphasizing mismatched lacing, ragged leather panels, and deep tire-tread sole caked with dust. Moody blue-gray tungsten lighting from overhead neon, casting sharp shadows on the seams. Dark urban warehouse backdrop, bokeh grime and rust textures. Model's leg shows signs of street wear—torn fabric, visible augmentation ports near ankle. Raw, documentary cyberpunk aesthetic. --ar 2:3 --v 6"
 }

@@ -43,5 +43,39 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Crucible HS-2 'Hearth'",
+    "Cutter Vane",
+    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'",
+    "Lacuna Genomics",
+    "Nika Svensson-Kone",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Ringo RT-4 'Oxcart'",
+    "Saoirse Mwamba-Drăghici",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Tessera Nexus Town Car"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, utilitarian submachine gun with clean lines and agricultural practicality. The silhouette is blocky and honest—no tactical frills, no chrome aggression. It reads as a tool first, a weapon second. The receiver is noticeably thick-walled, suggesting robust engineering over aesthetics.",
+    "dimensions": "Overall length: 38 cm (stock collapsed), 45 cm (stock extended). Barrel length: 12.7 cm. Width at ejection port: 4.2 cm. Height with sights: 11 cm.",
+    "weight_description": "Substantial and balanced—2.0 kg sits comfortably in the hands without tiring. The weight is distributed forward, settling naturally in the palm. Feels like a working gun, not a toy.",
+    "primary_material": "Steel receiver and barrel, polymer handguard and furniture, aluminum fire control group housing",
+    "finish": "Matte ceramic coating in weathered tan-gray, with deliberate micro-texturing to prevent glare. The finish shows practical scratches and handling marks even when new—intentional distressing that suggests the weapon is meant for actual work, not display.",
+    "color_scheme": "Weathered tan-gray ceramic body with flat black polymer grips and handguard. Small brushed aluminum accents around the fire control group. No paint, no logos—purely functional.",
+    "grip_texture": "Textured polymer grip with shallow horizontal ribs for positive control in gloved or sweaty hands. Not aggressive, but deliberately non-slip. The texture suggests ranch work: dust-resistant, sweat-resistant.",
+    "distinctive_features": [
+      "Oversized mechanical safety lever—manual and positive, no electronic fail-safes",
+      "Ghost-ring iron sights (rear) and hooded front post, both fully mechanical",
+      "Three-position selector lever (Safe/Burst/Semi) with crisp detents and tactile feedback",
+      "Prominent over-gas adjustment screw on the side of the receiver—designed for field tuning with dirty ammunition",
+      "20-round single-stack magazine with witness holes and a heavy steel baseplate",
+      "Ventilation slots along the handguard to manage heat during burst fire",
+      "Charging handle mounted on the side (ambidextrous), oversized for gloved operation",
+      "Integral picatinny rail on top for aftermarket optics (optional—not standard)"
+    ],
+    "manufacturer_markings": "Small Hearthstone Firearms logo (stylized hearth flame) stamped cleanly on the left side of the receiver, just above the magazine well. Serial number engraved (not stamped) on the right side of the receiver. Model designation 'HRS-3' stamped in small letters above the selector. All markings are matte, non-reflective.",
+    "condition_typical": "Well-maintained but working-worn. The ceramic finish shows dust residue from storage in gun racks and vehicle mounts. Handling marks on the grip. The interior is clean and lubricated. This is a weapon that spends more time in a ranch armory than in active combat, but is always ready."
+  },
+  "image_prompt": "Product photography of a Hearthstone Firearms HRS-3 Cattleman 9mm submachine gun. Weapon displayed at 45-degree angle on a worn wooden ranch workbench surface, resting on a canvas gun cleaning cloth. Dark dramatic side-lighting from the left, casting sharp shadows across the tan-gray ceramic finish. The matte ceramic coating catches light subtly, revealing micro-texturing. Close-up detail on the fire control group and selector lever. Background is dark, blurred ranch interior (wooden walls, shadows). Hands in heavy work gloves adjusting the over-gas screw. Cyberpunk aesthetic: dust particles visible in the light beam, suggesting aged frontier technology. Professional tactical photography style, no reflection in sights. --ar 3:2 --v 6"
 }

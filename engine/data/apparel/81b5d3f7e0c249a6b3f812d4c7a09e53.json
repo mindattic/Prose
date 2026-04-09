@@ -50,5 +50,27 @@
     "Saodat Mirzoyan-Fubara",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "The Fathom Line"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A daring, deliberately exposing club outfit that celebrates augmentation visibility. Sharp geometric silhouette with strategic cutouts and layered transparency. Registers as confident, body-modded, and unapologetically street-tier. The reactive materials create an ever-shifting visual that demands attention on the dance floor.",
+    "fit": "Crop top: tight, structured, second-skin compression. Overshirt: deliberately oversized and flowing, trailing past hips. Trousers: high-waisted with tapered leg, emphasizing core and thighs. Boots: fitted through calf with accommodating gussets. Overall: confidence-cut rather than hiding-cut.",
+    "primary_material": "Reactive chrome-weave (crop top and back strap), reactive frequency-response mesh (overshirt), textured synth-leather (trousers and boots), chrome-alloy (belt and heel plates)",
+    "texture": "Chrome-weave shifts between mirror-polished and brushed matte; mesh is translucent and fluid; synth-leather is deliberately textured with subtle scale or grid pattern; chrome hardware is hard and reflective",
+    "color_scheme": "Silver-grey and mirror chrome (top layer), amber-to-red flickering mesh overlay, matte burgundy (trousers and boots), polished chrome accents",
+    "closures": "Crop top: central spine-strap friction-fit over augmentations; overshirt: open, no closures; trousers: magnetic snap waistband with side friction-locks; boots: side-zip with internal gusset stretch",
+    "distinctive_features": [
+      "Entirely open back panel secured only by central spine-strap to display spinal modifications",
+      "Structural knee cutouts revealing augmentation or scarred flesh",
+      "Reactive chrome-weave that shifts finish with heat and movement",
+      "Bass-responsive mesh overshirt with amber-to-red color shift",
+      "Wide chrome-alloy statement belt cinching high waist",
+      "Mirrored chrome heel plates on boots",
+      "Oversized gussets in boot calves to accommodate non-standard calf width",
+      "Asymmetric layering: tight crop + flowing mesh + tailored trousers"
+    ],
+    "tier_indicator": "Tier 3 functional + street aesthetics. High-quality synthetic materials and reactive tech, but not corpo-grade. Handmade production indicates independent maker ethos.",
+    "cultural_context": "Circuit clubgoer, augmentation-proud, working-class edge. Signals comfort with body modification, willingness to display chrome and mods. Wears identity openly. Circuit-adjacent crew affiliation without corporate backing.",
+    "condition_typical": "Worn pristine to slightly broken-in depending on clubbing frequency. Reactive materials may show minor wear in the mesh from repeated bass exposure. Chrome components maintain polish from intentional buffing. Synth-leather develops subtle creasing at flex points."
+  },
+  "image_prompt": "Cyberpunk fashion photography: a lean model with visible spinal augmentation and polished chrome leg prosthetics wearing the Duskchrome Split-Skin set, posed mid-movement as if on a dark dance floor. Spotlight catches the reactive chrome-weave crop top, flashing between mirror and matte finish. The long mesh overshirt trails dramatically, flickering with amber-red undertones. Knee cutouts expose gleaming chrome. Moody club lighting with neon accent blues and purples bleeding across synth-leather. Dark urban warehouse backdrop with industrial scaffolding. Shot from three-quarter angle emphasizing the open spine-strap detail and augmentation display. Volumetric fog near floor. High contrast, cinematic. --ar 2:3 --v 6"
 }

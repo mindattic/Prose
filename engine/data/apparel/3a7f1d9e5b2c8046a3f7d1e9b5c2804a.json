@@ -46,5 +46,26 @@
     "Ringo RT-4 'Oxcart'",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, utilitarian long coat with a silhouette that reads as both corporate and operationally lean. The matte charcoal finish absorbs light, creating an almost shadowlike presence on the wearer. Cut to mid-thigh, designed for authority and accessibility rather than fashion. The coat's presence is imposing without being ostentatious—instantly recognizable to those who know what to look for.",
+    "fit": "Tailored but not tight; allows full range of motion for field operations. Shoulders are set precisely for unimpeded arm movement. Torso accommodates layering and equipment without sagging. Cut to avoid bulk while maintaining thermal integrity.",
+    "primary_material": "Matte charcoal ripstop synthetic composite with a soft hand; lightweight yet durable ballistic weave. Interior lined with ultra-thin synthetic insulation rated for sub-zero conditions without added weight.",
+    "texture": "Smooth, slightly muted finish with minimal sheen. The ripstop weave creates subtle grid texture visible only at close range. Collar lining has fine thread pattern (readable only under UV light) that indicates Vantablack affiliation.",
+    "color_scheme": "Matte charcoal gray, nearly black. No visible branding. The UV-readable thread pattern in collar lining is silver-toned but invisible to naked eye.",
+    "closures": "Full-length YKK magnetic fastener system disguised as traditional zipper teeth; friction-fit closure that operates silently. No audible clicks or mechanical sounds.",
+    "distinctive_features": [
+      "Two deep hand pockets with reinforced seams for heavy equipment",
+      "Zippered chest pocket with weatherproof gasket",
+      "Sealed interior document pocket (thermal-sealed, not stitched)",
+      "UV-readable corponation identifier woven into collar lining—invisible to casual observation",
+      "Subtle weight distribution along interior suggests integrated sensor or tech compatibility",
+      "Cut designed for rapid access to concealed gear; side seams positioned to avoid snagging",
+      "Minimal visible stitching; edges appear sealed rather than sewn"
+    ],
+    "tier_indicator": "Tier 1-2 corporate issue; signals wealth and operational authority. The cost of the insulation and materials alone places this firmly in the upper echelon.",
+    "cultural_context": "Worn by Vantablack field operatives, security contractors, and high-level corporate enforcement. Signals access, clearance, and the kind of authority that doesn't need explanation. Street-level recognition: a warning to keep distance.",
+    "condition_typical": "Pristine when new; develops a broken-in look with subtle creasing at elbows and shoulders after field use. Minor scuffs and contact marks accumulate but are nearly invisible against the matte finish. Well-maintained examples show no fraying or wear—this is a tool kept in working condition, not a fashion statement."
+  },
+  "image_prompt": "Cyberpunk fashion photography: a tall model wearing the Vantablack Operations Thermal Coat, standing in a dimly lit GLMZ corridor under cool blue-white overhead lights. The coat's matte charcoal ripstop absorbs the shadows around them, creating a silhouette effect. Concrete walls, distant neon signage barely visible in background. Rain or moisture on surfaces. The model's posture is neutral, assured, ready. Close detail shot of the collar lining showing the UV-readable thread pattern glowing faintly under blacklight. High contrast, moody lighting, emphasis on the coat's minimalist design and the sense of quiet authority it commands. --ar 2:3 --v 6"
 }

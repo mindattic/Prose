@@ -74,5 +74,23 @@
     "Tessera Corponation",
     "The Pure Hand",
     "Tomasz Wren"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A tungsten-gray titanium spike with a hexagonal head, visually identical to industrial structural fasteners used in GLMZ construction. The shaft tapers to a needle point. At first glance, indistinguishable from a 3/8\" anchor bolt found in any corpo office or lower-district tenement.",
+    "dimensions": "12mm diameter × 38mm length (thumb-sized); hexagonal head adds ~2mm width",
+    "weight_description": "47g — light enough to pocket a dozen without notice, heavy enough to feel purposeful in hand",
+    "primary_material": "Aerospace-grade titanium alloy exterior; internal graphene microcapacitor and recursive broadcast matrix",
+    "finish": "Brushed titanium with light oxidation patina (deliberate, to match aged structural hardware). Hexagonal head features micro-knurling for driver grip. No visible branding on the spike itself.",
+    "color_scheme": "Industrial gunmetal gray with faint bronze tarnish on the tip. Polymer composite sheath (off-white/concrete-tan) wraps the lower shaft to mimic construction epoxy.",
+    "interface_elements": "None visible to the naked eye. A recessed micro-cavity at the base accepts a diagnostic probe (not included). No LEDs, no indicators — passive operation is the design philosophy.",
+    "distinctive_features": [
+      "Hexagonal head machined to exact tolerances matching standard Palladian anchors",
+      "Polymer composite coating extends 18mm up the shaft, resembling construction adhesive residue",
+      "Tip is needle-sharp, optimized for penetrating rebar and conduit without fracturing",
+      "Micro-surface irregularities (intentional tool marks) age the appearance to match weathered fasteners"
+    ],
+    "manufacturer_markings": "TESSERA Φ stamped in 0.5mm font on the hexagonal head, visible only under direct magnification or oblique lighting. No regulatory stamps — deliberately unmarked to avoid identification.",
+    "condition_typical": "Fresh from packaging appears as new construction hardware. After deployment, accumulates dust, light corrosion, and construction debris within hours, becoming invisible in any fastened surface."
+  },
+  "image_prompt": "Product photograph of a Tessera Recursive Mesh Anchor mounted horizontally on a brushed stainless steel workbench, surrounded by scattered industrial fasteners and construction materials. Dramatic side-lighting reveals the hexagonal head and polymer composite coating. In the background, a partially disassembled pneumatic driver and a blueprint showing network topology. Cyberpunk noir aesthetic: cool tungsten-blue key light, warm amber accent light catching the titanium's oxidation. Shallow depth of field. The spike appears innocuous, almost boring — that's the point. Shot against a dark industrial backdrop with faint holographic grid overlay suggesting hidden network propagation. --ar 3:2 --v 6"
 }

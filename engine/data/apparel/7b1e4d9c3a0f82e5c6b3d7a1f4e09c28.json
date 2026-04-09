@@ -41,5 +41,26 @@
   "parent_corponation": "",
   "related_entities": [
     "Lazarus EC-4 'Companion'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A classically refined oxford silhouette that reads as pure luxury despite embedded biometric architecture. Sharp, minimalist, and deliberately unaugmented in appearance — the tech is completely invisible. Sits comfortably between old-money aesthetic and subtle corpo authority.",
+    "fit": "Precision-tailored to the foot with anatomical support; feels snug around the midfoot but allows natural toe splay. Designed for all-day wear without fatigue. The insole contours to individual arch pressure mapping.",
+    "primary_material": "Cultured calf leather (lab-grown, ethically traceable), micro-textured carbon resin sole",
+    "texture": "Smooth, almost buttery leather upper with a satin-matte finish; sole has a fine grip texture visible only on close inspection",
+    "color_scheme": "Matte black (primary) or warm ivory; subtle Vantrel logo embossed at heel counter in understated metallic",
+    "closures": "Traditional waxed laces with hidden tension sensors; friction-fit lacing system allows micro-adjustments without visible tightening",
+    "distinctive_features": [
+      "Fully integrated biometric mesh in insole (imperceptible to wearer)",
+      "BCI-compatible companion app connectivity via encrypted subcutaneous receiver link",
+      "Plantar fascia pressure mapping sensors",
+      "Cortisol and heart rate monitoring through dermal contact",
+      "Micro-articulated heel strike analysis",
+      "Carbon resin sole with anti-slip micro-grid",
+      "No visible tech aesthetic — indistinguishable from conventional dress shoe"
+    ],
+    "tier_indicator": "Tier 2-3 luxury with Tier 4-5 executive appeal; price point excludes below Tier 3",
+    "cultural_context": "Corporate wellness culture; health-conscious executives who reject visible augmentation; professionals managing stress and physical performance metrics privately. Signals discreet wealth and biohacking adoption.",
+    "condition_typical": "Pristine and burnished when new; develops subtle creasing in leather that only enhances prestige; sole shows minimal wear over years due to carbon resin durability"
+  },
+  "image_prompt": "Luxury cyberpunk fashion photography: Vantrel Bespoke Biosync Oxford in matte black, displayed on a sleek chrome mannequin foot or worn by a Tier 2 corporate model with subtle augmentations (minimal visible chrome, clean lines). Close-up detail shot of the insole's biometric mesh glowing faintly with soft blue bioluminescent threading visible only in side-angle lighting. Dark minimalist studio backdrop with cool neon accent light (corporate blue or cool white). Polished concrete floor with subtle holographic floor grid. The shoe positioned at three-quarter angle to emphasize craftsmanship and the invisible tech integration. Moody, sophisticated, restrained cyberpunk luxury aesthetic. --ar 2:3 --v 6"
 }

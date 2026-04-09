@@ -40,5 +40,25 @@
     "New Windsor / Novaya Windsorka",
     "The Burden Clause",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek, form-fitting hand coverings that extend from fingertips to mid-forearm with a distinctly technological aesthetic. The surface appears subtly textured with a grid-like pattern of embedded nodes, giving them an almost reptilian sheen. They contour naturally to the hand while suggesting mechanical precision underneath.",
+    "fit": "Second-skin compression fit that follows hand anatomy exactly; fingertips remain fully articulate and sensitive to touch",
+    "primary_material": "Synth-latex composite with embedded micro-actuator grid; semi-flexible exoskeletal framework of aerospace-grade polymer",
+    "texture": "Smooth, responsive surface with fine tactile nodes arranged in organized rows; slightly warm to the touch; feels organic despite technological construction",
+    "color_scheme": "Matte charcoal gray base with accent threading in soft neon cyan along finger ridges and wrist cuff; subtle iridescent shimmer visible under direct light",
+    "closures": "Friction-fit elastic cuff with single magnetic snap at wrist; no traditional closures required",
+    "distinctive_features": [
+      "Haptic actuator node array across all finger surfaces and palm",
+      "Calibration indicator dots at base of wrist glowing soft blue when powered",
+      "Nexus Integration logo embossed on back of hand in brushed chrome finish",
+      "Subtle conductive threading visible along finger joints",
+      "Heat-dissipation vents along inner wrist",
+      "Minimal charging contact point at thumb base"
+    ],
+    "tier_indicator": "Tier 1-2 luxury professional equipment; unattainable for working-class individuals",
+    "cultural_context": "Signals corpo design professional, elite medical technician, or high-tier gaming enthusiast; wearer engages primarily with digital/virtual environments; implies access to expensive haptic infrastructure",
+    "condition_typical": "Pristine and well-maintained; professional cleaning recommended; accumulates minor fingerprints on surface; charging contacts occasionally show faint oxidation"
+  },
+  "image_prompt": "Close-up fashion photograph of Nexus Integration haptic feedback gloves on a sleek cyberpunk model's hands, hands positioned as if manipulating invisible holographic interface. Gloves catch cool blue-cyan accent lighting against dark charcoal base. Dark studio backdrop with subtle holographic grid pattern. Shallow depth of field focusing on finger articulation and haptic node texture. Moody, professional, immaculate condition. Neon rim lighting. Ultra-detailed surface texture. --ar 2:3 --v 6"
 }

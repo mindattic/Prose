@@ -65,5 +65,28 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Tessera Nexus Town Car",
     "Tomasz Wren"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian single-piece coverall in charcoal grey with purposeful articulation—high-collared, broad-shouldered, and cinched at the waist by a heavy nylon tool harness. The silhouette is functional and imposing: reinforced at stress points, visibly designed for climbing and confined spaces. Reflective silver Solberg-Maru arch logo on back and left breast catches light. Layered appearance from integrated thermal undershirt visible at collar and cuffs. White hard hat with pinned identification number and worn stickers completes the profile.",
+    "fit": "Relaxed through the torso for movement, but articulated at knees and elbows with pre-bent fabric panels that eliminate binding during crouching or climbing. Snug high collar, fitted at wrists and ankles. Four-point harness anchor loop reinforced into upper back creates a structured, slightly elevated shoulder line.",
+    "primary_material": "Heavy synth-canvas coverall (durable, fire-resistant blend); Ironpass moisture-wicking thermal layer underneath in dark charcoal; nylon webbing tool harness; Penrose Weld Boot with lug sole. Reflective silver heat-pressed logo and trim.",
+    "texture": "Rough, canvas-like weave with visible thread; pre-creased at joints from manufacturing. Nylon harness webbing adds tactile contrast. Boots have pronounced tread pattern. Thermal layer beneath has subtle ribbed compression texture visible at collar and cuff edges.",
+    "color_scheme": "Charcoal grey as primary with white hard hat. Reflective silver Solberg-Maru logo and reinforced stitch lines. Stickers on helmet vary (unauthorized band logos, neighborhood market marks, political symbols in secondary colors).",
+    "closures": "Full-length front zipper with magnetic snap storm flap; magnetic snap high collar with dedicated respirator clip ring at left collar point; nylon webbing harness with carabiner attachment points; tool-drop tether system integrated into harness.",
+    "distinctive_features": [
+      "Four-point harness anchor loop rated for 60kg fall arrest, reinforced into upper back",
+      "Pre-articulated knees and elbows prevent fabric binding",
+      "Dedicated respirator mask clip ring at left collar",
+      "Rear channel and bilateral shoulder zips for aug compatibility (spinal rigs, shoulder chrome)",
+      "Reflective silver Solberg-Maru arch logo (bridge over waterline motif)",
+      "Heavy nylon tool harness with bilateral hip carabiner points and chest attachment",
+      "White branded hard hat with pinned-on personal ID number",
+      "Unauthorized stickers on helmet (band logos, political symbols, neighborhood markers)",
+      "Lug sole boots designed for rebar, grating, wet concrete grip"
+    ],
+    "tier_indicator": "Tier 3 functional—mid-tier corporation-issued field uniform for essential infrastructure work. Solid, standard-issue quality; no luxury markers but clearly maintained and regulation.",
+    "cultural_context": "Structural maintenance worker, MagRail infrastructure crew, essential services. Wearing this signals stability within a mid-tier corporation, physical labor, unglamorous but critical work maintaining the city's aging transit and bridge systems. The unauthorized helmet stickers suggest personality and community affiliation beneath the corporate uniformity.",
+    "condition_typical": "Broken-in and well-used but maintained; visible wear on knees and elbows from climbing and concrete work. Sticker-laden hard hat shows personality customization. Minor weathering, no major tears—these suits are replaced when functionally compromised, not patched. Dust and concrete powder residue typical."
+  },
+  "image_prompt": "Solberg-Maru Infrastructure field tech in charcoal grey synth-canvas coverall standing in a dimly lit MagRail tunnel, white hard hat with stickers reflecting work lights, heavy nylon harness visible over chest, reflective silver logo catching harsh sodium lighting. Worn Penrose lug-sole boots planted on wet concrete grating. Background: aged structural supports, cable runs, moisture-beaded tunnel walls. Moody industrial amber and blue light, slight dust motes in air. Model or mannequin showing full articulated silhouette and tool harness detail. --ar 2:3 --v 6"
 }

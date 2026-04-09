@@ -324,5 +324,13 @@
     "posture_movement": "Moves with controlled efficiency, never wasting motion. Slight forward lean when standing, weight distributed ready to move. Eyes constantly processing, scanning for exits and variables. When still, there's coiled tension — she doesn't relax, she powers down.",
     "clothing_style": "Tier 4 functional — flight suit (armored nylon blend, dark gray) worn open over fitted black synth-weave shirt. Cargo pants with reinforced pockets for tools and contract data. Steel-toed boots rated for high-g cockpit environments. Harness-style ballistic vest over everything, custom-fitted for cockpit use. No jewelry, no corporate logos, no gang colors — anonymity maintained through absolute functionality."
   },
-  "image_prompt": "cyberpunk portrait of a 26-year-old lean female pilot with dark brown hair in a functional braid, Polynesian-Scandinavian heritage, sharp angular features, dark focused eyes, warm brown skin with visible chrome subdermal augmentations glowing faintly along forearms, surgical scar visible at base of skull, dressed in dark gray armored flight suit and ballistic vest, standing in neon-lit cockpit with instrument panels glowing behind her, moody blue and amber lighting casting sharp shadows across her face, photorealistic, high contrast, military sci-fi aesthetic, tense and alert posture, studio lighting, --ar 2:3 --v 6"
+  "image_prompt": "cyberpunk portrait of a 26-year-old lean female pilot with dark brown hair in a functional braid, Polynesian-Scandinavian heritage, sharp angular features, dark focused eyes, warm brown skin with visible chrome subdermal augmentations glowing faintly along forearms, surgical scar visible at base of skull, dressed in dark gray armored flight suit and ballistic vest, standing in neon-lit cockpit with instrument panels glowing behind her, moody blue and amber lighting casting sharp shadows across her face, photorealistic, high contrast, military sci-fi aesthetic, tense and alert posture, studio lighting, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 36.6,
+    "Indigenous American": 14.7,
+    "Hispanic/Latin American": 14.1,
+    "Sub-Saharan African": 12.9,
+    "Eastern European": 12.5,
+    "Northern European": 9.2
+  }
 }

@@ -48,5 +48,24 @@
     "Ambrosia Fekete-Waiyaki",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Vantablack-CNX"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A severe, utilitarian wrist cuff that dominates the wrist with uncompromising authority. The matte black band sits flush against the skin, reading as industrial surveillance rather than fashion. On the wearer, it creates an immediate visual marker of subordination—impossible to hide, impossible to ignore. The silhouette is rigid and geometric, transforming the wrist into a monitored asset.",
+    "fit": "Compression-tight around the wrist, engineered for constant skin contact. Non-adjustable; sized during issuance. The fit is deliberately uncomfortable—a reminder of its function. No slack, no choice.",
+    "primary_material": "Matte black polycarbonate casing with a sealed, non-removable design. The material is durable but deliberately cheap—industrial-grade rather than consumer-grade, signaling disposability.",
+    "texture": "Smooth, cold polycarbonate exterior with a slightly grippy inner surface (silicone contact pad for biometric scanning). The outer face is featureless except for the embossed Kelvex logo. Zero soft textures; everything designed for easy decontamination.",
+    "color_scheme": "Absolute matte black with a faint amber LED pulse visible at the wrist edge—the only color variation. The logo emboss catches minimal light, keeping the profile deliberately low-key.",
+    "closures": "Sealed magnetic snap system. One-time closure at issuance; no manual fastening. Tampering attempts trigger immediate alerts.",
+    "distinctive_features": [
+      "Flush embossed Kelvex Corporate Systems logo—corporate branding as ownership marker",
+      "Faint amber status LED pulsing at wrist edge (4-minute transmission cycle indicator)",
+      "Biometric contact pad on inner surface (temperature, pulse, conductivity monitoring)",
+      "Tamper-seal that triggers HR incident flag if broken",
+      "Zero ornamentation—intentionally hostile to personalization"
+    ],
+    "tier_indicator": "Tier 4 (working class under corporate control) to Tier 5 (probationary/sub-grade). The cuff itself is mandatory issue, not a choice.",
+    "cultural_context": "Worn by transit workers flagged for compliance monitoring or probationary status. Signals institutional ownership, reduced autonomy, and constant surveillance. In Circuit parlance, spotting one means someone is on the corporate leash. The wearer is read as: monitored, restricted, expendable.",
+    "condition_typical": "Always pristine on the outside—corporate property must remain undamaged. The inner contact surface may show minor wear or discoloration from sweat and skin oils. Scratches or attempts at removal result in immediate disciplinary action, so most wearers keep them obsessively clean."
+  },
+  "image_prompt": "Close-up fashion photo of a matte black Kelvex TransitID wrist cuff on a dark-skinned transit worker's wrist, shot against a rain-slicked urban backdrop. The cuff dominates the frame with utilitarian severity—perfectly sealed, flush against the skin. A faint amber LED pulses at the wrist edge. The worker's forearm is tense, muscles slightly flexed. Moody industrial lighting casts sharp shadows across the polycarbonate surface. Background: neon-lit transit hub, surveillance cameras, blurred corporate logos. The image reads as institutional control made visible. --ar 2:3 --v 6"
 }

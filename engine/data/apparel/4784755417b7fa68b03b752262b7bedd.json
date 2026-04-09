@@ -35,5 +35,25 @@
   ],
   "related_entities": [
     "The Signal"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A fitted, unassuming knit beanie that sits low on the head with a slight slouch. Clean lines, minimal branding. Appears deliberately anonymous—the kind of everyday headwear you'd see in any Shelf district or corpo transit hub.",
+    "fit": "Snug around the crown and ears, with a relaxed drape at the back. Stretches to accommodate most head sizes without bunching. The fabric has subtle give but holds shape without elastic bands.",
+    "primary_material": "Blended synth-wool base (60% recycled polyester, 40% lab-grown wool analog) with conductive carbon-thread interwoven throughout in a grid pattern too fine to see with the naked eye",
+    "texture": "Smooth, uniform knit on the exterior with a faint ribbed vertical pattern. Soft to the touch despite the embedded conductive filament. Interior has a brushed fleece lining for warmth and to conceal the tech architecture.",
+    "color_scheme": "Matte charcoal, gunmetal grey, or deep navy. No visible logos or branding—unmarked commercial aesthetic. The conductive threads create an imperceptible shimmer under direct light if you know to look for it.",
+    "closures": "None—pulls on and off. Sits firmly without adjustment mechanisms.",
+    "distinctive_features": [
+      "Conductive thread woven in invisible grid pattern—extends mesh network range by ~40%",
+      "No visible external tech (passive antenna only)",
+      "Brushed interior fleece masks the conductive architecture",
+      "Deliberate lack of branding or status markers",
+      "Thermal regulation properties from synth-wool blend",
+      "Lightweight enough for extended wear without fatigue"
+    ],
+    "tier_indicator": "Tier 3-4 functional. Affordable enough for working-class adoption (estimated Φ40-80 range), but the tech integration marks it as above survival-grade. Too practical to be luxury.",
+    "cultural_context": "Worn by Shelf district residents, mesh network activists, independent couriers, off-grid workers, and anyone avoiding corpo surveillance infrastructure. Signals self-sufficiency and distrust of official systems without being ostentatious. Common in ungoverned zones and fringe communities.",
+    "condition_typical": "Broken-in but maintained. Shows subtle wear at the seams and back panel after months of use, but the conductive threads remain intact. May have minor pilling or fading from weathering and mesh protocol traffic."
+  },
+  "image_prompt": "A cyberpunk fashion product shot of a matte charcoal Nomura Signal Beanie on a dark-skinned model with chrome neck circuitry visible beneath the jawline. Beanie pulled low, obscuring eyes in shadow. Shot against a gritty brick wall with neon green mesh network visualizations barely visible in the air around the head, suggesting active signal transmission. Moody cyan and amber rim lighting. Close-up detail shot showing the ribbed knit texture and brushed interior. Dark studio backdrop with subtle rain reflections. High contrast, cyberpunk aesthetic. --ar 2:3 --v 6"
 }

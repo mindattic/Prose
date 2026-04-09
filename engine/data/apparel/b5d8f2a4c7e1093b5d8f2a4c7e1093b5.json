@@ -45,5 +45,26 @@
     "Lazarus LX-2 'Lab Rat'",
     "TESSERA ES-4 'Perimeter'",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian safety shell with a boxy, functional silhouette. The fluorescent yellow-green creates an unmistakable visual beacon, while segmented retroreflective silver tape runs across the chest, back, and sleeves in a grid-like safety pattern. On-body, it reads as purely industrial—no pretense of style, only visibility and function.",
+    "fit": "Relaxed and oversized through the torso to accommodate layering over work clothing and movement during labor. Boxy shoulders, straight sleeves with elastic cuffs, length hits mid-hip. Cut for utility, not silhouette.",
+    "primary_material": "Coated polyester outer shell with chemical-resistant treatment. Lightweight and water-resistant. Synthetic lining underneath for durability.",
+    "texture": "Smooth, slightly waxy coated surface that sheds moisture and chemical splash. The retroreflective tape has a bumpy, segmented quality—intentionally textured for light refraction. Overall feel is industrial and impersonal.",
+    "color_scheme": "Dominant fluorescent yellow-green (safety lime), with grid-patterned retroreflective silver tape across chest, back, upper sleeves, and lower back. Muted charcoal or black collar, cuffs, and side panels for contrast.",
+    "closures": "Heavy-duty plastic or metal zipper down the front, possibly with a storm flap. Adjustable velcro cuffs at wrists. No decorative fastenings.",
+    "distinctive_features": [
+      "Class 3 ANSI/ISEA compliance reflective tape segmentation",
+      "Coated polyester resists light chemical splash",
+      "Veldtmann branded patch on sleeve or chest",
+      "Ample interior and exterior pockets for work gear",
+      "Elastic-bound hood attachment points (hood may be detachable)",
+      "Reinforced stress points at seams and closures",
+      "Wipe-clean, low-maintenance surface"
+    ],
+    "tier_indicator": "Tier 3–4 functional workwear. Issued or subsidized to working-class laborers. Cheap enough to be disposable, durable enough to last years.",
+    "cultural_context": "Worn by port workers, construction crews, waste management, automated machinery handlers, Iowan Behemoth ground crews, and anyone in proximity to vehicle traffic or industrial hazards. Off-shift, it signals working-class status and can provide social camouflage in economically stressed neighborhoods where 'looking like you work' deflects unwanted attention.",
+    "condition_typical": "Usually broken-in and weathered—minor chemical stains, possible small tears at seams or cuffs, dulled reflective tape, faded neon green from sun exposure and repeated washings. Rarely pristine unless newly issued."
+  },
+  "image_prompt": "A fluorescent yellow-green Veldtmann safety shell jacket photographed on a dark-skinned male model with visible subcutaneous tech ports along the neck, standing in hard industrial lighting against corroded steel and shadow. The retroreflective silver tape glows pale under moody neon backlighting. Rain-slicked warehouse backdrop, grimy concrete floor. Jacket appears worn but functional—small repairs visible at the sleeve cuff. Model's posture is tired, utilitarian. Deep blue and cyan neon reflections on the jacket surface. Gritty, exhausted Great Lakes port aesthetic. --ar 2:3 --v 6"
 }

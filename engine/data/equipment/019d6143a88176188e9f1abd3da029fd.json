@@ -71,5 +71,24 @@
     "The Resonance Communion",
     "Vantablack-CNX",
     "Zheng-dao Bioelectric"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A delicate, branching bio-synthetic structure resembling a stylized fern frond or feather. The main stem is translucent with a faint bioluminescent amber glow, splitting into progressively finer secondary and tertiary branches. The cilia—microscopic hair-like structures—create a subtle shimmer across the entire surface when vibration is being harvested. The overall impression is organic and plant-like, deliberately camouflaged as natural matter.",
+    "dimensions": "22cm at full extension when deployed; collapses to approximately 8cm for storage or concealment",
+    "weight_description": "Extremely light—pocketable and easily concealable. Can be adhered flat against skin beneath clothing with no perceptible bulk",
+    "primary_material": "Proprietary piezoelectric bio-synthetic substrate; living tissue culture matrix with embedded conductive polymer filaments",
+    "finish": "Semi-translucent, slightly moist biological surface with a faint waxy cuticle. The cilia have a hair-like texture that responds visibly to air currents and vibrations",
+    "color_scheme": "Pale amber-green at the primary stem, fading to translucent off-white at the branch tips. Faint bioluminescent amber pulses visible in low light, concentrated along the main vein",
+    "interface_elements": "No external buttons or screens—entirely passive. A subtle contact patch at the base for pairing signal handshake; microscopic port for optional supplemental micro-cell battery insertion",
+    "distinctive_features": [
+      "Cilia visibly ripple and adjust resonance in response to environmental vibrations and sound",
+      "Faint amber bioluminescence that intensifies when relay is active",
+      "Complete absence of visible circuitry or mechanical components—appears fully biological",
+      "Self-healing surface that regenerates minor damage over 24–48 hours",
+      "Moisture-dependent; requires ambient humidity or periodic misting to maintain optimal function"
+    ],
+    "manufacturer_markings": "Zheng-Dao Bioelectric logo (stylized DNA helix) subtly etched into the base stem; nearly invisible without magnification. Serial number encoded in bioluminescent pattern, readable only under UV light",
+    "condition_typical": "When deployed and active, the frond gently adheres to a surface (wall, equipment casing, plant pot, underside of furniture) with its base anchor filaments. Cilia shimmer and pulse gently as they harvest ambient vibration. In idle state, appears dormant and fully botanical—a dried or pressed plant specimen"
+  },
+  "image_prompt": "Product photography: Zheng-Dao Bioelectric Ciliary Mesh Frond mounted on a brushed steel workbench next to a ruler and technical calipers. The frond is fully extended, translucent amber-green with visible delicate branching structure and hair-like cilia. Soft blue-white cyberpunk backlighting creates a bioluminescent glow. The frond is adhered to a matte black surface patch. Shallow depth of field focuses on the frond's intricate branch structure. Moody ambient lighting with cyan and amber color grading. Shot from 45 degrees. High detail on the biological texture and cilia. Cinematic cyberpunk aesthetic. --ar 3:2 --v 6"
 }

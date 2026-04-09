@@ -41,5 +41,35 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Biometric Denial Charge BDC-1",
+    "Imara Solís-Khatgal",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "The Composite Index",
+    "Vespid Dynamics",
+    "Yannick Tambadou-Reinholt"
+  ],
+  "physical_description": {
+    "visual_profile": "A biomechanical backpack system resembling a hybrid between military gear and laboratory equipment. The frame is angular and skeletal, with visible internal mechanisms and crystalline dispersal nozzles. Despite its destructive purpose, it has an almost organic aesthetic — segmented like an insect's abdomen, with a faint bioluminescent quality to its internal chambers.",
+    "dimensions": "48 cm height × 35 cm width × 22 cm depth. Dual shoulder-mounted nozzles extend 12 cm forward from the frame. Central reservoir 30 cm tall.",
+    "weight_description": "Hefty and purposeful — 8 kg loaded feels substantial but balanced across the shoulders. The weight distribution centers low, designed for extended wear without fatigue.",
+    "primary_material": "Aircraft-grade aluminum frame with reinforced polycarbonate viewing ports. Internal plumbing combines titanium microtubes with biocompatible silicone valving. Nozzles are hardened ceramic-composite.",
+    "finish": "Matte gunmetal gray with translucent polymer sections revealing amber-tinted internal fluid. Sections show deliberate wear — scuffed corners, minor corrosion blooms on aluminum edges suggesting field use.",
+    "color_scheme": "Gunmetal gray primary, with amber and pale bioluminescent green accents. The spore solution inside glows faintly under dim light — a sickly organic luminescence.",
+    "grip_texture": "Rubberized shoulder harness with slight tackiness from fungal residue buildup. Control grips on chest-mounted trigger mechanism are textured polymer, slightly sticky to the touch.",
+    "distinctive_features": [
+      "Dual crystalline dispersal nozzles with visible micro-jets",
+      "Transparent reservoir showing viscous amber liquid with suspended particulate matter",
+      "Segmented pressure relief vents along the spine — faintly glowing when charged",
+      "Organic growth patterns visible inside the polycarbonate — colonization marks from testing",
+      "Copper bioelectric contacts for spore type selection",
+      "Faint enzymatic smell — earthy, slightly chemical, vaguely unsettling",
+      "Pressure gauge with dual readout (reserve pressure / spore viability)",
+      "Heat-dispersal fins around the central chamber — warm to the touch when active"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS logo embossed on left shoulder mount in chrome relief. Serial plate mounted on lower frame in small white text. Environmental certification stamps faded on rear — legitimate origin markers.",
+    "condition_typical": "Field-worn but maintained. The apparatus shows signs of regular use — minor fungal contamination marks on nozzle tips, slight discoloration on reservoir walls from repeated payloads, dust accumulated in pressure relief vents. This is a working tool, not a showpiece."
+  },
+  "image_prompt": "Product photography of the Vespid Dynamics Spore Cloud Disperser SCD-1 'Bloom' backpack system mounted on a dark gunmetal stand against deep charcoal backdrop. Dramatic side-lighting from upper left revealing translucent amber reservoir glowing faintly with bioluminescent spore suspension inside. Detail focus on dual crystalline dispersal nozzles with visible pressure vents. Worn aluminum frame catching light, showing field-use patina and corrosion bloom. Small detail inset showing manufacturer's chrome embossed logo and environmental certification stamps. Cyberpunk aesthetic with organic biotechnology blend — emphasize the hybrid nature of military gear and engineered biology. Color grading: cool shadows, warm amber interior glow, metallic highlights. Shot composition: three-quarter view displaying the skeletal frame structure and segmented design. Professional product catalog style for GLMZ weapons database --ar 3:2 --v 6"
 }

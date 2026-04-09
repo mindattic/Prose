@@ -44,5 +44,36 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Nika Svensson-Kone",
+    "Parliament",
+    "Synaptrel",
+    "TESSERA ES-4 'Perimeter'",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modular assault platform with a distinctly geometric aesthetic. The receiver resembles a precision-engineered aluminum spine with prominent snap-lock hardpoints visible along its length. The weapon has an almost architectural quality — clean lines interrupted by functional interface points that hint at its transformable nature. When configured as a carbine, it reads compact and purposeful; the battle rifle variant stretches into an imposing form factor.",
+    "dimensions": "Carbine config: 82cm overall length, 6.5cm receiver width, 5cm height at charging handle | Battle rifle config: 105cm overall length | PDW config: 68cm overall length. Barrel lengths: 37cm (5.56mm), 42cm (7.62mm), 28cm (4.6mm)",
+    "weight_description": "Carbine feels balanced and controllable despite modular construction — approximately 3.1kg. Battle rifle variant noticeably heftier at 4.3kg, demanding respect from the operator. PDW config lightest at 3.2kg, favoring handling speed over raw mass.",
+    "primary_material": "Aircraft-grade aluminum alloy receiver with hardened steel snap-lock mechanisms. Barrel assemblies feature chrome-lined steel bores. Furniture is reinforced polymer composite with embedded strain-relief channels.",
+    "finish": "Matte anodized aluminum receiver in gunmetal gray with micro-textured surface to reduce reflection. Barrels wear a battle-worn satin chrome finish showing light oxidation at muzzle crowns. Polymer components finished in flat tactical black with subtle crosshatch grip patterns.",
+    "color_scheme": "Gunmetal gray receiver as primary, accented by matte black polymer furniture and satin chrome barrel assemblies. Status LEDs — blue for standby, amber for ballistic profile loaded, red for malfunction — sit recessed in the receiver rail.",
+    "grip_texture": "Ergonomic grip wrapped in soft-touch rubberized polymer with slight waffle texture for purchase even in gloved or augmented hands. Magazine well features pronounced textured ridges for rapid reload indexing. Charging handle wrapped in knurled steel.",
+    "distinctive_features": [
+      "Three prominent snap-lock hardpoints along receiver that catch light distinctly",
+      "Recessed status LED array near the ejection port — blue/amber/red indication system",
+      "Tessera's modular barcode etched into receiver for BCI pairing",
+      "Tensioning knobs at each snap-lock point with fine adjustment grooves",
+      "Integrated cable management channels running the receiver length for sling attachment",
+      "Witness holes at each locking interface to visually confirm engagement",
+      "Muzzle brake threads visible on barrel assemblies — matching interface across all caliber variants",
+      "Picatinny rail segments that shift position depending on configuration — appears to flow and reconfigure with the barrel swap"
+    ],
+    "manufacturer_markings": "TESSERA logo stamped prominently on the receiver rail in sans-serif capitals. TAP-5 designation and caliber marking engraved (not printed) near the magazine well, updated with each configuration swap. Serial number etched in micro-scale beneath the charging handle, difficult to read without magnification. Tier 3+ licensing watermark laser-etched on lower receiver.",
+    "condition_typical": "Well-maintained examples show light carbon fouling at snap-lock interfaces and minor wear on witness holes from repeated configuration cycles. Field-worn variants display micro-scratches where technicians have accessed locking mechanisms for cleaning, and faint salt spray corrosion on chrome barrels in extended-operation units. Operators who trust the platform maintain flawless snap-lock surfaces; those who don't often show debris accumulation and hesitant engagement points."
+  },
+  "image_prompt": "Product photography of the Tessera TAP-5 Chameleon in 5.56mm carbine configuration, laid across a brushed steel workbench under dramatic side-lighting that emphasizes the modular snap-lock hardpoints and aluminum receiver geometry. The weapon's gunmetal gray anodized finish glows under cool-toned studio lights, with the satin chrome barrel catching warm rim-light. Status LED indicators glow soft blue. A gloved operator hand (chrome-plated knuckles visible) grips the weapon at the receiver, showing the rubberized grip texture and fine detail of the snap-lock tensioning knob. Background is deep charcoal with subtle grid pattern suggesting a corporate armory environment. Include visible micro-details: barcode etching on receiver, witness holes along snap-lock points, and the clean interface lines where barrel mates to receiver. Cyberpunk aesthetic with precision-engineered minimalism. --ar 3:2 --v 6"
 }

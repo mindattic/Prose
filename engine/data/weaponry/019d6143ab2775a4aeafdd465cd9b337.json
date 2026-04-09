@@ -58,5 +58,43 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Cezar Watanabe-Gyasi",
+    "Charnel Propulsion",
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Kairos",
+    "Nika Svensson-Kone",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Phased Array Disruptor PAD-3 'Sunspot'",
+    "The Nearfield",
+    "The Pure Hand",
+    "Vantablack PA-1 'Pacifier'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular carbine with a pronounced forward-swept profile dominated by a large cylindrical capacitor housing integrated into the fore-end. The weapon presents an aggressive, high-tech aesthetic — part precision rifle, part energy weapon — with a tapered barrel and aggressive muzzle brake. The stock is streamlined and compact, suggesting military ergonomics optimized for rapid repositioning.",
+    "dimensions": "760mm overall length, 420mm barrel, approximately 65mm width at the capacitor housing, 45mm height at receiver",
+    "weight_description": "Substantial but not unwieldy — 4.1 kg creates a deliberate, planted feel in the hands. The weight is front-biased due to the capacitor bank and liquid propellant cartridge, creating a natural downward cant that aids in rapid target acquisition.",
+    "primary_material": "Aerospace-grade carbon composite chassis with steel receiver core and titanium barrel. The capacitor housing is hard-anodized aluminum with embedded cooling fins.",
+    "finish": "Matte gunmetal gray composite with brushed titanium accents along the barrel. The capacitor housing features a dark anodized finish with visible heat dissipation scoring. Worn edges reveal silver undercoat where high-contact points show use.",
+    "color_scheme": "Gunmetal gray primary with silver-titanium barrel, dark gray cooling fins, and amber-tinted pressure gauge on the liquid propellant cartridge. Charging ports glow faintly with inactive blue status LEDs.",
+    "grip_texture": "Aggressively textured rubberized polymer with aggressive crosshatch pattern, wrapped in a thin layer of abraded synthetic cord for secondary grip points. The magazine well is reinforced with knurled steel.",
+    "distinctive_features": [
+      "Large cylindrical capacitor bank integrated into the fore-end with prominent cooling fins and heat vents",
+      "Transparent 40mL liquid propellant cartridge chamber showing viscous, slightly luminescent fluid level",
+      "Dual amber pressure gauges on cartridge housing — one for propellant, one for capacitor charge state",
+      "Exposed charging contacts along the rail system with faint blue LED status indicators",
+      "Muzzle brake designed to channel the distinctive blue-white plasma discharge, with micro-faceted reflective interior",
+      "Recessed magazine catch and magazine well with reinforced steel locking lugs",
+      "Serial plate and ZHENG-DAO BIOELECTRIC dragon symbol etched into the receiver",
+      "Rail-mounted charging port with weathersealed connector cap (frequently worn or missing in field units)",
+      "Impact scarring and micro-fractures in the composite stock and fore-end — evidence of field deployment"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo — a stylized dragon coiled around an electrical discharge symbol — stamped into the upper receiver. Serial number and 'ETCC-5 FLASHPOINT' designation etched in white fill on the left side of the stock. Capacity ratings and safety warnings in English, Mandarin, and Japanese printed on the cartridge housing.",
+    "condition_typical": "Field-worn but maintained. Composite shows minor gouging and impact scarring. The muzzle brake exhibits heat discoloration — faint rainbow oxidation from repeated plasma discharge. The propellant cartridge is frequently replaced, showing connector wear. Charging contacts show oxidation patterns from exposure to Great Lakes humidity. Stock and grip show signs of hard use and tactical repositioning — scuffed finishes, stress fractures in non-critical areas."
+  },
+  "image_prompt": "Product photo of a military electrothermal carbine 'Flashpoint' ETCC-5 laying on dark gunmetal surface, 3/4 view angle showing the distinctive cylindrical capacitor housing with heat fins integrated into the fore-end. Dramatic side-lighting with deep blue accent light hitting the cooling fins and muzzle brake, emphasizing the sci-fi propulsion system. The transparent liquid propellant cartridge glows faintly amber under light. Charging contacts and amber pressure gauges are visible with subtle blue LED indicators. Composite stock shows realistic wear patterns and impact scarring from field use. Cyberpunk aesthetic with technical precision. Shot includes close detail of the muzzle brake's micro-faceted plasma discharge channel. High contrast cinematic lighting with emphasis on materials — titanium, carbon composite, hard-anodized aluminum. --ar 3:2 --v 6"
 }

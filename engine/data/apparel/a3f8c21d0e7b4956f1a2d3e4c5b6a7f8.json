@@ -45,5 +45,26 @@
   "related_entities": [
     "Dzemal Acholonu-Patagiri",
     "Lazarus LX-2 'Lab Rat'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian full-body silhouette with pronounced shoulders and a bulky torso. The hood dominates the upper half, creating an almost avian profile. Visually reads as industrial hazmat wear—functional and intimidating rather than fashionable.",
+    "fit": "Relaxed and deliberate—cut to layer over base garments without restriction. The proportions are generous through the torso and thighs, tapering slightly at wrists and ankles for gasketed seals. Intentionally not form-fitting.",
+    "primary_material": "Trilaminate lead-weave outer shell bonded to a breathable rad-absorb membrane. RF-welded seams throughout. Polycarbonate face shield integrated into hood. Carbon-filter cartridge housing.",
+    "texture": "Dull, matte finish with a subtle woven grid visible in raking light. Charcoal seam tape creates tactile ribs running vertically and horizontally across the body. Areas showing wear appear slightly tacky from degraded membrane. Face shield is scratched and frosted in patches.",
+    "color_scheme": "Dull ochre primary with charcoal grey seam tape and RF-weld lines. Yellowing patches across chest bib and upper shoulders indicate age and exposure. Scorched rings (dark brown-black) around boot cuffs from thermal exposure.",
+    "closures": "Double-roll gasketing at wrists and ankles—designed for airtight sealing. Hood likely uses a friction-fit gasket seal at the neck. No visible buckles or zippers; the suit is a pull-over design.",
+    "distinctive_features": [
+      "Integrated polycarbonate face shield scratched and clouded from years of particulate exposure",
+      "Replaceable carbon-filter cartridge housing at mouth level",
+      "Pronounced bib panel on chest—primary contamination contact zone",
+      "RF-welded seams instead of stitching—visible as raised charcoal tape lines",
+      "Double-roll gasket cuffs at wrists and ankles",
+      "Yellowing and discoloration indicating age and accumulated radiation dose",
+      "Scorch rings around boot cuffs from thermal events"
+    ],
+    "tier_indicator": "Tier 4-5 functional/salvage. Varsen Industrial Safety is mid-market safety equipment; these suits are affordable for working-class hazmat labor but often sold second or third-hand. A pre-owned unit signals economic necessity.",
+    "cultural_context": "Worn by reactor spillway shelf workers, contamination zone laborers, and sub-grade salvagers. Signals exposure to industrial hazards, low-wage labor, and proximity to the GLMZ's decaying infrastructure. Also worn by hobbyist radiophiles and anti-corpo protest movements as anti-establishment fashion.",
+    "condition_typical": "Visibly aged and worn. Seams crack and split after 200-400 hours of use. The hood seal develops a characteristic whistle as gasket material degrades. Pre-owned units show yellowing, scorch marks, and clouded face shields. Most street units are 5-12 years past their rated service life."
+  },
+  "image_prompt": "Full-body fashion photograph of a weathered Varsen RadSeal Contamination Suit Mk-IV on an androgynous model with visible subcutaneous circuitry, standing in a flooded industrial basement beneath flickering sodium vapor lights. The suit is dull ochre with charcoal seam tape visible across shoulders and torso, hood raised with a scratched polycarbonate face shield reflecting amber light. Water ripples around scuffed boots with visible scorch marks. Background: rusted pipe scaffolding, warning trefoil symbols stenciled on concrete walls, faint hum of ventilation. Moody, desaturated color grading. High contrast. --ar 2:3 --v 6"
 }

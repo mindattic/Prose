@@ -52,5 +52,25 @@
     "Carrion Defense Works",
     "TESSERA PG-2 'Signature'",
     "The Gradient Compact"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Compact quadcopter with an aggressive militaristic stance. Four carbon-fiber rotors extend from a central hexagonal body that tapers toward sensor arrays. The frame suggests purposeful efficiency rather than consumer aesthetics—every angle serves detection capability. Integrated sensor cluster dominates the undercarriage, bristling with intake ports and analysis apertures.",
+    "dimensions": "20 cm rotor-to-rotor span, approximately 12 cm body length, 8 cm height",
+    "weight_description": "Handheld and pocketable at 0.4 kg; easily deployable from a tactical vest or equipment pouch",
+    "primary_material": "Carbon-fiber composite frame with titanium sensor housings, aircraft-grade aluminum motor mounts",
+    "finish": "Matte charcoal with anodized dark gray accents; non-reflective to minimize visual detection. Sensor ports feature brushed steel bezels. Rotor blades have subtle iridescent coating to reduce turbulence noise signature.",
+    "color_scheme": "Gunmetal gray primary, charcoal black recesses, steel gray sensor apertures. Minimal accent lighting in cold cyan/electric blue for status indicators.",
+    "interface_elements": "Micro-LED status array on dorsal surface (blue/red/amber diagnostics), recessed docking port on ventral side, three small tactile buttons for manual override, micro-USB charging port, wireless telemetry antenna (nearly invisible), sample collection cartridge bay with quick-release mechanism",
+    "distinctive_features": [
+      "Hypersensitive intake array with four asymmetric ports arranged in gradient-analysis geometry",
+      "Rotor blades etched with proprietary serration patterns for silent operation",
+      "Integrated spectrographic sensor cluster visible as darkened dome on undercarriage",
+      "Pulsing cyan indicator lights that activate during compound detection",
+      "Exposed heat-dissipation fins on sensor housing suggesting extreme processing capability",
+      "Military-grade finish with no corporate gloss—purely functional aesthetics"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS embossed on starboard rotor boom (minimal branding), FCC/UEC regulatory stamps on battery compartment, unit serial number etched on frame spine, threat-level diamond warning decal on rotor guard",
+    "condition_typical": "Active unit shows faint chemical residue on sensor apertures from recent deployments, slight propeller wear marks, condensation on lens covers after operating in humid GLMZ environments. Well-maintained units display minimal wear; field-used units show scuffed composite and sensor port patina"
+  },
+  "image_prompt": "Carrion Defense Works CSD-3 Chemical Sniffer Drone in three-quarter view on a brushed steel analysis workbench, surrounded by spectrographic readout displays. Matte gray quadcopter with four carbon rotors, hypersensitive sensor cluster visible underneath, cyan diagnostic LED glowing softly. Dramatic rim lighting from neon blue overhead fixtures casting sharp shadows. Industrial cyberpunk laboratory setting with GLMZ corporate sterility. Water droplets on nearby sensor housing. Depth of field emphasizes the drone's lethal precision and compound-detection capability. --ar 3:2 --v 6"
 }

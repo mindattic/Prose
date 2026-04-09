@@ -56,5 +56,41 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "ARCHITECT",
+    "Alper Holmberg-Dembele",
+    "Anatoliy Faye-Nkrumah",
+    "Arcturus Defense Solutions Electromagnetic DMR AEDM-3 'Gauss'",
+    "GLMZ",
+    "Nenad Vargas-Baffour",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "The Question",
+    "The Threshold",
+    "Zurab Ivanov-Appiah"
+  ],
+  "physical_description": {
+    "visual_profile": "A flattened disc hovering at eye level — minimalist and deliberately non-threatening in isolation, but unsettling when arranged in clusters. The geometry is pure function: a circular plan with shallow depth, like a UFO rendered in matte corporate materials. At first glance it reads as a sensor platform; only closer inspection reveals the flechette tubes rimming its edge.",
+    "dimensions": "18cm diameter, 4cm depth per unit",
+    "weight_description": "Lightweight and responsive in hand — 0.9kg gives it the heft of a thick hardcover book, but the hovering autonomy makes it feel weightless once deployed. The sensation is more about presence than mass.",
+    "primary_material": "Composite polymer chassis with embedded magnetic coil arrays and aluminum heat-sink ribs on the underside",
+    "finish": "Matte charcoal-gray with micro-textured surface to minimize radar reflection. Heat vents on the underside show brushed anodized aluminum. Worn units show fingerprint smudges and minor scuff marks from deployment/retrieval.",
+    "color_scheme": "Charcoal gray primary with silver-aluminum accents around the underside vents and flechette tube housings. Clarity Meditation branding appears as a subtle white circular logo — a meditation circle with a crosshair — on the top surface.",
+    "grip_texture": "Not designed for sustained gripping — deployment handles are rubberized silicone finger-hold recesses on the edge, shaped for quick extraction from transport cases",
+    "distinctive_features": [
+      "24 evenly-spaced flechette tube apertures around the outer rim — barely visible as pinpoint circles, 3mm diameter each",
+      "Dual LED status indicators (green/amber/red) on top surface indicating power, lock status, and threat detection",
+      "Linear magnetic accelerator coils visible as thin silver traces through translucent sections of the rim",
+      "Recessed magnetic docking nodes on the underside for stationary hovering lock",
+      "Faint grid pattern etched into the polymer surface — cable guide marks from manufacturing",
+      "Impact-resistant edge bevels with minor scuff marks from field handling"
+    ],
+    "manufacturer_markings": "Clarity Meditation logo (meditation circle with crosshair) on top surface in white. Serial number and subscription QR code stamped on underside. Tessera Corporation ThreatLogic v7.1 licensing label on rear quadrant in small white text. FCC-equivalent compliance marking on rim.",
+    "condition_typical": "Well-maintained corporate units appear nearly pristine, with minimal dust accumulation. Field-deployed clusters show microscopic scarring from near-miss flechette impacts and dust infiltration around the vent grilles. Units with lapsed licenses often display warning stripe decals (yellow/black) on the top surface."
+  },
+  "image_prompt": "Product photography of the RCID-4 Thornwall drone hovering 15cm above a dark matte black surface, angled 35 degrees to show both top logo and underside magnetic coils. Dramatic side-lighting from the left reveals the subtle rim contours and flechette tube apertures as pinpoint reflections. The drone is rendered in charcoal matte polymer with silver aluminum heat-sink details. A second unit is slightly out-of-focus in the background at 60cm distance to suggest cluster deployment. Overhead mood: cold corporate aesthetic with hints of paranoia. High contrast lighting emphasizes the minimalist, non-threatening geometry while the flechette tubes catch light like concealed threats. Cyberpunk 2226 aesthetic with visible subscription label on underside. Shallow depth of field. --ar 3:2 --v 6"
 }

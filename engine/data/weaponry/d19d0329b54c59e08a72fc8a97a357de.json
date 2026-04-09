@@ -46,5 +46,40 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "12.7x55mm Subsonic Caseless Round SCR-127",
+    "Adaeze Volkov-Tuilagi",
+    "Arcturus Defense Solutions Neural PDW ANPD-1 'Impulse'",
+    "Deniz Nyberg-Sarpong",
+    "Ebele Medina-Quaye",
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "Nika Svensson-Kone",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "TESSERA TC-3 'Crucible'",
+    "Tshiamo Vukić-Arellano"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist submachine gun with the aesthetic of industrial machinery—chunky, monolithic, and unapologetically functional. The bullpup layout compresses the weapon into a blocky profile that reads as a sealed steel-and-polymer wedge rather than a traditional firearm. Aggressive angular lines and reinforced edges give it the appearance of something designed to survive impact rather than minimize weight.",
+    "dimensions": "Overall length: 58cm, width: 8.5cm (including rail mounts), height: 12cm (grip to top cover). Barrel length: 18cm, recessed within the reinforced housing.",
+    "weight_description": "Dense and substantial—2.8kg feels purposefully heavy, conveying durability over agility. The weight distributes forward toward the sealed action housing, creating a hammer-like center of mass. Balanced enough for augmented operators; punishing for baseline humans in sustained fire.",
+    "primary_material": "Reinforced polymer-steel composite shell with stress-relief ribs molded into the chassis. Internal action housing is hardened steel. Barrel is chrome-lined steel.",
+    "finish": "Battleship matte gray-black with visible wear patterns along edges and contact points. The polymer shows fine scratch marks from industrial environments; the steel components have a dull, oxidation-resistant non-reflective coating. No gloss—purely utilitarian.",
+    "color_scheme": "Charcoal matte black primary body with gunmetal gray steel components visible at breech cover and rail mounts. Minimal contrast—designed for low visibility in industrial settings.",
+    "grip_texture": "Textured reinforced polymer grip with aggressive crosshatch pattern for gloved hands. Not particularly ergonomic for unaugmented users; shaped for stability under recoil rather than comfort. Cool to the touch, slightly tacky.",
+    "distinctive_features": [
+      "Integrated accessory rail along top and sides—thick, recessed 1913 picatinny sections that appear welded into the chassis",
+      "Hydraulic buffer access port on left side with faint pressure-relief markings",
+      "Sealed charging handle recessed flush with the receiver to minimize snag points",
+      "Heat vents along the barrel shroud arranged in geometric grid pattern",
+      "Large, heavily-beveled magazine well with reinforced catch—magazine drops with mechanical finality",
+      "Cinder-block-like profile with load-bearing corner ribs extending from stock to muzzle",
+      "Faint witness marks and scoring on the polymer from industrial contact",
+      "No traditional iron sights—mounting points designed for optics integration"
+    ],
+    "manufacturer_markings": "Crucible Industries logo stamped in serif font on the left side of the receiver: stylized 'C' and 'I' in a shield. 'CDW-8 BARRICADE' engraved below in block capitals. Serial number appears on a small steel data plate inset flush with the stock. Caliber (.10MM CASELESS HEAVY SUBSONIC) printed on the charging handle cover.",
+    "condition_typical": "Usually field-worn but mechanically immaculate. The polymer accumulates visible scratches, scuff marks, and microabrasions from exoframe mounting and industrial environments. The steel components show patina and carbon fouling around the breach. Despite cosmetic abuse, the weapon functions flawlessly—designed to look like it's been through hell and still works."
+  },
+  "image_prompt": "Industrial-grade submachine gun photographed in three-quarter view resting on brushed steel workbench against dark charcoal background. The Crucible Industries CDW-8 Barricade lies diagonally with charging handle facing up, showing the sealed breech cover and integrated rail system. Hard dramatic side-lighting from the left emphasizes the reinforced polymer-steel shell texture and angular geometry—shadows pool in the heat vents and gaps. One gloved hand (augmented forearm visible, minimal chrome detail) steadies the stock, showing scale. The magazine (metallic caseless round visible through witness holes) sits adjacent. Wear marks and contact scuffs visible on the matte finish. Cool tungsten lighting. Shallow depth of field blurs the bench edge. Cyberpunk industrial aesthetic—no chrome excess, pure functional brutalism. --ar 3:2 --v 6"
 }

@@ -44,5 +44,25 @@
     "The Question",
     "The Shelf",
     "VitaCore FlowGuard Hemodynamic Regulator"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A floor-length formal gown with an ethereal, fluid silhouette that seems to shift between solid and translucent depending on angle and light. The upper body is fitted and elegant, flowing into a dramatic skirt that moves like liquid mercury. The hem glows with a soft, rhythmic bioluminescent pulse that creates an almost living quality to the garment.",
+    "fit": "Tailored to the individual wearer via biometric scan — form-fitting through the bodice and torso, then flowing and voluminous through the skirt. Fully customizable to accommodate geneware modifications (tail vents, wing slits, horn clearance, fur-friendly lining).",
+    "primary_material": "Proprietary mirrorweave silk-analog (Solenne Atelier exclusive) with integrated TESSERA-licensed bioluminescent thread throughout the hem and lower panels",
+    "texture": "Smooth, fluid drape with an almost liquid quality to the touch. The mirrorweave surface is slightly cool and has a subtle sheen that catches light unpredictably. The bioluminescent hem threads create fine linear texture details.",
+    "color_scheme": "Deep iridescent base that shifts between jewel tones — sapphire, violet, emerald, and silver — depending on viewing angle and ambient light. The hem glows in soft cyan-white bioluminescence that pulses like a heartbeat.",
+    "closures": "Invisible magnetic seam closures along the side/back, seamlessly integrated into the garment design for an unbroken silhouette",
+    "distinctive_features": [
+      "Mirrorweave fabric that creates a shimmering, angle-dependent iridescence",
+      "Bioluminescent hem with biological thread pulsing at resting heartbeat rhythm (approximately 60 bpm)",
+      "BCI-responsive color modulation allowing real-time iridescent palette shifts via neural interface",
+      "Custom biometric tailoring for individual body profile",
+      "Geneware accommodation features (tail vents, wing slits, horn clearance, fur-compatible lining) as standard options",
+      "Solenne Atelier signature invisible branding at interior neckline"
+    ],
+    "tier_indicator": "Tier 1 luxury — extreme wealth signal. Cost equivalent to 12+ months of Tier 2 annual earnings",
+    "cultural_context": "Spire status object worn at elite corporate galas and high-society events. Communicates wealth, access to exclusive biotech fabrication, neural augmentation capability, and confident social positioning. The distinctive bioluminescent signature makes the wearer immediately recognizable and memorable — a feature intentional to Solenne's design philosophy.",
+    "condition_typical": "Pristine and meticulously maintained, though the bioluminescent thread may show subtle color variation with age. Each garment is typically worn only to curated events."
+  },
+  "image_prompt": "A striking cyberpunk gala gown on a high-fashion model with subtle augmentation visible (neural port, iridescent eyes, or minimalist chrome detailing). The mirrorweave fabric ripples with deep iridescent blues, violets, and silvers as it catches moody theatrical lighting. The hem pulses with soft cyan-white bioluminescence in a darkened setting, creating a heartbeat-rhythm glow that trails along the floor. Shot in an upscale dystopian venue — all dark marble and neon accent lighting. Model's posture is confident and commanding. Close detail shot of the luminous hem showing the living quality of the bioluminescent thread. Cinematic, otherworldly, dripping with Tier 1 wealth and neural-integrated luxury --ar 2:3 --v 6"
 }

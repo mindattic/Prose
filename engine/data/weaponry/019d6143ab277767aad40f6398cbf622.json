@@ -54,5 +54,39 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Iowan Behemoth — 'Palisade'",
+    "Osvaldo Mensah-Kovalenko",
+    "Ouroboros Energy",
+    "Ringo Corponation",
+    "Sustrel",
+    "The Peninsula"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist energy weapon with an exaggerated barrel-to-body ratio, resembling a hybrid between a sniper rifle and industrial plasma cutting equipment. The extended barrel dominates the silhouette; the receiver and magazine assembly appear almost secondary. The shoulder brace extends rearward like a skeletal frame, giving it an insectoid, asymmetrical appearance. Overall impression: purpose-built, uncompromising, menacing.",
+    "dimensions": "94cm barrel length, 38cm shoulder brace when extended, total assembled length approximately 156cm. Receiver body approximately 32cm. Width across brace: 18cm.",
+    "weight_description": "Hefty and front-heavy due to the extended barrel and plasma containment systems. Estimated 9.1kg shifts the balance forward; requires muscular grip and shoulder stability. Feels like a weapon that demands respect and proper stance.",
+    "primary_material": "Reinforced steel alloy frame with carbon-composite barrel cladding for thermal management. The containment coil housing is brushed titanium. Shoulder brace is modular steel tubing with vibration-damping polymer inserts.",
+    "finish": "Matte industrial black with brushed steel accents. Visible heat-dissipation fins along the barrel show a worn gunmetal gray patina. Plasma port at barrel tip has a faint iridescent oil-slick sheen from residual electromagnetic field scorching.",
+    "color_scheme": "Primary: deep matte black. Accents: brushed steel gray and gunmetal. Status indicators glow amber/red along the receiver. Subtle Dhaka Infrastructure Partners house colors (deep blue/teal) appear on the receiver plate.",
+    "grip_texture": "Textured polymer grip with aggressive checkering. The shoulder brace uses rubberized steel tubing wrapped in worn tactical webbing. Metal contact points are bare and slightly corroded from sweat and atmospheric exposure.",
+    "distinctive_features": [
+      "Oversized barrel with visible helical plasma containment coils running its length",
+      "Heat-dissipation fins arranged in a radial pattern along the distal barrel section",
+      "Iridescent plasma port at barrel tip with faint corona discharge marks",
+      "Magnetic containment field stabilizers mounted on the receiver (visible as raised rectangular housings)",
+      "Ringo RC-15 power cell magazine positioned low on the receiver, glow-marked with charge status LEDs",
+      "Recessed safety lever and firing selector on the left side, worn shiny from use",
+      "Brass contact points where the brace connects to the receiver, green-oxidized with age",
+      "Etched depth markers along the barrel for range calculation",
+      "Visible scorch marks and plasma splash residue around the muzzle from previous discharges"
+    ],
+    "manufacturer_markings": "Dhaka Infrastructure Partners logo (stylized structural beam) stamped on the receiver plate in subdued gray. Serial number engraved in micro-text along the barrel root. 'ETCL-9 IRONLUNG' designation stenciled in technical sans-serif on the shoulder brace. Ringo Corporation subsidiary mark embossed near the power cell housing.",
+    "condition_typical": "Battle-worn and field-maintained. The weapon shows regular use: scorching around the plasma port, micro-stress fractures in the barrel cladding, and accumulated carbon deposits in the cooling fins. Professionally maintained but not pristine — this is a tool in active service, not a showpiece."
+  },
+  "image_prompt": "Professional product photography of the Electrothermal Compression Lance ETCL-9 'Ironlung' mounted on a dark matte black display stand, angled 45 degrees to emphasize the barrel length and skeletal shoulder brace. Dramatic side-lighting from the left reveals heat-scorching and plasma residue on the barrel tip. The brushed steel and titanium accents catch cool blue-white highlights; the matte black polymer absorbs shadow. Visible Dhaka Infrastructure Partners and Ringo Corporation markings on the receiver. Background: dark gray concrete wall with faint grid pattern suggesting an industrial testing facility. Shallow depth of field with sharp focus on the plasma port and power cell LEDs. Cyberpunk aesthetic: cold, industrial, purposeful. --ar 3:2 --v 6"
 }

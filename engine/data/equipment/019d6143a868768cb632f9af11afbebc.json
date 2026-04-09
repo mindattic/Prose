@@ -83,5 +83,26 @@
     "Tessera Nexus Town Car",
     "The Heritage Vault",
     "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A full-body powered exoskeleton with an unmistakably industrial aesthetic. The frame resembles a heavily reinforced mechanical skeleton wrapped in hardened composite plating. The design prioritizes function over streamlining — visible hydraulic cylinders, exposed joint mechanisms, and modular armor panels create a utilitarian, almost brutalist silhouette. The wearer appears encased rather than enhanced, with the frame's mechanical components visible at articulation points.",
+    "dimensions": "Approximately 220cm tall with wearer (adds 15cm). Torso coverage spans 60cm width, arms extend 80cm, legs support full leg height. Bulky profile roughly 40cm front-to-back at the widest point.",
+    "weight_description": "42kg total frame weight — requires powered assistance to wear; unmovable without the motor system engaged. The distributed load design spreads weight across legs and torso frame.",
+    "primary_material": "Hardened polymer-composite shell exterior; titanium alloy skeletal structure underneath; hydraulic micro-actuators and steel fastening systems.",
+    "finish": "Matte industrial coating with visible wear patterns. Panel surfaces show tool marks, slight discoloration from repeated field repairs. Hydraulic components have a brushed metal finish with minor oxidation. No glossy surfaces — purely functional weathered aesthetic.",
+    "color_scheme": "Charcoal gray composite plating as primary color. Bare titanium and steel framework shows through at joints in gunmetal silver. Red accent lines trace hydraulic lines and power conduits. Safety orange or high-visibility warning stripes on shoulder and knee articulation points.",
+    "interface_elements": "Mechanical pressure gauges mounted on shoulder plates (analog readouts). Power status indicator lights (amber and green LEDs) on chest panel. Simple pushbutton controls on wrist gauntlets for grip strength modulation. Fuel-cell access panel on lower back with standardized connection ports. Modular fastening points visible across all panels — socket-wrench compatible bolts and clips.",
+    "distinctive_features": [
+      "Visible hydraulic cylinders running along limbs with pressure relief valves",
+      "Standardized modular armor panel design with obvious seams and fasteners",
+      "Mechanical joint articulation with exposed pivot points and bearing surfaces",
+      "Heavy reinforced plating on torso front with stepped armor configuration",
+      "Industrial-grade hydraulic hoses in bundled runs along frame geometry",
+      "Manual adjustment mechanisms for fit tolerance visible at waist and shoulders",
+      "Safety warning decals and regulatory compliance markings across panels"
+    ],
+    "manufacturer_markings": "Large 'RINGO CORPONATION' stenciled logo across upper chest in sans-serif font. Smaller regulatory stamps indicating NIJ Level IV (torso) and Level III (limbs) ratings. Serial number plate on right shoulder. Maintenance log placard on lower back.",
+    "condition_typical": "Typically worn with visible signs of field use — minor scuffs and dents in composite panels, occasional hydraulic fluid seepage at connection points, dirt accumulation in joint crevices. Well-maintained frames show organized repair history; heavily used frames display multiple replaced panel sections in slightly different material grades or finishes."
+  },
+  "image_prompt": "Product photography of a full-body powered exoskeleton suit mounted on a maintenance workbench in a gritty industrial workshop. The frame is upright, empty of wearer, illuminated by harsh overhead fluorescent and blue accent lighting. Visible hydraulic cylinders along limbs glow faintly from internal pressure gauges. Background shows tool racks, concrete floor, oil stains. Foreground includes scattered tools — socket wrenches, torque wrench, hydraulic fluid canister with Ringo Corponation branding. Hard-edged cyberpunk aesthetic, metallic and utilitarian, shot at 45-degree angle emphasizing the frame's imposing height and mechanical complexity. Dramatic shadows on composite plating accentuate panel seams and joint mechanisms. --ar 3:2 --v 6"
 }

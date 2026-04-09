@@ -131,5 +131,12 @@
     "posture_movement": "Relaxed but never truly at rest. Eyes track exits and ambient movement. Sits with spine straight, hands visible. Moves with deliberate economy — no wasted gestures, no nervous fidgeting. Gives impression of someone listening more than speaking.",
     "clothing_style": "Tier 3-4 functional. Unmarked grey synthetic jacket (tech-weave, practical water resistance), plain dark compression shirt underneath. Charcoal cargo pants with reinforced seams and subtle tech pockets. Military-grade boots, worn but maintained. No logos, no affiliation markers. Everything is replaceable and forgettable. Single silver ring on right index finger — appears functional, possibly a discrete data interface or auth token."
   },
-  "image_prompt": "cyberpunk character portrait, lean nonbinary figure with East African-Japanese-Hispanic heritage, short black hair with silver at temples, deep brown eyes, warm medium brown skin, angular features, small old scar on jawline, dressed in unmarked grey tech-weave jacket and dark compression shirt, minimal aesthetic, professional fixer appearance, sharp intelligent expression, cool blue-grey lighting with subtle rim light, moody and alert, high contrast, photorealistic with cyberpunk mood, professional character headshot, intricate detail on face, 3/4 perspective --ar 2:3 --v 6"
+  "image_prompt": "cyberpunk character portrait, lean nonbinary figure with East African-Japanese-Hispanic heritage, short black hair with silver at temples, deep brown eyes, warm medium brown skin, angular features, small old scar on jawline, dressed in unmarked grey tech-weave jacket and dark compression shirt, minimal aesthetic, professional fixer appearance, sharp intelligent expression, cool blue-grey lighting with subtle rim light, moody and alert, high contrast, photorealistic with cyberpunk mood, professional character headshot, intricate detail on face, 3/4 perspective --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 33.9,
+    "Middle Eastern": 23.4,
+    "East Asian": 20.9,
+    "Sub-Saharan African": 20.3,
+    "Northern European": 1.5
+  }
 }

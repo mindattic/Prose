@@ -46,5 +46,40 @@
     "non-ferrous",
     "briefcase"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Arcturus PG-3 'Aegis'",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "Crucible UB-2 'Umbrella'",
+    "Eshe Pena-Baah",
+    "Fanta Kato-Adomako",
+    "HOLLOW SIGNAL // RADIO",
+    "IRONLIMB VertebraCore T7 Spinal Column",
+    "Kairos",
+    "Nodar Kuznetsov-Adu",
+    "Praevex",
+    "Tessera Corponation",
+    "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
+    "Tessera Nexus Town Car",
+    "Vantablack BC-1 'Briefcase'"
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively elegant black rod, barely thicker than a pen, with the presence of high-end industrial design rather than a weapon. Its refined proportions suggest a luxury writing instrument or precision tool — something you'd expect to see clipped to an executive's desk, not wielded in combat.",
+    "dimensions": "38 cm length, 12 mm diameter. The active electrode array occupies the final 4 cm of the tip.",
+    "weight_description": "Featherlight in hand — 0.19 kg — with a balance point near the grip that makes it feel almost weightless during deployment. Deceptive: the carbon-fiber construction provides rigidity without heft.",
+    "primary_material": "Carbon-fiber composite (non-ferrous), engineered to defeat ferrous metal detection entirely.",
+    "finish": "Matte black throughout, with a single brushed-steel accent ring positioned 6 cm from the base. The accent ring catches light subtly, suggesting careful manufacturing rather than aggressive aesthetics.",
+    "color_scheme": "Matte charcoal black with brushed steel ring. The electrode tip is a faint silver-grey where the carbon-fiber gives way to the contact array.",
+    "grip_texture": "Textured polymer grip section (approximately 10 cm from base), designed for secure but comfortable palming. The grip material has a subtle diamond-knurl pattern — expensive, tactile, professional.",
+    "distinctive_features": [
+      "Electrode array at tip appears as a faint segmented ring, almost invisible unless examined closely",
+      "Single brushed-steel accent ring serves both aesthetic and functional purpose (charging contact interface)",
+      "No visible seams, vents, or indicator lights — design aggressively minimalist",
+      "Tapered slightly toward the tip, creating impression of a writing instrument",
+      "Carbon-fiber weave visible under matte coating as fine lines running length of shaft"
+    ],
+    "manufacturer_markings": "Small TESSERA logo (Φ symbol integrated into design) laser-etched on the grip section, barely visible without direct light. Serial number etched on the opposite side, equally discreet. No model designation visible on the device itself.",
+    "condition_typical": "Pristine to lightly used. TESSERA clientele maintain these with the care afforded to luxury accessories — microfiber cloth included with purchase. Battle-worn examples are rare; the Silhouette is a surprise weapon, not a workhorse."
+  },
+  "image_prompt": "Product photography of a black carbon-fiber rod, 38 cm long, 12 mm diameter, lying on dark gunmetal surface next to a professional leather briefcase. Dramatic side-lighting from upper left, casting sharp shadows. Close detail of the brushed-steel accent ring near the grip, showing fine surface texture. The rod appears almost like a luxury pen next to the briefcase. Cyberpunk aesthetic: sleek, minimalist, corporate precision. Slightly overexposed highlights on the steel ring. TESSERA branding visible but subtle on the grip. Professional product shot, high resolution, studio lighting, --ar 3:2 --v 6"
 }

@@ -43,5 +43,35 @@
     "corridor-defense",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Djeneba Park-Traore",
+    "GLMZ",
+    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
+    "Narrowcast",
+    "Synaptrel",
+    "The Corridor",
+    "The Shaft"
+  ],
+  "physical_description": {
+    "visual_profile": "A towering polearm with an aggressive forward profile—a sleek, tapering ceramic spearhead mounted on a nearly invisible carbon-lattice shaft that catches light like translucent crystal. The head dominates despite its modest 25cm length, appearing to float on air due to the shaft's extreme thinness relative to its 2.5-meter reach. At rest, it presents like a conductor's baton scaled to lethal proportions.",
+    "dimensions": "250 cm total length, 25 cm spearhead length, 4.2 cm shaft diameter at widest grip section, narrowing to 2.1 cm at the coupling point",
+    "weight_description": "Deceptively light and perfectly balanced—1.8 kg distributes along the full length, eliminating the top-heavy feel of traditional pikes. Feels almost weightless in trained hands during slow movements, but the momentum builds with speed. Handles like a fencing foil scaled up, not a sledgehammer.",
+    "primary_material": "Carbon-lattice composite shaft (visible as subtle geometric tessellations under certain angles), Ablonite-KR ceramic spearhead (crystalline appearance)",
+    "finish": "Shaft: matte charcoal with micro-texturing for grip security, almost invisible until light strikes it at angles. Spearhead: high-gloss ceramic with faint amber undertones where the capacitor matrix is visible beneath translucent layers. Minimal surface treatment—function-forward aesthetic.",
+    "color_scheme": "Charcoal gray shaft transitioning to pale amber/golden ceramic at the head. The spearhead's tip is knife-edge silver where the Ablonite-KR comes to its final point. Arcturus's chrome-silver manufacturer badge sits at the grip midpoint.",
+    "grip_texture": "Wrapped in carbonized grip tape with subtle cross-hatching—friction-optimized, slightly tacky to the touch, designed for gloved hands. The tape transitions from aggressive grip at the primary control section to smoother texture toward the butt end.",
+    "distinctive_features": [
+      "Spearhead faceting creates visible crystalline geometry, suggesting internal capacitor architecture",
+      "Faint blue-green phosphorescence along spearhead edges (capacitor charge indicator—visible in low light)",
+      "Three equidistant micro-vents running down the shaft near the head (thermal dissipation for charge cycling)",
+      "Chrome Arcturus Defense Solutions emblem at grip, with serialized batch marking below",
+      "Tapered butt end with reinforced strike point (anti-personnel use possible)",
+      "Subtle wear patterns on spearhead facets suggest contact-scoring from previous discharges"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions chrome logo engraved at grip center, 3cm wide. Serial plate (2cm × 1cm) stamped below grip with batch number and discharge count meter. Model designation 'CP-3' stamped along the shaft in small sans-serif at the 100cm mark.",
+    "condition_typical": "Field-maintained and reliable. Spearhead shows light amber oxidation from repeated capacitor cycling. Grip tape worn smooth in the primary control area from regular use. No major damage typical—the weapon's design prioritizes durability. Operators keep the spearhead electrostatically clean."
+  },
+  "image_prompt": "Product photography: Arcturus Defense Solutions Charged Pike CP-3 'Longreach' held vertically in black tactical glove against dark matte black surface. Dramatic side-lighting from left reveals the carbon-lattice shaft's subtle geometric tessellations and the Ablonite-KR spearhead's crystalline faceting with faint amber glow. Cool blue accent light along the spearhead edges suggesting dormant capacitor charge. Tight crop on upper third showing the lethal ceramic point and manufacturer emblem. Cyberpunk aesthetic: clean, functional, minimalist. 35mm product photography style. --ar 3:2 --v 6"
 }

@@ -60,5 +60,44 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Aybek Alvarez-Okonkwo",
+    "GLMZ",
+    "Hearthstone Firearms Single-20 'Farmhand'",
+    "Helix Biosystems",
+    "Lacunal",
+    "Stonepath Logistics",
+    "Street-Loaded Piezoelectric Overcharge Bead PZO-4",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "TESSERA PG-2 'Signature'",
+    "The Nearfield",
+    "The Question",
+    "The Resonance Communion",
+    "Vantablack-CNX",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively compact semi-automatic handgun with clinical precision engineering. The silhouette reads as unremarkable — almost forgettable — until you notice the slightly bulbous barrel assembly and the faint luminescent quality of the grip housing. It's designed to blend into a crowd, to disappear in a hand.",
+    "dimensions": "Length: 18.2 cm, Width: 4.1 cm (slide), Height: 13.4 cm (grip to rear sight). Barrel: 8.7 cm.",
+    "weight_description": "Balanced and light — 0.7 kg feels almost insubstantial, like holding a expensive piece of precision electronics rather than a weapon. The weight distribution sits forward, centered over the charge pack, making it naturally point-stable.",
+    "primary_material": "Matte black aerospace-grade polymer composite (slide and frame), brushed titanium internal actuators visible through small vents near the trigger guard. Barrel assembly is reinforced carbon composite with embedded piezoelectric crystal lattice.",
+    "finish": "Matte black DLC (Diamond-Like Carbon) coating on all exposed metal. The grip housing features a barely perceptible iridescent blue tint — a side effect of the piezoelectric charge matrix visible through semi-translucent polymer. Extremely well-maintained, almost sterile appearance.",
+    "color_scheme": "Dominant matte black with sapphire-blue accent in the grip housing. Minimal chrome detailing around the trigger and safety selector.",
+    "grip_texture": "Rubberized polymer with subtle diamond-pattern knurling. Slightly tacky surface that grips even sweating palms without feeling viscous. Cool to the touch, almost synthetic-feeling.",
+    "distinctive_features": [
+      "Oversized, slightly tapered barrel with subtle cooling vents near the muzzle",
+      "Faint blue glow from charge pack visible through translucent grip panels",
+      "Minimalist trigger guard — angular, precise, industrial",
+      "No safety lever — instead a small, unlabeled toggle switch on the slide (charge selector)",
+      "Rear sight is a simple groove rather than traditional sights",
+      "Magazine well has biomechanical locking detent",
+      "Tiny piezoelectric indicator lights (amber/red) near the charging port on frame",
+      "Venting ports near the slide-frame junction that faintly crackle with static when powered",
+      "Completely absent muzzle brake or flash hider — unnecessary given the subsonic discharge"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS stamped vertically on the left slide in small, precise sans-serif lettering. Serial number engraved into the frame below the safety selector. A small circular Helix DNA-strand logo appears on the grip panel, subtly integrated into the translucent polymer.",
+    "condition_typical": "Immaculate. This is a tool maintained by professionals. No wear, no patina, no field damage. It's either freshly cleaned or freshly purchased. The kind of object that looks wrong if it has a scratch."
+  },
+  "image_prompt": "Product photography of the Capillary Disruption Pistol CDP-2 'Bruiser' — matte black compact handgun with sapphire-blue grip housing containing faintly glowing piezoelectric charge matrix. Weapon positioned on dark brushed steel surface, slight 45-degree angle. Dramatic side-lighting from cool blue-white LED source creating subtle highlights on the barrel vents and charge pack, with shadows emphasizing the clinical precision engineering. Close-up detail showing the minimalist trigger guard and unlabeled charge selector. Secondary shot of the weapon held in augmented chromehand wearing tactical glove, showing the perfect balance and grip. Clean, sterile aesthetic — industrial medical device rather than traditional firearm. Hyper-detailed materials: carbon composite texture, titanium internal actuators visible through vents, DLC matte coating catching light. Cyberpunk corporate assassin tool aesthetic. --ar 3:2 --v 6"
 }

@@ -37,5 +37,25 @@
   "related_entities": [
     "Bioacoustic Communication Membrane",
     "Pikasso Wemba-Þórðarson"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist black choker that sits snugly against the base of the throat. From a distance, it appears as nothing more than a high-fashion neckpiece—elegant and understated. Up close, the surface reveals subtle sensor nodes and micro-mesh patterns barely visible against the matte black finish. Worn by operatives, fixers, and corpo intelligence assets who need deniable communication.",
+    "fit": "Compression-fit around the neck, conforming to the wearer's throat contours without restricting movement. Designed for extended wear without discomfort. Sits approximately 1-2 inches below the jawline.",
+    "primary_material": "Ballistic-grade synthetic polymer core with integrated bio-reactive sensor mesh and carbon-weave threading. The outer surface is treated with light-absorbing nano-coating to minimize reflectivity.",
+    "texture": "Smooth matte finish with imperceptible raised nodes along the interior contact points where microphones nest against the skin. The underside is slightly tacky to prevent slipping from perspiration or augmentation fluid.",
+    "color_scheme": "Matte black throughout, with occasional silver or gunmetal accent nodes barely perceptible in direct light. Some street models feature faint cyberpunk iconography laser-etched into the band.",
+    "closures": "Magnetic snap closure on one side, hidden beneath the choker's seamless design. Friction-fit adjustment for perfect throat contour.",
+    "distinctive_features": [
+      "Embedded subvocal microphone array (4-6 nodes)",
+      "Wireless neural-link compatible",
+      "Sound dampening internal lining to prevent acoustic feedback",
+      "Minimal visible tech—designed for plausible deniability",
+      "Moisture-resistant for high-stress operations",
+      "Tangent Audio logo subtly embossed on inner surface only"
+    ],
+    "tier_indicator": "Tier 1-2 corpo luxury / Tier 3 professional operative. Premium black-market variants reach Tier 2 pricing. Street knockoffs exist at Tier 4-5 but lack reliability.",
+    "cultural_context": "Worn by corporate intelligence operatives, undercover fixers, military wetwork teams, and anyone conducting sensitive negotiations where audio surveillance is a threat. Signals expertise, operational security awareness, and access to high-end comms gear. Rarely worn openly by legitimate professionals—possession is often incriminating.",
+    "condition_typical": "Pristine when new; develops subtle wear patterns (faint neck indentation marks, minor micro-scratches) with heavy use. Well-maintained units show no visible degradation. Heavily-used street models may show sensor drift or magnetic closure fatigue."
+  },
+  "image_prompt": "Close-up fashion photograph of a matte black subvocal choker on the neck of a cyberpunk operative model, shot from a low angle emphasizing the throat contact. Model has subtle augmentation traces (faint chrome jaw definition, bioluminescent eye contacts). Choker sits snugly against the base of the throat, nearly invisible against skin. Moody blue-and-amber neon backlighting from urban environment. Dark background showing blurred cityscape of the GLMZ. Shallow depth of field focuses on the choker's surface details and the wearer's calm, focused expression. Aesthetic: covert ops, high-tech espionage, chrome and shadow. --ar 2:3 --v 6"
 }

@@ -335,5 +335,12 @@
     "posture_movement": "Moves with economical precision — no wasted motion, no flourishes. Weight distributed low, knees soft, hands where they can be useful. In social situations, she listens more than she speaks, body angled slightly away as if prepared for exit. Uncomfortable in stillness; her fingers often move in muscle-memory patterns — checking, counting, assessing.",
     "clothing_style": "Tier 3-4 pragmatism. Insulated jacket (charcoal gray, reinforced elbow and shoulder panels from Yuki-Corp tactical line), durable black cargo pants with thigh pocket for field tools, unmarked boots that have been resoled twice. Neutral colors, no logos beyond functional branding. A worn leather jacket over everything when working. Her clothes are built for movement and concealment, not status — the uniform of someone who knows the difference between looking dangerous and being dangerous."
   },
-  "image_prompt": "cyberpunk portrait of a 45-year-old woman with Turkish-West African-Iberian heritage, stocky muscular build, dark brown hair with silver threading pulled back in a tight braid, alert dark eyes, warm medium brown skin with olive undertones, sharp cheekbones, scar running from mouth corner to jawline, visible gunmetal gray cyberears with directional microphones flush against skull, dressed in charcoal insulated tactical jacket and black cargo pants, neon-lit underground venue setting with strobing purple and cyan light, professional spy-thriller mood, cinematic noir lighting with rim light on the cyberear implants, gritty and real, worn and competent, --ar 2:3 --v 6"
+  "image_prompt": "cyberpunk portrait of a 45-year-old woman with Turkish-West African-Iberian heritage, stocky muscular build, dark brown hair with silver threading pulled back in a tight braid, alert dark eyes, warm medium brown skin with olive undertones, sharp cheekbones, scar running from mouth corner to jawline, visible gunmetal gray cyberears with directional microphones flush against skull, dressed in charcoal insulated tactical jacket and black cargo pants, neon-lit underground venue setting with strobing purple and cyan light, professional spy-thriller mood, cinematic noir lighting with rim light on the cyberear implants, gritty and real, worn and competent, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 30.4,
+    "Northern European": 28.1,
+    "Middle Eastern": 25.5,
+    "Sub-Saharan African": 10.0,
+    "Southeast Asian": 6.0
+  }
 }

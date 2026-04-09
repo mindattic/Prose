@@ -38,5 +38,32 @@
     "tier_3",
     "premium"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Idris Forsberg-Quaye",
+    "LifeWire SolarShield UV Dermal Protection Layer",
+    "Patient Zero",
+    "Ringo HardLight Architectural Barrier System",
+    "Volkov-Saito Precision VS-R8 'Verdict'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, compact handheld projector resembling a premium tactical flashlight crossed with medical instrumentation. The cylindrical body tapers slightly toward the emitter end, with an ergonomic grip that dominates the lower two-thirds. When activated, a brilliant disc of cyan-tinged hardlight materializes perpendicular to the axis—a semi-transparent barrier that shimmers with faint internal refraction patterns, like frozen aurora.",
+    "dimensions": "Handle: 16 cm length, 4.2 cm diameter. Active shield disc: 60 cm diameter when projected.",
+    "weight_description": "Deceptively light in hand—320 grams feels almost insubstantial for something that generates solid light. The weight distribution is balanced toward the lower grip, making it feel wieldy even during rapid deployment.",
+    "primary_material": "Aerospace-grade carbon composite body housing the photonic projection array, with embedded quantum capacitor cells visible through semi-translucent polymer sections along the barrel.",
+    "finish": "Satin brushed gunmetal with anodized aluminum accents. The emitter end is polished to mirror-bright finish, designed to focus the hardlight projection array.",
+    "color_scheme": "Primary: neutral gunmetal gray with brushed silver highlights. Accent: soft cyan LED charging indicators along the grip ridge. When active, the projected shield glows soft electric blue-white with spectral diffraction at the edges.",
+    "grip_texture": "Rubberized textured polymer with subtle diamond-pattern grip panels. Contoured for one-handed operation with an intuitive pressure-activation trigger integrated into the thumb rest.",
+    "distinctive_features": [
+      "Transparent polycarbonate viewport running along the barrel—reveals the pulsing quantum capacitor cells within",
+      "Recessed grip-activation trigger with tactile feedback",
+      "Three small LED indicators (power status, charge level, overheat warning) clustered near the emitter",
+      "Precision-machined focus ring around the emitter for calibration",
+      "Subtle cooling vents as thin slots along the barrel to manage photonic projection heat",
+      "Engraved depth-of-field distance markers (in centimeters) etched below the grip"
+    ],
+    "manufacturer_markings": "Sterling-Nakamura logo embossed on upper grip in brushed chrome. Certification hologram (Tier 3+ licensed) inlaid into grip panel. Serial number laser-etched on the polished emitter rim. Small military-heritage insignia stamped near the base of the barrel—a nod to the PA-7's hardlight barrier ancestry.",
+    "condition_typical": "Factory-fresh units are pristine and mirror-polished. Field units show minor scuffing on the grip and faint heat-discoloration around the emitter from repeated photonic projection cycles. Well-maintained examples retain their mirror finish; heavy-use units develop fine scratches and a frosted patina on the barrel."
+  },
+  "image_prompt": "Product photography of a Sterling-Nakamura PersonalAegis PA-7 'Rampart' handheld hardlight projector. Sleek gunmetal-gray cylindrical device, 16cm tactical flashlight form factor, positioned at 45-degree angle on dark charcoal surface. Dramatic side-lighting reveals brushed aluminum texture and transparent polycarbonate viewport showing glowing cyan capacitor cells within. A semi-transparent electric-blue hardlight disc (60cm diameter) projects perpendicular from the emitter, shimmering with faint spectral refraction. Fingers in tactical gloves gripping the lower handle. Warm overhead rim-light catches the polished silver emitter. Cyberpunk aesthetic: neon cyan glow bleeding slightly into shadow, minimalist industrial background. Professional product-shot clarity with cinematic depth-of-field blur. --ar 3:2 --v 6"
 }

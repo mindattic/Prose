@@ -290,5 +290,12 @@
     "posture_movement": "Upright and alert, economical movement with no wasted gesture. Hands are almost always in motion or at rest in neutral position. Eyes track details obsessively. When focused on work, enters a state of visible concentration that makes them seem momentarily unreachable. In social settings, animated and present but with a quality of simultaneous observation.",
     "clothing_style": "Custom barber's apron in waxed canvas (currently forest green with copper rivets) worn over fitted black or charcoal base layers. Sensible slip-on shoes for standing work (currently reinforced canvas sneakers). Minimal jewelry except for a titanium ring on the left ring finger engraved with wave patterns. Tier 3-4 working-class aesthetic: practical, well-maintained, no corporate branding but not poverty-coded. Occasionally wears a lightweight headwrap in complementary colors when not actively cutting — part functional (hair control), part aesthetic statement."
   },
-  "image_prompt": "Portrait of a nonbinary barber with warm beige skin and asymmetrical teal-to-copper ombré undercut hair, Polynesian wave tattoos climbing the neck and right arm in black ink with iridescent shimmer, dark eyes with subtle optical implant signature, wearing a forest green waxed canvas barber's apron over black fitted layers, standing in a converted cargo container barbershop with hydraulic chairs and warm neon mood lighting, hands relaxed at sides, precise and economical posture, cyberpunk barber aesthetic, realistic skin texture, detailed tattoo work visible, professional but intimate setting, studio lighting with accent warm glow, --ar 2:3 --v 6"
+  "image_prompt": "Portrait of a nonbinary barber with warm beige skin and asymmetrical teal-to-copper ombré undercut hair, Polynesian wave tattoos climbing the neck and right arm in black ink with iridescent shimmer, dark eyes with subtle optical implant signature, wearing a forest green waxed canvas barber's apron over black fitted layers, standing in a converted cargo container barbershop with hydraulic chairs and warm neon mood lighting, hands relaxed at sides, precise and economical posture, cyberpunk barber aesthetic, realistic skin texture, detailed tattoo work visible, professional but intimate setting, studio lighting with accent warm glow, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 40.4,
+    "Southeast Asian": 30.0,
+    "East Asian": 13.4,
+    "Eastern European": 9.8,
+    "Sub-Saharan African": 6.4
+  }
 }

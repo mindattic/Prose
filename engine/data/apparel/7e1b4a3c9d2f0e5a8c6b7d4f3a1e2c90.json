@@ -47,5 +47,25 @@
     "Dzemal Acholonu-Patagiri",
     "Nodar Kuznetsov-Adu",
     "Tessera Industries Memory Rounds MR-2 'Recall'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist one-piece silhouette with pronounced shoulder and thigh bulk. The matte black creates a void-like presence broken only by acid-yellow chevron warning stripes and high-visibility seam stitching. The integrated hood reads as an extension of the torso rather than a separate element. Overall impression: industrial hazmat worker crossed with deep-dive salvage operator.",
+    "fit": "Relaxed and intentionally oversized through the torso and limbs to accommodate layering and movement in contaminated zones. Compression at wrists, ankles, and neck seal points. The rear gusset allows for augmented spinal hardware or tail modifications without compromising the seal.",
+    "primary_material": "ViperSkin — proprietary chlorosulfonated polyethylene outer shell (chemical-resistant, acid-neutral pH-reactive) bonded to closed-cell foam thermal liner (inherent insulation, buoyancy in liquid exposure)",
+    "texture": "Outer shell is matte and slightly slick, designed to shed liquid chemicals without absorption. Seams are raised and tactilely distinct due to yellow contrast stitching. The thermal liner is cushioned and slightly compressible, visible at neck and cuff edges.",
+    "color_scheme": "Matte black field with acid-yellow chevrons on shoulders and outer thighs, yellow taped seams throughout for structural and regulatory visibility",
+    "closures": "Integrated hood with bayonet-lock visor ring (40mm filter canister compatible). Body sealed via continuous taped seams. Magnetic snap wrist and ankle cuffs for rapid removal in emergency decontamination.",
+    "distinctive_features": [
+      "Bayonet-lock integrated hood with 40mm filter canister port",
+      "High-visibility yellow chevron warning stripes (regulatory requirement for Shelf-zone work)",
+      "Contrast-stitched taped seams (yellow) for visual integrity inspection",
+      "Rear gusset exit seam (gene-mod/augmentation compatible)",
+      "Closed-cell foam thermal liner (visible at collar/cuff)",
+      "Matte finish to prevent light-reflection in hazardous chemical environments"
+    ],
+    "tier_indicator": "Tier 4-5 functional. Affordable working-class equipment with zero luxury markers. Drekk Heavy Fabrication is a mid-tier industrial supplier, not haute couture.",
+    "cultural_context": "Signals hazmat technician, Circuit-level industrial crew, Shelf-zone salvager, or sub-grade chemical processing worker. Wearing this outside contamination zones reads as either off-shift exhaustion or deliberate anti-corporate posturing.",
+    "condition_typical": "Weathered and patched. Outer shell shows acid-etch marks, scuffed matte finish, and discolored seam tape from repeated exposure. Thermal liner compressed and slightly torn at high-friction zones. Still functional and seal-rated, but visibly lived-in."
+  },
+  "image_prompt": "A hazmat technician in a full matte-black ViperSkin ChemWall suit with acid-yellow chevron stripes and high-visibility taped seams, standing in a rain-slicked industrial processing corridor. The integrated hood is sealed, visor ring catching harsh amber industrial lighting. Chlorine-green mist curls around the figure's boots. Dark concrete walls streaked with chemical burns. Moody, desaturated color grading with acid-yellow as the only saturated accent. Shot from a low angle to emphasize the bulky, protective silhouette. --ar 2:3 --v 6"
 }

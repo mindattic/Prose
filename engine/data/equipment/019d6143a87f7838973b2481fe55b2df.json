@@ -49,5 +49,24 @@
     "TESSERA ES-4 'Perimeter'",
     "TESSERA PG-2 'Signature'",
     "The Collective"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact charging/control dock resembling a sleek insect hive with 20 palm-sized biomimetic micro-drones. Each drone has a chitinous composite body tapering to a needle-like tail, with four articulated carbon-fiber wings folded at rest. The central hub is a brushed titanium-aluminum cylinder with softly glowing thermal ports.",
+    "dimensions": "Hub: 12cm tall × 8cm diameter. Individual drones: 4cm wingspan, 2.5cm body length",
+    "weight_description": "Complete set (hub + 20 drones + charger): 1.5kg — easily handheld or stashed in cargo vest pocket",
+    "primary_material": "Drone chassis: bio-polymer composite with graphene-reinforced panels. Hub: brushed titanium-aluminum alloy. Wings: carbon-fiber filament",
+    "finish": "Matte black with iridescent oil-slick gradients on wing surfaces. Thermal ports glow soft amber when active. Charging contacts are polished gunmetal",
+    "color_scheme": "Deep charcoal/matte black primary; accent colors include soft amber (thermal indicators), electric blue (status LEDs), and faint chromatic shimmer on wings catching light",
+    "interface_elements": "Hub features: 4 radial LED rings (green/yellow/red status), recessed touch-sensitive launch pad, micro-USB charging port, paired Bluetooth/neural-link antenna coil visible through translucent panel. Individual drones have: single IR emitter lens (clear), thermal sensor array (dark red tint), motion-detector opening (microperforated)",
+    "distinctive_features": [
+      "Insectoid silhouette — wings designed to mimic wasp morphology for psychological deterrent",
+      "Barely-visible IR emitter on each drone's forward pod glows faintly during active alert mode",
+      "Thermal-reactive paint on wings shows heat signature patterns when drones are in operation",
+      "Interlocking magnetic charging cradles inside hub — drones dock vertically like ammunition in magazine",
+      "Whisper-quiet: wing design produces subsonic vortices rather than audible flutter"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS logo (stylized wasp head) on hub front in recessed metallic inlay. Serial number on rear. Tier-2+ certification stamp. FCC-equivalent regulatory marks (GLMZ Authority) on base",
+    "condition_typical": "Active: drones in rotation, 10 airborne at any time, others docked and charging. Thermal ports cycling through amber-to-dim. LED ring breathing gentle green. Idle: all drones docked, single blue status LED, minimal heat signature"
+  },
+  "image_prompt": "Close-up product photography of Vespid Dynamics PAMN-2 micro-drone network, sleek black titanium hub surrounded by 6-8 deployed moth-like drones in mid-flight around it, thermal imaging glow on wings, soft amber light from charging ports, dark workshop surface with shallow depth of field, cinematic cyberpunk lighting with blue and amber LED accents, professional catalog style --ar 3:2 --v 6"
 }

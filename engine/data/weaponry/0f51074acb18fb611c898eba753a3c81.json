@@ -44,5 +44,41 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Alper Inoue-Aidoo",
+    "Arcturus Defense Solutions",
+    "Cezar Watanabe-Gyasi",
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "Patient Zero",
+    "Slagworks Industrial",
+    "Vantablack FH-20 'Convoy'",
+    "Vantablack-CNX",
+    "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist anti-materiel rifle with an aggressive, angular stance. The Condor presents a forward-heavy silhouette dominated by a thick, fluted barrel shroud that extends nearly three-quarters of the weapon's length. The receiver is compact and utilitarian, with sharp edges and minimal ornamentation. Overall impression: engineered for violence, designed by engineers who understood recoil and didn't apologize for it.",
+    "dimensions": "1,600mm length overall, 14.5mm bore, barrel length approximately 1,100mm. Magazine well sits 380mm from muzzle. Width across charging handle approximately 80mm.",
+    "weight_description": "Hefty and brutal — 18 kg demands respect and proper support. The weight distribution is front-heavy, concentrating mass in the barrel assembly and hydraulic buffer. Feels substantial in the shoulder, immovable when properly braced. Not a weapon for unsupported shooting.",
+    "primary_material": "Welded steel receiver with carbon-composite furniture. Barrel shroud is reinforced polymer composite with embedded cooling channels. Hydraulic buffer housing is polished steel. Magazine is reinforced aluminum with steel feed lips.",
+    "finish": "Matte black Cerakote on receiver and barrel shroud with visible tool marks from rapid manufacturing. Brushed steel on hydraulic buffer housing and gas tube. Industrial, utilitarian — no aesthetic concessions.",
+    "color_scheme": "Charcoal black primary with gunmetal gray accents on the hydraulic assembly and gas tube. Worn areas reveal darker steel beneath the coating.",
+    "grip_texture": "Rubberized pistol grip with aggressive, pronounced texturing for gloved operation. Magazine well has sharp, defined edges without grip padding — purely functional. Charging handle is knurled steel.",
+    "distinctive_features": [
+      "Prominent hydraulic recoil buffer housing mounted beneath the barrel, machined steel with cooling fins",
+      "Gas tube running above the barrel with pressure relief vents",
+      "5-round magazine with witness holes at intervals of 1",
+      "Muzzle break with asymmetrical ports designed to manage lateral recoil",
+      "Picatinny rails on receiver top and sides, forward section of barrel shroud",
+      "Charging handle rotates forward 45 degrees for operation",
+      "Wear patterns around magazine well from rapid reload cycles",
+      "Serial number and 'CONDOR' designation stamped into left side of receiver"
+    ],
+    "manufacturer_markings": "Blackwood Commercial Group logo (angular B-C-G monogram) stamped on right side of receiver below dust cover. 'ARCTURUS AMR-9 CONDOR' in block letters on barrel shroud. Military-only restriction stamp on left side of magazine well.",
+    "condition_typical": "Field-worn. Matte finish shows micro-scratches and carbon buildup around the gas tube. Hydraulic buffer housing displays thermal discoloration from sustained firing. Magazine shows witness marks from repeated loading. Receiver retains original finish but shows handling wear. Represents a weapon in active service, maintained adequately but not obsessively."
+  },
+  "image_prompt": "Product photography: Arcturus AMR-9 Condor anti-materiel rifle displayed on matte black surface, angled 3/4 view left-to-right. Weapon positioned with magazine loaded and charging handle forward. Dramatic side-lighting emphasizing the fluted barrel shroud geometry and hydraulic recoil buffer assembly. Harsh blue-white key light with deep shadow valleys, cyberpunk industrial aesthetic. Background: blurred neon signage or rain-slicked GLMZ megastructure. Shallow depth of field focusing on breach assembly and charging handle. Cold color temperature, steel and polymer materials clearly defined. Magazine witness holes subtly illuminated. --ar 3:2 --v 6"
 }

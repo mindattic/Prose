@@ -49,5 +49,24 @@
     "The Heritage Vault",
     "The United Workers Front",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian pullover shell with purposeful asymmetry—cut longer at the back to protect the spine, shorter at the front for mobility when seated. Clean, unadorned silhouette with a modest technical presence. Reads as honest workwear rather than fashion statement.",
+    "fit": "Relaxed, ungendered cut through the shoulders and torso. Designed for layering—enough room for thermal base layers underneath without excess bulk. Hem sits mid-thigh in back, hip-length in front, creating subtle curved lines when worn.",
+    "primary_material": "Ballistic-grade synthetic blend, non-woven matte finish. Water-shedding treatment built into the fibers rather than surface-applied, so it survives repeated wear without degradation.",
+    "texture": "Smooth matte surface with visible taped seams running along shoulders, sides, and hood perimeter. Seams are functional landmarks—not hidden, but cleanly executed. Fabric has slight grip when dry, becomes slick when wet.",
+    "color_scheme": "Matte olive-grey—a desaturated sage-green-brown that absorbs light rather than reflecting it. No contrast trim, no logo noise. Single tone throughout.",
+    "closures": "Pullover entry with single-hand drawstring hood that cinches and packs into its own collar cavity. No buttons, zippers, or snaps—simplicity by design.",
+    "distinctive_features": [
+      "Asymmetrical front-to-back hem length for dock/infrastructure work",
+      "Drawstring hood that retracts into collar pocket when not in use",
+      "Single kangaroo chest pocket—large enough for small tools or personal items",
+      "Taped seam construction throughout (shoulders, sides, hood perimeter, armholes)",
+      "Designed for 40+ years of manufacturing legacy—no trend markers"
+    ],
+    "tier_indicator": "Tier 3 functional—honest mid-range pricing (≈120 Φ). Not cheap, not luxury. Built to last and perform.",
+    "cultural_context": "Worn by dock workers, infrastructure maintenance crews, field technicians, outdoor enthusiasts who value function over status. Also chosen by Tier 2 professionals who appreciate Scandinavian design philosophy. Signals competence and practicality rather than wealth or fashion awareness.",
+    "condition_typical": "Broken-in after a season of use. Water beading slightly diminishes but seam integrity remains. Possible patched areas on pocket edges from tool wear. No distressing—wear is quiet and authentic."
+  },
+  "image_prompt": "A matte olive-grey anorak photographed on a rain-slicked Milwaukee dock at dusk. Model is mid-40s, mixed heritage, wearing it over thermal base layers with weathered cargo pants. The anorak's asymmetrical hem is visible as model stands in 3/4 pose. Drawstring hood packed into collar. Moody industrial lighting with sodium vapor glow reflecting off wet concrete. Taped seams catch light subtly. Background shows shipping containers and grey Lake Michigan fog. No branding visible. Raw, honest workwear aesthetic. --ar 2:3 --v 6"
 }

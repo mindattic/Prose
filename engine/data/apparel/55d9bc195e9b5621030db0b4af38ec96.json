@@ -35,5 +35,25 @@
   ],
   "related_entities": [
     "GLMZ"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A stark, skeletal framework that dominates the head—part surgical halo, part restraint. The rigid structure creates an almost praying-mantis silhouette around the skull, with articulating struts that extend from the jaw to the crown. It reads as clinical violence: beautiful in its precision, disturbing in its purpose.",
+    "fit": "Compression-locked around the cranium with zero give. Adjustable cervical and temporal bands distribute pressure across key stabilization points. Painfully snug by design—comfort is not a design parameter.",
+    "primary_material": "Aerospace-grade titanium alloy frame with medical-grade polycarbonate panels. Synthetic memory foam padding in pressure zones (rapidly degrades after 4-6 weeks of wear).",
+    "texture": "Cold, smooth metal with micro-etched grip points for manual adjustment. Polycarbonate panels have a faint clinical frosting. Padding is soft where it touches skin but compressed into uselessness within days.",
+    "color_scheme": "Matte gunmetal gray frame with translucent milky-white cranial panels. Accent struts in clinical blue. Internal suture-tracking LEDs cast faint amber/green glow through panels at night.",
+    "closures": "Six-point magnetic closure system at the occipital base; secondary friction-fit cervical locks; manual torsion dials on temporal adjusters (requires small wrench or stylus).",
+    "distinctive_features": [
+      "Transparent cranial panels allowing direct visibility of surgical sites and bandaging",
+      "Integrated biometric monitoring strip along the frontal band—reads heart rate, intracranial pressure, infection markers",
+      "Prometheus Medical logo embossed on forehead guard in aggressive serif typeface",
+      "Pressure-relief vents designed to whistle slightly when the wearer moves quickly (acoustic signature of the healing process)",
+      "Emergency quick-release catch hidden under left temporal strap",
+      "Nano-suture alignment guides visible as fine geometric etchings on panels"
+    ],
+    "tier_indicator": "Tier 1-2 (medical equipment), but socially marks wearer as post-operative regardless of actual tier. Cost of cranial augmentation itself varies wildly—corpo neural enhancements run 50,000+ Φ; sub-grade court-ordered implants are cost-effective for authorities.",
+    "cultural_context": "Wearing one publicly signals either voluntary enhancement (corpo, edge-runner, thrill-seeker) or involuntary modification (parolee, criminal marker, debt-bonded labor). In GLMZ, wearing a Cranial Stabilizer makes you instantly legible—and instantly suspect. Some wear them as status. Others are forced to.",
+    "condition_typical": "Pristine when first fitted. Rapidly shows wear: foam padding compresses and darkens with scalp sweat, polycarbonate panels accumulate micro-scratches and fingerprints, struts collect dust in articulation joints. After 3 weeks, most look semi-functional and desperate."
+  },
+  "image_prompt": "Close-up fashion photograph of a Prometheus Medical Cranial Stabilizer on a dark synthetic mannequin head, shot against a wet concrete wall under harsh sodium vapor lighting. The transparent cranial panels glow faintly with internal diagnostic LEDs in clinical blue and amber. Droplets of condensation bead on the polycarbonate. Shallow depth of field emphasizes the titanium frame's cold geometry and the sterile precision of the design. Moody, clinical, dystopian medical chic. The background shows blurred GLMZ infrastructure—cable conduits, rust-stained steel, neon medical signage. --ar 2:3 --v 6"
 }

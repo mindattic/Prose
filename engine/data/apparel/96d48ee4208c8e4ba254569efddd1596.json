@@ -36,5 +36,27 @@
   "related_entities": [
     "GLMZ",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian full-body suit with a distinctly industrial silhouette. The garment reads as purpose-built rather than fashionable—broad shoulders, reinforced torso, and a subtle shimmer from embedded lead-composite weave. The collar features a prominent indicator strip that dominates the neckline. Worn by Tier 3-5 workers in contaminated zones, it signals expertise and exposure to danger.",
+    "fit": "Relaxed through the shoulders and torso to accommodate layered undergarments and movement in tight reactor spaces. Tapered at the wrists and ankles with friction-fit cuffs that seal against gloves and booties. The cut prioritizes functional range of motion over aesthetics.",
+    "primary_material": "Lead-composite ballistic weave—a dense synthetic blend woven with lead-infused filaments. Treated for flexibility despite its shielding properties. The outer surface is a matte grey-silver with subtle reflective qualities.",
+    "texture": "Smooth but slightly stiff to the touch, with a faint quilted texture from internal shielding layers. Micro-ridged sections at high-stress joints for grip and durability. The collar indicator strip feels rubberized and slightly raised.",
+    "color_scheme": "Industrial grey-silver base with twelve small circular dosimetry sensor nodes in matte black scattered across the body (shoulders, upper back, chest, forearms, hips, thighs, shins). The collar indicator strip transitions from safety-green to amber to warning-red depending on exposure level.",
+    "closures": "Heavy-duty magnetic snaps running down the front center, spaced 4 inches apart for quick removal in emergency situations. Reinforced friction-fit seals at wrists and ankles. No traditional zipper—the snaps allow full front opening for rapid decontamination.",
+    "distinctive_features": [
+      "Twelve integrated biosensor nodes with subtle LED indicators",
+      "Collar-mounted tri-color dosimetry indicator (green/amber/red) that's visible from distance",
+      "Internal lead-composite layering visible at torn edges or seams (silver-grey glint)",
+      "Reinforced double-stitching along all seams in contrasting dark thread",
+      "Subtle Helion Manufacturing etched logo on right shoulder",
+      "Decontamination-resistant treated surface (water and particulate runoff)",
+      "Internal soft-flex lining to reduce chafing during extended wear",
+      "Small utility loops at hips for clip-on dosimetry monitors or emergency tools"
+    ],
+    "tier_indicator": "Tier 3-4 functional. Expensive enough to signal legitimate industrial employment, but the suit's worn appearance in lower-tier zones indicates users operating in poorly-regulated contamination sites for Tier 5 salvage wages.",
+    "cultural_context": "Worn by reactor technicians, medical imaging technicians, hazmat cleanup workers, and the growing population of unregistered 'rad-scavengers' in GLMZ's ungoverned zones. Signals either corpo-aligned technical expertise or desperation-driven survival work in contaminated sectors. The red indicator is a badge of accumulated risk.",
+    "condition_typical": "Broken-in and weathered. Users accumulate faint discoloration patterns from repeated decontamination sprays. Sensor nodes may show scuffing. The suit is rarely pristine—it's a tool that absorbs the evidence of its use."
+  },
+  "image_prompt": "A Helion Manufacturing Radiation Exposure Suit displayed on a dark industrial mannequin in a contaminated zone aesthetic. The suit's grey-silver lead-composite weave catches cool, clinical lighting. Close-up detail of the collar-mounted dosimetry indicator glowing amber-yellow against the matte grey fabric. Twelve small black sensor nodes visible across the torso. Moody, institutional lighting with subtle biolume glow on the indicator. Urban decay backdrop—concrete walls, faint radioactive warning symbols in peripheral focus. The mannequin's stance is functional and alert. Hyperrealistic texture showing the quilted internal shielding and reinforced seams. Cold color grading with hints of sickly green atmospheric haze. --ar 2:3 --v 6"
 }

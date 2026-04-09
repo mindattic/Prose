@@ -46,5 +46,25 @@
   "related_entities": [
     "Meridian Core",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A clinical, second-skin silhouette that clings to every anatomical contour. The garment reads as medical-grade despite its sleek form — sterile precision disguised as fashion. Gradient banding creates a subtle visual hierarchy from limbs to torso, invoking both hospital protocol and avant-garde minimalism. On-body it suggests either fresh augmentation or voluntary biometric optimization.",
+    "fit": "Compression-tight throughout, following musculature and bone structure without bunching. No excess fabric. Strategically graduated tension — maximum at wrists, ankles, and shoulders; looser at joints to allow micro-articulation. Allows full range of motion despite the snug embrace.",
+    "primary_material": "Medical-grade synth-elastane composite woven with micro-conductive filament threads (copper-aluminum blend). Base is off-white clinical textile, brushed matte finish to reduce glare during medical imaging.",
+    "texture": "Smooth, almost slick to the touch with a barely-perceptible ribbed micro-weave. Seams are flush and sealed — no traditional stitching texture. Where conductive threads surface near banding zones, subtle ridging creates a tactile map of monitoring zones.",
+    "color_scheme": "Off-white base (clinical, sterile tone). Gradient color banding: deep cerulean blue at wrists and ankles, transitioning through teal and sage at mid-limbs, warm amber-gold at chest and core. Banding is approximately 2cm wide at each zone transition.",
+    "closures": "Discrete laser-bonded seam channels with magnetic-snap zipper gates positioned at left forearm, right calf, and spine (back of neck to sacrum). Allows targeted access for medical inspection or augmentation site management without full removal.",
+    "distinctive_features": [
+      "Embedded micro-conductive thread network visible as faint silvery tracery beneath surface material",
+      "Color-coded compression gradient zones corresponding to medical compression standards",
+      "Laser-sealed seams throughout to prevent post-op irritation",
+      "Magnetic zipper channels with subtle Veltran logo embossed near each gate",
+      "Subcutaneous sensor anchor points (slight raised dots) at major nerve clusters",
+      "Helix Corp subsidiary watermark printed at sternum in non-gloss ink"
+    ],
+    "tier_indicator": "Tier 2–3 crossover. Issued by medical institutions or corporations covering augmentation costs. Wearing one signals recent bio-modification, corporate health coverage, or voluntary optimization protocol. Not accessible to Tier 5 unless black-market salvage.",
+    "cultural_context": "Wearer is either freshly augmented, recovering from geneware integration, or actively managing biometric compliance. Signals medical legitimacy, corporate investment in one's body, or voluntary self-optimization. Seen in clinic corridors, Helix facilities, and among chrome-positive communities. Fetishized by augmentation enthusiasts; stigmatized in unaugmented communities.",
+    "condition_typical": "Pristine when newly issued; gradually shows micro-wear at magnetic closures and faint discoloration from skin oils along compression zones. Seams remain perfect indefinitely. After 2–3 months, the off-white yellows slightly at core if not regularly treated with medical textile whitener."
+  },
+  "image_prompt": "Veltran MedSync compression suit on a lean cyberpunk model with visible partial chrome arm augmentation, shot under cold clinical LED lighting. Off-white base fabric catches sterile blue-white overhead light; gradient banding (blue → amber) glows subtly from within. Dark industrial clinic background with shallow depth-of-field. Magnetic zipper gate at model's left forearm visible, catching light. Moody, hyper-clean aesthetic. Model's posture is clinical, arms slightly raised to show compression architecture. --ar 2:3 --v 6"
 }

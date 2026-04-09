@@ -56,5 +56,35 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "GLMZ",
+    "Patient Zero",
+    "TESSERA ES-4 'Perimeter'",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist shoulder-mounted energy platform dominated by a prominent hexagonal emitter array. The silhouette is aggressive and asymmetrical—a wide, flat radiator head mounted on a reinforced articulated arm extending from a heavily padded backplate. Reads as industrial crowd-control equipment; unmistakable and deliberately imposing.",
+    "dimensions": "Emitter head: 34cm diameter (hexagonal), 8cm depth. Articulated arm span: 62cm fully extended. Backplate: 48cm × 38cm. Total shoulder-rig footprint when mounted: 78cm wide × 45cm tall × 22cm deep.",
+    "weight_description": "Hefty and anchoring. The 11.4kg load sits low and distributed across shoulder and hip straps, but the forward-mounted emitter creates leverage that demands active postural compensation. Operators describe it as 'wearing a small vehicle.'",
+    "primary_material": "Aluminum composite frame with steel reinforcement at articulation points. Emitter array housing: pressure-cast titanium alloy rated for thermal stress. Backplate: carbon-fiber composite.",
+    "finish": "Matte tactical black on frame and backplate. The hexagonal emitter array is bare brushed titanium with high-polish facing—the radiator surface gleams in direct light, creating a distinctive contrast. Stress points show worn chrome plating.",
+    "color_scheme": "Matte black primary, brushed titanium silver on emitter face. Accent: Tessera Media Group corporate blue stripe running down the backplate articulation spine.",
+    "grip_texture": "Handle-mounted targeting interface features rubberized pistol-grip with aggressive texturing for gloved operation. Secondary stabilization grips are wrapped with non-slip paracord. All contact surfaces are slightly tacky to the touch—engineered for sweat resistance.",
+    "distinctive_features": [
+      "Hexagonal emitter array with visible individual radiator elements arranged in concentric rings",
+      "Horizontal sweep mechanism with visible servo motors and articulated linkage",
+      "Backlit LCD targeting reticle on handle interface (faintly glowing in darkness)",
+      "Heat-stress scarring visible on titanium emitter face—micro-discoloration patterns from repeated use",
+      "Tessera corporate logo stamped into backplate (3cm, chrome relief)",
+      "Safety interlocks with redundant manual override switches positioned along left side of rig",
+      "Thermal bleed vents cut into lower frame section, often with scorching marks",
+      "Asymmetrical power cell housing on right hip—bulky rectangular module with cable routing",
+      "Targeting laser diode (red, 635nm) visible as small aperture on upper emitter housing"
+    ],
+    "manufacturer_markings": "Tessera Media Group logo (5cm stamped relief) on backplate. Serial plate mounted on left arm articulation: white text on black anodized aluminum (8cm × 3cm). Individual unit designation engraved near power-cell housing. Factory specifications plate affixed below emitter array.",
+    "condition_typical": "Well-maintained equipment shows light carbon scoring on emitter face and heat-stress discoloration on the titanium array. Field-deployed units often display impact marks on the backplate, worn grip texture, and corroded fasteners. Heavy-use platforms show permanent warping of thermal vents and micro-fractures radiating from stress points. Modified ('hot-rodded') units exhibit crude welding repairs, crude heat shielding, and visible jury-rigging of power regulators."
+  },
+  "image_prompt": "Product photography of a shoulder-mounted RMDS-4 Crowdbreaker microwave denial system. Close-up of the distinctive hexagonal titanium emitter array mounted on matte-black aluminum frame, with rubberized targeting handle visible below. Dramatic side-lighting emphasizing the brushed metallic radiator surface against matte black composite. Mounted on dark tactical surface or held in tattooed gloved hands showing wear patterns and stress discoloration. Cyberpunk industrial aesthetic, cold blue accent lighting on Tessera branding stripe. Visible thermal scarring on emitter face. Ultra-high detail on radiator elements and articulation joints. Gritty, corporate-security hardware aesthetic. --ar 3:2 --v 6"
 }

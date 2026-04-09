@@ -46,5 +46,37 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Brecken Yılmaz-Osei",
+    "Djeneba Orlov-Obeng",
+    "GLMZ",
+    "Kairos",
+    "Nika Svensson-Kone",
+    "Slagworks Industrial",
+    "Solina Barreto-Kiptoo",
+    "The Riveters' Round",
+    "The Shelf"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek metal cigarette case, roughly the size of a standard pack, with a single brass-colored cylinder protruding from its opening like a cigarette mid-extraction. At first glance, indistinguishable from an actual smoking accessory—the deception is the entire design philosophy.",
+    "dimensions": "Case: 8.5cm L × 5.5cm W × 2cm D. Barrel ('cigarette'): 30mm protruding from case opening, 7mm diameter.",
+    "weight_description": "Light and balanced—80-120g depending on manufacturing quality. Feels substantial enough to be credible as a real cigarette case, never heavy enough to suggest mechanical complexity.",
+    "primary_material": "Machined or stamped steel/aluminum for the case; brass or steel for the barrel insert; spring-loaded firing mechanism beneath false bottom.",
+    "finish": "Matte brushed nickel or aged chrome on better examples; worn silver or dull brass on street-made variants. Intentionally non-reflective to avoid catching light during the critical moment of deployment.",
+    "color_scheme": "Silver, brushed steel, or antique brass. No bright colors—anonymity is the aesthetic. Accent wear patterns suggest age and casual use.",
+    "grip_texture": "Smooth metal with gentle knurling on case edges for authentic cigarette-case ergonomics. The 'cigarette' barrel has a slightly rough, hand-held surface mimicking paper texture.",
+    "distinctive_features": [
+      "Concealed firing button positioned on case interior beneath false bottom—requires pressing while case is open and 'cigarette' in hand",
+      "Barely-visible barrel seam where precision insert meets case opening",
+      "Spring-loaded magazine chamber disguised as case lining",
+      "Micro-relief engravings on case—brand names, decorative patterns, or worn markings to enhance authenticity",
+      "Minute oxidation and handling wear consistent with daily-carry smoking accessory",
+      "Heat-bluing or patina on better examples, raw metal on crude versions"
+    ],
+    "manufacturer_markings": "Street Custom variants may bear no marks, or crude hand-stamped initials. Higher-tier examples mimic real cigarette case branding—Zippo-style logos, pseudo-luxury maker's marks, or deliberate anonymity through generic design.",
+    "condition_typical": "Well-maintained street customs show deliberate patina and wear—scratches from pocket carry, oxidation from skin oils, minor dents consistent with casual ownership. The weapon is never pristine; pristine draws attention."
+  },
+  "image_prompt": "Product photography: silver metal cigarette case with brass barrel-'cigarette' protruding from open lid, resting on matte black surface next to a real cigarette for scale. Dramatic side-lighting emphasizing the deceptive craftsmanship, shadows catching the barely-visible seams. Worn patina visible under studio lights. Gloved hand (chrome-fingered tactical glove) gently opening case, evoking the universal gesture of reaching for a smoke. Shallow depth of field. Cyberpunk noir aesthetic—cold, utilitarian, morally ambiguous. Dark ambient background, neon blue-green accent light catching the brass. --ar 3:2 --v 6"
 }

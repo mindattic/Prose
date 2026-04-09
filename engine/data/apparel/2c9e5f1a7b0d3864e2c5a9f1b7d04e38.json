@@ -46,5 +46,27 @@
     "GLMZ",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A chunky, utilitarian electronic cuff that dominates the ankle—impossible to hide or ignore. Sits prominently on the lower leg like an industrial manacle, broadcasting state surveillance to everyone in visual range. The design is deliberately punitive in its visibility.",
+    "fit": "Rigid and circumferential, snug against the ankle with minimal adjustment. Gene-compatible cutouts create an asymmetrical fit that adapts to augmented leg geometry. Sits slightly loose over standard human ankles but secure enough that removal requires intentional tampering—which triggers alarms.",
+    "primary_material": "Matte industrial grey polymer housing with stainless steel internal frame. Cheap foam padding inside degrades to crumbly residue within 6 months of wear. Polymer is impact-resistant but deliberately non-aesthetic.",
+    "texture": "Smooth, cold polymer exterior with faint manufacturing seams. The red indicator stripe is raised slightly, tactilely prominent. Interior foam padding is soft initially but becomes brittle and flaking. Metal contact points show wear and micro-scratching from movement.",
+    "color_scheme": "Dominat matte industrial grey with a high-contrast red tamper-evident stripe running horizontally around the band. Small amber LED housing inset into the outer face. No branding visible—only a stamped serial number and Kelvex contract identifier.",
+    "closures": "Permanent electronic locking mechanism with mechanical tamper-seal. Cannot be removed without triggering alert. No user-accessible closures—security is the only function.",
+    "distinctive_features": [
+      "Tamper-evident red indicator stripe that changes color if cuff is opened",
+      "Pulsing amber LED (4-second interval) during normal operation—switches to red during geofence proximity warning",
+      "Gene-compatible cutouts on inner band for digitigrade or scale-ridge leg modifications",
+      "Stamped serial number and GLMZ Civil Compliance contract identifier",
+      "Deliberately oversized profile designed as visual deterrent",
+      "Degrading foam padding visible as white crumbs in crevices after months of wear",
+      "Cold metal contact points that mark skin",
+      "Slight wireless antenna bump on outer face"
+    ],
+    "tier_indicator": "Tier 5 / Sub-grade enforcement. This is not worn by choice—it signals legal restriction and surveillance subjugation. Wearing one marks you as monitored, likely criminal-adjacent or debt-imprisoned.",
+    "cultural_context": "Worn exclusively by people under GLMZ civil compliance orders—court-mandated house arrest, debt servitude, parole, or regulatory restriction. It marks the wearer as subject to state/corporate surveillance, separated from free movement. Sight of one causes automatic social distance and assumed suspicion.",
+    "condition_typical": "Worn continuously 24/7. Typically shows 3-6 months of degradation: foam padding flaking, micro-scratches and scuff marks on grey polymer, slight discoloration from sweat/skin oils around contact points, dust accumulated in gene-compatible cutouts. Red indicator stripe remains visible unless deliberately obscured. Amber LED may flicker as battery ages."
+  },
+  "image_prompt": "Close-up fashion photography of a Kelvex TransitBound MK-2 ankle monitor on a cyberpunk model's lower leg—matte industrial grey polymer cuff with high-contrast red tamper stripe, small amber LED pulsing in shadow. Model wears torn synth-fabric pants, augmented leg visible in cutouts showing chrome circuitry or scaled skin modifications. Dark urban alley backdrop with neon reflected in wet concrete. Moody side-lighting casting sharp shadows across the cuff's face, emphasizing its punitive bulk and surveillance function. Shallow depth of field on the ankle, blurred gritty street behind. Grainy, desaturated color palette with pops of amber and red LED light. --ar 2:3 --v 6"
 }

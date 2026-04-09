@@ -36,5 +36,31 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Hearthstone Firearms Single-20 'Farmhand'",
+    "Steel",
+    "Vespid Dynamics"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist single-shot grenade launcher with a distinctly organic, almost insectoid aesthetic befitting its Vespid branding. The barrel is oversized and ribbed, designed to safely contain and chamber the volatile binary payloads. The break-action mechanism dominates the rear, with a prominent thumb-lever for loading. It reads as intentionally intimidating—industrial, purposeful, and unambiguously dangerous.",
+    "dimensions": "68cm overall length, 38cm barrel, 12cm across the breach assembly at widest point",
+    "weight_description": "Hefty without being unwieldy—3.5kg feels substantial in the hands, balanced between the barrel mass and the reinforced receiver. The weight distribution suggests controlled deployment rather than rapid fire, every shot deliberate.",
+    "primary_material": "Hardened steel chassis with carbon-composite barrel shroud; reinforced polymer grip module rated for caustic splash exposure",
+    "finish": "Matte industrial gunmetal with heat-stress discoloration streaking the upper barrel surface. The polymer components show a satin black finish with faint scuff marks from field use. Intentionally void of reflective surfaces—designed to absorb rather than catch light.",
+    "color_scheme": "Slate gray barrel with deep matte black polymer accents; accent striping in acid-yellow along the safety lever and chamber markings as a chemical hazard indicator",
+    "grip_texture": "Textured non-slip polymer with embedded micro-ridges, engineered to remain stable even when contaminated with splash residue. Slightly tacky, designed for gloved operation.",
+    "distinctive_features": [
+      "Oversized ribbed barrel with visible thermal dissipation grooves",
+      "Prominent biohazard/chemical warning decals in yellow and black",
+      "Binary chamber indicator window showing dual-chamber status",
+      "Thumb-lever break-action mechanism with redundant safety catch",
+      "Score marks and chemical etch patterns on the lower receiver from field exposure",
+      "Heat-discolored streaking suggesting multiple field deployments",
+      "Reinforced ejector port with splash guard lip"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS corporate logo (stylized wasp silhouette) stamped prominently on the left receiver. Serial number and production date acid-etched into a recessed plate on the right side. 'CL-3 ACID REIGN' designation laser-marked on the barrel shroud in small capitals.",
+    "condition_typical": "Well-maintained but field-worn; evidence of careful cleaning and storage balanced against use-scarring. The polymer shows minor discoloration from chemical exposure, but the mechanism remains tight. A working tool of a professional demolitions contractor or militant operative—neither pristine nor neglected."
+  },
+  "image_prompt": "Product photography of the Vespid Dynamics Corrosive Launcher CL-3 'Acid Reign' on a dark brushed steel surface, shot from a 45-degree angle showing full profile and detail. The weapon is gripped by a gloved hand (tactile black synthetic material visible on the right). Dramatic side-lighting from the left casts sharp shadows, emphasizing the ribbed barrel and mechanical details. The chemical hazard decals catch accent light in acid yellow. Dark matte background with subtle honeycomb texture. Cyberpunk industrial aesthetic, clinical precision. Sharp focus on the breach mechanism and chamber indicators. --ar 3:2 --v 6"
 }

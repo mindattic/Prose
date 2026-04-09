@@ -51,5 +51,29 @@
     "Lazarus LX-2 'Lab Rat'",
     "The United Workers Front",
     "Yusra Ntambwe-Cakić"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively functional street operative's ensemble that reads as blue-collar dockside labor at first glance but conceals modular weaponry and augmentation access points throughout. The silhouette is deliberately unremarkable—neither tailored nor overtly baggy—designed to blend into Meridian Harbor's working populations while maintaining tactical mobility. Layered and utilitarian, it projects competence and wear without calling attention.",
+    "fit": "Relaxed but purposeful. The work shirt hangs loose enough for movement and concealment, the compression base layer beneath is snug for BCI interface integrity and thermal regulation, and the trousers are cut with a high gusset to allow full leg extension without strain. Everything moves with the wearer, nothing restricts.",
+    "primary_material": "Outer: heavy waxed canvas (faded teal). Inner: technical compression weave with embedded thermal regulation fibers (dark amber). Trousers: reinforced indigo heavy denim. Footwear: weathered brown leather-analog composite with steel toe and heel. Belt: beaten leather-analog with synthetic core.",
+    "texture": "Waxed canvas is rough and slightly tacky to the touch, with visible wear patterns and creasing from actual use. The compression layer beneath is smooth, almost hydrophobic, with subtle ribbing visible where thermal threads run. Denim is soft from age and repeated washing, with slight fading at stress points. Leather is deliberately distressed—scuffed, creased, broken-in.",
+    "color_scheme": "Faded teal work shirt (primary), dark amber compression base layer (visible at collar and cuffs), faded indigo denim (trousers), weathered brown boots, matching teal work cap. Palette reads as sun-bleached harbor labor—blues, ambers, and browns dulled by salt air and industrial exposure.",
+    "closures": "Work shirt: heavy-duty friction-fit button placket with reinforced anchor points. Base layer: friction-fit crew neck, port-access panel secured with magnetic micro-locks. Trousers: traditional button fly with reinforced anchor and flat-seam construction. Boots: speed-lace system with friction-lock aglets. Belt: magnetic clasp with false-bottom release mechanism. Cap: elastic sweatband with internal signal-dampening liner (no visible closure).",
+    "distinctive_features": [
+      "Modular attachment system on shirt back—vertical cargo strips with quick-release panel inserts (scanner-dampening swappable with plain canvas)",
+      "Left interior seam: full-length holster channel for sidearm or collapsed baton",
+      "Right sleeve: embedded comm-wire conduit running wrist to collar",
+      "Base layer upper back port-access panel for BCI hardware maintenance (magnetic micro-locks)",
+      "Trousers: two flat concealed pockets behind front panels (blend seamlessly with denim topography)",
+      "Reinforced inner thighs (durable for ladder climbing, concealment)",
+      "High gusset-cut seat for unrestricted leg extension",
+      "Right boot shaft: hidden ankle holster channel",
+      "Belt: false-bottom center pouch for small valuables or restricted items",
+      "Cap: internal signal-dampening liner (invisible from exterior)"
+    ],
+    "tier_indicator": "Tier 3 functional with deliberate Tier 2 aesthetic—street-level professional tier manufactured by independent labor networks. Signals skilled operative, not corpo or sub-grade.",
+    "cultural_context": "A runner's uniform. Worn by independent fixers, dockside security contractors, augmentation technicians, and unauthorized courier networks operating in Meridian Harbor. The two-job design speaks to someone living between daylight legitimacy and nighttime circuit work—someone who needs to pass as working class by day and disappear into shadows by night. Brineworks affiliation indicates labor-network loyalty, not corpo employment.",
+    "condition_typical": "Deliberately broken-in and worn but not damaged. Canvas shows salt-spray staining and UV fading. Denim has work creases and minor fraying at cuffs. Leather is scuffed and creased from actual use. Nothing is pristine, but nothing is failing—this is a tool that's been used properly and maintained for reliability, not appearance."
+  },
+  "image_prompt": "Fashion photograph of a wiry, mixed-heritage cyberpunk operator wearing the Brineworks Ghost-Side Street Operative Set, standing in a rain-slicked Meridian Harbor dockside alley at dusk. Faded teal work shirt with visible modular panel strips on back, amber compression layer visible at collar and cuffs, faded indigo denim with reinforced inner thighs, weathered brown steel-toe boots. Matching teal work cap with subtle signal-dampening texture visible in side-lighting. Overhead sodium lights cast amber-orange and deep shadow across weathered brick and industrial metal. Subtle chrome cyberlimb (left hand or neck port visible) hints at augmentation. The operator's posture is relaxed but alert, one hand near belt. Moody, gritty lighting emphasizing wear texture and functional design. Dark, saturated color palette with teal and amber as accent tones. Shot from mid-thigh up, slightly from the side. --ar 2:3 --v 6"
 }

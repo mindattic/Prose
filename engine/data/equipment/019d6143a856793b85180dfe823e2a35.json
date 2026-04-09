@@ -42,5 +42,24 @@
     "power",
     "tier 3"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "physical_description": {
+    "visual_profile": "A sleek, nearly imperceptible inline module disguised as a standard connector adapter. The form factor mimics legitimate charging cable components, with subtle ridging and recessed ports that allow it to blend seamlessly into a cable assembly. Its diminutive size makes it easily overlooked during casual inspection.",
+    "dimensions": "10mm length × 5mm width × 3mm depth (smaller than a grain of rice when viewed end-on)",
+    "weight_description": "Negligible — less than 2 grams, adds imperceptible mass to charging cable",
+    "primary_material": "Hardened polymer composite shell with embedded graphene conduction layers; internal shielded circuit board",
+    "finish": "Matte charcoal with polished metallic connector contacts; surface etched with microscopic grip texture to prevent slipping during installation",
+    "color_scheme": "Gunmetal gray primary with brushed silver connector pins; faint bioluminescent blue underlay visible only under direct UV",
+    "interface_elements": "Two recessed USB-C type connectors (male/female pass-through); minimal surface indicators — only a pinhole diagnostic LED (red/amber/green cycle) under the shell; micro SD extraction port concealed beneath adhesive label",
+    "distinctive_features": [
+      "Pass-through design allows legitimate charging to continue uninterrupted",
+      "Connector pins aligned to minimize electromagnetic signature detection",
+      "Polymer housing has slight cable-matching texture variation to reduce tactile detection",
+      "Micro capacitor array creates zero load differential during charging diagnostics",
+      "Faint Axiom Systems serialization etched into underside in 0.5mm font"
+    ],
+    "manufacturer_markings": "Axiom Systems logo (Φ circuit symbol) laser-etched on undersurface; serial number and batch code in 0.3mm text; FCC-equivalent compliance marking for GLMZ Zone A (intentionally spoofed standard markings)",
+    "condition_typical": "Mounted inline on charging cable, partially obscured by cable management sleeves or routing clips; appears as minor cable thickening at connection point; shows minimal wear unless physically stressed during removal"
+  },
+  "image_prompt": "Extreme close-up product photography of a tiny matte gunmetal-gray inline module connector, displayed on a dark workbench next to a standard neural interface charging cable for scale. The PDH-3 sits at the cable junction point, with USB-C ports gleaming under dramatic blue-tinted cyberpunk lighting. Fine detail shot showing the brushed silver contact pins and the nearly-invisible diagnostic LED glowing faintly beneath the polymer shell. Shallow depth of field with the cable blurred in the background. Noir aesthetic with neon blue accent lighting reflecting off the metallic components. The device should appear innocuous, professional, and deliberately overlooked. Macro lens perspective. --ar 3:2 --v 6"
 }

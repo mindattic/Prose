@@ -42,5 +42,37 @@
     "practice",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Dielectric Filament Anchor Drone DFAD-1 'Cobweb'",
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Kang-Petrov Arms KPR-357 'Journeyman'",
+    "Lazarus EC-4 'Companion'",
+    "Nika Svensson-Kone",
+    "Volkov-Saito Precision VS-R8 'Verdict'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, purposeful training revolver with clean lines and minimal ornamentation. The profile mirrors larger duty revolvers but reads as notably lighter and more approachable. The four-inch barrel sits proportionally balanced to the frame, creating a symmetrical, almost pedagogical appearance — form following function.",
+    "dimensions": "Overall length: 20.3 cm | Barrel length: 10.2 cm | Cylinder diameter: 3.8 cm | Height at grip: 12.7 cm",
+    "weight_description": "Pleasantly light in hand—0.62 kg gives it an almost delicate feel compared to its larger siblings, yet substantial enough to teach proper grip discipline. The balance point sits naturally at the cylinder axis, encouraging deliberate sight alignment practice.",
+    "primary_material": "Blued steel frame and barrel with polymer/composite grip panels. Stainless steel cylinder and partial sideplate for durability in training environments.",
+    "finish": "Matte blue steel with brushed stainless accents on cylinder and trigger guard. Deliberately understated—no reflective chrome or tactical coatings. The finish shows light wear easily, giving well-used examples a character that speaks to thousands of practice rounds.",
+    "color_scheme": "Gunmetal blue frame with satin-silver cylinder. Black polymer grip panels with subtle Kang-Petrov embossed logo. Conservative, institutional aesthetic.",
+    "grip_texture": "Checkered black polymer with shallow relief pattern—textured enough for secure purchase without inducing fatigue during extended practice sessions. Slightly tacky surface provides confidence without aggression.",
+    "distinctive_features": [
+      "Eight-round cylinder (notably wider than .357 revolver cylinder) with visible round count markers at base",
+      "Fully adjustable rear sight with elevation and windage screws, plainly visible on topstrap",
+      "Smooth, light trigger with crisp break—tuned for teaching rather than combat",
+      "Emphasis on safety—cylinder release is audible and positive",
+      "Tiny red indicator dot on cylinder beneath hammer for empty-chamber visualization",
+      "Manual pinned to frame with Kang-Petrov branding visible on trigger guard",
+      "Minimal wear on sights—suggests frequent cleaning and inspection routine"
+    ],
+    "manufacturer_markings": "Kang-Petrov logo and 'KPR-22 Trainer' text stamped along the barrel, just forward of frame. Serial number engraved on sideplate. Small 'SPINNER' designation etched discretely below cylinder axis. All markings are professional and clean, not flashy.",
+    "condition_typical": "Pristine to very lightly worn. Training revolvers are typically maintained with care—instructors keep them clean and function-checked. Holster wear may appear on barrel face and trigger guard. Internals are periodically inspected and lubricated. This is not a street weapon; it lives in armories, training facilities, and safes."
+  },
+  "image_prompt": "Product photograph of a Kang-Petrov KPR-22 Trainer 'Spinner' revolver on a dark matte gunmetal surface, angled three-quarters view to showcase the eight-round cylinder and four-inch barrel profile. Held in a gloved hand (black tactical glove) with cylinder open, rounds visible. Dramatic side-lighting from upper left reveals matte blue steel finish and brushed stainless cylinder details. Clean, institutional aesthetic with shallow depth of field. Cyberpunk training facility lighting—cool white LED glow with subtle cyan accent on adjustable sights. No blood, no gore—this is an educational tool. Kang-Petrov markings crisp and legible. Dark background with minimal reflections. Shot captures the pedagogical purpose: a tool for mastering technique, not dominating conflict. --ar 3:2 --v 6"
 }

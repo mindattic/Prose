@@ -47,5 +47,27 @@
     "Neural Feedback Carbine NFC-3 'Mirrorgun'",
     "The Underlayer Collective",
     "Ximena Bautista-Nwosu"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, militaristic full-body tactical ensemble that reads as corporate enforcement. Angular, segmented armor plating creates a geometric silhouette with pronounced shoulders and reinforced joints. The matte-black finish absorbs light, creating sharp definition between panels. Worn by mid-tier CorpSec operatives—confident, intimidating, professional.",
+    "fit": "Precision-tailored compression fit underneath modular armor segments. Torso hugs the body snugly; shoulder pauldrons flare slightly outward for protection and psychological impact. Knee greaves articulate with the leg without restricting movement. Overall silhouette is athletic and purposeful—built for combat-ready mobility.",
+    "primary_material": "Segmented TacShell composite (matte black) over graphene moisture-wicking underlayer; ceramic shoulder pauldrons; carbon composite helmet; syntex cut-resistant gloves; steel-shank oil-resistant boots",
+    "texture": "Matte, non-reflective surfaces on armor; finely ribbed graphene underlayer visible at articulation points; haptic nodes create subtle bumps on glove fingertips; steel toe and heel catch light distinctly",
+    "color_scheme": "Gunmetal and matte black dominant; amber corponation stripe running vertically down center chest and along helmet ridge; occasional metallic silver at mag-locks and quick-release buckles",
+    "closures": "Quick-release magnetic buckles throughout; mag-lock heel system on boots; friction-fit helmet with neural port; friction-seal glove wrists",
+    "distinctive_features": [
+      "Integrated HUD visor with neural uplink port at helmet occipital ridge",
+      "Segmented TacShell plating with visible seam lines for articulation",
+      "Haptic feedback nodes embedded in glove fingertips",
+      "Quick-release modular panel system for field maintenance",
+      "Mag-lock heel capability on boots for anchoring in high-G environments",
+      "Amber corponation stripe (Rheon Systems corporate branding)",
+      "Low-profile carbon composite helmet—sleek, not bulky",
+      "Ceramic shoulder pauldrons with distinctive angular geometry"
+    ],
+    "tier_indicator": "Tier 2 (mid-tier corporate issue)—expensive, standardized, mass-produced at scale for corpo security forces. Not luxury, not salvage.",
+    "cultural_context": "Wearing this signals corporate enforcement authority, security clearance, and corpo loyalty. The wearer is muscle for a megacorp, trained and equipped, middle-management of violence. A walking statement of corporate jurisdiction.",
+    "condition_typical": "Pristine when issued; broken-in after field deployment with minor scratches on armor panels, amber stripe slightly dulled, mag-locks occasionally sticky. Field operators maintain it meticulously—dirt accumulation in joint seams is a mark of negligence."
+  },
+  "image_prompt": "A cyberpunk CorpSec operative in full tactical armor stands against a rain-slicked urban industrial backdrop. Matte-black segmented TacShell torso armor with amber corponation stripe down the center, carbon composite helmet with integrated HUD visor glowing faintly amber, ceramic shoulder pauldrons, articulated knee greaves, syntex gloves with haptic nodes, steel-shank mag-lock boots. Low moody lighting emphasizes the geometric panels and matte surfaces. Wet concrete, flickering neon in background. Professional product photography, tactical gear catalog aesthetic. --ar 2:3 --v 6"
 }

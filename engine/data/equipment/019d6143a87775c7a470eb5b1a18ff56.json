@@ -50,5 +50,24 @@
     "Pikasso Wemba-Þórðarson",
     "Programmable Matter",
     "Tessera Corponation"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist carrying case with three pen-sized metallic instruments. The tools appear liquid-smooth, with a faintly iridescent surface that shifts subtly under light. They rest in custom foam cutouts within a matte-black composite case, each tool topped with a small neural interface contact node.",
+    "dimensions": "Case: 18cm × 8cm × 3cm. Individual tools: 14cm length, 8mm diameter",
+    "weight_description": "Pocket-friendly and easily carried; negligible burden despite sophisticated internals",
+    "primary_material": "Tessera programmable matter (tools); carbon-composite case with impact-absorbing polymers",
+    "finish": "Tools exhibit a liquid-metallic sheen with subtle color-shift properties (grey to dark silver gradient). Case has textured non-slip coating with soft-touch grip areas",
+    "color_scheme": "Charcoal-black case with gunmetal-grey tools; accent nodes glow faint cyan when powered",
+    "interface_elements": "Three contact nodes (one per tool) for neural interface link; subtle LED status indicator on case lid showing battery percentage; micro USB charging port recessed into case corner; faint holographic display window showing lock-type readout when active",
+    "distinctive_features": [
+      "Programmable matter surface ripples subtly when reconfiguring",
+      "Cyan neural interface nodes emit faint bioluminescent glow during lock scanning",
+      "Tools maintain slight fluidity at molecular level — visible as shimmer at edges",
+      "Holographic lock-profile schematic floats above open case lid during operation",
+      "Case lid interior displays minimalist instructional HUD when opened"
+    ],
+    "manufacturer_markings": "Embossed 'Tessera Industries' logo on case lid; 'MLP-1' serial designation; small 'Vasquez Biocompatible Materials' certification stamp; Φ pricing label on underside",
+    "condition_typical": "Case shows minor micro-scratches from pocket carry and field work; tools maintain pristine surface unless in active reconfiguration state; faint heat signature visible during extended use"
+  },
+  "image_prompt": "Professional product photography of three sleek, iridescent metallic lockpick tools displayed in an open matte-black carrying case against a dark workbench. Neural interface nodes glow cyan. Holographic lock-profile schematic visible above case. Moody cyberpunk lighting with rim light highlighting tool edges. Shallow depth of field. GLMZ workspace aesthetic with neon accent lighting from background. High-end gear catalog style. --ar 3:2 --v 6"
 }

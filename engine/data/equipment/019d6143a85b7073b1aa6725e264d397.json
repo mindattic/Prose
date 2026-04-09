@@ -78,5 +78,25 @@
     "The Synthetic Personhood League",
     "Vantablack VS-3 'Skin Job'",
     "WELLSPRING"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting full-body compression garment resembling high-end athletic wear or a tactical base layer. The suit conforms perfectly to human anatomy with no visible bulk or rigid components. At rest, it appears as a seamless second skin in matte finishes with subtle grid patterns visible under angled light where myomeric fiber bundles run beneath the surface.",
+    "dimensions": "Fits standard human frame; negligible additional volume beyond natural body dimensions. Available in modular coverage zones (full body ~180cm length when laid flat).",
+    "weight_description": "Extremely lightweight at 1.8 kg total. Feels like wearing premium athletic compression clothing; easily pocketable in component form, negligible burden during extended wear.",
+    "primary_material": "High-density elastomer composite base layer with integrated synthetic myomeric fiber bundles; piezoelectric sensor mesh interwoven throughout.",
+    "finish": "Matte technical polymer with subtle directional texture suggesting underlying muscle anatomy. Panels show faint grid patterns where myomeric actuators are bundled. Areas around major joints feature micro-articulated surface geometry for flexibility.",
+    "color_scheme": "Deep charcoal or midnight blue primary with accent striping in bioluminescent cyan along major myomeric pathways (visible only when powered). Helix Biosystems branding in reflective silver-grey on chest and shoulder zones.",
+    "interface_elements": "Minimalist: small semi-flexible interface panel (5cm × 3cm) at inner wrist or sternum showing vital stats via microLED array. Pressure-sensitive zones at collar and cuffs for zone adjustment. Micro charging port (hidden beneath left shoulder panel). No visible buttons; all control via haptic feedback and neural link compatible.",
+    "distinctive_features": [
+      "Visible myomeric fiber bundle patterns creating muscle-anatomy topography across surface",
+      "Cyan bioluminescent accent lines running along primary nerve/muscle pathways when active",
+      "Piezoelectric sensor grid creates subtle honeycomb surface texture under raking light",
+      "Strategic transparency panels at major joints revealing internal fiber lattice structure",
+      "Subtle breathing pattern: suit pulses with power state indicator (dim glow at rest, bright contraction during active detection)",
+      "Zero-profile design leaves no armor silhouette; indistinguishable from premium compression wear"
+    ],
+    "manufacturer_markings": "Helix Biosystems logo (stylized double helix in silver) on upper left chest. Regulatory certification stamps along inside seam: 'MEDICAL DEVICE CLASS III', serial number, batch code, mandatory biometric calibration ID, and warning label regarding uncertified variants.",
+    "condition_typical": "Worn as invisible undergarment beneath standard clothing. When visible (during fitting or demonstration), the suit shows subtle micro-movements as myomeric fibers continuously micro-adjust to maintain resting compression. Bioluminescent accents dim to barely visible in normal light, brighten under UV or during active response. Professional specimens show no degradation even after months of continuous wear; grey-market counterfeits often display uneven fiber tension visible as surface bulging or discoloration."
+  },
+  "image_prompt": "High-tech product photography of a sleek charcoal myomeric pressure suit laid flat on a stainless steel workbench under dramatic side-lighting. The suit's cyan bioluminescent accent lines glow softly along anatomical pathways, creating a second-skin silhouette. Close-up detail shots show the honeycomb piezoelectric sensor grid and muscle-fiber topography texture under raking light. Ultra-modern laboratory setting with holographic display screens in the background showing biometric calibration data. Helix Biosystems logo visible on chest. Cyberpunk aesthetic: cool blue-cyan ambient light, sharp shadows, industrial minimalism. Product presentation style combining medical device precision with tactical fashion. --ar 3:2 --v 6"
 }

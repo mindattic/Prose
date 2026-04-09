@@ -89,5 +89,24 @@
     "Whispermouth",
     "Yusra Ntambwe-Cakić",
     "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A minimalist two-wheeler with an almost skeletal aesthetic when operational — exposed recursive pivot joints visible along the frame spine create a distinctive articulated silhouette. The handlebars are narrow and angled slightly forward; the seat is a single curved saddle positioned above the central frame column. When folded, the entire assembly compresses into a nested geometric form resembling a angular travel pack with a pronounced central spine ridge.",
+    "dimensions": "Operational: 165 cm length × 45 cm width × 85 cm height from ground to handlebars. Folded: 58 cm height × 42 cm width × 28 cm depth (backpack-like profile).",
+    "weight_description": "14 kg folded and carried via integrated shoulder harness; handheld during the final stages of deployment/folding; light enough for sustained carry by a single person but requires deliberate handling during the fold/unfold transition.",
+    "primary_material": "Carbon-composite frame with visible joint articulation; polymer-wrapped handlebars; synthetic soft-touch saddle",
+    "finish": "Matte technical composite with a slight grip-texture coating; bare carbon weave visible at stress points and frame joints for visual authenticity; minimal gloss to reduce reflection signature",
+    "color_scheme": "Gunmetal gray with charcoal frame detailing; accent striping along the power-cell spine in deep Tessera corporate blue (#003366); matte black wheels and joints",
+    "interface_elements": "Small holographic deployment timer on the left handlebar (faintly illuminated, off when folded); minimal interface — a single power button on the frame spine (glowing pulse when charged); integrated induction charging port recessed into the rear of the seat column; simple LED battery indicator (three-stage: green/amber/red) visible when folded",
+    "distinctive_features": [
+      "Recursive fold joints visible as interlocking chevron patterns along frame spine",
+      "Smooth geometric collapse of the frame during folding — no dangling straps or exposed wiring",
+      "Ultra-narrow profile when deployed — almost sideways-oriented aesthetic compared to traditional bikes",
+      "Integrated harness attachment points that lock flush with the frame when folded",
+      "Absence of pedals — pure electric, no hybrid mechanical option"
+    ],
+    "manufacturer_markings": "Tessera Corporation logo (minimalist Φ symbol) embossed on the seat column; 'Recursive Fold Microframe — Gen 4' stamped on the rear frame joint; Vasquez Biocompatible Materials microstamp on the carbon weave near the power cell; regulatory compliance markers (GLMZ Transit Authority approval) on the left frame spine",
+    "condition_typical": "Operational unit shows minor scuff marks on the frame from corridor navigation; small dust accumulation on the joint hinges; battery indicator glowing steady green. Folded configuration: harness straps snug and secure, frame locked in compressed state with no visible wobble or misalignment in the joints."
+  },
+  "image_prompt": "Product photography of a Tessera Corporation Recursive Fold Microframe in both configurations side-by-side on a brushed steel workbench: left side shows the compact folded backpack form with integrated harness visible, right side displays the fully deployed two-wheeler with narrow frame geometry and exposed recursive joint articulation visible along the spine. Dramatic side-lighting emphasizing the carbon-composite weave texture and joint geometry. Cool-toned LED accent lighting in deep blue along the power-cell spine on the deployed unit. Dark matte background with subtle grid overlay suggesting a high-tech facility. Cyberpunk industrial aesthetic, shallow depth of field focusing on the joint mechanisms and frame details. --ar 3:2 --v 6"
 }

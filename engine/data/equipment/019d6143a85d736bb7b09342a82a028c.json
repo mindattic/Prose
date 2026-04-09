@@ -69,5 +69,23 @@
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "The Collective",
     "Vantablack-CNX"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, cylindrical pressurized canister resembling a high-end thermos or industrial aerosol dispenser. The body tapers slightly toward a precision-engineered dispersal nozzle at the apex. Deliberately utilitarian and unmarked to avoid attention in urban environments.",
+    "dimensions": "28cm tall, 8cm diameter — fits comfortably in a jacket pocket or small carrypack when wrapped",
+    "weight_description": "Handheld, roughly 400–500 grams when full; lightweight enough for single-hand operation or concealment",
+    "primary_material": "Aerospace-grade aluminum alloy with internal ceramic pressure vessel; aerospace safety seals",
+    "finish": "Matte gunmetal gray with subtle brushed texture to minimize reflectivity; minimal branding to avoid detection",
+    "color_scheme": "Gunmetal gray primary with anodized dark bronze accent bands near the nozzle and base; pressure gauge window shows faint amber-orange indicator fluid",
+    "interface_elements": "Single-stage trigger mechanism at the base (ambidextrous grip), transparent pressure gauge window (0–300 PSI scale), micro-LED status indicator (dormant until armed), threaded pressure-relief valve cap, stealth-mode passive safety lock",
+    "distinctive_features": [
+      "Ultra-fine precision dispersal nozzle with internal baffle designed to create near-silent, barely-visible aerosol cloud",
+      "Micro-etched serial numbers (deliberately worn/obscured on black-market units)",
+      "Pressure gauge dial with dual-language markings (English/Mandarin — origin trace)",
+      "Faint bioluminescent tinting visible on internal spore payload when backlit (engineered marker for agricultural tracking, difficult to remove)"
+    ],
+    "manufacturer_markings": "IRONCLAD AGRISYSTEMS logo (subtle, often removed or defaced on black-market canisters); model designation 'FSR-7' stamped on the base; legitimate units carry USDA/GLMZ regulatory stamps (absent on diverted stock)",
+    "condition_typical": "Black-market units show signs of hasty modification: tape-wrapped seams, scratched logos, aftermarket pressure-relief modifications, sometimes spray-painted matte to further obscure branding; legitimate agricultural units appear pristine and heavily labeled"
+  },
+  "image_prompt": "Sleek gunmetal-gray pressurized canister (thermos-sized) positioned on a grimy urban workbench surrounded by scattered circuit boards and bio-EM scanning equipment. Close-up detail: the precision nozzle and amber pressure gauge. Moody dramatic side-lighting casting sharp shadows. Faint bioluminescent glow visible through translucent sections. Cyberpunk noir aesthetic with rain-slicked steel surface. Background: blurred cityscape through grimy window. High contrast, desaturated colors with pops of amber and cyan. --ar 3:2 --v 6"
 }

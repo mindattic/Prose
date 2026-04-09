@@ -59,5 +59,29 @@
     "The Pure Hand",
     "The Seam",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A weathered, layered survival silhouette that reads as post-industrial scavenger. The figure appears bulky and utilitarian, with visible patching and material mismatches throughout. The overall impression is someone who has rebuilt themselves from salvage—nothing matches, everything works. The wide-brim hat and neck gaiter create a wrapped, fortress-like head profile.",
+    "fit": "Deliberately oversized and loose for movement and layering. The anorak drapes past the hips. The cargo trousers are relaxed through the thigh with tapered calf entry. The pullover sits slightly baggy to accommodate the thermal layer beneath. Everything is built for function over form—cinched where necessary, flowing where it matters for shelter.",
+    "primary_material": "Salvaged industrial tarp (anorak), wool-synth blend (pullover), heavy canvas patches, rubberized heat-bond repairs, faded cotton twill (trousers), neoprene (neck gaiter), cracked synthetic leather (gloves), waxed cotton (hat), multi-compound rubber (boot soles), chrome salvage metal (knuckle reinforcement)",
+    "texture": "Heavily textured and tactile. The anorak is stiff and weathered with visible heat-bonded seams. The wool-synth pullover is dense and nubbed. Patches show different fabric weaves—some smooth, some rough. The boots have a frankenstein quality with visible seam work. Chrome knuckles add metallic texture. Everything reads as touched by weather and repair.",
+    "color_scheme": "Dominant rust-orange faded to cream on the anorak with irregular grey and tan canvas patches. Charcoal wool pullover with darker (almost black) mismatched left sleeve. Faded olive trousers with silver tape accent at hip. Weathered waxed-tan hat with dark staining. Black, grey, and deep red rubber patchwork on boot soles. Chrome metal at knuckles catches light. Overall palette is desaturated earth tones punctuated by utilitarian greys and the occasional flash of salvaged metal.",
+    "closures": "Pragmatic mix: the anorak uses heavy friction-fit and implicit layering to seal. Trousers feature standard belt loops (likely with improvised cordage belt) and mixed zippers—two pockets sealed with mismatched salvage zippers, one hip seam held with self-repair tape instead of stitching. Boots lace-tied or friction-fitted. Gloves are loose fingerless pull-ons. Neck gaiter hangs free, meant to be pulled up on demand. Hat sits unadorned.",
+    "distinctive_features": [
+      "Asymmetrical left sleeve replacement—visibly different fabric and darker tone",
+      "Heat-bonded canvas patches concentrated at shoulders and collar—areas of highest acid wear",
+      "Hip seam repaired with silver self-repair tape instead of traditional stitching",
+      "Right-hand knuckle guard made from salvaged chrome aug-brace",
+      "Boot soles rebuilt multiple times with visible patchwork of different rubber compounds",
+      "Mismatched zipper repairs on cargo pockets",
+      "Neoprene neck gaiter loose and ready-to-deploy",
+      "Waxed cotton hat with dark weathering stains at crown",
+      "No visible branding—purely functional salvage assembly",
+      "Faded safety-orange base color creating visual story of extended outdoor exposure"
+    ],
+    "tier_indicator": "Tier 5 salvage. This is sub-grade territory—nothing here cost Φ in a store. Every component is scavenged, repaired, or jury-rigged. The multiple patches, mismatched materials, and chrome-knuckle reinforcement signal someone operating outside corporate supply chains.",
+    "cultural_context": "Wearing this marks you as Shelf-side—the kind of person who lives in acid rain zones and has adapted rather than evacuated. It signals practical survivor culture, community salvage networks, and familiarity with environmental hazards corporate tiers don't face. This is the uniform of water-runners, waste-sorters, and the unregistered. Wearing it in a corpo zone would mark you immediately as sub-grade.",
+    "condition_typical": "Always broken-in and weathered. This garment never looks pristine—it's designed to look patched and repaired. The newer condition would be 'freshly salvaged with tape still crisp'; the worn condition is 'patches fading into the base material.' Acid staining, salt residue, and water rings are expected. Any pristine-looking component stands out as a recent find."
+  },
+  "image_prompt": "A figure in a full Rustwater Layering Rig stands in acidic downpour under dim amber industrial lighting. The knee-length faded rust-orange anorak with visible heat-bonded grey canvas patches drapes loosely over a mismatched charcoal and black wool-synth pullover. Olive cargo trousers with silver repair tape gleam at the hip seams, tucked into multi-patched boots with patchwork rubber soles. A wide-brim waxed-cotton hat shields the face, a neoprene neck gaiter hangs ready at the throat, and fingerless gloves with chrome knuckle reinforcement grip the frame. Rain beads off treated surfaces. Moody, high-contrast lighting emphasizes every seam, patch, and salvage detail. Dark industrial backdrop—corrugated metal, sodium vapor haze, water streaks. Ultra-weathered, hyper-functional, survival aesthetic. Cinematic cyberpunk street wear. --ar 2:3 --v 6"
 }

@@ -44,5 +44,39 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus HD-1 'Homestead'",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Tessera TK-20 Apex 'Mandate'",
+    "The Bazaar",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately retro-modern rifle with clean, utilitarian lines. The HF-30 resembles early-21st-century designs — no tactical rails, no integrated optics, no aesthetic nods to chrome or neon. It reads as honest and purposeful: a rifle that looks like it was designed to be built in a workshop, not a corporate fab. The wooden furniture stands out in a market of synthetic polymers and smart-materials.",
+    "dimensions": "Overall length: 96.5cm | Barrel length: 41cm | Width across furniture: 8.2cm | Height with standard sights: 7.5cm",
+    "weight_description": "Balanced and notably light for an assault rifle — 3.6kg feels almost delicate compared to military-grade platforms. Not featherweight, but designed to be carried all day by civilians without military conditioning. The weight distribution is forward-balanced.",
+    "primary_material": "Steel receiver and barrel with polymer lower receiver (injection-molded composite). Wooden furniture on grip and foregrip (options include untreated birch, stained ash, or polymer-laminate veneer). Zero aluminum, zero exotic composites.",
+    "finish": "Matte parkerized or cold-blue steel on barrel and receiver — deliberately muted, with micro-scratches and marks from manufacturing visible under close inspection. The wood is either natural oil-finished or sealed with matte lacquer. No shine. No polish. No chrome.",
+    "color_scheme": "Charcoal-black parkerized steel (slight blue undertone) paired with warm wood tones (golden-tan ash or pale birch depending on variant). Polymer lower receiver in flat gray or bone-white.",
+    "grip_texture": "Wooden foregrip and pistol grip feature light checkering and natural grain texture — slightly rough, tactile, offering no-slip purchase even when wet. The polymer trigger guard is smooth, contoured, unpretentious.",
+    "distinctive_features": [
+      "Traditional A2-style post front sight with protective wings",
+      "Flip-up rear aperture sight (low-profile, non-adjustable)",
+      "No picatinny rails — rifle designed for iron sights only",
+      "Gas tube runs exposed along top of barrel",
+      "Dust cover (basic, manual)",
+      "Charging handle on right side only (no ambi option)",
+      "Simple cross-bolt safety lever",
+      "Straight, unadorned magazine well",
+      "Wood grain visible on furniture — no synthetic uniformity",
+      "Minimal markings: small HEARTHSTONE FIREARMS stamp on barrel, caliber marking on receiver"
+    ],
+    "manufacturer_markings": "HEARTHSTONE FIREARMS name stamped into barrel band (small, legible but modest). Serial number etched into lower receiver. Caliber marking (5.56 NATO BRASS) stamped on the dust cover. No logos, no chrome accents, no branding flourish.",
+    "condition_typical": "Field condition: well-maintained but showing honest wear — light surface oxidation on barrel, fingerprints and dust on wood furniture, scratches around the ejection port from loading and clearing. Not neglected, not babied. A working tool with visible evidence of use."
+  },
+  "image_prompt": "Product photography of a Hearthstone Firearms HF-30 Homestead rifle lying on a dark matte steel surface, three-quarter view angled slightly upward. Dramatic side-lighting from the left, casting deep shadows across the wooden furniture, highlighting the grain. The receiver catches soft metallic gleam. Close-up detail visible on the gas tube, front sight post, and wood checkering. Background is industrial — brushed steel or dark concrete texture. Cyberpunk aesthetic achieved through harsh, clinical lighting and desaturated color palette. Style: tactical catalog photography with zero chrome, zero neon, deliberately retro-futuristic. 2226 GLMZ civilian defense weapon. --ar 3:2 --v 6"
 }

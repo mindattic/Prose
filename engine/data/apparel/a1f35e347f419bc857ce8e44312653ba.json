@@ -37,5 +37,25 @@
     "Free Assembly",
     "The Pure Hand",
     "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek, articulated gloves with a pronounced exoskeletal framework visible along the dorsal side of each hand and fingers. The structure suggests precision engineering—metallic actuators run parallel to the bones, connected by thin tension cables. Despite the bulk, the silhouette remains hand-centric and purposeful, not clunky. Worn by surgeons, augmentation technicians, and high-tier medical specialists.",
+    "fit": "Form-fitting at the palm and wrist with graduated compression; finger segments allow full articulation while the exo-frame sits slightly proud of the skin surface, creating a layered appearance. Wrist section is snug and stabilizing, extending 3-4 inches up the forearm.",
+    "primary_material": "Ballistic weave synthetic base layer with embedded haptic feedback threads; titanium-aluminum alloy exoskeleton segments; medical-grade silicone interface pads at contact points.",
+    "texture": "Smooth, almost slick synthetic exterior with visible micro-ridging where actuators meet fabric. The metal framework has a brushed, non-reflective finish to reduce surgical light scatter. Palm interior is tactile—slightly textured for grip confidence.",
+    "color_scheme": "Gunmetal gray exoskeleton with a matte charcoal synthetic base. Accent threading in deep teal (Veridian's brand color) runs along the tension cables. Surgical-white piping at wrist closure for sterile environment visibility.",
+    "closures": "Magnetic snap system at the wrist with a secondary friction-fit compression band. No traditional fasteners—designed for rapid donning/doffing in sterile conditions.",
+    "distinctive_features": [
+      "Micro-actuator array along each finger with visible tension cables",
+      "Haptic feedback nodes embedded in palm and fingertips—subtle raised dimples",
+      "Veridian Optics logo (stylized 'V' with optical lens motif) on wrist dorsum",
+      "Recessed power micro-port on inner wrist (connects to wrist-worn stabilization unit)",
+      "Translucent synthetic windows on knuckles revealing calibration markers",
+      "Anti-tremor dampening system visible as a slight shimmer in the fabric under certain light angles"
+    ],
+    "tier_indicator": "Tier 1-2 luxury medical/augmentation tech. Costs 8,500-12,000 Φ new. Signals elite surgical or corpo augmentation specialist status.",
+    "cultural_context": "Worn by corpo surgeons, independent augmentation technicians with high reputation, and medical facility lead staff. Not street gear—signals expertise, access to capital, and trust with high-stakes work. A tool that identifies the wearer as someone whose hands are worth protecting and enhancing.",
+    "condition_typical": "Pristine to lightly used when in active rotation; medical-grade maintenance keeps them sterile and calibrated. Worn examples show minor cosmetic scuffing on the exoskeleton but retain full structural integrity. Replacement every 18-24 months due to micro-actuator wear."
+  },
+  "image_prompt": "Extreme close-up of a pair of gunmetal Veridian Optics micro-surgery exo-gloves displayed on a dark medical mannequin hand, fingers slightly splayed to show the articulated exoskeleton and embedded actuator framework. Harsh, cool surgical lighting from above casts sharp shadows through the tension cables. Teal accent threading glows subtly under the light. Sterile white surgical backdrop with subtle depth blur. The wrist port is visible, with a thin data-cord suggesting active calibration. Cyberpunk surgical precision aesthetic, clinical and dangerous. --ar 2:3 --v 6"
 }

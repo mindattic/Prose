@@ -71,5 +71,23 @@
     "TESSERA PG-2 'Signature'",
     "Tessera Corponation",
     "The Nearfield"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, forward-facing wedge resembling a compact directional speaker or sensor pod. The device tapers from a broad emission face to a narrower grip section, optimized for one-handed operation. Angular, purposeful industrial design with no unnecessary ornamentation.",
+    "dimensions": "Palm-sized: 9.4 cm long × 4.1 cm wide × 2.8 cm deep. Fits easily in a closed fist or jacket pocket.",
+    "weight_description": "Lightweight at 190 grams; pocketable and worn clipped to collar, waistband, or held in palm during operation.",
+    "primary_material": "Brushed titanium-composite alloy housing with embedded polycarbonate acoustic lens on emission face. Vasquez biocompatible polymer grip texture on rear section.",
+    "finish": "Matte gunmetal on body; translucent frosted polycarbonate lens face reveals micro-transducer array within. Subtle iridescent shift on edges under oblique light from embedded phase-calibration markings.",
+    "color_scheme": "Gunmetal gray primary with charcoal grip. Faint cyan accent lines trace the transducer array pattern beneath the lens. Small Tessera Corponation logotype in white on rear grip.",
+    "interface_elements": "Minimal: single capacitive power/mode toggle on rear, three status LEDs (power, active null, battery) embedded in top spine. 3.5mm charging port (magnetic connector preferred). No screen; operation is tactile and audio-feedback only. Discrete microphone perforations ring the emission face.",
+    "distinctive_features": [
+      "Phased micro-transducer array visible as a honeycomb grid behind frosted emission lens",
+      "Triangular heat-dissipation vanes along upper edges",
+      "Subtle cyan recalibration status pulse that cycles during active operation",
+      "Grip texture mimics biocompatible polymer to reduce hand fatigue during extended hold"
+    ],
+    "manufacturer_markings": "Tessera Corponation stamped discreetly on rear. Vasquez Biocompatible Materials embossed subtly on grip. FCC-equivalent GLMZ regulatory stamp on underside (three-sector approval). No serial number visible without removing battery cover.",
+    "condition_typical": "In operation, a faint high-frequency hum (barely audible to unaugmented human hearing) emanates during active null mode. Micro-LEDs pulse cyan at ~3Hz during calibration. Device is warm to touch after 45+ minutes continuous use. Shows minor scuff marks on grip from pocket carry; emission lens remains pristine due to protective coating."
+  },
+  "image_prompt": "Product photography of a compact gunmetal-gray acoustic emitter device on a dark carbon-fiber workbench, tilted 35 degrees to showcase the frosted polycarbonate emission lens with visible micro-transducer honeycomb beneath. Dramatic overhead keylighting casts angular shadows, cyan accent LEDs faintly glowing. Shallow depth of field isolates the device. Background shows blurred waveform analyzer screen and test microphones. Cyberpunk product shot, clinical precision, high-tech stealth aesthetic, moody cool lighting. --ar 3:2 --v 6"
 }

@@ -47,5 +47,25 @@
     "Slagworks Industrial",
     "Tessera Corponation",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist long-sleeve base layer that hugs the torso like a second skin without visual bulk. The matte charcoal or slate grey finish reads clean and understated—athletic in intent but refined enough for professional contexts. Low crew neck sits just below the collarbone. Minimal visible seaming creates an almost seamless appearance. The garment moves with the body rather than against it.",
+    "fit": "Slim, form-fitting without compression. Four-way stretch allows full range of motion. Sits close enough to layer invisibly under jackets, vests, or armor plating without bunching. Sleeves taper gently to the wrist.",
+    "primary_material": "High-performance four-way stretch synth-blend weave embedded with phase-change micro-capsules. Smooth surface, technical but non-reflective.",
+    "texture": "Soft, matte finish. Slightly tactile—smooth but with subtle micro-grip that prevents sliding. The weave is tight enough to be invisible at arm's length; up close, you can see the uniform knit structure and faint shimmer of integrated capsule network.",
+    "color_scheme": "Matte charcoal grey or slate grey. Neutral, universal. No patterns, no branding visible on the body—minimal aesthetic footprint.",
+    "closures": "None. Pullover design with elasticated crew neck and wrist cuffs.",
+    "distinctive_features": [
+      "Embedded phase-change micro-capsules throughout the weave—thermal regulation without electronics",
+      "Nearly invisible seaming; virtually seamless construction at shoulders and sides",
+      "Four-way stretch fabric allows unrestricted movement",
+      "Minimal branding—Lumen logo only on inner neckline tag",
+      "Temperature-adaptive function: absorbs heat when warm, releases when cool",
+      "Ideal layering piece—creates no bulk under outerwear"
+    ],
+    "tier_indicator": "Tier 3 functional. Quality material and proven tech, but accessible pricing. Signals practical investment rather than luxury.",
+    "cultural_context": "Worn by couriers, cycle commuters, warehouse workers, medical techs, anyone with physically demanding work who needs to transition seamlessly between environments. Suggests someone who values function over fashion, who moves between climate zones regularly, who treats their gear as tools rather than status symbols.",
+    "condition_typical": "Broken-in but well-maintained. Shows minor wear at collar and cuffs from repeated use. No visible pilling. Maintains structural integrity over years of heavy wear."
+  },
+  "image_prompt": "Cyberpunk courier wearing matte charcoal Lumen Adaptive Base Layer, form-fitting long sleeves, minimal crew neck, visible as layering piece under an open utility vest. Model has mixed heritage features, subtle augmentation ports visible at temple. Posed mid-stride against industrial Great Lakes corridor backdrop—steel girders, thermographic signage, cool blue-green emergency lighting. Photograph captures the seamless fit and matte finish of the fabric. Moody, functional aesthetic. --ar 2:3 --v 6"
 }

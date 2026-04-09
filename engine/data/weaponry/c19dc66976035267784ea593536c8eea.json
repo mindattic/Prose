@@ -44,5 +44,42 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Automated Street Sweeper",
+    "Cezar Watanabe-Gyasi",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "GLMZ",
+    "KESSLER KINETICS Velociter Sprint Leg System",
+    "Kang-Petrov Arms KPM-6 'Equalizer'",
+    "MERIDIAN",
+    "Nika Svensson-Kone",
+    "Slagworks Industrial",
+    "The Compact",
+    "The Human Baseline Alliance",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, aggressive machine pistol with a purposefully minimalist profile. The CMP-4 appears almost toy-like at first glance due to its diminutive size, but its angular geometry and exposed mechanical components convey lethal intent. The silhouette is a wedge—narrow grip tapering to a slightly flared muzzle brake. The folding foregrip creates a distinctive undercut when retracted, breaking the pistol's otherwise streamlined form.",
+    "dimensions": "Overall length 18cm (23cm with foregrip deployed), barrel length 8.5cm, width 3.2cm at slide, height 11cm from grip to rear sight",
+    "weight_description": "Deceptively light—feels almost insubstantial in a single hand, encouraging two-handed grip deployment. When held, the balance point sits slightly forward of the trigger guard, creating a nose-heavy feel that manages recoil impulse",
+    "primary_material": "Reinforced polymer frame (dark-tinted thermoplastic composite) with tool steel slide and barrel. Minimal metal—engineered for cost-effectiveness and corrosion resistance in the GLMZ's industrial corridors",
+    "finish": "Matte charcoal polymer body with brushed steel slide showing micro-scratches from repeated chambering cycles. The barrel features a fine bead-blasted treatment to reduce light reflection. Wear patterns consistent with frequent field use—edges showing pale highlights where polymer abrasion has exposed lighter substrate",
+    "color_scheme": "Primary: dark charcoal grey polymer. Accents: brushed gunmetal-grey steel (slide, barrel, springs visible through ejection port). Minimalist color palette reflects its 'no-nonsense' design philosophy",
+    "grip_texture": "Integral grip is waffle-pattern molded polymer with aggressive micro-texture—provides assured purchase even when wet or gloved. The grip angle is aggressive (approximately 25°) to assist with recoil management. Foregrip attachment points are knurled steel inserts",
+    "distinctive_features": [
+      "Exposed reciprocating bolt visible in slide windows—clear mechanical indicator of firing readiness",
+      "Fixed front post sight mounted directly on barrel with tritium vial (faint green glow visible)",
+      "Folding foregrip mechanism: skeletal steel tube rotating downward from lower barrel, simple pin-joint design with no springs or catches",
+      "Ambidextrous manual safety lever positioned at trigger guard (top-left and top-right)",
+      "Rectangular ejection port showing visible internal mechanism—no brass deflector, cases eject at 45°",
+      "Magazine well recessed slightly, polymer lips reinforced with steel inserts showing wear patina",
+      "Muzzle brake with three port openings creating distinctive asymmetrical silhouette",
+      "Serial number and caliber designation stamped (not laser-etched) on left side of slide, numbers dark-filled"
+    ],
+    "manufacturer_markings": "'MERIDIAN MUNITIONS' text stamped in clean sans-serif across left side of slide. Small Meridian logo (angular double-M symbol) inset into grip panel. 'CMP-4 JACKRABBIT' text and Φ symbol etched in smaller font on magazine witness marks",
+    "condition_typical": "Field-worn but mechanically sound. Polymer shows micro-scratches and scuff marks from holster wear and equipment contact. Steel components exhibit light surface oxidation patina—not rust, but the grey-brown discoloration of well-used uncoated steel. Magazine springs slightly compressed from being loaded. Overall impression: a tool that has been used hard and cleaned regularly, with no cosmetic concern"
+  },
+  "image_prompt": "Product photograph of Meridian Munitions CMP-4 Jackrabbit compact machine pistol, shot from top-down angle on matte black synthetic surface. Weapon positioned with folding foregrip deployed and retracted variants shown side-by-side. Dramatic side-lighting from left, creating rim-light on polymer body and specular highlights on brushed steel slide. 15-round magazine positioned nearby. Cyberpunk aesthetic: cool tungsten color temperature, slight blue color cast. Shallow depth of field with focus on foregrip mechanism and trigger guard detail. Professional tactical product photography style. --ar 3:2 --v 6"
 }

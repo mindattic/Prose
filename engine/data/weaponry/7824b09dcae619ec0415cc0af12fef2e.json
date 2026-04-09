@@ -43,5 +43,35 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
+    "Fatoumata Belov-Ntim",
+    "Focadrin",
+    "Nika Svensson-Kone",
+    "TESSERA PG-2 'Signature'",
+    "TESSERA TC-3 'Crucible'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, aggressive assault rifle with a distinctly thermal aesthetic. The profile is angular and purposeful, with a noticeably reinforced barrel assembly that tapers slightly toward the muzzle. The design reads as purpose-built for a single, devastating function. Upper receiver slopes downward subtly, creating a predatory silhouette.",
+    "dimensions": "960mm overall length, 78mm width at receiver, 145mm height with integrated scope. Barrel length 520mm.",
+    "weight_description": "Hefty but balanced—4.0 kg distributes evenly across the platform. Front-heavy due to thermal-lined barrel assembly, but the gas piston system and receiver geometry keep it manageable for sustained fire.",
+    "primary_material": "Chromium-molybdenum steel receiver with thermal-resistant alloy barrel lining. Polymer furniture in heat-resistant composite. Picatinny rails are tool steel.",
+    "finish": "Matte gunmetal gray with heat-scorched aesthetic on barrel assembly. Upper receiver shows subtle oxidation patterns from thermal stress testing. Polymer furniture has a textured, almost charred appearance—intentional design mimicking exposure to its own weapon effects.",
+    "color_scheme": "Gunmetal gray primary, charcoal black accents, burnt orange/amber heat-stress discoloration along the barrel. Scope window is deep teal (BCI display color).",
+    "grip_texture": "Stippled polymer grip with minimal texture—designed to shed sweat and ash residue. Charging handle is knurled steel. Magazine well has subtle friction ridges.",
+    "distinctive_features": [
+      "Reinforced, visibly thickened barrel assembly with cooling fins along the upper surface",
+      "Integrated BCI thermal scope mounted directly to receiver with teal-lit reticle visible through optics",
+      "Heat stress discoloration radiating from chamber—intentional burnishing showing the weapon's relationship with fire",
+      "Thermal indicator plate (red/orange color-shift material) beneath the charging handle—darkens when rifle reaches operational temperature",
+      "Magazine witness holes with thermite-round identification markings",
+      "Muzzle brake designed asymmetrically to redirect thermal bloom upward and away from shooter",
+      "Ambidextrous safety lever with textured detents",
+      "Proprietary magazine latch with slight lip design to stabilize heavier thermite-loaded rounds"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES stamped in sharp serif font on the left side of the receiver, just behind the mag well. ER-7 'ASHFALL' engraved beneath in smaller caps. Serial number on the right side of lower receiver in six-digit format. Caliber marking (.6.5mm THERMITE) stamped on the barrel in white fill. BCI thermal scope has Crucible branding on the objective lens ring.",
+    "condition_typical": "Field weapons show carbon buildup around the chamber from thermite residue. Scorch marks and ash streaking on the barrel are normal. Well-maintained examples have clean optics and unstressed polymer, but the matte finish naturally conceals heavy use. Operators often see heat-browning on the bolt carrier from normal operation."
+  },
+  "image_prompt": "Close-up product photography of the Crucible Industries Ember Rifle ER-7 'Ashfall' assault rifle, mounted on black composite stand or held in gloved operator hands. Dramatic side-lighting emphasizing the reinforced barrel assembly and thermal-resistant features. Muzzle slightly elevated. Integrated teal-lit BCI scope visible with faint digital reticle glow. Subtle heat-scorching and oxidation patterns visible on metal components. Background is dark matte black with deep teal accent lighting reflecting off optics. Hyperrealistic 8K detail showing stippled grip texture, cooling fins, and CRUCIBLE INDUSTRIES markings. Cyberpunk tactical aesthetic with hints of burnt orange discoloration from thermal stress. Shot from 3/4 angle emphasizing the aggressive forward profile and reinforced gas tube. Metal surfaces reflect cool blue-white key light with warm amber highlights on thermite-stressed areas. --ar 3:2 --v 6"
 }

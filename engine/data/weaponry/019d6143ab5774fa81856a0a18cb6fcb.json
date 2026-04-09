@@ -54,5 +54,38 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+    "Cezar Watanabe-Gyasi",
+    "Endolymphatic Pressure Cascade Rifle",
+    "GLMZ",
+    "Hadiya Holm-Danquah",
+    "Narrowcast",
+    "Phased Acoustic Neurostimulator PAN-3 'Tinnitus'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, deliberately clinical carbine with an unusually narrow profile. The barrel assembly is noticeably slender and tapered, almost delicate compared to conventional firearms. The overall aesthetic is precision medical equipment grafted onto a weapon platform — angular, minimalist, with clean lines that suggest expensive engineering. There's an almost surgical quality to its proportions.",
+    "dimensions": "112 cm overall length, 6.2 cm width at receiver, 4.1 cm barrel diameter. Barrel length 58 cm. Magazine/capacitor housing extends 8 cm below the grip.",
+    "weight_description": "Surprisingly light and balanced for a carbine — 1.9 kg sits easily in one hand. The weight distribution is forward-biased toward the barrel assembly, making it feel almost delicate despite its lethal precision.",
+    "primary_material": "Brushed titanium alloy receiver with carbon-fiber composite furniture. The barrel assembly is wrapped in a dark anodized aluminum heat-sink lattice structure.",
+    "finish": "Matte charcoal with brushed metallic accents. The barrel heat-sink has a distinctive crosshatch pattern in gunmetal grey. No reflective surfaces — intentionally designed to minimize visual signature.",
+    "color_scheme": "Charcoal black primary, gunmetal grey heat-sink accents, minimal chrome on the capacitor bank indicator window",
+    "grip_texture": "Textured polymer grip with shallow hex-pattern etching for traction without being aggressive. Cool to the touch, slightly tacky. The forestock is wrapped in soft rubberized material with subtle ribbing.",
+    "distinctive_features": [
+      "Narrow, tapered barrel with visible cooling lattice vanes running its full length",
+      "Transparent capacitor charge indicator window on the left receiver side — shows luminescent blue fluid when fully charged, amber when depleted",
+      "Precision frequency tuning dial on the upper receiver marked in Hz increments (800–3400 Hz range)",
+      "Minimal iron sights, optimized for integrated targeting systems or scope mounting",
+      "Three small galvanic coupling nodes visible along the barrel shroud (red circular ports with faint LED indicators)",
+      "Sound dampening collar around the muzzle — unusual for an acoustic weapon, suggests operator hearing protection is standard",
+      "Serial plate stamped 'KERNEL IMAGING SYSTEMS / TMGRC-4 / TESSERA CORP LICENSE' with holographic security verification seal",
+      "Micro-scratch patina across the titanium receiver — evidence of field use"
+    ],
+    "manufacturer_markings": "Kernel Imaging Systems logo (a stylized ear crossed by a sine wave) laser-etched on the left receiver. 'TMGRC-4' stamped in small serif font above the magazine well. Tessera Corporation licensing seal (holographic) on the lower receiver — iridescent when tilted.",
+    "condition_typical": "Well-maintained but field-worn. Titanium receiver shows micro-scratches and faint handling marks. Muzzle collar has scuff marks from deployment in urban environments. Capacitor window shows internal fluid turbulence — evidence of repeated charge cycles. No major damage — operators treat these weapons with clinical precision."
+  },
+  "image_prompt": "Product photograph of the TMGRC-4 carbine on a black matte surface, shot from a three-quarter angle. The weapon is held in a gloved tactical hand (dark synthetic material, chrome-knuckle reinforcement visible). Dramatic side-lighting from the left, casting sharp shadows across the barrel's heat-sink lattice and highlighting the brushed titanium receiver's micro-scratches. The capacitor charge indicator glows faint blue in the center-left shadow. Background is dark grey geometric shapes suggesting corporate medical or security facility aesthetics. Shallow depth of field with the muzzle in sharp focus. Cyberpunk atmosphere, clinical precision, cold efficiency. No flesh tones visible except skin at the wrist. --ar 3:2 --v 6"
 }

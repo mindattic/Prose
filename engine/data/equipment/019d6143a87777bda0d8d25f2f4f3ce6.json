@@ -49,5 +49,23 @@
     "Alper Holmberg-Dembele",
     "Arcturus PX-1 'Phantom'",
     "TESSERA PG-2 'Signature'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular throwable device resembling a polyhedral die or crystalline grenade. The form factor is deliberately irregular to tumble naturally when thrown. Housing is translucent in places, revealing prismatic internal optics and a faintly glowing power cell core. Edges are beveled and grip-friendly despite its small size.",
+    "dimensions": "6 cm (width) × 5 cm (height) × 5 cm (depth) — palm-sized, easily concealed in a closed fist",
+    "weight_description": "150 grams — light enough to throw with accuracy, heavy enough to travel 15+ meters with a good arm",
+    "primary_material": "Aircraft-grade polymer composite with embedded holographic projection matrices; translucent polycarbonate panels over internal mechanisms",
+    "finish": "Matte with subtle iridescent coating that shifts color in light; smooth grip sections contrast with textured throw surfaces for control",
+    "color_scheme": "Gunmetal gray primary with deep teal accents; internal optics glow faint cyan when active; Tessera Industries branding in silver",
+    "interface_elements": "Single large twist-lock activation ring (top hemisphere) with detent positions; no screen or buttons — fully mechanical activation. Small status LED (green/red) on one corner. Recessed maintenance port on base with Tessera proprietary seal.",
+    "distinctive_features": [
+      "Internal holographic projection lens visible through translucent side panel, reflecting light like a prism",
+      "Tessera Industries logo (geometric Φ-derived symbol) etched on two faces",
+      "Faint heat shimmer visible around one edge when powered (thermal generator test)",
+      "Beveled facets create interesting light patterns; intentionally designed to catch light during throw trajectory for visual tracking"
+    ],
+    "manufacturer_markings": "TESSERA INDUSTRIES | HDP-5 DISTRACTION MODULE | Φ LICENSED TIER 3+ | SINGLE USE | Date code on base; small regulatory stamps (GLMZ safety compliance, thermal emitter certification)",
+    "condition_typical": "Fresh units show pristine finish; after use, the device typically has minor scuff marks from impact and tumbling. The twist-lock shows slight wear from activation. Internal optics may show minor dust accumulation but remain functional. Post-deployment units are non-recoverable (self-destruct after 20 seconds)"
+  },
+  "image_prompt": "Tessera Industries HDP-5 holographic distraction projector on matte black workbench, product photography style. Polyhedral gray and teal device shown from three angles: activation detail, full form, translucent panel revealing internal prismatic optics. Dramatic side-lighting creates iridescent shimmer on surface; faint cyan glow emanates from internal power core. Cyberpunk aesthetic with moody industrial lighting, shallow depth of field. Nearby tools and components out of focus. High contrast, cinematic product shot. --ar 3:2 --v 6"
 }

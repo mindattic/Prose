@@ -54,5 +54,23 @@
     "TESSERA PG-2 'Signature'",
     "The Burnline",
     "Zheng-Dao Bioelectric Galvanic Dermis Overlay"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact modular control unit with a secondary emission pack, resembling a chunky tactical belt accessory. The main module features a slightly curved form factor designed to conform against the hip or lower back, with a secondary electrode array pack connected via reinforced flex-cable. The overall aesthetic is utilitarian and encrypted-looking, with a matte finish interrupted by subtle indicator elements.",
+    "dimensions": "Main module 12cm x 8cm x 4cm; electrode pack 18cm x 6cm x 2cm; total span with flex-cable approximately 35cm when worn",
+    "weight_description": "Light enough for all-day wear (0.2 kg total); distributes across belt integration points to avoid sagging or creating visible bulges under clothing",
+    "primary_material": "Reinforced polymer composite housing with embedded conductive mesh lining; electrode pack uses biocompatible silicone contact interface with titanium contact points",
+    "finish": "Military-grade matte charcoal coating with faint iridescent anti-glare sheen; electrode pack has textured medical-grade silicone in gunmetal gray",
+    "color_scheme": "Matte black primary body with gunmetal gray accents; status indicators glow in soft amber, blue, and red against the dark housing",
+    "interface_elements": "Recessed capacitive touch surface for mode selection (five-point input grid); two-line monochrome LCD display (amber-on-dark); three status LEDs (power, active field, battery); proprietary neural-interface port (pogo connector array); micro USB charging port (recessed, security-gated)",
+    "distinctive_features": [
+      "Subtle pulse-synchronized LED breathing pattern when active—mimics resting heartbeat to indicate operational status",
+      "Flex-cable umbilicus connecting control module to electrode array, reinforced with braided shielding to prevent RF interference",
+      "Intricate circuit-board etching visible through translucent accent panel on rear (design choice emphasizing technical sophistication)",
+      "Faint haptic feedback pulsing during mode transition—felt as subtle vibration against wearer's body"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS embossed in beveled lettering on front bezel; regulatory compliance stamps (GLMZ-certified, counter-surveillance licensed) in small print on underside; serial number laser-etched into module frame",
+    "condition_typical": "Worn snug against body under tactical clothing or loose streetwear; electrode pack adhered to skin with medical-grade conductive patches; barely visible unless wearer removes outer layer or moves in ways that expose belt line"
+  },
+  "image_prompt": "Professional product photography of the Carrion Defense Works BCG-2 bioelectric camouflage generator displayed on a dark tactical workbench surrounded by counter-surveillance equipment. Main module in focus center-frame, electrode pack laid parallel beside it with flex-cable coiled naturally. Dramatic sidelit blue and amber technical lighting emphasizing the matte black finish and subtle status LEDs glowing softly. Secondary overhead rim lighting catches the embossed lettering and accent materials. Cyberpunk aesthetic with scattered maintenance tools, a neural interface connector visible on adjacent surface, and holographic readout projecting bioelectric waveform data nearby. Shallow depth of field. High contrast, moody atmospheric lighting suggesting covert operational environment. --ar 3:2 --v 6"
 }

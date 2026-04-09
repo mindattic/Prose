@@ -55,5 +55,44 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
+    "GLMZ",
+    "Glenville Sound",
+    "Ihaia Nystrom-Keita",
+    "Iowan Behemoth — 'Thunderhead'",
+    "Kamala Larsen-Mensah",
+    "Narrowcast",
+    "Prosper Akinwale-Grunewald",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "TESSERA PG-2 'Signature'",
+    "The Third Rail",
+    "Vantablack PA-1 'Pacifier'",
+    "Zurab Ivanov-Appiah"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, distinctly bulbous sidearm with an oversized muzzle that dominates its profile. The barrel swells to nearly the width of the grip, giving it an almost organic, bulging appearance — like a water droplet frozen mid-fall. The overall shape is squat and utilitarian, lacking the sleek lines of conventional firearms. At first glance it reads as crude, almost homemade, until the precision engineering becomes apparent.",
+    "dimensions": "22 cm length overall; 9 cm muzzle width; grip approximately 4 cm wide; barrel chamber depth ~8 cm",
+    "weight_description": "Deceptively dense and balanced despite compact size. The 1.1 kg load sits low in the hand due to the ferroelectric capacitor core, creating a front-heavy feel that demands grip discipline. Not unwieldy, but demands respect — the weight distribution suggests contained power.",
+    "primary_material": "Reinforced polymer composite frame with steel internal lattice; ferroelectric chamber walls are tungsten-composite; magnetic suspension housing is titanium alloy to withstand inversion pulse stress",
+    "finish": "Matte charcoal polymer with brushed steel accents around the capacitor housing. The muzzle bell shows a subtle bronze-tinted anodization — functional rather than decorative, likely a thermal dissipation coating. Wear patterns are precise and deliberate, not accidental.",
+    "color_scheme": "Charcoal gray primary with gunmetal steel secondary; bronze-gold accents at muzzle rim and capacitor vents; minimal branding in matte silver",
+    "grip_texture": "Textured polymer with slight tacti-knurling on the forward section; the wraparound grip shows a crosshatch pattern that provides secure purchase even in wet or gloved conditions. Slightly warm to the touch due to capacitor proximity.",
+    "distinctive_features": [
+      "Bulbous, asymmetrical muzzle bell that dominates the weapon's profile",
+      "Four micro-vents along the upper muzzle showing bronze-gold thermal coating",
+      "Ferroelectric capacitor housing visible as a subtle ridge along the upper frame with faint LED charge indicator (amber when charged)",
+      "Magnetic suspension port on the right side of the frame — a small circular aperture showing precision engineering",
+      "Minimal iron sights: notch and post configuration optimized for close-quarters work",
+      "Integrated rail on top for optional optics; most field units leave it bare",
+      "Magazine well recessed slightly for fumble-free reloading",
+      "Distinctive grinding sound grooves etched subtly into the muzzle exterior — deliberate acoustic design",
+      "Blackwood Commercial Group stamp on the left frame, small and utilitarian"
+    ],
+    "manufacturer_markings": "Blackwood Commercial Group logo — a stylized geometric mark — stamped in matte silver on the left side of the lower frame; serial plate mounted on the right grip panel, partially obscured by thumb position when held; FESA-2 designation etched in minimal font above the trigger guard",
+    "condition_typical": "Field-worn but maintained. Scratches and micro-scuffs on the polymer, particularly around the grip and muzzle. The bronze thermal coating shows dueling wear patterns — some areas polished by repeated handling, others darkened by heat cycling. Operators who carry these maintain them religiously; neglect = catastrophic failure. Most examples show signs of regular cleaning and professional care."
+  },
+  "image_prompt": "Product photography of the Ferroelectric Shatter Sidearm FESA-2 'Gravel' sidearm. Compact stubby pistol with dramatically oversized bulbous muzzle dominating the frame, rendered in matte charcoal polymer and brushed steel. Weapon rests on dark carbonite surface or held in gloved tactical hand, side-angled to emphasize the grotesque muzzle bell. Dramatic rim-lighting from the left reveals micro-vents and bronze-gold anodized accents at the muzzle. Ferroelectric capacitor housing visible as subtle ridge with faint amber LED charge indicator. Cold, clinical cyberpunk lighting — desaturated environment, weapon as the only warm element. Atmospheric haze suggests confined industrial space. Sharp focus on muzzle geometry and capacitor housing details. Professional tactical catalog photography. Blackwood Commercial Group branding visible on frame. --ar 3:2 --v 6"
 }

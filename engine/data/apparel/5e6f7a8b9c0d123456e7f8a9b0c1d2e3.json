@@ -40,5 +40,25 @@
   "related_entities": [
     "Arcturus Defense Solutions Kinetic Denial System KDS-4 'Bouncer'",
     "The Bazaar"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, athletic-tactical hybrid that reads as premium sportswear at first glance. High-waisted with a tapered leg that hugs the calf. The matte finish absorbs light, creating a shadow-like quality. Worn alone or as a concealment layer under duty shorts or long overshirts. Projects quiet competence and controlled mobility.",
+    "fit": "High-compression throughout the thigh and calf, anatomically contoured. Wide, structured waistband sits stable at natural waist. Tapered leg maintains freedom of movement without bagginess. Allows full range of motion for crouching, climbing, or prolonged standing.",
+    "primary_material": "High-density ballistic-weave synthetic blend (85% recycled polyester, 15% spandex), treated for moisture-wicking and light abrasion resistance",
+    "texture": "Smooth, almost liquid matte finish with subtle ribbing along the seams. Fabric is tightly woven with a micro-grip surface that prevents slipping during movement. No shine or reflectivity.",
+    "color_scheme": "Matte black or charcoal gray with minimal branding. Flat tonal stitching in matching thread. No logos or visual markers.",
+    "closures": "Wide magnetic-snap waistband closure with internal friction-fit retention. No visible zipper fly—seamless front for concealment.",
+    "distinctive_features": [
+      "Four flat pockets: two standard front thigh pockets, two hidden calf pockets accessible through discreet vertical side slits",
+      "Reinforced pocket interiors in ballistic weave to prevent snagging of tools or electronics",
+      "Wide, structured waistband designed to support light duty belt load (up to 2kg)",
+      "Gusseted crotch panel for freedom of movement",
+      "Subtle grid texture on inner thigh for grip against chair/vehicle seating",
+      "Flat-seam construction to eliminate pressure points during extended wear"
+    ],
+    "tier_indicator": "Tier 2–3 functional. Premium working-class gear that signals specialized training and access. Expensive enough to be deliberate, understated enough to blend in.",
+    "cultural_context": "Worn by plainclothes security, venue bouncers, corporate site protection, and para-military contractors. Signals discipline, readiness, and a role that requires discreet operational capacity. The wearer is equipped but not announcing it.",
+    "condition_typical": "Typically worn in pristine or lightly broken-in condition. Scuffs and fading indicate field use. Well-maintained gear—patching is rare, though heavy users may show wear on the calf pockets from repeated access."
+  },
+  "image_prompt": "A lean figure in a matte black Tactec Streetwatch duty legging, standing in a dimly lit corporate atrium or warehouse perimeter. The legging is worn alone, showcasing the high waistband and tapered calf. One hand casually positioned near the thigh, fingers near a calf pocket slit. Moody blue-green tungsten lighting from overhead fixtures casts long shadows. Urban backdrop: concrete pillar, chain-link fence, or dark window reflection. Model has mixed-heritage features, neutral expression. High-contrast, cinematic mood. --ar 2:3 --v 6"
 }

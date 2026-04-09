@@ -45,5 +45,32 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Cochlear Resonant Hemorrhage Projector",
+    "GLMZ",
+    "Ringo Corponation",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, cylindrical Bluetooth speaker with a sleek, minimalist aesthetic that blends seamlessly into urban environments. At first glance, indistinguishable from consumer Ringo speakers seen in cafes, transit pods, and residential spaces across the GLMZ. Rounded edges, subtle branding, utterly mundane.",
+    "dimensions": "180mm height × 80mm width × 80mm depth. Compact enough to fit in a messenger bag or backpack without drawing attention.",
+    "weight_description": "Light and balanced — 0.4 kg makes it feel like a premium consumer device, not a weapon. Sits comfortably in one hand or nestles against the body.",
+    "primary_material": "Anodized aluminum frame with reinforced polymer composite housing. The dual-mode transducer array is embedded within, creating an internal structure that's both speaker and acoustic weapon.",
+    "finish": "Matte anodized aluminum with a subtle brushed texture. Resistant to fingerprints and wear. The surface is unmarked by typical cosmetic damage — these devices are designed to age gracefully in public.",
+    "color_scheme": "Matte gunmetal gray primary with jet black accent panels around the transducer vents. Ringo branding in soft silver on the top and base.",
+    "grip_texture": "Smooth, slightly rubberized composite on the cylindrical body. Designed for extended handheld use — comfortable, tactile, reassuring.",
+    "distinctive_features": [
+      "Six discrete transducer vents arranged symmetrically around the mid-section — appearing as subtle circular indentations",
+      "Hidden button combination panel concealed under a false rubber accent strip near the base",
+      "Soft RGB LED status indicator (hidden inside, visible through translucent base panel) — blue for normal operation, amber for pairing, red for weapon mode",
+      "Charging port identical to standard USB-C found on millions of consumer devices",
+      "Microscopic etching on the underside listing multiple patented acoustic-forming technologies",
+      "No visible weapon characteristics whatsoever — deliberately designed to avoid any tactical aesthetic"
+    ],
+    "manufacturer_markings": "Ringo Entertainment Division logo (stylized 'R' in silver) centered on top surface. Serial number and regulatory markings on underside. QR code for product registration on base panel.",
+    "condition_typical": "Appears new or well-maintained even after deployment. Ringo speakers are consumer products meant for daily use — they show minimal wear, are frequently cleaned by users, and are aesthetically designed to remain pristine. A used Earworm looks like someone's personal speaker, not a field weapon."
+  },
+  "image_prompt": "Product photography of a sleek matte gunmetal gray cylindrical Bluetooth speaker, 18cm tall, photographed from a three-quarter angle on a dark composite surface. Dramatic side-lighting reveals the subtle brushed aluminum texture and the symmetrical transducer vent indentations. A gloved hand (augmented with subtle chrome fingertips, Tier 2 aesthetic) cradles the device, finger positioned near the hidden button panel. Soft red LED glow visible through the translucent base panel indicates weapon mode activation. Ringo branding visible in silver. Dark cyberpunk studio setting with cool blue-gray tones, shallow depth of field, cinematic lighting that emphasizes the duality of consumer product and hidden weapon capability. High-resolution, photorealistic, no tactical gear or obvious weaponry visible — this is an ordinary speaker. --ar 3:2 --v 6"
 }

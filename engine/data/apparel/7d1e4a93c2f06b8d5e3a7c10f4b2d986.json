@@ -45,5 +45,26 @@
     "Cutter Vane",
     "Dzemal Acholonu-Patagiri",
     "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A figure of calculated elegance and deliberate opacity. The smoked aubergine coat commands presence without broadcasting wealth—it reads as intentional restraint. The silhouette is architectural: shoulders structured but not aggressive, torso clean and linear. Worn by someone who understands that visibility is a liability. The overall impression is 'discreet intermediary'—formal enough for corp boardrooms, dark enough for underground networks.",
+    "fit": "Precisely tailored but not tight. The double-breasted coat sits with slight ease through the shoulders, allowing movement without slack. Trousers are high-waisted and straight-leg, breaking cleanly at the ankle boot. The thermal shirt layers close to skin without compression. Every element moves as one unit—no wasted fabric, no excess motion.",
+    "primary_material": "Smoked aubergine synth-wool (coat), ivory thermal weave (shirt), charcoal wool-composite (trousers), matte black analog calfskin (boots)",
+    "texture": "The coat surface is smooth with a subtle nap, catching light like still water. Internal Faraday-weave lining has a soft, almost whispered texture—invisible from outside but tactilely present if you know to feel for it. Trousers have a matte finish suggesting professional treatment. Boot leather is deliberately non-reflective, aged-analog feel.",
+    "color_scheme": "Smoked aubergine base (muted, expensive purple-black) anchored by ivory and charcoal neutrals. No contrast stitching, no accent colors. Tonal and restrained. The palette itself communicates: 'I don't need to be noticed.'",
+    "closures": "Double-breasted magnetic buttons on coat (silent, no click), friction-fit on the thermal shirt, side-zip on trousers (internal, smooth). Boots lace with waxed cord—traditional closure, no tech integrations that could be scanned or spoofed.",
+    "distinctive_features": [
+      "Faraday-weave silk lining in deep panels—BCI-blocking without visible tech",
+      "Flat-profile holdout holster seamlessly integrated into coat structure",
+      "Custom-finished seams throughout—no visible stitching gaps, laser-welded precision",
+      "Collarless thermal shirt—eliminates visual markers, reduces neck signature",
+      "Analog calfskin boots—no synthetic sheen, age-appropriate material choice",
+      "Double-breasted closure geometry designed to distribute visual weight",
+      "Internal depth pockets without external bulging—carry capacity without betrayal"
+    ],
+    "tier_indicator": "Tier 1-2 artifact, but worn by Tier 3-4 operatives. The price point is corpo-class, but the aesthetic rejects obvious luxury signaling. This is wealth that hides.",
+    "cultural_context": "Fixer culture. Someone who facilitates introductions between incompatible parties—corpo exile to criminal collective, disgraced augmentation surgeon to desperate client, black-market AI node to underground commune. The outfit says: 'I am trustworthy because I am invisible. I am professional because I understand that discretion is a service.' Worn by negotiators, intermediaries, information brokers, and people whose continued existence depends on not being remembered.",
+    "condition_typical": "Pristine on commission, but assumes careful wear. The Faraday lining and holster suggest active use. A fixer's presentation set is maintained obsessively—a wrinkle is a signal. Over time, the boots develop character, the coat settles into its owner's movements, but nothing frays or tears. This is an artifact of competence."
+  },
+  "image_prompt": "A tall androgynous figure in a smoked aubergine double-breasted coat over an ivory collarless thermal shirt, charcoal trousers, and matte black ankle boots. Shot from mid-thigh up against a dark industrial backdrop—concrete wall, dim neon rim-light in cool blue-green. The coat's lines are razor-clean, geometric. Subtle volumetric lighting reveals the grain of the synth-wool but obscures the figure's expression. One hand rests near the coat's interior in a casual gesture that suggests concealed purpose. The composition is symmetrical, formal, untouchable. Cinematic, high-end fashion editorial. Moody, professional, dangerous in its restraint. --ar 2:3 --v 6"
 }

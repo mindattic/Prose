@@ -43,5 +43,38 @@
     "poverty",
     "prohibited"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions NociStrike NS-3 'Flense'",
+    "Bogdan Achebe-Svanstrom",
+    "Dragan Petersen-Bah",
+    "MERIDIAN",
+    "Pavlína Abubakar-Temarii",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "The Shelf",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "Crude, improvised spray device with the aesthetic of industrial salvage. No design language—pure function cobbled from discarded materials. The silhouette is asymmetrical and utilitarian, suggesting hasty assembly rather than manufacturing. Looks like something pulled from a waste stream and repurposed within hours.",
+    "dimensions": "Height: 18–25 cm; Width: 6–10 cm (variable by container source); Nozzle protrusion: 3–5 cm. Compact enough to palm, but awkward in profile.",
+    "weight_description": "Light to moderately weighted depending on fill level—typically 300–500g when full. The weight distribution is unbalanced; most mass sits in the container body, making the grip feel frontward-heavy and unstable.",
+    "primary_material": "Repurposed pressure vessel (cleaning spray bottle, aerosol can, or scrap-welded steel plumbing components). Exterior shows mixed materials: plastic, bare metal, sometimes wrapped cord or tape for grip augmentation.",
+    "finish": "No finish. Raw, weathered surfaces. Cleaning bottles retain faded product labels; aerosol cans show rust stains and burn marks from crude modification. Homemade welds are rough and unpainted. Everything looks hastily assembled.",
+    "color_scheme": "Dominant: industrial gray, faded plastic beige, oxidized steel brown. Accents: remnants of original product labeling (faded blues, yellows, warning orange). No intentional color scheme—whatever the donor container was.",
+    "grip_texture": "Rough, often wrapped in electrical tape, cloth strips, or bare polymer ridges. Some examples have grip tape salvaged from other tools. Uncomfortable to hold for extended periods—designed for desperate use, not ergonomics.",
+    "distinctive_features": [
+      "Crude nozzle modifications—sometimes pinched, sometimes widened with heat, sometimes reinforced with wire",
+      "Pressure release marks or dents from multiple fill cycles",
+      "Faded or obscured original product labels still partially visible",
+      "Improvised trigger mechanisms made from wire, cord, or crude plastic replacements",
+      "Corrosion patterns and chemical stains around seams indicating repeated use or leakage",
+      "Hand-scratched maker's marks, tags, or initials on the side or bottom",
+      "Occasional visible weld lines if plumbing-based construction",
+      "No safety markings—intentional erasure of any regulatory appearance"
+    ],
+    "manufacturer_markings": "Original container markings partially visible but deliberately obscured or worn away. No identifying marks of the maker—total anonymity is functional. Some users add small scratches, tags, or symbols in Shelf slang to denote batch origin or potency rumor, but these are informal and undocumented.",
+    "condition_typical": "Battle-worn from first use. Cosmetic damage, chemical residue stains, corroded nozzle tips. Many show repeated refill marks. The device looks used, dangerous, and temporary—because it is."
+  },
+  "image_prompt": "Overhead close-up product photograph of a crude improvised spray weapon on a scarred metal workbench. Repurposed cleaning spray bottle with modifications—rough welded nozzle, corroded steel plumbing fittings, electrical tape wrapped grip, faded product labels still partially visible. Next to it: scattered industrial materials (wire, cord scraps, dried chemical stains on the metal surface). Dramatic side-lighting casting sharp shadows, highlighting corrosion and texture. Dark, gritty cyberpunk aesthetic. Color grade: desaturated grays, rust oranges, industrial browns. Shot at slight angle to emphasize crude construction. --ar 3:2 --v 6"
 }

@@ -39,5 +39,24 @@
     "The Shelf",
     "Vantablack VS-3 'Skin Job'",
     "Zheng-Dao Bioelectric Chemoreceptive Dermal Patch"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A two-piece formal suit with visible character—sharp enough for official spaces, honest enough to read as Shelf-worn. The jacket sits structured but lived-in; the trousers hang with the weight of careful maintenance. There is dignity in its imperfection.",
+    "fit": "Tailored through multiple alterations, slightly relaxed through the chest, tapered at the ankles. The evidence of take-ins and let-outs visible in parallel seam lines suggests a garment that has been resized for different wearers or the same wearer over time.",
+    "primary_material": "Charcoal synth-wool jacket (durable, institutional-grade blend), black trousers faded to near-gray at stress points—likely recycled polyester composite or treated cotton-synth blend.",
+    "texture": "The jacket has a subtle nap, worn smooth at the collar and cuffs from handling. Seams are deliberately visible—not raw, but exposed as testimony. The trousers show soft pilling at the knee from kneeling, sitting, working.",
+    "color_scheme": "Charcoal jacket, black trousers aged to slate-gray at knees and inner thighs. The thread patch at the elbow is a shade of dark brown—close enough to read as intentional repair, not quite matching enough to hide it.",
+    "closures": "Standard button closure (likely polymer, not metal—cost-conscious). Two-button jacket front, standard trouser fly. Buttons show minor wear, consistent with the suit's story.",
+    "distinctive_features": [
+      "Hand-pressed lapels using soap bar—shape holds 3-4 hours before relaxing",
+      "Careful elbow patch in near-matching thread at right sleeve",
+      "Visible seam lines from multiple alterations (evidence of communal use or resizing)",
+      "Fading at knees and inner thighs consistent with Shelf-level wear",
+      "Impeccable overall cleanliness—no stains, no odor, no shortcuts taken in laundering"
+    ],
+    "tier_indicator": "Tier 1-2 aspiration signal. Worn by Shelf residents (Tier 3-4) at formal occasions. Read by Tier 1 observers as humble, by Tier 3-4 peers as sacrificial effort.",
+    "cultural_context": "Shelf-formal. This suit carries the weight of borrowed dignity. It is worn to hearings, funerals, interviews that matter. Its wearer understands that cleanliness in a Tier 1 space requires real work. Other Shelf residents will recognize the hand-pressed lapels, the careful patch, the faded knees—and will understand immediately what occasions required it.",
+    "condition_typical": "Immaculate when worn to formal occasions, carefully pressed and spotless. Between wearings, stored folded in climate-controlled lockers. Shows weathering only through fading and seam evidence, never through neglect."
+  },
+  "image_prompt": "Fashion photograph of a two-piece formal suit on a lean model with mixed heritage features and subtle cybernetic implants—a faint glow beneath the skin at the collarbone, perhaps. The jacket is charcoal synth-wool, meticulously pressed, the trousers black-fading-to-gray at the knees. Close detail visible on the right elbow showing careful thread patch in near-matching brown. Model stands in a dimly lit corridor—brutalist concrete walls, single overhead strip light casting sharp shadow. Hands visible, showing calloused palms: this person works. The suit is pristine but tells a story through visible seam lines and fading. Moody, respectful lighting. Shallow depth of field on the elbow patch. --ar 2:3 --v 6"
 }

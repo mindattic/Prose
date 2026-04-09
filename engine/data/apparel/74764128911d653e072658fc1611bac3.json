@@ -36,5 +36,26 @@
   "related_entities": [
     "Lazarus HZ-4 'Cleanroom'",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A stark, utilitarian full-body encapsulation suit with an oversized silhouette dominated by protective volume and sealed architecture. The integrated helmet creates an elongated head profile with a wide visor band. Shoulders are broad and padded for equipment attachment. The overall impression is clinical and imposing—a walking biohazard containment vessel.",
+    "fit": "Oversized and intentionally loose to allow layering underneath and unrestricted movement during emergency response. Compression-sealed at wrists, ankles, and neck with friction-fit closures. The torso sits slightly away from the body to accommodate the SCBA (self-contained breathing apparatus) backpack integration.",
+    "primary_material": "Triple-laminated ballistic-grade synthetic composite with an outer decontamination-reactive polymer coating. The inner layer is moisture-wicking biotech mesh to manage sweat during extended wear.",
+    "texture": "Smooth and slightly reflective outer surface with a subtle chemical-resistant sheen. The reactive coating has a faint crystalline quality visible under direct light. Seams are visibly reinforced with bonded tape welts. The inner surface is soft, finely ribbed mesh.",
+    "color_scheme": "Bright safety yellow with high-visibility reflective striping along the limbs and torso. Accent panels in hot orange at stress points (shoulders, knees, elbows). The visor is tinted amber for optical clarity and glare reduction. Verdant Labs logo in black block lettering on the chest.",
+    "closures": "Heavy-duty magnetic snaps running down the front torso for rapid donning/doffing. Friction-fit polymer cuffs at wrists and ankles with integrated pull-tabs. Helmet visor sealed with a quarter-turn locking ring mechanism. Air supply port on the left shoulder with a color-coded quick-disconnect.",
+    "distinctive_features": [
+      "Integrated exoskeleton of reinforced struts along the spine and ribs for structural rigidity",
+      "SCBA backpack hard-mounted to the suit frame with redundant oxygen and CO2 scrubber cartridges visible through a transparent access panel",
+      "Chemical indicator strips embedded in the suit material that change color in the presence of specific threat agents",
+      "Decontamination nozzle ports at the wrists and lower back for self-contained rinse-down capability",
+      "Molded knee and elbow protectors in reinforced composite",
+      "Verdant Labs certification hologram on the right chest panel",
+      "Built-in glove system with rubberized contact surfaces and tactile feedback nodes for equipment handling"
+    ],
+    "tier_indicator": "Tier 2-3 institutional/industrial. Expensive enough to be corporate or government-owned; deployed by emergency response, hazmat contractors, and Iowan Behemoth support teams.",
+    "cultural_context": "Worn by hazmat technicians, industrial incident responders, and environmental cleanup crews in the GLMZ. Signals technical expertise, danger acceptance, and institutional backing. Not street fashion—this is equipment that says 'the environment is actively trying to kill me and I have the resources to fight back.'",
+    "condition_typical": "Pristine and meticulously maintained when deployed; stains and discoloration indicate active contamination exposure (intentional visual warning). Older units show wear at seams, fading of the safety yellow, and crystallization of the reactive coating. Professional hazmat suits are religiously decontaminated and inspected after every use."
+  },
+  "image_prompt": "A hazmat-suited figure in bright safety yellow and orange stands in an industrial decontamination chamber, bathed in cool blue-white fluorescent light and acrid steam. The suit's reflective striping catches the light. Behind them, a wall of grimy chemical storage containers and warning placards. The visor catches a reflection of hazard lights. Moody, clinical lighting. Cinematic depth of field. Shot from the waist up, dramatic side angle. --ar 2:3 --v 6"
 }

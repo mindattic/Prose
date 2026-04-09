@@ -37,5 +37,34 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Anatoliy Faye-Nkrumah",
+    "Carrion Defense Works Autonomous Perimeter Defense Ecosystem",
+    "Free Assembly",
+    "TESSERA ES-4 'Perimeter'",
+    "Tessera Corponation",
+    "VitaCore SteadyThread Precision Motor Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively small cylindrical spool housed in a compact, minimalist polymer case. At first glance, it resembles a high-end tactical flashlight or sensor module — deliberately innocuous. The spool itself is a precision-engineered cylinder with barely visible wire edge glinting along its perimeter. Paired magnetic anchor stakes look like oversized thumb drives with recessed magnet caps.",
+    "dimensions": "Spool housing: 12 cm length × 4 cm diameter. Anchor stakes: 8 cm length × 2 cm diameter. Total kit fits in a palm-sized carrying case: 15 cm × 10 cm × 6 cm.",
+    "weight_description": "Surprisingly light and well-balanced — the 0.2 kg spool feels weightless in hand, creating a false sense of harmlessness. The stakes add negligible heft. Designed for concealable carry.",
+    "primary_material": "Spool housing: reinforced carbon-composite polymer with precision-machined edges. Anchor stakes: military-grade steel cores with embedded rare-earth magnets. Wire: single-molecule carbon filament (invisible).",
+    "finish": "Matte gunmetal gray polymer housing with subtle brushed steel accents around the spool edge. Anchor stakes have a dull industrial finish with faint magnetic field aura visible only under certain lighting. Minimal branding to avoid customs attention.",
+    "color_scheme": "Gunmetal gray primary with brushed steel highlights. Accent: faint copper-oxide patina around magnet housings suggesting age or heavy use.",
+    "grip_texture": "Rubberized knurled grip band around the spool housing — provides control during deployment but remains tactile enough for bare-hand operation. Anchor stakes have smooth, slightly magnetic surfaces.",
+    "distinctive_features": [
+      "Wire edge barely visible as hairline silver gleam along spool perimeter",
+      "Subtle depth-markers engraved on housing (100m, 150m, 200m) — functional, not decorative",
+      "Recessed magnet activation button concealed in stake design",
+      "Micro-etched NeoCortex Industries logo on housing (easily obscured or removed)",
+      "Faint molecular-shimmer effect visible in extreme side-lighting — the wire's edge refracts light at impossible angles",
+      "Carrying case lined with magnetic padding to prevent accidental deployment"
+    ],
+    "manufacturer_markings": "NeoCortex Industries logo subtly etched near the spool base; model designation 'PW-1' stamped on case lid. Serial plate easily removable — suggests black-market modification kits exist.",
+    "condition_typical": "Pristine out of box, but field-worn units show micro-scratches on the housing and slight oxidation on stakes from repeated magnet cycling. The wire itself shows no visible wear — its threat level remains constant regardless of age."
+  },
+  "image_prompt": "Overhead product photography of the Tessera Industries Phantom Wire PW-1 spool system on a black matte surface. Close-up showing the compact gunmetal polymer housing with barely-visible monofilament wire glinting along the spool edge under dramatic side-lighting. Two magnetic anchor stakes positioned nearby with subtle magnetic aura visible. Hands in black tactical gloves carefully positioning the spool, showing scale. Cyberpunk aesthetic with cool blue-white rim lighting emphasizing the wire's molecular geometry. Focus on minimalist, deadly precision design. Shot in 3/4 view. Shallow depth of field. --ar 3:2 --v 6"
 }

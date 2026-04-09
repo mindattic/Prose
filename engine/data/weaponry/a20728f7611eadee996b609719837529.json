@@ -44,5 +44,40 @@
     "Filipino",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions Reactive Plate Carrier Mk. VII",
+    "Birgitta Asante-Papadopoulos",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
+    "GLMZ",
+    "Hadiya Karlsen-Sow",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
+    "Makena Johanssen-Diallo",
+    "Nitinol",
+    "Synaptrel",
+    "TERMINUS"
+  ],
+  "physical_description": {
+    "visual_profile": "A traditional balisong butterfly knife with an ethereal, almost liquid quality to its proportions. The handles and blade possess a subtle luminescent sheen characteristic of shape-memory alloy — they catch light with an iridescent quality that shifts between silver and pale blue depending on viewing angle. Despite its deadly function, the Quicksilver appears almost organic in its curves, lacking the harsh geometry of conventional steel blades.",
+    "dimensions": "11 cm blade length, 25 cm fully deployed, 14 cm closed. Compact enough to conceal in a palm, yet substantial in hand when opened.",
+    "weight_description": "Surprisingly light at 160 grams — feels almost weightless in the hand, creating a deceptive sense of delicacy despite its lethality. The balance point shifts subtly with manipulation, responsive to micro-movements.",
+    "primary_material": "Shape-memory alloy throughout — a rare, expensive material that maintains structural integrity while allowing controlled deformation.",
+    "finish": "Polished satin with a faint iridescent quality. The surface shows microscopic flow patterns — the crystalline structure of the alloy visible under certain angles, resembling liquid metal frozen mid-pour. No corrosion marks; the material resists oxidation.",
+    "color_scheme": "Primary silver-white with pale blue undertones. The handles feature subtle striations where the alloy's grain structure creates natural banding. Minor gold-colored accents where traditional brass pivot pins meet the blade.",
+    "grip_texture": "The handles have a smooth, slightly warm tactile quality — the shape-memory alloy itself provides grip without requiring aggressive texturing. Subtle knurling along the center section, hand-etched in traditional patterns honoring Pinoy heritage.",
+    "distinctive_features": [
+      "Subtle iridescent shimmer across entire surface — light refracts through the alloy's crystalline structure",
+      "Visible blade edge that appears sharper than physically possible — the material's molecular structure creates a naturally acute cutting edge",
+      "Organic, flowing curves to the handles — no hard edges, almost tentacle-like in their fluidity when partially deformed",
+      "Pivot point glints with a small brass collar — the only non-alloy component, intentionally traditional",
+      "Faint etched patterns on handles: geometric Filipino tribal designs interspersed with circuit-like lines — honoring both heritage and the high-tech material",
+      "The blade maintains a barely-visible ripple pattern from the manufacturing process — evidence of controlled thermal cycling",
+      "No manufacturer's logo or serial plate; instead, a tiny hand-stamped maker's mark on the tang — a stylized 'V-O' in microscopic script"
+    ],
+    "manufacturer_markings": "A discreet hand-stamped 'V-O' (Villanueva-Obi) mark on the tang, barely visible without magnification. No corporate branding; the weapon's provenance is word-of-mouth within the diaspora community. Some units bear faint laser-etched recipient initials from the commissioning smith.",
+    "condition_typical": "Field-ready Quicksilver units show minimal wear despite heavy use — the shape-memory alloy resists traditional scarring. Instead, they display subtle deformation patterns: micro-creases that vanish within seconds, witness marks where the blade has wrapped around obstacles and recovered. Heavy-use specimens may show a slightly duller finish on high-contact areas, but the material never truly dulls. Some street users customize their Quicksilver with grip wraps or heat-blued sections where they've intentionally heated and cooled the blade for aesthetic personalization."
+  },
+  "image_prompt": "Close-up product photography of a Filipino diaspora street-custom butterfly knife (balisong) in partially-open position, shot against black matte surface. The blade and handles are constructed from iridescent shape-memory alloy with subtle silver-white and pale blue coloration. Dramatic side-lighting from a single source emphasizes the material's crystalline structure and luminescent quality, creating sharp highlights along the blade edge and handle curves. The knife appears almost liquid in form — organic flowing lines without harsh geometry. Visible hand-etched tribal patterns and circuit-like designs on handles. Tiny brass pivot collar catches light. A gloved hand (black synthetic material with circuit tattoos visible on wrist) holds the knife, showing the thumb hole grip position. The background is dark cyberpunk aesthetic with faint neon glow (blues and purples) bleeding in from out-of-frame. The alloy surface shows microscopic flow patterns and recovery marks suggesting recent deformation and reset. Hyper-detailed material texture, cinematic lighting, cyberpunk 2226 aesthetic. --ar 3:2 --v 6"
 }

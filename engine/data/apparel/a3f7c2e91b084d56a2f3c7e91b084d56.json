@@ -47,5 +47,25 @@
     "The Shelf",
     "Tomasz Wren",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist moto silhouette with squared shoulders and a slight forward lean. The jacket reads aggressive without pretense—boxy, utilitarian, designed for function over fashion. Worn-in from day one, it sits on the body like a second skin that's already been through something.",
+    "fit": "Boxy and relaxed through the torso with tapered sleeves. Cut wide enough for layering and movement, but structured at the shoulders. Sits just past the hip.",
+    "primary_material": "Bonded synth-hide — a petroleum-based composite engineered to mimic leather's durability without the biological variance. Matte finish, no sheen.",
+    "texture": "Flat, slightly waxy surface with subtle horizontal ribbing across shoulders and forearms. Pre-scuffed elbows showing faint micro-tears in the weave. Surface has a worn-in grain despite being new—intentional distressing that reads as earned.",
+    "color_scheme": "Flat black throughout with no contrast stitching. The distressing reveals slightly lighter gray synth-hide beneath the surface scuffs. No logos or branding visible.",
+    "closures": "Asymmetric full-length zip running left-shoulder to right-hip. Two snap-flap chest pockets. No collar snaps—lapels fold freely.",
+    "distinctive_features": [
+      "Horizontal ribbing texture across shoulders and forearms",
+      "Pre-scuffed elbows as intentional design detail",
+      "Asymmetric zip placement (not centered)",
+      "Wide lapel collar designed to flip up",
+      "Squared shoulder construction",
+      "No visible branding or Duskrow marks"
+    ],
+    "tier_indicator": "Lower Tier 2 / Upper Tier 3 — expensive enough to signal investment, cheap enough to not fear losing it",
+    "cultural_context": "Courier culture, gig economy workers, Shelf riders. The jacket says: 'I work for a living, I've eaten concrete, I don't need validation.' Street credibility without affectation.",
+    "condition_typical": "Broken-in immediately. Scuffs deepen with wear. Minor tears at stress points become badges. Never looks pristine; always looks reliable."
+  },
+  "image_prompt": "Duskrow Moto Jacket on a lean androgynous model with visible subcutaneous implant traces along the neck, shot from chest-up against a rain-slicked concrete wall in the GLMZ Shelf district. Moody sodium-vapor amber lighting casting hard shadows. The jacket's asymmetric zip partially open, lapel turned up. Model's expression flat, direct. Background: blurred neon storefront, wet asphalt, late evening. Shallow depth of field on the jacket's shoulder ribbing and elbows. Cinematic, documentary-adjacent. --ar 2:3 --v 6"
 }

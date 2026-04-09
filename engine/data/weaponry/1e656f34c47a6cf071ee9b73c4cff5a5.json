@@ -42,5 +42,39 @@
     "BCI",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "ARCTURUS DEFENSE Raptorclaw Mk4 Combat Arm",
+    "Alper Holmberg-Dembele",
+    "Cem Watanabe-Amponsah",
+    "Free Assembly",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "The Burden Clause",
+    "The I-75 Spine",
+    "The Riveters' Round"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular carbine with an unusually compact profile — more drone-like than traditional rifle. The barrel assembly dominates the upper receiver with visible gyroscopic stabilization rings. Futuristic and purposeful, designed for grip in harness rather than shoulder mounting.",
+    "dimensions": "Overall length: 64 cm | Barrel length: 38 cm | Width across gyro assembly: 8 cm | Height with optics rail: 12 cm",
+    "weight_description": "Remarkably light and balanced — feels almost ethereal in hand despite solid construction. Weight distributed toward the receiver to minimize moment arm during aerial maneuvers.",
+    "primary_material": "Carbon-fiber composite frame with aerospace-grade aluminum gyro ring assembly. Reinforced polymer lower receiver with integrated mounting hardpoints.",
+    "finish": "Matte gunmetal gray with brushed aluminum accents on gyrostabilizer. Anti-glare treatment throughout. Minimal reflective surfaces.",
+    "color_scheme": "Gunmetal gray primary with brushed silver gyro rings. Teal accent striping along the magazine well and charging handle. Subtle Talon Systems branding in dark gray.",
+    "grip_texture": "Textured rubberized polymer with finger-grooved contours optimized for gloved operation. Mounting hardpoints feature exposed quick-disconnect brackets with knurled edges.",
+    "distinctive_features": [
+      "Visible gyrostabilization ring assembly with internal bearing geometry barely visible through mesh ports",
+      "Dual articulated micro-gyro units flanking the barrel",
+      "Integrated BCI connector port on the left receiver — recessed, glowing faintly blue when powered",
+      "Quick-disconnect aerial platform hard-mounts at three points (top receiver, fore-grip, stock)",
+      "Heat vents along the barrel shroud with cooling fins",
+      "Horizontal magazine feed (ambidextrous charging handle)",
+      "Minimal iron sights — primary interface via BCI overlay",
+      "Micro-cell power indicator (soft LED) on the gyro housing",
+      "Lightweight polymer handguard with topological cooling channels"
+    ],
+    "manufacturer_markings": "TALON SYSTEMS logo (angular falcon wing) stamped into upper receiver in brushed silver. Serial plate on left side of gyro housing. Small 'TS-5 RAPTOR' designation etched below the magazine well.",
+    "condition_typical": "Meticulously maintained — these are expensive precision tools issued to elite aerial teams. Micro-scratches on the polymer from harness contact, but gyro assembly is always clean. Faint residue around cooling vents from micro-cell discharge."
+  },
+  "image_prompt": "Product photography of a futuristic lightweight aerial sniper carbine clamped to a dark gunmetal mounting rig, centered on a brushed aluminum surface. The weapon's sleek carbon-fiber frame and visible gyrostabilization rings with bearing assemblies are illuminated by dramatic side-lighting that catches the brushed aluminum gyro rings and teal accent striping. Close-up detail shows the recessed BCI connector port glowing soft blue. The matte gunmetal finish contrasts sharply with polished metal mounting hardpoints. Cyberpunk aesthetic with clean, angular lines suggesting advanced aerospace manufacturing. Shot at 3:2 aspect ratio, professional catalog lighting with deep shadows emphasizing the weapon's compact, purpose-built profile. --ar 3:2 --v 6"
 }

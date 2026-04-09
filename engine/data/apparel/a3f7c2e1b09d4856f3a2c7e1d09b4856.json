@@ -47,5 +47,27 @@
     "Sorin Ekwensi-Balasanyan",
     "The Underlayer Collective",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Militaristic full-body CorpSec ensemble projecting authority and tactical readiness. Sharp, modular silhouette with pronounced shoulders from vest architecture. Matte-black helmet dominates the upper profile; body reads lean and purposeful beneath layered tactical gear. Phosphor-yellow ID patches provide high-visibility branding against the charcoal and slate palette.",
+    "fit": "Precision-engineered compression fit through core via Pragma underlayer; tactical vest sits structured and ergonomic over this base. Arm sleeves are snug with reinforced channels accommodating prosthetic quick-disconnects. Cargo trousers offer generous thigh and calf articulation; boots clamp securely without restriction to spinal rig channel.",
+    "primary_material": "Ballistic-rated synthetic composite (helmet shell), modular tactical weave (vest), Pragma compression synthetics (underlayer), aug-channel reinforced fabric blend (arm sleeves), TacWeave polymer-blend (trousers), Kessler-grade composite (boots)",
+    "texture": "Matte, non-reflective across most surfaces for tactical stealth. Helmet visor area has subtle anti-glare micro-etching. Vest panels show subtle quilting from internal armor integration. Arm sleeves feature raised ribbing along aug-channel zones. Boot treads are aggressively textured for grip; reinforced stitching visible at stress points.",
+    "color_scheme": "Dominant matte black (helmet, primary vest) and charcoal (secondary panels) with slate grey (trousers). High-contrast phosphor yellow Velcro ID patches at shoulder, chest, and thigh. Minimal accent: steel-tone hardware and magnetic snap fittings.",
+    "closures": "Magnetic snap fasteners on vest modular panels; friction-fit compression seals on arm sleeves with visible quick-detach couplings. Cargo trousers secure via friction-lock waistband. Boots use integrated lever-lock buckles. Helmet has rear magnetic seal collar.",
+    "distinctive_features": [
+      "Integrated AR visor with bone-conduction comms housing in helmet",
+      "Swappable hard-plate and flex-configuration vest panels for mission-specific load",
+      "Aug-channel arm sleeves with quick-disconnect coupling ports (chrome limb compatible)",
+      "Spinal rig channel running center-back for secondary augmentation or load harness",
+      "Thigh-mounted modular mag pouches with retention straps",
+      "Phosphor-yellow Velcro ID patches displaying unit insignia",
+      "Seams rated for aug-split clearance (prosthetic limb accommodation)",
+      "Non-reflective finish throughout for low-profile field operations"
+    ],
+    "tier_indicator": "Tier 1-2 corporate security apparatus — premium CorpSec-issued loadout. Cost-prohibitive for independent operators; signals direct corpo employment and regulatory authority.",
+    "cultural_context": "Wearing this outfit declares the user as Polaris Navigation Systems security personnel or corporate enforcement. Marks the wearer as armed authority within GLMZ jurisdictions. Associated with corpo infrastructure protection, augmented-personnel oversight, and corporate espionage countermeasures.",
+    "condition_typical": "Typically maintained in pristine condition (regular inspections mandatory). Field-worn kits show minor scuff marks on boots and helmet; velcro patches may show slight wear. Rarely patched—damaged components are swapped per corporate SOP rather than repaired in-field."
+  },
+  "image_prompt": "Cyberpunk CorpSec operative in full tactical kit: matte-black ballistic helmet with glowing AR visor, charcoal modular tactical vest over compression layer, reinforced aug-channel arm sleeves with visible quick-detach couplings, slate-grey TacWeave cargo trousers with yellow phosphor ID patches, Kessler-grade composite boots. Standing rigid in industrial warehouse with cool blue-white neon lighting, cast shadows emphasizing angular tactical silhouette. Polaris Navigation Systems branding subtle on shoulder patch. Dark metallic backdrop, moody urban combat aesthetic. --ar 2:3 --v 6"
 }

@@ -70,5 +70,24 @@
     "The Pure Hand",
     "The Sump",
     "Vantablack Media"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact cylindrical sensor array resembling a stubby thermos or industrial diagnostic tool. The form factor is deliberately unassuming—designed to blend into technical environments or pass as maintenance equipment. The upper hemisphere features a subtle radial pattern of micro-antenna ports; the lower section is solid and weighted for stability. The overall aesthetic is utilitarian and matte, intentionally avoiding ostentatious cyberpunk chrome.",
+    "dimensions": "120mm diameter × 80mm height (roughly the size of a small soda can or industrial sensor module)",
+    "weight_description": "520g—handheld and portable, light enough for extended reconnaissance but substantial enough to feel engineered. Deployable on tripods or magnetic mounts; comfortably pocket-carried in a tactical vest or field bag.",
+    "primary_material": "Aluminum alloy chassis with passive RF-damping composite cladding to minimize signal reflection",
+    "finish": "Matte graphite-gray coating with subtle texture to reduce gloss and visual signature. Deliberately non-reflective to avoid drawing attention in low-light environments.",
+    "color_scheme": "Gunmetal gray primary, with darker charcoal accents around antenna ports. Minimal branding—Vantablack Media logo in subdued white or pale gray on the lower section.",
+    "interface_elements": "Micro-USB charging port (bottom, recessed), single status LED (dim amber when idle, cycling green during active dwell), small tactile power button (top), encrypted data export jack. A minimal 1.2-inch e-ink display showing dwell timer and confidence percentage. No visible buttons beyond power—all controls are firmware-locked to prevent accidental mode switching.",
+    "distinctive_features": [
+      "Radial micro-antenna array visible as fine etched lines across upper hemisphere—64-element phased passive listening grid",
+      "Subtle electromagnetic shielding ridges around the circumference to isolate internal components",
+      "Magnetic base mounting point (underside) for hands-free deployment",
+      "Faint Faraday cage mesh visible through transparent sections near antenna ports—reinforces 'listening-only' aesthetic",
+      "Minimalist e-ink status display with high contrast, designed for low-power operation"
+    ],
+    "manufacturer_markings": "Vantablack Media logo (stylized 'Φ' with black square) embossed lower-left. Serial/regulatory stamps in tiny white print: frequency band certifications, encryption standards, and cryptic model designation (PECS-7.2-GLMZ). No warranty information—typical for Tier 3+ gray-market hardware.",
+    "condition_typical": "In field use: mounted on compact tripod or magnetic surface, cable trailing to operator's handheld display unit or tactical computer. Antenna ports may accumulate dust or condensation in long dwell operations. Often wrapped in signal-dampening carry cloth to avoid passive EM leakage during transport. No active indicators when powered down, making it nearly invisible in a tech-cluttered workspace."
+  },
+  "image_prompt": "Product photography: Vantablack Media Passive Emission Cartography System (cylindrical sensor unit, 120mm height) centered on dark steel workbench under cool blue-tinted LED task lighting. Antenna array detail visible, micro-ports catching dramatic side-light. Nearby: tactical display showing layered cartographic overlay (emission heatmap in magenta, cyan, and orange) with confidence gradient. Coiled shielded data cable, small tripod mount. Surrounding props: spectrum analyzer, signal-damping cloth, technical field notes. Aesthetic: corporate intelligence tone—precise, utilitarian, slightly sinister. Overhead three-quarter angle. Shallow depth of field. Cyberpunk noir color grading: deep blacks, cool forensic highlights, trace of neon reflection on chassis. --ar 3:2 --v 6"
 }

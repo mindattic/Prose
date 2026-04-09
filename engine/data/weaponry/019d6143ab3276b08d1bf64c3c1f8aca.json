@@ -55,5 +55,36 @@
     "energy",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions EL-9 'Heron'",
+    "GLMZ",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "O'Hare Sovereign",
+    "Plot 17",
+    "Stormvein Dynamics PelagicStride DP-3 Aquatic Leg",
+    "Sulfur Crown Agriculture"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purposeful instrument resembling a hybrid between a medical device and directed-energy weapon. Elongated barrel with a pronounced tapered muzzle, mounted on a compact receiver body. The overall silhouette suggests precision engineering — no aggressive angles, no tactical aggression in its form. Deceptively clinical appearance belies its neurological function.",
+    "dimensions": "Total length: 62 cm | Barrel length: 38 cm | Receiver width: 8 cm | Height at grip: 12 cm",
+    "weight_description": "Balanced and moderate — 3.1 kg feels substantial in hand without being burdensome, weight concentrated slightly forward toward the barrel. Designed for sustained aim without shooter fatigue during extended engagement windows.",
+    "primary_material": "Aircraft-grade aluminum alloy chassis with carbon-composite receiver panels. Barrel assembly uses hardened steel with embedded ceramic radiator elements.",
+    "finish": "Matte gunmetal gray with microscopic thermal dissipation texture. Radiator fins along barrel show burnished chromatic oxidation from operational heat cycling — subtle rainbow iridescence visible under side-lighting.",
+    "color_scheme": "Predominant matte gray body with darker charcoal receiver. Accent details in brushed steel where thermal elements interface with frame. Minimal branding, maximum visual restraint.",
+    "grip_texture": "Rubberized polymer wrap in neutral gray, ergonomically contoured for sustained two-handed operation. Textured dimpling provides non-slip purchase even in gloved or augmented hands.",
+    "distinctive_features": [
+      "Ceramic radiator fin array running full barrel length — visible as subtle ribbing with heat-stress coloration",
+      "Recessed digital targeting display integrated into top receiver (small LCD window, inactive/dark)",
+      "Three-position dial at trigger guard: Suppress / Incapacitate / Lethal (unmarked, sensory clicks only)",
+      "Power indicator ports (LED currently unlit)",
+      "Thermal cell housing beneath receiver — sealed cartridge interface with subtle alignment groove",
+      "Precision alignment sight rail running dorsal receiver surface (empty, suggesting removable optics)",
+      "Muzzle bell slightly flared and chamfered — microwave waveguide exit point"
+    ],
+    "manufacturer_markings": "Iron Point Ammunition corporate stamp (minimalist logo) on lower receiver — small, flush-mounted. Serial designation engraved along battery housing. No patent markings or safety warnings visible — classified military specification.",
+    "condition_typical": "Field-worn but meticulously maintained. Radiator fins show thermal stress patina and minor micro-scratching from repetitive cleaning. No visible impact damage or rust. Surfaces carry faint smudge patterns from gloved operation. Overall impression: well-respected, regularly serviced instrument."
+  },
+  "image_prompt": "Product photograph of a Meningeal Thermoelectric Pressure Lance MTPL-2 mounted horizontally on a dark matte-black platform. Dramatic side-lighting emphasizing the ceramic radiator fin texture along the barrel, casting subtle shadows that reveal the thermal dissipation geometry. Muzzle facing left, receiver detail visible on right. Gloved hand (black tactical glove, augmented finger joints barely visible) gripping the weapon from above, chromium fingernail catching rim light. Aluminum-gray finish rendered with photorealistic material properties — matte body contrasting with burnished steel accents. Minimalist composition, no background clutter, soft-focus gradient fade to charcoal. Cyberpunk medical-weapon aesthetic, clinical precision, neurological threat implied through form language alone. Professional military hardware photography. --ar 3:2 --v 6"
 }

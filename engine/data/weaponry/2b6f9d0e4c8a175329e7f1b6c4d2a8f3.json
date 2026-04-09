@@ -42,5 +42,38 @@
     "covert",
     "controversial"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "Axiom Systems Cortical Bomb CB-1 'Leash'",
+    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
+    "Irontide Tidal Energy",
+    "Korrath",
+    "Lazarus Pharmaceuticals",
+    "MERIDIAN",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "TESSERA PG-2 'Signature'",
+    "The Keel"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, clinical handheld aerosol canister with the aesthetic of pharmaceutical precision rather than weapons hardware. Cylindrical body tapers slightly toward the nozzle, suggesting medical authority rather than force. Deliberately non-threatening silhouette — reads as clinical spray bottle rather than crowd-control device.",
+    "dimensions": "Height: 12.5 cm, Diameter: 3.2 cm, Nozzle protrusion: 1.8 cm",
+    "weight_description": "Light and comfortable, almost insubstantial — weighs only 170 grams fully charged. Designed for extended handheld deployment without fatigue, with a center-of-mass that sits naturally in the palm.",
+    "primary_material": "Anodized aluminum body with pressure-sealed polymer nozzle head; internal stainless steel dispersion mechanism",
+    "finish": "Brushed matte silver with subtle iridescent shimmer under side-light, suggesting pharmaceutical-grade precision coating. No aggressive texturing or tactical wear patterns — appears laboratory-clean even in field use.",
+    "color_scheme": "Matte silver body with pale cyan/teal accent stripe running vertically down the canister (Lazarus corporate branding). Nozzle head in off-white polymer with minimal markings.",
+    "grip_texture": "Textured soft-touch polymer sleeve around mid-body grip zone — faintly rubberized, medical-glove ergonomic, deliberately non-aggressive to touch. Designed to feel clinical rather than weaponized.",
+    "distinctive_features": [
+      "Integrated pressure gauge window showing remaining burst capacity (12 notches visible from side)",
+      "Soft-click burst trigger mechanism with minimal resistance — requires gentle squeeze rather than aggressive actuation",
+      "Laser-etched Lazarus Pharmaceutical logo and 'Even Keel' product designation on upper body",
+      "Transparent polymer cartridge-retention collar showing faint blue tint of suspended LP-Serenex microparticles",
+      "Micro-dispersion nozzle with triple-inlet design for silent, ultra-fine aerosol cloud generation",
+      "Serial/batch tracking code in microscopic font near base",
+      "Faint thermal indicator stripe that shifts color with internal pressure changes"
+    ],
+    "manufacturer_markings": "Lazarus Pharmaceutical logo (stylized molecular helix) laser-etched beneath the cyan stripe. 'CalmFront CF-1' and 'Even Keel' printed in Meridian Standard font. 'LICENSED CORPORATE SECURITY DEPLOYMENT ONLY' in 2pt text on nozzle collar. Batch number and manufacturing date on polymer base cap.",
+    "condition_typical": "Pristine and clinical — maintained like pharmaceutical equipment rather than weapons. Field units show minimal wear despite heavy deployment; surfaces remain unblemished, nozzle free of residue, pressure gauge accurate. Corporate logistics ensure immediate replacement at first sign of micro-scratches or pressure loss."
+  },
+  "image_prompt": "Product photography of a sleek silver pharmaceutical aerosol canister labeled 'Even Keel' on a dark matte black surface, shot from a 45-degree angle with dramatic side-lighting revealing brushed metallic finish. Cyan corporate accent stripe visible running vertically down the body. Pressure gauge window glowing faintly in soft blue. Ultra-clean, clinical aesthetic — laboratory precision rather than tactical hardware. Gloved corporate security hand partially visible holding canister with thumb near trigger. Shallow depth of field isolating the device. Cyberpunk pharmaceutical noir lighting, cool teal and silver color temperature, slight lens flare from side-light catching metallic sheen. Ultra-detailed nozzle mechanism visible. --ar 3:2 --v 6"
 }

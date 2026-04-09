@@ -47,5 +47,25 @@
     "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
     "Sorin Ekwensi-Balasanyan",
     "The Sutured Commons"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian, improvisational medical rig that reads as street-level emergency medicine—survival-focused rather than sterile. The silhouette is bulky and intentionally over-armored, layering protection over function. This is the uniform of someone who patches people in ungoverned zones where proper facilities don't exist.",
+    "fit": "Deliberately oversized and loose-fitting to accommodate movement, augmentation ports, and layered protection. The apron drapes heavily; the scrubs underneath are relaxed. Gauntlets are snug at the wrist but flare slightly over the forearm. Overboots are stiff and deliberate, not tailored.",
+    "primary_material": "Butcher-gray canvas apron (food-grade industrial salvage); olive cotton-poly blend scrubs (surplus military or corporate medical); cracked polymer visor; nitrile-coated nylon gauntlets; vulcanized rubber overboots; repurposed mil-spec cargo webbing chest harness",
+    "texture": "Rough, worn canvas; stiff scrub fabric softened by repeated use; cracked visor plastic with visible hairline fractures; tacky nitrile coating on gauntlets; deeply treaded rubber soles; frayed webbing edges",
+    "color_scheme": "Dominant butcher-gray apron, olive drab scrubs underneath, gunmetal gray visor, black nitrile gauntlets and overboots, tan and forest-green webbing harness. Chromatic fluid stains (iridescent cyan, biohazard yellow, blood-rust) create accidental pattern across torso.",
+    "closures": "Apron ties with reinforced stitching; scrubs have friction-fit drawstring waist; visor headset friction-locked with taped magnification lenses; gauntlets secured with elastic cuff bands; overboots zip or friction-fit; harness buckles are salvaged mil-spec (worn brass).",
+    "distinctive_features": [
+      "Three mismatched magnification lenses jury-rigged onto a single cracked visor—taped, not welded",
+      "Peel-strip biohazard patches covering older stains (layered history of use)",
+      "Chest harness with purpose-built tool loops: scalpel roll pockets, syringe retention loops, bracketed mount for portable neural-clamp",
+      "Grip-textured nitrile fingertips on gauntlets (tactile precision despite heavy protection)",
+      "Knee-high rubber overboots designed to seal against biological hazards",
+      "Visible wear, fraying at seams, scuffs on visor, repaired patches on apron"
+    ],
+    "tier_indicator": "Tier 5 / Tier 4 borderline. This is sub-grade or working-class street medical. The components are salvaged, improvised, or surplus—no new-manufacture luxury marks. Worn openly as a badge of ungoverned medicine.",
+    "cultural_context": "Street doc, RipDoc, black-market surgeon, or emergency clinic operator in Tier 5 autonomous zones. Wearing this signals practical competence without oversight, willingness to operate where corpo medicine won't go, and acceptance of biohazard exposure. This is the uniform of survival medicine.",
+    "condition_typical": "Heavily used, stained, patched, and worn. The visor is cracked; the fabric shows chemical burns and chromatic fluid residue. Everything is functional but visibly exhausted—maintenance through repair, not replacement."
+  },
+  "image_prompt": "A street-doc dressed in a full medical rig: butcher-gray stained apron over olive scrubs, cracked visor headset with three taped mismatched magnification lenses, nitrile-coated gauntlets with textured fingertips, knee-high rubber overboots sealed at the ankle, and a chest harness of repurposed olive-tan webbing holding scalpel rolls and syringe loops. Biohazard patches visible on the torso. Moody underground clinic lighting, stainless steel and exposed wiring in background, chromatic fluid stains glinting iridescent under industrial overhead lights. Gritty, lived-in, utilitarian. Shot on dark background emphasizing the texture of worn materials and improvised assembly. Cyberpunk street medicine aesthetic. --ar 2:3 --v 6"
 }

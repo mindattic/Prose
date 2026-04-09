@@ -44,5 +44,35 @@
     "versatile",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Brecken Yılmaz-Osei",
+    "Cezar Watanabe-Gyasi",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "TESSERA TC-3 'Crucible'",
+    "The Causeway Collective"
+  ],
+  "physical_description": {
+    "visual_profile": "A skeletal, purposeful sniper platform with an exposed modular architecture. The Causeway reads as deliberately unadorned — all function, zero flourish. Its receiver is a precision-machined spine of dark alloy from which barrel assemblies, stock, and rail systems attach with surgical precision. The weapon has an almost architectural quality: clean lines, pronounced negative space, and an aggressive forward cant that suggests perpetual readiness.",
+    "dimensions": "Base receiver: 48 cm. Total length varies: 7.62mm configuration 118 cm, .408 configuration 134 cm, EM barrel 112 cm. Barrel assemblies themselves 38-52 cm depending on variant. Width across rail system: 8 cm.",
+    "weight_description": "The 7.62mm configuration feels balanced and almost elegant in the shoulder — 5.8 kg distributed across a long sight plane. The .408 feels genuinely hefty, a brute instrument requiring respect and proper positioning. The EM barrel configuration, despite being lighter at the muzzle, feels dense and front-loaded due to the auxiliary capacitor pack mounted forward of the receiver — approximately 8.4 kg of purpose.",
+    "primary_material": "Receiver and rail system: aerospace-grade titanium-aluminum composite with diamond-hard anodizing. Barrel assemblies: chrome-moly steel for conventional barrels, electromagnetic coils wrapped in carbon-reinforced polymer for the EM variant. Stock: modular carbon composite, tool-free attachment points.",
+    "finish": "Receiver and rails: deep charcoal anodize with mil-spec satin finish — no shine, designed to kill reflections. Barrel assemblies wear a matte nitride finish in gunmetal grey. The auxiliary capacitor pack features brushed industrial grey with subtle heat-dissipation ridging. All attachment points show precision machine marks — no polishing, no cosmetics.",
+    "color_scheme": "Primary: military charcoal and gun-metal grey across the platform. Accents: white manufacturer stamps, pale blue LED indicators on the capacitor pack (visible when powered), and faint amber witness marks on quick-disconnect joints. Orange caution striping on the EM barrel's muzzle shroud.",
+    "grip_texture": "Pistol grip: cross-hatched rubberized polymer with aggressive texturing for gloved operation. Wraparound texture extends to the rail panels. The barrel quick-disconnect collars are bare, knurled steel for ungloved manipulation in the field.",
+    "distinctive_features": [
+      "Quick-release barrel mounting system with tool-free indexing — three prominent alignment lugs visible on receiver face",
+      "Modular top rail: Picatinny 20mm system spanning the entire receiver, slightly elevated for optics clearance",
+      "Auxiliary capacitor pack mounted forward of receiver (EM configuration only) — cylindrical, ribbed for heat dissipation, with small indicator LEDs",
+      "Witness holes and calibration marks visible on each barrel assembly, color-coded to configuration type",
+      "Precision-drilled gas ports along the conventional barrels, catching light subtly",
+      "Charging handle positioned amidships on the receiver, oversized and angled for gloved operation",
+      "Three-point stock attachment with locking indicators — minimal sag, surgical precision",
+      "Forward assist button with sharp, angular geometry — no rounded edges, pure function"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES stamped in small sans-serif lettering on the left receiver face, just aft of the ejection port. Serial plate mounted on the right side: brushed stainless, legible from field distance. Each barrel assembly bears its caliber designation in white paint: '7.62×51', '.408 CHEY TAC', '4MM EM' respectively. Model number 'LS-15' laser-etched on the lower receiver.",
+    "condition_typical": "Factory-fresh examples show pristine anodize with perfect witness mark clarity. Field-used Causeways develop subtle wear: scuffing on the capacitor pack from transit cases, fine scratches on the rail system from scope mounting/remounting, and occasional carbon fouling around the barrel indexing points. Well-maintained contractor weapons show meticulous cleaning with zero rust, though the matte finish hides dust and minor marks deliberately. Heavily-used EM configurations show heat discoloration on the capacitor shroud — a badge of sustained engagement."
+  },
+  "image_prompt": "Professional catalog photography of a modular sniper rifle system displayed in three configurations side-by-side on a brushed gunmetal surface. Left: compact 7.62mm barrel assembly mounted, sleek and balanced. Center: heavy .408 variant with extended barrel and heavier stock, aggressive posture. Right: electromagnetic railgun configuration with visible auxiliary capacitor pack glowing with faint blue indicator LEDs, angular and futuristic. Strong directional side-lighting from 45 degrees, casting precise shadows that emphasize the modular geometry and reveal texturing on the rubberized grip. Manufacturer markings and witness marks clearly visible. Background: deep charcoal gradient suggesting a high-tech corporate armory or Tier 1 secure facility. Foreground: gloved operative hand in cybernetic-enhanced gauntlet gripping the center rifle, demonstrating scale and field-readiness. Cyberpunk aesthetic: clean industrial design, no chrome excess, functional brutalism, 2226-era precision weaponry. Slight color grading toward cool tones with amber accent lighting on the capacitor indicators. --ar 3:2 --v 6"
 }

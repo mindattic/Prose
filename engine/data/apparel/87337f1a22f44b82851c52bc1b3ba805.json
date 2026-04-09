@@ -39,5 +39,26 @@
     "Sulfur Crown Agriculture",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Patchwork Kitchen"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A crisp white double-breasted chef's coat worn by a working-class line cook — structured yet lived-in, with the subtle H&D chain-link logo visible at the collar. The silhouette is practical and slightly boxy, designed for movement and heat protection rather than tailoring. Worn with high-waist white utility trousers and a white apron that shows honest wear.",
+    "fit": "Relaxed through the torso with room for layering and movement, tapered slightly at the waist via the high-rise trousers. The coat hits mid-hip. Forearms are reinforced with visible panel sections. The structured cap sits firmly but not tight, with clear space at the crown.",
+    "primary_material": "Treated cotton-synthfiber blend rated for sustained heat exposure up to 200°C surface contact. Durable, industrial-grade, designed to withstand repeated industrial washing.",
+    "texture": "Smooth, tightly woven fabric with a slight sheen from the synthetic component. Reinforced panels have a subtly raised weave. Magnetic button closures feel smooth and satisfying. Seams are double-stitched and visible.",
+    "color_scheme": "Bright white throughout — coat, trousers, apron, and cap. The H&D chain-link logo in muted gray at the collar. Most worn examples show accumulated stains: coffee rings, grease spatters, the occasional burn mark that's been washed but not completely removed.",
+    "closures": "Magnetic buttons on the double-breasted coat front — replaceable without tools, quick to remove in case of spill burns. Hook-and-eye rear vent panel for tail clearance. Apron ties at waist and neck.",
+    "distinctive_features": [
+      "Double-breasted magnetic button closure — faster removal in emergencies",
+      "Reinforced forearm panels in contrasting weave, positioned clear of standard augment ports",
+      "Rear vent panel with hook-and-eye closure for geneware tail accommodation",
+      "Structured cap with horn-clearance cutouts on crown, sealed with food-safe silicone edging",
+      "High-waist utility trousers with practical pocket depth",
+      "H&D chain-link logo printed subtly at collar — mark of a contracted kitchen worker",
+      "Industrial-washable at 200°C, rated for 200+ cycles"
+    ],
+    "tier_indicator": "Tier 2-3 functional workwear — not luxury, but standard-issue in GLMZ's professional kitchen ecosystem. Signals employment in a contracted food service operation.",
+    "cultural_context": "The uniform of GLMZ's working-class kitchen staff — line cooks, prep cooks, kitchen runners in mid-tier restaurants, hotel kitchens, and corporate cafeterias. The H&D coat is ubiquitous enough that wearing one signals you're part of the city's food service infrastructure. Stains and wear are badges of experience, not shame.",
+    "condition_typical": "Broken-in and marked with honest wear — accumulated stains that have survived multiple industrial washes, small burn marks from pan contact, maybe a patched tear at the elbow. The cap shows creasing. The apron is noticeably worn at the ties. Most sets in active use are well past the manufacturer's 200-cycle recommendation but still serviceable."
+  },
+  "image_prompt": "Holloway & Drax culinary uniform on a diverse line cook model with visible augmentation ports on forearms. Double-breasted white chef's coat with magnetic buttons, reinforced panels, and subtle H&D chain-link logo at collar. High-waist white utility trousers. White structured cap with horn-clearance cutouts. The uniform shows lived-in stains — coffee, grease spatters, faint burn marks — worn with the confidence of someone who's earned their kitchen. Dark moody kitchen lighting, stainless steel prep table backdrop, steam in the air. Industrial, functional, real. --ar 2:3 --v 6"
 }

@@ -53,5 +53,38 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Carrion Defense Works Autonomous Perimeter Defense Ecosystem",
+    "GLMZ",
+    "Ihaia Nystrom-Keita",
+    "Kadiatou Bergstrom-Konate",
+    "Kang-Petrov Arms KPS-410 'Hallway'",
+    "Narrowcast",
+    "Ouroboros Energy PiezoCore LD-5 Pedestrian Kinetic Harvesting Grid",
+    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
+    "The Swarm",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular rectangular block resembling a chunky breaching charge or mining explosive—utilitarian and deliberately unadorned. The device has a low, wide footprint designed for flush mounting against surfaces. Its industrial aesthetic reads as purpose-built military hardware: no curves, no compromise.",
+    "dimensions": "180mm length × 120mm width × 40mm depth (roughly the size of a hardcover book stood on edge)",
+    "weight_description": "Deceptively dense for its size—1.4kg feels substantial and grounded in hand, with the weight biased toward the tungsten-carbide plate core. The heft communicates lethal payload despite the modest volume.",
+    "primary_material": "Reinforced polymer housing with internal tungsten-carbide fragmentation plate; magnetic coil array embedded in aluminum substrate",
+    "finish": "Matte charcoal polymer with brushed aluminum accent panels around the magnetic assembly. Shows deliberate corrosion resistance—no chrome or polish, only functional coating.",
+    "color_scheme": "Gunmetal gray primary with dark charcoal polymer body; thin accent lines of brushed aluminum framing the linear accelerator aperture; no paint, all industrial coating",
+    "grip_texture": "Textured polymer edges with shallow grip indentations molded into the sides for two-hand handling during emplacement; cool aluminum contact surfaces on the mounting face",
+    "distinctive_features": [
+      "Linear magnetic coil aperture running the length of the device—a horizontal slot revealing aluminum ribbing and coil windings",
+      "Tungsten-carbide plate visible through a reinforced window on the front face—dark metallic, fractured-pattern etched surface",
+      "Three recessed trigger-type selector knobs (wireless, tripwire, pressure) on the top edge, unmarked except for subtle Morse-code-style notches",
+      "Integral quick-mount bracket on the base with standardized NATO rail points",
+      "Serial/batch code laser-etched into the rear: 'IPA-KSP3-447821'",
+      "Faint heat damage and burn scoring around the magnetic aperture from testing/prototype use"
+    ],
+    "manufacturer_markings": "Iron Point Ammunition logo (stylized spike through a cartridge) stamped on the top-left corner in recessed chrome. Arcturus Defense Solutions secondary marking in smaller font on the rear mounting face. No license plate; classified military hardware.",
+    "condition_typical": "Pristine or near-new when distributed, but field units show scoring from emplacement, dust/concrete residue in the aperture, and occasional scorch marks from detonation proximity. Never repaired—single-use item discarded after function."
+  },
+  "image_prompt": "Product photograph of the Kinetic Spike Projector KSP-3 'Railsplitter' lying on a dark matte-black military surface, angled 45 degrees to reveal the linear magnetic coil aperture and tungsten-carbide fragmentation plate window. Dramatic side-lighting from the left (cool blue-white 5000K) casting sharp shadows across the brushed aluminum accelerator assembly. Close detail shot showing the textured charcoal polymer housing, recessed trigger selectors, and laser-etched manufacturer markings. Background: out-of-focus industrial metal panels suggesting a weapons lab or armory. Cyberpunk aesthetic: cold, clinical, lethal precision. Shot with shallow depth of field emphasizing the front aperture and core payload. --ar 3:2 --v 6"
 }

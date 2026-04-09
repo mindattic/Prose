@@ -43,5 +43,25 @@
   "related_entities": [
     "Synaptrel",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "High-visibility safety jacket with commanding presence — bright fluorescent yellow demands attention. Utilitarian silhouette with squared shoulders, functional geometry, and authoritative reflective X-stripe pattern. Projects working-class infrastructure presence; worn by those maintaining GLMZ systems in darkness.",
+    "fit": "Relaxed, purposefully oversized for layering over thermal wear or light augmentation rigs. Allows freedom of movement for manual labor. Sleeves intentionally looser than torso for arm mobility during utility work.",
+    "primary_material": "Two-tone construction: PVC-coated polyester body (rigid, weather-resistant); softer polyester sleeves (flexible, less restrictive)",
+    "texture": "Stiff, protective sheen on torso panels; slightly matte, breathable weave on sleeves. Reflective tape has raised, bumped surface that catches light at all angles. Tactile industrial quality.",
+    "color_scheme": "Safety fluorescent yellow (#FFFF00) dominating entire garment. Silver-gray 3M retro-reflective tape in standard X-pattern across chest and back. Minimal color variation — purity of visibility is the design goal.",
+    "closures": "Snap-front closure (durable, operable with heavy gloves or augmented fingers). Two lower patch pockets with snap tabs; one chest pocket with snap closure.",
+    "distinctive_features": [
+      "Retro-reflective X-stripe pattern meeting city infrastructure visibility codes",
+      "Two-tone material engineering — rigid body, flexible sleeves",
+      "Multiple functional pockets with industrial snaps",
+      "Orlen Safety Products branding (small, practical placement on sleeve)",
+      "Lightweight despite durability — designed for extended wear during night shifts",
+      "No fashion concessions — pure function aesthetic"
+    ],
+    "tier_indicator": "Tier 3 working-class, infrastructure essential tier. Signals honest labor maintaining city systems. Not aspirational; mandatory professional wear.",
+    "cultural_context": "Worn by transit workers, utility corridor maintainers, road construction crews, underground infrastructure teams, night-shift grid operators. Seen under elevated lines at 3am, in flooded tunnels, during grid storms. The jacket makes the worker visible to autonomous Behemoth traffic and drones. On The Shelf, expired jackets remain in circulation — worn as unofficial checkpoint passes or identity camouflage.",
+    "condition_typical": "Broken-in quickly. Reflective tape edges fray slightly with age; PVC body develops creasing patterns from repetitive movement. Rain-stained hem. Faint mud-spray marks on lower panels. Still functional and regulation-compliant despite visible wear. Torn seams sometimes field-taped rather than replaced."
+  },
+  "image_prompt": "A Tier 3 infrastructure worker in an Orlen Hi-Vis reflective safety jacket, shot in moody 3am lighting under an elevated transit line. Fluorescent yellow body and silver reflective X-stripe gleaming against dark rain-slicked concrete and shadow. Worker positioned mid-stride, sleeves slightly rolled, one hand touching a maintenance conduit. Industrial GLMZ backdrop — utility poles, neon signage blurred in distance, cold blue-gray color grading. Wet pavement reflects jacket glow. Gritty, documentary-style cyberpunk aesthetic. --ar 2:3 --v 6"
 }

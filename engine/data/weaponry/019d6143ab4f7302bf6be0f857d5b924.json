@@ -60,5 +60,48 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Arcturus NX-1 'Sandman'",
+    "Below the Threshold",
+    "Biometric Denial Charge BDC-1",
+    "Forge-Smith Collective Thundermouth Double 'Old Testament'",
+    "GLMZ",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Sorin Ekwensi-Balasanyan",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA CC-6 'Shepherd'",
+    "Tessera Corponation",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "The Human Baseline Alliance",
+    "The Question",
+    "The Threshold",
+    "Vantablack-CNX",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular sidearm with an organic, almost medical aesthetic — resembling a hybrid between a clinical instrument and a compact firearm. The rotating aperture collar at the muzzle dominates the front profile, with concentric rings of brushed metal that suggest precision engineering. The body tapers smoothly from grip to barrel, giving it an almost skeletal elegance. At first glance, it reads as *controlled, dangerous, and deliberately unfamiliar* — something that doesn't fit traditional weapon categories.",
+    "dimensions": "Length: 24 cm | Width: 6.5 cm | Height: 5.2 cm (including aperture collar) | Barrel depth: 8 cm from grip",
+    "weight_description": "Surprisingly light in hand — roughly 2.1 kg distributed along a compact frame — yet dense enough to feel purposeful and grounded. Balanced toward the grip, making it feel almost like a precision tool rather than a bludgeon. Sits comfortably in an open palm despite its angular design.",
+    "primary_material": "Aerospace-grade carbon composite chassis with nested brushed titanium aperture rings at the muzzle. Internals visible through translucent polymer panels along the slide reveal bioelectric capacitor cells arranged like neural pathways.",
+    "finish": "Matte gunmetal gray primary body with subtle iridescence in certain light angles. Brushed titanium aperture collar provides reflective contrast. Translucent polymer sections show interior bioelectric architecture in faint bioluminescent trace patterns (charging state indicator).",
+    "color_scheme": "Gunmetal gray body, titanium silver aperture rings, ghost-white translucent capacitor windows with faint cyan bioluminescent charge indicators. Accent details in black anodized metal.",
+    "grip_texture": "Textured polymer grip with subtle ribbing designed to prevent sweating hands from slipping. Slightly tacky, almost surgical in its precision-engineered feel. The rotating aperture collar at the muzzle is knurled titanium — deliberately textured for field recalibration.",
+    "distinctive_features": [
+      "Concentric rotating aperture collar with alignment notches for manual frequency calibration",
+      "Translucent polymer side panels revealing bioelectric capacitor cells in hierarchical arrangement",
+      "Subtle bioluminescent charge indicator running along the capacitor window (glows cyan when fully charged, fades to red at 10% capacity)",
+      "Soft thrumming vibration at idle state (barely perceptible, 14 Hz resonance)",
+      "Miniature neural-sync feedback LED cluster above the grip (pulses to indicate operator neural dampener compatibility check)",
+      "Recessed safety catch integrated into grip frame — almost invisible unless you know to look",
+      "Dual capacitor cell access port on rear grip (maintenance/hot-swap design)",
+      "Faint Zheng-Dao Bioelectric serial stamp along right frame, partially obscured by grip overlay"
+    ],
+    "manufacturer_markings": "Zheng-Dao Bioelectric logo — a stylized double helix — stamped in matte black on the left slide. Serial number etched in micro-font along the right frame beneath the grip overlay. Certification marks for TESSERA cortical shielding compatibility printed in white on the capacitor window frame.",
+    "condition_typical": "Field units range from pristine (freshly issued to corpo security teams) to well-worn (veteran extraction gear). Aperture collar shows micro-scratches from field recalibration. Grip texture gradually becomes more slippery with age. Some units display faint scorch marks around the aperture from extended sustained-burst cycles. Well-maintained examples show minimal wear; black-market or looted units often feature cracked translucent panels or corroded capacitor window edges."
+  },
+  "image_prompt": "Product photography of the Synaptic Drift Emitter SDE-4 'Lullaby' lying on a dark matte black surface, angled 45 degrees toward the camera. Dramatic side-lighting from the left reveals the brushed titanium aperture collar in sharp relief and highlights the bioluminescent charge indicator (glowing soft cyan) visible through the translucent polymer side panels. The grip texture and recessed safety catch are clearly visible. Shallow depth of field keeps the weapon in razor-sharp focus while the background blurs into deep shadow. Cyberpunk aesthetic: cool color temperature, faint digital scan lines across the image, subtle neon reflection on the capacitor windows suggesting nearby holo-interface glow. Close-up detail shot emphasizing materials (carbon composite, titanium, polymer) and the precision-engineered aperture collar mechanism. Gloved hand (black tactical glove) entering frame from lower right, fingers poised near the grip. --ar 3:2 --v 6"
 }

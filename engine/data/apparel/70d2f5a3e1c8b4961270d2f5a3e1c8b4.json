@@ -47,5 +47,27 @@
     "Ringo RT-4 'Oxcart'",
     "Synaptrel",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitted tactical vest that reads as intentional streetwear rather than obvious body armor. The silhouette is athletic and tapered, with a clean vertical line down the center from the snap-front closure. The segmented paneling creates subtle horizontal striations across the chest and torso, catching light unevenly. Worn alone or over a fitted base layer, it projects controlled competence—security contractor, licensed operative, or working professional with legitimate reasons to carry.",
+    "fit": "Close-fitting and compression-style through the torso; follows the body's natural contours without loose fabric. Armholes are tailored rather than generous, and the vest terminates at the natural waist. The snap-front allows for micro-adjustments without gapping. Designed to layer cleanly over thin synthetics or worn as a standalone outer layer.",
+    "primary_material": "Rigid-soft composite: woven ballistic nylon outer shell (matte finish) bonded over segmented aramid or poly-ceramic ballistic panels. The exterior is treated for water and static resistance; the interior has a breathable mesh backing.",
+    "texture": "Outer shell is smooth and slightly stiff to the touch, with a subtle woven texture visible under raking light. The segmented panels create a faint quilted relief pattern without any visible stitching on the exterior—edges are heat-sealed and finished. High-quality zippers and snap hardware feel precise and mechanical.",
+    "color_scheme": "Matte black (primary) or olive drab. No logos or visible branding. Zippers and snaps are gunmetal or anodized steel gray. No reflective elements or high-visibility trim.",
+    "closures": "Snap-front closure with reinforced anchor points; four zip pockets (varying widths: narrow chest document pocket, medium right-chest sidearm accessory pocket, narrow left lower comms pocket, wide lower right general utility pocket). All zippers are heavy-duty YKK or equivalent with rubberized pulls.",
+    "distinctive_features": [
+      "Segmented ballistic panel architecture visible as horizontal striations",
+      "Stand collar with subtle structured shaping",
+      "Four asymmetrical front pockets, each sized and positioned for specific carry",
+      "Heat-sealed seams with no exposed stitching on exterior",
+      "Reinforced anchor points at snap closure and pocket corners",
+      "Breathable mesh interior visible at armholes and collar",
+      "Subtle weight distribution (armor panels heavier in center-mass, lighter at shoulders)",
+      "Pocket interiors labeled with discreet embossed symbols (document, gear, comms, general)"
+    ],
+    "tier_indicator": "Tier 3-4 functional: premium working-class to lower-corporate. The Kestrel is too well-engineered and expensive for Tier 5 salvage wear, but deliberately styled to avoid the Tier 1 status-symbol aesthetic of obvious luxury armor.",
+    "cultural_context": "Worn by private security contractors, licensed bodyguards, armed couriers, law enforcement off-duty, and affluent civilians in high-risk professions or neighborhoods. The wearer is signaling 'I am trained, I am prepared, and I have legitimate reason to carry.' No gang affiliation, no militia performance—professional and compliant.",
+    "condition_typical": "Pristine to well-maintained. This is expensive gear that sees regular care. May show minor scuffing at zippers or edges from frequent use, but no tears or patching. Owners keep these clean because they signal professional competence."
+  },
+  "image_prompt": "Professional fashion photography of a matte black Kestrel Tactical Conceal Vest on a lean, augmented model with visible cybernetic wrist ports. The model stands in a three-quarter stance in a rain-slicked GLMZ underpass, moody blue-gray lighting with neon signage bleeding through the background. Close-up detail shot of the segmented torso paneling and snap-front closure visible. The vest is styled clean—no overstyling, no jewelry, just the vest over a black compression base layer. The model's posture is alert, professional. Cinematic, corporate-security aesthetic. Rain reflections on the vest's matte surface. --ar 2:3 --v 6"
 }

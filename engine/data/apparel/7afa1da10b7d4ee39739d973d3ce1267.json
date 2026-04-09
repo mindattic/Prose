@@ -42,5 +42,25 @@
     "TESSERA TC-3 'Crucible'",
     "Tessera Nexus Town Car",
     "The Patchwork Kitchen"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Crisp, utilitarian silhouette with institutional precision. White chef coat dominates, accented by kelly green trim at collar, cuffs, and button placket. Bib apron extends from chest to mid-thigh, creating a clean rectangular plane. Overall impression: sterile efficiency with subtle hints of wear on a well-maintained work garment.",
+    "fit": "Double-breasted coat sits structured but not constrictive—designed for movement in tight kitchen spaces. Sleeves taper at wrist with ribbed cuffs. Apron has reinforced straps over shoulders, slightly loose through the torso to accommodate layering and repeated bending. Trousers pull-on style with adjustable waist for quick changes between shifts.",
+    "primary_material": "Heat-resistant spun polyaramid (coat), wipe-clean polymer-coated cotton-weave (apron), stretch-blend twill (trousers)",
+    "texture": "Coat fabric has a tight, almost crisp weave with slight sheen from polyaramid treatment. Apron surface is slick and moisture-repellent, designed to shed liquids instantly. Trousers have subtle texture—broken-in softness from multiple washes but maintained structure.",
+    "color_scheme": "Stark white as primary with kelly green accent stripes. Nourish & Co. logo (small, green-on-white) appears on left chest and apron bib. Minor off-white discoloration and faint staining typical on deployed uniforms—bleach spots, heat-fade marks, set-in grease shadows.",
+    "closures": "Double-breasted magnetic snaps down coat front (faster than buttons for quick changes). Apron secured with canvas ties at waist and neck. Trousers use friction-fit elastic waistband with drawstring.",
+    "distinctive_features": [
+      "Snap-out neck collar panel for workers with chrome hardware or subcutaneous BCI ports",
+      "Reinforced cuff panels rated for 260°C sustained heat",
+      "Small RFID patch embedded in apron seam (inventory tracking/monitoring)",
+      "Alternative cap options: structured with horn-clearance inserts or elasticized skull-cap style for modified workers",
+      "Double-reinforced apron bib with secondary catch pocket for small utensils",
+      "Acid and oil-resistant treatment visible as slight water-beading on surface"
+    ],
+    "tier_indicator": "Tier 2-3 functional. Clean, durable, unremarkable. Signals essential work rather than prestige. Corporate-standardized rather than individual choice.",
+    "cultural_context": "Wearing this marks you as part of GLMZ's invisible kitchen infrastructure—the people who feed the city. Among kitchen crews, it signals belonging to a tight-knit, overworked collective. To outsiders, it's nearly invisible—the uniform of people whose labor is essential but socially unnoticed. The RFID tag is a point of collective grievance and dark humor among wearers.",
+    "condition_typical": "Well-maintained but visibly used. White retains brightness through facility laundering but shows faint discoloration patterns—grease shadows, bleach spots, heat-fade. Apron may have small creases or impressions from repeated folding. Magnetic snaps occasionally loose or replaced. Overall impression: clean, functional, worn with the weight of repetition."
+  },
+  "image_prompt": "A Tier 3 kitchen worker in full Nourish & Co. uniform—white heat-resistant chef coat with kelly green trim, matching apron, adjustable trousers—standing in a dimly lit industrial canteen kitchen. Overhead fluorescent bars cast cool shadows across stainless steel counters and walk-in freezer doors visible in background. Worker's expression is tired but composed. Close detail shot of apron showing wipe-clean polymer coating catching light, small RFID tag visible in seam. Moody, desaturated color palette with pops of that institutional green. Shot from waist up, professional but intimate. Documentary-style cyberpunk foodservice authenticity. --ar 2:3 --v 6"
 }

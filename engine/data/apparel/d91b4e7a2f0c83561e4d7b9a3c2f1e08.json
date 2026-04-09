@@ -50,5 +50,25 @@
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "The Pure Hand",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, second-skin glove that creates the illusion of unaugmented human hands. Sits flush against chrome limbs with zero visible seams or tech. The matte finish mimics natural skin tone with subtle undertone variation. When worn, appears as ordinary skin rather than prosthetic or tech—the goal is invisibility within professional contexts.",
+    "fit": "Precision-fitted, compression-grade contact with the underlying chrome. Conforms exactly to the wearer's augmented hand and forearm geometry. Wrist seal magnetically anchors to chrome flanges for a seamless transition under clothing.",
+    "primary_material": "Matte synth-skin exterior (melanin-matched to individual wearer); signal-transparent graphene mesh lining in palm and fingers",
+    "texture": "Exterior: micro-textured to approximate natural skin pore structure at close inspection. Interior: smooth graphene mesh that conducts without friction.",
+    "color_scheme": "Customizable to individual melanin tone and undertone (warm, cool, or neutral). Typically offered in 40+ shade variations. Matte finish eliminates shine.",
+    "closures": "Magnetic wrist seal bonding to standard chrome forearm flanges. No visible fasteners or zippers.",
+    "distinctive_features": [
+      "Pore-structure surface texturing for tactile realism",
+      "Signal-transparent graphene mesh allows BCI handshake and capacitive touch without removal",
+      "Optional fingertip cutaway zones for unmediated tactile feedback",
+      "Seamless wrist integration with chrome augmentation",
+      "Melanin-matched customization across 40+ shade variations",
+      "Voss Adaptive Systems branding (subtle embossed logo on inner wrist)"
+    ],
+    "tier_indicator": "Tier 1-2 luxury. Cost and customization mark this as corpo-grade. Sub-tiers cannot afford cosmetic augmentation overlay.",
+    "cultural_context": "Worn by augmented professionals who operate in corpo boardrooms, medical facilities, or formal settings where visible chrome reads as unprofessional or creates social friction. Signals wealth, discretion, and integration into mainstream society despite augmentation.",
+    "condition_typical": "Pristine to lightly worn. These are precision instruments replaced regularly. Wear shows as minor surface dulling on high-contact areas (thumb, index finger, palm). Never patched or salvaged."
+  },
+  "image_prompt": "Close-up fashion shot of a Voss ChromeVeil Cosmetic Interface Glove on an augmented hand against dark matte background. The glove's matte synth-skin surface gleams subtly under moody blue-white cyber lighting, showing micro-textured pore detail on the knuckles and palm. The wrist magnetically seals to visible chrome forearm plating beneath, creating seamless human-machine silhouette. Hand positioned naturally as if mid-handshake or gesture. Cyberpunk boardroom aesthetic. Shallow depth of field. Cool color grading with highlights on fingertips. Voss branding visible on inner wrist. Dark urban corporate backdrop with bokeh city lights. --ar 2:3 --v 6"
 }

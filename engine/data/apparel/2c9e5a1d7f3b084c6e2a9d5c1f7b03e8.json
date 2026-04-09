@@ -37,5 +37,25 @@
     "cargo_pant",
     "insulated",
     "rolen"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian cargo silhouette with pronounced articulation—military-adjacent but purpose-built for augmentation integration. Sits low on the hips with a straight, slightly tapered leg. The quilted surface catches light in geometric ridges, creating a distinctly engineered aesthetic.",
+    "fit": "Relaxed through the hip and thigh with deliberate articulation at knee and calf. Compression zones at waistband and ankle. Thigh panels sit loose to accommodate prosthetic sockets and technical understructure without binding.",
+    "primary_material": "Heavy ballistic weave shell with closed-cell foam-analog batting—military-grade insulation rated for sustained sub-zero exposure. Reinforced at stress points with abrasion-resistant synthetic leather.",
+    "texture": "Quilted surface in regular diamond or lattice pattern, raised and tactile. Batting creates subtle puffy dimensionality. Seams are triple-stitched with visible topstitching in contrasting thread.",
+    "color_scheme": "Slate grey (primary), black, or work khaki. Matte finish with subtle sheen on batting ridges. Visible orange or reflective accent stitching at articulation points.",
+    "closures": "Heavy-duty magnetic-assist fly with reinforced zipper backup. Thigh zip channels have friction-fit storm flaps. Waistband features both button and internal friction-clasp system.",
+    "distinctive_features": [
+      "Thigh-level parallel zip channels for prosthetic leg socket access and ventilation",
+      "Articulated knee panels with asymmetrical flex zones",
+      "Cargo pockets with reinforced corners and internal tech loops",
+      "Integrated suspension D-rings at side seams",
+      "Ventilation grommets behind knee articulation",
+      "Rolen Depot branded woven labels on waistband and rear pocket"
+    ],
+    "tier_indicator": "Tier 3–4 functional. Accessible to working-class augmented labor but signals serious infrastructure investment and legitimate corpo-adjacent employment.",
+    "cultural_context": "Worn by field technicians, augmented construction workers, and outdoor labor specialists in the GLMZ. Signals practical augmentation and blue-collar resilience. Commonly seen on Iowan Behemoth maintenance crews.",
+    "condition_typical": "Broken-in with visible wear at articulation points and zip channels. Minor patching or reinforcement tape is expected. Thermal insulation may show compression from repeated use."
+  },
+  "image_prompt": "A muscular augmented worker wearing slate grey Rolen Thermopatch cargo pants, standing in three-quarter profile against industrial scaffolding in a snow-dusted GLMZ warehouse district at dusk. Close-up detail shot showing the quilted knee articulation panels and open thigh zip channel revealing ventilation grommets. Moody blue-grey ambient lighting with warm tungsten work lights in background. Dark concrete and steel textures. Model has visible chrome ankle joint. Shallow depth of field on the textile details. --ar 2:3 --v 6"
 }

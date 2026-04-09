@@ -35,5 +35,25 @@
     "gene-compatible",
     "aug-friendly"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "physical_description": {
+    "visual_profile": "Athletic yet industrial—sleek compression silhouette that hugs the leg from waist to ankle with a purposeful, no-nonsense aesthetic. Reads as functional armor for the body, not fashion. Slight sheen from synthetic fibers catches light subtly.",
+    "fit": "Compression-tight through the thigh and calf, conforming closely to the leg without restricting movement. High waist sits at natural hip line. Gusseted crotch and articulated knee panels allow deep squats and lateral movement. Accommodates both standard and modified leg geometry—extra give in the ankle and calf for digitigrade or augmented limbs.",
+    "primary_material": "Ovex proprietary ballistic-blend synth-weave: 67% recycled polyester, 28% elastane, 5% conductive polymer threading for static dissipation. Thick-gauge, ~1.2mm, similar density to motorcycle gear.",
+    "texture": "Smooth outer face with subtle ribbing along the seams. Inner thigh and calf panels feature micro-grip texture (raised diamond pattern) to prevent slipping during high-friction work. Reinforcement zones feel noticeably thicker, almost quilted in cross-section.",
+    "color_scheme": "Dominant charcoal black or dark gunmetal grey. Reflective piping runs down outer seam in muted grey or industrial silver. Occasional tonal stripe at hip. Minimal branding—small woven Ovex tag at back waist.",
+    "closures": "High-rise waistband with friction-fit elastic core and subtle drawstring (thin black paracord, rarely adjusted). No fly—pull-on design. Ankle cuffs have internal grip tape to prevent roll-down during exertion.",
+    "distinctive_features": [
+      "Reinforced shin panels: double-layer ballistic weave, slightly raised topography",
+      "Outer thigh panels: extra abrasion resistance, worn area tends to highlight this detail",
+      "Gusseted crotch: cross-stitched, allows extreme ROM",
+      "Conductive threading: barely visible but reduces static buildup around machinery",
+      "Internal phone pocket: right hip, concealed, rarely used",
+      "Subtle Φ branding: back waist tag, faint but deliberate currency reference"
+    ],
+    "tier_indicator": "Tier 3 working-class functional. Affordable (45Φ–80Φ range), durable, no prestige markup. Ovex is a respected supply brand, not luxury.",
+    "cultural_context": "Worn by fabrication workers, warehouse handlers, maintenance techs, augmentation clinic staff, and anyone with cybernetic lower limbs who needs reliable, forgiving base wear. No status value—pure utility. Signals 'I work with my hands or machines.'",
+    "condition_typical": "Usually broken-in after first wear. Shows scuffing on shins and thighs within weeks. Fading to lighter grey at high-contact zones. Seams remain solid for years. Rarely patched (synthetic fibers hold); more likely replaced than repaired when worn through."
+  },
+  "image_prompt": "Ovex Durastretch work legging on a chrome-augmented model with visible shin plating, posed in a warehouse-lit stance—half-turn, weight on one leg, hands at sides. Dark charcoal leggings gleam under industrial sodium lights. Reinforced thigh and shin panels catch highlights. Urban backdrop: stacked cargo containers, faint neon glow from distant tower. Moody, desaturated color grade. Product photography with subtle movement blur in hands. --ar 2:3 --v 6"
 }

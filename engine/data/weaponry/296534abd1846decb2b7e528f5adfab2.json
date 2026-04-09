@@ -41,5 +41,39 @@
     "prohibited",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Altan Salazar-Quansah",
+    "Arcturus PX-1 'Phantom'",
+    "Djeneba Orlov-Obeng",
+    "GLMZ",
+    "Grave Protocol Arms Terminus GPA-1 'Last Rites'",
+    "Lambeau Terminus",
+    "NeuralPath FaceAnchor Plus Name-Face Recall",
+    "New Windsor / Novaya Windsorka",
+    "Nika Svensson-Kone",
+    "TESSERA PG-2 'Signature'",
+    "WELLSPRING"
+  ],
+  "physical_description": {
+    "visual_profile": "A minimalist tube pistol with the aesthetic of a suppressed weapon, but stripped of all external complexity. Sleek, utterly devoid of ergonomic flourishes or tactical attachments. At first glance, it could pass for a compressed air tool or industrial device rather than a firearm. The form factor suggests function over form, but with an unsettling clinical precision.",
+    "dimensions": "18 cm length, 4.2 cm diameter tube, 2.8 cm grip width. No protruding barrel or slide — the entire structure is a unified cylinder with a trigger assembly.",
+    "weight_description": "Dense and compact despite modest size — 1.8 kg feels concentrated, heavy for its volume. Gives the impression of mass concentrated in the core rather than distributed. Sits in the palm with an unsettling dead weight, like holding a sealed container of consequence.",
+    "primary_material": "Aerospace-grade tungsten alloy core wrapped in carbon-composite external casing. The internal structure is purpose-built shielding.",
+    "finish": "Matte military black polymer exterior, slightly textured to prevent light reflection. The seams where the casing meets internal components show minimal gaps — obsessively precise manufacturing. No gloss, no shine, designed for invisibility.",
+    "color_scheme": "Flat black primary with silver-gray accent lines at the trigger assembly and the sealed radiative source cap at the rear. The color is absence rather than presence.",
+    "grip_texture": "Minimalist textured polymer grip, aggressive micro-serrations for retention in wet conditions or when hands are shaking. No palm swell or finger grooves — the grip is deliberately uncomfortable, forcing conscious control.",
+    "distinctive_features": [
+      "Rear-mounted sealed source cap with minute radiation hazard symbol etched into the material",
+      "Single mechanical trigger with unusual resistance — requires deliberate intent to depress",
+      "No safety mechanism visible or apparent",
+      "Trigger assembly frame appears to be titanium-reinforced, suggesting custom trigger work",
+      "Minimal laser-etched serial number on the undersurface of the grip",
+      "Subtle heat vents along the lower cylinder, barely visible until magnified",
+      "The muzzle end is completely flush — no barrel shroud, no device attachments possible"
+    ],
+    "manufacturer_markings": "Grave Protocol Arms logo — a stylized hooded skull overlapping the Greek letter Φ — laser-etched in micro-detail on the left side of the grip. Serial number stamped beneath the polymer on the right grip panel. No other identification. The logo itself is nearly invisible unless light hits it at a specific angle.",
+    "condition_typical": "When fielded, the Entropy Pistol maintains pristine condition. Operators treat it with obsessive care — there is no 'battle-worn' variant. Storage in lead-lined containers means minimal external wear. If one is encountered in the wild, any surface damage is unusual and suggests recent, hasty deployment."
+  },
+  "image_prompt": "Grave Protocol Arms Entropy Pistol EP-1 'Half Life' product photography: sleek matte-black tube pistol with titanium trigger assembly, photographed on dark brushed steel surface under dramatic side-lighting that catches the minimal silver accents. Single gloved hand (tactical leather, slight perspiration visible) holding the compact weapon with two fingers on the trigger guard, showing the flush muzzle and sealed rear cap. Micro-etched manufacturer logo visible on grip in harsh side-light. Cyberpunk aesthetic: cool blue and amber rim-lighting emphasizing the clinical, purposeful design. No unnecessary details, no ergonomic softness — pure lethal intent rendered as industrial minimalism. Shot from 45-degree angle to emphasize compact profile and weight concentration. GLMZ warehouse aesthetic — corrugated metal backdrop, subtle neon reflection in the black finish. --ar 3:2 --v 6"
 }

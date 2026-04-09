@@ -54,5 +54,25 @@
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "Tessera Industries Memory Rounds MR-2 'Recall'",
     "The Peninsula"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, asymmetrical half-glove that reads as high-tech minimalism—industrial and precise. The brushed titanium back catches light in subtle gradations, while the oxblood leather wraps the wrist in a sophisticated accent. Worn open-palm, it signals someone who interfaces directly with augmented systems. The lattice of micro-contact pads creates a technical constellation across the back of the hand.",
+    "fit": "Precision-fitted to the back of the hand and wrist; the open palm allows direct contact with chrome interfaces. Compression-style wrist closure with magnetic lock-points for secure fastening to forearm augmentation flanges. Form-hugging but not restrictive.",
+    "primary_material": "Brushed titanium-alloy frame with soft-grain synthetic leather (oxblood). Composite lattice backing with embedded micro-contact pads.",
+    "texture": "Titanium is cool and matte with fine brushed finish; leather is supple with subtle embossed circuit-trace detailing that catches fingers when touched. Pads are slightly raised, almost imperceptible to casual touch.",
+    "color_scheme": "Muted brushed silver-gray titanium with deep oxblood leather. Embossed circuit traces in barely-visible darker burgundy. Micro-contacts are gunmetal gray with faint luminescent calibration marks.",
+    "closures": "Low-profile magnetic clasp system designed to lock onto standard chrome forearm flanges. No traditional buckles or zippers—interface-first design.",
+    "distinctive_features": [
+      "Sixteen micro-contact pads arranged in lattice pattern across back panel",
+      "Embossed circuit-trace patterning on leather—functional aesthetic",
+      "Open-palm design for direct skin-to-chrome interface contact",
+      "Nullframe Systems branding (minimal, laser-etched on inner wrist)",
+      "Magnetic lock-points perfectly calibrated for common aug manufacturers",
+      "Lattice backing provides structural rigidity while remaining lightweight"
+    ],
+    "tier_indicator": "Tier 1-2 luxury. This is specialized corpo or independent operator gear—expensive, precision-engineered, built for someone with serious chrome augmentations.",
+    "cultural_context": "Wearer is either a corporate data-broker, freelance netrunner, or high-tier independent tech operative. Signals someone who interfaces with augmented systems daily and can afford bespoke, manufacturer-agnostic hardware. Not street-level; this is professional-grade.",
+    "condition_typical": "Pristine or lightly broken-in. The design is meant to show no wear—scratches on titanium are minimized through finish quality, leather ages gracefully. Even weathered examples maintain their precision aesthetic."
+  },
+  "image_prompt": "Close-up fashion photography of a cyberpunk data-broker wearing the Nullframe ChromeSync Interface Gauntlet on one hand, palm open and relaxed against a dark surface. The brushed titanium back panel glows subtly under moody blue-tinted studio lighting, micro-contact pads catching thin highlights. Oxblood leather wraps the wrist with visible embossed circuit traces. The model's hand shows visible chrome augmentation flanges on the forearm, magnetic lock-points engaged. Dark minimalist backdrop, shallow depth of field, cinematic noir atmosphere. Sharp focus on the lattice detail and micro-contacts. --ar 2:3 --v 6"
 }

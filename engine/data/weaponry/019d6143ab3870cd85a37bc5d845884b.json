@@ -57,5 +57,38 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Chromeworks Silhouette-S Ghost Walker Leg",
+    "GLMZ",
+    "Lazarus Pharmaceuticals Splanchnic Triage Automaton",
+    "Nodar Kuznetsov-Adu",
+    "Nurlan Holmberg-Dembele",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, wide-mouthed plasma weapon with the proportions of a combat shotgun but fundamentally alien in its geometry. The defining feature is its flat, letterbox-slot nozzle—a horizontal aperture that dominates the weapon's profile and looks almost ecclesiastical, like a priest's vestment caught mid-billow. The overall silhouette is barrel-heavy and squared-off, suggesting immense pressure containment beneath the surface.",
+    "dimensions": "Length: 78 cm | Width at nozzle: 18 cm | Height (including feed mechanism): 24 cm | Nozzle aperture: 14 cm wide × 3.2 cm tall",
+    "weight_description": "Hefty and deliberate in hand—4.2 kg loaded creates substantial forward momentum, demanding two-handed grip discipline. The weight distribution is slightly muzzle-forward, creating a pressing sensation rather than the balanced feel of conventional firearms. Feels engineered to resist drift during sustained thermal output.",
+    "primary_material": "Aerospace-grade carbon-titanium composite frame with embedded heat-dissipation latticing visible beneath surface treatment. Nozzle assembly is platinum-alloyed steel to withstand oxidative plasma egress.",
+    "finish": "Matte gunmetal gray with aggressive anodization. Sections show deliberate heat-bluing from operational stress, creating gradient striations. The nozzle mouth gleams with a faint iridescent sheen—residue burnishing from repeated plasma emissions.",
+    "color_scheme": "Primary: industrial gunmetal gray | Accents: brass-toned pressure release ports, emerald-green catalytic chamber indicator bands, blood-red oxidation status LED mounted on grip",
+    "grip_texture": "Dual-textured: rear grip is deeply knurled rubber-polymer for sweated-hand purchase; forward grip-rail is bare brushed titanium with intentional micro-abrasion for gloved fingers. Deliberately unforgiving.",
+    "distinctive_features": [
+      "Flat-aperture nozzle resembling a letterbox or liturgical slot—unmistakable design signature",
+      "Catalytic chamber visible as ribbed cylindrical mass behind nozzle, wrapped in cooling fins",
+      "Pressure gauge cluster (three analog dials) mounted on left side showing compression, oxidative medium saturation, and thermal status",
+      "Heat-venting grilles along the barrel shroud with char patterns from plasma bloom",
+      "Recessed red LED indicator that pulses during re-pressurization cycle",
+      "TESSERA CORPORATION stamp and serial plate on lower receiver, deliberately positioned to suggest military provenance",
+      "Spent oxidative medium crystallization—faint orange-white residue crusting around nozzle edges",
+      "Thermal scarring and micro-fractures visible on upper receiver from repeated thermal cycling",
+      "Custom rail system for targeting aids, currently bare (combat-stripped configuration)"
+    ],
+    "manufacturer_markings": "TESSERA CORPORATION logo (stylized tessellated hexagon) stamped in relief on the receiver above the grip. Serial number plate mounted on lower left rail. Classification stamp: 'MILITARY ONLY — UNLICENSED POSSESSION PROHIBITED' engraved in warning-red lacquer along the safety collar.",
+    "condition_typical": "Battle-worn operational condition. Exterior shows residual plasma scorching, oxidative salt crusting around the nozzle, and stress micro-fractures in the anodized finish. Well-maintained by military handlers but deliberately not showroom-clean—this is a weapon photographed in its actual deployment state, not refurbished for inspection."
+  },
+  "image_prompt": "Professional weapon catalog photo: Oxidative Plasma Breath Lance OPBL-1 'Vestment' mounted horizontally on dark brushed steel surface, three-quarter view emphasizing the distinctive flat letterbox nozzle aperture. Dramatic side-lighting from upper left reveals heat-stress striations and thermal discoloration on the muzzle mouth. The nozzle glows subtly with residual plasma-residue iridescence. Immediate background: military-grade polymer mat with subtle TESSERA CORPORATION branding. Cool cyan and amber accent lighting plays across the cooling fins and pressure gauge cluster. Shallow depth of field keeps focus on the nozzle geometry and catalytic chamber ribbing. Include faint heat-shimmer effect near the nozzle aperture to suggest residual thermal charge. Style: hyper-realistic military equipment photography with cyberpunk material language. --ar 3:2 --v 6"
 }

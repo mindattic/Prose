@@ -46,5 +46,26 @@
   "parent_corponation": "",
   "related_entities": [
     "GLMZ"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A floor-length statement coat that reads as deliberately unfinished—a patchwork rebellion worn as fashion. The silhouette is intentionally irregular: baggy through the torso, asymmetrical sleeve lengths, raw edges visible. It commands attention through its visual noise rather than elegance. On a wearer, it creates an imposing, almost prophetic presence—part street preacher, part archive of resistance.",
+    "fit": "Deliberately oversized and mismatched. Loose, almost muumuu-like through the body; sleeves of varying thicknesses and stiffness. The coat drapes without grace, sitting heavy on the shoulders. No tailoring, no concession to the body beneath.",
+    "primary_material": "Composite salvage: dense transit-authority cotton canvas for the main body (fireproofed, worn dull), cracked rubberized neoprene for sleeves (brittle, slightly sticky), raw wool felt for hood (rough, matted). Hand-painted with industrial enamel—white and rust-red, thick application that cracks and flakes with wear.",
+    "texture": "Heavily textured and tactile. Canvas is weathered and slightly stiff; rubber is cracked and peeling in intentional aesthetic; felt is raw and unfinished. Paint sits proud on the surface in thick, uneven layers—you can see brush strokes, drips, overspray. The stitching is bold, visible, often crooked: deliberate anti-craft.",
+    "color_scheme": "Dingy natural base colors (yellowed cream canvas, gray-brown felt, dark industrial gray rubber) overwhelmed by hand-painted white and rust-red. The painted text and mural dominate visually—chaotic, layered, some letters bleeding into others. The back features a massive skyline drowning under a stylized wave rendered in contrasting white against rust.",
+    "closures": "Mismatched: combination of exposed brass snaps salvaged from the original garments, hand-stitched leather toggle closures, friction-fit panels, possibly no full closure at all—designed to hang open.",
+    "distinctive_features": [
+      "Chest covered entirely in mixed-script anti-corpo slogans (Yoruba, Tagalog, English phonetic—overlapping, dense, readable only up close)",
+      "Back carries massive hand-painted mural of GLMZ skyline sinking beneath a wave",
+      "Intentionally exposed, irregular stitching throughout—thick thread, visible knots",
+      "Raw, unfinished hem and sleeve edges",
+      "No lining visible; seams show original garment layering",
+      "Each coat unique—no two identical due to hand-painting process",
+      "Evidence of multiple repair attempts visible beneath new paint"
+    ],
+    "tier_indicator": "Tier 5 / sub-grade cultural artifact. Signals complete rejection of consumer fashion and corporate aesthetics. The coat is anti-product—explicitly made from refuse, anti-craft intentionality, no brand, no resale value.",
+    "cultural_context": "Shelf collective statement piece. Wearing this announces: resistance to corponation, diaspora solidarity, participation in underground cultural movements, literacy in multiple non-English scripts, rejection of status signaling. It marks the wearer as ideologically committed, likely involved in mutual aid networks, street art, or autonomous organizing.",
+    "condition_typical": "Perpetually weathered and worn. Paint flakes and cracks; stitching loosens; fabric tears spread through original weak points. Each coat ages distinctly—some become darker with street grime, others shed paint in patches, revealing the original garment beneath. Damage is celebrated, not repaired traditionally."
+  },
+  "image_prompt": "A floor-length patchwork coat worn by an androgynous figure against a moody industrial GLMZ backdrop—crumbling transit infrastructure, neon signage in Yoruba script visible in background. The coat's chest displays hand-painted slogans in white and rust-red, back mural of a drowning skyline visible as wearer turns. Paint cracks and flakes catch dramatic side-lighting. Exposed stitching casts thin shadows. Dark tones overall with accent of bright white paint. Raw, rebellious, anti-fashion aesthetic. Shot in dim warehouse or underpass setting with overhead sodium lighting. --ar 2:3 --v 6"
 }

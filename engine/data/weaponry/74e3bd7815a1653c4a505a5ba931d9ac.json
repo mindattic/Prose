@@ -44,5 +44,35 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Breck Tannen",
+    "Nika Svensson-Kone",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modular DMR with a distinctly mechanical aesthetic—angular and purposeful. The upper receiver houses a prominent sensor cluster, giving it an asymmetrical, almost insectoid appearance. The weapon looks engineered for networked autonomy rather than human ergonomics, with integration points for drone-like sensor arrays.",
+    "dimensions": "Weapon body: 78cm length, 8cm width at receiver. Barrel: 55cm. Tripod mount adds 45cm height when deployed. Sensor cluster: 12cm × 10cm mounted above the rail system.",
+    "weight_description": "Balanced but substantial—6.2kg feels purposeful in hand, neither light nor unwieldy. The tripod assembly (4.5kg) is designed for quick-deploy stability rather than portability, suggesting this weapon expects to stay put.",
+    "primary_material": "Aerospace-grade carbon composite frame with reinforced polymer receiver. Barrel is surgically-precise chromium-molybdenum steel. Sensor housing is brushed aluminum alloy.",
+    "finish": "Matte charcoal composite body with brushed aluminum accents. The barrel shows a gunmetal gray hard-anodize. Minimal reflective surfaces—designed to resist optical detection.",
+    "color_scheme": "Charcoal black primary, brushed gunmetal gray secondary, with accent lighting (status LEDs in soft blue and red at the sensor cluster). No corporate branding paint—pure function.",
+    "grip_texture": "Textured polymer grip with integrated haptic feedback nodes. The stock features a rubberized cheek rest. Rail sections are knurled aluminum—cold, precise, unmistakably engineered for remote operation rather than human comfort.",
+    "distinctive_features": [
+      "Prominent sensor cluster above receiver—visual, thermal, and millimeter-wave radar housing",
+      "Automated round-chambering system with status indicators (small LED bar showing magazine state)",
+      "Rail-mounted power coupling for autonomous operation",
+      "BCI link contact points (small recessed copper pads on the stock and grip)",
+      "Oversized, precision bolt handle with serrated texture",
+      "Magazine witness ports showing 7mm caseless round status",
+      "Heat vents along the barrel shroud for the sensing electronics",
+      "Stabilization nodes on the tripod mount (shock-absorbing polymer buffers)"
+    ],
+    "manufacturer_markings": "TESSERA logo (minimalist geometric Φ symbol) etched into the receiver in small silver lettering. Serial plate mounted on the left side of the stock in raised numerals. Small 'AI-AUTHORIZED WEAPON' classification stamp near the magazine well. No decorative engraving—purely functional markings.",
+    "condition_typical": "Field-deployed units show wear on the tripod contact points and slight oxidation on the aluminum sensor housing from weather exposure. The barrel remains pristine—these weapons are maintained by automated systems between engagements. Dust accumulation on sensor apertures is common in active deployments."
+  },
+  "image_prompt": "Product photography of a TESSERA TAMP-2 Arbiter DMR mounted on deployment tripod, positioned at 45-degree angle on matte gunmetal surface. Close-up detail shot emphasizing the sensor cluster and integrated AI targeting hardware mounted above the receiver. Dramatic side-lighting casting sharp shadows across the brushed aluminum and charcoal composite surfaces, highlighting the precision-engineered geometry. Gloved hand (military-grade ballistic polymer) gripping the textured stock, showing BCI contact points and haptic feedback nodes in soft blue-glow detail. Cyberpunk precision overwatch aesthetic—clinical, modular, autonomous. Show the tripod mount stabilization nodes and power coupling. Deep charcoal backdrop with subtle neon reflection on the barrel. Product photography, clinical lighting, 2226 GLMZ military contractor aesthetic. --ar 3:2 --v 6"
 }

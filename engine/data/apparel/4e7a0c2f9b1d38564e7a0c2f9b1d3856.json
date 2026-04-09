@@ -46,5 +46,25 @@
     "Street Custom 'Glass Garden' Caltrops",
     "The Heritage Vault",
     "The Iron Lotus"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A flowing, relaxed blouse with generous proportions that drapes softly on the body. The silhouette reads as effortlessly elegant — neither tight nor shapeless — with an inviting V-neckline and wide sleeves that taper at the wrist. The hem lands at mid-hip, creating a balanced line that works equally well tucked or loose.",
+    "fit": "Relaxed through the body with room for movement; wide sleeves that narrow gracefully at the cuff; V-neckline creates vertical flow without clinging",
+    "primary_material": "Medium-weight natural-synthetic blend cotton-viscose with slight drape; durable enough for frequent wear and washing",
+    "texture": "Smooth finish with subtle hand-printed texture variation; the resist-dye creates tactile irregularities that catch light differently across the garment's surface",
+    "color_scheme": "Deep indigo ground with white geometric resists: irregular circles, broken lines, scatter patterns that mimic hand-application. The effect is organic and meditative despite being mechanically printed.",
+    "closures": "None — pulls over the head; relaxed V-neckline requires no fasteners",
+    "distinctive_features": [
+      "Adire-inspired resist-print with visible hand-drawn quality to geometric patterns",
+      "Wide sleeves that taper at wrist cuff",
+      "V-neckline with slight self-facing",
+      "Subtle weave texture that holds indigo dye evenly",
+      "Odeya Textiles label-woven into inner side seam",
+      "Mid-hip hem allows for styling flexibility"
+    ],
+    "tier_indicator": "Tier 2–3 accessible luxury; heritage-informed design at working-class pricing",
+    "cultural_context": "Worn by people who value diaspora craftsmanship, cultural lineage, or simply beautiful textiles. Popular in creative sectors, education, and mixed Tier 2–4 social circles. Signals appreciation for slow fashion and non-Western design without gatekeeping.",
+    "condition_typical": "Broken-in softness after a few washes; indigo may lighten slightly at stress points (neckline, sleeve cuffs) but holds its depth in body. The resist patterns may develop subtle craquelure from wear, adding character."
+  },
+  "image_prompt": "A loose indigo adire blouse with irregular white geometric resist patterns hanging on a dark dress form, photographed in moody studio lighting with cool backlighting. The deep indigo fabric catches light along the draping folds and wide sleeves. Background is a textured dark concrete or warehouse wall, slightly out of focus. Shallow depth of field. Cyberpunk textile aesthetic. --ar 2:3 --v 6"
 }

@@ -43,5 +43,34 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions MAR-8X 'Longbow Mk.II'",
+    "Nika Svensson-Kone",
+    "Slagworks Industrial",
+    "TESSERA PG-2 'Signature'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular assault rifle with a distinctly futuristic profile. The body appears almost skeletal compared to conventional firearms—stripped of gas tubes and bolt carriers, replaced by visible electromagnetic coil arrays along the barrel. The receiver has clean, minimal geometry with an industrial aesthetic. The most distinctive feature is the gravity-fed hopper mounted atop the receiver like an inverted funnel, creating an asymmetrical silhouette. Overall impression: lean, efficient, more engineering than ornamentation.",
+    "dimensions": "Total length: 96 cm | Barrel length: 55 cm | Receiver width: 8 cm | Hopper height: 12 cm above receiver",
+    "weight_description": "Balanced but substantial at 3.8 kg—the integrated capacitor stock provides weight distribution that keeps the weapon stable in the shoulders. Not lightweight, but the weight is purposeful rather than unwieldy. Feels precisely engineered rather than heavy.",
+    "primary_material": "Aerospace-grade aluminum alloy receiver with steel barrel and electromagnetic coil assembly. Polymer composite panels for thermal management over the capacitor housing.",
+    "finish": "Matte gunmetal gray with brushed aluminum receiver. The barrel shows visible electromagnetic coil windings in anodized dark bronze. Heat-dissipation panels on the stock feature a subtle crosshatch texture to aid grip.",
+    "color_scheme": "Primary: gunmetal gray and brushed aluminum | Accents: dark bronze electromagnetic coil windings, thin accent lines in electric blue along the capacitor cooling vents",
+    "grip_texture": "Textured polymer grip with integrated cooling ridges—slightly warm to the touch when charged. The stock features rubberized panels that transition to bare aluminum heat-sink fins at the rear.",
+    "distinctive_features": [
+      "Gravity-fed hopper mounted atop receiver with transparent polycarbonate sides showing 3mm steel-core projectiles",
+      "Visible electromagnetic coil arrays along entire barrel length with bronze-anodized finish",
+      "Capacitor housing in the stock with thin electric-blue status indicator lines",
+      "Thermal vents along receiver sides with crosshatch pattern",
+      "No visible trigger guard—minimalist firing mechanism",
+      "Three-point balance rail system on bottom of receiver",
+      "Small red LED charge indicator on the right side of the stock",
+      "Kang-Petrov maker's mark stamped on the left receiver flat"
+    ],
+    "manufacturer_markings": "Kang-Petrov Arms logo stamped on left receiver flat | 'KPA-20E THUNDERCLAP' engraved on barrel shroud | Serial number plate mounted on right side of stock | Small certification mark indicating Tier 2+ licensing approval",
+    "condition_typical": "Factory finish on new units; field-worn examples show minor aluminum scuffing on grip areas and dust accumulation in thermal vent crosshatching. The hopper accumulates projectile residue and atmospheric dust if uncovered during operation. Well-maintained examples retain the bright electric-blue capacitor indicator lines; neglected units show dulled or flickering LEDs."
+  },
+  "image_prompt": "Product photograph of the Kang-Petrov KPA-20E Thunderclap assault rifle displayed on a dark matte-black surface. The weapon is positioned at a 45-degree angle, showing full profile with the gravity-fed hopper clearly visible atop the receiver. Dramatic side-lighting emphasizes the electromagnetic coil windings along the barrel in bronze-anodized tones, creating sharp shadows across the thermal vents. A gloved hand in tactical black polymer grips the lower receiver, augmented fingers with faint bioluminescent circuitry visible at knuckles. The capacitor stock glows subtly with electric-blue charge-status indicators, reflected on the glossy black surface below. Metallic highlights catch on the brushed aluminum receiver and matte gunmetal panels. Cyberpunk aesthetic with neon accents reflecting off the weapon's surfaces. Shot against a gradient dark background with hint of industrial warehouse lighting. --ar 3:2 --v 6"
 }

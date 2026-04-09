@@ -54,5 +54,27 @@
     "The Corridor",
     "The Shelf",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A layered, deliberately utilitarian silhouette built for stationary work in harsh climates. The outfit reads as street-tier vendor: functional, worn, modified for specific survival needs. The ensemble creates visual depth through deliberate color stratification — rust base, gray middle, olive outer — with visible wear patterns that suggest years of market work rather than aesthetic choice.",
+    "fit": "Relaxed and spacious throughout, designed for freedom of movement while standing and for accommodating multiple layers. The vest sits straight without tapering; the over-shirt drapes loose and open; trousers are wide-cut with a high waistband for comfort during long hours. Nothing is tight or tailored — this is working-class pragmatism.",
+    "primary_material": "Cotton-synthetic blend tunic (faded and unevenly washed); dense felted gray wool-composite vest; waxed olive canvas over-shirt; heavy charcoal trousers in thick institutional weave; cracked rubber slip-on shoes; synthetic wool plaid scarf",
+    "texture": "Heavily textured and worn. The tunic shows water-stain mottling and soft fading. The vest felt is rigid and densely napped, individual pockets show smooth wear at edges from repeated use. The waxed canvas is stiff with a subtle sheen, rolled cuffs secured with visible self-repair tape. Trousers are slightly stiff, fabric beginning to break in at stress points. Shoes show cracking across the rubber upper.",
+    "color_scheme": "Deep rust and faded ochre (tunic), dark gray (vest), muted olive-green (over-shirt), charcoal (trousers), dark rubber (shoes), burgundy and gray plaid (scarf). Heavy use of desaturated, weathered tones. The apron shows staining — darker patches suggesting exposure to water, oils, particulate matter.",
+    "closures": "Vest pockets are sewn, no visible closures — items are carried openly. Over-shirt is left unbuttoned, worn as a layer. Trousers have a broad belt-secured waistband. Hem clips (small, industrial) hold the folded trouser cuffs. Scarf is wrapped and tucked, held by vest position.",
+    "distinctive_features": [
+      "Twelve external and internal pockets across the vest, each sized for different goods",
+      "Transaction reader slit on left breast pocket with worn-smooth edges from repeated use",
+      "Self-repair tape loops securing rolled waxed canvas cuffs",
+      "Trouser hems folded and clipped rather than hemmed — Shelf tailoring",
+      "Heavy stained canvas apron with full pockets covering lower front",
+      "Mottled rust-to-ochre fading pattern on tunic from reclaimed-water washing",
+      "Synthetic wool scarf in machine-woven plaid, softened from wear",
+      "Shoes show directional wear — outer edge worn more from market-ground standing"
+    ],
+    "tier_indicator": "Tier 4-5. This is working-class/sub-grade street vendor gear. Nothing is new, nothing is branded luxury, but everything is intentionally maintained for function. The modifications and patches signal someone without access to corpo resources but with deep practical knowledge.",
+    "cultural_context": "Drift market vendor. The outfit communicates: I stand in one place for 12+ hours. I handle multiple product categories. I've modified my gear to carry inventory. I work in the Shelf's weather. The worn edges and stains say: this person has survived seasons of acid rain, temperature shifts, and the particular cold off Lake Michigan. The vest pockets and transaction reader slit mark them as established enough to handle payment systems, but the self-repair tape and hand-hemmed trousers show limited resources.",
+    "condition_typical": "Actively worn and weathered. The tunic shows uneven fading from repeated washing and line-drying. The waxed canvas is creased and soft from use, not stiff from the factory. The vest felt is matted in high-contact areas. The apron is stained and darker than the outfit itself. Shoes show cracking and directional wear. This is not a costume — it is a working outfit mid-career, maintained because replacement is expensive."
+  },
+  "image_prompt": "A weathered drift market vendor in the GLMZ, standing stationary against a backdrop of corrugated metal stalls and faded neon price signs. The figure wears layered rust-and-gray tones: a faded rust tunic visible at collar and wrists, a rigid gray felt vendor's vest loaded with visible pockets, an unbuttoned olive waxed canvas over-shirt with rolled tape-secured cuffs, wide charcoal trousers clipped at the hems, and cracked rubber slip-ons. A burgundy-gray plaid synthetic wool scarf is wrapped twice around the neck. A heavy stained canvas apron covers the lower front, pockets full and visibly worn. The left breast vest pocket shows a worn transaction reader slit. Moody, amber-tinted lighting from market floods overhead. The skin shows mixed heritage — perhaps East Asian and Nordic features — with subtle subcutaneous tech scarring visible at the inner wrist. Background: blurred market stalls, acid-rain wet pavement reflecting neon green and violet, a Tier 4 commercial zone at dusk. The figure's posture is grounded and patient — built for standing. --ar 2:3 --v 6"
 }

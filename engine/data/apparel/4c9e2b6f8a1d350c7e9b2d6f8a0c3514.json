@@ -39,5 +39,25 @@
   "parent_corponation": "",
   "related_entities": [
     "SynapTech Clarity Pro Neural Interface"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek mid-top athletic sneaker with a futuristic minimalist aesthetic. Clean white mesh upper dominates the silhouette with navy paneling on the heel counter and lateral ankle support. The sole is distinctly engineered—visible grid texture in the midsole hints at the adaptive micro-column system beneath. Sits between premium lifestyle sneaker and performance athletic wear, with subtle tech-forward cues.",
+    "fit": "Snug ankle collar with structured heel cup; responsive midsole contours to foot arch in real-time. Mid-top construction provides augmentation-compatible ankle support without bulk. Designed for extended wear across varied terrain.",
+    "primary_material": "White performance mesh (breathable, moisture-wicking synthetic blend) with navy ballistic weave paneling. Midsole features adaptive micro-column polymer matrix with embedded piezoelectric sensor grid. Outsole is engineered traction rubber with visible modular tread pattern.",
+    "texture": "Upper mesh is smooth and technical with fine weave; navy panels have subtle texture grip. Midsole displays a faint geometric grid pattern from the micro-column array beneath. Outsole tread is purposefully segmented and slightly rough for variable grip.",
+    "color_scheme": "Clean white primary with navy blue accent paneling on heel, medial ankle, and tongue. Minimal branding. Possible subtle glow accent on heel cap during active BCI sync (optional).",
+    "closures": "Pressure-fit lacing system with friction-lock aglets; optional magnetic quick-release secondary strap across midfoot for rapid on/off in urban transit settings.",
+    "distinctive_features": [
+      "Visible piezoelectric sensor grid in outsole (200Hz stride-pressure detection)",
+      "Adaptive micro-column midsole structure—actively reconfigures under weight",
+      "BCI-link port on heel counter (small, discreet, magnetic coupling)",
+      "Modular tread pattern changes grip response in passive mode",
+      "Perforated insole channels for airflow and sensor integration",
+      "Reflective piping on heel and lateral ankle for night visibility"
+    ],
+    "tier_indicator": "Tier 3–4 functional luxury. Premium enough for corpo office environments, practical enough for street-level augmented workers.",
+    "cultural_context": "Worn by augmented professionals, mobile corpo field staff, transit commuters with significant cybernetic investment, and anyone who moves fluidly between climates and surfaces. Signals tech-savvy, actively augmented, and invested in performance reliability rather than status.",
+    "condition_typical": "Pristine when new; develops subtle scuff marks and wear on medial heel from responsive micro-column cycling. Keeps structural integrity well beyond conventional sneakers due to self-adaptive system. Occasional mud or wet residue from variable terrain use."
+  },
+  "image_prompt": "Fashion product shot of a white and navy Kael Industries Servo-Flex Sneaker, mid-top construction with visible geometric grid texture on the midsole. Positioned on a sleek dark mannequin foot at a slight angle showing the heel counter with faint bioluminescent accent and the adaptive micro-column tread pattern. Urban loft backdrop with moody blue-tinted neon lighting reflecting off wet concrete. Close detail visible on piezoelectric sensor grid in outsole. Cyberpunk aesthetic, premium athletic footwear. --ar 2:3 --v 6"
 }

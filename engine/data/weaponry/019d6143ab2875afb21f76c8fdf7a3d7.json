@@ -57,5 +57,38 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Emeka Johansson-Orozco",
+    "GLMZ",
+    "Hadiya Akerlund-Mensah-Bonsu",
+    "Helix Biosystems",
+    "MERIDIAN",
+    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular rifle with a distinctly medical aesthetic corrupted into military form. The barrel assembly is oversized and cylindrical, housing the endothermic projection chamber. The stock tapers backward with an ergonomic curve. Overall impression is precision instrumentation weaponized—surgical coldness merged with tactical aggression.",
+    "dimensions": "940 mm length, 65 mm width at widest (barrel), 120 mm height with scope. Barrel section 380 mm long, noticeably thicker than traditional rifle barrels.",
+    "weight_description": "Surprisingly balanced at 4.7 kg—front-heavy due to the projection chamber but not unwieldy. Feels like controlled precision rather than raw heft; the weight settles into the shoulder naturally.",
+    "primary_material": "Aerospace-grade titanium alloy chassis with carbon-composite furniture. Barrel casing is brushed stainless steel with internal cryo-conductive elements visible through partial translucency.",
+    "finish": "Matte anodized gunmetal gray on frame, polished surgical steel on barrel. Deliberately clinical appearance; no aggressive styling.",
+    "color_scheme": "Gunmetal gray primary, with accent panels in ice-white and arctic blue. Subtle neon-cyan piping traces the power conduits along the stock.",
+    "grip_texture": "Textured thermoplastic with embedded micro-channels for heat dissipation. Feels cool to the touch, intentionally mimicking the weapon's thermal function. Slightly rubberized for secure purchase even in cold conditions.",
+    "distinctive_features": [
+      "Oversized cylindrical barrel with visible thermal-dispersal fins spiraling down the length",
+      "Integrated biometric targeting scope mounted flush with receiver—display reads joint-cavity data directly onto optic",
+      "Asymmetrical charge indicators (three small LEDs in ice-blue) running along the left side of the stock",
+      "Prominent EndoCryo-Pack attachment point on the underside—cylindrical power module slots in like a magazine",
+      "Exhaust vent grilles near the rear of the barrel, designed to bleed waste thermal energy upward",
+      "Surgical-grade serial plate etched into the stock: 'ARCTURUS DEFENSE SOLUTIONS | ESDR-1 LOCKJAW'",
+      "Crosshair etching on the barrel casing—minimalist, precision-focused design",
+      "Subtle company cipher (geometric Φ outline) embossed near the grip"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (stylized aurora borealis pattern) stamped in matte on the upper receiver. Serial number and licensing plate etched below the charging handle in small white lettering. 'MEDICAL DERIVATION' stamp near the barrel joint in red—warning/compliance marking.",
+    "condition_typical": "Military examples are immaculately maintained—sterile field finish, no cosmetic wear. Some field units show faint discoloration around exhaust vents from repeated thermal cycling. Scopes may have minor scratches from deployment, but structural integrity remains pristine. Operators treat it like precision medical equipment, not combat rifle."
+  },
+  "image_prompt": "Product photography of the ESDR-1 'Lockjaw' rifle mounted horizontally on a matte black synthetic surface. Dramatic side-lighting from the left reveals the brushed stainless-steel barrel's thermal fins and the faint cyan-blue charge indicators glowing softly. The stock is cradled in a gloved tactical hand wearing reinforced polymer gauntlets. Close detail on the integrated biometric scope showing faint holographic joint-cavity highlights. Background is deep charcoal with subtle bokeh depth. Clinical, surgical precision aesthetic—think medical device crossed with military hardware. Cool color temperature dominated by gunmetal gray and arctic blue accents. Include visible EndoCryo-Pack module in detail. Cyberpunk 2226 military-issue composition. --ar 3:2 --v 6"
 }

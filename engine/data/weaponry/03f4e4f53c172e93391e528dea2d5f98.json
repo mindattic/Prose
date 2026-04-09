@@ -44,5 +44,35 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus ST-4 'Verdict'",
+    "Lazarus Pharmaceuticals Splanchnic Triage Automaton",
+    "Nika Svensson-Kone",
+    "Rashaad Tumelo-Koskinen",
+    "The Bazaar"
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately retro-futurist submachine gun that channels mid-20th-century design language through a cyberpunk lens. Angular, aggressive profile with a prominent forward grip and squared-off receiver. The weapon has a chunky, purposeful stance despite its SMG classification — less sleek operative tool, more bruiser's cudgel. Immediately reads as a heavy-hitting close-quarters platform.",
+    "dimensions": "42 cm overall length, 28 cm barrel length, 7 cm width across magazine well. Compact enough for CQB work but with a substantial footprint that telegraphs its power.",
+    "weight_description": "Hefty and reassuring in the hand — 2.6 kg of stamped steel and reinforced polymer that feels capable of delivering punishment. Not light, but well-balanced despite the forward-heavy magazine configuration. Solid and deliberate when shouldered.",
+    "primary_material": "Stamped steel receiver with reinforced polymer furniture. The frame uses a hybrid construction typical of Kang-Petrov's cost-conscious design philosophy — expensive precision where it matters (breach, bolt carrier), cost-saving stampwork elsewhere.",
+    "finish": "Matte gunmetal receiver with scattered wear marks suggesting frequent handling. Polymer panels in tactical black with light scratches and minor scuff marks. Industrial, unpolished aesthetic without chrome or reflective surfaces.",
+    "color_scheme": "Gunmetal gray stamped steel contrasted with matte black polymer grips and foregrip. Minimal accent color — subtle bronze-toned charging handle and selector markings provide minimal visual relief.",
+    "grip_texture": "Aggressive checkered polymer grip with raised texturing for positive purchase. The magazine well guard and foregrip feature diamond-pattern texturing. Everything designed for positive control during sustained fire.",
+    "distinctive_features": [
+      "Angular magazine well with pronounced feed lips — caseless ammunition requires precision engineering visible at the top of the mag",
+      "Oversized charging handle at 45-degree angle, bronze-anodized with aggressive serration",
+      "Heavy-profile barrel with subtle muzzle brake vents cut into the crown",
+      "Cocking handle mounted to left side of receiver, recessed to prevent snags",
+      "Manual ambidextrous safety lever with aggressive witness marks",
+      "Heat vents machined into polymer handguard panels in geometric patterns",
+      "Picatinny rail sections top and bottom, painted flat black",
+      "Stamped serial numbers on left receiver panel, deeply scored",
+      "Kang-Petrov shield logo inlaid into right side polymer panel using contrasting black polymer insert"
+    ],
+    "manufacturer_markings": "Kang-Petrov ARMS stamped along the left receiver in serif lettering, aged appearance suggesting post-manufacture oxidation. Model designation KPS-7V scored into upper receiver. Serial plate on left side uses recessed numbering filled with dark enamel. Country of manufacture mark (GLMZ-licensed) stamped in small text on barrel journal.",
+    "condition_typical": "Field-worn but maintained. Light surface oxidation on the stamped receiver. Polymer shows handling marks and minor scuffs. Evidence of regular cleaning and care — no corrosion in critical areas, but deliberately unglamorous finish that hides wear patterns. This is a working weapon, not a collector's piece."
+  },
+  "image_prompt": "Product photography of Kang-Petrov KPS-7V Verdict submachine gun. Weapon displayed at three-quarter angle on matte black gunmetal surface, side-lit with dramatic hard lighting emphasizing the stamped steel receiver's texture and industrial geometry. Matte black polymer furniture catches subtle highlights. Close-up of magazine well showing caseless ammunition profile. Gloved hand (tactical glove, reinforced knuckles) grips the foregrip. Cold blue lighting with tungsten side-light, slight lens flare on charging handle. Cyberpunk noir aesthetic, minimal depth of field on receiver details. Shallow focus on stamped serial numbers and Kang-Petrov branding. Dark background, professional studio setup. --ar 3:2 --v 6"
 }

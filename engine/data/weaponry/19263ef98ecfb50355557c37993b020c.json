@@ -44,5 +44,41 @@
     "reliable",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Brecken Yılmaz-Osei",
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "Nika Svensson-Kone",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Stainless Steel",
+    "The Hearthstone",
+    "The Heritage Vault",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A classic, purposeful revolver with a workmanlike presence. The Pathfinder presents as a dependable tool rather than a tactical showcase—a wide, robust cylinder dominating the silhouette, thick frame that suggests overbuilt durability, and a business-like five-inch barrel. The overall impression is frontier-ready: honest, utilitarian, built to last through seasons of hard use.",
+    "dimensions": "Overall length: 26.5 cm | Barrel length: 12.7 cm | Frame width: 4.2 cm | Cylinder diameter: 4.8 cm",
+    "weight_description": "Substantial but balanced—1.02 kg that settles naturally in the hand. Heavy enough to absorb recoil smoothly, light enough for extended carry without fatigue. The weight distribution favors control over quick-draw speed.",
+    "primary_material": "Stainless steel frame and cylinder. Internal components treated with corrosion-resistant polymer coating. Smooth trigger mechanism housing.",
+    "finish": "Brushed satin stainless steel across frame and cylinder—a flat, non-reflective surface that resists glare and corrosion equally. Micro-scratched texture from intentional manufacturing process, designed to hide field wear. No high-polish—every surface engineered for function over aesthetics.",
+    "color_scheme": "Matte silver-gray stainless with charcoal-black trigger guard and grip frame accents. Muzzle end shows faint bluish heat-treat marks where barrel meets frame.",
+    "grip_texture": "Walnut scales (traditional, weather-resistant hardwood) with subtle checkering for purchase even in wet conditions. Slightly rounded profile that sits comfortably in palm or holster. No aggressive angular edges—designed for hours of carry without chafing.",
+    "distinctive_features": [
+      "Six-round cylinder with tight, audible lock-up clicks",
+      "Recessed ejector rod beneath barrel, flush-mounted",
+      "Visible internal coil springs visible through frame gaps (engineering honesty)",
+      "Wide, serrated rear sight adjustable for elevation",
+      "Front sight post with slight orange-amber tint for low-light targeting",
+      "Cylinder release lever positioned for right-handed operation",
+      "Hammer spur slightly oversized for gloved manipulation",
+      "Wear patterns: light streaking on frame sides from repeated holstering",
+      "Faint tooling marks on frame sides—evidence of careful machining",
+      "Small venting grooves along frame to reduce fouling accumulation"
+    ],
+    "manufacturer_markings": "HEARTHSTONE FIREARMS stamp on left frame side in small serif letters. Trail-357 engraved along top of barrel in utilitarian script. Serial number on bottom of frame grip, stamped clearly. No tactical markings or posturing—purely informational.",
+    "condition_typical": "Well-maintained field condition. Not pristine (that's not the design intent), but meticulously cared-for. Light scratches on the brushed finish are invisible against the satin. Cylinder shows slight carbon residue at the forcing cone from regular shooting. Grip wood may have subtle moisture marks from sweat and weather exposure, lending authenticity to the 'working tool' aesthetic."
+  },
+  "image_prompt": "Product photography of a Hearthstone Trail-357 'Pathfinder' revolver in brushed stainless steel, six-inch cylinder held at three-quarter angle on dark weathered wood surface. Gloved hand (worn leather, augmented knuckles with faint circuit traces) gripping the walnut scales. Dramatic side-lighting casting sharp shadows across cylinder chambers, emphasizing the overbuilt frame geometry. Background: blurred peripheral zone landscape—rust-colored dust, distant settlement lights. Cyberpunk frontier aesthetic. Close focus on trigger guard detail and barrel patina. Warm tungsten lighting at 45 degrees, cool secondary rim-light on barrel. --ar 3:2 --v 6"
 }

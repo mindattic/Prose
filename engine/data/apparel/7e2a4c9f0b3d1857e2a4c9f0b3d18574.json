@@ -48,5 +48,27 @@
     "Ferrogate Enforcer Cruiser",
     "The Circuit",
     "The Signal"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately anonymous silhouette: long, structured, deliberately unremarkable. The matte-black longcoat drapes in sharp geometric lines, neither tailored nor relaxed—built for function and concealment. Worn over deep burgundy creates a near-monochromatic upper body. The overall impression is industrial restraint: someone designed to disappear in dim corridors and backroom circuits.",
+    "fit": "Tailored compression through the torso with strategic looseness at the hips and thighs. The longcoat cuts just below the knee with a subtle A-line silhouette that allows movement without flare. Trousers are slim but not tight—optimized for rapid drawing and low visibility. Everything moves with deliberate economy.",
+    "primary_material": "Matte-finished ballistic weave (longcoat), merino-blend knit (high-collar), wool-composite blend (trousers), treated leather (loafers). Signal-dampening mesh lining in the coat.",
+    "texture": "The longcoat surface is non-reflective and subtly textured—ballistic weave with a hand-brushed matte finish that kills shine under any light. The knit is smooth, dense, tight-knit. Trousers have a subtle nap. Loafers are buffed leather with a soft matte finish; soles are silent-compound rubber.",
+    "color_scheme": "Primary: jet black (coat, trousers, loafers). Accent: deep wine burgundy (high-collar knit). All other hardware is brushed steel or flat matte—no bright accents, no reflective elements. The palette reads as deliberate shadow.",
+    "closures": "Longcoat: concealed magnetic snaps down the front (silent, no jingling). High-collar knit: seamless fit, no closure. Trousers: discrete side-zip with magnetic catch. Belt: brushed-steel buckle, friction-fit anchor system. Loafers: slip-on with internal grip lining.",
+    "distinctive_features": [
+      "Hidden interior panel stitching for flat-carry weapon or tool concealment",
+      "Shoulder seams aug-split to accommodate chrome arm augmentations without binding",
+      "Signal-dampening mesh lining throughout coat—active BCI/neural read protection",
+      "High burgundy collar designed to obscure visible neck chrome ports or neural jacks",
+      "Calf knife-slot lining in trousers for concealed blade access",
+      "Wide woven belt doubles as augmentation rig anchor point",
+      "Silent-compound rubber sole construction—footfall dampening",
+      "No logos, no branding, no identifying marks"
+    ],
+    "tier_indicator": "Tier 3–4 working professional. High-end enough to suggest steady income and circuit access, deliberately understated to avoid wealth signals. Ashwall Street Label caters to grey-market operatives and corporate security, not corpo elite.",
+    "cultural_context": "Worn by circuit enforcers, corporate security contractors, and underground operatives who need concealment and function without drawing heat. The outfit says: *I move through restricted spaces*. It signals competence, augmentation, and a life spent in the backrooms—but never flaunts it.",
+    "condition_typical": "Pristine to broken-in. Ashwall pieces are designed for hard use and maintenance. Expect the matte finish to wear smooth in high-contact areas (coat shoulders, belt), minor scuffing on loafers, and the lining to show subtle wear. Nothing looks damaged—everything looks *used*."
+  },
+  "image_prompt": "Full-body fashion photograph of a lean figure wearing the Ashwall Enforcer's Underworld Complete Set: matte-black structured longcoat falling below the knee, deep burgundy high-collar knit visible at the neckline, fitted charcoal wool-blend trousers, and black loafers with silent soles. The model stands in a three-quarter pose, hands loose and natural. Dark moody lighting from a single overhead source casts sharp shadows across the fabric, emphasizing the geometric cut and matte texture. Urban backdrop: wet circuit-street pavement, neon glow from storefront holo-signs reflecting off puddles behind the figure. No reflections on the model's clothing—only matte surfaces and negative space. The overall mood is covert, professional, dangerous in its ordinariness. Shot on dark grey seamless backdrop with practical rim lighting. --ar 2:3 --v 6"
 }

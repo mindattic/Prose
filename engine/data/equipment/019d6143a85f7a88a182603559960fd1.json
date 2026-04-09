@@ -46,5 +46,24 @@
     "Arcturus Defense Solutions Proprioceptive Lattice Sleeve",
     "Ouroboros Energy ThermalSink UR-3 District Waste Heat Exchange Network",
     "Zheng-Dao Bioelectric Galvanic Stim Baton"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, wand-shaped medical diagnostic tool with an ergonomic grip. The scanning head tapers to a rounded, slightly translucent tip that houses the sensor array. Resembles a high-tech conductor's baton crossed with a medical thermometer—precision instrument meets clinical utility.",
+    "dimensions": "28 cm length, 3.5 cm diameter at grip, 2 cm at sensor tip",
+    "weight_description": "200 grams; lightweight enough for extended single-hand use, pocketable in medical coat or equipment vest",
+    "primary_material": "Matte-finish aerospace-grade composite housing with polycarbonate sensor window",
+    "finish": "Brushed titanium-gray composite body with slightly raised grip texture; translucent sapphire-blue sensor tip for visual distinction",
+    "color_scheme": "Gunmetal gray primary with sapphire blue accent band at sensor head; subtle teal LED indicators along grip zone",
+    "interface_elements": "Single capacitive power button at grip base; three status indicator LEDs (green/amber/red) along the side; wireless data port (recessed) at grip end; small holographic projection node on underside of wand tip",
+    "distinctive_features": [
+      "Translucent sensor tip with faint internal geometric patterning indicating multi-spectrum array",
+      "Soft teal pulse-glow when active, intensifies during scan phase",
+      "Minimalist design—no visible screws or seams on body",
+      "Grip features subtle grip channels and micro-venting for thermal management",
+      "Wand narrows toward tip like a medical implement from early 20th century, modernized"
+    ],
+    "manufacturer_markings": "Lazarus Pharmaceuticals logo (stylized rod of Asclepius) etched beneath power button; regulatory stamps and serial number on grip base; 'CBW-3' model designation on lower barrel",
+    "condition_typical": "Clean, clinical appearance with minor scuff marks on grip from frequent handling; faint fingerprint oils on sensor tip from proximity use; occasionally shows battery indicator glow during active scanning"
+  },
+  "image_prompt": "Close-up product photography of Lazarus CBW-3 bioscan wand on a white surgical workbench, slightly angled to show translucent sapphire sensor tip. Wand casting soft teal light onto sterile metal surface. Dramatic side-lighting creates subtle shadows emphasizing the ergonomic taper. Blurred medical display screen in background showing holographic body scan. Cyberpunk aesthetic with clinical precision. Cool color temperature, neon accent lighting. --ar 3:2 --v 6"
 }

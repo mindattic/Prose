@@ -59,5 +59,40 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Bioelectric Muscle Fiber",
+    "Carrion Defense Works Neural Lash NL-3 'Agony'",
+    "Cryogenic Fracture Disbursement Mine CFDM-4",
+    "GLMZ",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Plasmatic Induction Whip PIW-4 'Threadbare'",
+    "Solina Barreto-Kiptoo",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Vantablack-CNX",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A coiled synthetic cord weapon with an unsettling organic quality — when inert, it resembles a braided myofibril actuator rather than traditional paracord. The polymer has a faint translucent quality that reveals the embedded galvanic filament network threading through its length. Coiled state shows a flat, disc-like profile approximately 30cm in diameter. When extended, it moves with fluid, almost serpentine articulation.",
+    "dimensions": "Extended length: 180cm. Coiled diameter: 30cm. Grip section: approximately 8cm long, 2cm diameter. Braided cord thickness: 0.8cm.",
+    "weight_description": "Light but substantial — 0.6kg distributed along the length gives it a deceptive heft. In-hand feel is balanced between the grip and the coiled cord; when activated and extended, the slight electromagnetic tension adds a subtle resistance to movement.",
+    "primary_material": "Zheng-Dao Type-7 synthetic myofibril polymer (rejected actuator blend) — semi-translucent, with visible embedded galvanic filament network running the entire length.",
+    "finish": "The polymer has a brushed, almost organic sheen — not glossy, but with a subtle iridescence where light catches the filament network. The braiding creates fine linear striations that catch light dramatically. Wear patterns show minor darkening along high-stress bend points.",
+    "color_scheme": "Translucent pale amber-grey polymer base with visible copper-gold galvanic filament threading. Grip section in matte gunmetal with subtle circuit-pattern etching. Subtle glow when powered (cool blue accent in the filament network).",
+    "grip_texture": "Textured polymer with micro-ridged patterning for secure purchase even when wet or blood-slicked. The grip section is wrapped in thin conductive composite weave that allows the integrated microcell charge distribution across the operator's palm.",
+    "distinctive_features": [
+      "Embedded galvanic filament network visible throughout the polymer — appears as fine golden threads running parallel to the braiding",
+      "Micro LED charge-state indicators along the grip (dim amber when idle, bright blue when active)",
+      "Subtle pulsing luminescence in the filament network when powered",
+      "Coiled resting position with integral retention clip at grip",
+      "Faint organic musculature patterns in the polymer structure — vestigial from the actuator manufacturing process",
+      "Heat-stressed discoloration at the whip tip from repeated galvanic discharge testing",
+      "Wear marks on the braiding where operators instinctively grip it mid-length for control"
+    ],
+    "manufacturer_markings": "Zheng-Dao Bioelectric stamp on the grip base (simplified stylized DNA helix logo). Serial plate etched into the underside of the grip, partially worn. Restricted use holographic warning label on the grip (worn and faded).",
+    "condition_typical": "Well-maintained but field-worn. The polymer shows minor discoloration from repeated charge cycles and occasional impact stress marks. The filament network is intact but the outer braiding shows small fraying at the tip from aggressive contact use. Operators typically maintain these weapons obsessively due to their biological-analog nature — slight hesitation to damage something that *feels* alive."
+  },
+  "image_prompt": "Close-up product photography of a coiled galvanic myofibril lash on dark matte black surface, with 1-2 coils of the translucent amber-grey synthetic polymer visible. Reveal the embedded golden filament network threading through the braided structure. Grip section in foreground, gunmetal finish with faint circuit etching. Dramatic side-lighting from cool blue key light (simulating the lash's activated state) that highlights the filament network with electrical luminescence, casting sharp shadows across the braiding. The translucent polymer should glow subtly, showing depth into the material. Include a gloved hand (tactical glove) holding the grip, fingers positioned for deployment. Dark reflections on a wet or metallic surface beneath. Cyberpunk aesthetic: high-contrast dramatic lighting, futuristic organic-tech fusion, cold color grading. --ar 3:2 --v 6"
 }

@@ -37,5 +37,32 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Idris Forsberg-Quaye",
+    "Irontide Tidal Energy",
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Nika Svensson-Kone"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular bullpup design with an aggressive forward profile. The weapon presents a wedge-like silhouette with the magazine occupying the upper-rear chassis. Its industrial aesthetic suggests precision engineering married to corporate security doctrine—sleek but unapologetically utilitarian.",
+    "dimensions": "38cm overall length, 8cm width at magazine housing, 12cm height including top-mounted rail system. Barrel length: 16cm.",
+    "weight_description": "Light and well-balanced despite the 80-round helical magazine, sitting comfortably at 2.4kg loaded. The weight distribution favors the shooter's torso, reducing muzzle rise during sustained fire.",
+    "primary_material": "Reinforced polymer composite frame with steel reinforcement at stress points. The helical magazine is machined aluminum with internal polymer followers.",
+    "finish": "Matte black DLC-coated steel components contrasted against charcoal polymer. The helical magazine features a brushed aluminum finish with subtle wear marks from repeated loading cycles.",
+    "color_scheme": "Gunmetal black primary with silver-grey accents on the magazine housing and rail systems. Subtle corporate Sterling-Nakamura blue accent striping along the top charging handle.",
+    "grip_texture": "Rubberized pistol grip with aggressive texturing for sweaty-palm security work. The charging handle is wrapped with thin cord binding for positive acquisition.",
+    "distinctive_features": [
+      "Helical magazine with visible round-count witness holes running the length of the upper receiver",
+      "Integrated optics rail with factory-standard 20mm mounting points",
+      "Biometric sensor array embedded in the trigger guard—small LED indicators (red/green status lights) flush with the polymer",
+      "Serrated heat vents along both sides of the forward grip",
+      "Minimalist iron sights integrated into the top rail",
+      "Ambidextrous fire selector with tactile detents for semi/burst/full positions",
+      "Small Sterling-Nakamura corporate shield embossed near the magazine well"
+    ],
+    "manufacturer_markings": "Sterling-Nakamura logo etched on the right-side receiver plate with small serial number below. 'AS-7 WASP NEST' designation stamped in block letters on the magazine housing. IFF system warning label on the left side of the trigger guard.",
+    "condition_typical": "Field-worn but meticulous. Security personnel maintain these weapons religiously—expect light holster wear on the grip, minor polymer scuffing, and well-maintained chromium on the barrel. The helical magazine shows consistent wear from insertion cycles. No battle damage; these weapons are rotated out before they degrade significantly."
+  },
+  "image_prompt": "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest' submachine gun photographed from a 45-degree overhead angle on a dark gunmetal-grey surface. The weapon is held in a gloved chrome-plated corporate security hand, fingers positioned along the frame. Dramatic side-lighting from the left emphasizes the angular bullpup profile, the helical magazine's geometry, and the blue-accented charging handle. Shallow depth of field isolates the weapon. The biometric sensor array in the trigger guard catches a subtle red LED glow. Show the matte-black DLC finish contrasting with brushed aluminum magazine components. High-contrast cyberpunk product photography with clinical precision. Sterling-Nakamura corporate aesthetic. --ar 3:2 --v 6"
 }

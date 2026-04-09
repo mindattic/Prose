@@ -77,5 +77,25 @@
     "The Nearfield",
     "The United Workers Front",
     "Vojislav Addo-Mensimah"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, scale-like armor overlay with 64 ceramic-aerogel tiles arranged in overlapping rows across the torso and limbs. The tiles create an almost reptilian aesthetic, with sharp geometric edges that catch light distinctly. Fresh tiles gleam with a faint iridescent sheen; worn tiles appear chalky and fractured, creating a deliberately asymmetric, battle-scarred appearance.",
+    "dimensions": "Full torso coverage (approximately 60cm H × 45cm W), upper arm panels (25cm each), upper leg panels (35cm each). Modular tile system allows custom configuration.",
+    "weight_description": "11.2 kg total — substantial but distributed across the body. Requires wearing over base layer or integrated into existing armor harness; typically worn as over-armor rather than standalone.",
+    "primary_material": "Ceramic-aerogel tiles bonded to flexible carbon-weave backing with reinforced stitching at seams. Tiles are composite ceramic-matrix composite with controlled fracture geometry.",
+    "finish": "Matte ceramic on tile surfaces with microstructured edge bevels for controlled fracturing. Carbon-weave backing has a subtle woven texture. Tiles show deliberate weathering and scuff marks from handling.",
+    "color_scheme": "Charcoal-gray tiles with pale cream/ivory accents along tile edges where fracture patterns are engineered. Backing is gunmetal gray. Some units display operator customization: faded corporate insignia, hand-painted kill markers, or dye-stained patches.",
+    "interface_elements": "Thin sensor filament embedded in backing (visible as faint metallic threading along seams under close inspection). Four standardized cartridge slot ports on lower torso in matte black, each labeled with Arcturus logo. Small indicator ports for HUD feed integration at shoulder junction.",
+    "distinctive_features": [
+      "Overlapping scale-tile pattern creates organic, almost predatory silhouette",
+      "Fractured and missing tiles on combat-worn examples create asymmetric damage maps",
+      "Faint iridescent sheen on fresh tiles that dulls after thermal cycling",
+      "Visible sensor filament threading along seams like surgical stitching",
+      "Cartridge slot ports with push-fit mechanical locking for field replacement",
+      "Subtle Arcturus Defense Solutions embossed logos at shoulder and hip points"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (geometric A within circle) embossed at both shoulders. 'ABLATIVE SHROUD MK. IV' stamped on lower torso backing in sans-serif font. Batch serial number and manufacturing date etched on reverse side. 'FRACTURE-MAPPING COMPATIBLE' label on sensor integration ports.",
+    "condition_typical": "Well-maintained units show minor scuffing on tile edges and carbon backing. Combat-worn examples feature multiple fractured or missing tiles creating an irregular surface texture, with replacement tiles often mismatched in color or wear stage. Sensor filament may show minor discoloration from thermal stress. Some operators deliberately leave damaged tiles unfilled for 24-48 hours to display battle readiness."
+  },
+  "image_prompt": "Product photography of Arcturus Ablative Shroud Mk. IV armor laid flat on a gunmetal workbench in a neon-lit armory. Overhead and side-angle view showing overlapping ceramic-aerogel scale tiles in charcoal gray and ivory, some fractured and missing from simulated combat use. Embedded sensor filament visible as thin metallic threading along seams. Four cartridge replacement slot ports visible at lower torso in matte black. Dramatic blue-and-orange cyberpunk workshop lighting casting sharp shadows across the tile geometry. A single replacement tile cartridge (4×4 pack) positioned nearby for scale. Worn carbon-weave backing visible at edges. Arcturus logo embossed and visible on shoulders. Hyper-detailed close-ups of tile fracture patterns and sensor ports. Professional product shot with studio backdrop, cyberpunk aesthetic, shallow depth of field emphasizing tile texture. --ar 3:2 --v 6"
 }

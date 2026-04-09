@@ -53,5 +53,25 @@
     "The Filament",
     "The Spire",
     "VitaCore BloomFilter Olfactory Modulation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "An ornate, sculptural headpiece that celebrates rather than conceals neural augmentation. The lattice structure creates an ethereal crown effect, with delicate filaments radiating outward from a central focal point positioned directly above the temple neural port. The overall impression is avant-garde luxury—equal parts haute couture and biotech display.",
+    "fit": "Precise magnetic attachment over temple and crown; sits elevated above the scalp without contact, allowing for unobstructed neural port visibility and airflow. Custom-fitted to individual head geometry.",
+    "primary_material": "Bioluminescent-resin filaments hand-assembled over brushed platinum base; fiber-optic threading throughout for dynamic light distribution.",
+    "texture": "Smooth, cool platinum substrate contrasting with slightly translucent, gem-like resin that catches light. Filaments have subtle ribbing from hand-assembly. Fiber-optics create a soft, diffused glow rather than sharp reflection.",
+    "color_scheme": "Deep violet bioluminescent resin as primary, pale gold accents throughout lattice structure, brushed platinum base providing neutral metallic foundation. Gentle violet pulse at 0.3Hz mimics biological rhythm.",
+    "closures": "Magnetic snap attachment points at temple and crown—silent, secure, tool-free.",
+    "distinctive_features": [
+      "Central 'bloom' positioned to frame neural port rather than conceal it",
+      "Fiber-optic threads pulsing at precisely calibrated 0.3Hz frequency",
+      "Hand-assembled bioluminescent-resin lattice—each piece unique",
+      "Brushed platinum substrate with invisible tech integration",
+      "Designed for Spire gala and governance function contexts",
+      "Treats chrome augmentation as aesthetic centerpiece"
+    ],
+    "tier_indicator": "Tier 1 luxury—bespoke commission piece, precious materials, signature designer atelier",
+    "cultural_context": "Corpo elite, governance sphere, high-society functions. Wearing this signals not just wealth but comfort with visible augmentation as status symbol. Wearer is confident, networked, and operates at GLMZ decision-making levels.",
+    "condition_typical": "Pristine; maintenance includes regular bioluminescent-resin checks and fiber-optic recalibration. Shows no wear in typical use—designed for curated environments."
+  },
+  "image_prompt": "Solenne Neuralcrest Lattice Fascinator III on an androgynous model with visible gleaming neural port at temple, shot in profile against a dark mirrored surface. Soft violet bioluminescence pulses across the delicate resin filaments and platinum lattice. Deep blacks and chrome reflections in background suggest a Spire penthouse or governance chamber. Dramatic side-lighting emphasizes the three-dimensional structure and the gentle breathing rhythm of the fiber-optics. Hair pulled back to fully showcase both the fascinator and the augmented port it adorns. Mood: elegant, transcendent, unapologetically cybernetic. --ar 2:3 --v 6"
 }

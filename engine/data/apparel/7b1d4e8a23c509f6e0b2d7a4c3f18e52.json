@@ -48,5 +48,26 @@
     "MindBridge Relay One Social Integration BCI",
     "Neural Feedback Carbine NFC-3 'Mirrorgun'",
     "Tessera Industries Memory Rounds MR-2 'Recall'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting glove that bridges organic and augmented anatomy with surgical precision. The gunmetal-grey surface catches light along subtle contours, creating an impression of high-end prosthetic integration rather than mere fashion. Worn, it appears as a seamless extension between flesh and chrome — clinical but confident.",
+    "fit": "Compression-fitted through the palm and fingers, with structured rigidity in the cuff section. The glove molds to hand geometry without excess material, allowing full articulation while maintaining contact pressure against augmentation ports.",
+    "primary_material": "Adaptive syn-neoprene with embedded conductive threading; gunmetal-grey finish with matte black accent accents",
+    "texture": "Smooth, slightly tacky neoprene surface with embedded conductive filaments creating a subtle raised grid texture. The dorsal surface features a fine embossed circuit-trace relief pattern that catches light. Cuff section is rigid-edged, magnetic.",
+    "color_scheme": "Gunmetal grey base with matte black embossed circuit-trace patterns across the back of the hand and fingers; metallic silver highlights along the cuff magnetic contact ring",
+    "closures": "Magnetic locking ring at the cuff terminus; friction-fit integration with aug-port contact arrays; no traditional closures",
+    "distinctive_features": [
+      "Embossed circuit-trace pattern routing haptic return signals",
+      "Magnetic locking ring aligned for mid-grade chrome forearm housing",
+      "Conductive threading integrated throughout for port compatibility",
+      "Micro-flex articulated panels in finger segments",
+      "Structured cuff designed for flush integration with augmentation",
+      "Available in full-finger and half-finger variants",
+      "Subtle Nullframe Systems branding on inner cuff"
+    ],
+    "tier_indicator": "Tier 2-3 bridge: street-accessible augmentation accessory with corpo-grade engineering. Not luxury, not salvage — functional precision at mid-market price point",
+    "cultural_context": "Signals active augmentation user; suggests ongoing relationship with chrome modification and street-adjacent tech culture. Worn by techs, modders, working-class aug-users, and corpo field operatives. Denotes practical integration rather than cosmetic display.",
+    "condition_typical": "Pristine to lightly worn; neoprene shows minimal creasing, circuit-trace pattern remains crisp. Magnetic contacts stay bright. Heavy use shows minor scuffing on knuckles and cuff wear from repeated port insertion/removal."
+  },
+  "image_prompt": "Flat-lay fashion shot of Nullframe PalmSync glove displayed on a sleek dark mannequin hand positioned vertically, fingers slightly splayed. Gunmetal-grey neoprene glove catching hard industrial lighting, matte black circuit-trace pattern clearly visible on dorsal surface, silver magnetic contact ring glowing subtly. Dark urban backdrop with soft bokeh of blurred chrome and neon. Close-up detail shot showing texture of conductive threading and embossed traces. Cyberpunk aesthetic, clean product photography style with moody blue-grey color grading. --ar 2:3 --v 6"
 }

@@ -52,5 +52,27 @@
     "Tessera Nexus Town Car",
     "The Shelf",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A bulky, utilitarian full-body suit with an industrial silhouette dominated by protective volume. Matte lead-gray base punctuated by diagonal fluorescent amber warning stripes creating a chevron pattern across the torso and legs. The chest features a prominent rectangular dosimeter window that catches light. Overall impression: hazmat worker, reactor engineer, occupational survival gear.",
+    "fit": "Deliberately oversized and box-cut to accommodate layering and movement in contaminated environments. Articulated gussets at hips, shoulders, and elbows allow articulation despite bulk. Compression at wrists and ankles with friction-sealed cuffs. Intentionally not form-fitting—safety over aesthetics.",
+    "primary_material": "Boron-filament neutron-scatter weave (polyimide base), lead-infused outer layer, scratch-resistant polymer window panel over dosimeter housing",
+    "texture": "Dense, rigid weave with a matte finish that diffuses light. The accordion-fold gussets create visible ribbed panels. Faintly grainy surface texture from boron thread integration. High-friction fabric designed to resist snags.",
+    "color_scheme": "Matte lead-gray primary with fluorescent amber diagonal stripes (60° angle, spaced 12cm apart). Stripes fade progressively to cream/pale yellow in worn areas—passive cumulative exposure indicator.",
+    "closures": "Heavy-duty magnetic snap across the chest over a friction-sealed primary seam. Sealed cuff locks at wrists and ankles using bayonet-twist connectors. No traditional zippers—magnetic panel system throughout.",
+    "distinctive_features": [
+      "Embedded dosimeter display window (5cm × 3cm, recessed in rigid chest plate)",
+      "Diagonal fluorescent warning stripe pattern with radiation-fading property",
+      "Accordion-fold accordion gussets at major joints for mobility despite bulk",
+      "Sealed seam construction throughout",
+      "Boron-filament weave visible as slight surface texture",
+      "Lead-weighted hem (radiation shielding)",
+      "Radcore branding on left shoulder (industrial sans-serif)",
+      "Inspection tag pocket on right thigh (faded/worn)"
+    ],
+    "tier_indicator": "Tier 3-4 industrial working class. High-spec safety equipment supplied by employers rather than personal purchase. Maintenance crews, reactor techs, hot-zone specialists.",
+    "cultural_context": "Worn by those in the most hazardous sectors of GLMZ infrastructure—the aging M88 fission grid, The Shelf's contaminated zones, decommissioned reactor maintenance. Signals industrial reliability, acceptance of biological risk, and stoic occupational fatalism. The fading amber stripes are an unspoken record of cumulative exposure that most wearers avoid discussing.",
+    "condition_typical": "Heavily patched at stress points (shoulders, elbows, crotch gusset). Faded amber stripes indicating months of active use. Scuff marks and minor tears sealed with gray repair tape. The dosimeter window often clouded or cracked. Hem weighted with additional lead patches from field repairs."
+  },
+  "image_prompt": "Radcore NeutronShield RZ-9 reactor suit on a lean industrial worker model, posed in profile against a moody dark warehouse backdrop lit by sickly amber work-lights. Focus on the diagonal fluorescent warning stripes across the torso and the recessed dosimeter window on the rigid chest plate. The suit's matte lead-gray weave should show visible boron-thread texture and wear patches at the shoulders. Ambient hazard lighting from above, casting deep shadows. Cinematic, desaturated color grading with accent on the fading amber warnings. Gritty, worn-in condition visible throughout. --ar 2:3 --v 6"
 }

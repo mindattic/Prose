@@ -54,5 +54,28 @@
     "Synaptrel",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "TESSERA TC-3 'Crucible'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian full-body work kit designed for industrial arc-welding. The silhouette is deliberately loose and accommodating through the shoulders and arms, tapering slightly at the waist where a tool apron cinches it. The coverall dominates the visual presentation — a heavy, functional garment that reads as serious labor. The welder's helmet perched on the forehead adds an iconic industrial edge. Overall impression: a seasoned factory floor worker, augmentation-ready, marked by honest wear.",
+    "fit": "Generously cut through shoulders, chest, and arms to accommodate chrome prosthetic limbs. Standard straight leg through hips and thighs. Wrist seals are precision-fitted. The tool apron sits snug at the waist over the coverall. Boots are broad and grounded.",
+    "primary_material": "Outer: flame-retardant synth-canvas (charcoal). Undershirt: moisture-wicking thermal blend (dark gray). Boots: ballistic rubber with metal-mesh metatarsal guards. Gauntlets: tan leather-analog with cuff extensions. Tool apron: heavy cotton duck. Helmet: polycarbonate visor with auto-darkening lens.",
+    "texture": "Canvas is slightly rough and textured, broken-in to a soft nap in high-wear areas. Thermal undershirt is smooth and slightly stretchy. Leather-analog gauntlets are supple but reinforced. Boots have a weathered grip texture on soles. Burn marks create subtle raised, slightly charred circular textures across forearms and thighs.",
+    "color_scheme": "Deep charcoal synth-canvas as primary. Dark gray thermal undershirt. Tan leather-analog gauntlets. Black rubber boots. Accent colors: Crucible's angular red-and-black logo heat-pressed on chest and upper back. Orange-edged welding burn marks scattered across forearms and thighs. Brass-colored tool handles peek from apron pockets.",
+    "closures": "Auto-sealing high-collar zip on coverall (locked against flash exposure). Double-snap expansion gussets at both forearms (opens wide for prosthetic insertion, closes flush at wrist seal). Tool apron ties at waist with heavy-duty cord. Gauntlets pull on, held in place by friction and wrist seals.",
+    "distinctive_features": [
+      "Double-snap forearm gussets designed for chrome limb accommodation",
+      "Heat-pressed Crucible corporate logo (angular red-and-black) on left chest and upper back",
+      "Auto-sealing high-collar zip for flash protection",
+      "Authentic welding burn marks: small, circular, orange-edged, scattered across forearms and thighs",
+      "Weld helmet with auto-darkening visor, worn pushed up on forehead",
+      "Magnetic sole-strip on Penrose boots for metal grating adhesion",
+      "Tool-loop apron with wire brushes, chipping hammer, and seam gauge",
+      "Reinforced metatarsal guards on boots",
+      "Heavy-duty tan leather-analog gauntlets with cuff extensions"
+    ],
+    "tier_indicator": "Tier 3-4: Working class, heavy industrial labor. The kit is high-function but not luxury — Crucible-issued standard equipment. The wear patterns and authentic burn marks signal someone who actually uses this gear daily, not a costume.",
+    "cultural_context": "Factory floor worker, manufacturing sector, Crucible facility employee. The augmentation-ready design (especially the forearm gussets) signals either current chrome limb ownership or anticipated future augmentation — common in manufacturing hubs. Wearing this marks you as essential infrastructure labor, competent and experienced.",
+    "condition_typical": "Well-worn and broken-in. The canvas shows soft creasing at joints. Burn marks are genuine and numerous — not fresh, but not ancient. The tool apron is actively used. Gauntlets show leather-analog creasing and grip marks. Boots are scuffed but maintained. The whole kit has the comfortable, capable patina of daily use by someone who knows their equipment."
+  },
+  "image_prompt": "Full-body fashion photograph of a Crucible Fab-Floor Welder's full shift kit on a lean, augmented male model with a visible chrome left arm. The charcoal synth-canvas coverall dominates the frame, with the angular red-and-black Crucible logo visible on the left chest. The auto-darkening welding helmet is pushed up on the forehead. Tan leather-analog gauntlets are visible on both hands, and the heavy cotton duck tool apron cinches at the waist, tools peeking from loops. Genuine burn marks (orange-edged circles) scatter across the exposed forearms and thighs. Penrose Weld Boots are grounded on a wet industrial metal grating. Moody, high-contrast lighting from above casts deep shadows, emphasizing the texture of the synth-canvas. Background: a blur of factory fixtures, welding stations, and cooling steam. The overall mood is gritty, professional, and worn-authentic — a working-class icon. Slight HDR tone. --ar 2:3 --v 6"
 }

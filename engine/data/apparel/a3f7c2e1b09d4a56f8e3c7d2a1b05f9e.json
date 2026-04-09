@@ -49,5 +49,29 @@
     "Meridian Core",
     "The Pure Hand",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian full-body pressline uniform that reads as industrial-grade and purposeful. The charcoal-grey coverall dominates with a striking diagonal orange chevron stripe cutting across the chest, creating visual flow and authority. When worn, the silhouette is functional and blocky—designed for movement and tool access rather than aesthetics. The ensemble projects Tier 3 working-class competence: a person built for twelve-hour shifts under factory fluorescents.",
+    "fit": "Relaxed through the torso and thighs to accommodate layering and equipment, with tapered leg openings designed to fit over boots or augmentation interfaces. The cut prioritizes range of motion and durability over form-fitting. Sleeves sit at the wrist with reinforced cuffs.",
+    "primary_material": "Charcoal ripstop nylon coverall with moisture-wicking slate-grey thermal base layer underneath. Gloves are cut-resistant synth-leather with exposed fingertips on the dominant hand for BCI interaction.",
+    "texture": "The ripstop weave has a subtle dimpled surface—practical and slightly stiff when new, breaking in to a softer drape after weeks of shift work. Reinforced knee panels feel thicker, almost textile armor. Flatlock seams on the undershirt are smooth against skin. Synth-leather gloves have a matte finish with subtle grip texture on the palms.",
+    "color_scheme": "Primary charcoal grey with safety-orange chevron stripe and accent trim. Low-profile hard hat in high-visibility orange. Undershirt in slate grey. Gloves in dark synth-leather brown.",
+    "closures": "Heavy-duty YKK side zip running hip to mid-calf (aug channel). Center front oversized two-way zipper on coverall for quick changes. Magnetic snaps on chest pocket flaps. Belt loops for hard-hat attachment. Glove wrist closures are friction-fit elastic cuffs.",
+    "distinctive_features": [
+      "Diagonal orange chevron stripe (Veldtmann branding)",
+      "Embroidered name patch above right breast pocket",
+      "Heat-transfer vinyl corporation logo on back yoke",
+      "Reinforced knee panels in darker charcoal",
+      "Triple-stitched seams throughout",
+      "Integrated side-zip aug channel for chrome prosthetics/exo-braces",
+      "Flatlock seams on undershirt (friction-reduction tech)",
+      "Cut-resistant synth-leather gloves with open fingertips on dominant hand",
+      "Detachable safety-orange hard hat clipped to belt loop",
+      "Multiple chest and hip pockets for tools and small components"
+    ],
+    "tier_indicator": "Tier 3 working-class. High-quality industrial apparel issued or purchased by factory workers, technicians, and pressline operators. Not cheap enough to be Tier 5 salvage, not premium enough to be corpo-grade Tier 1.",
+    "cultural_context": "Wearing this signals you are a skilled factory worker, likely in the GLMZ's pressline or heavy manufacturing sector. The Veldtmann branding suggests either direct employment or freelance contract work. The aug channel indicates you're either cybernetically enhanced or prepared to be. This is the uniform of the industrial backbone—reliable, unadorned, and purposeful.",
+    "condition_typical": "When new: crisp, stiff, ink-bright chevron stripe. After weeks of shifts: broken-in, slightly faded orange from sweat and factory chemicals, minor stains and scuffs on knee panels and glove fingertips, wrinkles setting into the fabric from repeated movement. Name patch slightly worn at the edges. Hard hat may have small dents or scratches from worksite use."
+  },
+  "image_prompt": "Fashion photograph of the Veldtmann Pressline Night Shift Full Kit on a muscular cyberpunk model with subtle chrome augmentations visible on the left arm. The model is posed in a confident factory worker stance, hard hat clipped to belt loop, gloved hands at sides with open fingertips visible. Charcoal ripstop coverall with diagonal orange chevron stripe catches moody amber-sodium factory lighting. Dark industrial warehouse background with fluorescent light panels overhead, metal scaffolding, and steel beams. Slight atmospheric haze. Sharp focus on the chevron stripe and reinforced knee panels. Professional pressline catalog aesthetic. --ar 2:3 --v 6"
 }

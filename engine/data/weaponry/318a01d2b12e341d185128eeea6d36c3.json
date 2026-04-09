@@ -42,5 +42,38 @@
     "heavy",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Concrete",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "GLMZ",
+    "Ihaia Nystrom-Keita",
+    "Ilhan Sandstrom-Badu",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "TESSERA TC-3 'Crucible'",
+    "The Listener",
+    "The Resonance Chamber",
+    "Vantablack-CNX",
+    "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'"
+  ],
+  "physical_description": {
+    "visual_profile": "An imposing two-handed sword with a distinctly oversized, anvil-like presence. The blade is noticeably thick and blocky rather than tapered, with a pronounced aerodynamic form optimized for shockwave transmission rather than slicing. The crossguard is dramatically enlarged—a complex engineering assembly housing the vibration generator—giving the weapon a top-heavy, intentional brutality. Silhouette reads as siege equipment first, sword second.",
+    "dimensions": "Total length: 168 cm. Blade length: 120 cm (unusually thick, approximately 8 cm wide at spine). Crossguard spans 22 cm across. Grip section: 46 cm.",
+    "weight_description": "Hefty and deliberate—5.2 kg feels distributed through the entire length, making it neither point-heavy nor handle-heavy, but requiring full-body leverage. Unwieldy for speed, but balanced for sustained power delivery.",
+    "primary_material": "Aerogel-reinforced carbon composite blade; reinforced steel/titanium alloy frame and crossguard; industrial-grade polymer grip wrapping.",
+    "finish": "Matte dark gunmetal with brushed steel accents on the crossguard. The blade surface is slightly textured—micro-etched to reduce reflection and show the layered composite structure beneath. Battle-worn in typical field condition: hairline cracks visible in the composite, scuff marks from barrier contact, minor corrosion staining around the crossguard seams.",
+    "color_scheme": "Gunmetal gray primary; brushed steel silver crossguard; deep charcoal polymer grip. Faint iridescent shimmer in the aerogel layers visible under side-light, suggesting internal structural complexity.",
+    "grip_texture": "Deeply textured polymer with raised geometric channels—non-slip even when wet or bloodied. Wrapped in reinforced synthetic cord at the base for additional grip security during full-force swings.",
+    "distinctive_features": [
+      "Massive, over-engineered crossguard housing visible vibration generator casing with cooling vents",
+      "Faint hairline resonance marks etched into the blade surface—stress fracture patterns that show the material has absorbed repeated shockwave discharge",
+      "Subtle LED indicator strip (amber/red) running along the crossguard spine showing fuel cell status and vibration frequency output",
+      "Deep pitting along the blade edges from impact with concrete and reinforced barriers",
+      "Micro-vent array across the pommel for heat dissipation from the integrated fuel cell",
+      "Asymmetrical weight distribution markers (material variation lines) showing internal aerogel reinforcement pattern"
+    ],
+    "manufacturer_markings": "\"CRUCIBLE INDUSTRIES\" stamped in bold sans-serif across the crossguard face. Smaller \"HZ-1 EARTHQUAKE\" designation below. Serial number engraved into the tang near the grip (alphanumeric, cyberpunk aesthetic). \"BREACH CLASSIFIED — TIER 4+ AUTHORIZATION\" warning stamp in red on one side of the blade near the crossguard. Manufacturing date code pressed into the pommel base.",
+    "condition_typical": "Well-maintained but visibly duty-worn. The blade shows strategic pitting and impact scarring concentrated on the striking edge, indicating regular deployment against structural targets. The crossguard housing shows scuff marks and minor dent scarring from rough handling and barrier contact. The polymer grip shows compression wear from sustained gripping during full-power swings. Overall impression: a weapon that has broken through real barriers, not a showpiece."
+  },
+  "image_prompt": "Midjourney product photography: Crucible Industries Harmonic Zweihander HZ-1 'Earthquake' displayed on dark matte concrete surface, angled 45 degrees. Dramatic side-lighting from upper left reveals the layered aerogel-composite blade structure with subtle iridescent shimmer. The massive over-engineered crossguard with vibration generator casing dominates the midground, brushed steel catching harsh highlights. Deep charcoal grip visible with raised geometric texture. LED fuel cell indicators glow amber along the crossguard spine. Battle-worn finish: visible impact pitting, hairline stress fractures in the blade, scuff marks from concrete breach operations. Cyberpunk aesthetic: industrial engineering, siege-weapon pragmatism, visible technology integration. Shot from directly above and angled perspective to emphasize scale and weight. Dark moody lighting with cool blue ambient highlights edge details. Professional corpo weapons catalog style. --ar 3:2 --v 6"
 }

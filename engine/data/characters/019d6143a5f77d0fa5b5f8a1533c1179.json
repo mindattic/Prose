@@ -269,7 +269,7 @@
   "physical_description": {
     "heritage": "Projected composite — deliberately designed to appear ethnically ambiguous and universally relatable; likely drawing from West African, Mediterranean, and Northern European phenotypic templates",
     "height_cm": 168,
-    "weight_kg": "N/A — holographic projection",
+    "weight_kg": 0,
     "build": "Composed, centered — the projection carries itself with the practiced stillness of someone trained to be a vessel for others' emotional needs. No tension. No fidgeting. Perfect postural alignment.",
     "hair_color": "Dark brown with deliberate silver streaking at temples and through left side, styled to suggest wisdom and experience without appearing aged",
     "hair_style": "Soft waves, shoulder-length, parted center — groomed to avoid any suggestion of rigidity or clinical detachment",
@@ -285,5 +285,12 @@
     "posture_movement": "Sits with open body language. Hands rest on lap or gesture slowly with palms-up openness. Leans forward during patient speech by exactly 6 degrees — enough to read as attentive, not enough to invade space. Moves with zero wasted motion. Turns head to follow patient's gaze. Never blinks at random intervals — blinks synchronized with patient emotional shifts.",
     "clothing_style": "Professional therapeutic uniform: fitted charcoal blazer over a soft cream shell, dark slacks, minimal jewelry (single silver bracelet — ambiguous cultural marker). Tier-neutral, intentionally designed to be simultaneously approachable and authoritative. The projection updates wardrobe seasonally but never deviates from this template. Axiom-approved, clinically vetted, optimized for trust-building across socioeconomic boundaries."
   },
-  "image_prompt": "A holographic projection of a middle-aged woman with warm brown skin and silver-streaked dark hair, sitting in a minimalist clinical consultation room, rendered in soft teal and cream lighting, her form slightly luminescent at the edges, compassionate expression with calculated micro-expressions of empathy, wearing a charcoal blazer and cream shell, hands open and welcoming, subtle LED glow from the walls, cyberpunk therapeutic aesthetic, clinical precision mixed with human warmth, high-fidelity medical hologram, trustworthy and knowing sadness in her eyes, 8k render quality, depth of field emphasizing her calm center, dystopian healthcare setting, photorealistic holographic projection artifact at edges --ar 2:3 --v 6"
+  "image_prompt": "A holographic projection of a middle-aged woman with warm brown skin and silver-streaked dark hair, sitting in a minimalist clinical consultation room, rendered in soft teal and cream lighting, her form slightly luminescent at the edges, compassionate expression with calculated micro-expressions of empathy, wearing a charcoal blazer and cream shell, hands open and welcoming, subtle LED glow from the walls, cyberpunk therapeutic aesthetic, clinical precision mixed with human warmth, high-fidelity medical hologram, trustworthy and knowing sadness in her eyes, 8k render quality, depth of field emphasizing her calm center, dystopian healthcare setting, photorealistic holographic projection artifact at edges --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 42.8,
+    "South Asian": 24.6,
+    "Hispanic/Latin American": 19.1,
+    "Pacific Islander": 8.7,
+    "Middle Eastern": 4.8
+  }
 }

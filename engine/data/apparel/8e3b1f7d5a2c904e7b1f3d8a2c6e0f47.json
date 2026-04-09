@@ -45,5 +45,27 @@
     "TESSERA PG-2 'Signature'",
     "The Pure Hand",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately anonymous street vendor silhouette—slouched, bulky, deliberately unglamorous. The layered construction creates visual noise and breaks up body shape. At first glance: food cart operator. Closer inspection: tactical concealment architecture. Wide, heavy stance.",
+    "fit": "Intentionally oversized and shapeless—cargo trousers hang loose from hip, hoodie swallows frame, apron drapes without definition. Compression panels hidden under loose outer layers. Silhouette designed to distribute weight and conceal volume changes.",
+    "primary_material": "Rust-brown weathered canvas apron (14oz, stained with food and oxidation), gray synthetic-wool thermal hoodie (brushed fleece-backed), ballistic-weave cargo trousers (treated for stain resistance), scuffed synthetic leather market boots (reinforced toe and heel).",
+    "texture": "Canvas: rough, broken-in, faded unevenly with genuine wear. Hoodie: soft napped surface, pilled in high-friction areas. Cargo weave: slightly stiff, utilitarian. Boots: creased leather, salt-stained, sole deeply worn. Signal-scatter lining: faint metallic thread pattern visible under direct light.",
+    "color_scheme": "Dominant rust-brown canvas with deep charcoal-gray hoodie. Muted earth tones—no contrast, nothing flashy. Boots in scuffed tan-gray. Subtle bronze threading in signal-scatter panels barely visible.",
+    "closures": "Apron: friction-fit over shoulders, side-snap closures (industrial-grade, replaceable). Hoodie: half-zip with rubberized pulls. Cargo trousers: magnetic fly (silent, no metallic sound), snap-waist (adjustable for load distribution). Boot laces: flat gray cordage, utilitarian knots.",
+    "distinctive_features": [
+      "Apron front lined with signal-scatter fabric (thermal signature masking)",
+      "8 deep cargo pockets in apron—4 exterior (vendor supplies), 4 interior (concealment rated)",
+      "Flex-panel hidden compartments in trouser legs (sewn-in, 4kg capacity per leg)",
+      "False-sole storage in boots (pressure-plate access, ~500g per boot)",
+      "Reinforced seams throughout—industrial-grade thread, visible stress stitching",
+      "Thermally-treated inner lining resists moisture and odor retention",
+      "No branding visible—deliberately anonymized",
+      "Wear patterns authentic: fraying at cuffs, faded knee panels from kneeling, smudged apron from handling"
+    ],
+    "tier_indicator": "Tier 5 sub-grade. Street-level, self-assembled, sourced from surplus. No new components. Zero corporate finishing. Every element is functional salvage.",
+    "cultural_context": "Street vendor, black market operator, underground economy. The uniform of someone who moves goods—legal or otherwise—through the Caskmarket district. Wears this to blend into the vendor class, to be invisible in plain sight. Signals: 'I work the streets, I move things, ask no questions.'",
+    "condition_typical": "Genuinely weathered and patched. Canvas shows authentic food stains and oxidation. Seams reinforced with field repairs. Boots scuffed from market floors. Hoodie pills and fades. No pristine elements—the condition IS the camouflage."
+  },
+  "image_prompt": "Cyberpunk street vendor in rust-brown canvas apron over gray thermal hoodie and loose cargo trousers, standing in a dimly-lit Caskmarket alley surrounded by shipping containers and neon market signage. Overhead glow-strips cast cool shadows. Figure slouched, deliberately anonymous, hands in apron pockets. Close detail: worn canvas texture, industrial snap closures, scuffed platform boots with false-sole visible. Neon rain-slicked pavement. Moody, documentary-style fashion photography. Subject positioned as if caught mid-shift, utterly forgettable. Dark background with bokeh of market lights and chrome structural elements. --ar 2:3 --v 6"
 }

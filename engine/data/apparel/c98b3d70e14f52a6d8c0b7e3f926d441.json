@@ -47,5 +47,25 @@
   "parent_corponation": "",
   "related_entities": [
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist glove that disappears against skin tone, creating an almost second-skin appearance. The matte finish absorbs light rather than reflecting it, giving an impression of void-like quality. Worn tight to the hand without excess material, it conveys precision and purpose.",
+    "fit": "Skintight compression fit, conforming exactly to hand geometry. No bunching at knuckles or wrists. Designed for dexterity and tactile feedback rather than comfort or insulation.",
+    "primary_material": "Biopolymer (matte-black, scanner-dampening grade). Micro-suction gecko-fiber composite on palm and fingertips. Thin electroactive polymer layer embedded in fingertip pads.",
+    "texture": "Outer surface: ultra-smooth, almost frictionless matte finish. Palm/fingertips: barely perceptible raised micro-texture from gecko-fiber matrix. Feels almost organic when worn.",
+    "color_scheme": "Deep matte black with no contrast. Inner wrist features a single small embossed triangle (Φ-grade minimalist branding) in barely-visible relief.",
+    "closures": "Friction-fit only; no zippers, snaps, or clasps. Designed to slip on and adhere via biopolymer grip at wrist.",
+    "distinctive_features": [
+      "Electroactive polymer fingertips that cycle ghost-prints every 4.3 seconds to defeat biometric scanning",
+      "Gecko-fiber micro-suction pads for silent vertical grip and wall-scaling",
+      "Cut-away option at index and middle finger for chrome-augmented users",
+      "Scanner-dampening biopolymer construction reads as near-zero thermal/electrical signature",
+      "Minimal branding: only embossed triangle on inner wrist",
+      "No visible seams or construction lines"
+    ],
+    "tier_indicator": "Tier 4 (working-class street tech) — affordable infiltration-grade, black-market origin, not corpo-exclusive",
+    "cultural_context": "Street operatives, runners, thieves, industrial saboteurs, activists. Signals capability and intent to bypass security. Worn by those who need to move unseen through scanned spaces.",
+    "condition_typical": "Pristine when new; develops subtle wear patterns on fingertips and palm from repeated use. May show faint smudges or micro-scuffs but resists visible damage due to material durability."
+  },
+  "image_prompt": "Close-up fashion photography of a matte-black biopolymer glove on an augmented hand, fingertips glowing faintly with electroactive polymer cycling. Skintight fit, gecko-fiber texture visible under moody blue-green neon lighting. Dark urban backdrop with scanning security grid overlay. Model's hand positioned mid-gesture, suggesting infiltration or stealth. Shallow depth of field focusing on glove detail. Cyberpunk street aesthetic, high contrast shadows. --ar 2:3 --v 6"
 }

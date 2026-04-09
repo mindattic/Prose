@@ -71,5 +71,26 @@
     "Tessera Nexus Town Car",
     "The Filament",
     "The Signal"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact shrouded quadrotor with a distinctive drum-shaped central body housing the tether spool. The shroud is a protective cage of carbon-composite struts that give it a skeletal, industrial appearance. Four motor arms extend from the cardinal points with small propellers recessed within the protective frame. A central payload bay sits below the main body where the spring-loaded micro-grapple is housed, along with a small optical sensor cluster for anchor-point analysis.",
+    "dimensions": "28cm diameter (rotor-to-rotor with shroud), approximately 15cm tall with landing gear and sensor array extended",
+    "weight_description": "640 grams with standard tether spool—light enough for one-handed launch but substantial enough to feel professional-grade. Handheld carrying case or shoulder-mounted deployment pouch typical",
+    "primary_material": "Carbon-fiber composite shroud cage, aluminum alloy motor mounts and frame, titanium-reinforced grapple mechanism, polymeric rotor blades",
+    "finish": "Matte gunmetal gray shroud with anodized aluminum accent struts. Tether spool visible through frame gaps with color-coded filament spool housing (blue for standard, red for hardwire data, hybrid yellow). Minimal reflective surfaces to reduce visibility",
+    "color_scheme": "Matte charcoal gray primary, brushed aluminum silver on structural joints, color-coded spool indicators (blue/red/yellow depending on tether type), faint Ringo Corporation serif lettering in dark blue on spool hub",
+    "interface_elements": "Small optical sensor cluster (3x small black lenses) mounted on ventral surface for structural density imaging. Micro-grapple firing mechanism with visual load-status indicator. Magnetic tether-spool quick-release dock on ventral body. Single status LED array (green/amber/red) on dorsal surface. Micro-USB charging port recessed under protective flap. No exposed buttons—all control via companion app or wired controller unit",
+    "distinctive_features": [
+      "Protective cage shroud with geometric cross-bracing pattern",
+      "Visible tether spool with color-coded filament identification",
+      "Spring-loaded grapple housing with transparent inspection window",
+      "Recessed propeller design minimizing snag hazard",
+      "Dual optical sensor cluster with visible infrared augmentation ports",
+      "Magnetic quick-swap payload/spool dock system",
+      "Low-profile landing gear with adhesive grip pads"
+    ],
+    "manufacturer_markings": "Ringo Corporation serif logo on spool hub in dark blue. 'DISTRIBUTED MESH ANCHOR DRONE' stamped in small sans-serif text on shroud frame. Regulatory compliance markings (GLMZ aerospace rating, frequency authorization bands) etched on frame strut. Serial number QR code on battery access panel. Sovereign Zone Insurance subsidiary mark small and subtle",
+    "condition_typical": "Field-deployed unit will show scuff marks on shroud from concrete dust and structural contact. Tether spool may be visibly worn or color-faded from UV exposure. Grapple housing often accumulates residue from repeated anchor-point contact. Status LED will cycle amber during tether tension hold—green at rest, red on critical battery or grapple failure"
+  },
+  "image_prompt": "Product photography: Ringo Distributed Mesh Anchor Drone mounted on dark gunmetal workbench with 40-meter tether spool partially deployed across frame showing blue filament. Dramatic sidelit three-point setup with cool cyan fill-light catching the carbon-fiber shroud cage geometry and visible optical sensor cluster. Micro-grapple mechanism in sharp focus showing spring-loaded detail. Companion smartphone showing Ringo app interface with anchor-point visualization blurred in background. Cyberpunk industrial aesthetic, shadows emphasizing the skeletal frame structure. Overhead cable runs and concrete textured backdrop. Cinematic color grading with desaturated blues and silvers. --ar 3:2 --v 6"
 }

@@ -70,5 +70,24 @@
     "Tessera Industries Memory Rounds MR-2 'Recall'",
     "The Resonance Communion",
     "The Signal"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A minimalist dual-component system: a thin, nearly translucent adhesive transducer pad paired with a discrete rectangular processing unit resembling a high-end hearing aid or subcutaneous implant controller. The transducer appears almost invisible against most surfaces; the processor is pocket-sized and designed for concealment.",
+    "dimensions": "Transducer pad: 3.2cm × 2.1cm × 0.3cm (roughly a postage stamp); Processing unit: 4.1cm × 2.8cm × 0.9cm (lighter than a standard credit card reader)",
+    "weight_description": "Negligible for the pad; processor is handheld and pocketable, approximately 22g total per unit. Designed for concealment in jacket linings or underneath clothing.",
+    "primary_material": "Transducer pad: crystalline polymer composite with piezoelectric core; Processing unit: brushed titanium-alloy chassis with medical-grade polymer accents",
+    "finish": "Transducer pad has a nearly transparent, frosted surface with barely-visible micro-grip adhesive coating. Processing unit features a satin-brushed metallic finish with soft-touch rubberized edges.",
+    "color_scheme": "Transducer pad: near-clear with faint gray-blue tint. Processing unit: gunmetal gray with charcoal matte accents; minimal contrast to avoid visual prominence.",
+    "interface_elements": "Single flush capacitive touch panel on processor (no mechanical buttons); dual contact points on the transducer pad (sender/receiver designation); micro-haptic feedback indicators; status LED (dim blue when active, red when low battery); 3.5mm micro-jack for optional wired auxiliary input.",
+    "distinctive_features": [
+      "Adhesive transducer pad is nearly invisible when applied to surfaces",
+      "Zero visible antenna or transmission hardware",
+      "Processor designed to resemble medical implant controller rather than communications device",
+      "Micro-haptic vibration feedback uses the same transduction principle as communication itself",
+      "Paired unit indicator lights are deliberately dim to avoid detection in dark environments"
+    ],
+    "manufacturer_markings": "Ringo Housing Authority logo (small circular stamp) on processor; regulatory certification marks laser-etched in 2pt font; QUANTA pricing variant engraved on rear: Φ4,200–Φ6,800 depending on tier access.",
+    "condition_typical": "In use, one transducer pad is adhered to a shared rigid surface (wall, table, vehicle interior) while the matching unit is held against or concealed near the user's skin or clothing. The processor remains in a pocket or worn on an interior harness, connected to the pad via ultra-thin copper trace wiring."
+  },
+  "image_prompt": "Product photography: Ringo Hollow Channel Communicator components laid flat on a steel industrial workbench with visible vibration ripples etched into the metal surface. Foreground shows the thin, nearly translucent adhesive transducer pad catching dramatic blue-white accent lighting, positioned as if mid-application. Adjacent to it, the gunmetal processing unit with its single capacitive touch panel glowing faintly. Background is a blurred GLMZ corporate interior — tinted glass and brushed metal. Overhead lighting is cool and clinical. Secondary image shows a gloved hand pressing the transducer pad against a steel I-beam, with faint holographic vibration visualization (cyan ripples) emanating from the contact point. Cyberpunk aesthetic, high-end spy-tech presentation, emphasis on minimalism and concealment. Shot from overhead and angled side-view. Shallow depth of field. --ar 3:2 --v 6"
 }

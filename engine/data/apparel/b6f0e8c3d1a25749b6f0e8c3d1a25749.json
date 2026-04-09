@@ -48,5 +48,25 @@
     "TESSERA PG-2 'Signature'",
     "The Shelf",
     "Toxin Indicator Chromatophore"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleeveless muscle tee with dramatically wide arm holes, broadcasting raw street affiliation. The arterial-red dye creates an almost aggressive visual presence—unmistakable and deliberate. Cut to emphasize the shoulders and chest, with a relaxed, almost slouchy fit through the torso. The back features a crude stenciled gear-and-lightning motif that varies slightly between batches, adding to its handmade authenticity.",
+    "fit": "Relaxed through the body with exaggerated, wide-cut arm holes that expose the shoulder and upper ribs. Not tailored—intentionally rough-cut to maximize mobility and presence. Designed to sit comfortably over light augmentation ports or baseline physiology alike.",
+    "primary_material": "Heavy cotton-analog jersey—synthetic fibers engineered to mimic natural cotton's weight and breathability, with superior durability for street wear. Dyed in-house using batch methods that create subtle color variations across garments.",
+    "texture": "Soft hand with a slightly nubby weave, broken in quickly with wear. The stenciled ink sits slightly raised on the fabric surface, with intentional cracking and edge distressing becoming more pronounced after months of use. Surface has a lived-in quality rather than precision manufacturing.",
+    "color_scheme": "Arterial red—intense, unsaturated, the specific hue of maximum-intensity warning lights. Not cherry, not brick, not maroon. The red commands attention. Stencil in flat black or dark gray, varying by batch. Fades to a dustier, deeper red with repeated washing.",
+    "closures": "None—simple pullover construction. No zippers, snaps, or fasteners. Pure simplicity.",
+    "distinctive_features": [
+      "Crude hand-stenciled gear-and-lightning logo on back—variations between batches indicate different crew members doing the work",
+      "No brand label or manufacturer mark—identity is purely visual and contextual",
+      "Dye fades noticeably with washing, creating a visual record of wear and time",
+      "Stencil edges crack and distress naturally with movement and laundering",
+      "Wide arm holes and relaxed fit optimized for street mobility and augmentation visibility",
+      "In-house dye batch variations create subtle color differences between individual shirts"
+    ],
+    "tier_indicator": "Tier 2–3 boundary. Cheap enough to produce in volume, but the meaning it carries transcends material cost. Wearing it without crew affiliation signals either ignorance or recklessness—both dangerous.",
+    "cultural_context": "Street crew identifier. Non-negotiable gang colors. Wearing this identifies the wearer as Redline: territorial claim, mutual obligation, and shared identity. Long-term members sometimes keep faded, cracked versions as archival records of their time in the crew. New members receive a fresh shirt with no ceremony—just integration.",
+    "condition_typical": "Fresh shirts are vivid arterial red with sharp stencil edges. Worn shirts develop a layered patina: dye fades to a deeper, dustier red, stencil ink cracks at edges, the overall surface develops a soft, worn quality that signals veteran status rather than decay."
+  },
+  "image_prompt": "A Redline crew member wearing a worn arterial-red muscle tee, stenciled gear-and-lightning logo cracked and faded on the back, wide arm holes exposing augmented shoulder ports. Dark moody lighting in a northwest Shelf grid warehouse—industrial, urban, dangerous. Neon red accent light catching the fabric's worn texture. Shot against exposed concrete and steel infrastructure, emphasizing street presence and territorial authority. Gritty, lived-in aesthetic. --ar 2:3 --v 6"
 }

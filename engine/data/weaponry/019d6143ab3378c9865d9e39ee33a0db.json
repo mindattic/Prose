@@ -57,5 +57,40 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "GLMZ",
+    "Helix Biosystems DermRenew Cellular Renewal Lattice",
+    "Kamala Blomberg-Konadu",
+    "Narrowcast",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Ringo Corponation",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Tender Collapse",
+    "The Signal"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, forward-heavy directed-energy projector with an unsettling organic quality — the barrel resembles a tapered biological structure rather than industrial hardware. The weapon has an asymmetrical frame that slopes downward from rear grip to front emitter, giving it a predatory, almost insectile silhouette. The overall impression is medical precision married to something deliberately wrong.",
+    "dimensions": "64 cm length overall, 12 cm width at the widest point (emitter head), 8 cm grip depth. Barrel/emitter section extends 18 cm from the forward frame junction.",
+    "weight_description": "Hefty but balanced — 3.4 kg distributed toward the front creates a weighted pointing feel that demands active grip control. Not unwieldy, but deliberately front-loaded in a way that makes the user acutely aware they're holding something potent.",
+    "primary_material": "Aerospace-grade carbon composite frame with reinforced polymer internals. The emitter head is brushed titanium with embedded neural-resonance coils visible beneath a translucent access panel.",
+    "finish": "Matte charcoal composite body with brushed-steel emitter section. The grip features rubberized texture with integrated contact-point sensors. A faint iridescent shimmer visible on the emitter coils under certain light angles — residual myoelectric field bleeding.",
+    "color_scheme": "Charcoal gray primary with brushed steel accents. Accent: clinical white piping along signal-calibration marks. The coil array behind the emitter window glows faint amber when powered.",
+    "grip_texture": "Deeply textured rubberized polymer with subtle raised channels — designed for positive grip even with wet or augmented hands. The grip tapers slightly toward the trigger guard. Micro-contact points built into the grip surface interface with user neuroware for signal feedback.",
+    "distinctive_features": [
+      "Translucent emitter access panel revealing nested myoelectric coil array with visible wire bundles",
+      "Three physical selector switches marked 'COLLAPSE / FREEZE / PUPPET' — deliberately visible, engraved markings slightly worn suggesting frequent pattern-switching",
+      "Power indicator window on the grip showing Ringo R-Pack charge state via blue-to-red thermal gradient",
+      "Micro-venting ports along the frame exhaling barely-visible ionized air during operation",
+      "Serial etching on the left frame rail with RingoGuard corporate sigil — evidence of black-market refurbishment scratches around the marking",
+      "Targeting reticle projector mounted dorsally, casting a faint crosshair pattern on surfaces",
+      "Signal-resonance warning stripe in reflective gray-on-gray along the barrel — visible only when light angle matches the field projection vector"
+    ],
+    "manufacturer_markings": "RingoGuard corporate sigil (stylized shield with pulsing circuit motif) stamped on the left side of the frame, beneath which is a production serial number. A small regulatory compliance plate on the right grip states 'RINGO CORPORATION / MYOELECTRIC SYSTEMS / MSP-6 REV.2' with certification marks. Evidence of deliberate serial tampering visible on black-market units.",
+    "condition_typical": "Field units show wore around the selector switches from repeated pattern changes. The emitter coil visible through the access panel often shows micro-corrosion from sustained-fire use. Black-market Marionettes frequently exhibit refinished or repainted grip sections and filed-away manufacturer markings. Licensed law-enforcement versions maintain clinical condition; underground arena weapons show impact scarring on the frame and residual bio-material discoloration near the emitter."
+  },
+  "image_prompt": "Product photography of the Myoelectric Seizure Projector MSP-6 'Marionette' laid on a matte black surface under dramatic side-lighting, the brushed-steel emitter section catching harsh white light while the charcoal composite frame recedes into shadow. The translucent emitter access panel glows faintly with internal amber coil detail. Close detail on the selector switches showing the PUPPET marking. Cyberpunk aesthetic: clinical precision meets unsettling biological design. Include a gloved augmented hand gripping the weapon from above, chrome fingertips visible. Slight atmospheric mist suggesting ionized air residue. Color grade: cool, desaturated, with amber highlights. --ar 3:2 --v 6"
 }

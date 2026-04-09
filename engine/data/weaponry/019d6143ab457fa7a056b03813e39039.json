@@ -35,5 +35,34 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Eshe Petersen-Bah",
+    "Free Assembly",
+    "Narrowcast",
+    "Steel",
+    "The Reclamation Assembly",
+    "The Third Rail"
+  ],
+  "physical_description": {
+    "visual_profile": "A crudely cylindrical metal container with an aggressive, utilitarian silhouette. The device resembles a industrial thermos wrapped in danger — compact, dense, and deliberately unmarked. The magnesium ribbon fuse protrudes from the top like a lit match waiting to ignite.",
+    "dimensions": "Height: 12-15 cm, Diameter: 6-8 cm, Fuse length: 4-5 cm",
+    "weight_description": "Deceptively heavy for its size — substantial heft in the palm, roughly 0.5-1.5 kg depending on payload density. Feels like holding compressed potential.",
+    "primary_material": "Welded steel or aluminum alloy container, commercial-grade metal stock. Interior lined with thermite paste (iron oxide and aluminum powder mixture).",
+    "finish": "Matte industrial gray or bare welded steel with heat-stressed discoloration. No polish — functional and crude. Solder drips visible at seams.",
+    "color_scheme": "Gunmetal gray body with oxidized brown/rust staining near the base. Silver-gray magnesium ribbon fuse at apex. Occasional red oxide dust residue from poor sealing.",
+    "grip_texture": "Bare cold metal or light corrosion texture. Some versions wrapped with electrical tape or cloth strips for handling. Unpleasant to grip — industrial sharp edges, no ergonomic consideration.",
+    "distinctive_features": [
+      "Exposed magnesium ribbon fuse jutting from crown with slight curl or kink",
+      "Uneven welding seams with visible spatter and surface irregularities",
+      "Rust bloom or oxidation stains suggesting age or poor storage conditions",
+      "Scoring or hash marks scratched into the metal body (user assembly marks or tally counts)",
+      "Slight dents or dings indicating rough handling and transport",
+      "Fine residual powder dust visible in crevices and around the base rim",
+      "No serial numbers, logos, or identification — deliberately anonymous"
+    ],
+    "manufacturer_markings": "None. Street Custom devices are unmarked by design — no corporate accountability, no traceable origin. May have crude hand-scratched initials or gang symbols from the fabricator.",
+    "condition_typical": "Well-worn and weathered. These are single-use instruments, stored in suboptimal conditions — humidity-prone, roughly handled, dust-covered. Rust bloom is expected. The fuse is slightly discolored from age or exposure."
+  },
+  "image_prompt": "Overhead product shot of a crude cylindrical steel thermite grenade on a dark matte concrete surface, magnesium ribbon fuse coiled at the apex. Harsh cold side-lighting from upper left reveals rough welding seams, oxidation stains, and construction imperfections. Bare metal body with rust bloom and dust residue. Dramatic shadows cast across surface. Cyberpunk industrial aesthetic — no branding, purely functional menace. Shot in cool blue-gray tones with hints of rust-red oxidation. --ar 3:2 --v 6"
 }

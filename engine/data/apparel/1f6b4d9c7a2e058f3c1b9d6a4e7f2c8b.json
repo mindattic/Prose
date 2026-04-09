@@ -50,5 +50,25 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Filament",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A refined, minimalist button-down with a clean executive silhouette. The matte finish and structured collar project quiet competence rather than ostentation. Worn by mid-tier professionals navigating climate-controlled corporate spaces and unregulated street-level infrastructure.",
+    "fit": "Tailored but not restrictive—designed to accommodate layering or worn solo. Sits close to the shoulder, tapers at the waist, with a straight drop through the torso. Sleeves taper toward fitted single-button cuffs.",
+    "primary_material": "Fine-weave synth-linen composite with integrated micro-filament thermal regulation network. Feels smooth, breathable, and almost organic despite its technical augmentation.",
+    "texture": "Matte surface with subtle micro-texture from the woven filament grid beneath. No visible circuitry or panel lines—the tech is completely seamless and invisible to casual observation.",
+    "color_scheme": "Eight colorways including 'Caspian' (sophisticated teal-blue) and 'Mineral' (warm neutral grey). Other options likely span professional palette: charcoal, ivory, steel, sage, ochre, and deep navy.",
+    "closures": "Standard mother-of-pearl or composite buttons down the front. Single button at each cuff. No visible power interface or adjustment controls—thermal settings managed via subcutaneous haptic link or companion app.",
+    "distinctive_features": [
+      "Invisible micro-filament thermal regulation network woven throughout fabric",
+      "Crisp, professional collar that maintains structure through wear",
+      "Single cuff button—minimal, functional detail work",
+      "No visible tech branding or indicator lights—luxury through invisibility",
+      "Minimal seaming to preserve thermal fabric integrity",
+      "Subtle Haelan Group woven tag at interior neckline"
+    ],
+    "tier_indicator": "Tier 2–3 luxury. Priced for working professionals and minor corporate employees. A statement of stable employment and access to augmented comfort tech without the flashiness of visible chrome.",
+    "cultural_context": "Signals mid-tier corporate worker, logistics manager, middle-management exec, or stable service sector professional. Worn by people who move between climate-controlled office towers and unregulated transit infrastructure. The opposite of street-wear or salvage aesthetics.",
+    "condition_typical": "Pristine to well-maintained. Haelan targets professionals who treat their wardrobes carefully. After years of wear, might show gentle fading or soft creasing at collar, but rarely torn or patched."
+  },
+  "image_prompt": "A Tier 3 corporate professional wearing a Haelan ClimateCore shirt in Caspian teal, photographed in a moody split-lighting setup. One side lit by cool fluorescent office glow, the other by warm amber from a street-level neon sign bleeding through a transit tunnel window. The model is poised, relaxed but alert, perhaps adjusting a cuff or checking an implanted display on their wrist. Dark mannequin alternative: shirt buttoned halfway, draped on sleek form against a backdrop of thermal-imaging feed on screens. Fabric detail shot showing the matte micro-texture catching light. Cyberpunk aesthetic: professional, augmented, effortlessly blended between corpo and street. --ar 2:3 --v 6"
 }

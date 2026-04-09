@@ -41,5 +41,36 @@
     "tier_1",
     "runner"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus HX-1 'Headsman'",
+    "GLMZ",
+    "Lazarus LX-2 'Lab Rat'",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Street Custom 'Glass Garden' Caltrops",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA PG-2 'Signature'",
+    "Tympanic Membrane Galvanic Rupture Carbine",
+    "Ximena Engstrom-Fofana"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, disc-shaped self-defense dispersal device with a bright orange polymer shell. At first glance, it resembles a thick hockey puck or small frisbee—innocuous enough to fit in a jacket pocket, but engineered with deliberate simplicity. The disc has a slightly domed top surface with subtle ribbing for grip, and a flat base designed for impact deployment.",
+    "dimensions": "6 cm diameter, 1.2 cm thickness. Each individual caltrop measures 2 cm in height from base to apex.",
+    "weight_description": "Surprisingly dense for its size—55 grams creates a satisfying heft in the palm without being cumbersome. Balanced enough to throw accurately, but substantial enough to generate the impact force needed for internal spring mechanism activation.",
+    "primary_material": "High-impact polymer shell housing the spring dispersal mechanism; internal caltrops are hardened polymer composite with embedded iron recovery beads.",
+    "finish": "Matte orange exterior with subtle grip-texture ribbing on the top hemisphere. The base features a recessed impact zone with a slightly darker shade of orange, indicating the stress-point designed to fracture upon hard contact with ground.",
+    "color_scheme": "Bright safety orange as primary color (visibility-critical for self-defense application). Subtle darker orange shading on the impact base and around the rim edge for visual depth and durability indication.",
+    "grip_texture": "Radiating circular grip ridges on the top surface provide purchase without being aggressive—designed for quick palm deployment rather than extended carry grip. The edges are beveled and smooth to prevent snagging on pocket fabric.",
+    "distinctive_features": [
+      "Radial grip ridges optimized for throwing mechanics",
+      "Recessed impact zone on base—darker orange coloring indicates fracture point",
+      "Subtle seam line around the equator where upper and lower polymer hemispheres meet",
+      "Barely-visible micro-dimpling across the surface for aerodynamic stability in flight",
+      "Small embossed manufacturer stamp on top dome (NOVATREAD tactical logo)",
+      "High-visibility orange maintains its intensity even under low-light conditions, critical for self-defense scenarios"
+    ],
+    "manufacturer_markings": "NOVATREAD TACTICAL CONSUMER logo (stylized 'NT' with forward motion chevron) embossed on the top dome, approximately 1.5 cm wide. Small text notation 'CD-1 SCATTERFOOT' visible near the equatorial seam. Tiny batch/date code stamped on the base in white ink.",
+    "condition_typical": "Sold in pristine condition within protective cardboard sleeves (packs of two). In field use, deployed discs are recovered via included magnetic collection tool, meaning intact devices remain clean and operational. Unused discs show no weathering; post-deployment examples would be missing their internal spring mechanism and caltrops by definition."
+  },
+  "image_prompt": "Product photography of NovaTread CaltroDisk CD-1 'Scatterfoot' self-defense disc. Bright safety orange polymer disc (6cm diameter, 1.2cm thick) with radial grip ridges visible on top dome. Shot from three-quarter angle on matte dark grey surface under dramatic side-lighting that emphasizes the texture and industrial form. Include a scattered arrangement of eighteen bright orange tetrahedral 2-cm polymer caltrops around the disc, each with subtle light-catching facets showing the hardened polymer construction and tiny iron recovery bead glint at the core. Include gloved tactical hand (near-black neoprene with orange accent stripe) positioning the disc for throw. Clean, cyberpunk product catalog aesthetic with high contrast between the safety orange and dark background. Shallow depth of field keeps the disc in sharp focus. Include small magnetic collection tool (sleek minimalist handle, magnetic tip) partially visible in frame. Overhead rim-light creates subtle rim-glow on the disc edges. --ar 3:2 --v 6"
 }

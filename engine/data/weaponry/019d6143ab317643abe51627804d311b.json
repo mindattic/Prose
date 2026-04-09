@@ -58,5 +58,36 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Exo-Runner Frame",
+    "GLMZ",
+    "Helix Biosystems",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Mirabel Osei-Quispe",
+    "Narrowcast",
+    "Palladian Construction",
+    "The Pure Hand",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, medical-aesthetic rifle with organic curves that obscure its true purpose. The design evokes laboratory equipment more than a weapon — angular yet flowing, with a tapered barrel and integrated magnetic emitter housing. The overall impression is clinical precision wrapped in corporate restraint.",
+    "dimensions": "118 cm length overall, 42 cm height including magnetic coil array, 8 cm barrel diameter. Magazine well sits forward of the trigger guard.",
+    "weight_description": "Hefty but well-balanced — 2.6 kg loaded feels substantial without being unwieldy. The weight distribution favors the forward section, making sustained aim require consistent upper body tension.",
+    "primary_material": "Aerospace-grade polymer composite frame with embedded conductive alloy lattice for magnetic coil integration. Barrel section is reinforced titanium-carbon weave.",
+    "finish": "Matte charcoal with brushed chrome accents on the magnetic emitter ring and magazine release. The polymer shows a subtle iridescent sheen under direct light — an intentional design choice suggesting biopharma sophistication rather than military hardware.",
+    "color_scheme": "Charcoal grey primary with chrome and teal accent lines running along the magnetic array housing. A small helix motif in teal appears on the receiver — Helix Biosystems branding.",
+    "grip_texture": "Rubberized polymer with subtle micro-texturing designed for gloved operation. Ergonomic, almost surgical in its attention to hand geometry.",
+    "distinctive_features": [
+      "Integrated magnetic emitter ring surrounding the barrel junction — copper-colored coil visible through translucent polymer section",
+      "Secondary targeting readout on the stock — small LED display showing dispersal cone angle and magnetic pulse calibration",
+      "Pressurized bolt chamber visible through reinforced viewport on the magazine well",
+      "Faint warning labels in corp-standard sans-serif along the barrel: λ BIOHAZARD PAYLOAD, FERROSTATIC CLASS III",
+      "Charging handle is recessed and requires deliberate engagement — suggests operator care and precision over rapid deployment",
+      "Heat dissipation vents along the magnetic housing emit faint blue glow when system is armed"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS stamped in minimal serif font on the receiver above the magazine well. Serial number on the stock in small white text. A small regulatory stamp in the lower receiver states 'NON-LETHAL INCAPACITATION SYSTEM — MEDICAL RESPONSE RECOMMENDED.'",
+    "condition_typical": "Well-maintained to pristine in corporate security contexts. Field-used examples show minor polymer scratches and occasional ferrofluid residue stains around the magazine well. Black market variants exhibit jury-rigged replacements for magnetic coils and mismatched ammunition."
+  },
+  "image_prompt": "Product photography of a sleek medical-aesthetic ferrostatic occlusion rifle held in a gloved hand, dark matte charcoal polymer with chrome and teal accents, integrated magnetic emitter coil ring glowing faint blue around the barrel junction, close-up showing the translucent magnetic housing and pressure-chamber viewport, dramatic side-lighting emphasizing the weapon's clinical precision, cyberpunk corporate aesthetic, clinical laboratory environment backdrop, cinematic depth of field, shot against a dark composite surface, --ar 3:2 --v 6"
 }

@@ -49,5 +49,27 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Narrowcast",
     "The Nearfield"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian, heavily armored coverall with an integrated exoskeletal understructure. The silhouette is blocky and geometric, with pronounced reinforcement struts visible along the spine, thighs, and forearms. The overall impression is industrial and purpose-built—something designed for harsh subsurface environments, not aesthetics. On a wearer, it reads as heavy, protective, and distinctly working-class.",
+    "fit": "Relaxed and spacious through the torso to accommodate layering and free movement during labor. Tapered slightly at the wrists and ankles with friction-fit dust-seal cuffs. The exo-frame sits snug against the body but allows full articulation. Designed for function over form—no tailoring, no pretense.",
+    "primary_material": "Thick-weave ballistic nylon exterior with an integrated lightweight carbon-composite exoskeletal frame. Rubberized cuff seals at wrists, ankles, and collar. Gel-filled kneeling pads with hard composite outer caps.",
+    "texture": "Rough and tactile—the ballistic nylon has a slightly rippled surface from heavy weaving. The rubber cuff seals are smooth and slightly tacky to the touch. The carbon-composite struts are matte and industrial-looking, with occasional micro-fractures from field use. Visible stitching is heavy gauge and somewhat irregular.",
+    "color_scheme": "Olive drab base with darker charcoal accents on reinforced panels. Rubberized seals are matte black. The carbon struts are gun-metal gray with occasional rust or oxidation scoring. Field-worn units show discoloration from mineral dust, concrete powder, and moisture staining.",
+    "closures": "Heavy-duty magnetic snap closures down the front placket, spaced 6-8 inches apart. Wrist and ankle cuffs use friction-fit snap rings that click into place. The detachable hood locks via a reinforced collar ring with a quarter-turn mechanical latch. No zippers—they clog with dust.",
+    "distinctive_features": [
+      "Visible carbon-composite exoskeletal struts running spine, thighs, and forearms",
+      "Gel-filled integrated kneeling pads with hard composite outer caps",
+      "Detachable hood with locking collar ring",
+      "Rubberized dust-seal cuffs at wrists, ankles, and collar",
+      "Reinforced elbow and knee caps with visible stitching",
+      "Heavy-gauge magnetic snap closures",
+      "Multiple attachment loops for tool harnesses and safety lines",
+      "Internal padding along the exo-frame contact points"
+    ],
+    "tier_indicator": "Tier 4 (working class) — utilitarian and functional, clearly industrial-grade. Not cheap, but not luxurious. A consumable product for labor-intensive sectors.",
+    "cultural_context": "Worn by subsurface miners, tunnel infrastructure crews, deep-bore laborers, and infrastructure maintenance workers in the GLMZ. Signals competence in dangerous environments, physical hardship, and connection to the ungoverned sub-grade zones. Rarely seen outside of active work sites.",
+    "condition_typical": "Field-worn and heavily patched. Most units in circulation show concrete abrasion, mineral dust staining, repaired seams held with thread or adhesive tape, and occasional gel-pad replacements. Factory-fresh olive drab is almost never seen on an active crew—the norm is a mottled, weather-beaten appearance."
+  },
+  "image_prompt": "A Kelden DeepStrata TunnelRig Exo-Coverall MK-2 displayed on a weathered mannequin or fitted to a muscular model in industrial pose. Olive-drab ballistic nylon with visible carbon-composite exoskeletal struts running along the spine and limbs. Heavy rubberized dust-seal cuffs at wrists, ankles, and collar. Integrated gel-filled kneeling pads visible at the knees. Multiple patches and field repairs visible on the fabric. Moody, dim underground lighting casting sharp shadows across the exo-frame. Urban tunnel or subterranean warehouse backdrop with concrete walls and industrial machinery. Gritty, utilitarian aesthetic. High contrast, desaturated color palette. --ar 2:3 --v 6"
 }

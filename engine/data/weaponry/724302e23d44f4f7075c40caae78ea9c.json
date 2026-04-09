@@ -43,5 +43,35 @@
     "cultural",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Crucible Genomics",
+    "Djeneba Park-Traore",
+    "GLMZ",
+    "Irontide Tidal Energy",
+    "ShieldTech CLA-3 'Cascade'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA ES-4 'Perimeter'",
+    "The Heritage Vault"
+  ],
+  "physical_description": {
+    "visual_profile": "A sinuous two-meter fighting chain with brutal weighted terminals — appears as a coiled serpent at rest, but transforms into a whipping instrument of controlled violence in motion. The chain has an organic, almost organic quality despite its industrial construction, with each link visibly individual and slightly irregular in a way that speaks to hand-forging rather than factory production.",
+    "dimensions": "Total length: 200 cm when fully extended. Each terminal weight: 8 cm diameter ceramic spheroid. Link diameter: 0.8 cm. Chain width when laid flat: 2.5 cm.",
+    "weight_description": "Deceptively heavy — 1.4 kg distributed across two meters creates a weapon that feels weighted and purposeful in the hand without being unwieldy. The terminal ceramics add satisfying heft to each end; the chain itself feels alive, responsive to minute wrist movements.",
+    "primary_material": "Case-hardened carbon-lattice steel chain links; Ablonite-KR ceramic terminal weights mounted on reinforced steel eyebolts.",
+    "finish": "Matte black oxidized steel with subtle burnished highlights where handling and impact have worn through the oxide layer. The Ablonite-KR ceramics show a distinctive pale grey-white surface with faint marbling patterns — the material's reactive properties are visible as faint heat-stress discoloration near previous impact zones.",
+    "color_scheme": "Gunmetal black chain with pale ceramic grey terminal weights. Occasional copper-bright flashes where the steel core shows through worn oxide.",
+    "grip_texture": "The chain itself is bare case-hardened steel — slightly textured from the forging process, cool to touch. Some fighters wrap sections in cord or leather, but traditional Serpents remain unadorned. The hand naturally settles into the chain's weight distribution rather than gripping a handle.",
+    "distinctive_features": [
+      "Each link is individually visible and slightly irregular — sign of hand-forging by collective craftspeople",
+      "Ablonite-KR terminal weights show thermal discoloration patterns from previous impacts against ferrous targets",
+      "Faint maker's marks stamped into every third link (FORGE-SMITH collective cipher)",
+      "The ceramic spheroids are deliberately asymmetrical — shaped to maximize rotational whip and kinetic transfer",
+      "Subtle wear patterns in the steel show years of use and maintenance — some chains are generational heirlooms",
+      "Connection points between chain and ceramic weights are reinforced with secondary steel wrapping, visible as darker bands"
+    ],
+    "manufacturer_markings": "Small stamped ciphers appear on every third link — the Forge-Smith Collective's maker-mark (a stylized hammer and chain intertwined). No serial numbers; these are artisan pieces identified by craftsperson lineage and pattern recognition rather than individual registration.",
+    "condition_typical": "Well-maintained and regularly oiled despite visible battle wear. The oxidized finish is intentional — protects against rust in the GLMZ's humid environment. Older examples show darkening from repeated heat exposure (Ablonite-KR reactive properties) and micro-scarring in the ceramic weights. Even heavily used examples are meticulous in their care, reflecting the weapon's cultural significance."
+  },
+  "image_prompt": "Product photography of a coiled fighting chain laid across dark matte metal surface, shot from above at slight angle. The two-meter Forge-Smith Collective chain is coiled loosely to show the individual hand-forged links and the two bulbous pale grey Ablonite-KR ceramic terminal weights. Dramatic side-lighting from upper left casts sharp shadows between links, emphasizing the three-dimensional texture of oxidized steel. The ceramic weights glow subtly under the light, their thermal-stress marbling patterns visible. One leather-gloved hand emerges from frame edge, grasping a section of chain mid-coil, fingers showing texture of the bare case-hardened steel. Background is deep black with subtle reflected highlights off the metal. Lighting is cool-toned with warm accent light catching the ceramic. The composition suggests coiled potential energy — a weapon at rest but ready to strike. Cyberpunk industrial aesthetic, artisan craftsmanship evident in link irregularity. --ar 3:2 --v 6"
 }

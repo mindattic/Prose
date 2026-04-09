@@ -44,5 +44,25 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Tessera Nexus Town Car",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A crisp, conservative dress shirt with a clean silhouette that reads as institutional competence. The point collar is sharp and professional, the front placket runs straight down the center, and the overall impression is one of understated reliability. This is the uniform of mid-tier corporate culture — visible in break rooms, office cubicles, and administrative hearings across the GLMZ.",
+    "fit": "Slightly relaxed through the shoulders and torso with a gentle taper at the waist. Not tailored, not oversized — designed to move with the body through an eight-hour workday without binding or billowing. Sleeves sit just at the wrist bone.",
+    "primary_material": "100-count cotton-analog broadcloth — a synthetic blend that mimics natural cotton's breathability and press retention while being lab-optimized for durability and minimal maintenance.",
+    "texture": "Smooth and tightly woven with a subtle sheen. Responds well to pressing, holding crisp lines at collar, cuffs, and placket. No visible texture variation — uniformly refined.",
+    "color_scheme": "Available in white, pale blue, and soft grey. All colorways are muted and neutral, designed for layering under jackets or worn alone in climate-controlled office environments. No patterns, no accent colors.",
+    "closures": "Mother-of-pearl barrel buttons down the front placket; matching buttons at barrel cuffs. All buttons are functional and replaceable.",
+    "distinctive_features": [
+      "Vanthorpe label embroidered in dark navy thread inside the collar — the only branding on the garment",
+      "Clean yoke seam that sits correctly on the shoulder",
+      "Barrel cuffs with two-button closure",
+      "Single vent at the back hem",
+      "Pocket-free design",
+      "Reinforced placket for durability through repeated laundering"
+    ],
+    "tier_indicator": "Tier 3–4 professional. A shirt that costs between 45–85 Φ, affordable for working-class office staff and mid-level managers. Not cheap, not expensive.",
+    "cultural_context": "The wearer is someone with a stable job, regular access to laundry facilities, and enough social standing to attend meetings in person. No flash, no augmentation display, no counter-culture signaling. This shirt says: 'I have a job, I show up, I follow the dress code.'",
+    "condition_typical": "Pristine or lightly worn. When new, it irons to near-perfection. After months of wear, it settles into a comfortable, slightly broken-in state with minor creasing that fades after pressing. No visible wear, no patches, no distressing — maintenance is assumed and expected."
+  },
+  "image_prompt": "A Tier 3 office worker model wearing a crisp pale blue Vanthorpe broadcloth dress shirt, pale blue point collar visible, standing in a fluorescent-lit corporate break room with grey cubicle walls in soft focus behind. Overhead lighting casts clean shadows. The shirt is perfectly pressed, sleeves rolled to the forearm, showing the barrel cuff buttons. Dark hyperplastic skin of a mixed-heritage model, subtle subcutaneous augmentation glow at the temple. Shallow depth of field focusing on the fabric weave and button detail. Moody colour grading with desaturated blues and greys. Corporate, reliable, unmemorable. Professional photography. --ar 2:3 --v 6"
 }

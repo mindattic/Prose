@@ -247,5 +247,11 @@
     "posture_movement": "Moves with deliberate stillness and minimal gesture, having learned early that visibility attracts unwanted attention. Stands with weight balanced, ready to move. Eyes constantly scan surroundings without appearing to. Speaks quietly. Posture is alert but not aggressive — the stance of someone learning how to disappear in plain sight.",
     "clothing_style": "Tier 5 street utility wear: grey or black synthetic hoodie (worn, functional, no branding), dark jeans or cargo pants with multiple pockets for package runs, scuffed knockoff sneakers. Layered for weather and quick movement. No corporate logos or aspirational styling — everything is practical and replaceable. Wears the red-and-copper wristband constantly. No jewelry beyond the band."
   },
-  "image_prompt": "A fourteen-year-old boy of mixed West African and Central Asian heritage, deep umber skin, wide nose, lean angular face with a jagged scar through left eyebrow. Very short black hair faded into geometric patterns. Wearing a grey synthetic hoodie and dark cargo pants, scuffed sneakers. Red-and-copper braided wristband on left wrist. Standing still on a dimly lit street corner in a cyberpunk Tier 5 neighborhood, chain-link and brutalist concrete behind him, neon glow from distant signs reflected on wet pavement. His expression is alert and guarded, eyes scanning. Overcast evening light, cool color palette with red neon accents. Photorealistic, street photography aesthetic, gritty and grounded, no heroic lighting. --ar 2:3 --v 6"
+  "image_prompt": "A fourteen-year-old boy of mixed West African and Central Asian heritage, deep umber skin, wide nose, lean angular face with a jagged scar through left eyebrow. Very short black hair faded into geometric patterns. Wearing a grey synthetic hoodie and dark cargo pants, scuffed sneakers. Red-and-copper braided wristband on left wrist. Standing still on a dimly lit street corner in a cyberpunk Tier 5 neighborhood, chain-link and brutalist concrete behind him, neon glow from distant signs reflected on wet pavement. His expression is alert and guarded, eyes scanning. Overcast evening light, cool color palette with red neon accents. Photorealistic, street photography aesthetic, gritty and grounded, no heroic lighting. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 64.8,
+    "Hispanic/Latin American": 22.3,
+    "East Asian": 9.1,
+    "Sub-Saharan African": 3.8
+  }
 }

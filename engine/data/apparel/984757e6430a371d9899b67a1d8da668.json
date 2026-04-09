@@ -36,5 +36,26 @@
   "related_entities": [
     "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
     "Mika Sorel"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist headpiece that commands attention—angular titanium frame with a prominent flip-up visor assembly. When lowered, it presents a fortress-like appearance; when raised, the visor locks horizontally above the forehead like a deployed shield. The aesthetic is pure function: industrial, aggressive, unapologetically tactical.",
+    "fit": "Snug, secure fit against the skull and upper face. The titanium frame distributes weight evenly across the crown and temples. The visor mechanism allows for rapid deployment without shifting. Designed for stability during high-impact scenarios.",
+    "primary_material": "Lightweight titanium alloy frame (aerospace-grade), layered polycarbonate visor with anti-spall ceramic interior coating",
+    "texture": "Smooth, cold metal surfaces on the frame with fine milling marks. The polycarbonate visor has a subtle frosted quality from the anti-spall treatment; faint stress marks may appear from impact absorption tests.",
+    "color_scheme": "Gunmetal gray titanium with jet-black polycarbonate visor. Narrow accent line in industrial orange (Korvain Dynamics branding) along the frame's lateral edge. Minimal ornamentation.",
+    "closures": "Magnetic locking mechanism for visor deployment; friction-fit headband with tension adjustment via recessed titanium screws at the rear",
+    "distinctive_features": [
+      "Flip-up polycarbonate visor with ballistic rating stamps etched into the frame",
+      "Anti-spall interior coating visible as matte black underside",
+      "Korvain Dynamics logo embossed on right temple",
+      "Integrated ventilation slots to prevent fogging",
+      "Quick-release mounting points for helmet cams or targeting assists",
+      "Reinforced nose guard extending down the centerline",
+      "Scratches and minor stress fractures typical of field use"
+    ],
+    "tier_indicator": "Tier 2-3 hybrid. High-end military/security contractor equipment. Expensive enough to signal serious training and dangerous work, accessible to well-funded private teams rather than exclusive to Tier 1 corpo elite.",
+    "cultural_context": "Worn by breaching specialists, demolitions crews, armed corporate security, and mercenaries. Its presence signals 'I expect gunfire.' Street gangs and Tier 5 operators might scavenge or counterfeit versions, but authentic Korvain gear carries weight in professional combat circles.",
+    "condition_typical": "Field-worn, with cosmetic scuffs on the frame, possible spall marks or minor cracks in the visor from deflected rounds. May show stress patterns from repeated deployment cycles. Rarely pristine unless freshly issued."
+  },
+  "image_prompt": "Close-up fashion shot of the Korvain Dynamics Blast Visor mounted on a dark matte mannequin head, visor raised and locked above the forehead in deployment position. Dramatic side-angle lighting from industrial LED strips casting hard shadows across the gunmetal titanium frame. The frosted polycarbonate visor catches light with a subtle opalescent gleam. Dark urban warehouse backdrop with corrugated metal and rain-slicked concrete. Faint neon glow (industrial orange) reflecting off the Korvain logo. Moody, tactical, unforgiving. --ar 2:3 --v 6"
 }

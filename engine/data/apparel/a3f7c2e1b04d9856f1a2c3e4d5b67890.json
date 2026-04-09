@@ -39,5 +39,25 @@
   "related_entities": [
     "Nnamdi Ostrowski-Faletolu",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A worn, oversized button-up shirt with a utilitarian silhouette. The fabric hangs loosely from the shoulders with a slightly boxy cut that reads as deliberately slouched rather than tailored. The muted grey-green base is interrupted by visible repair work, giving it a layered, repurposed aesthetic.",
+    "fit": "Relaxed and generous through the shoulders and chest; sleeves sit slightly long at the wrist. Designed for movement and durability rather than form-fitting.",
+    "primary_material": "Heavy-weight cotton-synth blend, original Rolen Depot industrial stock — durable but not high-spec. Patched sections use recycled brown synth-canvas with visible stitching.",
+    "texture": "Soft, heavily worn fabric with a slight nap from repeated washing. Elbow patches are noticeably stiffer and textured against the body of the shirt. Fraying at the collar creates subtle, organic irregularity.",
+    "color_scheme": "Faded grey-green as primary; two contrasting brown patch repairs on left elbow; replacement buttons in slightly lighter grey creating subtle tonal breaks down the front.",
+    "closures": "Seven button front, with two replacement buttons (slightly mismatched shade) visible at mid-chest and waist. Original buttons show wear and patina.",
+    "distinctive_features": [
+      "Dual-patched left elbow with visible cross-stitching in darker thread",
+      "Frayed collar edges showing fabric history",
+      "Visible replacement buttons in wrong shade",
+      "Ghost of original Rolen Depot laundry marking barely visible on interior placket",
+      "Slight permanent creasing at elbow bends from repetitive wear",
+      "Unraveling seam starting at left shoulder"
+    ],
+    "tier_indicator": "Tier 3–4 working class, edging into Tier 5 salvage culture adoption",
+    "cultural_context": "Originally depot/warehouse, now signals street authenticity and maker culture. Wearing it suggests honest work history, or deliberate adoption of sub-grade aesthetics by someone who can afford better. Common among dock workers, recyclers, and off-grid technicians.",
+    "condition_typical": "Visibly patched and weathered; expected to be worn open over a base layer or as standalone. Never pristine; always appears like it's just come from a shift."
+  },
+  "image_prompt": "Close-up fashion shot of a faded grey-green work shirt draped over a chrome-limbed model's shoulder, emphasizing the brown synth-canvas elbow patches and mismatched replacement buttons. Harsh neon sidelight from industrial warehouse setting, casting sharp shadows across the worn fabric texture. Frayed collar detail visible. Dark urban backdrop with rusted metal scaffolding. Model's face half-hidden, augmented eye glinting. Gritty, lived-in atmosphere. --ar 2:3 --v 6"
 }

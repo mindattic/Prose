@@ -34,5 +34,27 @@
   "related_entities": [
     "GLMZ",
     "The Signal"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, imposing silhouette designed to absorb attention and light simultaneously. The wearer appears almost dimensionally flattened — a visual trick that makes them blend into shadows while remaining unmistakably present. The jacket creates a severe, geometric profile; the chest rig adds tactical authority without visible weaponry. Overall impression: a void wrapped in intention.",
+    "fit": "Structured and tailored with athletic accommodation. The jacket is cut to sit close to the torso while allowing freedom of movement through the shoulders and arms. Trousers are fitted through the hips and thighs, relaxing slightly at the calf. The chest rig sits flush against the body, anchored by magnetic points. Sleeves and inseams available in extended cuts for augmented personnel.",
+    "primary_material": "Jacket and trousers: proprietary light-absorption weave (Vantablack's signature fabric — microstructured synth-composite that traps photons). Chest rig: ballistic-rated soft armor laminate with signal-isolation membrane backing. Closures: magnetic-lock panels and friction-fit tactical hardware.",
+    "texture": "Matte throughout — the jacket presents a velvety, almost absorbent surface that seems to pull light inward. The chest rig has a slightly textured weave over the armor panels, providing grip. Seams are reinforced and topstitched in matte black thread. No shine, no reflection, no give.",
+    "color_scheme": "Absolute black with single accent: a reflective white Vantablack sigil (geometric, angular) set into the left collar in thread that only registers under direct light — invisible under most circumstances, creating an Easter egg of branding.",
+    "closures": "Magnetic snap closure down the jacket front (silent, secure, tool-free). Full-length magnetic panel on jacket back for dorsal-augmented operatives. Chest rig anchors via magnetic hardpoints and friction-fit tactical attachments. No traditional zippers — all closures are silent and tool-independent.",
+    "distinctive_features": [
+      "Light-absorption weave that flattens appearance in recording environments",
+      "Hardened chest rig with ballistic soft armor and signal-isolation membrane (BCI disruption protection)",
+      "Full-length magnetic back panel accommodating dorsal chrome",
+      "Extended sleeve/inseam options for cyberlimb-augmented personnel",
+      "Reflective white sigil collar mark (visible only under direct light)",
+      "No visible weapon mounts — deterrence through presence rather than visible hardware",
+      "Reinforced seaming and topstitching throughout",
+      "Geneware modifications not accommodated — anatomically assumes baseline or cyber-augmented physiology only"
+    ],
+    "tier_indicator": "Tier 4-5 access. Tier 4 working-class operatives wear this through employment; Tier 5 sub-grade individuals acquire it through black-market channels or salvage, where it signals either former contractor status or theft.",
+    "cultural_context": "The uniform announces: *This person is armed with authority and resources.* In GLMZ's lower tiers, a Vantablack escort uniform is a statement of either significant employment or significant danger. The visible sigil is a quiet flex — only those who know Vantablack's branding recognize the threat. The exclusion of geneware-modified operatives is a coded message about Vantablack's internal hierarchy and physical standards, a controversial policy that marks the company as operating within strict baseline-human specifications.",
+    "condition_typical": "Maintained in near-pristine condition. Operatives are required to keep gear field-ready. Worn examples show subtle scuffing on the chest rig panels, slight fading on magnetic closure points, and careful patching of minor ballistic impacts. The fabric's light-absorption properties make wear patterns nearly invisible."
+  },
+  "image_prompt": "A Vantablack Signals security escort operative in full uniform, standing three-quarter pose against a rain-slicked GLMZ megastructure backdrop. Dark matte-black tailored jacket over matching tactical trousers, the fabric seeming to absorb light itself. Hardened chest rig visible, layered and geometric. Single white reflective sigil barely catching light on the left collar. Model has visible cybernetic augmentation — chrome arm or spinal integration — to show the uniform's design accommodation. Moody neon-noir lighting with sharp shadows; security camera aesthetic with slight vignetting. The operative's posture is alert, stationary, radiating deterrent authority. Film-noir security operative energy. Dark, cold color grading. --ar 2:3 --v 6"
 }

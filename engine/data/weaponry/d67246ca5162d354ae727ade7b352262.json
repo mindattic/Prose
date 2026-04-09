@@ -47,5 +47,38 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Alper Holmberg-Dembele",
+    "GLMZ",
+    "Lazarus PD-4 'Guardian Angel'",
+    "Lazarus Pharmaceuticals",
+    "NeuralPath CalmLine Chronic Pain Suppressor",
+    "The Accidental",
+    "The Gesture",
+    "Tympanic Membrane Galvanic Rupture Carbine",
+    "Zurab Ivanov-Appiah"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, clinical auto-injector the size of a thick marker — instantly recognizable as standard medical equipment. Cylindrical body with a slightly tapered needle cap at one end and a flat thumb-pad activation button at the other. The aesthetic is deliberately sterile and forgettable: the kind of device that vanishes into a jacket pocket without a second glance.",
+    "dimensions": "120mm length, 18mm diameter barrel, 8mm needle cap protrusion",
+    "weight_description": "Deceptively light — 35g feels almost insubstantial in the palm, identical to legitimate medical injectors. The balance is perfect for one-handed operation, the weight distributed to feel natural during a 'casual' pocket bump.",
+    "primary_material": "Medical-grade polycarbonate body with reinforced injection chamber. Needle assembly is surgical stainless steel with tungsten-carbide tip.",
+    "finish": "High-gloss translucent polymer body in pale clinical white/off-white. The liquid payload chamber inside is visible through the semi-transparent casing — a deliberate design choice that makes it look MORE legitimate. Injection window shows graduated measurement marks like standard medical devices.",
+    "color_scheme": "Pharmaceutical white with muted gray accents. The Lazarus logo — a stylized phoenix rising — appears in subtle gray on the upper barrel. Small red indicator stripe on needle cap (standard medical convention).",
+    "grip_texture": "Smooth polycarbonate with a slightly textured thumb-pad for activation — ergonomic, familiar, designed to feel like thousands of legitimate injectors in daily circulation.",
+    "distinctive_features": [
+      "Transparent barrel reveals payload chamber and measurement graduations",
+      "Reinforced needle cap with subtle red safety indicator",
+      "Thumb-pressure activation button identical to commercial medical injectors",
+      "Graduated measurement window (2ml capacity clearly marked)",
+      "Subtle Lazarus phoenix logo in muted gray",
+      "Quick-release needle cartridge design for rapid payload swap",
+      "Micro-etched serial number only visible under magnification"
+    ],
+    "manufacturer_markings": "LAZARUS BIOWORKS logo in 2mm gray serif lettering on upper barrel. Serial number micro-etched near the base of the needle cap. Lot code printed on the transparent chamber in faint gray ink. Product safety warnings in multiple languages wrap the lower barrel — identical to legitimate medical versions.",
+    "condition_typical": "Always pristine. The Mercy's effectiveness depends entirely on its medical authenticity. Field-worn examples are carefully maintained to preserve the illusion. Any corrosion, scuffs, or battle damage compromise its core advantage: invisibility in plain sight. Operators rotate fresh units regularly."
+  },
+  "image_prompt": "Product photography of a clinical white medical auto-injector on a dark matte surface, lit with dramatic side-lighting that highlights the transparent barrel and graduated measurement chamber visible inside. The liquid payload glows faintly under the light. Nearby, a gloved hand (black tactical glove with subtle cybernetic implant visible on wrist) reaches toward the injector as if about to pocket it. Sharp focus on the Lazarus phoenix logo and the reinforced needle cap with red safety indicator. Pharmaceutical aesthetic meets cyberpunk minimalism. Shallow depth of field. Dark background fades to black. High contrast. Cold, clinical lighting emphasizing the deceptive simplicity of the device. --ar 3:2 --v 6"
 }

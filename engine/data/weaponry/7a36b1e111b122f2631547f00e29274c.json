@@ -43,5 +43,40 @@
     "legacy",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Altan Tanaka-Frimpong",
+    "Nika Svensson-Kone",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "TESSERA PG-2 'Signature'",
+    "The Pure Hand",
+    "The Riveters' Round",
+    "Vantablack-CNX",
+    "Volkov-Saito Precision Custom Shop VSCS-1 'Masterwork'",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately retro precision rifle with classical hunting-rifle aesthetics — graceful walnut furniture and blued steel barrel married to a subtly modern stock that houses concealed electronics. The silhouette reads pre-2100s craftsmanship at first glance, but close inspection reveals micro-seams and the faint luminescence of a dormant BCI interface beneath the checkered grip.",
+    "dimensions": "Overall length: 118 cm | Barrel length: 61 cm | Stock depth: 8.5 cm | Width at receiver: 5.2 cm",
+    "weight_description": "Hefty and deliberate — 5.6 kg feels substantial in hand without being unwieldy. The weight distribution favors the receiver, making the rifle feel grounded and intentional. Not a weapon you carry casually.",
+    "primary_material": "Walnut hardwood stock (hand-finished), blued 4340 chrome-moly steel receiver and barrel, polymer BCI housing (concealed within stock), carbon-fiber internal reinforcement",
+    "finish": "Blued steel with deliberate micro-patina (aged without being neglected). Walnut stock has a satin oil finish with visible wood grain. Hand-checkering on grip shows subtle tool marks indicating craft rather than CNC precision. Stock interior seams reveal brushed titanium BCI casing.",
+    "color_scheme": "Deep blued-black steel, warm medium walnut brown with honey undertones, gunmetal gray BCI housing (barely visible), brass scope mounts and trigger guard",
+    "grip_texture": "Hand-checkered walnut with diamond cross-pattern — slightly raised texture provides secure grip without aggressive aggressive abrasion. Feels like traditional guncraft. Hidden beneath: subtle tactile feedback nodes from BCI interface (detectable only to augmented users).",
+    "distinctive_features": [
+      "Hand-fitted bolt with polished locking lugs",
+      "3-round internal magazine (no box protrusion)",
+      "Concealed BCI firing computer beneath stock checkering — visible only as faint geometric seams",
+      "Engraved owner name on receiver (permanent registration marker)",
+      "Muzzle brake designed for subsonic round signature management",
+      "Scope rail mounted on receiver (typically equipped with variable optics)",
+      "Heavy, precisely-machined action with minimal rattle",
+      "Brass cartridge elevator and ejector port with minimalist design",
+      "Unique per-rifle serial number alongside owner's name"
+    ],
+    "manufacturer_markings": "OSSUARY ARMS engraved in serif font on left side of receiver. Maker's mark (stylized memento mori skull within circle) stamped above trigger guard. Individual operator's registered name engraved in italic script on right side of receiver — this marking is permanent and unique per rifle.",
+    "condition_typical": "Paradoxically both pristine and weathered. The walnut and steel show meticulous maintenance and light field wear — minor handling marks, subtle salt-corrosion patina on exposed steel (indicating field deployment), and microscopic dust in checkering. Operators maintain these weapons obsessively; they carry history but no abuse."
+  },
+  "image_prompt": "Product photography: Ossuary Arms Memento Mori OA-3 Wake sniper rifle lying diagonally on matte charcoal surface. Dramatic side-lighting from left, creating deep shadows across blued steel barrel and warm honey highlights on walnut stock. Close-up detail of hand-checkered grip visible in foreground showing diamond cross-pattern texture. Brass scope mounts gleaming. Background completely black. Shallow depth of field with sharp focus on receiver engraving showing owner name. Minimal aesthetic: weapon as heirloom craft object. Cyberpunk minimalism — technology hidden beneath tradition. Atmospheric, moody, reverent. --ar 3:2 --v 6"
 }

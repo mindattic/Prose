@@ -252,5 +252,12 @@
     "posture_movement": "Moves with economic precision, no wasted gesture. Walks through rooms as though following invisible lines. Sits perfectly upright, hands often folded or positioned for note-taking. Does not fidget. Breathing is controlled and measured. When listening, her stillness becomes almost unsettling — she appears to be downloading rather than conversing.",
     "clothing_style": "Plain charcoal suits in expensive, understated fabrics that hang with precision. Never wrinkled, suggesting either obsessive maintenance or regular dry-cleaning access. White or pale grey undershirts, minimal jewelry (small stainless steel watch, no rings). Closed-toe boots in matte black leather, polished. Overall presentation: Tier 1-2 professional restraint, deliberately stripped of personality. No corpo logos or status symbols. Clothing is armor presented as uniform."
   },
-  "image_prompt": "portrait of a 44-year-old Black woman with West African and Balkan heritage, lean muscular build, close-cropped natural dark hair with silver at temples, striking cosmetic augmentation eyes with concentric hexagon irises in grey and amber that catch light unnaturally, deep ochre skin tone, defined jawline, faint scarring on right jaw and left forearm. dressed in precisely tailored charcoal suit jacket and pale grey shirt, no jewelry except steel watch, seated upright in sterile administrative office interior with filing cabinets and data terminals, cool fluorescent overhead lighting casting sharp shadows, professional neutral expression suggesting restrained intensity, cyberpunk noir detective aesthetic, hyper-realistic, photorealistic --ar 2:3 --v 6"
+  "image_prompt": "portrait of a 44-year-old Black woman with West African and Balkan heritage, lean muscular build, close-cropped natural dark hair with silver at temples, striking cosmetic augmentation eyes with concentric hexagon irises in grey and amber that catch light unnaturally, deep ochre skin tone, defined jawline, faint scarring on right jaw and left forearm. dressed in precisely tailored charcoal suit jacket and pale grey shirt, no jewelry except steel watch, seated upright in sterile administrative office interior with filing cabinets and data terminals, cool fluorescent overhead lighting casting sharp shadows, professional neutral expression suggesting restrained intensity, cyberpunk noir detective aesthetic, hyper-realistic, photorealistic --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 52.8,
+    "Eastern European": 24.0,
+    "South Asian": 11.0,
+    "Southeast Asian": 6.6,
+    "East Asian": 5.6
+  }
 }

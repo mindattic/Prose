@@ -54,5 +54,24 @@
     "Carrion Defense Works",
     "Kang-Petrov Arms KPA-15 'Diaspora'",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A rigid, menacing neck-worn restraint with a futuristic industrial aesthetic. The collar is composed of segmented panels that arc around the wearer's neck, meeting at a reinforced locking mechanism at the throat. The design is deliberately clinical and punitive—no softness, no compromise. It has the appearance of something that was engineered to control rather than comfort.",
+    "dimensions": "Approximately 35-40 cm circumference (adjustable), 5-7 cm height at front, 3-4 cm at back. Fits snugly against the neck and lower jaw.",
+    "weight_description": "0.3 kg. Noticeable but not crushing—handheld weight on the neck, distributed across shoulder and collarbone contact points. Heavy enough to be psychologically present.",
+    "primary_material": "Hardened polymer composite with embedded copper-weave mesh for EM field generation. Reinforced steel locking clasp and biometric sensor hub.",
+    "finish": "Matte gunmetal gray with brushed industrial texture. The EM mesh creates subtle linear patterns visible under direct light. Locking mechanism has a polished chrome finish that contrasts sharply with the dull body.",
+    "color_scheme": "Gunmetal gray primary, chrome silver locking hardware, black biometric sensor strip running horizontally across the front throat section. Accent hints of cold blue glow from the EM field indicator lights when active.",
+    "interface_elements": "Biometric sensor pad (fingerprint/retinal) embedded in the front locking mechanism. Small LED status indicators (green/red) positioned above the sensor. Micro-USB charging port concealed under a rubber flap on the back right side. Haptic feedback zone where tamper detection triggers warnings.",
+    "distinctive_features": [
+      "Segmented articulating design—individual panels allow slight flex without compromising field integrity",
+      "The locking mechanism is a prominent reinforced clasp with a glowing biometric sensor that's intimidatingly visible",
+      "Fine copper mesh visible through semi-transparent sections, suggesting the neural disruption technology beneath",
+      "Tamper detection wires running along interior edges, visible through slight gaps",
+      "A faint blue-white shimmer in the air immediately surrounding the collar when active—visible EM field distortion"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS logo stamped in small chrome lettering on the right side of the locking mechanism. Regulatory certification marks (Tier 3+ clearance required) laser-etched on the interior back. Serial number engraved on the left side panel. Small warning label with pictogram showing a neural interface being disrupted.",
+    "condition_typical": "When inactive: sterile, clinical appearance. When active: subtle blue-white corona visible around the device edges, micro-vibration barely perceptible to wearer but visible at close range. After extended wear: condensation sometimes forms on the interior polymer from body heat and the EM field generation."
+  },
+  "image_prompt": "Product photography of the Carrion Defense Works Suppression Collar SC-4, displayed on a black machined aluminum neck form, angled slightly to show the locking mechanism and biometric sensor. Dramatic overhead lighting with blue-tinted accent light creating a faint electromagnetic shimmer around the collar. Industrial workbench background with circuit board textures and tool shadows. The collar glows with cold clinical blue-white light indicating active suppression field. Cyberpunk aesthetic, high contrast, moody atmosphere suggesting surveillance and control. Close-up detail shots of the reinforced locking clasp and copper-weave mesh visible in bokeh. --ar 3:2 --v 6"
 }

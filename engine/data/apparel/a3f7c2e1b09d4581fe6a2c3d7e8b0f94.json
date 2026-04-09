@@ -46,5 +46,27 @@
     "The Gutter Prophets",
     "The Shelf",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deconstructed, hand-assembled thermal layer that wraps the torso in irregular patchwork. The silhouette is slightly boxy and organic—no two seams align perfectly. It reads as both protective gear and survival artifact, worn by those who build their own insulation from salvage.",
+    "fit": "Loose, wrap-style fit intended to layer under heavier garments. Sits comfortably over ribs and shoulders without restriction. Designed for maximum heat retention and layering versatility. Can be cinched or left loose depending on wear.",
+    "primary_material": "Reclaimed synthetic fleece exterior, salvaged insulation batting core, mixed recycled composites. Inner surface brushed smooth from repeated hand-washing in gutter-filtered water.",
+    "texture": "Heavily quilted and uneven—outer layer is slightly fuzzy from age; inner brushed surface is soft but carries faint chemical residue. Seams are visibly thick (double or triple-stitched where original material was fragile). Transit seat foam and mylar patches create tactile variation. Overall impression: handmade, well-worn, repaired.",
+    "color_scheme": "Muted palette of grey, rust-brown, and faded olive-green. Patches introduce occasional bright spots of medical blanket mylar (silver-white) and darker cargo netting. No uniformity—colors fade unevenly where batted layers show wear.",
+    "closures": "None. Designed as a wrap-on base layer; worn open or cinched with personal cord/strapping.",
+    "distinctive_features": [
+      "Irregular patchwork construction—no two seams align",
+      "Triple-reinforced seams at stress points",
+      "Embedded transit seat foam for extra insulation in high-contact areas",
+      "Mylar backing patches for wind resistance and moisture reflection",
+      "Shredded cargo netting visible between outer and inner layers",
+      "Hand-stitched throughout with visible, uneven thread lines",
+      "Brushed inner surface from repeated washing",
+      "Persistent faint chemical smell (damp insulation, old foam, recycled materials)"
+    ],
+    "tier_indicator": "Tier 5 / sub-grade salvage wear. Marks the wearer as ungoverned or economically invisible—someone who sources their own survival gear from waste streams.",
+    "cultural_context": "Shelf community craft. Signals self-sufficiency, material scarcity, and life in the ungoverned zones. Worn by street survivors, salvage workers, and those outside corpo supply chains. The hand-made quality suggests both ingenuity and desperation—this is what you wear when corpo thermal wear is beyond reach.",
+    "condition_typical": "Perpetually broken-in and weathered. Seams show strain; patches are visible and functional rather than aesthetic. The smell of chemical damp, old insulation, and gutter water never fully leaves. Wear patterns show highest abrasion at shoulders, elbows, and torso where it's layered under heavier gear."
+  },
+  "image_prompt": "Close-up fashion shot of a Patchline Shelf Thermal Inner Wrap displayed on a muscular, weathered cyberpunk mannequin or model, torso exposed. The wrap is layered with irregular grey, rust-brown, and olive-green panels, with visible double-stitched seams and embedded patches of mylar and cargo netting. Dark moody lighting from above, casting sharp shadows on the textile. Gritty urban backdrop—corroded metal wall, dim warehouse or ungoverned settlement interior. Shallow depth of field highlighting seam detail and material texture. Slight warm color grade suggesting age and chemical residue. Intimate, tactile framing emphasizing handmade quality. --ar 2:3 --v 6"
 }

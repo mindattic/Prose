@@ -51,5 +51,24 @@
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
     "Ringo RT-4 'Oxcart'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek partial exoskeleton resembling articulated athletic support gear rather than heavy combat armor. The design prioritizes concealment with angular carbon-composite braces that hug the legs and spine, connected by a minimalist hip frame. The overall silhouette is deliberately low-profile—more compression suit than mechanical rig.",
+    "dimensions": "Leg braces extend from ankle to mid-thigh (~60 cm); spinal strut runs from sacrum to mid-back (~40 cm); hip frame spans ~25 cm across the pelvis. Total footprint when worn is human-scale, intentionally compact.",
+    "weight_description": "4.5 kg total—handheld if disassembled, but worn as a distributed load across the body. Balanced enough that the wearer barely registers it after calibration.",
+    "primary_material": "Carbon-fiber composite chassis with reinforced titanium alloy at articulation joints. Synthetic muscle-weave actuators in matte charcoal gray.",
+    "finish": "Matte non-reflective composite with subtle brushed titanium accents at hinges. Designed to avoid chrome or glossy surfaces that would catch light during covert movement.",
+    "color_scheme": "Gunmetal gray primary with darker charcoal carbon-weave panels. Accent struts in brushed steel. Minimalist aesthetic—no unnecessary visual noise.",
+    "interface_elements": "Waist-mounted battery unit (fist-sized, recessed into a hip pocket) with a small tactile interface panel. Optional neural-link port at the base of the spinal strut (recessed, barely visible). Manual override buttons disguised as equipment snaps along the leg braces. Barely-perceptible LED status indicators (blue idle, amber active, red overload) integrated into the hip frame.",
+    "distinctive_features": [
+      "Articulated knee joints with visible mechanical linkages—clean, minimal design",
+      "Spinal strut that follows the body's natural curve rather than rigid framing",
+      "Hip frame constructed as a single carbon-weave piece that wraps around the pelvis",
+      "Battery unit shaped like a sleek modular component, designed to clip/unclip quickly",
+      "Ankle braces with subtle grip pads on the soles—visible only from underneath"
+    ],
+    "manufacturer_markings": "Small Murmuration Systems logo (stylized murmuration of birds forming a circuit symbol) embossed on the hip frame. Model designation 'CEL-3' stamped on battery unit. Faint regulatory stamps (GLMZ compliance, Tier 3+ certification) on the inner spinal strut.",
+    "condition_typical": "In use, barely visible under cargo pants or loose athletic wear. At rest on a workbench, the exoskeleton appears almost sculptural—a high-tech orthotic rather than armor. Slight shimmer from carbon-weave under workshop lighting. Battery unit glows faintly with ambient power indicator."
+  },
+  "image_prompt": "Product photography of a Murmuration Systems CEL-3 exoskeleton laid out on a dark metal workbench. The partial exoskeleton is displayed in three-quarter view, with leg braces splayed slightly to show articulation. Spinal strut curves naturally behind. Waist-mounted battery unit positioned separately, showing connector ports. Dramatic side-lighting casts sharp shadows across the carbon-weave texture, emphasizing the matte finish and titanium joints. Background is blurred industrial workshop—tools, cable trays, neural-link diagnostic equipment. Small holographic label showing specs hovers above the hip frame. Cyberpunk industrial aesthetic, cool blue and amber lighting. --ar 3:2 --v 6"
 }

@@ -60,5 +60,40 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Cezar Watanabe-Gyasi",
+    "GLMZ",
+    "Lacuna Genomics",
+    "Nenad Vargas-Baffour",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "The Resonance Communion",
+    "Vantablack-CNX",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular handgun with an oversized muzzle assembly. The barrel is wider than traditional firearms, flaring slightly at the emitter tip to accommodate the projection cone. The overall silhouette is aggressive and asymmetrical—stocky grip paired with a bulbous, almost organic-looking emitter head. Looks less like a ballistic weapon and more like a specialized medical or scientific instrument repurposed for violence.",
+    "dimensions": "340mm barrel length, 280mm overall length, 65mm grip width, 110mm emitter head diameter. Compact enough to holster, but the flared muzzle prevents seamless concealment.",
+    "weight_description": "Deceptively light at 1.4 kg—feels hollow in the hand despite its solid construction. Weight sits forward in the barrel assembly, creating a slightly tip-heavy balance that requires a firm grip. Feels engineered rather than substantial.",
+    "primary_material": "Carbon-composite frame with bioelectric-shielded steel components around the capacitor assembly. The emitter tip is layered titanium-alloy mesh designed to dissipate residual electromagnetic charge.",
+    "finish": "Matte gunmetal gray on the frame with a brushed steel emitter head. Wear patterns expose raw polymer underneath in high-friction areas. Faint iridescent rainbow streaking across the barrel—residual electromagnetic scarring from repeated discharge cycles.",
+    "color_scheme": "Gunmetal gray primary, brushed steel accents, with thin neon cyan trim along the capacitor window and trigger guard. The ZHENG-DAO logo appears in cyan on the grip.",
+    "grip_texture": "Textured polymer with microscopic grip-enhancing ridges. Feels grippy even in gloved hands. The trigger guard is slightly overbuilt—designed for use with reinforced tactical gloves.",
+    "distinctive_features": [
+      "Flared emitter tip with visible mesh venting—appears to bloom outward like a flower or jellyfish bell",
+      "Triangular capacitor window along the left side showing the zinc-ceramic cell within; faintly luminescent blue when charged",
+      "Minimal iron sights—targeting relies on printed reticle on the emitter face",
+      "Thin cyan LED indicator strip beneath the capacitor window (active/charge status)",
+      "Venting ports along the barrel to dissipate electromagnetic bleed",
+      "Unusual serrated edges around the muzzle lip—not for physical damage but for electromagnetic field shaping",
+      "Grip safety with recessed activation—requires deliberate squeeze"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC stamped in raised characters on the left side of the frame, just above the grip. Serial number laser-etched on the grip in cyan. Regulatory warning text (repeated in Mandarin, English, and Korean) stamped on the right side: 'NON-LETHAL COMPLIANCE TOOL — RESTRICTED USE'.",
+    "condition_typical": "Field examples show heavy use. The muzzle tip bears micro-fractures from repeated electromagnetic discharge. The capacitor window often shows condensation or residue from overheating. Black carbon scoring around the vents. Well-maintained examples still look sinister and purposeful—abuse examples look dangerous to the operator."
+  },
+  "image_prompt": "Product photograph of the Cortical Bleed Emitter CBE-4 'Lacuna' cyber weapon, handheld in a black tactical glove against a dark brushed steel surface. Three-quarter angle view emphasizing the flared, menacing emitter tip with visible mesh venting. Harsh blue-white side lighting revealing the carbon-composite grain and iridescent electromagnetic scarring. The capacitor window glows faint cyan from within, contrasting against matte gunmetal gray frame. Neon cyan trim along the trigger guard and logo catch the light. Close-focus on the grip texture and serrated muzzle edge. Cyberpunk product shot aesthetic—cold, surgical, clinical, vaguely biological. High contrast. --ar 3:2 --v 6"
 }

@@ -47,5 +47,26 @@
     "GLMZ",
     "Oxidative Plasma Breath Lance OPBL-1 'Vestment'",
     "Volkov-Saito Precision Custom Shop VSCS-1 'Masterwork'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A formal, floor-length robe with an air of institutional gravitas. Full, flowing silhouette that commands space. Wide sleeves that drape past the wrists. Center-front closure creates a dignified vertical line. The fabric catches light subtly across its damask weave, creating depth and movement even when still.",
+    "fit": "Generous, relaxed cut through the torso and sleeves—designed to layer over formal wear without constraint. High armholes and voluminous sleeve heads convey authority. Hem skims the floor or pools slightly, depending on height and intention.",
+    "primary_material": "Heavy damask-weave synthetic—a luxurious, structured fabric that holds its shape and resists wear. Likely a high-thread-count polymer blend with a slight luster that distinguishes it from cheaper synthetics.",
+    "texture": "Smooth with subtle raised patterning from the damask weave. The fabric has substantial weight and body; it drapes with deliberate elegance rather than clinging. Surface catches overhead light with a soft sheen.",
+    "color_scheme": "Civic version: Deep burgundy with navy accents (likely on cuffs, collar, or embroidered borders). The combination evokes both gravitas and institutional tradition. Custom versions vary by corporation—metallics, neons, matte finishes depending on brand identity.",
+    "closures": "Series of fabric-covered buttons down the center front—subtle, refined, and time-consuming to fasten. Conveys care and deliberation rather than utility.",
+    "distinctive_features": [
+      "Fabric-covered buttons throughout center front",
+      "Wide, voluminous sleeves with fitted cuffs",
+      "Embroidered iconographic marks (civic version features minimal institution branding; custom versions heavily emblazoned)",
+      "Visible damask weave pattern across entire surface",
+      "Reinforced hem and seams indicating exceptional construction quality",
+      "High neckline or subtle collar (depends on commission)",
+      "Deep, hidden interior pockets for ceremonial documents or personal items"
+    ],
+    "tier_indicator": "Tier 1-2 luxury. Custom commissions are executive-level status symbols. Civic version accessible to Tier 3+ but worn primarily by institutional personnel—ownership without affiliation reads as aspiration or irony.",
+    "cultural_context": "Corporate ritual facilitator, civil servant, cultural authority figure, or someone claiming institutional legitimacy. Wearing one signals participation in formal, structured power hierarchies. In sub-grade contexts, ironically worn as critique or costume.",
+    "condition_typical": "Exceptionally well-maintained when in active use. Civic versions often show subtle wear at cuffs and hem from repeated ceremonial use, but the heavy fabric resists visible damage. Custom versions are typically pristine or rotated into storage between uses. The garment's quality means even worn examples appear dignified rather than shabby."
+  },
+  "image_prompt": "A formal ceremonial robe in deep burgundy and navy damask weave displayed on a dark mannequin, shot from three-quarter angle to reveal the full-length silhouette and draping sleeves. The robe is fully buttoned, showing the center-front closure line. Moody, cool-toned studio lighting emphasizes the subtle sheen of the damask pattern and the weight of the fabric. Dark concrete or brushed steel backdrop suggests a corporate atrium or institutional hall. A single accent light catches the embroidered institutional mark on the chest. The mannequin's posture is upright and formal. No model visible, focus entirely on the garment's construction and presence. Cyberpunk GLMZ aesthetic—2226 formal corporate wear. --ar 2:3 --v 6"
 }

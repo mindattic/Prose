@@ -39,5 +39,35 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Brecken Yılmaz-Osei",
+    "Cezar Watanabe-Gyasi",
+    "Narrowcast",
+    "Nika Svensson-Kone",
+    "TESSERA PG-2 'Signature'",
+    "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular mortar system with a distinctly utilitarian brutalism—short barrel angled upward at roughly 45 degrees, mounted on a rigid tripod base with splayed legs. The silhouette reads 'portable siege weapon' rather than elegant; all function, minimal ornamentation. Heavy industrial aesthetic with sharp edges and exposed mechanical complexity.",
+    "dimensions": "Barrel length: 38 cm. Overall height (mounted): 62 cm. Tripod spread: 48 cm × 52 cm. System footprint approximately 50 cm × 55 cm when deployed.",
+    "weight_description": "Hefty and dense—12 kg total feels substantial but manageable for a trained operator. The weight is low-slung in the tripod base, creating stable balance. Front-heavy when shouldering the barrel section; designed for braced firing positions, not hip-shooting.",
+    "primary_material": "Reinforced carbon-composite barrel sleeve over steel core. Tripod frame is welded high-tensile steel with composite leg bracing. Autoloader housing: titanium-alloy with integrated circuit panels.",
+    "finish": "Matte industrial grey with localized burnished steel wear at mechanical joints. Barrel exhibits light oxidation and micro-scoring from firing residue—combat-functional, not polished. Polymer components show slight heat discoloration near the breech.",
+    "color_scheme": "Battleship grey primary, with accent steel and darker carbon-black polymer sections. Pale yellow safety markers on tripod leg locks and autoloader access panel. Minimal branding—stainless steel data plate mounted on autoloader housing.",
+    "grip_texture": "Rubberized overmold on barrel traverse handles—tactile, engineered for gloved operation. Tripod leg locks feature knurled steel knobs. Autoloader magazine interface is smooth anodized aluminum with subtle grip ridges.",
+    "distinctive_features": [
+      "Digital readout display mounted on right side of autoloader housing—small LCD showing GPS coordinates, selected warhead type, and round count",
+      "Heat dissipation vents cut into barrel sleeve in staggered patterns",
+      "Visible autoloader mechanism with 4-round cartridge staging visible through inspection ports",
+      "GPS antenna array mounted as small rake of black composite spines atop the breech assembly",
+      "Calibration screw points marked with paint witness marks indicating previous zeroing",
+      "Exhaust port with directional blast deflector angled downward to minimize operator backblast exposure",
+      "Cable routing for inertial guidance system visible along tripod spine to stabilizer pods"
+    ],
+    "manufacturer_markings": "ZHENG-DAO HEAVY INDUSTRIES stamped in sans-serif block letters on titanium nameplate mounted to autoloader housing, upper left. Serial number etched below in smaller font. Ballistic coefficient and caliber specification stenciled in faded white on barrel in Mandarin and English.",
+    "condition_typical": "Field-worn but meticulously maintained. No rust, mechanisms responsive and oiled. Polymer shows scuff marks and minor blast char near vents. Paint on tripod base chipped in high-contact areas. Display screen is clean—suggests active operator who understands their equipment. Autoloader cartridge ports show residual powder residue."
+  },
+  "image_prompt": "Product photography of the Zheng-Dao SM-8 'Tremor' siege mortar system mounted on tripod, photographed from low 3/4 angle against matte black background. Dramatic side-lighting from upper left creates sharp shadows across barrel and tripod geometry. Cyberpunk aesthetic: accent lighting (pale blue LED glow) on the digital readout display and GPS antenna array. Gloved operator hand in frame adjusting barrel traverse, showing rugged tactical glove texture. Emphasize cold industrial materiality—steel, carbon composite, anodized aluminum. Slight heat distortion shimmer near exhaust port. Shallow depth of field with focus on breech mechanism and autoloader housing details. Cinematic, cold-toned color grade. --ar 3:2 --v 6"
 }

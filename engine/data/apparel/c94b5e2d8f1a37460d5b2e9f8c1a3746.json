@@ -46,5 +46,28 @@
     "Slagworks Industrial",
     "The Seam",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian hard-shell jacket with a clean, no-nonsense silhouette. Slightly boxy through the shoulders with a modest waist definition. The hood sits tall and structured, designed to accommodate augmentation ports or neural interface crowns. Overall impression: functional outdoor gear worn by someone who treats weather as an operational obstacle, not a fashion statement.",
+    "fit": "Relaxed through the torso with tapered sleeves. Generous enough to layer over thermal base layers or thin synth-wool. The cut allows freedom of movement for cyclists and field workers without excess fabric.",
+    "primary_material": "Three-layer laminate membrane composite with a durable nylon face. Water-shedding outer layer backed by moisture-wicking mid-layer and soft fleece interior.",
+    "texture": "Smooth outer shell with subtle micro-grid pattern for grip. Taped seams are visibly reinforced with thin white or black thread. Inner fleece is soft and brushed. Hood interior is slightly fuzzy for comfort against skin.",
+    "color_scheme": "Muted earth tones dominate: charcoal gray, slate, rust-brown, or warm taupe. Accent colors in safety yellow-orange or neon cyan appear on hood drawcords, zipper pulls, and inner collar tags. Some models feature reflective piping along shoulders and back yoke.",
+    "closures": "Heavy-duty YKK or Orvex-branded plastic coil zipper down the front. One-handed hood adjustment via toggle cord with magnetic cinch points. Velcro cuff closures with reinforced stitching. Chest pocket has friction-fit closure to compress jacket into itself.",
+    "distinctive_features": [
+      "Helmet-compatible hood with extended rear coverage and internal stiffeners",
+      "Taped seams throughout with visible thread contrast",
+      "One-handed hood adjustment system with magnetic stops",
+      "Chest pocket large enough to contain entire folded jacket",
+      "Reinforced shoulder panels for pack strap wear",
+      "Interior zippered media pocket (Tier 3 practicality feature)",
+      "Pit zips for ventilation on the rare warm rain day",
+      "Faint Orvex branding on left chest (understated logo, no flex)",
+      "Grommet drainage holes in hem"
+    ],
+    "tier_indicator": "Tier 3 functional. This is working-class outdoor gear. Not aspirational. Not showing off. Honest engineering for people who need their clothes to work.",
+    "cultural_context": "Courier cyclists, construction supervisors, field technicians, weather-station operators, and lake-district commuters. Wearing this signals: 'I spend significant time outdoors in GLMZ weather and I've made peace with it.' No irony. No aesthetic pretension. Pure problem-solving.",
+    "condition_typical": "Broken-in but well-maintained. Seams may show wear but remain functional. The jacket develops subtle creases at movement joints. Reflective piping may fade to dull silver after heavy use. The hood drawcords fray slightly at the ends. Interior fleece pills in high-contact areas. The overall look: trusted tool, not discarded."
+  },
+  "image_prompt": "Orvex Thermal Shell hard-shell jacket on a weathered cyberpunk model with visible augmentation ports on the neck and shoulder, standing in heavy slanting rain against a Great Lakes industrial backdrop of concrete windbreak towers and steel loading docks. Overhead light catching the taped seams and reflective piping. Moody, desaturated color palette with dim cyan neon reflecting on wet pavement. Close detail shot of the helmet-compatible hood and one-handed adjustment toggle. Garment shows honest wear but remains functional. Cinematic, gritty, utilitarian aesthetic. No logo glamour. --ar 2:3 --v 6"
 }

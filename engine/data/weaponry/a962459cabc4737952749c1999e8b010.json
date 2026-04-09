@@ -44,5 +44,36 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "GLMZ",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Lazarus EC-4 'Companion'",
+    "MERIDIAN",
+    "Nika Svensson-Kone",
+    "The Bazaar"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular PDW with a distinctly modern aesthetic—sharp edges and aggressive lines suggest street-ready pragmatism over military grandeur. The profile is lean and purposeful, designed to sit flat against the body when holstered. The overall impression is 'efficient tool' rather than 'statement weapon.'",
+    "dimensions": "Length: 38cm (stock collapsed); Barrel: 12cm; Width at grip: 4.2cm; Height: 18cm (including mounted sight)",
+    "weight_description": "Balanced and responsive—1.4kg feels almost negligible when held, allowing for quick target acquisition and minimal fatigue during extended carry. The weight distribution favors the grip, creating natural pivot points for street-precision shooting.",
+    "primary_material": "Reinforced polymer composite frame with steel barrel assembly and internal action; grip module is machined aluminum for biometric sensor integration",
+    "finish": "Matte polymer body with a slight texture to reduce glare; steel components feature a dark gunmetal DLC (diamond-like carbon) coating that resists corrosion in urban environments",
+    "color_scheme": "Charcoal gray polymer with gunmetal accents; BCI module connector highlighted in muted cyan (Meridian's corporate accent color); slight oxidized patina on steel visible under angled light",
+    "grip_texture": "Rubberized polymer with micro-ridged patterns for wet conditions; the biometric sensor zone feels slightly raised and smoother than the surrounding grip—deliberately distinct so the operator's thumb naturally seats on the unlock point",
+    "distinctive_features": [
+      "Integrated biometric sensor strip running vertically down the grip (faintly illuminates amber when unpowered, cyan when active)",
+      "Dual-mode sight rail with both micro red-dot mount and manual iron sight backup",
+      "Oversized charging handle with textured grooves for gloved operation",
+      "Smart-holster communication port (recessed USB-C equivalent marked with Φ symbol)",
+      "Ambidextrous mag release with aggressive ribs",
+      "Vented slide top to manage heat signature",
+      "Serialized manufacturer plate recessed into left side of frame",
+      "Wear pattern near trigger guard suggesting field use"
+    ],
+    "manufacturer_markings": "Meridian Munitions logo stamped into left receiver—stylized 'M' with meridian line through center; 'MSP-7 ALLEYCAT' printed in small caps on right side of barrel shroud; manufacturing date code laser-etched above mag well; serial number on raised plate below rear sight",
+    "condition_typical": "Well-maintained but not pristine—this is a working tool. Light scuffing on polymer, minor salt corrosion on exposed steel, grip shows subtle wear at the biometric sensor point from thousands of registered touches. No battle damage, but evidence of professional daily carry."
+  },
+  "image_prompt": "Product photography of the Meridian Munitions MSP-7 Alleycat PDW on a dark concrete surface, weapon angled 45 degrees. One gloved hand (tactical polymer glove, fingers visible) grips the weapon showing the biometric sensor point. Dramatic side-lighting (cool blue-white from left, warm practical light from right) highlights the matte charcoal polymer and gunmetal DLC coating. Shallow depth of field with razor-sharp focus on grip and biometric module. Cyberpunk aesthetic with subtle cyan accent glow on the BCI connector visible in ambient darkness. Dark background with subtle texture suggesting urban sprawl. High contrast, professional military equipment catalog style. --ar 3:2 --v 6"
 }

@@ -41,5 +41,25 @@
     "The Shelf",
     "VitaCore ClearCourse Addiction Suppressor",
     "Zurab Ivanov-Appiah"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A structured, high-shouldered blazer with an almost liquid quality to its surface. The fabric seems to shift between deep teal and gray depending on light angle, creating an unsettling sense of motion across the wearer's torso. Gender-neutral tailoring emphasizes clean lines and architectural precision. The silhouette is commanding without being aggressive — designed to convey trustworthiness and technical competence in equal measure.",
+    "fit": "Tailored but not slim; allows comfortable movement through the shoulders and torso. High back vent extends nearly to waist, creating dramatic negative space when the wearer moves. Slightly longer than standard blazers to accommodate bioluminescent skin modifications that may extend below the collarbone.",
+    "primary_material": "HELIXWEAVE — proprietary synthetic blend mimicking silk hand-feel with embedded bioluminescent thread at approximately 2% fiber density. The threads are dormant under standard lighting but activate under UV or near-field scanner stimulation.",
+    "texture": "Smooth and cool to touch, almost liquid-like. Surface has micro-quilted structure barely visible to the eye, providing subtle dimensionality. Lapels carry an imperceptible embossed helix pattern.",
+    "color_scheme": "Three colorways: Void Teal (primary — deep cyan with shadow-gray undertones), Pale Marrow (cream-white with faint phosphorescence), Phenotype Gray (cool neutral with metallic silver traces). All three carry subtle iridescent shift.",
+    "closures": "Single-button magnetic snap at chest, positioned slightly higher than traditional blazer closure. Additional friction-fit magnetic anchor points along interior for securing embedded tech or preventing gape.",
+    "distinctive_features": [
+      "High back vent extending to waist — accommodates cosmetic geneware and dorsal modifications",
+      "Microscopic helix embossed in lapel weave, readable only by near-field scanners",
+      "Bioluminescent thread integration that becomes visible under UV or scanner activation",
+      "Interior tracking node embedded in shoulder seam — invisible but detectable",
+      "Reinforced neckline to support bioluminescent skin modification collar points",
+      "Subtle TESSERA house marking in thread pattern only visible under magnification"
+    ],
+    "tier_indicator": "Tier 3-4 corporate uniform — signals institutional access and biotech sector authority without flaunting wealth",
+    "cultural_context": "TESSERA client relations staff, biotech consultants, genetic modification industry insiders. Wearing this blazer grants psychological authority in medical and regulatory settings. Counterfeits are rare but exist among sub-grade identity entrepreneurs. Former employees keeping theirs signal 'I used to have access to TESSERA's pipeline' — still valuable in freelance consulting circles.",
+    "condition_typical": "Pristine when issued; worn examples show subtle creasing at elbows and back vent. High-use copies may show fading of bioluminescent thread or micro-cracking in the magnetic snap housing. Collector's condition blazers (senior staff departures) are often preserved immaculately."
+  },
+  "image_prompt": "Professional fashion photograph of a sleek, gender-neutral model wearing a TESSERA Void Teal blazer, photographed under cool office lighting that catches the fabric's iridescent shift. The model's pose is confident and still — one hand at side, shoulders back. The high back vent is visible, creating dramatic negative space. The blazer's subtle bioluminescent threads catch faint blue-green highlights. Background: a blurred GLMZ biotech corridor with frosted glass partitions and soft corporate lighting. The fabric has an almost liquid quality, shifting between teal and shadow-gray as the model's breathing creates micro-movements. Close detail shot of the lapel embossed helix pattern (barely visible but textured). Moody, professional, slightly unsettling — this is a uniform that watches as much as it informs. --ar 2:3 --v 6"
 }

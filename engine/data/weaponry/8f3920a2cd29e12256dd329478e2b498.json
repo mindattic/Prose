@@ -41,5 +41,38 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Carrion Defense Works",
+    "Dzemal Acholonu-Patagiri",
+    "GLMZ",
+    "Narrowcast",
+    "Nika Svensson-Kone",
+    "Ringo AX-12 'Harvester'",
+    "Ringo RM-4 'Thresher'",
+    "Slagworks Industrial"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist handheld projector resembling a cross between a construction tool and a military support cannon. Compact rectangular body with aggressive angular lines, tapering forward into a flared muzzle housing. Mounted atop a robust harness frame that connects to an external backpack module. Overall impression is industrial efficiency — form follows lethal function.",
+    "dimensions": "Weapon body: 62cm length × 14cm width × 18cm height. Barrel projection: 28cm. Muzzle aperture: 8cm diameter. Backpack hopper: 35cm × 25cm × 20cm",
+    "weight_description": "The handheld unit feels deceptively light (6.8kg) due to efficient polymer construction, but the fully-loaded backpack harness (12kg additional) creates substantial shoulder and back burden. Weight distributes through wide shoulder straps and hip brace.",
+    "primary_material": "Reinforced polymer composite frame with integrated steel reinforcement ribs. Electromagnetic accelerator housing: hardened steel. Hopper: layered carbon-composite with internal steel baffles for flechette regulation.",
+    "finish": "Matte gunmetal grey with brushed steel accents around the muzzle and capacitor coupling points. High-wear areas show bare composite where paint has been stripped by repeated use. Faint scorch marks around discharge aperture.",
+    "color_scheme": "Primary: industrial grey-black composite. Accents: brushed steel, copper-colored capacitor terminals. Warning striping: safety yellow-orange around power coupling and hopper feed mechanism.",
+    "grip_texture": "Wrapped in textured non-slip polymeric tape, worn smooth by gloved hands. Sharp angular edges along trigger guard and selector switches provide tactile feedback for fingering controls even in combat pressure suits.",
+    "distinctive_features": [
+      "Flared bell-shaped muzzle housing with visible electromagnetic coil rings",
+      "Three-axis spread-pattern adjustment dial mounted on left side",
+      "Integral cooling vents in rows along barrel housing",
+      "Bright amber LED charge indicator (pulses during cycling)",
+      "Cable connector assembly linking weapon to backpack: heavy industrial-grade coupling",
+      "Pressure-relief valve venting on rear of hopper with safety interlock",
+      "Tactical rail system along top for auxiliary optics (most operators omit — flechette spread eliminates precision aiming)",
+      "Impact scars and micro-fractures in composite from spent flechette ricochet"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS logo stamped in raised relief on left side of weapon body (3cm). Serial number etched into steel charging plate. Manufacturing date code (2221) visible on hopper assembly. Multilingual warning labels in English and Mandarin on backpack frame.",
+    "condition_typical": "Field-deployed units show heavy wear: composite dulled by handling, muzzle housing scorched, minor dents from transport impacts. Hopper mounting brackets show corrosion from indoor urban humidity. Most units display amateur maintenance marks and improvised grip tape repairs. Battle-scarred specimens show impact cratering from stray fire or ricochet."
+  },
+  "image_prompt": "Product photography of the Carrion Defense Works Harvester CDW-12 'Thresher' support weapon. Hero shot of weapon held by gloved hand from side-left angle, backpack harness visible but partially cropped. Weapon mounted on matte black industrial platform. Dramatic sidelight revealing texture of polymeric grip tape, cooling vents, and electromagnetic coil assembly at muzzle. Cold blue accent lighting on capacitor terminals and LED charge indicator (set to amber glow). Faint residual heat distortion ripples around barrel. Dark studio background with subtle depth. Cyberpunk industrial aesthetic, grimy weathered surfaces, worn military hardware. Shot as reconnaissance catalog image for GLMZ arms dealer. --ar 3:2 --v 6"
 }

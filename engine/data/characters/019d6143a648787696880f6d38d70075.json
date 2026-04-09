@@ -273,7 +273,7 @@
     }
   ],
   "belongings": {
-    "primary_weapon": "",
+    "primary_weapon": "Torii Security Group Katana TSK-1 'Silence'",
     "secondary_weapon": "",
     "armor": "",
     "vehicle": "",
@@ -403,5 +403,12 @@
     "Transit Mind",
     "Vantablack Media Parasocial Carrier Mask"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "genetic_ancestry": {
+    "East Asian": 38.0,
+    "Sub-Saharan African": 19.8,
+    "South Asian": 18.2,
+    "Hispanic/Latin American": 14.4,
+    "Central Asian": 9.6
+  }
 }

@@ -280,5 +280,13 @@
     "posture_movement": "He moves with the cautious precision of a man who has learned the exact dimensions of his own body in too-small spaces. His gait is economical — no wasted motion. He carries his weight forward slightly, as though perpetually leaning into the next task. When standing still, his weight shifts to his left leg; his prosthetic arm hangs at a slight angle that suggests habit rather than malfunction. In conversation, he is still — minimal gesturing, no fidgeting.",
     "clothing_style": "Tier 4 working-class, purely functional. Dark gray cargo trousers with reinforced knees and thigh pockets, oil-stained and patched at the seams. A faded Nakamatsu Heavy Tools t-shirt or similar branded work shirt, sleeves rolled to accommodate the prosthetic. A heavy canvas shop coat in charcoal, pockets weighted with tools and diagnostic leads. Work boots: Steelmark brand, black, heavily resoled. No jewelry. No visible adornments. Everything is worn through to comfort; nothing is chosen for appearance."
   },
-  "image_prompt": "A large Samoan-Dutch man in his mid-40s, standing in an industrial workshop filled with vehicle parts and diagnostic equipment, deep tan skin weathered from decades of work, short dark hair graying at the temples, wearing oil-stained work clothes and a heavy canvas shop coat. His right arm from the elbow down is a matte gray industrial prosthetic covered in visible welding seams and custom modifications, scarred hands and arms, calm dark eyes, weathered but unlined face. Fluorescent workshop lighting casting harsh shadows, grease on every surface, the setting is a basement garage near a Great Lakes harbor in 2226, moody and atmospheric, cinematic realism, --ar 2:3 --v 6"
+  "image_prompt": "A large Samoan-Dutch man in his mid-40s, standing in an industrial workshop filled with vehicle parts and diagnostic equipment, deep tan skin weathered from decades of work, short dark hair graying at the temples, wearing oil-stained work clothes and a heavy canvas shop coat. His right arm from the elbow down is a matte gray industrial prosthetic covered in visible welding seams and custom modifications, scarred hands and arms, calm dark eyes, weathered but unlined face. Fluorescent workshop lighting casting harsh shadows, grease on every surface, the setting is a basement garage near a Great Lakes harbor in 2226, moody and atmospheric, cinematic realism, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 33.2,
+    "Southeast Asian": 24.9,
+    "East Asian": 19.3,
+    "Hispanic/Latin American": 13.3,
+    "South Asian": 5.6,
+    "Eastern European": 3.7
+  }
 }

@@ -51,5 +51,27 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Circuit",
     "The Signal"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately understated silhouette designed for urban navigation and discretion. The structured midi coat dominates the composition—architectural, purposeful, worn by someone who moves through shadows. Layered beneath is a sleek compression top and tailored trousers. The overall effect is controlled, functional, neither flashy nor ragged. This is what competence looks like.",
+    "fit": "Precise and fitted without being form-hugging. The coat sits structured at the shoulders with a slight taper at the torso, then releases into a controlled A-line midi cut that hits mid-calf. Compression top follows the body closely for freedom of movement. Trousers are tailored straight-leg with a subtle rise, designed for both sitting and rapid motion. Ankle boots are close-fitting, engineered for silence.",
+    "primary_material": "Deep plum-black synthetic wool (coat exterior), charcoal viscose-analog (compression top), blended synthetic with ikat-patterned weave (trousers), reinforced rubber sole (boots). Internal signal-dampening mesh lining (coat) adds weight and proprietary function.",
+    "texture": "Coat exterior is smooth and dense, almost matte—light absorption rather than reflection. Compression top is fitted and slightly ribbed. Trousers feature a subtle woven texture from the ikat pattern, breaking visual monotony. Boots have a faint scuff-resistant finish on the rubber. Internal mesh creates a whisper-thin tactile layer.",
+    "color_scheme": "Deep plum-black as primary (coat, boots). Charcoal compression top. Trousers in dark base with ikat pattern in rust, indigo, and cream tones—a deliberate nod to non-corp textile heritage. Chrome-arm relief seams catch minimal light at the coat's sleeve transitions.",
+    "closures": "Magnetic snaps down the front of the coat (silent, no jingle, no catches). The mag-clasp holster at left hip operates on friction-fit + subtle locking pressure. Compression top has no closure. Trousers fasten with a reinforced mag-latch at the waist. Boots are pull-on with internal compression fit.",
+    "distinctive_features": [
+      "Internal flat-sewn pocket channels designed specifically for datasticks and flat tech",
+      "Concealed mag-clasp holster at left hip (sized for compact pistol or baton)",
+      "Chrome-arm relief seams at sleeve transitions—functional AND aesthetic",
+      "Hand-stitched signal-dampening mesh lining throughout coat",
+      "BCI-dead-zone strip sewn into collar band (blocks neural interface broadcast within ~0.5m radius)",
+      "Ikat-weave pattern on trousers (West African + Central Asian textile fusion—intentional cultural synthesis)",
+      "Heel-compressed rubber soles engineered for silent movement",
+      "No visible branding—intentionally anonymous"
+    ],
+    "tier_indicator": "Tier 3 at first glance (respectable, functional, corpo-adjacent). Tier 3-4 on detailed inspection due to hand-stitching and signal-tech integration. The unlicensed manufacture and street-label origin signal a person operating outside corporate supply chains—strategic middle ground between corporate legitimacy and sub-grade visibility.",
+    "cultural_context": "This is fixer armor. The wearer operates in legal gray zones—information brokers, private investigators, street-level networkers, people who need to move through both corporate and underground spaces without announcing themselves. The textile fusion (ikat) signals cosmopolitan awareness and deliberate cultural eclecticism. Wearing this says: 'I know how to move unnoticed. I have secrets. I am competent and calm.'",
+    "condition_typical": "Purchased broken-in or lightly worn. Fixers replace these before visible damage accumulates. The fabric resists creasing and shows wear slowly. Over time, minor scuffs appear on the boots, and the interior mesh develops a faint shine from contact. Never allowed to become shabby—degradation signals unreliability."
+  },
+  "image_prompt": "A figure in deep plum-black synthetic wool coat with structured midi silhouette stands in profile against a dimly lit GLMZ alleyway, rain-slicked concrete and neon signs bleeding soft blue-pink light in the background. The coat's internal signal-dampening mesh is just visible at the open collar, revealing a charcoal compression top beneath. Tailored straight-leg trousers with subtle rust and indigo ikat pattern visible at the thigh. Pull-on ankle boots with matte rubber soles catch minimal light. The pose is casual but alert—one hand near the concealed mag-clasp holster at the left hip. Moody, high-contrast lighting. Cyberpunk fixer aesthetic. Dark urban backdrop. Cool color temperature. --ar 2:3 --v 6"
 }

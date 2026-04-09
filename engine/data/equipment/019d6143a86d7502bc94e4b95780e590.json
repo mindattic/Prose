@@ -50,5 +50,23 @@
     "Idris Forsberg-Quaye",
     "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek credit-card-sized device with a mirror-black front face that serves as a holographic emitter. The surface appears perfectly flat until activated, at which point a faint shimmer indicates the projection field. The card stock itself has a subtle iridescence, catching light with hints of deep blue and silver. Despite its slim profile, the device feels substantial and precision-engineered.",
+    "dimensions": "Standard credit card format: 85.6 × 53.98 mm, approximately 2.8 mm thick",
+    "weight_description": "Pocketable — weighs virtually nothing (10 grams), easily carried in wallet, cardholder, or suit jacket",
+    "primary_material": "Aerospace-grade composite polymer with embedded holographic projection layer and NFC coil matrix",
+    "finish": "Matte black front surface with mirror-polished beveled edges; subtle brushed metal backing with Sterling-Nakamura branding",
+    "color_scheme": "Dominantly black and gunmetal gray with accent lines of electric blue along the top edge; holographic projections render in full color with cyan-to-purple gradients",
+    "interface_elements": "Single recessed activation button (top-right corner), minimal visible electronics; holographic display projects 5cm above surface showing name, title, credentials, and animated corporate logo; faint indicator LED (blue when active, amber when in pairing mode)",
+    "distinctive_features": [
+      "Holographic projection field creates floating 3D text and animated company branding",
+      "Micro-etched serial number on backing plate",
+      "Hairline groove around perimeter indicating modular construction",
+      "Soft glow emanating from internal projection chamber when activated"
+    ],
+    "manufacturer_markings": "Sterling-Nakamura corporate logo (stylized SN cipher) centered on backing; regulatory compliance stamps (GLMZ certification, QUANTA-encrypted); QR code for Diaspora profile link etched in corner",
+    "condition_typical": "Pristine corporate condition — rarely shows wear due to protective materials; in use, a faint blue aura surrounds the card during data exchange, and the holographic display flickers slightly during handshake protocols"
+  },
+  "image_prompt": "Product photography of a sleek black credit-card-sized holographic business card device, positioned on a high-tech white workbench. The card's top surface is angled toward the camera, with a holographic projection visible above it displaying glowing cyan and purple corporate branding and text. Dramatic backlighting casts a subtle glow around the device's edges. Sterling-Nakamura logo visible on the backing. Surrounding the card: minimalist workspace with soft neon accents (blue and purple), shallow depth of field focusing on the card itself. Cyberpunk aesthetic with clean, corporate design language. Professional product shot style with dramatic side-lighting and ambient reflection on the workbench surface. --ar 3:2 --v 6"
 }

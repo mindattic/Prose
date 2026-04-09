@@ -39,5 +39,26 @@
     "The Ledger",
     "The Shelf",
     "Warm Wire, Small Hand"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately mismatched boot with visible seams and material transitions, embodying salvage culture. Each boot is a patchwork of industrial components reassembled into wearable form. The silhouette is sturdy and utilitarian, with an asymmetrical character that reads as intentional rather than accidental. Worn by people who value functionality over fashion cohesion.",
+    "fit": "Snug through the ankle with moderate compression, relaxed through the shaft. The fit varies slightly boot-to-boot due to mixed sourcing, creating an individualized feel rather than factory precision. Designed for extended wear and industrial environments.",
+    "primary_material": "Composite salvage: reclaimed ballistic weave, treated leather panels, synthetic rubber soles from decommissioned industrial gear, reinforced polymer toe caps. Each boot contains parts from 2-4 different original manufacturers.",
+    "texture": "Heavily textured and visibly worn. Mixed weaves create tactile variation—smooth treated leather sections adjacent to rough ballistic panels, scuffed rubber compounds, stitching that's slightly irregular due to hand-assembly. The surface tells the story of its component parts' previous lives.",
+    "color_scheme": "Muted earth tones: charcoal grays, weathered blacks, gunmetal, with occasional rust-brown leather panels. No uniform coloration—each section retains its original dye, creating a natural camo-like effect. Accidental striping where different materials meet.",
+    "closures": "Heavy-duty lacing through reinforced eyelets, some eyelets salvaged from original boots and slightly misaligned. No zipper—pure lace-up utility. Metal speed-lace system optional on some units.",
+    "distinctive_features": [
+      "Hand-stamped 'M&S' maker's mark near the ankle in crude lettering",
+      "Visible seam lines where different upper panels are stitched together",
+      "Mismatched heel heights by up to 0.5cm due to mixed sole sourcing",
+      "Reinforced toe box with visible stitching or welding",
+      "Wear marks and scuffs pre-existing from original industrial use",
+      "Minor gaps or overlaps at panel junctions",
+      "Original manufacturer logos sometimes still visible on salvaged components"
+    ],
+    "tier_indicator": "Tier 4-5 working class / sub-grade. Signals resourcefulness and rejection of corporate homogeneity. Associated with Shelf dwellers, industrial workers, and those who can't afford new manufacture.",
+    "cultural_context": "Wearing Morrow & Sons is a declaration of anti-corpo ethos. These boots signal membership in salvage culture, practical survival mindset, and embrace of the 'broken aesthetic.' Populist among warehouse workers, dockside crews, and Shelf communities. A badge of pride in the ungoverned zones.",
+    "condition_typical": "Always appears slightly worn and weathered, even when new. The assembled nature means some boots have visible previous-use scuffs. Patina builds quickly through regular wear. Many owners add their own customizations—additional stitching, tape reinforcement, personal dye work."
+  },
+  "image_prompt": "Morrow & Sons salvage boot displayed on a weathered metal stand in a dimly lit industrial workspace. Close-up detail of the mismatched leather and ballistic panels, hand-stamped M&S marking visible near the ankle. Harsh overhead neon-blue light casting sharp shadows across the textured materials. Concrete floor background with subtle rust stains. A second boot blurred in background showing different panel configuration. Cinematic, gritty aesthetic emphasizing the patchwork construction and utilitarian purpose. Shot from 45-degree angle highlighting the composite nature of the upper. --ar 2:3 --v 6"
 }

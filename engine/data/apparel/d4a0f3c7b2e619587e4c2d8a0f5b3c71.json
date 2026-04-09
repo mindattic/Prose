@@ -55,5 +55,26 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Synaptrel",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian street hauler's silhouette—blocky and functional, layered for durability and weather. The overall impression is weathered independence: a person built for cargo runs and ungoverned zones, not corporate logistics. The faded jacket dominates, sitting loose over a compact frame, with visible hardware and patches telling a story of self-assembly and street collective pride.",
+    "fit": "Relaxed and purposeful—nothing tailored. The jacket hangs slightly oversized for layering and movement; cargo trousers are wide-legged with a reinforced seat and crotch gusset for climbing and crouching. Boots are sturdy and grounded. Everything sized for functionality over aesthetics, worn-in soft at the seams.",
+    "primary_material": "Canvas work jacket (faded, weathered); dark green thermal henley (thick-seamed synthetic blend); slate synth-canvas cargo trousers (reinforced panels); brown synthetic leather boots (oil-resistant); dark olive wool-blend beanie.",
+    "texture": "Rough, lived-in, broken-in. Canvas is soft and frayed at edges; thermal henley shows pilling from years of wear; trousers have a slightly stiff weave with visible stitching; boots are scuffed and creased from use; beanie is loose-knit and supple.",
+    "color_scheme": "Muted earth tones: faded charcoal-brown jacket, dark green henley, slate-gray trousers, worn brown boots, olive beanie. Orange retroreflective tape strip on collar is the only bright accent—functional hi-vis, not decorative.",
+    "closures": "Jacket: worn button-front with some buttons replaced or missing. Trousers: full-circumference adjustable waistband with snap closures, removable belt with friction-fit. Boots: traditional lace-up with metal eyelets, knotted tight. Beanie: pull-on, no closure.",
+    "distinctive_features": [
+      "Hand-applied Hookline patch on back: fish hook through circuit board, collective emblem",
+      "Orange retroreflective tape strip on collar, self-modified for hi-vis compliance",
+      "Extensive pocketing: two chest, two hip, two internal, long vertical map pocket on left lining",
+      "Tool loops on belt and snap-clip ring for carabiners/gear",
+      "Reinforced seat panels and gusseted crotch on trousers",
+      "Steel toe caps on boots, oil-resistant soles",
+      "Visible wear: fraying seams, faded patches, creases at joints, scuff marks on boots"
+    ],
+    "tier_indicator": "Tier 4–5 working class/sub-grade. No corporate insignia, fully self-assembled from surplus and off-cuts. The Hookline patch signals collective membership over corporate affiliation.",
+    "cultural_context": "Independent freight hauler, M88 collective member, ungoverned zones operative. Wearing this signals distrust of corporate logistics, street credibility, and self-sufficiency. The neural port visible at the nape (when beanie is pulled back) suggests light augmentation—typical for independent haulers navigating unregulated cargo routes.",
+    "condition_typical": "Weathered and broken-in, not pristine. Seams show fraying, colors are faded, boots are scuffed and creased, fabric shows minor stains and wear patterns consistent with years of active use. Patches may be hand-stitched or glued; some buttons may be mismatched replacements."
+  },
+  "image_prompt": "A lean figure in a faded charcoal-brown canvas work jacket, orange hi-vis tape glinting on the collar, stands in a dimly lit industrial loading bay. The jacket hangs loose over a dark green thermal henley and wide-leg slate-gray cargo trousers tucked into worn brown synthetic leather boots with steel toe caps. A dark olive beanie is pulled back to reveal the subtle gleam of a neural port behind the left ear. The Hookline patch—a fish hook through a circuit board—is visible on the jacket back. Pockets and tool loops catch moody overhead lighting. Background: stacked cargo containers, neon signs reflecting off wet concrete, the GLMZ skyline hazy and distant. Film grain, desaturated palette, gritty street photography aesthetic. --ar 2:3 --v 6"
 }

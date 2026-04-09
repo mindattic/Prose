@@ -56,5 +56,27 @@
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
     "Synaptrel",
     "Yusra Ntambwe-Cakić"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately high-visibility operative ensemble that reads as capable without broadcasting weaponry. The silhouette is sharp and architectural — broad structured shoulders, tapered torso, straight athletic legs. Forest green and matte black color blocking creates visual rhythm and military-adjacent aesthetic without being overtly tactical. The wearer projects confidence and augmented capability.",
+    "fit": "Tailored but not restrictive. The jacket sits structured on the shoulders with a slight drop at the sleeve; the compression shirt beneath hugs without compression-limiting movement. Trousers are straight-leg and precise, sitting at the hip with enough room for quick draw access. Boots are snug with reinforced heel and ankle.",
+    "primary_material": "Synth-ceramic composite (shoulder panels), matte-finish ballistic weave (jacket body), treated leather-analog (boots), recycled-polymer ripstop (trousers), chrome-responsive synthetic blend (glove)",
+    "texture": "Jacket exterior is smooth with segmented composite panels that catch light differently — almost quilted in appearance but rigid. Interior lining is soft technical mesh. Trousers have a subtle micro-texture that breaks light without shine. Boots are matte leather with tactile steel toe. Compression shirt is seamless and body-conforming.",
+    "color_scheme": "Deep forest green (primary — jacket, boots), matte black (segmented panels, trousers), slate grey (compression shirt), chrome accents (wrist cuffs, knuckle aug, ankle closure), muted olive undertones in the leather",
+    "closures": "Magnetic snap shoulders (quick-release for aug access), friction-fit magnetic wrist cuffs (seal-and-peel design), magnetic ankle boot closure (silent operation), snap-over spinal access flap, standard zip on jacket front",
+    "distinctive_features": [
+      "Reinforced synth-ceramic segmented shoulder panels (blunt-force/slash resistant)",
+      "Interior holster ecosystem: two chest-mounted flat sleeves, left-lining tool rail",
+      "Shoulder-exit aug-power conduit routing to forearm chrome mount",
+      "Open-spine back panel cut with snap-over flap for spinal/dorsal rig accommodation",
+      "Integrated chrome-arm port openings at wrist with magnetic seal-cuffs",
+      "Concealed thigh drop pockets (reinforced ripstop)",
+      "Heel-recessed blade channel in boot",
+      "Fingerless right glove with chrome knuckle aug cutout"
+    ],
+    "tier_indicator": "Tier 3 functional luxury — boutique custom work, referral-only clientele, high craftsmanship but street-accessible price point for serious operators",
+    "cultural_context": "Worn by augmented runners and operatives with established reputation. The wearer has moved beyond 'stay hidden' into 'show what you can do.' Signals technical competence, augmentation investment, and street credibility. Popular among security contractors, black-market couriers, and independent augmentation specialists.",
+    "condition_typical": "Pristine to broken-in. New pieces show perfect panel alignment and sharp creases; worn pieces develop character wear on the knuckles, slight scuff on heel channels, and fading of black matte to charcoal grey on high-contact zones. The reinforced panels age beautifully — micro-scratches in the ceramic composite read as battle-tested."
+  },
+  "image_prompt": "Fashion photography: a cyberpunk operative model in a forest-green and matte-black Nullframe Ascent rig, standing in three-quarter pose against a rain-slicked urban wall. Moody neon-filtered lighting from above-left, casting sharp shadows across the structured shoulder panels. The chrome wrist cuffs catch cyan accent light. Behind, a blurred GLMZ skyline with Iowan Behemoth silhouette visible. Dark warehouse aesthetic, gritty concrete, subtle holographic advertisement flicker in background. High-fashion catalog photography. Model's posture is confident, relaxed hand placement, visible chrome knuckle aug on right hand. Shallow depth of field on jacket details. --ar 2:3 --v 6"
 }

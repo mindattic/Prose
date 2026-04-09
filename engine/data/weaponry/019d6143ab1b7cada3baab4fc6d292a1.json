@@ -37,5 +37,33 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Carrion Defense Works",
+    "Eshe Pena-Baah",
+    "Nika Svensson-Kone",
+    "The Riveters' Round",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purpose-built precision rifle with an almost surgical aesthetic. The Bloodletter presents as a modern marksman's platform — long, tapered barrel beneath a floating action, with minimal ornamentation. The silhouette reads as predatory and cold, engineered for distance work rather than rapid engagement.",
+    "dimensions": "Overall length: 112 cm | Barrel length: 55 cm | Width at receiver: 7 cm | Height with optic: 18 cm",
+    "weight_description": "Hefty but well-balanced — 4.2 kg settles into the shoulder with authority. The free-floating barrel creates a sense of precision weight rather than bulk; it feels like an instrument calibrated for lethality.",
+    "primary_material": "Aerospace-grade aluminum receiver with steel barrel. Polymer furniture in reinforced thermoplastic composite. Magazine feed system in hardened steel.",
+    "finish": "Matte charcoal anodize on aluminum surfaces with brushed stainless steel accents around the breech. Barrel features a dull gunmetal finish — intentionally non-reflective. Polymer furniture is textured matte black with subtle ribbing.",
+    "color_scheme": "Primary: gunmetal gray and matte black | Accents: brushed steel around action, subtle red safety indicator dot",
+    "grip_texture": "Aggressive checkered polymer grip with rubberized palm swell. The foregrip features deep finger grooves. All contact surfaces are non-slip, designed for gloved operation in wet conditions.",
+    "distinctive_features": [
+      "Transparent ammunition magazine with visible round stack — brass casings visible against translucent polymer",
+      "Micro-etched ballistic scale on the receiver for range compensation",
+      "Large bolt handle with integrated charging lug for gloved manipulation",
+      "Integrated cable management routing along the underside of the handguard",
+      "Slight concave depression at the muzzle break designed for specialized round loading",
+      "Faint hazmat-adjacent warning symbology laser-etched below the magazine well (Φ symbol with X overlay)",
+      "Environmental compensation turret on optic base with temperature/altitude dial markings"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS in small block lettering on the left side of the receiver, just forward of the trigger guard. Serial number stamped on the barrel extension. Model designation 'HR-6' etched discreetly on the magazine housing. Internal markings visible when action is cycled.",
+    "condition_typical": "These weapons are meticulously maintained by their operators — field condition shows tight tolerances, minimal fouling, obsessive barrel care. When used, they show evidence of professional maintenance: cleaned actions, protected optics, stock components replaced rather than repaired. Scarring rare; when present, it's precise rather than chaotic."
+  },
+  "image_prompt": "Product photography: Carrion Defense Works Hemorrhage Rifle HR-6 mounted on a gunsmith's workbench with dark carbon fiber surface. Close detail shot from the 3/4 angle showing the receiver, floating barrel, and variable optic. Hands in black gloved Mechanist-style work gloves adjusting the elevation turret. Dramatic side-lighting from cool LED panels highlighting the matte charcoal finish and brushed steel accents. Shallow depth of field focused on the bolt assembly and transparent magazine. Nearby: a single 7.62mm round with faint red-tinted casing under magnification. Clinical, sterile lighting. Cyberpunk medical-precision aesthetic. Background blurred into a weapon maintenance station environment. --ar 3:2 --v 6"
 }

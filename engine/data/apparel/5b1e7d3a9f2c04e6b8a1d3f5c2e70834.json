@@ -38,5 +38,25 @@
     "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
     "The Shelf",
     "The Underlayer Collective"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A skeletal, worn compression base layer that clings to the torso like a second skin. The garment reads as humble and survival-focused, a medical-functional piece stripped of corporate identity. It hangs with the quiet defeat of something that has absorbed years of labor.",
+    "fit": "Compression-tight across chest and shoulders, conforming precisely to muscle and bone. The fit has relaxed slightly at the collar and cuffs from repeated wear, creating a subtle sag that contradicts the intended snugness.",
+    "primary_material": "Original synthetic moisture-wicking blend (Pragma proprietary), now degraded and brittle at stress points. The fabric is thin enough to be semi-translucent in high-wear areas.",
+    "texture": "Heavy pilling across the chest and upper back from friction and age. Smooth in remaining intact patches. One shoulder shows transparent, almost gossamer texture from thinning. Abraded flat spot where branding was removed—rough and slightly frayed.",
+    "color_scheme": "Off-white to dingy cream overall, with darker coffee-stain discoloration around collar, underarms, and lower back. The de-branded rectangle is ghost-pale, a slightly lighter rectangle against the yellowed body.",
+    "closures": "None—pullover compression shirt with elastic-trim crew neck and fitted long sleeves. Cuffs show stretched elastic.",
+    "distinctive_features": [
+      "Aggressive de-branding: abraded rectangular scar where Pragma logo was removed",
+      "Heavy pilling concentrated on chest",
+      "Transparent panel at right shoulder from thinning",
+      "Staining and discoloration indicating years of wear",
+      "Stretched elastic at neck and cuffs",
+      "No visible patches—owner chose to keep wearing rather than repair"
+    ],
+    "tier_indicator": "Tier 5 salvage/sub-grade. This is survival wear, not fashion.",
+    "cultural_context": "Working poor or ungoverned sector. Someone who stripped corporate branding to reclaim the garment as their own. Suggests labor-intensive work, lack of resources for replacement, and subtle resistance to corpo identity markers.",
+    "condition_typical": "Heavily worn, degraded but still functional. The kind of piece that gets washed in sink water and air-dried on a radiator. No attempt at preservation—purely utilitarian."
+  },
+  "image_prompt": "Extreme close-up fashion photograph of a Tier 5 cyberpunk worker wearing a threadbare, yellowed compression undershirt. Model has visible fatigue, possibly augmented forearms. Harsh industrial lighting revealing pilling, transparent worn spots, and abraded de-branding scar on fabric. Dark factory or worker hab-unit backdrop with neon glow reflecting off damp concrete. Grainy, documentary-style realism. Composition emphasizes the ghost-pale abraded rectangle where corporate branding was scrubbed away. --ar 2:3 --v 6"
 }

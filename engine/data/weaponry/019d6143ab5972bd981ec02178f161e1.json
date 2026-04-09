@@ -43,5 +43,30 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "SynapTech PolyGlot Live Translation Implant",
+    "TESSERA PG-2 'Signature'",
+    "Vespid Dynamics"
+  ],
+  "physical_description": {
+    "visual_profile": "A biomimetic micro-drone engineered to resemble a large hornet or wasp. Sleek, predatory silhouette with a tapered fuselage and articulated wings. The body appears almost organic despite its synthetic construction — a deliberately unsettling fusion of insect anatomy and lethal technology. At 3cm wingspan, it's distinctly larger than a natural hornet but maintains a profile designed to avoid immediate recognition as a weapon.",
+    "dimensions": "3cm wingspan, 2.1cm fuselage length, 0.8cm body depth",
+    "weight_description": "Feather-light at 4 grams — practically negligible in hand, creating an eerie sense of lethality despite its insubstantial feel. The weight distribution is fore-heavy due to the proboscis mechanism and payload chamber.",
+    "primary_material": "Reinforced bio-polymer exoskeleton with segmented carbon-fiber joints. The thorax housing contains quantum-hardened aluminum alloy for the penetration mechanism and thermite charge.",
+    "finish": "Matte chitinous appearance with a slight iridescent sheen under certain light angles — mimicking natural insect carapace. The wing membranes are translucent synthetic material with faint vein-like conductive tracery visible when backlit.",
+    "color_scheme": "Primary mottled charcoal-grey with amber-gold accents along the wing leading edges and around the launch aperture. The proboscis tip has a faint violet tint from neural-resonant coating.",
+    "grip_texture": "Not designed for hand-gripping — the NH-1 launches from a compact magnetic-release pod. The pod itself has a smooth, recessed grip surface of rubberized polymer.",
+    "distinctive_features": [
+      "Retractable 2mm penetrating proboscis housed in the anterior fuselage — barely visible when stowed",
+      "Compound optical sensors mimicking insect facet eyes (likely thermal+visual hybrid arrays)",
+      "Pheromone-detection antennae — articulated, hair-thin conductive filaments extending from the head",
+      "Micro-thruster vents along the abdomen — almost invisible but create faint heat distortion",
+      "Faint LED status indicator (amber/red) recessed into the dorsal surface near the wing root",
+      "Segmented abdomen designed to contain thermite micro-charge — slightly bulbous compared to real insects"
+    ],
+    "manufacturer_markings": "None visible. Vespid Dynamics officially denies existence. Underground markets report micro-etched serial codes on the fuselage interior (not visible without disassembly), a dark joke among users.",
+    "condition_typical": "Field units appear fresh from manufacture — matte finish unmarred, wings pristine. Battle-worn units are rare (self-destruct leaves minimal recovery). When recovered intact, signs of pheromone residue around antennae or minor thermal discoloration on the fuselage indicate activation."
+  },
+  "image_prompt": "Product photograph of a micro-drone resembling a large hornet, 3cm wingspan, positioned on a black matte surface next to a tactile ruler for scale. Shot from slightly above at 45-degree angle. Dramatic side-lighting creates sharp shadows along the carbon-fiber segmentation and wing membranes, with a subtle blue accent light revealing the translucent vein patterns in the wings. The proboscis is barely visible, retracted. Matte grey-and-amber chitinous finish catches light like insect exoskeleton. Background is deep charcoal gradient fading to shadow. Cyberpunk aesthetic: cold, predatory, unsettling hyper-realism. Include a small magnetic launch pod in soft focus beside it. Cinematic, clinical product lighting. --ar 3:2 --v 6"
 }

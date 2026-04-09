@@ -1,0 +1,68 @@
+{
+  "id": "cd8ce222de5f44c4b6f65c18721c1050",
+  "name": "Torii Security Group Katana TSK-1 'Silence'",
+  "type": "weapon",
+  "aliases": [
+    "Silence",
+    "Seo's Blade",
+    "The Samurai's Katana",
+    "TSK-1"
+  ],
+  "category": "melee",
+  "description": "A carbon-nanotube composite katana with an integrated piezoelectric disruption layer that shorts neural implants on contact. This is not a vibration blade. It does not cut through armor by oscillating. It kills augmentation. When the edge contacts any surface carrying an electrical charge — a BCI, a cyberlimb's motor control bus, an optic nerve relay, a cardiac regulator — the piezoelectric layer generates a localized electromagnetic pulse that cascades through the connected system. The implant doesn't just shut down. It shorts. Hard. The neural feedback from a shorted BCI has been described by survivors as the worst pain they have ever experienced. Most don't survive to describe it.\n\nThe blade was manufactured by Torii Security Group's Advanced Weapons Division in a limited run of twelve, designated TSK-1 through TSK-12. They were intended for Torii's elite counter-augmentation strike teams — operators tasked with neutralizing heavily cybered targets in environments where firearms would cause collateral damage or where EMP devices would disable friendly equipment. The TSK series solved both problems: the disruption effect is contact-only, with zero area effect. You have to touch the target. You have to be close enough to use a sword. Torii trained their operators accordingly.\n\nThe blade is 71 centimeters from guard to tip, with a gentle curve and a single edge in the traditional katana profile. The carbon-nanotube composite is matte black — not reflective, not polished, not decorative. It absorbs light. The edge is maintained at a molecular level; under magnification, the cutting surface is a single row of aligned carbon nanotubes, each one a cylinder of perfect hexagonal lattice roughly one nanometer in diameter. The edge does not dull under normal use. It chips. When it chips, the micro-fractures propagate along the nanotube grain, and if left unrepaired, the blade will eventually shatter. This is why Kyle checks the edge every morning — three fingers along the flat, feeling for fractures. This is maintenance. This is prayer.\n\nThe handle is wrapped in synthetic ray skin under a cord wrap of carbon-fiber braid, following traditional katana construction translated into 23rd-century materials. The guard is minimal — a flat oval of tungsten carbide, unornamented. The sheath is matte-black friction-fit composite that grips the blade silently on draw and return. No click. No rattle. The weapon makes no sound until it makes contact.\n\nOf the original twelve TSK blades, seven are confirmed destroyed, two are in Torii corporate vaults, one is in a private collection on the Shelf, and one is unaccounted for. The twelfth belongs to Kyle Ellen Corbin-Vasik, inherited from his mentor Dae-jung Seo, who carried it as TSK-4 during his years as a Torii counter-augmentation specialist. Seo left the blade to Kyle when degrading military augmentations killed him. The blade was the last thing Seo owned that still worked.\n\nThe name 'Silence' was not given by Torii. It was given by the people who survived encounters with operators carrying TSK blades. When the piezoelectric layer contacts a BCI, the host's neural interface goes dead. The constant low hum of augmentation that every cybered person lives with — the background noise of being connected — stops. For a fraction of a second before the pain hits, there is silence. Absolute, total neural silence. Some survivors said it was the most peaceful thing they had ever felt. Then the feedback hit and they wished they were dead.\n\nIn a world where every technology is owned, the blade belongs to the hand that holds it. Kyle's blade has no firmware. No license agreement. No remote kill switch. No software update. No little brother watching through its sensors. It is a piece of sharpened carbon that disrupts everything it touches. It is the simplest and most honest weapon in GLMZ.\n\nIt is the last thing a lot of augmented people ever feel.",
+  "manufacturer": "TORII SECURITY GROUP",
+  "tier_availability": "N/A — discontinued, 12 ever produced",
+  "legality": "Unlicensed — original registrations voided when Torii's weapons division was dissolved",
+  "base_technologies": [
+    "Carbon-nanotube composite blade",
+    "Piezoelectric neural disruption layer",
+    "Contact-only EMP generation",
+    "Molecular-edge nanotube cutting surface"
+  ],
+  "specifications": "blade length: 71cm\ntotal length: 102cm (with handle)\nblade width: 3.2cm at base\nblade material: aligned carbon-nanotube composite, matte black\nedge structure: single-row nanotube molecular edge\npiezoelectric layer: embedded subsurface, activates on contact with electrical charge\ndisruption radius: contact only (zero area effect)\ndisruption effect: cascading short of connected neural/cybernetic systems\nhandle: synthetic ray skin + carbon-fiber braid wrap\nguard: tungsten carbide flat oval, unornamented\nsheath: matte-black friction-fit composite, silent draw\nweight: 0.94kg\nproduction run: 12 units (TSK-1 through TSK-12)\nsurviving units: 5 confirmed (2 vaulted, 1 private collection, 1 unaccounted, 1 Kyle's)",
+  "tactical_use": "Designed for close-quarters neutralization of heavily augmented targets in environments where firearms and area-effect EMP are unacceptable. The operator must close to melee range — this is the weapon's primary limitation and its primary advantage. Firearms announce themselves. EMP devices affect everything in radius. The TSK blade affects only what it touches. A trained operator can disable a target's augmentation suite with a single controlled cut to any exposed cybernetic component or neural interface point. The most effective targets are the neck (BCI access points), forearms (cyberlimb motor buses), and temple (optic relays). Seo's preferred technique, which Kyle inherited, targets the wrist — severing motor control to the dominant hand eliminates the target's ability to draw or fire without killing them. Kyle uses this technique when the contract specifies alive.",
+  "cultural_context": "In a world saturated with firearms, guided munitions, and autonomous weapons platforms, a person who carries a sword is making a statement. The statement is: I am close enough to touch you, and I chose to be here. The katana is not nostalgia. It is not affectation. In the specific tactical niche of counter-augmentation close combat, it is the most effective weapon ever created. The fact that it also carries the cultural weight of a thousand years of martial tradition is a bonus that Kyle neither ignores nor leans into. He carries it because it works. He maintains it because Seo trusted him with it. He uses it because in a world where every weapon is smart, connected, trackable, and killable remotely, a sharpened piece of carbon that answers to nothing but the hand holding it is the most dangerous thing in the room.",
+  "known_users": [
+    "Kyle Ellen Corbin-Vasik (TSK-4, current wielder, inherited from Dae-jung Seo)",
+    "Dae-jung Seo (TSK-4, previous wielder, deceased)",
+    "Torii Security Group counter-augmentation strike teams (all designations, historical)"
+  ],
+  "tags": [
+    "melee",
+    "katana",
+    "piezoelectric",
+    "anti-augmentation",
+    "carbon-nanotube",
+    "neural-disruption",
+    "Torii",
+    "legendary",
+    "limited-production",
+    "protagonist"
+  ],
+  "related_entities": [
+    "Kyle Ellen Corbin-Vasik",
+    "Dae-jung Seo",
+    "Torii Security Group",
+    "Crucible Industries Resonance Katana RK-7 'Singing Edge'"
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively elegant katana with a traditional single-curve profile, but rendered in absolute matte black that seems to absorb rather than reflect light. The silhouette is clean and purposeful — no ornamentation, no flash, pure function. At first glance it reads as a high-end traditional blade; the second glance reveals the unnatural quality of the finish and the barely-visible subsurface shimmer of the piezoelectric layer beneath the carbon-nanotube matrix.",
+    "dimensions": "Blade length: 71cm | Total length with handle: 102cm | Blade width at base: 3.2cm | Guard diameter: ~6cm",
+    "weight_description": "Surprisingly light at 0.94kg — feels almost weightless in a trained hand, with perfect balance point just forward of the guard. The weight distribution is concentrated in the first third of the blade, making it responsive and quick. Not delicate; precise.",
+    "primary_material": "Carbon-nanotube composite blade (aligned nanotubes in epoxy matrix) with tungsten carbide guard and synthetic ray skin wrapped handle reinforced with carbon-fiber braiding",
+    "finish": "Absolute matte black — non-reflective, light-absorbing. The blade surface appears to have a subtle depth to it, as if the black extends inward. No polish, no shine, no concession to aesthetics. The handle wrap is a grainy, slightly textured black with visible carbon-fiber threads running through the synthetic ray skin beneath.",
+    "color_scheme": "Monolithic black — blade, guard, handle, sheath all in the same non-reflective black. The only visual break is the faint metallic gray of the tungsten carbide guard and occasional glimpses of carbon-fiber reinforcement threads in the handle wrap.",
+    "grip_texture": "Synthetic ray skin base layer providing organic grip texture, overlaid with a tight carbon-fiber braid wrap that creates a slightly raised, tactile grid pattern. Worn smooth by use but never slippery. The grip absorbs moisture rather than shedding it.",
+    "distinctive_features": [
+      "Subsurface piezoelectric layer visible as a faint iridescent shimmer just beneath the surface when viewed at shallow angles — the only visual indicator of the weapon's true nature",
+      "Molecular-edge cutting surface: under magnification, the blade edge is a single aligned row of carbon nanotubes, creating a theoretically infinite edge that chips rather than dulls",
+      "Friction-fit sheath design: the matte-black composite sheath is as silent as the blade itself — no metal fittings, no noise on draw",
+      "Guard is a flat tungsten carbide oval — unornamented, minimal, purely functional",
+      "Handle shows subtle wear patterns: a slight darkening of the synthetic ray skin at the point where a gloved hand typically grips, and microscopic striations from regular edge-checking",
+      "No manufacturer markings visible on the blade itself — the only identifying feature is a small laser-etched serial number (TSK-1 through TSK-12) hidden on the inner curve of the guard, visible only if you know to look"
+    ],
+    "manufacturer_markings": "Minimal. A tiny laser-etched serial identifier (TSK-#) on the inner guard curve, deliberately obscured. No logos, no Torii branding visible on the blade itself — those units that survived the weapons division's dissolution had their markings deliberately removed by their keepers.",
+    "condition_typical": "Meticulously maintained. The blade is checked daily by its owner for micro-fractures along the nanotube grain. No visible battle-scarring on well-maintained examples, but evidence of professional use: precise wear on the grip, occasional small chips on the edge (immediately visible to an expert eye) that indicate active field deployment rather than storage. The sheath shows minimal wear — these blades are drawn carefully, not hastily."
+  },
+  "image_prompt": "Product photography of a matte-black katana lying diagonally across a dark brushed-steel surface, positioned to catch dramatic side-lighting that reveals the faint iridescent shimmer of the piezoelectric layer beneath the blade's surface. The blade's absolute non-reflective finish contrasts with subtle highlights on the tungsten carbide guard and the carbon-fiber braid texture of the handle wrap. A gloved hand (black tactical glove, visible augmentation on wrist) grips the handle at the balance point, fingers positioned as if about to perform a precision strike. The friction-fit composite sheath lies parallel to the blade, equally matte-black. Cyberpunk aesthetic: cold blue-white side-lighting creating sharp shadows, hints of neon red safety strips barely visible on the sheath edge. Ultra-high detail on the nanotube edge structure and subsurface layer iridescence. Shot in 3:2 aspect, suggesting professional weapons catalog documentation rather than glorification. --ar 3:2 --v 6"
+}

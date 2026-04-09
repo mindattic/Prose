@@ -56,5 +56,34 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Iowan Behemoth — 'Palisade'",
+    "Lazarus LX-2 'Lab Rat'",
+    "LifeWire TrueNorth Subdermal Navigation Core",
+    "Palladian Construction"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular breaching module resembling a flattened technical toolbox with four pronounced magnetic feet. The face presents a reinforced copper-alloy shaped charge matrix visible through a hardened polycarbonate viewport. Overall impression is militaristic and purposeful—all geometry and minimal ornamentation.",
+    "dimensions": "22 cm wide × 18 cm tall × 6 cm deep. Magnetic feet add 1.5 cm standoff from contact surface.",
+    "weight_description": "Noticeably hefty for its size—2.3 kg feels dense and substantial in hand, suggesting serious internal mass. Well-balanced despite asymmetric magnetic foot placement.",
+    "primary_material": "Reinforced titanium-composite housing with internal copper-plasma matrix. Magnetic adhesion system uses industrial neodymium arrays. Viewport is ballistic polycarbonate.",
+    "finish": "Matte charcoal polymer body with brushed steel magnetic foot housings. The viewport shows raw burnished copper beneath—intentionally exposed to hint at the plasma jet interior.",
+    "color_scheme": "Dark gunmetal gray primary with copper accent visible through the viewport. PALLADIAN branding in high-contrast white. Red phosphorescent arm-status indicator on upper face.",
+    "grip_texture": "Textured non-slip polymer on lateral surfaces; ribbed carry edges for gloved handling. Magnetic feet present knurled contact surfaces.",
+    "distinctive_features": [
+      "Four symmetrical industrial magnetic feet with visible neodymium array beneath translucent housings",
+      "Hardened polycarbonate viewport exposing the shaped copper-plasma charge matrix",
+      "Recessed pin-and-detent arm mechanism on top edge (color-coded white for safety, glowing red when armed)",
+      "Small pressure-sensitive adhesion indicator light (green when magnetically secured)",
+      "Discrete blast-carved scorch marks on edges from manufacturing stress-tests",
+      "Thermally-darkened polycarbonate around viewport edges from charge heat during final assembly",
+      "Etched serial plate on rear face with PALLADIAN logo and licensing hologram"
+    ],
+    "manufacturer_markings": "PALLADIAN CONSTRUCTION logo stamped in brushed relief on top surface. Serial number and licensing stamp on rear lower face. Small white text: 'TIBC-1 SLAGWALL | TIER 3+ LICENSE REQUIRED'. Holographic security patch integrated into rear serial plate.",
+    "condition_typical": "Field units show minor polymer scuffing and magnetic-foot contact wear. Viewport may appear slightly haze-frosted from repeated thermal cycling. Well-maintained contractor units remain near-pristine; salvage-market examples often show pitting on magnetic surfaces or clouded viewports."
+  },
+  "image_prompt": "Product photography of a sleek gray titanium-composite breaching charge with four prominent industrial magnetic feet, shot from 45-degree angle on matte black surface. Hardened polycarbonate viewport reveals raw burnished copper plasma matrix beneath. Dramatic side-lighting emphasizes the sharp angular geometry and creates reflections on the magnetic foot housings. Gloved hand (corporate security contractor aesthetic, synthetic leather) visible placing or securing device on ferrous surface. PALLADIAN branding and red arm indicator glow subtly in highlight. Cyberpunk industrial aesthetic, high-tech security contractor equipment. --ar 3:2 --v 6"
 }

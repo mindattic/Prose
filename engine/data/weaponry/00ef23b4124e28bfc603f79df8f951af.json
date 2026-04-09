@@ -44,5 +44,35 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Biometric Denial Charge BDC-1",
+    "Cassiel Brandt-Ouedraogo",
+    "NeuralPath EasePoint Chronic Pain Implant",
+    "Nika Svensson-Kone",
+    "TESSERA CC-6 'Shepherd'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular SMG with an aggressive forward-swept profile. Twin magazine wells dominate the lower receiver, creating a distinctly wider footprint than conventional firearms. The weapon reads as utilitarian and purposeful—all function, minimal ornamentation. The dual-feed system gives it a boxer's stance: squared shoulders, centered weight distribution.",
+    "dimensions": "Overall length: 38cm | Barrel length: 12.7cm | Width at magazine well: 6.2cm | Height (with charging handle): 11cm",
+    "weight_description": "Balanced and front-heavy (2.7kg). The dual magazines and BCI module shift mass toward the grip, creating natural pointing geometry. Feels authoritative in hand without excess bulk—designed for sustained operation during long crowd-control deployments.",
+    "primary_material": "Reinforced polymer frame (DuPont Zytel HD) with integrated steel barrel shroud and dual-feed cycling mechanism. Upper receiver is aluminum 7075-T6 with hard-anodized treatment for durability under constant handling.",
+    "finish": "Matte charcoal polymer with brushed steel accents around the dual magazine wells and feed mechanism. The BCI integration port (rear receiver junction) features a subtle iridescent coating that catches light—marking it as a 'smart' weapon system.",
+    "color_scheme": "Dominant charcoal-black polymer with steel-gray feed system accents. Faint corporate blue piping along the rail system indicates Arcturus branding. Rubber overmold grips in tactical gray.",
+    "grip_texture": "Aggressively textured rubber overmold—sharp diamond pattern for secure purchase in gloved or augmented hands. Magazine well edges finished in knurled steel for positive magazine changes during high-stress operations.",
+    "distinctive_features": [
+      "Dual magazine wells with independent feed indicators on each (small red/green witness dots)",
+      "BCI neural-interface port: smooth, recessed chrome node at rear of receiver—barely visible unless actively interfacing",
+      "Integrated crowd-analysis display: small holographic pop-up on left rail (dimmed when inactive, glowing soft blue during operation)",
+      "Charging handle: dual-sided, oversized for gloved operation, with heat-venting ribbed design",
+      "Magazine identification grooves: lethal mags marked with subtle raised 'L' symbol; less-lethal marked with 'R' symbol",
+      "Muzzle brake with integral flash suppressor featuring visible baffles designed to reduce less-lethal round tumble",
+      "Heat vents along the barrel shroud—a necessary feature for sustained crowd-control fire rates"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS in embossed sans-serif along the left receiver rail. Model designation ACSM-3 stamped below the ejection port. Serial number on a small stainless steel plate inset into the right side of the frame. Small Arcturus circular logo (concentric rings with sword motif) etched into the magazine well area.",
+    "condition_typical": "Field-maintained with visible wear patterns. Scuff marks on the polymer grip from gloved handling. The BCI port shows light contact marks from neural-interface connections. Muzzle area exhibits faint carbon buildup from mixed-ammunition cycles. Overall: battle-ready but institutional—equipment of a working corporate police unit, not a black-market operator."
+  },
+  "image_prompt": "Product photography of the Arcturus ACSM-3 Shepherd SMG positioned at 45-degree angle on a dark matte-black surface. Dramatic side-lighting from left, casting sharp shadows that emphasize the dual magazine wells and angular frame geometry. Hand in tactical gloves gripping the weapon, fingers on trigger guard. Close detail shot showing the small holographic display on the rail system glowing soft cyan. Shallow depth-of-field isolating the weapon. Cyberpunk aesthetic: cool color temperature, subtle neon blue accents on BCI port glowing faintly. Corporate-clean photography style with industrial backdrop. 2226 GLMZ corporate security aesthetic. --ar 3:2 --v 6"
 }

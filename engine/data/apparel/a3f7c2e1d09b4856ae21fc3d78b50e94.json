@@ -52,5 +52,29 @@
     "The Fathom Line",
     "The Shaft",
     "Veldtmann Steelcap 7"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A structured, institutional uniform that projects competent working-class authority. The outfit reads as deliberately utilitarian—sharp enough for corporate protocol, practical enough for twelve-hour platform shifts. The mandarin collar and fitted jacket create a clean vertical line, while cargo pockets and reinforced panels signal serious labor. Overall impression: someone who operates critical infrastructure and knows exactly what they're doing.",
+    "fit": "Tailored through the shoulders and chest, with measured roominess at the torso for movement and augmentation accommodation. Trousers sit at natural waist with a deliberate flare at the ankles—engineered for prosthetic limbs and modular augmentation. The jacket breaks sharply at the hips. Everything is cut for function over fashion, but with enough precision to avoid looking sloppy.",
+    "primary_material": "Navy synth-canvas (jacket and trousers)—a durable, water-resistant weave that resists wear and takes a press well. Slate grey moisture-wicking thermal base layer with reinforced neckline for durability.",
+    "texture": "Smooth, almost stiff synth-canvas with a subtle weave visible up close. The thermal base layer has a fine ribbed texture. Reflective piping has a matte-shimmer quality in low light. All edges are cleanly hemmed and reinforced—no fraying, no shortcuts.",
+    "color_scheme": "Navy synth-canvas as dominant color (corporate stability), accented with slate grey base layer at collar and cuffs, matte black utility belt, and amber reflective piping along shoulders and cuffs. Silver embroidered Kelvex wordmark and name patch provide subtle metallic contrast.",
+    "closures": "Traditional button closure on jacket (corporation-grade durability), magnetic snap closures at lower trousers legs (accommodation for prosthetics and augmentation), friction-fit belt with tool holster attachment points.",
+    "distinctive_features": [
+      "Kelvex wordmark embroidered in silver thread above left breast pocket",
+      "Sewn name patch on right chest",
+      "Reflective amber piping on shoulder seams and cuffs (platform safety standard)",
+      "Discrete neural port channel at collar inner lining for BCI earpiece routing",
+      "Reinforced knee panels on trousers",
+      "Deep cargo pockets with flap closures",
+      "Magnetic snap closures at lower legs (prosthetic accommodation)",
+      "Wide matte black utility belt with integrated tool roll and ID fob holster",
+      "Boot-cut hem design to accommodate standard leg prosthetics",
+      "Optional personal patches on left sleeve (union insignia, route numbers, incident stars—supervisor-discouraged but widely practiced)"
+    ],
+    "tier_indicator": "Tier 2-3 boundary: Corporate-issue uniform signals steady employment and institutional credibility (Tier 2), but the wear patterns and aftermarket patch culture indicate working-class solidarity and street authenticity (Tier 3).",
+    "cultural_context": "Kelvex Transit Systems employee—someone integral to GLMZ infrastructure. The uniform signals reliability, technical competence, and corporate integration, but the patch tradition on the left sleeve marks authentic platform experience and union affiliation. Wearing this means you move people through the city and take pride in that work.",
+    "condition_typical": "Issued pieces are pressed and regulation-clean, but after two or three months of platform work show creasing at elbows, knee scuffs, and minor stains that don't quite wash out. Veterans wear a five-year-old jacket with faded indigo where the collar sits, a precise shine on the belt from constant tool rotation, and a constellation of patches documenting their line assignments and survived incidents."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a Kelvex MagRail operator's uniform displayed on a dark mannequin or worn by a mixed-heritage model. Navy synth-canvas jacket with mandarin collar, silver embroidered Kelvex wordmark, reflective amber piping catching moody amber and blue platform lighting. Slate grey thermal base layer visible at collar and cuffs. Navy cargo trousers with reinforced knee panels, flared at ankles over matte black Veldtmann Steelcap 7 boots with visible mag-lock detailing. Wide matte black utility belt with tool roll and ID holster. Backdrop: shadow-heavy MagRail platform interior with chrome railings, soft neon glow reflecting off synthetic surfaces. Left sleeve shows 2-3 small sewn patch details (union insignia, route numbers). Moody backlighting, sharp focus on fabric texture and embroidered details. Corporate stability meets street authenticity. --ar 2:3 --v 6"
 }

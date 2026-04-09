@@ -324,5 +324,12 @@
     "posture_movement": "Economical and controlled; she moves with a deliberate, measured quality that suggests constant threat assessment. Her gait is symmetrical despite the chrome joints — a sign of long habituation to the augmentations. She doesn't fidget; stillness is her default state.",
     "clothing_style": "Tier 3-4 utilitarian: dark synthwool jacket with multiple sealed pockets and cable management loops; fitted tactical cargo pants with thigh holster and calf pouches; reinforced ankle boots rated for industrial use. She favors high necklines that partially conceal her jawline scarring. Her gear is maintained but worn; no logos, no affiliation colors. A digital timepiece with encrypted protocols on her left wrist."
   },
-  "image_prompt": "Cyberpunk portrait of a 45-year-old woman with Scandinavian-West African heritage, pale gray-blue eyes, steel gray hair in a tight braid, lean sharp-featured face weathered by stress. Visible chrome hydraulic joints at elbows and knees with no synthetic skin covering. Keloid scarring along temples and jawline from neural interface installation, sunken texture. Directional microphone arrays visible at ear bases. Dark synthwool jacket, high neckline, tactical cargo pants, industrial boots. Posture rigid and economical, threat-assessment focus in her gaze. Moody side-lighting with cool blue-green shadows, slight augmentation glow at neural points. Shot in Tier 1-2 open-air market, blurred corpo architecture behind. High contrast, film noir cyberpunk aesthetic. --ar 2:3 --v 6"
+  "image_prompt": "Cyberpunk portrait of a 45-year-old woman with Scandinavian-West African heritage, pale gray-blue eyes, steel gray hair in a tight braid, lean sharp-featured face weathered by stress. Visible chrome hydraulic joints at elbows and knees with no synthetic skin covering. Keloid scarring along temples and jawline from neural interface installation, sunken texture. Directional microphone arrays visible at ear bases. Dark synthwool jacket, high neckline, tactical cargo pants, industrial boots. Posture rigid and economical, threat-assessment focus in her gaze. Moody side-lighting with cool blue-green shadows, slight augmentation glow at neural points. Shot in Tier 1-2 open-air market, blurred corpo architecture behind. High contrast, film noir cyberpunk aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 36.6,
+    "Southeast Asian": 34.6,
+    "Middle Eastern": 16.7,
+    "South Asian": 8.4,
+    "North African": 3.7
+  }
 }

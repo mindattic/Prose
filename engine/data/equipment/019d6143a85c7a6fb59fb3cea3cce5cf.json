@@ -80,5 +80,25 @@
     "Ringo DV-4 'Courier'",
     "Sustrel",
     "The Nearfield"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact accordion-frame pneumatic device resembling a miniaturized bellows or concertina pump. The central body features a ribbed, compressible silicone accordion core flanked by two rigid frame panels. A sealed oral-nasal interface mask extends from the top like a medical snorkel, while two curved metal intercostal anchor clips protrude from the sides. The overall aesthetic is industrial-medical: functional, modular, purposeful.",
+    "dimensions": "22 cm tall × 14 cm wide × 9 cm deep when collapsed; expands to roughly 16 cm depth when in use. Handheld to chest-mounted scale.",
+    "weight_description": "1.4 kg assembled—light enough for one-handed field deployment but substantial enough to feel robust. Typically worn on a patient's sternum or carried in a field medic's kit.",
+    "primary_material": "Anodized aluminum frame (ribbed side panels), medical-grade silicone accordion core, stainless steel anchor clips, polycarbonate sensor housing.",
+    "finish": "Brushed aluminum with satin-matte silicone. The accordion displays subtle ribbed texture. Anchor clips have a burnished metallic sheen. The sensor window is clear polycarbonate with faint holographic Helix Biosystems branding etched into it.",
+    "color_scheme": "Gunmetal gray frame with deep ocean-blue silicone accordion. Accent colors: sterile white on the oral-nasal interface, emergency red on the filter cartridge access panel. Helix Biosystems logo in chrome.",
+    "interface_elements": "A small LCD readout (roughly 4 cm diagonal) on the upper frame displays blood-oxygen saturation, breath rate, and battery status. Two tactile buttons for manual mode override and power. A sealed rotary filter-cartridge access port on the lower housing. A bio-sensor LED array (green/yellow/red) indicating system status. Quick-release silicone clips lock the mask interface in place.",
+    "distinctive_features": [
+      "Accordion silicone core with visible ribbing—suggests mechanical flexibility and durability",
+      "Dual intercostal anchor clips with rubberized grip pads—designed to grip rib-cage without damaging tissue",
+      "Integrated bio-sensor window with faint holographic readout overlay (O2 %, HR variability graph)",
+      "Filter cartridge access panel marked with Class IV hazmat symbol in embossed relief",
+      "Power indicator LED array that cycles from green (nominal) to amber (low battery) to red (critical)",
+      "Weathered patina typical of field-used medical gear—scuffed metallic finish, faint blood-stain residue on clips, worn silicone surfaces"
+    ],
+    "manufacturer_markings": "Helix Biosystems logo (chrome stylized double-helix) centered on upper panel. Serial number and batch code laser-etched on frame. Regulatory stamps: GLMZ Medical Authority approval mark, Class IV toxin filter certification, biocompatibility rating.",
+    "condition_typical": "Well-maintained unit shows light surface wear: micro-abrasions on aluminum from field carry, slight discoloration on silicone from repeated sterilization, faint dust residue in the accordion grooves. The mask interface may bear traces of previous patient contact (cleaned but not pristine). Battery indicator glowing amber or green depending on use state."
+  },
+  "image_prompt": "Product photography of a Helix Biosystems Pulmonary Resection Bellows mounted on a stainless-steel medical workbench under cool clinical LED lighting. The device is angled 45 degrees, showing the ribbed silicone accordion core in deep ocean-blue, gunmetal frame, and chrome intercostal anchor clips. The oral-nasal mask interface is positioned toward the camera, translucent and functional. In soft focus background: a sealed Class IV filter cartridge, medical documentation, and a faint holographic readout display. Dramatic side-lighting emphasizes the accordion texture and creates shadow definition on the sensor panel. Slightly weathered finish suggests field use. Cyberpunk medical aesthetic with clinical precision and grit. Dark background with cool blue-gray tones. --ar 3:2 --v 6"
 }

@@ -67,6 +67,8 @@ public class CharacterData : ICanonEntity
     [JsonPropertyName("physical_description")] public PhysicalDescription PhysicalDescription { get; set; } = new();
     /// <summary>Midjourney-ready image generation prompt derived from the physical description.</summary>
     [JsonPropertyName("image_prompt")] public string ImagePrompt { get; set; } = "";
+    /// <summary>Genetic ancestry — what a 23andMe test would show. Percentages by region. Independent of surname.</summary>
+    [JsonPropertyName("genetic_ancestry")] public Dictionary<string, double> GeneticAncestry { get; set; } = new();
 }
 
 /// <summary>

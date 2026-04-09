@@ -49,5 +49,26 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Pure Hand",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A weathered crewneck sweatshirt transformed into a patchwork statement piece. The silhouette reads as relaxed and worn-in, with intentional visual chaos across the chest, shoulders, and sleeves. Patches of clashing materials create a deliberately rough aesthetic—part street armor, part archive of survival. The overall impression is honest, functional, and defiantly DIY.",
+    "fit": "Relaxed through the body with a standard crew collar. Slightly oversized in the shoulders from layered patching and repeated wear. Sleeves sit naturally, slightly shortened from patch reinforcement at the cuffs. The fit accommodates movement and layering underneath.",
+    "primary_material": "Dead-stock athletic cotton crewneck base (typically faded Vance or generic Stride blank), with patches of reclaimed canvas, heavy-gauge denim, billboard ad-fabric, and iridescent emergency thermal blanket strips",
+    "texture": "Varied and tactile—smooth worn cotton base contrasted against rough canvas patches, stiff denim reinforcements, glossy thermal-blanket sections, and printed billboard fabric. Waxed thread creates raised linear textures along all seams. Overall reads as deliberately rough and lived-in.",
+    "color_scheme": "Faded base color (typically grey, tan, or bleached-out original hue) layered with mismatched patches in deep indigo denim, natural canvas tan, fragments of neon billboard colors (pinks, cyans, yellows), and silver-grey iridescent thermal material. Contrasting waxed thread in black, white, or rust tones emphasizes every seam.",
+    "closures": "None—standard crewneck pullover with natural elastic cuffs and waistband",
+    "distinctive_features": [
+      "Visible patchwork across chest, shoulders, both elbows, and upper sleeves",
+      "Exposed, intentional stitching in contrasting waxed thread (black, white, rust)",
+      "Reinforced seams at stress points—neck, armholes, waistband",
+      "Mixed material patches from reclaimed sources (canvas, denim, billboard ad-fabric, thermal blanket)",
+      "Evidence of layered repairs—patches over patches on frequently worn pieces",
+      "Potential wear marks, fading, and discoloration indicating multiple hands and seasons of wear",
+      "No brand logo—marked only by the accumulated history of Shelf vendors' hand-stitching"
+    ],
+    "tier_indicator": "Tier 4-5. Street assembly, no corporate manufacturing. Signals working-class or sub-grade origins, worn by those who cannot afford replacement and transform necessity into identity.",
+    "cultural_context": "Street culture, Shelf vendors, precariat youth, working-class defiance. Wearing this announces refusal to hide repairs, acceptance of hand-me-down economy, and pride in durability over newness. Common among GLMZ street collectives, factory workers, and those navigating Tier 4-5 survival.",
+    "condition_typical": "Weathered and visibly patched. Seams show strain and re-stitching. Patches themselves may be worn at edges, softened from wash cycles. The garment typically improves with age as patches bond and settle. Original blank underneath becomes progressively less visible with each layer of repair."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a Hookline Shelf Patched Crewneck on a androgynous model with visible subcutaneous tech ports and mixed heritage features, standing in dim neon-lit alley. Moody blue and amber lighting emphasizes patchwork texture and contrasting thread work. Close detail shot of layered canvas, denim, and iridescent thermal patches across shoulder and chest. Urban GLMZ backdrop with rain-slicked pavement and flickering holo-ads. Gritty, documentary style. --ar 2:3 --v 6"
 }

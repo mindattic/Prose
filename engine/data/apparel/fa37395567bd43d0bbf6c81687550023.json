@@ -36,5 +36,26 @@
     "Patient Zero",
     "Tessera Corponation",
     "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A floor-length formal gown with an architectural silhouette that celebrates rather than conceals bodily modification. The garment reads as haute couture with a defiant edge—elegant without apology, structured without rigidity. Two vertical slit channels frame the upper back like intentional design rather than accommodation, creating a striking negative-space pattern down the spine. The overall impression is of a wearer who has claimed space in formal society on their own terms.",
+    "fit": "Tailored through the bodice and waist with a graceful A-line skirt that allows freedom of movement. The structure is precise without being restrictive; the dorsal panel system sits flush against the body without compression. The gown accommodates winged modifications naturally while maintaining a sleek silhouette for unmodified wearers.",
+    "primary_material": "High-grade silk-analog synth-fabric with the weight and drape of natural silk but enhanced durability and thermal regulation. The reinforced slit channels use a ballistic microweave for structural integrity.",
+    "texture": "Smooth and lustrous across the main body with a subtle sheen that catches light. The bias-cut trim framing the dorsal slits is slightly ribbed for contrast and grip. Overall surface is pristine and refined with subtle structural quilting at stress points.",
+    "color_scheme": "Available in eight colorways; typical palette includes deep jewel tones (sapphire, emerald, amethyst), neutral elegance (charcoal, ivory, platinum), and statement shades (blood red, gold-black). Contrasting bias-trim in complementary or contrasting metallics. Optional bioluminescent trim in cyan, violet, or soft gold adds an ethereal shimmer to evening wear.",
+    "closures": "Invisible magnetic snaps concealed along the rear bodice seam and a side-zip closure that runs from hip to armpit. The slit channels feature optional friction-fit reinforcement clips that can be engaged or left open depending on the wearer's modification presentation.",
+    "distinctive_features": [
+      "Twin reinforced dorsal slit channels from mid-shoulder-blade to hip with contrasting bias-cut framing",
+      "Intentional architectural negative space that frames spinal/dorsal modifications as design feature rather than accommodation",
+      "Tail-accommodation standard at rear hem with reinforced cutaway",
+      "Hidden interior pockets at side seams",
+      "Optional bioluminescent trim upgrade compatible with subcutaneous bio-LED implants",
+      "Orvana Atelier signature hallmark embossed on interior waistband",
+      "Thermal-regulation micro-mesh integrated into side panels"
+    ],
+    "tier_indicator": "Upper Tier 3 / Lower Tier 2 luxury aspiration—expensive enough to signal investment and intentionality, accessible enough for working-modified professionals to save toward",
+    "cultural_context": "Signals TESSERA-adjacent social circles, geneware-positive identity, and refusal to hide bodily modification in formal spaces. Wearing this in conservative corpo environments is a deliberate statement of autonomy; in mixed-modification social spaces it is simply correct formal wear. Popular among modified artists, mid-level corpo rebels, and high-status street culture figures.",
+    "condition_typical": "When new: pristine and structured. When worn: broken-in at stress points with a soft patina developing on the silk-analog. Maintained pieces show no wear; heavily-used pieces may develop subtle creasing along the dorsal channels from repeated modification flexing—a mark of authenticity."
+  },
+  "image_prompt": "High-fashion cyberpunk photograph of a model wearing the Orvana Wing-Slit gown, posed from rear three-quarter angle to showcase the striking dorsal slit channels framed in metallic bias-trim. Model has subtle iridescent back tattoos or subcutaneous bioluminescent implants visible through the slits, creating an ethereal glow. Floor-length skirt flows dramatically; deep jewel-tone fabric (emerald or sapphire) catches moody atmospheric lighting. Dark urban backdrop with rain-slicked streets and distant neon signage. Bioluminescent trim glows softly at edges. Cinematic, elegant, defiant. --ar 2:3 --v 6"
 }

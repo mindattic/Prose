@@ -45,5 +45,41 @@
     "restricted",
     "augmentation_counter"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Aybek Alvarez-Okonkwo",
+    "Fanta Kato-Adomako",
+    "Lazarus LX-2 'Lab Rat'",
+    "MERIDIAN",
+    "Nnenna Boateng-Szymański",
+    "Static",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+    "Tessera Corponation",
+    "Uncle Jun's Synth-Noodle Window",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Yusra Ntambwe-Cakić"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, tapered baton with a distinctly medical aesthetic — more clinical instrument than street weapon. The head widens into a ergonomic striking surface with visible prong geometry. The overall silhouette suggests precision engineering rather than brute force.",
+    "dimensions": "Length: 620mm (24.4 inches). Striking head diameter: ~45mm. Grip section: ~35mm diameter.",
+    "weight_description": "Moderate and well-balanced — 890g feels substantial without being unwieldy, weight distributed toward the head for contact authority but light enough for sustained one-handed use during extended security operations.",
+    "primary_material": "Aerospace-grade polymer composite frame with steel contact prongs. Conductive gel reservoir system integrated into the striking head.",
+    "finish": "Matte charcoal polymer body with brushed stainless steel prong assembly. Contact surfaces show subtle iridescent shimmer from embedded conductive gel layers visible through semi-translucent polymer windows.",
+    "color_scheme": "Charcoal gray primary with steel silver prong tips. Minimal accent — small Asante Wellness Clinics logo in white. Status indicator strip (blue when charged, amber during calibration) runs the length of the grip.",
+    "grip_texture": "Textured polymer with subtle ribbing for secure purchase in gloved or bare hands. Slightly tacky, non-slip finish. Grip knurling increases toward the pommel.",
+    "distinctive_features": [
+      "Dual contact prongs (2.5cm separation) designed for skull-surface contact geometry",
+      "Semi-translucent polymer windows along the striking head revealing conductive gel cartridge",
+      "Firmware version display (small LCD window showing 'NeuroSafe v4.1')",
+      "Conductive gel cartridge indicator with remaining application count (0-50)",
+      "Capacitive charging port recessed into pommel (TESSERA inductive dock compatible)",
+      "Three micro-LED status indicators: charge status, thermal monitoring, firmware validation",
+      "Small medical warning diamond etched into polymer near the grip transition",
+      "Frequency tuning dial (1.2-4.8 GHz markings) on the upper grip section"
+    ],
+    "manufacturer_markings": "TESSERA CORPORATION embossed in small letters on grip; Asante Wellness Clinics subsidiary stamp on the striking head. Serial number etched beneath the frequency dial. Regulatory compliance marks (Arcturus-licensed, corporate-security-only) printed on the lower grip.",
+    "condition_typical": "Usually pristine or well-maintained — corporate security inventory is carefully logged. Gel cartridge windows may show minor residue from contact applications. Well-used examples show subtle grip wear and occasional micro-scratches on the polymer body, but functional integrity remains high."
+  },
+  "image_prompt": "Product photography of the TESSERA NDB-2 'Static' melee weapon: sleek charcoal polymer baton with brushed steel dual contact prongs, held horizontally in a gloved corporate security hand against a dark reflective surface. Dramatic side-lighting highlights the semi-translucent gel cartridge windows and the iridescent shimmer of conductive surfaces. Cool blue accent lighting emphasizes the status LED indicators on the grip. Clinical, precision-engineered aesthetic. Shallow depth of field isolates the striking head. Cyberpunk corporate security equipment. --ar 3:2 --v 6"
 }

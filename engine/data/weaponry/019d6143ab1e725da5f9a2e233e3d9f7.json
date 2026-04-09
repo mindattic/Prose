@@ -52,5 +52,38 @@
     "shelf",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus UW-8 'Barracuda'",
+    "GLMZ",
+    "Kamala Mori-Sefa",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Nenad Vargas-Baffour",
+    "Shelf Life",
+    "Sweeper-11",
+    "TESSERA PG-2 'Signature'",
+    "The Quiet Room",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively inert-looking cylindrical pod, roughly the size of a clenched fist. Its featureless exterior suggests industrial sensor hardware rather than weaponry — deliberately mundane, designed to blend into technical environments. The casing tapers slightly at one end where the pressurized canister terminus sits. No visible trigger mechanism, no obvious ignition points.",
+    "dimensions": "Height: 12 cm, Diameter: 6 cm, Barrel equivalent: N/A (spheroid charge body)",
+    "weight_description": "Compact and dense — feels heavier than its modest size suggests due to the pressurized internal canister and catalytic payload. Roughly 1.1 kg sits comfortably in a gloved palm but carries the heft of concentrated lethality.",
+    "primary_material": "Ablative ceramic composite casing — engineered to rupture cleanly at predetermined pressure thresholds without fragmenting into secondary shrapnel. The ceramic is fused with carbon-fiber lattice reinforcement.",
+    "finish": "Matte charcoal-gray with a barely perceptible surface texture — intentionally non-reflective to avoid catching light or thermal imaging. The finish is industrial and austere, designed to mimic the appearance of commercial-grade pressure vessels.",
+    "color_scheme": "Matte gray-black primary, with a minimal accent stripe (industrial yellow or neutral silver) marking the canister terminus. No branding paint; markings are recessed.",
+    "grip_texture": "Smooth ceramic composite exterior — slightly cool to touch, frictionless. Not designed for a traditional grip; operators typically cradle it or palm it briefly before placement.",
+    "distinctive_features": [
+      "Recessed pressure-release valve cap at the crown (concealed unless inspected closely)",
+      "Faint hairline seam running the casing length — indicates ablative panel construction",
+      "Minute thermal-compensation grooves etched into the surface (functional, not decorative)",
+      "A subtle asymmetry at the terminus where piezoelectric ignition module sits just beneath the casing",
+      "No visible safety mechanisms or armed/disarmed indicators",
+      "Post-deployment, surface may show slight stress fracturing from internal pressure"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo — a small, recessed stamp near the base, barely legible without magnification. Serial plate is internal-only, sealed beneath the casing. No external warning labels or legality stamps (military-grade suppressors).",
+    "condition_typical": "Field units appear pristine and factory-sealed, as shelf-life degradation is critical; once deployed or canister integrity is breached, the charge becomes inert within 6 hours. Never field-scarred or battle-worn — either functional or expended."
+  },
+  "image_prompt": "Close-up product photograph of a cylindrical ceramic composite charge pod, approximately 12 cm tall, matte charcoal-gray finish, resting on a dark tactical surface or held in a gloved tactical hand against shadow. Dramatic side-lighting reveals minimal surface texture and the subtle pressure-relief terminus. Emphasize the deceptive, industrial-sensor appearance of the casing. Cool-temperature lighting dominates; hint of thermal vignetting around the edges suggesting latent energy. Cyberpunk military-equipment aesthetic, clinical and austere. No visible branding beyond subtle recessed logo. Environment: dark metallic background, shallow depth of field. Aspect ratio 3:2, v6 quality --ar 3:2 --v 6"
 }

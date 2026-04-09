@@ -37,5 +37,33 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Free Assembly",
+    "Slagworks Industrial",
+    "The Resonance Communion",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist parabolic dish weapon mounted on a tripod or vehicle frame. The RH-3 resembles a massive satellite receiver crossed with a bass amplifier—all curved geometry and deliberate acoustic engineering. It presents as a weapon of structural violence rather than ballistic elegance.",
+    "dimensions": "Parabolic dish diameter: 120 cm; depth from mount point to emitter focus: 85 cm; tripod spread: 145 cm wide × 160 cm long; total height when mounted: 210 cm. Emitter assembly weighs 62 kg but spans roughly 145 cm at widest points.",
+    "weight_description": "Hefty, immobile without equipment. The parabolic dish has mass that demands respect—it requires at least two operators and solid mounting. Not a shoulder-fired weapon; feels anchored, permanent, geological.",
+    "primary_material": "Aerospace-grade titanium composite for the parabolic dish; reinforced steel subframe and tripod; internal layering of acoustic dampening ceramics and meta-materials to focus infrasonic projection.",
+    "finish": "Matte industrial gray with subtle heat-stressed bronze patina on the dish interior from sustained acoustic resonance. Exterior shows weather-resistant polymer coating. Mounting brackets display bare welded steel with minimal finish—functional, not decorative.",
+    "color_scheme": "Gunmetal gray primary; dark bronze acoustic interior of parabolic dish; charcoal black control interface and junction boxes. Accent: thin Φ-cyan power indicator lines running along the emitter rim.",
+    "grip_texture": "Grip surfaces use textured rubberized composite for operator hand holds on the tripod adjustment wheels. Control panel buttons are raised tactile switches with slight resistance. Cable connections are armored with braided polymer sleeves.",
+    "distinctive_features": [
+      "Massive parabolic dish with visible internal acoustic layering—honeycomb ceramic weave visible at certain angles",
+      "Ring of micro-vents around the focal point emitter where infrasonic pulses concentrate",
+      "Triangulated tripod with adjustable height and azimuth/elevation control wheels etched with degree markers",
+      "Power coupling port on rear frame with heavy-duty connector housing—glowing Φ-cyan status indicator when active",
+      "Vibration dampening isolators at all tripod feet—visible as spring-loaded cylindrical assemblies",
+      "Serial plate mounted on starboard side of frame: ZHENG-DAO HI | RH-3 EARTHQUAKE | MMXXVI | Military Restricted",
+      "Deep linear scoring on the dish surface—evidence of acoustic testing or field use",
+      "Faint concentric ring patterns in the finish suggesting frequency calibration marks"
+    ],
+    "manufacturer_markings": "ZHENG-DAO HEAVY INDUSTRIES logo stamped in sharp sans-serif on the control interface housing. Serial number plate in top-right of rear frame assembly. Small frequency specification placard mounted near the emitter focus point. Manufacturing date stamp (MMXXVI) on the tripod joint.",
+    "condition_typical": "Field-worn but meticulously maintained. The parabolic surface shows micro-abrasions from years of acoustic discharge, with subtle stress discoloration patterns radiating from the focal emitter. Tripod joints are clean and lubricated; mounting hardware shows signs of repeated calibration adjustments. No visible structural damage—this is a weapon that accumulates evidence through subtlety rather than obvious battle scars."
+  },
+  "image_prompt": "Professional product photography of Zheng-Dao Resonance Hammer RH-3 mounted on industrial tripod, angled 3/4 view against matte black studio background. Dramatic side-lighting with electric blue accent light reflecting off the parabolic dish interior, revealing acoustic honeycomb patterns. Gloved hand positioned on tripod adjustment mechanism for scale. Show metallic sheen on titanium dish, dark bronze interior recession, and glowing Φ-cyan power indicator near the focal emitter ring. Industrial brutalist aesthetic with hints of cyan neon. Shallow depth of field on control panel. --ar 3:2 --v 6"
 }

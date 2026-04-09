@@ -53,5 +53,42 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions EL-9 'Heron'",
+    "Free Assembly",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Irontide Tidal Energy",
+    "Kadiatou Bergstrom-Konate",
+    "Nurlan Holmberg-Dembele",
+    "Palladian Construction",
+    "PulsePoint ThermoLayer Thermal Regulation Implant",
+    "Tessera Nexus Town Car",
+    "The Pure Hand",
+    "Tomasz Wren",
+    "Volkov-Saito Precision VS-O/U Sport 'Duelist'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutal marriage of industrial tool and close-combat weapon — a heavy, purposeful shaft that tapers to a glowing amber tip when activated. The overall silhouette reads as a polearm crossed with construction equipment: brutalist, overbuilt, uncompromising. At rest, it's a dull industrial object; powered, it becomes a beacon of lethal heat.",
+    "dimensions": "Total length: 130 cm (handle 90 cm, lance tip 40 cm). Shaft diameter: 4.2 cm. Tip width at widest point: 3.8 cm.",
+    "weight_description": "Hefty and purposeful — 3.8 kg demands commitment from the user, front-weighted toward the tip. Balanced for sustained contact pressure rather than quick strikes. Feels like swinging concentrated intention.",
+    "primary_material": "Reinforced steel shaft with hardened high-carbon ferrous alloy lance tip. Copper-beryllium induction coil wound tightly around the tip section, shielded with low-conduction polymer casing.",
+    "finish": "Industrial matte black powder coat on the handle section, showing practical wear at grip zones. The ferrous tip itself has a brushed metallic finish that oxidizes to dull charcoal when powered down; when active, the amber glow overwhelms surface detail. Visible heat distortion around the coil housing during operation.",
+    "color_scheme": "Charcoal-black steel body with burnt orange/amber tip when unpowered (oxidized ferrous surface). When activated: deep glowing amber-orange radiating from the tip, with subtle heat shimmer visible along the coil housing. Accent color: industrial yellow warning striping on the handle near the grip.",
+    "grip_texture": "Rubberized polymer grip section with shallow vertical ridges for purchase, rated for wet/contaminated conditions. Bare steel control collar at mid-shaft where the operator's guide hand sits. Slight tackiness to the rubber from age and handling.",
+    "distinctive_features": [
+      "Tightly wound copper-beryllium coil visible beneath translucent polymer shielding around the tip section — geometric grid pattern of windings",
+      "Deep recessed activation button on the shaft, lever-style, requiring thumb pressure and intentional contact",
+      "Heat exhaust vents along the coil housing, arranged in asymmetrical staggered rows",
+      "Status indicator LED (green/red) embedded in the top of the grip collar, visible only from above",
+      "Ferrous tip has a pronounced edge — sharpened but not knife-like, more of a cutting chisel than blade",
+      "Faint PALLADIAN CONSTRUCTION stamp on the handle, partially worn",
+      "Discoloration around the base of the tip section from repeated heating cycles",
+      "Cable conduit running along the shaft toward the backpack mount interface (when backpack cell used)"
+    ],
+    "manufacturer_markings": "PALLADIAN CONSTRUCTION logo — a stylized angular 'P' — stamped on the upper handle section, approximately 12 cm from the grip. Model designation 'ITL-5' embossed below. Serial number etched into a recessed plate on the mid-shaft (often obfuscated on field units). Regulatory compliance markings in microscopic text near the activation button.",
+    "condition_typical": "Well-maintained industrial tool showing practical use. No deep battle scarring, but visible oxidation staining around the tip from repeated thermal cycles. Grip rubber shows polished wear patterns from gloved operation. Minor dents in the matte black shaft — the result of being used as a prying lever. Some units show field-applied tape or cord wrapping at the grip. The ferrous tip may show micro-fracturing or slight warping on units pushed beyond rated operational parameters."
+  },
+  "image_prompt": "Product photography of Inductive Thermal Lance, 90cm reinforced steel industrial melee weapon. Weapon mounted vertically on dark brushed steel surface, shot from slightly offset angle showing ferrous tip detail. Lance tip glowing deep amber-orange with visible heat distortion, copper-beryllium coil windings visible beneath translucent polymer shielding. Matte black shaft with yellow warning striping at grip zone. Dramatic side-lighting emphasizing the thermal glow against shadows, with metallic rim-light defining the steel shaft. PALLADIAN CONSTRUCTION marking visible on upper handle. Cyberpunk industrial aesthetic, brutalist design language. Shot in high contrast dramatic lighting, steam/heat shimmer effect around the activated tip. --ar 3:2 --v 6"
 }

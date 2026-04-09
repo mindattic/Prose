@@ -45,5 +45,39 @@
     "predictive",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "GLMZ",
+    "Irontide Tidal Energy",
+    "Kamala Blomberg-Konadu",
+    "Nika Svensson-Kone",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "The Transparency Mandate",
+    "The Undertow",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purposeful combat pistol with aggressive angular lines and a forward-swept profile. The frame appears almost organic in its curves—designed to nestle into an augmented hand with neural-link ports visible along the grip spine. The slide has a distinctive forward cant, and the overall silhouette suggests predatory efficiency rather than traditional firearm aesthetics.",
+    "dimensions": "Length: 21.5cm | Barrel: 10.2cm | Width: 3.8cm | Height: 13.7cm (including grip module)",
+    "weight_description": "Deceptively light and balanced—0.95kg feels like holding compressed intention rather than mass. The weight distribution pulls slightly forward, encouraging the shooter's hand toward the target naturally. Despite its heft, it feels almost weightless to someone with military-grade cybernetic augmentation.",
+    "primary_material": "Aerospace-grade titanium alloy frame with reinforced polymer grip module housing integrated neural interface contacts",
+    "finish": "Matte gunmetal with brushed titanium accents. The slide bears a faint iridescent sheen—likely from a proprietary thermal-management coating. Grip spine shows subtle wear around the neural-link contact points where countless hands have gripped it.",
+    "color_scheme": "Deep gunmetal gray primary with platinum and electric blue accent striping along the slide and magazine well. Neural-link contact pads glow a soft cyan when powered.",
+    "grip_texture": "Textured synthetic grip with embedded neural-interface contact pads that feel like smooth, cold metal nodes integrated into the polymer. Faintly sticky to the touch—likely designed to interface with augmented skin or specialized gloves. Micro-ridges provide grip purchase while minimizing friction against augmented hands.",
+    "distinctive_features": [
+      "Integrated BCI neural-link port on grip spine with recessed platinum contacts",
+      "Dual micro-LED status indicators (cyan and amber) embedded in the slide adjacent to rear sight",
+      "Minimalist sight package—integrated heads-up display relay rather than traditional iron sights",
+      "Proprietary Tessera ballistic-computing module visible as a slight bulge on the left slide",
+      "Magazine well shows faint etching: 'TESSERA CORPONATION | ASSET RECOVERY PROTOCOL'",
+      "Trigger guard slightly oversized—designed for gloved or augmented trigger fingers",
+      "Muzzle features a threaded suppressor mount with Tessera proprietary threading",
+      "Serial number (if present) would be laser-etched rather than stamped—reducing vibration signature"
+    ],
+    "manufacturer_markings": "Tessera Corponation logo—a geometric tessellating pattern—stamped subtly on the slide's left side just forward of the rear sight. Below it: 'TK-20 APEX | MANDATE | TIER-RESTRICTED ASSET'. The grip module bears a tamper-evident holographic seal that shifts between blue and red, indicating operational status.",
+    "condition_typical": "Pristine to lightly maintained. Units in the field show minimal wear due to restricted circulation and careful operator handling. Any black-market examples would show signs of desperate maintenance—improvised neural-link repairs, scratched contact pads, or crude attempts to circumvent the biometric lock. Official Tessera units are immaculate, treated as irreplaceable military hardware."
+  },
+  "image_prompt": "Product photography of the Tessera TK-20 Apex 'Mandate' smart-linked pistol. Weapon mounted on a dark charcoal composite surface with cyberpunk studio lighting—dramatic side-light from upper left casting sharp shadows, with a subtle cyan glow emanating from the integrated BCI neural-link port on the grip spine. The slide's iridescent thermal-coating catches light subtly. A gloved hand (augmented with visible chrome knuckle joints) cradles the weapon, finger positioned along the trigger guard. Tungsten studio lights create high-contrast silhouette. The muzzle points slightly toward viewer. Include atmospheric lens flare from the neural-link glow. Immaculate condition, sharp focus on the slide's ballistic-computing module and the holographic Tessera security seal on the grip. Dark background with subtle grid pattern suggesting corporate R&D facility. Cinematic, high-end military hardware aesthetic. --ar 3:2 --v 6"
 }

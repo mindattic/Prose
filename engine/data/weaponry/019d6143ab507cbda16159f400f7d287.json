@@ -56,5 +56,34 @@
     "hover",
     "lethal"
   ],
-  "parent_corponation": "Vantablack Media"
+  "parent_corponation": "Vantablack Media",
+  "related_entities": [
+    "Axiom Systems White Noise Bubble Generator WNB-1",
+    "GLMZ",
+    "Lumen",
+    "TESSERA PG-2 'Signature'",
+    "The Fathom Line",
+    "The Swarm",
+    "Vantablack Media"
+  ],
+  "physical_description": {
+    "visual_profile": "A flat, perfectly regular hexagonal tile with a matte charcoal finish. The top surface is dominated by a dense honeycomb array of micro-lenses arranged in concentric patterns around a central hub. The device reads as almost organic—reminiscent of an insect's eye or a cross-section of crystalline mineral. Despite its delicate appearance, it carries an unsettling precision.",
+    "dimensions": "120 mm across hexagonal face, 18 mm depth. Roughly the size of a coaster, weighs less than two hundred grams.",
+    "weight_description": "Deceptively light. Feels substantial enough to hold confidence, but so light it seems to hover in the palm. Unbalanced weight distribution suggests dense internal architecture packed into minimal volume.",
+    "primary_material": "Advanced polymer composite (likely carbon-reinforced) with integrated optical glass micro-lensing. The hexagonal frame is reinforced at edges with what appears to be aluminum honeycomb.",
+    "finish": "Deep matte charcoal with a subtle iridescent bloom across the lens array—a rainbow oil-slick quality that shifts when viewed at angles. The finish is deliberately light-absorbing; VANTABLACK lineage evident in the near-absence of surface reflection.",
+    "color_scheme": "Charcoal-black primary with iridescent optical purple, cyan, and amber highlights visible across the lensed surface only when light strikes directly. Minimal branding.",
+    "grip_texture": "Beveled hexagonal edges with microscopic grip texture—cool to touch, slightly tacky micro-polymer coating designed to prevent slipping during deployment. Edges are prone to catching on fabric.",
+    "distinctive_features": [
+      "Concentric honeycomb micro-lens array covering 70% of top surface—each lens roughly 2mm diameter, creating hypnotic tessellated pattern",
+      "Central hub containing barely-visible thermal and motion sensor apertures",
+      "Thin discrete LED indicator ring (red/yellow/green) recessed into the edge—only visible at certain angles",
+      "Nearly invisible ducted-fan exhaust ports along the beveled edge—air movement almost inaudible",
+      "Hexagonal base showing faint wear marks from deployment and recovery",
+      "Etched serial number on underside, extremely small, requiring magnification to read"
+    ],
+    "manufacturer_markings": "The Drift Monitoring Division stamp (Φ motif integrated into hexagon geometry) laser-etched subtly into one edge, roughly 8mm. VANTABLACK reference buried in micro-text on the underside alongside certification marks and a barcode.",
+    "condition_typical": "Field units show faint scuff marks on the polymer frame and micro-scratches across lens surfaces from deployment. Some lenses may show minor dust or particulate embedding. Battery charge state is often unknown after operation. Many recovered units bear adhesive residue from deployment netting."
+  },
+  "image_prompt": "Overhead macro product photography of a matte charcoal hexagonal optical tile drone (TODD-2 'Blindspot'), 120mm across, shot from directly above on a dark reflective surface with dramatic side-lighting at 45 degrees revealing iridescent micro-lens array detail. The honeycomb lens pattern creates mesmerizing optical interference visible in the light. Shallow depth of field, sharp focus on the lens array showing each micro-lens catching light in cyan and purple spectrum. Incorporate a gloved hand (black tactical glove) positioning the hexagonal tile to show scale and edge beveling. Dark minimalist cyberpunk aesthetic, near-black background, single cold LED indicator glowing amber on the edge. Ultra-detailed texture showing the VANTABLACK-grade finish and polymer composite material. --ar 3:2 --v 6"
 }

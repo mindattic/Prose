@@ -42,5 +42,34 @@
     "venue_security",
     "immunological"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Kwabena Ilyich Ferreira-Sattout",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Red Circuit RC-Pit 'Dogfighter'",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, aggressive canister with a distinctly utilitarian security aesthetic. The form factor suggests industrial efficiency—not elegant, but unmistakably purposeful. Wide-mouth nozzle dominates the top, splayed outward like a predator's maw. The overall impression is clinical and hostile.",
+    "dimensions": "16cm tall × 5.5cm diameter (canister body); nozzle spreads to approximately 8cm width at the dispersal head",
+    "weight_description": "Deceptively light in hand—0.22kg makes it feel almost negligible, but the wide base and forward-weight nozzle create a subtle top-heavy bias that demands control. Feels like a precision tool despite its compact mass.",
+    "primary_material": "Aluminum pressure canister with aerospace-grade polymeric nozzle assembly. Internal bladder system for compound containment.",
+    "finish": "Matte black base with high-gloss crimson stripe running vertically down the primary face. Nozzle finished in satin gunmetal. Heavy machining marks visible on the canister seams—no effort at concealment.",
+    "color_scheme": "Deep matte black body with arterial-red accent stripe and chrome nozzle. Minimal branding in white sans-serif typeface.",
+    "grip_texture": "Rubberized polymer grip panel with fine knurling for retention even in sweaty or gloved hands. Slightly tacky to the touch—intentional for security use.",
+    "distinctive_features": [
+      "Wide-fan nozzle with 120-degree dispersal angle—engineered for area coverage rather than precision",
+      "Pressure gauge indicator on upper canister (small translucent window showing charge level)",
+      "Burst-count mechanical counter (3-digit dial) mounted on grip—tracks deployments",
+      "Safety lever lock integrated into the trigger guard with audible detent click",
+      "Micro-etched serial number and Guardian Systems Φ logo on the canister shoulder",
+      "Faint residual red staining around the nozzle edges from manufacturing quality control tests",
+      "Thermal warning stripe on lower third that darkens if canister exceeds safe pressure threshold"
+    ],
+    "manufacturer_markings": "Guardian Systems corporate logo (shield with stylized Φ symbol) stamped in chrome on upper canister. 'DA-2 SCARLET' printed in white block letters across the matte-black face. Manufacturer address and hazard classifications in microscopic text along the base rim.",
+    "condition_typical": "Arrives in pristine condition from the factory, but in field use shows rapid cosmetic wear—scuffing on the grip from holster friction, minor impact marks on the canister from belt mounting, and occasional tooling residue around the pressure gauge. Security teams rarely maintain cosmetic condition; functional integrity is the only metric."
+  },
+  "image_prompt": "Professional product photograph of a Guardian Systems DermAlert DA-2 'Scarlet' spray canister. Weapon mounted vertically on a dark gunmetal surface, viewed from a 45-degree angle. Dramatic side-lighting (cool LED key light from left, warm practical light from right) casts sharp shadows emphasizing the wide nozzle geometry. Canister shows matte black body with arterial-red vertical accent stripe and chrome nozzle. Faint residual red compound visible around nozzle rim. In alternate shot, canister held firmly in a gloved tactical hand (black reinforced polymer glove with chrome knuckle plating), finger positioned on trigger guard safety lever. Environment: antiseptic security aesthetic—industrial flooring, minimalist staging. Wet-surface reflection beneath canister. Cyberpunk security product photography style, clinical and menacing. --ar 3:2 --v 6"
 }

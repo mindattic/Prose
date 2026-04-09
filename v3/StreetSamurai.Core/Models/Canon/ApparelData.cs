@@ -1,3 +1,4 @@
+using System.Text.Json;
 using System.Text.Json.Serialization;
 using StreetSamurai.Core.Interfaces;
 
@@ -27,4 +28,5 @@ public class ApparelData : ICanonEntity
     [JsonPropertyName("gene_compatible")] public bool GeneCompatible { get; set; }
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonExtensionData] public Dictionary<string, JsonElement>? ExtraData { get; set; }
 }

@@ -42,5 +42,34 @@
     "compliance",
     "less_lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Nika Svensson-Kone",
+    "Parliament",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Tessera Corponation",
+    "Vantablack PA-1 'Pacifier'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist pump-action shotgun with an unmistakably safety-orange receiver and stock that screams 'non-lethal.' The silhouette is aggressive and angular, resembling a standard shotgun but immediately distinguished by its vivid warning coloration. Built for institutional use rather than aesthetics.",
+    "dimensions": "Overall length: 96 cm | Barrel length: 45 cm | Width at receiver: 8 cm | Height including sights: 12 cm",
+    "weight_description": "Hefty but manageable at 3.0 kg — balanced toward the receiver with a forward-heavy feel from the modified 12-gauge barrel. Designed for controlled, deliberate use by personnel in full gear.",
+    "primary_material": "High-impact polymer receiver and stock with reinforced steel barrel and internal mechanism. Foregrip area uses treated aluminum for durability.",
+    "finish": "Safety-orange powder-coated polymer with matte-black steel barrel. The orange is vivid and unapologetic, intentionally non-tactical. Barrel shows industrial-grade brushed steel with faint machining marks.",
+    "color_scheme": "Primary: International Safety Orange (RAL 2005 equivalent) on receiver and stock | Secondary: Matte black on barrel, gas tube, and sights | Accent: Chrome on pump handle and trigger guard",
+    "grip_texture": "Rubberized pistol grip with aggressive front strap stippling for secure handling even with gloved hands. Pump handle is bare anodized aluminum with knurled texture for positive cycling action.",
+    "distinctive_features": [
+      "High-visibility orange receiver with Tessera corporate logo stamped in black",
+      "Modified bore indicator etched below the chamber in warning red",
+      "Ghost ring rear sight with high-visibility orange post front sight",
+      "Proprietary chamber boss with mechanical witness holes showing less-lethal-only status",
+      "Vented heat shield running the length of the barrel for rapid cooling during rapid-fire cycles",
+      "Ammunition counter window on the left side of the receiver showing round count",
+      "Tactical rail mounted on top for optional optics (rarely used in crowd control scenarios)",
+      "Wear marks and scuff patterns typical of institutional equipment: white stress lines on orange from holster carry, barrel fouling residue from less-lethal cartridges"
+    ],
+    "manufacturer_markings": "TESSERA CORPORATION embossed in white on left side of receiver | 'TKS-LL PACIFIER' in black stencil on right side | Serial number plate mounted under pump handle with manufacturing date (GLMZ compliance) | 'LESS-LETHAL ONLY' warning stamped on barrel in international orange and black striped pattern",
+    "condition_typical": "Field-worn institutional finish: orange polymer showing minor stress cracks and scuff marks from storage and transport, barrel bore slightly fouled with residue from bean-bag and rubber round use, rail mounting points showing use, grip stippling worn smooth in high-contact areas. Maintenance is strict but cosmetic degradation is accepted as operational cost."
+  },
+  "image_prompt": "Product photography of the Tessera TKS-LL 'Pacifier' shotgun: high-visibility safety orange pump-action shotgun with matte-black barrel and steel internals, positioned at 45-degree angle on reflective dark gunmetal surface. Held by a gloved corporate security hand (black tactical glove with subtle neural-interface micro-threading visible at wrist) in lower right frame. Dramatic side-lighting from cool blue-white LED source highlighting the aggressive angles of the orange polymer receiver and the brushed-steel barrel texture. Dark shadows emphasize the modified bore and warning markings. Modern institutional aesthetic — clinical, purpose-built, authoritarian. Photographic style: documentary product catalog for Tessera Corporation security division. Include faint GLMZ industrial warehouse environment reflection in background. Cyberpunk 2226, corporate compliance equipment. --ar 3:2 --v 6"
 }

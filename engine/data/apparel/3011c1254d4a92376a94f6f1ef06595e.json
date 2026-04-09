@@ -39,5 +39,25 @@
     "GLMZ",
     "The Circuit",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting racing suit that hugs the torso and limbs like a second skin. The wearer appears streamlined and aggressive — built for speed and quick escapes. The suit is plastered with mismatched sponsor logos in neon and metallic inks, creating a chaotic patchwork aesthetic that reads as street-level rebellion.",
+    "fit": "Compression-athletic, tapered through the chest and arms with articulated joints at elbows and knees for unrestricted movement. Cut shorter in the torso to allow rapid bail dismounts from moving vehicles.",
+    "primary_material": "Flame-resistant aramid blend (Nomex-equivalent) with reinforced ballistic weave panels at impact zones. Base layer is treated synth-leather for heat resistance.",
+    "texture": "Smooth, slightly glossy surface with visible stitching and heat-sealed seams. Sponsor logos are screen-printed with metallic and neon inks that feel slightly raised. Patched areas show rougher, matte texture where repairs have been made.",
+    "color_scheme": "Matte black or dark charcoal base with electric neon accents — bright cyan, acid green, hot pink, and orange sponsor logos scattered across chest, sleeves, and sides. Burn marks create darker, singed areas that contrast against the vibrant graphics.",
+    "closures": "Full-length friction-fit zipper down the front with reinforced pull-tab. Magnetic snap cuffs at wrists and ankles for quick removal.",
+    "distinctive_features": [
+      "Sponsor logos from shadow-economy businesses (crypto dealers, illegal modification shops, black-market medical clinics, Behemoth smugglers)",
+      "Visible burn marks and scorch patterns treated as decorative patina",
+      "Mismatched patch repairs in contrasting fabrics — some professional, some field-improvised",
+      "No official racing authority markings — purely grassroots circuit affiliation",
+      "Reinforced palm patches worn through from numerous high-speed dismounts",
+      "Heat-discoloration halos around logos where the ink has degraded from circuit fires"
+    ],
+    "tier_indicator": "Tier 4–5 street economy. Not corporate-sanctioned; signals participation in ungoverned racing culture.",
+    "cultural_context": "Wearing this suit marks you as part of the Burnout Circuit — a racer, mechanic, fixer, or sponsor. It's a badge of belonging to GLMZ's illegal motorsport underbelly. The suit broadcasts: 'I've crashed hard and walked away. I know people who profit from danger.'",
+    "condition_typical": "Well-worn and battle-scarred. Burn marks are expected and valued. Patches accumulate over time. Some logos fade; newer sponsors get added. The suit ages visibly and wears its history like armor."
+  },
+  "image_prompt": "A cyberpunk racer in a matte-black flame-resistant racing suit plastered with neon cyan, pink, and green sponsor logos for illegal businesses. The suit shows visible burn marks, singed edges, and mismatched patch repairs across the chest and sleeves. The model stands in a dynamic lean, one hand gripping the suit's zipper, positioned against a rain-slicked GLMZ alleyway at night with holographic signs reflecting off wet pavement. Moody amber and cyan neon lighting casts sharp shadows. The suit's logos are crisp and bold despite weathering. Shot from the waist up, emphasizing the chaotic sponsor-logo patchwork and heat damage. Dark, gritty street-racing aesthetic. --ar 2:3 --v 6"
 }

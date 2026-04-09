@@ -48,5 +48,27 @@
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "TESSERA PG-2 'Signature'",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A full-length hooded cloak with an intentionally austere, almost architectural silhouette. The garment hangs like a heavy curtain, creating sharp geometric lines at the edges. The hood is deep and angular, designed to obscure facial features. On thermal imaging, the wearer appears as ambient environmental noise. Visually, the surface exhibits subtle chromatic drift and micro-distortion at range in low light—not invisible, but deliberately hard to track.",
+    "fit": "Deliberately oversized and voluminous to accommodate layered undersuit or tactical gear. The cut prioritizes concealment and functionality over form-fitting aesthetics. Shoulders are broad and reinforced. Fabric is stiff and maintains its shape rather than conforming to the body.",
+    "primary_material": "Phase-change metamaterial composite—a cutting-edge synth-polymer that actively shifts thermal signature in response to body heat and ambient temperature. Outer layer is a light-absorbing ballistic weave with embedded conductive threads.",
+    "texture": "Rigid and deliberately stiff, especially at seams and hem. The surface has a faint granular quality under close inspection—evidence of the metamaterial structure. Movement reveals a subtle mechanical rustling. Not designed for comfort; designed for function.",
+    "color_scheme": "Matte charcoal-grey with undertones of deep navy. Completely desaturated—no reflective trim or accent colors. The surface appears to absorb light rather than reflect it. Occasional subtle iridescent distortion when the phase-change material cycles.",
+    "closures": "Heavy-duty magnetic snap system down the front, paired with a friction-fit shoulder harness. A small integrated control panel (roughly 3cm square, recessed into the left inner chest) houses the thermal management and battery indicator. No traditional buttons or zippers—all closures are designed for rapid donning/doffing and minimal failure points.",
+    "distinctive_features": [
+      "Recessed control panel with haptic feedback buttons and LED status indicator",
+      "Integrated battery pack (8-hour capacity) housed in lower left seam pocket",
+      "Thermal sensor nodes embedded at shoulders, chest, and back",
+      "Reinforced edge-paneling at wrists and hem with micro-servo tension adjustment",
+      "Hidden equipment loops along inner seams",
+      "Axiom Defense Solutions logo (Φ-stamped insignia) on right shoulder—small, intentionally understated",
+      "No visible branding on outer surface; only a discrete QR-etched security tag near the hem",
+      "Stiff, deliberate wrinkles and fold-lines that suggest the material does not move naturally"
+    ],
+    "tier_indicator": "Tier 1-2 luxury, but inaccessible to most. Export-controlled corporate manufacturing. Street value on the grey market: 18,000-25,000 Φ. Ownership signals either deep corpo connections, criminal resources, or grey-market access.",
+    "cultural_context": "Worn by corporate security operators, fixers, extraction specialists, intelligence contractors, and very serious criminals. Wearing one announces: I have access to restricted technology, I can afford military-grade equipment, and I am not interested in looking fashionable. A statement of operational capability rather than style. Wearing it casually signals either paranoia or a credible threat profile.",
+    "condition_typical": "Pristine on first acquisition, then rapidly weathered through use. Stains and scoring on the outer surface are badges of operational history. Older units develop micro-cracks in the metamaterial structure, visible as faint seam-lines. Battery charging ports accumulate oxidation. A well-worn ThermoCloak is evidence of survival."
+  },
+  "image_prompt": "A full-length thermal stealth cloak on a cyberpunk-era tactical operator, shot from a 3/4 angle in a dimly-lit industrial corridor. The garment is matte charcoal-grey, stiff and angular, hanging like architectural structure rather than fabric. The deep hood shadows the wearer's face completely. In the left chest area, a faint LED indicator pulses blue-green. The background is out-of-focus neon infrastructure and rain-wet concrete. Subtle thermal distortion visible around the garment's edges in low light. The overall mood is ominous and functional—this is equipment, not fashion. Shot with hard rim lighting to emphasize the surface texture and stiffness. --ar 2:3 --v 6"
 }

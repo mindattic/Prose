@@ -39,5 +39,32 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus VMG-4 'Turret'",
+    "Brecken Yılmaz-Osei",
+    "Nika Svensson-Kone",
+    "Vespid Dynamics"
+  ],
+  "physical_description": {
+    "visual_profile": "A squat, aggressive turret with a forward-mounted barrel assembly and a broad trapezoidal base. The profile suggests predatory intent—compact and lethal. Multiple sensor pods crown the upper housing, giving it a multi-eyed appearance.",
+    "dimensions": "Height: 28 cm (barrel axis), Width: 22 cm, Depth: 18 cm. Barrel length: 12 cm.",
+    "weight_description": "8 kg of consolidated lethality—hefty enough to feel substantial, light enough for field repositioning. Dense, engineered weight.",
+    "primary_material": "Hardened polymer composite housing with integrated steel mounting points and a steel barrel assembly. Internal frame is carbon-steel for structural rigidity.",
+    "finish": "Matte charcoal polymer with brushed steel accent panels around the barrel shroud and mounting hardpoints. Thermal damping coating gives a slightly textured, non-reflective surface.",
+    "color_scheme": "Gunmetal gray primary with slate-black recesses around sensor clusters. Vespid accent stripe in industrial orange running along the barrel mounting rail.",
+    "grip_texture": "Not applicable—tripod-mounted platform. Mounting surfaces are cross-hatched steel for secure clamping.",
+    "distinctive_features": [
+      "Triple-lens sensor array (thermal, optical, acoustic) mounted in a rotating collar above the barrel",
+      "Caseless ammunition hopper port on right side, visible through translucent polymer window showing round count",
+      "LED status indicators in faint amber/green arrayed along the barrel shroud—active scanning, ammunition status, target lock",
+      "Vespid DYNAMICS embossed plate on the left mount housing with micro-etched model designation SAT-2",
+      "Fine crosshatch heat-sinking pattern across the barrel shroud",
+      "Exposed cable conduit routing from base to sensor collar, sheathed in braided steel",
+      "Articulated barrel clamp mechanism with tension adjustment knobs"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS logo stamped in reflective paint on the base mounting plate. Model SAT-2 micro-etched on a brushed steel data plate. Serial number and date code laser-marked on the internal hopper housing (visible through the round-count window).",
+    "condition_typical": "Field units are well-maintained but show patrol wear: minor scuff marks on the polymer housing, light dust accumulation on sensor lenses (quickly cleaned), occasional reinforced patch welding on mounting brackets from hard deployment. Battle-scarred units exhibit scoring around the barrel from micro-abrasion and slight warping in corner panels from sustained thermal stress."
+  },
+  "image_prompt": "Product photograph of a compact autonomous turret (Vespid Shrike SAT-2) mounted on a tactical tripod mount, positioned on a dark matte gunmetal surface. Dramatic side-lighting from upper left, revealing matte charcoal polymer housing, brushed steel barrel shroud, and triple-lens sensor array. Amber status LEDs glow softly. Clear visibility of the translucent ammunition hopper window on the right side. Vespid DYNAMICS branding visible on the base plate. Cyberpunk industrial aesthetic—cold, precise, predatory. Background: deep shadow with subtle bokeh of circuit traces. Shot from slight upper angle to emphasize the forward-mounted barrel and sensor position. Sci-fi weapons catalog style, hyper-detailed polymer and steel textures. --ar 3:2 --v 6"
 }

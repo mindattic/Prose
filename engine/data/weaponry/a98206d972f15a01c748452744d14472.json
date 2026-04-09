@@ -39,5 +39,38 @@
     "tier_1",
     "anti_grab"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "Fanta Kato-Adomako",
+    "Ira Volkov",
+    "Lazarus LX-5 'Siphon'",
+    "Nimbus",
+    "Phased Acoustic Neurostimulator PAN-3 'Tinnitus'",
+    "Stainless Steel",
+    "TESSERA TN-1 'Cradle'",
+    "The Fathom Line",
+    "The Question"
+  ],
+  "physical_description": {
+    "visual_profile": "A refined, minimalist ring with a slightly raised decorative bezel at the crown. From the front, it appears to be elegant jewelry — understated and professional. The bezel is the only visual indicator of its function: a small rotatable collar that hints at mechanical purpose without screaming 'weapon.' It sits comfortably on the finger, designed to pass as everyday wear.",
+    "dimensions": "Ring diameter: 18-22mm (varies by size 5-13). Bezel height above band: 4mm. Band width: 3.5mm. Electrode extension when activated: 3mm beyond bezel surface.",
+    "weight_description": "Barely noticeable on the hand — the titanium variant (14g) feels almost weightless, while the surgical steel (18g) has a substantial but not burdensome presence. The weight distribution is perfectly balanced across the band, preventing any rotation or drift during wear.",
+    "primary_material": "Surgical steel or titanium band with integrated micro-capacitor housing beneath the surface. Bezel constructed from the same primary material. Internal electrode assembly is surgical-grade stainless with ceramic insulators.",
+    "finish": "Polished surgical steel with a mirror-bright finish; brushed titanium with a matte gunmetal appearance; gold-plated variant with a warm 18k finish. All variants feature a subtle satin finish on the band that resists fingerprints. The bezel rotates with precision, showing minimal play.",
+    "color_scheme": "Steel: silver with subtle gray undertones. Titanium: gunmetal gray with faint iridescent highlights. Gold: warm champagne with platinum accent lines. All variants feature a thin dark line around the bezel rotation point where the mechanical gap sits.",
+    "grip_texture": "The band surface is smooth polished metal — cool to the touch and slightly tacky against bare skin due to micro-texturing. The bezel has precise knurling (fine crosshatch pattern) on its edge to allow secure rotation with the opposite hand's thumb or fingernail.",
+    "distinctive_features": [
+      "Rotatable bezel with mechanical detent — clicks 90 degrees into 'armed' position with tactile feedback",
+      "Hairline gap visible around bezel rotation point when rotated — shows mechanical sophistication",
+      "Tiny laser-etched charge indicator dots on the inner band (8 dots, one for each discharge) — visible when removed",
+      "Minimal branding: 'NIMBUS' engraved in microscopic text on the interior band, nearly invisible without magnification",
+      "Electrodes completely concealed beneath bezel when disarmed — no visible openings or seams",
+      "Slight luminescence from bezel face in low light — hint of embedded circuitry beneath polished surface"
+    ],
+    "manufacturer_markings": "Nimbus Security logo (stylized cloud symbol Φ) laser-marked on the interior band at the 6 o'clock position. Model designation 'NR-1' appears beside it. On gold-plated variants, hallmark stamps for authenticity appear near the maker's mark.",
+    "condition_typical": "Pristine when new and well-maintained by its wearer — daily wear shows no degradation. Polished surfaces may show micro-scratches and fingerprints from frequent bezel rotation during pre-arming. Used units may show slight darkening on the electrode contact points from residue, but this is invisible unless the ring is removed and closely inspected."
+  },
+  "image_prompt": "Professional product photography of a sleek Nimbus Security ShockRing NR-1 ring, displayed on a black matte surface under dramatic side-lighting that emphasizes the polished bezel. Show the ring from three angles: face-on showing the raised bezel, side profile revealing the thin band, and a close-up of the bezel knurling detail. Titanium variant preferred for gunmetal aesthetic. Include a subtle glow from the bezel edge suggesting internal circuitry. Photograph against deep charcoal background with warm accent lighting to showcase metal finish. Include the magnetic charging cradle in soft focus in the background. Cyberpunk aesthetic: clean, precise, deceptively elegant. Commercial product photography style. --ar 3:2 --v 6"
 }

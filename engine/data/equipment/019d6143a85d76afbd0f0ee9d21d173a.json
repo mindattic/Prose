@@ -77,5 +77,23 @@
     "The Skinners",
     "Vantablack-CNX",
     "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian spike or stake resembling agricultural sensor equipment—roughly the size of a tent peg or soil probe, with a tapered cylindrical body that widens slightly toward the base. Designed to blend into outdoor/industrial environments; looks like legitimate farm hardware at first glance.",
+    "dimensions": "40cm tall, 3cm diameter; comparable to a large surveying stake or garden marker",
+    "weight_description": "Lightweight and handheld at 0.4kg; easily carried in a tool belt, backpack, or buried in soil without drawing attention",
+    "primary_material": "Reinforced polymer composite body with sealed aluminum alloy internal frame; IP68-rated weatherproofing for field durability",
+    "finish": "Matte finish to minimize reflectivity; aged/weathered appearance typical of field-worn agricultural equipment",
+    "color_scheme": "Muted sage green or khaki primary body (agricultural camouflage); subtle black or dark gray accent band at the midpoint indicating the active transmission module; minimal branding",
+    "interface_elements": "Recessed multi-pin soil-charge induction port at the base; small tactile pushbutton (often hidden under a weather cap) for mode selection; faint LED indicator (dull amber when idle, cycling blue when active) visible through translucent polymer window near the top; no screen—entirely analog/mechanical actuation",
+    "distinctive_features": [
+      "Pseudo-random frequency-cycling indicator: subtle pulsing pattern in the LED that changes rhythm unpredictably, mimicking organic growth cycles",
+      "Soil-charge induction coils visible as faint metallic traces beneath translucent base section",
+      "Weathering and field scarring typical of actual agricultural tools—scratches, soil stains, corrosion patina around connector port",
+      "Intentionally unmarked or bearing faded IRONCLAD AGRISYSTEMS logo that looks like genuine equipment labeling"
+    ],
+    "manufacturer_markings": "Small embossed or printed IRONCLAD AGRISYSTEMS logo on upper segment; minimal regulatory stamps (agricultural compliance codes); model designation 'IAS-J7' in tiny print near the base—most units in circulation lack clear branding, either worn away or deliberately obscured",
+    "condition_typical": "Usually encountered partially buried in soil, propped in a planter box, or wedged into industrial ducting or scaffolding. Often caked with dried earth or urban grime. Activation status visible only by the subtle LED pulse; otherwise appears inert and unremarkable"
+  },
+  "image_prompt": "Product photography of a weathered sage-green agricultural sensor spike (40cm tall, 3cm diameter) lying on a worn metal workbench surrounded by soil, circuit components, and agricultural tools. Close-up detail shows the recessed induction port at the base and a faint blue LED cycling through the translucent window near the crown. Dramatic side-lighting casts sharp shadows, revealing scratches and field wear across the matte polymer body. Background shows blurred industrial/urban garden setting with corroded steel framework. Cyberpunk aesthetic: high contrast, cool blue and amber lighting, gritty texture. The Fallow appears both mundane and menacing—a trojan device disguised as farming equipment. --ar 3:2 --v 6"
 }

@@ -53,5 +53,44 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus BH-2 'Marrow'",
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Below the Threshold",
+    "GLMZ",
+    "Ihaia Nystrom-Keita",
+    "Kairos",
+    "Ringo Corponation",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Subdermal Shear Projector SSP-1 'Faultline'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "TESSERA PG-2 'Signature'",
+    "The Resonance Communion",
+    "The Threshold"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, precision instrument resembling a high-end sporting rifle crossed with medical imaging equipment. The silhouette is clean and purposeful—long, slender, almost elegant despite its lethal function. The barrel dominates the profile, appearing almost too thin for a weapon of its class, with subtle ribbed vents running its length. The overall impression is of careful engineering rather than brute force.",
+    "dimensions": "Length: 127 cm (with integrated barrel). Barrel length: 71 cm. Width across bipod: 34 cm when deployed. Height at scope rail: 18 cm.",
+    "weight_description": "Surprisingly balanced and light in hand at 5.6 kg—the weight is distributed along the barrel and stock to minimize fatigue during the extended tracking required for return-echo mapping. Not unwieldy; almost delicate by military standards, though the bipod adds substantive heft when deployed.",
+    "primary_material": "Aerospace-grade titanium alloy frame with carbon-composite barrel housing. The receiver is polished aluminum with precision-machined tolerances visible to the naked eye.",
+    "finish": "Matte gunmetal gray with a subtle brushed texture that minimizes reflection. The barrel housing exhibits a darker, almost black anodized finish that contrasts sharply with the lighter receiver. Wear patterns show as pale scuff marks on high-contact points—bipod mounts, charging mechanism, scope rails.",
+    "color_scheme": "Primary: gunmetal gray and deep charcoal. Accent: brushed aluminum trim along the scope rail and trigger guard. RINGO corporate blue (RGB: 0, 102, 204) appears as small accent strips near the magazine well and on the AcoustiCell power coupling.",
+    "grip_texture": "Ergonomic polymer grip with fine crosshatch texturing—not aggressive, but precise. The stock is wrapped in thin, matte-finish tactical rubber that absorbs vibration. The trigger guard is bare machined aluminum, cold to the touch.",
+    "distinctive_features": [
+      "Barrel ribbed with acoustic vents—aesthetic but functional, designed to dissipate resonance bleed",
+      "Return-echo sensor pod mounted beneath the barrel: a small cylindrical protrusion with faint optical ports",
+      "Integrated feedback display in the scope housing—minimal LEDs that glow soft blue during mapping sequence",
+      "Magazine well is oversized relative to the rifle's profile, accommodating the AcoustiCell's distinctive cylindrical power pack",
+      "No visible muzzle device; the barrel simply terminates in a precision aperture barely 8mm in diameter",
+      "Targeting refinement dial on the stock—small rotary mechanism with detent clicks, labeled in frequencies rather than traditional distance markers",
+      "Bilateral charging handles recessed into the receiver to prevent snag",
+      "Faint RINGO Data Services insignia—a stylized data helix—etched into the upper receiver in silver ink"
+    ],
+    "manufacturer_markings": "RINGO Data Services logo and model designation 'AMSR-6' stamped in raised text on the left side of the receiver, just above the bipod mount. Serial number engraved on a small titanium plate inset into the stock. 'Property of RINGO Corporation / Licensed Operator Only' etched in fine print along the barrel.",
+    "condition_typical": "Field-used specimens show excellent maintenance discipline—carbon scoring around the return-echo sensor pod, minor scratches on the stock from transport in rigid cases, faint salt corrosion on the aluminum trim (indicating use in Great Lakes moisture). Well-maintained examples retain their matte finish integrity; heavily used units develop a patina of fingerprint oils on the grip."
+  },
+  "image_prompt": "Product photography of the Acoustic Marrow Shear Rifle AMSR-6 'Tutor' laid horizontally on a dark matte black surface, bipod deployed and weapon angled 15 degrees toward camera. Gloved hand (tactical polymer, fingerless) gripping the stock to convey scale. Dramatic side-lighting from upper left, casting sharp shadows from the barrel ribs and return-echo sensor pod, emphasizing the weapon's precision geometry. Cool blue LED glow from the scope display visible in the shadow. Matte gunmetal and charcoal finishes catch light subtly; aluminum accents highlight with surgical brightness. Shallow depth of field: barrel and scope in sharp focus, background dark and diffuse. Cyberpunk aesthetic: sterile, clinical, high-tech. No blood, no destruction—the aesthetic is of clinical precision, not violence. Corporate clean. --ar 3:2 --v 6"
 }

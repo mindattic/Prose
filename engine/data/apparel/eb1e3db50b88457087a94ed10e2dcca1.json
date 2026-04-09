@@ -37,5 +37,25 @@
     "Ringo DV-4 'Courier'",
     "TESSERA PA-5 'Attendant'",
     "The Filament"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian drop-shoulder jacket with a utilitarian aesthetic that reads as purposeful rather than fashionable. The silhouette is slightly oversized through the torso to accommodate layering and movement, with tapered sleeves that taper at the wrist. High-visibility orange forms bold geometric blocks across the shoulders and lower back, creating a lightning-bolt visual accent against the charcoal base. The overall impression is 'working uniform' — built for function in hostile conditions.",
+    "fit": "Relaxed through the chest and shoulders, with enough room for thermal underlayers and augmentation rigs. Sleeves taper slightly at the wrist for secure closure. The hem falls to mid-hip with a subtle rear vent for cycling or vehicle operation. Movement-focused, not body-conscious.",
+    "primary_material": "Seam-sealed ripstop nylon composite with hydrophobic DWR coating. The outer shell has a slight sheen and crinkles audibly when flexed. Tactile and industrial—designed to survive chemical splash and abrasion.",
+    "texture": "Smooth hydrophobic surface that beads water visibly. Close inspection reveals fine weave structure and subtle welt seams sealed with bright thread. The fabric has minimal give — tensile and protective rather than soft. Retroreflective orange panels have a granular, light-catching texture.",
+    "color_scheme": "Charcoal gray base with safety-orange retroreflective panels at shoulders (forming a yoke across both shoulders) and a horizontal stripe across the lower back. Weatherproof black ink weathering naturally over high-wear areas (elbows, hem, pocket edges). Zippers are gunmetal.",
+    "closures": "Full-length two-way metallic zipper with an internal storm flap. Left breast pocket with magnetic snap closure. Two side pockets with friction-fit hidden zips (no visible pulls—accessed by touch). Cuff closures are adjustable velcro straps (marked with logo branding).",
+    "distinctive_features": [
+      "GPS antenna filaments woven into left sleeve—visible as faint metallic grid pattern under oblique lighting",
+      "Rear vent with weatherproof reinforcement and hidden snap vents for thermal regulation",
+      "Gridline logo (geometric vector lettermark) printed in weatherproof ink on upper back, positioned above the courier ID number (8-digit alphanumeric, also scannable)",
+      "Reinforced abrasion panels at forearms and elbows in slightly darker, denser ripstop",
+      "Internal sternum anchor point (threaded loop) for securing communication rigs or auxiliary straps",
+      "Rear hem vent design allows accommodation of tail modifications without seam rupture"
+    ],
+    "tier_indicator": "Tier 2-3 functional uniform. Quality construction and integrated tech (GPS filaments, scannable ID) indicate corporate investment, but intentionally low-aesthetic and designed for rapid replacement. The uniform itself signals worker-class reliability, not wealth.",
+    "cultural_context": "Wearing this marks the wearer as part of Gridline's distributed logistics network — essential infrastructure, largely invisible to higher tiers. The jacket says 'I move goods and data across the city in any condition.' Off-shift or counterfeit wear can carry social risk; a real Gridline shell with an active ID number visible on the back may draw unwanted corpo security attention or street-level territorial scrutiny depending on district. The jacket is simultaneously protective camouflage (blending into the courier presence that saturates M88's streets) and a potential liability.",
+    "condition_typical": "Worn units show weathering at stress points: collar edges fray slightly, the zipper pull develops a worn patina, reflective orange panels accumulate micro-scratches and particulate buildup. The printed logo and ID number fade to a ghosted appearance after months of contact with rain, industrial haze, and skin oils—but the QR/barcode remains scannable. Seams remain intact; the hydrophobic coating degrades slowly and is field-replaceable with spray applications."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a Gridline Logistics courier jacket displayed on a dark chrome mannequin or worn by a mixed-heritage model with visible augmentation ports on the neck. Shot in moody industrial warehouse lighting with a slight green tint, water droplets beading visibly on the hydrophobic orange panels. Background is blurred urban infrastructure: neon signage in broken kanji-Latin script, rain-slicked pavement, stacks of delivery containers lit by accent lighting. The jacket's GPS antenna filaments glow faintly in the left sleeve under backlighting. Focus sharp on the weatherproof Gridline logo and alphanumeric courier ID printed on the back. Dark aesthetic, functional rather than aspirational. --ar 2:3 --v 6"
 }

@@ -40,5 +40,32 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Ilhan Sandstrom-Badu",
+    "TESSERA PG-2 'Signature'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A massive tracked artillery platform dominated by an extremely long, angular electromagnetic accelerator barrel extending forward like a lance. The sleek, purposeful design emphasizes raw kinetic force over aesthetics. The entire structure evokes a predatory mantis or siege engine reimagined through physics and mathematics.",
+    "dimensions": "Vehicle chassis: 8.2m long × 3.1m wide × 2.8m high. Accelerator barrel: 6.8m length protruding forward. Barrel diameter: 42cm at muzzle.",
+    "weight_description": "Monumentally heavy and earth-anchored—18 metric tons of pure kinetic potential. Feels immovable when stationary; the tracked base distributes crushing weight across contact points.",
+    "primary_material": "Reinforced carbon-composite chassis with steel internal frame. Accelerator barrel is segmented ceramic-polymer composite with embedded electromagnetic coils. Tracks are industrial-grade titanium-alloy links.",
+    "finish": "Matte charcoal with worn primer showing through contact points. Bare steel accent panels on accelerator stages where maintenance access is frequent. Fusion reactor housing has a brushed steel finish with faint heat discoloration around vents.",
+    "color_scheme": "Charcoal grey primary with gunmetal steel accents. Faint orange heat-stress marks around power coupling ports. Zheng-Dao corporate red stripe running the length of the chassis.",
+    "grip_texture": "N/A—vehicle-mounted system. Control interfaces feature rubberized tactical panels and recessed toggle switches.",
+    "distinctive_features": [
+      "Segmented accelerator barrel with visible electromagnetic coil housings at each of 20 stages, marked by thin ridges and cooling vent lines",
+      "Heavy counterbalance actuators beneath the chassis to manage recoil displacement",
+      "Fusion reactor housing prominent on starboard side, cylindrical and heavily shielded with hazard markings",
+      "Autoloader magazine carousel visible on port side—a rotating drum capable of holding 12 tungsten projectiles",
+      "Thermal dissipation fins running the length of the barrel, glowing faint amber during operation",
+      "GPS targeting module mounted atop chassis with reinforced sensor array",
+      "Weapon status indicator lights (amber, red) clustered near the commander's position",
+      "Deep scorch marks and impact scarring on the lower chassis from atmospheric reentry dust and electromagnetic discharge"
+    ],
+    "manufacturer_markings": "Zheng-Dao Heavy Industries corporate logo (stylized geometric triangle) stamped in 15cm height on both sides of chassis. Serial plate riveted to starboard accelerator housing. Warning placard in Mandarin, English, and technical symbology mounted below muzzle: 'HYPERSONIC KINETIC WEAPON—LETHAL RADIUS BEYOND VISUAL RANGE.'",
+    "condition_typical": "Field-worn and combat-tested. Accelerator barrel shows light oxidation and dust accumulation. Tracks bear mud and debris from recent deployment. Reactor vents glow with residual thermal energy. No cosmetic care applied—purely functional military equipment."
+  },
+  "image_prompt": "Zheng-Dao MDT-6 Trebuchet mass driver turret on dark concrete firing range at dusk. Ultra-wide angle shot emphasizing the 6.8m electromagnetic accelerator barrel extending forward at slight elevation. Segmented coil housings and thermal fins rendered in metallic detail. Fusion reactor visible on chassis side, faintly glowing orange. Tracked base planted firmly, showing wear and dust. Dramatic side-lighting casting long shadows from barrel segments. Muzzle brake detail sharp and menacing. Cyberpunk military industrial aesthetic, grimdark utility. Shot from low angle emphasizing height and dominance. Cold color grading with warm amber reactor glow. Tactical HUD overlay optional. --ar 3:2 --v 6"
 }
