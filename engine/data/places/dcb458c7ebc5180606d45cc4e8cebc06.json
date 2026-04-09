@@ -44,8 +44,16 @@
     "Freelancers building trust with the waterfront labor network"
   ],
   "notable_locations": [
-    "The hull distillery — former engine room, now producing spirits with a steel signature",
-    "The labor wall — decades of hand-painted agreements, disputes, and trade records"
+    {
+      "name": "The hull distillery",
+      "description": "former engine room, now producing spirits with a steel signature",
+      "tags": []
+    },
+    {
+      "name": "The labor wall",
+      "description": "decades of hand-painted agreements, disputes, and trade records",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.861,

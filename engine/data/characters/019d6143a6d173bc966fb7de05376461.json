@@ -188,5 +188,26 @@
     "Clay",
     "Nightlight"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "South Indian / Brazilian Portuguese",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Lean and compact, with the economical musculature of someone who has spent decades doing physically necessary work — no wasted mass, joints prominent, capable hands",
+    "hair_color": "Silver-white",
+    "hair_style": "Tight braids close to the skull, practical and deliberate",
+    "hair_length": "Short",
+    "eye_color": "Soft bioluminescent amber (geneware replacement; irises glow faintly in low light)",
+    "skin_tone": "Warm brown-grey with darker undertones, weathered and uneven from sun exposure",
+    "complexion": "Lined face reflecting 68 years and environmental hardship; faint patterning of old dermal scarring across cheeks and forehead from chemical exposure; minimal grooming beyond functionality; hands calloused and age-spotted",
+    "distinguishing_marks": [
+      "Faint, irregular patterning of chemical burn scarring across both cheeks and upper forehead, discoloration lighter than surrounding skin",
+      "Small burn scar on left forearm, pale and thin, approximately 3cm long",
+      "Visible hearing aid augment behind right ear — old model, patched with wire and tape, clearly jury-rigged and unreliable"
+    ],
+    "visible_augmentations": "Bioluminescent amber irises that emit a soft warm glow in darkness or low light; aging jury-rigged hearing aid augment visible behind right ear (taped, repaired multiple times); no other visible chrome or implants",
+    "posture_movement": "Moves with deliberate efficiency and minimal gesture — no wasted motion, no performative energy. Stands at rest with weight balanced, ready. Hands often occupied with small tasks. Speaks infrequently but with absolute certainty. Eyes make contact without demand. Moves through the encampment like someone taking inventory of invisible things",
+    "clothing_style": "Tier 5 utilitarian: faded, multi-patched jacket from indeterminate origin, probably scavenged; layered long-sleeved shirts in muted greys and browns to protect from sun; practical cargo pants with visible repair patches; worn boots resoled multiple times; no jewelry or ornamentation; everything serviceable, nothing decorative. Clothing shows careful maintenance within severe resource constraints"
+  },
+  "image_prompt": "portrait of an elderly nonbinary south Asian-Brazilian person, age 68, small and compact build, silver-white hair in tight braids close to skull, warm brown-grey weathered skin with faint chemical burn scarring across cheeks, soft bioluminescent amber glowing eyes, visible jury-rigged hearing aid behind ear, worn patched utilitarian clothing, cyberpunk refugee encampment setting, tent city background at dusk, warm amber bioluminescent eye glow illuminating face in shadow, documentary photorealism style, gritty cinematic lighting, dignity and competence in expression, climate refugee aesthetic, --ar 2:3 --v 6"
 }

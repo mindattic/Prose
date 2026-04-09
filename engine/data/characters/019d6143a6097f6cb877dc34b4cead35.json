@@ -13,7 +13,7 @@
   "age": 63,
   "status": "active",
   "location": "Highland Park Autonomous Zone, in a permanently parked converted freight hauler she calls The Box, near Michigan Ave and Chicago Ave",
-  "description": "Euphrosyne is a solidly built woman with dark brown skin weathered attractively by decades of outdoor work, close-cropped silver hair, and the calm deliberate manner of someone who has decided what matters and freed herself of everything else. She has a retractable claw modification on her right hand — not for combat but because she finds it useful for cable management and fine lens adjustment — and her left eye hosts a recording overlay that has been running continuously for eleven years. The indicator light is always visible: a tiny red dot she makes no effort to conceal.\n\nShe makes films. Not for distribution, or not primarily — she maintains a massive personal archive of Meridian 88's underclass, shot over forty years, that she considers her life's work and has never released in full. Clips surface occasionally, always unsigned. Her narrative documentaries about Highland Park and Hamtramck Enclave communities have won prizes from bodies that don't officially exist and been suppressed by three different corponation legal teams. She is patient, relentless, and radically comfortable with being underestimated. She has a dry humor she deploys sparingly and a stillness that makes people forget they are being observed and recorded.",
+  "description": "Euphrosyne is a solidly built woman with dark brown skin weathered attractively by decades of outdoor work, close-cropped silver hair, and the calm deliberate manner of someone who has decided what matters and freed herself of everything else. She has a retractable claw modification on her right hand — not for combat but because she finds it useful for cable management and fine lens adjustment — and her left eye hosts a recording overlay that has been running continuously for eleven years. The indicator light is always visible: a tiny red dot she makes no effort to conceal.\n\nShe makes films. Not for distribution, or not primarily — she maintains a massive personal archive of GLMZ's underclass, shot over forty years, that she considers her life's work and has never released in full. Clips surface occasionally, always unsigned. Her narrative documentaries about Highland Park and Hamtramck Enclave communities have won prizes from bodies that don't officially exist and been suppressed by three different corponation legal teams. She is patient, relentless, and radically comfortable with being underestimated. She has a dry humor she deploys sparingly and a stillness that makes people forget they are being observed and recorded.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -258,7 +258,7 @@
   "related_entities": [
     "Highland Park Autonomous Zone",
     "Hamtramck Enclave",
-    "Meridian 88",
+    "GLMZ",
     "The Iron Lotus",
     "WELLSPRING",
     "Lazarus Pharmaceuticals Endocrine Regulator — 'Stillwater'",
@@ -268,5 +268,26 @@
     "Silver",
     "Chicago"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Icelandic",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Solidly muscular, broad-shouldered, compact torso with the compact density of someone who has carried equipment and intention for four decades. No softness, no waste.",
+    "hair_color": "Silver-gray",
+    "hair_style": "Close-cropped, shaped close to skull, practical and minimal",
+    "hair_length": "Short",
+    "eye_color": "Left eye: dark brown with barely-perceptible red indicator light embedded in lower iris margin; right eye: natural dark brown",
+    "skin_tone": "Deep warm brown with weathered texture — sun exposure, wind exposure, time exposure",
+    "complexion": "Minimal makeup, no vanity grooming. Lines around mouth and eyes from squinting through viewfinders and forty years of outdoor fieldwork. Skin has the quality of something well-maintained but not decorated.",
+    "distinguishing_marks": [
+      "Fine linear scar across left temple, approximately 3cm, old and pale — barely visible unless light catches directly",
+      "Callused palms and finger pads, particularly right hand, from decades of lens adjustment and cable work",
+      "Faint network of small scars across knuckles of right hand from years of precise work"
+    ],
+    "visible_augmentations": "Right hand: retractable chromatic claw mechanism visible along dorsal surface when relaxed, matte gunmetal finish, integrated into natural hand architecture. Left eye: tiny red recording indicator light, always visible, deliberately unconcealed. No cosmetic chrome or display aesthetics — purely functional modification.",
+    "posture_movement": "Still, economical, deliberate. Moves as if always composing a frame. Her gaze settles on people longer than is socially conventional — not aggressive, but observational. Hands at rest, but right hand frequently makes small precise gestures even in conversation, muscle memory of adjustment and calibration.",
+    "clothing_style": "Tier 5 utilitarian, but worn with the confidence of someone uninterested in status signaling. Dark canvas work pants with custom deep pockets for cables and small lens elements. Layered tops — base layer thermal, outer layer a faded dark green field jacket with structural reinforcement at shoulders. Worn boots, resoled multiple times, scuffed leather that takes abuse. No jewelry except a thin platinum ring on left hand — old, looks marital. A canvas work vest with numerous tool loops and small pouches, always worn, always bearing the weight of fieldwork."
+  },
+  "image_prompt": "Sixty-three-year-old woman, West African-Icelandic heritage, deep warm brown weathered skin, close-cropped silver hair, solidly built and composed. Dark intelligent eyes with tiny red recording light visible in left iris. Right hand resting, showing gunmetal retractable claw mechanism along knuckles. Wearing faded dark green field jacket and dark canvas work pants, worn leather boots, canvas tool vest with pockets. Standing in three-quarter view, still and observational posture, calm deliberate manner. Interior of converted freight hauler visible behind her, shelving with archive equipment, cables, old film reels. Soft tungsten overhead light with subtle red glow from eye indicator. Cyberpunk documentary aesthetic, functional hardware, lived-in texture, ground-level perspective. 35mm film noir mood. --ar 2:3 --v 6"
 }

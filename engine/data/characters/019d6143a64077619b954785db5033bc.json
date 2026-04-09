@@ -102,5 +102,26 @@
   "related_entities": [
     "The Narrows Compact"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Russian",
+    "height_cm": 182,
+    "weight_kg": 78,
+    "build": "Athletic, slightly soft at the middle from decades of club-sitting and Φ-backed meals. Broad shoulders, compact frame suggesting careful maintenance rather than active fitness.",
+    "hair_color": "Salt-and-pepper gray, natural with silver threading",
+    "hair_style": "Slicked back with pomade, precise side part",
+    "hair_length": "Medium (3-4cm)",
+    "eye_color": "Dark brown with faint amber undertone",
+    "skin_tone": "Medium-warm, even complexion with olive undertones from Slavic heritage",
+    "complexion": "Well-groomed, minimal scarring. Slight jowl softening at the jawline from age. Clean-shaven. Lines around eyes suggest chronic sleep deprivation and perpetual calculation.",
+    "distinguishing_marks": [
+      "Thin scar across left cheekbone, barely visible, suggesting old knife work or a close negotiation gone physical.",
+      "Faded tattoo of a playing card (Ace of Spades) on right inner wrist, barely visible under cuff unless forearm exposed.",
+      "Burn scar on right ring finger and pinkie, old and pale—cigarette or cards-table accident origin."
+    ],
+    "visible_augmentations": "None visible. Moves with the practiced fluidity of someone carrying subcutaneous neural enhancements, likely decision-support or financial parsing implants, but nothing chrome-obvious.",
+    "posture_movement": "Centered weight, economical movement. Rarely gestures—when he does, it's precise and meaningful. Habitually makes eye contact. Tendency to tap fingers rhythmically when thinking, as if mentally shuffling a deck.",
+    "clothing_style": "Tier 2 independent: tailored charcoal suits from corporate-fringe tailors, silk shirts in muted colors (navy, cream, charcoal), Italian leather shoes kept obsessively polished. Omnipresent wrist accessories: vintage mechanical watch + discrete neural-link interface wrapped as a platinum bracelet. Overcoat in winter—wool blend, no logo. Jewelry minimal: gold wedding band (worn despite marital status unclear), one silver signet ring."
+  },
+  "image_prompt": "A 50-year-old mixed-race man (West African and Russian heritage) with salt-and-pepper slicked-back hair and a well-groomed jawline, dark brown eyes sharp with calculation. He wears a tailored charcoal suit with a cream silk shirt, seated in a dimly-lit underground gambling den with neon-reflected surfaces and chrome fixtures. His posture is perfectly centered, commanding attention without moving. Subtle scar on left cheekbone. Wrist shows a platinum neural-interface bracelet and vintage watch. Atmospheric cyberpunk noir lighting—amber and blue neon mixing with warm incandescent from gambling tables. Photorealistic, sharp focus, world-weary but controlled expression. --ar 2:3 --v 6"
 }

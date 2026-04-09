@@ -285,5 +285,27 @@
     "Pellucid Systems",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Spanish / Ghanaian — Guerrero (Spanish), Osei (Akan), Mensah (Akan)",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Lean and ropey, all cable and leverage. No excess mass — every kilogram serves function. The titanium bone lacing adds subtle density without bulk. Shoulders broad but not overdeveloped; wrists and forearms corded with visible tendon definition.",
+    "hair_color": "Natural deep brown, nearly black",
+    "hair_style": "Cropped close on sides, longer on top — practical for headgear and optics, styled with minimal maintenance. A few silver threads visible at the temples.",
+    "hair_length": "Short",
+    "eye_color": "Brown with subtle amber undertone — natural",
+    "skin_tone": "Deep warm brown — mid-range complexion reflecting West African and mixed Ghanaian heritage",
+    "complexion": "Angular face with high cheekbones and a sharp jaw. Skin weathered from sleep deprivation and nocturnal living — slight gray undertone beneath the brown. A few fine lines around the eyes from squinting in low light. Clean-shaven or with 1-2 days stubble; minimal grooming routine.",
+    "distinguishing_marks": [
+      "Bioware regulator: visible chrome interface at the base of the neck, left side — a small silvered port with subtle LED indicator cycling pale blue when dormant.",
+      "Scar tissue along the right forearm: three parallel marks from a blade strike during an early contract gone sideways, now pale against the skin.",
+      "Burn scar on the left palm: old accident during equipment fabrication, circular and faded white.",
+      "Impact bruising on the knuckles, chronic: blue-black discoloration suggesting repeated trauma, imperfectly healed."
+    ],
+    "visible_augmentations": "Chrome bioware regulator at the base of the neck (left), clearly visible — a small port with faint LED indicator, no effort made to conceal it. The bone lacing is invisible subcutaneously, but subtle signs of its presence: increased muscle definition despite lean frame, and a faint metallic sheen under bright light where titanium mesh sits just beneath the skin at joints.",
+    "posture_movement": "Economical and predatory. No wasted motion. They move from the hips, shoulders loose, hands always aware of their position relative to exits and potential threats. When still, there's coiled tension — not anxious, but ready. When moving through a space, they map it instantly: sightlines, cover, approach vectors. The bioware regulator keeps their physical demeanor calm even when running hot — controlled breathing, deliberate pace.",
+    "clothing_style": "Tier 4 utilitarian: matte-black tactical pants with reinforced seams and cargo pockets (Hegemony brand, 800 Φ range), steel-toed boots scuffed from actual use, gray or black moisture-wicking shirt (generic, unremarkable). A long black coat or reinforced vest depending on the job — usually something with deep pockets and minimal branding. Minimal jewelry; a worn silver ring on the left hand (inheritance or ritual unknown). No corpo logos. Everything designed for function and anonymity in low light."
+  },
+  "image_prompt": "Cyberpunk character portrait, nonbinary breacher specialist, 37 years old, lean muscular build with visible titanium bone definition, deep brown skin with West African features, sharp angular face with tired eyes, cropped dark hair with silver at temples, chrome bioware port glowing faint blue at base of neck on left side, wearing matte black tactical gear and reinforced vest, standing in dim neon-lit industrial setting, Geartown chop shop background with machinery and chrome parts, moody atmospheric lighting with purple and cyan neon accents, film noir cyberpunk aesthetic, sharp focus on face and chrome augmentation detail, cinematic depth of field, --ar 2:3 --v 6"
 }

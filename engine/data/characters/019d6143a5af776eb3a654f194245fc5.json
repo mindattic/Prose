@@ -266,5 +266,26 @@
     "Silver",
     "Chicago"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Senegambian / Serbian",
+    "height_cm": 183,
+    "weight_kg": 79,
+    "build": "Broad-shouldered and tall with athletic musculature maintained through deliberate routine rather than vanity. Carries herself with the balanced posture of someone who has spent decades in rooms where physicality communicates authority.",
+    "hair_color": "Silver-grey",
+    "hair_style": "Locs swept back and secured with a magnetic clasp engraved with the Sterling-Nakamura corporate sigil",
+    "hair_length": "Long (shoulder-length and below)",
+    "eye_color": "Augmented: patterned irises with black sclera and silver radial lines radiating from the pupil",
+    "skin_tone": "Medium-warm, reflecting Senegambian and Serbian ancestry with even complexion",
+    "complexion": "Sharp facial structure with defined cheekbones and a strong jawline. Minimal cosmetic grooming beyond the intentional eye augmentation — no visible dermal fillers or skin resurfacing. Skin shows the texture of age without aggressive anti-aging intervention. Expression typically neutral, resting into lines around her mouth that suggest controlled skepticism.",
+    "distinguishing_marks": [
+      "Fine scar running 2cm along her right temple, partially obscured by her locs — old, deliberate-looking, never explained.",
+      "Small circular burn mark (subcutaneous implant access point) behind her left ear, barely visible.",
+      "A faint tattoo on the inner left wrist: a geometric pattern in silver ink, approximately 3cm across — visible only in direct light or when her sleeve is pulled back."
+    ],
+    "visible_augmentations": "Eyes are the primary visible modification: black sclera with silver radial lines create an unmistakable look of intentional modification rather than medical necessity. The effect is deliberate, constructed, and unsettling to prolonged eye contact. No visible chrome, no external hardware. All other augmentations are subcutaneous or internal (subvocal implant, cardiac monitor, sleep optimization suite).",
+    "posture_movement": "Stands with weight distributed evenly, shoulders slightly back — a posture that conveys both relaxation and readiness. Walks with measured pace, never hurried. Makes deliberate eye contact, holding it slightly longer than social convention suggests comfortable. Hands typically visible and still; she does not fidget. When listening, she maintains perfect stillness, which has the effect of making others feel entirely observed.",
+    "clothing_style": "High Tier 1-2 executive standard: tailored charcoal or black blazers from luxury corpo-wear lines (likely Sterling-Nakamura house brand or bespoke). Underneath, understated silk or smart-fabric shells in neutral tones. Trousers with precision tailoring, no wrinkles. Minimal jewelry beyond the magnetic hair clasp — a thin silver watch with subtle LED display on her left wrist, and a simple platinum band on her right ring finger (no obvious significance, never mentioned). Shoes are expensive and silent-soled. Her appearance suggests someone who treats clothing as infrastructure, not self-expression."
+  },
+  "image_prompt": "Professional corporate portrait of a 54-year-old tall Black woman with silver locs pulled back, austere and commanding presence, striking augmented eyes with black sclera and silver radial line patterns, medium-warm skin tone, sharp cheekbones, cold composed expression. Wearing tailored charcoal blazer over silk shell, expensive platinum watch visible. Standing in floor-to-ceiling window overlooking Great Lakes cityscape at dusk, cool blue and grey lighting, subtle LED glow from wrist tech, photorealistic, cinematic lighting, corporate power aesthetic, cyberpunk 2226 setting, psychological portrait, intricate eye detail, upper body shot --ar 2:3 --v 6"
 }

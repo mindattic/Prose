@@ -188,5 +188,26 @@
     "Silver",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Southern African / Latin American (Bantu / Spanish lineage)",
+    "height_cm": 188,
+    "weight_kg": 89,
+    "build": "Tall and broad-shouldered, softened at the middle with age but still solid-framed. Carries himself with the ease of someone comfortable in his own skin despite the weight redistribution of middle age.",
+    "hair_color": "Silver-gray, natural",
+    "hair_style": "Close-cropped, neat but deliberately unadorned",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm",
+    "skin_tone": "Rich dark brown with warm undertones, consistent across face and visible body",
+    "complexion": "Weathered but well-maintained. Deep smile lines around his mouth and eyes. The face of someone who has spent decades listening. A faint scar runs along his right jawline, thin and old. His expression defaults to patient attention.",
+    "distinguishing_marks": [
+      "Thin scar running 8cm along right jawline from ear toward chin — likely from a youth accident, silver-white and faded",
+      "Faint burn marks across the knuckles of his right hand in a pattern suggesting chemical exposure — decades old, barely visible",
+      "No visible tattoos on exposed skin; if he has any, they are covered"
+    ],
+    "visible_augmentations": "Left arm prosthetic from elbow down: matte titanium with exposed cable routing in geometric patterns. The prosthetic has visible servo joints at wrist and finger bases. Wrist joint rotates visibly to 340 degrees. Haptic feedback nodes glow faintly cyan at the base of each finger when active (during fine work). His right ear shows a barely-visible subdermal port behind the lobe — cochlear enhancement interface. He wears no covering or cosmetic sheath on the prosthetic arm.",
+    "posture_movement": "Stands with his weight slightly forward, a listening posture. Moves deliberately, without hurry. His left arm hangs naturally — he has learned to compensate for its mechanical nature by never moving it awkwardly. Frequent unconscious gesture: his right hand touches the joint where his prosthetic meets his residual limb, a self-soothing motion that grounds him when he's thinking hard. His gait is steady and measured, the walk of someone who spends all day on his feet.",
+    "clothing_style": "Tier 3 professional-practical. Typically wears a matte-finish lab coat (navy or charcoal) with deep pockets, worn over clean neutral clothing — grey or black pants, simple long-sleeved shirt in muted colors. The coat is functional, not fashionable, with multiple small customizations (reinforced pockets, hidden cable clips). Footwear is quality orthopedic shoes, scuffed from daily use. No jewelry except a thin band on his right ring finger — old, well-worn, never removed. His clothes smell faintly of solder and disinfectant. He dresses for function and durability, not status."
+  },
+  "image_prompt": "Portrait of Odran Mbeki-Castellanos, a 55-year-old tall African-Latin man with silver cropped hair and warm dark brown skin, standing in a medical prosthetics workshop. He wears a matte navy lab coat over neutral clothing. His left arm is a sleek matte titanium prosthetic with exposed cable routing and visible servo articulation points, glowing faintly cyan at the finger joints. His expression is patient and attentive. Behind him: half-assembled prosthetic components, patient files, soft warm workshop lighting mixing with cool LED diagnostics. His right hand unconsciously touches his prosthetic wrist joint. Shot from chest up, professional documentary photography style, warm skin tones contrasting with cool metal, shallow depth of field emphasizing his weathered face and the mechanical precision of his augmentation. Cyberpunk medical setting, human dignity foreground. --ar 2:3 --v 6"
 }

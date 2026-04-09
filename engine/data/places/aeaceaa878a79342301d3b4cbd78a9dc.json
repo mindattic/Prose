@@ -44,8 +44,16 @@
     "Freelancers seeking infrastructure intelligence"
   ],
   "notable_locations": [
-    "Deshi's monitoring wall — three screens of live grid telemetry, better data than most corporate offices",
-    "The conduit map — a hand-drawn schematic of Milwaukee's actual power grid covering the back wall, updated weekly"
+    {
+      "name": "Deshi's monitoring wall",
+      "description": "three screens of live grid telemetry, better data than most corporate offices",
+      "tags": []
+    },
+    {
+      "name": "The conduit map",
+      "description": "a hand-drawn schematic of Milwaukee's actual power grid covering the back wall, updated weekly",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 43.0217,

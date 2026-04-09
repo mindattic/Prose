@@ -257,5 +257,25 @@
     "Gold",
     "Vera Castellan"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East African / Turkish",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Slight and wiry, all efficiency — minimal excess mass, the physiology of someone who lives in server closets and transit cars. Posture suggests constant low-level tension, shoulders slightly forward.",
+    "hair_color": "Deep brown with subtle reddish undertone",
+    "hair_style": "Undercut; sides clipped to 8mm, top grown long and typically swept back or tucked under a black or steel-gray utility cap",
+    "hair_length": "Mixed (short/medium)",
+    "eye_color": "Augmented: hexagonal tessellation pattern in gold and copper over hazel base. Irises refract light distinctly; pupils remain functional but nested within the geometric overlay.",
+    "skin_tone": "Light tan with olive undertones — East African and Anatolian heritage visible in cheekbones and jaw structure",
+    "complexion": "Clean, minimal grooming beyond function — no visible scars or blemishes on face. Slight tension in the jaw. Eyes carry a quality of intense focus, almost meditative when not actively engaged.",
+    "distinguishing_marks": [
+      "Hexagonal tessellation pattern across both irises in gold and copper — visible at arm's length, unmistakable at close range",
+      "Thin white scar (2cm) on left inner wrist, old and deliberate-looking, likely ceremonial or significant to E.L.F. practice"
+    ],
+    "visible_augmentations": "Hexagonal patterned irises are the only obvious augmentation. The subvocal implant is invisible — no visible throat hardware, no external pickup nodes. The neural latency chip is subcutaneous, undetectable without imaging.",
+    "posture_movement": "Economical. Moves between transit seats and server racks with practiced efficiency — no wasted motion, no fidgeting beyond occasional finger-flexing near devices. When stationary, favors positions that allow monitoring of three vectors at once. Hands are almost always in use: adjusting equipment, checking devices, or resting near the three personal devices they carry.",
+    "clothing_style": "Tier 3-4 functional tech: reinforced black utility pants with redundant pockets and cable loops, fitted charcoal or matte-black layering tops in technical fabrics (breathable, anti-static), a modular vest or jacket with tool pockets and magnetic clips. Feet in dark running shoes with reinforced soles. Worn cap (logo faded, deliberately nondescript). Everything is dark, fitted, and designed to not catch on rack edges or server equipment. No jewelry beyond a small data-offering vessel worn on a thin chain (brass, always kept near the collar)."
+  },
+  "image_prompt": "Nonbinary East African-Turkish character, age 28, cyberpunk hacker aesthetic, slight wiry build, striking hexagonal tessellation patterned irises in gold and copper overlaying hazel eyes, short undercut dark brown hair with longer top tucked under black utility cap, light olive-tan complexion. Wearing dark technical layers: fitted charcoal top, reinforced black utility pants with cable loops and magnetic clips, modular vest with tool pockets. Standing in profile or three-quarter view near a server rack or transit car interior, hands near portable computing devices, posture alert and focused. Low-key underground tech aesthetic, no chrome or obvious augmentations visible beyond the striking geometric irises. Cool blue-tinted neon lighting on face, warm amber overhead industrial lights on background. Cinematic cyberpunk, intimate documentary style, depth of field focused on eyes and hands near devices. --ar 2:3 --v 6"
 }

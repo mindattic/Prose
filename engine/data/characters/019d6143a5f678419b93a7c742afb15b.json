@@ -186,5 +186,25 @@
     "The Pure Hand",
     "Nightlight"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Hungarian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and economical, with visible muscle definition in forearms and shoulders from steady precision work. No excess — disciplined rather than ascetic.",
+    "hair_color": "Natural black",
+    "hair_style": "Cropped close to scalp, neat and functional",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Clean-shaven, skin unblemished and scrupulously maintained. Fine-featured face with sharp cheekbones and a precise jawline. Expression often concentrated, slightly furrowed brow from magnifying work.",
+    "distinguishing_marks": [
+      "Bioluminescent teal dermal treatment covering both forearms in organic, vein-like patterns that pulse faintly in low light",
+      "Matching bioluminescent treatment along both sides of neck from jaw to clavicle in subtle wave patterns"
+    ],
+    "visible_augmentations": "Magnifying optics headband (worn pushed up on crown when idle, giving perpetually academic appearance). Bioluminescent dermal layer visible on forearms and neck, glowing faint teal in dim conditions. Hands show no visible chrome or scarring — deliberately unmarked to maintain professional appearance for procedure work.",
+    "posture_movement": "Upright, economical posture suggesting both discipline and wariness. Hands move with deliberate precision — no wasted motion. When seated, often examines his own hands with clinical detachment. Gait is measured and careful, never rushed even in crowds.",
+    "clothing_style": "Tier 4 working-professional aesthetic. Clean, fitted dark utility jacket (charcoal or deep blue) with multiple internal pockets for tools and samples. Thermal-responsive undershirt. Precise black slacks with minimal wear. Worn leather gloves when handling supplies, removed during client consultations to display immaculate hands. No jewelry. A faded cloth bracelet on left wrist — origin unknown, never mentioned. Keeps workspace coat (light gray, clinically clean) folded within arm's reach."
+  },
+  "image_prompt": "Cyberpunk portrait of a lean 34-year-old man with deep brown skin and short black hair, West African-Hungarian heritage. Magnifying optics headband pushed up on crown. Forearms and neck glow with faint teal bioluminescent dermal patterns in a dark workshop setting. Impeccably clean hands, precise posture, wearing dark utility jacket over thermal shirt. Clinical, focused expression. Moody low-key lighting with neon glow reflecting off his augmented skin. Photorealistic, shallow depth of field, cinematic cyberpunk aesthetic, gritty underground clinic backdrop. --ar 2:3 --v 6"
 }

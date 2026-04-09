@@ -281,5 +281,27 @@
     "Slagworks Industrial",
     "Clover"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Japanese / West African",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Stocky and solid with dense muscle mass from geneware treatment — compact frame with no wasted space, built like someone who absorbs impact rather than evades it",
+    "hair_color": "Black with premature silver threading at temples",
+    "hair_style": "Pulled back tight, practical — no flourish",
+    "hair_length": "Medium, cropped shoulder-length",
+    "eye_color": "Deep brown, alert and measuring",
+    "skin_tone": "Warm tan with golden undertones, sun-weathered from decades of dockside exposure",
+    "complexion": "Lined face with crow's feet and a permanent crease between the brows — weathered but not neglected, scars accepted as part of the landscape. Jaw set in resting neutrality. Minimal grooming beyond function",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple to cheekbone, old enough to fade but deep enough to catch light",
+      "Knuckles on both hands bear old fracture scars and keloid tissue, years of damage poorly healed",
+      "Faint chemical burn scars on inner right forearm, parallel lines suggesting intentional marking or accident with caustic materials",
+      "Small crescent-shaped scar on right collarbone, precise enough to suggest medical intervention rather than violence"
+    ],
+    "visible_augmentations": "Her blood is visible in veins — metallic chrome sheen running beneath the skin, most prominent at wrists, neck, and temple. Under strong light, the synthetic material has an almost oil-slick iridescence. Her musculature is unnaturally dense and defined despite her stocky frame, giving her a compact, coiled appearance. No obvious external chrome, but her physical presence suggests augmentation to anyone who knows what to look for",
+    "posture_movement": "Economical and controlled — no wasted motion, no theatrical gestures. Stands with weight distributed, ready to move in any direction. Walks with deliberate placement, like someone used to moving through tight spaces and hostile terrain. Hands often rest in lap or at sides, not defensive but ready. Makes sustained eye contact with deliberate intensity, reading rather than performing",
+    "clothing_style": "Tier 3-4 practical: dark synthetic fabrics, reinforced at stress points. Favors loose-fitting jackets with multiple interior pockets, cargo pants in charcoal or black, worn work boots with reinforced soles. No logos or identifying marks. Layers to accommodate temperature shifts and quick asset concealment. A single worn silver chain at her neck — possibly religious, possibly sentimental, definitely not new. Old dockworker's watch on left wrist, actually functional rather than decorative. No jewelry beyond that. Clothing is maintained but not new — replaced when damaged, not when fashionable"
+  },
+  "image_prompt": "A 45-year-old woman of Japanese and West African heritage, stocky and muscular with dense physical presence, standing in dim dockside industrial lighting. Her black hair with silver threading is pulled back tightly. Deep brown eyes regard the camera with calculating neutrality. Metallic chrome sheen visible beneath her skin at wrists and temples, giving an oil-slick iridescence in shadow. Weathered face with scar tissue visible on left temple and knuckles. Wearing loose dark synthetic jacket with multiple pockets, charcoal cargo pants, worn reinforced boots. Standing in a warehouse or shipping container interior, Lake Michigan industrial waterfront, neon signs casting blue and red reflections on wet concrete. Cyberpunk noir aesthetic, gritty and utilitarian. Hard-edged professional, runner mentality. Moody cinematic lighting, high contrast shadows. --ar 2:3 --v 6"
 }

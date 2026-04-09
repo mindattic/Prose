@@ -65,6 +65,7 @@ def main():
     parser.add_argument("--min-cluster-size", type=int, default=3)     # HDBSCAN: minimum cluster size
     parser.add_argument("--min-confidence", type=float, default=0.6)   # Scoring: confidence threshold for "contested"
     parser.add_argument("--dry-run", action="store_true")              # Extract: preview without API calls
+    parser.add_argument("--concurrency", type=int)                     # Extract: parallel API calls (default 20)
 
     # Parse the command-line arguments into an object
     args = parser.parse_args()
@@ -93,7 +94,7 @@ def main():
         # Lazy import: only load extract.py when we actually need it.
         # This keeps startup fast when skipping phases.
         from extract import run_extraction
-        run_extraction(limit=args.limit, repo=args.repo, dry_run=args.dry_run)
+        run_extraction(limit=args.limit, repo=args.repo, dry_run=args.dry_run, concurrency=args.concurrency)
     else:
         console.print("[yellow]Skipping extraction[/yellow]")
 
@@ -143,7 +144,7 @@ def run_single_phase(args):
     # This function exists to keep main() clean and readable.
     if args.phase == "extract":
         from extract import run_extraction
-        run_extraction(limit=args.limit, repo=args.repo, dry_run=args.dry_run)
+        run_extraction(limit=args.limit, repo=args.repo, dry_run=args.dry_run, concurrency=args.concurrency)
     elif args.phase == "embed":
         from embed import run_embedding
         run_embedding()

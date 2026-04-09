@@ -61,10 +61,10 @@
     "Bogdan has been given a contract on someone he has already determined is on the list fraudulently — the same kind of situation as the fourteen-year-old. This time he is deciding in advance rather than after. He needs someone to help him prove the fraud before he has to make the delivery.",
     "He knows where a significant skip is hiding — has known for two weeks — and has not moved because something about the situation is wrong in a way he can't document yet. He is willing to bring in outside help to determine what before he acts."
   ],
-  "narrative_function": "Complex moral figure — not a villain, not heroic, operating in the grey space of enforcement that the city outsources. A source of information about fugitives, debts, Meridian 88's informal enforcement economy, and who is looking for whom. Can be a threat, an unexpected resource, or a collaborator depending on circumstances.",
+  "narrative_function": "Complex moral figure — not a villain, not heroic, operating in the grey space of enforcement that the city outsources. A source of information about fugitives, debts, GLMZ's informal enforcement economy, and who is looking for whom. Can be a threat, an unexpected resource, or a collaborator depending on circumstances.",
   "augmentations": "Three-finger chrome replacement on right hand — precision manipulation hardware, post-injury. Bioluminescent skin patterning (blue-white, collarbone and upper arms, pulses with heart rate — cosmetic mod that has become inconveniently diagnostic). Skeletal reinforcement in lower spine and knees, medical necessity from decade of recovery work.",
   "daily_life": "Researches contracts at his desk in Fort Anchor — physical and digital files, neighborhood maps, social network analysis by hand. Conducts approach on foot, rarely in a vehicle until final stage. Files all paperwork within six hours of completion because he has learned that paperwork delayed is money lost. Attends a weekly card game with two retired Metro officers and a transit security veteran he's known for twenty years.",
-  "affiliation": "Licensed freelance under Meridian 88 Metro Compliance Registry. Accepts contracts from Metro Police, Axiom, Tessera, and occasional private clients.",
+  "affiliation": "Licensed freelance under GLMZ Metro Compliance Registry. Accepts contracts from Metro Police, Axiom, Tessera, and occasional private clients.",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -275,5 +275,26 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Finnish-Scandinavian",
+    "height_cm": 178,
+    "weight_kg": 104,
+    "build": "Densely constructed, broad-shouldered, compact musculature without obvious bulk. Built like someone who absorbs impact rather than generates it. Eleven years of recovery work has given him a settled, grounded presence.",
+    "hair_color": "Salt-and-pepper gray-black",
+    "hair_style": "Close-shaved on sides; thick braid down the back",
+    "hair_length": "Medium (braid)",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep brown-black with warm undertones",
+    "complexion": "Clean-shaven, weathered around the eyes from sustained focus work and outdoor approach operations. Skin is clear but marked by time. Expression settles into tired patience.",
+    "distinguishing_marks": [
+      "Bioluminescent skin patterning across collarbone and upper arms — soft blue-white that pulses visibly with elevated heart rate. Cosmetic mod that has become involuntarily diagnostic of his stress state.",
+      "Old burn scar on right shoulder, faded but visible, roughly palm-sized.",
+      "Minor impact scarring on knuckles of left hand from pre-augmentation incident."
+    ],
+    "visible_augmentations": "Right hand: index, middle, and ring fingers replaced with matte-black precision manipulation hardware — articulate, responsive, visibly more dexterous than organic fingers. Chrome surfaces show micro-wear patterns. Skeletal reinforcement in lower spine and knees is subcutaneous but affects his posture — slight forward cant when standing, careful joint movement that avoids stress. When he moves, there is no wasted motion.",
+    "posture_movement": "Economical, grounded stance. Moves with deliberate weight distribution — a man who has learned to manage his own mass and the mass of others without aggression. No fidgeting. Sits in vehicles for extended periods with genuine stillness. When he walks, his pace is moderate and his gaze is soft but constant — reading environment.",
+    "clothing_style": "Tier 2 practical. Dark, muted colors: charcoal, slate, black. Durable synthetic-blend tactical jacket with internal pockets for files and documentation. Fitted but not tailored — cut for movement and weather. Boots are scuffed but maintained. No logos, no corpo marks. Watch is functional, not fashionable. Clothing shows wear but no neglect — he takes care of what lasts."
+  },
+  "image_prompt": "Cyberpunk character portrait, middle-aged West African-Finnish man, deeply tanned dark brown skin, shaved head with thick gray-black braid down back, broad powerful shoulders, compact dense build suggesting impact absorption. Right hand replaced with matte black precision chrome hardware, three articulate fingers gleaming under light. Soft bioluminescent blue-white patterning glowing subtly across collarbone and upper arms in geometric patterns. Dark brown eyes, tired but attentive expression, slight weathering around eyes. Wearing dark muted tactical jacket, charcoal and slate, no corporate branding, practical and worn. Standing in noir-lit Fort Anchor warehouse district with neon glow casting blue-green shadows, overhead industrial lighting. Detailed mechanical right hand in sharp focus. Mood: exhausted competence, patient predator, structural fatigue. Cyberpunk noir, film noir lighting, intricate detail on chrome augmentations --ar 2:3 --v 6"
 }

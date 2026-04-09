@@ -56,7 +56,7 @@
   "relationships": [],
   "story_hooks": [
     "A woman came to the pharmacy clinic asking about a pregnancy that Seraphina's records show was terminated eight months ago — same name, same biometric print, different face",
-    "The Helix Biosystems gene-sampling audit that Seraphina obstructed two years ago has been reopened, and this time the inspector has brought a Meridian 88 compliance officer with legal authority to compel records"
+    "The Helix Biosystems gene-sampling audit that Seraphina obstructed two years ago has been reopened, and this time the inspector has brought a GLMZ compliance officer with legal authority to compel records"
   ],
   "narrative_function": "Information source — she knows things about families in The Shelf that no one else does; can provide access to reproductive health resources including some that are legally ambiguous; community network hub; can be a quest giver when a birth reveals something that shouldn't be (wrong genetic markers, unexpected mods in a newborn, complications that suggest something non-standard happened)",
   "augmentations": "Bioluminescent fingertip mods (soft blue-white, cosmetic/functional); subdermal med-scanner implant in left palm (low-grade, can read basic vitals without external instruments); standard contraceptive implant",
@@ -234,11 +234,32 @@
     "Helix Biosystems",
     "Ferrogate Transit",
     "Mexicantown Libre",
-    "Meridian 88",
+    "GLMZ",
     "The Iron Lotus",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Shelf",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South African / Guatemalan mestiza",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Full-figured, sturdy frame with rounded shoulders and a naturally broad torso — built for endurance rather than speed, with a quiet physical authority that comes from decades of holding people through their most vulnerable moments",
+    "hair_color": "Deep brown-black, naturally textured",
+    "hair_style": "Usually braided in cornrows or twisted updos when working; worn loose and long when off-duty — a deliberate visual signal to patients about her availability and emotional accessibility",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with amber undertones, slightly hooded set",
+    "skin_tone": "Warm amber-bronze, sun-deepened from years of mobile clinic work and outdoor community presence",
+    "complexion": "Well-maintained despite irregular sleep; deep-set eyes that carry the particular gravity of someone who has witnessed hundreds of births; minimal makeup, focus on skin care; fine lines around eyes and mouth from constant vigilant expression; steady, grounded presence in her face",
+    "distinguishing_marks": [
+      "Small burn scar on right inner forearm from a pharmacy acid spill in 2218, thin and pale",
+      "Thin white scar running 4cm along left temple, partly hidden by hairline — result of a corporate inspector confrontation in 2220",
+      "Faint stretch marks across lower abdomen, visible only when wearing crop tops (rare), from carrying her own two children in her twenties"
+    ],
+    "visible_augmentations": "Bioluminescent fingertip mods on both hands — soft blue-white LEDs under translucent nail beds, subtle when inactive but distinctly visible when activated during examinations or emotional moments; subdermal med-scanner implant visible as a faint circular outline on left palm with occasional soft glow when in use",
+    "posture_movement": "Moves with deliberate calm, economical gestures; hands are always in motion but never rushed — constantly checking, assessing, preparing; stands with weight balanced, ready to support another body; speaks from a place of complete stillness, even when her hands are busy; maintains eye contact with the intensity of someone trained to read micro-expressions in pain and fear",
+    "clothing_style": "Practical Tier 4 / community-access aesthetic: well-worn scrubs in soft colors (greens, grays, warm whites) layered with a faded denim jacket covered in pins and patches from the neighborhood organizations she supports; comfortable flat shoes with excellent grip; always carries a canvas satchel with worn leather edges containing medical instruments; wears a thin copper bracelet inscribed with Apgar numbers on her left wrist; jewelry is minimal and functional — a simple silver ring on left ring finger, a religious pendant (syncretic blend of Christian and Xhosa spiritual symbols) worn under scrubs"
+  },
+  "image_prompt": "Portrait of Seraphina Nkosi-Quesada, 41-year-old midwife, warm amber-bronze skin, deep-set brown eyes with amber undertones, long black braided hair pinned up in clinical updo, full-figured sturdy build conveying gentle strength and authority, wearing worn sage-green scrubs and faded denim jacket covered in neighborhood pins and patches, hands with soft blue-white bioluminescent fingertip mods glowing faintly, left palm showing faint outline of med-scanner implant, calm steady expression of someone who has witnessed four hundred births, background blurred pharmacy shelves and van interior, low warm lighting emphasizing the glow of her fingertips, intimate documentary-style photography, compassionate and grounded, cyberpunk medical practitioner, 2226 Great Lakes Metropolitan Zone, --ar 2:3 --v 6"
 }

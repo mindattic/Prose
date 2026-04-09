@@ -43,7 +43,7 @@
     "secret": "In 2188, during a particularly brutal cold spell, Gavril quietly passed a list of squatters in an abandoned Axiom-adjacent building to a council member he trusted, thinking it would get them housing assistance. The building was cleared by Axiom security contractors three days later and the squatters were scattered. No one died. He's never told anyone and he has never forgiven himself."
   },
   "speech_patterns": {
-    "vocabulary": "Plain, practical, working-class Meridian 88 vernacular with occasional Estonian phrases from his grandparent's side; doesn't use jargon unless pushed",
+    "vocabulary": "Plain, practical, working-class GLMZ vernacular with occasional Estonian phrases from his grandparent's side; doesn't use jargon unless pushed",
     "cadence": "Unhurried, lets silence do work, rarely repeats himself",
     "verbal_tics": [
       "'Let me ask you something'",
@@ -185,7 +185,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born in Collinwood Docks; Ghanaian-Estonian heritage, third generation in Meridian 88",
+      "event": "Born in Collinwood Docks; Ghanaian-Estonian heritage, third generation in GLMZ",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -244,5 +244,26 @@
     "Highland Park Autonomous Zone",
     "Silver"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Estonian",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Heavyset and solid, carrying weight evenly through the torso and shoulders. Not soft—there is muscle underneath decades of steady living. The kind of bulk that comes from physical work and not fighting against it.",
+    "hair_color": "Silver with dark undertones",
+    "hair_style": "Short, neat, kept close to the scalp with deliberate care",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unremarkable",
+    "skin_tone": "Deep brown with ashy undertones at the edges—the particular weathering of a man in his sixties who has worked outdoors and in variable conditions",
+    "complexion": "Lined face, grooves around the eyes and mouth from decades of listening and thinking. Clean-shaven except for the silver beard on the lower jaw. Skin is clear and well-maintained, not vain about it but disciplined.",
+    "distinguishing_marks": [
+      "Thin horizontal scar across the left inner forearm, pale and old, visible above the prosthetic wrist—approximately 3 inches long",
+      "Age spots on both hands, clustered across knuckles and the backs of the hands",
+      "Calluses on the palms and fingers of his right hand, worn smooth from two decades of use"
+    ],
+    "visible_augmentations": "Civic-grade prosthetic left hand in utilitarian grey polymer—functional, unpainted, with visible articulation servos at the knuckles and wrist joint. The hand is older, shows minor cosmetic wear, and moves with deliberate precision. Standard-issue vision correction lens in wire-rimmed reading glasses he wears regularly, not augmented optics.",
+    "posture_movement": "Still and economical. He doesn't gesture broadly or fill space with movement. Stands with weight balanced, slight forward cant from years of listening to people. Walks at a measured pace. The prosthetic hand moves with conscious intent—he has learned its capabilities and limits over twenty-two years and doesn't pretend it's anything other than what it is. Right hand does most fine work, left hand steadies and assists.",
+    "clothing_style": "Tier 4 working practical. Worn but clean utility jacket in dark grey canvas, often with pockets visibly stuffed with papers, supply receipts, or neighborhood contact data. Durable trousers, comfortable shoes broken in over years. No chrome, no status signifiers. A cloth bag—often canvas or heavy cotton, patched and repatched—carries whatever needs carrying. Wire-rimmed reading glasses on a cord. A simple watch, analog, that he actually reads. No jewelry. Everything about his appearance says: I have things to do and limited time for nonsense."
+  },
+  "image_prompt": "Portrait of a 62-year-old man with deep brown skin and silver stubble, heavyset build, wearing wire-rimmed reading glasses and a worn grey canvas jacket. His left hand is a grey utilitarian prosthetic with visible mechanical joints, painted in flat polymer grey. He stands with quiet authority and deliberate stillness. Behind him, a Tier 4 GLMZ neighborhood interior—cinder block walls, supply lockers, industrial lighting. His right hand holds a cloth bag. Photorealistic, dignified, the particular weariness of someone who has survived infrastructure collapse. Soft overhead fluorescent lighting casting even shadows. No dramatization, no chrome excess—just a practical man in practical circumstances. --ar 2:3 --v 6"
 }

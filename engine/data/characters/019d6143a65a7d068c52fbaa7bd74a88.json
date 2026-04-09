@@ -183,5 +183,26 @@
     "Loom",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Romanian)",
+    "height_cm": 167,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, with the compact, functional musculature of someone who spends eight hours daily hunched over a cutting table. Not soft, not lean — a body built for sustained precision work rather than display.",
+    "hair_color": "Deep black with silver streaking, natural graying",
+    "hair_style": "Pinned upward in a tight, practical arrangement, secured with what appear to be decorative bone or wood sticks but are precision seam rippers",
+    "hair_length": "Long, worn up",
+    "eye_color": "Cosmetic mod: color-cycling irises that shift between amber and green on a slow loop (relic tech, installed ~30 years ago)",
+    "skin_tone": "Deep brown with warm reddish undertones, evenly pigmented",
+    "complexion": "Unlined face with deep smile creases at the corners of her eyes and mouth. Skin shows sun-exposure history from working near windows. No visible tattoos or scarification. Grooming is minimal but deliberate — she does not fuss with appearance.",
+    "distinguishing_marks": [
+      "Callused fingertips on both hands, worn smooth and thick from forty years of needlework, nearly insensitive to fine touch",
+      "Knuckles thickened and slightly arthritic, particularly on index and middle fingers",
+      "Magnifying lenses on a thin chain around her neck, worn constantly and raised to eyes with theatrical precision"
+    ],
+    "visible_augmentations": "None chrome. Single cosmetic iris modification (color-shifting, amber/green cycle) reads as jewelry or affectation rather than serious mod. No subdermal plates, no visible neural ports. Appears entirely organic at first glance.",
+    "posture_movement": "Habitually forward-leaning from decades at the worktable, shoulders slightly rounded. Movements are economical and deliberate — no wasted motion. Hands are constantly in motion even when at rest, fingers flexing or mimicking stitching patterns. Stands with weight distributed evenly, grounded.",
+    "clothing_style": "Tier 3-4 utilitarian aesthetic. Always wears a work apron over simple, well-maintained clothing — the apron is a patchwork of fabric samples, seams, and repaired tears, a walking advertisement for her skill. Prefers muted colors (grays, blacks, deep blues) with occasional bright accent fabrics pinned to her collar or cuff. Wears soft leather shoes with reinforced soles, broken in and comfortable. No jewelry except the magnifying lens chain. Grooming reflects tier 3 independence — clean, functional, not fashionable."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of a 58-year-old West African–Eastern European woman with deep brown skin and reddish undertones, silver-streaked black hair pinned up with precision seam ripper sticks, broad powerful shoulders from decades of needlework. Her eyes are cosmetic mod color-shifting irises cycling slowly between amber and green. Magnifying lenses hang on a thin chain around her neck. Thick calloused knuckles, work-worn hands. Wearing a patchwork fabric apron over simple gray utilitarian clothing, soft worn leather shoes. Standing in a dimly lit alterations shop with fabric bolts and sewing equipment, warm tungsten lighting reflecting off metal scissors and thread spools. Atmospheric, tired but dignified, working-class enclave aesthetic. Hyperrealistic portrait, no chrome, organic and grounded, Hamtramck Enclave vibes. --ar 2:3 --v 6"
 }

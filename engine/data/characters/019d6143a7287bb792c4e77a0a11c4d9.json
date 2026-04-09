@@ -191,5 +191,26 @@
     "Cotton",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Anatolian Turkish",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and sturdy, built for sustained physical labor. Muscular forearms and shoulders from three decades of lifting heavy cauldrons and stirring thick broths. Slight softness at the waist and hips — the frame of someone who tastes her own cooking.",
+    "hair_color": "Silver-white with faint dark roots",
+    "hair_style": "Thick locs pinned back with repurposed copper data-clips",
+    "hair_length": "Long",
+    "eye_color": "Gradient modification: amber-to-saffron shifting",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Weathered and lined from decades of heat exposure and sun. Forehead and temples show permanent creasing. Minimal makeup. Strong jaw, broad nose, full lips. Calloused hands with darkened nail beds from spice staining.",
+    "distinguishing_marks": [
+      "Old burn scars cross-hatching both forearms in a dense lattice pattern — pale lines against umber skin, legacy of three decades of open-flame cooking",
+      "Thin burn scar along her right temple, partially hidden by her locs, circa 15 years old",
+      "Small ritual scars on the inner wrists — two parallel lines on each side, self-inflicted in her thirties as part of personal spiritual practice"
+    ],
+    "visible_augmentations": "Saffron-amber gradient eye modification — noticeable in direct light as a subtle chromatic shift within the iris. Heat-resistant dermal plating visible on palms and forearms as a subtle iridescent sheen under the burn scar tissue, most apparent on the inner forearms.",
+    "posture_movement": "Stands with weight planted firmly, one hand often on a hip or gripping a wooden spoon. Moves with deliberate economy — no wasted motion. Her gaze is steady and assessing. When speaking to regulars, she leans in slightly. Her hands are rarely still, even at rest — fingers tapping rhythms or gesturing with spoon or ladle.",
+    "clothing_style": "Industrial apron (reinforced canvas, heat-stained) worn over layered cotton wraps in earthy burgundy and ochre tones. Worn leather sandals with reinforced soles. Simple brass bangles on both wrists — functional and decorative. Tier 4 working-class aesthetic — practical, durable, unmaintained by corporate standards. Always faintly dusted with ground spices."
+  },
+  "image_prompt": "Portrait of a 58-year-old West African-Anatolian woman, deep umber skin weathered by decades of open-flame cooking, thick silver locs pinned with copper clips, amber-saffron gradient irises glowing subtly in warm light. Forearms and palms crisscrossed with pale old burn scars, iridescent heat-resistant dermal plating visible. Broad shoulders, muscular frame. Wearing a heat-stained industrial canvas apron over layered burgundy and ochre cotton wraps. Standing before her stall with two deep cauldrons and hanging dried aromatics, copper data-clips in her hair catching light. Warm street-market lighting, smoky haze from charred spices. Cyberpunk Tier 4 aesthetic, gritty and worn. 35mm realism, cinematic, --ar 2:3 --v 6"
 }

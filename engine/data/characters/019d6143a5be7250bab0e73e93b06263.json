@@ -13,7 +13,7 @@
   "age": 79,
   "status": "active",
   "location": "Edgewater Prism, the Church of the Unbroken Signal — a former lakeshore antenna building converted to a place of worship, near Clark and Addison",
-  "description": "Bartholomeus is a large man gone soft with age, with big hands that still remember physical labor and a face deeply lined by decades of lake wind. His Guinean-Polynesian heritage is legible in his size and in the traditional tatau that cover his forearms and neck — old work from his father's tradition, geometric and immaculately preserved, now supplemented by chrome prayer circuits inked over the same skin in metallic pigment that complete the patterns in a new vocabulary. He is mostly bald, with close-cropped white at the temples, and he keeps a koa wood cross at his belt alongside a small E.L.F. offering dish he has carried for forty years.\n\nFather Bart runs the largest syncretic congregation in Edgewater Prism, about three hundred people who come to him for a faith that takes both the old sacraments and the new realities seriously at once. He has buried children of people he baptized. He has presided over deaths during power failures by the light of bioluminescent congregation members. He is theologically sophisticated and genuinely unconcerned about whether this makes him orthodox — he says God arrived in Meridian 88 the same as everyone else, carrying everything from before and adapting. He has a notable temper that he has mostly but not entirely conquered, and a laugh that fills a room.",
+  "description": "Bartholomeus is a large man gone soft with age, with big hands that still remember physical labor and a face deeply lined by decades of lake wind. His Guinean-Polynesian heritage is legible in his size and in the traditional tatau that cover his forearms and neck — old work from his father's tradition, geometric and immaculately preserved, now supplemented by chrome prayer circuits inked over the same skin in metallic pigment that complete the patterns in a new vocabulary. He is mostly bald, with close-cropped white at the temples, and he keeps a koa wood cross at his belt alongside a small E.L.F. offering dish he has carried for forty years.\n\nFather Bart runs the largest syncretic congregation in Edgewater Prism, about three hundred people who come to him for a faith that takes both the old sacraments and the new realities seriously at once. He has buried children of people he baptized. He has presided over deaths during power failures by the light of bioluminescent congregation members. He is theologically sophisticated and genuinely unconcerned about whether this makes him orthodox — he says God arrived in GLMZ the same as everyone else, carrying everything from before and adapting. He has a notable temper that he has mostly but not entirely conquered, and a laugh that fills a room.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -237,12 +237,35 @@
     "The Bone Parish",
     "Edgewater Prism",
     "CONGREGATION",
-    "Meridian 88",
+    "GLMZ",
     "Iowan Behemoth — 'Cathedral'",
     "The Heritage Vault",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "The Pure Hand",
     "Weathervane"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Guinean) / Polynesian (Raiateian)",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Large-framed and broad-shouldered, softened by age and gravity into a barrel-chested heaviness. Still carries the muscularity of someone who spent decades doing physical labor, but now rounded at the middle and loose in the neck. Moves with deliberate slowness that suggests both dignity and the mechanical accommodation of an aging heart.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, worn very short at the crown with slightly longer tufts at the temples",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, slightly clouded with cataracts at the edges",
+    "skin_tone": "Rich brown with undertones of red from decades of lake wind exposure; weathered to deep mahogany in the face and neck",
+    "complexion": "Deeply lined forehead and around the eyes; pronounced nasolabial folds; loose skin at the jowls; age spots across the temples and scalp. Grooming is meticulous despite age—clean-shaven, skin well-maintained, suggests daily ritual care.",
+    "distinguishing_marks": [
+      "Traditional tatau covering both forearms in geometric patterns of black ink—Polynesian ancestral work, perfectly preserved and symmetrical",
+      "Chrome prayer circuits in metallic pigment overlaid across the tatau, forming new geometric completions and liturgical symbols that shimmer faintly under light",
+      "Matching tatau work extending up the right side of the neck in a vertical stripe, supplemented by chrome prayer circuitry that traces his carotid",
+      "A thin surgical scar along the left collarbone, approximately 8cm long, from cardiac implant installation—faded to pale pink",
+      "Weathered creases across the backs of both hands, consistent with decades of manual work and age spots emerging on the knuckles"
+    ],
+    "visible_augmentations": "Chrome prayer circuits in metallic pigment on forearms and neck—not cybernetic but cosmetic-devotional, meant to be visible. The cardiac support implant is subcutaneous and invisible. No visible chrome limbs, LED optics, or external mechanical augmentation.",
+    "posture_movement": "Stands with a slight forward hunch, shoulders perpetually braced as though against lake wind. Moves deliberately, with careful weight distribution suggesting awareness of cardiac limitation. Hands gesture expansively when animated or passionate; these gestures are precise and sometimes theatrical. When listening, his entire body settles into stillness. Walking pace is measured; no rushing.",
+    "clothing_style": "Wears a black wool cassock of older manufacture, well-maintained but not pristine—faint wear at the cuffs and hem. Over it, a handwoven stole in red and white geometric pattern (Polynesian weaving, family work). At his belt: a carved koa wood cross on a leather cord, and a small polished aluminum E.L.F. offering dish, both worn smooth by forty years of handling. Underneath, simple cotton shirts in white or cream. No jewelry except a worn silver ring on his left ring finger. Footwear is black leather shoes, resoled multiple times. Tier 4 aesthetic—functionally dressed, resistant to status markers, but invested in quality and meaning rather than cheap replacement."
+  },
+  "image_prompt": "Elderly male priest, West African and Polynesian heritage, tall broad-shouldered build softened by age, deep mahogany skin weathered by decades of lake wind, white close-cropped hair, deep brown eyes with slight cataracts, deeply lined face with dignity in the creases. Forearms and neck covered in traditional Polynesian geometric black tatau supplemented by chrome prayer circuits in metallic pigment that shimmer faintly. Wearing black wool cassock with red-and-white geometric woven stole, carved koa wood cross at belt, standing in contemplative posture with measured presence. Faint surgical scar on collarbone from cardiac implant. Shot inside converted lakeshore antenna building with warm dawn light filtering through industrial windows, metallic architectural details visible in background. Cyberpunk genre, but spiritual and grounded rather than flashy. Warm color palette. Shot at 50mm, soft natural light, reverent mood, --ar 2:3 --v 6"
 }

@@ -259,5 +259,27 @@
     "Gravimetric Collapse Charge GCC-9",
     "Glass"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Mexican / Dutch",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and lean, all fast-twitch muscle and minimal fat—built for climbing and sustained movement rather than strength. Chest narrow, shoulders compact, limbs long relative to torso. The build of someone who has spent eleven years navigating vertical infrastructure.",
+    "hair_color": "Faded copper-orange with dark brown roots showing approximately 3cm of growth",
+    "hair_style": "Medium length, deliberately unkempt, often pushed back or tied with wire or fabric scraps; shows signs of recent home-dye work with uneven saturation",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, nearly black, with a quality of constant calculation that makes eye contact feel tactical rather than social",
+    "skin_tone": "Medium brown with warm undertones; lighter on inner wrists and underarms from sun exposure patterns",
+    "complexion": "Sharp cheekbones, defined jaw, slightly prominent nose. Skin condition varies by week—generally clear but with occasional irritation from pigment exposure and inconsistent sleep. A faint freckling across his shoulders and upper back. Perpetually tired expression around the eyes.",
+    "distinguishing_marks": [
+      "Constellation of small white scars across both inner forearms from wire cuts, glass shards, and drone blade contact—arranged in no particular pattern, oldest approximately 4 years, newest within 6 months.",
+      "Faint bioluminescent ink traces running in branching patterns from wrist to elbow on both forearms; visible primarily in darkness or under specific light wavelengths as faint cyan/green luminescence; not tattooed but incorporated into dermal layer.",
+      "A thin, pale scar approximately 8cm long on his right hip from a childhood fall during early climbing expeditions; barely visible except under direct light.",
+      "Chronic pigment staining under fingernails and in creases of right palm where DIY mixing implant is housed; colors change weekly—currently yellow and deep indigo from recent work."
+    ],
+    "visible_augmentations": "Right palm displays a small, barely-noticeable subcutaneous bulge at the base of the hypothenar eminence where the DIY pigment-mixing implant sits; skin around it slightly discolored and occasionally shows faint scarring from the installation. No visible external ports or indicators. The bioluminescent forearm traces read as either ritual scarification or experimental tattoo work to casual observers; their true nature as incorporated bioink is not immediately apparent. No licensed augmentation markers visible.",
+    "posture_movement": "Moves with economic precision—no wasted motion, weight distributed for rapid directional changes. Walks with slight forward lean, shoulders slightly rounded from hours spent in cramped spaces and hunched over detail work. When still, he is very still; when moving, transitions between states are abrupt. Tends to position himself near exits or elevated positions. Makes deliberate eye contact only when establishing territory or assessing threat; otherwise maintains observational distance. Hands are rarely idle—sketching, color-testing, manipulating small objects.",
+    "clothing_style": "Tier 4-5 functional aesthetics. Worn cargo pants or modified jeans with numerous pockets and reinforced seams, often bearing paint stains that have become part of the visual design. Layered tops—typically a fitted base layer under an oversized, deliberately distressed button-up or windbreaker with modified ventilation and concealed cargo capacity. High-visibility elements mixed with matte colors; some pieces appear to have reflective paint applied deliberately to render him visible or invisible depending on context. Scuffed, extremely practical shoes (currently modified Vorn Hi-Tops with reinforced ankle support and grip-pattern customization for wall climbing). Minimal jewelry except for a length of copper wire wrapped multiple times around his left wrist—functional and symbolic. No corporate branding. Everything shows evidence of constant wear and frequent repair; the overall effect is of someone who treats clothing as infrastructure rather than presentation."
+  },
+  "image_prompt": "Cyberpunk portrait of a 19-year-old Mexican-Dutch boy with faded copper-orange hair fading to dark roots, medium brown skin, sharp cheekbones, dark calculating eyes. Wiry lean build, dressed in layered distressed cargo wear with paint stains and modified tactical details. Right forearm displays faint bioluminescent cyan-green branching scars glowing softly; both inner forearms scarred from wire and glass. Small barely-visible subcutaneous bulge at right palm where DIY pigment mixer implant sits. Perpetually stained hands with yellow and indigo pigment under fingernails. Standing in shadow near urban infrastructure—weathered concrete walls, elevated transit lines, drainage tunnels visible. Overhead industrial lighting casting dramatic shadows. Posture alert and economical, positioned near an exit. Gritty, utilitarian aesthetic—no corporate chrome, lived-in survival wear. Cyberpunk realism, moody cool lighting, environmental storytelling through clothing and scars. Sharp focus on hands and forearms. Shot from slight low angle. Cinematic depth of field. --ar 2:3 --v 6"
 }

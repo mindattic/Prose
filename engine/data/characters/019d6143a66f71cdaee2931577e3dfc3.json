@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
-  "description": "Nodar Kuznetsov-Adu is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a poisoner out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Nodar Kuznetsov-Adu lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Nodar Kuznetsov-Adu is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a poisoner out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Nodar Kuznetsov-Adu lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "A dead drop Nodar Kuznetsov-Adu maintains is found and cleaned out — whoever did it now has leverage",
-    "A crew member from Nodar Kuznetsov-Adu's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Nodar Kuznetsov-Adu's past shows up in GLMZ, carrying old grievances and new chrome",
     "Nodar Kuznetsov-Adu intercepts intelligence about a threat to their district and must decide between profit and protection"
   ],
   "narrative_function": "Nodar Kuznetsov-Adu represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
@@ -156,7 +156,7 @@
     },
     "strengths": [
       "mechanical aptitude — can repair or modify almost anything",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "augmentation dependency — performance drops sharply if chrome malfunctions",
@@ -273,9 +273,30 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "Slagworks Industrial"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Eastern European (Russian) / West African (Akan)",
+    "height_cm": 183,
+    "weight_kg": 71,
+    "build": "Lean and ropey — long muscle without bulk, the physiology of someone who trains for precision rather than power. Shoulders slightly elevated from years of controlled tension.",
+    "hair_color": "Dark grey-brown with natural silver threading at temples",
+    "hair_style": "Pulled back in a tight, functional braid that exposes the base of her skull — no vanity, pure practicality",
+    "hair_length": "Long",
+    "eye_color": "Pale grey with faint amber undertones — natural, unaugmented, but unnervingly steady",
+    "skin_tone": "Warm brown with olive undertones — mid-range complexion reflecting mixed heritage",
+    "complexion": "Sharp cheekbones, narrow jaw, thin lips. Skin weathered but maintained — not soft, not brutalized, somewhere in between. A scar cuts through her left eyebrow, thin and precise as a surgical line.",
+    "distinguishing_marks": [
+      "Surgical-precise scar through left eyebrow, 3cm length, pale against skin",
+      "Faint chemical burn marks on inner right forearm — constellation of small white discolorations, professional hazard",
+      "Tattoo on right inner wrist: chemical formula in old-style serif font, black ink faded with age, approximately 2cm tall"
+    ],
+    "visible_augmentations": "Cyberears mounted flush against skull — titanium-chrome backing with visible microphone arrays, integrated sound-dampening mesh. Neural interface jack at base of skull — cybernetic port recessed into bone, barely noticeable unless she moves her head to angle it toward light. No cosmetic covering.",
+    "posture_movement": "Moves with deliberate, economical efficiency — no wasted motion, no fidgeting. When standing still, she's unnervingly motionless. When walking, each step is placed with intent. Her head rotates rather than her eyes — a habit born from directional microphone awareness. Rarely blinks for extended periods.",
+    "clothing_style": "Tier 3-4 utilitarian. Favors dark, neutral colors — grey, black, deep blue. Clothes are well-maintained but unremarkable: polymer-blend tactical trousers, fitted long-sleeved shirts in reinforced synth-cotton, a worn matte-black jacket with internal pockets and secure fasteners. No logos, no chrome trim, nothing to catch light or memory. Functional waterproof boots rated for chemical exposure. Gloves at most times — thin synthetic material, dexterous, designed for precision work."
+  },
+  "image_prompt": "A 45-year-old woman of mixed Eastern European and West African heritage, 183cm tall with sharp cheekbones and pale grey eyes, dark grey-brown hair in a tight braid exposing the base of her skull where a visible neural interface jack recesses into bone. Cybernetic ears with titanium-chrome backing and microphone arrays mounted flush against her skull. Thin surgical scar through left eyebrow. Wearing dark grey tactical synth-cotton shirt and matte-black jacket with reinforced panels, synthetic gloves, standing in dockside warehouse lighting with industrial scaffolding and Lake Michigan waterfront visible in background. Harsh side-lighting casting sharp shadows across her face. Motionless, predatory stillness. Photorealistic, gritty cyberpunk noir aesthetic, cool color grading. --ar 2:3 --v 6"
 }

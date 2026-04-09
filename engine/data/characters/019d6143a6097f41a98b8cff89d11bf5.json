@@ -252,5 +252,26 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Silver"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Ghanaian-Akan / Russian)",
+    "height_cm": 152,
+    "weight_kg": 48,
+    "build": "Small and dense, almost birdlike; decades of terminal work have created a slight forward curve to her spine, giving her a perpetual posture of attentive reading. Wiry rather than frail, with visible corded forearms.",
+    "hair_color": "Pure white",
+    "hair_style": "Cropped close to the scalp in a utilitarian cut, no styling",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with amber luminescence in low light (ocular implant glow)",
+    "skin_tone": "Deep warm brown with warm undertones",
+    "complexion": "Lined face with pronounced smile creases and crow's feet; skin shows age with dignity and no attempt at rejuvenation. Sharp, attentive expression. Meticulously groomed despite her age and tier status.",
+    "distinguishing_marks": [
+      "Faint silver tracery of dermal-display ports running along her left forearm in branching patterns, no longer functional but visible beneath the skin like circuit scars",
+      "Fine network of age lines radiating from the corners of her eyes",
+      "Small permanent calluses on the middle and ring fingers of her right hand from decades of handwriting"
+    ],
+    "visible_augmentations": "Inactive Tessera data-port array visible along the inner left forearm as faded silver subcutaneous pathways. Reading-enhancement ocular implants evident in the slight amber glow of her eyes in dim light and the precise, unnaturally stable focus of her gaze. Yellow-tinted spectacle frames magnify her eyes to an owlish proportion, partially masking but also emphasizing the implants.",
+    "posture_movement": "Habitually bent slightly forward, shoulders rounded inward as though perpetually leaning toward text. Movements are slow and deliberate, economical; no wasted motion. When listening, her entire body goes still and her eyes focus with unsettling intensity. She walks with careful, measured steps.",
+    "clothing_style": "Tier 4 practical: well-maintained but clearly secondhand clothing in muted earth tones and grays. Oversized cardigans layered over simple cotton shirts. Comfortable, worn trousers with deep pockets always filled with notebooks and pens. Worn canvas shoes with reinforced soles. A faded canvas satchel, handmade, covered in small hand-sewn patches commemorating residents and dates. On her left wrist: a manual ink stamp carved in the shape of a tree, which she wears on a cord of braided thread."
+  },
+  "image_prompt": "Portrait of an elderly Black woman, 79 years old, small and dense build with a gentle forward stoop from decades of archival work. Deep brown skin, cropped white hair, wearing oversized yellow-tinted spectacles that magnify her eyes to an owlish proportion. Her left forearm shows faint silver subcutaneous circuit patterns from inactive data ports. Low warm lighting causes her eyes to glow softly amber from reading-enhancement implants. She wears a layered cardigan and holds a handmade canvas satchel. Background: dim sublevel archive room with old fireproof cases and handwritten ledgers. Mood: quiet dignity, watchful warmth, archival melancholy. Cyberpunk character study, documentary realism, intimate lighting, sharp focus on face. --ar 2:3 --v 6"
 }

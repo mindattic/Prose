@@ -106,5 +106,27 @@
   "district": "The Spires",
   "related_entities": [
     "Chicago"
-  ]
+  ],
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Scandinavian (Danish) / East Asian (Japanese)",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Athletic and lean with defined shoulders and core; economical musculature suggesting regular physical conditioning and combat training rather than bulk.",
+    "hair_color": "Dark brown with subtle auburn undertones",
+    "hair_style": "Pulled back in a tight, professional braid wrapped around the crown; a few silver strands visible near the temples",
+    "hair_length": "Long (past shoulders when unbound)",
+    "eye_color": "Deep brown with a slight amber ring in bright light",
+    "skin_tone": "Warm medium brown with golden undertones, even complexion",
+    "complexion": "Sharp cheekbones, defined jawline, thin scar running from left temple to cheekbone (faded but visible under direct light), minimal makeup—just mascara and a neutral lip. Skin is clear and well-maintained, suggesting access to quality dermal care.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple toward cheekbone, approximately 8cm long, from a blade encounter circa age 23",
+      "Small circular burn mark on the inside of right wrist, subcutaneous implant entry point, barely noticeable unless pointed out",
+      "Faint tattoo on the nape of neck: a stylized Ⓢ in minimal line-work (Sterling-Nakamura corporate sigil, covered by hair most of the time)"
+    ],
+    "visible_augmentations": "None immediately obvious. Subcutaneous neural array operates behind the eyes (undetectable without scanning). Subdermal reinforcement plating along left forearm is concealed beneath tailored sleeves but occasionally visible as a subtle metallic sheen when light hits at certain angles.",
+    "posture_movement": "Moves with controlled precision; economical gestures that convey authority without aggression. Stands with weight balanced, never flat-footed. Eyes track multiple vectors simultaneously—habit of someone trained in threat assessment. Speaks quietly but commands attention through cadence and tone rather than volume.",
+    "clothing_style": "Tier 1-2 corporate aesthetic. Tailored charcoal suit jacket (Italian wool-synthetic blend, Sterling-Nakamura house cut) over a cream silk undershirt. Dark trousers with minimal ornamentation. Understated Φ2,400 smart-fabric belt (color-shifting nano-weave, subtle flex of wealth). Black leather ankle boots with reinforced soles (customized for urban parkour). A thin platinum chain around her neck (tasteful, barely visible). No visible jewelry except a discrete tactical watch on her wrist. Wardrobe conveys approachability while maintaining professional distance—form-fitting enough to suggest athleticism, formal enough to remind people she answers to Sterling-Nakamura.",
+    "bearing": "Projects calm control. A fixer who has negotiated with desperate people, corpo enforcers, and criminal syndicates. The scar and the way she carries herself suggests she can back up her words with action, but she prefers the negotiation table."
+  },
+  "image_prompt": "Professional cyberpunk fixer, female, 38 years old, athletic lean build, warm medium brown skin with golden undertones, dark brown hair with auburn undertones pulled back in tight braid, sharp cheekbones, faint scar on left temple, deep brown eyes with amber ring. Wearing tailored charcoal suit jacket and cream silk shirt, dark trousers, black leather boots, platinum chain necklace, tactical watch. Standing in sleek corporate office in The Spires skyscraper, floor-to-ceiling windows showing neon-lit Chicago skyline at dusk, cool blue-purple ambient lighting mixing with warm desk lamps, subtle holograms floating in background. Posture controlled and alert, radiating quiet authority. Cyberpunk noir aesthetic, corporate sophistication, moody cinematic lighting. Shot in 2:3 portrait format, photorealistic, --ar 2:3 --v 6"
 }

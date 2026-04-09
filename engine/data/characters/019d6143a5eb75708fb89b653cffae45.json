@@ -196,5 +196,24 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Andean / West African (Peruvian-Ghanaian diaspora blend)",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Lean and angular with minimal body fat; corded forearm musculature from years of fine motor control at the tram throttle. Shoulders slightly narrow, legs long relative to torso.",
+    "hair_color": "Natural deep black base with color-shifting geneware stripe on crown — cycles involuntarily between slate blue and deep amber depending on emotional state",
+    "hair_style": "Close-cropped sides with longer crown stripe; precise, maintained weekly",
+    "hair_length": "Short (sides), Medium (crown stripe)",
+    "eye_color": "Dark brown, sharp and observant",
+    "skin_tone": "Dark honey complexion with warm undertones; reflects mixed Andean and Ghanaian ancestry",
+    "complexion": "High, broad cheekbones; slight angular jaw; minimal facial hair (kept smooth); skin clear and unblemished; faint laugh lines around eyes suggesting reserved, infrequent smiling",
+    "distinguishing_marks": [
+      "Faint tracery of subdermal circuit tattoos along entire left forearm — abstract geometric patterns resembling circuit board pathways, done in silver-grey ink, no functional purpose, executed when age 22"
+    ],
+    "visible_augmentations": "Color-shifting geneware hair stripe (mood-reactive, involuntary — serves as unintended emotional telemetry). Neural throttle-link interface port at base of skull (Ferrogate-issue, employer-owned) — small glossy insertion point visible when hair is pulled back, unmarked and clinical. Subdermal circuit tattoos are visible but cosmetic only.",
+    "posture_movement": "At rest: slightly forward-leaning, coiled alertness suggesting constant low-grade vigilance. Shoulders tense. At the tram controls: fluid, confident, economical micro-adjustments. Off-duty: contained, deliberate, minimal expansive gestures. Walks with even stride, eyes tracking surroundings. Hands often engaged — fidgeting with small objects, unconsciously miming mechanical motions.",
+    "clothing_style": "Ferrogate Transit uniform during shifts: charcoal grey polyweave jumpsuit with reflective safety trim and Tier 2 line badge. Off-duty: functional Tier 3 workwear — fitted synthetic shirts in neutral tones (grey, black, charcoal), well-maintained cargo pants or modified denim, reinforced work boots (currently scuffed Geartown-issue synthleather). No jewelry. A single worn canvas tool vest for workshop time. Everything practical, nothing aspirational. Minor wear and oil stains visible on fingertips — evidence of hobby mechanical work."
+  },
+  "image_prompt": "Cyberpunk portrait of Deku Barrientos-Osei, a 29-year-old nonbinary transit operator, lean angular build with dark honey skin tone reflecting Andean and Ghanaian heritage. Sharp high cheekbones, close-cropped black hair with a single color-shifting geneware stripe on crown cycling between slate blue and amber, dark observant eyes. Subtle subdermal circuit tattoos visible along left forearm in silver-grey ink — geometric abstract patterns. Small glossy neural interface port visible at base of skull. Wearing a charcoal grey Ferrogate Transit polyweave jumpsuit with reflective safety trim during shift, or off-duty in fitted grey synthetic shirt and worn cargo pants. Posture coiled and alert, slightly forward-leaning, minimal expression. Industrial GLMZ Geartown setting, harsh fluorescent lighting on metal tram platform in background, cool cyan and amber neon glow, gritty realism with cyberpunk aesthetics, sharp focus on face, cinematic lighting, moody and introspective atmosphere --ar 2:3 --v 6"
 }

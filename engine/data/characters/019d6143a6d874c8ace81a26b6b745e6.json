@@ -214,5 +214,25 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Clay"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Southern African / Scandinavian",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and lean, almost bird-like in economy of movement. Narrow shoulders, minimal upper body mass. Built for stillness rather than exertion.",
+    "hair_color": "Natural dark brown, nearly black",
+    "hair_style": "Close-cropped natural hair, kept pressed flat beneath her monitoring headset",
+    "hair_length": "Short",
+    "eye_color": "Cosmetic circuit-pattern irises: amber base with black circuit-trace overlays, human-like sclera",
+    "skin_tone": "Deep brown with warm undertones, even complexion",
+    "complexion": "Sharp cheekbones, defined jawline. Minimal makeup. Skin unmarked and well-maintained. Eyes carry unusual intensity — the circuit patterns catch light and seem to shift slightly as she tracks movement.",
+    "distinguishing_marks": [
+      "Faint scar tissue along the left temple where the neural uplink jack was installed, barely visible beneath hairline",
+      "A small, precise tattoo of a transit schematic map on her right inner wrist — underground lines in silver ink"
+    ],
+    "visible_augmentations": "Circuit-patterned cosmetic irises are immediately noticeable and unsettling. The Ferrogate monitoring headset is a permanent fixture — a sleek neural interface crown with three small sensor pods that contact her temples and scalp. Faint subcutaneous LED trace visible along her left palm and inner wrist (haptic feedback implant), glowing amber when alert notifications fire.",
+    "posture_movement": "Still. Almost preternaturally still when seated. Minimal fidgeting or reactive movement. When mobile, she moves with economical precision — no wasted motion. Head remains relatively fixed while eyes track; this creates an uncanny quality, as if only her gaze moves while the rest of her is locked on target. Her left hand sometimes trembles microscopically — haptic feedback from her uplink triggering phantom sensations.",
+    "clothing_style": "Tier 3 utilitarian corporate issue. Black Ferrogate-branded bodysuit with reinforced shoulders and upper back (designed to support headset weight). Matching tactical vest with six patch pockets, all precisely organized. Steel-toed boots rated for transit station spillover. A thin silver Φ-chain necklace — inexpensive, probably a gift, worn consciously. Her one personal affectation: a small embroidered patch on her left shoulder strap depicting a stylized E.L.F. (Electromagnetic Low-Frequency) in faded thread."
+  },
+  "image_prompt": "Cyberpunk female surveillance operator, age 31, South African-Scandinavian heritage, compact lean build 158cm tall. Deep brown skin, close-cropped natural hair pressed beneath a sleek neural monitoring headset with temple sensors. Striking amber-and-black circuit-diagram patterned irises that seem to glow. Sharp cheekbones, intense watchful gaze. Wearing black Ferrogate Transit Security bodysuit and tactical vest, steel-toed boots. Seated at a monitoring station, surrounded by holographic camera feeds and glowing readouts. Small clay figurine of an E.L.F. on console beside her. Dim cool blue-amber lighting from screens illuminates her face. Atmosphere: tense surveillance room, late-shift isolation, technological immersion. Hyperreal cyberpunk aesthetic, photographic realism, cinematic lighting, shallow depth of field focusing on her eyes. --ar 2:3 --v 6"
 }

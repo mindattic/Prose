@@ -247,5 +247,25 @@
     "The Pure Hand",
     "Gold"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Kazakh / West African (Nigerian)",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Lean and angular with long limbs and minimal upper body mass; moves with the economical efficiency of someone who forgets to eat during work cycles",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Close-cropped fade on sides, loose textured crown; chronically compressed beneath over-ear headphones",
+    "hair_length": "Short/Medium mixed",
+    "eye_color": "Patterned irises — deep brown base with intricate gold and amber fractal spiral cosmetic modification; pupils constantly active and difficult to track",
+    "skin_tone": "Warm amber-brown with Kazakh-Nigerian undertones; sun-weathered on face and forearms from field work",
+    "complexion": "Sharp, high-set cheekbones; angular jawline; perpetually fatigued skin with slight darkness under eyes; sparse stubble suggesting inconsistent grooming priority; expression often distant or intensely focused",
+    "distinguishing_marks": [
+      "Neural interface jack scar behind left ear — barely visible, 2cm surgical line, approximately five years old with minimal keloid formation",
+      "Faint burn mark on right forearm (inner wrist area) — pale, roughly 3cm diameter, from a lab accident at age 26; almost invisible unless specifically noted"
+    ],
+    "visible_augmentations": "Fractal-patterned irises in gold and amber (cosmetic but unmistakably artificial); barely-visible neural jack scarring behind left ear; over-ear headphones worn almost constantly, worn matte black finish suggesting years of use",
+    "posture_movement": "Tall frame often slouched forward in conversation; hands in constant motion — gesturing, fidgeting with headphone cables, mimicking data structures in air while theorizing; gait slightly scattered and directionally uncertain, as though navigating multiple cognitive layers simultaneously",
+    "clothing_style": "Tier 2 academic-comfortable: worn charcoal tech-fabric shirt with rolled sleeves (Limbic Systems brand, mid-tier); tailored black synthetic trousers with reinforced seams for frequent field work; scuffed matte-black ankle boots; layered with a faded gray linen overshirt that appears to function as a portable library (pockets stuffed with handwritten notes, data chips, a worn notebook); watch with secondary display screen on left wrist; minimal jewelry except thin silver band (no clear significance)"
+  },
+  "image_prompt": "Tall, lean Kazakh-Nigerian man with angular features and warm amber-brown skin, age 34, close-cropped dark hair with textured crown, piercing eyes with intricate gold-and-amber fractal spiral iris modifications that glow subtly in light. Wearing worn matte-black over-ear headphones around neck, charcoal technical shirt with rolled sleeves, faded linen overshirt, black reinforced trousers, scuffed boots. Hands gesturing expressively mid-conversation, slight forward slouch, distant and intensely focused expression. Background: dim interior of converted relay station laboratory, scattered with data terminals and research papers, cool blue-white LED strips casting shadows, neon circuit diagrams visible on walls. Cyberpunk academic aesthetic, focused lighting on face highlighting the fractal iris patterns, moody atmospheric lighting, shallow depth of field, cinematic. --ar 2:3 --v 6"
 }

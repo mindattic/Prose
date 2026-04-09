@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Riot Suppression Specialist, Meridian 88 Metro Police",
+  "role": "Riot Suppression Specialist, GLMZ Metro Police",
   "age": 38,
   "status": "active",
   "location": "Fort Anchor, near Halsted and Chicago Ave",
@@ -64,7 +64,7 @@
   "narrative_function": "Moral compass figure within law enforcement — a voice of restraint who can warn players about escalating tensions or provide insight into how the Metro Police actually functions versus how it is supposed to. Can be an unexpected ally or a complicated obstacle depending on context.",
   "augmentations": "Subdermal impact-distribution mesh across torso and upper arms (medical-grade, not cosmetic). Neural pacing implant with bioluminescent copper filament side effect visible at temples and crown. Reinforced knee cartilage from a line-of-duty injury repair.",
   "daily_life": "Arrives at Fort Anchor before her shift starts, runs equipment checks, reviews overnight incident logs. Spends much of her day in standby readiness — drills, briefings, and the long waiting that defines riot work — then returns home to her flat in Ironhaven where she maintains a small hydroponic herb garden.",
-  "affiliation": "Meridian 88 Metro Police — Riot Suppression Unit Delta",
+  "affiliation": "GLMZ Metro Police — Riot Suppression Unit Delta",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -250,5 +250,25 @@
     "Déjà Vu",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Russian Caucasian",
+    "height_cm": 198,
+    "weight_kg": 112,
+    "build": "Imposing columnar frame — broad shoulders and thick neck with dense muscle layered over a large skeletal structure. Built for absorbing and distributing force rather than speed. No excess fat; functional mass.",
+    "hair_color": "Natural deep black with copper-toned bioluminescent filaments",
+    "hair_style": "Close-cropped natural coils with visible threading of glowing filaments along crown and temples",
+    "hair_length": "Short",
+    "eye_color": "Deep brown",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Clean-shaven face, minimal grooming vanity. Skin shows the weathering of sun exposure and sustained stress — not lined heavily, but with a baseline tiredness around the eyes that suggests years of irregular sleep cycles. Jawline is defined and prominent.",
+    "distinguishing_marks": [
+      "Long diagonal scar running from left jaw to collarbone, deliberate unrepaired monofilament wound from Calumet Rise riots eight years prior — silvered and keloidal with visible depth.",
+      "Faint luminescent glow visible at temples and crown where neural pacing implant's bioluminescent filaments approach surface — copper-colored, pulses subtly with elevated heart rate."
+    ],
+    "visible_augmentations": "Copper-toned bioluminescent filaments visible threading through hair at crown and temples, pulsing faintly when heartrate elevates. Barely perceptible geometric pattern of subdermal mesh visible on neck and upper shoulders under certain lighting angles — suggests reinforced torso and upper arm architecture beneath uniform.",
+    "posture_movement": "Stands with a balanced, weight-centered stance — the physical grammar of someone trained to absorb impacts from multiple directions. Moves with deliberate economy; no wasted motion. When at rest she has a subtle forward neck posture from years of riot gear and helmet wear. Despite her size, footfalls are controlled and quiet. When she walks through a crowded space, people instinctively clear a path without her needing to command it.",
+    "clothing_style": "On duty: GLMZ Metro Police riot suppression uniform — ballistic polymer tactical pants, reinforced boots with good ankle support, modular torso rig over standard-issue impact shirt. Off-duty in Ironhaven: utilitarian Tier 3 casual wear — worn denim or cargo pants, neutral-colored oversized t-shirts or thermal layers, practical jackets. No corporate branding. Favors grey and black. Her personal gear shows signs of actual use and repair rather than replacement."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 38-year-old West African-Russian woman, 198cm tall, massive shoulders and neck, deep umber skin, close-cropped natural black hair threaded with glowing copper bioluminescent filaments that pulse faintly at temples and crown, deep brown eyes, a long diagonal silvered scar from jaw to collarbone, professional blank expression of calm authority. Wearing GLMZ Metro Police riot suppression tactical uniform — ballistic polymer, reinforced boots, modular torso gear. Subdermal impact-distribution mesh subtly visible on shoulders and upper arms. Standing with balanced weight-centered posture in a precinct hallway, cool fluorescent and neon lighting, cinematic depth, photorealistic with subtle cyberpunk enhancement, --ar 2:3 --v 6"
 }

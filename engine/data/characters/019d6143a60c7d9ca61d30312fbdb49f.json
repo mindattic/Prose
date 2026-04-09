@@ -183,5 +183,26 @@
     "Adaeze Chen-Hawkins",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South African / Finnish",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Heavyset with settled mass across shoulders and torso; posture slightly forward-bent from decades of desk work, but consciously held upright. Broad hands with prominent knuckles.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, military precision",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep brown with ashy undertones at joints from dry climate exposure and age",
+    "complexion": "Lined face, weathered around the eyes and mouth; careful grooming; thin scar tissue visible on left temple (old injury, faded). Dry patches at elbows and knuckles from decades in climate-controlled corporate spaces.",
+    "distinguishing_marks": [
+      "Faded Sterling-Nakamura employee tattoo on right inner wrist — compliance officer registry mark, partially worn.",
+      "Fine white scar tissue across left temple, approximately 3cm, angled downward toward jaw.",
+      "Amber cat tail, approximately 60cm in length, attached at base of spine — visible when wearing loose clothing or seated."
+    ],
+    "visible_augmentations": "Neural notation implant visible as small matte-black port behind right ear with faint LED indicator (dormant unless active). Subdermal circuitry faintly visible under thin skin at temple and neck when light hits at certain angles — Sterling-Nakamura industrial grade, not cosmetic-grade concealment. The cat tail's base shows minor scarring and subdermal reinforcement where it was anchored.",
+    "posture_movement": "Deliberate, economical movements — habits of taking up minimal space in corporate environments still present but consciously resisted. Walks slowly with measured steps. Frequently touches his right ear (notification check). Sits with spine slightly curved, as though ready to make himself smaller. Hands gesture rarely and carefully.",
+    "clothing_style": "Tier 3-4 working class with careful maintenance: neutral-colored linen and cotton blend shirts (off-whites, grays, muted blues), sometimes with faint council insignia patch on chest. Lightweight pants with utility pockets (practical, not flashy). Worn leather work boots, meticulously cared for. Old Sterling-Nakamura company jacket — faded navy, retained for utility not nostalgia — worn over work clothes in cooler months. No logos or chrome-finish accents. Clothing shows signs of repair and patching but no ostentation."
+  },
+  "image_prompt": "Portrait of Ezra Mbeki-Valtonen, 61-year-old South African-Finnish man, heavyset build, deep brown skin with ashy undertones at elbows and knuckles, close-cropped white hair, lined face weathered by age and desk work. Dark brown eyes. Wearing neutral-toned linen shirt and faded navy work jacket. Visible behind right ear: small matte-black neural notation implant port. Amber cat tail extending from base of spine, visible at edges of frame. Standing in Shelf community center, morning light through industrial windows. Careful, deliberate posture — a man learning not to take up space. Film noir lighting, desaturated color palette with warm amber tones in tail and skin. Grounded cyberpunk realism, no chrome or neon. --ar 2:3 --v 6"
 }

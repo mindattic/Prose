@@ -58,7 +58,7 @@
     ],
     "example_lines": [
       "The brain is a 1.4-kilogram organic computer running inside a 90-kilogram military chassis. The chassis will outlast the computer by approximately forever. I try not to think about that.",
-      "Axiom's eastern firewall is a 6. Tessera's internal network is an 8. The GLM transit system is a 4 and if anyone asks how I know that, I was never here.",
+      "Axiom's eastern firewall is a 6. Tessera's internal network is an 8. The GLMZ transit system is a 4 and if anyone asks how I know that, I was never here.",
       "Twelve hours jacked in and the body doesn't feel a thing. The brain feels all of it. Headaches, nausea, memory gaps. The body is fine. The body is always fine. The body isn't the problem.",
       "I have a photograph of myself from before. Real skin. Real hands. Real everything. I look at it sometimes and I can't remember what any of it felt like. That's the trade."
     ]
@@ -318,5 +318,27 @@
     "Steel",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Japanese / Scandinavian (Nomura-derived; the surname suggests Kira's biological ancestry before prostheticization)",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Synthetic frame optimized for function over form — angular, articulated, with pronounced joint architecture visible at elbows, shoulders, and knees. No biological softness; all geometry and load-bearing efficiency. The torso is a segmented polymer chassis with reinforced synthetic musculature beneath a matte black composite skin.",
+    "hair_color": "None — the cranial housing is a seamless black composite dome with no follicle ports",
+    "hair_style": "N/A",
+    "hair_length": "None",
+    "eye_color": "Amber with faint green network-diagnostic overlay — the only softness in the face, and the only remaining link to Kira Nomura's original biology. They illuminate faintly when processing data.",
+    "skin_tone": "Matte black composite polymer with a micro-textured finish — non-reflective, designed to absorb light rather than catch it. No pigmentation variation; utterly uniform in tone.",
+    "complexion": "A face machined rather than grown — symmetrical, efficient, with high cheekbones and a sharp jawline rendered in synthetic material. The mouth is a precision-cut aperture; the nose is a streamlined air intake. Minimal expression range by design, but the amber eyes compensate with hyperprecision micro-movements that betray emotional states.",
+    "distinguishing_marks": [
+      "Eight parallel silver suture-lines run vertically down the left side of the cranial housing from temple to jaw — original installation scars from NovaCorp's surgical integration of the biological brain into the prosthetic frame, never fully sealed",
+      "A faded industrial serial number stamped into the left shoulder blade: NVC-PRAXIS-7734-M, indicating her NovaCorp military designation",
+      "Hairline fracture in the right forearm composite (visible under the matte finish as a darker seam) — result of a data fortress IC countermeasure that correlated a digital strike to physical trauma during a jacked-in session eight months ago",
+      "Wear pattern on the fingertips where the hardline interface ports sit — micro-abrasions and discoloration from thousands of connection cycles, creating an asymmetrical darker patch on all four fingers of the dominant hand"
+    ],
+    "visible_augmentations": "Everything visible is augmentation. The entire body is military-specification synthetic. The defining features: hardline interface ports visible as recessed silver-rimmed circular apertures in the fingertips (approximately 8mm diameter each) and a larger, more protected port at the base of the skull beneath a hinged carbon-fiber access panel. The cranial housing shows no seams except the aforementioned suture-lines from installation. Internal power cells are visible as faint luminescent lines running along the ribs and spine beneath semi-translucent sections of the chest composite — a subtle blue-green glow when actively charging or during sustained operation. No biological augmentations are possible; there is no biological body to augment.",
+    "posture_movement": "Economical and precise — every movement serves function. When moving through physical space, she moves like maintenance machinery: efficient angles, minimal wasted motion, joints that articulate with slight mechanical precision-sounds. When stationary or waiting, she achieves a perfect stillness that biological humans find unsettling — no fidgeting, no breathing, no micro-adjustments. When jacked in or in data-intensive problem solving, she occasionally exhibits micro-tremors in the hands or a subtle oscillation in the head as the frame processes at high intensity. Her posture is slightly forward-leaning, as though ready to move into a maintenance tunnel or position herself for hardline access.",
+    "clothing_style": "Tier 5 / function-over-aesthetics. She wears a custom-fitted black synthetic bodysuit with embedded thermal regulation (designed to complement her prosthetic's power-management system) and reinforced joint padding at elbows, shoulders, and knees. Over this: a modified military-surplus coat in matte charcoal with oversized pockets for tools and spare hardline adapters, collar modified to accommodate the skull-base interface port. Fingerless gloves in synthetic leather, worn through at the fingertips to expose the interface ports themselves. Heavy industrial boots with reinforced soles for tunnel crawling. No jewelry, no identifying markers, no concessions to presentation. Everything she wears is designed to be forgotten — to make her body a secondary concern to the work."
+  },
+  "image_prompt": "A full-body portrait of Switchboard, a 178cm tall cyborg woman with a matte black synthetic body, angular mechanical joints visible at elbows and shoulders, seamless black composite skin with a micro-textured non-reflective finish. Her face is machined precision — high cheekbones, sharp jawline, utterly symmetrical. Amber eyes with faint green diagnostic overlay, the only warm element in her appearance. Vertical silver suture-lines scar the left side of her cranial housing from temple to jaw. Hardline interface ports visible as recessed silver circles on all fingertips and a larger protected port at the base of her skull. Faint luminescent blue-green lines run along her ribs and spine beneath semi-translucent chest panels, indicating internal power cells. She wears a custom-fitted black synthetic bodysuit with thermal regulation lines, a modified military charcoal coat with oversized pockets, fingerless gloves exposing the interface ports, and heavy industrial boots. Standing in a utilitarian sub-level maintenance tunnel — concrete walls, harsh fluorescent strips overhead casting sharp shadows, dim blue biolume emergency lighting in the background. Her posture is economical and still, slightly forward-leaning. Cyberpunk aesthetic, technical precision, noir lighting, dark saturated color palette with amber and blue accents. Hyper-detailed mechanical design. Professional military industrial design language. --ar 2:3 --v 6"
 }

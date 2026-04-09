@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Vuk Borg-Agyeman's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Vuk Borg-Agyeman's past shows up in GLMZ, carrying old grievances and new chrome",
     "A former associate resurfaces with evidence that could destroy Vuk Borg-Agyeman's reputation — and a price for silence",
     "A high-paying contract turns out to target someone Vuk Borg-Agyeman owes a personal debt to"
   ],
@@ -277,9 +277,31 @@
     "Tessera TK-9 Proteus 'Shapeshifter'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Northern European (Scandinavian) / West African (Ghanaian)",
+    "height_cm": 183,
+    "weight_kg": 71,
+    "build": "Rawboned and lean with efficient musculature — no excess mass, built for speed and endurance rather than strength. Shoulders broad but not bulky. Wrists and ankles suggest long leverage rather than density.",
+    "hair_color": "Steel gray with natural ash-blonde undertones",
+    "hair_style": "Pulled back in a tight, no-nonsense braid or kept short and practical",
+    "hair_length": "Short",
+    "eye_color": "Chrome iris rings with visible thermal overlay tech — inner iris shows subtle amber LED glow when augmentation is active",
+    "skin_tone": "Medium tan with warm undertones — mixed heritage visible in bone structure and coloration",
+    "complexion": "Weathered but maintained. Sharp cheekbones, narrow jawline. Skin shows controlled scarring and minute implant seam lines at temple and behind ear. No excess body fat. Grooming is methodical — nails cut to functional length, minimal jewelry.",
+    "distinguishing_marks": [
+      "Pale surgical scar along left temple extending toward hairline — old cybernetic implant site, well-healed but visible",
+      "Thin white scar across the ridge of her right knuckles — old combat damage",
+      "Faint laser-burn marks along inner right forearm — weapons testing or accidental discharge from her own rig",
+      "Subcutaneous port seam visible below left collarbone under thin skin — drug synthesizer access point"
+    ],
+    "visible_augmentations": "Chrome iris rings are immediately visible — shimmer faintly in certain light. Subdermal implant seams visible at temple and collarbone. No visible limb replacements; augmentations are subtle and internal by design. The chrome is intentionally exposed rather than hidden — a message.",
+    "posture_movement": "Carries herself with coiled efficiency — shoulders loose, weight balanced on the balls of her feet. Moves with minimal wasted motion, head on a swivel. Eyes track threats automatically. Resting expression is neutral to hostile. When relaxed, there is a quality of a blade laid against a surface — still dangerous.",
+    "clothing_style": "Tier 3-4 working specialist: functional combat wear in dark grays and blacks. Heavy-duty synth-leather jacket with reinforced panels and pockets for tools/gear. Articulated cargo pants with secure pockets and ankle reinforcement. Undershirt is smart-fabric base layer beneath. Footwear is tactical and broken in — non-descript dark boots with good grip. Wears a long tactical coat in winter. Minimal branding, maximum utility. Everything is maintained, nothing is flashy. The aesthetic is 'I need to move and fight' not 'look at me.'"
+  },
+  "image_prompt": "Cyberpunk street samurai woman, age 40, Scandinavian-Ghanaian mixed heritage, tall and rawboned frame, steel gray hair in tight braid, sharp cheekbones, weathered face with intelligent expression. Glowing chrome iris rings with subtle amber LED glow in both eyes, thermal overlay visible. Visible subdermal implants at temple and collarbone, surgical scars on face and hands. Wearing dark tactical jacket with reinforced panels, smart-fabric base layer, articulated cargo pants, combat boots. Meridian Station interior background — neon-lit transit hub, night lighting, cool color palette. Posture is coiled and ready, weight on balls of feet, hands loose. Mood is dangerous but controlled, lethal professional competence. Cinematic lighting with harsh side-light emphasizing chrome and scars. Photorealistic cyberpunk aesthetic, gritty and grounded. --ar 2:3 --v 6"
 }

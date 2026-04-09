@@ -172,5 +172,25 @@
     "The Quiet Room",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mexican / Polish",
+    "height_cm": 157,
+    "weight_kg": 78,
+    "build": "Heavyset, solid through the torso and shoulders — not fat but densely packed with sixty-one years of work. Strong legs, thick wrists. Carries herself like someone who has lifted, carried, and held things up for decades.",
+    "hair_color": "Dyed flat black, natural gray at the roots showing through in a thin stripe at the part",
+    "hair_style": "Thick braid, usually pinned or coiled at the nape",
+    "hair_length": "Long (to mid-back when unbraided)",
+    "eye_color": "Dark brown, sharp and assessing",
+    "skin_tone": "Warm medium brown with golden undertones",
+    "complexion": "Deeply lined around eyes and mouth — laugh lines and stress lines she has never bothered to smooth. Weathered but not sagging. Skin is clear, well-moisturized, cared for functionally rather than cosmetically. No makeup beyond lip balm.",
+    "distinguishing_marks": [
+      "Faded subdermal loyalty tattoo along the inside of her left forearm (three interlocking circles), glows faintly gold under certain light frequencies — personal memorial to a defunct mutual aid organization",
+      "A thin white scar along her left temple, barely visible, from a 2189 street collision"
+    ],
+    "visible_augmentations": "Bilateral cochlear enhancer nodes visible at the base of each ear — small metallic caps, worn and scratched from long use, no attempt to conceal them. She treats them as functional equipment, not cosmetic liability.",
+    "posture_movement": "Moves with deliberate efficiency — no wasted motion, no second-guessing. Walks into rooms like she owns them or at minimum knows exactly what needs doing. Stands with weight balanced, shoulders back. Sits with elbows on the table, comfortable taking up space. Makes direct eye contact. Her default expression is neutral assessment.",
+    "clothing_style": "Tier 3-4 practical wear: well-maintained but not new. Dark jeans or work pants, sturdy shoes (usually black or brown leather, resoled multiple times). Layered tops — thermal base, cotton shirt, often a faded denim or canvas jacket with pockets. A thick knit cardigan in winter. All clothing shows wear but is clean and intentionally kept. No logos, no corporate branding. A worn leather belt holding everything together. Occasional council medallion on a lanyard when doing official work."
+  },
+  "image_prompt": "Portrait of a 61-year-old Mexican-Polish woman, short and heavyset with powerful posture, warm medium brown skin deeply lined around eyes and mouth with dignified weathering, thick black hair in a braid, dark assessing eyes, bilateral metallic cochlear enhancers visible at ear bases, subtle glowing gold subdermal tattoo on inner forearm. Wearing faded denim jacket over layered cotton shirt, sturdy worn leather belt, comfortable and commanding. Warm amber practical lighting, seated at a kitchen table or council office, direct gaze, no makeup, expression of clear-eyed pragmatism. Cyberpunk neighborhood council leader aesthetic, 2226, authentic and unglamorous. --ar 2:3 --v 6"
 }

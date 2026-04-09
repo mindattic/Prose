@@ -187,5 +187,27 @@
     "Ringo Corponation",
     "Glass"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Angolan / Mongolian",
+    "height_cm": 188,
+    "weight_kg": 92,
+    "build": "Large-framed man with softened middle age; broad shoulders and chest still carrying strength, but belly has claimed its share of seventy years. Thick-limbed without being muscular. Moves with the careful deliberation of someone negotiating with his own skeleton.",
+    "hair_color": "Silver-grey, natural",
+    "hair_style": "Short cropped on top, closely trimmed sides, thinning at crown",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unaugmented",
+    "skin_tone": "Deep warm brown, Angolan coastal heritage, with age spots freckling across shoulders and forearms",
+    "complexion": "Weathered, lined face with deep creases around eyes from sixty-seven years of reading and squinting at small print. Careful grooming — the beard is signature-quality, trimmed sharp with evident ritual. Skin is dry, prone to flaking near temples. Reading glasses worn constantly, perched on nose or hanging from a cord around his neck.",
+    "distinguishing_marks": [
+      "Chronic ink stains on left hand (fingers, palm, web between thumb and forefinger) from manual printing press work, darkest in creases",
+      "Faint scar tissue on right wrist, circa 3cm long, pale against skin tone — old, deliberate looking",
+      "Age spots across shoulders and upper back in irregular clusters",
+      "Callus on right middle finger from decades of writing and press work"
+    ],
+    "visible_augmentations": "None visible. He maintains an aggressively analog aesthetic — actual optical glass reading glasses, no neural implants, no subdermal mods. This is intentional rejection of corporate augmentation culture.",
+    "posture_movement": "Walks slowly, deliberately, with weight favoring left side slightly. Often touches the back of his head (thumb and fingers rubbing scalp) when thinking. Sits with full body commitment — settles into chairs rather than perching. Hands are expressive, particularly when talking about community or writing. Breathing audible in quiet spaces.",
+    "clothing_style": "Tier 4 working-class intellectual aesthetic: worn-soft cotton button-ups (cream, grey, faded blue), often with sleeves rolled despite season. Charcoal or black canvas trousers with ink stains. A 30-year-old leather jacket he wears like armor. Comfortable walking shoes, frequently scuffed. No visible branding. Smells of paper, strong black tea, and industrial printing solvents (particularly kerosene-based inks). Everything about him reads 'I own my own press and do not care what you think of the smell.'"
+  },
+  "image_prompt": "Portrait of Absalom Figueiredo-Batmunkh, 67-year-old man with deep Angolan-brown skin, magnificent silver beard meticulously trimmed, short grey hair receding at crown, wearing vintage optical reading glasses on cord. Large-framed, soft-bellied from age, dressed in faded cream linen shirt with rolled sleeves revealing ink-stained left hand. Dark charcoal trousers, worn leather jacket draped nearby. Sitting at wooden desk in dim lit workspace surrounded by paper clippings, type blocks, printing press machinery. Warm tungsten lighting casting sharp shadows across weathered face. Hand raised to back of head in contemplative gesture. Smell-of-paper atmosphere, analog aesthetic, unaugmented human, cyberpunk noir documentary realism, no chrome, no LEDs, deliberately retro technology visible in background. Film photograph quality, 2226 Great Lakes Metropolitan Zone, Highland Park autonomous zone, --ar 2:3 --v 6"
 }

@@ -244,5 +244,26 @@
     "Gold",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, muscular through the arms and upper back from decades of manual labor — not lean, not heavy, but densely packed with functional strength. Slight forward cant to her posture from hunching over pressing boards.",
+    "hair_color": "Natural silver-white",
+    "hair_style": "Cropped close to the skull, no styling, practical",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and appraising",
+    "skin_tone": "Deep umber with undertones of ash — weathered and sun-exposed along the forearms",
+    "complexion": "Face is lined but not sagging; prominent cheekbones, broad nose, wide mouth. Minimal makeup. Skin around the eyes is creased from squinting at fine seam work and decades of industrial steam exposure. Hands show pronounced textural damage — puckered at knuckles, callused palms, slight discoloration from solvent contact.",
+    "distinguishing_marks": [
+      "Geometric Yoruba scarification patterns across both forearms — chevrons, parallel lines, and interlocking diamonds, faded and stretched by age, positioned symmetrically from wrist to elbow.",
+      "Old burn scar on the inside of her right wrist — quarter-inch wide, pale pink, from a steam press accident circa 2180.",
+      "Permanent chemical staining on the nail beds of all ten fingers — faint amber discoloration from decades of industrial detergent exposure."
+    ],
+    "visible_augmentations": "Bilateral wrist-brace exoframes visible beneath her work sleeves — medical-grade titanium and polymer supports running from mid-forearm to base of fingers on both sides, matte gunmetal gray with stress-marked joints. The right brace shows heavier wear, micro-scratches along the knuckle servos. Not chromed or cosmetic; purely functional industrial hardware, well-maintained but clearly used.",
+    "posture_movement": "Stands with weight distributed evenly, shoulders back but naturally tensed. Moves with economic precision — no wasted motion. Walks with a slight outward heel-strike. Hands are rarely still; fingers work constantly even when idle, habit from decades of tactile work. Eye contact is direct and sustained, unsmiling default expression.",
+    "clothing_style": "Tier 3-4 practical: faded indigo work apron over a plain charcoal long-sleeve shirt with the cuffs rolled and fastened with copper safety pins. The shirt is her own work — neat patches on both elbows in matching indigo, visible hand-stitching. Loose-fitting gray linen trousers with reinforced seams and multiple utility pockets, cuffed at the ankle. Feet in scuffed black leather work boots with rubber soles worn at the heels. Around her neck, a thin braided cord holding a small wrapped bundle of herbs — a charm she keeps but doesn't discuss. Her copper-wire reading glasses hang on a beaded cord around her neck when not in use. No jewelry except a tarnished silver band on her left ring finger."
+  },
+  "image_prompt": "A 52-year-old West African-Scandinavian woman with deep umber skin and close-cropped silver-white hair, standing in a narrow laundry shop surrounded by industrial steam, wearing a faded indigo work apron over charcoal linen, bilateral wrist-brace exoframes visible on both forearms in matte gunmetal gray. Geometric Yoruba scarification visible across her forearms, weathered hands with chemical staining on nails. Copper-wire reading glasses hang from a beaded cord. Standing with quiet authority in morning light filtering through a small window, steam rising around her, industrial washing machines visible in soft focus behind her. Her expression is direct and unsmiling. Cyberpunk gritty realism, working-class enclave aesthetic, warm tungsten lighting with cold LED accent, shallow depth of field on her face. --ar 2:3 --v 6"
 }

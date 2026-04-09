@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Irkalla, in a small rented room above a medical recycling depot on the district's outer ring, near Pulaski and Chicago Ave",
-  "description": "Zola Nkemezi-Faalogo chose her neighborhood because of what its name means, which is everything you need to know about how she approaches her work. She is a medium-height woman with natural hair that she keeps wrapped in white cloth during active work — white for threshold, she says, not for any religion specifically, though she moves through many of them with easy fluency. Her skin is blue-black and very clear. She has a retractable claw mod on her left hand only, three claws, which she got not for any practical reason but because a dying man she sat with once said he could see something animal in her and she decided to honor the observation. They are silver and she keeps them very sharp.\n\nDeath midwifery in Meridian 88 exists in a complicated legal gray space — it is not medical practice, not counseling, not clergy work, though it borrows from all three. Zola's practice is to be present. She sits with the dying, prepares the room according to whatever tradition the dying person follows or once followed, helps families understand what they are watching so it is not only terror, and afterward conducts whatever threshold ritual the family needs to feel that something has been marked. She has sat with Tier 1 deaths in Irkalla where the family had no money and she accepted nothing, and she has been called into Grosse Pointe Enclosure twice for clients who paid her very well and whom she found no more or less deserving of a good death.",
+  "description": "Zola Nkemezi-Faalogo chose her neighborhood because of what its name means, which is everything you need to know about how she approaches her work. She is a medium-height woman with natural hair that she keeps wrapped in white cloth during active work — white for threshold, she says, not for any religion specifically, though she moves through many of them with easy fluency. Her skin is blue-black and very clear. She has a retractable claw mod on her left hand only, three claws, which she got not for any practical reason but because a dying man she sat with once said he could see something animal in her and she decided to honor the observation. They are silver and she keeps them very sharp.\n\nDeath midwifery in GLMZ exists in a complicated legal gray space — it is not medical practice, not counseling, not clergy work, though it borrows from all three. Zola's practice is to be present. She sits with the dying, prepares the room according to whatever tradition the dying person follows or once followed, helps families understand what they are watching so it is not only terror, and afterward conducts whatever threshold ritual the family needs to feel that something has been marked. She has sat with Tier 1 deaths in Irkalla where the family had no money and she accepted nothing, and she has been called into Grosse Pointe Enclosure twice for clients who paid her very well and whom she found no more or less deserving of a good death.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -172,7 +172,7 @@
     "Grosse Pointe Enclosure",
     "Aurochs Medical Complex",
     "The Threshold",
-    "Meridian 88",
+    "GLMZ",
     "The Iron Lotus",
     "Threshold",
     "The Quiet Room",
@@ -182,5 +182,25 @@
     "Silver",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polynesian (Samoan or Tongan)",
+    "height_cm": 165,
+    "weight_kg": 68,
+    "build": "Solid and grounded, neither lean nor heavy — a body built for stillness and presence rather than speed. Strong shoulders, steady core, hands that look capable of holding someone's weight.",
+    "hair_color": "Natural black",
+    "hair_style": "Kept long and naturally textured; wrapped in white cloth during active work, otherwise worn loose or in simple braids",
+    "hair_length": "Long",
+    "eye_color": "Deep brown, alert and observant",
+    "skin_tone": "Blue-black, very clear and luminous",
+    "complexion": "Face marked by absolute clarity — minimal scarring, good skin condition despite Irkalla's air quality. High cheekbones, wide-set eyes, a mouth that settles into a neutral expression of listening. No makeup. Early lines around the eyes from years of close watching.",
+    "distinguishing_marks": [
+      "Faint bioluminescent gold pigmentation around collarbone area, visible under certain light angles, natural geneware cosmetic present since age 22",
+      "Left hand bears three retractable silver claws (geneware-mechanical hybrid), kept polished to mirror brightness, normally retracted but visible as slight metallic tracery beneath skin"
+    ],
+    "visible_augmentations": "The faint golden bioluminescence around the collarbone is noticeable in dim light; it gives her a subtle, almost sacred appearance. The silver claws on her left hand are visible as a faint tracery of chrome beneath dark skin, barely noticeable until she moves or light catches them. The olfactory enhancement is entirely invisible — no external markers.",
+    "posture_movement": "She moves with deliberate, economical grace — nothing wasted. Her default posture is slightly forward-leaning, as if listening intently. Her hands are often open and visible, palms sometimes facing up in a gesture of receptiveness. She has learned to move quietly, and speaks only when necessary; her presence has a gravitational quality, pulling attention without demanding it.",
+    "clothing_style": "Tier 3-4 practical elegance. Worn vintage linen and cotton — earth tones, grays, blacks, whites. A long indigo wrap she wears over her shoulders like a shawl, faded from years of use. No logos, no corporate affiliation marks. Comfortable, washable clothing suitable for sitting vigil — clothes that age well and don't announce themselves. During active work, the white head wrap is non-negotiable. Off-duty, she favors loose pants and long-sleeved shirts despite Irkalla's climate. Worn boots with good grip. She owns almost nothing decorative; what she owns has been chosen and kept with intention."
+  },
+  "image_prompt": "A medium-height Black African woman with deep blue-black skin and clear complexion, age late 30s, wearing a white linen head wrap and a faded indigo shawl over simple gray clothing. She sits in a dim, quiet room with soft amber light from a single lamp, her posture leaning slightly forward in an attitude of focused listening. Her left hand is visible with faint silver tracery of retractable claws beneath her skin, catching the light. Around her collarbone, faint gold bioluminescence glows softly. Her expression is calm and present, her eyes deep brown and watchful. The room around her is sparse — a medical recycling depot visible through the window behind her, narrow Irkalla streets at dusk. Cyberpunk aesthetic but grounded and real, no neon excess. Intimate, reverent lighting. Photograph-realistic, high detail on her face and hands. --ar 2:3 --v 6"
 }

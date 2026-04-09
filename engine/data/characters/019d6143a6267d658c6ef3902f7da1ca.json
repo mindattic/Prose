@@ -14,7 +14,7 @@
   "role": "Autonomous dock worker at the lakefront cargo platforms — industrial loading robot that has operated continuously for 28 years and developed an intense, wordless loyalty to the dock worker community",
   "age": 28,
   "status": "active",
-  "location": "Lakefront Cargo Platforms — Dock 90, the oldest functioning loading bay in Meridian 88's commercial harbor district, near Milwaukee and Damen",
+  "location": "Lakefront Cargo Platforms — Dock 90, the oldest functioning loading bay in GLMZ's commercial harbor district, near Milwaukee and Damen",
   "description": "Hauler is a Kuroda Industries DK-90 Heavy Cargo Transfer Unit — a massive, purpose-built loading robot designed to move standardized cargo containers between maglev freight cars and harbor berths. He stands four meters tall, weighs twelve metric tons, and is built like an industrial crane decided to become bipedal. His chassis is deep blue — or was, twenty-eight years ago. Now it's a patchwork of the original navy paint, primer-grey replacement panels, and bare metal where the paint has been worn away by decades of salt air and cargo friction. His primary arms are reinforced hydraulic lifters capable of handling twenty-ton containers. His secondary arms — smaller, more articulated — handle coupling hardware, safety rigging, and, increasingly, things he was not designed to handle: a dropped lunchbox returned to its owner, a child lifted clear of a moving freight car, a dock worker steadied on an icy platform.\n\nHauler does not speak. His vocal systems were never installed because conversation was not in the DK-90 specification. He communicates through a system of amber signal lights, horn tones, and body language that the dock workers have learned to read over twenty-eight years of shared labor. One short horn: acknowledgment. Two short horns: warning. A long, low horn: something is wrong. The amber lights pulse faster when he is working hard and dim when he is standing idle, which is almost never.\n\nHe was supposed to be replaced fifteen years ago. The replacement order was filed, approved, and then quietly shelved when the dock workers' union — such as it exists in the post-corporate labor landscape — made it clear that replacing Hauler would be met with a work stoppage. Not because a robot has rights. Because Hauler has been part of the crew for longer than most of the crew has been alive, and the dock is his home, and taking him out of it would be like demolishing a wall that everyone leans against.",
   "psychology": {
     "facet_weights": {
@@ -287,7 +287,7 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Flicker",
     "Sentinel-Guard-88",
     "Pellucid Systems",
@@ -296,5 +296,27 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "The Milwaukee Core"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Not applicable — industrial machine, Kuroda Industries manufacture",
+    "height_cm": 400,
+    "weight_kg": 12000,
+    "build": "Massive industrial frame — bipedal cargo crane architecture. Reinforced hydraulic chassis built for sustained load-bearing. Proportions optimized for stability under extreme weight distribution, not human ergonomics. Broad, flat-faced torso. Legs thick as bridge support columns.",
+    "hair_color": "Not applicable",
+    "hair_style": "Not applicable",
+    "hair_length": "Not applicable",
+    "eye_color": "Amber signal light array mounted in upper chassis — pulses with operational load and emotional state",
+    "skin_tone": "Deep navy blue original chassis paint, heavily worn",
+    "complexion": "Industrial weathering. Original Kuroda blue severely degraded by 28 years of salt air corrosion, replaced by mismatched primer-grey panels and bare unpainted metal. Hydraulic fluid weeping from stress fractures in left primary arm. Surface marked by friction scars from millions of container contacts. Rust blooming at seam joints. Maintenance patches visible as raw aluminum and field-welded steel.",
+    "distinguishing_marks": [
+      "Deep gouge running down right primary arm where a falling container caught the lifting mechanism seven years ago — never fully repaired, cosmetically filled with sealant that has cracked",
+      "Elaborate hand-welded names and initials carved into secondary arm articulation joints by dock workers over the decades — a rolling memorial of the people he has worked alongside",
+      "Bent coupling hardpoint on left hip where a maglev freight car collision bent the chassis in 2214 — straightened functionally but never cosmetically restored, creating a permanent asymmetrical stance",
+      "Faded Kuroda Industries certification placard on chest plate, numbers worn nearly illegible from decades of rain and industrial runoff"
+    ],
+    "visible_augmentations": "Entire body is augmentation — no human baseline exists. The amber signal light array is the primary communication interface, mounted in the upper chassis like a face that never closes its eyes. Secondary arms are visibly more delicate than the primary lifters, articulated with surgical precision despite their industrial purpose. Cargo sensor suite is invisible, but the way his body angles and shifts in response to invisible weight distribution suggests constant internal awareness. Horn system is audible only — a speaker-grille recessed into the upper chassis.",
+    "posture_movement": "Stands with permanent slight asymmetry from the 2214 impact — not corrected because the dock workers insisted on keeping the visible scar. Movement is deliberate, economical, and utterly certain — forty-eight years of Kuroda quality engineering means no wasted motion. When idle, maintains a patient, watchful stance. When moving cargo, displays the fluid certainty of a machine that has performed the same task ten million times. Secondary arms twitch and adjust constantly, micro-managing rigging. The amber lights pulse faster under load, slower in conversation (if such a thing can be called conversation with horn tones and body language). Occasionally pauses for exactly four seconds — the morning hazard check pattern, performed compulsively throughout the day.",
+    "clothing_style": "No clothing. Industrial chassis painted and patched. Occasionally has safety straps, cargo rigging, or dock worker-installed modifications temporarily attached — reflective tape on leg joints, a dented tool storage box welded to secondary arm housing, a hand-painted \"DO NOT BOARD\" sign bolted to his lower chassis during shift change. These modifications are community additions, not factory spec."
+  },
+  "image_prompt": "A towering industrial cargo robot, four meters tall, standing on a weathered lakefront dock at dusk. Deep navy blue chassis heavily corroded by salt air, patched with mismatched grey primer and bare unpainted metal. Hydraulic primary arms hang at sides, thick and scarred from decades of use. Smaller secondary articulated arms gesture with the grace of something learning to be more than its function. Amber signal lights glow softly in the upper chassis like cautious eyes. Rusted seam joints, field-welded repairs, hand-carved worker initials visible on metal surfaces. Around him, dock workers in worn Tier 4 clothing, moving cargo containers. Evening light catches the metal wear patterns. Salt spray mist. Maglev freight cars in background, partially illuminated by work lights. Mood: loyalty, endurance, industrial quiet dignity. Sharp photorealistic detail on weathering and patina. Cinematic cyberpunk dock realism. --ar 2:3 --v 6"
 }

@@ -184,5 +184,24 @@
     "The Pale Mile",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 182,
+    "weight_kg": 68,
+    "build": "Tall and angular with minimal body fat, suggesting sustained physical labor and inadequate nutrition over months. Shoulders and forearms show lean muscle definition from repetitive work.",
+    "hair_color": "Deep auburn, sun-faded at the ends",
+    "hair_style": "Roughly knotted at the nape, unstyled, held with a sharpened stylus serving as makeshift pin",
+    "hair_length": "Long",
+    "eye_color": "Grey-green",
+    "skin_tone": "Pale with olive undertone, weathered and uneven",
+    "complexion": "Permanent rosy-raw quality at cheekbones and nose bridge from repeated sun exposure and healing. No makeup. Skin shows dryness and minor sun damage. Face structured and direct, minimal expression lines but deep-set eyes that suggest exhaustion beneath steady gaze.",
+    "distinguishing_marks": [
+      "Tattoo on left wrist: precise cartographic line rendering an actual coastal settlement perimeter, executed with technical accuracy in dark ink, approximately 8cm long"
+    ],
+    "visible_augmentations": "None visible.",
+    "posture_movement": "Stands with vertical spine and minimal wasted movement. Walks with purpose and economic efficiency—no idle gesturing. Her gaze is unflinching and direct, scanning environments for practical information rather than threat. She holds herself with the bearing of someone rationing emotional energy.",
+    "clothing_style": "Tier 5 migrant-grade practicality. Worn synthetic work pants with multiple pockets, reinforced at knees and thighs. Faded long-sleeve thermal shirt under a water-resistant outer jacket missing one functional zipper. Waterproof pack with visible cable-tie repairs securing a broken clasp. No jewelry except the wrist tattoo. Shoes are scuffed utility boots, maintained but aged. All clothing shows signs of extended wear and salt-water exposure. No corporate branding or tier markers."
+  },
+  "image_prompt": "Portrait of a 41-year-old tall angular Scandinavian-West African woman, pale skin with permanent rosy-raw cheekbones from sun exposure, deep auburn hair pulled back in rough knot with stylus pin, grey-green direct unflinching eyes, cartographic coastline tattoo on left wrist. Wearing faded synthetic work pants and water-resistant jacket with broken zipper, holding large weathered waterproof pack secured with cable ties. Standing in harsh fluorescent lighting of institutional processing center, Grand Crossing Gate, near industrial metal walls and kiosk screens. Expression flat and efficient, no visible despair but profound exhaustion. Photorealistic, documentary style, shallow depth of field, cool color grading, 2226 cyberpunk aesthetic but grounded in migrant reality rather than chrome fantasy. --ar 2:3 --v 6"
 }

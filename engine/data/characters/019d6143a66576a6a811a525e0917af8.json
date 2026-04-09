@@ -175,5 +175,26 @@
     "NeuralPath HarmonicRoot Perfect Pitch Mod",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Igbo) / Irish / Rajasthani Indian",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Broad-shouldered and compact, muscular in the forearms and back from fourteen months of depot work. Lean through the waist but substantial — built for leverage and sustained effort rather than speed.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Locs, shoulder-length, pulled back with heat-resistant tape during work shifts",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep brown with warm undertones, reflecting mixed heritage",
+    "complexion": "Strong cheekbones with a scatter of freckles across the nose and upper cheeks in an almost geometric pattern. Permanent calluses on the palms and inside knuckles; fine grease stains in the creases of hands that don't fully wash out. Clear, even features with a slight asymmetry in her smile.",
+    "distinguishing_marks": [
+      "Fine white scar along the outer edge of her left thumb, jagged edge, from a slipped wrench at month three of apprenticeship",
+      "Small dark birthmark on the inside of her right wrist, roughly the size of a thumbprint",
+      "Subdermal temperature sensor visible as a faint rectangular outline on the inner left forearm, glowing pale blue when active"
+    ],
+    "visible_augmentations": "Retractable fingernail extensions on both hands — metallic gray, tool-point precise, visible at rest as slightly raised metallic caps at each fingertip. Sub-dermal temperature sensor on left forearm manifests as a faint blue luminescent grid when operational. No other visible chrome.",
+    "posture_movement": "Economical and grounded. Stands with weight balanced, shoulders slightly forward from years of leaning into diagnostic panels. Moves with deliberate precision — no wasted motion. Hands are expressive during conversation but rest in loose fists, the habit of someone who has learned to keep their tools close.",
+    "clothing_style": "Tier 2 working-class utilitarian. High-visibility depot jumpsuit (faded orange-reflective panels, Ferrogate-branded) over a plain gray underlayer. Steel-toed boots with the scuff pattern of someone who works on metal grating. Off-shift: worn denim, oversized hoodie from a mutual aid collective (Jefferson Switch emblem), practical sneakers. Minimal jewelry except for a thin wire bracelet salvaged from old transit wiring, worn on her left wrist."
+  },
+  "image_prompt": "A 16-year-old girl of mixed West African, Irish, and Rajasthani heritage, deep brown skin with scattered freckles, strong cheekbones, dark eyes. Shoulder-length locs pulled back with silver heat-resistant tape. Wearing a faded Ferrogate orange-reflective maintenance jumpsuit over gray underlayer, steel-toed boots. Her hands show permanent grease stains in the knuckles; metallic retractable fingernails visible as gray tool-point caps at her fingertips. A faint blue sub-dermal temperature sensor glows on her inner left forearm. She stands in a Ferrogate Transit depot — industrial maglev switching arrays behind her, fluorescent overhead panels casting harsh white light, shadows across diagnostic equipment and metal grating. Her posture is balanced and economical, shoulders slightly forward. Cyberpunk aesthetic, gritty working-class realism, technical precision, cool color grading with warm skin tones, shallow depth of field, 35mm lens. --ar 2:3 --v 6"
 }

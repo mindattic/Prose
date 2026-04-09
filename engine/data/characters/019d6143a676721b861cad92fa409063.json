@@ -186,5 +186,27 @@
     "Palladian Construction MagRail Spur MRS-17 Elevated Micro-Transit Chassis",
     "Elena Vasquez-9"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Turkish / Fijian",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Compact and densely muscled, built for tight spaces and sustained leverage work. Broad shoulders tapering to a narrow waist, forearms disproportionately developed from years of pulling and climbing. No excess fat; every visible muscle is functional.",
+    "hair_color": "Natural black",
+    "hair_style": "Clippered close to the scalp, military-neat",
+    "hair_length": "Short",
+    "eye_color": "Right eye: matte black sclera with amber iris (augmented, slightly misaligned causing permanent squint); Left eye: dark brown natural",
+    "skin_tone": "Deep warm brown with reddish undertones, sun-darkened despite time underground",
+    "complexion": "Face would be conventionally attractive if not perpetually bruised—currently shows faint yellowing contusion on left cheekbone and fresh scabbing along right temple. Jaw is squared and prominent. Skin is weathered but unblemished otherwise; calluses on palms and fingers from equipment work. Stubble grows in thick and fast; he shaves every other day.",
+    "distinguishing_marks": [
+      "Scar tissue along right eye socket from the 2196 cave-in, visible as a pale ridge during healing phases",
+      "Burn marks across dorsal side of right hand from a conduit extraction gone wrong in 2223, pink and raised",
+      "Deep laceration scar running 8cm down left forearm, white and old, from a salvage collapse in early career",
+      "Crude tattoo on inside of right bicep: a sonar ping symbol (concentric circles), done in a tunnel-market chair"
+    ],
+    "visible_augmentations": "Heavy-gauge retractable claws on both hands (chrome yellowed and scratched, mechanisms visibly loud and industrial—not cosmetic). Impact-absorption plating across both forearms showing as irregular matte-black composite panels with misaligned edges and visible stress fractures; the fit is imperfect and the plates shift slightly under movement. Right eye prosthetic obvious on close inspection: the black sclera is too uniform, the amber iris refracts light slightly differently than organic tissue, and the slight misalignment creates that permanent squint.",
+    "posture_movement": "Moves with economical precision—no wasted motion. Habitually presses palms flat against walls and structural surfaces, fingers splayed, feeling for vibration resonance through his tactile sense. Leans forward when listening intently. When stationary, shifts weight frequently between feet as if ready to move. Hands are rarely completely relaxed; fingers unconsciously test surfaces, tap rhythms, check for give. His right eye squint causes him to tilt his head slightly when focusing on detail work. Walks with a careful, measured gait in confined spaces; moves quickly and directly in open areas.",
+    "clothing_style": "Tier 4 utilitarian salvage worker. Standard-issue tactical rig in faded grey-green with multiple sealed pockets for tools and findings. Worn Iroquois-brand work boots, scuffed and re-soled twice. Long-sleeve compression shirt (black, brands the seams to reduce snag risk) worn under an open grey vest rigged with carabiners and rope loops. Fingerless gloves on both hands (the claws retract through reinforced openings). A canvas satchel, oil-stained and patched, carries maps and smaller finds. No corporate logos. No chrome jewelry. Everything is functional, secondhand, and well-maintained. Clothing bears the embedded dirt of the Abyssal Threshold: a fine grey dust that never fully washes out."
+  },
+  "image_prompt": "Cyberpunk character portrait of Obinna 'Knock' Çakmak-Raivakadrau, 29-year-old compact muscular man with deep brown skin and close-cropped black hair. His right eye is a misaligned prosthetic with matte black sclera and amber iris, creating a permanent squint; his left eye is natural dark brown. Heavy industrial yellowed chrome retractable claws visible on both hands. Impact-absorption plating panels across forearms in matte black composite, imperfectly fitted with stress fractures. Face shows fresh bruising on cheekbone and temple scar tissue. Wearing faded grey-green tactical salvage rig over black compression shirt, open grey utility vest, fingerless gloves, worn boots. Oil-stained canvas satchel. Hands pressed flat against a concrete wall feeling for vibrations. Underground tunnel setting, dim biolume strips casting amber and blue shadows, moisture-slicked surfaces, industrial debris scattered. Moody, atmospheric, gritty realism. Film photography quality with grain. Narrow depth of field focusing on face and hands. --ar 2:3 --v 6"
 }

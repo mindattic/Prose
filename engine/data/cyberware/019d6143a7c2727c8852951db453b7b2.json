@@ -20,13 +20,13 @@
   "maintenance": "",
   "specifications": "{\"operational_temperature_range\":\"-40°C to +85°C external tolerance\",\"core_temperature_variance\":\"±0.3°C from set point\",\"power_source\":\"Internal thermoelectric cell, self-sustaining under normal metabolic load\",\"emergency_reserve\":\"72-hour battery backup at reduced function\",\"thermal_signature_suppression\":\"Active IR dampening reduces surface emission by 60–75%\",\"implant_dimensions\":\"11cm × 7cm × 3.2cm\",\"maintenance_cycle\":\"Catheter flush and cell check every 6 months\"}",
   "side_effects": [],
-  "cultural_context": "Ouroboros Energy originally distributed the Core as occupational equipment to its extraction crews, which means there is a generation of retired industrial workers in Meridian 88's outer districts walking around with military-grade thermal suppression implants they received as part of their employment package. This has created an odd black-market ecosystem where former Ouroboros workers sell calibration access to their units to operatives who can't afford the licensed version. Among corporate security, detecting a Core on a scan and finding it registered to an energy sector retiree is a known red flag.",
+  "cultural_context": "Ouroboros Energy originally distributed the Core as occupational equipment to its extraction crews, which means there is a generation of retired industrial workers in GLMZ's outer districts walking around with military-grade thermal suppression implants they received as part of their employment package. This has created an odd black-market ecosystem where former Ouroboros workers sell calibration access to their units to operatives who can't afford the licensed version. Among corporate security, detecting a Core on a scan and finding it registered to an energy sector retiree is a known red flag.",
   "known_users": [
     "Ouroboros Energy deep-extraction crew veterans",
     "Cold-climate insertion specialists",
     "Assassins and infiltrators requiring IR invisibility",
     "Smugglers crossing biometric border checkpoints",
-    "Survivalist communities in Meridian 88's industrial heat zones"
+    "Survivalist communities in GLMZ's industrial heat zones"
   ],
   "story_hooks": [
     "A decommissioned Ouroboros extraction site is being repurposed, and the company is quietly trying to recover all Core units issued to former crew — some of those workers don't want to give them back.",

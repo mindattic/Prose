@@ -14,7 +14,7 @@
   "age": 52,
   "status": "active",
   "location": "The Shelf — operates from a community center three blocks from Mrs. Chen's shop, near Ashland and Chicago Ave",
-  "description": "Ruth Agada is the lowest-paid runner in Meridian 88 and the most respected person below Tier 3. Last Light takes contracts that nobody else will touch: protecting excluded families from eviction squads, escorting debt-marked citizens through corporate checkpoints, standing between Shelf communities and the security forces that treat them as jurisdictional noise. The pay is whatever the clients can afford, which is usually nothing. Ruth doesn't care. The work is the work.\n\nShe was a public defender in Meridian 88's municipal court system for eighteen years — one of the last attorneys who represented excluded citizens in jurisdictional disputes. When the court system was privatized and representation became a billable service priced beyond the excluded's reach, Ruth kept working. Pro bono. For free. The bar association suspended her license for 'unprofessional conduct.' She appealed. The appeal court was also privatized. She stopped appealing and started operating outside the legal system that had abandoned the people she served.\n\nRuth is tall, broad, with the bearing of a woman who has stood in courtrooms and stared down corporate attorneys and felt nothing but the certainty of purpose. Her hair is silver, worn natural, and her face carries the particular beauty of someone who has been angry for thirty years and hasn't let the anger eat her. She wears practical clothes and carries herself like a person who has decided what she is for and will not be moved.",
+  "description": "Ruth Agada is the lowest-paid runner in GLMZ and the most respected person below Tier 3. Last Light takes contracts that nobody else will touch: protecting excluded families from eviction squads, escorting debt-marked citizens through corporate checkpoints, standing between Shelf communities and the security forces that treat them as jurisdictional noise. The pay is whatever the clients can afford, which is usually nothing. Ruth doesn't care. The work is the work.\n\nShe was a public defender in GLMZ's municipal court system for eighteen years — one of the last attorneys who represented excluded citizens in jurisdictional disputes. When the court system was privatized and representation became a billable service priced beyond the excluded's reach, Ruth kept working. Pro bono. For free. The bar association suspended her license for 'unprofessional conduct.' She appealed. The appeal court was also privatized. She stopped appealing and started operating outside the legal system that had abandoned the people she served.\n\nRuth is tall, broad, with the bearing of a woman who has stood in courtrooms and stared down corporate attorneys and felt nothing but the certainty of purpose. Her hair is silver, worn natural, and her face carries the particular beauty of someone who has been angry for thirty years and hasn't let the anger eat her. She wears practical clothes and carries herself like a person who has decided what she is for and will not be moved.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -200,7 +200,7 @@
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
     "The Shelf",
     "Hearthstone Firearms Defender-38 'Snubnose'",
@@ -211,5 +211,26 @@
     "Glass",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Northern European",
+    "height_cm": 183,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and substantial without excess weight. The build of someone who has spent decades standing — courtroom posture translated into physical presence. Chest and shoulders carry muscular definition from consistent labor, not augmentation.",
+    "hair_color": "Natural silver-gray",
+    "hair_style": "Worn loose and natural, sometimes pulled back with a simple band when working",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Deep warm brown with undertones reflecting mixed West African and Northern European heritage",
+    "complexion": "Lined face that reads as experience rather than age. Minimal grooming — no cosmetics, practical care. Skin weathered by decades of sun exposure and stress, but clear. A small scar on her left cheekbone from an eviction intervention gone physical three years ago. No visible acne or skin conditions.",
+    "distinguishing_marks": [
+      "Three-inch horizontal scar on left cheekbone, pale against darker skin, from a security force baton strike during an eviction standoff in 2223",
+      "Faint burn scar on the dorsal surface of her right hand from a litigation document fire, barely visible unless she flexes",
+      "Small tattoo on her right inner wrist — a simplified gavel and open hand symbol, done by hand in a community center clinic, ink slightly faded"
+    ],
+    "visible_augmentations": "None visible. The legal database cortex is entirely subcutaneous. The voice amplification implant is internal — visible only when she speaks with deliberate projection, at which point a faint subsonic vibration becomes perceptible in her chest. The stress-monitoring biosystem is subcutaneous; only occasionally visible as a faint LED indicator under the skin of her left wrist when activated.",
+    "posture_movement": "Stands with weight distributed evenly, ready to move in any direction without telegraph. Moves with economy of motion — no wasted gesture. Walks slowly but with intent. In conversation, she maintains direct eye contact and rarely looks away. Her hands are still when at rest. When she speaks with her voice amplified, there's a slight shift in her shoulders as the implant engages.",
+    "clothing_style": "Tier 4 practical — durable, non-corporate. Typically wears a dark grey or charcoal work jacket with deep pockets (often holding legal data-chips, communication devices, and community contact lists). Underneath, plain long-sleeve shirts in muted colors. Worn jeans with reinforced knees and a heavy canvas belt with a simple buckle. Work boots — practical, maintained, not fashionable. A thin watch on her left wrist, older model, still functional. No jewelry except the faded wrist tattoo. In colder months, a long coat that has been patched multiple times. Everything is functional. Nothing is ornamental."
+  },
+  "image_prompt": "Cyberpunk noir character portrait: 52-year-old Black woman with silver-gray hair worn loose past shoulders, deep brown eyes, lined face with weathered dignity. Broad-shouldered build, tall and substantial, standing with courtroom-learned posture. Dark grey work jacket over plain shirt, worn jeans, reinforced boots. Faint scar on left cheekbone. Low key lighting casting half her face in shadow. Background: blurred community center interior, warm practical lighting, worn walls. Mood: resolute, purposeful, uncompromising. Film grain texture, cinematic depth, 2226 GLMZ aesthetic. Shot from mid-torso up, direct frontal gaze. --ar 2:3 --v 6"
 }

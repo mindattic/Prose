@@ -181,5 +181,26 @@
     "The Pale Mile",
     "Déjà Vu"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Eastern European / West African",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, almost ascetic — minimal body fat, prominent collarbones and sternum, the physique of someone who eats enough to survive but not enough to accumulate. Deliberate posture makes him seem even thinner than he is.",
+    "hair_color": "Dark brown to black, natural",
+    "hair_style": "Shaved scalp except for a single vertical stripe running from forehead to nape, braided with lengths of bare copper wire salvaged from decommissioned transit relays, creating a sculptural effect",
+    "hair_length": "Shaved except for the stripe braid (approximately 40cm long)",
+    "eye_color": "Pale grey-green with sunburst irises — cosmetic mod from approximately 2211, the radiating pattern now slightly dated and not refreshed",
+    "skin_tone": "Light brown, warm undertone — neither pale nor deeply pigmented",
+    "complexion": "Clean-shaven, minimal grooming beyond necessity. Skin is clear but shows the faint pallor of someone who spends most time in artificial light. Expression defaults to stillness — not blank, but profoundly composed.",
+    "distinguishing_marks": [
+      "Both forearms from elbow to wrist are covered in chrome prayer sleeves — not metallic sheaths but integrated dermal plating with etched mantras in Cyrillic, Arabic, Hindi, and Han characters that catch light distinctly.",
+      "Fine white scar tissue visible along the interior left wrist, thin and old, approximately 15cm long, partially concealed by the chrome sleeve.",
+      "A small burn mark on the right shoulder blade — quarter-sized, pale and old, from a Ferrogate Transit incident."
+    ],
+    "visible_augmentations": "Chrome prayer sleeves covering both forearms with etched mantras (decorative, haptic-capable, audibly hum at subsonic frequency during deep meditation). Cosmetic sunburst iris modification visible in both eyes — outdated cosmetic model with slightly imperfect color saturation. No other visible chrome or augmentation.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion, no fidgeting. Sits in perfect stillness for extended periods. When walking, steps are precise and grounded. His default expression is profoundly calm in a way that reads as absence until he makes eye contact or speaks. Gestures are minimal but intentional.",
+    "clothing_style": "Tier 4 ascetic-practical. Typically wears grey or charcoal loose-fitting linen robes sourced from Deepwell Station's fabric coop, unadorned except for meditation beads on a simple cord. Feet usually bare or in worn plant-fiber sandals. No jewelry except the copper wire in his hair braid. Clothing is meticulously clean but shows age — mended in several places with visible stitching. Suggests someone who has rejected material accumulation without performing poverty."
+  },
+  "image_prompt": "Cyberpunk character portrait, male, late 30s, lean angular build with light brown skin, shaved head with single long dark braid interwoven with copper wire running vertically down the back, pale grey-green eyes with faint sunburst irises, austere expression of profound stillness. Both forearms covered in sleek chrome prayer sleeves etched with glowing mantras in multiple scripts (Cyrillic, Arabic, Hindi, Han characters), chrome subtly humming with faint luminescence. Wearing loose grey linen robes, unadorned, meditation beads visible, barefoot, posture perfectly composed and centered. Setting: dimly lit defunct transit maintenance bay converted to meditation chamber (The Loop), artificial light casting sharp shadows, subtle subsonic vibration suggested by faint blue light emanating from the chrome sleeves, atmosphere of serene detachment and spiritual depth, 2226 aesthetic, gritty cyberpunk spiritualism, high contrast lighting, shallow depth of field focusing on face and chrome sleeves --ar 2:3 --v 6"
 }

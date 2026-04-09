@@ -12,7 +12,7 @@
   "role": "Investigative journalist and whistleblower handler operating out of Mexicantown Libre",
   "age": 38,
   "status": "active",
-  "location": "Mexicantown Libre, Meridian 88, near Pulaski and Chicago Ave",
+  "location": "Mexicantown Libre, GLMZ, near Pulaski and Chicago Ave",
   "description": "Isadora has the kind of face that is easy to remember individually and hard to place in a crowd — broad nose, angular cheekbones, warm coppery-brown skin, and dark eyes that are always, always taking notes. She keeps her thick dark hair pulled back tightly and wears it down only when she is trying to go unnoticed, which is an inversion most people would not anticipate. She has a faint artificial shimmer to the skin of her forearms — a residual effect of a cheap bioluminescence mod she had installed and removed years ago, leaving this iridescent ghost behind.\n\nIsadora spent seven years at a mid-tier Zheng-Dao affiliated media outlet before she published a piece they hadn't approved and found herself without a desk, a salary, or a press credential. Now she freelances for a network of independent outlets under three different bylines and runs an encrypted communication service that connects corporate whistleblowers with journalists, lawyers, and occasionally mutual aid networks depending on what is needed. She is funny and genuinely charming at parties, which is a professional tool she is not always comfortable with. She keeps a running list of every piece that has been killed, delayed, or changed without her consent — it is very long, and she re-reads it when she needs to remember why she is doing this.",
   "psychology": {
     "facet_weights": {
@@ -176,7 +176,7 @@
   ],
   "related_entities": [
     "Mexicantown Libre",
-    "Meridian 88",
+    "GLMZ",
     "Zheng-dao Bioelectric",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
@@ -184,5 +184,25 @@
     "Arcturus CK-5 'Bloodhound'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Armenian",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and wiry with subtle musculature; carries herself with the economical movement of someone who has learned to be unobtrusive. Long-limbed, narrow shoulders.",
+    "hair_color": "Natural dark brown, nearly black",
+    "hair_style": "Typically pulled back in a tight, functional bun or braid; worn down only as deliberate camouflage",
+    "hair_length": "Long (to mid-back when loose)",
+    "eye_color": "Dark brown, warm undertone",
+    "skin_tone": "Warm coppery-brown with underlying golden undertones",
+    "complexion": "Broad nose with slight flare at nostrils; angular, high cheekbones; sharp jawline. Skin is clear and well-maintained but shows signs of chronic sleep debt — faint darkening beneath eyes. Expression tends toward observant stillness, mouth held in a slight, private half-smile.",
+    "distinguishing_marks": [
+      "Faint, iridescent shimmer visible across both forearms in certain light — residual artifact from removed bioluminescent mod, creating an almost oil-on-water effect that catches LED and natural light differently",
+      "Thin scar along the left temple, approximately 2cm, barely visible unless light hits it directly — old injury, well-healed"
+    ],
+    "visible_augmentations": "The forearm shimmer is the only immediately visible augmentation; it reads as unusual cosmetic work rather than active chrome. Her optical implant is subcutaneous; no visible mechanical eye or lens. Subvocal implant is completely invisible to casual observation.",
+    "posture_movement": "Moves with deliberate, efficient economy — no wasted gestures. Sits with her body angled slightly away from direct confrontation, shoulders relaxed but spine straight. Makes sustained eye contact when listening; her gaze is the kind that people recognize as 'taking you in.' Often has a pen in her hand or tucked behind her ear. Habit of writing notes on her palm with a stylus.",
+    "clothing_style": "Tier 3 professional-casual with deliberate understatement. Favors neutral colors (charcoal, deep teal, muted rust) and layered pieces that allow quick adaptation to different social contexts. Typically wears fitted but not fashionable trousers, long-sleeved shirts or fitted turtlenecks (covers the forearm shimmer in formal settings), and a worn leather jacket — vintage pre-2200, supple from use, bearing subtle scuffs and creases that suggest it has survived situations. Comfortable, quality shoes built for walking. Minimal jewelry: a thin silver ring on her right hand, a watch that is slightly too expensive for her current income (saved-for purchase). No corporate logos or brand signifiers. Clothes read as 'someone who needs mobility and anonymity,' not 'someone who needs to be noticed.'"
+  },
+  "image_prompt": "Professional investigative journalist woman, age 38, West African and Armenian heritage, warm coppery-brown skin, angular cheekbones, broad nose, dark brown eyes with sharp attentive gaze. Dark hair pulled back tightly in functional bun. Thin faint scar at left temple. Both forearms have iridescent bioluminescent shimmer artifact catching light like oil on water. Wearing fitted charcoal turtleneck and worn vintage leather jacket, comfortable utilitarian style. Slight half-smile, posture of someone taking notes. Low-key Tier 3 professional aesthetic. Cyberpunk noir, intimate portrait lighting, moody cool-toned background suggesting urban Mexico City-adjacent setting, shallow depth of field focusing on face and forearm detail, cinematic realism, --ar 2:3 --v 6"
 }

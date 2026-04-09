@@ -266,5 +266,27 @@
     "Silver",
     "Glass"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Spanish/Iberian (Reyes) + Bantu/Southern African (Mbatha)",
+    "height_cm": 185,
+    "weight_kg": 92,
+    "build": "Broad-shouldered and still muscular despite age, with the dense frame of someone who has done physical labor for decades. Chest and shoulders retain definition; slight softening at the midsection from years of late-night coffee and minimal exercise, but still fundamentally sturdy.",
+    "hair_color": "White with iron-grey undertones",
+    "hair_style": "Close-cropped, military precision, styled with a clipper at approximately 8mm length",
+    "hair_length": "Short",
+    "eye_color": "Left eye: amber-gold with faint luminescent grid overlay (vein-mapping optical); Right eye: dark brown, natural",
+    "skin_tone": "Warm brown — riverbed silt and weathered bronze, with the uneven patina of someone who spends half their life under barge-cabin tungsten and half under canal-district industrial light",
+    "complexion": "Deeply lined face map: deep creases radiating from the outer corners of both eyes, pronounced nasolabial folds, horizontal forehead lines, and a long vertical crease between the brows. Jaw still defined despite age; stubble growth appears as iron-grey rather than white. Skin shows minor scarring on left temple (old laceration) and weathering consistent with decades of exposure. Dark eyebrows remain stubbornly dark brown, creating a perpetual expression of mild surprise against white hair.",
+    "distinguishing_marks": [
+      "Thin hairline scar across left temple, approximately 4cm, angling toward the ear — result of a trauma from his licensed years, visible only under direct light",
+      "Surgical scar on left forearm (anterior aspect, wrist to mid-forearm) housing the subdermal toxin-analysis patch; scar is thin and well-healed but visible, slightly raised and pale against his skin tone",
+      "Faint burn scars on the knuckles of both hands from self-installed augmentation work; barely visible but felt by anyone who shakes his hand",
+      "Small tattoo on right wrist: a single line in black ink, no more than 2cm, positioned over the radial artery — dated 1997, personal meaning unknown to most who ask"
+    ],
+    "visible_augmentations": "Both hands thread with fine silver filaments visible beneath the skin, most apparent on the backs of the hands and between the knuckles when his hands are in motion or light strikes them at an angle. Left eye displays a faint luminescent amber grid overlay, most visible in low light or when he focuses intently. Left forearm bears a subtle raised scarline where the toxin-analysis patch sits subcutaneously. Cervical pain-suppression node is not externally visible but may be palpable as a small subdermal ridge at the base of the skull if touched.",
+    "posture_movement": "Carries himself with the careful vertical stillness of a man managing chronic pain with an implant. Movements are economical and precise — no wasted motion. Hands are his primary expressive tool; they move with unusual steadiness and deliberation, especially during conversation. When concentrating, he tilts his head very slightly to bring his augmented left eye to bear. Walks with even weight distribution, suggesting either good physical conditioning or learned compensation for the spinal issue. At rest, he tends to keep his hands visible and still, palms up — a gesture that reads as both openness and control.",
+    "clothing_style": "Tier 5 utilitarian with embedded practicality. Typically wears: loose linen or synthetic blend work shirts in faded grey, tan, or cream, sleeves rolled to mid-forearm to keep augmented hands visible and accessible. Cargo pants or modified medical scrub bottoms in slate grey or forest green, with reinforced thigh pockets for instruments and supplies. An aged brown canvas coat with multiple interior pockets, visible repair patches, and the faint smell of antiseptic is his near-constant outer layer. Work boots are high-topped, oil-resistant, and visibly resoled multiple times. No corporate branding. No chrome. No affectation. Everything is worn smooth by use and weather. A single piece of jewelry: a titanium wedding band on his left ring finger, no longer worn for marital reasons but kept as anchoring weight."
+  },
+  "image_prompt": "Cyberpunk street medic, 58-year-old man with close-cropped white hair and dark furrowed brows, warm brown skin weathered by decades, amber-gold luminescent grid overlay in left eye only, right eye dark and natural. Enormous steady hands with fine silver filaments visible beneath the skin threading across knuckles. Deep lines around eyes and jaw, stubble, faint scars on temple and forearm. Wearing faded linen work shirt with rolled sleeves, slate-grey cargo pants, aged brown canvas coat with patches. Standing in a converted barge cabin with tungsten overhead lighting, surrounded by medical instruments, antiseptic bottles, and worn surgical tools. Water reflections from canal visible through small porthole window. Warm tungsten light mixed with cool industrial neon from neighboring food stall, creating amber and blue color temperature contrast. Cinematic, gritty, photorealistic. Shot at 2:3 portrait aspect ratio, emphasizing hands and weathered face. High detail on augmentations and surgical environment. Moody, dignity-filled, uncompromising realism. --ar 2:3 --v 6"
 }

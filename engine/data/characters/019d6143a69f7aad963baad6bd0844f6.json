@@ -12,7 +12,7 @@
   "role": "Corporate Security Guard, Axiom Security Division — Executive Campus Protection",
   "age": 27,
   "status": "active",
-  "location": "Grosse Pointe Enclosure, Meridian 88, near Milwaukee and North Ave",
+  "location": "Grosse Pointe Enclosure, GLMZ, near Milwaukee and North Ave",
   "description": "Priscila is lean and angular with the kind of posture that suggests it's a weapon. She has her father's Ghanaian cheekbones and her mother's Siberian coloring — a pale complexion with warm undertones, dark hair she wears in a severe center-parted braid. Her eyes are factory-standard brown but her irises have been upgraded to tactical amber, which gives her peripheral dark-vision in the Enclosure's manicured shadow gardens and makes her look, in the right light, faintly predatory. A small cat tail — rust-colored, kinetic geneware she got on a dare at twenty-two and has come to love — flicks at her hip when she's irritated, which is often, and it has ruined more than one effort to seem professionally impassive.\n\nShe works the Grosse Pointe Enclosure's inner residential ring, which means she guards the homes of Axiom executives who regard her as furniture that breathes. She is very good at her job and she resents it in a specific, contained way — the way you resent a language you're fluent in that doesn't belong to you. She has a blistering private contempt for the people she protects and an equally fierce professionalism that won't let her do the job badly regardless. She's been offered an investigator track twice and declined both times, though she couldn't explain why to anyone's satisfaction, including her own.",
   "psychology": {
     "facet_weights": {
@@ -259,7 +259,7 @@
   ],
   "related_entities": [
     "Grosse Pointe Enclosure",
-    "Meridian 88",
+    "GLMZ",
     "Palladian Construction",
     "SynapTech IrisBloom Ocular Color Modulator",
     "TESSERA PA-5 'Attendant'",
@@ -269,5 +269,26 @@
     "Rust",
     "The Milwaukee Core"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Siberian Russian",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and angular with corded muscle density from combat training; no wasted mass. Shoulders set back with the kind of structural efficiency that reads as coiled readiness.",
+    "hair_color": "Black with natural dark brown undertones",
+    "hair_style": "Center-parted braid, severe and functional, pulled tight enough to suggest discipline",
+    "hair_length": "Long (midback length)",
+    "eye_color": "Tactical amber irises with dark-adapted peripheral enhancement; pupils dial wider in low-light environments",
+    "skin_tone": "Pale complexion with warm cream undertones, reflecting mixed heritage; minimal sun exposure from Enclosure work",
+    "complexion": "Sharp cheekbones (paternal Ghanaian structure), high bridged nose, minimal scarring. Skin maintained to corporate standards. Expression defaults to neutrality with a slight downward mouth tension.",
+    "distinguishing_marks": [
+      "Small kinetic geneware cat tail, rust-colored and furred, anchored at base of spine near hip — flicks autonomously when irritated or in heightened alertness",
+      "Faint linear scarring along left forearm (subdermal armor plating visible as geometric chrome seams beneath pale skin)",
+      "Thin white scar across right knuckle, old training injury"
+    ],
+    "visible_augmentations": "Amber tactical irises are immediately visible and non-standard. Forearm subdermal plating visible as subtle chrome geometric seams running along the inner wrist and inner forearm. Kinetic cat tail is the most conspicuous augmentation — rust-colored, furred, moves with her emotional state. Subdermal comms relay is invisible but creates a faint raised line behind her left ear if observed closely.",
+    "posture_movement": "Stands with chest open but weight distributed toward balls of feet — combat-ready baseline posture. Walks with minimal wasted motion, economical and precise. Head moves only with eyes in scan patterns; jaw set slightly forward. When irritated, the cat tail betrays her before her face does — it swishes with sharp, angular motions.",
+    "clothing_style": "Axiom Security Division uniform on duty: fitted tactical jacket in matte charcoal with Axiom logo and badge; climate-controlled undersuit; reinforced cargo pants with integrated comms access pockets; minimalist boots rated for 12-hour patrols. Off-duty: understated gym wear (compression shirts, technical fabrics) and dark layers that suggest the same restraint as her on-duty wardrobe. Tier 2 access — corporate-grade materials but no visible luxury markers. All choices prioritize function over appearance."
+  },
+  "image_prompt": "Cyberpunk corporate security officer portrait, 27-year-old woman with pale complexion and sharp Ghanaian-Siberian features, dark center-parted braided hair, severe professional bearing. Glowing tactical amber irises with enhanced pupils adapted for low-light vision, slightly predatory expression. Rust-colored kinetic geneware cat tail visible at hip, furred and faintly moving. Subdermal chrome armor plating visible as geometric seams along forearms. Wearing fitted Axiom Security Division tactical jacket in matte charcoal with badge, climate-controlled undersuit, reinforced gear. Posture suggests coiled readiness. Shot against soft manicured Enclosure shadow garden background with soft warm LED ambient lighting catching her eyes and the cat tail. Professional headshot with atmospheric depth. Film noir meets high-tech corpo aesthetic. --ar 2:3 --v 6"
 }

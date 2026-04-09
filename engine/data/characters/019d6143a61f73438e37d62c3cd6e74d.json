@@ -60,7 +60,7 @@
     "Someone has been submitting applications to their legitimate print shop front that are technically perfect and contain, embedded in the file metadata, a message they are not sure how to interpret",
     "They have been approached to produce citizenship documentation for a large group of Tier-1 residents in exchange for a sum that would change their life — and the person asking has not said why so many people need to change their identity at the same time"
   ],
-  "narrative_function": "Access point for false documentation — transit passes, employment records, full identity packages; can also identify forgeries made by others; plot-enabler for characters who need to move through Meridian 88 under a different name",
+  "narrative_function": "Access point for false documentation — transit passes, employment records, full identity packages; can also identify forgeries made by others; plot-enabler for characters who need to move through GLMZ under a different name",
   "augmentations": "Micro-precision haptic feedback overlay in fingertips (surgical, professional-grade — allows them to feel micron-level texture variations in document materials); no cosmetic modifications by deliberate choice",
   "daily_life": "They open the shop front at 09:00 and handle legitimate printing trade until noon; afternoons and evenings are for real work, conducted in the back room behind a sound-dampened partition. They never rush a commission and turn down more work than they accept.",
   "affiliation": "Independent; pays protection to the Bronzeline Souk collective and receives legal cover in return; has long-standing professional relationships with several of The Narrows' mutual aid networks as a supplier of basic transit documentation for people in need",
@@ -244,5 +244,25 @@
     "NeuralPath VaultPay Subdermal Transaction Node",
     "The Pure Hand"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Breton / Ghanaian / Fulani",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Medium, lean without being angular — the economical frame of someone who moves deliberately and wastes no motion",
+    "hair_color": "Natural dark brown with graying undertones",
+    "hair_style": "Low wrap, neat and tight, pulled close to the scalp",
+    "hair_length": "Medium (wrapped length approximately 12-15cm when loose)",
+    "eye_color": "Dark brown, unaugmented",
+    "skin_tone": "Light-brown, warm undertone — the mixed-heritage complexion of West African and Northern European lineage, neither clearly one nor the other",
+    "complexion": "Clean-shaven face, minimal makeup, skin condition shows meticulous care with no visible scarring or blemishing; fine lines around the eyes from decades of close precision work; expression tends toward neutral watchfulness",
+    "distinguishing_marks": [
+      "Intricate circuit-board-fine geometric linework tattooed across both hands from wrist to fingertip in black ink — precise, intentional, covering approximately 80% of hand surface area",
+      "Faint calluses on index, middle, and ring fingers of both hands from decades of holding fine-tipped instruments"
+    ],
+    "visible_augmentations": "None visible. Micro-precision haptic feedback overlay is subcutaneous in fingertips and completely invisible; no chrome, no LEDs, no dermal modification by deliberate choice.",
+    "posture_movement": "Upright, economical posture with minimal wasted gesture; hands move with precision and confidence, often reaching for eyeglasses unconsciously when thinking — a tic born of habit rather than need; gait is steady and unhurried; overall bearing suggests someone who has trained themselves to be unremarkable and forgettable",
+    "clothing_style": "Muted earth tones and grays — well-maintained but deliberately nondescript clothing in functional cuts. Typically: plain cotton or linen shirts in cream, taupe, or dove gray; dark trousers with clean lines; unbranded safety glasses with clear lenses worn habitually despite not needing correction; a gray canvas work apron in the shop with multiple pockets for tools and materials. Footwear is practical: worn but clean leather flats or soft-soled shoes suitable for hours of standing at worktables. No jewelry, no adornment, no corporate branding or tier indicators — the aesthetic of someone who has trained themselves to occupy space without drawing attention."
+  },
+  "image_prompt": "cyberpunk character portrait, nonbinary person of mixed West African and European heritage, age 41, medium height and build, warm light-brown skin, dark brown eyes, natural hair in low wrap, wearing plain gray linen shirt and safety glasses, hands prominently featured showing intricate black geometric circuit-board tattoos covering wrists to fingertips, standing in soft warm lamplight in front of antique printing press and document samples, hyper-detailed hand focus, professional printer's workshop aesthetic, muted color palette of grays and taupes, photorealistic, shallow depth of field, moody professional lighting, contemplative expression, --ar 2:3 --v 6"
 }

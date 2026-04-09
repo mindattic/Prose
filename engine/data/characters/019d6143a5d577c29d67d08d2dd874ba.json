@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "Grand Corridor, studio-apartment in the Gage Circuit transition zone, near Damen and Armitage",
-  "description": "Celestin is a medium-height man with the slightly abstracted quality of someone who spends significant portions of his waking life inside spatial constructions he builds himself. He has warm brown skin, close-cut hair, and a neatly trimmed beard going early-grey at the edges. His eyes carry retinal projection overlays — custom, top-tier, not cosmetic but functional, allowing him to see his own builds overlaid on physical space without a headset. He dresses in muted technical clothing that he treats as irrelevant to his existence, but always wears one specific item: a length of hand-woven fabric from his grandmother's household worn as a shoulder wrap, which he claims is for the texture reference and which everyone suspects is simply love.\n\nHe works on commission for Tier 3-4 clients — corporate lobbies, private collectors, memorial installations — and privately on a long-running personal project he calls the Lakeform Archive: a fully navigable VR reconstruction of Meridian 88's shoreline as it existed in ten-year intervals from 2050 to present, built entirely from oral histories, degraded footage, and his own spatial intuition. He is meticulous, slightly obsessive, and becomes a completely different person when talking about the Archive — looser, faster, visibly joyful in a way his professional mode never quite permits.",
+  "description": "Celestin is a medium-height man with the slightly abstracted quality of someone who spends significant portions of his waking life inside spatial constructions he builds himself. He has warm brown skin, close-cut hair, and a neatly trimmed beard going early-grey at the edges. His eyes carry retinal projection overlays — custom, top-tier, not cosmetic but functional, allowing him to see his own builds overlaid on physical space without a headset. He dresses in muted technical clothing that he treats as irrelevant to his existence, but always wears one specific item: a length of hand-woven fabric from his grandmother's household worn as a shoulder wrap, which he claims is for the texture reference and which everyone suspects is simply love.\n\nHe works on commission for Tier 3-4 clients — corporate lobbies, private collectors, memorial installations — and privately on a long-running personal project he calls the Lakeform Archive: a fully navigable VR reconstruction of GLMZ's shoreline as it existed in ten-year intervals from 2050 to present, built entirely from oral histories, degraded footage, and his own spatial intuition. He is meticulous, slightly obsessive, and becomes a completely different person when talking about the Archive — looser, faster, visibly joyful in a way his professional mode never quite permits.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -197,11 +197,31 @@
   "related_entities": [
     "Grand Corridor",
     "Gage Circuit",
-    "Meridian 88",
+    "GLMZ",
     "Grandmother",
     "The Shore Dogs",
     "ARCHIVE",
     "Slagworks Industrial"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Lebanese / Nigerian",
+    "height_cm": 173,
+    "weight_kg": 71,
+    "build": "Medium, lean but not wiry—sustained muscle tone from years of fine motor work and standing at spatial design rigs, no bulk, efficient frame",
+    "hair_color": "Dark brown with early silver at temples and along the line of his close-cut beard",
+    "hair_style": "Close-cropped, precisely maintained, textured rather than smooth",
+    "hair_length": "Short",
+    "eye_color": "Warm brown with faint amber retinal projection grid visible at certain angles—custom Axiom overlay system, minimalist aesthetic, not cosmetic",
+    "skin_tone": "Warm medium brown with subtle undertones that shift between olive and copper depending on light",
+    "complexion": "Clear, well-maintained, slight fatigue lines around the eyes from hours in spatial construction rigs. Neatly trimmed beard with visible silver threading. Hands show minor scarring from early haptic calibration work—almost invisible unless examined closely.",
+    "distinguishing_marks": [
+      "Fine white line along his left thumb knuckle—old calibration burn from first-generation haptic glove feedback misalignment",
+      "Faint rectangular tan mark on his inner left wrist where he wears his haptic feedback glove during work"
+    ],
+    "visible_augmentations": "Retinal projection overlays visible as faint geometric grid patterns in his irises when light catches them at certain angles; no visible chrome or subdermal work. Typically wears custom haptic feedback gloves during work hours—sleek grey with subtle LED threading at the knuckles.",
+    "posture_movement": "Precise, economical movement with occasional moments of stillness where he's clearly seeing overlaid spatial data others cannot perceive. When discussing his work, particularly the Archive, his posture loosens—more gesturative, faster speech patterns. His hands move constantly when engaged, mapping invisible spaces.",
+    "clothing_style": "Muted technical wear—Tier 3-4 designer brands favoring function over statement (Helios Systems, Corbeau Neo). Charcoal and slate tones. Lightweight synthetics that move well. Always, without exception: a hand-woven fabric shoulder wrap in indigo and natural linen, worn over his left shoulder, clearly from another era and maintained with obvious care. The contrast between his minimal, contemporary technical wardrobe and this single tactile artifact is impossible to miss."
+  },
+  "image_prompt": "Portrait of a 38-year-old man of Lebanese-Nigerian heritage, medium height, warm brown skin, close-cropped dark hair silvering at the temples, neatly trimmed beard with grey threading. Intelligent brown eyes with faint geometric retinal projection grid visible in the irises—cybernetic overlay system. Wearing muted charcoal technical clothing, sleek and minimal, paired with a hand-woven indigo and natural linen shoulder wrap worn over his left shoulder, worn with visible care. Seated or standing in a sparse studio-apartment space with soft blue ambient light from VR projection rigs in the background. His hands rest with slight precision, wearing custom grey haptic feedback gloves with subtle LED threading. Mood is contemplative but with underlying creative intensity. Lighting is soft and cool-toned, emphasizing the retinal projection tech. Cyberpunk, portrait photography, technical aesthetic, introspective, Grand Corridor architectural style visible in background. Midjourney quality. --ar 2:3 --v 6"
 }

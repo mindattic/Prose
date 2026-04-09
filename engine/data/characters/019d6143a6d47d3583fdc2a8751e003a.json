@@ -104,5 +104,26 @@
   "related_entities": [
     "Meridian Core"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Scandinavian / Filipino / Mexican",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and angular with defined musculature; maintained through discipline rather than bulk. High center of gravity, built for mobility and sustained physical exertion rather than power.",
+    "hair_color": "Platinum blonde with dark roots showing—deliberately maintained to suggest either neglect or a statement about corporate authenticity",
+    "hair_style": "Slicked back into a tight high ponytail, secured with a minimalist chrome clip",
+    "hair_length": "Long",
+    "eye_color": "Dark brown with mild heterochromia—left eye shows faint amber threading, likely subcutaneous neural interface indicators",
+    "skin_tone": "Warm olive complexion with golden undertones; sun-kissed despite Tier 1 indoor lifestyle",
+    "complexion": "Sharp cheekbones, defined jawline. Minimal makeup—just enough to look corporate-presentable without seeming vain. Skin shows the precision of someone using high-end dermal maintenance, but not obsessively. A faint scar runs along her left temple, partially hidden by hairline.",
+    "distinguishing_marks": [
+      "Thin white scar along left temple, approximately 3cm, likely from blunt-force trauma—partially concealed by hairline",
+      "Faint burn mark on inside of right wrist, roughly 2cm diameter, consistent with industrial accident or interrogation scar",
+      "Zheng-Dao corporate sigil tattooed on right collarbone in matte black ink with subtle iridescent overlay—visible when neck is exposed"
+    ],
+    "visible_augmentations": "None immediately obvious. However, the amber threading in her left eye and subtle micro-expressions suggest subcutaneous neural interface hardware. Very little visible chrome—suggesting Zheng-Dao's investment in discrete, high-end internal modifications rather than showboat augmentations.",
+    "posture_movement": "Precise and economical. She moves with the coiled readiness of someone trained in violence, but masks it under a veneer of corporate polish. Handshakes are firm but brief. She rarely fidgets; instead, her eyes do most of the work—scanning rooms systematically, calculating angles. When seated, she maintains an open posture that nonetheless keeps her center of gravity low.",
+    "clothing_style": "Tier 1 corporate minimalist. Typically wears tailored black or charcoal blazers over understated base layers—often Zheng-Dao-aligned brands with subtle sigils. Prefers fitted tactical pants with hidden pockets over skirts. Footwear is always practical: matte-black neural-responsive shoes that adjust to terrain. Jewelry is minimal—a simple platinum band on her right ring finger and understated earrings that double as neural interface nodes. Her overall aesthetic reads as 'lethal efficiency wrapped in corporate respectability.'"
+  },
+  "image_prompt": "Professional cyberpunk female fixer, 36, Scandinavian-Filipino-Mexican heritage, lean athletic build, platinum blonde hair slicked back in tight ponytail, sharp angular features, warm olive skin tone, dark brown eyes with subtle amber neural interface glow in left eye. Wearing tailored black corporate blazer over sleek tactical base layer, fitted dark pants, matte black neural-responsive shoes. Subtle corporate sigil tattoo visible on right collarbone. Minimal jewelry—platinum ring, interface earrings. Posed in high-end Tier 1 corporate office setting, cool LED backlighting from floor-to-ceiling windows overlooking nighttime GLMZ skyline. Pose conveys coiled readiness masked by corporate polish—confident but dangerous. Cinematic lighting, sharp focus, professional photography style, noir cyberpunk aesthetic. --ar 2:3 --v 6"
 }

@@ -248,5 +248,26 @@
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Latin American (likely Mexican) / Scandinavian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and angular, with narrow shoulders and long limbs that move with economical precision. No excess weight; muscle definition shows through the wrists and forearms from years of bar work.",
+    "hair_color": "Chromatic geneware — cycles through deep teal, burgundy, and bone white in a gradient over several hours",
+    "hair_style": "Shoulder-length, loosely layered, often pulled back with a clip or cord during shifts",
+    "hair_length": "Medium",
+    "eye_color": "Augmented: concentric rings of silver (outer) and violet (inner), natural pupil at center",
+    "skin_tone": "Warm golden-brown with subtle olive undertones, consistent with mixed Mesoamerican and Northern European ancestry",
+    "complexion": "Sharp, high cheekbones and angular jawline. Skin is clear and well-maintained, though marked by the pallor of someone who sleeps through daylight. Minimal grooming — functional rather than elaborate. A faint scar traces the inside of the right wrist from an early implant installation.",
+    "distinguishing_marks": [
+      "Faint surgical scar on the inside of the right wrist, approximately 3 cm long, marking the installation site of the retractable claw implant.",
+      "Small, deliberate tattoo on the left inner elbow — a minimalist line drawing of a refrigeration coil, done in silver ink that catches light.",
+      "Slight callusing on the pads of all fingers and along the palm edges from handling glassware and bottles."
+    ],
+    "visible_augmentations": "Right hand shows a small metallic ridge along the knuckle line of the middle finger where the retractable claw implant is housed (chrome-finished, approximately 2 cm visible when retracted). Eyes are immediately striking — the concentric ring pattern is cosmetic but unmistakable, marking them as augmented. The color-cycling hair is geneware, visible as a slow chromatic shift throughout an evening.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion. Stands with weight slightly forward, ready to move. Leans against the bar when not actively working, shoulders relaxed but eyes constantly tracking the room. Hand gestures are minimal but precise. Walks with a measured pace, never hurried, conveying calm authority.",
+    "clothing_style": "Mid-grade Ferment Quarter practical: fitted black synthetic shirt or turtleneck (sweat-resistant), dark cargo pants or tailored utility trousers with deep pockets. Shoes are black non-slip service footwear. A lightweight overshirt in charcoal or deep blue worn open during shifts. Jewelry is minimal — a simple silver ring on the left hand, possibly a family piece. No corporate branding or status signifiers; clothing prioritizes function and neutrality. Budget appears to be around 800-1200 Φ total outfit value."
+  },
+  "image_prompt": "Cyberpunk bartender, nonbinary, age 26, lean angular build, warm golden-brown skin with olive undertones. Hair shoulder-length with chromatic geneware cycling through deep teal-burgundy-white gradient mid-shift. Striking augmented eyes with concentric silver and violet rings. Sharp cheekbones, minimal expression. Wearing fitted black synthetic shirt and dark utility pants, standing behind a neon-lit bar counter in dim moody lighting. Fermented spirits bottles and aged chrome fixtures visible behind. Small chrome claw implant visible on right hand resting on bar. Calm, precise posture, surveying the room with dry authority. Low-ceiling dive bar atmosphere, fermented kelp smell implied, indie aesthetic. Cinematic cyberpunk noir, warm tungsten lighting mixed with blue accent neon, shallow depth of field, gritty photorealism --ar 2:3 --v 6"
 }

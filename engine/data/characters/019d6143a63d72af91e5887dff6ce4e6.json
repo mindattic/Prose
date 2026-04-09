@@ -31,7 +31,7 @@
     "core_desires": [
       "Freedom from augmentation debt — the interest compounds like a tumor",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Planning — responds to chaos by making detailed contingency plans for everything",
@@ -278,5 +278,27 @@
     "Burden of Longitude",
     "Pellucid Systems"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Hispanic-Latino",
+    "height_cm": 178,
+    "weight_kg": 96,
+    "build": "Broad-shouldered and heavy-set, muscular through the core and legs with density that reads as functional rather than aesthetic. Carries their mass with deliberate control — the bearing of someone who has learned their body is a tool and a weapon.",
+    "hair_color": "Black with silver-grey threading at temples and crown",
+    "hair_style": "Kept short, close to the scalp, practical and low-maintenance. Styled with precision despite the nocturnal lifestyle.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, almost black, with faint iridescence from subcutaneous neural enhancement",
+    "skin_tone": "Medium-deep brown with warm undertones, complexion marked by the chromatic sheen of dermal camouflage cells",
+    "complexion": "Face is broad and symmetrical with soft features that contrast sharply with their physical presence — high cheekbones, full lips, a wide mouth that rarely smiles. Skin surface has an unusual luminescence in low light, subtle color-shifting in the epidermis. No facial hair. Nocturnal pallor evident beneath the melanin — minimal sun exposure over years.",
+    "distinguishing_marks": [
+      "Vertical scar along left jawline, approximately 8cm, pale silver against darker skin — clean cut, old, professionally healed",
+      "Network of faint linear scars across both shoulders in a pattern suggesting blade work or shrapnel, barely visible unless light catches them at specific angles",
+      "Burn scar on right forearm (inner wrist to elbow), textured and pink, roughly 12cm long — old but not as old as the jawline scar",
+      "Chromatic pigmentation pattern across upper chest and collarbone area where the dermal camouflage is densest, creating a subtle iridescent sheen that shifts from copper to violet depending on light and angle"
+    ],
+    "visible_augmentations": "Dermal camouflage cells create a distinctive luminescent quality to the skin, particularly visible on the upper body, neck, and face. The effect is subtle in bright light but unmistakable in shadows — skin appears to absorb and shift color minutely. The chromatic effect becomes pronounced under LED or neon lighting. No visible mechanical augmentations — the synthetic blood system and oxygen-carrying nanites are entirely subcutaneous.",
+    "posture_movement": "Moves with controlled weight, economical gestures. Never fidgets. Walks like someone counting exits and calculating trajectories. When seated, occupies space deliberately — shoulders back, spine straight. In conversation, maintains stillness until necessary movement. Eyes track constantly, a habit of someone whose survival has depended on noticing what others miss. Despite the heavy build, movement is fluid rather than ponderous.",
+    "clothing_style": "Tier 4-3 utilitarian noir — form-fitted tactile bodysuit in matte black synthweave with integrated cable routing and reinforced stress points. Over this, a loose-cut long coat in charcoal grey synthetic leather, oversized to accommodate gear and conceal the bulk of the augmentations, hits mid-thigh. Flat-soled tactical boots in unmarked black, practical for running and climbing. Minimal jewelry — a silver band on right middle finger, possibly a keepsake from a previous life. No logos or branding. Clothing is maintained obsessively, replacing pieces the moment they show wear. The overall aesthetic reads as someone who is not trying to be invisible, but is trying very hard not to be memorable."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 44-year-old nonbinary courier, broad-shouldered and muscular build, dark brown skin with iridescent chromatic shimmer and color-shifting sheen across upper body and neck from dermal camouflage augmentation, short black hair with silver temples, sharp dark eyes with subtle iridescent flicker, vertical scar on left jawline, soft facial features contrasting with imposing physical presence. Wearing oversized matte charcoal grey synthetic leather coat over black tactile bodysuit, tactical boots, silver ring on right middle finger. Standing in shadows of industrial shipping container architecture, neon violet and copper light reflecting off skin creating luminescent effect, nocturnal atmosphere, film noir lighting with hard shadows, cyberpunk aesthetic, photorealistic, intricate detail on scars and augmentation, --ar 2:3 --v 6"
 }

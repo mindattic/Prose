@@ -64,7 +64,7 @@
   "narrative_function": "Technical expert and potential whistleblower — someone who can tell players what the physical evidence actually shows versus what the official record claims. A source of forensic information, a person who can authenticate or discredit evidence, and a character whose professional integrity has made them quietly vulnerable within the institution.",
   "augmentations": "Haptic sensitivity modulation implants in both hands (reduces ambient tactile input; improves fine-detail analysis precision). Olfactory enhancement mod for trace chemical analysis. Cosmetic: bioluminescent amber-gold freckles across nose and cheekbones.",
   "daily_life": "Arrives at Grand Corridor Central Processing by 0800, suits up for the lab, works through the evidence queue with methodical focus. Takes lunch outside when weather permits — they need the open air. Returns, finishes the queue, writes reports with a care for language that their supervisors find excessive and that has twice been cited in legal proceedings as unusually exculpatory in its precision.",
-  "affiliation": "Meridian 88 Metro Police — Evidence Division, Grand Corridor Central Processing",
+  "affiliation": "GLMZ Metro Police — Evidence Division, Grand Corridor Central Processing",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -270,5 +270,25 @@
     "Elena Vasquez-9",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Scandinavian / Bosnian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Slight and wiry, with the economy of movement that comes from precision work. No excess mass; their frame reads as someone who exists efficiently.",
+    "hair_color": "Natural deep brown",
+    "hair_style": "Protective braids arranged in a crown pattern, meticulously maintained",
+    "hair_length": "Medium (shoulder-length when fully extended)",
+    "eye_color": "Deep brown, alert and focusing",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Clear and unblemished; minimal makeup or grooming beyond the functional. Face carries the neutrality of someone who does not perform emotion for strangers.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles in warm amber-gold across the bridge of nose and upper cheekbones, arranged in a subtle constellation pattern — a thirtieth-birthday modification that pulses faintly under low light",
+      "Faint scarring on the palmar surfaces of both hands consistent with precision work micro-abrasions, nearly invisible"
+    ],
+    "visible_augmentations": "Bioluminescent freckles are the only visible modification. Haptic sensitivity modulation and olfactory enhancement are subcutaneous/internal and show no external signs. Hands are always gloved — nitrile or thin leather — which conceals any implant integration points.",
+    "posture_movement": "Upright, economical, deliberate. They move as if each motion has been calculated for efficiency. Hands are steady; there is no fidgeting or wasted gesture. When focusing on evidence work, they enter a state of complete stillness except for the precise movements required by the task.",
+    "clothing_style": "Tier 3 utilitarian. Clean lab coat (Metro Police issue, well-maintained), neutral underlayers (grays, blacks, dark blues), sturdy flat shoes designed for long standing. No jewelry except a single plain silver ring on their left hand. No visible corpo branding or luxury indicators. Appearance suggests someone who has prioritized function over identity expression."
+  },
+  "image_prompt": "Portrait of a nonbinary forensic technician in a cyberpunk noir setting, medium height with slight athletic build, deep brown skin, natural shoulder-length braided hair in a crown pattern. Most striking feature: bioluminescent warm amber-gold freckles glowing faintly across nose and cheekbones. Wearing a clean gray Metro Police evidence division lab coat over dark neutral clothing, hands encased in thin nitrile gloves. Expression is calm, focused, precise. Standing under cool fluorescent laboratory lighting in Grand Corridor Central Processing, surrounded by evidence analysis equipment and holographic data screens. Mood is methodical, quiet competence. Soft bioluminescence from facial modification creates subtle warm glow against cool blue-white lab environment. Cinematic, hyper-detailed, professional forensic setting. --ar 2:3 --v 6"
 }

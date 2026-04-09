@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Ashland and Division",
-  "description": "Nika Svensson-Kone is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 33, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a extraction specialist out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Nika Svensson-Kone is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a extraction specialist out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.31,
@@ -29,7 +29,7 @@
       "Losing their edge to age — the body slows before the mind accepts it"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "To build something that outlasts the next contract cycle",
       "Freedom from augmentation debt — the interest compounds like a tumor"
     ],
@@ -276,7 +276,7 @@
     "Crucible Industries Fang-9 'Switchblade'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Heritage Vault",
     "Ashfield",
     "Kang-Petrov Arms KPA-15 'Diaspora'",
@@ -284,5 +284,26 @@
     "Neuromorphic Pressure Cestus",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / East African",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "build": "Athletic and lean with defined musculature — dancer's grace combined with fighter's efficiency. Shoulders broad but not bulky, legs powerful and economical. No wasted mass.",
+    "hair_color": "Dark blonde with natural silver threading at temples",
+    "hair_style": "Pulled back in a tight, functional braid that sits high on the crown — practical for work, reveals the nape where spinal chrome terminates",
+    "hair_length": "Medium",
+    "eye_color": "Light grey-blue, alert and analytical",
+    "skin_tone": "Warm tan with cool undertones — golden-brown across the cheekbones, lighter at the jawline",
+    "complexion": "Sharp, high cheekbones. Jawline defined but not harsh. Skin weathered by nocturnal living — slight circles under eyes that no amount of sleep erasure can fully eliminate. A thin scar traces her left temple, barely visible unless light catches it directly.",
+    "distinguishing_marks": [
+      "Surgical scar running the length of her cervical spine, visible when she wears anything backless — chrome interface ports flush with skin at C3 and C5 vertebrae",
+      "Thin white line across left temple, approximately 4cm, angled toward her hairline — old blade work",
+      "Faint burn marks on the inside of her right forearm — three parallel lines, deliberate, old enough to be pale against her skin"
+    ],
+    "visible_augmentations": "Reflex booster chrome visible along the spine — iridescent titanium-alloy ports at cervical vertebrae catch light when she moves. The metallic sheen is impossible to hide; she doesn't try. Synthetic lung architecture visible in the subtle way her ribcage moves — slightly different biomechanics than natural respiration, noticeable only if you're watching closely.",
+    "posture_movement": "Economical and controlled — no wasted motion. Stands with weight balanced toward the balls of her feet, ready for immediate action. Moves like she's always calculating distance and angles. Hands are rarely still; fidgets with equipment, adjusts straps, tests weapon weight. Eye contact direct and held slightly too long — unsettling to most people.",
+    "clothing_style": "Tier 3-4 functional gear — well-maintained but worn. Black synthetic bodysuit with reinforced panels at shoulders, ribs, and thighs (impact protection). Armored jacket over top — matte tactical weave with cargo pockets, sleeves cut short to reveal forearm augmentation scars. Combat boots, laced tight. Webbing harness for tools and weapons — organized with military precision. No decoration, no excess. Everything serves a purpose or doesn't exist."
+  },
+  "image_prompt": "cyberpunk extraction specialist woman, 33 years old, scandinavian-african mixed heritage, athletic lean muscular build, dark blonde hair with silver threading pulled back in tight braid, light grey-blue eyes, warm tan skin, sharp high cheekbones, visible spinal chrome reflex boosters with iridescent titanium ports at neck, surgical scar along cervical spine, thin white scar across left temple, nocturnal pallor under eyes, wearing black tactical bodysuit with reinforced panels, matte armor jacket with cut sleeves, combat webbing harness, functional Tier 3 GLMZ gear, standing in dim ashfield warehouse lighting with neon spillover from street level, alert ready posture, hands tense and ready, moody nighttime cyberpunk atmosphere, film noir lighting, gritty and worn, professional hostile environment specialist, cinematic, --ar 2:3 --v 6"
 }

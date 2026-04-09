@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "A crew worth trusting — people who stay when the shooting starts",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Power — enough leverage that nobody ever threatens them again"
     ],
     "coping_mechanisms": [
@@ -288,5 +288,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Swedish / West African / Turkish",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Wiry and lean with visible musculature from functional training rather than bulk — the physique of someone who converts nervous energy into motion. Low body fat. Forearms show defined muscle striations beneath visible subdermal plating.",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Closely cropped, maintained with military precision",
+    "hair_length": "Short",
+    "eye_color": "Hazel with reactive dilation — suggests neural interface optimization",
+    "skin_tone": "Medium-warm undertone reflecting mixed Scandinavian and West African ancestry",
+    "complexion": "Angular facial structure with sharp cheekbones and a narrow jaw. Skin shows the shallow texture of someone who sleeps irregular hours and runs on stimulants — not unhealthy, but clearly not rested. A thin scar runs from left ear to jawline, surgical or combat-related. Perpetual suggestion of stubble, poorly shaved because grooming happens at 4 AM.",
+    "distinguishing_marks": [
+      "Surgical scar from left ear to jawline, approximately 7cm, slightly raised and pale",
+      "Burn scar across the back of right hand, approximately 4x6cm, irregular shape suggesting industrial accident or weapons discharge",
+      "Subdermal armor plating visible across both forearms and upper chest where clothing gaps — matte gunmetal finish with visible scratch marks and worn serial numbers filed smooth"
+    ],
+    "visible_augmentations": "Vocal modulator mounted in neck/lower jaw — visible as a faint chrome shimmer beneath the skin at the angle of the jaw, approximately 3cm in length. The modification catches light when he turns his head. Subdermal armor plating across forearms (both sides) and torso — visible as raised metallic striations beneath thin skin, most visible on bare arms. The plating shows significant wear: scratches, discoloration, evidence of combat or heavy use. Serial numbers have been deliberately obliterated.",
+    "posture_movement": "Never still. Even seated, fingers tap or hands fidget. Walks with economic efficiency — no wasted motion, but the efficiency of someone channeling restlessness into purpose. Eyes track exits and entrances unconsciously. Stands at angles to walls, never center-room. Voice control is deliberate and measured, suggesting active suppression of baseline anxiety.",
+    "clothing_style": "Tier 3-4 pragmatism with security contractor undertones. Favors dark, form-fitting synthwear (black or deep charcoal) that doesn't catch light or snag. Reinforced jacket with interior pockets for equipment — could be corp-adjacent tactical wear or high-end street gear, hard to pin down exactly. Gloves most of the time, fingerless or tactical, worn more for hand protection than style. Boots are heavy and scuffed, made for running or kicking. No visible corporate logos, no team affiliation. Everything looks maintained, not fashionable. Minimal jewelry — possibly a neural-link accessible through wrist interface, but nothing decorative."
+  },
+  "image_prompt": "Cyberpunk character portrait of a wiry 38-year-old man with dark brown hair threaded with silver at temples, sharp angular features mixing Swedish and West African heritage, hazel eyes with reactive dilation. Visible chrome vocal modulator at jaw line with subtle metallic shimmer. Subdermal armor plating visible across forearms and upper chest as raised gunmetal striations, heavily worn and scratched with filed-off serial numbers. Thin surgical scar from ear to jawline. Wearing dark form-fitting synthwear tactical jacket with reinforced pockets, fingerless tactical gloves, heavy combat boots. Restless posture, standing at an angle, fingers tensed. Low-light neon-filtered cyberpunk setting, cool blue and purple ambiance with surveillance camera glints. Sharp focus on facial features and augmentation details. Gritty, nocturnal courier aesthetic, high risk operator. --ar 2:3 --v 6"
 }

@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "The Narrows — back room of a legitimate print and copy shop called Clearscript, on the corner of Ironvein Passage, near Milwaukee and North Ave",
-  "description": "Séverine has the kind of face that is difficult to hold in memory — medium everything, carefully so. Their skin is a warm olive-brown, their hair is kept at an aggressively unremarkable length, and their eyes have been modded to shift between a plain grey and a plain brown depending on ambient light, which makes identification in surveillance footage nearly impossible. The only thing that stands out is their hands: long-fingered, ink-stained in colors that never quite wash out, and in near-constant motion — folding, pressing, testing paper weight and texture the way some people crack knuckles.\n\nSéverine is sardonic, professionally paranoid, and possessed of an almost religious conviction that identity is the only thing in Meridian 88 that actually matters. They approach forgery as an art form and a philosophy simultaneously — arguing that all identity is constructed, that they are merely the honest version of what corponations do to people every day. They are patient with clients in distress and merciless with clients who waste their time. They have a particular soft spot for people fleeing bad situations, though they'd deny having soft spots at all.",
+  "description": "Séverine has the kind of face that is difficult to hold in memory — medium everything, carefully so. Their skin is a warm olive-brown, their hair is kept at an aggressively unremarkable length, and their eyes have been modded to shift between a plain grey and a plain brown depending on ambient light, which makes identification in surveillance footage nearly impossible. The only thing that stands out is their hands: long-fingered, ink-stained in colors that never quite wash out, and in near-constant motion — folding, pressing, testing paper weight and texture the way some people crack knuckles.\n\nSéverine is sardonic, professionally paranoid, and possessed of an almost religious conviction that identity is the only thing in GLMZ that actually matters. They approach forgery as an art form and a philosophy simultaneously — arguing that all identity is constructed, that they are merely the honest version of what corponations do to people every day. They are patient with clients in distress and merciless with clients who waste their time. They have a particular soft spot for people fleeing bad situations, though they'd deny having soft spots at all.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -204,10 +204,30 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "Meridian 88",
+    "GLMZ",
     "Ironvein",
     "The Pure Hand",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Turkish / Zulu — mixed Mediterranean and Southern African lineage",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and wiry with the kind of functional thinness that comes from long hours hunched over precision work. Shoulders slightly rounded from desk posture, but capable and poised.",
+    "hair_color": "Dark brown, naturally, but deliberately stripped of all distinctive characteristics",
+    "hair_style": "Blunt, chin-length bob cut with no styling — the kind of cut that looks the same in any weather, any light",
+    "hair_length": "Medium",
+    "eye_color": "Photochromic mod: shifts between grey and warm brown depending on ambient light conditions. The modification creates an uncanny fluidity that makes the eyes difficult to remember or describe with certainty",
+    "skin_tone": "Warm olive-brown — neither dark nor pale, calibrated by genetics to blend across multiple lighting conditions",
+    "complexion": "Fine-featured and precise. No visible acne or scarring. Skin is well-maintained but deliberately unmarked — the face of someone who has engineered their own ordinariness. Lips are thin, usually set in a slight, ironic curve. Brow furrowed in the default position of chronic skepticism.",
+    "distinguishing_marks": [
+      "Subdermal ink tracery visible only under UV light on both palms and inner wrists — faint grid patterns and authentication markers that create a topography only Séverine can read",
+      "Index and middle fingertips perpetually stained with chemical inks in shades of midnight blue, copper, and violet — the colors settle into fine lines and cuticles and never fully wash out"
+    ],
+    "visible_augmentations": "The photochromic irises are the only immediately visible augmentation — a subtle but unsettling fluidity as the eyes shift tone with ambient light. The subdermal UV-reactive ink is invisible in normal conditions but creates faint discolorations on the hands that could be mistaken for chronic ink exposure if noticed at all.",
+    "posture_movement": "Moves with economic precision — no wasted motion. Hands are in constant, minute activity: folding papers, testing texture, running fingertips across surfaces, signing documents with ritualistic care. When still, they sit perfectly upright, but with a coiled readiness. Eyes track movement and light. They walk with a flat, unmemorably normal gait.",
+    "clothing_style": "Tier 3-4 working professional: grey or black fitted long-sleeve shirts (cotton-synthetic blend, durable), dark jeans or work trousers, a charcoal linen apron during business hours. In the back room, they swap the apron for a precisely tailored grey waistcoat. No jewelry. Shoes are scuffed, broken-in leather oxfords — practical, silent, replaceable. Everything is chosen to be unremarkable, invisible, forgotten within seconds. The only indulgence is a vintage mechanical watch — a functioning Seiko from the 2090s, worn on the left wrist, kept obsessively accurate."
+  },
+  "image_prompt": "A lean, olive-brown nonbinary figure with a blunt chin-length dark brown haircut, sitting at a craftsman's desk under warm tungsten lighting, hands suspended mid-gesture over scattered papers and ink bottles. Their eyes are subtly photochromic, shifting between grey and warm brown. Long ink-stained fingers, visible subdermal violet and blue tracery marks on inner wrists glowing faintly under side-angled UV light. Wearing a charcoal linen waistcoat over a fitted grey shirt, sleeves pushed to elbows. Background: cluttered back room of an underground document forge — precision tools, chemical inks, vintage press equipment, walls lined with paper samples. Cyberpunk, hyper-detailed, clinical lighting mixing tungsten and faint UV glow, shallow depth of field focused on hands and face, photorealistic, intense atmospheric grading, 2226 GLMZ aesthetic, --ar 2:3 --v 6"
 }

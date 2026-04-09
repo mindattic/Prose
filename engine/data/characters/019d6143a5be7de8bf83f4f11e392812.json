@@ -13,7 +13,7 @@
   "age": 72,
   "status": "active",
   "location": "Rotating — can be found at any of seven shrines between Edgewater Prism and Deepwell Station; sleeps in pilgrim hostels or is offered floor space by shrine keepers, near sub-level access near State and Van Buren",
-  "description": "Bartholomeu is a small, durable man who looks like he was carved out of something weather-resistant — compact and slightly bowed at the shoulders from decades of walking with a pack, his skin the warm brown of Kenyan earth and Andean clay mixed together, deeply lined around the eyes and mouth in ways that read as more expressive than aged. He walks with a slight limp from an old injury to his right knee that he refused to have properly treated on the grounds that suffering without purpose is a waste but suffering with attention teaches. He wears a circuit monk's traditional long grey coat covered in hand-sewn patches from every shrine he has ever visited — there are over two hundred patches; the coat is extremely heavy. His head is shaved. His hands are large and calloused and he uses them constantly when he speaks.\n\nHe is genuinely one of the happiest people in Meridian 88, which makes people instinctively suspicious of him. He navigates this with patience and amusement. The circuit monk tradition holds that the city itself is sacred — that the ELF network is its nervous system, that the shrines are its organs, and that walking the routes between them is an act of devotion to the living city. Bartholomeu has been walking this circuit for thirty-one years. He has guided somewhere between three and four hundred pilgrims along sections of it — people in grief, people making decisions, people running away from things, people who just wanted someone to walk with. He asks almost nothing of them except that they pay attention.",
+  "description": "Bartholomeu is a small, durable man who looks like he was carved out of something weather-resistant — compact and slightly bowed at the shoulders from decades of walking with a pack, his skin the warm brown of Kenyan earth and Andean clay mixed together, deeply lined around the eyes and mouth in ways that read as more expressive than aged. He walks with a slight limp from an old injury to his right knee that he refused to have properly treated on the grounds that suffering without purpose is a waste but suffering with attention teaches. He wears a circuit monk's traditional long grey coat covered in hand-sewn patches from every shrine he has ever visited — there are over two hundred patches; the coat is extremely heavy. His head is shaved. His hands are large and calloused and he uses them constantly when he speaks.\n\nHe is genuinely one of the happiest people in GLMZ, which makes people instinctively suspicious of him. He navigates this with patience and amusement. The circuit monk tradition holds that the city itself is sacred — that the ELF network is its nervous system, that the shrines are its organs, and that walking the routes between them is an act of devotion to the living city. Bartholomeu has been walking this circuit for thirty-one years. He has guided somewhere between three and four hundred pilgrims along sections of it — people in grief, people making decisions, people running away from things, people who just wanted someone to walk with. He asks almost nothing of them except that they pay attention.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -65,7 +65,7 @@
   "narrative_function": "Mobile information network — he has walked every route between seven major shrines for decades and knows the city's physical and spiritual geography intimately; useful as a guide, a connector between NPCs at different locations, or a source of historical knowledge about city changes",
   "augmentations": "None — he is philosophically opposed to chrome on the grounds that you should feel the city through your own body; has geneware cat ears he got at twenty-eight before he took his vows and has kept them on the grounds that removing them would itself be a modification",
   "daily_life": "Rises before dawn wherever he slept, walks three to seven kilometers to the next shrine on his circuit, spends time at the shrine cleaning, praying, and receiving anyone who is there, continues to the next stop, arrives at a pilgrim hostel or a keeper's floor by nightfall.",
-  "affiliation": "The Circuit Monks of Meridian 88 — a loosely organized tradition with no central authority; he corresponds with perhaps forty other monks across the city by data-letter",
+  "affiliation": "The Circuit Monks of GLMZ — a loosely organized tradition with no central authority; he corresponds with perhaps forty other monks across the city by data-letter",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -217,7 +217,7 @@
   "related_entities": [
     "Deepwell Station",
     "Edgewater Prism",
-    "Meridian 88",
+    "GLMZ",
     "The Circuit",
     "Kang Athletics KA-200 'Padwork'",
     "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
@@ -226,5 +226,26 @@
     "The Pure Hand",
     "Clay"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East African (Kenyan) / Andean (Quechua)",
+    "height_cm": 163,
+    "weight_kg": 68,
+    "build": "Compact and wiry, slightly bowed at the shoulders from three decades of pack-carrying. Muscular in forearms and calves from constant walking; minimal body fat. Frame suggests durability rather than strength.",
+    "hair_color": "None — shaved scalp",
+    "hair_style": "Cleanly shaved",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown, warm and expressive",
+    "skin_tone": "Warm brown — the weathered terracotta of high-altitude Andean earth blended with Kenyan savanna clay",
+    "complexion": "Deeply lined face, especially around eyes and mouth — creases that suggest constant expression and emotion rather than age alone. Skin shows deep weathering from decades of outdoor walking. Clean, well-maintained despite obvious age. No facial hair.",
+    "distinguishing_marks": [
+      "Extensive network of fine white scar tissue across both palms and fingers, consistent with decades of manual labor and handling rope/fabric",
+      "Geneware cat ears — furred, pointed, pale grey with darker inner edges, positioned naturally on the skull where human ears would be. Constantly mobile and responsive to sound and emotion",
+      "Surgical scar along right knee (lateral approach), approximately 8cm, slightly puckered and pale — deliberately left untreated/unrepaired to maintain sensitivity"
+    ],
+    "visible_augmentations": "Geneware cat ears only. No chrome, no subdermal plating, no visible neural ports. Conspicuously unaugmented by GLMZ standards.",
+    "posture_movement": "Walks with a distinct right-side limp, slight hitch in gait from old knee injury. Moves slowly but with obvious purpose and efficiency — no wasted motion. Shoulders slightly rounded forward from pack-carrying habit. Hands constantly in motion when speaking — expressive, gestural, used to emphasize and illustrate. Stands with weight balanced on balls of feet, as if always ready to continue walking. Despite age and limp, movement conveys patience rather than pain.",
+    "clothing_style": "Signature circuit monk's long grey wool coat, heavy and worn, covered entirely with hand-sewn cloth patches (200+ individual patches from shrine visits). Coat is visibly weathered but meticulously maintained. Beneath: simple undyed linen shirt and grey canvas trousers, both well-mended. Worn leather walking boots, heavily patched at heels and toes. A single small canvas rucksack with repair patches. No jewelry. No brands or tier markers — clothing suggests Tier 4-5 by material, but kept with such care it transcends economic status. Appearance reads as 'monastic choice' rather than 'poverty.'"
+  },
+  "image_prompt": "A 72-year-old East African-Andean man with deep-lined expressive face and shaved head, wearing a heavy grey wool coat covered in 200+ hand-sewn colorful shrine patches, walking slowly through a neon-lit GLMZ underpass with a slight limp, geneware cat ears visible and alert on his head. Large calloused hands gesturing expressively. Warm brown weathered skin, simple canvas and leather clothing, worn but immaculate. Background: cyberpunk shrine corridor with ELF network terminals glowing, rain-slicked tile floor, shrine lanterns casting golden light. Mood: contemplative, serene, deeply human. Soft volumetric lighting, rim-lit by shrine neon. Digital art, photorealism. --ar 2:3 --v 6"
 }

@@ -175,5 +175,26 @@
     "Nightlight",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South African / Russian",
+    "height_cm": 128,
+    "weight_kg": 26,
+    "build": "Small-framed and lean from inconsistent nutrition, with the gangly proportions of a nine-year-old entering growth phases unevenly. Compact and wiry rather than naturally delicate.",
+    "hair_color": "Dark brown, almost black",
+    "hair_style": "Grown out past maintenance, tousled and uneven; occasionally tied back with whatever cord or cloth is at hand",
+    "hair_length": "Medium",
+    "eye_color": "Light gray with dark brown iris ring — unusual combination that draws attention",
+    "skin_tone": "Deep brown with warm undertones, inherited from South African heritage",
+    "complexion": "Round face with sharp cheekbones beginning to define as he ages; frequent scrapes and small scars on his forehead and chin from street living; skin weathered beyond his years but still retains childhood softness around the edges. Perpetually dirt-smudged, especially around the knuckles and neck.",
+    "distinguishing_marks": [
+      "Thin white scar along his left temple, approximately 2cm, origin unclear — possibly from a fall or childhood accident",
+      "Scrape marks on both knees in various stages of healing, consistent with constant climbing and movement",
+      "Small burn mark on his right wrist from a communal cooking incident, faint but visible"
+    ],
+    "visible_augmentations": "None. No chrome, no optics, no subdermal plating. Completely unaugmented — notable in the GLMZ for a child of his circumstances.",
+    "posture_movement": "Moves with sharp, economical efficiency; hunches slightly as if accustomed to making himself smaller. Sits with knees pulled up even when standing still. Eyes are rarely still, constantly scanning his environment. Physical confidence that contradicts his size — moves like someone who has already learned to take hits.",
+    "clothing_style": "Wears a jacket two sizes too large, claimed salvage in faded charcoal synthetic blend with torn inner lining; the cuffs are rolled and re-rolled constantly. Beneath it, whatever layered shirt is cleanest that week. Pants are gray synthetic work-wear with grass stains and frayed cuffs; shoes are mismatched, one held together with wire. No Tier branding visible — all clothing is reclaimed or communal. Everything smells faintly of detergent and smoke from the Stockyard's generators."
+  },
+  "image_prompt": "9-year-old boy with deep brown skin and striking light gray eyes, South African-Russian heritage, small lean frame, tousled shoulder-length dark hair, wearing an oversized charcoal jacket over layered ragged clothing, scuffed knees and healing scrapes, round boyish face with emerging cheekbones, standing in dim industrial Stockyard alley at dusk with corrugated metal walls and neon light-strips overhead, golden hour lighting casting long shadows, gritty cyberpunk setting, photorealistic with documentary-style framing, moody atmospheric haze of generator smoke, no augmentations visible, natural child vulnerable yet street-hardened demeanor, --ar 2:3 --v 6"
 }

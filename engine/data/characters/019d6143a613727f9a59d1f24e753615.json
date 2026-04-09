@@ -182,5 +182,26 @@
     "Silver",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Hungarian-Jewish",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Tall and lean, slightly stooped through the shoulders from decades hunched over inventory and printing equipment. Still carries a wiry frame despite age; no excess weight but visible muscle atrophy in the upper back.",
+    "hair_color": "Silver-white",
+    "hair_style": "Close-cropped, neatly trimmed but not fussy",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural; right eye shows faint grid pattern overlay artifact from first-generation retinal display",
+    "skin_tone": "Deep walnut brown with warm undertones reflecting mixed West African and Mediterranean ancestry",
+    "complexion": "Deeply lined face with prominent creases around the eyes and mouth; weathered but clean-shaven. Small age spots on the temples and cheekbones. One cracked lens of reading glasses worn habitually — the left lens has a vertical hairline fracture he refuses to repair. Permanent ink stains on the tips of all fingers, darkest on thumb and forefinger. Minor tobacco staining at the corners of his mouth.",
+    "distinguishing_marks": [
+      "A thin, pale scar runs along the left jawline from ear toward chin, approximately 8 centimeters, consistent with old blunt-force trauma; rarely mentioned when asked.",
+      "Ink-black burn scar on the inside of his left wrist, roughly 3 centimeters across, shaped like a printer's heat plate — deliberate, self-inflicted, from an accident he reframed as a lesson.",
+      "Deep creases and calluses across both palms from manual printing work, left hand showing heavier wear."
+    ],
+    "visible_augmentations": "Retinal display overlay visible as faint iridescent grid in the right eye when light catches it at certain angles; occasional micro-stuttering of the eyelid when the system glitches. No other visible chrome or cosmetic mods. The memory-index augmentation is purely internal, invisible.",
+    "posture_movement": "Moves with deliberate slowness, never rushed. Economy of gesture — when he reaches for something, the movement is precise and minimal. Tends to lean slightly forward when listening, hands often resting flat on his counter or folded in his lap. His gaze is sharp despite the age; he observes more than he moves.",
+    "clothing_style": "Tier 3-4 working class, carefully maintained but intentionally plain. Favors loose linen shirts in neutral tones (cream, gray, pale brown), often with the sleeves rolled to the elbow. Wears a long canvas apron over his clothes, multiple pockets reinforced and stained with use. Dark cotton trousers, well-fitted but worn. Leather slip-on shoes, repaired multiple times, comfortable and broken-in. A faded jacket — possibly from the 2190s — hangs near his stall for cooler days. No jewelry except a plain metal band on his right ring finger. Habitually carries a cloth handkerchief for wiping dust off inventory."
+  },
+  "image_prompt": "Cyberpunk character portrait, elderly West African-Hungarian man with silver-white close-cropped hair and deeply lined dark walnut skin, standing behind a cluttered stall of physical media and data-chips. Wearing loose cream linen shirt with rolled sleeves, dark canvas apron stained with ink, wire-rimmed reading glasses with one cracked lens. Right eye shows faint retinal display grid overlay. Thin scar along left jawline. Ink-stained fingers, worn leather shoes. Background filled with stacked media towers, data trays, slow-scroll display boards. Smells of old plastics and electronics suggested through atmospheric haze. Lighting is warm sodium-vapor glow of The Alban Souk, shadows under the inventory stacks. Expression calm, observant, slightly tired. Detailed, grounded cyberpunk aesthetic. Hyperrealistic portraiture. --ar 2:3 --v 6"
 }

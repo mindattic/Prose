@@ -248,5 +248,24 @@
     "The Pale Mile",
     "Glass"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Finnish / Senegalese / Indian",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Tall and angular with long limbs and narrow shoulders — the frame of someone built for fitting into tight spaces and enduring stillness. Lean muscle from twelve-hour operator shifts; minimal body fat.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Short fade on sides with a small puff on top, length varies from fresh trim to several months growth depending on attention cycle",
+    "hair_length": "Short to medium (variable)",
+    "eye_color": "Large, dark brown — observant and calm",
+    "skin_tone": "Deep brown with cool undertone, even complexion reflecting mixed Nordic-West African-South Asian heritage",
+    "complexion": "Wide jaw, young-reading face despite age 34. Skin well-maintained but weathered slightly from years in sealed transit cabs under fluorescent light. Calm, almost placid expression baseline.",
+    "distinguishing_marks": [
+      "Bioluminescent cosmetic stripe running from left temple down to left jaw in pale aquamarine — installed at age 22, faint in daylight, distinctly visible in darkness or low-light conditions"
+    ],
+    "visible_augmentations": "Only the bioluminescent stripe is visible externally. Neural latency dampener is subcutaneous (brainstem-mounted, undetectable without scanning).",
+    "posture_movement": "Moves with economical grace — no wasted motion from years in operator cabs. Stands with weight slightly favoring one leg, a tram operator's habit. Posture relaxed and open despite internal calm; moves slowly and deliberately even in non-emergency contexts. Gaze often directed outward or into middle distance, as if reading reflections.",
+    "clothing_style": "Tier 3-4 working class, practical. Standard-issue Ferrogate operator uniform during shifts: gray synthetic shirt with reflective trim, dark utility trousers, station-issued safety jacket. Off-shift: plain neutral-tone synthweave (grays, dark blues), well-maintained but worn — no logos or status markers. Comfortable boots suitable for walking tram routes on rest days. No jewelry except a cheap chronometer watch. Grooming is minimalist; Ferrogate-issued hygiene standards met precisely, no excess."
+  },
+  "image_prompt": "A tall, angular Finnish-Senegalese-Indian man in his mid-30s with deep brown skin and a cool undertone, standing in the operator's cabin of a cyberpunk tram, watching the Great Lakes Metropolitan Zone slide past through reinforced glass. His face is calm and observant, with a wide jaw and large dark eyes reading subtle passenger behavior through window reflections. His dark brown hair is cut very short on the sides with a small puff on top. A pale aquamarine bioluminescent stripe glows subtly along his left temple and down his jawline, faintly visible in the cabin's fluorescent light. He wears a gray Ferrogate Transit operator uniform with reflective trim. The background shows Tier 3-4 urban sprawl and tram tracks disappearing into industrial geartown architecture. Mood is contemplative, solitary, almost meditative — a man at ease with long hours of watchful solitude. Lighting is cool and sterile, typical of sealed transit cabins. Cinematic cyberpunk realism, character study --ar 2:3 --v 6"
 }

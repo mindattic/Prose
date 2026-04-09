@@ -261,5 +261,26 @@
     "Handed",
     "Tibor Osei-Svanstrom"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Polish / Japanese",
+    "height_cm": 156,
+    "weight_kg": 52,
+    "build": "Compact and economical, with the lean musculature of someone who has spent decades handling fabric and machinery. No wasted dimension.",
+    "hair_color": "Electric white — deliberately dyed and maintained since age 50",
+    "hair_style": "Pinned close to the head in a tight, practical arrangement that never interferes with work",
+    "hair_length": "Short",
+    "eye_color": "Pale gray with faint UV-filter lens overlay visible in bright light",
+    "skin_tone": "Warm beige with a faint olive undertone — the particular pallor of someone who works indoors under fluorescent lighting, with the texture of aged linen from decades of steam exposure",
+    "complexion": "Fine lines concentrated around the eyes and mouth from squinting at fabric detail and precise concentration. Skin has a slightly weathered quality but is meticulously maintained. No makeup. Expression defaults to neutral assessment.",
+    "distinguishing_marks": [
+      "Fine burn scar on the inside of her right forearm from a steam press contact at age 34 — thin and pale, barely visible",
+      "Permanent indentation marks on her fingertips from needle work and fabric handling",
+      "A small, neat tattoo on her left wrist: the outline of a loom shuttle in dark blue ink, applied at age 25"
+    ],
+    "visible_augmentations": "UV-filter contact lenses visible as a faint prismatic shimmer in her gray eyes under direct light. A small hearing amplifier worn as a functional earring on her left ear — brushed steel, deliberately chosen to match her aesthetic. The characteristic fine tremor in her hands when at rest, most noticeable when holding small objects — a side effect of the outdated peripheral nerve stabilizer she refuses to upgrade.",
+    "posture_movement": "Upright and economical. She moves with the precision of someone who has calculated every gesture's necessity. No wasted motion. When working with fabric, her movements become meditative and almost hypnotic — the tremor disappears into the organic rhythm of her hands. She sits on her work stool with the settled authority of someone occupying exactly the space she has decided to occupy.",
+    "clothing_style": "Tier 4 functional — clean, worn, deliberately maintained. Typically wears a long-sleeved work apron in muted gray or taupe linen over simple black or dark-blue clothing. The apron has multiple pockets arranged for efficiency and is tailored to her exact measurements. Her shoes are orthopedic and waterproofed — practical, expensive, replaced every two years. A thin silver chain around her neck, always, with a small fabric-weight calibration token. No jewelry beyond the hearing amplifier earring and her work ring — a simple steel band worn on her left middle finger."
+  },
+  "image_prompt": "Portrait of an older East Asian-Polish woman, age 61, with electric white hair pinned close to her head, pale gray eyes with subtle UV-filter lens shimmer, warm beige skin with fine lines and the texture of aged linen. Compact frame, upright posture. Wearing a long-sleeved gray linen work apron over dark clothing. Fine tremor visible in her weathered hands. Small hearing amplifier earring. Standing in a humid laundromat interior with fluorescent overhead lights reflecting off chrome washing machine surfaces, steam rising from industrial dryers in soft focus background. Narrow shopfront window with elevated transit line visible through frosted glass. Contemplative, precise expression. Color palette: steel gray, white, muted taupe, industrial chrome. Soft warm fluorescent lighting with steam haze. Cyberpunk realism, intimate documentary style. --ar 2:3 --v 6"
 }

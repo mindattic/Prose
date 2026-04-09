@@ -275,5 +275,27 @@
     "Arcturus CK-5 'Bloodhound'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "South African / Eastern European (Zulu and Russian lineages)",
+    "height_cm": 163,
+    "weight_kg": 58,
+    "build": "Compact and wiry with lean musculature built from precision hand work and constant motion; shoulders slightly squared from years of bench work, no excess body fat",
+    "hair_color": "Natural black with weekly-rotating fiber-optic strand insertions (currently cyan and magenta)",
+    "hair_style": "Voluminous natural texture, worn in a full crown with the fiber-optic strands woven throughout in deliberate patterns",
+    "hair_length": "Medium (shoulder-length when stretched)",
+    "eye_color": "Dark brown with a faint retrofitted lens implant visible as a thin metallic ring at the iris edge",
+    "skin_tone": "Deep, rich brown with natural luminous sheen",
+    "complexion": "Clear skin with minimal scarring; young face kept perpetually alert by constant focus; the dermal chrome inlays across cheekbones and nose bridge catch light with an iridescent beetle-shell quality",
+    "distinguishing_marks": [
+      "Geometric strips of dermal chrome inlay running along both cheekbones from temple to cheekbone prominence, creating a mask-like pattern",
+      "Dermal chrome continuation across the bridge of the nose in thin parallel lines",
+      "Faint burn scars on the knuckles of both hands from early augmentation experiments",
+      "Linear scarring across the back of the left hand where two prosthetic fingers attach"
+    ],
+    "visible_augmentations": "Left hand: index and middle fingers are full prosthetic replacements (matte black synthetic polymer with exposed articulation joints and micro-servo detail). Both forearms: dense experimental augmentation work visible — micro-precision tool ports on right wrist (two small circular apertures), subdermal implant sites marked by faint raised lines, and what appears to be a custom cooling system running down the right forearm. Retrofitted lens implant visible as metallic ring in right eye. Dermal chrome facial inlays catching light like an insect's exoskeleton.",
+    "posture_movement": "Kinetic even at rest — weight constantly shifting between feet, fingers flexing or working at imaginary tasks. Eyes move rapidly, cataloguing and assessing the environment. Hands move with precision and economy of motion, trained by thousands of hours of micro-level work. Stands with shoulders slightly forward, ready-posed toward work surfaces.",
+    "clothing_style": "Tier 4 practical wear — custom-fitted gray canvas work vest with dozens of pockets and tool loops (no corporate branding), fitted black underlayer shirt with rolled sleeves to display arm augmentation work, black utility pants with reinforced thigh pockets. Boots are worn Hakobo work boots, scuffed and patched with self-applied nano-seal. A single silver bracelet on right wrist (handmade, probably from salvaged circuit components). No jewelry beyond that — everything functional or self-made. Clothing shows honest wear but is meticulously maintained. A pair of magnification goggles hangs around their neck on a paracord strap, perpetually ready."
+  },
+  "image_prompt": "Cyberpunk character portrait of a nonbinary South African-Eastern European augmentation technician, age 27, compact and wiry build with deep rich brown skin and natural luminous sheen. Their voluminous natural black hair is threaded with weekly-rotating fiber-optic strands in cyan and magenta, creating a dynamic crown. Geometric strips of dermal chrome inlay across both cheekbones and nose bridge catch light like a beetle's carapace. Left hand features two full prosthetic fingers in matte black synthetic polymer with exposed servo joints. Right forearm displays dense visible augmentation work including micro-precision tool ports and custom cooling system. A retrofitted lens implant creates a metallic ring at the iris edge. Wearing gray canvas work vest with countless tool loops, black fitted underlayer, utility pants, worn Hakobo boots. Standing in a Geartown tech workshop behind Mash & Circuit, surrounded by salvaged parts, work benches, and soft neon accent lighting reflecting off chrome and polymer surfaces. Posture is kinetic and alert, fingers in subtle motion. Lighting: cool neon accents with warm workshop overhead lights casting shadows across their face, emphasizing the chrome inlays. Mood: focused, capable, slightly defiant. --ar 2:3 --v 6"
 }

@@ -193,5 +193,26 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Hungarian",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, thick through the torso and upper body from decades of physical labor. Muscle beneath a layer of earned weight — powerful forearms and hands, slightly stooped posture from years bent over work surfaces.",
+    "hair_color": "Natural silver-white",
+    "hair_style": "Worn in a full, voluminous cloud, pinned and secured under rotating headscarves (cotton, hand-dyed or batik patterns). Today turquoise; rotation includes burgundy, indigo, rust.",
+    "hair_length": "Medium (shoulder-length when unpinned, entirely covered during work)",
+    "eye_color": "Iridescent amber and green patterned irises (geneware modification, 15 years old). Whites of eyes clear, warm brown undertone visible at iris edges.",
+    "skin_tone": "Deep umber with warm undertones, even complexion across face and neck",
+    "complexion": "Weathered but dignified. Fine creases map her forehead, eyes, and around her mouth — the geography of five decades of precise work and quiet observation. Skin shows the cumulative mark of steam and chemical exposure: permanently reddened forearms (elbow to wrist) with visible discoloration but no scarring. Small age spots on her hands and temples. Lips naturally dark, no makeup. Expression neutral at rest — neither stern nor welcoming, simply present.",
+    "distinguishing_marks": [
+      "Chemical burn discoloration on both forearms from elbow to wrist — a uniform reddish-brown patina from decades of laundry work, no raised scarring",
+      "Small, faint burn scar on the back of her right hand near the knuckle, barely visible unless you know to look",
+      "Tiny, dark age spots scattered across her temples and the backs of her hands"
+    ],
+    "visible_augmentations": "Iridescent patterned irises in amber and green — visible only when she makes direct eye contact or turns her head into light. No visible chrome or subdermal augmentations. The geneware modification is understated and personal rather than performative.",
+    "posture_movement": "Carries herself with the quiet authority of someone who has survived three rezoning attempts and two floods. Moves economically — no wasted motion. When working, her hands move with absolute precision and muscle memory. At rest, she is still, observant. Her gaze settles on people and objects with the patience of someone who listens more than she speaks. Walks with a slight forward tilt in her shoulders, the residual curve of a life spent leaning toward work.",
+    "clothing_style": "Practical and modest — favors long-sleeved cotton shifts or chemises in neutral colors (cream, pale gray, taupe) to protect her arms during work. Wears a heavy canvas apron with deep pockets over her shift, usually stained faintly with water marks and lint. During the day, her feet are in soft slip-on work clogs. In the evening, she switches to comfortable flat sandals. Her headscarves are her only indulgence and color — expensive cotton or silk-cotton blends in patterns she chooses with care. No jewelry except a thin, worn gold band on her left ring finger (her late husband's). Tier 4 working-class aesthetic: everything serviceable, nothing wasted, nothing that announces itself."
+  },
+  "image_prompt": "Portrait of a 58-year-old West African-Hungarian woman with deep umber skin, silver-white hair pinned beneath a turquoise headscarf, iridescent amber-green patterned irises catching warm light. Broad-shouldered, solid build, weathered forearms reddened from decades of laundry work. Wearing a cream cotton shift and heavy canvas apron. Expression calm, observant, patient. Standing in a ground-floor laundromat interior with industrial washers and steam presses visible behind her, warm fluorescent-incandescent hybrid lighting, soft atmospheric haze. Cyberpunk realism, working-class dignity, character portrait, 2226 GLMZ aesthetic, shallow depth of field, warm color grading, --ar 2:3 --v 6"
 }

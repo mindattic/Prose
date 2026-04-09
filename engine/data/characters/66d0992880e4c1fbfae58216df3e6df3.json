@@ -67,5 +67,24 @@
     "The Iron Lotus",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "German-Scandinavian / Burkinabe",
+    "height_cm": 182,
+    "weight_kg": 78,
+    "build": "Athletic, deliberately maintained — broad shoulders tapering to a lean core. The physique of someone who treats fitness as professional grooming, not passion. No excess, no display.",
+    "hair_color": "Dark brown, naturally, with premature silver at the temples that he does not dye",
+    "hair_style": "Precisely cut, swept back from the forehead with geometric precision. Always freshly maintained — barber visits every 10 days.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm and attentive",
+    "skin_tone": "Medium-warm, even across face and neck — light tan undertone suggesting mixed northern and sub-Saharan heritage",
+    "complexion": "Smooth, well-moisturized skin with almost no visible scarring or blemishes. Jaw angular but not harsh. Eyebrows groomed but not obviously so. A face designed to be remembered as 'trustworthy' rather than distinctive.",
+    "distinguishing_marks": [
+      "A thin, pale scar running 3cm along his left collarbone, just visible above shirt collars — from a knife wound sustained at age 19 during a botched theft"
+    ],
+    "visible_augmentations": "None visible. All augmentation is subcutaneous or internal.",
+    "posture_movement": "Upright and controlled. Cassiel moves with deliberate economy — no wasted gesture, no fidgeting. He maintains eye contact precisely long enough to seem engaged but not threatening. His voice modulation is calibrated; he laughs at appropriate moments. Everything about his physical presence is a performance of competence and reliability.",
+    "clothing_style": "Tier 2-3 corporate-casual. Tailored charcoal or navy blazers over subtle pattern shirts (fine herringbone, muted plaids). Trousers pressed with sharp creases. No logos; brands are quiet (Italian leather shoes, Swiss watch, minimalist jewelry — one simple platinum band on his left ring finger). His office chair is ergonomic and expensive but understated. The overall effect: a man successful enough not to need to advertise success."
+  },
+  "image_prompt": "Portrait of a sharp-featured investigator in his late 40s, mixed Scandinavian-West African heritage, dark eyes radiating measured warmth and predatory intelligence, silver-threaded dark hair swept back, wearing tailored charcoal blazer and subtle herringbone shirt, seated at a minimalist desk in a high-tier Milwaukee office with floor-to-ceiling windows showing Glassway district neon at dusk, cool blue-grey lighting with warm accent from desk lamp, professional corporate cyberpunk aesthetic, cinematic realism, sharp focus on face and subtle expression of controlled confidence masking lethal cunning, high-end interior design reflected in background, photographic quality, --ar 2:3 --v 6"
 }

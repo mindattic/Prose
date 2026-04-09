@@ -182,5 +182,26 @@
     "Slagworks Industrial",
     "Zheng-Dao Heavy Industries Rail Pistol RP-2 'Verdict'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Malian-German / Guatemalan-Somali",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Lean and angular with defined musculature in shoulders and forearms from repetitive cutting motions; long-limbed and graceful, built for precision work",
+    "hair_color": "Dark brown with subtle warm undertones",
+    "hair_style": "Structural crown of locs redesigned every three months, styled as portfolio piece; locs are thick and intentional, arranged in geometric patterns that frame the face",
+    "hair_length": "Medium to long (locs reach mid-back when loose)",
+    "eye_color": "Deep brown, amber-flecked",
+    "skin_tone": "Warm honey-brown with golden undertones reflecting mixed West African and Central American heritage",
+    "complexion": "Clear, luminous skin with high cheekbones and defined jawline; kept impeccably groomed; a faint scar runs along the left temple from childhood (barely visible but catches light)",
+    "distinguishing_marks": [
+      "Bioluminescent tattoo cascade down both arms from shoulder to wrist in interlocking geometric and organic patterns, primarily blues and greens that pulse faintly under shop lighting",
+      "Thin white scar along left temple, approximately 3cm, subtle but visible in profile",
+      "Pale crescent-shaped birthmark on right collarbone, about 1.5cm across"
+    ],
+    "visible_augmentations": "Geneware cat ears (small, grey-tipped, positioned naturally on scalp) that move independently and constantly, betraying emotional states her face masks; retractable nail extensions (kept filed to working length during shifts, iridescent black coating); bioluminescent arm tattoos that glow faintly in low light",
+    "posture_movement": "Moves with economical precision; stands with weight balanced toward balls of feet as if ready to pivot; hands are always in motion when thinking, fingers articulate and expressive; maintains controlled facial composure while her ears twitch and rotate in real time; walks with deliberate pace, never rushing",
+    "clothing_style": "Tier 3-4 working professional with curated personal aesthetic: fitted black or deep grey salon wear (Corte Libre branded vest or apron during work); off-duty favors tailored, minimal palette (dark jeans, structured jackets in leather or synthetic); multiple piercings in ears and nose; worn silver rings on most fingers; practical footwear (ankle boots or professional slip-ons with grip); small silver pendant of Malian geometric design around neck; no visible corpo branding despite working in Libre zone"
+  },
+  "image_prompt": "Portrait of a 24-year-old Black woman with Malian-German and Guatemalan-Somali heritage, height 178cm, lean angular build, honey-brown skin tone, high cheekbones, wearing structured dark salon wear. Dark locs styled in geometric crown crown, pulled back to reveal face. Small grey-tipped geneware cat ears on head, ears moving independently. Both arms covered in bioluminescent blue-green geometric tattoo cascades from shoulder to wrist, glowing softly under warm salon lighting. Deep brown eyes with amber flecks, composed expression. Standing in cyberpunk salon interior with soft LED work lights, reflective mirrors in background, precise and controlled posture. Moody warm lighting, high detail on tattoo work and ear anatomy, professional salon setting, cyberpunk noir aesthetic, hyperrealistic, shallow depth of field --ar 2:3 --v 6"
 }

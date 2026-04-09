@@ -175,5 +175,26 @@
     "Ferrogate Transit",
     "The Wire Taps"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Dutch-German",
+    "height_cm": 165,
+    "weight_kg": 68,
+    "build": "Stocky and square-shouldered, compact with early adolescent muscle density concentrated in shoulders and forearms from repetitive mechanical work. Broader across the chest than typical for his age.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Closely cropped, practical cut maintained for safety around machinery",
+    "hair_length": "Short",
+    "eye_color": "Brown, unaugmented",
+    "skin_tone": "Warm medium brown with undertones suggesting mixed West African and Northern European ancestry",
+    "complexion": "Youthful face with a wide mouth that rests in a slight frown of concentration. Perpetually grimy — machine oil and grease work into the creases of his knuckles, around his fingernails, and sometimes marks his cheekbones and jaw from unconscious touching. Skin shows the wear of someone who spends six hours daily in industrial environment; minor calluses forming on his palms and the pads of his fingers.",
+    "distinguishing_marks": [
+      "Thin white scar across the back of his left hand, approximately 3cm, from a coupling clamp incident during his first month of apprenticeship",
+      "Permanent dark staining in the cuticles and nail beds of both hands from machinery lubricant that never fully washes away",
+      "Small burn mark on his right forearm (approximately 1cm diameter) from a steam coupling, pale and well-healed"
+    ],
+    "visible_augmentations": "None visible. No chrome, no subdermal implants, no ocular modification. Entirely baseline human.",
+    "posture_movement": "Economical and purposeful. Stands with weight balanced, shoulders slightly forward in a habitual lean that suggests someone accustomed to bending over machinery. Moves with quiet confidence in physical spaces, minimal wasted motion. Hands are rarely still — fidgets with tools or small objects when thinking. Walking pace is steady and measured, never rushed.",
+    "clothing_style": "Adult-sized Ferrogate Transit apprentice coverall, cut down and re-hemmed by his grandmother with surgical precision. The garment is faded gray-blue with darker grease stains along the front and sleeves that resist washing. Ferrogate insignia (rail transit emblem) stitched on both shoulders. Practical steel-toed work boots, scuffed and well-broken-in. Under the coverall, plain crew-neck shirt in dark gray or black. No visible jewelry, no personal customization of his uniform. Everything suggests Tier 3-4 working class utility with the precision care of someone raised by a grandmother who maintains standards despite limited resources."
+  },
+  "image_prompt": "Portrait of a 14-year-old boy with dark brown skin and West African-Dutch heritage, short practical haircut, stocky athletic build, warm brown eyes with a slight frown of concentration. His hands and knuckles are permanently stained with machine grease and oil, small scars visible on his left hand and right forearm. He wears an oversized-then-tailored Ferrogate Transit apprentice coverall in faded gray-blue, stained with grease marks, steel-toed work boots. Standing in an industrial railroad maintenance depot with concrete floors and overhead fluorescent lights casting cool white shadows. Serious, focused expression. Cyberpunk futurism, working-class grit, realistic textures and lighting, teenage apprentice mechanic. Shot in 2226 GLMZ. Photorealistic, warm practical tungsten-tinted workshop lighting. --ar 2:3 --v 6"
 }

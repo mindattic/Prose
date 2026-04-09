@@ -176,5 +176,26 @@
     "Titanium",
     "Tin Man"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Scandinavian (Senegalese / Swedish)",
+    "height_cm": 178,
+    "weight_kg": 58,
+    "build": "Tall and lean with an unselfconscious lankiness — long limbs that seem to move through space with minimal efficiency but maximum expressiveness. Wiry muscle from handling salvage and her instrument, no body fat to speak of.",
+    "hair_color": "Natural black with subtle rust undertones in direct light",
+    "hair_style": "Unshaped natural hair, worn in a large, loose cloud that she occasionally binds with scrap wire or fabric scraps when it interferes with playing",
+    "hair_length": "Long (shoulder-length and outward)",
+    "eye_color": "Deep brown, almost black, with visible intensity — the kind of gaze that holds attention without trying",
+    "skin_tone": "Deep brown with warm undertones, even complexion",
+    "complexion": "Clear skin with the texture of someone who doesn't obsess over maintenance; a few minor burn scars on her knuckles from welding. Her face is broad-boned, expressive, with full lips and a slight asymmetry to her smile. No cosmetic grooming beyond basic hygiene.",
+    "distinguishing_marks": [
+      "Linear scar along the outer edge of her right palm, 8cm long, from a welding accident two years ago",
+      "Calluses on her fingertips and palms from handling raw metal and piezoelectric elements",
+      "Small circular burn mark on her left wrist, size of a thumbnail, from touching a hot solder joint"
+    ],
+    "visible_augmentations": "None visible. No chrome, no LEDs, no subdermal implants. Her body is entirely unmodified — unusual enough in the GLMZ to be notable.",
+    "posture_movement": "Moves with an unselfconscious fluidity that suggests she's not constantly aware of her own body in space. When sitting, she tends to fold herself into asymmetrical positions. When standing, there's a slight sway as though she's always listening to something others can't hear. Her hands move constantly — even when still, her fingers tap rhythms against her legs or whatever surface is nearby.",
+    "clothing_style": "Tier 3-4 working-class aesthetic with salvage elements. Typically wears oversized, thrifted band shirts or plain cotton tees under a patched denim jacket held together with wire and safety pins. Her pants are usually dark, practical, with reinforced pockets for tools and sensor components. She wears mismatched socks by habit and boots salvaged from a Tier 4 surplus market — scuffed and taped at the seams but functional. No jewelry except a length of copper wire wrapped around her left wrist as both fidget tool and talisman. Her clothes smell faintly of solder flux and dust from the interchange markets."
+  },
+  "image_prompt": "cyberpunk street musician, tall lean 17-year-old Black-Swedish girl, unshaped natural hair in loose cloud, deep brown skin, intense gaze, wearing oversized thrifted band tee under patched denim jacket held with wire, dark practical pants, salvaged boots, holding handmade piezoelectric body harp made from scrap titanium and salvage parts, standing in Highland Park Autonomous Zone interchange market at dusk, neon marketplace lights and industrial decay behind her, moody amber and blue lighting, atmospheric, vulnerable and magnetic presence, photograph-realistic, cinematic composition, no augmentations visible, raw authentic street aesthetic --ar 2:3 --v 6"
 }

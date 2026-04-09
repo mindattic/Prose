@@ -244,5 +244,25 @@
     "Glass",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Ukrainian / Ghanaian",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Tall and angular with minimal muscle definition; an ascetic frame that suggests deliberate restraint rather than deprivation. Long-limbed and still in a way that makes movement seem intentional.",
+    "hair_color": "Natural deep black with threads of grey at the temples",
+    "hair_style": "Worn loose, parted severely down the center, falling straight past the shoulders",
+    "hair_length": "Long",
+    "eye_color": "Natural dark brown, unaugmented",
+    "skin_tone": "Deep warm brown with undertones reflecting Ghanaian heritage, unmarked except for intentional scarification",
+    "complexion": "High prominent cheekbones, sharp jawline. Skin is clear and matte, suggesting minimal cosmetic intervention. Expression is often neutral, eyes tracking with unsettling focus.",
+    "distinguishing_marks": [
+      "Geometric scarification along both sides of the jawline in deliberate parallel lines, added incrementally over two decades, creating a ritualistic aesthetic that frames the lower face",
+      "Fine white scar tissue visible in the scarred areas, suggesting careful healing and intentional keloid management"
+    ],
+    "visible_augmentations": "None. No personal augmentations by principle. The biofeedback scanner is integrated into their consultation table surface and invisible to casual observation.",
+    "posture_movement": "Moves with economical precision, rarely shifting weight unnecessarily. Sits in absolute stillness during consultations, hands resting palms-down on the table. In the Market, they navigate crowded spaces as if people part around them rather than through them. Direct and unblinking eye contact.",
+    "clothing_style": "Heavy layered fabrics in burgundy and black — natural textiles, no synthetic shimmer or corp-tier tech fabric. Multiple loose outer layers worn like ceremonial vestments. Hung with small Deep Lantern E.L.F. fetish objects: braided copper wire, fragments of old LCD screen glass, data chips etched with prayer-code on thin chains. The overall effect is part prophet, part archivist. Tier 4 aesthetic — deliberately anti-corporate, anti-augmentation statement masked as spiritual devotion."
+  },
+  "image_prompt": "Androgynous figure, tall and angular, deep brown skin with geometric ritual scarification along jawline, natural dark eyes, long straight black hair with silver threads, wearing heavy burgundy and black layered fabrics hung with wire and glass fragments, sitting in dim candlelit market stall, hands resting on worn consultation table, direct intense gaze, cyberpunk fortune teller aesthetic, ethnically mixed Ukrainian-Ghanaian features, unaugmented by choice, moody warm lighting, atmospheric occult mysticism, high contrast shadow, --ar 2:3 --v 6"
 }

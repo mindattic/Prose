@@ -125,6 +125,47 @@ window.meridianMap = {
         this.placeMarkers.forEach(function (m) { m.setMap(map); });
     },
 
+    overlayPolygons: [],
+
+    loadOverlayPolygons: function (polygons) {
+        var map = this.map;
+        var self = this;
+        if (!map) return;
+
+        // Clear existing overlay polygons
+        self.overlayPolygons.forEach(function (p) { p.setMap(null); });
+        self.overlayPolygons = [];
+
+        polygons.forEach(function (p) {
+            var paths = p.coords.map(function (c) { return { lat: c.lat, lng: c.lng }; });
+            var poly = new google.maps.Polygon({
+                paths: paths,
+                strokeColor: p.strokeColor || '#dc3545',
+                strokeOpacity: p.strokeOpacity || 0.8,
+                strokeWeight: p.strokeWeight || 2,
+                fillColor: p.fillColor || '#dc3545',
+                fillOpacity: p.fillOpacity || 0.25,
+                map: map
+            });
+
+            if (p.name) {
+                var infoWindow = new google.maps.InfoWindow();
+                poly.addListener('click', function (e) {
+                    infoWindow.setContent(
+                        '<div style="color:#0d1117;font-family:Outfit,sans-serif;padding:4px;max-width:300px;">' +
+                        '<strong style="color:#dc3545;">' + p.name + '</strong>' +
+                        (p.desc ? '<br><span style="font-size:12px;color:#555;">' + p.desc + '</span>' : '') +
+                        '</div>'
+                    );
+                    infoWindow.setPosition(e.latLng);
+                    infoWindow.open(map);
+                });
+            }
+
+            self.overlayPolygons.push(poly);
+        });
+    },
+
     _categoryVisible: {},
 
     toggleCategory: function (category) {

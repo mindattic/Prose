@@ -64,7 +64,7 @@
   "narrative_function": "Storyteller and local color, keeper of oral history, emotional core of the Avalon Quiet community; can provide backstory on long-term residents and neighborhood history through the frame of her stories",
   "augmentations": "Geneware fingernails (shifting blue-green, cosmetic); no other modifications",
   "daily_life": "Mornings for walking and observation — she collects raw material constantly; afternoons for writing and correspondence; evenings for people, always for people.",
-  "affiliation": "Avalon Quiet Community Hearth; Meridian 88 Educators Retiree Association (MERA); independent",
+  "affiliation": "Avalon Quiet Community Hearth; GLMZ Educators Retiree Association (MERA); independent",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -186,7 +186,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born in Meridian 88, Grainfort district",
+      "event": "Born in GLMZ, Grainfort district",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -247,5 +247,25 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "SynapTech ReadRoom Social Cue Enhancer"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Guinean) / Turkish",
+    "height_cm": 163,
+    "weight_kg": 68,
+    "build": "Compact and proportional, neither frail nor heavy — the build of someone who walks daily and carries her years without apology. Shoulders still squared from decades of classroom presence.",
+    "hair_color": "Silver-gray, naturally grayed over decades",
+    "hair_style": "Elaborate braided wraps in intricate patterns, each braid reinforced and arranged with deliberate artistry, some adorned with small brass or ceramic beads passed down from her grandmother's collection",
+    "hair_length": "Medium (wrapped close to scalp in braids extending to mid-shoulder when unwrapped)",
+    "eye_color": "Brown, warm and expressive, with the slight creasing at the corners that comes from seventy-two years of animated expression",
+    "skin_tone": "Medium brown with warm, golden undertones characteristic of West African heritage",
+    "complexion": "Smooth with dignified age lines — particularly pronounced around her eyes and mouth from decades of teaching and smiling. Skin well-maintained, no visible scarring or blemishing. Expression naturally animated even in repose.",
+    "distinguishing_marks": [
+      "Faint surgical scar along left wrist (appendectomy, 2178) — barely visible unless examined closely",
+      "Small burn scar on right forearm (cooking accident, 2195) — pale and largely faded"
+    ],
+    "visible_augmentations": "Geneware fingernails that shift between iridescent blue and green depending on light angle and her body chemistry — they catch attention in conversation and storytelling gestures. No other visible modifications; any neural or sensory augmentations are entirely subcutaneous.",
+    "posture_movement": "Upright and grounded, with the natural authority of someone accustomed to commanding a room. She moves deliberately rather than quickly, each gesture economical and purposeful. When speaking, her hands are never still — they illustrate, emphasize, and invite listeners into the narrative. Sits with perfect spinal alignment.",
+    "clothing_style": "Tier 3-4 working class, but with evident personal style and dignity. Favors well-fitted linen and cotton blends in earth tones (ochre, rust, deep greens) — practical for warm GLMZ summers but elevated by careful tailoring and layering. Often wears a patterned wrap or kente-inspired shawl over her shoulders. Simple jewelry: a plain gold wedding band (worn since 2174), small ceramic earrings she makes herself, occasionally a brooch of brass or natural stone. Comfortable, supportive shoes suitable for daily walking. Nothing nouveau-riche or ostentatiously modified; everything speaks to intentionality and long wear."
+  },
+  "image_prompt": "Portrait of a 72-year-old West African-Turkish woman with silver-gray hair in elaborate braided wraps adorned with brass beads, warm brown skin with golden undertones, expressive dark eyes, dignified age lines around her eyes and mouth. She is wearing an earth-tone linen wrap dress with a patterned indigo and gold shawl draped over her shoulders. Her hands are visible with iridescent blue-green geneware fingernails that shift in light. She sits upright in a storytelling pose, hands slightly raised in mid-gesture, warm and animated expression. Soft warm lighting like late afternoon in a community space, intimate and inviting. Cyberpunk realism aesthetic, near-future Earth, dignity and humanity foregrounded. Professional portrait style, shallow depth of field. --ar 2:3 --v 6"
 }

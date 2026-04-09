@@ -187,5 +187,25 @@
     "Zheng-Dao Heavy Industries Space Elevator Tether System",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polish-Malagasy",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and substantial through the torso, carrying comfortable middle-age weight with no apparent self-consciousness. Soft rather than muscular, the body of someone who moves deliberately rather than quickly.",
+    "hair_color": "Dark brown with natural white stripe",
+    "hair_style": "Cut close to the scalp with a distinctive natural white streak running from left temple to the back of the skull, maintained but unadorned",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Deeply lined face, particularly around the eyes and mouth from decades of late nights and genuine expression. Small silvery electrical burn scars scattered across the face and neck—visible remnants of an accident he views as formative rather than traumatic. Weathered but animated features.",
+    "distinguishing_marks": [
+      "Network of small silvery scars across left side of face and neck from an electrical accident in his twenties",
+      "Fine creases radiating from the corners of his eyes and around his mouth from sustained expression and years of night work"
+    ],
+    "visible_augmentations": "Custom cochlear amplifiers integrated into both ears, threaded with copper wire that catches light when he moves his head. The devices are visibly non-standard medical hardware, clearly modified for expanded frequency response. Subdermal temp-mesh is not visible but creates subtle thermal gradients under his skin in direct light.",
+    "posture_movement": "Moves with unhurried certainty and substantial presence. No wasted motion. Frequently tilts his head slightly—a habitual gesture that catches light on his amplifier wiring. Comfortable in silence and stillness. When he does move, there is ground-level control and deliberation.",
+    "clothing_style": "Exclusively functional, Tier 4 working aesthetic. Worn work boots (scuffed, re-soled multiple times), cargo trousers in neutral tones with deep pockets for recording equipment, a rotating selection of lightweight linen shirts in off-white, gray, or pale blue—the uniform of someone indifferent to fashion but attentive to comfort and durability. No logos, no status markers. Everything is visibly broken in and maintained rather than replaced."
+  },
+  "image_prompt": "A tall, middle-aged Black man with deep brown skin and close-cropped dark hair featuring a striking natural white stripe from left temple backward, standing in a dimly lit underground music venue. His face is lined and weathered with small silvery electrical scars across one side, dark intense eyes. Wearing worn cargo trousers and a faded linen shirt. Both ears are fitted with visibly modified custom cochlear amplifiers threaded with copper wire that catches amber stage lighting. Broad-shouldered and substantial build, comfortable middle-age softness. Standing motionless before a complex mixing console, surrounded by recording equipment and field-recording devices. Cyberpunk aesthetic, industrial underground venue, moody amber and deep blue lighting, volumetric haze in air, 2226 technology, cinematic depth, documentary realism, --ar 2:3 --v 6"
 }

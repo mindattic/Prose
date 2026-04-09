@@ -43,7 +43,7 @@
       "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
       "Assumes everyone has an angle because they always have an angle"
     ],
-    "secret": "Kamala Fedorov-Ampofo sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Kamala Fedorov-Ampofo sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
@@ -155,7 +155,7 @@
       "loyalty_break": 5
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "multilingual — speaks 4+ languages fluently"
     ],
     "weaknesses": [
@@ -279,5 +279,26 @@
     "Geartown",
     "SynapTech ReadRoom Social Cue Enhancer"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Russian / West African",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "build": "Lean and angular with defined musculature — the physique of someone who trains obsessively. Minimal body fat, long limbs built for stillness and precision rather than raw power.",
+    "hair_color": "Black with natural dark-brown undertone",
+    "hair_style": "Cropped close to scalp on sides, slightly longer on top — practical, minimal maintenance, exposes augmentation scarring deliberately",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Warm olive complexion — light-medium depth with cooling undertones from Russian heritage mixed with warmer golden notes from West African lineage",
+    "complexion": "Sharp cheekbones, angular jaw, thin-lipped. Skin taut over bone structure. Minimal grooming beyond function — no cosmetics, no softening aesthetics. The face of someone who has optimized for efficiency.",
+    "distinguishing_marks": [
+      "Jagged silvered scar tissue spanning temples to jawline on both sides of skull — residual scarring from cortical bomb installation and subsequent removal by street doc, uneven and rough",
+      "Fine white line running down center of sternum — surgical access point for synthetic blood integration",
+      "Faded burn scar on inner left forearm — old, pre-augmentation, origin unknown"
+    ],
+    "visible_augmentations": "Surgical-grade chrome visible at temples and along jawline where scarring pulls skin tight — no cosmetic casing, raw interface points visible. The augmentation itself is internal, but the trauma of installation and removal is permanently written on their face.",
+    "posture_movement": "Stands with minimal wasted movement — shoulders slightly forward, weight balanced. Moves with deliberate precision, economical gestures. When still, they achieve an unsettling stillness — the kind trained shooters develop. Eyes constantly tracking distance and angles.",
+    "clothing_style": "Tier 3-4 practical wear — fitted tactical pants with reinforced thigh panels and cargo pockets, layered synthetic long-sleeve tops in muted grays and blacks, a weathered synthetic leather overjacket without branding. No corpo logos. Boots are serious — heavy-duty treads, reinforced ankle support. Everything is maintenance-ready and durable over fashionable. Worn but meticulously clean."
+  },
+  "image_prompt": "Cyberpunk character portrait of Kamala Fedorov-Ampofo, 28-year-old nonbinary sniper, lean angular build with sharp cheekbones, dark brown eyes, black cropped hair exposing jagged chrome scarring along temples and jawline from cortical implant removal, warm olive skin tone, Russian-West African heritage. Wearing fitted tactical gray synthetics and weathered leather jacket, minimal augmentation visible but intense presence. Standing in precise posture against The Canopy elevated walkway at dusk, neon glow from Geartown below, moody blue and amber lighting, sharp focus, high contrast, hyper-detailed skin texture showing surgical scarring, cyberpunk noir aesthetic, cinematic depth, professional character sheet quality, --ar 2:3 --v 6"
 }

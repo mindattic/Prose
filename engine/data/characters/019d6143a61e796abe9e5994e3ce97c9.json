@@ -176,5 +176,27 @@
     "Irontide Tidal Energy",
     "Irkalla"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / Mozambican",
+    "height_cm": 168,
+    "weight_kg": 89,
+    "build": "Heavyset and sturdy, with the solid frame of someone built for endurance rather than speed. Broad shoulders and a thick torso speak to decades of physical labor; her weight is distributed evenly, giving her a grounded, immovable quality.",
+    "hair_color": "White",
+    "hair_style": "Loose and unstyled, perpetually damp",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, nearly black",
+    "skin_tone": "Very dark with a blue-black undertone",
+    "complexion": "Weather-worn and lined, with the deep creases of someone who has spent sixty-three years in harsh environments. Her face is unmarked by vanity — no cosmetics, minimal grooming beyond practical necessity. The skin around her eyes and mouth shows the wear of chronic fatigue and long meditative states.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware nodes embedded in two vertical lines along her collarbone — faintly visible even when dormant, pulsing in slow, involuntary rhythms of soft blue-white light.",
+      "Matching bioluminescent nodes running along both forearms in parallel tracks, creating a subtle network pattern when active.",
+      "Right hand missing the last two fingers (ring and pinky) — the stumps are old, well-healed, and she treats the absence as unremarkable.",
+      "Faint electrical burn scars across her left shoulder and upper back, barely visible against her dark skin but textured to the touch — old maintenance injuries."
+    ],
+    "visible_augmentations": "Bioluminescent geneware along collarbone and forearms (active, pulsing in variable patterns). The right palm shows subtle subdermal tool-grip scarring — thin metallic lines beneath the skin forming a geometric grip pattern, only visible when her hand is fully relaxed or lit from certain angles. No chrome, no obvious prosthetics.",
+    "posture_movement": "She moves with deliberate, economical precision — each step measured and purposeful, as if she is always listening to something through the ground. Her shoulders are slightly rounded from decades of hunched maintenance work. When she enters a communication state with the Hum, her entire body stills; her breathing becomes shallow and rhythmic. She tends to stand motionless for long periods, hands at her sides, the bioluminescent nodes pulsing in sync with her mental state.",
+    "clothing_style": "Practical Tier 4-5 wear: heavy canvas work pants in faded grey, reinforced at knees and thighs with darker patches. A layered top — a water-stained thermal undershirt visible beneath an oversized grey-brown maintenance jacket from her Ferrogate days (logo barely legible, fabric reinforced with waterproofing tape). No jewelry except a single steel band around her left wrist — old, unadorned, possibly a maintenance-crew marker. Bare feet or worn ankle-wraps in the Resonance; when she surfaces, heavy rubber-soled boots laced tight. Everything smells of mineral water and ozone."
+  },
+  "image_prompt": "Cyberpunk character portrait, 63-year-old heavyset Scandinavian-Mozambican woman, very dark skin with blue-black undertone, long white hair loose and damp, deep-set dark brown eyes. Her collarbone and forearms glow faintly with bioluminescent biopunk nodes in soft blue-white light pulsing in slow rhythms, right hand visibly missing last two fingers. Wearing faded grey canvas work pants and an old Ferrogate maintenance jacket, worn and water-stained. Standing motionless in a flooded underground shrine around an active power junction, surrounded by offerings of circuit boards and old drives. Dim overhead industrial lighting reflecting off standing water, moody and spiritual atmosphere, intricate subterranean setting, sharp focus on her face showing decades of exhaustion and focus. Cinematic, hyper-detailed, solemn and reverent mood. --ar 2:3 --v 6"
 }

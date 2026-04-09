@@ -178,5 +178,26 @@
     "Static",
     "Gold"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Akan) / Turkish",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and substantial without softness — the build of someone who has carried weight both literal and metaphorical. Strong upper body, grounded stance. Moves with deliberate grace despite her age.",
+    "hair_color": "Natural black with silver threading",
+    "hair_style": "Dense locs interwoven with fiber-optic thread throughout, styled loose and voluminous. The thread catches ambient light creating a halo effect when she moves.",
+    "hair_length": "Long (shoulder-blade length locs)",
+    "eye_color": "Left eye: warm amber (natural). Right eye: clouded white-grey prosthetic with faint iridescent scattering",
+    "skin_tone": "Deep warm brown with golden undertones",
+    "complexion": "Lined face bearing the geography of five decades — creases around the eyes and mouth speak of frequent expression rather than frowning. Skin is clear and well-maintained, carrying a faint sheen from the solder flux she works with. No visible cosmetic concealment.",
+    "distinguishing_marks": [
+      "Bioluminescent circuit-tattoos covering her shoulders, collarbone, and upper chest — fine golden lines that pulse faintly with amber light during E.L.F. communion. Patterns resemble circuit boards crossed with spiritual iconography.",
+      "Thin burn scar along the right side of her neck (pre-datting her augmentations, from a factory accident in her twenties).",
+      "Calluses on both palms, deepest on the left where her subdermal data-tap sits beneath the skin as a faint metallic gleam."
+    ],
+    "visible_augmentations": "Clouded left prosthetic eye (deliberately kept non-functional and unpolished as a spiritual choice). Faint subdermal shimmer visible in her left palm under certain light angles. Bioluminescent circuit-tattoos that activate during communion work. No chrome — all augmentations are subtle, integrated, or deliberately symbolic.",
+    "posture_movement": "Stands with weight balanced, shoulders back. Moves slowly and deliberately with the confidence of someone who has stopped rushing. Her hands are expressive but controlled. She makes direct eye contact with her functional eye in a way that feels like assessment rather than challenge. When she enters communion, her posture becomes perfectly still — the only movement is the pulsing of her circuit-tattoos.",
+    "clothing_style": "Tier 3-4 practical spirituality. Favors loose linen and cotton layers in earth tones (rust, deep indigo, grey) that allow freedom of movement and don't catch on the shrine's machinery. Often wears a long indigo vest with deep pockets over a simple cream shirt. Her hands are usually bare except for a worn copper ring on her right index finger. Feet in soft leather sandals or minimal soles. Smell: perpetual undertone of solder flux and dried calendula hanging on her clothes and skin."
+  },
+  "image_prompt": "A 52-year-old Black woman with deep brown skin and shoulder-length locs interwoven with fiber-optic thread, standing in a converted laundromat shrine filled with warm golden light. Her right eye is a clouded prosthetic; her left eye is warm amber and direct. Bioluminescent circuit-tattoos glow faintly gold across her shoulders and chest in intricate patterns. She wears loose indigo linen over a cream shirt, hands resting on old machinery. Behind her: copper mesh offerings, flickering candlelight, fragmented screens showing data streams and static. Cyberpunk spiritualism, warm and grounded, nostalgic and future-worn. Soft volumetric lighting, shadows cast by fiber-optic threads. Smell of solder and calendula implicit in the warm, cluttered intimacy of the space. --ar 2:3 --v 6"
 }

@@ -44,7 +44,7 @@
       "She intellectualizes emotional problems until the emotional content disappears, which means they never actually resolve",
       "She is building an independent network but hasn't decided whether it's professional growth or preparation for betrayal"
     ],
-    "secret": "She has been writing a book — a comprehensive analysis of Meridian 88's power structure. It uses anonymized data from the Quiet Table's operations. If Glass found out, he would consider it a security breach. Noor considers it the most important work she has ever done."
+    "secret": "She has been writing a book — a comprehensive analysis of GLMZ's power structure. It uses anonymized data from the Quiet Table's operations. If Glass found out, he would consider it a security breach. Noor considers it the most important work she has ever done."
   },
   "speech_patterns": {
     "vocabulary": "Academic, precise, peppered with analytical jargon. She speaks in frameworks and models. Can translate to plain language when she remembers to.",
@@ -198,5 +198,25 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Glass"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "East African / Mediterranean (Arabic-Italian implied)",
+    "height_cm": 162,
+    "weight_kg": 54,
+    "build": "Compact and lean with defined shoulders — the build of someone who paces obsessively rather than exercises. Wiry musculature, minimal body fat, economical movement.",
+    "hair_color": "Dark brown with natural silver streaking at temples",
+    "hair_style": "Pulled back in a functional bun or loose topknot, always slightly disheveled from running fingers through it during analysis",
+    "hair_length": "Long (shoulder-length when down, typically secured)",
+    "eye_color": "Deep brown with faint LED shimmer at the iris edge when optical augmentation activates",
+    "skin_tone": "Warm medium brown with subtle olive undertones",
+    "complexion": "Sharp, angular face — prominent cheekbones, defined jawline, thin lips often pressed together in concentration. Fine lines around eyes and forehead from chronic squinting at screens. Skin is well-maintained but shows the pallor of someone who spends 14-hour days indoors under artificial light. No visible makeup.",
+    "distinguishing_marks": [
+      "Fine scar along the left temple, barely visible, from a corporate security encounter seven years ago",
+      "Faint chemical burn marks on the inside of her right wrist — accidental, from early augmentation installation, now mostly faded"
+    ],
+    "visible_augmentations": "Mother's reading glasses worn constantly (unnecessary but retained for sentimental/psychological function). Faint circular scar on left forearm where subdermal data-storage implant sits beneath the skin — visible only under direct light. Optical augmentation manifests as barely-perceptible metallic threading at the iris edge, noticeable only during zoom or spectrum-shift operations.",
+    "posture_movement": "Habitually tense shoulders, corrected by conscious effort. Walks with purposeful strides, often pacing in tight circles when thinking. Hands are active — gesturing while speaking, fingers drumming on surfaces, constant small movements. Sits with legs folded or feet planted, never truly relaxed. Direct, unwavering eye contact during conversation.",
+    "clothing_style": "Tier 3 practical — dark, neutral-colored clothing optimized for movement and durability. Favors black or charcoal slim-fit cargo pants with multiple pockets, fitted long-sleeved shirts in dark gray or navy, worn unbuttoned over tank tops. Minimal jewelry: mother's watch (vintage, non-digital) on left wrist, a single plain silver ring on her right index finger. Worn leather jacket from pre-collapse era, patched and re-stitched multiple times. Always carries a canvas messenger bag with multiple compartments. No visible corporate branding."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 44-year-old East African-Mediterranean woman, compact build, sharp angular features, deep brown eyes with faint LED iris shimmer, dark hair with silver temples pulled into functional bun, wearing mother's vintage reading glasses. Dressed in dark fitted cargo pants and charcoal fitted shirt, worn leather jacket, canvas messenger bag. Tense posture with active hand gestures, faint circular augmentation scar visible on left forearm. Indoors, surrounded by holographic data displays and physical string-and-pin investigation boards, cool blue-amber lighting from dual-monitor setup, shallow depth of field, grainy film noir aesthetic mixed with cyberpunk tech, photorealistic, shot at 2/3 profile angle, moody atmospheric haze --ar 2:3 --v 6"
 }

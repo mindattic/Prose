@@ -242,5 +242,26 @@
     "Tessera Corponation",
     "The Pure Hand"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Zambian / Russian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, the build of someone whose body follows the rhythm of their mind rather than disciplined training. Long-limbed with visible tendons in forearms and hands; slight forward shoulder curve from years hunched over circuit boards.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Central strip of hair grown into a narrow, carefully maintained topknot; the sides of his skull are shaved smooth and regularly maintained",
+    "hair_length": "Shaved on sides, medium-length topknot",
+    "eye_color": "Deep brown, warm and attentive",
+    "skin_tone": "Warm medium brown with subtle undertones reflecting mixed Zambian and Eastern European heritage",
+    "complexion": "Clean-shaven, high cheekbones with slight hollowness suggesting irregular eating habits. Skin is clear but weathered from hours under workstation LEDs. His expression defaults to focused intensity, softened by genuine kindness.",
+    "distinguishing_marks": [
+      "Bioluminescent stripe running from left temple to left jawline, pulsing in slow rhythm — cyan-blue in color, most visible in dim light or evening hours",
+      "Faint, systematic burn scars across the backs of both hands from soldering work — old, healed, pale against his skin",
+      "Ink stains, usually faint, across the inner knuckles and between fingers from his meditative circuit diagram practice"
+    ],
+    "visible_augmentations": "Bioluminescent pulse stripe on left face (cyan-blue, subtle, rhythmic). No obvious chrome or external hardware. The neural focus chip is subcutaneous and invisible.",
+    "posture_movement": "Moves with deliberate, economical precision — no wasted motion. His hands are constantly slightly active, fingers making micro-movements as if working through problems. When listening, he tilts his head slightly, a habit from focusing on faint electronic hums. Sits cross-legged frequently, even informally.",
+    "clothing_style": "Tier 3-4 working class with ascetic undertones. Favors loose, practical clothing: worn canvas work robes in muted grays and blacks (monastic order signature), layered with a sleeveless thermal underneath. Carries a worn leather satchel with hand tools and circuit components. His clothing shows signs of minor burns and staining but is kept scrupulously clean. No corporate logos or luxury indicators; everything is functional and intentionally simple. Bare feet when possible, calloused and steady."
+  },
+  "image_prompt": "A lean Zambian-Russian man, age 34, with a shaved head except for a narrow topknot of dark hair, sitting cross-legged in a repurposed transit station chapel filled with soft LED work lights. His warm brown skin is illuminated by a glowing bioluminescent cyan stripe running from his left temple to his jaw, pulsing gently. Long-fingered hands with visible solder scars hold a circuit board, his expression deeply focused and meditative. He wears loose gray canvas robes layered over thermal wear, monastic and ascetic. The background shows broken electronics on shelves, LED prayer installations, and the industrial bones of an old transit relay station converted into sacred space. Soft, cool lighting. Cyberpunk spirituality, contemplative mood, documentary realism. --ar 2:3 --v 6"
 }

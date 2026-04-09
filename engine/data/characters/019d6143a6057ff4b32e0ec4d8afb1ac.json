@@ -62,7 +62,7 @@
   "story_hooks": [
     "Erkin Vikstrom-Asiedu discovers a job they completed last year was a setup for something much larger and much worse",
     "Erkin Vikstrom-Asiedu intercepts intelligence about a threat to their district and must decide between profit and protection",
-    "A crew member from Erkin Vikstrom-Asiedu's past shows up in Meridian 88, carrying old grievances and new chrome"
+    "A crew member from Erkin Vikstrom-Asiedu's past shows up in GLMZ, carrying old grievances and new chrome"
   ],
   "narrative_function": "Erkin Vikstrom-Asiedu is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
   "augmentations": "Thermal masking system — body heat signature can be suppressed or spoofed. Dermal camouflage — chromatic skin pigment cells, limited active camouflage",
@@ -274,10 +274,31 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "TESSERA PG-2 'Signature'",
     "The Shelf",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Lean and long-limbed with corded muscle visible in shoulders and forearms — built for precision control and sustained endurance rather than explosive power. No wasted mass.",
+    "hair_color": "Dark brown with sun-bleached copper undertones",
+    "hair_style": "Pulled back in a tight, functional braid during operations; loose and shoulder-length during civilian cover",
+    "hair_length": "Long",
+    "eye_color": "Light gray-blue, alert and analytical",
+    "skin_tone": "Warm tan with underlying golden undertone — mixed complexion that reads differently depending on ambient light",
+    "complexion": "Clean-lined face with high cheekbones and a sharp jawline; minimal grooming during active periods, deliberate grooming during cover identity. No visible acne or scarring on face. Skin shows slight weathering around eyes from sustained concentration.",
+    "distinguishing_marks": [
+      "Thermal masking system visible as a network of fine metallic lines running down the right side of her neck and disappearing under her collarbone — chrome threads embedded subdermally, creating a subtle but unmistakable pattern",
+      "Chromatic pigment cells in patches along her left forearm and across her upper back — appear as slightly iridescent areas of skin that shift subtly between muted greens and grays under different lighting",
+      "Small burn scar on her left palm, pale and old, from an early augmentation procedure"
+    ],
+    "visible_augmentations": "Thermal masking system is deliberately visible — fine chromatic lines along the right side of neck and upper chest. Dermal camouflage cells visible as faint iridescent patches on left forearm and upper back. Both augmentations are exposed and unconcealed, suggesting confidence and strategic transparency.",
+    "posture_movement": "Moves with economical precision — every motion calculated and minimal. Sits in positions that allow rapid deployment. Eyes constantly tracking sightlines and exit routes. In civilian mode, consciously relaxes this intensity, but the underlying tension never fully dissipates. Hands are steady and expressive only when necessary.",
+    "clothing_style": "During operations: form-fitting tactical gear in grays and blacks — Kessler Row brands that prioritize function over aesthetics. Reinforced synthetic leather jacket with integrated pockets and cable routing. During civilian cover: deliberately unremarkable — mid-tier workwear, neutral colors, brands that blend into Tier 4 background. Minimal jewelry except for a single worn silver band on her right wrist."
+  },
+  "image_prompt": "Cyberpunk portrait of a tall, lean 33-year-old woman with mixed Scandinavian and West African heritage, light gray-blue eyes, dark brown hair with copper undertones pulled back in a tight braid. Visible thermal masking augmentation as fine metallic chrome lines running down right neck and collarbone, dermal camouflage iridescent patches on left forearm. Sharp cheekbones, analytical expression, faint weathering around eyes. Wearing form-fitting tactical gear in gray and black, reinforced synthetic leather jacket, minimal jewelry. Standing in Kessler Row neon-lit setting with arms dealer storefronts and augmentation clinic signs in background, moody atmospheric lighting with thermal imaging aesthetic, cool color palette, cinematic depth of field, professional character portrait --ar 2:3 --v 6"
 }

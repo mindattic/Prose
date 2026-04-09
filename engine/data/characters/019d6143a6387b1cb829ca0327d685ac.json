@@ -253,5 +253,25 @@
     "Tessera Attrition Engine TE-9 'Patience'",
     "Lacuna Genomics"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Bantu (Mwamba) / Turkish (Çetinkaya)",
+    "height_cm": 182,
+    "weight_kg": 68,
+    "build": "Tall and angular with minimal soft tissue; lean musculature developed through sustained posture and fine motor control rather than exercise. Shoulders slightly rounded forward from decades of surgical stance.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Precision-cut bob, self-maintained with surgical shears, blunt edges, no styling product",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint metallic sheen at the margins (ocular magnification implants)",
+    "skin_tone": "Light brown with warm undertones, even complexion",
+    "complexion": "Minimal makeup; skin shows disciplined care but no vanity. Fine lines around the eyes and mouth from years of surgical focus and compressed stress. Hands show surgical calluses on index and middle fingers.",
+    "distinguishing_marks": [
+      "Bioluminescent tracery in cool blue along both collarbones and upper arms in delicate branching patterns; pulses faintly with elevated heart rate",
+      "Thin surgical scar along the inner left forearm from a needle-stick incident, pale and nearly invisible"
+    ],
+    "visible_augmentations": "Ocular implants visible as a faint metallic iridescence at the eye margins when light catches them. Bioluminescent tracery is always visible on exposed skin. No external hardware; neural accelerator and motor cortex implant are subcutaneous and invisible.",
+    "posture_movement": "Weight balanced forward on the balls of her feet, shoulders held slightly high and forward in perpetual surgical readiness. Movements are economical and precise; no wasted motion. In conversation, she maintains steady eye contact and does not soften her expression. Walks with purpose; never appears to be in transit, always en route to something specific.",
+    "clothing_style": "Aurochs Medical Complex trauma surgeon — Tier 3 salaried. Off-duty: high-collared shirts and sweaters to obscure the bioluminescent tracery, charcoal and black baseline. Dark tailored slacks, minimal jewelry. Commute apparel is functional and unremarkable. When not in scrubs, she dresses like someone who views clothing as a problem to solve rather than an expression. No logos, no aspirational branding; quality materials, zero ornamentation."
+  },
+  "image_prompt": "A 41-year-old woman of Bantu-Turkish heritage, tall and angular with light brown skin, dark hair in a precise blunt bob. Cool blue bioluminescent tracery pulses faintly along her collarbones and upper arms in delicate branching patterns. Dark brown eyes with subtle metallic implant sheen. High-collared black sweater, surgical precision in every detail. Standing in a modern trauma bay with surgical lighting overhead, focused expression, slight forward shoulder posture of someone who has spent decades bent over an operating table. Moody cyberpunk medical aesthetic, cool lighting, photorealistic, professional medical setting, intense and formidable presence, no softness --ar 2:3 --v 6"
 }

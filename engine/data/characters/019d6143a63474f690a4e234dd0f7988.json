@@ -177,5 +177,27 @@
     "The Pale Mile",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Yoruba / Romanian",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Large-framed and broad-shouldered despite advanced age; skeletal muscle atrophy visible in forearms and neck, but the underlying bone structure remains imposing. Moves as a man who was once genuinely powerful and has not fully accepted the reduction.",
+    "hair_color": "Steel gray with streaks of darker iron",
+    "hair_style": "Kept short and brushed back; thinning at crown but full at sides",
+    "hair_length": "Short",
+    "eye_color": "Pale green, striking and alert; left eye contains faint geometric targeting reticle visible only in certain light",
+    "skin_tone": "Mid-brown complexion with the weathered, paper-thin quality of extreme age; sun-damaged across shoulders and forearms",
+    "complexion": "Deeply lined face with prominent cheekbones; left side of face shows subtle smoothness and slight discoloration where Axiom field graft was applied circa 2155, the seam barely visible but present. Jaw still angular and defined. Hands are large, liver-spotted, with prominent knuckles and the grip-strength worn into the palm lines of a man who held weapons for decades.",
+    "distinguishing_marks": [
+      "Axiom facial reconstruction plate visible as a faint smoothness and slight color variance across left cheekbone and upper jaw, extending toward temple.",
+      "Thin white scar running from left collarbone toward sternum, partially obscured by shirt collar.",
+      "Faded tattoo on right forearm: Axiom corporate insignia with year '2141' beneath it, heavily faded.",
+      "Dark bruising and surgical scarring around left hip joint, visible only when seated or when clothes shift; permanent limp favors right leg."
+    ],
+    "visible_augmentations": "External spinal compression support frame worn as a harness under clothing — visible when he moves or bends, appearing as segmented metal ribs supporting his torso. Left eye retains a faint targeting overlay reticle visible in bright light or close proximity, a dead system that cannot be safely removed. Left hip replacement creates an asymmetrical gait and occasional clicking sound when pressure shifts.",
+    "posture_movement": "Moves deliberately and with deliberate weight distribution; favors right leg, relies on cane (which he has named, though he won't say the name to strangers). Sits deep in chairs, settling with visible relief. Hands gesture frequently when speaking, still capable of surprising dexterity. Head tilts slightly to compensate for the long-dead targeting overlay in his left eye. When stationary, he assumes the posture of a man on guard — shoulders back, chin forward — an old military habit.",
+    "clothing_style": "Tier 3 veteran practical: loose gray utility shirts with deep pockets, dark cargo pants with reinforced seams, worn boots with orthopedic soles. Axiom corporate jacket from the 2150s — still maintained, worn most days despite its age. No visible chrome or aesthetic augmentation mods; his augmentations are functional and old enough to predate fashionability. Wears a faded veteran's armband on his right wrist. The cane is polished wood and worn steel — not decorative, truly used."
+  },
+  "image_prompt": "An 88-year-old man of immense frame and weathered presence, mid-brown skin with deep facial lines, striking pale green eyes with a faint targeting reticle in the left; left side of face shows subtle Axiom surgical grafting around cheekbone. Steel-gray hair brushed back, thinning at crown. Large hands with prominent knuckles and liver spots. Wearing loose gray utility shirt with deep pockets, dark cargo pants, worn orthopedic boots; faded Axiom corporate jacket visible. External spinal support frame visible as segmented metal ribs under his shirt. Slight asymmetrical limp, favoring right leg. Holding a polished wooden and steel cane. Sitting in a common room chair in Fort Anchor Veterans Residential, afternoon light from industrial windows casting hard shadows. Posture alert and deliberate despite age. Mood: tired authority, storyteller's presence, old soldier at rest but never fully at ease. Cinematic cyberpunk setting, photorealistic, worn and lived-in, nostalgic 2150s tech aesthetic visible in clothing and surroundings. --ar 2:3 --v 6"
 }

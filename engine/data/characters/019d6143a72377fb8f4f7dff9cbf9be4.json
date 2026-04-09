@@ -257,5 +257,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Yoruba / Bulgarian-Polynesian)",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and muscular without being lean — a frame built for standing eight hours at a platform's edge, moving crowds without relying on speed. Solid, grounded, resistant.",
+    "hair_color": "Natural deep black with copper wire threading",
+    "hair_style": "Close-cropped natural, parted slightly off-center, copper wire implants woven through scalp in deliberate patterns that catch light",
+    "hair_length": "Short",
+    "eye_color": "Left eye: flat gray tactical unit with amber targeting reticle; Right eye: warm brown, natural",
+    "skin_tone": "Deep umber, even and unblemished from consistent care",
+    "complexion": "Weathered but maintained — minimal makeup, skin shows sun exposure and fatigue lines around the eyes and mouth, grooming is utilitarian rather than decorative",
+    "distinguishing_marks": [
+      "Faint scar along the left temple where the tactical eye was installed, visible only at certain angles",
+      "Small tattoo on the inside of her right wrist — a stylized turnstile wheel, faded from repeated washing",
+      "Callus pattern on both palms from years of crowd control and rail-bracing"
+    ],
+    "visible_augmentations": "Left eye is clearly prosthetic — flat gray iris with faint amber targeting reticle visible when scanning. Copper wire threading visible across the scalp, catching platform lighting. Subdermal transit ID chip is not externally visible. The tactical eye marks her as working security; the copper wires suggest either old-school chrome aesthetic or repurposed cosmetic modification.",
+    "posture_movement": "Stands with weight distributed evenly, shoulders relaxed but ready — a stance of presence rather than tension. Moves deliberately, economically, never rushed. Scans crowds with a methodical side-to-side head turn. Hands rest naturally, one often on duty belt. When off-shift, the posture loosens slightly but the attentiveness never fully leaves.",
+    "clothing_style": "On-shift: Ferrogate Transit Security uniform (dark gray-blue with reflective striping, institutional cut, every seam crisp, badge centered at chest, duty belt with restraints and scanner). Off-shift: worn but maintained clothing from mid-tier retailers — fitted dark jeans, plain t-shirts in muted colors, a long synthetic jacket that's been repaired at the seams. Practical shoes with decent tread. No jewelry except a small pin on her off-shift jacket: an E.L.F. circle symbol."
+  },
+  "image_prompt": "A Black woman in her mid-30s, 5'10\", wearing a crisp Ferrogate Transit Security uniform in dark gray-blue with reflective striping, standing at a train platform under harsh fluorescent lighting. Deep umber skin, close-cropped natural hair with copper wire threaded through her scalp catching light. Her left eye is a tactical prosthetic with a subtle amber targeting reticle; her right eye is warm brown and weary. Solid, grounded posture, hands at rest near her duty belt. Behind her, a crowded transit hub with architectural brutalism and retro-futuristic signage. Mood: cyberpunk noir, institutional fatigue, quiet authority. Lighting: harsh platform fluorescents and blue-tinted ambient glow. Gritty, documentary-style realism. --ar 2:3 --v 6"
 }

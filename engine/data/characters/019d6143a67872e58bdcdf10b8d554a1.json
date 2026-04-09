@@ -25,7 +25,7 @@
     },
     "core_fears": [
       "Irrelevance — that the murals are just spectacle and change nothing",
-      "That he has been a bad father to his two adult children who left Meridian 88"
+      "That he has been a bad father to his two adult children who left GLMZ"
     ],
     "core_desires": [
       "For someone to point at a piece of city architecture and remember what it looked like before the corponations branded it",
@@ -57,7 +57,7 @@
   "relationships": [],
   "story_hooks": [
     "A mural he projected two weeks ago onto a Zheng-Dao distribution hub contained, in the holo-code layer most people can't read, a data fragment he picked up from a corrupted ELF shrine — he didn't know what it was, just thought it made the colors interesting, but someone very serious is now looking for it",
-    "His youngest child has returned to Meridian 88 after twelve years and is working corporate, and Obinna is managing this with loudly performed equanimity and private devastation"
+    "His youngest child has returned to GLMZ after twelve years and is working corporate, and Obinna is managing this with loudly performed equanimity and private devastation"
   ],
   "narrative_function": "Information broker of the informal economy — he has been everywhere at 3 AM for thirty years and notices everything. Natural quest giver for anything involving public space, corporate territory, or community memory. Knows everyone.",
   "augmentations": "Color-shifting beard dye (geneware cosmetic treatment, semi-permanent); projection targeting overlay in left eye (basic cyberware); old burn scar on right forearm from early rig accident, deliberately unrepaired",
@@ -222,7 +222,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2193 — Children leave Meridian 88",
+      "event": "2193 — Children leave GLMZ",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -247,7 +247,7 @@
     "Mexicantown Libre",
     "Lakeview Neon",
     "Pilsen Veil",
-    "Meridian 88",
+    "GLMZ",
     "Zheng-dao Bioelectric",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
@@ -257,5 +257,26 @@
     "Weathervane",
     "Chicago"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 183,
+    "weight_kg": 92,
+    "build": "Broad-shouldered and barrel-chested, softening through the middle with age but still carrying the frame of someone who's spent decades on his feet. Forearms remain ropey with muscle memory.",
+    "hair_color": "Black with natural gray throughout",
+    "hair_style": "Full, well-maintained beard worn long and styled with deliberate care",
+    "hair_length": "Medium (beard); head hair kept close to scalp",
+    "eye_color": "Dark brown; left eye has a subtle luminescent targeting reticle visible when ambient light hits it at certain angles",
+    "skin_tone": "Deep brown with weathered undertones, sun-darkened from decades of outdoor work",
+    "complexion": "Heavily lined face—creases around eyes and mouth from constant talking and laughter. Skin texture roughened by workshop dust and lake wind exposure. Grooming is meticulous despite worn appearance; beard is regularly conditioned.",
+    "distinguishing_marks": [
+      "Old burn scar across right forearm from early rig accident—deliberately left unrepaired, pale and mottled against darker skin, approximately 12cm long running from wrist toward elbow",
+      "Multiple thin scars across knuckles of both hands, white against darker skin, from decades of hardware work and accidents",
+      "The beard itself serves as a permanent distinguishing feature: currently dyed in rotating chromatic bands of deep violet fading to copper, refreshed every 6-8 weeks"
+    ],
+    "visible_augmentations": "Left eye projection targeting overlay appears as faint geometric patterns visible only when light catches the eye at certain angles. Backpack-mounted holo-emitter disguised as an air filtration unit when carrying his rig. Otherwise augmentations are minimal and mostly invisible to casual observation.",
+    "posture_movement": "Moves with deliberate, economical grace born of three decades on his feet—no wasted motion, but never rushed. Hands are in constant subtle motion even when seated, gesturing while speaking, fidgeting with small objects. Head tilts forward slightly when listening intently. Carries himself with the unselfconscious confidence of someone long comfortable in his own skin.",
+    "clothing_style": "Tier 3-4 functional with deliberate artistic flair. Favors layered, weathered utilitarian pieces: worn canvas work pants, thermal base layers visible at collar and wrists, oversized linen or hemp overshirts in muted earth tones. Often wears a long coat of synthetic leather that's seen better days but is carefully maintained. Work boots that are scuffed but well-oiled. Jewelry is minimal but intentional—a silver ring on one hand, possibly hand-made. No visible corporate branding; aesthetic is deliberately anti-corpo while remaining accessible to working-class spaces he frequents."
+  },
+  "image_prompt": "Cyberpunk street artist, 54-year-old man with deep brown skin and broad weathered face, full beard dyed in vibrant violet-to-copper chromatic bands, intelligent dark eyes with subtle targeting reticle glow in left eye, close-cropped head hair with natural silver, deeply lined features from decades of outdoor work and constant expression. Scarred forearms visible, old burn marks deliberately unrepaired. Wearing layered utilitarian earth-tone clothing—oversized linen overshirt, worn synthetic leather coat, weathered canvas work pants, scuffed work boots. Hands large and perpetually in motion, scarred knuckles. Standing in neon-lit alley at pre-dawn with subtle holographic projection equipment visible on modified backpack disguised as air filtration. Pilsen Veil architecture behind him, mixture of industrial brick and corporate facing. Warm tungsten and cyan neon lighting, slight atmospheric mist. Expression alert and deliberately kind. Documentary-style realism with cyberpunk aesthetic, film grain texture. --ar 2:3 --v 6"
 }

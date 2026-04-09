@@ -205,5 +205,25 @@
     "Nesting Doll",
     "Cedar"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Czech / Azerbaijani",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and substantial without softness — muscular across the back and upper arms, suggesting decades of physical labor or deliberate conditioning. Her frame conveys functional strength rather than aesthetic bulk.",
+    "hair_color": "Silver-white (geneware-treated permanent modification)",
+    "hair_style": "Pulled tight to the skull in a severe, functional style — no braids, no ornament, no deviation",
+    "hair_length": "Short (approximately 2-3 cm)",
+    "eye_color": "Dark brown with faint retinal overlay (subtle amber shimmer visible only in direct light)",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Weathered and lined around the eyes; minimal grooming beyond cleanliness; the faded horizontal scar beneath her left eye is the dominant facial feature — thin, deliberate, and approximately 8 cm in length",
+    "distinguishing_marks": [
+      "Thin horizontal scar beneath left eye, faded but deliberate, suggesting either surgical precision or ritualistic intent",
+      "Subdermal transaction nodes in both palms visible as faint circular impressions or slight raised areas beneath the skin when her hands are open"
+    ],
+    "visible_augmentations": "Minimal visible cybernetics — the subdermal nodes in her palms are barely perceptible as faint circular impressions. The retinal overlay produces an amber shimmer in her eyes under direct light but is otherwise unobtrusive. No chrome, no cosmetic modifications.",
+    "posture_movement": "Sits and stands with absolute postural certainty — shoulders back, spine straight, head level. Moves deliberately and economically, no wasted motion. Maintains direct eye contact. Her hands are steady and deliberate, often occupied with physical ledger-writing. Overall impression of someone who has no doubt she will outlast the room.",
+    "clothing_style": "Water-resistant industrial layers worn indoors and outdoors — heavy-duty synthetic fabrics in grays, blacks, and deep blues. Appears to favor cargo vests, reinforced shirts, and water-shedding outer shells consistent with dock work or maritime environments. Tier 3-4 utilitarian aesthetic — function over presentation, but maintained with precision. No logos or branded wear. Always carries a physical ledger and real ink stylus. Faint persistent smell of lake brine and cedar-smoke incense."
+  },
+  "image_prompt": "A 44-year-old West African woman with silver-white hair pulled tight to her skull, seated behind a worn wooden desk covered in physical ledgers and an accounting tablet, deep umber skin, dark eyes with subtle amber retinal shimmer, thin deliberate scar beneath her left eye, broad-shouldered and muscular, wearing water-resistant industrial gray and black layers, holding a real ink stylus, unmoved expression of absolute certainty, cyberpunk neo-noir, moody lighting with cool dock-side neon bleeding through cargo container windows, atmospheric cedar-smoke haze, photo-realistic, cinematic depth of field, shot from across the desk at eye level, gritty and weathered aesthetic, 2226 Great Lakes Metropolitan Zone aesthetic --ar 2:3 --v 6"
 }

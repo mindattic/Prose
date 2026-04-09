@@ -183,5 +183,26 @@
     "Glass",
     "Compass Rose"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Balkan (Bosnian)",
+    "height_cm": 168,
+    "weight_kg": 89,
+    "build": "Heavyset, sturdy frame with substantial shoulders and broad hips — built for stability and endurance. Carries weight with natural authority, not softness.",
+    "hair_color": "Black with silver streaks",
+    "hair_style": "Locs pinned in an elaborate updo with copper wire spirals and glass beads woven throughout — intricate, intentional, often slightly disheveled from work",
+    "hair_length": "Long (shoulder-length when loose)",
+    "eye_color": "Deep brown with subtle micro-optic enhancement visible as faint prismatic flicker in direct light",
+    "skin_tone": "Dark ochre with warm undertones",
+    "complexion": "Lined face with pronounced smile creases and concentrated expression lines around the eyes — face of someone who squints at detail work. Skin well-maintained, faintly scarred knuckles from decades of precision work.",
+    "distinguishing_marks": [
+      "Fine white scars across both hands and forearms — accumulated from needle pricks, cutting tools, and minor burn marks from steam pressing",
+      "A small tattoo on her inner left wrist in Bosnian script, faded with age",
+      "Permanent calluses on her thumb and first two fingers, right hand slightly more pronounced than left"
+    ],
+    "visible_augmentations": "A long, prehensile tail emerging from the base of her spine, covered in fine iridescent scales that shift from teal to bronze depending on emotional state and light angle. The tail is approximately 1.2 meters long when fully extended, articulated like a serpent, and often draped across her shoulders or wrapped around her work stool. Micro-optic enhancement barely visible as a subtle depth-of-field effect in her irises under close observation.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Sits slightly hunched when working, shoulders drawn forward over a project. When standing, posture straightens; carries herself with the quiet confidence of a master craftsperson. Her tail moves independently of her body language, often gesturing expressively or steadying her as she reaches.",
+    "clothing_style": "Tier 3-4 working attire with visible personal style. Typically wears fitted linen or cotton work shirts in muted jewel tones (deep teal, bronze, indigo), often tailored by her own hand and featuring hidden pockets and reinforced seams. Loose-fit trousers with cargo pockets and tool loops. Always wears an indigo denim apron embroidered with thread-pattern designs. Feet clad in worn leather sandals or soft work shoes with excellent arch support. Two to three silver bangles on each wrist — practical but elegant, gifts from satisfied clients over the years. Small ceramic prayer beads looped around her left wrist."
+  },
+  "image_prompt": "A heavyset West African-Balkan woman in her mid-40s with dark ochre skin and silver-streaked black locs pinned with copper wire and glass beads, sitting at a cluttered sewing workstation surrounded by bolts of fabric and spools of thread. Her defining feature is a long, iridescent serpentine tail covered in fine scales that shift from teal to bronze, draped across her shoulders and wrapped around her work chair. She wears a fitted teal linen work shirt and indigo denim apron with embroidered details, her weathered hands working at a piece of fabric, micro-optic enhancement barely visible in her focused brown eyes. Her expression is concentrated and serene. The stall smells of hot fiber and faintly floral incense. Warm, layered studio lighting illuminates thread, needles, and scattered measuring tools. The mood is intimate and purposeful, capturing a master craftsperson in her element. Cyberpunk fashion-adjacent, gritty-real, not sleek. --ar 2:3 --v 6"
 }

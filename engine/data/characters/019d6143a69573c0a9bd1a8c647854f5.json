@@ -105,5 +105,26 @@
     "The Narrows Compact",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 183,
+    "weight_kg": 79,
+    "build": "Lean and angular with underlying muscle density. Years of stress and irregular sleep have carved definition into his frame rather than bulk.",
+    "hair_color": "Salt-and-pepper grey, natural",
+    "hair_style": "Pulled back into a tight, functional undercut. Sides faded to stubble.",
+    "hair_length": "Short",
+    "eye_color": "Light grey-brown, unremarkable",
+    "skin_tone": "Medium warm — light tan from mixed heritage, weathered by years in the Narrows",
+    "complexion": "Sharp cheekbones, gaunt face, perpetual five o'clock shadow. Deep lines around the eyes and mouth suggest constant calculation. Skin shows minor scarring along the left jawline.",
+    "distinguishing_marks": [
+      "Three parallel burn scars running vertically down the inside of his right forearm, about 8cm long, faded to pale pink",
+      "A thin surgical scar behind his left ear, hidden unless head is tilted — suggests subcutaneous implant",
+      "Knuckle tattoos on both hands: small geometric symbols in black ink, worn but still visible"
+    ],
+    "visible_augmentations": "None immediately apparent. His right hand moves with faint mechanical precision at the wrist — suggests internal servo augmentation, but easily missed. No chrome, no LEDs.",
+    "posture_movement": "Economical and controlled. Rarely gestures broadly. Sits with his back to walls. Moves with the patience of someone who has learned that rushing in the Narrows is fatal. Hands remain visible and still when in neutral territory.",
+    "clothing_style": "Tier 3-4 practical. Worn but well-maintained synthetic leather jacket over a muted grey thermoweave hoodie. Black cargo pants with reinforced pockets and a concealed thigh rig. Scuffed steel-toe boots. A thin chain bracelet of dull silver or recycled platinum on his left wrist — status marker among fixers. No flashy corpo logos, no gang colors. Dresses to move and to blend."
+  },
+  "image_prompt": "Portrait of a 40-year-old male fixer in cyberpunk Milwaukee, Scandinavian-West African mixed heritage, salt-and-pepper undercut, sharp angular face with deep lines, light grey-brown eyes, weathered medium tan skin, lean muscular build. Wearing worn black synthetic leather jacket, grey hoodie, cargo pants, steel-toe boots. Slight mechanical precision visible in right wrist. Sitting in dim neon-lit back room, moody teal and orange lighting, cigarette smoke haze, hands visible on table. Gritty, street-worn, calculating expression. Film noir mood, cyberpunk aesthetic, shot from chest up, shallow depth of field --ar 2:3 --v 6"
 }

@@ -234,5 +234,26 @@
     "The Pale Mile",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Tibetan / West African / Russian",
+    "height_cm": 164,
+    "weight_kg": 52,
+    "build": "Slight and angular, almost ascetic — narrow shoulders, long limbs with minimal muscle definition. The build of someone who forgets to eat regularly and moves with deliberate economy.",
+    "hair_color": "Dark brown, naturally",
+    "hair_style": "Long, usually gathered into a loose bun or secured with a clip that slides throughout the day, strands perpetually escaping. Sometimes pinned with whatever is at hand — research notes, styluses, wire.",
+    "hair_length": "Long",
+    "eye_color": "Geneware irises: amber shifting to pale violet depending on ambient light levels and emotional state",
+    "skin_tone": "Warm light brown with subtle undertones reflecting Tibetan and West African heritage",
+    "complexion": "Fine-featured face with high cheekbones, slightly gaunt from irregular meals. Skin appears luminous under The Circuit's overhead lighting, marked by the faint wear of someone who works in data-dense environments — minimal sun exposure. No visible tension lines; instead, a peculiar relaxation in the face that suggests internal preoccupation.",
+    "distinguishing_marks": [
+      "Faint burn scar on left forearm (2cm, pale) from a failed equipment calibration at age twenty-three — sits just below the wrist",
+      "Subcutaneous port behind left ear (barely visible, surgical scar tissue) for neural notation implant — often covered by escaped hair",
+      "Small, precise tattoo on right wrist: abstract geometric symbol resembling a circuit diagram with a question mark at its center, rendered in matte black ink"
+    ],
+    "visible_augmentations": "Geneware irises with visible color-shifting — noticeably non-standard, iridescent quality under certain lighting angles. The neural notation implant is subcutaneous but the surgical scar and occasional glimmer of internal LEDs at the port site is visible if hair is pinned back. No other visible chrome.",
+    "posture_movement": "Sits hunched forward slightly, hands often moving in small patterns as if typing or notating unseen data. Walks with careful, deliberate steps as if navigating crowded spaces mentally as well as physically. Makes sustained eye contact when focused on a person but frequently looks through others mid-conversation when lost in thought. Fidgets with pen caps, loose threads, or the edges of notepads.",
+    "clothing_style": "Layers upon layers — Tier 3 academic aesthetic. Usually wears: fitted turtleneck or long-sleeved thermal (often with small stains from coffee or food they didn't finish), oversized linen overshirt or cardigan with fraying cuffs, tapered trousers in charcoal or black, worn leather ankle boots with visible creasing. Frequently adds a weather-inappropriate wrap or shawl even indoors. Clothing is never quite tailored, always slightly rumpled as if they got dressed in the dark. No status symbols; everything is functional, durable, and at least five years old. Always carries a soft-shell messenger bag with university insignia, visibly overstuffed with papers and data drives."
+  },
+  "image_prompt": "Nonbinary academic character, cyberpunk 2226, slight angular build, warm light-brown skin, long dark hair escaping from loose updo, geneware irises shifting amber to pale violet with iridescent quality, fine-featured face with high cheekbones, wearing layered oversized linen shirt over fitted turtleneck, frayed cardigan, charcoal trousers, seated hunched forward in dimly lit research office surrounded by holographic data displays and server towers, faint bioluminescent port scar visible behind ear, clutching worn leather messenger bag, concentrated expression, soft warm overhead lighting with cool blue LED glow from equipment, cyberpunk university aesthetic, introspective mood, hyperdetailed fabric textures, photorealistic --ar 2:3 --v 6"
 }

@@ -261,5 +261,24 @@
     "Gold",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Icelandic",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and solid without heaviness, muscular through the chest and forearms from decades of precise surgical work. Carries herself with the compact efficiency of someone who doesn't waste movement.",
+    "hair_color": "Natural black with salt-gray threading throughout",
+    "hair_style": "Undercut — shaved close to scalp on sides and back, natural texture left full on top and slightly longer",
+    "hair_length": "Short on sides, medium on crown",
+    "eye_color": "Pale gold (surgically tinted magnification contact lenses; natural dark brown beneath)",
+    "skin_tone": "Deep brown with even undertone, weathered from exposure and time",
+    "complexion": "Unlined face for her age, skin kept meticulously clean and unmarred by choice. No makeup. Minimal grooming — practical rather than aesthetic.",
+    "distinguishing_marks": [
+      "Long thin scar running along the left jaw from angle to chin, pale and precise, deliberately never cosmetically repaired"
+    ],
+    "visible_augmentations": "Surgical-assist haptic feedback nodes visible as faint metallic scarring across both palms and fingers (medical-grade, showing age). Magnification contact lenses with barely perceptible gold tint. Subdermal cool-pack sleeve along left forearm visible as subtle thermal discoloration under skin, most apparent in warm conditions.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion, no unnecessary speed. Hands are always slightly relaxed and ready. Eyes register everything. Sits upright. When she pauses, she becomes still in a way that reads as attentiveness rather than idleness.",
+    "clothing_style": "Practical Tier 4 workwear: surgical-grade gray-blue scrubs under a weathered black synthleather apron with deep pockets, kept obsessively clean. Insulated field jacket in dark charcoal for transport work. Steel-toed boots, well-maintained. No jewelry. Clothing prioritizes function and easy sterilization over appearance. Everything fits precisely."
+  },
+  "image_prompt": "Portrait of a 41-year-old Black-Icelandic woman with close-cropped natural hair streaked gray, deep brown skin, and pale gold tinted eyes, wearing surgical scrubs and a worn black synthleather apron, long thin scar along her left jaw, hands relaxed with visible metallic nodes across palms, standing in a cold clinical space with surgical lights, cyberpunk noir aesthetic, precise and unsettling calm, hyperrealistic, shot from waist-up, cool blue-gray color grading, moody clinical lighting, gritty Tier 4 industrial setting --ar 2:3 --v 6"
 }

@@ -254,5 +254,26 @@
     "Tibor Osei-Svanstrom",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Brazilian / Ukrainian",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and angular with defined musculature from years of precision hand work; no excess mass, all economy of motion",
+    "hair_color": "Natural black",
+    "hair_style": "Cleanly shaved",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Clean-shaven face, sharp cheekbones, composed expression; left jaw and cheekbone bear a faint copper bioluminescent geneware visible as a subtle shimmer under tension or exertion",
+    "distinguishing_marks": [
+      "Faint copper bioluminescent tracery across left jaw and cheekbone, most visible under stress",
+      "Subcutaneous toolkit implant visible as linear scarring along right forearm with three distinct anchor points",
+      "Chronic mechanical lubricant stains on hands and forearms that never fully wash clean"
+    ],
+    "visible_augmentations": "Left arm is a full matte-black prosthetic below the elbow with exposed joint mechanisms and articulated finger servos; right forearm bears visible subdermal implant scarring with integrated tool ports (micro-drill, wire stripper, voltage probe accessible at the wrist)",
+    "posture_movement": "Economical and precise; moves like someone who has trained their body for repetitive mechanical work; stands with weight distributed for balance and quick access to tools; hands are rarely still, frequently manipulating objects or making small adjustments; maintains steady eye contact but with a restless quality, as if calculating disassembly sequences even during conversation",
+    "clothing_style": "Mechanics' coverall in faded grey industrial fabric with both sleeves torn off at mid-bicep, exposing the prosthetic and implant work; chest and shoulders covered in salvaged badges, patches, and neighborhood identification markers sewn or pinned directly to the fabric; boots are heavy-treaded work grade, reinforced at the heel and toe; no jewelry or decorative items except the functional patches"
+  },
+  "image_prompt": "Nonbinary person, lean angular build, deep brown skin, completely shaved head, left jaw glowing faint copper under tension, matte black full prosthetic left arm below elbow with exposed mechanical joints, subdermal toolkit implant visible on right forearm, standing in industrial warehouse bay surrounded by vehicle parts and machinery, wearing torn-sleeve grey mechanics' coverall covered in salvaged patches and badges, hands stained with vehicle lubricant, sharp focused expression, cool overhead fluorescent lighting mixed with warm practical work lights, cyberpunk 2226 aesthetic, gritty and functional, hyperrealistic detail on prosthetic mechanisms and implant scarring, moody warehouse shadows --ar 2:3 --v 6"
 }

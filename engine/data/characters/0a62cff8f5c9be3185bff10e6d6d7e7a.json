@@ -7,11 +7,11 @@
     "Deepwalker"
   ],
   "role": "Private Investigator",
-  "description": "Obed Takahashi-Fofana is the only private investigator in Meridian 88 who specializes in the Underbelly — the vast, unmapped network of tunnels, maintenance corridors, abandoned infrastructure, and forgotten spaces that exists beneath the city's surface. When someone disappears below ground, he is the person you call, because no one else will go down there.\n\nJapanese-Malian heritage, fifty-two years old, compact and wiry with the build of someone who spends his life crawling through spaces that weren't designed for human habitation. His skin is dark and his eyes have been surgically modified for low-light conditions, giving them a faintly reflective quality like an animal caught in headlights. He has lived partially underground for over twenty years and knows the tunnel system better than any living person — a knowledge he maintains exclusively in his own memory because digitizing it would endanger the communities that depend on the tunnels' obscurity.\n\nThe surface world considers him eccentric at best and disturbing at worst. His clients are typically people who have exhausted every other option — families whose members have fled underground, corporate entities looking for employees who went to ground (literally), and occasionally CorpSec units who need someone retrieved from a place their agents are afraid to go. He charges high fees because the work is dangerous and unique, but he has been known to waive his fee entirely for cases involving children or people fleeing genuine danger.",
+  "description": "Obed Takahashi-Fofana is the only private investigator in GLMZ who specializes in the Underbelly — the vast, unmapped network of tunnels, maintenance corridors, abandoned infrastructure, and forgotten spaces that exists beneath the city's surface. When someone disappears below ground, he is the person you call, because no one else will go down there.\n\nJapanese-Malian heritage, fifty-two years old, compact and wiry with the build of someone who spends his life crawling through spaces that weren't designed for human habitation. His skin is dark and his eyes have been surgically modified for low-light conditions, giving them a faintly reflective quality like an animal caught in headlights. He has lived partially underground for over twenty years and knows the tunnel system better than any living person — a knowledge he maintains exclusively in his own memory because digitizing it would endanger the communities that depend on the tunnels' obscurity.\n\nThe surface world considers him eccentric at best and disturbing at worst. His clients are typically people who have exhausted every other option — families whose members have fled underground, corporate entities looking for employees who went to ground (literally), and occasionally CorpSec units who need someone retrieved from a place their agents are afraid to go. He charges high fees because the work is dangerous and unique, but he has been known to waive his fee entirely for cases involving children or people fleeing genuine danger.",
   "affiliation": "Independent — the tunnels don't recognize organizational affiliations",
   "tier": "Tier 1",
   "location": "A chamber in the Underbelly accessed through a maintenance hatch behind a condemned building in Ashfield — decorated with salvaged objects arranged with surprising artistry, near sub-level access near Dearborn and Jackson",
-  "specialization": "Locating people who have disappeared into Meridian 88's sub-surface infrastructure",
+  "specialization": "Locating people who have disappeared into GLMZ's sub-surface infrastructure",
   "methods": [
     "Personally navigating the Underbelly tunnel network, which he has memorized over twenty years",
     "Maintaining relationships with tunnel-dwelling communities most surface dwellers don't know exist",
@@ -47,7 +47,7 @@
   "story_hooks": [
     "Mother Chen asks Obed to find someone who has been abducting tunnel-dwellers — the disappearances are happening in areas of the Underbelly that even Obed hasn't mapped",
     "A corporate client hires Obed to find a fugitive, but underground he discovers the fugitive is protecting something that would change the power balance on the surface",
-    "Obed's hand-drawn map is stolen from his chamber — whoever has it now has the power to expose or destroy every underground community in Meridian 88"
+    "Obed's hand-drawn map is stolen from his chamber — whoever has it now has the power to expose or destroy every underground community in GLMZ"
   ],
   "tags": [
     "character",
@@ -62,12 +62,33 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Heritage Vault",
     "Ashfield",
     "The Unmapped Hours",
     "The Gradient Compact",
     "Tibor Osei-Svanstrom"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Japanese / West African (Malian)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Compact and wiry with dense, functional musculature developed through decades of crawling, climbing, and navigating tight underground spaces. No excess mass; every pound is adaptation.",
+    "hair_color": "Black with silver-gray threading at temples and throughout",
+    "hair_style": "Close-cropped, practical, minimal maintenance required for tunnel work",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with a faint reflective sheen from surgical modification for low-light environments",
+    "skin_tone": "Dark brown with warm undertones, weathered from extended periods in damp, abrasive tunnel environments",
+    "complexion": "Lined face suggesting age and long-term exposure to harsh conditions; skin shows minor scarring and callousing on hands and forearms; features angular and lean with high cheekbones; grooming minimal but deliberate—functional over aesthetic",
+    "distinguishing_marks": [
+      "Burn scar across the back of his left hand, jagged and pale, from an electrical hazard encountered twenty years ago in the Deep Levels",
+      "Pattern of thin white scars on both forearms from repeated contact with corroded metal edges during tunnel navigation",
+      "Faint tattoo on his inner right wrist—a simple vertical line with three horizontal marks, a personal notation system only he understands"
+    ],
+    "visible_augmentations": "Eyes show faint luminescence in dim light—a reflective surgical modification for enhanced night vision. No visible chrome or external augmentation; all modifications are subcutaneous or surgical. Calloused palms and fingertips suggest extensive physical work but no cybernetic hand replacement.",
+    "posture_movement": "Moves with economical precision—no wasted motion. His posture reflects decades underground: slightly forward-leaning, head up and alert, eyes scanning. When stationary, he remains still for long periods, comfortable with silence. Walks quietly and deliberately, footfalls deliberately light even on hard surfaces. Hands rest close to his body, ready to move.",
+    "clothing_style": "Tier 4 utility aesthetic—practical, worn, maintained but not fashionable. Dark neutral colors (grays, blacks, muted browns) that don't show dirt or chemical stains. Reinforced cargo pants with multiple pockets for tools and salvage. Heavy canvas or treated fabric jacket with internal pockets. Worn leather work boots, resoled multiple times. Webbing harness worn under clothing, visible at shoulders and around waist—rigged with carabiners, flashlight loops, rappel attachment points. A single piece of jewelry: a thin silver chain around his neck disappearing beneath his collar (contents unknown). No corporate branding, no GLMZ tier indicators. Clothing speaks to function in hostile environments, not status."
+  },
+  "image_prompt": "A weathered 52-year-old man with Japanese-Malian heritage, compact and wiry build, dark brown skin, close-cropped black hair graying at the temples. His dark eyes have a subtle reflective quality from surgical low-light modification, giving them an almost animal luminescence. Lean, scarred hands. Wearing dark practical cargo pants, reinforced canvas jacket, heavy work boots—gear of an underground specialist. Standing in a salvage-decorated chamber, walls lined with found objects arranged with unexpected artistry, dimly lit by a handheld LED, shadows emphasizing the lines of his face. Cyberpunk noir aesthetic, gritty and intimate, underground fortress mood, moody blue and amber lighting, shot at 2:3 aspect ratio, photorealistic, detailed texture, dignified but haunted expression --ar 2:3 --v 6"
 }

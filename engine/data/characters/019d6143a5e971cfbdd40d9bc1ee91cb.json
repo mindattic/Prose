@@ -13,7 +13,7 @@
   "age": 36,
   "status": "active",
   "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Pulaski and Chicago Ave",
-  "description": "Davor Hedberg-Owusu-Ansah is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 36, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a bounty hunter out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Davor Hedberg-Owusu-Ansah is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 36, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a bounty hunter out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "A crew worth trusting — people who stay when the shooting starts",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Freedom from augmentation debt — the interest compounds like a tumor"
     ],
     "coping_mechanisms": [
@@ -62,7 +62,7 @@
   "story_hooks": [
     "Someone is impersonating Davor Hedberg-Owusu-Ansah on jobs, and the impersonator is better at the work than the original",
     "A high-paying contract turns out to target someone Davor Hedberg-Owusu-Ansah owes a personal debt to",
-    "A crew member from Davor Hedberg-Owusu-Ansah's past shows up in Meridian 88, carrying old grievances and new chrome"
+    "A crew member from Davor Hedberg-Owusu-Ansah's past shows up in GLMZ, carrying old grievances and new chrome"
   ],
   "narrative_function": "Davor Hedberg-Owusu-Ansah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
   "augmentations": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release. Reflex boosters wired into spinal column — shaves reaction time by 40ms",
@@ -275,9 +275,31 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "Meridian 88",
+    "GLMZ",
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African / Ghanaian",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Athletic and lean with defined musculature — swimmer's shoulders, runner's legs. No excess weight. The body of someone who trains daily and treats their frame as a tool.",
+    "hair_color": "Dark brown with natural reddish undertones",
+    "hair_style": "Pulled back in a tight, practical braid. Styled for function, not aesthetics.",
+    "hair_length": "Long",
+    "eye_color": "Hazel with amber flecks",
+    "skin_tone": "Medium brown — warm undertone from West African heritage, with slight pallor suggesting irregular sunlight exposure",
+    "complexion": "Sharp facial structure with high cheekbones and a strong jaw. Minimal grooming beyond the practical — no makeup, well-maintained scar tissue around left eyebrow. Skin shows the wear of someone who spends time outdoors and doesn't prioritize cosmetic upkeep.",
+    "distinguishing_marks": [
+      "Thin scar running from left temple to cheekbone — approximately 8cm, likely from a blade or broken glass, healed without professional correction",
+      "Burn mark on right inner forearm — roughly 4cm diameter, circular, consistent with contact burn from industrial equipment or old bioware calibration scar",
+      "Tattoo on left wrist: small geometric pattern in black ink, GLMZ street runner's mark indicating affiliation cohort",
+      "Knuckle scars on both hands — boxer's damage from years of unarmed combat training"
+    ],
+    "visible_augmentations": "Bioware adrenaline regulator visible as a slight subdermal ridge along the left side of her neck, pale scar tissue where the unit interfaces with her nervous system. A secondary port glints under the jaw at certain angles — reflex booster spinal interface, visible as a thin metallic line running down the back of her neck when her braid shifts. Both augmentations show signs of field maintenance and recalibration.",
+    "posture_movement": "Stands with weight distributed between both feet, never fully relaxed. Movement is economical and fluid — dancer-like footwork combined with fighter's awareness. Eyes track everything in her visual field. Resting face is neutral, almost flat affect, but the micro-expressions suggest constant threat assessment. Walks like someone who expects trouble at any moment and has trained to respond in under half a second.",
+    "clothing_style": "Practical Tier 3-4 runner's uniform: matte black tactical jacket with internal webbing for equipment, reinforced at stress points. Underneath, a fitted gray shirt treated for stain and damage resistance. Black cargo pants with utility pockets and concealed thigh holster. Worn boots with good traction and ankle support — scuffed, maintained but not replaced until necessary. One piece of jewelry: a silver chain bracelet with a flat credit token. No logos, no flash. Everything chosen for function. Overall aesthetic is 'someone you don't want to meet in an alley' — not because of style, but because of how the clothes hang on the frame and the scars visible at the wrists and neck."
+  },
+  "image_prompt": "Cyberpunk bounty hunter, female, 36, athletic lean build with defined muscles, dark brown hair pulled back in practical tight braid, hazel eyes with amber flecks, medium brown skin tone, sharp cheekbones and strong jaw. Visible bioware adrenaline regulator scar along left neck, reflex booster spinal interface visible as metallic line down back of neck. Thin blade scar running left temple to cheekbone. Knuckle scars on hands from combat training. Wearing matte black tactical jacket with internal webbing, gray fitted shirt, black cargo pants with utility pockets, worn supportive boots. Silver chain bracelet with credit token. Standing in Crucible Square open-air market, neon signs and vendor stalls in background, Tier 1-2 commerce district aesthetic. Harsh overhead and ambient neon lighting casting sharp shadows. Posture alert and economical, threat-assessment expression, cold confidence. Gritty realistic cyberpunk art style, cinematic lighting, moody and dangerous atmosphere, technical and street-worn details. --ar 2:3 --v 6"
 }

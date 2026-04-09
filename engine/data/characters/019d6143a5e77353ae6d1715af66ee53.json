@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Fullerton and Damen",
-  "description": "Daulet Malm-Amoah is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 29, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a surveillance specialist out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Malm-Amoah has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "description": "Daulet Malm-Amoah is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 29, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a surveillance specialist out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Malm-Amoah has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.63,
@@ -31,7 +31,7 @@
     "core_desires": [
       "To build something that outlasts the next contract cycle",
       "Power — enough leverage that nobody ever threatens them again",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Daulet Malm-Amoah's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Daulet Malm-Amoah's past shows up in GLMZ, carrying old grievances and new chrome",
     "A Tier 4 executive offers Daulet Malm-Amoah a permanent position — the pay is obscene and the strings are invisible until they tighten",
     "Someone is impersonating Daulet Malm-Amoah on jobs, and the impersonator is better at the work than the original"
   ],
@@ -275,10 +275,31 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "Meridian 88",
+    "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
     "Clover"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Central Asian / West African",
+    "height_cm": 183,
+    "weight_kg": 62,
+    "build": "Rawboned and lean — minimal subcutaneous fat, defined musculature from consistent training. The kind of frame that reads as either disciplined or half-starved depending on the light. Long-limbed and efficient.",
+    "hair_color": "Dark brown, almost black, with a faint metallic sheen from mineral deposits in Steamvent water",
+    "hair_style": "Pulled back in a tight, utilitarian braid that exposes the cranial implant",
+    "hair_length": "Long",
+    "eye_color": "Dark brown with subtle chromatic shift at the edges — side effect of dermal camouflage neural integration",
+    "skin_tone": "Medium brown with warm undertones, displaying uneven pigmentation in patches across shoulders and forearms where dermal camouflage cells are concentrated",
+    "complexion": "Sharp cheekbones, angular jaw, minimal facial hair. Skin is weathered but well-maintained — scars are few but deliberately unhidden. No cosmetic grooming; everything functional.",
+    "distinguishing_marks": [
+      "Cranial bomb defuser implant visible along right temple — a thin line of chrome running from temple to occipital ridge, with a small circular access port behind the right ear",
+      "Thin scar running down the left side of her neck, approximately 8cm, likely from bladed trauma",
+      "Chromatic skin patches across both shoulders and upper forearms in irregular patterns — areas of active dermal camouflage integration that shift subtly in certain light"
+    ],
+    "visible_augmentations": "Cranial bomb defuser implant is prominently visible along the right side of her skull with chrome detailing and an access port. Dermal camouflage creates irregular pigmentation variations across shoulders and forearms that shift slightly under different lighting — noticeable but not grotesque. No effort made to conceal either.",
+    "posture_movement": "Economical and controlled — every movement serves a purpose. She stands with weight balanced, shoulders back, ready to move in any direction. Her gaze is constant and assessing. She moves with the precision of someone trained to enter and exit spaces without leaving traces.",
+    "clothing_style": "Tier 3-4 working specialist aesthetic. Black or dark gray reinforced tactical pants with utility pockets and cable routing. Loose-fit thermal undershirt. Lightweight ballistic vest with custom modifications for surveillance work — no unnecessary branding, matte finish to avoid reflection. Worn cargo jacket with multiple hidden pockets and signal-blocking lining. Pair of worn boots with reinforced soles, good for urban climbing. Everything is functional, well-maintained, and color-coordinated for Steamvent's industrial backdrop."
+  },
+  "image_prompt": "cyberpunk portrait of a tall, lean 29-year-old woman with dark brown skin and black braided hair pulled back tightly, revealing a visible chrome cranial implant running along her right temple with a circular access port behind her ear, sharp angular features, dark eyes with subtle chromatic shifts, irregular chromatic skin patches across shoulders and forearms from active dermal camouflage integration, faint scar running down left neck, wearing black tactical reinforced pants and a lightweight ballistic vest over a thermal undershirt, matte finish jacket, expression of careful neutrality and constant assessment, geothermal industrial setting with steam and chemical haze, moody blue and orange lighting, shallow depth of field focusing on her face and the chrome implant, photorealistic, cyberpunk noir aesthetic, hyperdetailed skin texture, --ar 2:3 --v 6"
 }

@@ -240,5 +240,26 @@
     "Pellucid Systems",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian / Latin American",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and efficient, with the wiry musculature of someone who has moved through tight spaces and worn days for decades. No excess, no softness.",
+    "hair_color": "Natural black with silver at temples and scattered through the crown",
+    "hair_style": "Close-cropped, precision-cut to scalp, styled with deliberate care",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and calculating",
+    "skin_tone": "Deep warm brown, the color of dark honey or burnished mahogany",
+    "complexion": "High cheekbones above hollowed cheeks. Fine lines radiating from the corners of her eyes and mouth — the specific topography of someone who has spent 51 years controlling her expression. Skin is clear and well-maintained, with the texture of someone who has earned every line through deliberate use.",
+    "distinguishing_marks": [
+      "Fine crosshatching of lines around eyes suggesting decades of selective expression and observation",
+      "A thin scar along the right jawline, barely visible unless light hits it directly — old, deliberately unmarked",
+      "Small calluses on the pads of her index and middle fingers from twenty years of handling tea leaves and noting tallies"
+    ],
+    "visible_augmentations": "Pair of small, dark-furred cat ears mounted on the crown of her head with surgical precision. The ears are alert and functional — they rotate independently toward sound sources with obvious mechanical control. The geneware is well-maintained and integrated seamlessly into the hairline. They are clearly intentional, clearly maintained, and clearly used.",
+    "posture_movement": "She moves with economic precision, never wasting a gesture. Her spine is straight but not rigid. She has the bearing of someone who listens more than she speaks, and her attention, when directed at you, feels like the focus of a lens. Her cat ears rotate toward speakers before her eyes move — a tell she is aware of and does not bother hiding.",
+    "clothing_style": "Carefully maintained secondhand clothing in muted earth tones — ochres, deep greens, charcoal grays. A long vest in sage green or taupe, always worn open, with visible deep pockets, all of which she knows the precise contents of. Beneath, simple long-sleeved shirts in cotton or cotton-blend. Dark trousers, fitted but not fashionable. Practical boots with good grip, re-soled at least once. Everything is clean, nothing is new. The overall effect is Tier 4 working-class with the grooming standards of someone who understands that appearance is a negotiation tool."
+  },
+  "image_prompt": "Portrait of a 51-year-old West African-Scandinavian-Latin American woman, lean and precise, with dark skin, high cheekbones, silver-streaked close-cropped black hair, dark perceptive eyes. Surgically mounted dark-furred cat ears on her crown, rotating slightly. Wearing a sage green open vest with deep pockets over a simple long-sleeved shirt, dark trousers. Standing in a dimly lit cyberpunk tea market stall, warm amber lighting on her face, background blurred with market warmth. Cyberpunk aesthetic, gritty realism, controlled expression, the bearing of someone who understands money as social technology. Professional, intimidating, deliberate. Shot at close range, slight low angle. --ar 2:3 --v 6"
 }

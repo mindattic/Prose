@@ -235,5 +235,28 @@
     "SynapTech IrisBloom Ocular Color Modulator",
     "Copper"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Scandinavian / Polynesian (Danish-Norwegian / Samoan-Tuvaluan)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and wiry, with the compressed musculature of someone who moves through tight spaces constantly. Shoulders slightly rounded forward from years of ducking under low pipes. Core strength evident but not bulky.",
+    "hair_color": "Dark brown, naturally textured",
+    "hair_style": "Sides shaved to bare scalp, top grown into thick locs threaded with stripped copper wire",
+    "hair_length": "Short on sides, medium-long on top (locs extend to mid-shoulder)",
+    "eye_color": "Dark brown with concentric ring tattoos in deep indigo — three rings per iris, traditional Undertow wayfinder's mark",
+    "skin_tone": "Medium brown with permanent bluish-green bioluminescent sheen concentrated along collarbones, forearms, and the inner curve of both wrists",
+    "complexion": "Weathered but not aged prematurely. Skin texture slightly roughened from fungal exposure and constant moisture. No visible acne or scarring. Face is angular — high cheekbones, sharp jawline. Minimal grooming beyond functional — no makeup, nails kept short and callused.",
+    "distinguishing_marks": [
+      "Permanent bluish-green bioluminescent discoloration across both collarbones in a V-pattern from fungal bloom proximity",
+      "Matching bioluminescent sheen on forearms from wrist to elbow, fading gradually",
+      "Concentric ring tattoos (indigo ink) covering the entire iris of both eyes — professional wayfinder's mark",
+      "Fine pale scarring across the backs of both hands, consistent with repeated minor cuts from metal pipe edges",
+      "Small burn scar on left inner wrist (1.5cm diameter) from early fungus-lantern mishap"
+    ],
+    "visible_augmentations": "Echolocation implant shows as a faint scar behind the left ear, barely noticeable. Copper wire threaded through locs may appear intentional but serves no augmentation function. Otherwise no visible chrome or subdermal plating.",
+    "posture_movement": "Perpetually angled sideways in narrow spaces even when unnecessary — muscle memory runs deep. Head held in constant micro-calculations of overhead clearance. Movement is economical and precise, never wasted motion. Steps are quiet and deliberate. Hands move with practiced care when near obstacles or clients.",
+    "clothing_style": "Tier 5 utilitarian/Undertow-adapted. Rust-resistant polymer base-layer (faded teal), sealed at wrists and ankles. Over it: a patched synthetic parka of indeterminate color (charcoal or dark teal, hard to tell under algae stains). Cargo pants with reinforced knees and multiple pockets filled with coiled rope, spare lantern modules, and a leather journal. Boots are heavy synthetic with grip-treads, well-maintained. A woven satchel (made from dried algae fibers) carries mapping tools and fungal samples. Jewelry: a thin copper bracelet on left wrist (handmade, Undertow-crafted) and copper wire woven through locs. No corp logos or status wear. Everything speaks to someone who has chosen the tunnels permanently."
+  },
+  "image_prompt": "A lean 34-year-old woman with dark brown skin bearing permanent bluish-green bioluminescent discoloration across collarbones and forearms, standing sideways in a cyberpunk low-tech setting. Her head is shaved on the sides with thick dark brown locs threaded with stripped copper wire extending to her shoulders. Her eyes are striking: dark brown irises covered in concentric rings of deep indigo tattoo work. She wears a rust-patched synthetic teal parka over thermal base-layer, cargo pants with reinforced knees, and heavy grip-treaded boots. She carries a woven algae-fiber satchel. Behind her: humid underground tunnel environment with bioluminescent fungal blooms casting soft blue-green light on dripping pipes and concrete walls. She has one palm pressed against a corroded pipe as if listening to it. Atmosphere: contemplative, hyper-attentive, post-industrial tunnel aesthetic. Moody bioluminescent ambient lighting. Shallow depth of field. Gritty, weathered, lived-in. --ar 2:3 --v 6"
 }

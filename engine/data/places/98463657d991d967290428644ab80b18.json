@@ -69,8 +69,16 @@
     "People who need to feel connected to something larger than themselves"
   ],
   "notable_locations": [
-    "The Bench — an informal waiting and gathering area at the chamber entrance",
-    "The Measurement Wall — the section where researchers have placed permanent laser rangefinders to track the breathing cycle"
+    {
+      "name": "The Bench",
+      "description": "an informal waiting and gathering area at the chamber entrance",
+      "tags": []
+    },
+    {
+      "name": "The Measurement Wall",
+      "description": "the section where researchers have placed permanent laser rangefinders to track the breathing cycle",
+      "tags": []
+    }
   ],
   "coordinates": {
     "district": "Underworld",

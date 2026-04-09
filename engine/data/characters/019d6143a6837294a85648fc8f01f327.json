@@ -64,7 +64,7 @@
   "narrative_function": "Information source on crime scenes and forensic details, moral anchor within the police institution, potential quest giver when evidence tells a story the detectives are ignoring",
   "augmentations": "Reactive chromatic irises (geneware — blood-chemistry linked), olfactory enhancement implant (detects trace compounds at concentrations below standard human threshold), fingertip micro-analysis filaments (retractable, reads surface chemistry on contact)",
   "daily_life": "Arrives at Fort Anchor before most day-shift officers, processes evidence from overnight callouts, writes reports in a precise longhand he then scans, and leaves exactly at the end of his contracted hours unless a case is genuinely interesting, in which case he stays until he understands it.",
-  "affiliation": "Meridian 88 Metro Police, Forensic Analysis Division",
+  "affiliation": "GLMZ Metro Police, Forensic Analysis Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -220,5 +220,25 @@
     "Gold",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Germanic-Eastern European",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean, almost wiry — the kind of thinness that comes from sustained neglect of meals rather than intentional athleticism. His frame carries no excess but also no particular musculature; he moves as if his body is merely the apparatus that transports his attention to the next sample.",
+    "hair_color": "Black, faintly greying at the temples",
+    "hair_style": "Cropped close to the scalp, practical, no styling",
+    "hair_length": "Short",
+    "eye_color": "Chromatic — irises shift from pale grey (resting state) through amber and gold (focused, engaged) to deep crimson (rare, involuntary, indicates deception)",
+    "skin_tone": "Deep umber, rich and even, with the matte finish of someone who works under consistent artificial lighting",
+    "complexion": "Gaunt in a way that suggests chronic undereating; his face is all angles and sharp cheekbones. His only deliberate grooming effort is a meticulously maintained mustache — dark, precise, slightly tapered at the ends. Otherwise his appearance reads as someone who solved the problem of personal maintenance years ago and hasn't revisited it.",
+    "distinguishing_marks": [
+      "Faint, permanent blue-grey discoloration across the pads of all ten fingers from years of handling luminescent trace compounds — the staining has settled into his dermal layer and doesn't fully wash away.",
+      "A thin white scar, roughly 3cm, on the inside of his left wrist — old, precise, surgical in nature; origin unclear but he doesn't volunteer explanation."
+    ],
+    "visible_augmentations": "The chromatic irises are immediately noticeable in direct light — the subtle color shifts are unnervingly readable to those who know what to look for. The olfactory enhancement implant is invisible (subcutaneous graft near the olfactory bulb). The fingertip micro-analysis filaments are retractable and only visible when he deliberately extends them — thin, almost translucent crystalline structures that extend no more than 2mm beyond his fingertips, catching light like glass slivers.",
+    "posture_movement": "He stands still with an almost monk-like quietness, weight evenly distributed. When he moves it is economical — no gesture wasted. He often unconsciously touches evidence or surfaces with his fingertips as if reading braille, a habit from his implants. His head tilts slightly when he is listening or processing, and his eyes will drift to middle distance while he narrates analysis aloud. He carries a faint scent of luminescent compounds and latex gloves.",
+    "clothing_style": "Uniform white lab coat, always — he buys them in bulk from the same supplier and considers this a closed problem. Beneath: plain charcoal or black shirt, worn and softened from repeated washing. Dark utility trousers with deep pockets, often with a folded evidence catalogue or sample notes sticking out. Steel-toed boots, scuffed and worn. He wears no jewelry or personal ornamentation. His appearance reads as strictly Tier 3-4 working class, the uniform of someone for whom clothing is purely functional. The only hint of vanity is the occasional fresh trim to his mustache."
+  },
+  "image_prompt": "Cyberpunk forensic technician, lean dark-skinned man in his late 40s with close-cropped black hair greying at temples, wearing a worn white lab coat over dark utilitarian clothing. His most striking feature: chromatic irises that shift from pale grey to amber gold, with subcutaneous luminescent trace compound staining visible as faint blue marks across his fingertips. Carefully maintained mustache, sharp-featured face with angular cheekbones, a quiet intensity in his bearing. Setting: Fort Anchor forensic processing lab, cool blue-white LED lighting casting hard shadows, surrounded by evidence containers and analysis equipment. His posture is still and focused, one hand extended slightly showing retractable micro-analysis filaments catching light like glass. Mood: meticulous, absorbed, almost monastic devotion to the work. Fine grain texture, cool color palette with accent blues and steely greys. --ar 2:3 --v 6"
 }

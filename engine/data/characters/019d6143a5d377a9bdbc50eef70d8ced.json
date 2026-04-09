@@ -221,5 +221,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Anglo-Saxon (Rawlings-Ouédraogo lineage suggests Burkinabé / British colonial admixture)",
+    "height_cm": 182,
+    "weight_kg": 68,
+    "build": "Lean and efficient, muscular without bulk — the build of someone who moves precisely. Her frame suggests long hours on her feet, hands steady, posture economical.",
+    "hair_color": "Natural dark brown with bioluminescent silver threads woven throughout",
+    "hair_style": "Close-cropped, precision cut, reveals scalp and ear shape. Silver strands catch and glow faintly in low light — self-maintained, intentional.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm, perceptive",
+    "skin_tone": "Medium brown with warm undertones; complexion suggests mixed West African and Northern European heritage",
+    "complexion": "Clear, well-maintained skin with minimal scarring. Face defaults to amusement — crow's feet at the corners of eyes from frequent smiling. Bone structure is angular, cheekbones prominent. No visible facial tattoos or marks. Grooming is meticulous but utilitarian.",
+    "distinguishing_marks": [
+      "Faint surgical scars on both inner forearms where chrome chassis panels are mounted (approximately 8cm each, pale, well-healed).",
+      "Fine network of pale lines across the dorsal surface of her right hand where the exo-glove integrates with her skin (appears as delicate circuitry pattern).",
+      "Small keloid scar on her left temple, approximately 1cm, partially concealed by hairline — origin unclear, never discussed."
+    ],
+    "visible_augmentations": "Both forearms feature exposed polished chrome chassis panels integrated over muscle tissue — decorative but functional, showing the mechanical infrastructure beneath the skin in a deliberate aesthetic choice. Right hand has an integrated fine-motor surgical assist exo-glove (chrome and articulated silicone joints) that she never removes; it appears as a second skin with visible mechanical articulation at fingertips and palm. Bioluminescent silver hair strands glow faintly in darkness — cosmetic geneware installation she maintains herself.",
+    "posture_movement": "Upright, centered, economical. Moves with purpose but never hurry. Hands are always in motion — fidgeting with tools, wiping surfaces, adjusting equipment. Her right hand (with exo-glove) moves with precise mechanical grace; her left is more naturally organic by comparison, which creates an unconscious asymmetry in her gestures. When listening, she tilts her head slightly, maintaining eye contact. Default expression is a slight smile that reads as genuine amusement rather than professional warmth, though both exist simultaneously.",
+    "clothing_style": "Tier 3-4 utilitarian with personal flair. Typically wears a fitted, washable white synthetic coat (medical aesthetic, practical for her work) over form-fitting dark-colored undershirt. Favors high-waisted cargo pants in charcoal or midnight blue with multiple tool pockets and reinforced seams — worn but maintained. Footwear is always clinical-grade slip-resistant shoes (currently wearing Steris-brand white non-slip medical shoes, Φ80/pair). She layers a tool belt around her hips containing calibration devices, sterile glove dispensers, and small component cases. Jewelry minimal: a simple silver band on her left middle finger (no wedding ring equivalent — personal choice). Her white privacy screen and blue UV lamp are her aesthetic statement — the stall is cleaner than her clothing, which is cleaner than most of Copperhead."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of a tall lean Black woman with close-cropped dark hair threaded with glowing bioluminescent silver strands, warm medium-brown skin, angular cheekbones, dark eyes with crow's feet. Both forearms feature exposed polished chrome mechanical chassis panels integrated into muscle tissue. Right hand wears an integrated fine-motor surgical assist exo-glove in chrome and articulated joints, never removed. She wears a pristine white synthetic medical coat over dark form-fitting undershirt, high-waisted charcoal cargo pants with reinforced pockets, clinical white slip-resistant shoes. Standing in a small stall with three white privacy screens and blue UV lamp overhead, surgical tools on belt. Professional, precise posture, subtle warm smile. Midjourney cyberpunk aesthetic, clinical lighting, shallow depth of field --ar 2:3 --v 6"
 }

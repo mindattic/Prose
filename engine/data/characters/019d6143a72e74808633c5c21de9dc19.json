@@ -26,7 +26,7 @@
     },
     "core_fears": [
       "That the city's memory is being deliberately erased and she is the instrument of that erasure",
-      "That her children will inherit a Meridian 88 with no evidence it was ever anything other than what the corps made it",
+      "That her children will inherit a GLMZ with no evidence it was ever anything other than what the corps made it",
       "Dying with the archive incomplete"
     ],
     "core_desires": [
@@ -44,7 +44,7 @@
       "Underestimates how legible her subversion is to people paying close attention",
       "Her contempt for sentimentality makes her dismiss emotional intelligence as a resource"
     ],
-    "secret": "Embedded within the structural specifications of eleven Spire-commissioned buildings across Meridian 88, she has hidden sealed chambers containing physical archives — paper documents, material samples, photographs, oral history recordings on non-networked media — of neighborhoods that were demolished to build those structures. The chambers are built to survive demolition and are keyed to a decryption sequence she has memorized. She has told no one. Two of the buildings are scheduled for renovation next year."
+    "secret": "Embedded within the structural specifications of eleven Spire-commissioned buildings across GLMZ, she has hidden sealed chambers containing physical archives — paper documents, material samples, photographs, oral history recordings on non-networked media — of neighborhoods that were demolished to build those structures. The chambers are built to survive demolition and are keyed to a decryption sequence she has memorized. She has told no one. Two of the buildings are scheduled for renovation next year."
   },
   "speech_patterns": {
     "vocabulary": "Precise, structural, often uses architectural terminology as metaphor without explaining it. Formal register in professional contexts, unexpectedly direct in private ones. Rarely uses qualifiers.",
@@ -247,5 +247,26 @@
     "ARCHIVE",
     "Silver"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Italian / Lao",
+    "height_cm": 180,
+    "weight_kg": 62,
+    "build": "Tall and angular, with the deliberate leanness of someone who treats her body as functional infrastructure rather than aesthetic concern. Shoulders held level; minimal subcutaneous fat; visible muscle definition in forearms and neck from decades of precision work.",
+    "hair_color": "Black with silver streaking throughout",
+    "hair_style": "Severe architectural roll pinned at the nape, not a strand displaced",
+    "hair_length": "Medium (shoulder-length when unrolled)",
+    "eye_color": "Dark brown, with faint iridescent shimmer at certain angles indicating retinal overlay hardware",
+    "skin_tone": "Warm olive, even throughout, minimal sun exposure despite frequent outdoor documentation work",
+    "complexion": "Fine lines concentrated around eyes and mouth from decades of focused scrutiny and minimal expression. Skin texture is smooth but not soft — well-maintained through corporate-tier medical access. No visible blemishes or cosmetic augmentation; grooming is utilitarian and precise.",
+    "distinguishing_marks": [
+      "Thin, barely-visible scar along the left temple where retinal overlay was installed approximately thirty years ago, visible only in certain light",
+      "Small circular scar on the inside of each wrist (cochlear filter installation points, now largely faded)",
+      "Fine white line across the knuckle of her right index finger from a precision tool accident in her thirties, now barely noticeable"
+    ],
+    "visible_augmentations": "Retinal overlay creates a faint pearlescent sheen in her irises when active, most noticeable in dim lighting. Haptic implants in both hands show no external markers but her touch is unnaturally precise and her fingers move with mechanical economy. The cochlear filter produces no visible signs beyond occasional momentary disconnection when she is isolating specific frequency ranges.",
+    "posture_movement": "Moves with architectural efficiency — no wasted motion, each step deliberate and directional. When standing still, her weight is perfectly balanced. When observing spaces, she becomes nearly motionless, eyes moving in slow architectural sweeps. Her hand movements are slow and controlled, tactile; she touches surfaces as if reading them. Her expressions are minimal; emotion registers primarily in eye focus and the angle of her head.",
+    "clothing_style": "Exclusively monochrome — charcoal gray, off-white, black, pale cream. High-end corpo-casual: fitted but structured fabrics, minimal branding, tailored cuts that suggest both precision and invisibility. Spire-tier wardrobe but worn without ostentation. Always wears a lightweight technical jacket in charcoal, pockets reinforced for carrying the analog camera and design instruments. No jewelry beyond a single titanium watch with analog face. Footwear is understated technical — expensive but designed for ten-hour days on feet, worn building sites."
+  },
+  "image_prompt": "Professional architectural photograph of Yseult Marchetti-Fon, a tall 58-year-old woman of Italian-Lao descent with silver-streaked black hair in a severe roll, dark eyes with faint iridescent retinal overlay shimmer, olive skin with fine lines around the eyes. Wearing monochromatic charcoal and off-white corporate-tier clothing, understated and precisely tailored. Standing in a modern minimalist office space with floor-to-ceiling windows overlooking Lake Michigan, late afternoon golden light casting long shadows. Her posture is perfectly balanced and still, one hand touching a wall surface with deliberate precision, expression distant and analytical. Retinal projection visible as faint geometric overlay across her face. Shot in 50mm documentary style, cool color temperature, emphasis on texture and structure, architectural lighting --ar 2:3 --v 6"
 }

@@ -64,7 +64,7 @@
   "narrative_function": "Primary historical information source; can find pre-corponation records, suppressed documents, and corporate acquisition histories that other sources cannot access; his bootleg media business provides plausible cover for deeper research requests.",
   "augmentations": "Retinal archive implant, left eye (installed 2171, outdated firmware, slightly clouded appearance). No other augmentations or geneware.",
   "daily_life": "Opens his stall at 11am, closes at 6pm — he does not work late markets. Mornings are for cataloguing and client research; evenings for personal archival work and writing the journal he has kept for thirty years.",
-  "affiliation": "Formerly: Meridian 88 Municipal Records Office (dissolved 2184). Currently: Independent. Occasional client relationship with Highland Park Autonomous Zone historical societies.",
+  "affiliation": "Formerly: GLMZ Municipal Records Office (dissolved 2184). Currently: Independent. Occasional client relationship with Highland Park Autonomous Zone historical societies.",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -193,7 +193,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Employed as archivist for Meridian 88 Municipal Records Office",
+      "event": "Employed as archivist for GLMZ Municipal Records Office",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -260,5 +260,26 @@
     "Bashir Quansah-Mehrotra",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Finnish / Congolese / Bosnian",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Compact and lean, almost ascetic—decades of sitting and careful handwork have left him without excess mass. Shoulders slightly rounded from age but still capable. Hands disproportionately large and weathered, with strong grip strength despite his years.",
+    "hair_color": "White with faint dark streaks",
+    "hair_style": "Sparse patches allowed to grow naturally; no attempt at grooming or coverage. Combed back from his forehead when he remembers.",
+    "hair_length": "Medium (3-4 cm)",
+    "eye_color": "Left eye: pale gray-blue with subtle clouding from retinal implant lens. Right eye: sharp pale gray-blue, alert.",
+    "skin_tone": "Light bronze—the underlying warmth of Congolese heritage muted by age and decades spent indoors under artificial light. Evenly tanned on exposed forearms from market work.",
+    "complexion": "Deeply lined face; forehead and eye sockets heavily creased. Cheekbones prominent. Hands show age spots and liver spots, but skin is clean and well-maintained. Light stubble most days—shaves perhaps twice weekly, without particular urgency. Mouth thin, usually set in a neutral expression until he smiles, which transforms his face entirely.",
+    "distinguishing_marks": [
+      "Fine scar running from left temple to cheekbone—approximately 4cm, pale silver, sustained in a record-archive facility fire in 2179.",
+      "Burn marks on the backs of both hands—asymmetrical pattern from chemical exposure during archival preservation work, circa 2165.",
+      "Faint tattoo on inside of left wrist: the symbol of The Ledger ELF, roughly 2cm, done in professional black ink in 2181."
+    ],
+    "visible_augmentations": "Left eye shows subtle cloudiness in certain lighting angles—a telltale sign of the retinal archive implant seated behind the iris. The implant occasionally causes faint LED scatter when he accesses data, visible as a blue-green shimmer in dim environments. Otherwise no visible cybernetics.",
+    "posture_movement": "Moves with deliberate slowness—not infirmity, but conservation of energy and precision. Handles objects with both hands even when one would suffice. Sits more than he stands. When engaged in conversation, he leans forward slightly, left eye often narrowed (either from the implant's sensitivity or as a practiced tell to appear less threatening). Rarely makes sudden movements.",
+    "clothing_style": "Tier 4 / working-class archaic. Favors layered linen jackets in cream, tan, or pale gray—always multiple pockets, always showing signs of repair or patching. Wears the same jacket model in rotation, each in a different state of disrepair; he has owned five nearly identical ones over fifteen years. Plain long-sleeved undershirt, usually mottled from dust and handling old media. Loose dark trousers, practical, pockets reinforced. Worn leather work gloves kept in jacket pockets. No jewelry except a simple metal band (possibly silver, possibly not) on his right ring finger. Shoes are sensible, scuffed, resoled multiple times. Everything suggests someone who values function over presentation—and someone who cannot afford to replace things often."
+  },
+  "image_prompt": "Portrait of an elderly Finnish-Congolese-Bosnian man, age 67, in a cyberpunk setting. Compact lean build, deeply wrinkled weathered face, sparse white hair, sharp pale gray-blue eyes. Left eye shows subtle clouding from a retinal archive implant beneath the surface. Wearing layered cream linen jacket with visible repairs, plain long-sleeved shirt, worn leather work gloves in pocket. Hands are large and weathered. Fine scar on left temple. Burn marks on back of hands. Seated in a dim cluttered market stall surrounded by archival media, papers, old servers, and historical records. Soft amber LED overhead lighting casting shadows across his face. Expression calm, contemplative, slightly guarded. Hands positioned carefully, as if handling fragile data. Cyberpunk noir aesthetic, documentary realism, shallow depth of field, film grain texture, 2226 GLMZ Lower Ring setting. --ar 2:3 --v 6"
 }

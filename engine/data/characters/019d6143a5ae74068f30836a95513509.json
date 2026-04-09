@@ -247,5 +247,25 @@
     "The Pale Mile",
     "Déjà Vu"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Quechua (Andean) / Russian",
+    "height_cm": 162,
+    "weight_kg": 52,
+    "build": "Slight and fine-boned, almost delicate, with minimal muscle definition but a composed, centered posture that suggests controlled strength rather than physical mass",
+    "hair_color": "Black with natural dark brown undertones",
+    "hair_style": "Long, worn in multiple thick braids interwoven with iridescent data-thread that catches light in silver and blue filaments; braids coil and pin at the base of her skull",
+    "hair_length": "Long",
+    "eye_color": "Geneware-modified irises cycling through silver, amber, and pale violet on a slow 8-10 second wheel; sclera remain naturally dark brown",
+    "skin_tone": "Warm tawny with golden-bronze undertones characteristic of high-altitude Andean descent",
+    "complexion": "Clear, unlined face with high cheekbones and a sharp jawline; thick dark brows that meet slightly in the middle; expression defaults to intense, focused observation; minimal makeup, skin appears deliberately unmoisturized and matte",
+    "distinguishing_marks": [
+      "Small circular scar on the inside of her right wrist where data-thread was first implanted during an early self-taught interface experiment",
+      "Faint tattoo of three parallel lines in faded indigo running down the inside of her left forearm — personal sigil she doesn't explain"
+    ],
+    "visible_augmentations": "Pattern irises with visible slow-cycle geneware glow beneath the iris surface; data-thread woven through braids creates visible silver and blue filament web across her scalp and down her back when hair is loose or in motion; no visible cybernetic limbs or chrome — all augmentation is organic or textile-integrated",
+    "posture_movement": "Sits very still when reading, hands flat on the table or folded; moves with economical precision, no wasted motion; head turns slowly to track people, creating an uncanny sense of being read; when walking she is unremarkable, but when seated she becomes focal",
+    "clothing_style": "Layered in deep reds and indigos: typically a long burgundy undershirt beneath a faded navy or deep purple overshirt or loose jacket; fabrics are slightly worn, hand-dyed aesthetic suggesting Tier 4-5 practical wear rather than luxury; no visible corporate branding; wears silver rings on most fingers, some bearing small data-port aesthetics; carries a worn leather satchel containing her physical reader deck and Mesh-access rig; no shoes visible — operates barefoot in her Narrows setup unless weather demands otherwise"
+  },
+  "image_prompt": "Cyberpunk portrait of a slight 34-year-old woman of mixed Quechua and Russian heritage, warm tawny skin with high cheekbones, long black hair braided and woven with iridescent silver and blue data-thread that glows softly, irises shifting through slow cycle of silver, amber, and pale violet geneware, thick dark brows, intensely focused expression, wearing layered deep red and indigo fabrics faded from wear, seated at a small table with blue and white fiber-optic curtain backdrop, hands folded, stillness and precision in posture, silver rings on fingers, moody atmospheric lighting with data-thread highlights, close-up portrait angle, shallow depth of field, matte skin, warm and cool color contrast, Tier 4 Narrows aesthetic, mystical yet grounded, cyberpunk magical realism, shot at dusk, neon and ambient light mixing, intricate detail on thread-work, --ar 2:3 --v 6"
 }

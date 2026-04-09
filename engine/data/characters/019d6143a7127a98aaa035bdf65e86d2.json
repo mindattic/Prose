@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "Highland Park Autonomous Zone, near Lake Shore Drive and Division",
-  "description": "Vesna is lean and angular, her dark brown skin carrying faint scarring from a childhood in Hough Reclamation where she learned to run before she learned to read. Her natural hair grows in a dense crown she keeps partially shaved on the left side, stenciled with a geometric pattern that shifts color with her mood — a cheap geneware dye mod she got at sixteen from a bodega-surgeon. Her eyes are sharp, always scanning exits and surfaces, evaluating wall textures the way other people evaluate faces. She has a small tattoo of an E.L.F. sigil behind her left ear, a prayer mark she touches when she's working at height.\n\nShe is furiously alive and furiously angry — not in a way that spills out constantly, but in the way a banked fire is still a fire. Her murals appear overnight on Axiom substation walls, on Ferrogate Transit pylons, on the blank faces of Tessera dormitory blocks: massive, bioluminescent compositions that reference pre-Meridian 88 Balkan folk patterns twisted into scathing corporate critique. She doesn't talk much about her Serbian grandmother or her Nigerian grandfather, but both live in her work. She is guarded with strangers and unexpectedly tender with people she trusts.",
+  "description": "Vesna is lean and angular, her dark brown skin carrying faint scarring from a childhood in Hough Reclamation where she learned to run before she learned to read. Her natural hair grows in a dense crown she keeps partially shaved on the left side, stenciled with a geometric pattern that shifts color with her mood — a cheap geneware dye mod she got at sixteen from a bodega-surgeon. Her eyes are sharp, always scanning exits and surfaces, evaluating wall textures the way other people evaluate faces. She has a small tattoo of an E.L.F. sigil behind her left ear, a prayer mark she touches when she's working at height.\n\nShe is furiously alive and furiously angry — not in a way that spills out constantly, but in the way a banked fire is still a fire. Her murals appear overnight on Axiom substation walls, on Ferrogate Transit pylons, on the blank faces of Tessera dormitory blocks: massive, bioluminescent compositions that reference pre-GLMZ Balkan folk patterns twisted into scathing corporate critique. She doesn't talk much about her Serbian grandmother or her Nigerian grandfather, but both live in her work. She is guarded with strangers and unexpectedly tender with people she trusts.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -177,7 +177,7 @@
     "Ferrogate Transit",
     "Dredge Mining Collective",
     "The Reclamation Assembly",
-    "Meridian 88",
+    "GLMZ",
     "Grandmother",
     "The CEO",
     "Neurochemical Dispersal Grenade",
@@ -185,5 +185,26 @@
     "Gravimetric Collapse Charge GCC-9",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African (Nigerian) / Eastern European (Serbian)",
+    "height_cm": 168,
+    "weight_kg": 54,
+    "build": "Lean and angular with defined musculature in shoulders and forearms from years of climbing and sustained overhead work. Low body fat, wiry rather than delicate.",
+    "hair_color": "Dark brown with mood-reactive synthetic pigmentation overlay — shifts between deep indigo, copper, and sickly yellow depending on emotional state and geneware glitch frequency",
+    "hair_style": "Dense natural crown worn in loose waves; left side shaved in a graduated pattern with geometric stencil marks (triangles, asymmetric lines) that catch light",
+    "hair_length": "Medium (back), Shaved (left side)",
+    "eye_color": "Dark brown, sharp and constantly mobile",
+    "skin_tone": "Deep warm brown with subtle red undertone — complexion reflecting mixed West African and Mediterranean heritage",
+    "complexion": "Fine-grained skin with minimal scarring except faint linear marks across knuckles and palms from childhood in Hough Reclamation. High cheekbones, angular jaw. Minimal grooming — no makeup, skin kept clean but not pampered. A faint groove between eyebrows from chronic focus.",
+    "distinguishing_marks": [
+      "Small E.L.F. sigil tattoo behind left ear in faded black ink — ritualistic prayer mark, touched compulsively during high-work",
+      "Pressure-sensitive callus modifications across fingertips appearing as darker, slightly raised patches — barely visible unless examined closely",
+      "Faint childhood burn scar along inner left wrist (1.5 inches, pale against dark skin)"
+    ],
+    "visible_augmentations": "Mood-reactive hair geneware is the only obvious modification — chromatic shifts in shaved pattern are intentional display. Pressure-sensitive fingertip mods are subcutaneous and invisible. No visible cyberware or chrome.",
+    "posture_movement": "Economical, predatory grace — moves through spaces as if constantly evaluating verticality and exit vectors. Shoulders slightly forward. Hands often at rest but ready. Eyes scan surfaces and perimeters before engaging with people. Climbs with casual confidence, limbs moving independently. Sits with knees bent, ready to move. Speaks quietly; listeners lean in.",
+    "clothing_style": "Tier 4-5 utilitarian: fitted charcoal cargo pants with excessive pockets (paint-stained, reinforced knees), steel-toed climbing boots (Apex brand, worn), oversized black or dark grey hoodie layered over form-fitting athletic tank. Fingerless gloves (often removed). Small pressure-sensitive pack worn cross-body. No corporate branding. Clothes chosen for function over aesthetics — climbing-ready, paint-resistant, dark enough for 03:00 work. Worn but intentionally maintained."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of 23-year-old lean Black-Serbian woman with sharp angular features and deep warm brown skin, dense natural hair crown with left side shaved in geometric stencil pattern, mood-reactive synthetic pigment shifting indigo and copper, dark intense eyes constantly scanning, small E.L.F. sigil tattoo behind left ear, wearing oversized black hoodie over athletic tank with pressure-sensitive fingerless gloves, standing against industrial corrugated metal wall covered in bioluminescent spray paint residue, cool neon reflected across her skin and shaved hair pattern, moody atmospheric lighting with deep shadows, subtle cyan and magenta color grading, gritty underground art collective aesthetic, late-night urban explorer energy, hyperrealistic skin texture, cinematic depth of field --ar 2:3 --v 6"
 }

@@ -32,8 +32,8 @@
     "feel": "A place that exists to be extracted from. Every valuable thing -- the water, the shoreline, the labor -- has been pulled out and processed somewhere else. What remains is the residue, human and material. The Slagshore doesn't feel abandoned; it feels consumed.",
     "tags": []
   },
-  "demographics": "Approximately 28,000 residents in the non-Axiom zones, predominantly excluded populations and Tier 1. Significant Gulf Coast refugee community. Axiom terminal employs zero local residents -- the automation is complete and the maintenance crews commute from Meridian 88.",
-  "economy": "Formal economy is effectively zero. The gray economy runs on terminal scavenging -- recovering usable materials from the cargo waste stream -- and on informal services for the checkpoint traffic flowing through the Gatemouth to the east. Some residents work as unlicensed guides for people trying to reach the GLM without going through official border processing.",
+  "demographics": "Approximately 28,000 residents in the non-Axiom zones, predominantly excluded populations and Tier 1. Significant Gulf Coast refugee community. Axiom terminal employs zero local residents -- the automation is complete and the maintenance crews commute from GLMZ.",
+  "economy": "Formal economy is effectively zero. The gray economy runs on terminal scavenging -- recovering usable materials from the cargo waste stream -- and on informal services for the checkpoint traffic flowing through the Gatemouth to the east. Some residents work as unlicensed guides for people trying to reach the GLMZ without going through official border processing.",
   "power_structure": "Axiom Industries holds sovereign authority over the terminal and shoreline. The residential zones have no formal governance. A community council of long-term residents makes decisions by consensus, but their authority extends exactly as far as their neighbors' willingness to listen. A scavenger collective called the Reclaimers organizes the terminal waste stream economy with surprising efficiency.",
   "dangers": [
     "Air quality -- prolonged exposure to Slagshore particulate causes respiratory damage that the local clinics cannot treat",
@@ -56,7 +56,7 @@
   "connections": {
     "adjacent_to": [
       "The Gatemouth (Michigan City, east along the lakeshore)",
-      "Meridian 88 southern districts (north, via cargo routes)",
+      "GLMZ southern districts (north, via cargo routes)",
       "Indiana Exclusion Territories (south)"
     ],
     "exits": [],

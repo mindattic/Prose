@@ -60,7 +60,7 @@
     "Gerváz's coded infrastructure map of Highland Park Autonomous Zone is exactly what a resistance group, a corponation, and the HPAZ council itself are all separately searching for — and he doesn't know all three are looking",
     "He recognizes a demolished building in a player character's old photo and begins talking — and the story of why it was really demolished leads somewhere dangerous"
   ],
-  "narrative_function": "Information source with deep institutional memory, quest giver with historical knowledge of urban zones, world-building anchor for the political history of Meridian 88, moral counterweight who provides perspective on what has been lost.",
+  "narrative_function": "Information source with deep institutional memory, quest giver with historical knowledge of urban zones, world-building anchor for the political history of GLMZ, moral counterweight who provides perspective on what has been lost.",
   "augmentations": "Retractable cat ears, heathered grey (cosmetic, installed age 54). Corrective eye augmentation for macular degeneration. Pacemaker-adjacent cardiac stabilizer, medical grade.",
   "daily_life": "Rises early, claims a bench at Escanaba Gateway Arrivals Terminal 7, spends the day writing in his notebook and talking to anyone who sits near him; makes himself useful by interpreting transit regulations for newly arrived migrants who can't parse the official language.",
   "affiliation": "No formal affiliation; loosely connected to a transit hub collective of older expelled citizens he calls 'the Slow Bench Parliament'",
@@ -257,5 +257,26 @@
     "ARCHIVE",
     "Lazarus Pharmaceutical Emetix-9 'Purge'"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African (Ouattara) / Scandinavian (Siljanovski)",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Tall and lightly stooped, shoulders caved slightly inward as though bearing a weight distributed across decades. Lean but not frail—the build of someone who was once muscular and has aged into wiriness rather than atrophy. Visible in the forearms and neck is the remnant of strength.",
+    "hair_color": "White with ashen grey at the temples; darker brown visible only in the beard",
+    "hair_style": "Beard trimmed with deliberate care—neat, squared-off, the grooming of a man who maintains standards in reduced circumstances. Head hair swept back, thinning at the crown.",
+    "hair_length": "Medium (head), Medium (beard)",
+    "eye_color": "Deep brown, augmented with corrective neural overlay for macular degeneration—faint silver tracery visible at the iris edge when light catches them",
+    "skin_tone": "Deep brown base faded to ash-grey at the temples and along the jawline; age-spots scattered across forehead and the back of the hands like a map of lost coordinates",
+    "complexion": "Weathered and lined. Deep nasolabial folds. Forehead creased by seven decades of frowning at documents and city plans. Cheeks hollow but not gaunt. Skin texture rough, age-spotted, the complexion of someone who has spent significant time outdoors recently—sun-damaged at the ears and the bridge of the nose.",
+    "distinguishing_marks": [
+      "Network of fine scars across the knuckles of the right hand, pale and old, consistent with archival work or document handling",
+      "A burn scar on the left forearm (inner), roughly 4cm, faded to pale brown—deliberately positioned to be hidden by standard clothing",
+      "Deep vertical crease between the eyebrows, permanent even at rest"
+    ],
+    "visible_augmentations": "Pair of retractable cat ears mounted on the skull above and behind the natural ears, heathered grey with slight metallic sheen at the joints. When retracted, they leave a subtle bulge at the temples. The incongruity of them—sleek, cosmetic, installed in mid-life—is immediately striking on a man of his apparent gravitas. Faint silver circuitry visible at the iris edge when light catches his augmented eyes.",
+    "posture_movement": "Carries himself as though still occupying the space of his former authority, but the posture is now inverted—a man adjusting downward. Walks deliberately, not shuffling, with a slight favor to the left side. Sits with careful attention to his back. Speaks with his hands, though the gestures have become smaller, more economical. His bearing suggests someone still processing a significant loss of status; there is a courtliness to his movements, a habit of formality worn like an old coat.",
+    "clothing_style": "Tier 4 (working class, but aspirational): a dark wool coat (navy, resoled at the seams, clearly maintained), good quality but aged. Underneath, neutral layers—cream linen shirt, dark trousers. A wide-brimmed hat of the kind no one under fifty wears anymore, dark felt, slightly faded at the band. Shoes have been resoled twice and polished regularly. His physical notebook—leather-bound, water-stained, clearly his constant companion—is carried in a canvas satchel worn crosswise. He dresses carefully in old things, avoiding both the disposable fast-fashion of Tier 5 and the aggressively contemporary styling of Tier 2. Everything about his clothing reads as: a man of means who has been reduced, and is maintaining dignity through precision."
+  },
+  "image_prompt": "A dignified elderly man, 188cm tall, deep brown skin faded to ash-grey at the temples, white beard trimmed with fastidious care, deep-set brown eyes with faint silver augmentation tracery at the iris. He wears a worn navy wool coat over cream linen, dark trousers, polished shoes resoled twice, and a wide-brimmed felt hat no one under fifty wears anymore. The most striking feature: a pair of retractable heathered-grey cat ears mounted on his skull, sleek and cosmetic, incongruously placed on a man of gravitas. He sits on a transit hub bench at Escanaba Gateway, hunched slightly forward as though still adjusting to reduced space, holding a leather-bound physical notebook. The lighting is cool and institutional—fluorescent overhead mixed with grey daylight from high terminal windows. His posture suggests someone processing a deep loss while maintaining courtly dignity. Cyberpunk genre, realistic aging, grounded and specific details, institutional transit hub setting, melancholic and contemplative mood. --ar 2:3 --v 6"
 }

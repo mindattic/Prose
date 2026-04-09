@@ -31,7 +31,7 @@
     "core_desires": [
       "Control — over their body, their schedule, their future",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Exercises compulsively — the body must be ready, always",
@@ -286,5 +286,26 @@
     "Stratum",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Japanese / Eastern European (Turkic) with undetermined tertiary lineages",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and economical—muscle distributed for endurance rather than bulk. Movements suggest compressed efficiency, as if they've learned to occupy minimal space despite their psychological presence.",
+    "hair_color": "Dark brown with deliberate silver threading at the temples",
+    "hair_style": "Asymmetrical undercut; longer on one side (covers scarring), shorter on the other for visibility and counterbalance",
+    "hair_length": "Medium (varied)",
+    "eye_color": "Dark brown with faint amber undertones—natural, unreplaced",
+    "skin_tone": "Warm beige undertone with olive cast, reflecting mixed Asian and Central Asian heritage",
+    "complexion": "Sharp cheekbones, narrow jaw, skin maintained with clinical precision—minimal scarring except where deliberately hidden. Expression defaults to neutral observation. Eyes move constantly; they are always recording.",
+    "distinguishing_marks": [
+      "Surgical scar running from left temple to jawline, partially obscured by longer hair on that side, suggesting facial reconstruction or trauma removal",
+      "Thin pale line across the right wrist—self-inflicted or combat-related, deliberately left unhealed",
+      "Faint tattooed circuit pattern along the inside of left forearm—custom work, non-standard design, possibly ritual or identification marker"
+    ],
+    "visible_augmentations": "Chrome synthesizer port at the base of the neck—roughly the size of a thumb, visible when head is tilted or hair is swept back. The port has a matte gunmetal finish with subtle wear marks. No visible respiratory augmentation; lungs are replaced internally and undetectable. The overall aesthetic suggests someone who doesn't bother hiding what they are.",
+    "posture_movement": "Still when stationary—genuinely still, not the tense stillness of anxiety but the economical stillness of predatory focus. Moves with controlled precision, weight always centered and ready. Hands at rest are never fully relaxed; fingers maintain micro-movements suggesting constant sensory processing. Eyes scan spaces methodically before settling. Speech patterns shift between clipped efficiency and unexpected verbosity, depending on context.",
+    "clothing_style": "Tier 3-4 practical wear with personal modifications. Matte black layered jacket (Kessler brand knockoff, reinforced at stress points) over grey utility vest with asymmetrical pockets and cable anchors. Dark fitted pants with cargo modifications and reinforced knee panels. Worn tactical boots with custom grip sole. Thermal-responsive base layers visible at collar and wrists. No logos or corporate affiliation visible. Jewelry minimal—only a worn brass ring on right index finger, possibly a ritual object or timer. Functional, forgettable, designed not to register as either wealthy or desperate."
+  },
+  "image_prompt": "cyberpunk portrait of a 25-year-old nonbinary surveillance specialist with Japanese-Eastern European mixed heritage, lean athletic build, dark brown hair with silver temple streaks in asymmetrical undercut style, sharp cheekbones, faint surgical scar along left jaw partially hidden by longer hair, dark observant eyes scanning the scene, matte chrome augmentation port visible at base of neck glinting under neon, wearing layered matte black reinforced jacket over grey utility vest with cable anchors, dark fitted tactical pants, worn boots, standing in cramped residential corridor between megastructures with neon-lit narrow walls and stacked living units, moody blue and purple lighting with warm amber accent on face, cinematic depth of field, hyperrealistic skin texture, film noir surveillance aesthetic, utterly still and focused posture radiating controlled precision, arms relaxed but hands ready, Blade Runner meets street-level realism --ar 2:3 --v 6"
 }

@@ -240,5 +240,26 @@
     "Silver",
     "Déjà Vu"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Serbian-Montenegrin",
+    "height_cm": 183,
+    "weight_kg": 71,
+    "build": "Lean and angular with the musculature of someone who has spent decades on water — broad shoulders, defined forearms, minimal body fat. Posture suggests ease in motion rather than static repose.",
+    "hair_color": "Silver-white, naturally gray since her forties",
+    "hair_style": "Long braid secured with a dual-function sensor clip housing miniaturized weather instrumentation",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with faint amber undertone — natural",
+    "skin_tone": "Warm dark brown with gray-olive undertone, weathered from decades of lake exposure",
+    "complexion": "Lines around the eyes and mouth from sustained squinting in glare and wind; sun-weathered but well-maintained. Minimal makeup. Hands show calluses and minor scars from equipment handling and weather work.",
+    "distinguishing_marks": [
+      "Fine scar tissue along the left side of her neck, barely visible but palpable — result of the 2201 near-drowning and subsequent cochlear implant installation",
+      "Subdermal sensor array on both forearms visible as faint metallic tracery beneath the skin, more pronounced under direct light",
+      "Left forearm displays active color-shifting geneware that transitions slowly through blues, teals, and greens in response to real-time lake data — currently a medium teal indicating stable turbidity"
+    ],
+    "visible_augmentations": "Left forearm geneware modification (primary visual identifier). Faint subdermal sensor tracery visible on both forearms under certain light angles. Small sealed port behind left ear housing cochlear implant (typically concealed by hair, visible when braided). Custom sensor clip doubled as functional weather instrument.",
+    "posture_movement": "Economical, purposeful movement — no wasted motion. Often oriented toward windows or toward the lake, even in conversation. Hands move with technical precision when discussing data. Stance is stable and grounded, adapted for standing on moving platforms. Slight forward tilt of the head — compensation for directional audio from the cochlear implant.",
+    "clothing_style": "Tier 2-3 academic/field blend: waterproof lab coat (custom-tailored, high-end synthetic with temperature regulation), layered thermal wear beneath, reinforced cargo pants with sealed pockets for instruments, waterproof field boots with excellent tread. Accessorizes with a woven bracelet made from synthetic lake-plant fiber (gift from students). Wedding band worn on right hand (left hand often in water). No corporate branding. Watches and instruments are personal or University Spine-issued, never ostentatious."
+  },
+  "image_prompt": "A 63-year-old woman of mixed West African and Serbian heritage with silver-white hair in a long braid secured with a sensor clip, standing on a lakefront research platform at dawn. Tall, lean, weathered build with deep brown skin and gray-olive undertone. Her left forearm displays active color-shifting bioluminescent geneware in teals and blues, responding to environmental data. Subdermal sensor tracery faintly visible on both forearms. Wearing a custom waterproof lab coat over thermal layers and reinforced cargo pants. The background shows Lake Michigan in moody morning light, with data readout screens visible on the platform. Her posture is grounded and purposeful, eyes oriented toward the water. Cinematic science-fiction realism, 2226 aesthetic, cool color temperature, soft morning light mixing with bioluminescent accents, professional documentary photography style, captured with technical precision --ar 2:3 --v 6"
 }

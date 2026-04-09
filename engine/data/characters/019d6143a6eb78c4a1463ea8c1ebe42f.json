@@ -243,5 +243,25 @@
     "Copper",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 173,
+    "weight_kg": 68,
+    "build": "Lean and economical, with the low body fat and dense muscle of someone who walks twelve kilometers nightly through confined spaces. Shoulders slightly rounded from years of ducking under low clearances.",
+    "hair_color": "Dark brown with early premature graying at temples and scattered through close-cropped sides",
+    "hair_style": "Close-cropped, practical, requiring minimal maintenance",
+    "hair_length": "Short",
+    "eye_color": "Augmented with concentric geometric rings in copper and black over natural dark brown iris",
+    "skin_tone": "Warm ochre with subtle undertones reflecting mixed West African and Northern European ancestry",
+    "complexion": "Unlined face with the particular pallor of someone working nocturnal underground shifts; skin carries faint permanent smell of machine oil and ozone; minimal grooming beyond functional necessity; calm, patient expression",
+    "distinguishing_marks": [
+      "Left forearm wrapped in a Ferrogate-issue haptic interface overlay displaying subtle circuit patterns and sensor nodes beneath semi-transparent polymer skin",
+      "Patterned copper-and-black geometric iris modifications visible as concentric rings when light catches his eyes"
+    ],
+    "visible_augmentations": "Left forearm haptic interface overlay — a semi-translucent polymer sleeve with visible circuitry, sensor nodes, and faint bioluminescent readouts. Geometric patterned iris modifications visible in direct light. Everything else is subcutaneous or internal.",
+    "posture_movement": "Economical and deliberate movement; walks with the careful balance of someone navigating narrow catwalks and low tunnels; stands with slight forward lean as if listening to something. Stillness is his default state — he does not fidget or perform energy.",
+    "clothing_style": "Tier 4 working-class utilitarian: Ferrogate Transit-issued gray-blue coveralls with reflective piping and multiple utility pockets, worn but well-maintained. Under-layer is a black thermal mesh shirt. Work boots are reinforced with steel toe and grip soles, scuffed from tunnel work. No jewelry except a battered analog watch on his right wrist. Carries a Ferrogate-issued toolkit on a worn canvas belt. No corporate logos or status markers — pure function."
+  },
+  "image_prompt": "Cyberpunk character portrait, Tarquin Sefah-Björnstad, lean medium-height man with warm ochre skin and early graying close-cropped dark hair at temples, natural dark brown eyes with striking augmented geometric concentric copper-and-black iris rings, calm patient expression. Left forearm wrapped in translucent haptic interface overlay with visible circuitry and faint bioluminescent sensor nodes. Wearing Ferrogate Transit gray-blue coveralls with reflective piping over black thermal mesh, steel-toed work boots, worn canvas tool belt. Standing in dim subterranean maintenance tunnel lit by cool blue LED strips, metal walls and pipes in background, faint ozone and machine oil atmosphere. Subtle bioluminescent glow from forearm augmentation. Still, economical posture. Photorealistic, moody underground industrial lighting, shallow depth of field, cinematic, --ar 2:3 --v 6"
 }

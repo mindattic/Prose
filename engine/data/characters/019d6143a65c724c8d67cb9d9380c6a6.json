@@ -13,7 +13,7 @@
   "age": 83,
   "status": "active",
   "location": "Avalon Quiet, the Foundry Rest, Unit 9 (a former union hall converted to senior housing), near Lincoln and Addison",
-  "description": "Miroljub is a person of considerable physical presence despite their age — still broad through the shoulders, hands that are visibly enlarged by decades of machine work and two decades of chrome reinforcement, skin the color of dark river clay mapped with old hydraulic burns along both forearms. They have a full beard, silver-white, kept long and braided with small steel hex-nuts — not decoration but notation: each nut represents a contract won. There are thirty-one of them. Their eyes are deep-set under heavy brows and have been modified with retinal overlays that display scrolling text when they are reading union documents, which is often. They move slowly but without any suggestion that the slowness is weakness.\n\nMiroljub organized workers at Dearborn Forge for forty-one years, starting as a floor welder and ending as the most recognizable union figure in Meridian 88's manufacturing sector. They retired at seventy-eight when their heart required a significant reconstruction, and they have spent the five years since refusing to actually retire in any functional sense — still advising, still reviewing contracts, still showing up to shop-floor solidarity actions in a mobility assist suit they make no attempt to hide. They are living legend to people who know the labor history and an incomprehensible relic to people who don't, and they genuinely do not care which category any given person falls into. They are here and they are working.",
+  "description": "Miroljub is a person of considerable physical presence despite their age — still broad through the shoulders, hands that are visibly enlarged by decades of machine work and two decades of chrome reinforcement, skin the color of dark river clay mapped with old hydraulic burns along both forearms. They have a full beard, silver-white, kept long and braided with small steel hex-nuts — not decoration but notation: each nut represents a contract won. There are thirty-one of them. Their eyes are deep-set under heavy brows and have been modified with retinal overlays that display scrolling text when they are reading union documents, which is often. They move slowly but without any suggestion that the slowness is weakness.\n\nMiroljub organized workers at Dearborn Forge for forty-one years, starting as a floor welder and ending as the most recognizable union figure in GLMZ's manufacturing sector. They retired at seventy-eight when their heart required a significant reconstruction, and they have spent the five years since refusing to actually retire in any functional sense — still advising, still reviewing contracts, still showing up to shop-floor solidarity actions in a mobility assist suit they make no attempt to hide. They are living legend to people who know the labor history and an incomprehensible relic to people who don't, and they genuinely do not care which category any given person falls into. They are here and they are working.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -278,7 +278,7 @@
     "Avalon Quiet",
     "The Undertow",
     "Gravemoss Biofoundry",
-    "Meridian 88",
+    "GLMZ",
     "Kang-Petrov Arms KPA-8 'Solidarity'",
     "Irontide Tidal Energy",
     "Crucible Industries CR-9 'Foundry'",
@@ -289,5 +289,26 @@
     "Steel",
     "Clay"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Serbian / Finnish-Hawaiian (Essilfie-Tuivaiti composite lineage)",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thick-chested despite age; considerable mass concentrated in torso and upper body from five decades of welding and machine work. Legs slightly atrophied from reliance on mobility assist, but arms remain visibly muscular beneath loose skin.",
+    "hair_color": "Silver-white",
+    "hair_style": "Full, braided beard with thirty-one small steel hex-nuts woven throughout; each nut represents a won contract from their organizing years",
+    "hair_length": "Long (beard extends to mid-chest)",
+    "eye_color": "Deep brown, modified with subtle retinal overlay implants that display scrolling text during reading",
+    "skin_tone": "Dark brown, the color of river clay, with significant weathering and age-related texture",
+    "complexion": "Heavy-featured, deep-set eyes beneath pronounced brows; face bears the character of decades of shop-floor work. Hydraulic burns visible along both forearms as darker, scarred patches. Hands are visibly enlarged from machine work and chrome reinforcement.",
+    "distinguishing_marks": [
+      "Bilateral hydraulic burns running in streaked patterns along both forearms from mid-wrist to elbow, darker and raised against surrounding skin",
+      "Chromatic scarring where hand/forearm chrome skeletal reinforcement meets natural tissue at wrists and elbows",
+      "Deep calloused ridges across palms and along all finger joints, visible even in old age"
+    ],
+    "visible_augmentations": "Chrome-reinforced hands and forearms (industrial-grade, visible at wrists as smooth metallic caps and along forearm musculature as subtle chrome striating); external mobility assist exo-suit worn daily (configured to resemble heavy tactical clothing, gunmetal gray and worn matte black, fitted over shoulders and spine); retinal implants barely visible as slight amber luminescence in deep-set eyes when active",
+    "posture_movement": "Moves deliberately and without hurry; the slowness is intentional and carries weight rather than frailty. Stands with a slight forward lean supported by the exo-suit. Hands often remain in lap or folded across chest when seated. Makes direct eye contact without apology. Voice is steady but deepened by age and cardiac reconstruction.",
+    "clothing_style": "Tier 3 working-class aesthetic, deliberately maintained as such despite pension stability. Favors worn denim work shirts (often union-logoed), heavy canvas pants, and sturdy boots suitable for shop floors. Exo-suit worn visibly over clothing rather than concealed. A battered union pin from 2154 is always affixed to collar. Wears a simple steel wedding band and a copper wire bracelet twisted by hand (claimed to communicate with building ELF systems, though likely symbolic)."
+  },
+  "image_prompt": "An 83-year-old nonbinary figure with dark river-clay skin and a long silver-white braided beard woven with thirty-one steel hex-nuts, sitting in a worn union hall chair; deep-set brown eyes with subtle amber retinal implant glow, hydraulic burn scarring visible across both forearms, chrome-reinforced hands with metallic wrist caps, wearing a matte gunmetal exo-suit fitted over an old union denim shirt; heavy brow, lined face, deliberate posture; moody lighting from overhead industrial fixtures casting warm shadows, Dearborn Foundry Rest background with worn metal fixtures and old machinery; cinematic, documentary-style cyberpunk realism, grainy film grain, --ar 2:3 --v 6"
 }

@@ -204,5 +204,26 @@
     "Palette",
     "Elena Vasquez-9"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Icelandic",
+    "height_cm": 128,
+    "weight_kg": 26,
+    "build": "Rail-thin and wiry with the compact muscularity of a child who moves constantly through urban terrain. Underfed but not starving — subsistence-level nutrition sustained by vendor scraps and occasional proper meals. Her frame is all angles: sharp elbows, visible ribs under loose clothing, knees that seem too large for her legs.",
+    "hair_color": "Faded orange — uneven pigment application from a salvaged or shared cartridge, darker roots showing where natural dark brown is growing back in",
+    "hair_style": "Close-cropped, uneven, self-cut or cut by another child with blunt implements. Practical for moving through tight spaces without catching on anything.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, wide-set, with the perpetually alert quality of someone constantly mapping escape routes",
+    "skin_tone": "Deep warm brown with subtle warm undertones from her Icelandic heritage creating a complex, layered complexion",
+    "complexion": "Clean but weathered for her age — sun-darkened from outdoor route-running, hands calloused at fingertips and palms from climbing, a small scar on her left cheekbone from an undefined past incident. No cosmetic grooming; functional cleanliness only. Slight shadows under her eyes suggesting inconsistent sleep.",
+    "distinguishing_marks": [
+      "Thin white scar on left cheekbone, roughly 2cm long, slightly puckered at one end",
+      "Rope-burn calluses on both palms and inner fingers, evidence of climbing and gripping practices",
+      "Faint bruise on right shin in various stages of healing — occupational hazard of parkour-style movement through industrial terrain"
+    ],
+    "visible_augmentations": "None. Completely organic. Her only expressed desire is for future augmentation — specifically cat ear implants, for which she has strong personal color preferences but limited means.",
+    "posture_movement": "Constantly in motion or coiled to move. Even when standing still, her weight is balanced on the balls of her feet. She moves through space like she's reading it — head up, eyes tracking sight lines and obstacles, body angled to move laterally or upward at any moment. Her natural state is forward momentum; stillness reads as temporary.",
+    "clothing_style": "Oversized salvage-canvas vest in weathered gray-tan, clearly scavenged from adult-sized stock, worn open over a faded undershirt with mismatched sleeves. The vest is her identity and tool — every pocket filled with small items: message capsules, trade goods, food scraps, a stub of pencil, things she might barter or need. Cheap pull-on pants in industrial gray, patched at both knees with different fabric colors. Worn slip-on shoes with the heels stomped flat. No jewelry except a single rubber band holding her hair back. Her aesthetic is 100% function — every item chosen for utility or survival, nothing for aesthetics. Tier 5 by default, but her role gives her access to Tier 3-4 spaces where she operates invisibly."
+  },
+  "image_prompt": "A nine-year-old girl, rail-thin with deep brown skin and wide alert eyes, close-cropped faded orange hair with dark roots showing. She wears an oversized weathered gray salvage-canvas vest with too many pockets over a mismatched undershirt, cheap gray industrial pants patched at the knees, and stomped-heel shoes. She's in motion — balanced on the balls of her feet, angled forward, reading the space around her like water through pipes. Urban cyberpunk setting, gritty industrial corridor with visible pipe infrastructure and stall market backdrop. Cold fluorescent and neon lighting casting deep shadows. She has the focused intensity of a child for whom movement is survival. Shot from waist-up, dynamic pose suggesting constant readiness. Photography style, cinematic, depth of field, high contrast. --ar 2:3 --v 6"
 }

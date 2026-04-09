@@ -259,5 +259,27 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Nesting Doll"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 173,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and solid, muscular through the chest and arms from three decades of manual labor; carries weight with functional density rather than bulk, core strength evident in her posture",
+    "hair_color": "Natural black with silver threads",
+    "hair_style": "Close-cropped, natural texture, practical and low-maintenance",
+    "hair_length": "Short",
+    "eye_color": "Right eye: dark brown; Left eye: amber fixed-focus optical implant with visible iris ring",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Face weathered by forty-four years and outdoor depot work; jaw is square and deliberate; small scar tissue around left orbital socket from the 2184 Ferrogate collapse; skin carries the dry, worked texture of someone who spends long hours in industrial weather; minimal grooming vanity, maximum readability",
+    "distinguishing_marks": [
+      "Thin, pale scar running from left temple down to cheekbone — thermal burn from the 2184 Ferrogate line collapse accident",
+      "Calloused palms and scarred knuckles consistent with thirty years of physical rail work",
+      "Upside-down Ferrogate Transit badge permanently pinned to chest, positioned over left breast",
+      "Faint discoloration around left eye socket where the optical implant was integrated"
+    ],
+    "visible_augmentations": "Left eye replaced with basic-model optical implant: amber iris ring, fixed-focus corrective lens, no cosmetic blur or integration — deliberately visible as a badge of injury and commitment. Rudimentary haptic data-sleeve on right forearm (second-hand, visibly worn, occasionally flickers with glitch patterns), extending from wrist to mid-forearm with exposed circuit seams and mismatched repair patches",
+    "posture_movement": "Stands with weight evenly distributed, shoulders slightly forward — a loader's stance. Moves with purpose and minimal wasted motion; she does not hurry but does not linger. When listening to someone, her head tilts slightly toward them (compensation for lost left-eye depth perception). Hands are frequently in motion: taking notes, gesturing to clarify contract language, fingers drum on table edges while thinking",
+    "clothing_style": "Layers of salvaged and repaired workwear in muted earth tones: insulated Carhartt vest over a thermal underlayer, canvas pants with reinforced seams, steel-toed boots worn to comfort rather than shine. A faded Ferrogate jacket (circa 2190s, patched multiple times) worn as an outer layer in cooler months. No jewelry except the inverted transit badge. Clothing is Tier 4 working-class utility — function over presentation, but maintained with deliberate care. Carries a canvas satchel worn soft with use, perpetually full of paper ledgers and union documents"
+  },
+  "image_prompt": "A 44-year-old Black woman with broad shoulders and deep umber skin, close-cropped natural hair silver-threaded, standing in a gritty industrial cyberpunk setting. Her left eye is a glowing amber optical implant with a fixed iris ring, her right eye dark brown and weathered. She wears layered salvaged workwear—insulated Carhartt vest, thermal underlayer, reinforced canvas pants, steel-toed boots. An upside-down Ferrogate Transit badge is pinned to her chest. A second-hand haptic data-sleeve wraps her right forearm with visible circuit seams and glitch flickers. She has a thin scar running from temple to cheekbone. Her posture is loader's stance—grounded, purposeful, immovable. In the background, a converted industrial transit depot (the Carriage House) with dim amber lighting and stacks of paper ledgers visible. Her hands are calloused, one holding a worn notebook. Mood: resolute, methodical, dangerous in her certainty. Film noir meets gritty union hall realism. Weathered, unflinching, the living archive of every broken promise. --ar 2:3 --v 6"
 }

@@ -239,5 +239,24 @@
     "Nesting Doll",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Caucasian / Pacific Islander (Tongan/Samoan)",
+    "height_cm": 167,
+    "weight_kg": 58,
+    "build": "Wiry and lean with corded muscle in shoulders and forearms from constant motion and street work; no excess fat, efficient frame built for speed and stamina rather than raw power",
+    "hair_color": "Natural black with warm undertones",
+    "hair_style": "Practical braided crown, usually a single thick braid down the back or wrapped around her head for work days; leaves face clear and unobstructed",
+    "hair_length": "Long (mid-back length)",
+    "eye_color": "Dark brown, alert and constantly scanning",
+    "skin_tone": "Warm tan-brown with golden undertones reflecting mixed West African and Pacific Islander ancestry",
+    "complexion": "Clear, unblemished aside from intentional scar; sharp cheekbones, defined jawline, expressive mouth that moves constantly when she speaks; no makeup, practical grooming",
+    "distinguishing_marks": [
+      "Vertical scar bisecting left eyebrow from brow to mid-forehead, deliberately kept unrepaired; pale, thin line about 4cm long indicating a clean blade or wire injury sustained at age twenty-two"
+    ],
+    "visible_augmentations": "Prehensile geneware tail approximately 70-80cm long with dark brown/black fur, emerges from base of spine at tailbone; tail is constantly in motion—curling, uncurling, coiling around chair legs or flicking dismissively. Subdermal impact padding visible as faint hardened ridges along both forearms and shins under skin, most noticeable when she flexes or when light hits at angles; slightly darker or lighter than surrounding skin depending on implant type.",
+    "posture_movement": "Never still—bouncing one heel while standing, fingers perpetually turning a coin or small object, tail in constant micro-movements. Walks with economical precision, shoulders loose, ready to move in any direction. Leans forward when listening, making eye contact that feels aggressive in its intensity. Sits like she might stand up at any moment.",
+    "clothing_style": "Layered, practical, dark colors (charcoal, black, deep gray). Typically: fitted black synth-leather jacket over a dark long-sleeve shirt, cargo pants with reinforced pockets, worn black boots with good traction. Tier 4 working-class gear—functional, durable, not flashy. Silver coin on a thin chain around neck. No corporate branding, no pretense. Clothes fit like she's already mentally discarded them."
+  },
+  "image_prompt": "cyberpunk street enforcer, young woman with dark skin, long black braided hair, wiry athletic build, vertical scar through left eyebrow, dark prehensile tail with fur coiled around chair leg, wearing layered dark synth-leather jacket and cargo pants, bouncing heel, intense dark brown eyes, warm tan complexion, Shallowgrave Tier 4 working class, neon-lit strip mall corridor at night, cool blue and amber street lighting, motion blur suggesting constant fidgeting, photorealistic, gritty urban cyberpunk aesthetic, volumetric fog, worn concrete and LED signage in background, shallow depth of field focusing on face and tail, --ar 2:3 --v 6"
 }

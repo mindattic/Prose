@@ -29,7 +29,7 @@
       "Never being able to stop running — the lifestyle is a trap disguised as freedom"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "To find the person who burned them and make it educational",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
     ],
@@ -283,5 +283,28 @@
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Tibetan / Eastern European (Russian-Jewish) / West African (Akan)",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Compact and densely muscled, built low and wide through the shoulders and hips like a coiled spring. Heavy bone density from titanium mesh lacing gives him a solidity that reads as immovable despite modest height. Forearms and neck show pronounced musculature from constant load-bearing of augmented skeleton.",
+    "hair_color": "Black with premature silver threading at temples and along the left side",
+    "hair_style": "Pulled back tight in a functional topknot, occasionally worn loose and shoulder-length when off-grid. No vanity in grooming — purely practical.",
+    "hair_length": "Medium",
+    "eye_color": "Left eye: dark brown, naturally almond-shaped. Right eye: luminous cyan with concentric targeting reticule visible beneath polished corneal lens.",
+    "skin_tone": "Warm medium brown — Tibetan and Akan heritage with Eastern European undertones creating an olive-bronze complexion",
+    "complexion": "Weathered and sun-damaged from nocturnal living offset by careful maintenance. Fine scars web across cheekbones and forehead — old work, old mistakes. Jawline sharp and pronounced, exaggerated by visible chrome interfaces at the mandible junction. Minimal facial hair, kept clean-shaven for equipment interface seal integrity.",
+    "distinguishing_marks": [
+      "Surgical scar tracing from left temple to behind the ear, roughly 8cm, where cybernetic eye was installed — chrome around the margin is visible and unpolished",
+      "Titanium mesh visible beneath skin along jawline on both sides, creating subtle but distinct geometric patterns under the flesh",
+      "Burn scar across the back of his right hand, discolored and raised, roughly 4x6cm — sustained during early augmentation work",
+      "Faint ritual scarification along both inner forearms, pre-augmentation Tibetan family marks, now distorted by titanium mesh integration",
+      "Small tattoo on left wrist in Tibetan script, black and faded, reading 'survival is sufficient'"
+    ],
+    "visible_augmentations": "Titanium mesh skeletal lacing visible as faint silvery geometry beneath skin of forearms and along jawline; polished chrome and synthetic cornea of right eye with faint cyan glow when active; subtle port interfaces at both temples and behind right ear, minimal aesthetic finishing",
+    "posture_movement": "Moves with economical precision — no wasted motion, every gesture weighted and intentional. Stands with shoulders slightly forward and weight distributed low, a fighter's baseline. Head rotates before eyes move, a targeting behavior. Walks with a slight forward cant despite compact frame, as if perpetually descending stairs.",
+    "clothing_style": "Tier 3-4 functional minimalism. Black or charcoal polymeric jacket with internal gear rig and subcutaneous armor plating visible only when moving. Fitted tactical pants with sealed thigh pockets, reinforced at knees and hips. Matte-finish synth-leather boots with traction treads suitable for climbing. No jewelry, no branded apparel — all equipment is utilitarian and service-worn. Occasionally wears a long coat salvaged from a Tier 2 corpo when moving between districts, otherwise visible augmentations are his only statement."
+  },
+  "image_prompt": "cyberpunk character portrait of a compact, densely muscular 30-year-old man with Tibetan-Eastern European-West African mixed features, dark skin with olive undertones, sharp jawline with visible titanium mesh chrome running along mandible, left eye naturally brown and almond-shaped, right eye replaced with luminous cyan cybernetic prosthetic with targeting reticule, black hair with silver threading pulled back tight, surgical scar visible from temple to ear, cold intense expression, standing in dim geothermal district lighting with chemical vapor haze, wearing matte black polymeric tactical jacket over synth-leather armor, minimal branding, nocturnal predator energy, professional assassin aesthetic, film noir meets sci-fi, precise and economical posture, volumetric light from industrial piping in background, cinematic depth, shot against steam and shadow, --ar 2:3 --v 6"
 }

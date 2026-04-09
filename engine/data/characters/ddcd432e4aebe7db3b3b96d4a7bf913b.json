@@ -7,7 +7,7 @@
     "Numbers"
   ],
   "role": "Private Investigator",
-  "description": "Cezar Watanabe-Gyasi is the PI that fraud investigators dream of and fraudsters have nightmares about — a methodical, meticulous, mathematically minded investigator who specializes in the art of proving that the numbers don't lie, even when people do.\n\nHis professional life is insurance fraud. He works on retainer for three of Meridian 88's largest insurance underwriters and two corporate risk assessment firms, investigating claims that statistical analysis has flagged as potentially fraudulent. His cases range from individual claimants faking cyberware injuries to elaborate multi-year fraud operations involving dozens of participants and millions of Quanta. He approaches every case with the same patient methodology: gather the numbers, analyze the patterns, find the anomaly, prove the fraud.\n\nThe mundanity of his work is his greatest asset. Nobody pays attention to the insurance investigator. He moves through corporate offices, medical facilities, repair shops, and financial institutions with the invisibility of someone who belongs everywhere and nowhere. His interviews are so bland that subjects relax and contradict themselves. His reports are so thorough that legal challenges are futile. He is not exciting, not dramatic, and not interested in being either. He is simply very, very good at mathematics, and in a city built on financial transactions, mathematics is power.",
+  "description": "Cezar Watanabe-Gyasi is the PI that fraud investigators dream of and fraudsters have nightmares about — a methodical, meticulous, mathematically minded investigator who specializes in the art of proving that the numbers don't lie, even when people do.\n\nHis professional life is insurance fraud. He works on retainer for three of GLMZ's largest insurance underwriters and two corporate risk assessment firms, investigating claims that statistical analysis has flagged as potentially fraudulent. His cases range from individual claimants faking cyberware injuries to elaborate multi-year fraud operations involving dozens of participants and millions of Quanta. He approaches every case with the same patient methodology: gather the numbers, analyze the patterns, find the anomaly, prove the fraud.\n\nThe mundanity of his work is his greatest asset. Nobody pays attention to the insurance investigator. He moves through corporate offices, medical facilities, repair shops, and financial institutions with the invisibility of someone who belongs everywhere and nowhere. His interviews are so bland that subjects relax and contradict themselves. His reports are so thorough that legal challenges are futile. He is not exciting, not dramatic, and not interested in being either. He is simply very, very good at mathematics, and in a city built on financial transactions, mathematics is power.",
   "affiliation": "Retained by three insurance underwriters and two corporate risk assessment firms",
   "tier": "Tier 3",
   "location": "A boring office in Glassway designed to be forgettable — beige walls, standard furniture, nothing that reveals personality, near Milwaukee and North Ave",
@@ -31,7 +31,7 @@
     "A deliberately unremarkable appearance — he can enter any corporate environment without being noticed",
     "Voice stress analysis software integrated into his BCI — detects deception during interviews"
   ],
-  "personality": "Cezar is Romanian-Japanese-Ghanaian, forty-two years old, average height, average build, average face — a man engineered by genetics and choice to be forgettable, and he has weaponized that forgettability into a career. He is methodical, patient, and finds genuine pleasure in the mathematics of fraud — the patterns, the anomalies, the moment when numbers that are supposed to add up don't. He is the least dramatic PI in Meridian 88 and is fine with that. His cases don't involve shootouts or car chases; they involve spreadsheets and depositions and the quiet satisfaction of proving that someone lied with numbers. He has no enemies because nobody considers him a threat until it's too late.",
+  "personality": "Cezar is Romanian-Japanese-Ghanaian, forty-two years old, average height, average build, average face — a man engineered by genetics and choice to be forgettable, and he has weaponized that forgettability into a career. He is methodical, patient, and finds genuine pleasure in the mathematics of fraud — the patterns, the anomalies, the moment when numbers that are supposed to add up don't. He is the least dramatic PI in GLMZ and is fine with that. His cases don't involve shootouts or car chases; they involve spreadsheets and depositions and the quiet satisfaction of proving that someone lied with numbers. He has no enemies because nobody considers him a threat until it's too late.",
   "relationships": [
     {
       "name": "Dr. Solene Gutierrez-Appiah",
@@ -64,9 +64,29 @@
   "registered_firearms": [],
   "related_entities": [
     "Ghostbridge Island",
-    "Meridian 88",
+    "GLMZ",
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Japanese / West African",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and angular, with the posture of someone who spends twelve hours a day hunched over terminals. Shoulders slightly forward, minimal musculature — functional rather than maintained.",
+    "hair_color": "Black with premature silver at temples",
+    "hair_style": "Short, neatly parted, maintained with professional precision",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Light to medium brown with olive undertones",
+    "complexion": "Clean-shaven, minimal facial hair. Skin shows slight pallor from indoor work. No visible scars or marks. Expression resting at neutral — the face of someone who has learned not to show reactions.",
+    "distinguishing_marks": [
+      "Thin white scar along left jawline, approximately 3cm, from a childhood accident — barely visible unless light hits at specific angle",
+      "Faint calluses on fingers and the side of his right hand from years of handwritten note-taking and stylus work"
+    ],
+    "visible_augmentations": "None visible. All augmentations are subcutaneous or internal — likely a neural interface for data analysis and financial system access, but no external chrome or LED modifications.",
+    "posture_movement": "Deliberate and economical. Moves with minimal wasted motion. Sits with perfect posture at a terminal but slouches slightly when walking, as if conserving energy for thought. Hands move with precision when gesturing — no flourish, no emphasis, just necessary communication.",
+    "clothing_style": "Aggressively forgettable. Gray or navy slacks, white or light blue dress shirts, dark blazers from mid-tier retailers (Nexus Professional, Meridian). No logos, no chrome accents, no smart-fabric displays. Shoes are black leather, well-maintained but unremarkable. Watch is a simple digital with no AR functions — practical, not status-signaling. Dresses for Tier 3 corporate environments deliberately, never standing out."
+  },
+  "image_prompt": "A lean East Asian-African man in his late 40s, sharp-featured with graying temples, wearing a plain navy blazer and white dress shirt, sitting motionless in a bland beige corporate office under fluorescent lighting. Dark eyes focused downward, expression utterly neutral and forgettable. Minimalist aesthetic, no augmentations visible, slightly slouched shoulders. Cyberpunk noir detective, muted color palette, realistic photography style, office drone aesthetic, cinematic lighting from overhead panels, nobody-notices-him energy, --ar 2:3 --v 6"
 }

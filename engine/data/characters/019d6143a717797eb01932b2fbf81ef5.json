@@ -62,7 +62,7 @@
   "story_hooks": [
     "A corporate black site Vuk Edlund-Gyan once infiltrated is being reopened, and the people inside know her face",
     "A dead drop Vuk Edlund-Gyan maintains is found and cleaned out — whoever did it now has leverage",
-    "A crew member from Vuk Edlund-Gyan's past shows up in Meridian 88, carrying old grievances and new chrome"
+    "A crew member from Vuk Edlund-Gyan's past shows up in GLMZ, carrying old grievances and new chrome"
   ],
   "narrative_function": "Vuk Edlund-Gyan functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
   "augmentations": "Cranial bomb defuser — specialized implant that detects and neutralizes cortex bombs in others. Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
@@ -274,10 +274,31 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "The Pure Hand",
     "Slagworks Industrial"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Stocky and solid, muscular through the shoulders and torso with a low center of gravity. Hands are large-knuckled and scarred, built for precision and force. No excess fat, but thick-boned and dense.",
+    "hair_color": "Steel gray with natural dark roots showing",
+    "hair_style": "Pulled back in a tight, utilitarian braid, no vanity in the arrangement",
+    "hair_length": "Medium",
+    "eye_color": "Gray-green, alert and assessing",
+    "skin_tone": "Warm brown with gray undertones, weathered by age and exposure",
+    "complexion": "Lined face, crow's feet and forehead creases that map decades of squinting at screens and problems. Scarred upper lip from an old break. Jawline still strong. Minimal makeup, rough-groomed.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple to cheekbone, surgical precision in the old wound",
+      "Burn scars across the backs of both hands in scattered patches, from reactive armor testing",
+      "Tattoo on right forearm: circuit board pattern in faded black, homemade work from her early twenties"
+    ],
+    "visible_augmentations": "Chrome cranial implant visible at the base of her skull where the synthetic port connects — a dark titanium-grade insert roughly the size of a thumbnail, deliberately left exposed. The surrounding scalp tissue shows fine scarring from the installation. No effort to conceal it.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight balanced on the balls of her feet, ready to shift. Eyes constantly scanning. Her hands rest palms-down on tables, never crossed. When seated, she takes the chair with the best sightline to the door.",
+    "clothing_style": "Tier 3 utilitarian: dark reinforced synthweave jacket with cargo pockets, many of them loaded and zipped. Black tactical pants with knee reinforcement and thigh pockets. Scuffed boots rated for industrial environments. A gray undershirt visible at the collar. No logos, no affectation, no jewelry except a worn chronometer on her left wrist. Everything functional, nothing decorative."
+  },
+  "image_prompt": "A 54-year-old woman with a stocky, dense build and gray-green eyes, standing in the neon-lit underbelly of a cyberpunk transit station. She has steel-gray hair pulled back in a tight braid, warm brown weathered skin, and a scarred upper lip. A visible dark titanium cranial implant sits at the base of her skull. She wears a dark reinforced synthweave jacket with cargo pockets, black tactical pants, and scuffed industrial boots. Her large hands are visibly scarred. Her posture is alert and economical, weight on the balls of her feet. The lighting is cool blue and amber neon reflecting off wet concrete. Meridian Station background, neutral zone, cyberpunk noir atmosphere, photorealistic, gritty, utilitarian aesthetic. --ar 2:3 --v 6"
 }

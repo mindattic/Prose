@@ -178,5 +178,27 @@
     "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Italian",
+    "height_cm": 135,
+    "weight_kg": 28,
+    "build": "Slight and wiry for her age, all lean muscle from constant running; shoulders already developing the forward hunch of someone who carries weight in patched pockets",
+    "hair_color": "Natural black",
+    "hair_style": "Uneven puffs sectioned across her scalp, each bundle tied with whatever elastic was available that morning—mismatched colors, some showing strain",
+    "hair_length": "Medium (3-4 inches per puff)",
+    "eye_color": "Dark brown, alert and restless",
+    "skin_tone": "Deep umber with the slight ashy quality of someone who lives indoors under artificial light",
+    "complexion": "Round-faced, gap-toothed smile (missing one upper molar—extraction, not loss), fine scar tissue on her left cheekbone from a childhood scrape, perpetually flushed cheeks",
+    "distinguishing_marks": [
+      "Thin white scar running 2cm along left cheekbone, pale against dark skin",
+      "Callus marks on her index and middle fingers from grip friction on package bundles",
+      "Faint chemical stains on the cuticles of her fingernails from solvent exposure",
+      "Small burn mark on her inner right wrist (diameter: 0.5cm), years old, from a radiator"
+    ],
+    "visible_augmentations": "None. Completely biological.",
+    "posture_movement": "Constantly in motion even when standing still—weight shifts between feet, eyes cataloguing exits and sightlines, hands restless. She moves with the economical precision of someone navigating crowded spaces; no wasted energy. Her smile is deployed deliberately, switching on and off like a data toggle.",
+    "clothing_style": "Signature patchwork jacket assembled from three salvaged jackets—tan synthleather, faded blue denim, charcoal poly-blend—stitched together with visible black thread in a chaotic patchwork. Pockets everywhere: hood lining, collar reverse, cuff interiors, thigh patches. Underneath: cheap long-sleeve thermal to cut solvent contact. Tier 5 scavenger aesthetic: everything repurposed, nothing new, all functional."
+  },
+  "image_prompt": "11-year-old girl, deep umber skin, round face with gap-toothed grin, uneven black hair in puffs, alert dark eyes, cyberpunk Tier 5 setting. Wearing signature handmade patchwork jacket stitched from three different fabrics (tan leather, blue denim, gray poly), visible black stitching, multiple pockets sewn into unconventional places. Standing in industrial corridor with exposed pipes and degraded wall panels, faint neon glow from distant signage. Solvent smell aesthetic, chemical-stained fingertips, small wrist scar visible. Alert, calculating expression masked by deliberate cheerful smile. Gritty realism, street-level perspective, shadows and industrial foreground. Cinematic lighting, moody and atmospheric. --ar 2:3 --v 6"
 }

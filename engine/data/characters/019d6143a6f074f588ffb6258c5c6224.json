@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Wacker and State",
-  "description": "Tengiz Ito-Takyi is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 34, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a courier out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented courier in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Tengiz Ito-Takyi is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 34, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a courier out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented courier in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.97,
@@ -272,10 +272,32 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Ringo DV-4 'Courier'",
     "Burden of Longitude",
     "Slagworks Industrial"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Georgian / Japanese / West African",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and heavy-set with dense muscle beneath a layer of practical bulk — built like someone who carries weight as deliberate mass rather than fat. Stocky core, powerful legs, forearms that show the architectural definition of someone who maintains augmentation hardware daily.",
+    "hair_color": "Dark brown, naturally black with premature silver threading at temples",
+    "hair_style": "Pulled back in a tight, functional braid; no ornamentation, secured with industrial cable tie",
+    "hair_length": "Long (shoulder-length when loosened, but always bound)",
+    "eye_color": "Dark brown with faint chromatic aberration at the edges — sign of subcutaneous neural interface strain",
+    "skin_tone": "Deep warm brown with olive undertones, weathered by years of Old Harbor humidity and industrial exposure",
+    "complexion": "Weathered and lived-in; minimal grooming beyond function. Strong jaw, high cheekbones, a mouth that rarely smiles. Perpetual tension in the jaw. Small scar tissue around knuckles, consistent with bare-knuckle self-defense training.",
+    "distinguishing_marks": [
+      "Surgical seam lines visible along both forearms where subdermal armor plating was installed — deliberately left unscarred, showing the pale track marks of military-surplus installation",
+      "Thin white scar running from left temple to jawline, approximately 8cm, partially hidden by her braid when it shifts",
+      "Faded tattoo on inner right wrist: a stylized GLMZ harbor skyline rendered in monochrome ink, approximately 4cm wide — third-generation marker, city birth-right",
+      "Burn scar on left hand, dorsal surface, from chemical contact during a bad extraction job — irregular, roughly 3cm diameter, lighter than surrounding skin"
+    ],
+    "visible_augmentations": "Chrome visible at wrist and forearm where subdermal armor plating edges meet skin at stress points; faint amber LED bioluminescence visible beneath the skin at both temples when her neural interface is active. Mechanical clicking audible in her joints when she moves quickly — adrenaline pump hydraulic engagement. No attempt made to conceal any of it.",
+    "posture_movement": "Economical and alert; she moves like someone constantly aware of exits and threats. Weight stays forward on the balls of her feet, shoulders held slightly forward. Her eyes track fast-moving objects and people with predatory precision. When idle, she fidgets with equipment — checking knife edges, testing trigger resistance, running fingers over her augmentation seams. No wasted motion.",
+    "clothing_style": "Practical Tier 3-4 runner gear. Heavy canvas work jacket (charcoal gray, multiple pockets, reinforced elbows) over a matte-black compression shirt with visible cooling vents at the ribs — designed to manage the heat dump from her adrenaline pump. Cargo pants in dark gray with reinforced thigh pockets and a knife sheath sewn into the interior seam of the left leg. Steel-toed boots, scuffed and functional, laced tight. A leather motorcycle-style belt with a heavy chrome buckle. No jewelry except a battered analog watch on her left wrist — waterproof, shock-resistant, no network connectivity. A long coat hangs in her temporary quarters — military surplus wool, lined with a shielded compartment for sensitive packages."
+  },
+  "image_prompt": "Portrait of Tengiz Ito-Takyi, a 34-year-old female courier in cyberpunk 2226, broad-shouldered and heavy-set with deep warm brown skin and dark hair pulled back in a tight braid. Strong angular face with guarded, neutral expression. Visible chrome augmentations at wrists and forearms with pale scar tissue from surgical implants. Faint amber LED bioluminescence visible beneath temples. Wearing dark gray canvas work jacket, matte-black compression shirt, cargo pants, heavy boots. Standing in Old Harbor setting — repurposed shipping containers as background, industrial steel and rust, neon signage casting purple-green light. Gritty, lived-in cyberpunk aesthetic. Hard rim lighting, shadows emphasizing muscle definition and augmentation scars. Documentary photography style, no glamor, functional and weathered. --ar 2:3 --v 6"
 }

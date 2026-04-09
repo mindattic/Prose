@@ -25,7 +25,7 @@
     },
     "core_fears": [
       "outliving his purpose — becoming invisible in old age",
-      "his daughter leaving Meridian 88 and not coming back"
+      "his daughter leaving GLMZ and not coming back"
     ],
     "core_desires": [
       "to feed people well, which he believes is a form of love",
@@ -205,5 +205,25 @@
     "Steel",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Turkish / Samoan",
+    "height_cm": 188,
+    "weight_kg": 112,
+    "build": "Large and solid—once muscular, now settled into a heavyweight frame that moves with deliberate economy. Broad shoulders and deep chest give him presence even at rest.",
+    "hair_color": "Dark brown with prominent grey-white threading throughout",
+    "hair_style": "Four loose plaits, typically tied back with simple cord during service hours; plaits hang loose in evenings",
+    "hair_length": "Medium (plaited to mid-back when loose)",
+    "eye_color": "Deep brown",
+    "skin_tone": "Dark walnut brown with warm undertones",
+    "complexion": "Weathered and lined from decades of outdoor work and age; skin texture roughened by heat exposure and steam. Full peppered beard worn close to the jaw. Hands show callusing and minor scarring from kitchen work.",
+    "distinguishing_marks": [
+      "Large geometric Samoan-style tattoo wrapping from left wrist to left shoulder in black ink with bioluminescent blue-gold threading that pulses faintly in darkness",
+      "Small Yoruba adinkra symbol (Gye Nyame) on the inside of left wrist in faded black ink, half-hidden by the larger tattoo"
+    ],
+    "visible_augmentations": "Both palms display subtle thermal-resistant dermal plating—visible as a slightly raised, matte-finish texture across the palms and inner fingers, practical work-grade chrome with minimal aesthetic polish. The bioluminescent ink in his left arm tattoo glows faintly blue-gold in low light.",
+    "posture_movement": "Stands with weight distributed evenly, slightly forward-leaning when at rest against the cart. Moves with surprising grace and efficiency despite bulk—three simultaneous hand movements are fluid and economical. Carries himself with the unhurried confidence of someone rooted in place.",
+    "clothing_style": "Uniform consistency: heat-resistant work apron (charcoal-grey, oil-stained at edges, patches from years of service) worn over sleeveless thermal shirt in cream or faded black. Arms always bare to display tattoo. Worn steel-toed work shoes, practical rather than fashionable. No jewelry except occasional cord tie for plaits. Tier 4 working-class functionality—built for durability and heat management, not status."
+  },
+  "image_prompt": "Portrait of a 58-year-old man with dark walnut brown skin, peppered grey beard in four loose plaits, broad Samoan shoulders and Turkish falcon nose, wearing a grey heat-resistant apron over sleeveless thermal shirt with bare muscular arms, left arm covered in geometric Samoan-style black tattoo with faint bioluminescent blue-gold threading that glows softly, standing behind a steaming noodle cart at dusk in an industrial market, thermal mist rising around him, warm orange market lights reflecting off metal cart surfaces, hands resting on counter showing subtle chrome thermal-resistant plating on palms, expression calm and weathered, cinematic cyberpunk street vendor aesthetic, volumetric lighting, gritty urban food court setting, depth of field focus on face and tattoo details, shot on 50mm lens, professional portrait photography --ar 2:3 --v 6"
 }

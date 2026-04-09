@@ -25,7 +25,7 @@
     },
     "core_fears": [
       "Being made redundant by full automation",
-      "Her daughter leaving Meridian 88 and never coming back"
+      "Her daughter leaving GLMZ and never coming back"
     ],
     "core_desires": [
       "To be recognized as essential, not just functional",
@@ -42,7 +42,7 @@
     "secret": "In 2193 she deliberately held a tram two minutes past schedule to prevent a Ferrogate internal security team from reaching a platform where she knew a family of undocumented workers was trying to board. She has never told anyone and considers it the best thing she ever did."
   },
   "speech_patterns": {
-    "vocabulary": "Mix of transit jargon, Nigerian-inflected English idioms inherited from her grandmother's side, and the flat midwest vowels of someone born in Meridian 88. Tends to state opinions as facts.",
+    "vocabulary": "Mix of transit jargon, Nigerian-inflected English idioms inherited from her grandmother's side, and the flat midwest vowels of someone born in GLMZ. Tends to state opinions as facts.",
     "cadence": "Deliberate and unhurried, with sudden bursts of speed when she's making a point she considers obvious",
     "verbal_tics": [
       "'You hear what I'm saying?'",
@@ -209,5 +209,26 @@
     "The Pale Mile",
     "Déjà Vu"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 174,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and dense-muscled from two decades of gripping manual override bars and tensioning against tram momentum shifts. Carries weight with the solidity of someone built for stability rather than speed.",
+    "hair_color": "Black with silver streaking throughout",
+    "hair_style": "Locs, pinned tightly beneath operator's cap during shifts; worn loose to shoulder-length on rest days",
+    "hair_length": "Medium (shoulder-length when unpinned)",
+    "eye_color": "Photosensitive geneware: amber base shifting to pale green with elevated blood pressure",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Creased around the eyes from twenty-two years of early-morning shifts and squinting through magline station lighting. Permanent shadows beneath eyes. Jawline sharp despite age. Expression habitually stern but capable of quick warmth.",
+    "distinguishing_marks": [
+      "Callused knuckles on both hands from gripping manual override bar during power fluctuations",
+      "Faint scarring on left knee, site of cartilage scaffold implant from work injury approximately eight years ago",
+      "Thin white line across right palm from a tram coupling accident in 2204"
+    ],
+    "visible_augmentations": "Photosensitive irises that shift color visibly during conversation or stress (amber to pale green). Left knee shows subtle scarring and occasional micro-servo micro-expressions during weight-bearing shifts. Ferrogate-standard neural throttle link is subcutaneous (not visible). No external chrome.",
+    "posture_movement": "Stands with weight distributed evenly, shoulders back. Walks with deliberate, measured pace — a habit from synchronizing with tram rhythms. Hands rest naturally at sides or gripping something stable. Eye contact is direct and unflinching. Movements are economical; she does not waste motion.",
+    "clothing_style": "Wears Ferrogate Transit Grade 3 operator uniform with meticulous precision: collar pins level, cuffs turned exactly once, uniform jacket pressed sharp despite twelve-hour shifts. On rest days, favors practical Tier 3 clothing — reinforced utility pants, long-sleeved shirts in muted colors, worn boots with good tread. No unnecessary adornment. All clothing is functional and well-maintained."
+  },
+  "image_prompt": "47-year-old Black woman with silver-streaked locs pinned under an operator's cap, deep brown skin with permanent shadows beneath sharp, alert eyes. Amber-to-green photosensitive irises that shift slightly. Broad shoulders, dense athletic build. Wearing pristine Ferrogate Transit Grade 3 uniform — pressed jacket with perfectly level collar pins, cuffs turned exactly once. Standing in the dim neon-lit cab of a magline tram at dawn, hands resting on the manual override bar, expression stern but dignified. Callused knuckles visible. Ferrogate station platform with cold blue-green emergency lighting in background. Cyberpunk, hyper-realistic, cinematic lighting, photographic, sharp focus, working-class dignity, 2226 Great Lakes Metropolitan Zone aesthetic --ar 2:3 --v 6"
 }

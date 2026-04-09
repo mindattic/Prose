@@ -29,7 +29,7 @@
       "Being identified by corporate facial recognition — living off-grid is survival"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Control — over their body, their schedule, their future",
       "Stability — a place to sleep that's the same place two nights running"
     ],
@@ -43,7 +43,7 @@
       "Cannot distinguish between caution and cowardice in themselves or others",
       "Refuses to update their mental model of people — first impressions calcify into permanent judgments"
     ],
-    "secret": "Sinan Vasquez-Chatterjee betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+    "secret": "Sinan Vasquez-Chatterjee betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
   },
   "speech_patterns": {
     "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
@@ -62,7 +62,7 @@
   "story_hooks": [
     "A dead drop Sinan Vasquez-Chatterjee maintains is found and cleaned out — whoever did it now has leverage",
     "Sinan Vasquez-Chatterjee discovers a job they completed last year was a setup for something much larger and much worse",
-    "A crew member from Sinan Vasquez-Chatterjee's past shows up in Meridian 88, carrying old grievances and new chrome"
+    "A crew member from Sinan Vasquez-Chatterjee's past shows up in GLMZ, carrying old grievances and new chrome"
   ],
   "narrative_function": "Sinan Vasquez-Chatterjee functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
   "augmentations": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs. Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
@@ -281,7 +281,7 @@
   ],
   "related_entities": [
     "Bioelectric Muscle Fiber",
-    "Meridian 88",
+    "GLMZ",
     "The Heritage Vault",
     "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Stratum",
@@ -290,5 +290,27 @@
     "Slagworks Industrial",
     "Clover"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Turkish / Spanish / Indian — diaspora fusion reflected in mixed Levantine-Iberian-South Asian features",
+    "height_cm": 178,
+    "weight_kg": 92,
+    "build": "Stocky and densely muscled, barrel-chested with thick shoulders. The synthetic muscle fiber in his legs creates a subtle asymmetry — the replacements are slightly more defined, almost too perfect compared to natural musculature. Carries himself with the squared-off posture of someone trained to absorb impact.",
+    "hair_color": "Dark brown, graying at temples",
+    "hair_style": "Short, practical cut — military-tight on sides, slightly longer on top, no styling product. Maintained with efficiency, not vanity.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint network of subcutaneous LED traces visible in low light around the orbital ridge — pain editor neural anchor points",
+    "skin_tone": "Olive-brown complexion with warm undertones, weathered by sun and salt spray from lakeside work",
+    "complexion": "Angular face, broad jawline, broken nose (healed, set slightly wrong), scar tissue above left eyebrow. Skin shows wear — lines around the eyes and mouth deeper than his age should warrant. Five o'clock shadow is his default state. Hands are calloused, knuckles scarred, with a faint chrome sheen visible at wrist joints where synthetic muscle fiber connects to natural tissue.",
+    "distinguishing_marks": [
+      "Horizontal scar across left forearm, 8cm long, pale and old — pre-military training injury",
+      "Burn scar on right palm, spiderweb pattern, darker than surrounding skin — equipment malfunction during early augmentation work",
+      "Tattoo on left shoulder: military unit designation in Telugu script, faded blue ink",
+      "Circular scar indent on right thigh where synthetic muscle fiber integration created a permanent divot in natural tissue around the implant boundary"
+    ],
+    "visible_augmentations": "Synthetic muscle fiber visible in both legs — chrome-titanium integration points gleam at ankle and hip, particularly noticeable when he moves or when fabric rides up. The legs move with mechanical precision on stairs (poorly) but inhuman fluidity on flat ground. Fine network of dark subdermal tracery visible around eyes under harsh light — pain editor neural pathways. No visible facial augmentations, but the eyes move with slightly unusual focus patterns suggesting neural enhancement.",
+    "posture_movement": "Walks with measured, controlled stride — economical movement drilled into muscle memory. Stands with weight balanced on the balls of his feet, ready to move. In conversation, he uses minimal hand gestures, speaks in clipped sentences. His movements are fast but not jittery — trained violence rather than nervous energy. Favors flat ground, moves down stairs with visible care. Holds tension in shoulders and neck — cost of the pain editor is constant low-level proprioceptive awareness.",
+    "clothing_style": "Tier 3-4 pragmatist. Reinforced cargo pants in dark gray synthetic material with cargo pockets and loop attachments for gear. Fitted tactical shirt or hoodie in muted colors — blacks, grays, dark green — with internal armor grid visible as subtle ridges under fabric. Waterproof jacket with sealed pockets, Lake Michigan salt spray resistant. Worn boots with reinforced toe and ankle support. No brand logos visible. Everything functional, nothing decorative. Gear is maintained obsessively — each item serves a purpose. Wears a simple steel watch, military issue, kept precisely accurate."
+  },
+  "image_prompt": "A 32-year-old man of mixed Turkish-Spanish-Indian heritage, stocky muscled build, standing on a Lake Michigan dock at dusk, cyberpunk aesthetic. Dark olive-brown skin, short dark hair graying at temples, broken nose, scar tissue above left eyebrow. Wearing tactical dark gray cargo pants and fitted black armor-grid hoodie with visible chrome synthetic muscle fiber visible at legs and ankle joints. Hands calloused and scarred, wrist joints gleaming chrome. Eyes dark brown with faint subdermal LED traces visible around eye sockets. Standing with military posture, balanced on balls of feet, hands at sides. Waterproof jacket with sealed pockets. Background: industrial dockside cranes, shipping containers, cold Lake Michigan water reflecting orange sodium lights, rust and salt spray atmosphere. Moody, rain-slicked concrete, 2226 GLMZ dockside contraband culture. Hard lighting, shadows, gritty realism, film noir cyberpunk --ar 2:3 --v 6"
 }

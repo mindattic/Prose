@@ -13,7 +13,7 @@
   "age": 66,
   "status": "active",
   "location": "Edgewater Prism, Meridian Atmospheric Research Station (MARS), near Clark and Addison",
-  "description": "Radovan is a broad, heavyset man who has spent forty years outdoors in conditions that most of his colleagues study remotely, and it shows. His face is deeply weathered, his Slavic-Mongolian features carved by wind and UV exposure into something that looks architecturally deliberate. He keeps a short grey beard and wears his hair close-cropped; his most distinctive feature is a set of retractable sensory whiskers — filament-thin, extending from his temples — which he had installed as a meteorological sensing array in his forties and has since come to regard as indispensable. He is almost always wearing field layers even in his office, with a softshell that has seen better decades.\n\nRadovan's professional reputation is immense and his public one is contentious: he's been warning for twenty-five years that the Lake's thermal buffering is deteriorating in ways that Meridian 88's entire climate management infrastructure has been designed to ignore. He has been right about each specific prediction he has made. He is now predicting something large enough that people have started calling him an alarmist, which is, he notes, exactly what they called him the last four times. He is not angry about this. He is tired in a specific way that long-term correct people get tired.",
+  "description": "Radovan is a broad, heavyset man who has spent forty years outdoors in conditions that most of his colleagues study remotely, and it shows. His face is deeply weathered, his Slavic-Mongolian features carved by wind and UV exposure into something that looks architecturally deliberate. He keeps a short grey beard and wears his hair close-cropped; his most distinctive feature is a set of retractable sensory whiskers — filament-thin, extending from his temples — which he had installed as a meteorological sensing array in his forties and has since come to regard as indispensable. He is almost always wearing field layers even in his office, with a softshell that has seen better decades.\n\nRadovan's professional reputation is immense and his public one is contentious: he's been warning for twenty-five years that the Lake's thermal buffering is deteriorating in ways that GLMZ's entire climate management infrastructure has been designed to ignore. He has been right about each specific prediction he has made. He is now predicting something large enough that people have started calling him an alarmist, which is, he notes, exactly what they called him the last four times. He is not angry about this. He is tired in a specific way that long-term correct people get tired.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -61,7 +61,7 @@
     "Arcturus approaches him with a new contract offer that would give him full publication rights — in exchange for making specific modifications to his predictive models",
     "Tier 1 community organizers from lakeshore zones have found his partial published models and demand to know what he isn't telling them; he doesn't know what to say"
   ],
-  "narrative_function": "Bearer of large-scale environmental threats; source of systemic information about Meridian 88's physical infrastructure and its vulnerabilities; represents long-term thinking in a city of short cycles; can make climate data personal and immediate; potential figure in plots involving Arcturus or city infrastructure.",
+  "narrative_function": "Bearer of large-scale environmental threats; source of systemic information about GLMZ's physical infrastructure and its vulnerabilities; represents long-term thinking in a city of short cycles; can make climate data personal and immediate; potential figure in plots involving Arcturus or city infrastructure.",
   "augmentations": "Retractable sensory whisker array at temples (meteorological data gathering, temperature/pressure/humidity). Reinforced lung lining (early career field modification for high-particulate environments). Mild exoskeletal support in lower back (age and fieldwork injury).",
   "daily_life": "Dawn observation sessions at the Lake monitoring array, followed by data analysis and modeling work; eats lunch at his desk; teaches one advanced graduate course per year; gives public talks he considers his civic obligation even though the audiences increasingly frustrate him.",
   "affiliation": "University Spine — Meridian Atmospheric Research Station; previously funded by Arcturus, now independently funded after a very public falling out",
@@ -256,10 +256,32 @@
   "registered_firearms": [],
   "related_entities": [
     "Edgewater Prism",
-    "Meridian 88",
+    "GLMZ",
     "Arcturus Defense Solutions",
     "Nesting Doll",
     "Weathervane"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Slavic / Mongolian",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and heavyset with the solid, weathered musculature of someone who has spent four decades doing field work in harsh conditions. Chest and shoulders still strong; slight thickening at the middle typical of his age. Lower back shows subtle reinforcement—a faint geometric pattern of support framework visible under the skin at the lumbar region.",
+    "hair_color": "Steel grey",
+    "hair_style": "Close-cropped, practical, minimal grooming beyond functionality",
+    "hair_length": "Short",
+    "eye_color": "Pale blue",
+    "skin_tone": "Deep tan with underlying pale complexion, darkened by decades of UV and wind exposure",
+    "complexion": "Deeply weathered face with pronounced lines radiating from the eyes and mouth. Slavic-Mongolian bone structure—broad cheekbones, squared jaw, prominent brow. Short grey beard, meticulously trimmed. Skin has a leathery quality from sun damage; several patches of older scar tissue visible on the right temple and cheekbone. Expression is habitually stern and exhausted.",
+    "distinguishing_marks": [
+      "Network of fine wrinkles across forehead and temples, arranged in patterns that suggest constant squinting into harsh light.",
+      "Thin white scar running 3cm along right cheekbone, faded but visible in certain angles—appears to be from field equipment strike, decades old.",
+      "Two darker age spots on the left side of his neck, roughly the size of fingernails.",
+      "Faded tattoo on inside of left forearm—a simple graph line showing temperature data, possibly from early career. Worn and barely legible."
+    ],
+    "visible_augmentations": "Most distinctive are the retractable sensory whiskers extending from both temples—normally coiled and nearly invisible, but when deployed they extend 8-12cm outward as filament-thin, almost translucent filaments with faint bioluminescent nodes along their length for sensing arrays. When retracted, visible only as faint scarring and two small metallic connection points at the temple hairline. Lower back shows subtle exoskeletal support framework visible as geometric metallic subdermal patterns below the skin, visible when he bends or stretches his shirt pulls up.",
+    "posture_movement": "Carries himself with the careful deliberation of someone managing chronic low-back strain, weight distributed through his hips and legs rather than his spine. Moves slowly and purposefully rather than quickly. Slight favor of the left leg. His head often tilts slightly when concentrating, as though the whisker array is actively sensing. Hands are large and weathered with calloused fingertips; moves them precisely when making technical points. Sits in a particular forward-leaning posture that relieves back pressure.",
+    "clothing_style": "Virtually always in field layers—technical base layer under a heavyweight softshell jacket in faded grey or tan, patched multiple times with careful stitching. The jacket is a Patagonia model from at least a decade ago, scuffed and stained but well-maintained. Underneath: cargo pants in durable synthetic weave, pockets stuffed with field instruments and data capture tools. Heavy field boots, worn but clean. Minimal accessories aside from a rugged wrist-mounted instrument cluster (appears to be connected to the whisker array). Even in his office at MARS, he maintains this uniform. No corpo styling—his tier is academic, not corporate, which places him in a strange position: expensive and cutting-edge enough to be credible, worn and practical enough to signal that he actually works."
+  },
+  "image_prompt": "Portrait of a weathered 66-year-old male climate scientist in a cyberpunk setting, Slavic-Mongolian features carved by decades of harsh fieldwork. Deep tan skin with pale undertones, steel-grey close-cropped hair, pale blue eyes, short trimmed grey beard. His most striking feature: retractable sensory whisker filaments extending from both temples, bioluminescent nodes running along the filaments, currently partially deployed. Faint geometric exoskeletal support framework visible at the lower back beneath worn layers. Dressed in faded technical softshell jacket and cargo pants from the 2190s-2200s era, visibly patched and weathered but meticulously maintained. Heavy field boots. His expression is stern, exhausted, and uncompromising—the look of someone who has been right about catastrophic predictions four times already. Standing in a research station with atmospheric monitoring equipment visible in soft blue-green background lighting. Volumetric data streams and holographic climate models float faintly around him. Cinematic, naturalistic cyberpunk aesthetic. Weathering and environmental damage visible on skin and equipment. --ar 2:3 --v 6"
 }

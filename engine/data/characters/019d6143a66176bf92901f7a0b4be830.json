@@ -31,7 +31,7 @@
     "core_desires": [
       "A crew worth trusting — people who stay when the shooting starts",
       "Power — enough leverage that nobody ever threatens them again",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Connection — finds someone to talk to, even if it's a bartender or a cat",
@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "A Tier 4 executive offers Ngaire Arai-Ofori-Atta a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "A crew member from Ngaire Arai-Ofori-Atta's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Ngaire Arai-Ofori-Atta's past shows up in GLMZ, carrying old grievances and new chrome",
     "Ngaire Arai-Ofori-Atta discovers a job they completed last year was a setup for something much larger and much worse"
   ],
   "narrative_function": "As a sniper, Ngaire Arai-Ofori-Atta embodies the tension between independence and isolation. They are a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
@@ -157,7 +157,7 @@
     "strengths": [
       "natural leadership presence",
       "network of reliable contacts",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "augmentation dependency — performance drops sharply if chrome malfunctions",
@@ -279,10 +279,31 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "Geartown",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Japanese / West African / Ghanaian",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Lean and angular with ropy muscle definition — the build of someone who trains for precision and endurance rather than mass. Low body fat, visible shoulder and forearm musculature from repetitive rifle work and weapon maintenance.",
+    "hair_color": "Black with faint warm undertones",
+    "hair_style": "Pulled back in a tight, functional braid or wrapped low at the base of the skull",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, alert and unwavering",
+    "skin_tone": "Warm bronze undertone with slight ashen quality — consistent nocturnal lifestyle has muted natural vibrancy",
+    "complexion": "Sharp cheekbones, squared jaw, hollow temples. Skin is clear but marked by the exhaustion of circadian inversion — faint dark crescents under eyes. Clean-shaven or minimal facial hair. Expression typically neutral, eyes tracking environments with predatory awareness.",
+    "distinguishing_marks": [
+      "Thin scar running from left temple to jaw line — clean surgical appearance, likely from injury or augmentation surgery",
+      "Faint burn marks on right forearm and wrist — heat scarring from rifle handling and stim-synthesizer thermal venting",
+      "Subtle tattoo along the inside of left forearm: a vertical line of small geometric marks in dark ink, possibly a personal tally or military unit designation"
+    ],
+    "visible_augmentations": "Chrome visible at the left inner forearm where the drug synthesizer system interfaces with the skin — metallic sheen visible under the epidermis with faint LED indicator lights (amber/red) that pulse with synthesizer activity. Left hand shows microscopic tool marks and reinforced joint articulation from monofilament whip housing. No visible cybernetic eyes or limbs.",
+    "posture_movement": "Moves with deliberate, economical efficiency — no wasted motion. Shoulders slightly forward, spine straight. When stationary, weight shifts subtly between feet as if constantly ready to move. Head movement is controlled, eyes scanning in practiced patterns. Hands remain visible and relaxed unless in high-stress situations. Walking gait is smooth and measured, heel-to-toe placement that minimizes sound.",
+    "clothing_style": "Tier 4 practical utilitarian — form-fitted tactical cargo pants in dark gray or black, reinforced at knees and ankles. Fitted long-sleeve compression shirt or tactical undershirt to conceal and protect augmentation sites. Heavy insulated jacket or modular body armor overlay in matte charcoal. Worn synthetic boots with good ankle support and grip soles. Minimal jewelry except for a functional watch (analog, not networked) and a single silver ring on right hand. Everything is clean but not new — maintained rather than flashy. No corporate logos, no obvious gang colors."
+  },
+  "image_prompt": "Cyberpunk character portrait, nonbinary sniper specialist, 188cm tall lean muscular build, warm bronze skin tone, sharp angular face with dark brown eyes, black hair in tight braid, faint surgical scar left temple to jaw, visible metallic chrome augmentation at left forearm with amber LED pulse, intense focused expression, wearing dark tactical cargo pants and fitted long-sleeve compression shirt, heavy insulated jacket in charcoal, functional analog watch, standing in industrial Geartown warehouse setting with dim neon safety lighting casting blue-green shadows, shallow depth of field, 2226 cyberpunk aesthetic, moody atmospheric lighting, photorealistic with digital enhancement, cinematic composition, --ar 2:3 --v 6"
 }

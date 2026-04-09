@@ -241,5 +241,25 @@
     "Lakewood Ledge",
     "Tessera Corponation"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Ghanaian-Ashanti / Russian)",
+    "height_cm": 168,
+    "weight_kg": 54,
+    "build": "Lean, still-lengthening adolescent frame with emerging definition in shoulders and arms from debate team posture work. Movements not yet fully synchronized with her height gain — occasional gracelessness masked by deliberate control.",
+    "hair_color": "Natural dark brown, rich undertone",
+    "hair_style": "High, precise bun for school days (not a single strand out of place); loose waves down her back on weekends, sometimes half-pinned",
+    "hair_length": "Long (to mid-back when down)",
+    "eye_color": "Dark brown with warm amber undertones, alert and observant",
+    "skin_tone": "Warm sepia with golden undertones across cheekbones and bridge of nose",
+    "complexion": "Clear, well-maintained skin indicating consistent grooming discipline. High, defined cheekbones she's aware of and subtly favors in mirrors. A faint scar on her left jawline from a childhood fall. Nanocoat-whitened teeth, visible when she smiles (which she does strategically). Precise eyebrow maintenance.",
+    "distinguishing_marks": [
+      "Small, dark-tipped folded geneware cat ears set high on her skull, visible when hair is in a bun, which she tolerates but does not publicly acknowledge",
+      "Faint scar on left jawline, approximately 2cm, paled but still visible under certain light angles"
+    ],
+    "visible_augmentations": "Cosmetic geneware cat ears (dark-tipped, folded close to head, barely noticeable unless bun is worn). Standard-issue school neural academic interface port at the base of her skull (covered by hair). Teeth have a subtle nacreous sheen from nanocoat whitening.",
+    "posture_movement": "Controlled, almost rehearsed posture — spine straight, shoulders back — the product of three years of debate team and constant awareness of being watched in a tier-stratified school. Walks with purpose. Sits with her hands visible on the desk or in her lap. Rarely fidgets in public, but fingers drum when she's processing something difficult. Her smile is deployed, not automatic.",
+    "clothing_style": "Sterling-Nakamura Secondary uniform worn immaculately: charcoal blazer with school crest, pressed grey trousers, white shirt with subtle iridescent threading (mid-tier quality, not corpo-elite). Outside school: clean-casual Tier 3 brand wear (Meridian, Verve) — well-fitted but not ostentatious. Keeps a black academic tablet in a custom sleeve. Wears a silver chain necklace (family heirloom, not augmented). No visible jewelry beyond that. Her school bag is organized to military precision."
+  },
+  "image_prompt": "Cyberpunk portrait of a 16-year-old West African-Eastern European girl with warm sepia skin and high cheekbones, dark brown hair in a precise bun. Small, dark-tipped geneware cat ears folded against her skull. Alert brown eyes with amber undertones. Wearing a crisp charcoal Sterling-Nakamura Secondary Academy blazer over a white iridescent-threaded shirt, grey trousers impeccably pressed. Subtle nanocoat-whitened teeth visible in a controlled, strategic half-smile. Faint scar on left jawline. Posture rigid with quiet ambition, hands visible, alert. Background: sleek academy corridor with soft blue-grey lighting and holographic class schedule displays. Cinematic, photorealistic, intricate detail on fabric and facial features, cool institutional lighting, subject at center looking slightly off-camera with calculating warmth. --ar 2:3 --v 6"
 }

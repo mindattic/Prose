@@ -62,7 +62,7 @@
   "story_hooks": [
     "A Tier 4 executive offers Obed Hedberg-Owusu-Ansah a permanent position — the pay is obscene and the strings are invisible until they tighten",
     "A high-paying contract turns out to target someone Obed Hedberg-Owusu-Ansah owes a personal debt to",
-    "A crew member from Obed Hedberg-Owusu-Ansah's past shows up in Meridian 88, carrying old grievances and new chrome"
+    "A crew member from Obed Hedberg-Owusu-Ansah's past shows up in GLMZ, carrying old grievances and new chrome"
   ],
   "narrative_function": "As a wheelman, Obed Hedberg-Owusu-Ansah embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
   "augmentations": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome. Chemical analyzer in nasal passages — can identify substances by scent alone",
@@ -277,11 +277,33 @@
     "Kang-Petrov Arms KP-45 Tactical 'Sledge'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Scandinavian / West African / Ghanaian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and lean with corded muscle from years of high-stress driving and equipment maintenance. Minimal body fat, efficient frame built for speed and reaction time rather than power.",
+    "hair_color": "Dark brown, naturally black with early gray threading through the sides",
+    "hair_style": "Pulled back in a tight, functional braid; practical, never ornamental",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown with faint amber undertones — natural",
+    "skin_tone": "Mid-tone warm brown with Scandinavian undertones, weathered by exposure and stress",
+    "complexion": "Sharp cheekbones, narrow jaw, angular features. Skin shows wear — sun damage on left side of face from years of left-hand window driving. Faint laugh lines that never quite disappear, even when her expression is neutral. A small scar bisects her left eyebrow.",
+    "distinguishing_marks": [
+      "Diagonal scar across left eyebrow, approximately 2cm, pale and old",
+      "Network of thin white scar tissue across the right shoulder where the cybernetic arm interfaces with biological tissue",
+      "Burn mark on left forearm, roughly 3cm diameter, faded to pale pink — old accident, pre-augmentation era",
+      "Faint tattoo on inner right wrist: a compass rose with the cardinal points replaced by gear teeth, barely visible unless light hits it directly"
+    ],
+    "visible_augmentations": "Full right arm replacement from shoulder — polished chrome with matte black articulation joints at elbow and wrist. The chrome is seamless but unapologetic, no attempt at flesh-tone covering. Hand is precise and mechanical, fingers move with inhuman smoothness. The interface point at the shoulder shows neat scar tissue and subcutaneous metalwork. She makes no effort to conceal it.",
+    "posture_movement": "Coiled restlessness — never fully relaxed, always kinetically ready. Sits forward in chairs. Hands move constantly when talking, the chrome arm moving with the same fluidity as her organic left. Walks with economical precision, eyes tracking exit routes and sight lines. Her default expression is careful neutrality, a mask worn so long it's become the baseline.",
+    "clothing_style": "Tier 3-4 utilitarian: reinforced dark tactical pants with cargo pockets and knee pads, worn black synthetic jacket with internal harnesses for equipment, steel-toed boots scuffed from constant movement. Thin subdermal armor weave visible at the collar and cuffs — functional, not fashionable. No jewelry except a faded digital watch on her left wrist. Clothes smell faintly of synthetic oil and diesel. Everything is built for rapid movement and tool access, not style."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 41-year-old woman, wiry athletic build, dark brown skin with Scandinavian undertones, sharp angular features, tight dark braid, natural dark brown eyes. Full chrome cybernetic right arm replacement from shoulder, polished metallic with matte black joints, seamless interface at shoulder. Wearing tactical dark synthetic jacket, reinforced pants, steel-toed boots. Small scar bisecting left eyebrow. Coiled posture, kinetic energy. Dockside warehouse setting, neon industrial lighting, cold blue-gray tones, wet concrete floor, subtle rain reflection. Gritty, focused expression, careful neutrality. High contrast lighting, sharp focus, photorealistic cyberpunk aesthetic, 2226 tech level --ar 2:3 --v 6"
 }

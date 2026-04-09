@@ -185,5 +185,27 @@
     "Glass",
     "Nightlight"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Spanish",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Lean and sinewy, with the efficient musculature of someone who has spent four decades working overhead in controlled heat. Shoulders broad from repetitive precise movements; posture naturally upright from balancing glass tubes.",
+    "hair_color": "Silver-white, natural — allowed to gray in her mid-thirties",
+    "hair_style": "Close-cropped, textured, with an asymmetrical fade on the left side that reveals the jaw augmentation",
+    "hair_length": "Short",
+    "eye_color": "Amber-glow modified irises; warm brown beneath the bioluminescent tint",
+    "skin_tone": "Warm umber, sun-deepened from studio work near high-temperature glass",
+    "complexion": "Lean face with high cheekbones, deep-set eyes, minimal grooming beyond essential cleanliness. Skin shows fine lines around eyes and mouth from decades of precision work and squinting into flame. No makeup. Expression often distant, as though listening to something others cannot hear.",
+    "distinguishing_marks": [
+      "Puckered burn scars across the dorsal surface of both hands, concentrated on fingertips and palms — the scars shine with a thin layer of heat-resistant dermis overlay, creating an uneven lustrous sheen.",
+      "Thin bioluminescent stripe running from left cheekbone to left jawline, emitting a soft steady amber-white glow — approximately 3mm wide, applied via geneware.",
+      "Smaller circular burn marks on both forearms from accidental tube contact — pale and faded with age.",
+      "Calluses on all ten fingers, deepest on thumbs and index fingers."
+    ],
+    "visible_augmentations": "Amber-glowing irises are immediately noticeable in low light, giving her gaze an otherworldly quality. The bioluminescent jaw stripe is her most striking modification — a deliberate statement rather than concealable. Both hands show visible heat-resistant dermis overlay, a medical-grade mod that gives her skin a subtle pearlescent sheen across scarred areas. Under close inspection, the overlay material has a slightly different texture than natural skin.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion. Hands held slightly forward, palms open, as though always ready to steady a tube or adjust a fixture. Head tilts often to the left, perhaps to better see with the glowing irises. When listening, she goes very still; when working, she enters a near-meditative state where her entire body becomes an instrument for precision. She rarely gestures when speaking.",
+    "clothing_style": "Tier 3 working artist aesthetic. Usually wears fire-resistant canvas work aprons in charcoal gray or black over fitted long-sleeve shirts (synthfiber blend, dark colors to hide burns). Loose tapered trousers in natural cotton or canvas, cuffed at the ankles, with reinforced pockets. Worn leather steel-toed boots, scuffed and repaired many times. A single piece of jewelry: a thin bracelet of fused glass scraps from her early work, worn on the right wrist. No corporate branding. Occasionally a long linen coat in cream or gray over everything when traveling through Tier 1 areas — a concession to blending in, worn with obvious reluctance."
+  },
+  "image_prompt": "A tall, silver-haired Black woman in her 40s with warm umber skin and lean, efficient musculature, standing in a cyberpunk neon studio, portrait style. Her eyes glow soft amber, and a bioluminescent stripe runs down her left jawline in steady pale light. Both hands show visible puckered burn scars with a subtle pearlescent heat-resistant dermis overlay shining across the damaged skin. She wears a fire-resistant canvas work apron over a dark long-sleeve shirt, and her expression is distant and meditative. Behind her, suspended neon tubes glow in argon and mercury vapor, casting prismatic light across her face. Low warm overhead lighting mixed with cool neon blue and violet. Photorealistic, cinematic depth of field, contemplative mood, hands visible and scarred in foreground. --ar 2:3 --v 6"
 }

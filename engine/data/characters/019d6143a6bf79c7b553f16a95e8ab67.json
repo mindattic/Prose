@@ -233,5 +233,26 @@
     "The Pure Hand",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Armenian",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and graceful, with defined shoulders from years of precise hand work and pattern-cutting. Long-limbed with the kind of posture that comes from constantly observing fabric drape on bodies.",
+    "hair_color": "Deep black with structural iridescence from geneware modification",
+    "hair_style": "Asymmetric architectural sweep, left side layered short and angled upward, right side longer; texture resembles woven textile or structured mesh rather than organic hair",
+    "hair_length": "Medium (asymmetric, 3cm to 18cm depending on section)",
+    "eye_color": "Dark brown, alert and observant",
+    "skin_tone": "Rich deep brown, Ghanaian heritage with warm undertones",
+    "complexion": "Clear and well-maintained, with precise grooming. Bioluminescent tracery lines run symmetrically from temples down cheekbones to jawline and throat—deep blue-violet, faintly glowing in low light, creating a pattern resembling circuit paths or kintsugi lines",
+    "distinguishing_marks": [
+      "Bioluminescent geneware tracery on both temples, framing the eyes and running downward in delicate branching patterns",
+      "Continuous luminescent lines along both sides of the jawline and extending down the throat, glowing blue-violet",
+      "Fine measurement scars on both palms from cyberware implant integration, nearly invisible but palpable"
+    ],
+    "visible_augmentations": "Bioluminescent facial and throat tracery (active, gently glowing in ambient light). Hands show minor scarring from measurement implant cyberware but augmentations are functionally invisible—the implants output to a neural visual overlay only visible to her. Hair structure is clearly geneware-modified rather than natural, with an almost textile quality.",
+    "posture_movement": "Constantly in motion with hands—gesturing, sketching shapes in air, measuring invisible distances, framing proposed garment lines on clients' bodies. Stands with weight slightly forward, ready to move, to adjust, to demonstrate. Eyes track fabric and body movement with professional intensity. Speech is animated and accompanied by hand choreography.",
+    "clothing_style": "Always self-designed and modified pieces showcasing her own work. Currently wearing a reversible asymmetric jacket in adaptive polymer weave (blue-black on one side, deep purple on the other) with integrated measurement nodes at the shoulders and wrists. Fitted turtleneck in geneware-compatible textile that bridges the luminescent lines on her throat, emphasizing rather than hiding them. Custom-tailored trousers with reinforced seams at the calves for her own work-station movement. All pieces show visible stitch-work and seams as design features. Jewelry is minimal—measurement implants themselves serve as wrist adornments. Tier 3–4 aesthetic: independent vendor wealth, carefully invested in demonstration pieces and tools rather than status brands."
+  },
+  "image_prompt": "Portrait of Sabine Quaynor-Atabekyan, 31-year-old fashion designer vendor, cyberpunk 2226, medium height with rich deep brown skin, West African and Armenian heritage. Striking asymmetric black hair with textile-like structure, left side sharp and layered short, right side longer and angled. Deep brown alert eyes. Her defining feature: bioluminescent blue-violet tracery lines running from temples down jawline and throat, faintly glowing, resembling circuit patterns or kintsugi. Hands constantly gesturing expressively, showing fine measurement implant scars on palms. Wearing custom reversible asymmetric jacket in adaptive polymer weave (blue-black and deep purple), fitted turtleneck bridging luminescent throat lines. Alban Souk market stall background, warm overhead market lighting mixing with cool blue-violet bioluminescence from her augmentations. Professional but artistic aesthetic, hands mid-gesture explaining garment details to unseen client. Precise, grounded, theatrical. --ar 2:3 --v 6"
 }

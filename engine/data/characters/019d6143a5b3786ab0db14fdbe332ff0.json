@@ -177,5 +177,26 @@
     "Elena Vasquez-9",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European / West African",
+    "height_cm": 173,
+    "weight_kg": 72,
+    "build": "Broad-shouldered and compact, with the functional musculature of someone who does physical labor daily rather than trained for it. Stocky through the torso, strong hands and forearms, minimal body fat from consistent underfed years.",
+    "hair_color": "Dark brown, almost black",
+    "hair_style": "Pulled back in a neat, practical queue or tied low; fastidiously maintained despite limited resources",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Dark brown",
+    "skin_tone": "Medium brown with warm undertones reflecting mixed Eastern European and West African ancestry",
+    "complexion": "Clear but weathered for his age; heavy dark eyebrows that sit low over his eyes, giving a naturally furrowed appearance often misread as anger. Soft mouth, slightly fuller lips. Minimal facial hair kept cleanly shaved. Hands show minor cuts and calluses from kitchen work and general shelter maintenance.",
+    "distinguishing_marks": [
+      "Faint circular scar on inner left forearm (approximately 2cm diameter) from a childhood incident at age eleven, pale against his skin tone",
+      "Small burn scar on the back of his right hand from kitchen work, barely noticeable",
+      "Cluster of freckles across his shoulders and upper back in a slightly darker shade than his baseline skin"
+    ],
+    "visible_augmentations": "None. No chrome, no LED implants, no subdermal plating. His body is entirely biological—a rarity among his age cohort in the GLMZ, marking him as someone from the economic bottom tier or someone who has chosen to remain unaugmented.",
+    "posture_movement": "Stands with shoulders slightly forward, a protective slouch developed from years of making himself available as a physical barrier for smaller children. Moves deliberately and efficiently with minimal wasted motion. His eyes track entrances and exits habitually. When at rest, his hands are often occupied—fidgeting with rope, checking pockets, ready to move. Despite his youth, carries himself with the settled wariness of someone much older.",
+    "clothing_style": "Tier 5/reclamation-tier practical wear. Faded work shirt (often grey or muted blue) with sleeves rolled or pushed up, worn cargo pants with reinforced knees, sturdy unmarked boots that have been resoled at least twice. A heavy canvas jacket in cold months. Everything is clean but repaired multiple times over. No brand markers, no decorative chrome, no status symbols. Clothing chosen for durability and functionality, not aesthetics. A worn fabric wristband in a muted color (possibly religious or personal significance) is visible on his left wrist."
+  },
+  "image_prompt": "Portrait of a seventeen-year-old male with Eastern European and West African heritage, medium brown skin, dark furrowed brows and soft mouth, shoulder-length dark hair tied back neatly. Broad shoulders, compact athletic build, no visible cybernetic augmentations. Wearing faded muted blue work shirt with rolled sleeves, cargo pants, worn boots. Standing in institutional shelter interior with warm amber lighting from old fixtures, worn painted brick walls behind him. Expression serious but not hostile, eyes slightly distant with quiet exhaustion and calm determination. Natural skin texture, no chrome, no glowing implants. Captured in cinematic cyberpunk realism style, emphasizing poverty and quiet resilience. Soft directional lighting across his face creating subtle shadows under his heavy brows. Midjourney, introspective portrait, gritty GLMZ Tier 5 aesthetic, photorealistic. --ar 2:3 --v 6"
 }

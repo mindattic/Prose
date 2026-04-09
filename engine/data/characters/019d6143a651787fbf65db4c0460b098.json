@@ -13,7 +13,7 @@
   "role": "Crew lead and Gleaner Brigade veteran — Red Lantern",
   "age": 51,
   "status": "active",
-  "location": "Western border of Meridian 88 — operates from a fortified farmstead that serves as Red Lantern's staging area",
+  "location": "Western border of GLMZ — operates from a fortified farmstead that serves as Red Lantern's staging area",
   "description": "Madre Solis has been raiding Iowa for food for twenty-three years. She was one of the first Gleaner Brigade volunteers when the agricultural collapse turned the breadbasket into contested territory — a landscape of mega-scale automated farms defended by corporate security and increasingly hostile Behemoth fauna that emerged from the ecological disruption. She survived because she learned to read the land the way her grandmother read weather: patterns in the soil, in the animal movement, in the electromagnetic signatures that Behemoths leave before they surface.\n\nShe built Red Lantern from other long-term Gleaners — the ones who'd survived enough raids to develop the institutional knowledge that keeps you alive in Behemoth territory. The crew runs two to three deep raids per month, crossing the western jurisdictional boundary into the Iowa wastes to harvest, scavenge, or trade with the scattered farming settlements that still exist between corporate zones. Every raid is a survival operation. The Behemoths are not hypothetical. The corporate security drones are not hypothetical. The food they bring back feeds communities on M88's western edge that would otherwise starve.\n\nMadre is stocky, sun-darkened, with deep lines around eyes that have spent two decades squinting against prairie wind and scanning horizons for Behemoth sign. Her hair is gray-streaked and kept in a practical braid. She moves with the rolling gait of someone who has walked more miles than she has ridden, and her hands are calloused from farm tools as much as from weapons. She is called Madre because she has buried more young Gleaners than she can count and because she feeds the people who can't feed themselves.",
   "psychology": {
     "facet_weights": {
@@ -198,7 +198,7 @@
   ],
   "related_entities": [
     "The Iowa Exclusion Zone",
-    "Meridian 88",
+    "GLMZ",
     "Grandmother",
     "Flicker",
     "Iowan Behemoth Agricultural Platform",
@@ -207,5 +207,26 @@
     "The Pure Hand",
     "Weathervane"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "Mexican / Scandinavian — suggested by surname Solis combined with prairie-worn physiology",
+    "height_cm": 162,
+    "weight_kg": 71,
+    "build": "Stocky and dense, muscular without bulk — the physique of someone who carries loads across difficult terrain rather than lifting in a gym. Broad shoulders, thick core, legs that show decades of walking. No excess weight; everything functional.",
+    "hair_color": "Dark brown with prominent silver-gray streaking, especially at temples and through the braid",
+    "hair_style": "Single practical braid running down the center of her back, often wrapped with cord or leather to keep it secure during work",
+    "hair_length": "Long (past shoulders when unbraided), but always bound",
+    "eye_color": "Brown, naturally warm-toned but appearing darker due to sun damage and the permanent squint lines around them",
+    "skin_tone": "Deep medium brown, heavily weathered and sun-darkened from two decades of prairie exposure",
+    "complexion": "Face carved by wind and sun — deep crow's feet radiating from eyes, permanent creases between brows from scanning horizons, weathered lips. Skin texture is rough, not lined so much as etched. No cosmetic grooming; functional only. A thin white scar runs from her right cheekbone to jawline.",
+    "distinguishing_marks": [
+      "Deep linear scar on right cheekbone to jawline, approximately 8cm, from a Behemoth encounter or shrapnel — pale and old",
+      "Callus formations across both palms and all fingers, with old burn scars on the heel of her left hand",
+      "Dark tattoo on inside of right forearm: Red Lantern symbol (stylized lantern) with names of lost crew members inscribed in a spiral around it — a visible memorial updated over years"
+    ],
+    "visible_augmentations": "No obvious chrome or external implants. Her augmentations are entirely subcutaneous — seismic implants in feet arches (sometimes visible as faint grid scarring across soles if barefoot), olfactory processing invisible. The subdermal emergency beacon sits at the base of her skull, creating a subtle ridge under the skin at her nape, visible only if hair is pulled back tight.",
+    "posture_movement": "Moves with a rolling, economical gait — weight distributed low, knees slightly bent in a stance that allows rapid directional shift. Never stands fully upright; always poised for movement. Hands rest naturally at her sides or near her belt. Head moves before eyes when scanning — rotates deliberately, reading angles rather than glancing. She walks with the ground-sense of someone reading vibrations through her feet; occasionally pauses mid-step as if listening to something through her soles.",
+    "clothing_style": "Tier 4 functional: heavy-duty canvas and treated leather, designed for durability and repair rather than replacement. Olive-drab cargo pants with reinforced knees and thigh pockets filled with practical gear. Weathered brown leather belt with a worn holster. Boots are expensive tactical-grade, maintained obsessively. Top layer is usually a canvas work jacket in tan or dark gray, sleeves rolled or pushed up. Underneath: simple long-sleeve synthetic shirt designed for temperature regulation and quick-dry properties. No jewelry except a simple silver band on her left ring finger — not decorative, worn from years of labor. A red cloth lantern-shaped pendant hangs from a cord around her neck, hand-sewn, worn soft by handling."
+  },
+  "image_prompt": "Weathered woman, 51 years old, stocky muscular build, deep sun-darkened brown skin, long dark hair with silver streaks bound in a practical braid, deep crow's feet and wind-carved face, wearing heavy canvas work jacket and reinforced cargo pants, standing in prairie wind with hands at her sides in a grounded stance, ground-mist at her feet suggesting seismic sensitivity, red lantern pendant visible, prairie horizon at dusk behind her with distant Behemoth silhouette on horizon, cinematic cyberpunk realism, moody golden-hour lighting with shadows, gritty documentary photography style, weathered and worn aesthetic, --ar 2:3 --v 6"
 }

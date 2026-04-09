@@ -29,7 +29,7 @@
       "Going cyberpsycho — losing the boundary between human and machine"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Knowledge — to understand the systems that grind people down",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
     ],
@@ -275,5 +275,27 @@
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech ReadRoom Social Cue Enhancer"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 183,
+    "weight_kg": 71,
+    "build": "Rawboned and lean — efficient rather than muscular, with the tensile strength of someone who moves constantly. Long limbs, narrow shoulders, minimal subcutaneous fat. The frame reads as either ascetic discipline or chronic scarcity, depending on the observer.",
+    "hair_color": "Dark brown with silver-grey threading at the temples",
+    "hair_style": "Pulled back tight in a braided crown, kept meticulously styled despite the utilitarian nature of the rest of their appearance",
+    "hair_length": "Medium",
+    "eye_color": "Hazel with a faint amber tint — possibly from subcutaneous neural enhancement affecting the iris",
+    "skin_tone": "Medium brown with cool undertones, weathered by salt spray and dockside exposure",
+    "complexion": "Sharp-featured with prominent cheekbones and a defined jawline. Skin is clear but bearing the strain of chronic augmentation integration — faint inflammation scars around the temples and along the mandible in thin, surgical lines. No cosmetic grooming; appearance is entirely functional.",
+    "distinguishing_marks": [
+      "Augmentation scarring in a precise line along both temples, approximately 4cm each, where neural interface ports were installed",
+      "Chemical analyzer chrome visible in the nasal passages — metallic grey tubing visible when light catches the nostrils at certain angles",
+      "Thin surgical scars tracing the jawline on both sides, approximately 6cm total, from the chemical analyzer integration at the nasal root downward",
+      "A jagged burn scar on the right forearm, approximately 8cm, from an old solvent exposure — tissue is slightly puckered and discolored"
+    ],
+    "visible_augmentations": "Chemical analyzer chrome in nasal passages — metallic tubing visible in nostrils. Temple and jawline augmentation scarring is stark and unmodified. No dermal plating or obvious limb replacement, but the visible chrome suggests subcutaneous systems that aren't immediately apparent.",
+    "posture_movement": "Moves with economical precision — no wasted motion, every gesture calibrated. Stands at an angle rather than face-on, a defensive habit. Breathing is controlled and deliberate. When still, there is a visible tension in the shoulders and hands, as if the body is perpetually coiled. Makes direct eye contact but holds it just slightly too long.",
+    "clothing_style": "Tier 4 utilitarian with Tier 3 underpinings — reinforced polymer jacket in charcoal grey with internal pockets for tools and data storage. Fitted tactical pants with cargo reinforcements, worn denim showing careful wear patterns at stress points. Heavy-soled boots with grip plating for dockside work. Layers are chosen for movement and concealment rather than presentation. No jewelry except a subdermal RFID implant visible as a faint subcutaneous line on the left wrist. Clothing is always clean but never new."
+  },
+  "image_prompt": "Cyberpunk character portrait of a tall, rawboned androgynous figure with dark brown skin and sharp Scandinavian-African features. Chrome chemical analyzer visible in nasal passages catching the light. Augmentation scarring visible along temples and jawline in precise surgical lines. Dark hair braided tight. Hazel eyes with faint amber tint, direct and unsettling stare. Wearing charcoal grey reinforced polymer jacket over tactical pants. Standing at a slight angle in dockside industrial setting with Lake Michigan waterfront visible behind, sodium-lit and cold. Precise, coiled posture suggesting lethal efficiency. Moody cyberpunk noir lighting with harsh shadows and blue-grey color grading. Photorealistic, documentary style. --ar 2:3 --v 6"
 }

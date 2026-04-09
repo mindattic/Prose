@@ -9,11 +9,11 @@
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Airship drifter and unlicensed courier, traveling between Meridian 88 and the northern lake settlements aboard transient cargo airships",
+  "role": "Airship drifter and unlicensed courier, traveling between GLMZ and the northern lake settlements aboard transient cargo airships",
   "age": 19,
   "status": "active",
   "location": "Currently grounded at Escanaba Gateway airship mooring, waiting for a berth on anything heading south, near Michigan Ave and Roosevelt",
-  "description": "Lumi Pereira-Dzamefe has bioluminescent skin — faint blue-gold pulses that move under the surface of their brown skin like something swimming beneath still water, brightest at their temples and collarbones. It's a natural geneware expression that came through their father's side and they have done nothing to modify or suppress it; up in the dark of an airship cargo hold at three in the morning, they are their own light source. They are lean and quick, with dark eyes that are always slightly too aware — always tracking exits, always calculating load weights. They have a scar across their left palm from a cargo strap incident two years ago that they are irrationally proud of.\n\nThey grew up on airships and know no other life — their parents were both drifters and they were born somewhere over Lake Superior during a cargo run. They are nineteen but have the practical knowledge of someone much older and the emotional regulation of someone much younger. Lumi is bright and genuinely funny, with a quick warm laugh that surprises people, but they crash into loneliness hard and often. They have been in Meridian 88 exactly twice before and each time felt like being asked to live inside a machine. They find ground-level cities claustrophobic. They pray to the ELF they call the Ballast Keeper, who they believe lives in the pressure gauges of every lift-gas rig on the northern routes.",
+  "description": "Lumi Pereira-Dzamefe has bioluminescent skin — faint blue-gold pulses that move under the surface of their brown skin like something swimming beneath still water, brightest at their temples and collarbones. It's a natural geneware expression that came through their father's side and they have done nothing to modify or suppress it; up in the dark of an airship cargo hold at three in the morning, they are their own light source. They are lean and quick, with dark eyes that are always slightly too aware — always tracking exits, always calculating load weights. They have a scar across their left palm from a cargo strap incident two years ago that they are irrationally proud of.\n\nThey grew up on airships and know no other life — their parents were both drifters and they were born somewhere over Lake Superior during a cargo run. They are nineteen but have the practical knowledge of someone much older and the emotional regulation of someone much younger. Lumi is bright and genuinely funny, with a quick warm laugh that surprises people, but they crash into loneliness hard and often. They have been in GLMZ exactly twice before and each time felt like being asked to live inside a machine. They find ground-level cities claustrophobic. They pray to the ELF they call the Ballast Keeper, who they believe lives in the pressure gauges of every lift-gas rig on the northern routes.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -220,7 +220,7 @@
   "changelog": [],
   "related_entities": [
     "Escanaba Gateway",
-    "Meridian 88",
+    "GLMZ",
     "Arcturus Defense Solutions Skeletal Anchor System — 'The Ballast'",
     "Spire Light on Still Water",
     "The Meridian Drift",
@@ -229,5 +229,27 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Gold"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Portuguese / West African (Dzamefe lineage suggests Ewe or Akan heritage)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and angular, with corded forearm muscles from years of cargo handling. No excess weight; their frame is efficient, built for climbing and balance in confined spaces. Shoulders slightly asymmetrical from repetitive lifting.",
+    "hair_color": "Dark brown with natural warm undertones",
+    "hair_style": "Pulled back in a practical single braid or loose knot, often secured with salvaged cargo straps or wire",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Dark brown, nearly black, with a faint reflective quality in low light from bioluminescent subcutaneous activity",
+    "skin_tone": "Medium-warm brown with visible undertones of the bioluminescent inheritance — faint blue-gold luminescence visible along the temples, collarbones, and wrists, brightest in darkness or under stress",
+    "complexion": "Sun-worn from constant airship exposure despite the northern latitudes, with a slight weathered quality unusual for someone nineteen. Fine lines around the eyes from squinting against wind. Warm, open expression offset by the constant micro-vigilance in their gaze.",
+    "distinguishing_marks": [
+      "Prominent white scar across the left palm, running diagonal from wrist to mid-hand, raised and slightly puckered, sustained from cargo strap friction two years prior",
+      "Faint tracery of bioluminescent pathways visible along collarbones and neck when activated or in darkness",
+      "Callused fingers and palm pads, particularly pronounced on index and middle fingers from line work",
+      "Small thermal burn scar on right forearm, approximately 3cm in length, from incidental contact with cooling vent during cargo operations"
+    ],
+    "visible_augmentations": "Bioluminescent skin manifestation is visible and always present, though intensity fluctuates with emotional state, fatigue, and ambient light. No installed cybernetics visible. Hands show extensive manual wear and callus development consistent with unaugmented physical labor.",
+    "posture_movement": "Alert, economical movement with an instinctive awareness of vertical space and weight distribution. They move like someone comfortable in confined quarters and moving cargo — balance-first, every step calculated. Fidgets with hands when stationary (picking at scar, testing rope knots, checking equipment). When tired or lonely, they slouch slightly, making themselves smaller. Quick, infectious smile that doesn't reach their eyes until they trust someone.",
+    "clothing_style": "Pure Tier 4-5 transient: layered insulation wear in grays and deep blues, cargo pants with reinforced thigh and shin pockets, worn synthetic-leather boots with aggressive tread, salvaged thermal wrap worn as a coat or blanket depending on need. No corporate branding. Patches and repairs are functional, not aesthetic. Carries a battered chest harness with carabiners, rope, and cargo assessment tools. Everything smells faintly of lift-gas, ozone, and Lake Superior wind. Wears a single brass pressure gauge on a cord around their neck as a prayer object — the Ballast Keeper token."
+  },
+  "image_prompt": "Cyberpunk portrait of a 19-year-old nonbinary drifter, lean and alert, medium brown skin with subtle bioluminescent blue-gold pulses glowing along collarbones and temples, dark aware eyes, dark hair in a practical braid, visible white scar across left palm. Wearing layered gray and blue cargo clothing, thermal wrap, brass pressure gauge pendant. Standing in a shadowy airship mooring facility at dusk, industrial lighting casting sharp shadows, atmospheric lift-gas haze in background. Expression warm but cautious, radiating both exhaustion and quiet competence. Bioluminescence subtly illuminating surrounding darkness. Photorealistic cyberpunk aesthetic, moody industrial setting, high contrast lighting, cinematic depth --ar 2:3 --v 6"
 }

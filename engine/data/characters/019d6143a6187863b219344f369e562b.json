@@ -246,5 +246,27 @@
     "The Waukegan Industrial Shelf",
     "Kenosha Crossing"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "Central Asian / Central African (Kazakh-Bantu heritage suggested by Tleubergenov-Essomba surnames)",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Heavyset through the torso and shoulders, broad-framed with slight thickening at the midsection — the build of someone who has carried weight for decades without attempting to shed it. Still possesses underlying structural strength beneath the weathering.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, neatly maintained despite circumstance",
+    "hair_length": "Short",
+    "eye_color": "Near-black, deep-set",
+    "skin_tone": "Medium to dark brown with olive undertones, reflecting mixed Central Asian and Central African ancestry",
+    "complexion": "Heavily lined face with broad, prominent cheekbones. Deep creases radiating from the corners of his eyes and mouth. Weathered texture suggesting decades of outdoor exposure. Close-cropped white beard trimmed with meticulous care. Skin shows age spots and older scarring consistent with industrial work.",
+    "distinguishing_marks": [
+      "Subdermal bioluminescence scars along both inner forearms running from wrist to elbow — now faint white lines beneath the skin where the implants rest",
+      "A thin, pale scar along his left jawline, approximately 8cm, running from below the ear toward the chin — old industrial accident",
+      "Deep creases across his forehead forming a near-permanent expression of thoughtful concern",
+      "Small burn scar on the back of his right hand, roughly circular, approximately 2cm diameter"
+    ],
+    "visible_augmentations": "Intermittent blue-white bioluminescent glow visible beneath the skin of both forearms — a flickering, stuttering light that pulses irregularly, brightest at the wrists and fading toward the elbows. The glow intensifies and destabilizes with emotional intensity or temperature shifts. No other visible modifications.",
+    "posture_movement": "Moves with deliberate, economical motion — the gait of someone who has learned not to waste energy. Stands with weight balanced evenly, shoulders slightly forward. Carries himself with a quiet, settled presence that suggests acceptance rather than resignation. Hands move slowly and with intention during conversation. Makes strong eye contact, head slightly tilted as if listening to something beyond the immediate conversation.",
+    "clothing_style": "Tier 5 utility wear maintained with surprising care. Typically wears a faded gray technical shirt with reinforced panels and multiple pockets (probably salvaged or purchased secondhand from an industrial surplus vendor). Over this, a heavy canvas coat in dark brown, patched at the elbows and lined with thermal fabric — worn but not carelessly so. Trousers are practical cargo-style in dark charcoal, with worn utility pockets. Boots are old military-grade steel-toed work boots, scuffed and re-heeled multiple times. A simple cord bracelet in faded red textile wound around his left wrist — a spiritual marker, not a status symbol. No visible corporate branding or tier insignia. Clothing suggests someone who has voluntarily stepped outside consumption hierarchies."
+  },
+  "image_prompt": "Cyberpunk character portrait of an elderly Central Asian-African man with weathered, lined face and deep-set dark eyes, close-cropped white beard maintained with care. Heavyset, broad-shouldered build. Worn dark gray and brown industrial clothing, heavy canvas coat with patches. Both forearms emit an irregular, stuttering blue-white bioluminescent glow beneath the skin, pulsing unevenly like a failing neon sign. Deep lines radiating from eyes and mouth. Expression calm and contemplative. Standing in dim light with the glow casting soft blue shadows across his face and hands. Setting suggests a worn hyperlane rest stop interior — concrete, dim overhead lighting, utilitarian metal surfaces. Mood: spiritual fatigue, quiet dignity, acceptance. Cinematic lighting with rim light emphasizing the bioluminescent artifacts. Grounded, naturalistic cyberpunk aesthetic, no chrome fantasies. --ar 2:3 --v 6"
 }

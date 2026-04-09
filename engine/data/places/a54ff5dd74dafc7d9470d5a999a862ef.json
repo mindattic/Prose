@@ -7,7 +7,7 @@
     "Aph",
     "The Top"
   ],
-  "description": "Aphelion occupies the 87th floor of Axiom Tower, the highest non-corporate floor in Meridian 88, and it is exactly what you think it is. The drinks are obscenely expensive. The view is obscenely beautiful. The clientele is obscene. This is the Spire's premier social venue for the corporate elite — C-suite executives, sovereign fund managers, tier architects, and the vanishingly small population of independent operators wealthy enough to maintain Tier 5 credentials. Getting through the door requires an invitation from an existing member, a net worth verification that would make most corridor residents physically ill, and a dress code enforced by security personnel whose training budget exceeds the annual GDP of several Shelf districts.\n\nWhat makes Aphelion more than a rich person's trophy case is the host: a woman named Celestine Mbeki-Frost, who has managed the club for thirty-one years and who knows more about the personal lives, financial vulnerabilities, and emotional needs of Meridian's corporate elite than any intelligence service operating in the GLMZ corridor. Celestine is not a spy. She is something more dangerous — a host who makes powerful people feel comfortable enough to be honest. The confessions she has heard, the negotiations she has witnessed, the tears she has seen shed by people who are publicly invulnerable — these constitute a body of knowledge that could restructure the corridor's power dynamics if ever deployed. Celestine has never deployed it. This restraint is the source of her power and the reason Aphelion continues to exist.\n\nFor freelancers, Aphelion is accessible only through the most extraordinary circumstances — a Spire-tier client who wants a meeting on their turf, a once-in-a-career infiltration job, or the kind of luck that the corridor's actuarial tables consider statistically irrelevant. But knowing that Aphelion exists, knowing who drinks there, and knowing that Celestine Mbeki-Frost sits at the center of a web of elite vulnerability — this is valuable information in itself. The decisions made on the 87th floor of Axiom Tower shape the lives of millions of corridor residents who will never see the view. The drinks, for the record, are worth the price. The 2187 Terrestrial Reserve bourbon, served in crystal that costs more than most Shelf apartments, is the finest whiskey in the corridor. Even the obscene deserve good bourbon.",
+  "description": "Aphelion occupies the 87th floor of Axiom Tower, the highest non-corporate floor in GLMZ, and it is exactly what you think it is. The drinks are obscenely expensive. The view is obscenely beautiful. The clientele is obscene. This is the Spire's premier social venue for the corporate elite — C-suite executives, sovereign fund managers, tier architects, and the vanishingly small population of independent operators wealthy enough to maintain Tier 5 credentials. Getting through the door requires an invitation from an existing member, a net worth verification that would make most corridor residents physically ill, and a dress code enforced by security personnel whose training budget exceeds the annual GDP of several Shelf districts.\n\nWhat makes Aphelion more than a rich person's trophy case is the host: a woman named Celestine Mbeki-Frost, who has managed the club for thirty-one years and who knows more about the personal lives, financial vulnerabilities, and emotional needs of Meridian's corporate elite than any intelligence service operating in the GLMZ corridor. Celestine is not a spy. She is something more dangerous — a host who makes powerful people feel comfortable enough to be honest. The confessions she has heard, the negotiations she has witnessed, the tears she has seen shed by people who are publicly invulnerable — these constitute a body of knowledge that could restructure the corridor's power dynamics if ever deployed. Celestine has never deployed it. This restraint is the source of her power and the reason Aphelion continues to exist.\n\nFor freelancers, Aphelion is accessible only through the most extraordinary circumstances — a Spire-tier client who wants a meeting on their turf, a once-in-a-career infiltration job, or the kind of luck that the corridor's actuarial tables consider statistically irrelevant. But knowing that Aphelion exists, knowing who drinks there, and knowing that Celestine Mbeki-Frost sits at the center of a web of elite vulnerability — this is valuable information in itself. The decisions made on the 87th floor of Axiom Tower shape the lives of millions of corridor residents who will never see the view. The drinks, for the record, are worth the price. The 2187 Terrestrial Reserve bourbon, served in crystal that costs more than most Shelf apartments, is the finest whiskey in the corridor. Even the obscene deserve good bourbon.",
   "atmosphere": {
     "sights": [
       "The view — 87 floors up, the entire GLMZ corridor visible on clear nights, Lake Michigan to the horizon",
@@ -33,7 +33,7 @@
     "adjacent_to": [
       "Axiom Tower",
       "The Spire",
-      "Meridian 88 central"
+      "GLMZ central"
     ],
     "exits": [],
     "tags": []
@@ -45,8 +45,16 @@
     "Celestine Mbeki-Frost — not a patron, but the reason patrons come"
   ],
   "notable_locations": [
-    "Celestine's table — the corner where she sits when not circulating, where the most sensitive conversations happen",
-    "The west window — unobstructed view of the lake, where people go to be alone with the horizon"
+    {
+      "name": "Celestine's table",
+      "description": "the corner where she sits when not circulating, where the most sensitive conversations happen",
+      "tags": []
+    },
+    {
+      "name": "The west window",
+      "description": "unobstructed view of the lake, where people go to be alone with the horizon",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.8827,

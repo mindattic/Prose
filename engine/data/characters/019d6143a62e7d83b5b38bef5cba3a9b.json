@@ -229,5 +229,26 @@
     "Rust",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Senegalese) / Iberian (Portuguese) / Turkic (Turkish) / Central Asian (Kazakh)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and slightly stooped, with the particular forward curve of someone who has spent decades hunched over interfaces. Narrow shoulders, long fingers adapted to precision work, minimal muscle definition but wiry rather than frail.",
+    "hair_color": "Color-shifting — cycles slowly between deep indigo and rust-copper tones",
+    "hair_style": "Chin-length, straight to slightly wavy, often pulled to one side or tucked behind ear; slightly disheveled from constant contact with VR headsets and headphones",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown with slight amber undertone; alert and abstracted",
+    "skin_tone": "Warm brown complexion with golden undertones, reflecting mixed Senegalese and Mediterranean heritage",
+    "complexion": "Fine-boned face with high, pronounced cheekbones and an angular jaw; smooth skin with the particular pallor of someone who works in low light; dark circles under eyes are nearly permanent; minimal grooming vanity evident",
+    "distinguishing_marks": [
+      "Bioluminescent patches on the dorsal surface of both hands in faint constellation patterns (Cassiopeia on left hand, Orion on right), visible only in dim light as soft blue-white glow",
+      "Small circular scar at left temple where neural jack port is embedded — slightly raised, discolored to pale white",
+      "Faint caffeine stains on fingers from years of gripping hot cups during edit sessions"
+    ],
+    "visible_augmentations": "Neural jack at left temple (visible as a flush port beneath skin, approximately 8mm diameter, dark metallic rim); bioluminescent hand patches glow faintly in low-light environments; subtle micro-LED indicators sometimes visible in eye whites during VR interface sessions (trace artifacts of the neural feed)",
+    "posture_movement": "Habitually leans forward, as if perpetually reaching toward a screen just beyond arm's reach. Moves with economy — no wasted motion, but also no particular grace. Hands are restless, often making subtle gesture-commands from muscle memory of VR interface work. Makes sustained eye contact when engaged but frequently drifts into middle-distance staring. Sits cross-legged or in asymmetrical positions; rarely uses furniture as intended.",
+    "clothing_style": "Tier 3-4 functional minimalism with deliberate anti-fashion sensibility. Standard uniform: loose, worn black or charcoal tech-weave shirt (Tanaka brand, mid-tier); fitted grey cargo pants with numerous pockets holding cables, drives, haptic gloves; battered Edgewater-district knockoff AR glasses pushed up in hair; worn leather jacket (secondhand, at least five years old, faded to soft grey-brown). Feet typically bare at the studio, but wears scuffed matte-black neural-reactive sneakers (Vesper brand) when outside. No jewelry except the bioluminescent hand patches. Favors anything with multiple pockets and minimal fasteners. Clothes show evidence of being slept in during edit marathons."
+  },
+  "image_prompt": "Portrait of a 44-year-old nonbinary person with striking angular features and mixed West African-Mediterranean-Central Asian heritage, warm brown skin with golden undertones. Chin-length hair in deep indigo fading to rust-copper, slightly disheveled and tucked behind one ear. Dark, thoughtful eyes with subtle intelligence and abstraction. Visible small metallic neural port scar at left temple. Seated in dim blue-tinted studio lighting, leaning slightly forward with the posture of someone perpetually reaching toward a screen. Thin bioluminescent constellation patterns faintly visible on both hands glowing soft blue-white in low light. Wearing loose worn charcoal tech-weave shirt and grey cargo pants, minimalist Tier 3-4 aesthetic. Background softly blurred server racks and monitor glow. Cyberpunk near-future, intimate studio atmosphere, moody and introspective mood, cinematic side lighting, deep shadows, photorealistic with subtle sci-fi elements --ar 2:3 --v 6"
 }

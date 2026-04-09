@@ -43,7 +43,7 @@
       "Fails to notice when their own behavior mirrors the people they despise",
       "Believes their trauma makes them special instead of recognizing it as damage to manage"
     ],
-    "secret": "Zurab Ivanov-Appiah sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Zurab Ivanov-Appiah sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
@@ -278,5 +278,28 @@
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Georgian / Russian / West African",
+    "height_cm": 178,
+    "weight_kg": 92,
+    "build": "Broad-shouldered and heavy-set, muscular underneath a layer of accumulated weight that reads as density rather than softness. Thick through the torso and limbs — built like someone who absorbs punishment and stays upright.",
+    "hair_color": "Steel gray with darker roots",
+    "hair_style": "Pulled back in a tight, practical braid, no frills",
+    "hair_length": "Medium",
+    "eye_color": "Left eye: dark brown, natural. Right eye: chrome-housed cybernetic with visible LED targeting reticle, amber luminescence when active",
+    "skin_tone": "Warm brown with olive undertones, weathered from exposure and chemical-laden Steamvent air",
+    "complexion": "Deep laugh lines around the mouth, weathered cheekbones, minimal grooming beyond functional maintenance. Scarring along the left temple fades into her hairline. Skin has a slight chemical sheen from geothermal district residue.",
+    "distinguishing_marks": [
+      "Hydraulic port access points visible at elbows — chrome plating recessed into skin, servicing marks still readable",
+      "Matching hydraulic knee assemblies visible when she moves or sits — chrome framework integrated with muscle, pressure lines etched into the metal",
+      "Burn scarring across the right shoulder and upper arm, old and paled but textured, partially concealed by clothing",
+      "Small, faded tactical tattoo on the inside of her left wrist — geometric, possibly military or corporate origin, deliberately understated",
+      "Surgical scar tissue along the right temple where the eye replacement integrates with the skull"
+    ],
+    "visible_augmentations": "Hydraulic knee and elbow joints with exposed chrome framework — not hidden, not flaunted, simply present. Right eye cybernetic with amber LED visible in low light. Micro-hydraulic servos create subtle clicking sounds during precise movements. No attempt to pass as unaugmented.",
+    "posture_movement": "Moves with economical precision — every motion calculated for efficiency and minimal energy waste. Sits with weight distributed to absorb quick vertical movement. Favors her left side slightly when standing. Stance is wide, grounded. When at rest, she is truly still — no fidgeting, no nervous tells. When moving, the hydraulics whisper.",
+    "clothing_style": "Tier 4 practicality — reinforced cargo pants with thigh pockets for tools or sidearm, tactical vest over a loose-fitting thermal base layer to accommodate augmentation cooling ports. Weather-resistant synthetic jacket with hood. Heavy boots with reinforced heel plating. No logos, no flash, no color beyond functional black and dark gray. Clothing shows wear and careful repair. No jewelry. All garments have concealment capability."
+  },
+  "image_prompt": "Cyberpunk character portrait, 55-year-old woman with steel gray hair in tight braid, warm brown skin with olive undertones, weathered face with laugh lines and temple scarring. Left eye natural dark brown, right eye chrome cybernetic with amber LED reticle. Broad-shouldered, heavy-set muscular build. Visible hydraulic chrome joints at elbows and knees with pressure-line etching. Burn scarring across right shoulder. Wearing dark gray tactical vest over thermal base layer, reinforced cargo pants, heavy boots. Chemical haze and geothermal steam in background, warm orange-yellow lighting from industrial vents. Moody, grounded, dangerous competence. 2226 GLMZ Steamvent Alley aesthetic. Hyper-detailed chrome and skin textures. Film noir lighting. Unflinching direct stare. --ar 2:3 --v 6"
 }

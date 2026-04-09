@@ -265,5 +265,28 @@
     "Déjà Vu",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Han Chinese / Undetermined secondary lineage (name suggests possible Taiwanese or Southeast Asian admixture)",
+    "height_cm": 157,
+    "weight_kg": 52,
+    "build": "Compact and wiry, density rather than bulk. Decades of standing, lifting, and repetitive motion have left her lean and functionally strong despite her age. No excess softness, all utility.",
+    "hair_color": "Steel grey, naturally greyed",
+    "hair_style": "Tightly pinned bun, secured with two wooden chopsticks that serve double duty as hair pins and gestural tools",
+    "hair_length": "Long (worn up)",
+    "eye_color": "Dark brown, sharp and penetrating",
+    "skin_tone": "Light to medium tan, the complexion of someone who has spent 68 years working indoors and outdoors in equal measure",
+    "complexion": "Weathered, with deep laugh lines around the eyes and mouth. Fine crease network across forehead and cheeks. Skin has the papery texture of age and low hydration common in the Shelf's recycled air. No cosmetic modifications. Minimal scarring visible on face itself.",
+    "distinguishing_marks": [
+      "Multiple small white scars on both hands from decades of cooking oil splatter and steam burns, clustered around knuckles and wrists",
+      "Linear scar tissue on inner wrists and palms in precise, symmetrical patterns suggesting micro-surgical work from an earlier career phase",
+      "Swollen knuckles on both hands, visibly arthritic, with discoloration around the joints",
+      "Faint burn mark on right forearm near elbow, roughly 3cm in diameter, aged and pale",
+      "Small crescent scar on left temple, likely from a workplace accident decades past"
+    ],
+    "visible_augmentations": "None visible. Any augmentation work from her past is either fully internalized or deliberately concealed.",
+    "posture_movement": "Perpetually in motion — no idle standing. Moves with economic precision, every gesture purposeful. Stance is slightly forward-leaning, as if ready to pivot toward whatever task needs doing next. Walks with a barely perceptible shuffle, more the result of 50+ years on her feet than actual infirmity. Hands are rarely still; she gestures while talking, pulls chopsticks from her hair to emphasize points, replaces them mid-sentence without breaking eye contact.",
+    "clothing_style": "Utilitarian Tier 4 worker aesthetic. Always wearing a stained canvas apron over simple, worn thermal layers. Dark grey or black work pants held up with a cord. Thick-soled slip-on kitchen shoes, scuffed and comfortable. Glasses held together with electrical tape rather than replaced — a deliberate statement about priorities. No jewelry, no ornamentation, nothing that could catch on machinery or require maintenance. Her clothing is functional anti-fashion: it has absorbed decades of kitchen grease and noodle starch and she wears it like earned credential."
+  },
+  "image_prompt": "Portrait of elderly Asian woman, age 68, height 5'2\", lean wiry build, steel-grey hair pinned in tight bun with wooden chopsticks, dark sharp eyes behind taped-together glasses, deeply weathered face with laugh lines and fine creases, hands visibly scarred from cooking burns and old surgical work, swollen arthritic knuckles, wearing stained canvas apron over thermal layers, no jewelry, intense focused expression, noodle shop kitchen background with steam and warm overhead lighting, shallow depth of field, gritty realism, cyberpunk setting, character study, Tier 4 working class aesthetic, warm tungsten lighting, grainy cinematic quality, unsmiling contemplative expression --ar 2:3 --v 6"
 }

@@ -7,7 +7,7 @@
     "Crowd"
   ],
   "role": "Private Investigator",
-  "description": "Naima Orlov-Twumasi is either the future of private investigation or an ethical catastrophe in progress, depending on who you ask. She built MeridianEyes, a mesh-based platform that crowdsources investigative work to a network of over 30,000 gig participants across all five tiers of Meridian 88. When a case comes in, she breaks it into hundreds of tiny, anonymized tasks — confirm a sighting, photograph a location, check a public record, note an anomaly — and distributes them to participants who earn micro-bounties for completing them.\n\nThe results are staggering. She solves cases faster than any individual investigator, covers more ground than any surveillance system, and generates more data points than any corporate intelligence operation. Her missing-persons recovery time averages eleven hours. Her platform has been used for everything from finding lost pets to tracking corporate fugitives, and it processes over 50,000 micro-tasks per week.\n\nThe ethical questions are equally staggering. MeridianEyes turns every participant into an unwitting surveillance node. The platform's anonymization protocols mean participants don't know what case they're contributing to or who benefits from their observations. Privacy advocates have called it 'distributed totalitarianism.' Naima argues that every participant is voluntary, every task is legal, and the platform includes safeguards against misuse. She's mostly right. The 'mostly' keeps her up at night, though she'd never admit it.",
+  "description": "Naima Orlov-Twumasi is either the future of private investigation or an ethical catastrophe in progress, depending on who you ask. She built MeridianEyes, a mesh-based platform that crowdsources investigative work to a network of over 30,000 gig participants across all five tiers of GLMZ. When a case comes in, she breaks it into hundreds of tiny, anonymized tasks — confirm a sighting, photograph a location, check a public record, note an anomaly — and distributes them to participants who earn micro-bounties for completing them.\n\nThe results are staggering. She solves cases faster than any individual investigator, covers more ground than any surveillance system, and generates more data points than any corporate intelligence operation. Her missing-persons recovery time averages eleven hours. Her platform has been used for everything from finding lost pets to tracking corporate fugitives, and it processes over 50,000 micro-tasks per week.\n\nThe ethical questions are equally staggering. MeridianEyes turns every participant into an unwitting surveillance node. The platform's anonymization protocols mean participants don't know what case they're contributing to or who benefits from their observations. Privacy advocates have called it 'distributed totalitarianism.' Naima argues that every participant is voluntary, every task is legal, and the platform includes safeguards against misuse. She's mostly right. The 'mostly' keeps her up at night, though she'd never admit it.",
   "affiliation": "Operates 'MeridianEyes' — a mesh-based platform that crowdsources investigative work to thousands of gig participants",
   "tier": "Tier 2",
   "location": "A co-working space in Burnside Corridor that she treats as her command center — multiple screens, standing desk, energy drinks, near Milwaukee and North Ave",
@@ -67,9 +67,30 @@
     "Meridian Munitions Viper PDW MVP-3 'Sidewinder'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Burnside Pocket",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Eastern European / West African",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and angular, tense musculature from long hours at standing desks and stress. Shoulders slightly hunched forward from habitual posture over interfaces.",
+    "hair_color": "Dark brown with subtle auburn undertones",
+    "hair_style": "Pulled back in a tight, utilitarian braid; a few strands always escaping near her temples",
+    "hair_length": "Long",
+    "eye_color": "Hazel with flecks of amber",
+    "skin_tone": "Warm medium brown with olive undertones",
+    "complexion": "Sharp cheekbones, defined jawline. Skin shows fatigue — faint shadows under eyes from irregular sleep patterns. A thin scar runs along her left temple to ear (old head trauma, partially covered by hair). Minimal makeup, functional grooming.",
+    "distinguishing_marks": [
+      "Linear scar along left temple extending to ear, approximately 8cm, pale and well-healed",
+      "Small burn mark on right forearm (inside wrist), circular, diameter ~1.5cm, from old neural interface calibration accident",
+      "Faint tattoo on inside left wrist: a stylized crosshair or target symbol in dark blue-grey ink, approximately 2cm across"
+    ],
+    "visible_augmentations": "Subcutaneous neural interface port at base of skull (barely visible at nape, thin metallic outline under skin). Subtle LED ring around left pupil (augmented optical nerve for low-light data processing) — only noticeable when light hits it directly. No obvious chrome or external modifications.",
+    "posture_movement": "Economical, restless. Hands frequently gesture as if manipulating invisible interfaces mid-air (haptic muscle memory). Eyes dart constantly, scanning environments as if cataloging details. Sits with spine curved, shoulders tense. Walks with purpose, minimal wasted motion.",
+    "clothing_style": "Tier 3-4 practical: fitted black Helios-brand tactical jacket with asymmetrical pockets (usually over a plain grey or charcoal compression shirt). Dark utility cargo pants with reinforced knees and thigh pockets. Matte black steel-toed boots, worn but maintained. Minimalist silver watch (functional, not decorative) on right wrist. No jewelry. Favors dark, unreflective fabrics. Occasionally wears a faded denim jacket over everything — a relic from before MeridianEyes success."
+  },
+  "image_prompt": "Cyberpunk noir character portrait, Naima Orlov-Twumasi, mixed-race East African-Eastern European woman, age 30s, lean angular build, dark hair in tight braid with loose strands, hazel eyes with amber flecks, warm medium brown skin with olive undertones. Subtle LED ring in left eye pupil, faint scar along left temple. Wearing fitted black Helios tactical jacket over grey compression shirt, dark utility cargo pants, matte black boots. Standing in neon-lit co-working space with multiple holographic screens and data streams glowing around her, hands gesturing in mid-air interface interaction. Tired expression, sharp focus, restless energy. Moody cyberpunk lighting, cool blue and cyan neon ambient, harsh shadows under high cheekbones. Film noir meets near-future tech. Close-up upper body, shallow depth of field, cinematic, gritty texture --ar 2:3 --v 6"
 }

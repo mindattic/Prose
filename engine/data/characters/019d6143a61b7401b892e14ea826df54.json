@@ -14,7 +14,7 @@
   "age": 61,
   "status": "active",
   "location": "The Circuit — operates from a private booth in a members-only tea house called The Leaf, near Damen and Armitage",
-  "description": "Glass Maren has been trading information in Meridian 88 for longer than most runners have been alive. He started as a corporate intelligence analyst for a pharmaceutical conglomerate that no longer exists — consumed by Veridian Health Sciences in the consolidation wave of the 2180s. When the acquisition happened, Glass walked away with two things: his contact network and an understanding that information only has value if you control its context.\n\nHe built The Quiet Table over twenty years — a three-person operation that competes with Sable's network by occupying a different ecological niche. Where Sable trades in urgent, operational intelligence — who's doing what right now — the Quiet Table trades in deep context. History. Relationships. The slow-moving currents that determine which corporations will merge, which jurisdictions will shift, which politicians will fall. Their clients are patient people who plan in years, not hours.\n\nGlass is tall, thin, with a face that has weathered into distinguished rather than old. Silver hair, clean-shaven, clothes that are twenty years out of fashion and perfectly maintained. He moves slowly because speed is for people who haven't planned far enough ahead. His voice is the kind of quiet that makes other people lean in. He has never raised it in public. He has never needed to.",
+  "description": "Glass Maren has been trading information in GLMZ for longer than most runners have been alive. He started as a corporate intelligence analyst for a pharmaceutical conglomerate that no longer exists — consumed by Veridian Health Sciences in the consolidation wave of the 2180s. When the acquisition happened, Glass walked away with two things: his contact network and an understanding that information only has value if you control its context.\n\nHe built The Quiet Table over twenty years — a three-person operation that competes with Sable's network by occupying a different ecological niche. Where Sable trades in urgent, operational intelligence — who's doing what right now — the Quiet Table trades in deep context. History. Relationships. The slow-moving currents that determine which corporations will merge, which jurisdictions will shift, which politicians will fall. Their clients are patient people who plan in years, not hours.\n\nGlass is tall, thin, with a face that has weathered into distinguished rather than old. Silver hair, clean-shaven, clothes that are twenty years out of fashion and perfectly maintained. He moves slowly because speed is for people who haven't planned far enough ahead. His voice is the kind of quiet that makes other people lean in. He has never raised it in public. He has never needed to.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -44,7 +44,7 @@
       "He underestimates physical threats because his world is informational — he has not been in danger of violence in years",
       "He cannot distinguish between protecting his crew and controlling them"
     ],
-    "secret": "He has a complete dossier on every major power player in Meridian 88 — including Sable. It is stored in his physical archive. If released, it would destabilize the city's power structure. He has never decided whether it is a weapon, an insurance policy, or an obituary."
+    "secret": "He has a complete dossier on every major power player in GLMZ — including Sable. It is stored in his physical archive. If released, it would destabilize the city's power structure. He has never decided whether it is a weapon, an insurance policy, or an obituary."
   },
   "speech_patterns": {
     "vocabulary": "Elevated, precise, occasionally archaic. He uses words the way a jeweler uses tools — each one selected for exact purpose.",
@@ -193,7 +193,7 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Circuit",
     "VERIDIAN GHOST",
     "ARCHIVE",
@@ -201,5 +201,26 @@
     "Silver",
     "Glass"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Northern European / Eastern European (surname 'Glass' suggests Germanic or Slavic lineage, possibly Polish-German or Scandinavian-Jewish)",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Lean and angular, the frame of someone who has never carried excess — shoulders still straight despite age, but with the subtle stoop of someone who has spent decades bent over documents and archives",
+    "hair_color": "Silver-white, naturally transitioned from dark brown over the last decade",
+    "hair_style": "Parted to the left, combed back in a style unchanged since the 2190s — carefully maintained rather than fashionable",
+    "hair_length": "Medium, just touching the collar",
+    "eye_color": "Gray-blue, sharp and attentive, with faint cataracts beginning at the edges — a sign of age he refuses to have corrected surgically",
+    "skin_tone": "Fair, with the even tone of someone who works indoors and maintains consistent sun discipline",
+    "complexion": "Clean-shaven, skin weathered into careful lines rather than deep wrinkles — a face that reads as distinguished rather than aged. Fine capillaries visible at the temples. Small scar at the left jawline, thin and old, possibly from a blade or surgical incision from his corporate days.",
+    "distinguishing_marks": [
+      "Thin surgical scar running 2cm along the left jawline, pale and precise, dating from his pharmaceutical analyst years (likely implant insertion scar)",
+      "Age spots on the back of his hands, small and regular, suggesting careful sun protection throughout life",
+      "Callus on the middle finger of his right hand from thirty years of fountain pen use"
+    ],
+    "visible_augmentations": "None visible. The eidetic memory cortex is implanted subdermally at the temporal lobe; no external ports or indicators. Cochlear enhancement is entirely internal.",
+    "posture_movement": "Moves with deliberate slowness — not infirmity, but intention. Sits with perfect posture, hands folded or occupied with tea. Eyes track conversations without head movement. Speaks rarely and only to make a point; long silences are comfortable for him. Walks as if conserving energy, each step measured.",
+    "clothing_style": "Tier 2-3 aesthetic frozen in time: charcoal or navy wool slacks tailored to fit his lean frame, linen shirts in cream or pale blue with mother-of-pearl buttons, always pressed. A dark wool blazer (the same one, rotated through careful dry cleaning) with a subtle sheen from age. A silk scarf in neutral tones, tied with precision. Shoes are oxford loafers, black leather, maintained to mirror polish. A mechanical watch (not smart, not networked) with a leather band. Everything is expensive and nothing is new — the wardrobe of someone who understands that fashion changes but quality endures."
+  },
+  "image_prompt": "portrait of an elderly distinguished man, 188cm tall, silver-white hair parted and combed back, gray-blue eyes with faint cataracts, clean-shaven fair complexion, thin surgical scar on left jawline, lean angular frame, wearing charcoal wool slacks and cream linen shirt with mother-of-pearl buttons, dark wool blazer with subtle age sheen, neutral silk scarf, black oxford loafers polished to mirror finish, mechanical wristwatch, folded hands holding a ceramic tea cup, sitting in an upscale tea house booth with soft warm lighting, wooden paneling and paper lanterns in background, cyberpunk setting but retro-aesthetic, composed and watchful expression, atmospheric mood of quiet power and patient intelligence, shallow depth of field, film noir lighting with warm accent on face, --ar 2:3 --v 6"
 }

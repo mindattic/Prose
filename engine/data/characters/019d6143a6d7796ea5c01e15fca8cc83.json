@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "A former associate resurfaces with evidence that could destroy Somadina Baranov-Fosu's reputation — and a price for silence",
-    "A crew member from Somadina Baranov-Fosu's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Somadina Baranov-Fosu's past shows up in GLMZ, carrying old grievances and new chrome",
     "Someone is impersonating Somadina Baranov-Fosu on jobs, and the impersonator is better at the work than the original"
   ],
   "narrative_function": "Somadina Baranov-Fosu functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
@@ -276,7 +276,7 @@
     "Adaptive Camouflage Skin",
     "Masquerade",
     "Ironveil Canopy",
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "The Gradient Compact",
     "Lazarus LX-2 'Lab Rat'",
@@ -284,5 +284,27 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European (Russian) / West African (Akan)",
+    "height_cm": 158,
+    "weight_kg": 62,
+    "build": "Compact and densely muscled, low center of gravity. Every movement economical. Shoulders broad relative to frame, legs thick and powerful — built for stability and explosive force rather than speed.",
+    "hair_color": "Black with rust-colored undertones",
+    "hair_style": "Pulled back tight, often in a single braid or coiled knot. Practical. Minimal surface area.",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, with faint iridescent sheen from subcutaneous neural interface bleed-through",
+    "skin_tone": "Warm medium brown — Akan heritage — with visible chromatic patterning across shoulders, collarbone, and neck",
+    "complexion": "Face angular and weathered beyond her years. Jawline sharp. Skin bears the institutional scarring of dermal augmentation installation — thin surgical lines visible at temples and along the mandible where chromatic cells were integrated. No attempt made to conceal them. Minor acne scarring on left cheekbone. Calluses on knuckles and palms from move-by-wire system stress.",
+    "distinguishing_marks": [
+      "Thin surgical scar running from left temple to behind the ear, site of chromatic pigment cell matrix installation.",
+      "Parallel scarring along right jawline where the dermal augmentation's neural feeds were anchored.",
+      "Faint chemical burn mark on inner left wrist — old, from early augmentation work.",
+      "Tattoo on right forearm: geometric Akan symbol (Gye Nyame), done in metallic ink that catches light."
+    ],
+    "visible_augmentations": "Chromatic skin pigment cells across shoulders, neck, and upper chest — pigmentation shifts subtly between copper, slate, and matte black depending on angle and light. Faint geometric patterning visible under the skin along collarbone suggesting underlying nervous system architecture. Eyes have barely perceptible iridescence. When she moves, there's an uncanny precision to gesture — move-by-wire integration creates micro-corrections invisible to untrained observers but unsettling to those who notice.",
+    "posture_movement": "Economical and coiled. Stands with weight distributed low, knees never fully locked. Moves with deliberate precision — no wasted motion, no flourish. Head turns before eyes. Hands positioned where they can be useful. Default expression is neutral, almost flat, with minimal micro-expression leakage — move-by-wire teaches you to compartmentalize.",
+    "clothing_style": "Tier 3-4 working class blended with runner aesthetics. Typically wears fitted synth-leather jackets in charcoal or navy, reinforced at shoulders and elbows with discreet ablative weave. Under-layers are technical: moisture-wicking, temperature-adaptive fabrics from mid-tier corporate spillover. Pants are cargo-cut synthetic denim, pockets deep and reinforced. Boots are steel-toed, worn, broken in, reliable. No jewelry beyond a simple titanium wrist cuff that doubles as a data interface. When maintaining her cover identity, she switches to plain synthetic cotton and neutral colors, but the wear patterns and fit always remain functional — she cannot help but dress for violence."
+  },
+  "image_prompt": "cyberpunk female character, mixed West African and Eastern European heritage, age 29, compact muscular build, 158cm tall, black hair pulled tight in braid, dark brown eyes with subtle iridescent sheen, warm medium brown skin tone with visible chromatic augmentation patterning in copper and slate across shoulders and neck, surgical scars at temples and jawline, angular weathered face, Akan tattoo on right forearm in metallic ink, wearing fitted charcoal synth-leather jacket with reinforced shoulders, technical moisture-wicking underlayer, cargo pants, steel-toed boots, titanium wrist cuff interface, standing in low ready posture with economical precision, The Overhang megastructure exterior shelving in background, cool neon glow from bioluminescent signage, dramatic side-lighting casting sharp shadows, gritty industrial cyberpunk aesthetic, photorealistic, cinematic depth of field --ar 2:3 --v 6"
 }

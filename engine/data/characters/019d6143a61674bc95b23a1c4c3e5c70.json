@@ -189,5 +189,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Gold"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Polynesian",
+    "height_cm": 152,
+    "weight_kg": 41,
+    "build": "Small-framed, wiry with the underdeveloped musculature of early adolescence. Quick, efficient movements suggest someone who navigates tight spaces and moves often.",
+    "hair_color": "Natural black with holographic thread cycling violet-to-gold",
+    "hair_style": "Dozens of tight braids, each roughly finger-width, with cosmetic holographic thread woven throughout creating reactive light patterns",
+    "hair_length": "Medium (braids reaching mid-back)",
+    "eye_color": "Right eye: dark brown natural. Left eye: artificial Ringo optical implant with visible cracked lens and slightly misaligned mounting",
+    "skin_tone": "Dark brown with warm undertones",
+    "complexion": "Wide face with rounded cheeks, visible gap between upper front teeth (deliberate, unfixed). Skin generally clear but shows minor marks from living in an autonomous zone. Slight dark circles under eyes from late-night screen time and headaches.",
+    "distinguishing_marks": [
+      "Left eye orbital area shows faint redness and slight puffiness around the self-installed optical implant mounting, indicating chronic irritation",
+      "Small scar on right palm, approximately 2cm, from hardware scavenging work",
+      "Faint asymmetrical tension in facial muscles around left eye when concentrating, reflecting implant-related discomfort"
+    ],
+    "visible_augmentations": "Secondhand Ringo optical implant in left eye socket with visible cracked lens and slightly misaligned installation; the cosmetic holographic thread in hair actively cycles through color patterns (violet to gold) in response to ambient signal density. Left eye optic nerve interface shows as subtle luminescent lines at the orbital edge when implant is actively processing data overlays.",
+    "posture_movement": "Restless and fidgety, constantly adjusting position. Quick, economical movements. Head tilts frequently, especially to the left, as if listening or reading data overlays only she can see. Sits with one leg folded, ready to move. Confident, unselfconscious body language of someone who has never been told her space is wrong.",
+    "clothing_style": "Tier 5 scavenger practical: oversized second-hand hoodie (faded corporate logo) over a mismatched layered tank top. Cargo pants with multiple pockets holding tools and hardware. Worn sneakers with mismatched laces (one holographic, one standard). Fingerless gloves modified to expose specific fingertips for tactile interface work. Small pouches on belt containing drives, parts, and tools. No jewelry except a salvaged access fob on a frayed cord."
+  },
+  "image_prompt": "13-year-old girl with dark brown skin, wide face, natural gap between front teeth, small and wiry frame. Hair in dozens of tight braids with holographic thread woven through, colors cycling violet-to-gold. Left eye fitted with visibly cracked secondhand Ringo optical implant, slightly misaligned, right eye dark brown. Faint redness around implant installation. Wearing oversized faded hoodie over mismatched tanks, cargo pants with multiple pockets, worn sneakers, fingerless gloves. Sitting in converted basement tech node surrounded by salvaged hardware and screens. Cyberpunk genre, neon glow from ambient screens and reactive holographic hair thread, cool underground lighting with blue-purple tones, confident youth aesthetic, data overlay visual effects around implant eye. Hyper-detailed, photorealistic, gritty near-future tech. --ar 2:3 --v 6"
 }

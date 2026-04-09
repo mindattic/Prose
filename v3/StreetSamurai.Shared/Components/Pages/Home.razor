@@ -8,37 +8,50 @@
 @inject ILlmService Llm
 @inject ITtsService Tts
 @inject TriviaService TriviaSvc
+@inject IWriteAccessProvider Access
 
 <h3 class="text-danger mb-1">Dashboard</h3>
-<p class="text-muted mb-3">Story authoring platform for the StreetSamurai cyberpunk universe. Browse worldbuilding, generate AI-driven scenes, and write canon fiction.</p>
+<p class="text-muted mb-3">
+    @if (!Access.CanWrite)
+    {
+        <text>World encyclopedia for the StreetSamurai cyberpunk universe. Browse 9,000+ entities across weapons, characters, places, factions, and more.</text>
+    }
+    else
+    {
+        <text>Story authoring platform for the StreetSamurai cyberpunk universe. Browse worldbuilding, generate AI-driven scenes, and write canon fiction.</text>
+    }
+</p>
 
 
 <div class="row g-3 mt-2">
-    @* ── Stories ────────────────────────────────────────── *@
-    <div class="col-md-4">
-        <div class="card bg-dark text-light border-secondary">
-            <div class="card-header text-muted d-flex justify-content-between align-items-center">
-                Stories
-                <a href="stories" class="text-info small text-decoration-none">View all</a>
-            </div>
-            <div class="card-body">
-                @if (stories.Any())
-                {
-                    @foreach (var s in stories.Take(6))
+    @if (Access.CanWrite)
+    {
+        @* ── Stories ────────────────────────────────────────── *@
+        <div class="col-md-4">
+            <div class="card bg-dark text-light border-secondary">
+                <div class="card-header text-muted d-flex justify-content-between align-items-center">
+                    Stories
+                    <a href="stories" class="text-info small text-decoration-none">View all</a>
+                </div>
+                <div class="card-body">
+                    @if (stories.Any())
                     {
-                        <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                            <a href="write/@s.Id" class="text-light text-decoration-none small fst-italic">@s.Title</a>
-                            <span class="badge bg-secondary" style="font-size: 0.6rem;">@s.Status</span>
-                        </div>
+                        @foreach (var s in stories.Take(6))
+                        {
+                            <div class="d-flex justify-content-between border-bottom border-secondary py-1">
+                                <a href="write/@s.Id" class="text-light text-decoration-none small fst-italic">@s.Title</a>
+                                <span class="badge bg-secondary" style="font-size: 0.6rem;">@s.Status</span>
+                            </div>
+                        }
                     }
-                }
-                else
-                {
-                    <small class="text-muted">No stories yet. <a href="write" class="text-info">Write one.</a></small>
-                }
+                    else
+                    {
+                        <small class="text-muted">No stories yet. <a href="write" class="text-info">Write one.</a></small>
+                    }
+                </div>
             </div>
         </div>
-    </div>
+    }
 
     @* ── Quick Search ──────────────────────────────────── *@
     <div class="col-md-4">

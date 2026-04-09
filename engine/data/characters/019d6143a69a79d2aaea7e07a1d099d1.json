@@ -60,7 +60,7 @@
     "The Palladian black-box is beginning to emit a low-frequency signal Phúc can hear but not explain — something inside it is waking up.",
     "Arcturus sent a surveyor to assess the land under the shop. Phúc needs help finding the original lease documentation — buried somewhere in the city's pre-digital records — before the grace period expires."
   ],
-  "narrative_function": "Equipment and parts source. Can identify mysterious tech or weapons. Has deep historical knowledge of Meridian 88's industrial zones — knows what was built where and by whom. Potential quest giver if something valuable was brought to him that shouldn't have been.",
+  "narrative_function": "Equipment and parts source. Can identify mysterious tech or weapons. Has deep historical knowledge of GLMZ's industrial zones — knows what was built where and by whom. Potential quest giver if something valuable was brought to him that shouldn't have been.",
   "augmentations": "Salvage-grade magnification lens fused into right eye socket (self-installed, functional, cosmetically rough). Reinforced finger joints — old Arcturus model, discontinued.",
   "daily_life": "Opens the shop at 0800, sorts new acquisitions in the morning, receives visitors through the afternoon, does appraisal work by the lens-light in the evenings. Closes when he is tired.",
   "affiliation": "Independent; The Shelf merchants informal collective; Oxidian Market vendors guild affiliate",
@@ -210,5 +210,26 @@
     "Teak",
     "Rust"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Vietnamese / Congolese / Scandinavian",
+    "height_cm": 163,
+    "weight_kg": 61,
+    "build": "Wiry and lean, with the compact muscularity of someone who has spent decades moving heavy objects with precision. Shoulders slightly rounded from years hunched over workbenches. No excess fat; frame is efficient rather than frail despite his age.",
+    "hair_color": "White",
+    "hair_style": "Three thin braids, deliberately maintained, pulled back from the face",
+    "hair_length": "Medium (shoulder-length when braided)",
+    "eye_color": "Left eye: dark brown, natural. Right eye: obscured by magnification lens apparatus",
+    "skin_tone": "Weathered teak — deep warm brown with sun damage and age spots across the forehead and cheekbones",
+    "complexion": "Deeply lined face, especially around the eyes and mouth. Beard is white and sparse, kept in three thin braids. Skin is leathery and sun-exposed, consistent with decades spent in industrial outdoor spaces. No visible acne or dermatological issues; skin is dry but healthy.",
+    "distinguishing_marks": [
+      "Both hands are extensively scarred with thin white lines crisscrossing the palms, fingers, and backs of hands — damage from sharp metal edges, abrasive handling, and decades of sorting raw salvage",
+      "Three thin scars run parallel across the back of his left forearm, approximately 8cm long, consistent with a cutting accident",
+      "Burn scar on his right cheekbone, roughly 3cm diameter, lighter in tone than surrounding skin — old thermal injury from welding or similar work"
+    ],
+    "visible_augmentations": "Right eye socket contains a bulky salvage-grade magnification lens apparatus — not streamlined chrome but visibly rough, with exposed mounting brackets and an eyepiece that extends slightly outward. The installation is functional but cosmetically crude, clearly self-done. Both hands show reinforced finger joints (old Arcturus model) visible as subtle bronze-colored articulation points at knuckles, slightly thicker than natural bone structure would suggest.",
+    "posture_movement": "Moves with deliberate, economical motion — no wasted energy. Slight forward hunch from years at workbenches. When handling objects, his movements are precise and careful, almost ritualistic. His gaze tends to linger on people and objects; he observes before responding. Comfortable with silence and stillness; rarely fidgets.",
+    "clothing_style": "Tier 4-5 practical wear. Heavy canvas work pants with deep pockets, patched at the knees and thighs. Layered tops: a thermal base layer visible at the neck, worn over with a faded industrial-grade work shirt with rolled sleeves, and a thick wool cardigan with several darned holes. No corporate branding. Boots are well-maintained but visibly aged, leather worn smooth. A canvas apron with multiple tool pockets, permanently stained with machine oil and rust residue. No jewelry except for a thin cord around his neck from which hangs a small brass charm (the talisman for The Sorter)."
+  },
+  "image_prompt": "Portrait of an elderly Vietnamese-Congolese-Scandinavian man, age 67, wiry and lean build, deep teak skin with age spots and weathering. White beard in three thin braids. Left eye dark brown and sharp, right eye socket dominated by a bulky salvage-grade magnification lens with visible bronze mounting brackets, crude self-installed. Both hands extensively scarred with white lines, reinforced finger joints visible at knuckles. Wearing faded industrial work shirt, worn wool cardigan, heavy canvas apron stained with machine oil. Set in a cramped junk shop interior, surrounded by stacks of metal salvage, circuit boards, and rusted machinery. Warm amber lens-light from the magnification equipment. Cyberpunk aesthetic, gritty and worn, practical rather than flashy. Contemplative expression, hands visible and scarred. Shallow depth of field focusing on his face. --ar 2:3 --v 6"
 }

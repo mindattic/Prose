@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Rongo Belov-Ntim's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Rongo Belov-Ntim's past shows up in GLMZ, carrying old grievances and new chrome",
     "A Tier 4 executive offers Rongo Belov-Ntim a permanent position — the pay is obscene and the strings are invisible until they tighten",
     "Rongo Belov-Ntim discovers a job they completed last year was a setup for something much larger and much worse"
   ],
@@ -273,9 +273,30 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Eastern European (Slavic) / West African (Bantu)",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with visible musculature — the stripped-down frame of someone who carries only functional mass. His shoulders are broad but not heavy; his limbs show the kind of definition that comes from maintenance, not vanity.",
+    "hair_color": "Salt-and-pepper gray with darker roots",
+    "hair_style": "Kept short and practical, sometimes unwashed, combed back without care for styling",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, often bloodshot from extended jack-in sessions",
+    "skin_tone": "Medium brown with ashy undertones — the pallor of someone who spends most time indoors, mixed heritage producing warm but muted complexion",
+    "complexion": "Gaunt facial structure with prominent cheekbones and a sharp jawline. Deep-set eyes. Stress lines around the mouth and forehead. Skin shows the wear of age and poor sleep habits — not scarred, but weathered. Three-day stubble is his default state.",
+    "distinguishing_marks": [
+      "Pale surgical scar running from left temple to jawline, approximately 8cm, partially hidden by the angle of his face",
+      "Burn scar on right forearm (wrist to elbow), roughly 12cm in length, from a Jack-in accident three years prior — the skin is waxy and discolored",
+      "Small tattoo on the inner left wrist: a circuit pattern in faded black ink, self-applied, marking his first contract debt"
+    ],
+    "visible_augmentations": "Chrome pain editor visible at left temple and along the left jawline — sleek metallic panels with barely-concealed wiring beneath, no effort made to cosmetically hide it. The augmentation catches light unnaturally. Bone lacing is not visibly apparent but manifests in the unusual density of his frame and the way he moves with efficiency that seems biomechanically optimized.",
+    "posture_movement": "Economical and controlled — no wasted motion. He stands with a slight forward lean, hands often resting near his sides or pockets. Walks with a networker's alertness, eyes tracking patterns and exits. When seated, he's coiled rather than relaxed. His movements suggest he's always calculating distance and angle.",
+    "clothing_style": "Tier 4 utilitarian — functional over fashion. Black or dark gray synth-leather jacket, worn at the cuffs, over an unmarked compression shirt. Loose tactical pants with reinforced pockets and cargo straps, worn matte black. Feet in scuffed runners with custom insoles. A worn braided cord around his wrist (memento or talisman — unclear to outsiders). Everything is practical; nothing is pristine. Occasional neural interface jack visible at the base of his neck, partially hidden by collar."
+  },
+  "image_prompt": "cyberpunk male netrunner, 46 years old, lean angular build, salt-and-pepper short hair, dark brown eyes, medium brown skin tone with Slavic and West African heritage features, gaunt intelligent face, visible metallic chrome pain editor implants at temple and jawline catching harsh light, burn scar on right forearm, worn black synth-leather jacket over compression shirt, tactical pants, standing in dim Dockside warehouse interior with Lake Michigan visible through grimy windows, neon signs reflecting off water in background, moody blue and amber lighting, cigarette smoke drifting through air, neural jack visible at nape of neck, posture tense and alert, cyberpunk noir atmosphere, photorealistic, cinematic, gritty texture --ar 2:3 --v 6"
 }

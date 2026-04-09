@@ -258,5 +258,24 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Scandinavian",
+    "height_cm": 182,
+    "weight_kg": 68,
+    "build": "Lean and long-limbed with the subtle forward cant of someone accustomed to a driver's seat. Shoulders loose and mobile, minimal upper body bulk, efficient frame built for sustained posture rather than strength.",
+    "hair_color": "Natural black with subtle warm undertones",
+    "hair_style": "Close-cropped fade on sides, natural texture left full on top",
+    "hair_length": "Short (approximately 4-5cm on crown)",
+    "eye_color": "Geneware-modified irises cycling amber → gold → pale yellow in slow rotation",
+    "skin_tone": "Deep, warm brown complexion with golden undertones characteristic of Yoruba heritage",
+    "complexion": "Angular facial structure from Scandinavian paternal ancestry creating prominent cheekbones and a defined jawline. Skin well-maintained but not cosmetically treated. A faded linear scar bisects his left eyebrow from childhood, barely noticeable but present under direct light.",
+    "distinguishing_marks": [
+      "Faded scar bisecting left eyebrow, approximately 2cm long, pale against skin from a childhood fall."
+    ],
+    "visible_augmentations": "Eyes are the primary visible augmentation — the slow chromatic cycle is noticeable in conversation and distinctive under tram cabin lighting. A small subdermal clock is visible on inner left wrist as a faint linear implant site beneath skin, readable only when pressed. Neural-link port is standard Ferrogate issue, likely located at base of skull but concealed by hair.",
+    "posture_movement": "Naturally forward-leaning, as if perpetually attentive to an instrument or passenger. Hands gesture with deliberate economy, often finding something to rest near — a railing, a pocket edge, the back of a seat. Movement is efficient and unhurried. Eyes track his surroundings with quiet attention.",
+    "clothing_style": "Ferrogate Transit Tier 2 uniform consisting of charcoal grey poly-cotton blend shirt with reflective piping, navy trousers with reinforced seams, and regulation non-slip boots. Off-shift: worn synthetic bomber jacket (charcoal grey, Ferrogate branded), plain dark t-shirts, practical cargo pants with adequate pockets, and utilitarian footwear. Minimal jewelry — a subdermal clock on wrist. Carries a battered paper notebook and mechanical pencil daily. Overall appearance is unpretentious, deliberately anonymous, maintained with quiet care."
+  },
+  "image_prompt": "Male transit operator, cyberpunk 2226, West African and Scandinavian heritage, deep warm brown skin tone, angular face with defined cheekbones, short natural black hair faded on sides, distinctive geneware irises cycling amber to gold yellow, faded scar through left eyebrow. Lean 182cm frame with subtle forward driver's posture. Wearing charcoal Ferrogate Transit uniform shirt with reflective piping, navy trousers, holding worn paper notebook and mechanical pencil. Standing in night-shift tram cabin interior with warm ambient lighting and dark windows reflecting city, low-frequency ambient soundscape visible as subtle visual haze. Introspective, decent, unremarkable, quietly attentive. Documentary photorealism with subtle cyberpunk aesthetic, soft neon accent lighting, shallow depth of field, grainy film stock texture. --ar 2:3 --v 6"
 }

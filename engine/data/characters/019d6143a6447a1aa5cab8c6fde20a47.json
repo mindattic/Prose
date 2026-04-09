@@ -238,5 +238,27 @@
     "Ironvein",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Batswana / Norwegian",
+    "height_cm": 188,
+    "weight_kg": 112,
+    "build": "Massive across the shoulders and chest with the dense muscle of six decades of heavy labor; a prominent belly acquired in the last ten years that he carries without self-consciousness. Thick-limbed, substantial through the torso.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, maintained with geometric precision",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep brown, sun-cured to near-black at the forearms and neck; lighter at the torso",
+    "complexion": "Weathered, lined face with deep creases around the eyes and mouth from four decades of squinting into engine bays. Beard maintained with the same precision as his work—even, salt-and-pepper transitioning to white, roughly 2cm in length. Skin shows old burn marks and grease stains that no amount of scrubbing fully removes.",
+    "distinguishing_marks": [
+      "Deep circular burn scar on the left forearm from an oil-bath incident in his thirties, roughly 8cm in diameter.",
+      "Jagged scar running along the right side of the ribcage, visible when shirtless, from a vehicle shift accident at age 36.",
+      "Fine white lines across the knuckles and back of both hands — occupational wear from decades of manual work.",
+      "Old tattoo on the left shoulder blade: a wrench and hammer crossed, blue-green ink faded to grey-blue, done when he was twenty-two."
+    ],
+    "visible_augmentations": "Right arm from elbow down is industrial-grade chrome prosthetic, visibly multi-generational and mismatched. The forearm is brushed steel; the hand assembly is matte black with exposed hydraulic lines. The elbow joint shows three different generations of metalwork—an earlier segment in dull chrome, a mid-section in polished steel, the newest hand assembly in aerospace-grade aluminum. Seams between sections are visible, some sealed with industrial epoxy. The fingers move with mechanical precision but lack flesh-tone covering. Bilateral knee bracing visible only when he moves—the slight asymmetrical gait and the faint servo whisper when he stands or descends stairs indicate reinforcement.",
+    "posture_movement": "Moves with the deliberate efficiency of someone who has learned to work around chronic pain. Stands with weight shifted to the left; favors his left leg slightly when stationary. When working, he settles into postures as if they are familiar chairs—economical, patient. Carries his right arm slightly lower than his left, as if its weight is a known constant. Does not fidget. Does not waste movement.",
+    "clothing_style": "Tier 4 utilitarian. Workwear: reinforced canvas pants, usually dark grey or black, with multiple thigh pockets and a tool belt that has been his for fifteen years. His shirts are mechanics' shop-branded from various eras—some from corpo garages he worked for decades ago, some from local suppliers. A faded Ferrogate Transit polo from 1997 that he still wears despite the grudge, worn soft. In winter, a synthetic-wool lined jacket, patched at the elbows. His boots are steel-toed, resoled three times, the leather cracked and shaped exactly to his feet. A simple chrome wedding band on his left ring finger, worn thin. No jewelry beyond that. No visible corporate logos he chose voluntarily. Everything functional, nothing aspirational."
+  },
+  "image_prompt": "61-year-old Batswana-Norwegian male mechanic, massive shoulders and weathered face, close-cropped white hair and grey-salt beard, deep brown skin sun-darkened at forearms. Standing in an industrial garage bay, holding a wrench. Right arm from elbow down is visibly mismatched industrial chrome prosthetic with exposed hydraulics, brushed steel forearm, matte black hand assembly. Wearing faded blue mechanics' shop shirt and dark canvas work pants with tool belt. Muscular build with slight belly, deep facial lines, old burn and tool scars on hands. Fluorescent work lighting casting shadows. Cyberpunk gritty realism, volumetric dust in light. 2226 GLMZ. Detailed texture on chrome prosthetic showing multiple generations of repairs. Character portrait. --ar 2:3 --v 6"
 }

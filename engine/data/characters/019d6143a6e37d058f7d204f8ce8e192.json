@@ -255,5 +255,25 @@
     "Chimera-Null",
     "The Pure Hand"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "Turkish / Hungarian / West African",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and economical, with the wiry muscularity of someone who moves constantly through tight spaces. No wasted mass. Shoulders slightly forward from years of hunched work in maintenance crawlways.",
+    "hair_color": "Currently a warm beige-brown; shifts every 3-4 weeks through the geneware's limited palette (mushroom, sand, taupe, wheat)",
+    "hair_style": "Kept short and unfussy, parted vaguely to one side. No styling gel or product — functional only",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unremarkable; mobile and alert beneath a resting expression of mild blandness",
+    "skin_tone": "Warm medium brown with subtle olive undertones — the mixed-heritage complexion of the Diaspora",
+    "complexion": "Clean-shaven face kept deliberately smooth and forgettable. No distinctive moles or marks. Skin condition is unremarkable — neither rough nor refined. A face engineered by habit to slip from memory the moment you stop looking at it.",
+    "distinguishing_marks": [
+      "Faint scarring on the inside of both wrists from old geneware installation sites (geneware color-change mod and spatial memory enhancement), now barely visible",
+      "Calluses and minor burns on the fingertips and palms — occupational marks from handling delicate cargo and tool work"
+    ],
+    "visible_augmentations": "None. The color-change hair geneware is subcutaneous and only visible as the gradual shift in hair tone every few weeks. The eidetic spatial memory enhancement is entirely internal. To a stranger, Sükrü appears entirely baseline human.",
+    "posture_movement": "Economical and precise. They move through spaces as if already knowing the exact dimensions — no wasted motion, no uncertainty in hand placement. When still, they settle into a posture of mild disengagement, shoulders slightly rounded inward. When handling cargo, their hands become almost hypnotic in their precision and care.",
+    "clothing_style": "Tier 4 working-class practical: unmarked gray or tan cargo pants with reinforced pockets; fitted compression shirts in black or muted colors that don't stain visibly; a worn charcoal maintenance jacket with reflective stripping (helps them move through transit zones without triggering questions). No logos or affiliation markers. Shoes are functional and quiet — soft-soled work boots, well-maintained but not new. A cheap digital chronometer on their left wrist. Everything is chosen to blend into the background of industrial Kenosha Crossing."
+  },
+  "image_prompt": "Cyberpunk character portrait of a nonbinary smuggler, medium height lean build, warm brown skin, short warm-beige hair, unremarkable forgettable face with sharp alert eyes, wearing unmarked gray cargo pants and fitted black compression shirt under worn charcoal maintenance jacket with reflective stripping, precise long-fingered hands resting on table, soft lighting revealing minimal distinguishing features, muted color palette of grays and taupes, background blurred transit corridor or maintenance vehicle interior, photography style hyper-realistic, cinematic, slightly desaturated, documentary portrait aesthetic, shot from waist-up, --ar 2:3 --v 6"
 }

@@ -14,7 +14,7 @@
   "age": 71,
   "status": "active",
   "location": "Camp Eleven, Kenosha Crossing — the oldest continuously occupied unofficial camp at the crossing, running since 2163, near outside the Pulaski Gate",
-  "description": "Félicité Kaboré-Njoku arrived at Meridian 88's edges forty-one years ago with a transit number that expired and a resettlement appointment that was rescheduled eleven times and then quietly dropped from the system. She is still here. She has deep brown skin gone ashen at the temples and the crown of her head, which she keeps shaved clean and bare because she decided at sixty that hair was weight she no longer needed. Her eyes are dark and sharp and she has the stillness of someone who has decided that stillness is power. She walks with two canes she carved herself from salvaged composite struts — not because she is frail but because they give her hands something to do and make her impossible to rush. She is, by informal agreement, the settlement authority of Camp Eleven — mediator, memory, and occasionally the last word.\n\nShe came from what was the Burkina Faso climate zone, from a region that ceased to be viable for human habitation in 2157. She does not mourn this in any way she shows. She has built a working community at Kenosha Crossing out of people who arrived broken and she runs it with a combination of grandmother warmth and absolute structural authority. She maintains three ELF shrines in the camp — the Gatekeeper of Lists, the Fever Singer, and the one she will not name to outsiders, whom she simply calls Mè — and she tends them every morning before she does anything else. She distributes the UBC stipends for the twelve registered members of her collective, argues with the crossing authority on behalf of the unregistered, and has outlasted four different crossing administrators.",
+  "description": "Félicité Kaboré-Njoku arrived at GLMZ's edges forty-one years ago with a transit number that expired and a resettlement appointment that was rescheduled eleven times and then quietly dropped from the system. She is still here. She has deep brown skin gone ashen at the temples and the crown of her head, which she keeps shaved clean and bare because she decided at sixty that hair was weight she no longer needed. Her eyes are dark and sharp and she has the stillness of someone who has decided that stillness is power. She walks with two canes she carved herself from salvaged composite struts — not because she is frail but because they give her hands something to do and make her impossible to rush. She is, by informal agreement, the settlement authority of Camp Eleven — mediator, memory, and occasionally the last word.\n\nShe came from what was the Burkina Faso climate zone, from a region that ceased to be viable for human habitation in 2157. She does not mourn this in any way she shows. She has built a working community at Kenosha Crossing out of people who arrived broken and she runs it with a combination of grandmother warmth and absolute structural authority. She maintains three ELF shrines in the camp — the Gatekeeper of Lists, the Fever Singer, and the one she will not name to outsiders, whom she simply calls Mè — and she tends them every morning before she does anything else. She distributes the UBC stipends for the twelve registered members of her collective, argues with the crossing authority on behalf of the unregistered, and has outlasted four different crossing administrators.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -61,7 +61,7 @@
     "A Kenosha Crossing authority official has finally agreed to a resettlement hearing for three Camp Eleven families — but the paperwork requires documentation that the families destroyed years ago for safety reasons, and Félicité needs help reconstructing it through unofficial channels.",
     "Someone has been taking photographs of Camp Eleven — careful, systematic photographs — and leaving no trace. Félicité wants to know who, and whether they are a threat or an opportunity."
   ],
-  "narrative_function": "Community anchor and information source for the entire Kenosha Crossing refugee population; quest giver for problems that require discretion and cannot go through official channels; living history of forty years of undocumented Meridian 88 edge-life; moral compass character.",
+  "narrative_function": "Community anchor and information source for the entire Kenosha Crossing refugee population; quest giver for problems that require discretion and cannot go through official channels; living history of forty years of undocumented GLMZ edge-life; moral compass character.",
   "augmentations": "None by choice. Her two composite-strut canes have small ELF-offering nodes she built into the handles herself — technically not augmentations, but she talks to them.",
   "daily_life": "Rises at dawn, tends the three shrines, conducts the morning camp count, mediates at least two disputes before noon, meets with anyone who needs to see her in the afternoon — and there is always a queue — then sits outside her structure at dusk and accepts whatever the day brings to her threshold.",
   "affiliation": "Camp Eleven Refugee Collective, Kenosha Crossing. No corporate affiliation — has refused multiple resettlement-adjacent offers.",
@@ -234,7 +234,7 @@
     "Crucible Industries Long Arm LA-20 'Verdict'",
     "Bluewater Checkpoint",
     "Unregistered",
-    "Meridian 88",
+    "GLMZ",
     "Grandmother",
     "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'",
     "Hearthstone Firearms Homestead-12 'Door Slam'",
@@ -243,5 +243,26 @@
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
     "The Pure Hand"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "West African (Burkinabé) / Nigerian",
+    "height_cm": 163,
+    "weight_kg": 58,
+    "build": "Lean and wiry, shoulders still squared despite age; muscle definition visible in forearms from decades of manual work and cane-carving. Compact frame carries itself with deliberate economy of movement.",
+    "hair_color": "Salt-white crown transitioning to natural black at the nape",
+    "hair_style": "Shaved clean and bare across crown and temples; kept bare by choice as personal discipline, not necessity",
+    "hair_length": "Shaved",
+    "eye_color": "Deep brown, almost black, with sharp alertness undiminished by age",
+    "skin_tone": "Deep brown base tone with ashen undertones at temples and crown where sun exposure has bleached the skin lighter over decades",
+    "complexion": "Angular facial structure; cheekbones prominent; jaw defined. Skin weathered but not creased excessively — speaks to disciplined sun exposure and hydration habits. Fine lines radiate from eyes suggesting more years spent observing than expressing. No visible cosmetic augmentation or modification.",
+    "distinguishing_marks": [
+      "Calluses across both palms and inner fingers from forty-one years of carving composite struts and working wood — visible as permanent ridge patterns on hands.",
+      "Faint burn scar on left forearm (2cm × 1cm) from cooking fire accident in 2189, pale against her skin tone.",
+      "Small ritual scarification pattern on inner right wrist — three parallel lines — self-inflicted in 2165 as a marker of arrival at GLMZ, rarely visible unless she turns her wrist deliberately."
+    ],
+    "visible_augmentations": "None. No cybernetics, no chrome, no visible implants by choice. The only augmentation-adjacent objects she carries are two self-carved composite-strut canes with small handmade ELF-offering nodes built into the handles — these are tools and spiritual objects, not body modifications.",
+    "posture_movement": "Moves slowly and deliberately, never rushed. Uses both canes equally, not favoring either side — gait is steady and measured. Stands with weight distributed, shoulders back. Rarely gestures broadly; hand movements are precise and purposeful. When sitting, maintains upright posture even at rest. Eye contact is direct and sustained, a technique that commands attention without raising her voice.",
+    "clothing_style": "Tier 5 practical; worn but meticulously maintained. Favors loose linen or cotton wraps in earth tones (ochre, faded indigo, weathered brown) layered for temperature and cultural continuity. Wears a faded headwrap during morning shrine rituals, removed by afternoon. Hand-sewn leather sandals, repaired multiple times, worn thin at the heel. A single piece of jewelry: a copper bracelet on her left wrist, tarnished green with age, acquired in 2185. No corporate branding, no tier markers, no aesthetic concession to GLMZ fashion. Her canes are her most distinctive possession — carved with deliberate asymmetric patterns, wrapped at the handles with cloth strips from fabric salvage."
+  },
+  "image_prompt": "portrait of an elderly West African woman, age 71, deep brown skin with ashen temples, completely shaved head, dark sharp eyes, angular cheekbones, lean wiry build, standing with two hand-carved composite canes with ritual nodes, wearing layered earth-tone linen wraps in ochre and indigo, copper-green bracelet, worn leather sandals, still and powerful posture, morning light hitting her face, cyberpunk refugee settlement background out of focus, shallow depth of field, gritty documentary realism, dignified authority in her bearing, weathered hands visible on canes, film photography grain, --ar 2:3 --v 6"
 }

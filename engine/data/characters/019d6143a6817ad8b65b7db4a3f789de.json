@@ -200,7 +200,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born in what would become Meridian 88's Iron Bend district, to a Nigerian-Romanian mother and Tongan-raised father",
+      "event": "Born in what would become GLMZ's Iron Bend district, to a Nigerian-Romanian mother and Tongan-raised father",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -264,5 +264,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Romanian / Polynesian (Tongan)",
+    "height_cm": 182,
+    "weight_kg": 89,
+    "build": "Broad-shouldered and thick-framed, muscular definition softened by age but still substantial through the chest and upper back. Carries weight with authority rather than slack — the body of a man who did physical labor his entire life and maintained it.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, neat",
+    "hair_length": "Short",
+    "eye_color": "Left eye: natural dark brown. Right eye: amber-colored replacement ocular with visible servo-motor seam at the iris",
+    "skin_tone": "Deep warm brown with undertones of red-ochre, consistent with West African heritage",
+    "complexion": "Face weathered but attentive, lined heavily around the eyes and forehead. Skin texture slightly loose at the jaw and neck from age. Expression tends toward patient observation. Meticulous grooming — no stubble, edges clean.",
+    "distinguishing_marks": [
+      "Severe burn scarring across left side of neck and extending down to upper left shoulder — glossy, contractile tissue in bands from a pressure seal blow-out, circa 2167",
+      "Small Ferrogate Transit veterans' pin affixed to the chest of every shirt: orange wheel on black field enamel, approximately 2cm diameter",
+      "Faint network of pressure-monitoring subdermal electrodes visible as a faint silvered grid pattern on the inner left forearm, approximately 8cm x 4cm — legacy safety equipment never removed"
+    ],
+    "visible_augmentations": "Right eye is clearly prosthetic: amber-tinted synthetic iris with visible mechanical servo-motor at the corner, tracking mechanism slightly off-axis creating a permanent subtle owlish cant. Titanium joint reinforcements in both knees create barely perceptible stiffness in gait and shallow scars below the kneecap on both legs. Subdermal pressure-monitoring patch on left forearm visible as a thin silvered grid under darkened skin.",
+    "posture_movement": "Stands with deliberate symmetry, weight distributed evenly despite the knee reinforcements. Moves slowly and methodically — not infirm, but cautious, as if calculating load and pressure before each step. Rarely makes sudden gestures. Maintains direct eye contact, though the amber ocular's tracking lag gives the right eye a slight lag when he turns his head. Hands are calloused with prominent knuckles. Sits with both feet flat on the floor.",
+    "clothing_style": "Practical Tier 4 workwear: dark blue or grey Ferrogate-branded button-up shirts (vintage uniform-style, decades old but impeccably maintained), tucked in. Dark trousers with reinforced knees. Worn but quality leather shoes, re-soled multiple times. The Ferrogate Transit veterans' pin on every shirt. No jewelry except a simple steel wedding band. Clothing is never fashionable but always clean, mended neatly, and worn with the unselfconsciousness of a man who dresses for function, not appearance."
+  },
+  "image_prompt": "Portrait of a 79-year-old man with deep warm brown skin and white close-cropped hair, West African and Eastern European heritage evident in his features. Broad-shouldered, muscular frame softened by age. His most striking feature: left eye is natural dark brown, right eye is a visibly mechanical amber ocular prosthetic with chrome servo-motor visible at the iris, tracking slightly off-axis giving an owlish expression. Severe burn scarring maps the left side of his neck and shoulder in glossy contractile bands. Wearing a vintage dark blue Ferrogate Transit button-up shirt with a small orange-and-black enamel workers' union pin on the chest. Visible subdermal grid pattern of pressure-monitoring equipment on inner left forearm. He has the posture and bearing of a retired transit infrastructure engineer — methodical, attentive, patient. Setting: modest apartment commons room with warm fluorescent lighting from above, slightly aged but meticulously maintained. His expression is observant and serious, the face of a man who remembers everything and trusts carefully. Cyberpunk Tier 4 working-class aesthetic, vintage technology, worn dignity. Shot as a character portrait, frontal three-quarter angle, depth of field slightly soft behind him. --ar 2:3 --v 6"
 }

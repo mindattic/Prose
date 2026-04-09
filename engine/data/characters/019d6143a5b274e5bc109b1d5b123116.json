@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "To build something that outlasts the next contract cycle",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Control — over their body, their schedule, their future"
     ],
     "coping_mechanisms": [
@@ -43,7 +43,7 @@
       "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
       "Refuses to update their mental model of people — first impressions calcify into permanent judgments"
     ],
-    "secret": "Aminata Vargas-Baffour sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Aminata Vargas-Baffour sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Aminata Vargas-Baffour's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Aminata Vargas-Baffour's past shows up in GLMZ, carrying old grievances and new chrome",
     "A former associate resurfaces with evidence that could destroy Aminata Vargas-Baffour's reputation — and a price for silence",
     "Aminata Vargas-Baffour is offered a contract that would clear all their debts — the target is someone they respect"
   ],
@@ -272,10 +272,32 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Slagworks Industrial",
     "Pellucid Systems",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Spanish / Northern European",
+    "height_cm": 192,
+    "weight_kg": 78,
+    "build": "Lean and angular, built for endurance rather than power. Long limbs suggest a runner's physiology — minimal excess mass, efficient musculature. Carries himself with the coiled stillness of someone trained to move precisely when required.",
+    "hair_color": "Dark brown, naturally textured",
+    "hair_style": "Kept short and functional, no ornamentation",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with subtle amber undertone",
+    "skin_tone": "Mid-brown complexion with warm undertones — reflects mixed West African and Mediterranean heritage",
+    "complexion": "Scarred face — not disfiguring but clearly mapped with damage. A jagged line runs from left temple to jawline. Smaller puckered scar on right cheekbone. Thin scar bisects his upper lip on the left side. Grooming is precise and minimal — clean-shaven, no cosmetic work to hide the marks. Eyes have a flat, observant quality. Jaw set in a way that suggests old tension.",
+    "distinguishing_marks": [
+      "Jagged scar from left temple to left jawline, approximately 10cm, suggests blade work or shrapnel — pale and well-healed",
+      "Puckered circular scar on right cheekbone, approximately 0.8cm diameter, consistent with high-caliber exit wound — tissue damage radiates outward",
+      "Thin horizontal scar bisecting upper left lip, approximately 3cm, suggests close-contact trauma",
+      "Faint burn scarring across the dorsal aspect of right hand, suggesting thermal weapon exposure or chemical burn — pattern irregular"
+    ],
+    "visible_augmentations": "Vocal modulator mounted at the base of his throat — matte gunmetal finish with subtle LED indicator ring that pulses faintly when active. Sits just above the collarbone, deliberately visible. No attempt to conceal it with clothing. Subcutaneous drug synthesizer is not visible externally.",
+    "posture_movement": "Moves with trained economy — every motion purposeful, nothing wasted. When standing, weight distributed evenly, shoulders relaxed but alert. When walking, footfalls are light and deliberate. Hands tend to stay visible and loosely at his sides. Makes direct eye contact but doesn't hold it longer than functional. Speaks slowly, as if calculating word choice. When using the vocal modulator, his own body language shifts minutely to match the assumed voice — a tell for those watching.",
+    "clothing_style": "Tier 3-4 practical streetwear. Matte black synth-leather jacket with minimal branding — utility cut, designed for concealment and quick movement. Beneath, charcoal gray compression shirt (subcutaneous interface point, barely visible). Dark tactical trousers with redistribution pockets. Worn black boots, military-grade, well-maintained. No jewelry, no visible tracking devices. Clothing shows signs of regular wear but is meticulously kept. No corporate logos or gang affiliations. The aesthetic reads as 'ghost' — designed to be forgotten five seconds after he passes."
+  },
+  "image_prompt": "portrait of tall lean man, dark skin, scar-mapped face with blade scars on temple and cheekbone, short dark textured hair, gunmetal vocal modulator visible at throat with faint LED pulse, dark brown observant eyes, precise grooming, matte black synth-leather jacket, tactical streetwear, standing in overhead fluorescent lighting of corporate retail district, cyberpunk noir atmosphere, photorealistic, sharp focus on scarred face, cool color grading, dim neon glow from signs behind, professional spy-thriller aesthetic, --ar 2:3 --v 6"
 }

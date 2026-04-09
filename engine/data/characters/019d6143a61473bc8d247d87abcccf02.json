@@ -180,5 +180,26 @@
     "Rust",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Polish",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and wiry, muscular forearms from years of stirring heavy stock pots and pushing the cart through Edison Grid's cracked streets. No excess fat; his body is efficient.",
+    "hair_color": "Matte rust-red (dyed; natural color likely dark brown or black)",
+    "hair_style": "Close-cropped, kept neat and functional",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with fine laugh lines at the corners",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Weathered but clean, marked by years of steam and heat exposure. Faint scars on knuckles from knife work. Face carries the still quality of someone who listens more than speaks.",
+    "distinguishing_marks": [
+      "Bioluminescent subdermal lines running along both forearms in thin parallel trails, glowing soft blue-white in rhythm with heartbeat — visible when sleeves are rolled or pushed up",
+      "Thin burn scar on the inside of left wrist, old and faded, likely from early cooking accident",
+      "Calloused hands with permanent discoloration from years of handling turmeric and other spices"
+    ],
+    "visible_augmentations": "Bioluminescent forearm mods only — thin blue-white lines beneath the skin that pulse steadily. Most visible when arms are bare or when ambient light drops in the evening shifts.",
+    "posture_movement": "Moves with deliberate economy. Stands still frequently, observing rather than fidgeting. When working the cart, movements are precise and rhythmic — choreographed by repetition. Does not rush. Carries a quality of groundedness even in crowded grid intersections.",
+    "clothing_style": "The same bleached canvas apron daily, layered with the stains of hundreds of meals — a geological record of his work. Beneath it: simple tier-4 workwear (faded gray or black thermal, worn jeans, steel-toed boots suitable for standing 16+ hours). No corporate logos. Everything practical, nothing decorative. Moves like someone who owns very little and maintains what he has."
+  },
+  "image_prompt": "A lean 34-year-old man of mixed West African and Polish heritage, deep umber skin, close-cropped matte rust-red hair, standing still beside a retrofitted noodle cart in dim industrial lighting. Medium height, wiry build, weathered hands. Both forearms glow with soft blue-white bioluminescent lines pulsing gently with heartbeat, visible beneath the skin. Wearing a heavily stained canvas apron layered with the geological record of countless meals, simple thermal shirt, worn jeans. Dark brown eyes with laugh lines, weathered but clean complexion. Standing in Edison Grid at dusk near a warehouse underpass, surrounded by neon signs reflecting off wet pavement, steam rising from the cart. Mood: patient, observant, grounded. Soft blue-white bio-glow accent lighting. Cyberpunk, lived-in, working-class realism. --ar 2:3 --v 6"
 }

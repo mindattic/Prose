@@ -181,5 +181,26 @@
     "The Pale Mile",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Igbo/Nigerian) / Finnish",
+    "height_cm": 162,
+    "weight_kg": 58,
+    "build": "Compact and economical, minimal excess — the build of someone who has spent decades on her feet in laboratory and kitchen work. Defined shoulders and forearms from decades of precise manual labor. Lower spine and hip structure subtly reinforced by visible bone density support mesh beneath skin at the base of spine.",
+    "hair_color": "Natural black with thick silver streaks throughout",
+    "hair_style": "Grown out in natural coils, typically wrapped in a printed cloth of indigo and rust tones (traditional pattern from Lagos)",
+    "hair_length": "Medium (when unwrapped, coils reach mid-shoulder)",
+    "eye_color": "Deep brown, perpetually rimmed with fatigue but laser-focused",
+    "skin_tone": "Very dark brown with deep undertones, unmarred except for age-related texture changes",
+    "complexion": "Minimal makeup — functional only. Face organized around her eyes, which contain more information than she typically shares. Fine lines around the eyes and mouth from sixty-four years of controlled expression. Grooming is meticulous but unselfconscious — a person who maintains herself for functionality and self-respect, not presentation.",
+    "distinguishing_marks": [
+      "Pale grey geneware cat ears with dark charcoal tips, emerging from her temples where human ears would be — a permanent cosmetic modification from her forties, slightly worn but clearly maintained",
+      "Fine scar tissue along the inner right forearm from a lab accident in her thirties (barely visible, accepted rather than concealed)",
+      "Subtle discoloration at the base of her spine where bone density mesh sits beneath skin"
+    ],
+    "visible_augmentations": "Geneware cat ears (cosmetic, pale grey with dark tips). Bone density support mesh subtly visible as faint tracery of reinforcement beneath skin at lower spine. Blood glucose regulator implant is subcutaneous and invisible.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion, no sudden gestures. Stands with weight distributed, ready to move in any direction without momentum loss. Her stillness is active, not passive; she is always aware of her spatial position relative to others and objects. When she reaches for something, her hand arrives exactly where it needs to be. When she listens, her entire body faces the speaker. Walks slowly and steadily, never rushes.",
+    "clothing_style": "Tier 3 working-class pragmatism. Layered for temperature control in her kitchen-and-Commons life: well-maintained tunic or simple button shirt in muted colors (charcoal, deep plum, forest green), often with a lightweight wrap or cardigan. Durable synthetic-blend trousers in neutral tones. Practical slip-on shoes with reinforced insoles. A cloth bag for carrying food preparation supplies or groceries. One piece of jewelry — a simple thin bracelet, possibly given by a grandchild. Nothing decorative; everything chosen for durability and ease of maintenance. The overall impression is of someone who owns exactly what she uses and uses everything she owns."
+  },
+  "image_prompt": "portrait of a 64-year-old West African-Finnish woman with very dark skin, silver-streaked natural coils wrapped in indigo-rust printed cloth, cosmetic pale grey cat ears with dark tips emerging from temples, deep tired brown eyes with absolute focus, fine lines around eyes and mouth, compact build from decades of lab and kitchen work, wearing a charcoal tunic and lightweight wrap, standing with deliberate stillness and economy of motion, minimalist jewelry, functional grooming, Tier 3 commons setting, soft warm interior lighting suggesting humble apartment, hyperrealistic portrait photography, cyberpunk character study, detailed facial features, dignified and attentive expression --ar 2:3 --v 6"
 }

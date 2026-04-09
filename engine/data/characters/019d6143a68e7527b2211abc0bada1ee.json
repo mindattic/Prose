@@ -192,5 +192,26 @@
     "Lead",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Sahel) / Polynesian",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and substantial, with the dense musculature of someone who has spent three decades standing over heat sources and moving cast-iron cookware. Not fat, but solid—the kind of frame that reads as immovable once rooted.",
+    "hair_color": "Black with silver threading throughout",
+    "hair_style": "Locs, bound and pinned",
+    "hair_length": "Long (past shoulders when unpinned), always contained under headwrap",
+    "eye_color": "Dark brown, slightly rheumed from decades of smoke exposure",
+    "skin_tone": "Deep brown with warm undertones, reflecting Sahel and Polynesian ancestry",
+    "complexion": "Weathered but dignified. Fine lines map her forehead and eyes from perpetual squinting into wok-fire. Skin perpetually damp at temples from ambient heat. Slight forward crease between brows from decades of concentration. No cosmetic skin work—her age is worn openly.",
+    "distinguishing_marks": [
+      "Bioluminescent subdermal veins running along both forearms in pale gold—faint as candlelight, most visible in dim light or evening hours",
+      "Stress fracture scarring on left knee joint (invisible beneath clothing, evident in gait)",
+      "Small burn marks scattered across inner forearms and wrists—occupational, accumulated over thirty years of cooking"
+    ],
+    "visible_augmentations": "Pale gold bioluminescent veins tracing her forearms in organic, branching patterns. No chrome or obvious mechanical augmentation—the veins are her only visible mod, and subtle enough that strangers might assume they're tattoos until they glow.",
+    "posture_movement": "She stands rooted, weight balanced evenly on both feet unless actively working. Moves with economical grace when cooking—no wasted motion. Her gait shows a slight favoring of her right leg, consequence of reinforced knee joints. When listening, she tends to tilt her head slightly and narrow her eyes, as if parsing both words and subtext. Her hands are always in motion or intentionally still—no fidgeting.",
+    "clothing_style": "Tier 4 utilitarian, with personal flair. Foundational: heat-resistant canvas apron (indigo, stained with decades of turmeric and char), reinforced utility pants (charcoal), slip-resistant cooking clogs. Over this: a loose linen shirt (cream or rust-colored, sleeves rolled to show the bioluminescent veins). Always, always the flame-orange headwrap—hand-dyed, replaced twice yearly, her signature. A single hammered brass cuff on her left wrist, acquired from a metalsmith in the Alban Souk fifteen years ago. No jewelry beyond this. Her clothing is functional Tier 4—not fashionable, but well-maintained and clearly chosen for durability and ease of movement in a kitchen environment."
+  },
+  "image_prompt": "A 61-year-old West African-Polynesian woman with deep brown skin, silver-threaded locs pinned under a vibrant flame-orange headwrap, standing behind a converted cargo-module food stall in a gritty cyberpunk market. Her forearms glow faintly with pale gold bioluminescent subdermal veins visible beneath her rolled sleeves. She wears a heat-stained indigo apron over cream linen, a brass cuff on her left wrist. Her face is weathered with fine lines, eyes narrowed with the wisdom of sixty years spent over wok-fire and smoke. Ambient steam and warm kitchen light behind her. The stall is industrial—welded metal, LED strips, a wok and burners visible. Market background: neon signage, other vendor stalls, gritty Geartown aesthetic. Moody, warm tungsten and bioluminescent lighting. Hyperrealistic portraiture. Dignified, grounded, not stylized. --ar 2:3 --v 6"
 }

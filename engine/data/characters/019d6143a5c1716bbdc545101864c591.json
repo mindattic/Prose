@@ -247,5 +247,26 @@
     "Mahogany",
     "SynapTech IrisBloom Ocular Color Modulator"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Mongolian",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Large-framed, running to stout through the midsection, shoulders still broad but softened by age and eleven years of sitting on a checkpoint stool. Arms retain thickness despite reduced muscle tone.",
+    "hair_color": "Dark brown with silver-white streaking, particularly through the beard",
+    "hair_style": "Close-cropped on the sides and back, longer on top (combed back); beard neatly shaped and maintained, covering the lower face and jaw",
+    "hair_length": "Short (scalp) / Medium (beard)",
+    "eye_color": "Dark brown with cosmetic starburst pattern radiating from the pupil in silver-white threads",
+    "skin_tone": "Deep mahogany with warm undertones",
+    "complexion": "Well-maintained despite age; minimal scarring, clear skin. Crow's feet around the eyes from decades of patient observation and focus. Lines around the mouth suggest a man who smiles more than frowns but keeps most expressions measured.",
+    "distinguishing_marks": [
+      "Cosmetic starburst iris mod in both eyes: silver-white radial lines emanating from pupils, giving a deliberate, almost hypnotic quality to his gaze.",
+      "Thin horizontal scar along the right temple, old and pale, barely visible beneath short hair.",
+      "Small burn mark on the inside of the left forearm, approximately 3cm diameter, faded to pale brown — consistent with a twenty-year-old injury."
+    ],
+    "visible_augmentations": "Wrist-mounted Ferrogate Transit Security biometric scanner on left wrist (standard-issue, black polymer casing with dull LED indicator); hearing aid device visible in right ear canal (non-cyber, beige-gray, conventional). The starburst irises are the most striking visible mod — cosmetic but impossible to miss.",
+    "posture_movement": "Sits with deliberate stillness on his checkpoint stool, spine straight but shoulders relaxed. When standing, moves with economical precision — no wasted motion. Walks slowly, methodically. His gaze is constant and navigational; he watches people the way a chess player watches a board. Hands are steady, often folded or resting on the checkpoint desk. Speaks rarely and listens more than talks, creating an impression of depth.",
+    "clothing_style": "Ferrogate Transit Security uniform (grey-blue shirt with embroidered logo, dark grey trousers, utility belt with credential holder and access card); uniform is let out at the seams and fitted like a compromise but maintained with care. Under-shirt typically visible at the collar, plain dark colour. Work boots, scuffed but polished. No jewelry except a plain metal wedding band (worn, suggesting decades). A small personal thermos (matte black, worn from use) rests beside him during shifts — clearly brought from home."
+  },
+  "image_prompt": "Portrait of a 55-year-old transit security officer, deep mahogany skin, neatly shaped white-streaked beard, short dark hair with silver temples. Striking cosmetic starburst iris modification in both eyes with silver-white radial lines. Wearing fitted grey-blue Ferrogate Transit Security uniform, slightly let out at seams, utility belt, black wrist-mounted biometric scanner. Beige hearing aid visible in right ear. Patient, measured expression, crow's feet around eyes, deep-set gaze. Seated on worn checkpoint stool, hands folded on desk, small thermos beside him. Deepwell Station fluorescent lighting, cool blue-grey tones, underground transit station setting, cinematic cyberpunk realism, dignified and observant demeanor, photorealistic, --ar 2:3 --v 6"
 }

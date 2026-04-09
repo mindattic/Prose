@@ -254,5 +254,25 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Clay"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Congolese / Peruvian",
+    "height_cm": 168,
+    "weight_kg": 52,
+    "build": "Willowy and lean with long limbs and delicate bone structure; moves with deliberate, economical grace",
+    "hair_color": "Natural deep brown with amber fiber-optic threading woven throughout",
+    "hair_style": "Soft, voluminous cloud worn natural; fibers create slow amber pulse when illuminated",
+    "hair_length": "Long",
+    "eye_color": "Augmented shifting iris — amber to deep jade depending on ambient light and angle",
+    "skin_tone": "Warm clay-brown complexion reflecting mixed Central African and Andean ancestry",
+    "complexion": "Long-featured face with wide-set eyes and high cheekbones; smooth skin with minimal scarring; expression often appears still and ageless even mid-conversation",
+    "distinguishing_marks": [
+      "Fiber-optic threading woven into hair creating bioluminescent amber glow at tips in low light",
+      "Augmented iris coloration visible as color shift from warm amber to deep jade in response to light"
+    ],
+    "visible_augmentations": "Shifting-iris augmentation most noticeable in candlelight or dim indoor settings (amber-to-jade color shift). Fiber-optic hair threading glows faintly amber at tips when indoors or in low light. Haptic feedback overlay in fingertips invisible to casual observation but may be noticed as slight variation in skin texture on fingertips under close inspection.",
+    "posture_movement": "Carries themselves with stillness and intention; movements are deliberate and economical, almost meditative. Favors sitting cross-legged or in grounded positions during readings. Frequently touches objects lightly with fingertips — habit born from haptic-chip reading practice.",
+    "clothing_style": "Eclectic scholar aesthetic — layered robes and tunics in muted earth tones (clay, sage, charcoal, rust). Fabrics appear worn but maintained with care, suggesting Tier 3-4 status with intentional counter-aesthetic rejection of corp polish. Multiple rings on most fingers (mix of salvaged metal, stone, worn silver). Always carries a worn tablet crammed with archived media. Sensory-forward styling emphasizes texture and light-play rather than brand signaling."
+  },
+  "image_prompt": "Androgynous nonbinary person, age 22, warm clay-brown complexion, long delicate features, wide-set eyes with shifting iridescent iris glowing amber-to-jade, long natural dark hair threaded with glowing fiber-optic strands creating soft amber bioluminescence, wearing layered earth-tone robes and tunics, multiple rings on fingers, holding worn digital tablet, sitting in meditative posture, surrounded by glowing media chips and archive displays, candlelit intimate indoor market setting, warm amber and sage color palette, mystical divination aesthetic blended with cyberpunk data-merchant sensibility, soft volumetric lighting on fiber-optic hair, shallow depth of field, cinematic documentary style, cyberpunk 2226 --ar 2:3 --v 6"
 }

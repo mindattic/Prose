@@ -259,5 +259,26 @@
     "Slagworks Industrial",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "North African (Algerian) / Polynesian (Māori)",
+    "height_cm": 176,
+    "weight_kg": 62,
+    "build": "Wiry and long-limbed with corded forearms from years of precision mechanical work; lean muscle density, minimal body fat, functional rather than aesthetic physiology",
+    "hair_color": "Natural dark brown, nearly black",
+    "hair_style": "Tight natural curls, usually compressed under mechanical bandana",
+    "hair_length": "Short (approximately 5cm when loose)",
+    "eye_color": "Dark brown, alert and quick-moving",
+    "skin_tone": "Warm tawny brown with warm undertones from mixed heritage",
+    "complexion": "Perpetually smudged with machinery grease despite frequent washing; angular facial structure with high forehead, strong jaw, prominent cheekbones; nose slightly off-center from old break (kept as is). Minimal facial hair. Youthful appearance — reads 17-18 despite being 19",
+    "distinguishing_marks": [
+      "Faded scar along left knuckles from old mechanical injury, pale against his skin tone",
+      "Grease stains under fingernails that resist cleaning, occupational marker",
+      "Small burn mark on right wrist from soldering accident, approximately 2cm diameter, pale and healed"
+    ],
+    "visible_augmentations": "Mottled grey-and-black geneware cat ears mounted on skull, fully functional with independent articulation — swivel and rotate consciously and reflexively toward sounds. Mechanical bandana worn constantly, woven composite with visible circuitry threading along edges, small holographic projector node at left temple",
+    "posture_movement": "Moves with economic precision — minimal wasted motion, fluid when working, tends to crouch or sit cross-legged rather than stand idle. Hands constantly active even at rest (sorting, measuring, fidgeting with small parts). Cat ears telegraph his attention before his eyes do; often appears to be listening to sounds others don't perceive. Carries himself with quiet confidence that reads as youth until you watch him work",
+    "clothing_style": "Tier 5 working-class functional: wear-stained synthmesh shop coat (charcoal grey, multiple pockets, reinforced at elbows and cuffs), layered with a faded band-logo tee underneath. Cargo pants in heavy cotton-blend with grease marks and repair patches, held up with a braided belt made from salvaged cable. Reinforced steel-toed boots, scuffed and worn. No jewelry except a thin wire-wrapped band around left wrist (handmade, possibly from parts). Bandana always in place; layers minimally beyond that. Clothing is maintained but clearly secondhand and well-used — everything chosen for durability over appearance"
+  },
+  "image_prompt": "A 19-year-old Algerian-Māori youth with wiry, long-limbed build and warm tawny-brown skin, face of striking angular features with high forehead and strong jawline. Dark tight-curled hair partially hidden under a mechanical bandana with circuitry threading; mounted on skull are mottled grey-and-black geneware cat ears, swiveling and alert. Grease-smudged hands and perpetually stained shop coat in worn charcoal grey, cargo pants with visible repair patches. Youthful but competent expression, alert dark eyes. Cyberpunk chop shop setting, industrial Tier-5 environment, surrounded by dismantled vehicle parts and salvage, neon-tinted amber work lights casting sharp shadows, oil-stained concrete, gritty and lived-in atmosphere. Photography style: hyperreal documentary. Close medium shot, natural pose amid machinery. Gritty, competent, underestimated. --ar 2:3 --v 6"
 }

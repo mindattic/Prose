@@ -261,5 +261,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Elena Vasquez-9"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Southern African / Russian",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Lean and angular with defined musculature from years of postural control and gym work; economical movement suggests someone built for precision rather than power",
+    "hair_color": "Dark brown with natural graying at temples",
+    "hair_style": "Locs typically pinned back under operator's cap during shifts; worn loose and falling to shoulders off-duty",
+    "hair_length": "Shoulder-length",
+    "eye_color": "Amber with faded sunburst iris pattern (custom geneware, applied in her twenties, pattern edges now worn)",
+    "skin_tone": "Warm medium brown with slight weathering around the eyes from nine years of focused attention",
+    "complexion": "High, prominent cheekbones; close-set eyes that narrow when concentrating; minimal facial hair; skin shows professional care but no vanity augmentation",
+    "distinguishing_marks": [
+      "Faded sunburst pattern tattooed across both irises in amber-gold, edges blurred from age and lack of refresh",
+      "Small linear scar along the left temple, approximately 3cm, consistent with old impact injury",
+      "Union mark tattoo on inner left wrist — stylized gear and tram silhouette in black ink, approximately 4cm"
+    ],
+    "visible_augmentations": "Slim black-furred geneware tail (approximately 90cm, tapered) visible when not controlled; faint neural interface jack port visible at base of skull where hair parts; amber irises with visible pattern overlay; no obvious chrome or plating",
+    "posture_movement": "Upright, economical posture with hands frequently at rest position — practiced neutrality offset by tail betraying genuine emotional state the moment she relaxes; movements are efficient and deliberate; walks with slight forward lean as if perpetually bracing",
+    "clothing_style": "On-shift: grey Ferrogate Transit standard-issue operator uniform with union rep badge on collar; black polymer utility jacket with reflective striping. Off-shift: worn combat-style pants, fitted athletic shirts, heavy-soled boots suitable for sparring gym; minimal jewelry except union wrist mark. Tier 3-4 working class aesthetic — functional, maintained but not fashionable, pockets optimized for tools and union materials"
+  },
+  "image_prompt": "Portrait of Yseult, a 34-year-old woman with warm medium brown skin, lean angular features, and high cheekbones. She has dark locs pinned back under a grey Ferrogate Transit operator's cap, with natural graying at temples. Her amber eyes feature a faded sunburst iris pattern. A slim black-furred geneware tail curves behind her shoulder. She wears a grey transit uniform with reflective striping and a union badge, standing in harsh industrial lighting inside Deepwell Station with tram infrastructure visible in soft focus background. Cyberpunk, working-class transit operator aesthetic, professional but worn, moody underground setting with cool blue-white LED lighting and warm tungsten highlights, sharp focus on face and iris pattern detail, subtle cyberpunk augmentation visible at skull. Photograph-style realism, documentary-like, no fantasy elements. --ar 2:3 --v 6"
 }

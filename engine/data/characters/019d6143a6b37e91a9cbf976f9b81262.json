@@ -12,7 +12,7 @@
   "age": 34,
   "status": "active",
   "location": "The Loft — Tier 3 studio co-op in Edgewater Prism, near Lincoln and Addison",
-  "description": "Roksana has the particular exhaustion of someone who is moderately successful in a field that chews through people, and who has chosen to remain moderately successful rather than chase the tier above them where the real compromises happen. They are slight, with warm beige-brown skin and wavy dark hair streaked with bioluminescent threads — a geneware mod they designed themself, the threads pulsing faintly in complex patterns that shift based on their neural activity, functioning simultaneously as a status display, a creative tool, and an anxiety barometer. Their eyes are natural, dark, and deeply observant. They dress in expensive-looking clothing that is actually very carefully maintained secondhand.\n\nThey build VR experiences — full sensory immersive works that are not entertainment products in the Axiom or Ringo sense but something harder to categorize: art that happens to use corporate technology. Their most celebrated piece, 'Drowned Ward,' places the viewer inside a memory of the pre-Meridian 88 lakeshore as it was consumed by the city's construction. It has been exhibited seventeen times. They are also a meticulous, sometimes maddening collaborator — brilliant at synthesis but prone to scope-creep and to caring so intensely about the work that they forget other people have different pain tolerances for revision cycles.",
+  "description": "Roksana has the particular exhaustion of someone who is moderately successful in a field that chews through people, and who has chosen to remain moderately successful rather than chase the tier above them where the real compromises happen. They are slight, with warm beige-brown skin and wavy dark hair streaked with bioluminescent threads — a geneware mod they designed themself, the threads pulsing faintly in complex patterns that shift based on their neural activity, functioning simultaneously as a status display, a creative tool, and an anxiety barometer. Their eyes are natural, dark, and deeply observant. They dress in expensive-looking clothing that is actually very carefully maintained secondhand.\n\nThey build VR experiences — full sensory immersive works that are not entertainment products in the Axiom or Ringo sense but something harder to categorize: art that happens to use corporate technology. Their most celebrated piece, 'Drowned Ward,' places the viewer inside a memory of the pre-GLMZ lakeshore as it was consumed by the city's construction. It has been exhibited seventeen times. They are also a meticulous, sometimes maddening collaborator — brilliant at synthesis but prone to scope-creep and to caring so intensely about the work that they forget other people have different pain tolerances for revision cycles.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -175,12 +175,33 @@
     "Edgewater Prism",
     "The Reclamation Assembly",
     "Ringo Corponation EchoLimb PR-9 Proprioceptive Feedback Prosthetic Interface",
-    "Meridian 88",
+    "GLMZ",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "The Loft",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Slagworks Industrial",
     "Ringo Corponation"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Serbian-Croatian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Slight, almost wiry — the kind of frame that suggests chronic undereating rather than discipline. Narrow shoulders, minimal muscle definition. Moves with a restless, unfocused energy that suggests their body is always catching up to their mind.",
+    "hair_color": "Dark brown with bioluminescent threads woven throughout — threads glow in soft pastels (cyan, amber, violet) that pulse and shift in complex, non-repeating patterns",
+    "hair_style": "Wavy, slightly tangled, often pinned or clipped back asymmetrically with whatever is within reach",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Natural dark brown — very still, very focused when observing",
+    "skin_tone": "Warm beige-brown with slight olive undertones",
+    "complexion": "Fine-featured, cheekbones prominent (partly from weight loss, partly genetics). Skin shows minor stress — dark circles under eyes, occasional tension creases between brows. Well-maintained but not groomed; face has the look of someone who forgets about it entirely for hours at a time.",
+    "distinguishing_marks": [
+      "Vestigial cat-ear modifications on the cartilage of both ears — small, feline-shaped, slightly translucent with faint internal circuitry visible when hair is pulled back",
+      "Faint, thin scarring along the right temple from an early neural-haptic interface installation at age twenty-eight",
+      "A small tattoo on the inside of the left wrist — geometric pattern resembling a stylized water droplet, possibly referencing 'Drowned Ward'"
+    ],
+    "visible_augmentations": "Bioluminescent hair threads are the most obvious — constantly visible and constantly shifting, functioning as an involuntary emotional/neural readout. Cat-ear mods are visible when hair is pulled back or in profile. The neural-haptic interface has no external hardware except a very faint, hairline scar at the temple.",
+    "posture_movement": "Sits in odd positions — one leg curled, spine curved. Fidgets constantly with hands when thinking. When deep in work, becomes completely still and rigid. Walks with purpose when focused, but drifts when between tasks. Eyes track details compulsively — they're always looking at something.",
+    "clothing_style": "High-quality secondhand — vintage tech-wear and archive pieces from the 2190s-2200s, carefully maintained. Fitted black technical pants (often with asymmetrical pockets or modified seams), oversized layered tops in muted colors (charcoal, deep teal, soft grey). Worn leather jacket from an unidentifiable era. Worn well but never pristine — there are always smudges of something on the sleeves (projection gel, render dust, tea). Jewelry is minimal and functional: a braided cord bracelet, sometimes a salvaged watch that doesn't work. Shoes are always expensive-looking but scuffed — current pair is reconstructed grey leather combat boots. Tier 3 aesthetic: deliberately curated poverty-chic that would read as lazy to anyone wealthier, but is actually a precise statement about resource allocation and values."
+  },
+  "image_prompt": "Portrait of a nonbinary artistic figure with warm beige-brown skin and shoulder-length wavy dark hair interwoven with softly glowing bioluminescent threads in cyan, amber, and violet that pulse in complex neural patterns. Dark observant eyes, fine-featured face with subtle exhaustion. Small translucent cat-ear mods visible on ears. Wearing oversized charcoal technical top layered over fitted black tech-wear, worn leather jacket. Faint scar visible at right temple. Fidgeting hands with braided cord bracelet. Sitting in asymmetrical pose with one leg curled. Background is dimly lit Tier 3 artist studio space with soft neon accents and holographic projection equipment slightly out of focus. Cyberpunk, artistic, introspective mood. Soft cinematic lighting casting gentle shadows across face. 35mm photography aesthetic, detailed portraiture. --ar 2:3 --v 6"
 }

@@ -245,5 +245,26 @@
     "The Pale Mile",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Finnish / West African (Malian)",
+    "height_cm": 162,
+    "weight_kg": 58,
+    "build": "Compact and spare, almost sinewy — the build of someone who forgets to eat regularly and moves with efficient precision. Shoulders slightly forward from years of leaning over examination tables.",
+    "hair_color": "Dark brown with copper bleached tips",
+    "hair_style": "Close-cropped, practical, asymmetrical fade on the left side where she tucks it behind her ear to access the left eye mod",
+    "hair_length": "Short",
+    "eye_color": "Dark brown (natural); left eye has a faint amber-gold luminescence from the diagnostic HUD overlay when active",
+    "skin_tone": "Pale olive with warm undertones — the complexion of mixed Finnish and Malian ancestry, slightly sallow from chronic sleep deprivation",
+    "complexion": "Sharp cheekbones, narrow face, lines around the eyes and mouth that speak to years of close focus work and low-level stress. Skin is clear but texture-worn; she does not prioritize skincare. Dark circles are permanent fixtures. No makeup.",
+    "distinguishing_marks": [
+      "Thin surgical scar running 3cm along her left temple from a circa-2220 procedure related to the HUD overlay installation",
+      "Pale burn mark on the inside of her right forearm from a sterilization cabinet malfunction in 2223",
+      "Faint needle-track marks on both inner elbows, old and well-healed — from her own blood draws and IV practice when she was in licensed training"
+    ],
+    "visible_augmentations": "Left eye exhibits a faint amber glow when the diagnostic HUD is active (usually always); the pupil does not dilate naturally. No external ports or chrome. Hands appear normal but move with uncanny steadiness — the tremor suppression is subcutaneous and invisible.",
+    "posture_movement": "She moves with economy and care, never wasting motion. When sitting with a patient, she settles completely still — not tense, just focused. When alone or walking between rooms, she moves like someone conserving energy for the next thing. Her gaze is direct and unsettling; she looks at things, not past them. She favors her left side slightly when standing for long periods.",
+    "clothing_style": "Tier 4 practical — mostly dark, washable fabrics. A rotation of three or four medical scrub sets in navy and charcoal, worn under a gray linen overshirt with multiple pockets. Comfortable worn shoes (Helix-brand non-slip soles, salvaged from a clinic supply drop). A single piece of jewelry: a thin titanium band on her right ring finger, no inscription. In colder months, a threadbare wool sweater that has been mended multiple times. Everything is clean but nothing is new."
+  },
+  "image_prompt": "Cyberpunk portrait of a 38-year-old woman with Finnish-Malian heritage, pale olive skin, dark eyes with diagnostic HUD glow in left eye only, short dark hair with copper bleached tips. Compact, spare build. Medical scrubs under gray linen overshirt. Sitting at an examination table in a cramped fourth-floor Narrows apartment — yellow-tinted overhead lighting, medical cabinet and sterilization equipment visible behind her. An orange cat sits judgment on the table. Her expression is steady and exhausted, unflinching. Shallow depth of field. Film noir meets subclinical realism. Gritty, authentic, no glamour. Shot at eye level. Warm color grade. --ar 2:3 --v 6"
 }

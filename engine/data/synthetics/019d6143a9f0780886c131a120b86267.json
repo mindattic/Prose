@@ -14,7 +14,7 @@
   "observed_behavior": "Scans for wallets with zero or near-zero balance and inserts micro-deposits sourced from transaction rounding errors across the network.",
   "encounter_frequency": "common",
   "confirmed_sightings": 200,
-  "location": "All Tier 1 zones in Meridian 88",
+  "location": "All Tier 1 zones in GLMZ",
   "dti_rating": 0,
   "story_hooks": [
     "A Q-zero resident tracks the deposits and realizes they always arrive on the day they most need them — coincidence or awareness?"

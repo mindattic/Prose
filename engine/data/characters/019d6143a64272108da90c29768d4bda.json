@@ -29,7 +29,7 @@
       "Being identified by corporate facial recognition — living off-grid is survival"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Control — over their body, their schedule, their future",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
     ],
@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Kenji Guerrero-Osei-Mensah's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Kenji Guerrero-Osei-Mensah's past shows up in GLMZ, carrying old grievances and new chrome",
     "Kenji Guerrero-Osei-Mensah discovers a job they completed last year was a setup for something much larger and much worse",
     "A Tier 4 executive offers Kenji Guerrero-Osei-Mensah a permanent position — the pay is obscene and the strings are invisible until they tighten"
   ],
@@ -274,7 +274,7 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "Canopy Station Nine",
     "Geartown",
@@ -282,5 +282,27 @@
     "Slagworks Industrial",
     "Clover"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Japanese / Spanish / West African / Ghanaian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and angular with visible muscle definition — a runner's physiology, all efficiency and no excess. Shoulders sharp, collarbone prominent, limbs suggest coiled potential rather than bulk.",
+    "hair_color": "Black with silver undertones from synthetic treatment",
+    "hair_style": "Pulled back in a functional braid, practical for work. A few loose strands always escape.",
+    "hair_length": "Medium",
+    "eye_color": "Deep brown with faint metallic threads visible in the iris — side effect of cranial implant integration",
+    "skin_tone": "Medium brown with warm undertones — Japanese-Spanish-Ghanaian blend",
+    "complexion": "Sharp cheekbones, angular jaw, minimal grooming beyond necessity. Skin shows the wear of irregular sleep and high stress — small lines around the eyes, a tightness at the mouth. Scar tissue along the right temple from surgical integration.",
+    "distinguishing_marks": [
+      "Surgical scar running from right temple to behind the ear — jagged and pale, approximately 8cm, marks the cranial bomb defuser implant entry point.",
+      "Thin white line across left palm, inner wrist — old knife wound, healed unusually clean due to synthetic blood regeneration.",
+      "Small burn scar on right forearm, roughly 3cm diameter — cortex bomb deactivation gone wrong, years ago.",
+      "Faded tattoo on inner right wrist — three vertical lines in a specific pattern, marks inherited from her disappeared mentor, meaning unclear to outsiders."
+    ],
+    "visible_augmentations": "The cranial implant is obvious — a faint shimmer of chrome visible at the right temple beneath thinning skin, subtle LED indicators (currently dark) embedded in the surgical scar. When active, a thin line of soft blue light traces the implant's perimeter. No visible limb augmentations, but her movements suggest subcutaneous reinforcement — she moves with deliberate, calculated precision.",
+    "posture_movement": "Stands with weight slightly forward, never fully relaxed. Moves economically, every gesture purposeful. Eyes scan environments automatically — a habit so ingrained it's unconscious. Hands rest near her body, always within rapid access distance. Speaks quietly, forcing others to pay attention rather than projecting. There's a coiled quality to her stillness, like a spring compressed.",
+    "clothing_style": "Tier 3-4 practical: dark synthetic jacket with interior holster points, reinforced cargo pants with thigh pockets and gear loops, matte-black boots with responsive sole-tech for rapid movement. Wears a long-sleeved base layer even in warm weather — functional as armor and habit. Minimal jewelry except for a worn data-ring on her left index finger. No corporate logos or tier signifiers; her gear is battered, maintained, and deliberately anonymous. Everything chosen for access, movement, and the ability to disappear into Geartown crowds."
+  },
+  "image_prompt": "Portrait of a lean, angular 35-year-old Japanese-Spanish-Ghanaian woman with sharp cheekbones and dark brown eyes, medium black hair pulled back in a functional braid. Visible chrome cranial implant at right temple with faint blue LED trace, surgical scar visible, metallic gleam in iris. Dark tactical clothing, reinforced synthetic jacket, inner wrist faded tattoo visible. Standing in moody blue-gray lighting against an elevated walkway with neon signs and industrial scaffolding blur behind. Cyberpunk, counterintelligence specialist, worn and alert expression, cinematic rim lighting, shallow depth of field, gritty atmosphere, intricate technical detail on implant, 8k, cinematic --ar 2:3 --v 6"
 }

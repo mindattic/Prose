@@ -279,5 +279,27 @@
     "Ashfield",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 174,
+    "weight_kg": 62,
+    "build": "Lean and angular with pronounced musculature — the synthetic leg replacements add visible bulk to the calves and thighs, creating an asymmetrical silhouette that reads as purposeful rather than athletic",
+    "hair_color": "Dark brown with silver threading at the temples",
+    "hair_style": "Pulled back in a tight, functional braid; practical, zero maintenance",
+    "hair_length": "Medium",
+    "eye_color": "Pale gray with minor augmentation: faint LED hazing at the iris edges, subcutaneous neural interface visible as faint metallic shimmer under bright light",
+    "skin_tone": "Medium-warm, mixed ancestry — hints of both Scandinavian paleness and West African undertone, weathered by exposure",
+    "complexion": "Sharp, angular face with high cheekbones and a narrow jaw; minimal grooming beyond functional necessity. Skin shows minor scars and weathering. Expression defaults to neutral-focused, eyes always calculating",
+    "distinguishing_marks": [
+      "Jagged scar running down the left temple to jawline — approximately 12cm, white and thin, surgical or shrapnel origin",
+      "Faint burn marks across right shoulder and upper arm — partial sleeve of old trauma, pale and flat against skin",
+      "Capsule scar on the nape of neck where cranial implant was installed — barely visible under hairline, thin white line approximately 5cm",
+      "Asymmetrical tattoo on right inner forearm: a stylized rotor blade pattern in dark gray ink, approximately 8cm, professional grade"
+    ],
+    "visible_augmentations": "Both legs from mid-thigh downward show visible synthetic muscle fiber replacement — the replacement tissue is a fractionally different shade and texture than biological skin, with subtle mechanical joint articulation visible at the knees and ankles. The replacements are functional and unadorned, no chrome paneling. Faint power-line scarring visible where the synthetic connects to biological tissue. Minor LED indicator lights (status lights) embedded at the ankle joints, visible only at night or in low light",
+    "posture_movement": "Stands with weight forward on the balls of feet — ready-position default. Movements are economical and precise; no wasted motion. Walks with a slight asymmetry due to the synthetic legs, but the gait is smooth and controlled. Has a habit of tensing shoulders when listening to someone, a physical manifestation of processing threat-assessment. Hand movements are deliberate — reaches are slow and obvious, nothing sudden",
+    "clothing_style": "Tier 3-4 functional: reinforced cargo pants in muted gray or charcoal with oversized pockets and thigh webbing, synthetic leather jacket worn thin in places, black or dark green. No branding visible — stripped or removed. Boots are professional-grade tactical footwear, laced tight, soles worn from constant movement. Underneath: layered thermal base for temperature regulation in aircraft. No jewelry beyond a single flat steel band on left ring finger — functional, not decorative. Clothing shows minor stains and repairs; maintained for function, not appearance"
+  },
+  "image_prompt": "Cyberpunk character portrait of a lean, angular nonbinary pilot, age 36, dark braided hair pulled tight, pale gray eyes with subtle LED shimmer, mixed Scandinavian and West African heritage, weathered complexion. Both legs visible synthetic muscle fiber replacements with faint mechanical joint articulation and ankle LED indicator lights, asymmetrical gait. Jagged white scar on left temple, burn marks on right shoulder. Wearing reinforced matte charcoal cargo pants, worn black synthetic leather jacket, professional tactical boots. Standing in forward-ready posture against a gritty Ashfield squatter district backdrop, half-burned building silhouettes and neon signage barely visible in fog. Moody cyberpunk lighting with cool blue shadows and warm amber spots, volumetric haze, realistic grain. Sharp focus on face and leg augmentations. Film noir mood meets urban decay. --ar 2:3 --v 6"
 }

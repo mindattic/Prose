@@ -247,5 +247,25 @@
     "The Pure Hand",
     "Copper"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African Fula / Caucasian-Chilean",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, with slightly rounded shoulders from decades of close precision work. Forearms and hands are muscular and calloused; her torso is lean, almost economical in its lines.",
+    "hair_color": "Natural black with gradient color-shift to deep copper, maintained with nano-pigment dye-assist",
+    "hair_style": "Natural locs, densely packed, worn loose past shoulder length",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, augmented with micro-focus ocular implants (no visible LED or chrome, but slight optical artifact shimmer under direct light)",
+    "skin_tone": "Deep warm brown with reddish undertone from Guinean-Fula heritage",
+    "complexion": "Fine-textured, unlined despite her age — suggests careful sun avoidance or dermal maintenance. Permanent habitual squint creates shallow creases at outer eye corners. No visible scarring or blemishes; grooming is meticulous but not corporate-sterile.",
+    "distinguishing_marks": [
+      "Tabby-patterned geneware cat ears mounted on the crown of her skull, genuine cartilage and muscle tissue allowing slight independent movement and twitch responses",
+      "Micro-scarring on the pads of her fingertips and palms from fifteen years of document work — only visible under magnification"
+    ],
+    "visible_augmentations": "Functioning cat ears with natural fur patterning and articulation; ocular implants detectable only as a faint optical distortion in direct light. Color-shifting hair is cosmetic (nano-pigment), not obviously augmented.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Habitually leans slightly forward, as though perpetually focused on close work. Hands are rarely still; fingers often trace invisible patterns on nearby surfaces. Her gaze drifts to fine detail even in conversation (seams, typefaces, imperfections). Speaks quietly; humor emerges as dry asides delivered with apologetic timing.",
+    "clothing_style": "Tier 3-4 working professional with artistic sensibility. Favors layered, functional pieces: fitted turtlenecks or high-collar shirts (often charcoal, olive, or cream), lightweight canvas or linen overshirts in muted tones, tailored trousers with deep pockets. Wears a leather utility apron during print restoration work. Off-duty: vintage band tees under oversized cardigans, well-maintained but clearly worn. Footwear is always practical — soft-soled shoes or ankle boots suited for standing at workbenches. Jewelry is minimal and intentional: a silver ring on her right index finger (worn, possibly a family piece), a simple brass bracelet. No corpo insignia or status markers — deliberately anonymous."
+  },
+  "image_prompt": "Cyberpunk portrait of a 37-year-old woman with compact, precise build and deep warm brown skin with reddish undertone. Natural black locs with gradient color-shift to deep copper, falling past shoulders. Functioning tabby-patterned cat ears mounted on crown of head with visible cartilage and feline fur. Dark brown eyes with subtle optical shimmer from micro-focus implants. Habitual squint creating fine creases at eye corners. Wearing fitted charcoal turtleneck under lightweight olive linen overshirt, leather utility apron with tool pockets. Hands with visible calluses, fingers poised near detailed work surface. Background: intimate studio space with precise lighting, vintage printing press partially visible, scattered high-security documents, magnifying equipment. Mood: focused, quietly competent, slightly withdrawn. Lighting: warm tungsten overhead supplemented by focused desk lamp, creating shadows across fine details. Hyperrealistic, technically precise, understated cyberpunk aesthetic, character study. --ar 2:3 --v 6"
 }

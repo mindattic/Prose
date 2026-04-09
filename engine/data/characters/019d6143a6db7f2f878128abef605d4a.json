@@ -206,5 +206,26 @@
     "Tibor Osei-Svanstrom",
     "Copper"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Nigerian) / Armenian",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and slightly concave through the chest, shoulders rolled forward in a habitual stoop that reads as either exhaustion or deliberate self-diminishment. Wiry forearms with visible vasculature from stimulant use. No excess fat. Moves like someone trained to occupy minimal space.",
+    "hair_color": "Natural dark brown, almost black",
+    "hair_style": "Close-cropped, precisely maintained, parted slightly to the left",
+    "hair_length": "Short",
+    "eye_color": "Mismatched: left iris is vivid geneware violet with metallic undertones; right iris is original dark brown. Neither pupil dilates at the same rate — a deliberate asymmetry that unsettles people on prolonged eye contact.",
+    "skin_tone": "Warm brown with pronounced pink undertones, particularly visible in the cheeks and across the bridge of the nose",
+    "complexion": "Clean-shaven, meticulous grooming. Skin is clear but shows mild stress-related flushing around the eyes. Fine lines around the mouth suggest either chronic tension or frequent false smiles. No acne or visible dermatological neglect — he maintains appearance as operational security.",
+    "distinguishing_marks": [
+      "Thin, precise scar tissue running along the inside of both wrists, barely visible unless directly examined — consistent with early career mistakes or self-inflicted reminders of the work's cost",
+      "Small burn mark on the back of his right hand, roughly 2cm diameter, pale against his skin tone — from a laboratory accident during stimulant synthesis",
+      "Faint tremor in his hands when holding them still, visible only under close observation"
+    ],
+    "visible_augmentations": "None externally visible. The surgical-grade haptic feedback implants are subcutaneous in both palms and forearms. The pain suppression implant is internal. The iris geneware on his left eye is visually obvious but plausibly cosmetic to a casual observer.",
+    "posture_movement": "Moves with unusual precision and economy — no wasted motion. Walks slightly hunched, as though moving through doorways he expects to be too narrow. When seated, his hands rest flat on the table or in his lap, utterly still. When he needs to focus, he tilts his head slightly, and his mismatched eyes track with unsettling independence. In professional contexts (procedures), his posture straightens and his movements become measured, almost ritualistic.",
+    "clothing_style": "Exclusively clean, nondescript clothing in muted tones — grays, blacks, dark blues, off-whites. Well-maintained but intentionally forgettable: unmarked synthetic fiber shirts, tailored trousers without distinctive branding, a long charcoal coat in cold months. Wears latex or nitrile gloves frequently, even outside clinical contexts. No jewelry except for a stainless steel watch with a blank face — time-keeping stripped to function. His appearance is deliberate camouflage: he dresses like someone you would pass and not remember."
+  },
+  "image_prompt": "A lean 31-year-old man of West African and Armenian heritage, height 5'8\", with warm brown skin and pink undertones. Close-cropped dark hair, clean-shaven. His left eye is vivid geneware violet with metallic sheen, his right is original dark brown — pupils dilate at different rates, creating an unsettling asymmetry. Slight forward stoop to his shoulders. Wearing a perfectly clean, unmarked charcoal coat over a gray synthetic fiber shirt, black trousers. His hands are steady and precise, resting on a surgical workstation in a basement clinical space. Faint tremor visible in his fingers. The setting is a dimly lit underground clinic beneath a nail salon — industrial shelving, medical equipment in soft focus behind him, cool LED lighting casting sharp shadows. His expression is detached, almost neutral, but carrying the weight of chronic moral compromise. The atmosphere is tense, professional, quietly transgressive. Cyberpunk setting, GLMZ aesthetic, noirish lighting, psychological depth, hyperrealistic portrait photography style --ar 2:3 --v 6"
 }

@@ -249,5 +249,25 @@
     "The Pale Mile",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Finnish / Mongolian",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and angular, almost ascetic — minimal body fat, defined musculature in forearms and shoulders from decades of controlled precision work. No excess anywhere.",
+    "hair_color": "Black with ashy grey temples",
+    "hair_style": "Neatly trimmed, parted precisely, maintained with obsessive regularity",
+    "hair_length": "Short",
+    "eye_color": "Pale silver-grey with concentric metallic rings (geneware irises)",
+    "skin_tone": "Deep brown with grey-ashen undertones at the temples and around the eyes, as if the silver in his irises has leeched into his skin",
+    "complexion": "Smooth, immaculately maintained. No facial hair. Minimal crow's feet despite age — the precision of his life has left few expression lines. His face is calm and unremarkable until you notice the eyes.",
+    "distinguishing_marks": [
+      "Faint white scar running 3cm across the webbing between left thumb and index finger — old knife work, possibly self-inflicted during early ledger training",
+      "Thin scar tracing the right jawline, barely visible unless light catches it at exactly the right angle"
+    ],
+    "visible_augmentations": "The geneware irises are immediately striking — pale silver with concentric rings of light that subtly expand and contract when he thinks or calculates. No visible scarring around the eye sockets. The subdermal haptic mesh in his hands is not visible on surface inspection, but the way he holds his hands — fingers slightly arched, always ready to touch — suggests something beneath the skin.",
+    "posture_movement": "Sits with perfect upright posture, hands folded on the desk or his lap. Movements are economical and deliberate — no wasted motion, no fidgeting. When he walks, each step is measured. He does not gesture when he speaks. His entire body language communicates patience and control.",
+    "clothing_style": "Tier 3-4 functional respectability. Dark three-piece suits (cheap synthetic blend, well-maintained), white shirts with minor discoloration at the collar that he does not seem to notice or care about. A thin silver chain bracelet on his left wrist — possibly religious or superstitious. His shoes are polished but worn at the heel from his nightly route home. No jewelry except the bracelet. Everything about his appearance is designed to be unmemorable except for his eyes."
+  },
+  "image_prompt": "cyberpunk portrait, lean dark-skinned middle-aged man with ashy grey temples, wearing a dark three-piece suit and white shirt, pale silver eyes with intricate concentric metallic rings that glow faintly, sitting rigidly at a desk with hands folded, interior of cramped insurance office with dim fluorescent lighting and flickering ledger screens in background, harsh neon light catching his unsettling gaze, film noir mood, hyperrealistic, clinical precision, 2226 GLMZ aesthetic, cool color grading, high contrast shadows --ar 2:3 --v 6"
 }

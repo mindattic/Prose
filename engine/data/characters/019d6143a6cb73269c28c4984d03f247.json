@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Kenosha Crossing transit underbelly, rotating between hyperlane rest stops, near sub-level access near LaSalle and Congress",
-  "description": "Severino is a broad-shouldered man whose body tells the story of thirty years on the road — a jaw broken and reset crooked, fingers thickened by cold and labor, dark brown skin weathered to a kind of polished leather. He wears a patched greatcoat lined with sewn pockets, each containing a different flavor of unlicensed data chip wrapped in cloth to prevent scanning. His left eye has a cataract that caught and never got fixed; it gives him a milky, unsettling gaze that strangers can't quite look away from. He has no geneware — he considers it a tracking vector — but he does have a small ELF shrine stitched into the coat's inner lining: a cluster of dead LEDs arranged around a copper disc, an offering to whatever spirit keeps travelers from vanishing on the hyperlanes.\n\nSeverino exists in the cracks of Meridian 88's data systems as thoroughly as any person can. He has no registered identity, no Quanta account, no biometric profile on file with any corponation. He trades in physical data chips, handwritten information, oral news, and favors — a walking information economy that predates the networks. He is not paranoid so much as methodical; he made a decision decades ago and has honored it every day since. He tells stories the way other people breathe, compulsively and without quite being able to stop.",
+  "description": "Severino is a broad-shouldered man whose body tells the story of thirty years on the road — a jaw broken and reset crooked, fingers thickened by cold and labor, dark brown skin weathered to a kind of polished leather. He wears a patched greatcoat lined with sewn pockets, each containing a different flavor of unlicensed data chip wrapped in cloth to prevent scanning. His left eye has a cataract that caught and never got fixed; it gives him a milky, unsettling gaze that strangers can't quite look away from. He has no geneware — he considers it a tracking vector — but he does have a small ELF shrine stitched into the coat's inner lining: a cluster of dead LEDs arranged around a copper disc, an offering to whatever spirit keeps travelers from vanishing on the hyperlanes.\n\nSeverino exists in the cracks of GLMZ's data systems as thoroughly as any person can. He has no registered identity, no Quanta account, no biometric profile on file with any corponation. He trades in physical data chips, handwritten information, oral news, and favors — a walking information economy that predates the networks. He is not paranoid so much as methodical; he made a decision decades ago and has honored it every day since. He tells stories the way other people breathe, compulsively and without quite being able to stop.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -175,7 +175,7 @@
   ],
   "related_entities": [
     "Kenosha Crossing",
-    "Meridian 88",
+    "GLMZ",
     "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Leather",
@@ -183,5 +183,28 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Copper"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Russian",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thick through the torso, softened slightly by age but retaining the muscularity of decades of physical labor and constant movement. Hands are large and gnarled, fingers swollen at the knuckles from cold exposure and years gripping handholds on hyperlane vehicles.",
+    "hair_color": "Iron gray with traces of black at the temples",
+    "hair_style": "Shoulder-length, typically braided back or wound into a loose knot with whatever cord is available; maintained out of necessity rather than vanity",
+    "hair_length": "Medium",
+    "eye_color": "Left eye: natural dark brown; right eye: cataract-occluded, milky white with faint gray swirls",
+    "skin_tone": "Deep brown, weathered to a burnished leather appearance by decades of exposure to transit hub heat differentials and hyperlane radiation",
+    "complexion": "Deeply lined face, particularly around the eyes and forehead; jaw visibly reset from a break that healed crooked, giving his smile an asymmetrical quality. Stubble perpetually at three-day growth. Skin texture coarse but healthy, with a network of small scars across the backs of his hands and forearms.",
+    "distinguishing_marks": [
+      "Crooked jaw from an old break, reset unevenly, creating a slight cant to his lower face",
+      "Cataract in right eye causing permanent milky opacity",
+      "Network of fine white scars across both forearms and knuckles, consistent with decades of manual labor in industrial environments",
+      "Small burn scar on left temple, roughly the size of a coin, with slightly raised tissue",
+      "Calluses forming raised ridges across the palms and fingers"
+    ],
+    "visible_augmentations": "None. No chrome, no LED optics, no subdermal plating. His body is entirely unaugmented by choice—his age and weathering are entirely natural.",
+    "posture_movement": "Moves with deliberate economy, never rushed or sudden. Shoulders slightly forward, weight distributed evenly for balance on moving platforms. Walks like someone accustomed to unstable surfaces. His gaze is direct but his one functional eye often drifts slightly due to the cataract, making his attention feel unfocused even when intensely present.",
+    "clothing_style": "Patched greatcoat in faded charcoal, lined with dozens of handstitched pockets containing wrapped data chips; the pockets are secured with cord and small brass clasps to prevent accidental opening. Under the coat: layered thermal shirts in grays and blacks, worn thin but meticulously maintained. Canvas work pants with grease stains that never fully wash out. Boots that are resoled repeatedly, leather cracked but oiled regularly. A thin copper chain around his neck, attached to nothing visible. No visible branding; clothing is purely functional, Tier 5 salvage mixed with careful repair work."
+  },
+  "image_prompt": "A weathered 52-year-old man with deep brown skin and iron-gray braided hair, standing in the dim orange glow of a transit hub underpass at dusk. His left eye is natural dark brown and sharp; his right eye is clouded white with a cataract, creating an unsettling, unfocused gaze. His jaw is visibly crooked from an old break. He wears a heavily patched charcoal greatcoat with visible stitching and handmade pockets, layered over worn thermal shirts. His hands are gnarled and scarred, resting at his sides. The background shows industrial piping, flickering neon signage reflecting off concrete, and shadows of the GLMZ transit underbelly. Cinematic lighting emphasizing the weathered texture of his skin and fabric. Photorealistic, gritty cyberpunk aesthetic. --ar 2:3 --v 6"
 }

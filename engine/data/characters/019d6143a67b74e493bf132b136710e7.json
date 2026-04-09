@@ -188,5 +188,27 @@
     "Glass",
     "Nightlight"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Polish",
+    "height_cm": 185,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thick-framed, carrying the solid mass of decades of manual labor and long-distance walking. Not muscular in a refined sense, but densely built — the frame of someone who loads and unloads carts without machinery.",
+    "hair_color": "Silver-streaked black",
+    "hair_style": "Compressed locs wound tight against the skull",
+    "hair_length": "Medium (locs approximately 8-10cm in length)",
+    "eye_color": "Right eye: warm brown natural; Left eye: milky synthetic glass with faint amber glow",
+    "skin_tone": "Deep brown with a weathered, sun-darkened quality across exposed surfaces",
+    "complexion": "Deeply lined face, particularly around the eyes and mouth from decades of sun exposure and smiling. Three horizontal scarification marks across each cheek — deliberate family markings, cleanly healed. Weathered but well-maintained; grooming is sparse but intentional.",
+    "distinguishing_marks": [
+      "Three horizontal scarification marks across the left cheek, approximately 5cm each, evenly spaced 2cm apart — family marks deliberately replicated from family photograph",
+      "Three matching horizontal scarification marks across the right cheek, mirror placement to the left side",
+      "Deep sun-weathering and permanent creases across forehead and around eyes from chronic sun exposure",
+      "Calloused hands with permanent staining on fingertips suggesting decades of handling worn fabrics and salvaged materials"
+    ],
+    "visible_augmentations": "Left eye replacement: milky synthetic glass sphere with faint amber luminescence, visibly older model with slight mechanical iris movement. Sits slightly more recessed than natural eye. Otherwise no visible augmentations.",
+    "posture_movement": "Unhurried and deliberate in movement — a man comfortable with silence and observation. Tends to stand with weight distributed evenly, as if always ready to walk long distances. Eyes move methodically across environments, cataloguing details. Rarely makes rapid gestures; speaks with long pauses between thoughts.",
+    "clothing_style": "Patchwork long-coat assembled from twenty years of fabric scraps: visible panels of Sahel weave (rust and indigo tones), Andean fleece (cream and earth red), Siberian synthetic fur (silver-gray) stitched together into an ungainly but distinctive silhouette. Underneath: worn neutral-toned utilitarian layers suitable for variable climates. Footwear: heavily repaired all-terrain boots showing multiple generations of patches. No corporate branding; Tier 4-5 aesthetic through necessity rather than choice. Carries a battered leather satchel worn across his body — color faded to caramel from decades of use."
+  },
+  "image_prompt": "A weathered 58-year-old man with deep brown skin and silver-streaked black locs compressed close to his skull, standing in the amber-lit dawn of a hyperlane rest stop near Kenosha Crossing. His left eye glows faintly with milky amber synthetic light, contrasting his warm natural brown right eye. Three horizontal scarification marks visible across each cheek. Wearing an unmistakable patchwork coat assembled from Sahel weave, Andean fleece, and Siberian synthetic fur in rust, indigo, cream, and silver tones. He stands beside a weathered cargo cart loaded with salvaged goods and dried foodstuffs, one hand resting on a faded leather satchel. His posture is unhurried and observant. The scene has soft pre-dawn light with industrial hyperlane infrastructure in the background — concrete pylons, faint E.L.F. shrine structures, distant cargo containers. Mood: contemplative, worn, authentic, grounded in decades of travel. Film grain and warm color grading. Cinematic realism. --ar 2:3 --v 6"
 }

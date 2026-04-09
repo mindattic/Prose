@@ -13,7 +13,7 @@
   "age": 16,
   "status": "active",
   "location": "Hamtramck Enclave, near Ashland and Chicago Ave",
-  "description": "Elowen is tall with her mother's angular Vestergaard frame and her father's deep brown Galadima complexion, with thick natural hair she keeps in two buns that are usually listing sideways by midday. She has bioluminescent freckles across her nose and cheeks — a cosmetic geneware mod she saved for and chose herself, pale blue-white, they glow faintly in low light — and an intense, forward-leaning way of occupying space that makes her seem like she's always about to say something. Her bedroom wall is covered in printed diagrams and color-coded network maps she drew by hand because she says she thinks better when the data is physical.\n\nElowen is a self-taught junior hacker — not a runner, not employed by anyone, just a sixteen-year-old who figured out that the building management system for her Hamtramck block had a publicly accessible API that was never properly secured, and then kept pulling that thread. She has never done anything she considers harmful: she reroutes heating credits to elderly residents on her floor, flags maintenance requests that get ignored, and has developed a working model of the Enclave's data traffic patterns. She knows she is very good at this. She does not know how good, or what that means, or what happens to people in Meridian 88 who are this good and don't have protection.",
+  "description": "Elowen is tall with her mother's angular Vestergaard frame and her father's deep brown Galadima complexion, with thick natural hair she keeps in two buns that are usually listing sideways by midday. She has bioluminescent freckles across her nose and cheeks — a cosmetic geneware mod she saved for and chose herself, pale blue-white, they glow faintly in low light — and an intense, forward-leaning way of occupying space that makes her seem like she's always about to say something. Her bedroom wall is covered in printed diagrams and color-coded network maps she drew by hand because she says she thinks better when the data is physical.\n\nElowen is a self-taught junior hacker — not a runner, not employed by anyone, just a sixteen-year-old who figured out that the building management system for her Hamtramck block had a publicly accessible API that was never properly secured, and then kept pulling that thread. She has never done anything she considers harmful: she reroutes heating credits to elderly residents on her floor, flags maintenance requests that get ignored, and has developed a working model of the Enclave's data traffic patterns. She knows she is very good at this. She does not know how good, or what that means, or what happens to people in GLMZ who are this good and don't have protection.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -189,7 +189,7 @@
   ],
   "related_entities": [
     "Hamtramck Enclave",
-    "Meridian 88",
+    "GLMZ",
     "Zheng-dao Bioelectric",
     "Lazarus LX-2 'Lab Rat'",
     "The Pale Mile",
@@ -198,5 +198,26 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Galadima) / Scandinavian (Vestergaard)",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Lean and angular, tall-limbed with her mother's lanky Vestergaard frame. Wiry muscle from being sixteen and still growing into herself; no visible bulk but capable posture.",
+    "hair_color": "Natural dark brown, almost black",
+    "hair_style": "Two buns, usually uneven and listing by afternoon — hastily secured, sometimes with pen or stylus stuck through them",
+    "hair_length": "Medium (shoulder-length when down)",
+    "eye_color": "Dark brown, sharp and focused",
+    "skin_tone": "Deep warm brown from her father's Galadima heritage, clear and even",
+    "complexion": "Smooth skin with her father's strong facial structure — high cheekbones, defined jawline. Sharp, forward-facing expression. The bioluminescent freckles across her nose and cheeks are pale blue-white, faintly luminous in low light; they create a distinctive scattered pattern that she paid for and chose herself.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles across nose and upper cheeks in pale blue-white geneware, visible especially in dim lighting",
+      "Callus on right index and middle finger from prolonged stylus use",
+      "Ink stain on left palm from hand-drawn network diagrams"
+    ],
+    "visible_augmentations": "Basic consumer neural interface headset worn over her ears — standard black polymer band with minimal LED indicators. Not implanted. Bioluminescent freckles glow faintly in low light.",
+    "posture_movement": "Forward-leaning, intense. She sits at the edge of chairs. Moves with purposeful directness, not graceful but efficient. Fidgets with her hands constantly — tapping, tracing patterns, fingers moving as if typing invisible code. Eyes sharp and tracking, always seems about to interrupt or explain something.",
+    "clothing_style": "Tier 2 casual — clean but worn synthetic fabrics, oversized hoodies and fitted black pants, scuffed tactical-style boots. Usually wearing a graphene-lined jacket her parents bought her last winter. Clothing is secondary to comfort and functionality; she'll wear the same hoodie four days in a row without noticing. No corporate branding, no status symbols. Practical school uniform underneath on weekdays."
+  },
+  "image_prompt": "A 16-year-old girl with deep brown skin and angular Scandinavian features, tall and lean, wearing an oversized graphene-lined hoodie and black pants. Two uneven dark brown buns, one listing sideways. Pale blue-white bioluminescent freckles glowing softly across nose and cheeks. Sharp focused dark eyes, forward-leaning posture. Wearing a black consumer neural interface headset. Cyberpunk bedroom setting with printed network diagrams and hand-drawn color-coded maps covering the wall behind her. Desk with holographic displays casting blue light. Tense, intelligent expression. Cinematic lighting with neon accent colors reflecting off her face. Shallow depth of field. Cyberpunk aesthetic, intricate details, technical mood. --ar 2:3 --v 6"
 }

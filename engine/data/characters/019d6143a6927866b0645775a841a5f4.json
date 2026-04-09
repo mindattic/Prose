@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Primarily field-based in Auburn Grist and Chatham Flats; maintains a desk at the University Spine's Institute for Urban Social Research in the Meridian Core, near State and Jackson",
-  "description": "Patience Aborode-Kristjánsson looks like someone who has been places and come back changed by them in ways she wears openly. She is a large, broad-shouldered woman with deep black skin and grey natural hair cut close, with reading lines around her eyes and a scar along her left jawline from an incident in the Shelf she does not discuss. Her Yoruba-Icelandic heritage is everywhere in her face — the strong jaw, the wide forehead, the surprising pale hazel of her eyes, which are the thing people remember. She wears functional clothes that can survive a twelve-hour fieldwork day and carries a physical notebook alongside her data equipment, which her graduate students treat as an affectation and which she defends loudly and regularly.\n\nShe has spent the last two decades embedded in the lower-tier communities of Meridian 88's peripheral zones — Shelf communities, reclamation zones, the edges of the city that corponation sociology tends to treat as problems to model rather than people to know. Her work has produced four books that have made her genuinely influential in academic circles and genuinely respected in the communities she studies, a combination that is rarer than it should be. She is direct, large in presence, quick to laugh and quicker to call out what she considers intellectual dishonesty. She is also, under the professional armor, a person who has seen a great deal of suffering and carried it without adequate resources for processing it.",
+  "description": "Patience Aborode-Kristjánsson looks like someone who has been places and come back changed by them in ways she wears openly. She is a large, broad-shouldered woman with deep black skin and grey natural hair cut close, with reading lines around her eyes and a scar along her left jawline from an incident in the Shelf she does not discuss. Her Yoruba-Icelandic heritage is everywhere in her face — the strong jaw, the wide forehead, the surprising pale hazel of her eyes, which are the thing people remember. She wears functional clothes that can survive a twelve-hour fieldwork day and carries a physical notebook alongside her data equipment, which her graduate students treat as an affectation and which she defends loudly and regularly.\n\nShe has spent the last two decades embedded in the lower-tier communities of GLMZ's peripheral zones — Shelf communities, reclamation zones, the edges of the city that corponation sociology tends to treat as problems to model rather than people to know. Her work has produced four books that have made her genuinely influential in academic circles and genuinely respected in the communities she studies, a combination that is rarer than it should be. She is direct, large in presence, quick to laugh and quicker to call out what she considers intellectual dishonesty. She is also, under the professional armor, a person who has seen a great deal of suffering and carried it without adequate resources for processing it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -252,7 +252,7 @@
     "Meridian Core",
     "Auburn Grist",
     "The Reclamation Assembly",
-    "Meridian 88",
+    "GLMZ",
     "Chronicle",
     "The Shelf",
     "The Heritage Vault",
@@ -264,5 +264,26 @@
     "Hazel Brink",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Scandinavian (Icelandic)",
+    "height_cm": 178,
+    "weight_kg": 89,
+    "build": "Large-framed and broad-shouldered with substantial presence; carries weight in her core and upper body with the ease of someone who moves through physical space with purpose and without apology",
+    "hair_color": "Natural grey",
+    "hair_style": "Close-cropped, neat, with visible salt-and-pepper texture",
+    "hair_length": "Short",
+    "eye_color": "Pale hazel with amber undertones",
+    "skin_tone": "Deep, warm black complexion with subtle undertones reflecting her mixed heritage",
+    "complexion": "Strong Yoruba-Icelandic facial structure — broad forehead, prominent jaw, wide-set eyes. Face marked by weathering consistent with two decades of outdoor fieldwork; deep reading lines radiating from eyes; skin shows sun exposure and the patina of time spent in lower-tier zones without cosmetic intervention",
+    "distinguishing_marks": [
+      "Prominent scar along left jawline running approximately 8cm from angle of jaw toward chin, pale and old but clearly visible, origin undisclosed",
+      "Fine laugh lines around mouth and eyes suggesting frequent, genuine smiling",
+      "Calluses on right hand index and middle fingers from decades of note-taking with physical stylus"
+    ],
+    "visible_augmentations": "None visible. Subdermal audio recorder is completely internal; color-changing hair pigment dormant and undetectable by sight.",
+    "posture_movement": "Moves with deliberate authority without aggression — shoulders back, head level, direct eye contact. Sits in interviews with the physical patience of someone trained to occupy silence. Gestures are economical but expressive. Her presence commands a room not through performance but through evident competence and earned respect.",
+    "clothing_style": "Functional Tier 3 workwear — heavy-duty canvas cargo pants or reinforced denim, technical layered tops in muted colors (charcoal, slate, cream), waterproof field jacket worn thin from use. Worn Córdoba-make boots suitable for long fieldwork. Carries a Faraday-lined satchel containing physical notebooks, data terminals, and community liaison materials. No corporate branding; all clothing chosen for durability and practicality over status. Minimal jewelry — a worn titanium band on left ring finger, possibly commemorative."
+  },
+  "image_prompt": "Portrait of a 52-year-old Black woman with pale hazel eyes and natural grey close-cropped hair, broad-shouldered and substantial build, strong Yoruba-Icelandic facial structure with prominent jawline and reading lines. Visible scar along left jawline. Wearing worn technical fieldwork clothing — canvas cargo pants and layered charcoal shirt, weathered Córdoba boots. Seated in a community space with soft institutional lighting, background slightly blurred suggests urban Shelf zone architecture. Expression is direct and observant, carrying the weight of two decades of embedded ethnographic research. Photorealistic, humanist documentary photography style, warm color grading, shallow depth of field, natural lighting from window source, cinematic realism --ar 2:3 --v 6"
 }

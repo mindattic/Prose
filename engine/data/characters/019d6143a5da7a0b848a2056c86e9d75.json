@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Escanaba Gateway, temporary processing overflow — a repurposed cargo hangar on the eastern dock, near Michigan Ave and Roosevelt",
-  "description": "Chiamaka has the kind of face that is beautiful in a way that takes a moment to resolve — wide-set dark eyes, a long jaw, a nose that has been broken and healed slightly crooked, which they consider an improvement. Their hair is grown long on top and cut close at the sides, currently dyed a deep amber that is growing out at the roots into black. Bioluminescent freckles run across both cheekbones and the bridge of their nose, a genemod that was fashionable a decade ago and that they have kept because they find it useful in the dark. They dress in layers of practical clothing with a great number of pockets, all of which serve a purpose.\n\nChiamaka came to Meridian 88 with the Seventh Coastal Movement — a caravan of climate refugees from the drowned lowlands east of what used to be Lagos, where their Igbo family had mixed with Samoan shipwright families over three generations of coastal labor. They have been in the Gateway processing overflow for seven months, which is four months longer than they were told. They work as an informal translator and advocate for other caravan members, navigating the Meridian 88 resettlement bureaucracy with a simmering precision that occasionally flares into something that frightens officials. They are not angry in a way that is hot. They are angry in a way that is patient.",
+  "description": "Chiamaka has the kind of face that is beautiful in a way that takes a moment to resolve — wide-set dark eyes, a long jaw, a nose that has been broken and healed slightly crooked, which they consider an improvement. Their hair is grown long on top and cut close at the sides, currently dyed a deep amber that is growing out at the roots into black. Bioluminescent freckles run across both cheekbones and the bridge of their nose, a genemod that was fashionable a decade ago and that they have kept because they find it useful in the dark. They dress in layers of practical clothing with a great number of pockets, all of which serve a purpose.\n\nChiamaka came to GLMZ with the Seventh Coastal Movement — a caravan of climate refugees from the drowned lowlands east of what used to be Lagos, where their Igbo family had mixed with Samoan shipwright families over three generations of coastal labor. They have been in the Gateway processing overflow for seven months, which is four months longer than they were told. They work as an informal translator and advocate for other caravan members, navigating the GLMZ resettlement bureaucracy with a simmering precision that occasionally flares into something that frightens officials. They are not angry in a way that is hot. They are angry in a way that is patient.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -58,9 +58,9 @@
   "relationships": [],
   "story_hooks": [
     "Twelve-year-old caravan member Tobias Faatoafe-Musa (a distant cousin) has vanished from the overflow facility. The Gateway security log shows him leaving voluntarily. Chiamaka knows he would never leave without telling them. They need someone to look into it who can move through the city in ways they cannot.",
-    "Chiamaka has found a procedural error in Meridian 88's resettlement framework that would, if properly filed, advance thirty-seven caravan cases simultaneously. They need someone with digital access to help them file it before the quarterly review window closes in six days."
+    "Chiamaka has found a procedural error in GLMZ's resettlement framework that would, if properly filed, advance thirty-seven caravan cases simultaneously. They need someone with digital access to help them file it before the quarterly review window closes in six days."
   ],
-  "narrative_function": "Quest giver (bureaucratic navigation problems, missing persons within the refugee system), information source on Meridian 88's resettlement processes and their failures, emotional anchor for the caravan community, potential ally with a network of people who owe them favors",
+  "narrative_function": "Quest giver (bureaucratic navigation problems, missing persons within the refugee system), information source on GLMZ's resettlement processes and their failures, emotional anchor for the caravan community, potential ally with a network of people who owe them favors",
   "augmentations": "Bioluminescent freckles (cosmetic geneware, cheekbones and nose bridge, amber-warm light). No other augmentations.",
   "daily_life": "Chiamaka rises before the hangar wakes up, spends two hours updating a meticulous handwritten log of each caravan member's bureaucratic status, spends the rest of the day navigating the Gateway's processing windows and taking meetings with anyone who might have authority over resettlement timelines, and spends their evenings walking the perimeter of the overflow facility because stillness has become impossible.",
   "affiliation": "Seventh Coastal Movement caravan collective; informal advocacy with no organizational backing",
@@ -175,11 +175,32 @@
   "registered_firearms": [],
   "related_entities": [
     "Escanaba Gateway",
-    "Meridian 88",
+    "GLMZ",
     "Aslan Vasquez-Chatterjee",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Nesting Doll",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African Igbo / Polynesian Samoan",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, with the kind of economy of movement that comes from doing physical labor in confined spaces. Long-limbed, minimal body fat, shoulders slightly forward from years of hunching over paperwork and port work.",
+    "hair_color": "Deep amber with black roots showing 2-3cm of regrowth",
+    "hair_style": "Undercut: long on top (10-12cm, swept back or tied loosely), faded close at the sides and nape",
+    "hair_length": "Long/Medium",
+    "eye_color": "Dark brown, almost black, with a directness that holds attention longer than expected",
+    "skin_tone": "Deep warm brown with undertones reflecting mixed West African and Polynesian ancestry",
+    "complexion": "Sharp jawline, slightly asymmetrical nose with a visible crook from a past break, wide-set eyes that read as observant and exhausted simultaneously. Minimal grooming beyond necessity—clean, functional, no cosmetics. Early lines around the eyes and mouth from sustained tension.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles across both cheekbones and bridge of nose, warm amber-gold color that glows faintly in low light",
+      "Small scar on left temple, thin and pale, approximately 2cm long",
+      "Calluses on palms and inner fingers from years of manual labor and sustained handwriting"
+    ],
+    "visible_augmentations": "Bioluminescent freckles only—functional and cosmetic geneware, no chrome or subcutaneous hardware visible. The glow is subtle in daylight, noticeable in the hangar's fluorescent wash.",
+    "posture_movement": "Economical and purposeful. Stands with weight slightly forward, ready to move. Walks with the kind of precision that suggests constant awareness of surroundings and others' personal space. Hands often occupied—writing, organizing, gesturing through explanations. When still, there is visible tension in the shoulders and jaw.",
+    "clothing_style": "Tier 4 utilitarian. Multiple layers: fitted base layer (often dark or neutral), mid-layer with pockets (canvas, worn synthetic blends), outer layer of reinforced fabric or light weatherproof material. Colors are muted—grays, blacks, faded greens, occasional warm tones. Clothing is patched where necessary, maintained with care. Worn boots with good tread. A canvas satchel containing handwritten logs, documents, and translation references. No corporate branding. Jewelry minimal—a simple metal bracelet on left wrist, possibly of personal or cultural significance."
+  },
+  "image_prompt": "Cyberpunk portrait of a nonbinary Black person with Igbo and Samoan heritage, age 34, lean angular build with long amber hair undercut close at the sides, dark intelligent eyes, slightly crooked nose, warm bioluminescent freckles glowing softly across cheekbones and nose bridge in amber-gold. Wearing layered practical clothing with multiple pockets in muted grays and blacks, small repairs visible in the fabric. Standing in a fluorescent-lit cargo hangar with industrial metal walls, holding a handwritten ledger, posture forward-leaning and alert. Expression patient and exhausted. Cinematic lighting with harsh overheads creating shadows, cool fluorescent ambiance contrasting with warm glow of biomod freckles. Documentary realism, worn and functional aesthetic, climate refugee settlement atmosphere, high detail on face and hands --ar 2:3 --v 6"
 }

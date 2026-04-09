@@ -74,5 +74,26 @@
     "Stalker",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Polynesian / Russian / West African",
+    "height_cm": 178,
+    "weight_kg": 74,
+    "build": "Athletic and lean, muscled without bulk — a tracker's build. Shoulders broad but not overdeveloped; legs thick and capable. Twenty years of sustained physical work have carved away anything unnecessary.",
+    "hair_color": "Dark brown with natural reddish undertones",
+    "hair_style": "Pulled back tight in a single braid, utilitarian",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, alert and constantly moving",
+    "skin_tone": "Deep warm brown with subtle golden undertones — mixed Polynesian and West African ancestry evident",
+    "complexion": "Weathered and unadorned. Minimal cosmetic concern; skin shows exposure to elements. No tattoos or body modification — she leaves no marks. Hands are calloused from years of climbing, gripping, pushing through urban terrain.",
+    "distinguishing_marks": [
+      "Scar along the left temple, thin and old, running from hairline to cheekbone — shrapnel wound from a Sterling-Nakamura operation in the Midwest Reclamation Zone",
+      "Burn mark on the right forearm, small circular scar — old accident with thermal equipment, barely noticeable unless you look",
+      "Multiple small white scars across both palms and knuckles — years of climbing, crawling, fighting through hostile terrain"
+    ],
+    "visible_augmentations": "None visible. She operates deliberately below the digital layer and has rejected neural integration. No chrome, no LED optics, no subdermal plating.",
+    "posture_movement": "Economical and alert. She moves like someone scanning terrain constantly — head up, eyes tracking peripheral movement, weight balanced on the balls of her feet. No wasted motion. When stationary, she stands with hands free and visible, back to wall when possible. Her gaze settles on details others miss — scuff marks, dust patterns, the way a door frame is worn.",
+    "clothing_style": "Tier 4 practical. Dark utilitarian gear: fitted cargo pants with reinforced pockets and knee pads, thermal-lined jacket over a plain black compression shirt, worn tactical boots with deep tread. No logos, no branding, nothing that catches light or draws attention. Everything chosen for function — pockets for tools, materials for climbing and moving through hostile environments, colors that blend into urban concrete and shadow. A small backpack, always worn, containing climbing gear, dust masks, thermal imaging tools, and a packed bag always at home ready for immediate deployment. She dresses like someone who might need to move fast, climb anything, or disappear into a warehouse at a moment's notice."
+  },
+  "image_prompt": "A woman in her late forties, Polynesian and Russian heritage, athletic lean build, dark brown hair in a tight braid, deep warm brown skin, alert dark eyes constantly scanning. She wears dark utilitarian tactical gear — fitted cargo pants, reinforced thermal jacket, worn tactical boots. Standing in shadow in an industrial corridor, dust settling around her boots, hands free and visible. Weathered and focused, no augmentations visible, no chrome or modification — deliberately analog. Gritty cyberpunk noir aesthetic, urban decay setting with concrete walls and dim overhead lighting casting long shadows, moody and atmospheric, cinematic realism, high detail on hands and footwear showing years of physical work, shot as character study portrait in Tier 4 warehouse district, --ar 2:3 --v 6"
 }

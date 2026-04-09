@@ -251,5 +251,25 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Zimbabwean / Hungarian-Slovak",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, with the hard-earned musculature of someone who walks fieldwork routes on foot three days a week. Shoulders slightly rounded from years of carrying a heavy satchel. No excess body fat.",
+    "hair_color": "Natural deep brown with thin copper-dyed streaks",
+    "hair_style": "Close-cropped, textured, deliberately undyed since doctoral work — the copper streaks are faded and intentionally maintained",
+    "hair_length": "Short",
+    "eye_color": "Augmented: patterned irises in concentric amber rings with natural dark brown sclera",
+    "skin_tone": "Deep brown complexion with warm undertones",
+    "complexion": "Weathered from consistent fieldwork exposure. Few lines around eyes and mouth from frequent intense smiling and concentration. Minimal makeup. Hands callused from note-taking and satchel carrying.",
+    "distinguishing_marks": [
+      "Faint linear scar on left forearm where sub-dermal field recorder was installed, approximately 4cm long, partially obscured by casual sleeve wear",
+      "Small burn scar on right inner wrist from fieldwork accident in a Shelf kitchen approximately 8 years ago — she considers it a badge"
+    ],
+    "visible_augmentations": "Concentric amber patterned irises — immediately noticeable and unusual. Sub-dermal field recorder not visible under normal clothing but occasionally visible as a slight bulge on left forearm. No visible chrome or external augmentation.",
+    "posture_movement": "Moves with economical efficiency but without rigidity. Sits forward in conversations, leaning slightly toward interlocutors. Stands with weight shifted to one leg, often touching her left forearm unconsciously when discussing field data. Her walk is purposeful and ground-covering; she's always going somewhere specific.",
+    "clothing_style": "Tier 2 academic-adjacent: worn high-quality field gear aged into softness. Carhartt canvas work pants, vintage merino wool sweaters, sturdy walking boots (currently scuffed, several years old). The battered fieldwork satchel is non-negotiable — canvas with leather trim, covered in data-patch stickers from communities she's embedded with. Minimal jewelry. No corporate branding. Her style reads as 'too invested in the work to care about fashion,' which is partly true and partly carefully maintained."
+  },
+  "image_prompt": "A 41-year-old woman with deep brown skin and close-cropped natural hair shot through with faded copper streaks, captured in direct warm light. Her eyes are striking: augmented with concentric amber-ring irises. She wears worn Carhartt work pants, a soft merino wool sweater in slate gray, and carries a battered canvas fieldwork satchel plastered with data-patch stickers. She sits leaning forward slightly in a sparse office with brutalist concrete walls and a single window overlooking urban sprawl. Her expression is focused and warm. Faint fieldwork wear visible on her hands and the slight bulge of a sub-dermal recorder visible on her left forearm. Cyberpunk sociologist aesthetic, intimate portrait, documentary photography style, shallow depth of field, warm tungsten lighting, 2226 GLMZ setting --ar 2:3 --v 6"
 }

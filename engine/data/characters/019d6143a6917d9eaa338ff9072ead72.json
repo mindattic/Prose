@@ -282,5 +282,26 @@
     "Slagworks Industrial",
     "Clover"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Stocky and powerfully compact — not gym-built but shaped by decades of hands-on work. Broad shoulders, thick forearms, a frame designed for leverage and endurance rather than speed.",
+    "hair_color": "Dark brown, salt-grayed at temples",
+    "hair_style": "Cropped close, maintained for utility — no styling, purely functional",
+    "hair_length": "Short",
+    "eye_color": "Pale gray with faint neural interface faintness around the pupils — subcutaneous optic enhancement",
+    "skin_tone": "Medium, warm undertone — mixed phenotype that resists simple categorization, weathered from nocturnal work cycles",
+    "complexion": "Weathered. Minimal scarring visible on face — professionally treated or avoided. Jaw carries the weight of four decades; features are heavy, direct, and read as both competent and dangerous. Grooming is meticulous but austere — no vanity, pure maintenance.",
+    "distinguishing_marks": [
+      "Surgical scar running 4cm along right temple, faded to near-invisibility — likely subcutaneous work or close-quarters injury sustained years ago",
+      "Faint burn marks across knuckles of both hands, particularly right — decades of weapons handling, accidental discharge residue or proof-of-skill",
+      "Small lattice of thin scars across the back of right forearm where the smartgun link interface meets skin — regular maintenance access points"
+    ],
+    "visible_augmentations": "Smartgun link protruding from right forearm — sleek titanium-alloy housing, faintly luminous targeting reticle visible beneath skin when active. The link is exposed, no attempt at concealment — message in itself. Left forearm shows no visible external modification, but subtle distortion in the skin contour suggests subsurface weapon housing (monofilament whip).",
+    "posture_movement": "Economical and controlled. Moves like someone who has learned that wasted motion is wasted energy and liability. Shoulders slightly forward, weight distributed low — ready stance that looks casual. Eye contact is direct and held longer than comfort demands. Hands are rarely at rest; fingers tap or adjust equipment when seated. Nocturnal adaptation has given him a predatory stillness, an absence of fidgeting that others read as patience or threat.",
+    "clothing_style": "Tier 3-4 pragmatism. Dark synthetic fabrics — charcoal, deep gray, black — designed for function in low-light environments. Reinforced tactical jacket with internal compartments, worn open over a fitted compression shirt that manages sweat and impact. Combat pants with thigh pockets and cable routing. Steel-toed boots, scuffed, regularly maintained. No logos, no fashion markers — clothes are tools. Wears a worn leather cord around his neck with a data chip (contact encryption key) as a redundant backup. No jewelry, no status symbols. His augmentations are his only ornamentation."
+  },
+  "image_prompt": "Portrait of a 35-year-old male counterintelligence operative, cyberpunk noir aesthetic, Scandinavian-West African mixed heritage, stocky athletic build, pale gray eyes with subtle neural interface enhancement, dark brown hair with gray temples cropped short, weathered face with surgical scar on temple, strong jaw. Visible titanium smartgun link in right forearm glowing faintly. Wearing dark tactical jacket over compression shirt, combat pants, steel-toed boots. Neon-lit Meridian Station interior background, cool blue and amber lighting, cyberpunk urban decay aesthetic, moody nocturnal atmosphere, sharp focus on face and forearm augmentation, cinematic noir lighting, gritty realism, hyper-detailed chrome and skin. --ar 2:3 --v 6"
 }

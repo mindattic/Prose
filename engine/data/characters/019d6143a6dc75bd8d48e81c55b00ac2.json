@@ -170,5 +170,26 @@
     "Elena Vasquez-9",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Finnish",
+    "height_cm": 125,
+    "weight_kg": 28,
+    "build": "Wiry and slight, all lean muscle and prominent joints from a childhood of sparse meals and constant movement. Her frame is deceptively strong—capable of running rooftops for hours without fatigue.",
+    "hair_color": "Deep black with natural reddish undertones",
+    "hair_style": "Tight, natural curls worn loose and voluminous when uncovered",
+    "hair_length": "Medium (shoulder-length when released from cap)",
+    "eye_color": "Dark brown with bioluminescent blue-green ring around each iris",
+    "skin_tone": "Deep warm brown with golden undertones",
+    "complexion": "Smooth, sun-darkened from outdoor exposure, cheeks slightly hollowed from rationed diet. Clean but weathered, with the restless energy of constant motion written across her features. Her expression is often guarded but her eyes betray quick intelligence and curiosity.",
+    "distinguishing_marks": [
+      "Bioluminescent rings circling both irises in faint blue-green, glowing softly in low light—installed by her mother, involuntary but now a signature feature",
+      "A thin scar across her left knuckle from a message delivery gone wrong, barely visible",
+      "Calluses on her palms and fingertips from gripping rooftop edges and weathered surfaces"
+    ],
+    "visible_augmentations": "The bioluminescent irises are immediately visible—a soft blue-green glow that intensifies in darkness, particularly noticeable in tunnel environments. No other visible cybernetics.",
+    "posture_movement": "Constantly restless, weight always ready to shift. She moves with economical grace—quick, efficient, never wasting motion. Her gait is a runner's gait, even when standing still. Her hands fidget with small objects (copper filings, message tokens) when idle. Her eyes track movement instinctively; situational awareness is habitual. When at rest, she curls inward slightly, taking up minimal space.",
+    "clothing_style": "A salvaged Ferrogate Transit cap three sizes too large that she wears constantly, the brim softened from wear. Underneath: layered hand-me-downs patched with mismatched fabric—thermal undershirt, oversized grey utility jacket with multiple pockets (for messages and copper offerings), cargo pants with reinforced knees from rooftop crawling. Worn synthetic running shoes with taped seams. A single copper wire wrapped around her left wrist as both charm and tool. Tier 5 functional—nothing new, everything salvaged or traded. A small cloth pouch at her hip holds her day's earnings in Φ tokens."
+  },
+  "image_prompt": "A nine-year-old girl with deep warm brown skin and tight black curls escaping from under an oversized salvaged transit cap, standing in a dimly-lit industrial corridor. Her eyes glow faintly with bioluminescent blue-green rings around dark irises. She wears patched, mismatched Tier 5 clothing—oversized grey utility jacket, cargo pants, worn synthetic shoes. Lean, wiry frame from sparse nutrition and constant running. Her posture is alert and economical, weight ready to shift. Cyberpunk, gritty realism, industrial setting with exposed pipes and tunnel architecture, dim LED strips and bioluminescent accents, atmospheric haze, dramatic side lighting that emphasizes the faint glow in her eyes, shallow depth of field, documentary photography style --ar 2:3 --v 6"
 }

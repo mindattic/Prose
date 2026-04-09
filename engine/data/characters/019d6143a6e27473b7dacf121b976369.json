@@ -59,9 +59,9 @@
   "story_hooks": [
     "She quietly approaches someone to investigate a series of cargo anomalies in the northern corridor — but only once she's confirmed they have no connection to Ferrogate's internal audit apparatus. She doesn't want this found officially.",
     "A junior Ferrogate employee who was flagging safety concerns about aging infrastructure in the southern hubs has suddenly been quietly transferred. Sveta's name is on the transfer order, but someone who knows her work says it doesn't look like her signature move.",
-    "She has the transit access codes to move something — or someone — across the entire Meridian 88 infrastructure undetected. The question is what she'd need in exchange, and whether her price is payable."
+    "She has the transit access codes to move something — or someone — across the entire GLMZ infrastructure undetected. The question is what she'd need in exchange, and whether her price is payable."
   ],
-  "narrative_function": "High-tier quest giver with genuinely complex motivations; antagonist who isn't wrong; source of macro-level information about Ferrogate's operations and Meridian 88's transit infrastructure; gatekeeper to resources that players might desperately need.",
+  "narrative_function": "High-tier quest giver with genuinely complex motivations; antagonist who isn't wrong; source of macro-level information about Ferrogate's operations and GLMZ's transit infrastructure; gatekeeper to resources that players might desperately need.",
   "augmentations": "Retractile data-port (behind right ear, installed 2171). Subdermal cardiac monitor with automatic emergency alert — required by Ferrogate for all Tier 5 executives over 50. No cosmetic modifications.",
   "daily_life": "In her office by 06:00, has reviewed overnight logistics reports before most of her staff have eaten breakfast. Conducts three standing meetings before noon. Takes lunch in her office twice a week; uses the other three days to walk the lower transit hubs personally — she believes executives who don't see their actual infrastructure are executives making bad decisions.",
   "affiliation": "Ferrogate Transit (Tier 5)",
@@ -246,10 +246,31 @@
     "Lincoln Fortress",
     "Ferrogate Transit",
     "Riddle",
-    "Meridian 88",
+    "GLMZ",
     "TESSERA PG-2 'Signature'",
     "Silver",
     "Slagworks Industrial"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "East European (Slavic) / West African / Hispanic",
+    "height_cm": 172,
+    "weight_kg": 89,
+    "build": "Heavyset but structured — broad shoulders and a solid frame that reads as presence rather than softness. Years of moving through industrial spaces have kept her posture military-straight despite her weight. Her mass is distributed with the confidence of someone who has never felt the need to apologize for taking up space.",
+    "hair_color": "Silver-white, natural",
+    "hair_style": "Swept back from her face in a severe, practical arrangement, pinned at the nape with a grey titanium clip",
+    "hair_length": "Medium (shoulder-blade length)",
+    "eye_color": "Steel grey, unremarkable, the kind that misses nothing",
+    "skin_tone": "Warm light brown with olive undertones — the blended complexion of her mixed heritage, weathered and deliberate",
+    "complexion": "Heavily lined face with deep creases around her eyes and mouth. Her skin has the texture of someone who spent decades in poorly-humidified office environments and industrial transit zones. No attempts at smoothing or rejuvenation. Her face reads as a map of decisions made and consequences accepted. Minimal makeup — just enough to maintain professional presentation.",
+    "distinguishing_marks": [
+      "Linear scar along her left jawline, faint but visible under certain light — approximately 8cm long, origin and age unknown, never discussed",
+      "Burn scar across the back of her right hand, old and silvered — consistent with thermal damage from 2180s-era transit equipment malfunction",
+      "Small tattoo on her inner right wrist: a stylized anchor and crescent moon, barely visible unless she extends her arm with deliberate exposure — installed in 2147, before corporate regulations tightened"
+    ],
+    "visible_augmentations": "Retractile data-port behind her right ear — a precisely engineered socket of brushed steel and black polymer, elegant and deliberately dated. The port sits just at the hairline; when not in use, it retracts flush with her skin, leaving only a faint seam. The augmentation is intentionally visible; she has never hidden it and actively maintains its visibility as a signal of uninterrupted service and refusal to chase cosmetic upgrades.",
+    "posture_movement": "She moves like weather moving through a space — unhurried, purposeful, with the physical confidence of someone who has spent 30+ years in executive logistics. Her stride is long and economical; she doesn't waste motion. She sits with her spine against chair backs, never reclining, and her hands are always occupied or resting flat on surfaces. Her movements have the precision of someone who has trained her body to reflect her mind: controlled, efficient, communicative without words.",
+    "clothing_style": "Always Ferrogate corporate grey — tailored jackets and regulation trousers with red piping at the seams and collar. The cuts are formal, almost dated by current standards, which is deliberate; she has worn the same silhouette for 15 years and has no intention of changing it. Her clothing fits impeccably — tailored quarterly by Ferrogate's in-house contractor — and carries subtle status markers: the red piping is real anodized aluminum, not printed, and her jacket cuffs have reinforced wear-patches from constant contact with desk edges and transit equipment railings. She wears a single piece of jewelry: a platinum watch from 2156, never serviced, perpetually accurate to within 2 seconds."
+  },
+  "image_prompt": "Executive woman in her mid-50s, heavyset with broad shoulders and military posture, silver-white hair swept back and pinned, steel-grey eyes lined with decades of precision and decision. Warm light brown skin heavily creased and weathered, a faint scar along left jawline, aged burn mark visible on right hand. Wearing immaculate Ferrogate corporate grey with red piping trim, perfectly tailored jacket and regulation trousers. Visible retractile data-port behind right ear glinting brushed steel. Standing in a high-rise executive office overlooking industrial transit infrastructure, cool fluorescent and warm ambient lighting. Cinematic cyberpunk, professional portrait style, photorealistic, commanding and uncompromising presence, no cosmetic enhancement, age worn with purpose and power. --ar 2:3 --v 6"
 }

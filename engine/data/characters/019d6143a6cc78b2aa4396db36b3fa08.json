@@ -230,5 +230,27 @@
     "Stalker",
     "Nightlight"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Polynesian",
+    "height_cm": 163,
+    "weight_kg": 51,
+    "build": "Lean and sinewy with compressed musculature adapted to confined spaces; narrow shoulders and a flexible spine that moves through tunnels without rotation; core strength concentrated in forearms and grip",
+    "hair_color": "Bioluminescent filaments — teal-cyan glow in darkness, natural dark root base where regrowth occurs",
+    "hair_style": "Shaved scalp with bioluminescent filaments braided tight into two or three functional cords, pinned at the nape with salvaged ferrogate hardware",
+    "hair_length": "None (filaments only, ~8cm when braided)",
+    "eye_color": "Left eye: dark brown, original; Right eye: amber-chrome implant with faint luminous ring at pupil margin",
+    "skin_tone": "Deep warm brown with undertones of earth and clay",
+    "complexion": "Weathered but not aged; skin shows no sun damage but carries fine stress lines around the eyes and mouth from years of poor lighting and precision focus work. Self-applied phosphorescent tattoos in teal glow across forearms, collarbones, and the back of her neck — functional positioning markers that double as personal cartography",
+    "distinguishing_marks": [
+      "Phosphorescent teal tattoo running from left collarbone down the sternum in a branching pattern resembling tunnel junctions",
+      "Self-applied phosphorescent line tattoos on both forearms marking cardinal directions and depth intervals",
+      "Faint circular scar on left palm where the subdermal compass chip was grafted, now barely visible",
+      "Small burn scar on right temple — old electrocution from mishandled salvage"
+    ],
+    "visible_augmentations": "Right eye gleams amber with faint luminous ring; bioluminescent hair filaments glow teal in low light; left palm shows the subtle outline of the subdermal compass chip beneath skin. No obvious chrome or plating.",
+    "posture_movement": "Moves with deliberate economy — shoulders held slightly forward, spine flexible, head tilted as if constantly reading spatial cues. When walking, she places feet with precision and adjusts height constantly as if navigating invisible obstacles. In confined spaces, she becomes almost liquid, rotating hips and shoulders independently. Her hands are always active: checking rope, adjusting rig fastenings, fingers tracing imagined maps",
+    "clothing_style": "Tier 4-5 salvage utilitarian. A patchwork coat stitched from old Ferrogate Transit uniform panels in faded blue and gray, with functional pockets and loop attachments for rope. Thermal base layer underneath in black, worn thin at the elbows and knees. Heavy canvas pants with cargo pockets, the fabric stained with mineral deposits and fungal growth. Rope coiled around her torso like a harness. Boots are mismatched — left is old transit-issue steel-toe, right is a salvaged climbing boot. No jewelry except the functional ferrogate hardware pinning her braids"
+  },
+  "image_prompt": "A lean 34-year-old woman with deep warm brown skin and a shaved scalp revealing teal-cyan bioluminescent filaments braided tight, standing in dim underground tunnel lighting. Her right eye glows amber-chrome, left is dark natural brown. Faint phosphorescent teal tattoos glow on her collarbones and forearms — functional mapping markers. She wears a patchwork coat stitched from faded transit uniform panels, thermal undersuit, heavy canvas pants stained with mineral deposits, and mismatched utilitarian boots. Coils of knotted rope hang from her torso. Her posture is slightly forward-leaning, movements precise and economical. Setting: dark concrete and pipe-lined sub-level tunnel junction, minimal overhead clearance, moisture-beaded walls. Mood: focused, unsettling grace, almost ethereal in function. Lighting: darkness punctuated by bioluminescent glow and cold LED spillover. Film noir meets cyberpunk underground. Shot style: character study portrait, slight Dutch angle, shallow depth of field with background tunnel receding into black. Hyperrealistic texture on worn fabrics and aged skin. High contrast. --ar 2:3 --v 6"
 }

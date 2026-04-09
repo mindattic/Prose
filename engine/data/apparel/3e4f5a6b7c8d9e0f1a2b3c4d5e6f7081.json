@@ -3,7 +3,7 @@
   "name": "Vanthorpe Spire Restraint Ankle Monitor (Court-Issue)",
   "type": "apparel",
   "category": "accessory",
-  "description": "Matte graphite polymer shell over a titanium locking core, 6cm tall, contoured to sit above the ankle bone. The Vanthorpe corponation crest is embossed subtly on the outer face — small enough to read only up close, large enough to know it's there. Surface finish is deliberately utilitarian, a quiet corporate message that this is infrastructure, not fashion.\n\nA single amber LED pulses every 8 seconds during normal operation, shifting to red if tamper protocols trigger. Worn by court-processed individuals as a condition of provisional movement within designated Meridian 88 zones.",
+  "description": "Matte graphite polymer shell over a titanium locking core, 6cm tall, contoured to sit above the ankle bone. The Vanthorpe corponation crest is embossed subtly on the outer face — small enough to read only up close, large enough to know it's there. Surface finish is deliberately utilitarian, a quiet corporate message that this is infrastructure, not fashion.\n\nA single amber LED pulses every 8 seconds during normal operation, shifting to red if tamper protocols trigger. Worn by court-processed individuals as a condition of provisional movement within designated GLMZ zones.",
   "tier_association": "Tier 1-3",
   "materials": [
     "matte graphite polymer shell",
@@ -12,7 +12,7 @@
     "biometric contact pad",
     "embedded GPS and comms antenna"
   ],
-  "functionality": "Continuous GPS broadcast to Meridian 88 judicial oversight network, tamper detection with 30-second alert window, biometric contact monitoring for removal detection, zone-boundary alerts. Certified for digitigrade limb fitting with extended shell variants available on request.",
+  "functionality": "Continuous GPS broadcast to GLMZ judicial oversight network, tamper detection with 30-second alert window, biometric contact monitoring for removal detection, zone-boundary alerts. Certified for digitigrade limb fitting with extended shell variants available on request.",
   "what_it_says": "The city knows exactly where you are, and it wants everyone else to know that it knows.",
   "worn_by": [
     "court-processed individuals across tiers",

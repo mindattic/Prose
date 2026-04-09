@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Kedzie and Division",
-  "description": "Tiare Sjostrom-Kwarteng are athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 33, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and they make no effort to hide it.\n\nThey came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see them surpass them. They work as a getaway pilot out of Crucible Square, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Tiare Sjostrom-Kwarteng lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Tiare Sjostrom-Kwarteng are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and they make no effort to hide it.\n\nThey came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see them surpass them. They work as a getaway pilot out of Crucible Square, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Tiare Sjostrom-Kwarteng lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.73,
@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "To find the person who burned them and make it educational",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Control — over their body, their schedule, their future"
     ],
     "coping_mechanisms": [
@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "Tiare Sjostrom-Kwarteng intercepts intelligence about a threat to their district and must decide between profit and protection",
-    "A crew member from Tiare Sjostrom-Kwarteng's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Tiare Sjostrom-Kwarteng's past shows up in GLMZ, carrying old grievances and new chrome",
     "Tiare Sjostrom-Kwarteng's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
   ],
   "narrative_function": "As a getaway pilot, Tiare Sjostrom-Kwarteng embodies the tension between independence and isolation. They are a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
@@ -273,10 +273,31 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "The Shelf",
     "The Nearfield"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 174,
+    "weight_kg": 68,
+    "build": "Athletic and lean with functional muscle density — dancer's grace married to fighter's economy of motion. Low body fat, defined shoulders and forearms where the subdermal weapon mounts create subtle ridge-lines beneath the skin.",
+    "hair_color": "Dark brown with natural copper undertones",
+    "hair_style": "Practical undercut — longer on top (swept back), buzzed at sides and nape for helmet clearance",
+    "hair_length": "Medium",
+    "eye_color": "Amber-brown, sharp and alert",
+    "skin_tone": "Warm mid-brown complexion with subtle reddish undertones from Scandinavian ancestry",
+    "complexion": "Smooth, high cheekbones, narrow jaw. Minimal scarring on face — they don't survive mistakes long enough to accumulate visible wounds there. Faint calluses on hands and wrists.",
+    "distinguishing_marks": [
+      "Thin white scar running 3cm along left temple, barely visible unless light catches it",
+      "Faint burn marks on both inner wrists where subdermal weapon mounts interface with skin",
+      "Small tattoo on inside right wrist: abstract geometric pattern in silver ink, possibly a crew or job marker"
+    ],
+    "visible_augmentations": "Subdermal weapon mounts visible as subtle raised lines and slight discoloration along both forearms — the mounts create faint metallic sheens under direct light. No visible eye augmentation, but skin around eyes suggests enhanced perception implant underneath. Hands show evidence of repeated medical intervention — too-perfect healing, slight irregularity in vein mapping.",
+    "posture_movement": "Economical, coiled. Never fully relaxed in public spaces — weight balanced on balls of feet, ready to move in any direction. Fluid wrist and hand movements, precise finger control. Eyes constantly tracking exits and sight lines. Movements suggest someone who has internalized violence as a tool, not an aberration.",
+    "clothing_style": "High-tier functional — expensive tactical wear that doesn't announce itself. Black fitted flight jacket (Tier 1-2 grade, custom tailored) over neutral undershirt. Cargo pants with reinforced thigh pockets for tools and throwaway credchips. Composite boots rated for impact and heat. No jewelry except functional watch with chronometer and encrypted local mesh link. Gear is meticulously maintained, no fraying, no wear patterns — replaced before failure. Styling suggests someone who spends Φ on equipment, not status symbols."
+  },
+  "image_prompt": "Portrait of a nonbinary East African-Scandinavian cyberpunk pilot, 33 years old, athletic build with functional lean muscle, dark brown hair with copper undertones in tight undercut, warm mid-brown skin tone, sharp amber-brown eyes, high cheekbones. Visible subdermal weapon mounts running along both forearms creating subtle metallic ridge-lines and faint scars. Wearing high-tech black tactical flight jacket and reinforced cargo pants, professional extraction gear. Standing in Crucible Square open-air market, Tier 1-2 district, evening neon lighting casting amber and cyan shadows. Mood: alert, coiled, dangerous competence. Shallow depth of field, cyberpunk aesthetic, photorealistic, cinematic lighting, shot at eye level --ar 2:3 --v 6"
 }

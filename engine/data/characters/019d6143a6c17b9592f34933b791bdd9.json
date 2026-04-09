@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Milwaukee and Damen",
-  "description": "Sagyn Brandt-Ouedraogo is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 45, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a face out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSagyn Brandt-Ouedraogo operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Sagyn Brandt-Ouedraogo is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a face out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSagyn Brandt-Ouedraogo operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.94,
@@ -29,7 +29,7 @@
       "Going cyberpsycho — losing the boundary between human and machine"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Power — enough leverage that nobody ever threatens them again",
       "Justice — the corporate kind, where the punishment fits the profit margin"
     ],
@@ -270,7 +270,7 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "The Heritage Vault",
     "Kang-Petrov Arms KPA-15 'Diaspora'",
@@ -279,5 +279,26 @@
     "Pellucid Systems",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West European / West African / Caucasian (German-Burkinabé mixed lineage, Slavic-Scandinavian admixture)",
+    "height_cm": 178,
+    "weight_kg": 76,
+    "build": "Athletic and lean — muscular without bulk, the functional frame of someone who trains for speed and endurance rather than mass. Defined shoulders and forearms suggest years of precision work; core is visibly tight.",
+    "hair_color": "Dark brown with premature silver threading at temples and along the sides",
+    "hair_style": "Kept short and practical, swept back from the face with minimal product — a style that doesn't require maintenance mid-job",
+    "hair_length": "Short",
+    "eye_color": "Hazel-brown with flecks of amber; alert, constantly reading micro-expressions",
+    "skin_tone": "Medium olive-tan complexion — warm undertones suggesting mixed heritage, deepens with sun exposure",
+    "complexion": "Lean facial structure with high cheekbones, sharp jawline. Skin is scarred but not deeply — the kind of minor damage that comes from close-quarters work. Light stubble usually present; grooming is functional, not aesthetic. Crow's feet around the eyes from squinting and stress.",
+    "distinguishing_marks": [
+      "Circular scar tissue pattern on the right temple and extending behind the ear — site of cortical bomb removal, approximately 4cm diameter, pale and matte against surrounding skin",
+      "Thin white scar across the left knuckle ridge, old and faded",
+      "Burn mark on the inside of the right wrist, size of a cigarette, deliberately hidden when wearing long sleeves"
+    ],
+    "visible_augmentations": "Cortical bomb removal scar is immediately visible and unmissable — Sagyn makes no effort to conceal it with hair or clothing. The scar carries implicit threat: survived something most runners don't walk away from. Spinal reflex boosters are not visible externally, though those familiar with chrome can spot the slight rigidity in his posture that betrays subcutaneous wiring along the spine.",
+    "posture_movement": "Moves with economical grace — no wasted motion, every gesture calibrated. Stands with weight distributed for rapid directional change. Eyes track exits and sight lines automatically. When sitting, shoulders remain loose but alert; when speaking to targets, he leans in slightly, voice controlled and measured. Right hand moves slightly slower than left (old injury accommodation). Breathes from the diaphragm — boxer's breathing, controlled and deep.",
+    "clothing_style": "Tier 3-4 streetwear with corporate-adjacent polish. Favors fitted charcoal or dark gray tactical jackets with subtle armor weave — visible stitching patterns indicate high-end fabrication. Underneath: clean, well-fitted shirts in neutral colors, often with subtle data-port access panels at the wrists. Dark fitted trousers with reinforced seams and concealed pockets. Chrome or matte black boots, expensive but worn in. Accessories minimal: worn leather cuff on left wrist (covers augmentation port), stainless steel watch with analog face (no wireless vulnerability), encrypted data chip on a thin chain under his shirt. No jewelry. The overall effect is 'expensive enough to be credible, unremarkable enough to move through Tier 3-4 spaces unnoticed.'"
+  },
+  "image_prompt": "Cyberpunk character portrait of a 45-year-old mixed-heritage male face, medium olive-tan skin, dark brown hair with silver at temples, hazel-brown eyes with amber flecks. Lean athletic build, sharp jawline with light stubble. Visible pale circular scar tissue on right temple and behind ear from neural implant removal — scar is prominent, unmissable, matte finish. Character wears fitted dark gray tactical jacket with armor weave, clean neutral shirt, worn leather cuff on left wrist. Posture alert and economical, eyes reading the scene. Setting: neon-lit corporate retail district, shallow depth of field, moody atmospheric lighting with cool blues and warm amber highlights. High-resolution cyberpunk noir aesthetic, intricate detail on scar tissue and fabric textures. Midjourney noir photorealism, cinematic lighting, 2226 GLMZ aesthetic. --ar 2:3 --v 6"
 }

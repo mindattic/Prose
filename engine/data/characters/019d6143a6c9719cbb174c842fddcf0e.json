@@ -243,5 +243,25 @@
     "ARCHIVE",
     "Silver"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Haitian / French",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Tall and angular, lean through the shoulders and torso with the kind of thinness that comes from decades of sustained tension rather than exercise. Her frame suggests someone who has always occupied space efficiently, taking up only what was necessary.",
+    "hair_color": "Silver with dark undertones",
+    "hair_style": "Locs, pulled back tightly with functional precision; no ornament, no looseness",
+    "hair_length": "Long (mid-back length)",
+    "eye_color": "Deep brown (left eye contains visible retinal scanner hardware with faint amber LED when inactive)",
+    "skin_tone": "Medium-deep, warm undertone suggesting Caribbean heritage mixed with Mediterranean ancestry",
+    "complexion": "Fine wrinkles concentrated around the eyes and mouth—marks of sustained focus and rare smiling. Skin is clear, well-maintained, slightly weathered. No cosmetic augmentation. Reading glasses worn on a thin chain, pushed up onto her forehead habitually.",
+    "distinguishing_marks": [
+      "Fine horizontal scar along the inside of her right wrist, approximately 3cm, from self-installed augmentation procedure at age 46",
+      "Faint burn mark on the back of her left hand, oval-shaped, roughly 2cm diameter, from a spilled coffee incident in 2218 that she never sought treatment for"
+    ],
+    "visible_augmentations": "Left eye contains a dormant retinal scanner implant visible as a subtle amber ring around the iris and faint circuitry tracery at the outer corner—inactive but hardware remains. Right thumb shows minimal subdermal scarring along the thumb-pad where encryption key was installed; barely noticeable unless actively examined. No tactical augmentations visible; hearing implant is entirely subcutaneous.",
+    "posture_movement": "Posture is upright and economical; she moves with deliberate precision, nothing wasted. Her gait is steady and unhurried, the movement of someone who has spent her life in climate-controlled corporate spaces. She sits with her spine straight, hands folded or occupied with something productive. Her expression defaults to neutral observation; she does not make eye contact easily but does not avoid it either—a compromise born of professional habit.",
+    "clothing_style": "Corporate-adjacent, deliberately bland: charcoal grey blazers over navy or white fitted shirts, tailored trousers in muted tones, clean and structured to pass unnoticed in administrative buildings. Worn leather satchel containing physical documents and a single encrypted datapad. Practical shoes without augmentation ports. Everything is clean, well-maintained, and at least five years out of current fashion—the clothing of someone who dresses to be forgotten, not seen."
+  },
+  "image_prompt": "Portrait of a tall, angular Black Caribbean-French woman in her late fifties with long silver locs pulled back tightly, wearing reading glasses on a chain; her face is lined with patient intelligence and controlled tension, wearing a charcoal blazer over a navy shirt, standing in the fluorescent-lit beige administrative hallway of a corporate building, soft amber light reflecting off dormant retinal scanner circuitry visible in her left eye, photograph-realistic, cinematic lighting, sharp focus on her expression, melancholic and precise, professional archival photography style, cyberpunk noir atmosphere, cool color grading with warm accent on eye implant, 35mm film grain, --ar 2:3 --v 6"
 }

@@ -214,5 +214,25 @@
     "The Pale Mile",
     "Teak"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Iberian / Scandinavian (Portuguese-Arabic / Norse)",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Slight and angular, almost ascetic—minimal muscle mass but precise posture suggesting deliberate physical control. Narrow shoulders, long-limbed proportions that read as slightly fragile despite evident discipline.",
+    "hair_color": "Black with chromatic root-shift (copper to pale violet) that intensifies with emotional activation—geneware expression of neural state",
+    "hair_style": "Straight, combed back cleanly, maintained with clinical precision",
+    "hair_length": "Medium (collar-length)",
+    "eye_color": "Patterned irises: geometric spirograph in copper and pale green that rotates—slow rotation indicates focus, rapid rotation indicates agitation",
+    "skin_tone": "Deep warm brown, polished teak appearance with even undertones",
+    "complexion": "Sharp, high-cheekboned facial structure; mild, somewhat distant expression; impeccable grooming; minimal facial hair (clean-shaven); skin shows no scarring or blemishes—carefully maintained",
+    "distinguishing_marks": [
+      "Subtle subdermal tracery visible along left temple (neural resonance implant access point), faint iridescent shimmer under certain light angles",
+      "Long-fingered hands marked by microlacerations and faint scar tissue on fingertips from years of precision calibration work—nearly invisible to untrained observation"
+    ],
+    "visible_augmentations": "Kinetic spirograph irises are immediately striking and clearly non-natural; subtle iridescence along left temporal region where neural resonance implant integrates with skin. No obvious chrome or exoskeletal augmentation—all augmentations are neurological/subcutaneous.",
+    "posture_movement": "Moves with economical precision, as if calibrated himself. Hands remain almost completely still even during conversation—a learned occupational habit. Walks slowly, deliberately, with awareness of fragile equipment around him. Affects mild emotional distance masked by serene confidence. When engaged in work, becomes almost meditative in stillness.",
+    "clothing_style": "Tier 2 corporate-adjacent professional: charcoal or navy compression-weave shirts (thermoregulating, durable) under lightweight lab coats bearing Aurochs Medical Complex insignia and embroidered credentials. Dark fitted trousers. Minimal jewelry except for a thin platinum band on left ring finger (possibly medical alert or neural interface synchronizer). Shoes: premium synthetic leather, orthopedic—built for long standing. Overall aesthetic is clean, precise, slightly ascetic. No visible brand-flexing or ornamentation. Suggests someone who allocates resources toward equipment and experience rather than status display."
+  },
+  "image_prompt": "Portrait of a 34-year-old male neural calibrator in cyberpunk medical setting, Iberian-Scandinavian heritage, polished teak skin tone, straight jet-black hair with copper-violet color-reactive geneware roots, striking geometric spirograph irises in copper and pale green that slowly rotate, sharp high-cheekboned angular face with serene distant expression, long-fingered precise hands completely still, dressed in navy compression-weave shirt under Aurochs Medical Complex lab coat with credentials embroidered, dark fitted trousers, subtle iridescent shimmer visible along left temple from neural resonance implant, Sub-Level 3 medical facility background with soft blue bioluminescent calibration equipment, cool clinical lighting with warm accent, soft focus depth of field emphasizing contemplative gaze, cinematic medical cyberpunk aesthetic, photorealistic detail, --ar 2:3 --v 6"
 }

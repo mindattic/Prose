@@ -193,5 +193,27 @@
     "Emile Nakamura-Osei",
     "The Shelf"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mixed-ethnicity (surname context unknown, but phenotype suggests West African / Eastern European / Southeast Asian blend)",
+    "height_cm": 157,
+    "weight_kg": 78,
+    "build": "Broad, compact, densely muscled through the shoulders and core. Decades of kneading and physical labor have built functional strength rather than appearance—no wasted frame, everything compressed and purposeful.",
+    "hair_color": "Steel gray with undertones of black",
+    "hair_style": "Pulled back in a thick, practical braid or wrapped in a cloth. Always secured. Always out of the way.",
+    "hair_length": "Medium (shoulder-length when unbound)",
+    "eye_color": "Dark brown, warm, slightly creased at the corners",
+    "skin_tone": "Deep brown with warm undertones, weathered by heat from the oven and age",
+    "complexion": "Lined face—forehead, around eyes, bracketing the mouth. Laugh lines deeper than worry lines. Skin has the texture of someone who has spent 11 years standing in front of a brick oven; not damaged, but seasoned. Flour dust permanently embedded in the creases of her face, particularly around her nose and temples, visible even after washing.",
+    "distinguishing_marks": [
+      "Calluses on both palms and all ten fingers, thick and silvered from decades of kneading dough",
+      "Faint burn scars on the inside of both forearms (splashes from early oven experiments, healed long ago)",
+      "A long, thin scar running along her left wrist to mid-forearm (from a salvage accident 20 years ago, pre-oven era)",
+      "Flour dust permanently worked into the lines of her palms and the creases between her fingers, visible as a fine white residue that no amount of washing removes"
+    ],
+    "visible_augmentations": "None. Unaugmented. Her hands are her technology.",
+    "posture_movement": "Moves with economical precision—no wasted motion. Slight forward lean from decades of tending the oven. Hands gesture while speaking, flour dust trailing from her fingers. When still, she seems coiled, ready to move. When moving, she moves with purpose and balance. Walks with the careful solidity of someone used to standing for 16 hours a day.",
+    "clothing_style": "Tier 4 practical. Heavy canvas apron, flour-stained white, always worn. Underneath: thermal base layer (dark blue or black, functional) and a loose linen shirt or sweater in neutral tones—grays, creams, soft browns. All clothing shows honest wear and repeated washing. She owns five aprons; they rotate through the wash cycle. Bare feet in her bakery space (for balance on the tiled floor), or practical canvas slip-ons when she leaves Block 9. No jewelry except a simple copper ring on her left index finger, worn smooth from 40+ years of wear. No decoration. No chrome. No statement. Everything is functional or beloved."
+  },
+  "image_prompt": "A weathered 63-year-old woman with deep brown skin and steel-gray hair pulled back in a practical braid, standing in front of a brick oven she built with her own hands. She wears a flour-dusted canvas apron over a cream linen shirt. Her forearms bear old burn scars and a faded wrist scar. Her hands are thick-fingered, calloused, embedded with flour dust that won't wash out. She has warm brown eyes with deep laugh lines, a lined but gentle face, the seasoned look of someone who has spent 11 years in front of an oven's heat. The bakery behind her is ground-floor, converted industrial, warm with golden oven light. Soft bread loaves cooling on wooden racks. Flour dust hanging in the warm air, catching light. Cyberpunk setting, warm and human, a pocket of analog authenticity in a digital world. Golden-hour lighting. Intimate, documentary realism. --ar 2:3 --v 6"
 }

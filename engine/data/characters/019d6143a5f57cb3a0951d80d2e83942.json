@@ -184,5 +184,26 @@
     "Gold",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Burkina Faso) / Scandinavian (Finland)",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, all efficient lines — the build of someone who moves carefully through tight spaces and doesn't waste energy on presence",
+    "hair_color": "Dark brown, salt-and-pepper at the temples",
+    "hair_style": "Close-cropped, neat, maintained with precision",
+    "hair_length": "Short",
+    "eye_color": "Deep amber with pale gold secondary iris ring (augmented), pulses faintly during active scanning",
+    "skin_tone": "Pale Nordic base weathered to a dull bronze by decades of fluorescent shop lighting and irregular sleep",
+    "complexion": "Lined face, the kind that looks simultaneously 44 and 54 depending on lighting. Defined cheekbones. Close-cropped beard with two distinct textures — fine near the jawline, tightly coiled at the chin, like two different people are growing it",
+    "distinguishing_marks": [
+      "Thin white scar along right temple, nearly invisible unless light catches it at an angle — from a pawn counter accident in his thirties",
+      "Faint burn mark on left forearm (4cm, irregular shape) — old augmentation rejection, never fully treated",
+      "RFID skimmer site on right palm shows as barely-visible subdermal discoloration under certain angles of light"
+    ],
+    "visible_augmentations": "Amber iris replacements are the dominant feature — distinctive enough that people remember his eyes before his face. The secondary gold ring is subtle until it pulses during active scans, which he does often enough that it's part of his baseline demeanor. No visible chrome or external modifications; everything else is beneath the skin",
+    "posture_movement": "Unhurried and precise. Moves like someone appraising objects — careful, economical, weighing everything. Stands with weight shifted slightly forward, ready to lean over a counter. Hands are rarely still; they're always touching something, assessing texture and weight. Eye contact is steady and slightly unnerving",
+    "clothing_style": "Layered mid-tier secondhand corporate wear in grays, blacks, and muted blues — Tessera office clothes from people who fell down the economic tiers. Nothing new, nothing expensive, nothing that draws attention. Worn but clean. A long coat most days, pockets always full of small tools, magnifiers, RFID readers. No visible branding or affiliation markers. Dresses like someone who is always one conversation away from needing to look respectable"
+  },
+  "image_prompt": "Portrait of a 44-year-old man with mixed West African and Scandinavian heritage, lean angular build, weathered pale complexion, dark hair graying at temples cropped short. Close-cropped beard with contrasting fine and coiled textures. Most striking feature: augmented amber iris replacements with pale gold secondary ring that glows softly. Standing in dim fluorescent light of a cluttered pawn shop, surrounded by half-visible shelves of electronics and salvage. Wearing layered gray and black secondhand corporate clothing, long coat, hands positioned near counter assessing an object. Cool color temperature, moody shop lighting, sharp focus on face and eyes, cyberpunk noir aesthetic, slight lens aberration suggesting augmented vision overlay, atmospheric haze of dust in air --ar 2:3 --v 6"
 }

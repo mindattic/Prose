@@ -211,5 +211,26 @@
     "The Undertow",
     "Lacuna Genomics"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Russian-Aleut (Pribilof Islands diaspora)",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with minimal body fat; wiry musculature from years of precise manual work and nervous energy. Chest and shoulders slightly narrow, giving an ascetic appearance.",
+    "hair_color": "Black",
+    "hair_style": "Cleanly shaved scalp, maintained with regular precision; no facial hair.",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown, with faint neural-interface lag when he's processing encrypted data (pupils dilate irregularly).",
+    "skin_tone": "Medium brown with warm undertones, showing the blended ancestry of Sahel and northern maritime lineages.",
+    "complexion": "Sharp, high cheekbones that cast pronounced shadows; jaw is defined and prominent. Skin is clear but shows signs of chronic sleep deprivation — faint purple undertones beneath eyes. Lips are thin, often pressed in a line of concentration. He has a habit of touching his jaw reflexively, as if checking the bioluminescence is still there.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware pattern running along the left and right jawline in faint blue-green, brightest at the angles of the jaw and fading down the collarbone — dormant in daylight but visible in dim environments as a soft pulse that speeds when he's anxious.",
+      "Thin surgical scar running from the base of his right index finger to mid-knuckle, where the retractable claw mechanism was installed; scar tissue is pale and slightly raised.",
+      "Small burn mark on his left forearm (3cm diameter), circular and old — from a fumbled soldering iron during an early geneware self-modification attempt, now faded to off-white against his skin."
+    ],
+    "visible_augmentations": "The retractable claw on his right index finger is visible when extended (surgical-grade titanium alloy with mono-molecular edge, housed beneath a synthetic nail cap). The bioluminescent jaw pattern glows softly in darkness — currently his most visible augmentation, though he downplays it. The neural-haptic overlay is subcutaneous and invisible, but his right hand occasionally twitches with micro-adjustments when he's thinking through a procedure.",
+    "posture_movement": "He moves with careful, economical precision — a consequence of both his surgical work and his anxiety. His gait is quick and slightly forward-leaning, as if always moving toward something just out of reach. He has a habit of clenching and unclenching his right fist, and his fingers often trace the air in practiced surgical patterns when he's talking. His neck is slightly tense, shoulders high. He maintains eye contact longer than comfortable, as if trying to convince whoever he's talking to of his sincerity.",
+    "clothing_style": "Wears a forged Ferrogate Transit worker vest (charcoal grey with reflective piping, slightly worn at the cuffs) over a plain black merino wool undershirt. The ID badge clipped to his vest reads 'ORLAN D. — PLATFORM MAINTENANCE 7B' with a falsified corporately-issued laminate. Cargo pants in dark olive, pre-worn, with heavy-duty pockets suitable for carrying sealed medical containers. Steel-toed boots (scuffed, well-maintained). Over this, he wears a lightweight insulated jacket in slate grey — practical for the cold-storage unit and the transit platform's climate control. No visible jewelry or personal markers beyond the geneware. His aesthetic is deliberately forgettable: Tier 3-4 worker, unremarkable, designed to pass through checkpoints without drawing attention."
+  },
+  "image_prompt": "Cyberpunk portrait of a lean, angular 29-year-old Black-Russian man with a shaved head and sharp cheekbones, medium-brown complexion. His jawline glows faintly with bioluminescent blue-green geneware patterns that pulse softly in the dim light. Dark brown eyes, intense and slightly anxious. Wearing a forged Ferrogate Transit worker vest in charcoal grey over a black undershirt, cargo pants, and scuffed steel-toed boots. His right hand is partially visible, the index finger showing a thin surgical scar where a precision retractable claw mod is housed. Setting: dim underground transit platform, cold-storage aesthetic, metal walls and blue-grey industrial lighting. Mood: tense, precise, slightly furtive. Shallow depth of field focusing on his face and jaw. Cyberpunk noir, clinical precision, body-modification horror undertones. --ar 2:3 --v 6"
 }

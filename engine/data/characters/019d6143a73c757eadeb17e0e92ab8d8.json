@@ -175,7 +175,7 @@
   "related_entities": [
     "Blackpipe Corridor",
     "Helix Biosystems",
-    "Meridian 88",
+    "GLMZ",
     "The Narrows Compact",
     "The Reclamation Assembly",
     "The CEO",
@@ -184,5 +184,25 @@
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Slagworks Industrial"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Tanzanian / Filipino",
+    "height_cm": 188,
+    "weight_kg": 71,
+    "build": "Lean and angular, long-limbed with minimal body fat. The build of someone who forgets to eat regularly and moves constantly. Defined shoulders and chest, but no deliberate musculature — it's the leanness of motion, not training.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Mid-length, loose waves, usually damp or freshly dried. Worn unstyled, parted vaguely in the center. Often falls across his face when he bends over his work.",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, tired",
+    "skin_tone": "Deep brown with warm undertones, the blend of East African and Southeast Asian heritage. Uneven complexion from irregular sleep and sun exposure across multiple outdoor locations.",
+    "complexion": "Angular, high cheekbones inherited from his grandfather, softened slightly by round-faced genetics from his grandmother's side. The combination reads younger than his 24 years. Perpetual dark circles under his eyes. A faint shadow of stubble most days — shaving is a luxury when you're running late. Minor acne scarring on his jaw from his late teens.",
+    "distinguishing_marks": [
+      "Small black cat-ear points grafted to the tips of both ears, angled backward slightly. The geneware is cosmetic, clean work but not high-tier. Done in a parlor on a dare at nineteen, now essential to how he sees himself.",
+      "A thin white scar running horizontally across the inside of his left wrist, approximately 4cm long. A story he doesn't tell."
+    ],
+    "visible_augmentations": "Cat-ear points only. Everything else is baseline human biology. His pharmaceutical knowledge doesn't show — it lives in his hands and his memory.",
+    "posture_movement": "Perpetually in motion, even when standing still. A slight forward lean as though always about to move somewhere more urgent. Fidgets with vials, capsules, or whatever's in his pockets. His hands are steady — a pharmacist's hands — but his overall energy is scattered, restless. When he focuses on a customer or a transaction, it's sudden and complete, like a cat's attention snapping to movement. Otherwise, he seems to be three locations ahead of where he actually is.",
+    "clothing_style": "Tier 3-4 streetwear, practical and worn. Usually black or grey cargo pants with working pockets (essential for inventory rotation). Hoodies and layered thermal shirts, often partially unzipped. A particular affection for a faded teal windbreaker that's seen three years of Blackpipe Corridor weather. Worn sneakers, replaced frequently because he walks constantly. A small satchel he keeps close — genuine leather, worn soft, carries his rotation stock. No jewelry except for a simple steel ring on his right index finger (the hand he uses to dispense). Clothes are clean but unstudied, the uniform of someone who dresses in the dark or while already thinking about something else."
+  },
+  "image_prompt": "Cyberpunk portrait of a 24-year-old Black male pharmacist, tall and lean with dark brown skin and exhausted dark eyes, round cheeks softened by high East African cheekbones, mid-length dark brown hair damp and loose. Small black cat-ear geneware points tipping both ears. Wearing layered grey and teal streetwear, faded windbreaker, cargo pants. Hands steady and practiced, holding pharmaceutical vials. Dark circles under tired eyes. Forward-leaning posture, restless energy. Moody urban Tier 3 setting, neon pharmaceutical signage reflected in wet pavement behind him. Cool blue and sickly green lighting. Shot at 35mm equivalent, shallow depth of field, gritty street photography aesthetic, high contrast. Street-level cyberpunk realism, no exaggeration. --ar 2:3 --v 6"
 }

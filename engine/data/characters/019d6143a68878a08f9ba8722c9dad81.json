@@ -30,7 +30,7 @@
       "Losing the notebooks"
     ],
     "core_desires": [
-      "To understand how Meridian 88 actually works, beneath every official layer",
+      "To understand how GLMZ actually works, beneath every official layer",
       "To find his sister",
       "To matter to someone who isn't paying him"
     ],
@@ -123,7 +123,7 @@
       "transparency_guardedness": 5
     },
     "drives": [
-      "Understand how Meridian 88 actually works",
+      "Understand how GLMZ actually works",
       "Find his sister",
       "Matter to someone not paying him"
     ],
@@ -256,5 +256,26 @@
     "Nesting Doll",
     "The Pale Mile"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Northern European / Eastern European (Specht surname suggests German/Scandinavian-Polish lineage)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and slight, almost adolescent-thin with minimal muscle definition. Moves with economical precision—no wasted motion, shoulders slightly hunched as if perpetually ready to slip through a gap",
+    "hair_color": "Mousy brown with reddish undertones",
+    "hair_style": "Deliberately unkempt, grows in three distinct directions regardless of intervention. Often falls across one eye",
+    "hair_length": "Medium (shoulder-length, though the chaotic growth pattern makes length deceptive)",
+    "eye_color": "Left eye: pale gray-blue (natural); Right eye: cybernetic with faint LED ring around pupil (secondhand optical unit, occasionally glitches to bright cyan activation)",
+    "skin_tone": "Pale with cool undertones, sun-deprived appearance consistent with underground/indoor lifestyle",
+    "complexion": "Youthful but worn. Deep dark circles under both eyes suggesting chronic sleep irregularity. Faint constellation of freckles across bridge of nose and cheekbones. Skin has the papery quality of someone malnourished in childhood, now stable but not thriving. Clean but not fastidious—no acne, good hygiene maintained out of practical necessity rather than vanity",
+    "distinguishing_marks": [
+      "Thin white scar along right forearm (approximately 8cm long, near wrist)—from the one time he used his blade, three years ago",
+      "Tattoo on inside left wrist: personal cartographic shorthand symbol resembling a stylized map grid, done in black ink, approximately 2cm across",
+      "Occasional involuntary eye-twitch in right cybernetic eye during overstimulation (bright light, sensory overload)"
+    ],
+    "visible_augmentations": "Right eye replacement with visible seam at orbital socket, faint LED ring around pupil that cycles amber-to-cyan when active or malfunctioning. The optical unit shows wear—scratched lens, slight cosmetic misalignment suggesting budget repair history. No other visible chrome; all augmentation confined to optical replacement",
+    "posture_movement": "Moves with unusual fluidity for his age—gliding rather than walking, shoulders loose but spine alert. Sits sideways in chairs to maintain sightline of exits. Hands are rarely still; fidgets with pen, notebook spine, or the edge of whatever surface is available. Eyes scan constantly, cataloging. When speaking, maintains deliberate eye contact despite slight self-consciousness about the glitching eye",
+    "clothing_style": "Tier 4 (working class, with deliberate anti-status signaling). Favors loose-fitting dark cargo pants with excessive pockets (function over style), worn synthetic fiber jackets in grays or blacks. Undershirts are faded band tees or salvaged corporate promotional wear. Shoes are practical and worn—walking boots resoled multiple times. No jewelry except the wrist tattoo. Clothes are clean but deliberately unmemorable; he owns perhaps four outfits in rotation. No visible QUANTA-sponsored branding; actively avoids corpo-aesthetic"
+  },
+  "image_prompt": "A 19-year-old slight, wiry boy with mousy brown hair growing in three chaotic directions, pale Nordic-Eastern European complexion with deep dark circles, light freckles across nose. Left eye pale gray-blue, right eye replaced with glitching cybernetic unit showing visible LED ring and orbital seam. Sitting sideways in a worn noodle shop booth, hand holding a pen over a cramped personal journal filled with hand-drawn cartography shorthand. Wearing faded black synthetic jacket and cargo pants, casual and forgettable. Cyberpunk noir aesthetic, dim warm noodle shop lighting contrasting with cool blue glow from malfunctioning eye optic, scattered notebooks and maps on table. Urban decay background (Old Harbor setting), moody and introspective. Highly detailed, grounded realism, street-level perspective. --ar 2:3 --v 6"
 }

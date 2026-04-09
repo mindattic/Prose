@@ -12,7 +12,7 @@
   "role": "Surveillance Operator, Axiom Security Division",
   "age": 34,
   "status": "active",
-  "location": "Edgewater Prism, Meridian 88, near Lincoln and Addison",
+  "location": "Edgewater Prism, GLMZ, near Lincoln and Addison",
   "description": "Úrsula exists in two worlds simultaneously and is fully present in neither. In the physical world she is a small, quiet Malian-Polish woman who sits in the same ergonomic cradle for ten-hour shifts, tending to the enormous sensory apparatus that Axiom Security has woven across the Edgewater Prism commercial zone. She has cat ears — soft, dark grey, perpetually half-flattened in concentration — from a geneware session eight years ago when she was trying to be someone different. They proved useful: her hearing augments the feed monitoring in ways she can't fully articulate but which her supervisor has noted approvingly in three consecutive performance reviews. Her eyes are the obvious tell that she's mostly elsewhere: a custom iris pattern of concentric amber rings that pulses when she's actively processing deep-monitor feeds, which is most of the time.\n\nIn the surveillance world she knows Edgewater Prism more intimately than anyone who walks its corridors. She has watched the same routes for four years. She knows which delivery contractors move packages that don't match any manifest, which Axiom executives use which maintenance entrances to visit which apartments, which food stall vendor has been systematically overcharging women shopping alone. She has flagged exactly none of this. She has archived all of it in a private encrypted partition she calls, to herself, the museum. She does not know what the museum is for yet.",
   "psychology": {
     "facet_weights": {
@@ -39,7 +39,7 @@
       "has observed so much human behavior that she's begun to pattern-match people in real life, which makes her interactions feel clinical to others",
       "does not understand how much danger she's already in"
     ],
-    "secret": "The museum contains footage of an Axiom VP entering a residential unit the night a competitor's Meridian 88 liaison died of what was ruled an aneurysm. She has had this for fourteen months."
+    "secret": "The museum contains footage of an Axiom VP entering a residential unit the night a competitor's GLMZ liaison died of what was ruled an aneurysm. She has had this for fourteen months."
   },
   "speech_patterns": {
     "vocabulary": "Minimal in person, precise — speaks in the compressed syntax of someone who spends most of her communication life in annotated timestamp logs",
@@ -176,7 +176,7 @@
   ],
   "related_entities": [
     "Edgewater Prism",
-    "Meridian 88",
+    "GLMZ",
     "TESSERA TX-8 'Scarecrow'",
     "Waxwing Neuromedia",
     "Chimera-Null",
@@ -185,5 +185,26 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Malian) / Central European (Polish)",
+    "height_cm": 156,
+    "weight_kg": 48,
+    "build": "Small-framed and slight, with the compressed posture of someone who spends most of their time seated. Shoulders slightly rounded forward from decade of monitor work. Minimal muscle definition but not fragile—economical, efficient physicality.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Pulled back in a low, practical bun, often with loose strands from the tension of concentration",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Augmented amber with concentric ring pattern; pulses faintly luminescent when processing active feeds",
+    "skin_tone": "Mid-brown complexion with warm undertones, reflecting Malian and Eastern European heritage",
+    "complexion": "Fine-featured face, sharp cheekbones, observant expression even at rest. Minimal makeup. Dark circles under eyes from shift work and nocturnal monitor focus. Skin condition is clear but slightly pallid from minimal natural light exposure.",
+    "distinguishing_marks": [
+      "Surgical implant scar at right temple, roughly 2cm, where retinal feed interface was installed—usually hidden by hairline",
+      "Faint subcutaneous glow visible beneath skin at both temples when iris pulses during active monitoring",
+      "Small burn scar on left inner wrist from a geneware session mishap eight years ago"
+    ],
+    "visible_augmentations": "Soft dark grey feline ears (geneware-grown, natural fur texture, affect-sensitive—droop and flatten when concentrating, swivel with acoustic input). Custom amber iris pattern with concentric rings visible under normal light. Subtle passive acoustic enhancement visible as slightly enlarged, sculpted earlobes with minimal scarring.",
+    "posture_movement": "Economical, minimal movement. When seated, she is perfectly still for extended periods—trained discipline. When standing or walking, slight forward head-tilt from years of screen focus. Movements are deliberate, quiet, almost unobtrusive. Her gait is unrushed. Her eyes scan environments systematically even in non-work contexts, cataloging details.",
+    "clothing_style": "Tier 3-4 working professional. Plain, high-comfort garments: soft grey or black long-sleeve fitted shirts, often with Axiom Security's subtle shoulder patch. Dark neutral trousers with reinforced pockets for personal terminals. Flat, noiseless shoes (grey or black). Minimal jewelry except a thin braided bracelet in muted colors—possibly handmade or from before augmentation days. Clothing is always clean, slightly worn, chosen for comfort over appearance. A light hoodie or work jacket for the observation deck breaks."
+  },
+  "image_prompt": "Portrait of a small, dark-skinned Malian-Polish woman, age 34, with natural dark hair pulled back in a low bun, sitting in soft focus. Her most striking feature: augmented amber eyes with concentric luminous rings that glow faintly. Soft dark grey feline ears (geneware) protrude from her head, slightly flattened in concentration. She wears a plain dark long-sleeve fitted shirt with a subtle Axiom Security patch. The lighting is cool and slightly blue-tinted, suggesting fluorescent monitor glow reflecting off her face. Her expression is distant and observant—present but elsewhere. She is surrounded by blurred screens and surveillance feeds in the background. Her hands rest near a keyboard. Fine-featured face, slight build, minimal makeup, dark circles under eyes. High-contrast cyberpunk aesthetic with emphasis on surveillance theme and her dual existence between physical and digital worlds. Shot in muted color palette—greys, blacks, amber, subtle blues. Introspective mood, professional but isolated. --ar 2:3 --v 6"
 }

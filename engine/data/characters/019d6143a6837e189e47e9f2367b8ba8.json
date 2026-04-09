@@ -245,5 +245,28 @@
     "Adaeze Chen-Hawkins",
     "Silver"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Romanian)",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, muscular without being lean — a body built for standing twelve hours at a time and moving with purpose. Her frame carries her age like ballast rather than burden.",
+    "hair_color": "Silver-gray",
+    "hair_style": "Tight locs pinned into a crown, often secured with surgical clamps she absent-mindedly leaves in place",
+    "hair_length": "Medium (locs reach mid-back when unbound)",
+    "eye_color": "Deep brown",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Weathered and lined — a face that reflects five decades of close work and witness. Deep nasolabial folds, pronounced laugh lines, age spots on her temples. Her expression defaults to neutral observation, but her eyes are sharp and miss nothing.",
+    "distinguishing_marks": [
+      "Scarred knuckles and webbed palms from three decades of suturing and surgical work, especially on both hands",
+      "Ropy forearm musculature with faint white scars dotting the inside of her left wrist (accidental suture punctures, occupational)",
+      "Subdermal thermometer visible as a faint metallic glimmer beneath the skin of her right index fingertip",
+      "Small horizontal scar on her right temple from a ricochet during the 2198 Narrows riots",
+      "Callused feet (visible when barefoot) with a pronounced bunion on her left foot from decades of standing"
+    ],
+    "visible_augmentations": "A weathered medical-grade haptic feedback glove on her left hand, heavily patched and repaired, with exposed sensor nodes visible along the palm side. The glove is older than most of her patients, held together by practical maintenance rather than aesthetics. Subdermal thermometer in right index fingertip registers as a subtle silver gleam beneath deep brown skin.",
+    "posture_movement": "She stands with her weight balanced, feet shoulder-width apart — a stance built for stability during procedures. Her movements are efficient and economical; she does not waste energy on gesture. When examining a patient, her posture bends forward with gravitational certainty, her hands moving with practiced precision. Her gait is steady but deliberate, favoring her right leg slightly when tired.",
+    "clothing_style": "Tier 4 utilitarian. A worn steel-gray Carhartt work apron over layers of long-sleeved cotton and linen, pockets stuffed with bandages, vials, and instruments. Beneath: simple black or dark olive underlayers that don't show stains. Steel-toed medical clogs, scuffed and comfortable. A faded Iowan Collective surplus jacket hangs on a hook in the container. No jewelry except a thin brass ring on her right ring finger — never removed, origin unknown. She smells persistently of antiseptic, clove oil, and rice starch."
+  },
+  "image_prompt": "A weathered Black woman in her late fifties with silver locs pinned up with surgical clamps, wearing a worn steel-gray medical apron over dark utilitarian clothes, standing in a narrow shipping container clinic lit by harsh white LED strips. Deep umber skin, lined face with sharp brown eyes, scarred knuckles visible as she adjusts a medical instrument. A heavy haptic feedback glove on her left hand, patched and well-worn. The background shows shelves of medical supplies, a rice cooker steaming in shadow, and walls covered in patient charts. Volumetric security scanner glow in the background. Cyberpunk medical drama, gritty realism, warm tungsten side-lighting mixing with clinical white overheads, shallow depth of field, --ar 2:3 --v 6"
 }

@@ -245,5 +245,26 @@
     "The Pure Hand",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Slavic (Serbian-Croatian)",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with minimal body fat; the musculature of someone who moves efficiently rather than powerfully. Shoulders slightly narrower than average, giving him an almost ascetic silhouette.",
+    "hair_color": "Deep brown, naturally, with premature silver threading at the temples",
+    "hair_style": "Close-cropped, neat, intentionally unremarkable",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, flecked with amber",
+    "skin_tone": "Deep warm brown with subtle undertones of gray-olive",
+    "complexion": "Sharp cheekbones, long jawline. Skin is clear and well-maintained despite street-level work — indicates discipline. Faint laugh lines around the eyes that suggest he smiles less often than he might.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware mod running along the jaw and collarbones in faint blue-green; barely visible in daylight but becomes apparent in dim light or when his pulse quickens",
+      "Subdermal linear scarring on the inside of his left wrist where the chemical analyzer was installed; thin, professional work, nearly invisible unless you know to look",
+      "Small burn mark on the outer edge of his right palm — the size of a cigarette tip, old enough to have faded to pale silver"
+    ],
+    "visible_augmentations": "The bioluminescent geneware is the only readily visible mod; it reads as a faint, almost spectral coloration under the skin rather than an obvious implant. The wrist scarring is visible only if he rolls up his sleeves or if someone is examining his hands closely. Everything else is subcutaneous.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion, minimal gesturing. Stands very still when listening, which has an unsettling effect. Hands are usually occupied (holding vials, adjusting product, writing) or resting flat on a surface. His default expression is neutral to slightly appraising. When he does move quickly, it's fluid and controlled, never frantic.",
+    "clothing_style": "Tier 3-4 utilitarian aesthetic. Layered in muted colors — charcoal, slate gray, dark olive, off-black. Synthetic fabrics with high functionality: water-resistant, durable, pocketed. No logos, no bright colors, nothing that draws attention. A long grey synthetic coat worn open over a fitted dark shirt. Cargo pants with reinforced seams. Soft-soled boots suitable for walking the circuit. The overall effect is professional and forgettable — the clothing of someone who works in the shadows and intends to blend in."
+  },
+  "image_prompt": "A lean, 34-year-old man of West African and Slavic heritage, height 5'10\", standing in dim neon-tinted urban alley lighting. Deep brown skin with faint blue-green bioluminescent geneware subtly glowing along his jawline and collarbones. Sharp angular features, short neat dark hair with silver at the temples, dark amber-flecked eyes with a steady, measured gaze. Wearing layered practical streetwear in muted grays and blacks — long synthetic coat, fitted dark shirt, reinforced cargo pants, soft boots. Hands clean and still, posture controlled and economical. Standing in a Tier 5 street-level pharmacy setting, narrow alley, neon signs casting cool blue shadows. Cyberpunk noir aesthetic, moody and precise, clinical lighting emphasizing the subtle bioluminescence. Professional, unremarkable, slightly unsettling calm. Shot from waist-up, cinematic depth, --ar 2:3 --v 6"
 }

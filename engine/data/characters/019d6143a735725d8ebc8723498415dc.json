@@ -204,5 +204,27 @@
     "Carrion Defense Works Neural Lash NL-3 'Agony'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Southern African / Italian",
+    "height_cm": 168,
+    "weight_kg": 92,
+    "build": "Heavyset and broad-shouldered, with substantial mass distributed through her torso and hips. Not muscular — soft-bodied in a way that reads as settled power rather than athletic capability. Her frame suggests comfort in stillness, in sitting across tables for hours.",
+    "hair_color": "Black with copper wire threading",
+    "hair_style": "Long locs, each secured with copper wire wrapping and embedded data chips at varying intervals. Styled to cascade past her shoulders, deliberately showcasing the modifications as if they were jewelry rather than utilitarian.",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with golden spiral iris pattern (genemod)",
+    "skin_tone": "Deep warm brown with reddish undertones",
+    "complexion": "Mature face marked by intentional scarring — keloid patterns across her cheeks, forehead, and along her jawline. She has allowed these to set and darken rather than pursue cosmetic removal. Skin is well-maintained despite the scars, suggesting regular care. No visible acne or blemishes; her complexion reads as deliberately curated.",
+    "distinguishing_marks": [
+      "Keloid scarring across both cheeks in parallel lines, roughly 2cm apart, extending from temple to jaw.",
+      "Three vertical keloid scars on her forehead between the brows, each approximately 1cm long.",
+      "Keloid scarring along her jawline in a near-continuous pattern, left side more pronounced than right.",
+      "Old burn scar on the back of her right hand, deliberately left unscarred for contrast against the keloids elsewhere on her body."
+    ],
+    "visible_augmentations": "Golden spiral iris pattern in both eyes (visible only when making direct eye contact or in certain lighting). Reading lenses worn during work, tinted amber with faint haptic-feedback indicators at the rims. Copper wire woven through hair with small data chips embedded at intervals. Hands are conspicuously unaugmented — no chrome, no visible subdermal work, just manicured nails and multiple rings (brass, copper, and one silver band on her right pinky). The lack of visible augmentation is itself a statement.",
+    "posture_movement": "Moves with deliberate slowness — economy of gesture. Sits upright at tables, rarely reclines. Her hands are always visible and often in motion: shuffling cards, counting beads, adjusting rings. She holds eye contact longer than comfortable. Her breathing is controlled, almost meditative. When she walks, her weight settles through her heels first, grounding her with each step.",
+    "clothing_style": "Layered kente-stripe synthfabric in ochre, deep red, and cream, worn in loosely-fitted robes over fitted undershirts. No corpo logos or trend markers — her aesthetic is deliberately timeless and rooted. She wears brass bangles on both wrists and multiple rings. Her clothes are always clean but deliberately worn-in, suggesting investment in quality over newness. Shoes are practical leather, well-maintained. Tier 3-4 aesthetic: expensive enough to signal stability and control, understated enough to avoid drawing unnecessary attention or signaling corpo affiliation."
+  },
+  "image_prompt": "A heavyset middle-aged woman with deep brown skin and intentional keloid scarring across her cheeks and forehead, sitting at a worn wooden table in warm amber light. Her black hair is styled in long locs threaded with copper wire and small embedded data chips that glint softly. Her eyes have an ethereal golden spiral iris pattern. She wears layered kente-stripe synthfabric robes in ochre and deep red over a fitted undershirt, brass bangles on both wrists, and multiple rings on her unaugmented hands. Her hands are manicured and active — counting physical currency or shuffling cards. Reading lenses with faint tech indicators rest on her face. She sits with perfect posture, completely still except for her hands, radiating the controlled menace of someone who has never needed chrome. The background is a modest tea house interior — worn wood, faint steam from a kettle, dim overhead lighting from biolume panels. Cyberpunk 2220s, noir mood, character portrait, hyperrealistic, award-winning photography, shot at eye level, shallow depth of field. --ar 2:3 --v 6"
 }

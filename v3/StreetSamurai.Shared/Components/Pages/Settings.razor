@@ -161,6 +161,20 @@
                             <small class="mt-1 d-block @(factSuccess ? "text-success" : "text-muted")">@factStatus</small>
                         }
                     </div>
+                    <div class="col-md-3">
+                        <label class="form-label text-muted">Generate physical descriptions and image prompts for characters.</label>
+                        <div class="input-group">
+                            <button class="btn btn-sm btn-outline-info" @onclick="LaunchDescribe" disabled="@describeRunning">
+                                @if (describeRunning) { <span class="spinner-border spinner-border-sm me-1"></span> }
+                                else { <i class="bi bi-person-bounding-box me-1"></i> }
+                                Describe Characters
+                            </button>
+                        </div>
+                        @if (describeStatus != null)
+                        {
+                            <small class="mt-1 d-block @(describeSuccess ? "text-success" : "text-muted")">@describeStatus</small>
+                        }
+                    </div>
                 </div>
                 @if (brokenFiles.Count > 0)
                 {
@@ -686,6 +700,10 @@
     private string? factStatus;
     private bool factSuccess;
 
+    private bool describeRunning;
+    private string? describeStatus;
+    private bool describeSuccess;
+
     private async Task LaunchFactDiscovery()
     {
         factRunning = true; factStatus = "Launching pipeline..."; factSuccess = false;
@@ -723,6 +741,46 @@
         }
 
         factRunning = false;
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private async Task LaunchDescribe()
+    {
+        describeRunning = true; describeStatus = "Launching character portrait generator..."; describeSuccess = false;
+        await InvokeAsync(StateHasChanged);
+
+        try
+        {
+            var pipelineDir = Path.Combine(Paths.DataRoot, "v3", "truth-discovery");
+            var scriptPath = Path.Combine(pipelineDir, "describe.py");
+
+            if (!File.Exists(scriptPath))
+            {
+                describeStatus = "Script not found at " + scriptPath;
+                describeRunning = false;
+                return;
+            }
+
+            var psi = new System.Diagnostics.ProcessStartInfo
+            {
+                FileName = "python",
+                Arguments = $"\"{scriptPath}\"",
+                WorkingDirectory = pipelineDir,
+                UseShellExecute = true,
+                CreateNoWindow = false
+            };
+            psi.Environment["PYTHONIOENCODING"] = "utf-8";
+
+            System.Diagnostics.Process.Start(psi);
+            describeStatus = "Generator launched in terminal. Check the window for progress.";
+            describeSuccess = true;
+        }
+        catch (Exception ex)
+        {
+            describeStatus = $"Failed to launch: {ex.Message}";
+        }
+
+        describeRunning = false;
         await InvokeAsync(StateHasChanged);
     }
 

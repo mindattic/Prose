@@ -9,10 +9,10 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Internal Affairs Investigator, Meridian 88 Metro Police",
+  "role": "Internal Affairs Investigator, GLMZ Metro Police",
   "age": 44,
   "status": "active",
-  "location": "Fort Anchor, Meridian 88, near Kedzie and Division",
+  "location": "Fort Anchor, GLMZ, near Kedzie and Division",
   "description": "Solveig is a tall, angular woman with close-cropped silver hair she let go early — a choice that cost her nothing socially and saved her considerable maintenance time. Her skin is deep umber with undertones that shift toward amber under the sodium-arc lights of Fort Anchor's processing corridors. She has the flat, unhurried gaze of someone who has interviewed liars for twenty years and is no longer surprised by anything they do. Her only cosmetic geneware is a pair of patterned irises — fractal spirals in cobalt and amber — installed as a gift from a former partner she no longer speaks of. She moves with deliberate economy, as if she's decided in advance how many steps she'll take in a given hour.\n\nSolveig is not cruel, but she is merciless, which is different. She investigates her own department with the same exhausting thoroughness she brings to everything else, and the officers she's burned hold her in a specific kind of contempt that she reads as professional respect. She keeps a small clay figurine of an E.L.F. on her desk — not her desk at work, which is bare and perfect, but the one in her apartment — and leaves tiny encrypted data-offerings at midnight, asking for nothing except clarity. Her closest thing to a friend is a case file she can't close.",
   "psychology": {
     "facet_weights": {
@@ -62,7 +62,7 @@
   "narrative_function": "Quest giver for investigations that implicate police corruption; a source of uncomfortable truths; moral counterweight who represents institutional accountability without being naive about it; can give players/characters access to sealed Metro records if she decides they're useful.",
   "augmentations": "Subdermal neural recorder (records conversations passively, admissible in Metro court proceedings); retinal HUD overlay for case file access; cosmetic patterned irises (fractal cobalt and amber). No combat chrome.",
   "daily_life": "She arrives at Fort Anchor before the shift change so she can observe who talks to whom in the corridor; evenings she cross-references surveillance logs against officer expense reports in her apartment, eating reheated grain porridge she forgets to taste.",
-  "affiliation": "Meridian 88 Metro Police — Internal Affairs Division",
+  "affiliation": "GLMZ Metro Police — Internal Affairs Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -247,12 +247,32 @@
   "related_entities": [
     "Ferrogate Transit",
     "Fort Anchor",
-    "Meridian 88",
+    "GLMZ",
     "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Silver",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Clay"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African / Caucasian (Georgian)",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Tall and angular, almost ascetic — lean muscle without bulk, the frame of someone who moves with precision rather than power. Shoulders slightly forward from decades of desk work and interview-room tension.",
+    "hair_color": "Silver-white, naturally grayed",
+    "hair_style": "Cropped close to the scalp, severe and utilitarian",
+    "hair_length": "Short",
+    "eye_color": "Fractal spirals in cobalt and amber (cosmetic geneware irises); pupils remain naturally responsive",
+    "skin_tone": "Deep umber with amber undertones that shift and warm under low-spectrum lighting",
+    "complexion": "Unlined despite her age — not from cosmetic work but from the absence of expressive habits. Her face is composed and flat, without the micro-expressions most people leak constantly. Minimal grooming beyond necessity; no makeup, no jewelry.",
+    "distinguishing_marks": [
+      "Thin white scar along the left jawline, barely visible, consistent with a childhood injury or accidental cut",
+      "Faint indentation at the base of her skull where the neural recorder was installed, visible only when her hair is wet or she tilts her head at certain angles"
+    ],
+    "visible_augmentations": "The fractal iris pattern is immediately noticeable and serves as her only concession to aesthetic modification. The neural recorder is subcutaneous and invisible. The retinal HUD overlay is internally rendered and not visible to others.",
+    "posture_movement": "She moves with deliberate economy, taking paths that minimize steps. Her spine is straight but not rigid — there's an absence of restlessness in her frame. She sits with both feet flat, elbows at table level. Her head turns before her eyes do. When she listens, she becomes almost perfectly still.",
+    "clothing_style": "Tier 2-3 professional uniform: charcoal GLMZ Metro Police Internal Affairs blazer with silver-thread department insignia; white undershirt; dark gray trousers with crisp creases; black synthetic leather shoes maintained to mirror shine. No personal adornment. The blazer is tailored but not fitted — it's designed for concealment rather than silhouette. Off-duty: the same aesthetic in civilian clothes: unbranded wool cardigans, gray or charcoal, worn over simple black shirts. Her apartment wardrobe contains nothing that suggests leisure or color."
+  },
+  "image_prompt": "Portrait of a 44-year-old woman, cyberpunk noir, tall and angular with silver cropped hair, deep umber skin with amber undertones, striking fractal spiral irises in cobalt and amber. Flat affect, unlined face, jaw-length scar barely visible. Wearing dark charcoal GLMZ Metro Police Internal Affairs blazer, white shirt, professional and severe. Fort Anchor's sodium-arc corridor lighting casting amber and shadow across her face. Sharp focus on her unusual patterned eyes. Minimalist aesthetic, cold color palette, studio-like composition. Film noir mood, introspective and merciless. No smile, no emotion, perfect composure. --ar 2:3 --v 6"
 }

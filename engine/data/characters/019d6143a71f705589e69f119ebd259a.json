@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "A Tier 4 executive offers Ximena Sjostrom-Kwarteng a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "A crew member from Ximena Sjostrom-Kwarteng's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Ximena Sjostrom-Kwarteng's past shows up in GLMZ, carrying old grievances and new chrome",
     "A corporate black site Ximena Sjostrom-Kwarteng once infiltrated is being reopened, and the people inside know their face"
   ],
   "narrative_function": "As a bounty hunter, Ximena Sjostrom-Kwarteng embodies the tension between independence and isolation. They are a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
@@ -277,8 +277,30 @@
   "registered_firearms": [],
   "related_entities": [
     "The Circuit",
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Swedish / Ghanaian",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and muscular with functional density — minimal fat, maximum efficiency. Shoulders broad from repetitive weapon training; core visibly defined. Wiry rather than bulky, built for sustained effort rather than explosive power.",
+    "hair_color": "Dark brown with natural blonde undertones at the roots — evidence of regrowth after bleaching",
+    "hair_style": "Buzzed short on sides, longer on top — practical, asymmetrical, styled for sight lines and minimal grab points",
+    "hair_length": "Short",
+    "eye_color": "Amber-brown, alert and restless",
+    "skin_tone": "Medium golden-brown with cool undertones; sun-weathered from street work",
+    "complexion": "Angular face with high cheekbones and a sharp jawline; skin is clear but marked by repetitive stress. Thin lips, often pressed into a flat line. Expression carries no softness — features arranged in a default state of tactical assessment.",
+    "distinguishing_marks": [
+      "Ragged scar tissue across the left temple and into the hairline — cortical bomb extraction site, deliberately left unsmoothed",
+      "Thin white scar running from right ear to jaw angle — blade work, old",
+      "Faint burn marks on both forearms (inside wrist to elbow) — chemical exposure or contact trauma, deliberately not covered",
+      "Small tattoo on inner left wrist: three vertical lines in black ink, resemblance to a debt marker"
+    ],
+    "visible_augmentations": "Cortical bomb scar tissue is visible — no attempt at cosmetic covering. Neural interface ports at the base of skull, visible when hair is pulled back. Left eye shows faint LED reflection under direct light — likely targeting assist software, civilian-grade. No obvious limb modifications, but movement suggests enhanced proprioception.",
+    "posture_movement": "Stands with weight balanced, shoulders squared, never fully relaxed. Moves with economical precision — no wasted motion, every step deliberate. Eyes track threats in regular sweeps. Fingers twitchy at rest, fingers steady under pressure. Slight forward lean when concentrating, as if physically pulling information from the air.",
+    "clothing_style": "Tier 3-4 streetwear: reinforced cargo pants (matte black, multiple pockets for gear), sleeveless compression shirt or tactical vest depending on contract temperature. Worn leather jacket (unmarked, functional, no corp branding). Steel-toed boots scuffed from field work. Minimal jewelry except functional gear — wrist display, credchip, encrypted comms. No vanity, all utility."
+  },
+  "image_prompt": "cyberpunk bounty hunter, nonbinary, 28 years old, lean muscular build, dark brown and blonde short asymmetrical hair, amber-brown eyes, medium golden-brown skin tone, angular striking face, visible cortical scar tissue on left temple, thin scar across jaw, burn marks on forearms, professional and dangerous, standing ready stance, tactical cargo pants and reinforced vest, worn leather jacket, steel-toed boots, neon-lit urban street at night, The Circuit district with holographic signs bleeding through rain-slicked pavement, cool blue and hot pink lighting, film noir atmosphere, sharp focus on face, shallow depth of field, cyberpunk 2226, hyper-detailed, gritty and worn, no softness --ar 2:3 --v 6"
 }

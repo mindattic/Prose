@@ -28,7 +28,7 @@
       "Being absorbed by a corponation content platform and losing ownership of their work"
     ],
     "core_desires": [
-      "To make the invisible audible — to force Meridian 88's comfortable tiers to actually see who lives below them",
+      "To make the invisible audible — to force GLMZ's comfortable tiers to actually see who lives below them",
       "To make something their grandmother would have watched and understood"
     ],
     "coping_mechanisms": [
@@ -251,5 +251,26 @@
     "The Gradient Compact",
     "Copper"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Filipino / Serbian",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, all restless energy with minimal fat mass — the build of someone who forgets to eat and moves constantly. Slight shoulders, narrow chest, quick-twitch muscle definition in forearms and legs.",
+    "hair_color": "Oxidized copper with dark brown roots always visible",
+    "hair_style": "Deliberately unmaintained thick natural coils, chaotic and shoulder-length, copper color fading unevenly as regrowth emerges",
+    "hair_length": "Medium to Long",
+    "eye_color": "Dark brown, warm and observant",
+    "skin_tone": "Warm medium brown with golden undertones",
+    "complexion": "Clear-faced with the slightly hollowed cheeks of chronic irregular eating, dark circles under eyes from late-night editing sessions. Minor acne scarring on jawline. Expressive face that moves constantly.",
+    "distinguishing_marks": [
+      "Twin small tattoos on inner wrists: Irkalla circuit symbols in silver ink, one on each side",
+      "Faint scar across left knuckle from a filmmaking accident with salvaged equipment at age nineteen",
+      "Thin white line above right eyebrow from childhood"
+    ],
+    "visible_augmentations": "Geneware black cat ears protruding from scalp at natural ear position — slightly larger than biological ears, textured fur, responsive to emotion (flatten slightly when anxious, perk when excited). Barely-visible surgical line behind left ear where omnidirectional recording implant sits beneath skin; small amber LED indicator blinks softly when recording. Haptic feedback gloves worn frequently — black synthetic leather with embedded haptic nodes visible as raised points across palms and fingers.",
+    "posture_movement": "Perpetually forward-leaning, as if about to interrupt or bolt. Fidgets with hands constantly — gestures while talking, taps fingers on surfaces rhythmically. Walks fast with quick, efficient strides. Often caught mid-gesture when listening, finishing sentences with their hands before their mouth catches up. Cat ears twitch with attention, betraying emotional states they try to hide.",
+    "clothing_style": "Tier 3-4 working creative: layered, functional, thrifted. Favors oversized band tees (mostly defunct GLMZ indie labels) tucked into high-waisted secondhand jeans with ripped knees. Worn Axiom-branded hoodie in faded charcoal (salvaged from dumpster, now a uniform). Scuffed black Shenzen knockoff sneakers patched multiple times. Carries a weathered shoulder bag made from recycled synth-leather stuffed with recording gear, hard drives, noodle receipts, and cables. Silver rings on most fingers — some handmade, some stolen from street markets. No corporate branding except what's incidental. Looks like they've just come from a 36-hour edit session or are about to have one."
+  },
+  "image_prompt": "A nonbinary filmmaker with warm brown skin and chaotic shoulder-length hair dyed oxidized copper with dark roots showing, wearing oversized band tee and ripped jeans. Large black geneware cat ears protruding from scalp, slightly twitching. Dark observant eyes. Small amber LED blinking behind left ear. Haptic feedback gloves with visible nodes on hands. Leaning forward mid-gesture, restless energy. Carrying worn synth-leather shoulder bag. Pilsen Veil underground aesthetic, cyberpunk indie filmmaker. Dim neon ambient lighting, gritty urban salvage shop background, shallow depth of field. 35mm film grain overlay, high contrast. --ar 2:3 --v 6"
 }

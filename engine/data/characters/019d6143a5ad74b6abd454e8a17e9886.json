@@ -13,7 +13,7 @@
   "age": 61,
   "status": "active",
   "location": "The Shelf, specifically a three-room apartment on the fourth floor of the Grainfort residential block, converted into a childcare space, near Ashland and Chicago Ave",
-  "description": "Amara is a small, stout woman with ash-brown skin deep-lined around the eyes from decades of squinting at children doing inadvisable things and deciding whether to intervene. Her hair is natural white and worn long, usually braided and pinned with whatever was nearest — a pen, a plastic building toy, once a small drone component that a child left in the common area. She has no geneware or significant augmentation, which at sixty-one in Meridian 88 marks her as either principled or broke, and the answer is both.\n\nShe has been running what the city officially classifies as an unlicensed informal childcare collective for twenty-two years. She calls it 'the flat.' At any given hour between 0600 and 1900 there are between four and fourteen children in it of varying ages, whose parents range from Tier 1 families paying her in food and labor to a handful of Tier 2 parents who pay in Quanta and to whom she is visibly warmer because she can be honest with them about money. She is the kind of person around whom children arrange themselves naturally, like iron filings around a magnet, and who has had exactly enough of everyone's nonsense for twenty-two years and continues anyway.",
+  "description": "Amara is a small, stout woman with ash-brown skin deep-lined around the eyes from decades of squinting at children doing inadvisable things and deciding whether to intervene. Her hair is natural white and worn long, usually braided and pinned with whatever was nearest — a pen, a plastic building toy, once a small drone component that a child left in the common area. She has no geneware or significant augmentation, which at sixty-one in GLMZ marks her as either principled or broke, and the answer is both.\n\nShe has been running what the city officially classifies as an unlicensed informal childcare collective for twenty-two years. She calls it 'the flat.' At any given hour between 0600 and 1900 there are between four and fourteen children in it of varying ages, whose parents range from Tier 1 families paying her in food and labor to a handful of Tier 2 parents who pay in Quanta and to whom she is visibly warmer because she can be honest with them about money. She is the kind of person around whom children arrange themselves naturally, like iron filings around a magnet, and who has had exactly enough of everyone's nonsense for twenty-two years and continues anyway.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -63,7 +63,7 @@
   "narrative_function": "Community knowledge repository and Grainfort social conscience. She knows the long history of every family in the block, can read the neighborhood's stress level through the behavior of the children she watches, and is the person residents turn to when institutions have failed them. She is also a moral authority figure — angering her in the community has social consequences.",
   "augmentations": "None. She was offered a subsidized sensory augmentation through a Helix Biosystems community program five years ago and declined on principle she cannot fully articulate.",
   "daily_life": "First children arrive at 0600. She has not slept past 0530 in twenty-two years. The day is structured chaos — meals, learning activities, conflict mediation, physical care, parent pickups staggered across the afternoon. She prays to the E.L.F. she believes inhabits the building's heating system, which she calls 'the warm one,' every morning before the first child arrives.",
-  "affiliation": "Independent; informal relationship with Grainfort block residents' association; on the radar of Meridian 88 city licensing as an unlicensed operator (enforcement has been half-hearted for years because the alternative is no childcare in the district)",
+  "affiliation": "Independent; informal relationship with Grainfort block residents' association; on the radar of GLMZ city licensing as an unlicensed operator (enforcement has been half-hearted for years because the alternative is no childcare in the district)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -224,7 +224,7 @@
     "Crucible Industries Titan-500 'Earthquake'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "NeuralPath Horizon Standard Neural Mesh",
     "Grainfort",
     "The Shelf",
@@ -232,5 +232,26 @@
     "Iron",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Finnish / Latin American (Spanish/Portuguese)",
+    "height_cm": 155,
+    "weight_kg": 68,
+    "build": "Stout, compact; soft through the middle but with visible muscle in shoulders and forearms from two decades of lifting children, carrying supplies, and moving through tight apartment spaces. Settled into her frame rather than diminished by age.",
+    "hair_color": "Natural white",
+    "hair_style": "Long braids, typically pinned or secured with whatever is nearest — pens, toy components, fabric scraps, occasionally child artwork",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, alert and assessing",
+    "skin_tone": "Ash-brown, warm undertone; sun-weathered from irregular access to natural light in The Shelf",
+    "complexion": "Deep-lined around eyes and mouth from sixty-one years of expressions: squinting at children, calculated patience, dry amusement. Minimal makeup. Hands show age — callused knuckles, permanent creases in palms, nails kept short and practical. No visible scars from violence; scars present from small domestic incidents (cooking, childcare equipment).",
+    "distinguishing_marks": [
+      "Faint burn scar on the back of her left hand from a heating element, circa 2210, thin and pale now",
+      "A small raised scar near her right eyebrow, approximately 0.5cm, from a child's accidental toy collision in 2219",
+      "Callus pattern across her palms distinctive to someone who has spent two decades lifting, holding, and carrying small humans"
+    ],
+    "visible_augmentations": "None. The absence of even minor augmentation — no ocular overlays, no neural interface ports, no subdermal wear — is itself distinctive in 2226 GLMZ, marking her as either principled or economically constrained.",
+    "posture_movement": "Moves with economical efficiency; rarely rushes but never dawdles. Carries herself slightly forward, weight centered on the balls of her feet — ready to move toward a child or crisis at any moment. Hands often occupied or positioned near children. Sits in chairs as though she might need to stand quickly. Eyes in constant soft focus, tracking multiple children simultaneously even when speaking to adults.",
+    "clothing_style": "Practical, Tier 4-5 utilitarian. Favors reinforced cardigans over worn t-shirts (pockets essential), loose cotton trousers or work pants in dark colors (conceals stains), closed-toe shoes rated for both spill-cleaning and running. No jewelry except a simple silver band on her left ring finger (not a wedding ring — significance private). Clothes are clean but unmended; a torn seam might stay torn for weeks if it doesn't affect function. No corporate logos or brand markers. Everything chosen for function and durability, not aesthetics."
+  },
+  "image_prompt": "Portrait of a 61-year-old woman with ash-brown skin, long white braids pinned with a plastic toy piece, deep-lined face with alert dark eyes and an expression of patient weariness. Stout, compact build. Wearing a faded cardigan over a simple shirt, standing in the warm, cluttered interior of a modest apartment filled with children's toys and books. Soft natural light from a window, highlighting her weathered hands. Cyberpunk setting, The Shelf district, Tier 4-5 aesthetic. Grounded realism, no visible augmentations. Mood: watchful, grounded, slightly amused. --ar 2:3 --v 6"
 }

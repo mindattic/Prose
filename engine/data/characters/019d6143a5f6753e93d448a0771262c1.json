@@ -101,5 +101,26 @@
     "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
   ],
   "registered_firearms": [],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Samoan / Ghanaian",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Heavily muscled, broad-shouldered frame running to fat around the midsection—the body of someone who once moved for a living and now mostly sits. Thick neck, powerful forearms.",
+    "hair_color": "Black with grey streaking at the temples",
+    "hair_style": "Pulled back in a loose, greying ponytail; sides shaved close",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, slightly yellowed sclera",
+    "skin_tone": "Deep brown with warm undertones, weathered and sun-damaged despite decades underground",
+    "complexion": "Broad, heavy-jawed face marked by age and stress. Deep laugh lines around the eyes. Three-day stubble habit. Small scar through the left eyebrow from an old blade cut.",
+    "distinguishing_marks": [
+      "Burn scar across the back of his right hand, extending up the wrist—pale and shiny, webbed pattern suggesting thermal damage from a circuit fire or plasma discharge.",
+      "Crude prison-style tattoo on his left forearm: interlinked rings in faded blue ink, Bore Rats faction mark from his early career.",
+      "Long horizontal scar across his left ribs, visible when he moves without a shirt—testament to a stabbing wound that nearly took him out twenty years ago."
+    ],
+    "visible_augmentations": "None visible. His hands show no chrome, his eyes are unremarkable. Any modifications are subcutaneous or so old they've integrated into flesh.",
+    "posture_movement": "Moves with deliberate weight, economical gestures. Sits heavy in a chair. When standing, shoulders slightly rolled forward. Speaks with his hands less than he listens with them—a fixer's caution. Walks with a faint limp in the left leg from an old injury.",
+    "clothing_style": "Tier 4 utilitarian: worn synth-leather jacket in charcoal, unbranded but quality. Loose linen shirt underneath, cream-coloured, collar always unbuttoned. Dark cargo pants with multiple pockets and zip-offs, practical and worn. Steel-toed boots, scuffed. A simple silver chain around his neck with a data chip pendant—encrypted, never accessed in public. No flash, no logos. Clothes smell faintly of diesel and static."
+  },
+  "image_prompt": "Cyberpunk portrait of a 48-year-old Samoan-Ghanaian male fixer, heavy-built with greying hair in a loose ponytail, dark weathered skin, five o'clock shadow, small scar through left eyebrow. Wearing worn charcoal synth-leather jacket over cream linen shirt, sitting in shadow. Underground B-level bunker setting, neon reflected off wet concrete walls, cool blue and amber lighting. Cinematic, moody, atmospheric. Film noir cyberpunk. Detailed, photorealistic face, tired but sharp eyes. --ar 2:3 --v 6"
 }

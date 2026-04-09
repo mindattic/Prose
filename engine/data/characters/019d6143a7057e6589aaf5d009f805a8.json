@@ -180,5 +180,25 @@
     "The Pure Hand",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Sotho / Serbian / Hispanic (Quiñonez)",
+    "height_cm": 182,
+    "weight_kg": 68,
+    "build": "Lean and elongated, with the posture-corrected frame of someone who has spent fifteen years standing behind a barber's chair. Shoulders held level, spine neutral. No excess mass, efficient musculature in forearms and shoulders from repetitive precision work.",
+    "hair_color": "Deep violet (color-changing geneware, default setting)",
+    "hair_style": "Geometric micro-fade patterns shaved into both temples, re-cut every twelve days with surgical precision. Top length varies based on creative mood; currently medium length, styled off to one side. Geneware allows full-spectrum color shifts.",
+    "hair_length": "Medium",
+    "eye_color": "Grey-green with subtle warm amber undertones",
+    "skin_tone": "Medium-deep complexion with warm undertones — blended Sotho and Eastern European ancestry, slightly sun-weathered from years in the market stall",
+    "complexion": "Defined cheekbones, high forehead (inherited Sotho structure), minimal scarring. Skin texture shows occupational calluses on fingertips and palms; kept scrupulously clean. Minimal makeup, usually just brow definition. Resting expression is neutral-serious.",
+    "distinguishing_marks": [
+      "Thin white scar running 3cm along the inside of her left wrist, from a geneware installation procedure seven years ago",
+      "Micro-stabilizer implant scars visible as two pale pinpoint marks on inner wrists, one on each side, barely noticeable unless actively looked for"
+    ],
+    "visible_augmentations": "Color-changing hair geneware is fully visible — the violet hue and its ability to shift is immediately apparent. The geometric temple patterns are part of her deliberate presentation. Micro-stabilizer implants in wrists are subcutaneous and not visible during normal movement, though close inspection of inner wrists shows faint scar tissue.",
+    "posture_movement": "Exceptionally upright carriage — shoulders back, spine straight, chin level. Movements are economical and deliberate; she does not fidget or waste motion. When working, her hands move with surgical precision and minimal hesitation. When at rest or in conversation, she maintains steady eye contact and speaks with measured directness. No nervous tics.",
+    "clothing_style": "Tier 3-4 practical aesthetic. During work: tailored dark apron (usually charcoal or black) with multiple pocket slots for scissors, combs, and styling tools — functional, well-maintained. Off-hours: fitted dark trousers (usually synthetic blend), clean neutral tops in cream or grey, lightweight overjackets when market temperature drops. Wears low-profile silver jewellery — minimalist pieces, no corporate logos. Footwear is always comfortable and broken-in: neutral sneakers or utility boots suitable for standing 10+ hours. Her stall is draped with mirror panels and warm amber LED strips; she dresses to match this deliberate aesthetic — nothing loud, nothing that would compete with her hair as her primary statement piece."
+  },
+  "image_prompt": "Tall, lean African-Slavic woman with high forehead and grey-green eyes, standing in confident upright posture. Deep violet color-changing hair with precise geometric micro-fade patterns shaved into both temples, medium length styled to one side. Medium-deep warm complexion. Wearing tailored dark charcoal apron over grey fitted top, silver minimalist jewellery visible on wrists showing faint subcutaneous implant scars. Warm amber mood lighting reflecting off mirror panels behind her. Cyberpunk barber shop aesthetic, Burnished Market setting, hands held at rest showing professional calluses. Direct gaze, neutral serious expression. Highly detailed hands, precise grooming, professional dignity. Shot at 2:3 portrait ratio, soft warm amber gel lighting, shallow depth of field, futuristic-but-grounded cyberpunk aesthetic --ar 2:3 --v 6"
 }

@@ -29,7 +29,7 @@
       "Losing control of their own body to a hacker or malfunctioning cyberware"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "A crew worth trusting — people who stay when the shooting starts",
       "Control — over their body, their schedule, their future"
     ],
@@ -155,7 +155,7 @@
       "loyalty_break": 8
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "expert marksman",
       "strategic thinking under pressure"
     ],
@@ -285,5 +285,26 @@
     "Clover",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Mwangi) / French-Canadian (Leblanc)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and lean with dense musculature from constant conditioning. Minimal body fat. Moves like coiled spring — economical, precise, ready to redirect energy at any moment.",
+    "hair_color": "Black with ash-gray streaking at temples",
+    "hair_style": "Pulled back tight in a functional braid or wrapped in dark fabric. No loose ends. Pragmatic.",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, naturally sharp and alert",
+    "skin_tone": "Medium brown with warm undertones — lighter palms and inner forearms from years of gloved work",
+    "complexion": "Tight, weathered from stress and exposure. Fine lines around eyes from squinting in low light. Jaw set habitually. No cosmetic grooming — functional only.",
+    "distinguishing_marks": [
+      "Jagged surgical scarring around both temples where neural interface was installed — uneven, suggesting rushed or rough augmentation work",
+      "Thin scar running along left jawline from angle of ear to chin — old injury, possibly from extraction work gone wrong",
+      "Visible augmentation seams at collarbone and sternum where subdermal armor plating edges meet skin — scratched steel-gray chrome with file marks"
+    ],
+    "visible_augmentations": "Subdermal armor plating visible across forearms and upper chest — military-grade surplus with erased serial numbers, surface scratched and scuffed from contact work. Chrome edges catch light at collarbone and wrists. Temple scarring from pain editor installation is visible when hair is pulled back. No attempt to conceal — the augmentations are part of her professional appearance.",
+    "posture_movement": "Never still. Stands with weight distributed on the balls of her feet, ready to move. Hands positioned where they can access gear quickly. Eyes track exits and sight lines automatically. When seated, her leg bounces or her fingers drum — converting anxiety into small kinetic patterns. Moves through space with minimal wasted motion — every step is purpose-driven.",
+    "clothing_style": "Tier 4-5 utilitarian. Dark synthetic blend cargo pants with reinforced thigh pockets and ankle straps. Fitted black long-sleeve compression shirt under a scarred leather or reinforced polymer jacket in charcoal gray. Steel-toed boots with visible wear. Fingerless tactical gloves. Gear bag slung across body at all times — contains lock-picks, portable deck, spare tools, medical kit. No jewelry. No branding visible. Clothing designed for movement, durability, and quick equipment access — every pocket has purpose."
+  },
+  "image_prompt": "Cyberpunk female infiltrator, age 39, wiry athletic build, dark skin tone, black hair with gray at temples pulled back tight, sharp dark eyes. Visible military-grade subdermal armor plating across forearms and chest with scratched chrome seams. Surgical scarring at temples and jawline from augmentation work. Wearing fitted black compression shirt under scarred charcoal gray tactical jacket, dark cargo pants, steel-toed boots, fingerless tactical gloves. Standing in half-burned Tier 5 urban squatter district at dusk, concrete rubble and collapsed buildings behind her, urban decay and neon haze. Intense, coiled, alert posture. Professional infiltrator aesthetic, military surplus technology visible, function over form. Cinematic lighting with harsh shadows and amber neon glow. Photorealistic, gritty cyberpunk atmosphere. --ar 2:3 --v 6"
 }

@@ -285,5 +285,26 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Spanish/West African (Vega-Acheampong lineage suggests Iberian and Ghanaian ancestry)",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and heavily muscled, carrying weight with deliberate density — compact power rather than bulk. Developed through years of close-quarters combat training in confined spaces. No excess fat; functional mass.",
+    "hair_color": "Dark brown, naturally, but kept short and low-maintenance",
+    "hair_style": "Practical fade, maintained every two weeks. No ornamentation.",
+    "hair_length": "Short",
+    "eye_color": "Augmented — chrome iris rings with dark pupils; thermal and low-light overlays visible as faint luminescent depth behind the iris",
+    "skin_tone": "Medium-deep brown with warm undertones — mixed heritage complexion",
+    "complexion": "Clean, scarred face with a strong jaw. Minimal grooming beyond function — no cosmetics, no softening of features. Skin shows the wear of street work: fine white lines at the corners of her eyes, a thin scar along her left cheekbone (2cm, pale). Her expression is habitually neutral, controlled.",
+    "distinguishing_marks": [
+      "Thin white scar running from left cheekbone toward jawline (approximately 2cm), acquired during early street work",
+      "Faint chromatic iridescence visible across shoulders and upper chest where dermal camouflage cells sit beneath skin — shifts subtly between deep blue and green under direct light",
+      "Calluses across knuckles and palms from years of unarmed combat training"
+    ],
+    "visible_augmentations": "Chrome iris rings with faint luminescent glow in low light; dermal camouflage visible as subtle chromatic shimmer across shoulders, upper chest, and forearms — color shifts from deep blue to teal to green depending on angle and ambient light. No effort made to conceal these modifications.",
+    "posture_movement": "Economical, controlled. Stands with weight evenly distributed — ready to move in any direction without telegraph. Walks with purpose and minimal wasted motion. Eyes track threats constantly. Default expression is careful neutrality. Hands at rest, not fidgeting.",
+    "clothing_style": "Tier 3-4 street samurai practical. Black tactical cargo pants with deep pockets and reinforced seams. Form-fitting black synthetic polymer shirt showing the chromatic shimmer of her dermal augmentation. Over this, a charcoal-gray reinforced jacket with articulated panels and integrated ammunition storage — no corporate logos, clean lines, built for function. Steel-toed combat boots, well-maintained. Minimal jewelry — a chrome knuckle duster on her right hand, functional rather than decorative."
+  },
+  "image_prompt": "Cyberpunk street samurai woman, 178cm tall, broad-shouldered and muscular, dark brown skin with warm undertones, short dark hair in a practical fade. Intense expression with chrome iris rings glowing faintly in low light. Chromatic dermal camouflage visible as subtle iridescent shimmer in deep blue and teal across shoulders and upper chest, shifting with movement. Wearing form-fitting black synthetic shirt, charcoal tactical jacket with articulated panels, reinforced cargo pants, steel-toed boots. Standing in Kessler Row — gritty urban street with neon arm dealer signs and augmentation clinic windows behind her, narrow alley setting. Mood: controlled tension, precision instrument at rest. Moody cyberpunk lighting with neon glow and shadow interplay. Digital photography aesthetic, sharp focus. —ar 2:3 —v 6"
 }

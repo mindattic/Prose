@@ -252,5 +252,27 @@
     "The Gradient Compact",
     "Irontide Tidal Energy"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian (Danish) / West African (Igbo)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Compact and angular, wiry rather than muscular — the build of someone who moves efficiently rather than powerfully, with minimal excess mass. Economical frame suited to navigating tight spaces and extended periods on minimal calories.",
+    "hair_color": "Dark brown with premature silver threading at the temples",
+    "hair_style": "Shaved close to the scalp, maintained every 4-5 days with a handheld clippers; regrowth pattern visible as dark stubble",
+    "hair_length": "Shaved",
+    "eye_color": "Amber-brown, naturally alert with a quality of rapid assessment",
+    "skin_tone": "Medium-warm, blended Scandinavian pale undertone with West African depth; sun-exposure variation from outdoor movement between zones",
+    "complexion": "Sharp cheekbones, angular jawline softened slightly by age but defined by habit of clenching. Skin shows the dryness of someone who forgets to hydrate regularly and spends time in climate-controlled/ poorly ventilated spaces. Fine lines around the eyes from constant squinting focus. No cosmetic grooming — functional only.",
+    "distinguishing_marks": [
+      "Jagged scar tissue along the left jaw from angle of ear to midpoint of chin, approximately 12cm in length, pale and well-healed but visibly uneven — consistent with deep laceration closed without professional sutures",
+      "Smaller scar, roughly 2cm, on the back of the right hand between thumb and forefinger — medical puncture or blade accident",
+      "Faint linear scarring on both inner wrists, very old, barely visible unless examined closely — likely from restraint or self-care incident in adolescence",
+      "No tattoos; no deliberate body modification marks"
+    ],
+    "visible_augmentations": "None visible. Deliberately none. Carries external diagnostic wand (portable, battered titanium-cased device approximately 20cm long, worn in a reinforced pocket). Hand-calibrated micro-suture kit visible only if actively working. No subcutaneous implants, no chrome, no LED optics — a deliberate choice based on tracking paranoia and distrust of remotely-accessible systems.",
+    "posture_movement": "Moves with economical precision — minimal wasted motion, feet placed deliberately. Stands slightly pigeon-toed, a habit from years of navigating tight spaces. Head positioning constantly scans environment, eyes register exits and sightlines before settling on people. Hands rest at sides or folded, not gestural. When working, movements become meditative and precise. Breathing pattern suggests someone accustomed to holding breath or managing anxiety. Does not take up space unnecessarily.",
+    "clothing_style": "Tier 4-5 utilitarian: Layered for pockets and durability over warmth. Default uniform consists of: dark grey or black surplus cargo pants with reinforced seaming and multiple deep pockets, worn loose to allow freedom of movement and conceal equipment. Long-sleeved undershirt (cotton blend, faded black or charcoal) worn under a heavy canvas work jacket or surplus medical coat with internal pockets — deliberately oversized to allow for layers and concealment. Footwear is scuffed, resoled boots with good traction and ankle support. No jewelry, no identifying marks, no brand logos visible. Clothing is chosen for function and anonymity, regularly rotated through charity bins and trade networks to prevent pattern recognition. Everything is intentionally unremarkable."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 29-year-old non-binary medic, compact angular frame, shaved dark hair with silver at temples, medium-warm skin tone blending Scandinavian and West African features, sharp cheekbones, amber-brown eyes with constant alert quality, jagged scar tissue running down left jaw, no visible augmentations, dressed in layered utilitarian Tier 4-5 cargo pants and oversized dark canvas medical coat with visible reinforced pockets, holding a battered portable diagnostic wand, standing in dim underground setting near a makeshift medical station with minimal overhead glow-panel lighting, cyberpunk noir mood, hyperrealistic skin texture showing lines of focus and sleep deprivation, no chrome no frills just competence and survival, moody amber and grey color grading, shot from front three-quarter angle, dystopian medical drama aesthetic --ar 2:3 --v 6"
 }

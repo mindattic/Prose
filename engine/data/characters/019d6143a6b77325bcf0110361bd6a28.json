@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Rotates between Bridgepoint and Gravesend Basin; sleeps at the Gravesend travelers' shelter, near Western and Chicago Ave",
-  "description": "Roshanda was, until four years ago, a Tier 3 Tessera municipal archivist with an apartment in Edgewater Prism, a corporate pension accruing slowly, and a work record that would have earned her a formal commendation if she hadn't committed the specific category of misconduct that got her registration stripped instead. She carries herself with the precise, slightly stiff posture of someone still negotiating between who they were and what they've become. She is a lean woman of West African and Swedish descent with medium-dark skin, close-cropped natural hair that has developed a white streak above her left temple in the last four years — stress, she'll tell you, if you ask — and round-framed glasses she still wears out of habit even though her vision has been corrected by the basic corneal work she had done a decade ago. The glasses have no lenses anymore. She never took them off.\n\nRoshanda's current project is an oral history of the Meridian 88 drifter population: she walks, she listens, she records on a battered analog audio device (nothing networked, nothing that can be subpoenaed) and she transcribes by hand in a series of water-resistant notebooks she keeps in a waterproof roll pack. She has forty-one notebooks so far. She calls the project 'The Register of the Unregistered,' and she has not decided what she will do with it when it is finished, if it is ever finished. She approaches every stranger with the particular respect of someone who has learned that every person is an archive. She prays to no E.L.F. — she is skeptical of the whole phenomenon, which she finds sociologically interesting and theologically unconvincing, a position she shares freely whether or not anyone asked.",
+  "description": "Roshanda was, until four years ago, a Tier 3 Tessera municipal archivist with an apartment in Edgewater Prism, a corporate pension accruing slowly, and a work record that would have earned her a formal commendation if she hadn't committed the specific category of misconduct that got her registration stripped instead. She carries herself with the precise, slightly stiff posture of someone still negotiating between who they were and what they've become. She is a lean woman of West African and Swedish descent with medium-dark skin, close-cropped natural hair that has developed a white streak above her left temple in the last four years — stress, she'll tell you, if you ask — and round-framed glasses she still wears out of habit even though her vision has been corrected by the basic corneal work she had done a decade ago. The glasses have no lenses anymore. She never took them off.\n\nRoshanda's current project is an oral history of the GLMZ drifter population: she walks, she listens, she records on a battered analog audio device (nothing networked, nothing that can be subpoenaed) and she transcribes by hand in a series of water-resistant notebooks she keeps in a waterproof roll pack. She has forty-one notebooks so far. She calls the project 'The Register of the Unregistered,' and she has not decided what she will do with it when it is finished, if it is ever finished. She approaches every stranger with the particular respect of someone who has learned that every person is an archive. She prays to no E.L.F. — she is skeptical of the whole phenomenon, which she finds sociologically interesting and theologically unconvincing, a position she shares freely whether or not anyone asked.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -59,7 +59,7 @@
     "Notebook thirty-seven contains an interview with a man who described, in passing detail, the location of a sealed Tessera data vault from before the corporate restructuring — and then disappeared two weeks later; Roshanda is not sure if she's the reason he disappeared",
     "A former academic contact has reached out offering to publish the archive through an offshore academic network — but the terms require transferring the original recordings to a Tessera-adjacent server, which Roshanda does not trust and cannot verify"
   ],
-  "narrative_function": "Living encyclopedia of the drifter underworld — knows people, histories, and patterns across the entire transit periphery of Meridian 88. Can provide context, history, and contacts. May ask for help in ways that involve moral complexity. Her notebooks are a significant object.",
+  "narrative_function": "Living encyclopedia of the drifter underworld — knows people, histories, and patterns across the entire transit periphery of GLMZ. Can provide context, history, and contacts. May ask for help in ways that involve moral complexity. Her notebooks are a significant object.",
   "augmentations": "Basic corneal correction (old, corporate-era). A Tessera employee-grade subdermal data port on her left wrist that was never removed — technically deactivated but she's heard they can be reactivated. This makes her periodically nervous.",
   "daily_life": "Wakes at the shelter, has whatever passes for breakfast, walks a planned route through transit zones and gathering points collecting interviews; afternoons transcribing; evenings talking to whoever is around; careful about her visibility.",
   "affiliation": "None — formerly Tessera Municipal Archives; informally networked with academic contacts she is no longer supposed to have",
@@ -239,12 +239,33 @@
     "The Flood Register",
     "Unregistered",
     "Bridgepoint",
-    "Meridian 88",
+    "GLMZ",
     "Tessera Corponation",
     "Irontide Tidal Energy",
     "Synaptic Drift Emitter SDE-4 'Lullaby'",
     "ARCHIVE",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and angular, with the kind of wiry posture that comes from years of walking and carrying minimal load. Shoulders slightly rounded from notebook work and careful, deliberate movement.",
+    "hair_color": "Natural dark brown with a distinctive white streak above the left temple",
+    "hair_style": "Close-cropped, natural texture, maintained with functional precision rather than aesthetics",
+    "hair_length": "Short",
+    "eye_color": "Deep brown (natural; corneal correction performed)",
+    "skin_tone": "Medium-dark, warm undertone reflecting West African heritage with Nordic complexion undertones",
+    "complexion": "Weathered but carefully maintained; lines around the eyes and mouth suggest years of listening intently and four years of street living have not erased her earlier composure. Skin shows sun exposure and the dry quality of someone who uses public shelter facilities. No visible makeup.",
+    "distinguishing_marks": [
+      "White stress-induced streak in close-cropped hair above left temple, approximately 3cm wide",
+      "Faint scarring on left wrist where subdermal data port was installed, roughly 2cm surgical line",
+      "Small ink stain (chronic, not removing) on the side of her right index finger from transcription work"
+    ],
+    "visible_augmentations": "Round-framed glasses with no lenses, worn habitually despite corneal correction—purely psychological anchor. The deactivated subdermal data port on left wrist is visible only as faint scarring under careful inspection. No other visible augmentation.",
+    "posture_movement": "Precise, measured gait suggesting former corporate bearing still negotiating itself. She walks as if taking up minimal space. Stands with weight balanced, ready to move. Hands often engaged—gesturing while listening, or positioned near notebooks. Eyes make sustained contact, which is unusual and slightly disarming.",
+    "clothing_style": "Tier 4 transitional: functional and worn, but maintained with care that suggests she hasn't surrendered her former standards. Typically: layered neutral fabrics (grey, tan, dark blue), a weatherproof jacket from a pre-expulsion era (corporate-grade, fading branding), sturdy walking shoes (well-maintained). A water-resistant roll pack worn cross-body containing notebooks and recording device. No jewelry. Everything chosen for durability and discretion rather than status. Moves through urban space trying to be seen but not remembered."
+  },
+  "image_prompt": "Portrait of a 41-year-old Black woman of West African and Scandinavian heritage, lean build, medium-dark skin tone, close-cropped natural dark hair with a white streak at the left temple above wire-rimmed glasses with no lenses. Wearing neutral, weatherproof layers in grey and tan, holding a water-resistant notebook and analog recording device. Standing in a transit station or shelter corridor, ambient neon and fluorescent lighting. Expression of intense, careful attention. Cyberpunk documentary realism, slightly worn and nomadic, precise posture, deep brown eyes. Mood: dignified witness, careful visibility, urban wanderer. Sharp focus on face. Gritty, lived-in aesthetic. --ar 2:3 --v 6"
 }

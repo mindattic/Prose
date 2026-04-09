@@ -181,5 +181,27 @@
     "The Pale Mile",
     "Nightlight"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and wiry, the kind of thin that comes from sustained focus rather than deprivation — long-limbed with visible musculature in forearms and shoulders from years of disassembly work. Slight forward curve to his posture from hunching over workbenches.",
+    "hair_color": "Natural black",
+    "hair_style": "Close-shaved sides with a dense natural coil crown, roughly 8cm at the peak, usually secured with whatever reclaimed wire clip or metal fastener is within arm's reach — currently a stripped copper coupling.",
+    "hair_length": "Short (sides) / Medium (crown)",
+    "eye_color": "Deep brown with faint segmented patterning visible in the left iris from the retinal magnification implant; occasional slight misalignment in that eye.",
+    "skin_tone": "Deep warm brown with undertones of copper, consistent across his frame",
+    "complexion": "Clean but perpetually marked — fingernails rimmed with oxidized metal dust and industrial lubricants (current palette: rust-red, graphite-gray, synthetic oil sheen). Fine lines around his eyes from squinting at small components. No facial hair; appears to shave cleanly every 3-4 days based on current stubble pattern.",
+    "distinguishing_marks": [
+      "Pale green bioluminescent underlining along both collarbones, faintly asymmetrical — glows visibly in low-light conditions. Faint scarring where the implant site healed, slightly raised.",
+      "Three linear scars across the dorsal surface of his right hand, thin and white, from a component housing edge when he was 19.",
+      "Burn scar on his left forearm (roughly 4cm diameter, faint), pale against his skin tone — from a capacitor arc discharge roughly five years ago.",
+      "No visible tattoos; augmentation scars only."
+    ],
+    "visible_augmentations": "Pale green bioluminescent tracery along collarbones (cosmetic, visible when wearing open-necked clothing or sleeveless). Slight aberration in left eye focus when directly observed — faint segmented patterning in the iris from the retinal magnification implant. Occasional micro-tremor in left eye when concentrating or when implant requires recalibration.",
+    "posture_movement": "Habitually hunched forward, hands moving expressively when speaking about technical subjects — especially when explaining salvage taxonomy or component degradation patterns. Walks with purpose but distraction, often redirecting mid-step to examine something on the ground. Sits cross-legged even on proper chairs. Fidgets constantly with small objects — wire, fascia, components — while listening to others.",
+    "clothing_style": "Tier 4 utilitarian scavenger aesthetic. Worn cargo vest or technician's coat (heavily patched, pockets stuffed with components in labeled or unlabeled pouches). Underneath: faded graphic tee or sleeveless shirt, usually bearing faint chemical stains. Industrial cargo pants with multiple thigh pockets, cuffs rolled or pinned. Steel-toed work boots, one sole held together with synthetic webbing. Fingerless work gloves, knuckles exposed. No jewelry except for whatever magnetic components he's borrowed from his own inventory and forgotten he's wearing. His clothing smells perpetually of mineral oil, solder flux, and rust-preventative."
+  },
+  "image_prompt": "Cyberpunk male salvage merchant, West African-Scandinavian heritage, lean muscular build, deep warm brown skin, shaved sides with dense natural coil crown secured by reclaimed copper wire, deep brown eyes with faint retinal implant scarring in left iris. Pale green bioluminescent glow traced along collarbones, faintly asymmetrical, visible in shadows. Perpetually stained fingers in dark lubricant and metal dust. Wearing worn technician's vest over stained graphic tee, industrial cargo pants with patched pockets, steel-toed boots held together with webbing. Hunched posture, hands gesturing expressively. Standing amid towering stacks of salvage crates and disassembled electronics, dim morning light filtering through warehouse skylights, pale green biolum glow casting eerie shadows on metal debris. Gritty, lived-in Tier 4 scrap merchant aesthetic, moody industrial lighting, shallow depth of field. Shot from waist-up, urban cyberpunk realism --ar 2:3 --v 6"
 }

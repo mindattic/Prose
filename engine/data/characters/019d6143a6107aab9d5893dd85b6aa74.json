@@ -13,7 +13,7 @@
   "age": 30,
   "status": "active",
   "location": "The Overhang — residential shelves built onto megastructure exteriors, near Ashland and Chicago Ave",
-  "description": "Fatoumata Baranov-Fosu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Fatoumata Baranov-Fosu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.46,
@@ -278,11 +278,32 @@
   "registered_firearms": [],
   "related_entities": [
     "Ironveil Canopy",
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "Neuromorphic Pressure Cestus",
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Russian — Mandinka-descended (Fosu) merged with Eastern European (Baranov)",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Athletic and lean with defined musculature — dancer's flexibility combined with fighter's efficiency. No wasted mass. Shoulders broad but not bulky, core visibly tight.",
+    "hair_color": "Dark brown, natural with subtle warm undertones",
+    "hair_style": "Pulled back in a practical high bun or tight cornrows; styled for function, not aesthetics",
+    "hair_length": "Medium (when down), typically secured",
+    "eye_color": "Deep brown, alert and calculating",
+    "skin_tone": "Rich warm brown with golden undertones — mixed heritage complexity",
+    "complexion": "Sharp cheekbones, defined jawline. Skin well-maintained but not pampered — minimal scarring on face, suggesting professional discretion. A thin white line runs from left temple toward ear (old blade wound, poorly healed). Her expression defaults to neutral assessment.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple toward ear — approximately 4cm, from a blade encounter",
+      "Tattoo on right forearm: three interlocking circles in black ink (memorial to her disappeared mentor)",
+      "Chrome reflex booster ports visible at base of skull where spinal column augmentation connects — surgical-grade titanium with slight luminescent edge when system is active"
+    ],
+    "visible_augmentations": "Reflex booster wiring visible at the nape of neck where chrome interfaces with skin — visible when hair is pulled back, which it always is. The ports glow faintly (warm amber) when her nervous system is engaged or during active jobs. No attempt to conceal; it's a warning label.",
+    "posture_movement": "Stands with weight balanced, ready to move in any direction. Movement is economical and fluid — no wasted motion, no flourish. Eyes constantly scanning, cataloging exits and threats. She moves like someone who has learned that survival is a series of micro-decisions made at speed.",
+    "clothing_style": "Tier 3-4 practical: reinforced synthetic-leather jacket (charcoal grey, well-maintained), fitted tactical pants with cargo pockets, heavy-duty boots with grip-soles. Minimal jewelry except a worn silver ring on her right hand (inherited from mentor). Gear is always accessible, always ready. Fabrics are functional — nothing that catches or restricts. She dresses for the job, not the social tier."
+  },
+  "image_prompt": "Cyberpunk character portrait: athletic 30-year-old Black woman with West African and Eastern European heritage, dark skin with golden undertones, sharp cheekbones, deep brown alert eyes. Hair pulled back tightly, revealing visible chrome augmentation ports at the nape of neck glowing faint amber. Thin scar along left temple. Wearing charcoal grey reinforced tactical jacket and cargo pants, heavy boots. Neutral calculated expression, posture balanced and ready. Studio lighting with neon rim light highlighting the chrome augmentations, dark background, gritty urban cyberpunk aesthetic, professional extraction specialist vibe --ar 2:3 --v 6"
 }

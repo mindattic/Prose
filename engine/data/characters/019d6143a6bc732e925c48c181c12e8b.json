@@ -250,5 +250,26 @@
     "Copper",
     "The Pure Hand"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Nigerian / Uzbek / Irish (inferred from Rúairí surname)",
+    "height_cm": 173,
+    "weight_kg": 68,
+    "build": "Lean and economical — the kind of wiry frame that comes from insufficient calories and constant movement. No excess, no bulk. Shoulders narrow but held with conscious control.",
+    "hair_color": "Mood-responsive geneware: oscillates between deep blue-black and copper-bronze depending on emotional state and ambient biochemistry",
+    "hair_style": "Tight, well-maintained curls worn close to the scalp",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, nearly black — his Uzbek grandmother's eyes",
+    "skin_tone": "Olive complexion with warm undertones, reflecting mixed West African and Central Asian heritage",
+    "complexion": "Fine-featured face with a wide mouth (Nigerian grandfather's lineage) and a slightly gaunt quality that suggests chronic sleep deprivation and careful nutrition. Skin is clean and well-maintained despite his Tier 5 location — an anomaly that signals discipline. Faint dark circles under eyes are permanent fixtures. Hands are notably steady, fingers long and dexterous.",
+    "distinguishing_marks": [
+      "Small ritual burn scar on inside of right wrist, deliberately placed and healed well — marker of a private spiritual practice",
+      "Three thin white lines running horizontally across the knuckles of his left hand, old defensive scars from unspecified violence",
+      "Faint chemical staining (slight discoloration) on the tips of his index and middle fingers from compound handling and testing"
+    ],
+    "visible_augmentations": "Hair geneware is obvious — the mood-responsive color shifts are distinctive and recognizable to repeat customers. The olfactory augmentation is not visibly obvious but his frequent subtle sniffing and the faint red irritation around his right nostril hint at its presence. No chrome, no obvious external hardware.",
+    "posture_movement": "Stands with economical stillness — hands kept visible and low, movements deliberate and non-threatening. His steadiness is cultivated; he moves like someone who has learned that trembling hands inspire distrust in a pharmacist. When listening to a customer, he leans in slightly with genuine focus. Gait is quick but unhurried.",
+    "clothing_style": "Clean clothes in a district where cleanliness is conspicuous — worn synthetics in muted colors (grey, charcoal, deep olive), well-maintained but visibly cheap. A long-sleeved shirt or thin jacket worn even in warm weather, covering his ritual scar. No corporate branding. Practical pockets. Footwear is functional and worn but not falling apart. Overall appearance: someone who respects himself and his customers despite operating in a Tier 5 location. His cleanliness reads as both a choice and a quiet act of resistance."
+  },
+  "image_prompt": "Lean, dark-eyed man with mood-responsive copper and blue-black curled hair standing in a cramped converted laundry kiosk filled with carefully organized pharmaceutical supplies and glass vials, cyberpunk, detailed face with Nigerian and Uzbek heritage, olive skin tone, steady hands visible on counter, wearing clean grey synthetic shirt with long sleeves, dim neon-tinged underground lighting from Deepwell Station glow, slight haze of compound residue in air, focused expression mixing compassion and exhaustion, grungy Tier 5 urban setting visible through kiosk window, photorealistic, cinematic, intimate portrait style --ar 2:3 --v 6"
 }

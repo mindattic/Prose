@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
-  "description": "Hadiya Akerlund-Mensah-Bonsu is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a wheelman out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Hadiya Akerlund-Mensah-Bonsu describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Hadiya Akerlund-Mensah-Bonsu is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a wheelman out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Hadiya Akerlund-Mensah-Bonsu describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.89,
@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "Control — over their body, their schedule, their future",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Stability — a place to sleep that's the same place two nights running"
     ],
     "coping_mechanisms": [
@@ -275,9 +275,30 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "Meridian 88",
+    "GLMZ",
     "The Nearfield",
     "Slagworks Industrial"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African (Akan/Ewe) / Scandinavian / African diaspora blend",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "build": "Lean and loose-limbed with corded muscle definition. Low body fat, long-limbed frame optimized for fluid movement rather than bulk. Shoulders broad but not overdeveloped; everything spare and functional.",
+    "hair_color": "Natural black with silver threading at temples",
+    "hair_style": "Close-cropped fade, maintained with military precision",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unaugmented",
+    "skin_tone": "Warm medium-brown complexion with golden undertones reflecting mixed heritage",
+    "complexion": "Sharp, angular face with high cheekbones and a prominent jawline. Skin clean and scarred—old line across left temple, thin scar along right mandible. No facial hair; clean-shaven daily. Crow's feet and a horizontal line between brows from twenty years of focus.",
+    "distinguishing_marks": [
+      "Linear scar across left temple, approximately 8cm, pale and thin—old knife wound",
+      "Thin scar tracking along right mandible from jaw angle toward chin—surgical precision, recent (3-4 years)",
+      "Burn scarring on right forearm, faint and silvered, approximately 5cm diameter—old thermal weapon exposure"
+    ],
+    "visible_augmentations": "Retractable monofilament whip housing visible in left forearm as faint chrome plating beneath skin with subtle seams visible when forearm is flexed. Matching hardware on both forearms where pop-out blade mounts are seated beneath dermis. No LED indicators or decorative chrome—pure function, minimal visibility to untrained eye.",
+    "posture_movement": "Moves with deliberate economy of motion. No wasted gesture. Posture upright but not rigid—spine aligned, shoulders relaxed. Walks with measured, ground-eating stride. Stillness is his default state; motion is always purposeful. Eyes track continuously in peripheral vision. Hands remain loose and available.",
+    "clothing_style": "Tier 3-4 practical hybrid. Matte-finish aramid-weave jacket (charcoal, no logos) layered over a fitted compression shirt in black. Tactical trousers with reinforced seams and thigh cargo pockets, worn gray. Scuffed military-grade combat boots, black leather, recently maintained. Minimalist smart-watch on right wrist (encrypted, GLMZ-tier infrastructure compatible). No unnecessary ornamentation. Everything serviceable, replaceable, unremarkable."
+  },
+  "image_prompt": "Portrait of a 45-year-old man, cyberpunk noir aesthetic, tall and lean with corded muscle, warm medium-brown complexion, sharp angular face with temple scar and jaw line scar, close-cropped black hair with silver threading, dark unaugmented eyes with focused intensity, wearing matte charcoal tactical jacket over compression shirt and gray reinforced cargo trousers, faint chrome seams visible in left forearm where monofilament whip is housed, completely still posture with military bearing, photographed in Old Harbor shipping container district lit by cold neon blue and orange industrial lights, 4K hyperrealistic photography, volumetric atmosphere, rain-slicked concrete, cinematic depth of field --ar 2:3 --v 6"
 }

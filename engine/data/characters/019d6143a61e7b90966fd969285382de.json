@@ -106,5 +106,26 @@
     "The Shelf",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Akan/Ewe) / Scandinavian (Norwegian)",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Athletic and lean with defined shoulders from decades of precise manual work; carries herself with the economical posture of someone who has learned to move without wasting energy",
+    "hair_color": "Dark brown with natural silver streaking at the temples",
+    "hair_style": "Pulled back in a tight, practical braid that loops at the nape of her neck; the style emphasizes sharp cheekbones",
+    "hair_length": "Medium",
+    "eye_color": "Light hazel with amber flecks",
+    "skin_tone": "Medium warm brown with subtle olive undertones from mixed ancestry",
+    "complexion": "Weathered but maintained; fine lines around the eyes from years of concentration; minimal cosmetics; skin shows the wear of chemical exposure and years navigating The Shelf's environmental hazards",
+    "distinguishing_marks": [
+      "Thin white scar running from the corner of her right eye to her cheekbone, sustained during a black-market surgery extraction gone wrong circa 2203",
+      "Faded tattoo on her left inner forearm: a stylized caduceus wrapped in circuit lines, marking her allegiance to the underground medical collective",
+      "Burn scar across the back of her right hand in a distinctive three-point pattern from a failed autosurgeon calibration"
+    ],
+    "visible_augmentations": "Modified right hand: chromatic fingers with articulated joints capable of micro-precision work; a subtle neural interface port at the base of her skull concealed by her braid, visible only when hair is pulled aside; faint subcutaneous bioluminescent network visible under the skin of her right forearm when activated (used for low-light surgical work)",
+    "posture_movement": "Moves with deliberate, economical grace; hands are always slightly active, fingers twitching through practiced gestures even at rest; maintains steady eye contact; speaks in measured tones with minimal wasted breath; carries tension in her shoulders that only releases when she's focused on a task",
+    "clothing_style": "Tier 3-4 utilitarian: reinforced gray synthetic jacket with internal pockets for tools and implant diagnostics; dark cargo pants with utility webbing; worn leather fingerless gloves over her left hand only; steel-toed boots with custom orthotic inserts for standing through long procedures; a medical-grade respirator hangs loose around her neck (air quality on The Shelf is unreliable); no corporate branding, but visible wear patterns suggest expensive maintenance; a single piece of jewelry: a Scandinavian silver ring on her right index finger (her augmented hand), family heirloom"
+  },
+  "image_prompt": "Portrait of a 45-year-old woman with mixed West African and Scandinavian heritage, athletic lean build, medium warm brown skin with olive undertones, light hazel eyes with amber flecks, dark hair with silver streaking pulled back in a tight practical braid. She has a weathered, composed expression and fine lines around her eyes. Faint scar running from right eye to cheekbone. Right hand is sleek chromatic chrome with articulated fingers. Wearing reinforced gray synthetic jacket, dark cargo pants, worn leather gloves (left hand only), steel-toed boots. Cyberpunk noir aesthetic, gritty underground medical fixer, focused and intense demeanor. Moody warm lighting with cool neon undertones, subtle bioluminescence visible under skin of right forearm. High-tech medical underground setting, industrial and worn. Realistic cinematic style, detail-focused on hands and facial features. --ar 2:3 --v 6"
 }

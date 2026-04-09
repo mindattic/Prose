@@ -180,5 +180,26 @@
     "Elena Vasquez-9",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "South Asian / West African / Mongolian",
+    "height_cm": 148,
+    "weight_kg": 38,
+    "build": "Compact and quick-limbed, almost bird-like in economy of motion. No visible muscle development yet — still pre-adolescent, but with the wiry efficiency of someone who moves through tight spaces and doesn't waste energy.",
+    "hair_color": "Natural black with copper-dyed sections",
+    "hair_style": "Approximately a dozen small braids, varying lengths, some adorned with cheap thread or beads. Constantly re-braided and fussed with when anxious — a self-soothing tic.",
+    "hair_length": "Medium (shoulder-length when fully braided)",
+    "eye_color": "Cosmetic pattern irises — honeycomb geometry in amber and copper, shifting with light. Not natural; augmented. Gives the unsettling impression of being examined by something algorithmic.",
+    "skin_tone": "Golden-brown with warm undertones, reflecting South Asian and West African ancestry",
+    "complexion": "Youthful, sharp-featured face with high cheekbones and an expressive mouth. Skin is generally clear but shows occasional stress-related breakouts. Always looks slightly sleep-deprived. Features suggest androgynous presentation — fine jaw, large eyes.",
+    "distinguishing_marks": [
+      "Copper-dyed fabric strip knotted tightly around left forearm as Copperhead Red affiliation marker — worn constantly, faded and fraying at edges from obsessive handling.",
+      "Small scar on right palm (from an old accident, kept picking at it when nervous until it scabbed over repeatedly).",
+      "No tattoos yet — too young for gang ink, still prospect-tier."
+    ],
+    "visible_augmentations": "The cosmetic pattern irises are immediately visible and unsettling — they catch light in ways human eyes don't, creating brief flashes of amber and copper. No other visible mods.",
+    "posture_movement": "Moves with quick, efficient gestures — no wasted motion. Tends toward small, compressed posture when uncertain (hunching shoulders, making themselves smaller). When performing (as distraction artist), shifts entirely: becomes expansive, bouncy, takes up more space. Baseline resting state is alertness; eyes track movement in rooms automatically.",
+    "clothing_style": "Tier 4-5 scavenge: oversized hand-me-down hoodie (usually gray or black, Copperhead colors when available), cargo pants with multiple pockets and fraying hems, cheap knock-off trainers with mismatched socks. Layers against cold. Copper-dyed fabric on wrist is the only intentional styling. Grooming is inconsistent — depends on whether they slept at the community house (where water is available) or the stash house. Hygiene matters to them but is secondary to survival."
+  },
+  "image_prompt": "13-year-old nonbinary cyberpunk orphan, small compact frame, golden-brown skin, black hair in copper-dyed braids, cosmetic pattern irises with shifting honeycomb geometry in amber and copper, unsettling and algorithmic. Wearing oversized gray hoodie, cargo pants, cheap trainers, copper-dyed fabric knotted around left forearm as gang marker. Alert, wary posture, slight hunch, quick-eyed. Gritty Tier 5 GLMZ setting, industrial Milwaukee street corner, cool fluorescent and sodium-light ambiance, photorealistic with cyberpunk undertones, detailed facial expression caught between wariness and dark humor. --ar 2:3 --v 6"
 }

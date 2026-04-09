@@ -259,5 +259,27 @@
     "Copper",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Filipino / Finnish",
+    "height_cm": 152,
+    "weight_kg": 48,
+    "build": "Slight and compact, muscle-dense from decades of precise manual work. Posture slightly curved from leaning over surgical fields, but movements economical and deliberate.",
+    "hair_color": "White, natural gray-out",
+    "hair_style": "Braided back tightly with strips of electrical tape woven through, practical and utilitarian",
+    "hair_length": "Medium (shoulder-length when unbraided)",
+    "eye_color": "Right eye: dark brown. Left eye: milky white cataract, deliberately unaugmented",
+    "skin_tone": "Copper-brown, deep and warm undertones",
+    "complexion": "Extensively creased and sun-weathered, particularly around eyes and forehead. Faint chemical burn scars on chin from early biotech accident. Hands show fine tremor lines and faint discoloration from sterilization compounds. Minimal makeup. Perpetually tired but alert.",
+    "distinguishing_marks": [
+      "Chemical burn scar on left chin, approximately 3cm, pale and flat from age",
+      "Fine surgical scar network across both palms from repeated micro-incisions related to haptic calibration",
+      "Faint track marks along right forearm where the salvaged diagnostic implant sits subcutaneously — visible only as slight discoloration and a thin ridge of scar tissue",
+      "Tattoo on inner right wrist: small cross in faded indigo, done by hand in a shipping container thirty years ago"
+    ],
+    "visible_augmentations": "Right forearm shows a barely-perceptible ridge beneath skin where the diagnostic implant sits; she sometimes unconsciously rubs it. Subdermal augmentations in hands invisible unless she flexes during delicate work, when faint LED status lights briefly illuminate under the skin. No chrome, no ostentatious modification.",
+    "posture_movement": "Moves with economical precision through confined spaces. Hands are always in motion or perfectly still — no fidgeting. Head tilts slightly toward her right side to compensate for her left eye's limited vision, a habit so ingrained she is unaware of it. Walks as though measuring every step. Presence is quiet but absolute; rooms recalibrate around her.",
+    "clothing_style": "Tier 5 practical: medical-grade canvas apron over worn thermal layers, both patched multiple times with different fabrics. Feet in bootleg neoprene slip-ons, well-maintained. A surgical mask hangs around her neck constantly, pulled up during work. A long coat of faded synthetic wool that belonged to someone else originally — inherited, not purchased. No jewelry except a copper ring on her left thumb, burnished smooth."
+  },
+  "image_prompt": "Cyberpunk portrait of a 61-year-old Filipino-Finnish woman, 150cm tall, slight and muscular build, white hair braided tightly with electrical tape, deep copper-brown weathered skin with creased features, one eye milky white cataract (deliberately unaugmented), other eye dark brown and sharp. Wearing faded medical-grade canvas apron over thermal layers, long inherited wool coat. Right forearm shows faint diagnostic implant scar ridge beneath skin. Hands show fine surgical scars. Standing in dim surgical container clinic lit by mix of votive candles and surgical LEDs. Fluorescent light casting harsh shadows. Expression of absolute certainty and weariness. Hands positioned precisely, suggesting haptic sensitivity. The Shelf, lower district, worn metal walls, scattered medical equipment. Cinematic lighting, film noir mood, hyper-detailed hands, shallow depth of field. Grounded realism, not high-tech aesthetic. --ar 2:3 --v 6"
 }

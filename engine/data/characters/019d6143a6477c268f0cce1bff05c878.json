@@ -9,11 +9,11 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Metro beat cop, Meridian 88 Metro Police",
+  "role": "Metro beat cop, GLMZ Metro Police",
   "age": 44,
   "status": "active",
   "location": "Bronzeline, near Milwaukee and North Ave",
-  "description": "Kweku is a tall, heavyset man whose face has the texture of someone who has been outdoors in Meridian 88 weather for two decades — weathered around the eyes, with a thick grey-streaked beard he keeps neat more out of stubbornness than vanity. He has a prosthetic left leg from the shin down, matte carbon fiber that he refers to as 'the situation' and refuses to discuss further. His gait is distinctive — slightly deliberate, heel-first — which earned him the neighborhood nickname Ironfoot long before it became affectionate. He wears his Metro blues with the practiced ease of someone who stopped being self-conscious about the uniform around year five.\n\nBronzeline is his beat and has been for eleven years, which means he knows it the way cartographers know coastlines — every alley, every shift-change crowd, every proprietor who will lie to him and every one who won't. He is not idealistic about Metro Police and has not been for a long time. He is, however, genuinely attached to Bronzeline as a place and to specific people within it, and this is what keeps him showing up. He has a loud laugh he deploys strategically and a particular talent for de-escalation through sheer unhurried presence.",
+  "description": "Kweku is a tall, heavyset man whose face has the texture of someone who has been outdoors in GLMZ weather for two decades — weathered around the eyes, with a thick grey-streaked beard he keeps neat more out of stubbornness than vanity. He has a prosthetic left leg from the shin down, matte carbon fiber that he refers to as 'the situation' and refuses to discuss further. His gait is distinctive — slightly deliberate, heel-first — which earned him the neighborhood nickname Ironfoot long before it became affectionate. He wears his Metro blues with the practiced ease of someone who stopped being self-conscious about the uniform around year five.\n\nBronzeline is his beat and has been for eleven years, which means he knows it the way cartographers know coastlines — every alley, every shift-change crowd, every proprietor who will lie to him and every one who won't. He is not idealistic about Metro Police and has not been for a long time. He is, however, genuinely attached to Bronzeline as a place and to specific people within it, and this is what keeps him showing up. He has a loud laugh he deploys strategically and a particular talent for de-escalation through sheer unhurried presence.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -63,7 +63,7 @@
   "narrative_function": "Local authority and community anchor — knows Bronzeline intimately and can provide context on anyone living there. De-escalation presence. Moral compass character who has made compromises and knows it.",
   "augmentations": "Carbon fiber prosthetic left leg (below knee) — functional, non-enhanced, deliberately low-tech. Standard Metro Police subdermal comms bead behind left ear. No cosmetic mods.",
   "daily_life": "Walks his beat on foot most of the shift, rain or shine; stops at Mak's noodle stall on Bronzeline Main for lunch almost every working day; handles domestic disturbances, checkpoint disputes, and the slow accumulation of minor crimes that constitute most of actual policing.",
-  "affiliation": "Meridian 88 Metro Police, Bronzeline district",
+  "affiliation": "GLMZ Metro Police, Bronzeline district",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -199,10 +199,31 @@
   ],
   "related_entities": [
     "Carbon Fiber",
-    "Meridian 88",
+    "GLMZ",
     "Bronzeline",
     "Tessera Corponation",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Scandinavian (Ghanaian-Polish)",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Heavyset, broad-shouldered with a solid frame that has softened slightly with age but retains the density of someone who carries weight with purpose rather than neglect. The build of a man who walks his beat on foot.",
+    "hair_color": "Dark brown with grey streaks throughout",
+    "hair_style": "Kept short and practical, no styling beyond a barber's trim",
+    "hair_length": "Short",
+    "eye_color": "Brown, slightly deep-set",
+    "skin_tone": "Medium-warm brown complexion reflecting mixed West African and Eastern European heritage",
+    "complexion": "Weathered face with deep smile lines around the eyes and mouth; face shows two decades of GLMZ weather exposure — sun damage across the cheekbones, skin with a leathery texture. Beard kept neatly trimmed, salt-and-pepper grey, full and close to the jaw. Minimal scarring visible on the face.",
+    "distinguishing_marks": [
+      "Thin pale scar along the right temple, barely visible beneath grey hair",
+      "Callused knuckles on both hands, worn smooth by years of routine patrol work",
+      "Faded tattoo on the inside of the left forearm — a single line in a language that looks Akan, barely legible now"
+    ],
+    "visible_augmentations": "Matte carbon fiber prosthetic left leg from the shin down, deliberately functional and low-tech with visible joint articulation and no cosmetic casing. Slight metallic catch in the light when he moves. Barely-visible subdermal comms bead behind the left ear, flush with skin.",
+    "posture_movement": "Stands with even weight distribution despite the prosthetic; walks with a distinctive deliberate gait — heel-first, measured pace that suggests neither pain nor self-consciousness but rather long accommodation. Moves through space with unhurried presence. Rests weight against walls or counter edges when stationary. Hands often visible, relaxed at sides or in uniform pockets.",
+    "clothing_style": "Wears GLMZ Metro Police Class-B uniform most shifts — navy patrol shirt with district patches, regulation trousers with slight wear at the knees, sturdy black boots (left boot modified at the heel for the prosthetic). Off-duty: functional Tier 3 work clothes — canvas jackets, worn jeans, neutral-colored long-sleeves. Everything practical and durable, nothing aspirational. No jewelry except a faded wedding band on his right hand."
+  },
+  "image_prompt": "A weathered 44-year-old Black man with grey-streaked beard, standing in cyberpunk Milwaukee streetscape, wearing faded navy GLMZ Metro Police uniform shirt, right hand resting on belt. Visible matte carbon fiber prosthetic leg from knee down, distinctive heel-first posture. Deep-set brown eyes, sun-damaged medium-brown complexion, salt-and-pepper beard trimmed close. Neon signs reflecting off wet pavement, Bronzeline district background with noodle vendors and worn storefronts, evening urban lighting, slight rain, cinematic realism, gritty police procedural mood, weathered and unhurried presence --ar 2:3 --v 6"
 }

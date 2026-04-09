@@ -251,5 +251,27 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pure Hand"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Quechua / Senegalese / Russian",
+    "height_cm": 168,
+    "weight_kg": 92,
+    "build": "Broad-shouldered and thick-bodied, with the settled weight of someone accustomed to sustained labor rather than speed. Chest and torso carry muscle beneath a layer of deliberate softness — the build of a person who moves with purpose but without urgency.",
+    "hair_color": "None",
+    "hair_style": "Shaved scalp",
+    "hair_length": "Shaved",
+    "eye_color": "Deep brown, slightly sunken from decades in low-light environments",
+    "skin_tone": "Dark brown with irregular mottling and discoloration from spore exposure and geneware integration",
+    "complexion": "Weathered but composed. Face shows the deliberate calm of someone who has learned patience as a survival skill. Fine lines around eyes and mouth suggest more thinking than talking. Permanent umber staining at the cuticles and under fingernails, impossible to fully clean despite regular attempts.",
+    "distinguishing_marks": [
+      "Full scalp tattoo depicting the Deepwell Station fungal garden network in blue and amber ink, with deliberate gaps left for future additions.",
+      "Bioluminescent geneware patches across the neck in three clusters: one along the left side of the neck, two spreading down the right side toward the collarbone — soft amber-to-violet gradient that pulses gently when engaged.",
+      "Matching bioluminescent patches across both hands, concentrating on the palms and back of the fingers, same amber-violet spectrum.",
+      "Fine white scarring across both palms from decades of microscopic cuts during spore harvesting and cultivation work."
+    ],
+    "visible_augmentations": "Bioluminescent geneware patches on neck and hands that glow with soft amber-violet light when activated — visible especially in Deepwell's low-light environment. The patches appear organic rather than mechanical, integrated seamlessly into the skin. No visible chrome or metallic augmentations. The structural reinforcement to fingertip bones is not visually apparent but produces slightly unusual hand proportions — fingers slightly thicker and more robust than baseline.",
+    "posture_movement": "Moves with deliberate slowness, each gesture economical and purposeful. Stands with weight distributed evenly, shoulders slightly forward in a posture suited to hours spent working at cultivation benches. Hands rest naturally with palms slightly open — a gesture of openness that feels genuine rather than performed. Head tilts slightly when listening, a habit of someone working in spaces where sound travels strangely. Their presence feels anchoring — people around them unconsciously slow down.",
+    "clothing_style": "Tier 4 working-class with personal adaptation. Wears loose linen tunics in earth tones (ochre, dark gray, faded brown) over reinforced work pants with multiple deep pockets. A heavy canvas apron over everything, stained with spore-growth medium and dyed various colors from bioluminescent compounds. Boots are practical, oil-treated leather, visibly old but meticulously maintained. Over the shoulders, a woven shawl in muted indigo that serves as both insulation and a place to carry small items. No corporate branding, no status signifiers — the clothing of someone who has moved beyond the need to perform their tier."
+  },
+  "image_prompt": "portrait of a 51-year-old nonbinary person with a shaved scalp covered in blue and amber tattoos mapping an underground fungal network, dark brown skin with bioluminescent geneware patches glowing soft amber-violet across the neck and hands, deep brown eyes showing decades of low-light tunnel work, enormous stained hands with robust fingers, wearing a faded ochre linen tunic and reinforced work pants beneath a stained canvas apron, heavy oil-treated leather boots, a woven indigo shawl draped across shoulders, standing in the dim bioluminescent glow of a fungal cultivation stall in an underground market, soft warm amber light reflecting off their skin modifications, cyberpunk subterranean setting, calm meditative expression, hands at rest with palms slightly open, cinematic lighting, gritty documentary realism, 35mm film aesthetic --ar 2:3 --v 6"
 }

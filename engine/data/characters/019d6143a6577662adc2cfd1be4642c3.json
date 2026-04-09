@@ -239,5 +239,25 @@
     "Hearthstone Firearms Trail-357 'Pathfinder'",
     "Bashir Quansah-Mehrotra"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Romanian / West African (Malinké)",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and precise, almost ascetic — lean without being frail, with the economical musculature of someone who moves deliberately. No excess.",
+    "hair_color": "Silver-grey, natural",
+    "hair_style": "Cropped very short, blunt-cut, styled for minimal maintenance and maximum non-visibility",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unaugmented",
+    "skin_tone": "Warm medium-brown with subtle undertones reflecting mixed heritage",
+    "complexion": "Sharp-featured face with high cheekbones and a narrow jaw; skin is clear but shows the fine lines of fifty-one years without cosmetic intervention; expression habitually controlled, eyes carry the focused, cataloguing intensity of a professional archivist",
+    "distinguishing_marks": [
+      "Faint linear scars at both temples where a Palladian cognition-assist was removed, barely visible unless light catches at an angle",
+      "Small, almost invisible burn scar on the inside of her left wrist from document handling fluid — ten millimeters long"
+    ],
+    "visible_augmentations": "None visible. The removal of her neural implants was deliberate; no replacement augmentations. This absence is itself conspicuous to those who know her history.",
+    "posture_movement": "Moves in economical, deliberate steps with minimal displacement of air or attention. Hands remain still until needed. She positions herself in shadows or at the edge of rooms as if conscious of occupying as little space as possible. When she does move, it is purposeful — no wasted motion.",
+    "clothing_style": "Tier 4 utilitarian, worn with precision. Dark grey or black cotton layers — loose long-sleeved shirt over fitted tank, practical cargo pants with multiple pockets for documents and writing implements. Worn leather journal bag across her body. No visible logos or corporate markers. Shoes are scuffed grey canvas, comfortable for the Irkalla tunnels. Everything is maintained but deliberately aged; nothing new enough to draw attention."
+  },
+  "image_prompt": "Portrait of a 51-year-old woman with silver-grey cropped hair and sharp East African and Eastern European features, dark unaugmented eyes with intense focused expression, warm medium-brown skin. Faint linear scars visible at temples where neural implants were removed. Wearing layered dark utilitarian clothing—grey long-sleeved shirt, practical cargo vest, worn canvas shoes. Seated in shadow in a repurposed underground transit control room lined with handwritten records, filing boxes, and paper archives. Cinematic cyberpunk setting, Irkalla deep-shrine aesthetic, dim amber emergency lighting and cold fluorescent strips creating pools of light and shadow. She sits motionless, hands resting on a leather journal, positioned at the edge of frame as if minimizing her presence. Photorealistic, intricate detail, 35mm film photography quality, moody atmospheric lighting, no augmentations visible, dignified and unsettling --ar 2:3 --v 6"
 }

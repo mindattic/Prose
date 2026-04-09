@@ -44,8 +44,16 @@
     "Third-generation corridor families who've been coming since their grandparents"
   ],
   "notable_locations": [
-    "The sound system — seventy years old, the bar's soul made physical",
-    "The third-floor dancehall — Saturday nights only, Marcus's temple"
+    {
+      "name": "The sound system",
+      "description": "seventy years old, the bar's soul made physical",
+      "tags": []
+    },
+    {
+      "name": "The third-floor dancehall",
+      "description": "Saturday nights only, Marcus's temple",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 43.0644,

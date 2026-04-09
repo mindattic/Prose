@@ -276,5 +276,26 @@
     "Lazarus LX-2 'Lab Rat'",
     "Clover"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Hispanic (Mexican/Spanish) / West African (Ghanaian)",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Rawboned and lean — the kind of frame that reads as either ascetic discipline or chronic resource scarcity. Long limbs, minimal body fat, angular shoulders. Suggests endurance over power.",
+    "hair_color": "Dark brown, naturally graying at temples",
+    "hair_style": "Pulled back into a practical braid or low knot; occasionally loose. Styled for function, not impression.",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, alert and assessing",
+    "skin_tone": "Medium-deep brown with warm undertones — blended heritage visible in subtle facial structure",
+    "complexion": "Sharp cheekbones, angular jawline, sparse facial hair (rarely shaved). Skin shows the wear of nocturnal living — slight pallor beneath the base tone. Eyes carry the flatness of someone who has learned to show only what serves negotiation.",
+    "distinguishing_marks": [
+      "Surgical scar along the right temple, thin and precise — pain editor implant site, visible when hair is pulled back",
+      "Network of thin white scars across knuckles and dorsal hands — old, defensive wounds from early in their running career",
+      "Faint burn marks on the left collarbone in a small cluster, partially obscured by typical clothing"
+    ],
+    "visible_augmentations": "Right temple chrome: the pain editor augmentation is visibly integrated, a sleek subdermal interface with faint LED status indicators (amber when active) just beneath the skin. The surgical scar framing it is deliberately left unhidden. No other visible chrome — other augmentations, if any, are subcutaneous.",
+    "posture_movement": "Moves with economy and precision — no wasted motion. Shoulders slightly forward, default expression neutral-to-pleasant, eyes constantly mapping exits and social hierarchy. Stands at rest with one hand free, the other occupied. During negotiation, becomes almost perfectly still except for deliberate, measured gestures. Nocturnal circadian rhythm shows in how they relate to light — comfortable in low-light spaces, slightly squinting in full daylight.",
+    "clothing_style": "Tier 3-4 pragmatism: dark technical clothing designed for function and low visibility. Lightweight synth-wool base layer, loose-fitting graphite combat pants with cargo pockets and reinforced knees, nondescript black jacket (insulated, multiple pockets, worn smooth from use). No corpo branding; everything is purpose-built or neutrally sourced. Worn leather ankle boots, well-maintained. Minimal jewelry — a simple wrist chronometer on a dark strap, a small silver ring on the left hand (possibly cultural, possibly functional). Carries a messenger bag worn cross-body, constantly checked. Grooming is precise but minimal: nails kept short and clean, minimal fragrance. Presentation reads as 'local professional,' not 'runner' — which is the entire point."
+  },
+  "image_prompt": "Cyberpunk character portrait, nonbinary person of mixed Hispanic and West African heritage, age 45, tall and rawboned frame with angular cheekbones and sharp jawline. Dark brown eyes, medium-length dark hair pulled back, visible surgical scar at right temple with glowing chrome pain editor implant (amber LED glow), sparse facial hair. Wearing dark technical clothing — graphite combat pants, black insulated jacket, leather boots. Nocturnal aesthetic, slightly pale complexion from nocturnality. Alert, assessing expression, perfectly neutral. Standing in low-light corporate-adjacent retail district, dim neon reflections on wet pavement. Cinematic cyberpunk lighting, cool tones with warm accent light from distant signage. Professional fixer aesthetic, high-risk operator. Film noir mood, photorealistic, depth of field, shot at 2/3 profile. --ar 2:3 --v 6"
 }

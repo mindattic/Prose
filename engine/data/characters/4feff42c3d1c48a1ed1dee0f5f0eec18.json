@@ -7,7 +7,7 @@
     "The Auditor"
   ],
   "role": "Private Investigator",
-  "description": "Thandiwe Karlsen-Boateng is the person corporations call when they suspect the rot is coming from inside. Her firm, Meridian Corporate Intelligence Group, serves exclusively Tier 4 and Tier 5 clients — the corponations and the mega-wealthy individuals who orbit them. She investigates espionage, internal theft, executive misconduct, and the kind of byzantine corporate betrayals that can cost billions of Quanta and topple divisions.\n\nSouth African-Norwegian heritage, forty-one years old, with dark skin, sharp cheekbones, and eyes that evaluate everything they see like an appraiser assessing collateral. She wears severity like other people wear cologne. Her rise from the Shelf to the Spires is a story she never tells because it would reveal vulnerabilities she's spent decades armoring over. What matters is the present: she is the best corporate investigator in Meridian 88, and everyone who matters knows it.\n\nHer methods are exhaustive and merciless. When she's hired to find a mole, the mole is found. When she's hired to prove fraud, the fraud is proven. She has never failed to deliver a result, though the results aren't always what her clients wanted to hear — she has, on three occasions, identified the client themselves as the source of the problem they hired her to investigate. She presents these findings with the same glacial professionalism as any other report, which is why she gets hired again despite making powerful people very uncomfortable.",
+  "description": "Thandiwe Karlsen-Boateng is the person corporations call when they suspect the rot is coming from inside. Her firm, Meridian Corporate Intelligence Group, serves exclusively Tier 4 and Tier 5 clients — the corponations and the mega-wealthy individuals who orbit them. She investigates espionage, internal theft, executive misconduct, and the kind of byzantine corporate betrayals that can cost billions of Quanta and topple divisions.\n\nSouth African-Norwegian heritage, forty-one years old, with dark skin, sharp cheekbones, and eyes that evaluate everything they see like an appraiser assessing collateral. She wears severity like other people wear cologne. Her rise from the Shelf to the Spires is a story she never tells because it would reveal vulnerabilities she's spent decades armoring over. What matters is the present: she is the best corporate investigator in GLMZ, and everyone who matters knows it.\n\nHer methods are exhaustive and merciless. When she's hired to find a mole, the mole is found. When she's hired to prove fraud, the fraud is proven. She has never failed to deliver a result, though the results aren't always what her clients wanted to hear — she has, on three occasions, identified the client themselves as the source of the problem they hired her to investigate. She presents these findings with the same glacial professionalism as any other report, which is why she gets hired again despite making powerful people very uncomfortable.",
   "affiliation": "Meridian Corporate Intelligence Group — a boutique firm serving Tier 4-5 clients",
   "tier": "Tier 4",
   "location": "A fortified suite on the 87th floor of the Tessera-adjacent Pinnacle Tower, Spires district, near Lake Shore Drive and Division",
@@ -47,7 +47,7 @@
   "story_hooks": [
     "Thandiwe is hired to investigate a data breach at Axiom, but the trail leads to Director Kaito himself — her biggest client and the source of 40% of her revenue",
     "Someone is feeding information about her ongoing investigations to the subjects she's investigating, and the leak is inside her own firm",
-    "A Shelf-level PI contacts her with evidence of a corporate crime so large it could destabilize Meridian 88's economy — but the evidence was obtained illegally and she has to decide whether her ethics or her effectiveness takes priority"
+    "A Shelf-level PI contacts her with evidence of a corporate crime so large it could destabilize GLMZ's economy — but the evidence was obtained illegally and she has to decide whether her ethics or her effectiveness takes priority"
   ],
   "tags": [
     "character",
@@ -62,7 +62,7 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "WELLSPRING",
     "The Shelf",
     "The Heritage Vault",
@@ -72,5 +72,25 @@
     "Déjà Vu",
     "Arcturus MN-3 'Digger'"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "South African / Norwegian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, musculature defined by discipline rather than bulk. Efficient rather than imposing — a frame built for sustained focus and precise movement, not intimidation.",
+    "hair_color": "Natural black with silver threading at the temples",
+    "hair_style": "Pulled back in a tight, functional braid or wrapped in a sleek low knot",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Deep brown with amber undertones, unnervingly steady",
+    "skin_tone": "Deep mahogany with warm undertones, unmarred and maintained with precision",
+    "complexion": "Sharp cheekbones, precise jawline, minimal expression lines despite age — a face that has trained itself not to broadcast emotion. Skin condition is immaculate; grooming is ritualistic and flawless.",
+    "distinguishing_marks": [
+      "A thin white scar running 4cm along her left jawline, barely visible under professional lighting, likely from a blade or industrial accident",
+      "Faint linear scarring on both wrists (inner forearm), barely 2mm wide, consistent with subcutaneous implant installation"
+    ],
+    "visible_augmentations": "None visible. Her augmentations, if present, are subcutaneous or subdermal — no chrome, no LED optics, no external modifications. This is deliberate: she is designed to blend into Tier 1 boardrooms.",
+    "posture_movement": "Upright and economical. She moves with the controlled precision of someone who has trained muscle memory into a weapon. Her gaze lingers on details others miss. She does not fidget, does not shift weight, does not telegraph intent through body language — presence through stillness.",
+    "clothing_style": "Tier 1 corporate formal: tailored midnight-blue or charcoal wool blazers, crisp white or ivory shirt-blouses, high-waisted black trousers with clean lines, minimal jewelry (a single platinum ring, understated). Footwear is expensive and silent — leather loafers or minimalist heels that allow her to move without sound. Her bag is a slim leather briefcase, well-maintained, no logos. Nothing is worn; everything is maintained. She dresses like someone who has learned that visibility is a liability and invisibility is a luxury."
+  },
+  "image_prompt": "A woman in her early forties with deep mahogany skin, sharp defined cheekbones, and dark eyes that assess everything with cold precision. South African-Norwegian heritage. Hair pulled back severely in a tight braid with silver threading at temples. Wearing a tailored midnight-blue wool blazer over a crisp white blouse, high-waisted black trousers, minimal jewelry. Standing in a modern glass-walled office on the 87th floor, floor-to-ceiling windows showing the GLMZ skyline and Lake Shore at night, neon and corporate lighting reflected on glass. She holds a sleek tablet. Cyberpunk aesthetic, corporate noir, cool lighting, sharp focus, photorealistic, stern and composed expression, absolutely no visible augmentations, Tier 1 luxury, professional and dangerous. Shot from waist up, cinematic, --ar 2:3 --v 6"
 }

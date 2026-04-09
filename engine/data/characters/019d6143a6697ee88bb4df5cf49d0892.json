@@ -246,7 +246,7 @@
   "related_entities": [
     "Helix Biosystems",
     "The Alban Souk",
-    "Meridian 88",
+    "GLMZ",
     "Dewdrop",
     "Grandmother",
     "Ironhaven",
@@ -257,5 +257,27 @@
     "The Pure Hand",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Portuguese / Mongolian",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and substantial, muscular through the arms and back from decades of grinding and compounding work, thickened through the middle with age but carrying it with zero self-consciousness",
+    "hair_color": "Natural black with silver-grey threading throughout",
+    "hair_style": "Thick locs piled high atop her head, wrapped in a layered cloth of orange and violet",
+    "hair_length": "Long (locs reach mid-back when unbound)",
+    "eye_color": "Deep brown, alert and appraising",
+    "skin_tone": "Deep umber with rich undertones, unmarked by sun damage despite decades outdoors in the Souk",
+    "complexion": "Face lined with expression—deep nasolabial folds, crow's feet that deepen when she smiles (rarely), strong jawline, broad nose slightly flattened, lips thin. Skin is meticulously maintained despite visible wear.",
+    "distinguishing_marks": [
+      "Bioluminescent subdermal nodes implanted along both collarbones in a descending pattern, currently faint teal, capable of shifting amber when irritated",
+      "Permanent staining at the knuckles of both hands—deep ochre and indigo from decades of pigment work, visible even under scrupulous daily cleaning",
+      "Fine scar tissue across the first three fingers of her right hand (grinding accident, thirty years ago), barely visible but palpable to touch",
+      "Small ritual scarification marks along her right temple (cultural, pre-augmentation, faded to barely visible)"
+    ],
+    "visible_augmentations": "Bioluminescent nodes along collarbone (active, color-shifting). Reinforced finger joints visible as faint metallic striations at knuckles under certain light. Olfactory enhancement implant not visually apparent (subcutaneous, behind left ear).",
+    "posture_movement": "Stands with weight evenly distributed, shoulders back, hands usually at rest or in precise deliberate motion. Moves without wasted energy—no fidgeting, no rushing. When listening to customers describe ailments, she is perfectly still, eyes half-lidded. Occasionally taps one finger on her counter in a rhythm only she hears.",
+    "clothing_style": "Tier 3-4 practical: hand-dyed linen chemise in muted sage or rust, layered under a sleeveless canvas apron with deep pockets filled with vial racks and small tools. Heavy cotton wraps cinched at the waist. Worn leather sandals with reinforced soles. A single piece of jewelry—a tarnished brass ring on her left index finger, worn smooth. Nothing corporate, nothing flashy, everything functional and maintained with care."
+  },
+  "image_prompt": "A 52-year-old West African-Portuguese-Mongolian woman, deep umber skin, standing behind a cluttered herbalist stall in a neon-lit underground market. Thick black locs piled high and wrapped in orange and violet fabric. Bioluminescent teal nodes glow faintly along her collarbone. Her broad, muscular shoulders frame a weathered face with deep expression lines and sharp, assessing eyes. Her hands—stained deep indigo and ochre at the knuckles from decades of grinding herbs—rest on vials of various remedies. She wears a muted linen chemise under a canvas apron filled with small bottles and tools. The background shows hanging dried root bundles, hand-scratched labels, and the soft glow of refrigeration systems. Moody, neon-amber and teal lighting, cinematic depth of field, photorealistic with subtle cyberpunk aesthetic. --ar 2:3 --v 6"
 }

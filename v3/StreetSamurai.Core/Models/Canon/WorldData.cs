@@ -1,3 +1,4 @@
+using System.Text.Json;
 using System.Text.Json.Serialization;
 using StreetSamurai.Core.Interfaces;
 
@@ -90,6 +91,9 @@ public class WorldbuildingDocument : ICanonEntity
     [JsonPropertyName("line_count")] public int LineCount { get; set; }
     [JsonPropertyName("headings")] public List<string> Headings { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+
+    /// <summary>Captures any extra JSON fields not explicitly modeled (e.g., map_polygon, coordinates).</summary>
+    [JsonExtensionData] public Dictionary<string, JsonElement>? ExtraData { get; set; }
 }
 
 /// <summary>

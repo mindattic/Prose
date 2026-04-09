@@ -220,5 +220,26 @@
     "Silver",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Mongolian / Ghanaian / Scandinavian",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Compact and settled, with the rounded shoulders and slight forward lean of a career seated operator. Broad-chested but softened through the midsection from decades in a tram cab. Hands weathered and strong-knuckled.",
+    "hair_color": "Silver-white",
+    "hair_style": "Completely shaved, scalp shows faint sun damage and a surgical scar from an old implant site near the right temple",
+    "hair_length": "Shaved",
+    "eye_color": "Amber with dark geometric tessellation (geneware-modified patterned iris)",
+    "skin_tone": "Weathered medium-dark brown with uneven pigmentation from years of interior transit work and sporadic sun exposure",
+    "complexion": "Broad, deeply lined face with pronounced crow's feet from decades of squinting at track ahead. Strong jawline softened by age. Perpetual slight furrow between brows. Skin texture rough around cheekbones and temples.",
+    "distinguishing_marks": [
+      "Faint scar tissue around right temple area where cochlear dampener was implanted, barely visible beneath shaved scalp",
+      "Deep weathering lines radiating from outer corners of both eyes in a starburst pattern",
+      "Thin white scar along left forearm, approximately 7cm long, acquired during 2194 Reroute construction"
+    ],
+    "visible_augmentations": "The patterned amber irises with geometric tessellation are immediately striking and unusual — clearly deliberate geneware. Cochlear dampener implant is subcutaneous but a faint line of scar tissue traces his right mastoid. Mechanical knee brace visible on right leg when he walks or sits — brushed steel framework with polymer sleeve, well-maintained but clearly old.",
+    "posture_movement": "Sits with the slight forward lean of someone accustomed to a tram operator's chair. Walks with a methodical pace, favoring his left leg slightly due to the knee brace. Moves with economical gestures, nothing wasted. Tendency to hold onto nearby surfaces when standing on moving transports — habitual caution.",
+    "clothing_style": "Ferrogate Transit operator uniform (Tier 3-4 working class): navy-blue polymer weave jumpsuit with reflective piping and Transit Authority insignia on left chest. Underneath, plain gray synthetic undershirt. Well-maintained but worn; fabric pills slightly at the shoulders. Supplementary items: reinforced canvas work jacket with grease stains near the cuffs, worn-in leather belt with Ferrogate brass buckle, slip-on safety boots (black synthetic, scuffed). Off-duty: same neutral palette — gray or navy synthetics, nothing flashy. Practical layers suitable for Tier 5 Ironvein ambient temperatures."
+  },
+  "image_prompt": "Cyberpunk character portrait of an aging tram operator, 61 years old, compact athletic build with settled posture, completely shaved head revealing surgical scars, weathered medium-dark brown skin with deep eye-crinkles, striking amber eyes with geometric black tessellation pattern (geneware modification), broad Mongolian-Ghanaian features. Wearing worn Ferrogate Transit navy-blue operator jumpsuit with reflective piping and insignia, grease-stained work jacket. Mechanical steel knee brace visible on right leg. Slight forward lean from decades of sitting. Industrial depot setting with tram car visible behind, fluorescent depot lighting casting harsh shadows, gritty Tier 5 urban aesthetic, worn metal and weathered polymer textures, cinematic realism, moody transit station atmosphere, 8K detail, character illustration style --ar 2:3 --v 6"
 }

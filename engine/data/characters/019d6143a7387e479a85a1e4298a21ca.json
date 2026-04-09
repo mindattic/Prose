@@ -233,5 +233,25 @@
     "The Pale Mile",
     "University Spine"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Finnish / Hausa",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Narrow and wiry, built for efficiency rather than bulk. Long-limbed with defined musculature from repetitive kitchen work — shoulders and forearms show visible lean muscle. No excess body fat.",
+    "hair_color": "Natural dark brown with bleached platinum tips",
+    "hair_style": "Closely cropped, textured fade with intentional blonde highlights on the crown and sides",
+    "hair_length": "Short",
+    "eye_color": "Pale grey-green with subtle copper undertones",
+    "skin_tone": "Warm cream-to-copper complexion — light but with warm undertones that shift in different lighting, reflecting mixed Finnish and Hausa ancestry",
+    "complexion": "Sharp-featured with high cheekbones and a narrow jaw. Skin appears well-maintained despite nocturnal schedule — minimal visible acne, clear forehead. Faint laugh lines forming around the eyes. Expression defaults to focused intensity.",
+    "distinguishing_marks": [
+      "Single horizontal line of bioluminescent Hausa script tattooed along the entire length of the left forearm, reading 'do not forget the sauce' — glows faint cyan under low light",
+      "Pale grey geneware tail with black tips, approximately 1.2 meters long, wraps around the left ankle when standing still or focused on detailed work"
+    ],
+    "visible_augmentations": "Pale grey-and-black geneware tail (living, emotive, capable of subtle movement and coiling). Bioluminescent forearm text visible in dim lighting. No obvious chrome or subdermal plating.",
+    "posture_movement": "Moves with deliberate, practiced economy — every gesture minimized and efficient. When working the wok, becomes almost meditative, movements fluid and rhythmic. At rest or between customers, tends toward stillness rather than fidgeting. Tail mirrors emotional state, curling tighter when focused or stressed, relaxing when calm. Walks with a slight forward lean, ready-stance.",
+    "clothing_style": "Tier 4 working-class functional. Typically wears heat-resistant synthetic apron over fitted dark utility clothes (usually black or charcoal). Loose-fitting pants with reinforced knee panels and cargo pockets, steel-toed slip-on work shoes. Favors oversized hoodies or tech-fiber jackets in muted tones (grey, dark green) for off-cart hours. Minimal jewelry — no accessories. Clothes show wear but are always clean; grease stains treated immediately. Aesthetic is practical-first, with subtle personal expression through color choices and a single well-maintained watch (used for timing broths)."
+  },
+  "image_prompt": "cyberpunk character portrait, nonbinary androgynous person with sharp features and copper-cream skin tone, pale grey-green eyes, short dark hair with platinum blonde tips, wearing fitted black utility clothes and heat-resistant apron, pale grey-and-black geneware tail wrapped around left ankle, glowing cyan Hausa script tattoo running along left forearm, focused and meditative expression, noodle cart vendor aesthetic, moody cool lighting with cyan and amber neon reflections, gritty night market setting, dramatic shadows, professional character art, --ar 2:3 --v 6"
 }

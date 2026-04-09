@@ -217,5 +217,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Gravimetric Collapse Charge GCC-9"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / South Asian",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Tall and angular with lean musculature; movements economical and precise, suggesting years of fine motor work. Shoulders slightly forward from studio posture.",
+    "hair_color": "Deep black, natural",
+    "hair_style": "Shaved close on sides and back, dense coil of dark hair on crown, often threaded with discarded fiber-optic wire",
+    "hair_length": "Medium (crown only)",
+    "eye_color": "Left eye: dark brown, natural. Right eye: retrofitted spectral-recording lens with faint iridescent sheen and micro-circuitry visible at iris edge",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Clear and angular; bioluminescent amber traceries pulse across collarbones and forearms in slow wave patterns when calm, spiking into white fractals when agitated or in creative flow. Faint scent of ozone and soldering flux clings to their clothing and skin.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware traceries across both collarbones forming interconnected geometric patterns",
+      "Bioluminescent traceries extending down both forearms in branching circuit-like designs",
+      "Left ocular implant visible as metallic lens ring with faint copper and silver circuit patterns around iris"
+    ],
+    "visible_augmentations": "Left eye retrofitted with spectral-recording lens (visible metallic housing and micro-circuitry around iris). Bioluminescent dermal traceries across collarbones and forearms (cosmetic geneware, actively glowing). Haptic feedback nodes on fingertips visible as faint metallic nodes under skin at each fingertip.",
+    "posture_movement": "Moves with deliberate economy—no wasted motion. Often stands still for extended periods while thinking, fingers unconsciously twitching as if sculpting invisible light. Head tilts when listening despite minimal verbal responses. Hands frequently gestured mid-air as if manipulating holograms even in conversation.",
+    "clothing_style": "Tier 3-4 utilitarian mixed with artistic statement: repurposed data-cables worn as jewelry (necklaces, wrist wraps); worn black synthetic cargo pants with bulging pockets (tools, light-paper scraps); oversized lab coat or modified indigo denim jacket with sleeves rolled to expose augmented forearms and traceries. Scuffed zero-gravity work boots. Faint shimmer of solder residue on fabric. Occasionally wears safety goggles pushed up on forehead even when not working."
+  },
+  "image_prompt": "Tall, angular nonbinary figure with deep brown skin and shaved sides, dense crown of dark hair threaded with fiber-optic wire. Left eye retrofitted with iridescent spectral-recording lens, right eye dark brown. Bioluminescent amber geometric traceries pulse across collarbones and forearms in circuit-like patterns, spiking white when agitated. Wearing oversized indigo denim jacket, black cargo pants, zero-gravity boots; repurposed data-cables as jewelry. Standing in moody studio loft with holographic installation in background, soft amber and white light emanating from skin augmentations. Cyberpunk artist aesthetic, contemplative posture, faint ozone haze. Cinematic lighting, volumetric light rays, high detail on facial features and augmentations, cool color grading with warm bioluminescent accents. --ar 2:3 --v 6"
 }

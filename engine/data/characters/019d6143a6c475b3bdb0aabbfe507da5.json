@@ -181,5 +181,25 @@
     "Déjà Vu",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Tajik / Nigerian",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and compact, economical in movement — the build of someone who takes up only as much space as necessary. Minimal visible musculature; wiry rather than athletic.",
+    "hair_color": "Currently black; cosmetically mutable via subdermal geneware panel",
+    "hair_style": "Blunt cut, chin-length, styled to sit neutrally around the face — neither masculine nor feminine in presentation, deliberately unremarkable",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, unremarkable luminosity",
+    "skin_tone": "Warm light brown with subtle undertones suggesting both Central Asian and West African ancestry",
+    "complexion": "Clean, well-maintained skin with a matte finish — minimal scarring, no visible acne. Face is softly angular; cheekbones neither prominent nor recessed. Expression defaults to neutral attentiveness. Eyebrows are dark and groomed but not styled. No facial hair.",
+    "distinguishing_marks": [
+      "Small tattoo of an open eye (approximately 2cm diameter) on the inner surface of the left wrist — usually concealed during work hours with a wrist cuff or sleeve",
+      "Faint surgical scar along the back of the neck, approximately 4cm, barely visible unless hair is pulled away — location of dermal hair-color modification panel"
+    ],
+    "visible_augmentations": "The back-of-neck dermal panel is occasionally visible as a faint rectangular outline beneath the skin when hair is wet or pulled tightly back, but remains concealed under normal circumstances. The subdermal microfabricator array in the dominant hand (right) shows as a faint lattice of silver-gray lines beneath the skin across the palm and inner forearm, visible only at close range or in bright light. No external chrome or obvious technological modification.",
+    "posture_movement": "Stands with weight centered, shoulders relaxed but not slouched — a neutral baseline posture that broadcasts neither confidence nor anxiety. Moves with deliberate precision; economical gestures. Hands move with practiced control. Overall impression is of someone perpetually in a state of calm focus, as if solving a complex problem in real time. Maintains slight distance in social contexts; does not fidget.",
+    "clothing_style": "Tier 3-4 blend: functional, well-maintained, deliberately unmemorables. Typically wears neutral-toned layered clothing — charcoal or dark gray long-sleeved shirts, sometimes a fitted dark vest without logos. Dark trousers (black or dark gray), always with functional pockets. Shoes are practical and worn: good-condition but aging synthetic leather boots or slip-ons, kept clean but not polished. A dark hooded jacket or long coat for movement between locations. No visible jewelry except occasionally a simple wrist cuff in matte black that covers the eye tattoo. Accessorizes with a shoulder bag or messenger satchel (no obvious branding, worn leather, practical organization). Overall aesthetic: someone dressing for utility and invisibility, not expression. Clothes are replaced before they become notable; nothing torn, nothing flashy."
+  },
+  "image_prompt": "Portrait of a 27-year-old nonbinary person of mixed Tajik-Nigerian heritage, medium height and lean build, warm light-brown skin, dark eyes, blunt chin-length black hair that shifts colors subtly through LED cosmetic geneware. Neutral professional expression, standing still with deliberate posture. Wearing dark gray layered clothing, functional charcoal vest, black fitted trousers, practical worn leather boots. Faint surgical scar visible at the back of the neck. Inner left wrist shows a small open-eye tattoo, partially covered by a matte black wrist cuff. Faint silver metallic tracery visible beneath the palm skin of right hand. Setting: dim overhead fluorescent lighting in a modest legal services kiosk, document-covered desk background slightly out of focus. Cyberpunk aesthetic, realistic portraiture, cool color grading, soft shadows, photorealistic detail, --ar 2:3 --v 6"
 }

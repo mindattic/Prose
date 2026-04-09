@@ -279,5 +279,28 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "West African / Spanish",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Stocky and dense with lean muscle — built for sustained positioning and recoil absorption rather than speed. Shoulders broad, core compact and rigid. Forearms thick from years of weapon handling and stabilization work.",
+    "hair_color": "Black with silver-grey threading at temples",
+    "hair_style": "Pulled back tight in a functional braid, kept off the face",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown — natural, no augmentation",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Weathered and scarred. Jaw is sharp and prominent, set in a resting expression of controlled tension. Skin around the eyes shows accumulated fatigue — nocturnal living carved into her face.",
+    "distinguishing_marks": [
+      "Visible surgical scarring along both temples in parallel lines where the neural dampener was installed — crude, functional work, roughly 8cm each side",
+      "Jagged scar tissue along the left jawline from temple to chin — appears to be from either installation complications or old trauma, possibly both",
+      "Fine-line tattoo along the inside of her right wrist — old design, faded — appears to be a maker's mark or crew insignia from early career",
+      "Burn scarring on the back of her right hand — white and puckered — consistent with weapon discharge or circuit feedback",
+      "Callus pattern on her palms distinctive — shaped by years of rifle ergonomics and maintenance work"
+    ],
+    "visible_augmentations": "Chrome neural dampener visible at temples as metallic inlays following the scarring — dull gunmetal finish, unadorned. The installation work is clearly visible and intentionally unrefined. No cosmetic covering or blending attempted. Synthetic muscle fiber in legs not visually obvious at first glance but becomes apparent in movement — unnatural smoothness and efficiency in lower body mechanics, particularly in stair avoidance and ground positioning.",
+    "posture_movement": "Stands with weight distributed evenly, ready to shift laterally. Movements economical and precise — no wasted motion. When seated, positions herself with clear sight lines and exits in mind. Walks with a slight forward lean from the hips. Noticeably stiff on stairs — the synthetic leg fibers cause her to take them slowly, methodically, which she does without apparent frustration.",
+    "clothing_style": "Tier 4 practical — function over presentation. Dark neutral base layers (charcoal, black, muted grey) in breathable synth-cotton blend. Oversized tactical vest or reinforced jacket in worn charcoal with multiple pockets and modular attachment points — patched multiple times, clearly maintained rather than replaced. Cargo pants in dark grey with thigh pockets for ammunition or tools. Footwear is heavy-soled tactical boots, scuffed and broken in. Minimal jewelry — a single worn silver ring on left hand, possibly crew or family marker. No corporate branding visible. Clothing shows practical damage — minor tears, slight discoloration from equipment oil, the aesthetic of someone who cares about function over upkeep."
+  },
+  "image_prompt": "Cyberpunk portrait of Ebele Medina-Quaye, 37-year-old West African-Spanish female sniper, stocky athletic build with deep brown skin. Tight black braid pulled back from face revealing visible chrome neural dampener inlays at temples with crude surgical scarring. Dark weathered eyes. Jagged scar tissue along left jawline. Wearing dark grey tactical vest over charcoal base layer, modular pockets, worn battle-scarred equipment vest. Harsh neon-tinged shadow lighting, cool blue and amber ambient glow from station lights. Meridian Station interior background — concrete, steel, transit infrastructure. Nocturnal, exhausted, predatory focus. Gritty cyberpunk noir aesthetic, texture detail on scarring and chrome, professional precision instrument atmosphere. High contrast shadows. --ar 2:3 --v 6"
 }

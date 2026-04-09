@@ -43,7 +43,7 @@
       "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
       "Thinks speed can substitute for planning because it's worked so far"
     ],
-    "secret": "Rongo Delgado-Opoku sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Rongo Delgado-Opoku sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
@@ -284,5 +284,26 @@
     "Slagworks Industrial",
     "Pellucid Systems"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Latin American (Spanish/Indigenous) / West African (Akan)",
+    "height_cm": 183,
+    "weight_kg": 62,
+    "build": "Rawboned and angular — lean muscle without softness, the frame of someone who burns calories faster than she replaces them. Shoulders broad but lack bulk; visible muscle definition in forearms and legs suggests constant movement rather than gym discipline.",
+    "hair_color": "Deep brown, naturally dark with subtle red undertones in direct light",
+    "hair_style": "Pulled back in a utilitarian braid, sometimes left loose. Practical, never decorative.",
+    "hair_length": "Long — reaches mid-back when unbraided, but worn tied up 90% of the time",
+    "eye_color": "Dark brown, alert and flat — the kind of stare that suggests she's already calculated your threat assessment",
+    "skin_tone": "Medium-warm complexion, the blend of West African and Latin American heritage creating a tone that shifts between bronze and clay depending on light and rest levels",
+    "complexion": "Angular face with high cheekbones and a squared jaw. Minimal grooming — no cosmetics, scars left unsmoothed. Skin shows the wear of irregular sleep and constant low-grade stress; slight dark circles are permanent fixtures. Lips thin, mouth set in a default neutral line.",
+    "distinguishing_marks": [
+      "Thin white scar along her left jawline, approximately 6cm, running from ear toward chin — looks like a blade wound, old enough to have faded but too precise to be accidental",
+      "Cluster of small burns on the inside of her right wrist, faint and somewhat hidden by her sleeve line — appears to be chemical or thermal in origin, deliberate-looking but not decorative",
+      "Tattoo on her left collarbone area, partially visible: a minimalist geometric pattern suggesting a stylized bird in flight, done in black ink — runner culture marker"
+    ],
+    "visible_augmentations": "Chrome visible along both forearms in the form of reinforced wiring and interface ports — synthetic silver-grey metal work visible at wrist and elbow joints, practical rather than ornamental. Neural port at the base of her skull, behind her left ear, marked by a small raised seam and a faint shimmer of subdermal circuitry. Her eyes themselves don't glow, but there's an almost imperceptible flicker when she's processing data or making threat assessments — tells if you know what to look for. The adrenaline pump augmentation creates a subtle tension in her chest and shoulders, a readiness that never fully relaxes.",
+    "posture_movement": "Moves with the efficiency of someone who's trained out of her natural grace — controlled, minimal wasted motion, weight balanced on the balls of her feet even when standing still. Shoulders slightly forward, head slightly cocked, as if always half-turning toward potential threats. Her hands rest naturally at her sides but are never truly still — fingers move in small patterns, testing tension, checking gear. She doesn't fidget; she calibrates.",
+    "clothing_style": "Tier 3 working-class courier aesthetic — function over fashion, but not poverty-coded. Black synthetic leather jacket (weathered, multiple repair patches, burn mark on the right sleeve), reinforced cargo pants in slate grey with pockets positioned for quick access and gear distribution, worn commuter boots with grippy soles. Thin base layer under the jacket, visible collarbone area for neural port accessibility. No visible jewelry except a thin bracelet on her right wrist — likely serves a functional purpose (timepiece, data interface, or reminder). Bag is a tactical sling pack, dark fabric, custom-modified with hidden compartments and signal-blocking lining. Clothing deliberately unremarkable — designed not to catch attention, to blend into runner infrastructure."
+  },
+  "image_prompt": "Cyberpunk portrait of a 28-year-old woman with mixed Latin American and West African heritage, tall and rawboned with angular features and deep brown eyes. Dark brown hair braided back, visible chrome augmentations on both forearms with silver-grey wiring visible at the joints. Faint scars on jawline and wrists, minimalist geometric bird tattoo on collarbone. Wearing weathered black synthetic leather jacket with burn mark, slate cargo pants, worn tactical boots. Neural port visible at base of skull behind ear. Posture is alert and controlled, weight balanced forward, expression flat and calculating. Standing in dimly lit Narrows corridor with neon overhead, industrial metal walls, shallow depth of field. Mood is tense, ready, dangerous. Moody cyberpunk lighting, cool blue-grey tones with hint of amber streetlight. Professional courier aesthetic, Tier 3 working-class gear. Cinematic, highly detailed, sharp focus on face and chrome --ar 2:3 --v 6"
 }

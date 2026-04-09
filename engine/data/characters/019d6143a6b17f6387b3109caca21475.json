@@ -253,5 +253,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Palette"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "East African / Polish",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and substantial, muscular beneath a layer of age-softened tissue. Moves with deliberate slowness — not infirmity, but economy of motion. The build of a man who has learned that haste wastes resources.",
+    "hair_color": "Steel gray with hints of original black at the temples",
+    "hair_style": "Worn long enough to tie back, usually in a loose knot or left loose around his shoulders. Unkempt but not negligent — the style of someone who stopped caring about grooming aesthetics decades ago.",
+    "hair_length": "Medium to Long",
+    "eye_color": "Left eye: amber-iris diagnostic scanner with faint internal luminescence. Right eye: deep brown, bloodshot at the sclera from decades of close surgical work.",
+    "skin_tone": "Deep brown with an ashen undertone from living beneath the overpass, weathered and lined",
+    "complexion": "Deeply lined face — forehead, around the eyes, bracketing the mouth. Scruffy facial hair, mostly gray, kept at a few days' growth rather than shaved or fully bearded. Dry patches on the cheeks. The complexion of someone who washes with cold water and doesn't moisturize.",
+    "distinguishing_marks": [
+      "Chemical burn scar covering the left side of his jaw and extending down his neck in a mottled pattern of lighter and darker brown skin, with some areas puckered and hairless",
+      "Surgical scar on his left forearm — clean, precise, approximately 12cm long, indicating self-installation of the nerve-dampening mesh",
+      "Faded tattoo on his right wrist: a medical caduceus intertwined with what appears to be Swahili text, nearly illegible from age"
+    ],
+    "visible_augmentations": "Left eye: amber-iris diagnostic scanner with continuous faint glow, subtle mechanical iris adjustments visible during focus. Wrist-mounted lockbox on left arm (wrist-chained), worn steel with scratched surfaces. Subdermal nerve mesh partially visible as faint silvery tracery along the backs of both hands under the skin, more prominent when his hands are in certain light.",
+    "posture_movement": "Stands with a slight forward lean, as though perpetually listening. Moves deliberately and without wasted motion — every step measured, every gesture purposeful. Favors his right side slightly. When performing surgery or detail work, his entire body stills into absolute concentration. Rarely makes eye contact; the amber glow of his left eye often directed downward or into middle distance.",
+    "clothing_style": "Salvaged thermal coat, heavily patched with mismatched fabrics — canvas, synthetic leather, thermal-insulated nylon in grays, browns, and blacks. The coat is clearly his primary garment, worn in all seasons. Beneath it: simple undyed cotton shirt and cargo trousers with multiple pockets, all stained and worn. Boots are military surplus or scavenged, resoled multiple times. A length of cord serves as a belt. A canvas sling bag for his portable surgical kit. Everything speaks of Tier 5 functionality — nothing chosen for appearance, everything chosen for durability and utility."
+  },
+  "image_prompt": "Cyberpunk street preacher and unlicensed surgeon, 61-year-old male with deep brown skin and steel-gray hair worn long and unkempt, wearing a heavily patched salvaged thermal coat. His left side of his face and neck scarred from old chemical burn, mottled lighter and darker brown. His left eye glows with an amber diagnostic scanner iris, faintly luminescent. Broad-shouldered and weathered, standing beneath a transit overpass with canvas awning in background, surgical kit in a chained lockbox at his wrist. Holding a water-damaged notebook and a cup of tea. Faint subdermal tracery visible on the backs of his hands. Dramatic downward lighting casting shadows under his eyes, cold blue-gray industrial setting, rain-slicked concrete, Lake Shore District ambiance, Tier 5 ungoverned infrastructure, photorealistic, intricate detail on scar tissue and worn fabric, contemplative and weary mood, moody cyberpunk realism --ar 2:3 --v 6"
 }

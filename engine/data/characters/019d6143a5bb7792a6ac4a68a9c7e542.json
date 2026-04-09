@@ -31,7 +31,7 @@
     "core_desires": [
       "Stability — a place to sleep that's the same place two nights running",
       "To protect the people in their district who can't protect themselves",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
@@ -281,5 +281,26 @@
     "Burden of Longitude",
     "Slagworks Industrial"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Broad-shouldered and heavy-set, with dense muscle mass beneath a layer of middle-aged weight distribution. Carries his frame with the controlled balance of someone who knows exactly how much force he contains.",
+    "hair_color": "Steel gray with hints of dark brown at the roots",
+    "hair_style": "Closely cropped, military-practical",
+    "hair_length": "Short",
+    "eye_color": "Left eye: dark brown, natural. Right eye: matte gunmetal chrome with faint amber lens-flare beneath the surface",
+    "skin_tone": "Deep tan with warm undertones, weathered from 65 years of living",
+    "complexion": "Strong jawline, broad nose, deep-set eye sockets. Skin shows age gracefully — fine lines around the mouth and temples, minimal scarring on the face itself. Close-shaved jaw, minimal facial hair. No vanity in grooming, only maintenance.",
+    "distinguishing_marks": [
+      "Faint white scar running three inches down the left side of his neck, partially hidden by the collar line",
+      "Burn scarring on the inside of his right forearm — old, pale, consistent with industrial heat exposure",
+      "Small tattoo on the inside of left wrist: a single vertical line with three horizontal marks crossing it — utilitarian, not decorative"
+    ],
+    "visible_augmentations": "Right eye is unmistakably cybernetic — matte chrome casing with a faintly visible aperture mechanism and amber-tinted optical sensor. No effort to conceal it. The augmentation is professional-grade, industrial aesthetic. Suggests additional augmentation beneath clothing that isn't immediately visible.",
+    "posture_movement": "Stands with weight evenly distributed, never off-balance. Moves with deliberate economy — no wasted motion, no nervous gestures. Eyes track people and exits constantly, habit made instinct. When stationary, he creates an impression of coiled potential rather than relaxation.",
+    "clothing_style": "Mid-tier Spires resident wearing quality without ostentation: charcoal wool blazer, dark neutral underlayers, tailored but not form-fitting. Custom-fitted jacket with subtle reinforcement panels at the shoulders. Expensive boots broken in from real use, not display. No logos, no flash, no jewelry. Dresses like someone who needs to move quickly and be forgettable."
+  },
+  "image_prompt": "Portrait of a 65-year-old man with Scandinavian and West African heritage, 188cm tall, heavy broad-shouldered build, steel-gray closely cropped hair, deep tan weathered skin. Distinctive right eye is matte chrome cybernetic with amber lens, left eye dark brown natural. Strong jawline, minimal scars. Wearing charcoal wool blazer over dark layers, professional and muted. Stands with coiled potential, weight evenly distributed. Cyberpunk bodyguard, intense and precise, industrial aesthetic. Dimly lit interior setting, neutral color palette, subtle LED rim lighting catching the chrome eye augmentation. Photorealistic, weathered, dangerous competence. --ar 2:3 --v 6"
 }

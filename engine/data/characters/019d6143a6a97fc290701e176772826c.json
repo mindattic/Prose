@@ -239,5 +239,25 @@
     "Big Rig",
     "Compass Rose"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Southern African (Zulu/Xhosa) / Inuit (Nunavik)",
+    "height_cm": 142,
+    "weight_kg": 32,
+    "build": "Wire-thin and small for his age, with the compact frame of a child adapted to scarcity; no excess mass, all efficient movement",
+    "hair_color": "Dark brown with sun-bleached copper undertones",
+    "hair_style": "Cropped close to the scalp in a practical cut",
+    "hair_length": "Short",
+    "eye_color": "Very dark brown, nearly black, with unusual brightness and alertness",
+    "skin_tone": "Deep reddish-brown, sun-weathered with the particular quality of someone who has crossed harsh climates",
+    "complexion": "Sharp, intelligent facial structure; scalp shows patchy sun damage from extended outdoor exposure; no facial hair; skin is lean and defined despite his age",
+    "distinguishing_marks": [
+      "Missing the tip of his right ring finger, cleanly severed below the first knuckle — frostbite damage from a winter crossing three years prior",
+      "Calloused palms and fingertips from pushing and operating the cargo cart daily"
+    ],
+    "visible_augmentations": "A salvaged solar-charge strap worn on his left wrist, weathered and patched, powering a battered handheld display device with a cracked screen; no chrome, no surgical augmentations",
+    "posture_movement": "Economical and deliberate; he moves quietly and without wasted energy; habitual head-tracking behavior — his eyes constantly register exits, obstacles, and personnel positions without appearing to focus on them; posture is alert but not tense, balanced for quick directional changes",
+    "clothing_style": "Practical Tier 4-5 hand-me-downs fitted with improvised adjustment ties; garments two sizes too large that have been cinched, knotted, or stitched to fit; worn synthetic cargo jacket with multiple pockets, faded gray thermal layers, patched utility pants; footwear is mismatched but functional — salvaged work boots held together with adhesive tape and paracord; everything is clean but weathered"
+  },
+  "image_prompt": "A 12-year-old boy with deep reddish-brown skin and sun-damaged scalp, cropped dark hair with copper undertones, very dark alert eyes; wire-thin wiry build, small for his age. Missing the tip of his right ring finger. Wearing oversized gray cargo jacket and patched utility clothes cinched with improvised ties, mismatched work boots held together with tape. On his left wrist, a salvaged solar-charge strap powering a cracked handheld device. Pushing an ancient cargo cart with a wheel made of different materials, geometric and angular in design. Standing in a vast industrial transit hub corridor with steel beams and cargo containers, fluorescent strip lighting casting hard shadows, Michigan Ave signage visible. His expression is watchful and intelligent, eyes tracking exits. Cyberpunk climate refugee aesthetic, hyperrealistic, cinematic lighting, gritty documentary style, shot from mid-chest up --ar 2:3 --v 6"
 }

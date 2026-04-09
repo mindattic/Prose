@@ -240,5 +240,26 @@
     "Arcturus CK-5 'Bloodhound'",
     "Nightlight"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Finnish / Nigerian",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Small and wiry, with a restless energy that manifests in constant fidgeting and quick, economical movements. Lean muscle from years of hauling inventory and navigating crowded markets.",
+    "hair_color": "Temperature-reactive geneware; shifts between deep black (cool) and washed-out violet (warm/excited)",
+    "hair_style": "Asymmetrical, deliberately unkempt with one side shorter than the other; often has loose strands falling across their face",
+    "hair_length": "Medium (3-8 inches depending on side)",
+    "eye_color": "Light gray-blue with faint amber flecks",
+    "skin_tone": "Pale, cool-toned complexion from Finnish heritage with warm undertones from Nigerian lineage",
+    "complexion": "Constellation of dark freckles across nose and cheeks intensified by bioluminescent nodes that glow faint amber when excited or body temperature rises. Freckles create an unusual, striking pattern that they've deliberately highlighted rather than minimized. Skin generally clear and unblemished; shows minor nicks and scars from handling equipment and market wear.",
+    "distinguishing_marks": [
+      "Bioluminescent freckle nodes in constellation pattern across nose and cheeks that emit soft amber glow when activated by body heat or emotional excitement",
+      "Small scar on left temple from a market accident (approximately 2cm, pale)",
+      "Faint burn mark on right inner wrist from soldering equipment (circular, approximately 1cm diameter)"
+    ],
+    "visible_augmentations": "Neural interface jack behind right ear (visible as small brushed-steel port with minimal scarring); bioluminescent freckle nodes glowing amber across face when excited. Subdermal data-chip reader in left palm is only visible as faint subcutaneous lines under skin when activated, otherwise hidden.",
+    "posture_movement": "Constantly in motion—fidgeting with fingers, bouncing slightly while standing, moving between inventory with economical precision. Restless energy contained within a small frame. Speaks with hands. Eyes dart frequently, taking in surroundings with magpie attention. Casual slouch when relaxed; tenses and focuses sharply when discussing data or negotiating.",
+    "clothing_style": "Tier 3-4 Burnished Market aesthetic: layered in mismatched, cheap textiles sourced from market trades rather than retail purchases. Often wears oversized cardigans or jackets in clashing patterns, thermal underlayers visible at cuffs, cargo pants or loose trousers with multiple pockets filled with small tools and chips. Boots are worn but maintained. Adorns wrists and ears with numerous handmade or traded jewelry pieces—mostly small earrings (6-8 per ear), beaded bracelets, and a mismatched collection of bangles. Overall effect is deliberately chaotic and performatively airheaded, masking careful intentionality beneath."
+  },
+  "image_prompt": "Portrait of a small, wiry nonbinary person with pale Finnish complexion and dark scattered freckles across nose and cheeks, glowing faint amber from bioluminescent nodes. Hair is asymmetrical, shifting between deep black and violet depending on temperature-reactive geneware, slightly chaotic and falling across face. Light gray-blue eyes with alert, intelligent expression. Visible brushed-steel neural interface port behind right ear. Wearing layered mismatched textiles from Burnished Market—oversized colorful cardigan over thermal underlayer, cargo pants with multiple pockets. Multiple handmade earrings and beaded bracelets visible. Small visible scar on left temple. Standing in crowded cyberpunk market stall surrounded by glowing media chips and holographic displays, neon signs reflecting off merchandise. Moody warm lighting with amber and violet color cast. Restless, fidgety posture. Cyberpunk noir aesthetic, gritty and worn but intelligent. Product-focused product shot with marketplace atmosphere in soft focus background. --ar 2:3 --v 6"
 }

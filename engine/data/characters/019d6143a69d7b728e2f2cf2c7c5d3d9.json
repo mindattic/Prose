@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Internal Affairs Investigator, Meridian 88 Metro Police",
+  "role": "Internal Affairs Investigator, GLMZ Metro Police",
   "age": 44,
   "status": "active",
   "location": "Fort Anchor, administrative wing, Precinct Seven sub-office, near Halsted and Chicago Ave",
@@ -63,7 +63,7 @@
   "narrative_function": "Quest giver, moral anchor, source of institutional pressure. Can task civilians with gathering evidence her badge would contaminate. Represents the system's genuine attempt to police itself — complicated, imperfect, real.",
   "augmentations": "Patterned hexagonal irises (cosmetic). Subdermal data-storage node along the left forearm — civilian-grade, used for case files. Neural notation implant that transcribes spoken observations directly to encrypted storage.",
   "daily_life": "Arrives at her sub-office before the day shift begins, reviews overnight surveillance flags, then spends the bulk of her day in interviews she calls 'conversations.' Eats lunch alone at the same noodle counter in Fort Anchor's lower concourse, always pays in Quanta cash.",
-  "affiliation": "Meridian 88 Metro Police, Internal Affairs Division",
+  "affiliation": "GLMZ Metro Police, Internal Affairs Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -215,5 +215,25 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Balkan (Bosnian)",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "build": "Lean and economical, muscled through the shoulders and forearms from years of desk work interrupted by fieldwork. No wasted mass. Posture suggests controlled breathing and deliberate stillness.",
+    "hair_color": "Natural dark brown with silver emerging at temples and scattered through close-cropped crown",
+    "hair_style": "Close-cropped, precision-cut, no styling product — practical, geometric",
+    "hair_length": "Short",
+    "eye_color": "Cosmetic augmentation: concentric hexagon irises in grey and amber, creating a geometric optical effect that seems to catch light differently depending on angle",
+    "skin_tone": "Deep ochre with warm undertones, even melanin distribution",
+    "complexion": "Minimal makeup, sun-weathered around the eyes from decades of focus work. Jaw defined. Slight leftward asymmetry to her mouth that becomes pronounced when she tightens her jaw — a tell she's unaware colleagues have learned to dread. Skin well-maintained, no visible acne or blemishes.",
+    "distinguishing_marks": [
+      "Faint circular scar on left forearm, approximately 2cm diameter, where the subdermal data-storage node was installed — barely visible but detectable on close inspection.",
+      "Thin white scar along her right jawline, approximately 4cm, running toward the ear — old, professionally healed, origin unknown."
+    ],
+    "visible_augmentations": "The patterned hexagonal irises are immediately noticeable and unsettling to most observers — they do not reflect light like natural eyes. Subdermal data node along left forearm creates a faint subcutaneous ridge that may be glimpsed if sleeve rides up. Neural notation implant is subcutaneous and invisible.",
+    "posture_movement": "Moves with economic precision, no wasted gesture. Walks through rooms as though following invisible lines. Sits perfectly upright, hands often folded or positioned for note-taking. Does not fidget. Breathing is controlled and measured. When listening, her stillness becomes almost unsettling — she appears to be downloading rather than conversing.",
+    "clothing_style": "Plain charcoal suits in expensive, understated fabrics that hang with precision. Never wrinkled, suggesting either obsessive maintenance or regular dry-cleaning access. White or pale grey undershirts, minimal jewelry (small stainless steel watch, no rings). Closed-toe boots in matte black leather, polished. Overall presentation: Tier 1-2 professional restraint, deliberately stripped of personality. No corpo logos or status symbols. Clothing is armor presented as uniform."
+  },
+  "image_prompt": "portrait of a 44-year-old Black woman with West African and Balkan heritage, lean muscular build, close-cropped natural dark hair with silver at temples, striking cosmetic augmentation eyes with concentric hexagon irises in grey and amber that catch light unnaturally, deep ochre skin tone, defined jawline, faint scarring on right jaw and left forearm. dressed in precisely tailored charcoal suit jacket and pale grey shirt, no jewelry except steel watch, seated upright in sterile administrative office interior with filing cabinets and data terminals, cool fluorescent overhead lighting casting sharp shadows, professional neutral expression suggesting restrained intensity, cyberpunk noir detective aesthetic, hyper-realistic, photorealistic --ar 2:3 --v 6"
 }

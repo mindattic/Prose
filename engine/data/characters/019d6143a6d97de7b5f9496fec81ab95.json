@@ -230,5 +230,25 @@
     "The Pale Mile",
     "Rust"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Mbodj) / Armenian (Kasparian)",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid without heaviness; a body built for endurance and presence rather than speed. Strong core, thick forearms, the kind of frame that suggests physical labor in her past and deliberate maintenance now.",
+    "hair_color": "Silver-white, fully grayed",
+    "hair_style": "Tight finger-coils, close to scalp, meticulously maintained",
+    "hair_length": "Short",
+    "eye_color": "Pale amber, naturally translucent—often mistaken for optical augmentation",
+    "skin_tone": "Deep warm brown with underlying red undertones, weathered but well-kept",
+    "complexion": "Face lined with decades of decision-making; creases around eyes and mouth suggest frequent mild expressions rather than habitual frowning. Skin shows even texture and good care—no visible scarring on the face. Minimal makeup, if any. Expression carries quiet authority.",
+    "distinguishing_marks": [
+      "Bioluminescent vein tracery on left forearm: faint blue-green lines branching from wrist to elbow, pulsing faintly with elevated heart rate (old mod, circa 2190s)",
+      "Small scar on right palm, likely from sharp object or industrial accident, partially obscured by subdermal memory chip implant site"
+    ],
+    "visible_augmentations": "Bioluminescent forearm tracery (active, cosmetic). Subdermal memory chip in right thumb (barely visible—subtle raised scar on thumb pad). Otherwise unaugmented appearance; any other modifications are subcutaneous.",
+    "posture_movement": "Moves with deliberate economy; never rushed, never wasted motion. Sits solidly, takes up space without apology. Hands are constantly in motion when thinking—shuffling imaginary papers, calculating on fingertips. Her stillness when listening is absolute and unsettling.",
+    "clothing_style": "Heavy linen wraps in ochre, rust, and earth tones—intentionally evocative of West African textile traditions, but in contemporary cuts suitable for Tier 4 Gravesend Basin. Layers that allow concealment of a calculating pad in the folds. Always carries a cup (tea, coffee, warm milk—never empty-handed). Practical footwear, worn but maintained. No visible corporate branding; clothes read as 'community fixture' rather than 'wealthy' or 'struggling.' A single piece of jewelry: a worn silver bracelet that has belonged to her for decades."
+  },
+  "image_prompt": "Portrait of a 52-year-old West African-Armenian woman, broad-shouldered and commanding, wearing heavy rust-colored linen wraps, silver hair in tight coils close to her scalp, pale amber eyes with natural depth. Her left forearm displays faint bioluminescent blue-green vein tracery that pulses softly. She holds a steaming cup of tea, her expression patient and unreadable, weathered face showing decades of quiet authority. Setting: warm interior of a converted shipping container tea house, soft golden afternoon light, calculator and ledgers visible in background shadows. Cyberpunk aesthetic grounded in working-class dignity, not chrome excess. Film photography color grading, slight warm cast. --ar 2:3 --v 6"
 }

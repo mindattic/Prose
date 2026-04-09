@@ -244,5 +244,25 @@
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Lazarus IDP-1 'Teeth'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Yoruba / Turkish / Māori",
+    "height_cm": 188,
+    "weight_kg": 76,
+    "build": "Tall and lean with a slight forward stoop, as if perpetually leaning into confrontation. Broad shoulders that taper to a wiry frame built for endurance rather than bulk. Arms corded with lean muscle from years of maintenance work.",
+    "hair_color": "Natural dark brown, almost black",
+    "hair_style": "Voluminous, natural texture, frequently unkempt and unstyled — grows outward rather than down",
+    "hair_length": "Medium, approximately 12-15cm",
+    "eye_color": "Dark brown",
+    "skin_tone": "Rich warm brown with golden undertones, reflecting mixed West African and Polynesian heritage",
+    "complexion": "Strong, angular jaw and broad facial structure. Wide smile with a visible gap between upper front teeth giving an expression of reckless confidence. Skin is clear and unlined, with the worn, sun-exposed quality of someone who works outdoors in industrial settings. Minimal grooming — practical rather than aesthetic.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware patterns tracing capillary structures across both forearms and upper chest in faint blue-white, pulsing visibly when agitated",
+      "Impact-resistant subdermal scarring visible along both forearms as slightly raised, pale streaking beneath the geneware patterns"
+    ],
+    "visible_augmentations": "Bioluminescent capillary mapping on forearms and chest, most visible when skin is bare or under thin fabric. The patterns glow softly under clothing. Forearm subdermal reinforcement creates subtle texture variation under the skin. No chrome or obvious cybernetic augmentation — all modifications are biological or subcutaneous.",
+    "posture_movement": "Hunched slightly forward, shoulders rounded, as if permanently braced for argument or action. Moves with restless physical energy — taps fingers, shifts weight, rarely still. Gestures are broad and emphatic. Eye contact is direct and challenging.",
+    "clothing_style": "Tier 3-4 working class. Favors utilitarian union-branded workwear even off-shift — Ferrogate Transit maintenance coveralls modified with rolled sleeves to display the bioluminescent patterns. Off-duty: worn union t-shirts, patched cargo pants in dark colors, steel-toed boots scuffed from depot work. Occasionally wears a faded Ferrogate Transit shop steward armband even outside work. No luxury items. Accessories limited to a battered union card and a small ELF shrine charm worn on a cord around his neck."
+  },
+  "image_prompt": "portrait of a 26-year-old Black man with Yoruba-Turkish-Māori features, tall and lean with forward-hunched posture, dark voluminous natural hair, broad jaw with gap-toothed reckless smile, intense dark eyes. Both forearms and upper chest covered in bioluminescent geneware patterns tracing blue-white capillary structures that pulse softly. Worn Ferrogate Transit maintenance coveralls with rolled sleeves showing augmentations. Standing in industrial depot setting with dim overhead lighting casting sharp shadows. Cyberpunk realism, gritty working-class aesthetic, Hamtramck Enclave industrial background, film noir lighting. Restless, confrontational energy. --ar 2:3 --v 6"
 }

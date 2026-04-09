@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Belmont",
-  "description": "Aminata Tarasov-Yiadom is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 32, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a fixer out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Aminata Tarasov-Yiadom describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Aminata Tarasov-Yiadom is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 32, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a fixer out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Aminata Tarasov-Yiadom describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.87,
@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "Knowledge — to understand the systems that grind people down",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Justice — the corporate kind, where the punishment fits the profit margin"
     ],
     "coping_mechanisms": [
@@ -43,7 +43,7 @@
       "Cannot accept help without interpreting it as leverage",
       "Overestimates their own abilities in situations outside their specialty"
     ],
-    "secret": "Aminata Tarasov-Yiadom sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Aminata Tarasov-Yiadom sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
@@ -155,7 +155,7 @@
       "loyalty_break": 6
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "multilingual — speaks 4+ languages fluently",
       "network of reliable contacts"
     ],
@@ -276,12 +276,35 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Canopy Station Nine",
     "Geartown",
     "Burden of Longitude",
     "Slagworks Industrial",
     "Pellucid Systems"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Russian / West African",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and heavy, muscular-stocky, carries weight with deliberate control — built for power and endurance rather than speed",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Pulled back in a tight, functional braid; practical, no vanity",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, alert and calculating",
+    "skin_tone": "Deep warm brown with cooler undertones",
+    "complexion": "Weathered, lean-faced with prominent cheekbones; multiple fine scars across jawline and left temple; no makeup, minimal grooming beyond function",
+    "distinguishing_marks": [
+      "Three parallel scars running from left cheekbone to jawline, thin and precise as blade work",
+      "Scar tissue along right forearm from smartgun link installation, visible chrome edges catching light",
+      "Burn scar on inside of left wrist, roughly circular, old and faded",
+      "Thin white line running from right eyebrow through temple to hairline",
+      "Knuckle scars on both hands, the wear of hand-to-hand work"
+    ],
+    "visible_augmentations": "Smartgun link mounted in right forearm with visible chrome interface plates and neural connector ports; metallic silver sheen at wrist joint; occasional faint LED glow at interface when systems active",
+    "posture_movement": "Moves with economical precision, no wasted motion; stands with weight balanced on balls of feet, ready to shift; shoulders set forward slightly; resting expression is watchful, not hostile but not welcoming",
+    "clothing_style": "Tier 3-4 practical: reinforced synthetic jacket in matte charcoal over tech-wear underlayer with visible connector ports; cargo pants with multiple tool pockets and armor plating at knees and hips; worn steel-toed boots with grip soles; minimal jewelry except functional smartwatch on left wrist; no corporate branding, all utility"
+  },
+  "image_prompt": "Cyberpunk female fixer, dark brown skin, 32 years old, broad-shouldered athletic build, dark hair in tight braid with silver at temples, weathered face with multiple scars, dark alert eyes, visible chrome smartgun link in right forearm with glowing neural ports, reinforced charcoal synthetic jacket, cargo tactical pants, steel-toed boots, standing in neon-lit elevated walkway above industrial cityscape, moody blue-purple lighting, rain-slicked concrete, holding cigarette, poised and dangerous, portrait-style, gritty cyberpunk noir, high contrast, professional lighting, intricate detail on augmentation chrome, --ar 2:3 --v 6"
 }

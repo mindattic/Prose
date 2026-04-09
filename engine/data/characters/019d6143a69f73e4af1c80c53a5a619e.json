@@ -242,5 +242,26 @@
     "Déjà Vu",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Japanese",
+    "height_cm": 163,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and substantial, with a forward-curved spine from decades of hunching over drums and detail work. Legs remain sturdy but upper back rounds permanently inward. Strong, work-worn frame without excess soft tissue.",
+    "hair_color": "Silver-white, natural",
+    "hair_style": "Tall wrapped style, refreshed each morning with ritual precision. The wrap itself is usually a faded cotton print or neutral linen, secured with a single bone or metal pin.",
+    "hair_length": "Long, worn up",
+    "eye_color": "Deep brown, nearly black",
+    "skin_tone": "Deep amber-brown with warm undertones",
+    "complexion": "Extensively mapped with fine lines radiating from eyes and mouth — crow's feet are pronounced. Skin shows the permanent effects of alternating steam and cold water exposure: uneven texture, some areas slightly leathered. Minimal makeup. Expression naturally serious, eyes deeply set and assessing. No visible cosmetic modifications.",
+    "distinguishing_marks": [
+      "Fine linear scarring across both palms and inner fingers from decades of needlework and minor cuts.",
+      "Callused patches on fingertips, particularly the right hand, from thimble use and hand-stitching.",
+      "Faint burn marks on left forearm (3-4 cm patches) from steam exposure over years."
+    ],
+    "visible_augmentations": "Right-hand fingertips bear a permanent micro-needle thimble array — five metallic thimble caps bonded directly to nail beds and surrounding dermal tissue, functional and medical-grade in appearance. The bonding shows as slightly raised, burnished metal at each fingertip. Wrist augmentations are subcutaneous and invisible. No other visible chrome or modification.",
+    "posture_movement": "Perpetually forward-leaning from waist up, shoulders rounded inward. Moves slowly but with absolute purpose — no wasted motion. Hands move with the precision of someone who has spent fifty years reading fabric. When sitting, favors low chairs and leans back rarely. Eyes constantly scan surroundings the way a seamstress reads a garment for stress points.",
+    "clothing_style": "Practical Tier 3-4 working wear. Long-sleeved cotton or linen shirts (often faded or hand-mended, showing the repairs she would never charge a customer for). Heavy canvas apron, usually damp at the hem, worn over loose trousers in neutral tones. Feet are always in sturdy slip-on shoes with worn soles — nothing requiring lacing. She owns one good cardigan for stepping outside the shop in winter. No jewelry except the bone pin in her hair. Clothing shows signs of careful mending and decades of wear, maintained through sheer discipline rather than vanity."
+  },
+  "image_prompt": "58-year-old West African-Japanese woman with deep amber-brown skin, silver-white hair wrapped in tall traditional style, deeply set dark eyes creased from decades of focused work. Broad shoulders curved forward from a lifetime hunching over sewing and laundry work. Fine lines map her face like a seamstress's measurements. Her right hand displays five metallic micro-needle thimbles bonded to fingertips, catching light. She wears a faded long-sleeved cotton shirt and heavy canvas apron, both damp-edged and bearing careful hand-mended patches. Standing in a humid, condensation-wet laundry shop with industrial drums, bare bulbs casting yellow light. Low-angle, documentary style, cyberpunk mundane aesthetic, sharp focus on weathered hands and contemplative expression. Moody, naturalistic lighting. --ar 2:3 --v 6"
 }

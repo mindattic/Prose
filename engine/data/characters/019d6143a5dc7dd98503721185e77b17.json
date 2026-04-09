@@ -254,5 +254,25 @@
     "The Pale Mile",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Germanic (Ghanaian-German mixed lineage)",
+    "height_cm": 174,
+    "weight_kg": 68,
+    "build": "Lean and economical, with the wiry musculature of someone who moves with precision rather than force. Minimal body fat, shoulders slightly rounded from decades of hunching over appraisal work.",
+    "hair_color": "Silver-grey",
+    "hair_style": "Close-cropped, razor-lined edges, maintained with military regularity",
+    "hair_length": "Short",
+    "eye_color": "Pale amber with geometric ring patterning (cosmetic modification)",
+    "skin_tone": "Deep warm brown with slight ashen undertone from years in fluorescent-lit interior spaces",
+    "complexion": "Neat and austere. Fine lines around the eyes from squinting at merchandise under magnification. Clean-shaven, skin slightly weathered but well-maintained. No visible scarring on the face.",
+    "distinguishing_marks": [
+      "Fine white scar along the inside of his left forearm, approximately 8cm long, consistent with an old cutting accident — barely visible unless skin is directly inspected",
+      "Faint burn mark on the back of his right hand near the thumb, roughly coin-sized, from a soldering iron accident in his thirties"
+    ],
+    "visible_augmentations": "Thin-framed magnifier lenses clipped over his eyes (not permanent augmentation, but worn so consistently they read as part of his appearance). The patterned amber irises themselves are the only visible cosmetic mod — geometric rings that catch light distinctly. The subdermal RFID scanner and memory buffer implant are completely subcutaneous and invisible.",
+    "posture_movement": "Upright, economical, and deliberate. Moves with the careful precision of someone appraising every centimeter of space. Hands are restless when not actively working — fingers tap rhythmically or adjust objects compulsively. Does not fidget nervously; this is organizational energy. When listening, his head tilts slightly, as if calibrating.",
+    "clothing_style": "Tier 3 practical-professional. Collared shirts in neutral tones (grey, off-white, pale blue) buttoned to the throat, always crisp and unwrinkled. Long tactical vest in charcoal or black synthetic with visible interior pockets and reinforced seams — worn over the shirt. Cargo trousers in dark denim or synthetic blend, fitted but not fashionable. Boots with magnetic clasps in matte black, scuffed from regular use but maintained. A thin chain bracelet in brushed steel on his left wrist — functional aesthetic, no jewelry beyond this. No visible branding. Everything chosen for durability and function, not status."
+  },
+  "image_prompt": "Cyberpunk character portrait, 41-year-old West African-Germanic man with deep brown skin and silver-grey close-cropped hair, pale amber eyes with geometric ring patterns, wearing thin magnifier lenses. Dressed in crisp collared grey shirt buttoned to throat, long black tactical vest with visible pockets over the shirt, dark cargo trousers, scuffed matte-black magnetic-clasp boots. Lean wiry build, precise posture, slight forward head tilt. Standing in narrow cluttered pawn shop with shelving behind him, warm amber shop lighting casting shadows, fluorescent overheads creating cool highlights on chrome shelf fixtures. Serious, methodical expression. Cyberpunk noir aesthetic, gritty Tier-3 interior market setting, cinematic depth of field --ar 2:3 --v 6"
 }

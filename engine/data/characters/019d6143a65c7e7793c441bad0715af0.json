@@ -251,5 +251,26 @@
     "The Pure Hand",
     "The Coffin Nails"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Georgian / Ghanaian / Russian",
+    "height_cm": 167,
+    "weight_kg": 52,
+    "build": "Lean and deliberately spare — the kind of thinness that comes from intentional reduction rather than deprivation. Wiry muscle in the shoulders and forearms from years of precise manual work; minimal body fat; posture that suggests she takes up as little space as possible.",
+    "hair_color": "Dark brown, naturally, with premature gray threading through the sides",
+    "hair_style": "Cut close and uneven — self-trimmed, no styling, functional only",
+    "hair_length": "Short",
+    "eye_color": "Medium brown, with faint cybernetic latticing visible in the iris under direct light — low-light enhancement package, degraded but functional",
+    "skin_tone": "Medium brown with warm undertones, reflecting Georgian and Ghanaian ancestry",
+    "complexion": "Angular and sharp-featured; cheekbones prominent, jawline defined. Skin is dry from years in low-humidity maintenance corridors but shows no significant scarring or damage — well-maintained despite living conditions. Fine lines around the eyes suggest sustained concentration. Expression typically neutral, difficult to read.",
+    "distinguishing_marks": [
+      "Faint scar tissue along the left temple, barely visible under close inspection, consistent with neural implant installation site",
+      "Calloused fingertips on dominant hand (right), precise and uniform, from years of documentation work",
+      "Pale discoloration across both wrists in thin bands, old enough to suggest healed abrasion marks from restraints or equipment"
+    ],
+    "visible_augmentations": "Eyes show faint latticing in the iris under bright light (low-light enhancement implants). No visible external chrome or subdermal plating. The neural overlay is completely internal and undetectable by sight; its network components are manually disabled, leaving only the local cognitive assist active.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion, precise hand placement, footfalls that are nearly silent on metal grating. Sits slightly sideways in spaces, keeping one shoulder angled toward exits. Eyes track movement peripherally before direct attention. Speaks rarely, and when she does, her voice is low and measured. Hands remain still unless working; no fidgeting or tells.",
+    "clothing_style": "Layered thermal wraps in grays and browns, repaired so many times the original fabric composition is largely replaced with salvaged patches. The layers are functional — designed for temperature regulation in the Threshold — but also for anonymity; nothing branded, nothing distinctive. Underneath: plain synthetic underweave, likely scavenged. No jewelry. Footwear is neutral gray utility boots, worn but maintained. Everything is chosen to be forgotten as soon as it is seen."
+  },
+  "image_prompt": "A 42-year-old woman with mixed Georgian-Ghanaian-Russian heritage, medium brown skin, sharp angular features with prominent cheekbones. Very short, unevenly cut dark hair with gray threading. Wearing layered thermal wraps in muted grays and browns, heavily patched and repaired, functional deep-dweller clothing. Eyes with subtle cybernetic latticing visible in the iris. Thin, deliberately spare build, precise movements. Sitting in dim industrial maintenance corridor with metal grating and old infrastructure visible in background. Soft warm tungsten lighting from a salvaged lamp, creating stark shadows. Expression neutral and difficult to read, eyes tracking something unseen. Cyberpunk dystopian atmosphere, underground setting, mood of careful isolation and quiet intensity, photorealistic digital painting style, film noir lighting --ar 2:3 --v 6"
 }

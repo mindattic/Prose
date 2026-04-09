@@ -251,5 +251,24 @@
     "Silver",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Hungarian",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Compact and efficient, lean muscle without bulk, the kind of frame that suggests regular movement rather than dedicated fitness. Economical posture.",
+    "hair_color": "Color-shifting mod: cycles between deep navy, teal, and forest green during work hours; shifts to warm amber in off-duty mode",
+    "hair_style": "Shoulder-length, blunt-cut, styled for practicality — tucks behind ears when focused, no styling products visible",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, unaugmented, alert and direct",
+    "skin_tone": "Warm light brown with golden undertones, even complexion",
+    "complexion": "Symmetrical features with a resting expression that reads as faintly amused; minimal grooming theater, well-maintained but unstudied; skin shows no visible scarring or blemish work",
+    "distinguishing_marks": [
+      "Small silver nostril ring, left side — the only jewelry they wear regularly"
+    ],
+    "visible_augmentations": "Color-shifting hair mod with visible palette cycling (blue-green-amber spectrum). No other visible chrome or subcutaneous markers. Mild haptic feedback implants in hands not visually apparent but may manifest as subtle finger micro-gestures during interface work.",
+    "posture_movement": "Economical and grounded. Stands with weight balanced, minimal unnecessary movement. Walks with purpose and steady rhythm. Hands move with precision during conversation, especially when explaining complex systems. Default facial expression hovers between neutral and faintly knowing.",
+    "clothing_style": "Tier 2-3 functional professional: clean-lined merino blend shirts (charcoal, grey, off-white), structured trousers without excess hardware, a well-maintained jacket in dark grey with genuine pockets and reinforced seams. Comfortable low-profile boots suitable for site visits. No logos, no status signaling beyond quality materials and impeccable maintenance. Accessories: the nostril ring and a functional digital watch (understated, probably Tessera-issue)."
+  },
+  "image_prompt": "Portrait of a 38-year-old nonbinary professional with warm light brown skin and effortlessly symmetrical features, color-shifting hair cycling between deep navy and teal, shoulder-length and blunt-cut, dark unaugmented eyes with an amused resting expression. Small silver nostril ring. Wearing clean-lined charcoal merino shirt and dark grey structured jacket with visible pockets. Medium height, compact and efficient frame. Standing in a modern open-plan corporate office with floor-to-ceiling windows overlooking Lake Michigan, soft natural light, cool color temperature. Confident, calm, slightly detached. Professional cyberpunk aesthetic, realistic lighting, corporate noir mood. --ar 2:3 --v 6"
 }

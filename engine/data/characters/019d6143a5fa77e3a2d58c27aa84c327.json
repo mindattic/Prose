@@ -12,7 +12,7 @@
   "role": "Data diviner and dream interpreter operating out of a cramped stall in a night market",
   "age": 34,
   "status": "active",
-  "location": "Gage Circuit night market, Meridian 88 — stall number 77, between a noodle cart and a geneware piercing parlor, near Milwaukee and North Ave",
+  "location": "Gage Circuit night market, GLMZ — stall number 77, between a noodle cart and a geneware piercing parlor, near Milwaukee and North Ave",
   "description": "Dzintars is narrow and angular everywhere — sharp collarbones, sharp wrists, a face that is mostly cheekbones and the dark crescents of perpetually under-slept eyes. Their heritage is a long tangle of Latvian amber traders and Ghanaian textile merchants and Kazakh steppe wanderers, and something of all three shows in their coloring — warm brown skin, light-catching hazel eyes, and when they move in certain light their geneware irises shift through copper to pale green like something geological. They keep their black hair cropped close on the sides with a single dramatic shock of white at the front, a natural hyperpigmentation quirk they have never modified. Their fingernails are always painted with tiny circuit-trace patterns in silver.\n\nThey operate with the brisk efficiency of someone running a slightly disreputable but very legitimate business, which is exactly what they are doing. They don't perform mystery — they find it exhausting when clients expect robes and candles. They have a folding table, a neural interface that connects to three second-hand data arrays, and a methodology they have refined over eight years of practice. Dream interpretation is the service; data divination is the engine. They cross-reference the linguistic content of client dream reports against ELF signal patterns, local data weather, and a proprietary dataset of symbolic correlations they have been building since they were twenty-two. Their accuracy rate is genuinely unsettling and they are not entirely sure why it works.",
   "psychology": {
     "facet_weights": {
@@ -235,7 +235,7 @@
   ],
   "related_entities": [
     "Gage Circuit",
-    "Meridian 88",
+    "GLMZ",
     "Tessera Corponation Palimpsest Identity Engine",
     "The United Workers Front",
     "The Heritage Vault",
@@ -250,5 +250,25 @@
     "Bashir Quansah-Mehrotra",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Latvian / Ghanaian / Kazakh",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Angular and narrow throughout — sharp collarbones, prominent wrist bones, lean musculature with minimal body fat. Frame suggests someone sustained by coffee and insomnia rather than deliberate athleticism.",
+    "hair_color": "Black with natural white hyperpigmentation shock at front",
+    "hair_style": "Close-cropped on sides and back; dramatic single vertical stripe of white hair at center-front left, grown long enough to fall across temple",
+    "hair_length": "Short (sides/back) with medium-length accent stripe",
+    "eye_color": "Hazel with color-shifting geneware irises that transition from copper to pale green depending on light and neural interface activation",
+    "skin_tone": "Warm brown — lighter than pure Ghanaian ancestry would suggest, deeper than Latvian, with golden undertones in certain light",
+    "complexion": "Sharp cheekbones dominating a narrow face; dark crescents under eyes from chronic sleep deprivation are now semi-permanent fixture of their appearance; skin condition clear but drawn; lips thin and often compressed in concentration",
+    "distinguishing_marks": [
+      "Neural interface jack at left temple — small raised circular port with barely-visible scarring around contact points, sometimes glints faintly when powered",
+      "All ten fingernails hand-painted with intricate silver circuit-trace patterns that are reapplied weekly; patterns vary but follow recursive geometric logic"
+    ],
+    "visible_augmentations": "Color-shifting geneware irises (most visible when eyes catch light or when neural interface is active); neural interface jack at left temple with minimal cosmetic concealment; no obvious chrome or subdermal plating",
+    "posture_movement": "Economical and precise — moves with the efficiency of someone who has optimized every gesture. Sits slightly forward even when at rest, attention laser-focused on whoever is speaking. Hands gesture in small, controlled patterns. When exhausted, occasionally trails off mid-motion as if processor speed has dropped. Minimal idle movement; no fidgeting.",
+    "clothing_style": "Tier 3-4 working class with deliberate anti-mystique choices. Typically wears fitted black or dark gray synth-cotton shirts with visible stress-weave reinforcement at shoulders and wrists. Dark trousers with cargo pockets containing data-chip cases and neural interface maintenance tools. A mid-length coat of water-resistant polymer in charcoal, bearing the faded logo of an older GLMZ courier service — thrifted or inherited. No jewelry except a simple stainless steel band on left wrist that houses a subdermal power-tap connector. Shoes are practical: reinforced ankle boots with grip-sole, scuffed from night-market floors."
+  },
+  "image_prompt": "Cyberpunk portrait of a nonbinary person with warm brown skin, sharp angular features, and dark crescents under hazel eyes that glow with copper-to-pale-green iridescence. Black hair cropped close on sides with a single dramatic white shock at front. Visible neural interface jack glinting at left temple. Hands with intricate silver circuit-trace patterns painted on fingernails. Wearing dark synth-cotton fitted shirt and charcoal polymer coat, seated at a cramped data stall surrounded by second-hand neural arrays and folding tables. Neon glow from surrounding night market stalls — noodle cart and geneware parlor signs visible behind. Moody underground cyberpunk aesthetic, focused overhead lighting, slightly sleep-deprived intensity, grounded and unglamorous. High detail on facial features and hand augmentations. --ar 2:3 --v 6"
 }

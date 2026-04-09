@@ -222,5 +222,27 @@
     "Copper",
     "Déjà Vu"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East Slavic / Polynesian (Qorolevsky lineage suggests Russian-descended tunnel settlers; Atafu indicates Samoan or Tokelauan admixture from early GLMZ migration waves)",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "build": "Large-framed but lean with age—broad shoulders and deep chest have narrowed to a weathered frame. Muscle tone suggests lifetime of manual labor in confined spaces; posture slightly forward from decades of ducking through tunnel infrastructure. Moves with deliberate slowness, each step tested.",
+    "hair_color": "Steel gray, natural",
+    "hair_style": "Cropped close to the scalp, swept back from the forehead, with a coarse texture",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, slightly clouded with age cataracts but still sharp",
+    "skin_tone": "Warm brown-black, weathered and sun-starved from decades underground—uneven melanin distribution from the transition zones between lit and unlit tunnel sections",
+    "complexion": "Deeply lined face map: horizontal creases across the forehead, pronounced nasolabial folds, thin-lipped mouth set in a permanent expression of quiet attention. Jaw and temples marked with ritual scarification—three parallel lines on each temple, a longer horizontal line along the left jawline, all hand-cut and slightly raised, executed in the Qorolevsky tradition. Skin shows old acne scarring on the shoulders. Hands are heavily calloused, knuckles enlarged from arthritis, fingernails thick and yellowed.",
+    "distinguishing_marks": [
+      "Ritual scarification: three parallel horizontal lines on each temple, roughly 8cm each, raised and silvered with age",
+      "Ritual scarification: single horizontal line along the left jawline from ear to chin, approximately 12cm, matching the temple work",
+      "Burn scar on the right forearm (10cm long, pale and smooth) from an old tunnel accident, circa 2189",
+      "Faded tattoo on the inner left wrist: Ferrogate Transit maintenance glyph, barely legible from two decades of abrasion"
+    ],
+    "visible_augmentations": "None. Entirely unmodified human. The absence of chrome, implants, or LED work is itself visually distinctive—his hands are visibly and entirely biological, marked only by labor and time.",
+    "posture_movement": "Moves with economical precision, stepping carefully as if the ground is unreliable. Stands with weight evenly distributed, shoulders slightly forward. Rarely gestures; when he does, movements are slow and deliberate. Head often tilted slightly downward in a listening posture. When seated, he remains completely still. Speech is accompanied by minimal facial movement.",
+    "clothing_style": "Tier 5 / subsistence layering. Wears four or five repaired garments in overlapping fashion: a faded thermal undershirt (burned at one cuff), a wool sweater with visible mending on both elbows, a heavy canvas coat with patched pockets, and a rain-worn nylon overshell. Cargo pants held up with rope, stuffed with small pouches of fungal medicines and offerings. No visible corpo branding, no pretense. Around his neck on a loop of oxidized copper wire hangs his collection of sacred dead devices: a cracked smart phone (pre-2210), two burned memory chips, a corroded environmental sensor node, a shattered optical hub. These hang against his chest and click softly when he moves."
+  },
+  "image_prompt": "Cyberpunk character portrait, 67-year-old man, East Slavic-Polynesian heritage, warm brown-black weathered skin, steel gray cropped hair, deep brown eyes clouded with age, deeply lined face with ritual scarification on temples and jawline (hand-cut Slavic tattoos), entirely unaugmented and unmodified human body, lean and large-framed with broad shoulders, standing in profile in dim biolume tunnel lighting, wearing layered Tier 5 repaired garments—thermal shirt, patched wool sweater, canvas coat—cargo pants held with rope, copper wire around neck with collection of dead devices and sacred tech offerings (cracked phones, burned chips, corroded sensors), calloused hands visible, posture slightly forward, expression of quiet listening, standing in front of an underground shrine with faint phosphorescent moss and old Ferrogate Transit infrastructure behind him, cool blue-green tunnel ambient lighting, reverent and meditative atmosphere, photorealistic, gritty and dignified, high detail, --ar 2:3 --v 6"
 }

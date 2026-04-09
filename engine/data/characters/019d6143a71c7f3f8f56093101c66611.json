@@ -43,7 +43,7 @@
       "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
       "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
     ],
-    "secret": "Ximena Bautista-Nwosu sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Ximena Bautista-Nwosu sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
@@ -155,7 +155,7 @@
       "loyalty_break": 8
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "exceptional close-quarters combat",
       "social chameleon — adapts to any environment"
     ],
@@ -278,5 +278,26 @@
     "The Unfinished Theorem",
     "The Gradient Compact"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Latin American (Mexican) / West African (Nigerian)",
+    "height_cm": 163,
+    "weight_kg": 68,
+    "build": "Compact and densely muscled, low center of gravity — every gram is functional mass. Shoulders broad relative to frame, legs thick and powerful. Built like someone engineered to absorb and deliver impact.",
+    "hair_color": "Dark brown with subtle iridescent chrome flecks visible under direct light",
+    "hair_style": "Short, practical fade — easy to maintain between jobs, no loose ends to grab",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint luminescent flicker around the iris — subcutaneous optical enhancement, barely visible in daylight",
+    "skin_tone": "Deep warm brown — melanin-rich complexion reflecting West African and Mexican heritage, evenly distributed across their frame",
+    "complexion": "Angular face with high cheekbones and a squared jaw. Skin appears almost metallic in certain light — result of active dermal camouflage layer beneath the epidermis. Small scar through left eyebrow from a blade. Minimal grooming beyond function — no jewelry, no cosmetics, no softening gestures.",
+    "distinguishing_marks": [
+      "Thin vertical scar through left eyebrow, approximately 3cm long, pale and old",
+      "Faint chromatic patterning visible across shoulders and collarbone when dermal camouflage activates — hexagonal pixel-like arrays that ripple under skin",
+      "Barely-visible ritual scarification on right hip — three parallel lines, cultural marker from Nwosu family line, only visible if clothing shifts"
+    ],
+    "visible_augmentations": "Smartgun link in right forearm — visible as a seamless chrome integration at the wrist, with faint data-port detents along the radial bone. The chrome does not quite match natural skin tone; the transition is surgical-clean. Dermal camouflage substrate visible as a subtle iridescent sheen across upper body in direct light — skin sometimes shifts in tone microscopically, like oil on water.",
+    "posture_movement": "Moves with controlled economy — no wasted motion. Stands slightly off-center, weight favoring left leg, right side angled for quick access to forearm link. Head tracking is precise and methodical; they scan rooms like threat assessment is automatic. Default expression is neutral, almost serene, but eyes are always working. Handshake is firm but not aggressive. In motion, they move like something wound tight.",
+    "clothing_style": "Tier 3-4 pragmatism: reinforced cargo pants (charcoal gray, multiple pockets, ballistic weave subtle), form-fitting undershirt (synthetic blend, heat-dissipating), modular overjacket (dark matte finish, removable sleeves, internal holster points). Boots are mil-spec, broken in, with steel toe caps. No corporate logos. No affectation. All clothing has concealment pockets and retention points. Between jobs, they wear nearly identical outfits in neutral tones — easier to maintain cover identity if you never change the pattern."
+  },
+  "image_prompt": "Portrait of a compact, densely-muscled nonbinary person of mixed Mexican and Nigerian descent, age 25, standing with controlled posture. Dark brown skin with subtle iridescent sheen visible across shoulders. Short dark hair with faint chrome flecks. Angular face with high cheekbones, small scar through left eyebrow, expression neutral and methodical. Right forearm features seamless chrome smartgun interface, wrist showing data-port detents. Wearing charcoal cargo pants and form-fitting synthetic undershirt, dark modular jacket. Standing in industrial black market setting — corrugated metal walls, dim LED strips, oil-stained concrete. Moody cyberpunk noir lighting, cool blue-green shadows with amber practical light sources. Professional security operative aesthetic, functional and dangerous. UHD, cinematic, gritty realism, --ar 2:3 --v 6"
 }

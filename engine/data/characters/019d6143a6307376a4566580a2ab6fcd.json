@@ -185,5 +185,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Northern European (Dutch/Afrikaans)",
+    "height_cm": 162,
+    "weight_kg": 51,
+    "build": "Slight and wiry with efficient musculature from constant movement. Lean shoulders, minimal body fat, the build of someone who is always in motion and doesn't have time to gain weight.",
+    "hair_color": "Color-cycling geneware in copper-to-emerald spectrum (currently mid-cycle toward emerald)",
+    "hair_style": "Short, textured, deliberately low-maintenance. Cut close at the sides, slightly longer on top for color visibility. Practical styling that requires minimal grooming time.",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, natural",
+    "skin_tone": "Tawny-brown with golden undertones, reflecting mixed West African and Northern European ancestry",
+    "complexion": "Long face with high cheekbones, deep-set eyes. Summer freckles across the nose and upper cheeks. Clear skin with minimal scarring, minimal makeup — functional grooming only. Expression tends toward focused alertness.",
+    "distinguishing_marks": [
+      "Faint scars on both hands from small burns and cuts accumulated through childcare work (kitchen accidents, craft materials)",
+      "Callus on left index and middle fingers from pen/stylus use",
+      "Small adherent scar on left knee from a fall (childhood or adolescent, healed cleanly)"
+    ],
+    "visible_augmentations": "Color-cycling hair geneware only. The cycling is visible and subtle — shifts very slowly over an 8-hour cycle. No chrome, no subdermal implants, no optical augmentation. This is deliberate choice reflecting both financial constraint and ideological skepticism.",
+    "posture_movement": "Economical movement with constant low-level scanning of the environment. Stands balanced as if ready to move in any direction. Even at rest, her attention distributes across multiple points — a habit carried from childcare into all contexts. Moves quickly but never frantically. Sits upright, rarely fully relaxes posture.",
+    "clothing_style": "Tier 4 practical — durable, washable, functional. Cotton and synthetic blend work clothes: fitted long-sleeve shirt or lightweight sweater (in muted earth tones or jewel tones that complement her hair cycle), dark cargo pants or work leggings with deep pockets. Practical slip-on shoes (canvas or synthetic). No logos or brand signaling. Occasionally wears a lightweight utility jacket over everything. Minimal jewelry — possibly a simple bracelet or watch. Everything is chosen for durability and ease of cleaning. Thrift or secondhand sourcing evident in fit/styling."
+  },
+  "image_prompt": "cyberpunk portrait of a 24-year-old woman with tawny-brown skin, deep-set dark eyes, long face with high cheekbones, and short color-cycling hair in copper-to-emerald geneware mid-transition. slight wiry build, freckles across nose. wearing practical dark cargo pants and a muted green long-sleeve work shirt. standing in an interior community childcare center with soft morning light, toys and learning materials blurred in background. her expression is focused and alert, body language efficient and grounded. hyperrealistic, candid documentary style, shallow depth of field, warm ambient lighting, no chrome augmentation visible, gritty Tier 4 neighborhood aesthetic --ar 2:3 --v 6"
 }

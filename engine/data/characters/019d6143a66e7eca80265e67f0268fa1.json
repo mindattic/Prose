@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "The Undertow — operates from a tea house called the Deep Current that they also own legitimately, near Fullerton and Damen",
-  "description": "Nnọmá is striking in a way that takes a moment to parse: medium height, deliberately ambiguous in presentation, with dark sienna skin and bioluminescent sub-epidermal patterning along their collarbones and temples that pulses in slow blue-green cycles — a geneware mod they describe as 'the best investment I ever made.' Their hair is grown long and worn in elaborate stacked forms held with copper wire, and they dress in layered, draped garments that suggest both ceremony and practicality. Their voice is a low, unhurried instrument they use with evident pleasure.\n\nNnọmá built the Deep Current into Meridian 88's most reliable neutral ground for compute transactions over twelve years of patient relationship management. They know the value of reputation — not just for quality, but for discretion. Stolen processing cycles from corporate mainframes, black-market AI training data, ghost server allocations on dormant Axiom nodes — Nnọmá doesn't produce any of it, they simply know everyone who does and everyone who needs it. They take ten percent and remember everything. They have a genuine passion for the tea house itself, keep an excellent selection, and make the rounds of every table during service hours like a host who actually enjoys their guests.",
+  "description": "Nnọmá is striking in a way that takes a moment to parse: medium height, deliberately ambiguous in presentation, with dark sienna skin and bioluminescent sub-epidermal patterning along their collarbones and temples that pulses in slow blue-green cycles — a geneware mod they describe as 'the best investment I ever made.' Their hair is grown long and worn in elaborate stacked forms held with copper wire, and they dress in layered, draped garments that suggest both ceremony and practicality. Their voice is a low, unhurried instrument they use with evident pleasure.\n\nNnọmá built the Deep Current into GLMZ's most reliable neutral ground for compute transactions over twelve years of patient relationship management. They know the value of reputation — not just for quality, but for discretion. Stolen processing cycles from corporate mainframes, black-market AI training data, ghost server allocations on dormant Axiom nodes — Nnọmá doesn't produce any of it, they simply know everyone who does and everyone who needs it. They take ten percent and remember everything. They have a genuine passion for the tea house itself, keep an excellent selection, and make the rounds of every table during service hours like a host who actually enjoys their guests.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -238,7 +238,7 @@
   "related_entities": [
     "The Undertow",
     "DEEP CURRENT",
-    "Meridian 88",
+    "GLMZ",
     "Bathysphere Networks",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Irontide Tidal Energy",
@@ -246,5 +246,26 @@
     "Chimera-Null",
     "Copper"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Igbo / Ukrainian / Lusophone Brazilian",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and graceful, economical in movement, with subtle musculature suggesting decades of deliberate posture work rather than gym conditioning",
+    "hair_color": "Natural deep black with subtle grey threading at temples",
+    "hair_style": "Elaborately stacked and sculpted forms, held in place with hand-wound copper wire that catches light; each section roughly palm-sized, creating a geometric crown effect",
+    "hair_length": "Long (shoulder to mid-back when fully unbound)",
+    "eye_color": "Dark brown, alert and intelligent; reflective quality suggests subcutaneous neural enhancements",
+    "skin_tone": "Dark sienna — warm, rich undertone reflecting mixed West African and Mediterranean ancestry",
+    "complexion": "Smooth, well-maintained skin with no visible scarring; face is angular and symmetrical, with high cheekbones and a sharp jawline; grooming is meticulous but not sterile; expression defaults to composed watchfulness",
+    "distinguishing_marks": [
+      "Bioluminescent subepidermal patterning along collarbones in branching patterns, glowing soft blue-green in slow 3-4 second pulse cycles; most visible when wearing open-necked clothing",
+      "Matching bioluminescent patterning along both temples in delicate tracery, also blue-green and pulsing; becomes more pronounced in dim light or high emotional states",
+      "Small circular discreet scar behind left ear (data jack insertion point, nearly invisible unless closely examined)"
+    ],
+    "visible_augmentations": "Bioluminescent geneware patterning is the primary visible modification — decorative but unmistakably augmented. Neural-link data jack behind left ear is only visible upon close inspection. Olfactory enhancements are completely subcutaneous. Copper wire holding their hair may itself be custom-woven with microcircuitry, but appears decorative at first glance.",
+    "posture_movement": "Moves with deliberate, economical grace — no wasted motion. Sits in positions that suggest both relaxation and readiness; often turns head slightly before speaking, as if scenting the social temperature of a room. Hands are expressive but controlled. Maintains eye contact with disarming directness. When at rest, their bioluminescence pulses subtly, creating a meditative rhythm that draws focus",
+    "clothing_style": "Layered, draped garments in natural fibers (linen, hemp, silk, lightweight wool) in muted earth tones (charcoal, deep olive, rust, cream) with occasional jewel tones. Deliberately ungendered silhouette — loose over-robes worn over fitted base layers. Favors garments that conceal or reveal the bioluminescent patterning strategically depending on context. Several pieces are clearly custom-tailored; quality suggests mid-to-high Tier 2 status without announcing it. Feet are bare or in simple leather sandals indoors; functional dark boots for outdoor movement. Minimal jewelry beyond the copper wire in hair; occasionally wears a thin silver chain with an unidentifiable pendant. Grooming and presentation suggest someone who has spent considerable time thinking about how they wish to be perceived, and who has settled on 'trustworthy, present, and faintly otherworldly.'"
+  },
+  "image_prompt": "A nonbinary person of medium height with dark sienna skin, medium-long black hair intricately stacked and bound with copper wire into geometric forms, standing in soft candlelight. Their skin glows with bioluminescent blue-green patterns along their collarbones and temples that pulse slowly. Dark brown eyes, angular face, composed expression. Wearing layered draped linen garments in muted earth tones — an open-necked robe over fitted layers, revealing the luminescent patterning. Thin silver chain with small pendant. Standing in a traditional tea house interior, wooden screens, soft warm lighting mixed with cool blue-green glow from their augmentations. Cyberpunk aesthetic, but grounded and intimate rather than neon-chrome. Medium shot, 3/4 view. Photorealistic, high detail, moody lighting, atmospheric. --ar 2:3 --v 6"
 }

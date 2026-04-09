@@ -186,5 +186,27 @@
     "The Open Syllabus",
     "ARCHIVE"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Scandinavian (derived from Solberg-Kabwit surname blend)",
+    "height_cm": 178,
+    "weight_kg": 58,
+    "build": "Tall and angular with minimal muscle definition — the build of someone who lives on caffeine and anxiety rather than food. Sharp shoulders, pronounced collarbones, long limbs that seem to move in slightly disconnected ways.",
+    "hair_color": "Natural black with metallic threading",
+    "hair_style": "High puff worn tight at the crown, interwoven with thin strands of conductive wire disguised as decorative copper and silver jewelry",
+    "hair_length": "Medium (roughly 15cm in its gathered form)",
+    "eye_color": "Deep brown with dark circles underneath that never fully fade",
+    "skin_tone": "Deep blue-black with warm undertones",
+    "complexion": "Clear but with the pallid exhaustion of someone running on 5–6 hours of sleep per night. Faint bioluminescent freckles trace her cheekbones and collarbone in pale cyan, brightest when she's concentrating or anxious. The bioluminescence dims noticeably when she's tired.",
+    "distinguishing_marks": [
+      "Bioluminescent freckle constellation along both cheekbones, arranged asymmetrically with heavier density on the left side",
+      "Bioluminescent freckle trail descending from right collarbone toward sternum, visible only when wearing low-cut clothing",
+      "Thin horizontal scar on the inside of her right wrist (approximately 4cm) from a body-shop neural jack installation — partially obscured by her sleeve during school hours",
+      "Faint ink smudges on her right index and middle fingers from writing with an old ballpoint pen (anachronistic, deliberate)"
+    ],
+    "visible_augmentations": "Cheap neural interface jack at the base of her skull behind the right ear, visible only if her high puff is released or if she's viewed from behind — the installation site shows mild inflammation and discoloration. Conductive wire threading through her hair serves dual purpose (decorative + functional). The bioluminescent freckles glow faintly in low light, especially when she's processing data or under stress.",
+    "posture_movement": "During school hours: rigid, controlled, spine straight, movements economical and careful. Her face is blank in mandatory settings — a deliberate mask. At home or when hacking: she slouches, fidgets with her wire threading, moves with nervous energy. Her fingers twitch and her eyes dart. When deep in code, she goes very still and her freckles brighten involuntarily.",
+    "clothing_style": "DAYTIME (Axiom): Pressed uniform — navy blazer over white shirt, gray pleated skirt to regulation length, black leather loafers, minimal jewelry (only the wire in her hair passes as 'decorative'). Everything is maintained meticulously and sits slightly too formally on her frame. NIGHTTIME (Hough): Oversized hoodies in muted colors (grays, blacks, dark blues), worn cargo pants with multiple pockets, cheap smart-fabric gloves with conductive fingertips, beat-up sneakers. Her style reads as 'Tier 4 student trying to survive' — functional, layered, slightly too warm for indoors, pockets visibly stuffed with data chips and adapter cables."
+  },
+  "image_prompt": "A 15-year-old girl with deep blue-black skin and angular features, tall and thin with sharp cheekbones. Her hair is gathered in a high puff threaded with thin metallic wire that glints copper and silver. Faint bioluminescent cyan freckles trace her cheekbones and collarbone, glowing softly in dim light. Her brown eyes are tired and intense, ringed with dark circles. Visible on the back of her neck is a neural interface jack, slightly inflamed at the installation site. She's wearing an oversized gray hoodie over cargo pants, fingers moving over a holographic interface that casts blue light across her face. The background shows her cramped bedroom in a Tier 5 reclamation zone — exposed pipes, stacked servers, cables, worn walls. Cyberpunk aesthetic, exhausted teenager, low-key bioluminescence, intimate hacker bedroom lighting, moody and vulnerable, cinematic depth, shot from a three-quarter angle. --ar 2:3 --v 6"
 }

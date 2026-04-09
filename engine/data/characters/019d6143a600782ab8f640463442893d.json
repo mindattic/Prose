@@ -187,5 +187,25 @@
     "Pellucid Systems",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Latin American / Francophone African (Malian/Burkinabé roots through Coulibaly; Iberian/mestizo through Zárate; Hausa/Fulani through Ekwueme)",
+    "height_cm": 189,
+    "weight_kg": 68,
+    "build": "Tall and wiry—lanky in the way of someone who grew too fast on insufficient calories and never quite filled out. His frame is angular, all long limbs and prominent joints; his chest is narrow but his shoulders are broad enough to suggest potential muscle under different circumstances.",
+    "hair_color": "Natural black with slight warm undertone",
+    "hair_style": "Closely cropped, neat, practical; kept short enough that maintenance takes seconds",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, nearly black—clear and unaugmented, but unnaturally alert and tracking",
+    "skin_tone": "Deep blue-black with warm undertones; catches ambient neon (especially the Narrows' reds and purples) and throws it back in shifted hues—greens and violets bleeding across his shoulders and neck in low light",
+    "complexion": "Clean-shaven, bone-sharp features; high cheekbones and a long jaw. Skin is clear but shows the faint pallor of someone who works nights and moves between climate-controlled interiors. No visible scarring on the face, but there is a careful, examined quality to his expression—the look of someone who watches people for a living.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware tattoo running along the left jawline from below the ear to the chin; thin, precise line glowing steady teal approximately 0.5 cm in brightness; marks him as an unlicensed medical practitioner",
+      "Small, faint surgical scars on both inner wrists (subcutaneous sensor implants from his apprenticeship training, non-functional but never removed)"
+    ],
+    "visible_augmentations": "The bioluminescent jawline tattoo is the only visible modification; glows steadily in low light, dims in bright settings. The olfactory enhancement is completely subcutaneous—no external indicators. The Helix Biosystems medical case chained to his left wrist is more 'augmentation' than his body is—battered stainless steel and worn polymer, restickered a dozen times over, fitted with a reinforced titanium chain.",
+    "posture_movement": "Stands very still by default—an economical stance that reads as either meditation or surveillance depending on context. When he moves, it is deliberate and precise; no wasted motion. He does not gesture much when speaking. His attention is complete when directed at someone; he makes sustained eye contact that most people find either deeply reassuring or deeply unsettling. He walks slowly, which allows him to observe without appearing to observe.",
+    "clothing_style": "Tier 4 / working-class practical. Typically wears dark, well-maintained clothing: matte-black or charcoal synth-cotton long-sleeve shirt (loose fit, arm cuffs rolled to mid-forearm to keep hands visible and free); dark gray utility trousers with reinforced pockets, several Velcro-sealed compartments for inventory; black composite boots with grip soles (required for Narrows micro-terrain). No jewelry except the chain on his wrist. A worn, oversized hooded jacket (actual fabric, likely salvaged wool-blend) in dark olive that he sheds in the pharmacy but carries always. Patch on left shoulder: faded Irkalla Mutual Aid Collective circle-and-flame in white. No visible Helix Biosystems branding, though his case is unmistakably their decommissioned design."
+  },
+  "image_prompt": "Cyberpunk street pharmacist, male, 23 years old, impossibly tall and thin, deep blue-black skin with warm undertones that catch neon light and shift to purples and greens. Sharp, attentive face with high cheekbones, closely cropped natural black hair, intense dark brown eyes that are watching. Bioluminescent teal line tattooed along left jawline, glowing steady and dim. Wearing matte black long-sleeve shirt with rolled cuffs, dark gray utility trousers, black composite boots. Oversized worn olive wool hooded jacket draped over shoulders. Left wrist chained to battered decommissioned medical case in stainless steel and worn polymer, restickered many times. Standing very still in the neon-lit Narrows at night, purple and red light casting across skin and clothes, perfectly centered posture, minimal gesture, medic's vigilance. Cinematic, gritty realism, neon cyberpunk, dramatic side-lighting from above, soft focus background of retro-futuristic apartment buildings and street infrastructure, photograph quality, hyperrealistic skin texture, bokeh city lights --ar 2:3 --v 6"
 }

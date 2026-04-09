@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "The Burnished Market — rotating pitch between Grand Corridor and Brewer's Spine, depending on enforcement sweeps, near North Ave and Damen",
-  "description": "Sousou is young enough that his face hasn't fully decided what it's going to settle into — there's still something unfinished about him, a quality he compensates for with a loudness of presence that fills the space around his cart. He is medium height, lean, with a warm light-brown complexion and color-changing hair he keeps cut short on the sides and longer on top, cycling it through oranges and greens depending on the day's mood — today it's a deep amber that shifts to jade in direct light. His hands are already the hands of someone who's been cooking since he could reach a surface: scarred across the knuckles from hot metal, permanently stained around the cuticles from various spice pastes. He has enhanced scent glands, which he will tell you is the best modification a cook can get and which is responsible for approximately forty percent of his competitive advantage.\n\nHis cart runs on two burners and a philosophy: the broth is Congolese-Polish in DNA, built from a fermented corn base with a smoked beef backbone his grandmother taught him and a roux technique his father learned from a Polish neighbor in Lockhaven South, and it is not available any other way in Meridian 88. He is aware of this. He is not modest about it. He runs the cart alone, moves it three times a week to stay ahead of market enforcement, and has a rotating customer base that follows him via a stripped-down community mesh channel. He is also, somewhat to his own surprise, becoming good at this — not just cooking, but the business of it — and has started to suspect that he might want more than a cart.",
+  "description": "Sousou is young enough that his face hasn't fully decided what it's going to settle into — there's still something unfinished about him, a quality he compensates for with a loudness of presence that fills the space around his cart. He is medium height, lean, with a warm light-brown complexion and color-changing hair he keeps cut short on the sides and longer on top, cycling it through oranges and greens depending on the day's mood — today it's a deep amber that shifts to jade in direct light. His hands are already the hands of someone who's been cooking since he could reach a surface: scarred across the knuckles from hot metal, permanently stained around the cuticles from various spice pastes. He has enhanced scent glands, which he will tell you is the best modification a cook can get and which is responsible for approximately forty percent of his competitive advantage.\n\nHis cart runs on two burners and a philosophy: the broth is Congolese-Polish in DNA, built from a fermented corn base with a smoked beef backbone his grandmother taught him and a roux technique his father learned from a Polish neighbor in Lockhaven South, and it is not available any other way in GLMZ. He is aware of this. He is not modest about it. He runs the cart alone, moves it three times a week to stay ahead of market enforcement, and has a rotating customer base that follows him via a stripped-down community mesh channel. He is also, somewhat to his own surprise, becoming good at this — not just cooking, but the business of it — and has started to suspect that he might want more than a cart.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -180,7 +180,7 @@
     "Dredge Mining Collective",
     "Grand Corridor",
     "Brewer's Spine",
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "Grandmother",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
@@ -192,5 +192,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pure Hand"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Central African (Congolese) / Eastern European (Polish)",
+    "height_cm": 172,
+    "weight_kg": 63,
+    "build": "Lean and wiry with defined forearms and shoulders from years of repetitive cooking motions — no excess body fat, all functional muscle",
+    "hair_color": "Color-shifting chromatic geneware — currently deep amber fading to jade in direct light, cycles through oranges and greens daily",
+    "hair_style": "Short fade on sides, longer textured crown, styled for quick maintenance between service rushes",
+    "hair_length": "Short to medium",
+    "eye_color": "Dark brown, naturally warm and expressive",
+    "skin_tone": "Warm light brown — even complexion with underlying golden undertones from mixed Central African and Eastern European heritage",
+    "complexion": "Young face still settling into adulthood, sharp cheekbones, slightly prominent ears, clear skin with the particular texture of someone who works around steam and heat daily — a faint perpetual flush across the cheeks",
+    "distinguishing_marks": [
+      "Systematic network of scars across both knuckles from repeated contact with hot metal during plating and sauce work",
+      "Permanent dark staining around nail beds and cuticles from turmeric, curry powder, and fermented spice pastes — will not fully wash out",
+      "Thin burn scar across the back of right wrist, approximately 8cm long, from a broth splash incident three years ago"
+    ],
+    "visible_augmentations": "No visible cybernetic chrome. Enhanced scent glands are subcutaneous geneware — only visible as slightly enlarged nostrils and a faint iridescent sheen along the inner nasal passages when light hits at the right angle. Color-changing hair is cosmetic geneware, not mechanical",
+    "posture_movement": "Moves with the controlled economy of a line cook — precise, economical, always aware of his immediate workspace. Stands with weight slightly forward, ready to pivot. Hands gesture expressively when speaking, muscle memory of plating and presentation. Fidgets with anything at hand when not actively cooking — taps rhythm on cart, flips utensils",
+    "clothing_style": "Tier 4 working-class pragmatism mixed with street personality. Standard uniform: fitted black tech-weave chef's pants with reinforced knees, layered tank tops or loose shirts that shed heat and stains easily, a lightweight hooded windbreaker in muted colors for quick market sweeps. Worn running shoes with ankle wraps for 10+ hour standing shifts. No jewelry except a faded cloth wristband his grandmother gave him. Clothes are functional, clean but not pristine — perpetually carry the smell of broth and spice no matter how recently washed"
+  },
+  "image_prompt": "A 22-year-old male street vendor with warm light-brown skin and deep amber-to-jade color-shifting hair, short faded sides with longer textured crown, standing behind a mobile noodle cart in a crowded cyberpunk market. Lean and wiry build, dark expressive eyes, with visible scars across knuckles and permanent spice stains on his hands. Wearing fitted black tech-weave pants and a layered tank top, slight flushed complexion from heat work. The cart has two active burners with simmering broth, steam rising, surrounded by market chaos — holographic vendor signs, crowds in Tier 4 clothing, industrial infrastructure overhead. Warm tungsten lighting mixed with neon from nearby stalls. Confident, slightly loud presence, hands moving expressively. Cinematic, photorealistic, street-level perspective, vibrant yet gritty. --ar 2:3 --v 6"
 }

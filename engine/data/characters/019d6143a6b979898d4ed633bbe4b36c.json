@@ -187,5 +187,27 @@
     "Copper",
     "The Pure Hand"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Irish / West African (Senegalese)",
+    "height_cm": 162,
+    "weight_kg": 58,
+    "build": "Compact and wiry, high muscle density from transit maintenance work. Restless kinetic energy evident even at rest — shoulders often slightly raised, weight constantly shifting between feet.",
+    "hair_color": "Natural dark brown with semi-permanent dye in shifting bands of amber and copper",
+    "hair_style": "Shoulder-length, deliberately unkempt, often pulled back with whatever's at hand — wire, fabric scraps, union pins",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, alert and calculating",
+    "skin_tone": "Medium warm brown with golden undertones",
+    "complexion": "Round-faced, youthful features that read younger than 24, sharp cheekbones, a wide mouth quick to smile or smirk. Skin shows sun exposure and stress — occasional breakouts along the jaw from inconsistent sleep. Minimal grooming beyond necessity; calluses on palms and finger pads from six months of maintenance work and constant document handling.",
+    "distinguishing_marks": [
+      "Subvocal mic implant visible as a small silvered node at the base of the throat, faintly luminescent when active",
+      "Geneware cat tail: sleek black, feline structure, approximately 60cm long, extends from base of spine with full articulation and fur texture. Ears remain human. The tail moves independently of conscious control, broadcasting emotional states with visibility that Rudo finds simultaneously useful and mortifying.",
+      "Callused palms and finger pads, deeply grooved from six months of transit maintenance",
+      "A faint scar on the left knuckle from a tool slip during early maintenance work"
+    ],
+    "visible_augmentations": "Black feline geneware tail with independent articulation, visible at the base of the spine and extending below the hip line — constantly moving. Subvocal mic implant at the throat base, subtle silvered node, faintly luminescent during active transmission.",
+    "posture_movement": "Never fully still. Weight rocks side to side while standing. Hands gesture constantly — punctuating speech, organizing space around them, fidgeting with union pins, fabric, document edges. When focused in conversation, they lean forward with intense eye contact. When agitated or thinking, the tail lashes in tight circles. When confident, the tail arcs high and relaxed. Moves quickly through spaces with purposeful efficiency, rarely walks when they can move with intention.",
+    "clothing_style": "Tier 4 working-class practical with protest aesthetics. Black cargo pants with multiple pockets and frayed cuffs, scuffed steel-toed boots. Oversized union-branded windbreaker or worn flannel shirt layered over cheap synthetic tank tops. Visible union pins, hand-drawn protest patch clusters on jacket sleeves. Wears a faded 'Ferrogate Transit Local 9' baseball cap backward when working public actions. Jewelry minimal: a simple cord bracelet with metal beads made by fellow organizers, clip-on comms earpiece (basic model, visible). No grooming for aesthetics — appearance reflects time scarcity and tier reality."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 24-year-old nonbinary union organizer, compact wiry build with warm medium-brown skin, shoulder-length hair with amber and copper dye bands, youthful round face with sharp cheekbones and dark alert eyes. Distinctive black feline geneware tail with full articulation extending from spine, tail mid-lash showing emotional intensity. Visible subvocal implant node at throat base, faintly luminescent. Wearing oversized black union windbreaker over synthetic tank, cargo pants with frayed cuffs, steel-toed boots. Union pins and hand-drawn protest patches clustered on sleeves. Intense forward lean, hands mid-gesture, callused palms visible. Background: interior of working-class union hall, fluorescent harsh lighting, worn metal furniture, protest posters, industrial typography. Mood: confident, restless energy, confrontational determination mixed with youthful idealism. Film grain texture, neon accent lighting on implant. Low-angle slightly upward framing emphasizing determination and presence. --ar 2:3 --v 6"
 }

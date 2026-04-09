@@ -220,5 +220,27 @@
     "Clover",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Polish / Polynesian (Tuivaga lineage suggests Samoan or related Pacific ancestry)",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solidly muscled through the arms and upper back from five decades of manual labor. Not lean, not heavy — compact and functional, with the kind of strength that comes from repetitive work rather than augmentation. Slight thickening at the waist from middle age and a lifestyle of early mornings in humid heat.",
+    "hair_color": "Dark brown with silver streaks, naturally grayed",
+    "hair_style": "Pinned back tightly, usually under a waxed canvas work cap",
+    "hair_length": "Medium (shoulder-length when unpinned, kept practical)",
+    "eye_color": "Dark brown, clear and observant",
+    "skin_tone": "Deep warm brown with reddish undertones, weathered from steam and humidity exposure",
+    "complexion": "Lined face with deep-set eyes and a prominent nose. Perpetually damp at the temples from the steam environment. Skin texture is thick and resilient, sun-damaged and creased around the eyes and mouth from squinting and decades of expression — skepticism carved into her features. No cosmetic grooming; practical and unadorned.",
+    "distinguishing_marks": [
+      "Faded blue subdermal indicator light along the left forearm (temperature-sensing strip, barely visible unless she moves her arm in specific light)",
+      "Stress fracture scar on right palm, pale and old, from a seam-welder accident twenty-three years ago",
+      "Faint chemical burns (pale patches) on both hands from lye exposure, nearly invisible now but readable to anyone who knows laundry work",
+      "Small burn mark on her right temple, half-hidden by hair, from a steam vent encounter in her thirties"
+    ],
+    "visible_augmentations": "Only the faded blue indicator light on her left forearm is visible under certain angles and lighting. The temperature-sensing strip itself sits just beneath the skin and is barely noticeable. Most people would miss it entirely.",
+    "posture_movement": "Economical and efficient. No wasted motion. She stands with weight distributed evenly, shoulders back. Her movements are measured and deliberate — a person who has learned not to jerk or rush around hot water and machinery. When listening, she delivers the slow blink: a three-second pause with eyes closed, a gesture that says *I hear you, but I am deciding if you are worth my response*. When working, her hands move with practiced precision.",
+    "clothing_style": "Tier 4 working-class practical. Heavy canvas work apron in faded indigo, stained with pressing compound and mineral deposits from decades of use, worn over a plain long-sleeved undershirt (changed daily, always dark colors) to protect from splashing and heat. The waxed canvas cap is her signature — cream-colored, decades old, kept waterproofed and functional. Heavy-soled work shoes, scuffed and re-soled twice. A thin synthetic watch on her right wrist (not augmented, purely functional, set to water-temperature precision). No jewelry except a plain iron wedding band, worn thin. Her clothing carries the faint smell of eucalyptus and lye even after washing."
+  },
+  "image_prompt": "a 52-year-old woman of Polish and Polynesian heritage, deep warm brown skin weathered from steam exposure, dark hair streaked with silver pinned under a cream waxed-canvas work cap, standing in a narrow laundry storefront filled with steam and the glow of pressing equipment, wearing a faded indigo canvas apron over dark long sleeves, muscular forearms with a faint blue subdermal light visible under her left arm, steady observant gaze and lined face etched with skepticism, surrounded by racks of garments and the haze of eucalyptus and lye, cyberpunk mundane realism, warm practical lighting from work lamps, gritty texture, worn and functional aesthetic, --ar 2:3 --v 6"
 }

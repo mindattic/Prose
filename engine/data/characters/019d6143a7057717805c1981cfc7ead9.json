@@ -12,7 +12,7 @@
   "role": "Protest coordinator and mutual aid organizer serving the Shelf and Hough Reclamation districts",
   "age": 24,
   "status": "active",
-  "location": "Hough Reclamation, Meridian 88, near Western and Division",
+  "location": "Hough Reclamation, GLMZ, near Western and Division",
   "description": "Tsetseg is lean and angular with a long neck and the kind of stillness that belongs to people who grew up in crowded spaces and learned to take up exactly the amount of room they needed and no more. Their skin is deep brown with a warm undertone, and they have patterned irises — a cosmetic mod done with pigment injections, producing a geometric ring of burnt orange around the pupil that makes their gaze unsettling in photographs. Their hair is kept very short, almost shaved. They dress functionally, with a persistent preference for dark colors that won't show damage from protest conditions.\n\nTsetseg has lived in Hough Reclamation their entire life and has watched three different waves of supposed 'revitalization' turn into displacement. They are twenty-four years old and already tired of promises. What they are not tired of is logistics — they have a genuine gift for coordination, for understanding how bodies move through space, how information needs to flow in chaotic conditions, how to build a supply chain out of mutual obligation and goodwill. They coordinate Shelf Mutual Aid, a network that distributes food, medical supplies, and emergency housing connections across two districts. They have a complicated relationship with attention — they need people to show up and to trust the network, but they find visibility personally uncomfortable.",
   "psychology": {
     "facet_weights": {
@@ -173,9 +173,31 @@
     "Hough Reclamation",
     "The Reclamation Assembly",
     "Dredge Mining Collective",
-    "Meridian 88",
+    "GLMZ",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Ringo Corponation"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mongolian / West African / British",
+    "height_cm": 171,
+    "weight_kg": 58,
+    "build": "Lean and angular with minimal soft tissue, long-limbed and economical in movement. The build of someone who has never had excess and doesn't waste energy on unnecessary gesture.",
+    "hair_color": "Black",
+    "hair_style": "Cut very close to the scalp, almost shaved, maintained with utilitarian precision every two weeks",
+    "hair_length": "Shaved",
+    "eye_color": "Deep brown with geometric ring of burnt orange pigment injected around each pupil, creating an unsettling starburst pattern",
+    "skin_tone": "Deep brown with warm undertone, even throughout, unburned despite irregular sleep schedules",
+    "complexion": "Sharp cheekbones, long neck, minimal facial hair, skin condition pragmatic rather than maintained — a few healing acne marks on the jawline, hands calloused from handling boxes and climbing fire escapes",
+    "distinguishing_marks": [
+      "Geometric patterned irises: burnt orange pigment arranged in a perfect four-pointed starburst around both pupils, done with cheap cosmetic injection three years ago, slightly uneven but deliberate",
+      "Small round scar on the underside of left wrist where the mesh implant was installed, site occasionally irritated and red",
+      "Thin white scar running along the right ribs, approximately 8cm long, from a knife wound during a Tier 5 eviction defense in 2224",
+      "Bruising pattern on shins and forearms that cycles between fresh purple and fading yellow — recurring from protest line contact"
+    ],
+    "visible_augmentations": "Left wrist shows a faint subcutaneous grid pattern beneath the skin where the mesh node sits; the scar tissue is slightly raised and sometimes glows with a dim blue diagnostic light when the implant syncs. No external components. The subdermal biomonitor is invisible but occasionally causes a faint thermal shimmer visible on thermal imaging.",
+    "posture_movement": "Stillness is their default state — they move with precision and economy, never fidgeting. When in motion, they flow between spaces like they're calculating the path beforehand. In crowds, they occupy exactly the space their body requires and no more. Their hands are often doing small logistics work — arranging items, checking lists, adjusting straps. Their gaze is level and unflinching, the geometric irises making direct eye contact feel confrontational even when they don't intend it.",
+    "clothing_style": "Strictly functional Tier 4-5 utilitarian wear: black or dark grey heavy cotton blend work pants with multiple cargo pockets and reinforced stress points, often paint-stained or marked with food residue. Black long-sleeve thermal shirt layered under a dark green or black technical vest with chest pockets and inventory loops. On colder days, a battered black puffer jacket with patches of reflective tape added by hand. Worn black steel-toed boots, always laced tight. A canvas crossbody bag that never leaves their side, containing supply lists, medical inventory, and backup power cells. No visible brands or logos — all functional, all weathered, all chosen for durability over appearance. Occasionally wears a surgical mask even when not required, less from caution than from a desire to be less visible."
+  },
+  "image_prompt": "Nonbinary person with deep brown skin and very short black hair, geometric burnt orange starburst patterned irises, angular face with long neck, lean athletic build. Wearing dark grey cargo work pants and black long-sleeve thermal shirt under a technical dark green utility vest with visible pockets and loops. Standing still and composed with minimal spatial presence, steel-toed boots, canvas crossbody bag. Tier 5 cyberpunk aesthetic, post-industrial Midwest setting, cool dim warehouse or community center lighting, dramatic shadows across the face highlighting the unsettling eye pattern, gritty realism with slight neon accent on the wrist implant scar, photograph quality, documentary style, morning light through industrial windows, --ar 2:3 --v 6"
 }

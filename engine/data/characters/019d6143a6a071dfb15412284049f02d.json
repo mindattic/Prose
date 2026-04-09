@@ -202,5 +202,26 @@
     "Tessera TK-5 Compact 'Clerk'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South Asian (Tibetan/Bhutanese) / French-Canadian",
+    "height_cm": 142,
+    "weight_kg": 34,
+    "build": "Compact and wiry, small-framed with the lean muscularity of a child who walks long routes daily. Her shoulders are slightly forward-hunched from years of carrying her oversized messenger bag.",
+    "hair_color": "Black with natural dark brown undertones",
+    "hair_style": "Pulled back tightly, always hidden beneath a faded orange knit cap that sits low on her brow",
+    "hair_length": "Medium (visible only when cap is removed)",
+    "eye_color": "Dark brown, nearly black",
+    "skin_tone": "Warm medium brown with subtle golden undertones from mixed Himalayan and French heritage",
+    "complexion": "Unlined, serious expression fixed in a slight frown of concentration. Small gap between upper front teeth. Hands are small but calloused from handling paper and data-chips. Fingernails kept short and practical. No cosmetic grooming — face and body reflect tier 4-5 pragmatism.",
+    "distinguishing_marks": [
+      "Faint horizontal scar along her left collarbone, thin as a thread, origin unknown to casual observers",
+      "Small stick-on bioluminescent patch on inner left wrist (blue, cosmetic, not functional augmentation)",
+      "Ink stain on her right index finger and thumb from constant ledger notation with ballpoint pens"
+    ],
+    "visible_augmentations": "None. The bioluminescent patch reads as a toy or gift, not augmentation.",
+    "posture_movement": "She moves with economical precision — no wasted motion. Her gait is slightly hurried even when stationary, weight forward on her toes as if ready to pivot. When seated, she sits upright, ledger always on her lap or within arm's reach. Her head turns often, cataloguing. She does not fidget; instead, she observes.",
+    "clothing_style": "Tier 4-5 utilitarian. Faded gray canvas pants with multiple patched pockets, cuffed at the ankles. Worn thermal undershirt (navy or charcoal) layered with a too-large olive surplus jacket that reaches past her hips — pockets reinforced with duct tape. The faded orange knit cap is her signature, pulled down over her ears. Worn canvas sneakers (generic grey, scuffed and re-laced). The messenger bag is canvas, army-green, heavily patched with mismatched fabric scraps and fastened with para-cord repairs. No visible corporate logos. Everything she wears is secondhand or market-salvaged."
+  },
+  "image_prompt": "eleven-year-old girl, Himalayan-Canadian mixed heritage, warm medium brown skin, dark serious eyes, small gap-toothed smile, black hair hidden under faded orange knit cap, compact wiry build, wearing oversized olive surplus jacket and patched canvas messenger bag nearly as large as her torso, standing in neon-lit alley market with vendor stalls in soft focus background, holding paper ledger, bioluminescent patch glowing faint blue on inner wrist, cyberpunk street-level view, morning light filtering through GLMZ industrial architecture, gritty realism, sharp focus on face and hands, moody cool lighting with warm accent on her skin tone, 35mm documentary style photography, no chrome no heavy augmentation, street urchin protagonist, --ar 2:3 --v 6"
 }

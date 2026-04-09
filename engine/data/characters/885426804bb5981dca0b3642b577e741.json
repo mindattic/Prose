@@ -7,7 +7,7 @@
     "Auntie Debt"
   ],
   "role": "Private Investigator",
-  "description": "Wanjiku Strom-Adjei doesn't investigate cases the way other PIs do. She doesn't chase data or neural trails or physical evidence. She chases debts — the invisible web of obligations, favors, and social contracts that binds the people of Meridian 88's lower tiers into a functional community in the absence of institutional support.\n\nIn a city where CorpSec serves corporate interests and formal justice is a luxury of the upper tiers, the lower tiers have developed their own systems of order. Wanjiku sits at the center of one such system — a vast, informal network of mutual obligation that she has spent thirty years cultivating. She has helped people find jobs, settle disputes, secure housing, obtain medical care, and navigate bureaucracy, and every act of help creates a debt. Not a financial debt — a social one. And when Wanjiku needs information, access, or assistance for an investigation, she calls in those debts with the precision of a banker calling in loans.\n\nHer method is uniquely effective for lower-tier investigations because it operates entirely within the trust economy that these communities have built for themselves. Her informants aren't paid — they're repaying kindness. Her access isn't purchased — it's earned. And her investigations don't disrupt the community fabric because she is the community fabric. She is simultaneously an investigator, a mediator, a counselor, and an informal judge, and the people who live in her territory understand that keeping Wanjiku happy is essential to keeping their community functional.",
+  "description": "Wanjiku Strom-Adjei doesn't investigate cases the way other PIs do. She doesn't chase data or neural trails or physical evidence. She chases debts — the invisible web of obligations, favors, and social contracts that binds the people of GLMZ's lower tiers into a functional community in the absence of institutional support.\n\nIn a city where CorpSec serves corporate interests and formal justice is a luxury of the upper tiers, the lower tiers have developed their own systems of order. Wanjiku sits at the center of one such system — a vast, informal network of mutual obligation that she has spent thirty years cultivating. She has helped people find jobs, settle disputes, secure housing, obtain medical care, and navigate bureaucracy, and every act of help creates a debt. Not a financial debt — a social one. And when Wanjiku needs information, access, or assistance for an investigation, she calls in those debts with the precision of a banker calling in loans.\n\nHer method is uniquely effective for lower-tier investigations because it operates entirely within the trust economy that these communities have built for themselves. Her informants aren't paid — they're repaying kindness. Her access isn't purchased — it's earned. And her investigations don't disrupt the community fabric because she is the community fabric. She is simultaneously an investigator, a mediator, a counselor, and an informal judge, and the people who live in her territory understand that keeping Wanjiku happy is essential to keeping their community functional.",
   "affiliation": "Independent — operates through an intricate personal economy of debts and favors",
   "tier": "Tier 2",
   "location": "A parlor in Crucible Square that functions as a combination office, tea house, and informal court — people come to settle debts, ask favors, and request investigations, near Ashland and Division",
@@ -63,10 +63,31 @@
   "registered_firearms": [],
   "related_entities": [
     "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Meridian 88",
+    "GLMZ",
     "Tessera Industries Void Grenade VG-1 'Black Hole'",
     "Elegy",
     "Zheng-Dao Heavy Industries Rail Pistol RP-2 'Verdict'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East African (Kikuyu) / Scandinavian (Swedish)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and economical, with the posture of someone who has spent decades sitting and listening. Shoulders slightly rounded from years at a desk or low table. No excess movement — everything purposeful.",
+    "hair_color": "Dark brown with silver-grey threading at the temples and crown",
+    "hair_style": "Worn in a neat crown of thin braids, wrapped with indigo thread at the ends. Practical, deliberate, not decorative.",
+    "hair_length": "Medium (shoulder-length when unbraided)",
+    "eye_color": "Dark brown, alert and observant",
+    "skin_tone": "Medium brown with warm undertones, reflecting mixed East African and Northern European ancestry",
+    "complexion": "Weathered and lined around the eyes and mouth from three decades of concentration and careful listening. Minimal makeup. Clean, well-maintained but not groomed for status. A few faint scars on the left cheekbone from street violence in younger years.",
+    "distinguishing_marks": [
+      "Fine scar tissue along the left cheekbone, approximately 3cm, from a knife wound sustained around age twenty-five",
+      "Faded tattoo on the inner right wrist: a simple circle with three internal lines, marking her induction into the Crucible Square mutual aid collective at age thirty",
+      "Calluses on her hands from decades of handling paper ledgers and physical currency (Φ notes and coins), particularly on the thumb and forefinger of her right hand"
+    ],
+    "visible_augmentations": "None visible. Any augmentations she carries are subcutaneous and deliberately hidden — consistent with her philosophy that trust is built on presence, not performance.",
+    "posture_movement": "Sits with perfect stillness, rarely fidgets. Moves with economical precision. Her gaze is direct and unwavering — she makes people uncomfortable because she watches rather than speaks. When she does move, it is slow and deliberate, designed to not startle or intimidate. Her hands are usually folded in her lap or on the table in front of her.",
+    "clothing_style": "Tier 3-4 practical: well-maintained but worn linen shirts in cream or grey, often layered with a rust-colored vest or indigo wrap. Loose black trousers with deep pockets. A long coat in charcoal wool, patched at the elbows, worn year-round. She favors natural fabrics and muted colors — nothing that draws attention. Her clothes smell faintly of tea, paper, and incense. No corpo branding, no corporate augmentation displays. Everything about her presentation says 'trust me because I am not selling anything.'"
+  },
+  "image_prompt": "A lean, observant woman in her late fifties with dark skin and silver-threaded braids wrapped in indigo thread, sitting motionless in a dimly lit tea house. She wears a rust-colored vest over a cream linen shirt, and her hands are folded on a worn wooden table in front of her. Behind her, shelves of tea canisters and ledger books glow softly in amber lighting. Her dark eyes are penetrating and focused. The setting is cyberpunk neo-noir, Tier 3-4 GLMZ aesthetic — worn neon signs visible through rain-streaked windows behind her, casting blue and red reflections across the table. Warm, intimate overhead lighting creates deep shadows under her cheekbones. No chrome visible, no flashy augmentations — her power is subtle and social. Mood: contemplative, authoritative, entirely present. Shot from a low angle looking slightly upward. --ar 2:3 --v 6"
 }

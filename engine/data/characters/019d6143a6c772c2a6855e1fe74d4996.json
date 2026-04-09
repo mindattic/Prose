@@ -105,5 +105,26 @@
   "related_entities": [
     "Meridian Core"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Athletic and lean with defined shoulder musculature from years of manual labor and logistics work; carries herself with the efficient economy of movement typical of someone who works on cargo docks",
+    "hair_color": "Dark brown with premature silver threading at the temples",
+    "hair_style": "Pulled back in a tight, practical braid wrapped with copper wire for both form and function",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with faint amber undertones",
+    "skin_tone": "Rich caramel with warm undertones, sun-weathered from outdoor dock work",
+    "complexion": "Sharp cheekbones, angular jawline, a thin scar running from left temple to cheekbone (old industrial accident), minimal makeup, skin shows the texture of someone who spends time exposed to Great Lakes wind and industrial grime",
+    "distinguishing_marks": [
+      "Thin white scar tracing from left temple to left cheekbone, approximately 8cm, slightly raised",
+      "Faded burn marks across the knuckles of both hands in geometric patterns (from handling heated cargo containers)",
+      "Tattoo on inner right forearm: a stylized freight container with the Ferrogate corporate cipher embedded in it"
+    ],
+    "visible_augmentations": "Subdermal chrome reinforcement visible at the wrists (burnished silver showing through translucent skin panels at pulse points); faint LED grid pattern visible beneath the skin at the base of her skull when her braid is loose, suggesting neural enhancements for logistics calculation and spatial reasoning",
+    "posture_movement": "Moves with deliberate precision; stands with weight balanced, shoulders back; speaks with clipped, efficient sentences; eyes constantly calculate angles and distances—the gaze of someone mentally mapping cargo spaces and route optimization",
+    "clothing_style": "Tier 3-4 utilitarian: heavy-duty Ferrogate-branded work jacket (charcoal with reflective trim and company patches), reinforced cargo pants with multiple weighted pockets, steel-toed boots scuffed from dock work, a worn leather belt with a brass Ferrogate buckle, and a thin smart-fabric undershirt that displays real-time logistics data feeds via subtle luminescent threads"
+  },
+  "image_prompt": "A 39-year-old woman of West African and Scandinavian heritage, athletic lean build, standing in an industrial cargo dock setting. Dark brown hair with silver threading pulled back in a practical copper-wire-wrapped braid. Deep brown eyes with amber undertones. Caramel skin tone, weathered from outdoor work. Thin white scar running from left temple to cheekbone. Subdermal chrome visible at wrists with faint LED grid at the base of skull. Wearing a charcoal Ferrogate-branded work jacket with reflective trim, reinforced cargo pants, and steel-toed boots. Standing amid shipping containers and crane equipment, neon signage reflecting off wet concrete. Cyberpunk noir aesthetic, dramatic side-lighting, sharp focus on face and hands, industrial grit, professional logistics operative, 2226 Great Lakes Metropolitan Zone --ar 2:3 --v 6"
 }

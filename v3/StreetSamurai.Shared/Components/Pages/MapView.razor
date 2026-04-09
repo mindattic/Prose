@@ -2,9 +2,10 @@
 @inject SettingsService Settings
 @inject IJSRuntime JS
 @inject DistrictRepository PlaceRepo
+@inject WorldbuildingDocRepository DocRepo
 
 <div class="d-flex justify-content-between align-items-center mb-3">
-    <h4 class="text-danger mb-0">Map — Meridian 88</h4>
+    <h4 class="text-danger mb-0">Map — GLMZ</h4>
     <div class="d-flex gap-2 flex-wrap">
         <button class="btn btn-sm @(layerStates["districts"] ? "btn-secondary" : "btn-outline-secondary")" @onclick="@(() => ToggleLayer("districts"))">
             <i class="bi bi-layers"></i> Districts
@@ -108,6 +109,16 @@ else
         categories = categories.Where(c => c.Item4 > 0).ToList();
 
         await JS.InvokeVoidAsync("meridianMap.loadPlaces", places);
+
+        // Load overlay polygons from documents that have a map_polygon field
+        var polygons = DocRepo.GetAll()
+            .Where(d => d.ExtraData != null && d.ExtraData.ContainsKey("map_polygon"))
+            .Select(d => d.ExtraData!["map_polygon"])
+            .ToList();
+
+        if (polygons.Count > 0)
+            await JS.InvokeVoidAsync("meridianMap.loadOverlayPolygons", polygons);
+
         await InvokeAsync(StateHasChanged);
     }
 

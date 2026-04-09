@@ -239,11 +239,32 @@
     "Arcturus Defense Solutions Crowd Control SMG ACSM-3 'Shepherd'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Photovoltaic Cascade Rifle PCR-3 'Tithe'",
     "Grainfort",
     "The Sluiceway",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "South Asian (Roshan) / West African (Amadou) / Anglo-Saxon (Kettlewell)",
+    "height_cm": 193,
+    "weight_kg": 118,
+    "build": "Exceptionally large and structurally dense—shoulders like load-bearing columns, forearms visibly reinforced beneath the skin with bone-lacing modifications. Not bulky from bodybuilding; rather, engineered mass optimized for impact absorption and structural integrity. Moves with deliberate, economical precision despite his size.",
+    "hair_color": "Black, natural",
+    "hair_style": "Shaved to bare scalp, kept obsessively smooth—no stubble, no texture. Ritual grooming suggests control and self-maintenance.",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown, unaugmented",
+    "skin_tone": "Warm medium brown with South Asian and West African undertones; even complexion without blemish",
+    "complexion": "Strong jawline with squared edges and prominent mandible—architecture that reads as intimidating. Clean-shaven. Unmarred face; the kind of careful symmetry that suggests his geneware and augmentations were installed with precision by medical professionals, not street techs. Slight blue-white bioluminescent flush visible along cheekbones and temples—most apparent in low light, creates an eerie subliminal glow.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware traces along cheekbones and temples: blue-white glow, cosmetic modification installed for aesthetic/intimidation value, most visible in evening/night conditions.",
+      "Faint linear scarring along inside of left forearm where bone-lacing installation incisions healed—barely visible unless limb is at specific angle to light, approximately 12 centimeters long.",
+      "Subdermal impact dampener plates visible as subtle geometric ridges across knuckles when fists are clenched—slight metallic sheen under skin, approximately 2-3 millimeters relief."
+    ],
+    "visible_augmentations": "Bioluminescent cheekbone/temple flush (blue-white, cosmetic geneware—unmistakable at night, subtle in daylight). Slight geometric relief pattern visible across knuckles suggesting subdermal plating. Forearm bone-lacing creates subtle density variation visible under skin in certain lighting, though not obvious without close inspection.",
+    "posture_movement": "Stands at full height with shoulders relaxed, not squared aggressively. Moves with unusual grace for someone 193cm tall—economical, controlled, deliberate. Each motion appears calculated to minimize accidental damage. When reaching for something, he slows down. When walking through crowded spaces, he becomes hyperaware of his spatial footprint. Body language reads as quiet and contained rather than threatening, which creates cognitive dissonance with his physical presence.",
+    "clothing_style": "Tier 1-2 enforcer uniform: well-fitted black or charcoal synthetic-blend long-sleeve shirts (breathable, durable) worn untucked. Matte-finish tactical pants in dark gray or black with reinforced seams. Worn-in leather jacket in deep brown, scuffed at the cuffs from years of use, no corpo branding. Steel-toed work boots, black, maintained to functional standards rather than polish. No jewelry except a faded cloth wristband on left wrist (memorial or talisman—ambiguous origin). Clothing choices prioritize functionality and durability over style, with subtle tier-2 quality markers that suggest he has access to better than street level, but not corpo-grade luxury."
+  },
+  "image_prompt": "A 193cm tall South Asian and West African man with an intimidating jawline and shaved head, standing in a dimly lit industrial corridor, his cheekbones and temples glowing with faint blue-white bioluminescence from geneware implants. Warm medium-brown skin, dark eyes, unsmiling expression. Wearing a worn brown leather jacket over a black synthetic shirt and tactical pants, steel-toed boots. Hands at his sides showing subtle metallic ridges across his knuckles from subdermal impact plates. His posture is relaxed but controlled, careful and precise despite his enormous frame. Cyberpunk noir aesthetic, moody atmospheric lighting, slight neon reflection on wet concrete, hyper-realistic, cinematic depth of field, gritty urban environment, tactical gear worn but maintained, unthreatening expression despite intimidating physiology. --ar 2:3 --v 6"
 }

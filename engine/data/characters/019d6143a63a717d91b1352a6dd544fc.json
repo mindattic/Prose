@@ -241,5 +241,27 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Korean / Northern European (mixed diaspora lineage)",
+    "height_cm": 172,
+    "weight_kg": 64,
+    "build": "Lean and wiry, shoulders slightly hunched from years bent over repair benches. Forearms show old scarring from chrome installation work; core is stronger than his frame suggests—muscle built through precision work rather than bulk.",
+    "hair_color": "Black with premature silver threading at temples",
+    "hair_style": "Undercut, longer on top (swept back), kept functional rather than styled. Often matted from sweat and workshop grime.",
+    "hair_length": "Short to medium",
+    "eye_color": "Dark brown, naturally alert—eyes are his most expressive feature, constantly processing detail",
+    "skin_tone": "Light olive complexion with uneven pallor from spending months in The Shelf's industrial lighting",
+    "complexion": "Narrow face, sharp cheekbones, dark circles under eyes from sleep deprivation and diagnostic work. Thin scar runs from left temple to jawline (workshop accident, year two). Perpetually exhausted look. Jaw usually clenched.",
+    "distinguishing_marks": [
+      "Scar tissue around both wrists where surgical chrome interfaces with flesh—raw-looking, poorly healed, asymmetrical",
+      "Thin white line running left temple to jawline from a chrome calibration tool accident",
+      "Calluses and burn marks across palms and fingers of his forearms from handling hot chrome components",
+      "Faint tattoo on right shoulder blade: a circuit diagram he drew himself at age nineteen, slightly uneven"
+    ],
+    "visible_augmentations": "Mismatched prosthetic hands at both wrists, the visual centerpiece of his presence. Left hand is delicate surgical chrome (Helix medical surplus—too small, designed for precision medical work), with articulated fingers and visible joint mechanisms. Right hand is a heavy industrial gripper (salvaged dock equipment—too large, designed for cargo manipulation), with reinforced hydraulic actuators and scarred knuckle plating. Neither matches his frame. Wrist interfaces show exposed cable routing and poor calibration marks. Hands shake intermittently when idle.",
+    "posture_movement": "Hunched forward, shoulders curled inward—protective posture. Moves with deliberate precision, economical gestures. Uses his hands constantly while talking, making the mismatch deeply visible. Right hand (gripper) moves with heavier, more deliberate hydraulic lag; left hand twitches occasionally from miscalibration. When concentrating, completely still except for micro-adjustments.",
+    "clothing_style": "Tier 4-5 working crew: grease-stained grey syndicate-knockoff maintenance jacket with rolled sleeves (showing wrist augmentation scars), cheap black thermostat undershirt with small tears. Cargo pants with multiple pockets filled with diagnostic tools and calibration leads. Steel-toe boots worn through at the heel. No jewelry. Wears a frayed Meridian Technical ID badge clipped to a lanyard despite no longer being a student—a ghost of who he was supposed to become."
+  },
+  "image_prompt": "Portrait of a 28-year-old Korean-European man with dark tired eyes and premature silver in black undercut hair, narrow sharp-featured face, olive skin tone. Wearing grease-stained grey maintenance jacket with rolled sleeves, revealing badly scarred wrists fitted with two visibly mismatched prosthetic chrome hands: delicate surgical hand on left (too small, medical chrome with articulated fingers), heavy industrial hydraulic gripper on right (oversized cargo equipment, scarred plating). Hands show poor calibration, tremor. Posture hunched and protective. Dark circles, exhausted expression, circuit-diagram tattoo visible on shoulder. Background: dimly lit industrial dock with hanging cables and metallic surfaces, cool blue-grey lighting, grime and oil stains. Cyberpunk, technical, melancholic. Film noir shadows. Shallow depth of field focusing on mismatched hands and tired face. --ar 2:3 --v 6"
 }

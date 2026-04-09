@@ -43,8 +43,16 @@
     "Couples and strangers playing the matched-drink connection game"
   ],
   "notable_locations": [
-    "The upstairs space — fourth floor, minimalist white, screens on every wall",
-    "The downstairs space — basement three blocks away, identical layout, the mirror"
+    {
+      "name": "The upstairs space",
+      "description": "fourth floor, minimalist white, screens on every wall",
+      "tags": []
+    },
+    {
+      "name": "The downstairs space",
+      "description": "basement three blocks away, identical layout, the mirror",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.887,

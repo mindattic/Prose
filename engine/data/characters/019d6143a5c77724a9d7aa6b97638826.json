@@ -243,5 +243,25 @@
     "Slagworks Industrial",
     "The Pale Mile"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Polish / Armenian",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Heavyset, solid through the shoulders and chest, soft around the midsection from years of sedentary work and institutional food. Thick-limbed but not athletic.",
+    "hair_color": "Dark brown with premature gray threading through, particularly at the temples",
+    "hair_style": "Close-cropped, military-precision cut, maintained weekly at a sub-level barber",
+    "hair_length": "Short",
+    "eye_color": "Pale gray-blue, alert and observant",
+    "skin_tone": "Pale Caucasian complexion with chronic reddening across cheeks and nose from Deepwell Station's recycled air and irregular ventilation systems",
+    "complexion": "Weathered by decades of sub-level lighting; fine lines around the eyes from constant squinting at data terminals; a deep vertical crease between the brows from concentration. Cheeks permanently flushed. His mustache is meticulously groomed—dark, full, kept to precise dimensions—in stark contrast to the neglect elsewhere in his appearance.",
+    "distinguishing_marks": [
+      "Faint surgical scar on the left wrist where subdermal data port was installed, approximately 3cm long, now nearly invisible",
+      "Nicotine stains on the index and middle fingers of his right hand from years of handling cheap synthetic cigarettes"
+    ],
+    "visible_augmentations": "None visible. Subdermal data port at left wrist is healed over and unmarked; neural cache implant is completely internal and undetectable without scanning equipment.",
+    "posture_movement": "Hunched shoulders from hours seated at a folding table; moves with deliberate, economical motions—no wasted energy. Sits with his spine against the chair back, feet flat on the floor, always positioned to see approaches from multiple angles. Stillness is his default state; when he moves, it is purposeful and measured.",
+    "clothing_style": "Tier 4 utilitarian. Three interchangeable synthetic-blend jackets in muted colors (charcoal, dark green, navy) worn in rotation, all showing seams at the elbows and collar stains from years of Deepwell grime. Underneath: plain long-sleeved thermal shirts, worn but clean. Practical cargo pants with multiple pockets. Heavy boots resoled twice. A worn canvas belt with a reinforced data-chip case containing 60-80 organized chips. No jewelry except a functional analog wristwatch. Everything smells faintly of recycled air, old coffee, and industrial cleaner."
+  },
+  "image_prompt": "A heavyset 44-year-old man of Polish-Armenian descent, pale complexion with chronic rosy flushed cheeks, seated at a folding metal table in a dingy underground market stall. Close-cropped dark hair with gray at temples, meticulously groomed full mustache in sharp contrast to rumpled appearance. Wearing a faded synthetic charcoal jacket over thermal undershirt, cargo pants, heavy boots. Alert pale gray-blue eyes, faint surgical scar visible on left wrist near a subdermal data port. Data-chip case on belt containing dozens of organized chips. Handwritten placard reading 'MEDIA / INFORMATION / REASONABLE RATES' behind him. Battered terminal and thermos cup on the table. Cyberpunk noir aesthetic, Deepwell Station sub-level setting, harsh fluorescent overhead lighting casting sharp shadows, dingy recycled air visible as slight haze, mundane corporate spy atmosphere, photorealistic portrait style, gritty and unglamorous, --ar 2:3 --v 6"
 }

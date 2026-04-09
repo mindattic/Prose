@@ -13,7 +13,7 @@
   "age": 29,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Lake Shore Drive and North",
-  "description": "Fatoumata Belov-Ntim is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 29, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a demolitions expert out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Fatoumata Belov-Ntim is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Fatoumata Belov-Ntim is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 29, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a demolitions expert out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Fatoumata Belov-Ntim is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "The perfect run — one job so clean it becomes legend",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Control — over their body, their schedule, their future"
     ],
     "coping_mechanisms": [
@@ -273,11 +273,31 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "The Nearfield",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Eastern European",
+    "height_cm": 182,
+    "weight_kg": 74,
+    "build": "Athletic and lean with precise muscle definition — the body of someone who treats their frame as a precision instrument. Low body fat, efficient movement, no wasted mass.",
+    "hair_color": "Black",
+    "hair_style": "Close-cropped fade, maintained with military precision",
+    "hair_length": "Short",
+    "eye_color": "Dark brown — natural, unaugmented",
+    "skin_tone": "Deep warm brown with undertones reflecting mixed West African and Slavic ancestry",
+    "complexion": "Smooth, unblemished — the result of nocturnal living and meticulous self-maintenance. Strong jaw, high cheekbones. Expression typically neutral and controlled, suggesting years of emotional discipline.",
+    "distinguishing_marks": [
+      "Faint linear scar along the right temple, approximately 4cm, from an improvised explosive device fragment — barely visible unless light catches it at an angle",
+      "Burn scarring across the knuckles and back of both hands — old injuries, professional hazard, now mostly integrated with regular scar tissue"
+    ],
+    "visible_augmentations": "Move-by-wire nervous system augmentation visible as iridescent chrome threading beneath the skin along both arms and neck — subcutaneous neural pathways that catch light with an opalescent sheen. No bulky external chrome; the system is integrated and elegant. The chrome traces become more prominent during physical exertion, faintly luminescent.",
+    "posture_movement": "Moves with deliberate economy — no excess motion, no fidgeting. Posture is upright but relaxed, suggesting coiled readiness rather than tension. Every movement appears calculated. Eyes track peripherals constantly, habit from years of work in dangerous spaces. When still, he becomes nearly invisible through sheer neutrality.",
+    "clothing_style": "Tier 3-4 pragmatist. Usually wears reinforced tactical wear — matte black or dark gray utility pants with multiple sealed pockets, sleeveless or short-sleeved shirts to display the chrome augmentation with obvious intentionality. Favors synthetic materials resistant to chemical residue and thermal stress. Heavy insulated jacket for site work, unmarked and nondescript. Minimal branding. Boots are always practical footwear — grip soles, ankle support, built for movement on unstable surfaces. No jewelry. Everything serves function."
+  },
+  "image_prompt": "A 29-year-old man with deep brown skin and West African features, athletic lean build, military-precision fade haircut, wearing dark tactical gear. Iridescent chrome threading visible beneath the skin along arms and neck, glowing faintly. Sleeveless shirt exposing augmented nervous system pathways. Holding a precision demolition tool, standing in a mid-level corporate tower corridor at night, moody blue neon lighting, cinematic cyberpunk aesthetic, precise and controlled posture, neutral expression, hyper-realistic, professional headshot-style framing, chiaroscuro lighting emphasizing chrome augmentations --ar 2:3 --v 6"
 }

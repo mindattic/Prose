@@ -225,5 +225,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Georgian / Samoan",
+    "height_cm": 176,
+    "weight_kg": 62,
+    "build": "Rangy and unfinished — all long limbs and sharp angles, the kind of lean that comes from adolescence not yet settling into adulthood. Wiry muscle from dock work, but still carrying the gangly proportions of someone who hasn't grown into their frame.",
+    "hair_color": "Black, natural",
+    "hair_style": "Loose, uncut spirals; chaotic and perpetually disheveled, as if he's never bothered to maintain it",
+    "hair_length": "Medium, shoulder-grazing when loose",
+    "eye_color": "Dark green with amber ring around pupil (natural heterochromia pattern); seems to glow from within in low light",
+    "skin_tone": "Warm brown — golden undertones mixing Georgian and Samoan heritage",
+    "complexion": "Young, sun-exposed from dock work, unlined. Occasional acne scarring on his jawline. Perpetually looks alert and slightly restless.",
+    "distinguishing_marks": [
+      "Faint chemical burn scar on his right palm from early dock accident — roughly circular, pale against his skin",
+      "Small tattoo on his left wrist: a simple airship silhouette, done by a bunkmate with an improvised needle three seasons ago — crude but deliberate",
+      "Thin scar tissue along both collarbones from geneware implant surgery for the cat ears; visible when wearing low necklines"
+    ],
+    "visible_augmentations": "Geneware cat ears mounted on top of his head — small, dark-furred, distinctly feline. The left ear tracks slightly slower than the right when swiveling, a noticeable mechanical lag from the secondhand purchase. They're his most visible modification and the thing he's most proud of, despite their imperfection.",
+    "posture_movement": "Restless and kinetic — fidgets constantly, taps rhythmic sequences on metal surfaces (a prayer-like habit). Moves with quick, efficient warehouse grace when working; slouches and sprawls when at rest. Frequently runs his fingers through his chaotic curls. Eye contact is direct but unfocused, like he's already thinking three moves ahead.",
+    "clothing_style": "Oversized Ferrogate Transit work vest (company issue, four sizes too large) worn as his default layer — sleeves rolled up, pocket seams covered in marker-pen doodles of airship designs, cargo paths, and abstract geometric patterns. Underneath: cheap thermal shirt (Tier 4 supplier brand), dark cargo pants with multiple pockets for tools and small bets. Worn steel-toed boots, laces often undone. His clothes smell like industrial lubricant and ozone. No visible corporate branding beyond the Ferrogate vest. Entirely Tier 4 working-class aesthetic — functional, secondhand, personalized through wear and modification."
+  },
+  "image_prompt": "Seventeen-year-old male, Georgian-Samoan heritage, warm brown skin, shoulder-length loose black curls spiraling in all directions, dark green eyes with amber ring around pupils glowing faintly, restless kinetic energy. Wearing oversized gray Ferrogate Transit work vest four sizes too large with rolled sleeves and black marker doodles on pockets, thermal undershirt, dark cargo pants. Most distinctive feature: small dark-furred geneware cat ears mounted on his head, left ear tracking slightly mechanical and slow. Thin visible scar tissue on collarbones. Young, unfinished angles, lean wiry build. Fidgeting with hands, tapping rhythm on metal. Industrial dock setting, harsh fluorescent and sodium lighting, worn warehouse background. Cyberpunk, Tier 4 aesthetic, gritty realism, character portrait, photorealistic with slight stylization, shallow depth of field focusing on face and ears --ar 2:3 --v 6"
 }

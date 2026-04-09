@@ -13,7 +13,7 @@
   "age": 35,
   "status": "active",
   "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near LaSalle and Congress",
-  "description": "Eshe Pena-Baah is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 35, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a combat medic out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEshe Pena-Baah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Eshe Pena-Baah is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 35, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a combat medic out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEshe Pena-Baah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.57,
@@ -155,7 +155,7 @@
       "loyalty_break": 5
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "network of reliable contacts",
       "photographic memory for faces and layouts"
     ],
@@ -278,9 +278,31 @@
     "Nkomo-Lindqvist NLR-9 'Counselor'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Burden of Longitude",
     "Slagworks Industrial"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Iberian — Pena suggests Portuguese/Spanish lineage, Baah suggests Ghanaian or broader West African roots",
+    "height_cm": 188,
+    "weight_kg": 98,
+    "build": "Broad-shouldered and heavily muscled through the chest and arms, with a solid core that speaks to decades of physical labor and field medicine. Carries weight with deliberate control — not fat, but density. The kind of frame that fills doorways.",
+    "hair_color": "Dark brown, graying at the temples and through the beard",
+    "hair_style": "Worn close-cropped on the sides, slightly longer on top. Beard kept trim but deliberately rough — maintenance rather than grooming. Practical, not aesthetic.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm and observant",
+    "skin_tone": "Deep warm brown with undertones of red-ochre, reflecting mixed West African and Mediterranean heritage",
+    "complexion": "Weathered and lined — 35 years in the GLMZ shows in the face. Deep crow's feet from squinting in bad light and years of focus. A scar runs through his left eyebrow. His expression defaults to neutral assessment, the micro-expressions of someone who has learned to read people for survival.",
+    "distinguishing_marks": [
+      "Visible scar tissue at the base of his skull where a cortical bomb was surgically removed — a raised, keloid-textured line about 3cm long, slightly discolored",
+      "Thin white scar running through his left eyebrow and down to his cheekbone, roughly 2 inches, from bladed trauma",
+      "Burn scars on his right forearm — old accidents with cautery equipment — mottled and pale against darker skin",
+      "Tattooed surgical grid on his left inner forearm: coordinates and medical reference marks in fine black ink, practical rather than decorative"
+    ],
+    "visible_augmentations": "Chrome shows. Neural interface jack at the base of the skull — visible as a dark metallic port surrounded by the keloid scar tissue from removal of the cortical bomb. Both hands show chrome knuckle reinforcements barely visible under skin tension. His right eye has faint LED reflectivity in certain light angles — subcutaneous neural interface telemetry.",
+    "posture_movement": "Moves with the economy of someone who has learned every motion costs. No wasted gestures. When still, his weight settles into his hips and legs — stable, grounded. When moving through tight spaces (his native environment), he flows with practiced ease despite his size. Hands are steady and deliberate. His default expression is neutral observation, but his eyes never stop tracking.",
+    "clothing_style": "Tier 4 practical — worn synthleather field coat in charcoal over reinforced mesh cargo pants with multiple pockets for medical supplies and tools. Steel-toed work boots, scuffed but maintained. Under the coat: a military-grade trauma harness in black, visible when he moves. No logos, no chrome fashion, no corporate branding. Everything is functional and worn. The clothes have seen things. A surgical mask hangs around his neck, ever-ready. Carries a modified medical kit on his hip like a sidearm."
+  },
+  "image_prompt": "A 35-year-old West African-Iberian combat medic with deep brown skin and a weathered, observant face scarred by city life. Broad-shouldered and densely muscled, standing in dim neon-lit tunnels. His dark hair is graying at temples, kept short, with a rough trimmed beard. Visible at the base of his skull: metallic neural interface jack surrounded by keloid scar tissue from a removed cortical bomb. His hands show subtle chrome knuckle reinforcements. He wears a worn black synthleather field coat over military trauma harness, reinforced cargo pants, steel-toed boots — all scuffed and battle-tested. A surgical mask hangs around his neck. His expression is neutral, focused, eyes tracking. Standing in the Underbelly: wet concrete tunnels lit by fragmentary LED strips, pipes overhead, cables crossing the darkness. The lighting is harsh and blue-green, casting shadows that accentuate the scar tissue on his neck. Mood: competent danger, someone who has learned to survive. Cinematic, gritty cyberpunk realism. --ar 2:3 --v 6"
 }

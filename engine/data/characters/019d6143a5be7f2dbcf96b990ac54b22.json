@@ -60,7 +60,7 @@
     "Inventory the dog found something buried in the debris field under the overpass: a sealed container of augmentation components that haven't been manufactured since 2171 and show signs of Axiom research-division provenance",
     "A young apprentice he took on informally is showing signs of real talent — and has begun asking questions about who Bako used to be that are getting uncomfortably close to accurate"
   ],
-  "narrative_function": "Technical expert and parts source for augmentation-related needs. Deep institutional knowledge of hardware makes him invaluable for identifying strange tech, vintage aug components, or modified cyberware. Also carries significant history from an earlier era of Meridian 88.",
+  "narrative_function": "Technical expert and parts source for augmentation-related needs. Deep institutional knowledge of hardware makes him invaluable for identifying strange tech, vintage aug components, or modified cyberware. Also carries significant history from an earlier era of GLMZ.",
   "augmentations": "Extensive salvage-assembled left arm (mismatched components, functional if unusual). Salvage-market optical left eye. Spinal brace — internal, medical-grade, installed after a workplace injury thirty years ago. Subdermal toolkit storage in right forearm — several small retractable tools he's incorporated over the years.",
   "daily_life": "He's at the pitch before sunrise to sort new acquisitions, opens for business at seven, and runs until the light fails or he runs out of energy — increasingly the latter. Inventory the dog runs the perimeter and barks at anyone who tries to pocket merchandise. Two evenings a week Bako attends an informal aug-repair social at a Geartown community hall, where people bring broken cyberware and he helps diagnose it.",
   "affiliation": "Independent. Informal arrangement with Geartown's dominant crew, the Kessler Jackets, who take a small percentage in exchange for pitch security. Known to aug clinics in the Geartown area as a reliable parts source.",
@@ -182,5 +182,27 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Romanian / Polynesian (Tongan)",
+    "height_cm": 178,
+    "weight_kg": 89,
+    "build": "Heavyset and broad-shouldered despite age, with a slight forward stoop from decades of bench work. Thick through the torso, calloused hands, the musculature of someone who has done manual labor his entire life but is now running on momentum and habit rather than strength.",
+    "hair_color": "Steel gray with patches of white",
+    "hair_style": "Short, brushed back, slightly unkempt. Hasn't been to a proper barber in years.",
+    "hair_length": "Short",
+    "eye_color": "Right eye: dark brown, sharp and calculating. Left eye: LED-modified salvage-market optical with a faint amber glow, the pupil sometimes drifting slightly out of sync.",
+    "skin_tone": "Weathered tan-brown, the result of mixed heritage and sixty-three years of sun exposure and industrial work",
+    "complexion": "Deeply lined face like cracked leather, jaw dusted with silver stubble, a pronounced nose that's been broken at least twice. Permanent squint lines around the eyes. A few old chemical burns on the right side of his neck, faded to white scars.",
+    "distinguishing_marks": [
+      "Burn scar running from right collarbone to mid-chest, pale and flat, approximately 12cm long — from a circuit fire in 2187",
+      "Ragged scar across the back of right hand, webbed and puckered, circa 2190",
+      "Network of thin scars crisscrossing both forearms from countless small cuts incurred during thirty years of component handling",
+      "A faded, amateurish tattoo on left shoulder of what might be coordinates or a circuit diagram, barely legible, probably self-applied decades ago"
+    ],
+    "visible_augmentations": "Left arm from elbow down is visibly augmented: a frankenstein assembly of mismatched cyberware. The forearm is a dull aluminum shell hammered smooth with visible seam lines and a few deliberately hammered dents. The wrist joint is clearly repurposed Ferrogate heavy machinery — industrial-grade and overbuilt. The hand is older Axiom manufacture, palm-side showing worn contact pads and a faintly visible serial number. The left eye has a faint amber LED glow at the edge of the iris. When he flexes his right forearm, barely-visible seams appear where subdermal toolkit storage has been integrated under the skin.",
+    "posture_movement": "Moves with the careful deliberation of someone managing chronic pain from old injuries. Favors his right side slightly. Stands with hands often occupied — sorting, gesturing, demonstrating components. His movements are economical and practiced, no wasted motion. Speaks with his hands, especially when explaining augmentation tolerances or component lineage. Often adjusts his left eye manually, like an old habit.",
+    "clothing_style": "Tier 3-4 Geartown worker aesthetic, deeply functional and worn. Heavy canvas work pants with a dozen cargo pockets, all visibly utilized. A faded company shirt from some defunct shipping corporation, sleeves rolled or cut off to accommodate his left arm. A thick gray insulated vest over top, patched in multiple places. Steel-toed work boots, scuffed and re-resoled at least twice. A pair of cut-off leather gloves hanging from his back pocket. No jewelry except a pale band of skin on his ring finger where something used to be. Everything smells of mineral oil, solder flux, and the dust of a thousand disassembled machines."
+  },
+  "image_prompt": "A weathered 63-year-old man with a distinctly Romanian-Polynesian heritage, steel-gray hair, and deeply lined face like cracked leather. His left arm is a visibly mismatched cybernetic assembly: dull hammered aluminum forearm, Ferrogate industrial wrist joint, older Axiom hand with worn contact pads. His left eye glows faintly amber with an LED optical. He wears a faded cargo work shirt and thick insulated vest, canvas work pants, steel-toed boots. He stands in a cluttered junk yard beneath an industrial overpass lit by harsh sodium lamps, surrounded by bins of salvaged tech components, stacks of chrome plating, hand-lettered price boards. His posture is careful, slightly stooped. A large scruffy dog with bioluminescent patches along its spine sits beside him. Cinematic cyberpunk, industrial gritty realism, harsh amber and sodium lighting, detailed textures, worn and functional aesthetic, 35mm film grain, depth of field --ar 2:3 --v 6"
 }

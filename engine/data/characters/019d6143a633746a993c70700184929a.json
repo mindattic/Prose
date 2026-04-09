@@ -254,5 +254,26 @@
     "The Pale Mile",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polish",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and substantial, with the settled solidity of someone who has spent fifty-two years on her feet. Strong through the upper back and arms from decades of pressing and folding; slightly softened at the midsection but dense rather than loose.",
+    "hair_color": "Dark brown to black with silver-gray streaks throughout",
+    "hair_style": "Locs pinned into a coiled crown atop her head, typically wrapped with a faded cotton headscarf in jewel tones",
+    "hair_length": "Long (shoulder-length when uncoiled)",
+    "eye_color": "Pale gray (cosmetic iris modification, distinctly artificial but warm in appearance)",
+    "skin_tone": "Deep umber with warm undertones; sun-exposure browning on the forearms and neck from years of window-side standing",
+    "complexion": "Wide, expressive face with pronounced laugh lines framing the eyes and mouth. Skin texture is weathered but well-maintained; no blemishes, faint age spots on the backs of hands and temples. Grooming is practical and deliberate—minimal makeup, typically just lip balm.",
+    "distinguishing_marks": [
+      "Faint scars on both palms from old steam burns, barely visible unless you know to look",
+      "A small burn mark on her left forearm from a pressing iron accident approximately twenty years ago, shaped like a crescent moon",
+      "Bioluminescent amber fingernail underlays visible as a soft glow beneath naturally trimmed nails, most noticeable in low light"
+    ],
+    "visible_augmentations": "Pale gray iris modifications that glow faintly when she turns her head in direct light. Bioluminescent fingernail underlays that cast a soft amber aura when she moves her hands, especially in the low-light laundromat environment. Lumbar nerve-brace implant is subcutaneous and invisible.",
+    "posture_movement": "Stands with her weight evenly distributed, shoulders back but not rigid. Moves with deliberate efficiency—no wasted motion from fifty-two years of laundromat work. Leans against the counter when listening to customers, gestures with her hands when she's being emphatic. Walks slowly but with purpose, protecting her back through subtle adjustments in gait.",
+    "clothing_style": "Tier 3-4 utilitarian comfort. Typically wears loose linen or cotton shifts in muted colors (rust, charcoal, sage) over practical leggings or loose pants. Always an apron with deep pockets for clothespins, receipts, and lost items. Slides or soft-soled work shoes. A cardigan or oversized button-up worn open over her shift for warmth and pockets. No jewelry beyond a simple copper wire bracelet her daughter made her fifteen years ago. Clothing shows signs of wear but is always clean—she presses and mends her own garments."
+  },
+  "image_prompt": "A 52-year-old West African-Polish woman with deep umber skin and silver-streaked locs coiled into a crown, standing behind a laundromat counter in soft afternoon light. Pale gray cosmetic eyes, bioluminescent amber fingernails glowing faintly as she rests her hands on the counter. Wearing a loose rust-colored linen shift and faded cardigan, an apron with deep pockets. Laugh lines frame her warm, expressive face. Behind her, industrial washing machines and dryers blur into warm neon glow. Cyberpunk laundromat setting, Tier 3 neighborhood, warm tungsten and LED lighting, cinematic, photorealistic, grounded and intimate, no chrome or flashy augmentations visible except the subtle glow of her fingernails, quiet dignity and quiet strength, emotional density, cozy dystopia --ar 2:3 --v 6"
 }

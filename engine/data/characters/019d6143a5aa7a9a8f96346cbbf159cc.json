@@ -13,7 +13,7 @@
   "age": 59,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Ashland and Chicago Ave",
-  "description": "Altan Magnusson-Camara is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 59, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a counterintelligence specialist out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Altan Magnusson-Camara describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Altan Magnusson-Camara is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 59, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a counterintelligence specialist out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Altan Magnusson-Camara describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.43,
@@ -31,7 +31,7 @@
     "core_desires": [
       "Freedom from augmentation debt — the interest compounds like a tumor",
       "To matter to someone for who they are, not what they can do",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Violence — hits something when they can't process emotions, preferably something that deserves it",
@@ -43,7 +43,7 @@
       "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
       "Trusts technology more than people — machines don't betray"
     ],
-    "secret": "Altan Magnusson-Camara betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+    "secret": "Altan Magnusson-Camara betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
   },
   "speech_patterns": {
     "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
@@ -275,7 +275,7 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "Meridian 88",
+    "GLMZ",
     "The Nearfield",
     "The Heritage Vault",
     "Kang-Petrov Arms KPA-15 'Diaspora'",
@@ -285,5 +285,27 @@
     "Pellucid Systems",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 188,
+    "weight_kg": 102,
+    "build": "Broad-shouldered and heavily muscled, carrying weight with deliberate density — not fat but compressed power. Chest and shoulders dominate his frame; legs solid beneath.",
+    "hair_color": "Steel gray with residual black at the temples",
+    "hair_style": "Cropped short, practical, no styling — maintained for function not appearance",
+    "hair_length": "Short",
+    "eye_color": "Light gray with faint thermal variance visible in low light",
+    "skin_tone": "Medium brown with lighter undertones — mixed heritage visible in the gradation across his face and hands",
+    "complexion": "Weathered and lined — 59 years of sustained tension mapped across his jaw and forehead. Minimal grooming beyond function; scars visible at the left temple and along the right cheekbone. No facial hair.",
+    "distinguishing_marks": [
+      "Surgical scar along the left temple, approximately 4cm, precise and old — augmentation entry point",
+      "Ragged white scar across the right cheekbone, 6cm, from blunt force trauma — healed with visible dimpling",
+      "Thin chrome-silver tracery visible along both wrists where synthetic blood system integrates with natural vasculature — deliberately exposed",
+      "Burn mark on left forearm, small but deliberate-looking, partially obscured by sleeve"
+    ],
+    "visible_augmentations": "Synthetic blood system is visibly integrated — chrome-silver arterial lines visible at wrists and along the sides of the neck where the nanite circulatory system connects. The chrome has a polished, well-maintained appearance. Eyes register faint thermal fluctuation in shadow. No attempt to conceal the augmentations.",
+    "posture_movement": "Moves with controlled economy — no wasted motion. Stands with weight centered, shoulders back, ready to shift. Eyes are constant, scanning patterns even in conversation. Breathing is deliberately regulated. Hands rest flat or closed, never exposed or splayed. His presence compresses space around him; people unconsciously give him room.",
+    "clothing_style": "Tier 3-4 utilitarian — dark tactical pants with multiple pockets, fitted black compression shirt under a worn charcoal field jacket. No logos or affiliation markers. Boots are reinforced synthetic leather, well-maintained, designed for sustained movement. A thin steel chain bracelet on his left wrist — no ornamentation beyond that. Clothing is chosen for durability and function; colors are muted to avoid attention."
+  },
+  "image_prompt": "portrait of a 59-year-old man of mixed Scandinavian and West African heritage, broad-shouldered and heavily built with compressed power, steel gray hair cropped short, light gray eyes with thermal variance, medium brown weathered skin with visible surgical and combat scars, polished chrome-silver synthetic blood system tracery visible at wrists and neck where nanite circulature integrates with natural veins, wearing dark tactical pants and black compression shirt under charcoal field jacket, reinforced boots, standing with controlled posture scanning the room, cyberpunk counterintelligence specialist, Kessler Row industrial setting with neon and warm tungsten lighting, moody atmospheric grit, cinematic noir cyberpunk, sharp focus on face and augmentation details, professional headshot style --ar 2:3 --v 6"
 }

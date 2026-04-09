@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "To matter to someone for who they are, not what they can do",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Knowledge — to understand the systems that grind people down"
     ],
     "coping_mechanisms": [
@@ -43,7 +43,7 @@
       "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
       "Assumes their skill set is more transferable than it actually is"
     ],
-    "secret": "Suki Ekberg-Asare betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+    "secret": "Suki Ekberg-Asare betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
   },
   "speech_patterns": {
     "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
@@ -283,5 +283,26 @@
     "Clover",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Japanese / Scandinavian",
+    "height_cm": 167,
+    "weight_kg": 72,
+    "build": "Compact and densely muscled, low center of gravity — built for impact absorption and explosive movement rather than reach. Shoulders broad relative to frame, legs thick and powerful.",
+    "hair_color": "Black, natural",
+    "hair_style": "Closely cropped, functional, minimal styling",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Warm medium olive — blend of East Asian and Northern European ancestry",
+    "complexion": "Lean facial structure, sharp cheekbones. Skin shows weathering from chemical exposure in Steamvent Alley — slight discoloration around left temple and jawline from ambient pollution. Clean-shaven, minimal grooming beyond necessity.",
+    "distinguishing_marks": [
+      "Faint chemical burn scars along left side of neck and upper chest — pale, barely raised, from industrial accident or extraction gone wrong",
+      "Surgical scar tissue where right arm connects at shoulder — visible chrome interface point, slightly raised and darker than surrounding skin",
+      "Small tattoo on inner left wrist — minimalist circuit pattern, functional marker rather than artistic statement"
+    ],
+    "visible_augmentations": "Right arm is full cybernetic replacement from shoulder — brushed steel and gunmetal chrome with visible articulation joints. Wired reflexes manifested as fine servo-assist lines visible under skin at temples, neck, and along spine when moving quickly. Adrenaline pump port visible as sealed chrome nub on right collarbone, faint hydraulic scarring around it.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Stands in slight forward lean, weight distributed low. Right arm hangs with subtle mechanical fluidity that marks him as augmented to anyone paying attention. Eyes track constantly, environmental awareness default state. When relaxed, tension never fully leaves his frame.",
+    "clothing_style": "Tier 4 utilitarian — function over aesthetic. Reinforced synthweave jacket with chemical-resistant coating, worn gray. Cargo pants with deep pockets and cable management loops. Steel-toed work boots, scuffed and well-maintained. Under-layer is reactive mesh undershirt, barely visible at collar. No corporate logos, no team colors. Everything modular and replaceable. Weathered from Steamvent humidity and chemical exposure."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of Suki Ekberg-Asare, compact densely muscled 25-year-old male with Japanese-Scandinavian heritage, dark sharp-featured face, closely cropped black hair, brown eyes with constant alert expression. Right arm is full cybernetic replacement in brushed steel chrome with visible joints and articulation. Fine servo-assist lines visible along temples and neck, chrome adrenaline pump port on right collarbone. Wearing worn gray reinforced synthweave jacket and cargo utility pants, reactive mesh undershirt. Chemical burn scars on neck and chest from industrial accident. Standing in slight forward lean in dim geothermal district lighting, Steamvent Alley background with steam and chemical haze. Low key industrial mood, tungsten and cool blue light casting shadows across face. Moody, dangerous, exhausted competence. High contrast, sharp focus on augmentation details, cyberpunk noir atmosphere. --ar 2:3 --v 6"
 }

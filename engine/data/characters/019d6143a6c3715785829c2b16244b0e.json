@@ -181,5 +181,27 @@
     "VitaCore FlowGuard Hemodynamic Regulator",
     "The Pale Mile"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Icelandic",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Compact and broad-shouldered, with the settled solidity of someone built for endurance rather than speed. Muscular through the upper back and arms from years of gripping a steering wheel and managing a large vehicle. No excess weight, but no leanness either — functional.",
+    "hair_color": "Bioluminescent gradient: pale blue at roots fading to white at tips; natural dark brown visible at scalp line",
+    "hair_style": "Close-cropped, meticulously maintained, refreshed every three weeks with bioluminescent treatment kit",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm",
+    "skin_tone": "Warm dark brown with slight reddish undertone",
+    "complexion": "Clear skin with a weathered, lived-in quality. Minimal grooming beyond functional cleanliness — no makeup, no adornment. Lines around the eyes from squinting at route displays and reading passengers' body language. A small scar on the left temple from a childhood accident.",
+    "distinguishing_marks": [
+      "Black cat tail with white tip, geneware implant at base of spine, visible under clothing as subtle spinal ridge when they lean forward",
+      "Small pale scar on left temple, approximately 2cm, from impact injury",
+      "Callus on right palm from decade of steering wheel contact",
+      "Faint Union Chapter 7 tattoo on inside of left wrist: stylized ferrous wheel design, 3cm diameter, done in metallic ink that catches light"
+    ],
+    "visible_augmentations": "Geneware cat tail (black with white tip) visible when wearing typical work attire or casual clothing. Bioluminescent hair dye creates subtle glow in low-light conditions. Neural route-overlay has no visible indicator; implant sits behind left eye but is not apparent unless they remove their work visor.",
+    "posture_movement": "Upright but not rigid. Moves with deliberate efficiency — no wasted motion. Sits with both feet flat on ground, hands usually resting on thighs or table. On the job, posture becomes slightly more braced, shoulders set slightly back. Off the job, they relax into a more casual slouch. Tail moves independently of conscious control: lashes when frustrated or behind schedule, curls contentedly when relaxed.",
+    "clothing_style": "Tier 3-4 working class. Standard Ferrogate Transit regulation uniform on the job: navy polyester with reflective piping, company-issued cap (which they wear pushed back slightly), polymer safety shoes rated for twelve-hour shifts. Off-duty: worn denim, oversized hoodies in muted colors (charcoal, olive, faded black), knockoff sneakers, sometimes a vintage transit union jacket from the 2200s with faded patches. Minimal jewelry — only a brass wire ring on right ring finger, handmade by a friend. Practical clothing with no fashion statement beyond function and comfort."
+  },
+  "image_prompt": "A nonbinary transit worker in their late twenties with warm dark brown skin and close-cropped natural hair dyed bioluminescent pale blue fading to white, standing in the operator's cabin of a futuristic bus cockpit, cyberpunk aesthetic. They have a black cat tail with a white tip extending from their lower spine. Wearing navy Ferrogate Transit polyester uniform with reflective piping. Hands gripping steering controls, slight weathered expression, dark eyes focused ahead. Soft bioluminescent glow from hair, route data visible as faint holographic overlays in peripheral vision. Industrial sci-fi setting, warm overhead lighting mixed with dashboard glow, photorealistic, character portrait style, intricate detail on uniform and cybernetic tail, depth of field emphasizing their face and upper body --ar 2:3 --v 6"
 }

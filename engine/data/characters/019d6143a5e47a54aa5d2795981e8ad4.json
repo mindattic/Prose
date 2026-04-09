@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Internal Affairs Investigator, Meridian 88 Metro Police",
+  "role": "Internal Affairs Investigator, GLMZ Metro Police",
   "age": 56,
   "status": "active",
   "location": "Lincoln Spear",
@@ -64,7 +64,7 @@
   "narrative_function": "Institutional threat or ambiguous authority. May be investigating a character, or may be the person a character turns to when other doors close. His investigations have a momentum independent of the people in them — once started, he is very hard to stop.",
   "augmentations": "Retinal information overlay (Metro standard). Hip replacement (biological, he insists on describing it as such). Nothing else — he is suspicious of augmentation that could be remotely accessed.",
   "daily_life": "Office at Lincoln Spear, sixth floor, 0800-1900 on most days. Longer when a case is moving. Eats lunch at his desk. Takes a precise thirty-minute walk along the Lincoln Spear promenade at 1300 regardless of weather or workload — he has not missed it in eleven years.",
-  "affiliation": "Meridian 88 Metro Police, Internal Affairs Division",
+  "affiliation": "GLMZ Metro Police, Internal Affairs Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -259,5 +259,26 @@
     "Stalker",
     "Hearthstone Firearms Trail-357 'Pathfinder'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "East European (Polish) / West African (Ghanaian)",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Tall and lean with slight forward stoop developed over decades of desk work and exhaustion. Shoulders rounded inward. Still carries underlying frame of disciplined posture underneath the wear.",
+    "hair_color": "Silver with white at crown, natural graying",
+    "hair_style": "Close-cropped, military precision, no styling product",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural. Retinal overlay visible as faint amber grid pattern in low light.",
+    "skin_tone": "Deep brown with warm undertones, weathered from fifty-six years and nineteen years of exhaustion",
+    "complexion": "Heavily lined face, particularly around eyes and mouth. Deep nasolabial folds. Permanent horizontal creases across forehead. No cosmetic work, no fillers — face reads as a archive of worn decisions. Perpetual shadow of stubble, not groomed but not neglected. Skin texture slightly papery from dehydration and age.",
+    "distinguishing_marks": [
+      "Network of fine scars across knuckles of both hands — old, faded, likely from pre-Metro years",
+      "Thin pale scar along left temple running into hairline — approximately 3cm, surgical or trauma origin unclear",
+      "Surgical scar at hip (right side, partially hidden by clothing) — biological hip replacement, visible when suit jacket is removed"
+    ],
+    "visible_augmentations": "Retinal overlay manifests as subtle amber luminescence in pupils during information access. Hip replacement is internal, invisible. Deliberately minimalist — no chrome, no subdermal modifications, no visible neural interfaces.",
+    "posture_movement": "Walks with deliberate, measured pace. Slight limp when tired (hip replacement). Sits with spine curved into desk chair as though he and furniture have merged over years. Hands move with precision — no wasted gesture. Eye contact is unflinching and uncomfortable; he does not break gaze first. When thinking, tilts head slightly back and to the left. No nervous habits, no fidgeting.",
+    "clothing_style": "Dark suits in rotation of same five designs (charcoal, navy, black variants), tailored fifteen years ago and maintained by a tailor who knows his exact measurements. Suits are well-made but dated — not aspirational, not fashionable. White or light gray dress shirts, no logos. Simple dark ties. Black leather shoes polished to military shine. Wedding ring, gold, worn thin. No jewelry beyond ring and Metro credentials. Entire wardrobe reads as Tier 3 government employee: solid, functional, deliberately unmarked by trend or status signal."
+  },
+  "image_prompt": "portrait of weathered 56-year-old man, East European and West African heritage, dark brown skin with deep facial lines, close-cropped silver hair with white at crown, perpetually tired dark brown eyes with faint amber retinal overlay grid visible in pupils, slight forward stoop, lean tall build. Wearing well-tailored charcoal suit jacket, white dress shirt, simple dark tie. Sitting at desk in sparse office, indirect fluorescent lighting casting shadows across face. Expression of philosophical exhaustion, unshocked comprehension. Film noir detective aesthetic meets cyberpunk bureaucracy. Photorealistic, high detail on skin texture and facial aging, moody lighting, no enhancement or glamorization. --ar 2:3 --v 6"
 }

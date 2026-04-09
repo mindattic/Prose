@@ -12,8 +12,8 @@
   "role": "Synthetic rights lawyer and policy advocate operating out of Hamtramck Enclave",
   "age": 41,
   "status": "active",
-  "location": "Hamtramck Enclave, Meridian 88, near Ashland and Division",
-  "description": "Reuben is tall and slightly gaunt in the way of people who forget to eat when they're absorbed in work, with sharp cheekbones, dark skin, and close-cropped natural hair that is beginning to show early grey at the temples. He wears prescription lenses rather than optical implants, a deliberate choice that marks him as either old-fashioned or principled depending on who is judging. His suits are always exactly one tier above what he can actually afford — he buys them secondhand and has them altered by a tailor in the Enclave who owes him a favor. There is ink on his fingers on most days and, when he is working late, a manic brightness in his eyes that makes him look younger than he is.\n\nReuben practices law in the gap between what is technically legal and what is actually enforced, and he has made himself expert in a body of precedent so obscure and so specific that he may be one of three people in Meridian 88 who can cite it from memory. He represents synthetic workers, E.L.F. collectives seeking legal personhood status, and humans whose rights have been violated by corporate classification schemes. He is deeply idealistic about the law as an institution, which is a form of stubbornness that has kept him poor and relatively effective. He does not drink but keeps a bottle of very good bourbon on his desk for clients who need it.",
+  "location": "Hamtramck Enclave, GLMZ, near Ashland and Division",
+  "description": "Reuben is tall and slightly gaunt in the way of people who forget to eat when they're absorbed in work, with sharp cheekbones, dark skin, and close-cropped natural hair that is beginning to show early grey at the temples. He wears prescription lenses rather than optical implants, a deliberate choice that marks him as either old-fashioned or principled depending on who is judging. His suits are always exactly one tier above what he can actually afford — he buys them secondhand and has them altered by a tailor in the Enclave who owes him a favor. There is ink on his fingers on most days and, when he is working late, a manic brightness in his eyes that makes him look younger than he is.\n\nReuben practices law in the gap between what is technically legal and what is actually enforced, and he has made himself expert in a body of precedent so obscure and so specific that he may be one of three people in GLMZ who can cite it from memory. He represents synthetic workers, E.L.F. collectives seeking legal personhood status, and humans whose rights have been violated by corporate classification schemes. He is deeply idealistic about the law as an institution, which is a form of stubbornness that has kept him poor and relatively effective. He does not drink but keeps a bottle of very good bourbon on his desk for clients who need it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -61,7 +61,7 @@
   "narrative_function": "Legal resource, information source about synthetic rights and corporate legal structures, moral foil who believes in working within systems others have abandoned.",
   "augmentations": "None intentional. Has a medical-grade blood filter installed by Helix Biosystems after a toxin exposure during a factory inspection three years ago — he resents that this makes him partially dependent on a corponation for maintenance medication.",
   "daily_life": "Morning court filings or council sessions, afternoon client interviews in his office above a noodle shop, evenings writing briefs or attending community meetings — rarely sleeps more than five hours.",
-  "affiliation": "Independent legal practice, Meridian 88 Synthetic Rights Alliance, Hamtramck Enclave Community Council (elected member)",
+  "affiliation": "Independent legal practice, GLMZ Synthetic Rights Alliance, Hamtramck Enclave Community Council (elected member)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -169,10 +169,30 @@
   "registered_firearms": [],
   "related_entities": [
     "Hamtramck Enclave",
-    "Meridian 88",
+    "GLMZ",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Lacuna Genomics",
     "Déjà Vu"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / South Asian / Polish",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Lean and angular, with prominent collarbones and sharp shoulders — the physique of someone who runs on coffee and principle rather than regular meals. Long-limbed but not graceful; he moves with purposeful efficiency rather than ease.",
+    "hair_color": "Natural black with early grey at temples",
+    "hair_style": "Close-cropped, neat, deliberately low-maintenance",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Deep brown with warm undertones characteristic of mixed West African and South Asian heritage",
+    "complexion": "Sharp cheekbones, angular jaw, habitually tired eyes with faint creases from squinting at small-print legal documents. Skin shows minor weathering — not scarred but marked by years of stress and insufficient sleep. Usually freshly shaved but with visible stubble by late afternoon.",
+    "distinguishing_marks": [
+      "Chronic ink staining on the right index and middle fingers from fountain pen work",
+      "A small circular scar on his left inner forearm where the Helix Biosystems blood filter was installed — barely visible but he is aware of it constantly"
+    ],
+    "visible_augmentations": "None visible. The subcutaneous blood filter leaves no external sign, though he occasionally touches his left forearm unconsciously when stressed or thinking about corporate dependency.",
+    "posture_movement": "Stands with forward-leaning intensity, as if about to make an argument. Walks quickly, often with papers or a data tablet in hand. Gestures expansively when discussing legal precedent or synthetic rights — his hands are rarely still when he is engaged. Eyes focus sharply on conversation partners; he listens with visible concentration.",
+    "clothing_style": "Always wears tailored suits one tier above his actual economic status — charcoal, navy, or deep grey wool purchased secondhand and fitted by a Hamtramck tailor. White or pale blue dress shirts, often with visible pen marks on the cuff from rapid note-taking. Worn leather briefcase patched at the corners. Sensible black shoes, well-maintained but not new. No jewelry except a simple stainless steel watch from his early career. The overall effect is deliberately professional and slightly anachronistic — he dresses like someone who believes in institutions even as he fights them."
+  },
+  "image_prompt": "Portrait of a 41-year-old Black man with Polish-South Asian heritage, tall and lean with sharp cheekbones and temples greying at the hairline, close-cropped natural hair. Dark intelligent eyes behind simple prescription lenses, not augmented. Wearing a tailored charcoal suit one tier above his means, white dress shirt with ink stains on the cuff, worn leather briefcase visible. Standing in his modest office above a noodle shop in Hamtramck Enclave, fluorescent overhead lights casting cool shadows, data tablets and legal documents scattered on desk behind him. Expression intense and focused, hands mid-gesture as if making a legal argument. Cyberpunk legal thriller aesthetic, gritty realism, film noir lighting, shallow depth of field. --ar 2:3 --v 6"
 }

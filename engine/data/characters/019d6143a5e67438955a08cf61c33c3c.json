@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Grand Crossing Gate, running a semi-permanent caravan market in the loading apron outside the main checkpoint, near Milwaukee and North Ave",
-  "description": "Darqawi is a commanding presence without performing it — she is tall, angular, with silver-threaded locs wrapped under a bright indigo cloth that she reties differently each day but always precisely. Her skin is dark with a reddish undertone and her eyes are light brown, which she has enhanced with irises patterned to shift between amber and pale gold depending on the light — a functional modification, she says, for reading conditions at dawn and dusk, which is when most caravan decisions are made. The back of both her hands carry geometric tattoos that are Tuareg in origin and Norse in their second layer, inked over each other across generations. She moves like someone who has learned to conserve effort over distance.\n\nDarqawi runs the Meridian Outer Loop caravan, a loose coalition of nomadic traders that has been making the circuit of Meridian 88's transit hubs for eleven years. The caravan carries seasonal goods — preserved food, hand-maintained tools, pirated entertainment chips, specific medications that are easier to find on the road than in the city, news — and trades in whatever is undervalued at one hub and needed at the next. She is not sentimental about commerce and she is not romantic about the road, which is what makes her good at both. The caravan is her responsibility. She feels this at all times.",
+  "description": "Darqawi is a commanding presence without performing it — she is tall, angular, with silver-threaded locs wrapped under a bright indigo cloth that she reties differently each day but always precisely. Her skin is dark with a reddish undertone and her eyes are light brown, which she has enhanced with irises patterned to shift between amber and pale gold depending on the light — a functional modification, she says, for reading conditions at dawn and dusk, which is when most caravan decisions are made. The back of both her hands carry geometric tattoos that are Tuareg in origin and Norse in their second layer, inked over each other across generations. She moves like someone who has learned to conserve effort over distance.\n\nDarqawi runs the Meridian Outer Loop caravan, a loose coalition of nomadic traders that has been making the circuit of GLMZ's transit hubs for eleven years. The caravan carries seasonal goods — preserved food, hand-maintained tools, pirated entertainment chips, specific medications that are easier to find on the road than in the city, news — and trades in whatever is undervalued at one hub and needed at the next. She is not sentimental about commerce and she is not romantic about the road, which is what makes her good at both. The caravan is her responsibility. She feels this at all times.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -174,7 +174,7 @@
   "related_entities": [
     "Grand Crossing Gate",
     "The Circuit",
-    "Meridian 88",
+    "GLMZ",
     "The Iron Lotus",
     "Meridian Core",
     "Tessera Corponation",
@@ -187,5 +187,26 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "North African Tuareg / Scandinavian (Norse-Norwegian)",
+    "height_cm": 183,
+    "weight_kg": 71,
+    "build": "Tall and angular with minimal excess mass — the build of someone who has walked thousands of kilometers. Shoulders broad but lean, no bulk. Economical musculature in the forearms and legs from decades of manual labor and load-bearing.",
+    "hair_color": "Dyed indigo with silver roots showing through at the temples and crown",
+    "hair_style": "Locs, wrapped daily in bright indigo cloth tied with precision and retied differently each day. When unwrapped, the locs fall to shoulder length.",
+    "hair_length": "Long",
+    "eye_color": "Light brown, augmented with geometric irises that shift between amber and pale gold depending on ambient light conditions",
+    "skin_tone": "Deep brown with warm reddish undertone — characteristic of Saharan heritage mixed with Northern European ancestry",
+    "complexion": "Weathered but sharp. Minimal cosmetic grooming — functional and direct. Fine lines around the eyes from squinting at dawn/dusk conditions. Skin shows the texture of sun exposure and dry climates over decades, not aging damage.",
+    "distinguishing_marks": [
+      "Geometric Tuareg-origin tattoos covering the back of both hands in interconnected diamond and cross patterns, dark indigo-black in color",
+      "A second layer of Norse geometric tattoos (runic-adjacent symbols) inked over the Tuareg patterns on both hands, creating a palimpsest effect — a physical record of cultural blending across generations",
+      "Fine scar tissue running along the outer edge of her left forearm, pale against her skin, likely from a blade or sharp impact — old enough to be smooth but visible"
+    ],
+    "visible_augmentations": "Enhanced irises only — the shift between amber and pale gold is visible in direct light and is clearly intentional rather than natural. No visible chrome, subdermal plating, or external cybernetics.",
+    "posture_movement": "Moves with economic precision — no wasted motion, no performance. Stands with weight balanced, ready to shift. Walks with the gait of someone accustomed to long distances and uneven terrain. When seated, she remains alert, spine straight, hands often occupied with task work (mending, counting, organizing). Her default state is observant — she scans before she commits.",
+    "clothing_style": "Tier 4-5 nomadic practical. Layered: a fitted dark gray thermal under a reversible canvas jacket (rust-red on one side, charcoal on the other). Loose tan cargo pants with reinforced knees and multiple pockets, worn soft from use. Boots are good-quality but clearly repaired multiple times (visible stitching, replaced heel). Over everything, a long indigo scarf — matching the cloth in her hair — that serves as sun protection and cold layer, never purely decorative. Carries a leather satchel with worn handles and visible brass fixtures. No visible jewelry except the cloth wrappings themselves. Everything is maintained, nothing is new."
+  },
+  "image_prompt": "A portrait of a 52-year-old woman of North African and Scandinavian heritage, tall and angular with deep brown skin and warm reddish undertone. She wears indigo locs wrapped in bright indigo cloth, precisely tied. Her light brown eyes are augmented with geometric irises that shift between amber and pale gold in the light. The back of her hands display layered geometric tattoos — Tuareg patterns overlaid with Norse symbols in dark indigo, a palimpsest of cultural heritage. She wears practical, well-maintained nomadic clothing: a reversible canvas jacket, cargo pants with reinforced knees, soft from travel, and sturdy repaired boots. A long indigo scarf drapes across her shoulders. She stands with economical posture, alert and observant, the bearing of a caravan leader. The setting is a dusty transit hub loading apron at dawn or dusk — golden-hour light. Dust particles catch the light around her. Her expression is direct and unsentimental. Cyberpunk realism, gritty and grounded, no chrome, no neon excess — the aesthetic of function over flash. Shot as a character portrait with depth of field. --ar 2:3 --v 6"
 }

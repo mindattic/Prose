@@ -278,5 +278,27 @@
     "The Pure Hand",
     "Slagworks Industrial"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Slavic / Danish-West African",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Stocky and solid with dense musculature — shoulders broad, core heavy, limbs packed with functional strength rather than aesthetic definition. Hands are large and calloused, knuckles scarred from impact work. No wasted geometry.",
+    "hair_color": "Dark brown with early silver threading at temples and crown",
+    "hair_style": "Pulled back tight into a utilitarian braid, often pinned at the nape. Minimal maintenance required — practical for fieldwork and surveillance.",
+    "hair_length": "Medium",
+    "eye_color": "Pale gray with faint amber undertone in low light",
+    "skin_tone": "Warm medium brown with cool undertones — olive-tinged complexion reflecting mixed Slavic and West African heritage",
+    "complexion": "Face is weathered and angular, with sharp cheekbones and a squared jaw. Minimal grooming — no makeup, skin shows the wear of nocturnal living and exposure work. A faint premature creasing around the eyes from years of concentration and squinting through scopes.",
+    "distinguishing_marks": [
+      "Jagged scar tissue forming a rough semicircle at the base of skull, partially obscured by hair growth — cortical bomb extraction site, approximately 8cm across",
+      "Linear scar running along the lateral edge of left forearm, thin and pale, approximately 12cm — knife work, old",
+      "Dispersed impact scars across knuckles and dorsal hands — consistent with unarmed combat training",
+      "Small burn scar on right collarbone, round and deep — approximately 1.5cm diameter"
+    ],
+    "visible_augmentations": "Cyberears are the dominant visible modification — sleek chrome with matte-black acoustic baffles, replacements for organic ears. They sit slightly proud of the skull, with visible connector ports at the temporal junction. Minimal surgical scarring around the implant interface suggests professional installation and integration. No other visible augmentations — her cortical bomb was internal and has been removed.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion, weight always centered over the balls of her feet. Stands in slight forward lean, shoulders rounded inward as if perpetually listening or preparing for threat assessment. Head rotates to track sounds independently of body movement. Hands rest in neutral position, ready. Rarely relaxes the baseline tension in her frame.",
+    "clothing_style": "Tier 3-4 functional wardrobe optimized for surveillance and fieldwork — matte-black synthleather jacket with multiple interior pockets for equipment, reinforced cuffs. Cargo pants or tactical trousers in dark charcoal, fitted enough for mobility. Steel-toed boots, broken in and scarred. Wears no jewelry except a cheap analog watch and a small RFID key fob on a carabiner. Clothing shows wear and patching, but is meticulously maintained. No corp branding — anonymity by design. In The Circuit, she blends into the shadow-work aesthetic rather than standing out."
+  },
+  "image_prompt": "cyberpunk portrait of a 34-year-old woman with Slavic and West African heritage, stocky muscular build, pale gray eyes, dark brown hair with silver threading pulled back tight, warm medium brown skin with olive undertones, weathered angular face with sharp cheekbones, wearing matte-black tactical synthleather jacket and dark cargo pants, most distinctive feature is sleek chrome cyberears with matte-black acoustic baffles replacing natural ears, subtle scar tissue visible at base of skull and on knuckles, posture tense and forward-leaning as if listening intently, standing in neon-lit shadows of The Circuit district with purple and cyan ambient lighting reflecting off chrome implants, moody nocturnal atmosphere, high contrast shadows, shallow depth of field focusing on her face and cyberears, cinematic surveillance thriller aesthetic, professional headshot style, film noir undertones, shot with 85mm lens characteristics --ar 2:3 --v 6"
 }

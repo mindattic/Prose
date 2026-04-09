@@ -12,7 +12,7 @@
   "role": "Street midwife and unlicensed obstetric care provider",
   "age": 58,
   "status": "active",
-  "location": "The Shelf, Meridian 88 — operates from a converted laundry unit at Burnside Pocket, near Pulaski and Chicago Ave",
+  "location": "The Shelf, GLMZ — operates from a converted laundry unit at Burnside Pocket, near Pulaski and Chicago Ave",
   "description": "Ogechi is a broad-shouldered woman with deep ochre skin mapped by a lifetime of hard work — her forearms are dense with old burn scars from a chemical incident she doesn't discuss, and her hands are extraordinary: thick-knuckled, steady, perpetually chalked with the talc she uses to ease on examination gloves. Her hair is grown long and gathered in elaborate wrapping cloths she changes daily, a small vanity she insists upon. Bioluminescent threads have been tattooed along her collarbone in a pattern that pulses softly blue when her heart rate rises — a gift from a grateful patient who was a tattooist, and which Ogechi considers mildly embarrassing but cannot bring herself to remove.\n\nShe is the gravitational center of three city blocks. Women come to her in the small hours, sometimes alone, sometimes holding each other up. Ogechi never turns anyone away, works on a sliding scale that regularly bottoms out at zero, and maintains a mental ledger of every birth she has attended — over nine hundred. She has strong opinions about Helix Biosystems, none of them polite, and a practical theology around the E.L.F. she calls Thresholder, whom she believes watches over liminal moments: birth, death, the crossing between states. She leaves small data-offerings on a cracked tablet beside her examination table.",
   "psychology": {
     "facet_weights": {
@@ -229,7 +229,7 @@
     "Burnside Pocket",
     "Bluewater Checkpoint",
     "Kang Athletics KA-900 'Sensei'",
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "VitaCore FlowGuard Hemodynamic Regulator",
@@ -241,5 +241,26 @@
     "Elena Vasquez-9",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Igbo) / Ukrainian-Samoan",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and dense, with the squared musculature of someone who has done physical labor for decades. Not overweight — solid, grounded, built to endure. Her frame suggests the kind of strength that comes from years of lifting, supporting, holding.",
+    "hair_color": "Natural black with scattered grey threads left unhidden",
+    "hair_style": "Gathered in elaborate wrapping cloths that change daily — currently indigo cotton with gold threadwork, pulled back from her face to expose her full forehead",
+    "hair_length": "Long, shoulder-length when unwrapped",
+    "eye_color": "Deep brown, slightly yellowed at the sclera from age and fatigue",
+    "skin_tone": "Deep ochre with warm undertones, the complexion of someone with West African and Pacific Islander heritage",
+    "complexion": "Weathered but not aged poorly — her face is lined with expression rather than sagging. High cheekbones, broad nose, full mouth often pressed into a thin line of concentration. Deep creases around her eyes from years of squinting in poor light and smiling. Her skin shows the texture of someone who does not prioritize cosmetic maintenance; pragmatic, clean, lived-in.",
+    "distinguishing_marks": [
+      "Dense, pale burn scarring across both forearms from wrist to elbow — chemical incident origin, waxy and smooth with age, approximately 25 years old",
+      "Bioluminescent tattoo pattern along her collarbone: thin threads of cyan and deep blue that pulse softly in sync with her heartbeat when elevated, visible at the neckline of her usual clothing",
+      "Fine white scar on the back of her left hand, running from knuckle to wrist — old suture line, possibly occupational"
+    ],
+    "visible_augmentations": "The bioluminescent collarbone tattoo is her only visibly augmented feature — a soft blue pulse visible when her heart rate rises. Her subdermal haptic fingertip pads are not visible but her hands bear the callused marks of someone who has relied on them for decades: slightly thickened fingertips, minor discoloration at the pad sites, a faint granulation visible under close inspection. She keeps her nails trimmed blunt and wears no jewelry on her hands except a plain silver wedding band (worn by her late spouse).",
+    "posture_movement": "Stands with her full weight distributed evenly, never leaning. Moves with deliberate slowness — economy of motion rather than tiredness. Her hands are always busy: gesturing, reaching, adjusting her head wraps. She has the stillness of someone trained to be present; when she stops moving to listen, the shift is noticeable. Her gait is steady but her shoulders sometimes roll forward from exhaustion.",
+    "clothing_style": "Practical, Tier 4 working-class aesthetic with personal touches. Typically wears loose cotton or linen tunics in earth tones (ochre, burnt orange, deep green) layered over fitted black leggings. Comfortable slip-on shoes, often scuffed. A long cardigan or shawl worn for warmth and to cover her scarred arms when meeting new patients. She favors natural fabrics and muted colors — nothing flashy, nothing corpo-coded. Her head wraps are her only concession to vanity: they are always clean, always intentional, often patterned with geometric designs. No visible jewelry except her wedding band and occasionally small beaded bracelets made by patients' children. She carries a worn canvas satchel with external pockets stuffed with latex gloves, swabs, and a battered tablet."
+  },
+  "image_prompt": "portrait of a 58-year-old West African-Ukrainian-Samoan woman, broad-shouldered and strong, deep ochre skin, grey-streaked black hair wrapped in indigo cloth with gold thread detail, wearing a burnt orange linen tunic, weathered and dignified. her forearms are mapped with pale chemical burn scars. cyan bioluminescent tattoo threads pulse faintly along her collarbone. her brown eyes are tired but intensely present. background: dimly lit converted laundry unit, soft blue light from medical equipment, worn examination table, cracked tablet on a shelf. cinematic lighting, realistic skin texture, documentary photography style, cyberpunk street medicine, intimate and compassionate mood. --ar 2:3 --v 6"
 }

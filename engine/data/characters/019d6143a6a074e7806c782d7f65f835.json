@@ -240,5 +240,26 @@
     "Arcturus CK-5 'Bloodhound'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Italian",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Lean and compact, economical in movement—the build of someone who moves through crowded spaces efficiently. Slight but not fragile; wiry muscle beneath the layered fabrics.",
+    "hair_color": "Dark brown, naturally textured",
+    "hair_style": "Wrapped daily in different configurations—today a high crown wrap with fabric tails, tomorrow a side-pinned fold. The wrap itself is always visible, always the statement piece.",
+    "hair_length": "Shoulder-length beneath wraps; she keeps it long enough to pin and tie but short enough to rewrap quickly between customers",
+    "eye_color": "Warm brown, alert and tracking",
+    "skin_tone": "Rich warm brown with golden undertones",
+    "complexion": "Clear, well-maintained skin. A light scar along her left jawline from a market accident at age seventeen. Her nose ring—brushed brass, simple band—is her only facial jewelry but catches ambient light deliberately. No makeup; her face reads young and sharp rather than softened.",
+    "distinguishing_marks": [
+      "Tawny geneware cat ears (cosmetic, matching her skin tone exactly) positioned naturally above and slightly behind her human ears, mobile and expressive",
+      "Fine white scar along left jawline, approximately 2cm, from a stall collapse incident",
+      "Retractable claws on both hands—small, neat, pearl-colored, barely noticeable when retracted but deliberately visible when extended for dramatic effect during readings"
+    ],
+    "visible_augmentations": "The cat ears are immediately visible and read as intentional body modification rather than medical augmentation. The retractable claws are functional and occasionally displayed; most customers notice them only when she extends them to handle data chips or to punctuate a reading. No visible cyberware, no chrome, no neural port scarring.",
+    "posture_movement": "Quick, precise movements—nothing wasted. She sits cross-legged at her stall table as default, which gives her an almost meditative appearance until someone tries to leave without a reading, then her attention snaps with intensity. She leans forward when listening, genuinely focused. Her hands are always moving slightly—adjusting her rings, touching her nose ring, repositioning scarves. Economical but theatrical.",
+    "clothing_style": "Deliberate maximalism, Tier 3-4 working class with spiritual/cultural intentionality. Heavy embroidered coat (likely thrifted, deliberately oversized, left side weighted with tool pockets) worn over layered scarves in clashing warm tones—ochre, rust, deep red. Stacked brass and copper rings on every finger (at least four per hand). Her headwrap rotates but is always high-quality fabric, suggesting either access to good secondhand markets or careful saving. Her stall table is draped in deep velvet—burgundy or midnight, re-worn weekly. Everything reads as 'spiritual vendor' by design, but the coordination suggests real attention to aesthetic rather than random assemblage."
+  },
+  "image_prompt": "Young Black-Italian woman, age 23, petite and sharp-featured, sitting cross-legged at a fold-out velvet-draped fortune-telling table in a busy cyberpunk market. She wears layered rust and ochre scarves, a heavy embroidered coat, and has stacked brass rings on every finger. Her most striking features: tawny geneware cat ears (natural-toned, perfectly matching her warm brown complexion) positioned above human ears, a simple brass nose ring catching neon light, and fine white retractable claws visible as she handles a small glowing data chip over a brass dish of burning residue. Her dark hair is wrapped in an intricately folded headwrap. Warm brown eyes, alert and focused, reading a customer with unsettling precision. Background: neon-lit Burnished Market corridor, other vendor stalls, pedestrian foot traffic, graffitied brick and holographic signage. Mood: spiritual intensity mixed with sharp intelligence, theatrical but grounded. Lighting: warm market ambient light mixed with cool neon, shadows catching the edges of her augmentations. --ar 2:3 --v 6"
 }

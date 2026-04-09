@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Beat Cop, Meridian 88 Metro Police",
+  "role": "Beat Cop, GLMZ Metro Police",
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, near Western and Chicago Ave",
@@ -64,7 +64,7 @@
   "narrative_function": "The neighborhood anchor — someone who knows this specific geography of Hamtramck Enclave better than anyone in an official capacity. Source of local intelligence, community history, and a surprisingly nuanced read on who is actually dangerous versus who looks it. Can be a protector or a complication, but never a simple obstacle.",
   "augmentations": "None cosmetic. Knee brace implant (medical, left knee). Standard-issue Metro Police neural badge-link for ID verification and incident logging. Hearing enhancement in left ear (partial loss from a firearm incident in his twenties).",
   "daily_life": "On foot by 0700, coffee from the same cart on Żurawia Cross, eight-block loop repeated four to six times per shift with variations depending on what he finds. Stops to talk. Knows most people by name within his beat. Files incident reports with meticulous detail that his supervisors find excessive.",
-  "affiliation": "Meridian 88 Metro Police — Hamtramck Enclave Patrol District",
+  "affiliation": "GLMZ Metro Police — Hamtramck Enclave Patrol District",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -202,7 +202,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 22 — Joined Meridian 88 Metro Police Academy",
+      "event": "Age 22 — Joined GLMZ Metro Police Academy",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -262,5 +262,25 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Ghanaian-Ukrainian)",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Large-framed, solidly muscled in shoulders and chest, softening at the middle from a decade of desk time and routine. Carries weight with the settled confidence of someone who no longer needs to prove anything physical.",
+    "hair_color": "Dark brown with grey threading throughout",
+    "hair_style": "Short, practical, combed back without styling product",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and observant",
+    "skin_tone": "Medium olive-brown, even complexion suggesting mixed heritage",
+    "complexion": "Heavily lined face, particularly around eyes and forehead — lines that map eleven years of studying the same eight blocks. Well-maintained short beard, salt-and-pepper, trimmed with precision. Skin shows sun exposure and age without neglect.",
+    "distinguishing_marks": [
+      "Thin white scar along left temple, approximately 3cm, from firearm incident in his twenties",
+      "Faint webbed scarring on left knee, barely visible beneath uniform trousers, from surgical implant installation"
+    ],
+    "visible_augmentations": "Left ear shows subtle neural interface port behind the lobe (hearing enhancement). Slightly favors right leg when standing for extended periods due to left knee brace implant, though the limp is minimal and deliberate. Standard-issue Metro Police neural badge-link sits at right hip — chrome and polymer hybrid, worn smooth from daily use.",
+    "posture_movement": "Deliberate, economical gait with a slight favor to the right leg. Stands with hands often clasped in front or resting at duty belt. Moves through space as someone who has claimed it through repetition rather than dominance. Pauses frequently to observe, head slightly tilted — a listener's posture.",
+    "clothing_style": "GLMZ Metro Police regulation uniform: grey-blue tactical fatigues, reinforced canvas, worn to comfortable softness. Patches showing Hamtramck district and 11-year service bar. Scuffed black polymer boots, practical rather than polished. Coffee stains on cuffs are accepted rather than fought. Off-duty: durable working clothes — canvas jacket, thermal underlayers, no affectation."
+  },
+  "image_prompt": "Portrait of a weathered 52-year-old beat cop, medium olive-brown skin, dark hair greying at temples, salt-and-pepper beard, deeply lined face marked by observation and concern. Large frame softened by age, wearing wrinkled GLMZ Metro Police grey-blue tactical uniform with Hamtramck district patch, coffee-stained cuffs. Standing on an urban street corner under industrial amber sodium lights, Hamtramck Enclave in background—mixed brick buildings, neon Cyrillic signage, worn storefronts. Slightly favoring right leg, hands at duty belt. Tired but alert eyes. Cyberpunk urban realism, gritty neighborhood atmosphere, natural lighting with streetlight glow, shallow depth of field, 35mm photography style, character study --ar 2:3 --v 6"
 }

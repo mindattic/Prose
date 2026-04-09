@@ -227,5 +227,26 @@
     "The Pure Hand",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Irish / West African / Pacific Islander",
+    "height_cm": 164,
+    "weight_kg": 52,
+    "build": "Narrow-shouldered and lean, almost wiry, with the compressed musculature of someone who navigates confined spaces regularly. Her frame suggests years of deliberate minimization — moving through gaps, staying unnoticed.",
+    "hair_color": "Dark brown with uneven regrowth",
+    "hair_style": "Cropped close to the scalp, deliberately asymmetrical, maintenance-free",
+    "hair_length": "Short",
+    "eye_color": "Left eye: natural dark brown. Right eye: salvaged optical implant glowing dim amber with visible degradation artifacts",
+    "skin_tone": "Deep warm brown with olive undertones, carrying faint blue-green bioluminescent tracery",
+    "complexion": "Gaunt cheekbones, sharp jawline. Skin is weathered but meticulously unmarked — no identifying scars, no tattoos. The bioluminescent mod bleeds patchily across collarbones and the backs of her hands like dying phosphorescence, fading in erratic zones where the implant is failing.",
+    "distinguishing_marks": [
+      "Faint blue-green bioluminescent tracery across both collarbones, degraded and patchy",
+      "Bioluminescent bloom across the backs of both hands, brightest at knuckles, dimming toward wrists",
+      "Surgical scarring at right temple where the optical implant was installed, thin and old"
+    ],
+    "visible_augmentations": "Amber-glowing optical implant in right eye with visible internal degradation (microfractures, reduced focus clarity). Patchy bioluminescent skin mod (blue-green, mostly non-functional). Subdermal pressure-sensitivity nodes along fingertips are invisible but cause faint luminous tracery to pulse when active.",
+    "posture_movement": "Moves with preternatural stillness — economical, deliberate, never wasted motion. Her gait is silent despite concrete and metal surfaces; her shoulders remain locked in a posture of minimal presence. When she focuses, her head tilts bird-like, compensating for her degraded right eye's poor resolution. She does not gesture when speaking. Her hands remain open and visible.",
+    "clothing_style": "Tier 5 utilitarian — modified caving gear showing multiple repair generations. Black reinforced canvas pants with welded cargo pockets and carabiner attachment points. Loose layered top in faded grey synthetic, sleeveless to show her bioluminescent mod (whether for navigation or identification is unclear). Worn magnetic boots with hand-soldered sole plates. A tattered reflective vest salvaged from maintenance crews, worn unbuttoned. No jewelry. No identifying markers. Clothes smell of mineral water, rust, and old electrical burn."
+  },
+  "image_prompt": "A gaunt woman with deep brown skin and short asymmetrical dark hair, standing in shadow within a massive concrete tunnel system, bioluminescent blue-green tracery glowing faintly along her collarbones and hands like dying foxfire. Her right eye glows dim amber from a salvaged optical implant, noticeably degraded with internal artifacts visible. She wears layered grey synthetic clothing and modified black caving pants with cargo pockets, an unbuttoned reflective maintenance vest. Her posture is perfectly still, almost unnaturally motionless, shoulders locked. Background: industrial tunnel with corroded metal pipes, distant water dripping, amber emergency lighting reflecting off wet concrete. Cyberpunk neo-noir, hyper-detailed, cinematic lighting, moody atmosphere of urban decay and underground isolation, film noir color grading, 35mm photograph aesthetic. --ar 2:3 --v 6"
 }

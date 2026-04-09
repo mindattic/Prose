@@ -180,5 +180,26 @@
     "Clearpath",
     "Copper"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Igbo) / Greek",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and sturdy with functional muscle from handling bolts of fabric and manual textile work; not lean, not heavy — solidly built with the physique of someone who works with their hands for ten hours a day",
+    "hair_color": "Natural black with hand-applied chevron pattern in burnt orange and cream",
+    "hair_style": "Close-cropped with geometric precision; dyed chevrons run front-to-back across the crown",
+    "hair_length": "Short",
+    "eye_color": "Dark brown iris with cosmetic modification: concentric rings of brushed copper and jade set in the iris itself",
+    "skin_tone": "Deep ochre with warm undertones",
+    "complexion": "Clear and sun-darkened from outdoor market work; strong cheekbones, wide nose, full lips; minimal makeup except occasional kohl around the modified eyes",
+    "distinguishing_marks": [
+      "Fabric swatches stitched directly to the sleeve of her left jacket arm from elbow to wrist — a patchwork of varying textures, colors, and weaves that serves as mobile inventory samples",
+      "Permanent textile dye stains on her fingertips and under her nails from years of hand-dyeing and alteration work",
+      "Small burn scar on her right forearm from a heat-press accident three years ago"
+    ],
+    "visible_augmentations": "Cosmetic iris modification only — concentric rings of copper and jade embedded in the iris, visible when making eye contact. No other visible cybernetics.",
+    "posture_movement": "Confident and expansive; she takes up space deliberately. Moves with efficiency but also theatricality — gestures are broad when haggling, deliberate when inspecting fabric. Stands with weight shifted, often one hand on her hip or holding a bolt of material. Natural and unselfconscious.",
+    "clothing_style": "Tier 4 working-class practicality with personal aesthetic rebellion. Always wears a heavy canvas jacket or work coat (usually indigo or charcoal) with the fabric swatches stitched to the left sleeve. Layers — thermal undershirts, sometimes a vest. Cargo pants or modified denim with utility pockets. Steel-toed boots, scuffed from market floors. Occasionally wears pieces from her own inventory as living advertisements — a hand-altered Tessera surplus overshirt, a Zheng-Dao knockoff with improved seams. No corporate branding. Minimal jewelry except for a worn silver bangle on her right wrist (family piece, Greek side)."
+  },
+  "image_prompt": "A confident woman with deep ochre skin and closely-cropped natural black hair patterned with burnt orange and cream chevrons. Her eyes have striking cosmetic iris modifications featuring concentric rings of copper and jade that catch the light. She wears a heavy indigo canvas work jacket with a patchwork of fabric swatches stitched along the entire left sleeve — each swatch a different texture and color. Broad-shouldered and sturdy build, standing with deliberate confidence in a Tier 4 market stall surrounded by bolts of fabric and clothing. Worn steel-toed boots, utility pockets, lived-in practicality mixed with personal style. Cyberpunk marketeer aesthetic. Indoor market lighting with warm tungsten overhead fixtures casting shadows across stacks of textile inventory. Gritty, detail-rich, photorealistic. --ar 2:3 --v 6"
 }

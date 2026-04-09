@@ -237,5 +237,24 @@
     "Castling",
     "Silver"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Southern African / Balkan (Mbeki suggests Bantu/Xhosa lineage; Gjergjevič indicates Serbian or Albanian ancestry)",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, almost ascetic—minimal soft tissue, all planes and edges. Shoulders slightly narrow for his height, suggesting a frame built for endurance rather than strength. Posture rigidly upright, the kind that comes from sitting in institutional chairs for decades.",
+    "hair_color": "Natural silver, fully gray-white without dye or treatment",
+    "hair_style": "Precisely cropped, almost military-neat, parted on the left. No styling product, just clean geometry.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural, unremarkable—the kind of eyes that listen more than they judge",
+    "skin_tone": "Warm medium brown, even complexion with subtle undertones suggesting mixed heritage ancestry",
+    "complexion": "Sharp, high cheekbones that cast visible shadows in overhead lighting. Thin lips, angular jaw with minimal softness. Skin condition is immaculate—no scars, no blemishes, maintained with functional precision rather than vanity. Reading glasses worn on a thin silver chain despite not requiring optical correction; they sit low on the bridge of his nose when in use.",
+    "distinguishing_marks": [
+      "Faint horizontal line across left wrist—old, surgical-clean scar approximately 4cm long, consistent with childhood injury or very precise medical intervention, barely visible unless noted"
+    ],
+    "visible_augmentations": "None visible to casual observation. The Axiom subdermal compliance monitor sits beneath the left clavicle; a faint linear scar marks its insertion point, barely detectable under the collar of a dress shirt. No LED optics, no chrome, no industrial protrusions—a point of deliberate professional distinction.",
+    "posture_movement": "Moves with minimum wasted motion, each gesture economical and deliberate. Sits with perfect spinal alignment. Does not fidget. Hands rest flat on surfaces when not in use. Eye contact is steady and unblinking without being aggressive—the gaze of someone who has learned to make silence itself a form of communication. Walks slowly, as if each step is being catalogued.",
+    "clothing_style": "Tier 2 corporate formal—expensive but aggressively neutral. Gray wool slacks (tailored, no wrinkles), gray or pale blue dress shirts (100% cotton, changed daily), dark gray blazer or unstructured jacket (no logos, no visible branding). Minimal jewelry: simple silver watch, no rings. Shoes are black leather oxfords, always polished. A small grey Axiom Security Division pin on the lapel—mandatory, worn without pride or resentment. The overall effect is designed to be forgotten immediately after being observed, a walking beige monolith in a Tier 2 administrative corridor."
+  },
+  "image_prompt": "Portrait of Oswaldo Mbeki-Gjergjevič, 51-year-old internal affairs investigator, cyberpunk 2226, lean angular face with high sharp cheekbones, warm medium brown skin, full silver hair cropped military-short, dark eyes behind slim reading glasses on silver chain, thin mouth and prominent jaw. Impeccably groomed. Wearing pale blue dress shirt and gray blazer, Axiom Security Division pin on lapel, minimal jewelry, dark leather oxfords. Sitting rigidly upright in harsh fluorescent overhead lighting of corporate security corridor, cool-toned blues and grays, geometric shadows cast across angular features. Expression is neutral but intensely observant, unsettling pleasantness in the gaze. Subdermal implant barely visible beneath left clavicle beneath shirt collar. Background: blurred Meridian Core administrative block interior, surveillance camera visible out of focus. Professional corporate photography style, forensic realism, cold institutional lighting. --ar 2:3 --v 6"
 }

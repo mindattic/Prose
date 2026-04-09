@@ -13,7 +13,7 @@
   "age": 25,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Clark and Addison",
-  "description": "Ilhan Strom-Duah are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and they make no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a netrunner out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who's worked with Ilhan Strom-Duah agrees on two things: they are worth the fee, and they are terrible company at dinner.",
+  "description": "Ilhan Strom-Duah are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and they make no effort to hide it.\n\nBorn and raised in GLMZ, third generation — they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a netrunner out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who's worked with Ilhan Strom-Duah agrees on two things: they are worth the fee, and they are terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.74,
@@ -272,9 +272,30 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Canopy Station Nine",
     "Geartown"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Rawboned and efficiently lean — long limbs with minimal subcutaneous fat, the frame of someone who runs on function rather than bulk. Suggests either deliberate asceticism or the metabolic reality of synthetic blood.",
+    "hair_color": "Dark brown with faded blonde undertones — natural color allowed to fade under city light and neglect",
+    "hair_style": "Shoulder-length, often pulled back asymmetrically or left to fall across one side of the face",
+    "hair_length": "Long",
+    "eye_color": "Pale grey with networked microvasculature visible at the corners — indication of synthetic blood circulation",
+    "skin_tone": "Cool medium brown — sun-deprived from spending nights in the Canopy and jacked-in to networks",
+    "complexion": "Sharp cheekbones, angular jaw, the kind of face that photographs differently depending on angle and intent. Skin is clear but shows the faint texture of someone who doesn't prioritize sleep — fine lines around the eyes from screen fatigue and focus-locked concentration. No visible scarring on the face; the damage is internal.",
+    "distinguishing_marks": [
+      "Surgical scars at both temples where cyberear neural interface ports integrate with the skull — thin, precise lines barely visible unless the light hits at certain angles",
+      "A thin white line running from left wrist to mid-forearm, old enough to be almost invisible but present under certain lighting — a reminder of early-career mistakes with jack-in equipment",
+      "Faint tattoo along the right collarbone: a stylized circuit pattern that mirrors actual neural pathways, done in conductive ink that glows faintly when jacked into a live network"
+    ],
+    "visible_augmentations": "Cyberears dominate the visual profile — brushed titanium and dark chrome, slightly larger than baseline human ears with visible directional microphone arrays at the auricle edge and faint LED indicators that pulse with incoming audio data. The ears have minimal attempt at cosmetic blending; they announce themselves. Wrists show subtle port scars where jack-in cables connect, usually hidden by clothing but visible when they move.",
+    "posture_movement": "Economical and purposeful — no wasted motion, but not rigid. Moves with the particular grace of someone who's spent significant time in VR spaces and has to relearn physical embodiment daily. Head positioning is deliberate; they orient toward sound sources with the precision of someone using directional microphones rather than moving naturally. Eyes track movement in their peripheral vision with unusual attentiveness. When relaxed (rare), there's a slight tremor in the hands — the physical price of synthetic blood and enhanced neural firing rates.",
+    "clothing_style": "Tier 3-4 utilitarian with deliberately non-descript elements. Black or dark grey reinforced synthetic jacket (thermal regulation for temperature-spiked rig sessions), loose cargo pants with multiple sealed pockets (some for hardware, some as misdirection), unmarked steel-toed boots with reinforced ankle support (never know when you need to move fast through physical space). Underneath: fitted black layer that wouldn't stand out in either a corpo lobby or a Tier 5 dive. No logos, no brand signaling — visibility is operational liability. One piece of visible jewelry: a silver ring on the right thumb, always worn, possibly functional (induction point for wireless data transfer) or possibly just a talisman from before they fully committed to the life."
+  },
+  "image_prompt": "A tall, angular nonbinary netrunner with dark skin and long dark blonde-tipped hair, pale grey eyes with visible microvasculature. Brushed titanium and dark chrome cyberears with visible microphone arrays and faint LED indicators dominate the side profile. Sharp cheekbones, sun-deprived complexion, the face of someone who lives in screens. Wearing black reinforced synthetic jacket and dark cargo pants, standing in the elevated Canopy district at dusk with neon-lit Clark Street below, city sprawl behind them. Cinematic cyberpunk noir lighting with deep shadows under the eyes, volumetric fog from rig heat dissipation around their silhouette. Cold blue and amber neon reflecting off wet surfaces. Intricate circuit tattoo barely visible on collarbone. Posture is economical and focused, shoulders slightly forward from years of terminal work. Sharp, documentary photorealism with cyberpunk color grading. 8k detail on the cyberear interface points and LED pulses. --ar 2:3 --v 6"
 }

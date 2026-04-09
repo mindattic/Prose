@@ -194,5 +194,26 @@
     "Tessera Corponation",
     "SynapTech IrisBloom Ocular Color Modulator"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South Asian (Anand) / Georgian-Caucasian (Kereselidze) — mixed subcontinent and Levantine diaspora",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Compact and lean, shoulders slightly rounded from decades of forward-bending prayer posture. Wiry muscle beneath modest frame, no excess weight — disciplined by routine and modest means.",
+    "hair_color": "Dark brown with silver-gray at temples and threading through his close-trimmed beard",
+    "hair_style": "Close-trimmed throughout, beard maintained with geometric precision (trimmed every third day without exception)",
+    "hair_length": "Short",
+    "eye_color": "Deep green with fine geometric lattice pattern etched across iris surface — concentric circles and interlocking polygons, visible in direct light",
+    "skin_tone": "Warm olive-tan from mixed heritage, weathered by age and the Shelf's industrial light cycles",
+    "complexion": "Clean and careful despite environment — skin shows age lines around eyes and mouth, grooming meticulous. No visible acne scarring. A man who washes with intention.",
+    "distinguishing_marks": [
+      "Fine prayer line callus on forehead, faded but visible in certain light from decades of prostration",
+      "Small burn scar on right forearm (thumb-sized, pale), origin unknown but old",
+      "Surgical scar along left wrist where chrome prosthetic interfaces with biological tissue — very clean, decades old"
+    ],
+    "visible_augmentations": "Left hand is a full chrome prosthetic (wrist to fingertips) with etched Quranic verse pressed into the metal surface beneath the plating, creating subtle relief patterns visible at close range. The chrome is not polished mirror-bright but matte with a faint greenish patina from age and prayer oils. Patterned irises in both eyes — geometric green lattices clearly visible, especially in dim light.",
+    "posture_movement": "Upright, composed, economical in gesture. Moves with deliberate slowness — no wasted motion. Hands gesture when speaking but the chrome left hand moves with slightly more caution, as if aware of its weight and edge. When sitting, he sits fully upright rather than slouching. When standing, feet shoulder-width apart, grounded.",
+    "clothing_style": "Simple, clean, Tier 3 practical. Usually a loose cotton thobe or simple long-sleeved shirt in cream, off-white, or pale gray — fabric choices that hide the Shelf's dust. Dark trousers, well-maintained. Leather prayer cap (kufi) worn during formal hours, removed during informal counsel. No jewelry except occasionally a very old silver ring on his right hand. Shoes are sensible, worn but cared for. Clothing never bearing corporate logos or tier markers — deliberately unmarked."
+  },
+  "image_prompt": "Portrait of a 54-year-old South Asian-Caucasian man, compact and lean build, short dark hair with silver-gray temples, close-trimmed beard. His most striking feature: both eyes have geometric green lattice patterns etched across the irises like interlocking polygons. His left hand is a matte chrome prosthetic with subtle Quranic verse relief patterns pressed beneath the plating. He wears a simple cream cotton thobe and a dark prayer cap (kufi). Posture is upright and composed. Setting: industrial warehouse masjid interior, soft amber prayer-time lighting, geometric shadows from warehouse skylights. His expression is calm, eyes directly forward. Cyberpunk genre, spiritual and precise. Shallow depth of field focusing on face and chrome hand. Warm color grading despite grim Tier 3 setting. Photorealistic, dignified, no glamour. --ar 2:3 --v 6"
 }

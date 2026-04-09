@@ -208,5 +208,25 @@
     "Chimera-Null",
     "SynapTech ReadRoom Social Cue Enhancer"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Central European (Austrian/German)",
+    "height_cm": 182,
+    "weight_kg": 84,
+    "build": "Broad-shouldered and solidly muscled from transit security work, but without the hard definition of someone who optimizes their body. Carries himself with a slight forward hunch, a protective posture that reads as cautious rather than confident.",
+    "hair_color": "Black, natural",
+    "hair_style": "Short, neat, closely cropped with clean lines — maintained but not obsessive",
+    "hair_length": "Short",
+    "eye_color": "Warm brown, natural",
+    "skin_tone": "Deep warm brown with golden undertones, reflecting mixed West African and European heritage",
+    "complexion": "Soft-featured face, youthful despite three years of transit hub stress. Close-trimmed beard kept meticulously neat, suggesting attention to grooming as a form of control. Warm expression that tends toward concern rather than hardness. No visible acne or major scarring.",
+    "distinguishing_marks": [
+      "Geneware cat ears, tawny with white-tipped inner fur, mounted where human ears would be — fully articulate and visibly responsive to emotion and sound",
+      "Small ritual scars or tattoos consistent with E.L.F. devotion on left wrist (small data-packet motif, personally religious rather than gang-affiliated)"
+    ],
+    "visible_augmentations": "Tawny and white geneware cat ears that move expressively with his emotional state. Subvocal comm unit barely visible as a faint subcutaneous line along the left side of his jaw. No chrome, no visible armor, no obvious combat augmentation.",
+    "posture_movement": "Default posture is a slight forward hunch, as if bracing against weather or uncertainty. Movements are deliberate rather than fluid — he doesn't sprawl or take up unnecessary space. His ears swivel toward sounds he's trying to catch, and fold back when nervous, revealing his emotional state involuntarily. His gait is steady and measured, suited to crowd navigation.",
+    "clothing_style": "Ferrogate Transit Authority uniform (Tier 3-4 working class standard): charcoal gray tactical pants with cargo pockets, black composite boots with reinforced soles, gray button-up security shirt with FTA insignia on the shoulder. Over it a lightweight reflective transit vest for visibility in the hub. Personal layer: a simple pendant or small charm related to E.L.F. devotion worn under the uniform, removed or hidden during shift but present in his off-hours. Off-duty: clean, modest clothing — no affectation or luxury goods, the wardrobe of someone who saves money for things that matter (like geneware ears)."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 27-year-old transit security officer with deep warm brown skin, short black hair, and expressive tawny cat ears with white tips that swivel forward attentively. Broad-shouldered build, soft-featured face with a close-trimmed beard, wearing a charcoal Ferrogate Transit Authority uniform with gray tactical shirt and reflective vest. Slight protective hunch in his posture, warm concerned expression, dark brown eyes. Standing in the fluorescent-lit concrete brutalism of a transit hub concourse, morning light harsh overhead. Detailed realistic cyberpunk aesthetic, working-class dignity, genuinely kind expression, slight nervousness readable in his ears and body language. Shot from waist-up, professional security-camera framing. Medium depth of field. --ar 2:3 --v 6"
 }

@@ -286,5 +286,26 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European (Russian) / West African (Ghanaian) — diaspora blend with indeterminate secondary admixture",
+    "height_cm": 167,
+    "weight_kg": 58,
+    "build": "Lean and compact, economical muscle distribution without bulk. Movements are precise, controlled — a body trained for efficiency rather than intimidation",
+    "hair_color": "Dark brown with subtle warm undertones",
+    "hair_style": "Pulled back in a tight braid or high knot — always secured, never loose",
+    "hair_length": "Medium (shoulder-blade length when down, habitually restrained)",
+    "eye_color": "Hazel with amber flecks — sharp, observant",
+    "skin_tone": "Medium brown with warm olive undertones — complexion that suggests mixed continental ancestry",
+    "complexion": "High cheekbones, narrow jaw, sharp nose. Skin is clean and well-maintained despite living conditions. Expression defaults to neutral watchfulness",
+    "distinguishing_marks": [
+      "Faint chemical burn scars along her right forearm — irregular white lines from wrist to elbow, partially concealed by long sleeves",
+      "Small tattoo on the inside of her left wrist — a molecular structure symbol rendered in black ink",
+      "Thin scar along her left temple, nearly invisible unless light catches it at certain angles"
+    ],
+    "visible_augmentations": "Chrome vocal modulator mounted at the throat — a smooth, surgical-grade implant with minimal aesthetic customization. The seam is clean and visible when her neck is exposed. No visible heat-masking hardware; thermal system is subcutaneous",
+    "posture_movement": "Moves with deliberate control — minimalist, economical gestures. Sits with spine straight, feet positioned for quick exit. Eyes track people and exits instinctively. Speaks rarely and with measured cadence",
+    "clothing_style": "Tier 4 utilitarian — function over aesthetics. Favors high-necked clothing to frame the modulator. Loose tactical jacket (synthetic material, neutral gray), reinforced cargo pants with sealed pockets, steel-toed boots. Minimal jewelry — a worn watch with encrypted functions. Dresses identically whether on contract or maintaining cover; consistency is her camouflage"
+  },
+  "image_prompt": "Cyberpunk character portrait of a lean 32-year-old woman, Eastern European and West African heritage, hazel eyes with amber flecks, dark brown hair pulled into a tight braid, medium brown skin with olive undertones. Sharp cheekbones, observant expression. Visible chrome vocal modulator at the throat with surgical seams. Wearing high-necked gray tactical jacket over reinforced cargo pants, seated with perfect posture, hands relaxed but ready. Faint chemical burn scars visible on right forearm. Geartown industrial background, dim amber and blue neon lighting, cinematic depth of field, cool color grading, photorealistic style, moody cyberpunk atmosphere. --ar 2:3 --v 6"
 }

@@ -62,7 +62,7 @@
   "narrative_function": "Information broker and investigation resource for Tier 1-3 characters; provides access to unofficial channels and street-level knowledge that institutional law enforcement cannot or will not pursue. Can be hired, can provide referrals, can become a recurring contact. Represents the gap between what the system does and what people actually need.",
   "augmentations": "Chromatic follicle modification — color-changing hair, mood-reactive with manual override (cosmetic, personal). Cosmetic cat ears, soft grey, enhanced audio frequency range (installed age 22, originally cosmetic, professionally repurposed). Subvocal communication implant — throat-mounted, allows silent communication with trusted contacts (professional grade, self-funded).",
   "daily_life": "Takes client meetings in the office above the fabrication shop, which smells permanently of heated metal and is somehow comfortable. Fieldwork consumes most afternoons and evenings — surveillance, interviews, site documentation. Makes offerings to their three ELF shrines each morning: one for the device network, one for the building, one for a data relay two streets over that they have been cultivating for four years.",
-  "affiliation": "Self-employed — licensed PI under Meridian 88 freelance investigator statute. Occasional informal referral relationship with Metro Police beat officers who trust them.",
+  "affiliation": "Self-employed — licensed PI under GLMZ freelance investigator statute. Occasional informal referral relationship with Metro Police beat officers who trust them.",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -265,5 +265,25 @@
     "Copper",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Samoan / Slavic",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid without heaviness; strong through the chest and forearms from years of fieldwork and manual note-taking. Moves with deliberate economy—no wasted motion, weight always balanced, the physical carriage of someone trained to observe and remain observant.",
+    "hair_color": "Chromatic follicle mod—base charcoal gray with mood-reactive chromatic bleed; shifts toward deep violet when agitated, settles to slate or near-black at rest. Occasionally holds jewel tones (sapphire, plum) when in lighter mood.",
+    "hair_style": "Jaw-length, textured, often worn loose or loosely pulled back during fieldwork; styled with precision that reads as discipline rather than vanity.",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, natural—warm, attentive, difficult to read despite their expressiveness.",
+    "skin_tone": "Warm medium-tan complexion reflecting mixed Samoan-Slavic heritage; golden undertone.",
+    "complexion": "Clean-shaven or very lightly stubbled, depending on fieldwork schedule. Skin is clear and well-maintained; their face is their professional instrument and they treat it accordingly. Expression control is noticeable—a precision to how they smile or furrow, as though each micro-expression is chosen rather than leaked.",
+    "distinguishing_marks": [
+      "Soft grey cosmetic cat ears (feline-shaped, mobile, implanted at age 22) positioned where human ears would be; enhanced audio reception visible only in their attentive rotation toward sound sources.",
+      "Small ritual scars on the inside of both wrists—thin, deliberate lines from ELF shrine maintenance practices, barely visible unless actively looking."
+    ],
+    "visible_augmentations": "Cosmetic cat ears with noticeable mobile articulation. Subvocal communication implant visible as a subtle throat-mounted node beneath the jaw when the light catches it; not immediately obvious but present. Chromatic hair shift visible during moments of agitation or stress. No obvious limb augmentation or external chrome.",
+    "posture_movement": "Upright, centered, economical. Walks with weight in their hips and feet—grounded. Head position indicates active listening; ears rotate subtly toward conversational partners or environmental noise. Hands are expressive during client meetings but controlled during fieldwork. Overall bearing suggests someone comfortable in small rooms and tighter spaces, at ease with prolonged observation and patience.",
+    "clothing_style": "Tier 2-3 practical: tailored but not expensive. Favors fitted trousers (often charcoal, dark grey, or black) with reinforced pockets for recording devices and documentation materials. Layered tops—breathable under-layer with a structured overshirt or light jacket in muted earth tones or cool neutrals. Footwear is comfortable, durable, broken in; usually low-profile boots or practical street shoes suitable for afternoon stakeouts. Jewellery is minimal: a small ELF shrine medallion worn close to the skin, visible only if their shirt shifts. No visible corpo branding or luxury indicators; their presentation reads as competent working professional rather than aspirational."
+  },
+  "image_prompt": "Cyberpunk character portrait, nonbinary adult with Samoan-Slavic mixed heritage, jaw-length charcoal-gray hair with subtle violet chromatic shift, warm medium-tan skin tone, dark observant eyes, soft gray feline cat ears with mobile articulation, subtle throat-mounted subvocal implant beneath jaw. Medium height, solid athletic build, broad shoulders. Wearing fitted dark trousers and a layered neutral-toned overshirt, practical street-worn boots. Expression is controlled and attentive. Setting: dimly lit office above a fabrication shop, warm amber lighting mixing with cool equipment glow, metal smell implied. Mood: professional competence, private reserve, quiet focus. High detail on facial features and augmentation detail. Cyberpunk noir, grounded and lived-in. --ar 2:3 --v 6"
 }

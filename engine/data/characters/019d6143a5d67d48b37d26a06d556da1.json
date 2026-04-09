@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Cem Ivanov-Appiah's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Cem Ivanov-Appiah's past shows up in GLMZ, carrying old grievances and new chrome",
     "A dead drop Cem Ivanov-Appiah maintains is found and cleaned out — whoever did it now has leverage",
     "Someone is impersonating Cem Ivanov-Appiah on jobs, and the impersonator is better at the work than the original"
   ],
@@ -157,7 +157,7 @@
     "strengths": [
       "ability to remain calm under fire",
       "intimidating physical presence",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "old injury that flares under specific conditions",
@@ -281,9 +281,30 @@
   ],
   "related_entities": [
     "Masquerade",
-    "Meridian 88",
+    "GLMZ",
     "Burnside Pocket",
     "Slagworks Industrial"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Turkish / Russian / Ghanaian",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and economical, with minimal excess muscle — a runner's frame built for efficiency rather than power. Shoulders slightly narrow, defined but not bulky. Every movement calculated.",
+    "hair_color": "Dark brown, graying at temples",
+    "hair_style": "Short, swept back, practical. No styling product. Looks like it's cut every three weeks by the same person.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint amber undertone",
+    "skin_tone": "Warm medium brown with olive undertones, reflecting mixed heritage",
+    "complexion": "Clean-shaven, sharp jawline. Skin shows minimal damage — careful about sun exposure, skincare routine is methodical. A faint stress line between his brows that never fully relaxes. Eyes carry a flat affect, practiced neutrality that reads as either calm or dangerous depending on context.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple to cheekbone — old injury, professionally healed but still visible in certain light",
+      "Two small burn scars on right inner wrist, arranged in a pattern suggesting deliberate placement — military identification burns, now faded to pale silver",
+      "Faint surgical scar along the left side of his neck, barely visible, approximately 8cm long — site of original synthetic lung installation"
+    ],
+    "visible_augmentations": "Chrome plating visible across both forearms in a geometric pattern, extending from wrist to mid-forearm — the subdermal weapon mounts are visible as precise metallic lines beneath the skin, creating a grid pattern. The chrome has a brushed finish, not polished, which reads as professional rather than flashy. Internal air filtration system visible as faint chrome mesh along both sides of the neck, just beneath the skin's surface, with small intake vents. The augmentations are clinical and undisguised.",
+    "posture_movement": "Sits and stands with economical stillness — no fidgeting, no wasted motion. Moves through space like he's mapping exits. When walking, his gait is even and measured, shoulders loose but controlled. His hands rest naturally, fingers slightly curved — ready position. Eye contact is deliberate and unsettling; he holds it a beat too long, processing information. When speaking, his voice remains level; he doesn't use hand gestures.",
+    "clothing_style": "Tier 4 functional — dark synthetic jacket with reinforced seams, black smart-fabric cargo pants with hidden pockets, neutral gray thermal under-layer. Boots are practical work boots, well-maintained, with subtle grip-enhanced soles. No logos or branding that declares affiliation. Everything is durable, replaceable, and dark. In his cover identity, he wears slightly less careful versions of the same aesthetic — still dark, still functional, but with a layer of deliberate mundanity. No jewelry. A faded GLMZ transit pass visible on a lanyard inside his collar."
+  },
+  "image_prompt": "Cyberpunk character portrait of a lean 38-year-old man with dark graying hair, warm medium-brown skin with olive undertones, Turkish-Russian-Ghanaian heritage. Brushed chrome augmentations visible across both forearms in geometric patterns, faint surgical scars on neck and temple. Dark brown eyes with amber undertone, carrying flat affect and careful neutrality. Wearing dark synthetic jacket and tactical cargo pants, minimal branding. Sitting in a Burnside Corridor transit hub, harsh neon-blue and amber lighting casting shadows across his face. Composition: portrait, three-quarter view, symmetrical and clinical framing. Mood: controlled danger, professional efficiency, practiced indifference. Sharp focus on facial features and visible augmentations, moody cyberpunk noir aesthetic with desaturated background, gritty and grounded, no flash or excess, real-world cyberpunk realism --ar 2:3 --v 6"
 }

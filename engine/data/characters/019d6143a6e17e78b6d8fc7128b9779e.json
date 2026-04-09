@@ -183,5 +183,26 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Scandinavian (Norwegian-Igbo diaspora blend)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Angular and lean, all sharp angles and restless energy — narrow shoulders, long limbs, negligible body fat. Built for mobility rather than strength, with the wiry musculature of someone who climbs scaffolding and bends glass tubes for twelve hours a day.",
+    "hair_color": "None — naturally shaved to scalp",
+    "hair_style": "Closely shaved; scalp shows faint natural curl pattern underneath",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown with gold flecks (natural)",
+    "skin_tone": "Light to medium brown with warm undertones — a blend of West African and Scandinavian ancestry, with the kind of complexion that tans easily and holds undertones of gold in certain light",
+    "complexion": "Youthful and fine-featured with high, prominent cheekbones and a sharp jawline. Skin is clear but shows minor scarring from repeated minor burns on the hands and forearms — small white lines near knuckles and wrists. Their face carries an almost perpetual expression of focus mixed with manic enthusiasm.",
+    "distinguishing_marks": [
+      "A faint grid of surgical scars runs along both knuckles from the heat-resistance dermal mod installation.",
+      "Constellation of small burn marks on the inner surface of both forearms, the largest no bigger than a thumbnail, clustered near the wrists — occupational hazard from glass tube work.",
+      "Three thin horizontal scars below the left collarbone, approximately 2cm each, from a shop accident three years ago — barely visible unless skin is bare."
+    ],
+    "visible_augmentations": "The defining feature: a constellation of seven small gold-bioluminescent subdermal implants embedded along the jawline, from below the left ear to the right temple. At rest they are dim, barely perceptible — a faint gold shimmer under the skin. When Sunniva is excited, nervous, or deeply focused, they pulse and glow noticeably gold, creating a soft aurora effect across their jaw. Fingertips show minor heat-resistance texture modification — slightly thickened, with a faint pearlescent undertone.",
+    "posture_movement": "Almost never still. Sunniva's default state is forward-leaning, shoulders slightly hunched. They gesture constantly while talking, hands moving even when idle — touching nearby surfaces, testing their texture, tapping out rhythms. When working, they move with surprising precision and grace despite the overall restlessness. When stationary (rare), they shift weight from foot to foot, fingers drumming or fidgeting.",
+    "clothing_style": "Tier 3-4 working artist aesthetic. Favors oversized, heavily patched cargo pants and button-up work shirts in colors they have personally dyed using neon gas byproduct residue — soft teals, deep magentas, acid greens, burnt purples. The dyes give the fabric an inexplicable faint iridescent shimmer in direct light. Clothes are deliberately worn, torn at seams and hems, with raw patches stitched back with mismatched thread. No visible brand signifiers beyond generic utility gear. Hands are often wrapped in cloth tape or thin leather gloves (protection). No jewelry beyond a faded fabric wristband (probably hand-dyed). Footwear is heavy steel-toed work boots, scuffed and paint-splattered."
+  },
+  "image_prompt": "A 22-year-old nonbinary neon artist with shaved head and light brown skin, sharp angular features and dark eyes. Seven small gold bioluminescent subdermal implants glow faintly along their jawline, pulsing softly. Wearing oversized, heavily patched work shirt in acid magenta with iridescent neon-dye shimmer, cargo pants with raw torn hems, steel-toed work boots. Hands show minor burn scars and are wrapped in cloth tape. In a ground-floor neon fabrication studio at night, surrounded by glowing gas tubes and tools, urban Milwaukee industrial setting, neon signage visible through storefront windows behind. Hyperkinetic energy, forward-leaning posture, fingers mid-gesture. Moody cyberpunk aesthetic with warm neon glow mixing with tungsten work lights. Close-up three-quarter portrait. Shallow depth of field. Cinematic lighting, film noir influence, 2220s DIY artisan culture. --ar 2:3 --v 6"
 }

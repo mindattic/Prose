@@ -248,5 +248,25 @@
     "The Loft",
     "Tessera Corponation"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Eastern European (Serbian)",
+    "height_cm": 163,
+    "weight_kg": 51,
+    "build": "Slight and precise, almost dancer-like in proportion — minimal muscle definition but with the kind of controlled posture that comes from years of fine motor work and extended screen time. Narrow shoulders, fine-boned wrists.",
+    "hair_color": "Black with a subtle warm undertone",
+    "hair_style": "Pulled back in a tight, minimalist bun or twisted knot — functional, never decorative",
+    "hair_length": "Medium (shoulder-length when released, but rarely is)",
+    "eye_color": "Chromatic cycling implant — natural base is dark brown, now shifts through spectrum: amber, jade, violet, rose, back to amber in slow 8-second cycles",
+    "skin_tone": "Warm medium brown with slight golden undertone; noticeably pale from indoor living, lacks the sun-darkened quality of field workers or outdoor tier residents",
+    "complexion": "Fine-featured with high cheekbones and a sharp jawline. Skin is clear but has the slightly dehydrated quality of someone who forgets to eat during deep work. Minimal makeup except occasional kohl-line enhancement of the cycling eye effect. Expression is typically focused inward, mouth set in neutral concentration.",
+    "distinguishing_marks": [
+      "Faint grid-pattern scar tissue on both inner wrists where neural AR interface was calibrated — barely visible unless skin is stretched, looks like small rectangular scars in alignment",
+      "Hairline micro-abrasions on right temple from VR headset prolonged use — appears as a thin, pale line running three inches back from hairline"
+    ],
+    "visible_augmentations": "Chromatic eye implants are the primary visible marker — the slow color cycling is immediately noticeable and disquieting to watch. Occasionally wears sleek haptic feedback gloves (black textile with subtle LED grid on palm surface for AR layer visualization) pushed up to elbows. No visible chrome or subdermal plating; all other augmentations are subcutaneous or internal.",
+    "posture_movement": "Moves with economical precision — no wasted motion, but not rigid. Frequently still except for her hands, which are in constant micromovements: fingers twitching through gestural AR commands, fidgeting with fabric, tracing invisible patterns in the air. When speaking, body goes very still; when working, she's in perpetual micro-adjustment. Tends to lean slightly forward when concentrating, head tilted as if reading text only she can see.",
+    "clothing_style": "Corporate-minimalist holdover from Tessera years — tailored but understated. Favors monochrome or very limited palettes: charcoal, black, off-white. Clean lines, expensive fabrics (synthetic micro-weave blends), almost austere. Typical outfit: fitted black turtle-neck, high-waisted grey tactical pants with discrete tech pockets, matte black ankle boots with subtle LED seams. Occasional piece of jewelry is usually geometric and structural rather than decorative — a stainless steel bangle, a capsule pendant. No logos or tier markers. The wardrobe reads as Tier 1-2 professional despite her current Tier 3-4 neighborhood status; she hasn't updated it because it's armor against the anxiety of visibility."
+  },
+  "image_prompt": "Cyberpunk portrait of a 31-year-old Black woman of West African and Eastern European heritage, slight athletic build, hair pulled back in tight bun. Her eyes are the focal point — chromatic implants cycling through amber and violet in a soft, hypnotic glow. Indoor pale complexion with sharp cheekbones and neutral expression. She wears a fitted black turtleneck and tailored grey tactical pants, minimalist corporate aesthetic slightly incongruous with her surroundings. Her hands are positioned mid-gesture, fingers twitching through invisible AR commands, wearing sleek black haptic feedback gloves with subtle LED gridlines on palms. Background is softly blurred holographic display screens in purples and teals casting ambient light on her face. The image feels introspective and tech-intimate, shot in close profile or three-quarter view. Moody, cool color temperature with warm LED accents. High-end digital art, neon-adjacent lighting, cinematic depth of field. --ar 2:3 --v 6"
 }

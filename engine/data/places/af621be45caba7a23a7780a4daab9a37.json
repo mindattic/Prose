@@ -56,8 +56,16 @@
     "Freelancers collecting colony intelligence over lantern light and good fish"
   ],
   "notable_locations": [
-    "Priya's kitchen — visible from the bar, the source of Old Harbor's best food",
-    "The colony table — the large corner table where flotilla traders gather and share lake news"
+    {
+      "name": "Priya's kitchen",
+      "description": "visible from the bar, the source of Old Harbor's best food",
+      "tags": []
+    },
+    {
+      "name": "The colony table",
+      "description": "the large corner table where flotilla traders gather and share lake news",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.8535,

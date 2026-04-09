@@ -12,7 +12,7 @@
   "role": "Bounty Compliance Officer, Tessera Compliance Bureau",
   "age": 36,
   "status": "active",
-  "location": "Bridgepoint, Meridian 88, near Damen and Armitage",
+  "location": "Bridgepoint, GLMZ, near Damen and Armitage",
   "description": "Ife is the kind of person a room notices before they understand why. They're medium height with a runner's build that belies the considerable strength in their frame, skin a deep blue-black with a faint natural luminescence that comes from a bioluminescent gene sequence that runs in their Congolese maternal line — not a modification, just ancestry, which they find both amusing and a little irritating when people ask. Their hair is natural, enormous, worn in a compressed crown of twist-outs that they maintain with obsessive care. Their eyes are custom: vertical pupils in bright gold, a modification they got at twenty-five after their first successful high-value compliance and haven't regretted.\n\nIfe works for Tessera's Compliance Bureau tracking down debt defaulters, contract violators, and the occasional individual who has genuinely done something Tessera considers criminal — a distinction that gets blurry in ways they've learned not to look at too closely. They are not violent by preference but are extremely capable of it and have strong opinions about doing it correctly. They carry a practiced informality that puts subjects at ease right up until it doesn't need to anymore. Off-hours they are genuinely warm and sociable, a regular at a Bridgepoint bar called the Gradual, where they know the bartender's children's names and argue about transit football with strangers. The split between these two selves is not a wound — they've made their peace with it — but it is wide.",
   "psychology": {
     "facet_weights": {
@@ -251,7 +251,7 @@
   ],
   "related_entities": [
     "Bridgepoint",
-    "Meridian 88",
+    "GLMZ",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Irkalla",
     "Volkov-Saito Precision VS-10 Match 'Deadlock'",
@@ -261,5 +261,25 @@
     "Pellucid Systems",
     "Gold"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Congolese / Russian (Caucasian)",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and muscular with the functional strength of a distance runner — compact frame with defined shoulders and forearms, no excess mass, built for sustained physical capability rather than explosive power",
+    "hair_color": "Natural black with faint auburn undertones",
+    "hair_style": "Compressed crown of twist-outs, meticulously maintained with visible sectioning and consistent tension",
+    "hair_length": "Medium (approximately 15cm length when uncompressed)",
+    "eye_color": "Custom vertical-pupil irises in bright gold with enhanced low-light sensitivity",
+    "skin_tone": "Deep blue-black with a faint natural luminescence visible in dim lighting — a hereditary bioluminescent trait from the Congolese maternal line",
+    "complexion": "Smooth, well-maintained skin with minimal scarring; sharp cheekbones and a defined jawline; eyebrows kept neat and natural; slight luminescent shimmer becomes more pronounced in low-light environments, most noticeable along the collarbone and temples",
+    "distinguishing_marks": [
+      "Small scar along the left temple, approximately 2cm, consistent with old blunt-force trauma — barely visible due to skin tone",
+      "Faint linear scarring on both palms and inner forearms from shock-capable grip enhancement installation sites, now mostly healed but perceptible under direct light"
+    ],
+    "visible_augmentations": "Vertical-pupil gold irises are immediately striking and distinctly non-human; subdermal GPS transponder is not visible but creates a subtle raised outline on the upper right shoulder blade beneath clothing; shock-capable palms show minor scarring but are otherwise invisible until activated",
+    "posture_movement": "Composed and economical in movement; they carry themselves with the relaxed alertness of someone trained in physical compliance work — shoulders slightly back, weight balanced on the balls of their feet even when standing still; their gait is measured and controlled but not rigid; when engaging socially they lean in slightly and their posture softens noticeably",
+    "clothing_style": "Tier 3 professional-casual with clear compliance bureau identity: fitted charcoal or black tactical trousers with reinforced seams and cargo pockets; fitted synthetic blend shirts in muted tones (navy, graphite, deep green) that accommodate the subdermal implants without restriction; a worn leather or synthetic-leather jacket in black as their signature piece; boots are practical and broken in, typically combat-style or reinforced work boots; minimal jewelry beyond a singular band on the right index finger (Tessera brass, agency marking); grooming is impeccable despite the utilitarian aesthetic — they take care of their appearance as a form of self-respect"
+  },
+  "image_prompt": "Cyberpunk character portrait of Ife Nzinga-Torghayev, a 36-year-old nonbinary compliance officer with deep blue-black skin showing subtle bioluminescent shimmer along the collarbone and shoulders, striking vertical-pupil gold irises with low-light enhancement, natural hair in an immaculate crown of twist-outs. Medium height with a lean, muscular runner's build. Wearing fitted black tactical trousers, a charcoal fitted synthetic shirt, and a worn black leather jacket. Standing in a neutral pose with composed, alert posture. Background is a Bridgepoint street at dusk, rain-slicked pavement reflecting neon signs, moody ambient lighting with cool blues and warm amber streetlights. Expression is calm and practiced, the kind of professional composure that masks considerable capability. Technical: high contrast lighting, cyberpunk aesthetic, photorealistic, detailed facial features, bioluminescence visible in shadows, shot at 2:3 aspect ratio --ar 2:3 --v 6"
 }

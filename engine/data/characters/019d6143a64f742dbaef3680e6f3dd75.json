@@ -257,5 +257,25 @@
     "Harrow & The Bone Meridian",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Icelandic / Yoruba, three generations Meridian Stockyard",
+    "height_cm": 185,
+    "weight_kg": 89,
+    "build": "Wide through shoulders and chest, lean-muscled through the core, structured like load-bearing architecture. No excess; every kilogram serves function. Hands and forearms show working density.",
+    "hair_color": "Black at roots, bleached white from mid-length to tips",
+    "hair_style": "Single dense column braided or twisted, worn at the back of the skull — Harrow Brothers crew identifier",
+    "hair_length": "Long (shoulder-blade length when unbound)",
+    "eye_color": "Light gray-blue with undertone warmth from Yoruba heritage",
+    "skin_tone": "Deep reddish-brown, high coloring in the cheeks and temples",
+    "complexion": "Long face with defined jawline and prominent cheekbones. Skin weathered but clean, no acne scarring. Expression neutral at rest — the kind of stillness that suggests a decision already made. Minimal facial hair, kept trimmed close.",
+    "distinguishing_marks": [
+      "Small bioluminescent tattoo on the inside of right wrist: heron shape in amber bio-ink, pulses faintly when calm, darkens when agitated — emotional indicator.",
+      "Faint white scar tissue across left knuckles where ceramic implants were installed post-fracture."
+    ],
+    "visible_augmentations": "Left hand: two ceramic knuckle reinforcements (visible as slightly off-color joints, seamless but noticeable in close proximity). Subdermal impact mesh across ribs is invisible beneath clothing but creates subtle contour difference in torso definition under tight clothing. No chrome, no LED modifications — deliberately low-profile.",
+    "posture_movement": "Moves with economic efficiency, no wasted motion. Shoulders squared but not aggressive. Head level, eyes tracking but not scanning — suggests threat assessment is passive, constant. Stillness is their default state; movement is deliberate. Hands stay relaxed and visible, never fidgeting.",
+    "clothing_style": "Tier 3-4 working crew aesthetic: well-maintained dark synthleather jacket with Harrow Brothers insignia (understated), charcoal thermal undershirt, cargo pants in matte black with functional pockets, steel-toed work boots broken in but not scuffed. No logos, no ostentatious chrome. Clothing is armor and uniform both. One small amber knot-charm hanging from left shoulder strap — crew marker."
+  },
+  "image_prompt": "cyberpunk character portrait of a nonbinary enforcement specialist, age 27, Icelandic-Yoruba heritage, deep reddish-brown skin tone, light gray-blue eyes, long black hair bleached white at tips worn in a single thick column down the back of the head. Wide-shouldered, lean-muscled build, 185cm tall, standing with deliberate stillness and coiled readiness. Wearing dark synthleather crew jacket with subtle insignia, charcoal thermal shirt, black cargo pants, steel-toed boots. Small amber bioluminescent heron tattoo glowing faintly on inner right wrist. Left hand shows ceramic knuckle reinforcements. Expression neutral, eyes suggest a decision already made. Stockyard industrial setting, dim neon-tinged ambient light, shallow depth of field, photorealistic, character study portrait, moody lighting that emphasizes the stillness, no smile, --ar 2:3 --v 6"
 }

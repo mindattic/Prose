@@ -202,5 +202,26 @@
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "Slagworks Industrial"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Colombian / East Asian — mixed Andean and Southeast Asian lineage",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Wiry and compact, all lean muscle and restless energy. Shoulders slightly rounded from hunching over workbenches. Hands disproportionately strong despite small frame.",
+    "hair_color": "Black with iron-grey streaks at temples",
+    "hair_style": "Pulled back in a perpetually messy bun or loose braid, often with strands escaping",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown with subtle golden undertone from optical augmentation circuitry visible at the iris edges",
+    "skin_tone": "Warm tan with olive undertones — burnished by warehouse work under full-spectrum lamps",
+    "complexion": "Fine-featured, sharp cheekbones, angular jaw. Perpetually tired around the eyes. Ink stains on her fingertips and occasional smudges on her face. A small burn scar on her left temple from soldering work, barely visible. Calluses on her fingertips despite augmentations.",
+    "distinguishing_marks": [
+      "Linear scar along the inside of her right wrist — quarter-inch long, precise and surgical, from the data-interface jack installation",
+      "Faded tattoo on her left forearm: circuit board schematic in minimalist lines, pre-collapse design",
+      "Burn mark on her left temple, roughly coin-sized, from a soldering accident in her twenties"
+    ],
+    "visible_augmentations": "Magnification goggles pushed perpetually up on her forehead (prescription-grade optics with spectrum overlay capability). Micro-manipulation implants visible as slight metallic sheening under the skin of her fingertips and the first knuckle of each hand. The data-interface jack is hidden beneath her left wrist, barely perceptible under clothing but occasionally visible as a faint port outline when she rolls her sleeves.",
+    "posture_movement": "Perpetually bent forward slightly, as if drawn toward whatever task commands her focus. Fidgeting hands — always adjusting something, turning a component over, tapping against surfaces. Walks quickly and without flourish. Sits cross-legged on her workbench as often as in chairs. Eyes dart constantly, cataloguing details.",
+    "clothing_style": "Utilitarian Tier 3 salvage-worker aesthetic. Multi-pocket cargo vests in weathered grey or black over simple undershirts. Worn synthetic pants with reinforced knees and thighs. Steel-toed boots scuffed from warehouse floors. Magnification goggles on her forehead. Fingerless work gloves in supple synthetic leather. A faded pre-collapse Motorola hoodie worn under her vest on cold days. No jewelry except a battered stainless steel watch from the Circuit days that she checks compulsively."
+  },
+  "image_prompt": "Cyberpunk technical analyst, 30s, petite Colombian-East Asian woman with dark hair streaked grey, sharp features, warm tan skin. Wearing weathered multi-pocket cargo vest over faded undershirt, steel-toed boots, fingerless work gloves. Magnification goggles pushed up on forehead with subtle LED rim-lighting. Ink-stained fingertips with visible metallic sheen of micro-manipulation implants. Hunched over workbench covered in corroded pre-collapse electronics, circuit boards, water-damaged servers, data capsules. Warehouse setting with full-spectrum overhead lamps casting precise shadows, amber and cool white light mixing. Dim industrial background, metal shelving stacked with salvage. Hyperdetailed, gritty realism, moody warehouse atmosphere, focus on hands and intricate component work. Film noir color grade with tech highlights. --ar 2:3 --v 6"
 }

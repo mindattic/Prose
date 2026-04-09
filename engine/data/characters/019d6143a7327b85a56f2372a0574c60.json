@@ -237,5 +237,27 @@
     "Nightlight",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South Slavic / South Asian (Draganović / Tamboli)",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thick through the chest and abdomen, soft rather than muscular—the build of a man who has stopped moving fast and started thinking deeply. No visible weakness, but no suggestion of physical threat.",
+    "hair_color": "Black with thick silver streaks",
+    "hair_style": "Close-cropped, neat, combed back from his forehead",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, yellowed slightly at the sclera from decades of indoor work and ambient GLMZ air",
+    "skin_tone": "Warm brown with a slightly weathered undertone—the complexion of someone who has spent two decades under barge lights and occasional sunlight",
+    "complexion": "Deeply lined around the eyes and mouth, suggesting patient observation rather than age alone. His nose is visibly broken—set crooked twice, giving his face an asymmetrical, lived-in quality. Stubble visible most days. Warm and grandfatherly rather than threatening.",
+    "distinguishing_marks": [
+      "Crooked nose, broken twice and reset once, sits slightly off-center to his left",
+      "Fine network of lines radiating from the corners of both eyes, deepest on the left",
+      "Faint scar tissue on the knuckles of his right hand, old and pale",
+      "Reading glasses worn on a thin chain around his neck, perpetually perched on his nose"
+    ],
+    "visible_augmentations": "Subdermal ledger implant visible only when activated—a faint green holographic glow emanates from the skin of his left palm when in use, showing columns of numbers and account names in miniature. At rest, only a barely-visible network of thin lines beneath the skin suggests the implant's presence.",
+    "posture_movement": "Moves slowly and deliberately, never rushing. He leans against counters and walls often, conserving energy. His hands gesture with open-palmed calm—nothing quick or aggressive. He sits more than he stands. His gaze is patient and rests on people's faces for uncomfortable lengths of time, as if reading ledger entries written on their skin.",
+    "clothing_style": "Tier 4 working-class, deliberately underdressed for his wealth and power. Mended cardigans in faded jewel tones or grey, always one pocket stuffed with hard candies in paper wrappers. Laundered button-ups beneath, sleeves rolled to the elbows. Well-fitted but not expensive trousers, often with a patched pocket. Worn leather slippers indoors at Tamboli's Provisions. A battered wristwatch—mechanical, not smart—wound by hand each morning. No jewelry except a tarnished silver wedding band."
+  },
+  "image_prompt": "A 52-year-old South Slavic-South Asian man with salt-and-pepper close-cropped black hair and a deeply lined face, warm brown skin weathered by decades indoors. Broad build, soft through the middle, wearing a faded cardigan over a rolled-sleeve shirt, reading glasses on a chain resting on a crooked nose. Standing in the dim amber lighting of a converted barge interior, shelves of provisions behind him. His left palm glows faintly with green holographic numbers—a subdermal ledger implant. Patient, grandfatherly expression. Warm fluorescent barge-light. Cyberpunk but grounded, film noir sensibility, no chrome or flash, only the quiet menace of a man who remembers everything. 8K detail, photorealistic, moody amber and shadow lighting --ar 2:3 --v 6"
 }

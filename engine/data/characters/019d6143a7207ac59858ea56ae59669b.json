@@ -240,5 +240,25 @@
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "Aleut Corporation"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Aleut / Ghanaian",
+    "height_cm": 173,
+    "weight_kg": 62,
+    "build": "Lean and wiry with minimal muscle mass — the build of someone who runs constantly rather than trains deliberately. Long-limbed, narrow shoulders, defined but not muscular forearms from years of carrying ledgers and cash.",
+    "hair_color": "Black, naturally straight",
+    "hair_style": "Grown out and unstyled, falls past the collar; appears unkempt by Shallowgrave standards but gives an impression of deliberate indifference rather than neglect",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, alert and constantly moving",
+    "skin_tone": "Warm medium brown with significant vitiligo — depigmented patches across the jawline, extending down the right side of the neck and scattered across the left cheekbone",
+    "complexion": "Young face with sharp cheekbones (maternal Aleut ancestry), prominent forehead (paternal Ghanaian), habitually tense jaw from constant talking and mental calculation. Skin is clear except for the vitiligo; he has chosen not to treat it, instead emphasizing the edges with bioluminescent edge-ink.",
+    "distinguishing_marks": [
+      "Bioluminescent blue-white edge-ink outlining vitiligo patches on the jawline and neck — glows faintly in low light, appears as deliberate cosmetic choice",
+      "Scattered vitiligo depigmentation across right neck, left cheekbone, and jaw in irregular patches"
+    ],
+    "visible_augmentations": "Bioluminescent edge-ink cosmetic modification only. No visible cybernetic implants or chrome. Subcutaneous implants absent due to economic constraints.",
+    "posture_movement": "Perpetually in motion — fidgets with fingers, shifts weight foot to foot, speaks with hand gestures that accompany rapid-fire arithmetic. Moves with practiced efficiency through crowded streets, eyes constantly scanning for customers and threats. Sits rarely and never for long. Body language reads as high-strung and caffeinated even when he is neither.",
+    "clothing_style": "Tier 3-4 street wear — functional, mixed-brand, worn layers. Typically wears a faded synthetic overshirt (often navy or charcoal) over a fitted mesh undershirt, cargo pants with deep pockets for ledgers and cash, scuffed synthetic boots designed for running. Accessories include a cheap digital wrist display for time-keeping and odds calculation, a worn canvas messenger bag with fraying straps, and occasionally a thin silver chain (cheap, non-functional) around his neck. No corporate branding. Clothes show signs of heavy use — worn cuffs, faded panels, patched seams — but are clean. Grooming is minimal; he shaves irregularly."
+  },
+  "image_prompt": "19-year-old male with Aleut and Ghanaian mixed heritage, lean wiry build, long unstyled black hair past collar, warm medium brown skin with deliberate blue-white bioluminescent edge-ink highlighting vitiligo patches on neck and jaw. Sharp high cheekbones, alert dark eyes, tense expression. Wearing faded navy synthetic overshirt over mesh undershirt, cargo pants with deep pockets, scuffed boots. Hands gesturing mid-speech, fidgeting. Standing in a neon-lit Shallowgrave street market, surrounded by betting boards and crowded transit stops, warm practical cyberpunk streetwear aesthetic. Fast-paced nervous energy, constant motion. Moody orange and blue neon street lighting, shallow depth of field. Cinematic photorealism, gritty urban cyberpunk, high contrast. --ar 2:3 --v 6"
 }

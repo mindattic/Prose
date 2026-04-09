@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Chicago Ave",
-  "description": "Sagyn Osei-Petrov is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 28, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a data thief out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented data thief in Meridian 88, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Sagyn Osei-Petrov is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 28, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a data thief out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented data thief in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -43,7 +43,7 @@
       "Assumes everyone has an angle because they always have an angle",
       "Cannot accept help without interpreting it as leverage"
     ],
-    "secret": "Sagyn Osei-Petrov sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Sagyn Osei-Petrov sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
@@ -276,9 +276,31 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Ghanaian-Russian diaspora)",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Lean and long-limbed with minimal bulk, built for mobility rather than strength. Corded muscle from consistent physical conditioning; chest and torso show the angular geometry of someone who moves deliberately and efficiently.",
+    "hair_color": "Dark brown with a subtle grey undertone from neural stress",
+    "hair_style": "Kept short and precise, faded sides with slightly longer crown; maintained for quick field grooming and minimal snag risk",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural — one iris shows faint silver threading at 8 o'clock from neural jack proximity",
+    "skin_tone": "Medium brown with warm undertones, East African warmth layered over Slavic undertones",
+    "complexion": "Clean-shaven, lean-faced with high cheekbones and a pronounced jawline. Skin shows the pale tightness of someone who lives under artificial light; small network of fine scars at temples from early augmentation work. Dark circles suggest chronic sleep deficit.",
+    "distinguishing_marks": [
+      "Surgical scar running 12cm vertically along the right side of his ribcage, thick and pale — lung replacement incision, visible when shirtless",
+      "Neural jack port at base of skull, visible when hair is pulled back: raised circular scar with faint chrome microport flange, approximately 1.5cm diameter",
+      "Thin white burn line across left forearm (inner wrist to elbow) — old industrial accident or early runner mishap, almost invisible unless you know where to look",
+      "Small tattoo on right collarbone: circuit-board pattern in dull silver ink, runner ID marker"
+    ],
+    "visible_augmentations": "Synthetic lungs visible through translucent dermal panels on upper torso — faint blue bioluminescent indicators pulse with breathing rhythm. Chrome is intentional, not hidden: the filtration system shows as iridescent membrane visible through carefully maintained skin integrity. Neural interface jack at skull base creates a slight raised area at the nape, chrome microport gleaming under light. No facial chrome — he keeps the soft features as psychological asset.",
+    "posture_movement": "Moves with calculated precision, every motion economical and reversible. Stands with weight distributed evenly, ready to shift direction instantly. Head positioned to keep both ears clear — auditory awareness is tactical. Breathing patterns visible in chest movement due to synthetic lungs; no unconscious fidgeting, no wasted gesture. When at rest, appears coiled rather than relaxed.",
+    "clothing_style": "Tier 3-4 runner aesthetic with corporate-side maintenance. Dark fitted synthweave jacket (matte grey, reinforced seams) over a black responsive-weave shirt that dampens biosignature. Custom cargo pants with sealed pockets and internal organizing webbing — urban grey. Nondescript ankle boots with grip soles and hidden reinforcement. Minimal jewelry except a worn silver signet ring (family, kept as talisman). No corporate logos or affiliations visible — deliberately nondescript. Clothes show signs of field use but meticulous maintenance. Small messenger bag (black leather-composite hybrid) worn crossbody, positioned for quick access and concealment."
+  },
+  "image_prompt": "Portrait of a 28-year-old tall lean man with West African and Eastern European features, dark brown skin, close-cropped dark hair with grey threading, high cheekbones. Cyberpunk 2226. Visible iridescent bioluminescent synthetic lungs glowing faint blue through translucent chest panels, chrome neural interface jack at base of skull. Wearing dark grey synthweave tactical jacket and black responsive-weave shirt, urban grey cargo pants. Serious focused expression, standing with coiled readiness against neon-lit Spires residential tower window background. Cool blue-white LED ambient lighting, slight glow from chest augmentations. Photorealistic, cinematic depth, gritty cyberpunk aesthetic, character portrait --ar 2:3 --v 6"
 }

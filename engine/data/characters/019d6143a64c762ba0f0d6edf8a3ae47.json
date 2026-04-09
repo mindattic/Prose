@@ -190,5 +190,25 @@
     "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
     "Vantablack PD-8 'Whistle'"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "French / Northern European (possibly Dutch or Belgian)",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and athletic — defined shoulders and arms from daily boxing, minimal body fat, posture that communicates precision and control",
+    "hair_color": "Dark brown, professionally maintained",
+    "hair_style": "Shoulder-length, usually worn in a controlled style — neat bun for corporate work, loose but composed for social operations",
+    "hair_length": "Medium",
+    "eye_color": "Pale gray-blue, with faint luminescent grid pattern visible in low light from micro-expression overlay implant",
+    "skin_tone": "Fair complexion with warm undertones, unmarked and carefully maintained",
+    "complexion": "Sharp cheekbones, defined jawline, minimal makeup outside of corporate settings — foundation and neutral tones only. Skin is clear and shows no signs of aging damage. Resting expression is neutral and difficult to read; smile is precise and deployed intentionally.",
+    "distinguishing_marks": [
+      "Faint scar along the left temple hairline, approximately 2cm, from a Cascade internal security incident — visible only if hair is pulled back",
+      "Small surgical scar on the inner right wrist, barely visible, from pheromone modulator implantation"
+    ],
+    "visible_augmentations": "Micro-expression overlay creates a barely perceptible shimmer across the eyes in direct light — a thin grid pattern visible for 1-2 seconds when she focuses intently on someone's face. No other visible augmentations; pheromone modulator and eidetic memory are completely subcutaneous.",
+    "posture_movement": "Sits and stands with deliberate alignment — shoulders back, spine neutral, hands always visible and controlled. Movements are economical and precise; she does not fidget or gesture unnecessarily. When listening, her gaze tracks micro-movements in the other person's face with an intensity that can feel unsettling. When speaking, her voice is modulated for the persona in use — corporate warmth, clinical precision, or calculated vulnerability.",
+    "clothing_style": "Strictly Tier 1-2 corporate aesthetic. Favors tailored blazers (Helix, Nexus Brand), neutral color palettes (charcoal, navy, ivory, black), fitted trousers, and minimal jewelry — a platinum wedding band (non-functional prop), small earrings. Shoes are always professional and worn once. Under different cover identities she adjusts: a recruiter might wear slightly softer fabrics and brand-conscious pieces; a compliance auditor would layer in technical-adjacent accessories. Off-duty she wears fitted athletic wear (Cascade-era tech fabric) for boxing. Never appears disheveled; appearance management is non-negotiable."
+  },
+  "image_prompt": "Portrait of a 39-year-old woman with sharp European features, pale gray-blue eyes with a faint luminescent grid overlay, dark brown shoulder-length hair styled professionally. Lean athletic build, fair skin. Wearing a tailored charcoal Helix blazer over an ivory shirt, minimal platinum jewelry. Sitting in a high-rise corporate office with floor-to-ceiling windows behind her showing the GLMZ skyline at dusk. Her expression is composed and evaluative, slightly unsettling. Soft overhead lighting casting subtle shadows across her face. Cyberpunk noir, hyper-realistic, 8k, professional portrait style, cool color grading with desaturated blues and grays. --ar 2:3 --v 6"
 }

@@ -238,5 +238,26 @@
     "Kenwood Gate",
     "Zheng-dao Bioelectric"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Armenian",
+    "height_cm": 167,
+    "weight_kg": 62,
+    "build": "Lean and muscular through the forearms and shoulders from years of manual cargo handling; core strength that reads as functional rather than aesthetic. Slight asymmetry in right shoulder from repetitive strain.",
+    "hair_color": "Natural dark brown with temperature-responsive geneware color-shift tips (deep teal when cold, burnt orange when warm)",
+    "hair_style": "Naturally coiled, worn pulled back and secured with three mismatched metal clips (brass, steel, aluminum) — practical rather than intentional",
+    "hair_length": "Medium (shoulder-length when down, pinned above shoulders daily)",
+    "eye_color": "Dark brown, alert and calculating",
+    "skin_tone": "Warm medium brown with even complexion",
+    "complexion": "Minimal makeup, clear skin with visible fatigue lines around eyes from early mornings and chronic sleep deficit. Hands show calluses and faint scanner-burn marks from haptic glove use. Functional grooming — showered but not primped.",
+    "distinguishing_marks": [
+      "Faint circular burn scar on left palm from warehouse equipment malfunction seven years ago",
+      "Rope-like scar tissue along right inner forearm from cargo handling accident at age 28",
+      "Small tattoo on right wrist: simplified logistics diagram in silver ink, self-done at midnight after a breakthrough solution to a routing problem"
+    ],
+    "visible_augmentations": "Warehouse-grade haptic gloves on both hands — tactical grey with integrated haptic feedback nodes visible on palms and fingertips, issued by Zheng-Dao. Basic neural link port visible as subtle subdermal seam at base of skull, kept scrupulously clean. Color-shift hair tips naturally visible.",
+    "posture_movement": "Efficient, forward-leaning gait. Shoulders perpetually tense. Hands in constant subtle motion — fingers moving through mental logistics calculations even at rest. Sits with one foot on the ground, ready to move. Makes direct eye contact with authority figures but breaks it under fatigue.",
+    "clothing_style": "Zheng-Dao warehouse issue: grey and charcoal tactical pants with reinforced knee panels and cargo pockets, paired with fitted black synthetic turtleneck or grey performance shirt. Lightweight insulated vest in company grey-blue. Steel-toed boots (practical, not fashionable). No jewelry except the neural link port and the three hair clips. Occasional Φ50-80 smart-fabric jacket with temperature regulation that she toggles on cold dock runs. Tier 3-4 working class: functional, branded, worn but maintained."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 34-year-old woman of West African-Armenian heritage, medium height with warm brown skin and alert dark eyes. Natural dark coiled hair pinned back with three mismatched metal clips; the tips of her hair glow deep teal and burnt orange from temperature-responsive geneware. Lean, muscular build from years of cargo work, visible calluses on hands. Wearing grey warehouse-issue tactical pants and black turtleneck under a company-grey insulated vest. Both hands display tactical haptic gloves with visible feedback nodes. Faint burn scars on left palm and rope-like scar tissue on right forearm. Subtle neural link port visible at base of skull. Exhausted but competent expression. Standing in front of a dimly-lit warehouse interior with blue-grey cargo containers and overhead lighting. Industrial, functional aesthetic. Tight framing on face and torso. Cyberpunk noir lighting with cool color temperature. Gritty, realistic, no enhancement --ar 2:3 --v 6"
 }

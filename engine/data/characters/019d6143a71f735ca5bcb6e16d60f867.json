@@ -157,7 +157,7 @@
     "strengths": [
       "physical endurance",
       "expert marksman",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "chronic insomnia affecting long-term performance",
@@ -282,5 +282,27 @@
     "Burden of Longitude",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Spanish / Russian / West African",
+    "height_cm": 175,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and heavy-set, muscular without being lean — she carries weight like structural integrity. Thick through the torso and legs, built for impact and stability rather than speed.",
+    "hair_color": "Dark brown with premature silver threading at the temples",
+    "hair_style": "Pulled back tight in a functional braid, kept short enough to not catch",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown with slight heterochromia — right eye shows minor chromatic aberration from older optic nerve work",
+    "skin_tone": "Warm medium brown with olive undertones",
+    "complexion": "Strong, angular face with a prominent jaw and high cheekbones. Minimal grooming — functional rather than decorative. Skin shows the texture of someone who has spent time under poor lighting and worse conditions; a few hypopigmented scars from healed burns.",
+    "distinguishing_marks": [
+      "Thin linear scar running from left cheekbone to jaw angle — clean cut, professional work",
+      "Burn scar on right forearm, roughly 8cm across, partially obscured by tactical sleeve when worn",
+      "Tattoo on inner left wrist: vertical QUANTA symbol (Φ) in black ink, personal marker",
+      "Pale scar tissue visible at the base of skull where the neural jack was installed — not fully healed, deliberately left visible"
+    ],
+    "visible_augmentations": "Vocal modulator unit mounted at the right side of her throat — matte black chrome with recessed panel lines, no attempt at concealment. Faint scarring around the installation site. Neural interface jack at base of skull is visible when hair is pulled back — dark titanium-alloy insertion point with barely-healed tissue around it, still showing minor inflammation.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion, every shift of weight calculated. Stands with weight forward, ready to move or strike. Rests with shoulders slightly tense. Maintains baseline situational awareness even in downtime; her eyes catalog exits and threats reflexively.",
+    "clothing_style": "Tier 3-4 practical combat wear — reinforced synthdenim jacket in charcoal with tactical pockets, worn over a high-collar undershirt that conceals the throat modulator slightly. Cargo pants in matte black with cargo webbing. Scuffed but maintained combat boots with steel toes. No logos or affiliation markers. Wears a worn leather jacket over everything on contracts — scarred, oil-stained, anonymous. Off-contract, she wears cheaper neutral clothing from discount retailers to blend into Tier 4 pedestrian spaces."
+  },
+  "image_prompt": "Cyberpunk street samurai, 35-year-old woman with Spanish-Russian-West African features, dark brown hair pulled tight in functional braid, angular face with strong jaw, warm medium brown skin with olive undertones. Visible chrome vocal modulator unit at throat in matte black, neural interface jack scar at base of skull. Broad-shouldered, heavy-set muscular build, approximately 175cm tall. Wearing reinforced black synthwear, tactical jacket, worn leather combat gear. Dark eyes with steely, alert expression. Base of skull scarring visible, minor inflammation. Standing in dim warehouse lighting with overhead neon casting sharp shadows, cyberpunk Tier 3 environment. Gritty, worn aesthetic. Professional, dangerous, no-nonsense demeanor. Photorealistic, detailed. --ar 2:3 --v 6"
 }

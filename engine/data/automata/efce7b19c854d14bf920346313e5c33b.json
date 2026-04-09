@@ -8,7 +8,7 @@
     "The Plumber"
   ],
   "manufacturer": "Wattson Smart Home",
-  "description": "The EN-8 was originally designed as an infrastructure maintenance drone — a small, eight-legged platform capable of traversing pipe systems, conduit networks, and ventilation shafts to perform inspection and minor repair tasks in spaces too confined for human workers. Ouroboros Energy deployed thousands of them across Meridian 88's power grid infrastructure. Then someone in the defense division realized that a drone designed to navigate inside the walls of buildings could be trivially weaponized.\n\nThe combat variant replaces the repair toolkit with a shaped thermite charge capable of cutting through structural steel, a nerve agent dispersal capsule rated for 40 cubic meters of enclosed space, or a simple incendiary package. The unit enters a building through the utility infrastructure — water pipes, electrical conduits, ventilation — navigates to a designated location using its memorized facility map, and detonates. The target never sees it. They may hear faint scratching in the walls in the minutes before detonation. They may not.\n\nOuroboros officially denies the combat variant exists. Ouroboros unofficially sells them to anyone with Tier 4 clearance and a willingness to sign documentation that contains the phrase 'infrastructure stress testing equipment.' The maintenance variant remains in widespread legitimate use, which means every building in Meridian 88 already has pathways designed for exactly this type of platform to traverse.",
+  "description": "The EN-8 was originally designed as an infrastructure maintenance drone — a small, eight-legged platform capable of traversing pipe systems, conduit networks, and ventilation shafts to perform inspection and minor repair tasks in spaces too confined for human workers. Ouroboros Energy deployed thousands of them across GLMZ's power grid infrastructure. Then someone in the defense division realized that a drone designed to navigate inside the walls of buildings could be trivially weaponized.\n\nThe combat variant replaces the repair toolkit with a shaped thermite charge capable of cutting through structural steel, a nerve agent dispersal capsule rated for 40 cubic meters of enclosed space, or a simple incendiary package. The unit enters a building through the utility infrastructure — water pipes, electrical conduits, ventilation — navigates to a designated location using its memorized facility map, and detonates. The target never sees it. They may hear faint scratching in the walls in the minutes before detonation. They may not.\n\nOuroboros officially denies the combat variant exists. Ouroboros unofficially sells them to anyone with Tier 4 clearance and a willingness to sign documentation that contains the phrase 'infrastructure stress testing equipment.' The maintenance variant remains in widespread legitimate use, which means every building in GLMZ already has pathways designed for exactly this type of platform to traverse.",
   "tier_availability": "Tier 4+ (combat variant); Tier 2+ (maintenance variant)",
   "legality": "Maintenance variant: Licensed. Combat variant: Does not officially exist",
   "autonomy_level": "Fully autonomous — waypoint navigation with terminal action",
@@ -27,14 +27,14 @@
   ],
   "countermeasures": "Pipe-interior motion sensors can detect traversal. Acoustic monitoring of utility infrastructure reveals characteristic leg-contact patterns. Utility access point sealing prevents entry but also blocks legitimate maintenance drones.",
   "known_deployments": [
-    "Thousands of maintenance units active across Meridian 88 infrastructure",
+    "Thousands of maintenance units active across GLMZ infrastructure",
     "Combat variant: officially zero. Unofficially, at least fourteen building fires in the last two years match the thermite variant's signature"
   ],
   "story_hooks": [
     "The players' safehouse has an Ouroboros maintenance drone access point in the utility room. Someone has been using it to send Fiddlebacks into the building — not combat variants, just watchers. Someone is mapping the interior. The question is what comes next.",
     "An Ouroboros whistleblower wants to leak documentation proving the combat variant exists. The leak needs to happen physically because digital channels are compromised. The whistleblower is being hunted by things that move inside the walls."
   ],
-  "cultural_context": "The Fiddleback represents a uniquely terrifying threat because the infrastructure it exploits is everywhere and impossible to seal without also cutting off power, water, and ventilation. The phrase 'something in the walls' has taken on literal meaning in Meridian 88.",
+  "cultural_context": "The Fiddleback represents a uniquely terrifying threat because the infrastructure it exploits is everywhere and impossible to seal without also cutting off power, water, and ventilation. The phrase 'something in the walls' has taken on literal meaning in GLMZ.",
   "tags": [
     "automaton",
     "spider",

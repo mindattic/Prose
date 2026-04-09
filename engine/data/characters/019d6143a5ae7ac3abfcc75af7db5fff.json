@@ -264,5 +264,27 @@
     "Nesting Doll",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Igbo) / Hungarian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Tall and angular, lean-muscled from decades of standing and moving through classrooms; posture still carries the straightness of institutional discipline, though age has introduced a slight forward inclination at the shoulders",
+    "hair_color": "Silver-white, naturally grayed",
+    "hair_style": "Close-cropped fade, meticulously maintained, revealing the clean geometry of her skull",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint amber undertones from standard consumer retinal display overlay (visible as a thin luminescent ring around the iris in low light)",
+    "skin_tone": "Deep brown with warm undertones, characteristic of West African heritage; shows the weathering of 67 years and significant UV exposure from pre-GLMZ childhood",
+    "complexion": "Face bears the map of her life: crow's feet from squinting at chalkboards and reading small text, a thin vertical scar along her left jawline (accident with a door frame, 2187), hands bearing the ink stains of someone who still writes by hand despite digital availability. Skin is unaugmented and well-maintained; minimal makeup, sharp cheekbones that prominence with age",
+    "distinguishing_marks": [
+      "Small vertical scar along left jawline, approximately 3cm, pale and well-healed",
+      "Bioluminescent spiral dermal implant behind right ear, blue-white, 4cm diameter, glows softly in darkness — visible when hair is pulled back or in profile",
+      "Two small burn marks on her right inner forearm from a classroom incident, now faint but still visible on close inspection",
+      "Callused fingertips and palm creases darker than surrounding skin from decades of writing and chalk dust"
+    ],
+    "visible_augmentations": "Bioluminescent spiral behind right ear (cosmetic, retirement gift to herself). Faint luminescent ring around pupils indicating standard consumer-grade retinal display. No other visible chrome or subdermal plating; deliberately maintains non-augmented appearance as marker of her tier and values",
+    "posture_movement": "Stands with arms often folded across chest or hands clasped at solar plexus—a posture from decades of classroom management. Moves with deliberate efficiency, no wasted motion; walks with spine straight despite age-related stiffening. Has a habit of tilting her head slightly when listening, chin elevated, eyes tracking movement. When sitting, she occupies minimal space, feet flat on floor, back against chair",
+    "clothing_style": "Tier 4 practical utilitarian: layered cotton and synthetic-blend clothing in muted earth tones (charcoal, sage, cream, rust). Always wears a sleeveless overshirt or vest as outer layer—functional pockets, durable weave. Sensible non-slip shoes suitable for classroom floors. Two pens always in breast pocket (old habit, pre-digital era). A thin silver bracelet on her left wrist (gift from her father, 2150s). No jewelry beyond this; no corpo logos or status markers. Clothing shows wear and careful repair—patches on elbows, reinforced seams—not from poverty but from intentional durability ethic"
+  },
+  "image_prompt": "Portrait of a tall, angular 67-year-old Black woman with close-cropped silver hair and deep brown skin, standing with folded arms and elevated chin in a composed, authoritative stance. Behind her right ear, a soft blue-white bioluminescent spiral glows faintly. She wears layered practical clothing in muted earth tones—charcoal overshirt, sage undershirt, with two pens visible in breast pocket. Her dark eyes have a faint amber retinal display overlay. The background is a modest community center classroom, late afternoon light filtering through wire-mesh windows, casting geometric shadows across concrete walls. Her posture radiates quiet command and institutional memory. Cyberpunk, realistic, Tier 4 GLMZ setting, warm theatrical lighting, shallow depth of field, dignified and worn, --ar 2:3 --v 6"
 }

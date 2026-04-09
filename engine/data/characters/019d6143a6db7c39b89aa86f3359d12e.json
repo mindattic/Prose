@@ -254,5 +254,27 @@
     "Compass Rose",
     "Indiana Dead Zone"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "East African / Polynesian (Abebe from Ethiopian/Amharic lineage, Tuamana from Tongan/Samoan heritage)",
+    "height_cm": 158,
+    "weight_kg": 62,
+    "build": "Compact and densely muscled, shaped by decades of agricultural labor. Shoulders are broad relative to frame, forearms corded with working strength. Low body fat, defined musculature in legs and core. Physical compression suggests someone built for endurance rather than speed.",
+    "hair_color": "Natural black with possible greying at roots",
+    "hair_style": "Asymmetrical — shaved close on left side (approximately 2mm), right side grown into an unruly cloud roughly 8-10cm long, often pinned back with salvaged wire, industrial clips, or whatever fastener is available",
+    "hair_length": "Short/Medium (asymmetrical)",
+    "eye_color": "Cosmetic color-shifting pupils (malfunctioning secondhand mod) — cycle slowly and involuntarily between amber and grey-green with no user control. Visible circuitry shimmer in bright light around iris",
+    "skin_tone": "Deep umber-brown with undertones reflecting mixed East African and Pacific Islander heritage",
+    "complexion": "Weathered and lined beyond her 34 years from sun and wind exposure. Skin is dry, cracked at knuckles and fingertips year-round with scars that never fully heal between seasons. Calluses on palms, heel of hands, ball of foot. Face is lean, high cheekbones, jaw set in permanent mild tension.",
+    "distinguishing_marks": [
+      "Faded geometric tattoo in Amharic agri-collective style covering entire left shoulder and collarbone — interlocking chevrons and harvest symbols, approximately 15cm across at widest point",
+      "Keloid scar tissue on right inner forearm (approximately 12cm long, 2cm wide) from subcutaneous weather sensor array installation — healed unevenly, visible subdermal edges",
+      "Small burn scars on left palm and inner wrist — accidental, years old, pale against skin",
+      "Deep horizontal creases on forehead and around eyes from squinting at weather systems and hyperlane boards"
+    ],
+    "visible_augmentations": "Subcutaneous weather sensor array in both forearms — visible as slight subcutaneous swelling and faint circular valve ports along inner forearm (approximately 0.5cm diameter, three ports per arm). Color-shifting iris mod with visible tech shimmer in direct light. No chrome or external augmentation.",
+    "posture_movement": "Stands slightly forward-bent, as if perpetually reading ground or sky. Movements are economical and deliberate — no wasted motion. Walks with weight distributed across ball of foot, ready to shift or move quickly. Holds hands loosely, fingers often flexing or pressing against forearm (checking sensor readings). Rarely makes eye contact, but when she does it's sudden and complete. Speaks slowly with long pauses, as if each word is weather being read.",
+    "clothing_style": "Tier 4-5 working class, heavily patched and layered for thermal regulation. Primary layer: faded grey synthetic worksuit with GREENBELT SEASONAL COLLECTIVE faint stencil on chest pocket (worn nearly invisible). Over this: canvas field jacket (sand-colored, stained with mineral residue and soil) with multiple pockets hand-reinforced with tape. Cargo pants in reinforced weave, pockets stuffed with worn laminated route maps and sensor calibration tools. Boots are heavily resoled, laced with wire. A thin cord around her neck holds a small plastic icon of an unidentifiable harvest saint — possibly homemade. No jewelry. All clothing shows deliberate repair rather than replacement — pragmatic tier 5 aesthetic."
+  },
+  "image_prompt": "Portrait of Sorrel Abebe-Tuamana, 34-year-old female hyperlane migrant, cyberpunk agricultural worker, deep umber-brown skin with East African and Polynesian features, short asymmetrical black hair shaved on one side, long unruly cloud on other side pinned back roughly, color-shifting iris pupils cycling amber to grey-green with visible tech shimmer, Amharic-inflected geometric tattoo across left shoulder and collarbone, weathered face with deep sun lines and cracked knuckles, faded grey and canvas worksuit heavily patched and stained, cargo pants with hand-reinforced pockets, standing in Kenosha Crossing transit depot secondary overflow shelter at dawn, harsh fluorescent light from above casting sharp shadows, barometric pressure indicator subtle glow on inner forearm augmentation visible, expression methodical and distant, reading invisible weather patterns, gritty documentary-style lighting, worn and pragmatic tier 5 cyberpunk aesthetic, dramatic chiaroscuro, 35mm color film grain, cinematic realism --ar 2:3 --v 6"
 }

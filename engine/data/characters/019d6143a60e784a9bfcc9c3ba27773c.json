@@ -29,7 +29,7 @@
       "Dying alone in some alley and nobody noticing for weeks"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "To matter to someone for who they are, not what they can do",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
     ],
@@ -282,5 +282,27 @@
     "Lazarus LX-2 'Lab Rat'",
     "Gravimetric Collapse Charge GCC-9"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 163,
+    "weight_kg": 78,
+    "build": "Compact and densely muscled, low center of gravity — built like a load-bearing structure. Broad shoulders, thick forearms, minimal body fat. Power concentrated in the core and legs.",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Close-cropped, functional undercut — easy to maintain, no distractions",
+    "hair_length": "Short",
+    "eye_color": "Pale gray-blue, alert and calculating",
+    "skin_tone": "Medium-warm, underlying Nordic pallor with deeper undertones from West African heritage",
+    "complexion": "Weathered, sharp cheekbones, strong jawline. Minimal scarring visible on face — a professional choice. Skin shows the wear of someone who spends time outdoors in all weather. Small scar tissue along right temple, mostly healed.",
+    "distinguishing_marks": [
+      "Linear chrome scarring along both wrists where wired reflex augmentation interfaces with nervous system — visible as metallic tracework beneath skin",
+      "Faint burn scarring across left collarbone, old corporate contractor injury",
+      "Tattoo on right inner forearm: minimalist geometric pattern in gray ink, self-done in early runner days",
+      "Small notch missing from left ear cartilage — blade work, years back"
+    ],
+    "visible_augmentations": "Chrome reflex lines visible at wrists and neck — metallic threads running along nerve clusters. Slight bulge at base of skull where adrenaline pump system anchors. Eyes track with inhuman smoothness. Occasional faint hum audible when augmentations activate under stress.",
+    "posture_movement": "Economical and grounded. Stands with weight evenly distributed, knees slightly bent — ready to move in any direction. Walks with minimal upper-body movement, predator's economy of motion. Hands rest near weapons with natural ease, not aggression. Eyes rarely still, constant environmental scanning.",
+    "clothing_style": "Tier 3-4 functional runner wear. Fitted matte-black synthmesh jacket with reinforced panels and discrete weapon loops. Gray underlayer with subcutaneous armor compatibility. Dark cargo pants with mag-locks for gear. Steel-toed boots, scuffed and maintained. Minimal jewelry — one worn silver ring on left hand, sentimental value unknown. Wears a worn leather bracelet over left wrist augmentation seam. Everything chosen for durability and function, zero aesthetic concession."
+  },
+  "image_prompt": "cyberpunk character portrait of a compact, densely muscled nonbinary bodyguard with dark brown hair and pale gray eyes, scandinavian-west african heritage, visible chrome reflex augmentation tracework glowing faintly at wrists and neck, stoic expression, standing in shadowed industrial interior, wearing fitted black synthmesh jacket and reinforced gear, metallic implants catching harsh neon light, intense and dangerous presence, professional threat neutralizer aesthetic, high contrast lighting with deep shadows, gritty realism, portrait photography style, moody cyberpunk atmosphere, --ar 2:3 --v 6"
 }

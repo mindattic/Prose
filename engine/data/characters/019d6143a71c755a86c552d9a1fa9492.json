@@ -185,5 +185,28 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "The Pale Mile"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Ghanaian / Ukrainian)",
+    "height_cm": 183,
+    "weight_kg": 74,
+    "build": "Tall and broad-shouldered with defined musculature from years of hauling equipment and assembling installations. Lean through the torso, strong hands and forearms. Movement suggests functional strength rather than aesthetics.",
+    "hair_color": "Silver-bleached blonde with dark roots showing at the scalp",
+    "hair_style": "Dense locs twisted tightly, interwoven with fiber-optic wire throughout. The wire catches light and glows faintly during night hours.",
+    "hair_length": "Medium (shoulder-length locs)",
+    "eye_color": "Deep brown, with visible micro-augmentation around the iris for color frequency discrimination",
+    "skin_tone": "Deep amber-brown with warm undertones",
+    "complexion": "Angular face with pronounced cheekbones. Heavy squint lines around eyes from decades of studying light sources. Ink stains visible on knuckles and fingertips. Skin shows minor thermal scarring on forearms from occasional welding contact. Strong jawline, minimal makeup.",
+    "distinguishing_marks": [
+      "Bioluminescent violet striping running along both collarbones in thin parallel lines, visible when augmentation activates",
+      "Bioluminescent violet striping down both forearms in delicate thread-like patterns, pulse-synchronized to heartbeat",
+      "Ink callus on right index and middle fingers from precision work",
+      "Minor thermal scarring on inner left forearm from studio work exposure",
+      "Small burn mark on right temple, barely visible, approximately 2cm, age-indeterminate"
+    ],
+    "visible_augmentations": "Bioluminescent subdermal violet striping across collarbones and forearms (activates in darkness, pulses with heartbeat); fiber-optic wire woven throughout hair locs creating a subtle constellation effect when active; optical enhancement visible as slight metallic sheen in iris during bright light",
+    "posture_movement": "Stands with shoulders back, habitually tilts head slightly when listening as though tuning into a frequency. Moves deliberately and economically through space—no wasted motion. Hands gesture sparingly but with precision. When examining objects or light sources, enters an intense focus state where body becomes almost motionless. Walks with long, confident strides at night; moves more slowly during daylight hours as though conserving energy.",
+    "clothing_style": "Utilitarian Tier 3-4 aesthetic with deliberate artistic modification. Favors long-sleeved fitted shirts in dark colors (charcoal, deep indigo) to frame her augmented forearms. Wears custom work pants with reinforced pockets and tool loops, often grease-stained or marked with solder burns. Prefers boots with good grip for climbing and assembly work. Layers with a worn denim or canvas vest covered in pins, patches from artist collectives, and small light-reactive badges. Rarely wears jewelry beyond functional pieces. Clothing choices prioritize visibility of augmentations and freedom of movement over fashion—presentation is deliberately anti-corporate, pro-maker."
+  },
+  "image_prompt": "Tall angular woman, age 41, deep amber-brown skin, silver-bleached locs interwoven with glowing fiber-optic wire, bold collarbones with bioluminescent violet striping pulsing gently, lean muscular build of a craftsperson, wearing dark fitted long-sleeve shirt and reinforced work pants, standing in dimly-lit industrial studio filled with neon tubes and light installations, violet bioluminescent augmentations glowing softly in the darkness, squint lines around deep brown eyes suggesting decades of studying light frequencies, hands stained with ink and solder marks, intense concentrated expression, cyberpunk artist aesthetic, moody atmospheric lighting with neon accents, shallow depth of field focusing on face and augmentations, shot at night in converted warehouse studio, high contrast between darkness and bioluminescent glow, cinematic, detailed, professional photography style --ar 2:3 --v 6"
 }

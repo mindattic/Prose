@@ -58,7 +58,7 @@
     "Her unlicensed emotional-response geneware mod has been noticed — a client posted a discreet video of the pattern responding to grief at a funeral and it has attracted attention from a Helix Biosystems IP enforcement agent who is now quietly investigating who did the work.",
     "Someone came into Derma asking for a specific pattern that Temi recognized immediately — it's a marking used by a network she's heard rumors about, and the client insisted it was 'just aesthetic.' She did the work and now she's not sure."
   ],
-  "narrative_function": "Social connector — knows everyone young in the Enclave and most people who move through it; access point for geneware information and modification services; represents the generation that has grown up entirely inside Meridian 88's reality; can be quest giver for anything touching the Enclave's community politics.",
+  "narrative_function": "Social connector — knows everyone young in the Enclave and most people who move through it; access point for geneware information and modification services; represents the generation that has grown up entirely inside GLMZ's reality; can be quest giver for anything touching the Enclave's community politics.",
   "augmentations": "Extensive self-applied bioluminescent subcutaneous patterns (own work). Retractable claw mods on right hand (function and aesthetics). Coordinate-display iris mods. Scent gland enhancement — she chose a specific compound she describes as 'like the Enclave smells when it rains.'",
   "daily_life": "Opens Derma at noon, works clients until 20:00, spends evenings with a rotating group of Enclave peers, researches new geneware techniques late at night on pirated Helix Biosystems technical manuals she's compiled over four years.",
   "affiliation": "Derma studio (Hamtramck Enclave); loose affiliation with Helix Biosystems through their licensed geneware supply chain — she is technically a certified Helix applicator, which she finds both useful and ideologically uncomfortable",
@@ -182,5 +182,26 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Slavic / Polynesian (Māori)",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, muscle definition visible in forearms and shoulders from precision handwork. Low body fat. Moves with economical grace — no wasted motion.",
+    "hair_color": "Natural black with deep indigo undertones, color-shifted by bioluminescent pattern bleed",
+    "hair_style": "Closely braided in geometric patterns; often worn in a high crown with loose synthetic extensions threaded through",
+    "hair_length": "Medium (braids reach mid-back)",
+    "eye_color": "Dark brown base with embedded coordinate display — tiny cyan glowing numerals (latitude/longitude) visible in iris under low light",
+    "skin_tone": "Deep warm brown with golden undertones, complexion even except where modified",
+    "complexion": "Clear, youthful. Skin has a faint luminescent quality from subcutaneous work. Minimal scarring. Expression typically animated — eyebrows mobile, smile quick. Hands show fine calluses and occasional minor chemical burns from geneware handling.",
+    "distinguishing_marks": [
+      "Extensive bioluminescent subcutaneous patterns across collarbones, shoulders, and both wrists in interlocking Yoruba adinkra symbols (wisdom knots, strength glyphs) and Polynesian wave-forms in pale cyan and deep indigo that glow softly in darkness",
+      "Radial scar pattern on right inner forearm (3cm long, faint) from first failed claw mod installation at age 16",
+      "Chemical burn mark on left palm, barely visible, shaped like a droplet — 'proof of concept' from early bioluminescent pigment testing"
+    ],
+    "visible_augmentations": "Retractable claw mods on right hand (4cm bone-white carbide tips, housed under normal nail beds; extends with visible finger joint articulation). Coordinate-display irises visible only under direct light or eye contact. Subcutaneous bioluminescent patterns visible across exposed skin — active in low light, dormant in bright daylight. Faint iridescent sheen to skin under certain angles from pigment suspension.",
+    "posture_movement": "Stands and sits slightly forward-leaning, as if always mid-thought. Hand gestures precise and economical. Right hand frequently unconsciously extends/retracts claws during conversation. Walks with quick, confident stride. Eyes track details obsessively — color palettes, symmetry, proportion.",
+    "clothing_style": "Tier 3-4 hybrid. Favors sleeveless or minimal-sleeve tops to showcase arm work (often custom-fitted, tailored pieces from Enclave makers). High-waisted cargo pants or modified coveralls in matte synthetics with visible utility pockets and tool loops. Reinforced leather gloves for client work, often removed and worn loose around wrists. Heavy-soled boots suitable for standing 8+ hours. Minimal jewelry — her body is her ornament. Occasional Helix Biosystems branded gear (hoodies, base layers) worn ironically. Scent is distinctive: rain-ozone-metal baseline from scent gland mod, often overlaid with bioluminescent pigment solvent."
+  },
+  "image_prompt": "Cyberpunk character portrait, 19-year-old Black woman of compact wiry build with dark skin and golden undertones. Extensive bioluminescent tattoo work in cyan and indigo running across shoulders and both wrists — intricate Yoruba adinkra symbols interwoven with geometric Polynesian wave patterns, glowing softly. Dark braided hair in geometric crown style with synthetic extensions. Dark brown eyes with embedded glowing cyan coordinate display visible in irises. Right hand shows retractable carbide claw mods at fingertips. Sleeveless fitted top revealing full arm augmentations. Hyperdetailed skin texture showing faint iridescent sheen and luminescent subcutaneous patterns. Confident forward-leaning posture. Neon-dark cyberpunk lighting with cool blue accents emphasizing bioluminescent glow. Hamtramck Enclave studio setting, slightly out of focus behind her. Intricate technical detail, photorealistic, genre cyberpunk body modification art. --ar 2:3 --v 6"
 }

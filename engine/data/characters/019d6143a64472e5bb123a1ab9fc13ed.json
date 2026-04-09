@@ -102,5 +102,26 @@
   "related_entities": [
     "The Shelf"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Scandinavian (Danish)",
+    "height_cm": 185,
+    "weight_kg": 89,
+    "build": "Athletic and lean with evident muscle definition from decades of martial discipline; shoulders broad but not bulky, suggesting functional strength over bulk",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Kept short and precise, faded sides with slightly longer top, always groomed",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, warm but observant",
+    "skin_tone": "Medium-deep brown with warm undertones; even complexion suggesting careful sun management",
+    "complexion": "Clean-shaven, minimal facial hair; skin shows the wear of 43 years—fine lines around eyes and mouth, but no acne or severe damage. Grooming is meticulous; suggests self-discipline and respect for appearance as part of business",
+    "distinguishing_marks": [
+      "Scar across left knuckles, thin white line running diagonally—old training injury, circa mid-career",
+      "Small burn scar on right forearm, roughly circular, 2cm diameter—industrial accident or close-call incident",
+      "Faint tattoo on inner left wrist: Adinkra symbol (Sankofa, 'return and fetch it'), black ink, minimal size, visible only when sleeve pulled back"
+    ],
+    "visible_augmentations": "None visible. Fixer's trade demands discretion; any augmentations are subcutaneous or neural. However, his bearing and reaction time suggest possible spinal reinforcement or proprioceptive enhancement",
+    "posture_movement": "Centered and economical. Moves with the deliberate calm of someone trained to defuse or escalate on demand. Hands rest naturally at sides; eyes scan slowly, habitually. When speaking to clients or allies, maintains relaxed but alert posture—neither threatening nor submissive",
+    "clothing_style": "Tier 3 practical: well-maintained charcoal or navy long-sleeve henley or structured shirt (breathable synth-blend, likely a local maker), dark tailored trousers with minimal pockets (items stored in hidden rig beneath jacket), minimal jewelry—a simple gunmetal bracelet on left wrist, possibly Faraday-threaded. Outer layer: fitted tactical jacket in grey or black, unbuttoned, showing tools and harness without screaming 'armed.' Boots are scuffed but maintained: durable synth-leather. Overall effect: a man who blends into mid-tier Shelf crowds but carries himself with professional authority"
+  },
+  "image_prompt": "Portrait of a 43-year-old Black man with mixed Scandinavian heritage, athletic lean build, dark brown skin, short silver-threaded dark hair faded at sides, warm deep-brown eyes with age lines, clean-shaven, positioned in three-quarter view. Wearing charcoal long-sleeve henley under unbuttoned grey tactical jacket, minimal jewelry, hands at rest showing faint white scar across left knuckles. Interior setting: dim neon-lit dojo or warehouse office space, cool blue and amber lighting casting subtle shadows across face, suggesting depth and authority. Mood: composed, observant, professional fixer energy. Cyberpunk 2226 aesthetic. Photorealistic, sharp focus on face, --ar 2:3 --v 6"
 }

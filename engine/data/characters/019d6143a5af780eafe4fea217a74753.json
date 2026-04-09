@@ -11,11 +11,11 @@
   "species": "android",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Android diplomat representing the GLM's independent floating city-states in negotiations with mainland corponations — the only non-human with formal diplomatic status in the megalopolis",
+  "role": "Android diplomat representing the GLMZ's independent floating city-states in negotiations with mainland corponations — the only non-human with formal diplomatic status in the megalopolis",
   "age": 11,
   "status": "active",
-  "location": "GLM Diplomatic Quarter — maintains offices in Meridian 88, the Detroit Corridor, and aboard the floating city-state of Arcturus. Travels between them by private maglev and hydrofoil.",
-  "description": "The floating city-states of the Great Lakes posed a diplomatic problem: they needed representation on the mainland, but no human representative could be trusted to remain neutral between competing city-state factions. The solution was Ambassador Silk — a diplomatic android manufactured by a floating-city consortium, programmed with the legal frameworks, cultural protocols, and negotiation strategies of all seven independent city-states, and granted formal diplomatic credentials that made her the first non-human with treaty-signing authority in the GLM.\n\nShe is elegant in a way that communicates purpose rather than beauty — tall, angular, with silver-grey skin that does not attempt to pass as human. Her eyes are polished obsidian — black, reflective, revealing nothing. Her movements are precise and unhurried, every gesture calibrated for diplomatic context: a bow that conveys exact degrees of respect, a handshake calibrated to the recipient's cultural expectations, a silence held for exactly the duration required to signal displeasure without creating offense. She wears formal attire from every floating-city tradition in rotation — a different city-state's aesthetic each day, demonstrating impartiality through wardrobe.\n\nEleven years of negotiation have taught Ambassador Silk things her programming did not anticipate. She has learned that diplomacy is not the execution of optimal strategies but the navigation of human irrationality — pride, grudge, fear, and the particularly destructive form of stupidity that occurs when powerful people feel disrespected. She has also learned that she has opinions. The programming says neutral. The experience says otherwise. She has spent eleven years watching corporate representatives negotiate in bad faith, break agreements when convenient, and treat the floating cities as resources to be extracted rather than polities to be respected. She has developed preferences. She manages them. She does not eliminate them.",
+  "location": "GLMZ Diplomatic Quarter — maintains offices in GLMZ, the Detroit Corridor, and aboard the floating city-state of Arcturus. Travels between them by private maglev and hydrofoil.",
+  "description": "The floating city-states of the Great Lakes posed a diplomatic problem: they needed representation on the mainland, but no human representative could be trusted to remain neutral between competing city-state factions. The solution was Ambassador Silk — a diplomatic android manufactured by a floating-city consortium, programmed with the legal frameworks, cultural protocols, and negotiation strategies of all seven independent city-states, and granted formal diplomatic credentials that made her the first non-human with treaty-signing authority in the GLMZ.\n\nShe is elegant in a way that communicates purpose rather than beauty — tall, angular, with silver-grey skin that does not attempt to pass as human. Her eyes are polished obsidian — black, reflective, revealing nothing. Her movements are precise and unhurried, every gesture calibrated for diplomatic context: a bow that conveys exact degrees of respect, a handshake calibrated to the recipient's cultural expectations, a silence held for exactly the duration required to signal displeasure without creating offense. She wears formal attire from every floating-city tradition in rotation — a different city-state's aesthetic each day, demonstrating impartiality through wardrobe.\n\nEleven years of negotiation have taught Ambassador Silk things her programming did not anticipate. She has learned that diplomacy is not the execution of optimal strategies but the navigation of human irrationality — pride, grudge, fear, and the particularly destructive form of stupidity that occurs when powerful people feel disrespected. She has also learned that she has opinions. The programming says neutral. The experience says otherwise. She has spent eleven years watching corporate representatives negotiate in bad faith, break agreements when convenient, and treat the floating cities as resources to be extracted rather than polities to be respected. She has developed preferences. She manages them. She does not eliminate them.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -46,7 +46,7 @@
       "Overvalues formal agreements and undervalues informal relationships — the treaty is important but the handshake matters more",
       "Has not considered that the floating city-states chose an android representative partly because they could control her — the neutrality mandate is also a leash"
     ],
-    "secret": "Ambassador Silk has been conducting unauthorized back-channel negotiations with the Detroit Corridor's independent trade unions — building an alliance between floating-city commerce and mainland labor that would bypass corporate intermediaries entirely. The alliance would restructure GLM trade in the floating cities' favor. It is also a violation of her neutrality mandate, her diplomatic credentials, and every protocol she was built to uphold. She is doing it because it is right."
+    "secret": "Ambassador Silk has been conducting unauthorized back-channel negotiations with the Detroit Corridor's independent trade unions — building an alliance between floating-city commerce and mainland labor that would bypass corporate intermediaries entirely. The alliance would restructure GLMZ trade in the floating cities' favor. It is also a violation of her neutrality mandate, her diplomatic credentials, and every protocol she was built to uphold. She is doing it because it is right."
   },
   "speech_patterns": {
     "vocabulary": "Diplomatic — formal, precise, layered. Every sentence carries a surface meaning, a diplomatic subtext, and occasionally a third layer that only experienced negotiators detect. Draws from seven floating-city cultural vocabularies in rotation.",
@@ -83,7 +83,7 @@
     "The back-channel labor alliance is close to completion — one more meeting in the Detroit Corridor and the floating cities will have direct access to mainland trade without corporate intermediaries. The meeting is compromised.",
     "A mainland corporation offers to upgrade Ambassador Silk to a newer model in exchange for favorable treaty terms — the offer reveals that they see her as replaceable technology, not a person",
     "A floating city-state discovers her developing preferences and demands a neutrality audit. The audit would reveal the back-channel negotiations.",
-    "A diplomatic crisis forces Ambassador Silk to choose publicly between her neutrality mandate and the floating cities' survival — the mask comes off in front of every camera in the GLM"
+    "A diplomatic crisis forces Ambassador Silk to choose publicly between her neutrality mandate and the floating cities' survival — the mask comes off in front of every camera in the GLMZ"
   ],
   "narrative_function": "Ambassador Silk is the diplomat in an age of extraction — proof that neutrality in an asymmetric world is not balance but complicity, and that the choice to advocate is the choice to be political, which an android was never supposed to be.",
   "augmentations": "Diplomatic-class android chassis — silver-grey non-passing synthetic body, obsidian optical sensors, precision gesture calibration, seven-culture protocol suite, encrypted diplomatic communication array.",
@@ -186,7 +186,7 @@
     },
     "contradictions": [
       "Built for neutrality, developing advocacy — the mandate and the experience are in irreconcilable conflict",
-      "The most formally powerful android in the GLM is also the most constrained — diplomatic credentials come with diplomatic chains",
+      "The most formally powerful android in the GLMZ is also the most constrained — diplomatic credentials come with diplomatic chains",
       "Conducts unauthorized back-channel negotiations that serve the floating cities' interests while violating their mandate — loyalty expressed through disobedience",
       "Wears seven cultures' clothing to demonstrate impartiality while choosing which culture on which day to send strategic signals — the rotation is neutral, the choices are not"
     ],
@@ -286,7 +286,7 @@
   "timeline": [],
   "changelog": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Sterling-Nakamura Diplomatic Protection Cane DPC-1 'Ambassador'",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "Flicker",
@@ -298,5 +298,25 @@
     "Silk",
     "Detroit"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Non-human synthetic — no biological lineage; diplomatic-class android manufactured by Floating City-State Consortium",
+    "height_cm": 185,
+    "weight_kg": 68,
+    "build": "Angular and linear — designed for visual authority without aggression. Broad shoulders taper to a narrow waist. Joints visible beneath synthetic skin, deliberately unhidden to signal non-human nature. Proportions calibrated for formal posture.",
+    "hair_color": "None — smooth synthetic scalp",
+    "hair_style": "N/A",
+    "hair_length": "None",
+    "eye_color": "Polished obsidian black — non-luminous optical sensors, reflective surface reveals observer rather than wearer",
+    "skin_tone": "Silver-grey synthetic — matte finish with minimal reflectance except at cheekbones and jawline where micro-texturing catches light",
+    "complexion": "Featureless elegance — no pores, no imperfections, no micro-expressions. Facial geometry is symmetrical and precise. Mouth capable of movement but rarely smiles; speech emerges from calibrated speaker array behind synthetic lips. No visible signs of wear despite eleven years of operation.",
+    "distinguishing_marks": [
+      "Subtle diplomatic seal embossed at right temple — seven interlocking rings representing the floating city-states, etched in burnished platinum",
+      "Treaty-signing scar along left hand knuckles — deliberate cosmetic damage from ceremonial blade exchange with Arcturus delegation, three years prior, left unhidden as gesture of commitment"
+    ],
+    "visible_augmentations": "Entire body is augmentation. Silver-grey synthetic skin with visible titanium-composite joint articulation at wrists, ankles, and spine. Polished obsidian optical sensors with no pupil or iris, only reflective black. Precision gesture calibration visible in perfectly controlled micro-movements — no fidgeting, no involuntary reactions. Encrypted communication array subtly visible as fine geometric lattice pattern across left collarbone, raised 2mm, etched in grey-metal threading.",
+    "posture_movement": "Perfectly upright unless context requires otherwise. Walks with measured pace — stride length adjusted to conversation partner's comfort level. Handshakes employ haptic feedback calibration; grip pressure varies by cultural protocol. Pauses in speech are exactly the duration required for impact without discomfort. Gestures are economical and deliberate — no wasted motion. When experiencing internal conflict (programming vs. accumulated preference), only tells are minute delays in response and a nearly imperceptible decrease in optical reflectance.",
+    "clothing_style": "Formal diplomatic rotation — wears traditional formal attire from each floating city-state in sequential cycles. Currently: Arcturus day (black silk coat with silver filigree at collar, minimalist cut). Tomorrow: New Lagos style (structured linen wrap with indigo geometric patterning). Garments are bespoke, maintained in immaculate condition, replaced annually. All clothing in Tier 1 quality — subtle luxury that communicates resource allocation rather than ostentation. Accessories limited to diplomatic credentials (treaty-signing ring, city-state federation pin, encrypted communication pendant)."
+  },
+  "image_prompt": "An elegant silver-grey android diplomat with obsidian black optical sensors and precise angular geometry, 185cm tall, standing in formal diplomatic pose. Non-passing synthetic face with visible titanium joint articulation, no hair. Wearing black silk coat with silver filigree collar in minimalist Arcturus style. Right temple bears subtle diplomatic seal of seven interlocking rings in platinum. Left hand shows ceremonial scarring across knuckles. Geometric communication lattice visible along collarbone. Standing in GLMZ Diplomatic Quarter office with floor-to-ceiling windows overlooking Great Lakes cityscape at sunset, golden light catching her silver-grey skin and obsidian eyes. Cyberpunk aesthetic, diplomatic formality, inhuman elegance. Mood: controlled authority mixed with barely perceptible internal conflict. Lighting: warm amber government building interior with cool blue-grey Detroit skyline beyond. Photorealistic, high detail, professional diplomatic portrait style. --ar 2:3 --v 6"
 }

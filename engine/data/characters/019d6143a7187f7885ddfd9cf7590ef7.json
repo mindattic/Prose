@@ -31,7 +31,7 @@
     "core_desires": [
       "Power — enough leverage that nobody ever threatens them again",
       "Justice — the corporate kind, where the punishment fits the profit margin",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
@@ -156,7 +156,7 @@
     },
     "strengths": [
       "exceptional close-quarters combat",
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "natural leadership presence"
     ],
     "weaknesses": [
@@ -281,5 +281,26 @@
     "Pellucid Systems",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "East African / Korean",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Lean and angular, with visible muscle definition in shoulders and forearms — the result of deliberate conditioning rather than bulk. Long limbs built for reach and leverage, minimal body fat, economical frame.",
+    "hair_color": "Black with subtle dark brown undertones",
+    "hair_style": "Pulled back in a tight, functional braid that exposes the neural interface jack at the base of her skull",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, naturally warm but with a sharp, evaluative quality",
+    "skin_tone": "Rich medium brown — East African ancestry with slight warm undertones",
+    "complexion": "Sharp cheekbones, defined jawline, minimal scarring on the face itself. Skin is kept clean and well-maintained — practical grooming, no cosmetic affectation. Expression tends toward neutral focus.",
+    "distinguishing_marks": [
+      "Surgical scar at base of skull where neural interface jack was installed — visible, roughly 3cm long, well-healed but noticeable given her shaved undercut",
+      "Fine webwork of pale scars across inner left forearm — old, possibly from early augmentation work or industrial accident",
+      "Small burn mark on right ribcage, visible when torso is exposed — roughly 2cm diameter, circular, consistent with contact burn"
+    ],
+    "visible_augmentations": "Chrome neural interface jack at base of skull, runner-grade — the jack itself is visible as brushed steel with slight LED activity when connected. No obvious limb replacements, but the deliberate way she moves and the slight luminescence in her eyes during certain angles suggests internal modifications. Scars around collarbone suggest thoracic work (lung replacement).",
+    "posture_movement": "Moves with controlled precision — no wasted motion, every gesture economical and purposeful. Stands with weight distributed for quick mobility, shoulders slightly forward. Eyes track movement constantly, assessing. At rest, she has an alertness that doesn't fully switch off. When focused on a task, her entire body becomes still, predatory.",
+    "clothing_style": "Tier 4 utilitarian — high-performance technical wear favoring function over fashion. Black or dark gray syndsuit base layer, often worn under reinforced cargo jacket with multiple sealed pockets and cable management loops. Matte-finish tactical boots with grip soles. Silver-gray armored gloves when working. Minimal jewelry — a single small pendant on a thin chain, usually hidden. Everything is maintained with precision, showing wear but never neglect. Moves like someone who expects to run or fight at any moment."
+  },
+  "image_prompt": "Cyberpunk portrait of a 31-year-old East African-Korean female runner, 183cm tall with lean athletic build, rich medium brown skin, sharp cheekbones, dark eyes with evaluative intensity. Black hair in tight braid exposing brushed steel neural interface jack at base of skull. Wearing dark gray reinforced tactical jacket over syndsuit, matte-finish boots. Calm neutral expression, body language shows controlled tension and readiness. Chrome interface jack glowing faintly with soft blue LED. Dark urban setting, moody blue and amber neon lighting, shallow depth of field emphasizing her focused gaze. Professional corporate noir aesthetic, gritty and precise. Shot from shoulders up, slightly angled. --ar 2:3 --v 6"
 }

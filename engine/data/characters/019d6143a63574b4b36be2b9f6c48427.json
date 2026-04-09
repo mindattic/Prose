@@ -245,5 +245,27 @@
     "Marcus Okafor-7",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European / Slavic (Russian/Ukrainian lineage suggested by patronymic)",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and muscular through the chest and arms from years of electrical work and salvage labor; lower body atrophied below the hips due to bilateral knee amputation and prolonged immobility",
+    "hair_color": "Dark brown with premature salt-and-pepper threading",
+    "hair_style": "Short, practical cut; often unkempt from grease work",
+    "hair_length": "Short",
+    "eye_color": "Steel gray with faint scarring around the orbital sockets from old electrical burns",
+    "skin_tone": "Pale, olive-undertoned from Slavic ancestry; darkened and weathered by dock sun exposure",
+    "complexion": "Weathered face with a strong jaw; deep creases around eyes from squinting at circuit boards and harsh dock lighting; calloused hands with burn scars across knuckles and palms; perpetual motor oil stains under fingernails",
+    "distinguishing_marks": [
+      "Electrical burn scar running from right temple down to jaw — jagged, silvered with age",
+      "Network of thin burn scars across both forearms where shock projectors were housed, now discolored and puckered",
+      "Tattoo of a circuit diagram across his chest — self-done, slightly warped, from his technician days",
+      "Massive surgical scars below both hips where kneecaps were removed; tissue is pale and tight"
+    ],
+    "visible_augmentations": "Both forearms terminate in exposed wiring and salvaged tech where shock projectors were housed — incompletely removed, leaving visible copper conduits and blackened contact points. Operates from a heavily modified salvage mobility chair with welded armrests featuring visible taser contacts (copper tips, scorched from repeated use). Chair is a patchwork of mismatched materials — salvaged dock plating, jury-rigged electrical conduits running along the frame, carbon-scored sections from repeated thermal incidents. Cup holder and phone mount are duct-taped to the right armrest; retractable tool rack folds from the seat frame.",
+    "posture_movement": "Propels himself with powerful, economical arm movements; leans forward in the chair with habitual tension. Hands are always occupied — tinkering, adjusting, fidgeting with chair components. Despite mobility limitation, carries himself with the coiled aggression of dock muscle; jaw clenches when stationary. Eyes constantly assess surroundings with the paranoia of someone blacklisted and unemployable.",
+    "clothing_style": "Tier 4-5 utilitarian dock wear: reinforced cargo pants (usually oil-stained) tucked into worn steel-toed boots; oversized Meridian Grid Authority work jacket (kept as bitter memento, now patched and grease-darkened) worn over a faded band t-shirt or unmarked grey undershirt. No visible jewelry except a faint tan line on his ring finger. Often has a welding mask pushed up on his forehead or hanging from the chair frame. Smell of electrical solder, machine oil, and burnt plastic is permanent."
+  },
+  "image_prompt": "Full-body portrait of a weathered 31-year-old Slavic male dock worker in a heavily modified salvage wheelchair, muscular upper body with visible electrical burn scars on forearms and jaw, dark hair with grey threading, steel-gray eyes, oil-stained Meridian Grid Authority work jacket over undershirt, wheelchair armrests fitted with exposed copper taser contacts, surgical scars visible below hips, patchwork chair frame with duct-taped cup holder and welded tool racks, dystopian dock warehouse setting with industrial lighting casting harsh shadows, gritty cyberpunk aesthetic, cinematic realism, moody blue-orange color grading, weathered and damaged chrome elements, --ar 2:3 --v 6"
 }

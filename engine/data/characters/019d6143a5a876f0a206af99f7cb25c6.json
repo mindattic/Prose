@@ -29,7 +29,7 @@
       "Dying alone in some alley and nobody noticing for weeks"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "The perfect run — one job so clean it becomes legend",
       "Control — over their body, their schedule, their future"
     ],
@@ -157,7 +157,7 @@
     "strengths": [
       "ability to remain calm under fire",
       "technical expertise with augmentation systems",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "difficulty with authority figures",
@@ -283,5 +283,28 @@
     "Gravimetric Collapse Charge GCC-9",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Japanese / West African (Ghanaian)",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Compact and densely muscled, low center of gravity. Wide shoulders tapering to a narrow waist. Built for impact absorption and explosive movement rather than reach or speed. No wasted mass.",
+    "hair_color": "Black with premature silver threading at temples",
+    "hair_style": "Cropped close, military-clean, reveals the shape of his skull",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and assessing",
+    "skin_tone": "Warm medium brown with undertones reflecting mixed heritage — olive at the jawline, warmer at the cheekbones",
+    "complexion": "Weathered and scarred. Severe grooming habits mask poor skin condition underneath. Dark circles under eyes from sleep debt and cycle stimulants. A thin white line runs from left temple to jaw — old blade work. Nose broken at least twice and set without professional care.",
+    "distinguishing_marks": [
+      "Pale scar tissue running from left temple to left jawline, approximately 12cm, thin and surgical-looking — contradicted by the jagged character of the surrounding skin",
+      "Burn marks across the knuckles of both hands, old and faded to pale pink, consistent with repeated exposure to friction or thermal stress",
+      "Small circular scar on right forearm just below the elbow — intervention point for the subdermal blade mount, still visible as a faint raised line despite years of healing",
+      "Matching circular scar on left forearm in identical location",
+      "White stress fracture lines visible under the skin of both forearms where geneware muscle density treatment has been applied — subtle rippling effect under normal lighting"
+    ],
+    "visible_augmentations": "Subdermal weapon mounts in both forearms are visible as faint circular scarring and a subtle ridge of reinforced tissue running the length of each forearm. The chrome is deliberately exposed—no attempt to hide the blade deployment mechanisms. Geneware muscle density treatment is visible as unnatural muscle definition and a subtle shimmer or rippling effect under the skin of the arms and shoulders when he moves.",
+    "posture_movement": "Economical and predatory. Moves from the hips and shoulders, not the limbs. No wasted motion. Stands with weight distributed on the balls of his feet, ready to shift in any direction instantly. Eyes track movement constantly. Default expression is neutral-to-hostile. When at rest, he's coiled rather than relaxed.",
+    "clothing_style": "Tier 4 utilitarian. Black reinforced work pants with cargo pockets and tool loops — worn, maintained, practical. Sleeveless compression undershirt showing off the augmented forearms deliberately. Matte-black tactical jacket with Velcro patch sections for identification — usually blank. Scuffed combat boots, steel-toed, broken in through heavy use. Everything is dark, everything is functional, nothing is decorative. His clothes are designed to survive contact with edges, heat, and blood. No corporate logos, no gang colors, no affiliation markers — deliberate neutrality."
+  },
+  "image_prompt": "30-year-old compact, densely muscled male with mixed Japanese and West African heritage, dark brown eyes, black hair with silver at temples, cropped military-short. Face mapped with thin pale scars, broken nose, weathered complexion. Dark circles under eyes. Wearing matte-black reinforced tactical jacket over sleeveless compression shirt, revealing scarred forearms with visible subdermal weapon mount ridging and unnatural muscle rippling from geneware treatment. Black cargo pants, steel-toed boots. Standing in three-quarter view with predatory posture, weight on balls of feet, ready to move. Cyberpunk noir aesthetic, Tier 4 working-class grit. Harsh neon lighting casting shadows across scars and augmented flesh. Dense vertical housing in background, The Rookery, nighttime. Gritty street-level perspective. 8K detail, cinematic, --ar 2:3 --v 6"
 }

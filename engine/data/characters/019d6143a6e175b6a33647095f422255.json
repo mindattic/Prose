@@ -28,7 +28,7 @@
       "his knowledge dying with him with no one to pass it to"
     ],
     "core_desires": [
-      "a complete, accurate map of every route through Meridian 88's outer territories",
+      "a complete, accurate map of every route through GLMZ's outer territories",
       "to find one person worth teaching everything he knows"
     ],
     "coping_mechanisms": [
@@ -190,5 +190,27 @@
     "The Pure Hand",
     "Brass"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "West African / Czech / Polynesian",
+    "height_cm": 174,
+    "weight_kg": 68,
+    "build": "Lean and sinewy, muscular in the way of someone who has carried his own weight across thousands of kilometers on foot. No excess; skin drawn tight over defined shoulders and forearms.",
+    "hair_color": "Black with deep silver streaking throughout",
+    "hair_style": "Tight locks hanging to collarbone, individual braids adorned with small brass charms and wire wraps collected from trading posts",
+    "hair_length": "Long",
+    "eye_color": "Dark brown with faint golden geometric patterning across both irises — old Helix Biosystems cosmetic geneware, fifteen years embedded, slightly faded",
+    "skin_tone": "Deep brown with uneven sun-darkening; lighter patches on palms and underarms where calluses have worn away old pigment",
+    "complexion": "Deeply lined face with permanent creases at eye corners and mouth from squinting across water and desert. Weathered but not neglected — kept clean, beard trimmed short. Hands show most age: enormous span, knuckles swollen and arthritic, fingers stained permanently with mapping ink despite regular washing.",
+    "distinguishing_marks": [
+      "Horizontal scar across left palm, thin and old, from a knife slip during mapwork thirty years ago",
+      "Clustered burn scars on right forearm, small and circular, from campfire sparks — dozens of them accumulated across decades",
+      "Ink staining under all fingernails and between knuckles, darkest on index and middle fingers, permanent despite age",
+      "Faint tattoo on inside right wrist: small cartographic compass rose in black ink, self-applied approximately twenty-five years ago"
+    ],
+    "visible_augmentations": "Only the patterned golden irises are visible — subtle enough that they might be mistaken for natural variation or contact lenses at first glance, but unmistakable on direct eye contact. No other visible chrome, implants, or subdermal work.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Walks slightly bent forward as if perpetually reading terrain. Hands rest near map satchels even when sitting. Speech is sparse; listens more than talks. Eyes constantly register details: exits, water sources, foot traffic patterns, weather shifts.",
+    "clothing_style": "Tier 4 utilitarian traveler. Multiple layered garments in muted colors: weathered linen shirt (sleeves rolled or tied back for mapwork), heavy canvas vest with many pockets containing charcoal stubs, measuring tools, and trade notes. Trousers are durable synth-weave cargo style, patched twice visibly. Boots are good quality and maintained — a traveler's investment. Wears a long, loose overshirt of heavy canvas dyed rust-brown that serves as both warmth and map display surface when laid flat. No corpo logos. Brass buckles and leather straps everywhere. Carries three hand-stitched leather satchels crosswise at all times."
+  },
+  "image_prompt": "A weathered 58-year-old man with deep brown skin and silver-streaked black locks adorned with brass charms, sitting cross-legged at a cluttered trading berth, unfurling hand-drawn maps. His enormous ink-stained hands are the focal point, fingers swollen from decades of mapmaking. Faint golden geometric patterning visible in his dark eyes. Wearing layered canvas and linen in rust and cream tones, multiple leather satchels. Surrounded by rolled papers, charcoal stubs, and trading goods. Kenosha Crossing transit hub at dusk, harsh fluorescent checkpoint lights and cool blues mixing with warm lamplight on worn metal surfaces. Cyberpunk noir, documentary realism, deep shadows, weathered textures, intimate scale. Shallow depth of field focusing on hands and maps. --ar 2:3 --v 6"
 }

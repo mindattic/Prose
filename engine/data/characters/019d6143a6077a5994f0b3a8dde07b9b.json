@@ -13,7 +13,7 @@
   "age": 25,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
-  "description": "Eshe Petersen-Bah is lean and angular, all sharp edges and visible tension. At 25, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a data thief out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented data thief in Meridian 88, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Eshe Petersen-Bah is lean and angular, all sharp edges and visible tension. At 25, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a data thief out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented data thief in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.44,
@@ -43,7 +43,7 @@
       "Cannot see that their independence is actually isolation wearing a better outfit",
       "Overestimates their own abilities in situations outside their specialty"
     ],
-    "secret": "Eshe Petersen-Bah betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+    "secret": "Eshe Petersen-Bah betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
   },
   "speech_patterns": {
     "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Eshe Petersen-Bah's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Eshe Petersen-Bah's past shows up in GLMZ, carrying old grievances and new chrome",
     "A dead drop Eshe Petersen-Bah maintains is found and cleaned out — whoever did it now has leverage",
     "Eshe Petersen-Bah intercepts intelligence about a threat to their district and must decide between profit and protection"
   ],
@@ -278,11 +278,33 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Heritage Vault",
     "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Stratum",
     "Slagworks Industrial"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with visible muscle definition from constant movement and maintenance work. No excess fat. Shoulders narrow but wiry-strong. The physiology of someone who runs on adrenaline and caffeine more than calories.",
+    "hair_color": "Dark brown with premature gray threading at the temples",
+    "hair_style": "Cropped close to the scalp, maintained with military precision — easier to clean, harder to grab",
+    "hair_length": "Short",
+    "eye_color": "Amber-brown, alert and constantly tracking",
+    "skin_tone": "Medium-warm complexion with underlying olive undertones, weathered by salt spray and urban sun exposure",
+    "complexion": "Sharp cheekbones, defined jawline. Skin shows minor scarring from street work. Eyes sit slightly wide-set, giving a predatory attentiveness. Lips thin, usually pressed in a neutral line. No facial hair — kept clean to reduce identification markers.",
+    "distinguishing_marks": [
+      "Thick scar tissue along the right temple extending to upper right ear — the cortical bomb extraction site, roughly 8cm long, silvery-pink and poorly healed by street doc standards",
+      "Fine linear scars across both inner forearms at the subdermal weapon mount sites — barely visible unless under direct light, but present as pale lines",
+      "Small burn scar on the back of left hand, shaped like a cigarette end — old violence from an unpaid debt collector",
+      "Tattoo on inside of left wrist: a simple Φ symbol in gray ink, barely visible, personal marker from early running days"
+    ],
+    "visible_augmentations": "The cortical bomb scar is immediately visible and unmissable — it reads as street-level, dangerous, and committed. The forearm weapon mounts show as subtle ridges under the skin when arms are extended or tensed. No obvious chrome, no LED installations, no subdermal armor plating. The augmentations are working-class and understated.",
+    "posture_movement": "Stands with weight balanced on the balls of his feet, ready to move in any direction. Eyes constantly scan horizontal and vertical space — doors, windows, exits. Moves with economy of motion, nothing wasted. Sits with his back to walls. Handshake grip is firm but not aggressive — testing baseline tension. When thinking, his right hand unconsciously touches the cortical scar, a tell he's aware of but hasn't broken.",
+    "clothing_style": "Tier 3-4 practical runner wear. Black or dark gray synth-weave jacket with internal cargo pockets — nothing visible, everything accessible. Fitted dark cargo pants with reinforced knees and thigh pockets for tools and data slicers. Worn black tactical boots with grip soles for the wet dockside environment. No logos, no corpo branding, no affiliation markers. Layers beneath in case of quick climate change or blood. A single chain around his neck, industrial steel, holding a small encrypted data key he never removes. Everything fits tight — nothing loose to snag or slow him down."
+  },
+  "image_prompt": "cyberpunk character portrait of a lean 25-year-old male with mixed Scandinavian and West African heritage, sharp angular features, amber-brown eyes with predatory alertness, dark hair with gray threading cut military-short. Prominent silvery-pink scar tissue along right temple from cortical implant removal, marks of street violence. Wearing black synth-weave tactical jacket and dark cargo pants, industrial steel chain around neck. Dockside Lake Michigan setting, neon reflected off dark water behind, moody blue-green lighting, salt-spray weathered skin, tense posture ready to move. Gritty street-level cyberpunk, realistic anatomical proportions, scar details sharp and visible, early morning or dusk lighting, cinematic depth of field --ar 2:3 --v 6"
 }

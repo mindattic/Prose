@@ -198,7 +198,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born in Norwood Quiet to a Ghanaian-Bosnian family, third generation Meridian 88",
+      "event": "Born in Norwood Quiet to a Ghanaian-Bosnian family, third generation GLMZ",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -260,5 +260,26 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Ringo Corponation"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Balkan (Serbian/Croatian)",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Softly built, compact and rounded through the torso from decades of sedentary work; gentle posture without slouch; arms and legs retain subtle muscle tone beneath comfortable padding",
+    "hair_color": "Silver-gray",
+    "hair_style": "Locs wound into a complicated topknot, typically secured with worn fabric wraps or wooden pins; flyaways common",
+    "hair_length": "Long (locs reach mid-back when unbound)",
+    "eye_color": "Color-shifting cosmetic irises cycling through blue-green spectrum",
+    "skin_tone": "Warm brown with subtle undertones reflecting mixed heritage; weathered and well-maintained",
+    "complexion": "Open, expressive face lined with decades of teaching—laugh lines around eyes and mouth prominent; skin shows sun exposure around cheekbones and forehead; facial hair sparse and silver; minimal makeup; reading glasses frequently perched on crown or hanging from fabric cord around neck",
+    "distinguishing_marks": [
+      "Bioluminescent kente-pattern geometric tattoo across left collarbone in blues and golds, pulses faintly when animated or excited",
+      "Fine age lines around eyes characteristic of constant reading and close observation",
+      "Small scar on left knuckle from union organizing incident, early 2190s"
+    ],
+    "visible_augmentations": "Color-shifting iris geneware immediately noticeable under direct light; bioluminescent collarbone tattoo visible in low light or when excited. Subcutaneous acoustic enhancement not visible. No obvious prosthetics or external chrome.",
+    "posture_movement": "Stands with weight slightly forward, hands frequently gesturing while speaking; walks with deliberate pace, rarely rushed; tendency to tilt head while listening—professorial attention. Settles into chairs fully, taking up comfortable space. Movements efficient rather than elegant; no wasted motion.",
+    "clothing_style": "Comfortable, layered Tier 3-4 casual: worn cotton cardigans or linen overshirts in earth tones, practical trousers with visible pockets stuffed with books/chips/sweets, worn canvas shoes. Fabrics show age but remain clean and carefully maintained. Personal accessories include old fabric bookmarks, reading glasses on cords, and a faded union pin from the 2210s. Overall effect: organized chaos of someone who has stopped performing for institutions."
+  },
+  "image_prompt": "portrait of a 67-year-old nonbinary teacher, warm brown skin with silver locs bundled in complicated knot, wearing layers of comfortable linen and cotton in earth tones, reading glasses on fabric cord, left collarbone showing faintly glowing geometric kente-pattern bioluminescent tattoo in blues and golds, color-shifting irises cycling blue-green, surrounded by floating data chips and worn physical books, soft warm lighting, cyberpunk-mundane aesthetic, lived-in wisdom, standing in a cozy second-floor apartment with afternoon light, photorealistic, character portrait, detailed facial features, --ar 2:3 --v 6"
 }

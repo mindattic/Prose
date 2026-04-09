@@ -72,5 +72,26 @@
     "Déjà Vu",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Swedish / West African (Malian)",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and angular, with the efficient musculature of someone who walks constantly through difficult terrain. No spare weight; posture suggests endurance rather than strength.",
+    "hair_color": "Dark brown with early silver threading at the temples",
+    "hair_style": "Worn in a simple, practical braid or bun, often coming loose by afternoon",
+    "hair_length": "Medium",
+    "eye_color": "Warm hazel with fine lines radiating from the corners",
+    "skin_tone": "Honey-brown with golden undertones, complexion marked by the Ubiquitous Diaspora blend of Scandinavian and Malian ancestry",
+    "complexion": "Sharp, angular features — high cheekbones, prominent jawline. Minimal makeup. Skin shows the weathering of two decades of street work: sun damage, stress lines around the eyes and mouth. A faint scar tissue across her left cheekbone from a childhood incident. Hands are calloused, nails kept short and unpainted.",
+    "distinguishing_marks": [
+      "Thin white scar across left cheekbone, approximately 3cm, faded but visible in certain light",
+      "Small burn mark on inner right wrist — deliberately covered by a watch strap or bracelet, origin unknown",
+      "A tattoo on her left shoulder blade: a simple geometric pattern of interlocking lines, Malian textile-inspired, done twenty-two years ago when her sister disappeared"
+    ],
+    "visible_augmentations": "None visible. Any augmentations she carries are subcutaneous — possibly a low-grade neural logger or location tracker, but nothing chrome, nothing that would make her stand out on the Shelf. She keeps her modifications invisible intentionally; trust requires appearing human and vulnerable.",
+    "posture_movement": "She moves with the economical gait of someone who has walked thousands of miles through the city. Her posture is forward-leaning, alert but not tense — a listening posture. She sits at the edge of chairs, ready to stand. Her hands gesture when she talks, a Malian inheritance. Her eyes track movement habitually; she notices everything but tries not to appear to be watching.",
+    "clothing_style": "Tier 3-4 practical wear. Dark colors — black, charcoal, deep indigo — that hide the grime of fieldwork. Usually: fitted black cargo pants with multiple pockets, a long-sleeved shirt or lightweight sweater (thermal-rated for Milwaukee winters), good walking boots (currently a pair of Resolute-brand tactical boots, scuffed and re-soled twice). She owns one professional blazer for meetings with wealthy clients, but it hangs unworn most days. She wears a watch — an older Casio, not flashy — and minimal jewelry except for a thin silver ring on her right index finger, a gift from her sister before the disappearance. No augmentation-ware visible; no corpo branding. Her clothing says: I work on the ground level, I don't have time for aesthetics, I am here to listen."
+  },
+  "image_prompt": "Portrait of Amara Lindqvist-Diallo, 47-year-old private investigator, mixed Swedish-Malian heritage with honey-brown skin and sharp angular features. Dark hair with silver threading worn in a practical braid. Warm hazel eyes with visible fatigue and compassion. Faint scar across left cheekbone. Wearing dark cargo pants and fitted black long-sleeve shirt. Seated at edge of chair in welcoming posture, leaning slightly forward. Soft warm lighting from desk lamp and afternoon Milwaukee street light through storefront window behind her. Urban noir cyberpunk setting, ground-level Shelf location with children's drawings visible on wall behind her. Cinematic portrait photography, character-focused, shallow depth of field. Mood: resolute, weary, deeply human, grounded. No chrome, no flashy tech visible. --ar 2:3 --v 6"
 }

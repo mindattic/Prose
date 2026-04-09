@@ -103,5 +103,27 @@
     "The Shelf",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Hungarian / West African / Polynesian",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Stocky and broad-shouldered with maintained muscle tone despite age; years of physical work have given her solid, functional frame rather than aesthetic definition",
+    "hair_color": "Steel gray with natural dark roots showing",
+    "hair_style": "Pulled back in a tight, practical braid; functional rather than fashionable",
+    "hair_length": "Medium",
+    "eye_color": "Deep brown, sharp and assessing",
+    "skin_tone": "Warm caramel with subtle golden undertones from mixed heritage",
+    "complexion": "Weathered and lined, especially around eyes and forehead; minimal makeup; scars on left cheekbone and jawline softened by age but still visible; skin shows sun damage and character",
+    "distinguishing_marks": [
+      "Thin white scar running from left cheekbone down to jawline, approximately 8cm long",
+      "Small burn scar on inner right wrist, roughly 2cm diameter, pale and old",
+      "Faded tattoo on right forearm: a symbol combining Hungarian and Akan motifs, partially obscured by age and fading",
+      "Pronounced calluses on both palms and fingers from decades of handling tools and weapons"
+    ],
+    "visible_augmentations": "None visible; augmentations are strictly subcutaneous if present at all—consistent with her philosophy of discretion",
+    "posture_movement": "Moves with deliberate, economical grace; stands slightly forward on the balls of her feet as if always ready to move. Direct eye contact, minimal unnecessary gesture. Speaks slowly and rarely, but commands full attention when she does.",
+    "clothing_style": "Tier 3-4 practical wear: reinforced dark denim jacket with internal pockets, gray thermal base layer, heavy-duty canvas pants with cargo pockets. Black steel-toed boots, scuffed and well-maintained. Minimal jewelry—only a simple silver ring on left ring finger. No corp branding; all clothing is utilitarian, durable, and sourced from secondary markets. Watch is mechanical, not digital."
+  },
+  "image_prompt": "A 62-year-old woman of Hungarian-West African-Polynesian heritage, stocky and broad-shouldered with gray hair in a tight practical braid, deep brown eyes, weathered caramel skin with visible old scars on cheekbone and jawline. Wearing a reinforced dark denim jacket over gray thermal layer and heavy canvas pants, black steel-toed boots, minimal jewelry. Standing in dim industrial setting, confident posture, hands at rest but alert. Film noir lighting, cool shadows, gritty cyberpunk aesthetic, Chicago warehouse district atmosphere, natural texture photography, character-focused portrait --ar 2:3 --v 6"
 }

@@ -246,5 +246,24 @@
     "Static",
     "Handed"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Japanese / Malian / Vanuatuan",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and unfinished, the lanky frame of someone still settling into adulthood — narrow shoulders, long limbs, minimal musculature, carrying himself with the slightly uncertain posture of a person not yet comfortable in his own skin",
+    "hair_color": "Natural black with bioluminescent blue tips (pulse-reactive in low light)",
+    "hair_style": "Loose cloud of curls, shoulder-length, deliberately unstyled except for the dyed tips",
+    "hair_length": "Long",
+    "eye_color": "Very dark brown, nearly black, with a slight epicanthic fold",
+    "skin_tone": "Light brown with warm golden undertones throughout",
+    "complexion": "Clean-shaven, youthful facial structure, slight softness around the jawline, clear skin with an even complexion; expression often carries a mixture of earnestness and mild worry",
+    "distinguishing_marks": [
+      "No visible scars or significant marks; the bioluminescent hair tips are his most distinctive feature, pulsing faintly blue in dim environments"
+    ],
+    "visible_augmentations": "Bioluminescent blue hair tips (pulse-reactive geneware, visible especially in low light); retractable claw mods on fingers (small, pearlescent, barely noticeable when retracted but catch light when extended); basic subdermal data chip housing (no external visibility, but occasionally a faint glimmer at the base of his neck when active)",
+    "posture_movement": "Carries himself with a kind of careful reserve, moving deliberately as if aware of taking up space in the shrine — economical gestures, slight forward lean when listening to visitors, fidgets with his pockets or the edges of his clothing when uncertain",
+    "clothing_style": "Tier 4 working-practical: well-worn cargo pants or modified work trousers with excessive pocketing (shrine maintenance requirements), layered simple cotton or linen shirts in muted earth tones, a slightly too-large oversized jacket from a secondhand market for warmth, worn shoes suitable for standing all day; everything is functional, none of it matches perfectly, but it reads as intentionally humble rather than careless"
+  },
+  "image_prompt": "A 24-year-old Japanese-Malian-Vanuatuan male shrine keeper in a cyberpunk setting, lean build with unfinished youthful proportions, light brown skin with golden undertones, very dark eyes with slight epicanthic fold. Natural black curly hair shoulder-length with bioluminescent blue tips that pulse faintly in ambient light. Wearing cargo pants and layered earth-tone shirts with an oversized jacket, hands showing retractable pearlescent claw mods on fingers. Standing in a small eight-meter shrine kiosk with spiritual atmosphere, warm static-like visual distortion suggesting ELF presence, early morning or dusk lighting with blue bioluminescent glow highlighting his hair and the shrine's interior. Expression earnest and slightly overwhelmed but composed. Cyberpunk Tier 4 aesthetic, worn but maintained, spiritual and technological merge. --ar 2:3 --v 6"
 }

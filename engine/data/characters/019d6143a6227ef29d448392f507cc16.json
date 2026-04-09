@@ -230,5 +230,26 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Russian",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Large-framed and broad-shouldered, age and sedentary craft work have softened muscle definition into a comfortable heaviness; powerful forearms and hands show decades of fine manipulation work despite the softening elsewhere",
+    "hair_color": "White",
+    "hair_style": "Short, close-cropped",
+    "hair_length": "Short",
+    "eye_color": "Right eye: warm brown natural; left eye: mechanical deep-focus optic with faint red ring around iris",
+    "skin_tone": "Warm medium brown, even complexion reflecting mixed West African and Slavic heritage",
+    "complexion": "Deeply lined face with pronounced creases around the eyes and mouth; the lines read as wisdom or weariness depending on expression; slight jowl softness at the jawline; hands show prominent veins and age spots, knuckles enlarged from decades of fine work; kept well but not fastidiously groomed",
+    "distinguishing_marks": [
+      "Left eye replaced with a secondhand mechanical deep-focus optic bearing a faint red ring around the iris, giving the eye an uncanny but functional appearance",
+      "Fine network of small scars across both hands from four decades of puppetry work with wire, salvage metal, and sharp tools",
+      "Mild tremor visible in both hands at rest, managed by pharmaceutical arthritis suppressors"
+    ],
+    "visible_augmentations": "Mechanical left eye with red iris ring (older model, functional rather than aesthetic); the eye sits slightly more recessed than natural, and its focus depth is noticeably different when he concentrates. No visible chrome or subdermal modifications.",
+    "posture_movement": "Habitual stoop from decades hunched over workbenches; moves with deliberate slowness that reads as either careful precision or age-worn caution; hands are rarely still, often gesturing or making small manipulative motions; seated more often than standing; when performing, posture straightens slightly and movements become more theatrical",
+    "clothing_style": "Tier 3-4 working class, practical and worn. Typically wears multi-pocketed work vests over long-sleeved cotton shirts (sleeves rolled or pushed up during work); loose trousers with reinforced knees; soft leather shoes scuffed from street performance. Fabrics are durable and stained with decades of work — paint, sealant, oil. A faded jacket from the 2190s hangs in the workshop. No jewelry except a simple steel wedding band. Clothing shows care but not vanity; he dresses for function and comfort."
+  },
+  "image_prompt": "Cyberpunk character portrait of an elderly West African-Russian man, age 67, large-framed and softened by age, wearing worn practical work clothes and a faded multi-pocket vest. His hair is short and white, his face deeply lined and thoughtful. His left eye is a distinctive mechanical deep-focus optic with a faint red ring around the iris, giving him an uncanny but wise appearance. His powerful hands show four decades of fine work. He stands in the warm, cluttered interior of a narrow puppet-maker's workshop lit by late afternoon light filtering through dirty windows. Shelves behind him hold articulated puppet sculptures made from salvage materials. The lighting is warm and amber, emphasizing the lines of his face and the textures of his hands. Shot in documentary realism style with slight noir undertones. No chrome, no neon, grounded in Tier 3 working-class authenticity. --ar 2:3 --v 6"
 }

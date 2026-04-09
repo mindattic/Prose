@@ -227,5 +227,26 @@
     "Lazarus IDP-1 'Teeth'",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European / Russian (Morozova suggests Slavic lineage, potentially with admixed Central Asian or Eastern Jewish heritage common to post-diaspora GLMZ demographics)",
+    "height_cm": 152,
+    "weight_kg": 41,
+    "build": "Compact and square-shouldered despite her age — dense musculature in shoulders and forearms suggesting either genetics or early manual labor. No baby fat. Wiry rather than soft. Appears five years older than her chronological age due to posture and bearing.",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Pulled back in a practical braid, often loose strands escaping. No styling — functional only.",
+    "hair_length": "Medium (mid-back when unbraided)",
+    "eye_color": "Gray-blue, pale and luminous — observational, rarely blinking",
+    "skin_tone": "Pale Slavic complexion with faint freckling across cheekbones and nose; undertones suggest mixed heritage",
+    "complexion": "Gaunt-faced, high cheekbones, sharp jaw. Skin shows the wear of Tier Four living — occasional marks from street scrapes, one healing cut on her left temple (source unknown). Perpetually exhausted-looking eyes. Rarely smiles.",
+    "distinguishing_marks": [
+      "Thin white scar along her left jawline, approximately 2cm, from an unremarked childhood incident",
+      "Dark bruise on her right inner wrist (recent — defensive mark or restraint burn, pattern unclear)",
+      "Calloused hands, especially palms and inside knuckles, inconsistent with her age"
+    ],
+    "visible_augmentations": "None visible. She carries no obvious chrome, no LED implants, no subdermal armor. This absence is notable in the Shelf — she is as analog as a child can be in 2226.",
+    "posture_movement": "Moves with deliberate control, economical. No fidgeting. Sits spine-straight, even when exhausted. Walks with her shoulders slightly forward, head level, eyes tracking. Reminiscent of a hunter or a soldier in miniature. When angry, her jaw locks and her hands clench.",
+    "clothing_style": "Tier Four utilitarian — worn black synth-cotton leggings, oversized gray hoodie (probably belonged to Demyan; she has grown into it partially), scuffed black runner-shoes held together with synthlace. A canvas messenger bag (khaki, faded) slung across her chest containing her notebook and writing supplies. No jewelry, no adornments, no status markers. Clothing is clean but worn, patched once at the left knee."
+  },
+  "image_prompt": "12-year-old girl with sharp Eastern European features, pale gray-blue eyes, dark brown hair in a practical braid, gaunt and preternaturally composed expression. Square shoulders in oversized gray hoodie, worn black leggings, scuffed shoes. Standing in dim Tier Four residential corridor, neon-glow from distant signage casting blue-purple shadows across her face. Clutching a worn canvas messenger bag. Cyberpunk noir, hyperrealist, documentary-style lighting, cool color palette, atmosphere of quiet dread and adult responsibility in a child's eyes. Street-level perspective. Gritty, unglamorous. --ar 2:3 --v 6"
 }

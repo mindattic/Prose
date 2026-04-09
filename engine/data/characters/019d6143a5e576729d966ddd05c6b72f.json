@@ -180,5 +180,26 @@
     "The Pale Mile",
     "Gold"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Central European (Polish/Lithuanian) / Central African (Bantu)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Slight and wiry, almost ascetic — minimal muscle mass, the physique of someone whose strength is concentrated in precision rather than power. Shoulders slightly rounded from hours at neural interface terminals.",
+    "hair_color": "None (shaved)",
+    "hair_style": "Completely shaved, maintained to a polish",
+    "hair_length": "Shaved",
+    "eye_color": "Iridescent shift between deep gold and pale celadon green, dependent on active calibration sync",
+    "skin_tone": "Warm medium brown with slight undertones suggesting both equatorial and temperate ancestry",
+    "complexion": "Clean-shaven, fine-featured with high cheekbones. Skin shows the pale fatigue of sub-level work — not unhealthy, but unmistakably under artificial lighting. Eyes carry a quiet, observant intensity.",
+    "distinguishing_marks": [
+      "Four small circular access ports arranged in a shallow arc along the occipital ridge at the base of the skull, each approximately 5mm in diameter with faint silver-edged housing.",
+      "Fine network of pale scar tissue radiating from the port sites, barely visible unless light hits at a specific angle — evidence of repeated connection/disconnection cycles.",
+      "Faint discoloration across the inner wrists in an irregular pattern consistent with subvocal communicator implant placement."
+    ],
+    "visible_augmentations": "Four occipital neural link ports with visible silver-edged housings; iridescent iris shift clearly visible during eye contact; subvocal communicator visible as a slight subdermal ridge along the left anterior neck, unmarked but present to those who know what to look for.",
+    "posture_movement": "Moves with deliberate, economical grace — each gesture precise and minimal. Never wastes motion. Walks slightly slowly, as if acutely aware of the spatial relationships around him. Often pauses mid-action as though listening to something only he can hear. When standing still, his hands rest palm-up at his sides, a posture of readiness without aggression.",
+    "clothing_style": "Tier 3 medical technician uniform: charcoal-gray fitted tunic with Aurochs Medical Complex insignia on left chest, reinforced synthetic fiber designed for repeated sterilization. Black utility pants with multiple small pockets for diagnostic tools and data-chips. White soft-soled boots rated for sub-level anti-static requirements. Off-duty: plain, well-maintained clothing in muted colors — grays, blacks, deep blues. Everything practical, nothing decorative."
+  },
+  "image_prompt": "Portrait of a 34-year-old man with warm brown skin and a shaved head revealing four small silvery neural interface ports along the base of his skull, arranged in a subtle arc. His eyes are striking — iridescent irises that shift between deep gold and pale celadon green depending on the light. Fine-featured face with high cheekbones, clean-shaven, expressing quiet intensity and introspection. Slight, wiry build, posture perfectly composed and deliberate. Wearing a charcoal-gray medical technician tunic with institutional insignia, black reinforced pants, white sterilized boots. Faint subdermal scarring visible around the port sites. Soft, cool fluorescent overhead lighting casting subtle shadows. Background suggests a clinical sub-level medical facility with muted grays and blacks. Cyberpunk aesthetic emphasizing medical technology and precise, contemplative presence. Hyperrealistic, close-up portrait. --ar 2:3 --v 6"
 }

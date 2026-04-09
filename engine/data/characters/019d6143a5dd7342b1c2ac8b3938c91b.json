@@ -189,5 +189,27 @@
     "The Pale Mile",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Polish",
+    "height_cm": 177,
+    "weight_kg": 68,
+    "build": "Rangy and lean, long-limbed with minimal body fat; the build of someone in constant motion, muscles defined but not bulky, shoulders slightly hunched from habitual forward posture",
+    "hair_color": "Deep amber (modified via geneware follicle mod; changes weekly)",
+    "hair_style": "Shoulder-length, textured, often pulled back with wire or fabric scraps; shows regrowth bands of natural dark brown underneath",
+    "hair_length": "Medium",
+    "eye_color": "Natural brown, warm and observant",
+    "skin_tone": "Pale olive with undertones of gold, reflecting mixed West African and Eastern European heritage",
+    "complexion": "Sharp cheekbones and angular jaw; perpetually tired-looking around the eyes from irregular sleep. Skin shows signs of street-level living — minor scarring, sun exposure on forearms and neck. Constant subtle movement of facial muscles, tongue running over split lip scar when thinking.",
+    "distinguishing_marks": [
+      "Split lip scar (vertical, center of lower lip, never fully healed, tissue lighter than surrounding skin)",
+      "Copper and silver prayer engravings across both forearms — intricate etched circuitry patterns pressed into skin, creating raised silvery-copper lines that catch light when moving",
+      "Prayer circuit etchings continue across the back of both hands in geometric mandala-like patterns, ending at fingertips",
+      "Network of thin white scars along left shoulder and upper left arm where chassis meets organic tissue (emergency augmentation junction lines)"
+    ],
+    "visible_augmentations": "Left arm from elbow down is a functional chrome chassis (basic-grade emergency replacement) — matte dark metal with polished sections, covered in exterior copper-silver prayer etchings that mirror the organic circuitry on their biological arm. Joint seams visible at wrist and elbow. The contrast between organic right arm (pale olive skin with etchings) and metallic left arm (etched chrome) is striking and deliberate. No visible ocular or neural augmentations.",
+    "posture_movement": "Almost never still — weight shifts constantly, hands gesture while speaking, paces in tight circles during conversation. Moves with economical grace despite restlessness, as if their body is tuned to the frequency of their own prayers. Leans forward when listening, head tilted slightly. Left arm moves with subtle mechanical precision, not quite matching organic arm's fluidity, but they move it with complete comfort and intention.",
+    "clothing_style": "Tier 4-5 practical streetwear, worn but maintained: oversized linen shirt (cream or pale gray, sleeves rolled to mid-forearm to display prayer etchings) layered under a patched canvas vest covered in small metal buttons, charms, and wire-wound symbols. Loose-fitting dark cargo pants with multiple pockets (some containing prayer cards, wire, small offerings). Worn canvas shoes. Accessorized with salvaged jewelry — twisted copper wire bracelets, a single silver chain worn visible, fabric wraps around wrists. Everything suggests improvisation and spiritual intentionality rather than fashion."
+  },
+  "image_prompt": "A nonbinary figure with pale olive skin and deep amber shoulder-length hair, standing in the dim interior of a repurposed shipping container shrine. They wear an oversized cream linen shirt and patched canvas vest, sleeves rolled to reveal intricate copper-silver prayer circuit etchings across both forearms and hands. Their left arm from elbow down is a dark matte chrome chassis with matching etched circuitry, creating a striking organic-to-metal gradient. They have sharp angular features, warm brown eyes, and a split lip scar. Their posture is restless, one hand gesturing mid-movement, weight shifted, perpetually in motion. The shrine behind them glows softly with candles and salvaged neon, casting metallic highlights on their augmented arm. Cyberpunk spiritual practitioner, gritty Tier 4 street aesthetic, moody amber and cool blue lighting, shallow depth of field, cinematic, photorealistic --ar 2:3 --v 6"
 }

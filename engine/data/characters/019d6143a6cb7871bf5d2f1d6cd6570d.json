@@ -184,5 +184,25 @@
     "The Coffin Nails",
     "Wick Solomon"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / South Slavic",
+    "height_cm": 177,
+    "weight_kg": 68,
+    "build": "Lean and spare, almost ascetic — the thinness of deliberate discipline rather than deprivation. Long lean muscles visible in forearms and neck. Minimal body fat. Moves with economical precision.",
+    "hair_color": "Natural black",
+    "hair_style": "Shaved scalp except for a single crown braid threaded with amber fiber optic filament that glows softly with ambient current",
+    "hair_length": "Shaved except for single braid",
+    "eye_color": "Deep brown, warm, unaugmented",
+    "skin_tone": "Rich dark brown with warm undertones",
+    "complexion": "Smooth, clean-shaven face with high cheekbones and a quiet, composed expression. Eyes are large and still — they hold attention without demanding it. Nails meticulously clean and trimmed, an unusual detail in Brightmoor. Overall grooming reflects intentional care despite ascetic practice.",
+    "distinguishing_marks": [
+      "Amber-glowing fiber optic filament threaded through single crown braid, visible neural integration point at base of skull with faint scar tissue",
+      "Small copper-colored port scar at left temple, capped and unused, legacy of corporate logistics work"
+    ],
+    "visible_augmentations": "Single amber fiber optic braid at crown that glows softly with ambient electromagnetic sensitivity. Capped neural port at temple is barely visible but noticeable on close inspection. Otherwise appears unaugmented by choice.",
+    "posture_movement": "Sits and stands with deliberate stillness — not rigid, but economical. Moves slowly, with full awareness of each motion. Speaks rarely and listens with complete attention. Hands are expressive when they move, fingers long and precise.",
+    "clothing_style": "Tier 3-4 ascetic minimalism. Worn linen shirts, simple dark trousers, no logos or corporate branding. Favors natural fibers. Single woven belt. A single piece of jewelry — a thin copper wire bracelet on left wrist. Canvas work shoes, scuffed from relay station maintenance. Overall appearance is deliberately plain, suggesting spiritual practice rather than poverty."
+  },
+  "image_prompt": "A lean 31-year-old Black man with shaved head and a single amber-glowing fiber optic braid at crown, sitting cross-legged in meditative stillness. Dark warm brown skin, large quiet eyes, meticulously clean hands with long fingers. Wearing simple linen shirt and dark trousers, copper wire bracelet. Background: decommissioned cyberpunk transit relay station interior, faint electromagnetic field visualization in air, soft amber light from his braid creating gentle glow. Cinematic lighting emphasizing stillness and spiritual focus. 23rd-century cyberpunk setting. Mood: contemplative, austere, charged with quiet intention. --ar 2:3 --v 6"
 }

@@ -203,5 +203,25 @@
     "Déjà Vu",
     "VOSS"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Northern European / East Asian — likely German-Scandinavian paternal line with secondary Japanese or Korean ancestry",
+    "height_cm": 188,
+    "weight_kg": 79,
+    "build": "Lean and naturally tall with deliberate postural control — no excess muscle mass, but the kind of structured fitness that comes from discipline rather than vanity. Shoulders held level, core engaged at rest.",
+    "hair_color": "Dark brown with intentional silver at temples",
+    "hair_style": "Conservative executive cut — precisely maintained, parted, no product visible. The silver is never dyed out; it's strategically maintained as a trust signal.",
+    "hair_length": "Short",
+    "eye_color": "Pale gray-blue with subtle neural interface points at the iris periphery — visible only under direct light",
+    "skin_tone": "Cool medium tone with the faint underlying warmth of mixed heritage; unnaturally even complexion",
+    "complexion": "Facially symmetrical in a way that reads as subtly artificial — dermal optimization has removed minor asymmetries and optimized for the Halo effect. Jawline is precise. Skin is clear, moisturized, unmarred. The overall effect is 'trustworthy executive' rather than 'handsome'; memorable for professionalism, not appearance.",
+    "distinguishing_marks": [
+      "A thin, pale scar runs along the left clavicle — approximately 8cm long, consistent with surgical access or combat knife work from 15+ years prior",
+      "Nearly invisible microinjection ports along the interior of both wrists, partially concealed by custom cufflinks"
+    ],
+    "visible_augmentations": "The augmentations are designed for invisibility. Neural interface points around the iris are visible only in specific lighting. The dermal optimization work is evident only to someone trained to recognize it — subtle over-symmetry, perfect skin tone, minimal pore visibility. To most observers, he simply looks like a well-maintained 47-year-old executive. The cufflinks occasionally catch light to reveal circular ports, but this reads as high-end jewelry.",
+    "posture_movement": "Moves with the economy of someone who has trained to control every gesture. No fidgeting, no wasted motion. When seated, perfectly still — the kind of stillness that suggests internal processing rather than relaxation. Handshake is firm, duration exactly 2-3 seconds, grip pressure calibrated. Eye contact is constant but not aggressive. Speech is measured, with deliberate pauses that communicate confidence and control.",
+    "clothing_style": "Tailored suits in charcoal, navy, and dark gray — custom fit, likely Tier 1-2 corpo clothiers. Shirts are white, cream, or pale blue, always pressed to knife-edge precision. Ties are muted, expensive, subtle. Shoes are Italian leather, polished to mirror finish. Watches are understated — either vintage Rolex or modern minimalist design. Cufflinks in brushed steel or gold. The overall presentation is 'senior director who has moved between three multinational corporations' — the uniform of legitimate power. Even when conducting street operations, the suit remains; it is his camouflage and his weapon."
+  },
+  "image_prompt": "Professional male corporate executive in tailored charcoal suit, age 47, tall and lean with silver-threaded dark hair swept back, pale gray-blue eyes with subtle cybernetic interface points visible under studio lighting, cool medium complexion showing perfectly symmetrical dermal optimization, crisp white dress shirt with high-end brushed steel cufflinks revealing faint microinjection ports, polished Italian leather shoes, standing in geometric boardroom lighting with cool blue-white panels, hands at rest showing precise posture control, expression neutral and trustworthy with the calculated friendliness of someone who has closed billion-credit deals, cyberpunk corporate intelligence operative aesthetic, professional portrait studio with minimalist background, sharp focus, photorealistic, high contrast lighting, subtle chrome and glass reflections, cinematic--ar 2:3 --v 6"
 }

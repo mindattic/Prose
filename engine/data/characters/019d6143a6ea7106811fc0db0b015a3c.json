@@ -180,5 +180,27 @@
     "Ringo Corponation",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East African (Amharic/Ethiopian) / Polish",
+    "height_cm": 173,
+    "weight_kg": 61,
+    "build": "Whip-thin and wiry, with the restless musculature of someone who works constantly with their hands. Minimal body fat, visible forearm definition from years of soldering and equipment assembly.",
+    "hair_color": "Black, natural",
+    "hair_style": "Shaved head with a single long braid down the back, roughly 40cm, tipped with a small copper weight",
+    "hair_length": "Shaved except for single braid",
+    "eye_color": "Deep brown, shifting involuntarily with emotional state — ranges from warm amber (contentment) to steel-gray (anxiety) to deep purple (creative intensity)",
+    "skin_tone": "Deep brown with warm undertones, characteristic of East African heritage",
+    "complexion": "Sharp facial features, high cheekbones, angular jaw. Skin is clear but often bears evidence of work — faint solder burns on the right side of his neck, permanent calluses on fingertips and palms, perpetual traces of machine oil in his cuticles despite regular washing",
+    "distinguishing_marks": [
+      "Thin white scar across the left knuckle, from a soldering iron accident three years ago",
+      "Faint burn marks (dark brown discoloration) on the inside of both forearms where subdermal vibration receivers were implanted",
+      "Small copper-colored subskin implant ports visible along the inner left forearm, arranged in a vertical line",
+      "Grease stain (usually present) on the left shoulder or front of his shirt, varies in location and darkness"
+    ],
+    "visible_augmentations": "Emotional-state irises (the color shift is immediate and noticeable, creating an uncanny 'tells' effect). Subdermal vibration receiver implant scars and port access points along both forearms are visible when he wears short sleeves or pushed-up sleeves (his default). Tympanic dampeners are invisible (internal ear modification). No external chrome or obvious cybernetics — all augmentations are discrete.",
+    "posture_movement": "Perpetually restless, fidgeting with objects in his pockets or air-conducting invisible frequencies with his hands. His movements are precise and musical even when still — a tendency to sway slightly as if listening to inaudible sound. When engaged in conversation about his work, his whole body becomes animated. At rest or in social discomfort, he tends to fold inward, arms crossed or hands busy with something small.",
+    "clothing_style": "Uniform-like consistency: dark (black or charcoal) loose-fitting tech wear with multiple chest pockets, cargo pants with deep pockets for tools and salvage, worn worker's jacket (usually Dickies or equivalent surplus). Functional, Tier 4 aesthetic — neither corpo-clean nor destitute, but worn through genuine use rather than fashion statement. Boots are always heavy-duty (steel-toed, repaired multiple times). Copper or dark metal jewelry minimal — usually just the braid weight. Perpetual faint smell of solder flux and machine oil."
+  },
+  "image_prompt": "Cyberpunk portrait of a lean, dark-skinned East African-Polish man, age 29, shaved head with single long braided tail tipped in copper, wearing dark functional tech wear with multiple pockets and visible forearm implant scars. His eyes are shifting deep brown to amber-gold, luminous and uncanny. He stands in a basement workshop filled with electronic equipment and salvage, neon blue and purple LEDs casting hard shadows. His hands are raised as if conducting invisible sound waves. Solder smoke wisps around him. Moody, introspective, intense focus. Shot with 50mm equivalent lens, cinematic lighting with side-key light emphasizing implant scars and eye glow. Dark, slightly grainy film aesthetic. --ar 2:3 --v 6"
 }

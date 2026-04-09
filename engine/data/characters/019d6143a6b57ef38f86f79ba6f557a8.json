@@ -14,7 +14,7 @@
   "age": 38,
   "status": "active",
   "location": "The Meridian Core (works); The Circuit (lives), near LaSalle and Madison",
-  "description": "Rorke Vassiliev is a senior infrastructure engineer for Axiom Structural Solutions, the Spire-contracted firm responsible for maintaining and expanding the data-physical architecture that keeps the Meridian Core's buildings intelligent, its transit nodes synchronized, and its environmental systems from killing everyone inside them. He is tall and angular with a narrow face, pale skin that rarely sees unfiltered light, and the kind of posture that comes from spending most of his waking hours interfacing with systems rather than people — slightly forward, head inclined, as though perpetually leaning toward a screen. He keeps his dark hair short and his clothes expensive in a deliberately understated way, the corporate-adjacent aesthetic of someone who earns well but performs modesty about it. His augmentations are high-end and largely invisible.\n\nHe is also, under a carefully maintained operational identity, one of the more consequential infrastructure saboteurs operating in Meridian 88 — a fact that would end his career, his freedom, and most likely his life if it became known to his employers. His targets are selective and his methods are slow: he does not blow things up. He degrades. He introduces subtle errors into maintenance schedules, creates cascading inefficiencies in building management systems, routes data through nodes that can later be accessed by people who shouldn't have access. He has, over eight years, quietly contributed to three major structural 'malfunctions' in Spire-adjacent developments that displaced luxury tenants and stalled corporate expansion into the Circuit. He considers this proportionate. He does not consider it enough.\n\nThe dissonance of his existence — drawing a substantial corporate salary to maintain the systems he is also quietly breaking — has not driven him to crisis but has instead produced a very particular kind of self-possession. He has become expert at compartmentalization, at maintaining separate registers of reality, at being genuinely useful and genuinely dangerous in the same body. He is not sure this is healthy. He has decided it doesn't matter.",
+  "description": "Rorke Vassiliev is a senior infrastructure engineer for Axiom Structural Solutions, the Spire-contracted firm responsible for maintaining and expanding the data-physical architecture that keeps the Meridian Core's buildings intelligent, its transit nodes synchronized, and its environmental systems from killing everyone inside them. He is tall and angular with a narrow face, pale skin that rarely sees unfiltered light, and the kind of posture that comes from spending most of his waking hours interfacing with systems rather than people — slightly forward, head inclined, as though perpetually leaning toward a screen. He keeps his dark hair short and his clothes expensive in a deliberately understated way, the corporate-adjacent aesthetic of someone who earns well but performs modesty about it. His augmentations are high-end and largely invisible.\n\nHe is also, under a carefully maintained operational identity, one of the more consequential infrastructure saboteurs operating in GLMZ — a fact that would end his career, his freedom, and most likely his life if it became known to his employers. His targets are selective and his methods are slow: he does not blow things up. He degrades. He introduces subtle errors into maintenance schedules, creates cascading inefficiencies in building management systems, routes data through nodes that can later be accessed by people who shouldn't have access. He has, over eight years, quietly contributed to three major structural 'malfunctions' in Spire-adjacent developments that displaced luxury tenants and stalled corporate expansion into the Circuit. He considers this proportionate. He does not consider it enough.\n\nThe dissonance of his existence — drawing a substantial corporate salary to maintain the systems he is also quietly breaking — has not driven him to crisis but has instead produced a very particular kind of self-possession. He has become expert at compartmentalization, at maintaining separate registers of reality, at being genuinely useful and genuinely dangerous in the same body. He is not sure this is healthy. He has decided it doesn't matter.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -246,7 +246,7 @@
   "related_entities": [
     "The Meridian Core",
     "Meridian Core",
-    "Meridian 88",
+    "GLMZ",
     "The Circuit",
     "Helix Biosystems Vagal Resonance Dampener",
     "The Spire",
@@ -257,5 +257,25 @@
     "Slagworks Industrial",
     "The Pale Mile"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Eastern European / Russian (Vassiliev patronymic suggests Slavic roots, though the Ubiquitous Diaspora likely carries unacknowledged secondary lineages)",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Lean and angular, almost ascetic — the build of someone who exercises for neurological benefit rather than aesthetics. Narrow shoulders, minimal body fat, the kind of physique that reads as disciplined rather than athletic.",
+    "hair_color": "Very dark brown, almost black",
+    "hair_style": "Precisely cut short, styled back with minimal product. Maintained weekly. No visible gray despite age.",
+    "hair_length": "Short",
+    "eye_color": "Pale gray-blue, augmented with subtle neural interface indexing visible as faint metallic tracery at the iris periphery under direct light",
+    "skin_tone": "Very pale — the complexion of someone who works indoors under synthetic lighting. Cool undertones typical of Eastern European heritage.",
+    "complexion": "Narrow, angular face with high cheekbones and a sharp jawline. Skin is clear and well-maintained but shows the slight translucence of chronic artificial light exposure. Expression defaults to neutral focus. Minimal facial hair, clean-shaven daily.",
+    "distinguishing_marks": [
+      "Faint linear scar along the left temple, approximately 3cm, partially concealed by hairline — old injury, well-healed, consistent with early-career industrial accident",
+      "Barely visible micro-scarring across both palms, consistent with repeated precision surgical augmentation interface points"
+    ],
+    "visible_augmentations": "The haptic feedback gloves are worn during work shifts — matte black synthetic leather with embedded sensor node arrays visible as subtle raised geometry across knuckles and fingertips. Under certain lighting, faint opalescent tracery visible at the base of the skull suggests high-end neural interface hardware. No chrome, no ostentatious modification — everything Spire-tier and deliberately subtle.",
+    "posture_movement": "Habitually leans forward slightly, head inclined as though interfacing with invisible architecture. Movements are economical and precise — no wasted motion. When walking, his gait is efficient rather than relaxed. When seated, he unconsciously assumes interfaces-ready posture. His hands move with particular precision and deliberation.",
+    "clothing_style": "Expensive and deliberately modest. Favors high-end minimalist corporate-adjacent aesthetic: tailored dark charcoal or black technical-weave shirts, fitted but not fashionable. Spire-brand smart-fabric components that regulate temperature. Expensive sneakers (Axiom-subsidiary brand, Tier 1-2 grade) that show minimal wear. No jewelry. A long dark technical coat for commutes, expensive in construction but aesthetically understated. Everything performs function; nothing performs status. The overall effect is someone who has money but considers advertising it to be poor taste."
+  },
+  "image_prompt": "Portrait of a lean, angular Slavic man in his late 30s with very pale skin and dark hair cut short and precise. Cool gray-blue eyes with subtle technological tracery visible at the iris edges. Narrow face with high cheekbones, neutral expression suggesting deep focus. Wearing an expensive matte-black technical shirt, tailored and understated. Haptic feedback gloves with visible micro-sensor arrays on knuckles. Posture slightly forward-inclined as though perpetually leaning toward invisible systems. Cyberpunk aesthetic, corporate infrastructure engineer, Tier 1-2 tech aesthetic. Soft clinical lighting with subtle blue-green undertones suggesting synthetic environments and digital overlay. Clean, high-end, deliberately unglamorous. Professional headshot with subtle dystopian undertones. --ar 2:3 --v 6"
 }

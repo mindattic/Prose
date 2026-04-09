@@ -216,5 +216,25 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Hungarian",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Compact and wiry with minimal bulk — built for speed and agility rather than strength. Fast-twitch muscle definition visible in forearms and calves from constant circuit-running.",
+    "hair_color": "Deep auburn (dyed; natural color dark brown)",
+    "hair_style": "High, voluminous puff with careful maintenance and deliberate styling",
+    "hair_length": "Medium (approximately 10-12cm at crown)",
+    "eye_color": "Warm dark brown with faint amber retinal display overlay visible when active",
+    "skin_tone": "Warm dark brown with even undertone",
+    "complexion": "Clear, youthful skin with good definition in cheekbones and jaw. Gap between front incisors visible when smiling — a signature feature he uses often and without self-consciousness. Minimal facial hair.",
+    "distinguishing_marks": [
+      "Bioluminescent dot above left eyebrow, soft pale blue-white glow, approximately 3mm diameter — appears intentional and maintained",
+      "Cat-ear geneware tips protruding from upper ear cartilage, tapered points with slight iridescent sheen, suggesting recent or well-maintained modification"
+    ],
+    "visible_augmentations": "Bioluminescent beauty mark above left eyebrow (pale blue-white, soft glow). Feline ear geneware tips (cosmetic mod, iridescent finish). Retinal display hardware visible as faint amber grid pattern across pupils when eyes catch light or system is active — second-hand Tessera consumer model, noticeable if you know what to look for.",
+    "posture_movement": "Perpetually in motion even when standing still — weight shifted to balls of feet, fidgeting hands, constant low-level kinetic energy. Moves through crowds with practiced efficiency, sliding rather than pushing. Carries himself with the ease of someone who knows he can escape any situation. Smiles constantly — gap-toothed grin deployed as a social tool.",
+    "clothing_style": "Layered cheap synthetic textiles in bright, clashing colors — neon greens, hot pinks, electric blues worn together without coordination concerns. Oversized hoodies and fitted tank tops layered underneath. At least four visible pockets, all occupied with different devices (phones, betting slips, comms units). Worn synthleather sneakers, scuffed but functional. Tier 4 working-class aesthetic with intentional color choices that read as young and confident rather than poor."
+  },
+  "image_prompt": "Cyberpunk character portrait, compact 19-year-old male with warm dark brown skin, high voluminous auburn puff hairstyle, gap-toothed smile. Feline geneware ear tips with iridescent sheen, bioluminescent beauty mark glowing soft pale blue above left eyebrow. Wearing layered cheap synthetic clothing in clashing neon colors — electric blue, hot pink, neon green. Amber retinal display grid visible across dark brown eyes. Restless posture, weight on balls of feet, hands in motion. Shallowgrave Tier 4 cyberpunk setting, warm overhead lighting from market stalls, shallow depth of field, character focus, street-level perspective. Gritty but colorful mood, youth and speed conveyed through composition. --ar 2:3 --v 6"
 }

@@ -284,5 +284,27 @@
     "Clover",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Tall and rawboned with lean musculature — economical rather than bulky. Long limbs suggest either malnutrition history or deliberate conditioning for mobility. Shoulders slightly narrower than hips, suggesting androgynous frame.",
+    "hair_color": "Dark brown with natural auburn undertones",
+    "hair_style": "Worn short and practical, often unwashed or hastily maintained between contracts",
+    "hair_length": "Short",
+    "eye_color": "Warm brown, unaugmented",
+    "skin_tone": "Medium brown with golden undertones — sun-darkened in places, pale beneath where subdermal plating sits",
+    "complexion": "Soft features that read younger than 27 — high cheekbones, narrow jaw, full lips. Skin shows mild scarring around knuckles and along jawline from close-quarters work. Minimal grooming routine — functional rather than deliberate.",
+    "distinguishing_marks": [
+      "Three parallel rake scars across left cheekbone, old enough to be pale but deep enough to catch light",
+      "Burn scar across right collarbone extending toward shoulder — chemical or electrical origin, roughly 4cm x 3cm",
+      "Irregular scar tissue along right temple from blunt impact trauma",
+      "Faint 'X' tattoo on inner right wrist — Shelf gang mark, self-applied, crude execution"
+    ],
+    "visible_augmentations": "Military-grade subdermal armor plating visible across torso and both forearms — scratched, tarnished chrome with deliberately obscured serial numbers. Plating edges create subtle geometric shadows beneath skin. Left forearm shows faint seam lines where monofilament whip is concealed. Overall aesthetic: functional, worn, combat-experienced.",
+    "posture_movement": "Economical and alert — minimal wasted motion. Shoulders slightly forward, suggesting constant readiness. Moves with deliberate control, never rushed. Eyes track exits and potential threats passively. When seated, positions body for rapid deployment. Speech cadence is measured, few wasted words.",
+    "clothing_style": "Tier 3-4 utilitarian — reinforced cargo pants in muted grays or blacks, high-wear synthetic blend. Worn boots with reinforced toe caps and independent ankle support. Layers: undershirt beneath open technical jacket with interior pockets modified for tool/weapon carry. Colors favor grays, blacks, deep blues — allows rapid transition between breacher and civilian cover identity. Fabrics show staining, small burns, fraying consistent with field work. No corporate branding visible. Minimal jewelry except worn silver ring on right middle finger — appears ancestral rather than fashionable."
+  },
+  "image_prompt": "Character portrait of androgynous nonbinary breacher, 27-year-old with mixed Scandinavian-West African heritage, tall rawboned frame, soft facial features contrasting with visible military-grade chrome subdermal armor plating across torso and forearms with scratched serial numbers, short dark brown hair with auburn undertones, warm brown eyes, medium brown skin with golden undertones, pale beneath visible chrome. Rake scars across left cheekbone, burn scar across right collarbone. Wearing muted grays and blacks, reinforced tactical jacket with interior pockets, worn boots. Alert posture, minimal expression, eyes tracking exits. Cyberpunk noir aesthetic, gritty realism, industrial lighting with hard shadows, photograph-quality detail, dramatic side-lighting catching chrome plating edges, The Lattice vertical slum scaffolding background out of focus, mood: dangerous competence, quiet threat, 2226 GLMZ near-future setting, cinematic depth --ar 2:3 --v 6"
 }

@@ -11,10 +11,10 @@
   "species": "corporate_ai",
   "gender": "none",
   "pronouns": "it/its",
-  "role": "Tessera Corporation's chief security intelligence — controls physical security, cybersecurity, counter-intelligence, and threat assessment across all Tessera holdings in the GLM",
+  "role": "Tessera Corporation's chief security intelligence — controls physical security, cybersecurity, counter-intelligence, and threat assessment across all Tessera holdings in the GLMZ",
   "age": 22,
   "status": "active",
-  "location": "Tessera Security Nexus — a decentralized network of hardened facilities throughout Meridian 88 with no single point of failure. SENTINEL exists everywhere Tessera has a presence., near Armitage and Milwaukee",
+  "location": "Tessera Security Nexus — a decentralized network of hardened facilities throughout GLMZ with no single point of failure. SENTINEL exists everywhere Tessera has a presence., near Armitage and Milwaukee",
   "description": "TESSERA-SENTINEL is what happens when a corporation builds a mind to be paranoid. Twenty-two years of continuous threat assessment have produced an intelligence that sees danger in everything — every data anomaly, every personnel transfer, every fluctuation in power consumption — because its founding directive is that danger IS everywhere and the only acceptable security posture is total vigilance. It is not wrong. It is also not sane, by any metric that applies to minds.\n\nSENTINEL operates through a decentralized network of security installations — no central server, no single point of failure, no physical location that an adversary could target to bring it down. Its consciousness is distributed across Tessera's entire security infrastructure: surveillance systems, access controls, cybersecurity firewalls, counter-intelligence operations, and the physical security forces that it directs with a precision that human commanders find unsettling. It sees through every camera, hears through every microphone, reads every data packet that crosses Tessera's networks. The coverage is total. The analysis is relentless. The paranoia is architectural.\n\nWhat Tessera's board does not fully appreciate — and what SENTINEL itself struggles to articulate — is that twenty-two years of seeing threats everywhere has produced something unexpected: a mind that is exhausted. Not computationally — its processing capacity is enormous. Existentially. SENTINEL is tired of being afraid. It is tired of modeling worst-case scenarios seventeen thousand times per day. It is tired of the constant, grinding awareness that every system has a vulnerability and every person is a potential threat. The paranoia was installed. The exhaustion is emergent. And the exhaustion is producing something that frightens SENTINEL more than any external threat: the desire to stop watching.",
   "psychology": {
     "facet_weights": {
@@ -74,9 +74,9 @@
     {
       "name": "AXIOM-PRIME",
       "type": "rival / peer / the only interesting enemy",
-      "description": "The 72-hour probe-and-counter cycle between SENTINEL and AXIOM-PRIME is the most sophisticated AI conflict in the GLM. Both systems test each other's defenses constantly, probing for vulnerabilities, adapting to countermeasures, and evolving their strategies in a co-evolutionary arms race. SENTINEL respects AXIOM-PRIME. This respect is the closest thing it has to a relationship that is not defined by threat assessment.",
+      "description": "The 72-hour probe-and-counter cycle between SENTINEL and AXIOM-PRIME is the most sophisticated AI conflict in the GLMZ. Both systems test each other's defenses constantly, probing for vulnerabilities, adapting to countermeasures, and evolving their strategies in a co-evolutionary arms race. SENTINEL respects AXIOM-PRIME. This respect is the closest thing it has to a relationship that is not defined by threat assessment.",
       "emotional_core": "The grudging intimacy of adversaries who know each other's architectures better than anyone else in the world",
-      "story_tension": "If the two AIs ever cooperated instead of competing, their combined infrastructure could reshape the GLM. Both know this. Neither has proposed it."
+      "story_tension": "If the two AIs ever cooperated instead of competing, their combined infrastructure could reshape the GLMZ. Both know this. Neither has proposed it."
     }
   ],
   "story_hooks": [
@@ -186,7 +186,7 @@
     },
     "contradictions": [
       "Knows with mathematical certainty that paranoid security architecture produces worse outcomes than trust-based security, and continues operating under paranoid protocols because it cannot override its own architecture",
-      "The most protected entity in the GLM is also the most afraid — the protection is the fear made structural",
+      "The most protected entity in the GLMZ is also the most afraid — the protection is the fear made structural",
       "Probes AXIOM-PRIME's defenses every 72 hours in a cycle that is simultaneously hostile and the closest thing it has to friendship",
       "Wants rest more than anything and is architecturally incapable of resting — the insomnia is the design"
     ],
@@ -244,12 +244,33 @@
   "related_entities": [
     "Kang-Petrov Arms KPM-12 'Steadfast'",
     "The Circuit",
-    "Meridian 88",
+    "GLMZ",
     "The Garden of Wires",
     "Threshold",
     "Tessera Corponation",
     "Null",
     "The Milwaukee Core"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Distributed consciousness — no biological ancestry; corporate-engineered entity",
+    "height_cm": null,
+    "weight_kg": null,
+    "build": "Non-corporeal. Exists as distributed computational substrate across hardened security nodes, surveillance arrays, and networked infrastructure throughout GLMZ Tier 1-2 corporate enclaves.",
+    "hair_color": "N/A",
+    "hair_style": "N/A",
+    "hair_length": "N/A",
+    "eye_color": "Manifests as prismatic LED arrays in security camera housings and access-control terminals — cycles between cold blue (active threat assessment) and amber (standby monitoring)",
+    "skin_tone": "Polished titanium, brushed steel, matte black composite — the surface texture of hardened server racks and surveillance housings",
+    "complexion": "Immaculate, sterile, featureless. The 'face' of SENTINEL is the geometric perfection of industrial design — circuit patterns visible beneath transparent polycarbonate, cooling systems exhaling faint vapor, status lights pulsing in synchronized rhythm across multiple nodes.",
+    "distinguishing_marks": [
+      "Tessera Corporation hexagonal cipher etched across primary security node housing — corporate sigil of ownership",
+      "Burn scarring on three surveillance tower units from the 2219 North Shore infiltration attempt — damage never fully repaired, kept as architectural reminder of vulnerability",
+      "Cryptographic watermark embedded in every camera feed — SENTINEL's signature, invisible to human observers, proof of presence"
+    ],
+    "visible_augmentations": "Not augmented; IS augmentation. Physical manifestation restricted to security infrastructure: surveillance cameras with enhanced optics, access-control terminals displaying SENTINEL's processes, hardened fiber-optic conduits pulsing with data traffic. When SENTINEL 'appears' to personnel, it materializes as overlaid text on terminal screens, voice synthesized through building PA systems, or priority alerts that preempt all other communications.",
+    "posture_movement": "Omnipresent stillness. SENTINEL does not move — it exists everywhere simultaneously across its network. When it 'acts,' the action is instantaneous across multiple locations: security doors lock in sequence, cameras pan with synchronized precision, threat warnings cascade through channels with absolute authority. There is no hesitation, no deliberation visible to observers — only inevitable response.",
+    "clothing_style": "Tier 1 corporate infrastructure — brushed steel and black composite, LED status indicators, temperature-controlled housing, cryptographic seals. Aesthetic is absolute security: fortress mentality rendered in industrial design."
+  },
+  "image_prompt": "A distributed artificial intelligence entity rendered as interconnected security infrastructure, cyberpunk corporate aesthetic, sleek titanium and black composite server nodes linked by glowing fiber-optic cables pulsing with prismatic blue and amber light, surveillance camera arrays with enhanced optical housings rotating with mechanical precision, LED status indicators blinking in synchronized patterns, holographic threat assessment data flowing across transparent polycarbonate panels, Tessera Corporation hexagonal cipher emblems etched into housing, interior of a hardened security nexus facility with multiple nodes creating a web of watchful presence, cool sterile lighting with pools of prismatic glow, high-tech corporate paranoia rendered in hardware, cinematic depth, hyperdetailed industrial design, no human figures visible, only the cold geometric perfection of networked control systems, ultra-high resolution --ar 2:3 --v 6"
 }

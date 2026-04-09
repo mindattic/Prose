@@ -175,5 +175,27 @@
     "Slagworks Industrial",
     "Sweeper-11"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Central Asian (Kazakh)",
+    "height_cm": 188,
+    "weight_kg": 68,
+    "build": "Lean and angular, still lengthening — all limbs and sharp corners, the kind of frame that looks perpetually mid-motion. Ropey muscle definition in forearms and shoulders from years of overhead spray work. Chest and torso still narrow, not yet filled out.",
+    "hair_color": "Dark brown, naturally textured, often matted with dried spray paint residue",
+    "hair_style": "Worn large and unbounded, deliberately uncontrolled — a crown of volume that reads as both artistic statement and practical neglect",
+    "hair_length": "Medium (shoulder length when loose)",
+    "eye_color": "Deep brown with amber undertone",
+    "skin_tone": "Medium warm brown, blending Ghanaian and Kazakh ancestry — lighter than pure West African, warmer than pure Kazakh, with an undertone that shifts in different light",
+    "complexion": "Sharp-featured face with high Ghanaian cheekbones, slightly prominent nose, defined jawline. Skin is generally clear but shows minor paint scars and chemical burns from careless solvent handling. Small scar on left temple (spray can accident at age 13). Perpetually tired eyes with dark circles — late-night painting schedule. Fingernails are permanently stained with multiple paint colors, especially reds and silvers.",
+    "distinguishing_marks": [
+      "Surgical-line scar on left temple, pale and thin, approximately 2cm long — spray can ricochet injury",
+      "Scattered micro-burns on knuckles and first two fingers of right hand from solvent exposure — appear as faint white speckles against skin",
+      "Faint chemical burn mark on left wrist, irregular shape, result of reactive topcoat contact",
+      "Small tattoo on inside right forearm: three vertical lines forming a stylized glyph (WALLSEED collective marker, home-done with suspect equipment)"
+    ],
+    "visible_augmentations": "Pair of cat ears (geneware, cosmetic-grade) protruding from crown of skull. Ears are dusty brown with darker brown tips, slightly furry, approximately 8cm tall. Ears can articulate and flatten against skull but lack fine motor control — movement is somewhat jerky and imprecise. Visible bio-integration seam around base of ears (pale scar line visible when ears flatten). No other visible augmentations.",
+    "posture_movement": "Moves with restless forward momentum — leans into direction of travel. Hands constantly gesture, rearranging invisible space, fingers twitching as if holding spray cans. When standing still, shifts weight frequently. When concentrating (looking at a wall, assessing a surface), head tilts and ears swivel toward object of focus — an unconscious tell that reveals attention. Cocky stride with slight shoulder roll, but this deflates quickly when genuinely threatened. Eyes dart — reading exits, sight lines, enforcement patterns.",
+    "clothing_style": "Tier 4-5 functional wear: oversized thermal hoodie (faded black, GLMZ Autonomous Transport logo faintly visible on back from thrift store), cargo pants with reinforced thigh pockets (spray cans and tools), scuffed low-top zero-G composite sneakers with one lace missing. Backpack is military surplus olive green, heavy with aerosol cans and sketchbooks. Fingers and sleeves stained with permanent paint. One wrist wraps in salvaged athletic tape (support for repetitive strain). No jewelry except the hand-done tattoo. Clothes fit loosely — either thrifted oversized or grown into the spaces. Everything smells faintly of propellant and acetone."
+  },
+  "image_prompt": "Portrait of a tall, lean 17-year-old boy with dark textured hair and high cheekbones blending West African and Central Asian heritage, medium warm brown skin tone with faint chemical burns on knuckles. Distinctive dusty brown cat ears with darker tips protruding from hair, capable of subtle movement. Sharp-featured face showing fatigue, amber-tinted brown eyes intense and calculating, small scar visible on left temple. Wearing oversized black thermal hoodie and cargo pants stained with spray paint residue, colors building up on fingers. Setting: dystopian urban cyberpunk, Highland Park Autonomous Zone, concrete wall with incomplete graffiti mural visible behind him. Moody neon-filtered lighting, blues and magentas casting dramatic shadows across angular features. Film grain, gritty street aesthetic, spray paint cans scattered in foreground. Character carries himself with restless forward momentum, hands positioned mid-gesture. --ar 2:3 --v 6"
 }

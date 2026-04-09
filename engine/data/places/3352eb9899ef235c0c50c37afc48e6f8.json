@@ -44,8 +44,16 @@
     "Freelancers who've been noticed by someone with taste and resources"
   ],
   "notable_locations": [
-    "Lux's bar — where the synthetic mixologist reads you and serves what you need",
-    "The window seats — four sides of Laceworks panorama, the district mapped in light"
+    {
+      "name": "Lux's bar",
+      "description": "where the synthetic mixologist reads you and serves what you need",
+      "tags": []
+    },
+    {
+      "name": "The window seats",
+      "description": "four sides of Laceworks panorama, the district mapped in light",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.8856,

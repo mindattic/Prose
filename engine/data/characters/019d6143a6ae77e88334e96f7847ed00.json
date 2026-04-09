@@ -11,7 +11,7 @@
   "species": "cyborg_ai",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Bounty hunter operating across Meridian 88's ungoverned zones — originally human, now approximately 12% biological by mass. The remaining biology is the brain, parts of the spinal cord, and fragments of the original endocrine system.",
+  "role": "Bounty hunter operating across GLMZ's ungoverned zones — originally human, now approximately 12% biological by mass. The remaining biology is the brain, parts of the spinal cord, and fragments of the original endocrine system.",
   "age": 52,
   "status": "active",
   "location": "No fixed address — moves between the Circuit, Old Harbor, and the Shelf. Maintains three equipment caches. Sleeps in industrial spaces that can support his power requirements., near Michigan Ave and Roosevelt",
@@ -85,7 +85,7 @@
     "Tessera recalls the trial subjects for 'maintenance.' The maintenance is actually data harvesting. Razorback must decide whether to comply, run, or fight the corporation that made him.",
     "Mara Dunning is in danger. The bounty hunter who has not felt anything in twenty-eight years discovers that the part of him that loves her is not in the 12% that's biological."
   ],
-  "narrative_function": "Razorback is the cost of augmentation made walking — the endpoint of the body-as-commodity logic that pervades Meridian 88. He is what happens when the corporation takes everything except the brain and the brain spends thirty years wondering if that counts as alive. He is Kyle's dark future: a man who became a weapon and forgot the person who held it.",
+  "narrative_function": "Razorback is the cost of augmentation made walking — the endpoint of the body-as-commodity logic that pervades GLMZ. He is what happens when the corporation takes everything except the brain and the brain spends thirty years wondering if that counts as alive. He is Kyle's dark future: a man who became a weapon and forgot the person who held it.",
   "augmentations": "Full military-grade prosthetic body — only 12% biological (brain, partial spinal cord, endocrine fragments). Reinforced titanium skeleton, synthetic musculature, integrated weapons systems, hardened comms suite, neural bridge with zero-latency biological integration.",
   "daily_life": "Bounty hunting, body maintenance, power management. The three activities occupy approximately equal time. Between contracts, he exists in industrial spaces that can support his power requirements and does not know what to do with the silence.",
   "affiliation": "Independent — formerly Tessera Military Augmentation Program",
@@ -324,5 +324,27 @@
     "Titanium",
     "Tibor Osei-Svanstrom"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Northern European / East Asian (presumed from surname Dunning, though identity has been mechanically reconstructed)",
+    "height_cm": 187,
+    "weight_kg": 312,
+    "build": "Heavily augmented cyborg frame — original human torso (lean, muscular pre-amputation baseline) mounted on reinforced titanium skeleton with synthetic musculature. The biological portion is visibly narrower than the mechanical lower body, creating an asymmetrical silhouette. Overall frame is rigid, economical in movement, built for efficient force application rather than organic grace.",
+    "hair_color": "Dark brown, graying at temples",
+    "hair_style": "Short, practical, minimal grooming — functional rather than styled",
+    "hair_length": "Short",
+    "eye_color": "Natural brown, but surrounded by faint scar tissue from neural bridge integration points",
+    "skin_tone": "Pale, warehouse-dweller complexion with uneven pigmentation where synthetic shoulder joints meet biological neck",
+    "complexion": "Weathered face — lines from six years of chronic pain before augmentation, now static. Jaw is set in a default state of minimal tension. Skin shows signs of irregular self-care; scars around the augmentation interface at his neck and collarbone are pale and clean but visible.",
+    "distinguishing_marks": [
+      "Surgical scarring across the entire upper torso where the biological/mechanical interface was grafted — clean lines, professional work, visible at neckline and under open shirts.",
+      "Faint port markings along the right temple where the neural bridge was installed — small circular impressions like mounting points.",
+      "Burn scarring on the biological left shoulder from a cargo platform arc flash, pre-augmentation.",
+      "Tattoo on his biological right forearm: a stylized dock worker's loading hook and an anchor, faded from age and lack of sun exposure — the only marker of his previous life that he kept."
+    ],
+    "visible_augmentations": "The entire lower body is visibly mechanical — titanium frame and synthetic musculature are not disguised. The joints of his arms show layered armor plating at the shoulders and elbows. A hardened comms unit is visible as a metallic ridge along his right jaw, just beneath the skin. Faint LED status indicators glow amber/red at the base of his skull when he's running power-intensive processes. His hands are synthetic but articulated with near-human dexterity; the fingers have subtle textured pads suggesting tactile sensors. Integrated weapons systems are not visually obvious at rest, but bulky capacitor banks are visible through translucent panels in his torso when powered up.",
+    "posture_movement": "Stands with minimal sway — no fidgeting, no unnecessary adjustments. Moves with mechanical precision that reads as eerie to organic observers; there is no micro-fluctuation in balance, no breathing, no small autonomous adjustments the body makes to stay upright. When he walks, each stride is calculated and efficient. His head turns on a full rotation axis without moving his torso. In conversation, he maintains eye contact with unblinking focus that suggests he is running threat assessment protocols in parallel.",
+    "clothing_style": "Tier 3-4 working gear adapted for his augmented form. Heavy reinforced jacket (Kevlar-cotton blend, dark gray) with oversized shoulders to accommodate the mechanical frame. Cargo pants with reinforced internal structure to interface with his synthetic legs. All clothing is functional, durable, designed to be washed and repaired rather than replaced. No logos or status symbols — pure utility. Boots are heavy industrial, sole-attached directly to his prosthetic feet. When running contracts, he adds a light ballistic vest and a long coat that hides the silhouette of his weapons systems. No jewelry. No customization. His appearance is deliberately unremarkable except for the obvious fact of his augmented body."
+  },
+  "image_prompt": "A 52-year-old male cyborg bounty hunter, 187cm tall, heavily augmented military-grade prosthetic body with visible titanium frame and synthetic musculature below the waist, pale weathered face with graying dark hair worn short, natural brown eyes, surgical scarring visible at the neck and shoulders where biological brain and spinal cord interface with mechanical body, faint LED status indicators glowing amber at the base of the skull, dark gray reinforced Kevlar jacket and heavy cargo pants, industrial boots, standing in a dim warehouse near Michigan Ave in the GLMZ, concrete floor with scattered equipment caches, moody blue-gray industrial lighting, cyberpunk noir aesthetic, photorealistic, detailed mechanical joints and armor plating visible, expression blank and focused, background blurred shipping containers and power conduits, cinematic depth of field --ar 2:3 --v 6"
 }

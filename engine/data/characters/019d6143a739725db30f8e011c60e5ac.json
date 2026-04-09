@@ -270,5 +270,26 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Bashir Quansah-Mehrotra"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Bantu-East African / Scandinavian-Nordic",
+    "height_cm": 185,
+    "weight_kg": 68,
+    "build": "Tall and angular with the lean musculature of someone who has spent eight decades moving deliberately. Shoulders slightly rounded from decades hunched over archival terminals, but spine still straight by force of will. Long-limbed and economical in their frame.",
+    "hair_color": "Silver-white",
+    "hair_style": "Locs gathered into a loose crown-pin, with at least six data chits of varying ages woven throughout as both functional storage and inadvertent jewelry",
+    "hair_length": "Long",
+    "eye_color": "Deep violet iris with concentric amber ring patterning (cosmetically modified geneware)",
+    "skin_tone": "Deep warm brown with the ashen undertone of someone who spent four decades under artificial lighting",
+    "complexion": "Face lined with the specific geography of concentration—deep creases between brows, laugh lines unused for years, skin texture weathered but well-maintained. Minimal facial hair, meticulously groomed. Expression tends toward stillness.",
+    "distinguishing_marks": [
+      "Thin white scar running along the inside of the right wrist, barely visible—souvenir of the 2181 vault accident that took three fingers",
+      "Faint stippled burn pattern across the back of the right forearm, consistent with electrical contact damage from the same incident",
+      "Age spots on the backs of both hands, darker on the left, lighter on the right where the prosthetics begin"
+    ],
+    "visible_augmentations": "Right hand visibly augmented: index, middle, and ring fingers replaced with matte-grey haptic-interface prosthetics approximately 2mm longer than biological scale, with hairline circuitry visible under translucent synthetic skin. Fingers move with mechanical precision. Violet irises with amber ring-patterning are immediately visible. Cortical index tag is subcutaneous and undetectable without scanning.",
+    "posture_movement": "Moves with deliberate, economical precision—no wasted motion. Hands move first; the rest of the body follows. When sitting, they adopt a posture of absolute stillness, the kind that suggests deep listening rather than passivity. When walking, gait is steady and upright despite age. Long pauses between speaking and moving, as though calculating weight and balance.",
+    "clothing_style": "Tier 3-4 utilitarian archive worker aesthetic: well-maintained grey linen shirt with multiple pockets for data chits and archival tools, dark wool slacks, reinforced black canvas work boots (same brand and model for the past six years). A long charcoal cardigan—hand-knitted, old—worn over everything in the climate-controlled vault. No jewelry except the data chits in their hair. Clothing is scrupulously clean but shows careful mending; nothing is new, everything is functional."
+  },
+  "image_prompt": "Portrait of a tall, angular 83-year-old with deep brown skin and silver-white locs pinned with scattered data chits, wearing a matte grey haptic-interface prosthetic hand. Deep violet eyes with amber ring patterning. Wearing a well-worn grey linen shirt and charcoal cardigan, seated in a climate-controlled archive room with dim cool lighting. Cyberpunk archival aesthetic, stillness and dignity, precise and quiet. Dark background with soft overhead fluorescent fill light. Hands visible and detailed. Hyper-realistic, solemn atmosphere. --ar 2:3 --v 6"
 }

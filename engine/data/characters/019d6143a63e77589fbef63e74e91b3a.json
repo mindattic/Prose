@@ -31,7 +31,7 @@
     "core_desires": [
       "Stability — a place to sleep that's the same place two nights running",
       "To prove everyone who dismissed them catastrophically wrong",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Control — micromanages everything within reach to compensate for the chaos everywhere else",
@@ -156,7 +156,7 @@
     },
     "strengths": [
       "pain tolerance beyond normal limits",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "substance dependency — functional but fragile",
@@ -282,5 +282,26 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Lean and angular, with the precise musculature of someone who trains systematically rather than for bulk. Long limbs suggest a runner's frame — efficient rather than imposing.",
+    "hair_color": "Dark brown with premature silver at the temples",
+    "hair_style": "Worn short and neat, military-regulation simple",
+    "hair_length": "Short",
+    "eye_color": "Hazel with slight amber undertone",
+    "skin_tone": "Medium brown with warm undertones — blended Scandinavian pallor and West African depth",
+    "complexion": "Sharp cheekbones, defined jawline. Skin is clear but bears the texture of someone who has spent time in rough conditions. Expression is controlled, rarely at rest. Fine lines around the eyes suggest squinting or sustained focus.",
+    "distinguishing_marks": [
+      "Thin white scar along the left temple, barely visible unless light catches it at the right angle — old injury, professionally healed",
+      "Burn scar on the right forearm (inner side, 8cm x 4cm) — pale and mottled, consistent with chemical or thermal contact",
+      "Surgical scar running vertically along the right side of the ribcage (approximately 12cm) — clean, professional closure, approximately 5 years old"
+    ],
+    "visible_augmentations": "Chrome plating visible around the right shoulder and upper chest where the internal drug synthesizer connects to the surface — sleek titanium-alloy engineering with faint bioluminescent indicator lines that pulse softly blue when the synthesizer is active. The chrome is left exposed intentionally, a statement rather than camouflage.",
+    "posture_movement": "Moves with deliberate efficiency — no wasted motion, no fidgeting. Stands with weight balanced and slightly forward, ready to shift direction. Eyes track exits and sightlines constantly. Handshake is firm but brief. Speech is measured, with calculated pauses that suggest either precision or careful emotional suppression.",
+    "clothing_style": "Favors Tier 3-4 pragmatism — durable synthetics in dark colors (black, charcoal, deep blue) that resist wear and staining. Typically wears a fitted longline jacket with internal pockets over a simple turtleneck. Pants are tactical cut with reinforced seams. Shoes are unmarked but expensive, chosen for quiet movement and ankle support. No visible branding or status markers — the opposite of advertising. When maintaining cover, adopts identical neutrality to avoid memorable details."
+  },
+  "image_prompt": "Cyberpunk character portrait, tall lean African-Scandinavian male, age 32, dark brown hair with silver at temples, hazel eyes, sharp defined cheekbones, cool controlled expression. Visible chrome augmentation on right shoulder and chest with faint blue bioluminescent lines, titanium-alloy plating. Dark tactical clothing — fitted black longline jacket over charcoal turtleneck, professional infiltrator aesthetic. Scar visible along left temple. Standing in Crucible Square, neon market stall lights reflected in chrome, dystopian evening lighting with warm amber and cold cyan contrast, shallow depth of field, hyper-realistic skin texture, sharp focus on face and augmentation detail. Cinematic noir cyberpunk. --ar 2:3 --v 6"
 }

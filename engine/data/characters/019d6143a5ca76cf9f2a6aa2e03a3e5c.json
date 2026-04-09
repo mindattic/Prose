@@ -14,7 +14,7 @@
   "age": 19,
   "status": "active",
   "location": "Old Harbor / The Shelf (transient between both), near Wacker and State",
-  "description": "Brecken Yılmaz-Osei is nineteen years old and moves through Meridian 88 the way water moves through a cracked foundation — finding every gap, never in the same route twice, noticed by almost no one. They are slight and quick, of Turkish-Ghanaian descent, with a shaved head that grows in uneven patches due to a childhood illness, warm brown skin, and the specific kind of watchfulness that develops in people who spent their formative years needing to read adults accurately. Their face defaults to a pleasantly blank expression that people consistently misread as vacancy; it is in fact the opposite.\n\nThey run packages, messages, and occasionally people between the lower districts — primarily between Old Harbor's dockworker communities and The Shelf's warren economy — using a battered cargo-assist rig (a motorized platform cart they call 'the sled') that they maintain themselves with parts sourced from three different scrap markets. They have no fixed address, sleeping in a rotation of arrangement-rooms and borrowed floors. They are not part of any organization, which several organizations have found inconvenient, as Brecken has a gift for being present at moments that matter — for picking up the dropped data chip, for being the only person in the corridor when the conversation happened, for remembering everything with a clarity that has no augmentation behind it. Their memory is entirely biological and entirely extraordinary.\n\nBrecken did not choose to become an archivist. It happened because they never throw anything away — physically or mentally — and because the world kept handing them things that seemed important and had nowhere else to go. They have, stored in the sled's concealed compartment, a physical collection of objects, notes, and copied documents that constitute an accidental record of things various powerful people would prefer unrecorded. They do not fully understand what they have. They understand enough to know that not understanding it is currently keeping them alive.",
+  "description": "Brecken Yılmaz-Osei is nineteen years old and moves through GLMZ the way water moves through a cracked foundation — finding every gap, never in the same route twice, noticed by almost no one. They are slight and quick, of Turkish-Ghanaian descent, with a shaved head that grows in uneven patches due to a childhood illness, warm brown skin, and the specific kind of watchfulness that develops in people who spent their formative years needing to read adults accurately. Their face defaults to a pleasantly blank expression that people consistently misread as vacancy; it is in fact the opposite.\n\nThey run packages, messages, and occasionally people between the lower districts — primarily between Old Harbor's dockworker communities and The Shelf's warren economy — using a battered cargo-assist rig (a motorized platform cart they call 'the sled') that they maintain themselves with parts sourced from three different scrap markets. They have no fixed address, sleeping in a rotation of arrangement-rooms and borrowed floors. They are not part of any organization, which several organizations have found inconvenient, as Brecken has a gift for being present at moments that matter — for picking up the dropped data chip, for being the only person in the corridor when the conversation happened, for remembering everything with a clarity that has no augmentation behind it. Their memory is entirely biological and entirely extraordinary.\n\nBrecken did not choose to become an archivist. It happened because they never throw anything away — physically or mentally — and because the world kept handing them things that seemed important and had nowhere else to go. They have, stored in the sled's concealed compartment, a physical collection of objects, notes, and copied documents that constitute an accidental record of things various powerful people would prefer unrecorded. They do not fully understand what they have. They understand enough to know that not understanding it is currently keeping them alive.",
   "psychology": {
     "facet_weights": {
       "wound": 0.58,
@@ -243,7 +243,7 @@
     "Crucible Industries Forge-454 'Hammerfall'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "FOUNDATION",
     "The Shelf",
     "Kelpline Logistics HarbourSkate MX-40 Magnetic Levitation Cargo Sled",
@@ -252,5 +252,27 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Tin Man"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Turkish / Ghanaian",
+    "height_cm": 162,
+    "weight_kg": 52,
+    "build": "Slight and wiry, built for speed rather than strength; lean muscle from years of manual courier work and constant motion; no excess anywhere",
+    "hair_color": "Dark brown, naturally",
+    "hair_style": "Shaved head kept short, grows in uneven patches across the scalp due to childhood illness; pattern is asymmetrical on left side",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown, warm",
+    "skin_tone": "Warm brown with golden undertones, reflecting mixed Turkish and West African heritage",
+    "complexion": "Face defaults to a pleasantly blank, almost vacant expression that masks acute watchfulness; fine-featured, sharp jawline, high cheekbones; skin weathered slightly by sun exposure and street living but clean; minimal grooming investment beyond functional necessity",
+    "distinguishing_marks": [
+      "Thin horizontal scar across left forearm from childhood injury, faded but visible",
+      "Calluses on palms and fingers from maintaining the sled and handling cargo",
+      "Uneven hair growth pattern on shaved scalp, particularly sparse on left side and back",
+      "Dark circles under eyes from habitual light sleep patterns, permanent feature"
+    ],
+    "visible_augmentations": "None visible. Their extraordinary biological memory and the sled's mechanical lock/signal-dampening skin are entirely hidden from casual observation.",
+    "posture_movement": "Moves with economical grace, never wasteful; walks like someone constantly calculating vectors and sightlines; stillness is active rather than passive—they are always watching, always ready to move. Hands are frequently occupied or positioned near the sled's controls. Sits with spine straight but shoulders slightly rounded, posture that minimizes their profile.",
+    "clothing_style": "Tier 4-5 functional wear: scavenged, patched, layered. Oversized grey cargo vest with multiple pockets over a dark, fitted undershirt; reinforced trousers with an explicit tool belt; scuffed ankle-height boots resoled at least twice. Colors are muted—greys, blacks, dark browns. Fabrics are durable synthetic blends, chosen for wear resistance not aesthetics. No jewelry, no brands, nothing that draws attention. All clothing has been modified slightly for ease of movement and storage capacity."
+  },
+  "image_prompt": "Cyberpunk portrait of a 19-year-old non-binary courier with warm brown skin and Turkish-Ghanaian heritage, shaved head with uneven sparse patches of dark hair growth on left side, dark watchful eyes, sharp jawline. Slight, wiry build. Wearing oversized grey cargo vest over dark fitted undershirt and reinforced trousers with tool belt, scuffed boots. Standing beside a battered motorized cargo-assist rig (sled) loaded with packages. Face shows pleasant blankness masking acute alertness. Set in Old Harbor docks at dusk, industrial warehouses and harbor lights in background, neon signs reflecting off wet concrete. Dramatic side lighting, cool blue-grey color palette with hints of warm dock lighting. Hyper-detailed, sharp focus on face and hands, gritty realism, street-level perspective, 35mm lens aesthetic --ar 2:3 --v 6"
 }

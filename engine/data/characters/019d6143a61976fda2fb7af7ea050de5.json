@@ -253,5 +253,25 @@
     "Handed",
     "The Pure Hand"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Ghanaian / Japanese",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and wiry with minimal body fat; shoulders slightly narrow but defined through constant physical work; the build of someone who doesn't eat regularly but moves with precision",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Short, kept practical and clean; styled close to the scalp, minimal styling effort",
+    "hair_length": "Short",
+    "eye_color": "Near-black with warm undertones, alert and observant",
+    "skin_tone": "Warm bronze undertone from Ghanaian heritage with slight pale cast from irregular sun exposure and sleep deprivation",
+    "complexion": "Fine-featured with his mother's broad cheekbones creating angularity; skin is generally clear but shows the pallor of someone living on irregular sleep and minimal sun; faint darkening under his eyes suggesting chronic fatigue",
+    "distinguishing_marks": [
+      "Fading surgical scar running from left jaw down to left collarbone, approximately 15cm in length, pale and thin but still visible under certain light — evidence of the incident that ended his formal medical training",
+      "Calloused fingertips on both hands, particularly index and middle fingers, from constant fine motor work and tactile examination"
+    ],
+    "visible_augmentations": "None externally visible; the medical-grade tactile sensitivity amplifiers in his fingertips are subcutaneous and undetectable without close examination",
+    "posture_movement": "Moves with deliberate economy of motion; posture is upright but not rigid, suggesting both medical training and street-learned caution; hands rest in a neutral ready position; eyes track details in his environment constantly; walks with purpose but never hurries unless responding to emergency",
+    "clothing_style": "Tier 4 working-class practical: dark matte synthweave cargo pants with multiple pockets for tools and supplies; plain gray or dark blue long-sleeved fitted shirt, sometimes rolled up during work; worn black synthetic jacket with internal pockets for equipment; no visible branding; shoes are sturdy grey composite boots broken in from heavy use; overall appearance is deliberately unremarkable and functional — designed not to attract attention in Old Harbor while allowing quick access to tools"
+  },
+  "image_prompt": "A 22-year-old lean male of Ghanaian-Japanese descent with dark brown hair cut short and neat, near-black observant eyes, and broad cheekbones; warm bronze skin tone with faint shadows under his eyes indicating sleep deprivation. Visible fading surgical scar running from left jaw to collarbone. Wearing dark practical synthweave cargo pants and a fitted gray long-sleeved shirt, worn black matte jacket. Standing in a dimly lit industrial container clinic setting in cyberpunk Old Harbor, hands relaxed at sides with visible calloused fingertips; clinical but tired expression, surrounded by medical equipment and salvaged surgical instruments, cool fluorescent and warm practical lighting casting subtle shadows across his face. Cyberpunk aesthetic, documentary realism, ISO 800 film grain, introspective mood, --ar 2:3 --v 6"
 }

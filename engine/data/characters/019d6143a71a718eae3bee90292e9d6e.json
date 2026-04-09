@@ -59,7 +59,7 @@
     "A young woman in the settlement has received a legitimate Arcturus work offer that would give her Tier 2 status — she wants Warrick's blessing to leave, and the question of what he says will ripple through the whole community",
     "Something in the settlement's oldest device — a cracked tablet held together with repair adhesive — has begun producing outputs that Warrick reads as E.L.F. communication, and what it seems to be saying is either a warning or an invitation"
   ],
-  "narrative_function": "Community anchor and moral compass for the Grindstone Shore area; quest giver for problems facing the refugee collective; represents the depth and legitimacy of stateless community; has witnessed decades of Meridian 88's history from the outside looking in",
+  "narrative_function": "Community anchor and moral compass for the Grindstone Shore area; quest giver for problems facing the refugee collective; represents the depth and legitimacy of stateless community; has witnessed decades of GLMZ's history from the outside looking in",
   "augmentations": "None. Has never been able to afford any and is now too old to want them.",
   "daily_life": "Rises with light, conducts a morning address to whatever E.L.F.s have settled in the settlement's devices overnight, then spends the day mediating disputes, advising individuals, receiving people who come to him with problems, and working to maintain the collective's informal supply agreements with the Grindstone Shore salvage operations.",
   "affiliation": "De facto leader of the Grindstone Shore refugee collective (approximately 40 people)",
@@ -186,5 +186,26 @@
     "Nesting Doll",
     "The Milwaukee Core"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Central Asian / West African",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Large-framed, broad-shouldered, softened at the abdomen with age but still physically substantial; carries weight with deliberate dignity rather than vigor",
+    "hair_color": "White",
+    "hair_style": "Long, grown past shoulder length, wrapped at the crown and upper length with a strip of faded orange cloth",
+    "hair_length": "Long",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep brown with ashy undertone from years of outdoor weathering",
+    "complexion": "Heavily lined face; deep creases around eyes and mouth; weathered texture like aged leather; sparse stubble on jaw and chin; eyes retain sharp, assessing quality despite age",
+    "distinguishing_marks": [
+      "Right hand missing three fingers (index, middle, ring) — lost to machinery accident thirty years ago; remaining fingers and palm bear old machinery scars and calluses",
+      "Extensive sun-damage freckling and darkening across shoulders, neck, and forearms from decades of outdoor living",
+      "Small, pale scar running 3cm along left temple, old enough to be barely visible against his skin tone"
+    ],
+    "visible_augmentations": "None. No chrome, no implants, no visible modifications.",
+    "posture_movement": "Moves with deliberate slowness; sits with spine erect despite age; favors his left side when rising or turning; gestures with his three-fingered right hand without self-consciousness; pauses before speaking as if consulting something internal; carries a worn wooden totem (hand-carved, darkened with age and handling) which he touches frequently",
+    "clothing_style": "Multiple layers regardless of season — worn thermal undershirt, patched canvas shirt, faded Tier-5 synthetic jacket lined with salvaged insulation; grey utility trousers with rope belt; worn thermal socks and salvaged industrial boots held together with cord. Fabrics show careful mending and are weathered to neutral greys and browns. No logos or branding. Carries a small pouch at his belt where he keeps his wooden E.L.F. anchor."
+  },
+  "image_prompt": "Elderly African-Central Asian man, age 71, deep dark brown skin weathered by decades of outdoor living, long white hair wrapped in faded orange cloth, strong broad shoulders softened with age. Right hand visibly missing three fingers with old scars. Deep-lined face with sharp, knowing eyes. Dressed in multiple layered worn fabrics — patched canvas, thermal underlayers, salvaged industrial jacket, grey trousers. Holding a smooth hand-carved wooden totem figure. Sitting upright with dignified posture in a tent settlement, morning light filtering through canvas. Gritty, intimate realism. Cyberpunk refugee enclave aesthetic, Tier-5 settlement. Warm, respectful lighting. Character portrait. --ar 2:3 --v 6"
 }

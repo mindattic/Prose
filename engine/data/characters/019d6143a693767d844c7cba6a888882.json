@@ -103,5 +103,26 @@
     "CONGREGATION",
     "Tessera Attrition Engine TE-9 'Patience'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and angular, with long limbs suggesting years of navigating tight passages and vertical shafts. Chest slightly expanded from deep-breathing practice.",
+    "hair_color": "Natural black with threads of silver",
+    "hair_style": "Loose braids wrapped in worn linen cord, some adorned with small brass bells that chime softly when the wearer tilts their head",
+    "hair_length": "Long",
+    "eye_color": "Dark brown with a distant, listening quality",
+    "skin_tone": "Deep brown with ashy undertones from sub-level dust exposure",
+    "complexion": "Gaunt, meditative face with high cheekbones. Skin shows fine etching around the eyes and mouth from years of concentration. Minimal grooming — practical, not decorative.",
+    "distinguishing_marks": [
+      "Ritual scarification along both temples in three parallel lines, each roughly 4cm long, faded to silvery-white — marks of commitment to the Congregation",
+      "Calloused palms and fingertips from handling cold metal conduits and pressure sensors",
+      "A faint burn scar on the right forearm (approximately 8cm), shaped like a partial arc — accidental contact with a steam vent during early Breathing sessions"
+    ],
+    "visible_augmentations": "None visible. Any augmentation work would be subcutaneous or internal.",
+    "posture_movement": "Moves with deliberate slowness, as if perpetually listening. Stands with spine slightly curved, head tilted to one side. Breathes audibly and deeply, synchronizing their respiration with ambient pressure cycles. Gestures are minimal and measured.",
+    "clothing_style": "Tier 5 utilitarian ascetic. Layered linen and canvas in grays and earth tones, worn thin and patched. A long sleeveless overvest made from salvaged acoustic foam dampens echoes. No corporate branding. Feet wrapped in cloth rather than shoes — better tactile connection to the floor and its vibrations. A single cord belt holds a brass pressure gauge and small prayer beads carved from old plastic."
+  },
+  "image_prompt": "Portrait of a lean, 38-year-old nonbinary spiritual leader with deep brown skin and long black braids adorned with brass bells, standing in a dimly lit industrial subterranean chamber. Ritual scarification marks both temples. They wear layered gray linen and acoustic foam vest, feet bare on cold metal grating. Expression is meditative and distant, eyes closed or half-lidded. Soft blue-green bioluminescent pressure gauge visible at their belt. Background: shadowed GLMZ sub-level infrastructure — pipes, pressure vessels, condensation, cool cyan emergency lighting. Atmospheric fog. Pose suggests listening intently. Cyberpunk, dystopian spiritual, intimate portraiture, volumetric lighting, cinematic depth --ar 2:3 --v 6"
 }

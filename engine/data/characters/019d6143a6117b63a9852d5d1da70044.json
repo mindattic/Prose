@@ -284,5 +284,27 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Malian) / Spanish (Iberian)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and lean with defined musculature — ropy rather than bulky. Shoulders slightly asymmetrical from years of carrying heavy ordnance loads. Center of gravity naturally low, built for agility rather than raw power.",
+    "hair_color": "Natural black with silvered streaks at temples",
+    "hair_style": "Pulled back in a tight, functional braid. Rarely loose. Practical to the point of severity.",
+    "hair_length": "Medium (shoulder-length when unbraided)",
+    "eye_color": "Warm brown, slightly hooded at the outer corners",
+    "skin_tone": "Deep olive-bronze — warm undertones from Malian ancestry, sun-darkened from outdoor work",
+    "complexion": "Sharp cheekbones, angular jaw. Minimal grooming beyond functionality — a faint scar at the left temple from shrapnel. Crow's feet pronounced for her age from squinting at precise work. Lips thin and usually pressed into a neutral line. Skin weathered but not damaged, marked by chemical burns on the inside of her left forearm (acid exposure from early ordnance work).",
+    "distinguishing_marks": [
+      "Shrapnel scar at left temple, approximately 3cm, pale and slightly depressed into the skin",
+      "Chemical burn marks on inner left forearm — discolored patches of lighter skin, concentrated around wrist and medial arm",
+      "Tattoo on right shoulder blade: a detonator symbol (concentric circles with timing marks), professional and precisely inked in black",
+      "Surgical scar at base of skull where neural jack protrudes — visible between braid sections, metallic junction point gleaming"
+    ],
+    "visible_augmentations": "Chrome neural interface jack at base of skull — 2cm square mounting plate, dark metallic, slightly protruding. No active LEDs. Hydraulic joint servos visible as faint chrome plating at elbows and knees under bare skin — industrial sheen breaks the natural texture slightly, particularly visible under fluorescent light or when limbs are in motion.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight distributed toward the balls of her feet, ready to pivot or bolt. Head slightly forward, eyes tracking. Resting jaw tension suggests active calculation. When still, her fingers tap an irregular rhythm against her thigh — a kinetic stim that never quite stops. Walks fast even when there's no hurry.",
+    "clothing_style": "Tier 3-4 practical runner aesthetic. Reinforced charcoal synthcotton cargo pants with multiple pockets (keys, detonators, encrypted data spools). Steel-toed boots, scuffed and re-sealed. Loose-fit dark jacket in cracked-finish ballistic nylon — oversized to conceal ordnance-related lumps and allow arm mobility. Under-layer is a fitted black compression shirt with cooling channels printed into the fabric. No logos or corp affiliation. Jewelry limited to a worn steel wrist-cuff (custom-made, likely houses a micro-timer or range-finder tool). Her entire wardrobe reads as someone who prioritizes function over fashion, maintenance over aesthetics."
+  },
+  "image_prompt": "Cyberpunk professional woman, 42 years old, lean and wiry build with defined muscles, West African-Spanish heritage, deep olive-bronze skin tone, sharp angular features with crow's feet, warm brown eyes with slight hooding, natural black hair with silver temples pulled into tight functional braid. Visible chrome neural jack at base of skull with dark metallic mounting plate, faint hydraulic joint servo plating at elbows and knees. Professional shrapnel scar at left temple. Wearing reinforced dark charcoal cargo pants, black steel-toed boots, oversized charcoal ballistic nylon jacket over fitted compression shirt, steel cuff bracelet. Posture tense and ready, weight on balls of feet, eyes tracking. Standing in Glassway retail district, corporate architecture and heavy surveillance cameras in background, neon signage reflecting on wet pavement, cool blue and amber lighting mixing. Film noir meets near-future industrial. Moody cinematic lighting, slight grain texture, high contrast shadows. --ar 2:3 --v 6"
 }

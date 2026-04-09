@@ -7,7 +7,7 @@
     "Whisperchain"
   ],
   "role": "Private Investigator",
-  "description": "Hadiya Novak-Tetteh is not exactly a private investigator, though she's licensed as one. She is an information broker — someone who collects, synthesizes, trades, and weaponizes knowledge. Every conversation she has is simultaneously social and transactional. Every relationship is genuine and exploitable. She exists at the center of a web of intelligence that spans all five tiers of Meridian 88, and her real product isn't investigation — it's understanding.\n\nHer network is her masterwork. Over fifteen years, she has cultivated sources in every meaningful institution in the city: corporate employees who share gossip for pocket money, CorpSec officers who trade case details for favors, tunnel dwellers who report on underground movement for food credits, service workers in the Spires who overhear conversations their employers forget they're present for. No single source knows anything critical. The power is in the synthesis — combining a hundred fragments of mundane information into a picture that reveals something nobody wanted revealed.\n\nShe is frequently hired as an investigator but her real business is the information exchange itself. Clients come to her because they need to know something. She already knows it, or she knows who knows it, or she can find out within 48 hours. Her fee structure is unusual: sometimes she charges Quanta, sometimes she charges in information, and sometimes she charges in future favors. The favor economy is her real currency. Half the powerful people in Meridian 88 owe her something, and she collects when the time is right.",
+  "description": "Hadiya Novak-Tetteh is not exactly a private investigator, though she's licensed as one. She is an information broker — someone who collects, synthesizes, trades, and weaponizes knowledge. Every conversation she has is simultaneously social and transactional. Every relationship is genuine and exploitable. She exists at the center of a web of intelligence that spans all five tiers of GLMZ, and her real product isn't investigation — it's understanding.\n\nHer network is her masterwork. Over fifteen years, she has cultivated sources in every meaningful institution in the city: corporate employees who share gossip for pocket money, CorpSec officers who trade case details for favors, tunnel dwellers who report on underground movement for food credits, service workers in the Spires who overhear conversations their employers forget they're present for. No single source knows anything critical. The power is in the synthesis — combining a hundred fragments of mundane information into a picture that reveals something nobody wanted revealed.\n\nShe is frequently hired as an investigator but her real business is the information exchange itself. Clients come to her because they need to know something. She already knows it, or she knows who knows it, or she can find out within 48 hours. Her fee structure is unusual: sometimes she charges Quanta, sometimes she charges in information, and sometimes she charges in future favors. The favor economy is her real currency. Half the powerful people in GLMZ owe her something, and she collects when the time is right.",
   "affiliation": "Independent — operates a gray-market information exchange alongside investigation services",
   "tier": "Tier 2",
   "location": "A shifting series of meeting points across the Circuit — never the same place twice in a month, near North Ave and Milwaukee",
@@ -46,7 +46,7 @@
   ],
   "story_hooks": [
     "Someone begins assassinating Hadiya's sources across multiple tiers simultaneously — the attack is too coordinated to be personal and too targeted to be random",
-    "She acquires a piece of information so dangerous that every faction in Meridian 88 would kill to possess or suppress it — and she can't trade it without starting a war",
+    "She acquires a piece of information so dangerous that every faction in GLMZ would kill to possess or suppress it — and she can't trade it without starting a war",
     "A new information broker appears in the Circuit with impossible access — someone with a network that rivals Hadiya's, built in months instead of years, suggesting technological assistance she doesn't understand"
   ],
   "tags": [
@@ -64,11 +64,32 @@
     "Meridian Munitions Compact-7 'Rat Trap'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Circuit",
     "Volkov-Saito Precision Custom Shop VSCS-1 'Masterwork'",
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Eastern European (Novak) / West African (Tetteh)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and angular, shoulders slightly narrow but defined through careful maintenance rather than natural muscularity. The kind of frame that moves efficiently through crowds without drawing attention — economical, controlled.",
+    "hair_color": "Black with premature silver streaking at the temples and along the left side, left unretouched as a calculated choice",
+    "hair_style": "Pulled back in a tight, practical braid that starts at the crown and ends mid-back. No ornamentation. The style reads as deliberate restraint.",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, alert and constantly evaluating",
+    "skin_tone": "Medium brown with warm undertones, complexion reflecting mixed East European and West African heritage",
+    "complexion": "Kept meticulously maintained but without the sheen of expensive cosmetics — this is hygiene, not vanity. Fine lines around the eyes from constant focus work and reading small text. A small scar through the left eyebrow (old, well-healed) that she makes no effort to conceal. Jawline prominent and unmarked.",
+    "distinguishing_marks": [
+      "Thin white scar running through the left eyebrow, approximately 2cm, jagged from impact rather than surgery",
+      "Small circular burn mark on the inside of the right wrist, approximately 5mm diameter, old enough to be pale against her skin — consistent with interrogation-era violence or a calculated accident",
+      "Faint constellation of dots along the inside of her left forearm, too regular to be natural, suggesting subcutaneous implant scarring or selective dermal modification"
+    ],
+    "visible_augmentations": "None obvious at first glance. However, upon closer inspection: her pupils reflect light unusually — suggesting either advanced ocular implants or contact-based augmentation. The faint scarring on her left forearm hints at subcutaneous work, but nothing chrome or obvious. She operates in the space between visible and invisible.",
+    "posture_movement": "Stillness is her default state. She sits perfectly upright in meetings, weight balanced, hands visible on the table. Her movements are minimal and purposeful — no fidgeting, no nervous tics. When she walks, her gait is direct and economical. She listens more than she speaks, head tilted at a slight angle as if every word is being parsed and cross-referenced in real time. Her eyes rarely break contact, and when they do, it's to observe something in the environment, not from discomfort.",
+    "clothing_style": "Tier 3-4 professional wear with Tier 2 precision. She favors charcoal and black — a high-end wool blend coat (no logos, no corporate markers), slim-fit dark trousers, and a series of neutral turtlenecks or simple button-ups in cream, grey, or black. The shoes are always maintained leather, expensive enough to last years but unremarkable in style. She wears a single piece of jewelry: a thin bracelet made from brushed steel or similar matte metal, nothing decorative. Her clothing is deliberately unremarkable — the goal is to be forgotten immediately after being seen. Everything fits perfectly, suggesting either custom tailoring or meticulous personal maintenance. No visible corporate or faction markers. A simple messenger bag, worn leather, always with her."
+  },
+  "image_prompt": "Portrait of a lean, angular woman in her mid-40s with dark skin and premature silver streaking through black hair pulled into a tight braid, cyberpunk neo-noir style. Sharp dark eyes that seem to be constantly evaluating. She wears a high-end charcoal wool coat over a simple grey turtleneck, perfectly tailored but deliberately unremarkable. Small white scar through left eyebrow. Minimal jewelry — only a thin brushed steel bracelet. Posture upright and controlled, listening intently. Background: dimly lit underground meeting space, industrial concrete walls, cool blue-grey ambient lighting with subtle neon hints in the distance. Atmospheric, professional intelligence broker aesthetic. High detail on face and eyes. Film noir meets cyberpunk. --ar 2:3 --v 6"
 }

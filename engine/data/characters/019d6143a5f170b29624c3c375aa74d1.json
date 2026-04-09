@@ -248,5 +248,25 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "South Asian / Spanish / Turkish",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and wire-strung, all efficient muscle with minimal body fat; the build of someone who climbs in and out of engine bays for twelve hours a day",
+    "hair_color": "Black",
+    "hair_style": "Close-cropped on sides and crown, with a single braid at the nape secured with a copper fitting; braid is approximately 20cm long",
+    "hair_length": "Short (crown) / Medium (braid)",
+    "eye_color": "Dark brown with patterned irises — sunburst design in deep gold and forest green radiating from pupil",
+    "skin_tone": "Warm brown with South Asian undertones",
+    "complexion": "Lean, angular jaw; perpetual dark stains at knuckles and under fingernails from synthetic lubricant; skin otherwise clear; expression tends toward half-smile or concentrated focus",
+    "distinguishing_marks": [
+      "Synthetic lubricant staining at knuckles and under fingernails (permanent discoloration from years of work)",
+      "Small grease burn scar on left forearm, approximately 3cm, pale and faded"
+    ],
+    "visible_augmentations": "Functional geneware cat ears — mottled amber and black fur, naturally proportioned, with visible muscle and cartilage structure; ears twitch involuntarily in response to sound and vehicle engine frequencies. Worn haptic feedback gloves (heavy-duty synthetic leather with visible micro-vibration sensors embedded at fingertips and palm, usually tucked into tool belt or worn during diagnostic work).",
+    "posture_movement": "Relaxed, ground-centered posture; moves with economical efficiency through tight spaces; head tilts slightly when listening — cats ears often rotate toward sound source independently of head movement; hands are always in motion, fingers splayed and sensitive; walks with the loose stride of someone comfortable in grimy environments",
+    "clothing_style": "Tier 4 working-class utility wear: reinforced canvas work pants in faded gray with multiple tool pockets (Ferrogate Transit contractor patch on left thigh); sleeveless thermal undershirt or loose linen shirt depending on weather, often left unbuttoned and tied at waist; heavy-duty steel-toed boots scuffed and oil-darkened; insulated work vest with reflective strips; copper wedding-band style ring on left hand, dented and worn from work. Gear: tool belt with integrated Φ-scanner, multitool, and diagnostic cable spool; haptic gloves usually hung from belt. No corporate branding except the Ferrogate patch — everything else is independent or salvaged."
+  },
+  "image_prompt": "Cyberpunk character portrait of a lean South Asian man, age 29, with close-cropped black hair and a single copper-fitted braid, dark eyes with intricate gold and green sunburst irises. Functional mottled amber and black geneware cat ears twitch on his head. Warm brown skin perpetually stained with synthetic lubricant at knuckles. Wearing a sleeveless thermal shirt and reinforced gray canvas work pants with tool pockets, heavy steel-toed boots. Haptic feedback gloves with visible micro-vibration sensors. Leaning against a converted cargo trike in a gritty Geartown auto shop, neon flickering overhead, warm amber and sodium lighting. Hands-on, genuine half-smile, surrounded by engine parts and diagnostic equipment. Atmospheric depth, film noir undertones, gritty realism, --ar 2:3 --v 6"
 }

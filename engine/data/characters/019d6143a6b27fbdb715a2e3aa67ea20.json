@@ -240,5 +240,26 @@
     "Arcturus CK-5 'Bloodhound'",
     "Iron"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Kazakh-Russian",
+    "height_cm": 183,
+    "weight_kg": 89,
+    "build": "Broad-chested and muscular from disciplined weight training since adolescence, but with the lean efficiency of someone who lifts for function rather than aesthetics. Shoulders wide, forearms visibly dense beneath the skin.",
+    "hair_color": "Black",
+    "hair_style": "Short, neat fade cut — maintained with precision, likely every two weeks",
+    "hair_length": "Short",
+    "eye_color": "Grey-green (pale, distinctive)",
+    "skin_tone": "Deep brown with warm undertones, consistent with West African complexion",
+    "complexion": "Young face still softening into adulthood — jaw line not yet fully defined, eyes retain a clarity that contrasts sharply with the hardened set of his mouth. High Kazakh cheekbones. Clean-shaven, skin shows minor scars from street friction but otherwise well-maintained. Expression often guarded.",
+    "distinguishing_marks": [
+      "Faint scar tissue across the backs of both hands, consistent with street altercations",
+      "Thin white line running from left eyebrow toward temple — old blade work, poorly stitched",
+      "Network of fine scars on both forearms where the skeletal density weave was installed subcutaneously"
+    ],
+    "visible_augmentations": "Retractable black-tipped claws on both hands, typically held half-extended at rest as a deliberate signal. The claws are filed to sharp functionality, not cosmetic. Forearms show subtle grey undertones beneath skin where the skeletal density weave sits just beneath the dermis, most visible when flexed under harsh lighting.",
+    "posture_movement": "Stands with weight slightly forward, ready — a collector's posture. Moves with economical precision, no wasted motion. Hands often rest on tabletops or at sides with claws visible. When walking the commercial row, his gait is deliberate and measured, designed to be noticed without seeming aggressive. Eye contact is direct and held slightly too long.",
+    "clothing_style": "Cheap but immaculately maintained. Typically wears synthetic-blend shirts (black, grey, dark blue) tucked into grey cargo pants with reinforced pockets. Boots are generic work-issue, polished. A thin reflective jacket in charcoal for the rows — practical, unremarkable, the uniform of someone who doesn't want to stand out except for his presence itself. No visible gang colors, but the precision of his grooming reads as crew discipline. Everything fits correctly; he is extremely aware of how clothing sits on his body."
+  },
+  "image_prompt": "Young male enforcer, 22 years old, broad-chested and athletic build, deep brown skin with high Slavic cheekbones, striking pale grey-green eyes, short neat black hair. Retractable black claws half-extended on both hands, filed sharp. Subtle grey undertone visible on forearms beneath skin from skeletal density weave augmentation. Wearing plain black synthetic shirt tucked into grey cargo pants and polished work boots, thin charcoal reflective jacket. Standing in industrial Tier 2 commercial corridor with neon signs and metal infrastructure, harsh fluorescent overhead lighting casting sharp shadows. Expression guarded and intense, direct eye contact, posture ready and economical. Nighttime urban cyberpunk setting, gritty commercial district, wet pavement reflecting neon, background blur of shop fronts and metal scaffolding. Hyperrealistic, cinematic lighting, 8k detail, portrait focus --ar 2:3 --v 6"
 }

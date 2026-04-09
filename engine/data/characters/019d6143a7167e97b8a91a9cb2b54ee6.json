@@ -195,5 +195,27 @@
     "The Pure Hand",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Irish / Polish / Scandinavian",
+    "height_cm": 176,
+    "weight_kg": 68,
+    "build": "Wiry and tense — lean muscle without bulk, the kind of frame that never relaxes. Shoulders slightly hunched from years hunched over keyboards. Visible tremor in hands at rest.",
+    "hair_color": "Dark brown, artificially maintained",
+    "hair_style": "Shoulder-length, perpetually disheveled, often tied back with whatever is nearby — synth-fiber cord, data cable, elastic band",
+    "hair_length": "Medium",
+    "eye_color": "Pale blue with faint cyan undertones from optical enhancement — subtle AR projection visible as shimmer across iris during concentration",
+    "skin_tone": "Pallid, cool-toned from minimal sunlight exposure — the particular grayness of someone who lives under LEDs",
+    "complexion": "Angular face, sharp cheekbones, pronounced jaw. Dark circles under eyes that makeup cannot hide. A few days of stubble is his baseline state. Skin condition is poor — dehydrated, prone to breakouts from irregular sleep and stress. One small scar along left jawline from a childhood hardware accident.",
+    "distinguishing_marks": [
+      "Data jack port visible at the base of his skull, right side, roughly 3cm by 1.5cm — chrome-edged, often partially covered by hair but visible when he pulls it back",
+      "Thin white scar running down the inside of his left forearm from wrist to elbow — from an early augmentation procedure that went slightly wrong",
+      "Faint burn marks on fingertips from soldering work, particularly on right hand thumb and first two fingers",
+      "Scattered minor scars on knuckles from punching vending machines and equipment casings"
+    ],
+    "visible_augmentations": "Data jack at base of skull is the primary visible modification. Fingers move with occasional micro-stutters — reflex boosters causing brief over-responsiveness. Subtle biometric wrist display on left forearm (faint LED readout visible in low light, shows stimulant cycle status). Pupils occasionally dilate unnaturally during high cognitive load.",
+    "posture_movement": "Perpetually in motion even when sitting — fingers drumming, leg bouncing, head tilting. Walks with controlled tension, like he's always one keystroke away from panic. Hand movements are precise and rapid during technical work, but tremorous and jerky when relaxed. Makes intense eye contact when excited, avoids it when uncomfortable. Speech pattern matches physical energy — fast, gestural, interrupts himself.",
+    "clothing_style": "Tier 3-4 functional: dark hoodie or loose-fitting tech-branded shirt (faded logos from defunct hardware companies), frayed at cuffs. Black or dark gray utility pants with too many pockets, all filled with tools, cables, and forgotten food. Worn gel-memory shoes (left heel scuffed). Layers — adds/removes jackets based on server closet temperature. No jewelry except occasionally a brass knuckle-duster he fidgets with. Personal aesthetic is 'perpetually between laundry days.' Occasionally wears a braided leather bracelet (gift from early life, sentimental, never discussed)."
+  },
+  "image_prompt": "Portrait of a wiry 28-year-old male net runner, pallid complexion, dark shoulder-length disheveled hair, sharp angular features, pale blue eyes with cyan AR shimmer, visible chrome data jack at base of skull. Nervous energy radiating from posture, fingers mid-gesture. Wearing faded black hoodie with loose fit, dark utility pants, worn shoes. Artificial LED lighting casting harsh shadows across face. Tech-cluttered background suggested by blurred server equipment and cable fragments. Cyberpunk aesthetic, digital grit, high contrast lighting, moody cool color temperature, slight motion blur on hands suggesting constant restlessness. Intricate detail on data jack, visible fatigue and stimulant-induced tension in expression. --ar 2:3 --v 6"
 }

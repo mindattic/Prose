@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Kenosha Crossing — semi-permanent pitch in the trader's row outside the main terminal, near beyond the Western Perimeter",
-  "description": "Ametsuchi is compact and broad-shouldered, with the particular kind of physical confidence that comes from lifting, hauling, and setting up a market stall in hostile weather for twenty years. Their hair grows in a natural halo that they tint in slow-shifting colors — currently a deep green at the roots bleeding to copper at the tips — using a cheap geneware pigment mod that they refresh every three months at whichever clinic takes cash. Their skin is a warm medium brown covered in a patchwork of small tattoos that are actually a functional mnemonic system: inventory records, supplier codes, route notes, all written in a personal cipher directly on their forearms and the backs of their hands. They wear a coat with an absurd number of pockets, all of which are organized with a precision that would embarrass most archivists.\n\nAmetsuchi is sociable in the pure commercial sense — they can talk to anyone, find the common thread, make the sale — but there is a layer of genuine curiosity beneath the salesmanship that surprises people who expect only performance. They have been moving with the Kenosha-Escanaba-Waukegan caravan circuit for fifteen years, specializing in hard-to-source physical goods: specific medicines, particular machine components, seeds, analog media. They know supply and demand in the outer edges of Meridian 88 with an intimacy that no corporate logistics system can replicate, because they have walked it personally.",
+  "description": "Ametsuchi is compact and broad-shouldered, with the particular kind of physical confidence that comes from lifting, hauling, and setting up a market stall in hostile weather for twenty years. Their hair grows in a natural halo that they tint in slow-shifting colors — currently a deep green at the roots bleeding to copper at the tips — using a cheap geneware pigment mod that they refresh every three months at whichever clinic takes cash. Their skin is a warm medium brown covered in a patchwork of small tattoos that are actually a functional mnemonic system: inventory records, supplier codes, route notes, all written in a personal cipher directly on their forearms and the backs of their hands. They wear a coat with an absurd number of pockets, all of which are organized with a precision that would embarrass most archivists.\n\nAmetsuchi is sociable in the pure commercial sense — they can talk to anyone, find the common thread, make the sale — but there is a layer of genuine curiosity beneath the salesmanship that surprises people who expect only performance. They have been moving with the Kenosha-Escanaba-Waukegan caravan circuit for fifteen years, specializing in hard-to-source physical goods: specific medicines, particular machine components, seeds, analog media. They know supply and demand in the outer edges of GLMZ with an intimacy that no corporate logistics system can replicate, because they have walked it personally.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -220,7 +220,7 @@
   ],
   "related_entities": [
     "Kenosha Crossing",
-    "Meridian 88",
+    "GLMZ",
     "The Circuit",
     "NeuralPath Horizon Standard Neural Mesh",
     "The Waukegan Industrial Shelf",
@@ -229,5 +229,27 @@
     "Copper",
     "The Pure Hand"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "Japanese / West African / Iranian",
+    "height_cm": 164,
+    "weight_kg": 68,
+    "build": "Compact and broad-shouldered, densely muscled from two decades of manual labor — lifting cargo, assembling stalls in wind and cold. No excess weight; functional frame built for endurance and sustained physical work rather than speed.",
+    "hair_color": "Natural black at roots, geneware-modified to deep forest green bleeding into oxidized copper at the tips",
+    "hair_style": "Natural textured halo, shoulder-length, kept loose and full",
+    "hair_length": "Medium to Long",
+    "eye_color": "Dark brown, alert and constantly cataloguing",
+    "skin_tone": "Warm medium brown with undertones suggesting mixed West African and East Asian ancestry",
+    "complexion": "Weathered from constant outdoor exposure — sun-darkened, with fine lines around the eyes and mouth from two decades of squinting in bright light and smiling through negotiations. Skin is clean but has the texture of someone who works in all seasons without excessive skincare. No obvious scars on the face.",
+    "distinguishing_marks": [
+      "Both forearms covered in dense, small cipher tattoos in black ink — inventory codes, supplier identifiers, route waypoints, all in a personal notation system legible only to Ametsuchi and perhaps a handful of trusted circuit members",
+      "Backs of both hands tattooed with active supply codes updated roughly quarterly, newer ink slightly raised and more vibrant than older work",
+      "Thin white scar running from left wrist to mid-forearm, approximately 8 centimeters, consistent with a deep cut from sharp metal — old injury, well-healed",
+      "Small burn mark on right shoulder blade visible only when shirtless, roughly circular, 2-3 centimeters diameter, suggests stove or industrial contact from at least a decade ago"
+    ],
+    "visible_augmentations": "Hair pigment geneware modification is the only visible augmentation — the slow color shift is subtle enough to pass for natural variation at casual glance, but obvious under direct light. Fingertip tactile enhancement is subcutaneous and invisible, leaving no visible marking. Wear on fingertips slightly more pronounced than typical from constant material assessment.",
+    "posture_movement": "Moves with economic efficiency — no wasted motion, but not rigid or militaristic. Stands with weight balanced evenly, ready to shift in any direction. Leans forward slightly when listening, especially during negotiation or when genuinely curious. Hands move constantly in conversation: gesturing, demonstrating material qualities, punctuating points. When stationary at their pitch, posture is grounded and stable — the stance of someone who will not be moved.",
+    "clothing_style": "Wears a heavily modified canvas and synth-blend coat (Tier 3-4 quality, well-maintained) with an extraordinary number of pockets, each organized with obsessive precision — estimated 15-20 pockets total, some nested, some reinforced with additional stitching. Underneath: simple, practical layers appropriate to season — usually a fitted base layer and a loose overshirt in earth tones or muted colors that won't show stains. Cargo pants with numerous utility pockets, preferring function over fashion. Boots are heavy-duty, often scuffed and clearly resoled multiple times — no corporate branding, generic utility grade. Wears a heavy canvas apron when actively trading, stained with years of handling goods. Personal adornment minimal: a simple metal ring on left hand (possibly a relationship marker), no neck jewelry. Overall aesthetic is Tier 4 working trader — clearly not wealthy, but equipped with the precision of someone who has refined their kit over decades."
+  },
+  "image_prompt": "Portrait of a 41-year-old nonbinary trader in cyberpunk 2226, compact broad-shouldered build, warm medium brown skin with subtle mixed heritage features, natural textured hair in deep forest green fading to copper tips, dark alert eyes. Forearms and hands covered in dense black cipher tattoos. Wearing a heavily pocketed canvas and synth-blend coat over practical layers, cargo pants, worn utility boots. Standing with balanced confident posture in trading row market setting, dawn light, weathered hands visible showing calluses and material expertise. Kenosha Crossing trader aesthetic, Tier 4 working class, authentic worn-in quality, tactile focus on materials and goods around them, subtle geneware hair modification evident, no chrome visible. Atmospheric industrial lighting, semi-permanent market stall behind. Cinematic realism, detailed character study, worn functional cyberpunk worker. --ar 2:3 --v 6"
 }

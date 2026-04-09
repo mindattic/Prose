@@ -261,5 +261,25 @@
     "Zheng-Dao Heavy Industries Space Elevator Tether System",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Russian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and economical, muscle definition visible in forearms and shoulders from consistent fieldwork. No excess weight — the build of someone who moves through tight spaces habitually.",
+    "hair_color": "Natural black with slight warm undertone",
+    "hair_style": "Pulled back in a tight, functional braid or swept into a practical knot; styled for work, not aesthetics",
+    "hair_length": "Medium",
+    "eye_color": "Pale grey — striking against her skin tone, cool and direct",
+    "skin_tone": "Deep reddish-brown, complexion even",
+    "complexion": "Square jaw, sharp cheekbones. Skin shows the dryness of someone who works long hours indoors and outdoors without much self-care. Professional grooming — minimal jewelry, no obvious makeup.",
+    "distinguishing_marks": [
+      "Scar through left eyebrow, pale and thin, roughly 3cm long, from a skip altercation",
+      "Pair of functional dark brown cat ears (geneware), furred and tufted, positioned atop her skull with visible muscle definition at base; ears rotate toward sound sources involuntarily"
+    ],
+    "visible_augmentations": "Dark brown cat ears with visible mobility and tufting (geneware). Thin subdermal tracking ping scars on both inner forearms — subtle, pale lines barely visible unless closely examined. No optical modifications — natural eyes only.",
+    "posture_movement": "Carries herself with economy and awareness — shoulders relaxed but ready. Moves without wasted motion, deliberate steps, head level. Eyes track rooms systematically. Ears twitch toward unfamiliar sounds with reflexive precision, a tell she has learned to read in others' reactions.",
+    "clothing_style": "Tier 3 professional — functional clothing that reads as competent rather than fashionable. Favors technical jackets with utility pockets, durable synthetic fabrics that shed stains and survive fieldwork. Usually wears a worn leather or synth-leather overshoulder rig for tools and restraint equipment. Boots with good ankle support. A single piece of jewelry: small silver or steel pendant she touches unconsciously when thinking. Nothing that would catch or impede movement."
+  },
+  "image_prompt": "Portrait of a lean 38-year-old Black woman with pale grey eyes and a scar through her left eyebrow, dark reddish-brown skin, square jaw. She has functional dark brown cat ears with tufts positioned on top of her head, rotating slightly toward sound. Wearing a worn technical jacket over practical clothing, utility vest, steel-toed boots. Standing in a cyberpunk industrial setting, Copperhead Milwaukee district aesthetic, neon signs reflecting off wet metal surfaces. Professional, alert expression, direct gaze, economical posture. Moody blue and amber lighting, film noir atmosphere, photorealistic, --ar 2:3 --v 6"
 }

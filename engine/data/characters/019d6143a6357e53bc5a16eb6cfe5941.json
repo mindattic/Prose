@@ -14,7 +14,7 @@
   "age": 25,
   "status": "active",
   "location": "The Shelf — lower loading docks, near Kedzie and Division",
-  "description": "Isaak Ren was the crew's lookout. He didn't see Kyle coming. Nobody did. Kyle shattered his jaw with the flat of the blade and Isaak has refused to get it replaced. He wears a wrap around the lower half of his face and communicates through hand signals and a battered datapad.\n\nThe crew thinks this is trauma. It's not. Isaak has discovered that silence gives him power he never had when he talked. People project meaning onto his stillness. They assume depth. Isaak is using Kyle's violence as a personal rebrand.\n\nBefore the crew, Isaak was a library aide at the Shelf Community Archive — one of the last physical book collections in the lower tiers. He read constantly. Philosophy, psychology, military history. He joined Marcus's crew because the library closed and reading doesn't pay. He is the most educated person in the crew by a significant margin and the only one who has read about what Kyle is. He found references to experimental neural enhancement programs in declassified corporate documents. He does not share this with the crew.\n\nIsaak has no family in Meridian 88. His parents are in the Busan Resettlement Zone. He sends them nothing because they don't know he's alive. He let them believe he died in transit. It was easier.",
+  "description": "Isaak Ren was the crew's lookout. He didn't see Kyle coming. Nobody did. Kyle shattered his jaw with the flat of the blade and Isaak has refused to get it replaced. He wears a wrap around the lower half of his face and communicates through hand signals and a battered datapad.\n\nThe crew thinks this is trauma. It's not. Isaak has discovered that silence gives him power he never had when he talked. People project meaning onto his stillness. They assume depth. Isaak is using Kyle's violence as a personal rebrand.\n\nBefore the crew, Isaak was a library aide at the Shelf Community Archive — one of the last physical book collections in the lower tiers. He read constantly. Philosophy, psychology, military history. He joined Marcus's crew because the library closed and reading doesn't pay. He is the most educated person in the crew by a significant margin and the only one who has read about what Kyle is. He found references to experimental neural enhancement programs in declassified corporate documents. He does not share this with the crew.\n\nIsaak has no family in GLMZ. His parents are in the Busan Resettlement Zone. He sends them nothing because they don't know he's alive. He let them believe he died in transit. It was easier.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -238,7 +238,7 @@
     "Hearthstone Firearms Model 9 'Payday'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Coherent Radiation Scalpel CRS-7 'Suture'",
     "The Shelf",
     "The Ghost Ronin",
@@ -247,5 +247,26 @@
     "Marcus Okafor-7",
     "Jerome Atlas"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Korean / Uncertain secondary lineage (Ren suggests mixed East Asian or adopted name)",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Wiry and lean — underfed dock work, minimal muscle development. Shoulders slightly hunched from years bent over a datapad or book spine.",
+    "hair_color": "Black, naturally darkened by poor lighting and lack of grooming investment",
+    "hair_style": "Uncombed, falls across forehead. No deliberate styling.",
+    "hair_length": "Medium (collar-length)",
+    "eye_color": "Dark brown, unremarkable — but intense focus, rarely breaking contact",
+    "skin_tone": "Pale olive with sallow undertone — minimal sunlight exposure, typical of lower-tier dock workers",
+    "complexion": "Gaunt, with hollow cheeks. Acne scarring on jawline (ironic, given his jaw is now broken). Chapped lips visible above the wrap. Eyes carry the strain of constant vigilance.",
+    "distinguishing_marks": [
+      "Severe fracture across the lower jaw — shattered by Kyle's blade strike, visibly misaligned beneath the wrap",
+      "Thin scar along left temple — unexplained, predates the Prologue event",
+      "Calluses on fingertips and palms — library work, datapad handling, and before that, opening/closing thousands of physical books"
+    ],
+    "visible_augmentations": "Face wrap (grey linen, changed infrequently) covering lower jaw and mouth. Battered military-grade datapad strapped to left wrist with fraying synth-leather cuff. No chrome, no LEDs, no visible tech beyond the datapad.",
+    "posture_movement": "Perfectly still when observing. Minimal fidgeting. Moves with deliberate economy — no wasted motion. Head turns slowly, tracking targets with predatory patience. When typing, fingers move with surgical precision. Sits or stands for hours without repositioning.",
+    "clothing_style": "Tier 4 lower-working-class. Dark, utilitarian: charcoal cargo jacket (Lower Dock Crew standard, worn soft), black synthmesh pants with cargo pockets, reinforced boots with cracked soles. Layers indicate he doesn't regulate temperature well — thin thermal under-shirt visible at collar. No decoration, no branding, no affectation. Clothes fit loosely — either intentional camouflage or simple neglect."
+  },
+  "image_prompt": "25-year-old Korean man, gaunt and pale, wiry build, dark unfocused eyes, wearing charcoal cargo jacket and black synthmesh pants. Lower half of face wrapped in grey linen, jaw visibly broken beneath fabric. Sitting motionless in industrial shadow, cyberpunk setting, lower dock warehouse with rusted metal and dim overhead lighting. Battered military-grade datapad strapped to left wrist. Hyper-detailed, photorealistic, contemplative and unsettling mood. Cold fluorescent and shadow contrast, sharp focus on eyes. Gritty realism, no glamour. --ar 2:3 --v 6"
 }

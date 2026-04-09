@@ -177,5 +177,27 @@
     "The Pure Hand",
     "Silver"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Armenian / Andean Quechua",
+    "height_cm": 188,
+    "weight_kg": 98,
+    "build": "Large-framed and broad-shouldered, visibly softened through the midsection from decades of desk work and meetings replacing physical labor. Still carries the muscle density of someone who spent thirty years doing heavy maintenance work, but distributed unevenly now—solid legs and forearms, softer torso.",
+    "hair_color": "Dark brown with heavy silver threading throughout",
+    "hair_style": "Close-cropped, military-neat, styled for practicality and no fuss",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with faint amber-tinted retinal augmentation visible under direct light",
+    "skin_tone": "Deep warm brown with underlying reddish undertones from Armenian and West African heritage",
+    "complexion": "Weathered and lined from outdoor and underground work—deep creases around eyes and mouth from squinting in poor lighting and years of concentration. Well-maintained beard, close-trimmed gray at the jawline. Skin texture is thick and resilient, with visible sun damage on forearms and neck despite his underground work. A few scattered white patches of minor scar tissue from industrial burns.",
+    "distinguishing_marks": [
+      "Extensive callusing across palms and inside of right fingers from thirty years gripping tools and documents",
+      "Faint circular burn scar on right bicep, approximately 3cm diameter, pale and smooth—industrial contact burn from the accident that cost him his forearm",
+      "Linear scarring across left shoulder and upper chest, thin and pale, consistent with medical intervention",
+      "Small tattoo on left inner wrist: union solidarity fist in black ink, approximately 2cm, unadorned and worn"
+    ],
+    "visible_augmentations": "Left forearm prosthetic from wrist to elbow joint, industrial-grade titanium-composite construction in flat matte gray finish with no chrome plating, no LEDs, no decorative customization—the joint articulation is visible but deliberately stark. Amber-tinted retinal work-light modification visible as subtle coloration in sclera under direct light or dim conditions.",
+    "posture_movement": "Carries himself with deliberate stillness—someone accustomed to being the calm presence in agitated rooms. Walks with measured pace, favoring his right side slightly though the prosthetic left arm moves with full mechanical precision. Sits motionless for extended periods without fidgeting. Rarely gestures while speaking; when he does move, every motion is purposeful. Dominant right hand still carries the tension of someone ready to write something down.",
+    "clothing_style": "Tier 3-4 working class, deliberately modest. Standard-issue gray Ferrogate maintenance union jacket over dark cotton shirts, usually with the sleeves rolled to mid-forearm to display the prosthetic plainly. Worn dark jeans or work trousers. Steel-toed boots, scuffed and well-maintained. No visible jewelry except a simple silver wedding band. His clothing is clean and functional but never new—he replaces items when they wear out, not for fashion. His affiliation is worn into the fabric, not purchased."
+  },
+  "image_prompt": "Portrait of a 52-year-old Black man with dark skin and deep lines, close-cropped silver-streaked hair, warm brown eyes with subtle amber retinal glow, wearing a gray Ferrogate Transit Union jacket over a dark shirt. His left arm is a matte gray industrial prosthetic forearm with visible joint articulation, deliberately undecorated. He sits with calm stillness in the Hamtramck Enclave union hall, surrounded by worn filing cabinets and flickering shrine candles. Warm tungsten lighting, soft shadows, gritty documentary photography style, cyberpunk labor realism, late afternoon underground transit terminal aesthetic. Dignified, weathered, uncompromising. --ar 2:3 --v 6"
 }

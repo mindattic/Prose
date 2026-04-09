@@ -185,5 +185,27 @@
     "Déjà Vu",
     "Gold"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Central African (Bantu) / South Asian (Bengali)",
+    "height_cm": 185,
+    "weight_kg": 72,
+    "build": "Tall and lean, shoulders rounded forward from decades of cart work and standing over steam. Wiry musculature in forearms and hands despite age; chest slightly concave from posture. No excess weight, all functional.",
+    "hair_color": "Dark brown with silver streaking throughout, white at the beard",
+    "hair_style": "Long dark hair pulled into a tight knot at the base of the skull; beard neatly trimmed and groomed, entirely white at the chin and lower jaw",
+    "hair_length": "Long (head), Medium (beard)",
+    "eye_color": "Dark brown, warm and observant",
+    "skin_tone": "Deep warm brown with underlying reddish undertones",
+    "complexion": "Weathered from decades of outdoor market work and steam exposure. Fine lines around eyes and mouth. Hands show age spots and prominent knuckles; skin on forearms smooth and unblemished where the bioluminescence is patterned. Clean-shaven upper cheeks, immaculate beard grooming.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware patterning across both forearms in amber and gold wave design, subtle but visible in low light",
+      "Two transdermal pain management patches on the right wrist joint, flesh-tone with subtle crystalline shimmer",
+      "Burn scar on the left palm, old and pale, from cart work accident decades past",
+      "Fine white scar line along right knuckle from a knife slip while prepping vegetables"
+    ],
+    "visible_augmentations": "Bioluminescent forearm patterning (amber-gold tide-marks), transdermal pain patches on right wrist. All other augmentations are subcutaneous or pharmaceutical.",
+    "posture_movement": "Moves with deliberate care; bent slightly forward from the shoulders. Hands are steady and precise despite arthritis. Walks slowly but with purpose. Often still when reading or listening. Rarely hurried, even under pressure.",
+    "clothing_style": "Practical Tier 3-4 workwear: water-resistant linen apron over a faded charcoal henley (worn daily, always clean). Loose canvas pants in grey-brown, multiple pockets for books and supplies. Worn leather belt with a simple buckle. No jewelry except a thin silver band on his left ring finger (wedding band, worn thin with age). Comfortable slip-on shoes rated for wet environments. Always carries a cloth satchel with whatever book he's currently reading and a smaller pouch for homework materials and payment-in-kind items."
+  },
+  "image_prompt": "Cyberpunk portrait of an elderly Black man with silver-streaked dark hair in a topknot and white beard, standing behind a noodle cart in an underground market, deep warm brown skin weathered from decades of work, bioluminescent amber-gold wave pattern glowing subtly across forearms, wearing a water-stained apron over a worn henley, transdermal pain patches visible on wrist, holding a physical book, gentle expression with warm dark eyes, steam rising from metal pots behind him, neon-lit market stalls in soft focus background, moody atmospheric lighting with amber undertones, calm dignified posture, 2226 cyberpunk setting with retro-futuristic details, photorealistic, intimate character study --ar 2:3 --v 6"
 }

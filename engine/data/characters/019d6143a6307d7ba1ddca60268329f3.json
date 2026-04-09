@@ -104,5 +104,26 @@
     "The Narrows Compact",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "East European (Russian) / West African (Nigerian)",
+    "height_cm": 171,
+    "weight_kg": 62,
+    "build": "Athletic and lean with defined musculature; carries herself with economic efficiency—every movement purposeful. Long-limbed, suggesting endurance work rather than bulk.",
+    "hair_color": "Deep black with subtle rust undertones, naturally textured",
+    "hair_style": "Worn in a high, tight cornrow crown that transitions to shaved sides; practical and distinctive",
+    "hair_length": "Medium (crown) / Shaved (sides)",
+    "eye_color": "Warm brown with faint amber striations in direct light",
+    "skin_tone": "Warm medium brown with olive undertones—the blended tone of her mixed heritage",
+    "complexion": "Clear, unmarked face; minimal grooming beyond essential maintenance. Strong cheekbones and a slightly squared jawline. Small scar tissue visible at left temple hairline.",
+    "distinguishing_marks": [
+      "Thin white scar line running from left temple to just above the cheekbone, approximately 4cm long—consistent with old blade work or shrapnel.",
+      "Cluster of three small circular burn scars on the inside of her right wrist, arranged in a triangle—deliberate marks, possibly from test procedures.",
+      "Faint tattooed circuit pattern on her collarbone, barely visible beneath the skin, suggesting subcutaneous work or very fresh ink."
+    ],
+    "visible_augmentations": "None overtly visible at first glance. However, her left hand shows subtle irregularities—slightly too precise in movement, fingernails uniformly perfect chrome-silver caps suggesting subdermal enhancement. Occasional faint bioluminescent traces visible in her pupils under low light, indicating optical substrate integration.",
+    "posture_movement": "Moves with predatory stillness—minimal wasted motion. Stands with weight distributed evenly, ready to shift direction. Eyes track with analytical precision. Tends to keep her hands visible and relaxed; a tell of someone who deals in dangerous work.",
+    "clothing_style": "Tier 3-4 practical wear: form-fitting matte-black synth-leather jacket with reinforced seams and hidden pockets. Graphite compression shirt underneath. Cargo pants in dark grey with cargo pockets and thigh straps. Worn military-grade boots with reactive soles. No logos; all clothing is functional, durable, and designed for mobility. Wears a small wrist-mounted data terminal on her right forearm."
+  },
+  "image_prompt": "cyberpunk character portrait of a lean athletic Black-European woman, age 31, with a high cornrow crown and shaved sides, warm brown eyes with amber striations, striking facial features. She wears a fitted black synth-leather jacket over a grey compression shirt, practical cargo pants, military boots. Small white scar visible at left temple. Her hands show faint chrome detailing at fingertips. Standing against a dimly lit industrial backdrop with neon signs reflecting off wet concrete, The Narrows aesthetic, cool blue and amber lighting, gritty and professional, realistic cyberpunk style, sharp focus on face and hands, moody atmospheric lighting, shot in 2:3 portrait format --ar 2:3 --v 6"
 }

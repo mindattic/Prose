@@ -12,7 +12,7 @@
   "role": "Building superintendent and handyman, Lockhaven South residential block",
   "age": 61,
   "status": "active",
-  "location": "Lockhaven South, Meridian 88, near Milwaukee and North Ave",
+  "location": "Lockhaven South, GLMZ, near Milwaukee and North Ave",
   "description": "Gavril is a lean, permanently greasy man — Ghanaian and Polish ancestry that shows itself in his dark complexion, his wide jaw, and the pale grey eyes that his tenants find unsettling until they realize that unsettling is not the same as unkind. He has a grey-streaked bristle of beard he trims with terrifying exactitude every four days, a set of retractable utility fingers on his left hand (a practical augmentation he paid for in installments over eight years, not cosmetic — he had three fingers crushed in a compactor accident when he was younger), and he moves through the building's maintenance corridors with the confident proprietary air of a man who knows every pipe's history.\n\nGavril has been superintendent of the Lockhaven South Block 7 residential tower for nineteen years. He knows the building the way a doctor knows a patient — its histories, its weaknesses, its bad habits. He also knows its 340 residents the way a general practitioner knows a small town: too much, and without the distance that would make it comfortable. He is not a friendly man in the conventional sense but he is a reliable one, which in Lockhaven South is worth significantly more.",
   "psychology": {
     "facet_weights": {
@@ -170,11 +170,33 @@
   "related_entities": [
     "Lockhaven South",
     "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "Meridian 88",
+    "GLMZ",
     "Palladian Construction",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "The Pale Mile",
     "The Milwaukee Core"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Eastern European (Polish)",
+    "height_cm": 176,
+    "weight_kg": 68,
+    "build": "Lean and ropy, with visible forearm musculature from decades of manual work. Shoulders rounded slightly forward from years hunched over maintenance panels. Core remains functionally strong despite age.",
+    "hair_color": "Dark brown with salt-grey streaking throughout",
+    "hair_style": "Short, practical crew cut, never fashionable but consistently maintained",
+    "hair_length": "Short",
+    "eye_color": "Pale grey, slightly rheumy at the corners",
+    "skin_tone": "Dark brown with undertones reflecting Ghanaian ancestry, weathered and lined",
+    "complexion": "Deeply lined face, particularly around eyes and forehead. Permanent grease stains on his hands and forearms despite frequent washing. Jaw is wide and heavy. Beard maintained at 2mm bristle length with geometric precision — trimmed every four days. Numerous small scars on knuckles and hands from industrial work.",
+    "distinguishing_marks": [
+      "Thin white scar running 8cm along the inside of his right forearm from a pipe burst",
+      "Older burn scar on left shoulder, pale and roughly circular, approximately 4cm diameter",
+      "Calluses covering entire palm surface and first two knuckles of both hands, particularly pronounced on right",
+      "Multiple small puncture scars on left hand where the utility finger assembly connects at the knuckles"
+    ],
+    "visible_augmentations": "Left hand shows retractable utility fingers — the ring, middle, and index fingers replaced with an articulated chrome and steel multi-tool assembly. Visible seams at each knuckle joint where the assembly integrates with remaining hand structure. The work is functional but visibly aged, with small gaps in the engineering and faint marks from repeated deployment cycles. When retracted, the three fingers compress into the palm, leaving a subtle bulge.",
+    "posture_movement": "Walks with efficient, economical movements — no wasted motion. Slight forward lean from his spinal posture. Hands often at rest in his pockets or held at chest level. When working, movements are deliberate and practiced, muscle memory precise. Eye contact is direct and held slightly too long, which reads as either contemplative or vaguely threatening depending on the observer.",
+    "clothing_style": "Tier 3 utilitarian — grey or brown Carhartt-adjacent work shirts with multiple chest pockets, usually half-unbuttoned and layered with a faded thermal underneath. Matching work pants with tool belt worn at hip level. Steel-toed boots scuffed and re-sealed multiple times. A heavy canvas jacket for outside work, patched at the elbows. No jewelry. Clothing perpetually carries faint scent of machine oil, solder flux, and building decay."
+  },
+  "image_prompt": "Cyberpunk 2226 character portrait: 61-year-old man with dark brown skin, pale grey unsettling eyes, and salt-and-pepper bristle beard trimmed with geometric precision. Ghanaian-Polish heritage visible in wide jaw and bone structure. Lean, muscular build from decades of manual labor. LEFT HAND AUGMENTED: three fingers replaced with retractable chrome and steel multi-tool assembly, visible seams at knuckles, aged industrial aesthetic. Wearing faded grey work shirt half-unbuttoned over thermal layer, worn tool belt at hip, steel-toed boots. Hands stained with permanent grease. Direct, unsettling gaze. Standing in industrial basement maintenance corridor with visible pipes, circuit panels, and harsh fluorescent lighting. Photorealistic, gritty, worn. Atmospheric lighting casting shadows across weathered face. --ar 2:3 --v 6"
 }

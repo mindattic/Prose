@@ -196,5 +196,26 @@
     "Ringo Corponation",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Nigerian) / Scandinavian (Finnish)",
+    "height_cm": 172,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and sturdy, with the compact musculature of someone who stands for sixteen hours daily moving and lifting. Not heavy, but solid — built for work and endurance.",
+    "hair_color": "Natural silver-white",
+    "hair_style": "Pinned back with copper rods engraved with Yoruba blessing glyphs; kept in a neat, controlled arrangement",
+    "hair_length": "Medium to Long",
+    "eye_color": "Patterned irises — concentric rings of amber (outer) and forest green (inner), cosmetic augmentation",
+    "skin_tone": "Deep umber",
+    "complexion": "Face mapped by laugh lines and character; unblemished apart from old burn scarring on left forearm. No cosmetic vanity — wrinkles earned and kept. Perennially carries faint turmeric stains on her hands.",
+    "distinguishing_marks": [
+      "Burn scars across entire left forearm — old, deliberate choice not to have reskinned, pale and textured against umber skin",
+      "Laugh lines radiating from corners of eyes and mouth — deep grooves from decades of genuine smiling",
+      "Faint turmeric discoloration on fingertips and cuticles, permanent occupational marking"
+    ],
+    "visible_augmentations": "Patterned irises with concentric amber-green rings (cosmetic, immediately noticeable). Thermal-sense fingertip pads visible as faint metallic stippling on fingertips (diagnostic/functional, subtle but present if examined). Copper blessing-rod hair pins with Yoruba glyphs (cultural adornment, not augmentation).",
+    "posture_movement": "Moves with unhurried authority and economic efficiency — every gesture purposeful. Stands with weight balanced, ready to pivot. Hands constantly occupied (prepping, arranging, gesturing). Makes direct eye contact. No fidgeting; complete comfort in her own space.",
+    "clothing_style": "Tier 3-4 practical wear: reinforced linen wrap dress in earth tones (ochre, burnt orange) for mobility and heat tolerance; sturdy synthetic-leather apron with deep pockets for tools and ledger; worn canvas slip-ons. Minimal jewelry except for the copper hair rods. No corporate branding. Clothes are clean and well-maintained but show honest use — this is a working wardrobe, not a display."
+  },
+  "image_prompt": "Portrait of Thembi Olatunji-Saarela, a 58-year-old West African-Scandinavian woman with deep umber skin and silver-white hair pinned back with engraved copper rods. Her distinctive patterned irises feature concentric rings of amber and forest green. Visible burn scars map her left forearm; laugh lines frame her direct, penetrating gaze. She wears a reinforced ochre linen wrap dress and worn canvas apron, standing behind a food stall counter in the Oxidian Market, Geartown. Morning light catches the copper pins and the faint thermal-sense stippling on her fingertips. The air around her carries the visual weight of turmeric and fermented grain — bokeh wisps of warm spice dust. Her posture is unhurried authority; her expression is direct and uncompromising. Cyberpunk, naturalistic, dignified. Shot at eye level. Warm, golden-hour lighting with hard shadows. Photorealistic, character-driven portraiture. --ar 2:3 --v 6"
 }

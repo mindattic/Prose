@@ -210,5 +210,25 @@
     "Nightlight",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Burkina Faso) / Ukrainian",
+    "height_cm": 172,
+    "weight_kg": 84,
+    "build": "Broad-shouldered and solid without being heavy; muscular through the chest and arms, suggesting decades of physical work and controlled strength. Her frame reads as deliberately maintained rather than naturally slight.",
+    "hair_color": "Silver with dark roots",
+    "hair_style": "Wrapped tightly in amber-colored cloth in a traditional head wrap; no visible loose hair",
+    "hair_length": "Long (worn wrapped)",
+    "eye_color": "Amber thermal optics with a faint bioluminescent glow; the irises are mismatched — one slightly brighter than the other, indicating secondhand installation",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Weathered but meticulously maintained; minimal makeup, skin shows the texture of age and exposure but is kept scrupulously clean. Jaw is defined, cheekbones high. Expression typically neutral or faintly expectant.",
+    "distinguishing_marks": [
+      "Faded keloid scarring runs along the entire left forearm in a pattern consistent with a press-iron injury — raised, slightly darker than surrounding skin, approximately 20cm in length",
+      "Small burn marks (old, pale) across the knuckles of both hands, occupational wear"
+    ],
+    "visible_augmentations": "The thermal optics are visible as a slight amber luminescence in low light and a faint geometric artifact around the iris when viewed directly. The reinforced knuckle plating is not visibly obvious at rest but creates a subtle asymmetry in hand structure and a faint metallic sheen across the right hand's dorsal surface when light hits it a certain way.",
+    "posture_movement": "She carries her weight forward slightly, shoulders back. Her movements are economical and deliberate — she does not fidget or waste motion. When sitting, she occupies space fully without sprawling. She walks with a measured pace, feet placed with precision. Her default expression is watchful neutrality.",
+    "clothing_style": "Tier 3-4 practical wear. Multiple layered thermal vests in muted grays and deep blues, always pristine and well-fitted. Long heavy skirts (dark wool or synthetic blend) that fall to mid-calf, paired with reinforced slip-on shoes suitable for standing all day. A large canvas apron with multiple pockets when working the counter. No jewelry except a thin metal band on her right ring finger (worn, not ornamental). All clothing is clean, pressed, and shows signs of careful maintenance. The aesthetic is working-class dignity — nothing fashionable, everything functional and respected."
+  },
+  "image_prompt": "A 52-year-old West African-Ukrainian woman with deep umber skin and silver-wrapped hair, wearing layered thermal vests and a heavy dark skirt, standing behind a laundromat counter with her hands resting flat on the surface. Her eyes glow faintly amber from thermal optic implants. Faded keloid scarring visible on her left forearm. Posture is upright and commanding but not aggressive. Behind her, industrial washing machines and fluorescent strip lighting. The mood is quiet authority — a loan shark's calm certainty. Cyberpunk Tier-3 setting, harsh fluorescent light with shadow, cinematic, grounded and realistic, documentary photography style, 2226 Great Lakes Metropolitan Zone, --ar 2:3 --v 6"
 }

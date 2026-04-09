@@ -13,7 +13,7 @@
   "age": 56,
   "status": "active",
   "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near State and Van Buren",
-  "description": "Ilhan Park-Traore is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 56, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a face out of The Underbelly, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented face in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Ilhan Park-Traore is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 56, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a face out of The Underbelly, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented face in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.47,
@@ -62,7 +62,7 @@
   "story_hooks": [
     "Ilhan Park-Traore discovers a job they completed last year was a setup for something much larger and much worse",
     "A corporate black site Ilhan Park-Traore once infiltrated is being reopened, and the people inside know her face",
-    "A crew member from Ilhan Park-Traore's past shows up in Meridian 88, carrying old grievances and new chrome"
+    "A crew member from Ilhan Park-Traore's past shows up in GLMZ, carrying old grievances and new chrome"
   ],
   "narrative_function": "Ilhan Park-Traore is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
   "augmentations": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome. Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
@@ -275,10 +275,31 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "The Shelf",
     "Slagworks Industrial"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East African (Somali/Ethiopian) / Korean",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Lean and angular with defined musculature in shoulders and core — the build of someone who maintains strength through precise, economical movement rather than bulk. Legs show subtle unevenness in muscle definition from synthetic fiber augmentation.",
+    "hair_color": "Salt-and-pepper gray, natural with premature silver from stress and circadian disruption",
+    "hair_style": "Pulled back in a tight, functional braid, no ornamentation",
+    "hair_length": "Long (shoulder blade)",
+    "eye_color": "Dark brown, unaugmented but with the flat, focused quality of someone trained to read micro-expressions",
+    "skin_tone": "Medium brown with warm undertones, complexion weathered by decades of nocturnal work",
+    "complexion": "Sharp cheekbones, prominent brow ridge, narrow jaw. Minimal grooming — no makeup, skin shows minor scarring around the temples (old neural port testing), a few fine lines around eyes from constant squinting in low light. Slight asymmetry to her face that reads as unforgettable rather than beautiful.",
+    "distinguishing_marks": [
+      "Thin white scar running from right temple to cheekbone, approximately 4cm, from a knife fight in 2198",
+      "Burn scarring on the underside of left wrist, old and faded, precise geometric pattern consistent with calibration equipment",
+      "No visible tattoos — she operates in circles where skin art is liability, not identity"
+    ],
+    "visible_augmentations": "Right arm is full cybernetic replacement from shoulder joint down — matte-black chrome with visible servo joints at elbow and wrist, synthetic muscle fiber showing through gaps in the plating. The arm moves with inhuman precision and strength. Minimal attempt to make it cosmetic — the chrome is industrial-grade, scarred and nicked from heavy use. Subtle augmentation scars visible at shoulders and hip flexors (synthetic leg fiber installation points), though the legs themselves appear organic at first glance.",
+    "posture_movement": "Stands with weight distributed evenly, never favoring one side. Moves with deliberate economy — every gesture means something, nothing is wasted. Slight favoring of the left leg when stationary (synthetic fibers compensate for endurance but introduce micro-delays on stairs and uneven terrain). Right hand rests naturally, chrome catching light in a way that announces its presence without being theatrical.",
+    "clothing_style": "Tier 4-5 practical: matte black tactical cargo pants with reinforced knee panels, worn synthleather boots with ankle actuators for uneven terrain, oversized black long-sleeve shirt in military-grade moisture-wicking fabric. A 15-year-old Yamagata Industries field jacket, charcoal gray, with custom internal modifications and worn silver zippers. No logos or clan colors — anonymity is her brand. Carries equipment in a leather messenger bag (real leather, rare in the GLMZ, inherited from a mentor) worn across her torso for stability. No visible Φ indicators of wealth."
+  },
+  "image_prompt": "A 56-year-old East African-Korean woman with sharp angular features and salt-pepper hair in a tight braid, standing in dim neon-lit underground tunnels. Full cybernetic right arm in matte black chrome with visible servo joints, industrial and unpolished. Lean athletic build, unaugmented dark eyes with intense focus. Wearing oversized black tactical shirt and worn synthleather, carrying weathered leather messenger bag. Nocturnal and scarred, moving with precise deliberate economy. Cyberpunk noir aesthetics, low-key urban underground setting, cool blue and amber neon lighting filtering through maintenance ducts, photorealistic, serious expression, --ar 2:3 --v 6"
 }

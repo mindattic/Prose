@@ -235,5 +235,26 @@
     "SynapTech IrisBloom Ocular Color Modulator",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Polish / Japanese / West African (Guinean)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and economical — minimal excess, structured rather than athletic. Shoulders slightly rounded from habitual forward posture, as if perpetually ready to fold into themselves in crowded spaces.",
+    "hair_color": "Transit-orange dye on crown; dark brown natural at roots and faded undercut",
+    "hair_style": "Close-cropped fade on sides, longer on top (4-5 cm), swept back slightly",
+    "hair_length": "Short",
+    "eye_color": "Deep blue-green with iridescent geometric patterning across iris (cosmetic modification)",
+    "skin_tone": "Medium warm — olive undertones from Polish-Japanese heritage, balanced with deeper bronze from West African ancestry",
+    "complexion": "Clear, well-maintained skin with minimal scarring. Face often at rest appears blank or neutral — a practiced professional neutrality. Fine lines around eyes suggest frequent concentration. Jaw defined but not prominent.",
+    "distinguishing_marks": [
+      "Small linear scar on left inner wrist (3 cm), pale and old, orientation suggests self-inflicted or medical intervention from adolescence",
+      "Ferrogate Transit Authority tattoo on right collarbone — minimalist logo in gray-black, required for Tier 2 employee status",
+      "Faint burn mark on left forearm (5 cm diameter, circular), consistent with contact burn from equipment or accident, approximately 2-3 years old"
+    ],
+    "visible_augmentations": "Iridescent iris modification is the only visible augmentation — appears as intricate geometric blue-green patterning across the iris, subtle until direct eye contact. Standard-issue Ferrogate comm implant sits behind the left ear as a slight subcutaneous bulge beneath the close-cropped hairline, barely visible.",
+    "posture_movement": "Walks with economy of motion — no wasted movement. Posture slightly folded inward, shoulders carrying tension. Hand movements are precise and controlled, trained by three years of platform work. Voice is quiet and modulated, pitched to travel exactly as far as needed. When stationary, they often shift weight between feet or find a wall to lean against — never fully at ease standing open in space.",
+    "clothing_style": "Ferrogate Transit Authority regulation uniform when on shift: charcoal gray synthetic-blend shirt with reflective piping and badge, regulation trousers, non-slip platform shoes. Off-shift: muted palette — dark thermal layers, unmarked synth-weave jacket in charcoal or navy, worn cargo pants with reinforced pockets. All clothing is functional and well-maintained but carries no brand markers or tier signaling. One personal item: worn leather wrist unit band holding a personal tactical gaming device."
+  },
+  "image_prompt": "A nonbinary person of mixed Polish-Japanese-Guinean heritage, age 24, lean build, standing in profile on a deep underground transit platform. Close-cropped dark hair with transit-orange dyed crown, subtle geometric iridescent blue-green patterning visible in their left eye. Wearing Ferrogate Transit Authority gray regulation uniform with reflective piping, posed with shoulders slightly forward. Background: brutalist concrete station walls, LED strip lighting casting cool white-blue tones, distant train platform with safety markings. Mood: quiet competence, habitual neutrality, professional distance. Lighting: harsh fluorescent station light, cool color temperature, subtle lens flare on iris augmentation. Cyberpunk near-future, grounded and mundane, documentary realism. --ar 2:3 --v 6"
 }

@@ -278,5 +278,27 @@
     "Slagworks Industrial",
     "Gravimetric Collapse Charge GCC-9"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 162,
+    "weight_kg": 68,
+    "build": "Compact and densely muscled, low center of gravity with broad shoulders tapering to a narrow waist. Built for impact absorption and explosive movement rather than reach — every visible muscle has definition but not bulk.",
+    "hair_color": "Dark brown with natural copper undertones",
+    "hair_style": "Pulled back in a tight, functional braid secured with steel wire",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Chrome iris rings surrounding dark brown natural eyes — thermal and low-light augmentation visible as faint LED glow in dim conditions",
+    "skin_tone": "Medium warm tone with olive undertones, lighter at the jawline suggesting mixed heritage",
+    "complexion": "Sharp, angular face with high cheekbones and a prominent jawline. Minimal scarring on the visible face, but the skin around the cybernetic eye sockets shows faint surgical lines and slight chrome seepage. Grooming is functional and precise — no jewelry, no cosmetics.",
+    "distinguishing_marks": [
+      "Thin surgical scar running from left temple to cheekbone where the cybernetic eye was installed.",
+      "Network of fine white scars across the knuckles and backs of both hands — impact marks from years of combat training.",
+      "Burn scar on the inside of the right forearm (10cm long) — old corporate security escalation, deliberately kept visible as a warning.",
+      "Faint discoloration in a line down the center of her spine, visible only in direct light — subcutaneous armor plating beneath the skin."
+    ],
+    "visible_augmentations": "Cybernetic eyes with chrome iris rings and faint blue-green luminescence in low light. Hydraulic joint articulation visible at the elbows and knees — the skin around these points shows subtle metallic threading and occasional micro-hydraulic fluid weeping. When she moves quickly, the joints emit a soft, precise hissing sound.",
+    "posture_movement": "Moves with economical precision — no wasted motion, no flourish. Stands with weight balanced on the balls of her feet, ready to shift instantly. Resting posture is coiled rather than relaxed. Eyes track targets with mechanical smoothness. When engaging, her movements are sharp and deliberate, powered by the hydraulic augmentations.",
+    "clothing_style": "Tier 3-4 utilitarian: matte-black reinforced synth-weave tactical jacket with hidden pocket architecture, form-fitted to avoid snagging. Underneath, charcoal compression undershirt with integrated cooling channels. Cargo pants in dark gray with reinforced stitching and magnetic tool fasteners at the thighs. Steel-toed boots with grip-enhanced soles — no logos, all function. A single item of visible non-utility clothing: a faded silver pendant worn under the shirt, just visible at the neckline."
+  },
+  "image_prompt": "A compact East-African-Scandinavian woman, age 35, with dark brown hair in a tight braid, cybernetic chrome iris rings visible in both eyes with faint blue-green glow. Densely muscled, low-center-of-gravity build. Wearing matte-black reinforced tactical jacket, charcoal compression shirt, dark cargo pants, steel-toed boots. Faint surgical scars around the cybernetic eye sockets, white knuckle scars visible on her hands. Standing in a dim warehouse setting in the vertical sprawl of the Rookery, neon light filtering through grime-covered windows. Hydraulic joint articulation faintly visible at elbows and knees. Posture coiled and ready, weight on the balls of her feet. Precise, functional, no unnecessary movement. Cyberpunk noir, high contrast lighting, gritty realism, sharp focus on the face and augmentations. --ar 2:3 --v 6"
 }

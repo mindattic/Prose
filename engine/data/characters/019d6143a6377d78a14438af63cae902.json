@@ -187,5 +187,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "SynapTech ReadRoom Social Cue Enhancer"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "South African / Irish",
+    "height_cm": 155,
+    "weight_kg": 42,
+    "build": "Wiry and undernourished, all sharp elbows and prominent collarbones. Muscle definition emerging from constant street movement, but overall frame suggests inconsistent nutrition. Posture hunched slightly forward as if bracing against cold that isn't there.",
+    "hair_color": "Black with dark brown undertones",
+    "hair_style": "Unevenly shaved, grown out to roughly 1-2cm with visible patchy regrowth suggesting maintenance every 3-4 weeks with whatever blade is available",
+    "hair_length": "Short",
+    "eye_color": "Right eye: dark brown. Left eye: amber with cosmetic slit pupil (pawn-grade mod, occasionally glitches to full dilation)",
+    "skin_tone": "Dark olive with warm undertones, weathered and sun-damaged from street exposure",
+    "complexion": "Youthful but prematurely hardened facial features. Jaw clenched habitually. Dark circles under both eyes. Occasional scab or healing cut on lips from biting. Skin shows signs of poor hygiene access but not infection — streets are clean enough for that. Expression oscillates between guarded wariness and desperate seeking of approval.",
+    "distinguishing_marks": [
+      "Long irregular scar across right palm from wrist toward fingertips, pale pink against olive skin, edges slightly raised suggesting poor wound care during healing",
+      "Small burn mark on left wrist (inside), roughly circular, size of a cigarette cherry — origin story changes weekly",
+      "Fading bruise along left ribs, approximately 4-5cm, yellowish-green stage suggesting 5-7 days old"
+    ],
+    "visible_augmentations": "Left eye amber slit-pupil mod (cosmetic only, pawn-bin quality, occasionally malfunctions to full dilation creating unsettling fully-dilated appearance). No other visible augmentations. No subdermal implants visible.",
+    "posture_movement": "Restless and kinetic — fidgets constantly with hands, shifts weight foot-to-foot even when standing still. Moves quickly through space with the efficiency of someone accustomed to needing to leave fast. Makes frequent eye contact (especially with older prospects) as if seeking validation. Flinches occasionally at loud noises. Shoulders habitually raised slightly toward ears.",
+    "clothing_style": "Tier 5/sub-grade streetwear. Oversized dark gray synthetic jacket with faded stencil lettering inside lining reading 'DONOVAN' (not his name). Underneath: layered mismatched thermals — one long-sleeve shirt in brown-black, another in navy with small hole near shoulder seam. Dark cargo pants with multiple pockets and external patches, cuffs frayed and caked with street dust. Cheap high-top synth-leather boots, one lace missing, replaced with frayed synthetic cord. No jewelry except a thin copper wire wrapped loosely around left wrist (gang indicator, loose/unofficial). Jacket hood worn frequently, pulled low."
+  },
+  "image_prompt": "13-year-old boy with dark olive skin, unevenly shaved black hair, narrow wiry frame, wearing oversized dark gray jacket with interior stencil lettering and frayed cargo pants, amber slit-pupil cybernetic mod in left eye, long pale scar across right palm, standing in urban alleyway at dusk, The Narrows cyberpunk district, neon signs reflecting off wet pavement, fidgeting posture, expression caught between defiance and seeking approval, hard-worn child street aesthetic, gritty realism, cinematic lighting, cyberpunk dystopia, 2226, shot in natural documentary style --ar 2:3 --v 6"
 }

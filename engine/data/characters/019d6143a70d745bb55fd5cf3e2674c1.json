@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Burnished Market, Copperhead, near Damen and Armitage",
-  "description": "Valentina is slight, with deep golden-brown skin, sharp cheekbones, and hair that shifts color through the full visible spectrum across a thirty-minute cycle — a geneware expression mod they saved for two years to afford and consider the single best decision of their life. They dress in deliberate contradiction: they could wear anything in their inventory but typically choose a single elegant piece against something plainly utilitarian, the combination always pointing at something the observer can't quite name. Their stall is a canvas archway strung with hanging garments that act as walls — inside, bolts of smart-fabric, hand-stenciled jackets, deconstructed corporate uniforms resewn into something feral, faction colors assembled into outfits that signal affiliation without commitment.\n\nVala is an expert in the semiotics of dress in Meridian 88 — they can read who someone is, what they want to be, and what they're afraid of from what they're wearing and how they hold themselves in it. This makes them an extraordinary vendor and an occasionally unsettling conversationalist. They are warm but precise, never cruel, but they will tell you what your clothes say about you if you ask, and sometimes if you don't. They have a genuine investment in helping people look the way they feel inside, and they extend credit to people in the Burnished Market who are clearly trying to climb out of something.",
+  "description": "Valentina is slight, with deep golden-brown skin, sharp cheekbones, and hair that shifts color through the full visible spectrum across a thirty-minute cycle — a geneware expression mod they saved for two years to afford and consider the single best decision of their life. They dress in deliberate contradiction: they could wear anything in their inventory but typically choose a single elegant piece against something plainly utilitarian, the combination always pointing at something the observer can't quite name. Their stall is a canvas archway strung with hanging garments that act as walls — inside, bolts of smart-fabric, hand-stenciled jackets, deconstructed corporate uniforms resewn into something feral, faction colors assembled into outfits that signal affiliation without commitment.\n\nVala is an expert in the semiotics of dress in GLMZ — they can read who someone is, what they want to be, and what they're afraid of from what they're wearing and how they hold themselves in it. This makes them an extraordinary vendor and an occasionally unsettling conversationalist. They are warm but precise, never cruel, but they will tell you what your clothes say about you if you ask, and sometimes if you don't. They have a genuine investment in helping people look the way they feel inside, and they extend credit to people in the Burnished Market who are clearly trying to climb out of something.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -224,10 +224,31 @@
   "registered_firearms": [],
   "related_entities": [
     "The Burnished Market",
-    "Meridian 88",
+    "GLMZ",
     "Copperhead",
     "Tessera Corponation",
     "Palette"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / South Asian",
+    "height_cm": 163,
+    "weight_kg": 52,
+    "build": "Slight and angular, with defined collarbones and long fingers; the build of someone who moves through crowded spaces easily and spends hours at a sewing table",
+    "hair_color": "Full-spectrum chromatic cycling (currently: deep violet fading to amber to cyan across a 30-minute loop)",
+    "hair_style": "Loose, shoulder-length waves with deliberate asymmetry; left side pinned back with a salvaged circuit board clasp",
+    "hair_length": "Medium",
+    "eye_color": "Deep brown with amber undertones",
+    "skin_tone": "Deep golden-brown with warm undertones",
+    "complexion": "Sharp cheekbones, high temples, fine-featured; skin kept meticulously clean despite Market dust; minimal makeup, favoring bare lips and defined brows",
+    "distinguishing_marks": [
+      "Faint white scarring across inner left wrist (old self-harm history, now healed)",
+      "Thin, precise line tattoo running down the right collarbone in an abstract textile pattern (geometric weaving symbol)",
+      "Small burn mark on left thumb pad (fabric-work accident, now faded to pale pink)"
+    ],
+    "visible_augmentations": "Hair geneware mod (chromatic cycling) is immediately striking and intentional. Fingertip haptic sensitivity mod shows only as slightly higher skin sensitivity around fingertips—not visually obvious. No visible cyberware.",
+    "posture_movement": "Moves with economical precision; stands with weight balanced evenly, ready to shift. Hands are often in motion—gesturing, arranging fabric, touching materials to evaluate texture. Eye contact is direct and assessing without being hostile. They have a habit of tilting their head slightly when evaluating someone's outfit.",
+    "clothing_style": "Deliberate contradiction is their uniform: today might be a pristine white linen shirt (corporate salvage, refitted) paired with cargo pants patched in mismatched smart-fabric samples. Tomorrow: a hand-stenciled denim jacket over a plain grey undershirt and tailored black trousers. Footwear is always practical (worn canvas boots or reinforced street shoes). Accessories include salvaged tech components repurposed as jewelry—circuit board clasps, LED pendant, fabric scraps tied as wrist wraps. Everything is meticulously maintained despite the Market grime. Tier 4 aesthetic with Tier 3 resourcefulness and Tier 2 design sensibility."
+  },
+  "image_prompt": "Portrait of a 28-year-old nonbinary fashion vendor with deep golden-brown skin, sharp cheekbones, and shoulder-length hair cycling through full-spectrum colors—currently violet, amber, and cyan. Medium build, slight and angular. Wearing a pristine white linen shirt paired deliberately with utilitarian cargo pants patched in smart-fabric samples. Hands with heightened sensitivity, positioned carefully near fabric swatches. Standing in front of a canvas archway strung with hanging garments and draped cloth—the Burnished Market in warm afternoon light. Direct gaze, assessing expression. Cyberpunk fashion vendor, GLMZ Tier 3-4 aesthetic, warm but precise mood. LED pendant visible, circuit board hair clasp. Detailed fabric textures, careful composition. Shallow depth of field, market chaos soft-focused behind. Color-graded warm amber—late-afternoon market light—high saturation on the hair mod. Cinematic, fashion photography meets character portrait. --ar 2:3 --v 6"
 }

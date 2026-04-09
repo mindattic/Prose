@@ -175,5 +175,26 @@
     "The Pale Mile",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Bantu / Lithuanian",
+    "height_cm": 176,
+    "weight_kg": 62,
+    "build": "Lean and angular, almost wire-thin from irregular eating habits and stimulant-heavy diet. Defined shoulders and chest with minimal body fat; the kind of frame that reads as either malnourished or ascetic depending on context.",
+    "hair_color": "Natural dark brown, often with a slight grey dust of plaster or laminate residue",
+    "hair_style": "Completely shaved; he maintains it himself with a cheap electric razor, leaving minor uneven patches he doesn't bother to correct",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown, natural; right eye has a faint metallic sheen around the pupil from the optical magnifier implant",
+    "skin_tone": "Light brown with warm undertones, even across the face and body",
+    "complexion": "Sharp, angular features with high cheekbones and a slightly prominent jaw. Fine-pored skin with a perpetually tired quality — dark circles under his eyes from late-night work sessions. A thin scar runs across his left knuckle from a laminator incident three years ago. No facial hair; he shaves every other day without much care.",
+    "distinguishing_marks": [
+      "A crooked bioluminescent stripe in pale blue running from his left temple to his jaw, applied via black-market gene kit at age nineteen; the placement wavers slightly and pulses faintly when his heart rate spikes",
+      "Thin white scar across the first knuckle of his left hand from a laminator burn",
+      "A small rust-colored birthmark on his right collarbone, shaped vaguely like a thumbprint"
+    ],
+    "visible_augmentations": "The bioluminescent facial stripe is immediately obvious and slightly crooked, a self-applied cosmetic mod that reads as either DIY-punk or poor-quality depending on observer bias. Right eye shows a faint metallic ring around the iris from the internal optical magnifier; when his focusing mechanism sticks, he occasionally taps his right temple sharply, drawing attention to the implant site. No obvious external hardware otherwise.",
+    "posture_movement": "Perpetually fidgety; tends to stand with weight on the balls of his feet as if ready to move. Speaks with rapid hand gestures that emphasize technical points. His gaze darts frequently, especially when nervous — eyes track to exits or potential threats. When focused on detail work, he becomes eerily still. He has a habit of tapping his right temple rhythmically when thinking, especially when stuck on a problem.",
+    "clothing_style": "Tier 3-4 working class with anti-identification design choices. Favors loose-fitting, dark synth-cotton jackets with many interior pockets for tools and blank credsticks. Worn cargo pants in charcoal grey, often stained with laminate dust or solder residue. His shoes are cheap polymer-soled runners, scuffed and held together with cable ties. He wears a faded, repurposed server-farm tech vest underneath his jacket — it still has a dangling ID badge from a corporation he never actually worked for, which he keeps as a joke about the documents he sells. His hands are rarely clean; he wears fingerless gloves most days, more out of habit than need."
+  },
+  "image_prompt": "Portrait of Théo Nzinga-Valkauskas, a lean 29-year-old man with dark brown skin, completely shaved head, and sharp angular features. A crooked pale blue bioluminescent stripe runs from his left temple to his jaw, pulsing faintly. Right eye has a subtle metallic magnifier implant visible around the iris. Wearing a dark synth-cotton jacket over a faded server-farm tech vest, loose cargo pants stained with laminate dust. Fidgeting posture, tapping his temple nervously. Background: glow of humming laminators and blank credsticks in a converted laundry kiosk, faint detergent smell implied, a broken tablet displaying glitched static shrine. Cyberpunk noir, underground tech-vendor aesthetic, cool blue and grey color palette with accent from bioluminescent stripe. Anxious energy, late-night worker vibe, dim warehouse lighting with harsh laminator glow. Hyper-detailed face, intricate cyberpunk setting. --ar 2:3 --v 6"
 }

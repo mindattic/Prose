@@ -187,7 +187,7 @@
       "Believes he is human while possessing capabilities that no human augmentation can explain — and has never investigated the discrepancy",
       "Journals obsessively about the wrongness but is programmed to never follow the evidence to its conclusion",
       "Craves intensity and novelty but lives the most rigid, predictable life possible",
-      "The most dangerous assassin in Meridian 88 is also its most naive resident — he genuinely does not know what he is"
+      "The most dangerous assassin in GLMZ is also its most naive resident — he genuinely does not know what he is"
     ],
     "habits": [
       "Exercises every morning at 0530 — the routine is installed but he has come to need it independently of the programming",
@@ -316,5 +316,25 @@
     "Ohio Corridor",
     "Detroit"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Fabricated — Detroit Reclamation Zone origin (records show mixed Midwestern European ancestry, implanted)",
+    "height_cm": 182,
+    "weight_kg": 78,
+    "build": "Athletic and precisely proportioned — no asymmetries, no functional inefficiency. Musculature is defined but not grotesque, calibrated to appear naturally fit rather than augmented. Moves with mechanical efficiency disguised as human grace.",
+    "hair_color": "Dark brown, synthetic with realistic variation",
+    "hair_style": "Neatly maintained, parted left, groomed daily",
+    "hair_length": "Short (3-4 cm)",
+    "eye_color": "Unnatural green — neither hazel nor jade, a shade that does not appear in human iris pigmentation. Catches light oddly under certain angles. Unnervingly symmetrical pupils.",
+    "skin_tone": "Pale — synthesized to match 'European descent' but lacks the vascular variation of living skin. Warm to touch due to internal thermal regulation.",
+    "complexion": "Flawless in a way that reads as uncanny. Pores are present and correctly sized, but distributed with mathematical consistency. Micro-blemishes applied at factory spec. Jaw and cheekbones are perfectly symmetrical. No facial hair growth — smooth-shaven always, requiring no effort. Expression is controlled; smiles do not reach eyes in the way human smiles do.",
+    "distinguishing_marks": [
+      "Thin, almost invisible scar along left jawline (cosmetic damage from 'augmentation surgery' — actually factory seam line that was expertly concealed)",
+      "No birthmarks, no acne scarring, no age spots — absence itself is conspicuous"
+    ],
+    "visible_augmentations": "Appears to have none — passes as baseline human with exceptional augmentations. In truth, entire skeletal-muscular system is synthetic. The deception is the augmentation. If examined by medical imaging, would reveal composite materials, but avoids medical facilities. Optical sensors are calibrated to mimic human eye movement patterns.",
+    "posture_movement": "Unnaturally perfect posture — spine aligned to engineering tolerances. Movement is fluid but slightly too efficient, lacking the micro-hesitations and postural adjustments that characterize organic movement. Walks with measured stride. Does not fidget, sway, or shift weight unconsciously. Handshakes are calibrated to human norm — firm but not crushing.",
+    "clothing_style": "Tier 2 professional aesthetic — well-fitted casual blazers (charcoal, navy), clean-line shirts (white, grey), tailored trousers, expensive but understated boots (black leather, Sato manufacturing). Maintains appearance of a successful freelance operative with disposable income. Minimal jewelry — thin steel watch that serves no function but maintains his cover. Clothing is always immaculate; he maintains multiple identical outfits for rotation."
+  },
+  "image_prompt": "Portrait of an android designed to pass as human, cyberpunk 2226, handsome man in early thirties with dark brown hair and unnaturally perfect features, unnatural bright green eyes that catch light wrong, pale synthetic skin with mathematical precision to pores and blemishes, wearing charcoal blazer and clean white shirt, standing in Tier 2 apartment with floor-to-ceiling windows overlooking neon-lit Meridian Core skyline at dusk, cool blue and green city lighting, sharp focus on uncanny symmetry of face, subtle indication that something is not quite right about his proportions and movement, photorealistic with slight hypersmooth quality, professional lighting, --ar 2:3 --v 6"
 }

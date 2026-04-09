@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Shelf — Clearpath Community Node, a converted transit shed that serves as a childcare center, food pantry, and meeting space, near Ashland and Division",
-  "description": "Devaki is compact and energetic, built like someone who has spent years crouching to a child's eye level and then standing up quickly to manage chaos. Their skin is warm brown, their hair a natural cloud of deep black shot through with self-maintaining bioluminescent streaks of soft green — a geneware mod they got as a teenager and have never changed because the children love it and they love the children. They have their Ghanaian father's broad cheekbones and their Iranian mother's sharp nose, and they wear expressions that shift fast: delight to concern to focused calm, all in the span of a breath. Their hands are always slightly stained with paint or chalk or both.\n\nDevaki runs on conviction and substandard coffee. They believe — with a firmness that sometimes looks like stubbornness and sometimes looks like the only sane response to Meridian 88 — that children are the one non-negotiable. Whatever the Corponations decide, whatever the district politics do, whatever the power cuts and the overcrowding and the data poverty do, the kids at Clearpath are going to have three meals today and a clean place to learn and an adult who will not disappear on them. They are funny in a dry, quick way that children respond to immediately. Adults who underestimate them because of their warmth make a reliable and often entertaining mistake.",
+  "description": "Devaki is compact and energetic, built like someone who has spent years crouching to a child's eye level and then standing up quickly to manage chaos. Their skin is warm brown, their hair a natural cloud of deep black shot through with self-maintaining bioluminescent streaks of soft green — a geneware mod they got as a teenager and have never changed because the children love it and they love the children. They have their Ghanaian father's broad cheekbones and their Iranian mother's sharp nose, and they wear expressions that shift fast: delight to concern to focused calm, all in the span of a breath. Their hands are always slightly stained with paint or chalk or both.\n\nDevaki runs on conviction and substandard coffee. They believe — with a firmness that sometimes looks like stubbornness and sometimes looks like the only sane response to GLMZ — that children are the one non-negotiable. Whatever the Corponations decide, whatever the district politics do, whatever the power cuts and the overcrowding and the data poverty do, the kids at Clearpath are going to have three meals today and a clean place to learn and an adult who will not disappear on them. They are funny in a dry, quick way that children respond to immediately. Adults who underestimate them because of their warmth make a reliable and often entertaining mistake.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -63,7 +63,7 @@
   "narrative_function": "Moral compass character — their presence grounds stories in the human cost of systemic issues. Quest giver for crises that affect the neighborhood's children. Can provide critical local knowledge about families and community dynamics. Represents what civic infrastructure looks like when it's held together by human will rather than institutional support.",
   "augmentations": "Bioluminescent hair streaks (geneware, soft green, self-maintaining); basic health-monitoring subdermal patch on their sternum that they share data with a local free clinic",
   "daily_life": "Arrives at Clearpath by 06:30 for early drop-offs, coordinates breakfast, runs three age-grouped learning sessions, handles two hours of administrative work that they hate, and usually can't leave until 19:00. Eats standing up. Sends voice messages to their mother on the crosstown walk home.",
-  "affiliation": "Clearpath Community Node (community-funded, not-for-profit); receives marginal supplementary funding from the Meridian 88 Social Services Bureau",
+  "affiliation": "Clearpath Community Node (community-funded, not-for-profit); receives marginal supplementary funding from the GLMZ Social Services Bureau",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -229,7 +229,7 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Iron Lotus",
     "Clearpath",
     "The Shelf",
@@ -243,5 +243,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Persian (Iranian)",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry with functional muscle from constant movement — crouching, lifting, reaching. No excess weight; built for efficiency rather than strength.",
+    "hair_color": "Deep black with self-maintaining bioluminescent green streaks",
+    "hair_style": "Natural cloud texture, worn loose and unstyled; the green bioluminescent threads run through it organically",
+    "hair_length": "Medium (shoulder-length when relaxed, often pulled back with whatever is handy — a crayon, a rubber band, a child's hair clip)",
+    "eye_color": "Dark brown, warm and expressive",
+    "skin_tone": "Warm medium brown with golden undertones",
+    "complexion": "Clear, lively complexion with a few paint stains perpetually visible around the cuticles and knuckles. Broad Ghanaian cheekbones, sharp Persian nose. Facial expressions mobile and quick — rarely still for long. No visible cosmetics; skin maintained with practical care rather than aesthetics.",
+    "distinguishing_marks": [
+      "Small, faded chalk smudge on their left temple (semi-permanent from work)",
+      "Callus on the base of their right ring finger from holding pencils and markers",
+      "Faint watercolor paint stain on the inside of their left wrist (occupational)"
+    ],
+    "visible_augmentations": "Bioluminescent hair streaks (soft green, most visible in dim light or shadow). The subdermal health-monitoring patch on their sternum is not visible under clothing. No chrome or obvious cybernetics — deliberately maintained low-profile augmentation.",
+    "posture_movement": "Alert and kinetic. Rarely sits fully still; shoulders slightly forward, knees ready to bend. Moves with practiced efficiency — no wasted motion, but not tense. Hands gesture frequently when speaking. Eyes scan rooms habitually (checking for hazards, watching for children in distress). Default stance is slightly lower center of gravity, as if ready to crouch or react.",
+    "clothing_style": "Tier 4 practical. Well-maintained but worn clothing chosen for durability and washability: reinforced pants (usually dark, many pockets), soft oversized t-shirts or loose button-ups in muted colors (often with faint permanent stains from paint/food/chalk). Comfortable shoes broken in from eight-hour days. A cardigan or lightweight jacket, usually unzipped. No jewelry except a faded fabric bracelet made by a child. Clothes show care but not vanity — repaired seams, re-hemmed cuffs. The green bioluminescent hair streaks are their single deliberate aesthetic statement."
+  },
+  "image_prompt": "Portrait of a compact, energetic nonbinary person of mixed West African and Persian heritage, age 28, medium brown skin with warm golden undertones. Deep black hair with soft bioluminescent green streaks running through a natural cloud texture, shoulder-length and slightly tousled. Broad cheekbones, sharp nose, dark expressive eyes. Hands slightly stained with paint and chalk. Wearing a faded oversized t-shirt and well-worn dark pants with multiple pockets. Standing in a community center interior (warm industrial lighting, children's artwork on walls behind), alert posture with slight forward lean. Soft amber and green bioluminescent lighting casting gentle shadows. Expression shifts between focus and warmth. Cinematic, documentary realism, cyberpunk setting but grounded and human. 2226 GLMZ aesthetic — worn but loved, functional not flashy. --ar 2:3 --v 6"
 }

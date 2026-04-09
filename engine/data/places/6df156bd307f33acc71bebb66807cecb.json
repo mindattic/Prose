@@ -68,8 +68,16 @@
     "Dancers who've heard about colony music and need to hear it in the open air"
   ],
   "notable_locations": [
-    "The open deck — the lake's largest dance floor, sky and water and city light",
-    "Adaeze's private meeting rooms — below deck, for rent, three kilometers from jurisdiction"
+    {
+      "name": "The open deck",
+      "description": "the lake's largest dance floor, sky and water and city light",
+      "tags": []
+    },
+    {
+      "name": "Adaeze's private meeting rooms",
+      "description": "below deck, for rent, three kilometers from jurisdiction",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.875,

@@ -202,5 +202,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Rust"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Northern European (Odera suggests Yoruba or Igbo; Pike suggests Scandinavian or Germanic)",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Wiry and lean with long, efficient limbs — a swimmer's frame. Minimal body fat, corded forearms and calves from constant activity. Shoulders slightly narrower than his hips, built for flexibility rather than power.",
+    "hair_color": "Dark brown with salt-bleached streaks near the temples",
+    "hair_style": "Close-cropped, textured, always slightly wet or damp",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with a faint metallic sheen around the irises (pressure-compensation implants visible as a thin silvery ring)",
+    "skin_tone": "Medium brown with warm undertones, weathered to a deeper, salt-stained bronze across his shoulders and forearms",
+    "complexion": "Perpetually wind-burned and salt-dried, lips slightly chapped, fine premature lines around his eyes from squinting in harsh harbor light. Cheekbones sharp and defined. His expression shifts rapidly — eager then frustrated, focused then restless.",
+    "distinguishing_marks": [
+      "Thin horizontal scar across his left collarbone, roughly 4cm, pale and old — origin unknown, predates Old Harbor",
+      "Small circular scar on the inside of his right wrist (pressure-compensation implant insertion point), barely visible unless wet",
+      "Salt-and-rust discoloration along the left side of his neck and jawline, permanent from daily water exposure"
+    ],
+    "visible_augmentations": "Faint metallic ring visible in both eyes when light hits them (pressure-compensation implants). Occasionally carries a hand-held sonar device worn on a cord around his neck — battered, hydrophobic casing, scratch-marked from use. No visible respiratory hardware; the enhancement is internal.",
+    "posture_movement": "Never still — fingers tap, legs bounce, weight shifts constantly even while standing. In water he moves with hypnotic grace, economical and flowing. On land his motion is restless and quick, as if the ground is too solid, too limiting. He leans forward when talking, eyes bright with intensity or frustration.",
+    "clothing_style": "Tier 4 utilitarian salvage wear: wetsuit jacket over thermal base layers (usually damp), cargo pants with reinforced pockets for tools and sonar equipment, worn rubber-soled boots. A faded work vest with multiple fastening points. Minimal accessories — a wrist cuff with pressure readings, a braided cord around his neck for the sonar unit. Everything shows salt staining and repair patches. No corporate branding; functional, working-class, built for the harbor."
+  },
+  "image_prompt": "cyberpunk scout diver, lean wiry build, dark brown skin with salt-bleached temple streaks, short textured hair, sharp cheekbones, intense dark eyes with faint metallic pressure-compensation rings visible in irises, perpetually salt-dried and sun-weathered complexion, worn thermal layers under damp wetsuit jacket, cargo pants with tool pockets, hand-held sonar device hanging from cord around neck, restless posture with constant fidgeting energy, standing in humid Old Harbor warehouse lit by industrial skylights casting cool blue-grey light, brine and rust smell in air, background of submerged infrastructure visible through flooded windows, cinematic realism, shallow depth of field focusing on face and eyes showing barely-contained frustration, high contrast lighting, gritty urban decay aesthetic, underwater-adjacent mood despite being on land --ar 2:3 --v 6"
 }

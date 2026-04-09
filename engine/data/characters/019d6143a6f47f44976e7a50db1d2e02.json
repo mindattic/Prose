@@ -190,5 +190,27 @@
     "The Pure Hand",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Southern African / Polish / Aotearoan Māori",
+    "height_cm": 152,
+    "weight_kg": 42,
+    "build": "Compact and wiry with dense musculature in shoulders and forearms developed from years of precision bench work; minimal body fat; posture slightly forward-leaning from hunching over fabrication rigs",
+    "hair_color": "Natural dark brown, almost black",
+    "hair_style": "Closely cropped to scalp, clean and functional; no styling, maintained for workshop practicality",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with natural faint golden ring around iris (geneware expression)",
+    "skin_tone": "Warm amber-brown, sun-kissed undertones from mixed heritage",
+    "complexion": "Sharp cheekbones, defined jawline, youthful but with the weathered quality of someone who spends ten hours daily in workshop conditions; clear skin except for occasional minor cuts and abrasions on face from work mishaps; cuticles permanently stained with cutting fluid despite scrubbing",
+    "distinguishing_marks": [
+      "Multiple small, thin scars across knuckles and back of both hands from tool contact and material stress",
+      "Faint discoloration on all fingertips and thumbnails from metal-staining cutting fluids",
+      "Tiny pale scar on left temple, approximately 2cm, from a shop accident at age 11",
+      "Calluses across all palms and the sides of all twelve fingers, pronounced and asymmetrical"
+    ],
+    "visible_augmentations": "Twelve fully articulated fingers on each hand (two extra per hand, natural geneware expression, not obviously cybernetic but anatomically distinct); faint haptic sensitivity modification visible as barely-perceptible subdermal patterning on fingertips and lower palms under workshop lighting, industrial-grade implants that read as utilitarian rather than cosmetic",
+    "posture_movement": "Naturally forward-leaning, shoulders slightly rounded from bench work posture; moves with economical precision, no wasted motion; hands are in constant micro-adjustment when at rest; walks with working-class directness, no affectation; carries themselves with the unselfconscious confidence of someone competent in their domain regardless of age",
+    "clothing_style": "Tier 3-4 working class, strictly functional: reinforced canvas work pants (gray or dark blue, multiple tool pockets, stained with cutting fluid and machine oil), thermal undershirt (usually black or dark gray), heavy cotton work shirt (oversized, sleeves often rolled, pockets thick with tools and parts), worn composite-soled work boots (steel-toed, laced tight), leather work apron with deep pockets (Nzinga's shop mark embroidered on breast); minimal jewelry except for a simple braided cord wristband in Geartown Guild colors worn on dominant wrist; no cosmetic augmentation, piercings, or fashion markers"
+  },
+  "image_prompt": "14-year-old nonbinary fabricator with warm amber-brown skin, very short natural dark hair, faint golden rings around dark eyes; compact wiry build with visible hand musculature; twelve fully articulated fingers on each hand (geneware expression), hands stained with cutting fluid and bearing small scars; wearing oversized gray work shirt, reinforced canvas pants, leather shop apron with tool pockets, steel-toed boots; leaning forward with precise posture, examining a mechanical component with intense focus in a gritty machine shop lit by harsh overhead workshop lights and soft glow from fabrication equipment; industrial cyberpunk aesthetic, Geartown neighborhood, tactile and grounded, hyperrealistic detail on hands and tools, --ar 2:3 --v 6"
 }

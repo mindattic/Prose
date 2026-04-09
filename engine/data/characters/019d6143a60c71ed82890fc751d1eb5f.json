@@ -261,5 +261,26 @@
     "Silver",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "South Asian (Indian) / Andean (Quechua)",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Tall and slope-shouldered with a comfortable thickening through the torso; the build of a man who spends sixteen hours a day bending over workbenches and doesn't prioritize the gym. Still carries functional strength in his upper back and forearms.",
+    "hair_color": "Black with silver threading at the beard line",
+    "hair_style": "Close-cropped, slightly singed at the edges from repeated exposure to heat sources and welding proximity",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, unremarkable and pragmatic",
+    "skin_tone": "Dark copper — warm undertone from his Indian heritage, deepened by years of workshop exposure and ambient heat",
+    "complexion": "Weathered and practical. Deep creases around the eyes and mouth from squinting at small mechanical tolerances. Full black beard with silver at the chin, kept trimmed but not groomed. Perpetually stained with machine oil and trace metals; the staining is so consistent it reads as intentional.",
+    "distinguishing_marks": [
+      "Burn scar on the back of his left forearm, roughly three centimeters long, pale against his copper skin — from a hot component slip during a drone rebuild in his thirties.",
+      "A fine white scar running along his right temple to his cheekbone, barely visible unless the light catches it — old welding accident, before the cybernetic hand.",
+      "Grease stains under his fingernails that never fully wash out; a permanent occupational signature."
+    ],
+    "visible_augmentations": "Right hand is entirely cybernetic from the wrist — a visibly salvage-built replacement constructed from three incompatible donor prosthetics. The assembly is deliberately mismatched: burnished chrome on the palm and fingers, matte black polymer on the wrist coupling and back-of-hand. Three fingers are slightly longer than anatomically standard. A custom multitool socket is integrated into the palm, clearly self-installed with visible solder marks and a hand-etched '+' symbol. The hand moves with practiced efficiency but audible servos, no attempt at concealment. Subdermal thermal sensor in left forearm creates a faint hexagonal outline visible when he flexes — no cosmetic covering, treated as tool, not modification.",
+    "posture_movement": "Slouches slightly from years of leaning over workbenches; shoulders curve inward at rest. Moves with deliberate precision when working — economical, no wasted motion. Walks with a mechanic's shuffle, one hand usually half-extended as if reaching toward something. Rarely makes direct eye contact with people, but watches machines and hands with intense focus. At ease only when holding a tool or diagnosing a problem.",
+    "clothing_style": "Tier 4 utilitarian. Worn canvas work pants with oil-stained legs, multiple cargo pockets holding small components, a reinforced waistband to support his lower back. Thermal undershirt (usually grey or black, always marked with grease). Overshirt varies by season but always a heavy canvas or synthetic weave with scorched edges and a faded logo for a tool supplier that stopped operating in 2198. Steel-toed boots, resoled three times, scuffed and heat-marked. A battered pair of magnification goggles hangs around his neck ninety percent of the day. No jewelry. Carries a rag perpetually stuffed in his back pocket. His hands are the only thing about him that look intentional — the cybernetic one because it is, the organic one because it is calloused into a tool itself."
+  },
+  "image_prompt": "A tall, slope-shouldered South Asian-Quechua male mechanic, age 44, dark copper skin with weathered texture, full black beard silvering at the chin, close-cropped singed hair. Standing in a half-indoor workshop bay, surrounded by drone parts and salvage machinery. His right hand is visibly cybernetic—mismatched chrome and matte black salvage prosthetic with three slightly-overlength fingers and a multitool socket in the palm, intricate and brutally functional. His left forearm shows a faint subdermal hexagonal outline (thermal sensor). Wearing oil-stained canvas work pants, thermal undershirt, heavy burnt-edge canvas overshirt from defunct tool supplier, steel-toed boots. Magnification goggles hang around neck. Perpetual grease stains under fingernails and across his hands. Posture slightly slouched, focused downward toward machinery. Workshop lighting—cool LED overheads mixing with warm halogen from work lamps, casting sharp shadows. Gritty, industrial Tier 4 aesthetic. Milwaukee Geartown setting, late evening light slanting through bay doors. Hyper-detailed hands. Film noir industrial cyberpunk, worn and authentic, no gloss. --ar 2:3 --v 6"
 }

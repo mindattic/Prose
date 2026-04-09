@@ -179,5 +179,26 @@
     "Street Custom 'Baptism' Electrified Water Cannon",
     "The Pure Hand"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African (Burkinabè) / Eastern European (Russian)",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Thick-set and compact, with the solid frame of someone who has done manual labor most of his life. Broad shoulders, dense through the torso, no visible softness despite his age.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, neatly maintained",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, deep-set",
+    "skin_tone": "Warm medium-dark brown with subtle reddish undertones from mixed ancestry",
+    "complexion": "Weathered, lined face with architectural structure — broad forehead, prominent jaw, deep nasolabial folds. Meticulous grooming despite age; full white beard trimmed with care. Hands show prominent veins, calluses, and age spots from decades of manual work.",
+    "distinguishing_marks": [
+      "Callused palms and fingers across both hands from forty years of construction and manual parish work",
+      "Age spots scattered across the backs of both hands and forearms",
+      "Fine web of wrinkles around the eyes, deepened by decades of squinting in bright light"
+    ],
+    "visible_augmentations": "Cochlear implant visible behind the left ear — a small silver and black device with a thin antenna coil. No other visible augmentations.",
+    "posture_movement": "Stands with the settled confidence of someone rooted in place; moves deliberately, economically. Hands gesture when speaking but not expansively — measured, purposeful. Walks with slight forward lean, as if perpetually moving toward the next person who needs him.",
+    "clothing_style": "Tier 3-4 practical; black or charcoal priest's collar visible under weather-appropriate layers. Favors sturdy synthetic-wool turtlenecks, heavy canvas work pants, steel-toed boots patched at the heels. A worn gray overcoat in winter that has been re-seamed multiple times. Carries a battered physical Bible with visible annotations in multiple languages crowding the margins. No jewelry except a simple iron cross on a cord."
+  },
+  "image_prompt": "Portrait of an elderly African-European man, age 71, short white close-cropped hair and full white beard, warm medium-dark brown complexion, deep-set dark eyes with pronounced crow's feet, broad architectural face with strong jaw. Wearing black priest's collar under a charcoal turtleneck, heavy canvas work pants, steel-toed boots. Small cochlear implant visible behind left ear. Holding a battered physical book with handwritten annotations. Standing in dim warm lamplight inside a converted transit shed chapel, rough concrete walls with religious iconography. Serious, grounded expression, the posture of someone rooted in faith and manual labor. Cyberpunk realistic, documentary photography style, depth of field, warm tungsten lighting, --ar 2:3 --v 6"
 }

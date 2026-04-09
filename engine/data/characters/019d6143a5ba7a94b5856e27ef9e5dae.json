@@ -31,7 +31,7 @@
     "core_desires": [
       "Control — over their body, their schedule, their future",
       "To prove everyone who dismissed them catastrophically wrong",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Maintains weapons obsessively — cleaning guns is meditation",
@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "Aybek Alvarez-Okonkwo discovers a job they completed last year was a setup for something much larger and much worse",
-    "A crew member from Aybek Alvarez-Okonkwo's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Aybek Alvarez-Okonkwo's past shows up in GLMZ, carrying old grievances and new chrome",
     "A corporate black site Aybek Alvarez-Okonkwo once infiltrated is being reopened, and the people inside know her face"
   ],
   "narrative_function": "Aybek Alvarez-Okonkwo represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
@@ -275,11 +275,33 @@
   "related_entities": [
     "Adaptive Camouflage Skin",
     "Ironveil Canopy",
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
     "Clover"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Spanish / Nigerian / Turkic",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and economical — muscle distributed for endurance and precision rather than bulk. Wiry forearms from constant grip work on vehicle controls. Shoulders slightly forward, the posture of someone who spends hours hunched over a steering interface.",
+    "hair_color": "Black with subtle iridescent shift — natural base, but the chromatic skin augmentation extends faintly into the hair roots, catching light like oil on water",
+    "hair_style": "Pulled back tight into a single high braid, practical and exposing the neck and ears — deliberate choice to showcase augmentations",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, alert and constantly tracking — pupils dial slightly faster than baseline human response",
+    "skin_tone": "Warm medium brown with warm undertones, reflecting West African and Iberian heritage blending",
+    "complexion": "Sharp cheekbones, defined jawline, minimal grooming beyond function. Skin bears the faint shimmer of active chromatic pigment cells — patches across her collarbone, temple, and the inner forearms appear to shift between deep purple and gunmetal grey depending on ambient light and her conscious control. Small scar through her left eyebrow, white and old. Perpetual dark circles from sleep debt and stimulant use.",
+    "distinguishing_marks": [
+      "Thin white scar bisecting left eyebrow — impact injury, 4+ years old",
+      "Faint burn scarring along right inner wrist — subcutaneous circuitry installation scar, surgical but imperfectly healed",
+      "Chromatic pigment cells visible across collarbones, temples, and inner forearms — shimmer between purple and grey",
+      "Small tattoo on the inside of her left wrist — three interlocking circles, done in black ink, faded. Mentor's mark or personal symbol — she doesn't explain."
+    ],
+    "visible_augmentations": "Dermal camouflage — chromatic skin pigment cells that shift visibly across exposed skin, most active on neck, collarbones, and forearms. Both ears show subtle structural augmentation at the canal — slight metallic gleam where the cyberear hardware interfaces with organic tissue. No visible external ports or exposed chrome, but the skin augmentation is deliberate, not hidden.",
+    "posture_movement": "Economical and precise — no wasted motion. Sits slightly forward, weight balanced on the balls of her feet even when stationary, ready for rapid position shift. Hands rest near her body, fingers loose but not relaxed. Eyes move before her head does. In conversation, she has a habit of tilting her head slightly when listening — the cyberears directional array at work. Walks with a controlled stride, shoulders level, weight distributed for quick lateral movement.",
+    "clothing_style": "Tier 3-4 utilitarian with runner undertones. Black or charcoal synthetic cargo pants with reinforced seams and deep pockets — fit snug at the waist, loose through the thigh. Layered tops: a thin grey compression shirt under a black tactical mesh overshirt with asymmetrical pockets and wrist cuffs that can seal. Worn black synthetic bomber jacket — the kind that sheds water and projectile debris, with no corporate logos but visible wear marks where patches have been removed and reattached. Boots are heavy-duty, laced military-style, soles worn from thousands of hours of pedal work. Minimal jewelry — a thin silver wire wrapped around her left wrist, functional rather than decorative. Everything fits close, nothing flares or drags."
+  },
+  "image_prompt": "Cyberpunk character portrait of a lean 26-year-old woman with dark skin and sharp features, black hair in a tight braid exposing augmented ears with visible tech interfaces. Chromatic dermal camouflage shifting iridescent purple-to-grey across neck, temples, and forearms. Dark alert eyes, scar through left eyebrow. Wearing charcoal tactical cargo pants and black mesh overshirt under worn synthetic bomber jacket. Economical posture, weight forward, hands near body. Cool blue-grey and purple neon lighting, harsh shadows from megastructure environment. Photorealistic with cyberpunk aesthetic, 2226 tech aesthetic, runner aesthetic. Shot at 3/4 angle against dark urban background. Film grain, high contrast, cinematic depth of field --ar 2:3 --v 6"
 }

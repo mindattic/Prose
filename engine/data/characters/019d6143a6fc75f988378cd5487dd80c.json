@@ -283,5 +283,27 @@
     "Slagworks Industrial",
     "Pellucid Systems"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Polynesian / Scandinavian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and angular with corded muscle definition — the kind of frame built by deliberate training rather than genetics. Minimal body fat, visible musculature in forearms and shoulders from constant movement conditioning.",
+    "hair_color": "Dark brown with sun-bleached streaks",
+    "hair_style": "Pulled back in a tight functional braid, kept short enough to stay out of a helmet",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, alert and tracking",
+    "skin_tone": "Warm brown with golden undertones — Polynesian baseline with Scandinavian pallor from spending time in cockpits",
+    "complexion": "Sharp-featured face with high cheekbones and a prominent jawline; minimal grooming beyond function — no makeup, skin weather-marked from exposure and stress. A few shallow scars across the cheekbone from impacts she didn't slow down for.",
+    "distinguishing_marks": [
+      "Surgical scar at base of skull, visible when hair is pulled back — neural interface jack installation point, roughly 3cm in length, pale and clean",
+      "Chrome visible along the right forearm where move-by-wire system connects to skin — metallic overlay visible beneath translucent dermal panels, pulsing faintly with neural traffic",
+      "Thin burn scar across left ribs, visible if clothing shifts — accident during early augmentation integration",
+      "Tattoo on inside left wrist — QUANTA symbol (Φ) with flight path coordinates beneath, professional rather than decorative"
+    ],
+    "visible_augmentations": "Move-by-wire system visible as chrome subdermal tracking along spine and limbs, particularly pronounced in forearms where metallic interfaces break the skin line. Base-of-skull jack visible as a sealed hatch under skin at hairline. When she moves, there's a subtle lag-free precision that reads as augmented — no human has that economy of motion.",
+    "posture_movement": "Moves with controlled efficiency, never wasting motion. Slight forward lean when standing, weight distributed ready to move. Eyes constantly processing, scanning for exits and variables. When still, there's coiled tension — she doesn't relax, she powers down.",
+    "clothing_style": "Tier 4 functional — flight suit (armored nylon blend, dark gray) worn open over fitted black synth-weave shirt. Cargo pants with reinforced pockets for tools and contract data. Steel-toed boots rated for high-g cockpit environments. Harness-style ballistic vest over everything, custom-fitted for cockpit use. No jewelry, no corporate logos, no gang colors — anonymity maintained through absolute functionality."
+  },
+  "image_prompt": "cyberpunk portrait of a 26-year-old lean female pilot with dark brown hair in a functional braid, Polynesian-Scandinavian heritage, sharp angular features, dark focused eyes, warm brown skin with visible chrome subdermal augmentations glowing faintly along forearms, surgical scar visible at base of skull, dressed in dark gray armored flight suit and ballistic vest, standing in neon-lit cockpit with instrument panels glowing behind her, moody blue and amber lighting casting sharp shadows across her face, photorealistic, high contrast, military sci-fi aesthetic, tense and alert posture, studio lighting, --ar 2:3 --v 6"
 }

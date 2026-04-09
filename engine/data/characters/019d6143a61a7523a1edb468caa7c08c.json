@@ -185,5 +185,25 @@
     "Irontide Tidal Energy",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Javanese / Ethiopian",
+    "height_cm": 178,
+    "weight_kg": 89,
+    "build": "Heavyset with recent significant weight loss; soft musculature gone slack, visible in the slight redundancy at jaw and neck. Shoulders still broad but rounded forward from decades of desk work. Moves with deliberate stiffness — chronic spinal pain management without admission.",
+    "hair_color": "White",
+    "hair_style": "Short, practical cut; no styling, maintained for function only",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unaugmented",
+    "skin_tone": "Warm reddish-brown, medium complexion with Javanese and Ethiopian lineage visible in bone structure",
+    "complexion": "Weathered face with pronounced nasolabial folds and lines around eyes from fifteen years of sustained anger and focus. Stubble often visible — shaving is not a priority. Skin texture uneven, slightly papery in places from age and stress. No cosmetic maintenance.",
+    "distinguishing_marks": [
+      "Thin white scar running 3cm along left temple, faded and barely visible unless light hits it directly — result of a Hamtramck street altercation in 2195",
+      "Small, deliberate tattoo on inner left wrist: three horizontal lines in black ink, added the day his marriage ended, meaning known only to him"
+    ],
+    "visible_augmentations": "None. The pain management implant is subcutaneous in lower spine — invisible. This deliberate absence of chrome reads as ideological choice in Hamtramck's mixed-augmentation culture.",
+    "posture_movement": "Moves slowly with economical precision, as though conserving energy. Often pauses before standing or sitting, calculating joint angles. Walks with slight forward lean. Stands with weight favoring right leg. Hands steady when focused, capable of stillness for hours during hearings. When walking the canal, gait becomes less guarded — shoulders relax incrementally.",
+    "clothing_style": "Tier 4 working-class, maintained but visibly aging. Favors dark grays and blacks — functional, hides stains. Wears the same three or four jackets in rotation, all water-resistant synthetics from discount retailers. Trousers have visible wear at knees and cuff hems. Shoes are orthopedic-adjacent knockoffs, chosen for comfort over appearance. Keeps a worn canvas satchel for regulatory documents — stitching fraying at corners, patched twice. No corporate logos or status markers. Dresses for utility and invisibility."
+  },
+  "image_prompt": "Portrait of an older Javanese-Ethiopian man, age 61, with white short-cropped hair and warm reddish-brown skin, heavy-set with recent weight loss visible in slack jaw and weathered face. Dark unaugmented eyes, deep lines of focus and anger around them. Standing in three-quarter view, wearing a worn dark gray synthetic jacket over a black shirt, holding a creased folder of regulatory documents. Faint scar visible on left temple. Posture is deliberate and guarded, slight forward lean, shoulders rounded from decades of desk work. Background: dimly lit third-floor apartment interior, canal-side Hamtramck street visible through window behind him, cool fluorescent overhead light. Mood: bitter, precise, weary but watchful. Cyberpunk documentary realism, no chrome visible, ideological absence of augmentation. Film grain, cool color grading, shallow depth of field focusing on face and documents --ar 2:3 --v 6"
 }

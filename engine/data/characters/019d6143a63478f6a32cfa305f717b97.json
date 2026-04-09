@@ -189,5 +189,26 @@
     "Slagworks Industrial",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Tambadou) / Hungarian (Szarvas)",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, muscular in a lean way from constant walking through the Shelf; restless energy evident in how they hold themselves",
+    "hair_color": "Natural dark brown with scattered gray at temples",
+    "hair_style": "Self-cut into a large, textured halo; uneven layers suggest kitchen scissors and no particular vanity about symmetry",
+    "hair_length": "Long (shoulder-length and beyond)",
+    "eye_color": "Natural warm brown, unaugmented",
+    "skin_tone": "Warm brown with golden undertones",
+    "complexion": "Fine-featured with a sharp jawline; dark circles under eyes suggest chronic sleep debt from fieldwork; skin is clear but sun-weathered from outdoor walking; expression typically alert and slightly intense",
+    "distinguishing_marks": [
+      "Color-cycling mood-ring nostril implant, currently displaying dull amber (low-end geneware, visible as a subtle iridescent glow in the septum)",
+      "Old burn scar on the inside of left forearm, thin and pale, approximately 4cm long — story unknown but handled without self-consciousness",
+      "Calluses on right hand fingers from constant handwriting and note-taking"
+    ],
+    "visible_augmentations": "Only the cosmetic nose ring implant; deliberately minimal chrome presence. The lack of visible augmentation reads as either principled poverty or quiet defiance in Shelf spaces, which they leverage intentionally.",
+    "posture_movement": "Moves with purposeful efficiency; walks slightly forward-leaning as if always mid-thought; hands gesture when talking, often holding imaginary notes. Sits cross-legged in interviews regardless of formality. Fidgets with fabric edges when listening intently.",
+    "clothing_style": "Strictly layered approach: base layer is always worn, functional undershirt (neutral colors); middle layers are oversized cardigans or vests that can be removed; outer layer adapts to district code-reading (Tier 3 corporate casual in certain blocks, Tier 5 survival wear in others). All clothing is thrift-sourced, well-maintained but visibly secondhand. Shoes are good walking boots, scuffed. No jewelry except the nose ring. Small pack always carried containing notebooks, recorder, water bottle, emergency ration bar."
+  },
+  "image_prompt": "Portrait of a compact, wiry West African-Hungarian nonbinary researcher, age 36, warm brown skin with scattered gray hair in an uneven self-cut halo around their head, warm brown unaugmented eyes intense and alert. Color-cycling mood-ring nose implant glowing amber in left nostril. Wearing layered thrifted clothing: oversized cardigan over worn undershirt, small weathered backpack visible. Natural lighting, slightly warm color grading. Urban sociology researcher embedded in Shelf communities, tired but purposeful expression, hands slightly gesturing. Background blurred into warm concrete and district street detail. Photorealistic, documentary style, intimacy of fieldwork portraiture. --ar 2:3 --v 6"
 }

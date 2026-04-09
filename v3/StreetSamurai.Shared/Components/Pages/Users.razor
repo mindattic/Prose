@@ -1,0 +1,192 @@
+@page "/users"
+@inject AuthService Auth
+@inject UserRepository UserRepo
+@inject IWriteAccessProvider Access
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthStateProvider
+
+<h4 class="text-danger mb-3">User Management</h4>
+
+@if (!Access.CanAdminister)
+{
+    <div class="alert alert-danger">Administrator access required.</div>
+}
+else
+{
+    <div class="dict-layout">
+        <div class="dict-list">
+            <div class="card bg-dark text-light border-secondary mb-2 card-body">
+                <button class="btn btn-sm btn-outline-danger w-100" @onclick="StartNewUser"><i class="bi bi-plus-lg"></i> New User</button>
+            </div>
+            <div class="dict-items">
+                @foreach (var u in users)
+                {
+                    <div class="list-item text-light @(editing?.Id == u.Id ? "active" : "")" @onclick="() => Edit(u)">
+                        <div class="fw-bold small">@u.DisplayName</div>
+                        <div class="text-muted" style="font-size: 0.7rem;">@u.Email &mdash; @u.Role</div>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <div class="dict-editor">
+            @if (editing != null)
+            {
+                <div class="d-flex align-items-center gap-2 mb-3 border-bottom border-secondary pb-2">
+                    <h5 class="text-danger mb-0 flex-grow-1">@(isNew ? "New User" : editing.DisplayName)</h5>
+                    <button class="btn btn-sm btn-success" @onclick="SaveUser"><i class="bi bi-floppy"></i> Save</button>
+                    @if (!isNew)
+                    {
+                        <button class="btn btn-sm btn-outline-danger" @onclick="DeleteUser"><i class="bi bi-trash"></i></button>
+                    }
+                </div>
+
+                <div class="field-label text-danger">Account</div>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <div style="flex:2; min-width:180px;">
+                        <div class="field-label">Display Name</div>
+                        <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.DisplayName" />
+                    </div>
+                    <div style="flex:3; min-width:200px;">
+                        <div class="field-label">Email</div>
+                        <input type="email" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Email" />
+                    </div>
+                    <div style="flex:1; min-width:120px;">
+                        <div class="field-label">Role</div>
+                        <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="editing.Role">
+                            @foreach (var role in UserRoles.All)
+                            {
+                                <option value="@role">@role</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+
+                <div class="field-label text-danger">Password</div>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <div style="flex:1; min-width:200px;">
+                        <div class="field-label">@(isNew ? "Password" : "New Password (leave blank to keep current)")</div>
+                        <input type="password" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="newPassword" />
+                    </div>
+                </div>
+
+                @if (!string.IsNullOrEmpty(statusMessage))
+                {
+                    <div class="alert @(isError ? "alert-danger" : "alert-success") py-2 small mt-2">@statusMessage</div>
+                }
+
+                @if (!isNew)
+                {
+                    <div class="text-muted small mt-3">
+                        <div>Created: @editing.CreatedUtc.ToString("yyyy-MM-dd HH:mm")</div>
+                        @if (editing.LastLoginUtc.HasValue)
+                        {
+                            <div>Last login: @editing.LastLoginUtc.Value.ToString("yyyy-MM-dd HH:mm")</div>
+                        }
+                    </div>
+                }
+            }
+        </div>
+    </div>
+}
+
+@code {
+    private List<UserAccount> users = [];
+    private UserAccount? editing;
+    private bool isNew;
+    private string newPassword = "";
+    private string statusMessage = "";
+    private bool isError;
+    private string currentUserId = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        currentUserId = authState.User.FindFirst("UserId")?.Value ?? "";
+        LoadUsers();
+    }
+
+    private void LoadUsers() => users = UserRepo.GetAll().OrderBy(u => u.DisplayName).ToList();
+
+    private void Edit(UserAccount user)
+    {
+        editing = new UserAccount
+        {
+            Id = user.Id,
+            Email = user.Email,
+            DisplayName = user.DisplayName,
+            Role = user.Role,
+            CreatedUtc = user.CreatedUtc,
+            LastLoginUtc = user.LastLoginUtc
+        };
+        isNew = false;
+        newPassword = "";
+        statusMessage = "";
+    }
+
+    private void StartNewUser()
+    {
+        editing = new UserAccount { Role = UserRoles.User };
+        isNew = true;
+        newPassword = "";
+        statusMessage = "";
+    }
+
+    private void SaveUser()
+    {
+        if (editing == null) return;
+        try
+        {
+            if (isNew)
+            {
+                if (string.IsNullOrWhiteSpace(newPassword))
+                {
+                    statusMessage = "Password is required for new users.";
+                    isError = true;
+                    return;
+                }
+                Auth.CreateUser(editing.Email, editing.DisplayName, newPassword, editing.Role);
+            }
+            else
+            {
+                Auth.UpdateProfile(editing.Id, editing.Email, editing.DisplayName);
+                Auth.ChangeRole(editing.Id, editing.Role);
+                if (!string.IsNullOrWhiteSpace(newPassword))
+                    Auth.ChangePassword(editing.Id, newPassword);
+            }
+            LoadUsers();
+            statusMessage = "Saved.";
+            isError = false;
+            if (isNew) isNew = false;
+        }
+        catch (Exception ex) when (ex is ArgumentException or InvalidOperationException)
+        {
+            // Only surface expected validation/business-rule error messages.
+            // Unexpected exceptions (deserialization, I/O, etc.) could leak internal details.
+            statusMessage = ex.Message;
+            isError = true;
+        }
+        catch
+        {
+            statusMessage = "An unexpected error occurred. Please try again.";
+            isError = true;
+        }
+    }
+
+    private void DeleteUser()
+    {
+        if (editing == null || isNew) return;
+        try
+        {
+            Auth.DeleteUser(editing.Id, currentUserId);
+            editing = null;
+            statusMessage = "";
+            LoadUsers();
+        }
+        catch (Exception ex)
+        {
+            statusMessage = ex is InvalidOperationException ? ex.Message : "An error occurred.";
+            isError = true;
+        }
+    }
+}

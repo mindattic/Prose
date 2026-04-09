@@ -205,5 +205,26 @@
     "Gravimetric Collapse Charge GCC-9",
     "Tibor Osei-Svanstrom"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Russian)",
+    "height_cm": 152,
+    "weight_kg": 38,
+    "build": "Wiry and compact, all lean muscle and efficient frame — built for crawling and climbing rather than strength. Shoulders slightly rounded from years in confined spaces. No excess anywhere.",
+    "hair_color": "Deep black with natural spiral texture",
+    "hair_style": "Dense spirals, perpetually compressed and creased from being worn under an oversized salvaged transit hard hat",
+    "hair_length": "Medium (approximately 8-10cm when uncompressed, closer to scalp when flattened)",
+    "eye_color": "Dark brown, almost black, with an unusual clarity and light-responsiveness from chronic low-light adaptation",
+    "skin_tone": "Deep warm brown with a subtle grey-silver patina from chronic tunnel particulate exposure",
+    "complexion": "Child's face still rounded at cheeks and jawline, but with a precocious steadiness in expression. Perpetual fine dust settled in pores and creases. No acne or surface scarring. Skin slightly papery from low humidity and mineral-rich tunnel air. Small calluses on fingertips and palms.",
+    "distinguishing_marks": [
+      "Fine grey dust ingrained in the creases of his neck and collarbone, permanent from daily tunnel work",
+      "Cluster of small burn scars on inner left forearm (approximately 3cm x 2cm area) — thin, pale lines from accidental contact with a live Ferrogate cable at age twelve",
+      "Thin pale scar running from right temple toward ear (approximately 4cm) — childhood tunnel accident with sharp salvage, mostly faded"
+    ],
+    "visible_augmentations": "None. All his technology is external: salvaged handheld multimeter clipped to belt, rewired transit safety light modified to run on salvaged power cells, hand-carved wooden calibration tools.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Head slightly forward, shoulders inward, knees perpetually ready to crouch or climb. Walk is quiet and flat-footed, adapted for moving across uneven tunnel floors in darkness. Sits with one leg folded, the other ready to spring. Eyes track details obsessively — light sources, cable runs, structural weak points. Fidgets with salvage pieces in idle moments.",
+    "clothing_style": "Tier 5 subterranean salvager aesthetic. Oversized grey canvas transit worker's hard hat (three sizes too large, secured with knotted cord under chin). Layered in mismatched synthetics and canvas salvage: a faded blue transit authority work shirt (sleeves rolled), grey cargo pants with multiple pockets stuffed with tools and salvage snippets, patched at both knees with darker fabric. Worn canvas boots held together with cord lacing and adhesive patches. A salvaged reflective safety vest worn open over everything, its high-visibility orange faded to pale coral. Cloth strap wrapped around one wrist — a child's superstition or a structural reminder. Everything smells faintly of mineral oil, dust, and ozone."
+  },
+  "image_prompt": "14-year-old boy with deep warm brown skin and black spiral hair, wiry compact build adapted for tight spaces, large dark eyes with unusual light-sensitivity, wearing oversized grey transit worker's hard hat tied under chin, faded blue work shirt, patched grey cargo pants, weathered canvas boots, reflective safety vest worn open, holding salvaged metal tools and cable scraps, standing in low-light underground ferrogate junction with industrial concrete walls, hanging cables, and dim emergency lighting casting sharp shadows, dust motes visible in thin light rays, photorealistic cyberpunk aesthetic emphasizing age and competence, gritty and worn texture throughout, cool metallic and grey color palette with rust accents, Midjourney photorealism style --ar 2:3 --v 6"
 }

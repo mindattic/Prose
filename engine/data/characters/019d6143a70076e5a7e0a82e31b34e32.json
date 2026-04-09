@@ -42,7 +42,7 @@
     "secret": "Fifteen years ago she broke both hands of a young man who'd been skimming — standard remediation. He lost use of his left hand permanently. She found out recently that he is now a Palladian Corporation systems tech with a family in Calumet Rise, doing fine. She does not know whether this makes what she did better or worse and she thinks about it constantly. She has donated anonymously to the Boilerplate Quarter children's learning center every month for fifteen years in a sum that exactly matches what she calculated that young man's wages would have been in a better economy."
   },
   "speech_patterns": {
-    "vocabulary": "Direct, vernacular, Yoruba-inflected rhythm under the Meridian 88 slang. Economical — says the necessary thing.",
+    "vocabulary": "Direct, vernacular, Yoruba-inflected rhythm under the GLMZ slang. Economical — says the necessary thing.",
     "cadence": "Unhurried, even when the subject is urgent. Pauses for emphasis rather than to gather thoughts.",
     "verbal_tics": [
       "Calls people 'friend' neutrally — means nothing and everything",
@@ -258,5 +258,27 @@
     "Slagworks Industrial",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Polish-Russian)",
+    "height_cm": 183,
+    "weight_kg": 94,
+    "build": "Large-framed, powerfully built without excess fat. Broad shoulders, thick torso, strong legs. Carries weight like ballast — centered, deliberate. No vanity in the musculature; it is functional infrastructure.",
+    "hair_color": "Natural black with silver-white streaking throughout",
+    "hair_style": "Thick, coarse natural texture. Pulled back in a utilitarian braid during work hours; worn loose and voluminous at home or during off-hours.",
+    "hair_length": "Long (mid-back length)",
+    "eye_color": "Warm brown, unmodified. Clear, direct gaze with crow's feet at the corners from decades of squinting at fine print and reading body language.",
+    "skin_tone": "Deep brown with warm undertones, evenly pigmented",
+    "complexion": "Weathered and lined in ways that suggest age, exposure, and chronic attention to detail rather than neglect. Minimal makeup. A small scar at the left corner of her mouth, barely visible unless she's smiling. Her face reads as purposeful rather than decorative.",
+    "distinguishing_marks": [
+      "Network of thin white scar tissue across the entire left forearm from wrist to elbow — deliberately unrepaired, each scar corresponding to a specific lesson or negotiation outcome. Called 'the ledger.'",
+      "Small burn scar on the inside of her right wrist, old enough to be pale pink against her skin tone.",
+      "A faint tattoo on her right inner forearm: three interlocking circles in dark gray ink, barely visible against her skin. Indicates her early days in the Stockyard-adjacent informal peace accord from 2203.",
+      "Thin white line along her left jawline, likely from a blade strike, partially concealed by her jaw structure."
+    ],
+    "visible_augmentations": "Retractable ceramic-composite knuckle caps visible on both hands when fingers are relaxed — they catch light with a subtle off-white sheen, slightly proud of the knuckle joints. No visible external plating, but her movements suggest subdermal armor; if her shirt rides up, faint linear scarring across her ribs indicates subdermal weave installation points. Hearing augment is not visible.",
+    "posture_movement": "Stands with weight centered on the balls of her feet, not squared-off like a statue but ready. Moves with economical precision — no wasted motion, no flourish. Each step is deliberate. Her gaze sweeps environments in a specific pattern. Hands are usually at rest but positioned where they can move quickly. When speaking to someone, she maintains eye contact in a way that is not aggressive but communicates that she is processing everything.",
+    "clothing_style": "Tier 4 working-class practical. Standard work uniform: charcoal or black reinforced canvas pants with deep pockets and knee reinforcement, tactical-cut. Steel-toed boots (currently a pair of Volkov brand, seven years old, re-soled twice). Long-sleeved shirts in neutral colors (gray, black, dark blue) — long sleeves specifically to display the ledger on her left arm as a kind of warning or credential, depending on context. A heavy canvas overcoat in charcoal, lined with thermal webbing, worn open. No jewelry except a plain stainless steel watch that has been repaired and customized so many times it is mostly practical rather than original. Lacks corpo styling entirely; has the look of someone who spends money on function and durability, not status."
+  },
+  "image_prompt": "Portrait of Toluwani Przhevalskyj-Mboyo, 51-year-old Black woman, dark skin tone, broad powerful build, long thick natural black hair streaked with silver worn in a braid, warm brown eyes, weathered face with purpose-etched lines, barely-visible scar at mouth corner. Left forearm displayed prominently, mapped with a network of white scars forming the 'ledger.' Ceramic-composite knuckle caps visible on relaxed hands catching subtle off-white light. Wearing charcoal reinforced canvas work clothes, steel-toed boots, heavy lined overcoat, plain steel watch. Standing in the Boilerplate Quarter commercial strip at golden hour, urban decay backdrop with storefront neon, wet asphalt reflecting light. Deliberate posture, weight centered, eyes that miss nothing. Mood: authoritative, weathered, the load-bearing wall of a neighborhood. Cinematic cyberpunk street noir, moody warm lighting, shallow depth of field. --ar 2:3 --v 6"
 }

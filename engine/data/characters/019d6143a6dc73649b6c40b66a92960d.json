@@ -223,5 +223,26 @@
     "Copper",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Central Asian (Yoruba / Uzbek)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and angular, muscled from years of rigging work — rope-handler's shoulders, forearms corded with tendon. No excess body fat; her frame is optimized for altitude and balance rather than strength.",
+    "hair_color": "Dark brown, naturally textured",
+    "hair_style": "Worn in tight, utilitarian knots wound with salvaged copper wire; the wire oxidizes to green-blue patina. Practical, never decorative.",
+    "hair_length": "Medium (shoulder-length when unbraided, but always constrained)",
+    "eye_color": "Deep amber-brown, oil-dark, with a faint luminescence under certain light angles — a side effect of the nictitating membrane geneware",
+    "skin_tone": "Warm mid-brown with pronounced sun-weathering; darker along exposed surfaces (forearms, neck, the bridge of her nose)",
+    "complexion": "Windburned and scarred. Her left cheekbone bears a ragged constellation of freeze-scars from a hull breach at altitude, pale and slightly depressed. Her face is lean, jaw prominent, forehead broad. Her skin has a leathery quality from chronic UV exposure and cold-wind damage. No cosmetic grooming; scars are unretouched.",
+    "distinguishing_marks": [
+      "Ragged freeze-scarring along her left cheekbone and temple, pale and slightly depressed, roughly 8cm in irregular pattern from a hull breach three winters ago",
+      "Fine white scar tissue on both palms and inner forearms from years of rope-handling; no single dramatic scar, rather a crosshatch of old work-marks",
+      "Faint sun-damage freckling across her shoulders and upper back, visible only in direct light"
+    ],
+    "visible_augmentations": "Her fingernails are noticeably thickened and slightly discolored (pale keratin with faint amber striations), clearly geneware-enhanced for grip. Her left eye, when she opens it wide, reveals the faintest edge of a secondary eyelid—a thin, translucent membrane that catches light like nictitating tissue. The membrane is barely visible unless she's in bright sunlight or deliberately shows it; most people never notice. No chrome, no visible implants, no LEDs. She refuses subcutaneous tech on principle.",
+    "posture_movement": "Never still. Always in low-level motion—fingers working invisible knots, foot tapping against deck plates in rhythmic patterns (hull vibration frequencies memorized from years aloft), jaw working. When standing, her weight is distributed for instant balance, knees slightly bent. Her gaze is constantly mobile, cataloguing exits, assessing load-bearing points, reading wind in the set of hanging fabric. She moves like someone who has learned to trust her body in thin air.",
+    "clothing_style": "Tier 4 (working class, worn and functional). Heavy-duty synth-weave cargo pants in faded charcoal, multiple pockets and anchor-points for carabiners. Steel-toed boots, scuffed and repaired twice. Thin merino base layer under a sleeveless technical vest—gray, salt-stained, with a faded patch from the Escanaba Freeborn Airmen insignia (three interlocking rings). Over that, a weathered insulated jacket, Lake Michigan Blue, with reflective striping on the sleeves and a torn internal liner she's never bothered to fix. One glove (left hand) with reinforced palm, worn through at the knuckles. A length of paracord looped through her belt. Her clothes smell like diesel, copper, and wind."
+  },
+  "image_prompt": "Weathered female airship rigger, Sorrel, mixed West African and Central Asian heritage, deep amber-brown oil-dark eyes with barely-visible secondary eyelid, lean muscled frame from years aloft, dark textured hair bound in tight knots wound with oxidized copper wire, left cheekbone marked by ragged pale freeze-scars from hull breach, rough sun-weathered mid-brown skin, calloused hands with thickened geneware-enhanced fingernails, wearing faded synth-weave cargo pants, steel-toed boots, salt-stained technical vest with Freeborn Airmen patch, worn Lake Michigan Blue insulated jacket with reflective striping, standing on abandoned cargo dock at Escanaba Gateway, early morning light catching the oxidized copper in her hair, industrial backdrop of berths and moored airships, cold northern light, wind-worn expression of someone always cataloguing exits, hands in constant subtle motion, cinematic documentary photography style, sharp focus, weathered color grading --ar 2:3 --v 6"
 }

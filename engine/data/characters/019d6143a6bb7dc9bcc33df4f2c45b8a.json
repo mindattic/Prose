@@ -12,7 +12,7 @@
   "age": 27,
   "status": "active",
   "location": "Aurochs Medical Complex — sub-basement disposal corridors and external processing bays, near North Ave and Milwaukee",
-  "description": "Rustam is wiry and quick-moving with the restless energy of someone who has decided that boredom is a personal failing. His skin is light brown with olive undertones, and he has patterned irises — a cosmetic mod he saved three months of UBC stipend for as a teenager, concentric rings of teal and amber — which are his most immediately striking feature in an otherwise unremarkable face. He wears his dark hair shaggy and keeps a small charm of braided copper wire on his left wrist, an offering token for the E.L.F. he calls the Rot, which he believes inhabits the incinerator system and keeps the more dangerous biological material from becoming something worse.\n\nRustam is cheerful in the way people sometimes are when they have accepted something that others cannot, which in his case is that he handles medical waste all day, knows exactly what hospitals produce, and has developed a deeply comprehensive understanding of what is discarded and what is valuable. He is not above sharing this information for the right consideration. He is not malicious — he's curious, social, and fundamentally unsqueamish in a way that took him years to recognize as an asset. He calls himself the last thing between Meridian 88 and a very bad outbreak, which is truer than anyone likes to admit.",
+  "description": "Rustam is wiry and quick-moving with the restless energy of someone who has decided that boredom is a personal failing. His skin is light brown with olive undertones, and he has patterned irises — a cosmetic mod he saved three months of UBC stipend for as a teenager, concentric rings of teal and amber — which are his most immediately striking feature in an otherwise unremarkable face. He wears his dark hair shaggy and keeps a small charm of braided copper wire on his left wrist, an offering token for the E.L.F. he calls the Rot, which he believes inhabits the incinerator system and keeps the more dangerous biological material from becoming something worse.\n\nRustam is cheerful in the way people sometimes are when they have accepted something that others cannot, which in his case is that he handles medical waste all day, knows exactly what hospitals produce, and has developed a deeply comprehensive understanding of what is discarded and what is valuable. He is not above sharing this information for the right consideration. He is not malicious — he's curious, social, and fundamentally unsqueamish in a way that took him years to recognize as an asset. He calls himself the last thing between GLMZ and a very bad outbreak, which is truer than anyone likes to admit.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -227,12 +227,32 @@
   ],
   "related_entities": [
     "Aurochs Medical Complex",
-    "Meridian 88",
+    "GLMZ",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Copper",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Italian",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Wiry and lean with compact muscle distribution — the frame of someone who moves constantly and efficiently through confined spaces. No excess weight; all kinetic energy.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Shaggy, deliberately unkempt, falls across forehead with slight curl",
+    "hair_length": "Medium",
+    "eye_color": "Patterned irises — concentric rings of teal and amber, custom cosmetic modification",
+    "skin_tone": "Light brown with olive undertones",
+    "complexion": "Youthful, unmarked face with sharp cheekbones and an expressive mouth that defaults to a slight smile. No visible scarring. Regular grooming despite working conditions — shows care for his appearance.",
+    "distinguishing_marks": [
+      "Braided copper wire charm worn on left wrist — thin, handmade, used as an offering token",
+      "Faint discoloration around mouth and jawline from sustained respiratory filter implant wear — slightly darker patch where the seal sits"
+    ],
+    "visible_augmentations": "Respiratory filter implant visible as a small seam-line along the left jaw at rest; becomes more apparent when he speaks. The patterned irises dominate first impression — deliberate cosmetic modification that catches light distinctly. No other visible chrome or subdermal work.",
+    "posture_movement": "Quick, economical movements with restless energy even when still. He leans forward slightly when listening, suggesting engagement and curiosity. Comfortable in cramped spaces — moves with the unselfconscious fluidity of someone at home underground. Often fidgets with the copper wire charm on his wrist.",
+    "clothing_style": "Tier 5 practical: reinforced grey-green Ferrogate Sanitation Solutions issue coveralls (corporate branding faded), fitted snugly to avoid snags in tight corridors. Undershirt usually synthetic blend in muted colors. Heavy-duty steel-toed boots, scuffed and worn. A faded denim jacket layered over coveralls on breaks, pockets stuffed with incinerator logs, hand wipes, and wire. No luxury items visible — everything functional, everything used."
+  },
+  "image_prompt": "cyberpunk male character, wiry frame, light brown skin with olive undertones, shaggy dark hair, striking patterned irises with concentric teal and amber rings, subtle respiratory filter implant scarring along jawline, braided copper wire charm on left wrist, wearing faded grey-green hazmat coveralls with Ferrogate Sanitation branding, reinforced heavy-duty boots, relaxed confident posture suggesting comfort underground, slight knowing smile, sub-basement industrial setting with incinerator pipes and biohazard signage, warm chemical-tinted lighting, underground bunker atmosphere, detailed realistic portrait style, character design --ar 2:3 --v 6"
 }

@@ -252,5 +252,25 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Rust"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Breton / Ghanaian",
+    "height_cm": 163,
+    "weight_kg": 52,
+    "build": "Slight and angular, almost delicate-boned, with the kind of frame that looks perpetually cold. Narrow shoulders, long fingers. No visible muscle definition — more like someone built for endurance than strength.",
+    "hair_color": "Dark brown with natural reddish undertones, occasionally dyed deep violet in the lower layers",
+    "hair_style": "Long, often worn in multiple braids and loose sections. Left side features a deliberately-maintained braid interwoven with small data chips and metallic threading.",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, warm and attentive, with a tendency to catch and hold focus on unfamiliar things",
+    "skin_tone": "Medium-warm, golden undertone from Ghanaian heritage, pale in the way of someone who spends most time indoors",
+    "complexion": "Sharp cheekbones, pointed chin, delicate nose. Skin appears well-cared-for despite resource constraints — uses minimal makeup, favoring function over aesthetics. A faint scar runs along their left temple from a childhood injury.",
+    "distinguishing_marks": [
+      "Linear scar along left temple, approximately 3cm, pale and well-healed from childhood accident",
+      "Faint burn marks across the knuckles of both hands from dream-work equipment malfunction, circa age 22"
+    ],
+    "visible_augmentations": "Geneware cat ears: large, mobile, covered in short tawny fur that matches their darker hair at the roots. Ears swivel visibly toward sounds and can flatten against their head. Retractile claws on fingers and thumbs, maintained with rotating dark nail polish (black, deep purple, dark green, matte silver). Data chip braid behind left ear contains approximately 7-8 small chips interwoven with silver wire and handmade copper connectors.",
+    "posture_movement": "Moves with deliberate, economical motion — no wasted energy. Tendency to tilt head slightly when listening, ears tracking sound sources independently of their gaze. Sits in asymmetrical positions, often with one leg folded. Fidgets with their braid during intense conversation. Despite slight build, moves with certainty and minimal self-consciousness about their visible augmentations.",
+    "clothing_style": "Layered fabrics in rust, burgundy, violet, and charcoal tones — a deliberate aesthetic that also serves thermal regulation. Favors oversized linen shirts, fitted sleeveless vests, long cardigans with irregular hemlines. Worn vintage fabrics, mended visibly with contrasting thread. Tier 4-5 utilitarian style: function-forward, anti-corporate, with clear handmade/collective production markers. Bare feet or worn canvas slip-ons when indoors. Carries a worn canvas shoulder bag filled with dream journals and data tablets."
+  },
+  "image_prompt": "Portrait of a slight androgynous young person with Breton-Ghanaian features, dark brown hair with violet dyed sections and an elaborate braid woven with small copper-colored data chips, piercing warm brown eyes. Large mobile tawny cat ears with short fur, pointed features, delicate bone structure. Retractile claws with alternating dark nail polish, fingers slightly extended. Dressed in layered rust and violet fabrics — oversized linen, fitted vest, long asymmetrical cardigan — in a warm, intentional cyberpunk aesthetic. Setting: dimly lit communal space with soft overhead lighting suggesting early morning or late evening in an autonomous zone. Worn textiles, handmade quality. Expression calm and intensely present, head slightly tilted in listening position. Illustration style: digital painting, high detail on facial features and geneware, moody color grading with warm shadows. Cyberpunk, introspective, dreampunk aesthetic. --ar 2:3 --v 6"
 }

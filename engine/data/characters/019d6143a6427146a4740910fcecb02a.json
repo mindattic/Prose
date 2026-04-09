@@ -287,5 +287,26 @@
     "Clover",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian (Granlund) / West African (Tawiah)",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Compact and densely muscled, built low and wide through the shoulders and hips — engineered for leverage and impact absorption rather than height. No excess fat; every kilogram is functional mass.",
+    "hair_color": "Dark brown with premature silver threading through the sides",
+    "hair_style": "Close-cropped and practical, maintained with military precision",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and constantly scanning",
+    "skin_tone": "Medium-brown complexion with warm undertones reflecting mixed Scandinavian and West African heritage",
+    "complexion": "Weathered and angular face with sharp cheekbones and a squared jaw. Minimal grooming beyond function — no jewelry, no vanity. A thin scar runs from his left temple to his cheekbone, pale against his skin. His eyes are set deep and perpetually tired; the kind of tiredness that comes from chronic hypervigilance rather than lack of sleep.",
+    "distinguishing_marks": [
+      "Thin pale scar running from left temple diagonally down to cheekbone — old injury, expertly healed",
+      "Chemical burn scarring on the right side of his neck, partially hidden by collar — discolored and mottled, approximately 3cm diameter",
+      "Tattoo on left forearm: intricate circuit-board pattern in black ink, older work, starting to blur with age"
+    ],
+    "visible_augmentations": "Right forearm shows obvious chrome plating and mechanical articulation around the wrist and hand — smartgun link hardware visible as recessed ports and connector interfaces along the forearm. Reflective neural-link ports at the base of his skull, visible when his hair is wet. The wired reflexes system creates subtle musculature distortion across his upper arms and shoulders — the augmentation sits just under the skin, creating an uncanny smoothness and slight luminescence under certain light.",
+    "posture_movement": "Moves with economical precision — no wasted motion. His weight is distributed low, center of gravity dropped slightly as if perpetually braced for impact. He favors his left side, trusting the right arm's augmented reflexes for reactive work. His eyes move constantly, scanning exits and threats before his body shifts. When still, he appears coiled rather than relaxed.",
+    "clothing_style": "Tier 4 utilitarian: reinforced cargo pants in matte black with internal holster stitching, worn synthetic leather jacket with oversized pockets and internal webbing, subdued colors (grays, blacks, dark greens). No logos or corporate branding — anonymity is the goal. Boots are serious — steel-toed, scuffed, maintained for function over appearance. A single piece of genuine hardware: a worn steel watch with a cracked face, kept for unknown sentimental reasons."
+  },
+  "image_prompt": "Cyberpunk character portrait of a compact, densely muscled 44-year-old man, 168cm tall, mixed Scandinavian and West African heritage, dark brown skin with sharp angular features and tired, scanning eyes. Short dark hair with silver threading, thin scar across left temple. Visible chrome augmentations on right forearm with smartgun link ports and mechanical articulation, reflective neural-link ports visible at base of skull. Wearing matte black reinforced cargo pants and worn synthetic leather jacket, no logos, steel-toed boots. Coiled posture, low center of gravity, military precision grooming. Kessler Row setting, dim neon-filtered lighting from augmentation clinic windows, gritty urban background with weapon racks and drone parts visible. Hyperrealistic, gritty, moody, highly detailed, noir cyberpunk aesthetic, volumetric lighting, --ar 2:3 --v 6"
 }

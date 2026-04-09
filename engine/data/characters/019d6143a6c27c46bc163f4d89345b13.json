@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Freedom from augmentation debt — the interest compounds like a tumor"
     ],
     "coping_mechanisms": [
@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "A Tier 4 executive offers Sagyn Padilla-Nti a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "A crew member from Sagyn Padilla-Nti's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Sagyn Padilla-Nti's past shows up in GLMZ, carrying old grievances and new chrome",
     "A dead drop Sagyn Padilla-Nti maintains is found and cleaned out — whoever did it now has leverage"
   ],
   "narrative_function": "Sagyn Padilla-Nti represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
@@ -277,7 +277,7 @@
     "Meridian Munitions Peacekeeper-45 'Old Faithful'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Canopy Station Nine",
     "The Heritage Vault",
     "Geartown",
@@ -285,5 +285,26 @@
     "Stratum",
     "Lazarus LX-2 'Lab Rat'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Filipino / West African / Eastern European (multilayered diaspora)",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and economical — muscle distributed for function rather than aesthetics. Wiry frame that suggests sustained training and controlled caloric intake. No excess, no softness.",
+    "hair_color": "Black with premature silver threading at temples",
+    "hair_style": "Pulled back tight, often in a high knot or secured with industrial clips",
+    "hair_length": "Medium — shoulder-length when unbound, kept severe",
+    "eye_color": "Dark brown with faint amber undertone",
+    "skin_tone": "Medium olive — warm undertones with subtle golden cast",
+    "complexion": "Sharp-featured face with high cheekbones and a narrow jaw. Skin shows the texture of someone who spends time exposed to environmental stress — not weathered, but marked. Minimal grooming affectation; they look like they shave when practical rather than cosmetic.",
+    "distinguishing_marks": [
+      "Surgical scar running 8cm along the left collarbone — clean line, old enough to have faded to pale silver",
+      "Burn marks across the knuckles of both hands — small, overlapping, consistent with sustained exposure to heat or chemical contact",
+      "Faint lattice of thin white scars on the inside of the right forearm — deliberate, parallel lines spaced 5mm apart, partially obscured by the visible chrome work"
+    ],
+    "visible_augmentations": "Chrome biosynthesizer visible at the base of the neck and upper chest — metallic silver with faint blue circulation-indicator LEDs that pulse slowly. The chrome is unshielded and intentionally exposed; they wear it like a credential. Neural interface ports visible behind the left ear, marked with a thin scar line in the shape of a crescent.",
+    "posture_movement": "Moves with economical precision — no wasted motion, no performative gesture. They stand slightly asymmetrical, weight favoring the right side. Their gaze is direct and sustained, holding eye contact longer than social convention suggests is comfortable. When still, they radiate coiled readiness rather than relaxation.",
+    "clothing_style": "Tier 3-4 practical aesthetics with deliberate wear markers. Black synthetic jacket with reinforced shoulders and visible stitching — custom-fitted, nondescript brand. Underneath: gray compression shirt that serves both function and thermoregulation. Cargo pants in matte charcoal with multiple sealed pockets and subtle tool loops. Boots are heavy-soled, modular, the kind that can be repaired or upgraded in the field. No jewelry except a thin steel bracelet on the left wrist — possibly functional, possibly not. Clothing shows signs of regular maintenance but not vanity — everything is serviceable, nothing is new."
+  },
+  "image_prompt": "Portrait of a nonbinary fixer in cyberpunk 2226, lean 37-year-old with Filipino-West African-Eastern European mixed features, sharp cheekbones, dark eyes. Shaved temples with silver-threaded black hair pulled back tight. Visible chrome biosynthesizer glowing with faint blue LEDs at neck and upper chest, intentionally unshielded. Surgical scars on collarbone and knuckles. Wearing black reinforced synthetic jacket over gray compression shirt, matte charcoal cargo pants. Direct, uncomfortable eye contact, economical posture. Standing in neon-lit elevated walkway corridor above sprawling industrial district, moody overhead lighting casting sharp shadows. Dark and serious mood, professional runner aesthetic, no smile. Photorealistic, cinematic, detailed face, --ar 2:3 --v 6"
 }

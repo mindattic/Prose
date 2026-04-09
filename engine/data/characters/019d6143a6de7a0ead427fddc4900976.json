@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Shallowgrave, a rented unit above a recycling processor in Blackpipe Corridor, near Halsted and Division",
-  "description": "Suki is slight and fidgety, with the kind of face that people struggle to describe afterward — deliberately so. They have medium-brown skin and keep their hair a different color every two weeks, courtesy of color-changing follicle geneware, currently a deep teal that fades to bronze at the tips. They have a faint bioluminescent pulse along their collarbones that they usually cover with high-necked clothing, a mod from a phase a few years ago that they haven't had removed because it costs more to undo than to keep. Their fingers are rarely still — they're always rolling something between them, a stylus, a coin, a small tool — and they tend to look at surfaces rather than people when they talk, as though they're reading information off of whatever they're looking at.\n\nSuki is brilliant at the specific thing they do, which is making people into other people on paper — or, more precisely, in the vast interlocking authentication lattices that determine who gets to be who in Meridian 88. They design identities the way some people design architecture: with attention to load-bearing details, to how structures weather over time, to what fails first under pressure. They work alone, price fairly by Shallowgrave standards, and have a waiting list. They do not take jobs that feel like someone is going to die because of the identity. They are not always right about when that is.",
+  "description": "Suki is slight and fidgety, with the kind of face that people struggle to describe afterward — deliberately so. They have medium-brown skin and keep their hair a different color every two weeks, courtesy of color-changing follicle geneware, currently a deep teal that fades to bronze at the tips. They have a faint bioluminescent pulse along their collarbones that they usually cover with high-necked clothing, a mod from a phase a few years ago that they haven't had removed because it costs more to undo than to keep. Their fingers are rarely still — they're always rolling something between them, a stylus, a coin, a small tool — and they tend to look at surfaces rather than people when they talk, as though they're reading information off of whatever they're looking at.\n\nSuki is brilliant at the specific thing they do, which is making people into other people on paper — or, more precisely, in the vast interlocking authentication lattices that determine who gets to be who in GLMZ. They design identities the way some people design architecture: with attention to load-bearing details, to how structures weather over time, to what fails first under pressure. They work alone, price fairly by Shallowgrave standards, and have a waiting list. They do not take jobs that feel like someone is going to die because of the identity. They are not always right about when that is.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -254,9 +254,30 @@
   "related_entities": [
     "Blackpipe Corridor",
     "Shallowgrave",
-    "Meridian 88",
+    "GLMZ",
     "ARCHIVE",
     "Bronze"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Serbian / West African (Akan)",
+    "height_cm": 163,
+    "weight_kg": 52,
+    "build": "Slight and wiry, minimal muscle mass, the kind of frame that seems to compress into itself when they sit — all nervous energy and sharp angles",
+    "hair_color": "Deep teal fading to bronze at the tips (color-changing follicle geneware, rotated every two weeks)",
+    "hair_style": "Shoulder-length, often pulled back with a wire or stylus stuck through it, deliberately unstyled",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown with subtle optical implant lens artifacts visible under close inspection",
+    "skin_tone": "Medium-brown with warm undertones, complexion reflects mixed Serbian and West African heritage",
+    "complexion": "Fine-featured, high cheekbones, sharp jaw; skin is clear but pallid from nocturnal habits; expression often unfocused, eyes tracking surfaces rather than faces",
+    "distinguishing_marks": [
+      "Faint bioluminescent stripe running along both collarbones in pale blue-white, usually concealed by high-necked clothing; pulses subtly with neural activity",
+      "Small burn scar on left index finger from early substrate work accident, barely visible",
+      "Chronic dark circles under eyes from inverted sleep schedule"
+    ],
+    "visible_augmentations": "Micro-focus optical implants visible as faint crystalline patterns at the inner corners of both eyes when light hits at certain angles; bioluminescent collarbone stripe when exposed. Otherwise augmentations are subcutaneous or non-visible.",
+    "posture_movement": "Perpetually restless — fidgets constantly with objects (stylus, coin, small tools) that cycle between their fingers. Sits hunched over work surfaces. Speaks while looking at walls, screens, or objects rather than making eye contact. Moves with efficient, nervous energy; rarely still.",
+    "clothing_style": "Tier 4 working-class practical: high-necked long-sleeved compression shirts in dark colors to cover collarbone stripe; fitted black or charcoal synthweave pants with multiple cargo pockets; worn Blackpipe Corridor knockoff sneakers. Layers with a faded oversized jacket or hooded sweater for movement between workspace and delivery sites. Minimal jewelry — a single wire or cable bracelet, functional not decorative. Clothes show wear and coffee stains; practical over aesthetic."
+  },
+  "image_prompt": "Cyberpunk portrait of a slight nonbinary character with medium-brown skin, deep teal hair fading to bronze tips, shoulder-length and slightly unkempt. Dark brown eyes with subtle optical implant lens artifacts. High-necked black compression shirt concealing faint bioluminescent stripe along collarbones. Fidgeting with a stylus between long, precise fingers. Hunched posture over a cluttered workspace scattered with authentication tokens and substrate samples. Perpetually unfocused expression, eyes tracking the surface of an object rather than the camera. Dark circles from nocturnal schedule. Faded oversized jacket. Deep indigo and cool blue lighting from multiple screens reflecting off tired face. Gritty Tier 5 workspace aesthetic, Blackpipe Corridor industrial setting, shallow depth of field. Hyper-realistic, fine details on hands and implant artifacts, moody nocturnal mood. --ar 2:3 --v 6"
 }

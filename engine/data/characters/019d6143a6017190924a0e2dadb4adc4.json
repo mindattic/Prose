@@ -246,5 +246,25 @@
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Cornish-Czech / Jamaican",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Wiry and compact, all lean muscle from years of navigating on foot through dense urban corridors. No excess, minimal load-bearing capacity by design — built for speed and precision movement, not strength.",
+    "hair_color": "Dark brown with natural reddish undertones",
+    "hair_style": "Close-cropped fade on sides (approximately 3mm), longer on crown (approximately 8-10cm), typically pushed back under a worn cap",
+    "hair_length": "Short to medium (asymmetrical)",
+    "eye_color": "Warm brown, alert and directional focus",
+    "skin_tone": "Warm medium brown with golden undertones, sun-weathered from constant street exposure",
+    "complexion": "Sharp cheekbones, angular jawline, expressive mouth. Skin shows the wear of outdoor living — minor sun damage, weathered texture. Minimal grooming beyond necessity; no cosmetics. Few acne scars, well-healed. Resting face is neutral to stern; animated face is difficult to read.",
+    "distinguishing_marks": [
+      "Systematic linear scarring across left forearm (inner wrist to mid-forearm), approximately 12cm total, from non-clinical implant removal at age 19 — scars are pale and well-established but deliberately left uncovered",
+      "Minor radiation-burn discoloration on left temple and cheek, faint and only visible in certain light — Circuit exposure, unconfirmed date"
+    ],
+    "visible_augmentations": "Cochlear signal filter hardware visible as a thin metallic ridge behind her left ear, approximately 2cm, with faint blue indicator LED that cycles during active filtering. No other visible augmentations; nerve damage in left hand (ring and middle finger) shows as subtle reduced dexterity only during close observation.",
+    "posture_movement": "Economical, precise movement — no wasted motion. Walks with weight distributed low and forward, ready to shift direction rapidly. Stands with one foot slightly advanced, shoulders loose. Eyes constantly moving, particularly vertical scanning. When sitting, feet remain planted or in ready position. Hands move deliberately; left hand compensates for partial numbness with conscious placement.",
+    "clothing_style": "Tier 4-5 function-first aesthetic. Worn synthetic jacket (charcoal gray, water-resistant, multiple internal pockets) over thermal base layers. Cargo pants in olive, reinforced at stress points. Scuffed utility boots with good traction, laces double-knotted. Old company-logo cap (faded, unidentifiable branding). No corporate sigils or status indicators. Worn leather messenger bag, multiple compartments, overstuffed with routes notebook and small music player. All clothing shows heavy use, patched rather than replaced. No jewelry except a thin, dented silver ring on her right index finger (inherited or salvaged, kept without sentimentality)."
+  },
+  "image_prompt": "Cyberpunk street courier, 24-year-old mixed-race woman with Cornish-Czech-Jamaican heritage, wiry compact build, dark brown hair with reddish tones, close-cropped sides and longer crown, warm medium brown skin tone, sharp angular features with alert brown eyes, wearing worn charcoal gray synthetic jacket and olive cargo pants, scuffed utility boots, faded company-logo cap, visible systematic pale scarring across left forearm from implant removal, metallic cochlear filter visible behind left ear with faint blue indicator light, holding worn leather messenger bag, standing in urban Circuit corridor with neon signage and crowded transit backdrop, precise economical posture ready to move, motion-captured mid-stride, cool blue and amber ambient lighting with sodium vapor glow, gritty photorealistic cyberpunk aesthetic, depth of field emphasizing character against blurred crowd background, shot with documentary street photography quality --ar 2:3 --v 6"
 }

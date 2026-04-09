@@ -13,7 +13,7 @@
   "age": 40,
   "status": "active",
   "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near LaSalle and Congress",
-  "description": "Kenji Kimura-Nkrumah are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 40, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — enhanced tendons — geneware upgrade, jump height and grip strength tripled — and they make no effort to hide it.\n\nThey arrived in Meridian 88 six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a surveillance specialist out of The Underbelly, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nKenji Kimura-Nkrumah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Kenji Kimura-Nkrumah are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 40, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — enhanced tendons — geneware upgrade, jump height and grip strength tripled — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a surveillance specialist out of The Underbelly, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nKenji Kimura-Nkrumah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "A dead drop Kenji Kimura-Nkrumah maintains is found and cleaned out — whoever did it now has leverage",
-    "A crew member from Kenji Kimura-Nkrumah's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Kenji Kimura-Nkrumah's past shows up in GLMZ, carrying old grievances and new chrome",
     "A former associate resurfaces with evidence that could destroy Kenji Kimura-Nkrumah's reputation — and a price for silence"
   ],
   "narrative_function": "Kenji Kimura-Nkrumah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
@@ -274,7 +274,28 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88"
+    "GLMZ"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Japanese / West African",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Lean and elongated — low body fat, visible muscle definition without bulk. The enhanced tendons give their limbs a slightly angular quality, as if every joint is optimized for extension and contraction.",
+    "hair_color": "Natural black with early silver at the temples",
+    "hair_style": "Pulled back tight, secured at the nape",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, alert and observant",
+    "skin_tone": "Warm beige with subtle undertones — blended East Asian and sub-Saharan heritage",
+    "complexion": "Clean-shaven, sharp cheekbones, minimal scarring on the visible face. Skin is taut and unmarred — evidence of disciplined self-care and regular maintenance cycles. No wrinkles despite age; augmentation and regimen preserve a deceptive youth.",
+    "distinguishing_marks": [
+      "Chromatic seams running down both forearms where enhanced tendon upgrades interface with natural musculature — thin surgical lines with faint iridescent sheen visible under certain lighting.",
+      "Thin white scar along the left jawline, approximately 4cm, barely visible unless lit from the side — old, healed cleanly.",
+      "Faint burn scarring on the right palm, webbed pattern consistent with electrical contact — functional but disfiguring."
+    ],
+    "visible_augmentations": "Chrome-reinforced tendons visible as metallic threading under translucent skin at wrists and inner forearms. The seams catch light distinctly. Geneware muscle treatment is invisible but visible in movement — precision of motion suggests internal optimization. Hands show subtle mechanical articulation in finger joints during fine motor work.",
+    "posture_movement": "Economical and controlled — no wasted motion. Moves like someone counting steps. Capable of sudden, explosive movement; transitions between stillness and action are sharp. Stands with weight balanced evenly, ready to shift direction. Eyes track continuously without apparent effort.",
+    "clothing_style": "Tier 3-4 utilitarian. Black or dark grey tech-weave jacket with reinforced shoulder and forearm panels. Form-fitting tactical pants with cargo pockets and integrated cable routing. Worn climbing boots, scuffed but maintained. Minimal branding — function over aesthetics. All clothing is modular, replaceable, and carries no sentimental value. A single silver ring on the right ring finger — the only item suggesting something beyond pure pragmatism."
+  },
+  "image_prompt": "Cyberpunk character portrait of a tall, lean East Asian-African nonbinary figure, age 40, dark hair pulled back tight, alert dark eyes, taut angular face with high cheekbones, cool neutral expression. Visible chrome threading running down both forearms beneath translucent skin, metallic seams catching light. Black tech-weave tactical jacket over fitted pants, worn climbing boots. Standing with perfect posture, weight balanced, hands relaxed but ready — the stillness of a trained operative. Subtle burn scar on right palm visible. Underground utility corridor setting, neon accent lighting (blues and cyans), industrial architecture with cables and maintenance systems visible in background. Cinematic lighting, shallow depth of field, photorealistic, clean and professional, no grain, sharp focus on the figure. Mood: competent, controlled, dangerous. --ar 2:3 --v 6"
 }

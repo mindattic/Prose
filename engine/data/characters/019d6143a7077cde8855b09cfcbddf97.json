@@ -247,5 +247,25 @@
     "Nightlight",
     "The Milwaukee Core"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Tswana-Botswanan / Croatian-Mexican",
+    "height_cm": 175,
+    "weight_kg": 62,
+    "build": "Lean and efficient—the kind of thin that comes from sustained scarcity rather than choice. Minimal muscle definition, but wiry rather than fragile. His frame suggests someone who has learned to run on less.",
+    "hair_color": "Black with slight natural curl",
+    "hair_style": "Short, unstyled, no product—functional rather than intentional",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and measuring",
+    "skin_tone": "Deep brown complexion, warm undertones with slight ashen quality from time spent in cold storage environments",
+    "complexion": "Sharp cheekbones inherited from Tswana ancestry, angular jawline. Skin is clear but shows faint fatigue lines around the eyes. Clean-shaven, meticulous grooming—no scarring on face.",
+    "distinguishing_marks": [
+      "Bioluminescent blue-white subdermal striping across both collarbones and upper chest, visible through thin fabric—lines run roughly parallel to the clavicle and glow faintly in low light, giving off an eerie quality when illuminated",
+      "No visible scars or tattoos; hands are notably clean with well-maintained nails and no discoloration or calluses despite the nature of his work"
+    ],
+    "visible_augmentations": "Bioluminescent striping visible at the neckline and upper chest when wearing standard clothing. No obvious chrome or external augmentation; neural cooling implant is subcutaneous and invisible. Pupils may dilate slightly wider than baseline due to thermoregulation implant.",
+    "posture_movement": "Moves with deliberate, economical precision—no wasted motion. Posture is slightly forward-bent, shoulders rounded as if perpetually hunching against cold. Hands rest still and flat; he does not gesture. His gaze is constant and measuring, the look of someone pricing things.",
+    "clothing_style": "Tier 4-5 utilitarian: thermal-lined base layers visible at the neck and wrists, dark grey or black long-sleeve undershirt, heavy insulated jacket (synthetic fabric, no branding, multiple interior pockets), cargo pants with reinforced thigh pockets and heavy zippers. Worn black slip-on boots with good tread—practical for wet subterranean work. No jewelry. Clothes are clean but aged, maintained rather than replaced. Small evidence of stains carefully treated out."
+  },
+  "image_prompt": "A lean 28-year-old man of Tswana-Croatian-Mexican heritage standing in dim fluorescent light, sharp cheekbones and alert dark brown eyes, short black hair with natural curl, deep brown complexion. Bioluminescent blue-white striping glowing faintly across collarbones visible at open neckline of dark thermal shirt—eerie cool light. Wearing heavy insulated jacket and cargo pants, worn practical boots. Hands clean and still, posture hunched slightly forward as if perpetually cold. Cyberpunk noir aesthetic, subterranean medical facility setting with cold storage lockers blurred in background, cool blue-grey lighting emphasizing the bioluminescent glow on skin, clinical and unsettling atmosphere, photorealistic, high detail on facial features and hand cleanliness, moody and sinister --ar 2:3 --v 6"
 }

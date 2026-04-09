@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "Edgewater Prism — the University Spine's lakeside Environmental Monitoring Station, a salt-fogged brutalist structure half-obscured by atmospheric scrubber scaffolding, near Lincoln and Addison",
-  "description": "Ifeoluwa Draganova-Tuamotu has the body of someone who spends significant time outdoors in difficult conditions: weathered, practical, with strong hands and a slight permanent squint from years of looking at lake glare. Their Nigerian-Bulgarian-Polynesian lineage produces a striking combination — deep brown skin, high Slavic cheekbones, hair that grows in dense, salt-bleached coils they keep in a utilitarian braid. They have bioluminescent streaks along their clavicles and upper arms, a mod they got during a Polynesian cultural heritage ceremony in their thirties, which pulse a soft blue-green during elevated heart rate. In cold weather, which is most of the year at Edgewater Prism, they layer aggressively and always have a thermal flask of something that is definitely not just tea.\n\nThey are, professionally, one of the most respected voices on Lake Michigan's chemical and thermal dynamics — the lake that Meridian 88 is built around, over, and increasingly into. Their published findings are often the ones that make corponation environmental compliance offices sweat. They deliver these findings with a kind of weary, precise directness that has no theatrical edge to it — they are not performing alarm, they are reporting it. Off the clock they are unexpectedly tender — they keep a small shrine to the lake's resident E.L.F. network on their desk and speak about the lake itself with something that is clearly affection.",
+  "description": "Ifeoluwa Draganova-Tuamotu has the body of someone who spends significant time outdoors in difficult conditions: weathered, practical, with strong hands and a slight permanent squint from years of looking at lake glare. Their Nigerian-Bulgarian-Polynesian lineage produces a striking combination — deep brown skin, high Slavic cheekbones, hair that grows in dense, salt-bleached coils they keep in a utilitarian braid. They have bioluminescent streaks along their clavicles and upper arms, a mod they got during a Polynesian cultural heritage ceremony in their thirties, which pulse a soft blue-green during elevated heart rate. In cold weather, which is most of the year at Edgewater Prism, they layer aggressively and always have a thermal flask of something that is definitely not just tea.\n\nThey are, professionally, one of the most respected voices on Lake Michigan's chemical and thermal dynamics — the lake that GLMZ is built around, over, and increasingly into. Their published findings are often the ones that make corponation environmental compliance offices sweat. They deliver these findings with a kind of weary, precise directness that has no theatrical edge to it — they are not performing alarm, they are reporting it. Off the clock they are unexpectedly tender — they keep a small shrine to the lake's resident E.L.F. network on their desk and speak about the lake itself with something that is clearly affection.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -39,7 +39,7 @@
       "So focused on the macro-scale environmental threat that they sometimes miss interpersonal warning signs in their immediate community",
       "Tends to assume institutions can be persuaded by better data, underestimating vested interest"
     ],
-    "secret": "Their most recent deep-lake thermal models show a cascade threshold event within 8-12 years that would make significant portions of Meridian 88's lakeward infrastructure untenable. They have shared this with the Regulatory Secretariat. The Secretariat has asked them to revise the confidence intervals. They have not yet decided what to do."
+    "secret": "Their most recent deep-lake thermal models show a cascade threshold event within 8-12 years that would make significant portions of GLMZ's lakeward infrastructure untenable. They have shared this with the Regulatory Secretariat. The Secretariat has asked them to revise the confidence intervals. They have not yet decided what to do."
   },
   "speech_patterns": {
     "vocabulary": "Technical but not exclusionary — they shift register fluidly depending on audience; use precise quantifiers constantly ('roughly,' 'within a margin of,' 'statistically significant at')",
@@ -63,7 +63,7 @@
   "narrative_function": "Information source on environmental conditions affecting specific city zones; potential whistleblower or reluctant ally; their data could be critical to or weaponized in plots involving corponation environmental violations",
   "augmentations": "Bioluminescent clavicle and arm streaks (cosmetic/cultural, pulse blue-green with elevated heart rate); subdermal temperature and chemical sensor array in both forearms for field sampling; no geneware otherwise",
   "daily_life": "Dawn water sampling from the monitoring station's submersible launch; data analysis through mid-morning; afternoon spent in meetings with regulatory bodies or colleagues, usually arguing about what their own data means; evenings often back at the lake if conditions are interesting or alarming.",
-  "affiliation": "University Spine Environmental Sciences Division; contracted monitoring agreements with Meridian 88's Environmental Regulatory Secretariat (a body with advisory power but limited enforcement)",
+  "affiliation": "University Spine Environmental Sciences Division; contracted monitoring agreements with GLMZ's Environmental Regulatory Secretariat (a body with advisory power but limited enforcement)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -241,7 +241,7 @@
     "Edgewater Prism",
     "Crucible Industries Thermal Cascade TC-5 'Flashover'",
     "University Spine",
-    "Meridian 88",
+    "GLMZ",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Threshold",
     "Timekeeper",
@@ -252,5 +252,26 @@
     "Gravimetric Collapse Charge GCC-9",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Nigerian) / Eastern European (Bulgarian) / Polynesian (Tuamotu)",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and muscular with developed shoulders and forearms from years of fieldwork and manual water sampling; core strength evident but not bulky. Weathered rather than soft.",
+    "hair_color": "Deep brown with natural salt-bleached blonde streaking throughout, particularly at the crown and temple areas",
+    "hair_style": "Thick, densely coiled hair braided into a single, utilitarian crown braid pulled tight against the scalp. Practical rather than aesthetic.",
+    "hair_length": "Medium (braid reaches mid-shoulder blade)",
+    "eye_color": "Dark brown with persistent creasing at the outer corners from chronic squinting against water glare",
+    "skin_tone": "Deep warm brown with underlying golden undertones characteristic of mixed West African and Polynesian heritage",
+    "complexion": "Sun-weathered and dry, with permanent fine lines radiating from eyes and mouth. Skin shows salt residue on exposed areas most days. High, prominent Slavic cheekbones. Callused hands with permanent staining on fingertips and nails from field sampling materials. A few stress-related dry patches along the jawline.",
+    "distinguishing_marks": [
+      "Bioluminescent biolume line tattoo running along both clavicles and upper arms (glowing soft blue-green, visible even under thin clothing, pulses with elevated heart rate)",
+      "Faint chemical burn scars on the inside of both forearms where subdermal sensor arrays were installed (thin, pale lines, barely visible unless looking closely)",
+      "A three-inch scar on the left palm from a dock accident circa 2205 (white, slightly raised, runs diagonally across the heel of the hand)"
+    ],
+    "visible_augmentations": "Bioluminescent streaks on clavicles and upper arms (blue-green, subtle but noticeable, especially in dim light or when heart rate elevates). The forearm subdermal sensor array itself is not visible, but small discreet port covers are visible on both inner forearms near the wrist if closely examined.",
+    "posture_movement": "Moves with deliberate efficiency; no wasted gesture. Slight forward lean from years of hunching over field instruments and monitoring screens. Tends to keep hands visible and occupied (holding a flask, adjusting equipment, gesturing while explaining data). When stationary, often shifts weight to one foot. Direct eye contact during conversation, especially when discussing research findings. Occasional unconscious glance toward windows or water.",
+    "clothing_style": "Tier 3-4 practical workwear layered for frequent environmental exposure. Base: thermal underlayer (matte gray or navy). Mid-layer: wool blend or technical fabric sweater with reinforced elbows (usually earth tones—rust, sage, charcoal). Outer: weathered canvas or synthetic field coat with multiple pockets and a visible Spine institutional patch. Pants: heavy-duty cargo or utility-cut in neutral colors with reinforced knees. Footwear: high-ankle boots rated for wet conditions, heavily worn. Always carries a stainless steel thermal flask (likely bearing faded University Spine or environmental research decals). No jewelry except an old silver chain visible under neckline (likely a cultural piece or talisman). Accessory: lightweight scanner or datascroll clipped to belt."
+  },
+  "image_prompt": "A weathered 44-year-old climate scientist of mixed West African, Eastern European, and Polynesian descent standing at a brutalist lakeside monitoring station. Deep brown skin, high Slavic cheekbones, dense salt-bleached coils braided tightly back. Bioluminescent blue-green streaks glow softly along both clavicles and upper arms. Wearing layered fieldwork clothing: thermal undershirt, rust-colored wool sweater, weathered canvas coat with institutional patches. Heavy cargo pants, worn high-ankle boots. Holding a stainless thermal flask. Direct gaze, permanent squint lines from water glare, calloused hands. Salt-fog atmosphere, gray-green lake water visible behind. Morning light, cool color palette, atmospheric scrubber scaffolding visible out of focus. Hyperrealistic, documentary style, cinematic lighting. --ar 2:3 --v 6"
 }

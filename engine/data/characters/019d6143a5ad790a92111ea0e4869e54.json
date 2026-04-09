@@ -244,5 +244,27 @@
     "Copper",
     "Brass"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Burkinabé / Russian)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Angular and lean, all sharp geometry — narrow shoulders, pronounced collarbones, wiry muscle from constant motion rather than deliberate training. No softness; her body reads as kinetic.",
+    "hair_color": "Natural black base with embedded color-shifting geneware underlayer (copper to green responsive to temperature and emotional state)",
+    "hair_style": "Dense natural crown worn loose, densely packed with political buttons, brass charms, and small pins",
+    "hair_length": "Long (shoulder-blade length when unpinned, worn up most of the time)",
+    "eye_color": "Dark brown, alert and direct",
+    "skin_tone": "Deep brown with warm undertones, high contrast",
+    "complexion": "Angular facial structure with high cheekbones, sharp jawline. Skin is clear but marked by the wear of irregular sleep and constant sun exposure during street actions. No makeup; minimal grooming beyond pragmatism.",
+    "distinguishing_marks": [
+      "Both forearms densely covered in hand-poked tattoos in at least four scripts (Latin, Arabic, Cyrillic, possibly Mandarin) — dates, names, phrases, coordinates of places and people significant to her activism",
+      "Small scar on left temple, approximately 1cm, from a street arrest in 2224",
+      "Three parallel claw marks on right collarbone from a crowd encounter, slightly raised and visible",
+      "Inside left wrist: hand-poked date tattoo (likely founding date of Libre Front or personal action anniversary)"
+    ],
+    "visible_augmentations": "Color-shifting geneware hair layer only — no chrome, no visible implants. The geneware is the only technological modification; it shifts from black-base to copper to green depending on ambient temperature and her emotional state, creating a subtle but constant visual indicator of her mood and presence.",
+    "posture_movement": "Constantly in motion, restless — fidgets with clothing, pins, phone. When standing still, she leans forward slightly as if mid-argument. Eyes scan crowds and exits; body language radiates coiled energy. She moves through space with the territorial awareness of someone used to street actions and crowd dynamics. Hand gestures are expressive and frequent.",
+    "clothing_style": "Tier 4-5 utilitarian activist wear. Typically black or dark earth-tone cotton, deliberately worn and patched — oversized hoodies and button-ups layered, cargo pants or jeans with visible wear and pockets, scuffed combat boots (practical, not aesthetic). Visible political patches, badges, and protest tape on clothing. Carries an old canvas messenger bag covered in stickers and hand-drawn graphics. No corporate logos, no premium materials; everything chosen for durability and functionality. Appearance is deliberately anti-aesthetic, rejecting Tier 1-2 grooming signals."
+  },
+  "image_prompt": "A 22-year-old Black woman with sharp angular features and dark skin, standing in three-quarter profile with intense forward-leaning posture. Dense natural hair crown adorned with political buttons and brass charms, with subtle color-shifting iridescence visible (black-to-copper-to-green geneware layer responding to ambient light). Both forearms heavily covered in hand-poked tattoos in multiple scripts and languages — dates, names, coordinates. Deep brown eyes alert and scanning. Wearing oversized dark hoodie layered over patched cargo pants, scuffed combat boots, canvas messenger bag covered in stickers and protest graphics. Visible wear and street grit throughout clothing. Standing in front of urban brutalist Mexicantown warehouse interior (the Stack), dim industrial lighting with single warm overhead light casting shadows. Mood: restless energy, coiled intensity, determined visibility. Cyberpunk street activist aesthetic, Tier 4-5 unglamorous reality. Film photography grain, high contrast lighting --ar 2:3 --v 6"
 }

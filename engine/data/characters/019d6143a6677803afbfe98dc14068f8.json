@@ -195,7 +195,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born Washburn Commons, third generation Meridian 88",
+      "event": "Born Washburn Commons, third generation GLMZ",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -256,5 +256,26 @@
     "Grandmother",
     "Ferrogate Transit"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian / Polynesian",
+    "height_cm": 182,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and deep-chested, with the residual musculature of manual labor work, now softened by age into a sturdy, monumental frame. Slight forward curve to the spine from decades of leaning into union negotiations and community work.",
+    "hair_color": "White",
+    "hair_style": "Cropped close to scalp with a single braid at the left temple, approximately 20cm long, kept with dark thread wrapping",
+    "hair_length": "Short (mostly) with one medium braid",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Heavily lined face with deep laugh lines around the eyes and mouth; weathered but clean-shaven; skin texture shows sun exposure and age but maintains even tone; expression lines suggest a lifetime of careful listening and deliberate speech",
+    "distinguishing_marks": [
+      "Deep linear scar along the inside of right forearm, pale and old, approximately 12cm long",
+      "Burn scarring on the left shoulder blade, roughly 8cm across, pale and mottled — industrial accident related",
+      "Thin white scar along the left jawline, approximately 6cm, barely visible unless lit from the side"
+    ],
+    "visible_augmentations": "Left arm from elbow down is functional chrome industrial-grade replacement with articulated fingers and visible servo joints; polished daily to mirror finish; bore company markings (Ferrogate Transit Authority logo) on the forearm plate. Right ear shows a small discrete cochlear amplifier module, matte black, barely noticeable unless directly observed.",
+    "posture_movement": "Stands with squared shoulders and deliberate occupation of physical space, a learned posture of authority that has not diminished with age. Moves slowly and with precision — economical gestures, no wasted motion. Left hand (chrome) operates with mechanical smoothness; right hand moves with natural aging slowness. Tends to lean slightly forward when listening. Walks at a measured, steady pace regardless of weather or urgency.",
+    "clothing_style": "Tier 3-4 working class, conservative and functional. Typically wears a dark button-up shirt (cotton blend, no logo) over a simple crew-neck undershirt; dark trousers with a heavy leather belt worn soft with age. Work boots — currently a pair of Consolidated Transit Authority issue from the 1990s, resoled twice. A grey wool long-coat in cold months. No jewelry except a faded union ring on his right ring finger. Clothing is clean, well-maintained, never flashy. The overall impression is of someone for whom fashion was never a priority, but dignity was."
+  },
+  "image_prompt": "Cyberpunk character portrait of an elderly Black man, 78 years old, deep brown skin with heavy age lines, close-cropped white hair with a single braided temple lock, standing in three-quarter view. Left arm is polished chrome industrial replacement from elbow down with visible servo joints and Ferrogate Transit Authority markings, contrasting sharply with his weathered natural arm. Dark button-up shirt over crew neck, dark trousers, worn leather belt, sturdy work boots. Small discrete cochlear amplifier module visible on right ear. Squared shoulders, deliberate posture, expression of careful listening. Standing in the warm tungsten lighting of a community hall interior, soft shadows across his face emphasizing age and experience. Photorealistic, dignified, grounded cyberpunk aesthetic, no futuristic flash, focus on human character and industrial augmentation details. --ar 2:3 --v 6"
 }

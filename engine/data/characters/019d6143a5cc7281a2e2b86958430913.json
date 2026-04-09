@@ -12,7 +12,7 @@
   "role": "Transit Police Officer, Ferrogate Transit Security",
   "age": 28,
   "status": "active",
-  "location": "Kessler Interchange, Meridian 88, near North Ave and Damen",
+  "location": "Kessler Interchange, GLMZ, near North Ave and Damen",
   "description": "Brennus is a broad-shouldered young man, Ghanaian-Croatian in the specific way that produced his particular amber skin tone, tight dark curls, and a jaw that looks like it was designed to take a punch and was then tested extensively. He wears the Ferrogate Transit Security uniform with the particular posture of someone who chose this job over something better and has spent two years finding peace with that choice. His cosmetic geneware is subtle: bioluminescent freckles across his cheekbones that pulse a faint amber when he's calm and edge toward orange-red when his heart rate climbs — a mod he got at eighteen that he now considers a professional liability and is saving to have adjusted. His colleagues call him Two-Stop because he has never, in two years of duty at Kessler Interchange, needed more than two stops on the escalating force protocol before a situation resolved.\n\nKessler is a brutal posting — five rail lines converging in a subterranean cavern full of vending shrines, checkpoint queues, and the particular desperation of people who missed the last platform-credit subsidy. Brennus has developed a talent for the moment just before things escalate, which he deploys through an almost theatrical calm and a habit of learning names. He knows the regulars by face, knows which unhoused people shelter in which alcoves, knows which Ferrogate checkpoint operators skim scanning fees. He has not reported the last thing. He is thinking about reporting it.",
   "psychology": {
     "facet_weights": {
@@ -180,9 +180,30 @@
     "Kessler Interchange",
     "Ferrogate Transit",
     "Arcturus GE-1 'Garrison'",
-    "Meridian 88",
+    "GLMZ",
     "Big Rig",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Central European (Croatian)",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and solid without excess mass—built like someone who moves through crowded spaces with deliberate intent. Chest and shoulders carry visible musculature; waist tapers cleanly. The build of a man who chose physical work over desk jobs.",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Neat, close-cropped fade with natural texture; kept regulation-short but not aggressively military",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and direct",
+    "skin_tone": "Warm amber undertone—the specific result of Ghanaian and Croatian ancestry mixing into something neither parent line alone would produce",
+    "complexion": "Clear, well-maintained skin with a scattering of bioluminescent freckles across both cheekbones. Jaw is angular and prominent, showing the wear of professional calm and the subtle bruising of someone who has absorbed impact. Five o'clock shadow typical by evening shift. No visible acne or skin conditions; the freckles glow faintly amber at rest.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles across both cheekbones (cosmetic geneware, amber baseline, shift toward orange-red under stress or elevated heart rate)",
+      "Thin scar along left knuckle ridge (professional wear, partially concealed by reinforced plating)",
+      "Pale line of scar tissue along right temple (pre-augmentation, roughly 4cm, barely visible unless light catches it directly)"
+    ],
+    "visible_augmentations": "Reinforced knuckle plating visible on both hands—matte black synthetic bone composite showing at the knuckles and back-hand ridges, FTS-standard issue. Subvocal comms implant invisible but occasionally visible as faint vibration under jawline when receiving radio traffic. Bioluminescent freckles are the most visible augmentation, especially in low-light conditions.",
+    "posture_movement": "Stands with shoulders square and weight distributed evenly—the posture of someone trained to respond quickly but not presently threatened. Moves through crowded spaces with economical precision, never rushed. Hands rest naturally at sides or loosely clasped, knuckle plating giving them a slightly industrial appearance. Eye contact is direct and held slightly longer than average—a deliberate choice to establish calm authority. When walking a platform or moving through checkpoint areas, his gaze sweeps in practiced patterns without seeming mechanical.",
+    "clothing_style": "Wears Ferrogate Transit Security uniform as standard: fitted dark-gray polymer blend shirt with FTS insignia on left chest, tactical-cut to allow arm mobility. Black reinforced cargo pants with regulation belt carrying comm unit, flex-cuffs, and incident log tablet. Steel-toed boots (scuffed, well-maintained). Off-duty: simple athletic wear, earth-tone hoodies, worn denim. Tier 3-4 worker clothing—functional, durable, not flashy. No jewelry except a faded cloth wristband (frayed, looks like it's been retied many times) in dark blue."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 28-year-old Black man with mixed Ghanaian-Croatian heritage, warm amber skin tone, dark close-cropped hair, angular jaw. Standing in industrial transit station lighting. Wearing dark gray Ferrogate Transit Security uniform with tactical fit, black reinforced cargo pants, steel-toed boots. Bioluminescent freckles glow faintly amber across cheekbones. Black synthetic-bone knuckle plating visible on both hands. Direct eye contact, calm professional posture, alert vigilance in expression. Subvocal comms tech barely visible under jaw. Background: blurred neon checkpoint signage, fluorescent platform lights, concrete and steel. Mood: competent, weary from shift work, quietly observant. Hard sci-fi aesthetic, Tier 3 working class. Frontal lighting with slight blue-tinted overhead fluorescents. High contrast. --ar 2:3 --v 6"
 }

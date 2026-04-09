@@ -230,5 +230,26 @@
     "Nightlight",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East African (Rwandan/Burundian) / Spanish",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, with the compact muscularity of someone who has spent three decades standing over a stove, lifting heavy pots, and moving with economical purpose. Thickened through the middle but strong-limbed.",
+    "hair_color": "Dark brown with silver threading throughout",
+    "hair_style": "Coiled natural texture, regularly wrapped and re-wrapped throughout the day in a waxed cloth wrap in rotating patterns",
+    "hair_length": "Medium (shoulder-length when unwrapped)",
+    "eye_color": "Deep brown with slight amber undertone in certain light",
+    "skin_tone": "Rich mid-to-dark brown with warm undertones",
+    "complexion": "Face deeply lined from decades of steam exposure and sun-weathered from outdoor market work; lines concentrated around eyes and mouth from frequent laughing and squinting. Skin is weathered but healthy, with no scarring. Her face has the lived-in quality of someone who has rarely worn cosmetic filters or treatments.",
+    "distinguishing_marks": [
+      "Staining on both hands from turmeric and char that no amount of scrubbing fully removes—permanent discoloration in the creases of her palms and under her fingernails",
+      "Heat-burn scars on her left forearm (three parallel marks from a pot mishap in her thirties) now faded to pale brown lines",
+      "Small burn mark on her right wrist—a pale circular scar from an old coal-stove accident"
+    ],
+    "visible_augmentations": "Heat-sensing fingertip implants on both hands that glow faintly amber when exposed to temperatures above safe thresholds—the glow is soft, bioluminescent, and visible especially in dim market light. No chrome visible; the implants sit just under the skin at her fingertips.",
+    "posture_movement": "Stands with weight evenly distributed, ready to move in any direction. Moves with the economical grace of long practice—no wasted motion, but warm and unhurried. Her hands are constantly active: stirring, tasting, gesturing while speaking. She leans forward when listening to someone, making them feel heard. Her bearing is confident without arrogance.",
+    "clothing_style": "Tier 4 working-class, practical and layered. Typically wears a heavy canvas apron (usually cream or rust-colored, stained with turmeric and broth splatters) over a long-sleeved linen shirt (dark colors—indigo, charcoal, deep red) that protects her from splashes. Over this, a quilted vest in mixed fabrics, often with a worn wool coat draped over the stall frame. Her feet are in heavy slip-on work boots (well-maintained, re-soled multiple times). She wears a loose waxed-cloth headwrap in rotating patterns and colors, always functional, sometimes decorated with small metal charms or tokens hung from it. No jewelry except a thin brass ring on her left ring finger—simple, worn smooth."
+  },
+  "image_prompt": "A 58-year-old East African-Spanish woman with deep brown weathered skin and silver-streaked coiled hair wrapped in a waxed cloth, standing at a ferrogate food stall at dawn in a gritty cyberpunk market. Her hands show turmeric stains and faint amber bioluminescence at her fingertips from heat-sensing implants. She wears a stained canvas apron over a dark linen shirt, quilted vest, and wool coat. Her face is mapped with laugh lines and steam-weathered from decades of work. Behind her, a converted maintenance cart draped in mismatched fabric with small data-tokens hanging like charms. Warm steam rising from large metal pots. Geartown industrial backdrop, pre-dawn blue-grey light mixed with amber stall glow. Her expression is warm, attentive, confident. Photorealistic, detailed hands, lived-in textures, intimate market-stall realism --ar 2:3 --v 6"
 }

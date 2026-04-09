@@ -62,7 +62,7 @@
   "story_hooks": [
     "Someone is impersonating Alper Lebedev-Tutu on jobs, and the impersonator is better at the work than the original",
     "Alper Lebedev-Tutu's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
-    "A crew member from Alper Lebedev-Tutu's past shows up in Meridian 88, carrying old grievances and new chrome"
+    "A crew member from Alper Lebedev-Tutu's past shows up in GLMZ, carrying old grievances and new chrome"
   ],
   "narrative_function": "Alper Lebedev-Tutu functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
   "augmentations": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release. Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
@@ -278,10 +278,32 @@
   ],
   "related_entities": [
     "Masquerade",
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "The Nearfield",
     "SynapTech ReadRoom Social Cue Enhancer"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Russian / Kenyan (Bantu)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and spare — the physiology of someone who optimized for speed and precision rather than strength. Muscle definition is visible but lean, almost ascetic. No excess.",
+    "hair_color": "Dark brown with premature silver threading through the sides",
+    "hair_style": "Pulled back in a tight, utilitarian knot or undercut fade depending on operational phase",
+    "hair_length": "Short to medium",
+    "eye_color": "Dark brown with slight amber ring — natural, not augmented",
+    "skin_tone": "Medium brown with olive undertones, characteristic of Russian-Kenyan heritage",
+    "complexion": "Sharp cheekbones, narrow jaw, angular face. Skin is clear but shows the wear of irregular sleep cycles — faint discoloration under the eyes. No facial hair.",
+    "distinguishing_marks": [
+      "Surgical scarring visible along both temples where the cyberears were installed — precise but deliberately unobscured, roughly 3cm each side",
+      "Jagged scar tissue along the right jawline from the adrenaline regulator bioware implant site, extending down toward the clavicle",
+      "Chemical burn marks on the inner left forearm — three pale, irregular patches from a lab accident or deliberate trial, each roughly the size of a coin",
+      "Fine needle-track scarring on the inside of both elbows, old and faded but still visible under close inspection"
+    ],
+    "visible_augmentations": "Chrome cyberears are fully visible — matte black with faint LED status indicators in the shell, no attempt at concealment. The adrenaline regulator shows as raised scar tissue and slight chrome plating visible at the jaw insertion point. Functional, not cosmetic.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Sits at angles that favor surveillance of exits. Eyes track sound sources constantly due to the directional mics. Hands are steady, almost unnaturally calm even when discussing lethal compounds. A baseline of contained intensity.",
+    "clothing_style": "Tier 4 functional aesthetic — matte black reinforced jacket with internal pockets for equipment, tactical pants with cargo reinforcement, non-descript dark boots with good traction. No logos, no branding, nothing that would catch in a struggle or be memorable to witnesses. Gloves are common. Wears a data-resistant bag across the chest. Everything is chosen for operational efficiency, not aesthetics. Nighttime-appropriate colors across the board."
+  },
+  "image_prompt": "Cyberpunk character portrait of a nonbinary, wiry 37-year-old with Russian-Kenyan heritage, dark brown skin with olive undertones, sharp angular features, dark hair pulled back tightly. Visible surgical scars along temples and jawline from chrome cyberear implants and bioware adrenaline regulator. Matte black cyberears with subtle LED indicators, faint chrome at jaw insertion point. Wearing matte black tactical jacket, cargo pants, gloves. Steady, controlled expression. Nocturnal intensity. Dark moody lighting, cool color temperature, neon-edge accents. Photorealistic, high detail on implant scarring. Professional headshot style but gritty cyberpunk aesthetic. Sharp focus. --ar 2:3 --v 6"
 }

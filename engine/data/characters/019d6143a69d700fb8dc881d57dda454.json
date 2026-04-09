@@ -28,7 +28,7 @@
       "That the things she cares about — art, music, underground culture — will be fully absorbed and monetized into meaninglessness"
     ],
     "core_desires": [
-      "To be part of something that actually changes how culture works in Meridian 88, not just profits from the cracks in it",
+      "To be part of something that actually changes how culture works in GLMZ, not just profits from the cracks in it",
       "To find the artists she loves and tell them their work matters"
     ],
     "coping_mechanisms": [
@@ -185,5 +185,26 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Kazakh / Ghanaian",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Lean and angular — small-framed with sharp shoulders and minimal body fat, built for moving quickly through crowded markets. Wiry muscle from hauling and arranging cart stock.",
+    "hair_color": "Natural deep brown with irregular bleached streaks from self-dyeing experiments",
+    "hair_style": "Worn in rotating hand-painted headwraps in neon colors — currently chartreuse with magenta geometric patterns",
+    "hair_length": "Medium (visible at nape when unwrapped)",
+    "eye_color": "Dark brown, naturally warm",
+    "skin_tone": "Deep warm brown with Ghanaian undertones — rich and even",
+    "complexion": "Sharp cheekbones, narrow jawline inherited from Kazakh father, full lips. Skin clear but showing slight marks from budget-tier gene clinic work. Distinctive asymmetrical bioluminescent freckles across cheeks and nose — slow-pulse geneware shifting gold to cool blue on ~40-minute cycle. The asymmetry is intentional and she considers it beautiful.",
+    "distinguishing_marks": [
+      "Bioluminescent freckle constellation across both cheeks and bridge of nose, asymmetrical by design, pulse-shifting gold to cool blue",
+      "Fine scar on left palm where subdermal chip reader was installed — barely visible but felt through skin",
+      "Small burn mark on right forearm from soldering cart wiring — shaped like a crescent"
+    ],
+    "visible_augmentations": "Bioluminescent freckles (geneware, pulsing). Barely-visible scar on left palm marks subdermal chip reader implant; faint silvery line visible in certain light when hand is opened. No external chrome or obvious mechanical augmentation.",
+    "posture_movement": "Moves with controlled chaos — quick, darting motions when animated, capable of stillness when focusing on a customer or counting stock. Gestures expressively when speaking (which is often). Stands with one hip cocked, rarely still. Eyes constantly scanning crowd for customers or suppliers.",
+    "clothing_style": "Deliberately clashing layers: day-glo printed synthetic fabrics (hot pink, electric yellow, lime green) layered over thermal underlayers in muted grays and blacks. Multiple overlapping vests and jackets with exaggerated pocket systems — utilitarian Tier 5 workwear heavily customized with patches, pins, and hand-stitched modifications. Worn cargo pants with chain wallet. Scuffed synthetic boots with magnetic soles for market cart work. Hand-painted headwrap rotating through neon colorways. Multiple rings on fingers (some homemade, some found). All clothing shows wear and personalization — nothing corporate, everything Burnished Market authentic."
+  },
+  "image_prompt": "Cyberpunk female vendor, 22 years old, small sharp-featured with deep warm brown skin, Kazakh-Ghanaian heritage mix, wearing neon chartreuse and magenta hand-painted headwrap, clashing day-glo synthetic layers in hot pink and electric yellow over gray thermals, multiple pockets and customized vest, worn cargo pants. Distinctive asymmetrical bioluminescent freckles across cheeks and nose glowing gold-to-blue shift, dark brown eyes animated mid-speech. Standing behind cluttered media vendor cart in The Burnished Market neon arcade setting, surrounded by data chips and bootleg content, Milwaukee underground market aesthetic, warm neon glow lighting her upturned face, chaotic energy, Tier 5 street vendor realness, sharp focus on freckles' glow, cinematic cyberpunk street culture --ar 2:3 --v 6"
 }

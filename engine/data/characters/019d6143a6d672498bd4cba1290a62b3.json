@@ -234,5 +234,25 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Italian",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry with defined forearms and shoulders from precise, repetitive work. No excess mass — everything functional. Moves with economical grace.",
+    "hair_color": "None — shaved",
+    "hair_style": "Freshly shaved scalp with geometric razor-work patterns along the sides and back, updated every third day. Clean lines, deliberate asymmetry.",
+    "hair_length": "Shaved",
+    "eye_color": "Deep brown with gold undertones",
+    "skin_tone": "Warm light brown with golden undertones across cheekbones and bridge of nose",
+    "complexion": "Clear and well-maintained. Scattered across cheeks and nose bridge are bioluminescent freckle implants that pulse faintly blue-white, particularly visible when she laughs or concentrates. Fine-featured face with high cheekbones, defined jawline. Nails lacquered matte black, kept short and precise.",
+    "distinguishing_marks": [
+      "Bioluminescent freckle underlay constellation across cheeks and nose bridge (blue-white, geneware, pulses with emotion)",
+      "Geometric razor-pattern scarification on shaved scalp sides (deliberate, maintained weekly)"
+    ],
+    "visible_augmentations": "Rust-red and white cat tail (feline geneware, approximately 60cm, expressive — swishes with concentration, lashes with irritation). Bioluminescent freckle underlays (blue-white, emotive). No functional augmentations visible.",
+    "posture_movement": "Alert, precise posture with minimal wasted motion. Stands with slight forward lean when working. Hands are constantly in subtle motion — fingers flex and curl habitually. Tail moves independently, reflecting emotional state more honestly than her expression. Walks with economic efficiency.",
+    "clothing_style": "Tier 3-4 working aesthetic. Black fitted utility pants with cargo pockets (keeps tools, supplies, cash). Dark fitted long-sleeve shirts or form-fitting black tees under a tailored charcoal vest with interior pockets. Worn leather apron during work shifts, well-maintained but deliberately scarred from years of use. No corporate logos. Minimalist jewelry — a simple silver ring on her right ring finger, small brass cuff on left wrist. Practicality over aesthetics, but everything chosen with intention."
+  },
+  "image_prompt": "Portrait of a 29-year-old woman with warm light brown skin, freshly shaved head with geometric razor patterns on the sides, and a constellation of bioluminescent blue-white freckles across her cheeks and nose that glow softly. Deep brown eyes with gold undertones. She has a rust-red and white feline tail with expressive movement. Her hands are long and precise with short matte-black lacquered nails. She wears a dark fitted utility aesthetic — black cargo pants, charcoal fitted vest, leather work apron. Minimalist jewelry. Cyberpunk barber, confident and focused, standing in a small immaculate market stall with black draping and professional lighting. Precise, compact build, wiry and graceful. Close-up and environmental hybrid framing. Warm ambient lighting mixing with the cool blue glow of her freckles. Street-level vendor aesthetic, professional but gritty. --ar 2:3 --v 6"
 }

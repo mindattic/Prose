@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "The Rookery — dense vertical housing, gang-controlled, near Western and Chicago Ave",
-  "description": "Fatoumata Ramos-Mensah is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 27, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a bounty hunter out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Fatoumata Ramos-Mensah is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 27, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a bounty hunter out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -274,7 +274,7 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "The Nearfield",
     "Slagworks Industrial",
@@ -282,5 +282,26 @@
     "Gravimetric Collapse Charge GCC-9",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Portuguese-Brazilian",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Athletic and lean with dense muscle — dancer's posture married to fighter's tension. Shoulders broad, hips narrow, no excess. Moves like someone who's spent years in close-quarters combat.",
+    "hair_color": "Natural black with metallic bronze highlights (micro-LED threading)",
+    "hair_style": "Pulled back in a tight, functional braid that exposes her neck and jawline",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Deep warm brown with undertones suggesting mixed West African and Lusophone heritage",
+    "complexion": "Sharp, angular facial structure — high cheekbones, defined jaw, narrow nose. Skin shows the wear of nocturnal living: faint fatigue lines under eyes, minimal scarring from old street fights. Grooming is functional rather than decorative.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple to cheekbone, approximately 8cm, barely visible but catches light",
+      "Burn scar on inner left wrist, 4cm diameter, from a failed incendiary round ricochet — pale and smooth",
+      "Faded tattoo on right shoulder blade: a compass rose in black ink, done by hand in the Narrows"
+    ],
+    "visible_augmentations": "Right forearm features a polished chrome smartgun link port — approximately 12cm of exposed metallic integration at the wrist, with faint neural interface scars radiating upward. The prosthetic is seamless with her skin but unmistakably non-organic. No visible evidence of the cranial bomb defuser, which sits subcutaneous behind her right ear.",
+    "posture_movement": "Stands with weight balanced on the balls of her feet — ready to move in any direction instantly. Moves through space economically, no wasted motion. Eyes constantly track exits and threats. At rest, her right hand unconsciously hovers near her forearm. When walking, there's a predatory fluidity — someone comfortable in confined spaces and tight corners.",
+    "clothing_style": "Tier 3-4 utilitarian. Black synthetic-leather jacket (water-resistant, scored with small cuts and scuffs), fitted enough to move but loose enough to conceal gear. Charcoal tactical pants with reinforced knees and thigh pockets holding small tools and ammunition. Combat boots, black, scuffed. Underneath: a grey undershirt with discreet ballistic weave. No jewelry except a cracked smart-watch on her left wrist (functional, not fashion). All clothing shows the patina of actual use."
+  },
+  "image_prompt": "Cyberpunk bounty hunter woman, West African and Portuguese-Brazilian heritage, athletic lean muscular build, sharp angular face with high cheekbones, dark brown eyes, deep warm brown skin, tight braided black hair with metallic bronze LED threading, wearing black synthetic leather jacket and tactical pants, polished chrome smartgun link visible on right forearm wrist, taut posture ready for movement, faded shoulder compass rose tattoo, faint temple scar, standing in neon-lit narrow Tier 3 vertical housing corridor at night, moody atmospheric lighting with purple and amber neon glow, sharp focus, cinematic, film noir cyberpunk aesthetic --ar 2:3 --v 6"
 }

@@ -281,5 +281,26 @@
     "Slagworks Industrial",
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Japanese / West African",
+    "height_cm": 158,
+    "weight_kg": 62,
+    "build": "Compact and densely muscled, low center of gravity — built for confined spaces and vertical movement. Shoulders broad relative to frame, legs thick with visible synthetic fiber bundling beneath skin.",
+    "hair_color": "Black with premature silver threading at temples",
+    "hair_style": "Pulled back tight, military-practical",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and unreadable",
+    "skin_tone": "Warm medium brown with subtle undertones from Japanese and West African heritage",
+    "complexion": "Weathered but not aged — scars on knuckles and forearms show use rather than decay. Minimal makeup. Jaw set in habitual neutrality. No soft edges.",
+    "distinguishing_marks": [
+      "Parallel burn scars on left ribs, faint but visible when unclothed — old thermal damage, Narrows incident",
+      "Three-stitch scar along right eyebrow, silvered from age",
+      "Webbed scarring across both hands between thumb and forefinger — climbing equipment friction over years"
+    ],
+    "visible_augmentations": "Chrome gecko-grip implants visible on fingertips and toe pads — metallic catch-light, articulated polymer casing. Slight chrome seam-work visible at ankle joints where synthetic leg fibers interface with biological tissue. Subcutaneous line visible along left forearm where maintenance port sits beneath skin.",
+    "posture_movement": "Economical and precise. Stands with weight distributed low. Moves without wasted motion — every step calibrated. Eyes track exits and high ground automatically. Hands rest open, fingers slightly curved as if ready to grip or climb. When still, she's genuinely still.",
+    "clothing_style": "Tier 3-4 practical: reinforced charcoal cargo pants with climbing loops, worn microflex jacket with reflective threading, soft-soled boots with aggressive treads. No logos or corp affiliation. Neutral colors. Everything fitted for movement. One worn leather carry pouch on hip. No jewelry. A smart-linked watch on left wrist — old model, functional, not flash."
+  },
+  "image_prompt": "A compact, muscular woman with Japanese-African heritage, age 37, black hair with silver threading pulled back tight, intense dark eyes. Standing in three-quarter view. Visible chrome gecko-grip implants on fingertips catching light, articulated metallic interface at ankle joints. Wearing reinforced charcoal cargo pants, worn microflex jacket, soft-soled climbing boots. Scarred knuckles, subtle burn marks on exposed ribs. Posture low and balanced, weight forward, hands relaxed but ready. Standing in half-burned urban district, concrete rubble and graffiti behind her, amber industrial lighting cutting through haze. Film noir + cyberpunk aesthetic, gritty realism, raw detail on augmentations, cool color grading with warm accent lights. --ar 2:3 --v 6"
 }

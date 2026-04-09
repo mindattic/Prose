@@ -106,5 +106,27 @@
     "The Shelf",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Polish / Māori",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Broad-shouldered and solid, carrying weight with authority rather than bulk. Muscular forearms suggest decades of hands-on work. Slight forward lean to posture from age, but not frail.",
+    "hair_color": "Steel gray with natural dark roots showing",
+    "hair_style": "Pulled back in a tight, no-nonsense braid; silver clasp at the base",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with subtle amber undertones",
+    "skin_tone": "Olive-bronze, weathered from sun exposure and age; faint tattoo moko patterns visible on her left temple and jawline",
+    "complexion": "Lined face with pronounced cheekbones and a strong jaw. Deep-set eyes. A thin scar runs from her left temple to her ear—old, pale, healed badly. Her hands are scarred and calloused, stained with old nicotine and permanent grease marks under the fingernails.",
+    "distinguishing_marks": [
+      "Pale scar from temple to ear on left side of face, approximately 8cm long",
+      "Māori ta moko pattern tattooed on left temple (genealogical markings in dark indigo)",
+      "Faded Polish-style cross tattoo on right inner forearm, circa 2170s design",
+      "Burn scar on the back of right hand (three-fingered grip pattern, likely industrial accident)"
+    ],
+    "visible_augmentations": "None visible. Her augmentations are subcutaneous: neural jack at the base of her skull (concealed by hair), subdermal wrist interface for direct network access, and encrypted comms relay behind her right ear.",
+    "posture_movement": "She moves with deliberate efficiency—no wasted motion. Her gaze is direct and assesses before she speaks. When sitting, she occupies space fully, elbows on the table. Her hands are always busy: shuffling papers, tapping comms, or unconsciously checking security feeds through her wrist interface.",
+    "clothing_style": "Tier 3-4 pragmatist. Dark gray or charcoal reinforced jacket (Khao-brand, durable synthleather with hidden pockets for data-slips and payment devices) worn over plain black crew-neck underlayer. Fitted tactical cargo pants in dark blue with reinforced knees. Worn leather work boots, resoled multiple times. A chunky stainless steel watch on her left wrist—old, pre-collapse model, still runs on mechanical gears. No corporate logos. No jewelry except the watch and a thin platinum band on her left ring finger (old, worn smooth)."
+  },
+  "image_prompt": "A 56-year-old Polish-Māori woman in a dimly lit underground data hub or back-alley workshop, gray braided hair pulled tight, weathered olive-bronze skin with visible scars on her face and hands, wearing a dark charcoal synthleather jacket over black crew-neck and tactical cargo pants, boots worn from years of street work. Direct, assessing gaze. Steel-gray atmosphere with cool neon blue and amber accent lighting. Cinematic cyberpunk, gritty realism, no gloss. Medium shot, shallow depth of field. Shot from slightly below eye level for authority. High contrast, film noir color grading --ar 2:3 --v 6"
 }

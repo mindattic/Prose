@@ -176,7 +176,7 @@
   "registered_firearms": [],
   "related_entities": [
     "Blackpipe Corridor",
-    "Meridian 88",
+    "GLMZ",
     "Grandmother",
     "The Shelf",
     "The Quiet Room",
@@ -187,5 +187,25 @@
     "Gold",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Croatian / Malian",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "build": "Whip-thin and wiry with minimal muscle mass; the frame of someone who subsists on noodles and nervous energy rather than deliberate fitness. All restless angles.",
+    "hair_color": "Color-shifting geneware cycling through amber and deep crimson",
+    "hair_style": "Medium length, deliberately tousled; styled to emphasize the color-shift subscription effect as a subtle flex",
+    "hair_length": "Medium",
+    "eye_color": "Patterned irises displaying fine hexagonal grid in pale gold (cosmetic augmentation, seasonal subscription)",
+    "skin_tone": "Warm dark brown complexion inherited from paternal Malian lineage",
+    "complexion": "Angular face with pronounced cheekbones and narrow jawline reflecting Croatian paternal structure. Chronically sleep-shifted — mild dark circles under eyes. Patchy facial hair growth that he maintains despite being aware of its patchiness; gives him a deliberately careless appearance that reads younger than his 22 years.",
+    "distinguishing_marks": [
+      "Faint scar tissue on the pad and first knuckle of his dominant right index finger from early geneware installation procedure for haptic enhancement",
+      "Minor chemical burn marks on his left forearm (two small pale spots) from an early counterfeiting run gone wrong with solvent exposure"
+    ],
+    "visible_augmentations": "Color-shifting hair is immediately apparent as subscription-tier geneware. Patterned iris grids are visible only in direct light or close conversation. Haptic enhancement in dominant hand is subcutaneous, invisible unless his palm is examined closely for the fine scar line along the metacarpal ridge.",
+    "posture_movement": "Perpetually in low-level motion — tapping fingers, shifting weight, scanning rooms with quick bird-like head turns. When seated at work, becomes hyperfocused and nearly motionless. When walking, moves with quick, economical steps. Nervous tics are self-aware and sometimes deliberately performed.",
+    "clothing_style": "Tier 4 utilitarian with deliberate thrift-store layering. Favors oversized hoodies and worn mesh tank tops that expose the arm scars. Black synthetic pants with multiple pockets and visible tool loops, most pockets actually empty. Worn Neo-Keds or unlaced boots. Occasionally wears a faded Tessera program hoodie as a deliberate reminder/irony piece. No corporate branding. Accessories are functional: phone tether, worn carabiner, sometimes a grease pencil tucked behind his ear."
+  },
+  "image_prompt": "Portrait of a 22-year-old Croatian-Malian male, whip-thin build, restless nervous energy, warm dark brown skin, angular cheekbones, patchy stubble. Medium-length hair with color-shifting geneware cycling amber to deep crimson. Eyes featuring pale gold hexagonal grid pattern (cosmetic augmentation). Sitting hunched at a workbench surrounded by high-precision counterfeiting equipment, dim overhead lighting casting sharp shadows. Wearing oversized hoodie and mesh tank top, faded Tessera scholarship hoodie visible, multiple pocket chains, worn Neo-Keds. Tapping fingers on desk surface. Background: cramped Tier 4 Blackpipe Corridor apartment-workshop, cluttered with printing equipment, holographic currency samples, design tablets. Cyberpunk aesthetic, gritty realism, moody blue-amber neon lighting, shallow depth of field. Hyperdetailed hands. Anxious, focused expression. --ar 2:3 --v 6"
 }

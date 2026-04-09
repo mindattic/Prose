@@ -7,7 +7,7 @@
     "Glass Block",
     "The Other Side"
   ],
-  "description": "The Mirror District is a single residential and commercial block in the Laceworks, bounded by Filament Street to the north, Loom Avenue to the south, Spindle Way to the east, and Bobbin Lane to the west. It is architecturally typical of the Laceworks — dense, vertical, interconnected by walkways and bridges, with the characteristic layered aesthetic of the district. It is functionally typical — residents, shops, a small clinic, a node of the district's fiber-optic mesh. It is anomalous in exactly one respect: the reflections in its windows do not always match reality.\n\nThe discrepancy is subtle and intermittent. Most of the time, the windows in the Mirror District reflect what windows reflect: the street, the sky, the person standing in front of them. But several times per day — documented an average of eleven times in a twenty-four-hour period by a research team from Meridian 88 Tech — a reflection deviates. The deviation is always the same type: the reflection of a person shows that person performing a different action than the one they are currently performing. You raise your right hand; your reflection raises its left. You stand still; your reflection turns away. You smile; your reflection does not.\n\nThe deviations are brief — typically lasting between two and eight seconds before the reflection resynchronizes with reality. They are visible to multiple observers simultaneously, ruling out individual hallucination. They are captured by cameras and BCI imaging, ruling out purely perceptual effects. The reflection genuinely shows something different from what is in front of the glass. The glass itself has been tested exhaustively: it is standard commercial window glass with no unusual optical properties. The reflections are wrong. The glass is normal. The physics community has requested that the Mirror District stop existing until they can explain it. The Mirror District has not complied.\n\nResidents of the block report varying levels of comfort with the phenomenon. Long-time residents barely notice it — they glance at a window, see their reflection doing something they aren't doing, and continue with their day. Newcomers find it profoundly disturbing. One resident, asked to describe what it felt like to see her reflection move independently, said: \"It's like finding out you have a twin you never knew about, and she's been living your life slightly differently this whole time, and she's right there in the glass, and she doesn't always agree with your choices.\"",
+  "description": "The Mirror District is a single residential and commercial block in the Laceworks, bounded by Filament Street to the north, Loom Avenue to the south, Spindle Way to the east, and Bobbin Lane to the west. It is architecturally typical of the Laceworks — dense, vertical, interconnected by walkways and bridges, with the characteristic layered aesthetic of the district. It is functionally typical — residents, shops, a small clinic, a node of the district's fiber-optic mesh. It is anomalous in exactly one respect: the reflections in its windows do not always match reality.\n\nThe discrepancy is subtle and intermittent. Most of the time, the windows in the Mirror District reflect what windows reflect: the street, the sky, the person standing in front of them. But several times per day — documented an average of eleven times in a twenty-four-hour period by a research team from GLMZ Tech — a reflection deviates. The deviation is always the same type: the reflection of a person shows that person performing a different action than the one they are currently performing. You raise your right hand; your reflection raises its left. You stand still; your reflection turns away. You smile; your reflection does not.\n\nThe deviations are brief — typically lasting between two and eight seconds before the reflection resynchronizes with reality. They are visible to multiple observers simultaneously, ruling out individual hallucination. They are captured by cameras and BCI imaging, ruling out purely perceptual effects. The reflection genuinely shows something different from what is in front of the glass. The glass itself has been tested exhaustively: it is standard commercial window glass with no unusual optical properties. The reflections are wrong. The glass is normal. The physics community has requested that the Mirror District stop existing until they can explain it. The Mirror District has not complied.\n\nResidents of the block report varying levels of comfort with the phenomenon. Long-time residents barely notice it — they glance at a window, see their reflection doing something they aren't doing, and continue with their day. Newcomers find it profoundly disturbing. One resident, asked to describe what it felt like to see her reflection move independently, said: \"It's like finding out you have a twin you never knew about, and she's been living your life slightly differently this whole time, and she's right there in the glass, and she doesn't always agree with your choices.\"",
   "atmosphere": {
     "sights": [
       "Your reflection doing something you are not doing — a small gesture, a turn of the head, an expression you did not make",
@@ -67,13 +67,21 @@
   },
   "frequented_by": [
     "Block residents — approximately 800 permanent",
-    "Researchers from Meridian 88 Technical University",
+    "Researchers from GLMZ Technical University",
     "Curiosity seekers and tourists",
     "Artists — the Mirror District has become an informal subject for painters and photographers exploring identity and reflection"
   ],
   "notable_locations": [
-    "The Long Window — a 20-meter storefront window on Filament Street that produces the most frequent deviations. Visitors line up to watch their reflections.",
-    "The residents' association office on Loom Avenue, which maintains a log of reported deviations dating back to 2194"
+    {
+      "name": "The Long Window",
+      "description": "a 20-meter storefront window on Filament Street that produces the most frequent deviations. Visitors line up to watch their reflections.",
+      "tags": []
+    },
+    {
+      "name": "The residents' association office on Loom Avenue, which maintains a log of reported deviations dating back to 2194",
+      "description": "",
+      "tags": []
+    }
   ],
   "coordinates": {
     "district": "Laceworks",

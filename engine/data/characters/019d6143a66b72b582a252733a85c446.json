@@ -61,7 +61,7 @@
     "Three infants born in HPAZ in the last six months have presented with an identical and unusual genetic expression pattern that Nneka's records indicate is new — not inherited, not a known geneware side effect. Someone or something is affecting the community's genetics at source. She needs someone to find out how.",
     "The second approach for Nneka's genetic registry wasn't refused — it was interrupted before she could respond, and she has since been unable to identify who sent the request. The registry is hidden, but the request means someone knows it exists. She is deciding whether to move it, destroy a portion of it, or find out who came looking."
   ],
-  "narrative_function": "Moral center and community elder; keeper of community history and genealogical knowledge — knows family lines, genetic inheritances, and old stories; quest giver for community health crises; someone who has watched Meridian 88 change for forty years and has opinions; her network connects to almost every part of the Tier 1-2 medical landscape",
+  "narrative_function": "Moral center and community elder; keeper of community history and genealogical knowledge — knows family lines, genetic inheritances, and old stories; quest giver for community health crises; someone who has watched GLMZ change for forty years and has opinions; her network connects to almost every part of the Tier 1-2 medical landscape",
   "augmentations": "Geneware micro-precision enhancement in hand tendons (decades old, first-generation, slightly unpredictable in cold weather); aged neural interface for genetic data access (she refuses to upgrade it on principle)",
   "daily_life": "Nneka's day is not scheduled — it is responded to. She sees prenatal consultations in the mornings when no births are imminent, conducts gene therapy assessments in the afternoons, and is on call for deliveries at all hours. She cooks for whoever is at the collective's space that evening. She sleeps when she can.",
   "affiliation": "Highland Park Autonomous Zone Community Health Collective; West African Diaspora Medical Cooperative (credentialed); informally networked with street docs across the Tier 1-2 medical underground",
@@ -184,5 +184,26 @@
     "Kang-Petrov Arms KPA-15 'Diaspora'",
     "The Pure Hand"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Scandinavian / South Asian (derived from Srivastava-Amundsen hyphenation)",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Solidly heavy, wide-shouldered, with the centered gravity of someone who has spent four decades on her feet delivering babies. Her body reads as capable rather than soft — muscle under the weight, particularly in her forearms and core.",
+    "hair_color": "Pure white",
+    "hair_style": "Elaborate braided architecture with multiple thick plaits interwoven with glass beads and copper wire accents; redone every two weeks by her granddaughter",
+    "hair_length": "Long (mid-back length)",
+    "eye_color": "Deep brown with faint amber undertones",
+    "skin_tone": "Deep black with warm undertones; rich and dark as aged mahogany",
+    "complexion": "Heavily lined face — deep creases around the eyes, pronounced nasolabial folds, forehead lines that map decades of concentration and worry. Skin is textured but clear, with the particular patina of someone who has never hidden behind cosmetic smoothing. Small scar on her left cheekbone (instrument slip, 1987, she will tell you the story). She keeps her eyebrows natural, iron-gray.",
+    "distinguishing_marks": [
+      "Linear scar on left cheekbone, approximately 2cm, slightly paler than surrounding skin",
+      "Burn scars on the back of both hands (thermal injury from a generator malfunction in the early 2200s), visible as irregular white webbing across the knuckles",
+      "Faded tattoo on her right inner forearm: a symbol resembling a spiral and a vertical line (West African Diaspora Medical Cooperative insignia, applied in her forties)"
+    ],
+    "visible_augmentations": "Her hands bear the visible micro-scarring characteristic of first-generation geneware augmentation — faint white lines along the tendons of her fingers and palms, more pronounced on cold days. The neural interface at her right temple is visible: a worn titanium port approximately 1cm across, surrounded by slightly discolored skin, with a hinged protective cap made of scuffed copper. She never hides it.",
+    "posture_movement": "She moves with unhurried deliberation — no wasted motion, but no rush either. She stands with her weight distributed evenly, feet slightly apart, knees never fully locked. When she concentrates (examining a patient, accessing data through her neural interface), her head tilts slightly forward and her shoulders round. She has a way of filling the space she occupies without dominating it; people unconsciously orient themselves toward her.",
+    "clothing_style": "Tier 3-4 working professional with distinctly community-rooted personal style. She favors loose, layered clothing in deep jewel tones (indigo, forest green, deep plum) — linen and cotton blends that move easily and breathe well, essential for a midwife who may need to move quickly. Over this, she typically wears a heavy canvas work coat (faded dark blue, pockets stuffed with supplies: scissors, thread, small bottles of herbal tinctures, a battered physical notebook). She wears practical boots (leather, well-maintained, resoled multiple times) and keeps her hair wrapped or braided in a way that signals both cultural continuity and practical hygiene. She smells permanently of dried herbs — mugwort, frankincense, dried mint — that she burns as offerings in her two E.L.F.s (First Breath and the Cord). No jewelry except a worn silver band on her right ring finger (memorial to someone, she doesn't discuss it)."
+  },
+  "image_prompt": "A 63-year-old West African-Scandinavian woman, deep rich black skin with warm undertones, standing in three-quarter profile in a dimly lit clinical space. Her pure white hair is arranged in elaborate braids studded with glass beads and copper wire, falling mid-back. Her face is deeply lined with character and experience—high cheekbones, deep-set brown eyes with amber warmth, natural iron-gray eyebrows. She wears a faded indigo canvas work coat over layered linen clothing in jewel tones, well-worn leather boots. Her hands are large and capable, bearing visible white scar webbing on the knuckles and micro-precision geneware scarring along the tendons. At her right temple, a worn titanium neural interface port with a scuffed copper protective cap. The setting is a modest community health space with soft amber lighting from low-tech fixtures, dried herbs hanging in bundles, subtle herbal smoke in the air. Her posture is grounded and centered, radiating quiet authority and worn compassion. The mood is intimate, lived-in, professional but deeply human. Midjourney cyberpunk medical realism, shallow depth of field, warm practical lighting, documentary photography style --ar 2:3 --v 6"
 }

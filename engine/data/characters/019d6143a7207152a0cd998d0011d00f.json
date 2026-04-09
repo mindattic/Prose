@@ -172,5 +172,26 @@
     "The Pale Mile",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Chilean",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, with lean musculature from precise, controlled hand work. Shoulders slightly rounded from hours hunched over clients. Core strength evident but understated.",
+    "hair_color": "Natural black with subtle warm undertones",
+    "hair_style": "Twisted locs pinned up in a loose, intentional configuration; vials of bioluminescent dye woven throughout, creating a moving crown of soft color",
+    "hair_length": "Medium (shoulder-length when unbound)",
+    "eye_color": "Augmented patterned irises that cycle amber-to-violet; sclera remain natural dark brown",
+    "skin_tone": "Deep warm brown, with undertones suggesting Bantu and Mapuche ancestry",
+    "complexion": "Smooth, well-maintained skin with deliberate artistic intent; faded ghost-traces of bioluminescent pigment in delicate floral fractals along collarbones and dorsal hand surfaces — intentional semi-permanent markers of past commissions and personal spiritual work. Minimal scarring. Hands show calluses from precise brush and applicator work but are otherwise unmarked.",
+    "distinguishing_marks": [
+      "Faded bioluminescent fractals in pale violet-green across collarbones in interconnected floral pattern",
+      "Similar faded fractals across the backs of both hands, following vein pathways",
+      "Small, precise tattoo on inner left wrist: a stylized UV wavelength symbol in silver ink"
+    ],
+    "visible_augmentations": "Patterned cycling irises that slowly shift color in response to mood and ambient light (amber when focused, violet when introspective or emotionally engaged). Subdermal pigment reservoirs visible as faint iridescent lines running along inner forearms beneath the skin, most visible under direct light. Fingertips occasionally show residual bioluminescent bloom when recently loaded with custom pigment.",
+    "posture_movement": "Economical and deliberate; moves with a meditative slowness that suggests deep focus. Hands are expressive but controlled — she gestures while speaking but rarely wastes motion. Stands with weight slightly forward, ready to engage. Eye contact is steady and unflinching but warm. When painting, enters a state of near-trance concentration.",
+    "clothing_style": "Tier 3-4 working artist; favors loose, paint-stained linen and organic cotton in muted earth tones (charcoal, rust, deep indigo). Often wears a custom sleeveless apron in treated canvas with interior pockets for pigment vials. Prefers bare feet or minimal grounding footwear (soft leather flats) to maintain skin contact with studio floors. Jewelry minimal — thin copper wire rings on most fingers, a worn beaded bracelet in amber and silver on left wrist. No corporate branding visible. Fabrics always allow full arm and shoulder mobility."
+  },
+  "image_prompt": "Cyberpunk portrait of Yalda Mensah-Catrileo, a 34-year-old West African-Chilean bioluminescent body painter, compact wiry build, deep warm brown skin with faded violet-green luminescent fractals across collarbones and back of hands in delicate floral patterns, natural black twisted locs pinned up with glass vials of glowing custom pigment, augmented patterned irises that cycle from amber to violet, soft sclera dark brown, minimal jewelry in copper and amber, sleeveless paint-stained apron in treated canvas, standing in her Hamtramck studio above the Opalescent Bathhouse, surrounded by vials of bioluminescent pigments and UV lamps casting soft violet ambient light, focused meditative expression, hands shown with faint iridescent subdermal pigment reservoirs visible beneath skin, spiritual devotion evident in her stillness, Pale Witness energy emanating from background UV equipment, low drone music implied in the mood, hyper-detailed skin texture, cyberpunk realism with biopunk undertones, intimate studio lighting mixing cool violet and warm amber, no corporate aesthetic, deep artistic intensity, photography style, volumetric light through pigment particles in air --ar 2:3 --v 6"
 }

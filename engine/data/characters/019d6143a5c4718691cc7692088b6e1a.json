@@ -188,5 +188,26 @@
     "Gold",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Portuguese-Brazilian",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and solid, carrying weight with the grounded stability of someone who has spent decades on their feet. Muscular forearms and shoulders from repetitive lifting and wringing; slight softness at the midsection that speaks to comfort with her own body.",
+    "hair_color": "Black with natural silver streaking, approximately 40% grey",
+    "hair_style": "Elaborate Ghanaian-style wraps (adire cloth and hand-sewn fabric scraps) changed three to four times weekly; intricate patterns and color combinations reflect both tradition and resourcefulness",
+    "hair_length": "Worn wrapped; natural hair length underneath estimated medium to long",
+    "eye_color": "Warm amber with natural golden flecks",
+    "skin_tone": "Deep umber with undertones of warmth; sun-exposed areas slightly darker from years of standing near laundromat windows",
+    "complexion": "Face lined with expression—smile lines around eyes and mouth are prominent; skin is clear but weathered from humidity exposure; features are broad and dignified; no makeup worn",
+    "distinguishing_marks": [
+      "Chronic redness and slight swelling across both hands and forearms from 23 years of hot water and industrial detergent exposure",
+      "Small calluses on fingers and palms from repetitive wringing and folding",
+      "A faint burn scar on the inside of her left wrist (approximately 3cm, pale) from an incident twenty years prior with a steam press—she refers to it only as 'a lesson in attention'"
+    ],
+    "visible_augmentations": "None visible. Refuses all cosmetic and functional mods on principle. Her hands show only the natural consequences of her labor.",
+    "posture_movement": "Moves with unhurried authority and practiced grace. Stands with weight evenly distributed, shoulders back but not rigid. Movements economical and purposeful—every gesture serves a function. When folding or working, she enters a near-meditative state. When at rest, she often stands with one hand resting on the counter or against her hip. She makes direct eye contact and holds it without challenge. Her pace is steady; she does not rush.",
+    "clothing_style": "Simple, practical, and worn with intention. Typically: a cotton print dress or modest wrap-skirt (often in vibrant Ghanaian-inspired colors or traditional patterns) paired with a linen apron (usually indigo or earth-toned, stained with bleach marks and soap residue from years of use). A light cardigan or shawl draped over her shoulders in cooler months. Comfortable flat shoes or traditional sandals—never heels. A simple beaded bracelet or two on her wrists, often gifts from customers or family. No jewelry beyond these; no corporate logo wear. Her clothing is Tier 4 practical—not fashionable, but clean, mended with visible stitching, and clearly cared for. The overall impression is of someone who dresses for function and modest dignity, not display."
+  },
+  "image_prompt": "A 58-year-old West African woman with deep umber skin and warm amber eyes with gold flecks, standing in a humid laundromat lit by overhead fluorescent strips. She wears an indigo apron over a vibrant Ghanaian-print wrap-dress and a light linen cardigan. Her silver-streaked black hair is wrapped in an elaborate adire cloth with sewn fabric scraps in warm earth tones. Her broad shoulders and weathered hands show decades of labor; her posture is grounded and authoritative. The warm laundromat fluorescence catches the gold in her eyes. Behind her, industrial washers and dryers line the walls; small phosphorescent soap offerings and fabric tokens hang near the machines. Her expression is calm, dignified, and radiates quiet wisdom. Soft warm lighting, photorealistic, compassionate portraiture style, Hamtramck neighborhood character study, intimate and dignified --ar 2:3 --v 6"
 }

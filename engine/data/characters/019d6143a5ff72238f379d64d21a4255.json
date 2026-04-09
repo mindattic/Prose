@@ -235,5 +235,25 @@
     "Nesting Doll",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Igbo (West African) / Polish / Malagasy",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, with long limbs and minimal body fat—the build of someone who moves through space precisely rather than powerfully. Shoulders narrow, hips defined, chest flat. Moves with economical efficiency.",
+    "hair_color": "Black base with frequency-reactive pigment bands in shifting purples, teals, and magentas—reactive to ambient sound frequencies",
+    "hair_style": "Structured vertical ridge down the center of the scalp, shaved close at the temples exposing pale skin",
+    "hair_length": "Short (ridge approximately 8cm tall when standing)",
+    "eye_color": "Dark brown iris with distinctive bright yellow ring around the pupil (deliberate geneware modification)",
+    "skin_tone": "Deep warm brown with subtle warm undertones from Malagasy heritage that shift perceptibly under different lighting conditions",
+    "complexion": "Angular jaw, widely-spaced eyes giving an unusual, deliberately difficult-to-categorize facial structure. Minimal facial hair. Skin clear, well-maintained but without cosmetic attention—focused grooming. Expression typically neutral or slightly distant, eyes often unfocused as if processing invisible information.",
+    "distinguishing_marks": [
+      "Hairline tattoo along both ears in fine geometric patterns resembling frequency waveforms, visible because of close temple shaving",
+      "Faint scar tissue ridge along the right collarbone from cochlear implant installation, approximately 4cm long"
+    ],
+    "visible_augmentations": "Yellow-ring iris modification immediately visible. Cochlear enhancement implant ports visible behind both ears (small matte black ports with geometric detailing). Frequency-reactive hair pigment system obvious and dynamic. Subdermal haptic feedback array not visually apparent but produces subtle surface texture variation across the upper back and shoulders when wearing sleeveless or backless clothing.",
+    "posture_movement": "Moves with deliberate, economical precision. Head frequently tilted at slight angle as if listening to distant sound. Eyes unfocused or gazing past immediate surroundings. Rarely makes unnecessary gestures. When standing still, weight balanced evenly. When walking, movement is fluid but purposeful, not casual. Minimal fidgeting. Gives impression of someone internally focused, processing invisible data.",
+    "clothing_style": "Tier 2 working-artist aesthetic with deliberate sonic/technical elements. Favors sleeveless or mesh-back garments to display haptic feedback array and allow skin contact with air for acoustic sensitivity. Primary colors: blacks, deep greys, occasionally matte metallics. Clothing is well-maintained but not luxurious—functional, modular pieces from mid-range corpo brands. Often wears a custom rig vest with integrated haptic feedback visualization (LEDs that mirror the subdermal array's activation patterns). Minimalist jewelry: small geometric earrings or ear cuffs that complement the hairline tattoos. Footwear is practical—modified boots with enhanced grip for standing long hours at equipment."
+  },
+  "image_prompt": "Cyberpunk portrait of a lean, angular nonbinary person with deep warm brown skin and distinctive yellow-ringed dark eyes, shaved temples and a sculpted vertical black hair ridge dyed in frequency-reactive purples and teals. Head tilted slightly as if listening, expression distant and focused inward. Visible cochlear implant ports behind ears with geometric detailing. Wearing a sleeveless mesh-back technical rig vest displaying subdermal haptic feedback patterns, minimal geometric jewelry. Hairline tattoos resembling waveforms visible along temples. Studio lighting with accent colors in cyan and magenta reflecting off implant hardware. Atmospheric depth of field, cinematic cyberpunk aesthetic, anatomically precise, moody and introspective mood. --ar 2:3 --v 6"
 }

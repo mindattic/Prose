@@ -219,5 +219,26 @@
     "Crucible HS-2 'Hearth'",
     "Chicago"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Irish / Central Asian (Kazakh) — warm brown skin tone suggesting mixed ancestral lineage, likely with West African or South Asian heritage also present",
+    "height_cm": 157,
+    "weight_kg": 72,
+    "build": "Round and compact, solid through the torso and hips, soft musculature that speaks to decades of physical labor rather than athletics — the build of someone who moves with purpose and carries weight without strain",
+    "hair_color": "White",
+    "hair_style": "Cropped close on sides with length maintained on top, deliberate asymmetry; small braid at left temple studded with a data-bead",
+    "hair_length": "Short on sides, Medium on crown",
+    "eye_color": "Deep brown, warm and direct",
+    "skin_tone": "Warm medium brown — the color of strong brewed tea, sun-weathered and rich",
+    "complexion": "Face deeply lined around the eyes and mouth, creases that map decades of expressions and witness; skin is clear and cared-for despite age, with the worn radiance of someone who moves through the world without vanity",
+    "distinguishing_marks": [
+      "Fine crow's feet radiating from outer corners of both eyes, etched deep from squinting during births and attentive listening",
+      "Smile lines from outer corners of mouth curving downward, worn smooth from repeated expressions",
+      "Faint surgical scar on right inner wrist, approximately 3cm, thin and old — from some past intervention, nature unclear"
+    ],
+    "visible_augmentations": "Cosmetic cat ears (geneware, black-tipped, soft cartilage structure, well-integrated into scalp and musculature) mounted at the crown, positioned to swivel expressively; ears twitch and rotate independently of conscious control, betraying emotional state before facial expressions register",
+    "posture_movement": "Sits with grounded stillness, spine straight but not rigid, shoulders slightly forward in an attitude of readiness and listening; moves economically, each gesture purposeful and calibrated; walks with a slight forward tilt as though perpetually leaning into the next moment; hands are frequently open and relaxed at her sides or folded loosely in her lap; enters rooms quietly and seems to make spaces smaller and safer simultaneously",
+    "clothing_style": "Tier 3-4 practical and worn — layered linen and organic cotton in earth tones (cream, rust, soft grey); long cardigan or half-buttoned overshirt worn over simple fitted clothing; loose trousers or a long skirt in natural fibers; soft-soled shoes worn thin at the heels; jewelry minimal and functional — a thin silver bracelet on left wrist, possibly a medical or community identifier; overall appearance is deliberate anti-fashionable, clothes chosen for durability and comfort rather than status, but worn with the quiet confidence of someone past caring about judgment"
+  },
+  "image_prompt": "Portrait of a 58-year-old woman with warm brown skin, close-cropped white hair with a braid at the temple studded with a data-bead, deeply lined face mapping decades of witness and presence, expressive black-tipped cat ears (geneware) swiveling atop her head. She is short and round with solid build, sitting with grounded stillness, hands open and relaxed. Wearing layered linen in earth tones — cream and rust — over natural fiber clothing, soft-soled shoes worn at the heels. Cyberpunk 2226 aesthetic, Highland Park autonomous zone, intimate birthing center environment with warm LED ambient lighting, soft shadows across her face, mood of quiet authority and radical compassion, documentary photography style, bokeh background of midwifery tools and worn medical texts, warm color grade, --ar 2:3 --v 6"
 }

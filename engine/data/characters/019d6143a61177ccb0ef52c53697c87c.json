@@ -156,7 +156,7 @@
     },
     "strengths": [
       "ability to remain calm under fire",
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "mechanical aptitude — can repair or modify almost anything"
     ],
     "weaknesses": [
@@ -286,5 +286,27 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Fulani/Mandinka) / Scandinavian (Danish)",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Stocky and densely muscled — broad shoulders, thick forearms, compact center of gravity. Built for leverage and power absorption rather than speed. Functional musculature, no wasted frame.",
+    "hair_color": "Dark brown with subtle auburn undertones",
+    "hair_style": "Tight braids pulled back into a practical crown braid, secured with matte black fasteners",
+    "hair_length": "Medium (shoulder-length when unbraided)",
+    "eye_color": "Dark brown — unaugmented but with faint scarring at the inner corners suggesting past orbital trauma",
+    "skin_tone": "Warm medium-brown complexion with golden undertones — sun-damaged from outdoor work and industrial exposure",
+    "complexion": "Strong, angular jaw; wide cheekbones; a scar bisects her left eyebrow horizontally. Her expression defaults to neutral, professionally unremarkable. Calloused knuckles, cracked palms from pre-augmentation labor.",
+    "distinguishing_marks": [
+      "Horizontal scar across left eyebrow, 3cm long, pale and old",
+      "Burn scar on inside of right wrist (chemical splash, faded to white), 4cm diameter",
+      "Tattoo on left forearm: three stacked circles (Borg family sigil) in black ink, simple and geometric",
+      "Hairline fracture scar along right temple, barely visible unless light hits it at an angle"
+    ],
+    "visible_augmentations": "Chrome reflex wiring visible at wrists and neck — bright silver conduits threading under dark skin, subdermally routed but intentionally left exposed. Hydraulic joint housings visible at elbows (gunmetal finish) and knees (covered but bulging slightly under fitted clothing). No attempt at concealment — the chrome is part of her working appearance.",
+    "posture_movement": "Economical, controlled, always balanced. She stands with weight centered, ready to shift instantly. Walks with precision, each step deliberate. When relaxed (rare), slight forward lean. In negotiation or threat, she goes perfectly still — predatory stillness, not nervous tension.",
+    "clothing_style": "Tier 4 utilitarian. Reinforced cargo pants (synthetic weave, dark grey, multiple zippered pockets), fitted black long-sleeve shirt (thermal-resistant material, loose enough to hide gear), steel-toed boots (practical, not fashionable). Over it: a worn synthetic leather jacket (charcoal, no logos, deliberately unmarked) with internal holsters. Minimal jewelry — matte black watch (military-grade chronometer, visible wear). No corporate branding, no gang colors. Everything functional, everything durable, nothing that draws unnecessary attention when she's off the clock."
+  },
+  "image_prompt": "Portrait of a 37-year-old West African-Scandinavian woman with dark braided hair pulled back, warm medium-brown skin, strong angular features, scar bisecting left eyebrow. Visible silver chrome reflex wiring threading under skin at wrists and neck. Gunmetal hydraulic joint housings at elbows. Wearing dark fitted tactical gear — black long-sleeve shirt, grey reinforced cargo pants, worn charcoal synthetic leather jacket. Standing with perfect posture, balanced stance, predatory stillness. Cyberpunk aesthetic, gritty and functional, no glamour. Industrial warehouse lighting, harsh shadows, cool color grading. Photorealistic, sharp focus on face and visible augmentations, shallow depth of field. --ar 2:3 --v 6"
 }

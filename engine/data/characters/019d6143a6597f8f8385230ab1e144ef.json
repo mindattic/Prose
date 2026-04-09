@@ -219,5 +219,26 @@
     "ARCHIVE",
     "IRONLIMB Spectre SV-4 Stealth Arm"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Hungarian/Russian)",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Tall and angular, with the lean musculature of someone who has learned to move efficiently through decades. Shoulders slightly rounded from hours bent over data terminals. Wrists thin but strong.",
+    "hair_color": "Dark brown with pronounced silver-grey streaking throughout",
+    "hair_style": "Elaborate upswept arrangement, meticulously maintained, pinned with small chrome clips that catch light. Refreshed every three days without exception.",
+    "hair_length": "Medium-long (shoulder-length when down, pinned up to crown height)",
+    "eye_color": "Dark brown, unaugmented, sharp and focused",
+    "skin_tone": "Deep brown with warm undertones, unmodified",
+    "complexion": "Lined face that reads as lived-in rather than aged — fine wrinkles at eyes and corners of mouth, deep creases bracketing jaw. Impeccable grooming. No cosmetic smoothing or dermal work. The set of her jaw suggests someone accustomed to listening more than speaking.",
+    "distinguishing_marks": [
+      "Fine network of laugh lines radiating from the outer corners of both eyes",
+      "Deep nasolabial folds that deepen when she smiles",
+      "Small, nearly invisible scar on the left temple, approximately 2cm, pale against her skin tone — origin unknown, predates her blackmail work"
+    ],
+    "visible_augmentations": "Thin hearing-enhancement strip behind the left ear, brushed steel-grey, approximately 3cm long and 0.5cm wide. To casual observation it appears to be a standard commercial audio prosthetic. The custom directional audio recorder and haptic palm contact-skin are invisible to external observation.",
+    "posture_movement": "Sits with perfect stillness — a listener's posture, centered and patient. Moves deliberately, economically. Her head tilts slightly toward speakers as if drawing in their words. Hands rest openly on the table or in her lap; the handshake grip is warm and lingering, a deliberate gesture that conveys attention. Eyes rarely break contact during conversation.",
+    "clothing_style": "Tier 3-4 professional: well-maintained but not ostentatious. Favors structured blazers over simple long-sleeved shirts in muted tones (charcoal, deep blue, burgundy). Trousers tailored and creased. Wears a single piece of jewelry — a silver-and-onyx ring on her right middle finger, old enough to have tarnish in the crevices. No visible logos or corporate branding. Shoes are practical and quiet-soled. The overall effect is of someone who has learned that invisibility is power."
+  },
+  "image_prompt": "A tall, angular Black woman in her early 50s with deep brown skin, grey-streaked hair pinned in an elaborate upswept style, sitting at a dimly lit bar table. Dark brown, unaugmented eyes with pronounced laugh lines at the corners, sharp and attentive. Thin hearing-enhancement strip visible behind left ear, brushed steel-grey. Wearing a charcoal structured blazer over a dark blue long-sleeved shirt, tailored trousers. Single silver-and-onyx ring on right hand. Posture is perfectly still and centered, leaning slightly forward in active listening. Hands rest openly on the table. Expression is focused, patient, non-threatening — someone's formidable aunt. Dimly lit bar interior in background, moody amber and blue lighting. Cyberpunk aesthetic but grounded and human-scaled, no chrome excess. Film noir meets near-future. --ar 2:3 --v 6"
 }

@@ -218,5 +218,26 @@
     "Handed",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Central African / Balkan (Congolese-Bantu / Serbian-Croatian)",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Broad-shouldered and thickening through the torso — the muscular frame of a younger man softened by age and desk time, but still dense and substantial. His center of gravity remains low and functional.",
+    "hair_color": "Steel grey with dark brown undertones at the roots",
+    "hair_style": "Clipped close on the sides, longer on top but receding slightly at the temples",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep brown with warm undertones, weathered and uneven from decades of outdoor deployment",
+    "complexion": "Broad, flat nose set slightly off-center from two previous breaks. Heavy brow ridge. Deep nasolabial lines. Sparse grey stubble on the jaw most mornings — he shaves every other day now. Skin has the dull, leathered quality of someone who spent three decades under GLMZ industrial lighting and open-air riot protocols.",
+    "distinguishing_marks": [
+      "Knuckle scarring across both hands — white, healed marks from impact injuries, left hand more heavily scarred than right",
+      "Linear scar tissue along the left knee, visible during uniform changes — pale, approximately 8cm in length, site of skeletal reinforcement insertion",
+      "Bioluminescent geneware patches along both forearms in two parallel lines running from wrist to mid-forearm, faintly visible green with slow pulse rhythm, most noticeable in dim lighting or during evening briefings"
+    ],
+    "visible_augmentations": "Bioluminescent forearm patches (civilian-grade, faint green, slow pulse). The subdermal armor mesh is not visible under standard Axiom security coveralls, but produces subtle tightness and asymmetrical movement in the torso during extreme flexion. Left knee has slightly limited lateral mobility from skeletal reinforcement — noticeable only to trained observers during tactical movement.",
+    "posture_movement": "Stands with weight balanced forward slightly, hands often at rest with fingers slightly curled — occupational muscle memory from riot-line positioning. Moves with deliberate economy, no wasted motion. Walks with a faint left-leg favor on days when the knee is stiff. Rarely makes sudden movements. His default expression is neutral-to-stern; smiling requires visible effort.",
+    "clothing_style": "Standard Axiom Security Division suppression specialist uniform when on-shift: grey-black modular body armor with Axiom division patch on chest, load-bearing harness, tactical trousers with reinforced knees, steel-toed boots. Off-shift: plain grey or charcoal sweats, unmarked t-shirts, worn leather jacket from a previous decade. Minimal personal accessories — a single worn wedding ring, no visible jewelry. Everything utilitarian. Tier 3-4 corporate security aesthetic, practical and worn in."
+  },
+  "image_prompt": "A 52-year-old man of mixed Central African and Balkan heritage, broad-shouldered and thickening through the middle, standing in a riot suppression uniform. Deep brown skin, steel-grey short hair, heavy brow, flattened nose set slightly off-center. Both forearms marked with faint bioluminescent green patches that pulse slowly. Knuckle scars across both hands. Tired, weathered expression. Wearing grey-black modular body armor with Axiom Security Division insignia, tactical trousers, steel-toed boots. Standing in the dim industrial lighting of a corporate security barracks, late evening, with incense smoke curling in the background near an old E.L.F. terminal. Low-key mood lighting, cinematic, cyberpunk security contractor aesthetic, gritty and worn. 52-year-old Eulogio Mwamba-Cvetanović. --ar 2:3 --v 6"
 }

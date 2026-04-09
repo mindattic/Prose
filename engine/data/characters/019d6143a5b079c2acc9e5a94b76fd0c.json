@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Forensic Technician, Meridian 88 Metro Police",
+  "role": "Forensic Technician, GLMZ Metro Police",
   "age": 52,
   "status": "active",
   "location": "Fort Anchor, Forensic Sciences Unit, Level 7, near Western and Chicago Ave",
@@ -62,7 +62,7 @@
   "narrative_function": "Information source for forensic details, cause of death, trace evidence, chemical analysis. Can surface buried evidence or reinterpret old cases. An honest broker within the institution — his findings cannot easily be pressured, which makes him valuable and occasionally inconvenient to Metro Police command.",
   "augmentations": "Enhanced olfactory system — Helix Biosystems nasal augment, detects chemical compounds at parts-per-billion, installed 2183. Magnification frames (non-augmented, physical lenses — deliberately chosen over ocular implants). Mild subdermal temperature regulation implant, medical necessity.",
   "daily_life": "Arrives at Level 7 forensics lab at 0730, processes the overnight evidence queue, spends the bulk of each day at his workstation or in the cold room, and writes reports in a prose style that his supervisors consider unnecessarily literary. Brings his lunch every day in the same worn container. Leaves at 1700 exactly unless actively mid-analysis, in which case he stays until it's done.",
-  "affiliation": "Meridian 88 Metro Police, Forensic Sciences Unit",
+  "affiliation": "GLMZ Metro Police, Forensic Sciences Unit",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -259,5 +259,25 @@
     "Silver",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Southern European (Italian-Serbian)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Slight, almost willowy frame with the soft musculature of someone who spends twelve hours a day at a workstation. Shoulders rolled forward in a permanent stoop, as if his spine has learned to curl around microscopes and evidence bags.",
+    "hair_color": "Silver-white",
+    "hair_style": "Neat fade, precisely maintained",
+    "hair_length": "Short",
+    "eye_color": "Dark brown (natural)",
+    "skin_tone": "Warm medium brown with the faint pallor of someone who works under LED panels in a climate-controlled basement",
+    "complexion": "Fine lines around eyes and mouth from decades of concentration. Skin shows age honestly—no cosmetic mods. Faint nicotine staining on right index and middle fingers despite official non-smoking policy in the building (he uses a sublingual patch, but the habit ghost remains). Clean-shaven, scrupulously groomed.",
+    "distinguishing_marks": [
+      "Small scar along the bridge of his nose from a lab accident in 2194, barely visible but he knows it's there",
+      "Faint chemical burn marks on his right palm and wrist—pale discoloration in the pattern of a spill he encountered in 2187, never fully faded"
+    ],
+    "visible_augmentations": "Magnification frames with slightly yellowed acrylic lenses, the same model he's worn for years with visible wear at the hinges from repeated repairs. The frames sit on his face like an extension of his skull. Nasal augmentation is completely subcutaneous—no visible hardware, but occasionally he will pause mid-conversation and inhale deeply, his nostrils flaring fractionally as his enhanced olfactory array processes something others cannot perceive.",
+    "posture_movement": "Perpetually forward-curved, as if gravity pulls slightly harder on his attention than his spine. Moves with deliberate precision—no wasted motion, each step economical. His hands are steady and methodical. When examining something, he goes very still, becoming almost sculptural in his focus.",
+    "clothing_style": "Tier 3-4 working class, forensic lab standard. Charcoal gray synthetic lab coat over plain dark slacks, durable synthetic fibers designed for chemical resistance and easy decontamination. Black steel-toed boots, worn but meticulously maintained. A silver wedding band (worn continuously for 28 years) and a single narrow bracelet in brushed titanium—a gift from his daughter in 2210. No visible logos or corporate branding. Everything is functional, nothing is fashionable. His watch is a mechanical analog, because he does not trust digital displays to remain visible in case of an EMP event—a conviction he holds with the same irrational certainty as his stance on eye surgery."
+  },
+  "image_prompt": "Portrait of a 52-year-old West African-Italian-Serbian male forensic technician, slight wiry build, permanently stooped posture, silver-white hair in neat fade, dark brown eyes behind magnification frames with yellowed lenses. Warm medium brown skin with fine age lines, clean-shaven. Wearing charcoal gray lab coat over dark slacks, black steel-toed boots. In a basement forensic lab under cool LED panels, surrounded by evidence lockers and chemical analysis equipment. Soft clinical lighting casting subtle shadows on his face as he examines something with methodical focus. His expression carries 26 years of institutional invisibility and quiet expertise. Photorealistic, documentary style, --ar 2:3 --v 6"
 }

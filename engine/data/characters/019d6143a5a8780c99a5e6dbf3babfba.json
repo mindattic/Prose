@@ -29,7 +29,7 @@
       "Betrayal by someone they trust — the only currency that matters"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Control — over their body, their schedule, their future",
       "A crew worth trusting — people who stay when the shooting starts"
     ],
@@ -155,7 +155,7 @@
       "loyalty_break": 6
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "mechanical aptitude — can repair or modify almost anything",
       "natural leadership presence"
     ],
@@ -284,5 +284,27 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Stocky and solid, thick through the chest and shoulders with the compact density of someone who has spent decades maintaining functional strength rather than aesthetic muscle. Forearms are visibly corded, scarred from repeated augmentation work.",
+    "hair_color": "Dark brown, graying at temples",
+    "hair_style": "Cropped short, practical, no styling",
+    "hair_length": "Short",
+    "eye_color": "Pale gray, unremarkable — human baseline",
+    "skin_tone": "Light tan, weathered from years in Ashfield's polluted air and inconsistent shelter",
+    "complexion": "Hard-lined face, jaw angular and prominent, deep nasolabial folds. Skin texture rough, pockmarked around the temple and jawline where augmentation scarring pulls slightly at the surface. Five-o'clock shadow is his default state. Eyes sit deep-set, giving him a permanently tired appearance that suits his work.",
+    "distinguishing_marks": [
+      "Augmentation scarring in a horseshoe pattern around both temples, pale pink tissue against tan skin, from subdermal blade mount installation.",
+      "Jagged scar running from left jaw angle down toward the clavicle, approximately 8cm, old and white — pre-augmentation injury.",
+      "Heavy keloid scarring across both inner forearms where the weapon mounts were installed, visible when his sleeves are rolled.",
+      "Burn mark on right shoulder — crescent-shaped, roughly 5cm across, from industrial accident or weapons discharge, old enough to have faded to light brown."
+    ],
+    "visible_augmentations": "Right arm is full-replacement cybernetic from shoulder joint down — obvious chrome and polished steel, synthetic muscle layering visible at the elbow joint. The arm is noticeably stronger and more refined than organic tissue, with articulation that's too precise. Pop-out blade mounts are visible along both forearms as chrome-lined slots, sealed but obvious to anyone who knows what they're looking at. Subdermal scarring around temples indicates weapon mount installation beneath the skin.",
+    "posture_movement": "Stands with weight balanced forward on the balls of his feet, a runner's ready stance. Moves deliberately, economically — no wasted motion. His right arm compensates with slight mechanical hesitation on fast movements, but he's so practiced with it that the hesitation reads as control rather than disability. Hands rest in fists more often than open palms. His gaze is active, tracking, never settling — the paranoia is embedded in his body language.",
+    "clothing_style": "Tier 5 utilitarian — worn synthweave cargo pants with visible equipment loops, reinforced at stress points. Sleeveless or short-sleeved tops to keep the right arm visible and unobstructed, usually unmarked dark gray or black. Over this, a faded ballistic jacket with multiple pockets, patched at the elbows, missing the logo from its original brand. Steel-toed boots, scuffed, re-soled multiple times. No jewelry, no identifying markers beyond his augmentations. Clothing is functional and replaceable, not an investment. He dresses for work, not for appearance."
+  },
+  "image_prompt": "A stocky 40-year-old man with dark graying hair, pale gray eyes, and a hard-lined weathered face, standing in industrial cyberpunk setting. Right arm is full chrome cybernetic replacement, polished steel and synthetic muscle visible at elbow joint. Visible subdermal scarring around temples and jawline. Forearms show keloid scarring and chrome-lined blade mount slots. Wearing sleeveless dark tactical top, worn synthweave cargo pants, reinforced ballistic jacket with multiple patches, steel-toed boots. Standing in ready stance with weight forward, surrounded by scattered surveillance equipment and makeshift workshop in half-burned Ashfield residential building, harsh neon-blue and amber lighting filtering through broken windows, gritty industrial atmosphere, 35mm film noir cyberpunk aesthetic, dramatic side lighting emphasizing scar tissue and chrome, photorealistic, detailed texture work on augmentations --ar 2:3 --v 6"
 }

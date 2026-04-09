@@ -13,7 +13,7 @@
   "age": 17,
   "status": "active",
   "location": "Edgewater Prism, Palladian Foundation Secondary Institute, near Lincoln and Clark",
-  "description": "Adaora is seventeen and already exhausted with being called gifted. She has her Nigerian mother's face — broad and expressive and deep brown — and her Danish-Polish father's height, and she moves through the corridors of Palladian's scholarship wing like she is calculating the structural load of every floor she walks on. Her geneware is minimal and chosen with clear deliberate aesthetic logic: color-shifting irises that she's set to cycle through cool blues and greens on a slow daily rhythm, which she chose specifically because it gave her something visually interesting to do during lectures where the material moves too slowly.\n\nShe holds a full Palladian Foundation scholarship, which is rare and comes with teeth — quarterly review, mandatory participation in Palladian's youth development pipeline, and an unspoken assumption that she will join the Palladian corporate track upon graduation. She has not yet decided whether she wants this, which is itself unusual; most scholarship students at her level have been coached into certainty. She is brilliant at applied mathematics and systems modeling and is currently running unsanctioned predictive models of Meridian 88's district resource allocation, trying to prove something she suspects about how Tier 1 zones are being deliberately undernourished. She hasn't told anyone what she's found.",
+  "description": "Adaora is seventeen and already exhausted with being called gifted. She has her Nigerian mother's face — broad and expressive and deep brown — and her Danish-Polish father's height, and she moves through the corridors of Palladian's scholarship wing like she is calculating the structural load of every floor she walks on. Her geneware is minimal and chosen with clear deliberate aesthetic logic: color-shifting irises that she's set to cycle through cool blues and greens on a slow daily rhythm, which she chose specifically because it gave her something visually interesting to do during lectures where the material moves too slowly.\n\nShe holds a full Palladian Foundation scholarship, which is rare and comes with teeth — quarterly review, mandatory participation in Palladian's youth development pipeline, and an unspoken assumption that she will join the Palladian corporate track upon graduation. She has not yet decided whether she wants this, which is itself unusual; most scholarship students at her level have been coached into certainty. She is brilliant at applied mathematics and systems modeling and is currently running unsanctioned predictive models of GLMZ's district resource allocation, trying to prove something she suspects about how Tier 1 zones are being deliberately undernourished. She hasn't told anyone what she's found.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -217,7 +217,7 @@
   "related_entities": [
     "Blackpipe Corridor",
     "Edgewater Prism",
-    "Meridian 88",
+    "GLMZ",
     "FOUNDATION",
     "Palladian Construction",
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
@@ -226,5 +226,25 @@
     "Pellucid Systems",
     "Lazarus IDP-1 'Teeth'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Nigerian) / Scandinavian-Eastern European (Danish-Polish)",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Tall and lean with minimal excess mass; her frame reads as economical—posture that speaks to long hours seated at workstations, shoulders slightly rounded forward from habit. Swimmer's length without the bulk.",
+    "hair_color": "Natural dark brown, almost black",
+    "hair_style": "Worn in a loose, pragmatic braid down her back; a few strands always escaping. No visible styling effort—functional rather than aesthetic.",
+    "hair_length": "Long",
+    "eye_color": "Augmented color-shifting irises cycling cool blues to greens on a slow daily rhythm; unusual luminescence at certain angles suggesting subdermal LED integration",
+    "skin_tone": "Deep warm brown with undertones reflecting her Nigerian heritage; even complexion across face and body",
+    "complexion": "Clean-skinned with the faint pallor of someone who spends most daylight hours indoors under institutional lighting. Broad facial structure inherited from mother—wide-set eyes, full mouth often compressed in concentration. No visible acne or blemishes; her maintenance routine is efficient, not indulgent.",
+    "distinguishing_marks": [
+      "Faint linear scar on her left inner wrist, approximately 4cm, from a childhood accident—barely visible unless light catches it directly",
+      "Subdermal outline of haptic study interface visible on left forearm as a subtle geometric grid pattern under skin, approximately 8cm × 6cm, most visible when her arm is relaxed"
+    ],
+    "visible_augmentations": "Color-shifting irises are immediately noticeable and unusual—they cycle visibly throughout the day with a slow, deliberate rhythm. The subdermal haptic interface on her left forearm is visible as a faint geometric grid pattern under her skin, particularly noticeable when she extends her arm. No chrome or obvious cybernetic augmentation; her modifications are subtle, chosen with restraint.",
+    "posture_movement": "Moves with efficient, economical motion—no wasted energy. When walking, her gaze is often unfocused, indicating active mental processing. Sits with legs folded under her or feet planted firmly; fidgets minimally but precisely. Her hands move when she's thinking through a problem, fingers tracing invisible patterns in the air. There's a slight tension in her shoulders that suggests constant low-level stress.",
+    "clothing_style": "Tier 2 scholarship uniform aesthetic: tailored but understated. Prefers dark colors (charcoal, black, deep navy) for functionality and to minimize laundry overhead. Wears Palladian Foundation-issued compression smart-fabric jacket over plain fitted shirts; the jacket has minimal branding but precise technical seaming. Her shoes are expensive but worn—practical lab-grade grip soles from a corpo supplier. No jewelry except a simple black smart-band on her wrist (likely tracking her academic metrics). Everything is maintained but not precious; her wardrobe reads as chosen by someone with better things to think about than aesthetics."
+  },
+  "image_prompt": "Portrait of a 17-year-old tall, lean girl of mixed West African and Scandinavian heritage with deep warm brown skin and broad expressive features. Her eyes are striking—augmented with color-shifting irises cycling cool blues and greens with subtle LED luminescence. Long dark brown hair in a pragmatic braid, a few strands loose around her face. Subtle geometric grid pattern visible under skin on her left forearm (subdermal haptic interface). Wearing dark Tier 2 corpo-academic clothing: tailored charcoal compression jacket with precise technical seaming over a plain fitted black shirt. Her posture is slightly forward-leaning, shoulders rounded from hours at workstations; expression focused and exhausted, eyes distant as if calculating. Indoor institutional lighting, cool fluorescent tones casting even shadows. Detailed, photorealistic cyberpunk aesthetic, technical and austere. --ar 2:3 --v 6"
 }

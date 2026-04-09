@@ -217,5 +217,27 @@
     "The Pure Hand",
     "The Wire Taps"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Serbian",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Broad-shouldered and thick-necked despite decades in confined spaces; age has not diminished his mass, only redistributed it — chest and shoulders still powerful, abdomen thick with settled weight. His left leg is noticeably thinner than the right, atrophied from decades of reduced use.",
+    "hair_color": "Grey-white with residual dark brown at the roots",
+    "hair_style": "Short, cropped close to the scalp, streaked with moisture-darkened sections",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unmodified",
+    "skin_tone": "Deep brown with an undertone of grey — like weathered concrete mixed with earth",
+    "complexion": "Deeply lined face; crow's feet, forehead creases, and nasolabial folds cut deep; perpetually damp at the temples and along the jawline from Bellows Town's constant humidity; sparse beard stubble, salt-and-pepper, often unshaven; skin texture rough and weather-stained, hands especially calloused and grey at the knuckles",
+    "distinguishing_marks": [
+      "Extensive scarring across both palms and the backs of his hands — linear burn and pressure-seal marks from decades of tunnel work, pale against darker skin",
+      "A deep, discolored scar running along his left shin and knee from the pressure-seal failure forty years ago — the limb itself slightly shorter and visibly thinner than the right",
+      "Faint horizontal scarring across his right forearm — old rope burns",
+      "A dark, aged tattoo on his left chest near the shoulder — abstract geometric pattern, faded and slightly distorted by loose skin, design unknown to outsiders"
+    ],
+    "visible_augmentations": "None. He carries a hand-carved ferroceramic cane (called 'Third Opinion') with grip marks worn smooth by decades of use; this is his only trust technology.",
+    "posture_movement": "Walks with a pronounced rocking gait due to his compromised left leg — the cane absorbs significant weight. His upper body compensates with slight lateral sway. Despite this, he moves with deliberate purpose; no wasted motion. When seated, he sits low and deep, as if settling into weight. His gaze is steady and unflinching; he makes direct eye contact and holds it without challenge.",
+    "clothing_style": "Tier 5 utilitarian pipe-folk: layers of durable, patched fabric in browns and greys — a heavy canvas or rubberized long-coat over multiple undershirts, all worn thin at the elbows and cuffs. His trousers are reinforced at the knees with darker fabric. Boots are heavy, split-leather, resoled multiple times. He wears no jewelry, no ornamentation, no status markers. Everything he wears serves a function or serves no purpose at all."
+  },
+  "image_prompt": "an elderly West African-Serbian man, 68 years old, standing in a dimly-lit underground tunnel settlement, weathered and carved-looking with deep lines across his face and grey-white close-cropped hair. broad-shouldered despite age, wearing layered brown and grey canvas clothing heavily patched at the elbows, holding a hand-carved ferroceramic cane. his left leg is visibly atrophied, creating a slight imbalance. dark brown unmodified eyes, calloused grey-brown hands with deep scarring, skin tone like aged concrete streaked with moisture. background is industrial: rusted pipes, dim biolume fungal lighting, dripping water echoing in the distance. warm tungsten highlights on his weathered face, heavy shadows under his eyes and along his jaw. no augmentations visible, entirely human and entirely unglamorous. standing with the weight of sixty years of tunnel history. photorealistic, moody, introspective lighting. --ar 2:3 --v 6"
 }

@@ -272,5 +272,25 @@
     "The Pale Mile",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Malian / Mongolian",
+    "height_cm": 172,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and solid without softness; carries herself with the compact density of someone who has moved through decades of low-grade violence. Not muscular in a performance sense, but functionally strong in the shoulders and core.",
+    "hair_color": "Dark brown with silver threading throughout",
+    "hair_style": "Close-cropped, neat, practical; a few centimeters at most",
+    "hair_length": "Short",
+    "eye_color": "Brown, watchful, set wide",
+    "skin_tone": "Deep warm brown with undertones reflecting mixed West African and Central Asian heritage",
+    "complexion": "High cheekbones, broad face, minimal cosmetic grooming; skin shows sun exposure and the weathering of outdoor work; no visible acne or blemishes, suggesting good self-care despite her tier. Faint laugh lines around her eyes.",
+    "distinguishing_marks": [
+      "Pale ridge-work visible along both forearms from elbow to wrist where subdermal strike plates were implanted; the scars are clean and old, approximately 15-20 years healed.",
+      "A thin white line along her left temple, approximately 4cm, from a collection dispute in the early 2200s."
+    ],
+    "visible_augmentations": "Reinforced subdermal strike plates across both forearms, visible as pale raised seams running lengthwise from wrist to elbow. The modifications are functional and deliberately visible—a warning to anyone who looks closely.",
+    "posture_movement": "Moves with unhurried purpose, economical in gesture. She doesn't fidget or rush. When she walks, her weight settles forward slightly—someone who has spent decades on her feet and has learned to conserve energy. Her hands rest naturally in her lap or at her sides, and her shoulders never tense. She makes direct eye contact and holds it without aggression, just observation.",
+    "clothing_style": "Practical layered wear in neutral colors: dark grey or brown base layers, a canvas work jacket or heavy overshirt in charcoal, cargo pants with deep pockets, sturdy boots scuffed from street work. Always carries a battered metal thermos of cardamom tea. No jewelry except a faded woven bracelet on her left wrist—likely handmade, sentimental value unknown. Tier 4 functionally—not corpo polish, but well-maintained and deliberately chosen for durability over fashion."
+  },
+  "image_prompt": "Cyberpunk portrait of Mireille Batbayar-Sissoko, a 51-year-old woman with deep brown skin, high cheekbones, and wide watchful brown eyes reflecting Malian and Mongolian heritage. Close-cropped dark hair with silver threading. Muscular, broad-shouldered build, approximately 172cm tall. Visible subdermal strike plate augmentations along both forearms showing as pale ridge-work scars. Wearing layered practical clothing in charcoal and grey—heavy canvas jacket, cargo pants, worn leather boots. Holding a battered metal thermos of tea. Posture calm and unhurried, direct eye contact, atmosphere of quiet authority and fatigue. Set in the Blackpipe Corridor market strip, Shallowgrave sector, GLMZ 2226—neon market signs, weathered storefronts, overcast Tier 5 lighting. Cinematic, photorealistic, gritty street-level perspective, cool color palette with warm skin tones, atmospheric haze. --ar 2:3 --v 6"
 }

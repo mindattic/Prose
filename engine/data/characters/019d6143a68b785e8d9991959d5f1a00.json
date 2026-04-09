@@ -100,5 +100,26 @@
     "Meridian Munitions Snapper-22 'Cricket'"
   ],
   "registered_firearms": [],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Eastern European",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Solid, compact frame with developed shoulders from decades of manual labor and lifting cargo. Not muscular, but dense—the kind of physique that comes from working, not training.",
+    "hair_color": "Salt-and-pepper gray with darker roots",
+    "hair_style": "Closely cropped, practical, minimal maintenance",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint amber undertone",
+    "skin_tone": "Deep warm brown with subtle ashen undertone from age and stress",
+    "complexion": "Weathered face with deep forehead creases and laugh lines around the eyes. Sparse stubble, usually a day or two of growth. A thin scar runs from left cheekbone to jaw—old injury, well-healed but visible.",
+    "distinguishing_marks": [
+      "Linear scar along left cheekbone to jawline, approximately 8cm long, pale tissue",
+      "Small burn mark on right forearm, roughly coin-sized, from old industrial accident",
+      "Faded tattoo on inner left wrist—Cyrillic letters, barely legible after decades"
+    ],
+    "visible_augmentations": "None visible. Likely carries subcutaneous implants for secure comms and data storage, but presents as fully organic.",
+    "posture_movement": "Deliberate, economical movements. Stands with slight forward lean as if always ready to move. Eyes constantly scanning—checking exits, assessing people. Handshake firm but measured. Rarely makes sudden gestures.",
+    "clothing_style": "Tier 3 practical wear: worn synthetic jacket (dark gray, corporate-adjacent but generic), unbranded cargo pants with reinforced pockets, scuffed boots suitable for dock work. No jewelry. A faded Φ-conversion watch on left wrist. Dresses for function over appearance—clothes are tools, not statements."
+  },
+  "image_prompt": "51-year-old man of West African and Eastern European heritage, salt-and-pepper hair cropped short, weathered face with deep forehead creases and a pale scar running from left cheekbone to jaw, dark brown eyes with amber undertone, deep warm brown skin, solid compact build, wearing worn gray synthetic jacket and reinforced cargo pants, scuffed boots, standing in dim neon-lit harbor warehouse at dusk, industrial cyberpunk setting, cool blue and amber lighting, cinematic realism, gritty urban atmosphere, suspicious posture with hands at sides, looking directly at camera with calculating expression, film noir meets cyberpunk, shot from waist-up --ar 2:3 --v 6"
 }

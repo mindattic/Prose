@@ -11,7 +11,7 @@
     "Vespid Net"
   ],
   "subcategory": "transportation",
-  "description": "A city-wide airspace management system that provides navigation, collision avoidance, and traffic routing for all aerial vehicles and drones in Meridian 88. The ANM divides the city's airspace into navigable corridors with defined speed limits, altitude restrictions, and priority lanes, managed by a distributed AI that processes millions of flight path calculations per second. Any drone or aerial vehicle connected to the mesh receives real-time routing that optimizes for traffic flow, weather conditions, and restricted zone avoidance. Vespid operates the ANM as critical infrastructure and charges access fees that make them the city's airspace utility.",
+  "description": "A city-wide airspace management system that provides navigation, collision avoidance, and traffic routing for all aerial vehicles and drones in GLMZ. The ANM divides the city's airspace into navigable corridors with defined speed limits, altitude restrictions, and priority lanes, managed by a distributed AI that processes millions of flight path calculations per second. Any drone or aerial vehicle connected to the mesh receives real-time routing that optimizes for traffic flow, weather conditions, and restricted zone avoidance. Vespid operates the ANM as critical infrastructure and charges access fees that make them the city's airspace utility.",
   "tier_availability": "Tier 2+",
   "developers": [
     "VESPID DYNAMICS"
@@ -27,7 +27,7 @@
     "Priority airspace allocation",
     "Weather-responsive route optimization"
   ],
-  "social_impact": "The ANM has made Meridian 88's skies functional — without it, the density of drone traffic would make aerial operations impossibly dangerous. But Vespid's control of the navigation mesh means they can grant or deny airspace access to any operator, creating a form of aerial zoning that reflects corporate interests. Delivery drones from Vespid-allied companies receive priority routing while competitors experience 'congestion-related delays.' Emergency drones are routed efficiently — unless the emergency conflicts with a Vespid corporate interest, in which case routing anomalies have been documented.",
+  "social_impact": "The ANM has made GLMZ's skies functional — without it, the density of drone traffic would make aerial operations impossibly dangerous. But Vespid's control of the navigation mesh means they can grant or deny airspace access to any operator, creating a form of aerial zoning that reflects corporate interests. Delivery drones from Vespid-allied companies receive priority routing while competitors experience 'congestion-related delays.' Emergency drones are routed efficiently — unless the emergency conflicts with a Vespid corporate interest, in which case routing anomalies have been documented.",
   "story_hooks": [
     "The ANM has been hacked to create a collision corridor — drones from two competing delivery companies are being routed into the same airspace at the same altitude, causing mid-air collisions that look like accidents.",
     "A zone of ANM coverage has gone dark — no navigation data, no collision avoidance — and drones are falling out of the sky in a specific district that someone wants to isolate from aerial access."

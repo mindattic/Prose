@@ -39,7 +39,7 @@
       "Their reputation for emotional availability in the studio does not translate to personal relationships, and they cannot see the gap",
       "They screen clients for worthiness but apply no such rigor to people they let into their personal life"
     ],
-    "secret": "They have been slowly, over five years, tattooing a complete map of Meridian 88's grey-market medical supply network onto the inner surfaces of a set of custom jacket panels — encoded in a pattern that reads as abstract art. They intend it as insurance. They have not decided against whom."
+    "secret": "They have been slowly, over five years, tattooing a complete map of GLMZ's grey-market medical supply network onto the inner surfaces of a set of custom jacket panels — encoded in a pattern that reads as abstract art. They intend it as insurance. They have not decided against whom."
   },
   "speech_patterns": {
     "vocabulary": "Professional and warm in the studio, measured and slightly formal outside it; uses the body as metaphor naturally ('what does that feel like, structurally?')",
@@ -255,5 +255,26 @@
     "The Pure Hand",
     "Slagworks Industrial"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Eastern European / West African / South Asian",
+    "height_cm": 162,
+    "weight_kg": 52,
+    "build": "Compact and wiry, with defined lean musculature in the shoulders and forearms from years of precision work. No excess fat; every line suggests economical movement.",
+    "hair_color": "Dark brown, naturally black with threads of premature silver at the temples",
+    "hair_style": "Pulled back in a tight, functional braid or undercut fade; always secured to keep it away from work surfaces",
+    "hair_length": "Short to medium, varying by styling preference",
+    "eye_color": "Very dark brown, almost black, narrow-set and alert",
+    "skin_tone": "Light ochre with warm undertones, reflecting mixed heritage",
+    "complexion": "Smooth, unblemished skin except where geneware is intentionally integrated. High cheekbones, angular jaw, minimal grooming beyond practical necessity. No visible facial hair. Expression is calm and focused; they rarely smile broadly.",
+    "distinguishing_marks": [
+      "Bioluminescent freckle-constellations across both shoulders and extending down the throat in soft cyan-white patterns that glow faintly in low light—mapped to resemble actual star charts",
+      "Color-shifting scale-pattern geneware covering both forearms from wrist to elbow, predominantly teal and copper that shifts subtly with temperature and emotion",
+      "Thin scarification lines along the inner wrists in deliberate geometric patterns, self-done as apprenticeship marks"
+    ],
+    "visible_augmentations": "Fully expressive geneware cat ears—small, dark-furred, mobile atop their head; pupils dilate and rotate independently of human eye movement. Bioluminescent freckles glow faintly in darkness. Scale-pattern forearms shimmer and shift color gradually. Hands show no visible augmentation but move with inhuman steadiness and precision; sub-dermal hand stabilizers are not visually apparent but make tremor virtually impossible.",
+    "posture_movement": "Stands with minimal excess motion, spine straight but not rigid. Moves with deliberate economy—no wasted gestures. Hands rest in their lap or on work surfaces when still. When working, enters a state of near-perfect stillness except for microscopic adjustments. Eyes track movement; cat ears swivel toward sound sources. Their presence is quiet but commanding in a studio context.",
+    "clothing_style": "Tier 3 utilitarian-aesthetic. Typically wears fitted black or dark gray work shirts (often sleeveless or with rolled sleeves to display forearm geneware) made from durable synth-cotton blends. High-waisted, dark trousers with multiple thigh pockets for tools and supplies. Worn leather apron during active work. Footwear is practical—dark slip-on boots with good grip. Minimal jewelry except for a thin silver wire bracelet on the left wrist (a client memorial piece). No corporate branding. Clothing is always impeccably clean but well-used, bearing small stains and marks from their work. Studio presence is austere—the body is the art, not the garments."
+  },
+  "image_prompt": "Portrait of a compact, precise-looking nonbinary figure with light ochre skin and dark narrow-set eyes. Small dark-furred expressive cat ears atop their head. Bioluminescent cyan-white freckle constellations glow softly across shoulders and throat. Both forearms display color-shifting teal and copper scale-pattern geneware from wrist to elbow. Dark hair pulled back tight. Wearing fitted black sleeveless work shirt displaying augmentations, dark trousers, worn leather apron. Studio setting—clinical lighting over a work surface, shallow depth of field. Cyberpunk tattoo/gene-mod artist aesthetic, calm and focused expression, hands positioned with uncanny steadiness. High technical skill evident in body modifications. Moody cool-toned lighting with soft glow from bioluminescent marks. --ar 2:3 --v 6"
 }

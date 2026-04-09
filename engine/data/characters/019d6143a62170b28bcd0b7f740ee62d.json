@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "To find the person who burned them and make it educational",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Freedom from augmentation debt — the interest compounds like a tumor"
     ],
     "coping_mechanisms": [
@@ -43,7 +43,7 @@
       "Cannot accept help without interpreting it as leverage",
       "Fails to notice when their own behavior mirrors the people they despise"
     ],
-    "secret": "Hadiya Forsberg-Ofosu betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+    "secret": "Hadiya Forsberg-Ofosu betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
   },
   "speech_patterns": {
     "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
@@ -157,7 +157,7 @@
     "strengths": [
       "intimidating physical presence",
       "strategic thinking under pressure",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "augmentation dependency — performance drops sharply if chrome malfunctions",
@@ -285,5 +285,25 @@
     "Pellucid Systems",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with visible musculature — wiry rather than bulk, built for precision and endurance rather than power. Chest and shoulders show the kind of tension that comes from years of controlled stress.",
+    "hair_color": "Dark brown with natural bronze undertones",
+    "hair_style": "Worn short and functional, swept back from the face with minimal styling effort",
+    "hair_length": "Short",
+    "eye_color": "Left eye: warm brown, organic. Right eye: matte black with faint cyan circuit-line tracery, cybernetic.",
+    "skin_tone": "Medium brown with cooler undertones — the mixed heritage visible in the bone structure",
+    "complexion": "Sharp cheekbones, angular jaw, minimal body fat. Skin condition is clean but shows the wear of stress — faint lines around the eyes, the kind that come from squinting at screens in low light. No visible scarring on the face.",
+    "distinguishing_marks": [
+      "Neural dampener port at the base of skull, just below the hairline — visible chrome backing plate, approximately 3cm diameter, with thin lead-gray wiring running downward into the spine.",
+      "Faint burn scarring along the left forearm, thin and precise — tool marks from an old intrusion attempt that went wrong, partially covered by a dark grey dataflow tattoo in kanji characters that runs wrist to elbow."
+    ],
+    "visible_augmentations": "Neural dampener at base of skull with visible chrome backing and wiring. Right eye is cybernetic — matte black faceplate with faint circuit tracery, noticeably different from the warm brown of the left eye. No visible arm or leg augmentations.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Tends to keep his augmented eye side slightly forward in conversation, a habit born from always knowing where the threat is. When still, there is visible tension in his shoulders and jaw, like a coiled spring. Hands are steady, fingers occasionally twitching in small, unconscious patterns — muscle memory for keyboard work.",
+    "clothing_style": "Tier 3 practical — dark grey long-sleeve compression shirt fitted to his lean frame, worn under a matte black synthweave jacket with reinforced seams and interior pockets designed for hardware. Cargo pants in charcoal with multiple sealed pockets. Boots are military-grade synthetic leather, scuffed from regular use. No visible corporate branding. A single piece of jewelry: a silver ring on his left middle finger, worn thin — the origin is not discussed."
+  },
+  "image_prompt": "A lean, angular male netrunner in his early 30s, dark brown skin with bronze undertones, short dark hair swept back, one warm organic brown eye and one matte-black cybernetic eye with faint cyan circuit tracery. Visible chrome neural dampener port at base of skull with wiring running down the spine. Wearing fitted dark grey compression shirt under matte black synthweave jacket with reinforced seams, charcoal cargo pants, military-grade synthetic boots. Sharp cheekbones, controlled posture, visible tension in shoulders. Standing in an open-air market — Crucible Square, neon-lit vendor stalls in background, Tier 1-2 commerce zone, evening. Moody cyberpunk lighting: cool blue and amber neon reflecting off wet concrete and chrome augmentations. Photorealistic, cinematic, 8k detail on facial features and augmentation ports. Depth of field with sharp focus on face. --ar 2:3 --v 6"
 }

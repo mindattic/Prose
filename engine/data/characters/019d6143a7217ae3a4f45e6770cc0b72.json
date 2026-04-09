@@ -265,5 +265,27 @@
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Senegambian) / Scandinavian",
+    "height_cm": 193,
+    "weight_kg": 118,
+    "build": "Densely muscular and broad-shouldered from two decades of heavy mechanical work — not lean, not soft, but powerfully economical. Thick through the chest and core. Carries weight like ballast.",
+    "hair_color": "Black with grey threading throughout",
+    "hair_style": "Close-cropped, kept short for safety in the workshop",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint subocular scanner overlay visible as a faint luminescent grid beneath the iris when activated",
+    "skin_tone": "Deep blue-black complexion characteristic of West African descent",
+    "complexion": "Weathered and practical — minimal grooming beyond necessity. Heavy dark beard, shot through with grey, kept full and dense. Skin marked by decades of workshop exposure: old burn scarring, minor chemical marks, the patina of someone who works with their hands in an industrial environment.",
+    "distinguishing_marks": [
+      "Extensive burn scarring along the right forearm (from wrist to elbow) in irregular patches — pale, textured tissue from a rig fire in his twenties",
+      "Old compression-injury scarring across both palms and along the dorsal surfaces of the hands — thin white lines from wrist to knuckle",
+      "Small workshop burns and minor lacerations scattered across both hands and forearms, evidence of decades of work",
+      "Faint sub-epidermal scarring along both wrists from bone-density reinforcement surgery"
+    ],
+    "visible_augmentations": "Retractable tool-interface ports along both forearms — custom-housed units featuring geometric patterning in the bezels (triangular and lattice designs echoing traditional Senegambian textile work). Ports are flush with skin when retracted, visible as subtle linear marks. When deployed, the chrome tool-coupling surfaces are clearly visible. Subocular scanner overlay is not visible when inactive but manifests as a faint geometric grid-pattern beneath the iris when in use.",
+    "posture_movement": "Moves with deliberate, economical grace — no wasted motion. Despite his size, he carries himself quietly, almost apologetically. Stands with weight balanced, ready to shift. Hands move with surprising delicacy and precision for their size; they are instruments he has tuned through decades of work. Eyes track mechanically, following problems. Speaks rarely and moves more than he talks.",
+    "clothing_style": "Tier 3-4 working class, practical and durable. Usually wears a worn canvas work jacket (dark grey or charcoal) over a plain fitted t-shirt, both showing grease stains that have become permanent. Heavy-duty cargo pants with reinforced knees and tool loops, well-maintained but not new. Steel-toed boots, always laced tight. Wears a thin gold band on his left ring finger — the only adornment. No flashiness, no corporate branding. Clothes are chosen for function and durability, not status. Often carries a cloth rag in his back pocket and a worn personal data slate clipped to his belt."
+  },
+  "image_prompt": "A massive, dark-skinned man of 44 years with a heavy grey-shot beard and close-cropped hair, standing in a industrial mechanic's workshop, dense muscular build from decades of heavy labor. His skin is deep blue-black with visible burn scarring along his right forearm and compression-injury marks on his hands. Both forearms show retractable metallic tool-interface ports with geometric patterning. His dark eyes carry a subocular scanner overlay faintly visible. He wears a worn charcoal canvas work jacket over a fitted t-shirt, heavy cargo pants with reinforced knees, and steel-toed boots. His enormous hands show delicate movement as he works on an electric cargo rig component. The workshop bay is dim, lit by harsh overhead strips and diagnostic lights reflecting off chrome and steel. Geartown aesthetic: industrial, honest, well-used. Cyberpunk, working class, ground-level. Moody workshop lighting, oil and metal textures, 50mm detail focus on hands and augmentations. --ar 2:3 --v 6"
 }

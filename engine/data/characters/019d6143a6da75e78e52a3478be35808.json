@@ -178,5 +178,27 @@
     "Compass Rose",
     "Weathervane"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "Central African / Scandinavian (Congo-Kinshasa / Iceland lineage)",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, with the compact muscularity of someone who has done manual labor for decades. Not lean — her frame carries functional mass. Her posture is upright despite age, though her shoulders slope slightly forward from years of hunching against wind.",
+    "hair_color": "Silver-grey with faint traces of dark brown at the roots",
+    "hair_style": "Worn in a single long braid, bound with strips of faded cloth and threaded with thin wire at irregular intervals — a functional choice that also serves as prayer offerings",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, almost black, with a milky film from age-related cataracts beginning to form",
+    "skin_tone": "Deep brown with undertones of rust and grey — the color of river silt under low light",
+    "complexion": "Heavily lined face, particularly around the eyes and mouth. Skin is weathered and dry from decades of wind and salt exposure. Faint crosshatch scarring visible on cheeks and forehead from repeated salt-chap and sun damage. Her left hand is missing the index and middle fingers — a clean amputation at the second knuckle from a harvesting machine accident.",
+    "distinguishing_marks": [
+      "Parallel burn scars running down her left forearm from an old thermal accident, three thin white lines approximately 8cm long",
+      "Faint agricultural tattoo on her right inner wrist — a symbol of her former collective, now deliberately worn so faintly it reads like a ghost mark",
+      "Deep crescent-shaped scar on her left palm where the harvesting blade entered, creating a permanent callus ridge",
+      "Salt-bleached discoloration in patches across her shoulders and upper back, visible when she removes her wrap"
+    ],
+    "visible_augmentations": "None. She is entirely unaugmented and wears this as a form of resistance and spiritual integrity.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion. Her gait is slightly favoring her right side from decades of compensating for her missing left fingers. She stands with weight distributed evenly, shoulders back, chin slightly raised as if reading the sky. Her remaining left hand often rests against her thermal wrap, a habitual gesture of checking the weave. When she sits, she folds into herself compactly, spine curved, ready to rise quickly.",
+    "clothing_style": "Tier 5 refugee wear. Her primary garment is a patchwork thermal wrap she has been mending for eleven years — it is a palimpsest of repairs made from salvaged fabric scraps, sealed seams, and reinforced panels. The base color is faded grey-brown, with visible patches of blue tarp material, cream-colored synthetic fibers, and darker wool inserts. The wrap is layered with a thin undershirt (probably salvaged) and cargo pants with multiple pockets, all heavily worn. She wears weathered boots with the left foot's laces wrapped around the ankle to compensate for her missing fingers' inability to tie knots. A belt of braided paracord holds everything in place. Around her neck hangs a collection of wire braids and small junction-box offerings, and she often carries a notebook for weather observations made with a pencil stub."
+  },
+  "image_prompt": "Weathered 58-year-old woman with deep brown skin mapped by wind-scars and sun damage, silver-grey hair in a long braid threaded with wire offerings, dark watchful eyes with age-milky film. Missing two fingers on left hand. Wearing a heavily patched thermal wrap in faded grey-brown with visible blue tarp and wool repair panels, cargo pants, worn boots. Posture upright and alert, reading the sky with the calm precision of a climate refugee. Standing in the grey dawn light of a tarp-city, worn shelters behind her, drainage channels visible in mud. Wind-swept, austere, dignified. Soft diffused lighting catching the texture of her wrap's repairs. Photorealistic, weathered, grounded documentary style. --ar 2:3 --v 6"
 }

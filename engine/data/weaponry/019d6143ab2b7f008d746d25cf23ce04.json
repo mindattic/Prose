@@ -20,13 +20,13 @@
   ],
   "specifications": "caliber: 3x22mm tungsten-ceramic flechette\nfeed system: 300-round sealed cassette, electromagnetic advancement\nrate of fire: 4,200 RPM (cyclic), adjustable to 800 RPM semi-burst\neffective range: 12m (fan dispersion), 180m (column mode)\nmuzzle velocity: 1,050 m/s nominal (FluxSync maintained)\nweight: 2.8 kg loaded\ndimensions: 410mm length, 240mm height\npower source: Integrated 18V lithium-polymer cell, 6 cassettes per charge\noperating temperature: -20°C to +65°C",
   "tactical_use": "Corporate security teams use the GFR-3 primarily in column mode for breaching armored targets at short-to-medium range, switching to fan dispersion for room clearing or crowd control. Its silence — the loudest component is the faint magnetic hum and the impact of flechettes — makes it favored for operations where noise discipline matters. The 300-round cassette allows sustained suppressive fire without reloads, though operators are trained to swap cassettes at 150 rounds to avoid feed jams from heat buildup in the advancement mechanism. Some operators tape two cassettes together for rapid exchange.",
-  "cultural_context": "The GFR-3 carries a specific social weight in Meridian 88: it is the weapon of the corporate floor. Seen holstered on TESSERA's own lobby security and licensed to a dozen mid-tier corporate clients, the 'Needlerain' is understood as a statement of institutional violence — clean, efficient, calibrated. Street gangs rarely carry them because the cassette magazines are expensive and proprietary. When one appears outside a corporate context, it usually means someone raided a security depot or a corporate operative has gone freelance. The weapon's silence gives it a particular dread reputation in the lower arcologies, where the first sign of a GFR-3 in the room is often the sound of someone else getting hit.",
+  "cultural_context": "The GFR-3 carries a specific social weight in GLMZ: it is the weapon of the corporate floor. Seen holstered on TESSERA's own lobby security and licensed to a dozen mid-tier corporate clients, the 'Needlerain' is understood as a statement of institutional violence — clean, efficient, calibrated. Street gangs rarely carry them because the cassette magazines are expensive and proprietary. When one appears outside a corporate context, it usually means someone raided a security depot or a corporate operative has gone freelance. The weapon's silence gives it a particular dread reputation in the lower arcologies, where the first sign of a GFR-3 in the room is often the sound of someone else getting hit.",
   "known_users": [
     "TESSERA CORPONATION lobby security",
     "Corporate extraction teams",
     "Freelance operatives with corporate contracts",
     "Black market arms dealers (stolen units only)",
-    "Meridian 88 Tier-2 private investigators (licensed)"
+    "GLMZ Tier-2 private investigators (licensed)"
   ],
   "story_hooks": [
     "A GFR-3 cassette recovered from a crime scene is stamped with a TESSERA internal security lot number — meaning it came from inside the building, not from outside",

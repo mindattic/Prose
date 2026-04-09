@@ -58,8 +58,16 @@
     "Musicians who want to hear what their sound does in a pumping chamber cathedral"
   ],
   "notable_locations": [
-    "The pumping chamber — cathedral-scale concrete vault, the Undertow's impossible room",
-    "The pipe — two hundred meters of commitment between the lake and the bar"
+    {
+      "name": "The pumping chamber",
+      "description": "cathedral-scale concrete vault, the Undertow's impossible room",
+      "tags": []
+    },
+    {
+      "name": "The pipe",
+      "description": "two hundred meters of commitment between the lake and the bar",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 43.0389,

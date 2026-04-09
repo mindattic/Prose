@@ -180,5 +180,26 @@
     "Tessera Corponation",
     "Silver"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "East African (Mozambican) / Scandinavian (Norse)",
+    "height_cm": 175,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and substantial without heaviness; years of physical labor and community work have built genuine muscle density across her frame. Posture of someone comfortable taking up space.",
+    "hair_color": "Black with natural silver threading throughout",
+    "hair_style": "Locs, shoulder-length when loose, habitually pinned and wrapped",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with faint HUD overlay artifacts visible under certain light angles (second-hand retinal implant)",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Well-maintained skin marked by laugh lines radiating from eyes and mouth, evidence of decades of sustained expression. Minimal scarring. Grooming is practical and unhurried—she does not fight her appearance but wears it as earned territory.",
+    "distinguishing_marks": [
+      "Subdermal bioluminescent map of Highland Park (11-block jurisdiction) running across the entire inner surface of her left forearm—faintly visible under skin, glows soft blue-green in low light, streets rendered in fine detail with major resource nodes marked",
+      "Fine network of old work scars on both palms and knuckles, consistent with garage work and hands-on repair",
+      "Small burn scar on right temple from a heating unit mishap (pre-augmentation era)"
+    ],
+    "visible_augmentations": "Subdermal map tattoo visible as faint luminous tracery on left forearm. Retinal HUD not externally visible but occasionally detectable as brief digital artifacts in her eyes when she's reading or accessing information—a slight lag or flicker that betrays the second-hand implant's age.",
+    "posture_movement": "Moves with deliberate economy—no wasted motion. Sits and stands with the particular stillness of someone accustomed to being the calm center of chaos. When thinking, she traces her left forearm absently with her right fingernail, activating faint bioluminescent pulses. Her presence has gravitas; rooms don't need her to raise her voice.",
+    "clothing_style": "Tier 4 utilitarian. Worn but maintained: reinforced canvas work pants (dirt-stained but patched cleanly), layered thermal shirts in muted earth tones, a heavy synthetic-wool coat salvaged and re-lined. The battered orange headwrap is her signature—faded from original brightness, knotted at the back, occasionally slipping to reveal the silver-streaked locs beneath. Work boots resoled at least twice. No jewelry except a thin woven cord bracelet made from scraps contributed by residents—unofficial badge of office."
+  },
+  "image_prompt": "Portrait of a 47-year-old East African-Scandinavian woman with deep umber skin and silver-streaked locs pinned under a faded orange headwrap, broad shoulders, hands marked by work scars. Left forearm shows faint bioluminescent blue-green subdermal tattoo map visible beneath skin. Worn canvas work clothes, heavy re-lined coat. Deep brown eyes with subtle digital artifacts, laugh lines, expression of calm authority. Standing in converted garage with pine cleaner and noodle steam atmosphere, warm practical lighting, cyberpunk social realism, documentary photography style, grounded and weathered not stylized, --ar 2:3 --v 6"
 }

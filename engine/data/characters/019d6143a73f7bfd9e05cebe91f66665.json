@@ -257,5 +257,27 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Igbo) / Mongolian / European (French-Canadian)",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Large-framed, heavily sedentary. Once muscular, now softened into rounded bulk distributed across chest and midsection. Shoulders still broad but sloped with age. Movements deliberate and economical, suggesting chronic joint pain managed through habit.",
+    "hair_color": "None — scalp fully shaved",
+    "hair_style": "Completely shaved, kept smooth",
+    "hair_length": "Shaved",
+    "eye_color": "Left: dark brown, natural. Right: dull amber cybernetic lens with visible chromatic aberration at edges.",
+    "skin_tone": "Deep brown with warm undertones, darkened further by decades of sun exposure. Complexion uneven — lighter patches along left torso where subdermal scar polymer sits beneath the surface.",
+    "complexion": "Deeply lined face with pronounced jaw and high cheekbones. Weathered texture suggesting outdoor living through multiple decades. Left side of head mapped with silvery burn scarring that extends from temple toward ear, partially concealed when wearing his thermal hat. Scar tissue pulls slightly at the corner of his left eye, creating a permanent half-squint. Sparse white stubble on chin and jawline, groomed irregularly.",
+    "distinguishing_marks": [
+      "Extensive silvery burn scarring across left scalp and temple, partially hidden by thermal hat, extending to left ear with puckered skin at the margins.",
+      "Subdermal scar tissue polymer visible as a faint geometric grid pattern across left torso and ribs — visible when shirtless or in thin clothing as a faint raised lattice beneath darkened skin.",
+      "Deep groove scar running from right collarbone toward sternum, approximately 12cm long, pale and smooth.",
+      "Network of smaller white-pink scars across both forearms and backs of hands — consistent with combat or industrial burns."
+    ],
+    "visible_augmentations": "Cybernetic right eye: dull amber lens mounted in a brushed steel housing with visible micro-servos at the iris. Optical tracking noticeably imperfect — doesn't follow in sync with biological left eye, creating unsettling dual-gaze effect. Left knee visibly thickened and stiff, wrapped occasionally in medical-grade compression sleeve; movement favors right side. Subdermal scar polymer visible as faint grid pattern across left torso under thin clothing.",
+    "posture_movement": "Sits with deliberate stillness, shoulders set low. Walks slowly with weight forward on the balls of his feet, right leg trailing slightly. Hands move with precision when gesturing — no wasted motion. Head tilts to compensate for the optical misalignment of his cybernetic eye. Rarely rushes; every action suggests the calculation of effort-to-reward.",
+    "clothing_style": "Rotates three identical outfits: oversized earth-toned shirts (rust, sage, charcoal) in thick linen or cotton blends, paired with loose-fitting work pants in tan or dark gray. All garments slightly too large, suggesting either intentional layering for concealment or indifference to fit. Wide-brimmed thermal hat worn indoors and outdoors, cream or tan colored, with faded brim. Heavy canvas jacket in olive or brown, always bearing a small carved wooden toggle pinned to the left lapel — a family heirloom from his grandmother's coat. Worn boots, well-maintained but scuffed. No visible jewelry except the toggle. Clothing indicates Tier 3-4 working-class/veteran status: functional, durable, unglamorous."
+  },
+  "image_prompt": "Portrait of an elderly Black-Mongolian man, age 78, seated outdoors in strong afternoon light, cyberpunk aesthetic. Completely shaved head mapped with silvery burn scars along the left temple and ear. Dull amber cybernetic eye with visible misalignment, right eye mismatched and unsettling. Deep brown weathered skin with geometric scar tissue grid faintly visible across left torso. Wearing oversized earth-toned linen shirt and faded wide-brimmed thermal hat. Carved wooden toggle pinned to jacket lapel. Deliberate, stillness-laden posture with weight-forward shoulders, hands resting with precision. Sitting at dominoes table, urban concrete plaza setting, Washburn Commons background. Warm golden afternoon light creating strong shadows. Grounded, dignified, haunted expression. Volumetric atmospheric haze. Hyperrealistic, character-focused. --ar 2:3 --v 6"
 }

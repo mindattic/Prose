@@ -236,5 +236,26 @@
     "The Pure Hand",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Congolese / Dutch",
+    "height_cm": 188,
+    "weight_kg": 71,
+    "build": "Lean and lanky — the kind of height that comes from his father's side, with a runner's lack of bulk. His frame reads as someone perpetually in motion between places, muscle kept minimal by inattention rather than design.",
+    "hair_color": "Dark brown, graying at the temples",
+    "hair_style": "Short, slightly unkempt, with a tendency to stand up at the back where he runs his hand through it during concentration",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert despite fatigue",
+    "skin_tone": "Olive complexion — his mother's Dutch fairness darkened and warmed by his father's Congolese genetics, yellowed-out under twelve hours of fluorescent transit cab lighting",
+    "complexion": "Angular face with pronounced cheekbones, a patchy beard of dark and graying hair he trims but never fully eliminates, kept at roughly two-days growth. Fine lines around his eyes from squinting at control panels and dawn light. Skin slightly dehydrated, with the faint pallor of someone who sleeps during daylight.",
+    "distinguishing_marks": [
+      "Cream-colored geneware cat ears implanted at the base of his skull, slightly translucent at the edges, often visibly drooping when fatigued",
+      "Calluses across his palms and inner fingers from years of gripping manual override controls",
+      "A thin scar along his left collarbone, barely visible — old enough to have faded to near-match with his skin tone"
+    ],
+    "visible_augmentations": "Cream-colored geneware cat ears, which flatten and droop noticeably when tired or stressed. A faint neural port scar at the base of his skull where his Ferrogate-issued neural link interfaces, usually hidden by his collar. No personal chrome — his augmentations are minimal and company-mandated.",
+    "posture_movement": "Upright but not rigid, with a slight forward lean as if always listening to something just beyond hearing. His movements are economical — no wasted motion in the cab. When standing still, he gravitates toward leaning against walls or railings. His hands move with precision when working controls, but his shoulders tend to hunch slightly when he's deep in thought about rail maintenance or the morning schedule.",
+    "clothing_style": "Ferrogate Transit operator uniform — a worn navy jumpsuit with reflective trim and his name stitched above the left pocket, faded to a soft, comfortable state at collar and cuffs from twelve-hour shifts. The fabric has slight wear marks from repeated contact with cab controls. Under it, a plain gray thermals shirt. When off-duty, he wears durable working clothes: heavy canvas pants, unmarked gray or black hoodies, reinforced boots. Everything is Tier 3-4 utilitarian — functional, maintained, but not invested in. A Ferrogate ID badge on a lanyard. One stainless steel watch, regulation-issue, always set to depot time."
+  },
+  "image_prompt": "A lean, tall man of mixed Congolese-Dutch heritage in his mid-thirties, standing in the dim fluorescent interior of an elevated rail transit cab at dawn, dark eyes alert and tired, patchy two-day beard, cream-colored geneware cat ears drooping slightly with fatigue. Wearing a worn, soft Ferrogate Transit navy jumpsuit with reflective trim, hands resting on manual control levers. The background shows the geometric architecture of an elevated railway track cutting through a pre-dawn McKinley Flats urban landscape, golden-gray light breaking at the horizon. Cyberpunk, photorealistic, moody transit noir, fluorescent green and blue ambient lighting mixing with early dawn amber. Character study, cinematic depth of field. --ar 2:3 --v 6"
 }

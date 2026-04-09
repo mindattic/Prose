@@ -240,5 +240,26 @@
     "Gold",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East African / Polish",
+    "height_cm": 188,
+    "weight_kg": 98,
+    "build": "Large-framed, softening through the middle with the weight distribution of a man whose labor has shifted from physical to administrative. Broad shoulders and thick forearms still carry the architecture of his earlier life.",
+    "hair_color": "Dark brown with grey patches spreading from the temples",
+    "hair_style": "Kept close and functional, no styling",
+    "hair_length": "Short",
+    "eye_color": "Left eye: dark brown. Right eye: bioluminescent amber-gold prosthetic with slow iris cycling",
+    "skin_tone": "Deep warm brown, rich undertones",
+    "complexion": "Weather-worn and lined, the face of someone who spends significant time in poorly climate-controlled spaces. Close-trimmed grey-patched beard. Deep-set eyes that read as attentive rather than tired despite fatigue.",
+    "distinguishing_marks": [
+      "Right eye is a prosthetic with bioluminescent iris, noticeably older technology, cycles slowly between amber and gold tones",
+      "Callused palms and fingers, scarring consistent with decades of manual labor",
+      "Faint scar along left jawline, approximately 3cm, from unspecified injury decades prior"
+    ],
+    "visible_augmentations": "Right prosthetic eye only — bioluminescent amber-gold iris model, older generation, deliberately unreplaced. The cyclic glow is noticeable in low light. No other visible augmentations.",
+    "posture_movement": "Moves with economic efficiency, no wasted motion. Carries weight low through the hips. Stands with weight balanced; gives the impression of listening rather than waiting. Habitual gesture of touching the hand-stitched tablet case when thinking.",
+    "clothing_style": "Layered practical wear suggesting Tier 4-5 working class: worn canvas work pants, undershirts visible at the neck, a heavy oversized collar jacket in faded grey that has been repaired multiple times, steel-toed boots scuffed from years of warehouse and distribution center work. Everything fits the logic of durability and function over aesthetic. Carries a battered data tablet in a visibly hand-stitched fabric case — the craftsmanship of it marks it as personally meaningful rather than issued."
+  },
+  "image_prompt": "Cyberpunk character portrait, weathered African-East African man, late 50s, large powerful build going soft at middle, deep warm brown skin, close grey-patched beard, right eye glowing amber-gold bioluminescent prosthetic slowly cycling, left eye dark brown and knowing, wearing layered practical work clothes faded grey canvas jacket and thick collar, worn steel-toed boots, carrying hand-stitched data tablet case, standing in dim warehouse lighting with amber prosthetic eye casting subtle warm glow, expression patient and grief-worn, hands weathered and calloused, Tier 4 industrial aesthetic, cinematic documentary lighting, grounded cyberpunk realism, --ar 2:3 --v 6"
 }

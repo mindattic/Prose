@@ -235,5 +235,25 @@
     "The Pale Mile",
     "Hazel Brink"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Romanian / West African / Finnish",
+    "height_cm": 183,
+    "weight_kg": 76,
+    "build": "Lean and angular, shoulders slightly narrowed from deliberate postural discipline. Long-limbed with minimal subcutaneous fat—the build of a man who chose reduction over accumulation. Wiry rather than muscular, suggesting endurance over strength.",
+    "hair_color": "Dark brown with silver-grey at temples",
+    "hair_style": "Close-cropped, military precision, no styling product",
+    "hair_length": "Short",
+    "eye_color": "Pale hazel, unusual warmth against wire-frame optical enhancement",
+    "skin_tone": "Warm medium brown with subtle undertones from mixed heritage",
+    "complexion": "Austere. Clean-shaven except for deliberate two-day stubble maintained with exactness. Minimal laugh lines—his face does not move often. Eyes carry the stillness of someone who listens more than he speaks. Slight creasing at the corners from years of sustained concentration. Skin is clear, unblemished, and suggests rigorous discipline rather than vanity.",
+    "distinguishing_marks": [
+      "Thin white scar along left jawline, approximately 3cm, barely visible unless light hits at precise angle—knife work, old",
+      "Faint burn mark on inside right wrist, 2cm diameter, partially obscured by watch cuff—thermal accident or deliberate"
+    ],
+    "visible_augmentations": "Wire-framed optical enhancers (gunmetal grey, vintage aesthetic, deliberately analog-appearing despite integrated document-analysis overlay). The frames are subtly incongruous on a man of his tier—Tier 1-2 personnel typically use neural overlays. This choice reads as deliberate refusal. No visible chrome. No subdermal lights or augmentation scarring visible on exposed skin.",
+    "posture_movement": "Economical and controlled. Walks with minimal shoulder rotation, as if conserving kinetic energy. Sits perfectly still during interviews—hands flat on desk or folded. Rarely gestures. Turns his entire body to look at someone rather than just his head, suggesting old tactical training. His silence carries more presence than most people's speech.",
+    "clothing_style": "Tier 1 corporate formal, but austere. Charcoal grey suit, always pressed, fitted to his narrow frame. White dress shirt, never a tie—Axiom permits this at his level. Minimal jewelry: only a steel watch (functional, not luxury). Black leather belt and shoes, both maintained to military standards. No logos, no chromatic variation, no status signifiers. The uniform of a man who has decided appearance is a tool for invisibility, not assertion."
+  },
+  "image_prompt": "Portrait of a 47-year-old Romanian-West African-Finnish man, lean and austere, warm medium-brown complexion, pale hazel eyes behind gunmetal wire-framed optical enhancers with subtle LED document-analysis overlay, dark hair with grey temples close-cropped, two-day stubble maintained with precision, thin white scar barely visible along left jawline. Wearing charcoal grey Tier 1 corporate suit, white dress shirt, no tie, steel watch. Sitting perfectly still at a desk in a cold Axiom Security Division office interior, harsh overhead lighting casting sharp shadows, expression unreadable and intense, eyes carrying the stillness of deep concentration. Film noir cyberpunk investigator, corporate internal affairs, methodical and deeply unimpressed by rank, background shows evidence lockups and security monitors, cool blue-grey color grading, cinematic lighting, photorealistic --ar 2:3 --v 6"
 }

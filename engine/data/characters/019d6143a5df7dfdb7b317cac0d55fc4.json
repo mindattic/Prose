@@ -249,5 +249,25 @@
     "Flicker",
     "Silver"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Filipino / Swedish",
+    "height_cm": 180,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and substantial without heaviness; the frame of someone who came from manual labor tier but has maintained discipline through corporate years. Solid, not athletic — the weight sits in his chest and shoulders.",
+    "hair_color": "Silver-gray, fully natural transition",
+    "hair_style": "Short, cropped close to the scalp, immaculately groomed",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unaugmented",
+    "skin_tone": "Warm medium brown with subtle golden undertones, reflecting Southeast Asian and Scandinavian heritage",
+    "complexion": "Weathered but well-maintained; minimal visible lines despite age, suggesting either genetic luck or subtle cosmetic intervention. Clean-shaven. Skin has the particular clarity of someone who treats their face as a professional asset.",
+    "distinguishing_marks": [
+      "A thin, pale scar running approximately 4cm along his left jawline, visible only in certain light, likely from his Old Harbor decades",
+      "Very faint burn scar on the inside of his right wrist, roughly 2cm diameter, almost invisible unless you know where to look"
+    ],
+    "visible_augmentations": "None. The cortical indexer, subvocal implant, and biometric regulation implant are all subcutaneous or neural. His eyes are unmodified. He wears a thin silver wedding band on his right ring finger — not married, a deliberate aesthetic choice for professional trust-building.",
+    "posture_movement": "Unnaturally still when seated or in conversation — the practiced stillness of someone who learned that motion reads as anxiety. Moves with economy when he does move. His hands are steady and his breathing is controlled. When alone, occasionally rolls something small between his fingers (the obsidian bead), a micro-movement that suggests his stillness is a performance, not a nature.",
+    "clothing_style": "Tier 2-3 corporate neutral: tailored charcoal and navy suits from mid-tier makers, white or pale gray shirts, minimal jewelry beyond the ring. Shoes are always polished. He dresses to be forgotten, to read as institutional rather than individual. Everything is expensive in a way that does not announce itself. His watch is a mid-range chronometer, intentionally unremarkable."
+  },
+  "image_prompt": "Portrait of a fifty-one-year-old Filipino-Swedish man with silver-gray hair cut short and immaculate, warm medium brown skin, dark unaugmented eyes. Broad-shouldered, substantial build. Wearing a tailored charcoal suit jacket and pale gray shirt. Seated with eerie stillness, hands relaxed, expression neutral and authoritative. Faint scar visible along left jawline. Minimal jewelry. Muted, controlled lighting suggesting a corporate office or high-end hotel bar. Cool color grading. Professional photography style, atmospheric, suggesting quiet power and carefully maintained facades. High detail on facial features showing the weight of two decades of performance. --ar 2:3 --v 6"
 }

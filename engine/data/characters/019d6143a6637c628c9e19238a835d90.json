@@ -182,5 +182,26 @@
     "The Pure Hand",
     "The Pale Mile"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Yoruba / Russian / Polynesian (Samoan or Tongan)",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Small-framed and lean, with a dancer's posture despite her age—shoulders open, spine naturally aligned. Her frame carries no excess but reads as strong rather than fragile; the musculature of someone who moves with intention.",
+    "hair_color": "Natural black with silver threading at the temples and along the crown",
+    "hair_style": "Cropped close to the scalp, revealing the contours of her skull; edges maintained with precision but without vanity",
+    "hair_length": "Short",
+    "eye_color": "Augmented: concentric rings of amber (outer) transitioning to dark brown (inner), creating a hypnotic iris pattern that catches light distinctly",
+    "skin_tone": "Deep warm brown with subtle undertones reflecting mixed West African and Pacific heritage—not uniform, but lived-in and grounded",
+    "complexion": "Unlined for her age in some places, deeply lined around her eyes and mouth in others—the geography of witnessing. Skin is clear, unadorned, with the matte finish of someone who uses no cosmetic geneware. Her hands show faint discoloration from repeated contact with dying skin; her nails are trimmed short and unpainted.",
+    "distinguishing_marks": [
+      "Thin white scar running from the base of her left ear to her jawline, barely visible unless light catches it at an angle—from a childhood accident with industrial machinery in Lagos",
+      "Small burn mark on the inside of her right forearm, pale and old, shaped vaguely like a teapot spout—from her first apartment in the Canopy, a faulty appliance, never treated cosmetically",
+      "Faint tracery of ritual scarification on her upper back (three parallel lines on each side of the spine, barely raised), done in private honor of her grandmother"
+    ],
+    "visible_augmentations": "Her irises are visibly non-human—the concentric ring pattern is precise and luminescent in certain light, immediately recognizable as geneware. Otherwise, no visible augmentations; her haptic enhancements are subcutaneous and undetectable without medical scanning.",
+    "posture_movement": "She moves with economy and grace, never rushing. Her gestures are fluid but deliberate—hands speaking as much as her voice. She has a habit of tilting her head slightly when listening, as if the angle helps her hear better. She sits deeply, as if anchoring herself to the space.",
+    "clothing_style": "Exclusively natural, undyed fabrics—linen, cotton, hemp, raw silk in cream, ivory, pale grey, and soft brown. Loose-fitting layered tunics, wide-leg trousers, soft leather sandals worn thin. A long shawl in oatmeal linen, always present, worn wrapped or draped. No logos, no synthetic fibers, no visible branding. Her clothes look handmade or sourced from artisan vendors—deliberately counter to the city's neon-soaked aesthetic. Small pouch worn at her hip containing ritual objects: stones, dried herbs, water in a carved bone vessel. She wears a single piece of jewelry: a thin silver band on her right ring finger, engraved with Yoruba script (her brother's name)."
+  },
+  "image_prompt": "A small Black woman, 158cm tall, with short natural silver-threaded hair, standing in soft natural light. Her most striking feature: luminous concentric iris patterns in amber and deep brown, glowing subtly. She wears layers of undyed cream and pale grey linen, a long oatmeal shawl draped across her shoulders, soft worn leather sandals. Her hands are large, warm, expressive, with the subtle discoloration of long caregiving work. Her expression is simultaneously gentle and unflinching. She is photographed in a spare bedroom—pale walls, a simple wooden chair, diffused morning light through sheer curtains. No chrome, no neon, no corporate branding. The aesthetic is contemplative, intimate, slightly removed from the cyberpunk world around her. Soft focus, natural color grading, shallow depth of field centered on her face and hands. --ar 2:3 --v 6"
 }

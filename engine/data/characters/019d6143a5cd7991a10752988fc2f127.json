@@ -239,5 +239,26 @@
     "The Coffin Nails",
     "Tessera TK-5 Compact 'Clerk'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Balkan (Serbian or Croatian)",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, muscular through the arms and back from decades of fine manual work. Not lean, not heavy — compact and dense, the physical grammar of someone who has earned her strength through repetition rather than pursuit.",
+    "hair_color": "Silver with dark root shadow; natural grey she stopped fighting at forty",
+    "hair_style": "Close-cropped, textured fade; maintained meticulously every three weeks",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, augmented with subtle amber iridescence visible only under certain light — the optical implant layer",
+    "skin_tone": "Dark amber with warm undertones, even complexion except for sun-weathered forearms",
+    "complexion": "Minimal facial lines for her age; sharp cheekbones and a broad, composed expression. Grooming is ritualistic — no makeup, skin kept clean and moisturized, a woman who understands that presentation is part of craft. Her gaze is steady and unforgiving.",
+    "distinguishing_marks": [
+      "Knuckle scars across both hands — thin white lines from fights or accidents she will not name, dating to her twenties",
+      "Small burn mark on her left ring finger, crescent-shaped, from the early years of document work",
+      "A faint tattoo on her inner right wrist — three vertical lines in a pattern that resembles a bureaucratic check mark, barely visible unless she turns her wrist deliberately"
+    ],
+    "visible_augmentations": "Her eyes carry a faint amber-copper sheen noticeable only in direct light, marking the optical implants. The reading glasses on her beaded chain are custom-built frames housing additional magnification hardware — the lenses themselves seem to catch light differently than glass. Her fingertips show no visible seams or scarring, but her hands move with an uncanny precision that suggests neural integration.",
+    "posture_movement": "Upright and economical. She never wastes motion. When seated, her hands rest in her lap or on the work surface in front of her, completely still until needed. When she moves toward you, she moves deliberately — no fidgeting, no habitual gestures. Her gaze settles on people and holds.",
+    "clothing_style": "Utilitarian, Tier 3-4 practical. Typically wears dark, well-maintained cotton or linen work shirts with the laundromat's faded logo (sometimes with sleeves rolled to the elbow for work). Over this, a charcoal wool vest or lightweight bomber jacket in muted colors — nothing that draws attention. Plain dark trousers, clean but worn, and expensive orthopedic shoes she buys every two years without complaint. A thin silver chain with small geometric charms around her neck — not jewelry, more like talismans. No visible corpo branding or pretension. Everything about her says: I am here to work, and I am very good at it."
+  },
+  "image_prompt": "A 44-year-old woman of West African and Balkan descent with dark amber skin, close-cropped silver hair, and an expression of focused intensity. She sits at a workbench under warm task lighting, her broad hands steady over delicate documents. Magnifying lenses on a beaded chain rest at her collarbone. Her eyes carry a subtle amber iridescence from optical implants. She wears a dark work shirt with rolled sleeves, a charcoal vest. The background shows a back-room workspace — a salvaged municipal records terminal glowing softly, stacks of paper, tools for document forgery, everything immaculate and precise. Cyberpunk, hyper-detailed, professional portrait lighting with slight amber tungsten color cast, photorealistic, mood of quiet mastery and meticulous craft. Sharp focus on hands and eyes. --ar 2:3 --v 6"
 }

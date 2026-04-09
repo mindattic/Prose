@@ -221,5 +221,28 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Matsebe) / Spanish (Olvera)",
+    "height_cm": 163,
+    "weight_kg": 61,
+    "build": "Compact and densely muscled; shoulders and upper back defined from decades of precision work and three mornings weekly of boxing. Forearms are remarkable — visibly corded with lean muscle and scar tissue from tool use and early experimental grafts. Core is tight; posture is corrected and deliberate.",
+    "hair_color": "Natural dark brown with silver threading at temples and crown",
+    "hair_style": "Worn pulled back in a tight braid, practical and controlled; a few escaped strands typical by day's end",
+    "hair_length": "Long (shoulder-blade length when unbraided)",
+    "eye_color": "Dark brown, natural; magnification implants visible as faint chromatic aberration at edges of iris under direct light, medical-grade lenses",
+    "skin_tone": "Rich warm brown, with undertones suggesting both West African and Mediterranean ancestry",
+    "complexion": "Skin is impeccably maintained — the result of decades of sterilization protocols and skin chemistry study. Fine lines around eyes and mouth from concentration and years of focused work. Hands show calluses from grip tools, but nails are always clean and filed. Face has high cheekbones, a broad nose, and a small scar on her left jaw from a boxing match thirty years ago that she never had corrected.",
+    "distinguishing_marks": [
+      "Full-body tattoo patchwork covering approximately 70% of visible skin; older pieces in faded blacks and greens layered beneath vibrant newer work in bioluminescent compounds of her own design; sleeves flow from shoulder to wrist on both arms with no negative space",
+      "Right hand features Helix Biosystems chromatic dermis graft; skin shifts between deep plum, copper, and cool silver depending on body temperature and chemical composition; appears to glow faintly under studio lighting",
+      "Left shoulder blade bears her earliest professional work: a simplified geometric pattern from 1998, deliberately left unmodified despite its technical inferiority, kept as a record",
+      "Inner left forearm displays a series of small vertical scars from early geneware integration testing in the 2190s; now incorporated into a larger abstract design that makes them invisible unless you know to look",
+      "Small ELF devotional mark on right wrist: an amber-colored line that pulses faintly with her heartbeat, refreshed quarterly"
+    ],
+    "visible_augmentations": "Right hand chromatic dermis graft is immediately noticeable; skin tone shifts subtly with ambient light and her physiological state, functioning as a live reference tool. Eyes reveal magnification implants under direct observation — faint chromatic fringing visible at iris edges and slight focal depth distortion. Small scent-enhancer node is subcutaneous but may be barely visible as a faint scar line behind right ear.",
+    "posture_movement": "Moves with economic precision; every gesture is deliberate and practiced from decades of fine motor work. Shoulders are slightly forward from studio posture, but she corrects this consciously through boxing training. Her hands are always in motion — adjusting tools, demonstrating designs in the air, gesturing when speaking. Her gaze settles intensely on details others miss. She walks the long way home through Pilsen Veil most nights, unhurried.",
+    "clothing_style": "Tier 3-4 practical; favors dark fitted pants or modified studio coveralls in muted charcoal or black. Wears loose linen or cotton overshirts in cream, deep indigo, or rust — easy to move in and simple to keep sterile. Steel-toed boots, worn but maintained. Minimal jewelry beyond her work: a thin silver ring on her right ring finger (a gift from a retired apprentice). Her clothes are functional, not fashionable, but tailored to her frame with clear intention. Studio smock is custom-made from medical-grade synthetic, stained with pigments in places it would be impossible to clean — a badge of decades of work."
+  },
+  "image_prompt": "A 47-year-old mixed-heritage woman with deep brown skin and silver-threaded dark hair in a tight braid, photographed in her tattoo studio under warm overhead lights. Her right hand glows with iridescent chromatic dermis graft technology, skin shifting between plum and copper tones. Her forearms are visibly muscled and covered in layered tattoo work spanning decades — vibrant bioluminescent designs over older faded geometric patterns. Dark brown eyes with barely-visible magnification implants. She wears a loose cream linen overshirt over dark fitted pants, studio smock splattered with pigment. She's leaning slightly forward over her workstation, hands in motion. Behind her, a cracked amber-glowing ELF shrine tablet. Cinematic lighting, warm copper and amber tones, shallow depth of field on her hands, hyper-detailed skin and tattoo work, cyberpunk body modification aesthetic, professional studio atmosphere, 35mm photography style, --ar 2:3 --v 6"
 }

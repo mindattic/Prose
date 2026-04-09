@@ -105,5 +105,26 @@
     "The Narrows Compact",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Southern African / Hungarian / Iberian mixed lineage",
+    "height_cm": 183,
+    "weight_kg": 89,
+    "build": "Athletic and lean with subtle shoulder breadth — the physique of someone who maintains discipline without ostentation. Weathered musculature suggests decades of hands-on problem-solving rather than gym maintenance.",
+    "hair_color": "Salt-and-pepper grey with dark brown undertones",
+    "hair_style": "Neatly trimmed fade, military-precise at the sides, slightly longer on top with a natural wave",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint amber rim — natural eyes, no chrome replacement",
+    "skin_tone": "Warm medium-brown complexion with olive undertones characteristic of mixed sub-Saharan and Central European ancestry",
+    "complexion": "Weathered face with visible laugh lines around the eyes and a thin scar bisecting the left jawline (pale, old). Five-o'clock shadow typical. Minimal grooming vanity — practical maintenance only. Hands calloused, fingers slightly shortened (old break history).",
+    "distinguishing_marks": [
+      "Thin pale scar running vertically along left jawline from ear to chin, approximately 8cm, likely a knife wound from his twenties",
+      "Network of small burn scars on both knuckles, consistent with hands-on enforcement work",
+      "Faded tattoo on inner left wrist (1.5cm diameter), appears to be a simplified lotus outline in black ink, barely legible with age"
+    ],
+    "visible_augmentations": "None visible. Any modifications are subcutaneous or internal.",
+    "posture_movement": "Economical and measured. Stands with weight slightly forward, shoulders relaxed but ready. Moves without wasted motion — a man who has learned that unnecessary gestures signal weakness or nervousness. Direct eye contact. Speaks in low register, forces others to lean in.",
+    "clothing_style": "Tier 3 utilitarian with Tier 2 edges: charcoal grey reinforced kevlar-weave jacket (Iron Lotus house style, fitted), dark smart-fabric shirt beneath, tactical cargo pants with visible thigh holster bracket. Worn leather gloves. Steel-toed boots. A single silver ring on his right ring finger (no diamonds, no flash). No visible logos or corporate affiliations. Everything is functional, nothing decorative."
+  },
+  "image_prompt": "Portrait of a 46-year-old male fixer in cyberpunk noir setting, mixed Southern African-Hungarian-Iberian heritage, warm medium-brown skin with olive undertones, salt-and-pepper hair in military fade, dark eyes with amber rim, weathered face with scar on left jawline. Wearing charcoal grey reinforced tactical jacket over dark smart-fabric shirt, leather gloves, no visible augmentations. Standing in moody neon-lit underground corridor of The Narrows, atmospheric haze, cool blue and amber street lighting casting shadows across face, gritty urban environment, serious expression, direct gaze, photorealistic, cinematic noir mood, high contrast lighting, 2226 aesthetic --ar 2:3 --v 6"
 }

@@ -28,7 +28,7 @@
       "That she will die before she has recorded enough"
     ],
     "core_desires": [
-      "To preserve an honest account of Meridian 88's history for people who weren't there",
+      "To preserve an honest account of GLMZ's history for people who weren't there",
       "To be remembered as someone who told the truth"
     ],
     "coping_mechanisms": [
@@ -174,5 +174,27 @@
     "The Pure Hand",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Icelandic / Ghanaian / Polynesian",
+    "height_cm": 152,
+    "weight_kg": 58,
+    "build": "Densely compact, upper spine curved forward in a gentle kyphosis from seven decades of terminal work and manuscript study; broad shoulders and thick forearms retain surprising strength despite age",
+    "hair_color": "Pure white",
+    "hair_style": "Cropped close to the scalp in a utilitarian cut, no styling",
+    "hair_length": "Short",
+    "eye_color": "Deep brown (natural); left eye shows faint metallic sheen from embedded reading-assist optical overlay",
+    "skin_tone": "Deep warm brown with undertones suggesting mixed West African and Pacific heritage",
+    "complexion": "Weathered but well-maintained; fine wrinkles concentrated around eyes and mouth from decades of squinting at small text; skin shows age spots on hands and forearms; careful grooming despite minimal cosmetic attention",
+    "distinguishing_marks": [
+      "Fine silver tracery visible beneath skin across both forearms and neck — dormant subdermal dermal-display lattice creating a river-tributary pattern",
+      "Thin white scar along left temple, approximately 3cm, consistent with old data-terminal interface injury",
+      "Age spots across the backs of both hands, darker brown against base skin tone",
+      "Calluses on thumb and forefinger of both hands from six decades of handling paper and binding materials"
+    ],
+    "visible_augmentations": "Thick-framed optical magnifiers (vintage style, real glass, not smart-glass) pushed up on forehead; faint metallic gleam in left eye pupil indicating reading-assist overlay; dormant subdermal display lattice visible as silvery tributary patterns beneath skin on forearms and neck; slight external port scar behind left ear (cochlear amplifier, older model)",
+    "posture_movement": "Moves with deliberate economy; slight forward lean to spine; hands in constant subtle motion even at rest — sorting, smoothing, organizing invisible objects; walks slowly but with clear purpose, never shuffling; sits with excellent posture once settled",
+    "clothing_style": "Tier 4 practical: hand-mended linen button-shirts in cream or soft gray, wool cardigans in dark charcoal or navy (decades-old, impeccably maintained), loose-fitting work pants in durable cotton or canvas. Reading glasses on a beaded chain. Canvas apron with deep pockets when working. No corpo branding, no chrome, no affectation — clothing chosen purely for durability and function. Shoes: comfortable, broken-in leather slip-ons."
+  },
+  "image_prompt": "portrait of an elderly icelandic-ghanaian-polynesian woman, age 78, small dense build with forward-curved spine, close-cropped white hair, deep warm brown skin with silver subdermal display tracery visible on forearms, thick-framed optical magnifiers pushed up on forehead, faint metallic gleam in left eye, weathered hands with visible calluses, wearing cream linen shirt and charcoal cardigan, surrounded by stacks of physical books and old data terminals, soft warm lighting from desk lamp, intimate archive library setting, calm and authoritative presence, hyper-detailed hands, cinematic character study, nostalgic archival atmosphere, --ar 2:3 --v 6"
 }

@@ -259,5 +259,25 @@
     "The Pale Mile",
     "Déjà Vu"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "West African / Northern European (possibly Scandinavian or British Isles)",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Tall and angular, almost deliberately spare—minimal muscle definition but dense and efficient, the posture of someone who uses as few movements as possible",
+    "hair_color": "Silver-grey, dyed deliberately to maintain that shade",
+    "hair_style": "Close-cropped, geometric precision, no styling product visible, looks cut every twelve days",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint luminescent uptick at the iris—ocular overlay hardware catching light at certain angles",
+    "skin_tone": "Deep warm brown with slight ashen undertone from consistent indoor tier-1 lighting exposure",
+    "complexion": "Expressionless baseline, skin meticulously maintained, absolutely no blemishes or visible scarring on the face. Mouth set in a neutral line. White-tinted lip pigment applied with mathematical precision—not thick, not stylish, functional. The effect is unsettling.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple to cheekbone, barely visible but catches light when she turns—old, possibly fifteen years, healed with expensive tissue restoration",
+      "Faint burn marks on both palms in geometric patterns (inside surface, not visible when hands are at rest) from the nerve-dampening implant installation sites"
+    ],
+    "visible_augmentations": "The ocular overlay is the only visible augmentation—a fractional glint in her pupils under fluorescent or bright LED light, most noticeable when she's reading someone's biometric stress. No external chrome, no visible subdermal plating. She operates in the space where augmentation becomes invisible infrastructure.",
+    "posture_movement": "Economical. Stands with weight distributed evenly, shoulders level. Walks at a measured pace with minimal arm swing. Hands rest flat on surfaces when seated. She moves like someone who has calculated the most efficient path through every room before entering it. No fidgeting, no adaptive movement—just transit from point A to B.",
+    "clothing_style": "Tier-1 corporate formal: tailored black or charcoal blazers with subtle silver threading (Synclaire house colors), high-thread-count grey or white shirts, matte black tailored trousers, black leather shoes with minimal ornamentation (not flashy wealth, wealth that doesn't need to announce itself). In field operations: same palette, slightly more functional fabrics. One visible piece of jewelry—a thin platinum ring on her left ring finger, no stone, no sentimentality visible in it."
+  },
+  "image_prompt": "A tall, angular 41-year-old woman of mixed West African and Northern European heritage, silver-grey close-cropped hair, deep warm brown skin with a faint ashen undertone, dark eyes with fractional LED-gleam augmentation, white-tinted lip pigment applied with geometric precision. Standing in a glass-walled office 40 stories above a dark sprawling cityscape at dusk, wearing tailored charcoal blazer with silver threading and crisp white shirt, hands resting flat and still on a dark desk scattered with holographic ledgers casting soft blue light. Her expression is perfectly neutral, bloodless, composed. Cyberpunk corporate thriller aesthetic, film noir lighting through floor-to-ceiling windows, cool color palette of silvers, charcoals, and cool whites, volumetric light from city below, ultra-detailed facial rendering, hyperrealistic skin texture, cinematic depth of field, 8k, --ar 2:3 --v 6"
 }

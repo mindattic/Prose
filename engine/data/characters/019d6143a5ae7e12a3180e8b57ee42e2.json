@@ -188,5 +188,26 @@
     "Compass Rose",
     "Gold"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Caucasian (Georgian)",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Tall and angular with lean musculature; the build of someone who moves efficiently rather than powerfully, shoulders squared but not broad",
+    "hair_color": "Natural dark brown",
+    "hair_style": "Close-cropped, even length, maintained with precision",
+    "hair_length": "Short",
+    "eye_color": "Deep amber-gold with circuit diagram patterning (augmented)",
+    "skin_tone": "Light brown with warm undertones, even complexion suggesting careful sun management",
+    "complexion": "Sharp facial structure with defined cheekbones and a strong jawline; minimal facial hair; skin condition is excellent with no visible blemishes or weathering — grooming reflects meticulous attention without vanity",
+    "distinguishing_marks": [
+      "Faint linear scar along left temple, approximately 3cm long, barely visible unless light hits at specific angle — result of a courtroom altercation in 2221",
+      "Small surgical scar at left wrist crease where subdermal data-port is implanted, approximately 1.5cm, well-healed and only visible on close inspection",
+      "Amber-gold irises with fine circuit diagram patterning throughout the iris surface, visible from arm's length — the only overtly cosmetic modification"
+    ],
+    "visible_augmentations": "Circuit-patterned amber-gold irises are the only visible augmentation. The subdermal data-port at left wrist is not visible during normal dress. Cochlear implant is completely internal with no external hardware.",
+    "posture_movement": "Moves with deliberate economy of motion; sits upright in meetings without appearing rigid; maintains neutral facial expression as default; hands are often still or performing small, precise gestures; walks with steady, purposeful pace; rarely fidgets or displays nervous tics",
+    "clothing_style": "Well-tailored, neutral-toned clothing in muted grays, blacks, charcoal, and deep blues; natural fabrics (cotton, linen, wool blends) that suggest Tier 1-2 spending without advertising it; clothing is expensive and made to last rather than fashionable; minimal jewelry beyond a simple silver watch; legal briefcase in worn leather rather than smart-fabric; overall aesthetic is 'professional who dresses for function, not status'"
+  },
+  "image_prompt": "Professional nonbinary human lawyer in cyberpunk setting, age 41, tall and angular frame, light brown skin, short dark natural hair, sharp facial features with composed expression. Striking circuit-diagram-patterned amber-gold eyes (augmented irises), primary distinguishing feature. Wearing well-tailored charcoal blazer over simple gray shirt, minimalist styling suggesting Tier 1-2 corpo world. Seated in modern legal office with ambient lighting, papers and documents on desk, subtle neon glow from city outside window. Cold professional lighting with hints of warm amber from iris augmentation. Serious, composed demeanor. Cyberpunk noir aesthetic, realistic portraiture, sharp focus on face and eyes. --ar 2:3 --v 6"
 }

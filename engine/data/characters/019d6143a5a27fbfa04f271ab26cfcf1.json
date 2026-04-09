@@ -8,7 +8,7 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Riot Suppression Specialist, Meridian 88 Metro Police",
+  "role": "Riot Suppression Specialist, GLMZ Metro Police",
   "age": 34,
   "status": "active",
   "location": "Fort Anchor, near Western and Chicago Ave",
@@ -58,10 +58,10 @@
     "She witnessed something she shouldn't have during a corporate-sanctioned 'security operation' and is carrying the evidence, unsure who to trust with it.",
     "A civilian she protected during a riot six months ago has been arrested on fabricated charges, and she's quietly trying to find someone to help — someone Metro PD wouldn't notice."
   ],
-  "narrative_function": "Moral conscience within law enforcement — a character who enforces unjust orders while quietly hating herself for it; can be a reluctant ally or a source of inside information about MPD operations; good for scenes where players need to understand the human cost of policing in Meridian 88.",
+  "narrative_function": "Moral conscience within law enforcement — a character who enforces unjust orders while quietly hating herself for it; can be a reluctant ally or a source of inside information about MPD operations; good for scenes where players need to understand the human cost of policing in GLMZ.",
   "augmentations": "Subdermal impact-absorption mesh in forearms and shins (standard issue); cochlear dampener to protect against sonic crowd-control discharge; bioluminescent stripe (cosmetic, personal mod)",
   "daily_life": "Shifts start at 1800 at Fort Anchor for briefing, then deployment rotations through The Circuit and Grand Corridor protest zones; off-hours she visits a Tier 2 canteen called Okoro's near the barracks, feeds her cats, and leaves burned data-sticks at her E.L.F. shrine.",
-  "affiliation": "Meridian 88 Metro Police, Public Safety Division — Crowd Management Unit",
+  "affiliation": "GLMZ Metro Police, Public Safety Division — Crowd Management Unit",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -250,5 +250,25 @@
     "The Pure Hand",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Slavic)",
+    "height_cm": 183,
+    "weight_kg": 89,
+    "build": "Heavily muscled and columnar — broad shoulders tapering to a narrow waist, thick neck, forearms dense with functional mass. Built for impact absorption and crowd control rather than aesthetics.",
+    "hair_color": "Black, natural",
+    "hair_style": "Cropped close to the skull in a military cut, with a single bioluminescent violet stripe running from left temple to nape that pulses faintly in response to elevated blood pressure",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Deep brown, even complexion with warm undertones",
+    "complexion": "Strong, angular jaw; high cheekbones; face carved for neutrality — minimal expression lines, minimal grooming beyond functional. Skin shows the wear of 12 years in riot suppression but no visible acne or blemishing.",
+    "distinguishing_marks": [
+      "Extensive scar tissue network along left forearm in the pattern of crush fractures from a crowd-crush incident approximately 8 years prior — white, slightly raised, maps the shape of interlocked fingers and bone breaks",
+      "Small burn mark on right shoulder blade from a sonic discharge ricochet (2221) — pale, roughly circular, diameter 3cm"
+    ],
+    "visible_augmentations": "Subdermal impact-absorption mesh visible as faint geometric scarring along both forearms and shins when skin is exposed — raised, silvered lines forming a lattice pattern beneath the surface. The bioluminescent hair stripe is the only overt aesthetic augmentation; the cochlear dampener is fully subcutaneous and invisible. Left wrist bears a faint circular scar marking the cochlear neural anchor point.",
+    "posture_movement": "Stands with weight evenly distributed, shoulders back — the posture of someone trained to hold ground. Moves with economical precision; no wasted motion. Default facial expression is studied neutrality. Her eyes track crowd dynamics even in casual settings. Favors a loose, ready stance; hands rarely fully relaxed at her sides.",
+    "clothing_style": "Off-duty: GLMZ Metro PD standard-issue riot suppression gear when on-shift — reinforced polymer combat vest in high-visibility orange/reflective gray, tactical cargo pants with utility webbing, steel-toed boots rated for impact. Off-duty casual is military-lean: matte black compression shirts, gray cargo trousers, unmarked tactical jacket (Tier 3 quality, durable rather than fashionable). Wears a small brass charm on a thin cord around her neck — a personal totem, possibly related to her E.L.F. practice. No jewelry beyond functional gear attachment points. Overall aesthetic is utilitarian, tier 3-4 working-class cop: built for function, indifferent to style."
+  },
+  "image_prompt": "Cyberpunk 2226 portrait of a 34-year-old West African-Eastern European woman, riot suppression specialist, dark deep brown skin, military-cropped black hair with a bioluminescent violet stripe pulsing temple to nape, strong angular face with studied neutral expression, dark brown eyes, muscular columnar build, 183cm tall, shoulders broad and thick-necked. Visible subdermal impact-absorption mesh scarring in lattice patterns along forearms and shins, silvered geometric lines beneath skin. Wearing matte-black GLMZ Metro PD tactical riot gear — orange and reflective gray reinforced polymer vest, gray cargo pants, steel-toed boots. Small brass charm on cord around neck. Standing in ready stance, weight balanced, hands loose. Background: Fort Anchor barracks interior, warm sodium-vapor overhead lighting casting long shadows, industrial concrete walls, faint glow of data-terminals in the distance, moody blue-gray color grading. Cinematic, realistic, portrait-focused, professional photography style, shot from waist-up. Film grain, shallow depth of field, professional studio lighting with practical environmental light sources --ar 2:3 --v 6"
 }

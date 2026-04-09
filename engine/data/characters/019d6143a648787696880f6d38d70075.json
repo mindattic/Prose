@@ -1,11 +1,12 @@
 {
   "id": "019d6143a648787696880f6d38d70075",
   "type": "character",
-  "name": "Kyle",
+  "name": "Kyle Ellen Corbin-Vasik",
   "aliases": [
+    "Kyle Corbin-Vasik",
+    "Kyle",
     "The Samurai",
     "NDC-4471",
-    "Kyle Vasik",
     "Ghost 7"
   ],
   "species": "human",
@@ -90,7 +91,29 @@
     "His escape may have been engineered — an unwitting field test",
     "The neural patterns of dead test subjects in his firmware are becoming more vivid"
   ],
-  "narrative_function": "Kyle is the lens through which the reader experiences Meridian City. His experimental hardware makes him perceive the world at a different speed and resolution, driving the prose style — tight, sensory, fragmented. His central contradiction: the facility made him a weapon, but he uses that weapon to protect the vulnerable.",
+  "physical_description": {
+    "heritage": "Eastern European / Pacific Islander (Corbin — Anglo-Slavic; Vasik — Czech-Polynesian)",
+    "height_cm": 180,
+    "weight_kg": 77,
+    "build": "Lean, ropey muscle — not gym-built, survival-built. Narrow hips, long arms, a frame designed for speed over power.",
+    "hair_color": "Dark brown, almost black",
+    "hair_style": "Short on the sides, longer on top, perpetually pushed back. Uneven — he cuts it himself with a blade.",
+    "hair_length": "Short",
+    "eye_color": "Grey-green — the left iris has a faint gold ring from the NeoCortex array's optic thread bleed",
+    "skin_tone": "Olive-tan, weathered. The kind of complexion that doesn't burn but doesn't glow either — it just endures.",
+    "complexion": "Clean-shaven. Faint acne scarring along the jawline. Skin texture slightly uneven around the temples where the electrode array interfaces subcutaneously.",
+    "distinguishing_marks": [
+      "Surgical scar — 4cm, behind the left ear, where the primary NeoCortex insertion port was cut. Poorly healed, keloid ridge.",
+      "Micro-scarring along both forearms — faint parallel lines from years of self-maintaining subcutaneous electrode threads with improvised tools.",
+      "Faded chemical burn on the right hand, palm side — pharmaceutical stabilizer spill. The skin is smooth and pale there, like wax.",
+      "No tattoos. No cosmetic augmentations. He does not decorate the hardware."
+    ],
+    "visible_augmentations": "None visible at first glance — the NeoCortex array is subcutaneous. On close inspection: faint trace lines under the skin at the temples, barely visible unless you know what to look for. The left pupil dilates fractionally slower than the right.",
+    "posture_movement": "Still when standing, efficient when moving. No wasted motion. Walks like someone who learned to navigate spaces where being noticed gets you killed. Hands stay loose and low. When he enters a room, his eyes track the corners before the people.",
+    "clothing_style": "Dark, functional, layered. Worn leather jacket over ballistic-weave underlayer. Cargo pants with reinforced knees. Boots that have been resoled three times. Nothing branded, nothing new. The katana rides across his back in a matte-black friction sheath."
+  },
+  "image_prompt": "Cyberpunk male, 27, lean athletic build, olive-tan skin, dark brown hair short on sides longer on top pushed back, grey-green eyes with faint gold ring in left iris, faint surgical scar behind left ear, micro-scarring on forearms, worn dark leather jacket over tactical underlayer, cargo pants, resoled combat boots, carbon-black katana across back in matte friction sheath, standing in rain-slicked neon-lit alley, clinical stillness, hands loose at sides, eyes scanning corners, photorealistic, cinematic lighting, cyberpunk 2200 aesthetic, no visible cybernetics, gritty urban environment, atmospheric fog, high detail --ar 2:3 --v 6",
+  "narrative_function": "Kyle is the lens through which the reader experiences the GLMZ. His experimental hardware makes him perceive the world at a different speed and resolution, driving the prose style — tight, sensory, fragmented. His central contradiction: the facility made him a weapon, but he uses that weapon to protect the vulnerable.",
   "augmentations": "Experimental NeoCortex Program Atlas array — 32,768 electrodes, 256 threads, 8x standard density. Degrading firmware. Gives cognitive speed, reaction time, fragmentary sensory access.",
   "daily_life": "Freelance enforcement, retrieval, problem-solving for the excluded. Maintains hardware with salvaged tools.",
   "affiliation": "Independent",

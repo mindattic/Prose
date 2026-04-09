@@ -244,5 +244,25 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Glass"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Samoan / Slavic / Armenian",
+    "height_cm": 165,
+    "weight_kg": 58,
+    "build": "Medium, lean without being thin — the build of someone who moves efficiently and doesn't waste energy. No visible musculature, no softness. Practical.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Blunt, chin-length cut with natural wave. Never layered, never styled differently. Cut every 6 weeks with identical precision.",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, natural (right eye contains unregistered optical enhancement — imperceptible to casual observation)",
+    "skin_tone": "Warm olive, the product of Samoan and Armenian ancestry mixed with Eastern European undertones",
+    "complexion": "Clean, unblemished skin with minimal makeup — concealer under the eyes only, applied with discipline rather than artistry. Long jaw softened by high cheekbones. No distinguishing facial features by design; her face is optimized for forgetting. Minor laugh lines at the corners of her eyes. Methodical grooming.",
+    "distinguishing_marks": [
+      "Small linear scar on the inside of her right wrist, roughly 2cm long, positioned where a medical injection would logically sit — from the unregistered optical implant surgery, partially obscured by her watch",
+      "No visible tattoos, no birthmarks, no piercings beyond baseline ear lobes which she does not use"
+    ],
+    "visible_augmentations": "None. The right-eye optical enhancement is completely internal and undetectable without intimate examination. She wears plain-glass frames that serve no optical function — they exist to give her face something her memory will latch onto, something forgettable.",
+    "posture_movement": "Economical, unremarkable. She moves through space without drawing attention. Her shoulders are relaxed. She does not fidget, does not gesture expansively, does not occupy more space than necessary. Her gait is steady and consistent. She looks down slightly when walking — not suspicious, just someone lost in mundane thought.",
+    "clothing_style": "Four identical outfits on rotation: dark grey or charcoal wool trousers (mid-tier tailoring, good fit, unremarkable), neutral long-sleeved top (cream, grey, or muted taupe), simple grey or black overshirt or cardigan, closed-toe black shoes (practical, comfortable, worn daily without affectation). All clothing is intentionally forgettable — mid-tier quality, Tier 3-4 aesthetic, no logos or visual markers. She dresses like someone's concerned mother, which is precisely the point. Her watch is an old mechanical piece, unremarkable. She wears her hair the same way every single day. She is the most ordinary woman in any room."
+  },
+  "image_prompt": "Portrait of a 38-year-old woman of mixed Samoan-Slavic-Armenian heritage, medium height, lean build, warm olive skin tone, dark brown shoulder-length wavy hair cut bluntly at chin length, dark brown eyes behind plain clear-glass frames, long jaw softened by high cheekbones, minimal makeup, unblemished complexion. Wearing neutral-toned long-sleeved clothing in grey or taupe, grey wool trousers, simple black cardigan, closed-toe black shoes. Unremarkable, forgettable appearance optimized for anonymity. Standing in the neutral background of a small alterations shop with soft fluorescent lighting, professional yet modest, the most ordinary woman imaginable. Cyberpunk near-future setting, Tier 3 working-class aesthetic, cinematic documentary photography style, cool color grading, perfectly composed, microdetail on her plain-glass frames, subtle suggestion of intelligence behind her eyes. Moody indoor lighting. --ar 2:3 --v 6"
 }

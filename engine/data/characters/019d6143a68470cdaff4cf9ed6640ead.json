@@ -253,5 +253,24 @@
     "The Pale Mile",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Yoruba-Nigerian / Serbian-Croatian)",
+    "height_cm": 173,
+    "weight_kg": 68,
+    "build": "Lean and economical, minimal muscle definition but functionally efficient; the posture of someone who sits for extended periods but maintains baseline fitness through deliberate discipline rather than enthusiasm",
+    "hair_color": "Natural deep brown, almost black",
+    "hair_style": "Short, practical, close-cropped on the sides with slightly more length on top — styled for minimal maintenance and maximum non-distinctiveness",
+    "hair_length": "Short",
+    "eye_color": "Pale silver-grey with concentric ring modding pattern visible across both irises; appears almost luminescent under direct light",
+    "skin_tone": "Warm medium brown with slight golden undertone",
+    "complexion": "Clean-shaven or with minimal stubble, features arrange themselves in a forgettable geometry — neither sharp nor soft, slightly asymmetrical in a way that resists memory. Skin shows the faint puffiness of someone who works night-adjacent shifts and drinks too much coffee. No visible blemishes or damage.",
+    "distinguishing_marks": [
+      "Faint pale scar along the right temple, approximately 3cm long, barely visible unless light catches it at specific angle — appears to be old surgical work"
+    ],
+    "visible_augmentations": "Pale silver-grey irises with concentric ring patterning across both eyes are immediately apparent upon direct eye contact; the modding creates a faint luminescent quality under artificial light. No external chrome, subdermal plates, or visible mechanical integration. Augmentation suite is entirely internal except for cosmetic iris modification.",
+    "posture_movement": "Moves with deliberate economy of motion; sits with spine neutral and shoulders relaxed, the posture of professional observers trained to remain unobtrusive. Eyes are in constant subtle motion — scanning, tracking, cataloging — even during casual conversation. Hands gesture minimally. When walking, maintains steady pace with occasional 90-degree turns as if mentally plotting grid coordinates. Gives impression of being physically present while mentally distributed across multiple data streams.",
+    "clothing_style": "Corporate casual, aggressively nondescript — muted greens, greys, charcoal, and stone tones. Generic poly-blend button-ups from mid-tier retailers, well-maintained but not fashionable. Dark grey trousers. Comfortable low-profile shoes suitable for extended wear. No visible branding or status markers. Clothing reads as 'background,' intentionally occupying no visual hierarchy. Tier 3-4 professional without aspiration toward higher or lower."
+  },
+  "image_prompt": "Cyberpunk surveillance operative, male, lean build, warm medium brown skin, close-cropped dark hair, striking pale silver-grey eyes with concentric ring modding pattern creating subtle luminescence, subtle scar along right temple, clean-shaven, wearing muted corporate casual clothing in grey and sage green, neutral nondescript button-up shirt, dark trousers, seated at observation station with multiple screens casting cool light on face, cyberpunk GLMZ interior setting, professional watch station environment with dim ambient lighting mixed with blue-white monitor glow, character appears simultaneously present and mentally distant, introspective, realistic detailed portraiture, grounded cyberpunk aesthetic, high resolution, moody professional lighting, photorealistic --ar 2:3 --v 6"
 }

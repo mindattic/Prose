@@ -183,5 +183,25 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Gold"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Persian",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, muscular through the arms and back from decades of repetitive lifting and stirring. Carries weight in her torso with the settled confidence of someone who has earned every kilogram through labor.",
+    "hair_color": "Permanent copper-gold gene-dye",
+    "hair_style": "Thick, tightly braided plait",
+    "hair_length": "Long",
+    "eye_color": "Concentric rings of amber and dark brown (cosmetic iris modification)",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Face mapped in laugh lines around the eyes and mouth, deep creases across the forehead from squinting over steam. Skin weathered but well-maintained. Nose slightly broad, features angular but softened by age and expression.",
+    "distinguishing_marks": [
+      "Burn scar tissue along the entire left forearm, irregular white and darker patches from a cooking fire twenty years prior, prominent when she raises her arm.",
+      "Fine network of heat-stress lines across her hands and wrists, discolored patches from repeated thermal exposure."
+    ],
+    "visible_augmentations": "Patterned irises with concentric amber-brown rings are immediately noticeable when she makes direct eye contact. Subdermal thermometer in her left palm appears as a faint circular indentation with a thin hairline scar; visible only when she deliberately shows it or in certain light.",
+    "posture_movement": "Moves with economic efficiency — no wasted motion, but not hurried. Stands with weight balanced, ready to pivot between pots. Gestures are expressive and maternal, hands often open and welcoming. When focused on a task, her shoulders hunch slightly and her entire frame narrows into concentration.",
+    "clothing_style": "Tier 3 working-class practical. Worn canvas apron in faded indigo, reinforced at stress points, stained with decades of broth splatter that she does not attempt to hide — they are badges. Underneath, simple long-sleeved thermal shirt in charcoal gray to protect from steam and heat. Loose-fitting linen pants in cream, cuffed at the ankle. Worn slip-on shoes with good grip, replaced annually. No jewelry except a thin brass ring on her right ring finger — old, dented, of unclear origin. She wears a faded Oxidian Market Vendors Guild pin on her apron."
+  },
+  "image_prompt": "Portrait of a 58-year-old West African-Persian woman with deep umber skin and laugh lines, wearing a faded indigo canvas apron stained with broth. Thick copper-gold hair in a long braided plait down her back. Her eyes are striking with concentric rings of amber and dark brown (cosmetic iris mod). Visible burn scars in white and darker patches across her left forearm. Standing in front of steaming pots in a cramped, neon-lit cyberpunk food stall in the Oxidian Market, steam rising around her. Warm, maternal expression. Dim overhead lighting mixing with the glow of heating elements. Cyberpunk setting, grimdark food vendor aesthetic, hyper-realistic detail on her weathered hands and face. Shot as a character portrait. --ar 2:3 --v 6"
 }

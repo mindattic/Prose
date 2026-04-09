@@ -173,5 +173,27 @@
     "The Pale Mile",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Baltic / West African / Eastern European (Latvian-Ghanaian-Russian)",
+    "height_cm": 171,
+    "weight_kg": 58,
+    "build": "Wiry and angular, all sharp elbows and kneecaps — the build of someone who survives on street food and stimulants rather than gym discipline. Bony shoulders, concave chest, no visible muscle definition.",
+    "hair_color": "Chromatic shift: deep teal to pale seafoam depending on ambient light temperature and mood",
+    "hair_style": "Cropped close to the scalp, deliberately maintained at 1-2cm length for maximum color visibility; no styling product, naturally matte finish",
+    "hair_length": "Short",
+    "eye_color": "Pale gray-green with a slight amber cast",
+    "skin_tone": "Pale golden-brown with warm undertones; the complexion of someone of mixed Baltic and West African descent with minimal sun exposure",
+    "complexion": "Face marked by a constellation of light freckles across the nose, cheeks, and bridge; skin clear but worn-looking with mild under-eye darkness from sleep deprivation; a faint scar through his left eyebrow (three cm, from a childhood accident). Jaw defined but softened by slight baby fat still lingering at 23. Perpetually slightly chapped lips.",
+    "distinguishing_marks": [
+      "Light freckle constellation across nose and cheeks, denser on the left side",
+      "Three-centimeter diagonal scar through left eyebrow, pale and well-healed",
+      "Small burn scar on the inside of his right wrist (1.5 cm), shaped like a crescent, from a data-soldering accident at age 19",
+      "Faint surgical scar behind his left ear, approximately 2 cm, barely visible beneath the hairline — site of audio implant installation"
+    ],
+    "visible_augmentations": "The color-shifting hair is immediately obvious and intentional. The audio implant in his left ear is subtly visible as a thin metallic ridge behind the earlobe if examined closely; faint blue LED glow occasionally bleeds from the implant site during high-ambient-signal periods. No other visible chrome.",
+    "posture_movement": "Perpetually in motion — bounces on his heels while standing, fidgets with inventory while talking, gestures expansively when excited (which is frequently). Walks with quick, efficient movements, head slightly forward. Often stands with arms crossed or one hand touching his cart. When listening intently, he tilts his head slightly left (toward the implant) and his eyes unfocus slightly.",
+    "clothing_style": "Tier 4 working-class-with-ambitions aesthetic. Faded synthetic jacket (knockoff corpo brand from three seasons ago) in charcoal gray, oversized to accommodate layering. Underneath: a fitted black compression shirt with faded neon-green panel details on the ribs (performance wear repurposed as streetwear). Pants are dark gray cargo pants with too many pockets, cuffed at the ankles. Shoes are worn synth-leather high-tops, left sole patched with bio-tape. A thin chain around his neck holds a corroded data-chip pendant (non-functional, purely aesthetic). Wears a fingerless synthetic glove on his right hand for cart handling and heat protection. No jewelry beyond the chain. Overall impression: broke but deliberate, curated from second-hand markets and bartered favors."
+  },
+  "image_prompt": "Cyberpunk portrait, young man mid-20s, pale golden-brown skin with light freckles across nose and cheeks, pale gray-green eyes, short hair shifting from deep teal to seafoam blue in cool light, wiry build, angular features. Wearing faded charcoal synthetic jacket over black compression shirt with neon-green ribs, dark gray cargo pants, worn synth-leather high-tops. Thin data-chip pendant on corroded chain. Behind him, a battered rolling cart overflowing with holographic data displays, obsolete media formats, cascading chip arrays. Neon glow from cart's display bleeding across his face. Left ear shows faint metallic implant ridge with subtle blue LED luminescence. Fast-talking expression, hands gesturing expansively. Bronzeline Tier 4 street setting, wet pavement, ambient broadcast signal visualization floating in air around him. Cinematic cyberpunk lighting, cool color grading, shallow depth of field. Shot composition: three-quarter angle, dynamic and energetic. --ar 2:3 --v 6"
 }

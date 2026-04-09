@@ -29,7 +29,7 @@
       "Never being able to stop running — the lifestyle is a trap disguised as freedom"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "The perfect run — one job so clean it becomes legend",
       "Stability — a place to sleep that's the same place two nights running"
     ],
@@ -285,5 +285,27 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Russian / Greek",
+    "height_cm": 158,
+    "weight_kg": 68,
+    "build": "Compact and densely muscled, built low to the ground with a center of gravity designed for stability and impact absorption. Broad shoulders tapering to a narrow waist. No excess mass — pure functional architecture.",
+    "hair_color": "Steel gray with natural dark undertones",
+    "hair_style": "Pulled back tight in a utilitarian braid, secured with matte black polymer bands",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown — natural, no augmentation",
+    "skin_tone": "Medium-dark complexion with warm undertones — sun-weathered in places, smooth in others",
+    "complexion": "Sharp cheekbones, defined jawline. Minimal scarring on face — suggests deliberate avoidance of facial damage. Skin shows the wear of six decades and hard living, but maintained with the same discipline applied to equipment. Thin lips, often pressed into a flat line.",
+    "distinguishing_marks": [
+      "Long surgical scar running down the inside of left forearm — augmentation installation point, partially camouflaged by tattoo work",
+      "Tattoo of geometric pattern wrapping the right shoulder — appears to mark augmentation seams beneath the skin",
+      "Burn scar across knuckles of right hand — old, pre-augmentation, from before the chrome",
+      "Small notch missing from left ear — probably from a contract gone sideways"
+    ],
+    "visible_augmentations": "Hydraulic joint assemblies visible at knees and elbows — polished titanium and brushed steel with synthetic muscle cabling. The joints are seamlessly integrated but unmissable — no effort made to hide them. Faint seams along the forearms and shins suggest bone lacing beneath the skin. Subtle LED indicators glow amber at the elbow and knee joints when she moves under load.",
+    "posture_movement": "Stands with weight balanced low and forward — a fighter's stance held at rest. Moves with mechanical precision, each motion economical and intentional. No wasted gesture. When she walks, there is a barely perceptible hitch in the rhythm where the hydraulic joints compensate for impacts. She carries herself like someone who has already accounted for everything that could go wrong.",
+    "clothing_style": "Tier 4 practical — form-fitting synth-leather jacket in matte black, unbranded. Cargo pants in dark gray with reinforced stitching and internal holster points. Steel-toed combat boots, scuffed and re-maintained repeatedly. A thin silver chain around her neck with no visible pendant — probably conceals something. No jewelry, no corpo logos, no affectation. Everything she wears is functional, replaceable, and designed to survive contact."
+  },
+  "image_prompt": "photorealistic cyberpunk street samurai, 62-year-old woman with steel gray hair in tight braid, dark brown eyes, compact muscular build 5'2\", visible titanium hydraulic joints at elbows and knees glowing amber, polished chrome augmentations, matte black synth-leather jacket, dark gray cargo pants, steel-toed boots, standing in defensive ready stance, weathered face with sharp cheekbones, minimal scars, neon-lit Kessler Row alley in background with arms dealer storefronts and augmentation clinic signs, cool blue and amber lighting, cinematic depth of field, gritty urban cyberpunk atmosphere, photorealism with mechanical detail, --ar 2:3 --v 6"
 }

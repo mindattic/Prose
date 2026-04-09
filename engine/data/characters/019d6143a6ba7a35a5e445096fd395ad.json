@@ -261,5 +261,27 @@
     "The Pale Mile",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Adjei heritage suggests Akan/Ghanaian lineage; Volkov suggests Russian/Ukrainian ancestry)",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Lean and angular with visible musculature concentrated in shoulders and core from precision work; long limbs with sharp joints that give an impression of controlled tension rather than bulk",
+    "hair_color": "Black, natural",
+    "hair_style": "Tight locs, usually pinned back from face with a magnetic clip during work hours; worn loose in evening",
+    "hair_length": "Medium (shoulder-length when unpinned)",
+    "eye_color": "Warm brown, slightly tired at the edges",
+    "skin_tone": "Warm brown with golden undertones; perpetually marked by ingrained synthetic lubricant staining at knuckles and nail beds (blue-grey patina that has resisted eleven years of cleaning)",
+    "complexion": "Sharp jaw with minimal facial hair (kept neatly trimmed), expressive features that animate quickly during discussion, visible fatigue lines around eyes suggesting long working hours, skin generally clear but weathered from bay exposure and chemical work",
+    "distinguishing_marks": [
+      "Pale amber bioluminescent strip running subcutaneously along right collarbone, approximately 12cm long, pulses visibly when heart rate elevates",
+      "Ingrained blue-grey synthetic lubricant staining across knuckles, cuticles, and under fingernails of right hand — permanent discoloration after 11 years of exposure",
+      "Faint chemical burns along inner left forearm (pre-amputation scarring, barely visible)",
+      "Calloused patches on palms and fingers from years of precision mechanical work"
+    ],
+    "visible_augmentations": "Left prosthetic forearm from elbow down, visually distinctive: constructed from salvaged Ferrogate transit pod actuator components (gunmetal grey with geometric ribbing), fitted with a medical-grade haptic sensation sleeve (synthetic polymer with visible micro-stitching), magneto-grip fingertip pads on each digit (dull metallic discs embedded in synthetic fingertips). Produces faint mechanical click/whir when flexing fingers. Right collarbone features visible pale amber bioluminescent strip beneath skin, glowing softly and pulsing with heart rate elevation. Deliberately mismatched and idiosyncratic in appearance rather than sleek or cosmetic-grade.",
+    "posture_movement": "Stands with weight slightly forward, shoulders angled as if perpetually leaning into a problem; moves with precision and economy of motion, each gesture purposeful. Left arm (prosthetic) moves with subtle mechanical hesitation — not limiting, but perceptible. Right hand often unconsciously traces machinery or surfaces when thinking. Makes frequent hand gestures while speaking, particularly when arguing a point. Pauses mid-motion when concentrating, as if physically holding a thought.",
+    "clothing_style": "Tier 3-4 working mechanic aesthetic: reinforced synthetic canvas work pants with multiple cargo pockets (usually stained with lubricant and marked with burn marks from welding), grey or faded black cotton/synthetic blend shirt (sleeves often rolled or cut short to accommodate prosthetic work). Over-layer is a sleeveless technical vest with internal tool loops and embedded LED work-light strips (powered by kinetic charging). Steel-toed boots, scuffed but well-maintained. Wears a magnetic wrist strap for carrying small tools. Minimal jewelry except for the utilitarian — no adornment. Goggles hang around neck even when not in use. Does not dress for appearances; every piece of clothing serves function. Off-hours: loose shirt, worn cargo pants, same boots."
+  },
+  "image_prompt": "A tall, angular Black-Eastern European man in his late 30s with tight black locs pinned back, warm brown skin stained with blue-grey mechanical lubricant at the knuckles. His left arm ends in a distinctly custom-built prosthetic limb: salvaged Ferrogate actuator parts in gunmetal grey with geometric ribbing, fitted with a visible haptic sensation sleeve. Right collarbone glows with a pale amber bioluminescent strip beneath the skin, subtly pulsing. He stands in a Tier-5 garage bay lit by harsh LED strips, surrounded by transit pod maintenance equipment and scattered tools. Wearing reinforced work pants and a grey shirt, a sleeveless technical vest with embedded work lights. His expression is focused and argumentative, gesturing mid-explanation. Sharp jawline, tired brown eyes, posture leaning into the work. Cyberpunk, gritty, mechanical, hyper-detailed, professional lighting, documentary photography style --ar 2:3 --v 6"
 }

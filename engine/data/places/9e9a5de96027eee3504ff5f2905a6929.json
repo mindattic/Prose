@@ -44,8 +44,16 @@
     "Runners between jobs, stretching their last Φ"
   ],
   "notable_locations": [
-    "The pull-tab curtain corner — where contracts are made",
-    "Maret's stool behind the bar — the only comfortable seat in the building"
+    {
+      "name": "The pull-tab curtain corner",
+      "description": "where contracts are made",
+      "tags": []
+    },
+    {
+      "name": "Maret's stool behind the bar",
+      "description": "the only comfortable seat in the building",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.8563,

@@ -31,7 +31,7 @@
     "core_desires": [
       "The perfect run — one job so clean it becomes legend",
       "Freedom from augmentation debt — the interest compounds like a tumor",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Control — micromanages everything within reach to compensate for the chaos everywhere else",
@@ -43,7 +43,7 @@
       "Cannot distinguish between caution and cowardice in themselves or others",
       "Overestimates their own abilities in situations outside their specialty"
     ],
-    "secret": "Tenzin Ahlstrom-Quartey sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Tenzin Ahlstrom-Quartey sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
@@ -279,5 +279,27 @@
     "Slagworks Industrial",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Rawboned and efficient — long-limbed with minimal body fat, the physique of someone who trains for endurance and precision rather than bulk. Shoulders slightly forward from years hunched over flight controls.",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Pulled back in a tight, functional braid; practical, no styling products",
+    "hair_length": "Long (mid-back when unbraided)",
+    "eye_color": "Gray-brown, direct and unblinking",
+    "skin_tone": "Medium brown with a slightly ashy undertone — either from the chemical air of Steamvent Alley or chronic sleep deprivation, likely both",
+    "complexion": "Weathered and lined around the eyes; minimal grooming beyond function. Slight scar tissue at left temple. No cosmetics. Skin has the texture of someone who spends time in hot, mineral-rich air without proper skincare.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple toward jawline — faint, old, possibly from a crash or street fight",
+      "Calluses across knuckles and palms — pilot and combatant's hands",
+      "Tattoo on inner wrist: minimalist targeting reticle in black ink, approximately 3cm diameter",
+      "Small burn scar on right forearm, thin and pale, consistent with old electrical contact"
+    ],
+    "visible_augmentations": "Neural interface jack at base of skull — polished chrome with faint circuitry etching visible at the edges, worn without cover or concealment. Slight subcutaneous shimmer at base of neck suggests subcutaneous neural array beneath skin. No visible limb modifications.",
+    "posture_movement": "Economical and controlled. Stands with weight balanced evenly, never fully relaxed. Moves with pilot's precision — efficient, calculated, no wasted motion. Eye movement is quick and systematic, as if still scanning instruments. Speaks sparingly; listens more than she talks.",
+    "clothing_style": "Tier 3-4 functional: reinforced flight jacket (matte black synthleather, multiple pockets, worn at cuffs), fitted gray cargo pants with thigh utility loops, scuffed steel-toed boots. No logos or branding. Wearing a subcutaneous wrist display visible only as faint luminescence under sleeve. One platinum ring on left ring finger — no obvious sentimental value, possibly a dead drop indicator."
+  },
+  "image_prompt": "A 40-year-old female pilot with long dark braided hair and gray-brown eyes, Scandinavian-West African heritage, medium-brown complexion weathered from chemical exposure. Standing in a cyberpunk getaway vehicle cockpit bathed in amber geothermal light. Visible chrome neural interface jack at base of skull, tactical flight jacket, serious expression, hands resting on controls. Moody atmospheric lighting with heat shimmer and industrial grit. Steamvent Alley aesthetic — metallic surfaces, warm mineral-tinged air, danger in stillness. Cinematic, photorealistic, film noir color grading. --ar 2:3 --v 6"
 }

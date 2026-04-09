@@ -2,7 +2,9 @@ using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Events;
 using StreetSamurai.Core.Extensions;
+using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Services;
+using StreetSamurai.MAUI.Services;
 
 namespace StreetSamurai.MAUI;
 
@@ -39,6 +41,10 @@ public static class MauiProgram
 
 		builder.Services.AddMauiBlazorWebView();
 		builder.Services.AddStreetSamuraiServices();
+
+		// MAUI: always full access, no auth
+		builder.Services.AddSingleton(new ReadOnlyState { IsReadOnly = false });
+		builder.Services.AddSingleton<IWriteAccessProvider, MauiWriteAccessProvider>();
 
 #if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();

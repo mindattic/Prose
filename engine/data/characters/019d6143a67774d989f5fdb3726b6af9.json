@@ -39,7 +39,7 @@
       "He genuinely believes the Lambs provide a kind of order that benefits the Stockyard — and there is some truth to it, which makes the belief dangerous",
       "He doesn't recognize how much his siblings already know"
     ],
-    "secret": "Six months ago he broke a market vendor's wrist during a collection dispute. The vendor — an elderly Micronesian woman named Pita — never reopened her stall. He found out she'd left Meridian 88 entirely. He has left an unsigned Φ200 deposit at her former stall's ELF shrine every month since, which he cannot afford."
+    "secret": "Six months ago he broke a market vendor's wrist during a collection dispute. The vendor — an elderly Micronesian woman named Pita — never reopened her stall. He found out she'd left GLMZ entirely. He has left an unsigned Φ200 deposit at her former stall's ELF shrine every month since, which he cannot afford."
   },
   "speech_patterns": {
     "vocabulary": "Economical — says what needs to be said and stops; more expressive in informal settings with people he trusts",
@@ -247,5 +247,25 @@
     "Timekeeper",
     "Big Rig"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African (Igbo) / North African (Maghrebi)",
+    "height_cm": 198,
+    "weight_kg": 104,
+    "build": "Heavily muscled and broad-shouldered — industrial strength without bulk. Chest wide and defined from consistent weight training. Forearms thickened visibly by subdermal impact mesh beneath the skin. Carries no excess fat.",
+    "hair_color": "Black, natural",
+    "hair_style": "Close-cropped, precision-cut, maintained weekly",
+    "hair_length": "Short",
+    "eye_color": "Brown with faint bioluminescent coral rings around the iris perimeter — pulses dim when elevated",
+    "skin_tone": "Deep rich brown with slight red undertone",
+    "complexion": "Clean-shaven, no facial hair. Smooth skin with minimal scarring on the face — his face is deliberately kept unmarked, a professional choice. Sharp cheekbones, wide jaw. Expression rests neutral and controlled; smiles rarely and briefly.",
+    "distinguishing_marks": [
+      "Three parallel ritual scars across the left forearm (inner side, wrist to elbow) — evenly spaced, deliberately self-inflicted with heated wire at age twenty, now pale silver against his skin",
+      "Faint grid pattern of subdermal impact mesh visible as subtle raised lines across knuckles and forearm fascia, most visible on the back of the hands"
+    ],
+    "visible_augmentations": "Bioluminescent iris rings (coral, faint pulse under exertion — a tell he dislikes). Subdermal impact mesh across knuckles and forearms creates slight texture variation in the skin, visible up close or in certain light. No obvious chrome plating or external augmentation — everything integrated.",
+    "posture_movement": "Stands with weight evenly distributed, ready. Moves with deliberate economy — no wasted motion. Walks slow, intentionally unhurried, shoulders slightly forward. Hands stay visible and loose, not aggressive but present. Makes minimal eye contact unless he is trying to convey something. When engaged physically, shifts into methodical efficiency; no flourish.",
+    "clothing_style": "Tier 3-4 practical wear. Black fitted compression undershirt or plain tee beneath a grey or charcoal canvas jacket — durable, functional, no logos or ostentatious branding. Dark work trousers, combat-cut, multiple pockets, worn with steel-toed boots scuffed from routine. A simple steel chain visible at the collar — family piece, not affectation. No visible jewelry beyond the chain. Clothes are clean, maintained, but not new; they read as well-worn professional gear rather than fashion statement."
+  },
+  "image_prompt": "A 27-year-old West African and North African mixed-heritage man, nearly two meters tall with deep brown skin and broad muscular shoulders, standing in cool blue-grey cyberpunk lighting. Close-cropped black hair, neutral expression, sharp cheekbones and wide jaw. His brown eyes have faint bioluminescent coral rings around the iris edges. Three parallel ritual scars visible on his left inner forearm, pale against his skin. Wearing a charcoal canvas jacket over a black compression shirt, dark work trousers, scuffed steel-toed boots. A simple steel chain at the collar. Subdermal mesh creating subtle texture across his knuckles and forearms. Standing in the Grainfort market district with industrial warehouse architecture behind him, neon signage bleeding into shadows, morning light filtering through urban haze, professional enforcer aesthetic, methodical and dangerous stillness, cinematic, gritty realism, highly detailed face and hands, volumetric lighting, neo-noir atmosphere --ar 2:3 --v 6"
 }

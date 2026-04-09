@@ -267,5 +267,25 @@
     "Teak",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Balkan (Serbian)",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Heavyset, broad-shouldered with a thick torso that speaks to decades of manual labor and desk work. Not fat — accumulated mass from a life of cargo-handling and middle-aged sedentism. Strong forearms, slight softening at the midsection.",
+    "hair_color": "Dark gray with remnants of black",
+    "hair_style": "Neatly trimmed, kept short and close to the scalp",
+    "hair_length": "Short",
+    "eye_color": "Teak brown — deep, warm, unremarkable",
+    "skin_tone": "Medium brown with golden undertones, the result of mixed West African and Balkan ancestry",
+    "complexion": "Weathered face with deep-set eyes and prominent broad cheekbones. Well-groomed gray beard trimmed with precision every Sunday. Slight creases around the eyes and mouth from eleven years of squinting at logistics displays. Skin shows the wear of shift-work under artificial light — not sallow, but lacking the vibrancy of outdoor time.",
+    "distinguishing_marks": [
+      "Faint scar tissue on both palms and inner wrists from a loading-dock accident in his forties, partially healed but visible when the light catches them",
+      "Small, faded tattoo on his right forearm — a symbol of his Ghanaian family line, barely visible unless someone looks closely"
+    ],
+    "visible_augmentations": "Heavy-duty haptic logistics gauntlets worn during work shifts — industrial gray composite with subtle LED feedback strips along the fingers and wrists. Removed and stored at his locker at end of day. Basic retinal clock overlay visible as a faint amber glow in his right eye under direct light — first-generation tech from 2181, never upgraded. Mechanical corrective brace on left leg beneath pant leg — visible only when he walks, manifesting as a slight, consistent drag in his gait.",
+    "posture_movement": "Moves with economical precision — no wasted motion, deliberate and measured. Walks with a pronounced asymmetry in his gait due to the partial left-leg correction, a slight drag that he neither compensates for nor acknowledges. Stands with weight distributed toward his right side. Hands are always moving — organizing, checking, adjusting — even at rest. When seated, he maintains an upright posture, shoulders squared, as if ready to respond to an alarm.",
+    "clothing_style": "Tier 3 working-class professional. Ferrogate-issued logistics vest in charcoal gray with reflective piping and company patches, worn over a plain cotton undershirt. Heavy-duty cargo pants in industrial blue, multiple pockets, slightly frayed at the cuffs from years of wear. Steel-toed boots, scuffed and re-soled multiple times. No jewelry except a scratched digital watch on his left wrist — functional, not decorative. A worn cloth jacket with a worn company pin on the collar, taken off during shifts and hung on his locker. Everything is clean but lived-in, maintained but not replaced."
+  },
+  "image_prompt": "A heavyset 58-year-old man of mixed Ghanaian-Serbian descent, medium brown skin with golden undertones, deep-set teak-colored eyes, neatly trimmed gray beard, short dark-gray hair. Standing in a brutalist logistics hub warehouse with industrial fluorescent overhead lighting casting harsh shadows. Wearing weathered Ferrogate Transit charcoal-gray logistics vest over plain cotton shirt, heavy-duty cargo pants, steel-toed boots. Heavy industrial haptic gauntlets with gray composite and LED feedback strips on his hands. Mechanical corrective brace visible on left leg beneath pant leg, creating a subtle asymmetrical stance. Background shows shipping containers, conveyor systems, and transit infrastructure. Cinematic lighting, film noir aesthetic with cold industrial color grading, 35mm photography style. Dignified, weathered, focused expression. --ar 2:3 --v 6"
 }

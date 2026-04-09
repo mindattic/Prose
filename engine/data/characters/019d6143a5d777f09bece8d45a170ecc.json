@@ -13,7 +13,7 @@
   "age": 30,
   "status": "active",
   "location": "The Overhang — residential shelves built onto megastructure exteriors, near Kedzie and Division",
-  "description": "Cem Padilla-Nti is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 30, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Cem Padilla-Nti plans to keep it that way. She works as a infiltrator out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nCem Padilla-Nti is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Cem Padilla-Nti is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 30, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Cem Padilla-Nti plans to keep it that way. She works as a infiltrator out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nCem Padilla-Nti is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.38,
@@ -279,9 +279,30 @@
   "registered_firearms": [],
   "related_entities": [
     "Ironveil Canopy",
-    "Meridian 88",
+    "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Turkish / Ghanaian / Hispanic",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Athletic and lean with defined musculature — dancer's grace married to fighter's tension. No excess, everything functional. Shoulders broad but not bulky, core visibly tight beneath fitted clothing.",
+    "hair_color": "Dark brown, naturally, but currently dyed a matte charcoal with subtle iridescent underlay that catches light in certain angles",
+    "hair_style": "Pulled back in a tight, low bun — practical, secure, difficult to grab. No loose ends, literally or professionally",
+    "hair_length": "Medium",
+    "eye_color": "Left eye: warm brown, organic. Right eye: cybernetic with gunmetal iris and faint LED circuitry visible around the pupil, capable of macro zoom and recording",
+    "skin_tone": "Warm medium brown — olive undertones from Turkish heritage, darker richness from West African ancestry",
+    "complexion": "Sharp cheekbones, defined jawline, angular features that read as 'not someone to underestimate.' Skin is clear and well-maintained but bears the tight, hydration-depleted look of someone who runs on coffee and adrenaline. Minimal cosmetics — a small amount of eyeliner around the cybernetic eye to blend the seams",
+    "distinguishing_marks": [
+      "Thin scar along the left temple, barely visible but present under sharp light — old injury, cleanly healed",
+      "Burn scar on the inside of her right forearm, roughly 3cm long, shaped like a power coupling — intentional documentation of a past identity's erasure",
+      "Faint tattoo on the inside of her left wrist: a geometric pattern in cipher — unbreakable by outsiders, personal meaning only"
+    ],
+    "visible_augmentations": "Neural dampener visible as a faint silvery mesh beneath the skin at the back of her skull, most apparent when hair is pulled tight or in direct light. The cybernetic right eye is partially visible as matte gunmetal with geometric etching around the socket. Both are deliberately left unhidden — a statement.",
+    "posture_movement": "Moves with predatory efficiency — no wasted motion, every step deliberate. Stands with weight balanced for instant movement in any direction. Eyes are always tracking, always assessing. When sitting, she occupies minimal space but maintains constant awareness of exits. Speaks quietly; people lean in to hear her.",
+    "clothing_style": "Tier 3 functional — form-fitting matte black synthetic bodysuit as base layer, sealed at wrists and ankles. Worn beneath a fitted charcoal grey tactical coat with secure pockets and smart-fabric seams that can bypass basic scans. Boots are military-grade, black, laced tight, soles reinforced for silent movement. No jewelry except a worn steel watch with encrypted timekeeping. Everything is matte-finished to reduce reflectivity. No logos, no branded affiliation. Clothing is selected for function: silent, durable, forgettable."
+  },
+  "image_prompt": "portrait of a 30-year-old infiltrator woman, Turkish-Ghanaian-Hispanic heritage, athletic lean build, sharp angular features, warm brown skin with olive undertones, dark charcoal hair in tight bun, one organic warm brown eye and one cybernetic gunmetal eye with LED circuitry glowing faintly, visible neural dampener mesh at back of skull beneath skin, thin scar on left temple, burn scar on right forearm, cold dangerous expression, wearing form-fitting black tactical bodysuit and charcoal grey smart-fabric coat, military boots, minimal jewelry, cyberpunk aesthetic, moody rim lighting, blue-grey color grading, professional assassin energy, photorealistic, shot against dark urban overhang structure background, subtle LED glow from cybernetics, high contrast shadows, 2226 tech aesthetic --ar 2:3 --v 6"
 }

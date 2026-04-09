@@ -42,7 +42,7 @@
     "secret": "He has been anonymously commissioned three times through an encrypted channel to paint specific imagery on specific walls in Brightmoor — imagery he thought was his own idea. He started to notice the pattern after the third job. The payment arrives in Φ before he even confirms. He has not told Residue."
   },
   "speech_patterns": {
-    "vocabulary": "Fast, slangy, mixes Finnish-Sahel patois from his grandmother's household with street Meridian 88 creole. Uses 'dead' as highest praise.",
+    "vocabulary": "Fast, slangy, mixes Finnish-Sahel patois from his grandmother's household with street GLMZ creole. Uses 'dead' as highest praise.",
     "cadence": "Quick, overlapping itself, trails off when he loses the thread then picks up somewhere unexpected.",
     "verbal_tics": [
       "'No but listen—'",
@@ -207,5 +207,26 @@
     "The Pure Hand",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Finnish / Polish",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Wiry and lean with long limbs; the build of someone who moves constantly and eats inconsistently. Defined shoulders and forearms from repetitive spraying motions, minimal body fat.",
+    "hair_color": "Natural dark brown with DIY dyed braids in alternating neon orange and white",
+    "hair_style": "Thin braids, typically pulled back with salvaged wire or fabric scraps while working; loose and chaotic when down",
+    "hair_length": "Medium, past shoulder length when unbraided",
+    "eye_color": "Light gray with slight amber undertone",
+    "skin_tone": "Fair with cool undertones, typical of Fennoscandinavian heritage",
+    "complexion": "Sharp angular features with high cheekbones; perpetually sleep-deprived appearance with dark under-eye circles. Skin shows the wear of late-night work and inconsistent hygiene — occasional aerosol chemical burns on cheeks and neck from spray blowback. Fingers stained with chromatic pigments in impossible hues (electric purple, synthetic cyan, neon lime) that don't wash out completely.",
+    "distinguishing_marks": [
+      "Chemical burn scars on right cheekbone from early aerosol experimentation, roughly 2cm in length, slightly raised and discolored",
+      "Ferrogate Transit security marker tattoo on left wrist (mandatory after second arrest) — small geometric symbol in black ink",
+      "Accidental spray-paint splatter scar on left hand webbing, iridescent pigment still faintly visible under skin"
+    ],
+    "visible_augmentations": "Asymmetrically positioned DIY cat ears mounted on skull via subdermal anchors — left ear sits approximately 0.5cm higher than right, both with slight rotational drift during movement. Ears are cheap cosmetic grade (synthetic cartilage, basic servo motors) with visible misalignment that Toivo claims is intentional. Fingertips display slow-cycling chromatic nail enhancement (consumer-grade bioelectric implants) that shift through unnatural color gradients — currently cycling through violet-to-magenta-to-cyan range.",
+    "posture_movement": "Restless and kinetic; rarely still for more than seconds. Moves with purpose and speed, shoulders slightly forward. Hands are constantly in motion even at rest — fingers flexing, gesturing, mimicking spray motions. When concentrating on art, enters a state of complete focus that contrasts sharply with his baseline hyperactivity. Default expression is wide-eyed enthusiasm or mischievous intensity.",
+    "clothing_style": "Tier 5 utilitarian with deliberate aesthetic flair. Typically wears paint-splattered cargo pants (multiple pockets for materials, cuffs stained with permanent chromatic residue) and oversized thrifted tech-company t-shirts from defunct 2180s-era startups. Layered jackets salvaged from Brightmoor recyclers — current favorite is a faded synthetic-fiber windbreaker with LED panel strips he's rewired himself (malfunctioning, blinks irregularly). Worn canvas sneakers with custom-painted soles. Carries a salvaged military-grade harness vest modified to hold aerosol cans, brushes, and chemical bottles. Heavy reliance on found/salvaged accessories: wire bracelets, scrap-metal rings, a cracked safety visor worn pushed up on his forehead."
+  },
+  "image_prompt": "19-year-old wiry Finnish-Polish male with angular sharp features, light gray eyes, dark brown hair in thin neon orange and white braids, sitting in an abandoned industrial transit relay station at night. Asymmetrical DIY cat ears on head with visible servo misalignment, fingers glowing with slow-cycling chromatic implants in impossible electric colors. Oversized paint-splattered cargo pants and vintage tech-company t-shirt, worn canvas sneakers, salvaged military harness vest covered in aerosol cans. Hands stained with iridescent pigments that don't exist naturally. Kinetic restless posture, wide-eyed intensity. Behind him: a massive living mural wall glowing with bioluminescent reactive compounds, shifting colors from deep purple to electric cyan in low light, chromatic pigments in the aerosol formula creating impossible hues. Industrial grime, exposed rebar, scattered spray cans and mixing equipment. Cyberpunk aesthetic, gritty Tier 5 squatter environment, moody neon ambient lighting, sharp contrast between darkness and glowing wall art. Street art culture, youth chaos energy, DIY augmentation visible. --ar 2:3 --v 6"
 }

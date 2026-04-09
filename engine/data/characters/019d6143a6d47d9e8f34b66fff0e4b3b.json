@@ -235,5 +235,25 @@
     "The Pale Mile",
     "Nightlight"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Norwegian / West African / Argentine Creole",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and substantial without excess softness; a frame built for stability and presence rather than speed. Muscular through the chest and upper back, thickening slightly at the midline—a body that suggests physical capability gone a bit complacent with middle age and office work.",
+    "hair_color": "Pale silver with faint platinum undertones",
+    "hair_style": "Severe bun, pinned with a customized data-spike stylus",
+    "hair_length": "Long (gathered up)",
+    "eye_color": "Deep brown, with a faint amber glow when retinal overlay is active (ledger mode)",
+    "skin_tone": "Deep warm brown with golden undertones; complexion carries the even tone of someone who works indoors under controlled lighting",
+    "complexion": "Heavy-featured face with a broad nose and pronounced cheekbones; skin condition is immaculate and well-maintained, suggesting disciplined skincare. No visible wrinkles despite her age—either excellent genetics or subtle geneware maintenance. Expression typically neutral, jaw often set in calculation.",
+    "distinguishing_marks": [
+      "Small tattoo on inner left wrist reading 'Φ+Φ=Φ' in old symbolic mathematical script, approximately 2cm tall, black ink with faint silver undertone from subdermal augmentation beneath the skin",
+      "Faint white scar along the right temple, barely visible, approximately 3cm long—old injury, cleanly healed"
+    ],
+    "visible_augmentations": "Reading lenses with active ledger overlay sitting on her cheekbones (commercial-grade frames with bespoke modifications, faint green tint to the glass); a polished chrome data-spike serving as her hair pin, approximately 8cm long with circuit tracings etched down its length. When she flexes her fingers, the faintest shimmer of subdermal tech is visible beneath the skin of her fingertips (vibration sensors), though only under close inspection.",
+    "posture_movement": "Sits with perfect spine alignment; moves with deliberate economy of motion—no wasted gestures. Her hands move with precision when working, hovering over surfaces as if calculating weight and balance. When standing, she settles her weight evenly on both feet, giving the impression of immobility. Her fingers occasionally vibrate slightly at the tips when she's reading a nervous client—a tell she's reading their tells.",
+    "clothing_style": "Tier 3-4 professional: tailored but practical. Favors long-sleeved shirts in muted grays and blacks to minimize distraction; high-quality synthetic blends that don't wrinkle. A charcoal wool vest, custom-fitted, worn over everything in the office. Flat black shoes with reinforced soles. A simple platinum bracelet on her right wrist—no visible branding, but the weight and finish suggest genuine pre-Collapse manufacture or high-end corpo reproduction. A leather ledger folio in weathered charcoal, always within arm's reach. Jewelry is minimal: a plain gold ring on her left ring finger (professional habit, not romantic statement)."
+  },
+  "image_prompt": "Cyberpunk portrait of a 44-year-old woman with deep warm brown skin and severe silver hair pulled into a tight bun pinned with a polished chrome data-spike. Heavy-featured face with broad nose, set neutral expression, wearing reading lenses with subtle green ledger overlay casting an amber glow in her dark eyes. Broad shoulders, substantial build. Wearing a tailored charcoal wool vest over a long-sleeved gray shirt, hands visible with faint subdermal shimmer beneath fingertips. Small symbolic tattoo 'Φ+Φ=Φ' visible on inner wrist in silver-threaded ink. Seated in dim office lighting, cool color grading, sharp focus on her composed expression. Retro-futuristic accounting aesthetic, professional dominance, patient predator. Gravesend Basin industrial setting in soft focus background. Shot from waist up, dramatic sidelighting, photorealistic, high detail --ar 2:3 --v 6"
 }

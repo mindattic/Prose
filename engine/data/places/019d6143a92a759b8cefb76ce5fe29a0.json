@@ -8,7 +8,7 @@
     "Tunnel Town",
     "Dual-Sov"
   ],
-  "description": "New Windsor sits across the Detroit River from the GLM's industrial heartland, and that proximity defines everything about it. The Ambassador Bridge — reinforced, widened, and draped in sensor arrays — and the Detroit-Windsor Tunnel form the two arteries connecting Canadian sovereign territory to the American corporate zones, and every drop of commerce that flows between them gets taxed, scanned, and surveilled twice. Once by each side. The result is a city that exists primarily as a jurisdictional membrane — a place where goods, people, and data change legal status simply by crossing a river.\n\nThe old automotive plants that once built cars for the North American market have been retooled into fabrication centers for neural interface components, autonomous vehicle subsystems, and military-grade augmentation hardware. Tessera Corponation and Zheng-Dao Bioelectric both maintain sovereign manufacturing enclaves here, exploiting the dual-sovereignty arrangement to dodge regulations on both sides of the border. Workers commute between jurisdictions daily, their legal rights flickering on and off like a bad connection as they cross the river. Canadian labor protections apply on the north bank. Corporate sovereign law applies on the south. The tunnel between is a legal no-man's-land where neither applies and everyone knows it.\n\nThe residential districts sprawl south and east from the riverfront, a patchwork of climate-refugee housing blocks, mid-tier corporate dormitories, and the decaying bones of twentieth-century suburbia that nobody has bothered to demolish. The population skews young, transient, and bilingual in ways that have nothing to do with French and English — Shelf Cant, Mandarin trade pidgin, and machine-interface shorthand are the languages that actually matter here. The city smells like ozone and river water, and on bad days the chemical plumes from Sarnia drift east and add a third note that makes your eyes water.",
+  "description": "New Windsor sits across the Detroit River from the GLMZ's industrial heartland, and that proximity defines everything about it. The Ambassador Bridge — reinforced, widened, and draped in sensor arrays — and the Detroit-Windsor Tunnel form the two arteries connecting Canadian sovereign territory to the American corporate zones, and every drop of commerce that flows between them gets taxed, scanned, and surveilled twice. Once by each side. The result is a city that exists primarily as a jurisdictional membrane — a place where goods, people, and data change legal status simply by crossing a river.\n\nThe old automotive plants that once built cars for the North American market have been retooled into fabrication centers for neural interface components, autonomous vehicle subsystems, and military-grade augmentation hardware. Tessera Corponation and Zheng-Dao Bioelectric both maintain sovereign manufacturing enclaves here, exploiting the dual-sovereignty arrangement to dodge regulations on both sides of the border. Workers commute between jurisdictions daily, their legal rights flickering on and off like a bad connection as they cross the river. Canadian labor protections apply on the north bank. Corporate sovereign law applies on the south. The tunnel between is a legal no-man's-land where neither applies and everyone knows it.\n\nThe residential districts sprawl south and east from the riverfront, a patchwork of climate-refugee housing blocks, mid-tier corporate dormitories, and the decaying bones of twentieth-century suburbia that nobody has bothered to demolish. The population skews young, transient, and bilingual in ways that have nothing to do with French and English — Shelf Cant, Mandarin trade pidgin, and machine-interface shorthand are the languages that actually matter here. The city smells like ozone and river water, and on bad days the chemical plumes from Sarnia drift east and add a third note that makes your eyes water.",
   "atmosphere": {
     "sights": [
       "The Ambassador Bridge lit with customs scanning arrays, a neon-traced spine over black water",
@@ -47,7 +47,7 @@
     "Border arbitrage — legal in one jurisdiction, profitable in the other",
     "Fabrication work for the skilled — augment technicians are always in demand",
     "Intelligence brokerage — information about corporate activity in Windsor is valuable in Detroit and vice versa",
-    "Refugee networks that connect Windsor to every displaced community in the GLM"
+    "Refugee networks that connect Windsor to every displaced community in the GLMZ"
   ],
   "story_hooks": [
     "A fabrication worker discovers the augmentation components she's building contain an undocumented surveillance substrate — and the specs came from both sides of the border",
@@ -56,7 +56,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "Meridian 88 (via Detroit crossing)",
+      "GLMZ (via Detroit crossing)",
       "Blackpipe Corridor (Sarnia, east along the chemical coast)",
       "The Trans-Canada Corridor (east toward Toronto)"
     ],

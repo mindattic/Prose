@@ -246,5 +246,26 @@
     "The Pale Mile",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Iberian (Portuguese/Spanish)",
+    "height_cm": 174,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and thick through the torso, muscular without being athletic — the build of someone who stands for twelve hours at a time and moves with deliberate economy. Her frame carries the weight of two decades of physical labor.",
+    "hair_color": "Deep black with silver threading throughout",
+    "hair_style": "Close-cropped locs, tightly maintained, approximately 5-7cm length",
+    "hair_length": "Short",
+    "eye_color": "Right eye: deep brown. Left eye: pale surgical prosthetic with faint Helix Biosystems branding visible at the iris edge, occasionally catching light with a subtle lag",
+    "skin_tone": "Deep warm brown with rich undertones, sun-weathered around the eyes and neck",
+    "complexion": "Strong facial structure, high cheekbones, broad nose. Skin is weathered but meticulously maintained. Fine creases around the eyes and mouth from exhaustion and concentration. No makeup. Expression defaults to attentive and slightly stern.",
+    "distinguishing_marks": [
+      "Bilateral surgical scarring on both forearms — dense, pale, crisscrossing patterns from the wrist to mid-forearm, evidence of repeated subcutaneous work and self-teaching",
+      "Thin white scar running from left temple to cheekbone, approximately 4cm, barely visible unless light catches it",
+      "Callused fingertips and hardened palms, particularly pronounced on right hand"
+    ],
+    "visible_augmentations": "Left eye prosthetic with slight luminescence and magnification capability. Faint subdermal patterning visible on the back of both hands under certain lighting — haptic feedback implant interfaces. Hands are noticeably cleaner than the rest of her appearance, suggesting obsessive post-procedure hygiene.",
+    "posture_movement": "Stands with weight distributed evenly, shoulders slightly forward from years hunched over surgical tables. Moves with controlled precision — no wasted motion. Hands are steady and deliberate. When focusing, her left eye occasionally halts a fraction of a second behind her right, a tell she's learned to live with. Overall bearing conveys exhausted authority.",
+    "clothing_style": "Permanently stained canvas surgical apron (originally grey, now mottled with old bloodstains and disinfectant bleaching) worn over layered thermal underlayers in dark greys and blacks. Beneath: practical cargo pants with reinforced pockets, black polymer boots with non-slip soles. No jewelry except a worn metal ring on her right ring finger — possibly a wedding band, worn smooth. Clothing is Tier 4 practical — function over aesthetics, maintained but not pristine. The apron is the only distinctive element, marking her role immediately."
+  },
+  "image_prompt": "A 47-year-old woman with deep brown skin and close-cropped silver-threaded locs, broad shoulders and weathered features, standing in harsh container-clinic lighting. Her left eye is a pale surgical prosthetic with faint Helix branding, her right eye deep brown and steady. Deep surgical scars map both forearms. She wears a permanently stained grey canvas apron over dark thermal layers and cargo pants, hands immaculately clean and steady. Behind her: a converted shipping container clinic with surgical lamps and worn equipment. Exhausted authority, clinical precision, slight fear in her presence. Cyberpunk street doc, Tier 5 gritty realism, overhead surgical lighting casting sharp shadows, colour graded in cool greys and rust tones, documentary photography style --ar 2:3 --v 6"
 }

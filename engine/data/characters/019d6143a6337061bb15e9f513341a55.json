@@ -194,7 +194,7 @@
   ],
   "related_entities": [
     "Lockhaven South",
-    "Meridian 88",
+    "GLMZ",
     "The CEO",
     "Cinderblock Ai",
     "Palladian Construction",
@@ -205,5 +205,26 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "The Milwaukee Core"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Romanian / Ghanaian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and angular with efficient musculature from years of physical labor; no excess weight, defined shoulders and forearms from pushing cleaning carts and manual repair work",
+    "hair_color": "Natural dark brown with color-shifting geneware strands that cycle sunset orange-red-purple when relaxed, flattening to grey under stress",
+    "hair_style": "Typically worn in a high, dense puff during work shifts; loose and natural off-hours",
+    "hair_length": "Medium to long (when down)",
+    "eye_color": "Dark brown, sharp and observant",
+    "skin_tone": "Medium brown with warm undertones",
+    "complexion": "Defined cheekbones with Romanian angularity; wide, expressive mouth usually held thin in concentration, breaking into an unexpected broad grin. Skin marked by persistent pale ghost-stains from cleaning chemicals on forearms and hands—marks they've stopped attempting to fully remove. Expression typically neutral or focused, with minimal resting friendliness.",
+    "distinguishing_marks": [
+      "Both forearms heavily marked with pale, permanent staining from cleaning product exposure—pale ghost-marks that map years of Palladian contract work",
+      "Fine scar on left palm from a broken beaker in apartment 9 (five years ago, never reported)",
+      "Faint chemical burn marks across knuckles and between fingers"
+    ],
+    "visible_augmentations": "Reinforced knee joints with faint mechanical click audible on stairs—second-hand grade self-installed augmentation, visible only when legs are bare or under scrutiny as slightly thickened joint capsules with subtle metallic sheen at the kneecap. Geneware hair strands visible only in good light as slightly more lustrous than natural hair, cycling through color changes.",
+    "posture_movement": "Fast, efficient, economical movement with a slight forward lean from pushing cleaning carts. Head typically down, focused on the immediate task. Walks with a faint rhythmic click from augmented knees on hard floors. Moves through the building with the ease of someone who knows every corner and obstacle intimately.",
+    "clothing_style": "Tier 4 working class, utilitarian. During shifts: grey Palladian-branded cleansuit (slightly worn, pockets reinforced with duct tape), slip-resistant shoes (non-slip rating fading), cargo vest with tool slots containing screwdrivers, adjustable wrench, spare cleaning masks. Off-shift: worn jeans, oversized borrowed hoodies (usually in muted colors—greys, deep blues), no jewellery or visible accessories. Practical, worn, never new. Everything chosen for function over appearance."
+  },
+  "image_prompt": "A lean, sharp-featured nonbinary person of mixed Romanian-Ghanaian heritage, age 29, with medium brown skin marked by pale chemical stains across both forearms. Their hair is in a high natural puff with subtle color-shifting geneware strands cycling between warm sunset oranges and grey tones. Dark, observant eyes, defined cheekbones, wide expressive mouth pressed thin in focus. Wearing a grey utilitarian Palladian cleansuit with visible wear and reinforced pockets, slip-resistant shoes. Standing in a worn residential building hallway under fluorescent lighting, pushing a rattling cleaning cart. Faint mechanical click visible at knees from augmented joints. Head slightly down, absorbed in work. Cyberpunk genre, gritty Tier 4 working-class realism, harsh institutional lighting, detailed texture focus on chemical stains and worn fabric, shallow depth of field, documentary photography style --ar 2:3 --v 6"
 }

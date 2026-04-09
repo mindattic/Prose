@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "Mobile through the Blackpipe Corridor, Irkalla, and the sub-levels beneath Brewer's Spine, near sub-level access near State and Van Buren",
-  "description": "Tsveta is thin and quick and almost always in motion, her energy giving the impression of something wound very tight and vibrating at a frequency just above human hearing. She has a cat-ear mod — large, mobile, dark charcoal grey — which she got not for aesthetics but for the genuine audio advantage they provide in tunnel environments; they swivel and tilt when she's listening hard, which is most of the time. Her face is narrow and expressive beneath a band of freckles across the nose and cheeks, and her eyes have patterned irises: concentric rings of amber and black that look like a sound-wave rendered in color. Her hands are nearly always occupied — she's either holding recording equipment, taking it apart, or making something new from pieces of things that used to be other things.\n\nShe is twenty-two and carries it with both the swagger of someone who has survived the deep tunnels young and the restlessness of someone who hasn't yet figured out what she's for. Her profession is strange and specific: the tunnel networks of Meridian 88 have peculiar acoustic properties, and certain deep junctions resonate with decades of accumulated sound — not intelligibly, not like recordings, but as dense textural phenomena. Tsveta hunts these resonance points, captures the audio with rigs she builds herself, and processes the captures into something she sells to surface archivists, experimental composers, and ELF shrine-keepers who believe the resonances carry spiritual data. She believes none of the spiritual dimension of this work and all of the beauty of it.",
+  "description": "Tsveta is thin and quick and almost always in motion, her energy giving the impression of something wound very tight and vibrating at a frequency just above human hearing. She has a cat-ear mod — large, mobile, dark charcoal grey — which she got not for aesthetics but for the genuine audio advantage they provide in tunnel environments; they swivel and tilt when she's listening hard, which is most of the time. Her face is narrow and expressive beneath a band of freckles across the nose and cheeks, and her eyes have patterned irises: concentric rings of amber and black that look like a sound-wave rendered in color. Her hands are nearly always occupied — she's either holding recording equipment, taking it apart, or making something new from pieces of things that used to be other things.\n\nShe is twenty-two and carries it with both the swagger of someone who has survived the deep tunnels young and the restlessness of someone who hasn't yet figured out what she's for. Her profession is strange and specific: the tunnel networks of GLMZ have peculiar acoustic properties, and certain deep junctions resonate with decades of accumulated sound — not intelligibly, not like recordings, but as dense textural phenomena. Tsveta hunts these resonance points, captures the audio with rigs she builds herself, and processes the captures into something she sells to surface archivists, experimental composers, and ELF shrine-keepers who believe the resonances carry spiritual data. She believes none of the spiritual dimension of this work and all of the beauty of it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -217,7 +217,7 @@
     "Brewer's Spine",
     "Ringo Corponation Haptic Signature Recorder",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Meridian 88",
+    "GLMZ",
     "The Resonance Communion",
     "Bathysphere Networks",
     "Irkalla",
@@ -230,5 +230,26 @@
     "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Bulgarian / Nigerian / Icelandic",
+    "height_cm": 164,
+    "weight_kg": 52,
+    "build": "Wiry and angular, all sharp joints and economical muscle; built for crawling through tight spaces and sustained motion rather than strength. Her frame suggests someone who subsists on irregular meals and constant kinetic activity.",
+    "hair_color": "Dark brown, almost black, with a faint reddish undertone",
+    "hair_style": "Pulled back in a tight, practical braid or bun; loose strands frequently escape and frame her narrow face",
+    "hair_length": "Medium",
+    "eye_color": "Patterned irises: concentric rings of amber and obsidian black, resembling a sound-wave visualization or a vinyl record. Sclera clear and alert.",
+    "skin_tone": "Warm caramel with olive undertones, scattered with freckles across the bridge of her nose, cheeks, and shoulders",
+    "complexion": "Fine-featured, narrow face with high cheekbones and a sharp jawline. Frequently wind-burned or dust-stained from tunnel work. Expressive—eyebrows mobile, mouth quick to animate. No makeup; her augmented irises serve as sufficient aesthetic mark.",
+    "distinguishing_marks": [
+      "Faint scars across her knuckles and the backs of both hands from handling rough salvage materials and broken recording equipment",
+      "A thin, pale burn scar along her left forearm (about 8cm long) from a close call with electrical equipment early in her career",
+      "Freckle constellation across her nose, cheeks, and upper shoulders—natural, dense enough to be a defining feature"
+    ],
+    "visible_augmentations": "Charcoal-grey cat ears (feline in anatomy, fully mobile and functional) mounted where human ears would be; ears swivel and tilt independently when she's actively listening. Custom acoustic recording rig worn as a harness across her chest and back: salvaged metallic components, visible wiring, contact patches, and sensor nodes. The rig is clearly DIY—welded, rewired, repurposed from decommissioned equipment. No chrome limbs or obvious subdermal armor; her augmentations are sensory and functional rather than combat-oriented.",
+    "posture_movement": "Perpetually coiled and alert, moving with quick, economical gestures. She fidgets constantly—adjusting equipment, tapping her fingers against recording apparatus, her ears rotating toward sounds others can't consciously hear. When stationary, she's rarely still; weight shifts, fingers work, eyes track. When moving through tunnels, she's fluid and low, using knees and hands as much as feet. Her energy reads as barely contained—vibrating at a frequency just slightly above rest.",
+    "clothing_style": "Tier 4/5 utilitarian: salvaged work pants (grey, patched at the knees and thighs) held up with a utility belt carrying tools, batteries, and recording media. A layered top system—usually a thin, faded synthetic shirt under a sleeveless vest (black, reinforced canvas, countless pockets) that doubles as her equipment harness attachment point. Worn boots with reinforced soles (tunnel-ready). No jewelry. A heavy coat or cloak for sub-level work, threadbare but functional. Clothing is functional over aesthetic; stains and repairs are visible and accepted as part of the job."
+  },
+  "image_prompt": "cyberpunk portrait of a young woman with charcoal-grey functional cat ears (mobile, swiveling), narrow angular face, warm caramel skin tone with prominent freckles across nose and cheeks, striking concentric amber and black patterned irises like a vinyl record, dark brown hair in a tight braid. Wiry athletic build, coiled energy. Wearing a custom DIY acoustic recording harness across her chest made of salvaged metal and wiring, patched work pants, reinforced boots. Surrounded by tunnel resonance chambers, bioluminescent fungi patches on walls, soft blue-green acoustic visualization waves in the air around her. Moody, dramatic lighting with contrast between shadow and bioluminescent glow. Hands raised, fingers adjusting recording equipment. Cinematic, gritty, intimate framing. Cyberpunk aesthetic, underground setting, sense of constant motion and focus. --ar 2:3 --v 6"
 }

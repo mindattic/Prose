@@ -243,5 +243,27 @@
     "Crucible UB-2 'Umbrella'",
     "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Finnish-Scandinavian / South Asian",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "build": "Tall and formerly athletic, now softened through the middle with age; broad shoulders still evident but spine slightly rounded from decades of hunching over data terminals and lakeside instruments",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, neatly maintained but slightly uneven as if trimmed by himself or someone indifferent to precision",
+    "hair_length": "Short",
+    "eye_color": "Left eye: deep brown, naturally occluded by age-related cataract (milky-white clouding across upper half of iris); Right eye: deep brown with faint golden circuitry visible at the corner where ocular HUD interfaces with the sclera",
+    "skin_tone": "Deep brown with warm undertones, weathered and sun-marked from decades of lakefront exposure",
+    "complexion": "Lined face with deep creases around the eyes and across the forehead; salt-and-pepper beard kept to approximately one-week growth, not fully groomed; skin texture slightly papery from sun exposure and age, but healthy. Left eye slightly more closed than right due to cataract progression.",
+    "distinguishing_marks": [
+      "Fine radiating wrinkles around both eyes, deepest on the left side, creating a permanent expression of squinting toward distant horizons",
+      "A thin vertical scar approximately 2 cm long on the right temple, old and pale, origin unknown or unmentioned",
+      "Forearm geneware pigment spanning 8 cm along the inner left forearm, currently displaying deep red coloration (barometric pressure indicator); the pigment shifts visibly between cobalt blue and burgundy depending on atmospheric conditions, creating a subtle iridescent gradient at the edges",
+      "Age spots across the back of both hands and upper forearms, consistent with lifelong sun exposure"
+    ],
+    "visible_augmentations": "Color-reactive barometric geneware on left forearm (functional atmospheric indicator, shifts blue-to-red with pressure changes); subtle golden circuitry visible at the right eye corner where ocular HUD neural interface meets the sclera; no obvious prosthetics or chrome. The augmentations are deliberately understated — academic-grade, practical, not aesthetic.",
+    "posture_movement": "Moves with deliberate, economical motions; frequently stops mid-stride or mid-conversation to observe the sky, tilting his head with the habit of someone who has spent three decades reading weather in cloud formations and wind patterns. Stands with hands often clasped in front, or one hand raised in explanation. When tired or frustrated, he hunches slightly and touches the bridge of his nose. His gait is steady but not hurried; the walk of someone who has nowhere urgent to be and much to observe.",
+    "clothing_style": "Tier 2-3 academic: well-worn University Spine lab coat (slate gray, with multiple button repairs and a faded logo on the chest) worn over practical but aging clothing — charcoal slacks, a thermal-weave undershirt in muted teal or grey, sometimes a wool sweater underneath in colder months. No visible corporate branding. Footwear is functional (waterproofed hiking boots, often muddy from lakefront station visits) rather than fashionable. He wears a tarnished silver watch on his left wrist, clearly decades old and frequently consulted. The overall impression is of someone who dresses for utility and weather, not appearance — Tier 2 institutional status visible only through the university affiliation, not through grooming or accessories."
+  },
+  "image_prompt": "A 61-year-old tall Black man with deep brown skin, white close-cropped hair, and a salt-and-pepper beard, standing at a lakefront monitoring station at dawn. He has a milky cataract obscuring his left eye while the right eye shows subtle golden circuitry from an ocular HUD. His left forearm displays a color-reactive barometric geneware pigment currently glowing deep red. He wears a worn slate-grey University Spine lab coat over layered practical clothing, waterproofed hiking boots muddy from outdoor fieldwork. He stands with his head tilted upward, observing storm clouds gathering over Lake Michigan, one hand raised thoughtfully. His posture suggests three decades of atmospheric study and weather-reading. Atmospheric monitoring instruments visible in soft focus background. Overcast morning light, cool color temperature, slight fog rolling off the water. Cinematic, naturalistic, worn academic aesthetic, cyberpunk mundane realism. Professional scientific documentation style. --ar 2:3 --v 6"
 }

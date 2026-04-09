@@ -253,5 +253,26 @@
     "Bronze",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Somali-Hawiye / Cook Islands / Czech",
+    "height_cm": 156,
+    "weight_kg": 72,
+    "build": "Wide and compact, solid through the shoulders and torso with the density of someone who has occupied the same space for decades. Not muscular, but not soft — a functional build that suggests long hours seated but with underlying structural strength.",
+    "hair_color": "Grey — complete silvering with no remaining pigment",
+    "hair_style": "Worn long in the back (shoulder-length), closely cropped at the sides. No deliberate styling; the effect is of grooming that prioritizes practicality over aesthetics.",
+    "hair_length": "Long",
+    "eye_color": "Bronze with hexagonal tessellation pattern — irises divided into perfect geometric cells, each facet slightly lighter at the edges, creating a honeycomb effect that catches light distinctly",
+    "skin_tone": "Very dark brown, almost charcoal in shadow, with subtle undertones that speak to East African ancestry",
+    "complexion": "Smooth despite age, with deep laugh lines around the eyes and mouth. Forehead is high and prominent. Jawline is long and defined. Very fine silver-grey down visible on forearms and upper cheekbones in certain light. No visible acne scarring or skin damage; skin suggests careful maintenance but not vanity.",
+    "distinguishing_marks": [
+      "Small surgical scar behind left ear, approximately 2cm long, partially obscured by hair — the entry point for their neural data jack, now nearly invisible due to tissue healing and age",
+      "A thin white line running from the inner corner of the left eye toward the temple, barely noticeable, origin unknown to most",
+      "Subcutaneous patterning visible faintly along the left forearm under certain angles of light — geometric designs suggesting deliberate implant mapping rather than tattoo work"
+    ],
+    "visible_augmentations": "The hexagonal iris mod is immediately visible and unmistakable — it is the first thing most people notice. The neural jack behind the left ear is hidden by hair but can be glimpsed if they move or if light catches it at the right angle. The scent gland enhancement is not visually apparent. They do not attempt to conceal any of this.",
+    "posture_movement": "Sits more than they stand. When seated at their center table in The Still, they are remarkably still — hands poised over keyboard or resting on the table, spine straight but not rigid. When moving, they move with economic efficiency, no wasted motion, as though their body has learned that every gesture in Shallowgrave should mean something. They make direct eye contact and hold it, which is slightly unnerving given the augmented irises. Their head tilts slightly when listening — a small tilt toward the speaker, as though collecting their words more carefully.",
+    "clothing_style": "Tier 4 working-class aesthetic with deliberate indifference to fashion. Default outfit: charcoal or black thermal base layer, loose-fitting grey utility overshirt (often Yakuza-market surplus, durable synthetic-cotton blend), matte black cargo pants with thigh pockets for data drives or tools. Footwear: worn grey canvas boots (laced, maintained but not pristine). A single piece of jewelry — a thin bronze bracelet on the right wrist, old enough that it has developed a patina, possibly intentionally matching their eye color. No logos, no LED elements, no chrome accents. Everything about their presentation suggests someone who has optimized for invisibility in plain sight."
+  },
+  "image_prompt": "Cyberpunk portrait, nonbinary character, age 51, very dark skin tone, high forehead, long jawline, complete silvery-grey hair worn long in back and cropped at sides, striking bronze hexagonal tessellation iris mod creating geometric honeycomb pattern in eyes, basement node café setting with soft blue-green monitor glow, seated at cluttered center table surrounded by multiple screens and data terminals, wearing loose grey utility overshirt and black thermal layers, calm composed expression with direct unsettling gaze, moody atmospheric lighting with harsh shadows, cinematic depth of field, soft bokeh background of server racks and hanging cables, photorealistic with cyberpunk color grading, 2226 GLMZ aesthetic, small visible surgical scar behind left ear barely concealed by long hair, worn bronze bracelet on wrist, high contrast between cool ambient light and warm task lighting, intricate background showing data-dense environment, shot from mid-table perspective --ar 2:3 --v 6"
 }

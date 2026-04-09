@@ -29,7 +29,7 @@
       "Going cyberpsycho — losing the boundary between human and machine"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Control — over their body, their schedule, their future",
       "To protect the people in their district who can't protect themselves"
     ],
@@ -286,5 +286,27 @@
     "Pellucid Systems",
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with visible musculature — no excess mass, optimized for field mobility and climbing. Wiry rather than bulky, with the kind of economical frame that suggests years of physical work rather than gym discipline.",
+    "hair_color": "Dark brown with premature silver threading at temples and jaw line",
+    "hair_style": "Short, practical, swept back. Minimal grooming — function over aesthetics.",
+    "hair_length": "Short",
+    "eye_color": "Left eye: dark brown, natural. Right eye: polished chrome with faint amber illumination behind the lens (cybernetic replacement with recording optics).",
+    "skin_tone": "Warm medium brown — darker along the Mediterranean/East African side, lighter undertones from Nordic ancestry — creating subtle olive undertones across high cheekbones and jaw.",
+    "complexion": "Gaunt, weathered. Sharp cheekbones, defined jaw. Perpetual tension in the facial muscles suggests chronic sleep deprivation or baseline stress. Skin is clear but sun-damaged in patches; minor scarring along the left temple and jaw from old trauma. No facial hair — kept clean and maintained with clinical precision.",
+    "distinguishing_marks": [
+      "Surgical scar along the left temple, approximately 8cm, faded white — evidence of the cybernetic eye replacement procedure",
+      "Thin white scar running from left collarbone to sternum (approximately 12cm) — old penetrating trauma, professionally sutured",
+      "Burn scarring on the dorsal surface of right hand, mottled pale pink, covering approximately 20% of the hand surface — thermal injury, pre-augmentation",
+      "Tattoo on inside of left forearm: medical caduceus rendered in silver-black ink with coordinate markers embedded in the design — functional and decorative"
+    ],
+    "visible_augmentations": "Chrome gecko-grip fingertip implants — visible as reflective metallic fingertips with microstructured surfaces, noticeably present on both hands. Chrome gecko-grip toe pads visible when barefoot (frequent in dockside environments). Right eye is unmistakably cybernetic — polished chrome housing with amber optical gel, faintly luminous in low light. No attempt at camouflage or aesthetic concealment — worn as functional, visible equipment.",
+    "posture_movement": "Economical and precise. Moves with the kind of controlled tension that suggests combat training or years of high-stakes fieldwork. When still, there's a baseline readiness in the shoulders and hands — never fully relaxed. Climbs with unnatural ease due to gecko-grip augmentations, ascending vertical surfaces with spider-like efficiency. Hand movements are surgical-grade steady, even when sleep-deprived.",
+    "clothing_style": "Tier 3-4 utilitarian. Dark technical fabrics (synthetic blends designed for low visibility and durability) — charcoal, black, deep blue. Cargo pants with reinforced thigh pockets for medical gear. Modular tactical vest over form-fitting base layer, often armored or padded in critical zones. Durable boots with traction-enhanced soles, scuffed and maintained rather than new. Minimal jewelry aside from functional gear. No corpo branding or status symbols — clothes serve survival and work, not identity. Carries medical pack on left shoulder, always accessible."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 42-year-old male field trauma surgeon, lean angular build, Scandinavian-West African heritage, dark brown skin with warm olive undertones, sharp cheekbones, gaunt weathered face. Dark brown left eye, right eye is polished chrome cybernetic with faint amber glow and recording lens. Silver-threaded dark hair swept back, short. Visible chrome gecko-grip fingertip implants on both hands, reflective metallic. Surgical scar on left temple, burn scarring on right hand. Wearing dark technical tactical vest over black base layer, cargo pants, durable boots. Medical equipment visible. Nocturnal dockside setting, Lake Michigan waterfront in background, dim sodium lighting casting harsh shadows, moody cyan and orange color palette, film noir atmosphere, clinical precision in posture and expression, baseline tension visible in shoulders and hands, cyberpunk field medic aesthetic, gritty urban harbor environment, volumetric fog, realistic character portrait photography --ar 2:3 --v 6"
 }

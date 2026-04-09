@@ -242,5 +242,27 @@
     "Gold",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Polish-Jewish",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and sturdy, with the dense musculature of someone who has stood at a market stall for thirty years grinding compounds by hand. Not heavy, but solid — carries weight with authority rather than bulk.",
+    "hair_color": "Natural dark brown with silver threading at the temples",
+    "hair_style": "Wrapped tightly and tucked beneath a wide-brimmed hat; when exposed, worn in neat locs past shoulder length",
+    "hair_length": "Long (typically covered)",
+    "eye_color": "Warm brown iris with cosmetic shift-mod that cycles between deep violet and copper-gold depending on ambient light and angle",
+    "skin_tone": "Dark amber complexion with deep saturation, sun-weathered and rich",
+    "complexion": "Face creased from fifty-two years of outdoor work and genuine smiling; laugh lines around eyes are prominent. Skin is clear but textured, with faint burn scars on her cheekbones from a market fire in her thirties. Her features blend Yoruba bone structure with Polish-Ashkenazi cheekbones — a striking, asymmetrical beauty.",
+    "distinguishing_marks": [
+      "Pale burn scar tissue runs across both cheekbones in a starburst pattern, legacy of a propane fire at the Souk in 1998",
+      "Deep indigo tattoo on her left inner forearm: a Adinkra symbol (Sankofa) inked by a street artist twenty years ago",
+      "Chronic dark staining on her palms and fingers from botanical compounds — pigment embedded so deeply it's nearly permanent despite daily scrubbing",
+      "Small raised scar on her right temple where an early-model iris mod was crudely installed"
+    ],
+    "visible_augmentations": "Cosmetic shift-iris mod visible in her warm brown eyes (the violet-copper cycling is unmistakable under direct light). Subdermal thermal regulators in her hands are not externally visible but her palms maintain a steady warmth even in cold weather — observant people notice she never shivers. Her hands move with unnatural precision and steadiness when working.",
+    "posture_movement": "She stands rooted at her stall like a tree — weight evenly distributed, shoulders back, head slightly forward as if always listening. Her movements are economical and deliberate; she doesn't fidget or waste motion. When she walks, she moves slowly but with purpose, her broad frame parting crowds without aggression. Her hands are always moving: grinding, measuring, reaching, gesturing. She speaks with her whole body.",
+    "clothing_style": "Tier 3-4 practical wear layered for all weather. A loose linen shirt (faded indigo, handwashed) tucked into wide canvas trousers with multiple pockets and reinforced seams. Over this, a heavy canvas apron stained with decades of botanical residue — reds, yellows, browns, blacks. Her wide-brimmed plastene hat (cream-colored, weathered to gray-tan) is strung with dried medicinal herbs, prayer beads, and small glass vials of her most popular compounds. She wears a heavy cloth wrap — currently rust-colored — tied loosely around her shoulders. Her shoes are practical market boots, scuffed and resoled multiple times. No jewelry except for a single silver ring on her right ring finger, unmarked. Everything about her dress screams 'I am here to work, not to impress.'"
+  },
+  "image_prompt": "A 52-year-old West African-Polish woman with dark amber weathered skin, warm brown eyes with subtle violet-copper iridescent shift, prominent laugh lines and faint burn scars across her cheekbones. Her dark locs are tucked under a cream-colored wide-brimmed hat strung with dried herbs and glass vials. She wears a faded indigo linen shirt and canvas apron stained with botanical pigments (reds, yellows, browns). Her enormous steady hands are perpetually stained with herbal compounds. Standing at an outdoor market stall with cooling units and medicinal compounds visible, incense smoke curling upward. Warm golden hour lighting, urban GLMZ Tier 3 market setting, wet pavement reflecting light, weathered brick buildings in background. Her posture is rooted and present, radiating quiet authority and maternal practicality. Cyberpunk street pharmacist aesthetic, analog and organic, worn but dignified. --ar 2:3 --v 6"
 }

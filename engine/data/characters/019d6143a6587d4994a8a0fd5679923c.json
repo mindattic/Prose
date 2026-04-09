@@ -200,5 +200,25 @@
     "Elena Vasquez-9",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Mixed European / East Asian (surname suggests French-Slavic / Japanese lineage)",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Slender, wiry frame with minimal musculature — built for misdirection rather than presence. Shoulders slightly narrow, posture naturally unassuming. The kind of body that vanishes in a crowd by design.",
+    "hair_color": "Dark brown, naturally occurring — the default state before modification",
+    "hair_style": "Kept short and unremarkable; styled differently depending on active identity. In downtime, often undone.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, slightly oversaturated — the only constant. Pupils dilate and contract with active recall; tells if you know how to read it.",
+    "skin_tone": "Pale to medium, warm undertone — capable of shifting 10-15% via dermal sculpting array. Currently sits at neutral baseline.",
+    "complexion": "Smooth, intentionally forgettable features. High cheekbones, slightly asymmetrical jawline (asymmetry aids memorability tricks). No blemishes, scars, or natural distinguishing marks — the blank canvas before performance. Skin texture can shift from smooth to subtly textured depending on role requirements.",
+    "distinguishing_marks": [
+      "Faint linear scar on left inner wrist, 4cm long, pale and old — from before the augmentations, before the faces. They don't modify it; it's insurance against forgetting who started this.",
+      "Subdermal implant ports at temples (disguised as natural skin dimples when inactive) — visible only if looking closely or if caught mid-shift."
+    ],
+    "visible_augmentations": "None visible at baseline. The dermal sculpting array is subcutaneous; the voice modulator implant sits behind the larynx. The eidetic cortex implant leaves no external markers. However, subtle tells betray the augmentations: pupils that dilate unnaturally fast during conversation, skin that seems to shimmer faintly under certain light angles, micro-expressions of concentration when accessing implant-stored memories. Anyone trained in reading augmentation signs would clock them immediately.",
+    "posture_movement": "In baseline state: economical movement, minimal gesturing, posture that avoids drawing attention. They move like someone who has learned to exist in spaces without occupying them. In performance: posture shifts radically — slouch becomes confident spine, shuffle becomes purposeful stride. The transition is the tell; they commit entirely to whoever they're being in the moment. Under stress, fingers twitch subtly (implant processing lag), and they blink in patterns that don't align with natural conversation rhythm.",
+    "clothing_style": "In downtime: oversized hoodies (charcoal, black, muted blue), loose-fit pants, worn sneakers — juvenile aesthetic, almost deliberately underdeveloped. Tier 3-4 comfort wear; nothing branded. In active roles: wardrobe rotates per identity — corporate Torii Security consultant one day (tailored blazer, sharp trousers, minimal jewelry), maintenance tech the next (company-issue jumpsuit, utility belt, work boots). All clothing is rented, borrowed, or acquired under false names. Nothing is kept; nothing is traceable."
+  },
+  "image_prompt": "Close-up portrait of a slender, androgynous figure in their late twenties with dark watchful eyes and forgettable features, complexion sitting at neutral baseline. High cheekbones, slightly asymmetrical jawline. Wearing an oversized charcoal hoodie pulled partway over their head, creating shadow across the face. Soft studio lighting revealing faint subdermal shimmer at temples. In the background, subtle double-exposure of the same face with slightly different bone structure — a ghost of an alternate identity. Cyberpunk aesthetic, hyper-realistic rendering, melancholic mood, identity-crisis undertones. Film noir color grading with cool blues and grays. Shallow depth of field. Midjourney cinematic quality --ar 2:3 --v 6"
 }

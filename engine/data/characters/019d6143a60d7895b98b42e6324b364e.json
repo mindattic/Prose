@@ -31,7 +31,7 @@
     "core_desires": [
       "To build something that outlasts the next contract cycle",
       "Power — enough leverage that nobody ever threatens them again",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
@@ -282,5 +282,27 @@
     "Pellucid Systems",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 168,
+    "weight_kg": 74,
+    "build": "Stocky and compact, heavy in the shoulders and core, with dense muscle mass from years of hands-on work. Forearms thick and corded. Not aesthetic — functional.",
+    "hair_color": "Dark brown, naturally, though the chromatic dermal work makes it appear to shift subtly in certain light",
+    "hair_style": "Pulled back tight, often in a practical braid or knot",
+    "hair_length": "Medium",
+    "eye_color": "Light grey with amber flecks — unaugmented, but sharp and assessing",
+    "skin_tone": "Warm tan with golden undertones, mixing darker Scandinavian and West African ancestry",
+    "complexion": "Strong jaw, broad nose, high cheekbones. Skin is weathered but well-maintained — no softness. A faint scar runs from left temple to cheekbone, white-pale against her baseline tone.",
+    "distinguishing_marks": [
+      "Faint pale scar tracking from left temple to left cheekbone, approximately 8cm, thin and surgical",
+      "Cortical bomb extraction scar at the base of her skull, mostly hidden under hair but visible when pulled back — rough and ragged, roughly 4cm, indicating rushed field removal",
+      "Fine chromatic iridescence visible across collarbone and forearms where dermal camouflage cells are densest — appears to shift from copper to deep violet depending on angle and light",
+      "Thin white burn marks across the backs of both hands, old and minor, consistent with field work"
+    ],
+    "visible_augmentations": "Dermal camouflage across shoulders, collarbone, and forearms — visible as a chromatic sheen that shifts color subtly, most noticeable in direct light. The effect is deliberate and unashamed, making her stand out rather than blend. Cortical bomb scar tissue visible at the base of skull when hair is pulled back.",
+    "posture_movement": "Moves with economy and purpose — no wasted motion. Shoulders squared, weight forward on the balls of her feet even when standing still. Her hands rest in natural positions of readiness. When she turns her head, her whole spine rotates with it; she doesn't look sideways. Gaze is constant and evaluative.",
+    "clothing_style": "Tier 4-5 utilitarian: reinforced tactical pants with multiple sealed pockets, dark grey or charcoal. Worn leather jacket with internal armor plating visible at the shoulders. Combat boots, laced tight. A long-sleeved undershirt that covers most of her augmentation seams, but she leaves the collar open and sleeves rolled to show the chromatic work on her forearms — a calculated choice. No jewelry. A single functional smartwatch, matte black. Everything is second-hand or stolen, nothing corporate-branded. Dressed for work, not comfort."
+  },
+  "image_prompt": "A lean, stocky woman with warm tan skin and West African-Scandinavian features, age 30, with dark hair pulled back tightly. Her forearms and collarbone display visible iridescent chromatic dermal camouflage that shifts copper-to-violet in the light. A thin surgical scar traces her left cheekbone. Sharp grey eyes, squared shoulders, hands built for work. She wears a worn dark leather jacket with visible shoulder armor and rolled-sleeve tactical shirt, showing her chrome work deliberately. Dark cargo pants and combat boots. Standing in a half-burned Ashfield squatter district at night, neon reflections off wet pavement, moody blue and amber lighting. Gritty cyberpunk aesthetic, hardened professional, no softness. Atmospheric haze, film grain. Cinematic. --ar 2:3 --v 6"
 }

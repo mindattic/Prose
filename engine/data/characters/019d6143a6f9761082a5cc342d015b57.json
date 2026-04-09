@@ -245,5 +245,27 @@
     "Nesting Doll",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Igbo/Yoruba) / Polynesian (Samoan)",
+    "height_cm": 172,
+    "weight_kg": 63,
+    "build": "Wiry and lean with corded forearms from constant manual work — typesetting, chassis maintenance, carrying reams of paper. Restless musculature of someone who rarely sits still.",
+    "hair_color": "Deep arterial red (dyed; natural color dark brown)",
+    "hair_style": "Loose natural curls, shoulder-length, often pulled into a half-knot with a data-chip or pen threaded through",
+    "hair_length": "Medium to Long",
+    "eye_color": "Dark brown with slight amber undertone",
+    "skin_tone": "Warm terracotta with golden undertones, reflecting mixed West African and Polynesian heritage",
+    "complexion": "Sharp facial structure with high cheekbones and a prominent jawline. Skin is clear but weathered by irregular sleep and constant outdoor movement. A thin scar bisects his left eyebrow from a past encounter with Axiom security.",
+    "distinguishing_marks": [
+      "Bioluminescent tattoo geneware spanning both collarbones in abstract circuit-pattern design, pulses faint blue when heart rate elevates or under stress",
+      "Thin white scar bisecting left eyebrow, approximately 2cm",
+      "Faded ink tattoo on right wrist reading 'PRINT' in blocky sans-serif, self-applied",
+      "Calluses and minor paper cuts across fingertips and palms from daily typesetting work"
+    ],
+    "visible_augmentations": "Bioluminescent tattoo geneware on collarbones (visible through mesh layers when agitated). Subcutaneous neural text buffer implant is invisible but may cause him to pause mid-conversation, eyes unfocused, when transcribing mentally. No visible chrome.",
+    "posture_movement": "Rarely still — fingers tap, shoulders shift, eyes dart in constant low-grade threat assessment. Leans forward when speaking, as if sharing a secret. Walks quickly with economical steps. Sits on the edge of chairs, never fully relaxed. When focused on text, his entire body goes motionless.",
+    "clothing_style": "Multiple layers of breathable mesh vests and reclaimed-fabric overshirts in muted grays and blacks, intentionally worn. Pockets stuffed visibly with data chips, print cartridges, folded broadsheets, encrypted key-fobs. Worn canvas trousers with reinforced knees. Steel-toed boots patched multiple times. No corporate branding. Tier 5 / working-poor aesthetic — function over fashion, but curated within that constraint."
+  },
+  "image_prompt": "Cyberpunk portrait of a wiry 27-year-old man with deep arterial red dyed natural curls and warm terracotta skin with golden undertones, West African and Polynesian heritage. Sharp cheekbones, dark brown eyes with constant alert expression, thin scar bisecting left eyebrow. Bioluminescent blue tattoo geneware pulsing faintly across both collarbones in circuit-pattern design, visible through loose layers of breathable mesh and patched fabric vests. Hands stained with ink and paper cuts, fingers fidgeting with data chips and broadsheets. Worn canvas trousers, reinforced boots. Perched forward on edge of seat, body language tense and ready. Background: dim industrial interior of converted food-stall chassis, warm tungsten overhead lights casting long shadows, scattered print cartridges and rolled broadsheets on surfaces. Moody, underground, journalistic intensity. Neon accent lighting reflecting off metal printing press components. Shot at 3/4 angle, shallow depth of field focusing on his eyes and glowing collarbone tattoos. Gritty, documentary realism blended with cyberpunk atmosphere. --ar 2:3 --v 6"
 }

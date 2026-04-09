@@ -29,7 +29,7 @@
       "Being identified by corporate facial recognition — living off-grid is survival"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Freedom from augmentation debt — the interest compounds like a tumor",
       "The perfect run — one job so clean it becomes legend"
     ],
@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "A Tier 4 executive offers Deniz Dahlberg-Boakye a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "A crew member from Deniz Dahlberg-Boakye's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Deniz Dahlberg-Boakye's past shows up in GLMZ, carrying old grievances and new chrome",
     "Deniz Dahlberg-Boakye is offered a contract that would clear all their debts — the target is someone they respect"
   ],
   "narrative_function": "As a extraction specialist, Deniz Dahlberg-Boakye embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
@@ -156,7 +156,7 @@
     },
     "strengths": [
       "ability to remain calm under fire",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "old injury that flares under specific conditions",
@@ -276,11 +276,32 @@
   "related_entities": [
     "Bioelectric Muscle Fiber",
     "The Narrows Compact",
-    "Meridian 88",
+    "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
     "Pellucid Systems",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Turkish / Scandinavian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Wiry and lean with efficient musculature — the physique of someone who converts nervous energy into controlled motion. Synthetic muscle fiber in legs creates subtle asymmetries in calf definition.",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Short, pragmatic cut — minimal maintenance, pulled back slightly at crown",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and assessing",
+    "skin_tone": "Warm olive complexion with the pallor of someone who spends irregular hours indoors",
+    "complexion": "Sharp features — prominent cheekbones, angular jaw. Weathered around the eyes from sustained focus work. Five o'clock shadow is his default state. No visible facial scars but the skin has a tightness suggesting old impact trauma healed cleanly.",
+    "distinguishing_marks": [
+      "Cigarette burn scar on the inside of left wrist — thumb-sized, pale and old",
+      "Linear scar along right temple extending into hairline — security training injury, precise suture work",
+      "Faded corporate security tattoo on left shoulder blade — a symbol he no longer acknowledges"
+    ],
+    "visible_augmentations": "Synthetic muscle fiber replacement visible in both legs below the knee — matte gunmetal finish with faint seam lines along the calf. The prosthetics are functional, not cosmetic. Discrete chrome bezels around ears marking cyberear housing — partially obscured by hair. Wrist has a faint industrial port scar where old gear was interfaced.",
+    "posture_movement": "Perpetually coiled — standing weight forward on the balls of feet. Movement is economical and sudden; he does not amble. Hands rarely still, often checking cuffs, adjusting jacket, touching the chrome at his ears. Eyes constantly tracking exits, angles, sight lines. Conversation posture is slightly angled — cyberears allow him to monitor peripheral audio.",
+    "clothing_style": "Tier 3-4 utilitarian — durable synthweave in dark colors (charcoal, black, deep navy). Multi-pocket cargo jacket worn open over fitted base layers. Reinforced knuckle gloves, often not removed indoors. Durable boots with high ankle support rated for urban infiltration. A single piece of visible hardware: brushed steel chain on left wrist, practical rather than decorative. Everything functional, nothing that announces itself. No corporate logos or runner affectations — he dresses like someone whose appearance should be forgotten in two minutes."
+  },
+  "image_prompt": "A 45-year-old Turkish-Scandinavian male, wiry and coiled, standing in profile against rain-slicked megastructure walls. Dark brown hair with silver at temples, sharp angular features, olive skin. Visible gunmetal synthetic muscle fiber legs with faint seam lines below the knees, chrome bezels around ears suggesting cyberware. Wearing dark charcoal synthweave cargo jacket over fitted layers, reinforced knuckle gloves, practical boots. Urban extraction specialist aesthetic — functional, forgettable, dangerous. Narrow corridor lighting with neon reflecting off wet concrete, shadows emphasizing angular features. Posture coiled and forward-leaning, ready to move. Cyberpunk gritty realism, photographic clarity, 2226 GLMZ aesthetic --ar 2:3 --v 6"
 }

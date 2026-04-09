@@ -231,5 +231,26 @@
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "The Gradient Compact"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "East African / Armenian",
+    "height_cm": 162,
+    "weight_kg": 58,
+    "build": "Compact and wiry, muscular in the way of someone who walks constantly and carries tension in their shoulders. No excess weight; lean but not fragile. Center of gravity slightly forward, as though perpetually ready to move.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Loose coils, typically secured back with a cloth tie or simple elastic during fieldwork; occasionally left loose on institutional days",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Dark brown, warm",
+    "skin_tone": "Warm reddish-brown, with subtle undertones suggesting mixed East African and Mediterranean heritage",
+    "complexion": "Clear, with a few sun-darkened freckles across the bridge of nose and cheekbones from outdoor fieldwork. Minimal grooming vanity except for consistent attention to keeping nails short and practical. Fine lines beginning around eyes from squinting while taking notes.",
+    "distinguishing_marks": [
+      "Faint surgical scar at the base of the skull, approximately 3cm, from neural implant insertion — visible only when hair is pulled back",
+      "Small burn scar on inner left wrist (cooking accident, age 12) — pale and well-healed",
+      "Asymmetrical ear piercings (both ears, multiple holes) with mismatched practical studs — never matching pairs"
+    ],
+    "visible_augmentations": "Dark brown velvety cat ears (geneware) positioned naturally above human ears, fully mobile and expressive — twitch and rotate reflexively in response to sound and emotion. No visible external neural implant hardware, but slight subcutaneous ridge at base of skull if hair pulled back. Occasional faint blue LED flicker visible at the corner of left eye when actively recording through neural notepad (low-power, discrete).",
+    "posture_movement": "Perpetually coiled. Even sitting still, some part of them moves — knee bounce, finger drumming, head tilt. Cat ears swivel independently toward sound sources or conversation partners. When walking, efficient and purposeful, never leisurely. Hands frequently gesture while speaking, especially when explaining research concepts. They have a habit of tilting their head slightly to the left when listening intently.",
+    "clothing_style": "Pragmatic Tier 2-3 blend. Durable synthetic fabrics, flat steel-toed boots (worn but well-maintained), cargo pants or utility jeans with visible patch repairs. Base layers are neutral (gray, black, cream) but always paired with a deliberately chosen stripe of color — deep rust orange, burnt red, or terracotta — in the form of a thrifted overshirt, armband, or bandana. On institutional days, this same color appears as a scarf or deliberately clashing accent. No logos or status markers. Everything has functional pockets. Worn canvas messenger bag for fieldwork. One piece of jewelry: a thin silver ring on index finger, dented and old."
+  },
+  "image_prompt": "A compact nonbinary person of East African and Armenian descent, age 28, with warm reddish-brown skin and dark coiled hair tied back, wearing practical gray cargo pants and a neutral base layer accented with a striking burnt-orange utility overshirt. Distinctive velvety dark brown cat ears (geneware) positioned above their human ears, fully mobile and alert. Sitting with coiled, restless posture, one knee bouncing, head tilted slightly as though listening to something unseen. Fine-featured face with dark eyes, small freckles across nose. Faint blue LED flicker visible at corner of left eye. Minimalist jewelry, worn boots, everything utilitarian and patch-repaired. Background: dim Tier 5 community space with warm tungsten lighting, worn brick, handwritten community posters. Cyberpunk documentary photography style, candid, unflinching, intimate. High detail on textile wear, skin texture, ear movement. --ar 2:3 --v 6"
 }

@@ -171,5 +171,26 @@
     "SynapTech IrisBloom Ocular Color Modulator",
     "Gold"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South African / Russian / Polynesian (Samoan)",
+    "height_cm": 168,
+    "weight_kg": 54,
+    "build": "Wiry and lean — the thinness of someone sustained by conviction and irregular meals rather than deprivation. Long-limbed, slight shoulders, core strength that reads in how they hold themselves upright despite the exhaustion",
+    "hair_color": "Natural dark brown with subtle auburn undertones in sunlight",
+    "hair_style": "Thick natural halo, usually unstyled; frequently compressed under a faded canvas cap with a peeling Parallel Standing logo",
+    "hair_length": "Long (shoulder-length when unconstrained)",
+    "eye_color": "Warm brown base with augmented concentric iris patterns — rings of gold and green that pulse faintly under stress (involuntary)",
+    "skin_tone": "Warm ochre with golden undertones; complexion carries the slight uneven pigmentation of someone who spends half their time indoors in legal offices and half on The Shelf's inconsistent lighting",
+    "complexion": "Sharp cheekbones, full mouth, expressive face that telegraphs emotion before they speak. Minimal grooming — no visible makeup, fingernails worn short and often ink-stained. Faint dark circles from overwork are permanent fixtures",
+    "distinguishing_marks": [
+      "Thin scar along left jawline, pale and old, approximately 4cm — origin unknown, never volunteered",
+      "Small burn mark on inside of right wrist (2cm diameter, faded brown) from a heating element accident in their teens",
+      "Faint tattoo on inner left forearm — a small gavel interlocked with a synthetic circuit symbol, done in black ink, approximately 3cm wide"
+    ],
+    "visible_augmentations": "The stress-reactive iris patterns are immediately visible — concentric rings that pulse with golden and green light when cortisol spikes. No visible external chrome or subdermal plating. The subvocal comms implant is invisible, though tiny articulation points are visible at the angle of the jaw if you know to look",
+    "posture_movement": "Sits forward in chairs, rarely rests against backs. Moves quickly with purpose, gestures when they talk — hands are expressive and rarely still. Tends to pace during phone calls or case review. Eyes dart frequently, cataloging exits and overhead sprinklers (habit from street outreach). Maintains direct eye contact even when tired, sometimes to the point of seeming confrontational",
+    "clothing_style": "Tier 3-4 working class with nonprofit aesthetic. Worn jeans or cargo pants (pockets full of case files, evidence bags, burner comm devices). Layered tops — usually a faded Parallel Standing t-shirt under an oversized thrift-store button-up in neutral tones. The battered legal tablet lives in a patched canvas messenger bag with countless stickers from synthetic rights organizations. Worn canvas sneakers held together with determination and duct tape. One piece of jewelry: a silver ring on their right index finger, worn thin from years of anxious spinning. Cap always within arm's reach"
+  },
+  "image_prompt": "Nonbinary character, warm ochre skin with golden undertones, 26 years old, wiry lean build with long natural dark brown hair in thick halo usually under a faded cap. Wide-set warm brown eyes with glowing concentric gold and green iris patterns that pulse faintly, creating a subtle light effect. Sharp cheekbones, full mouth, dark circles from overwork visible. Wearing worn Parallel Standing nonprofit t-shirt under oversized thrift-store button-up, cargo pants with overstuffed pockets, canvas messenger bag covered in activist stickers holding a cracked legal tablet. Small burn scar visible on inside of wrist, thin old scar along jawline. Sitting forward in worn office chair in legal aid storefront, surrounded by case files and court documents. Fluorescent overhead lighting mixed with afternoon sun from street-level window. Intense, idealistic expression, hands gesturing mid-conversation. Cyberpunk street-level legal advocate aesthetic, gritty working-class Tier 3-4 environment. Digital art style, film noir color grading with neon iris glow. --ar 2:3 --v 6"
 }

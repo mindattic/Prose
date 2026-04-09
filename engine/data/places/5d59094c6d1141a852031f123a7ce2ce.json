@@ -56,8 +56,16 @@
     "Freelancers willing to trade labor for drinks"
   ],
   "notable_locations": [
-    "The Window Table — best view of the bioluminescent canal, reserved for colony traders by unspoken tradition",
-    "The submerged stairwell — water access to canal routes below"
+    {
+      "name": "The Window Table",
+      "description": "best view of the bioluminescent canal, reserved for colony traders by unspoken tradition",
+      "tags": []
+    },
+    {
+      "name": "The submerged stairwell",
+      "description": "water access to canal routes below",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.8672,

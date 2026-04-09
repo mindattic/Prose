@@ -232,5 +232,28 @@
     "IRONLIMB Fortress MK-IV Combat Leg Pair",
     "Lazarus IDP-1 'Teeth'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European / Slavic",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thick through the torso — cargo handler muscle beginning to atrophy from weeks of bed rest. Strength still visible in the architecture of his frame, but softening at the edges.",
+    "hair_color": "Dark brown, graying at the temples",
+    "hair_style": "Combed back, unkempt from bed confinement",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown",
+    "skin_tone": "Medium, with the pallor of prolonged indoor confinement",
+    "complexion": "Weathered face, deep-set eyes, strong jaw structure visible beneath the medical infrastructure. Stubble growth irregular where the wires emerge through skin.",
+    "distinguishing_marks": [
+      "Titanium jaw pins visible as raised metal rivets breaking the skin symmetrically along both cheeks — medical-grade installation, unfinished healing.",
+      "Linear scarring across the left temple and cheekbone consistent with blunt-force trauma.",
+      "Faint bruising still visible along the right side of the face, yellowing at the edges.",
+      "Calloused palms and forearms from years of cargo handling, now idle.",
+      "Surgical incision scars along the angle of the jaw where the wires were anchored internally."
+    ],
+    "visible_augmentations": "Titanium jaw reconstruction pins protruding visibly through cheek tissue. Medical vocoder pad strapped to left wrist — black polymer casing with small speaker grille and flat tactile keyboard. The contrast between brutal injury and utilitarian tech is stark.",
+    "posture_movement": "Bedridden immobility has compressed him into the mattress. When he moves, it is careful, economical — minimal jaw motion. His eyes track with intense focus and warmth. Hands move with precision when typing or sketching; they are the only parts of him still capable of unguarded expression.",
+    "clothing_style": "Worn undershirt or medical gown, Tier 4 basics. When receiving visitors, he may wear a loose button-up over the gown — nothing elaborate. Everything loose-fitting to accommodate the wiring and to avoid pressure on healing tissue. Practical, colorless."
+  },
+  "image_prompt": "Portrait of a 40-something Eastern European man with dark brown eyes and graying temples, lying bedridden in a Tier 4 tenement room. His face is marked by recent severe trauma — titanium jaw pins visible as metallic rivets breaking the skin of his cheeks, healing bruises yellowing around the injury site. A black medical vocoder pad is strapped to his wrist. His broad, muscular frame is visibly atrophied from weeks of immobility. Warm, patient expression despite the brutality of his injuries. Soft overcast light from a single window. Realistic cyberpunk medical-realism, intimate and sorrowful. Shallow depth of field. Neon-free, naturalistic color grading. --ar 2:3 --v 6"
 }

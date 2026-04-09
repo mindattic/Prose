@@ -239,5 +239,25 @@
     "Handed",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Igbo/Nigerian) / Scandinavian (Swedish/Icelandic)",
+    "height_cm": 162,
+    "weight_kg": 58,
+    "build": "Compact and densely muscled, with the economical frame of someone who moves through space with purpose. Shoulders broad for her height, core visibly conditioned from years of standing kitchen shifts. No wasted volume.",
+    "hair_color": "Deep brown with natural bronze undertones",
+    "hair_style": "Loose waves when off-duty; wrapped tight in a high, heat-resistant cloth during shifts",
+    "hair_length": "Long (mid-back when unwrapped)",
+    "eye_color": "Warm brown with amber flecks near the pupil",
+    "skin_tone": "Golden-brown midtone with underlying warm undertones — not quite east or west African, not quite Nordic, a true genetic middle ground",
+    "complexion": "Clear, unlined despite her age, with a faint scar tissue pattern across her knuckles from decades of kitchen work before the polymer coating. Her expression defaults to concentration; she does not smile easily but when she does it reaches her eyes.",
+    "distinguishing_marks": [
+      "Fine network of old burn scars across the backs of both hands, largely faded but still visible under certain light — pre-augmentation damage",
+      "A small, precise tattoo on her inner right wrist: a single Igbo nsibidi symbol for 'strength in silence,' done in black ink"
+    ],
+    "visible_augmentations": "Both palms show a subtle iridescent sheen where the heat-resistant polymer coating has been applied — catches light with a faint opalescent quality when her hands are under kitchen lighting. The coating is seamless with her natural skin. No other visible cybernetic work.",
+    "posture_movement": "Economical and deliberate. She does not gesture unnecessarily. When stationary, she appears coiled — weight balanced, ready to move. When cooking, her movements are efficient and fast but never rushed; there is no wasted motion. She has a habit of holding her hands slightly out from her body, palms forward, a gesture that reads as both openness and controlled power.",
+    "clothing_style": "During shifts: practical Tier 3-4 restaurant wear — dark, loose-fit cargo pants with deep pockets, reinforced apron in muted gray-green, steel-toed slip-on boots (Danner, well-maintained). White t-shirt or thin long-sleeve under the apron depending on kitchen temperature. No jewelry during work. Off-duty: simple layered clothing, well-fitted but not fashionable — dark jeans, oversized sweaters in earth tones, a long canvas coat that has seen years of use. Favors natural fabrics and neutral colors. Carries a small shoulder bag with her kitchen knife roll."
+  },
+  "image_prompt": "Portrait of a compact 38-year-old woman with warm golden-brown skin and deep brown eyes, mixed West African and Scandinavian features, long dark waves pulled back. Wearing a gray-green restaurant apron over a white shirt, standing in a basement kitchen under harsh fluorescent light, hands held at her sides with visible iridescent heat-resistant polymer coating on her palms. Faded burn scars visible on her knuckles. Expression focused and composed, no smile. Cyberpunk realism, kitchen setting with stainless steel and aged tiles visible in background, moody night-shift atmosphere, practical and grounded aesthetic, slight sheen on her hands from augmentation, photorealistic portraiture, Tier 3 working-class Detroit/Chicago aesthetic --ar 2:3 --v 6"
 }

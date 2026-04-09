@@ -225,5 +225,26 @@
     "CRUCIBLE Vantage Artisan Precision Hand",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Portuguese / Japanese",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "build": "Slight and lean, almost wiry — the build of someone who forgets to eat and runs hot. Narrow shoulders, long-limbed, no visible muscle definition. Looks perpetually underfed despite eating regularly.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Shoulder-length, often pulled back with whatever is nearest — lab clips, rubber bands, once a pipette tip. Disheveled by default.",
+    "hair_length": "Medium",
+    "eye_color": "Warm brown with basic student-tier neural link interface visible as faint amber circuitry at the outer canthi when active",
+    "skin_tone": "Warm medium brown with irregular cream-colored vitiligo patches across shoulders, neck, and left cheekbone — untreated, visible, accepted without vanity",
+    "complexion": "Fine-featured with his grandfather's sharp jaw and grandmother's broad nose. Perpetually tired around the eyes. Prone to flushing when embarrassed or overheated. Often has lab residue under fingernails or on clothing.",
+    "distinguishing_marks": [
+      "Pale gold cosmetic cat ears (self-grown via geneware, approximately 8cm tall, positioned naturally on skull, slightly pointed) — present for approximately one year",
+      "Irregular cream-colored vitiligo patches across shoulders, upper arms, neck, and left cheekbone",
+      "Fine scar along right wrist from a childhood accident, barely visible"
+    ],
+    "visible_augmentations": "Pale gold cosmetic cat ears are immediately obvious. Basic student-tier neural link visible as faint amber circuit patterns at outer eye corners when active; otherwise unobtrusive. No chrome, no subdermal plating, no visible internal modifications.",
+    "posture_movement": "Hunches slightly when focused, fidgets with objects (pens, lab equipment, his own sleeves). Moves with nervous energy rather than confidence. Frequently touches his cat ears unconsciously when thinking or anxious. Walks quickly between tasks. Makes intense eye contact when excited about research, avoids it when uncertain.",
+    "clothing_style": "Tier 2 functionality-first aesthetic. Standard-issue Helix intern polo (pale gray, usually sweat-stained, often wearing it unbuttoned over a worn band t-shirt). Cargo pants with multiple pockets for lab notebooks and dataslates. Worn athletic shoes. Campus access badge on a frayed lanyard. No jewelry. Clothing is always slightly too warm for his body temperature; he is perpetually underdressed for his own thermal needs and overdressed for the climate."
+  },
+  "image_prompt": "Portrait of Dantonio Figueiredo-Nakagawa, 23-year-old biotech intern, cyberpunk 2226, slight and lean build with warm medium brown skin scattered with cream-colored vitiligo patches. Dark brown shoulder-length hair pulled back haphazardly. Distinctive pale gold cosmetic cat ears (self-grown geneware, natural positioning). Warm brown eyes with faint amber neural link interface circuitry at outer corners. Sharp jawline, broad nose, fine features. Wearing unbuttoned gray Helix intern polo over worn band t-shirt, cargo pants, frayed access badge lanyard. Hunched posture, fidgeting hands, nervous energy. Lab environment background with soft clinical lighting, slightly sweat-dampened appearance, perpetually exhausted but still eager expression. Clean clinical aesthetic, warm color grading. Professional ID photo style but with subtle signs of overwork. --ar 2:3 --v 6"
 }

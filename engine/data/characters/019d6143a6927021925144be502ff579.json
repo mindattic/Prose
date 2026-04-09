@@ -254,5 +254,26 @@
     "Ringo DV-4 'Courier'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Pakistani / Guatemalan",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Lean and compact, built for speed and low profile rather than strength. Muscle definition in shoulders and forearms from years of courier work and handling heavy augmentation components. Minimal body fat, efficient frame.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Usually pulled back tight — braids, bun, or wrapped — never loose. Style changes monthly as part of her forgettability protocol.",
+    "hair_length": "Medium, worn short to mid-back depending on current aesthetic",
+    "eye_color": "Dark brown, unremarkable",
+    "skin_tone": "Warm medium brown, even complexion reflecting mixed South Asian and Central American heritage",
+    "complexion": "Clear skin, minimal grooming flourishes. No visible makeup or ornamentation. Face is deliberately unmemorable — regular features without distinctive focal points. Slight tension around the eyes from chronic alertness.",
+    "distinguishing_marks": [
+      "Thin surgical scar running 4cm along the inside of her right forearm where the subdermal cargo panel was installed, partially concealed by forearm hair growth",
+      "Small burn mark on her left collarbone from a close call with a heated cargo container seal five years ago — pale and fading",
+      "Faint needle track marks on the inside of her elbows from the reflex-assist neural bundle installation, barely visible unless specifically looked for"
+    ],
+    "visible_augmentations": "None visible. All augmentations are subcutaneous or internal. Her forearms have slightly unusual contours if examined closely — subtle panel seams under the skin at rest, detectable only through direct inspection. Her pupils may appear fractionally slower to dilate due to the reflex-assist system, but this is only noticeable during clinical examination.",
+    "posture_movement": "Moves with economical precision — no wasted motion, no flourish. Her gait is quiet and grounded, weight balanced on the balls of her feet even when standing still. Shoulders slightly forward, head level, eyes in constant soft focus scanning. She navigates space like someone reading terrain. Minimal fidgeting, minimal expression. Hands are steady and quick.",
+    "clothing_style": "Deliberately adaptive and unremarkable. Wears different layered aesthetics depending on which Circuit tier she's moving through that day — sometimes slouched Tier 4 synthweave work jackets and cargo pants with too many pockets, sometimes understated Tier 3 business-casual in muted grays and blacks. Favors dark colors, loose fit for concealment of the cargo panels, and clothing with multiple sealed pockets for signal isolation. Cheap, durable shoes designed for running. No jewelry, no branding, no visible tech. Everything is replaceable and none of it speaks to who she is."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 24-year-old Pakistani-Guatemalan woman, small and lean build, 5'2\", dark brown hair in a tight braid, dark brown unremarkable eyes, warm medium brown complexion, deliberately forgettable face with constant alertness. Wearing understated dark gray synthweave cargo jacket and black tactical pants, multiple sealed pockets, practical running shoes. Standing in a dimly lit Circuit warehouse corridor with industrial metal walls and blue neon signage reflecting off wet concrete. Hands at rest, posture balanced and efficient, neutral expression. Subcutaneous augmentations visible only as slight forearm contours under skin. Moody cyberpunk noir lighting, shadows emphasizing her compact silhouette, cool color temperature with amber accent lights. Photorealistic, character reference sheet style --ar 2:3 --v 6"
 }

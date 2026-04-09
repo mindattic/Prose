@@ -237,5 +237,24 @@
     "Nesting Doll",
     "The Pale Mile"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Armenian / Tanzanian",
+    "height_cm": 172,
+    "weight_kg": 71,
+    "build": "Lean, slightly slouched from years of bending over student desks. Shoulders rounded forward. Wiry rather than muscular, with the kind of frame that suggests he forgets to eat regularly.",
+    "hair_color": "Dark brown, graying at the temples",
+    "hair_style": "Tousled, often swept back with one hand during teaching. Usually has a few strands falling forward across his forehead.",
+    "hair_length": "Medium",
+    "eye_color": "Deep brown, warm but tired",
+    "skin_tone": "Warm bronze-brown with olive undertones",
+    "complexion": "Weathered in a way that suggests years of living in a lower-tier neighborhood. Persistent shadow of stubble; the unruly beard he mentions losing the weekly war against. Fine lines around his eyes and mouth from constant expression — smiling, frowning, concentrating. Skin is clear but not particularly cared-for; no visible scarring.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware patch behind left ear, approximately 3cm diameter, pale blue-green coloration, flickering irregularly due to poor maintenance — visible as a faint glow in low light, sometimes dims completely for several seconds"
+    ],
+    "visible_augmentations": "Only the bioluminescent patch behind left ear, which occasionally glows weakly. Otherwise no visible cybernetics or bioware.",
+    "posture_movement": "Perpetually leaning slightly forward, as if genuinely interested in whatever is in front of him — or listening intently. Hands move frequently when talking; gestures are open and encouraging. Movements are efficient but not rushed; he moves like someone who has learned to be present in a room rather than urgent.",
+    "clothing_style": "Layers of mismatched professional clothing suggesting abandoned formality. Usually wears a neutral-colored button-up shirt (often wrinkled, sometimes with chalk dust or food stains) under a cardigan or blazer from three different decades, paired with casual trousers. Occasionally wears a vest. Shoes are worn but functional — school-safe, not fashionable. Nothing matches intentionally. Overall appearance reads as 'used to care about presentation, has made peace with that not being possible anymore.' Tier 4 clothing — functional, donated, assembled without aesthetic concern."
+  },
+  "image_prompt": "A 38-year-old man of Armenian-Tanzanian heritage, warm bronze-brown skin with olive undertones, tired deep brown eyes with permanent laugh lines, unruly dark brown beard with gray temples, medium tousled dark hair. Lean, slightly slouched frame. Wearing mismatched layers: wrinkled neutral button-up shirt under a vintage cardigan, worn trousers. Behind his left ear, a faint pale blue-green bioluminescent patch glows weakly and irregularly. Warm, present expression, hands gesturing mid-explanation. Standing in a converted warehouse classroom filled with community-built learning materials, late afternoon sunlight streaming through industrial windows. Soft, tired lighting. Cyberpunk, Tier 4 GLMZ community school setting, documentary-realistic tone, not glamorous but deeply human. --ar 2:3 --v 6"
 }

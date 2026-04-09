@@ -192,5 +192,26 @@
     "The Pale Mile",
     "Steel"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Czech",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Lean and angular with wiry muscle definition from years of hauling scrap; no excess body fat; sinewy forearms and core strength despite slight frame",
+    "hair_color": "Black, naturally textured",
+    "hair_style": "Worn in loose twists, often half-pinned back with salvaged metal clips to keep it clear of work",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, unaugmented",
+    "skin_tone": "Deep warm brown with slight sun-weathering on the shoulders and neck from outdoor work",
+    "complexion": "Sharp facial geometry with prominent cheekbones; clean-shaven or minimally groomed; skin shows minor scars and calluses consistent with scrap work; generally untroubled expression",
+    "distinguishing_marks": [
+      "Geneware cat ears mounted at the crown, grey tabby-patterned feline ears with natural musculature allowing independent movement and flattening when annoyed",
+      "Pale blue bioluminescent stripes running the length of each forearm on the dorsal side, faintly glowing during moments of stress or heightened adrenaline",
+      "Minor burn scarring on the heel of left hand from an early scrap-sorting accident, now barely visible"
+    ],
+    "visible_augmentations": "Geneware cat ears (cosmetic, animalistic). Bioluminescent forearm stripes (visible as faint pale-blue lines, glow activated by stress). Subdermal magnetic fingertips not visually obvious at rest but create subtle metallic shine under certain light; occasionally small metal shavings cling to fingertips.",
+    "posture_movement": "Moves with economical precision; stands with weight shifted to one side in relaxed stance, often picking up and rotating small objects absently. Cat ears track sounds and movement with subtle autonomic twitches. Overall demeanor is alert but unbothered, moving through chaos with practiced ease.",
+    "clothing_style": "Tier 4 working-class pragmatism: safety-orange high-visibility strapping harness worn over layered thermal undershirts in grey or black. Multiple magnetic tool clips on webbing. Reinforced cargo pants with patched seams, tucked into steel-insert work boots sourced from Ferrogate Transit surplus. Occasional technical jacket in faded blue or neutral tones when weather demands. No visible corporate branding; all gear is salvaged or secondhand. Grooming is minimal but deliberate — nothing wasted, everything functional."
+  },
+  "image_prompt": "cyberpunk character portrait of a lean nonbinary scrap merchant with deep warm brown skin, grey tabby geneware cat ears that twitch expressively, pale bioluminescent blue stripes running down forearms in dim light, dark textured hair in loose twists half-pinned back with metal clips, sharp cheekbones, unaugmented dark brown eyes with wry expression, wearing safety-orange visibility strapping harness over layered dark thermals, magnetic tool clips everywhere, reinforced work pants, steel-insert boots, standing in industrial junkyard setting with scrap metal and cargo containers in soft morning light, slight mystique of someone completely at ease in controlled chaos, photorealistic with subtle cyberpunk glow effects, character study, blue and orange color grading --ar 2:3 --v 6"
 }

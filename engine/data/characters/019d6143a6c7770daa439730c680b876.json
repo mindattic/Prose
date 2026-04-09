@@ -233,5 +233,26 @@
     "Ringo Corponation",
     "SynapTech ReadRoom Social Cue Enhancer"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polynesian / Romanian",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Wiry and elastic, almost dancer-like—muscle definition visible in forearms and shoulders from acrobatics, but without bulk. Her frame seems designed for movement rather than strength.",
+    "hair_color": "Natural dark brown with warm undertones",
+    "hair_style": "Cut very short, practical, often slightly disheveled from performance sweat; sometimes adorned with small wire ornaments she's fashioned herself",
+    "hair_length": "Short",
+    "eye_color": "Warm brown, naturally dark with flecks of gold in direct light",
+    "skin_tone": "Warm medium brown with subtle olive undertones, reflecting her mixed heritage",
+    "complexion": "Clear skin with a slight sheen from street-level humidity and constant movement; sun-darkened on her shoulders and neck from outdoor performances. A thin, precise scar runs across her chin from left to right—pale and well-healed but visible, giving her face a subtle asymmetry.",
+    "distinguishing_marks": [
+      "Linear scar across the chin, approximately 8 centimeters, pale and precise from a childhood fall during acrobatic practice",
+      "Fine calluses on her palms and fingers from puppet construction and wire work",
+      "Faint discoloration on her inner elbows from geneware joint modification—a subtle silvery-grey patina where the augmentation interfaces with natural skin"
+    ],
+    "visible_augmentations": "A long, fully articulated geneware tail extends from her lower spine, covered in iridescent fur that shifts between deep teal, purple, and silver depending on light and angle. The tail is clearly organic but distinctly non-human—muscular and expressive, capable of independent movement and used as a integral part of her performance vocabulary. Her elbows and shoulders show subtle signs of geneware joint enhancement—slightly greater range of motion than baseline human, visible when she moves in acrobatic sequences.",
+    "posture_movement": "She carries herself with a performer's awareness of space and observation. Her default posture is loose and ready, never fully at rest—fingers moving, weight shifting, as if constantly calculating trajectories. When performing, she becomes fluid and hypnotic; off-stage, there's a restless energy to her, a slight aggressive cheerfulness in her bearing that reads as both genuine and performative. Her tail is almost never still—it gestures, balances, expresses mood independently.",
+    "clothing_style": "Tier 4 street performer aesthetic. Typically wears layered, functional clothing: fitted synthetic tank or crop top in dark colors (black, charcoal) that allow her augmented shoulders and tail full range of motion. Over this, a oversized, heavily patched jacket or vest in mismatched fabric—salvaged materials in greys, deep blues, rust tones. Cargo pants or modified leggings with numerous pockets for puppet pieces and performance supplies, cuffs sometimes taped or pinned. Worn synthetic shoes with good grip. Jewelry is handmade—wire rings, small metal ornaments she's crafted, occasionally small projector nodes salvaged from failed puppets worn as accessories. Her clothes are clean but visibly worn, repaired many times, dyed and re-dyed. They smell faintly of wire dust and synthetic fabric."
+  },
+  "image_prompt": "A 19-year-old street performer with warm medium-brown skin, short dark hair, and striking mixed Polynesian-Romanian features. She is wiry and elastic-bodied, with visible muscle definition in her shoulders and forearms. A long, articulated geneware tail covered in iridescent fur that shimmers between teal, purple, and silver extends from her lower spine, expressively posed. She has a thin scar across her chin. She wears a fitted dark synthetic crop top and an oversized patched jacket in mismatched greys and rust tones, with cargo pants and worn synthetic shoes. She's positioned mid-acrobatic movement on a dim, neon-lit underground transit platform, with holographic puppet fragments glowing softly around her. Her expression shows aggressive cheerfulness and focus. Cyberpunk street performance aesthetic, moody underground lighting, volumetric shadows, cinematic depth of field, gritty realism with subtle fantastical elements. --ar 2:3 --v 6"
 }

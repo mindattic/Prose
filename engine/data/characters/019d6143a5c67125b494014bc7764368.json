@@ -194,5 +194,27 @@
     "The Wire Taps",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Zulu / Serbian)",
+    "height_cm": 158,
+    "weight_kg": 61,
+    "build": "Compact and dense, muscled from years of standing at surgical stations and lifting patients. No excess, efficient geometry — the body of someone who has learned to do more with less.",
+    "hair_color": "Natural black",
+    "hair_style": "Locs pulled tight against the scalp in neat, uniform rows; threaded with thin copper wire along three central plaits",
+    "hair_length": "Short (locs sit 2-3cm from scalp)",
+    "eye_color": "Modded — patterned irises with concentric rings of amber (outer) and green (inner), faintly luminescent when concentrating",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Weathered but well-maintained; old burn scarring dominates the left side of the neck (collar-line to jaw) and extends down the left forearm in irregular patches of lighter, tightened tissue. Face is angular, high cheekbones, minimal grooming beyond functional — no makeup, no vanity jewelry except the copper in her hair.",
+    "distinguishing_marks": [
+      "Extensive burn scarring on left neck (collar to jaw) from clinic fire — irregular, discolored patches of healed but tight skin",
+      "Deep burn scarring running down left forearm from wrist to elbow in streaked patterns, lighter than surrounding skin",
+      "Fine surgical scars on both hands (knuckles, palm edges) from decades of precise work",
+      "Small puncture-mark constellation on right temple where neural mesh was installed, barely visible but palpable under close inspection"
+    ],
+    "visible_augmentations": "Patterned irises with amber/green rings that pulse faintly when concentrating — unmistakably modded. Copper wire woven into hair (decorative or functional, unclear at distance). Subdermal haptic sensors on fingertips create faint, almost imperceptible ridge texture under the skin but are not visibly apparent to casual observation.",
+    "posture_movement": "Economical, still. Stands with weight balanced evenly, shoulders back but not rigid. Moves with practiced precision — no wasted motion, hands always aware of their position. When concentrating, she taps her copper-threaded locs with one finger in a rhythmic pattern, a meditative tic. Eye contact is direct and assessing.",
+    "clothing_style": "Repurposed surgical scrubs in faded gray-green, worn but clean and meticulously maintained. Over them, a battered leather apron with multiple large pockets, darkened and stained from years of use — tools, sutures, gauze, antiseptic vials nested in the worn leather. No visible corporate branding; Tier 5 functional aesthetic. Boots are heavy, non-descript black synthleather, resoled multiple times. A single piece of jewelry: a thin steel band on her right ring finger, unadorned."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 41-year-old Black woman with deep umber skin, compact athletic build, tight black locs threaded with copper wire, and striking modded eyes with amber-green patterned irises that glow faintly. Extensive burn scarring visible on left neck and forearm in lighter discolored patches. Wearing faded gray-green surgical scrubs under a weathered leather apron stained from medical use. Standing in a converted shipping container workshop, warm tungsten lighting reflecting off medical tools, soldering equipment, and dried herb bundles. Concrete walls, dim neon signs casting blue-green shadows. Clinical, focused expression, direct eye contact, still posture. Gritty cyberpunk realism, street-level medical noir, high detail on scarring and augmentation work, moody atmospheric lighting. --ar 2:3 --v 6"
 }

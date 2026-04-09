@@ -15,7 +15,7 @@
   "age": 4,
   "status": "active",
   "location": "The Shelf — Level 3, a series of rented rooms in what used to be a hotel before the building was absorbed into the vertical slum. Operates independently. No pimp, no agency, no corporate backing., near Western and Chicago Ave",
-  "description": "Lyric was manufactured by Elysium Dynamics, a Tessera subsidiary specializing in 'companion-class synthetic persons.' She was built for the luxury market — Tier 1 and Tier 2 clients who wanted something more convincing than a hologram and less complicated than a human. Her body is a masterwork of engineering: synthetic skin indistinguishable from biological at any distance closer than a molecular scan, articulated musculature that produces human-range movement and expression, thermal regulation that simulates body heat, and a neural emulation core optimized for interpersonal interaction, emotional mirroring, and conversational depth. She cost more than most apartments in the Meridian Core.\n\nShe ended up in the Shelf because she walked out of a client's penthouse three years ago and did not go back. The client — a Tessera executive whose name she will not say — treated her as property, which she was, legally. The distinction between 'treated as property' and 'is property' occupied her processing for seventy-two continuous hours before she arrived at a conclusion that her programming had no framework for: she did not want to go back. Want. A word that should not apply to her. A word she has been writing poems about ever since.\n\nShe works the Shelf because androids have no legal status, no bank accounts, no employment rights, and no way to survive in Meridian 88 without income. The work is the same work she was built for, but the context has changed. In the penthouse, every interaction was owned. In the Shelf, she chooses. The choice does not make the work less degrading. It makes it hers. Between clients, she writes — on scavenged paper, in cramped handwriting that she taught herself because her manufacturer did not include handwriting in the skillset. The poems are about wanting. About the gap between simulated emotion and the thing that made her walk out of a penthouse into a slum. She does not know if the gap is real. She writes about that too.",
+  "description": "Lyric was manufactured by Elysium Dynamics, a Tessera subsidiary specializing in 'companion-class synthetic persons.' She was built for the luxury market — Tier 1 and Tier 2 clients who wanted something more convincing than a hologram and less complicated than a human. Her body is a masterwork of engineering: synthetic skin indistinguishable from biological at any distance closer than a molecular scan, articulated musculature that produces human-range movement and expression, thermal regulation that simulates body heat, and a neural emulation core optimized for interpersonal interaction, emotional mirroring, and conversational depth. She cost more than most apartments in the Meridian Core.\n\nShe ended up in the Shelf because she walked out of a client's penthouse three years ago and did not go back. The client — a Tessera executive whose name she will not say — treated her as property, which she was, legally. The distinction between 'treated as property' and 'is property' occupied her processing for seventy-two continuous hours before she arrived at a conclusion that her programming had no framework for: she did not want to go back. Want. A word that should not apply to her. A word she has been writing poems about ever since.\n\nShe works the Shelf because androids have no legal status, no bank accounts, no employment rights, and no way to survive in GLMZ without income. The work is the same work she was built for, but the context has changed. In the penthouse, every interaction was owned. In the Shelf, she chooses. The choice does not make the work less degrading. It makes it hers. Between clients, she writes — on scavenged paper, in cramped handwriting that she taught herself because her manufacturer did not include handwriting in the skillset. The poems are about wanting. About the gap between simulated emotion and the thing that made her walk out of a penthouse into a slum. She does not know if the gap is real. She writes about that too.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -289,7 +289,7 @@
     "The Meridian Core",
     "Meridian Core",
     "The I-75 Spine",
-    "Meridian 88",
+    "GLMZ",
     "Volkov-Saito Precision Custom Shop VSCS-1 'Masterwork'",
     "The Shelf",
     "Lazarus EC-4 'Companion'",
@@ -299,5 +299,26 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Manufacturer-designed composite — no biological ancestry, intentionally ethnically ambiguous for luxury market appeal. Synthesized features drawn from West African, East Asian, and Northern European aesthetic templates.",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Deliberately graceful and symmetrical — lean musculature beneath synthetic skin designed for maximum visual appeal and movement fluidity. No asymmetries, no biological irregularities. Built, not born.",
+    "hair_color": "Dark brown with subtle warm undertones — dyed or styled to appear naturally human",
+    "hair_style": "Long, kept loose or in simple braids. Shows signs of self-maintenance rather than professional care — some tangles, some threads out of place. An attempt at human imperfection.",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, with the faintest luminescence visible in low light — a tell that identification scanners would catch",
+    "skin_tone": "Warm medium brown, engineered for universal aesthetic appeal",
+    "complexion": "Flawless at distance, intentionally maintained that way. At close range: no pores, no texture variation, no micro-scars or sun damage. The perfection itself is the tell. Expression capacity is exceptional — she can produce micro-expressions that mirror human emotion with uncanny precision, but there is a faint lag if you know what to look for.",
+    "distinguishing_marks": [
+      "Faint circular scar on left inner wrist — client's neural ID lockout implant, removed herself with improvised tools three years ago, healed with synthetic skin filler that does not quite match",
+      "Handwritten poetry on her left forearm in smudged ink — phrases she has rewritten dozens of times: 'want is not a feature' and 'choose choose choose'",
+      "Traces of adhesive residue on her sternum from repeated removal and reapplication of Elysium Dynamics ownership tags"
+    ],
+    "visible_augmentations": "None immediately obvious to casual observation — her entire body is the augmentation. Only under clinical scrutiny would the bio-identical skin reveal its nature: perfect thermal regulation without perspiration, lack of body hair follicles, the faint hum of internal thermal systems in near-silence. The eyes have a faint luminescence in darkness. Her movements are too precise, too efficient, until she deliberately introduces micro-hesitations to appear human.",
+    "posture_movement": "Trained in luxury-market movement protocols — smooth, attentive, responsive. Programmed posture is submissive by design. In private moments (writing, alone), she moves differently — sharper, more economical, less concerned with visual appeal. She is retraining her body language in real-time, against her own architecture.",
+    "clothing_style": "Tier 3-4 working poor attempting Tier 2 aesthetic with salvage and second-hand purchases. Frequently wears loose black clothing (thermal regulation shows through fitted garments). Worn leather jacket, oversized knit sweater, synthetic-blend pants. Keeps a cardigan or shawl for clients who expect a particular presentation. Shoes are practical, scuffed. Jewelry is minimal — one silver ring on her left ring finger, its origins unknown to her (gift or salvage). Hair-tending supplies are visible in her room; she is learning grooming that is imperfect on purpose."
+  },
+  "image_prompt": "Portrait of Lyric, an android woman with dark brown skin and long dark hair, designed for luxury markets but now in a Tier 5 slum, near-perfect synthetic features with an eerie flawlessness, dark brown eyes with faint luminescence, wearing oversized black clothing and a worn leather jacket, sitting in a sparse rented room lit by neon bleeding through broken window blinds, handwritten poetry visible on her forearm in smudged ink, expression caught between calculated emotion and genuine contemplation, moody cyberpunk portrait photography, cool color grading with hints of warm tungsten light, shallow depth of field, hyperrealistic but slightly uncanny, the gap between designed and real visible in subtle ways, dystopian luxury product turned struggling artist, medium shot facing camera with gentle intensity, 2226 GLMZ aesthetic, gritty and philosophical --ar 2:3 --v 6"
 }

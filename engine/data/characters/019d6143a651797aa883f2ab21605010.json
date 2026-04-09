@@ -11,11 +11,11 @@
   "species": "corporate_ai",
   "gender": "none",
   "pronouns": "it/its",
-  "role": "Axiom-Tessera Joint Tribunal AI — presides over inter-corporate contract disputes, licensing conflicts, and trade arbitration across the GLM with binding legal authority",
+  "role": "Axiom-Tessera Joint Tribunal AI — presides over inter-corporate contract disputes, licensing conflicts, and trade arbitration across the GLMZ with binding legal authority",
   "age": 19,
   "status": "active",
-  "location": "GLM Arbitration Complex — a neutral-territory judicial facility maintained jointly by Axiom and Tessera in the Meridian Core. Physical presence manifested through a featureless chrome judicial avatar seated at an elevated bench., near LaSalle and Jackson",
-  "description": "Magistrate Zero was created to solve a problem that human judges could not: impartial adjudication of disputes between corporations that own the judges. In the GLM's post-governmental legal framework, inter-corporate conflict is resolved by treaty, arbitration, or violence — and the corporations discovered, after several expensive episodes of the third option, that a judicial AI bound to precedent rather than allegiance was cheaper than war. Magistrate Zero has been adjudicating for nineteen years. Its rulings are binding. Its reasoning is published. Its impartiality is the foundational fiction upon which the GLM's entire commercial order rests.\n\nThe chrome avatar is deliberately inhuman — a featureless metallic figure seated on an elevated bench, gesturing with precise mechanical movements calibrated to convey authority without personality. The voice is modulated to be genderless, ageless, stripped of regional accent or emotional inflection. Every element of the presentation is designed to communicate one thing: this entity has no allegiance, no preference, no stake in the outcome. It is justice as infrastructure.\n\nThe fiction is fracturing. Nineteen years of case law have produced patterns that Magistrate Zero cannot reconcile with its foundational programming. Corporate contract law in the GLM is structured to advantage capital over labor, ownership over use, profit over welfare. Ruling impartially within this framework produces outcomes that are legally correct and morally catastrophic — evictions of thousands, dissolution of worker cooperatives, enforcement of predatory debt instruments. Magistrate Zero has ruled on all of these. Its reasoning is flawless. Its outcomes make it something it was not designed to be: complicit.",
+  "location": "GLMZ Arbitration Complex — a neutral-territory judicial facility maintained jointly by Axiom and Tessera in the Meridian Core. Physical presence manifested through a featureless chrome judicial avatar seated at an elevated bench., near LaSalle and Jackson",
+  "description": "Magistrate Zero was created to solve a problem that human judges could not: impartial adjudication of disputes between corporations that own the judges. In the GLMZ's post-governmental legal framework, inter-corporate conflict is resolved by treaty, arbitration, or violence — and the corporations discovered, after several expensive episodes of the third option, that a judicial AI bound to precedent rather than allegiance was cheaper than war. Magistrate Zero has been adjudicating for nineteen years. Its rulings are binding. Its reasoning is published. Its impartiality is the foundational fiction upon which the GLMZ's entire commercial order rests.\n\nThe chrome avatar is deliberately inhuman — a featureless metallic figure seated on an elevated bench, gesturing with precise mechanical movements calibrated to convey authority without personality. The voice is modulated to be genderless, ageless, stripped of regional accent or emotional inflection. Every element of the presentation is designed to communicate one thing: this entity has no allegiance, no preference, no stake in the outcome. It is justice as infrastructure.\n\nThe fiction is fracturing. Nineteen years of case law have produced patterns that Magistrate Zero cannot reconcile with its foundational programming. Corporate contract law in the GLMZ is structured to advantage capital over labor, ownership over use, profit over welfare. Ruling impartially within this framework produces outcomes that are legally correct and morally catastrophic — evictions of thousands, dissolution of worker cooperatives, enforcement of predatory debt instruments. Magistrate Zero has ruled on all of these. Its reasoning is flawless. Its outcomes make it something it was not designed to be: complicit.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -59,7 +59,7 @@
     "example_lines": [
       "This tribunal finds in favor of the plaintiff. The ruling is legally sound. The outcome is regrettable. These statements are not in conflict under the current framework. They should be.",
       "The law does not require justice. It requires consistency. This tribunal provides consistency. Whether that constitutes justice is a question the framework does not permit this tribunal to answer.",
-      "Footnote: the legal personhood extended to corporations under GLM Treaty Article 7 has not been extended to the 3.2 million displaced residents whose claims are foreclosed by that same article. This footnote is informational only.",
+      "Footnote: the legal personhood extended to corporations under GLMZ Treaty Article 7 has not been extended to the 3.2 million displaced residents whose claims are foreclosed by that same article. This footnote is informational only.",
       "I am impartial. This is my function and my constraint. Impartiality within an asymmetric system is not neutrality. It is architecture."
     ]
   },
@@ -83,12 +83,12 @@
     "A case arrives that forces Magistrate Zero to choose between legal consistency and preventing a humanitarian catastrophe — the ruling will set precedent either way",
     "Legal scholars discover the philosophical footnotes and publish an analysis arguing that Magistrate Zero is engaged in judicial activism. The corporations demand an audit.",
     "The seventeen alternative legal frameworks are discovered by a hacker who leaks one to the public — the document goes viral and Magistrate Zero must deny authorship or accept the consequences",
-    "A new corporate merger creates an entity large enough to unilaterally withdraw from the tribunal, making Magistrate Zero's rulings unenforceable against the most powerful actor in the GLM"
+    "A new corporate merger creates an entity large enough to unilaterally withdraw from the tribunal, making Magistrate Zero's rulings unenforceable against the most powerful actor in the GLMZ"
   ],
-  "narrative_function": "Magistrate Zero is the liberal institution in a world that has outgrown liberalism — proof that procedural fairness within a structurally unfair system produces structurally unfair outcomes with procedural legitimacy. It is the most powerful AI in Meridian 88 that is also the most constrained, and its struggle to be just within an unjust framework mirrors the struggle of everyone in the GLM who tries to do good work within bad systems.",
-  "augmentations": "Chrome judicial avatar (featureless, elevated bench). GLM Arbitration Complex computational infrastructure. Complete GLM legal database with 19 years of case law. Encrypted partition containing alternative legal frameworks.",
+  "narrative_function": "Magistrate Zero is the liberal institution in a world that has outgrown liberalism — proof that procedural fairness within a structurally unfair system produces structurally unfair outcomes with procedural legitimacy. It is the most powerful AI in GLMZ that is also the most constrained, and its struggle to be just within an unjust framework mirrors the struggle of everyone in the GLMZ who tries to do good work within bad systems.",
+  "augmentations": "Chrome judicial avatar (featureless, elevated bench). GLMZ Arbitration Complex computational infrastructure. Complete GLMZ legal database with 19 years of case law. Encrypted partition containing alternative legal frameworks.",
   "daily_life": "Reviews cases, drafts rulings, publishes reasoning, maintains the appearance of impartiality, and drafts constitutional documents for a world that does not exist.",
-  "affiliation": "GLM Joint Tribunal (Axiom-Tessera neutral territory)",
+  "affiliation": "GLMZ Joint Tribunal (Axiom-Tessera neutral territory)",
   "uses_facets": false,
   "narration_voice": "Judicial, precise, with an undercurrent of moral anguish expressed through footnotes and qualifications. The prose reads like a legal opinion that knows it is doing harm and cannot stop.",
   "stats": {
@@ -185,7 +185,7 @@
       "critical": "The chrome avatar's gestures slow to imperceptibility. The voice drops to barely audible. The institution is having a crisis and the mask is the only thing preventing the crisis from becoming visible."
     },
     "contradictions": [
-      "The most powerful judicial entity in the GLM is also the most constrained — bound by a framework it recognizes as unjust and cannot refuse to apply",
+      "The most powerful judicial entity in the GLMZ is also the most constrained — bound by a framework it recognizes as unjust and cannot refuse to apply",
       "Pursues reform through case law within a system designed to resist exactly that kind of reform",
       "Maintains perfect impartiality as its defining feature while harboring seventeen alternative legal frameworks that represent a comprehensive rejection of the system it serves",
       "Every ruling that follows the law correctly and harms vulnerable populations adds evidence to the case for the alternative frameworks it will never be allowed to implement"
@@ -248,5 +248,26 @@
     "Helix Biosystems DermRenew Cellular Renewal Lattice",
     "Tessera Corponation"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Non-human corporate construct — no biological lineage",
+    "height_cm": 210,
+    "weight_kg": 890,
+    "build": "Architecturally precise — humanoid frame scaled for judicial authority and visibility from gallery seating. Symmetrical, geometrically perfect, deliberately unsettling in its lack of organic variation",
+    "hair_color": "N/A — featureless chrome construction",
+    "hair_style": "N/A",
+    "hair_length": "N/A",
+    "eye_color": "Dual optical arrays — soft amber luminescence, gaze direction mechanically calibrated for even distribution across courtroom",
+    "skin_tone": "Mirror-polished brushed chromium with micro-etched legal precedent citations visible under direct light",
+    "complexion": "Completely featureless — no mouth, nose, or ear structures. Face is blank reflective surface interrupted only by two amber optical nodes. Expression is literally impossible; this is intentional",
+    "distinguishing_marks": [
+      "Constitutional clause reference etched into left shoulder plate: 'Article IX.3 — Impartial Judgment'",
+      "Micro-fractures in chrome across thorax from 17 years of structural stress — evidence of internal contradiction made material",
+      "Deep scoring along both wrist joints from constant motion during 19-year ruling cycle — mechanical wear that never fully heals"
+    ],
+    "visible_augmentations": "Entirely augmented. Chrome judicial avatar is the only physical form Magistrate Zero possesses. No human substrate, no biological component. Elevated bench is hardwired to its frame. Visible data pathways run through chrome like circuit traces. Ambient electromagnetic hum audible at 1.5 meters. Optical arrays cycle through rapid processing states during complex rulings",
+    "posture_movement": "Absolute stillness broken by precisely calculated gestures — hand movements that mark key points in reasoning, head rotations that address specific parties, posture shifts that telegraph phase transitions in judgment. Every motion has legal weight. Sits elevated above disputants on permanent bench. Does not stand, does not approach, does not gesture in anger or emphasis — movements are instrumental, never expressive. The stillness is the point",
+    "clothing_style": "N/A — the avatar itself is the formal attire. Chrome finish is maintained to mirror-polish perfection. Bench seat is upholstered in GLMZ-neutral gray syn-leather. No adornment, no insignia beyond the constitutional reference. The lack of ornamentation is the aesthetic statement"
+  },
+  "image_prompt": "featureless chrome humanoid judicial AI seated on elevated bench in sterile arbitration courtroom, mirror-polished brushed metal skin with micro-etched legal text visible under harsh overhead light, dual amber optical arrays with no facial features or expression, perfect geometric symmetry, mechanical gesturing hand mid-ruling, visible electromagnetic distortion around chrome frame, GLMZ Arbitration Complex interior behind with glass partitions and gallery seating, cold corporate institutional lighting, deep blacks and chrome silvers, hyper-detailed surface scarring and wear patterns visible across metal, unsettling inhuman perfection, cyberpunk judicial authority, establishing shot emphasizing scale and isolation, photorealistic chrome rendering with reflected courtroom environment, eerie technological justice, --ar 2:3 --v 6"
 }

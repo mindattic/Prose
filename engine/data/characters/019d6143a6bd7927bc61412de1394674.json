@@ -207,5 +207,26 @@
     "The Pure Hand",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Irish-Slavic blend)",
+    "height_cm": 173,
+    "weight_kg": 62,
+    "build": "Wiry and lean, with the tensile strength of someone who works with their hands constantly. Visible muscle definition in forearms and shoulders from puppet manipulation and construction work, but no bulk. Restless energy visible even at rest.",
+    "hair_color": "Deep natural red with copper undertones",
+    "hair_style": "Shoulder-length, often tied back loosely with scrap fabric or wire, perpetually mussed from constant hand-running and puppet work",
+    "hair_length": "Long",
+    "eye_color": "Warm brown with amber flecks",
+    "skin_tone": "Warm copper-tan with slight freckling across nose and shoulders",
+    "complexion": "Sharp facial features with high cheekbones, naturally expressive. Gap between upper front teeth (distinctive, never corrected). Skin shows minor scarring on knuckles and fingers from solvents and construction. Hands perpetually stained with acrylic paint residue in blues, blacks, and metallics that doesn't fully wash out.",
+    "distinguishing_marks": [
+      "Fine white scars across both palms from repeated contact with circuit board edges during puppet construction",
+      "Paint stains under fingernails, primarily deep blue and charcoal, a semi-permanent occupational mark",
+      "Small burn scar on right inner forearm from soldering iron mishap at age sixteen, roughly 3cm in length"
+    ],
+    "visible_augmentations": "Retractable cat-claw mods on both hands — visible as faint seams at the base of each fingernail when retracted, creating a subtle metallic glint under direct light. Claws are brushed steel, kept functional but unadorned. No visible evidence of color-shifting geneware when hair is in its natural red state.",
+    "posture_movement": "Hunched slightly forward when walking, shoulders mobile and expressive. Hands are almost never still — fidgeting, gesturing, unconsciously mimicking puppet movements. When performing, posture elongates and becomes theatrical; he seems to grow taller as he inhabits the space. Moves with the precision of a marionettist even in mundane tasks.",
+    "clothing_style": "Tier 4 working-class with salvage-chic aesthetic. Favors loose cargo pants in faded black or charcoal with multiple pockets for tools and paint supplies. Layers thrifted oversized shirts or vests over fitted tank tops, often modified or repaired visibly. Wears a long coat of indeterminate origin — patchworked denim and canvas, lined with interior pockets for puppet storage. Scuffed synthleather boots, well-maintained. Accessories include wire bracelets, fabric wrist cuffs stained with work, and a woven bag slung across his chest containing current puppet builds."
+  },
+  "image_prompt": "A 19-year-old street performer with natural deep red shoulder-length hair and warm copper-tan skin with freckles, gap-toothed grin, wiry lean build. Wearing layered oversized shirts and a patchworked denim coat, hands stained with acrylic paint, subtle metallic retractable claw mods visible at fingertips. Standing in Mexicantown Libre plaza at golden hour, holding an elaborate articulated puppet made from salvage and circuit boards, theatrical posture elongated and expressive. Cyberpunk street art aesthetic, warm theatrical lighting, neighborhood murals and vendor stalls blurred in background, documentary realism style --ar 2:3 --v 6"
 }

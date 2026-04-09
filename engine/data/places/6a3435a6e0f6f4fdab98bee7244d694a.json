@@ -82,9 +82,21 @@
     "Birds — the garden has attracted nesting birds, which treat the metal structures exactly like trees"
   ],
   "notable_locations": [
-    "The Tallest — the oldest and largest structure, 3 meters high, with a branching complexity that takes minutes to visually process",
-    "The Nursery — a section of new growth near the roof's north edge, where fresh structures emerge at the fastest rate",
-    "The Sound Point — a gap between structures where the wind-resonance is loudest and most complex"
+    {
+      "name": "The Tallest",
+      "description": "the oldest and largest structure, 3 meters high, with a branching complexity that takes minutes to visually process",
+      "tags": []
+    },
+    {
+      "name": "The Nursery",
+      "description": "a section of new growth near the roof's north edge, where fresh structures emerge at the fastest rate",
+      "tags": []
+    },
+    {
+      "name": "The Sound Point",
+      "description": "a gap between structures where the wind-resonance is loudest and most complex",
+      "tags": []
+    }
   ],
   "coordinates": {
     "district": "The Circuit",

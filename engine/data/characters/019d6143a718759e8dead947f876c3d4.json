@@ -29,7 +29,7 @@
       "Losing their edge to age — the body slows before the mind accepts it"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
       "To matter to someone for who they are, not what they can do"
     ],
@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Vuk Yamamoto-Darko's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Vuk Yamamoto-Darko's past shows up in GLMZ, carrying old grievances and new chrome",
     "A former associate resurfaces with evidence that could destroy Vuk Yamamoto-Darko's reputation — and a price for silence",
     "A corporate black site Vuk Yamamoto-Darko once infiltrated is being reopened, and the people inside know her face"
   ],
@@ -155,7 +155,7 @@
       "loyalty_break": 7
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "multilingual — speaks 4+ languages fluently"
     ],
     "weaknesses": [
@@ -274,12 +274,34 @@
   "registered_firearms": [],
   "related_entities": [
     "Adaptive Camouflage Skin",
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Japanese / Eastern European (Slavic)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and lean with fast-twitch musculature optimized for speed rather than power. Minimal body fat. Shoulders tense with perpetual readiness.",
+    "hair_color": "Black with synthetic silver threading — natural black base, augmented with conductive fibers",
+    "hair_style": "Pulled back in a tight braid, practical and unadorned",
+    "hair_length": "Long — shoulder-length when unbound",
+    "eye_color": "Dark brown, natural — no optic augmentation",
+    "skin_tone": "Pale olive complexion with cool undertones, darkened by nocturnal lifestyle",
+    "complexion": "Angular face with high cheekbones and a sharp jawline. Skin shows visible chromatic patterning — iridescent scales of dermal camouflage tech embedded across temples, cheekbones, and lower jaw. The installation scarring is unsubtle: thin white lines tracing the perimeter of each augmented region, evidence of expedient field surgery. No makeup. Perpetual tension in the jaw.",
+    "distinguishing_marks": [
+      "Surgical scarring forming a Y-shape from right temple to jawline, where camouflage dermal arrays were installed",
+      "Matching scarring on left side of neck, following the spinal column down to collarbone — reflex booster installation site",
+      "Small burn scar on inner left forearm, circular and precise — old contact mark from weapons testing",
+      "Tattoo on right collarbone: a simple geometric pattern in black ink — no known affiliation significance, personal"
+    ],
+    "visible_augmentations": "Chromatic dermal camouflage cells visible as iridescent, scale-like patterning across temples, cheekbones, and jawline. The cells shift color subtly in response to ambient light — copper, violet, and steel grey depending on angle and lighting. The effect is unnerving and beautiful. Surgical scarring marks all augmentation sites with clinical precision. No attempt to conceal.",
+    "posture_movement": "Moves with economical grace — every motion purposeful, nothing wasted. Walks on the balls of her feet, weight forward. Sits in corners with sight lines to exits. Eyes track movement constantly. When at rest, her fingers fidget — tapping rhythms on surfaces, a nervous tic that betrays the anxiety she channels into work. Jaw clenches when thinking.",
+    "clothing_style": "Tier 3-4 functional wear: fitted black synthetic bodysuit with modular panel pockets and attachment points for gear. Worn dark grey long-coat with internal holsters and reinforced seams — no corpo branding, generic GLMZ market piece. Black composite gloves that leave no prints. Combat boots with reinforced soles and silence treads. No jewelry. No visible Φ currency displays or status markers. Everything is purpose-built and replaceable."
+  },
+  "image_prompt": "cyberpunk female assassin, wiry athletic build, pale olive skin, angular sharp features, long black hair in tight braid, chromatic iridescent dermal augmentations across temples and jawline shifting copper violet steel grey, visible surgical scarring, dark intense eyes, wearing fitted black synthetic bodysuit and dark grey reinforced coat, tactical gloves, in shadow and neon lighting, nocturnal atmosphere, moody cyan and purple rim lighting, sharp focus on face, cold clinical aesthetic, high contrast, cyberpunk noir, photo-realistic, located in gritty underground corridor with red emergency lighting, tense ready posture, hands visible, --ar 2:3 --v 6"
 }

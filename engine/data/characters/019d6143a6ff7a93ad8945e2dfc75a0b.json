@@ -205,5 +205,27 @@
     "Slagworks Industrial",
     "Steel"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Germanic / Scandinavian (Brecker suggests Danish or Norwegian roots)",
+    "height_cm": 193,
+    "weight_kg": 118,
+    "build": "Extremely muscular and dense — not bodybuilder aesthetic but functional, working muscle developed through decades of underwater heavy labor. Shoulders broad and thick, forearms like corded cable, legs built for stability under load rather than speed.",
+    "hair_color": "Salt-and-pepper gray-brown",
+    "hair_style": "Practical, kept short and swept back. Often wet or damp from daily water work.",
+    "hair_length": "Short",
+    "eye_color": "Pale blue-gray, slightly clouded at the edges from chronic pressure exposure",
+    "skin_tone": "Fair with permanent weathering — ruddy undertone from sun and salt exposure, deeper tanning on forearms and shoulders",
+    "complexion": "Weathered and lined from four decades of outdoor work and pressure-related aging. Clean-shaven or with a day or two of stubble. Skin has a slight waxy quality from subcutaneous pressure-tolerance implants. No acne or skin damage beyond sun exposure.",
+    "distinguishing_marks": [
+      "Long, pale scar running from right collarbone to mid-sternum — old construction accident, pre-augmentation",
+      "Two parallel scars on left forearm — underwater snag injury from salvage work, circa 2218",
+      "Faint geometric pattern of implant nodes visible on inner wrists when wet — magnetic grip installation points",
+      "Callused palms with faint metallic sheen under certain light — ferrous-reactive implant surfaces"
+    ],
+    "visible_augmentations": "Magnetic grip implants create subtle metallic veining visible on palms when wet. Deep-pressure skeletal reinforcement creates barely perceptible hardening of jaw and cheekbone structure. Respiratory system modifications are invisible but create occasional faint clicking sound when breathing heavily. No visible chrome or obvious cyber — all augmentations are subcutaneous and industrial.",
+    "posture_movement": "Moves with deliberate slowness on land, a conscious choice to avoid alarming smaller people. In water or underwater, movements become fluid and assured. Posture is slightly forward-leaning even when standing still — occupational habit from underwater work. Hands often open and relaxed at sides, rarely clenched. When lifting, movements are smooth and controlled rather than explosive.",
+    "clothing_style": "Tier 3-4 working class, practical and durable. Typically wears faded cargo pants with tool loops, worn thermal undersuit visible at neck and cuffs. Prefers old-style Gore-Tex work jackets in faded navy or gray. Boots are heavy, waterproofed, re-soled multiple times. Occasionally wears a knit sweater his crewmate Marta made for him in 2224 — worn at elbows now, he refuses to retire it. No jewelry except a simple steel band on his left ring finger (memorial to someone, never discussed). All clothing shows legitimate wear, zero status signaling."
+  },
+  "image_prompt": "A 42-year-old male salvage operator, massive and weathered, six-four with 260 pounds of functional working muscle, pale blue-gray eyes, salt-and-pepper short hair swept back. Fair skin heavily weathered and sun-damaged, slight metallic sheen visible on scarred palms. Standing on a deteriorating dock overlooking Lake Michigan ruins, wearing faded navy cargo work pants and a threadbare Gore-Tex jacket over a gray thermal shirt, heavy waterproofed boots planted firmly. Deliberate, careful posture. Soft, honest face despite immense size. Industrial cyberpunk aesthetic — no flashy chrome, only subcutaneous augmentations creating subtle anatomical asymmetries. Pale morning light, overcast sky, rusted metal structures and dark water in background, moody and grounded. Cinematography by David Fincher. --ar 2:3 --v 6"
 }

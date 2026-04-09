@@ -184,5 +184,25 @@
     "Silver",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, with the economical musculature of someone who moves deliberately rather than forcefully. Shoulders slightly narrow, center of gravity low. Her frame reads as precise — nothing wasted.",
+    "hair_color": "Natural deep black with silver wire threading throughout",
+    "hair_style": "Twisted locks, intricately arranged, with metallic wire woven through for both aesthetic and functional antenna extension",
+    "hair_length": "Medium (shoulder-length locks)",
+    "eye_color": "Dark brown, unaugmented human iris",
+    "skin_tone": "Deep warm brown with undertones suggesting West African heritage",
+    "complexion": "Clear, well-maintained skin with sharp cheekbones and a narrow face. Expression typically controlled; her features at rest suggest someone listening for something just outside normal hearing range.",
+    "distinguishing_marks": [
+      "Subdermal data-cache implant running along the inside of her left forearm, visible as a faint linear scar with occasional faint LED pulse when activated via finger-press",
+      "Pair of fully mobile black velvet geneware cat ears mounted at the crown, with pink inner tissue and delicate cartilage structure — responsive to her emotional state despite her efforts to control them"
+    ],
+    "visible_augmentations": "The cat ears are immediately obvious and animate constantly. The silver wire in her locks glimmers under kiosk lighting and serves as a passive signal antenna. Her left forearm scar is visible if she rolls her sleeves, which she does — suggests she's not trying to hide her augmentations, just their tells.",
+    "posture_movement": "Economical and controlled. She sits at her kiosk in a way that suggests she's always half-ready to stand. Her head tracks sounds with slight but noticeable delays — her ears moving first, then her eyes following. When she walks, her stride is quick and efficient, rarely wasted motion. Her hands are steady and precise.",
+    "clothing_style": "Tier 3 practical — well-maintained but not expensive. Favors tool vests with multiple pockets, thermal-lined jackets (kept open most of the time), and cargo pants with reinforced knees and thigh pockets. She wears a plain silver chain necklace and keeps her fingers bare to reduce friction while working on devices. Her kiosk setup includes a faded work apron with embroidered patches indicating repair certifications. Colors lean neutral: blacks, grays, deep blues. Nothing that would draw attention in the Souk's visual noise."
+  },
+  "image_prompt": "Portrait of Oluwadarasimi 'Dara' Pettersson-Faye, a 36-year-old compact Black woman with deep warm brown skin, standing in a cluttered electronics repair kiosk in a sprawling cyberpunk marketplace. She has shoulder-length twisted locks threaded with shimmering silver wire functioning as passive antenna, and prominent black velvet geneware cat ears mounted at her crown, ears swiveling toward ambient sound. Her dark brown human eyes are sharp and watchful, her expression controlled but slightly melancholic. She wears a gray thermal jacket over a black work vest laden with pockets and tools, cargo pants, and her hands are poised over a dismantled device on her workbench. A faint LED pulse illuminates a subdermal implant line on her left forearm. The kiosk is surrounded by screens, spare parts, and cables; afternoon light filters through the Alban Souk's dense market canopy, casting warm amber and cool blue shadows. Her cat ears twitch slightly, revealing her acute awareness. Cyberpunk noir aesthetic, gritty and intimate, professional product photography quality. --ar 2:3 --v 6"
 }

@@ -232,5 +232,26 @@
     "The Pale Mile",
     "Celeste Abram"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Central Asian (Akan / Persian influences suggested by surname Owusu-Tarkhan)",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and sturdy, with the developed upper body and forearms of someone who has spent five decades pulling fabric under tension. Not heavy, but solid—muscle beneath skin, slight softness at the midsection earned through age and posture hunched over worktables.",
+    "hair_color": "Black with silver streaking, predominantly silver at temples and crown",
+    "hair_style": "Flat-braided cornrows, pinned close to the scalp in a practical crown. Bone toggles salvaged from industrial equipment serve as hair pins.",
+    "hair_length": "Medium (back to mid-neck when unbraided)",
+    "eye_color": "Deep brown, natural; augmented with faint crystalline overlay visible at the iris rim (magnification implants)",
+    "skin_tone": "Deep umber, warm undertones",
+    "complexion": "Weathered but deliberate in grooming. Minimal makeup—sometimes kohl around eyes. Her face carries laugh lines and the horizontal creases of someone who squints at close work. Skin is clear but textured from decades of needle-prick scarring on her hands.",
+    "distinguishing_marks": [
+      "Fingertips of both hands marked with hundreds of pale pinprick scars from needle punctures, creating a faint stellar pattern across the pads and sides of her fingers",
+      "Faint amber bioluminescent tracery along both collarbones and shoulders, once bright, now dimmed to visible only in low light—a thin, delicate line-work pattern suggesting vines or circuit paths",
+      "Small burn scar on the inside of her left forearm (size of a coin), consistent with old machine contact"
+    ],
+    "visible_augmentations": "Magnification implants visible as a subtle crystalline sheen at the iris rim when light hits at certain angles. The bioluminescent subdermal tracery is largely dormant but faintly discernible along the collarbones in darkness—a ghost of faded amber.",
+    "posture_movement": "Upright and precise. She stands with the slight forward hunch of a seamstress, shoulders rolled slightly inward—a postural habit she lectures others about. Her hands are never still; they gesture, measure air, adjust fabric on her own clothing. She moves with economic efficiency; no wasted motion. When sitting, she sits at the edge of chairs, ready to rise. She walks with purpose, feet landing flat and deliberate.",
+    "clothing_style": "Tier 3-4 working class, deliberately practical and self-made. She wears her own alterations—fitted linen or cotton shifts in muted earth tones (ochre, charcoal, rust), often with asymmetrical seams or experimental details that serve as proof-of-concept for customer ideas. A long canvas apron with deep pockets and hand-embroidered details (three scripts: Latin, Arabic, Hangul) is a fixture. Worn boots—recently re-soled by her own hand. Jewelry is minimal and utilitarian: a copper ring worn from years of tension (gift from an apprentice), a simple bead bracelet in clay. Her glasses hang from a braided cord around her neck when not in use. She wears her augmentation scarring and faded bioluminescence without concealment or shame—they are proof of skill and longevity."
+  },
+  "image_prompt": "Portrait of a 52-year-old West African-Central Asian woman with deep umber skin, silver-streaked black hair braided and pinned with bone toggles, standing in a cluttered fabric alterations shop. Her shoulders are broad and slightly hunched from decades of needlework. Magnification implants visible as faint crystalline shimmer in her dark brown eyes. Faded amber bioluminescent tracery barely visible along her collarbones in workshop lighting. Hundreds of pale needle-prick scars map her fingertips and hands. She wears a fitted earth-tone linen shift with asymmetrical seams and a weathered canvas apron embroidered in three scripts. Behind her: bolts of reclaimed fabric, spools of thread, an antique industrial sewing machine with brass fixtures. Warm workshop lighting, machine oil and camphor smell suggested by rich color palette. Cyberpunk tailor, hyper-realistic, character portrait, intimate environment, shallow depth of field focusing on her hands and face, gritty texture, analog-meets-tech aesthetic --ar 2:3 --v 6"
 }

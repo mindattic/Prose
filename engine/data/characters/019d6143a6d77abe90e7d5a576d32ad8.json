@@ -43,7 +43,7 @@
       "Cannot accept help without interpreting it as leverage",
       "Cannot see that their independence is actually isolation wearing a better outfit"
     ],
-    "secret": "Somadina Forsberg-Ofosu sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Somadina Forsberg-Ofosu sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
@@ -283,5 +283,26 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 182,
+    "weight_kg": 74,
+    "build": "Lean and angular with visible muscular definition — wiry strength rather than bulk. The geneware muscle density treatment creates an almost unnaturally efficient frame, all compact power and minimal fat. His shoulders are broad but not wide; his limbs are long and precise.",
+    "hair_color": "Dark brown, graying at temples",
+    "hair_style": "Close-cropped, utilitarian. He doesn't style it — he cuts it short to reduce variables.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint chromatic iridescence around the pupils — subtle sign of the dermal camouflage system",
+    "skin_tone": "Medium brown with warm undertones, a blended phenotype reflecting his mixed heritage",
+    "complexion": "Sharp facial features — high cheekbones, angular jaw, direct gaze. His face is weathered but not aged; sleep deprivation and stress have carved fine lines around his eyes. His skin shows the pale, luminous quality of someone who lives nocturnally, though darker-skinned than full nocturnal pallor would suggest.",
+    "distinguishing_marks": [
+      "Augmentation scarring around both temples in faint straight lines where neural interface ports were installed — visible but faded",
+      "Augmentation scarring along the jawline on both sides where geneware muscle density treatment was layered into the facial structure — surgical precision but no attempt at cosmetic smoothing",
+      "A thin white scar across his left knuckle — old knife work, probably from the Narrows"
+    ],
+    "visible_augmentations": "Geneware muscle density treatment visible as subtle chrome sheen under the skin when he moves — tendons and muscle fibers catch light unnaturally during exertion. The chromatic skin pigment cells of his dermal camouflage create occasional iridescent shifts across his forearms and neck under certain lighting, particularly blue or ultraviolet. No external chrome limbs; all augmentations are integrated.",
+    "posture_movement": "He moves with economical precision — no wasted motion, every gesture purposeful. His default stance is loose but alert, weight distributed for immediate action. He doesn't fidget or relax into furniture; even sitting, there's coiled tension in his frame. His gaze is tracking, always reading the room. He speaks quietly and rarely, forcing others to lean in or strain to listen — a power dynamic he controls.",
+    "clothing_style": "Tier 4 utilitarian-technical aesthetic. Black tactical pants with reinforced seams and cargo pockets, fitted but not tight. Matte-finish synthetic shirt, usually dark gray or charcoal, with minimal branding — function over identity. A worn composite-weave jacket in slate gray with asymmetrical zipper placements and internal pockets for gear. Lightweight boots with non-reflective soles, broken in but maintained. No jewelry, no corporate logos, no status symbols. Everything is chosen for durability, silence, and low visibility. His clothes are clean but not new; they show professional wear, not poverty."
+  },
+  "image_prompt": "A lean, angular Black-Scandinavian male in his late 30s, sharp facial features with graying temples, standing in moody nocturnal lighting. Dark tactical clothing — charcoal synthetic shirt, slate gray composite jacket, black reinforced pants. Subtle iridescent shimmer visible on forearms and neck from dermal camouflage augmentations. Faint augmentation scarring visible at temples and jawline. Intense, calculating dark eyes with faint chromatic iridescence. Nocturnal pallor on warm brown skin. Standing in three-quarter pose in a half-ruined urban corridor with exposed concrete and shadows, blue and amber sodium lighting casting long shadows. Cyberpunk genre, gritty realism, cinematic mood lighting, dramatic shadows, ultra-detailed face, professional extraction specialist aesthetic, no external chrome, integrated augmentations only. Shot composition emphasizes tension and precision. --ar 2:3 --v 6"
 }

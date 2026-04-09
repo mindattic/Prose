@@ -280,5 +280,27 @@
     "Neuromorphic Pressure Cestus",
     "Slagworks Industrial"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Lean and angular with visible musculature — low body fat, wiry frame built for speed and endurance rather than strength. Shoulders slightly asymmetrical from old injury or chronic tension.",
+    "hair_color": "Dark brown with early-stage silver threading at temples",
+    "hair_style": "Pulled back in a tight, functional braid — no ornamentation",
+    "hair_length": "Long",
+    "eye_color": "Pale grey-blue with faint stress lines radiating outward",
+    "skin_tone": "Warm medium brown with ash undertones — mixed northern and equatorial ancestry evident",
+    "complexion": "Weathered for her age. Sharp cheekbones, prominent jaw, angular face planes. Extensive scarring across left cheekbone (three parallel lines, old blade work), smaller scar tissue along right temple (impact), faint burn mark along jawline. Minimal makeup, meticulous grooming despite working lifestyle.",
+    "distinguishing_marks": [
+      "Three parallel blade scars running diagonally across left cheekbone, approximately 8cm total length, white and well-healed",
+      "Impact scar on right temple just above hairline, crescent-shaped, approximately 2cm, silvered tissue",
+      "Burn scar along right jawline below ear, faint and thin, approximately 4cm in length",
+      "Thin white scar running along inside of left wrist — longitudinal, approximately 6cm, surgical precision"
+    ],
+    "visible_augmentations": "Chrome reflex booster hardware visible along spine — brushed steel nodes running from mid-thoracic to sacrum, approximately 2cm diameter, interconnected with faint luminescent tracery when active. Fingertips show faint geometric patterning under skin (gecko-grip implant ports) visible only in certain light. No attempt to conceal augmentation work.",
+    "posture_movement": "Economical and precise — minimal wasted motion. Walks with weight on balls of feet, ready to shift direction. Sits with back to wall and clear sightlines. Hands rest within 15cm of body. Eyes track movement constantly. Overall impression: coiled spring.",
+    "clothing_style": "Tier 4 utilitarian — function over aesthetics. Dark textiles (charcoal, black, deep blue) in durable synthetics and treated canvas. Reinforced cargo pants with custom thigh holster rig. Fitted tactical jacket (matte black, multiple pockets, cable management built in). Worn Geartown-manufacture climbing boots with custom grip soles. No logos or visible branding. Jewelry: only a scratched chronometer on left wrist, military-grade, probably scavenged. Overall aesthetic: prepared for immediate action, zero flash."
+  },
+  "image_prompt": "A lean, angular woman with dark brown skin and pale grey-blue eyes, 29 years old, standing in three-quarter profile in harsh industrial lighting. Extensive facial scarring visible — three parallel white lines across left cheek, scar tissue at right temple. Dark hair pulled back in tight braid. Visible brushed steel chrome hardware running along spine, glowing faintly at nodes. Fingertips show subtle geometric patterns beneath skin. Wearing dark tactical jacket and reinforced cargo pants, minimal jewelry except worn military chronometer. Sharp cheekbones, weathered complexion, posture coiled and ready. Background: neon-lit Geartown chop shop with exposed pipes and metal surfaces, deep shadows and cool cyan/purple lighting. Cyberpunk, high-contrast, moody, photorealistic, espionage specialist aesthetic --ar 2:3 --v 6"
 }

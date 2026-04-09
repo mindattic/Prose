@@ -261,5 +261,24 @@
     "The Pale Mile",
     "Lead"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Polish",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and tall with the residual frame of former athleticism; still carries lean muscle definition in his upper body despite years of sedentary work, slight softening at the midsection from long hours in climate-controlled labs",
+    "hair_color": "Natural black with pale blue bioluminescent threading",
+    "hair_style": "Short locs, approximately 8-10cm in length, evenly maintained, bioluminescent fibers woven through at intervals",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Deep brown with warm copper undertone",
+    "complexion": "Clean-shaven, well-maintained but not groomed with particular attention; skin shows minimal sun exposure from extended sublevel work, slight pallor beneath the deep tone; fine lines around the eyes from concentration and screen work",
+    "distinguishing_marks": [
+      "Long diagonal scar running from right jaw to right collarbone, approximately 12cm in length, pale and well-healed from datacable accident during apprenticeship, unrepaired on principle"
+    ],
+    "visible_augmentations": "Pale blue bioluminescent threading woven through hair locs (glows softly in low-light conditions). No other visible chrome or external augmentation — neural latency implant, haptic feedback overlays, and neural interface ports are subcutaneous/internal",
+    "posture_movement": "Habitually animated hands even at rest; constant subtle movement — sketching invisible patterns in air, fingers tapping rhythmic schemas on nearby surfaces, folding and unfolding worn paper compulsively. Posture slightly forward-leaning when focused, as though pulled toward problems. Gait efficient and purposeful but often distracted, occasionally walks into doorframes mid-thought",
+    "clothing_style": "Tier 1 corporate professional with deliberate informality — high-quality base layers (thermal responsive mesh undershirts, usually charcoal or matte black), unmarked Tessera engineer vest (gray composite, minimal branding, functional pockets), fitted black cargo pants with reinforced deep thigh pockets for tools and worn paper, low-profile haptic interface gloves (matte finish, fingertips exposed), scuffed synthetic leather ankle boots rated for sublevel humidity. No jewelry. Clothing is clean but shows wear patterns consistent with long hours; occasionally has faint dust from data-conduit maintenance areas on shoulders or sleeves"
+  },
+  "image_prompt": "Cyberpunk portrait of a tall Black man, age late 30s, short locs with bioluminescent pale blue threading, deep brown skin with warm copper undertones, dark eyes focused and thoughtful, prominent diagonal scar from jaw to collarbone. Wearing unmarked Tessera corporation gray composite engineer vest over thermal mesh undershirt, fitted black cargo pants, matte haptic interface gloves. Hands caught mid-gesture sketching invisible data architecture. Sublevel industrial setting with soft amber emergency lighting reflecting off his glowing hair threads, data-conduit pipes and holographic schema displays in background, air slightly hazy with recycled atmosphere. Contemplative but animated expression, completely absorbed. Cinematic lighting with blue-tinted rim light from bioluminescence. Photorealistic, character-focused portrait. --ar 2:3 --v 6"
 }

@@ -185,5 +185,26 @@
     "Axiom Systems Synapse Interruptor SI-3 'Stutter'",
     "Tessera TK-7 Service Pistol 'Ticker'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Scandinavian (implied by Tambadou and Lević)",
+    "height_cm": 158,
+    "weight_kg": 62,
+    "build": "Compact and rounded, with the solid, functional frame of someone who moves through confined spaces daily. Shoulders slightly forward from years of operator posture. No excess weight, but not angular — a body built for endurance, not speed.",
+    "hair_color": "Deep arterial red (stable geneware pigment)",
+    "hair_style": "Soft natural halo, shoulder-length, with a single uncolored (silver-gray) streak above the left ear",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, close-set",
+    "skin_tone": "Warm brown with undertones suggesting mixed West African and Northern European ancestry",
+    "complexion": "Round face, expression lines around the eyes and mouth earned early from years of focus and quiet frustration. Well-maintained skin, minimal cosmetic modification. Eyes carry an observer's intelligence and a thread of contained irritation.",
+    "distinguishing_marks": [
+      "Single uncolored (warranty-void) hair streak above left ear — deliberately maintained and never dyed back",
+      "Fine expression lines radiating from outer corners of both eyes, deeper on the left side",
+      "Small callus on the right index and middle fingers from haptic interface controls on the operator console"
+    ],
+    "visible_augmentations": "None visible. The Ferrogate-issued neural timing sync is subcutaneous; no external hardware or LED indicators.",
+    "posture_movement": "Slightly forward-leaning from years hunched over operator controls. Movements are economical and precise — no wasted motion. Walk is steady and rhythmic, like someone who has internalized the cadence of a schedule. Carries themselves with the quiet competence of someone who knows their domain intimately, but with a held tension that suggests awareness of corporate oversight.",
+    "clothing_style": "Ferrogate Transit operator uniform (navy blue with lighter blue trim and company logo on chest). Collar always one button undone — a small, consistent rebellion. Uniform is clean and well-fitted but worn with deliberate casualness. Off-shift likely wears functional Tier 4 clothing: durable synthetic blends, muted colors, minimal corporate branding. No jewelry except a faded watch band with no watch (broken years ago, never replaced)."
+  },
+  "image_prompt": "Nonbinary transit operator with deep arterial red shoulder-length hair and single gray uncolored streak above left ear, warm brown skin, dark close-set eyes, round face with earned expression lines. Compact 158cm frame in Ferrogate Transit navy uniform with collar one button undone. Cyberpunk, Tier 4 working-class aesthetic. Slight forward lean from years at controls, steady posture. Dimly lit operator lounge background with flickering PA system monitors and worn metal console edges. Overhead fluorescent lighting casting tired shadows. Detailed facial expression showing quiet focus and contained frustration. Photorealistic, worn but dignified, 2226 GLMZ aesthetic. --ar 2:3 --v 6"
 }

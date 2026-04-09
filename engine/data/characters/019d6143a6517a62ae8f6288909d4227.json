@@ -271,5 +271,27 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Silver"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Central European (Czech-Polish)",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "build": "Tall and lean, still carrying the frame of a younger man despite age — long-limbed and loose-jointed, with the kind of structural efficiency that comes from decades of physical labor and deliberate movement. Slight forward curve to the shoulders from years hunched over union paperwork.",
+    "hair_color": "Grey-silver with amber undertones",
+    "hair_style": "Short locs, neat and well-maintained, threaded with a few dark fibers at the base",
+    "hair_length": "Short",
+    "eye_color": "Deep brown",
+    "skin_tone": "Deep sienna with warm undertones",
+    "complexion": "Weathered and lined — a face that has spent decades in fluorescent light and loud rooms. Heavy brow ridge, strong jaw that still juts forward when concentrated or angry. Minimal grooming vanity; clean but not polished. Faint scarring on the left temple from a 2168 Ferrogate station incident.",
+    "distinguishing_marks": [
+      "Tiger-stripe bioluminescent geneware running across both forearms in amber-gold lines, glowing softly in low light — marks the 2172 Ferrogate walkout victory.",
+      "Matching bioluminescent stripes across the collarbone and upper chest, visible above work shirt collar when unbuttoned.",
+      "Burn scar on the inside of right wrist, pale and puckered, approximately 3cm diameter — origin lost to old stories.",
+      "Thin white scar bisecting the left eyebrow, partially obscured by hair."
+    ],
+    "visible_augmentations": "Subvocal transceiver implant visible as a faint metallic subcutaneous ridge along the left side of the throat, approximately 2cm below the jawline. Device itself dormant but hardware still present. Bioluminescent geneware on arms and chest is the primary visible augmentation — always subtly active, brighter in darkness.",
+    "posture_movement": "Moves with economical precision despite his height — someone who learned to navigate crowded transit stations and union halls without wasting energy. Stands with weight slightly forward, shoulders relaxed but capable of sudden tension. When listening to younger people, his entire frame bends forward attentively. When angry or making a point, his jaw juts and his hands become very still — a union organizer's learned control.",
+    "clothing_style": "Tier 4 utilitarian — well-worn but maintained. Favors loose grey or charcoal work shirts with FTW union emblems faded but still visible. Cargo pants in dark synthetic with reinforced pockets. Worn composite work boots that he repairs himself. A thin wool cardigan in deep blue, decades old, worn over everything. No jewelry except a simple platinum band on his left ring finger (his late husband's, worn since 2189). Clothing carries the faint smell of building maintenance — solvents, electrical compound, the particular dust of old transit infrastructure."
+  },
+  "image_prompt": "cyberpunk portrait of a 68-year-old man of mixed West African and Central European heritage, tall and lean with grey-silver short locs, deep sienna complexion, heavy brow and strong jaw. Tiger-stripe bioluminescent amber-gold geneware glowing softly across both forearms and collarbone. Wearing faded Ferrogate Transit Workers Union grey work shirt and worn dark cargo pants, blue wool cardigan draped over shoulders. Setting: modest Tier 4 apartment interior, soft amber bioluminescence from his body casting warm light across his face, fluorescent ceiling panels half-lit. His expression thoughtful and weary but attentive. Cinematic lighting, photorealistic, worn hands folded on his lap suggesting both labor and contemplation. Mood: tired dignity, man shaped by struggle now shaped by love. --ar 2:3 --v 6"
 }

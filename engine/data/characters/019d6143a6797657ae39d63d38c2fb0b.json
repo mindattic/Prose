@@ -179,5 +179,26 @@
     "Elena Vasquez-9",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Greek",
+    "height_cm": 168,
+    "weight_kg": 68,
+    "build": "Broad-shouldered and athletic without bulk; the build of someone who moves deliberately and spends hours in focused physical work. Strong forearms and steady hands.",
+    "hair_color": "Deep brown with natural warm undertones",
+    "hair_style": "Worn loose or in a high knot depending on work phase; deliberately unadorned",
+    "hair_length": "Medium (shoulder-length when down)",
+    "eye_color": "Left eye: cat-pupil iris modification (custom amber with vertical slit pupil); right eye: warm dark brown, unmodified",
+    "skin_tone": "Deep olive complexion with golden undertones",
+    "complexion": "Clear, unmarked face by choice—a deliberate statement in her field. High cheekbones from Ghanaian lineage, defined jawline. Skin shows meticulous care; no cosmetic facial work. Expression tends toward focused calm interrupted by sudden intensity.",
+    "distinguishing_marks": [
+      "Full-body bioluminescent subdermal network visible beneath skin in geometric and organic patterns that shift between dormant (barely visible under certain light) and active (soft cyan-to-violet glow that pulses with emotional state); network spans shoulders, arms, torso, legs in her own design, applied over nine years in sections",
+      "Network is densest across shoulders and upper back, creating an impression of living circuitry beneath the surface",
+      "Asymmetrical cat-pupil iris in left eye only—amber-gold color with deliberate vertical slit; a cosmetic choice that creates unsettling beauty"
+    ],
+    "visible_augmentations": "Full-body bioluminescent subdermal network (actively visible and reactive); asymmetrical cat-pupil iris modification in left eye; subdermal tool-grip reinforcement in hands manifests as faint scarring/patterning at palms and fingers when examined closely, or slight visual shimmer under certain light angles",
+    "posture_movement": "Moves with measured confidence and economy—no wasted motion. Hands are expressive and precise, often unconsciously demonstrating potential work on the air. Maintains steady eye contact (the asymmetry of her gaze is deliberate and used strategically). Stands with weight balanced, shoulders back. When working, enters a state of absolute focus that creates a palpable boundary around her workspace.",
+    "clothing_style": "Tier 3-4 working artist aesthetic: fitted black or charcoal technical fabrics that show off her bioluminescent network without being ostentatious about it; sleeveless or short-sleeved to display arm work. Precision-tailored; no excess. Frequently wears a worn linen apron over her clothes during work hours—an affectation that reads as both practical and performative. Boots with good grip. Minimal jewelry (she is the jewelry). No corporate branding; all her clothing is either independent maker or salvaged/tailored. A single silver band on her right ring finger—old, possibly inherited."
+  },
+  "image_prompt": "Portrait of a 34-year-old Black woman with Greek features, medium height, broad-shouldered, standing in a cyberpunk body modification studio. Deep olive skin illuminated by soft cyan-to-violet bioluminescent patterns flowing beneath the surface—geometric and organic designs spanning shoulders, arms, torso. Left eye has a distinctive amber cat-pupil iris modification with vertical slit; right eye warm brown and unmodified, creating asymmetrical gaze. Clear unmarked face, strong jawline, shoulder-length deep brown hair. Wearing fitted black technical sleeveless shirt and worn linen apron, hands visible showing faint subdermal tool-grip scarring. Posture confident and still, hands expressive. Studio setting: street-level room with soft overhead lighting, shelves of pigments and tools, physical books, ritualistic aesthetic. Mood: focused intensity mixed with spiritual deliberation. Lighting: warm practical work lights mixing with cool glow from her subdermal network. Cyberpunk, body horror-adjacent but intentional, technically excellent, uncompromising. --ar 2:3 --v 6"
 }

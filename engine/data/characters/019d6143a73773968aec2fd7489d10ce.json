@@ -186,5 +186,27 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Nesting Doll"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South African / Czech / Samoan",
+    "height_cm": 162,
+    "weight_kg": 68,
+    "build": "Compact and broad-shouldered with dense muscle development from decades of deck work and manual labor. Her frame is economical — no excess, all functional mass concentrated in her shoulders and forearms.",
+    "hair_color": "Deep brown with silver streaking throughout",
+    "hair_style": "Locs pinned up and secured under a battered captain's cap; typically loose below the cap when off-duty",
+    "hair_length": "Long (shoulder-length when down)",
+    "eye_color": "Augmented: concentric rings of amber and black with abacus-pattern geometry; rings scroll subtly during concentration or calculation",
+    "skin_tone": "Deep brown with sun-damaged weathering from decades of basin exposure; uneven tan lines on forearms and neck",
+    "complexion": "Weathered and lined — deeply creased around eyes and mouth from years of squinting into glare off the water. Callused hands with visible subdermal texture (grip-pattern augmentation) visible beneath the skin of her palms. No cosmetic grooming; practical maintenance only.",
+    "distinguishing_marks": [
+      "Faded Polynesian wave pattern tattoo wraps her entire left forearm from wrist to elbow, executed roughly and showing age-related color fade.",
+      "Czech geometric border tattoo overlays the wave pattern on the same forearm, executed in sharp black lines — applied years later as deliberate reclamation work.",
+      "Thin scar running horizontally across her right cheekbone, approximately 6cm long, consistent with a blade or industrial accident.",
+      "Collection of small burn scars across both hands (thumb-sized marks), scattered and consistent with repeated exposure to hot metal or steam."
+    ],
+    "visible_augmentations": "Modded abacus-patterned irises in both eyes (amber and black concentric rings that scroll during calculation); subdermal grip-texture visible as subtle dimpling across both palms and finger pads. Everything else is subcutaneous or internal.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight distributed low and balanced, as if ready to adjust to deck movement. Speaks softly but with absolute certainty; her stillness is more commanding than gesture. Rarely raises her voice. Her eyes do the work of her tone — the scrolling irises calculate while she listens.",
+    "clothing_style": "Practical waterproofed layers in muted grays, blacks, and deep blues; worn cargo pants with reinforced knees and thighs; waterproof jacket with multiple pockets. A battered captain's cap (faded navy with grease stains) pinned over her locs. Heavy-soled boots, salt-stained and scarred. A ledger-shaped datapad holstered at her hip like a weapon. No jewelry except a thick ring of tarnished silver on her right ring finger — possibly a keepsake. Overall appearance is Tier 4-5: functional, durable, unmarked by status symbols. Everything she wears is practical and replaceable."
+  },
+  "image_prompt": "Cyberpunk portrait of a 44-year-old woman with deep brown weathered skin and silver-streaked locs pinned under a battered navy captain's cap. Her eyes are augmented with concentric amber-and-black abacus pattern irises that glow softly. Compact, broad-shouldered build with visible calluses and faded Polynesian wave tattoo overlaid with sharp Czech geometric patterns on her left forearm. Wearing waterproofed cargo layers in grays and blacks, a stained captain's jacket, heavy boots. A ledger-shaped datapad holstered at her hip. She stands with weight low and balanced, gazing directly forward with absolute stillness and precision. Setting: the cramped metal interior of the Mercy Float, a repurposed fish-processing barge, with rust-streaked walls and dim amber industrial lighting reflected off still water. Mood: calculated coldness, hard-earned authority, quiet menace beneath surface warmth. Film noir meets industrial cyberpunk. --ar 2:3 --v 6"
 }

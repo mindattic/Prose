@@ -106,5 +106,26 @@
   "related_entities": [
     "Geartown"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "South Asian (Bengali) / Scandinavian (Norse)",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and thick-necked, muscular but softened by age and desk work. Carries weight in his torso; forearms remain corded and strong.",
+    "hair_color": "Steel gray with residual black at the temples",
+    "hair_style": "Slicked back, pomaded, precise",
+    "hair_length": "Medium (collar-length)",
+    "eye_color": "Dark brown, shot through with deep gray",
+    "skin_tone": "Warm olive-brown with weathered undertones",
+    "complexion": "Strong jawline, lines around the eyes and mouth from decades of negotiation and command. Slight scar tissue on his left cheekbone. Five o'clock shadow, meticulous grooming otherwise.",
+    "distinguishing_marks": [
+      "Thin horizontal scar across his left cheekbone, approximately 3cm, from a knife fight in his thirties",
+      "Network of pale burn scars across his right shoulder and upper arm, partially obscured by clothing",
+      "Tattoo on his inner left wrist: a Scandinavian rune (ᚦ, Thurisaz) in faded black ink, likely 30+ years old"
+    ],
+    "visible_augmentations": "None immediately obvious. Wears a military-grade smartwatch on his right wrist with a discrete Arcturus corporate logo. Slight neural port scarring behind his right ear, barely visible unless he pulls his hair back.",
+    "posture_movement": "Moves with deliberate economy—no wasted motion. Stands with his shoulders squared, a habit from military life. Handshakes are firm and brief. He leans back when listening, eyes narrow slightly when calculating.",
+    "clothing_style": "Tier 1-2 corporate military aesthetic: charcoal wool slacks, pressed crisply; gray or black dress shirts with reinforced polymer weave (ballistic-rated, though not visibly). Dark tactical jacket (Arcturus-branded, understated embroidery). Shoes are black leather combat boots, polished to a mirror finish. Small Φ currency clip on his belt. No excessive chrome or visible corpo swagger—his status is conveyed through fabric quality and cuts, not flashiness."
+  },
+  "image_prompt": "Professional male fixer in his mid-50s, mixed South Asian and Scandinavian heritage, steel-gray pomaded hair, sharp jaw with weathered scar tissue, dark brown eyes. Wearing charcoal wool slacks and reinforced black tactical jacket, understated corporate military wear. Standing in a dimly lit Geartown warehouse office, neon signs bleeding through frosted windows behind him, cool blue and amber overhead lighting. Composed, dangerous, calculated expression. Film noir mood, cinematic depth, corporate dystopia aesthetic, photorealistic. --ar 2:3 --v 6"
 }

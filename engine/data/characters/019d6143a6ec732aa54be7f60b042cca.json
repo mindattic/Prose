@@ -241,5 +241,25 @@
     "Iron",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Estonian / Fulani / Māori",
+    "height_cm": 183,
+    "weight_kg": 72,
+    "build": "Lean and long-limbed with the economical musculature of someone accustomed to stillness and precision — no wasted bulk, but not fragile. Shoulders slightly rounded from years of seated posture in the shuttle cab.",
+    "hair_color": "Dark brown, naturally",
+    "hair_style": "Short on the sides, longer knot at crown threaded with signal-orange cord",
+    "hair_length": "Short with medium-length topknot",
+    "eye_color": "Pale grey, naturally — striking against his darker complexion",
+    "skin_tone": "Deep brown with warm undertones, even complexion",
+    "complexion": "Angular jaw, sharp cheekbones. Fine lines around the eyes from sustained concentration. Skin well-maintained but not groomed — functional rather than fashionable. Expression neutral at rest, becomes animated only when engaged.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles across both shoulders and collarbones — soft blue-green glow visible in low light, cosmetic mod applied at age 19",
+      "Faint calluses on inner palms and fingers from shuttle console interface, barely noticeable"
+    ],
+    "visible_augmentations": "Bioluminescent freckle mod only. Neural fatigue monitor implant is subcutaneous (no visible marker, but Ferrogate-issue neural interface port may be visible at base of skull beneath short hair if examined closely).",
+    "posture_movement": "Moves with deliberate economy — no gesture wasted. Sits upright, spine aligned, weight centered. In conversation, maintains stillness except for slow head turns and deliberate hand movements. When concentrating, his pale eyes go distant and focused. Walks with steady, measured pace.",
+    "clothing_style": "Ferrogate Transit Grade 2 operator uniform on shift: charcoal grey jumpsuit with orange piping, reflective trim, ID badge on lanyard. Off-shift: plain dark utility pants, neutral-colored long-sleeve shirts or worn thermal tops. One threadbare wool sweater (dark grey, possibly inherited or salvaged). Worn boots rated for tunnel water. Tier 3-4 working class — practical, durable, minimal aesthetic consideration. No visible jewelry except the signal-orange cord in his hair."
+  },
+  "image_prompt": "Cyberpunk portrait of Tarvo Diallo-Rangi, 31-year-old Estonian-Fulani-Māori transit operator, lean and angular-faced with pale grey eyes and deep brown skin with warm undertones. Short dark hair with a topknot threaded with signal-orange cord. Bioluminescent freckles glowing soft blue-green across shoulders and collarbones. Wearing a charcoal grey Ferrogate Transit Grade 2 jumpsuit with orange reflective piping. Standing in dim underground station lighting, tunnel wall visible behind him. Neutral expression, focused and calm. Moody cyberpunk noir lighting, neon glow from distant signage, slight atmospheric haze. Gritty, utilitarian aesthetic. --ar 2:3 --v 6"
 }

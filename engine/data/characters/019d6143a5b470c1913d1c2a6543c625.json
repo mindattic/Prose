@@ -219,5 +219,25 @@
     "ARCHIVE",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Ghanaian / Ukrainian)",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Slight and compact, almost delicate in frame but with the coiled tension of someone who spends hours in focused stillness. Narrow shoulders, long limbs relative to torso, minimal musculature.",
+    "hair_color": "Natural dark brown with subtle auburn undertones",
+    "hair_style": "Voluminous, textured curls naturally; severely pulled back into a tight bun or cornrows during work hours",
+    "hair_length": "Long (shoulder-length or longer when loose)",
+    "eye_color": "Matte black sensor-array irises with no visible pupil or sclera — gives an unsettling depth-less, obsidian quality that seems to absorb light rather than reflect it",
+    "skin_tone": "Warm medium brown with golden undertones, even complexion",
+    "complexion": "Narrow face with high cheekbones, sharp jawline, precise features. Minimal grooming beyond necessity — no makeup, skin clear and well-maintained but austere. Expression tends toward stillness.",
+    "distinguishing_marks": [
+      "Faint linear scarring along the left temple where the sensor-array iris was installed, barely visible beneath hair line",
+      "Base of spine shows subtle raised scarring from geneware tail integration, visible only when skin is exposed"
+    ],
+    "visible_augmentations": "Eyes are the dominant visible augmentation — matte black sensor arrays with no natural iris, creating an unsettling inhuman quality that she has learned to weaponize socially. Dark, sleek biomechanical tail extending from coccyx, approximately 60cm long, moves fluidly with unconscious thought patterns and goes rigid when she is concealing information. The tail has a faint iridescent quality to its dark coloring.",
+    "posture_movement": "Economical and precise in movement; sits with perfect stillness for hours. When moving, each gesture is deliberate and measured. The tail acts as a secondary form of body language — it twitches during analysis, coils when she's processing complex data, and goes absolutely motionless when she's dissembling. Off-clock, her movements become slightly less controlled, more organic.",
+    "clothing_style": "Tier 3 mixed with institutional: Tessera-issued gray-charcoal monitoring suit during work (form-fitting for comfort during neural interface sessions, minimal ornamentation, smart-fabric with embedded cooling elements). Off-duty: fitted black tactical pants, neutral-toned loose-weave shirts that allow tail freedom, soft-soled boots. Minimal jewelry — a single stainless steel cuff on left wrist. No corp logos or status indicators; dresses to be unremarkable in crowds."
+  },
+  "image_prompt": "cyberpunk portrait of a young Black-Ukrainian woman with an unsettling appearance, slight delicate build, warm medium-brown skin, narrow sharp face. Her eyes are completely replaced with deep matte black sensor arrays creating an obsidian, depth-less, inhuman gaze that absorbs light. Natural voluminous dark hair with auburn undertones, half of it severely pulled back. A sleek dark biomechanical tail extends from her spine, iridescent in low light, moving with thought. Wearing a fitted gray Tessera institutional monitoring suit. Sitting with perfect stillness in a surveillance monitoring station interior, banks of screens behind her, cool blue and amber lighting, neural interface jack visible at temple. Mood: precise, unsettling, isolated, professionally detached yet innately expressive through tail movement. High detail, cyberpunk aesthetic, fine art character study lighting --ar 2:3 --v 6"
 }

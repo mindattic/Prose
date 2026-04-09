@@ -186,5 +186,26 @@
     "Cedar",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East African (Somali/Eritrean) / Icelandic",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thickening at the middle with age—still powerful through the chest and arms, but the soft weight of a man who has traded street work for desk work and evening drinks",
+    "hair_color": "Black, faded to charcoal at the edges",
+    "hair_style": "Cleanly shaved scalp, maintained every three days",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown, unremarkable—the kind that shows nothing",
+    "skin_tone": "Dark brown with warm undertones, weathered and lined around the eyes",
+    "complexion": "Severe. The face of someone who has spent decades controlling his expression. Neat goatee shot through with grey, trimmed with obsessive precision. His jaw carries old scar tissue from a blade wound—thin white lines running from chin toward ear on the left side. His left forearm shows similar scarring, pale and deliberate-looking",
+    "distinguishing_marks": [
+      "Scar tissue mapping his left jaw and chin, appearing as thin white lines running from jaw corner toward ear—legacy of a knife wound sustained in his late twenties",
+      "Older scarring on his left forearm in parallel lines, suggesting either defensive wounds or intentional marking",
+      "Faint discoloration along his knuckles from decades of handling currency and collateral"
+    ],
+    "visible_augmentations": "None. His subdermal pulse-readers, cochlear filter, and geneware are completely subcutaneous and invisible to casual observation. No chrome, no LEDs, no telltale hardware in the ears or eyes",
+    "posture_movement": "Stands with weight distributed evenly, as though always ready to move. Moves slowly and deliberately—no wasted motion. His handshakes are firm and prolonged; he reads people through touch. When he sits, he positions himself with clear sightlines to exits. His breathing is deep and controlled. He rarely gestures while speaking",
+    "clothing_style": "Muted, practical, expensive-adjacent. Layered: usually a dark wool sweater or linen shirt under a high-quality overcoat (charcoal grey or dark brown) that shows wear but is meticulously maintained. Hands always clean. No jewelry except a worn silver ring on his left ring finger—a wedding band from a marriage that ended fifteen years ago. His clothing suggests Tier 3 functionality elevated by obsessive care, not Tier 1 wealth. Cedar oil scent clings faintly to his clothes and skin"
+  },
+  "image_prompt": "a 47-year-old East African and Icelandic man, dark brown skin with old scar tissue mapping his left jaw, shaved head, neat grey-shot goatee, standing in dim cabin lighting aboard a weathered houseboat, wearing layered muted clothing—dark wool sweater, charcoal overcoat—hands visible and scarred, expression severe and controlled, background of rain-streaked windows and worn wood paneling, cyberpunk noir, cinematic lighting with strong shadows, film grain, realistic portraiture, no visible cybernetics, mood of patient menace and financial precision --ar 2:3 --v 6"
 }

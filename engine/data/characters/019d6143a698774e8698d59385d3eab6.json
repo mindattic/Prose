@@ -262,5 +262,27 @@
     "The Pure Hand",
     "Palette"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Northern European (Okafor surname suggests Igbo heritage; Scandinavian undertones in bone structure suggest mixed diaspora lineage)",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and substantial, with the dense musculature of someone who has done physical labor for decades. Not heavy, but solid — her frame fills space with quiet authority. Slight forward hunch from years bent over compounding work, but she carries herself with deliberate uprightness when moving through crowds.",
+    "hair_color": "Silver-gray, natural",
+    "hair_style": "Close-cropped, precise, maintained with clippers — practical and economical",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, with faint metallic shimmer at the iris edge from magnification implants; pupils sometimes lag slightly when refocusing",
+    "skin_tone": "Deep warm brown with underlying red undertones, weathered by Shelf sun exposure and chemical handling",
+    "complexion": "Lined face that reads as lived-in rather than aged — deep creases around mouth and eyes, faint webbing of expression lines. Skin texture uneven from decades of minor chemical exposure; faint hyperpigmentation across knuckles and forearms. No makeup. Her gaze is direct and assessing.",
+    "distinguishing_marks": [
+      "Faint webbed subcutaneous scarring across both temples and upper chest — visible faint lines under skin where outdated biomonitor mesh is embedded, like a second circulatory system drawn in pale ink",
+      "Chronic staining at fingertips of both hands: yellowed-orange pigmentation from capsule coating compounds that has settled into the nail beds and cuticles, resistant to washing",
+      "A thin white line scar along her right jaw, approximately 8cm long, from an incident in the early 2080s that she never discusses",
+      "Burn mark on the back of her left hand (roughly 3cm diameter, faded to pale brown) from a chemical spill accident in her first year underground"
+    ],
+    "visible_augmentations": "The magnification implants are barely visible unless she makes deliberate eye contact — a slight metallic catch in the iris, and the occasional hesitation/blink when her eye recalibrates. The subcutaneous biomonitor mesh creates faint, tracery-like patterns visible under the skin at her temples and upper chest, most noticeable in certain light. Her right index finger moves with microsecond delays sometimes, a tells of the haptic implant's aging processing lag. She wears no chrome, no visible synthetic components — all her augmentations are subcutaneous remnants of an earlier era.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion. Steps carefully through crowds as if counting invisible distances. Often still, observing. When engaged in work (compounding, examining a patient), her movements become precise and almost meditative. Sits forward, elbows on knees, when listening. Her hands are always slightly elevated when at rest, a habitual posture from decades of precision work.",
+    "clothing_style": "Tier 4 practical: layered work tunics in muted colors (grays, dark blues, rust browns) over long-sleeved base shirts — protection from chemical splash more than fashion. Canvas apron with deep cargo pockets, always worn, stained with use and age. Reinforced work pants in heavy cotton, worn at the knees. Soft-soled shoes designed for standing long hours. No jewelry. A thin cord around her neck holding a small handmade charm — wood and copper wire, possibly African in origin — visible only if she leans forward. Everything well-maintained but visibly old, patched at seams, deliberately stitched by her own hand."
+  },
+  "image_prompt": "Cyberpunk portrait of a 61-year-old Black female pharmacist, deep brown skin weathered and lined, close-cropped silver hair, broad solid build, wearing layered work tunics and stained canvas apron, standing in dim light of a converted shipping container pharmacy in a gritty urban underbelly, faint subcutaneous metallic mesh tracery visible at temples under skin, orange-stained fingertips from chemical work, direct unflinching gaze, magnification implants catching faint metallic light in dark eyes, surrounded by shelves of unlabeled compounds and handwritten ledgers, cool tungsten overhead lighting with deep shadows, hyperrealistic detail on aged hands and weathered features, documentary photography style, cinematic but grounded and unglamorous, shot at eye level --ar 2:3 --v 6"
 }

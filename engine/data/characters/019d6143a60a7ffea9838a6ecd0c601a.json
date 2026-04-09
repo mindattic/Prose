@@ -181,5 +181,27 @@
     "Teak",
     "Weathervane"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 188,
+    "weight_kg": 89,
+    "build": "Tall and broad-chested despite age-related shrinkage, still carrying the substantial frame of a man who spent three decades on his feet doing manual labor. Shoulders slightly rounded forward from years of mechanical work posture.",
+    "hair_color": "Steel grey with dark undertones",
+    "hair_style": "Cropped short, practical, thinning at the crown",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm amber undertone",
+    "skin_tone": "Medium-dark complexion with golden undertones, weathered to a deeper, more uneven tone by decades of Lake Michigan platform exposure",
+    "complexion": "Deeply lined face with pronounced jaw and brow ridge, permanent wind-crease patterns around the eyes, age spots on temples and cheekbones, heavy stubble shadow even when clean-shaven, skin has a leathery quality from sun and salt spray exposure",
+    "distinguishing_marks": [
+      "Jagged white scar running the length of his left inner forearm where the coupling accident severed it in 2171, now mostly hidden by the prosthetic",
+      "Ferrogate Transit logo tattoo on his right shoulder — faded, from 2159 when he made shop steward",
+      "Burn scar on his right palm, pale and smooth, from a rail-joint incident circa 2165",
+      "Deep creases in both palms from forty years of callused grip work, still visible even in retirement"
+    ],
+    "visible_augmentations": "Left forearm prosthetic from elbow down: dull grey titanium alloy with surgical-grade resin palm, knuckles worn smooth from decades of use, no chrome plating or aesthetic upgrades — purely functional, basic-grade industrial-spec. The junction at the elbow shows faint scar tissue and occasional microhydraulic seepage staining. The prosthetic moves with slightly audible mechanical precision when he gestures. Knees show no external augmentation but he moves with careful deliberation suggesting internal mesh pain management.",
+    "posture_movement": "Stands with shoulders back despite spinal compression from age, moves deliberately but not slowly — economical motion from a lifetime of knowing where his body is in space. Favors his right side slightly when standing for long periods. Gestures frequently when talking, using the prosthetic arm with unselfconscious fluidity. Leans in when listening, creating immediate intimacy. Walks with a slight roll rather than a true limp, compensating for knee mesh limitations.",
+    "clothing_style": "Tier 3-4 working-class durability wear: heavy canvas work pants in charcoal grey, worn soft but not patched, usually a thermal undershirt in dark colors topped with a faded Ferrogate Transit company jacket from 2165 that he refuses to retire despite the faded logo and fraying collar. Steel-toed boots, well-maintained. A thin zinc-polymer watch on his right wrist from the Ferrogate Retired Workers Mutual. Faded Ferrogate ID badge on a leather keychain in his jacket pocket, never removed. No visible jewelry except a simple platinum wedding band."
+  },
+  "image_prompt": "A weathered 71-year-old man of West African and Scandinavian heritage, tall and broad-shouldered despite age, standing in soft industrial lighting. Deep brown eyes with warm amber tone set in a heavily lined face, grey stubble, steel-grey cropped hair thinning at crown. His left forearm is a worn dull titanium prosthetic with smooth knuckles, showing decades of use. Medium-dark complexion weathered golden-brown from years of Lake Michigan platform exposure, deep facial creasing around eyes from wind and sun. Wearing a faded Ferrogate Transit company jacket over a dark thermal undershirt, heavy canvas work pants, steel-toed boots. Serious but warm expression, leaning forward slightly in posture suggesting attentiveness and engagement. Scars visible on right palm and inner left forearm. Background: dim residential corridor of a lower-tier apartment block with fluorescent strips casting cool tungsten light, narrow hallway aesthetic, worn metal railings. Mood: dignified weariness, patient anger, working-class integrity. Film noir meets cyberpunk realism, grounded and unglamorous. --ar 2:3 --v 6"
 }

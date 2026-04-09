@@ -238,5 +238,25 @@
     "Silver",
     "The Pure Hand"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / French-Québécois / Polish",
+    "height_cm": 182,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thick through the chest, softened into comfortable middle age with a slight belly that speaks of routine and stability rather than neglect. Still carries the framework of a laborer beneath the wear.",
+    "hair_color": "Dark brown with silver at the temples",
+    "hair_style": "Cropped close, no fade or design; utilitarian and unadorned",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep warm brown with even undertone",
+    "complexion": "Face lined at the eyes and mouth in ways that suggest a permanent near-smile; weathered but well-maintained. Laugh lines prominent. Hands perpetually slightly chapped from solvent exposure; kept scrupulously clean with visible calluses on fingertips and palms.",
+    "distinguishing_marks": [
+      "Fine network of scars across both palms and inner wrists — pale and faded, running in parallel lines from old crush injury and subsequent reconstructive surgery thirty years prior",
+      "Slight discoloration on right index and middle fingers from decades of solvent contact, darkened at the cuticles"
+    ],
+    "visible_augmentations": "None visible. The subdermal pressure sensor array in fingertips is not apparent to casual observation — only noticeable through his deliberate, precise hand movements and the way he touches fabrics without instruments.",
+    "posture_movement": "Carries himself with the quiet confidence of someone who has owned his space for decades. Moves with deliberate economy — no wasted motion. Hands are frequently in motion: adjusting fabric, checking seams, unconsciously applying shea balm to fingertips. Stands with weight balanced, ready to move between machines. Body language defaults to attentive and patient, with occasional brief flares of exasperation when discussing synthweave.",
+    "clothing_style": "Tier 3-4 working class, practical and durable. Standard uniform is a long grey cotton shop coat (tailored to fit, naturally), worn over simple neutral clothing — usually dark slacks and a short-sleeved button shirt in muted colors (navy, charcoal, warm grey). Work boots with good arch support, scuffed but maintained. Small tin of shea balm visible in breast pocket. No jewelry except a simple brass wedding band on left ring finger. Clothes always immaculate despite the work environment — a point of professional and personal pride."
+  },
+  "image_prompt": "Portrait of a 52-year-old West African and Eastern European man with deep brown skin, silver-tempered dark hair cropped close, standing in a laundromat workspace surrounded by industrial pressing machines and fabric rolls, wearing a fitted grey cotton shop coat over dark slacks, hands slightly chapped and weathered, expression warm and contemplative with deep laugh lines, morning light from storefront windows casting long shadows, cinematic cyberpunk realism, high detail on worn hands and textile textures, Hamtramck Enclave signage visible in soft focus background, color graded warm and nostalgic, 52mm lens aesthetic --ar 2:3 --v 6"
 }

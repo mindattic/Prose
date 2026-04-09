@@ -180,5 +180,26 @@
     "Compass Rose",
     "Nightlight"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Belarusian / Burkinabè",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Heavyset, broad-shouldered, with thickened middle age spread across the torso. Functional muscle underlying the weight from decades of manual labor — strong legs and forearms despite the bulk.",
+    "hair_color": "Dark brown with grey flecking throughout, particularly in the beard",
+    "hair_style": "Kept short and utilitarian, beard trimmed close but present",
+    "hair_length": "Short",
+    "eye_color": "Pale grey-blue (natural) with augmented copper and black concentric ring pattern glowing faintly in low light",
+    "skin_tone": "Deep brown complexion from Burkinabè heritage, weathered and darkened further by years in poorly-lit industrial environments",
+    "complexion": "Permanently slightly-squinting eyes from chronic low-light exposure; wide, expressive mouth usually held in a neutral working expression; calloused, thick-fingered hands; face lined with concentration rather than age",
+    "distinguishing_marks": [
+      "Faint burn scar across the back of his right hand from a steam line incident fifteen years ago",
+      "Chemical discoloration stain on his left forearm where caustic cleaning solution once pooled inside his glove cuff",
+      "Small tattoo on his inner left wrist — a blueprint-style junction diagram in black ink, done poorly by a friend with a needle gun in his thirties"
+    ],
+    "visible_augmentations": "Patterned iris modification with concentric copper and black rings that emit a faint bioluminescent glow in darkness — becomes visible and striking in the dim sub-level tunnels he inhabits. Callus patterns on palms and fingers suggest subcutaneous tactile dampening work, though not visibly obvious. Micro-scars around the iris suggest multiple refurbishment procedures.",
+    "posture_movement": "Moves with deliberate, economical efficiency — no wasted motion. Slight forward lean as if perpetually descending stairs. Hands held loosely at sides, fingers flexing occasionally as if testing phantom pipe temperatures. When stationary, shifts weight from one leg to the other in a patient, waiting stance. Makes direct eye contact but holds it too long, as if listening to something others cannot hear.",
+    "clothing_style": "Tier 3-4 utilitarian. Worn work coveralls in faded navy or grey, multiple pockets filled with tools and diagnostic tablets. Heavy steel-toed boots resoled repeatedly. Utility harness with carabiners and a worn leather tool belt. Sometimes a company-issued jacket in cold months. Everything is functional, maintained but not new, bearing the patina of real use. No styling or vanity — this is someone who has worn the same brand of coveralls for fifteen years because they fit his frame and his routine."
+  },
+  "image_prompt": "A heavyset 47-year-old man with deep brown Burkinabè skin and pale grey-blue eyes marked with glowing copper and black concentric ring iris augmentations, faint grey-flecked dark beard, permanently slightly-squinted expression, standing in industrial sub-level maintenance tunnel lighting. Wearing faded navy work coveralls, heavy steel-toed boots, leather tool belt, utility harness with carabiners. Hands at sides with visible calluses. The iris augmentations glow faintly in the dim overhead light. Behind him, industrial pipes, junction boxes, and worn steel infrastructure. Cinematic cyberpunk noir, utilitarian and worn, fluorescent and sodium lighting mixing with bioluminescent eye glow, shallow depth of field, 8K detail on the patterned iris, documentary realism, --ar 2:3 --v 6"
 }

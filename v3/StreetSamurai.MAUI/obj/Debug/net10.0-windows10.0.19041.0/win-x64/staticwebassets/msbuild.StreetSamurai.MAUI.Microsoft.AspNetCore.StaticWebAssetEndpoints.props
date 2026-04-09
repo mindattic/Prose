@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="app.49t2nsrrsm.css">
+    <StaticWebAssetEndpoint Include="app.3j6u9m10mo.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"49t2nsrrsm"},{"Name":"integrity","Value":"sha256-aCgLRFiauRL0g4qTRjAB0BDCa6XMouY0csIqjCupxZk="},{"Name":"label","Value":"app.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12789"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022aCgLRFiauRL0g4qTRjAB0BDCa6XMouY0csIqjCupxZk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Apr 2026 06:17:11 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"3j6u9m10mo"},{"Name":"integrity","Value":"sha256-cbI0DnnCt8iGu\u002Bhvm58oyTWKmqrhxwpnMo92egR7CJg="},{"Name":"label","Value":"app.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12954"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022cbI0DnnCt8iGu\u002Bhvm58oyTWKmqrhxwpnMo92egR7CJg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Apr 2026 01:43:08 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="app.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\app.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aCgLRFiauRL0g4qTRjAB0BDCa6XMouY0csIqjCupxZk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12789"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022aCgLRFiauRL0g4qTRjAB0BDCa6XMouY0csIqjCupxZk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Apr 2026 06:17:11 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-cbI0DnnCt8iGu\u002Bhvm58oyTWKmqrhxwpnMo92egR7CJg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12954"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022cbI0DnnCt8iGu\u002Bhvm58oyTWKmqrhxwpnMo92egR7CJg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Apr 2026 01:43:08 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="index.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
@@ -60,17 +60,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-v/U8uOi9qHxKSiKhAj8YFgQbKWP6Mgx1hWnTzI4jlsA="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1611"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022v/U8uOi9qHxKSiKhAj8YFgQbKWP6Mgx1hWnTzI4jlsA=\u0022"},{"Name":"Last-Modified","Value":"Mon, 06 Apr 2026 06:14:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="js/meridian-map.9spes7o4ec.js">
+    <StaticWebAssetEndpoint Include="js/meridian-map.fo0q48tp0k.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\meridian-map.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9spes7o4ec"},{"Name":"integrity","Value":"sha256-CRKDZ3AygiMbsLZn3azqPo4LAhwx1noqo771kiFiQQk="},{"Name":"label","Value":"js/meridian-map.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"20427"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022CRKDZ3AygiMbsLZn3azqPo4LAhwx1noqo771kiFiQQk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 08 Apr 2026 00:02:00 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fo0q48tp0k"},{"Name":"integrity","Value":"sha256-7zmXPLz7tWQeI2ByD8L5Xw0o5sjnBzGNJq9gWCJ0h3A="},{"Name":"label","Value":"js/meridian-map.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"22001"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00227zmXPLz7tWQeI2ByD8L5Xw0o5sjnBzGNJq9gWCJ0h3A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Apr 2026 04:28:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="js/meridian-map.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\meridian-map.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CRKDZ3AygiMbsLZn3azqPo4LAhwx1noqo771kiFiQQk="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"20427"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022CRKDZ3AygiMbsLZn3azqPo4LAhwx1noqo771kiFiQQk=\u0022"},{"Name":"Last-Modified","Value":"Wed, 08 Apr 2026 00:02:00 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7zmXPLz7tWQeI2ByD8L5Xw0o5sjnBzGNJq9gWCJ0h3A="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"22001"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00227zmXPLz7tWQeI2ByD8L5Xw0o5sjnBzGNJq9gWCJ0h3A=\u0022"},{"Name":"Last-Modified","Value":"Thu, 09 Apr 2026 04:28:49 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="js/write-interop.8ogh0a67mk.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\write-interop.js'))</AssetFile>

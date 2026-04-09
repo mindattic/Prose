@@ -255,5 +255,27 @@
     "Déjà Vu",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Northern European / Anglo-Saxon (surname Hollowell suggests English/Welsh roots, adapted to the Ubiquitous Diaspora context with mixed heritage implied by regional GLMZ demographics)",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Large-framed, broad-shouldered, gone soft with age—muscle beneath a layer of settled flesh. Not obese, but carries his seventy years heavily. His bulk is functional rather than maintained; a man built for moving through the world, now moving through it less.",
+    "hair_color": "White, natural",
+    "hair_style": "Closely cropped, utilitarian",
+    "hair_length": "Short",
+    "eye_color": "Pale gray, slightly rheumy at the corners",
+    "skin_tone": "Pale ochre, the complexion of someone who has spent two decades under fluorescent light and eleven years under industrial overcast",
+    "complexion": "Weathered but clean. Deep lines around the eyes and mouth—not smile lines, but the creases of a man who has spent years calculating consequences. His beard is white, full, and deliberately unkempt, grown without vanity. Hands are enormous, with long fingers and calluses along the palms and inner knuckles from surgical work.",
+    "distinguishing_marks": [
+      "Thin surgical scar running along the inner left forearm, approximately 12 cm, faded to silver—from an early augmentation installation procedure",
+      "Faint Vantara corporate tattoo on the inside of his right wrist, a stylized helix in gray ink, forty millimeters tall—nearly invisible unless he extends his hand palm-up",
+      "Burn scarring on the dorsal surface of both hands, small and scattered, consistent with decades of sterile field work and a few mistakes",
+      "Age spots on the backs of both hands and across his forearms, the inevitable markers of long life"
+    ],
+    "visible_augmentations": "Haptic-feedback surgical assist implants in both hands—visible as faint chromatic iridescence under the fingernails and along the metacarpal ridges when light hits at certain angles. The implants are older Vantara-era hardware, well-maintained but showing their age in subtle micro-scarring at the installation sites. No other visible augmentations; the neural medical reference implant is entirely subcutaneous.",
+    "posture_movement": "Stands with the residual posture of command—shoulders back, weight centered—but has relaxed into it, no longer performing. Moves deliberately, economically, with the practiced precision of someone who has spent a lifetime working with their hands. When listening to someone, he inclines his head slightly and is still. He does not fidget. His movements carry the implicit message that he is not in a hurry, which is either comforting or unsettling depending on who is watching.",
+    "clothing_style": "Rotation of heavy canvas work clothes—natural denim, olive field jackets, canvas pants in cream and charcoal. Everything worn but meticulously maintained and clean. No synthetic fabrics; everything is durable natural fiber. Boots are scuffed leather, resoled twice. He wears a canvas apron over his clothes when working, with deep pockets for supplies. No jewelry except a faded rubber surgical band on his left wrist, worn out of habit. His medical kit is battered leather, modified with custom strap placement and internal organization of his own design. Tier 4-5 aesthetic by choice, though his hands and the precision of his kit suggest access to higher-tier resources in the past."
+  },
+  "image_prompt": "A grizzled, pale-skinned man in his late sixties with close-cropped white hair and a full white beard, standing in the dim interior of a converted storage unit clinic. His enormous, scarred hands rest on a worn leather medical kit modified with custom straps. He wears heavy natural-fiber canvas clothes—faded olive jacket, cream canvas pants—meticulously maintained but clearly well-used. Subtle iridescent chrome highlights visible under his fingernails and along his hand bones, hinting at surgical augmentations. His pale gray eyes are steady and distant, the expression of someone bearing old knowledge. Behind him, shelves of medical supplies, bottles, and hand-written patient notes. Industrial lighting casts sharp shadows. Photorealistic, weathered, dignified, cyberpunk noir, 2226, The Shelf district aesthetic, moody amber and steel tones, shot like a documentary photograph, high detail on his hands and face --ar 2:3 --v 6"
 }

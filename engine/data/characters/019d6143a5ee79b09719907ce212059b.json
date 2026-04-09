@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "To find the person who burned them and make it educational",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Knowledge — to understand the systems that grind people down"
     ],
     "coping_mechanisms": [
@@ -62,7 +62,7 @@
   "story_hooks": [
     "Deniz Salazar-Quansah intercepts intelligence about a threat to their district and must decide between profit and protection",
     "The fixer who handles Deniz Salazar-Quansah's contracts goes silent — dead, disappeared, or turned",
-    "A crew member from Deniz Salazar-Quansah's past shows up in Meridian 88, carrying old grievances and new chrome"
+    "A crew member from Deniz Salazar-Quansah's past shows up in GLMZ, carrying old grievances and new chrome"
   ],
   "narrative_function": "Deniz Salazar-Quansah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
   "augmentations": "Smartgun link in right forearm — interfaces directly with compatible weapons. Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
@@ -279,10 +279,31 @@
   ],
   "related_entities": [
     "The Circuit",
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Turkish / Ghanaian",
+    "height_cm": 188,
+    "weight_kg": 79,
+    "build": "Lean and angular, muscle defined by function rather than bulk. Shoulders broad from years of weapon handling. Core tight. Minimal body fat — the build of someone who treats their body as maintenance equipment.",
+    "hair_color": "Black with premature silver threading at temples",
+    "hair_style": "Pulled back in a tight, practical braid. No aesthetic consideration — purely utilitarian.",
+    "hair_length": "Medium",
+    "eye_color": "Chrome iris rings over dark brown — augmented for thermal and low-light overlay",
+    "skin_tone": "Warm olive-bronze, weathered from nocturnal living and sun-scarred hands",
+    "complexion": "Sharp cheekbones, lean jaw. Stubble perpetually two days old. Fine lines around the eyes from years of squinting at sights and scopes. No grooming vanity — functional cleanliness only.",
+    "distinguishing_marks": [
+      "Thin scar along left temple, barely visible, running from brow to hairline — old blade work",
+      "Burn scar across inner left forearm in an irregular patch — electrical contact, three years old",
+      "Tattoo on right collarbone: circuit-board geometric pattern in matte black ink, professional work, Tier 3 quality"
+    ],
+    "visible_augmentations": "Right forearm shows visible smartgun link interface — matte chrome housing with faint LED indicators beneath the skin surface. Chrome iris rings visible in both eyes, catching light with slight metallic sheen. Subdermal interface ports on inner wrists, barely raised beneath scarred skin.",
+    "posture_movement": "Stands economically, weight balanced on balls of feet. Moves with precise, minimal motion — every gesture calculated. Hands always visible and loose. Head movements deliberate. Default expression neutral bordering on cold. When focused, entire posture tightens to predatory readiness.",
+    "clothing_style": "Tier 3-4 street samurai aesthetic. Black reinforced synth-weave jacket with internal weapon clips and modified pockets. Fitted tactical pants with cargo reinforcement. Steel-toed boots broken in and re-soled twice. No logos or crew insignia — anonymous by design. Worn leather gloves (fingerless right glove to access smartgun interface). Simple titanium-alloy watch, old model, reliable. Everything maintained obsessively."
+  },
+  "image_prompt": "cyberpunk street samurai portrait, 34-year-old male with Turkish-Ghanaian features, lean muscular build, black hair braided back with silver threading at temples, sharp cheekbones, dark brown eyes with chrome iris rings and subtle thermal overlay glow, cool neutral expression, visible smartgun link interface in right forearm showing matte chrome and subdermal LED indicators, thin scar along left temple, burn mark on inner forearm, minimalist tactical clothing in black synth-weave, fingerless leather gloves on right hand, standing in neon-soaked Circuit district alley with purple and cyan ambient lighting, moody nocturnal atmosphere, rain-slicked pavement reflections, cinematic depth of field, hyper-realistic skin texture, professional combat specialist aesthetic, cool color temperature, film noir cyberpunk mood --ar 2:3 --v 6"
 }

@@ -43,8 +43,16 @@
     "The unknown organizer, presumably, watching from somewhere inside the room"
   ],
   "notable_locations": [
-    "Changes weekly — no fixed features, no permanent installations, nothing to find twice",
-    "The threshold — the moment of entry, when the week's theme reveals itself"
+    {
+      "name": "Changes weekly",
+      "description": "no fixed features, no permanent installations, nothing to find twice",
+      "tags": []
+    },
+    {
+      "name": "The threshold",
+      "description": "the moment of entry, when the week's theme reveals itself",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.8796,

@@ -235,5 +235,26 @@
     "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
     "Hazel Brink"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / East Asian (Mongolic)",
+    "height_cm": 158,
+    "weight_kg": 49,
+    "build": "Compact and lean, almost wiry — the build of someone who forgets to eat during work cycles. Minimal body fat, slight but functional musculature from years hunched over lab equipment.",
+    "hair_color": "Naturally dark brown, but chromatic expression mod renders it orange (excitement), deep blue (uncertainty), or grey-green (fear) — currently displays baseline dark brown with hints of blue at the temples",
+    "hair_style": "Pulled back in a loose, functional braid or bun, often with strands escaping; styled for lab work, not presentation",
+    "hair_length": "Medium (shoulder-length when down)",
+    "eye_color": "Natural dark hazel with retractable feline pupils (vertical-slit pupils that extend/retract via geneware trigger)",
+    "skin_tone": "Warm brown with subtle golden undertones — complexion reflects mixed West African and East Asian ancestry",
+    "complexion": "Fine-featured with high cheekbones and a narrow jawline. Minimal makeup; skin is clear but shows signs of lab-light pallor and occasional sleep deprivation (faint shadows under eyes). A small scar on her left temple from a childhood accident. Bitten fingernails from nervous habits during analysis work.",
+    "distinguishing_marks": [
+      "Thin white scar (3cm) on left temple, barely visible beneath hairline",
+      "Faint chemical burn mark on the back of her right hand (lab accident, year 2 of grad school)",
+      "A small, almost invisible tattoo on her inner right wrist — a double helix in black ink, barely 1cm long"
+    ],
+    "visible_augmentations": "Chromatic expression hair mod (visible color shifts during conversation), retractable feline pupils (visible when dilated or deliberately triggered — dark hazel eyes with distinctive vertical pupils). Faint subcutaneous shimmer along her temples where the neural mesh interface sits just beneath the skin. No visible chrome or external hardware.",
+    "posture_movement": "Sits very still for long periods — the stillness of someone in deep focus rather than relaxation. When moving, economical and precise; no wasted motion. Tends to tilt her head slightly when listening, pupils dilating slightly as she processes information. Hands are expressive during explanation but otherwise still. Blinks less frequently than average (feline mod side effect).",
+    "clothing_style": "Tier 2 academic/research — function over fashion. Standard-issue Aurochs lab coat (well-worn, six years old, patched twice), layered underneath with simple thermoregulated undershirt in neutral grey or black. Worn black utility pants with multiple pockets for tools and data drives. Comfortable, scuffed non-slip lab shoes. A single piece of jewelry: a thin silver bracelet on her left wrist, possibly a gift or family piece. No visible corporate branding; clothing is deliberately nondescript. Smells faintly of disinfectant and the particular staleness of recycled lab air."
+  },
+  "image_prompt": "Portrait of a petite 29-year-old woman of mixed West African and East Asian descent, 158cm tall, compact lean build. Warm brown skin tone, dark hazel eyes with dramatic retractable feline vertical pupils, high cheekbones, narrow jawline. Her dark brown hair is pulled back in a loose braid with escaping strands, but glowing bright blue at the temples due to chromatic expression geneware mod responding to emotion. She has a small white scar on her left temple barely visible beneath hairline. Wearing a well-worn six-year-old grey Aurochs Medical Complex lab coat over a simple black thermoregulated undershirt, black utility pants with pockets, worn lab shoes. Thin silver bracelet on left wrist. Bitten fingernails. Expression of intense concentration and patient observation. Cyberpunk scientist aesthetic, sublevel laboratory setting with low-light conditions, faint bioluminescent glow from biosamples in background, cool blue-white overhead lighting mixing with warmer equipment glow, cinematic depth of field, photorealistic, --ar 2:3 --v 6"
 }

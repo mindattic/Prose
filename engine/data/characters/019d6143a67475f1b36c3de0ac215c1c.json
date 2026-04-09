@@ -173,5 +173,24 @@
     "Arcturus CK-5 'Bloodhound'",
     "Gold"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Malawian / Portuguese",
+    "height_cm": 142,
+    "weight_kg": 34,
+    "build": "Slight and wiry, undernourished but dense with the hard lean of a kid who moves constantly. No fat, efficient muscle in his shoulders and legs from years of running alleys.",
+    "hair_color": "Black",
+    "hair_style": "Close-cropped, tight to the scalp, maintained short for practical safety in industrial environments",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, almost black, with an unusual intensity for his age",
+    "skin_tone": "Very dark brown with reddish undertones, the warmth of his Portuguese and Malawian lineages visible in the undertone",
+    "complexion": "Lean face with prominent cheekbones, sharp jawline from malnutrition, skin clear but weathered. Intelligent, watchful expression. Wide, expressive mouth he keeps controlled and still. No visible acne or grooming neglect — he maintains himself despite circumstances.",
+    "distinguishing_marks": [
+      "Pale gold cosmetic cat ears (geneware, implanted 8 months prior), positioned above natural ears, slightly pointed, a mark of favor from a Copperhead Cuts lieutenant"
+    ],
+    "visible_augmentations": "Pale gold cat ears (geneware cosmetic modification). No other visible augmentations. The ears read as a status marker within the gang — a leash and ornament both.",
+    "posture_movement": "Moves with economical precision, never wasting motion. Stands with weight balanced on the balls of his feet, ready to shift direction instantly. Eyes track corners and movement instinctively. Keeps his hands visible and his body language neutral — survival-trained in reading and avoiding escalation. Sits in corners when at rest, back against walls.",
+    "clothing_style": "Tier 3-4 street wear: oversized gray synthetic hoodie (salvaged, frayed at cuffs), dark gray cargo pants with multiple pockets (Cuts-issue, standard runner kit), worn black synth-leather boots resoled twice, a faded red Ferrogate Transit baseball cap he wears low. A thin braided cord around his left wrist (no apparent function — personal talisman or gang marker, unclear). No jewelry. Clothes are functional, durable, and worn — tier-appropriate for a kid on the margins, not fancy enough to draw attention."
+  },
+  "image_prompt": "12-year-old boy, East African and Portuguese mixed heritage, very dark skin with reddish undertones, short close-cropped black hair, lean wiry build, intelligent intense gaze, pale gold cosmetic cat ears (geneware implants), wearing oversized gray synthetic hoodie and dark cargo pants, worn black boots, standing in a cyberpunk alley at dusk with neon signs reflecting off wet concrete, moody atmospheric lighting, shadow and industrial grit, slight rain mist in air, posture alert and controlled, calculating expression, cinematic realism, street-level perspective, 2226 Great Lakes Metropolitan Zone aesthetic, gritty futurism --ar 2:3 --v 6"
 }

@@ -276,5 +276,26 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Mixed African-diaspora / Eastern European (inferred from surname 'Sable' as professional nomenclature; actual ethnic background deliberately obscured)",
+    "height_cm": 173,
+    "weight_kg": 61,
+    "build": "Lean and economical — muscle distributed for leverage and endurance rather than bulk. The physiology of someone who solved movement problems decades ago and hasn't wasted energy since.",
+    "hair_color": "Black with silver-grey threading at temples",
+    "hair_style": "Pulled back severely into a minimalist braid, kept away from the face",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Dark brown, sharp and unblinking",
+    "skin_tone": "Deep warm brown with ashy undertones",
+    "complexion": "Weathered but precise — no softness, no excess. Skin pulled tight over sharp cheekbones. The upper half of her face is all hard lines and intentional angles. Where the chrome jaw begins, the contrast is surgical: human skin ends in a clean margin, metal begins.",
+    "distinguishing_marks": [
+      "Chrome jaw replacement extends from below the cheekbones to the base of the skull, with visible articulated hinge joints at both corners of the mandible — brushed steel finish with hairline seams revealing internal mechanics.",
+      "Thin scar tissue traces the margin where organic flesh meets chrome, perfectly healed but visible under certain light.",
+      "Burn scarring across the right shoulder and upper back, old enough to be pale against her skin tone — pattern suggests thermal weapon exposure."
+    ],
+    "visible_augmentations": "Chrome mandible replacement with visible mechanical hinges and joint articulation. Everything else is beneath the surface — subcutaneous, neural, distributed. The absence of other visible augments is the real augmentation.",
+    "posture_movement": "Economical and predatory. She doesn't gesture — she orients. Movement is always directional, never wasted. Uses shoulders, chin, chrome jaw, environmental edges (tables, doorframes, ledges) as manipulation tools with fluid, practiced precision. Stands with weight on balls of feet, ready to redirect. When she animates her jaw to speak or smile, the transition from stillness to expression is so seamless it retroactively makes the stillness more unsettling.",
+    "clothing_style": "Minimal, practical, tier-neutral in a way that reads as deliberate invisibility. Usually black or charcoal — fitted combat-utility pants with reinforced seams, sleeveless or short-sleeved to display the shoulder scarring (a statement piece that reads as 'do not mistake me for someone you can hurt'). Sometimes a leather or polymer jacket, always worn open. No visible branding. No jewelry. No affectations. Everything she wears is designed to be forgotten the moment you stop looking at her — except the jaw, which you cannot forget."
+  },
+  "image_prompt": "Cyberpunk noir character portrait of a 40-year-old Black woman with a surgical chrome mandible jaw replacement featuring visible articulated hinge joints, severe facial geometry, dark intelligent eyes, black hair pulled back tight. Her upper face is organic human skin, the lower half is brushed steel metal with precise seams. Lean muscular build, standing with controlled predatory posture. Old burn scarring visible on right shoulder. Minimalist black clothing, sleeveless, wearing the scars like a statement. Cold professional bearing, the exact moment between still puppet-face and seamlessly animated expression. Dark moody lighting, shallow depth of field, gritty black-market back-room setting with industrial edges, high contrast shadows, cinematic neo-noir, hyperrealistic texture detail on the chrome work, shot at eye level, cinematic 35mm digital, --ar 2:3 --v 6"
 }

@@ -13,7 +13,7 @@
   "age": 43,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Milwaukee and Damen",
-  "description": "Ximena Morita-Antwi is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 43, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Ximena Morita-Antwi plans to keep it that way. He works as a demolitions expert out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented demolitions expert in Meridian 88, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Ximena Morita-Antwi is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 43, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Ximena Morita-Antwi plans to keep it that way. He works as a demolitions expert out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented demolitions expert in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.63,
@@ -272,11 +272,33 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Geartown",
     "The Pure Hand",
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Hispanic / Japanese / West African",
+    "height_cm": 173,
+    "weight_kg": 89,
+    "build": "Stocky and densely muscled — barrel-chested with thick shoulders and forearms. Years of handling explosives and structural demolition work have built functional mass rather than aesthetic bulk. Solid, immovable center of gravity.",
+    "hair_color": "Dark brown with grey threading at temples",
+    "hair_style": "Short, close-cropped, military-precise",
+    "hair_length": "Short",
+    "eye_color": "Dark brown — unaugmented, but carries the flat focus of someone who has learned to see past surfaces",
+    "skin_tone": "Medium tan — olive undertones from mixed heritage, weathered darker at neck and forearms from sun exposure",
+    "complexion": "Weathered and lived-in. Creases at the corners of his eyes and mouth from decades of squinting and controlled expressions. Jaw set with habitual tension. Skin shows minor scarring — nothing dramatic, just the accumulated wear of someone who works with their hands in dangerous conditions. Stubble usually present — not groomed styling, just pragmatic neglect.",
+    "distinguishing_marks": [
+      "Thin white scar running 8cm across his left cheekbone, slightly deeper at the center — old burn or shrapnel wound, healed well but visible",
+      "Cluster of three small circular scars on inside of left wrist, arranged vertically — removed augmentation ports or deliberate erasure marks",
+      "Burn scarring across the knuckles of both hands — old, faded, consistent with explosive work",
+      "Faint tattoo on right shoulder blade: abstract geometric pattern, style suggests pre-GLMZ origin, possibly from a previous life"
+    ],
+    "visible_augmentations": "Chrome smartgun link integrated into right forearm — visible as a polished steel interface port at the wrist, subtle cable articulation along the ulna. The augmentation is clean and maintained but deliberately unconcealed. Cyberears visible as brushed titanium housing behind both ears, slightly larger than biological ears, with small directional microphone arrays at 2 o'clock and 8 o'clock positions.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight centered, ready to shift direction instantly. Hands at rest but never fully relaxed, fingers occasionally flexing as if testing resistance. When walking, moves like someone navigating a space already mapped by risk assessment. Eye contact is minimal but deliberate when engaged.",
+    "clothing_style": "Tier 3-4 practical wear. Usually canvas work pants in dark grey or black, reinforced at stress points, numerous cargo pockets. Heavy-duty boots — always tied tight, always ready to move. Shirt varies: grey or charcoal compression-weave undershirt, sometimes layered with a worn Geartown fabricator's jacket in faded black synth-leather. No corporate logos. No unnecessary ornamentation. Everything is utilitarian and maintained to function. Gear: heavy webbing harness worn over jackets, ammunition pouches, tool belt. A long canvas coat for weather — pockets deep enough for detonators and circuit boards."
+  },
+  "image_prompt": "A 43-year-old male demolitions expert in cyberpunk Geartown, stocky muscular build, dark tan weathered skin, short dark hair with grey temples, intense dark brown eyes. Visible chrome smartgun link in right forearm with steel interface port, brushed titanium cyberears with directional microphone arrays behind both ears. Old scar tissue across left cheekbone and knuckles. Standing in industrial workshop surrounded by explosives and detonators, wearing dark grey canvas work pants, heavy boots, black synth-leather fabricator jacket, grey compression-weave shirt, ammunition pouches and tool harness. Expression of careful neutrality, economic posture, hands at rest but ready. Gritty realism, cool industrial lighting with exposed neon signs in background, oil stains and metal textures, gritty volumetric dust in air, shot from waist-up portrait angle, documentary photograph style, cinematic cyberpunk noir --ar 2:3 --v 6"
 }
