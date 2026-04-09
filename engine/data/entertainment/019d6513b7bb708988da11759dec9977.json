@@ -5,7 +5,7 @@
   "category": "game",
   "subcategory": "AR citywide manhunt / live action game",
   "aliases": [],
-  "description": "Phantom Grid is a structured AR manhunt game operating across designated M88 districts: one player per match is designated the Phantom and given a 90-minute head start to disappear into the city\u0027s physical and digital infrastructure, while a team of six Hunters uses AR overlays, city sensor data (licensed from the municipal grid), and BCI coordination to track them down. The Phantom wins by surviving; Hunters win by achieving neural-lock \u2014 getting close enough for a BCI handshake confirmation. The game is genuinely terrifying and genuinely exhilarating in equal measure.",
+  "description": "Phantom Grid is a structured AR manhunt game operating across designated M88 districts: one player per match is designated the Phantom and given a 90-minute head start to disappear into the city's physical and digital infrastructure, while a team of six Hunters uses AR overlays, city sensor data (licensed from the municipal grid), and BCI coordination to track them down. The Phantom wins by surviving; Hunters win by achieving neural-lock — getting close enough for a BCI handshake confirmation. The game is genuinely terrifying and genuinely exhilarating in equal measure.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 2-3",
@@ -16,9 +16,15 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A Phantom Grid match goes wrong when the \u0027Phantom\u0027 \u2014 a decorated veteran player \u2014 goes genuinely missing mid-game; the Hunters don\u0027t know if it\u0027s brilliant strategy or something else.",
-    "Someone is running unofficial Phantom Grid matches in Tier 1 with real stakes \u2014 the \u0027Hunters\u0027 are debt collectors, and the Phantoms don\u0027t know the game they signed up for.",
-    "A player discovers that the municipal sensor data Phantom Grid licenses includes feeds that shouldn\u0027t be commercially available \u2014 and the data is being retained long after matches end."
+    "A Phantom Grid match goes wrong when the 'Phantom' — a decorated veteran player — goes genuinely missing mid-game; the Hunters don't know if it's brilliant strategy or something else.",
+    "Someone is running unofficial Phantom Grid matches in Tier 1 with real stakes — the 'Hunters' are debt collectors, and the Phantoms don't know the game they signed up for.",
+    "A player discovers that the municipal sensor data Phantom Grid licenses includes feeds that shouldn't be commercially available — and the data is being retained long after matches end."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Arcturus PX-1 'Phantom'",
+    "CHROMEWORKS Phantom Stealth Ocular Recorder",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Yuki Nwosu-Petrenko"
+  ]
 }

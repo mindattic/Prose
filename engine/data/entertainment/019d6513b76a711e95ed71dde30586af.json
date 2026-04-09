@@ -3,9 +3,9 @@
   "name": "CHROME LITURGY: Saints of the Augmented",
   "type": "entertainment",
   "category": "tabletop",
-  "subcategory": "collectible card game (physical \u002B neural)",
+  "subcategory": "collectible card game (physical + neural)",
   "aliases": [],
-  "description": "A collectible card game where physical smart-ink cards display shifting augmentation schematics and faction allegiances, while BCI-linked players experience additional hidden card layers \u2014 secret loyalties, blackmail files, and suppressed upgrade specs \u2014 invisible to unaugmented opponents. Cards depicting legendary street surgeons and rogue chromesmiths are the most coveted, some selling for tens of thousands of Quanta on secondary markets. Corponation Vantec-Hale quietly funds tournament circuits to harvest competitive meta-data for product development.",
+  "description": "A collectible card game where physical smart-ink cards display shifting augmentation schematics and faction allegiances, while BCI-linked players experience additional hidden card layers — secret loyalties, blackmail files, and suppressed upgrade specs — invisible to unaugmented opponents. Cards depicting legendary street surgeons and rogue chromesmiths are the most coveted, some selling for tens of thousands of Quanta on secondary markets. Corponation Vantec-Hale quietly funds tournament circuits to harvest competitive meta-data for product development.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 1-2",
@@ -16,9 +16,17 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A player wins a high-stakes tournament using a neural card nobody can legally prove exists \u2014 its hidden layer contains schematics for a Vantec-Hale prototype that was never released.",
-    "A Shelf kid\u0027s battered physical-only deck contains a pre-digital misprint that, when scanned by certain BCI models, unlocks a decommissioned corporate subnet.",
-    "The rarest card in the game \u2014 depicting a mythologized street surgeon called the Pale Seam \u2014 may be a recruitment signal for an underground augmentation collective."
+    "A player wins a high-stakes tournament using a neural card nobody can legally prove exists — its hidden layer contains schematics for a Vantec-Hale prototype that was never released.",
+    "A Shelf kid's battered physical-only deck contains a pre-digital misprint that, when scanned by certain BCI models, unlocks a decommissioned corporate subnet.",
+    "The rarest card in the game — depicting a mythologized street surgeon called the Pale Seam — may be a recruitment signal for an underground augmentation collective."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Brecken Yılmaz-Osei",
+    "Deku Barrientos-Osei",
+    "Dzemal Acholonu-Patagiri",
+    "Nenad Vargas-Baffour",
+    "Yuki Nwosu-Petrenko",
+    "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
+  ]
 }

@@ -5,7 +5,7 @@
   "category": "tabletop",
   "subcategory": "tile-laying strategy game with neural components",
   "aliases": [],
-  "description": "A high-end tile-laying conquest game where hexagonal physical tiles build a procedurally unique map each session, and BCI-equipped players receive private neural whispers \u2014 hidden strategic information delivered directly to their implant \u2014 about tile adjacency bonuses and hidden faction allegiances invisible on the physical surface. Non-BCI players play entirely from physical information; BCI players have informational advantages but are also vulnerable to \u0027neural bluff\u0027 tiles that feed false data directly into their implant. The game is published by a Spire-adjacent design house and retails as a luxury object.",
+  "description": "A high-end tile-laying conquest game where hexagonal physical tiles build a procedurally unique map each session, and BCI-equipped players receive private neural whispers — hidden strategic information delivered directly to their implant — about tile adjacency bonuses and hidden faction allegiances invisible on the physical surface. Non-BCI players play entirely from physical information; BCI players have informational advantages but are also vulnerable to 'neural bluff' tiles that feed false data directly into their implant. The game is published by a Spire-adjacent design house and retails as a luxury object.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 3-4",
@@ -16,9 +16,14 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A PALE THRONE tile set has been modified \u2014 the neural whispers it delivers are not game information but fragments of an encrypted message, and the full message only assembles if all twelve tiles in a specific expansion pack are played in the correct sequence.",
-    "The seizure incident was not a malfunction \u2014 someone deliberately introduced a hostile neural payload into a specific tile batch, and the corporate retreat victim was the intended target.",
-    "An unaugmented player has been winning every PALE THRONE tournament they enter, and the BCI-equipped players are furious \u2014 their neural whispers are being intercepted and fed back as noise, and only this one player seems to know how."
+    "A PALE THRONE tile set has been modified — the neural whispers it delivers are not game information but fragments of an encrypted message, and the full message only assembles if all twelve tiles in a specific expansion pack are played in the correct sequence.",
+    "The seizure incident was not a malfunction — someone deliberately introduced a hostile neural payload into a specific tile batch, and the corporate retreat victim was the intended target.",
+    "An unaugmented player has been winning every PALE THRONE tournament they enter, and the BCI-equipped players are furious — their neural whispers are being intercepted and fed back as noise, and only this one player seems to know how."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Reactive Foam Charge RFC-11 'Bloat'",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+    "Walking Throne"
+  ]
 }

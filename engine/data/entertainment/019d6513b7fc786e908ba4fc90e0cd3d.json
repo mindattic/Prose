@@ -5,7 +5,7 @@
   "category": "gambling",
   "subcategory": "gambling den / physical location / high-stakes card game",
   "aliases": [],
-  "description": "A legendary floating card den operating aboard a rotating series of private barge venues on the Lake Michigan approach channels, beyond the reach of Meridian\u0027s district enforcement jurisdiction. The Vaulted Table runs BCI-integrated poker, traditional mancala variants, and a proprietary tile game called Saltreach, with buy-ins that exclude all but the wealthiest Tier 3 and above players. The venue is invitation-only, physically unmarked, and changes location every seventy-two hours via encrypted guest notification.",
+  "description": "A legendary floating card den operating aboard a rotating series of private barge venues on the Lake Michigan approach channels, beyond the reach of Meridian's district enforcement jurisdiction. The Vaulted Table runs BCI-integrated poker, traditional mancala variants, and a proprietary tile game called Saltreach, with buy-ins that exclude all but the wealthiest Tier 3 and above players. The venue is invitation-only, physically unmarked, and changes location every seventy-two hours via encrypted guest notification.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 3-4",
@@ -16,9 +16,15 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A player wins a hand containing data \u2014 not money \u2014 embedded in the pot by a previous loser: encrypted files that someone powerful wants back immediately.",
-    "The Table\u0027s anonymous host sends invitations to two players who are, unknown to each other, hunting the same target \u2014 and the game is designed to make them reveal themselves.",
+    "A player wins a hand containing data — not money — embedded in the pot by a previous loser: encrypted files that someone powerful wants back immediately.",
+    "The Table's anonymous host sends invitations to two players who are, unknown to each other, hunting the same target — and the game is designed to make them reveal themselves.",
     "A Tier 2 card sharp with a black-market BCI overclock has been working her way up the invitation chain for three years; tonight she finally sits down at the Table, and the host already knows exactly who she is."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Auntie Efe's Pot",
+    "Green Bay Community Table",
+    "MERIDIAN",
+    "The Sullen Reach"
+  ]
 }

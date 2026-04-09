@@ -5,7 +5,7 @@
   "category": "recreation",
   "subcategory": "thrill-seeking",
   "aliases": [],
-  "description": "A licensed storm-chase experience operator running guided excursions into the Wastes surrounding GLMZ during the seasonal superstorm windows, when the collapsed infrastructure zones outside the megastructure boundary are hit by the Great Lakes corridor\u0027s amplified weather systems. Clients are transported in armored crawler vehicles with panoramic sensor arrays and BCI weather integration that translates storm data into full-body sensory experience \u2014 pressure, electromagnetic charge, thermal gradient \u2014 without direct exposure. Optional \u0027breach packages\u0027 allow clients to exit the crawler in hardened survival suits for direct contact with the storm environment.",
+  "description": "A licensed storm-chase experience operator running guided excursions into the Wastes surrounding GLMZ during the seasonal superstorm windows, when the collapsed infrastructure zones outside the megastructure boundary are hit by the Great Lakes corridor's amplified weather systems. Clients are transported in armored crawler vehicles with panoramic sensor arrays and BCI weather integration that translates storm data into full-body sensory experience — pressure, electromagnetic charge, thermal gradient — without direct exposure. Optional 'breach packages' allow clients to exit the crawler in hardened survival suits for direct contact with the storm environment.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 3-4",
@@ -16,9 +16,16 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A routine excursion\u0027s crawler is forced to shelter in place when a storm intensifies beyond predicted parameters, and the stranded group discovers the ruins they\u0027ve stopped beside are not as abandoned as the tour maps indicate.",
-    "A client on a premium breach package vanishes during a storm walk \u2014 their BCI signal cuts out simultaneously with a localized electromagnetic surge that the company\u0027s instruments somehow failed to log.",
-    "A runner has been hired to plant a tracking device on one of WASTEWALL\u0027s crawlers, with no explanation given for why someone needs to know exactly where the tours go."
+    "A routine excursion's crawler is forced to shelter in place when a storm intensifies beyond predicted parameters, and the stranded group discovers the ruins they've stopped beside are not as abandoned as the tour maps indicate.",
+    "A client on a premium breach package vanishes during a storm walk — their BCI signal cuts out simultaneously with a localized electromagnetic surge that the company's instruments somehow failed to log.",
+    "A runner has been hired to plant a tracking device on one of WASTEWALL's crawlers, with no explanation given for why someone needs to know exactly where the tours go."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "GLMZ",
+    "Lazarus LX-2 'Lab Rat'",
+    "Shelf Tramway",
+    "The Crawl",
+    "Vespid Dynamics Reconnaissance Beetle RB-2"
+  ]
 }

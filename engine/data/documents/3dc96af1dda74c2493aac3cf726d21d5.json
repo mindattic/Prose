@@ -41,27 +41,90 @@
     "fillColor": "#6B0020",
     "fillOpacity": 0.35,
     "coords": [
-      { "lat": 33.0, "lng": -88.3 },
-      { "lat": 32.8, "lng": -87.5 },
-      { "lat": 32.9, "lng": -86.5 },
-      { "lat": 33.5, "lng": -85.8 },
-      { "lat": 34.2, "lng": -85.2 },
-      { "lat": 34.7, "lng": -84.8 },
-      { "lat": 35.3, "lng": -84.2 },
-      { "lat": 36.0, "lng": -83.8 },
-      { "lat": 36.5, "lng": -84.0 },
-      { "lat": 37.0, "lng": -84.3 },
-      { "lat": 37.4, "lng": -84.8 },
-      { "lat": 37.6, "lng": -85.5 },
-      { "lat": 37.5, "lng": -86.5 },
-      { "lat": 37.3, "lng": -87.3 },
-      { "lat": 37.0, "lng": -88.0 },
-      { "lat": 36.5, "lng": -88.5 },
-      { "lat": 35.8, "lng": -89.0 },
-      { "lat": 35.0, "lng": -89.2 },
-      { "lat": 34.2, "lng": -89.0 },
-      { "lat": 33.5, "lng": -88.8 },
-      { "lat": 33.0, "lng": -88.3 }
+      {
+        "lat": 33,
+        "lng": -88.3
+      },
+      {
+        "lat": 32.8,
+        "lng": -87.5
+      },
+      {
+        "lat": 32.9,
+        "lng": -86.5
+      },
+      {
+        "lat": 33.5,
+        "lng": -85.8
+      },
+      {
+        "lat": 34.2,
+        "lng": -85.2
+      },
+      {
+        "lat": 34.7,
+        "lng": -84.8
+      },
+      {
+        "lat": 35.3,
+        "lng": -84.2
+      },
+      {
+        "lat": 36,
+        "lng": -83.8
+      },
+      {
+        "lat": 36.5,
+        "lng": -84
+      },
+      {
+        "lat": 37,
+        "lng": -84.3
+      },
+      {
+        "lat": 37.4,
+        "lng": -84.8
+      },
+      {
+        "lat": 37.6,
+        "lng": -85.5
+      },
+      {
+        "lat": 37.5,
+        "lng": -86.5
+      },
+      {
+        "lat": 37.3,
+        "lng": -87.3
+      },
+      {
+        "lat": 37,
+        "lng": -88
+      },
+      {
+        "lat": 36.5,
+        "lng": -88.5
+      },
+      {
+        "lat": 35.8,
+        "lng": -89
+      },
+      {
+        "lat": 35,
+        "lng": -89.2
+      },
+      {
+        "lat": 34.2,
+        "lng": -89
+      },
+      {
+        "lat": 33.5,
+        "lng": -88.8
+      },
+      {
+        "lat": 33,
+        "lng": -88.3
+      }
     ]
   },
   "related_entities": [
@@ -69,6 +132,39 @@
     "Ohio Corridor",
     "CAUTERIZE",
     "Indiana Dead Zone",
-    "Pinnacle BioSynthetics"
+    "Pinnacle BioSynthetics",
+    "Arcturus Defense Solutions",
+    "Arcturus Exo-Runner Frame",
+    "Arcturus KS-7 'Nursery'",
+    "Axolotl Regenerative Suite",
+    "Bathysphere Networks",
+    "Boubacar Krstić-Amara",
+    "Brecken Yılmaz-Osei",
+    "Cassiel Kimura-Nkrumah",
+    "GLMZ",
+    "Glenville Sound",
+    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
+    "Irontide Tidal Energy",
+    "Kethavar",
+    "Lazarus IDP-1 'Teeth'",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Praevex",
+    "Rashaad Tumelo-Koskinen",
+    "Reproductive Suppressant Gene Lock",
+    "Réginald Asomaning-Čabarkapa",
+    "Sagyn Ibarra-Prempeh",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Sorin Ekwensi-Balasanyan",
+    "Street Custom 'Glass Garden' Caltrops",
+    "TESSERA ES-4 'Perimeter'",
+    "The Biomass",
+    "The Canopy",
+    "The Eastline",
+    "The Pure Hand",
+    "The Static Garden",
+    "The Undertow",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Yannick Tofauti-Szarvásy",
+    "Zheng-dao Bioelectric"
   ]
 }

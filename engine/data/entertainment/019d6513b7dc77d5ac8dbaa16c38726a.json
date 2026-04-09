@@ -5,7 +5,7 @@
   "category": "sport",
   "subcategory": "neural-physical hybrid sport",
   "aliases": [],
-  "description": "The SYNAPSE SLAM INVITATIONAL is the premier open-entry hybrid competition in GLMZ, combining physical athletic events with simultaneous neural puzzle and reflex challenges broadcast on a parallel BCI feed. Competitors must maintain peak physical performance while their BCIs execute complex spatial and tactical problems in real time, with the neural score modifying their physical results \u2014 a perfect sprint run worth nothing if the neural component collapses. Founded by an independent consortium of BCI researchers and former augmented athletes, the Invitational remains one of the few elite-level competitions not fully owned by a corponation.",
+  "description": "The SYNAPSE SLAM INVITATIONAL is the premier open-entry hybrid competition in GLMZ, combining physical athletic events with simultaneous neural puzzle and reflex challenges broadcast on a parallel BCI feed. Competitors must maintain peak physical performance while their BCIs execute complex spatial and tactical problems in real time, with the neural score modifying their physical results — a perfect sprint run worth nothing if the neural component collapses. Founded by an independent consortium of BCI researchers and former augmented athletes, the Invitational remains one of the few elite-level competitions not fully owned by a corponation.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 2-3",
@@ -16,9 +16,16 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A Tier 2 factory worker qualifies for the Invitational using a secondhand BCI and begins winning \u2014 attracting corporate interest that feels less like sponsorship and more like acquisition.",
-    "The Invitational\u0027s neural broadcast is hacked mid-competition, and the intruding signal contains fragmented data that appears to be stolen corporate research.",
-    "A competitor discovers that the neural puzzles in this year\u0027s Invitational are not random \u2014 they map precisely onto the access architecture of a specific corponation\u0027s secure network."
+    "A Tier 2 factory worker qualifies for the Invitational using a secondhand BCI and begins winning — attracting corporate interest that feels less like sponsorship and more like acquisition.",
+    "The Invitational's neural broadcast is hacked mid-competition, and the intruding signal contains fragmented data that appears to be stolen corporate research.",
+    "A competitor discovers that the neural puzzles in this year's Invitational are not random — they map precisely onto the access architecture of a specific corponation's secure network."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "GLMZ",
+    "Neuromorphic Pressure Cestus",
+    "Talon Systems Grav-Pulse Emitter GPE-3 'Downdraft'",
+    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'",
+    "Zheng-Dao Bioelectric Axonal Frequency Bridge"
+  ]
 }

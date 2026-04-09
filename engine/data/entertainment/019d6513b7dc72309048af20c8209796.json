@@ -5,7 +5,7 @@
   "category": "sport",
   "subcategory": "hybrid neural-physical sport",
   "aliases": [],
-  "description": "The Synapse Slam Continental is the flagship hybrid competition in which athletes compete simultaneously in physical obstacle courses and neural puzzle architectures broadcast directly to their BCIs \u2014 solving logic cascades while climbing, sprinting, or absorbing contact impacts. Cognitive errors trigger physical penalties; physical failures corrupt the neural track. Governed by the Neural-Physical Athletic Accord, a body jointly administered by HelixCorp and Axiom Workforce Solutions, the league draws elite competitors from all augmentation backgrounds, though BCI-enhanced athletes dominate the upper brackets.",
+  "description": "The Synapse Slam Continental is the flagship hybrid competition in which athletes compete simultaneously in physical obstacle courses and neural puzzle architectures broadcast directly to their BCIs — solving logic cascades while climbing, sprinting, or absorbing contact impacts. Cognitive errors trigger physical penalties; physical failures corrupt the neural track. Governed by the Neural-Physical Athletic Accord, a body jointly administered by HelixCorp and Axiom Workforce Solutions, the league draws elite competitors from all augmentation backgrounds, though BCI-enhanced athletes dominate the upper brackets.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 3-4",
@@ -16,9 +16,18 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A Tier 2 athlete with a black-market BCI \u2014 not officially registered \u2014 qualifies for the Open through a regional qualifier under a false augmentation certificate, and must compete while hiding the illegal hardware from league scanners.",
-    "A retired Synapse Slam champion is approached by a journalist who has obtained internal HelixCorp documents suggesting the cascade failures in Season 2 were predictable and predicted \u2014 and suppressed.",
-    "A competitor discovers mid-tournament that the neural puzzle architecture she\u0027s been solving contains actual proprietary data that someone has embedded in the competition layer \u2014 and that solving it correctly means transmitting it somewhere she doesn\u0027t control."
+    "A Tier 2 athlete with a black-market BCI — not officially registered — qualifies for the Open through a regional qualifier under a false augmentation certificate, and must compete while hiding the illegal hardware from league scanners.",
+    "A retired Synapse Slam champion is approached by a journalist who has obtained internal HelixCorp documents suggesting the cascade failures in Season 2 were predictable and predicted — and suppressed.",
+    "A competitor discovers mid-tournament that the neural puzzle architecture she's been solving contains actual proprietary data that someone has embedded in the competition layer — and that solving it correctly means transmitting it somewhere she doesn't control."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "NeuralPath Cascade Standard Feed BCI",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Talon Systems Grav-Pulse Emitter GPE-3 'Downdraft'",
+    "The Synthetic Personhood League",
+    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'",
+    "Vuk Jorgensen-Toure",
+    "Zheng-Dao Bioelectric Axonal Frequency Bridge"
+  ]
 }

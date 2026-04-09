@@ -1,11 +1,11 @@
 {
   "id": "019d6513b7b773e8b37f9f74e60864b8",
-  "name": "Palate Archive \u2014 BCI Taste Memory Parlor",
+  "name": "Palate Archive — BCI Taste Memory Parlor",
   "type": "entertainment",
   "category": "recreation",
   "subcategory": "sensory parlor",
   "aliases": [],
-  "description": "Palate Archive offers curated taste-memory sessions via direct BCI gustatory overlay, allowing clients to experience meals that no longer exist \u2014 pre-Collapse cuisine made from ingredients now extinct or economically inaccessible \u2014 sourced from donated or purchased memory engrams from elderly donors and high-fidelity culinary archivists. A single session might include the precise sensory experience of a 2041 Oaxacan mole negro, a 2019 Osaka ramen, or a grandmother\u0027s specific recipe for jollof rice as remembered in perfect neural fidelity. The parlor also offers emotional-context packages that layer in the ambient memory of the meal\u0027s original social setting.",
+  "description": "Palate Archive offers curated taste-memory sessions via direct BCI gustatory overlay, allowing clients to experience meals that no longer exist — pre-Collapse cuisine made from ingredients now extinct or economically inaccessible — sourced from donated or purchased memory engrams from elderly donors and high-fidelity culinary archivists. A single session might include the precise sensory experience of a 2041 Oaxacan mole negro, a 2019 Osaka ramen, or a grandmother's specific recipe for jollof rice as remembered in perfect neural fidelity. The parlor also offers emotional-context packages that layer in the ambient memory of the meal's original social setting.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 3-4",
@@ -16,9 +16,13 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A client undergoing a routine heritage taste session experiences memories that are clearly not from the advertised donor \u2014 they\u0027re from someone who is still alive, and the memories include witnessing a murder",
-    "A Shelf elder realizes her late husband\u0027s taste memories are being commercially sold without her knowledge and sets out to have them removed from the catalog by any means necessary",
-    "A food archivist discovers that one of the parlor\u0027s most popular \u0027historical\u0027 recipes is actually a fabrication \u2014 a synthetic memory constructed to match what people wish pre-Collapse food tasted like"
+    "A client undergoing a routine heritage taste session experiences memories that are clearly not from the advertised donor — they're from someone who is still alive, and the memories include witnessing a murder",
+    "A Shelf elder realizes her late husband's taste memories are being commercially sold without her knowledge and sets out to have them removed from the catalog by any means necessary",
+    "A food archivist discovers that one of the parlor's most popular 'historical' recipes is actually a fabrication — a synthetic memory constructed to match what people wish pre-Collapse food tasted like"
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "The Heritage Vault",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ]
 }

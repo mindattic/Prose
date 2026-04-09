@@ -5,7 +5,7 @@
   "category": "recreation",
   "subcategory": "VR arcade",
   "aliases": [],
-  "description": "A chain of cramped but technically sophisticated immersion pod arcades originally seeded in Tier 2 transit hubs, VAULTDIVE offers full-body haptic submersion in competitive multiplayer environments ranging from pre-Collapse cityscapes to alien terraforming scenarios. Each pod isolates the user in a gel-suspension cradle with full BCI handshake, allowing genuine proprioceptive feedback \u2014 you feel the fall, the impact, the cold. The chain\u0027s reputation for hardware that\u0027s one firmware update behind corporate competitors keeps prices accessible and the clientele loyal.",
+  "description": "A chain of cramped but technically sophisticated immersion pod arcades originally seeded in Tier 2 transit hubs, VAULTDIVE offers full-body haptic submersion in competitive multiplayer environments ranging from pre-Collapse cityscapes to alien terraforming scenarios. Each pod isolates the user in a gel-suspension cradle with full BCI handshake, allowing genuine proprioceptive feedback — you feel the fall, the impact, the cold. The chain's reputation for hardware that's one firmware update behind corporate competitors keeps prices accessible and the clientele loyal.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 1-2",
@@ -16,9 +16,19 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A teenage runner from the Shelf discovers she has an inexplicable combat-reflex edge in VAULTDIVE ladders \u2014 someone has been feeding her live tactical data through a hidden BCI overlay she didn\u0027t consent to",
+    "A teenage runner from the Shelf discovers she has an inexplicable combat-reflex edge in VAULTDIVE ladders — someone has been feeding her live tactical data through a hidden BCI overlay she didn't consent to",
     "Two estranged siblings meet anonymously inside a VAULTDIVE shared scenario, neither knowing the other is there, and begin rebuilding a relationship through fictional avatars",
-    "A VAULTDIVE technician finds that one pod\u0027s log files contain recordings of sessions that never officially happened \u2014 someone has been using the hardware for something other than gaming"
+    "A VAULTDIVE technician finds that one pod's log files contain recordings of sessions that never officially happened — someone has been using the hardware for something other than gaming"
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Lazarus LX-2 'Lab Rat'",
+    "Marrowvault Cryogenics",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Neuromorphic Pressure Cestus",
+    "ShieldTech CLA-3 'Cascade'",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "TESSERA TN-1 'Cradle'",
+    "The Shelf"
+  ]
 }

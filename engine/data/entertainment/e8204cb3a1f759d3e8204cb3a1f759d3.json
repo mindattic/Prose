@@ -40,5 +40,9 @@
   "user_base": "Approximately 11 million registered users across all tiers; heaviest active use in Tier 2-3, with significant Tier 1 unlicensed operator presence and surprising Tier 4 corporate contractor activity",
   "monetization": "Transaction fees on completed contracts (2.4% standard, 0% on Shelf-flagged micro-contracts under Φ500); premium listing placement; optional escrow services; enterprise API access for corponations willing to pay for bulk contractor matching",
   "notable_feature": "The forked matching algorithm retains Nakamura-Voss's original precision but has been modified to weight worker-set availability and rate floors above employer preferences — unusually, the platform cannot be used to post jobs below the worker's stated minimum, a design choice that infuriates corporate users and defines Aperture's culture",
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions ETF-3 'Mantis'",
+    "Suborbital Acoustic Relay Drone SARD-1 'Tuning Fork'"
+  ]
 }

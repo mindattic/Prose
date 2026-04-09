@@ -5,7 +5,7 @@
   "category": "game",
   "subcategory": "AR game / citywide territory capture",
   "aliases": [],
-  "description": "STORMWALL overlays a persistent weather-warfare game across the entire GLMZ metropolitan area, with players representing rival atmospheric guilds competing to control microclimatic zones by physically occupying real city districts and completing AR challenges. A Tier 3 indie studio built it on open-source AR infrastructure, and within eight months it had over 400,000 active players moving through the city \u2014 some crossing tier boundaries in ways that made both security forces and corponation legal teams deeply uncomfortable. The game\u0027s insistence on physical presence in specific real locations created genuine social friction and occasional violence at contested nodes.",
+  "description": "STORMWALL overlays a persistent weather-warfare game across the entire GLMZ metropolitan area, with players representing rival atmospheric guilds competing to control microclimatic zones by physically occupying real city districts and completing AR challenges. A Tier 3 indie studio built it on open-source AR infrastructure, and within eight months it had over 400,000 active players moving through the city — some crossing tier boundaries in ways that made both security forces and corponation legal teams deeply uncomfortable. The game's insistence on physical presence in specific real locations created genuine social friction and occasional violence at contested nodes.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 1-2",
@@ -16,9 +16,14 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A STORMWALL node in a Tier 1 district keeps resisting capture by any guild \u2014 players who visit it report BCI glitches and seeing the same ghost-figure in the AR overlay.",
-    "A corponation is secretly funding one of the top guilds to use STORMWALL\u0027s player movement data to map Shelf foot traffic patterns for a redevelopment project.",
-    "A Tier 1 player has been the lone defender of a single node for 400 days straight and has become an underground legend \u2014 until someone finds out why they can never leave."
+    "A STORMWALL node in a Tier 1 district keeps resisting capture by any guild — players who visit it report BCI glitches and seeing the same ghost-figure in the AR overlay.",
+    "A corponation is secretly funding one of the top guilds to use STORMWALL's player movement data to map Shelf foot traffic patterns for a redevelopment project.",
+    "A Tier 1 player has been the lone defender of a single node for 400 days straight and has become an underground legend — until someone finds out why they can never leave."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Aphelion",
+    "GLMZ",
+    "Hearthstone Firearms Defender-38 'Snubnose'"
+  ]
 }

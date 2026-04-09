@@ -3,9 +3,9 @@
   "name": "CIVIC RISK INDEX: District Outcome Prediction Market",
   "type": "entertainment",
   "category": "gambling",
-  "subcategory": "prediction market \u2014 crime, weather, and civic outcomes",
+  "subcategory": "prediction market — crime, weather, and civic outcomes",
   "aliases": [],
-  "description": "CIVIC RISK INDEX is a Tier 2-accessible licensed prediction market focused exclusively on GLMZ\u0027s civic and environmental data \u2014 players bet on district-level crime statistics, enforcement response times, synth-protein supply disruptions, flood event severity, and Sable Charter policy outcomes over rolling 30-day windows. Launched in 2221 by an independent operator consortium under a provisional Sable Charter data-market license, CRI uses publicly available sensor and enforcement feeds to generate its baseline odds, with a transparent methodology that has made it unusually trusted compared to corporate prediction products. Its \u0027Shelf Disruption Index\u0027 \u2014 a composite bet on combined negative civic outcomes in Tier 1 districts \u2014 has become a grim but widely-followed indicator of Shelf conditions.",
+  "description": "CIVIC RISK INDEX is a Tier 2-accessible licensed prediction market focused exclusively on GLMZ's civic and environmental data — players bet on district-level crime statistics, enforcement response times, synth-protein supply disruptions, flood event severity, and Sable Charter policy outcomes over rolling 30-day windows. Launched in 2221 by an independent operator consortium under a provisional Sable Charter data-market license, CRI uses publicly available sensor and enforcement feeds to generate its baseline odds, with a transparent methodology that has made it unusually trusted compared to corporate prediction products. Its 'Shelf Disruption Index' — a composite bet on combined negative civic outcomes in Tier 1 districts — has become a grim but widely-followed indicator of Shelf conditions.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 2-3",
@@ -17,8 +17,16 @@
   "known_fans": [],
   "story_hooks": [
     "A community organizer discovers that a pattern of CRI positions placed three days before major Shelf enforcement actions suggests someone has advance knowledge of operation timing.",
-    "A character realizes the CRI Shelf Disruption Index has been artificially suppressed for six weeks \u2014 someone is manipulating civic data feeds to hide a deteriorating situation from the market.",
-    "An independent journalist wants to publish a piece proving that CRI\u0027s \u0027transparent methodology\u0027 contains a hidden weighting factor that systematically undervalues Shelf casualty data \u2014 and the operator consortium is not pleased."
+    "A character realizes the CRI Shelf Disruption Index has been artificially suppressed for six weeks — someone is manipulating civic data feeds to hide a deteriorating situation from the market.",
+    "An independent journalist wants to publish a piece proving that CRI's 'transparent methodology' contains a hidden weighting factor that systematically undervalues Shelf casualty data — and the operator consortium is not pleased."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "GLMZ",
+    "Nurlan Holmberg-Dembele",
+    "Sable",
+    "The Bazaar",
+    "The Human Baseline Alliance"
+  ]
 }

@@ -41,10 +41,40 @@
     "Esperanza",
     "Unit 217",
     "The Wanderer",
-    "Unit 044 ('Pilgrim')"
+    "Unit 044 ('Pilgrim')",
+    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
+    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
+    "Arcturus Exo-Runner Frame",
+    "Breck Tannen",
+    "Brecken Yılmaz-Osei",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "GLMZ",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
+    "Iowan Behemoth Agricultural Platform",
+    "Lazarus PD-4 'Guardian Angel'",
+    "MERIDIAN",
+    "Meridian Audio Concepts SirenSphere S-7 'Dome'",
+    "Patient Zero",
+    "Ringo AX-12 'Harvester'",
+    "Ringo RK-2 'Stray'",
+    "Slagworks Industrial",
+    "Stonepath Logistics",
+    "TESSERA ES-4 'Perimeter'",
+    "Tessera TP-0 'Shepherd's Crook'",
+    "The Arrangement",
+    "The Eastline",
+    "The Iowa Exclusion Zone",
+    "The Nearfield",
+    "The Reclamation Assembly",
+    "The Sullen Reach",
+    "The Vagrant",
+    "Yannick Tofauti-Szarvásy",
+    "Yuki Nwosu-Petrenko",
+    "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
   ],
   "coordinates": {
-    "lat": 42.0,
+    "lat": 42,
     "lng": -93.5
   },
   "map_polygon": {
@@ -55,31 +85,106 @@
     "fillOpacity": 0.15,
     "strokeWeight": 2,
     "coords": [
-      { "lat": 43.50, "lng": -96.64 },
-      { "lat": 43.50, "lng": -96.00 },
-      { "lat": 43.50, "lng": -95.00 },
-      { "lat": 43.50, "lng": -94.00 },
-      { "lat": 43.50, "lng": -93.00 },
-      { "lat": 43.50, "lng": -92.00 },
-      { "lat": 43.50, "lng": -91.20 },
-      { "lat": 43.00, "lng": -91.10 },
-      { "lat": 42.50, "lng": -90.65 },
-      { "lat": 42.00, "lng": -90.64 },
-      { "lat": 41.50, "lng": -90.60 },
-      { "lat": 41.00, "lng": -91.05 },
-      { "lat": 40.60, "lng": -91.40 },
-      { "lat": 40.38, "lng": -91.72 },
-      { "lat": 40.39, "lng": -92.50 },
-      { "lat": 40.44, "lng": -93.50 },
-      { "lat": 40.44, "lng": -94.50 },
-      { "lat": 40.44, "lng": -95.76 },
-      { "lat": 40.58, "lng": -95.87 },
-      { "lat": 41.00, "lng": -95.86 },
-      { "lat": 41.50, "lng": -96.10 },
-      { "lat": 42.00, "lng": -96.40 },
-      { "lat": 42.50, "lng": -96.55 },
-      { "lat": 43.00, "lng": -96.60 },
-      { "lat": 43.50, "lng": -96.64 }
+      {
+        "lat": 43.5,
+        "lng": -96.64
+      },
+      {
+        "lat": 43.5,
+        "lng": -96
+      },
+      {
+        "lat": 43.5,
+        "lng": -95
+      },
+      {
+        "lat": 43.5,
+        "lng": -94
+      },
+      {
+        "lat": 43.5,
+        "lng": -93
+      },
+      {
+        "lat": 43.5,
+        "lng": -92
+      },
+      {
+        "lat": 43.5,
+        "lng": -91.2
+      },
+      {
+        "lat": 43,
+        "lng": -91.1
+      },
+      {
+        "lat": 42.5,
+        "lng": -90.65
+      },
+      {
+        "lat": 42,
+        "lng": -90.64
+      },
+      {
+        "lat": 41.5,
+        "lng": -90.6
+      },
+      {
+        "lat": 41,
+        "lng": -91.05
+      },
+      {
+        "lat": 40.6,
+        "lng": -91.4
+      },
+      {
+        "lat": 40.38,
+        "lng": -91.72
+      },
+      {
+        "lat": 40.39,
+        "lng": -92.5
+      },
+      {
+        "lat": 40.44,
+        "lng": -93.5
+      },
+      {
+        "lat": 40.44,
+        "lng": -94.5
+      },
+      {
+        "lat": 40.44,
+        "lng": -95.76
+      },
+      {
+        "lat": 40.58,
+        "lng": -95.87
+      },
+      {
+        "lat": 41,
+        "lng": -95.86
+      },
+      {
+        "lat": 41.5,
+        "lng": -96.1
+      },
+      {
+        "lat": 42,
+        "lng": -96.4
+      },
+      {
+        "lat": 42.5,
+        "lng": -96.55
+      },
+      {
+        "lat": 43,
+        "lng": -96.6
+      },
+      {
+        "lat": 43.5,
+        "lng": -96.64
+      }
     ]
   }
 }

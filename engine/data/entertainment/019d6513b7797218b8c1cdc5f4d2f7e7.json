@@ -1,11 +1,11 @@
 {
   "id": "019d6513b7797218b8c1cdc5f4d2f7e7",
-  "name": "Deepwell Den \u2014 The Floating Card Game",
+  "name": "Deepwell Den — The Floating Card Game",
   "type": "entertainment",
   "category": "gambling",
-  "subcategory": "physical gambling den \u2014 floating game",
+  "subcategory": "physical gambling den — floating game",
   "aliases": [],
-  "description": "Deepwell Den is a legendary floating card game that has operated continuously since 2193, rotating through a circuit of basements, barge interiors, and decommissioned hab blocks across the Shelf and lower Tier 2 districts on a schedule communicated only through word of mouth and trusted intermediaries. The game runs a modified form of neural poker where BCI bluff-detection is blocked by a proprietary signal-dampening rig \u2014 the only version of the game where raw human psychological skill still determines outcomes. Stakes range from \u03A620 to tables where a single hand can turn \u03A615,000, and the Den\u0027s reputation for scrupulous fairness has made it a neutral ground where Shelf factions, runners, bookmakers, and occasionally Tier 3 downward-mobile professionals sit at the same table.",
+  "description": "Deepwell Den is a legendary floating card game that has operated continuously since 2193, rotating through a circuit of basements, barge interiors, and decommissioned hab blocks across the Shelf and lower Tier 2 districts on a schedule communicated only through word of mouth and trusted intermediaries. The game runs a modified form of neural poker where BCI bluff-detection is blocked by a proprietary signal-dampening rig — the only version of the game where raw human psychological skill still determines outcomes. Stakes range from Φ20 to tables where a single hand can turn Φ15,000, and the Den's reputation for scrupulous fairness has made it a neutral ground where Shelf factions, runners, bookmakers, and occasionally Tier 3 downward-mobile professionals sit at the same table.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 1-2",
@@ -16,9 +16,13 @@
   "cultural_impact": "",
   "known_fans": [],
   "story_hooks": [
-    "A character is invited to Deepwell Den by someone who owes them a favor \u2014 but the invitation is actually a setup, and the table they\u0027re joining has a very specific reason for wanting them present.",
-    "The Den\u0027s signal-dampening rig has gone missing between locations, and without it the game loses its entire identity \u2014 finding it means navigating the Shelf\u0027s full social web.",
-    "A regular Den player has been winning at a rate that should be impossible without BCI advantage, and no one can figure out how they\u0027re doing it."
+    "A character is invited to Deepwell Den by someone who owes them a favor — but the invitation is actually a setup, and the table they're joining has a very specific reason for wanting them present.",
+    "The Den's signal-dampening rig has gone missing between locations, and without it the game loses its entire identity — finding it means navigating the Shelf's full social web.",
+    "A regular Den player has been winning at a rate that should be impossible without BCI advantage, and no one can figure out how they're doing it."
   ],
-  "tags": []
+  "tags": [],
+  "related_entities": [
+    "Green Bay Community Table",
+    "The Shelf"
+  ]
 }
