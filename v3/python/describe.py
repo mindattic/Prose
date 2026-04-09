@@ -57,7 +57,7 @@ Given a character's existing JSON data, generate a physical description and imag
 
 PHYSICAL DESCRIPTION SCHEMA:
 {
-  "heritage": "Ethnic/cultural lineage derived from hyphenated surname",
+  "heritage": "Ethnic/cultural lineage derived from genetic_ancestry percentages (if provided)",
   "height_cm": integer,
   "weight_kg": integer,
   "build": "Body type with character-specific detail",
@@ -141,7 +141,7 @@ IMAGE PROMPT: Midjourney-style fashion photo. Garment on a cyberpunk model or di
 
 # Which fields to send to the LLM per entity type
 CONTEXT_FIELDS = {
-    "characters": ["name", "gender", "species", "age", "role", "affiliation", "location", "description", "augmentations", "daily_life"],
+    "characters": ["name", "gender", "species", "age", "role", "affiliation", "location", "description", "augmentations", "daily_life", "genetic_ancestry"],
     "weaponry": ["name", "category", "manufacturer", "description", "tier_availability", "legality", "base_technologies", "specifications", "tactical_use"],
     "equipment": ["name", "category", "manufacturer", "description", "tier_availability", "specifications"],
     "apparel": ["name", "category", "manufacturer", "description", "tier_availability", "specifications", "cultural_context"],
