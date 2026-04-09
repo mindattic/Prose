@@ -181,5 +181,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Gold"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Balkan (Senegalese / Serbian)",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Lean and compact, almost spare — a body optimized by years of standing over surgical tables. No excess anywhere. Wiry forearm definition from repetitive precision work.",
+    "hair_color": "Natural black",
+    "hair_style": "Close-cropped, kept at scalp length. Usually covered by surgical caps even off-shift; visible only as a dark fuzz when uncovered.",
+    "hair_length": "Short",
+    "eye_color": "Augmented amber with gold threading in a cracked-glass pattern",
+    "skin_tone": "Warm umber with golden undertones",
+    "complexion": "Fine-featured, sharp cheekbones, narrow jaw. Skin is clear and meticulous — she treats it like a surgical field, antiseptic clean. Minimal cosmetics. A thin scar runs along her left temple (surgical implant access point for the retinal overlay).",
+    "distinguishing_marks": [
+      "Surgical scar along left temple, roughly 3cm, partially hidden by hairline — site of retinal overlay installation",
+      "Faint needle track marks along inner elbows from years of phlebotomy self-testing (occupational habit)",
+      "Small burn scar on right forearm, pale and old, from lab accident during her Helix employment"
+    ],
+    "visible_augmentations": "Bioluminescent fingernail beds glowing soft pale blue, visible when hands are exposed or in low light. Fine chrome and black polymer subdermal plating visible at wrist joints and knuckle articulations (surgical motor stabilizers). Thin surgical scar at left temple marking retinal overlay implant site.",
+    "posture_movement": "Upright, economical. Moves with deliberate precision — no wasted motion. Hands are steady and controlled, fingers often splayed slightly as if already scrubbed in. Her gaze is direct and clinical. She has developed a habit of examining people's veins when making eye contact.",
+    "clothing_style": "Tier 4-5 utilitarian. Off-shift: dark compression bodysuits (heat-regulating, easy to decontaminate), reinforced cargo pants with deep pockets for tools, unmarked black field jacket. Surgical-grade gloves in her pockets always. Lab coat or surgical gown when working. No jewelry except a faded Helix Biosystems ID badge she never removed — worn around neck on a gray lanyard like a talisman of her former life. Shoes are clinical clogs, broken in, bloodstains long since faded into the material."
+  },
+  "image_prompt": "Cyberpunk portrait of a 34-year-old woman with warm umber skin and sharp, fine-featured face, close-cropped natural black hair barely visible under a surgical cap. Her striking augmented eyes glow with cracked amber irises threaded in gold. Bioluminescent pale blue fingernails visible as her hands rest on a surgical tray. Fine chrome subdermal plating visible at wrist joints. Wearing dark compression bodysuit and unmarked black field jacket over surgical attire. In the background, soft warm amber light from tissue preservation containers. Moody, clinical lighting. South Deering Sump aesthetic — brutalist underground surgical suite, sterile and precise. Cold, composed expression. Medical-grade precision, intimate violence. Photorealistic cyberpunk. --ar 2:3 --v 6"
 }

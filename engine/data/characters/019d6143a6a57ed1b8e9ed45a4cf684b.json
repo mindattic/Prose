@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Forensic Technician, Meridian 88 Metro Police",
+  "role": "Forensic Technician, GLMZ Metro Police",
   "age": 52,
   "status": "active",
   "location": "Deepwell Station, Metro Police Forensic Sciences Division, Sub-Level 3",
@@ -63,7 +63,7 @@
   "narrative_function": "Expert information source on cause of death, trace evidence, and forensic anomalies; can identify inconsistencies in official reports; one of the few truly honest people in the justice system; represents institutional memory and quiet resistance",
   "augmentations": "Neural-optical forensic integration suite (Metro-issued, enhanced tissue and compound analysis), subdermal chemical hazard sensors in fingertips (Metro-issued), elective memory compression implant (personal, allows perfect evidence recall)",
   "daily_life": "Arrives at Deepwell Station before first shift, checks the overnight intake, processes evidence with methodical precision across ten-to-fourteen-hour days; eats one real meal a day; speaks to the refrigeration unit E.L.F. before locking up.",
-  "affiliation": "Meridian 88 Metro Police, Forensic Sciences Division",
+  "affiliation": "GLMZ Metro Police, Forensic Sciences Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -264,5 +264,26 @@
     "Slagworks Industrial",
     "Déjà Vu"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Eastern European (Balkan) / Filipino",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and wiry with the economical musculature of someone who has spent thirty years bending over evidence tables rather than lifting weights. Posture is habitually forward-curved at the shoulders, spine adapted to microscopic work.",
+    "hair_color": "Dark brown with silver streaking throughout, natural graying pattern",
+    "hair_style": "Tight, functional braid worn at the nape of the neck, same style for approximately fifteen years",
+    "hair_length": "Long (braided)",
+    "eye_color": "Warm brown (natural); augmented with neural-optical forensic overlays that manifest as faint iridescent shimmer at the pupils when active",
+    "skin_tone": "Olive-warm complexion reflecting mixed Balkan-Filipino ancestry",
+    "complexion": "Weathered in a precise way—minimal wrinkles except around the eyes and mouth from decades of concentration and rare, dry humor. Skin texture slightly papery from exposure to preservative compounds. Strong cheekbones, broad nose, closed expression that softens incrementally with familiarity.",
+    "distinguishing_marks": [
+      "Chemical burn scar on the inside of her left forearm, silvered and old, approximately 8cm long—legacy of early-career evidence processing accident",
+      "Fine needle-puncture scarring on both temples where neural-optical integration suite was installed, barely visible beneath hair",
+      "Callus pattern on fingertips distinctive and asymmetrical, right hand more developed than left from twenty years of precision manual evidence handling"
+    ],
+    "visible_augmentations": "Magnification rigs worn over eyes during work hours (removable, Metro-issued, give her an owl-like appearance). Subdermal chemical hazard sensors in fingertips create faint luminescent tracery visible under forensic-spectrum light only. Neural-optical enhancement suite has no visible external hardware but manifests as subtle iridescent pupil shimmer when actively processing compound analysis.",
+    "posture_movement": "Habitually forward-leaning, shoulders curved inward. Hands in constant micro-motion even at rest—testing textures, running fingers across surfaces, fidgeting with evidence containers or examining tools. Movements are economical and precise; she does not waste energy. Walking gait is steady and unhurried. Her presence is quiet—she does not announce herself.",
+    "clothing_style": "GLMZ Metro Police forensic technician uniform: dark grey utility coveralls with reflective trim, multiple sealed pockets for evidence containers and tools. Under-layers of polyweave thermal regulation wear. Feet shod in sealed forensic-grade boots with enhanced grip for lab surfaces. Over this, a Metro-issued long coat in dark blue with forensic division insignia, worn open. Minimal jewelry: a single band on her left ring finger (neither wedding nor engagement, purpose unknown). Her appearance is Tier 3 working-class, but the quality of her tools and the precision of her kit suggests someone who invests all discretionary Φ in equipment rather than appearance."
+  },
+  "image_prompt": "Portrait of a 52-year-old woman with Balkan-Filipino heritage, stern-faced with strong cheekbones and warm brown eyes magnified behind forensic magnification rigs making her resemble a patient owl. Dark hair with silver streaking pulled into a tight, fifteen-year-unchanged braid. Lean, wiry frame dressed in dark grey Metro Police forensic technician coveralls with reflective trim and sealed pockets. Faint chemical burn scar visible on left inner forearm. Hands long-fingered and expressive, positioned mid-gesture as if testing a surface or examining evidence. Subtle iridescent shimmer at pupils indicating active neural-optical enhancement. Background: Sub-Level 3 forensic sciences laboratory with cool bluish-white LED lighting, evidence processing tables, sealed compound containers, clinical and precise. Mood: competent, methodical, cold-burning justice, widow to precision. Cyberpunk clinical aesthetic, intricate detail work visible on clothing and equipment. --ar 2:3 --v 6"
 }

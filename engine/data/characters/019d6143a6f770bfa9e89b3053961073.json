@@ -255,5 +255,25 @@
     "The Pale Mile",
     "Gold"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "West African / South Slavic",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and wiry, with the posture of someone who forgets to eat during work — all angles and restless energy, shoulders slightly rounded from hunching over displays",
+    "hair_color": "Natural black with occasional hints of deep brown in direct light",
+    "hair_style": "Large, well-maintained puff with visible texture; frequently touched and adjusted while thinking or speaking, sometimes compressed against one side from prolonged headset wear",
+    "hair_length": "Medium (approximately 12-15cm natural crown height)",
+    "eye_color": "Deep brown, alert and mobile — eyes habitually scan as if reading text in the air",
+    "skin_tone": "Warm rich brown with slight undertones suggesting equatorial and Mediterranean ancestry",
+    "complexion": "Clean-shaven face with sharp cheekbones, slightly parted lips (resting state), forehead often creased with concentration lines. Skin is well-maintained but shows signs of irregular sleep — occasional darkness under eyes. Minor tension marks between brows from frequent frowning during analysis",
+    "distinguishing_marks": [
+      "Bioluminescent subcutaneous patches along jawline and temples, currently displaying soft green/pale gold mood-reactive coloration — most visible in low-light conditions",
+      "Fine silvery scar along left temple (approximately 3cm), partially obscured by bioluminescence but visible in profile — likely from early geneware installation procedure at age 22"
+    ],
+    "visible_augmentations": "Bioluminescent facial patches (jaw and temples) shifting between green and gold depending on emotional/cognitive state — immediately noticeable in any lighting below standard office bright. Cortical co-processor is subcutaneous (not visible). Haptic input gloves worn during work sessions only — typically black leather with reinforced fingertips and visible neural-interface nodules at wrists.",
+    "posture_movement": "Habitually leans forward when listening or thinking, weight distributed unevenly as if ready to pivot toward a terminal. Frequent hand gestures during speech — fingers often mime typing or drawing patterns in air. Movement is efficient but somewhat abstracted, as if part of their attention is always elsewhere. When deeply focused, becomes nearly motionless except for eyes and lips (subvocal pattern recognition)",
+    "clothing_style": "Tier 3 practical-academic aesthetic with Tier 2 quality components. Favors cargo jackets and vests in muted tones (grey, dark blue, black) with multiple pockets and reinforced stress points. Wears layered synthetic blends designed for temperature regulation during long computing sessions. Good athletic shoes (understated brands like Meridian Standard Issue or recycled synthetics) kept in excellent condition. Always has secondary input device — usually a wrist-mounted haptic pad or neural stylus — clipped to belt or vest pocket. Minimal jewelry except for a faint silver band on left ring finger (possibly symbolic rather than romantic). Generally appears as someone who thinks about clothing as functional architecture rather than expression, yet manages to appear intellectually purposeful rather than disheveled"
+  },
+  "image_prompt": "Nonbinary xenolinguist with warm brown skin and large natural black hair puff, age 33, lean wiry build, wearing layered cargo jacket in dark grey, glowing bioluminescent patches on jawline and temples shifting between soft green and pale gold, deep brown alert eyes tracking something unseen, slightly parted lips in concentration, haptic input gloves visible on wrists, sitting at a high-tech workstation surrounded by holographic linguistic data streams, soft neon accent lighting reflecting off bioluminescence, cyberpunk research lab aesthetic, moody atmospheric lighting with emphasis on the glow of augmentations, technical illustration quality, introspective expression, --ar 2:3 --v 6"
 }

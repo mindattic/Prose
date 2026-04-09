@@ -187,5 +187,27 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East African / Scandinavian",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and solid, with the muscular endurance of someone who stands twelve hours daily. Not heavy, but densely built through the core and legs. Years of stirring, lifting, and market work have sculpted functional strength rather than aesthetic definition.",
+    "hair_color": "Warm saffron-orange (geneware-treated, fading at roots to natural dark brown)",
+    "hair_style": "Coiled and pinned high, usually wrapped in wax-print cotton headwrap in geometric patterns",
+    "hair_length": "Long (shoulder-length when unwrapped)",
+    "eye_color": "Warm brown with flecks of amber",
+    "skin_tone": "Copper-dark, warm undertones with evidence of decades of sun and steam exposure",
+    "complexion": "Deeply lined face mapping decades of smiling and squinting over steam and flame. Laugh lines radiate from eyes and mouth. Skin weathered but maintained — oil-slicked for protection from kitchen heat. No makeup. Grooming is practical and deliberate.",
+    "distinguishing_marks": [
+      "Three deliberate burn scars on inner left forearm, roughly parallel, each 3-4 cm long — pale against copper skin, deliberately preserved and referenced as 'flavor tattoos' marking regional cuisines she mastered",
+      "Matching set of two burn scars on right forearm, slightly older, edges softened with time",
+      "Network of fine white scars across knuckles and backs of hands from decades of knife work",
+      "Small crescent scar above left eyebrow, likely from a market accident years ago"
+    ],
+    "visible_augmentations": "None externally visible. Reinforced lumbar vertebrae and taste-receptor enhancement are subcutaneous/internal.",
+    "posture_movement": "Moves with unhurried economy of motion — no wasted gesture. Stands with weight balanced across both feet, shoulders back, spine straight despite internal reinforcement. Her gaze sweeps constantly, reading customers the moment they approach. Hands are always occupied or ready. She has the physical presence of someone who has held a space for two decades and expects to hold it for two more.",
+    "clothing_style": "Tier 3-4 working class practicality. Daily uniform: long wax-print wrapper skirt (vibrant geometric patterns, Ghanaian or Congolese style) in jewel tones, worn loose for movement and ventilation. Fitted short-sleeve cotton or linen shirt (often stained, always washed). Heavy canvas apron with deep pockets for tools, change, samples. Worn leather slip-ons for quick stepping in/out of the stall. A gold ring on her right hand (real metal, visible sign of early success) and a faded fabric bracelet in guild colors. Headwrap rotated daily. No jewelry beyond the ring — everything else would catch on cooking equipment or burn."
+  },
+  "image_prompt": "Portrait of Soraya Mwiti-Eklund, 58-year-old East African-Scandinavian woman, copper-dark skin weathered by decades of kitchen work, deep laugh lines mapping her face, warm amber-brown eyes reading the viewer with practiced certainty. Saffron-orange hair coiled and wrapped in vibrant wax-print cotton headwrap. Broad shoulders, solid athletic build. Visible deliberate burn scars on forearms — pale against skin, referenced as 'flavor tattoos'. Wearing fitted linen shirt and long geometric wax-print wrapper skirt in jewel tones, heavy canvas apron with deep pockets. Gold ring on right hand. Standing with unhurried authority in her food stall at dawn, steam rising from copper pots behind her, market lights glowing soft in early morning darkness. Warm kitchen glow on her face. Photorealistic, character portrait, Cyberpunk 2226 aesthetic, street-level vendor dignity, professional photography, shallow depth of field, 50mm lens quality --ar 2:3 --v 6"
 }

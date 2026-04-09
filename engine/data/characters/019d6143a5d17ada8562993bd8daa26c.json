@@ -254,5 +254,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and linear, almost ascetic — the body of someone whose nervous system consumes calories faster than his mouth remembers to eat. Slight forward shoulder curve from hours hunched over calibration interfaces.",
+    "hair_color": "Black",
+    "hair_style": "Close-cropped, precise fade maintained every three weeks at a Tier-3 barber on Milwaukee Ave",
+    "hair_length": "Short",
+    "eye_color": "Gradient mood-responsive: natural deep brown base cycling to amber-gold (calm), green (focused/engaged), or warm orange (stressed). Heterochromic effect increases under blue-spectrum light.",
+    "skin_tone": "Warm medium brown with subtle undertone variation across heritage",
+    "complexion": "Clean-shaven, minimal scarring except faint neural port scars at left temple (well-concealed unless he pulls his hair back). Slight caffeine-shadows under eyes. Skin carries faint bioluminescent quality in dim light — barely perceptible blue-green glow in forearms and along jawline from experimental geneware.",
+    "distinguishing_marks": [
+      "Linear scar running 2cm behind left ear, surgical-clean, where first neural interface array was installed at age 22.",
+      "Faint bioluminescence visible along both forearms in low-light conditions — no defined pattern, more like constellations of subcutaneous glow distributed along vein pathways.",
+      "Thin horizontal mark on inside of right wrist where he tested a prototype haptic feedback sensor on himself (subsequently removed)."
+    ],
+    "visible_augmentations": "Gradient iris mod is immediately visible upon eye contact — distinctly artificial color-shift, though calibrated to look biological rather than chrome. Bioluminescent undertone in forearms only visible in dim light or during evening sessions. Neural port scars at temple are subtle unless actively pointed out. No external chrome or obvious prosthetics.",
+    "posture_movement": "Moves with deliberate slowness, as if perpetually conscious of not startling people in his chair. Sits forward slightly when listening, hands open and visible. Minimal fidgeting. Speaks in even, measured tone. Walks with careful, grounded steps — no wasted motion.",
+    "clothing_style": "Tier-3 functional: soft linen and cotton blend tunics in warm neutrals (cream, sage, warm gray) layered over fitted undershirts. Loose-fitting canvas trousers in charcoal or navy. Worn leather ankle boots resoled three times. A single lab coat in natural cotton (not sterile white — warm off-white) hangs in his office. Minimal jewelry except a simple matte-black titanium bracelet worn over the bioluminescent forearm scar. Aesthetically communicates: 'I am not trying to impress you, I am trying to help you feel safe.'"
+  },
+  "image_prompt": "Portrait of a 34-year-old man with warm medium-brown skin and close-cropped black hair, standing in a softly lit underground clinic space. His eyes are the striking focal point — gradient mood-responsive amber-to-green irises that seem to shift in the warm tungsten lighting. Lean, careful posture, wearing a soft cream linen tunic over fitted undershirt. Faint bioluminescent glow visible along his forearms in the warm-lit environment. Background features small potted moss installations on shelves and soft indirect lighting casting amber shadows. Cyberpunk neurological office aesthetic with emphasis on warmth and safety rather than chrome or aggression. Shallow depth of field, shot at 85mm equivalent, warm color grading with subtle teal accent on iris gradients. Professional clinical but deeply human. --ar 2:3 --v 6"
 }

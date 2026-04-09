@@ -235,5 +235,25 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 183,
+    "weight_kg": 71,
+    "build": "Broad-shouldered but lean, still filling into his frame—athletic potential visible but not yet fully realized. Long-limbed with the slightly ungainly proportion of someone who grew too fast.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Grown out in thick sections, bound with plain elastic bands; minimal styling, practical",
+    "hair_length": "Medium (shoulder-length sections)",
+    "eye_color": "Deep brown, natural",
+    "skin_tone": "Warm brown with golden undertones, reflecting mixed heritage",
+    "complexion": "Clear skin, minimal grooming beyond necessity. Deep-set eyes that read older than his years. Serious expression default. Hands are large and deliberate-looking, calloused from maintenance work.",
+    "distinguishing_marks": [
+      "Gray cat ears with black-tipped fur, surgically grafted at base of skull—geneware cosmetic modification. Mounted on a reinforced cartilage structure that allows independent rotation and emotional-reactive movement.",
+      "Small scar on left palm from a maintenance tool slip, approximately 3cm long, pale and well-healed"
+    ],
+    "visible_augmentations": "Gray and black-tipped cat ears mounted at cranial base. Ears twitch involuntarily in response to emotional stimuli (startlement, anxiety, interest). No other visible augmentations. Movement suggests either subcutaneous neural interface or natural proprioceptive training.",
+    "posture_movement": "Moves with careful deliberation, economical in gesture. Stands slightly hunched—not from shyness but from years of navigating utility spaces and maintenance corridors. Walks with purpose, rarely rushes. When startled, his entire body tenses before the cat ears twitch; he's learned to hide the reaction but the physical tells remain.",
+    "clothing_style": "Tier 4 working-class practical. Gray or dark blue maintenance coveralls from Grainfort Property Collective (corporate-issued, worn but clean). White synthetic shirt underneath. Heavy-soled maintenance boots, scuffed. Canvas work belt with tool loops. When off-shift: plain black hoodie or oversized jacket that might hide the cat ears if he pulls the hood up. No visible branding beyond the Grainfort logo. Headphones frequently around his neck or in ears during transit. Clothes fit the body he's growing into, slightly loose in places."
+  },
+  "image_prompt": "A 21-year-old male of Scandinavian-West African descent, lean and broad-shouldered with warm brown skin and deep-set serious eyes. Medium-length dark brown hair in natural sections. Gray cat ears with black tips grafted at the base of his skull, slightly twitched in an expression of guarded awareness. Wearing gray Grainfort Property Collective maintenance coveralls over a white shirt, heavy work boots. Large, careful hands visible. Standing in a mid-rise residential tower utility corridor with fluorescent overhead lighting and exposed HVAC pipes. Composed, watchful expression. Early morning shift light, cool color temperature. Cinematic cyberpunk realism, character portrait. --ar 2:3 --v 6"
 }

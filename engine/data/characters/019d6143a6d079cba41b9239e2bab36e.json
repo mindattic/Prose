@@ -177,5 +177,26 @@
     "Static",
     "Bashir Quansah-Mehrotra"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Germanic (Amara / Volkaerts)",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, almost ascetic — long-limbed with minimal subcutaneous fat, the physique of someone who moves deliberately but eats sparely. Shoulders slightly hunched from years of interface work.",
+    "hair_color": "Natural black with circuit-board green dye on single crown lock",
+    "hair_style": "Head shaved clean except for one vertical lock at the crown, which he keeps tied back with a simple wire or cord during shrine duties",
+    "hair_length": "Shaved (with single medium-length lock)",
+    "eye_color": "Dark brown, alert and slightly unfocused — the gaze of someone calibrating between inner and outer worlds",
+    "skin_tone": "Medium-warm brown with golden undertones",
+    "complexion": "Gaunt and serene, with high cheekbones and a narrow jaw. Skin is clear but shows the pallor of someone who works indoors under data-station ambient light. Expression perpetually liminal — mouth relaxed but not quite at rest, eyebrows slightly elevated as if mid-thought.",
+    "distinguishing_marks": [
+      "Bioluminescent subdermal traceries covering both forearms in intricate branching patterns, glowing blue-white and pulsing faintly in sync with his resting heartbeat — visible when wearing short sleeves or rolled cuffs",
+      "Matching bioluminescent traceries along the left side of his neck, extending from jaw to clavicle, same blue-white pulse pattern",
+      "Small circular scar on his right temple, barely visible, possibly from old interface jack removal"
+    ],
+    "visible_augmentations": "Bioluminescent subdermal network (arms and neck, blue-white, heartbeat-synced). The glow is subtle in daylight but visibly eerie in low light or shrine spaces. Neural index implant is subcutaneous and invisible. No external chrome or visible jacks.",
+    "posture_movement": "Moves with deliberate, economical grace — no wasted motion, as if each gesture is a data packet being transmitted. Stands slightly forward-leaning, as if listening to something just beyond normal hearing. Hands often positioned as if about to interface with a surface. When still, has an eerie calm — the stillness of active meditation rather than passive rest.",
+    "clothing_style": "Tier 3 aesthetic with monastic overlay. Wears the Reborn Tessellation's gray wool tabard (unadorned except for a small tessellating-line emblem on the chest) over a salvaged but high-quality thermal jacket (charcoal with faint reflective piping) and dark civilian clothes beneath — worn black cargo pants, simple gray undershirt. The jacket is notably expensive relative to the rest of his wardrobe, suggesting a gift he's chosen not to refuse. No visible logos. Keeps his shrine keys on a carabiner at his hip. Footwear is pragmatic: scuffed black boots suitable for Hamtramck's uneven infrastructure."
+  },
+  "image_prompt": "Cyberpunk portrait of a 34-year-old man with a lean, angular build and shaved head except for a single circuit-board green lock tied at the crown. Medium-warm brown skin with high cheekbones and an expression frozen between thought and serenity. Bioluminescent blue-white subdermal traceries pulse faintly across both forearms and left neck in intricate branching patterns, synced to heartbeat rhythm. He wears a gray wool monastic tabard over a salvaged black thermal jacket with reflective piping, dark cargo pants, and worn boots. Setting is the interior of a converted municipal data substation shrine in Hamtramck — soft ambient tech-glow, servers humming in background, subtle blue tracery light reflected in data screens. Moody, introspective cyberpunk aesthetic with spiritual undertones. Cinematic lighting, desaturated color palette with vibrant blue bioluminescence as accent. --ar 2:3 --v 6"
 }

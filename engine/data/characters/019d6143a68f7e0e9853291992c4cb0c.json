@@ -180,5 +180,27 @@
     "Electrochemical Dissolution Sprayer EDS-2 'Lacquer'",
     "Silver"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Mongolian / West African / Northern European (derived from Batkhuyag-Silliman hyphenation)",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Large-framed, broad-shouldered, descended into soft middle age — substantial mass shifted from muscle to distributed weight, the physique of a man who was once strong and is now substantial. Still moves with deliberate leverage rather than speed.",
+    "hair_color": "Silver-gray",
+    "hair_style": "Worn long, gathered loosely at the nape with frayed cord, somewhat matted from constant outdoor exposure",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, slightly clouded with age cataracts",
+    "skin_tone": "Deep brown with reddish undertones, weathered to mahogany by decades of outdoor work in the industrial shelf",
+    "complexion": "Heavily lined face, particularly around the eyes and mouth — the lines of someone who squints in harsh light and speaks quietly. Beard is full, silver, and somewhat unkempt but intentionally so. Skin is dry but well-maintained, bearing the texture of someone who uses minimal water but careful oils. Deep creases on the forehead and between the brows.",
+    "distinguishing_marks": [
+      "Fine white scar running from the left temple to the left jawline, barely visible beneath the beard",
+      "Extensive burn scarring on the inner right forearm in a curved pattern consistent with steam exposure",
+      "Callused palms despite the prosthetic hand, the working hands of a lifelong trader",
+      "Network of small scars across both palms and knuckles — occupational hazards from decades of manual work"
+    ],
+    "visible_augmentations": "Left hand is a utilitarian industrial prosthetic replacement, unpainted steel and chrome articulation, each finger individually lacquered a different color (red, blue, yellow, green, orange) in cheap hardware-store enamel that has been reapplied many times. The joint work is visible and unpolished. Non-networked, mechanical operation only.",
+    "posture_movement": "Moves with deliberate, economical steps — the gait of someone who has walked thousands of miles on industrial ground. Favors his right side slightly when carrying weight. Often stands with weight shifted to one leg, a patient stance suggesting he is accustomed to waiting and listening. Gestures are slow and precise, particularly with his right hand; the prosthetic left hand he uses for heavy work or support, rarely for fine manipulation.",
+    "clothing_style": "Three overlapping coats of different industrial origins — one canvas work coat from a defunct factory (circa 2190s markings visible), one heavy wool toggle coat with mismatched buttons, one quilted insulation liner — all stitched together with visible repair work into a single layered garment that reaches to mid-calf. Beneath, simple gray work shirt and heavy denim pants patched at both knees. Feet in worn industrial boots with taped seams. The overall effect is Tier 4-5: functional, heavily repaired, deliberately maintained rather than replaced. No logos or corporate markers. Carries a canvas satchel with internal pockets for trading goods."
+  },
+  "image_prompt": "Portrait of a weathered 67-year-old man with deep brown skin and a full silver beard, standing in industrial setting, Tier 5 cyberpunk, heavy work clothes stitched together from multiple coats, left hand is visible industrial prosthetic with each finger painted different bright color in chipped enamel, calm contemplative expression, skin mapped with fine wrinkles and old burn scars, background shows factory outflow points and informal market stalls in Waukegan Industrial Shelf, overhead sodium lighting casting warm orange glow, atmospheric haze of machine oil and exhaust, shot in documentary realism style, gritty texture, weathered and well-lived appearance, --ar 2:3 --v 6"
 }

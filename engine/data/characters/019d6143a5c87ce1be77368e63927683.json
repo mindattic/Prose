@@ -244,5 +244,25 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Czech / Nigerian (Igbo)",
+    "height_cm": 188,
+    "weight_kg": 98,
+    "build": "Large-framed, broad-shouldered, gone soft at the belly and flanks after fifty — the physique of someone whose strength was built in his thirties and has slowly traded muscle for weight. Forearms remain thick and corded, built from three decades of wrenching.",
+    "hair_color": "Steel-grey",
+    "hair_style": "Clipped short, no-nonsense cut. Receding slightly at the temples.",
+    "hair_length": "Short",
+    "eye_color": "Right eye: dark brown, natural. Left eye: brown optic, marginally lighter shade, slightly mismatched — a secondhand unit bought from a parts dealer circa 2216.",
+    "skin_tone": "Deep brown, even tone reflecting his mother's Nigerian heritage, weathered by decades of shop work under industrial lighting.",
+    "complexion": "Broad, weathered face. Deep-set eyes. Strong jaw. Permanent creases around the mouth from squinting. Hands permanently stained black at knuckle creases and nail beds — a discoloration that soap no longer fully removes after thirty years of engine work.",
+    "distinguishing_marks": [
+      "Retractable reinforced thumb claw, right hand, salvage-built from scrap parts in 2181 — chrome-edged, used so often he forgets it's augmented. Retracts flush when not in use.",
+      "Burn scar along the back of his left forearm, pale and smooth, approximately 8cm long — from a coolant leak in 2189 that he still doesn't talk about."
+    ],
+    "visible_augmentations": "Retractable reinforced thumb claw on right hand (visible when extended, otherwise flush with palm). Left eye optic: visible only in certain light as a slight mismatch in iris hue and corneal refraction. Subdermal vibration sensor in both palms is not visible but sometimes causes him to press his hands flat against engine blocks in diagnostic poses that look ritualistic.",
+    "posture_movement": "Slouched, economy of motion. Walks with weight on the balls of his feet despite his size — an old mechanic's habit. Hands are always busy or at rest, rarely in between. Rarely makes eye contact, but when he does it's direct and unflinching. When concentrating, he squints with his right eye and tilts his head slightly left, as if his augmented left eye feeds data that requires physical adjustment to interpret.",
+    "clothing_style": "Tier 3-4 working class, practical and worn. Heavy grey Kevlar-weave work coveralls with the sleeves rolled to the elbow, revealing forearm tattoos and burn scars. Canvas work boots, resoled twice. A faded teal company shirt from a defunct vehicle manufacturer underneath, visible at the collar. On cold days, a black synthetic-leather jacket that's cracked at the elbows. He wears a brass ring on his left index finger — his father's, from Brno — and a leather cord around his neck with a small chrono-chip for clocking jobs, though he never actually uses it. No jewelry beyond these."
+  },
+  "image_prompt": "A weathered 52-year-old Czech-Nigerian male mechanic, large-framed with greying hair clipped short, standing in the dim neon glow of a ground-floor garage beneath a residential overhang in a cyberpunk Great Lakes city. Deep brown skin, broad face, forearms thick and stained black from decades of work. Right hand features a retractable salvage-built chrome thumb claw, left eye a slightly mismatched brown optic. Wearing heavy grey Kevlar work coveralls rolled at the sleeves, faded teal company shirt underneath, black cracked synthetic-leather jacket. He stands with weight on the balls of his feet, one hand pressed flat against an engine block in a diagnostic gesture. Behind him: a gutted engine block shrine filled with machine oil and spare bolts, industrial diagnostic terminal, fluorescent and neon workshop lighting casting hard shadows. Grease-stained walls. Geartown street-level aesthetic: utilitarian, worn, lived-in. Serious expression, contemplative, tired. Cinematic cyberpunk realism, character portrait, moody workshop lighting, shallow depth of field --ar 2:3 --v 6"
 }

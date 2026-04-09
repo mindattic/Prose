@@ -243,5 +243,26 @@
     "Copper",
     "The Pure Hand"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Scandinavian / North African (Toumani suggests Mali/Senegal; Haraldsson suggests Norse; mixed diaspora lineage)",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Lean and angular, almost ascetic—the build of someone whose body runs on caffeine and focus rather than regular meals. Long-limbed with prominent clavicles and sharp cheekbones. Hands are disproportionately large and dexterous, fingers perpetually stained yellowed-brown from reagent exposure.",
+    "hair_color": "Natural dark brown with a faint rust undertone from years of chemical fume exposure",
+    "hair_style": "Cropped close to the scalp in tight coils, meticulously maintained—a deliberate choice that reads as both practical and defiant",
+    "hair_length": "Short",
+    "eye_color": "Dark brown base with geometric copper hexagon pattern overlaid across both irises (geneware modification, self-elected at age 19)",
+    "skin_tone": "Deep warm brown with slightly ashen undertones from indoor synthesis work and minimal sun exposure",
+    "complexion": "Precise, austere facial structure. Skin shows minor chemical burns on the knuckles and one faint chemical splash scar along the left temple (partially hidden by hairline). No other blemishes—grooming is careful and deliberate. Expression rests neutral, eyes rarely unfocused.",
+    "distinguishing_marks": [
+      "Faint yellowed staining on the tips of all ten fingers from chronic reagent handling, darkest on the index and middle fingers",
+      "Small chemical splash scar on left temple near the hairline, roughly 2cm, pale pink",
+      "Two thin parallel marks on inner left forearm (surgical scars from subdermal vitals monitor installation, barely visible unless looking close)"
+    ],
+    "visible_augmentations": "The geometric copper hexagon iris pattern is immediately striking and clearly non-natural—reads as intentional, personal modification. The subdermal temperature/vitals monitor is not visible under normal clothing, only detectable by touch or medical scanning.",
+    "posture_movement": "Moves with controlled precision, economical gestures. Sits hunched slightly forward when working, shoulders tensed. When mobile, walks with purpose but without hurry—someone accustomed to not drawing attention. Hands are rarely still; fidgets with small objects (reagent vials, a lighter, a pen) as a means of processing thought. Breathing shallow, vocal register naturally soft—a learned habit from operating in spaces where being overheard carries consequences.",
+    "clothing_style": "Tier 4 working-class, practical and worn. Default uniform: faded charcoal synthetic lab coat (repaired multiple times, sleeves rolled), black cargo pants with reinforced pockets, steel-toed work boots scuffed from The Narrows concrete. Surgical mask worn around the neck at all times, pulled up during synthesis work. A single piece of jewelry: a thin steel ring on the left ring finger (no romantic significance; a tool for opening vials). No branding, no status markers. Clothes are clean but well-used, patched visibly at the left knee and right hip seam."
+  },
+  "image_prompt": "Portrait of a 31-year-old nonbinary person, lean angular build, dark brown skin with West African and Scandinavian heritage visible in facial structure, tight coiled hair cropped very short, striking copper hexagon geometric patterned irises on deep brown eyes. Wearing faded charcoal synthetic lab coat with rolled sleeves, surgical mask draped around neck, steel-toed work boots. Yellow chemical staining visible on fingertips. Sparse background of a cluttered underground storage unit with dim overhead lighting, shelves of glass vials and reagent bottles slightly out of focus. Soft cyberpunk noir lighting, cool color grading with amber chemical glow from bottles. Precise, austere expression, hands visible and still. Hyperrealistic portrait photography, clinical and intimate, --ar 2:3 --v 6"
 }

@@ -13,7 +13,7 @@
   "age": 64,
   "status": "active",
   "location": "The Garret, with regular performances in Mexicantown Libre, near Western and Division",
-  "description": "Perpetuata is small, round, immaculately presented in clothes that are always slightly too formal for wherever she is, and possessed of a face that has made a career of rearranging itself. She is an exceptional physical comedian — her body tells jokes her mouth hasn't arrived at yet. Her hair is silver and elaborately maintained; she wears it in interlocking coiled arrangements that take two hours and the help of her building's ELF-connected vanity system each morning. Her skin is very dark and very soft, with deep smile lines and a habitual expression of delighted disbelief at whatever is currently happening.\n\nShe has performed in underground cabaret, satirical revue, street theater, and Mexicantown Libre's legendary open-air puppet festivals for forty years. Her specialty is political comedy with the teeth left in — she parodies corponation executives, enforcement apparatuses, and the absurdity of Meridian 88's social stratification with a precision that keeps her permanently unwelcome in corporate venues and permanently beloved on the street. She lives in a small apartment in the Garret that is entirely covered in playbills, props, and memorabilia, and she rents her largest room to a rotating series of young performers she mentors, charges very little, and refuses to call students.",
+  "description": "Perpetuata is small, round, immaculately presented in clothes that are always slightly too formal for wherever she is, and possessed of a face that has made a career of rearranging itself. She is an exceptional physical comedian — her body tells jokes her mouth hasn't arrived at yet. Her hair is silver and elaborately maintained; she wears it in interlocking coiled arrangements that take two hours and the help of her building's ELF-connected vanity system each morning. Her skin is very dark and very soft, with deep smile lines and a habitual expression of delighted disbelief at whatever is currently happening.\n\nShe has performed in underground cabaret, satirical revue, street theater, and Mexicantown Libre's legendary open-air puppet festivals for forty years. Her specialty is political comedy with the teeth left in — she parodies corponation executives, enforcement apparatuses, and the absurdity of GLMZ's social stratification with a precision that keeps her permanently unwelcome in corporate venues and permanently beloved on the street. She lives in a small apartment in the Garret that is entirely covered in playbills, props, and memorabilia, and she rents her largest room to a rotating series of young performers she mentors, charges very little, and refuses to call students.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -174,7 +174,7 @@
   ],
   "related_entities": [
     "Mexicantown Libre",
-    "Meridian 88",
+    "GLMZ",
     "The Garret",
     "Tessera Corponation",
     "Irontide Tidal Energy",
@@ -182,5 +182,26 @@
     "Silver",
     "Lazarus IDP-1 'Teeth'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Igbo) / Icelandic Norse",
+    "height_cm": 152,
+    "weight_kg": 68,
+    "build": "Compact and round-bellied, soft throughout — the body of someone who has spent decades moving expressively rather than athletically. Surprisingly strong in the core and shoulders from four decades of physical comedy.",
+    "hair_color": "Silver-grey, naturally transitioned",
+    "hair_style": "Elaborate upswept coils pinned in interlocking geometric patterns, always freshly arranged. Some coils wrapped with thin metallic thread or jeweled clips for performance.",
+    "hair_length": "Medium, pinned up",
+    "eye_color": "Color-shift cosmetic irises — typically warm brown with amber undertones, but deliberately shifts to deep crimson, violet, or gold depending on performance or mood",
+    "skin_tone": "Deep brown with cool undertones, luminous from meticulous skincare",
+    "complexion": "Extensively lined — particularly deep smile lines from the corners of her mouth to her cheekbones, forehead creases from decades of expressive eyebrow work. Skin texture is soft and well-maintained despite age. Expression baseline is one of delighted surprise.",
+    "distinguishing_marks": [
+      "Deep laugh lines radiating from the corners of her mouth, particularly pronounced on the left side.",
+      "A small, irregular white scar on her left temple from a street performance accident in 2198, barely visible unless light catches it.",
+      "Faint discoloration on both knees — slight asymmetrical darkening from decades of kneeling and falling during physical comedy."
+    ],
+    "visible_augmentations": "Cosmetic color-shift irises that transition visibly when she shifts mood or enters performance mode. Subtle subdermal shimmer visible at the corners of her eyes when irises change color. Barely-noticeable augmentation ports behind her earlobes (voice modulator). Functional joint support visible as faint metallic threading along both knee joints, apparent only when she wears clothing that exposes them — otherwise covered.",
+    "posture_movement": "Deceptively animated despite age and arthritic support. Moves with deliberate inefficiency — joints bend wrong, weight shifts unexpectedly, hands arrive late to gestures — all carefully controlled choreography that reads as natural awkwardness. Standing still is difficult for her; she adjusts, fidgets, repositions constantly. When genuinely at rest, visible pain tolerance in slight winces.",
+    "clothing_style": "Perpetually overdressed for context — vintage formal wear repurposed and tailored, always impeccable. Favors structured blazers (often jewel-toned or patterned), high-waisted trousers or skirts, vintage silk scarves. Jewelry is chunky and theatrical — large rings, multiple bracelets, statement earrings. Shoes are always polished and slightly too formal. Tier 2-3 quality with strong personal aesthetic — not corpo slick, but carefully maintained. Performance wear is even more elaborate — she owns dozens of patterned jackets and vests acquired from decades of theater."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 64-year-old Black woman with silver hair in intricate pinned coils, deeply lined smile-face, wearing an oversized jewel-toned vintage blazer and silk scarf, striking an exaggerated comedic pose with one hand raised expressively. Her eyes shift between warm brown and deep crimson color-shift irises visible with faint subdermal glow at the corners. Small metallic threading visible along both knees. Dark, luminous skin with pronounced laugh lines. Standing in a cluttered Tier 3 apartment surrounded by theatrical playbills and props, warm amber and purple theatrical lighting, slightly desaturated cyberpunk color grading, analog theater aesthetic meets chrome details, character-focused, high detail on facial expression and hand gesture, 64mm lens, shallow depth of field --ar 2:3 --v 6"
 }

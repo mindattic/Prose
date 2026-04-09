@@ -246,5 +246,27 @@
     "Aslan Vasquez-Chatterjee",
     "Stratum"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Nigerian) / Northern European (German)",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and powerfully built through years of crawling through tight transit corridors; carries himself with the compact efficiency of someone who has learned to move through spaces smaller than his frame",
+    "hair_color": "Dark brown with premature greying at temples",
+    "hair_style": "Close-cropped, pragmatic cut maintained with clippers rather than professional grooming",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, with faint neural interface scarring at outer edge of left eye from retinal overlay implant",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Weathered beyond his 34 years; skin has the particular pallor of someone who avoids direct sunlight, with fine lines around the eyes from constant low-light work and occasional squinting through glitches",
+    "distinguishing_marks": [
+      "Faint branching chemical burn scars across left forearm in coolant runoff pattern, discoloration lighter than surrounding skin",
+      "Hand-stitched numerical markings in faded ink across the reinforced pocket seams of his work clothes — personal mapping code only he understands",
+      "Subdermal ridge barely visible behind right ear where bone-anchored earpiece antenna sits",
+      "Calloused palms and fingertips worn smooth from years of map-making and haptic compass calibration"
+    ],
+    "visible_augmentations": "Bone-anchored earpiece antenna visible as a subtle ridge and slight discoloration behind right ear; occasional faint glow from low-light retinal overlay during darkness or when system cycles. Left wrist shows no visible marks from haptic compass implant but skin texture slightly different in circular pattern. Neural interface scarring barely visible at outer corner of left eye to anyone looking closely.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion, shoulders slightly forward from habitual navigation through confined spaces. Walks with a particular rhythm, feet testing ground before committing weight, a consequence of blind navigation in dark tunnels. Often touches his left wrist without thinking, a habitual check for directional feedback. Favors his right side slightly when standing still, distributing weight asymmetrically.",
+    "clothing_style": "Layered work clothes in charcoal and slate grey with all corporate tags and insignia removed; utilitarian pants with reinforced pocket seams hand-stitched with numbered code markers; undershirts that can be shed quickly in high-temperature tunnels; a long-worn canvas jacket with custom-modified internal pockets that don't clink or rattle. Everything is stained with tunnel residue but meticulously organized. No jewelry except a single tungsten ring worn on left index finger — functional, not decorative. Footwear is heavy-soled boots with custom inserts for balance in flooded corridors. Tier 4 practical, deliberately unmarked."
+  },
+  "image_prompt": "Portrait of a 34-year-old Black-German man, broad shoulders, close-cropped dark hair greying at temples, deep brown skin with faint branching chemical burn scars on left forearm, weathered face from years underground, wearing layered utilitarian work clothes in grey and charcoal with hand-stitched numbered pocket markers, faint neural interface scarring at left eye corner, subtle bone-anchored earpiece antenna visible behind right ear, direct gaze suggesting quiet competence, moody underground cyberpunk aesthetic, dim cool lighting from bioluminescent tunnel fungi, slight glow from retinal overlay in shadows, grainy photorealistic style, 2226 GLMZ sub-basement setting, --ar 2:3 --v 6"
 }

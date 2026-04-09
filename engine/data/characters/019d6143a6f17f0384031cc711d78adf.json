@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Tenzin Nakamura-Bello is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 41, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Tenzin Nakamura-Bello is one of the ones who actually does it.",
+  "description": "Tenzin Nakamura-Bello is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 41, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Tenzin Nakamura-Bello is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.25,
@@ -155,7 +155,7 @@
       "loyalty_break": 7
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "technical expertise with augmentation systems"
     ],
     "weaknesses": [
@@ -275,10 +275,32 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "East Asian (Japanese) / West African (Yoruba)",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "build": "Athletic and lean with defined musculature — dancer's precision combined with fighter's density. No excess weight; every kilogram serves function. Shoulders broad and squared from years of extraction work.",
+    "hair_color": "Black with premature silver threading at temples",
+    "hair_style": "Pulled back in a tight, functional braid; practical for work, never loose",
+    "hair_length": "Long (below shoulder blades)",
+    "eye_color": "Dark brown with subtle amber undertones",
+    "skin_tone": "Warm medium brown — blended heritage visible in undertones",
+    "complexion": "Sharp cheekbones, angular jawline softened only slightly by age. Minimal makeup; skin shows work-related wear but excellent condition. A faint network of surgical scars visible around temples and along jawline where chrome integration sites remain slightly raised.",
+    "distinguishing_marks": [
+      "Surgical scarring along both temples in a precise geometric pattern where neural interface ports were installed — visible chrome edges catch light",
+      "Linear scarring along the right jawline extending toward ear, roughly 8cm long, where air filtration system was integrated",
+      "Small burn scar on left forearm (5cm diameter), pale against skin — old enough to have faded to white",
+      "Tattoo along inner left wrist: minimalist kanji (patience/perseverance), done in matte black ink"
+    ],
+    "visible_augmentations": "Chrome-framed neural interface ports at both temples with visible brushed titanium flanges; surgical scarring creates a deliberate, unflinching aesthetic. Internal air filtration system vents subtly visible at the base of her neck where synthetic lung integration meets biological tissue — a thin line of aerospace-grade composite material visible when she moves her head. No attempt to conceal these; they're worn like credentials.",
+    "posture_movement": "Economical and precise — never wasted motion. Stands with weight distributed for immediate movement in any direction. When moving through space, she's fluid but controlled, the way someone moves when they've trained to clear rooms and extract targets. Rarely still; fingers often drum patterns on surfaces or flex unconsciously. Her breathing is slightly audible at rest — a subtle mechanical whisper beneath natural respiration.",
+    "clothing_style": "Functional Tier-2 hybrid aesthetic — form-fitting synthetic fiber tactical pants in matte grey-black with reinforced seams and utility pockets; lightweight responsive-fabric compression shirt under a fitted, cropped jacket in charcoal with subtle reflective threading. High-grade boots (Aegis-brand, military-spec) with memory-foam soles for silent movement. Minimal jewelry except a worn stainless steel bracelet (likely sentimental from her mentor). When undercover in civilian life, she shifts to unmarked streetwear that still reads as 'prepared' — dark colors, functional silhouettes, nothing that draws attention but nothing that advertises vulnerability."
+  },
+  "image_prompt": "A 41-year-old mixed-heritage woman (East Asian and West African descent) with athletic dancer's build, standing in a high-rise apartment overlooking a neon-lit cyberpunk cityscape. Sharp cheekbones, dark brown eyes, black hair with silver threading pulled in a tight functional braid. Visible chrome neural interface ports at both temples with geometric surgical scarring. Subtle venting from synthetic lung integration visible at base of neck. Wearing form-fitting tactical grey-black synthetic pants and a fitted responsive-fabric compression shirt under a cropped charcoal jacket with reflective threading. Military-spec boots. Intense, composed expression — the bearing of someone who extracts people for a living. Moody dramatic lighting with cool blue and amber neon glow reflecting off her skin and chrome. High-contrast cyberpunk noir aesthetic. Cinematic. --ar 2:3 --v 6"
 }

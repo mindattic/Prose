@@ -236,5 +236,25 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Déjà Vu"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "French-Polynesian / Bantu African",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with surgeon's hands — long fingers, prominent knuckles, forearms that suggest fine motor precision rather than strength. Slight forward shoulder posture from hours bent over neural calibration rigs.",
+    "hair_color": "Indigo (mood-reactive geneware, cycles through deeper purples when stressed or focused, lighter violet at rest)",
+    "hair_style": "Close-cropped, precisely maintained, revealing the clean geometry of his skull",
+    "hair_length": "Short",
+    "eye_color": "Patterned irises: concentric rings of amber (outer) and grey (inner), with hypersharp definition from precision optical calibration implants",
+    "skin_tone": "Warm medium-brown with Polynesian undertones",
+    "complexion": "Even complexion, minimal facial hair (clean-shaven daily), fine-lined around the eyes from sustained focus work. Skin shows faint fatigue creases from irregular sleep tied to on-call calibration crises. Fastidious grooming — no visible blemishes or neglect.",
+    "distinguishing_marks": [
+      "Faint scarring at base of skull, partially concealed by hair, marking the neural interface socket — occupational standard, roughly 2cm surgical line, pinkish and well-healed",
+      "Pale moon-shaped mark on the inner left wrist where he removes his calibration readout rig each shift — consistent contact pressure scar"
+    ],
+    "visible_augmentations": "Patterned irises are immediately noticeable under any lighting — the concentric rings are too regular to be natural. The neural socket is only visible if he shaves his hair or turns to show the nape of his neck. The mood-reactive indigo hair is distinctive but he presents it as intentional grooming rather than augmentation.",
+    "posture_movement": "Controlled and economical. Moves with precision, each gesture calibrated — no wasted motion. Tends to tilt his head slightly when listening, eyes focusing with optical precision. Hands occasionally mime adjustment movements when thinking through calibration problems. Projects calm competence but with an undercurrent of tension in his jaw when challenged.",
+    "clothing_style": "Aurochs Medical whites: pressed lab coat with fastidious precision, logo always centered. Underneath, simple charcoal or grey undershirt. Tactical pockets on the coat carry calibration styluses, diagnostic cards, and a small leather journal. ID badge clipped at exact position. Shoes are polished black medical-grade non-slip. Tier 2 quality — expensive enough to reflect his professional tier, austere enough to avoid ostentation. A discrete Helix Neural Division pendant (brushed titanium, minimal) worn under the coat on a thin chain."
+  },
+  "image_prompt": "Portrait of a lean, 34-year-old man with warm brown skin, close-cropped indigo mood-reactive hair, and distinctive patterned irises with concentric rings of amber and grey. Wearing pristine white medical lab coat with Aurochs Medical Complex insignia, fastidiously neat, ID badge perfectly aligned. Faint surgical scarring visible at base of skull. Calm professional demeanor with subtle tension in jaw. Cyberpunk medical technician aesthetic, clinical lighting, sharp focus on his unusual eyes, cool blue-grey undertones in the background suggesting a high-tech medical facility. Midjourney realistic portrait style, professional headshot framing. --ar 2:3 --v 6"
 }

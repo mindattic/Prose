@@ -207,5 +207,26 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Glass"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Arab / Portuguese / Mongolian",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid without softness; decades of archival work have kept her posture rigidly upright and her frame compact rather than heavy. Strong forearms from years of handling physical media.",
+    "hair_color": "Silver-white with darker roots at the scalp",
+    "hair_style": "Dense, intricately braided coil pulled back from her face; architecture-grade precision",
+    "hair_length": "Medium (coiled structure gives appearance of short)",
+    "eye_color": "Deep brown; left eye shows faint amber glow at periphery during low-light conditions (optical implant signature)",
+    "skin_tone": "Deep brown, even complexion with warm undertones",
+    "complexion": "Lined around the eyes and mouth from decades of focused close work; faint laugh lines suggest infrequent but genuine amusement. Skin shows meticulous care — no visible damage or neglect. Minimal makeup.",
+    "distinguishing_marks": [
+      "Faint bioluminescent traceries run along her jawline in a delicate branching pattern, pale blue-green, barely visible in daylight but faintly glowing in darkness — a cosmetic mod from her thirties now faded with age.",
+      "Similar bioluminescent lines trace her collarbones and disappear beneath her clothing.",
+      "Thin pale scar on her left inner forearm (approximately 8cm long, horizontal) marking the subdermal data-cache implant site, barely noticeable under normal light."
+    ],
+    "visible_augmentations": "Left eye shows subtle amber luminescence in dim environments; antique glass-lensed reading glasses perpetually resting on forehead (worn over the optical implant rather than in place of it). No chrome or obvious cybernetics. Augmentations are understated and archival-grade rather than flashy.",
+    "posture_movement": "Deliberate and economical. Moves with the careful precision of someone navigating fragile archival spaces; avoids sudden gestures. Walks at moderate pace, head slightly forward in attentive posture. When sitting at work, she becomes nearly motionless — all activity concentrates in her hands and eyes.",
+    "clothing_style": "Tier 2/3 academic-practical: high-quality but worn linen and wool layers, earth tones (slate, rust, cream, charcoal). Favors structured blazers and reinforced work trousers with adequate pockets. Worn leather satchel (pre-Collapse era, genuine leather, carefully maintained) carries tablets and handwritten notes. Shoes are functional, broken-in, excellent condition. Minimal jewelry except for a thin silver band on her right ring finger (no wedding ring visible). No visible corporate branding; clothes pre-date fast fashion cycles."
+  },
+  "image_prompt": "A 54-year-old Arab-Portuguese-Mongolian woman with silver-white densely braided hair and deep brown skin, standing in a data vault surrounded by server towers and archival LED lights, wearing a structured charcoal linen blazer and reading glasses on her forehead; faint bioluminescent blue-green traceries barely visible along her jawline and collarbones; warm, focused expression; optical implant glowing faintly amber in left eye in dim server room lighting; holding a damaged storage device in careful hands; shot in cool fluorescent-and-blue ambient light with deep shadows, professional archive photography style, --ar 2:3 --v 6"
 }

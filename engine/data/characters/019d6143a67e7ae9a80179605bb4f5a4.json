@@ -181,5 +181,26 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Portuguese / Balkan (inferred from Olabisi-Ferreira-Dzambazović surname construction)",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Large-framed, formerly athletic muscle now softened by middle age and deliberate disinterest in maintenance. Broad shoulders and thick forearms retain definition; midsection carries settled weight without shame. Hands are disproportionately large and elegant despite his size.",
+    "hair_color": "Black with silver threading",
+    "hair_style": "Shaved close on sides and back; single strip of silver-threaded locs pulled back from crown into loose bundle",
+    "hair_length": "Short (sides/back), Medium (locs strip)",
+    "eye_color": "Deep brown base with visible Helix Biosystems cosmetic augmentation: concentric rings of 24K gold and charcoal grey, perfectly symmetrical, catching light distinctly",
+    "skin_tone": "Deep umber, warm undertone",
+    "complexion": "Weathered with age and indoor-living pallor; creases around eyes from years of smiling and squinting at mixing boards; full beard kept at 3-day shadow, salt-and-pepper threading. Skin condition is well-maintained but unfussy — no cosmetic treatments.",
+    "distinguishing_marks": [
+      "Thin scar across left knuckle, white and old, from a salvage accident in his thirties",
+      "Faint burn mark on inside of right forearm (2cm diameter, pale), origin unknown but present since his Tier 3 days",
+      "No visible tattoos; his augmented irises serve as his primary marking"
+    ],
+    "visible_augmentations": "Patterned irises with concentric gold and charcoal rings (Helix Biosystems, cosmetic only). Sub-dermal vibration sensors in palms are not visually apparent but create faint geometric scarring under skin on both hands if examined closely — he rarely hides them. Occasional faint blue undertone to his palms in low light when sensors are active.",
+    "posture_movement": "Stands with weight settled, shoulders relaxed. Moves with deliberate slowness despite his size — no wasted motion. Hands are constantly in motion: tapping, gesturing, feeling the air. His gait is a slow prowl through any space, as if he is always listening to frequencies others cannot hear. Makes direct eye contact, speaks with long pauses. When seated at a mixing board, his entire demeanor changes to focused intensity.",
+    "clothing_style": "Tier 3-4 fusion; clothes are worn well but not expensive. Typical outfit: oversized linen shirt (often unbuttoned to mid-chest), loose charcoal trousers, heavy canvas jacket with deep pockets for recording equipment. Footwear is always functional — reinforced sneakers or salvage-worker boots. No jewelry except a single silver ring on his right index finger (no visible maker's mark). His clothes smell faintly of incense and machine oil."
+  },
+  "image_prompt": "a 41-year-old west african-slavic man, tall and broad-shouldered with soft middle age, deep umber skin, shaved head with a single strip of silver-threaded locs pulled back, striking augmented eyes with concentric gold and charcoal rings, 3-day salt-and-pepper beard, enormous elegant hands covered in faint geometric scarring, wearing an oversized unbuttoned linen shirt and charcoal trousers, standing in a dim electronic music venue surrounded by salvaged metal sound sculptures, warm ambient lighting casting shadows across his face, cyberpunk genre, analog warmth with neon accents, professional portrait style, shallow depth of field, shot in underground music club atmosphere, intricate iris detail visible, --ar 2:3 --v 6"
 }

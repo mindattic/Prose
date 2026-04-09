@@ -189,5 +189,25 @@
     "Silver",
     "Static"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and substantial, settled into a sturdy frame by age and deliberate stillness. Not heavy, but dense — the build of someone who has learned to anchor themselves. Slight forward curve to her spine from decades of bending over the dying.",
+    "hair_color": "Silver-white",
+    "hair_style": "Dozens of thin braids looped and pinned into a loose crown, woven through with small capacitors and memory chips that create soft clicking sounds when she moves her head",
+    "hair_length": "Medium (braids fall to shoulder-blade length when unpinned)",
+    "eye_color": "Deep brown, unmodified",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Lined face that reads as calm and witnessing. Minimal grooming beyond practical necessity — no cosmetics. Skin carries the texture of age and exposure. Her expression defaults to a kind of patient openness, as though she is always listening for something just beneath audible range.",
+    "distinguishing_marks": [
+      "Deliberate scarification along her entire left arm — parallel lines of raised copper-bright scar tissue, pressed there by heated wire during a vigil forty years prior. She calls them her 'listening marks.' The scars run from wrist to shoulder and catch light distinctly.",
+      "Small calluses on her fingertips from forty years of handling old electronics and data crystals."
+    ],
+    "visible_augmentations": "None. She refuses all chrome on principle, claiming it 'crowds the signal.' The only visible tech integration is the capacitors and memory chips woven into her braids — these appear as small metallic objects caught in her hair, not implants.",
+    "posture_movement": "Moves slowly and with absolute certainty, as though each step has been decided before her foot leaves the ground. Her weight settles into her hips when she stands still. She tilts her head often — a listening gesture — and the chips in her braids click softly with the movement. Despite her age and slowness, there is nothing frail about her presence; she seems immovable, ballasted.",
+    "clothing_style": "Practical Tier 4 garments — faded linen tunics and heavy cotton pants, often layered. A long waxed linen coat for shrine work, pockets heavy with offerings and small devices. No corpo branding. Worn leather slippers for the basement shrine. Her clothes smell of incense, old electronics, and the particular must of a basement that has held secrets for decades. She wears a single piece of jewelry: a copper bracelet on her right wrist, unadorned."
+  },
+  "image_prompt": "Portrait of a 67-year-old West African-Scandinavian woman, deep brown skin, silver-white braids pinned into a crown with small capacitors and memory chips woven throughout, unmodified deep brown eyes, patient and witnessing expression. Deliberate scarification visible on her left arm — parallel raised copper-bright scar lines running from wrist to shoulder. Broad shoulders, substantial build, dressed in faded linen tunic and heavy cotton, long waxed coat, worn leather slippers. Standing in a basement shrine lit by soft amber candlelight and the gentle glow of old device screens, shelves of offerings visible behind her — cracked tablets, burnt-out AR chips, handwritten receipts. Her posture is slow and anchored. Cyberpunk, introspective, spiritual, aged, dignified. Shallow depth of field, warm practical lighting, documentary realism. --ar 2:3 --v 6"
 }

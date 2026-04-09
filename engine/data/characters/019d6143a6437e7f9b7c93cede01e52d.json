@@ -105,5 +105,26 @@
   "district": "Meridian Core",
   "related_entities": [
     "The Milwaukee Core"
-  ]
+  ],
+  "physical_description": {
+    "heritage": "East African / Japanese / Hispanic",
+    "height_cm": 172,
+    "weight_kg": 64,
+    "build": "Lean and efficient, minimal wasted mass. Corded muscle from years of fieldwork rather than gym aesthetics. Moves like someone who conserves energy.",
+    "hair_color": "Black with premature silver threading at temples",
+    "hair_style": "Undercut with textured top, kept short enough for quick maintenance",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, alert and assessing",
+    "skin_tone": "Medium warm brown with olive undertones",
+    "complexion": "Clean-shaven, angular features with high cheekbones. Minimal scarring on face — suggests careful work. Skin shows sun exposure but well-maintained. A small old burn scar visible on left jawline.",
+    "distinguishing_marks": [
+      "Burn scar (3cm) on left jawline, pale and smooth from old healing",
+      "Faint horizontal scar across right palm, approximately 5cm, consistent with a defensive wound",
+      "Small geometric tattoo (1cm) on inside left wrist — appears to be coordinates or a code in minimalist lines"
+    ],
+    "visible_augmentations": "None visible. Ghost fixers typically run subcutaneous or fully internalized augmentation suites.",
+    "posture_movement": "Relaxed but never truly at rest. Eyes track exits and ambient movement. Sits with spine straight, hands visible. Moves with deliberate economy — no wasted gestures, no nervous fidgeting. Gives impression of someone listening more than speaking.",
+    "clothing_style": "Tier 3-4 functional. Unmarked grey synthetic jacket (tech-weave, practical water resistance), plain dark compression shirt underneath. Charcoal cargo pants with reinforced seams and subtle tech pockets. Military-grade boots, worn but maintained. No logos, no affiliation markers. Everything is replaceable and forgettable. Single silver ring on right index finger — appears functional, possibly a discrete data interface or auth token."
+  },
+  "image_prompt": "cyberpunk character portrait, lean nonbinary figure with East African-Japanese-Hispanic heritage, short black hair with silver at temples, deep brown eyes, warm medium brown skin, angular features, small old scar on jawline, dressed in unmarked grey tech-weave jacket and dark compression shirt, minimal aesthetic, professional fixer appearance, sharp intelligent expression, cool blue-grey lighting with subtle rim light, moody and alert, high contrast, photorealistic with cyberpunk mood, professional character headshot, intricate detail on face, 3/4 perspective --ar 2:3 --v 6"
 }

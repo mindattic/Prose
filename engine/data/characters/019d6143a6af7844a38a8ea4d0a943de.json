@@ -182,5 +182,26 @@
     "Hazel Brink",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Germanic / Polish",
+    "height_cm": 173,
+    "weight_kg": 62,
+    "build": "Angular and lean, with the economical musculature of someone who moves deliberately and carries tension in her shoulders. No wasted motion, no excess.",
+    "hair_color": "Dark auburn red, natural with threads of grey beginning at the temples",
+    "hair_style": "Pinned back with the same three steel clips, always. Severe and functional.",
+    "hair_length": "Medium, to collar",
+    "eye_color": "Pale hazel, naturally — the color of old ice or weathered glass",
+    "skin_tone": "Pale, with the ashy undertone of someone who spends her days indoors under fluorescent light and her nights in Geartown's industrial-grade air",
+    "complexion": "Weathered but clean. Faint stress lines radiating from the corners of her eyes — the permanent creases of two decades of intense concentration. Thin-lipped. Her face moves minimally; most expression happens elsewhere.",
+    "distinguishing_marks": [
+      "Surgical scars on both hands — fingers and knuckles — from a lifetime of precision work and field surgery; pale and detailed",
+      "A long, thin burn scar running along her left forearm from a biocontainment incident in her thirties, faded to white",
+      "Dark auburn cat tail, prehensile, extending roughly 45cm from the base of her spine; well-groomed, muscular, capable of independent movement"
+    ],
+    "visible_augmentations": "The prehensile cat tail is immediately obvious — dark auburn, muscular, and moving with apparent volition independent of her body. It curls upward when she is pleased, wraps around her leg when concentrating. Subdermal temperature sensing in fingertips is not visible but becomes apparent when she touches an animal's flank and pauses, reading data. No chrome, no visible neural ports, no cosmetic implants.",
+    "posture_movement": "She stands and moves with economical precision — no gestures wasted, no fidgeting. Her spine is straight. When listening, she does not nod; instead her tail does. When examining an animal, her entire body goes very still, becoming an instrument of focus. She walks as though moving through water, deliberate and careful.",
+    "clothing_style": "Practical Tier 3 workwear. White or grey lab coat, always, worn over dark cargo pants with reinforced pockets and loops for instruments. Steel-toed boots — beat up, well-maintained, comfortable. A thin steel bracelet on her left wrist, dented from years of work. No jewelry otherwise. Her clothes are functional, often stained with something that is not quite blood, and she does not appear to notice. She dresses for the work, not for the world."
+  },
+  "image_prompt": "Reinhild Asante-Połczyński, 47-year-old veterinarian, angular and pale-skinned with dark auburn hair pinned back with steel clips, pale hazel eyes surrounded by stress creases, wearing a stained white lab coat over cargo pants and steel-toed boots. A dark auburn prehensile cat tail extends from her lower spine, muscular and independent. She stands with rigid posture in her clinic — a converted machine shed with drawing-covered walls and the smell of antiseptic and animals. Fluorescent overhead lighting casts hard shadows across her weathered face. Cyberpunk aesthetic, gritty industrial Geartown setting, intimate veterinary workspace, morning light through industrial windows, photorealism, character study, --ar 2:3 --v 6"
 }

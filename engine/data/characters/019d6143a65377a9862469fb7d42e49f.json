@@ -278,5 +278,27 @@
     "Ironveil Canopy",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Russian / West African",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Lean and angular with visible musculature — no excess mass, every movement efficient. Enhanced tendons create slightly pronounced definition in forearms and calves.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Pulled back tight, practical — no aesthetic consideration, pure function",
+    "hair_length": "Medium, secured in a low braid or knot",
+    "eye_color": "Deep brown with faint amber flecks — natural",
+    "skin_tone": "Medium brown with warm undertones, weathered by age and exposure",
+    "complexion": "Sharp cheekbones, angular jaw. Minimal grooming — no jewelry, no makeup. Skin carries subtle scarring consistent with a life of movement and minor injuries. Expression reads as closed, watchful.",
+    "distinguishing_marks": [
+      "Network of thin white scars across both palms and fingers — old tactical training or repeated grip stress",
+      "Thin vertical scar along left temple, partially hidden by hairline — blunt trauma, well-healed",
+      "Faint burn scarring on right shoulder blade, roughly circular, 4cm diameter — electrical contact or industrial accident",
+      "Silvery striations visible along both forearms where enhanced tendon geneware interfaces with skin — the chrome shows beneath the surface like mercury under glass"
+    ],
+    "visible_augmentations": "Chrome-shimmer visible along forearms where geneware interfaces with skin — enhanced tendons visible as subtle silvery striations running the length of the underarm. No attempt to conceal. Grip strength advertised through posture — hands rest with controlled tension. Movement suggests non-human endurance — zero wasted motion, economical transitions between states.",
+    "posture_movement": "Sits coiled, ready to move. Stands with weight distributed for rapid vertical or horizontal deployment. Eyes track exits and sight lines constantly — not paranoid, just professional. Movement is precise and efficient — no flourishes, no swagger. Handshake would be firm, testing.",
+    "clothing_style": "Tier 4 utilitarian — function over status. Matte black reinforced cargo pants with multiple pockets and hidden compartments. Dark thermal layer under a lightweight reactive jacket with hidden armor plating. Steel-toed boots, scuffed and practical. No logos, no bright colors. Worn gear that has been field-tested. A single piece of jewelry — a thin titanium band on left index finger, unmarked."
+  },
+  "image_prompt": "Portrait of a 40-year-old nonbinary person of mixed Russian and West African descent, lean and angular with sharp cheekbones and watchful deep brown eyes. Dark hair pulled back tightly. Visible silvery chrome striations running along both forearms where geneware tendons interface with skin — the metal shows like liquid mercury beneath the surface. Wearing a matte black reinforced tactical jacket over a dark thermal layer, practical and worn. Standing with coiled posture, ready to move, hands tense. Minimal jewelry — a single titanium band on left index finger. Sharp, precise, dangerous stillness. Cyberpunk noir style, cool lighting with blue and silver accents highlighting the chrome augmentations, gritty and lived-in aesthetic, professional killer energy, --ar 2:3 --v 6"
 }

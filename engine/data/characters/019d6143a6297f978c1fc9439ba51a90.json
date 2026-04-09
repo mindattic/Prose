@@ -39,7 +39,7 @@
       "So focused on preservation of the past that he sometimes misses urgent present-tense dangers",
       "Tendency to trust people who show genuine curiosity, which has been exploited"
     ],
-    "secret": "Hidden in a false-backed crate in the deepest part of the stall is a complete pre-Consolidation municipal archive — decades of city records, personal files, and classified infrastructure data from before the corponations restructured Meridian 88's records. He found it in a demolition salvage job fifteen years ago and has never told anyone it exists. He is not sure what to do with it."
+    "secret": "Hidden in a false-backed crate in the deepest part of the stall is a complete pre-Consolidation municipal archive — decades of city records, personal files, and classified infrastructure data from before the corponations restructured GLMZ's records. He found it in a demolition salvage job fifteen years ago and has never told anyone it exists. He is not sure what to do with it."
   },
   "speech_patterns": {
     "vocabulary": "Precise and slightly archaic, with occasional Malian French from the Dembélé line. Uses technical terms for objects most people have no name for.",
@@ -59,7 +59,7 @@
     "The municipal archive hidden in his stall contains records that a corponation would pay — or kill — to retrieve or destroy. He doesn't know that anyone knows it exists, but something in the last month suggests someone is looking.",
     "A teenager has been coming to his stall daily for weeks, clearly running from something, sleeping rough, and pretending to browse. He has been pretending not to notice and leaving food nearby. He needs someone to help figure out what the kid's situation actually is."
   ],
-  "narrative_function": "Treasure-map NPC. Has access to rare pre-Consolidation objects that might be mission-critical MacGuffins, old data, or historically significant items. Exceptional source of information about Meridian 88's history. Gives players reasons to dig through his stock — something is always in there.",
+  "narrative_function": "Treasure-map NPC. Has access to rare pre-Consolidation objects that might be mission-critical MacGuffins, old data, or historically significant items. Exceptional source of information about GLMZ's history. Gives players reasons to dig through his stock — something is always in there.",
   "augmentations": "Mechanical prosthetic arm (left, elbow-down, 30-year-old model, impeccably maintained). Reading enhancement monocle — not a true augment, a clip-on optical tool he has used for decades.",
   "daily_life": "Opens the stall late morning, spends several hours on acquisition runs through Ironvein's salvage channels, returns to sort and catalogue new items, and receives the steady trickle of regulars who come specifically to talk to him. Closes whenever he feels like it.",
   "affiliation": "Independent. Loose friendship network with other Shelf vendors. Known to the Oxidian Market Guild but not a member.",
@@ -241,5 +241,26 @@
     "Steel",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Hispanic (Cardenas) — likely Malian or Senegalese paternal line, Mexican or Central American maternal",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Compact and wiry, shoulders still squared from decades of physical labor. No excess weight; muscle has transitioned to lean efficiency. Moves with the economy of someone who has carried heavy things for a lifetime.",
+    "hair_color": "White with faint traces of gray-black at the nape",
+    "hair_style": "Cropped close to the scalp, well-maintained. Salt-and-pepper stubble on the jaw, kept to a consistent three-day length.",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, sharp and undiminished by age",
+    "skin_tone": "Deep brown, sun-darkened from decades in salvage yards and open-air markets. Papery texture developing at the temples and across the knuckles of his right hand.",
+    "complexion": "Lean-faced with prominent cheekbones. Deep laugh lines around the eyes. The magnificent white moustache is waxed daily with precision — it points slightly upward at the ends and is his single vanity. Skin still firm across the jawline; age shows primarily in the texture of his hands and the tiredness that occasionally settles behind his eyes.",
+    "distinguishing_marks": [
+      "Faint burn scar across the back of his right hand, shaped like a partial arc — legacy of a molten salvage incident circa 2195.",
+      "A small rectangular tattoo on his inner left forearm (the flesh one), executed in black ink with what appears to be a technical diagram or circuit pattern — possibly a memorial or a reminder, never explained.",
+      "Fine white line scar running from his left temple down to the cheekbone, barely visible but present in certain light — origin unknown, not discussed."
+    ],
+    "visible_augmentations": "Mechanical prosthetic left arm from the elbow down. Brushed steel construction with visible ball-joint articulation at the wrist and finger servos. Thirty years old and meticulous in maintenance — no rust, joints move with precision, minor wear marks visible on the palm contact surface. Reading enhancement monocle clipped to his left eye socket via a thin titanium arm that curves over the temple — a decades-old optical tool, not a true neural augment, made by a manufacturer that no longer exists.",
+    "posture_movement": "Moves with unhurried deliberation. Never rushes. Uses his right hand naturally; the prosthetic left arm is gestural and precise — he has mastered it completely. Tends to stand with shoulders slightly forward, as if perpetually about to reach for something on a shelf. When seated, he becomes statuary — entirely still, watching. His gaze is patient and evaluative.",
+    "clothing_style": "Tier 4 working-class practicality with personal ritual. Heavy canvas vest with dozens of pockets (each containing specific items organized by function), worn over a collared work shirt in muted colors (grays, dark blues, browns). The shirt is always buttoned; the vest is always layered on top regardless of ambient temperature — insulation and habit. Fingerless leather gloves on the right hand, worn thin at the knuckles. Canvas trousers, neutral color. Heavy boots, well-maintained but visibly aged. No jewelry except a faded wedding band on his right ring finger. His appearance suggests a man who dresses for function and ritual, not for impression."
+  },
+  "image_prompt": "A 64-year-old compact West African-Hispanic man standing in a cluttered salvage warehouse, deep brown weathered skin, close-cropped white hair, magnificent waxed white moustache curled at the edges. Left arm is a brushed steel mechanical prosthetic with visible articulation joints, impeccably maintained. Wearing layered canvas work vest with dozens of pockets over a collared gray work shirt, fingerless gloves on right hand. Reading monocle clipped to left eye. Standing surrounded by floor-to-ceiling stacks of pre-Consolidation electronics, cracked data-cores, salvaged machinery, and antique objects. Soft warm lighting filtering through warehouse skylights, dust motes visible in the air. His expression is patient and evaluative. Cyberpunk, gritty realism, documentary style photography, shallow depth of field focusing on his weathered face and prosthetic arm, warm color grading, soft shadows, detailed textures of worn metal and fabric --ar 2:3 --v 6"
 }

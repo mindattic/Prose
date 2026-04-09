@@ -280,5 +280,27 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Appiah, Kubi) / Japanese (Kobayashi) — mixed sub-Saharan and East Asian lineage",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Stocky and heavily muscled — shoulders broad and dense, upper body strength evident. No visible fat; the weight is compact, functional. Forearms thick-boned and corded with scar tissue from years of handling hot equipment and restraint work.",
+    "hair_color": "Natural black with silver streaking at the temples",
+    "hair_style": "Pulled back into a tight, practical braid; often wrapped in a dark cloth when working",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Deep brown, natural — no chrome optics",
+    "skin_tone": "Deep brown with warm undertones — a blend of West African melanin and Japanese heritage",
+    "complexion": "Weathered and angular — high cheekbones, broad jaw, a nose that has been broken and reset badly. Minimal cosmetic interest; skin bears the wear of chemical exposure and climate variance across districts. Small burn scars visible along her left temple from old augmentation work.",
+    "distinguishing_marks": [
+      "Pale surgical scar running vertically down the center of her chest, approximately 20cm long — marks the original synthetic lung installation",
+      "Thin, raised scars crossing both forearms in parallel lines — evidence of restraint experience or early augmentation rejection",
+      "Faint chemical burn discoloration on her right hand (knuckles and palm), lighter than her natural skin tone — occupational hazard",
+      "A crude tattoo on her left inner wrist: a smuggler's mark (vertical line with three horizontal crosses) — gang affiliation from early career"
+    ],
+    "visible_augmentations": "Synthetic lung visible as faint metallic sheen and geometric microcircuitry visible beneath the skin around her sternum and upper chest where the surgical scar runs. When she breathes deeply, a subtle mechanical whisper is audible. Chrome plating around her nasal passages when viewed closely — the chemical analyzer hardware creates a slight reflective distortion around her septum.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward, hands rarely still. Walks heel-first, a runner's gait. Often stands with weight on her back foot, body angled to keep her peripheral vision open. Her baseline expression is a slight frown; she smiles rarely and without warmth.",
+    "clothing_style": "Tier 3-4 utilitarian — functional, not fashionable. Favors reinforced cargo pants (gray or dark blue, Raven Manufacturing), layered tops that allow for concealment of gear, and a heavy jacket of synthetic leather with internal pockets and burn-resistant lining. Steel-toed boots, scuffed and well-maintained. No jewelry or decoration. Clothing is frequently stained with machine oil or chemical residue; she replaces items only when they become unsafe."
+  },
+  "image_prompt": "Cyberpunk character portrait of a stocky, muscular 39-year-old Black-Japanese woman with silver-streaked black hair pulled back tight, deep brown eyes, and a weathered angular face. Visible surgical scar down her sternum with subtle metallic sheen and chrome circuitry visible beneath the skin. Faint chemical burn marks on her hands. Wearing reinforced gray cargo pants, layered dark practical clothing, and a worn synthetic leather jacket. Standing with weight on back foot, shoulders forward, hands tense. Kessler Row background — industrial, arms dealers, augmentation clinics, neon signs reflecting off wet pavement. Hard cyberpunk realism, cool blue and orange accent lighting, gritty texture. --ar 2:3 --v 6"
 }

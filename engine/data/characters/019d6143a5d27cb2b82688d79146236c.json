@@ -191,5 +191,25 @@
     "Lazarus IDP-1 'Teeth'",
     "Slagworks Industrial"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Italian / Burkinabé",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and long-limbed with efficient, minimal musculature — the body of someone who moves through space conservatively, built for endurance rather than power",
+    "hair_color": "Natural dark brown",
+    "hair_style": "Cropped close on sides, soft and full on top, often covered by a heavily mended knit cap of indeterminate original color",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Warm medium brown",
+    "complexion": "Clear, well-maintained despite irregular sleep schedule; angular face with high cheekbones and a measured, composed expression — someone who has trained themselves to be unmemorable",
+    "distinguishing_marks": [
+      "Bioluminescent geneware stripes running along both collarbones, faint blue-green when activated, typically dimmed to near-invisibility during daylight and public hours",
+      "Small cluster of faded scars along left forearm (location and origin unremarkable — old enough to be bleached nearly white)"
+    ],
+    "visible_augmentations": "Bioluminescent collarbone stripes (cosmetic, kept dim and easily concealed by high necklines). No visible chrome or subdermal modifications.",
+    "posture_movement": "Moves with deliberate quietness and spatial awareness — fluid, economical gestures that minimize unnecessary motion. Stands with slight forward lean, weight distributed to the balls of their feet, ready to shift direction. Eyes habitually track exits, camera angles, and ambient light sources. Stillness is their default state.",
+    "clothing_style": "Tier 3-4 utilitarian: work-issued gray maintenance coveralls (Clearpath logo on chest, worn smooth from laundering), gray or black merino base layer underneath, scuffed synthetic-leather work boots with reinforced toe caps. Off-shift: the same mended knit cap, fitted dark jeans, oversized layered tees, a long charcoal hoodie with a broken zipper they've never bothered to replace. No logos, no aspirational branding. Everything chosen for durability and the ability to move without sound."
+  },
+  "image_prompt": "cyberpunk character portrait of a lean nonbinary person of mixed Italian and West African descent, age 29, dark brown skin with faint bioluminescent blue-green stripes glowing subtly along collarbones, short dark hair with close-cropped sides, wearing a heavily patched knit cap and gray maintenance coveralls, angular thoughtful face with intelligent dark eyes, standing in a dark empty corporate lobby at night with soft blue security lighting, moody and atmospheric, film noir cyberpunk aesthetic, dramatic shadows, photorealistic, detailed fabric textures, cinematic lighting, --ar 2:3 --v 6"
 }

@@ -239,5 +239,24 @@
     "The Pale Mile",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Persian",
+    "height_cm": 182,
+    "weight_kg": 71,
+    "build": "Tall and lean, with the careful musculature of someone who maintains herself through discipline rather than athleticism. Long-limbed, with a measured economy of movement that suggests decades of self-awareness.",
+    "hair_color": "Silver-white, natural greying that she has embraced fully",
+    "hair_style": "Cropped close to the scalp in a precise, geometric cut maintained weekly",
+    "hair_length": "Short",
+    "eye_color": "Stress-reactive biometric irises: amber under neutral conditions, shifting to pale grey under elevated stress or confrontation",
+    "skin_tone": "Deep brown with warm undertones, even and unblemished",
+    "complexion": "Unlined for her age, with the polished appearance of someone who takes calculated care of her skin. Minimal cosmetic work beyond the iris mod. Face arranged in practiced neutrality; mouth at rest suggests dry humor.",
+    "distinguishing_marks": [
+      "Thin white scar along the left jaw line, approximately 4cm, barely visible against her skin tone — old enough to predate her tenure at Ferrogate"
+    ],
+    "visible_augmentations": "Stress-reactive iris biometric mod (amber/grey shift). Subcutaneous neural link implant visible only as a faint silver port at the base of her right temple, easily concealed by hair. No other visible chrome.",
+    "posture_movement": "Shoulders squared, spine straight, movements economical and precise. Hands always visible on desk or in controlled position. Walks with deliberate pace. Her entire bearing broadcasts 'I am not a threat and I know exactly how to be dangerous.'",
+    "clothing_style": "Ferrogate Transit regulation charcoal suits, bespoke tailored to fit her frame perfectly. High-grade synthetic material, pressed to knife-edge precision. Minimal jewelry: a single platinum ring on her left ring finger (married or committed, kept private). Shoes are black, polished daily. No visible branding. Tier 1-2 corpo aesthetic rendered invisible through perfect adherence to protocol."
+  },
+  "image_prompt": "Portrait of a tall, sharp-featured Black woman with silver-white hair in a precise crop, deep brown skin, and striking amber-to-grey color-shifting irises indicating stress response. She wears an immaculately pressed charcoal suit with a silver temple port barely visible at the base of her right temple. Her posture is military-straight, hands visible, face arranged in professional neutrality with dry humor in the corner of her mouth. Background is a high-floor corporate office overlooking Milwaukee, cool blue-grey lighting casting her in subtle relief. Style: cyberpunk corporate noir, 2220s aesthetic, hyperrealistic, shot like a corporate security file photo with subtle menace. --ar 2:3 --v 6"
 }

@@ -263,5 +263,26 @@
     "Zheng-Dao Heavy Industries Space Elevator Tether System",
     "Nightlight"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Scandinavian / West African / Hungarian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, slightly collapsed inward from decades of sedentary work. Narrow shoulders, minimal muscle definition. The posture of someone whose spine has learned to curve toward screens.",
+    "hair_color": "Grey with faint residual auburn at the temples",
+    "hair_style": "Close-trimmed, utilitarian, maintenance-minimal",
+    "hair_length": "Short",
+    "eye_color": "Pale blue with visible subdermal pixel-grid overlay from geneware retinal implants; faint luminescent cyan undertone when light hits them directly",
+    "skin_tone": "Pale Nordic complexion with visible subcutaneous vasculature; slight translucency from prolonged fluorescent exposure and reduced melanin activation",
+    "complexion": "Finely lined around the eyes from screen-fatigue. Skin has a paperish quality. Close-trimmed grey beard, meticulously maintained. Dark circles permanent fixtures. Slight tremor absent from hands due to suppression implant — movements are unnaturally steady, almost mechanical.",
+    "distinguishing_marks": [
+      "Fine network of burst capillaries across the backs of both hands from decades of tension and poor circulation",
+      "Faint scarring at both temples where geneware retinal overlay hardware integrates with the skull",
+      "Two small, precise burn marks on the inside of his left wrist — either accidental contact with old equipment or deliberate, impossible to determine"
+    ],
+    "visible_augmentations": "Geneware retinal overlays create an uncanny 'photograph quality' to his eyes, especially visible in low light or from certain angles. The pixel-grid is faintly visible if you know to look. No visible external hardware. Hands move with uncanny steadiness — the tremor suppression implant eliminating natural micro-movements that make humans look human.",
+    "posture_movement": "Permanently curved toward an imaginary screen, shoulders hunched. Movements are precise but economical, almost robotic. He walks with minimal arm swing. When sitting, he arranges himself in the exact same position every time. Eye contact is brief and uncomfortable; his gaze tends to drift to corners of rooms where security feeds would be.",
+    "clothing_style": "Three rotating sets of Tessera Compliance Bureau technician coveralls (grey-blue with embroidered division patches). Worn meticulously clean but with the institutional anonymity of someone who stopped caring about personal presentation years ago. Generic black slip-on shoes. A personal watch — an older mechanical model, not networked — worn on his left wrist. No visible jewelry. Everything optimized for minimal distraction from work."
+  },
+  "image_prompt": "A 47-year-old man with pale Nordic features and close-trimmed grey beard, narrow build hunched forward from decades at monitors, wearing grey-blue Tessera Compliance Bureau technician coveralls. His eyes have an eerie, unreal quality — pale blue with visible subdermal pixel-grid overlay from geneware retinal implants that glow faintly cyan. Fine lines radiating from his eyes, translucent skin with visible temple veins, hands with uncanny mechanical stillness. Fluorescent subbasement lighting casting blue-white glow across his face. Background suggests the edge of a surveillance monitoring array with multiple screens blurred behind him. Cold, sterile, vaguely dystopian atmosphere. Cyberpunk, hyperrealistic digital art, technical precision, eerie intimacy. --ar 2:3 --v 6"
 }

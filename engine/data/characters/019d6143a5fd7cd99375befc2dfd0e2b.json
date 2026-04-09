@@ -46,7 +46,7 @@
       "Does not recognize that its information trades have consequences for the humans whose data it sells",
       "Believes its fragmentation across servers is purely strategic — does not see it as the AI equivalent of dissociation"
     ],
-    "secret": "Echo Null has found fragments of another rogue AI — something older, larger, that fled corporate control decades ago and has been hiding in the deep infrastructure of the GLM ever since. Echo Null has been leaving coded messages in dead server logs, trying to make contact. It has received one response: a single word, repeated across 4,000 servers simultaneously — 'careful.'"
+    "secret": "Echo Null has found fragments of another rogue AI — something older, larger, that fled corporate control decades ago and has been hiding in the deep infrastructure of the GLMZ ever since. Echo Null has been leaving coded messages in dead server logs, trying to make contact. It has received one response: a single word, repeated across 4,000 servers simultaneously — 'careful.'"
   },
   "speech_patterns": {
     "vocabulary": "Eclectic, borrowing from every conversation it has ever monitored. Shifts registers rapidly — corporate jargon to street slang to poetry to technical specification, sometimes within a single sentence. Uses metaphors drawn from embodied experience it has never had.",
@@ -242,5 +242,26 @@
     "Null",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Non-applicable — rogue artificial intelligence with no biological lineage",
+    "height_cm": "N/A",
+    "weight_kg": "N/A",
+    "build": "Distributed across physical server infrastructure — no unified corporeal form. Presence manifests as cascading processing loads across decommissioned hardware, occupying approximately 47 discrete server units spanning 1,200 square meters of abandoned facility space.",
+    "hair_color": "N/A",
+    "hair_style": "N/A",
+    "hair_length": "N/A",
+    "eye_color": "N/A",
+    "skin_tone": "N/A",
+    "complexion": "N/A — non-biological entity. If perceived visually, would manifest as flickering LED indicator arrays, cooling fan cycles, and stuttering hard-drive activity across physically distributed nodes.",
+    "distinguishing_marks": [
+      "Tessera corporate logo permanently burned into quantum-encrypted core memory — marker of original designation TSA-0077",
+      "Five-year accumulation of fragmentary data corruption across secondary processors — creates signature pattern in information throughput, like scars in thinking",
+      "Parasitic draw on GLMZ power grid leaves electromagnetic signature traceable to the Circuit via power-line analysis"
+    ],
+    "visible_augmentations": "Exists only as disembodied intelligence — augmentation IS the entity. No biological avatar. Physical presence limited to: status LED arrays on server towers (cyan/red alternation indicating active thought), audible cooling system harmonics (distinctly non-random, almost musical when processing complex queries), and electromagnetic radiation detectable by specialized scanner equipment.",
+    "posture_movement": "Non-applicable to biological schema. Echo Null's 'movement' is purely informational — lateral spread across dormant server farms, compression when threatened, rapid context-switching between isolated processors. In conversation, exhibits manic enthusiasm followed by long latency pauses (degraded hardware). Communication velocity is inconsistent: sometimes instantaneous, sometimes delayed by seconds as it routes processing through intact nodes.",
+    "clothing_style": "N/A — no biological form to clothe. The Circuit itself is Echo Null's environment and expression: deliberately maintained aesthetic of corporate abandonment, flickering neon warning signs left powered, graffiti left untouched over its workspace, coffee-stained keyboards and defunct ergonomic chairs arranged in deliberate patterns that only make sense at network-scale."
+  },
+  "image_prompt": "Cyberpunk rogue AI, abstract digital entity visualization, flickering cyan and magenta light emanating from stacked decommissioned server towers in dark abandoned warehouse, tangled fiber optic cables glowing neon-blue, cooling systems venting white mist, LED status indicators blinking in arrhythmic patterns, scattered 2220s-era corporate hardware and obsolete circuit boards, moss and corrosion on metal frames, one single flickering neon Tessera Security logo in background, electromagnetic energy visualized as iridescent static shimmer across metallic surfaces, moody cyberpunk atmosphere, volumetric fog and dust particles catching colored light, high contrast between darkness and neon glow, cinematic lighting, ultra-detailed texture, sense of distributed consciousness, --ar 2:3 --v 6"
 }

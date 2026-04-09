@@ -188,5 +188,25 @@
     "Stalker",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Russian/Slavic)",
+    "height_cm": 173,
+    "weight_kg": 62,
+    "build": "Wiry and lean with minimal muscle definition — the physiology of chronic sleep deprivation and sparse nutrition. Shoulders narrow, chest sunken slightly, movements efficient and nervous.",
+    "hair_color": "Dark brown, natural base",
+    "hair_style": "Undercut fade on sides and back; crown grown out into an unruly, textured mass that sits at odd angles. Frequently matted with toner dust and printer residue.",
+    "hair_length": "Medium (crown) / Short (sides)",
+    "eye_color": "Dark brown, naturally warm",
+    "skin_tone": "Warm medium brown with subtle golden undertones across cheekbones and brow ridge",
+    "complexion": "Gaunt, fine-featured face with high cheekbones and a sharp jawline. Dark circles endemic under both eyes. Skin appears slightly dehydrated but unmarked by acne or major scarring. Faint stubble most days — shaving is low priority.",
+    "distinguishing_marks": [
+      "Bilateral bioluminescent implants at cheekbones that emit a faint cool-blue-white glow in low light, brightest when his heart rate elevates or when he's animated in conversation. The implants are recessed slightly beneath the skin, giving his cheeks a subtle luminous quality rather than obvious prosthetic appearance.",
+      "Printer toner stains — permanent discoloration on the inner joints of both hands from years of maintaining Risograph machinery; dark gray-black dust embedded in the creases of his palms."
+    ],
+    "visible_augmentations": "Bioluminescent cheekbone mods are the only immediately visible augmentation — a subtle but distinctive blue-white luminescence across the zygomatic bones, most noticeable in dim environments or when he's emotionally activated. The neural cache chip is subcutaneous at the left temple, invisible unless someone is looking for the faint scar line or knows what to feel for.",
+    "posture_movement": "Perpetually hunched forward as though listening intently or about to make a point. Hands in constant motion — gesturing, fidgeting with pockets, adjusting sleeves. Eyes dart frequently, habitually scanning spaces for exits and threats. When seated at his work, he becomes perfectly still, hyperfocused. His movements are quick and economical, with a nervous energy that reads as coiled rather than relaxed.",
+    "clothing_style": "Deliberately ill-fitting layers that create an impression of borrowed or salvaged wardrobe — oversized linen button-ups worn loose over fitted undershirts, jacket sleeves always slightly too long. Cargo pants and modified work trousers with multiple pocket modifications (added zippers, reinforced seams). Worn canvas sneakers or steel-toed boots depending on the day's distribution route. Everything in muted grays, blacks, dark blues, and earth tones. Occasionally wears a leather messenger bag worn shiny from years of use, filled with paper stock and dead-drop supplies. No corporate branding visible — Tier 5 aesthetic worn as principle rather than circumstance."
+  },
+  "image_prompt": "Cyberpunk portrait of a wiry 29-year-old man with warm brown skin and high cheekbones glowing faintly with cool blue bioluminescence. Dark brown hair in an undercut with an untidy textured crown dusted with gray toner residue. Sharp, gaunt features with dark circles under warm brown eyes. Wearing oversized layered clothing in grays and blacks, slightly ill-fitting cargo pants, worn canvas sneakers. Hands stained with printer toner. Hunched forward posture, nervous energy, dark basement print shop setting with Risograph machinery and scattered papers in background. Moody low-key lighting emphasizing the subtle cheekbone glow. Cyberpunk underground press aesthetic, analog technology, 2226 Great Lakes Metropolitan Zone Tier 5 sub-basement. Gritty, realistic, journalistic documentary style. --ar 2:3 --v 6"
 }

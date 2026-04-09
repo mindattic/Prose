@@ -180,7 +180,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Arrived in Meridian 88 from the Lagos-Adriatic migration corridor, age 23",
+      "event": "Arrived in GLMZ from the Lagos-Adriatic migration corridor, age 23",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -229,5 +229,27 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Balkans (Serbian/Croatian)",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and sturdy with a soft middle earned from decades of tasting her own cooking. Muscular forearms and strong hands from repetitive kneading, stirring, and lifting. No fat on her neck or shoulders — all dense, functional mass.",
+    "hair_color": "Dark brown with grey streaking, natural",
+    "hair_style": "Thick locs, always pinned up and wrapped under a faded bandana during work",
+    "hair_length": "Long (shoulder-length when loose, never worn down in the stall)",
+    "eye_color": "Right eye: deep brown, natural. Left eye: milky white with fixed amber pupil (budget augment)",
+    "skin_tone": "Deep warm brown with underlying red undertones, weathered by steam and sun exposure",
+    "complexion": "Face mapped with laugh lines around the mouth and eyes, deeper furrows across the forehead and between the brows. Skin texture uneven — some areas hyperpigmented from old burn scars, others slightly papery from decades of heat and dry air. No makeup. Perpetually flushed cheeks and lips from kitchen heat. A small burn scar near her left temple (old grease splatter).",
+    "distinguishing_marks": [
+      "Extensive old burn scarring across both forearms and the backs of her hands — pale, contracted tissue from cooking accidents over 40+ years, creating a map-like pattern",
+      "Long thin scar running from her left collarbone down 8cm toward her sternum (knife accident, early career)",
+      "Darkened, thickened fingernails on both hands from repeated thermal stress and turmeric/spice staining that never fully washes out",
+      "A circular keloid scar approximately 2cm diameter on her right shoulder (old injection site or burn, never identified)"
+    ],
+    "visible_augmentations": "Left eye replacement: milky white synthetic eye with fixed amber pupil, slightly recessed in the socket and showing no light reflex. Non-networked, no glow or flicker. The surrounding tissue is slightly discolored from decades of the cheap implant settling — faint yellow-grey halo around the orbit.",
+    "posture_movement": "Moves with economical precision in confined spaces. Minimal wasted motion — pivots at the hips, not the shoulders. Stands with weight shifted to the balls of her feet, ready to move in any direction. Leans against her counter during slow hours, left arm usually cradling her torso. Her head tilts slightly to the right when listening to customers (compensating for the left eye's fixed pupil and lack of peripheral vision on that side). Gestures are broad and open when talking, especially when making a point or refusing an argument.",
+    "clothing_style": "Oil-darkened canvas apron, patched four times with visible stitching in contrasting thread, worn over a faded short-sleeve shirt (varies — usually earth tones or faded cotton, Tier 4 or thrifted). Worn flat shoes with no laces (slip-ons for quick changes). A functional Ferrogate Transit bandana in faded teal (from the early 2210s, commemorative issue) pinned over her locs during work. Off-duty: simple corridor-tier clothing, nothing that suggests pretense. A single thin gold ring on her left ring finger, worn smooth."
+  },
+  "image_prompt": "A weathered West African-Balkan woman in her late 50s, broad-shouldered and sturdy, wearing a heavily patched oil-darkened apron over a faded cotton shirt. Deep brown skin mapped with burn scarring across her forearms and hands. Her left eye is a milky white budget ocular implant with a fixed amber iris, recessed and lifeless compared to her warm brown right eye. Grey-streaked dark locs are pinned up beneath a faded teal Ferrogate Transit bandana. Her face is creased with laugh lines and worry furrows, flushed from years of kitchen heat. She stands in a narrow food stall in a cyberpunk market, foreground crowded with steaming pots and ingredient containers. Geartown industrial backdrop with weathered metal siding and LED market signage. Warm tungsten lighting mixing with neon from neighboring stalls. Photorealistic, detailed, no filters. --ar 2:3 --v 6"
 }

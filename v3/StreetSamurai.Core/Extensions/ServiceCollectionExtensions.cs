@@ -82,6 +82,10 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<LiteraryRulesRepository>();
         services.AddSingleton<CharacterProfileRepository>();
 
+        // User accounts and authentication
+        services.AddSingleton<UserRepository>();
+        services.AddSingleton<AuthService>();
+
         services.AddSingleton<DatabaseService>();
         services.AddSingleton<IDatabaseService>(sp => sp.GetRequiredService<DatabaseService>());
         services.AddSingleton<LoreService>();

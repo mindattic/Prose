@@ -258,5 +258,27 @@
     "Lazarus LX-2 'Lab Rat'",
     "The Pure Hand"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African Yoruba / Puerto Rican",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Large-framed, broad-shouldered, softened with age but still substantial. Moves with deliberate slowness — not infirmity, but intentionality. The build of a man who spent thirty years doing physical labor and has earned the right to stop rushing.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, groomed but not fastidious",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, slightly clouded at the edges with age",
+    "skin_tone": "Deep brown with warm undertones, weathered and lined",
+    "complexion": "Deeply lined face with a full white beard kept neatly trimmed. Skin shows sun damage and wind damage from four decades on the harbor. Eyes carry the weight of accumulated knowledge and careful observation. Expression defaults to calm attentiveness.",
+    "distinguishing_marks": [
+      "Extensive scarring across both hands — pale, old scars from dock work and tool injuries, particularly prominent across knuckles and palms",
+      "A thin white scar running from left temple toward ear, barely visible beneath beard line",
+      "Deep creases around eyes and mouth from decades of squinting at water and faces",
+      "Faded tattoo on right forearm — Yoruba symbols for 'witness' and 'memory', done by hand in Old Harbor, 1989"
+    ],
+    "visible_augmentations": "Cochlear implant visible as a small silver port behind left ear, often partially concealed by collar. No visible external interface — the archive exists on encrypted drives in his stall, not on his body. Arthritis implant is subcutaneous, invisible.",
+    "posture_movement": "Stands with weight evenly distributed, rarely shifts quickly. Moves with economical precision — every motion purposeful. Maintains sustained eye contact during conversation, a habit that makes people either trust him immediately or become deeply uncomfortable. Gestures are spare but expressive with hands. Walks with the gait of someone who has learned to pace himself over distance.",
+    "clothing_style": "Tier 4 / working-class authentic. Rotates through hand-dyed agbadas in rust, indigo, and ochre over thermal underlayers designed for harbor wind. Worn but meticulously maintained — fabric shows age but no holes. Heavy canvas work pants, steel-toed boots resoled multiple times. A dark wool coat that has belonged to him for at least fifteen years. No corporate logos, no artificial fiber where natural would suffice. Grooming is deliberate: beard oil, clean hands despite the work, clothes that announce his heritage without apology."
+  },
+  "image_prompt": "A dignified elderly Black man, tall and broad-shouldered, standing in a cluttered harbor repair stall at dawn. He wears a hand-dyed indigo agbada over thermal layers, worn canvas pants, and steel-toed boots. His face is deeply lined and weathered, with a full white beard. Scarred hands rest on a workbench among small electronics and boat parts. Behind him, morning light filters through grimy windows overlooking Lake Shore, revealing the silhouettes of cargo cranes and old pier structures. His dark eyes carry the weight of forty years of memory. The mood is contemplative, grounded, and profoundly human — not flashy cyberpunk, but authentic harbor-side grit and dignity. Low warm lighting, shadows across the stall, subtle visible cochlear implant port behind his ear. 35mm film photography aesthetic, shot in cyberpunk 2226 Old Harbor. --ar 2:3 --v 6"
 }

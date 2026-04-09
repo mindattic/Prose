@@ -237,5 +237,26 @@
     "Rust",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Middle Eastern (likely Persian or Arab)",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Tall and angular with lean, defined musculature — the build of someone who works with their hands constantly and moves with precise, economical gestures. Shoulders slightly uneven due to years of compensating with their left side.",
+    "hair_color": "Black",
+    "hair_style": "Shaved head, kept meticulously oiled and maintained with a subtle sheen",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown, with subtle metallic flecks around the pupils from retractable magnification lens hardware",
+    "skin_tone": "Deep brown with warm undertones, unmarked and well-maintained",
+    "complexion": "Angular face with high cheekbones, sharp jawline, and careful grooming. Skin is clear and unblemished, suggesting disciplined skincare. Expression often focused and intent, with creases around the eyes from years of close detail work.",
+    "distinguishing_marks": [
+      "Faint circular scar on left forearm from an early prosthetic calibration mishap, approximately 2cm diameter, pale and nearly invisible",
+      "Calloused fingertips on left hand from precision fabrication work",
+      "Oil sheen on shaved head is distinctive and deliberate — a daily grooming ritual"
+    ],
+    "visible_augmentations": "Right arm from elbow down is a matte-charcoal titanium alloy prosthetic with individually articulated fingers and small UV LEDs visible in the fingertip joints. When working, the prosthetic is exposed; off-hours they wear a pressure-fitted silicone cosmetic sleeve patterned with rust and ochre geometric Yoruba-inspired designs. Both eyes show subtle metallic lens hardware at the pupils when light hits them at certain angles — retractable magnification lenses used for fine detail work.",
+    "posture_movement": "Moves with deliberate precision and minimal wasted motion. Shoulders held slightly forward from years of bench work. Left hand is dominant in social contexts; right prosthetic is used with unselfconscious fluidity during work. When listening, they tilt their head slightly and often rest their left hand on their thigh or workbench. Their gait is smooth and economical.",
+    "clothing_style": "Tier 3-4 working specialist aesthetic. Typically wears fitted black or charcoal tech-cotton work trousers with reinforced pockets and stress-point stitching. Tops are usually form-fitting long-sleeve compression shirts in muted colors (dark gray, deep blue, black) with roll-up sleeves, allowing full visibility of the prosthetic. Over this, a custom-fitted heavy canvas work apron with multiple pockets and tool loops, often with various small components or calipers hanging from chains. On cooler days, a fitted technical jacket in dark synthetic leather with interior pockets. No visible branding or logos — all clothing is functional and worn. Hands are typically bare except for work. Feet are in durable, worn but well-maintained work boots with rubber soles designed for standing at a bench 10+ hours daily."
+  },
+  "image_prompt": "Portrait of Afolabi Strand-Quereshi, a 41-year-old nonbinary prosthetics specialist, tall and angular with deep brown skin and a shaved, oiled head gleaming under workshop fluorescent light. Dark intense eyes with subtle metallic lens hardware visible. Right arm is a matte-charcoal titanium alloy prosthetic with individually articulated fingers and tiny UV LEDs glowing softly in the fingertips. Wearing a fitted dark gray compression shirt with sleeves rolled up, heavy canvas work apron with tool loops, black work trousers. Set in a narrow Geartown workshop surrounded by half-finished prosthetic limbs hanging on walls, scattered components, precision tools on benches. Warm tungsten and cool LED work lighting creating sharp shadows across their angular features. Posture is focused and calm, hands relaxed. Cyberpunk Tier 3-4 aesthetic, gritty and functional. Shot as studio portrait with workshop background slightly soft-focused. Professional, precise, calm intensity. --ar 2:3 --v 6"
 }

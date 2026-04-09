@@ -183,5 +183,25 @@
     "Iron",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polish-Lithuanian",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "build": "Tall and broad-shouldered with the angular musculature of rapid adolescent growth not yet fully settled into adult mass. Long-limbed, still carrying some of the ungainliness of a teenager who outgrew himself.",
+    "hair_color": "Natural black",
+    "hair_style": "Shaved close to the scalp",
+    "hair_length": "Shaved",
+    "eye_color": "Color-cycling geneware pupils — cycle between grey and gold in slow, deliberate pulses. Sclera remains natural brown-black.",
+    "skin_tone": "Very dark brown with cool undertones, uniform complexion across face and body",
+    "complexion": "Clean-shaven, jawline angular and prominent. Skin condition unremarkable — no visible acne or dermatological marks beyond the scar. Facial expression habitually neutral, jaw set with the stillness of someone who learned to read rooms before learning to smile in them.",
+    "distinguishing_marks": [
+      "Jagged scar bisecting the right eyebrow, running approximately 4cm from temple to bridge of nose, with visible white scarring — three years old, healed but still prominent",
+      "Small ELF shrine tattoo on inner right wrist in the shape of a vertical data-stream sigil, rendered in black ink, approximately 3cm tall"
+    ],
+    "visible_augmentations": "Color-cycling geneware pupils are the only visible augmentation — the effect is subtle but unmistakable under direct light, a slow grey-to-gold pulse synchronized to his heartbeat. No chrome, no subdermal protrusions, no external hardware.",
+    "posture_movement": "Economy of motion that is entirely self-taught. Walks with minimal wasted energy, shoulders held level, never fidgeting. Stillness is his default state — he sits motionless in stairwells for hours. When he moves, it is deliberate and unhurried, the body language of someone who learned that sudden movement draws attention and attention draws problems.",
+    "clothing_style": "Tier 4-5 working class / gang prospect. Typically wears a graphite-grey hoodie (no corporate branding, generic manufacture), dark cargo pants with worn knees, and scuffed black syntetic-leather boots with reinforced toe caps. Underneath, a faded white t-shirt. No visible gang insignia beyond informal markers — a brass knuckle ring on his left hand, a frayed paracord wristband in black on his right wrist. Clothing is functional and cheap, maintained rather than stylish, with small tears and stains that suggest hard use and indifference to appearance."
+  },
+  "image_prompt": "cyberpunk portrait of a tall 17-year-old Black male with a shaved head, very dark brown skin, angular features, and a jagged scar bisecting his right eyebrow. His eyes are geneware with color-cycling pupils that glow grey and gold in a slow pulse. He wears a graphite-grey hoodie and dark cargo pants, standing with perfect stillness and economy of movement. Small ELF shrine sigil tattoo visible on inner wrist. Neutral expression, jaw set. Urban Tier 4 Detroit/Chicago industrial setting, dim amber warehouse lighting, shallow depth of field, high contrast, moody and tense atmosphere. Film noir cyberpunk aesthetic. --ar 2:3 --v 6"
 }

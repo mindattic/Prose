@@ -289,5 +289,27 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Turkish / Ghanaian",
+    "height_cm": 166,
+    "weight_kg": 52,
+    "build": "Wiry and lean — minimal body fat, corded muscle from constant kinetic motion. Her frame is compact and efficient, built for speed rather than power, though the move-by-wire augmentation gives her leverage beyond her natural physiology.",
+    "hair_color": "Black with faint blue-grey undertones from oxidized copper traces in the chrome beneath her scalp",
+    "hair_style": "Pulled back in a tight, practical braid, often wrapped with silver wire for both function and aesthetic",
+    "hair_length": "Medium — shoulder-length when loose, but typically secured",
+    "eye_color": "Dark brown with faint silver striations in the iris — optical nerve interface reflections visible under direct light",
+    "skin_tone": "Medium-warm brown, olive undertones from Turkish and West African heritage",
+    "complexion": "Sharp features — high cheekbones, defined jawline, dark circles under the eyes from nocturnal living. Skin is clear but shows minor scarring at the temples and along her jawline where the move-by-wire harness integrates with her nervous system. No makeup; her exhaustion is a statement.",
+    "distinguishing_marks": [
+      "Fine silver scarring along both temples where the neural interface harness threads beneath the skin, visible when her hair is pulled back",
+      "A thin, precise burn scar running from her left collarbone to mid-sternum — corporate incident, never explained",
+      "Raised rectangular implant scars on the inside of both wrists where the move-by-wire control nodes integrate with her motor cortex",
+      "Small, deliberate tattoo on her right inner forearm: a circuit-board pattern in black ink, marking her transition from corpo to freelance"
+    ],
+    "visible_augmentations": "Full move-by-wire system visible as silver circuitry beneath translucent dermal panels on forearms, the back of her hands, and along her neck. The system pulses faintly with blue-white electrochemical activity when she's in motion. Her movements have an uncanny precision — no wasted gesture, no biological tremor. Her fingers move independently with servo-like control.",
+    "posture_movement": "Predatory stillness when stationary, coiled and ready. When moving, she flows rather than walks — economical, precise, weightless. Her head rotates on a slightly inhuman axis. She has the unconscious habit of flexing her fingers when thinking, watching the chrome beneath her skin respond to her will.",
+    "clothing_style": "Tier 3-4 functional streetwear. Black fitted thermosuit with exposed silver seam-work and modular pockets for gear. Charcoal Kevlar-weave jacket, worn and patched. Combat boots with reinforced ankle supports. Everything is dark, nothing is decorative, everything has a purpose. Minimal jewelry — a silver pendant on a wire that holds a small data chip. No corp logos, nothing that dates her or anchors her to a failed identity."
+  },
+  "image_prompt": "cyberpunk character portrait, female, wiry athletic build, Turkish-Ghanaian heritage, dark sharp features, black hair in tight braid wrapped with silver wire, dark brown eyes with optical interface striations, medium-warm olive skin tone, visible silver circuitry beneath translucent dermal panels on forearms and neck, blue-white electrochemical glow in the chrome, fine scarring at temples and collarbone, servo-precise hand movements, nocturnal exhaustion, wearing black thermosuit with exposed silver seams, charcoal Kevlar jacket, combat boots, minimal jewelry with data chip pendant, predatory stillness, ultramodern cyberpunk aesthetic, moody neon-shadow lighting, high contrast, cinematic depth, gritty industrial background suggesting cramped megastructure corridors, --ar 2:3 --v 6"
 }

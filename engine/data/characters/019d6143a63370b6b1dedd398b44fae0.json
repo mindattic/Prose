@@ -243,5 +243,26 @@
     "Arcturus CK-5 'Bloodhound'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "East African / Finnish",
+    "height_cm": 162,
+    "weight_kg": 58,
+    "build": "Compact and lean, muscled through the shoulders and forearms from years of precise manual work. No excess fat; efficient frame built for long hours standing at a surgical table.",
+    "hair_color": "Black with premature salt-and-pepper threading at the temples",
+    "hair_style": "Coiled, kept pinned beneath a faded surgical cap; rarely fully exposed",
+    "hair_length": "Medium (when unpinned, falls to mid-neck)",
+    "eye_color": "Left eye: augmented with a slightly yellowed surgical-grade magnification lens giving it an enlarged, luminous quality. Right eye: dark brown, unmodified.",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Weathered but not aged; scattered frost-pale freckles across nose and cheekbones from her Finnish ancestry. Hands permanently stained with antiseptic residue in the nail beds and callus creases. Fine lines around the eyes from years of precision work under poor lighting.",
+    "distinguishing_marks": [
+      "Faint burn scar on the inside of her left wrist, approximately 3cm long, pale and old.",
+      "Small laceration scar above her right eyebrow, approximately 1cm, barely visible but present when light hits certain angles.",
+      "Chronic blue-gray discoloration in the fingernails and cuticles from repeated antiseptic exposure."
+    ],
+    "visible_augmentations": "Left eye magnification implant with a slightly oversized luminous quality and faintly yellowed synthetic lens housing visible in the iris. Right index finger shows no external sign of the subdermal vibration sensor, but the fingertip has a faint silvery subcutaneous shimmer under certain light.",
+    "posture_movement": "Economical and still; moves with the precision of someone who has trained their body not to waste energy. Stands with weight balanced slightly forward, ready. Her hands are rarely still — they fidget with instruments, surgical gloves, or the copper wire tangle of her data-shrine. Eye contact is direct but brief, the gaze of someone used to evaluating injury rather than engaging socially.",
+    "clothing_style": "Tier 5 utilitarian: faded surgical cap (six years old, stained, but functional); a grease-stained white coat over a dark synthetic tank top; cargo pants with multiple pockets filled with medical supplies; worn boots with reinforced soles for standing. No jewelry. A worn cloth wristband on her left wrist conceals the old burn scar. Everything is functional, nothing is new, everything is clean enough to work in."
+  },
+  "image_prompt": "Portrait of a 41-year-old East African-Finnish woman, compact athletic build, deep brown skin with scattered pale freckles across nose and cheekbones, dense coiled black hair with salt-and-pepper threading pinned under a faded surgical cap. Left eye augmented with a slightly yellowed surgical-grade magnification lens giving it an enlarged luminous cat-like quality, right eye dark brown and unmodified. Weathered complexion, permanent blue-gray antiseptic staining on hands and fingernails. Wearing a grease-stained white surgical coat over a dark synthetic tank, cargo pants, worn boots. Standing in a converted shipping container surgical clinic, harsh fluorescent lighting overhead, rows of sterilized instruments on shelves behind her, copper wire and medical waste forming a makeshift shrine on the surgical table. Dark, gritty cyberpunk aesthetic. Cyberpunk street doc. Low-tier medical setup. Moody, utilitarian. --ar 2:3 --v 6"
 }

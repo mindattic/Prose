@@ -189,7 +189,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2199 — Settlement declared uninhabitable; family joins climate migration wave toward Meridian 88",
+      "event": "2199 — Settlement declared uninhabitable; family joins climate migration wave toward GLMZ",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -222,5 +222,25 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Glass"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Serbo-Croatian / West African",
+    "height_cm": 145,
+    "weight_kg": 38,
+    "build": "Slight and wiry with the compact efficiency of a child who has learned to move without wasting energy. Lean muscle from constant walking across industrial terrain, no excess weight.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Grown out unevenly from a previous close cut, longer on one side than the other — the result of four months without proper grooming access. Pulled back with whatever she has available.",
+    "hair_length": "Medium, uneven",
+    "eye_color": "Very dark brown with a distinctive double ring of amber at the iris edge — either a natural genetic variation or subcutaneous geneware artifact",
+    "skin_tone": "Warm medium brown with the particular quality of sun exposure from months of daily ranging across open industrial lots",
+    "complexion": "Serious, alert expression. Fine-featured face showing the watchfulness of premature responsibility. Skin shows the wear of outdoor living — small abrasions, slight windburn. Accepts rather than hides the scar along her jawline.",
+    "distinguishing_marks": [
+      "Linear scar along the jawline from left angle of jaw to mid-chin, approximately 8cm, from broken transit container glass — edges slightly raised, pale against her skin tone",
+      "Small burn mark on the back of her right hand, partially faded, origin unknown to her"
+    ],
+    "visible_augmentations": "None visible. The amber iris rings may be subcutaneous or biological residue, indeterminate.",
+    "posture_movement": "Moves with deliberate efficiency and minimal sound, a habit of not drawing attention. Stands slightly tensed, ready to orient toward exits or threats. Her posture is neither defeated nor defiant — simply functional. Maintains careful eye contact when she chooses to engage.",
+    "clothing_style": "Tier 5 migrant — hand-me-downs from processing annex donation bins. Oversized thermal layer (probably meant for an adult), patched grey cargo pants with multiple pockets she has filled with small useful objects, worn athletic shoes held together with synthetic cord. A jacket two sizes too large in faded blue that serves as both warmth and portable storage. No branding visible. Everything has been chosen and organized for utility rather than appearance."
+  },
+  "image_prompt": "portrait of a 12-year-old girl with mixed Serbo-Croatian and West African heritage, serious and watchful expression, warm medium brown skin, very dark eyes with distinctive amber rings at the iris edge, jawline scar from broken glass, unevenly grown dark brown hair, small and wiry build, wearing oversized faded blue jacket and patched cargo pants, industrial waterfront setting at dusk, Lake Shore in background, cool harsh lighting, cyberpunk neo-noir, gritty realism, depth of field, shot in style of documentary photography, --ar 2:3 --v 6"
 }

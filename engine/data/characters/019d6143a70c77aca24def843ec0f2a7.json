@@ -309,5 +309,28 @@
     "ARCHIVE",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "N/A — Synthetic construct, Kuroda Industries manufacturing origin",
+    "height_cm": 120,
+    "weight_kg": 280,
+    "build": "Squat, heavily armored industrial chassis. Low center of gravity. Four articulated arms — upper pair for food prep (precise, surgical), lower pair for cart operation and community interaction. Treaded wheel base provides stability over The Shelf's uneven terrain.",
+    "hair_color": "N/A",
+    "hair_style": "N/A",
+    "hair_length": "N/A",
+    "eye_color": "Amber (operational) / Deep red (standby, though rarely enters this state)",
+    "skin_tone": "Patchwork industrial — matte grey steel, safety orange plating, weathered refrigerator door panel (faded white/cream with visible dents), welded seams showing copper oxidation",
+    "complexion": "Heavily worn exterior with 23 years of street-level weathering. Seams accumulate food residue and street grime. Hydraulic fluid occasionally weeps from joints. Optical sensor bar shows faint scratches but remains functional. Overall impression: well-maintained despite appearance, like a beloved work truck.",
+    "distinguishing_marks": [
+      "Horizontal amber optical sensor bar spanning upper chassis — signature feature, glows steadily during operation",
+      "Refrigerator door panel welded onto starboard side, approximately 40cm × 60cm, with faint manufacturer logo ('Icebox Prime') and a dent in the shape of a child's handprint",
+      "Welded repair seams along all four limbs, each one a different thickness and color of welding material — visible timeline of 19 years of field maintenance",
+      "Serial number plate on port side (KUR-7-004521) worn but legible, scratched by thousands of hands tracing it",
+      "Food staining around prep-arm joints — turmeric, soy, chili oil — creates a permanent amber-brown patina that won't clean off"
+    ],
+    "visible_augmentations": "Entirely visible. Kuroda Model 7 industrial chassis with four articulated arms, treaded drive system, surgical-grade food preparation hardware (heating elements, blade arrays, portioning mechanisms visible through transparent polycarbonate panels on prep arms). Encrypted memory banks housed in reinforced core — not visible but implied by the steady hum of active processing.",
+    "posture_movement": "Stable, grounded. Moves with deliberate precision despite worn treads — each movement economical and purposeful. The four arms operate in orchestrated patterns: prep arms work in rapid, surgical coordination while cart-management arms move with patient gentleness. When idle, maintains position facing the street. Optical bar dims to low amber during brief processing pauses but never goes dark. Hums constantly — a low, almost subsonic frequency that sounds like contentment or meditation.",
+    "clothing_style": "N/A — Bare chassis modified and repaired over 23 years. The cart itself serves as his 'clothing': a welded steel structure, painted industrial grey, with a hand-lettered sign ('UNCLE NOODLE — 340 SOUPS') in fading white paint. Soup ladles, strainers, and serving spoons hang from hooks. Steam rises from the heating elements. The aesthetic is Tier 5 street-level pragmatism — nothing decorative, everything functional and worn."
+  },
+  "image_prompt": "Cyberpunk 2226, autonomous noodle vendor robot, Kuroda Industries Model 7, squat industrial chassis on treaded wheels, four articulated arms (upper pair precise surgical, lower pair gentle), horizontal amber optical sensor bar, patchwork body panels in grey steel and safety orange, weathered refrigerator door section welded onto chassis, visible hydraulic seams and welding scars, mobile noodle cart with steaming soup station, hand-lettered sign, ladles and strainers hanging, warm steam rising, urban vertical slum setting, neon signs reflecting off wet pavement, narrow street level 5 through 9, raining slightly, cool cinematic lighting with warm amber glow from sensor and steam, gritty street-level perspective, well-worn and beloved, detailed mechanical design, atmospheric mood, cyberpunk realism, shot from human eye-level looking slightly up at vendor, --ar 2:3 --v 6"
 }

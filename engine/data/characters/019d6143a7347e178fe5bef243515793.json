@@ -211,5 +211,26 @@
     "Iron",
     "Déjà Vu"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Scandinavian (Danish)",
+    "height_cm": 178,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid without heaviness; muscular through the torso and arms from years of gripping transit controls and moving through crowded stations. Carries herself with economical strength.",
+    "hair_color": "Black with silver threading",
+    "hair_style": "Close-cropped locs, typically pinned under Ferrogate operator's cap during shifts",
+    "hair_length": "Short",
+    "eye_color": "Left eye: pale grey with amber ring (corporate-issue transit mod); Right eye: dark brown, natural",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Weathered in the way of someone who has spent 41 years in controlled environments and fluorescent light. Minimal makeup. Skin is clear, jaw defined, expression habitually composed and observant. Small horizontal creases between her brows suggest years of focused concentration.",
+    "distinguishing_marks": [
+      "Small burn scar on the inside of her right wrist, thin and precise, from early transit training accident with hot cooling line.",
+      "Faint linear scarring on her left temple, barely visible, likely from old interface calibration procedure with the ocular mod.",
+      "Calloused fingertips and palm ridges on both hands from repetitive control interface work."
+    ],
+    "visible_augmentations": "Left ocular interface: subtle grey iris with pulsing amber ring, becomes more pronounced during system interfacing. Mild cochlear dampener visible as small titanium-grade port behind left ear, usually covered by hair or cap. No cosmetic chrome.",
+    "posture_movement": "Moves with practiced grace through crowded spaces, always finding gaps in foot traffic half a step ahead of surge patterns. Stands with weight balanced, shoulders back but not rigid. Hands rest naturally at sides or on transit controls. Her right eye (natural) is in constant micro-motion, scanning; her left eye (augmented) occasionally goes distant when processing system data. Walks with purpose, never hesitates in her chosen path.",
+    "clothing_style": "Tier 3-4 working class. Standard Ferrogate Transit operator uniform: charcoal grey regulation shirt with embroidered company patch, darker grey trousers with reinforced knees, steel-toed boots scuffed from station platform work. Off-duty: practical layers appropriate to Bronzeline tier housing; worn denim, maintenance-grade synthetic jackets in greys and blacks, functional rather than fashionable. Always wears a small wire E.L.F. transit shrine pendant or keeps similar talisman accessible."
+  },
+  "image_prompt": "Portrait of a 41-year-old Black woman with Ghanaian-Danish heritage, deep umber skin, close-cropped silver-threaded locs pinned under a charcoal Ferrogate Transit operator's cap. Left eye is a pale grey cybernetic optic with a subtle pulsing amber ring, right eye is dark brown and sharp. Broad-shouldered, muscular build. Wearing a grey Ferrogate Transit regulation uniform shirt. Standing in the glow of maglev transit station lighting, fluorescent and cool-toned. Expression composed and watchful, background blurred with motion of crowded interchange. Cyberpunk transit noir, photorealistic, film grain, subtle LED glow from ocular interface, 2226 aesthetic. --ar 2:3 --v 6"
 }

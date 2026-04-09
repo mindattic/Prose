@@ -182,5 +182,24 @@
     "Copper",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Polish / Samoan",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Slim and wiry with subtle muscle definition from years of careful, economical movement. No wasted mass — built for precision rather than power.",
+    "hair_color": "Cosmetic geneware gradient: deep black at roots transitioning to copper at tips (copper shade rotated quarterly)",
+    "hair_style": "Loose, shoulder-length waves with deliberate asymmetry; often pinned back on one side to expose the tatau work",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, set wide, with the patient, cataloging gaze of someone who has learned to appear bored while absorbing everything",
+    "skin_tone": "Warm medium brown with even complexion",
+    "complexion": "Clean, minimal grooming indulgence — no decorative scarification or excessive jewelry. Face carries the neutrality of someone who has practiced stillness; expression defaults to professional disinterest until deliberately warmed",
+    "distinguishing_marks": [
+      "Tatau line-work tattoo in traditional Samoan style climbing the right wrist from ulna to mid-forearm, black ink, done by hand by their grandmother as a naming gift — the lines are slightly irregular in the traditional way, not machine-perfect"
+    ],
+    "visible_augmentations": "Subdermal data-cache implant visible as a faint rectangular outline under the skin of the right forearm, roughly 8cm long, with subtle LED-bead status indicators (green when dormant) just beneath the surface near the wrist. The color-shift hair geneware is fully visible.",
+    "posture_movement": "Economical and controlled; movements are calculated before execution. They sit with shoulders slightly forward, hands usually positioned to reach terminals or documents quickly. Walk is deliberate, never rushed. Makes minimal eye contact unless establishing dominance or reading someone. Physical stillness is practiced and perfect — they can remain motionless for extended periods without restlessness.",
+    "clothing_style": "Tier 3/4 working-class aesthetic with deliberate practicality. Typical uniform: fitted synthetic-blend cargo pants (neutral gray or black), layered tank and oversized shirt in muted tones or subtle geometric patterns (sources from own textile stock). Weathered synth-leather jacket with internal pockets organized for document concealment. Worn but maintained boots with grip-tread soles. One chain-link bracelet on left wrist (silver-tone, industrial). No visible corpo branding; deliberately unmarked. Textile stall adds layer of patterned overshirts and sample bolts they rotate as cover."
+  },
+  "image_prompt": "Portrait of a nonbinary person of mixed West African, Polish, and Samoan descent, age 28, sitting at a battered terminal in dim warm lighting. Medium height, slim build, warm brown skin. Hair is shoulder-length with a striking gradient from deep black roots to copper tips in waves; pinned back slightly asymmetrical. Dark, wide-set eyes with the flat professional gaze of someone reading you carefully. Right wrist shows a traditional Samoan tatau line-work tattoo in black. Wearing fitted gray cargo pants, layered tank and oversized dark shirt, worn synth-leather jacket. Behind them, hanging bolts of bright geometric-patterned synthetic fabric cast colored shadows. Subdermal implant visible as faint rectangular outline on right forearm with tiny green LED status bead. Cyberpunk noir, shadow and neon reflected off terminal screen, measured stillness, calculated precision in every posture. Close-cropped composition. --ar 2:3 --v 6"
 }

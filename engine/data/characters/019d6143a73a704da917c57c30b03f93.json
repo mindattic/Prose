@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Geartown, Ironvein district, near Milwaukee and Damen",
-  "description": "Zubeida is slight and precise, with medium-brown skin and natural hair she keeps in a large puff held back from her face with a band of blue polymer mesh. Her most striking feature is a geneware modification she got at nineteen — bioluminescent patches beneath the skin of her forearms and collarbones that shift color slowly between cool blue and pale gold depending on her body temperature and stress hormones, which she refers to as her 'tell' and has made absolutely no effort to conceal. She wears the clinic cooperative's uniform of rust-orange coveralls, usually with the sleeves pushed up. She is almost always seen with a scanner in one hand and a data tablet in the other, cataloguing something.\n\nZubeida is the operational backbone of the Ironvein Cooperative Clinic's blood processing and waste systems — unglamorous work that nobody thinks about until it fails. She has an encyclopedic and obsessive knowledge of blood type compatibility, contamination markers, and biohazard disposal regulations across all twelve of Meridian 88's medical zones, and she finds these regulations genuinely fascinating. She is not warm in the conventional sense — she defaults to data over comfort and finds small talk actively effortful — but she has a fierce and specific loyalty to the cooperative's mission and will fight corner-cases bureaucratically with an intensity that unnerves people who mistake her quietness for passivity. She prays earnestly and unselfconsciously to the clinic's local E.L.F., which she calls The Accountant, leaving data offerings in the form of carefully formatted inventory spreadsheets.",
+  "description": "Zubeida is slight and precise, with medium-brown skin and natural hair she keeps in a large puff held back from her face with a band of blue polymer mesh. Her most striking feature is a geneware modification she got at nineteen — bioluminescent patches beneath the skin of her forearms and collarbones that shift color slowly between cool blue and pale gold depending on her body temperature and stress hormones, which she refers to as her 'tell' and has made absolutely no effort to conceal. She wears the clinic cooperative's uniform of rust-orange coveralls, usually with the sleeves pushed up. She is almost always seen with a scanner in one hand and a data tablet in the other, cataloguing something.\n\nZubeida is the operational backbone of the Ironvein Cooperative Clinic's blood processing and waste systems — unglamorous work that nobody thinks about until it fails. She has an encyclopedic and obsessive knowledge of blood type compatibility, contamination markers, and biohazard disposal regulations across all twelve of GLMZ's medical zones, and she finds these regulations genuinely fascinating. She is not warm in the conventional sense — she defaults to data over comfort and finds small talk actively effortful — but she has a fierce and specific loyalty to the cooperative's mission and will fight corner-cases bureaucratically with an intensity that unnerves people who mistake her quietness for passivity. She prays earnestly and unselfconsciously to the clinic's local E.L.F., which she calls The Accountant, leaving data offerings in the form of carefully formatted inventory spreadsheets.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -63,7 +63,7 @@
   "narrative_function": "Logistical resource and information source about what is moving through the medical underground — blood, biological material, waste streams can tell stories; can flag unusual biological markers; provides a ground-level view of community health crises before they surface officially; unexpected bureaucratic expertise can unlock access",
   "augmentations": "Bioluminescent subdermal patches (cosmetic geneware, forearms and collarbones, blue-to-gold range); enhanced olfactory mods — part geneware, part chemical sensor implant — for detecting contamination markers in biological samples",
   "daily_life": "Zubeida arrives before anyone else to run morning contamination checks on all stored blood products, then manages intake testing for new donations. She processes bio-waste in two daily runs and spends the remainder of her time on inventory management and inter-cooperative supply coordination, which she does largely via encrypted text channels.",
-  "affiliation": "Ironvein Cooperative Clinic (community cooperative, Geartown); informal network of blood bank operators across Meridian 88",
+  "affiliation": "Ironvein Cooperative Clinic (community cooperative, Geartown); informal network of blood bank operators across GLMZ",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -181,7 +181,7 @@
   ],
   "related_entities": [
     "Helix Biosystems",
-    "Meridian 88",
+    "GLMZ",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
     "Ironvein",
     "Geartown",
@@ -192,5 +192,26 @@
     "Rust",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Polynesian (Osei-Parata)",
+    "height_cm": 163,
+    "weight_kg": 52,
+    "build": "Slight and wiry, with minimal body fat and lean musculature developed from precise repetitive work rather than conditioning. Her frame suggests someone who moves with deliberation rather than force.",
+    "hair_color": "Natural black with hints of dark brown at the roots",
+    "hair_style": "Large, well-maintained puff, pulled back and secured with a band of blue polymer mesh that matches her clinic uniform",
+    "hair_length": "Medium (approximately 12-15cm when released)",
+    "eye_color": "Dark brown, alert and analytical",
+    "skin_tone": "Medium brown with warm undertones, consistent with mixed West African and Polynesian heritage",
+    "complexion": "Clear skin with minimal grooming flourish; professional and utilitarian. Her face is angular with high cheekbones and a precise jawline. No visible scarring or blemishing — her skin condition reflects her meticulous attention to contamination protocols applied to her own body.",
+    "distinguishing_marks": [
+      "Bioluminescent subdermal patches on both forearms (inner surface), visible as faint geometric patterns beneath the skin that glow soft blue to pale gold depending on her physiological state",
+      "Matching bioluminescent patches along both collarbones, slightly more visible due to her tendency to wear coveralls with the top unzipped",
+      "No tattoos or burn marks; her body is a carefully maintained instrument"
+    ],
+    "visible_augmentations": "Bioluminescent subdermal geneware patches (forearms and collarbones) in cool blue-to-warm gold range — functional and visible, not concealed. Enhanced olfactory system suggested only by her occasional subtle behavior (pausing to 'sample' air in storage areas); no obvious external hardware.",
+    "posture_movement": "Stands with perfect spinal alignment, moves with economical precision. Her hands are rarely still — constantly adjusting, scanning, recording. She favors stillness over fidgeting but demonstrates zero casual body language. Her gaze is focused and direct, lingering on details others miss. She walks with purpose and minimal wasted motion.",
+    "clothing_style": "Rust-orange Ironvein Cooperative Clinic coveralls (Tier 4 community resource wear), usually with sleeves pushed up to mid-forearm to display her bioluminescent patches and allow for constant scanning/data input. Underneath, practical black layers. No jewelry, no personal adornment. Her sole concession to non-functional aesthetics is the blue polymer mesh hair band, which serves both function and subtle personal expression."
+  },
+  "image_prompt": "Cyberpunk character portrait, frontal and 3/4 view: a slight 27-year-old Black woman, medium-brown skin, angular cheekbones, dark alert eyes. Large natural hair puff held back with blue polymer mesh band. Wearing rust-orange clinical coveralls with sleeves pushed up, exposing bioluminescent subdermal patches on forearms and collarbones glowing cool blue-to-pale gold, geometric patterns beneath skin surface. One hand holding a handheld scanner, other hand holding a data tablet. Standing in clinical bio-processing environment with soft LED lighting, stainless steel storage units in background. Precise posture, analytical expression, no smile. Geartown industrial aesthetic, warm overhead lighting casting slight shadows across her bioluminescence, clinical and utilitarian mood. Hard-focus photography style, shallow depth of field. --ar 2:3 --v 6"
 }

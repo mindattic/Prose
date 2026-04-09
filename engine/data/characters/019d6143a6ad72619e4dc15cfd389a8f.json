@@ -253,5 +253,26 @@
     "Tibor Osei-Svanstrom",
     "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East African / Scandinavian",
+    "height_cm": 163,
+    "weight_kg": 58,
+    "build": "Compact and wiry with lean muscle from constant tunnel running; chest and shoulders developed from pressing against walls and pipes; core strength evident in posture",
+    "hair_color": "Dark brown with natural reddish undertones",
+    "hair_style": "Uncut, deliberately maintained wild cloud of tight curls; no styling beyond occasional finger-combing",
+    "hair_length": "Long (shoulder-length when compressed)",
+    "eye_color": "Dark brown, alert and constantly moving",
+    "skin_tone": "Medium brown with warm undertones reflecting mixed heritage",
+    "complexion": "Young face with high cheekbones, perpetually animated; gap-toothed grin is default expression; skin shows minor scrapes and calluses from tunnel work but generally healthy; no facial hair",
+    "distinguishing_marks": [
+      "Geneware-modified ears: enlarged beyond baseline human proportion, with visible delicate ridge patterns beneath skin surface suggesting internal structural enhancement; ears capable of independent tilting and orientation; ear tissue slightly paler than surrounding skin where modification is most prominent",
+      "Callused palms and fingertips from repeated wall-contact during echo mapping",
+      "Small burn scar on left forearm (3cm) from contact with heated pipe during early tunnel work"
+    ],
+    "visible_augmentations": "Enlarged, orientable geneware ears with visible internal ridge structure; ears move independently and frequently during conversation and work. Wears a battered handheld voice-recorder on a frayed fabric cord around neck as constant tool/accessory.",
+    "posture_movement": "Restless and kinetic; rarely still; frequently tilts head to angle ears toward sound sources; moves with a runner's efficiency through spaces; hands gesture expressively when talking; leans in close when listening intently; moves through environments with practiced familiarity suggesting deep spatial memory",
+    "clothing_style": "Tier 5 practical wear: reinforced canvas utility pants with multiple pockets (some containing audio equipment); worn thermal underlayer; heavy canvas jacket with reflective patches; sturdy scuffed boots with good traction. Clothing shows regular wear and minor repairs but is well-maintained. Carries frequency analyzer and voice-recorder as constant accessories."
+  },
+  "image_prompt": "A compact 19-year-old East African-Scandinavian male with medium-brown skin, alert dark eyes, and an uncut wild cloud of tight dark curls. His most striking feature: geneware-modified ears enlarged beyond human baseline with visible delicate internal ridge patterns, tilted attentively forward. Gap-toothed grin, perpetually animated expression. Lean wiry build from constant movement. Wearing worn Tier 5 canvas utility jacket with reflective patches, reinforced pants, scuffed boots. Battered voice-recorder on cord around neck. Standing in dim tunnel environment with industrial pipes visible behind; underground concrete and metal surroundings. Cyberpunk aesthetic, subterranean, gritty realism. Cool blue-tinted industrial lighting with warm practical work-lights. Focused, energetic posture. Midjourney illustration style, character portrait. --ar 2:3 --v 6"
 }

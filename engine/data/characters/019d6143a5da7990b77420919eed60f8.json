@@ -265,5 +265,26 @@
     "Rust",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Russian/Polish) / Latin American (Spanish)",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and lean with developed forearm and hand musculature from precise repetitive work; economical movement, no wasted space",
+    "hair_color": "Color-shifting synthetic — currently cycling amber to rust tones on a slow progression",
+    "hair_style": "Textured fade with longer crown, styled back and to one side; the color-shift is programmed to cycle visibly throughout the day",
+    "hair_length": "Medium (crown 8cm, sides 3cm)",
+    "eye_color": "Dark brown, alert and observant",
+    "skin_tone": "Deep brown-black with warm undertones",
+    "complexion": "Clear, well-maintained skin; jawline is defined; expression typically composed but capable of rapid shifts to humor or intensity. Minimal facial hair, kept groomed.",
+    "distinguishing_marks": [
+      "Bioluminescent patches running along both collarbones in geometric patterns (cyan-blue glow, pulse-reactive to emotional state)",
+      "Bioluminescent patches along both forearms in complementary geometric designs (cyan-blue, synchronized with collarbone patches)",
+      "Small scar on left ring finger from an early apprenticeship mistake, barely visible"
+    ],
+    "visible_augmentations": "Bioluminescent skin patches (collarbones and forearms) that pulse with visible color shift when calm or quicken during excitement; color-changing hair with visible shift cycle. Subdermal haptic feedback in fingertips is not externally visible but evidenced by precision hand control.",
+    "posture_movement": "Stands with weight balanced, ready to move; hands are still at rest but capable of micro-adjustments. Moves economically, rarely gestures broadly. In conversation, leans in slightly and maintains steady eye contact; the quiet they create in conversation is intentional and centered, not awkward.",
+    "clothing_style": "Tier 3-4 practical aesthetic: fitted black or deep-grey utility pants with reinforced pockets; cropped or fitted tops in muted colors (charcoal, slate, deep forest) or occasionally bold solid colors that complement the hair cycle. Wears a well-maintained leather apron (black, custom fitted) during work with pockets for tools. Off-duty: looser fits, streetwear influenced, willing to wear color. No corpo branding; favors independent makers and collective artisan pieces. Keeps nails short and clean, cuticles maintained."
+  },
+  "image_prompt": "Cyberpunk character portrait, close-up of a short, compact nonbinary person with deep brown-black skin, color-shifting hair cycling through amber and rust tones, intense and focused expression. Bioluminescent geometric patterns glowing soft cyan-blue along collarbones and forearms, pulsing gently. Wearing a fitted dark utility top and leather work apron, hands visible and precisely still. Set in a dimly lit barbershop interior with warm overhead lighting catching the bioluminescent glow. Mood: calm, observant, artistic precision. High detail on skin texture and augmentation glow. Photography style, portrait orientation, cyberpunk aesthetic, shallow depth of field, moody atmospheric lighting --ar 2:3 --v 6"
 }

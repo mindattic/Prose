@@ -224,5 +224,27 @@
     "Glass",
     "Teak"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Kalenjin (East African) / Portuguese",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Broad-shouldered and strong-limbed, with the dense musculature of someone who works with heavy glass and metal. Not athletic in the conventional sense — her strength is functional, built from years of precise physical labor. Her torso is substantial without being heavy.",
+    "hair_color": "Deep brown-black, naturally dark",
+    "hair_style": "Locked into dense, tight rope braids; threaded throughout with segments of defunct fiber-optic cable that catch and scatter ambient light in subtle halos",
+    "hair_length": "Long (mid-back length)",
+    "eye_color": "Amber (natural), left eye contains visible magnification implant with faint reticle grid visible at certain angles",
+    "skin_tone": "Rich teak-brown with warm undertones, reflecting her Kalenjin-Portuguese heritage",
+    "complexion": "Sharp, angular features — wide-set eyes, prominent jaw, high cheekbones. Skin is clear but perpetually dusted with microscopic neon-tube sealant particles that give it a faint crystalline sheen. No visible scarring on the face. Grooming is minimal; she prioritizes function over presentation.",
+    "distinguishing_marks": [
+      "Bioluminescent dermal wash coating both forearms from wrist to elbow, glowing soft amber when activated during dark-hours work",
+      "Matching bioluminescent wash across both collarbones and upper chest, pulsing slowly in sync with her work rhythm",
+      "Fine acid burn scars across the backs of both hands (white, thin lines), souvenirs from early tube-sealing experiments",
+      "Callused fingertips and palms, darkened from solder contact and heat exposure"
+    ],
+    "visible_augmentations": "Left eye contains a magnification implant visible as a faint prismatic shimmer in the iris; a delicate reticle grid is sometimes visible when light hits it directly. Both forearms and collarbones glow with slow-pulsing amber bioluminescence when she works in darkness. The fiber-optic cable woven through her hair is not an augmentation but salvaged tech that catches light.",
+    "posture_movement": "Deliberately slow and methodical; she moves with the precision of someone used to handling fragile, dangerous materials. Her head tilts frequently — she studies people and objects with the intensity of someone cataloging light sources. When focused on work, she becomes nearly motionless, all energy concentrated in her hands. In conversation, she will abruptly pause mid-sentence to stare at something in the environment, apparently unconcerned about social awkwardness.",
+    "clothing_style": "Tier 2 practicality with artistic individualism. She typically wears heavy-duty canvas work aprons over fitted black or charcoal long-sleeve shirts (heat and solder protection). Her pants are reinforced denim or hemp-canvas, darkly stained with sealant and solder residue. Her footwear is always steel-toed: black utilitarian boots or work shoes. Over this, she wears a loose oversized linen coat (cream or light gray) that she removes when welding. A pair of heavy welding gloves dangles from her apron pocket at all times. Jewelry is minimal — a single silver ring on her right ring finger, hand-forged. No makeup. She smells of ozone, solder, and faintly of the bioluminescent dermal wash (a metallic-floral scent)."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 38-year-old woman with Kalenjin-Portuguese heritage, teak-brown skin, wide-set amber eyes, sharp angular features and a prominent jaw. She wears her dark hair in thick, tight rope braids threaded with segments of glowing fiber-optic cable. Her forearms and collarbones emit a soft slow-pulsing amber bioluminescent glow. She is dressed in heavy-duty artist's clothing: a stained canvas work apron over a fitted black long-sleeve shirt, reinforced dark denim, and steel-toed black boots. Welding gloves hang from her apron pocket. Fine acid-burn scars mark the backs of her hands. Her posture is methodical and precise. She is dusted with faint neon-tube sealant particles that give her skin a crystalline sheen. Setting: her neon workshop at night, surrounded by partially completed glowing glass sculptures of religious imagery and ELF shrines, lit only by her own creations and the ambient bioluminescence of her skin. Mood: devotional, focused, meticulous. Lighting: dramatic shadows cast by neon tubes and her own body luminescence, cool blues and warm ambers. Photography style: hyper-detailed character study, cinematic, 35mm film grain. --ar 2:3 --v 6"
 }

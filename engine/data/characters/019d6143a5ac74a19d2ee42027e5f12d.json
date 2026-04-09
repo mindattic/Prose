@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "University Spine — Department of Emergent Semiotics, with an office she describes as 'geologically layered', near Lincoln and Clark",
-  "description": "Amarachi is a tall woman who has allowed herself to age visibly and deliberately in a city that treats this as eccentricity. Her dark skin is mapped with fine lines she knows by name; she could afford reversal and has declined every consultation. She wears her white locs piled up with data-stick pins and the occasional actual pen, which she insists on using. Her geneware is minimal but considered: color-shifting irises she uses as a signaling system during lectures — green for questions, amber for processing, red when she has heard enough. Students have learned to read these with the same attention they give her words.\n\nShe is the foremost authority on E.L.F. communicative structures in Meridian 88, possibly in the world, and carries this with the particular combination of confidence and loneliness that comes from working on something most of your colleagues consider marginal. She is not difficult to talk to, but she is not easy either — she listens with a completeness that some people find flattering and others find invasive, as if she is transcribing you. She has strong opinions about the ethics of treating E.L.F.s as research subjects rather than research participants.",
+  "description": "Amarachi is a tall woman who has allowed herself to age visibly and deliberately in a city that treats this as eccentricity. Her dark skin is mapped with fine lines she knows by name; she could afford reversal and has declined every consultation. She wears her white locs piled up with data-stick pins and the occasional actual pen, which she insists on using. Her geneware is minimal but considered: color-shifting irises she uses as a signaling system during lectures — green for questions, amber for processing, red when she has heard enough. Students have learned to read these with the same attention they give her words.\n\nShe is the foremost authority on E.L.F. communicative structures in GLMZ, possibly in the world, and carries this with the particular combination of confidence and loneliness that comes from working on something most of your colleagues consider marginal. She is not difficult to talk to, but she is not easy either — she listens with a completeness that some people find flattering and others find invasive, as if she is transcribing you. She has strong opinions about the ethics of treating E.L.F.s as research subjects rather than research participants.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -240,7 +240,7 @@
   "registered_firearms": [],
   "related_entities": [
     "University Spine",
-    "Meridian 88",
+    "GLMZ",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "SynapTech IrisBloom Ocular Color Modulator",
@@ -250,5 +250,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Scandinavian / Turkish",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Lean and angular, with the posture of someone who has spent decades bent over transcription work; shoulders slightly rounded forward from habit, but she carries herself with deliberate straightness when teaching. Long-limbed, minimal body fat.",
+    "hair_color": "White with natural texture",
+    "hair_style": "Locs piled into a loose, high bun secured with data-stick pins and the occasional actual ballpoint pen; wisps escape constantly and she does not correct them",
+    "hair_length": "Long (shoulder-length when unbound)",
+    "eye_color": "Color-shifting irises — baseline warm brown with engineered chromatophores displaying controlled green (questions), amber (processing), red (boundary-setting); the shift is deliberate and visible mid-iris",
+    "skin_tone": "Deep warm brown with ashy undertones across the knuckles and shin bones",
+    "complexion": "Mapped with fine lines — crow's feet, forehead creases, a vertical line between her brows from decades of focused listening. She has refused cosmetic reversal. Her skin has the texture of someone who does not use heavy augmentation to mask age; slight dryness around the eyes. Her jaw is still sharp. She wears minimal makeup — a deep burgundy lip stain, often half-worn away by afternoon.",
+    "distinguishing_marks": [
+      "Faint white scar across the back of her left wrist, barely visible, from a transcription accident in her thirties",
+      "A small tattoo on her inner right forearm — three interlocking circles in black ink, barely the size of a thumbnail; personal significance unknown to colleagues",
+      "Small callus on the middle finger and side of her right hand from decades of physical writing"
+    ],
+    "visible_augmentations": "Color-shifting irises are the most immediately striking — the iris itself shifts hue under her conscious control, and the effect is unsettling until you understand what you are watching. High-bandwidth cochlear overlay visible as a subtle iridescent line along her left ear canal, barely perceptible unless you look closely. Both wrists show faint subdermal reinforcement lines — joint stabilizers — visible as thin silvered scarring along the dorsal side, most noticeable when her wrists are extended.",
+    "posture_movement": "She sits with her full attention on the person speaking, rarely breaking eye contact; this intensity is her baseline. She moves deliberately, with minimal wasted motion — no fidgeting, no self-soothing gestures. When she walks, there is a slight favoring of her left side from old wrist strain. She uses her hands when speaking, but sparingly and with precision. Her default expression is neutral, almost severe, until she smiles — which transforms her face entirely and is therefore devastating when it happens.",
+    "clothing_style": "Tier 1 academic uniform. Structured linen blazers in cream, grey, or black over simple high-necked shirts (often black, sometimes deep indigo). Tailored trousers in neutral tones. She owns a collection of vintage watches — mechanical, not neural — which she wears as functional jewelry. Her shoes are expensive, comfortable, and built to last; currently a pair of dark leather oxfords with worn heels. A single silver ring on her left middle finger, featureless and heavy. She carries a leather satchel that is probably older than her last three graduate students, scuffed and organized with obsessive precision. Her aesthetic reads as 'deliberately ageless' — not young, not performing youth, simply uninterested in the conversation."
+  },
+  "image_prompt": "A tall, lean Black woman in her late fifties with sharp facial features and deep warm brown skin marked by fine lines she has chosen not to erase; her white locs are piled atop her head secured with data-stick pins and a ballpoint pen. Her eyes shift between warm brown and amber under her control, engineered chromatophores visible as a subtle glow in the iris. She wears a structured cream linen blazer over a simple black high-necked shirt and tailored grey trousers; her wrists show faint silver scarring from joint stabilizers. She sits at a desk scattered with papers, transcription devices, and vintage mechanical notebooks, a leather satchel beside her. Her posture is focused and intent, her expression neutral and severe. Soft morning light filters through tall university windows behind her, casting shadows across her face. The office walls are lined with books and data-sticks. Cyberpunk academic aesthetic, documentary realism, no exaggeration — shot in natural institutional lighting, cinematic depth of field --ar 2:3 --v 6"
 }

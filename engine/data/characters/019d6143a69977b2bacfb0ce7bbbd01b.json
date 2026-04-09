@@ -210,5 +210,27 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "The Pale Mile"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East African / Serbian",
+    "height_cm": 183,
+    "weight_kg": 104,
+    "build": "Heavyset and broad-shouldered with a longshoreman's frame softened by age and sedentary work; substantial in the chest and torso, thick through the middle, but with surgeon's hands — long-fingered, steady, scarred at the knuckles from years of precise work in unforgiving conditions.",
+    "hair_color": "Dark brown, graying at temples and jaw",
+    "hair_style": "Neat, close-cropped beard covering the lower third of his face; head hair slicked back with practical grooming oil, receding slightly at the crown",
+    "hair_length": "Short",
+    "eye_color": "Pale gray (augmented medical optics with faint luminescent ring when active)",
+    "skin_tone": "Deep brown, weathered and dull from prolonged sub-level exposure, lacking the evenness of someone who sees daylight regularly",
+    "complexion": "Heavily lined face, especially around the eyes and mouth — the etching of someone who has spent years in artificial light and cold air. Deep creases bracket his mouth. His skin is thick-textured, with visible pores enlarged from the preservative gel that clings to him; a faint chemical smell emanates from his pores and clothes.",
+    "distinguishing_marks": [
+      "Surgical scar along his left forearm, approximately 12cm, pale and deliberate — self-inflicted during medical training decades ago.",
+      "Thin white line along his right temple, partially hidden by receding hairline — result of a Ferrogate security incident he does not discuss.",
+      "Calluses across both palms in a precise grid pattern, matching the subdermal temperature array beneath the skin — visible as faint raised lines when his hands are lit from the side.",
+      "Age spots on the backs of his hands, concentrated near his knuckles."
+    ],
+    "visible_augmentations": "Medical-grade optics replacing natural irises — pale gray with a subtle luminescent boundary and faint targeting reticule visible when he concentrates. Subdermal temperature monitoring array beneath the skin of both palms manifests as fine, pale scar-tissue grid lines. No other visible chrome.",
+    "posture_movement": "Moves with deliberate, economical efficiency — no wasted motion. Stands with shoulders slightly forward, habituated to working over tables and surfaces. Hands are always semi-active, fingers unconsciously flexing or touching surfaces as if assessing texture and temperature. His gait is steady but heavy, the footfall of a man carrying weight both physical and moral. He maintains eye contact slightly too long when assessing someone, the augmented optics lingering.",
+    "clothing_style": "Practical Tier 4 utilitarian: long, heavy thermal coat in matte charcoal gray (Cerulean Logistics surplus, slightly altered), worn over layers of moisture-wicking undershirts in dark colors. The coat's pockets are reinforced and deep — designed for cold-packs and sealed medical containers. Beneath, thermal compression leggings and steel-toed boots scuffed from sub-level work. A thin chain around his neck disappears beneath his shirt — a field medic's insignia from Ferrogate, kept hidden. Everything smells faintly of preservation gel and cold metal. No jewelry beyond a simple stainless steel watch he checks compulsively."
+  },
+  "image_prompt": "Portrait of a 44-year-old heavyset East African-Serbian man with deep brown weathered skin, short dark hair graying at temples, neat gray beard, and pale gray augmented medical optics with subtle luminescence. Lined face with creases around eyes and mouth, faint chemical weathering. Surgeon's hands visible with faint subdermal grid scars on palms. Wearing a long matte charcoal thermal coat over dark compression layers, reinforced pockets, steel-toed boots. Standing in dim fluorescent light of a sub-level cold-storage facility, faint mist in background. Pose suggests deliberate, economical movement. Expression neutral, almost emptied out. Cyberpunk aesthetic, realistic portraiture, low-key clinical lighting, slight color grade toward cool blue-gray tones. Subtle aura of preservative chemical smell in the air. Intimate and unsettling. --ar 2:3 --v 6"
 }

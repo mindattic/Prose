@@ -180,7 +180,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born in Montclare Quiet, third-generation Meridian 88 resident",
+      "event": "Born in Montclare Quiet, third-generation GLMZ resident",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -250,5 +250,26 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Gold"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Fijian / Polish",
+    "height_cm": 162,
+    "weight_kg": 78,
+    "build": "Stocky and substantial, with a wide frame that reads as grounded and immovable. Decades of union organizing and manual labor have built dense muscle beneath generous padding; she moves with the economy of someone who knows exactly how much space she occupies.",
+    "hair_color": "Silver-black",
+    "hair_style": "Thick braid, usually bound with a simple cord or elastic, occasionally adorned with small beads her grandchildren have gifted her",
+    "hair_length": "Long",
+    "eye_color": "Deep brown, alert and calculating",
+    "skin_tone": "Warm medium brown with golden undertones, reflecting Fijian heritage",
+    "complexion": "Lined face that reads as lived-in rather than aged; laugh lines around eyes and mouth are deep; skin has the slight weathering of someone who spent decades outdoors during transit operations; minimal makeup, usually just a dark lipstick in deep berry or burgundy",
+    "distinguishing_marks": [
+      "Bioluminescent tattoo array covering both forearms and extending onto the backs of her hands — traditional Fijian knotwork rendered in soft gold light that pulses faintly with her heartbeat, visible even in daylight as an iridescent shimmer beneath the skin",
+      "Thin, pale scar running from her left temple down to her jaw line — result of corporate security baton strike during the 2168 Ferrogate transit strike, now mostly faded but still visible under certain angles of light",
+      "Small calluses on the inside of her fingers from decades of writing, signing documents, and holding protest signs"
+    ],
+    "visible_augmentations": "Bioluminescent tattoo array (geneware-integrated, glowing gold knotwork on both arms). Small rounded dark-furred cat ears (geneware cosmetic modification, proportional to her head, always alert). Left ear shows a barely-visible surgical scar where cochlear enhancement implant was installed — the implant itself is internal and not visible, but the scar is noticeable if you're close enough.",
+    "posture_movement": "She stands with her weight evenly distributed, shoulders back but not rigid — the posture of someone trained to command rooms without appearing aggressive. Her movements are deliberate and economical; she doesn't fidget or gesture excessively. When she walks, there's a slight favoring of her right side, a legacy of old injuries. Her default expression is listening — she makes sustained eye contact and allows silence without filling it, which makes people nervous and makes her dangerous in negotiations.",
+    "clothing_style": "Tier 3 working-class aesthetic with deliberate touches of dignity. She favors well-maintained practical clothing: dark jeans or work pants, usually paired with a button-up shirt in jewel tones (deep emerald, burgundy, navy) or understated patterns; cardigan or well-cut blazer worn over everything as armor and professionalism. Her shoes are sensible and broken in, usually leather boots that have been resoled multiple times. She wears a thick gold wedding band on her left hand (widowed fifteen years) and a silver pen on a chain around her neck — a gift from the union on her retirement. No flashy corporate wear, no Tier 1 affectation, but nothing threadbare either. Everything is clean, mended where necessary with visible care, and arranged to project quiet authority without ostentation."
+  },
+  "image_prompt": "Portrait of a 68-year-old woman with Fijian-Polish heritage, warm medium-brown skin, silver-black hair in a long thick braid. Small dark-furred cat ears visible. Both forearms display intricate bioluminescent gold knotwork tattoos that glow softly. Deep brown eyes, weathered face with laugh lines, slight scar on left jaw. Wearing dark jeans and a deep emerald button-up shirt under a well-worn cardigan, gold wedding band visible. Standing with dignified posture in a modest Tier 3 apartment with worn but clean walls, late afternoon light from a window casting warm shadows. Calm, commanding presence, the bearing of someone who has spent decades leading. Soft interior lighting, natural and warm. Cyberpunk genre, realistic portraiture, grounded and human-centered. --ar 2:3 --v 6"
 }

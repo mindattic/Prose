@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Belmont",
-  "description": "Malika Ivanov-Appiah is compact and densely muscled, built low to the ground like something designed to survive impacts. At 41, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a rigger out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nMalika Ivanov-Appiah has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "description": "Malika Ivanov-Appiah is compact and densely muscled, built low to the ground like something designed to survive impacts. At 41, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a rigger out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nMalika Ivanov-Appiah has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.96,
@@ -156,7 +156,7 @@
     },
     "strengths": [
       "pain tolerance beyond normal limits",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "trust issues that limit crew effectiveness",
@@ -275,7 +275,7 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Canopy Station Nine",
     "The Nearfield",
     "Geartown",
@@ -286,5 +286,26 @@
     "Clover",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "East European / West African",
+    "height_cm": 158,
+    "weight_kg": 62,
+    "build": "Compact and densely muscled, low center of gravity — shoulders broad relative to frame, core visibly defined. Built like a shock-absorber, all functional compression, no excess.",
+    "hair_color": "Dark brown with premature grey threading through — she doesn't dye it",
+    "hair_style": "Pulled back in a tight, practical braid; loose strands never tolerated",
+    "hair_length": "Medium",
+    "eye_color": "Amber-brown, natural",
+    "skin_tone": "Warm medium brown with olive undertones",
+    "complexion": "Weathered but precise — skin unmarked by acne or negligence, suggests deliberate maintenance. Fine lines around eyes from squinting at screens. Jaw pronounced. Expression defaults to neutral observation.",
+    "distinguishing_marks": [
+      "Neural interface jack at base of skull — brushed steel, visible when hair is pulled back, slightly raised scar tissue around the port from six years of active use",
+      "Thin white scar running from left temple to cheekbone, approximately 8cm — clean surgical precision, possibly from old augmentation work",
+      "Small burn mark on inside of right wrist — pale, circular, diameter of a cigarette — origin unknown, refuses to discuss"
+    ],
+    "visible_augmentations": "Neural interface jack at base of skull is the primary visible chrome. No prosthetics. Neural dampener is subcutaneous — not visible but may cause subtle electromagnetic signature near scalp if scanned. Fingernails are reinforced with subdermis plates — slightly too glossy, respond to light like polished metal.",
+    "posture_movement": "Moves economically, no wasted motion. Sits with weight distributed low and centered — ready to move in any direction. Eyes constantly tracking exits and sightlines. Hands rest in lap or on table edge, never crossed or defensive. When standing, favors a slight forward lean — aggressive listening posture.",
+    "clothing_style": "Tier 3-4 utilitarian: fitted black reinforced cargo pants with thigh pockets, grey or black synthetic tops under a weathered tan canvas jacket with internal rig pockets. Boots are corporate-surplus tactical grade, broken in to near-invisibility. No visible logos or affectation. Everything functional, nothing decorative. Carries a slim deck-rig in a shoulder holster, barely visible under jacket."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 41-year-old compact woman with dark brown hair streaked grey, pulled back in a tight braid, amber-brown eyes, warm medium brown skin with olive undertones. Dense, muscular build, low center of gravity. Visible brushed steel neural interface jack at base of skull. Faint scar from temple to cheekbone. Wearing fitted black cargo pants and grey synthetic top under weathered tan canvas jacket with rig pockets. Tactical boots. Neutral, observant expression. Sitting in low-centered posture, hands resting on table. Dimly-lit runner bar or safe house interior, neon blue-tinted overhead light, metallic shadows. Gritty, professional atmosphere. Film noir meets cyberpunk. Moody, high contrast lighting. Cinematic realism. --ar 2:3 --v 6"
 }

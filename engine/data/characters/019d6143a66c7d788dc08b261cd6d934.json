@@ -193,5 +193,25 @@
     "Geartown",
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Central European (Nigerian / Hungarian-Polish)",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Athletic and broad-shouldered with dense musculature developed through deliberate training. Wide through the chest and back, tapering to a narrow waist. Forearms show pronounced muscular definition. No excess body fat.",
+    "hair_color": "Black, natural",
+    "hair_style": "Tight cornrow plaits, pulled back close to the scalp",
+    "hair_length": "Medium (plaits extend 8-10cm from scalp)",
+    "eye_color": "Dark brown",
+    "skin_tone": "Very dark brown, rich undertone",
+    "complexion": "Smooth skin with high definition facial structure. Prominent cheekbones and a squared jawline. Expression carries quiet intensity.",
+    "distinguishing_marks": [
+      "Raised scar tissue along left cheekbone from a fight, approximately 4cm in length, parallel to the cheekbone",
+      "Chevron-pattern elective scarification across both shoulders in deliberate ceremonial style, echoing ancestral markings, pale raised tissue against dark skin"
+    ],
+    "visible_augmentations": "Retractable reinforced knuckle plating on both hands — visible as subtle metallic ridge patterns across the knuckles when hands are relaxed, fully concealed when fists are clenched. No other visible chrome or implants.",
+    "posture_movement": "Carries herself with the settled confidence of someone comfortable in her own strength. Stands with shoulders back and spine neutral. Moves with economical, purposeful motions — no wasted energy. When teaching, presence expands; when listening, she goes still.",
+    "clothing_style": "Tier 3-4 practical wear: fitted athletic tank or moisture-wicking long-sleeve compression shirt (often with Ironbody Cooperative logo). Cargo pants or stretchy training trousers with functional pockets. Worn but well-maintained sneakers (usually Reebok or similar mid-range athletic brand). Minimal jewelry — a simple woven bracelet, possibly some personal token. Callused hands, short functional nails. Overall aesthetic: someone who dresses for function and movement, not display."
+  },
+  "image_prompt": "A 38-year-old woman of West African and Central European descent, athletic and broad-shouldered with defined musculature, dark smooth skin with raised ceremonial scarification chevrons across both shoulders, tight cornrow plaits pulled close to scalp, dark intense eyes and squared jawline, visible scar tissue on left cheekbone, wearing fitted moisture-wicking athletic tank top and cargo training pants, standing in an industrial gym space with exposed brick and reclaimed factory beams, cool LED overhead lighting, hands at rest showing subtle metallic knuckle implants, confident grounded posture, photorealistic athletic portrait, shallow depth of field, warm skin tone against cool blue-tinted gym lighting, professional athlete aesthetic --ar 2:3 --v 6"
 }

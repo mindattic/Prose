@@ -202,5 +202,26 @@
     "Palette",
     "Gold"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Turkish",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Lanky and lean with the stretched look of someone who moves constantly and eats irregularly; long-limbed, narrow-shouldered, minimal body fat",
+    "hair_color": "Black with natural tight curl",
+    "hair_style": "Close-cropped, neatly maintained despite poverty",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Warm amber undertone, medium-dark complexion",
+    "complexion": "Sharp facial structure, high cheekbones, expressive eyes; skin is clear but shows the pallor of someone who spends time indoors reading corrupted media; no facial hair",
+    "distinguishing_marks": [
+      "Bioluminescent patches along both collarbones in circuit-trace patterns, glowing slow blue-gold",
+      "Bioluminescent patches on the backs of both hands in matching circuit-trace patterns, visible when hands are exposed",
+      "Small surgical scar at the base of skull, slightly behind right ear, where the neural read port was installed"
+    ],
+    "visible_augmentations": "The bioluminescent skin mods are immediately visible and deliberately ornamental — they pulse slowly at rest and brighten when he concentrates. The neural port at the base of his skull is visible as a subtle raised scar with faint metallic threading if his hair is swept back. His movements occasionally sync with the bioluminescence, suggesting active neural engagement.",
+    "posture_movement": "Restless and fidgety at rest, constantly adjusting his patchwork robes or touching the worn canvas bag; walks with a purposeful lope, slightly uneven gait as if his mind is always ahead of his body; hands gesture frequently when speaking, and his bioluminescent patches brighten with animated discussion; eyes have a distant, inward quality when he's concentrating on readings",
+    "clothing_style": "Tier 4 utilitarian ascetic — a Tessera maintenance jacket (faded grey, patched at elbows), thermal underlayers visible at the neckline and wrists, a hand-embroidered sash of data symbols wrapped around his waist (blues and golds matching his bioluminescence), worn cargo pants with multiple pockets, soft-soled slip-on shoes. Everything is clean but worn. He carries a battered canvas messenger bag stuffed with cracked screens, salvaged drives, and data readers, and a small cloth pouch containing divination materials."
+  },
+  "image_prompt": "A lanky 28-year-old man of West African and Turkish heritage with warm amber skin and close-cropped black curly hair, standing in moody cyberpunk lighting. His collarbones and the backs of his hands glow with slow pulsing blue-gold bioluminescent circuit-trace patterns. He wears a patched grey Tessera maintenance jacket over thermal underlayers, a hand-embroidered data-symbol sash at his waist, and carries a worn canvas bag bulging with cracked screens and salvaged tech. His expression is earnest and slightly distant, eyes deep brown and thoughtful. The lighting is cool and atmospheric, emphasizing the soft glow of his augmentations against shadows. Urban monastery setting with faint neon reflections on worn surfaces. Shot in portrait style, cyberpunk aesthetic with spiritual undertones. Intricate detail on the circuit patterns of his bioluminescence. --ar 2:3 --v 6"
 }

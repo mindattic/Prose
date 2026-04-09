@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "Deepwell Station — lives in McKinley Flats in a modest building with structural damp he has stopped reporting, near sub-level access near Dearborn and Jackson",
-  "description": "Rafał is thickset and weathered, with the specific bodily competence of someone who lifts heavy things in bad conditions for a living. His skin is mid-brown and perpetually flushed, his hair a faded reddish-brown that he keeps pulled back under a work cap. He smells, faintly and always, of the disinfectant compounds used in medical waste processing — a smell that precedes him and that he no longer notices at all, though those around him do. He has a single geneware modification: a gene-tweaked set of enhanced scent glands that he had installed for purely practical reasons (early detection of dangerous biological contamination), which has the side effect of making him an uncommonly attentive reader of a room's emotional atmosphere in ways he cannot fully articulate but acts on instinctively.\n\nRafał has been collecting the city's biological refuse for sixteen years. He moves through Meridian 88's medical ecosystem like a shadow — present at every clinic, every hospital loading bay, every back-alley surgical setup, invisible and indispensable. He has seen things disposed of that should have been reported. He has seen labels that don't match contents. He has seen waste streams from addresses that don't appear in any city directory. He is not, by temperament, an activist or an investigator. He is a man who goes to work, comes home, watches old footage of Polish basketball leagues that no longer exist, and tries not to think too hard about what he has seen. He is not entirely successful at this.",
+  "description": "Rafał is thickset and weathered, with the specific bodily competence of someone who lifts heavy things in bad conditions for a living. His skin is mid-brown and perpetually flushed, his hair a faded reddish-brown that he keeps pulled back under a work cap. He smells, faintly and always, of the disinfectant compounds used in medical waste processing — a smell that precedes him and that he no longer notices at all, though those around him do. He has a single geneware modification: a gene-tweaked set of enhanced scent glands that he had installed for purely practical reasons (early detection of dangerous biological contamination), which has the side effect of making him an uncommonly attentive reader of a room's emotional atmosphere in ways he cannot fully articulate but acts on instinctively.\n\nRafał has been collecting the city's biological refuse for sixteen years. He moves through GLMZ's medical ecosystem like a shadow — present at every clinic, every hospital loading bay, every back-alley surgical setup, invisible and indispensable. He has seen things disposed of that should have been reported. He has seen labels that don't match contents. He has seen waste streams from addresses that don't appear in any city directory. He is not, by temperament, an activist or an investigator. He is a man who goes to work, comes home, watches old footage of Polish basketball leagues that no longer exist, and tries not to think too hard about what he has seen. He is not entirely successful at this.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -42,7 +42,7 @@
     "secret": "He has kept a private logbook — physical, hidden at home — noting irregularities in waste streams over the past six years. Address discrepancies, label mismatches, biological material disposed of under false categories. He started it as a kind of anxious accounting, telling himself he'd know what to do with it eventually. He does not know what to do with it."
   },
   "speech_patterns": {
-    "vocabulary": "Plain and direct, working-class Meridian 88 vernacular with Polish-Zimbabwean idiom showing in his rhythm — phrases like 'that is what it is' functioning as punctuation for things he finds troubling",
+    "vocabulary": "Plain and direct, working-class GLMZ vernacular with Polish-Zimbabwean idiom showing in his rhythm — phrases like 'that is what it is' functioning as punctuation for things he finds troubling",
     "cadence": "Unhurried, flat, slightly deliberate — the speech of someone who is used to not being listened to and has stopped performing urgency",
     "verbal_tics": [
       "'That is what it is' for things he finds troubling",
@@ -228,8 +228,29 @@
     "McKinley Flats",
     "Unregistered",
     "The Narrows Compact",
-    "Meridian 88",
+    "GLMZ",
     "TESSERA PA-5 'Attendant'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Polish / Scandinavian (Nordic)",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Thickset and muscular through heavy labor, broad shoulders tapering to a functional frame. Chest and forearms show developed muscle from sixteen years of lifting biohazard containers. Beginning to carry weight in the midsection from routine and modest diet, but still functionally strong.",
+    "hair_color": "Faded reddish-brown with early grey at temples",
+    "hair_style": "Pulled back under a work cap most hours; when loose, shoulder length and somewhat matted from perspiration and humidity",
+    "hair_length": "Medium to Long",
+    "eye_color": "Grey-brown, slightly bloodshot from early mornings and fluorescent work lighting",
+    "skin_tone": "Mid-brown with Scandinavian undertones, perpetually flushed from physical exertion and the warmth of processing environments",
+    "complexion": "Weathered and lined around the eyes and mouth from squinting in harsh light and years of tension. Perpetual five o'clock shadow. Skin shows minor chemical irritation around the hairline and neck from repeated exposure to disinfectant compounds despite protective gear.",
+    "distinguishing_marks": [
+      "Thick scar running horizontally across lower back (lumbar support surgery scar from 2193 injury, visible when clothing rides up)",
+      "Chemical burn marks on the knuckles and back of both hands — pale, slightly raised tissue from splash exposure despite gloves",
+      "Faint darkening around the eyes suggesting chronic sleep deprivation or allergic reactions to airborne particulates"
+    ],
+    "visible_augmentations": "None visible. Enhanced scent glands and lumbar support implant are subcutaneous/internal.",
+    "posture_movement": "Moves with economical precision developed through repetitive work — minimal wasted motion, slight protective hunch to the shoulders suggesting old back pain. Walks with the heavy-footed gait of someone perpetually carrying weight. Often touches his lower back unconsciously when standing for extended periods. Head tilts slightly when processing information — a subtle listening posture.",
+    "clothing_style": "Tier 4 working-class utility wear. Faded grey or tan work coveralls (Vex-brand, industrial-grade) with multiple pockets and reinforced seams. Underneath: plain cotton undershirt, perpetually damp with perspiration. Steel-toed boots (scuffed, well-maintained). A synthetic parka for transit and outdoor waiting. A cloth work cap, stained and creased. No jewelry. Smells faintly but persistently of medical-grade disinfectant compounds (quaternary ammonium and phenolic derivatives) that no amount of showering fully removes."
+  },
+  "image_prompt": "A weathered Polish-Scandinavian man in his early 40s, thickset and muscular from years of heavy labor, wearing faded grey Vex-brand work coveralls and a stained cloth cap, standing in harsh fluorescent light. Mid-brown skin with perpetual flush, reddish-brown hair pulled back, grey-brown tired eyes, chemical burn scars on his knuckles. Behind him: industrial medical waste processing facility with stainless steel containers and biohazard markings. Moody cyberpunk noir aesthetic, early morning lighting, atmospheric haze suggesting disinfectant fumes. His posture suggests both competence and exhaustion. Photorealistic, gritty, utilitarian. --ar 2:3 --v 6"
 }

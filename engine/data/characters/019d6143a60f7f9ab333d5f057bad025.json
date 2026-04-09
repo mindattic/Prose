@@ -228,5 +228,26 @@
     "Compass Rose",
     "The Milwaukee Core"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Northern European (German-Scandinavian)",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and solid, with a thick torso and strong legs. No excess body fat but substantial muscle mass from decades of hands-on maintenance work. Carries herself with the unrushed weight of someone who knows her own strength.",
+    "hair_color": "Natural black with silver threading at temples and along the sides",
+    "hair_style": "Close-cropped natural cut, no styling products, minimal maintenance",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, sharp and assessing",
+    "skin_tone": "Rich dark brown with warm undertones",
+    "complexion": "Weathered and expressive face with deep lines around the eyes and mouth from years of outdoor work and the weight of responsibility. Minimal makeup. Calloused hands. Small scar on left cheekbone from a minor job site incident.",
+    "distinguishing_marks": [
+      "Thin horizontal scar on left cheekbone, approximately 3cm long, slightly lighter than surrounding skin",
+      "Industrial burn scarring on right shoulder and upper arm from old accident, faded to pale patches",
+      "Left forearm sheathed in mirror-polished utilitarian chrome from wrist to elbow, with visible pressure gauge and diagnostic ports on the palm side"
+    ],
+    "visible_augmentations": "Left forearm prosthetic in functional chrome (utility-grade, not cosmetic), kept in high-polish condition. The hand contains integrated pressure and temperature sensors for plumbing diagnostics. No other visible modifications.",
+    "posture_movement": "Unhurried and deliberate in every movement. Stands with weight balanced evenly, shoulders relaxed but ready. Moves through space like someone who owns it without needing to prove it. Her lifted brow and slight head tilt communicate disapproval more effectively than words.",
+    "clothing_style": "Tier 3-4 practical wear: durable coveralls or heavy-duty work pants and fitted utility shirts in grays and dark blues. Steel-toed boots, well-maintained but worn. A heavy jacket in cold months. A keyring with at least thirty keys visible at her belt. No jewelry except a simple analog watch. Everything chosen for function over fashion; nothing flashy, nothing wasteful."
+  },
+  "image_prompt": "Portrait of a 47-year-old Black woman with close-cropped natural hair graying at the temples, standing in the dimly lit corridor of a residential building, confident and commanding presence. She has dark brown skin, sharp intelligent eyes, and deeply expressive features. Her left forearm is sheathed in polished utilitarian chrome prosthetic from wrist to elbow, catching fluorescent corridor lighting. She wears practical dark blue work coveralls and heavy-duty utility shirt, with a keyring of dozens of keys at her belt. Her posture is unhurried but authoritative. Background shows worn apartment doors and aging building infrastructure. Cyberpunk setting, gritty realism, strong side lighting, film noir color grading, --ar 2:3 --v 6"
 }

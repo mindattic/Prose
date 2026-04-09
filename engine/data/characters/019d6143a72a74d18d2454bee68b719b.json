@@ -242,5 +242,27 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Greek-French",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and powerfully built, with dense musculature across her chest and back — the physiology of someone who has spent decades performing surgical work and moving heavy equipment. Not lean, not soft; economical and functional.",
+    "hair_color": "Natural dark brown with silver streaking",
+    "hair_style": "Kept in natural coils, pinned back with surgical clamps during work; otherwise loose but controlled",
+    "hair_length": "Medium to long (shoulder-length when unpinned)",
+    "eye_color": "Right eye: dark brown, natural. Left eye: matte grey iris, prosthetic, slightly oversized for the socket",
+    "skin_tone": "Deep umber with rich warm undertones",
+    "complexion": "Weathered but meticulously maintained. Minimal scarring on the face itself, but her hands and forearms show fine linear marks from years of surgical work and self-inflicted teaching demonstrations. Her expression defaults to focused attentiveness; the asymmetric prosthetic gives her an appearance of permanent analytical scrutiny.",
+    "distinguishing_marks": [
+      "Fine linear scars across both forearms and the backs of both hands, self-inflicted during surgical demonstrations, arranged in clusters.",
+      "Thin surgical scar running from her left temple down to her cheekbone, partially obscured by the prosthetic socket.",
+      "Small burn mark on her right wrist, shaped like a surgical clamp, deliberately self-marked decades ago.",
+      "Callused patches across her palms and fingertips, worn smooth and darkened from constant tool contact."
+    ],
+    "visible_augmentations": "Left ocular prosthetic — a matte grey iris set in a slightly oversized chrome socket, asymmetric and unsettling. The prosthetic is functional military-grade hardware, not cosmetic; it shows its utility without apology. Subdermal haptic feedback mesh is invisible but occasionally visible as faint luminescent tracery across her hands when she's performing delicate work under certain lighting.",
+    "posture_movement": "She moves with deliberate economy and surgical precision — no wasted motion, each gesture purposeful. She stands slightly forward-leaning, as if perpetually ready to respond to an emergency. Her hands are constantly active: adjusting clamps in her hair, checking vital readouts, repositioning instruments. When still, she appears coiled rather than relaxed.",
+    "clothing_style": "Tier 5 practical. Typically wears a heavily modified surgical scrub top (faded teal, stained with iodine and old blood she no longer bothers to fully clean), reinforced cargo pants with multiple utility pockets filled with instruments, and scuffed no-name synthleather boots rated for biohazard environments. A long grey coat (salvaged from the Aurochs Medical Complex departure) covers everything when she moves through Brewer's Spine. She wears no jewelry except for a worn data-embedded pendant under her shirt — the E.L.F. saint candle for her lost patients. Gloves are usually surgical nitrile, often ripped and replaced mid-procedure."
+  },
+  "image_prompt": "A 52-year-old West African-Greek woman with deep umber skin, broad shoulders, and silver-streaked natural coils pinned with surgical clamps, standing in a converted shipping container clinic under harsh fluorescent lighting. Her left eye is a grey military-grade prosthetic, slightly too large for the socket, giving her an asymmetric, penetrating gaze. Surgical scars mark her forearms and hands. She wears a faded teal surgical scrub top stained with iodine, reinforced cargo pants, and scuffed boots. Her expression is focused and unsentimental. Cyberpunk noir, moody clinical lighting, depth of field, gritty realism, medical drama, Tier 5 urban desperation, detailed hands, functional not decorative augmentation --ar 2:3 --v 6"
 }

@@ -270,5 +270,27 @@
     "Arcturus CK-5 'Bloodhound'",
     "Elena Vasquez-9"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Iberian / Eastern European",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Lean and angular, all efficient muscle and minimal fat — the frame of someone who has spent forty years climbing through maintenance shafts and has never stopped moving. Slight forward cant to his shoulders from decades of hunching through tight spaces.",
+    "hair_color": "Steel grey",
+    "hair_style": "Neat circular beard kept close to his jaw; head hair cropped very short",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, patient and assessing",
+    "skin_tone": "Deep umber-black with ashen undertones at the joints and knuckles",
+    "complexion": "Weathered but meticulously groomed — creases around his eyes and mouth from forty years of squinting into dim maintenance panels. Hands are the most striking feature: massive, deliberate, with permanent bluish staining from Zheng-Dao lubricant embedded beneath the fingernails and in the calluses. Palms crosshatched with old scars and pressure lines.",
+    "distinguishing_marks": [
+      "Pair of brown-furred, fully articulate cat ears positioned naturally where human ears would be — geneware modification at age 32, now completely integrated into his appearance",
+      "Concentric pattern of faint burn scars across both forearms from electrical exposure, circa age 45-50",
+      "Deep callus ridges across palm and inner fingers of both hands",
+      "Bluish discoloration beneath fingernails, particularly pronounced on thumb and index finger"
+    ],
+    "visible_augmentations": "Articulate cat ears with responsive fur. The joints of both knees show slight metallic shimmer under certain angles — reinforcement plating. Occasional faint blue LED blink in his right pupil when he receives 'ghost signals' from the power grid he once managed, though this is rare and he has learned to suppress it in public.",
+    "posture_movement": "Stands perfectly straight at six-two despite his age — deliberate maintenance of posture. Moves with economical precision, never wasting a gesture. His hands are constantly busy — adjusting, checking, reassessing. When he sits, he sits forward slightly, as if ready to stand. Walks slowly but with absolute confidence, never hurrying but never wasting time either.",
+    "clothing_style": "Tier 3-4 practical utility wear. Standard quilted work jacket in varying states of repair and cleanliness — each one a patchwork of accumulated Zheng-Dao facility ID patches, company logos, and volunteer corps insignia from the Avalon Quiet Maintenance Corps. Beneath: simple grey undershirt or company-issue thermal. Straight-leg work trousers in dark blue or black, reinforced at the knees with additional fabric patches. Steel-toed safety boots, meticulously maintained but visibly aged. A small silver pendant on a cord beneath his shirt — likely related to his ELF devotional practice. No jewelry beyond a faded Zheng-Dao service ring on his left ring finger."
+  },
+  "image_prompt": "78-year-old Black man with articulate brown-furred cat ears, standing six-two with lean, angular frame shaped by decades of maintenance work, deep umber skin with ashen undertones at the joints, steel-grey short beard worn in a neat circle, eyes deep brown and patient, massive calloused hands stained permanent bluish from industrial lubricant, slight forward cant from hunching through tight spaces, wearing heavily patched quilted work jacket covered in faded Zheng-Dao facility ID badges and volunteer corps patches over grey undershirt, dark blue reinforced work trousers, steel-toed safety boots, metalled knee reinforcement visible, standing in the dimly lit hallway of a Tier 3 co-operative building with warm practical lighting, posed with complete confidence and zero wasted motion, background suggesting worn concrete and maintenance infrastructure, cyberpunk realistic documentary style, professional character portrait photography, shallow depth of field, muted industrial color palette with Zheng-Dao corporate blue accents, realistic aging, detailed hands, mood of quiet reliability and methodical expertise --ar 2:3 --v 6"
 }

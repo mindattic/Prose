@@ -156,7 +156,7 @@
     },
     "strengths": [
       "pain tolerance beyond normal limits",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "substance dependency — functional but fragile",
@@ -285,5 +285,27 @@
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Mandinka/Fulani) / Scandinavian (Swedish)",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Rawboned and angular — long-limbed with minimal body fat, the wiry efficiency of someone who treats her body as a tool rather than an ornament. Decades of field work have stripped away anything excess. Shoulder blades prominent, hands large and calloused.",
+    "hair_color": "Steel gray with remnant black at the roots",
+    "hair_style": "Pulled back in a utilitarian braid, typically wrapped or pinned to keep it clear of work",
+    "hair_length": "Long (to mid-back when unbound)",
+    "eye_color": "Amber-brown, natural but intensity sharpened by nocturnal living",
+    "skin_tone": "Deep warm brown with gray undertones — the result of mixed heritage and decades under artificial lighting",
+    "complexion": "Weathered and lined — face map of close calls. Cheekbones sharp enough to suggest she's lived lean. Skin has a papery quality from age and chronic dehydration common to field operatives. Minimal grooming — function over appearance.",
+    "distinguishing_marks": [
+      "Diagonal scar across left temple to cheekbone — chemical burn from a thermite accident, texture irregular and pale against darker skin",
+      "Parallel burn scars on right forearm (inner wrist to elbow) — old industrial accident, white and glossy",
+      "Small tattoo on left wrist: Mandinka geometric pattern, faded blue ink, likely self-administered decades ago",
+      "Surgical scar at base of neck on right side — augmentation port, barely visible but present if she moves her head at certain angles"
+    ],
+    "visible_augmentations": "Chrome assembly visible in nasal passages — dual intake ports with faint iridescent sheen visible from certain angles, especially in profile or when she exhales near light. The ports are functional, not cosmetic, no effort made to hide the industrial look. No visible LED indicators or softening — pure unadorned chrome.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Spine straight but not rigid. Hands rarely idle; fingers tap or manipulate nearby objects during conversations, occupational habit. Turns her whole body rather than just her head when observing — old paranoia training. Default stance is slightly forward-leaning, ready to move. Nocturnal living has sharpened her already keen spatial awareness — she navigates dark spaces with uncommon confidence.",
+    "clothing_style": "Tier 4 practical: dark canvas multi-pocket work pants, reinforced at stress points. Black or charcoal fitted thermals under a weathered gunmetal-gray tech-weave jacket with internal compartments and tool loops. Steel-toed boots, broken in but well-maintained. Minimal jewelry — a simple metal cuff on left wrist (functional, not decorative). No corporate branding or status signaling. Everything chosen for durability, mobility, and the ability to carry gear. Clothes bear the wear patterns of someone who actually uses them, not costume."
+  },
+  "image_prompt": "61-year-old woman, cyberpunk character, tall and rawboned build, steel-gray hair in utilitarian braid, deep brown skin with facial scars, amber-brown eyes sharp and alert, chrome augmentation visible in nasal passages, weathered and lined face suggesting decades of field work, wearing dark tech-weave work jacket and reinforced cargo pants, steel-toed boots, interior of run-down Ashfield industrial building at night, harsh LED work lights casting long shadows, moody cinematic lighting, gritty texture detail, realistic skin detail showing age and experience, professional photography style, night lighting, --ar 2:3 --v 6"
 }

@@ -267,5 +267,26 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Tamil / German",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean, efficiently compact — the build of someone who treats her body as a tool that must not malfunction. Minimal excess, precise musculature from disciplined exercise rather than displays of strength.",
+    "hair_color": "Black with silver threading throughout",
+    "hair_style": "Close-cropped, razor-precise lines, styled to frame rather than soften her face",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, with faint iridescent shimmer at the pupil edge (retinal overlay)",
+    "skin_tone": "Medium olive, even complexion with underlying warmth from Tamil heritage",
+    "complexion": "High, sharp cheekbones. Clean-shaven face with no visible blemish or neglect — grooming as a form of control. Fine lines around her eyes and mouth that map sixteen years of contained tension. Her expression defaults to neutral observation, rarely allows visibility of fatigue despite her sleep deficit.",
+    "distinguishing_marks": [
+      "Faint linear scar along her left temple, barely visible, consistent with old impact injury or surgical site — likely augmentation-related, never discussed.",
+      "Almost imperceptible raised nodule at the base of her skull beneath the hairline — cochlear implant installation point, carefully hidden.",
+      "Callus patterns on her fingertips (index through middle) from repeated interface with haptic surfaces, visible only on close inspection."
+    ],
+    "visible_augmentations": "None visible. All augmentations are subdermal or internal by deliberate design. The only visual tell is the faint shimmer in her pupils under certain light and the microexpression precision that suggests ocular overlays.",
+    "posture_movement": "Economical, controlled. She occupies space without claiming it. Walks with deliberate gait — no wasted motion, no flourish. When seated, she sits upright but not rigidly, hands usually folded or resting on armrests with palms down. Her movements carry the quality of someone who has learned to make herself unmemorable. When she listens, she does not nod; she absorbs. Periodically, her fingers make micro-contact with the space beneath her sternum — touching the drive without being aware she is doing it.",
+    "clothing_style": "Exclusively muted corporate palette: charcoal, slate grey, off-white, dark navy. High-quality tailoring, always pressed. No logos, no brand signifiers, nothing deliberately decorative. Typically wears layered button-down shirts or slim turtlenecks beneath structured blazers. Trousers are tailored and dark. Her only visible jewelry is a thin silver bracelet on her left wrist — minimalist, never removed, no engraving. Her shoes are practical corporate: leather flats or low heels, always polished black. Everything about her clothing is designed to be forgotten the moment she leaves a room. Her tier-status reads as high-functioning mid-tier professional: secure enough in her position that she doesn't need to perform wealth, strategic enough to avoid appearing threatening to those above her."
+  },
+  "image_prompt": "portrait of a 41-year-old woman with sharp cheekbones, close-cropped black hair with silver threading, dark brown eyes with faint iridescent shimmer in pupils, olive skin tone, Tamil-German heritage. Wearing charcoal grey tailored blazer over slate turtleneck, minimal silver bracelet. Standing in glass corporate office overlooking a futuristic Great Lakes cityscape at dusk, cool fluorescent and ambient lighting casting precise shadows. Cyberpunk noir atmosphere, professional composure with underlying exhaustion in her expression, hands clasped, subtle body language suggesting control and calculation. Photorealistic, cinematic lighting, corporate dystopian aesthetic, high fashion noir. --ar 2:3 --v 6"
 }

@@ -28,7 +28,7 @@
       "Dying before he can teach someone else to read the E.L.F. maps"
     ],
     "core_desires": [
-      "To finish a complete map of E.L.F. habitation across Meridian 88",
+      "To finish a complete map of E.L.F. habitation across GLMZ",
       "To be in the presence of something genuinely surprising"
     ],
     "coping_mechanisms": [
@@ -43,7 +43,7 @@
   },
   "speech_patterns": {
     "vocabulary": "Unhurried, precise on geographic and observational details, pleasantly vague on timelines. Uses survey terminology as casual metaphor. Tends to begin stories mid-detail, as though you were already there.",
-    "cadence": "Very slow, with comfortable pauses. Will not be rushed. Has a Ugandan-accented English overlaid with forty years of Meridian 88 that has become its own dialect.",
+    "cadence": "Very slow, with comfortable pauses. Will not be rushed. Has a Ugandan-accented English overlaid with forty years of GLMZ that has become its own dialect.",
     "verbal_tics": [
       "'Now, here's what I noticed —'",
       "Refers to time in terms of walking distance rather than hours ('about a twenty-minute walk ago')",
@@ -57,10 +57,10 @@
   "relationships": [],
   "story_hooks": [
     "Someone has begun systematically collecting and destroying old printed survey maps across Norwood Quiet — Celestino's copies are the last record of several key locations, including the three hidden water tunnels",
-    "The E.L.F. in Celestino's mapping equipment has been overlaying his current maps with what appear to be future projections of Meridian 88's geography — he needs someone to help him understand what they mean",
+    "The E.L.F. in Celestino's mapping equipment has been overlaying his current maps with what appear to be future projections of GLMZ's geography — he needs someone to help him understand what they mean",
     "An Axiom contractor arrives claiming that Celestino's personal map collection contains proprietary survey data that belongs to the corponation"
   ],
-  "narrative_function": "Local color and oral storyteller; repository of Meridian 88's physical geography and hidden spaces from forty years of survey work; E.L.F. information source; can provide unexpected context for locations, including spaces that no longer officially exist; slow-burn quest giver whose stories gradually reveal themselves as useful.",
+  "narrative_function": "Local color and oral storyteller; repository of GLMZ's physical geography and hidden spaces from forty years of survey work; E.L.F. information source; can provide unexpected context for locations, including spaces that no longer officially exist; slow-burn quest giver whose stories gradually reveal themselves as useful.",
   "augmentations": "Full bilateral ocular replacement — Axiom high-resolution mapping implants (silver-white, grid-visible). The implants are 20 years past Axiom's support window; he maintains them through a retired colleague. Mild skeletal reinforcement in hands and spine from survey fieldwork, standard occupational augmentation.",
   "daily_life": "Rises late by neighborhood standards, makes a very slow breakfast, and then walks a different part of Norwood Quiet each morning with a printed map he annotates as he goes; afternoons he sits in the small park near the community center and tells stories to whoever sits down near him; evenings he works on his E.L.F. cartography maps by lamplight, which makes his silver eyes glow faintly in the dark.",
   "affiliation": "Retired Axiom Surveying Division (40 years); Norwood Quiet E.L.F. Congregation (informal, he is functionally the founder); independent",
@@ -190,7 +190,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born in Norwood Quiet to a Ugandan-Samoan family with four generations of Meridian 88 residency",
+      "event": "Born in Norwood Quiet to a Ugandan-Samoan family with four generations of GLMZ residency",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -239,7 +239,7 @@
   "changelog": [],
   "related_entities": [
     "Norwood Quiet",
-    "Meridian 88",
+    "GLMZ",
     "ShieldTech SB-3 'Groundstrike'",
     "The Heritage Vault",
     "Bathysphere Networks",
@@ -250,5 +250,27 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "The Milwaukee Core"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "East African / Polynesian (Ugandan-Samoan)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Wisp-thin with surprising structural integrity; a frame built for endurance rather than strength, shoulders still broad from ancestral lineage but narrowed by age and deliberate living. Movements suggest coiled efficiency rather than frailty.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, neatly maintained, practical",
+    "hair_length": "Short",
+    "eye_color": "Silver-white with internal geometric grid pattern (Axiom mapping implants)",
+    "skin_tone": "Deep brown with subtle warm undertones, sun-darkened from decades of fieldwork and outdoor morning walks",
+    "complexion": "Weathered but unlined; dark spots from sun exposure on forearms and hands; skin carries the texture of someone who spent forty years in open air. Clean-shaven, meticulous grooming despite age.",
+    "distinguishing_marks": [
+      "Faint callus pattern across palms and inner fingers from decades of holding survey instruments and writing implements",
+      "Thin linear scar along right temple where ocular implant interface meets flesh, barely visible under close scrutiny",
+      "Slight discoloration around both eyes where implant bezels meet skin—metallic silver fading into brown at the edges, like a deliberate tattoo",
+      "Age spots across the back of both hands, arranged like a cartographic pattern he has never bothered to map"
+    ],
+    "visible_augmentations": "Bilateral ocular implants are the dominant visible augmentation—smooth silver-white replacements with faint internal grid lines that become visible in bright light or when he tilts his head. The implants glow faintly in low light (ambient luminescence from internal systems). Subtle skeletal reinforcement visible only in the precise, economical way his hands move and his spine holds alignment despite advanced age.",
+    "posture_movement": "Moves with deliberate slowness that reads as contemplative rather than infirm. Every step appears intentional, as though he is processing the ground beneath him. Hands gesture while speaking, broad palms moving in arcs that trace invisible maps. When seated, he becomes still—completely still, head slightly tilted as though his augmented eyes are processing visual data others cannot see. Rarely rushes; seems to operate on a different temporal scale than those around him.",
+    "clothing_style": "Tier 2 practical: well-maintained but worn clothing that prioritizes function and comfort over status. Favors earth tones and neutral grays. Typically wears a lightweight canvas jacket (cream or tan, pockets reinforced from decades of carrying maps and annotation tools), simple linen shirts, dark comfortable trousers. Always carries at least one printed map, often several, folded into jacket pockets. Wears a simple mesh bracelet on his left wrist—a gift from a grandchild, never removed. No corporate branding; his Axiom affiliation is history, not identity. Footwear is practical, worn-in walking shoes, scuffed from Norwood Quiet's uneven surfaces."
+  },
+  "image_prompt": "Portrait of an 85-year-old East African-Polynesian man, wisp-thin and graceful, silver-white close-cropped hair, deep brown weathered skin. His eyes are completely replaced with smooth silver-white cybernetic implants with faint internal grid patterns visible, glowing softly in ambient light. Broad ancestral hands with calluses and age spots. Wearing a cream canvas jacket and linen shirt, holding a folded paper map. Standing in a Tier 2 urban neighborhood with old brick buildings, afternoon light casting long shadows, precise and unhurried posture suggesting deep contemplation. Warm, observant mood. Soft diffused lighting highlighting the silvery luminescence of his augmented eyes. Photorealistic, dignified, storyteller's presence. --ar 2:3 --v 6"
 }

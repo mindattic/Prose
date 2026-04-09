@@ -33,7 +33,7 @@
     "tags": []
   },
   "demographics": "Population 1.8 million. The lower city is 70% Tier 1 and Tier 2 manufacturing workers. The upper city is Tier 3 and 4 corporate employees. The excluded live in the escarpment tunnels — old mine shafts and drainage channels converted into informal housing. Nobody counts them.",
-  "economy": "Advanced metallurgy and construction materials. Steelmouth produces 30% of the augmentation-grade alloys used in the eastern GLM and 60% of the structural composites for arcology construction. The economy is monoculture — when the foundries slow, everything slows. Palladian and Ashgrave set the pace, and the city walks to it.",
+  "economy": "Advanced metallurgy and construction materials. Steelmouth produces 30% of the augmentation-grade alloys used in the eastern GLMZ and 60% of the structural composites for arcology construction. The economy is monoculture — when the foundries slow, everything slows. Palladian and Ashgrave set the pace, and the city walks to it.",
   "power_structure": "Palladian Construction holds the largest sovereign enclave. Ashgrave Materials holds the second. Between them they employ 65% of the working population. The municipal government administers the upper city residential zones and maintains the polite fiction that it governs the whole. The lower city's informal labor council has more practical authority than the mayor.",
   "dangers": [
     "Industrial accidents — the foundries are dangerous, the safety standards are 'adequate,' and the distinction kills people",
@@ -51,7 +51,7 @@
   "story_hooks": [
     "A new alloy being produced in the Palladian foundries has properties that don't match any known metallurgical process — and the engineers who developed it have stopped showing up to work",
     "The escarpment tunnel network connects to something beneath the bay that predates the foundries by centuries — and Ashgrave is quietly excavating it",
-    "Steelmouth's labor council is organizing a cross-corporate strike that would shut down augmentation-grade alloy production across the eastern GLM"
+    "Steelmouth's labor council is organizing a cross-corporate strike that would shut down augmentation-grade alloy production across the eastern GLMZ"
   ],
   "connections": {
     "adjacent_to": [
@@ -76,7 +76,7 @@
     },
     {
       "name": "Bay Furnace Complex",
-      "description": "The primary Palladian foundry facility on Burlington Bay — the largest single metallurgical operation in the eastern GLM",
+      "description": "The primary Palladian foundry facility on Burlington Bay — the largest single metallurgical operation in the eastern GLMZ",
       "tags": []
     },
     {

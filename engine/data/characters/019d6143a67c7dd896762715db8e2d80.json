@@ -177,5 +177,26 @@
     "Arcturus CK-5 'Bloodhound'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Finnish / South Indian",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, with the compact muscularity of someone who has spent three decades standing and moving within a small space. Not heavy, but dense — the kind of build that doesn't shift much in wind.",
+    "hair_color": "Natural black with iron-gray at the temples",
+    "hair_style": "Close-cropped, practical, no styling product",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, with fine crow's feet at the corners from decades of squinting against steam",
+    "skin_tone": "Dark teak with ashy undertones at the knuckles and elbows from heat exposure and repeated stress",
+    "complexion": "Deeply lined face — prominent laugh lines bracketing her mouth, horizontal creases across her forehead, a permanent squint-crease between her brows. Her skin has the weathered quality of someone who works outdoors in all seasons, with occasional patches of dryness at her jawline. Sun damage visible on her neck and forearms.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles in a scattered constellation across her nose and cheekbones, faint pale-blue glow in low light (geneware, installed at age 40)",
+      "Fine burn scar on the inner left wrist, thin and pale, from a broth-pot accident in her mid-thirties",
+      "Calluses across all her palms and fingertips, texture visible even at distance"
+    ],
+    "visible_augmentations": "Bioluminescent freckles across nose and cheekbones (faint blue luminescence in dim conditions). Medical-grade reinforcement at both wrists is not visually obvious but visible on close inspection as slightly thickened joint lines and subtle metallic sheen under the skin at the wrist crease.",
+    "posture_movement": "Moves with unhurried efficiency — economical, deliberate. She doesn't gesture much, but when she does it's precise. Stands with weight balanced on both feet, ready to move in any direction. Her hands are always in use or ready. She makes direct eye contact and holds it without aggression — the gaze of someone accustomed to reading the faces of tired people ordering breakfast.",
+    "clothing_style": "Tier 4 working-class practical. Loose dark linen tunic or long-sleeved shirt, rolled to the elbows (shows the reinforced wrists), black or dark gray cargo trousers with deep pockets. Worn synthetic-leather apron over everything, stained with old broth splashes and marked by years of use. Rubber-soled work clogs with reinforced toe caps. A headwrap or scarf on cold mornings. No jewelry except a simple stainless steel wedding band. No visible logos or corp branding."
+  },
+  "image_prompt": "A 52-year-old West African-Finnish-South Indian woman with close-cropped salt-and-pepper black hair and deep brown eyes, standing at a worn mobile noodle cart. Her skin is dark teak, weathered and lined from decades of working outdoors, with fine wrinkles around her eyes and mouth. Across her nose and cheekbones are scattered bioluminescent freckles that glow faint pale blue in the dim early morning light. She wears a stained dark linen long-sleeved tunic with rolled sleeves, showing reinforced medical-grade wrist joints beneath the skin, and loose cargo trousers. A worn leather apron hangs over everything. Her posture is solid and confident, hands resting on the cart's edge. Behind her, the Hamtramck Enclave's pre-dawn urban environment — neon signage, transit infrastructure, the soft glow of the cart's warming lights reflecting off polished steel. Cinematic, hyper-realistic character study, warm and neutral color grading, cool blue ambient light mixing with the cart's yellow steam lighting, sharp focus on her weathered face and those subtle glowing freckles. --ar 2:3 --v 6"
 }

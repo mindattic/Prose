@@ -183,5 +183,27 @@
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Moldovan / West African (Senegalese)",
+    "height_cm": 170,
+    "weight_kg": 62,
+    "build": "Wiry and lean, all sinew and economy of motion — the frame of someone who has spent sixty-eight years in constant, precise work. Shoulders slightly rounded from decades hunched over puppet construction. No excess weight; functional rather than soft.",
+    "hair_color": "Steel gray with traces of darker brown at the temples",
+    "hair_style": "Swept back and kept short, practical for work; occasionally dusted with synthetic fiber and wood shavings",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, milky at the edges with cataracts beginning to form",
+    "skin_tone": "Medium-deep, weathered ochre — the blend of Moldovan and Senegalese ancestry darkened by decades of outdoor market work",
+    "complexion": "Deeply lined across the forehead and around the eyes; permanent squint lines carved into the face. Skin texture rough but not diseased — the patina of exposure and time. Stubble usually present, graying. Expression in repose is serious and inward-focused.",
+    "distinguishing_marks": [
+      "Extensive fine scars across both hands — fingertips, knuckles, palms — from decades of carving wire and working with sharp tools, creating a mottled, textured appearance",
+      "Calloused ridge of thicker skin running along the outer edge of his left palm from forty years of gripping puppet control bars",
+      "A faint burn scar on the inside of his left forearm, roughly 4cm long, from a soldering accident in his fifties",
+      "Deep creases around his eyes and mouth that form a permanent expression of focused attention"
+    ],
+    "visible_augmentations": "Left knee joint replacement visible only when he rolls up his pant leg or when strain causes a slight mechanical click audible to those very close; the joint itself is surgical steel with a faint seam visible beneath the skin. No external casing or cosmetic shell — purely functional Tier 1 medical work.",
+    "posture_movement": "When idle, slightly stooped; when performing, his posture transforms into something precise and almost rigid — a frame become apparatus. He walks with a faint hesitation in the left leg, a micro-pause before weight transfer, barely noticeable unless one watches closely. His hands are never truly still; fingers move in small adjustment patterns even when at rest. When setting up, every movement is slow and deliberate, as if he is moving through water. His gaze is usually downward or middle-distance, focused on his work or on the space where his puppets will occupy.",
+    "clothing_style": "Tier 4 practical wear, consistent regardless of season: dark canvas work pants with multiple pockets and fraying at the cuffs; a long-sleeved shirt in charcoal or faded black, often with small holes and visible mending; an oversized fleece or canvas jacket, multiple years old, with a faded logo of something no longer legible. No visible branding aspirations. His shoes are worn leather work boots, resoled at least twice. Everything smells faintly of wood dust, solder, and market air. No jewelry except a thin silver band on his left ring finger, worn almost smooth. His most prized possession — a battered rolling case for the puppets — is covered in scuff marks, stickers from various market venues, and a faded Φ symbol from an old currency exchange."
+  },
+  "image_prompt": "A weathered 68-year-old man of Moldovan-Senegalese heritage, lean and sinewy, standing in a cyberpunk street market under industrial lighting, his face deeply lined and focused, dark eyes with a permanent squint. Gray hair swept back, hands marked with fine carving scars. Wearing worn dark canvas work clothes, a faded oversized jacket with multiple patches, worn leather boots. He stands beside a battered rolling case covered in market stickers, with handmade wire and leather puppets visible in dim ambient light. His left knee shows a faint steel surgical joint scar. The setting is the Grand Corridor market of Milwaukee, Tier 4 urban sprawl with hanging market lamps and neon signage in the background. His posture is slightly stooped but his presence commands attention. Photorealistic, detailed character portrait, warm tungsten lighting casting sharp shadows, intricate hand details, documentary photography style, cyberpunk realism, gritty and dignified --ar 2:3 --v 6"
 }

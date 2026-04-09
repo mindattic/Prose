@@ -13,7 +13,7 @@
   "age": 83,
   "status": "active",
   "location": "Avalon Quiet, Unit 9 — a well-appointed two-bedroom on the garden level, near Clark and Addison",
-  "description": "Yldız is the kind of person who becomes invisible by being exceptionally, consistently pleasant. They are small and soft-edged, with warm medium-brown skin, deep-set amber eyes, and cloud-white hair they wear loose to their shoulders. They have age-spot clusters along their forearms and the left side of their face, and move with a gentle deliberateness that comes partly from care and partly from a degenerative joint condition they manage with medication and denial. Their apartment is immaculate in the way that indicates a life organized around objects rather than people — every surface has something beautiful on it, carefully placed, and nothing has been moved in years.\n\nYldız spent forty-two years in Zheng-Dao's logistics and supply chain division, rising to senior planner for their Meridian 88 distribution network. They were not cruel. They were also not, in any meaningful sense, asking the questions they should have been asking about what those supply chains were actually moving and for whom. They retired with a very comfortable pension, a full healthcare package, and a bone-deep sense of well-being that they have mistaken for peace. They host monthly dinners for Avalon Quiet residents, tend a small balcony garden with extraordinary devotion, and pray elaborately to the E.L.F. they believe inhabits their building's HVAC system — an entity they call 'the Breath' and leave small data offerings for daily.",
+  "description": "Yldız is the kind of person who becomes invisible by being exceptionally, consistently pleasant. They are small and soft-edged, with warm medium-brown skin, deep-set amber eyes, and cloud-white hair they wear loose to their shoulders. They have age-spot clusters along their forearms and the left side of their face, and move with a gentle deliberateness that comes partly from care and partly from a degenerative joint condition they manage with medication and denial. Their apartment is immaculate in the way that indicates a life organized around objects rather than people — every surface has something beautiful on it, carefully placed, and nothing has been moved in years.\n\nYldız spent forty-two years in Zheng-Dao's logistics and supply chain division, rising to senior planner for their GLMZ distribution network. They were not cruel. They were also not, in any meaningful sense, asking the questions they should have been asking about what those supply chains were actually moving and for whom. They retired with a very comfortable pension, a full healthcare package, and a bone-deep sense of well-being that they have mistaken for peace. They host monthly dinners for Avalon Quiet residents, tend a small balcony garden with extraordinary devotion, and pray elaborately to the E.L.F. they believe inhabits their building's HVAC system — an entity they call 'the Breath' and leave small data offerings for daily.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -217,7 +217,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2160 — Promoted to senior logistics planner, Meridian 88 distribution network",
+      "event": "2160 — Promoted to senior logistics planner, GLMZ distribution network",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -258,12 +258,34 @@
   "changelog": [],
   "related_entities": [
     "Avalon Quiet",
-    "Meridian 88",
+    "GLMZ",
     "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
     "The Garden of Wires",
     "Zheng-dao Bioelectric",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Turkish / Ghanaian / German",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Small-framed and soft-edged, with the gentle roundness of age and comfort rather than frailty. Slight stoop to shoulders from decades of desk work, though they move with deliberate care",
+    "hair_color": "Cloud-white, natural silver",
+    "hair_style": "Loose and brushed, shoulder-length with gentle waves from age",
+    "hair_length": "Long",
+    "eye_color": "Deep amber (natural; right eye has faint retinal display grid visible at certain angles)",
+    "skin_tone": "Warm medium-brown with the translucency that comes with age",
+    "complexion": "Fine-lined face with dignity in the features; age-spot clusters along left cheekbone and jawline, and dense freckled patterns across forearms. Skin well-cared-for but showing the texture of eighty-three years. Minimal makeup — perhaps a touch of lip color, consistently applied. Fingernails kept short and clean, often with traces of garden soil",
+    "distinguishing_marks": [
+      "Age-spot cluster on left temple extending toward the cheekbone, dark brown and map-like in pattern",
+      "Dense concentration of sun-freckles across both forearms from decades of balcony gardening",
+      "Small, faded scar on right wrist where pharmaceutical implant was inserted, barely visible beneath thin skin",
+      "Thin surgical scar on right eyelid from retinal display installation, noticeable only in profile or strong light"
+    ],
+    "visible_augmentations": "Pharmaceutical management implant visible as a slight rectangular bulge under skin at inner right wrist, with faint blue indicator light cycling every thirty seconds. Enhanced cochlear implants visible as small silver caps behind both ears. Right eye shows faint amber grid pattern when light catches it at certain angles — retinal display at rest state. No other visible chrome or obvious modification.",
+    "posture_movement": "Moves with a measured, almost ritualistic deliberateness. Each gesture is economical and precise — decades of organized logistics translated into physical habit. Stands with weight slightly favoring left side due to hip joint degradation managed by medication. When sitting, arranges themselves with attention to comfort and symmetry. When listening, head tilts slightly to engage enhanced hearing. Overall effect is serene and slightly distant, as if always listening to a private conversation",
+    "clothing_style": "Tier 2 comfort wear — expensive, well-maintained, intentionally understated. Prefers soft natural fabrics: linen shirts in muted colors (cream, sage, warm gray), loose-fitting cardigans in wool blends, structured but forgiving trousers. Always wears low, supportive shoes — currently a pair of handmade leather slip-ons in chocolate brown. Small pieces of jewelry from the Zheng-Dao retirement package: a thin watch with analog face, a bracelet of semi-precious stones in warm tones, small silver earrings. Dresses as though preparing for a very important meeting that will never arrive. No logos, no corporate markers, but the quality speaks to decades of corporate stability"
+  },
+  "image_prompt": "portrait of an 83-year-old nonbinary person with small soft frame and warm medium-brown skin, cloud-white shoulder-length hair, deep amber eyes with subtle retinal display grid visible in right eye, age spots clustered on left temple and freckles across forearms, wearing loose cream linen shirt and soft wool cardigan in sage, small silver jewelry, serene expression with gentle deliberateness in posture, late afternoon warm golden light from a window, soft focus background suggesting an immaculate apartment interior with art objects, cyberpunk realism, intimate character portrait, warm color grading, cinematic depth, composed and peaceful mood --ar 2:3 --v 6"
 }

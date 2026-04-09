@@ -227,5 +227,26 @@
     "Pellucid Systems",
     "Tin Man"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Polynesian (Samoan) / Scandinavian (Swedish)",
+    "height_cm": 174,
+    "weight_kg": 62,
+    "build": "Lean and rangy with emerging muscularity in her shoulders and forearms from years of dismantling work; still has the gangly proportions of someone not quite finished growing into her frame",
+    "hair_color": "Natural dark brown with warm undertones",
+    "hair_style": "Thick, loose coils worn down to shoulder length when off-duty; habitually shoved under a grease-stained canvas cap during work",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown",
+    "skin_tone": "Warm medium brown with olive undertones, characteristic of Polynesian-Scandinavian heritage",
+    "complexion": "Sharp-featured, angular face with high cheekbones; chronic grease stains embedded in the creases of her knuckles and under her fingernails despite frequent washing; sun-damaged from early-morning sump road exposure; minimal grooming beyond practicality",
+    "distinguishing_marks": [
+      "Faint burn scar on her left forearm from a component arc accident at age seventeen",
+      "Callused palms and fingertips from handling corroded metal and precision diagnostics",
+      "Grease ingrained into her skin in a pattern that suggests constant work contact"
+    ],
+    "visible_augmentations": "Retractable tool-array in right palm: three thin probe fingers that extend from the palm for component port access, visibly jury-rigged with mismatched titanium casing and hand-welded articulation joints; shows evidence of self-modification and repeated field repairs",
+    "posture_movement": "Moves with practical efficiency, economical gestures honed by close work in tight spaces; frequently has her right hand half-extended as if reaching for tools; stands with weight shifted forward slightly, ready to move; habitual nervous tic of rubbing her right palm against her thigh",
+    "clothing_style": "Tier 4-5 utilitarian: oil-stained Carhartt-equivalent work pants with multiple tool pockets, most containing actual tools; worn thermal undershirt visible at the collar; oversized gray or brown work shirt that hangs loose enough to move in; unlaced steel-toed boots caked with salvage yard detritus; faded canvas cap with a stitched patch where the original logo was removed; a grease-stained rag permanently tucked into her waistband; no jewelry, no fashion-forward choices, everything chosen for durability and function"
+  },
+  "image_prompt": "19-year-old female, lean athletic build, dark brown skin, thick coiled dark brown hair to shoulders, sharp angular face, warm complexion. Right palm showing retractable metallic tool-array with three probe fingers extended. Oil-stained work clothes: oversized button-up shirt, heavy canvas pants with tool pockets, laced boots. Hands calloused and grease-stained. Grease-marked canvas cap. Standing in an industrial chop shop at dawn, surrounded by stacked metal panels and component bins, harsh cool lighting from overhead work lamps, diesel smell and rust tones. Cyberpunk, gritty realism, detailed hands and augmentation, shallow depth of field focusing on face and tool-array hand, cinematic lighting, photorealistic --ar 2:3 --v 6"
 }

@@ -223,5 +223,26 @@
     "Ironvein",
     "Nightlight"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East African (Amharic) / Serbian / Ghanaian",
+    "height_cm": 168,
+    "weight_kg": 59,
+    "build": "Wiry and compact, all lean muscle with minimal body fat — the frame of someone who moves constantly and eats irregularly. Sharp shoulders, defined forearms from years of handling heavy components.",
+    "hair_color": "Natural black, occasionally dusty from working in salvage",
+    "hair_style": "Short, textured, kept practical rather than styled — runs his hand through it when thinking",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, naturally, with acute focus and constant micro-movements",
+    "skin_tone": "Mid-brown with warm undertones, reflecting mixed East African and West African heritage",
+    "complexion": "Narrow face with high cheekbones, angular jaw. Fine-featured and sharp-eyed. One front tooth visibly chipped at the left corner — a scar from childhood or a barter gone wrong, never clarified. Skin clear but weathered around the eyes from long hours under market lighting. Faint laugh lines despite his age.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware traces along both temples in a branching pattern, glowing faint blue-green when elevated heart rate; becomes noticeably bright during negotiation or excitement",
+      "Matching bioluminescent tracery down both forearms in vein-like patterns, most visible on the inside of the wrists and along the medial forearm",
+      "Small, faded burn scar on the heel of his right hand — roughly circular, suggests old contact with hot metal"
+    ],
+    "visible_augmentations": "Bioluminescent vein geneware (temples and forearms, blue-green luminescence activated by heart rate elevation). No visible cyberware or chrome. The geneware is his only visible mod and serves as an unintentional tell that he has learned to weaponize.",
+    "posture_movement": "Restless and economical. Stands with weight shifted to the balls of his feet, ready to move. Hands are always active — gesturing, reaching, fidgeting with objects on his stall. Makes constant eye contact during deals, pupils dilating slightly during negotiation. Moves through crowded spaces with practiced efficiency, never bumping, always angled sideways. Sleeps little and it shows — a slight tremor in his hands at end of day, a quickness to his speech.",
+    "clothing_style": "Tier 4 working-class practical. Worn but maintained cargo vest in faded blue-grey synthetic over a loose black undershirt with thermal properties. Pants are heavy canvas with multiple cargo pockets, cuffed at the ankle. Steel-toed work boots, scuffed and resoled. A tattered wrist wrap in frayed black fabric on his left wrist — functional, not decorative. Thin chain around his neck with a small data-chip pendant he touches unconsciously. No jewelry beyond this. Clothes smell of metal dust and solvents. Overall aesthetic: functional scavenger, someone who lives in his clothes."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 24-year-old East African-Serbian-Ghanaian man, lean wiry frame, narrow angular face with chipped front tooth, short natural black textured hair. Dark brown eyes with intense focus. Bioluminescent blue-green vein geneware glowing faintly along temples and forearms. Mid-brown warm skin tone. Wearing faded cargo vest over black thermal undershirt, heavy canvas pants, scuffed steel-toed boots. Standing in a cluttered junk market stall surrounded by salvaged tech components and cables, restless posture with hands in motion. Faint tremor of constant movement, street-smart expression, slight smirk. Dim market lighting mixing neon and industrial fluorescence, cool tones emphasizing the geneware glow. Gritty, lived-in, clever energy. Ground-level perspective. Cyberpunk aesthetic, Tier 4 undercity, scrap dealer realism --ar 2:3 --v 6"
 }

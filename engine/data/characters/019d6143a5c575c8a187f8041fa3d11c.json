@@ -236,5 +236,26 @@
     "Copper",
     "The Pure Hand"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Finnish-Scandinavian",
+    "height_cm": 168,
+    "weight_kg": 92,
+    "build": "Heavyset, broad-shouldered, with substantial mass distributed through torso and hips — a frame that speaks of physical resilience and presence rather than bulk. Muscle beneath the weight from decades of active work.",
+    "hair_color": "White",
+    "hair_style": "Natural, unmodified halo — voluminous and textured, worn loose",
+    "hair_length": "Medium to long, approximately shoulder-length when unbound",
+    "eye_color": "Dark brown, warm and steady",
+    "skin_tone": "Very dark, deep brown with warm undertones",
+    "complexion": "Deeply lined face — creases at eyes and mouth map decades of unguarded expressions, laugh lines prominent. Skin texture is rich and weathered. Grooming is deliberate and minimal: no cosmetic augmentation, no attempt to conceal age.",
+    "distinguishing_marks": [
+      "Left ear carries thirty-one small silver and copper rings clustered along the lobe and upper cartilage — each gifted by a family whose child she delivered, a living record.",
+      "Palms show the callused wear patterns of hands that work constantly — grip lines deep and pronounced.",
+      "Fine scars on inner forearms consistent with years of repeated contact with amniotic fluid and biological exposure — unmarked by any attempt at cosmetic concealment."
+    ],
+    "visible_augmentations": "Bone-conduction hearing amplifier embedded within the left ear ring cluster — visible only as subtle technological integration among the copper and silver. The rings themselves partially conceal the hardware. No other visible cybernetics; subdermal temperature sensors in palms are not externally apparent.",
+    "posture_movement": "Carries herself with deliberate, centered stillness — the physical equivalent of patient listening. Movements are economical and purposeful, never rushed. When approaching someone, she moves as if she has already decided she is not in a hurry. Her hands rest comfortably at her sides or engaged in work; she does not fidget or distract. When sitting, she settles completely, as if willing to occupy that space indefinitely.",
+    "clothing_style": "Tier 3-4 practical wear reflecting Hamtramck Enclave culture and her role: layered cotton and linen shirts in earth tones, worn loose over the body. Comfortable working trousers in dark colors. A long linen coat or wrap she carries for home visits — pockets deep and organized. No visible branding. Sensible shoes suited for walking the enclave at all hours. Her only consistent jewelry is the ear rings; she wears a simple cord around her neck holding a small water-damaged tablet (the Firstcry shrine) wrapped in cloth. Everything chosen for utility and respect, nothing for status."
+  },
+  "image_prompt": "portrait of a 58-year-old heavyset West African woman with very dark skin, deep laugh lines, and a white natural halo of hair, shoulder-length and unmodified. She wears layered earth-tone linen, loose and practical. Her left ear is adorned with thirty-one small silver and copper rings reflecting soft light. Her gaze is warm, steady, and patient. Her hands are visible and weathered from decades of midwifery work. She stands with centered, deliberate posture in the warm amber light of a Hamtramck Enclave community space. The lighting is intimate and grounded, no harsh shadows. Realistic, dignified portraiture. Cyberpunk setting but grounded in humanity, not chrome. Shallow depth of field. --ar 2:3 --v 6"
 }

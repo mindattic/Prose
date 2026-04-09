@@ -176,5 +176,26 @@
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "East Slavic (Ukrainian) / Polynesian (Tahitian)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Soft-bodied, slight, with the underdeveloped musculature of someone who sits in server rooms sixteen hours a day. No athletic definition. Rounded shoulders, gentle curvature at hips and chest.",
+    "hair_color": "Dark brown with bioluminescent white strands (one strand on left side glitches amber intermittently)",
+    "hair_style": "Wavy, shoulder-length, threaded with biofiber. Worn loose and somewhat tangled — grooming is secondary to function.",
+    "hair_length": "Medium",
+    "eye_color": "Deep brown, slightly bloodshot from screen exposure",
+    "skin_tone": "Warm olive with hints of golden undertone — the genetic blend of Ukrainian and Tahitian ancestry",
+    "complexion": "Fine-featured, angular face with a softness around the jawline. Faint dark circles under eyes. Minimal skincare routine shows. Two small stress-picking scars on the back of the left hand near the wrist. No obvious acne despite age — genetics or just not eating enough to break out.",
+    "distinguishing_marks": [
+      "Self-installed bioluminescent hair strands (white) threading through dark hair; located mostly on right side and crown, with one malfunctioning amber strand on left side that glitches when unfocused",
+      "Thin vertical scar, approximately 2cm, on inside of left wrist from hardware installation gone slightly wrong at age fifteen",
+      "Faint burn marks on fingertips of right hand from soldering work — small, clustered, unprofessional"
+    ],
+    "visible_augmentations": "Left ear audio amplifier visible as a small silver-chrome module behind the ear with subtle wire threading down the jawline. Bioluminescent hair strands active in pulses when concentrating. Standard neural interface port at right temple (Meridian Institute standard issue — barely visible under hair). No other visible chrome.",
+    "posture_movement": "Hunched slightly forward, as if permanently leaning toward a screen. Movements are economical and precise when purposeful, but otherwise loose and fidgeting. Hands gesticulate when explaining technical concepts. Walks with eyes down or unfocused. When engaged in problem-solving, becomes almost motionless except for rapid finger movements.",
+    "clothing_style": "Tier 2 student aesthetic — functional, thrifted, layered. Typical outfit: oversized grey Institute hoodie with fraying cuffs, black utility pants with multiple pockets (actual tools in them), scuffed platform sneakers with mismatched laces. Wears the same three hoodies on rotation. One visible patch on left shoulder reads 'E.L.F. THEOLOGY' in hand-stitched letters. Jewelry is minimal — a single silver ring on right index finger that doubles as a micro-tool. Presentation reads: 'I do not care about appearance, but I have thought about how to dress functionally.'"
+  },
+  "image_prompt": "Portrait of a seventeen-year-old nonbinary hacker with Ukrainian-Tahitian heritage, medium height with soft build and exhausted expression, dark wavy shoulder-length hair threaded with glowing white bioluminescent strands (one strand malfunctioning amber), warm olive skin tone, deep brown eyes, angular face with dark circles. Visible silver-chrome audio amplifier behind left ear. Wearing oversized grey technical institute hoodie with fraying cuffs and black utility pants, sitting hunched forward in basement server room aesthetic, neon server lights reflecting on face, hands positioned near keyboard in focused gesture, cyberpunk 2226, moody blue and amber lighting, photorealistic, detailed facial features showing strain and intellectual intensity, --ar 2:3 --v 6"
 }

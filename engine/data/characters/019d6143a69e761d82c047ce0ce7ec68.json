@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Forensic Technician, Meridian 88 Metro Police",
+  "role": "Forensic Technician, GLMZ Metro Police",
   "age": 29,
   "status": "active",
   "location": "Deepwell Station, near sub-level access near LaSalle and Congress",
@@ -64,7 +64,7 @@
   "narrative_function": "Technical information source. The person who knows what actually happened versus what the record says. Moral witness to institutional corruption. Can provide forensic context for past events or reveal inconvenient truths that someone powerful wants buried.",
   "augmentations": "Patterned obsidian-gold iris mod (cosmetic). Neural processing chip for accelerated data correlation — Metro standard for forensics. Olfactory enhancement mods (professional — dramatically increased scent discrimination, hence 'the Bloodhound'). Fingertip haptic sensors for trace texture detection.",
   "daily_life": "They arrive at the Deepwell lab before anyone else and leave after everyone. They subsist on vending machine protein bricks and the very good coffee they make in the lab's corner unit. They keep a private shadow-log of every case where their forensic conclusions were altered or buried before trial.",
-  "affiliation": "Meridian 88 Metro Police, Forensic Division, Deepwell Station Lab",
+  "affiliation": "GLMZ Metro Police, Forensic Division, Deepwell Station Lab",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -270,5 +270,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Gold"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Greek / West African / Armenian",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Angular and lean, all sharp planes and efficient geometry. Long-limbed with a slight forward hunch from years bent over lab benches. Chest narrow, shoulders slightly rounded from posture. Wrists thin enough to slip easily into precision-work gloves.",
+    "hair_color": "Natural dark brown with warm undertones",
+    "hair_style": "Loose, loose curls worn long and typically half-pinned with whatever clip was closest at hand — usually a pen, sometimes a lab marker. Frequently escapes.",
+    "hair_length": "Long (shoulder-length, often longer on one side)",
+    "eye_color": "Patterned iris mod: obsidian-black base with fine gold fracture-pattern throughout, giving the appearance of cracked stone with warm metal underneath. Natural pupil and sclera structure preserved.",
+    "skin_tone": "Warm amber-brown with subtle golden undertones across cheekbones and bridge of nose",
+    "complexion": "Clean, minimal grooming emphasis. Sharp cheekbones and defined jawline. Skin clear but with faint violet staining around the cuticles and under fingernails from reactant solutions — a mark they don't bother to remove. Small scar on left temple, barely visible, from a lab accident at twenty-five.",
+    "distinguishing_marks": [
+      "Faint violet reactant staining on fingertips and cuticles, chronic and deep enough to be part of their visual identity",
+      "Small 2cm scar on left temple, thin and clean, angled slightly upward — result of a centrifuge incident",
+      "Patterned iris modification visible in both eyes: gold fracture-lines on obsidian base, deliberately aesthetic choice made at age 22"
+    ],
+    "visible_augmentations": "Obsidian-gold patterned iris mods (immediately visible). Fingertips show minimal scarring and unusual smoothness from haptic sensor integration — noticeable under close inspection. No visible chrome or external augmentation hardware. Olfactory and neural processing mods are subcutaneous/internal.",
+    "posture_movement": "Forward-leaning stance, shoulders slightly hunched as if perpetually leaning toward a microscope or evidence table. Movements are precise and economical — no wasted motion. Hands are active, often gesturing when explaining trace evidence. Walking gait is slightly hurried, rhythm of someone moving between tasks. Resting expression is faintly distant, as if processing multiple data streams.",
+    "clothing_style": "Tier 3 working-class pragmatism: dark neutral colors (charcoal, black, muted blue) chosen for lab practicality rather than fashion. Standard-fit synthetic-blend cargo pants with deep pockets, usually containing evidence bags, calipers, or sampling equipment. Loose long-sleeved shirts or fitted tech-weave tops that allow arm mobility. Worn grey or black lab coat, perpetually wrinkled, with pens and markers in the breast pocket. Comfortable, scuffed ankle boots with good grip for wet lab floors. Almost no jewelry except a worn titanium watch that syncs to the lab database. No corporate branding visible — their uniform is function, not affiliation."
+  },
+  "image_prompt": "Cyberpunk forensic technician, nonbinary, angular features, warm amber-brown skin, dark curly hair loosely pinned and escaping, striking patterned obsidian-gold iris modifications visible. Long fingers stained faint violet from lab reactants. Wearing dark cargo pants and loose grey lab coat over tech-weave shirt, standing in a high-tech crime lab with specimen racks and holographic evidence displays glowing in background. Forward-leaning posture, focused expression, precise hand gesture. Atmospheric lighting: cool blues and whites from lab equipment, warm amber cast across face. Grounded, realistic cyberpunk aesthetic, forensic-focused, no chrome, professional and slightly careworn. Shot composition emphasizes hands and eyes. --ar 2:3 --v 6"
 }

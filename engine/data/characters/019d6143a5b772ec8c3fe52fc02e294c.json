@@ -13,7 +13,7 @@
   "age": 25,
   "status": "active",
   "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
-  "description": "Aslan Ekman-Danso is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAslan Ekman-Danso operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Aslan Ekman-Danso is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAslan Ekman-Danso operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.92,
@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "To matter to someone for who they are, not what they can do",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Knowledge — to understand the systems that grind people down"
     ],
     "coping_mechanisms": [
@@ -276,11 +276,34 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "Neuromorphic Pressure Cestus",
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Turkish / Ghanaian",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Rawboned and lean, with a wiry musculature that reads as either ascetic discipline or chronic malnutrition. Broad shoulders tapered to a narrow waist — a frame built for speed and endurance rather than power.",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Kept short and functional, no styling. Shaved at the sides, longer on top — practical rather than aesthetic.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and calculating",
+    "skin_tone": "Medium tan with undertones of deeper brown, weathered by years in industrial districts",
+    "complexion": "Angular face with sharp cheekbones and a prominent jawline. Skin heavily scarred — thin white and pale pink lines crossing forehead, left cheek, and chin in what appears to be impact and blade work. Perpetual stubble, dark circles under eyes. No cosmetic care evident.",
+    "distinguishing_marks": [
+      "Three parallel burn scars running down the right side of his neck — old thermal damage, possibly electrical.",
+      "A long diagonal scar crossing his left cheekbone to jaw — appears surgical or from combat blade work.",
+      "Smaller puckered scar on his right temple, circular, consistent with a gun wound or impact trauma.",
+      "White scar tissue visible along both wrists beneath the line where augmentation hardware meets flesh — surgical integration points.",
+      "Faint darkened skin around the base of his skull where spinal column reflex boosters interface with his body — visible when neck is exposed."
+    ],
+    "visible_augmentations": "Visible chrome spinal reflex booster hardware runs from the base of his skull down approximately 15cm along the vertebrae — metallic silver and gunmetal gray, with faint amber indicator lights when active. Hydraulic joint augmentations visible at elbows and knees as reinforced seams of brushed titanium and synthetic polymer where the tech interfaces with flesh. When he moves, there is a subtle mechanical response in his joints — barely perceptible fluidity in impact absorption.",
+    "posture_movement": "Moves with controlled economy of motion — no wasted gesture. Carries tension in his shoulders even at rest. His head has a slight forward cant, as if perpetually listening. When standing still, he shifts weight frequently between feet. Movement is fluid but mechanical in precision; the reflex boosters lend an uncanny quickness to reactions. His gaze is direct and unwavering.",
+    "clothing_style": "Tier 4 utilitarian — function over fashion. Black synthetic reinforced jacket with multiple pockets, burn-resistant weave, faded to charcoal gray in places. Underneath, a dark grey compression shirt that doubles as an undershirt for equipment vests. Black cargo pants with reinforced thigh pockets and a tool belt holding deck interfaces, jacks, and small modular tech. Steel-toed boots, scuffed and well-maintained. A pair of fingerless gloves with grip pads on the palms — for equipment handling and climbing. No visible jewelry or decorative elements. Everything is maintenance-worn and functional."
+  },
+  "image_prompt": "A 25-year-old male netrunner in cyberpunk 2226, tall and rawboned with dark brown skin, angular face scarred with white impact marks, short dark hair. Visible chrome spinal reflex boosters running down neck and shoulders in metallic silver with amber lights. Titanium-reinforced hydraulic joints at elbows and knees. Wearing black synthetic reinforced jacket faded to charcoal, compression undershirt, cargo pants with tool belt, steel-toed boots. Dark circles under eyes, perpetual stubble, tense posture. Standing in a dimly lit Tier 5 tenement corridor near old lakeshore Chicago, industrial concrete walls, flickering neon from distant signs casting blue and amber light. Gritty, utilitarian, photorealistic, cinematic lighting, moody atmosphere, sharp focus on face and visible augmentations, shot from chest up, --ar 2:3 --v 6"
 }

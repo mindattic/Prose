@@ -12,7 +12,7 @@
   "role": "Bartender and part-owner, The Freestone Tap",
   "age": 34,
   "status": "active",
-  "location": "Freestone, Meridian 88, near Armitage and Milwaukee",
+  "location": "Freestone, GLMZ, near Armitage and Milwaukee",
   "description": "Solène is the kind of woman who makes a room feel smaller in a good way — Japanese-South African ancestry that gives her a mid-height, angular frame, warm brown skin, and thick dark hair she wears loose or pinned with what appears to be a hex driver (it is a hex driver). Her bioluminescent skin mod runs in thin lines along her collarbones and inner wrists — a soft gold-green that brightens almost imperceptibly when her mood shifts, which is either wonderful or terrible depending on how well you know her. She has the particular physical fluency of career bartenders: reading posture from across a room, tracking three conversations, and never putting a glass down noisily.\n\nThe Freestone Tap is a narrow, low-ceilinged establishment on the ground floor of an Irkalla-adjacent block that has been serving Freestone workers for fifty years under various names and owners. Solène bought a 40% stake three years ago with a loan from her mother and an uncomfortable arrangement with the previous owner. The bar is not glamorous; it has a long-running policy of extremely cheap prices during the first two hours of any shift change, a rotating shrine to three different E.L.F.s behind the bar that she maintains with meticulous neutrality, and a back room that she rents to the neighborhood tenant collective for their meetings. She knows when to pour and when to put the bottle away, and she is never wrong about which one a given person needs.",
   "psychology": {
     "facet_weights": {
@@ -168,7 +168,7 @@
   "registered_firearms": [],
   "related_entities": [
     "Riverbottom",
-    "Meridian 88",
+    "GLMZ",
     "Freestone",
     "Flicker",
     "ShieldTech SB-3 'Groundstrike'",
@@ -177,5 +177,27 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Japanese / South African",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Angular and lean with defined shoulders — the economical musculature of someone who moves deliberately and rarely wastes motion. No softness; everything about her frame suggests efficiency.",
+    "hair_color": "Natural black with subtle warm undertones",
+    "hair_style": "Worn loose in soft waves or pinned up asymmetrically with what is literally a hex driver instead of a traditional hair stick",
+    "hair_length": "Long (shoulder-blade length when down)",
+    "eye_color": "Dark brown, warm and observant",
+    "skin_tone": "Warm brown with golden undertones — South African heritage dominant in complexion, Japanese ancestry visible in cheekbone structure and eye shape",
+    "complexion": "Clean, minimal makeup (perhaps dark liner on long shifts), skin well-maintained but not pampered. Fine lines around eyes from years of focused attention and late-night work. Expression rarely neutral — always reading the room.",
+    "distinguishing_marks": [
+      "Bioluminescent subcutaneous lines running along both collarbones in a delicate branching pattern, emitting soft gold-green light that intensifies with mood shifts",
+      "Matching bioluminescent lines tracing the inner wrists from elbow to palm on both arms, same gold-green hue, most visible when she's pouring or gesturing",
+      "Small circular scar on her left temple (old and pale, barely noticeable) from an augmentation installation"
+    ],
+    "visible_augmentations": "Bioluminescent skin mod (collarbones and inner wrists) — the primary visible augmentation. The enhanced auditory filter is subcutaneous; no external hardware visible, though close observation might catch slight asymmetry in her ear canal or a faint scar. She wears no external tech jewelry or interface displays.",
+    "posture_movement": "Upright and centered, weight balanced like someone constantly ready to move in any direction. Her movements are economical and precise — no wasted gesture. She reads a room by standing still and observing; when she moves, it's always with purpose. Behind the bar, she has the particular grace of someone who has poured ten thousand drinks without breaking a glass. Her gaze tracks multiple focal points simultaneously. When listening intently, her bioluminescent lines brighten almost imperceptibly — a tell she didn't anticipate when she got the mod.",
+    "clothing_style": "Tier 3-4 working class with personal style. Typically: dark fitted long-sleeve shirt (often vintage or second-hand, well-tailored) or a durable tank top under a thin cardigan, dark trousers or fitted jeans with reinforced seams, comfortable non-slip work boots (scuffed, well-maintained). Sometimes a half-apron with pockets for bar tools. No corporate branding. One or two pieces of jewelry — usually understated (a thin silver chain, a simple ring). Clothes are clean and intentional, not fashionable, selected for durability and movement. On rare days off, she dresses similarly but slightly less utilitarian. Nothing suggests she shops on the Tier 1-2 corporate strip.",
+    "overall_impression": "A woman who occupies space quietly but completely. There is no wasted movement, no performed emotion. She looks at you directly and knows more about you than you've said. The bioluminescent lines are striking but never dominate — they're integrated into how she moves, a side effect of competence rather than an advertisement."
+  },
+  "image_prompt": "Cyberpunk bartender woman, Japanese-South African heritage, warm brown skin with golden undertones, long black hair worn loose, angular lean build with defined shoulders, dark intelligent eyes. Soft bioluminescent gold-green lines tracing collarbones and inner wrists, glowing subtly. Wearing dark fitted long-sleeve shirt, well-worn apron, standing behind a narrow bar in moody atmospheric lighting, neon signs reflecting off wet counter, holding a glass mid-pour with precise grace. Mid-shift exhaustion mixed with sharp focus, reading the room. Warm practical styling, Tier 3 working-class aesthetic. Intimate bar lighting, depth of field focus on her face and the luminous skin mods, cyberpunk realism, cinematic mood, intimate composition --ar 2:3 --v 6"
 }

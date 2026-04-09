@@ -176,5 +176,26 @@
     "Copper",
     "Gold"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Haitian Creole / Mongolian / Puerto Rican",
+    "height_cm": 152,
+    "weight_kg": 48,
+    "build": "Compact and wiry, with the precise musculature of someone who has spent decades doing deliberate physical work. Bony wrists and prominent collarbones; no excess weight but not frail — her smallness is structural, not diminished.",
+    "hair_color": "Natural white",
+    "hair_style": "Braided in tight cornrows running back from her forehead, interwoven with bare copper wire and small data chips no larger than millet seeds",
+    "hair_length": "Medium (braids fall to mid-shoulder)",
+    "eye_color": "Deep brown, natural",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Lined face with high cheekbones and a sharp jaw; skin texture is marked but not weathered, cared-for. Minimal makeup — she relies on the bioluminescent work to articulate her moods rather than cosmetics.",
+    "distinguishing_marks": [
+      "Full-body bioluminescent dermal tattoo work in violet and gold spectrum covering arms, chest, neck, and visible portions of legs — geometric and organic patterns that pulse with emotion and intention, installed approximately 40 years ago",
+      "Fine linear scarring along both inner wrists from early neural interface installation (first-gen work, visible as thin silvery lines)",
+      "Thin scar along left temple, pale and decades old, likely accidental"
+    ],
+    "visible_augmentations": "Faint bioluminescent patterns beneath skin surface that glow violet when agitated, gold when pleased or laughing; barely perceptible neural interface jack at the base of her skull, old model, seamlessly integrated into her hairline. No chrome, no visible prosthetics.",
+    "posture_movement": "She moves with economical precision — no wasted motion, each gesture deliberate. When standing still, she has a centering quality, as if she occupies the space around her more fully than someone her size should. Walks slowly and carefully, always aware of her footing. Hands are often in motion: sorting, arranging, touching surfaces as if reading them.",
+    "clothing_style": "Tier 3-4 practical wear: long-sleeved linen shirts in cream or soft gray, loose-fitting to accommodate the bioluminescent patterns she wants visible; high-waisted work pants in dark canvas with multiple pockets; worn leather sandals with copper buckles, handmade. A long indigo linen overcloak, unadorned, worn like a meditation garment. She smells faintly of machine oil and marigolds — both intentional — and wears small copper bracelets that click softly when she moves."
+  },
+  "image_prompt": "Portrait of a 67-year-old Haitian-Mongolian-Puerto Rican woman, very small frame, deep umber skin with bioluminescent violet and gold geometric tattoo patterns covering her visible body, natural white hair braided tightly with copper wire and small data chips woven through, sharp cheekbones, deep brown eyes, standing in soft violet bioluminescent glow from her skin. Wearing loose cream linen long-sleeved shirt and dark canvas work pants, indigo linen overcloak, worn leather sandals with copper buckles. Hands positioned with careful precision, radiating quiet spiritual authority. Setting: interior of converted water treatment substation shrine, dim ambient lighting with soft glow from networked device altars in background, faint smell of machine oil and marigolds suggested through atmospheric haze. Cyberpunk aesthetic but aged and graceful, not aggressive. Realistic skin texture and age, dignified and contemplative expression. --ar 2:3 --v 6"
 }

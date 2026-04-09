@@ -201,5 +201,27 @@
     "The Milwaukee Core",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / Mixed European (Norse-Germanic lineage with secondary Western European mixing)",
+    "height_cm": 185,
+    "weight_kg": 82,
+    "build": "Tall and broad-shouldered with a runner's lean musculature. Chest and shoulders are developed from years of courier work; legs are particularly defined from high-impact running. Not bulky — built for endurance and distance rather than raw strength.",
+    "hair_color": "Dark blonde to light brown, naturally sun-faded at the tips",
+    "hair_style": "Kept short and practical — swept back from his face, low maintenance. Often has a slight tousle from helmet wear.",
+    "hair_length": "Short",
+    "eye_color": "Light gray-blue, unremarkable but attentive",
+    "skin_tone": "Fair with warm undertones; tanned on the face and forearms from outdoor running routes",
+    "complexion": "Open, honest face with a slight perpetual furrow between his eyebrows — the look of someone who worries about details others miss. Clean-shaven or with a day or two of stubble. Minimal scarring on the face; skin shows minor abrasions and healing marks from contact work.",
+    "distinguishing_marks": [
+      "Linear scar along his left temple, approximately 2cm long — impact wound from a surveillance pole during a route miscalculation at age 19",
+      "Network of thin scars across both knees, clustered and radiating from the joint — surgical scarring from reinforcement installation and accumulated impact trauma",
+      "Faint burn marks across the knuckles of his right hand (three fingers) — old thermal exposure, pre-augmentation, likely from warehouse work in his early teens",
+      "Subdermal route-mapping display on left forearm — visible as a faint blue-green rectangular grid beneath the skin, approximately 12cm x 8cm, illuminates slightly when active"
+    ],
+    "visible_augmentations": "Subdermal route-mapping display on left forearm (faintly visible when inactive; glows soft blue-green when active). Knee joint reinforcement is not externally visible but his stride shows slight mechanical precision in high-impact movements. Reflex enhancer and cardiopulmonary optimizer are entirely subcutaneous.",
+    "posture_movement": "Stands with weight slightly forward, ready to move. Walks with economy of motion — no wasted energy. When running, his gait is rhythmic and measured rather than explosive; he moves like someone counting breaths. Hands are usually occupied — checking a device, reviewing routes, or fidgeting slightly. Makes direct eye contact but often glances away to think through logistics. Shoulders carry visible tension; jaw often slightly clenched.",
+    "clothing_style": "Tier 4 working-class practicality. Wears reinforced cargo pants (usually dark gray or black synthetic blend) with multiple pockets for tools, route notes, and equipment. Base layers are durable — moisture-wicking synthetics in muted colors. Over-layers vary: lightweight running jacket with reflective trim for daytime runs; heavier insulated jacket for night work. Worn but maintained boots with good ankle support — scuffed leather or synthetic, well-broken-in. His gear is functional and replaced based on wear, not style. No corporate branding. A faded fabric band around his left wrist — possibly a crew identifier or personal keepsake."
+  },
+  "image_prompt": "Cyberpunk portrait of a tall Scandinavian-heritage male courier, age 23, standing in three-quarter profile. Light gray-blue eyes, fair skin with road-worn tan, short dark-blonde hair swept back. Visible faint subdermal grid display glowing soft blue-green on left forearm. Wearing dark reinforced cargo pants, moisture-wicking base layer, lightweight running jacket with reflective trim. Scars visible on knees and temple. Posture alert and forward-leaning, jaw slightly tense, the focused expression of someone mentally mapping routes. Background: dimly lit industrial corridor of the Shelf, Chicago Avenue, neon surveillance grid visible in shadows. Moody blue-green lighting with accent of amber streetlight. Gritty, weathered texture. Hyper-realistic, intricate detail on augmentation display. --ar 2:3 --v 6"
 }

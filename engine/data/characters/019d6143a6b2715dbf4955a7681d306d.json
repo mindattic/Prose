@@ -271,5 +271,28 @@
     "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
     "Steel"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Hungarian / Brazilian Portuguese",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Heavy-framed, formerly muscular, now carrying softness and age in the belly and chest. Still broad across shoulders but with visible loss of mass and definition — the kind of decline that comes from fourteen years of peak conditioning followed by slow atrophy.",
+    "hair_color": "Black with grey at temples and throughout",
+    "hair_style": "Shaved head maintained with precision",
+    "hair_length": "Shaved",
+    "eye_color": "Right eye: military-grade steel-grey augmetic (unflinching, constant luminescence). Left eye: warm brown, naturally aged with crow's feet.",
+    "skin_tone": "Deep warm brown with uneven texture — dark brown natural skin contrasted by lighter synthetic-graft patches",
+    "complexion": "Heavily lined face with a well-maintained grey beard trimmed close. Scars visible at the jawline and temple. Synthetic-graft skin on left arm and neck is noticeably smoother and slightly paler than surrounding natural skin, with a faint seam-texture visible under direct light. No attempts at cosmetic concealment.",
+    "distinguishing_marks": [
+      "Extensive burn-scar tissue on left arm from wrist to shoulder, replaced with synthetic grafts that are slightly discolored and have different tactile texture",
+      "Synthetic-graft coverage on left side of neck extending from collarbone to jawline, visible as a paler band with subtle seaming",
+      "Deep linear scar along right temple, partially obscured by head shape",
+      "Faded Arcturus corporate tattoo (stylized A in geometric form) on inner right forearm, worn and slightly faded",
+      "Burn marks and scar tissue visible where synthetic grafts meet natural skin, creating visible borderlines"
+    ],
+    "visible_augmentations": "Right eye is unmistakably prosthetic — a steel-grey military-grade optic with faint red circuitry visible at the iris. It does not move in sync with his left eye and emits a faint subsonic hum when scanning. Extensive synthetic-graft patches on left arm and neck are visible as slightly discolored, texturally distinct skin replacements. Walks with a slight leftward lean and favors his right side — evidence of nerve damage in left leg.",
+    "posture_movement": "Wide-legged stance even when standing still. Turns his entire torso rather than just his head — old habit from combat plating. Movements are measured and deliberate, economical. Left leg has a subtle drag at the end of his stride. Sits with his back against walls. Eyes (particularly the augmetic) scan environments methodically. Handshakes are firm but controlled.",
+    "clothing_style": "Tier 3 utilitarian. Well-worn Arcturus Corporation legacy jacket (charcoal synth-leather, faded patches, visible Φ550 price tag from a decade ago still sewn inside). Plain grey thermal underlayer, dark cargo pants with functional pockets and reinforced seams. Boots are military surplus, maintained meticulously. No jewelry. A faded cloth veteran's badge pinned to jacket collar. Clothes are clean and functional but show age — not poor, but not well-maintained by choice. The precision of his grooming contrasts sharply with the wear of his clothing."
+  },
+  "image_prompt": "Cyberpunk portrait of a 72-year-old male veteran, dark brown skin with visible synthetic-graft patches on left arm and neck in lighter tone, shaved head, grey-streaked beard trimmed precise, right eye military-grade steel-grey prosthetic augmetic glowing faintly red at iris, left eye warm brown with crow's feet, heavy-framed build showing age and loss of muscle mass, wearing worn charcoal synth-leather Arcturus corporation legacy jacket over grey thermal, dark cargo pants, military surplus boots, standing with wide stance and slightly leftward lean, scarred and weathered, faded veteran's badge on collar, moody cinematic lighting with cool blue and amber tones, background blurred urban tier-3 housing block at dusk, photorealistic detailed, cinematic depth, gritty authentic aging, warm and cool light contrast, --ar 2:3 --v 6"
 }

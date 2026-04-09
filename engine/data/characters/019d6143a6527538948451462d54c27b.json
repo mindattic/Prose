@@ -234,5 +234,26 @@
     "Tessera Corponation",
     "Copper"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Romanian / Yoruba",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Tall and lean with the kind of careful posture that comes from decades of precision work. Shoulders still broad but narrowed slightly with age; no belly. His frame suggests someone who has never wasted motion.",
+    "hair_color": "White",
+    "hair_style": "Precisely cut short style, maintained weekly by his own hand with mirror and blade",
+    "hair_length": "Short",
+    "eye_color": "Deep brown",
+    "skin_tone": "Medium, warm undertone — the particular shade that sits between Romanian and West African ancestry, weathered by sixty-three years and unfiltered sunlight through shop windows",
+    "complexion": "Strong bone structure, deep nasolabial lines from decades of concentration and occasional smiling. Skin shows his age without apology — fine creases around the eyes, age spots on his forearms. Always clean-shaven; a small white scar traces his left jawline (never explained).",
+    "distinguishing_marks": [
+      "Thin white scar along the left jawline, approximately 4cm, faded but visible in certain light",
+      "Copper-banded joint stabilizers visible around right wrist and knuckles — Helix Biosystems medical-grade augmentation, faint hum if you stand close enough",
+      "Callus pattern on right hand consistent with forty years of handling straight razors"
+    ],
+    "visible_augmentations": "Copper banding around right wrist and hand joints (Helix Biosystems medical augmentation for arthritis management). The banding is burnished but functional-looking, not cosmetic. Faint mechanical hum if listening carefully.",
+    "posture_movement": "Stands completely straight, moves with deliberate precision — no wasted gesture. When walking, each step is placed with intention. When holding a blade, his hand stills absolutely. Has the particular quietness of someone who has spent a lifetime being trusted with sharp objects near vulnerable places. Eyes track movement in his peripheral constantly, a habit from the shop.",
+    "clothing_style": "White barber's coat, typically fastened but not buttoned, worn over simple dark slacks and worn leather shoes polished weekly. No logos, no tier-signaling. Occasionally wears a small wooden pendant (Calea shrine offering) under his collar. Everything is clean, nothing is fashionable. His aesthetic is Tier 4 working-class dignity — not poor, not aspirational, simply consistent."
+  },
+  "image_prompt": "Portrait of an elderly Romanian-Yoruba man, 188cm tall, standing in a vintage barbershop, strong upright posture, white close-cropped hair, deep brown eyes, warm brown complexion with age lines and quiet dignity. Wearing a white barber's coat over dark slacks. Copper-banded medical augmentations visible on right wrist and hand joints. Faint scar on left jawline. Holding a straight razor with absolute stillness. Behind him, vintage barber chairs, chrome fixtures, and a small shrine with candles in the corner. Warm tungsten lighting casting sharp shadows across his face. Cyberpunk aesthetic but grounded, analog, lived-in. Photorealistic, character study, 2226 GLMZ setting, nobody rushing anywhere. --ar 2:3 --v 6"
 }

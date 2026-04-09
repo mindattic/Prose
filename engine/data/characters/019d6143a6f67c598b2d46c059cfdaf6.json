@@ -235,5 +235,27 @@
     "The Pure Hand",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (likely Nigerian or Ghanaian / Ukrainian or Polish)",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and muscular without softness — the build of someone who has lifted, carried, and held steady for decades. Her frame is dense and functional rather than elegant; forearms are corded with visible muscle from years of surgical precision work.",
+    "hair_color": "Black with scattered gray at the temples",
+    "hair_style": "Close-cropped fade, kept practical and low-maintenance",
+    "hair_length": "Short",
+    "eye_color": "Left eye: artificial Axiom optical unit with amber iris ring that faintly pulses during cognitive load. Right eye: deep brown, alert and steady.",
+    "skin_tone": "Deep warm brown with reddish-orange undertones that become visible in low light; sun-weathered in places, pale beneath where augmentation scars are hidden",
+    "complexion": "Unlined by vanity but marked by the weather of forty-one years — a few surgical scars near the left temple where the optical implant integrates with her scalp, calluses across all knuckles, nails kept short and practical. No cosmetics. A small permanent crease between her brows from concentration.",
+    "distinguishing_marks": [
+      "Dense pattern of fine white scars across both knuckles from decades of surgical work in inadequate lighting and sterile conditions.",
+      "Thin surgical scar at left temple where the Axiom optical implant was integrated, now mostly hidden by her hairline but visible if she pulls her hair back.",
+      "A faint circular burn mark on her right forearm (approximately 5cm diameter) — old, pale, from a spill of hot metal during improvised equipment repair.",
+      "Deep crescent-moon scar on her left palm from a scalpel slip during a difficult procedure in 2218; she does not talk about it."
+    ],
+    "visible_augmentations": "The Axiom optical implant in her left eye is immediately visible — a slightly too-perfect iris with a faint amber ring that pulses during concentration or when she is running diagnostic processes on her own systems. The integration point at her temple is barely visible unless her hair is pulled back. The subdermal vibration sensors in her right fingertips are not externally visible but create a faint geometric scarring pattern across her fingertip pads if examined closely.",
+    "posture_movement": "She moves with the controlled economy of someone who has learned that wasted motion is wasted energy. Her left arm hangs at a slightly different angle than her right — not a disability, but a consequence of years favoring her augmented side during precision work. She tends to stand still rather than shift her weight, and when she does move, it is deliberate and minimal. Her hands are rarely still; they fidget with surgical instruments, diagnostic tools, or data chips even during conversation. She has a habit of tilting her head slightly when her optical implant is processing, bringing that amber ring into focus.",
+    "clothing_style": "A perpetually oil-stained, once-white surgical coat over whatever she slept in — usually plain t-shirts or old thermal undershirts in muted grays or blacks. The coat has deep pockets that always contain: forceps, a headlamp with a dying battery, a small data chip reader, and several packages of sutures in different gauges. Her pants are dark work cargo or heavy denim, practical and worn smooth at the seams. She wears a single piece of jewelry: a plain steel ring on her right index finger — not a wedding ring, but something she made herself from reclaimed surgical steel. Her boots are heavy, scuffed, and re-soled at least twice. Everything she wears is Tier 4-5 practical; nothing matches because she does not buy clothes for matching, she buys them for durability and pockets."
+  },
+  "image_prompt": "Cyberpunk street doc character, 41-year-old West African-Eastern European woman, deep brown skin with warm orange undertones, muscular broad-shouldered build from decades of surgical work, close-cropped black hair with gray at temples, wearing an oil-stained white surgical coat over dark thermal undershirt, heavy work cargo pants and scuffed steel-toed boots. Left eye is a secondhand Axiom optical implant with an amber iris ring that faintly pulses, creating an uncanny heterochromatic effect. Scarred knuckles, surgical scars at left temple, calm focused expression, standing in dim fluorescent light in a converted shipping container clinic behind a fish market in Milwaukee's Highland Park Autonomous Zone. Hands visible showing subdermal scarring patterns on fingertips. Mood: pragmatic, capable, unflinching. Lighting: harsh overhead LEDs with warm tungsten spill from hidden work lamps, casting deep shadows under her eyes. Technical aesthetic: gritty urban cyberpunk realism, no neon excess, every augmentation and scar tells a story of survival work. --ar 2:3 --v 6"
 }

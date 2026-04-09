@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Pulaski and Chicago Ave",
-  "description": "Pare Mwangi-Leblanc is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 22, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a tech retriever out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Pare Mwangi-Leblanc is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Pare Mwangi-Leblanc is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 22, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a tech retriever out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Pare Mwangi-Leblanc is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.25,
@@ -155,7 +155,7 @@
       "loyalty_break": 8
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "photographic memory for faces and layouts"
     ],
     "weaknesses": [
@@ -271,12 +271,32 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Nearfield",
     "Ashfield",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East African / French-Canadian",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Athletic and lean with visible muscle definition — dancer's posture, fighter's readiness. Fluid economy of movement suggests years of deliberate physical conditioning.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Kept short and neat, military-standard fade with slightly longer crown",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unaugmented",
+    "skin_tone": "Medium-deep complexion reflecting East African heritage with warm undertones",
+    "complexion": "Clean-shaven, sharp jaw and cheekbones, soft features that read younger than his experience. Skin shows minimal scarring — speaks to either luck or skill. Grooming is meticulous and maintained.",
+    "distinguishing_marks": [
+      "Faint burn scar across the left shoulder blade, approximately 4cm in length, silver-white coloration suggesting old synthetic skin graft",
+      "Network of hairline scars across the inside of both wrists — consistent with old port scar tissue, likely pre-augmentation work"
+    ],
+    "visible_augmentations": "Synthetic lung replacement visible as subtle seams along the ribcage beneath the skin — barely perceptible unless specifically looked for, but catches light differently than natural skin. Subcutaneous tubing tracery visible along the interior of both forearms where synthetic muscle fiber integrates with natural biology, most obvious when arms are extended or flexed.",
+    "posture_movement": "Moves with controlled precision — every step economical, no wasted energy. Standing posture is upright but relaxed, suggesting confidence without aggression. Head positioning is alert but not paranoid. When at rest, weight is always distributed for immediate movement in any direction.",
+    "clothing_style": "Tier 4 functional aesthetic — reinforced synthetic-blend jackets with internal pockets for gear, matte-finish combat pants with integrated knee pads, steel-toed boots. Colors are muted: grays, blacks, deep blues. Minimal branding beyond functional tactical webbing. Everything is maintained in immaculate condition despite the wear of active work. No jewelry or unnecessary adornment."
+  },
+  "image_prompt": "cyberpunk portrait of a 22-year-old athletic East African-French male with lean muscular build, short dark brown hair, soft angular features, dark eyes, medium-deep skin tone, standing in three-quarter pose with alert posture, wearing reinforced tactical jacket and combat pants, visible synthetic tubing scars along forearms and ribcage seams catching cool light, faint old burn scar on shoulder, immaculate grooming, confident expression, urban gritty background suggesting Ashfield half-burned residential district at dusk, cool blue and amber neon lighting, shallow depth of field, cinematic lighting emphasizing chrome augmentation scars, high contrast, shot from mid-chest up, professional portrait style --ar 2:3 --v 6"
 }

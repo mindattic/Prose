@@ -38,7 +38,7 @@
       "His mistrust of institutions has made him slow to accept help from institutional sources, even when help is genuinely being offered",
       "He underestimates how isolated he has become and what that isolation has done to his judgment on social situations"
     ],
-    "secret": "His 2193 sensor data shows a thermal anomaly in the lake's deep current system that, run through his models, projects a significant surface-ecosystem disruption within eight to twelve years — disruption severe enough to affect Meridian 88's entire water processing infrastructure. He has told no one. He is still running the models again, looking for the error, because he desperately wants there to be an error."
+    "secret": "His 2193 sensor data shows a thermal anomaly in the lake's deep current system that, run through his models, projects a significant surface-ecosystem disruption within eight to twelve years — disruption severe enough to affect GLMZ's entire water processing infrastructure. He has told no one. He is still running the models again, looking for the error, because he desperately wants there to be an error."
   },
   "speech_patterns": {
     "vocabulary": "Precise technical language for science; plain and direct language for everything else; no filler words — when he doesn't know something he says so immediately",
@@ -213,5 +213,27 @@
     "Slagworks Industrial",
     "Pellucid Systems"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Polish",
+    "height_cm": 188,
+    "weight_kg": 92,
+    "build": "Broad-shouldered and solid, thickened through the torso from six decades of field seasons and desk work, but still carrying the frame of someone who spent his thirties doing physical labor in harsh conditions",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, neat, deliberately maintained",
+    "hair_length": "Short",
+    "eye_color": "Medium brown, natural",
+    "skin_tone": "Dark brown with uneven weathering — deeper tan on face and forearms, lighter across the chest and upper back from decades of selective sun exposure during fieldwork",
+    "complexion": "Heavily lined face, particularly around the eyes and mouth from decades of squinting into weather; sun-damaged areas show faint evidence of dermal repair work (slight textural smoothing on cheeks and nose bridge); strong jawline still visible beneath age-softening; maintained grooming but not fastidious",
+    "distinguishing_marks": [
+      "Network of fine age lines across forehead and between eyebrows from sixty years of concentration and field observation",
+      "Deep laugh lines extending from outer corners of eyes",
+      "Thin white scar running 3cm along left temple, partially hidden by hairline (fieldwork accident, pre-2181)",
+      "Significant solar keratoses on ears and upper shoulders (visible evidence of extended outdoor exposure)"
+    ],
+    "visible_augmentations": "Prosthetic left hand — older model with visible mechanical joints, darker synthetic material, deliberately not cosmetically matched to his skin tone; the prosthetic is slightly less responsive than a modern augment, movements precise but fractionally delayed. Barometric implant behind left ear visible as a faint bulge and subtle scarring, barely noticeable unless you know to look. Dermal repair layer across face and upper body not visually apparent except as slight texture variation in healing scars.",
+    "posture_movement": "Stands with the slight forward lean of someone perpetually ready to move toward a weather station or data problem; moves deliberately, economically, no wasted motion; left arm compensates automatically for the prosthetic's slight lag — his body has adapted completely. Tends to look slightly past people rather than directly at them, eyes defaulting to middle-distance focus as if still scanning for weather patterns.",
+    "clothing_style": "Tier 3-4 practical. Favors heavy thermal layering even in moderate weather — old Arcturus field jackets (now patched, still bearing faded company branding he has not bothered to remove), functional waterproof pants in dark blue or black, work boots maintained obsessively. Wears a weathered wool watch cap indoors sometimes. No affectation, no brand-signaling beyond the utility of things that last. His only jewelry is a scratched titanium ring on his right ring finger and a woven cordage bracelet on his right wrist made from his research buoys' mooring line, made by one of his University Spine mentees."
+  },
+  "image_prompt": "Cyberpunk portrait of Levan Diallo-Szymborska, 63-year-old tall broad-shouldered male with white close-cropped hair, dark brown weathered skin heavily lined from decades of outdoor fieldwork, warm medium-brown natural eyes gazing into middle distance. Left prosthetic hand visible with mechanical joints and dark synthetic material, deliberately aged and unupgraded. Barometric implant scarring faint behind left ear. Wearing layered thermal Arcturus field jacket with visible patches, dark waterproof pants, work boots, faded wool watch cap. Standing on the platform of a converted monitoring station overlooking the Great Lakes, early morning light, cool blue tone, mist rising from dark water behind him. Subtle LED glow from sensor buoys in the background. Technical, documentary realism, weathered but dignified bearing, the posture of someone already done with the math on the worst outcome. Cinematic lighting, sharp focus. --ar 2:3 --v 6"
 }

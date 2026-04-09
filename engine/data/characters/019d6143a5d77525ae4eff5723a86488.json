@@ -285,5 +285,28 @@
     "The Gradient Compact",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Eastern European",
+    "height_cm": 168,
+    "weight_kg": 89,
+    "build": "Compact and densely muscled, low center of gravity — built for impact absorption and close-quarters combat. Shoulders broad, legs thick with visible synthetic fiber cabling, minimal body fat.",
+    "hair_color": "Black with premature silver at temples",
+    "hair_style": "Short, functional cut, often unwashed or slicked back",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, slight yellow undertone in low light (subcutaneous neural implant feedback)",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Weathered and scarred — face mapped with pale scar tissue from impact trauma, jaw clenched often, stubble permanent fixture due to nocturnal schedule. Crow's feet deep. Small burn scar on left cheekbone. Skin has the leathery quality of someone who sleeps during daylight and exists in artificial light.",
+    "distinguishing_marks": [
+      "Jagged scar running from left temple to jaw — pale and deep, clearly from blade or shrapnel",
+      "Burn scar on left cheekbone, roughly 3cm diameter, tissue slightly depressed",
+      "Network of white scars across knuckles and forearms — accumulated impact damage",
+      "Surgical scar along left knee where synthetic muscle fiber replacement was installed, visible chrome port visible beneath skin",
+      "Small tattoo on inner right wrist — faded Geartown sigil in blue ink, amateur work"
+    ],
+    "visible_augmentations": "Both legs show synthetic muscle fiber replacement — visible chrome-gray cabling running along outer thighs and calves beneath translucent skin panels, especially when moving. Fingertips show faint metallic sheen from gecko-grip implants, subtle LED indicator lights at nail beds when activated. Toes slightly bulkier than normal from toe pad augmentations.",
+    "posture_movement": "Moves economically and quietly despite muscular build — predatory economy of motion. Stands with weight forward on balls of feet, ready to move vertically or horizontally instantly. Head often tilted slightly, assessing. Rarely relaxes shoulders. Grips things with unnecessary force. Ascends stairs slowly and deliberately (chrome legs perform poorly on inclines), but descended rapidly. Avoids crowds, positions himself with back to wall and exit visible.",
+    "clothing_style": "Tier 3-4 functional wear — dark synthetic cargo pants with reinforced seams and Φ150+ knee armor inserts, black under-armor compression shirt (heat regulation for augmentations), gray Kevlar-weave overshirt or unmarked tactical jacket. Steel-toed boots, worn and re-soled multiple times. Minimal accessories — no jewelry, simple analog watch (rejects neural time implants), concealed carry holster worn loose. Everything chosen for durability and mobility over aesthetics. Clothes smell like synthetic oil and industrial soap."
+  },
+  "image_prompt": "cyberpunk character portrait of Cem Osei-Petrov, a 45-year-old compact muscular man with West African and Eastern European heritage, dark brown skin with premature silver at temples, short black hair, weathered face mapped with pale scars, intense dark eyes. Visible chrome synthetic muscle fiber cabling running along legs and calves beneath translucent skin panels, metallic gecko-grip fingertips. Wearing dark tactical cargo pants, black compression shirt, gray Kevlar-weave jacket, steel-toed boots. Nocturnal lighting, cool blue and amber neon glow, standing in three-quarter pose with weight forward, predatory posture, shoulders tensed, assessing expression. Gritty, photorealistic, detailed scar tissue, industrial cyberpunk aesthetic, neo-noir, harsh LED lighting, film noir shadows, professional security headshot style --ar 2:3 --v 6"
 }

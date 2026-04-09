@@ -166,7 +166,7 @@
   "changelog": [],
   "related_entities": [
     "Blackpipe Corridor",
-    "Meridian 88",
+    "GLMZ",
     "The Narrows Compact",
     "The Calumet Sink",
     "Axonal Stretch Resonance Lance",
@@ -174,5 +174,26 @@
     "Elena Vasquez-9",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Central Asian (Ghanaian / Kazakh)",
+    "height_cm": 125,
+    "weight_kg": 24,
+    "build": "Small-framed and wiry, undersized even for her age. Lean muscle from constant running through tight spaces, no body fat reserves. Proportionally long limbs for climbing and ducking.",
+    "hair_color": "Natural deep black",
+    "hair_style": "Tightly coiled, worn in close braids underneath a perpetually oversized charcoal knit cap she keeps pulled low",
+    "hair_length": "Short (hidden)",
+    "eye_color": "Very dark brown, nearly black",
+    "skin_tone": "Deep warm brown with golden undertones",
+    "complexion": "Sharp, angular face with prominent cheekbones. Skin shows wear — old scrape marks on knees and hands, faded dirt permanent in the creases of her palms. Perpetually alert expression, eyes tracking movement.",
+    "distinguishing_marks": [
+      "Faded chemical burn scar running along the outer left forearm, pale and slightly textured, approximately 8cm in length — memento of a leaking coolant pipe in the Blackpipe tunnels.",
+      "Small scars on both knuckles from crawling through rough maintenance corridors.",
+      "A thin, almost imperceptible line of fine silver sensory filaments (cat-whisker geneware) extending from her left cheekbone and right temple, visible only in direct light and when they twitch involuntarily."
+    ],
+    "visible_augmentations": "Fine silver sensory whisker filaments barely visible along cheekbones and temples, inherited geneware from her mother. They twitch noticeably when she's nervous or processing environmental stimuli.",
+    "posture_movement": "Moves with practiced economy — crouching, sliding, climbing rather than walking. Head held slightly tilted, as if always listening. Goes from loose and laughing to perfectly still and silent in milliseconds when danger is sensed. Fidgets with the brim of her cap when anxious.",
+    "clothing_style": "Tier 5 street kid. Oversized knit cap (charcoal, holes patched with thread). Mismatched compression layer under a faded gray tech-fabric hoodie two sizes too large, stolen or scavenged. Cargo pants with more pockets than seams intact, one leg cuffed shorter where a burn melted the original hem. Worn synthetic sneakers held together with e-tape, sole separating at the toe. A length of cord around her waist holds a water bottle and a small shrine-maintenance kit. No jewelry except a twisted bit of copper wire looped around her wrist — a talisman or marker."
+  },
+  "image_prompt": "A nine-year-old girl with deep warm brown skin and sharp angular features, standing in shadow in a cyberpunk industrial corridor. She wears an oversized charcoal knit cap pulled low over tightly coiled black hair, a faded gray oversized hoodie, and patched cargo pants. Her large dark eyes are watchful and alert. Fine silver sensory whisker filaments visible along her left cheekbone, twitching slightly. An old faded chemical burn scar runs along her left forearm. Small and wiry, proportioned for crawling through tight spaces. The setting is the Blackpipe Corridor near Milwaukee — rust-stained metal maintenance tunnels, dripping pipes, dim LED work lights casting harsh shadows. Wet concrete floor reflects pale green emergency lighting. Cinematic, gritty realism, street photography aesthetic, shallow depth of field. --ar 2:3 --v 6"
 }

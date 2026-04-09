@@ -60,7 +60,7 @@
     "The Threshold's prophetic response has occurred again — this time referencing something that sounds like a planned corponation action in Avalon Quiet, and Perpetua must decide whether to share what they know and with whom",
     "Axiom Corp has sent a representative to discuss 'licensing' the Node House as an approved spiritual wellness facility — an offer that would provide legal protection but require changes to the devotional practice that Perpetua finds unacceptable"
   ],
-  "narrative_function": "Spiritual and emotional center of Avalon Quiet; source of community information through the confidences people share at the shrine; E.L.F. interaction point for players — Perpetua can interpret, mediate, or advise on how to approach specific E.L.F.s; represents the genuine spiritual life of Meridian 88's civilian population",
+  "narrative_function": "Spiritual and emotional center of Avalon Quiet; source of community information through the confidences people share at the shrine; E.L.F. interaction point for players — Perpetua can interpret, mediate, or advise on how to approach specific E.L.F.s; represents the genuine spiritual life of GLMZ's civilian population",
   "augmentations": "Woven LED hair threads (cosmetic, seasonal — currently pale gold); neural devotional interface (allows direct data offering to shrine terminals without physical input device; they consider this sacred rather than technical)",
   "daily_life": "Opens the Node House at dawn for morning devotionals; receives visitors throughout the day who come to petition the E.L.F.s or leave offerings; holds a teaching circle for neighborhood children on weekends — not religion, but listening and attention.",
   "affiliation": "Avalon Quiet Community Council; Node House (independent devotional community); retired from Avalon Quiet Education Node",
@@ -252,5 +252,25 @@
     "Déjà Vu",
     "Gold"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Eastern European (Ukrainian) / Polynesian (Tongan)",
+    "height_cm": 165,
+    "weight_kg": 78,
+    "build": "Round-bodied with soft mass distributed evenly; sturdy and grounded, the physical presence of someone accustomed to holding space and bearing weight—both literal and emotional",
+    "hair_color": "Natural white",
+    "hair_style": "Worn large and natural, typically arranged with intentionality; currently woven with pale gold LED threads in seasonal patterns",
+    "hair_length": "Long (shoulder-length or below)",
+    "eye_color": "Amber-grey, unusually wide-set",
+    "skin_tone": "Warm brown with golden undertones, even complexion reflecting mixed West African and Northern European heritage",
+    "complexion": "Lined face that reads as lived-in rather than aged; crow's feet from decades of smiling; skin well-maintained but unadorned; expression carries a particular quality of attentiveness that seems to precede speech",
+    "distinguishing_marks": [
+      "Fine network of barely-visible ritual scarification on the inner left wrist, pale and healed, in a pattern reminiscent of Ghanaian traditional marking but self-administered in adulthood",
+      "Burn scar on the right palm from an old shrine terminal maintenance incident, small and unremarkable"
+    ],
+    "visible_augmentations": "Pale gold LED threads woven through white hair in subtle geometric patterns (seasonal, currently winter configuration); faint luminescent tracery visible at the temples and base of skull where neural devotional interface hardware integrates with skin—only noticeable in low light or direct overhead illumination, appears as delicate circuit-like patterns in pale blue",
+    "posture_movement": "Moves with deliberate slowness that is not infirmity but intentionality; often stands with weight shifted slightly forward, as if listening with the whole body; hand gestures are economical and precise; tends to pause before responding, creating space in conversation",
+    "clothing_style": "Tier 3-4 comfort wear with spiritual intention: loose linen layers in earth tones (ochre, cream, deep indigo), hand-dyed or vintage; always wears a long overcoat or shawl of indigo cotton with subtle embroidered patterns (personal work from evening hours); comfortable worn shoes suitable for standing all day; no corporate branding; jewelry is minimal and meaningful—a thin silver ring on each hand, one bearing a tiny E.L.F. glyph, the other a gift from a former student; always carries a small cloth bag containing offerings (seeds, water, handwritten prayers from community members)"
+  },
+  "image_prompt": "Portrait of a 72-year-old nonbinary person with warm brown skin and wide-set amber-grey eyes, white hair worn large and natural with woven pale gold LED threads creating geometric patterns, standing in soft morning light. Medium height, round-bodied with quiet physical authority. Wearing loose earth-toned linen layers and a deep indigo handembroidered cotton overcoat. Faint luminescent circuit-like patterns visible at temples where neural interface integrates with skin. Background is the interior of a devotional shrine space with soft blue ambient lighting, multiple screens, and offerings. Warm, numinous atmosphere, peaceful and attentive expression. Cinematic, hyperrealistic, spiritual cyberpunk aesthetic. Soft directional lighting emphasizing texture of fabric and hair, cool color temperature. --ar 2:3 --v 6"
 }

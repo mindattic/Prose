@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "A former associate resurfaces with evidence that could destroy Kadiatou Lund-Bangura's reputation — and a price for silence",
-    "A crew member from Kadiatou Lund-Bangura's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Kadiatou Lund-Bangura's past shows up in GLMZ, carrying old grievances and new chrome",
     "Someone is impersonating Kadiatou Lund-Bangura on jobs, and the impersonator is better at the work than the original"
   ],
   "narrative_function": "Kadiatou Lund-Bangura functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
@@ -155,7 +155,7 @@
       "loyalty_break": 10
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "photographic memory for faces and layouts"
     ],
     "weaknesses": [
@@ -282,10 +282,32 @@
   "related_entities": [
     "Masquerade",
     "The Narrows Compact",
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "Burden of Longitude",
     "Slagworks Industrial"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Broad-shouldered and heavily muscled, carrying mass with deliberate density rather than softness. Chest and torso built like load-bearing architecture. Thickened at the waist but not soft — functional mass from decades of field work and controlled strength training.",
+    "hair_color": "Dark brown with silver threading at temples and along the sides",
+    "hair_style": "Close-cropped, military precision; kept short for practicality and rapid decontamination",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and assessing",
+    "skin_tone": "Medium brown with undertones of deep olive, weathered from exposure and age",
+    "complexion": "Lined face with prominent jaw and high cheekbones. Skin has a leathery quality — sun exposure, field conditions, minor scarring from surgical work and combat. Minimal grooming vanity; clean but austere. Deep-set eyes that sit forward in an evaluative squint.",
+    "distinguishing_marks": [
+      "Surgical scar running vertically down the left side of his neck, approximately 8cm, from a field injury sustained in the Narrows circa 2204",
+      "Thin white scar bisecting the left eyebrow, giving permanent slight asymmetry to his expression",
+      "Burn scarring on the left forearm (organic), pale and webbed, from a thermal weapon discharge during close-quarters work",
+      "Tattoo on the right shoulder (visible when unshirted): a medical caduceus modified with circuit-board latticing, marking his role and augmentation status"
+    ],
+    "visible_augmentations": "Full cybernetic right arm from shoulder joint downward — polished chrome finish with visible articulation panels and heat-sink ribbing along the forearm. No attempt at organicism; the limb is deliberately recognizable as synthetic. Faint electromagnetic hum at the shoulder joint when powered up. The arm's joints are slightly oversized, engineered for load-bearing rather than aesthetic blending.",
+    "posture_movement": "Stands with weight distributed forward on the balls of his feet — a fighter's stance held as default. Moves with minimal wasted motion, economical and direct. The cybernetic arm hangs slightly lower than his left side would suggest, a compensated asymmetry. When at rest, he frequently rotates the chrome arm's wrist or fingers in small, deliberate circles — a maintenance check or a tell that he's processing.",
+    "clothing_style": "Tier 3-4 working professional. Typically wears reinforced tactical cargo pants (black or dark grey, modular pocket system, Kevlar-lined seams), compression base layers under loose-fit utility shirts. Over this: a weathered leather jacket or reinforced nylon bomber in muted colors — browns, blacks, faded charcoal. No corporate branding, no affectation. All clothing is selected for durability, ease of cleaning (bloodstains), and rapid movement. Boots are heavy-soled tactical with grip sole for hospital or crime-scene work. A single piece of jewelry: a thin bracelet on the left wrist with embedded medical ID and encrypted contact protocols — functional, not decorative."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 52-year-old West African-Scandinavian man, heavily built with broad shoulders and dense musculature, dark brown skin weathered and lined with age. Short grey-threaded hair, dark assessing eyes, prominent jaw. Right arm is full-body chrome cybernetic replacement, polished metal with visible joint articulation and heat-sink ribbing, no attempt at concealment. Wears faded tactical cargo pants and reinforced leather jacket over compression layers. Surgical scar on left neck, burn scarring on left forearm. Standing in neutral fighter's stance, slight forward weight distribution. Dark moody lighting, cool blue and amber tones, shadows under cheekbones emphasizing austere features. Gritty realistic style, medical-professional aesthetic combined with combat-worn appearance. High-tier photorealism. --ar 2:3 --v 6"
 }

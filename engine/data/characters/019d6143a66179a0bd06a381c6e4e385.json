@@ -286,5 +286,27 @@
     "Stratum",
     "Pellucid Systems"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Serbian / Ghanaian",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Compact and densely muscled, built low to the ground with a center of gravity engineered for impact absorption. Shoulders broad relative to frame, legs powerful and proportional. No excess mass — every kilogram serves function.",
+    "hair_color": "Dark brown, naturally, with premature silver threading at temples",
+    "hair_style": "Pulled back tight, practical, minimal styling. Kept short enough to prevent grab points.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with amber undertones",
+    "skin_tone": "Warm olive-brown, reflecting mixed Balkan and West African ancestry",
+    "complexion": "Weathered for 36 — sun damage from nocturnal work cycles causing occasional hyperpigmentation on cheekbones. Sharp cheekbones, squared jaw, a nose that has been broken and reset professionally. Facial hair kept to stubble, deliberate maintenance.",
+    "distinguishing_marks": [
+      "Jagged scar along left temple, 4cm, running toward the hairline — blunt force impact",
+      "Burn scarring across right shoulder and upper chest in a crescent pattern, faded but visible — old thermal damage",
+      "Thin white scar bisecting the left eyebrow",
+      "Tattoo on left inner forearm: a geometric circuit pattern in black ink, 8cm tall, functional aesthetic"
+    ],
+    "visible_augmentations": "Full cybernetic right arm from shoulder replacement — polished gunmetal chrome with visible articulation joints and servo lines. The arm is noticeably stronger in profile, with angular plating and a distinctly non-organic aesthetic. No attempt to pass it off as skin. Nasal augmentation barely visible — faint discoloration around the nostrils where the chemical analyzer interfaces with living tissue.",
+    "posture_movement": "Economy of motion. Stands with weight distributed across both legs, knees slightly bent, ready to shift. Moves without excess. The chrome arm hangs naturally but with a subtle mechanical precision to its rest position. Eyes are always tracking, cataloging. Nocturnal adaptation — slight squint in bright light, but in dim conditions moves with predatory comfort.",
+    "clothing_style": "Tier 4 utilitarian — function over fashion. Black reinforced cargo pants with utility pockets and articulated knee panels. Steel-toe boots, scuffed and worn but maintained. Layered tops: a fitted grey undershirt and a black tactical vest with integrated armor plating and tool loops. A worn synthetic leather jacket in charcoal, sized to accommodate the chrome arm without binding. No corporate branding. All materials are durable and matte — nothing that catches light. Minimal jewelry: a simple steel ring on left hand, a wrist-mounted chronometer in brushed steel."
+  },
+  "image_prompt": "Cyberpunk close-quarters combat specialist, compact muscular build, 168cm tall, warm olive-brown skin tone with mixed Serbian and Ghanaian heritage, dark brown eyes with amber undertones, short dark hair with silver threading at temples, jagged scar on left temple, sharp cheekbones and squared jaw. Full polished gunmetal chrome cybernetic right arm with visible servo articulation replacing right shoulder. Wearing black reinforced tactical cargo pants, steel-toe boots, fitted grey undershirt, black tactical armor vest, worn charcoal synthetic leather jacket. Standing in a dim Tier 4 tenement interior, neon light from dirty window casting blue-purple shadows. Predatory posture, weight distributed forward, eyes tracking. Nocturnal, moody, precise. Highly detailed cyberpunk aesthetic, gritty realism, dramatic low-key lighting, film noir influence, practical street warrior appearance --ar 2:3 --v 6"
 }

@@ -230,5 +230,26 @@
     "The Pure Hand",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Persian / Sri Lankan / Sudanese",
+    "height_cm": 156,
+    "weight_kg": 68,
+    "build": "Broad-shouldered and solid, carrying weight with the structural efficiency of someone built for endurance rather than speed. Forearms thickened from decades of counter work—lifting pots, wringing cloths, gripping ledgers.",
+    "hair_color": "Silver-white, natural gray from age",
+    "hair_style": "Practical, close-cropped, swept back from her forehead with no styling product—pure function",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm and perceptive",
+    "skin_tone": "Deep warm brown, the complexion of someone with Persian and East African heritage",
+    "complexion": "Face lined with the wear of 56 years and thousands of negotiating conversations; crow's feet pronounced at the outer corners of her eyes; a quality of settled centeredness in her expression. Minimal makeup—perhaps a trace of kohl on workdays. Jaw and neck unmarked save for the two vertical scars.",
+    "distinguishing_marks": [
+      "Two parallel vertical scars running approximately 4 centimeters along her left jaw from angle to mid-cheek, thin and clean-edged, suggesting old surgical or blade work—source unknown and deflected",
+      "Light callusing on the palms and inner fingers of both hands from decades of kitchen work",
+      "A faint burn scar on the inside of her right wrist, small and old, consistent with steam exposure"
+    ],
+    "visible_augmentations": "A small flesh-tone hearing aid implant visible behind her left ear when her hair is pulled back—medical-grade, no cosmetic modification. The device is utilitarian and un-hidden. No other visible augmentation; she explicitly declines chrome on principle.",
+    "posture_movement": "She moves with economy and intention—no wasted motion. When standing at a counter, rooted and present. When seated for business, she leans back slightly, creating a small distance that feels like neutrality rather than coldness. Hands gesture deliberately when speaking; she uses her reading glasses (on a chain around her neck) as a negotiating tool, removing and replacing them with theatrical precision. Her default expression is attentive and warm, but her eyes track everything in a room simultaneously.",
+    "clothing_style": "Tier 4 working-class practicality. In the shop: a dark linen apron over loose cotton trousers in dark blue or charcoal, a long-sleeved undyed cotton shirt (rolled to the elbow in warm weather), sturdy non-slip kitchen shoes. In the back room: the apron comes off; she wears a structured dark jacket of synthetic wool, well-maintained but not new. Reading glasses on a silver-plated chain. No jewelry beyond a simple steel watch and a thin band on her left ring finger (wedding or memorial—never explained). Her clothes are always clean, often still damp along the collar from the steam of her own kitchen. No visible corp logos or status symbols. Everything suggests: I have been doing this for decades and I will continue doing this for decades."
+  },
+  "image_prompt": "A 56-year-old woman of mixed Persian, Sri Lankan, and East African heritage, short silver-white hair, deep warm brown skin with two faint parallel vertical scars on her left jaw. Broad-shouldered, solid build. Wearing a dark linen apron over loose cotton trousers and rolled-sleeve shirt, standing behind a steaming tea counter in warm amber lighting. Her hands are large and calloused, resting on the counter. She wears reading glasses on a chain around her neck and a simple steel watch. Her expression is warm but sharply attentive, with the composed authority of someone who knows everything in a room. Background: a small cluttered tea shop interior with visible steam, ceramic pots, hanging herbs, soft golden incandescent lighting. Cyberpunk gritty realism, natural aging, no cosmetic augmentation, photorealistic, warm color grading, intimate and commanding atmosphere. --ar 2:3 --v 6"
 }

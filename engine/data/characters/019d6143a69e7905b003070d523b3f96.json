@@ -244,5 +244,27 @@
     "Rust",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Finnish",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and sturdy, with thick musculature in her forearms and upper back from decades of hand-sewing and machine work. Not heavy, but densely packed — the build of someone who has spent her life pulling thread tight.",
+    "hair_color": "Black with silver streaking, predominantly at temples and crown",
+    "hair_style": "Worn in a tight, functional bun secured with two long steel sewing needles used as pins",
+    "hair_length": "Medium (when released, falls to mid-shoulder)",
+    "eye_color": "Dark brown, sharp and observant",
+    "skin_tone": "Deep brown with warm undertones, weathered by age and studio lighting",
+    "complexion": "Lined face that shows her age without apology; pronounced crow's feet from squinting at fine detail work; creases around her mouth from decades of speaking plainly. Skin texture shows minor sun damage on her forearms. Hands are the focal point — thick calluses on fingertips, chemical burn scar along left palm (pale, webbed tissue), ink stains in thumb whorls that never fully wash out.",
+    "distinguishing_marks": [
+      "Chemical burn scar along left palm — pale, webbed tissue approximately 3cm across, location between thumb and forefinger, origin unknown but related to synth-dye incident",
+      "Bioluminescent tracery pattern in pale amber along both clavicles and across upper shoulders — subtle, cosmetic augmentation installed at age 40, faded somewhat with age and skin settling",
+      "Multiple small linear scars on fingertips and knuckles from needle pricks and thread cuts accumulated over four decades",
+      "Permanent ink staining in the whorls of both thumbs and two fingers of right hand from years of marking fabric"
+    ],
+    "visible_augmentations": "Faint amber bioluminescent tracery visible along clavicles and shoulders when lighting is indirect or dim — appears as delicate, branching lines. Subtle mechanical whir in both hands when she moves — stabilizer servos in knuckles and wrist joints, visible only as slight rigidity in finger articulation and the occasional metallic click when joints lock for precision work. No visible external ports or chrome.",
+    "posture_movement": "Stands and sits with perfect spinal alignment from years of bench work — rarely slouches. Moves efficiently and deliberately, no wasted motion. Hands move with precision even at rest; she fidgets with thread or needles, constantly testing tension. When speaking, she jabs the air with her needles for emphasis, a habit so ingrained it's become gesture-language. Her gait is steady and slightly stiff in the hips — age and long hours.",
+    "clothing_style": "Tier 3 working-class practical: fitted indigo work apron over grey or black long-sleeved shirts (sleeves always rolled to mid-forearm despite the cold, exposing her scarred hands and augmented shoulders). Loose grey trousers with deep pockets full of thread spools, measuring tape, and loose needles. Worn leather slip-ons with good arch support. A heavy wool cardigan in charcoal or dark green for the walk to and from the shop. No jewelry except a plain band on her right ring finger — she threads a new one through it every few years when the old wears through. Her apron pockets are worn at specific points where she habitually reaches."
+  },
+  "image_prompt": "A 58-year-old West African-Finnish woman with deep brown skin and silver-streaked black hair pulled into a tight bun secured by two steel sewing needles, standing in her tailor shop with warm amber bioluminescent tracery faintly glowing along her clavicles and shoulders. Her hands are thick-callused and scarred, bearing the marks of four decades of sewing work. She wears a fitted indigo work apron over a grey long-sleeved shirt with rolled sleeves, exposing her weathered forearms and the faint amber glow of cosmetic augmentations. Her face shows her age with character — lined, observant, fair. In the background, industrial sewing machines and spools of thread in obsessive organization. Soft warm overhead lighting typical of a working-class enclave shop. Realistic, grounded cyberpunk aesthetic, dignified and unflinching, hands prominently featured. --ar 2:3 --v 6"
 }

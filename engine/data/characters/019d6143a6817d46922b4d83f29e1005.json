@@ -13,7 +13,7 @@
   "age": 62,
   "status": "active",
   "location": "The Ferment Quarter, permanent residency above a venue called The Sump, near North Ave and Milwaukee",
-  "description": "Gbemi is sixty-two and looks it without apology — her face is deeply lined from years of working in smoky underground spaces, her natural hair gone fully silver and kept in long locs that brush her shoulder blades and are threaded with small ceramic beads she's collected from forty years of touring. She is a large woman with a large physical presence and the extraordinary stillness of someone who has learned that stillness is its own kind of power. Her only augmentation is a set of cochlear audio enhancers she got at thirty-five when early hearing loss threatened to end her career; she treats them with the same maintenance religiosity a surgeon gives their instruments.\n\nShe was a significant figure in the Meridian 88 underground sound scene in the 2170s and is now something the scene has very complicated feelings about: a legend who is still alive, still working, and not particularly interested in being a legend. Her sound sculptures are physical installations — transducer arrays that make space itself vibrate, music that you feel in your sternum before your ears register it. Her DJ sets are rarer now, maybe four or five a year, but the room fills six hours before doors for each one. She has seen the scene reinvent itself four times and has opinions about all of it.",
+  "description": "Gbemi is sixty-two and looks it without apology — her face is deeply lined from years of working in smoky underground spaces, her natural hair gone fully silver and kept in long locs that brush her shoulder blades and are threaded with small ceramic beads she's collected from forty years of touring. She is a large woman with a large physical presence and the extraordinary stillness of someone who has learned that stillness is its own kind of power. Her only augmentation is a set of cochlear audio enhancers she got at thirty-five when early hearing loss threatened to end her career; she treats them with the same maintenance religiosity a surgeon gives their instruments.\n\nShe was a significant figure in the GLMZ underground sound scene in the 2170s and is now something the scene has very complicated feelings about: a legend who is still alive, still working, and not particularly interested in being a legend. Her sound sculptures are physical installations — transducer arrays that make space itself vibrate, music that you feel in your sternum before your ears register it. Her DJ sets are rarer now, maybe four or five a year, but the room fills six hours before doors for each one. She has seen the scene reinvent itself four times and has opinions about all of it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -219,7 +219,7 @@
   "changelog": [],
   "related_entities": [
     "The Ferment Quarter",
-    "Meridian 88",
+    "GLMZ",
     "Periscope",
     "The Quiet Room",
     "South Deering Sump",
@@ -228,5 +228,27 @@
     "Zheng-Dao Heavy Industries Space Elevator Tether System",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / North African (Maghrebi) / Polynesian",
+    "height_cm": 178,
+    "weight_kg": 89,
+    "build": "Large-framed and solid without softness; broad shoulders and deep chest that reads as powerful rather than heavy. Decades of standing in studios and behind turntables have given her the posture of someone who owns her space.",
+    "hair_color": "Silver-white, natural",
+    "hair_style": "Long locs, shoulder-blade length, threaded throughout with small ceramic beads in earth tones and jewel colors collected across forty years of touring and living",
+    "hair_length": "Long",
+    "eye_color": "Deep brown, alert and assessing",
+    "skin_tone": "Medium to deep brown with warm undertones, reflecting mixed West and North African heritage",
+    "complexion": "Deeply lined face that tells a story of smoke-filled rooms, late nights, and four decades of intensity without regret. Laugh lines around her eyes are pronounced. Skin is well-maintained but unadorned — no cosmetic modifications, no attempt to smooth away age. High cheekbones, strong jaw. Grooming is precise and minimal.",
+    "distinguishing_marks": [
+      "Fine scar tissue along the left temple, barely visible, from a venue accident in 2181",
+      "Small burn mark on the inside of her right wrist from a soldering iron incident while building early transducer arrays",
+      "Faint tattoo on her inner left forearm in Yoruba script, done in 2154, now softened by age but still readable"
+    ],
+    "visible_augmentations": "Bilateral cochlear implants visible behind her ears when hair is pulled back — medical-grade chrome housings with subtle LED indicator lights (active when in use). She doesn't hide them and treats them as professional tools, not cosmetic concerns. No other visible augmentation.",
+    "posture_movement": "Moves with deliberate economy. Her stillness is remarkable — she can stand or sit motionless for extended periods while observing a room or listening to a mix. When she does move, it's purposeful and grounded. Her hands move with precision when working; she gestures sparingly when speaking, but when she does, the gesture carries weight.",
+    "clothing_style": "Tier 3-4 working artist aesthetic refined by age and confidence. Favors dark, durable fabrics (technical cotton blends, industrial weave) in blacks, deep grays, and charcoal. Usually wears fitted but unadorned vests or sleeveless high-neck shirts to show the cochlear implants without fanfare. Functional pants or cargo-style bottoms with enough pockets for tools and cables. Worn leather boots (same pair rebuilt three times). A single piece of jewelry: a thin silver band on her right ring finger, nothing ornate. When DJing, adds a long dark overshirt in some technical fabric. No logos, no brand signaling — clothes are tools.",
+    "affectations": "Constant low awareness of sound in any space; her head tilts slightly when listening to ambient noise. Habit of tapping finger patterns on surfaces (muscle memory from decades of beatmaking). Eyes track speakers and sound sources automatically."
+  },
+  "image_prompt": "Portrait of a sixty-two-year-old West African woman with silver locs threaded with ceramic beads, deep brown skin, and a lined face showing decades of intensity and no regret. She has bilateral cochlear implant housings visible behind her ears in subtle chrome. Large, grounded posture with extraordinary stillness. Wearing a dark fitted sleeveless high-neck shirt, industrial weave cargo pants, worn leather boots. Standing in dim lighting against the brick and neon of an underground music venue, evening atmosphere with soft blue and amber light from stage fixtures. Confident, alert expression; hands at rest. Cyberpunk noir, documentary realism, shot in photorealistic style with emphasis on texture and lived experience. --ar 2:3 --v 6"
 }

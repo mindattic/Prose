@@ -157,7 +157,7 @@
     "strengths": [
       "ability to remain calm under fire",
       "pain tolerance beyond normal limits",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "inability to delegate — must control everything personally",
@@ -288,5 +288,26 @@
     "Pellucid Systems",
     "Clover"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Latin American / West African / East Asian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with visible musculature — wiry strength rather than bulk, the physique of someone who moves through tight spaces and carries their own gear. Chest slightly concave, shoulders sharp. No excess fat.",
+    "hair_color": "Dark gray with black undertones",
+    "hair_style": "Pulled back tight, practical — no ornamentation",
+    "hair_length": "Medium, shoulder-length when loose",
+    "eye_color": "Left eye: dark brown, natural. Right eye: cybernetic with polished titanium housing, lens displays faint amber glow during recording mode",
+    "skin_tone": "Warm medium brown — olive undertones from mixed ancestry",
+    "complexion": "Weathered, lined face that reads older than the timeline. Minimal grooming — functional beard, salt-and-pepper stubble often visible. Skin shows minor scarring on cheekbones and jaw, old and faded.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple to cheekbone — circa 20 years old, clean cut",
+      "Burn scarring on right forearm, partial — thermal damage, poorly healed, suggests low-grade medical intervention",
+      "Tattoo on inside left wrist: small geometric pattern in black ink, Shelf apprentice marking — faded with age"
+    ],
+    "visible_augmentations": "Right eye housing is obvious — polished titanium faceplate with minimal concealment, amber indicator light visible at the corner of the eye socket when recording. Chrome visible at the cervical junction where the pain editor interface connects — partial subdermal plating on the left side of the neck, dull silver beneath thin skin. No attempt at cosmetic concealment.",
+    "posture_movement": "Moves with economic precision — no wasted motion, shoulders slightly forward. Stands asymmetrically, weight favoring the left side. Right arm hangs slightly loose, suggesting chronic pain management through the editor. Eyes move constantly, scanning — the cybernetic eye slightly faster than the organic one. Head turns before the body follows. Everything deliberate.",
+    "clothing_style": "Tier 4-5 practical: unmarked dark gray synth-weave jacket with reinforced stitching, pockets modified for gear distribution. Black compression shirt underneath. Cargo pants in matte charcoal with multiple thigh pockets — worn fabric in high-friction areas. Boots: scuffed black tactical grade, laces wrapped tight. No logos, no status markers, nothing that reflects wealth or corporate affiliation. Layers designed for temperature variance in sub-street work. Single worn paracord bracelet on left wrist."
+  },
+  "image_prompt": "Cyberpunk character portrait, 59-year-old lean angular man with mixed Latin American and West African heritage, dark gray pulled-back hair, weathered lined face with faded cheekbone scar, one organic dark brown eye and one obvious cybernetic eye with titanium housing and amber glow, visible chrome neck plating at cervical junction, wearing unmarked dark gray tactical jacket and black compression shirt, practical cargo pants, scuffed black boots, posture tense and economical, standing in shadow of industrial sub-street corridor with neon red accent lighting from distance, cyberpunk noir atmosphere, detailed face focus, moody and weathered aesthetic, cinematic depth of field, gritty realism --ar 2:3 --v 6"
 }

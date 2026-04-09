@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
-  "description": "Fanta Pena-Baah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Fanta Pena-Baah describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Fanta Pena-Baah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Fanta Pena-Baah describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.34,
@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "A Tier 4 executive offers Fanta Pena-Baah a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "A crew member from Fanta Pena-Baah's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Fanta Pena-Baah's past shows up in GLMZ, carrying old grievances and new chrome",
     "A former associate resurfaces with evidence that could destroy Fanta Pena-Baah's reputation — and a price for silence"
   ],
   "narrative_function": "As a demolitions expert, Fanta Pena-Baah embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
@@ -277,10 +277,32 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian (Pena-Baah suggests Ghanaian-Portuguese mixed with Nordic lineage)",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "build": "Lean and angular with visible musculature — economical rather than bulky. Titanium bone lacing gives him a subtle rigidity in posture; no wasted mass, all functional density.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Short, close-cropped fade on sides, slightly longer on top — low maintenance, practical",
+    "hair_length": "Short",
+    "eye_color": "Warm brown with amber undertones",
+    "skin_tone": "Medium golden-brown complexion, sun-darkened from outdoor work and exposure",
+    "complexion": "Sharp jawline, high cheekbones. Face carries few lines — early weathering from stress rather than age. Skin is clean but marked by occupational scars; no grooming vanity, but meticulous about scar management as part of operational security.",
+    "distinguishing_marks": [
+      "Ragged scar tissue across right temple and upper scalp where cortical bomb was surgically removed — appears as a web of pale, kinked lines where hair no longer grows cleanly",
+      "Pale surgical scars on both wrists (nerve integration points for bone lacing installation, approximately 8cm each)",
+      "Burn mark on left forearm, roughly 4cm diameter, from demolition charge detonation — circa 2-3 years old, tissue remains mottled and discolored",
+      "Small, deliberate tattoo on right inner wrist: a circuit-board pattern rendered in black ink, approximately 3cm wide (personal mark, not affiliated gang work)"
+    ],
+    "visible_augmentations": "Scar tissue webbing across right temple where cortical bomb was removed — visible especially with short hair. Both wrists show pale surgical scarring. Subtle chrome glinting beneath skin at joints (bone lacing integration points) visible under strong light. Movement itself reveals augmentation: precision, minimal tremor, inhuman stability under load.",
+    "posture_movement": "Stands with weight balanced and centered, never fully relaxed but never tense — a coiled baseline. Moves with deliberate efficiency; no extraneous gestures. Eyes track threat vectors habitually. When handling equipment or working a site, his movements become almost meditative — slow, precise, repeatable. Natural left-hand dominant but practiced ambidextrous.",
+    "clothing_style": "Tier 3-4 utilitarian: reinforced cargo pants (gray or black synthweave blend), durable work boots (steel-toed, modified), fitted tactical tank or henley (dark colors, moisture-wicking fabric). Oversized work jacket or reinforced denim over layers — pockets loaded with tools, dead drop tokens, secure comms units. No chrome jewelry or aesthetic chrome — everything is functional. No corporate branding. Carries himself like someone who owns nothing valuable except knowledge and capability."
+  },
+  "image_prompt": "Cyberpunk character portrait of a lean 33-year-old West African-Scandinavian man, 188cm tall, standing in industrial warehouse lighting. Close-cropped dark hair with visible pale surgical scarring across right temple and scalp where neural implant was removed. Warm brown eyes, high cheekbones, golden-brown skin. Worn gray reinforced cargo pants, dark tactical tank, oversized denim work jacket. Hands scarred from demolition work, subtle chrome visible at wrist joints. Posture perfectly balanced and economical, radiating dangerous precision. Standing against concrete wall with shadow and warm sodium-vapor overhead lighting. Photorealistic, film noir aesthetic, high contrast, gritty realism, no corporate polish. Cyberpunk 2226 GLMZ aesthetic, specialist operative mood. --ar 2:3 --v 6"
 }

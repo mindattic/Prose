@@ -244,5 +244,24 @@
     "Arcturus CK-5 'Bloodhound'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Finnish-Hispanic",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Angular and compact, lean-muscled from constant movement and standing work. Minimal body fat, wiry rather than athletic — the build of someone who forgets to sit down.",
+    "hair_color": "Natural deep black with fiber-optic threading in rotating chromatic patterns",
+    "hair_style": "Complicated upknot with multiple interwoven sections, threads visible as glowing strands",
+    "hair_length": "Long (gathered up)",
+    "eye_color": "Dark brown, with basic optical HUD implant visible as faint crystalline overlay in low light",
+    "skin_tone": "Warm deep brown with even complexion across face and visible body areas",
+    "complexion": "Clear, youthful skin with bioluminescent freckle patterns across cheekbones and bridge of nose — pale blue-green geneware that pulses faintly in darkness. Facial structure is sharp-featured, expressive. No visible scars or damage.",
+    "distinguishing_marks": [
+      "Bioluminescent freckle constellation across cheekbones and nose bridge, blue-green geneware, self-administered at age 19, pulses with low ambient light"
+    ],
+    "visible_augmentations": "Fiber-optic hair threading in color-cycling strands (changes every few days as mood indicator). Basic optical HUD implant visible as crystalline lens artifacts in right eye under direct light. No chrome or external prosthetics.",
+    "posture_movement": "Quick, economical movements. Stands when working, rarely sits. Moves with the restless energy of someone managing multiple transactions simultaneously. Hands are active, expressive — gestures during speech. Eyes track multiple sightlines at once, habitual market vendor awareness.",
+    "clothing_style": "Tier 4 functional fashion. Wide-legged utility trousers in matte gray or black synthetic with cargo pockets and reinforced seams. Tech vest with modular attachment points and snap-closures for rapid equipment changes — typically worn over a fitted long-sleeve base layer in neutral tones. Soft-soled boots rated for all-day standing (likely gray or black, minimal branding). Minimal jewelry except for functional pieces. No corpo-branded gear; everything is practical and pocketable. Overall aesthetic: speed, access, and plausible deniability."
+  },
+  "image_prompt": "Cyberpunk character portrait of a young Black woman, 158cm tall, angular build, warm dark brown skin with glowing bioluminescent freckles (pale blue-green) pulsing across cheekbones and nose. Natural deep black hair in a complex upknot threaded with bright fiber-optic strands cycling through color gradients. Dark expressive eyes with subtle crystalline HUD implant overlay. Sharp facial features, quick expressive movements. Wearing wide-legged gray utility trousers, tech vest with modular attachment points over fitted base layer, soft-soled boots. Standing in neon-lit market stall setting, The Shelf vendor booth backdrop, surrounded by glowing screens and bootleg media displays. Relentless cheerful energy, hands mid-gesture. Low-light cyberpunk ambiance with bioluminescent freckles glowing. Sharp focus on face. --ar 2:3 --v 6"
 }

@@ -190,5 +190,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Milwaukee Core"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "North African Berber / Scandinavian (Tamazight-speaking lineage through paternal grandmother; Swedish through maternal line)",
+    "height_cm": 165,
+    "weight_kg": 58,
+    "build": "Angular and economical — lean muscle distributed across a frame made of sharp planes. Elbows and collarbones prominent. No wasted mass; built for twelve-hour days on feet",
+    "hair_color": "Thermochromic geneware — deep teal in temperatures below 12°C, dark auburn in warmth above 18°C. Natural base is dark brown, visible at roots near scalp",
+    "hair_style": "Two tight braids, each pinned with worn copper rings. Usually tucked into a wide-brimmed thermal hat during cart operations",
+    "hair_length": "Long (shoulder-length when unbraided, though rarely seen that way)",
+    "eye_color": "Dark brown, alert and quick-moving",
+    "skin_tone": "Warm medium brown with subtle olive undertones from Berber heritage",
+    "complexion": "Sharp-featured with high, defined cheekbones. Pointed chin. Expression frequently animated during speech. Hands calloused from years of cart work and constant motion. Minor steam burns on inner forearms, faded to pale scars",
+    "distinguishing_marks": [
+      "Fine linear scar along the left temple, approximately 3cm, sustained six years ago during early cart setup accident",
+      "Cluster of three small circular burn scars on the dorsal surface of the right hand (broth splash incidents), white and faded",
+      "Faint discoloration on both inner wrists from years of heat exposure near burner controls"
+    ],
+    "visible_augmentations": "Secondhand hearing aid visible in the left ear — silver-grey with faint green indicator light, sits slightly outside the ear canal. Temperature-reactive hair is the primary visible modification, shifting between auburn and teal depending on ambient temperature. No chrome or subdermal augmentations visible",
+    "posture_movement": "Rarely still. Moves in quick, efficient gestures — hands constantly in motion whether stirring, gesturing while speaking, or reorganizing cart elements. Leans forward slightly when engaging with customers or children. Stands with weight favoring one leg while cooking, shifting periodically. Walks with purpose and speed",
+    "clothing_style": "Tier 4 working-class practical wear. Standard-issue food service apron (grease-stained, many pockets) worn over layers. Long-sleeved thermal undershirt for warmth during morning shifts, rolled up during afternoon. Worn jeans with cargo pockets and reinforced knees. Steel-toed boots (required for cart work, old but maintained). Wide-brimmed thermal hat, synthetic material, faded grey with visible wear and patched seams — described as having 'achieved structural sentience.' No jewelry except the copper rings in their braids. Jacket varies by season — synthetic thermal in winter, lightweight cotton blend in summer. Everything functional, nothing decorative"
+  },
+  "image_prompt": "A sharp-featured nonbinary person of medium height and lean angular build, standing at a street food cart in a cyberpunk megacity. Their long dark hair is braided and tucked into a faded wide-brimmed thermal hat with visible wear. Their skin is warm medium brown. In cold morning light, their thermochromic hair shows deep teal hues at the visible roots. A secondhand hearing aid with a faint green indicator light sits in their left ear. Their hands are in constant motion, gesturing expressively while tending a compact heated noodle cart with two burners and rotating broths. They wear a stained food service apron over a long-sleeved thermal shirt, worn cargo jeans with reinforced knees, and steel-toed boots. The setting is The Narrows, a lower-tier pedestrian strip in the GLMZ, early morning commuter rush hour. Warm steam rises from the cart. A few shift workers wait in line. A laminated three-language menu is visible. In the background, the lower Morgan overpass and the architectural geometry of Tier 4 residential infrastructure. Moody, overcast morning light. Gritty realism with a sense of informal economy and street-level resilience. --ar 2:3 --v 6"
 }

@@ -70,8 +70,16 @@
     "The newly bereaved, sent here by friends who know what the room does"
   ],
   "notable_locations": [
-    "The Worn Spot — the center of the floor, polished smooth by thousands of visitors standing in the same place to speak a name",
-    "The Listening Wall — the north wall, where the vibration is strongest and where some visitors press their palms to feel the frequency more directly"
+    {
+      "name": "The Worn Spot",
+      "description": "the center of the floor, polished smooth by thousands of visitors standing in the same place to speak a name",
+      "tags": []
+    },
+    {
+      "name": "The Listening Wall",
+      "description": "the north wall, where the vibration is strongest and where some visitors press their palms to feel the frequency more directly",
+      "tags": []
+    }
   ],
   "coordinates": {
     "district": "Underworld",

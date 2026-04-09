@@ -106,5 +106,26 @@
     "The Shelf",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East African / Scandinavian",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "build": "Lean and angular, with defined shoulders and wiry forearms — built for mobility rather than strength. Suggests someone who moves frequently through tight spaces.",
+    "hair_color": "Deep brown with natural copper undertones",
+    "hair_style": "Pulled back in a practical crown braid, occasionally loose",
+    "hair_length": "Long (below shoulders when unbraided)",
+    "eye_color": "Dark brown with subtle amber flecks",
+    "skin_tone": "Warm mid-brown complexion with golden undertones",
+    "complexion": "Clear skin with fine laugh lines around her eyes. Minimal makeup — usually just brow definition and a lip stain. A small scar runs through her left eyebrow (old break, never quite healed straight).",
+    "distinguishing_marks": [
+      "Three-line scarification on her right temple, faint but deliberate, likely cultural or ceremonial",
+      "Thin, pale burn scar along her left inner wrist, circa 2cm long — likely accidental or from early chrome work",
+      "A small tattoo of a compass rose on her collarbone, barely visible unless she wears open-neck clothing"
+    ],
+    "visible_augmentations": "None visible. All augmentations are subcutaneous or internal.",
+    "posture_movement": "Upright, alert. She moves with economical grace — no wasted motion. Eyes constantly assess spaces and people. Hands gesture expressively when speaking, especially when explaining routes or deals. Leans in when listening, creating false intimacy to build trust.",
+    "clothing_style": "Tier 3-4 working professional. Favors practical layering: fitted black turtlenecks, worn charcoal cargo vests with multiple pockets, reinforced denim in dark indigo. Boots are always clean but scuffed — good-quality polymer composite, not chrome. A faded denim jacket with hand-stitched patches (different neighborhoods she's guided people through) is her signature piece. Wears a slim Φ-chip reader watch on her right wrist and a thin silver chain with a small key fob (contents unknown) around her neck."
+  },
+  "image_prompt": "cyberpunk portrait of a 30-year-old East African-Scandinavian woman, lean angular build, deep brown hair in a crown braid, warm mid-brown skin with golden undertones, dark amber-flecked eyes, faint three-line scarification on right temple, upright alert posture, wearing fitted black turtleneck under charcoal cargo vest and reinforced dark denim, worn composite boots, denim jacket with neighborhood patches, slim watch on wrist, silver chain with key fob, minimal makeup with defined brows, subtle expression of quiet confidence and street wisdom, indoor night setting with neon blue and amber city lights filtering through grime-streaked window behind her, warm practical LED overhead light, cinematic depth of field, gritty hyperrealistic style, --ar 2:3 --v 6"
 }

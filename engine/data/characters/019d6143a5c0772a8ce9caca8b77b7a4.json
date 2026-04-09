@@ -250,5 +250,27 @@
     "The Gradient Compact",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Bosnian",
+    "height_cm": 168,
+    "weight_kg": 74,
+    "build": "Compact and dense, with the wiry strength of someone who's spent forty years manipulating precision tools. Shoulders slightly rounded from workshop posture, forearms disproportionately muscled from repetitive mechanical work.",
+    "hair_color": "Black with salt-gray at temples",
+    "hair_style": "Close-cropped, minimal maintenance",
+    "hair_length": "Short",
+    "eye_color": "Deep brown (augmented with visible Palladian lens architecture)",
+    "skin_tone": "Deep brown-black, weathered and uneven from decades of workshop lighting and solvent exposure",
+    "complexion": "Deeply lined around eyes and mouth; permanent squint-creases from thirty years of close-focus work in inadequate light. Thin white scars across knuckles and fingers from small cuts and minor burns. Calloused palms and fingertips. Sparse facial hair, salt-and-pepper stubble often present.",
+    "distinguishing_marks": [
+      "Burn scar across the web of his right hand between thumb and forefinger, approximately 3cm width, pale and smooth from old healing",
+      "Linear scar along the left inner forearm (elbow to wrist) where prosthetic interface is fitted — surgical and precise",
+      "Network of small white scars across both palms in no particular pattern, tool-related accumulated injuries",
+      "Oil stain discoloration on the inside of his right wrist in a rough circular pattern, permanent from chronic exposure"
+    ],
+    "visible_augmentations": "Left arm from elbow down is a visibly working prosthetic: matte-black composite frame with exposed titanium actuators, mismatched metallic sections (brushed aluminum, gunmetal, bare steel) showing four decades of incremental component replacements. Fingers move with mechanical precision but lack synthetic skin — bare articulated joints visible. Lens implants in both eyes are subtly visible as a faint geometric precision to the iris boundary, older Palladian tech with barely perceptible alignment markers. Right hand fingers show minor LED indicator traces under the skin at the first knuckle — sensory diagnostic enhancement.",
+    "posture_movement": "Moves with deliberate slowness even in urgent situations — a man who prioritizes precision over speed. Shoulders angled slightly forward in permanent workshop posture. His left arm hangs at a slightly different angle than natural, and he compensates with unconscious micro-adjustments to his gait. Left hand movements are controlled and economical, never wasted. Right hand gestures frequently, compensating as his dominant hand.",
+    "clothing_style": "Tier 3-4 working practical: heavy canvas work coat (gray-brown, oil-stained, pockets worn soft from tools), usually unbuttoned. Underneath, simple long-sleeve thermal shirt or worn cotton henley. Work pants in dark tan canvas with tool-belt loops, pockets enlarged and re-sewn multiple times. Steel-toed boots (scuffed, re-soled twice, perfectly maintained). The rag permanently over his left shoulder is woven gray-brown — original color indeterminate from use. No jewelry. No visible corpo branding or tier indicators."
+  },
+  "image_prompt": "A weathered 58-year-old man of West African and Bosnian descent in a cyberpunk workshop setting, compact and dense build with deep brown-black skin heavily lined around the eyes. His left arm is a deliberately unfancy self-built prosthetic with exposed titanium actuators and mismatched metal components in matte black, aluminum, and gunmetal — no synthetic skin, mechanical fingers visible. Both eyes show subtle Palladian augmentation lens markers. Wearing an oil-stained gray-brown canvas work coat unbuttoned over a thermal shirt, dark work pants, steel-toed boots. A worn gray-brown rag draped permanently over his left shoulder. Hands weathered with tool scars, right hand showing faint LED traces under the skin. Standing in his repair bay beneath the Brewer's Spine overpass with dim overhead workshop lighting, surrounded by precision tools, mechanical components, and vehicle parts. His posture is slightly forward-angled, movements deliberate and precise. Moody cyberpunk industrial setting with warm halogen work lights and shadow. Photorealistic, gritty, working-class authenticity. --ar 2:3 --v 6"
 }

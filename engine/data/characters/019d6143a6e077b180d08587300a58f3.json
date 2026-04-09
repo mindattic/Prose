@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "The fixer who handles Suki Sorokin-Gyasi's contracts goes silent — dead, disappeared, or turned",
-    "A crew member from Suki Sorokin-Gyasi's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Suki Sorokin-Gyasi's past shows up in GLMZ, carrying old grievances and new chrome",
     "A corporate black site Suki Sorokin-Gyasi once infiltrated is being reopened, and the people inside know his face"
   ],
   "narrative_function": "As a poisoner, Suki Sorokin-Gyasi embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
@@ -157,7 +157,7 @@
     "strengths": [
       "mechanical aptitude — can repair or modify almost anything",
       "ability to remain calm under fire",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "substance dependency — functional but fragile",
@@ -277,11 +277,32 @@
     "Crucible Industries Suppressed Compact SC-2 'Murmur'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Gradient Compact",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Eastern European / West African (Slavic-Ghanaian blend)",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Compact and densely muscled, built low to the ground with a center of gravity designed for impact absorption. Shoulders broad relative to frame, legs powerful and coiled. No excess body fat — efficient rather than imposing.",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Closely cropped, military-precise, easy to maintain between identities",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and constantly assessing",
+    "skin_tone": "Medium-warm complexion — blend of Slavic pallor and sub-Saharan undertones",
+    "complexion": "Sharp cheekbones, angular jaw, a face that photographs memorably and therefore rarely does. Minimal facial hair — he shaves meticulously. Skin shows minor chemical scarring along the left temple (old lab accident or deliberate alteration). Otherwise clean, unremarkable complexion except for the attentiveness in his expression.",
+    "distinguishing_marks": [
+      "Hairline scar along left temple, approximately 3cm, pale and deliberately left unaugmented",
+      "Burn scarring on inner right forearm (palm-side), small scattered marks consistent with chemical splash, deliberately left visible",
+      "Faint track marks along inside of left elbow — old habit, now replaced by implant delivery systems"
+    ],
+    "visible_augmentations": "Wired reflexes substrate visible as subtle chrome threading along the neck and upper shoulders — thin lines of brushed steel running beneath the skin like tattoos. Adrenaline pump housing visible as a small raised nodule behind the right ear, approximately 2cm, darkened chrome. Fingertips and toe pads show the telltale chrome-black shimmer of gecko-grip implants when hands/feet are extended or climbing.",
+    "posture_movement": "Balanced, economical movement — no wasted motion. Stands with weight distributed forward on the balls of his feet, ready to move in any direction instantly. Hands rest naturally at his sides or in his lap, fingers slightly curled as if about to grip something. Eyes track exits and visual obstacles reflexively. When stationary, he radiates the controlled stillness of something coiled rather than relaxed.",
+    "clothing_style": "Tier 2-3 hybrid — functional but not flashy. Dark fitted compression shirt (black or dark grey, moisture-wicking synthetic), reinforced cargo pants with multiple pockets (worn black, tactical cuts), sturdy ankle boots (steel-toed, matte finish). A lightweight jacket in neutral color (charcoal, olive, or faded black) with internal pockets — worn open most of the time. No branding visible — corporate logos removed or never present. Clothing is utilitarian, replaceable, designed for movement and concealment of equipment. The overall effect is 'unremarkable tradesperson' or 'maintenance worker' — deliberately invisible."
+  },
+  "image_prompt": "Cyberpunk character portrait of a compact 38-year-old man, East European-West African mixed heritage, dark brown eyes, closely cropped dark hair with silver threading, alert predatory expression. Densely muscled build, low center of gravity, coiled posture. Visible chrome augmentations: thin brushed steel threading along neck and shoulders (wired reflexes), small dark chrome nodule behind right ear (adrenaline pump), chrome-black fingertips visible on hands (gecko-grip implants). Faint chemical scarring on left temple and inner right forearm. Wearing black fitted tactical compression shirt, dark reinforced cargo pants, steel-toed boots, neutral charcoal jacket worn open. Standing balanced and alert in industrial cyberpunk setting, cool blue and amber neon lighting, dramatic shadows, photorealistic, detailed augmentation work, cinematic lighting, tense ready posture, against urban metal wall or darkened warehouse interior --ar 2:3 --v 6"
 }

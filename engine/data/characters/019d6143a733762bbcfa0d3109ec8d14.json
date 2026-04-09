@@ -208,5 +208,25 @@
     "Nesting Doll",
     "Iron"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Polish / Ghanaian",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Compact and economical — neither lean nor heavy, structured like someone who moves through crowded spaces efficiently. Shoulders squared, no wasted bulk.",
+    "hair_color": "Dark brown with premature grey threading through",
+    "hair_style": "Short, swept back, functional",
+    "hair_length": "Short",
+    "eye_color": "Natural brown with faint amber grid pattern overlay (augmented left lens); left iris shows minor drift",
+    "skin_tone": "Olive-warm brown, deepening slightly at temples and jawline",
+    "complexion": "Five-day stubble in iron-grey, persistent across all seasons. Even complexion with no visible scarring. Forehead and around the eyes shows the wear of concentration — fine lines that suggest chronic focus. Clean but not groomed; the appearance of someone who maintains standards without vanity.",
+    "distinguishing_marks": [
+      "Faint silvery scar tissue running 3cm along the underside of left forearm near wrist — old, precise, consistent with surgical intervention or careful blade work",
+      "Augmentation port scar behind left ear, barely visible under close inspection — roughly 8mm diameter, healed smooth"
+    ],
+    "visible_augmentations": "Left eye displays subtle amber grid pattern across the iris when light catches at certain angles; the eye drifts inward slightly at rest, noticeable only during extended conversation. No other visible chrome or subdermal modifications.",
+    "posture_movement": "Stillness is his default — minimal gesture, economical motion. Hands rest in lap or on counter surface. When he moves through the market, he navigates without apparent urgency, head tracking conversations and movement around him. Doesn't make eye contact unless necessary; when he does, it's deliberate. Turns to face people only partially, as if ready to pivot away.",
+    "clothing_style": "Deliberately unremarkable: mid-grey merino layers, matte textiles, nothing with visible branding. Worn jacket in charcoal, practical pockets, no decoration. Shoes are functional and forgettable — could be construction worker, data courier, or archival technician. A scarf in neutral tone, wrapped once, used interchangeably for warmth or to obscure the lower face. The effect is studied nondescriptness — expensive enough to suggest competence, generic enough to resist memory."
+  },
+  "image_prompt": "Cyberpunk portrait of a 44-year-old Polish-Ghanaian man, compact build, iron-grey five-day beard, warm olive-brown complexion. Short dark hair swept back. Left eye augmented with subtle amber grid pattern overlay visible on iris, with minor inward drift. Wearing mid-grey merino layers, matte charcoal jacket, neutral scarf. Standing behind a cluttered data archive stall in dim market lighting, surrounded by archaic hard drives and legacy media boxes. Stillness and quiet intensity in posture. Natural daylight filtered through market awning, amber glow from overhead strips. Photorealistic, detailed skin texture, moody cyberpunk noir atmosphere. Shot from chest up, slight three-quarter angle. Bokeh of market activity behind. High detail on facial features and subtle augmentation. --ar 2:3 --v 6"
 }

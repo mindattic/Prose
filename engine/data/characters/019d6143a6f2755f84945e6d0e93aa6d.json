@@ -248,5 +248,27 @@
     "VitaCore FlowGuard Hemodynamic Regulator",
     "The Pure Hand"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Latin American (Spanish/Iberian) / Eastern European (Illesca suggests Basque or regional Iberian; Vargas suggests Spanish colonial lineage)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and lean from chronic undernourishment rather than fitness; narrow shoulders, visible rib definition, the kind of frame that looks fragile until you watch his hands work—then you see the dense, purposeful muscle underneath. No excess anywhere.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Undercut grown out past regulation—short faded sides, longer crown falling forward, slightly unkempt from neglect rather than styling",
+    "hair_length": "Medium (crown area)",
+    "eye_color": "Dark brown, right eye slightly hazed by AR interface hardware visible as faint luminescence in low light",
+    "skin_tone": "Medium brown with slight olive undertone; hands and forearms noticeably paler from chronic glove-wearing",
+    "complexion": "Sharp cheekbones, angular jaw, dark circles under eyes from irregular sleep. Skin is clean but shows minor scars from spill incidents and needle marks on inner elbows. No facial hair—either shaves meticulously or doesn't grow it easily.",
+    "distinguishing_marks": [
+      "Thin white scar through left eyebrow, approximately 2cm, from blunt trauma at age 16—partially healed, slightly raised",
+      "Faint track marks on left inner elbow from early experimental augmentation attempts (pre-Orsolya), mostly faded but visible under close inspection",
+      "Calluses on fingertips and palms, disproportionately thick for someone his age, with thin scars across knuckles from repetitive surgical work",
+      "Small burn scar on right forearm (approximately 1cm diameter) from a sterilization accident, roughly circular and pale"
+    ],
+    "visible_augmentations": "Right eye shows faint AR interface overlay visible in dim lighting—subtle LED shimmer at pupil edge when active. Both hands show no external chrome but exhibit unnaturally steady tremor-free positioning when at rest. Haptic feedback implants are subcutaneous; no visible bulging or scarring at installation sites (palms/forearms) due to Orsolya's precise surgical technique. Wears a faint silver bracelet on left wrist—likely a medical alert identifier for his implant status.",
+    "posture_movement": "Stands with weight slightly forward, shoulders rounded from hunching over surgical work. Moves with economical precision—no wasted motion, but not tense. Hands are his tells: constantly doing small fidgeting motions (tracing surgical patterns in air, checking imaginary sutures). When focused, becomes almost statue-still. Walks quickly but not urgently, maintaining low visibility in crowded spaces. Makes minimal eye contact with strangers but intense, analytical contact during medical assessment.",
+    "clothing_style": "Tier 4 functionality over appearance. Scrub-green military-style cargo pants (reinforced knees, thigh pockets for supplies), worn but meticulously maintained. Compression undershirt in black or dark gray—medical-grade, helps with posture during long procedures. Outer layer varies (whatever is cleanest) but typically a Tier 3 surplus tactical jacket or canvas work coat, deliberately nondescript. Medical bag is his statement piece: vintage leather, heavy-duty canvas reinforcement, patches from salvaged medical suppliers, organized to military precision. Wears medical-grade work boots (black, scuffed, well-maintained). No jewelry except the mysterious wrist bracelet and a single silver chain around neck (hidden under shirt)—possibly holding a key or data chip."
+  },
+  "image_prompt": "Cyberpunk portrait of a 19-year-old Latino male street medic, slight wiry build from malnourishment, dark skin, angular sharp face, dark brown eyes with faint AR interface shimmer in right eye only, short faded undercut hairstyle grown shaggy on crown, thin white scar through left eyebrow. Wearing scrub-green cargo pants, black compression undershirt visible, worn tactical canvas jacket. Hands positioned in front of chest showing unnaturally steady grip, visible calluses and thin scars across knuckles. Background: dim neon-lit utility room converted to surgical space, vintage surgical lamp overhead casting precise shadow, medical texts and salvaged equipment on shelves, gritty The Shelf aesthetic, cyberpunk noir lighting, shallow depth of field focusing on hands and face, moody cool-toned color grading, documentary realism style, --ar 2:3 --v 6"
 }

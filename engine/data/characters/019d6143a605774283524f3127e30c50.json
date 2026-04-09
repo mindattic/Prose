@@ -13,7 +13,7 @@
   "age": 40,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Michigan Ave South and Cermak",
-  "description": "Erkin Wendt-Frempong are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 40, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and they make no effort to hide it.\n\nThey arrived in Meridian 88 six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a ghost out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented ghost in Meridian 88, but they might be the most stubborn, and in this city that's worth more.",
+  "description": "Erkin Wendt-Frempong are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 40, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a ghost out of Dockside, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented ghost in GLMZ, but they might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -29,7 +29,7 @@
       "Dying alone in some alley and nobody noticing for weeks"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Justice — the corporate kind, where the punishment fits the profit margin",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
     ],
@@ -62,7 +62,7 @@
   "story_hooks": [
     "A corporate black site Erkin Wendt-Frempong once infiltrated is being reopened, and the people inside know their face",
     "Erkin Wendt-Frempong intercepts intelligence about a threat to their district and must decide between profit and protection",
-    "A crew member from Erkin Wendt-Frempong's past shows up in Meridian 88, carrying old grievances and new chrome"
+    "A crew member from Erkin Wendt-Frempong's past shows up in GLMZ, carrying old grievances and new chrome"
   ],
   "narrative_function": "Erkin Wendt-Frempong is a pressure point — the kind of character whose choices ripple outward. When they make a decision, other people's lives change. That weight is the engine of their stories.",
   "augmentations": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs. Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
@@ -273,8 +273,29 @@
   "registered_firearms": [],
   "related_entities": [
     "Bioelectric Muscle Fiber",
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "German / Ghanaian",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Lean and angular, all limbs and efficient muscle. Long-limbed in a way that reads as predatory rather than graceful. Chest slightly narrower than shoulders, giving a forward-canted silhouette.",
+    "hair_color": "Steel gray with natural dark roots showing — not dyed, just prematurely silvered",
+    "hair_style": "Pulled back in a tight, functional braid or secured with a chrome clip",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, unremarkable — deliberately unremarkable",
+    "skin_tone": "Medium warm brown with gray undertones, weathered by six years of dockside wind and salt spray",
+    "complexion": "Sharp cheekbones, angular jaw, slight asymmetry in the left side of the face suggesting old nerve damage. Minimal grooming — practical, not vain. Skin texture is rough, scarred in places.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple to cheekbone, tissue damage visible under the skin",
+      "Parallel burn scars across right forearm — old thermal weapon discharge, partially healed",
+      "Faint tattooed contract symbols along the inside of left wrist, barely visible unless actively shown"
+    ],
+    "visible_augmentations": "Synthetic muscle fiber replacement obvious in both legs — visible as matte gunmetal chrome latticing visible through reinforced synthetic skin at the thighs and calves, with faint LED junction points glowing soft amber at rest. The chrome is scarred and well-used, bearing impact marks from heavy use. No attempt to conceal it.",
+    "posture_movement": "Moves with controlled efficiency, every motion purposeful and economical. Stands with weight forward on the balls of feet, ready to move. Head tilts slightly when listening, like targeting. Sits at angles that preserve sight lines and exit routes. Rarely fidgets — when they do it's to check weapon accessibility or augmentation status.",
+    "clothing_style": "Tier 3-4 utilitarian: matte-black reactive fabric cargo pants with reinforced thigh pockets and cable routing. Sleeveless compression vest over a long-sleeved thermal shirt, showing off the chrome work deliberately. Worn tactical jacket in dark gray, military-cut, with visible ammunition and tool placement. Steel-toed boots rated for dockside work. No jewelry, no logos, no status markers. Everything is functional or invisible."
+  },
+  "image_prompt": "cyberpunk assassin character, tall angular nonbinary figure with steel-gray braided hair and dark brown eyes, sharp cheekbones and weathered face, visible chrome synthetic muscle fiber replacement in both legs glowing faint amber, wearing sleeveless compression vest over thermal shirt showing off metallic augmentations, dark reactive-fabric tactical outfit, standing in dramatic dockside setting at night, Lake Michigan waterfront behind, moody neon-industrial lighting with cool blue and amber hues, chrome catching wet light, gritty realism, photorealistic detail, dystopian atmosphere, character portrait --ar 2:3 --v 6"
 }

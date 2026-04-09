@@ -29,7 +29,7 @@
       "Being identified by corporate facial recognition — living off-grid is survival"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
       "Power — enough leverage that nobody ever threatens them again"
     ],
@@ -285,5 +285,27 @@
     "Burden of Longitude",
     "Pellucid Systems"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Japanese / West African (Ghanaian)",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and heavily muscled, carrying weight with deliberate density rather than bulk. Chest and torso built for stability and power; legs augmented with synthetic fiber and visibly denser than a baseline human frame.",
+    "hair_color": "Dark brown, graying at temples",
+    "hair_style": "Cropped short and practical, maintained with military precision",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unremarkable without augmentation",
+    "skin_tone": "Medium warm brown with subtle olive undertone",
+    "complexion": "Angular face with high cheekbones and a broad jawline. Skin weathered but well-maintained. Fine scar tissue visible at the left temple and along the right side of the jaw — old impacts, professionally healed. Deep-set eyes, perpetually focused. Minimal grooming beyond functional maintenance.",
+    "distinguishing_marks": [
+      "Thin scar running from left temple to the corner of the left eye, approximately 4cm, silvered with age",
+      "Jagged scar along the right jawline from ear to chin, roughly 8cm, indicating impact or laceration trauma",
+      "Faded burn marks on both forearms — contact burns from ordnance work, pale against darker skin",
+      "A small anchor tattoo on the inside of the left wrist in black ink, barely visible unless pointed out"
+    ],
+    "visible_augmentations": "Synthetic muscle fiber replacement visible in both legs from mid-thigh downward — chrome-gray biomechanical plating at the knee joints and along the anterior tibialis. The augmented legs have a distinctly different texture and sheen compared to baseline skin. Neural interface jack at the base of the skull is partially visible as a small raised port beneath short hair, with faint circuitry etching around it.",
+    "posture_movement": "Stands with weight slightly forward, shoulders squared, as if perpetually bracing against impact. Movement is economical and controlled — no wasted motion. When walking, the augmented legs move with mechanical precision that breaks the rhythm of natural gait, especially noticeable on stairs or uneven surfaces. At rest, their hands are still, fingers slightly flexed. Default expression is neutral to mildly skeptical.",
+    "clothing_style": "Tier 3-4 utilitarian: heavy reinforced cargo pants with internal thigh pockets, black or dark gray. Worn composite-fiber jacket with visible tool loops and gear attachment points. Steel-toed boots, maintained but scuffed. No jewelry or nonessential ornamentation. Clothing shows repair patches and wear consistent with field work. Layers suggest climate adaptation rather than fashion — undersuit visible at collar, likely temperature-regulating underlayer common to runners and demolitions workers."
+  },
+  "image_prompt": "Portrait of a 40-year-old nonbinary demolitions expert, cyberpunk genre, Japanese-Ghanaian heritage, dark brown graying hair in military crop, angular face with scar tissue at left temple and jawline, medium warm brown skin. Heavy muscular build, broad shoulders. Visible chrome synthetic muscle fiber replacement in both legs with gray biomechanical plating at knees. Small neural interface jack visible at base of skull beneath cropped hair. Wearing dark reinforced cargo pants, composite-fiber jacket with tool loops, steel-toed boots. Neutral focused expression, forward-leaning posture. Industrial background, abandoned warehouse or demolition site. Cool blue-gray lighting with warm overhead fixtures. Gritty, weathered, utilitarian aesthetic. Professional runner profile. Sharp detail, realistic cyberpunk aesthetic, moody atmospheric lighting, depth of field. --ar 2:3 --v 6"
 }

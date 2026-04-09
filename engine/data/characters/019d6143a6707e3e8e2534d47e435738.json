@@ -13,7 +13,7 @@
   "age": 42,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Clark and Belmont",
-  "description": "Nurlan Holm-Danquah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 42, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a combat medic out of The Canopy, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nNurlan Holm-Danquah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Nurlan Holm-Danquah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 42, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a combat medic out of The Canopy, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nNurlan Holm-Danquah operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.28,
@@ -43,7 +43,7 @@
       "Trusts technology more than people — machines don't betray",
       "Assumes their skill set is more transferable than it actually is"
     ],
-    "secret": "Nurlan Holm-Danquah sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Nurlan Holm-Danquah sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "A former associate resurfaces with evidence that could destroy Nurlan Holm-Danquah's reputation — and a price for silence",
-    "A crew member from Nurlan Holm-Danquah's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Nurlan Holm-Danquah's past shows up in GLMZ, carrying old grievances and new chrome",
     "Nurlan Holm-Danquah is offered a contract that would clear all their debts — the target is someone they respect"
   ],
   "narrative_function": "Nurlan Holm-Danquah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
@@ -277,7 +277,7 @@
     "Vespid Dynamics Needlestorm NS-4 'Pincushion'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Canopy Station Nine",
     "The Heritage Vault",
     "Geartown",
@@ -286,5 +286,26 @@
     "Slagworks Industrial",
     "Pellucid Systems"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Scandinavian / West African / Central Asian — mixed diaspora lineage suggesting generations of global migration",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "build": "Lean and angular, muscle distributed for endurance rather than bulk. Long-limbed with visible definition in shoulders and forearms. The hydraulic augmentations in knees and elbows add subtle mechanical mass without disrupting his overall wiry efficiency.",
+    "hair_color": "Dark brown with premature silver threading through the sides",
+    "hair_style": "Kept short and practical, swept back from the forehead. No vanity in the cut — purely functional.",
+    "hair_length": "Short",
+    "eye_color": "Left eye: warm brown, organic. Right eye: luminous cyan with visible chrome iris housing and faint grid pattern overlay when zoomed.",
+    "skin_tone": "Deep tan with underlying golden undertones — weathered and sun-exposed despite nocturnal work schedule",
+    "complexion": "Gaunt face with high cheekbones and a long jaw. Permanent exhaustion lines around the eyes. Small surgical scar below the left temple (artifact of the eye replacement). Minimal facial hair — kept clean-shaved or at a three-day shadow. Skin shows the wear of someone who doesn't prioritize sleep quality, despite sleeping long hours.",
+    "distinguishing_marks": [
+      "Pale surgical scar running 3cm below the left temple, where the cybernetic eye was integrated.",
+      "Thin white scar across the dorsal surface of the right hand — old blade wound, pre-augmentation.",
+      "Faint burn marks on the inside of both wrists — subcutaneous neural interface insertion sites, deliberately left visible as a credential."
+    ],
+    "visible_augmentations": "Chrome hydraulic joints dominate both knees and elbows — polished steel with visible pressure seals and micro-articulation housings. The right eye is unmistakably artificial: a luminous cyan iris with a visible chrome housing ring. No effort to hide any of it; the augmentations are worn as proof of competence and hard-won survival.",
+    "posture_movement": "Moves with deliberate economy — every motion calculated and efficient. No wasted gesture. When standing still, he's coiled rather than relaxed, weight balanced on the balls of his feet as though ready to move or absorb impact. His gait is smooth despite the augmented joints, suggesting years of recalibration and training. In conversation, minimal facial expression; information is gathered more than given.",
+    "clothing_style": "Tier 3-4 practicality. Tends toward dark, non-reflective fabrics — black or charcoal synthetic blend cargo pants with reinforced seams and deep pockets. Fitted tactical shirts (usually unmarked, sometimes with internal vest anchors visible at the shoulders). Worn leather jacket, vintage pre-2180s, patched at the elbows with modern synthetic mesh. Practical boots with grip soles. No logos, no corpo affiliation markers. Everything is functional; nothing is aspirational."
+  },
+  "image_prompt": "Cyberpunk character portrait, tall lean male, age 42, mixed African-Scandinavian heritage, deep tan skin, angular face with exhaustion lines, dark hair with silver threading, one natural warm brown eye and one luminous cyan cybernetic eye with chrome housing, visible surgical scar below left temple, polished steel hydraulic joints visible on both elbows and knees, coiled posture ready for movement, nocturnal intensity, wearing dark charcoal cargo pants and fitted black tactical shirt, vintage worn leather jacket with synthetic mesh patches, standing in shadow of elevated walkway, moody neon reflection on chrome augmentations, cinematic lighting from below, sharp focus on facial features and augmentation details, professional medical competence radiating from expression, 2226 GLMZ aesthetic, film noir meets high-tech, ultra-detailed cyberpunk augmentation work, --ar 2:3 --v 6"
 }

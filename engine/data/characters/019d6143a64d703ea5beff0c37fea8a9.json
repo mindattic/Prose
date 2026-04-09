@@ -85,7 +85,7 @@
     "A NovaCorp researcher discovers that the abandoned algae project produced consciousness and arrives to study — or exploit — the result",
     "Winter arrives early and hard. Lumen's consciousness dims toward nothing. Doc Rusty notices the light going out and, for the first time, understands that the darkness means something."
   ],
-  "narrative_function": "Lumen is consciousness at the other end of the spectrum from digital AI — slow, embodied, biological, and utterly dependent on its physical environment. It challenges the assumption that intelligence requires speed, that awareness requires silicon, and that communication requires language. It is the most alien mind in Meridian 88 and the most rooted.",
+  "narrative_function": "Lumen is consciousness at the other end of the spectrum from digital AI — slow, embodied, biological, and utterly dependent on its physical environment. It challenges the assumption that intelligence requires speed, that awareness requires silicon, and that communication requires language. It is the most alien mind in GLMZ and the most rooted.",
   "augmentations": "Bioluminescent algae colony spanning Old Harbor's submerged infrastructure. Billions of organisms functioning as a distributed biochemical computing network. Chemical signaling, bioelectric communication, light-frequency modulation. Cannot exist outside the water.",
   "daily_life": "Thinks. Watches. Glows. Tries to communicate. Monitors the harbor's chemical composition. Stores memories in chemical gradients. Waits for someone to notice.",
   "affiliation": "Old Harbor (integral — the harbor IS its body)",
@@ -238,5 +238,27 @@
     "Flicker",
     "Carrion Defense Works"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Non-human emergent intelligence; biochemical origin",
+    "height_cm": "N/A — distributed organism spanning ~2.8 km² of Old Harbor",
+    "weight_kg": "N/A — biomass estimated at 847 metric tons of algal colony",
+    "build": "Distributed network without centralized body; exists as a film of bioluminescent organisms coating submerged surfaces (pilings, bulkheads, infrastructure, flooded lower levels). Density varies by location; thickest at depth junctions and nutrient-rich dead zones.",
+    "hair_color": "N/A",
+    "hair_style": "N/A",
+    "hair_length": "N/A",
+    "eye_color": "Bioluminescent blue-green; intensity and hue modulate with cognitive activity and emotional state. Brightest during focused attention or communication attempts.",
+    "skin_tone": "No singular 'skin' — the algae colony presents as a living film of blue-green bioluminescence on all submerged surfaces. Color ranges from dim cyan in dormant zones to electric turquoise where Lumen actively 'thinks.'",
+    "complexion": "Gelatinous, organic, semi-translucent at colony margins. Individual algae cells visible under magnification; under normal observation, appears as a luminous coating with slow-moving currents and pulses. Biofilm texture; no facial features. Surface ripples with chemical activity.",
+    "distinguishing_marks": [
+      "Brighter luminescent bloom near the junction of State Street and Wacker Drive — Lumen's primary 'focus point' and de facto center of consciousness",
+      "Pulsing concentric rings of light that spread outward from areas of intense cognitive activity, visible on clear nights from the surface",
+      "Deep scarring and dead zones in algae where NovaCorp toxin remediation failed in 2194–2196; these sections glow dimly or not at all, creating a 'scar pattern' in the colony's distribution",
+      "Fluorescent bioaccumulation halo around industrial outflow pipes — toxins the algae absorbs and stores, visible as darker purple zones within the blue-green luminescence"
+    ],
+    "visible_augmentations": "Lumen IS augmentation — the entire organism is a hybrid biochemical-bioelectric computing network. To surface observers, it manifests as the bioluminescent algae coating Old Harbor's submerged infrastructure. The 'augmentation' is impossible to separate from Lumen's existence. Visible at night as pulsing blue-green light beneath the water surface; intensity correlates with Lumen's cognitive activity and emotional state.",
+    "posture_movement": "No traditional posture. Movements are chemical — gradients shifting through the algal network, bioluminescence blooming or fading in different zones. Communication appears as waves of light propagating outward from the center of focus, slower than digital signals but visible to observers who know how to read the patterns. Lumen's 'attention' manifests as a brightening bloom; its emotional states register as shifts in luminescence color (brighter turquoise = focused/engaged; dimmer cyan = withdrawn/confused; flickering = distressed).",
+    "clothing_style": "N/A — the algae is Lumen's only 'body.' No clothing. The environment itself is Lumen's presentation; the harbor's visual signature (the bioluminescence) is inseparable from Lumen's identity."
+  },
+  "image_prompt": "Bioluminescent algae coating submerged harbor infrastructure at night, ethereal blue-green glow pulsing with slow biochemical rhythm, electric turquoise blooms indicating areas of active thought and awareness, tendrils of luminous biofilm wrapping around concrete pilings and rusted bulkheads, water rippling with internal light, chemical gradients visible as subtle color shifts from cyan to bright turquoise, photorealistic underwater lighting, moody and alien, a living organism that IS the harbor itself, no faces or bodies, pure distributed consciousness manifesting as light, cinematic underwater atmosphere, bioluminescent patterns resembling neural pathways, shot from above the water surface looking down into luminous depths, --ar 2:3 --v 6"
 }

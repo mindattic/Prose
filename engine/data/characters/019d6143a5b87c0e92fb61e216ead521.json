@@ -280,5 +280,26 @@
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 183,
+    "weight_kg": 71,
+    "build": "Lean and angular, with wiry musculature that reads as natural until you see her move — geneware muscle density treatment gives her deceptive power in economical frame",
+    "hair_color": "Iron gray with faded copper undertones",
+    "hair_style": "Pulled back tight, practical, minimal styling",
+    "hair_length": "Medium — shoulder-length, utilitarian",
+    "eye_color": "Light brown with amber rim",
+    "skin_tone": "Warm bronze, sun-weathered from outdoor flight hours",
+    "complexion": "High cheekbones, pronounced jaw, minimal cosmetic grooming — a face that photographs too distinctly, which she knows",
+    "distinguishing_marks": [
+      "Thin scar across left temple, barely visible unless light catches it, old and precise",
+      "Callused hands from flight stick work, knuckles scarred from early-career accidents",
+      "Burn scar on right forearm (inner side, 8cm), faded but visible, from an extraction-gone-wrong in 2219"
+    ],
+    "visible_augmentations": "Chrome vocal modulator visible at throat — brushed titanium insert at anterior neck, approximately 4cm wide, with subtle LED indicator that glows soft blue when in use. No attempt to conceal it. Moves with the ease of someone who has worn chrome long enough to forget it isn't bone.",
+    "posture_movement": "Economical, minimal gesture. Sits with weight distributed for quick movement. Walks like she's always calculating sight lines and exit vectors. When speaking, hand movements are deliberate and spare — the chrome modulator does the work. Eyes track movement constantly, habit not paranoia.",
+    "clothing_style": "Tier 2-3 hybrid: functional tactical base (reinforced flight jacket in matte black synthetic, utility cargo pants in charcoal gray), paired with mid-tier civilian approximation (understated brands, nothing that flags wealth or gang affiliation). Wears a worn leather flight jacket over everything — pre-2200s, hand-tooled, tells its own story. Boots are military-grade and regularly maintained. Jewelry minimal: a simple ring on her left ring finger, tarnished silver, worn smooth."
+  },
+  "image_prompt": "A 59-year-old woman with iron gray hair pulled back tight, warm bronze complexion, and alert amber eyes. Lean muscular build, 183cm tall, standing with pilot's posture — shoulders back, weight balanced. Visible brushed titanium vocal modulator at her throat with soft blue LED glow. Wearing a weathered black leather flight jacket over tactical gear, dark utility pants, military boots. Faded burn scar visible on right forearm. Background: mid-level corporate residential tower interior, neon glow from distant Michigan Avenue bleeding through reinforced windows, moody blue-amber lighting. Cyberpunk noir, photorealistic, character portrait, sharp focus on face and modulator detail, atmospheric GLMZ-2226 aesthetic, cinematic. --ar 2:3 --v 6"
 }

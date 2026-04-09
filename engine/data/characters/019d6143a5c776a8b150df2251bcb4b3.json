@@ -259,5 +259,27 @@
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Eastern European (Romanian) / Polynesian (Samoan)",
+    "height_cm": 193,
+    "weight_kg": 127,
+    "build": "Geological. Massive across the chest and shoulders with a thick neck and heavy frame that reads as both muscular and dense — the build of a man who has spent twenty-five years moving pipe, hauling equipment, and carrying the weight of a failing building on his shoulders. Not soft, not lean. Solid.",
+    "hair_color": "Black with salt-gray at the temples and throughout",
+    "hair_style": "Short, close-cropped on the sides, slightly longer on top. Neat. Maintained without vanity.",
+    "hair_length": "Short",
+    "eye_color": "Left eye: amber optical implant with faint luminescent iris ring. Right eye: dark brown, natural.",
+    "skin_tone": "Deep brown with warm undertones — the Ghanaian-Samoan heritage dominating, set against the Romanian ancestry as a subtle undertone in facial structure",
+    "complexion": "Heavy brow, strong jaw, weathered. The skin shows sun exposure and chemical burns from pipe work — small scars on the cheekbones and forehead, mostly faded. A neat goatee, half-gray, kept trimmed to a precise point. His face reads as perpetually serious, not from anger but from focus. Deep-set eyes. No softness in the expression.",
+    "distinguishing_marks": [
+      "Chemical burn scar across the left side of the neck, faded to pale brown, roughly 3 inches in length — from a coolant leak at age 32.",
+      "Hairline fracture scar along the left temple in a thin white line, barely visible except in direct light — from the pressurized pipe failure that cost him his original left eye.",
+      "Tattoo on the right forearm: a simple geometric design of interlocking circles in black ink, done at twenty-five, faded now but still visible. Meaningless to him now; he got it drunk.",
+      "Burns and minor scarring across both palms and inner wrists from pipe handling, tool friction, and industrial solvent exposure — not disfiguring but visible on close inspection."
+    ],
+    "visible_augmentations": "Retractable claw modifications on both hands — polished steel tips that rest flush against the knuckles when retracted, visible as faint metallic seams. The claws extend with a soft mechanical whisper, roughly 4 inches long, dull-edged and functional rather than aesthetic. Left eye: the amber iris ring visible even in daylight, more pronounced in low light where it emits a faint glow. No external signs of skeletal reinforcement — the shoulder and lower-back plating is subcutaneous, invisible beneath his clothing.",
+    "posture_movement": "He moves with the economy of someone who has long ago stopped wasting motion. Walks as though bearing weight even when empty-handed — a slight forward lean from the spine work. His gestures are spare and purposeful; he doesn't use his hands to talk. When he reaches for something, the movement is direct and efficient. He stands with his weight slightly forward on the balls of his feet, ready to pivot toward whatever problem is next. His presence is large and still — he doesn't fill a room by being loud; he fills it by occupying space.",
+    "clothing_style": "Tier 3-4 working-class utilitarian. Insulated tech-weave coveralls in charcoal gray, worn open at the chest most of the time to reveal a basic black synthetic undershirt. The coveralls have multiple pockets, most of them stained with pipe compound, grease, mineral deposits. A canvas tool belt with vintage brass buckles — not fashionable, just functional and maintained. Work boots, heavy-duty synthetic leather, scuffed and re-sealed at the seams multiple times. A jacket made of insulated polymer in dark blue, water-resistant, lined with internal pockets for meters and diagnostics. No chrome, no fashion statements. Everything he wears is chosen for durability and function. His watch is utilitarian — a Helix-brand maintenance timer with a dim LED readout, not expensive but reliable."
+  },
+  "image_prompt": "Brutalist cyberpunk portrait, a 47-year-old man of enormous geological build with Ghanaian-Romanian-Samoan heritage, deep brown skin, heavy brow and strong jaw, neat gray-flecked goatee. Left eye glows with faint amber luminescence from a low-grade optical implant, right eye dark brown. Retractable steel claws visible as metallic seams on both hands. Wearing insulated charcoal coveralls worn open over a black synthetic shirt, dark blue polymer jacket, heavy work boots. Standing in the dim concrete basement of an aging residential stack, harsh single-point LED work light casting shadow across his face. Industrial piping and mechanical systems visible behind him, water stains on concrete walls. Grim, focused expression. Photorealistic, gritty, Tier 3 GLMZ aesthetic, no artifice. Cinematic lighting emphasizing the worn surfaces and the faint amber glow of his left eye in shadow. --ar 2:3 --v 6"
 }

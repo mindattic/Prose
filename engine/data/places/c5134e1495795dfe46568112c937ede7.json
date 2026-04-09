@@ -45,8 +45,16 @@
     "Freelancers who need the view and the perspective it provides"
   ],
   "notable_locations": [
-    "The departure boards — now displaying drink specials and messages",
-    "The edge seats — dangling over the city, the best view in the Circuit"
+    {
+      "name": "The departure boards",
+      "description": "now displaying drink specials and messages",
+      "tags": []
+    },
+    {
+      "name": "The edge seats",
+      "description": "dangling over the city, the best view in the Circuit",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.9328,

@@ -249,5 +249,25 @@
     "The Pale Mile",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Igbo-Nigerian / Polish",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry with defined shoulders and forearms from precision hand-sewing work; lean muscle without bulk",
+    "hair_color": "Natural black with color-shifting iridescent sheen from geneware modification",
+    "hair_style": "Sculptural braided and twisted arrangements that change weekly; currently a high crown with geometric interlocking patterns",
+    "hair_length": "Long, reaching mid-back when unbraided",
+    "eye_color": "Pale ice blue—unusual for her heritage, inherited from Polish maternal line",
+    "skin_tone": "Deep warm brown with subtle golden undertones",
+    "complexion": "Clear, glowing complexion; well-maintained with minimal scarring; bright, expressive face with high cheekbones and a quick, genuine smile",
+    "distinguishing_marks": [
+      "Faint needle-prick scars across both fingertips from years of hand-sewing precision work",
+      "Small burn mark on inner left forearm, roughly 2cm, from early geneware procedure—she does not hide it"
+    ],
+    "visible_augmentations": "Striking cosmetic geneware: pointed blue cat ears with subtle iridescent shimmer, mounted at natural ear position with minimal scar visibility. Hair follicles display color-shifting properties visible under market lighting. Fingertips show enhanced tactile sensitivity in movement and precision—not visually obvious but evident in how she handles fabric",
+    "posture_movement": "Constantly in motion; bounces slightly when standing still; uses hands expressively when speaking. Moves with dancer-like precision through crowded market stalls. Leans in close when engaged in conversation, makes direct eye contact, laughs easily and often",
+    "clothing_style": "Always wearing her own designs or custom pieces from the Market. Today: custom-made fitted jacket with reactive biometric-responsive panels that shift between hand-stamped Ankara geometric patterns and dynamic weave based on stress levels; paired with fitted black utility pants with hidden pockets and modular attachment points; worn leather work apron over everything with needle cases and measuring tools. Tier 3-4 quality—expensive in craft and materials, not in brand. Personal touches everywhere: small brass measuring-tape brooch, finger guards with brass caps, fabric scraps tucked into pockets"
+  },
+  "image_prompt": "A young Black woman, age 27, with striking pale blue cat-ear augmentations and intricate sculptural black braids with iridescent shimmer, standing in a dense cyberpunk market stall surrounded by bolts of fabric and clothing displays. She wears a custom-fitted jacket with reactive panels showing geometric Ankara patterns and dynamic weaving that shifts subtly with light. Deep rich brown skin, bright expressive eyes, compact athletic build, hands covered in fabric work and moving with precision. Warm market lighting reflecting off chrome fixtures and neon signs overhead. Enthusiastic, energetic posture. Close-up of face and upper body. Cyberpunk fashion designer, Tier 3 market vendor aesthetic. Cinematic, detailed lighting, shallow depth of field --ar 2:3 --v 6"
 }

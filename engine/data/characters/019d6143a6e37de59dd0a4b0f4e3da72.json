@@ -236,5 +236,26 @@
     "Needle",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Hungarian / East African (Maasai)",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Broad-shouldered and powerfully built with defined musculature in her forearms and shoulders from decades of precise tattooing work. Not bulky—economical, purposeful density.",
+    "hair_color": "Jet black, natural",
+    "hair_style": "Shaved close on the sides to stubble; crown left long and coiled, often threaded with copper wire during working hours",
+    "hair_length": "Long crown, very short sides",
+    "eye_color": "Deep brown with visible compound-facet iridescence when light hits them at certain angles; capable of UV perception",
+    "skin_tone": "Deep umber, rich and unmarked except where deliberately modified",
+    "complexion": "Strong Magyar cheekbones, wide jaw, minimalist facial grooming. Skin condition is immaculate—she treats it as a canvas and canvas-keeper. No acne, minimal scarring except where intentional.",
+    "distinguishing_marks": [
+      "Bioluminescent subdermal tracery glows in faint blue-green patterns across her chest, shoulders, and neck in the shape of lymphatic and vascular systems—visible under skin as if anatomically mapped and lit from within.",
+      "Left forearm completely sleeved in raised keloid scarification shaped into Maasai-influenced geometric forms (diamonds, chevrons, interlocking triangles), created by her own hand using a mirror rig; the scars are thick, pale against her skin, and deliberately sculptural.",
+      "Small ritual scarification marks on her inner wrists and behind her ears—thin lines in angular patterns, likely devotional."
+    ],
+    "visible_augmentations": "Precision-haptic finger implants visible as subtle metallic joint-work at her knuckles and fingertips when examined closely—micro-articulation points catch light. The compound-facet eye modification is detectable only when light refracts off her irises, revealing a subtle honeycomb shimmer.",
+    "posture_movement": "Moves with deliberate, economical grace—no wasted motion. Sits with her spine straight and shoulders relaxed. Hands are always subtly active even at rest (fingers flexing, tracing patterns in air). Her gaze is unflinching and direct. Speaks slowly, choosing words with the care she uses selecting needles.",
+    "clothing_style": "Tier 3 working artist aesthetic. Typically wears fitted sleeveless tunics or tank tops in muted colors (charcoal, rust, deep indigo) to showcase her body as portfolio. High-waisted, reinforced linen work pants in black. Bare feet or minimalist sandals in the shop. Occasionally wears a long linen overshirt unbuttoned and rolled at the sleeves when meeting clients outside Dermis & Ghost. No jewelry except copper wire in her hair. Fabric choices suggest quality craftsmanship but not status signaling—function and durability over brand."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 38-year-old Black woman with deep umber skin and strong Magyar cheekbones, shaved sides and tall coiled black hair threaded with copper wire. Her chest and shoulders glow with intricate bioluminescent blue-green subdermal tracery mapping anatomical systems like a living anatomy chart. Her left forearm is entirely sleeved in raised keloid scarification shaped into geometric Maasai patterns—diamonds and chevrons in pale raised tissue. Her eyes have a subtle compound-facet shimmer, capable of seeing UV light. She wears a sleeveless charcoal tunic and black linen work pants, standing in a tattoo studio lit by cold LED and warm bioluminescent light, her hands relaxed but precise, exuding unhurried methodical calm. Realistic anatomy, professional studio lighting, shallow depth of field focusing on her torso and face, fine detail on scar tissue and subdermal glow, intricate body art portfolio --ar 2:3 --v 6"
 }

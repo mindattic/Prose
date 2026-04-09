@@ -188,5 +188,25 @@
     "Arcturus CK-5 'Bloodhound'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Ghanaian / Ukrainian)",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Lanky and angular, the lean frame of someone who prioritizes screens over meals; visible rib definition, long limbs with minimal muscle development, slight forward slouch from hours hunched over equipment",
+    "hair_color": "Natural dark brown with subtle warm undertones",
+    "hair_style": "Loose natural coils, shoulder-length, intentionally unkempt and frequently pushed out of his face with whatever is nearest (fingers, wire, ear)",
+    "hair_length": "Medium",
+    "eye_color": "Medium brown (natural) with faint circular retinal overlay circuitry visible under direct light",
+    "skin_tone": "Warm medium brown with subtle golden undertones inherited from Akan ancestry, slightly paler around the eyes from extended indoor time",
+    "complexion": "Sharp Kovalenko cheekbones and grandmother's prominent nose; otherwise youthful and unlined except for the faint dark circles that are his baseline state; minimal grooming routine, skin otherwise clear",
+    "distinguishing_marks": [
+      "Fine network of scar tissue on both inner wrists from self-installing the retinal overlay, approximately 3cm each, partially hidden by the wrist cuff of whatever he's wearing",
+      "Occasional static discharge marks (small burns, healed) on his fingertips from working with unshielded components, barely visible unless closely examined"
+    ],
+    "visible_augmentations": "Pair of discount-grade geneware cat ears, silver-grey with matte finish, positioned slightly too high on his skull (self-installed); occasional visible glitch in his retinal AR overlay manifests as faint cyan UI elements flickering at the edge of his vision, triggering involuntary micro-expressions and sideways eye movements",
+    "posture_movement": "Typically hunched or folded into whatever surface he occupies; walks with economical, slightly distracted gait; hands are always in motion — fidgeting, gesturing, unconsciously mimicking typing; makes frequent micro-adjustments to his cat ears when thinking; prone to freezing mid-conversation when processing notifications only he can see",
+    "clothing_style": "Tier 4-5 practical utility: layered synthetic base layers (thermal regulation, often mismatched), oversized hoodies or canvas jackets with asymmetrical pocket configurations for tools and worn devices, cargo pants with evidence of improvised reinforcement at stress points, footwear is functional and held together with apparent stubbornness; no corporate branding; everything worn into softness; occasional patch of medical tape holding something together"
+  },
+  "image_prompt": "17-year-old boy, cyberpunk, West African-Ukrainian mixed heritage, warm medium-brown skin, sharp high cheekbones, loose natural dark coils at shoulder length, warm medium-brown eyes with faint cyan AR overlay circuitry visible, discount silver-grey geneware cat ears slightly too high on skull, lanky angular build with visible ribs, slouching posture. Wearing oversized charcoal hoodie and cargo pants with asymmetrical pockets, mismatched thermal layers, beat-up synthetic boots. Sitting hunched over a worn modular terminal in dim neon-lit room, hands mid-gesture, cyan UI elements glitching at corner of vision, slight static discharge marks on fingertips. Tier 4 Hough Reclamation aesthetic, improvised wiring and patched equipment visible in background. Lighting: cool neon glow with warm incandescent desk lamp, volumetric dust visible in light, cyberpunk underground network hub mood, shallow focus on face. --ar 2:3 --v 6"
 }

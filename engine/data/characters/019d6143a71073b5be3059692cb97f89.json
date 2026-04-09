@@ -91,5 +91,27 @@
   },
   "timeline": [],
   "changelog": [],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Russian",
+    "height_cm": 198,
+    "weight_kg": 145,
+    "build": "Massive and lean — a wall of muscle gone slightly soft with age, broad-shouldered and dense. Prison-yard bulk, not gym-built. Forearms thick as fence posts.",
+    "hair_color": "Steel gray with black roots",
+    "hair_style": "Cropped military flat-top, receding at temples",
+    "hair_length": "Short",
+    "eye_color": "Pale gray-blue",
+    "skin_tone": "Deep brown with ashy undertones, weathered to leather",
+    "complexion": "Deep facial creases around the eyes and mouth. Strong jaw, prominent cheekbones. Stubble perpetually at 2-day growth. Pores enlarged from decades of grime and sweat in sub-levels.",
+    "distinguishing_marks": [
+      "Faded Cyrillic prison tattoo on left forearm: three stacked lines (sentence marker from pre-Collapse era)",
+      "Burn scar across the back of right hand — white and puckered, shaped like a handprint",
+      "Long thin scar running from left cheekbone to jawline, pale and old",
+      "Knuckle scars across both hands — fighter's hands, bone-white ridges"
+    ],
+    "visible_augmentations": "None visible. Deliberately unaugmented — a statement of power in a chrome-heavy world.",
+    "posture_movement": "Stands with weight balanced, feet shoulder-width apart — ready to move. Moves slowly and deliberately, each motion economical. Doesn't swagger. Presence fills a room without effort.",
+    "clothing_style": "Tier 4 utilitarian. Worn olive drab cargo jacket, patched at elbows and shoulders. Black reinforced trousers with cargo pockets. Steel-toed boots, laced tight. A salvaged riot shield slung across his back — dented, marked with gang tags he refuses to remove. No corpo logos. Wears a faded gray undershirt beneath the jacket, collar always visible and worn soft."
+  },
+  "image_prompt": "Portrait of a 52-year-old unaugmented man, West African and Russian heritage, massive lean frame, pale gray-blue eyes, deep weathered brown skin, military flat-top with gray-black hair, faded prison tattoos visible on forearms, pale scar running down left cheekbone, fighter's knuckles, wearing worn olive drab cargo jacket and black reinforced trousers, salvaged riot shield scarred with gang tags slung across his back, standing in shadowed underground concrete corridor, industrial lighting casting hard shadows, gritty cyberpunk noir, 2226 dystopian era, stoic powerful presence, cinematic depth of field --ar 2:3 --v 6"
 }

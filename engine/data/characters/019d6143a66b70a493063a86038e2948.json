@@ -179,5 +179,27 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Nightlight"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Caucasian (Georgian)",
+    "height_cm": 157,
+    "weight_kg": 51,
+    "build": "Compact and wiry, lean muscle from years of climbing rooftops and moving through tight urban spaces. No excess weight; chest slightly narrow, shoulders squared. Moves like someone used to fitting into spaces others can't reach.",
+    "hair_color": "Natural black base with slow bioluminescent pulse cycling indigo-to-amber",
+    "hair_style": "Worn loose and shoulder-length, often pulled back with a strip of repurposed copper wire or fabric scraps. Occasionally braided when working in the print shop to keep the glow from obscuring her eyes.",
+    "hair_length": "Medium",
+    "eye_color": "Deep brown, alert and slightly red-rimmed from chronic sleep deprivation",
+    "skin_tone": "Deep warm brown with subtle red undertones from Georgian heritage on her father's side",
+    "complexion": "High cheekbones, angular jaw. Skin texture shows fatigue — slight hollowness under the eyes, faint laugh lines around her mouth from sardonic humor. No makeup; a faint chemical burn scar traces her left temple from a printing-press accident at twenty-four.",
+    "distinguishing_marks": [
+      "Three small circular data-port scars arranged vertically along the inner left forearm, each about the size of a pill capsule, left deliberately unhealed as visible testimony to old hardware she refuses to erase.",
+      "Chemical burn scar on left temple — thin and pale, running from hairline toward her cheekbone, slightly raised and shiny with age.",
+      "Ink stains on the webbing between her thumb and index finger on both hands (permanent, from years of press work), darker on her left hand where she favors it for writing.",
+      "Small tattoo on her inner right wrist — a stylized ferrogate symbol with the date '2214' below it (marks the day Axiom tried to shut down the first Fault Lines broadcast)."
+    ],
+    "visible_augmentations": "Bioluminescent hair that pulses with slow indigo-to-amber color cycles (old tech, visible from across a room in dim light). Three data-port scars on left forearm. Subdermal quick-copy chip in left palm is not visibly obvious but creates a slight luminous line under the skin when active (rarely shows). Ink stains and wear patterns on her fingerless gloves suggest constant data-work.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward from hunching over design work. Head tilts when listening, as if calibrating. Hands move expressively when speaking but settle into stillness when thinking. Habitual thumb-drum on whatever surface is nearest when anxious. Walks fast, always looks like she's going somewhere specific even when she's not.",
+    "clothing_style": "Tier 3-4 working class with intentional anti-corporate edge. Favors dark, durable fabrics (cotton-poly blends, canvas). Fingerless work gloves in faded charcoal, worn constantly. Oversized button-up shirt (often men's cut, often with sleeves rolled) layered over fitted tank tops in black or dark gray. Cargo pants or heavy denim with multiple pockets for micro-recorders and data chips. Scuffed steel-toed boots (practical for rooftop work). A battered vinyl jacket from a vintage thrift-market, patched with fabric remnants from old Fault Lines print runs. Often wears a repurposed Tessera ID badge on a cord around her neck (non-functional, kept as a trophy from the water-rationing expose). No jewelry except a slim bracelet woven from copper wire and colored thread — handmade, looks fragile but isn't."
+  },
+  "image_prompt": "Portrait of a 31-year-old woman with deep brown skin and West African-Georgian heritage, compact athletic frame. Her shoulder-length black hair glows with slow bioluminescent pulses of indigo and amber in dim light. Deep brown eyes, alert and tired, with slight hollowness from chronic sleep deprivation. Three small circular scars visible on inner left forearm, faint chemical burn scar on left temple. Wearing dark fingerless work gloves, oversized dark button-up shirt, fitted tank top, cargo pants, scuffed steel-toed boots. Battered vinyl jacket patched with printed fabric. Ink stains on hands visible. Standing in a print shop apartment lit by neon signs reflecting through windows, moody underground cyberpunk aesthetic, gritty and real, shallow depth of field, 2226 GLMZ setting. Slight supernatural glow from hair in shadows. Film noir meets street journalism. --ar 2:3 --v 6"
 }

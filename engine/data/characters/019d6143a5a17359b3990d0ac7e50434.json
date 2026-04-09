@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, Unit 7 of the Pressed & Clean cooperative on Bogdanow Street, near Ashland and Division",
-  "description": "Adaeze is a broad-shouldered woman with deep umber skin that has gone leathery at the knuckles from decades of hot water and chemical detergents. Her natural hair is gathered into a high wrap of faded indigo cloth, shot through with actual silver thread she stitched in herself for her fiftieth birthday. Her eyes are a watery hazel that turns almost gold under fluorescent light — a cosmetic iris mod she saved for six months to afford — and she wears no other augmentation. She moves with the unhurried authority of someone who has already decided she will not be rushed today or any other day.\n\nShe is known in the Enclave for two things: the sharpest crease in Meridian 88 and a bluntness that borders on prophecy. She will tell you exactly what is wrong with your relationship, your posture, and your collar stay in the same breath, and she will be correct on all three counts. She keeps a small shrine to the ELF she calls Grandma Rinse above her industrial press — offerings of fabric swatches and tiny bottles of softener — and she genuinely believes the old machine runs quieter when the shrine is tended.",
+  "description": "Adaeze is a broad-shouldered woman with deep umber skin that has gone leathery at the knuckles from decades of hot water and chemical detergents. Her natural hair is gathered into a high wrap of faded indigo cloth, shot through with actual silver thread she stitched in herself for her fiftieth birthday. Her eyes are a watery hazel that turns almost gold under fluorescent light — a cosmetic iris mod she saved for six months to afford — and she wears no other augmentation. She moves with the unhurried authority of someone who has already decided she will not be rushed today or any other day.\n\nShe is known in the Enclave for two things: the sharpest crease in GLMZ and a bluntness that borders on prophecy. She will tell you exactly what is wrong with your relationship, your posture, and your collar stay in the same breath, and she will be correct on all three counts. She keeps a small shrine to the ELF she calls Grandma Rinse above her industrial press — offerings of fabric swatches and tiny bottles of softener — and she genuinely believes the old machine runs quieter when the shrine is tended.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -176,11 +176,32 @@
   ],
   "related_entities": [
     "Hamtramck Enclave",
-    "Meridian 88",
+    "GLMZ",
     "Tessera Corponation",
     "Silver",
     "Hazel Brink",
     "Gold"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Slavic)",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, muscular through the back and arms from decades of pressing and wringing. Not heavy, but densely built—the kind of frame that fills a doorway without apology.",
+    "hair_color": "Natural black with silver-grey at the temples",
+    "hair_style": "Gathered into a high wrap using faded indigo cloth with silver thread hand-stitched throughout",
+    "hair_length": "Long, wrapped",
+    "eye_color": "Hazel-gold with cosmetic iris mod; turns nearly golden under fluorescent light",
+    "skin_tone": "Deep umber with rich undertones",
+    "complexion": "Leathery texture at the knuckles and inner wrists from chronic exposure to hot water and chemical detergents; creased around the eyes and mouth from fifty years of squinting at seams and smiling rarely but meaningfully. Sun-weathered despite Tier 4 enclave living. Clean but not delicate.",
+    "distinguishing_marks": [
+      "Callused ridge across both palms from needle work and pressing handles",
+      "Faded chemical burn scars on the inner left wrist, partially obscured by compression sleeve",
+      "Pale line scar along the right knuckle from a press accident in her thirties"
+    ],
+    "visible_augmentations": "Fitted compression sleeves on both forearms in dark grey technical fabric, worn for wrist support. Cosmetic hazel-gold iris mod visible only under direct light or when she removes her safety glasses. No chrome visible.",
+    "posture_movement": "Moves with deliberate slowness, never hurried—shoulders back, head level. She walks like someone who has already decided the world will wait for her. Stands with weight evenly distributed, ready to lean into a pressing motion at any moment. Hands rarely still; fingers often air-pressing seams or adjusting invisible wrinkles.",
+    "clothing_style": "Tier 4 workwear: heavy cotton apron in faded navy over a plain long-sleeved shirt (always with sleeves rolled to mid-forearm to show compression sleeves), dark work trousers with reinforced pockets, sturdy non-slip shoes worn smooth at the heel. She owns three identical aprons and rotates them. No jewelry except a thin silver band on her right ring finger—handmade, dented slightly, older than her marriage."
+  },
+  "image_prompt": "A 52-year-old West African-Eastern European woman with deep umber skin, standing in an industrial laundry facility, head wrapped in faded indigo cloth threaded with silver, hazel-gold eyes glowing softly under harsh fluorescent light. Broad-shouldered and solid, wearing dark work apron and compression sleeves on both forearms. Leathery hands, calloused knuckles, scarred wrists. Posture: unhurried authority, weight balanced, shoulders back. Standing beside a massive ELF industrial press, hand resting on its warm metal surface. Behind her: rows of hanging garments, steam rising, detergent smell visible in the air. Lighting: harsh overhead fluorescents mixed with warm steam glow. Mood: dignified, weathered, unrushed. Cyberpunk utility aesthetic, Tier 4 working class enclave realism, no chrome, only function. 52 years of hot water and honesty in her expression. --ar 2:3 --v 6"
 }

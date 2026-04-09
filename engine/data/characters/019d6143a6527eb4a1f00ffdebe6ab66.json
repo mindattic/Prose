@@ -64,7 +64,7 @@
   "narrative_function": "Eyes and information — Makena knows what's on camera across a significant portion of the city. She can confirm alibis, locate missing persons, track movements, and identify faces. She is not easily corrupted but has specific pressure points. Can be a source, a complication, or a gatekeeper depending on what player characters need.",
   "augmentations": "Cosmetic cat ears (tawny, mood-mobile). Neural feed port at left temple — standard-issue surveillance operator interface, allows direct sensory integration with the monitoring network for her shift. Slight chromatic tinting on fingernails, cosmetic, changes with temperature.",
   "daily_life": "Arrives at the monitoring station before her shift to review flag summaries from the previous watch. Spends her shift on active monitoring, flagging incidents for dispatch, pulling historical footage on request. Eats at her workstation. Takes exactly one fifteen-minute break in the corridor because the monitoring station has no natural light and she has been advised by a doctor to experience it occasionally.",
-  "affiliation": "Meridian 88 Metro Police, Surveillance Division",
+  "affiliation": "GLMZ Metro Police, Surveillance Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -257,5 +257,25 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 163,
+    "weight_kg": 52,
+    "build": "Slight and quick, economical muscle definition from desk work and restless habit rather than conditioning. Wiry frame with minimal body fat, suggesting someone who forgets to eat unless reminded.",
+    "hair_color": "Natural dark brown",
+    "hair_style": "Pinned up in a functional bun or secured wrap, kept off the face and away from the neural port at her temple",
+    "hair_length": "Medium (shoulder-length when down)",
+    "eye_color": "Natural dark brown",
+    "skin_tone": "Deep warm brown with subtle undertones from her mixed heritage",
+    "complexion": "Clear, unmarked face with minimal expression lines despite her age — she spends too much time focused on screens to wrinkle. Meticulous grooming, no visible blemishes. Slight pallor from subterranean work environment, offset by her rich natural skin tone.",
+    "distinguishing_marks": [
+      "Tawny cat ears, cosmetic augmentation, small and mobile — they sit at the apex of her skull and move autonomously with her attention and emotional state",
+      "Small circular port scar at her left temple, barely visible but slightly paler than surrounding skin, where her neural feed interface integrates"
+    ],
+    "visible_augmentations": "Tawny cat ears with active mobility (primary visual identifier). Chromatic nail tinting visible on fingertips and nails — currently shifts with ambient temperature, subtle color gradients from cool blues to warm ambers depending on her body temperature and the environment. Neural port at left temple is mostly invisible unless looked for directly, but her habit of touching it while thinking makes its location known.",
+    "posture_movement": "Sits with perfect stillness when focused, barely breathing. Moves with economical efficiency — nothing wasted. Her cat ears are almost constantly active, rotating and tilting with her gaze and attention, betraying what she's focusing on even when her body is motionless. When she walks, she moves quietly and deliberately, as though navigating a room full of cameras (which, to her, she always is). Occasionally touches the neural port at her temple when thinking.",
+    "clothing_style": "Tier 3-4 utilitarian. Standard-issue GLMZ Metro Police uniform when on shift — smart-fabric undershirt with embedded thermal regulation, tactical vest with comm array pockets, dark utility pants with reinforced knee panels. Off-shift: comfortable, practical clothing in muted grays and blacks. Minimal jewelry except for a thin chrome bracelet on her left wrist (probably a failed augmentation attempt or a keepsake). Maintains the uniform meticulously but dresses for function rather than fashion. No visible corporate branding, no luxury indicators."
+  },
+  "image_prompt": "Portrait of Makena Johanssen-Diallo, 27-year-old Black woman with West African and Scandinavian heritage, slight athletic build, dark brown skin, natural dark brown eyes. She has small tawny cat ears perched on her head that are actively mobile and tilted forward in focus. Her dark brown hair is pinned up away from her face. Small neural port scar visible at left temple. Fingernails with subtle chromatic temperature-reactive tinting. Wearing GLMZ Metro Police tactical uniform — dark utility pants, smart-fabric undershirt, tactical vest with comm pockets. Seated at a high-tech surveillance workstation with multiple monitors glowing behind her, cool blue and green light washing over her face. Cyberpunk aesthetic, hyper-focused expression, slight pallor from underground work environment. Studio lighting, professional headshot style, centered composition. Cyberpunk, near-future, surveillance operator portrait, sharp focus on face and ears, moody blue lighting, atmospheric, photorealistic --ar 2:3 --v 6"
 }

@@ -181,5 +181,25 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Rust"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Mongolian / West African",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and wiry, efficient rather than imposing — the body of someone who moves through tight spaces and doesn't waste energy",
+    "hair_color": "Naturally dark brown-black, with rust-orange dye on the forelock",
+    "hair_style": "Shaved close to scalp except for a single forelock left long and deliberately uneven, the orange dye showing water stains and grown-out roots",
+    "hair_length": "Shaved with one long forelock",
+    "eye_color": "Dark brown, alert and restless",
+    "skin_tone": "Deep warm brown with cool undertones",
+    "complexion": "Clear and unblemished except for self-inflicted tattoo work. Features are fine-boned and symmetrical, with a habitual micro-expression hovering between a smile and sharp observation. Their expression shifts rapidly — a survival trait.",
+    "distinguishing_marks": [
+      "Geometric stick-and-poke tattoos scattered across shoulders and ribs — crude but intentional coordinate symbols and abstract markers, each one a private map of places they've sheltered",
+      "Faint blue-green bioluminescent tracery running along both collarbones in delicate branching patterns, only visible in complete darkness"
+    ],
+    "visible_augmentations": "Bioluminescent geneware on collarbones (invisible in daylight). No visible cyberware — deliberately avoiding any tech that would require registration or leave a digital footprint.",
+    "posture_movement": "Quick and economical, moving through crowds as if reading the spaces between people. Hands are often occupied — fidgeting, repacking layers, adjusting straps. They stand at angles rather than facing directly forward, a posture that maximizes sightlines and minimizes scanner exposure. When still, there is coiled alertness beneath their easy expression.",
+    "clothing_style": "Deliberately non-reflective layered salvage: matte-black thermal underlayer, charcoal canvas overshirt with the collar cut away to show the collarbones, dark grey cargo pants with numerous small pockets repurposed from reclaimed fabric. All seams are carefully dulled. Boots are military surplus, resoled multiple times. Nothing matches, nothing is new, nothing catches light. Tier 5 survival fashion — practical anti-visibility rather than aesthetic statement."
+  },
+  "image_prompt": "Androgynous 24-year-old with shaved dark head except for one rust-orange uneven forelock, deep warm brown skin, alert dark eyes. Lean wiry build, dressed in layered matte-black and charcoal salvage clothing deliberately chosen to avoid reflective surfaces. Small geometric self-inflicted tattoos visible on shoulders and ribs. Standing in a tight drainage tunnel, cyberpunk setting, faint blue-green bioluminescent tracery glowing subtly along collarbones from geneware in the dim lighting. Expression combines easy smile with sharp calculation. Moody dystopian lighting, cool tones, cinematic depth, gritty urban underground aesthetic. --ar 2:3 --v 6"
 }

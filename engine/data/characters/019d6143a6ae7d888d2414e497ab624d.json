@@ -180,5 +180,24 @@
     "Arcturus CK-5 'Bloodhound'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Romanian / West African / South Indian",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Tall and languid with lean musculature; long-limbed and graceful, moving with unhurried fluidity. Fingers noticeably elongated and dexterous from years of precise synthesis and plant handling.",
+    "hair_color": "Deep forest green (permanent gene-dye, refreshed biennially)",
+    "hair_style": "Thick coils worn loose and shoulder-length, often gathered with twine or copper wire during work",
+    "hair_length": "Long",
+    "eye_color": "Warm amber-brown, with faint ring of darker brown at iris edge",
+    "skin_tone": "Warm medium brown with golden undertones; complexion reflects mixed West African and South Indian heritage",
+    "complexion": "Clear, unlined face with generous nose and high cheekbones; perpetually faint green-brown staining on fingertips and the webbing between fingers from plant matter and synthesis compounds. Nails kept trimmed and slightly calloused at cuticles from daily handling of dried botanicals.",
+    "distinguishing_marks": [
+      "Fine, barely-visible linear scarring across the inner left forearm where the biochemical sensor strip was embedded — approximately 8cm long, pale against their skin tone"
+    ],
+    "visible_augmentations": "A thin, slightly-raised biotech nodule visible beneath the skin on the inside of the left forearm (biochemical sensor strip); occasionally glimmers faintly with bioluminescent calibration light when activated. No external chrome or obvious cybernetic modifications.",
+    "posture_movement": "Moves with deliberate, economical grace — no wasted motion. When standing at rest, weight balanced evenly with a slight forward cant from years of leaning over the synthesis table. Gestures are precise and controlled; hands move through space with the confidence of someone accustomed to delicate work. Eyes track customers with quiet assessment before engaging. Overall bearing conveys unhurried calm and deep presence.",
+    "clothing_style": "Worn canvas apron with multiple small sewn pockets, stained with dried plant residue and synthesis marks, worn over layered thrift-store pieces: faded botanical-print long-sleeve shirts, oversized cardigans in earth tones, patched cargo pants in neutral colors. Practical Tier 3-4 working-class aesthetic with deliberate bohemian touches. Copper wire, twine, and occasional brass findings woven into hair. Barefoot or wearing scuffed leather sandals at the stall."
+  },
+  "image_prompt": "Tall, languid nonbinary figure with warm medium-brown skin and long thick coils of deep forest green hair, standing behind an alchemist's stall laden with hanging dried plants, glass jars, and handwritten labels in multiple scripts. Long-fingered hands stained faint green-brown from botanical work, wearing a worn canvas apron over layered earth-toned thrift clothing. Warm amber eyes with quiet assessment, gentle sardonic expression. Soft golden-hour market lighting filtering through the Alban Souk awning, casting warm shadows across dried herb bundles and a humming cold-storage unit. An intricate woven E.L.F. net hangs at the stall's center. Photorealistic cyberpunk realism, intimate portraiture, shallow depth of field on face, bokeh of plant matter in background. Tier 3-4 street market atmosphere, worn textures, authentic South-side Chicago industrial aesthetic. --ar 2:3 --v 6"
 }

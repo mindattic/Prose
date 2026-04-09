@@ -212,5 +212,26 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "The Milwaukee Core"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South African / Finnish",
+    "height_cm": 193,
+    "weight_kg": 118,
+    "build": "Massive and solid without excess fat — the build of someone who has spent two decades moving through tight spaces and hauling load. Broad shoulders, thick forearms, hands scarred and calloused from decades of manual work. Carries himself with the economy of movement of someone who knows the weight and space of their own body.",
+    "hair_color": "Black with silver threading at temples",
+    "hair_style": "Shaved skull, maintained with military precision every third day",
+    "hair_length": "Shaved",
+    "eye_color": "Pale grey-green — striking and unusual against his dark skin, rarely blinking",
+    "skin_tone": "Deep brown with warm reddish undertone, the complexion of someone who works in heat and humidity",
+    "complexion": "Face mapped with a fine network of thin white scars radiating across left cheek and jawline from old thermal burn damage — never fully healed cosmetically, only functionally. The scars form an almost accidental pattern, like frost on glass. Trimmed beard kept short, dark with silver. Deep-set eyes that seem to assess constantly. Lines around the eyes and mouth from forty-four years of serious expression.",
+    "distinguishing_marks": [
+      "Network of fine white scars across left cheek and jawline in organic branching pattern, result of thermal gas line incident approximately fifteen years prior",
+      "Calloused ridge scarring across both palms and inner fingers from decades of pipe handling and wrench work",
+      "Faint discoloration along spine (lower thoracic region) where biointegrated spinal brace interface sits — slightly raised, almost imperceptible unless skin is in direct light"
+    ],
+    "visible_augmentations": "Minimal. The spinal brace is mostly invisible beneath clothing, though a trained observer might notice the slight rigidity in his movements and the geometric bulge visible along his back if he wears fitted shirts. The subdermal pressure sensors in his hands are completely internal — only visible as faint geometric scarring on the heel of each palm where insertion occurred.",
+    "posture_movement": "Moves with deliberate efficiency — no wasted motion. Stands with shoulders slightly forward from decades of working in confined spaces. Walks with a subtle favoring of hip flexors due to spinal brace. Rarely gestures while speaking. Hands at rest are often slightly curved, as if holding something. In crisis, becomes perfectly still and methodical.",
+    "clothing_style": "Tier 3-4 working class, practical and worn. Grey and navy synthetic maintenance coveralls with Palladian Property Holdings patch (which he wears with visible resentment). Under them, plain cotton t-shirts, usually grey or black. Thick-soled work boots, always clean but heavily scuffed. A single piece of jewelry: a worn brass ring on his left middle finger, no inscription visible. In off-hours, he wears the same coveralls or black cargo pants and faded sweaters. No decoration, no chrome, no fashion. Everything chosen for durability and function."
+  },
+  "image_prompt": "A 193cm South African-Finnish man, age 44, with deep brown skin and striking pale grey-green eyes, shaved head with silver at temples. Massive powerful build from decades of manual labor, broad shoulders, thick forearms. Face mapped with fine white scar network on left cheek from thermal burn, short trimmed dark beard. Wearing grey maintenance coveralls with Palladian Property Holdings patch over dark t-shirt, heavy work boots. Standing in industrial sub-basement furnace room with warm orange-red boiler light reflecting off his skin, pipes and valves visible in background. Posture serious and methodical, hands at sides with visible palm scarring, expression calm and assessing. Dramatic low-key lighting, moody atmospheric, cyberpunk noir aesthetic, hyper-realistic portrait photography --ar 2:3 --v 6"
 }

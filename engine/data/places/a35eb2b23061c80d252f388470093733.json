@@ -70,8 +70,16 @@
     "Unauthorized deep-exploration teams — rarely, at great personal risk"
   ],
   "notable_locations": [
-    "The Circle — the ring of Behemoth positions on the polished floor, marked by deep wear patterns",
-    "The Center — the geometric center of the circle, where the stone is slightly different — smoother, warmer, and faintly resonant when struck"
+    {
+      "name": "The Circle",
+      "description": "the ring of Behemoth positions on the polished floor, marked by deep wear patterns",
+      "tags": []
+    },
+    {
+      "name": "The Center",
+      "description": "the geometric center of the circle, where the stone is slightly different — smoother, warmer, and faintly resonant when struck",
+      "tags": []
+    }
   ],
   "coordinates": {
     "district": "Deep Underworld",

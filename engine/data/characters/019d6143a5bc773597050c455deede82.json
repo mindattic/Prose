@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "The Circuit — neon-lit entertainment and vice district, near Milwaukee and North Ave",
-  "description": "Aybek Sato-Poku is lean and angular, all sharp edges and visible tension. At 32, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a bodyguard out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAybek Sato-Poku has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "description": "Aybek Sato-Poku is lean and angular, all sharp edges and visible tension. At 32, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a bodyguard out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAybek Sato-Poku has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.82,
@@ -280,7 +280,7 @@
     "Volkov-Saito Precision VS-40 'Magistrate'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Circuit",
     "The Nearfield",
     "Lazarus LX-2 'Lab Rat'",
@@ -290,5 +290,27 @@
     "Clover",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Central Asian / West African",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Lean and angular with corded muscle definition from combat conditioning and maintenance work. No excess body fat — functional frame optimized for speed and precision rather than power.",
+    "hair_color": "Black with natural blue-black sheen",
+    "hair_style": "Pulled back in a tight, utilitarian braid that runs down the back of her skull. Occasionally worn loose, but function dictates containment.",
+    "hair_length": "Long",
+    "eye_color": "Dark brown — natural, unaugmented, but with the flat intensity of someone who watches for threats automatically",
+    "skin_tone": "Warm medium brown with undertones from mixed Central Asian and West African lineage",
+    "complexion": "Sharp cheekbones, angular jaw, minimal facial fat. Skin shows the pallor of nocturnal living — not sallow, but lacking the sun exposure of day-dwellers. A few surgical scars visible at the temples from cyberear installation, white against darker skin.",
+    "distinguishing_marks": [
+      "Installation scarring around both temples where cyberears connect subcutaneously — fine white lines roughly 3cm long, partially concealed by hairline",
+      "Thin white scar along left jawline from jaw-edge armor plating seam — runs from ear to chin, barely noticeable unless lit from the side",
+      "Small burn mark on right forearm where military surplus armor plating was installed — roughly 2cm diameter, silvery and raised, now mostly concealed under long sleeves",
+      "Pale callus tissue across knuckles and inner palms from years of hand-to-hand work and equipment maintenance"
+    ],
+    "visible_augmentations": "Cyberears are fully visible — brushed chrome or matte black synthetic mounted flush against the skull where human ears would be, with visible microphone arrays and minimal aesthetic concern for appearance. The installation is clean but unmistakably functional. Subdermal armor plating creates subtle angular distortions under skin on torso and forearms — visible when she moves or flexes, creating an uncanny geometric quality to her silhouette. The plating shows through thin or fitted clothing as hard lines beneath the surface.",
+    "posture_movement": "Economical and alert. Stands with weight distributed for rapid movement in any direction. Her head tracks sounds independently of where her eyes are looking — a behavioral tic from the cyberears' directional sensitivity. Moves with the controlled precision of someone trained to avoid wasted motion. When relaxed, there's still tension in her shoulders and hands.",
+    "clothing_style": "Tier 4 utilitarian — function over flash, built for the work. Black syntileather jacket with reinforced shoulders and sleeves, worn open most nights. Fitted dark gray thermal undershirt (helps regulate body temperature during nocturnal hours). Black tactical cargo pants with multiple sealed pockets for tools, ammunition, or data chips. Steel-toed boots, scuffed and well-maintained. A single silver bracelet on her left wrist — antique, possibly family — is the only personal jewelry. No visible corpo logos or affiliation markers. Minimal grooming products; her appearance is by necessity, not design."
+  },
+  "image_prompt": "cyberpunk bodyguard portrait, lean angular woman with visible brushed chrome cyberears mounted flush against skull, dark brown skin, sharp cheekbones, black braided hair pulled tight, dark eyes with predatory focus, subdermal armor plating creating subtle geometric distortions under pale skin visible through form-fitting dark undershirt, installation scarring at temples, pale callus tissue on knuckles, wearing worn black syntileather jacket and tactical cargo gear, nocturnal pallor, standing alert with shoulders tensed, neon glow from The Circuit visible in background casting blue and purple light, professional threat assessment posture, cinematic film noir cyberpunk lighting, sharp focus on facial features and augmentation details, photorealistic with slight hyperdetail on chrome surfaces --ar 2:3 --v 6"
 }

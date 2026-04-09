@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "The Conservatory, Meridian Core, near State and Monroe",
-  "description": "Demba is a heavyset man of late middle age who looks as though he was carved from something patient and enduring. His skin is very dark and deeply weathered from decades of fieldwork on decommissioned weather platforms and lake monitoring buoys — he has the look of a man who has spent a great deal of time outside in bad conditions. His hair is fully white and worn long, pulled back loosely, and he has a full beard he keeps trimmed to a point. He has no geneware modifications and minimal augmentation, which he is somewhat self-conscious about — 'I grew up before it was expected,' he says, with just enough humor to deflect the admission that he also slightly distrusts it. His clothes are always slightly out of fashion, always completely functional, often waterproof for no apparent reason.\n\nDemba has been at The Conservatory for twenty-two years and has outlasted four department heads, three rounds of corponation funding restructuring, and one very public battle with Arcturus over the suppression of lake toxicity data. He won that battle technically, in that his paper was eventually published, though the version that ran had twelve figures redacted. He keeps the uncensored original framed on his office wall facing inward. He is beloved by students who find his lectures dense but transformative, and is one of the few people in Meridian 88 who can speak with genuine authority about what the lake looked like before, during, and after the Lakeshore Crisis — which makes him either important or dangerous depending on who is asking.",
+  "description": "Demba is a heavyset man of late middle age who looks as though he was carved from something patient and enduring. His skin is very dark and deeply weathered from decades of fieldwork on decommissioned weather platforms and lake monitoring buoys — he has the look of a man who has spent a great deal of time outside in bad conditions. His hair is fully white and worn long, pulled back loosely, and he has a full beard he keeps trimmed to a point. He has no geneware modifications and minimal augmentation, which he is somewhat self-conscious about — 'I grew up before it was expected,' he says, with just enough humor to deflect the admission that he also slightly distrusts it. His clothes are always slightly out of fashion, always completely functional, often waterproof for no apparent reason.\n\nDemba has been at The Conservatory for twenty-two years and has outlasted four department heads, three rounds of corponation funding restructuring, and one very public battle with Arcturus over the suppression of lake toxicity data. He won that battle technically, in that his paper was eventually published, though the version that ran had twelve figures redacted. He keeps the uncensored original framed on his office wall facing inward. He is beloved by students who find his lectures dense but transformative, and is one of the few people in GLMZ who can speak with genuine authority about what the lake looked like before, during, and after the Lakeshore Crisis — which makes him either important or dangerous depending on who is asking.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -236,11 +236,33 @@
   "related_entities": [
     "The Conservatory",
     "Meridian Core",
-    "Meridian 88",
+    "GLMZ",
     "TESSERA PG-2 'Signature'",
     "Arcturus Defense Solutions",
     "Gravimetric Collapse Charge GCC-9",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Senegambian / Hungarian-Russian)",
+    "height_cm": 183,
+    "weight_kg": 98,
+    "build": "Heavyset and broad-shouldered, carrying weight with solidity rather than softness; the build of someone whose strength is functional and weathered rather than maintained. Thick through the torso, with the slightly thickened midsection of a man in his late sixties who doesn't prioritize vanity.",
+    "hair_color": "Pure white",
+    "hair_style": "Long, pulled back loosely into a low ponytail or braid, with some strands habitually escaping",
+    "hair_length": "Long (shoulder-length when loose)",
+    "eye_color": "Dark brown with faint amber-tinted retinal augmentation visible as a thin metallic sheen in bright light",
+    "skin_tone": "Very dark brown with deep undertones, heavily weathered and lined from decades of outdoor fieldwork",
+    "complexion": "Deeply lined face showing sun exposure and age with dignity; full white beard trimmed to a deliberate point; hands heavily weathered with calluses and stains from field equipment. Skin has a perpetually dry quality from years on water platforms. Minimal grooming vanity — functional and clean rather than refined.",
+    "distinguishing_marks": [
+      "Extensive sun damage across forehead, cheekbones, and forearms creating a weathered, creased appearance",
+      "Deep laugh lines around eyes and mouth from decades of outdoor work and teaching",
+      "Several small scars on hands and forearms from fieldwork equipment and weather platform maintenance",
+      "A thin, pale surgical scar along the left collarbone area where the subdermal sensor array was installed, usually hidden by clothing"
+    ],
+    "visible_augmentations": "Retinal overlay creates a faint amber-gold luminescence in both eyes under direct light — noticeable but not jarring, suggesting decades-old technology rather than cutting edge. The augmentation is visible mainly when he's concentrating or reviewing data (eyes focus slightly differently). Subdermal sensor array is not visible but subtle thermal variations along his left side sometimes create faint distortions in very hot environments.",
+    "posture_movement": "Moves with deliberate, economical motions — no wasted energy. Slightly forward-leaning posture from years of hunching over monitoring equipment and lab benches. Gestures are precise and purposeful when explaining concepts, with hands that move expressively when teaching but otherwise remain still. Walks with the confident, patient gait of someone who has spent decades navigating unstable platforms and rough terrain.",
+    "clothing_style": "Tier 3-4 Conservatory-affiliated. Functional, slightly dated technical wear: waterproof tactical jackets (often worn even indoors, out of habit), weathered field trousers with multiple pockets, reinforced boots suited for water work. Layers in neutral grays, dark blues, and earth tones. Occasionally wears a Conservatory ID badge on a frayed lanyard. Clothing shows signs of actual use rather than fashion — stains from field work, fabric thinned from repeated wear. His one concession to formality is a well-maintained, decades-old wool sweater he wears to faculty meetings. No jewelry except a faded fabric wristband with faint markings (possibly commemorative, possibly functional)."
+  },
+  "image_prompt": "Cyberpunk portrait of a 67-year-old West African-Eastern European man with long white hair pulled back in a ponytail and a precisely trimmed white beard, very dark weathered skin heavily lined from decades of outdoor fieldwork, dark brown eyes with subtle amber retinal augmentation visible as a faint metallic sheen, heavyset and broad-shouldered with a weathered, dignified presence. Dressed in functional waterproof tactical jacket and weathered field clothes in grays and earth tones, Conservatory ID badge visible, worn from real use not fashion. Surrounded by faint holographic climate data overlays and atmospheric readings floating in the air, suggesting active augmentation. Pose shows him concentrated and thoughtful, hands slightly raised as if explaining scientific concepts. Mood is serious, intellectual, slightly weary but undaunted. Lighting is cool overhead lab light mixed with soft amber glow from his augmented eyes. Background slightly blurred, suggesting research facility interior. Style: photorealistic cyberpunk, weathered and dignified, authentic rather than stylized. --ar 2:3 --v 6"
 }

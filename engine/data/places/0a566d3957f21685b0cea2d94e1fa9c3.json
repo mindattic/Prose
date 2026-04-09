@@ -57,8 +57,16 @@
     "Occasional Spire cultural scouts, observing what's coming next"
   ],
   "notable_locations": [
-    "The central flame column — biogas-fed, continuous, the room's soul and light source",
-    "Iben's tailor shop — the front, the mask, and a genuinely good place to buy a jacket"
+    {
+      "name": "The central flame column",
+      "description": "biogas-fed, continuous, the room's soul and light source",
+      "tags": []
+    },
+    {
+      "name": "Iben's tailor shop",
+      "description": "the front, the mask, and a genuinely good place to buy a jacket",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.8912,

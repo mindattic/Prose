@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Somadina Karlsen-Sow's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Somadina Karlsen-Sow's past shows up in GLMZ, carrying old grievances and new chrome",
     "A high-paying contract turns out to target someone Somadina Karlsen-Sow owes a personal debt to",
     "A former associate resurfaces with evidence that could destroy Somadina Karlsen-Sow's reputation — and a price for silence"
   ],
@@ -282,10 +282,31 @@
     "Arcturus Defense Solutions ARC-SL9 'Ghost Protocol'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Geartown",
     "Lazarus LX-2 'Lab Rat'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Lean and angular, with long limbs and minimal body fat. Muscular definition visible in shoulders and core from years of combat training and surgical precision work. No wasted mass.",
+    "hair_color": "Black with natural graying at temples",
+    "hair_style": "Kept short and practical, often slicked back or pulled into a tight braid for work",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and assessing",
+    "skin_tone": "Medium brown with warm undertones, weathered by stress and environmental exposure",
+    "complexion": "Sharp jawline, high cheekbones. Minimal grooming beyond functional maintenance—no cosmetics. Skin shows minor scarring from old burns and repeated medical procedures. Expression habitually composed, rarely shows emotion.",
+    "distinguishing_marks": [
+      "Thick surgical scar running down the left side of the neck from cortical implant removal, pale and raised tissue",
+      "Smaller scars across knuckles and forearms from field work and training",
+      "Faint burn marks on the left shoulder blade from an older incident"
+    ],
+    "visible_augmentations": "Full cybernetic replacement of right arm from shoulder joint. Brushed chrome plating with visible pneumatic actuators at elbow and wrist. No attempt to aestheticize or hide—purely functional design. The arm is noticeably stronger and faster than organic limbs; they move it with precision that suggests years of neural integration.",
+    "posture_movement": "Stands with weight balanced, shoulders level. Moves with deliberate efficiency—no wasted motion. Hands are still when not in use. When working or under stress, movements become even more economical and precise. Makes eye contact but without aggression; gaze is clinical and assessing.",
+    "clothing_style": "Tier 3-4 functional wear. Black synth-weave cargo pants with multiple pockets for equipment. Form-fitting gray undershirt beneath a reinforced tactical vest with medical patches and subtle armor plating. Worn black boots with non-slip soles rated for surgical environments and rough terrain. A long neutral-colored coat—often leather-effect synthetic—that allows concealment of medical kit and provides some ballistic resistance. Minimal jewelry; a simple wrist display for job communications. Everything is well-maintained but shows functional wear, not fashion concern."
+  },
+  "image_prompt": "Cyberpunk field medic portrait, tall nonbinary figure with West African and Scandinavian heritage, dark brown skin, sharp angular features, short black hair with gray at temples. Full chrome cybernetic right arm with visible pneumatic joints, sleek brushed metal finish, contrasting against lean muscular frame. Wearing tactical black and gray medical vest, synth-weave cargo pants, worn boots. Standing with surgical precision posture, dark eyes alert and assessing. Scar visible on left neck from cortical implant removal. Industrial Geartown background with neon-lit chop shop signage, machinery visible behind. Cool blue and amber lighting with slight grain, moody atmospheric smoke. Character design ref, 8k detail, --ar 2:3 --v 6"
 }

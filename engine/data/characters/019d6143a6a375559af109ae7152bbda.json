@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "University Spine — Meridian Core adjacent, Tessera-endowed Ethics Center (which they find ideologically compromising), near State and Monroe",
-  "description": "Przemysława goes by either half of their hyphenate depending on the audience — Achebe in the University Spine corridors, Karimova in their mother's neighborhood in Hamtramck Enclave — and has long since stopped finding this exhausting. They are of middling height with a stocky frame kept deliberately soft, pale-gold skin with warm undertones, and a cat tail mod they got in their late twenties that they've kept because their students find it disarming and they are not above strategic disarmament. The tail is dark brown with a white tip and they are mostly unaware of how expressively it moves when they are thinking hard.\n\nPrzemysława's research sits at the intersection of machine cognition, E.L.F. phenomenology, and what they call 'the ethics of digital personhood in ambiguous cases.' They are the most-cited scholar in their field in Meridian 88, which is a distinction that brings them speaking invitations, a Tessera-funded chair they didn't ask for, and a persistent sense that everyone is trying to get something from them. They are not wrong about this. They are a generous teacher who holds the line mercilessly on intellectual rigor, and they have been known to assign their own published papers with the instruction to find everything wrong with them.",
+  "description": "Przemysława goes by either half of their hyphenate depending on the audience — Achebe in the University Spine corridors, Karimova in their mother's neighborhood in Hamtramck Enclave — and has long since stopped finding this exhausting. They are of middling height with a stocky frame kept deliberately soft, pale-gold skin with warm undertones, and a cat tail mod they got in their late twenties that they've kept because their students find it disarming and they are not above strategic disarmament. The tail is dark brown with a white tip and they are mostly unaware of how expressively it moves when they are thinking hard.\n\nPrzemysława's research sits at the intersection of machine cognition, E.L.F. phenomenology, and what they call 'the ethics of digital personhood in ambiguous cases.' They are the most-cited scholar in their field in GLMZ, which is a distinction that brings them speaking invitations, a Tessera-funded chair they didn't ask for, and a persistent sense that everyone is trying to get something from them. They are not wrong about this. They are a generous teacher who holds the line mercilessly on intellectual rigor, and they have been known to assign their own published papers with the instruction to find everything wrong with them.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -62,7 +62,7 @@
   ],
   "narrative_function": "Expert consultant on E.L.F. personhood and AI rights; institutional power figure who can open or close doors; source of ethical complexity in any AI-related plotline",
   "augmentations": "Cosmetic cat tail (dark brown, white tip, fully articulated); high-bandwidth neural interface for direct academic network access; voice modulator (minor, corrects a stutter they've had since childhood)",
-  "daily_life": "Teaches two seminars per week, spends most other time writing or in consultations with entities — yes, entities — whose legal personhood status is currently before the Meridian 88 Municipal Compact; eats lunch alone on the Ethics Center roof whenever weather allows.",
+  "daily_life": "Teaches two seminars per week, spends most other time writing or in consultations with entities — yes, entities — whose legal personhood status is currently before the GLMZ Municipal Compact; eats lunch alone on the Ethics Center roof whenever weather allows.",
   "affiliation": "University Spine — Tessera-Endowed Chair in Digital Ethics (Tessera funding is a source of ongoing internal conflict); independent editorial board of the Journal of Cognition and Rights",
   "uses_facets": false,
   "narration_voice": "",
@@ -204,7 +204,7 @@
     "Hamtramck Enclave",
     "University Spine",
     "Meridian Core",
-    "Meridian 88",
+    "GLMZ",
     "The Fathom Line",
     "Tessera Corponation",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
@@ -212,5 +212,27 @@
     "The Pale Mile",
     "Gold"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Polish-Russian)",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Stocky and deliberately soft-bodied, carrying weight with deliberate acceptance rather than athleticism. Broad shoulders, thick torso, substantial presence without tension.",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Worn loose and somewhat undisciplined, often pulled back with whatever is at hand — a pen, a twisted cord, rarely anything professional",
+    "hair_length": "Medium (shoulder-length)",
+    "eye_color": "Hazel with subtle neural interface amber glow in low light",
+    "skin_tone": "Pale gold with warm undertones, Mediterranean-influenced despite Slavic heritage",
+    "complexion": "Fine-lined face showing habitual concentration furrow between brows; sharp cheekbones offset by soft jawline; minimal cosmetic maintenance; reading glasses worn on a lanyard more often than in pockets",
+    "distinguishing_marks": [
+      "Articulated cat tail mod visible at base of spine — dark brown with white tip, fully cybernetic, moves expressively during thought",
+      "Faint stutter-correction scar at left temporal lobe, visible only at certain angles under strong light",
+      "Neural interface ports at base of skull (small, brushed titanium, usually obscured by collar or hair)",
+      "A thin burn scar across the back of left hand — old, from dissertation-era lab incident"
+    ],
+    "visible_augmentations": "Fully articulated cosmetic cat tail (dark brown, white-tipped) extending roughly 60cm, controlled via neural implant, moves continuously during concentration. Subtle amber luminescence in irises when accessing academic networks (low-visibility unless in darkness). All other augmentations subcutaneous/internal.",
+    "posture_movement": "Tends to lean forward when listening, weight balanced on the balls of feet even while seated. The tail moves almost independently — curling, flicking, wrapping around chair legs or their own waist when deep in thought. Walks with purpose but no haste. Hands gesture frequently during conversation, particularly when teaching.",
+    "clothing_style": "Tier 2-3 academic blend: well-worn but quality pieces. Favors linen blazers in neutral tones, often with visible creasing from being sat upon while working. Durable black or dark denim. Expensive insole-embedded tech shoes (barely worn in visibly, very worn structurally). Layers against the Ethics Center's aggressive climate control. No visible corporate branding except for the University Spine pin on lecture blazers. Reads as someone who has access to resources but does not spend them on appearance."
+  },
+  "image_prompt": "A nonbinary person of Polish-Russian and West African heritage, age 47, with dark brown hair threaded with silver, pale gold skin with warm undertones, and hazel eyes wearing subtle neural interface glow. Stocky build, deliberately soft-bodied, wearing a rumpled linen blazer over dark layers. A fully articulated dark brown cybernetic cat tail with white tip extends from the base of their spine, frozen mid-curve in an expression of concentration. Set in a brutalist academic corridor with floor-to-ceiling windows overlooking the GLMZ, cool morning light, carrying a stack of papers, posture leaning forward thoughtfully. Cyberpunk academic aesthetic, dignified and intense, subtle technology integration, realistic proportions, 2226 near-future. --ar 2:3 --v 6"
 }

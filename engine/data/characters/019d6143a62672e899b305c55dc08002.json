@@ -179,5 +179,26 @@
     "SynapTech IrisBloom Ocular Color Modulator",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Armenian / Portuguese / West African",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Large-framed, softened by age but retaining underlying musculature beneath a padded torso and shoulders. The physical residue of forty years of manual labor, now settling into comfortable heaviness rather than decline.",
+    "hair_color": "White with traces of grey at the temples",
+    "hair_style": "Kept short and neat, swept back from the forehead",
+    "hair_length": "Short",
+    "eye_color": "Warm amber-brown, with visible color-shift lag and occasional glitch to pale green or grey",
+    "skin_tone": "Terracotta brown with warm undertones, darkened by decades of outdoor labor",
+    "complexion": "Deeply lined face — weathered leather texture across forehead and cheekbones. Jaw still defined beneath age. The white mustache is full, meticulously maintained, with slight curl at the ends. Skin shows sun damage and the creasing of someone who has spent four decades working outdoors. Age spots across the backs of his hands and forearms.",
+    "distinguishing_marks": [
+      "Thin white scar along the right side of his jaw, approximately 4 cm long, running from ear toward chin — old industrial accident",
+      "Notched wooden cane gripped in right hand, carved salvage wood covered in precise tally marks of unknown purpose",
+      "Callused hands with white nails, permanent staining on fingertips suggesting work with various materials — rust, concrete dust, chemical residue"
+    ],
+    "visible_augmentations": "Antique color-shifting irises that cycle with noticeable lag between amber-brown, pale green, and grey; occasional glitch causes momentary desynchronization. The geneware is decades old and the degradation is visible in the slight cloudiness of the iris periphery.",
+    "posture_movement": "Walks with deliberate care, using the carved cane not from weakness but from old hip injury. Stands with weight favoring the left leg. Moves slowly but with practiced economy — no wasted motion. Sits with attentive posture despite age, leaning forward slightly when listening. Maintains strong eye contact. Hands gesture thoughtfully when speaking, movements precise and unhurried.",
+    "clothing_style": "Tier 4 worker standard — practical and worn but clean and well-maintained. Canvas work pants in faded grey, multiple pockets with visible repair stitching. Long-sleeved thermal shirt in muted blue, sleeves pushed up to elbows. Over this, a heavy canvas vest with labor camp insignia and multiple tool loops, most carrying small objects (notebook, pen, something wrapped in cloth). Worn leather work boots, laced tight, kept functional through regular maintenance. A cloth cap, faded tan, sits on his head. No jewelry except a thin metal band on his left ring finger — plain, unadorned, decades old."
+  },
+  "image_prompt": "A weathered 71-year-old man of Armenian-Portuguese-West African heritage, warm terracotta skin deeply lined by decades of outdoor labor, standing in a labor camp courtyard at dusk. Large-framed but softened by age, wearing faded canvas work clothes and a heavy vest, leaning slightly on a hand-carved wooden cane covered in notch marks. His distinctive white mustache is meticulously maintained, his short white hair swept back. His eyes are an aging augmented geneware with glitching color-shift irises cycling between amber and pale green. Callused hands, deeply creased face, faint scar along the jaw. He wears an attentive expression, slightly forward-leaning posture suggesting he is listening intently. Muted industrial background with corrugated metal and concrete. Warm golden hour lighting casting long shadows. Realistic, dignified, weathered. Cyberpunk realism, no anime, natural aging, visible geneware degradation, tactile texture --ar 2:3 --v 6"
 }

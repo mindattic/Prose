@@ -43,14 +43,14 @@
   ],
   "opportunities": [
     "Data access — the Corridor's optical network sees everything, and that data has intelligence value beyond what Pellucid monetizes",
-    "Infrastructure expertise — understanding Pellucid's systems provides insight into the surveillance architecture being deployed across the GLM",
+    "Infrastructure expertise — understanding Pellucid's systems provides insight into the surveillance architecture being deployed across the GLMZ",
     "The residents' self-censorship creates a community that avoids conflict — which means genuine conflicts, when they occur, are suppressed rather than resolved, creating pressure points",
     "The optical network has physical limits — wavelengths, angles, and processing gaps that a sufficiently informed person could exploit"
   ],
   "story_hooks": [
     "A resident discovers that the optical network's data processing includes facial micro-expression analysis — not just recording behavior but predicting emotional states. The predictive model is being sold to Tessera for integration with NovaMind's cognitive profiling.",
     "Someone has figured out how to create optical dead zones in the Corridor — small spaces where the pellucid glass can't see. The dead zones are appearing and disappearing along Gratiot Avenue, and whoever is creating them is conducting activities in the gaps that leave no record.",
-    "The Gratiot Avenue Residents' Council has discovered that their recorded meetings are being used to train a Pellucid AI on community governance patterns. The AI's purpose is to develop an automated governance system that would replace elected councils across the GLM."
+    "The Gratiot Avenue Residents' Council has discovered that their recorded meetings are being used to train a Pellucid AI on community governance patterns. The AI's purpose is to develop an automated governance system that would replace elected councils across the GLMZ."
   ],
   "connections": {
     "adjacent_to": [
@@ -76,7 +76,7 @@
     },
     {
       "name": "The Reflection Garden",
-      "description": "A public park where every surface — benches, paths, water features — is pellucid glass. The most surveilled outdoor space in the GLM, marketed as the safest.",
+      "description": "A public park where every surface — benches, paths, water features — is pellucid glass. The most surveilled outdoor space in the GLMZ, marketed as the safest.",
       "tags": []
     },
     {

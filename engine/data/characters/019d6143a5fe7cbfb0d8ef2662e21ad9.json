@@ -174,5 +174,26 @@
     "Elena Vasquez-9",
     "Déjà Vu"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Polish-Eastern European",
+    "height_cm": 125,
+    "weight_kg": 24,
+    "build": "Slight and wiry, the lean frame of a child who eats irregularly but moves constantly. Her posture is alert, shoulders slightly forward as if perpetually ready to scatter.",
+    "hair_color": "Natural black with warm undertones",
+    "hair_style": "Close-cropped, no styling, maintained for practicality and speed",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, nearly black, with an unusual reflective quality that suggests constant processing",
+    "skin_tone": "Warm medium brown with an olive undertone that catches light, giving her a luminous quality despite poor nutrition",
+    "complexion": "Clean but weathered for her age, hands calloused from handling salvage and scrap. No visible acne or grooming marks — her face has the concentrated, worn clarity of a child managing survival.",
+    "distinguishing_marks": [
+      "Thin white scar on her right inner wrist, jagged, consistent with childhood street accident rather than intentional mark",
+      "Faint copper stains on her fingertips from handling wire and corroded circuitry, permanent discoloration in the creases",
+      "Small burn mark on the back of her left hand, healed, approximately the size of a cigarette end"
+    ],
+    "visible_augmentations": "None visible. No chrome, no optics, no subdermal plating. This is intentional — her invisibility is her asset.",
+    "posture_movement": "Moves with economical precision, minimal wasted motion. Stands with weight on her toes, ready to move. Eyes constantly tracking: people, exits, objects of value. Speaks rarely and quietly, but listens intently. When focused on a task or problem, her entire body goes still.",
+    "clothing_style": "Tier 5 salvage aesthetic: mismatched layers, all oversized and worn from previous owners. Cargo pants with multiple pockets (half-empty, half-full of trading items), a faded long-sleeve shirt under a vest made from old climbing harness webbing. Shoes are too large but wrapped tight with wire to stay on. Her only personal item: a length of braided copper wire worn as a bracelet, constantly twisted between her fingers."
+  },
+  "image_prompt": "A nine-year-old girl with close-cropped natural black hair and enormous dark brown eyes, warm-toned dark skin with an olive undertone that glows subtly. Slight, wiry build. Wearing oversized salvaged clothing: layered gray and brown fabrics, a harness-webbing vest, cargo pants taped at the ankles with copper wire. Copper stains on her fingertips. Alert, predatory stillness in her posture. Standing in a rain-slicked Tier 5 street at dusk, neon signage reflected in wet pavement behind her. Harsh cyan and amber lighting. Cyberpunk, gritty realism, street orphan protagonist, documentary photography style, shallow depth of field, rain-soaked urban decay, moody and determined expression --ar 2:3 --v 6"
 }

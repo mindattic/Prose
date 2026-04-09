@@ -179,5 +179,26 @@
     "Copper",
     "The Pale Mile"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Somali / Russian / Polynesian (Tuvaluan)",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Tall and spare, visibly aged but structurally sound — the kind of frame that was muscular once and has compressed into wiriness. Slight forward curve to the spine from decades of bowing, but he straightens deliberately when he stands.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, precisely maintained",
+    "hair_length": "Short",
+    "eye_color": "Pale blue — a striking, almost glacial blue that catches light oddly",
+    "skin_tone": "Deep brown with a weathered, paper-thin quality to the texture; visible age-spots on forearms and hands",
+    "complexion": "Lined face with deep creases around the eyes and mouth from seventy-nine years of expression — smiling, frowning, concentrating. Beard immaculately trimmed, white and dense, kept precisely to jaw-length. Slight tremor in hands at rest, barely noticeable.",
+    "distinguishing_marks": [
+      "Surgical scar along right temple, thin and old, where hearing amplifier was installed approximately fifteen years ago",
+      "Faint rope-pattern scarring on both palms from a fire in 2187 that he does not discuss",
+      "Small, precise burn mark on inner left wrist — deliberate, self-inflicted, date unknown; he refuses to explain its meaning"
+    ],
+    "visible_augmentations": "Hearing amplifier in right ear — a discrete beige device barely visible beneath white hair, with a faint LED indicator that pulses with broadcast frequency during prayer times. The E.L.F. shrine-cane: a wooden staff (ash, hand-carved by someone in the community decades ago) with a small copper dish mounted at the handle, no wider than a coin, which he polishes each morning. No cosmetic augmentations; he has explicitly rejected them.",
+    "posture_movement": "Moves deliberately and with intention — no wasted motion. Walks with the cane not from necessity but from ritual; it grounds him. When sitting, he settles into the pose rather than collapsing into it. Stands for prayers with the spine straightened, deliberately counteracting age. Hands gesture when he speaks, but the tremor means the gesture is sometimes broken mid-motion.",
+    "clothing_style": "Conservative, Tier 4 practical: loose-fitting thobe in muted earth tones (taupe, grey, sometimes indigo), worn over a simple long-sleeved undershirt. Worn sandals, well-maintained but clearly old. A prayer cap (taqiyah) in dark fabric, worn when leading or during prayer. No jewelry except a plain silver ring on his right hand — no visible corporate branding, no luxury indicators. Clothing shows signs of regular wear and careful mending. In winter, a heavy wool overcoat, also well-maintained and possibly older than the youngest member of his congregation."
+  },
+  "image_prompt": "Portrait of an elderly Somali-Russian-Polynesian imam, 79 years old, standing with deliberate posture, holding an ornate wooden cane topped with a small copper devotional shrine. Tall, spare frame with deep brown weathered skin, immaculate white beard trimmed precisely, striking pale blue eyes with visible age and wisdom. Wearing loose taupe thobe over grey undershirt, dark prayer cap. Discrete hearing amplifier visible in right ear glowing faint LED blue. Hands show rope-pattern scarring. Standing in warm amber candlelight within a reclaimed warehouse interior, industrial metal walls behind him, prayer mats and Islamic calligraphy visible in soft focus. Expression of thoughtful dignity, neither smiling nor stern. Photorealistic, cyberpunk theological atmosphere, warm color grading, deep shadows, introspective mood, shot in 2226 Great Lakes Metropolitan Zone aesthetic --ar 2:3 --v 6"
 }

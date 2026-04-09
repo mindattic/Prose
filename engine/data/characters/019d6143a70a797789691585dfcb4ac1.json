@@ -13,7 +13,7 @@
   "age": 22,
   "status": "active",
   "location": "Highland Park Autonomous Zone, sleeping in rotating crash spots, near Michigan Ave and Walton",
-  "description": "Tãmzin is wiry and perpetually in motion, the kind of person who sits cross-legged on surfaces not designed for sitting and who always seems to be angled slightly toward an exit. Their skin is a warm medium brown, decorated with hand-applied luminescent tattoos — not geneware, but UV-reactive ink applied in sessions they traded for or self-administered — that map constellations native to parts of the sky no longer visible through Meridian 88's light pollution. Cat ears in matte grey sit atop their head, a cosmetic mod they got at sixteen and have never regretted; they tend to press flat when Tãmzin is anxious. Their eyes are patterned with a radial fracture iris mod, deep amber cracked through with lines of pale gold, and they cycle through four colors of hair via a basic follicle-mod — currently a washed-out rust that fades to near-white at the tips.\n\nTãmzin's installations appear overnight on surfaces they have no permission to use: the underside of Ferrogate overpasses, the water-stained ceilings of underpasses in Highland Park, the blank flanks of corporate logistics buildings along the Blackpipe Corridor. The projectors are small, disguised, solar-trickle powered, and booby-trapped with data-noise payloads that corrupt the first attempt at a clean scan. The content is always the same thematic territory — the lake before the city, the people who lived where the towers now stand, animals that no longer exist — rendered in holographic depth that catches passersby off-guard at night. Tãmzin has been detained three times and released twice; the third detention record is sealed, which Tãmzin will not explain.",
+  "description": "Tãmzin is wiry and perpetually in motion, the kind of person who sits cross-legged on surfaces not designed for sitting and who always seems to be angled slightly toward an exit. Their skin is a warm medium brown, decorated with hand-applied luminescent tattoos — not geneware, but UV-reactive ink applied in sessions they traded for or self-administered — that map constellations native to parts of the sky no longer visible through GLMZ's light pollution. Cat ears in matte grey sit atop their head, a cosmetic mod they got at sixteen and have never regretted; they tend to press flat when Tãmzin is anxious. Their eyes are patterned with a radial fracture iris mod, deep amber cracked through with lines of pale gold, and they cycle through four colors of hair via a basic follicle-mod — currently a washed-out rust that fades to near-white at the tips.\n\nTãmzin's installations appear overnight on surfaces they have no permission to use: the underside of Ferrogate overpasses, the water-stained ceilings of underpasses in Highland Park, the blank flanks of corporate logistics buildings along the Blackpipe Corridor. The projectors are small, disguised, solar-trickle powered, and booby-trapped with data-noise payloads that corrupt the first attempt at a clean scan. The content is always the same thematic territory — the lake before the city, the people who lived where the towers now stand, animals that no longer exist — rendered in holographic depth that catches passersby off-guard at night. Tãmzin has been detained three times and released twice; the third detention record is sealed, which Tãmzin will not explain.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -175,7 +175,7 @@
   "related_entities": [
     "Highland Park Autonomous Zone",
     "Blackpipe Corridor",
-    "Meridian 88",
+    "GLMZ",
     "Ferrogate Transit",
     "Neurochemical Dispersal Grenade",
     "Palladian Construction",
@@ -186,5 +186,27 @@
     "Rust",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Ghanaian / Russian-Jewish)",
+    "height_cm": 168,
+    "weight_kg": 52,
+    "build": "Wiry and angular, all elbows and sharp shoulders; built for moving through tight spaces and climbing. Muscle definition comes from constant motion rather than intentional training.",
+    "hair_color": "Rust with white-blonde tips, cycled via follicle mod",
+    "hair_style": "Shoulder-length, usually unstyled and slightly matted; often pulled back with whatever's available",
+    "hair_length": "Medium",
+    "eye_color": "Deep amber with pale gold radial fracture pattern (iris mod)",
+    "skin_tone": "Warm medium brown with olive undertones",
+    "complexion": "Angular face with high cheekbones; skin shows signs of irregular sleep and poor nutrition—slight darkness under eyes, a few healing scratches from installation work. No significant acne or blemishing, but weathered by sun exposure and inconsistent skincare.",
+    "distinguishing_marks": [
+      "UV-reactive luminescent constellation tattoos across both shoulders and upper back, mapping extinct star patterns, visible only under UV light in faint cyan and violet",
+      "Faint scar on left inner wrist from self-administered geneware cosmetic procedure at age 16",
+      "Shallow burn mark on right forearm (2cm, pale) from projector component contact during installation",
+      "Small tattoo on inside of left ankle—a simple circular symbol, hand-poked style, barely darker than the surrounding skin"
+    ],
+    "visible_augmentations": "Matte grey cosmetic cat ears mounted via geneware integration at the temporal region, capable of flattening against skull when anxious; patterned iris modification visible in direct light (fractured amber/gold); cycled follicle color mod (current rust-to-white). Luminescent tattoos invisible in standard light.",
+    "posture_movement": "Restless and angled—sits cross-legged or perched on edges, rarely fully relaxed. Moves with efficient economy; capable of sudden speed and precision. Eyes constantly assess surroundings, especially exits and sightlines. Hands fidget with components or tools even when at rest. Cat ears twitch reactively with mood shifts.",
+    "clothing_style": "Tier 4-5 salvage aesthetic. Worn 5-panel cap (black, faded logo unidentifiable), oversized black military-surplus jacket with welded patches and tool loops, fitted grey thermal undershirt with burn holes. Cargo pants with reinforced knees and multiple pockets, cuffed at ankles over worn synthetic ankle boots with grip soles. Webbing belt rigged with component pouches and a small multi-tool. No jewelry except a loose beaded bracelet (salvaged). Clothing is functional, layered, and designed for climbing and rapid movement—not for style, though the aesthetic reads intentional."
+  },
+  "image_prompt": "Cyberpunk character portrait, nonbinary young adult with warm brown skin, washed-out rust hair fading to white tips at shoulder length, patterned fracture iris mod in amber and pale gold, matte grey cosmetic cat ears mounted at temples, angular wiry build. UV-reactive luminescent constellation tattoos across shoulders visible under blacklight. Wearing oversized black military-surplus jacket with welded patches, fitted grey thermal, cargo pants with reinforced knees, worn synthetic ankle boots. Sitting cross-legged in a metal underconstruction space, perched on an edge, hands adjusting small holographic projector components. Restless, sharp-eyed, angled toward an exit. Midnight urban setting with dim neon bleeding through grates, slight glow from UV tattoos. Cinematic, grimdark, high detail. --ar 2:3 --v 6"
 }

@@ -9,7 +9,7 @@
     "The Judge"
   ],
   "category": "pistol",
-  "description": "A sidearm that fires coded RF rounds which, upon penetrating the skin, broadcast an override signal to the target's neural interface that triggers a mandatory system lockdown. The lockdown disables voluntary motor control for 60 seconds while broadcasting the target's identity, location, and biometric status to law enforcement networks. Sterling-Nakamura developed it under contract with Meridian 88 governance bodies as a 'lawful compliance enforcement tool' — it is essentially a gun that arrests people by hijacking their cyberware. The round's RF signal uses an encryption key that only law enforcement neural interfaces can revoke, making the lockdown non-negotiable. Unaugmented individuals are unaffected by the RF component and experience only a low-velocity impact bruise.",
+  "description": "A sidearm that fires coded RF rounds which, upon penetrating the skin, broadcast an override signal to the target's neural interface that triggers a mandatory system lockdown. The lockdown disables voluntary motor control for 60 seconds while broadcasting the target's identity, location, and biometric status to law enforcement networks. Sterling-Nakamura developed it under contract with GLMZ governance bodies as a 'lawful compliance enforcement tool' — it is essentially a gun that arrests people by hijacking their cyberware. The round's RF signal uses an encryption key that only law enforcement neural interfaces can revoke, making the lockdown non-negotiable. Unaugmented individuals are unaffected by the RF component and experience only a low-velocity impact bruise.",
   "manufacturer": "STERLING-NAKAMURA",
   "tier_availability": "Tier 3+",
   "legality": "Issued — law enforcement only",
@@ -24,7 +24,7 @@
   "known_users": [],
   "story_hooks": [
     "Black market LOP-1 rounds have been reprogrammed to broadcast a different identity than the target's — someone is using compliance rounds to frame innocent people for crimes.",
-    "A vulnerability in the compliance signal encryption has been discovered that allows any RF transmitter to trigger the 60-second lockdown — every augmented person in Meridian 88 is potentially vulnerable."
+    "A vulnerability in the compliance signal encryption has been discovered that allows any RF transmitter to trigger the 60-second lockdown — every augmented person in GLMZ is potentially vulnerable."
   ],
   "ammunition_type": [],
   "tags": [

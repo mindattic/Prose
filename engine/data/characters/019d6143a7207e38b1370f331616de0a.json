@@ -258,5 +258,27 @@
     "The Pure Hand",
     "Lazarus Pharmaceutical Emetix-9 'Purge'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Oaxacan Mexican / Igbo Nigerian",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Tall and broad-shouldered, gone slightly stooped at the spine from untreated lower back injury. Still carries muscle density from decades of physical labor, but with the softening that comes with age and subsistence living. Hands are large, callused, capable—a laborer's hands that never fully retired.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, no styling beyond functional maintenance. Reveals the full architecture of her skull.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown (natural); left eye has faint luminescent quality in low light from retinal archive implant",
+    "skin_tone": "Deep brown, sun-darkened further by years in The Shelf's outdoor maintenance work",
+    "complexion": "Broad face with high cheekbones. Deeply lined around the eyes and mouth from sixty-seven years of expressive face-work and squinting into harsh light. Skin is weathered but well-maintained—cared for with intention. No makeup. A few age spots on her temples and jawline. Her resting expression defaults to neutrality, but warmth and coldness arrive in it like weather systems.",
+    "distinguishing_marks": [
+      "Faint surgical scar at the base of her skull, barely visible beneath close-cropped hair, roughly 3cm long, from neural damper installation",
+      "Small burn scar on the back of her left hand, shaped like a fingerprint, from a contractor-era incident she does not discuss",
+      "A thin white line along her right collarbone, old and pale, source unknown and unremarked upon",
+      "Her left eye pupil occasionally dilates asymmetrically when the retinal archive is in passive recording mode"
+    ],
+    "visible_augmentations": "Left eye shows minimal chrome—a faint silver threading at the iris margin visible only in direct light or at certain angles. The neural damper creates no visible marking. To a casual observer: an older woman with one slightly unusual eye. To someone who knows what to look for: a former contractor who never fully decommissioned.",
+    "posture_movement": "Moves with deliberate economy, each action measured and purposeful. Slight forward tilt in the shoulders from the spinal injury, but corrected through habit so it reads as attentiveness rather than pain. Her gait is steady, unhurried. She occupies space without claiming it—a learned skill from decades of being watched. When she sits, she settles completely, as if she has decided to be there. When she stands, there is always readiness beneath the stillness.",
+    "clothing_style": "Tier 4 practical—durable synthetics and salvaged natural fibers that prioritize function over appearance. Dark colors (charcoal, deep grey, black) that hide stains and read as authority without aggression. Loose-fitting work pants with reinforced pockets, worn boots with good tread, neutral tank tops or long-sleeved shirts depending on season. A heavy canvas coat, patched but well-maintained, worn most days. No jewelry except a single thin silver band on her right index finger—a contractor's identification ring she never removed. Clothing is clean but not pristine. She dresses like someone who will work before the day is done."
+  },
+  "image_prompt": "A 67-year-old West African-Mexican woman with deep brown skin, close-cropped white hair, and a broad, lined face expressing quiet authority and controlled patience. Tall, slightly stooped from old injury, wearing practical Tier 4 clothing—dark grey work shirt, worn canvas coat, sturdy boots. Standing in an indoor urban setting, a shared common area or workshop in a lower-tier residential block. Soft, overcast natural light from a window. Her left eye catches light with faint metallic threading—subtle retinal implant visible only at certain angles. Hands visible, callused and capable. Expression neutral but somehow warm, as if she is listening to something important. Cyberpunk noir aesthetic, gritty realism, emphasis on character and worn dignity, no exaggerated augmentations, strong mood of practical competence and suppressed intensity. --ar 2:3 --v 6"
 }

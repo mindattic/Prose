@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Vuk Jorgensen-Toure's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Vuk Jorgensen-Toure's past shows up in GLMZ, carrying old grievances and new chrome",
     "A Tier 4 executive offers Vuk Jorgensen-Toure a permanent position — the pay is obscene and the strings are invisible until they tighten",
     "A dead drop Vuk Jorgensen-Toure maintains is found and cleaned out — whoever did it now has leverage"
   ],
@@ -275,11 +275,33 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "Burden of Longitude",
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 178,
+    "weight_kg": 89,
+    "build": "Broad-shouldered and heavy-set, muscular beneath the weight — a physique built for durability rather than speed. Titanium mesh bone lacing gives her frame an almost architectural quality, visible as subtle rigidity in her posture.",
+    "hair_color": "Silver-grey with darker roots",
+    "hair_style": "Pulled back in a tight, functional braid",
+    "hair_length": "Medium",
+    "eye_color": "Grey with faint micro-circuitry visible at the iris edges",
+    "skin_tone": "Medium — warm undertone from West African heritage, weathered by age and exposure",
+    "complexion": "Lined face, high cheekbones, a slight asymmetry from old scar tissue. Unfinished quality to her features — angular, striking, unsentimental. Minimal grooming beyond function.",
+    "distinguishing_marks": [
+      "Thin vertical scar running from left temple to jawline, surgical precision suggests combat injury repair.",
+      "Burn marks across the inside of right forearm in a deliberate pattern — looks deliberate, possibly ritual scarification over old injury.",
+      "Faint chrome webbing visible at the base of her neck where synthetic lung systems interface with her circulatory system.",
+      "Deep-set calluses and old break lines across knuckles from decades of hands-on work and impact training."
+    ],
+    "visible_augmentations": "Polished chrome interface ports visible at the base of her neck where synthetic lung filtration system connects. Occasional faint luminescence visible through the ports when she breathes heavily. No attempt to hide or cosmetically modify — the chrome is deliberately visible, worn like a scar.",
+    "posture_movement": "Stands with weight distributed forward on the balls of her feet, shoulders slightly elevated — a ready stance she never quite relaxes from. Moves economically, no wasted motion. Breathing is audibly synthetic when exertion is high, a faint mechanical wheeze beneath organic effort.",
+    "clothing_style": "Tier 2 utilitarian — reinforced tactical jacket in matte black with internal pockets for tools and contracts. Worn cargo pants with cargo pockets and reinforced knees. Steel-toed boots, well-maintained but scuffed from field work. No jewelry. A neural link port is visible at her right temple, unmarked and unadorned. Her clothes are functional, durable, and completely devoid of status markers or aesthetics beyond practicality."
+  },
+  "image_prompt": "Cyberpunk character portrait, 60-year-old woman with Scandinavian-African heritage, silver-grey hair in tight braid, grey weathered eyes with micro-circuitry visible, broad muscular shoulders, medium skin tone with surgical scarring on left temple and burn marks on right forearm. Polished chrome interface ports visible at base of neck where synthetic lung system connects, faint luminescence. Black reinforced tactical jacket, cargo pants, steel-toed boots, no jewelry. Standing in ready stance at Crucible Square open-air market, neon storefronts and holographic signs in background, chrome and concrete aesthetic. Overhead lighting casting sharp shadows across her unfinished, striking face. Gritty, worn, no-nonsense presence. Close-up headshot to mid-torso, industrial cyberpunk noir mood, sharp focus, cool color grading with neon accents --ar 2:3 --v 6"
 }

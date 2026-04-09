@@ -62,7 +62,7 @@
   "narrative_function": "Ground-level information source with genuine community knowledge; potential ally or obstacle depending on player approach; represents the human cost of keeping faith in institutions",
   "augmentations": "Standard-issue subdermal comm implant; cosmetic bioluminescent freckle mod (regretted); no combat chrome",
   "daily_life": "Walks the same twelve-block circuit twice per shift, stopping at the same noodle cart for the same order at the same time every day. Files reports in longhand and then transcribes them — a double labor she can't explain to anyone.",
-  "affiliation": "Meridian 88 Metro Police, Gage Circuit Precinct 7",
+  "affiliation": "GLMZ Metro Police, Gage Circuit Precinct 7",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -226,5 +226,26 @@
     "Tessera Corponation",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Central Asian / South Asian",
+    "height_cm": 168,
+    "weight_kg": 71,
+    "build": "Compact and broad-shouldered with visible muscle density in her arms and core. Built like someone who has spent years in physical labor — efficient, no wasted mass, but strong. Her frame suggests containment rather than expansion.",
+    "hair_color": "Natural black",
+    "hair_style": "Tight coils, pinned and braided close to the scalp",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, unaugmented",
+    "skin_tone": "Deep umber with reddish undertones, darkens to nearly mahogany in direct sunlight",
+    "complexion": "Clear skin with visible cosmetic bioluminescent freckles across both cheekbones and the bridge of her nose — tiny points of soft blue-green light that pulse faintly with elevated heart rate. Her face is structured and serious, with a slight forward cant to her jaw that suggests listening. No facial hair. Minimal makeup; she doesn't appear to try. Her eyes are steady and patient in a way that reads as unnerving to most people.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles across both cheekbones and bridge of nose (cosmetic mod, regretted)",
+      "Small, barely visible scar on the left side of her jawline (hairline-thin, old)",
+      "Thin scar across the back of her right hand, faded white, consistent with a cut rather than impact trauma"
+    ],
+    "visible_augmentations": "None visible. The subdermal comm implant is invisible. The bioluminescent freckles are cosmetic and highly visible, but she wears them as a regretted modification rather than a proud augmentation.",
+    "posture_movement": "She stands still for long periods with her weight balanced evenly. When she moves, it is economical and unhurried — she does not gesture while talking. Her default expression is patient and slightly inward-focused, as if she is listening to something just beneath the ambient noise. She has the particular physical stillness of someone trained to observe without reacting. Her gaze settles on people for longer than is comfortable.",
+    "clothing_style": "Regulation GLMZ Metro Police uniform: dark blue cargo pants with reflective striping, standard-issue tactical boots (maintained but not polished), grey-blue uniform shirt under a heavier tactical vest with department insignia. Her regulation cap is standard-issue and worn daily. Off-duty: simple, practical Tier 3-4 wear — durable synthetic blend pants, understated hoodies, no visible branding. Everything she wears is functional and worn until it stops working. She does not accessorize."
+  },
+  "image_prompt": "Cyberpunk portrait of a 29-year-old Black African woman, deep umber skin with subtle reddish undertones, professional headshot style, standing in neutral pose. Her hair is black and pulled back in tight protective coils under a dark blue regulation police cap. Her most striking feature: soft bioluminescent freckles across both cheekbones and bridge of nose, pulsing faintly with blue-green light. Deep brown eyes, patient and unnerving. Her expression is serious and inward-focused, listening. She wears a GLMZ Metro Police uniform — dark tactical gear, reflective striping, grey-blue shirt, heavy tactical vest with department insignia. Compact, broad-shouldered build, visible muscle tone in arms. Shot in neon-lit precinct interior with cool blue and green ambient light that catches the bioluminescence of her freckles, casting subtle shadows across her jawline and cheekbones. Professional police department ID-style framing. Gritty, grounded cyberpunk aesthetic, no glamour, pure functionality. --ar 2:3 --v 6"
 }

@@ -255,5 +255,25 @@
     "Symbiont",
     "Nightlight"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Nigerian Nwokeafor / Russian Volkov)",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, with the hollow-chested, slightly sunken musculature of someone chronically sleep-deprived and nocturnal. Wiry rather than frail — capable of moving quickly through confined spaces.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Tied back in a loose, practical knot or stuffed under a Ferrogate cap during work shifts. Slightly unkempt when off-duty, suggesting minimal grooming investment.",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Pale silver with faint bioluminescence in low light (geneware modification, secondhand)",
+    "skin_tone": "Cool amber-brown, with underlying golden undertones",
+    "complexion": "Fine-boned face with high cheekbones and a slightly sharp jawline. Skin appears subtly fatigued — not poor condition, but bearing the toll of reversed circadian rhythm. Minimal facial hair, closely kept. Dark circles are a permanent feature. Expression often distant or thoughtful.",
+    "distinguishing_marks": [
+      "Faint cluster of old needle-track scars on inner left elbow (geneware installation site, now scarred over)",
+      "A thin white scar along his right temple, approximately 3cm long, running toward his hairline (origin unknown, carries it without comment)"
+    ],
+    "visible_augmentations": "Pale silver irises that emit a soft, steady glow in darkness or dim lighting — immediately noticeable and slightly unsettling. The glow intensifies when he concentrates. A subtle neural port is visible behind his left ear when his hair is pulled back: a small titanium contact plate, company-issued, barely larger than a coin.",
+    "posture_movement": "Moves with economical grace through crowded or confined spaces. Often stands very still, as if conserving energy. Blinks slowly and deliberately, a bird-like mannerism that suggests careful observation rather than engagement. Rarely makes sudden movements. His default posture is slightly hunched, the result of long hours in operator's seats.",
+    "clothing_style": "Ferrogate uniform during shifts: charcoal grey utility jacket with reflective trim, company badge clipped to chest, comfortable black cargo trousers, non-slip boots rated for platform work. Off-duty: dark jeans, thermal layers, oversized hoodies or a worn canvas field jacket in greyish-green. Aesthetic is Tier 2-3 working class — functional, durable, minimal ornamentation. No jewelry. His only visible accessory is a worn Ferrogate employee pin on his jacket collar."
+  },
+  "image_prompt": "A lean, fine-boned male transit operator in his early thirties, cool amber-brown skin with West African and Eastern European features, dark hair tied back, standing in the dim interior of a late-night train car. His most striking feature: pale silver irises that glow softly in the low light, creating an ethereal, almost nocturnal quality. He wears a charcoal Ferrogate uniform jacket with reflective trim and a neural port visible behind his left ear. His expression is distant and observant, eyes half-lidded in a slow blink. The background shows the blurred cityscape of the GLMZ sliding past train windows — abandoned industrial buildings and neon signs smeared into dreamlike streaks. Mood: introspective, nocturnal, slightly melancholic. Lighting: cool LED strips overhead casting sharp shadows, with his bioluminescent eyes as a secondary light source. Cyberpunk, photorealistic, moody, 2226 aesthetic. --ar 2:3 --v 6"
 }

@@ -176,5 +176,26 @@
     "ARCHIVE",
     "The Pale Mile"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Polynesian / Russian-Central Asian (Siosaia + Dzhafarov)",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Tall and angular, with the stretched leanness of someone undernourished by choice and circumstance. Long-limbed but not athletic — the frame of someone who moves deliberately, conserving effort.",
+    "hair_color": "Natural black, grayed at temples",
+    "hair_style": "Completely shaved, maintained with precision",
+    "hair_length": "None",
+    "eye_color": "Pale grey with visible fracture-line patterns (faint radial scarring from reversed cosmetic geneware)",
+    "skin_tone": "Warm brown-olive base, shifted ashen and desaturated from years of artificial light and recycled air",
+    "complexion": "Gaunt, with prominent cheekbones and jaw definition exaggerated by facial thinness. Skin is clear and almost institutional in its cleanliness — no stubble, no grit. The paleness is unnatural, almost clinical. Fine lines around eyes from squinting at handwritten documents.",
+    "distinguishing_marks": [
+      "Faint grid of thin neural-interface scarring running vertically along left temple, approximately 4cm width and 6cm height, where ports were sealed post-removal",
+      "Hairline fractures visible in sclera of both eyes creating web-like pattern, remnant of reversed cosmetic geneware",
+      "Small whitened scar on inner left wrist, approximately 2cm, location suggests medical extraction point"
+    ],
+    "visible_augmentations": "None visible. Hardware deliberately removed. Only evidence is the sealed port scarring and the eye geneware reversal he kept as a choice. No chrome, no LEDs, no subdermal plates — a deliberate absence that reads louder than presence.",
+    "posture_movement": "Moves with economical precision, as if each gesture is pre-calculated. Sits very still for long periods. Hands are steady and careful. Head tilts slightly when listening — old analyst habit of processing. Rarely makes unnecessary gestures. The posture of someone who has learned to take up minimal space and attention.",
+    "clothing_style": "Deliberately plain and well-maintained: neutral grey or black cotton-weave shirts, dark trousers of non-descript corporate utility cut, worn boots resoled multiple times. All clothing is scrupulously clean and pressed — the uniform of someone who has erased themselves but refuses to visually announce it. No logos, no gang colors, no tier markers. He dresses like someone trying not to be remembered, which paradoxically makes him memorable."
+  },
+  "image_prompt": "A tall, angular man in his early 40s with a completely shaved head and pale grey eyes bearing subtle fracture-line patterns, sitting in a dim underground chamber filled with handwritten ledgers and carved data-beads. His complexion is ashen from years without sunlight, warm brown-olive base drained to grey. Faint grid scars are visible on his left temple where neural ports were sealed. He wears clean, plain dark clothing maintained with obsessive care—grey shirt and dark trousers—appearing anachronistically pristine in a derelict sub-level station. The lighting is cold and artificial, casting sharp shadows across his gaunt face. Behind him are stacks of records, old paper, carved archival materials. His posture is precise and economical, hands steady as he handles a worn ledger. Cyberpunk noir, archival aesthetic, documentary photography style, industrial decay with human order imposing itself against entropy, cool color grading, shallow depth of field. --ar 2:3 --v 6"
 }

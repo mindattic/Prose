@@ -193,5 +193,26 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Uzbek-French / Nigerien-Danish",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and long-limbed with minimal subcutaneous fat; shoulders slightly rounded forward from decades of clinical posture over examination tables and bed-side work. Wiry musculature in forearms and hands from repetitive precise movements.",
+    "hair_color": "Dark brown, naturally graying at temples and crown (approximately 30% gray, uncolored)",
+    "hair_style": "High, tight bun secured with a brass clip showing patina and minor dents from two decades of use",
+    "hair_length": "Long (pinned up; would reach mid-back if loose)",
+    "eye_color": "Pale gray with hexagonal geneware pattern — tiny interlocking hexagons visible under direct light, geometric and precise, appearing almost like a circuit etched into the iris",
+    "skin_tone": "Tawny-brown with warm undertones; holds color well under artificial lighting; shows even, minimal freckling across bridge of nose and upper cheeks",
+    "complexion": "Weathered in the way of someone who spends long hours under fluorescent light and rarely sleeps enough; fine lines radiating from eye corners and around mouth; minimal makeup; thin-lipped, sharp cheekbones, angular jaw; skin texture slightly papery in places from chronic low-level chemical exposure (antiseptics, sterilizing agents)",
+    "distinguishing_marks": [
+      "Vaccination scar on left shoulder, old and pale, barely visible",
+      "Chemical burn marks on right index and middle fingers — pale, minimal scarring, from a pharmaceutical accident in her thirties",
+      "Small crescents of permanent discoloration along cuticle lines of both hands from years of repeated surgical scrubbing and iodine exposure"
+    ],
+    "visible_augmentations": "The hexagonal irises are visible under normal lighting at conversational distance; they catch light slightly differently than natural irises, creating a subtle geometric shimmer. No other augmentations are externally visible (the sub-dermal wrist stabilizers are internal and create only minor, barely-noticeable tightening in the wrist tendons during extremely fine motor movements).",
+    "posture_movement": "Characteristic forward lean from the hips; moves with economical precision, no wasted motion; hands are steady and deliberate even when tired; walks with a slight shuffle when exhausted (common after 18:00); maintains eye contact in a way that feels clinical rather than warm — observational rather than connective",
+    "clothing_style": "Tier 4 utilitarian; typically wearing a long-sleeved gray or navy scrub tunic (generic, well-worn, likely from a bulk wholesale supplier) layered over plain cotton undershirt; dark cargo pants with multiple pockets filled with supplies (swabs, gloves, a small light, pen); rubber-soled clinical clogs (white or dark gray, scuffed); a surgical mask hanging around her neck even when not in use. A faded denim overshirt hangs on a chair behind the clinic desk, rarely worn but available for warmth. No jewelry except the brass hair clip. Clothes show faint permanent stains from betadine, blood, saline — professionally clean but not new."
+  },
+  "image_prompt": "A tall, lean 44-year-old woman with tawny-brown skin, sharp cheekbones, and pale gray eyes containing intricate hexagonal geneware patterns visible in the iris. Dark hair streaked with gray, pulled into a tight high bun secured with a worn brass clip. She wears a plain navy scrub tunic over a cotton undershirt and dark cargo pants; rubber-soled clogs. She stands with a characteristic forward lean, posture slightly stooped from decades of clinical work. Her hands are steady but show faint chemical staining at the cuticles. The setting is a modest walk-in clinic interior lit by harsh fluorescent overhead lights; shelves of medical supplies, worn linoleum floor. Her expression is calm, professional, slightly exhausted — the look of someone rationing warmth. Cyberpunk medical worker, documentary realism, clinical precision, worn fabric textures, 2226 Great Lakes Metropolitan Zone, cool fluorescent lighting with warm shadow detail, hyperrealistic medical environment --ar 2:3 --v 6"
 }

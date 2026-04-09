@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Grand Corridor — operates from a rented stall near the junction of three transit lines, near Fullerton and Damen",
-  "description": "Rúaidhrí is rangy and perpetually in motion, with warm amber-brown skin, a scatter of freckles across their nose and cheekbones, and hair that color-shifts between deep burgundy and burnt orange on a slow cycle — a mid-tier cosmetic mod they maintain scrupulously even when they can't afford other things. They have the kind of face that reads as younger than it is until they make eye contact, at which point it reads as older. They wear layers even in the heat, always — a practical necessity, since Grand Corridor's climate control is notoriously unreliable, but also a signature.\n\nThey have been guiding pilgrims through Meridian 88's informal spiritual circuit for six years: the six major E.L.F. shrines, the chrome prayer temples, the memory walls, the three sites considered genuinely haunted by consensus. They are agnostic about what any of it means and absolutely committed to making sure people arrive safely, are treated fairly, and understand what they're walking into. The dream interpretation service is separate and newer — it began when a pilgrim described a recurring dream on a long walking route and Rúaidhrí found themselves making connections they hadn't expected. Word spread. They are still not sure they believe in any of it, but they have a disconcerting hit rate.",
+  "description": "Rúaidhrí is rangy and perpetually in motion, with warm amber-brown skin, a scatter of freckles across their nose and cheekbones, and hair that color-shifts between deep burgundy and burnt orange on a slow cycle — a mid-tier cosmetic mod they maintain scrupulously even when they can't afford other things. They have the kind of face that reads as younger than it is until they make eye contact, at which point it reads as older. They wear layers even in the heat, always — a practical necessity, since Grand Corridor's climate control is notoriously unreliable, but also a signature.\n\nThey have been guiding pilgrims through GLMZ's informal spiritual circuit for six years: the six major E.L.F. shrines, the chrome prayer temples, the memory walls, the three sites considered genuinely haunted by consensus. They are agnostic about what any of it means and absolutely committed to making sure people arrive safely, are treated fairly, and understand what they're walking into. The dream interpretation service is separate and newer — it began when a pilgrim described a recurring dream on a long walking route and Rúaidhrí found themselves making connections they hadn't expected. Word spread. They are still not sure they believe in any of it, but they have a disconcerting hit rate.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -169,7 +169,7 @@
   "related_entities": [
     "Grand Corridor",
     "Jefferson Switch",
-    "Meridian 88",
+    "GLMZ",
     "ARCHIVE",
     "TESSERA PG-2 'Signature'",
     "ShieldTech SB-3 'Groundstrike'",
@@ -180,5 +180,26 @@
     "Nesting Doll",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Irish / West African / South Indian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Rangy and lean with wiry muscle definition from constant walking; long-limbed with a slightly forward-leaning posture from years of navigating crowded corridors and uneven shrine grounds",
+    "hair_color": "Color-shifting cycle between deep burgundy and burnt orange (cosmetic geneware maintained on 72-hour cycle)",
+    "hair_style": "Shoulder-length, frequently braided or half-pinned with practical clips; texture appears naturally wavy with slight curl",
+    "hair_length": "Medium",
+    "eye_color": "Warm amber-brown with a slight ring of darker brown at the iris",
+    "skin_tone": "Warm amber-brown with moderate saturation, grounded in mixed West African and South Indian heritage",
+    "complexion": "Scattered freckles across the nose and high cheekbones; face reads young until direct eye contact, then shifts to something older and more weathered; skin shows minor sun damage and occasional dehydration lines from long indoor/outdoor transitions in the GLMZ climate",
+    "distinguishing_marks": [
+      "Thin scar along the right temple, barely visible, possibly from early augmentation work",
+      "Callused palms and finger pads from years of hand-drawing route maps and handling pilgrim documentation",
+      "Faint discoloration around both knees where flexible brace interface sits, barely noticeable beneath clothing"
+    ],
+    "visible_augmentations": "Color-shifting hair is the primary visible mod — noticeably artificial in its precision and cycle consistency. Lightweight flexible knee braces visible only when sitting or if clothing shifts; they appear as thin synthetic material along the inner knee, matte-finish, nearly skin-tone matched but clearly not organic.",
+    "posture_movement": "Perpetually in motion even when stationary — fidgets with maps, adjusts layers, scans surroundings. Walks with a measured, efficient pace that prioritizes even weight distribution across both knees; movement is economical but not rushed. Eye contact is deliberate and sustained, which contrasts with their otherwise fidgety energy.",
+    "clothing_style": "Tier 3 practical layering; typically wears a thin base layer (thermal-regulating synth-cotton blend), a mid-weight overshirt or jacket, and a long-line utility vest with hand-sewn pockets for maps and offerings. Fabrics are durable but show wear; colors tend toward earth tones and muted jewel tones that complement the shifting hair. Feet are always in reliable boots, laced tight, worn smooth from constant use. They maintain these pieces meticulously despite limited Φ, treating them as tools."
+  },
+  "image_prompt": "A nonbinary figure with warm amber-brown skin and scattered freckles, shoulder-length hair cycling between deep burgundy and burnt orange with a slight wave, standing in a crowded futuristic transit corridor. They wear layered Tier 3 utilitarian clothing—thermal base layer, overshirt, and a long utility vest with visible hand-sewn pockets, all in earth and muted jewel tones. Hand-drawn maps visible in their vest, worn reliable boots laced tight. Their posture is perpetually in motion, fidgeting with materials, with steady amber-brown eyes that read simultaneously young and ancient. Thin barely-visible knee braces visible at the inner knee, matte synthetic finish. Grand Corridor setting with notoriously flickering climate-control lighting, neon shrine signs reflecting off chrome surfaces, warm practical ambiance, documentary-style cyberpunk realism, shallow depth of field focusing on their face and hands --ar 2:3 --v 6"
 }

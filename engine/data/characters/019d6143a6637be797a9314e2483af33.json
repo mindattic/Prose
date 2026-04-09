@@ -28,7 +28,7 @@
       "that they have been constructing meaning for others as a way to avoid constructing it for themselves"
     ],
     "core_desires": [
-      "to map every spiritually significant location in Meridian 88 before it's demolished or forgotten",
+      "to map every spiritually significant location in GLMZ before it's demolished or forgotten",
       "to be genuinely companioned — to walk the circuit once with someone who will stay"
     ],
     "coping_mechanisms": [
@@ -192,5 +192,26 @@
     "Steel",
     "Chicago"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Nigerian / Russian)",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Lean and tall with the wiry musculature of someone who walks 20+ km weekly; shoulders slightly rounded from decades of carrying offerings and ceremonial items; core strength evident despite apparent fragility",
+    "hair_color": "Natural black with silver streaking at temples",
+    "hair_style": "Voluminous natural crown worn loose and high; eleven years of growth creating dense, textured volume; small copper rings threaded throughout at irregular intervals",
+    "hair_length": "Long (shoulder-length and beyond)",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Deep brown with undertones of rust and ochre; weathered from consistent outdoor exposure",
+    "complexion": "Lined face showing sun damage and age with dignity; prominent cheekbones; strong jawline; minimal grooming beyond practical maintenance; skin texture rough from weather and time",
+    "distinguishing_marks": [
+      "Cat ears (geneware, deep brown with tufted tips) set naturally on scalp, appearing as seamless anatomical feature rather than obvious modification",
+      "Fine network of white scars across knuckles and palms from years of shrine maintenance work",
+      "Faint burn marks on left forearm (2-inch area, pale against dark skin) from old industrial accident, treated with practical indifference"
+    ],
+    "visible_augmentations": "Cat ears only — functional geneware modification that reads as natural feline anatomy. No visible chrome or subdermal implants.",
+    "posture_movement": "Upright, economical gait with no wasted motion; movements deliberate and unhurried; tendency to pause and listen before proceeding; hands often resting open at sides or folded during contemplation; walks with slight forward lean as if perpetually attending to something ahead on the path",
+    "clothing_style": "Tier 4 utilitarian spiritual practitioner aesthetic: heavy canvas jacket (faded indigo, embroidered with E.L.F. symbols by hand) worn over layered base clothes; practical cargo pants (weathered grey, multiple pockets for offerings and mapping tools); legendary steel-toed boots (scuffed black leather, twice-resoled, covered in hand-painted shrine sigils in gold and white acrylic); worn leather satchel for maps and offerings; copper jewelry beyond hair rings (wrist cuff, simple pendant). Clothes show age and repair rather than decay — well-maintained through intention rather than expense."
+  },
+  "image_prompt": "Tall nonbinary spiritual guide with deep brown skin and natural black hair woven with copper rings, cat ears (geneware, tufted brown feline features), wearing faded indigo canvas jacket embroidered with glowing E.L.F. sigils, practical grey cargo pants, legendary scuffed steel-toed boots covered in gold-painted shrine symbols, hand-drawn map visible in worn leather satchel. Cyberpunk spiritual practitioner, standing in contemplative upright posture at dawn near industrial transit node, soft golden hour light catching copper hair rings and boot details. Weathered face with quiet authority, expression listening-forward. Nordpark Sanctuary aesthetic, urban shrine location with data-stream vines and transit infrastructure in soft-focus background. Gritty realism, spiritual solemnity, practical grit. --ar 2:3 --v 6"
 }

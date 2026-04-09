@@ -267,5 +267,25 @@
     "The Coffin Nails",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polish",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Large-framed, broad shoulders now sloped with age, substantial belly, overall softness from sixty-two years and a life spent standing behind a barber chair. Despite the weight, his hands remain lean and muscular — the hands of a craftsman.",
+    "hair_color": "Grey",
+    "hair_style": "Close-cropped, neatly maintained",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Very dark with warm undertone",
+    "complexion": "Weathered but well-maintained, lines around eyes from forty years of focus-work and squinting at mirrors. Neat, close-trimmed grey beard touching up daily. Skin shows the texture of age and sun exposure but is clean and carefully groomed.",
+    "distinguishing_marks": [
+      "Calloused fingertips and flat-filed nails across both hands from four decades of blade work.",
+      "Fine network of small scars across knuckles consistent with occupational hazard exposure."
+    ],
+    "visible_augmentations": "Dark grey geneware cat tail, approximately 60-70cm in length, extends from base of spine. Tail is fully articulate, curls around his ankle or flicks slowly when thinking — visible whether tucked into trousers or left loose.",
+    "posture_movement": "Stands with weight distributed evenly, moves slowly and economically. Hands gesture frequently and deliberately — a man used to precise, careful work. When listening, his attention is complete; his tail becomes his outlet for nervous energy or contemplation, curling and uncurling in slow, meditative loops.",
+    "clothing_style": "Tier 3-4 working-class pragmatism. Typically wears fitted linen or cotton shirts (pastels, earth tones, occasionally bold prints), dark work trousers with deep pockets, canvas apron with multiple tool pockets worn at the shop. Soft-soled shoes built for standing. A simple wristwatch, possibly vintage. No corporate branding. Clothes are clean, well-maintained, chosen for durability and comfort rather than fashion. Small personal touches: a worn cloth bracelet, possibly a keepsake."
+  },
+  "image_prompt": "A 62-year-old West African-Polish barber with very dark warm-toned skin, close-cropped grey hair, and a neat grey beard, standing in his small cluttered barbershop wearing a fitted earth-toned linen shirt and dark work trousers. His most striking feature is a dark grey geneware cat tail extending from his spine, curling around his ankle. His hands are noticeably skilled and calloused, resting on a vintage barber chair. The shop is cramped and layered with forty years of history: faded photographs on walls, old clipper brand stickers, an ELF shrine made from a first-generation clipper chassis with incense holders soldered to it. Warm, intimate lighting from practical shop fixtures. Soft, contemplative mood. Cyberpunk aesthetic grounded in blue-collar reality, Mexicantown Libre neighborhood feel. Shallow depth of field focusing on his face and hands. --ar 2:3 --v 6"
 }

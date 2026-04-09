@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Milwaukee and North Ave",
-  "description": "Halima Gutierrez-Asante is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 23, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a saboteur out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nHalima Gutierrez-Asante operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Halima Gutierrez-Asante is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 23, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a saboteur out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nHalima Gutierrez-Asante operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.77,
@@ -273,10 +273,32 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Hispanic (Latin American)",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Tall and rawboned — lean and efficient rather than undernourished. Long muscle definition in arms and legs suggests functional strength over bulk. Angular shoulders, narrow through the hips. The kind of frame that moves well in confined spaces.",
+    "hair_color": "Black with natural dark brown undertones",
+    "hair_style": "Pulled back tight, usually in a single braid or wrapped close to the scalp for practical reasons",
+    "hair_length": "Medium — shoulder-length when unbound, but habitually restrained",
+    "eye_color": "Dark brown, natural — no visible augmentation",
+    "skin_tone": "Deep warm brown with slight ashy undertone — reflects mixed West African and Central American heritage",
+    "complexion": "Unfinished-looking face with high cheekbones and a sharp jawline. Skin is clear but bears minor marks of hard living — small scars on chin and left temple, perpetually tired around the eyes. Minimal grooming beyond function: no makeup, no jewelry except a simple steel ear stud on left ear.",
+    "distinguishing_marks": [
+      "Linear scar across left temple, approximately 4cm, white and surgical-looking — old injury, well-healed",
+      "Small puncture-mark scarring at base of skull where neural jack integrates, dark red and slightly raised",
+      "Thin white scar on right cheekbone, diagonal, approximately 2cm — knife work, deliberately left uncovered",
+      "Network of faint subdermal chrome visible beneath skin of both forearms in geometric patterns — weapon mount architecture, visible as slight metallic sheen under flexed skin"
+    ],
+    "visible_augmentations": "Subdermal weapon mounts visible in both forearms as geometric chrome patterns beneath skin, most prominent when arms are tensed or angled in certain light. Base-of-skull neural interface jack visible as a port roughly the size of a thumbnail, dark red and slightly proud of the skin surface. No cosmetic plating or attempt to conceal either augmentation.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward, head level. Walk is steady and low-center-gravity, weight distributed for balance. In repose, jaw is slightly tight, eyes tracking. Default state suggests controlled readiness rather than relaxation. Hands rest with fingers naturally curled, never fully open.",
+    "clothing_style": "Tier 3-4 utilitarian. Favors dark technical fabrics — black or dark grey cargo pants with reinforced pockets and subdermal-compatible sleeve design. Fitted long-sleeve compression shirts or modified jackets that don't restrict forearm mobility. Steel-toed boots with good ankle support, laces kept tight. Outer layers are functional: a worn grey synth-leather jacket or industrial coveralls depending on the work. No corpo logos. No bright colors. Everything is built for movement and work, not presentation. Wears a battered smartwatch on left wrist — vintage model, clearly maintained, no display of Φ status."
+  },
+  "image_prompt": "cyberpunk portrait of a 23-year-old woman with West African and Hispanic features, tall and rawboned build, deep warm brown skin, black hair pulled back tight, sharp angular face with high cheekbones, striking rather than beautiful, dark tired eyes. Visible subdermal chrome weapon mounts in forearms showing geometric metallic patterns beneath skin, neural interface jack visible at base of skull. Wearing dark grey fitted compression shirt and technical cargo pants, black steel-toed boots, worn synth-leather jacket. Posed with controlled readiness, hands slightly curled. Steamvent Alley background — industrial geothermal pipes, chemical haze, neon warning signs reflecting off wet metal. Moody cyan and amber lighting, shadows emphasizing scar tissue and chrome. Gritty, documentary-style realism. --ar 2:3 --v 6"
 }

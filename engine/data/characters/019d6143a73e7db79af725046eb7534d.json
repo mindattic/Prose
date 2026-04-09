@@ -185,7 +185,7 @@
   "registered_firearms": [],
   "related_entities": [
     "Benton Divide",
-    "Meridian 88",
+    "GLMZ",
     "The Narrows Compact",
     "Warm Wire, Small Hand",
     "Palladian Construction",
@@ -196,5 +196,27 @@
     "Iron",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Northern European (Polish-Danish)",
+    "height_cm": 162,
+    "weight_kg": 58,
+    "build": "Compact and wiry with functional muscle; shoulders slightly broad from manual work, no wasted mass — the frame of someone who moves efficiently through tight spaces",
+    "hair_color": "Naturally dark brown with cosmetic color-shift mod; currently set to matte charcoal but shifts involuntarily to citrus-orange under stress",
+    "hair_style": "Cropped close to scalp, practical and low-maintenance; mod circuitry barely visible at the nape",
+    "hair_length": "Short",
+    "eye_color": "Left eye augmented with warm amber LED glow during low-light optical engagement; right eye natural warm brown",
+    "skin_tone": "Warm medium-brown complexion with subtle golden undertones from Ghanaian heritage, slightly paler on forearms from work gloves",
+    "complexion": "Angular facial structure with high cheekbones and a square jaw; minimal facial hair; skin shows minor scarring on knuckles and one faint burn mark on left temple from early electrical work; minimal grooming beyond practical necessity",
+    "distinguishing_marks": [
+      "Faint horizontal burn scar on left temple, approximately 3cm, pale against skin tone",
+      "Callused knuckles on both hands with embedded tool-work scarring",
+      "Thin white scar running along right forearm from wrist to elbow, poorly healed — old injury",
+      "Small dark birthmark on left collarbone, frequently visible due to sleeveless work tops"
+    ],
+    "visible_augmentations": "Left eye shows faint amber LED activation ring during use; hair mod circuitry visible as thin silver tracery at base of skull when hair is wet; color-shift capability is immediately apparent when stress-activated",
+    "posture_movement": "Moves with economical precision, minimal wasted motion; often stands with hands ready or already engaged with tools; leans against walls and doorframes in conversation as if calculating load-bearing; rarely sits fully — perches or stands, ready to respond to building needs",
+    "clothing_style": "Tier 4 utilitarian wear with visible wear and repair patches; canvas cargo pants with tool loops and grease stains; sleeveless or short-sleeved tops layered over a faded thermal shirt; steel-toed work boots, left one with visible duct tape repair; a heavy canvas apron in charcoal, pockets worn soft from constant tool access; durable polymer watch with illuminated face; no jewelry beyond a worn steel ring on left middle finger (functional — doubles as a nut key)"
+  },
+  "image_prompt": "portrait of a nonbinary building superintendent, early 30s, compact wiry frame, warm medium-brown skin with angular Polish-Scandinavian facial features, cropped dark hair with faint silver circuitry visible at nape, striking mismatched eyes — one with subtle amber LED glow from optical augmentation, the other warm brown, faint scar on left temple, weathered hands with tool calluses, wearing sleeveless work tank over thermal base layer, heavy canvas work apron, steel-toed boots, practical utilitarian aesthetic, Tier 4 working class worn patina, basement workshop lighting with cool fluorescents casting shadows, gritty realism, documentary photography style, grounded cyberpunk, standing in front of maintenance panels and pipe work, focused composed expression, shot from slightly below eye level --ar 2:3 --v 6"
 }

@@ -219,5 +219,26 @@
     "The Pale Mile",
     "Gold"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Melanesian",
+    "height_cm": 168,
+    "weight_kg": 61,
+    "build": "Lean and angular, with the efficient frame of someone who moves constantly through cramped spaces. Defined shoulders and wrists from years of fine motor work at terminals.",
+    "hair_color": "Natural dark brown with bioluminescent filament accents in gold and pale green",
+    "hair_style": "Large natural cloud/afro style, densely textured, intentionally voluminous. Filaments are woven throughout and activate in low-light environments.",
+    "hair_length": "Long (approximately 20cm diameter cloud)",
+    "eye_color": "Amber with geometric pattern overlays (iris mods) that slowly rotate and shift between amber and black, especially when concentrating",
+    "skin_tone": "Light brown with warm undertones, melanin-rich complexion reflecting West African and Melanesian ancestry",
+    "complexion": "Sharp, angular facial features with high cheekbones and a pointed chin. Skin is clear and well-maintained despite market-level living conditions. They have a habit of pursed-lipped focus when problem-solving.",
+    "distinguishing_marks": [
+      "Fine hairline scar running 3cm along the left temple, likely from old hardware damage or accident",
+      "Small circular burn mark on the inner right wrist (2cm diameter), characteristic of soldering work gone wrong",
+      "Faint circuit-pattern tattoo on the back of both hands in black ink — appears to be E.L.F. sigil notation rather than purely aesthetic"
+    ],
+    "visible_augmentations": "Bioluminescent hair filaments (gold and pale green, visible and functional). Geometric iris pattern mods visible in both eyes, rotating slowly during concentration. No visible external chrome or subdermal plating; augmentations are primarily sensory/cosmetic and neural.",
+    "posture_movement": "Perpetually in motion — hands gesture constantly while speaking, fingers drum on surfaces when thinking. They move through tight spaces with practiced efficiency, rarely still for more than a few seconds. Leans into conversations, eyes tracking multiple points of interest simultaneously.",
+    "clothing_style": "Tier 3 tech-market utilitarian. Multiple layered vests (usually 2-3) in dark grays and blacks with heavy pocket saturation. Underneath: fitted mesh shirts with visible thermal regulation threading. Worn cargo pants with utility loops and clips for small devices. Scuffed modular boots with reinforced heel (for balance in standing markets). No corporate branding; favors independent maker brands and unmarked functional wear. Several small pinned badges on vest fronts — E.L.F. community markers, Solder Lane Compact insignia."
+  },
+  "image_prompt": "Cyberpunk portrait of a nonbinary figure with light brown skin and Melanesian-West African features, sharp cheekbones, pointed chin. Glowing bioluminescent hair in gold and pale green filaments woven through a large natural cloud/afro hairstyle. Eyes with slowly rotating geometric amber and black iris pattern mods. Wearing multiple layered dark gray utility vests over mesh undershirt, every pocket filled and visible circuitry tattoos on both hands. Hands raised in mid-gesture, fingers splayed. Standing in a low-light tech market stall with neon market signage in background, warm amber and cool green lighting reflecting off equipment. Ethereal glow from hair filaments creating soft luminescence in shadows. Hyperdetailed cyberpunk aesthetic, utilitarian street-level tech broker, intense focus expression. Professional product photography meets street portraiture. --ar 2:3 --v 6"
 }

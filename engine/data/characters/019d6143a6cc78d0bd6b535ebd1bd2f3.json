@@ -232,5 +232,27 @@
     "Tin Man",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Greek",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Lanky and angular—all elbows and long neck, with minimal muscle mass but functional lean strength from years of pushing a loaded cart. Chest slightly sunken from occupational posture.",
+    "hair_color": "Dark brown with premature graying at temples",
+    "hair_style": "Short, kept practical and uneven—self-trimmed with whatever sharp tool is handy",
+    "hair_length": "Short",
+    "eye_color": "Vivid coral-pink iris (suspected low-grade geneware mod, though he claims natural)",
+    "skin_tone": "Warm medium brown, ashy and weathered",
+    "complexion": "Weathered and dust-marked. Chronic particulate exposure has left fine gray residue in skin creases around his neck and hairline. Deep laugh lines around his mouth. Perpetual five o'clock shadow. Hands stained with rust and circuit-board residue that never fully washes out.",
+    "distinguishing_marks": [
+      "Fine gray dust permanently embedded in the creases of his neck from Geartown recycling corridor particulate exposure",
+      "A jagged burn scar across the outer edge of his left forearm, roughly 8cm long, from a salvage accident involving a still-hot chassis component",
+      "Calloused fingertips and palms from constant handling of sharp metal edges and scrap",
+      "Ink tattoo on his inner left wrist—a simple three-line mark in a style he won't explain, faded to pale gray from age and sun exposure"
+    ],
+    "visible_augmentations": "Retractable keratin-reinforced claws visible when extended from fingertips—ivory-white, slightly translucent, sharp enough to score soft metals. When retracted, barely visible as slight ridges under the nail beds. The coral-pink irises are immediately striking and read as deliberately modified despite his insistence otherwise.",
+    "posture_movement": "Moves with long, loose strides—economical but unhurried. Often has one hand resting on his cart or gesturing mid-story. His default posture at rest is slightly forward-leaning, as if perpetually in the middle of explaining something. Laughs with his whole body, shoulders shaking. Head tilts when listening—an unconscious habit that makes him appear genuinely interested.",
+    "clothing_style": "Tier 4 working-class scrap merchant. Faded olive-drab canvas pants with deep pockets reinforced with grey stitching, perpetually spotted with rust stains. Layers: a thin thermal base layer visible at the collar under a canvas shirt (khaki, three sizes too large—practical for moving around the cart), topped with a weathered brown synthetic-leather vest studded with random toggle closures and loops for hanging tools. No logos. Worn grey-rubber-soled work boots with visible toe reinforcement. A faded red cloth headwrap tied loosely around his neck—sometimes pulled up to cover his mouth and nose when digging through particularly dusty stock. No jewelry except a simple brass finger ring on his right hand, worn thin from years of wear."
+  },
+  "image_prompt": "A lanky West African-Greek man in his mid-thirties, towering and angular with sharp elbows, warm brown skin weathered gray with particulate dust, especially around his long neck and hairline. Vivid coral-pink irises. Dark brown hair with premature graying at temples, kept short and unkempt. Deep laugh lines around his mouth, perpetual stubble. Retractable ivory-white keratin claws slightly visible on his fingertips. Wearing oversized faded khaki canvas shirt and olive-drab work pants stained with rust, topped with a brown synthetic-leather vest covered in toggle closures and tool loops. A faded red cloth wrap loosely around his neck. Worn grey work boots. He stands with hands resting on a three-tiered welded-metal scrap cart loaded with broken augmentation casings, circuit boards, cracked lenses, and mysterious components. Setting: Geartown Ferrogate Transit depot access road, early morning light, industrial yard with scattered metal scraps and storage containers in the background. Warm, weathered, optimistic energy. Cyberpunk, lived-in, hyperdetailed gritty realism, documentary photography aesthetic, soft golden-hour light cutting across industrial metal and rust. --ar 2:3 --v 6"
 }

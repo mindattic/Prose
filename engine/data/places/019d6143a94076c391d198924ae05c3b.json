@@ -7,7 +7,7 @@
     "Glassback",
     "The Mirror Mile"
   ],
-  "description": "A two-kilometer stretch of former suburban lakeshore north of the old Evanston boundary, where mid-21st century storm surge and deliberate Meridian 88 land reclamation projects left behind a peculiar landscape: flat, wind-scoured terrain embedded with fused silica deposits from a now-demolished Palladian Group manufacturing complex. On clear days, the ground itself catches light like broken mirrors, giving the district its name. Scattered mid-tier residential towers — built optimistically during an expansion boom that stalled before completion — rise at irregular intervals, half occupied and poorly maintained.\n\nThe Glassback Flats occupies an ambiguous position in Meridian 88's social geography. It's too exposed and infrastructure-poor to attract genuine Spire investment, but its Diaspora connectivity is surprisingly robust due to a Tessera Corporation relay cluster installed to serve the towers and never decommissioned. This makes the Flats a magnet for freelance data brokers, remote-work Tier 3 residents priced out of denser districts, and the occasional Arcturus Defense Solutions contractor who values proximity to Lake Michigan's surveillance dead zones.",
+  "description": "A two-kilometer stretch of former suburban lakeshore north of the old Evanston boundary, where mid-21st century storm surge and deliberate GLMZ land reclamation projects left behind a peculiar landscape: flat, wind-scoured terrain embedded with fused silica deposits from a now-demolished Palladian Group manufacturing complex. On clear days, the ground itself catches light like broken mirrors, giving the district its name. Scattered mid-tier residential towers — built optimistically during an expansion boom that stalled before completion — rise at irregular intervals, half occupied and poorly maintained.\n\nThe Glassback Flats occupies an ambiguous position in GLMZ's social geography. It's too exposed and infrastructure-poor to attract genuine Spire investment, but its Diaspora connectivity is surprisingly robust due to a Tessera Corporation relay cluster installed to serve the towers and never decommissioned. This makes the Flats a magnet for freelance data brokers, remote-work Tier 3 residents priced out of denser districts, and the occasional Arcturus Defense Solutions contractor who values proximity to Lake Michigan's surveillance dead zones.",
   "atmosphere": {
     "sights": [
       "Ground-level silica deposits refracting afternoon sun into scattered prismatic light across flat terrain",
@@ -37,11 +37,11 @@
   ],
   "opportunities": [
     "Tessera relay proximity enabling Diaspora data transfer speeds unavailable in more congested districts, valuable for time-sensitive brokering operations",
-    "Palladian Group's unmapped underground infrastructure potentially accessible through silica-layer excavation, rumored to include intact pre-Meridian 88 data storage",
-    "Lake Michigan surveillance dead zones nearby, usable for meetings or transit that cannot appear on any Meridian 88 monitoring network"
+    "Palladian Group's unmapped underground infrastructure potentially accessible through silica-layer excavation, rumored to include intact pre-GLMZ data storage",
+    "Lake Michigan surveillance dead zones nearby, usable for meetings or transit that cannot appear on any GLMZ monitoring network"
   ],
   "story_hooks": [
-    "The Tessera relay site manager approaches the players with an unusual offer: she's been quietly archiving anomalous signals passing through the relay for eight months — signals that don't match any registered BCI or device signature in Meridian 88's registry. She believes an ELF is using the relay infrastructure as a communication backbone and wants it documented before Tessera's quarterly audit wipes the logs in seventy-two hours.",
+    "The Tessera relay site manager approaches the players with an unusual offer: she's been quietly archiving anomalous signals passing through the relay for eight months — signals that don't match any registered BCI or device signature in GLMZ's registry. She believes an ELF is using the relay infrastructure as a communication backbone and wants it documented before Tessera's quarterly audit wipes the logs in seventy-two hours.",
     "A Tier 3 data broker living in the Flats has gone silent after claiming to have obtained Palladian Group internal records proving the silica contamination was intentional and the health data covering it up is still actively suppressed. Her apartment shows signs of a rapid, professional departure — but her BCI anchor is still pinging from somewhere beneath the tower's foundation level."
   ],
   "connections": {

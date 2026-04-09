@@ -255,5 +255,26 @@
     "Compass Rose",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Igbo / Russian / Malian",
+    "height_cm": 157,
+    "weight_kg": 58,
+    "build": "Small-framed and wiry, with the compact density of someone who has moved through crowded rooms for decades. No excess weight; her frame is all functional muscle and bone.",
+    "hair_color": "Silver-white, natural",
+    "hair_style": "Pulled back tight on weekdays in a practical wrap or braid; on formal occasions, arranged in elaborate braids with silver thread woven through",
+    "hair_length": "Medium to Long",
+    "eye_color": "Dark brown, clear and sharp",
+    "skin_tone": "Deep warm brown with reddish undertones, the complexion of West and Central African heritage",
+    "complexion": "Face mapped with fine laugh lines around the eyes and mouth; minimal grooming affectation beyond function. Skin is well-maintained but shows the texture of sun exposure and age without apology. Expression typically alert, occasionally theatrical.",
+    "distinguishing_marks": [
+      "Fine radiating lines around both eyes from decades of squinting at documents and data",
+      "Laugh lines around the mouth, deeper on the left side",
+      "A thin scar on the back of her left hand from a organizing incident in 2187, barely visible"
+    ],
+    "visible_augmentations": "Retractable brass-tinted claw modification on right hand, polished to a soft shine, visible when extended or folded against the palm. No other visible augmentations; cochlear enhancement is subcutaneous.",
+    "posture_movement": "She moves with deliberate economy, never rushed. Stands with her full weight grounded, shoulders back. Her hands are expressive — the right hand claw is a gestural tool she deploys for emphasis. When she wants silence, she taps the claw once against a table or wall; the sound carries authority earned over thirty-five years.",
+    "clothing_style": "Tier 3-4 practical: well-maintained but worn utility-cut pants or long skirts, layered tops in muted earth tones, sometimes with a vest or jacket bearing faded patches from old coalitions. Shoes are always sensible and broken in. On council meeting days, she adds a single statement piece — a silk scarf, a beaded collar, or brass jewelry — that signals 'I am performing authority today.' Her clothing is functional but has texture; she refuses to disappear."
+  },
+  "image_prompt": "Portrait of a 63-year-old Black woman with silver-white hair pulled back in a practical braid, deep warm brown skin with fine laugh lines, wearing Tier 3 layered earth-tone utility clothing with a worn council vest, right hand extended showing polished brass-tinted retractable claw modification, seated in a community meeting room with soft warm overhead lighting, expression alert and slightly amused, cyberpunk 2226 setting, photorealistic, dignified and commanding presence, hands-on documentary style, shallow depth of field --ar 2:3 --v 6"
 }

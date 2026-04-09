@@ -244,5 +244,25 @@
     "The Pure Hand",
     "Nightlight"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Lean and angular with elongated limbs; minimal body fat, almost skeletal in the shoulders and hips. Built for precision work rather than physical exertion.",
+    "hair_color": "Deep black roots fading to vivid bioluminescent green at the tips",
+    "hair_style": "Thick locs, each strand dyed in gradient. Worn loose, often falling past the shoulders. Glow is subtle in daylight, pronounced in low-light environments or under UV.",
+    "hair_length": "Long (past shoulder blades)",
+    "eye_color": "Dark brown, enhanced with faint retinal HUD overlay visible as a thin amber circuitry pattern in direct light",
+    "skin_tone": "Very dark brown, almost ebony, with subtle luminous quality from bioluminescent hair reflection",
+    "complexion": "Flawless and maintained with precision; high cheekbones, strong jawline softened by elongated neck. Minimal facial hair. Expression typically composed and evaluative.",
+    "distinguishing_marks": [
+      "Micro-scarring along the inside of both wrists in a grid pattern—old tremor-dampener installation sites, now barely visible",
+      "Faint UV-reactive tattoo on the inside of the left forearm: a series of nested document frames, only visible under UV light"
+    ],
+    "visible_augmentations": "Bioluminescent gradient locs (geneware). Barely perceptible amber micro-circuitry visible in the iris under bright light (retinal HUD). Hand movements are unnaturally smooth and steady—micro-tremor dampeners at work. No obvious chrome or external hardware.",
+    "posture_movement": "Holds themselves with unconscious elegance, particularly the elongated neck—slight forward tilt when concentrating. Hands move with surgical precision; fingers rarely fidget. Walking gait is economical, minimal wasted motion. Tendency to make direct eye contact while listening, assessing.",
+    "clothing_style": "Deliberately unremarkable: muted mid-tones (grays, dark beiges, charcoal), soft fabrics that don't reflect light. No logos, no chrome accents, nothing that triggers automated recognition systems. Practical Tier 4 workwear—reinforced cargo pants, fitted undershirts, neutral layering jacket. Cheap, durable synthleather gloves worn during fine work. No jewelry except a thin steel ring on the right middle finger (document fabricator's calling card among the underground)."
+  },
+  "image_prompt": "cyberpunk character portrait, nonbinary person of West African descent, 27 years old, extremely lean angular build, elongated neck held with elegant posture, very dark ebony skin, thick locs dyed gradient from deep black roots to vivid neon green tips glowing softly, dark brown eyes with faint amber retinal HUD overlay circuitry visible, precise surgical hands with barely visible tremor-dampener scarring on inner wrists, wearing muted gray and charcoal non-reflective clothing designed to evade recognition systems, dark synthleather gloves, minimal jewelry, serious composed expression, dramatic low-light indoor workshop setting with soft UV lighting illuminating the bioluminescent green locs, cyberpunk aesthetic, intricate technical mood, shallow depth of field focusing on hands and face, film noir lighting, high contrast --ar 2:3 --v 6"
 }

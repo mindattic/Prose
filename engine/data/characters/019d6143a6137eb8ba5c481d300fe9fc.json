@@ -104,5 +104,26 @@
   "related_entities": [
     "The Shelf"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Senegalese) / Scandinavian (Danish)",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Solid, compact frame with broad shoulders and a deliberate heaviness that comes from decades of physical work and street presence. Not soft, not lean — grounded.",
+    "hair_color": "Salt-and-pepper black, with natural silver threading at the temples",
+    "hair_style": "Wrapped in a cream-colored headwrap most days, occasionally worn loose in a close-cropped fade",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with light hazel rings — the effect of age and intensity",
+    "skin_tone": "Medium-warm, with a honey-bronze undertone reflecting both Senegalese and Scandinavian ancestry",
+    "complexion": "Weathered but well-maintained. Fine lines around the eyes and mouth from years of reading situations and smiling. A small scar bisects her left eyebrow — old, faded. Skin shows the texture of someone who works outdoors and doesn't hide from the sun.",
+    "distinguishing_marks": [
+      "A long, thin scar running from her left temple down toward her jaw — surgical precision, not street violence, possibly from early augmentation removal or medical intervention",
+      "Faded indigo tattoo on her right forearm: a geometric pattern resembling a Ndebele design, roughly 8cm tall, done with hand-pricking ink — community marker, not corporate",
+      "Small burn scar on her left palm, pale and smooth — old thermal injury"
+    ],
+    "visible_augmentations": "None visible. Her augmentations, if any, are subcutaneous or internal — she operates on trust and reputation, not chrome.",
+    "posture_movement": "Moves with deliberate economy. Plants her feet when she stops — grounded stance. Doesn't fidget. Her gaze is steady and evaluative; she watches more than she speaks. Hands stay visible and open, a habit of someone who defuses rather than escalates. Walks with the weight of authority earned, not inherited.",
+    "clothing_style": "Tier 3-4 practical. Favors neutral earth tones: cream, tan, dark brown. Wears a weathered linen jacket over functional underlayers — multiple pockets, reinforced seams. Good boots, well-maintained but clearly worn. A simple silver bangle on her right wrist and a thin leather cord around her neck (religious or protective, intentionally understated). No visible logos or corpo affiliations. Everything chosen for durability and community respect, not status signaling."
+  },
+  "image_prompt": "A 52-year-old West African-Scandinavian woman, medium height with a solid, grounded build, standing in a dimly lit street corridor near industrial scaffolding. Salt-and-pepper black hair wrapped in cream linen, deep brown eyes with intensity and calm authority. Weathered warm honey-bronze skin with fine lines at the temples, a thin scar crossing her left eyebrow. Wearing a faded tan linen jacket over practical dark layers, weathered brown boots, visible geometric indigo tattoo on her forearm. Her posture is planted, grounded, hands visible and open. Setting is The Shelf neighborhood near Kedzie and Division — gritty but lived-in, industrial cyberpunk Midwest aesthetic, evening lighting with cool blue-green neon signs reflected on wet concrete. Film noir fixer energy, community elder, unaugmented and all the more dangerous for it. Photorealistic, character study, --ar 2:3 --v 6"
 }

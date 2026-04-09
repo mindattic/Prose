@@ -266,5 +266,26 @@
     "Arcturus CK-5 'Bloodhound'",
     "Elena Vasquez-9"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Fijian / Dutch",
+    "height_cm": 158,
+    "weight_kg": 62,
+    "build": "Compact and dense, the kind of frame that suggests decades of purposeful motion rather than leisure. Shoulders slightly rounded from years at a desk and standing before classrooms, but the core is wiry and strong.",
+    "hair_color": "Salt-and-pepper natural base with deliberate deep cobalt blue dye in the front section",
+    "hair_style": "Close-cropped, natural texture, layered for ease of maintenance; the blue section catches light when she moves her head",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Medium to warm brown with subtle olive undertones, consistent with Fijian-Dutch heritage",
+    "complexion": "Weather-lined face that reads as lived-in rather than aged; prominent wide nose and sharp jawline; dark eyes that focus intently. Minimal makeup, skin care is functional rather than cosmetic. Expression lines around eyes and mouth from sixty years of talking, arguing, and listening.",
+    "distinguishing_marks": [
+      "Fine surgical scar along the right temporal hairline, barely visible, from cochlear enhancement installation at age 65",
+      "Age spots across the backs of both hands and forearms, small and scattered",
+      "A small, faded tattoo on her left inner wrist — a mathematical symbol (integral sign) in black ink, applied in her thirties"
+    ],
+    "visible_augmentations": "Wire-framed smart lenses with thin blue-tinted AR display (basic consumer model, deliberately unfashionable). Small discreet behind-ear module visible when she turns her head sharply — the cochlear enhancement port, barely noticeable against her skin tone.",
+    "posture_movement": "Walks with purpose and energy despite her age, shoulders forward slightly as if always ready to engage. Hands are constantly in motion — gesturing while speaking, rearranging papers, making small adjusting movements. She sits at the edge of chairs rather than settling back. When listening, her posture sharpens rather than relaxes. No wasted motion, but nothing hurried.",
+    "clothing_style": "Tier 4-5 practical and vivid: hand-knitted cardigans in unexpected color combinations (rust-orange paired with moss-green), thrifted blazers with pins from various labor organizations and community groups, sensible flat shoes (currently a well-worn pair of canvas slip-ons in faded red). Favors natural fabrics — cotton, linen, wool — partly for comfort and partly on principle. Wears the same silver watch she's had for forty years. Clothes are clean but noticeably mismatched and slightly unfashionable, worn by someone who finds the coordination of color genuinely delightful and has stopped performing conformity."
+  },
+  "image_prompt": "A 71-year-old woman of Fijian-Dutch heritage, compact frame with deep brown skin, short salt-and-pepper hair with deliberate deep cobalt blue dye in the front section, sharp jawline and wide nose, dark focused eyes behind wire-framed smart lenses with faint blue AR tint. Wearing a hand-knitted cardigan in rust-orange and moss-green, thrifted blazer with labor pins, faded red canvas slip-ons. Standing in a community education space with her hands in motion, mid-gesture, expression sharp and engaged. Morning light from institutional windows casting warm tones across her face. Aesthetic: worn, principled, alert, lived-in dignity. Documentary-realism meets humanist portraiture. --ar 2:3 --v 6"
 }

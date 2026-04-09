@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "The Shelf — lower district tenements near the old lakeshore, near Ashland and Chicago Ave",
-  "description": "Zurab Watanabe-Amponsah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 28, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a sniper out of The Shelf, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nZurab Watanabe-Amponsah is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Zurab Watanabe-Amponsah is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 28, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a sniper out of The Shelf, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nZurab Watanabe-Amponsah is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.19,
@@ -62,7 +62,7 @@
   "story_hooks": [
     "Zurab Watanabe-Amponsah discovers a job they completed last year was a setup for something much larger and much worse",
     "A Tier 4 executive offers Zurab Watanabe-Amponsah a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "A crew member from Zurab Watanabe-Amponsah's past shows up in Meridian 88, carrying old grievances and new chrome"
+    "A crew member from Zurab Watanabe-Amponsah's past shows up in GLMZ, carrying old grievances and new chrome"
   ],
   "narrative_function": "Zurab Watanabe-Amponsah is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
   "augmentations": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks. Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
@@ -273,12 +273,34 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "Lazarus LX-2 'Lab Rat'",
     "The Pure Hand",
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Georgian / Japanese / West African",
+    "height_cm": 168,
+    "weight_kg": 74,
+    "build": "Stocky and compact with dense muscle distribution. Broad shoulders and thick forearms suggest functional strength rather than aesthetics. Her frame is built for stability and power delivery — the physiology of someone who uses her body as a weapon.",
+    "hair_color": "Dark brown, naturally black with permanent sleep-deprivation graying at the temples",
+    "hair_style": "Pulled back in a tight, functional braid. No style for style's sake — purely utilitarian.",
+    "hair_length": "Medium",
+    "eye_color": "Deep brown with slight redness around the sclera from nocturnal living",
+    "skin_tone": "Medium-warm complexion with olive undertones, weathered and sun-starved from six years of nocturnal operation",
+    "complexion": "Strong jawline, pronounced cheekbones. Small scar through left eyebrow. Skin is clear but pale from indoor night work. Hands are calloused and scarred — burns from weapon heat, knife marks, impact trauma. Knuckles show old breaks, healed badly and never reset properly.",
+    "distinguishing_marks": [
+      "Thin surgical scar along the right collarbone — synthetic lung installation point, partially healed over chrome edge",
+      "Deep laceration scar on left palm, running diagonally from wrist toward thumb",
+      "Burn pattern across the dorsal side of both hands — weapon heat exposure",
+      "Faint subdermal tracery visible under the skin of her inner forearms when tensed — possibly neural interface conduits"
+    ],
+    "visible_augmentations": "Chrome visible along the right collarbone and upper chest where synthetic lung housing meets organic tissue — industrial grade, not cosmetic. Faint metallic sheen visible in the skin around the installation. Knees and elbows show subtle mechanical articulation when she moves — hydraulic joints produce micro-vibrations visible in how her limbs absorb and redirect force. No attempt to conceal; the chrome is worn like a badge.",
+    "posture_movement": "Stands with weight distributed evenly, always balanced. Movements are economical and precise — no wasted motion. Her gait is quiet despite her stocky build; she moves like someone trained to not be heard. When sitting, she favors positions that allow rapid movement. Resting expression is neutral to hostile. Doesn't smile much. Eye contact is direct and held longer than is comfortable for most people.",
+    "clothing_style": "Tier 4 working-class practical. Usually wears a worn black synthetic-leather jacket over grey cargo pants with reinforced knees and thigh pockets. Boots are military-grade lace-ups, scuffed and re-soled twice. Underclothing is functional — grey or black. A faded red hoodie for anonymity in crowds. No jewelry except a stainless steel watch with a cracked face. Her gear is maintained obsessively but never replaced for appearance. Everything she owns serves a function."
+  },
+  "image_prompt": "A 28-year-old woman with Georgian-Japanese-West African features, stocky and compact build, standing in moody nocturnal lighting. Dark brown hair pulled back in a tight braid, weathered complexion, direct intense stare. Visible chrome augmentation along right collarbone and upper chest where synthetic lungs meet flesh, industrial grade hardware with slight metallic sheen. Worn black synthetic-leather jacket over grey reinforced cargo pants, military lace-up boots. Calloused and scarred hands. Standing tense and balanced, quiet predatory posture. Gritty cyberpunk noir aesthetic, neon-lit warehouse setting with deep shadows, cold blue and amber lighting, film noir sensibility, photorealistic, sharp focus on augmentation details, moody atmospheric depth. --ar 2:3 --v 6"
 }

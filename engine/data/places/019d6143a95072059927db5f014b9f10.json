@@ -7,7 +7,7 @@
     "The Yard",
     "Feedlot"
   ],
-  "description": "The Stockyard is the food distribution hub for the entire eastern GLM corridor, and it is exactly as romantic as that sounds. The original Eastern Market — a public farmers' market operating since 1891 — has been swallowed by a logistics operation so vast that the charming brick sheds where Detroiters once bought tomatoes on Saturday mornings now serve as administrative offices for IronClad Agrisystems' Great Lakes Distribution Center. The center processes 40 million metric tons of food annually, most of it synthetic protein, hydroponic produce, and nutrient-dense crops engineered by Verdant Systems to grow in the contaminated soils that climate change left behind. Real food — actual meat, actual grain-fed produce, actual anything — passes through a separate facility that serves the Tier 3+ market. The two supply chains share a loading dock and nothing else.\n\nThe district surrounding the distribution center is a 24-hour logistics machine. Autonomous freight vehicles run continuous loops between the Stockyard, the Rouge river port, and distribution hubs across the GLM. Human labor persists in the sorting facilities, where the combination of irregular package sizes, contamination screening, and the occasional live organism shipment defeats current automation. The sorters work twelve-hour shifts in climate-controlled warehouses that are climate-controlled for the food, not the workers. The wage is Φ22 per hour. The turnover rate is 200% annually. IronClad considers this acceptable.\n\nBut the market's ghost persists. On Saturday mornings, in the shadow of the distribution center, an unauthorized farmers' market still operates in the old shed district. Local growers, urban farmers from Mexicantown Libre and Brightmoor, and gray-market food traders set up stalls and sell actual food to actual people. IronClad tolerates it because shutting it down would create PR problems and because the volume is negligible — a few hundred people buying tomatoes doesn't threaten a 40-million-ton operation. The Saturday market is a museum of how food used to work, operating in the loading shadow of how food works now.",
+  "description": "The Stockyard is the food distribution hub for the entire eastern GLMZ corridor, and it is exactly as romantic as that sounds. The original Eastern Market — a public farmers' market operating since 1891 — has been swallowed by a logistics operation so vast that the charming brick sheds where Detroiters once bought tomatoes on Saturday mornings now serve as administrative offices for IronClad Agrisystems' Great Lakes Distribution Center. The center processes 40 million metric tons of food annually, most of it synthetic protein, hydroponic produce, and nutrient-dense crops engineered by Verdant Systems to grow in the contaminated soils that climate change left behind. Real food — actual meat, actual grain-fed produce, actual anything — passes through a separate facility that serves the Tier 3+ market. The two supply chains share a loading dock and nothing else.\n\nThe district surrounding the distribution center is a 24-hour logistics machine. Autonomous freight vehicles run continuous loops between the Stockyard, the Rouge river port, and distribution hubs across the GLMZ. Human labor persists in the sorting facilities, where the combination of irregular package sizes, contamination screening, and the occasional live organism shipment defeats current automation. The sorters work twelve-hour shifts in climate-controlled warehouses that are climate-controlled for the food, not the workers. The wage is Φ22 per hour. The turnover rate is 200% annually. IronClad considers this acceptable.\n\nBut the market's ghost persists. On Saturday mornings, in the shadow of the distribution center, an unauthorized farmers' market still operates in the old shed district. Local growers, urban farmers from Mexicantown Libre and Brightmoor, and gray-market food traders set up stalls and sell actual food to actual people. IronClad tolerates it because shutting it down would create PR problems and because the volume is negligible — a few hundred people buying tomatoes doesn't threaten a 40-million-ton operation. The Saturday market is a museum of how food used to work, operating in the loading shadow of how food works now.",
   "atmosphere": {
     "sights": [
       "Autonomous freight vehicles stacked three high on loading platforms, moving in choreographed silence",
@@ -43,7 +43,7 @@
     "Autonomous freight traffic — the vehicles are programmed to prioritize schedule over pedestrian proximity"
   ],
   "opportunities": [
-    "Food supply intelligence — knowing what's moving through the Stockyard means knowing what every district in the GLM is eating",
+    "Food supply intelligence — knowing what's moving through the Stockyard means knowing what every district in the GLMZ is eating",
     "The Saturday market is an information exchange disguised as a farmers' market — people talk over tomatoes",
     "Contamination data — the sorting facility rejection logs reveal what's wrong with the food supply before anyone else knows",
     "The IronClad workforce is large, underpaid, and disgruntled — a recruitment pool for anyone offering something better"
@@ -66,12 +66,12 @@
     "IronClad logistics workers on rotating shifts",
     "Saturday market vendors and shoppers",
     "Gray-market food traders",
-    "Supply chain analysts who track what moves through the GLM's stomach"
+    "Supply chain analysts who track what moves through the GLMZ's stomach"
   ],
   "notable_locations": [
     {
       "name": "IronClad Great Lakes Distribution Center",
-      "description": "40 million metric tons annually — the machine that feeds the eastern GLM, indifferent to what it's feeding them",
+      "description": "40 million metric tons annually — the machine that feeds the eastern GLMZ, indifferent to what it's feeding them",
       "tags": []
     },
     {

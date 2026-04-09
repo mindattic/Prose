@@ -208,5 +208,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Déjà Vu"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Bosnian / Hungarian / Ecuadorian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and wiry, with the taut muscularity of someone who moves constantly but forgets meals. Long-limbed, slight shoulders, minimal body fat.",
+    "hair_color": "Dark brown, naturally, with faint traces of premature silver at temples",
+    "hair_style": "Close-cropped on sides and back; longer on top, gathered into a perpetually messy updo or bun secured by whatever is nearby — pens, styluses, wire, sometimes nothing at all",
+    "hair_length": "Short to medium (variable)",
+    "eye_color": "Pattern-shift geneware irises — cycles through geometric mandala designs in ochre, slate, and amber on an eight-second loop; the underlying sclera is a deep warm brown",
+    "skin_tone": "Warm amber-brown complexion with subtle undertones reflecting mixed Central European and Andean heritage",
+    "complexion": "Fine-boned face with high cheekbones, angular jaw, and an expression of perpetual mild irritation. Skin is clear but shows signs of frequent late nights and inconsistent self-care. A faint scar traces the left temple — thin, old, surgical-looking. Hands show faint chemical stains around the cuticles and small nicks from precision work.",
+    "distinguishing_marks": [
+      "Thin surgical scar running 3cm along left temple, likely from early geneware installation.",
+      "Faint chemical discoloration on fingertips and palms, concentrated on thumbs and index fingers — consistent with handling pharmaceutical precursors and solvents.",
+      "Small burn scar on inside of left wrist, roughly 1cm diameter, circular — consistent with a subdermal implant installation site, now mostly healed."
+    ],
+    "visible_augmentations": "Pattern-shift iris geneware is immediately visible and distinctive — the slow-cycling mandala designs are striking and unmistakable, marking them as modified. A barely-visible subdermal ridge runs along the inside of the left wrist (data-cache housing), visible only when the arm is extended and light hits at a sharp angle. The neural focus chip is not visible but their movement and speech patterns suggest augmentation — rapid processing, quick code-switching between languages, visible impatience with slow speech.",
+    "posture_movement": "Moves with economical, jerky efficiency — no wasted motion, but not quite smooth. Fingers are in constant motion even when standing still, fidgeting with tools, samples, or mental tasks. Eyes dart frequently, tracking multiple things at once. When focused on work, becomes still and intensely concentrated. Stands asymmetrically, weight favoring one leg, a posture of someone ready to pivot or leave at a moment's notice.",
+    "clothing_style": "Tier 4 street pragmatism — function over fashion, but deliberate in its own way. Typically wears a battered oversized panel jacket in charcoal or dark grey, synthetic blend, with multiple interior and exterior pockets, all visibly packed with tools, samples, and encrypted data-sticks. Underneath: a faded band-logo shirt or a plain long-sleeve fitted top in cream or dark colors. Cargo pants or reinforced work trousers in black, pockets heavy and sagging slightly. Worn low-friction sneakers in muted tones, kept meticulously clean soles (necessary for moving quickly through wet streets). A beat-up leather or synthetic wrist cuff on the left arm, worn over the data-cache site — ostensibly protective, functionally habit. No jewelry except a non-functional GLMZ-era analog watch (probably broken, worn for aesthetic or sentimental reasons)."
+  },
+  "image_prompt": "Cyberpunk character portrait of a nonbinary 29-year-old with warm amber-brown skin and angular features, lean wiry build, dark hair with silver at temples gathered into a messy updo held with a circuit-pen. Striking pattern-shift geneware irises cycling through ochre and slate geometric mandala designs. Faint surgical scar on left temple. Wearing a battered oversized charcoal panel jacket over a faded band tee, cargo pants, worn sneakers, worn leather wrist cuff. Standing in a narrow underground market corridor between wet condensation-sweating pipes and a defunct neon vending machine, hands in motion, fingers fidgeting with tools. Intense, impatient expression. Moody fluorescent and neon lighting casting sharp shadows, cyberpunk street pharmacist aesthetic, gritty and real, technical detail on face and hands, shallow depth of field, cinematic, photorealistic --ar 2:3 --v 6"
 }

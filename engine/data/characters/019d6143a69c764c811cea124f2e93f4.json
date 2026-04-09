@@ -246,5 +246,25 @@
     "Ringo Corponation",
     "Elena Vasquez-9"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Eastern European / West African",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Medium, deliberate — neither lean nor stocky, calibrated for invisibility. Posture is neutral and contained, as if taking up the minimum necessary space.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Close-cropped, no styling, precisely utilitarian",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint corneal latticing visible under bright light (enhancement hardware)",
+    "skin_tone": "Warm medium brown, even complexion",
+    "complexion": "Clean-shaven, groomed to corporate standard without excess. Skin is unmarked and unremarkable — the face of someone who has made a deliberate study of being overlooked.",
+    "distinguishing_marks": [
+      "Burnt-orange geneware cat tail with black tip, approximately 60cm long, affixed at base of spine with visible subdermal anchor point. Moves reactively with emotional states — alert when engaged, droops when bored or anxious, swishes when processing information.",
+      "No visible scars, tattoos, or birthmarks."
+    ],
+    "visible_augmentations": "Geneware cat tail (burnt-orange, mood-reactive). Corneal enhancement visible only under magnification or in raking light — faint geometric patterning in iris/cornea boundary. Standard-issue QA optics, factory-original.",
+    "posture_movement": "Economical and controlled. Moves without flourish, hands steady for fine detail work. Walks with even rhythm. The tail's movements are the only thing about him that appears spontaneous or unguarded.",
+    "clothing_style": "Ringo Corporate Standard: grey-teal work tunic and trousers, fit within regulation tolerances, no personalization. Cheap synthetic material, well-maintained but not new. Work boots, also grey-teal. No jewelry, no visible brands, no accessories except the embedded tail. Dresses identically most days — a form of disappearance."
+  },
+  "image_prompt": "cyberpunk character portrait, Asian-European male, age 34, medium build, warm brown skin, dark hair close-cropped, dark brown eyes with faint technological lattice visible in cornea, unforgettable in his ordinariness, wearing grey-teal corporate work tunic and trousers, precise and neutral posture, striking feature: burnt-orange and black cat tail affixed at spine moving with subtle emotion, calm expression, soft corporate fluorescent lighting, slight depth-of-field focusing on face and tail, muted color palette with pops of orange, photorealistic cyberpunk aesthetic, character study portrait, --ar 2:3 --v 6"
 }

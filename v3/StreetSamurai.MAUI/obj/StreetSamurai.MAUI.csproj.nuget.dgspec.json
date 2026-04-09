@@ -53,6 +53,10 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
             "Markdig": {
               "target": "Package",
               "version": "[1.1.2, )"
@@ -1885,6 +1889,10 @@
             "Markdig": {
               "target": "Package",
               "version": "[1.1.2, )"
+            },
+            "Microsoft.AspNetCore.Components.Authorization": {
+              "target": "Package",
+              "version": "[10.0.5, )"
             },
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",

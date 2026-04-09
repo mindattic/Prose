@@ -280,5 +280,27 @@
     "Slagworks Industrial",
     "Pellucid Systems"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Lean and angular with corded muscle definition — no excess mass, built for speed and precision rather than power. Visible tension in shoulders and jaw even at rest.",
+    "hair_color": "Dark blonde, naturally ash-toned",
+    "hair_style": "Pulled back in a tight, functional braid; minimal styling — practical only",
+    "hair_length": "Medium (shoulder-length when unbound)",
+    "eye_color": "Steel gray with faint silver threading in the iris — likely augmented optical enhancement",
+    "skin_tone": "Warm tan with golden undertones — mixed heritage pale-to-medium complexion",
+    "complexion": "Sharp cheekbones, angular jawline, minimal body fat reveals underlying bone structure. Skin is clear but bears evidence of repeated minor trauma — small silvered scars, a few faint impact marks on temples and across knuckles. No cosmetic grooming; she maintains herself with utilitarian precision.",
+    "distinguishing_marks": [
+      "Two parallel silver scars running vertically down the inside of each forearm — surgical lines where subdermal weapon mounts were installed, deliberately left unscarred smooth",
+      "Faint burn mark on right collarbone, roughly 3cm diameter, aged and pale",
+      "Thin white scar bisecting left eyebrow horizontally",
+      "Knuckle scars on both hands, particularly clustered on the first three fingers of the right hand — repeated impact training"
+    ],
+    "visible_augmentations": "Subdermal blade mounts in both forearms — the seams are visible when skin is exposed, running from wrist to mid-forearm. The chrome edges catch light subtly when she moves. No cosmetic chrome on face or neck; all visible augmentation is functional and deliberately exposed.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward, weight balanced over the balls of her feet even when standing still. Her gaze is constant, tracking exits and threats automatically. In repose, there is coiled readiness; in motion, there is lethal grace.",
+    "clothing_style": "Tier 3-4 practical street wear: fitted dark synthetic jacket (water-resistant, reinforced at shoulders and forearms), matte black compression shirt underneath, tactical cargo pants with multiple sealed pockets, steel-toed boots scuffed from active use. All clothing is modular — pockets positioned for weapon accessibility, sleeves cut short enough to expose the forearm augmentations. No logos or unnecessary ornamentation; everything serves a function. Off-duty, she shifts to completely anonymous Tier 4 civilian wear: plain jumpsuits, unremarkable jackets, things that dissolve into crowds."
+  },
+  "image_prompt": "Cyberpunk street samurai, Scandinavian-African woman, age 34, lean muscular build, cold steel-gray eyes, dark blonde hair in tight braid, angular sharp features, two visible subdermal chrome blade seams running down both forearms catching metallic light, scarred knuckles, dockside waterfront at dusk, Lake Michigan industrial backdrop with cargo containers and neon reflections on water, wearing fitted matte black tactical jacket over compression shirt, functional cargo gear, standing in alert combat stance, precise economical posture, subtle cyberpunk aesthetic, cinematic lighting with cool blues and amber industrial neon, photorealistic with weathered practical aesthetic, no excessive chrome or flashy augmentation, gritty realistic tone --ar 2:3 --v 6"
 }

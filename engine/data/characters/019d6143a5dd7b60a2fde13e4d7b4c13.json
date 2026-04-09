@@ -249,5 +249,26 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Mongolian",
+    "height_cm": 182,
+    "weight_kg": 68,
+    "build": "Tall and lean, muscular in the forearms and shoulders from precision work, with the posture of someone accustomed to standing for long hours over examination surfaces",
+    "hair_color": "Natural black with early grey threading through",
+    "hair_style": "Tight braids pinned flat against the scalp in a practical, low-maintenance arrangement",
+    "hair_length": "Medium (braids extend to mid-neck when unpinned)",
+    "eye_color": "Deep brown with faint optical lens visible at pupil margins (magnification implants)",
+    "skin_tone": "Deep umber, even and unblemished from consistent self-care regimen",
+    "complexion": "Minimal grooming beyond necessity; no cosmetics; skin smooth and clear; expression habitually neutral; fine lines around eyes suggest decades of concentration",
+    "distinguishing_marks": [
+      "Bioluminescent amber tracery running from right temple down the right side of neck in branching vascular patterns, faintly pulsing in darkness",
+      "Small, deliberate scar on left index finger (scalpel accident, kept as reference memory)",
+      "Callus on right middle finger from repeated pressure-point diagnostic work"
+    ],
+    "visible_augmentations": "Bioluminescent subdermal tracery on right side of face and neck (amber, faint constant glow in low light). Optical implants visible as faint metallic rings around pupils when illuminated. Fingertips show no visible augmentation but move with unnaturally precise tactile awareness.",
+    "posture_movement": "Moves with controlled deliberateness; never hurried; hands held ready at waist height or resting on work surfaces; spine straight; head level; gaze direct and unbroken during conversation; economical gestures only",
+    "clothing_style": "Tier 4 functional practicality: clean, worn-in medical coat in muted teal or sage green over neutral base layers (grey, cream, dark blue); reinforced work pants in charcoal; closed-toe clinical shoes with good grip; no jewelry or ornamentation; fabric chosen for easy sterilization and durability rather than fashion; overall appearance suggests meticulous personal standards within economic constraint"
+  },
+  "image_prompt": "Portrait of a tall Black woman with West African-Mongolian heritage, age 44, deep umber skin tone, tight braids pinned flat against head showing grey threading, lean athletic build. Right side of face and neck glowing with soft amber bioluminescent tracery branching down like vascular patterns, faintly luminous. Eyes dark brown with subtle optical implant rings visible. Wearing clean muted teal medical coat over neutral layers, clinical aesthetic. Hands resting with clinical precision, fingertips showing enhanced tactile adaptation. Expression neutral and composed, gaze direct and unwavering. Standing in dim underground medical space with herb compound bottles and diagnostic instruments visible, warm amber light casting shadows, moody cyberpunk street medicine clinic atmosphere, hyperrealistic portrait, cinematic lighting, --ar 2:3 --v 6"
 }

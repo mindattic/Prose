@@ -232,5 +232,25 @@
     "Gravimetric Collapse Charge GCC-9",
     "Lead"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Icelandic / Mongolian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, almost ascetic — the result of irregular eating habits and extended focus sessions. Shoulders slightly rounded forward from desk work. No visible musculature; the kind of thin that reads as intellectual rather than athletic.",
+    "hair_color": "Natural black with early gray threading at temples",
+    "hair_style": "Dense, natural texture, worn slightly overgrown and unstyled. Frequently flattened down by his own hand during moments of self-awareness, immediately returning to its default state.",
+    "hair_length": "Medium (approximately 5-7cm), fuller at crown",
+    "eye_color": "Dark brown, warm",
+    "skin_tone": "Deep umber with warm undertones; even complexion across face and body",
+    "complexion": "Fine-featured with high cheekbones and a narrow jaw. Skin is clear but often appears tired — dark circles under eyes from late-night research sessions. No visible facial hair; clean-shaven or smoothly maintained. Expression defaults to mild concentration or faint concern.",
+    "distinguishing_marks": [
+      "Bioluminescent vascular threading in faint blue-green that traces along the inner forearms in branching patterns, visible when blood pressure elevates during debate or stress",
+      "The same threading continues faintly up the left side of the neck, following carotid pathways, most visible in low light when agitated"
+    ],
+    "visible_augmentations": "Subtle neural interface port at the base of the skull, concealed by hair but occasionally visible when he pulls his hair back during intense work sessions. The bioluminescent threading is the most obvious augmentation — a geneware modification that activates involuntarily with emotional or physiological arousal, betraying his internal state to observant colleagues.",
+    "posture_movement": "Sits hunched forward when engaged in conversation or work, elbows on table, fingers steepled or moving through abstract gestures. Walks with purpose but without particular confidence, as if traversing from one idea to another rather than through physical space. Frequently pauses mid-sentence, eyes unfocused, before continuing. Fidgets with sleeves or runs hand through hair when uncomfortable.",
+    "clothing_style": "Uniform rotation of lightweight gray technical wear — Tier 2 research-grade garments from a minor corpo vendor, functional and forgettable. Loose gray crewneck or henley over gray utility pants or lightweight trousers. Worn thermal-regulation sneakers in muted tones. No accessories except occasionally a faded wristband with a research institute logo. The effect is deliberately understated to the point of invisibility — clothes chosen for function and repeatability rather than expression."
+  },
+  "image_prompt": "A thin, dark-skinned man in his mid-thirties with dense natural black hair slightly overgrown and unstyled, wearing a simple gray crewneck shirt and gray utility pants. His forearms show faint bioluminescent blue-green lines tracing vascular pathways, glowing softly in the dim light. Deep umber skin tone, warm brown eyes with tired circles beneath them, high cheekbones, angular features suggesting intellectual intensity. Seated at a research workstation in a dimly-lit computational lab, hunched forward with fingers moving through abstract gestures, expression concentrated and faintly troubled. Cyberpunk aesthetic, soft bioluminescent accent lighting against dark background, warm and cool color contrast, photorealistic with sci-fi enhancement, cinematic mood --ar 2:3 --v 6"
 }

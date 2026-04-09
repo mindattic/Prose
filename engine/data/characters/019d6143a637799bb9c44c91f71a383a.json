@@ -265,5 +265,25 @@
     "Gold",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Fijian / Zimbabwean",
+    "height_cm": 177,
+    "weight_kg": 62,
+    "build": "Naturally strong-framed but severely undermaintained through sedentary nocturnal work — wiry and angular, with atrophied muscle definition despite skeletal structure suggesting past athleticism. Slight forward slouch from prolonged server-room posture.",
+    "hair_color": "Natural dark brown, coated with perpetual moisture sheen",
+    "hair_style": "Loose, unstretched coils worn shoulder-length; frequently damp, slightly matted at the nape from humidity and irregular sleeping patterns",
+    "hair_length": "Long",
+    "eye_color": "Dark brown base with circuit-board pattern irises in gold; faintly self-luminescent under low light",
+    "skin_tone": "Warm medium brown with sallow undertones from chronic fluorescent-light exposure and humidity-dependent pallor",
+    "complexion": "Pale, slightly waxy texture from dermal moisture-management layer; visible fine lines around eyes from screen fatigue and squinting in condensation-fogged server rooms; perpetually slightly flushed cheeks from humidity exposure; minimal grooming beyond functional hygiene",
+    "distinguishing_marks": [
+      "Third-generation neural-digital interface jack at base of skull — visible as a discrete platinum port with faint silver scarring around insertion point, usually partially obscured by damp hair",
+      "Fine, barely-visible grid pattern across shoulders and upper back from dermal moisture-management layer subdermal tubing — only visible when wet or under direct light"
+    ],
+    "visible_augmentations": "Luminescent circuit-pattern irises are unmistakably artificial and intentionally displayed; they glow faintly gold-on-brown in dim light. The bioluminescence is subtle but immediately marks them as modded. Neural jack port visible at skull base when hair is pulled back.",
+    "posture_movement": "Hunched, desk-oriented posture with tendency to tilt head slightly when listening — a system-monitoring habit. Movements are economical and deliberate; minimal gesturing. Often appears to be mentally elsewhere, processing multiple data streams simultaneously. Fidgets with equipment or fingers when anxious.",
+    "clothing_style": "Tier 3-4 functional, heavily waterproofed. Always wears moisture-wicking base layers (matte synthetic, often visible at collar/wrists). Primary garment is a heavily patched, sealing-treated technical parka in faded teal with sealed pockets and reinforced seams — clearly maintained for humidity resistance rather than aesthetics. Underlayers visible: compression shirt, sometimes a thin haptic-feedback interface vest. Pants are loose, dark gray synthetic with heavy cargo pockets for portable hardware. Footwear is industrial rubber-soled — practical, sealed, fungal-resistant. No jewelry except occasionally a watch with waterproof casing. Aesthetic is anti-fashion: purely functional, deliberately unmarked by crew affiliation or status symbols."
+  },
+  "image_prompt": "A nonbinary figure hunched before a bank of humming server racks, face illuminated by soft circuit-board pattern irises glowing gold on dark brown — cyberpunk noir, saturated humidity atmosphere with visible condensation in air. Long coily dark hair slightly damp, draped over shoulders. Wiry build in waterproofed technical parka, matte synthetic base layers visible at neck. Faded teal jacket with sealed pockets, dark gray cargo pants. Fluorescent flicker-lighting overhead casting sallow pallor across medium-brown complexion marked by screen fatigue and humidity sheen. At base of skull visible platinum neural interface jack. Tier 3 infrastructure setting — Fijian-Zimbabwean features, late twenties. Moody, paranoid body language. Gray moisture and mold visible on walls. Ultra-detailed cyberpunk character portrait, volumetric lighting, cinematic, gritty realism, artstation quality, photorealistic face study --ar 2:3 --v 6"
 }

@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "Stability — a place to sleep that's the same place two nights running",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "To prove everyone who dismissed them catastrophically wrong"
     ],
     "coping_mechanisms": [
@@ -277,5 +277,26 @@
     "Neuromorphic Pressure Cestus",
     "Slagworks Industrial"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Japanese / West African (Akan)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and compact, almost wiry — minimal fat, dense muscle concentrated in core and legs. Built for confined spaces and vertical movement rather than raw strength. The kind of frame that moves through crowds without displacing air.",
+    "hair_color": "Black with silver threading at temples",
+    "hair_style": "Closely cropped, neat, practical — no vanity in the cut",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, slightly amber-tinted under low-light — pupil dilation optimized for nocturnal work",
+    "skin_tone": "Warm brown with golden undertones — the mixed heritage visible in the complexity of his complexion",
+    "complexion": "Sharp cheekbones, narrow jaw, angular face that reads as forgettable in daylight but acquires an unsettling precision in shadow. Minimal facial hair — always cleanly shaved. Skin shows the wear of someone who works in recycled air and tunnel damp: slightly papery texture, faint stress lines around the eyes.",
+    "distinguishing_marks": [
+      "Surgical scar along the right side of his neck, approximately 4cm, where the reflex booster spinal interface was installed — healed clean but visible",
+      "Faint burn marks on both palms and inner forearms from early gecko-grip implant calibration, now nearly invisible",
+      "Small tattoo on inner left wrist: three vertical lines in blue-black ink — personal significance unknown, kept deliberately small and concealable"
+    ],
+    "visible_augmentations": "Reflex booster hardware visible along the right side of his spine — chromatic plating catches light when he moves, subtle iridescent sheen. Fingertips show faint textural difference under close inspection: gecko-grip pads create almost imperceptible ridging at the fingerprints. No obvious cosmetic work; all augmentation is functional, not flashy.",
+    "posture_movement": "Economical and controlled — no wasted motion. Moves through space like someone mapping exits. Stands in corners or against walls by default. When stationary, his weight shifts to the balls of his feet. Walks with a slight forward lean, shoulders loose but capable of explosive tension. His stillness is active, not passive — the quiet of a coiled spring.",
+    "clothing_style": "Tier 4-5 practical: dark reinforced jacket (synthetic leather, multiple interior pockets), tactical cargo pants in charcoal with ankle reinforcement for the gecko-grip pads. Steel-toed boots, well-maintained. A smart-fabric undershirt with integrated thermal regulation — necessary for the circadian disruption and the tunnel damp. No visible corporate branding. Everything worn and functional, nothing aspirational. The uniform of someone who spends their life in places designed to be forgotten."
+  },
+  "image_prompt": "A lean Japanese-West African male, age 37, sharp-featured and angular, standing in the dim blue glow of an underground tunnel. Dark closely-cropped hair with silver at temples, warm brown skin, amber-brown eyes. He wears a dark reinforced tactical jacket and charcoal cargo pants with steel-toed boots. Visible iridescent chromatic plating runs along his right spine — reflex booster augmentation. His posture is coiled and economical, weight on the balls of his feet, shoulders relaxed but ready. Cold fluorescent light catches the chrome; his face shifts from trustworthy to dangerous in the shadows. Background: industrial tunnel infrastructure, exposed pipes, maintenance corridors, sub-street level. Mood: tense, professional, nocturnal. Cyberpunk counterintelligence specialist aesthetic. Shot composition: three-quarter portrait, cool color grading, shallow depth of field, gritty and grounded realism, no glamour. --ar 2:3 --v 6"
 }

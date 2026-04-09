@@ -250,5 +250,26 @@
     "Tin Man",
     "Iron"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Southern African / Russian-Turkic",
+    "height_cm": 163,
+    "weight_kg": 58,
+    "build": "Compact and wiry with lean musculature from constant movement and salvage work; shoulders slightly squared from repetitive handling and lifting. No excess mass — economy of form.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Fade on sides, longer textured crown; typically concealed under a weathered Arcturus surplus cap with frayed stitching",
+    "hair_length": "Short on sides, medium on top",
+    "eye_color": "Amber with soft rotating luminescent pattern (iris mod); natural brown iris underneath",
+    "skin_tone": "Warm medium brown with underlying warm undertones",
+    "complexion": "Face lean and angular; skin weathered by exposure and constant low-level machine oil exposure that creates a persistent subtle sheen. Minimal grooming — functional rather than aesthetic. Callused knuckles and fingertips visibly reinforced with pale subdermal plating.",
+    "distinguishing_marks": [
+      "Thin horizontal scar across the back of right hand, approximately 3cm, from a sheet metal edge during early salvage work",
+      "Machine oil stains permanent in skin creases of palms and under fingernails despite regular cleaning attempts",
+      "Faint chemical burn marks on left forearm (5-6cm scattered pattern) from battery acid exposure, now pale and barely visible"
+    ],
+    "visible_augmentations": "Patterned amber rotating irises with functional magnification (visibly non-human eye behavior when focusing on components). Retractable data-spike visible behind right ear as a metallic point when hair is pulled back, otherwise concealed. Subdermal finger callus plating visible as pale reinforced patches on all fingertips and along callus edges.",
+    "posture_movement": "Perpetually kinetic — weight shifting between feet, hands in constant subtle motion even at rest. Movements economical and precise; reaches and grabs with practiced efficiency. Tends to stand at 45-degree angles rather than square-on, poised as if ready to pivot away. When examining components, goes completely still with intense focus.",
+    "clothing_style": "Tier 4 utilitarian scrap-worker aesthetic. Worn Arcturus surplus cap (faded grey canvas, frayed). Layered oversized grey workshirt with oil-stained cuffs and multiple deep pockets, worn open over a fitted black undershirt. Cargo pants in faded charcoal with reinforced seams and numerous patch pockets containing tools and components. Worn composite-toe work boots with makeshift repairs. Fingerless work gloves often hanging from back pocket or tucked into waistband. No jewelry beyond functional accessories — data-spike and occasionally a magnetic cable tied to belt loop."
+  },
+  "image_prompt": "A compact, lean nonbinary salvage worker of mixed African and Russian heritage, age 27, wearing a weathered Arcturus surplus cap and stained grey workshirt in a cluttered metal scrap yard, hands carefully examining electronics components, amber rotating iris augmentations glowing softly as they focus, retractable data-spike visible behind right ear, subdermal finger plating catching harsh industrial light, surrounded by towering bins of pre-collapse circuitry and salvaged corporate hardware, oil-stained and hyperaware, cyberpunk junk merchant aesthetic, cool fluorescent overhead lighting casting sharp shadows, gritty Iron Bend scrapyard setting, shallow depth of field focusing on intense concentration, hyperrealistic detail on augmentations and tool-worn hands, --ar 2:3 --v 6"
 }

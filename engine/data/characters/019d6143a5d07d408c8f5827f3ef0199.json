@@ -222,5 +222,25 @@
     "Silver",
     "Gravimetric Collapse Charge GCC-9"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Irish / Congolese / Russian",
+    "height_cm": 158,
+    "weight_kg": 68,
+    "build": "Compact and densely muscled; thick through the shoulders and core from decades of lifting salvage and operating percussion instruments. No excess fat. Wiry strength rather than bulk.",
+    "hair_color": "Silver-white, natural",
+    "hair_style": "Close-cropped natural fade, maintained short against her scalp",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with visible waveform patterns cycling across the iris when focusing intently",
+    "skin_tone": "Deep walnut brown with warm undertones",
+    "complexion": "Weathered and lined; laugh lines radiating from the corners of her eyes and mouth suggest a lifetime of expression. Skin bears the texture of someone who works outdoors and underground in equal measure. Minimal makeup; no vanity grooming.",
+    "distinguishing_marks": [
+      "Diagonal scar running through the left eyebrow, approximately 4cm long, white and slightly raised — from a bottle thrown during a 2178 performance",
+      "Dense geometric tattoos covering both forearms in black ink, each a personal sonic diagram representing a composed piece; patterns include spirals, phase diagrams, frequency grids, and resonance curves applied in self-done sessions over decades"
+    ],
+    "visible_augmentations": "Waveform-display irides that cycle and shift subtly when she's listening or concentrating. Industrial-grade hearing-protection equipment worn as a necklace when not in use — custom-molded, clearly well-maintained. Faint subcutaneous scarring visible on inner palms where vibration sensors were implanted, most noticeable when her hands are in certain light.",
+    "posture_movement": "Economical and grounded; moves like someone accustomed to navigating tight spaces and uneven industrial terrain. Shoulders slightly forward from years at workbenches. Hands are expressive and precise — she gestures while speaking, often unconsciously tracing sonic patterns in the air. When listening, her entire body goes still; she leans into sound rather than away from it.",
+    "clothing_style": "Tier 4-5 utilitarian; function over presentation. Heavy canvas work pants (usually black or charcoal) with reinforced knees and multiple pockets, typically splattered with solder, rust, and unidentifiable workshop residue. Loose linen or cotton shirts in muted colors, sleeves rolled or cut off to show forearm tattoos. Scuffed steel-toed boots, often unlaced. A heavy canvas or leather jacket when venturing into Hamtramck proper — old, worn to a soft finish, covered in various pins and patches from defunct venues. All clothing shows the patina of genuine use, not aesthetic choice."
+  },
+  "image_prompt": "Cyberpunk underground artist portrait, 52-year-old woman with deep walnut-brown skin and close-cropped silver-white natural hair, weathered face mapped with laugh lines and a diagonal scar through left eyebrow, wearing loose linen shirt with rolled sleeves revealing dense geometric tattoos covering both forearms, industrial hearing-protection necklace draped across chest, dark irises displaying faint glowing waveform patterns, compact muscular build, leaning against salvaged metal in dim underground workshop lit by cold blue and amber technical lighting, hands gesturing with sonic precision, worn canvas and leather jacket, steel-toed boots, moody cinematic lighting with shadows emphasizing texture and age, 2226 GLMZ aesthetic, gritty and authentic, no polish, --ar 2:3 --v 6"
 }

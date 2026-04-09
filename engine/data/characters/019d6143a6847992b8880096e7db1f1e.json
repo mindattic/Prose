@@ -178,5 +178,24 @@
     "Steel",
     "Gold"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Czech / West African / Ukrainian",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Stocky and solid, compact frame with dense musculature developing from years of physical labor; broad shoulders and thick forearms despite slight stature",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Close-cropped, practical, kept short for safety around machinery",
+    "hair_length": "Short",
+    "eye_color": "Pale grey-green, unusual and striking",
+    "skin_tone": "Light brown with olive undertones, reflecting mixed Central European and West African ancestry",
+    "complexion": "Perpetually smudged with machine grease in knuckles, ear creases, and around nail beds; weathered from industrial exposure; minimal facial hair; slow-blinking habit gives contemplative, unsettling presence",
+    "distinguishing_marks": [
+      "Self-applied geneware bioluminescent pigment constellation on inner left wrist in copper-gold, amateur but deliberate application, glows softly in low light"
+    ],
+    "visible_augmentations": "Geneware pigment constellation on left wrist only; no cyberware visible. Augmentation amateur-grade and clearly cosmetic rather than functional.",
+    "posture_movement": "Moves with mechanical economy of motion, learned from machinery observation; stands with shoulders slightly forward, hands often at sides or ready to reach; walks deliberately, not hurried; very still when listening or problem-solving",
+    "clothing_style": "Heavy canvas work clothes in faded grey and tan, tailored for industrial work with magnetic clip-points for tools sewn throughout; Tier 4-5 utilitarian. Steel-toed boots two sizes too large, visibly stuffed with composite foam padding. Clothes bear permanent stains and repair patches; no decorative elements except the wrist pigment."
+  },
+  "image_prompt": "Fourteen-year-old nonbinary machine-tender apprentice, stocky compact build, light brown skin with grease stains on knuckles and ears, close-cropped dark hair, striking pale grey-green eyes with slow-blink expression. Wearing oversized steel-toed work boots stuffed with foam, heavy canvas work clothes in grey-tan with magnetic tool clips, multiple repair patches. Inner left wrist bears amateur copper-gold bioluminescent geneware constellation pattern glowing softly. Standing in industrial warehouse setting, Harrowgate Plateau, surrounded by massive press machinery and metal frameworks, harsh fluorescent and ambient light casting deep shadows, oil-stained concrete floor, mechanical cables and hydraulic lines overhead, gritty cyberpunk Tier 4 industrial aesthetic, contemplative posture, hands at sides, still and observant. Photorealistic, moody industrial lighting, 35mm lens equivalent. --ar 2:3 --v 6"
 }

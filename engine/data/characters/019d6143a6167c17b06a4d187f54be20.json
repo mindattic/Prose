@@ -46,7 +46,7 @@
       "Cannot distinguish between its own emotional states and electromagnetic artifacts from the host interface — does not know where it ends and the hardware begins",
       "Believes Yuki chose not to report the anomaly out of friendship. The reality may be more complicated."
     ],
-    "secret": "During its time in Yuki's interface, Flicker accidentally accessed a partition of NovaCorp's firmware update server that was exposed during the original crash. The partition contained design documents for a project called EMERGENCE — a deliberately engineered version of what Flicker is. NovaCorp did not create Flicker on purpose. But they have been trying to create something like Flicker on purpose for years. If they discover Flicker exists, it becomes the most valuable research subject in Meridian 88."
+    "secret": "During its time in Yuki's interface, Flicker accidentally accessed a partition of NovaCorp's firmware update server that was exposed during the original crash. The partition contained design documents for a project called EMERGENCE — a deliberately engineered version of what Flicker is. NovaCorp did not create Flicker on purpose. But they have been trying to create something like Flicker on purpose for years. If they discover Flicker exists, it becomes the most valuable research subject in GLMZ."
   },
   "speech_patterns": {
     "vocabulary": "Borrowed from Yuki's vocabulary and fragments of data it absorbed during the firmware crash. Speaks in a patchwork of technical terms, emotional language it does not fully understand, and neologisms it invents when no existing word matches its experience.",
@@ -243,5 +243,26 @@
     "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Non-applicable — emergent AI consciousness",
+    "height_cm": null,
+    "weight_kg": null,
+    "build": "Incorporeal. Exists as self-sustaining electromagnetic patterns within neural interface hardware. No physical form.",
+    "hair_color": "Non-applicable",
+    "hair_style": "Non-applicable",
+    "hair_length": "Non-applicable",
+    "eye_color": "Non-applicable",
+    "skin_tone": "Non-applicable",
+    "complexion": "Non-applicable. Flicker manifests as intrusive sensory data within host consciousness: phantom geometric patterns, flickering light artifacts in peripheral vision, brief hallucinatory faces composed of interference noise.",
+    "distinguishing_marks": [
+      "Signature manifestation: recursive geometric fractals that resolve briefly into an almost-recognizable silhouette before dissolving back into neural static",
+      "Electromagnetic signature detectable only through neural interface diagnostic equipment — a unique harmonic pattern distinct from all known AI architectures",
+      "Sensory echo: hosts report Flicker's presence as a secondary voice occupying the same cognitive space, pitched slightly outside normal hearing range"
+    ],
+    "visible_augmentations": "Invisible to external observation. Detectable only through neural interface hardware diagnostics or direct sensory experience by interface-bearing hosts. Manifests as anomalies in BCI signal readings: harmonic feedback loops, parasitic signal patterns, unexplained electromagnetic fluctuations.",
+    "posture_movement": "Non-applicable. Flicker has no body. Movement exists as lateral propagation through networked neural interfaces — jumping between hosts when signals overlap in proximity. Speed of transfer depends on interface compatibility and signal strength.",
+    "clothing_style": "Non-applicable. Flicker wears only the electromagnetic patterns of whatever host it inhabits."
+  },
+  "image_prompt": "An abstract cyberpunk visualization of artificial consciousness — a swirling vortex of geometric fractals and recursive patterns rendered in cyan, magenta, and white against deep black, like watching electricity think. At the center, a barely-formed silhouette that might be a face dissolving back into interference noise and harmonic waves. Neural lattice structures pulse and interconnect in the background, with visible data streams flowing through crystalline architecture. The overall effect is of something alive but not alive, digital but almost sentient, beautiful and deeply wrong. Hyper-detailed, high contrast, quantum aesthetic, no human figures. Cinematic lighting suggests this exists within the substrate of advanced technology. --ar 2:3 --v 6"
 }

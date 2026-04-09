@@ -218,5 +218,26 @@
     "The Pale Mile",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Polynesian (Bakr-Tuilevuka indicates Malian/Senegalese and Samoan lineages)",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Large-framed, broad-shouldered, with soft accumulation at the midsection from years bent over surgical workstations. Still carries the foundational mass of someone who was athletic in youth.",
+    "hair_color": "Black",
+    "hair_style": "Thick locs, usually bundled under a surgical cap during work; worn loose below shoulders when off the clock",
+    "hair_length": "Long",
+    "eye_color": "Deep brown (right eye hosts magnification implant with faint amber lens artifact)",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Clear, well-maintained despite the Narrows environment; calloused fingertips from precision work; lines around the eyes from concentration and genuine smiling",
+    "distinguishing_marks": [
+      "Bioluminescent geneware stripe running from behind right ear down the neck in pale teal, visible against skin",
+      "Surgical scars on both hands (knuckles, palms) from early training accidents, faded but present",
+      "Small burn mark on left forearm from a hotplate incident, roughly the size of a coin"
+    ],
+    "visible_augmentations": "Pale teal bioluminescent stripe on right neck/behind ear (glows softly in darkness); faint amber lens distortion visible in right eye when light hits it at certain angles; subvocal transmitter invisible beneath skin along jaw",
+    "posture_movement": "Moves with deliberate care and groundedness despite his size. When working, hunches slightly over surgical surfaces with almost meditative focus. In social settings, stands with weight balanced, unhurried, often gestures with open palms. No nervous fidgeting.",
+    "clothing_style": "Tier 4-5 practical: worn dark scrub bottoms or cargo pants with multiple pockets for tools; layered with an old linen overshirt (often stained with coolant or synth-blood) and a surgical smock worn unbuttoned. Worn leather work boots. A faded prayer beads bracelet on left wrist. No corporate branding; everything is second-hand or salvaged."
+  },
+  "image_prompt": "A large, warm-faced man of West African and Polynesian heritage, age 38, with deep brown skin and thick black locs bundled under a surgical cap, standing in a cramped underground surgery lit by amber and violet string lights. A pale teal bioluminescent stripe glows softly along his right neck and behind his ear. He wears worn surgical scrubs and a stained linen overshirt, calloused hands visible as he reaches toward medical instruments on a workbench surrounded by hand-drawn technical diagrams and laminated family photographs. The air is warm and close, filled with the hum of medical equipment and the smell of synth-antiseptic. His expression is gentle, focused, carrying the exhausted peace of someone who has found purpose in a broken place. Cyberpunk street medicine, intimate and lived-in, shot in soft bokeh lighting with depth of field emphasizing his hands and the objects around him. --ar 2:3 --v 6"
 }

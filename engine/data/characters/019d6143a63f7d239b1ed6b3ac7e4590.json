@@ -29,7 +29,7 @@
       "Being identified by corporate facial recognition — living off-grid is survival"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
       "Justice — the corporate kind, where the punishment fits the profit margin"
     ],
@@ -288,5 +288,26 @@
     "Pellucid Systems",
     "Clover"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Japanese / West African",
+    "height_cm": 182,
+    "weight_kg": 68,
+    "build": "Lean and angular with visible muscle definition in shoulders and forearms; zero excess body fat. Moves with predatory efficiency—every gesture economical, no wasted motion.",
+    "hair_color": "Black with subtle iridescence—natural black with faint chrome-dust sheen from dermal contact",
+    "hair_style": "Pulled back in a tight, functional braid. Practical; minimizes visual distraction during negotiations.",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown with faint amber undertone—baseline human, but her gaze registers micro-expressions at inhuman speed",
+    "skin_tone": "Medium-warm—olive undertones from Japanese heritage, deeper richness from West African lineage; creates subtle warm-neutral complexion",
+    "complexion": "Clear, sharp cheekbones and defined jaw. Dermal augmentation scarring visible as faint silver lattice work around temples and jawline—not concealed, deliberately exposed. Minor nick scars on hands and knuckles; occupational.",
+    "distinguishing_marks": [
+      "Augmentation scarring traces along both temples in geometric silver patterns, approximately 3cm each, installed with prioritized function over cosmetic finish",
+      "Thin pale scar along left jawline (approximately 2cm), runs from earlobe toward chin—old injury, pre-augmentation",
+      "Faint chemical burn marks on inner right forearm (adrenaline pump installation site), approximately 4cm diameter, partially obscured by sleeve when worn"
+    ],
+    "visible_augmentations": "Chromatic dermal camouflage manifests as subtle color-shifting iridescence across exposed skin—neck, hands, forearms shift between matte black, deep blue, and gunmetal gray depending on light angle and her biometric state. The effect is unnerving; her skin has a faint luminescence under neon. Augmentation scarring silver-bright around temples and jawline. No attempt to hide any of it.",
+    "posture_movement": "Stands with weight distributed evenly, ready to move in any direction without telegraph. Walks with minimal hip rotation—controlled, lethal efficiency. Makes direct eye contact; blinks slowly, suggesting processing speed enhancement. Hands often at rest position near body center, fingers relaxed but ready. When negotiating, she is perfectly still; only her eyes and face express intent.",
+    "clothing_style": "Tier 3-4 functional streetwear: Charcoal reinforced tactical jacket (Shin-Kobe Industries surplus, worn deliberately) with integrated armor panels visible at shoulders and forearms. Black compression base layer under jacket. Matte-finish tactical cargo pants with thigh holster (empty by design—signals confidence). Steel-toed boots, scuffed and broken in. No jewelry; too many variables in a contract situation. Wears a lightweight tactical watch with encrypted connection overlay. Everything dark, everything functional. Dockside aesthetic: practical survival wear, not fashion."
+  },
+  "image_prompt": "cyberpunk portrait of a 25-year-old tall athletic Japanese-African woman with sharp cheekbones and an unforgiving stare, black hair in a tight functional braid, iridescent chromatic skin with subtle color-shifting sheen across neck and forearms ranging from matte black to gunmetal blue, visible silvery augmentation scarring along temples and jawline, piercing dark amber-flecked eyes suggesting enhanced processing, wearing charcoal tactical jacket with visible armor panels and compression base layer, sitting in a dimly-lit Dockside smuggler bar with Lake Michigan neon-reflect visible through grimy windows, cool blue and magenta cyberpunk lighting casting sharp shadows across her face, photorealistic skin texture showing minor scar details, professional espionage operative aesthetic, perfectly still body language with hand near center mass, Blade Runner 2049 cinematography style, ultra-detailed face, --ar 2:3 --v 6"
 }

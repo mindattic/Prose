@@ -59,7 +59,7 @@
     "One of Chidinma's regular customers — a Q-zero family she supplies with food and comfort goods — has gone missing from their usual location, and she is asking questions carefully because she can't ask officially",
     "A Ferrogate Transit investigator has been watching her stall for three days and she knows it; she needs help determining whether this is about the caravan sabotage or something else entirely"
   ],
-  "narrative_function": "Equipment and goods source for players operating outside official markets, information broker (she hears everything at the stall), quest giver for trade route problems and supplier disputes, window into the informal economy of Meridian 88.",
+  "narrative_function": "Equipment and goods source for players operating outside official markets, information broker (she hears everything at the stall), quest giver for trade route problems and supplier disputes, window into the informal economy of GLMZ.",
   "augmentations": "Patterned irises, amber and rust geometric (cosmetic mod, installed age 24). Enhanced scent glands, subtle — helps her assess goods quality and detect synthetic substitutes. Sub-dermal storage pocket in left forearm (small, holds data chips and small valuables).",
   "daily_life": "Sets up her stall at Grand Crossing Gate before first light to get a good position, trades until mid-afternoon, then walks the corridors with a pack to reach customers who can't come to her; evenings spent restocking, repairing, and managing her network of supplier contacts via encrypted message channels.",
   "affiliation": "Loosely part of the Grand Crossing itinerant trader collective, no formal caravan affiliation currently (between caravans after a dispute she describes as 'a business disagreement about accounting')",
@@ -266,5 +266,25 @@
     "Déjà Vu",
     "Rust"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "West African / Finnish / Iranian",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Stocky and compact with well-developed shoulders and forearms from years of moving trade goods; solid rather than soft, with visible muscle definition beneath her warm brown skin. Her frame speaks of functional strength rather than aesthetics.",
+    "hair_color": "Natural black with scattered grey threads",
+    "hair_style": "Massive natural crown worn unpinned or loosely gathered with whatever is at hand — transit tokens, stylus caps, a single ivory bone clasp. The effect is deliberately chaotic but carefully maintained.",
+    "hair_length": "Long (shoulder-length and beyond when fully extended)",
+    "eye_color": "Modified: amber and rust geometric pattern spinning slowly within dark brown irises",
+    "skin_tone": "Warm deep brown, even and clear",
+    "complexion": "Clear skin with deliberate ritual character — three thin, precise ritual scars running vertically down her left cheekbone in pale relief. No visible acne, minimal aging lines despite age 34. Grooming is functional rather than ornate; she maintains herself with the efficiency of someone constantly in transit.",
+    "distinguishing_marks": [
+      "Three thin ritual scars on left cheekbone, vertical orientation, pale and precise — marks of heritage or initiation",
+      "Faint circular burn mark on inside of right wrist, approximately 3cm diameter, partially faded — consistent with industrial accident or tool mishap"
+    ],
+    "visible_augmentations": "Patterned irises (amber and rust geometric, slow-spinning) are immediately noticeable during face-to-face negotiation and are deliberately deployed as a distraction tactic. The subdermal storage pocket in her left forearm creates a subtle asymmetry in the skin's surface and a faint linear scar where access panels are located; visible only if she rolls up her sleeve. Enhanced scent glands are not visibly apparent but may be inferred from her habit of inhaling deeply near goods or strangers.",
+    "posture_movement": "Moves with the deliberate, efficient physicality of someone accustomed to loading and unloading cargo. Her stance is grounded and stable, weight distributed for balance. She stands slightly forward of her center of gravity, ready to move. When stationary at her stall, she occupies space with comfortable authority — no nervous shifting. Her hands are frequently in motion, arranging goods or gesturing during negotiation. Her gaze is direct and assessing.",
+    "clothing_style": "Layered in the deliberately chaotic aesthetic of a long-term trader. Her default outfit consists of: a base layer of durable, unmarked utility clothing (Tier 3-4 quality, practical fabrics); multiple outer layers in varying states of repair and modification — canvas vests, linen overshirts, a heavy wool coat patched with fabric scraps in contrasting colors; cargo trousers with deep pockets and utility loops holding various tools and small trade goods; reinforced boots with worn leather and metal heel-taps. Accessories include: a collection of small pouches hung from a worn leather belt, a hand-woven satchel across her chest, and various tokens/charms hanging from her clothing. Colors are muted earth tones (browns, deep reds, forest green, charcoal) interrupted by occasional bright fabric patches. Her clothing is visibly maintained and cleaned but bears the creases and wear of constant movement. Nothing is new; everything is deliberately chosen and functional. No corp branding visible."
+  },
+  "image_prompt": "Cyberpunk character portrait, woman with warm deep brown skin and three ritual scars on her left cheekbone, massive natural black hair adorned with transit tokens and bone clasps, amber-rust geometric patterned irises with slow-spinning effect. Stocky athletic build, age 34, medium height. Wearing layered trader's clothing: earth-tone cargo vest, patched linen shirt, heavy wool coat with fabric scraps, deep utility pockets, worn reinforced boots. Subdermal storage pocket visible on left forearm with faint linear scar. Standing in Grand Crossing Gate market stall, surrounded by unlicensed goods and contraband comfort items on shelves behind her. Warm amber and rust lighting from stall lamps, moody marketplace atmosphere with neon signs blurred in background. Confident, assessing expression. Highly detailed, photorealistic cyberpunk aesthetic, gritty and lived-in. --ar 2:3 --v 6"
 }

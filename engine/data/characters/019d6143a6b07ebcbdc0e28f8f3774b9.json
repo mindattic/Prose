@@ -103,5 +103,26 @@
     "Geartown",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Ghanaian-Russian)",
+    "height_cm": 182,
+    "weight_kg": 89,
+    "build": "Athletic and broad-shouldered with lean musculature; carries himself with the economical movement of someone used to confined spaces and quick exits",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Closely cropped fade with defined lines, maintained weekly",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with slight amber undertone",
+    "skin_tone": "Medium-warm complexion with olive undertones from mixed heritage",
+    "complexion": "Sharp cheekbones, strong jawline; five o'clock shadow is his default state. No facial hair beyond stubble. Small scar tissue above right eyebrow from old break. Skin shows the weathering of someone in his forties, though he's only 37—premature aging from stress and poor sleep cycles",
+    "distinguishing_marks": [
+      "Surgical scar running 8cm along right inner forearm, pale and old—consistent with augmentation removal or installation",
+      "Faded tattoo on left wrist: circuit board pattern in deep blue, partially covered by a newer overlay of Cyrillic characters (family name in his mother's script)",
+      "Burn scar across left knuckles, about 3cm across, from an acetylene torch accident in his twenties"
+    ],
+    "visible_augmentations": "Reinforced knuckles with barely-perceptible subdermal plating visible as faint silver lines across his hands when light catches them. Faint neural interface scarring at base of skull—suggests subcutaneous array. No obvious chrome limbs or LED optics; he operates in a tier where subtlety keeps you alive.",
+    "posture_movement": "Moves with deliberate economy—never wasted motion. Tends to keep his hands visible and relaxed, a practiced tell of someone used to tense negotiations. Favors his left side slightly. Leans against walls rather than sitting; always positions himself with sightlines to exits.",
+    "clothing_style": "Tier 3-4 pragmatist. Favors dark-colored utility jackets from mid-tier manufacturers (Kessler, Vertex) with reinforced pockets and hidden compartments. Wears matte-black tactical pants with cargo thigh pockets. Steel-toed boots, scuffed and practical. A worn leather jacket over everything—old money, inherited piece that's been repaired more than once. No jewelry except a simple titanium ring on his right ring finger (no wedding band). Clothes smell faintly of machine oil and cold tobacco."
+  },
+  "image_prompt": "Full-body portrait of a 37-year-old male fixer, athletic build, dark skin with olive undertones, closely cropped silver-threaded dark hair, deep brown eyes with a thousand-yard stare. Wearing matte-black tactical pants and reinforced utility jacket over worn leather coat, steel-toed boots. Subdermal knuckle plating barely visible under skin. Standing in three-quarter pose against a grimy Geartown warehouse interior, cyan and amber industrial lighting, cinematic noir cyberpunk aesthetic, sharp focus on weathered hands and scarred forearm, moody atmospheric haze, gritty documentary realism, shot in high contrast --ar 2:3 --v 6"
 }

@@ -254,5 +254,25 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pure Hand"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "West African (Igbo) / Greek / Hungarian",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Long-limbed and lean with minimal muscle definition; the physique of someone who moves constantly but doesn't lift — all angles and nervous energy, built for speed and slipping through crowds rather than standing ground",
+    "hair_color": "Natural dark brown with slight reddish undertone",
+    "hair_style": "Soft, voluminous natural cloud; kept deliberately untamed, often touched unconsciously when concentrating or calculating",
+    "hair_length": "Medium (8-10cm when fully grown out)",
+    "eye_color": "Deep brown with faint retinal display overlay visible as subtle iridescent shimmer in bright light",
+    "skin_tone": "Deep warm brown with slight golden undertone characteristic of mixed Igbo-Mediterranean heritage",
+    "complexion": "Youthful face with high cheekbones and an expressive mouth; skin clear and well-maintained (grooming is part of his professional presentation); a softness around the eyes that contradicts the calculating sharpness behind them when he's working",
+    "distinguishing_marks": [
+      "Cosmetic amber cat ears mounted subdermal at temples, fully articulated and sound-reactive; they swivel independently toward noise sources",
+      "Faint scar tissue along left inner wrist from early implant installation (subdermal quick-calc), barely visible but noticeable up close"
+    ],
+    "visible_augmentations": "Amber cat ears are immediately obvious and intentional; retinal display overlay only visible in certain lighting angles as a faint iridescent flicker. The subdermal quick-calc implant is completely invisible.",
+    "posture_movement": "Constantly in motion — fidgeting, weight shifting, fingers moving through rapid counting gestures even when empty-handed. When relaxed, he appears seventeen: slouched, open-faced, boyish. When working, his spine straightens, his expression hardens into focused calculation, and he appears five to ten years older. His movements are fluid and economical; he never wastes motion but creates the impression of casual ease.",
+    "clothing_style": "High-tier Chatham Flats casual: tailored but not formal. Recent Φ2,400-3,200 investment pieces — smart-fabric shirts that shift subtle iridescence, fitted synthlinen slacks in charcoal or deep blue, vintage leather blazers from early-2200s stock (a status marker in the Narrows). Always wears a chain bracelet of mixed metals (gold, silver, chrome) — a gift from his first major score, never removed. Shoes are always pristine: current rotation is high-end synth-leather street runners in black or deep gray. The overall effect is carefully curated to signal: young, successful, trustworthy, and smart enough to know how much to spend without looking desperate."
+  },
+  "image_prompt": "22-year-old mixed-race male with deep brown skin, long soft natural hair cloud, expressive face and calculating eyes; prominent amber cat ears with articulated swivels; wearing tailored smart-fabric shirt with subtle iridescence, charcoal synthlinen slacks, vintage leather blazer, pristine black sneakers; metal chain bracelet visible on wrist; standing in urban corridor with neon signage overhead, rain-slick pavement reflecting light, Cyberpunk 2226 Great Lakes Metropolitan Zone setting; dramatic side lighting catching the retinal display shimmer in his eyes; tense confident posture; shallow depth of field emphasizing his youthful but sharp expression; moody teal and amber color grading; film noir meets hyper-tech aesthetic --ar 2:3 --v 6"
 }

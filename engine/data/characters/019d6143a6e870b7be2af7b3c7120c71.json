@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "Montclare Quiet, Terrace Row Housing Unit 14, near Milwaukee and Damen",
-  "description": "Tadewos Villanueva-Khatri is a slender, slightly stooped man who still dresses as though he is going to stand in front of a classroom — collared shirt, pressed, one color of ink on his pocket, chalk residue on his left hand even though he hasn't taught in four years, because he cannot stop teaching things to whoever is nearby. His hair is gone except for a precise white beard he maintains with what his grandchildren call 'weird dedication.' He has cat ears — a geneware choice from his mid-forties, the soft grey kind with slight tabby markings, that he got because his students loved them and he never had them reversed. They fold slightly when he is embarrassed, which he finds mortifying because it cannot be hidden.\n\nHe is raising Amara, 9, and Deshi, 12, his daughter Priya's children, since Priya's disappearance into a Helix Biosystems labor contract three years ago that has not produced reliable contact in eighteen months. He does not use the word 'disappeared' in front of the children. He is calm about it in public and wakes at 3 AM about it in private. His pension from the Meridian 88 Municipal Education Authority does not cover three people adequately, and he has begun supplementing it by tutoring neighborhood children for small fees, which the MEA has quietly informed him may technically violate his pension terms. He is currently ignoring this letter.",
+  "description": "Tadewos Villanueva-Khatri is a slender, slightly stooped man who still dresses as though he is going to stand in front of a classroom — collared shirt, pressed, one color of ink on his pocket, chalk residue on his left hand even though he hasn't taught in four years, because he cannot stop teaching things to whoever is nearby. His hair is gone except for a precise white beard he maintains with what his grandchildren call 'weird dedication.' He has cat ears — a geneware choice from his mid-forties, the soft grey kind with slight tabby markings, that he got because his students loved them and he never had them reversed. They fold slightly when he is embarrassed, which he finds mortifying because it cannot be hidden.\n\nHe is raising Amara, 9, and Deshi, 12, his daughter Priya's children, since Priya's disappearance into a Helix Biosystems labor contract three years ago that has not produced reliable contact in eighteen months. He does not use the word 'disappeared' in front of the children. He is calm about it in public and wakes at 3 AM about it in private. His pension from the GLMZ Municipal Education Authority does not cover three people adequately, and he has begun supplementing it by tutoring neighborhood children for small fees, which the MEA has quietly informed him may technically violate his pension terms. He is currently ignoring this letter.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -62,7 +62,7 @@
   "narrative_function": "Human face of pension inadequacy and family disruption from corponation labor contracts; source of neighborhood knowledge and connections; represents civic institution failure; quest-giver for storylines involving missing persons and corponation labor practices",
   "augmentations": "Cat ears, grey tabby geneware (cosmetic, from mid-forties, functional — fold emotionally); reading glasses (physical, deliberately non-augmented)",
   "daily_life": "Gets the grandchildren to the local school by 0730, returns to tutor morning students until noon, shops for the cheapest adequate groceries in the Montclare market, picks the children up, helps with homework until 2000, reads until midnight with the lamp low so as not to waste power allocation.",
-  "affiliation": "Meridian 88 Municipal Education Authority (retired); Montclare Quiet Parents and Elders Network; informal tutoring network",
+  "affiliation": "GLMZ Municipal Education Authority (retired); Montclare Quiet Parents and Elders Network; informal tutoring network",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -242,7 +242,7 @@
   "related_entities": [
     "Helix Biosystems",
     "Montclare Quiet",
-    "Meridian 88",
+    "GLMZ",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Big Rig",
     "IRONLIMB Spectre SV-4 Stealth Arm",
@@ -251,5 +251,26 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "The Milwaukee Core"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "East African / South Asian / Hispanic (Ethiopian / Indian / Spanish)",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Slender and slightly stooped with age, shoulders rounded forward from decades of leaning over student desks. Wiry frame shows defined muscle structure but lacks bulk — the build of someone who has never prioritized physical conditioning.",
+    "hair_color": "White",
+    "hair_style": "Completely bald scalp; precise white beard maintained with meticulous care, trimmed to approximately 2cm length",
+    "hair_length": "Shaved",
+    "eye_color": "Deep brown, warm and patient",
+    "skin_tone": "Warm medium brown with golden undertones, weathered by age and consistent sun exposure through decades of outdoor supervision duty",
+    "complexion": "Fine lines around eyes and mouth from smiling, slight age spots on forehead and temples, skin texture slightly papery but healthy. Permanent chalk dust embedded in creases of left palm and fingernails despite four years of retirement.",
+    "distinguishing_marks": [
+      "Pair of functional grey tabby geneware cat ears protruding from top of skull, with realistic fur texture and slight natural tabby striping; ears fold backward slightly when embarrassed or stressed",
+      "Small ink stain on left shirt pocket from decades of pen use — same location, same pattern, replaced regularly",
+      "Fine white scar on right wrist approximately 4cm long, from a teaching incident involving broken lab glassware in 1987"
+    ],
+    "visible_augmentations": "Functional grey tabby geneware cat ears with naturalistic fur texture and tabby markings. Ears are fully mobile and reflexively respond to emotional states. Reading glasses are deliberately non-augmented physical frames (wire-rimmed, vintage aesthetic).",
+    "posture_movement": "Walks with slight forward lean from spinal compression, movements deliberate and economical. Tends to stand with hands clasped or one hand resting on a surface for stability. Frequently pauses mid-conversation to consider phrasing — a teacher's habit. Ears fold noticeably when embarrassed or uncertain, which he finds involuntarily revealing.",
+    "clothing_style": "Tier 4 (working class, careful). Wears pressed collared shirts in neutral colors (white, pale blue, tan) with visible wear at collar and cuffs — garments mended carefully rather than replaced. Dark trousers, always clean, slightly bagged at the knees. Worn leather shoes, resoled twice. A cardigan sweater, grey wool, over everything in cool months. No visible corporate affiliation or status markers. Clothing suggests a man maintaining personal dignity on a fixed and inadequate income."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of elderly East African-South Asian-Hispanic male, age 67, bald with precise white beard, slender stooped posture. Distinctive grey tabby geneware cat ears with functional fur and natural tabby markings protruding from skull, ears slightly folded back showing embarrassment. Deep brown eyes, warm patient expression, fine facial lines. Wearing carefully pressed pale blue collared shirt with visible ink stain on pocket, grey wool cardigan, wire-rimmed non-augmented reading glasses. Left hand shows permanent chalk dust in palm creases. Standing in modest Tier 4 apartment interior, warm lamplight, domestic and educational setting, gentle expression, photograph-realistic, documentary style, compassionate mood, cinematic lighting, shallow depth of field --ar 2:3 --v 6"
 }

@@ -197,5 +197,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Pale Mile"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Mongolian / West African (Ghanaian)",
+    "height_cm": 163,
+    "weight_kg": 52,
+    "build": "Slight and wiry, with the compact muscularity of someone who has spent twelve years holding steady tension in their hands and shoulders. No excess weight; every line efficient.",
+    "hair_color": "Deep ox-blood red fading to copper at the tips (geneware-modulated, cycles through colors)",
+    "hair_style": "Textured, shoulder-length with asymmetrical undercut on left side; deliberately maintained to show the color gradient",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, wide-set, alert and expressive",
+    "skin_tone": "Warm medium tone blending Mongolian and Ghanaian heritage; clear with the slight sheen of someone who maintains their appearance professionally",
+    "complexion": "High cheekbones, wide-set eyes, mouth that naturally rests in a half-suppressed grin. No facial hair. Skin well-maintained but bearing minor occupational marks — small nicks and healed cuts on knuckles from four years of barbering and amateur tattooing. Expression typically carries suppressed amusement or mild irritation.",
+    "distinguishing_marks": [
+      "Bioluminescent subcutaneous tracery running along both forearms in pale blue branching lines, reactive to emotional state (pulses visibly when excited or anxious)",
+      "Faint linear scarring across the dorsal surfaces of both hands from reinforced tendon threading installation (civilian medical grade, now largely faded)",
+      "Small burn scar on right ring finger from soldering work on the E.L.F. offerings at Phantom Chair (approximately 1cm diameter, pale against skin)"
+    ],
+    "visible_augmentations": "Bioluminescent forearm tracery visible when sleeves are rolled or pushed up (usually covered in professional settings). The geneware hair-cycling mod is visible as the natural gradient and saturation of the ox-blood-to-copper fade — too perfect and too-consistent to be natural dye. Reinforced tendon threading is subcutaneous but occasionally visible as faint linear scarring on hands.",
+    "posture_movement": "Quick and economical in motion, with the coiled readiness of someone used to precise, delicate work. Tends to fidget with their hands — rotating wrists, flexing fingers — a nervous habit. When focused on barbering or tattooing, movement becomes unnaturally still and precise. Makes direct eye contact, often too much of it. Leans forward when listening, creating an impression of intensity even in casual conversation.",
+    "clothing_style": "Tier 3 practical with intentional style. Typically wears well-fitted black or charcoal work pants (often Carhartt or similar utility brand) with deep pockets. Tops are a mix of vintage band tees, fitted long-sleeve shirts (worn to cover the forearm tracery in professional contexts), and a custom sleeveless apron with hand-embroidered Bronzeline landmarks over the Phantom Chair logo. Heavy-soled work boots, often scuffed. A battered leather jacket (Tier 3 vintage, well-loved) worn over everything in winter. Minimal jewelry except for a hand-soldered ring on the left index finger made from salvaged wire and a tiny opalescent bead — their own work. Practical, worn, and carefully maintained; nothing new or status-signaling, but nothing neglected either."
+  },
+  "image_prompt": "Nonbinary barber and tattoo artist, 26 years old, East Asian and West African mixed heritage, slight athletic build, shoulder-length deep ox-blood red hair fading to copper at tips, dark brown wide-set eyes with half-suppressed grin, warm medium brown skin with high cheekbones. Wearing fitted black work pants and a custom sleeveless apron over a long-sleeve fitted black shirt. Both forearms show pale blue bioluminescent subcutaneous branching patterns, faintly glowing. Standing in a converted shipping container barbershop with cracked leather chairs, mirrors ringed with LED offerings and soldered electronics, hand-painted neon-style ceiling mural of exaggerated skyline visible above. Hands are extraordinarily steady and graceful. Moody cyberpunk Tier 3 urban setting, warm tungsten lighting mixed with cool neon glow from shop fixtures, shallow depth of field focused on character's face and forearms, photorealistic with slight stylized edge, gritty Chicago Bronzeline aesthetic, 2226 timeline details visible in background tech. --ar 2:3 --v 6"
 }

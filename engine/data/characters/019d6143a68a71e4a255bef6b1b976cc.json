@@ -253,5 +253,26 @@
     "Nightlight",
     "Iron"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Polish / West African (Yoruba diaspora)",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and wiry, muscle tone maintained by constant navigation through narrow passages and climbing; shoulders slightly hunched from years of stooping in low-ceiling tunnels",
+    "hair_color": "Natural dark brown with mineral-dust grey streaking",
+    "hair_style": "Tight fade on sides, central ridge of coiled hair standing upright",
+    "hair_length": "Short (fade 3mm sides, ridge 4-5cm)",
+    "eye_color": "Amber with elongated pupils (cat-like dilation in darkness), faintly luminescent in low light",
+    "skin_tone": "Grey-blue undertone from years without sunlight exposure; baseline mid-brown complexion beneath the pallor",
+    "complexion": "Deeply weathered, angular jaw and high cheekbones; permanent tension lines around eyes; skin texture rough from mineral-laden water and lack of moisture; no facial hair, clean-shaved",
+    "distinguishing_marks": [
+      "UV-reactive tunnel-map tattoos covering all ten fingers in faded ultraviolet ink — segments of actual route cartography visible only under blacklight",
+      "Fine white scar tissue along both palms in a grid pattern from subdermal pressure-sensor mesh installation",
+      "Dark water stain discoloration along hairline and ears from prolonged exposure to iron-rich seepage"
+    ],
+    "visible_augmentations": "Amber photoreceptor eyes with cat-slit pupils that elongate visibly in darkness; faint luminescence in dim light. Subdermal mesh visible as subtle grid scarring on both palms. UV tattoos on fingers are invisible in normal light but distinctive under any blacklight source.",
+    "posture_movement": "Economical, silent movement — walks with a slight forward lean as if perpetually evaluating floor stability. Hands move deliberately, fingers splayed to assess surroundings via pressure sensors. Sits perfectly still for hours without fidgeting. Speaks rarely; when he does, words are sparse and precise.",
+    "clothing_style": "Tier 4 utilitarian — worn tactical pants with reinforced knees and multiple cargo pockets (patched multiple times), grey ribbed undershirt darkened by perpetual damp, heavy breathable shell jacket with sealed seams (military surplus or Undertow issue). Boots are steel-toed Dunlop industrial grade, resoled at least twice. One wrist-mounted device: a battered handheld signal repeater with cracked screen running custom firmware. No jewelry. Everything smells faintly of concrete dust and rust."
+  },
+  "image_prompt": "Portrait of a lean, weathered 41-year-old man with grey-blue pallid skin and deep-set amber eyes with cat-like dilated pupils faintly glowing in dim light; shaved sides with a tight central ridge of dark coiled hair streaked mineral grey; angular jawline and high cheekbones; angular build from years underground; hands with visible grid scarring from subdermal implants and faded UV-reactive tunnel-map tattoos on fingers barely visible in regular light; wearing worn grey tactical pants with reinforced knees, dark ribbed undershirt, heavy military-grade shell jacket with sealed seams; wrist-mounted battered signal repeater device; underground tunnel setting with corroded metal pipes, dripping iron-rich water, concrete walls with moisture damage, dim amber and cool blue emergency lighting; photorealistic, cinematic lighting emphasizing the paleness and amber glow of eyes, gritty cyberpunk noir aesthetic, 35mm documentary style, shot in Deepwell Station sub-level --ar 2:3 --v 6"
 }

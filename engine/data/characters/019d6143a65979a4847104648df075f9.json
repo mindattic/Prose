@@ -263,5 +263,26 @@
     "Silver",
     "The Pure Hand"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Peruvian Andean",
+    "height_cm": 178,
+    "weight_kg": 89,
+    "build": "Broad-shouldered and substantial, the muscular frame of her younger years redistributed into solid mass — thick through the torso and arms, strong-legged. No softness, but no visible tension either. The physique of someone who has spent decades handling heavy machinery and salvage work.",
+    "hair_color": "Dark brown with silver streaking throughout",
+    "hair_style": "Locs, pinned up and secured under a work cap during operating hours",
+    "hair_length": "Long (shoulder-length when unpinned)",
+    "eye_color": "Deep brown, unaugmented",
+    "skin_tone": "Deep warm brown with Ghanaian-Peruvian undertones — the kind of complexion that photographs poorly under fluorescent light but holds its color in natural sun",
+    "complexion": "Weathered and lined, particularly around the eyes and forehead — the map of two decades of squinting at ledgers and machinery. No makeup. Grooming is functional: she keeps herself clean and her hands meticulously maintained despite the work, a point of quiet pride.",
+    "distinguishing_marks": [
+      "Dense network of small, deliberate scars across both hands and forearms — individual marks from twenty-two years of precise repair and salvage work, each one catalogued in her memory",
+      "Faint but visible scar tissue around the right orbital socket, evidence of old trauma and reinforcement surgery; the repair work is competent but not cosmetic-grade, slightly asymmetrical when caught in certain light",
+      "Callused palms and fingers with filed nails, practical rather than aesthetic"
+    ],
+    "visible_augmentations": "Color-changing dermal layer covering both forearms from wrist to elbow, cycling slowly and randomly through muted terracotta, sage green, and dusty ochre tones independent of her emotional state (the feedback calibration failed years ago and was never repaired). The effect is hypnotic and slightly unsettling — like watching rust and verdigris move across living skin. Subdermal RFID scanner in right palm is invisible but leaves a faint pale scar-line where it was installed.",
+    "posture_movement": "Moves with the economical precision of someone who has learned to conserve energy over decades. Stands with weight evenly distributed, shoulders back but not rigid. Her gaze is direct and her attention is absolute when focused on a person or task — she does not fidget or look away. When walking through the salvage yard, her path is efficient; she knows exactly where every piece of inventory is. Her hands move with surgical deliberateness, even when performing rough work.",
+    "clothing_style": "Strictly utilitarian Tier 3-4 workwear: heavy canvas pants with reinforced pockets (always full of small tools, inventory tags, worn data-chips), steel-toed boots scuffed and resoled multiple times, a layered system of durable shirts and vests in grays and dark blues. A long canvas work coat with multiple pockets, bearing the faded logo of Osei Reclamation Partners. She wears a battered work cap during operating hours — not for fashion, but to keep her locs secured and debris out. No jewelry except a old band on her left ring finger, never removed. All clothing is functional, well-maintained, but clearly well-worn. Nothing nuevo, nothing flashy. In the Stockyard, her appearance signals exactly what she is: a veteran operator who spends her money on inventory and security, not status."
+  },
+  "image_prompt": "A 54-year-old Ghanaian-Peruvian woman, broad-shouldered and substantial, standing in the industrial glow of a salvage yard at dusk. She wears heavy canvas workwear in muted grays and blues, a worn work cap pinning up long dark locs with silver threading. Her most striking feature: both forearms are covered in a color-changing dermal layer slowly cycling through muted terracotta, sage green, and dusty ochre tones. Her hands are scarred from decades of precise machinery work. Her face is weathered and lined, with a faint asymmetry around the right eye from old orbital trauma — the cosmetic repair visible but not polished. She stands with economical posture and absolute stillness, her gaze direct and focused. Behind her: industrial scaffolding, stacked salvage, halogen work-lights casting long shadows. Cyberpunk noir, gritty realism, documentary photography, moody afternoon light, cinematic depth, worn and lived-in aesthetic. --ar 2:3 --v 6"
 }

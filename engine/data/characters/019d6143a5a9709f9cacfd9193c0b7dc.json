@@ -282,5 +282,26 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Spanish / West African (Akan)",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Lean and angular with visible musculature from decades of weapon handling and sustained physical discipline. No excess body fat. Shoulders slightly narrower than average, but corded with functional strength.",
+    "hair_color": "Dark brown with silver streaking at temples and along the left side",
+    "hair_style": "Pulled back in a functional braid, often wrapped with synthetic cord for field work",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, naturally warm but hardened by professional distance",
+    "skin_tone": "Medium olive-brown with sun damage from rooftop work and exterior exposure",
+    "complexion": "Weathered face with deep lines around the eyes and mouth from squinting through scopes and years of stress. Jaw is sharp and prominent. Minimal grooming beyond functional necessity — no cosmetics, no jewelry.",
+    "distinguishing_marks": [
+      "Burn scar along the inside of her left forearm, pale and textured, approximately 8cm long — old weapons accident",
+      "Thin scar tissue tracing her right collarbone, barely visible but sensitive to pressure — shrapnel from a contract gone wrong",
+      "Calluses on her right hand are severe, especially on the trigger finger and index finger knuckle — decades of weapon use"
+    ],
+    "visible_augmentations": "Chrome smartgun link interface embedded in right forearm, running from wrist to mid-forearm. The integration is clean but deliberately visible — brushed titanium faceplate with thin LED status indicators (amber/red when active). No attempt to conceal it. The chrome contrasts sharply with her natural skin tone.",
+    "posture_movement": "Economical and deliberate. She doesn't waste motion. When at rest, her right arm rests naturally at her side with the augmented forearm slightly forward — a habit from weapon readiness. Eyes constantly scanning environments. Tense baseline, but controlled. Moves like someone who has learned that hesitation dies first.",
+    "clothing_style": "Tier 4 utilitarian — function over aesthetics. Weathered black tactical jacket with reinforced shoulders and multiple chest pockets (Resilience brand, modular). Matte gray undershirt, long-sleeved to minimize the visibility of the smartgun link when she chooses discretion. Cargo pants in dark charcoal with thigh and calf pockets (ammunition, tools, dead drops). Steel-toed boots, scuffed and re-soled twice. A thin synthwool scarf worn loose around the neck — part camouflage, part utility. No visible insignia or gang markers; anonymity is the brand."
+  },
+  "image_prompt": "58-year-old woman, lean and angular, dark olive-brown complexion with silver-streaked dark brown hair pulled back tightly, sharp weathered face with deep lines around dark eyes. Right forearm features visible brushed titanium smartgun link interface glowing with amber LEDs. Wearing matte black tactical jacket, gray long-sleeve undershirt, dark cargo pants, steel-toed boots. Standing at industrial rooftop edge overlooking megastructure shelters and Chicago skyline at dusk, neon light bleeding through smog. Moody atmospheric lighting, cinematic depth, cyberpunk urban sniper aesthetic, cool color palette with warm amber glow from augmentation. Professional soldier posture, eyes distant and focused. Shot from 45-degree angle emphasizing height and gear. Film noir meets cyberpunk, 35mm film grain, gritty texture --ar 2:3 --v 6"
 }

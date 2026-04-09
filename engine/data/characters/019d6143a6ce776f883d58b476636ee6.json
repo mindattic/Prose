@@ -43,7 +43,7 @@
       "Mistakes pattern recognition for wisdom — sees connections that aren't there",
       "Assumes the worst in corporate people, missing the rare ones who could be allies"
     ],
-    "secret": "Sinan Navarro-Afriyie sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Sinan Navarro-Afriyie sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
@@ -157,7 +157,7 @@
     "strengths": [
       "natural leadership presence",
       "ability to remain calm under fire",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "substance dependency — functional but fragile",
@@ -288,5 +288,26 @@
     "Slagworks Industrial",
     "Pellucid Systems"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Turkish / Ghanaian",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Rawboned and lean — the kind of frame that reads as either ascetic discipline or chronic resource scarcity. Minimal body fat, visible tendon definition in forearms and neck. Efficient rather than muscular.",
+    "hair_color": "Dark brown, natural with premature silver threading at temples",
+    "hair_style": "Short, practical cut with slight fade — maintained but not groomed",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint amber undertone — natural, no augmentation",
+    "skin_tone": "Medium brown with warm undertones — the mixed heritage evident in subtle feature asymmetry",
+    "complexion": "Sharp cheekbones, narrow jaw, slight scar tissue around left eye socket from old trauma. Skin texture weathered but not aged — sun-exposure and environmental stress rather than years. Stubble permanent fixture, grooming functional rather than aesthetic.",
+    "distinguishing_marks": [
+      "Surgical scar running from right inner wrist to mid-forearm where smartgun link was installed, chrome visible at entry point",
+      "Thin white scar crossing left temple to cheekbone, roughly 3cm",
+      "Tattoo on right shoulder blade — geometric circuit pattern in white ink, faded"
+    ],
+    "visible_augmentations": "Right forearm displays chrome smartgun link interface — visible at wrist and mid-forearm as brushed steel panels with subtle LED status indicators. No visible respiratory modifications, but there is a barely-noticeable seam along his ribs where synthetic lung integration occurred.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Slight forward lean when at rest, suggests constant scanning of environment. Right arm carries slightly different tension than left due to chrome weight distribution. Eyes track exits and entry points habitually.",
+    "clothing_style": "Tier 3-4 runner aesthetic. Charcoal synthweave cargo pants with reinforced pockets and concealed weapon rig. Black hooded tech-jacket with integrated temp-regulation — visible wear at collar and cuffs. Neutral colors, practical fabrics, minimal branding. Shoes are worn Yakamaki tactical boots, well-maintained. Wears a discrete wrist-mounted comm unit, older model but reliable."
+  },
+  "image_prompt": "Portrait of a tall, lean 26-year-old male with Turkish-Ghanaian mixed heritage, dark brown hair with silver threading at temples, sharp cheekbones and narrow jaw. Right forearm displays visible chrome smartgun link interface with subtle LED indicators. Wearing black hooded tech-jacket over charcoal synthweave cargo pants, worn tactical boots. Dark amber-brown natural eyes, faint scar tissue around left eye. Posture tense and alert, economical movement frozen mid-frame. Cyberpunk fixer aesthetic, Tier 3 runner, The Overhang residential shelves background with megastructure shadow. Moody blue and amber lighting, slight rain mist, industrial noir atmosphere, sharp focus on face and chrome forearm detail, cinematic depth of field. Midjourney cyberpunk character portrait style --ar 2:3 --v 6"
 }

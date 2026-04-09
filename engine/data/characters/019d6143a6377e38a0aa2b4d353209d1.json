@@ -243,5 +243,26 @@
     "Gold",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Icelandic",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry with functional muscle tone from constant movement and lifting during deliveries; no excess weight, everything economical",
+    "hair_color": "Natural black with hints of dark brown in strong light",
+    "hair_style": "Worn in small, intricate cornrows or box braids — pinned up under a patterned cloth wrap during work, loose and flowing when off-duty as a deliberate psychological reset",
+    "hair_length": "Medium (shoulder-length when unbound)",
+    "eye_color": "Deep brown with gold-flecked undertones",
+    "skin_tone": "Rich, warm dark brown with warm undertones reflecting West African heritage",
+    "complexion": "Sharp, defined cheekbones; wide gap between front teeth that dominates her smile; skin well-maintained and clear despite irregular sleep; minimal makeup, favors natural appearance",
+    "distinguishing_marks": [
+      "Bioluminescent subdermal shimmer across collarbones and upper chest — soft gold tone visible under skin, brighter in low light, glows faintly during emotional intensity or physical exertion",
+      "Fine-line tattoo on inner left wrist: a stylized doorway symbol matching the Threshold mural in her clinic",
+      "Small burn scar on the back of her right hand from a sterilization accident early in her practice — she refuses to have it removed"
+    ],
+    "visible_augmentations": "Bioluminescent collarbones glow softly in dim conditions. Small, nearly invisible scar line behind her right ear where the auditory enhancement implant sits (detectable only on close inspection). No visible chrome or structural modifications.",
+    "posture_movement": "Moves with rapid, economical efficiency — never wasted motion. Stands with weight forward on the balls of her feet, ready to move. Hands are constantly in motion: gesturing while talking, adjusting wraps, checking equipment. When focusing on a patient, her movement slows deliberately and becomes precise. When tired, slight forward hunch in shoulders from hours bent over labor beds.",
+    "clothing_style": "Tier 3-4 practical: colorful, patterned wrap cloths in rotation (West African and contemporary GLMZ textile designs), worn over neutral base layers. Favors loose linen trousers or soft cargo pants with deep pockets. Durable canvas shoes or slip-on clogs for quick movement. Minimal jewelry except for a thin silver bangle on her left wrist (gift from a patient). White or neutral clinical coat for appointments, but rarely buttons it fully — treats it as a signal rather than a barrier. Off-duty: worn denim, soft sweaters, the same canvas shoes. Nothing expensive, everything functional and well-maintained."
+  },
+  "image_prompt": "A West African-Icelandic woman in her late thirties, compact and energetic with rich dark brown skin and sharp cheekbones, wearing colorful patterned wrap cloth and neutral linen pants, standing in a dimly lit clinic room with her bioluminescent collarbones glowing soft gold beneath her skin, gap-toothed smile warm and practiced, hands gesturing mid-sentence, cornrowed hair pinned up under the wrap, soft clinical lighting on her face, candid documentary-style cyberpunk portrait, low depth of field, intimate close-up, warm color grading with gold and amber tones, realistic skin texture, professional midwife aesthetic, GLMZ community health clinic interior in background --ar 2:3 --v 6"
 }

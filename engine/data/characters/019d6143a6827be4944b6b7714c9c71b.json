@@ -225,5 +225,26 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Romanian / Scandinavian",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thickset through the chest and upper back, with the density of someone who has done manual work most of his life. His frame has softened slightly with age but retains functional strength; his hands and forearms are disproportionately muscular from decades of precision surgical work.",
+    "hair_color": "Dark brown with pronounced salt-grey at the temples",
+    "hair_style": "Close-cropped, military-neat, no styling product",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm undertone; pupils often dilated behind the flip-down magnifying lenses he wears",
+    "skin_tone": "Deep umber with warm undertones, the complexion of West African heritage expressing strongly",
+    "complexion": "Well-maintained but weathered by chemical exposure and years of close work under harsh clinic lighting. Fine creases around the eyes and mouth suggest more smiling than scowling. Clean-shaven daily, methodical grooming as a form of professional ritual. Faint chemical smell lingers on the skin.",
+    "distinguishing_marks": [
+      "Faded bioluminescent ink constellations scattered across both forearms and across the collarbone—geometric patterns in dim gold that glow faintly under black light, applied in his twenties and now patchy from years of exposure",
+      "Thin surgical scar running along the inside of his left wrist where the steady-hand servo implant was installed, nearly invisible but palpable to the touch",
+      "Matching scar on the right wrist, similarly faint"
+    ],
+    "visible_augmentations": "Flip-down magnifying lens frames (modified safety goggles repurposed as a permanent tool) hanging around his neck when not in use, visibly scratched and taped at one hinge. Micro-servo implants in both wrists are not externally visible but occasionally a faint mechanical whirr can be heard when his hands move with precision. Faded bioluminescent ink visible on forearms and collarbone.",
+    "posture_movement": "Moves with deliberate, economical gestures. Stands with weight evenly distributed, ready for long hours of work. His hands are almost preternaturally steady—he does not fidget or adjust his clothing compulsively. Speaks slowly, often pausing mid-sentence to demonstrate or clarify a point. When focused on a procedure, his entire body quiets into absolute stillness.",
+    "clothing_style": "Tier 3-4 working professional. Wears a heavy canvas work apron over plain grey or navy scrubs—the apron pocketed and stained with antiseptic, iodine, and trace amounts of blood. Under the apron, usually a long-sleeved undershirt in grey or cream to cover the augmentation scars. Worn but well-maintained leather work boots with good grip. A faded tactical vest in charcoal (original purpose unknown, repurposed as storage) worn on cooler days. No visible corpo branding or luxury items; everything is functional and replaceable. Wears a single piece of jewelry: a worn bronze ring on his right ring finger, unmarked and very old."
+  },
+  "image_prompt": "A 47-year-old West African man with greying temples and deep umber skin, standing in a cyberpunk street clinic inside a shipping container. He has broad shoulders and steady hands, wearing well-used grey scrubs beneath a heavy stained canvas work apron. Flip-down magnifying lens frames hang around his neck. Faded bioluminescent geometric tattoos glow softly in dim gold across his forearms and collarbone. The clinic is bathed in cool blue-white LED work lighting. Behind him, medical equipment and grey-market pharmaceuticals line metal shelves. His expression is calm and focused, hands perfectly still. Grounded, weathered, skilled. Photorealistic, shallow depth of field, slight warm color cast from old karité tea cup on the work surface. --ar 2:3 --v 6"
 }

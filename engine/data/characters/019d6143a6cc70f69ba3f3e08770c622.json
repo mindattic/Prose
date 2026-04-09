@@ -181,5 +181,26 @@
     "Copper",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Sahelian) / Polynesian / Bosnian",
+    "height_cm": 172,
+    "weight_kg": 89,
+    "build": "Broad-shouldered and compact, age has settled his mass lower into his frame; muscular density in the chest and shoulders has compressed slightly with time, but he remains solid and grounded",
+    "hair_color": "White",
+    "hair_style": "Long locks, threaded with thin copper wire and tiny capacitor beads",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Deep warm brown, reflecting West African heritage",
+    "complexion": "Face marked with traditional Sahelian scarification patterns on cheeks and temples; skin condition is well-maintained and unblemished despite age; grooming is meticulous; expression carries patient, unhurried gravity",
+    "distinguishing_marks": [
+      "Sahelian scarification marks in geometric patterns on both cheeks, inherited practice honoring family lineage",
+      "Second-layer bioluminescent tattoos across chest and forearms (geneware-based), fine blue lines that pulse faintly during meditation",
+      "Fine network of thin blue light tracery visible beneath skin when in meditative state"
+    ],
+    "visible_augmentations": "Copper wire and capacitor beads woven through hair create subtle clicking sounds with movement; faint bioluminescent glow beneath skin visible in low light during meditation or concentration. Neural governor implant is subcutaneous and not visible.",
+    "posture_movement": "Moves with deliberate, economical grace despite age; posture is upright and centered, suggesting decades of meditative practice; gaze is direct and unflinching but not aggressive—examined but unjudged quality; hands move with precision and purpose",
+    "clothing_style": "Simple Tier 3 workwear: durable linen undyed tunic layered with a faded indigo overshirt bearing small copper circuits along the seams (shrine-keeper's mark); worn leather belt with handmade brass buckle; linen trousers in cream; bare feet or simple woven sandals. Clothing reflects ascetic practice and respect for the sacred space he maintains."
+  },
+  "image_prompt": "A 71-year-old West African-Polynesian-Bosnian man, broad-shouldered and grounded, photographed in cyberpunk setting. Deep warm brown skin with traditional Sahelian scarification on cheeks. Long white hair threaded with copper wire and tiny capacitor beads. Dark patient eyes. Wearing simple indigo overshirt with subtle copper circuit details and undyed linen tunic. Faint blue bioluminescent tattoos visible on chest and forearms, pulsing softly with meditation. Meditative posture, hands at rest. Shrine interior in background with blue E.L.F. energy signatures glowing faintly in offering niches. Cool blue-gold lighting. Reverent, contemplative mood. Cinematic depth of field. Shot at eye level, 2:3 portrait format. --ar 2:3 --v 6"
 }

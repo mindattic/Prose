@@ -13,7 +13,7 @@
   "age": 44,
   "status": "active",
   "location": "The Loft, Lockhaven North — operates a pirate screening venue called the Sediment, near Fullerton and Damen",
-  "description": "Ptolemy is a heavyset man in his mid-forties with dark brown skin, a close-cropped beard going silver at the jaw, and the slightly unfocused look of someone who is always composing shots in their peripheral vision. He has a prosthetic left eye — not an elegant chrome implant but a visually obvious thing, matte black with a ring of amber light around the iris, which he has never had cosmetically upgraded because he likes that it makes people aware they may be recorded. He wears the same rotating set of worn high-collared coats regardless of season. He carries a battered intake recorder everywhere and the habit of pulling it out in the middle of conversations has ended several relationships.\n\nHis films are long, structurally experimental, and deeply uncomfortable — documentary and fiction entangled in ways the viewer cannot always disentangle. He is most famous for a six-hour VR experience called 'Debt Architecture' that maps a single Meridian 88 family's financial obligations across four generations as a navigable spatial environment, placing the viewer inside the abstract structure of inherited poverty. It has been downloaded illegally over 400,000 times and banned by three corponations. He funds himself through occasional commercial VR work he takes under a pseudonym and despises himself for.",
+  "description": "Ptolemy is a heavyset man in his mid-forties with dark brown skin, a close-cropped beard going silver at the jaw, and the slightly unfocused look of someone who is always composing shots in their peripheral vision. He has a prosthetic left eye — not an elegant chrome implant but a visually obvious thing, matte black with a ring of amber light around the iris, which he has never had cosmetically upgraded because he likes that it makes people aware they may be recorded. He wears the same rotating set of worn high-collared coats regardless of season. He carries a battered intake recorder everywhere and the habit of pulling it out in the middle of conversations has ended several relationships.\n\nHis films are long, structurally experimental, and deeply uncomfortable — documentary and fiction entangled in ways the viewer cannot always disentangle. He is most famous for a six-hour VR experience called 'Debt Architecture' that maps a single GLMZ family's financial obligations across four generations as a navigable spatial environment, placing the viewer inside the abstract structure of inherited poverty. It has been downloaded illegally over 400,000 times and banned by three corponations. He funds himself through occasional commercial VR work he takes under a pseudonym and despises himself for.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -58,7 +58,7 @@
     "Somewhere in his archive is footage of an event that multiple powerful parties would pay or threaten to suppress — he does not know it yet but people who do are already looking for him",
     "The family member from 'Debt Architecture' has finally tracked him down, and their first contact is either a lawsuit, a threat, or something more complex"
   ],
-  "narrative_function": "Archive and witness — Ptolemy has been filming Meridian 88's civilian underbelly for twenty years and his raw footage is a trove of faces, places, and events; he can provide documentary evidence, historical context, or connections to anyone he has ever pointed a lens at",
+  "narrative_function": "Archive and witness — Ptolemy has been filming GLMZ's civilian underbelly for twenty years and his raw footage is a trove of faces, places, and events; he can provide documentary evidence, historical context, or connections to anyone he has ever pointed a lens at",
   "augmentations": "Prosthetic left eye (matte black, amber-ring, recording-capable); nicotine-metabolizer implant (occupational stress management)",
   "daily_life": "Mornings spent reviewing footage and editing in a cramped Lockhaven North apartment, afternoons at the Sediment managing screenings or arguing with collaborators, evenings often spent in Pilsen Veil or Mexicantown Libre gathering material.",
   "affiliation": "Independent; Sediment underground screening collective; occasional grey-market distribution through Depth Markers network",
@@ -225,7 +225,7 @@
   "registered_firearms": [],
   "related_entities": [
     "Lockhaven North",
-    "Meridian 88",
+    "GLMZ",
     "The Iron Lotus",
     "The Loft",
     "Sediment Sound Group",
@@ -234,5 +234,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Compass Rose"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Icelandic",
+    "height_cm": 183,
+    "weight_kg": 98,
+    "build": "Heavyset with a barrel chest and thick shoulders, slightly soft around the midsection but broad-framed — the build of someone who has spent decades sitting in editing chairs and standing in darkened rooms rather than moving through the world.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Close-cropped, neatly trimmed but never fussy",
+    "hair_length": "Short",
+    "eye_color": "Right eye: dark brown, natural; left eye: matte black prosthetic with amber ring-light iris",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Weathered face with pronounced laugh lines and forehead creases from decades of squinting at monitors. Close-cropped beard salt-and-peppered at the jawline, kept meticulously groomed — the one vanity he allows himself. Slight permanent furrow between brows from concentration.",
+    "distinguishing_marks": [
+      "Matte black prosthetic left eye with amber light-ring around iris, visibly non-cosmetic and deliberately maintained to appear obviously artificial.",
+      "Faint cigarette burn scar on inside of left wrist from a 2189 studio accident, barely visible unless pointed out.",
+      "Fine webbing of scar tissue across knuckles of both hands from a Tier-5 altercation in Mexicantown in 2201 — he doesn't talk about it."
+    ],
+    "visible_augmentations": "Prosthetic left eye (matte black with amber iris-ring, recording-capable), obviously non-cosmetic and maintained in deliberate non-stealth configuration. Nicotine-metabolizer implant is subcutaneous and invisible.",
+    "posture_movement": "Stands with slight forward lean, shoulders hunched as if perpetually framing a shot through his hands. Moves deliberately but without haste, economical gestures. Has the habit of turning slightly to one side in conversation to position his prosthetic eye toward the speaker — a tell that he is recording audio. Eyes rarely settle on one point; constantly scanning, assessing light and shadow.",
+    "clothing_style": "Rotates between three or four high-collared long coats (charcoal, dark brown, navy) regardless of season — vintage synthweave from the 2190s, cut loose and worn soft. Under them: plain black or grey long-sleeve shirts, often stained with coffee or solder flux. Worn Tier-4 workboots resoled multiple times. A faded canvas satchel across his chest containing his intake recorder, lens caps, and worn notebooks. No jewelry. His clothes smell like old film stock and cigarette smoke despite nicotine-metabolizer implant — ghost of a habit."
+  },
+  "image_prompt": "Heavyset 44-year-old Black man with West African features and Icelandic heritage, dark brown skin, close-cropped salt-and-pepper beard, wearing a worn high-collared charcoal synthweave coat over plain black shirt. Left eye is a matte black prosthetic with bright amber LED ring-light iris — visibly artificial and intimidating, recording-capable. Right eye dark brown, natural. Standing in dim underground screening room with red and blue neon reflected off his face, holding a battered intake recorder, slightly hunched posture as if composing shots. Tired, weathered expression of someone who has spent decades in darkened rooms. Cyberpunk, neo-noir documentary filmmaker aesthetic, moody atmospheric lighting, shallow depth of field, Tier-4 Lockhaven North loft setting visible behind him, dust particles in colored light beams, analog technology mixed with subtle augmentation --ar 2:3 --v 6"
 }

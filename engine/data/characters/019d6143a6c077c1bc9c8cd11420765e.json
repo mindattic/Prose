@@ -208,7 +208,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Inherited the cargo container from an uncle who left Meridian 88 and didn't come back",
+      "event": "Inherited the cargo container from an uncle who left GLMZ and didn't come back",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -247,5 +247,26 @@
     "Stratum",
     "Copper"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Serbian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Slight and angular with minimal muscle definition; movements are jerky and efficient rather than graceful. Collarbone prominent. Perpetually looks like they haven't eaten in three days but functions at maximum energy output.",
+    "hair_color": "Shifts between deep indigo and copper depending on mood and light exposure",
+    "hair_style": "Lopsided topknot, frequently redone throughout the day, with loose strands escaping deliberately",
+    "hair_length": "Medium (shoulder-length when down, pulled up into knot)",
+    "eye_color": "Iridescent patterned irises that cycle through spectrum colors based on ambient light; no discernible pupil boundary",
+    "skin_tone": "Medium brown with warm undertones, slightly ashy from indoor container living",
+    "complexion": "Sharp facial structure with defined cheekbones; dark circles under eyes from nocturnal schedule; skin is clear but shows the texture of someone who forgets skincare routines. Faint laugh lines around mouth despite their tendency toward deflection.",
+    "distinguishing_marks": [
+      "Fine, pale scar running 3cm along left temple from a container-wall collision years ago, barely visible unless backlit.",
+      "Hand-stitched data-glyph tattoos covering most of left forearm and back of hands in dark indigo ink — deliberately meaningless symbols arranged in ornamental patterns.",
+      "Small burn mark on right palm from soldering iron, circular and deliberate-looking."
+    ],
+    "visible_augmentations": "Iridescent patterned irises are immediately obvious and arresting under any light source. Left wrist shows faint subdermal ridge running 4cm in length where the data-transfer node sits beneath skin — barely raised, only visible when wrist is flexed or lit from certain angles. No obvious chrome or external hardware.",
+    "posture_movement": "Never fully still; fidgets constantly — tapping fingers on any available surface, bouncing one heel when seated, shifting weight from foot to foot when standing. Eyes dart frequently, scanning faces and environments. Speech is rapid and gestural. Movements are economical and practiced, suggesting years of navigating tight container spaces.",
+    "clothing_style": "Layered secondhand Tessera-branded workwear disassembled and reassembled into custom silhouette; original corporate cuts are unrecognizable. Multiple overlapping synthetic fabric layers in grays, blacks, and muted blues with hand-stitched patches of reflective material in asymmetrical placement. Wears mismatched fingerless gloves, one heavier than the other. Cheap knockoff smartwatch on right wrist constantly glitching. Worn composite-soled boots that have been resoled twice. Tier 4-5 aesthetic: functional, modified, intentionally unstylish."
+  },
+  "image_prompt": "A nonbinary person with medium brown skin, sharp cheekbones, and an angular build, wearing a lopsided indigo-and-copper ombré topknot. Their iridescent irises shift through rainbow patterns in the light, catching cobalt and magenta hues. Dressed in layered, reassembled secondhand workwear with deliberate seam-ripping and reflective fabric patches hand-stitched in asymmetrical patterns; multiple overlapping synthetic gray and black layers. Fingerless gloves, one mismatched. Small visible burn mark on right palm. Subdermal ridge visible on left wrist. Restless energy, fingers tapping, heel bouncing, eyes darting. Inside a cramped converted cargo container filled with stacked chip racks floor to ceiling, cracked monitors glowing data feeds, shelf of hand-painted E.L.F. icons backlit. Neon accent lighting casting green and purple shadows. Cyberpunk, dystopian, Tier 5 independent operator aesthetic. Shallow depth of field, gritty texture, high contrast. Shot at eye level. --ar 2:3 --v 6"
 }

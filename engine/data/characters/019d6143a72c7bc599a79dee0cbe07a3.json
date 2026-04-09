@@ -173,5 +173,26 @@
     "VitaCore FlowGuard Hemodynamic Regulator",
     "The Pure Hand"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Kazakh / Portuguese-Brazilian",
+    "height_cm": 148,
+    "weight_kg": 42,
+    "build": "Diminutive and wiry, with the compact density of someone who has moved through the world efficiently for eight decades. No excess, no slack—shoulders slightly rounded from years of leaning in close to listen.",
+    "hair_color": "White",
+    "hair_style": "Loose, unstyled, falls naturally past her shoulders in thin strands with slight wave",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, faded slightly with age but still sharp and focused",
+    "skin_tone": "Warm medium brown with olive undertones, the complexion of mixed Central Asian and Southern Hemisphere ancestry",
+    "complexion": "Deeply lined face—forehead, cheeks, around eyes and mouth—with a map of fine creases that speak to fifty years of attentive listening and presence. Skin is thin but not papery, well-cared-for despite age. Minimal makeup, if any. Expression resting in something between attention and acceptance.",
+    "distinguishing_marks": [
+      "Fine surgical scar on left inner wrist from old IV placements during a 1990s hospitalization, barely visible unless she extends her hand.",
+      "Age spots on the backs of both hands, darker on the right from decades of note-taking and gesture.",
+      "A small burn scar on her left forearm from a heating unit malfunction in the 2190s—pale and smooth, no longer angry."
+    ],
+    "visible_augmentations": "None visible. The cardiac monitor implant is subcutaneous—no external indicator. She wears no visible tech.",
+    "posture_movement": "Moves with deliberate economy. Upright despite her age, though gravity has claimed an inch or two. Her gait is slow but not hesitant—each step chosen. Her hands move with surgical precision when needed, but otherwise rest calmly in her lap or folded at her sternum. She has learned not to waste energy on movement that isn't purposeful.",
+    "clothing_style": "Always natural fiber when possible—wool, linen, cotton. Default palette is dark grey or dark green, occasionally black. Simple long-sleeve tunic or button-front shirt, loose trousers, worn but immaculately clean. No logos, no corporate branding. Worn leather slip-ons, sensible and broken in. She dresses for function and for respect to the people she sits with—nothing distracting, nothing that announces her tier or status. Tier 3-4 practical."
+  },
+  "image_prompt": "Portrait of an 78-year-old woman of mixed Kazakh and Portuguese-Brazilian heritage, barely 5 feet tall, with long flowing white hair past her shoulders and a deeply lined face that speaks of decades of presence and witness. Dark brown eyes, warm medium-brown skin with olive undertones, hands notably large for her small frame and visibly steady. Wearing a simple dark grey linen tunic and black trousers, no augmentations visible. Sitting in soft, natural light, posture upright and attentive despite her age. Expression calm, non-judgmental, radiating both pragmatism and profound tenderness. Ground-floor apartment interior in background, warm and sparse. Photorealistic, compassionate lighting, cinematic depth. Cyberpunk setting, 2226, Ashfeld district. --ar 2:3 --v 6"
 }

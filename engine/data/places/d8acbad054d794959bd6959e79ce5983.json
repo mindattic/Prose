@@ -56,8 +56,16 @@
     "Freelancers seeking lake passage, contacts, or information about colony movements"
   ],
   "notable_locations": [
-    "The ramp entrance — the bar's hundred-meter sight line and early warning system",
-    "The boot wall — spare footwear left by regulars for high-water days"
+    {
+      "name": "The ramp entrance",
+      "description": "the bar's hundred-meter sight line and early warning system",
+      "tags": []
+    },
+    {
+      "name": "The boot wall",
+      "description": "spare footwear left by regulars for high-water days",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 43.7508,

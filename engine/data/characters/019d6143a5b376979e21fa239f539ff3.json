@@ -208,5 +208,25 @@
     "Tibor Osei-Svanstrom",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Romanian",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and spare, muscled in the forearms and shoulders from years of repetitive handling work. No excess weight. Efficient frame.",
+    "hair_color": "Black, naturally",
+    "hair_style": "Pulled back in a tight, practical bun secured with a grey clip",
+    "hair_length": "Long (pulled back)",
+    "eye_color": "Dark brown natural; left eye contains suppressed violet bioluminescence visible as faint shimmer beneath tinted contact lens",
+    "skin_tone": "Deep warm brown with subtle reddish undertones",
+    "complexion": "Fine-featured, symmetrical face with high cheekbones. Genuinely expressive in repose—warm, observant. Can compress into complete blankness. Small scar on right temple from a childhood accident. Skin around eyes shows early crow's feet from squinting under industrial lighting.",
+    "distinguishing_marks": [
+      "Chemical staining at knuckles and first two joints of both hands—permanent yellowed discoloration from sterilization protocols, looks like old nicotine stains but chemical in origin",
+      "Small linear scar on right temple, approximately 1.5cm, barely visible unless lit from the side"
+    ],
+    "visible_augmentations": "Left eye wears a tinted contact lens (amber-brown) to suppress the bioluminescent iris mod beneath. Close inspection would reveal the faint violet glow underneath if the lens were removed. Hands show chemical-resistance dermal treatment as a subtle matte finish to the skin, slightly different texture than untreated areas.",
+    "posture_movement": "Moves with economical precision—no wasted motion. Quiet walker. Tends to keep her hands visible and still when not in use. Stands slightly angled, as if ready to pivot away. Makes deliberate eye contact when she decides to be memorable, none when she doesn't. Carries herself with the specific posture of someone who has learned to occupy minimal space.",
+    "clothing_style": "Grey-green Aurochs Medical Complex support staff uniform during shifts—regulation poly-blend coverall with name badge, latex gloves, reinforced apron. Off-shift: practical Tier 4 clothing—worn dark jeans, fitted grey or black thermal shirts, a heavy olive canvas jacket patched at both elbows, practical boots (black synthetic leather, steel-toed). No jewelry except a cheap stainless steel watch. Her clothes are clean but deliberately unremarkable, chosen to not draw attention or memory."
+  },
+  "image_prompt": "Cyberpunk character portrait of a lean, dark-skinned woman in her early thirties with tight black hair in a bun, wearing a grey-green medical facility uniform. Her face is warm and observant but capable of absolute blankness. Deep focus on her hands, which bear permanent chemical staining at the knuckles in yellow-brown. Her left eye wears an amber-tinted contact lens hiding a faint violet bioluminescent glow beneath. She stands in industrial lighting in a medical waste processing facility—fluorescent glare on grey walls, chemical smell suggested by composition. Mood: deliberately unmemorable, competent, morally clear, dangerous in her simplicity. Lit with cool fluorescent overhead and warm practical side-lighting. Photography style, hyperrealistic, slight desaturation, photojournalism aesthetic. --ar 2:3 --v 6"
 }

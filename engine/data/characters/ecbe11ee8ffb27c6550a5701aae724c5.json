@@ -67,5 +67,26 @@
     "Big Rig",
     "Slagworks Industrial"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "East African / Russian",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Athletic and lean, muscled in the shoulders and forearms from years of fieldwork — controlled tension in her frame rather than bulk",
+    "hair_color": "Dark brown with silver threading at the temples",
+    "hair_style": "Pulled back in a tight, practical braid that extends to mid-back; no-nonsense styling",
+    "hair_length": "Long",
+    "eye_color": "Deep brown, alert and analytical",
+    "skin_tone": "Medium-warm complexion, even tone reflecting both East African and Slavic ancestry",
+    "complexion": "Sharp cheekbones, defined jawline, minimal makeup — a face that reads as professional and uncompromising. Small scar through her left eyebrow from a fieldwork incident. No visible sun damage; maintains herself carefully",
+    "distinguishing_marks": [
+      "Thin scar through left eyebrow, approximately 2cm, from a struggle during her CorpSec days",
+      "Faint burn mark on the inside of her right wrist, roughly the size of a cigarette tip — from a threat that escalated into intimidation",
+      "Axiom corporate tattoo on her right shoulder blade (a geometric sigil) that she has chosen not to remove — a reminder and a warning to herself"
+    ],
+    "visible_augmentations": "None visible. Her augmentations are subcutaneous: a neural interface array behind her left ear (invisible under hair), optical enhancements (undetectable to casual observation), and an encrypted data vault implanted in her molars. She runs clean and quiet — no chrome, no LEDs, no tells.",
+    "posture_movement": "Moves with deliberate economy. Shoulders slightly forward, weight balanced on the balls of her feet even when seated — someone trained to move quickly if needed. Her gaze is direct and measuring; she watches before she speaks. Tense at baseline, but controlled — the calm of someone who has learned that showing fear is a liability",
+    "clothing_style": "Tier 3 professional-tactical hybrid. Dark neutral tones: charcoal, black, grey. Fitted synthetic-leather jacket with reinforced elbows (Meridian Station brand, durable), functional cargo pants with multiple pockets and tool loops, sturdy polymer-soled boots broken in from field work. A silver pendant watch on her wrist — old, not smart-enabled, deliberately analog. She dresses to move, not to impress. No visible branding except the watch. Her office clothes are as functional as her field clothes — no performance necessary."
+  },
+  "image_prompt": "Isolde Mwangi-Petrov, 40-year-old East African-Russian woman, athletic lean build, dark hair braided back with silver at temples, sharp cheekbones, alert deep brown eyes, minimal makeup, professional but worn. Wearing fitted dark charcoal synthetic-leather jacket with reinforced elbows, dark tactical cargo pants, sturdy black boots. Sitting at a desk in a dim Meridian Station office lit by cool blue neon, hands folded, direct unreadable gaze toward camera. Cyberpunk noir, gritty and composed, no chrome augmentations visible but underlying intensity of someone who knows too much. Moody overhead lighting creating shadows across her face, slight scar visible through left eyebrow. Analog watch on wrist. Mood: dangerous competence, moral conviction, corporate-haunted. --ar 2:3 --v 6"
 }

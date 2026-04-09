@@ -30,7 +30,7 @@
       "Dying with his real name meaning nothing to anyone"
     ],
     "core_desires": [
-      "One genuinely surprising piece of information — something that reframes everything he thought he understood about Meridian 88",
+      "One genuinely surprising piece of information — something that reframes everything he thought he understood about GLMZ",
       "To be trusted completely by someone he also finds intellectually worthy",
       "To settle a debt he has been carrying for eleven years without ever naming it out loud"
     ],
@@ -80,7 +80,7 @@
       "type": "client/mutual suspicion",
       "description": "Orvyn buys from him occasionally, and Casimir finds the transactions clean and the man himself deeply opaque — which is both professionally annoying and personally interesting.",
       "emotional_core": "Casimir is more curious about Orvyn than is professionally wise, and Orvyn is aware of this and has not discouraged it",
-      "story_tension": "Something Orvyn recently purchased has made Casimir realize one of his long-standing assumptions about the power structure of Meridian 88 is wrong"
+      "story_tension": "Something Orvyn recently purchased has made Casimir realize one of his long-standing assumptions about the power structure of GLMZ is wrong"
     }
   ],
   "story_hooks": [
@@ -247,5 +247,26 @@
     "The Sluiceway",
     "The Pale Mile"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Polish / Dutch",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "build": "Tall and lean with visible softening at the midsection — the physique of someone who was once disciplined and has allowed that discipline to relax without fully surrendering to it. Shoulders still carry some width but lack the definition of active maintenance.",
+    "hair_color": "Gray-blonde, faded to near-white at the temples",
+    "hair_style": "Swept back, slightly too long for corporate spaces, kept in place by habit and occasional inattention rather than deliberate grooming",
+    "hair_length": "Medium",
+    "eye_color": "Pale gray, almost colorless in certain light",
+    "skin_tone": "Very pale, Nordic-Germanic complexion with the characteristic cool undertone of Northern European heritage",
+    "complexion": "Deeply lined face, particularly around the eyes and forehead — the accumulated geography of fifty-seven years of reading microexpressions across negotiating tables. Jaw still defined but softened by age. Habitual expression settles into polite disappointment. Skin shows the texture of someone who does not prioritize skincare but maintains basic discipline.",
+    "distinguishing_marks": [
+      "Fine linear scarring across the inner left forearm, barely visible unless forearm is exposed, consistent with old surgical intervention or precise cutting — approximately 8cm in length, parallel lines",
+      "Faint discoloration along both forearms where sub-dermal implants create slight topographic irregularities beneath the skin — visible only at certain angles or in specific lighting",
+      "Deep creases at the corners of his mouth that give the impression of a permanent frown even when his expression is neutral"
+    ],
+    "visible_augmentations": "The sub-dermal signal dampener across both forearms creates subtle visual anomalies under the skin — slight geometric shadowing, barely perceptible unless you know what you're looking at. Otherwise, augmentations are invisible. No obvious chrome, no LED indicators, no obvious prosthetics. The deliberate aesthetic of someone who refuses to advertise what he carries.",
+    "posture_movement": "Moves with the careful economy of someone managing chronic awareness. Walks at a measured pace without apparent hurry, but with the kind of intentionality that suggests he is never quite relaxed. Stands with a slight forward lean, weight distributed evenly — a posture that allows rapid repositioning if necessary. Hands usually at rest, but eyes are rarely still. His stillness is a performance he has perfected.",
+    "clothing_style": "High-quality minimalist wardrobe in muted tones — grays, deep blues, charcoal, off-white. Tailored but not ostentatious. Fabrics suggest corporate-era purchases that have been maintained rather than replaced: quality wool, linen blends, technical synthetics that age well. Wears a mid-weight wool coat most days, its age evident in the patina of the weave. Shoes are practical leather, well-maintained but not polished to corporate shine. The overall effect is someone who has not fully left the Spire's aesthetic behind but has allowed it to weather into something less demanding. No visible logos, no status markers, nothing that signals current affiliation or tier — a studied neutrality."
+  },
+  "image_prompt": "A tall, lean man in his late fifties with pale gray eyes and gray-blonde hair swept back, Polish-Dutch features with deeply lined face, standing in dim industrial lighting in a converted harbormaster's office. He wears a weathered high-quality wool coat over muted charcoal layers. Soft scarring visible on his forearms beneath his sleeves. His expression is one of polite disappointment, eyes unnaturally still and analytical. Around him: stacks of physical books, salvaged equipment, cables, vintage monitoring systems, the aesthetic of someone who inhabits the boundary between corporate past and ungoverned present. Old Harbor waterfront visible through a window behind him, gray water and faded industrial architecture. Moody cyberpunk noir, cool color grading, 35mm film aesthetic, atmospheric lighting from overhead industrial fixtures casting shadows across his weathered face. --ar 2:3 --v 6"
 }

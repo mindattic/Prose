@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Idris Vega-Acheampong's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Idris Vega-Acheampong's past shows up in GLMZ, carrying old grievances and new chrome",
     "A Tier 4 executive offers Idris Vega-Acheampong a permanent position — the pay is obscene and the strings are invisible until they tighten",
     "The fixer who handles Idris Vega-Acheampong's contracts goes silent — dead, disappeared, or turned"
   ],
@@ -155,7 +155,7 @@
       "loyalty_break": 10
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "pain tolerance beyond normal limits"
     ],
     "weaknesses": [
@@ -275,10 +275,32 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "The Gradient Compact",
     "Slagworks Industrial"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Spanish — likely Ghanaian-Akan and Iberian lineage",
+    "height_cm": 158,
+    "weight_kg": 62,
+    "build": "Compact and densely muscled, low center of gravity — built like a boxer or gymnast rather than a bodybuilder. Shoulders broad for her frame, legs thick and functional. Every kilogram is intentional.",
+    "hair_color": "Natural black with silver threading at temples",
+    "hair_style": "Pulled back in a tight, functional braid or wrapped in a headwrap — nothing loose that could catch in machinery",
+    "hair_length": "Medium (pulled back)",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Deep warm brown with reddish undertones — rich melanin",
+    "complexion": "Face mapped with old scars — a thin line bisecting her left cheekbone, puckering at her jaw from burns, a jagged mark across her forehead near the hairline. Skin is weathered, kept clean but not moisturized. No makeup. Eyes have the flat, assessing quality of someone who reads people for work.",
+    "distinguishing_marks": [
+      "Thin horizontal scar across left cheekbone, white and precise — old combat wound",
+      "Burn scar tissue around left jawline, slightly discolored and puckered",
+      "Jagged diagonal scar across forehead left of center, approximately 5cm long — blunt force trauma",
+      "Faint tattoo on inside left wrist: stylized circuit pattern in black ink, worn and faded"
+    ],
+    "visible_augmentations": "Visible silver-chrome breathing apparatus visible at collarbone and neck — internal air filtration system connects to synthetic lungs, with faint LED indicator lights (pale blue) that pulse when system is active. Chrome plating visible where the system meets skin at shoulders and upper chest. No effort made to hide or cosmetically blend the augmentation.",
+    "posture_movement": "Moves with economy and precision — no wasted motion. Shoulders squared and balanced. Head stays level. Eyes constantly tracking, peripheral vision well-used. Sits in ways that allow quick movement. Doesn't fidget; doesn't relax into furniture. Default resting expression is neutral to slightly suspicious.",
+    "clothing_style": "Tier 3-4 pragmatic runner aesthetic. Insulated jacket in charcoal gray or black — modular, many pockets, reinforced at elbows and shoulders. Utility pants with cargo pockets, worn at cuffs and knees. Steel-toed boots, scuffed and maintained. No logos or corp branding. Undersuit visible at neck and wrists — thin thermal layer for temp regulation and minor impact protection. A leather biker jacket over top on colder days, weather-beaten and patched. Minimal jewelry except a worn metal cuff on right wrist (datum counter or personal talisman). Everything is black, gray, or dark blue — nothing draws attention."
+  },
+  "image_prompt": "Cyberpunk character portrait, 44-year-old woman with deep brown skin, West African-Iberian heritage, short braided black hair with silver threading. Compact muscular build, low center of gravity. Face heavily scarred — cheekbone, jawline, forehead — battle-worn expression. Visible silver-chrome breathing apparatus at collarbone and neck with faint blue LED pulses. Wearing charcoal insulated tactical jacket with reinforced shoulders, utility pants, dark thermal underlayer visible at neck. Sitting or standing with rigid military posture, head level, alert eyes constantly scanning. Background: Glassway corporate retail district, neon signs and surveillance cameras, moody warm and cool lighting mix, shallow depth of field, documentary photography style. Gritty, weathered, no romance. Midjourney style, high detail, cinematic, Blade Runner 2049 meets photojournalism. --ar 2:3 --v 6"
 }

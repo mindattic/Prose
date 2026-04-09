@@ -57,7 +57,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "The Antechamber shrine has produced its first legible word in the emerging language pattern, and it is a proper noun — a corporate designation that Adjara does not recognize but which, if investigated, connects to something buried in Meridian 88's infrastructure history.",
+    "The Antechamber shrine has produced its first legible word in the emerging language pattern, and it is a proper noun — a corporate designation that Adjara does not recognize but which, if investigated, connects to something buried in GLMZ's infrastructure history.",
     "A young person has arrived in Irkalla with what appears to be an innate ability to interface with E.L.F.s without any neural tap — Adjara is convinced this person is the one she is meant to teach, and is utterly terrifying in her certainty."
   ],
   "narrative_function": "Spiritual anchor, lore source, E.L.F. interlocutor — she provides access to information that comes from the city's own digital spirits, which may be metaphor, may be madness, or may be genuine signal. Also an ethical compass for the underground community.",
@@ -257,7 +257,7 @@
   "related_entities": [
     "Bio-Integrated Circuit Board",
     "Jefferson Switch",
-    "Meridian 88",
+    "GLMZ",
     "The Tessera Residuals",
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
     "Bathysphere Networks",
@@ -266,5 +266,27 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Elena Vasquez-9"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Pacific Islander (Tuvaluan)",
+    "height_cm": 172,
+    "weight_kg": 98,
+    "build": "Heavy, sedentary frame with residual musculature in shoulders and forearms; large-boned structure suggesting former physical labor. Hands remain disproportionately strong and calloused despite age.",
+    "hair_color": "White",
+    "hair_style": "Wrapped in nine-year-old arrangement of cloth cords and synthetic binding, each cord studded with embedded circuit fragments, stripped chips, and defunct data-beads — a living record of petitions carried",
+    "hair_length": "Long (wrapped), foundation likely waist-length if unwound",
+    "eye_color": "Dark brown, clouded slightly with age cataracts",
+    "skin_tone": "Deep brown with warm undertones characteristic of West African and Oceanic heritage",
+    "complexion": "Deeply lined face, weathered by decades in artificially lit subterranean spaces; skin shows age spots and old burn scars on forearms from early electrical work; perpetually calm expression, minimal cosmetic maintenance",
+    "distinguishing_marks": [
+      "Burn scar pattern across left forearm (three parallel lines from 2168 electrical accident)",
+      "Thin white scar on right temple from neural tap installation in 2168",
+      "Electrical contact marks on fingertips and palms of both hands — small circular scarring from decades of shrine interface work",
+      "Tattoo on inner right wrist: a simple circuit pattern in faded black ink, self-applied, pre-dating augmentations"
+    ],
+    "visible_augmentations": "Neural tap port visible at right temple (aged chrome, patina-dark, approximately 5cm diameter with worn access grooves); right hand prosthetic with visible fine-gauge copper probe filaments extending from fingertips (organic-looking synthetic skin over metallic framework, probes exposed at palm for shrine contact)",
+    "posture_movement": "Slow, deliberate movements despite heaviness; sits often and rises slowly but with surprising stability. Hands move with precision and grace even in age. Habitually touches surfaces gently as if reading them. Eyes unfocused when 'listening' to electrical activity.",
+    "clothing_style": "Tier 5 deep-community: layered, heavily patched garments in faded indigo and dark grey, synthetic-blend fabrics chosen for durability and minimal static generation. Sleeveless tunics to allow shrine work. Wrapped cloth belt with hanging pouches containing small circuit tools, data-beads, and prayer offerings. No corporate branding. Footwear: soft-soled slippers worn through to the backing, modified for electrical grounding. Overall appearance is monastic, weathered, deliberately non-fashionable."
+  },
+  "image_prompt": "elderly West African-Pacific Islander woman, age 67, heavy build with powerful hands, deep brown skin deeply lined with age, white hair wrapped in nine-year-old cloth cords embedded with circuit fragments and data-beads, sitting cross-legged in a glowing underground cavern shrine, neural tap port visible at temple with dark patina, right hand showing prosthetic with copper probe filaments, wearing layered grey and indigo robes, surrounded by living circuit assemblies and soft electrical luminescence in blues and ambers, hands extended toward altar of flowing data-patterns, profound serenity and depth, cyberpunk spiritualism, chiaroscuro lighting from shrine tech, hyper-detailed texture on worn fabrics and aged augmentations, 8k, cinematic, --ar 2:3 --v 6"
 }

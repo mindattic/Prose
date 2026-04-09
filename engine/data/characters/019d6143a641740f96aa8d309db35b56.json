@@ -29,7 +29,7 @@
       "That they're fundamentally alone and connection is just a vulnerability"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "To build something that outlasts the next contract cycle",
       "A crew worth trusting — people who stay when the shooting starts"
     ],
@@ -43,7 +43,7 @@
       "Cannot accept help without interpreting it as leverage",
       "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
     ],
-    "secret": "Kenji Chen-Adeyemi betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+    "secret": "Kenji Chen-Adeyemi betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
   },
   "speech_patterns": {
     "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Kenji Chen-Adeyemi's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Kenji Chen-Adeyemi's past shows up in GLMZ, carrying old grievances and new chrome",
     "A former associate resurfaces with evidence that could destroy Kenji Chen-Adeyemi's reputation — and a price for silence",
     "Kenji Chen-Adeyemi is offered a contract that would clear all their debts — the target is someone they respect"
   ],
@@ -279,7 +279,7 @@
     "Sterling-Nakamura Aegis SMG AS-7 'Wasp Nest'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "Canopy Station Nine",
     "Geartown",
@@ -287,5 +287,27 @@
     "Pellucid Systems",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "East Asian (Japanese/Chinese) / West African (Yoruba)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Wiry and lean with visible muscle definition from constant physical conditioning. Chest and shoulders are developed but not bulky — built for speed and precision rather than raw power. Low body fat percentage. Movement efficiency over mass.",
+    "hair_color": "Black with faint blue bioluminescent threading woven through (cortical implant artifact, not dyed)",
+    "hair_style": "Pulled back in a tight, practical braid or topknot during work. Loose and shoulder-length at rest.",
+    "hair_length": "Medium to Long",
+    "eye_color": "Dark brown, natural, but the left eye has a faint chrome ring visible at the iris edge — cortical implant interface",
+    "skin_tone": "Warm brown — blended East Asian and West African features",
+    "complexion": "Sharp cheekbones, angular jawline, small scar above the left eyebrow from a childhood accident. Skin is clear but marked by the intensity of their gaze — eyes that track movement. No cosmetic grooming; functional only.",
+    "distinguishing_marks": [
+      "Ragged vertical scar along the right temple, extending 8cm toward the hairline — removal site of cortical bomb implant, tissue still slightly raised and discolored",
+      "Thin white scar on inner left wrist, 5cm long — old self-inflicted mark from teenage years, deliberately never covered with ink or chrome",
+      "Burn mark on right shoulder, palm-sized, pale against darker skin — contact burn from defective move-by-wire calibration, now part of their story",
+      "Subdermal neural interface ports at the base of the skull, visible as two small metallic dimples when hair is pulled back"
+    ],
+    "visible_augmentations": "Move-by-wire system manifests as faint silver tracework visible along the collarbone and the inside of both forearms under skin — visible in certain light. The cortical implant scar on the temple is prominent and unhealed. Left eye has a thin chrome ring at the iris. No limb replacements; all augmentations are nervous system and internal.",
+    "posture_movement": "Never still. Even at rest, there is micro-movement — weight shifting, fingers tapping, jaw clenching. Walks with a predatory efficiency, economical and balanced. Eyes are always moving, cataloging exits and threats. When focused on a target, becomes unnaturally still — all that restless energy compresses into potential. Speaks quietly, forcing others to pay attention.",
+    "clothing_style": "High-Tier 2 functional aesthetic. Black reinforced synthetic jacket with internal holster rigging and embedded haptic feedback panels (enables move-by-wire targeting). Form-fitting gray base layer under the jacket. Tactical cargo pants with multiple pockets and visible weapon attachment points. Matte black boots with reinforced soles. A single piece of jewelry — a silver ring on the left index finger, engraved with their mentor's initials. No logos, no excess. Everything serves a purpose. Clothes show minimal wear despite their job because they replace gear methodically before failure."
+  },
+  "image_prompt": "Androgynous East Asian-African young adult, 24, sharp cheekbones, dark eyes with subtle chrome iris ring, black hair in tight braid, visible cortical implant scar along right temple, wiry athletic build, standing in tense ready posture. Wearing matte black reinforced tactical jacket over gray synthetic base layer, cargo pants with holster rigging visible. Faint subdermal silver tracework visible on collarbone and forearms. Cyberpunk noir aesthetic, cool blue and amber neon lighting from elevated Canopy walkway at dusk, rain-slicked metal grating floor, blurred city lights below. Photorealistic, high contrast, cinematic mood, professional security operative, dangerous and calm. --ar 2:3 --v 6"
 }

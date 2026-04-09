@@ -261,5 +261,26 @@
     "Rust",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Balkan (Achebe heritage suggests Igbo lineage; Djordanović indicates Serbian or regional Balkan ancestry)",
+    "height_cm": 162,
+    "weight_kg": 58,
+    "build": "Compact and wiry with lean muscle definition from daily physical labor — shoulders broad from repetitive lifting and stacking, forearms corded with minor scarring from years of handling sharp salvage edges",
+    "hair_color": "Natural black base with hand-applied bands of copper and rust oxide dye in concentric rings",
+    "hair_style": "Cropped close to scalp in neat, geometric rings that echo their stall's organizational chaos",
+    "hair_length": "Short",
+    "eye_color": "Natural warm brown (left eye partially obscured by external copper-toned magnification mechanism)",
+    "skin_tone": "Warm umber with undertones of rust — complexion darkened and weathered by platform exposure and chemical contact",
+    "complexion": "Sharp-featured face with high cheekbones, perpetual frown-lines suggesting intense focus. Skin shows minor chemical burns around cuticles and palms. Oil stains in webbing between all fingers, darkest around thumbnail and index, resistant to full removal. Small circular scar on right temple from early salvage accident.",
+    "distinguishing_marks": [
+      "Three parallel claw-marks scar the back of their right hand (self-inflicted during early geneware adjustment, 4 years prior)",
+      "Burn mark on inner left wrist, pale against umber skin, approximately 3cm wide (chemical splash, age 23)",
+      "Small circuit-board pattern tattoo on left inner elbow in faded ink, likely homemade (religious marker for Gunda veneration)"
+    ],
+    "visible_augmentations": "Retractable carbon-reinforced utility claws visible at fingertips when extended — smooth metallic crescents nested flush with natural nails when retracted. Left-eye augmentation: copper-toned external magnification lens housing mounted above brow with visible flip-down mechanism; lens retracts when not in use but the metal housing is always visible. No chrome visible on limbs or torso — all augmentations are geneware or subtle mechanical integration.",
+    "posture_movement": "Perpetually kinetic — rarely still, often gesturing mid-sentence with hands that move between relaxed and claw-extended depending on task or emotional emphasis. Bounces slightly on heels when listening, weight shifting constantly. Navigates tight spaces with practiced efficiency despite compact frame. Hands move with precision when inspecting components but with chaotic energy during conversation.",
+    "clothing_style": "Tier 4 utilitarian salvager aesthetic — multi-pocketed canvas vest over thin synthetic underlayer (usually rust, copper, or charcoal colored to match stall aesthetic). Cargo pants with reinforced knees and oil-stained thighs. Heavy-soled utility boots with magnetically-sealed compartments for small components. Wears a leather work belt festooned with hanging tools: wire strippers, jeweler's screwdrivers, calipers, magnetic retrieval wand. Layers added based on platform temperature. Minimal jewelry beyond a copper-wire bracelet looped 3 times around left wrist (handmade, appears to be grounding strap or spiritual object)."
+  },
+  "image_prompt": "Portrait of Pemba Achebe-Djordanović, nonbinary 27-year-old salvage merchant, cyberpunk aesthetic. Compact wiry build, warm umber skin, close-cropped black hair with concentric rings of copper and rust dye. Intense dark brown eyes with visible copper-toned magnification lens housing above left brow. Sharp cheekbones, oil-stained hands with retractable metallic claws visible at fingertips. Wearing multi-pocketed rust-colored canvas vest over dark underlayer, heavy utility belt with hanging tools, oil-weathered cargo pants. Background shows industrial salvage platform with mechanical debris and E.L.F. shrine circuit board visible. Neon amber and teal accent lighting reflecting off metal components and tools. Dynamic, slightly manic energy, hands mid-gesture. Gritty cyberpunk marketplace ambiance, shallow depth of field focusing on face and hands. High contrast lighting, film noir undertones --ar 2:3 --v 6"
 }

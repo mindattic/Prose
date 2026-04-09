@@ -44,8 +44,16 @@
     "Runners passing through the lowest tier who need a drink that doesn't ask questions"
   ],
   "notable_locations": [
-    "The rubble wall — dead-drop storage hidden in the wreckage gaps",
-    "Tola's corner — the chunk of concrete where she plays every Friday"
+    {
+      "name": "The rubble wall",
+      "description": "dead-drop storage hidden in the wreckage gaps",
+      "tags": []
+    },
+    {
+      "name": "Tola's corner",
+      "description": "the chunk of concrete where she plays every Friday",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.7748,

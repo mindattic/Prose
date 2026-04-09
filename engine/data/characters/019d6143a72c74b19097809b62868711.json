@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Internal Affairs Investigator, Meridian 88 Metro Police",
+  "role": "Internal Affairs Investigator, GLMZ Metro Police",
   "age": 44,
   "status": "active",
   "location": "Fort Anchor, Internal Affairs Division, Sub-Level 3",
@@ -62,7 +62,7 @@
   "narrative_function": "Quest giver for investigations into police corruption or misconduct; an obstacle if players are operating in legal gray areas; a source of hard-to-obtain official records if trust is established; represents institutional law as both shield and cage.",
   "augmentations": "Patterned irises with integrated micro-expression microfilament sensors (tier 2 medical grade). Subdermal data storage node at left wrist — holds encrypted case files offline. No cosmetic mods.",
   "daily_life": "Arrives at Fort Anchor before her shift officially begins, reviews overnight surveillance logs over synthetic coffee she does not enjoy, conducts interviews that are scheduled to feel casual and are not. Returns home to Lockhaven North at irregular hours to make her movements harder to predict.",
-  "affiliation": "Meridian 88 Metro Police, Internal Affairs Division",
+  "affiliation": "GLMZ Metro Police, Internal Affairs Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -246,5 +246,25 @@
     "Silver",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East African / Hungarian",
+    "height_cm": 162,
+    "weight_kg": 68,
+    "build": "Compact and broad-shouldered with dense musculature — the build of someone who has maintained discipline through middle age. No softness; efficient.",
+    "hair_color": "Silver, natural",
+    "hair_style": "Close-cropped, parted slightly off-center, maintained with precision",
+    "hair_length": "Short",
+    "eye_color": "Augmented irises patterned in concentric rings of amber and dark brown, resembling tree rings — integrated microfilament sensors visible as fine metallic threading within the iris structure",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Unlined for her age, minimal makeup, skin condition immaculate — suggests disciplined skincare regimen. Expression set in neutral default; smile does not reach augmented eyes.",
+    "distinguishing_marks": [
+      "Faint scar along left jawline, approximately 4cm, consistent with old blunt-force trauma — nearly invisible unless light hits at specific angle",
+      "Subdermal data storage node visible as slightly raised rectangular outline at left inner wrist, approximately 2cm × 1cm, beneath skin but tactilely detectable"
+    ],
+    "visible_augmentations": "Augmented irises with visible microfilament patterning and integrated sensor threading. Subdermal wrist node creates minor topographical irregularity but remains largely concealed beneath clothing. Otherwise no visible chrome or external augmentation.",
+    "posture_movement": "Moves with surgical efficiency — no wasted motion, no fidgeting. Shoulders squared, spine straight. Walks with measured pace. Hands remain still at rest. During conversation, maintains still facial expression while augmented eyes track micro-expressions in others with almost predatory focus.",
+    "clothing_style": "Metro Police plainclothes: pressed collar shirts (neutral grays, blacks, whites), tailored trousers with exact creases, leather shoes that cost Φ800+ (tier 1 quality on tier 3 salary — indicates personal priority or questionable funding). Minimal jewelry except service chronometer. Blazer worn on rotation. Everything fits precisely, nothing rumpled, nothing worn soft by time."
+  },
+  "image_prompt": "Portrait of a 44-year-old woman with deep umber skin and close-cropped silver hair, compact athletic build, wearing pressed collared shirt and tailored trousers. Striking augmented eyes with concentric amber and dark brown tree-ring patterning containing visible microfilament sensors. Neutral, impassive expression. Harsh fluorescent lighting casting sharp shadows, clinical and cold. Cyberpunk noir aesthetic. Digital data streams faintly visible in background. Photorealistic, high detail, government office interrogation room setting. Professional headshot style. --ar 2:3 --v 6"
 }

@@ -233,5 +233,26 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Andean (Bolivian)",
+    "height_cm": 185,
+    "weight_kg": 68,
+    "build": "Wiry and angular — all lean muscle and restless energy, the build of someone who climbs and runs and rarely sits still. Long limbs, sharp shoulders, minimal body fat.",
+    "hair_color": "Natural black",
+    "hair_style": "Close-cut fade with precise geometric lines, maintained weekly; no styling products, let it air-dry into clean definition",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, almost black",
+    "skin_tone": "Dark brown with warm undertones; sun-darkened from outdoor work, not evenly tanned",
+    "complexion": "Clear skin with a sparse scatter of acne across his upper back and shoulders from summer heat and outdoor sweating. Strong Ghanaian cheekbones balanced by a Bolivian-softer jawline. No facial hair — too young, or keeps it shaved. Permanent pigment staining on his fingertips and cuticles in shifting colors: current palette shows traces of cadmium yellow, metallic silver, and hot pink beneath the embedded aerosol dust.",
+    "distinguishing_marks": [
+      "Iridescent black cat tail (living geneware implant, 40cm long) emerging from base of spine, covered in fine black fur with an opalescent sheen that shifts blue-green-purple in certain light; he keeps it tucked into his waistband or cargo pockets when indoors with his aunt, but wears it loose when working",
+      "Small burn scar on his left forearm (5cm, linear) from a salvage yard accident two years ago with a hot flux capacitor; it's faded but visible",
+      "Faint scarring on both knuckles from spray-can pressure cuts and small lacerations from concrete climbing"
+    ],
+    "visible_augmentations": "The iridescent black cat tail is immediately visible when not concealed; it moves independently with his mood and cognition, twitches when he's concentrating, swishes lazily when he's thinking. The tail is his only visible mod. His recording rig (shoulder-mounted camera array, three separate units cannibalized and rewired) is not an augmentation but an external accessory he carries constantly — weathered, held together with epoxy and electrical tape, covered in stickers and worn paint.",
+    "posture_movement": "Perpetually in motion — fidgeting, shifting weight, bouncing on the balls of his feet. When focused on work (spraying, filming, editing), he goes still with an almost meditative intensity. Climbs and moves through three-dimensional space with practiced ease; comfortable on fire escapes, ledges, scaffolding. His tail moves in counterpoint to his body language: swishing when excited or thinking, tucking when anxious. Walks with a slight forward lean, as if always heading somewhere interesting.",
+    "clothing_style": "Tier 4 working-class aesthetics with art-scene individualism. Favors oversized hoodies (often paint-stained, deliberately or accidentally), slim cargo pants with deep pockets for supplies, reinforced tactical boots scuffed and weathered from climbing. Wears a canvas satchel across his chest (cannibalized from a courier bag, patched with fabric tape) that holds spray cans, tools, and backup recording media. His aunt bought him a Brightmoor reclamation puffer vest last winter; he wears it unzipped over hoodies. No expensive brands; everything is either salvaged, thrifted, or bought secondhand at the Highland Park market stalls. His color palette mirrors his spray-paint choices — one week heavy on grays and blacks, the next unexpected pops of neon through a thrifted windbreaker. All his clothes show evidence of his work: paint spatters, singe marks, dust from climbing."
+  },
+  "image_prompt": "Cyberpunk portrait of a lanky 17-year-old Black mixed-heritage male, dark brown skin, sharp Ghanaian cheekbones, close-cut fade haircut, deep brown eyes. Tall and wiry, elbows and angles, sun-darkened. Wearing oversized paint-stained hoodie and cargo pants, canvas satchel across chest. Fingers stained with iridescent and neon pigment colors. A long, luxuriously furred iridescent black cat tail with opalescent blue-green-purple sheen emerges from base of spine, swishing with thought. Carries worn shoulder-mounted camera rig made from salvaged parts, held together with tape and epoxy. Posture forward-leaning and energetic, tail animated. Highland Park neighborhood backdrop, twilight urban aesthetic, crumbling brick walls, street art visible, neon signs reflecting wet pavement. Cinematic lighting with shadows and color highlights catching the iridescent tail fur. Raw, documentary-realism tone mixed with cyberpunk color grading. --ar 2:3 --v 6"
 }

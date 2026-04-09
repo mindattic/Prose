@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Abyssal Threshold, mobile — no fixed residence, near sub-level access near LaSalle and Congress",
-  "description": "Chibundo Ferreira-Yupik has no legal existence. No biometric registration, no UBC account, no corponation employment history, no Ferrogate transit record. They erased themselves from Meridian 88's surface datanet eleven years ago with painstaking, elegant precision, and they have spent every year since helping others do the same — for a fee, always for a fee. They are of middling height, slight, with warm sienna skin and close-cropped natural hair. Their most striking feature is what they've done to their biometric profile: geneware has altered their iris patterns every eighteen months for the last decade, and a subdermal signal-scatter mesh makes their face present differently to every facial recognition node they pass. To cameras, they are a continuous glitch. To people, they are vivid and specific — dark eyes that track everything, hands that are always moving, a smile that arrives half a second before it should, like they already knew the joke.\n\nThey operate out of the Abyssal Threshold transit corridors, never sleeping in the same cache twice. Their clients are people fleeing — debt collectors, abusive partnerships, corponation indenturement, the occasional actual criminal. Chibundo does not ask why. They ask for documentation of identity, ask for Φ40-200 depending on complexity, and they provide the tools of vanishing: signal-scatter protocols, route maps to communities that do not report to the surface grid, contacts within the Bore Rat communities who will accept someone new. They are not a forger exactly — they don't create false identities. They create absences.",
+  "description": "Chibundo Ferreira-Yupik has no legal existence. No biometric registration, no UBC account, no corponation employment history, no Ferrogate transit record. They erased themselves from GLMZ's surface datanet eleven years ago with painstaking, elegant precision, and they have spent every year since helping others do the same — for a fee, always for a fee. They are of middling height, slight, with warm sienna skin and close-cropped natural hair. Their most striking feature is what they've done to their biometric profile: geneware has altered their iris patterns every eighteen months for the last decade, and a subdermal signal-scatter mesh makes their face present differently to every facial recognition node they pass. To cameras, they are a continuous glitch. To people, they are vivid and specific — dark eyes that track everything, hands that are always moving, a smile that arrives half a second before it should, like they already knew the joke.\n\nThey operate out of the Abyssal Threshold transit corridors, never sleeping in the same cache twice. Their clients are people fleeing — debt collectors, abusive partnerships, corponation indenturement, the occasional actual criminal. Chibundo does not ask why. They ask for documentation of identity, ask for Φ40-200 depending on complexity, and they provide the tools of vanishing: signal-scatter protocols, route maps to communities that do not report to the surface grid, contacts within the Bore Rat communities who will accept someone new. They are not a forger exactly — they don't create false identities. They create absences.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -252,7 +252,7 @@
   "related_entities": [
     "Ferrogate Transit",
     "Abyssal Threshold",
-    "Meridian 88",
+    "GLMZ",
     "Threshold",
     "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
     "Big Rig",
@@ -260,5 +260,25 @@
     "Tessera Corponation",
     "The Pure Hand"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Inuit-Yupik",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Slight and wiry, all sharp angles and efficient movement—no wasted mass, the frame of someone who has learned to take up minimal space",
+    "hair_color": "Natural black with subtle warm undertones",
+    "hair_style": "Close-cropped, tapered at the sides, maintained with precision",
+    "hair_length": "Short",
+    "eye_color": "Deep violet with fractal ring patterns (geneware-modified, current iteration)",
+    "skin_tone": "Warm sienna with golden undertones; complexion unmarked and deliberately unremarkable to baseline human perception",
+    "complexion": "Smooth, deliberately nondescript facial structure; cheekbones sharp but not pronounced; lips thin and mobile; expression constantly shifting between neutral and animated—never settling",
+    "distinguishing_marks": [
+      "Subdermal mesh patterns visible under skin as faint geometric scarring across cheekbones and temples when light hits at oblique angles",
+      "Fingertips smooth and featureless from repeated fingerprint-ablation treatments, no ridge pattern visible"
+    ],
+    "visible_augmentations": "Subdermal signal-scatter mesh creates subtle luminescent tracery visible under skin in low light (temples, cheekbones, along jawline). Eyes: current iris modification shows deep violet with intricate fractal ring structure that shifts slightly with pupil dilation. Hands: fingertips unnaturally smooth, lacking ridge patterns. To digital surveillance: a continuous glitch, a face that never registers the same way twice.",
+    "posture_movement": "Economical, deliberate movements with minimal wasted motion; hands constantly occupied (adjusting, fidgeting, gesturing); head tilts slightly when listening, as if already parsing responses before they arrive; walks with weight distributed for quick directional changes; smiles arrive half a second early, before the joke lands",
+    "clothing_style": "Tier 3-4 utilitarian: unmarked synth-weave jacket in charcoal or deep grey, multiple hidden pockets and sealed seams; form-fitting black pants with cargo utility; worn but maintained runner boots with reinforced soles for Abyssal Threshold terrain; no identifying marks, no corp logos, no personal ornamentation. Clothing selected for function and anonymity—replaceable, forgettable, never the same set twice in public."
+  },
+  "image_prompt": "cyberpunk character portrait, androgynous nonbinary person with warm sienna skin and close-cropped black hair, striking deep violet eyes with intricate fractal ring patterns, sharp angular features, hands with smooth featureless fingertips, subdermal luminescent mesh patterns visible under skin across cheekbones and temples glowing faintly in low light, wearing unmarked grey synth-weave jacket and black cargo pants, neutral expression with subtle half-smile, surrounded by abstract digital glitch effects and fragmented data streams, underground transit corridor aesthetic with neon accent lighting, shallow depth of field, cinematic cyberpunk noir style, high contrast lighting, photorealistic with speculative sci-fi elements --ar 2:3 --v 6"
 }

@@ -195,5 +195,27 @@
     "Glass",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Zimbabwean / Norwegian-Danish",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, with strong arms and a thick center earned from decades of physical labor. Not heavy, but densely built — the kind of frame that moves with purpose and doesn't tire easily.",
+    "hair_color": "Natural black with heavy silver threading",
+    "hair_style": "High puff, tightly gathered and maintained",
+    "hair_length": "Medium (shoulder-length when released)",
+    "eye_color": "Deep brown, slightly faded at the edges from age and reading-glass dependence",
+    "skin_tone": "Deep warm brown with reddish undertones, sun-exposed on the neck and forearms",
+    "complexion": "Weathered but well-maintained skin with pronounced laugh lines and forehead creases. Deep creases around the eyes from squinting. Her face reads as someone who has smiled often and worked harder. Minimal makeup, if any.",
+    "distinguishing_marks": [
+      "Burn scars covering her left forearm from wrist to elbow — irregular, pale scar tissue that pulls slightly when she moves, suggesting deep thermal injury sustained decades ago",
+      "Permanent discoloration on her hands: fingertips and palms are perpetually pink-tinged and slightly calloused from chronic detergent and hot water exposure",
+      "Fine laugh lines radiating from the outer corners of both eyes",
+      "A small, faint scar on her right temple, barely visible unless light hits it directly"
+    ],
+    "visible_augmentations": "Left knee replacement visible only when she wears shorts or capris — a slightly bulkier joint line and minor color mismatch where cheaply printed synthetic material meets natural skin. She favors full-length pants and skirts, so it's rarely seen. Movement occasionally stiffens in cold weather, particularly noticeable in early morning hours.",
+    "posture_movement": "Moves with deliberate, economical motions — no wasted energy. Walks with a slight favor to her right leg on cold mornings. Her hands are always in use: adjusting, folding, gesturing. She stands with weight distributed evenly, shoulders back but not rigid. Sits rarely and briefly. Her gaze is alert and direct; she makes immediate eye contact with people she knows.",
+    "clothing_style": "Tier 3-4 working practical: well-maintained but budget-conscious. Favors full-length cotton or linen pants in black, navy, or earth tones. Wears cardigans or lightweight button-ups over simple base layers — layers that can be added or removed as the laundromat's heat fluctuates. Shoes are practical, broken-in, non-slip soles. Reading glasses on a beaded chain made by her youngest grandchild — multicolored wooden beads, worn daily. A thin gold band on her left ring finger, worn smooth from decades. No jewelry otherwise. Her clothes are always clean but show subtle wear; she mends visible damage rather than replacing items."
+  },
+  "image_prompt": "A 58-year-old Zimbabwean-Norwegian woman with deep warm brown skin and silver-threaded black hair pulled into a high puff, standing in a humming laundromat filled with industrial washers and dryers, morning light streaming through large front windows. She wears a navy cardigan over a cream linen shirt and full-length black pants, reading glasses on a colorful beaded chain around her neck. Her left forearm bears old pale burn scars. Her hands are slightly swollen and pink-tinged from decades of detergent exposure. She stands with quiet authority, one hand resting on a folding counter, her expression alert and warm but not soft. Fluorescent overhead lights mix with natural daylight. The laundromat smells of hot water and industrial soap. Hyperrealistic, grounded, gentle but dignified. Shot from mid-thigh up, 3/4 angle. Cyberpunk genre, mundane tier-3 setting, documentary realism --ar 2:3 --v 6"
 }

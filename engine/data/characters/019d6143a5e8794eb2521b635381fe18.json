@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near North Ave and Milwaukee",
-  "description": "Daulet Reyes-Abubakar is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 45, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a street samurai out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Reyes-Abubakar is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Daulet Reyes-Abubakar is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a street samurai out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Reyes-Abubakar is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.99,
@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "A crew worth trusting — people who stay when the shooting starts"
     ],
     "coping_mechanisms": [
@@ -274,7 +274,7 @@
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Nearfield",
     "The Heritage Vault",
     "Geartown",
@@ -284,5 +284,27 @@
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Latin American (Spanish/indigenous) / West African / Kazakh Central Asian",
+    "height_cm": 173,
+    "weight_kg": 68,
+    "build": "Athletic and lean with visible musculature — dancer's precision married to fighter's density. Geneware muscle treatment creates subtle dimensional quality to shoulders and forearms, almost imperceptibly denser than baseline human",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Pulled back in a functional braid, often wrapped with wire or cord for quick-release",
+    "hair_length": "Medium — shoulder-length when loose, never loose during work",
+    "eye_color": "Amber-brown, natural — no optical augmentation",
+    "skin_tone": "Warm medium brown with subtle golden undertone, speaks to mixed heritage",
+    "complexion": "Sharp cheekbones, defined jawline, minimal scarring on face — suggests careful work. Skin texture resilient, weathered around eyes from squinting in industrial light. No cosmetic grooming; pragmatic and maintained",
+    "distinguishing_marks": [
+      "Burn scar along left collarbone — three fingers wide, pale and smooth, circa 8 years old, deliberate pattern suggests industrial accident or intentional marking",
+      "Claw-rake scar across right forearm — four parallel lines, faded white, speaks to close-quarters engagement with unaugmented opponent",
+      "Subdermal armor plating visible as subtle geometric ridges beneath skin across chest and both forearms — catches light differently depending on angle, scratched and worn military-surplus appearance with deliberate serial number defacement",
+      "Tattoo on inside left wrist — minimalist circuit pattern in faded black ink, personal sigil or gang marker, deliberately concealable"
+    ],
+    "visible_augmentations": "Subdermal armor plating across torso and forearms creates subtle but unmistakable geometric texture beneath skin — scarred, worn appearance with evidence of field repairs. Geneware muscle density treatment visible as exceptional muscular definition and unusual density in shoulders, forearms, and core — reads as 'too capable' to observers familiar with chrome. No visible optics, limb replacement, or external hardware — augmentations are surgical and deliberate",
+    "posture_movement": "Economical and alert — never fully relaxed, baseline awareness maintained even in cover identity mode. Movement is fluid and precise, minimal wasted motion. When armed or in operational context, posture becomes predatory and coiled. Eye contact duration calibrated; she watches before engaging. Walks with slight forward lean, weight centered on balls of feet — ready for explosive movement",
+    "clothing_style": "Tier 3-4 pragmatism — functional streetwear that accommodates concealed weapons and augmentations. Off-duty: loose-fitting long-sleeve synthweave tops (dark colors) that allow subdermal armor to move freely, worn tactical pants with reinforced thigh pockets, scuffed runner boots with reinforced soles. On-contract: armored jacket — unmarked, modular, with integrated holsters. No logos, no corp affiliation visible. Minimal jewelry except functional watch with subdued face. Overall impression: someone who buys clothes to wear, not to signal status"
+  },
+  "image_prompt": "cyberpunk street samurai, 45-year-old woman with mixed heritage — warm medium brown skin, sharp cheekbones, amber eyes, dark hair with silver threading pulled into functional braid. Athletic lean muscular build, visible subdermal armor plating across torso and forearms creating geometric texture, burn scar on collarbone, claw marks on right arm. Wearing dark loose-fitting synthweave long-sleeve top, tactical pants, scuffed combat boots, unmarked modular armored jacket. Standing in industrial Geartown setting — neon-lit chop shop with machinery and metal debris, oil-stained concrete, dim overhead lighting with color cast. Alert posture, hands relaxed at sides, calculating expression. Film noir cyberpunk aesthetic with practical street-runner aesthetic, moody atmospheric lighting, grounded and dangerous. --ar 2:3 --v 6"
 }

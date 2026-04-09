@@ -181,5 +181,26 @@
     "Bronze",
     "The Pale Mile"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Peruvian Quechua",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, with the defined musculature of someone who walks 15+ kilometers daily. Low body fat, efficient frame — built for endurance rather than power.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Close-cropped on sides and crown; single thick braid descending the nape of neck, wrapped with thin copper wire at the base — the Circuit Monastic Order's active pilgrimage mark",
+    "hair_length": "Short (except for single long braid)",
+    "eye_color": "Dark brown, unremarkable and warm",
+    "skin_tone": "Warm bronze with olive undertones, reflecting mixed West African and Andean heritage",
+    "complexion": "Clean, weathered from constant urban walking. Few lines around the eyes from squinting in neon and reflected light. Minimal grooming beyond functional maintenance — no cosmetics, well-maintained but ascetic.",
+    "distinguishing_marks": [
+      "Bioluminescent dermal patches along both forearms in pale blue, arranged in vertical lines from wrist to elbow; pulse intermittently in patterns Seun claims mirror the city's power grid fluctuations",
+      "Faint linear scar across left knuckles (old, worn smooth) — never discussed",
+      "Small ordination sigil tattoo on inner right wrist: a simple circuit loop with meridian threads, done in black ink"
+    ],
+    "visible_augmentations": "Bioluminescent dermal patches on forearms (pale blue, pulsing). The patches are the most immediately striking feature — they mark him as Circuit Monastic. Subdermal compass implant is not visibly apparent unless he rolls up his sleeve to reveal a subtle raised line at the base of his skull, rarely visible.",
+    "posture_movement": "Upright, economical gait — the unconscious efficiency of someone who has walked thousands of kilometers. Moves with quiet intention, rarely fidgets. Hands are often at rest but responsive. Maintains steady eye contact and speaks slowly, with deliberate pauses. Standing still, he has the patient groundedness of a person accustomed to silence.",
+    "clothing_style": "Tier 3–4 functional asceticism. Standard Circuit monastic vestments: unbleached linen tunic with deep pockets, reinforced at seams; charcoal utility trousers with zipped thigh pockets (contains pilgrim records, repair kit, compass calibrator). Worn but meticulously maintained leather boots, re-soled twice. Over the tunic, a long sleeveless oilcloth vest in faded slate gray, layered for weather protection and durability. No jewelry except the copper wire around his braid. Gear is modular and weatherproof — no excess, no fashion statement."
+  },
+  "image_prompt": "A lean, bronze-skinned man with dark hair in a short crop and single long braid down his nape, mid-thirties, wearing ascetic linen and charcoal utility clothing. His forearms glow with pale blue bioluminescent dermal patches pulsing softly. He stands with quiet, grounded posture in an urban underground setting—neon-lit E.L.F. nodes visible behind him, chrome pipes and circuit boards in soft focus. Warm bronze and cool blue lighting. Cyberpunk spirituality, wandering monk aesthetic, well-worn but maintained gear. Photorealistic, thoughtful expression, the glow of his forearm mods catching moisture in the humid air. Shot from waist-up, intimate and composed. --ar 2:3 --v 6"
 }

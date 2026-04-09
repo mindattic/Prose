@@ -259,5 +259,25 @@
     "Nesting Doll",
     "Gold"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Russian (Siberian)",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and economical, minimal wasted mass. Shoulders narrow but defined from precise, controlled movements rather than exercise. Frame suggests efficiency over strength.",
+    "hair_color": "Black with premature grey at left temple",
+    "hair_style": "Close-cropped, military precision",
+    "hair_length": "Short",
+    "eye_color": "Left: deep gold with visible tracking crosshairs; Right: pale grey-blue surgical lens with faint reticle visible under direct light",
+    "skin_tone": "Deep warm brown with Siberian undertones, creating a tonal complexity unusual for his mixed heritage",
+    "complexion": "Angular, high-boned face with pronounced Ghanaian cheekbones and a severe Siberian jawline. Skin meticulously maintained, unmarked except for occupational detail. No facial hair. Expression defaults to neutral observation.",
+    "distinguishing_marks": [
+      "Faint scar tissue running vertically along left temple from hairline to jaw — nerve-burn incident, pale against his skin tone",
+      "Micro-scarring on left wrist from neural steadiness implant installation, barely visible unless you know where to look"
+    ],
+    "visible_augmentations": "Dual ocular implants immediately visible — left eye's gold color unnatural, right eye's surgical lens faintly catches light with a reticle pattern. No visible subdermal work; the finger-tip dispenser operates from within. Neural implants in wrists create only imperceptible micro-scarring.",
+    "posture_movement": "Economical and controlled. Stands still for long periods without restlessness. Moves with deliberate precision; no wasted motion, no fidgeting. Hands are his tell — they're always subtly active, fingers moving through micro-adjustments even at rest. Walking gait is quiet, even on metal flooring.",
+    "clothing_style": "Neutral layered aesthetic: matte grey undershirt, oversized black synthetic overshirt (medical-grade, easy to sterilize), dark charcoal cargo pants with minimal visible pockets, black polymer work shoes with reinforced soles. A faded copper armband bearing a discreet Ironvein Teeth mark on his right bicep — protection tax, not affiliation. No jewelry, no logos. All fabrics are selection for silence and durability over aesthetics. Tier 4 functional — expensive in the right ways, invisible in all the wrong ones."
+  },
+  "image_prompt": "Cyberpunk street pharmacist, lean angular male with deep brown skin, carved facial structure blending West African cheekbones with severe Siberian jawline, close-cropped black hair with grey temple streak. Left eye glowing deep gold with visible tracking crosshairs, right eye pale surgical lens with faint reticle. Pale scar tissue along left temple. Hands raised showing long surgeon's fingers, meticulously clean, standing in narrow cramped utility closet pharmacy lit by cold LED work lights. Wearing matte grey undershirt and oversized black medical-grade overshirt, minimal pockets, sterile aesthetic. Background of stacked bootleg biosystems manuals, sealed pharmaceutical containers, precision tools in organized racks. Mood: clinical, detached, necessary. Narrow depth of field focusing on his face and hands. Cold blue-grey lighting with hints of amber from desk lamp, high contrast, film noir cyberpunk. Photorealistic, hyperdetailed, clinical precision. --ar 2:3 --v 6"
 }

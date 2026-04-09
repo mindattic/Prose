@@ -260,5 +260,26 @@
     "The Pure Hand",
     "Wool"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Northern European (Nigerian / Scandinavian)",
+    "height_cm": 191,
+    "weight_kg": 78,
+    "build": "Tall and rangy with long limbs and narrow shoulders; lean muscle mass showing slight age-related atrophy in the upper arms. Built for economy of movement rather than strength — the frame of someone who has spent decades in stillness.",
+    "hair_color": "Silver-white, natural graying from melanin reduction",
+    "hair_style": "Neat locs, typically pinned up in a professional bun or loose coil when working; occasionally left down past shoulder length on teaching days",
+    "hair_length": "Long",
+    "eye_color": "Dark brown with faint amber luminescence from ocular overlay in low-light conditions",
+    "skin_tone": "Deep warm brown with subtle ashy undertones from age and extensive archive sublevel work (limited sunlight exposure)",
+    "complexion": "Fine-lined face with high cheekbones and a narrow jaw; skin condition is good but weathered, with crow's feet and forehead creases that deepen when concentrating. Closely groomed, minimal facial hair — a thin gray beard kept to a precise 2mm length.",
+    "distinguishing_marks": [
+      "Faint blue-silver subdermal tracery forming a geometric grid pattern across the backs of both hands and extending up the inner forearms in parallel lines, remnants of a data-lattice implant installed in his thirties and partially removed two decades ago",
+      "Fine scar line running from left temple down to jawline, barely visible — from early augmentation surgery",
+      "Small circular scar on right inner wrist where a neural clock implant was installed, barely larger than a pinhead but slightly raised"
+    ],
+    "visible_augmentations": "Faint blue-silver subdermal lattice tracery on hands and forearms (non-functional but cosmetically retained). Ocular overlay visible as a hairline amber luminescence in the sclera under certain angles and low-light conditions. No external chrome or obvious prosthetics.",
+    "posture_movement": "Moves with deliberate, economical slowness — shoulders slightly hunched forward as if perpetually leaning toward a microscopic text. Hands held loosely at sides, rarely gesturing. Blinks infrequently and with purpose. When seated, he becomes nearly motionless for hours. His head tilts slightly when listening, as if processing at a different speed than the speaker.",
+    "clothing_style": "Layered in synthetic wool and cotton blends even in warm spaces — cream, charcoal, and muted blues dominate. Favors high-necked thermal underlayers, loose cardigans, and tailored but worn slacks. Archive-appropriate: no loose fabrics, no static-prone synthetics, no jewelry except a simple titanium wedding band. Shoes are soft archival-safe slip-ons in matte black. On teaching days, adds a structured linen jacket from a mid-tier corpo tailor (suggesting Tier 2-3 University Spine affiliation). Everything is immaculate but slightly outdated — fashions from 5-10 years prior."
+  },
+  "image_prompt": "A tall, silver-haired Black man in his late fifties with long neat locs pinned up, standing in a dimly lit archive sublevel surrounded by humming server racks and flickering data terminals, wearing layered cream and charcoal synthetic wool despite the warm air, his dark skin marked with faint blue-silver geometric tracery across his hands and forearms, amber light glinting from his augmented eyes, moving with slow deliberate grace toward a degraded holographic dataset, soft archival lighting casting long shadows, cyberpunk archetype of a knowledge archaeologist, high-magnification detail on weathered face and subdermal lattice scars, moody color grading with warm ambers and cool blues, documentary realism with soft bokeh background, shot in style of Philip K Dick protagonist, --ar 2:3 --v 6"
 }

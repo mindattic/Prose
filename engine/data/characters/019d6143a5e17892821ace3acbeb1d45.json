@@ -244,5 +244,25 @@
     "Zheng-Dao Heavy Industries Space Elevator Tether System",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Central African / Scandinavian",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and slight, with soft rounded shoulders and a center of gravity that makes them naturally stable—built for sitting cross-legged on floor cushions and being grabbed by small hands without toppling",
+    "hair_color": "Natural dark brown with warm undertones",
+    "hair_style": "Worn in large twisted sections; pinned up in a practical cluster during work hours, loose and flowing off-shift",
+    "hair_length": "Long",
+    "eye_color": "Color-shifting irides that cycle slowly between warm green and amber depending on ambient light and emotional state",
+    "skin_tone": "Warm medium brown with subtle golden undertones",
+    "complexion": "Clear and expressive, with laugh lines at the corners of their eyes and a tendency toward a slight smile; hands show minor wear from frequent hand-washing and fabric work",
+    "distinguishing_marks": [
+      "Pair of independently articulating cat ears (geneware mod) positioned above natural ears, dark brown at base fading to sandy cream at tips—natural-looking despite modification, with visible individual fur structure",
+      "Faint white scar on left palm from a childhood burn, barely noticeable"
+    ],
+    "visible_augmentations": "Cat ears (geneware, cosmetic—dark-to-cream gradient, independently articulating; ears often rotate toward sound sources or children's voices). Color-shifting irides visible in direct light. No chrome or overt cybernetics.",
+    "posture_movement": "Moves with economical, purposeful grace—rarely still for more than a few seconds. Hands are constantly in micro-motion: gesturing while speaking, braiding, mending, writing. Sits comfortably on the floor, cross-legged or kneeling. When tired, slight forward slouch in shoulders. Cat ears orient toward speakers and sound sources unconsciously.",
+    "clothing_style": "Tier 3-4 working professional. Favors layered, practical clothing: soft knit cardigans (often in earth tones or deep jewel colors), utility pants or loose trousers with multiple pockets, minimal jewelry except for a thin silver mesh bracelet (gift, worn daily). Shoes are comfortable and scuffed—designed for being on feet all day. At work: hair pinned up, sleeves rolled or pushed up, an apron with pockets. Off-shift: slightly more relaxed but still practical; favors natural fabrics."
+  },
+  "image_prompt": "Portrait of Céleste Mwamba-Sørensen, a 28-year-old nonbinary childcare worker with warm medium-brown skin and large twisted dark hair pinned up. Their most striking feature: a pair of independently articulating cat ears (geneware mod) with dark brown fur at the base fading to sandy cream at the tips, positioned naturally above their head. Their eyes are color-shifting, cycling between warm green and amber in soft light. Compact, slight build with soft features and small precise hands. Expression is warm and slightly wry, with laugh lines visible. They are wearing a soft jewel-tone cardigan layered over a simple shirt, practical utility pants, and well-worn comfortable shoes. Background suggests a cozy community crèche interior with warm ambient lighting and soft focus children's toys. Cyberpunk setting, humanizing portrait style, shallow depth of field, natural soft lighting with subtle color temperature shift suggesting the iridescence of their eyes. Mood: approachable, genuine, slightly tired but content. Professional character art, detailed face, warm color grading. --ar 2:3 --v 6"
 }

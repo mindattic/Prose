@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "The Shelf — lower district tenements near the old lakeshore, near Ashland and Division",
-  "description": "Deniz Volkov-Obi is slight and easy to overlook, which is exactly the point. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a wheelman out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Deniz Volkov-Obi agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Deniz Volkov-Obi is slight and easy to overlook, which is exactly the point. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a wheelman out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Deniz Volkov-Obi agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -276,10 +276,32 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "The Nearfield",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Turkish / Russian / West African",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and efficient — minimal excess mass, all functional muscle. Wiry frame built for sustained output rather than explosive power, with the posture of someone who has trained their body as a tool.",
+    "hair_color": "Dark brown, naturalized with gray threading at temples",
+    "hair_style": "Short, practical cut kept at precisely 2cm length — no maintenance vanity, pure function",
+    "hair_length": "Short",
+    "eye_color": "Brown with faint chrome-rim scarring around the orbital sockets — sign of repeated surgical interface",
+    "skin_tone": "Medium-warm complexion with underlying pallor suggesting irregular sleep cycles and minimal sun exposure",
+    "complexion": "Sharp cheekbones, lean jaw. Skin shows fine stress lines around eyes and mouth — accumulated tension rather than age. Thin scar tissue along left temple from surgical access points. Grooming is military-precise: clean-shaven daily, nails trimmed to function, no ornamentation.",
+    "distinguishing_marks": [
+      "Surgical scar line along left temple running toward ear — chrome cranial implant access point, partially visible under skin",
+      "Fine webbed scarring across inner right wrist — old cut, deliberately kept rather than healed clean, marks a decision point",
+      "Chemical burn mark on right forearm, pale and well-healed, approximately 3cm diameter — adrenaline pump calibration accident",
+      "Faint tattoo on left collarbone in Cyrillic script, blurred intentionally with age and deliberate cover-work — old name, old life"
+    ],
+    "visible_augmentations": "Cranial implant is the statement piece — fine chrome circuitry visible at left temple in geometric patterns, deliberately left unhidden. The pattern catches light in a way that reads as either medical necessity or a warning. Subcutaneous wiring traces visible under translucent patches of skin on neck and upper chest when he moves, suggesting extensive neural integration beneath.",
+    "posture_movement": "Economical and alert. Sits with spine straight, eyes tracking entrances and exits reflexively. Moves like someone counting milliseconds — no wasted motion, each gesture purposeful. Hands are steady and quick. When still, he has an uncanny calm that makes people uncomfortable; when moving, he's already three steps ahead of the room.",
+    "clothing_style": "Tier 3-4 utilitarian. Matte-black reinforced jacket with integrated comms pockets, custom-fitted for concealed hardware. Underneath: gray synthetic undershirt designed for rapid cooling. Worn cargo pants in dark gray with cargo pockets reinforced for equipment — no corporate logos, no flash. Steel-toed boots with grip-soled treads, scuffed from actual use. A thin chain with a non-functional key around his neck — the only personal item, kept for reasons he won't explain. All clothing designed for mobility and maintenance, none for impression."
+  },
+  "image_prompt": "Portrait of Deniz Volkov-Obi, a 33-year-old wheelman, lean muscular build, dark brown hair with gray at temples, sharp cheekbones, brown eyes, faint chrome circuitry visible at left temple, surgical scars near ear, standing in dim warehouse lighting with cinematic shadows. Wearing matte-black reinforced jacket over gray undershirt, cargo pants, steel-toed boots. Calm but dangerous expression, alert posture, hands steady. Cyberpunk noir style, gritty and utilitarian aesthetic, moody blue-amber lighting, shallow depth of field, film noir influence, hyperrealistic detail on chrome implant, no ornamentation, minimalist color palette. --ar 2:3 --v 6"
 }

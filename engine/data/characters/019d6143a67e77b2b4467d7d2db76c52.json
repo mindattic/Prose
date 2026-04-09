@@ -183,5 +183,25 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Silver"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polish / South Indian",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid through the torso, muscular forearms from decades of stall work, carries weight with functional density rather than softness",
+    "hair_color": "Natural black with silver streaking throughout",
+    "hair_style": "Worn loose in a natural texture, typically pinned under a bright saffron headwrap during service hours",
+    "hair_length": "Medium (shoulder-length when unwrapped)",
+    "eye_color": "Cosmetic indigo with deep whorled patterning, replacing natural brown",
+    "skin_tone": "Dark amber with warm undertones",
+    "complexion": "Weathered and lived-in, minimal makeup, laugh lines around the eyes, expressions that shift easily between warmth and shrewd assessment",
+    "distinguishing_marks": [
+      "Extensive burn scarring along the left forearm in irregular patches, pale against dark skin, from a grease fire approximately twenty years prior",
+      "Fine white scar tissue visible on the back of both hands from kitchen work spanning decades"
+    ],
+    "visible_augmentations": "Patterned indigo cosmetic irises. Left hand shows faint subdermal heat-resistance scarring at the palm and inner wrist (functional implant, not cosmetic) with slightly altered pigmentation in the scarred tissue.",
+    "posture_movement": "Moves behind her counter with unhurried authority and economic precision. Stands with weight evenly distributed, shoulders back. Gestures while speaking are animated but never wasted. Pivots and turns with practiced efficiency from years of stall operation.",
+    "clothing_style": "Tier 3-4 working practical: fitted thermal undershirt visible at collar, layered with a heavy linen apron stained with turmeric and old grease burns, the fabric faded and reinforced at the edges. Wears a bright saffron headwrap during service (color choice deliberate, not functional). Simple brass jewelry—a bracelet her mother gave her, a ring on her right hand. Comfortable work boots with reinforced soles. Off-hours: similar utilitarian style, slightly less stained, with a heavier outer layer."
+  },
+  "image_prompt": "A 52-year-old West African-Polish-Indian woman with dark amber skin, silver-streaked black hair pinned under a bright saffron headwrap, standing behind a street food stall. Her eyes are striking cosmetic indigo with deep whorled patterning. Her left forearm is mapped in pale burn scarring from an old grease fire, worn without shame. She wears a stained, reinforced linen apron over thermal layers, simple brass jewelry, work boots. Behind her: three burners, a recycled heat-drum, seventeen unmarked spice jars, a hand-painted sign reading SWEETMOUTH in three scripts. Her expression is warm but shrewd, animated and present. Geartown market setting, neon-lit evening, steam rising from the stall, worn metal countertop, crowd blurred in background. Warm tungsten and market-glow lighting. Cyberpunk street food vendor, documentary realism, character-focused, gritty and dignified. --ar 2:3 --v 6"
 }

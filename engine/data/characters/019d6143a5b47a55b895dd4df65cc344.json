@@ -204,5 +204,26 @@
     "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
     "Lead"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Polish / Czech — Eastern European",
+    "height_cm": 162,
+    "weight_kg": 54,
+    "build": "Compact and wiry, muscle definition from constant movement rather than intentional training. Shoulders slightly tensed from chronic stress. No excess body fat.",
+    "hair_color": "Dark brown, naturally",
+    "hair_style": "Pulled back in a functional bun or tight ponytail, secured with whatever's at hand",
+    "hair_length": "Medium — long enough to pull back, short enough to be practical",
+    "eye_color": "Dark gray-brown",
+    "skin_tone": "Fair with warm undertones, common to Eastern European ancestry",
+    "complexion": "Sharp features, defined cheekbones, prominent jawline. Skin shows signs of exhaustion — slight darkness under eyes, occasional tension lines around the mouth. Well-maintained but utilitarian — minimal makeup, functional grooming",
+    "distinguishing_marks": [
+      "Small pale scar on left temple, barely visible, from childhood accident",
+      "Callus patterns on right hand fingers from constant tablet interface use and note-taking",
+      "Faint stress-induced eczema patch on inner left wrist, usually covered by sleeve"
+    ],
+    "visible_augmentations": "None visible. Communication suite and eidetic memory implants are subcutaneous neural arrays — not externally apparent. Wears a discrete ear-bud communicator on her right ear, easily mistaken for standard audio tech.",
+    "posture_movement": "Perpetually alert posture, shoulders slightly forward. Moves with efficiency rather than grace — quick, purposeful steps. Frequently distracted by incoming communications, eyes tracking tablet or mid-distance into AR interface space. Fidgets with stylus or tablet edge when stationary. Rarely fully relaxes.",
+    "clothing_style": "Tier 3-4 working class, heavily practical. Standard black or gray utility pants with multiple pockets, worn comfortable not fashionable. Fitted long-sleeve shirts in muted colors (charcoal, navy, dark green) — layers for temperature control and concealment of biomonitor. Worn synthetic jacket, weathered but well-maintained. Practical boots suitable for moving through the Shelf's unstable infrastructure. A single piece of jewelry: thin silver chain necklace, gift from parents before they died, worn under clothing. Minimal styling — function over appearance."
+  },
+  "image_prompt": "Cyberpunk portrait of a 27-year-old Eastern European woman, compact build, dark brown hair pulled back tightly, dark gray-brown eyes alert and focused, fair complexion with subtle exhaustion. Wearing practical black utility pants and fitted charcoal long-sleeve shirt under a weathered synthetic jacket. Holding a tablet device, subtle ear-bud communicator visible. Standing in a Tier 3 residential interior, functional and sparse, industrial lighting casting sharp shadows. Expression serious and concentrated, shoulders tense with responsibility. Moody cyberpunk aesthetic, cool color palette dominated by grays and blues, subtle AR interface glow reflecting in her eyes. Photography-realistic style, shallow depth of field. --ar 2:3 --v 6"
 }

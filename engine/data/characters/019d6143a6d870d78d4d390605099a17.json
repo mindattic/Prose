@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Kenosha Crossing transit hub, sleeping berth corridor B-7, near beyond the Western Perimeter",
-  "description": "Soraya is a tall, drought-weathered woman with the broad cheekbones of her Botswanan grandmother and the pale grey eyes she inherited from somewhere in the Bulgarian line. Her skin is the color of cracked clay, deeply lined around the eyes and mouth from decades of squinting at horizon lines. She wears a patchwork duster covered in hand-sewn pockets, each holding a rolled paper map — actual paper, a near-mythological material in Meridian 88 — annotated in four different scripts. No cosmetic mods; her only concession to technology is a battered retinal overlay that flickers at the edges because she can't afford calibration.\n\nSoraya spent thirty years mapping the hyperlane rest stops between the Great Lakes and the Gulf Shelf, and there is no one who knows the informal infrastructure of drifter life better. She speaks with the deliberate economy of someone who has learned to make every sentence count because silence is the only privacy a transient gets. She is neither sentimental nor cruel — she has simply seen too much to be surprised by either kindness or brutality, and treats both as weather.",
+  "description": "Soraya is a tall, drought-weathered woman with the broad cheekbones of her Botswanan grandmother and the pale grey eyes she inherited from somewhere in the Bulgarian line. Her skin is the color of cracked clay, deeply lined around the eyes and mouth from decades of squinting at horizon lines. She wears a patchwork duster covered in hand-sewn pockets, each holding a rolled paper map — actual paper, a near-mythological material in GLMZ — annotated in four different scripts. No cosmetic mods; her only concession to technology is a battered retinal overlay that flickers at the edges because she can't afford calibration.\n\nSoraya spent thirty years mapping the hyperlane rest stops between the Great Lakes and the Gulf Shelf, and there is no one who knows the informal infrastructure of drifter life better. She speaks with the deliberate economy of someone who has learned to make every sentence count because silence is the only privacy a transient gets. She is neither sentimental nor cruel — she has simply seen too much to be surprised by either kindness or brutality, and treats both as weather.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -216,7 +216,7 @@
   "registered_firearms": [],
   "related_entities": [
     "Kenosha Crossing",
-    "Meridian 88",
+    "GLMZ",
     "Grandmother",
     "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
     "Synaptic Drift Emitter SDE-4 'Lullaby'",
@@ -224,5 +224,26 @@
     "The Pale Mile",
     "Clay"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "Botswanan / Bulgarian with trace admixture",
+    "height_cm": 182,
+    "weight_kg": 68,
+    "build": "Lean and sinewy from decades of walking hyperlane corridors; all functional muscle with minimal fat, shoulders slightly hunched from years bent over cartographic work",
+    "hair_color": "Grey-brown, salt-and-pepper with streaks of ash",
+    "hair_style": "Pulled back in a loose, pragmatic braid, secured with whatever wire or cord is at hand",
+    "hair_length": "Medium",
+    "eye_color": "Pale grey, slightly rheumy at the inner corners; the left iris has a faint grid pattern from the flickering retinal overlay",
+    "skin_tone": "Weathered tan-grey; complexion of someone who has spent three decades under the unforgiving artificial lights of transit hubs and the bleaching sun of open hyperlane routes",
+    "complexion": "Deeply lined face, particularly around eyes and mouth—rictus lines from perpetual squinting. Skin has the papery texture of chronic dehydration. Clean but unadorned; no makeup. Jaw prominent, cheekbones high and broad. A faint scar along her left temple, barely visible unless light hits it directly.",
+    "distinguishing_marks": [
+      "A visible ridge of calcium-bonding paste repair running along the inside of her left wrist, creating a permanent raised line under the skin that catches light when her hand moves",
+      "Fine white scar tissue at the outer corner of her left eye, approximately 2cm, angled downward—origin unknown but old",
+      "Ink stains (various colors—blues, blacks, iron reds) permanently discoloring the pads of her thumb and first two fingers on both hands"
+    ],
+    "visible_augmentations": "Left retinal overlay visible as a faint grey-white geometric grid flickering at the iris edge, with occasional chromatic aberration (faint red/blue fringing) indicating poor calibration. The device sometimes glitches, causing her left eye to jitter slightly. Otherwise no visible augmentation—the calcium-bonding repair on her wrist appears organic.",
+    "posture_movement": "Upright but economical; she moves with the careful precision of someone who has learned to conserve energy over long distances. Her gait is steady and unhurried, with a slight favoring of her right side. She tends to walk the perimeter of spaces rather than cutting across them—mapping as she goes. Her hands move constantly when at rest, fingers twitching as if annotating invisible charts.",
+    "clothing_style": "Tier 4-5 nomad utility wear. A long patchwork duster of faded synthetic canvas and worn linen, dyed in multiple washes to a mottled beige-grey, covered in approximately thirty hand-sewn pockets of varying sizes and materials—each pocket holding rolled paper maps. The duster has visible repairs done with different thread colors, a collage of temporary fixes. Underneath: a grey long-sleeved compression shirt (Tier 4 surplus, pre-owned), the cuffs frayed. Loose-fitting cargo trousers in charcoal synthetic, knees reinforced with stitched patches. Boots: scuffed, resoled multiple times, practical, non-brand. A thin polymer raincoat rolled and tied to her pack. No jewelry, no logos, no status markers. Everything designed for transit between climate-controlled hubs and exposed hyperlane routes."
+  },
+  "image_prompt": "A weathered woman in her early fifties standing in a dim transit hub corridor, tall and lean with angular Botswanan-Bulgarian features, pale grey eyes with a faint flickering grid pattern in the left iris, deeply lined face from decades of squinting. Ash-streaked grey-brown hair braided back. Wearing a patchwork duster covered in dozens of hand-sewn pockets bulging with rolled paper maps, layers of repairs in mismatched thread. Long sleeves showing ink stains on her fingers. Visible calcium-bonding ridge along her left wrist under the skin. Standing still and observant, shoulders slightly forward in a cartographer's posture. Harsh fluorescent lighting from above, casting sharp shadows. Weathered and authentic, not glamorous—the look of someone who has walked a thousand corridors. Hyperdetailed clothing textures, worn synthetic fabrics. Cyberpunk noir realism, cinematic depth of field, 8k detail. --ar 2:3 --v 6"
 }

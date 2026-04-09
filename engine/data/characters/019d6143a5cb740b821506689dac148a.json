@@ -14,7 +14,7 @@
   "age": 34,
   "status": "active",
   "location": "Milwaukee Core — lives above the HVAC front office in a converted utility room he refuses to call an apartment",
-  "description": "Breck Tannen is the reason the Thermite Collective's communications never fail, their security bypasses never trigger alerts, and their extraction vehicles always start. He handles the digital infrastructure of every operation — camera loops, alarm suppression, communication encryption, vehicle systems, and the thousand invisible technical details that separate a clean extraction from a firefight. He is the quietest person in any room he enters, which is usually a server closet or the back of a van.\n\nBefore the Collective, Breck ran network security for a mid-tier Meridian 88 logistics company. The job was stable, boring, and slowly killing his soul. He started moonlighting as a gray-hat penetration tester — breaking into corporate security systems and selling the vulnerability reports back to the companies. It was technically illegal but morally defensible. Then a client turned out to be a front for a runner crew, and the vulnerability report was used to rob a pharmaceutical warehouse. Nobody got hurt, but Breck's legitimate career was over. Vesper found him three months later, living in the utility room above what would become the HVAC office, eating vending machine food and building signal jammers for cash.\n\nHe is lean, pale from too much screen time, with dark circles that are permanent features rather than symptoms. He wears the same rotation of three black t-shirts and cargo pants. His hands are always moving — tapping, adjusting, dismantling something. The only augmentation visible is a data jack port at the base of his skull, but his forearms are laced with subdermal antenna arrays that glow faintly blue under UV light.",
+  "description": "Breck Tannen is the reason the Thermite Collective's communications never fail, their security bypasses never trigger alerts, and their extraction vehicles always start. He handles the digital infrastructure of every operation — camera loops, alarm suppression, communication encryption, vehicle systems, and the thousand invisible technical details that separate a clean extraction from a firefight. He is the quietest person in any room he enters, which is usually a server closet or the back of a van.\n\nBefore the Collective, Breck ran network security for a mid-tier GLMZ logistics company. The job was stable, boring, and slowly killing his soul. He started moonlighting as a gray-hat penetration tester — breaking into corporate security systems and selling the vulnerability reports back to the companies. It was technically illegal but morally defensible. Then a client turned out to be a front for a runner crew, and the vulnerability report was used to rob a pharmaceutical warehouse. Nobody got hurt, but Breck's legitimate career was over. Vesper found him three months later, living in the utility room above what would become the HVAC office, eating vending machine food and building signal jammers for cash.\n\nHe is lean, pale from too much screen time, with dark circles that are permanent features rather than symptoms. He wears the same rotation of three black t-shirts and cargo pants. His hands are always moving — tapping, adjusting, dismantling something. The only augmentation visible is a data jack port at the base of his skull, but his forearms are laced with subdermal antenna arrays that glow faintly blue under UV light.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -195,7 +195,7 @@
   ],
   "related_entities": [
     "Dredge Mining Collective",
-    "Meridian 88",
+    "GLMZ",
     "Flicker",
     "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
     "Arcturus Defense Solutions CrisisNet BT-4 Battlefield Triage",
@@ -208,5 +208,27 @@
     "Déjà Vu",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Germanic / Scandinavian (Tannen suggests Bavarian/Alpine origin, mixed with unspecified secondary lineage typical of GLMZ working class)",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, almost gaunt—years of irregular eating and sedentary technical work have hollowed his frame. Defined shoulders and forearms from repetitive hand work, minimal body fat, negligible muscle mass outside of functional wrist/finger strength.",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Kept short and unkempt, functional rather than groomed—swept back when it bothers him, otherwise ignored",
+    "hair_length": "Short",
+    "eye_color": "Gray-blue with faint digital artifacts at the periphery when augmented visual cortex is active—occasionally visible as subtle shimmer or overlay glitch",
+    "skin_tone": "Very pale, borderline sallow from chronic lack of sunlight—extensive time in server rooms and vehicle interiors",
+    "complexion": "Gaunt and angular features, sharp cheekbones, narrow jaw. Perpetual dark circles under eyes—deep enough to look like permanent bruising. Three-day stubble is his baseline; shaving is an afterthought. Skin condition shows minor neglect—dry patches at temples, occasional stress-related dermatitis on knuckles.",
+    "distinguishing_marks": [
+      "Military-grade data jack port at base of skull, slightly raised scar tissue around the installation site, barely concealed by collar when present",
+      "Faint blue bioluminescent network lines visible on both forearms under UV light (subdermal antenna arrays), appearing as branching circuit-like patterns from wrist to elbow",
+      "Scar tissue on right index and middle fingertips from equipment burns—repetitive scars suggest old habit rather than fresh injury",
+      "Calluses across all fingertips and palm edges, asymmetrical (right hand more pronounced), consistent with decades of manual input and soldering work"
+    ],
+    "visible_augmentations": "Data jack port at base of skull with faint scarring around installation. Subdermal antenna arrays in both forearms visible only under UV light as faint blue bioluminescent tracery. When augmented visual cortex is active, eyes may exhibit subtle shimmer or momentary digital artifacts at periphery. Otherwise, augmentations are subcutaneous and concealed.",
+    "posture_movement": "Still and economical—minimal wasted motion. When seated, he is motionless except for hands, which are in constant micro-motion (tapping, adjusting, disassembling invisible components). When standing, he leans slightly forward, weight on balls of feet as if ready to move to the next task. Walks with purpose and no flourish. Rarely makes eye contact—eyes scan environments for network infrastructure, security cameras, signal sources. Nervous habit of touching the data jack port at the back of his neck when processing information.",
+    "clothing_style": "Tier 3 utilitarian minimalist. Rotation of three identical black cotton t-shirts (loose fit, practical). Cargo pants in charcoal or black with multiple pockets—well-worn, never replaced until failure. Scuffed black steel-toed boots rated for industrial environments. No jewelry, no branding, no ornamentation. Occasional frayed patches on cargo pant legs repaired with black electrical tape rather than stitching. When operating in field, adds nondescript gray hoodie and a Faraday-lined fieldwork vest (unmarked, custom-built). Clothes smell faintly of solder flux and machine oil. Grooming is purely functional—haircuts only when vision is blocked."
+  },
+  "image_prompt": "Cyberpunk male hacker character, lean gaunt build, pale sallow complexion, dark brown short unkempt hair, gray-blue eyes with subtle digital shimmer, permanent dark circles under eyes, sharp angular features. Base of skull shows faint data jack port scar barely concealed by collar. Both forearms display faint bioluminescent blue circuit-line patterns (subdermal antenna arrays, subtle). Wearing black fitted t-shirt and worn charcoal cargo pants with multiple pockets, steel-toed boots. Hands in constant subtle motion, fingers moving as if disassembling something invisible. Seated at workstation surrounded by server towers, network cables, and technical equipment in dimly lit utility room. Blue and green monitor light casting shadows across face. Cyberpunk technical noir aesthetic, intimate and claustrophobic framing, shallow depth of field, high contrast lighting, cool color palette with accent blue bioluminescence, photorealistic but slightly desaturated, --ar 2:3 --v 6"
 }

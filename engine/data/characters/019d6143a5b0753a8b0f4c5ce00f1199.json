@@ -246,5 +246,25 @@
     "Glass",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Hungarian / Kenyan (East African)",
+    "height_cm": 173,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and solidly muscled through the arms and core from decades of precise, repetitive work; carries weight with density rather than softness",
+    "hair_color": "Dark brown-black with copper wire threading and amber LED beads",
+    "hair_style": "Elaborate crown of interlocked locs, each bead-adorned section deliberate and maintained with ritualistic care",
+    "hair_length": "Long (shoulder-length and past)",
+    "eye_color": "Grey-green, like weathered lake glass",
+    "skin_tone": "Deep warm brown with subtle undertones suggesting mixed ancestry",
+    "complexion": "Unlined face for her age; minimal makeup; skin shows the health of someone who has learned self-care through necessity; faint smile lines around eyes and mouth indicating chronic warmth",
+    "distinguishing_marks": [
+      "Scissors-and-comb motif tattoo running along the entire left forearm in deep indigo, applied by a street artist in Nairobi at age nineteen",
+      "Faint scar tissue on the knuckles of both hands—old, pale, from decades of tool work and a few neighborhood altercations best left unmentioned"
+    ],
+    "visible_augmentations": "Medical-grade tactile-feedback pads visible at fingertips (slight pearlescent sheen under skin at thumb and first two fingers, both hands); reading glasses with magnification overlay and subtle LED activation lights in the frame corners (worn on a beaded chain around her neck when not in use)",
+    "posture_movement": "Moves with economical grace—no wasted motion; stands with weight balanced, ready to shift; hands are constantly in motion even at rest, fingers finding rhythm in air; head tilts when listening, a habit of attentive care; walks with the steady pace of someone who has nowhere to rush",
+    "clothing_style": "Tier 3-4 practical comfort: well-maintained linen tunics or cotton button-ups in earth tones and jewel hues, often with sleeves rolled to mid-forearm to show the tattoo; neutral-colored work pants with deep pockets; soft leather slip-ons worn thin at the heel; a worn leather apron with small tool slots, patched and re-stitched multiple times; silver and brass jewelry—bangles, rings set with semi-precious stones, a small pendant combining Christian and indigenous Kenyan motifs"
+  },
+  "image_prompt": "Portrait of a 52-year-old woman with deep brown skin and grey-green eyes, broad-shouldered and muscular, wearing a linen tunic; her hair is an elaborate crown of dark locs interwoven with copper wire and glowing amber LED beads that pulse softly; she has a detailed scissors-and-comb tattoo running down her left forearm in deep indigo; her hands rest on a barber's chair, fingertips showing subtle pearlescent augmentation pads; reading glasses with LED frame details hang from a beaded chain around her neck; warm, lived-in face with deep laugh lines, patient expression, minimal makeup; soft golden-hour lighting from shop windows, cyberpunk Hamtramck neighborhood aesthetic, intimate and grounded, realistic portraiture with subtle futuristic details, intimate barber shop setting in background --ar 2:3 --v 6"
 }

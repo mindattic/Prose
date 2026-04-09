@@ -12,7 +12,7 @@
   "role": "Union organizer and labor historian for dockworkers at Bay View Docks",
   "age": 52,
   "status": "active",
-  "location": "Bay View Docks, Meridian 88, near Michigan Ave South and Cermak",
+  "location": "Bay View Docks, GLMZ, near Michigan Ave South and Cermak",
   "description": "Nzubechukwu is a broad-shouldered man whose body carries the evidence of three decades of physical labor — thick-knuckled hands, a fused vertebra from a crane accident, and a jaw that juts forward like the prow of a barge. His skin is deep umber, and he keeps his silver-streaked hair in tight locs that he pins back with a carved bone toggle that belonged to his grandfather. He wears old Ferrogate Transit coveralls he refuses to surrender even though he no longer works the lines, the company patch scratched out and replaced with a hand-stitched wave.\n\nNzu is deliberate in everything — the way he speaks, the way he listens, the way he lets silence do the heavy lifting in a negotiation. He has the patience of a man who has watched union drives fail and succeed and fail again over thirty years, and he does not celebrate early or panic easily. What looks like calm is actually compressed fury, carefully managed. He genuinely loves the workers he represents, and this is the thing that keeps him from becoming cynical. He prays to the dock E.L.F.s every morning before meetings, leaving shipping manifests with handwritten notes in the margins.",
   "psychology": {
     "facet_weights": {
@@ -175,7 +175,7 @@
     "Ferrogate Transit",
     "Bay View Docks",
     "TESSERA Widow Mk. III",
-    "Meridian 88",
+    "GLMZ",
     "The CEO",
     "Tessera Attrition Engine TE-9 'Patience'",
     "The Pure Hand",
@@ -184,5 +184,27 @@
     "Crane",
     "Déjà Vu"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African (Igbo) / Scandinavian (Norwegian)",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and barrel-chested with the dense musculature of three decades of dock work; forearms and hands are thick-knuckled and scarred from manual labor; slight forward lean to his posture from spinal fusion",
+    "hair_color": "Black with silver streaking throughout",
+    "hair_style": "Tight locs, shoulder-length, pinned back with a carved bone toggle",
+    "hair_length": "Long",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep umber with weathered patina from years of sun exposure on the water",
+    "complexion": "Weathered face with pronounced jaw that juts forward prominently; deep-set eyes; numerous fine lines around mouth and eyes from squinting into Lake Michigan winds; calloused, rope-scarred hands; salt-and-pepper stubble on jawline most days",
+    "distinguishing_marks": [
+      "Faint surgical scar along the spine (visible when shirtless), approximately 12cm in length along L4-L5 vertebrae from crane accident fusion",
+      "Network of thin white scars across both knuckles and dorsum of hands from decades of dock work",
+      "Rope burn scars on inner forearms and wrists",
+      "Small dark birthmark on left collarbone, roughly the size of a coin"
+    ],
+    "visible_augmentations": "Spinal brace implant creates a subtle metallic ridge visible along the spine when he leans forward. Subdermal contact patch on left forearm (faint circular outline beneath skin, approximately 3cm diameter) used for biometric union document signing — barely noticeable unless skin is exposed and light catches it at an angle. No cosmetic modifications; all augmentations are functional and deliberately unglamorous.",
+    "posture_movement": "Deliberate and economical in movement; walks with a slight forward cant due to spinal fusion; moves with the careful precision of a man managing chronic pain; settles into stillness rather than fidgeting; nods slowly when listening; speaks with long measured pauses; hands stay relatively still when not making a specific point",
+    "clothing_style": "Worn Ferrogate Transit coveralls (Tier 3-4 workwear, faded navy blue with company patch deliberately scratched out and replaced with a hand-stitched wave emblem in white thread); thermal undershirt beneath; steel-toed work boots scuffed and resoled multiple times; brass union pin on coverall chest; wool watch cap (charcoal) worn most mornings; no jewelry except grandfather's bone toggle in hair and a simple steel wedding band"
+  },
+  "image_prompt": "Cyberpunk 2226, middle-aged Black man with Scandinavian heritage, 188cm tall, wearing worn navy Ferrogate Transit coveralls with scratched-out company patch and hand-stitched wave emblem, tight shoulder-length locs pinned with carved bone toggle, deep umber weathered skin, pronounced forward-jutting jaw, thick-knuckled hands scarred from decades of dock work, steel-toed boots, subtle metallic ridge visible along spine from medical implant, standing on misty Bay View Docks at pre-dawn with shipping containers and Lake Michigan in background, industrial amber and blue lighting, photorealistic portraiture, dignified and patient expression, compressed quiet fury, documentary style, cinematic depth of field --ar 2:3 --v 6"
 }

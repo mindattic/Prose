@@ -13,7 +13,7 @@
   "age": 34,
   "status": "active",
   "location": "Bronzeline, near North Ave and Milwaukee",
-  "description": "Tibor is a lean, angular man with warm bronze-brown skin, a long neck, and hands that are conspicuously steady in a city where most people's hands shake from stimulant use or cheap neural implants. He has extensive work on his own body — not as advertisement exactly, more as a log of his own technique over the years, so that someone who knows what to look for can trace the evolution of his skill across his skin. His left forearm has his earliest work from age nineteen, tentative and slightly crooked. His right shoulder has something he finished last month that is almost obscenely good. He has color-cycling geneware skin panels on his collarbones and cheekbones — flat, precise rectangles that he updates with new pigment patterns the way other people update their wardrobes.\n\nHe runs a studio called The Seam out of a converted basement unit in Bronzeline, and his work sits at the intersection of traditional tattooing, bioluminescent ink, and gene-mod body art — he is one of fewer than a dozen people in Meridian 88 licensed to perform minor dermis gene modifications, which allows him to do things that standard tattoo artists cannot: living color patterns, bioluminescent branching that responds to the body's electrical field, modified scar tissue that forms precise geometric relief. He is deeply calm, slightly formal with strangers, and has the particular confidence of someone who is very good at the one thing they chose to spend their life on.",
+  "description": "Tibor is a lean, angular man with warm bronze-brown skin, a long neck, and hands that are conspicuously steady in a city where most people's hands shake from stimulant use or cheap neural implants. He has extensive work on his own body — not as advertisement exactly, more as a log of his own technique over the years, so that someone who knows what to look for can trace the evolution of his skill across his skin. His left forearm has his earliest work from age nineteen, tentative and slightly crooked. His right shoulder has something he finished last month that is almost obscenely good. He has color-cycling geneware skin panels on his collarbones and cheekbones — flat, precise rectangles that he updates with new pigment patterns the way other people update their wardrobes.\n\nHe runs a studio called The Seam out of a converted basement unit in Bronzeline, and his work sits at the intersection of traditional tattooing, bioluminescent ink, and gene-mod body art — he is one of fewer than a dozen people in GLMZ licensed to perform minor dermis gene modifications, which allows him to do things that standard tattoo artists cannot: living color patterns, bioluminescent branching that responds to the body's electrical field, modified scar tissue that forms precise geometric relief. He is deeply calm, slightly formal with strangers, and has the particular confidence of someone who is very good at the one thing they chose to spend their life on.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -241,7 +241,7 @@
   "related_entities": [
     "Ghostbridge Island",
     "Helix Biosystems",
-    "Meridian 88",
+    "GLMZ",
     "Bronzeline",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Burnline",
@@ -252,5 +252,29 @@
     "Ringo RR-1 'Rattlesnake'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Quechua / Ghanaian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with pronounced musculature in the forearms and shoulders from years of precision work. No excess body fat; his frame reads as disciplined rather than athletic.",
+    "hair_color": "Natural dark brown, almost black",
+    "hair_style": "Worn long and pulled back in a neat braid or high knot; kept meticulously clean",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with subtle flecking",
+    "skin_tone": "Warm bronze-brown with underlying golden undertones; even complexion across his body",
+    "complexion": "Clean-shaven face with precise grooming; skin shows the wear of someone who spends hours under high-intensity work lamps but maintains careful skincare. No acne or blemishes. His face is calm and composed, with faint laugh lines around his eyes.",
+    "distinguishing_marks": [
+      "Left forearm covered in his earliest tattoo work from age nineteen — slightly imperfect linework forming abstract geometric patterns in black and deep indigo, visibly less refined than his later work",
+      "Right shoulder features a recent, extraordinarily detailed bioluminescent piece (finished last month) depicting branching neural pathways with color-shifting properties that respond to body electrical field",
+      "Both forearms densely covered in progressive portfolio work showing technical evolution — traditional ink, bioluminescent designs, and geometric relief scarification patterns that form precise raised lines",
+      "Chest and upper back display mid-career work: intricate mandalas with living color elements that shift slowly under the skin",
+      "Color-cycling geneware skin panels on collarbones form flat, precise rectangles of synthetic dermis that cycle through programmed pigment patterns",
+      "Color-cycling geneware skin panels on cheekbones mirror the collarbone panels; currently display a subtle gradient pattern that shifts every few days"
+    ],
+    "visible_augmentations": "Color-cycling geneware panels on collarbones and cheekbones (precision rectangles of synthetic pigmentation). Extensive bioluminescent tattoo work visible on shoulders, forearms, and chest — faint glow under low light. Hands show surgical precision implants in tendons (no visible external ports, but hand movement has an almost mechanical steadiness and control that marks augmentation to trained eyes). No chrome or obvious cyberware.",
+    "posture_movement": "Stands with perfect posture, slight forward lean from years bent over workstations. Moves with economical grace — no wasted motion. Hands are extraordinarily still and controlled, with precise finger articulation. His movements carry formal politeness; he gives people space and maintains measured eye contact. Overall bearing is calm, focused, and quietly confident.",
+    "clothing_style": "Tier 3-4 working professional. Typically wears fitted long-sleeved shirts (usually linen or cotton blends in neutral earth tones) to display arm work while maintaining studio hygiene standards. Dark fitted trousers, often cargo-style with multiple pockets for tools and ink samples. Worn leather work apron during studio hours. Minimal jewelry except for a thin bracelet on his right wrist (possibly sentimental). Footwear: scuffed, well-maintained boots suitable for standing 8+ hours. No corpo branding. His overall aesthetic reads 'master craftsperson' rather than 'fashionable' — clothes chosen for function and to serve as canvas backdrop for his work."
+  },
+  "image_prompt": "Cyberpunk portrait of Tibor Quispe-Nkrumah, a 34-year-old lean Quechua-Ghanaian male with warm bronze-brown skin, sharp angular features, and long dark hair pulled back in a braid. His shoulders and forearms are densely covered in bioluminescent tattoo work with faint blue-green glow. Precise color-cycling geneware panels on collarbones and cheekbones display shifting geometric patterns. His hands are held with surgical steadiness, surgeon-precise fingers. Standing in a basement studio (The Seam) with warm amber work lamps creating dramatic side lighting on his tattooed skin. Dim bioluminescent glow emanating from his own body art. Studio aesthetic: anatomy charts on walls, ink bottles, sterile instruments. Formal, calm expression. Wearing fitted earth-tone linen shirt rolled to elbows, dark trousers, worn leather apron. Sharp focus on facial features and hand detail. Cinematic lighting, volumetric light rays through studio dust. High detail, hyper-realistic skin texture. --ar 2:3 --v 6"
 }

@@ -177,5 +177,27 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East African / Central Asian (Kenyan Kiptanui / Kazakh Dzhaksybekov)",
+    "height_cm": 157,
+    "weight_kg": 62,
+    "build": "Densely muscled and compact, with the controlled physicality of someone who has spent years holding still through long procedures. Shoulders broad relative to frame, forearms strong from precision work.",
+    "hair_color": "Natural black coils on right side; left scalp bare and unblemished",
+    "hair_style": "Asymmetrical: left hemisphere shaved clean, right hemisphere grows thick natural coils threaded with luminescent fiber-optic strands",
+    "hair_length": "Shaved left / Medium-long right",
+    "eye_color": "Deep brown, natural, framed by the architectural geometry of subdermal brow ridge implants",
+    "skin_tone": "Warm medium-dark complexion with underlying richness — baseline amber that shifts through violet in joint regions due to bioluminescent dermal work",
+    "complexion": "Calm, composed facial expression. Skin shows the deliberate marks of her craft: precise bioluminescent patterning across shoulders and chest, faint enzyme-bath scent clinging to her. No conventional makeup; her body is her aesthetic statement.",
+    "distinguishing_marks": [
+      "Bioluminescent biopatterning across shoulders, collarbone, and upper chest — slow chromatic cycles from deep amber to violet, most intense around joint areas",
+      "Subdermal ridge implants creating faint architectural lines across her brow and temples, visible as subtle raised geometry",
+      "Fiber-optic strands woven through right-side hair coils, pulsing in rhythm with heartbeat — soft bioluminescent glow",
+      "Eyes surrounded by faint scarring from precision graft work around tear ducts, which now produce indigo-black pigment when she cries"
+    ],
+    "visible_augmentations": "Full-body bioluminescent dermal grafts visible across exposed skin (arms, neck, upper torso); fiber-optic hair implants glowing faintly; subdermal brow ridge implants creating geometric facial architecture; tear duct modifications visible only when fluid is present. No chrome, no obvious cyberware.",
+    "posture_movement": "Still, deliberate, almost meditative in stillness. Moves with economical precision — no wasted motion. When she works, her hands become hyperfocused instruments. At rest, she has an unsettling calmness, the unblinking quality of someone comfortable with silence and observation.",
+    "clothing_style": "Minimal, functional, emphasizing her body as art. Typically: sleeveless or mesh tank tops and fitted cargo pants in matte blacks or grays (Tier 3-4 quality, durable materials). Bare feet or wrapped in textile bindings. No jewelry beyond what serves function. Lab coat or heavy canvas apron during client work. Everything she wears serves to frame rather than cover her modifications."
+  },
+  "image_prompt": "Close-up portrait of a short, densely built woman with dark skin showing slow bioluminescent color shifts from amber to violet across shoulders and joints. Left side of head completely shaved, right side has thick black coils threaded with glowing fiber-optic strands pulsing softly. Large dark brown eyes framed by subtle subdermal ridge implants creating geometric architecture across her brow. Calm, composed expression. Wearing sleeveless mesh tank top showing full bioluminescent dermal grafts on upper body. Studio lighting with cool blue and warm amber undertones highlighting the chromatic shifts in her skin. Cyberpunk body-art aesthetic, meditative and unsettling. High detail on skin texture and bioluminescent patterns. --ar 2:3 --v 6"
 }

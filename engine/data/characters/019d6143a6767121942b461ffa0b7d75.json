@@ -246,5 +246,26 @@
     "ShieldTech SB-3 'Groundstrike'",
     "Déjà Vu"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African (Igbo) / Polish / Samoan",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Lean and tall with the compressed posture of someone who spends eight hours nightly in a transit cab; shoulders slightly rounded forward from years hunched over controls, but with the underlying frame of an athlete who has let fitness atrophy into mere function",
+    "hair_color": "Natural black",
+    "hair_style": "Shaved close to the scalp, clean lines, maintained every three days",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown with patterned amber geometric irises (augmented) — slow-rotating concentric triangles and hexagons visible in low light",
+    "skin_tone": "Very dark brown with warm undertones; complexion carries the heritage of Igbo and Samoan lineages",
+    "complexion": "Weathered but calm; skin shows the dryness of someone who works nights under artificial light and doesn't prioritize skincare. A thin line of geometric scarification runs across his left cheekbone — three parallel cuts with triangular infill, the Igbo family mark his father carried",
+    "distinguishing_marks": [
+      "Geometric scarification across left cheekbone: three parallel horizontal cuts approximately 4cm long each, with triangular infill marks between them, in the Igbo tradition",
+      "Fine stress lines around the eyes from years of night driving and narrow focus on instrument panels",
+      "A small circular scar on his right forearm, pale and roughly 1cm diameter, from a childhood accident"
+    ],
+    "visible_augmentations": "Patterned irises with slow-rotating amber geometric designs visible when light hits his eyes directly. Night-vision overlay leaves no external hardware but may appear as a faint reflective quality deep in the pupil under close inspection. Otherwise no visible chrome or subdermal modifications.",
+    "posture_movement": "Moves with deliberate, economical stillness — the kind that comes from meditating on the same eight-hour loop every night. Sits deeply in chairs. Turns his head to look rather than moving his eyes. Speaks rarely but makes sustained eye contact when he does, allowing the rotating irises to unsettingly complete a full rotation before he speaks. Walks home slowly, not tired, but absent — his mind still running the Blackpipe loop",
+    "clothing_style": "Standard Ferrogate Transit operator uniform: gray polyester work shirt with union patch (Local 7), navy work pants with utility pockets, steel-toed boots maintained to regulation. Off-duty: dark layers in Tier 3-4 working-class palette. Threadbare jacket, the kind that's been through five winters. A small copper wire bracelet wound around his left wrist, handmade, which he touches sometimes without noticing. No jewelry beyond this. Everything functional, nothing decorative except what connects him to ritual."
+  },
+  "image_prompt": "A lean, very dark-skinned Black man with shaved head, height 188cm, standing in the dim blue-green glow of a transit control cab at night, wearing a gray Ferrogate Transit operator uniform with union patch, navy utility pants, steel-toed boots. His most striking feature: geometric patterned amber irises rotating slowly in his dark brown eyes, creating an unsettling hypnotic effect. A thin line of precise geometric scarification marks his left cheekbone in the Igbo tradition. His posture is still, meditative, shoulders slightly rounded from years hunched over control panels. Behind him: blurred neon-lit city at night, Blackpipe Corridor industrial architecture, the soft pulse of a circuit-board shrine with LED heart zip-tied to the console corner. Lighting: low-key cyberpunk industrial, cool temperature color grading, slight reflective quality on his patterned irises. Mood: calm, ritualistic, melancholic, the aesthetic of someone who has accepted solitude as meditation. Shot: tight portrait transitioning to mid-shot showing him at his transit console. --ar 2:3 --v 6"
 }

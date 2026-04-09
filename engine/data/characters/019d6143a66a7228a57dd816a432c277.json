@@ -31,7 +31,7 @@
     "core_desires": [
       "The perfect run — one job so clean it becomes legend",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Connection — finds someone to talk to, even if it's a bartender or a cat",
@@ -279,5 +279,26 @@
     "Pellucid Systems",
     "Clover"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Rawboned and efficient — long-limbed with minimal body fat, the kind of frame that reads as either ascetic discipline or chronic deprivation. Shoulders broad but not heavy; chest defined without bulk. Suggests endurance over raw strength.",
+    "hair_color": "Dark brown, naturally textured",
+    "hair_style": "Kept short and practical, no styling product. Greying at temples.",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, unaugmented",
+    "skin_tone": "Medium-dark complexion with warm undertones — blended West African and Northern European ancestry visible in facial structure",
+    "complexion": "Angular face with prominent cheekbones and a strong jaw. Skin weathered but maintained — signs of sun exposure and stress, minimal scarring on the face itself. Expression defaults to controlled neutrality; eyes rarely betray emotion. Three-day stubble is his baseline grooming state.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple to cheekbone — old blade work, healed clean.",
+      "Burn mark on right shoulder blade — thermal weapon discharge, roughly 8cm diameter, pale and old.",
+      "Linear scarring along both forearms where the subdermal weapon mounts interface with skin — precise surgical lines, professionally installed, visible when arms are exposed."
+    ],
+    "visible_augmentations": "Subdermal weapon mounts visible as faint linear scars along both forearms; chrome catches light when he flexes or extends. The implants themselves are subcutaneous but the interface seams are evident to anyone who knows what to look for. No visible facial augmentation — the neural dampener is completely internal.",
+    "posture_movement": "Moves with economical precision — no wasted motion, weight always balanced. Stands with slight forward lean, as if perpetually in prone position. Hands rarely still; fingers are constantly performing micro-checks on equipment or assessing distance/angles. Eyes track exits and high ground automatically. Speaks quietly; listens more than talks.",
+    "clothing_style": "Tier 3-4 practical wear: worn but maintained tactical jacket (faded charcoal, synthetic polymer blend) over layered base wear. Cargo pants with reinforced thigh pockets and knee articulation — built-in flex panels for fieldwork. Steel-toed boots, scuffed but oiled. No logos or gang colors; everything is matte-finish or weathered to avoid light reflection. A single Φ-silver ring on his left thumb — old-school marker of runner status. No jewellery beyond that. Clothes smell like gun oil and synthetic detergent."
+  },
+  "image_prompt": "Cyberpunk noir portrait of a 43-year-old tall, lean Black-Scandinavian man with short dark hair greying at temples, deep brown eyes, angular face with controlled expression. Visible subdermal forearm weapon mounts with chrome seams catching hard light. Wearing worn tactical jacket over layered base layers, cargo pants, steel-toed boots — matte finishes, Tier 3 workwear. Standing in three-quarter pose suggesting sniper's ready posture, hands partially visible showing surgical scarring on forearms. Kessler Row background — neon-lit arms dealer storefront, dim industrial lighting, rain-slicked pavement. Mood: quiet danger, economical precision, 4am maintenance shift. Hard rim lighting, underexposed shadows, desaturated color grading, film noir grain. 35mm cinematic depth. --ar 2:3 --v 6"
 }

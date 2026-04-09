@@ -241,5 +241,26 @@
     "Silver",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 155,
+    "weight_kg": 58,
+    "build": "Compact and lean, spine gently kyphotic from decades of desk work and age — describes herself as 'folded like good paper.' Wiry strength in her shoulders and hands despite her curve.",
+    "hair_color": "Silver-gray with bioluminescent fiber optic filaments woven through, creating soft cyan-white light in low environments",
+    "hair_style": "Worn loose and shoulder-length, often pinned back with a repurposed data-chip clip or piece of scrap polymer to keep it from her reading lenses",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, occluded by augmented reading lenses with faint amber Axiom archival overlay interface visible on the lens surface",
+    "skin_tone": "Deep umber with warm undertones, weathered but well-kept",
+    "complexion": "Fine creases around eyes and mouth from decades of close document work and frequent smiling. Hands show faint pigment stains — blues, reds, graphite — from grandchildren's art projects. Fingernails kept short and practical. No makeup; minimal grooming beyond function.",
+    "distinguishing_marks": [
+      "Faint white scar across the knuckle of her left index finger — a paper cut from an archival document from 2198, never quite healed completely",
+      "Small burn mark on her right forearm near the wrist — from a heat-lamination tool accident in her fifties, shaped like a tiny crescent",
+      "Bioluminescent filaments throughout her hair create an unusual visual signature, most visible at dusk in Tier 5 environments"
+    ],
+    "visible_augmentations": "Augmented reading lenses with visible amber-tinted Axiom archival interface; bioluminescent hair filaments that glow softly in dim light. Lower back skeletal reinforcement is subcutaneous and invisible. No external chrome or obvious prosthetics.",
+    "posture_movement": "Moves slowly and deliberately, as if remembering the geography of her spine with each step. Sits with hands folded. When speaking about records or stories, her hands animate — quick, precise gestures. She turns her whole torso rather than just her head due to spine curvature. Her gait favors her left leg slightly.",
+    "clothing_style": "Tier 4-5 practical: hand-knitted cardigans in muted colors (charcoal, rust, deep indigo) over simple linen shirts, often with reading glasses on a cord. Loose trousers in neutral fabric, worn smooth at the knees and hems from repeated sitting and kneeling to access low archive shelves. Comfortable slip-on shoes with memory-foam insoles. A weathered canvas satchel she's owned for twenty years, reinforced with duct tape at the corners, always slung across her body — carries paper records, a tablet with the old Axiom interface, and whatever the grandchildren have left in there. No jewelry except a thin band on her left ring finger — not a wedding ring, but a data-band from Zheng-Dao's 2195 service recognition program, worn past its original purpose."
+  },
+  "image_prompt": "Portrait of an elderly West African-Scandinavian woman, age 78, compact frame with gentle kyphotic curve to her spine, deep umber skin, shoulder-length silver hair woven with soft cyan bioluminescent fiber optic filaments that glow subtly. Wearing augmented reading lenses with amber archival overlay interface. Dressed in a hand-knitted charcoal cardigan over linen, loose neutral trousers, worn slip-ons. Hands stained with faint pigment from children's art. Sitting in a ground-floor archive room surrounded by old data drives, paper documents, and plastic storage cases; warm amber overhead light mixing with cool glow from her hair filaments and ambient terminal screens. Soft shadows across her face. Expression calm, attentive, slightly pleased. Cyberpunk Tier 4-5 setting, intimate documentary realism, warm color grading, shallow depth of field, shot at eye level. --ar 2:3 --v 6"
 }

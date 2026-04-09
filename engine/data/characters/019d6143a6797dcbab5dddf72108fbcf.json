@@ -183,5 +183,26 @@
     "Tessera Corponation",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Georgian",
+    "height_cm": 165,
+    "weight_kg": 52,
+    "build": "Wiry and lean, defined by scarcity rather than athleticism. Shoulders slightly forward from years hunched over data terminals. Visible rib definition; minimal body fat. Movement efficient and economical.",
+    "hair_color": "Natural black with self-maintained geometric shave patterns",
+    "hair_style": "Asymmetrical undercut; short and buzzed on right side with precision-cut geometric lines, longer on left side (approximately 8cm), maintained with deliberate angular patterns",
+    "hair_length": "Short on one side, Medium on the other",
+    "eye_color": "Dark brown, nearly black",
+    "skin_tone": "Deep brown with warm undertones; complexion suggests West African heritage",
+    "complexion": "Lean facial structure with high cheekbones and a sharp jaw. Skin appears weathered but clean—maintained despite off-grid living. Dark circles under eyes from irregular sleep. Minor scarring on left temple from old trauma.",
+    "distinguishing_marks": [
+      "Faint bioluminescent geneware visible as a soft blue-green glow around both temples and along collarbones when in dim light or darkness, most noticeable at night",
+      "Thin linear scar on inner left wrist, approximately 4cm, horizontal orientation—deliberate in appearance but source unknown",
+      "Small burn mark on the back of right hand, brownish discoloration, approximately 1cm diameter—likely industrial accident or accidental contact"
+    ],
+    "visible_augmentations": "Bioluminescent skin modification around temples and collarbones glows faintly in low light—a cosmetic geneware that creates a soft blue-green luminescence. No mechanical augmentations visible. The glow is inescapable and deeply regretted; it functions as an involuntary tell in darkness.",
+    "posture_movement": "Moves with careful deliberation, economical and quiet. Habitually positions herself with sight lines to exits. Shoulders slightly tensed. Eyes in constant motion—cataloguing, assessing, measuring distance. When still, her stillness is absolute and predatory. Rarely makes unnecessary gestures.",
+    "clothing_style": "Tier 5 / off-grid scavenger aesthetic. Layered in salvaged and traded pieces: a faded synthetic jacket with mismatched pockets (likely Tessera-era workwear, heavily worn), dark neutral base layers to minimize visibility, reinforced cargo pants with multiple hidden pockets for tools or barter items. Worn boots with good grip. No logos or identifiable markers. Fabrics are durable synthetics and reclaimed naturals—nothing new or branded. Everything functional. Nothing that draws attention."
+  },
+  "image_prompt": "cyberpunk portrait of a lean 34-year-old woman with deep brown skin and West African / Georgian heritage, wiry build, asymmetrical undercut black hair with geometric shave patterns, dark sharp eyes constantly cataloguing her surroundings. Faint bioluminescent blue-green glow emanating from temples and collarbones in darkness. Weathered complexion, sharp cheekbones, air of deliberate evasion. Wearing layered salvaged workwear, dark cargo pants, worn tactical boots. Off-grid, Tier 5 aesthetic. Standing in shadows of industrial maintenance shaft, dim underground lighting highlighting the involuntary bioluminescence on skin, moody noir atmosphere, cinematic depth, detailed texture, hyperrealistic, --ar 2:3 --v 6"
 }

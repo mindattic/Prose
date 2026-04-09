@@ -104,5 +104,26 @@
   "related_entities": [
     "Meridian Core"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Southern African (Zulu) / Finnish",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Athletic and compact, shoulders broad from decades of fieldwork, no excess fat—the kind of frame that moves efficiently through tight spaces and stays functional under stress",
+    "hair_color": "Steel gray with black undertones",
+    "hair_style": "Closely cropped fade, maintained weekly",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, slightly hooded",
+    "skin_tone": "Deep warm brown with olive undertones, reflecting mixed heritage",
+    "complexion": "Weathered but well-maintained; fine lines around the eyes and mouth from forty-two years of reading rooms and situations; strong jawline; kept clean-shaven except for a thin line of stubble by evening",
+    "distinguishing_marks": [
+      "Thin white scar running 2cm along the left cheekbone, old enough to blend with natural skin creases",
+      "Faint burn mark on the back of the right hand, the size of a cigarette cherry—deliberately kept visible as a reminder",
+      "Small ritual scarification on the inside of the left wrist, three parallel lines, family heritage"
+    ],
+    "visible_augmentations": "None visible. Orhan keeps his chrome invisible—subcutaneous neural overlay for augmented reality feeds, internal comms, encrypted data access. A stranger would notice nothing.",
+    "posture_movement": "Economical and controlled. Stands with weight balanced, never sprawling. Moves through space with deliberate intent, each gesture minimal but communicative. Listens more than talks; eyes track everything. Hands rest in lap or pockets—never exposed",
+    "clothing_style": "Tier 2 corporate casual that reads as understated wealth. Charcoal wool slacks, dark fitted turtlenecks or simple dress shirts in black or gray, a worn but expensive leather jacket (Suomi make, pre-2200s). No logos, no flash. A simple stainless steel watch, nothing smart. The overall effect: someone you'd trust with your life, or your secrets"
+  },
+  "image_prompt": "portrait of a 42-year-old man of mixed Southern African and Finnish heritage, athletic build, steel-gray cropped hair, deep brown hooded eyes, weathered but composed expression, thin scar on left cheekbone, standing in a dimly lit brutalist concrete corridor near State and Monroe in downtown Chicago 2226, wearing charcoal slacks and a black fitted turtleneck under a worn dark leather jacket, cool indifferent demeanor, cinematic cyberpunk noir, moody neon-tinged shadows and cool blue light from distant screens, photorealistic, shallow depth of field, shot at eye level, --ar 2:3 --v 6"
 }

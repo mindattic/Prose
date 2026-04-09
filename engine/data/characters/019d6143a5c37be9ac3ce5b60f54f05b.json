@@ -64,7 +64,7 @@
   "narrative_function": "A grounded, experienced operator who exists in the grey space between law enforcement and freelance work. Quest giver for retrieval jobs, information source on fugitive movement patterns and underground networks, and a potential complication when her professional interests intersect with player activities.",
   "augmentations": "Hydraulic-assist tendons in both forearms and hands (increases grip strength and precision without bulk). Internal biometric scanner embedded in right palm (warrant verification, subject ID). Cosmetic: cat ears in warm amber-brown replacing standard ears, a decision made at 32 for reasons she describes as 'I wanted them and I could afford them.'",
   "daily_life": "Operates from a rented office above a noodle shop in Bridgepoint, reviewing open warrant listings each morning. Takes two to three contracts per month, spends the interim doing skip-trace research, meeting informants, and handling the administrative documentation that makes licensed bounty work legally defensible.",
-  "affiliation": "Meridian 88 Bounty Compliance Licensing Board (licensed independent), informal professional network in Bridgepoint",
+  "affiliation": "GLMZ Bounty Compliance Licensing Board (licensed independent), informal professional network in Bridgepoint",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -202,7 +202,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 22 — First bounty compliance license issued by Meridian 88 Licensing Board",
+      "event": "Age 22 — First bounty compliance license issued by GLMZ Licensing Board",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -255,5 +255,25 @@
     "Copper",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Nakweti) / Scandinavian (Skarsgård)",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and functionally muscular, shoulders broad from years of physical restraint work, no excess softness but not hard-carved either. Built for sustained effort rather than explosive power.",
+    "hair_color": "Natural black with hints of grey at the temples, kept in locs",
+    "hair_style": "Locs wrapped daily in a practiced spiral, pinned with small copper rings of varying diameters",
+    "hair_length": "Medium (locs reach mid-back when unwrapped)",
+    "eye_color": "Deep brown, sharp and reading-focused",
+    "skin_tone": "Warm medium brown",
+    "complexion": "Face marked by laugh lines around eyes and mouth, slight asymmetrical set to jaw from an old fracture improperly healed, skin maintained with functional care rather than aesthetic obsession. No cosmetic smoothing. The face of someone who has made peace with earning its marks.",
+    "distinguishing_marks": [
+      "Raised scarification pattern across left forearm in traditional West African ceremonial design, approximately 20cm span, executed in parallel lines with deliberate keloid formation",
+      "Old fracture line barely visible along left jawline, healed unevenly, gives subtle asymmetry to her bite"
+    ],
+    "visible_augmentations": "Pair of amber-brown cat ear prosthetics replacing standard human ears, cosmetic but unmissable, warm metallic sheen at the base where they interface with her skull. Faint hydraulic-assist definition in forearm musculature when her sleeves are rolled, visible servo articulation at the wrists. Right palm bears a thin circular biometric interface port, slightly raised, with a faint blue LED indicator that cycles when active.",
+    "posture_movement": "Moves with unhurried deliberateness, economical and purposeful. No wasted motion, no nervous energy. Walks with her weight centered, hands ready but not guarded. When seated, she is patient and still. Her gaze settles and holds.",
+    "clothing_style": "Tier 3-4 working professional. Favors fitted cargo jackets in grey or rust-brown synthetic leather with reinforced seams and multiple breast pockets, paired with reinforced trousers in dark synthetic weave. Wears a worn but well-maintained smartwatch on left wrist (warrant verification, message alerts). Small copper rings visible on her fingers — functional jewelry with sentimental weight. Boots are orthopaedic-grade, upgraded leather, broken in but maintained. Denim on days she is not actively fielding contracts. Minimal jewelry beyond the ear prosthetics and her working rings; a small woven cord bracelet on right wrist (traditional marker of her mother's lineage). No visible corporate branding or tier signifiers."
+  },
+  "image_prompt": "Portrait of a 45-year-old Black-Scandinavian woman with medium-warm brown skin, locs pinned with copper rings, amber-brown cat ear prosthetics replacing human ears with visible metallic interface. Slight asymmetry to jaw from old fracture, laugh lines earned and unsmoothed. Left forearm displays raised scarification in traditional West African patterns. Wearing fitted grey synthetic leather cargo jacket with reinforced seams, dark tactical trousers, orthopedic boots. Right palm visible with faint blue circular biometric interface port. Posture is unhurried and deliberate, weight centered, ready but not guarded. Gaze sharp and reading-focused. Cyberpunk bounty compliance officer aesthetic, Tier 3 working professional. Noodle shop office above visible through window behind her. Cool blue-green ambient lighting mixed with warm desk lamp. Highly detailed face, photorealistic, professional headshot quality. --ar 2:3 --v 6"
 }

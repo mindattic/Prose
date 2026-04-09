@@ -43,7 +43,7 @@
     "secret": "His maintenance logs are falsified — not to cover up negligence, but because the truth of the tunnel's condition would trigger an automatic service suspension, and he knows from the last suspension that the line serves communities that have no alternative transit. He is holding the line together with inspection waivers and prayers to Deepwell's ELF, and he is running out of both."
   },
   "speech_patterns": {
-    "vocabulary": "Warm, declarative working-class Meridian 88 dialect with Caribbean English cadences from his Barbadian grandfather's side. Very funny in a dry, understated way. Technical and precise about transit systems.",
+    "vocabulary": "Warm, declarative working-class GLMZ dialect with Caribbean English cadences from his Barbadian grandfather's side. Very funny in a dry, understated way. Technical and precise about transit systems.",
     "cadence": "Measured and unhurried, like someone who has announced the same stations ten thousand times and learned that rushing words achieves nothing.",
     "verbal_tics": [
       "'Let me tell you something—' (means he's about to be completely honest)",
@@ -62,7 +62,7 @@
     "A union meeting he attended was surveilled — he doesn't know by whom — and two attendees have since been quietly reassigned to dead-end positions. He needs help identifying the source of the leak.",
     "Something has been living in the service tunnels between Kessler Interchange and Copperhead — not a person, or not only a person — and it has been interacting with the Deepwell ELF in ways Rémi finds alarming and cannot explain to anyone who wasn't already disposed to believe him"
   ],
-  "narrative_function": "Mobile transit access and route knowledge. Understands the underground topology of Meridian 88 better than most. Union activity puts him in contact with organized labor networks across the city. Can move people or information through the subsurface system. A grounding, realistic portrait of working-class institutional life.",
+  "narrative_function": "Mobile transit access and route knowledge. Understands the underground topology of GLMZ better than most. Union activity puts him in contact with organized labor networks across the city. Can move people or information through the subsurface system. A grounding, realistic portrait of working-class institutional life.",
   "augmentations": "Ferrogate-issue retinal overlay with transit grid display (amber, always-on). Cat tail geneware (black, autonomous).",
   "daily_life": "Rides the Ferrogate as a passenger to Deepwell Station, picks up his operator's booth at 0600, runs his line for eight hours, attends to a maintenance log that is increasingly fictional because the parts don't exist, and gets home in time to eat dinner with whoever in his household is awake.",
   "affiliation": "Ferrogate Transit — Subsurface Operations Division; Ferrogate Transit Workers' Syndicate (union member)",
@@ -204,5 +204,25 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Iron"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Central African / Anglo-Saxon (Ugandan / British-American)",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Thick-set, heavy through the torso and shoulders with a solid, unmovable quality. Settled into middle age with the kind of weight that comes from years of sedentary operator work and shift-meal irregularity rather than lack of strength.",
+    "hair_color": "Dark brown, graying at temple and crown",
+    "hair_style": "Cropped tight to the scalp, military-neat but unmaintained, giving an impression of pragmatism rather than care",
+    "hair_length": "Short",
+    "eye_color": "Warm brown with persistent amber grid overlay visible in dim light; retinal augmentation creates a faint luminescent pattern across the iris",
+    "skin_tone": "Warm deep brown with reddish undertones, even complexion across the face and visible neck/chest",
+    "complexion": "Deeply lined face, particularly around the eyes and mouth, with the grooved appearance of someone who has worn the same tired expression for nearly a decade. Skin shows the pallor of subsurface work — minimal natural light exposure. Short salt-and-pepper beard kept regulation-length but slightly unkempt at the edges.",
+    "distinguishing_marks": [
+      "Faint surgical scar along the right temple where the retinal overlay was installed, barely visible beneath cropped hair",
+      "Black cat tail extending from base of spine, approximately 60cm long, with natural fur texture and autonomous articulation"
+    ],
+    "visible_augmentations": "Ferrogate-standard retinal display overlay with persistent amber grid pattern visible in both eyes; autonomous black cat tail with realistic fur and independent movement (lashes when agitated, still when calm)",
+    "posture_movement": "Slight forward slouch from years in an operator's booth; moves with deliberate, economical gestures. Stands with weight favoring one foot, creating a casual lean. Cat tail articulates independently — still when focused or calm, quick lashing movements when frustrated or processing information. Overall carriage suggests contained weariness rather than defeat.",
+    "clothing_style": "Ferrogate Transit regulation uniform (gray-blue jumpsuit with reflective striping and divisional patches) worn with collar button deliberately undone, personal modification held for eleven years without disciplinary action. Uniform shows moderate wear and is kept clean but not pressed. Practical work boots rated for subsurface conditions. No visible jewelry beyond regulation uniform ID badge."
+  },
+  "image_prompt": "A 44-year-old man of Central African and British descent, thick-set and solidly built, wearing an open-collar Ferrogate Transit gray-blue regulation jumpsuit with reflective striping, standing in a subsurface transit station with harsh fluorescent lighting overhead. His face is deeply lined and weathered, dark brown skin with warm reddish undertones, cropped short salt-and-pepper hair, short beard going silver at the chin. His eyes glow faintly with an amber grid pattern from retinal overlay augmentation. A black autonomous cat tail extends from his lower spine, currently still and hanging relaxed. Background shows concrete tunnel walls, signal panels, and the industrial aesthetic of an underground rail system. Cinematic cyberpunk lighting with cool fluorescents creating shadows on his face. Tired but dignified expression. --ar 2:3 --v 6"
 }

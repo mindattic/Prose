@@ -211,5 +211,26 @@
     "Ringo RK-2 'Stray'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Central Asian / West African",
+    "height_cm": 158,
+    "weight_kg": 45,
+    "build": "Wiry and lean with the taut musculature of someone who moves constantly through urban terrain. No excess body fat; shoulders slightly forward from habitual tension.",
+    "hair_color": "Natural dark brown",
+    "hair_style": "Large natural puff, wrapped at the crown with a copper-colored fabric strip in Copperhead Strays aesthetic",
+    "hair_length": "Medium (3-4 inches when loose)",
+    "eye_color": "Dark brown",
+    "skin_tone": "Medium brown with golden undertones",
+    "complexion": "Youthful but weathered; sharp cheekbones and a pointed chin. Skin shows the wear of street life—faint acne scarring on her jawline, perpetual dark circles under her eyes from inconsistent sleep. Her face has the alertness of someone scanning constantly.",
+    "distinguishing_marks": [
+      "Yellowing bruise on left cheekbone, currently in the green-purple stage of healing",
+      "Faint linear scar on her right shin from a climbing accident, pale against her skin tone",
+      "Scrape marks across her knuckles from recent street scuffles"
+    ],
+    "visible_augmentations": "Cosmetic geneware cat ears (dark red-brown, slightly translucent at the edges) positioned naturally on her head. The ears are her most deliberate statement—well-maintained, with faint LED circuitry visible when light hits them at certain angles. No other visible augmentations.",
+    "posture_movement": "Perpetually coiled; she moves with quick, economical gestures and rarely sits still. Her eyes dart—scanning faces, exits, threats. She carries herself with the false confidence of someone performing fearlessness, but her shoulders betray nervous tension. When standing, her weight shifts frequently from one foot to the other.",
+    "clothing_style": "Tier 5 street wear: oversized gray hoodie (faded Copperhead Strays logo on the back, hand-stitched repairs), black cargo pants with multiple pockets (some reinforced with copper wire), worn canvas sneakers with mismatched laces. A copper chain bracelet on her left wrist—low-value metal, but it's her marker. No intact jacket; she layers hoodies instead. Clothing is functional, somewhat ill-fitting (either salvaged or hand-me-downs), and deliberately non-descript except for the copper Strays indicators."
+  },
+  "image_prompt": "A 14-year-old girl with medium brown skin, dark brown natural hair styled in a large puff wrapped with a copper-colored fabric strip, standing in a cyberpunk street setting. She has cosmetic dark red-brown geneware cat ears visible on her head with subtle LED circuitry. Her expression is alert and guarded, eyes sharp, body language coiled and tense. She wears an oversized gray hoodie with faded patches, black cargo pants, and worn sneakers, with a copper chain bracelet on her wrist. A yellowing bruise marks her left cheekbone. The background shows the industrial underbelly of a Great Lakes city—concrete walls, graffiti in copper tones, neon signs reflected in wet pavement. Afternoon light casts long shadows. Gritty, realistic cyberpunk style, street-level perspective, shallow depth of field emphasizing her watchful expression. No glamour—this is raw street reality. --ar 2:3 --v 6"
 }

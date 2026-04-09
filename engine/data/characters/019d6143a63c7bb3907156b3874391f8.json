@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "To find the person who burned them and make it educational"
     ],
     "coping_mechanisms": [
@@ -43,7 +43,7 @@
       "Mistakes pattern recognition for wisdom — sees connections that aren't there",
       "Refuses to update their mental model of people — first impressions calcify into permanent judgments"
     ],
-    "secret": "Kadiatou Eriksson-Diallo betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+    "secret": "Kadiatou Eriksson-Diallo betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
   },
   "speech_patterns": {
     "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
@@ -283,5 +283,27 @@
     "Pellucid Systems",
     "Clover"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with visible musculature — minimal body fat, long limbs, compressed posture suggesting coiled readiness rather than relaxation",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Short, close-cropped, maintained with functional precision",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with slight amber undertone",
+    "skin_tone": "Medium brown with warm undertones — blended West African and Scandinavian heritage visible in facial structure",
+    "complexion": "Sharp, angular face with high cheekbones and prominent jawline; skin condition is clear but marked by the strain of augmentation surgery scars visible along temples and neck; grooming is meticulous but utilitarian — no cosmetics, no affectation",
+    "distinguishing_marks": [
+      "Surgical scar running 4cm along right temple, faint but visible under certain light, from wired reflexes installation",
+      "Chrome smartgun link interface visible on right forearm — gunmetal gray neural port inset at wrist, with thin silver filament traces running up inner forearm beneath translucent synthetic skin overlay",
+      "Burn scar on left shoulder blade, roughly 3cm diameter, pale and old — evidence of past operational mishap",
+      "Fine lattice of subdermal circuitry visible at base of neck when head is tilted back — faint blue-green bioluminescence when adrenaline pump is active"
+    ],
+    "visible_augmentations": "Right forearm smartgun link with exposed neural interface port at wrist — functional, unadorned chrome. Subdermal circuitry tracery at neck base glows faintly under stress or augmentation activation. No cosmetic chrome; all augmentations are work-driven and visible by necessity rather than aesthetic choice.",
+    "posture_movement": "Carries himself with compressed tension — shoulders slightly forward, spine straight but not rigid. Movements are economical and precise; he doesn't waste motion. When stationary, weight shifts constantly between balls of feet as if ready to move in any direction. Eyes track stimulus obsessively — reflex testing or paranoia, unclear which.",
+    "clothing_style": "Tier 3-4 utilitarian runner kit — form-fitting tactical synth-weave bodysuit in charcoal gray with reinforced panels at shoulders and ribs; right forearm left bare to accommodate smartgun interface. Heavy-duty smartfabric jacket with asymmetrical fastening, pockets stuffed with maintenance tools and contract data chips. Worn Geartown-district boots with grip-sole modifications. No corporate branding, no flash — everything is functional and designed for rapid movement or environmental adaptation. Clothing shows signs of regular field use: scuff marks, repaired seams, faint chemical stains suggesting explosive residue or solvents."
+  },
+  "image_prompt": "Cyberpunk male netrunner, 33 years old, lean angular frame, dark brown skin tone blending West African and Scandinavian heritage, sharp facial features, close-cropped dark hair, amber-tinted dark eyes. Visible chrome smartgun link interface on right forearm with exposed neural ports glowing faintly, subdermal circuitry tracery at neck. Wearing charcoal gray tactical synth-weave bodysuit with reinforced panels, heavy asymmetrical smartfabric jacket, right forearm exposed. Surgical scars at temples and neck. Posture coiled and ready, weight on balls of feet. Standing in dimly lit Geartown workshop interior, neon blue and amber task lighting reflecting off chrome, scattered tools and data chips visible, cybernetic tension evident in expression. Hyper-detailed, photorealistic, gritty urban cyberpunk aesthetic, dramatic side-lighting, bokeh workshop background --ar 2:3 --v 6"
 }

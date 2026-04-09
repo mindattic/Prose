@@ -234,5 +234,26 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Igbo / Icelandic / Ethiopian",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Small and quick-limbed, lean without being fragile — the build of someone who moves constantly and eats irregularly. Compact core strength from lifting children and crouching to their eye level all day.",
+    "hair_color": "Dark brown with natural warm undertones",
+    "hair_style": "Worn loose in loosely defined curls on good days; on work days (which is most days), pinned chaotically with whatever is at hand — wire, fabric scraps, sometimes a child's hair clip she forgot to remove",
+    "hair_length": "Medium (shoulder-length when down)",
+    "eye_color": "Dark brown with distinctive patterned irises — rings of amber and pale gold radiating from the pupil",
+    "skin_tone": "Light olive with warm undertones, slightly deeper at the jawline and temples",
+    "complexion": "Open, expressive face with high cheekbones and a wide mouth. Skin is clear but shows the mild wear of someone who works outside her tier's resource access — dry patches in winter, occasional breakout stress marks. A small scar on her left eyebrow from a childhood accident. No makeup most days; occasionally wears a dark lip when she's going to the organizer meetings.",
+    "distinguishing_marks": [
+      "Small pale scar on the left eyebrow, roughly 8mm, from a childhood accident — visible when her hair falls back.",
+      "Faint darkening on her right index fingertip from repeated removal and replacement of the cheap press-on claw.",
+      "The patterned irises themselves are distinctive enough that people remember her face — they've become her identifying feature in a way she finds both satisfying and slightly uncomfortable as they've become trendy."
+    ],
+    "visible_augmentations": "A cheap retractable claw, right index finger — brass-colored metal, roughly 12mm extension, visible when deployed. Non-cyberware, cosmetic-grade, frequently lost and replaced. No other visible augmentations; all infrastructure is biological.",
+    "posture_movement": "Alert and economical in movement — she doesn't waste energy but is never still. When sitting, she folds into herself compactly. When moving among children, she lowers her center of gravity to their level. Her default expression is attentive; she has a quick smile that reaches her eyes. Speaks with her hands. A slight forward lean when listening, as if genuinely interested (because she is).",
+    "clothing_style": "Tier 4 working-class practicality. Thrift-sourced or community-shared clothing in dark, washable colors — black or dark grey base layers, often worn with a large colorful shirt or tunic that reads as hand-dyed or community-printed. Comfortable worn boots (black, scuffed). A fabric-patched jacket in cooler months. A small woven bracelet (Thistle Crèche co-op colors, made by a parent). No jewelry except occasionally a thin wire ring she makes herself. Clothing is clean but thoroughly used, with small stains that won't come out and visible mending. Nothing from a corpo brand; everything sourced locally or secondhand."
+  },
+  "image_prompt": "Portrait of a 22-year-old woman with Igbo-Icelandic-Ethiopian mixed heritage, light olive skin, dark eyes with distinctive amber and gold patterned irises, loosely curled dark brown shoulder-length hair pinned chaotically. Small delicate features, high cheekbones, open expressive face. Wearing dark practical tier-4 clothing — black base layer with a large colorful hand-dyed or community-printed tunic, worn fabric-patched jacket. A cheap brass-colored retractable claw visible on her right index finger. Alert, attentive posture with a quick genuine smile. Basement-level lighting, soft warm amber glow, documentary-style cyberpunk realism, shallow depth of field. Ground-level perspective — framed as if being looked at directly by a child. Worn community spaces in background, subtle. Shot in natural documentary style, no retouching, character-focused portrait. --ar 2:3 --v 6"
 }

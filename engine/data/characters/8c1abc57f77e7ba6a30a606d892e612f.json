@@ -195,7 +195,28 @@
     "The Seam",
     "The Bread Baker of Block 9",
     "Mnemic Clay",
-    "Meridian 88"
+    "GLMZ"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Japanese / West African",
+    "height_cm": 173,
+    "weight_kg": 62,
+    "build": "Lean, almost ascetic—decades of walking measurement routes have worn him down to essential geometry. No excess. Posture still straight from engineer's discipline, but the straightness now reads as fragility rather than formality.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, self-cut with visible uneven edges. No vanity in it. Functional.",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, slightly yellowed at the sclera from age and screen-minimal living",
+    "skin_tone": "Deep brown, weathered to the texture of old leather—sun exposure from decades of outdoor surveying etched into every line",
+    "complexion": "Face carved by time and precision. Cheekbones prominent. Deep nasolabial lines. Hands show liver spots and permanent calluses on the index and middle fingers from pencil grip—the hands of someone who has drawn 10,000 lines by hand. No jewelry. No grooming beyond necessity.",
+    "distinguishing_marks": [
+      "Thin white scar across the back of his left hand, circa 2.5cm, from a measuring instrument accident in his 40s.",
+      "A darker age spot on his right temple, roughly the size of a coin, shaped like an irregular polygon—he has sketched it in margins of the Atlas multiple times.",
+      "Calluses on both palms and finger pads, yellow-white and permanent from decades of pencil and compass work."
+    ],
+    "visible_augmentations": "None. Completely unaugmented. His body is the original template—no chrome, no LEDs, no visible cybernetics. This is itself unusual enough to mark him in the 2226 GLMZ.",
+    "posture_movement": "Moves with measured precision—each step intentional, no wasted motion. Head slightly forward, as if perpetually reading invisible gauges in the air. Hands often move in small, unconscious gestures: measuring, drawing invisible lines. When stationary, becomes almost perfectly still. Speaks only in whispers; exhales carry more weight than his words.",
+    "clothing_style": "Three rotating dark coats (charcoal, near-black, dark brown), all oversized and deliberately worn—Tier 4 functionality, deliberately unstylish to avoid notice. Interior pockets modified extensively for instruments: pencils (mechanical and wooden), measuring tape, calipers, compass, leather-bound notebook, brass rulers. Undershirt always plain, worn close to the skin. Dark trousers, multiple pockets. Worn leather boots, resoled multiple times. A leather map case, hand-tanned and hand-stitched, worn across the chest like a bandolier. No visible corporate branding. No Φ-tech. Everything utilitarian, nothing decorative."
+  },
+  "image_prompt": "A 71-year-old man with deep brown skin, close-cropped white hair, and the weathered face of a lifelong surveyor. Japanese-West African heritage. Lean, precise posture. Wearing an oversized dark charcoal coat with visible interior pockets, worn dark trousers, leather boots. A hand-tanned leather map case crosses his chest. He holds a brass compass and a mechanical pencil with engineer's steadiness. Standing in a dimly lit Circuit street corner near Damen and North, neon signs reflecting off wet pavement behind him, rain-slicked. His expression is distant, focused inward. Intricate detail on his calloused hands. Analog, no visible chrome or LEDs. Cinematic lighting, film noir tone with cyberpunk setting, muted color palette, 35mm photography aesthetic. Whisper-quiet atmosphere. --ar 2:3 --v 6"
 }

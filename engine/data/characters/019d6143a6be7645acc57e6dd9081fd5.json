@@ -172,5 +172,26 @@
     "The Packet Rats",
     "Elena Vasquez-9"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Armenian (derived from Nwofor and Balashyan surnames)",
+    "height_cm": 148,
+    "weight_kg": 38,
+    "build": "Wiry and compact—lean muscle from constant tunnel navigation, no excess body fat, joints that seem slightly hypermobile from years of squeezing through tight passages",
+    "hair_color": "Natural dark brown with a vivid bioluminescent green stripe dyed with fermented mushroom paste",
+    "hair_style": "Shoulder-length mop, somewhat matted and tangled from tunnel dust, asymmetrically parted with the green stripe running through the left side",
+    "hair_length": "Medium",
+    "eye_color": "Very dark brown, pupils notably dilated even in normal light—adapted for low-light environments",
+    "skin_tone": "Medium brown with warm undertones, slightly pallid from lifelong underground residence but not sickly",
+    "complexion": "Round childish face with sharp cheekbones beginning to define; clear skin with minor tunnel grime that never quite washes out; no facial hair; a slight perpetual squint-and-focus expression from reading tunnel shadows",
+    "distinguishing_marks": [
+      "Long pale scar across the entire left palm from a ferrogate grate incident at age nine, tissue slightly raised and lighter than surrounding skin",
+      "Minor calluses on fingertips and palms from rope work and climbing",
+      "Faint pressure marks on wrists and ankles from sleeping in a hammock strung between conduit pipes (not permanent, but visible after sleep)"
+    ],
+    "visible_augmentations": "None. Their adaptations are biological—born-under development, not chrome or implants. The bioluminescent hair stripe is cosmetic dye, not augmentation.",
+    "posture_movement": "Moves with unselfconscious grace through tight spaces; tendency to duck and turn sideways even in spacious areas. Sits in compact, folded positions. Hands are expressive and quick. Eyes constantly track air currents and acoustic shadows. Gait is quick and efficient, rarely wastes motion.",
+    "clothing_style": "Tier 5 born-under practical: layered oversized hand-me-downs from adult Bore Rats, mostly grays and blacks to hide tunnel dust. A patched synthetic jacket with multiple pockets. Rope belt holding up pants that don't quite fit. Bare feet or thick socks (no shoes—better tactile feedback for tunnel navigation). A necklace of polished ferrogate bolts salvaged from old passages. No brands, no status symbols, nothing that costs Φ."
+  },
+  "image_prompt": "a 14-year-old nonbinary tunnel guide in a cyberpunk underground settlement, wiry compact frame, enormous dark adapted eyes, medium brown skin, shoulder-length dark hair with a vivid bioluminescent green stripe glowing faintly, long scar visible across left palm, wearing layered oversized grays and blacks, rope belt, bare feet, polished salvaged bolt necklace, standing in a narrow ferrogate tunnel lit by dim bioluminescent fungi and distant emergency red lighting, atmospheric underground cavern with concrete pipes and cable conduits in background, cheerful contemplative expression, 80mm film grain, cinematic low-light cyberpunk mood, deep shadows and accent lighting, --ar 2:3 --v 6"
 }

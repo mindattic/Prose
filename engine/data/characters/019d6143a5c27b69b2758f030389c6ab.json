@@ -248,5 +248,26 @@
     "The Pure Hand",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Central Asian (Soumaré-Dzhaksybekov indicates Mali/Senegal and Kazakhstan lineages)",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and barrel-chested, softened at the middle with age and sedentary work — the physique of a once-powerful man who has spent three decades bent over a workbench. Thick arms and large hands (left biological, right prosthetic). No longer lean but not yet frail.",
+    "hair_color": "Dark brown with white streaking through beard and temples",
+    "hair_style": "Full, neatly shaped beard kept at medium length; head hair receding at crown, worn close-cropped",
+    "hair_length": "Short",
+    "eye_color": "Amber, naturally deep-set and warm",
+    "skin_tone": "Rich dark brown with the weathered quality of someone who has worked under industrial lights for decades",
+    "complexion": "Lined face suggesting both smile-creases and concentration-furrows. Skin shows old burn scarring on the left side of his neck (solder splash, circa 2196). Hands heavily calloused on the biological left; right prosthetic shows micro-wear patterns consistent with thirty years of iterative upgrades.",
+    "distinguishing_marks": [
+      "Linear scar along left side of neck from shoulder to jaw — pale against dark skin, thin and clean from old thermal burn",
+      "Multiple small circular burn scars across the backs of his hands and forearms — occupational marks from solder work",
+      "A faded tattoo on the inside of his biological left wrist: a three-line symbol (E.L.F. shrine motif) in indigo, applied approximately forty years ago"
+    ],
+    "visible_augmentations": "Right forearm prosthetic terminating in a modular grip-assembly with visible tool-interface ports along the palm and fingers. The prosthetic is matte-black reinforced polymer with exposed aluminum articulation joints; it is visibly worn and re-welded in several places, patched and upgraded rather than replaced — the 'living resume.' Permanent magnification lens clips mounted on his face like a second pair of glasses, brass-framed and perpetually worn. Retractable fine-motor claw extensions recessed into the dorsal surface of his left hand (biological), barely visible when retracted but evident as slight subdermal ridging.",
+    "posture_movement": "Moves with deliberate, economical grace — no wasted motion. Stands slightly forward-leaning as if habitually bending toward work. His right prosthetic arm moves with precise, measured control; he favors his biological left for fine work. Speaks with his hands when engaged. Tends to remove his magnification lenses and clean them while listening to clients — a meditative gesture.",
+    "clothing_style": "Tier 3-4 working professional: weathered canvas shop apron in charcoal over a long-sleeved cotton undershirt (sleeves rolled to mid-forearm), worn to soften the appearance of the prosthetic. Dark durable pants with reinforced pockets. Slip-on boots with oil-resistant soles, scuffed and practical. A worn linen jacket hangs on a hook for when he leaves the workshop — Geartown-made, unpretentious. No jewelry except for a small bronze E.L.F. charm on a simple cord around his neck (worn under his shirt). His clothing is clean but never new; everything is maintained rather than replaced."
+  },
+  "image_prompt": "Cyberpunk portrait of a 61-year-old West African-Central Asian man, dark brown skin with white-streaked beard, deep amber eyes behind permanent brass magnification lens clips. Broad, aging frame softened at the middle. Right forearm is a matte-black worn prosthetic with visible aluminum joints and tool-interface ports, patched and upgraded repeatedly. Retractable claw extensions visible on his biological left hand. Setting: intimate prosthetics workshop with warm solder glow, industrial lubricant smell rendered as warm amber atmospheric haze, E.L.F. shrine with burning herbs in soft background bokeh. Wearing charcoal canvas apron over weathered undershirt, sleeves rolled. Posture is deliberate and forward-leaning, hands positioned as if mid-fitting. Lighting: warm tungsten workshop light casting deep shadows on weathered face. Mood: patient, dignified, thoroughly lived-in competence. 35mm lens character study, photorealistic, --ar 2:3 --v 6"
 }

@@ -250,5 +250,26 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Teak"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Korean / Southeast Asian (Vietnamese or Thai)",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and corded, stripped of excess — visible musculature beneath weathered skin, the physique of someone who never stopped training despite age. Every tendon defined. Posture remains upright despite chronic joint degradation.",
+    "hair_color": "Grey",
+    "hair_style": "Cropped to stubble, military precision",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, somewhat faded with age",
+    "skin_tone": "Deep teak — weathered by salt air and sun exposure, the color of aged wood left to the elements",
+    "complexion": "Deeply lined face with the geography of decades written across it. Perpetually calm expression. Lines around the eyes suggest either squinting against bright light or constant observation. Minimal grooming beyond stubble maintenance.",
+    "distinguishing_marks": [
+      "Monofilament scar running diagonally from right temple to right jaw, creating a permanent half-smile that reads as sardonic rather than genuine — legacy of Jakarta Consolidation",
+      "Left hand missing ring finger, amputated in field during Busan Corridor campaign; the amputation healed roughly, with visible scar tissue at the knuckle",
+      "Heavy calluses across knuckles and palms from decades of hand-to-hand combat training and blade work"
+    ],
+    "visible_augmentations": "Military-grade servo augmentation in left knee (misfiring in later years, causing lockups). No visible chrome or optical modifications. All other augmentations subcutaneous or degraded beyond visual detection.",
+    "posture_movement": "Moves like water finding a drain — unhurried, inevitable, economical. Every motion purposeful. Even in decline, capable of crossing a room and engaging before observer processes the initial movement. Left knee locks intermittently, causing slight asymmetry in gait. Hands rest in deliberate positions, never idle.",
+    "clothing_style": "Uniform was his daily uniform: faded military jacket, all patches and insignia deliberately removed or cut away. The garment itself was Tier 3-4 military surplus, maintained rather than replaced. Beneath it, simple clothing — worn combat trousers, unmarked. No personal ornamentation, no status symbols. Clothing speaks to a man trying to amputate his history as systematically as he amputated his finger."
+  },
+  "image_prompt": "Portrait of elderly Korean-Southeast Asian male, age 65, weathered teak-colored skin, cropped grey hair stubble, deep-set dark eyes with faded quality. Distinctive monofilament scar running from right temple to jaw creating permanent half-smile. Missing ring finger on left hand, visible at knuckle. Wearing faded military jacket with all patches and insignia removed, decades-old fabric. Corded lean musculature visible at neck and hands. Sitting by flooded waterfront, grey morning light, salt-air atmosphere. Expression simultaneously calm and infinitely sad. Cyberpunk noir, gritty realism, character study portrait, muted color palette, shallow depth of field, cinematic lighting, film noir influence --ar 2:3 --v 6"
 }

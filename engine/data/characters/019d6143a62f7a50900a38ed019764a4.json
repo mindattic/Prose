@@ -260,5 +260,28 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Ethiopian / Mexican",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solidly built with dense muscle beneath a frame that carries the wear of four decades of physical labor; strong through the torso and legs, shoulders and back visibly developed from years of standing over surgical tables and manual manipulation",
+    "hair_color": "Dark brown with threaded silver at the temples and throughout",
+    "hair_style": "Pulled back in a functional braid or knot, sometimes tied with clinic tape or salvaged wire",
+    "hair_length": "Medium, chin-length when unbound",
+    "eye_color": "Dark brown, left eye with faint amber tint from corrective ocular implant",
+    "skin_tone": "Deep warm brown with reddish undertones, weathered by sun exposure and chemical exposure",
+    "complexion": "Strong, angular features with prominent cheekbones and a squared jaw; deep crow's feet and forehead creases; skin texture roughened around the hands from antiseptic exposure and scar tissue; a faint chemical burn mark along the right side of her jaw, partially concealed by shadow",
+    "distinguishing_marks": [
+      "Extensive scarring across both palms and dorsal surfaces of the hands, the left hand showing thick white surgical scars in organized patterns suggesting years of precise work",
+      "Chemical burn scar along right jawline, pale and slightly raised, approximately 8cm long",
+      "Faded homemade tattoo on left inner forearm depicting a surgical cross intertwined with marigold flowers, professionally touched up years ago but showing age",
+      "Three parallel thin scars running down the left side of her neck, old but still visible, each approximately 4cm, angled slightly forward",
+      "Subdermal chemical analysis strip visible as a faint geometric grid pattern under the skin of left forearm, edges sometimes showing faint bioluminescence under certain light"
+    ],
+    "visible_augmentations": "Right arm prosthetic from elbow down: matte-black composite construction with visible articulation points and interchangeable tool mounts; micro-precise surgical attachments visible when in use (fine forceps, micro-calibrated clamps, drug-delivery microneedles); the arm bears visible welding marks and hand-machined tooling marks from self-modification. Left eye: faint amber luminescence at the pupil, slightly older-generation aesthetic with visible microscopic lens artifact at the corner. Subdermal chemical analysis strip on left forearm visible as a faint raised grid pattern under the skin.",
+    "posture_movement": "Carries herself with economical precision, minimal wasted movement; stands with weight balanced evenly, shoulders back but not squared in aggression—more in the posture of someone accustomed to standing for 16-hour shifts. Moves with deliberate calm even under pressure; hands are usually in motion, manipulating something or kept ready. Her right prosthetic arm moves with slight mechanical precision that contradicts the fluidity of her biological left. Eyes constantly assessing—people, exits, potential threats masked as professional habit.",
+    "clothing_style": "Tier 4 working-class, practical and layered: worn but maintained second-hand base layers in earth tones (grey, brown, olive), reinforced work pants in dark canvas, heavy apron-style garments (usually canvas or absorbent linen) that can be discarded or washed without emotional attachment. Wears a decades-old grey wool coat over everything in cold months. No visible branding; everything chosen for function and cost. Practical footwear: worn medical clogs or reinforced work boots. A thin gold chain around her neck (predating the Shelf, possibly inherited). Hands are bare—no jewelry that could snag during procedures."
+  },
+  "image_prompt": "Portrait of a 41-year-old Ethiopian-Mexican woman, broad-shouldered and weathered, dark brown skin with warm undertones, pulled-back braided hair with silver threading. Left eye with faint amber glow from corrective implant, deep crow's feet and forehead creases showing decades of precision work. Right arm is a matte-black surgical prosthetic from elbow down with visible articulation and micro-tool attachments, welded and hand-machined. Visible scars on palms, jaw, and neck. Wearing layered second-hand earth-tone clothing, heavy work apron, worn wool coat. Standing in dim clinic lighting with fluorescent green accent, hands steady and capable. Expression of exhausted warmth and quiet competence. Cyberpunk street medic, gritty realism, 2220s, clinical mood, bokeh city lights in background --ar 2:3 --v 6"
 }

@@ -244,5 +244,25 @@
     "The Pure Hand",
     "Gold"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Zimbabwean / Finnish",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Slight and precise, almost wiry, with the particular tenseness of someone whose work demands millimeter-scale control. Minimal upper body mass but defined in the forearms and hands. No wasted volume anywhere.",
+    "hair_color": "Natural dark brown, warm undertone",
+    "hair_style": "Close-cropped on sides, soft loose crown left unstyled and slightly tousled",
+    "hair_length": "Short",
+    "eye_color": "Prosthetic calibration-pattern irises — geometric markers in concentric rings of matte black and reflective silver, continuously rotating. The effect is faintly hypnotic and distinctly inhuman despite residing in otherwise ordinary brown eyes.",
+    "skin_tone": "Warm medium brown with gold undertones that catch in natural light, completely unmodified and unmarked",
+    "complexion": "Clear, well-maintained skin with a fine-boned face and narrow jaw. Expression defaults to slight focus, as though mentally rotating fine tolerances. When engaged in consultation, face softens noticeably. Minimal grooming beyond functional necessity — no jewelry, no visible styling products.",
+    "distinguishing_marks": [
+      "Faint callus pattern across fingertips and inner palms from decades of precision manipulation and calibration work.",
+      "Barely visible micro-scarring along the knuckles of both hands where proprioceptive mesh was installed — thin white lines now almost flesh-tone, visible only in certain light."
+    ],
+    "visible_augmentations": "Calibration-pattern prosthetic irises (continuously visible, deliberately kept as the only aesthetic modification). Fine-motor enhancement mesh in both hands is subcutaneous and invisible at a distance, but close observation reveals subtle structural differences in hand articulation and an odd stillness to his fingers when at rest — they move with unnatural precision when working.",
+    "posture_movement": "Stands with shoulders slightly forward, weight often on one foot as though ready to lean into work. Hands are never quite still — fidgeting with small objects, making minute adjustments to nearby items. Moves economically, no excess motion. In his workshop, fluid and confident; outside of it, slightly contracted, as though operating on lower power.",
+    "clothing_style": "Tier 3 workshop standard: reinforced cotton work pants (usually dark, often dusted with metal shavings), fitted long-sleeve shirts in neutral tones that allow precise arm movement, sturdy ankle boots with good ankle support for standing all day. A worn canvas apron with deep pockets for calipers, measurement tools, and small components — pockets worn soft from years of use. No logos or status markers. Everything functional, nothing decorative. Occasionally a lightweight overshirt when the workshop ambient temp drops."
+  },
+  "image_prompt": "Portrait of Rémi Dzivaguru-Salokangas, a 34-year-old Zimbabwean-Finnish prosthetics technician, slight build, warm medium brown skin with gold undertones, short dark hair with loose tousled crown. His most striking feature: prosthetic calibration-pattern irises displaying rotating concentric geometric markers in matte black and reflective silver, deeply unsettling and beautiful, like looking into targeting reticles. He wears a worn canvas work apron over a fitted neutral-tone long-sleeve shirt, hands resting with surgeon-like precision. Fine-motor mesh in hands barely visible beneath skin. Standing in his Tier-3 workshop, Geartown, surrounded by prosthetic components and calibration equipment. Warm tungsten work lighting casting precise shadows. Soft focus background of workshop tools and limbs in various states of assembly. His expression is calm, focused, quietly confident. Cyberpunk aesthetic, grounded and human-scale. Professional headshot meets workshop portrait. --ar 2:3 --v 6"
 }

@@ -282,5 +282,27 @@
     "The Gradient Compact",
     "Pellucid Systems"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Russian / Ghanaian",
+    "height_cm": 163,
+    "weight_kg": 78,
+    "build": "Compact and densely muscled, low center of gravity — built for impact absorption and explosive movement. Broad shoulders, thick forearms, minimal body fat. Legs show unusual definition from synthetic muscle fiber replacement.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Short, utilitarian undercut; kept precisely trimmed",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Medium warm undertone — blend of Eastern European and West African heritage",
+    "complexion": "Weathered, lean-faced with high cheekbones. Extensive scarring across left cheekbone and jawline (rough, silvered tissue). Fine lines around eyes suggest chronic sleep deprivation. Skin bears minor burn marks on neck (thermal signature from past firefight). Grooming is functional — minimal facial hair, kept clean.",
+    "distinguishing_marks": [
+      "Deep scar running from left temple to jawline, pale and puckered, approximately 12cm long",
+      "Burn scar on right side of neck, circular, approximately 3cm diameter, faded to ash-gray",
+      "Network of thin white scars across knuckles and back of both hands",
+      "Tattoo on inner right forearm: military unit designation in Cyrillic, partially obscured by armor plating seams"
+    ],
+    "visible_augmentations": "Subdermal armor plating visible across torso and forearms — matte gunmetal finish with scratched, illegible serial numbers. Plating sits slightly proud of skin at edges. Synthetic muscle fiber replacement in legs visible as subtle discoloration and unusual muscle striations under skin, more pronounced during movement. No cosmetic modification — purely functional, military-grade.",
+    "posture_movement": "Economical, economical movement — no wasted motion. Stands with weight distributed forward on the balls of feet, ready-stance default. Moves with predatory precision, especially in low light. Often keeps hands visible and near body. Head tracking is sharp and constant — threat assessment reflex. Sits with back to walls, exits always in peripheral awareness.",
+    "clothing_style": "Tier 3-4 functional streetwear. Standard loadout: reinforced tactical jacket (dark synthetic leather, multiple pockets and mag retention clips), fitted cargo pants with thigh holster, military-spec boots (scuffed, maintained). Layers beneath for temperature and armor integration. No corporate branding — all gear is utilitarian, modular, replaceable. Watch is reliable analog + basic digital heads-up interface wrist unit. No jewelry. Clothing shows wear patterns consistent with daily fieldwork and nocturnal schedule."
+  },
+  "image_prompt": "cyberpunk bounty hunter, nonbinary character, compact muscular build, 163cm tall, dark brown hair in short undercut, medium warm brown skin tone with extensive facial scarring, weathered face, dark eyes, subdermal armor plating visible across torso and forearms scratched matte gunmetal, synthetic muscle fiber visible in legs, wearing dark tactical jacket with pockets and reinforced cargo pants, military-spec scuffed boots, nocturnal neon-lit Glassway district setting, dimly lit corporate retail backdrop with surveillance cameras visible, moody low-key lighting with blue and amber ambient glow, photorealistic cyberpunk aesthetic, gritty and worn, threat assessment stance, weight forward on balls of feet, hands positioned near body, cinematic depth of field --ar 2:3 --v 6"
 }

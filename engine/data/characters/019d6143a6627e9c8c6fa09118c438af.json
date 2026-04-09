@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "To build something that outlasts the next contract cycle"
     ],
     "coping_mechanisms": [
@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Ngaire Rojas-Yeboah's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Ngaire Rojas-Yeboah's past shows up in GLMZ, carrying old grievances and new chrome",
     "A high-paying contract turns out to target someone Ngaire Rojas-Yeboah owes a personal debt to",
     "Ngaire Rojas-Yeboah is offered a contract that would clear all their debts — the target is someone they respect"
   ],
@@ -275,12 +275,33 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "Lazarus LX-2 'Lab Rat'",
     "The Pure Hand",
     "Slagworks Industrial",
     "Pellucid Systems"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Iberian / West African",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Stocky and densely muscled, built like someone who trains methodically. Shoulders broad and forward-set. Forearms thick with functional muscle, hands large-knuckled and calloused from years of physical work and gear maintenance.",
+    "hair_color": "Dark brown with premature silver threading at the temples",
+    "hair_style": "Pulled back tight in a functional braid, practical rather than styled",
+    "hair_length": "Long",
+    "eye_color": "Cybernetic — chrome iris rings surrounding deep brown biological pupils. Thermal overlay visible as faint amber warming beneath the metallic surface.",
+    "skin_tone": "Deep warm brown with olive undertones",
+    "complexion": "Weathered and clean. Minimal makeup. A small scar bisects her left eyebrow — old, well-healed. Jaw is squared and prominent. Expression rests in neutral watchfulness, lips thin and rarely smiling.",
+    "distinguishing_marks": [
+      "Linear scar running vertically through her left eyebrow, approximately 2cm long, pale against darker skin",
+      "Burn scar on the inside of her right wrist — roughly 4cm diameter, circular, silvered and old",
+      "Faint track marks along both inner elbows, well-concealed but present under close inspection — from decades of subcutaneous injection work"
+    ],
+    "visible_augmentations": "Chrome cybernetic eyes with visible iris rings that catch light. The enhancement hardware sits flush with the orbital bone but unmistakably artificial. No attempt to disguise or blend them. The internal drug synthesizer leaves no visible external evidence.",
+    "posture_movement": "Stands with weight slightly forward on the balls of her feet — ready posture. Movements are economical and deliberate, no wasted motion. Hands are usually occupied with something — a tool, a device, a cigarette — rarely at rest. When still, she maintains 360-degree awareness, head turning in measured sweeps.",
+    "clothing_style": "Tier 3-4 functional aesthetic. Dark-colored utility jacket with reinforced panels and too many pockets — well-worn and maintained. Tactical cargo pants with cargo webbing. Worn steel-toed boots, laced tight. Layers underneath that can be added or removed. A subdermal armor plate is visible along her collarbone where jacket neckline sits — burnished steel panel. No corporate branding, no unnecessary jewelry. A single silver ring on her left ring finger — worn thin, possibly inherited."
+  },
+  "image_prompt": "A 41-year-old woman with deep brown skin and silver-threaded dark hair pulled back in a tight braid. Her face is weathered and neutral, with a scarred left eyebrow and a squared jaw. Her eyes are cybernetic—chrome iris rings with amber thermal overlay, unmodified and unmissable. She wears a dark reinforced utility jacket over tactical cargo pants and steel-toed boots. A visible subdermal armor plate catches light at her collarbone. Her hands are large and calloused. Setting: dimly lit industrial space, shipping container interior, Old Harbor warehouse. Cyberpunk, gritty realism, heavy shadows, moody blue and amber lighting, worn metal textures. Photography style, unflinching gaze directly at camera, ready posture. 35mm film grain. --ar 2:3 --v 6"
 }

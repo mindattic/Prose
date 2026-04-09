@@ -14,7 +14,7 @@
   "age": 34,
   "status": "active",
   "location": "Old Harbor, occasionally The Shelf, near Michigan Ave and Roosevelt",
-  "description": "Mwangi is a broad-shouldered man with deep umber skin, close-cropped natural hair going prematurely silver at the temples, and eyes that never quite settle on any single point in a room—always cataloguing, always measuring distances. His left arm from elbow to fingertip is a salvaged industrial prosthetic, mismatched plating in gunmetal grey and corroded copper that he has never bothered to cosmetically upgrade, wearing the patchwork as a kind of credential. He dresses in layered thermals and a faded orange dockworker's vest covered in hand-stitched pockets, each one holding something specific he could name without looking.\n\nHe grew up in Old Harbor when it still had functioning fish processing infrastructure, the child of a Kenyan maritime engineer father and a Norwegian logistics coordinator mother who both disappeared into the corporate restructuring that gutted the district's working economy. Mwangi survived by learning what the city planners never published: the actual geography of Meridian 88, the tunnels under The Shelf that don't appear on any civic map, the blind spots in The Circuit's surveillance grid, the forgotten loading bays along the Harbor that still connect to the Meridian Core's service infrastructure. He sells this knowledge in careful, calibrated portions.\n\nHis reputation is for scrupulous neutrality—he will sell maps and routing data to almost anyone, and almost everyone in the mid-tier underworld knows it, which means he has accumulated a precarious kind of protection through mutual dependency. He lives in a converted cold-storage unit he has made surprisingly livable, its walls covered in hand-drawn maps that are more accurate than anything in any city database, and he trusts almost no one completely, including himself.",
+  "description": "Mwangi is a broad-shouldered man with deep umber skin, close-cropped natural hair going prematurely silver at the temples, and eyes that never quite settle on any single point in a room—always cataloguing, always measuring distances. His left arm from elbow to fingertip is a salvaged industrial prosthetic, mismatched plating in gunmetal grey and corroded copper that he has never bothered to cosmetically upgrade, wearing the patchwork as a kind of credential. He dresses in layered thermals and a faded orange dockworker's vest covered in hand-stitched pockets, each one holding something specific he could name without looking.\n\nHe grew up in Old Harbor when it still had functioning fish processing infrastructure, the child of a Kenyan maritime engineer father and a Norwegian logistics coordinator mother who both disappeared into the corporate restructuring that gutted the district's working economy. Mwangi survived by learning what the city planners never published: the actual geography of GLMZ, the tunnels under The Shelf that don't appear on any civic map, the blind spots in The Circuit's surveillance grid, the forgotten loading bays along the Harbor that still connect to the Meridian Core's service infrastructure. He sells this knowledge in careful, calibrated portions.\n\nHis reputation is for scrupulous neutrality—he will sell maps and routing data to almost anyone, and almost everyone in the mid-tier underworld knows it, which means he has accumulated a precarious kind of protection through mutual dependency. He lives in a converted cold-storage unit he has made surprisingly livable, its walls covered in hand-drawn maps that are more accurate than anything in any city database, and he trusts almost no one completely, including himself.",
   "psychology": {
     "facet_weights": {
       "wound": 0.72,
@@ -30,7 +30,7 @@
       "Losing the prosthetic arm and with it the sensation of limitation that keeps him grounded"
     ],
     "core_desires": [
-      "To possess a complete, perfect, living map of Meridian 88 that no one can take from him",
+      "To possess a complete, perfect, living map of GLMZ that no one can take from him",
       "To find out what actually happened to his parents",
       "To be known as someone whose word means something absolute"
     ],
@@ -248,7 +248,7 @@
     "The Meridian Core",
     "Tibor Osei-Svanstrom",
     "Meridian Core",
-    "Meridian 88",
+    "GLMZ",
     "The Circuit",
     "The Shelf",
     "Crucible Industries Battle Rifle BR-11 'Tribunal'",
@@ -257,5 +257,26 @@
     "Silver",
     "Copper"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "East African / Scandinavian (Kenyan-Norwegian)",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and densely muscled through manual labor, tapering slightly at the waist—the build of someone accustomed to precise, sustained physical work rather than explosiveness",
+    "hair_color": "Natural black with premature silver at the temples",
+    "hair_style": "Close-cropped, neat, shaped by habit rather than vanity",
+    "hair_length": "Short",
+    "eye_color": "Dark brown (natural); left eye contains subtle amber-tinted ocular overlay",
+    "skin_tone": "Deep umber with warm undertones, weathered by constant outdoor exposure in the Harbor",
+    "complexion": "Weathered but maintained—lines around the eyes from constant squinting at distances and reading maps, skin creased by concentration; no facial hair, clean-shaven daily",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple down to jawline, approximately 8cm, origin unclear but old",
+      "Callused palms and fingers on right hand, particularly pronounced on index and middle fingers from years of drawing and writing",
+      "Faded tattoo on right inner forearm: a simplified map grid in dark blue ink, deliberately vague, no recognizable landmarks"
+    ],
+    "visible_augmentations": "Left arm prosthetic from elbow to fingertips: industrial-grade salvaged hardware with mismatched plating in gunmetal grey and oxidized copper, deliberately unupgraded and weathered. The joint work is visible and functional rather than aesthetic. Left eye contains a faint amber shimmer when light catches it—the ocular overlay's edge visible only in profile. Subdermal data storage along right forearm visible as a faint series of geometric scars forming a grid pattern beneath the skin, always covered but occasionally glimpsed when clothing shifts.",
+    "posture_movement": "Stillness is his default state—when standing, weight centered, shoulders back but not rigid. Eyes in constant, unconscious motion even when his body is motionless, cataloguing angles and distances. When moving, economical: no wasted motion, footfalls deliberate and quiet. Hands remain occupied—adjusting clothing, touching wall surfaces as he passes, checking pocket contents through fabric. When engaged in conversation, he maintains direct eye contact but his gaze occasionally drifts to measure doorways, sightlines, exit proximity.",
+    "clothing_style": "Tier 4 working-class utility: layered thermals in muted greys and blacks beneath a faded orange dockworker's vest (genuine vintage, not reproduced) with dozens of hand-stitched pockets, each one containing something specific—tools, samples, rolled papers. Lightweight cargo trousers in weathered grey canvas, reinforced at knees and thighs. Heavy boots, practical rather than fashionable, resoled multiple times. A long fieldcoat in dark green canvas, treated for water resistance, multiple interior pockets. No visible branding or corpo affiliations; clothing chosen for function and repairability. Everything shows wear but nothing shows neglect."
+  },
+  "image_prompt": "Cyberpunk character portrait, male, late 30s, broad-shouldered East African-Scandinavian features, deep umber skin weathered by harbor work, close-cropped black hair with silver at temples, dark intense eyes with faint amber ocular overlay glinting in left eye. Left arm is salvaged industrial prosthetic with mismatched gunmetal grey and corroded copper plating, visibly unupgraded. Wearing layered thermals and faded orange vintage dockworker's vest densely covered in hand-stitched pockets, grey reinforced cargo pants, heavy practical boots. Posture alert and still, eyes cataloguing distance. Standing in dimly lit Old Harbor warehouse setting with industrial architecture, worn concrete, faint bioluminescent circuit-map visible on adjacent walls, cool blue and orange ambient lighting, weathered but functional aesthetic. Mood: careful, precise, untrusting competence. Hyperrealistic detail, shallow depth of field focused on face and prosthetic arm. --ar 2:3 --v 6"
 }

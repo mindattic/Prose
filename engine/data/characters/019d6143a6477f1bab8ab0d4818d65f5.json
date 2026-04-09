@@ -254,5 +254,25 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Compass Rose"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Romanian",
+    "height_cm": 165,
+    "weight_kg": 58,
+    "build": "Compact and economical, lean muscle density without bulk. A frame built for precision rather than presence — narrow shoulders, defined but not dramatic musculature, the physiology of someone who moves efficiently.",
+    "hair_color": "Natural black with intentional fade-out to grey at the sides",
+    "hair_style": "Close-trimmed locs, meticulously maintained, faded undercut on sides and back",
+    "hair_length": "Short to medium (approximately 8cm at crown)",
+    "eye_color": "Amber with geometric lattice pattern — deep golden-orange base with black angular tessellations overlaid across iris, non-reflective augmented tissue",
+    "skin_tone": "Medium brown with warm undertones, consistent across body — complexion reflects dual heritage without visible phenotypic sorting",
+    "complexion": "Clear skin, very minimal visible blemishes. Fastidious grooming — sharp jawline, well-defined cheekbones. A calm, composed face that reads as neutral by default; expression emerges through slight eye movement and mouth position rather than broad gesturing.",
+    "distinguishing_marks": [
+      "Faint surgical line barely visible at left temple, approximately 3cm, where neural implant interface was installed — nearly invisible unless in direct light",
+      "Small, precise scar on right knuckle (index finger) — consistent with paper-cut or archive work injury, barely noticeable"
+    ],
+    "visible_augmentations": "Patterned irises only. The geometric lattice is immediately noticeable in direct eye contact — the augmentation is deliberate and visible, but not aggressive. No external chrome, no dermal plating, no obvious ports or jacks. The neural implant is subcutaneous and invisible.",
+    "posture_movement": "Economical and precise. Sits with spine aligned but not stiff. Walks with even weight distribution, minimal wasted motion. Hands remain relatively still until actively engaged in task. Stillness is their default state — they appear to be listening even when silent. When speaking, movements are deliberate and calibrated to exact meaning.",
+    "clothing_style": "Dark, clean-lined, purposefully minimal. Typically black or charcoal trousers (tailored, mid-tier synthesis fabric), crisp button-up shirts in white, grey, or pale blue. Minimal branding. Neat closed-toe shoes suitable for walking client-heavy neighborhoods. The single daily variation is an enameled lapel pin (approximately 2cm diameter) depicting figures in motion — geometric runners, dancers, turning bodies, reaching arms. Pins rotate daily and appear hand-collected. No jewelry beyond the pins. Functional tote or messenger bag in dark canvas. Tier 3 aesthetic: professional without claiming wealth, precise without performative minimalism."
+  },
+  "image_prompt": "Portrait of a nonbinary paralegal advocate, age 31, compact build with warm medium-brown skin and close-trimmed black locs with grey fade at temples. Striking amber geometric lattice patterned irises, deeply augmented and intentional. Dark charcoal button-up shirt, minimalist professional styling. Small enameled lapel pin depicting a figure in motion. Seated at desk in legal aid office, soft warm overhead lighting casting subtle shadows. Calm, composed expression, stillness conveying precision and careful listening. Cyberpunk legal realism, intimate portrait, shallow depth of field, film noir legal drama aesthetic, mid-tier corpo-adjacent setting --ar 2:3 --v 6"
 }

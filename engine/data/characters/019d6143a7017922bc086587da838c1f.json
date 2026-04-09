@@ -202,7 +202,7 @@
     "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Ironclad Agrisystems Hemostatic Grain Pack",
     "Kang Athletics KA-200 'Padwork'",
     "The Eastline",
@@ -216,5 +216,26 @@
     "Slagworks Industrial",
     "The Iowa Exclusion Zone"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "Mexican / Eastern European (Polish or Czech)",
+    "height_cm": 173,
+    "weight_kg": 78,
+    "build": "Medium, compact, weathered—muscular from decades of farm labor but starting to soften slightly with age and exhaustion. Broad shoulders, calloused forearms, strong hands with permanent dirt under the nails.",
+    "hair_color": "Dark brown, graying at the temples",
+    "hair_style": "Practical, shoulder-length, often pulled back with a worn fabric tie or clip",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Warm medium brown with olive undertones—sun-weathered and lined from outdoor work",
+    "complexion": "Deep laugh lines around the eyes and mouth; a permanent crease between his brows from years of squinting at crops and spreadsheets. Jaw shadowed with stubble most days—he shaves infrequently. Skin is dry in places, calloused on palms and knuckles. Expression carries baseline exhaustion but softens when he smiles.",
+    "distinguishing_marks": [
+      "Long, pale scar running along the inside of his left forearm—knife wound from a border skirmish, healed but never fully faded",
+      "Burn scars across the backs of both hands, irregular and older—farm accident or cooking injury from childhood",
+      "Small tattoo on his right wrist: a stylized corn stalk intertwined with a crescent moon—Red Lantern affiliation mark, done in faded black ink"
+    ],
+    "visible_augmentations": "Thin, almost invisible subdermal implant line running along his left temple—the agricultural analysis and environmental monitoring suite. When active, his pupils dilate slightly and narrow again in a barely perceptible rhythm. No other visible chrome or external augmentation; he presents deliberately civilian to avoid drawing corpo attention during border runs.",
+    "posture_movement": "Moves with the economy of someone who conserves energy—no wasted gestures. Often stands with weight shifted slightly to one side, as if tired. When walking, his pace is steady and deliberate. When handling food or crops, his hands become precise and gentle. His voice is measured, rarely raised, but carries quiet authority earned through competence, not force.",
+    "clothing_style": "Tier 3-4 practical utilitarian. Worn canvas work pants in khaki or faded green, reinforced at the knees and pockets. Long-sleeved shirt, usually linen or cotton blend, sleeves rolled or pushed up past the elbows. A weathered leather vest with many pockets—this is where the notebook lives, in a breast pocket worn soft from constant use. Sturdy work boots, well-maintained but scuffed from years of farmstead and border travel. A heavy canvas jacket for colder months, stained with soil and storage facility dust. Small encrypted communication device worn on a cord beneath his shirt—only visible when he's actively using it."
+  },
+  "image_prompt": "Cyberpunk portrait of a weathered Latino-Eastern European male, age 38, standing in a farmstead warehouse lit by warm dawn light filtering through grimy skylights. Medium build, warm medium-brown skin, dark hair graying at temples pulled back, deep kind eyes lined with exhaustion, dark stubble. Wearing faded canvas work pants, rolled-sleeve linen shirt, worn leather vest with bulging pockets, scuffed work boots. Thin subdermal implant line visible along left temple, faint scar on left forearm. Holding a worn leather notebook, hand resting on a crate of crops. Expression weary but determined, the look of someone carrying the weight of feeding communities. Dimly lit storage tanks and preservation equipment in soft focus behind. Photorealistic, gritty, human-focused, no neon, natural lighting, documentary photography style. --ar 2:3 --v 6"
 }

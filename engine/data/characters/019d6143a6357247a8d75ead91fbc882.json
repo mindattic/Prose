@@ -257,5 +257,26 @@
     "The Pale Mile",
     "Gold"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Central African / Finnish",
+    "height_cm": 142,
+    "weight_kg": 38,
+    "build": "Diminished but structurally intact; skeletal frame with carefully maintained muscle tone in shoulders and forearms, the build of someone who has deliberately preserved function rather than appearance. Decades of shrinkage have compressed her vertebrae but not her dignity.",
+    "hair_color": "Natural white",
+    "hair_style": "Short, natural texture, swept back from her face with no styling products",
+    "hair_length": "Short",
+    "eye_color": "Clear grey with faint reading-enhancement optical coating, slightly clouded at the edges from age and degradation",
+    "skin_tone": "Deep brown with ashen undertones reflecting age and the particular pallor of Tier 1 indoor living",
+    "complexion": "Extraordinarily wrinkled face with deep nasolabial folds, pronounced cheekbones, and a precise mouth. Skin condition is dry but clean; grooming is meticulous despite visible age markers. Eyes are sharp and assessing, set deep beneath a prominent brow ridge.",
+    "distinguishing_marks": [
+      "Bioluminescent stripes run along both forearms in thin, precise lines of pale gold; the implants are 29 years old and pulse with an irregular, breathing-like rhythm that is visible in dim light",
+      "Fine hairline scar along the left temple, barely visible but palpable, suggesting old trauma or surgery from decades past",
+      "Age spots and sun damage across her shoulders and décolletage in irregular patterns, the map of six decades living in and around The Shelf"
+    ],
+    "visible_augmentations": "Bioluminescent forearm stripes (gold, slow irregular pulse). Reading enhancement optical coating visible as a faint iridescent sheen across both eyes, partially degraded and occasionally catching light unevenly. Cardiac regulator is subcutaneous; not visible.",
+    "posture_movement": "Moves with a rolling, economical gait that suggests deeply learned navigation of specific spaces. Does not rush. Carries herself with the unselfconscious authority of someone who has earned their place through mere survival. Sits with deliberate care, lowering herself as though setting down something precious. Hands are in constant, subtle motion — gesturing while speaking, adjusting fabric, making small precise movements while listening.",
+    "clothing_style": "Hand-sewn dresses from salvaged and reclaimed fabric in colors that should clash but do not: ochre and slate, rust and violet, cream and deep teal. Seams are neat; repairs are visible and intentional. Layers under the dresses — cardigans or undershirts in neutral tones, also self-made. No jewelry except for a thin wire bracelet on her left wrist (purpose unclear). Wears soft slippers indoors, actual walking shoes (vintage, pre-2150s manufacture) when leaving the Collective. Tier 1 formal dress code is irrelevant to her; she dresses for herself and community recognition."
+  },
+  "image_prompt": "Portrait of an elderly Black woman, ninety-one years old, sitting in soft natural light from a side window, dignified and sharp-eyed. Her face is deeply wrinkled and extraordinary, with clear grey eyes that seem to look through the camera. Her white hair is cut short, natural texture, swept from her face. She wears a hand-sewn dress in clashing colors—ochre and slate tones—that work harmoniously. Thin bioluminescent gold stripes glow faintly on both her exposed forearms, pulsing slowly like something alive. Her hands are in motion, expressive. The setting is a modest room in a communal housing block, Tier 1 cyberpunk 2226, with visible wear and community markers. Lighting is warm and forgiving but honest. She radiates the authority of someone who has survived everything. Photorealistic, character portrait, cyberpunk aesthetic, intimate mood, 35mm lens quality --ar 2:3 --v 6"
 }

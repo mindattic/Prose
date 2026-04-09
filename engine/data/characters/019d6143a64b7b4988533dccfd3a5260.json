@@ -31,7 +31,7 @@
     "core_desires": [
       "A crew worth trusting — people who stay when the shooting starts",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Overwork — takes every contract offered because idleness invites thinking",
@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Liora Mori-Sefa's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Liora Mori-Sefa's past shows up in GLMZ, carrying old grievances and new chrome",
     "Liora Mori-Sefa discovers a job they completed last year was a setup for something much larger and much worse",
     "Liora Mori-Sefa is offered a contract that would clear all their debts — the target is someone they respect"
   ],
@@ -271,7 +271,7 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "Meridian 88",
+    "GLMZ",
     "The Heritage Vault",
     "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Stratum",
@@ -279,5 +279,27 @@
     "Pellucid Systems",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Japanese / West African / Eastern European — layered diaspora mixing",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and economical, deceptively compact. Geneware muscle density treatment gives his frame a corded, efficient quality — no excess, all functional. Moves like someone who has learned to take impact without broadcasting it.",
+    "hair_color": "Dark brown, threaded with premature silver at temples",
+    "hair_style": "Pulled back tight, practical. Kept short enough not to interfere with work.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and measuring",
+    "skin_tone": "Warm mid-brown, uneven undertones reflecting mixed ancestry",
+    "complexion": "Fine-featured, angular face with high cheekbones and a narrow jaw. Skin is weathered but meticulously maintained — the grooming of someone who understands that invisibility requires not looking neglected. No facial hair. Small white scar through left eyebrow, clean edge. Two thin parallel scars on right cheekbone, deliberately preserved rather than removed.",
+    "distinguishing_marks": [
+      "White surgical scar running through left eyebrow, approximately 2cm, edge clean",
+      "Two parallel scars on right cheekbone beneath eye, each roughly 1.5cm, deliberate preservation suggests they serve as personal marks or reminders",
+      "Faint burn marks on left inner wrist, barely visible, old enough to be nearly healed",
+      "Small tattoo on inside of right forearm near smartgun link — geometric pattern, private placement"
+    ],
+    "visible_augmentations": "Smartgun link in right forearm — visible as a raised port array beneath the skin with faint neural interface scarring. The chrome is polished stainless, no attempt to conceal it. Geneware muscle density treatment is invisible but evident in the way muscle definition appears without obvious bulk — functional rather than aesthetic augmentation.",
+    "posture_movement": "Still. Conserves motion. Walks with minimal upper body movement, lets hips lead. Stands in corners when stationary, back always positioned with sightline control. Doesn't fidget. His stillness is his primary invisibility asset — easier to overlook someone who isn't performing visibility.",
+    "clothing_style": "Tier 3-4 utilitarian. Charcoal gray tech-weave utility jacket with reinforced forearm panels — practical, worn enough to be invisible but maintained. Black cargo pants with custom pockets. Steel-toed boots, scuffed but functional. Thin high-neck undershirt in black, covers any subdermal scarring. No branding visible. Everything selected for silence — no rustling fabrics, muted colors, nothing that broadcasts presence. The overall effect is someone designed to be forgotten."
+  },
+  "image_prompt": "Cyberpunk character portrait of a lean 45-year-old man with mixed Japanese, West African, and Eastern European features, dark brown eyes, silver-threaded dark hair pulled back tight, angular face with visible scars on eyebrow and cheekbone. Right forearm features polished stainless steel smartgun link port showing beneath skin. Wearing charcoal gray reinforced tech-weave utility jacket and black cargo pants, high-neck black undershirt, steel-toed boots. Standing in shadow with minimal posture, back against wall, stillness suggesting professional cleaner. Cool blue and gray lighting, cyberpunk noir atmosphere, gritty urban residential setting, sharp focus on face and forearm augmentation, photorealistic, moody atmospheric lighting, cinematic depth --ar 2:3 --v 6"
 }

@@ -253,5 +253,26 @@
     "Nightlight",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Malian) / Hungarian / mixed Central European",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and solid, with the kind of density that comes from decades of standing work. Strong upper body, slight softness at the midsection from tasting her own cooking. Moves with deliberate economy.",
+    "hair_color": "Natural black with white/silver threading throughout",
+    "hair_style": "Locs, sectioned and pinned into a loose topknot",
+    "hair_length": "Long (shoulder-length when unbound), typically wrapped",
+    "eye_color": "Deep brown with slight amber undertone",
+    "skin_tone": "Deep umber with extensive pale vitiligo patches across neck, décolletage, and the backs of both hands",
+    "complexion": "The vitiligo patches glow faint amber-gold in low light from bioluminescent dye injections. Facial structure is strong-boned and broad. Crow's feet are deep from 58 years of squinting in kitchen steam and market sunlight. Hands show the wear of constant work—calluses on palms and fingers, slight inflammation around wrist joints.",
+    "distinguishing_marks": [
+      "Extensive pale vitiligo patches across neck, shoulders, décolletage, and backs of both hands, treated with glowing bioluminescent dye that creates amber luminescence in darkness",
+      "Faint burn scar across the inside of her right forearm (cooking accident, pre-augmentation era)",
+      "A small tattoo on her left wrist of a stylized fenugreek leaf in faded indigo"
+    ],
+    "visible_augmentations": "Subtle augmentation ridge visible along both wrists beneath the skin where joint suppressors are anchored—just enough give-away detail to mark her as someone who carries tech. No obvious chrome. The enhanced scent glands are invisible. The bioluminescent patches glow visibly in shadows.",
+    "posture_movement": "Stands with weight evenly distributed, shoulders back. Moves with the careful precision of someone managing chronic pain—no wasted motion, but never hurried. Her hands are always in motion: stirring, measuring, gesturing while talking. Her left hand occasionally flexes slightly, a habitual gesture that suggests she's managing the suppressors' feedback.",
+    "clothing_style": "Tier 3-4 working class, practical and worn-in. A faded yellow cotton wrap always covers her locs. Wore-soft linen overshirt in cream or pale tan, sleeves rolled to the elbows to display the vitiligo and bioluminescence. Practical dark cargo apron with deep pockets containing small glass vials, paper packets, and a worn notebook. Worn canvas slip-on shoes reinforced at the heel. Three mismatched earrings in her left ear: a tiny copper spoon, a data-chip casing (non-functional, purely sentimental), and a dried seed pod. A thin chain around her neck bearing a small brass mortar and pestle charm."
+  },
+  "image_prompt": "A 58-year-old West African-Hungarian woman with deep umber skin and extensive glowing amber vitiligo patches on her neck and hands, standing in a dimly-lit market stall. She wears a faded yellow head wrap and pale linen overshirt with rolled sleeves, an apron heavy with pockets. Her long silver-threaded locs are pinned up. Three mismatched earrings visible in her left ear including a copper spoon and seed pod. Strong, weathered hands with subtle augmentation ridges along the wrists. The vitiligo patches glow faintly in the low light. Her expression is warm but calculating. Background: cramped Tier 5 market stall with hanging herbs, clay bowls, glass vials, and the texture of decades of use. Warm incandescent lighting mixed with neon market signs. Smell of fenugreek and chemical compounds in the air. Hyperrealistic, gritty cyberpunk street level aesthetic, documentary photography quality. --ar 2:3 --v 6"
 }

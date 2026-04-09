@@ -12,7 +12,7 @@
   "role": "Anti-corporate agitator and underground press operator based in Highland Park Autonomous Zone",
   "age": 27,
   "status": "active",
-  "location": "Highland Park Autonomous Zone, Meridian 88, near Michigan Ave and Walton",
+  "location": "Highland Park Autonomous Zone, GLMZ, near Michigan Ave and Walton",
   "description": "Adaeze is compact and kinetic, the kind of person who seems to be in motion even when she's standing still — weight shifting, fingers moving, eyes cataloguing everything in the room. Her natural hair is grown out in a voluminous cloud shot through with bioluminescent threads she had woven in at a Shelf parlor, the glow cycling slowly through amber and deep red, which she chose because they are the colors of burning. Her skin is warm brown, and she has a thin scar through her left eyebrow from a Tessera security baton three years ago that she displays without shame.\n\nShe runs a print shop front called Frequency that produces neighborhood circulars by day and incendiary agitprop by night. She is funny in a way that disarms people before she makes them angry, which is her preferred order of operations. She believes fiercely in the zone's autonomy and is deeply suspicious of anyone who frames activism as a stepping stone to conventional politics. She eats too little, sleeps too little, and spends money she doesn't have on ink, paper, and anonymous server time. She has a small shrine to the local E.L.F. she calls The Compositor in the back of the shop, surrounded by botched print runs.",
   "psychology": {
     "facet_weights": {
@@ -175,7 +175,7 @@
   ],
   "related_entities": [
     "Highland Park Autonomous Zone",
-    "Meridian 88",
+    "GLMZ",
     "The Quiet Room",
     "The Gradient Compact",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
@@ -184,5 +184,25 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Nightlight"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Greek",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Compact and wiry, all kinetic energy — lean muscle with the restless quality of someone who burns calories through constant motion rather than exercise. Her frame is small-boned but dense.",
+    "hair_color": "Natural deep brown with bioluminescent thread accents cycling amber to deep red",
+    "hair_style": "Voluminous natural cloud, approximately shoulder-length, threads woven throughout",
+    "hair_length": "Medium",
+    "eye_color": "Left eye: warm brown, natural. Right eye: augmented optical implant with slight metallic sheen, amber-tinted lens with visible micro-servos at the iris",
+    "skin_tone": "Warm medium brown with underlying olive undertones",
+    "complexion": "Sharp-featured face, high cheekbones, intense gaze. Skin shows the slight wear of chronic sleep deprivation — faint shadows under eyes. Well-maintained grooming despite irregular self-care habits.",
+    "distinguishing_marks": [
+      "Thin white scar through left eyebrow running vertically, approximately 3cm, from Tessera security baton strike three years prior — displayed without concealment",
+      "Small, faded tattoo on right inner wrist: a printer's mark (⊞), approximately 1.5cm, from her early days running the shop"
+    ],
+    "visible_augmentations": "Right eye optical implant with amber lens and visible micro-servo mechanics at the iris; occasional involuntary blink from zoom lag. Bioluminescent hair threads cycling slowly through amber and deep red. Faint subdermal tracery visible on right forearm under certain lighting — data sleeve interface ports at wrist and elbow.",
+    "posture_movement": "Never fully still — weight shifts from foot to foot, fingers fidget with whatever is at hand (paper, thread, ink pen), eyes in constant motion cataloguing surroundings. Moves with economical precision despite the kinetic restlessness. When seated, legs bounce or tap. When engaged in conversation, gestures are emphatic and deliberate.",
+    "clothing_style": "Tier 4-5 utilitarian: worn-in Carhartt print shop apron in faded charcoal over mismatched layers (thermal underlayer, oversized pullover in muted earth tones). Hands usually stained with ink. Boots are well-maintained but scuffed (practical, no-logo brands from secondary markets). Minimal jewelry except for a small copper ring on her left thumb. Clothing prioritizes function and durability over aesthetics; any wear is from use, not affectation."
+  },
+  "image_prompt": "Portrait of a 27-year-old woman with compact, wiry frame and intense posture, warm medium-brown skin with olive undertones. Deep brown natural hair in voluminous shoulder-length cloud with bioluminescent threads glowing amber and deep red. Sharp-featured face with high cheekbones, scar through left eyebrow. Right eye is cybernetic with amber lens and visible micro-servo mechanics; left eye warm brown. Wearing faded charcoal Carhartt apron over mismatched earth-tone layers, hands stained with printer's ink. Subdermal data sleeve visible on right forearm. Restless energy, fingers in motion, setting is interior of ramshackle print shop with vintage printing press in background, ink-stained surfaces, papers and type scattered. Warm tungsten lighting casting long shadows, slight glow from bioluminescent hair threads. Cyberpunk, underground, political, defiant. Film noir color grading. --ar 2:3 --v 6"
 }

@@ -270,5 +270,27 @@
     "Iron",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mixed African diaspora / South Asian (surname purged; appearance suggests West African and subcontinental ancestry)",
+    "height_cm": 168,
+    "weight_kg": 52,
+    "build": "Wiry and slight, with the hollow-chested frame of someone who forgets to eat during hyperfocus sessions. Minimal muscle definition; posture often hunched over workbenches. Deceptively strong in the hands and forearms despite appearance.",
+    "hair_color": "Dark brown base with asymmetrical bleached/faded magenta streaking (currently degrading to pink at roots)",
+    "hair_style": "Deliberately mismatched: buzzed to scalp on right side (showing dark stubble), grown into uneven natural curls on left side",
+    "hair_length": "Asymmetrical (short on right, medium on left)",
+    "eye_color": "Right: dark brown, natural. Left: matte black synthetic with amber processing ring (Axiom Industries salvage)",
+    "skin_tone": "Light brown with warm undertones; perpetually smudged with solder flux, thermal paste, and microscopic circuitry dust",
+    "complexion": "Youthful but weathered; pronounced dark circles under eyes suggesting chronic sleep debt. Thin facial structure with high cheekbones. Occasional nervous tics around the jaw. Fingernails bitten to the quick on left hand (natural); right prosthetic hand has no nails.",
+    "distinguishing_marks": [
+      "Data-port scar behind right ear: thin vertical line with faint keloid tissue, partially obscured by micro-receiver implants",
+      "Solder burn scars on hands and wrists: scattered small circular marks and linear burns, mostly on left hand",
+      "Thermal paste stains: permanent discoloration on fingertips and knuckles of left hand",
+      "Faint electrical burn marks on right forearm near prosthetic junction: parallel lines where current has arced across skin during hardware testing"
+    ],
+    "visible_augmentations": "Left eye: oversized matte-black Axiom Industries scanner prosthetic with amber LED processing ring; noticeably protrudes slightly from socket. Right hand and forearm: patchwork prosthetic (grey matte finish) with visible seams and mismatched panel lines showing three different manufacturer components welded together. Behind right ear: dense cluster of micro-receiver implants (visible as small metallic studs). Data-port scarring visible at right ear base. Occasional faint blue LEDs visible at augmentation junctions when active.",
+    "posture_movement": "Habitually hunched, especially when standing still or listening. Fidgety hands (constant micro-movements, tapping, disassembling/reassembling small objects). When focused on tech: perfectly still, almost meditative. When anxious or overstimulated: rapid head movements, frequent eye-contact avoidance. Walks quickly with slightly uneven gait (right prosthetic arm affects balance distribution). Nervous energy barely contained — bounces on heels, plays with data-port scar when thinking.",
+    "clothing_style": "Tier 5 scavenger aesthetic: mismatched, heavily modified utility wear. Oversized grey Shelton Manufacturing work jacket (sleeves cut to accommodate prosthetic arm, covered in patches and stitching). Black cargo pants with at least a dozen zippered pockets, many containing salvaged components. Worn synthetic-leather boots (one sole detaching slightly). Shirt underneath is usually a random corporate tech-support tee with the logo modified with marker. Neon paracord bracelet on left wrist. No jewelry except the ear studs and micro-receivers. Visible wear patterns suggest frequent crawling through maintenance ducts and equipment bays."
+  },
+  "image_prompt": "19-year-old non-binary tech scavenger with wiry, slight build standing in a cluttered salvage workspace, skin light brown and smudged with solder flux, left eye replaced with oversized matte-black industrial scanner with amber LED ring, right arm mismatched prosthetic patchwork grey metal with visible seams, asymmetrical hair (buzzed on right, dark curls on left, fading magenta streaks), micro-receiver studs visible at ears, wearing oversized cut-up grey work jacket and cargo pants, nervous energy, hunched posture, fingers twitching, surrounded by disassembled electronics and neon cables, dim industrial lighting with amber and blue neon accents, cyberpunk gritty urban setting, hyper-detailed augmentation seams, cinematic, --ar 2:3 --v 6"
 }

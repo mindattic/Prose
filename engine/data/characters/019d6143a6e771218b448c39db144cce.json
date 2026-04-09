@@ -265,5 +265,26 @@
     "Axiom Systems White Noise Bubble Generator WNB-1",
     "The Pure Hand"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Quechua",
+    "height_cm": 162,
+    "weight_kg": 58,
+    "build": "Compact and efficient, lean muscle beneath a frame built for precision rather than strength. Narrow shoulders, efficient posture. No wasted geometry.",
+    "hair_color": "Deep arterial red (dyed; natural color dark brown)",
+    "hair_style": "Close-cropped, precise fade on the sides, slightly longer on top — maintained with surgical attention to detail",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint silver neural-mapping scarring visible at the inner corners where haptic implants interface",
+    "skin_tone": "Deep brown with cool undertones, the even complexion of someone who spends most daylight hours underground",
+    "complexion": "Methodical grooming, hands kept obsessively clean despite the work. Fine-lined face suggesting chronic low-grade stress. Lips often chapped from breathing recirculated air in her cold-storage clinic. No cosmetic work beyond the regrettable neon tracery.",
+    "distinguishing_marks": [
+      "Bioluminescent capillary tracery in faint neon-blue lines mapping across both forearms in vascular-system patterns, brightest at the wrists; a nineteen-year-old decision she now describes with embarrassment and defensive precision",
+      "Thin white surgical scar along the base of her right thumb where early stabilizer-rig installation went septic and required remedial work",
+      "Small burn mark on her left palm from a sterilization equipment malfunction three years ago, barely visible but she knows it's there"
+    ],
+    "visible_augmentations": "Bioluminescent forearm tracery (always visible). Stabilizer rigs in both hands visible as subtle metallic articulation at knuckles and wrist joints when hands are in motion or light catches them. Eyes show faint silver scarring at inner canthi. The subdermal sterile-field generator and haptic-magnification implants are invisible unless she's actively using them — then her eye-focus becomes unnaturally precise and her hands move with mechanical accuracy.",
+    "posture_movement": "Economical and controlled. Hands move with surgical precision even when casual; she's learned not to make sudden gestures in clinical spaces. Stands with weight balanced forward slightly, ready to move. Rarely touches her own face. When focused on work, enters a state of almost meditative concentration — everything extraneous falls away.",
+    "clothing_style": "Tier 3-4 utilitarian. Loose dark scrubs or surgical-grade clothing in charcoal or black, often with visible staining from work that she doesn't fully clean out because she'll just get more on them. Reinforced cargo pants with deep pockets for tools and supplies. A weathered synth-leather jacket (high-quality, probably five years old, maintained obsessively) for moving through Shallowgrave proper. No jewelry — too much contamination risk. Wears disposable nitrile gloves constantly, carries multiple pairs in jacket pockets."
+  },
+  "image_prompt": "cyberpunk character portrait, Sévérine Achola-Tuqiri, 34-year-old West African-Quechua woman, compact athletic frame, deep brown skin, close-cropped arterial-red dyed hair, faint bioluminescent neon-blue capillary tracery glowing across both forearms in vascular patterns, dark intelligent eyes with subtle silver scarring at inner corners, surgical precision in posture and hand positioning, visible metallic knuckle augmentations, wearing dark charcoal surgical scrubs stained from clinical work, weathered synth-leather jacket, disposable nitrile gloves, no jewelry, neutral expression suggesting moral certainty and controlled intensity, underground Midden Market back-alley clinic setting with cold-storage metal walls and soft clinical lighting casting shadows on her face, photorealistic with cyberpunk grit, professional yet illicit, shot at upper-body three-quarter angle, cool color grading with neon-blue accent highlights on forearm tracery, hyperrealistic texture detail on worn clothing and surgical augmentations --ar 2:3 --v 6"
 }

@@ -223,5 +223,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polish / Samoan",
+    "height_cm": 142,
+    "weight_kg": 31,
+    "build": "Scrawny and angular, all elbows and knees, with the lean musculature of a child who moves constantly. No subcutaneous fat; ribs slightly visible beneath dark skin.",
+    "hair_color": "Natural black with intentional copper patches at temples and greenish-black at crown from partially-failed salon gel application",
+    "hair_style": "Close-cropped with textured layers, unevenly dyed sections creating a patchy, DIY effect",
+    "hair_length": "Short",
+    "eye_color": "Left eye: dark brown with faint visible grid pattern overlay shimmer and micro-glitches; right eye: natural dark brown",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Youthful face with sharp cheekbones and a pointed chin. Skin unmarred except for minor scrapes and dust-dirt that seems permanent. Bright, alert expression despite visible exhaustion around the eyes. Occasional grid-pattern light artifact visible in left eye when excited or frightened.",
+    "distinguishing_marks": [
+      "Faint scar tissue across left inner wrist from DIY retinal overlay installation attempt",
+      "Small burn mark on right palm (protein tab mishap, approximately 2cm diameter)",
+      "Threadbare calluses on fingertips from constant stylus use"
+    ],
+    "visible_augmentations": "Left eye retinal overlay with visible cracked grid pattern and periodic AR tag glitches. Faint dark subcutaneous scarring around left temple where overlay was installed. No other visible augmentations.",
+    "posture_movement": "Moves in quick, angular patterns — diagonal cuts rather than straight lines. Perpetually scanning for exits and sightlines. Feet always positioned for rapid direction changes. Sits with knees drawn up or legs folded, never fully relaxed. Speaks with hand gestures that punctuate his internal narration. Default resting expression is watchful but hopeful.",
+    "clothing_style": "Oversized gray-brown utility vest with excessive pockets (Tier 4 salvage-market origin, original owner unknown), worn over faded synthetic long-sleeve shirt. Cargo pants with visible repair stitching at both knees. Mismatched socks. Worn synthetic sneakers with one loose sole. Small data-key lanyard around neck. Everything slightly too large, suggesting recent growth spurts or intentional oversizing for pocket capacity."
+  },
+  "image_prompt": "11-year-old boy, West African-Polish-Samoan heritage, scrawny angular build, deep brown skin, short close-cropped hair with copper temple patches and greenish-black crown dye, left eye with visible cracked retinal overlay grid shimmer and AR glitches, bright alert expression, wearing oversized gray-brown utility vest with many pockets over faded long-sleeve shirt, cargo pants with knee repairs, worn sneakers, standing in neon-lit Garfield Rack market corridor with cracked concrete walls and LED signage, dim cyberpunk lighting with purple and amber streetlights, morning shift change atmosphere, film grain, documentary realism, sharp focus on expressive young face and augmented eye detail, gritty urban setting --ar 2:3 --v 6"
 }

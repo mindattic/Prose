@@ -263,5 +263,26 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Fula) / Russian",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Tall and broad-shouldered with a slight asymmetry—his left side carries more muscle mass from years of fieldwork, while his right arm appears marginally thinner due to the augmentation integration. Not athletic in a refined sense; built more like someone who has lived hard and physically.",
+    "hair_color": "Dark brown with early graying at the temples",
+    "hair_style": "Kept short and practical, often slightly unkempt from sweat or nervous running of hands through it",
+    "hair_length": "Short",
+    "eye_color": "Pale hazel, set slightly wider apart than average, giving his face an element of off-balance uncertainty",
+    "skin_tone": "Medium brown with ruddy undertones, weathered by field exposure across multiple Tier 5 zones",
+    "complexion": "Heavy-jawed face with a pronounced brow ridge; skin shows early sun damage and the faint tracery of stress lines around his mouth. Stubble is constant—he shaves infrequently. Small scar tissue at the right corner of his mouth.",
+    "distinguishing_marks": [
+      "Thin white scar running 3cm along his right jawline, acquired during a skip recovery in 2219",
+      "Barely visible subdermal seam along the underside of his right wrist, marking the older grip augmentation—the integration line is slightly raised and discolored",
+      "Calico-patterned geneware tail (orange, black, white patches) that retracts into the base of his spine when relaxed; the tail extends reflexively when stressed or focused, curling around his left ankle or calf"
+    ],
+    "visible_augmentations": "The subdermal seam on his right hand is noticeable if you look closely—a faint ridge of scar tissue marking poor integration work. The calico tail is fully visible when extended, curling around his lower body. His olfactory enhancement is not visually apparent, though his nostrils flare slightly when he's actively tracking a scent. His neural uplink has no external port or visible hardware.",
+    "posture_movement": "He leans forward when listening, as if his ears are working overtime. His gait is slightly favoring his left side due to old injuries. When nervous or concentrating on a skip trace, his right hand clenches and unclenches rhythmically. He touches his face frequently—jaw, temples, corners of his mouth. His tail will curl tighter around his ankle or wrap loosely around his waist when he's anxious, a tell he's completely unaware of.",
+    "clothing_style": "Tier 3 practical wear—synthetic blend cargo pants with reinforced seams (charcoal or dark olive), worn composite field jacket (Bronzeline-branded if he's just come from the office, unmarked if he's working street), understated neural-link interface collar (black leather with minimal chrome detailing). Boots are heavy-soled and scuffed, replaced every 18 months when the tracking mods wear through the soles. He wears a thin wedding band on his left ring finger—his marriage ended in 2224, but he hasn't removed it. His daughter gave him a small handmade charm (a clay raven) that he keeps in his jacket pocket."
+  },
+  "image_prompt": "Portrait of Celestino Bah-Volkov, a 38-year-old male bounty officer with mixed West African and Russian heritage, pale hazel eyes set slightly wide apart, heavy jaw, dark brown hair graying at temples kept short and unkempt. Medium-brown weathered skin, visible tension around mouth and brow. Wearing dark cargo pants and worn synthetic field jacket with minimal Bronzeline branding, charcoal and olive tones. A calico-patterned geneware tail (orange, black, white) curls reflexively around his left ankle. Faint subdermal augmentation seam visible on right wrist. Cyberpunk Tier 3 aesthetic, street-worn and pragmatic. Tense posture, hand touching his jaw, wary and uncertain expression. Indoor office lighting mixed with cool blue neural-link glow casting shadows across his face. 35mm film grain, gritty realism, moody and introspective mood. --ar 2:3 --v 6"
 }

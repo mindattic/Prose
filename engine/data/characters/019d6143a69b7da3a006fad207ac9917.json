@@ -247,5 +247,24 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Polynesian / Ghanaian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Slight and wiry, all lean muscle and angles — the build of someone who runs rather than fights, with minimal fat and functional strength concentrated in his legs and core",
+    "hair_color": "Black, natural",
+    "hair_style": "Chaotic, unmaintained halo of coils; often falls into his eyes",
+    "hair_length": "Medium",
+    "eye_color": "Tide-pattern modded: base brown with concentric rings of blue-green that ripple outward slowly in programmed cycles",
+    "skin_tone": "Deep warm brown with olive undertones, reflecting mixed Pacific and West African ancestry",
+    "complexion": "Sharp, angular face with broad jaw and wide-set eyes inherited from Polynesian lineage. Clear skin with the worn appearance of someone who sleeps poorly and eats inconsistently. Thin scar crossing left eyebrow, slightly raised and pale against his skin tone.",
+    "distinguishing_marks": [
+      "Thin scar crossing left eyebrow, approximately 3cm, pale and slightly raised, origin undiscussed"
+    ],
+    "visible_augmentations": "Tide-pattern iris mods — the only immediately visible augmentation; the slow rippling blue-green rings in his eyes are distinctive enough that he's come to regret their visibility for his line of work. Ankle reflex implants are subcutaneous and invisible, but may create slight micro-movements in his lower legs when he's alert.",
+    "posture_movement": "Moves with economical grace through crowds and corridors, weight balanced on the balls of his feet as if perpetually ready to change direction. Habitually scans rooms for exits and sight lines. Fast twitchy movements when nervous or in transit; can appear jittery under pressure. Favors doorways and wall positions in conversation.",
+    "clothing_style": "Tier 4 casual: worn synthweave jacket in charcoal gray with internal pockets for slips and currency bundles, loose thermal underlayer, cargo pants with reinforced pockets, scuffed low-profile runners. Nothing that marks him as wealthy or corpo — everything is functional, easily replaceable, designed not to snag or impede movement. Carries a messenger bag, nondescript dark fabric, worn soft from use."
+  },
+  "image_prompt": "19-year-old Polynesian-Ghanaian male, slight wiry build, 168cm tall, sharp angular face with broad jaw, chaotic shoulder-length coily black hair, striking modded eyes with rippling tide-pattern blue-green irises, thin scar across left eyebrow. Wearing worn gray synthweave jacket and cargo pants, standing in a dimly lit maintenance corridor in a cyberpunk lower-tier city district, neon reflected off wet concrete, ready to move, haunted and alert, photorealistic cyberpunk style, moody atmospheric lighting, shallow depth of field, gritty urban dystopia, realistic human skin texture, cinematic --ar 2:3 --v 6"
 }

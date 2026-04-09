@@ -226,5 +226,25 @@
     "Copper",
     "Pellucid Systems"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "East African / Malagasy",
+    "height_cm": 168,
+    "weight_kg": 52,
+    "build": "Slight and angular with long limbs; the kind of frame that reads as delicate until you notice the precise musculature of someone who moves with intention",
+    "hair_color": "Black with iridescent color-shifting filaments cycling between indigo and copper",
+    "hair_style": "Voluminous natural, threaded with filaments, worn loose and full around the face",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with geometric concentric geneware patterns in silver and gold overlay",
+    "skin_tone": "Dark amber with warm undertones",
+    "complexion": "High cheekbones, sharp jawline, minimal facial hair; skin is clear and well-maintained with an almost luminous quality; expression tends toward composed watchfulness",
+    "distinguishing_marks": [
+      "Concentric geometric geneware patterns visible in both irises, appearing as nested polygons and rings in metallic silver and gold",
+      "Faint linear scarring along both inner wrists (approximately 8cm each, horizontal, subtle but deliberate-looking) — location suggests old interface insertion points"
+    ],
+    "visible_augmentations": "Patterned geneware irises are immediately striking; the color-shifting hair filaments are noticeable under any light. Subdermal haptic sensors in both palms are invisible but hands move with unusual precision and occasional micro-tremors suggest active interface awareness. No obvious external chrome or armor.",
+    "posture_movement": "Moves with economical precision; stands with weight balanced, minimal wasted motion. Hands are often still or moving in slow, deliberate gestures. Maintains unusual eye contact — the geneware patterns make their gaze feel analytical even when relaxed. Overall impression is of someone listening to something others can't hear.",
+    "clothing_style": "Expensive minimalism: fitted black or deep indigo technical fabrics, usually with subtle tonal seaming. Layered tanks and cropped overshirts in natural fibers (linen, silk-synthetic blend). Tier 2 level pieces from boutique makers — the kind that cost Φ800 but look like they cost Φ80. No visible branding. Favors jewelry that's either completely absent or precisely minimal (single ring, sometimes a thin bracelet with embedded haptic feedback). In evening/DJ context, switches to sleeker silhouettes but maintains the same color palette and price-point philosophy."
+  },
+  "image_prompt": "Portrait of a slender, angular nonbinary person with dark amber skin and a voluminous natural hairstyle threaded with iridescent filaments shifting from indigo to copper. Their eyes are striking: deep brown with geometric concentric geneware patterns in silver and gold. They wear expensive, minimalist black technical clothing with subtle tonal seaming. The background is softly out of focus, cool-toned, suggesting a calibrated neural interface clinic. Soft, directional lighting with no harsh shadows, warm key light from the left. Their expression is composed and watchful, hands visible with precise posture suggesting technical skill. Cyberpunk, near-future luxury, clinical atmosphere with organic warmth. Hyperrealistic. --ar 2:3 --v 6"
 }

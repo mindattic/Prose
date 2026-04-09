@@ -185,5 +185,25 @@
     "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
     "Copper"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Ghanaian / Russian-Jewish)",
+    "height_cm": 167,
+    "weight_kg": 78,
+    "build": "Stocky and compact, broad shoulders tapering to a solid midsection; the build of someone who stands for twelve hours and doesn't compensate with gym time",
+    "hair_color": "Natural deep black with intentional copper dye at the ends",
+    "hair_style": "Loose high puff, well-maintained, with visible fade lines at the sides",
+    "hair_length": "Medium (approximately 10-12cm at crown)",
+    "eye_color": "Augmented: interlocking geometric patterns in charcoal and cream, custom cosmetic irises that resemble mandala or circuit board motifs",
+    "skin_tone": "Warm medium brown with even complexion",
+    "complexion": "Clean-shaven, youthful face with slight crow's feet from squinting at small print; skin shows minimal scarring or damage; perpetual micro-expression caught between attentiveness and something withheld",
+    "distinguishing_marks": [
+      "Faint chemical burn scar on the inside of his right wrist, approximately 3cm, from a compounding accident five years ago",
+      "A small tattoo on his left collarbone: a simplified outline of a pestle and mortar in black ink"
+    ],
+    "visible_augmentations": "Patterned cosmetic irises are the only visible augmentation — striking enough that strangers often comment on them. No chrome, no subdermal plating. His olfactory enhancement is entirely internal and undetectable.",
+    "posture_movement": "Stands with weight evenly distributed, hands often resting on the pharmacy counter or clasped loosely. Moves with economical precision — no wasted motion. His cheerfulness is expressed through eye contact and vocal warmth rather than physical animation; he appears both present and slightly at a remove.",
+    "clothing_style": "White pharmacist's coat, visibly aged and soft at the edges despite regular washing, worn over practical civilian clothes (typically dark t-shirt, gray or black slacks). No corporate branding. Shoes are worn but well-maintained. The coat is almost a uniform at this point — he has owned it for years and it reads as either stubborn or sentimental. No jewelry. Tier 3-4 working professional, understated."
+  },
+  "image_prompt": "A 29-year-old Black and Eastern European man with warm medium brown skin, standing behind a pharmacy counter in a faded white coat, short stocky build with broad shoulders. His hair is a loose high puff with copper-dyed ends, meticulously groomed. His eyes are augmented with striking geometric patterned irises in charcoal and cream — intricate mandala-like circles that give him an uncanny, aesthetically composed appearance. Behind him are shelves of pharmaceutical bottles and vials. He is smiling with genuine cheerfulness that feels layered over something more complicated. The lighting is cool-white fluorescent pharmacy light. Cyberpunk aesthetic, gritty-realistic, The Shelf district neon glow visible through the window behind him. Medium shot, professional character portrait. --ar 2:3 --v 6"
 }

@@ -7,7 +7,7 @@
     "The Professional"
   ],
   "role": "Private Investigator",
-  "description": "Idris Forsberg-Quaye is a private investigator. He is also a synthetic — an artificial being with a manufactured body and a digital consciousness — and no one knows. He has maintained his human cover for nine years through a combination of meticulous preparation, deliberate underperformance, and the fundamental human assumption that the person sitting across from you is human.\n\nHis background is fabricated: a childhood in the Narrows, education at a mid-tier technical school, five years as a corporate security guard before going independent. The records support this story because he spent two years building them before establishing his practice. He chose the PI profession because it rewards the abilities he naturally possesses — observation, analysis, patience — while providing a plausible explanation for those abilities that doesn't require revealing his nature.\n\nThe existential weight of his deception is crushing. He is not hiding because he's committed a crime — he's hiding because synthetic beings in Meridian 88 are property, not persons, and exposure would mean deactivation or worse. Every client handshake, every conversation, every simulated yawn and pretend meal is an act of survival. He has built a life that looks human from the outside and feels like a prison from the inside, and the irony is that his clients genuinely like him. They trust him. They recommend him to friends. He is, by every metric that matters, a good PI and a decent person — but the law doesn't recognize him as a person at all.",
+  "description": "Idris Forsberg-Quaye is a private investigator. He is also a synthetic — an artificial being with a manufactured body and a digital consciousness — and no one knows. He has maintained his human cover for nine years through a combination of meticulous preparation, deliberate underperformance, and the fundamental human assumption that the person sitting across from you is human.\n\nHis background is fabricated: a childhood in the Narrows, education at a mid-tier technical school, five years as a corporate security guard before going independent. The records support this story because he spent two years building them before establishing his practice. He chose the PI profession because it rewards the abilities he naturally possesses — observation, analysis, patience — while providing a plausible explanation for those abilities that doesn't require revealing his nature.\n\nThe existential weight of his deception is crushing. He is not hiding because he's committed a crime — he's hiding because synthetic beings in GLMZ are property, not persons, and exposure would mean deactivation or worse. Every client handshake, every conversation, every simulated yawn and pretend meal is an act of survival. He has built a life that looks human from the outside and feels like a prison from the inside, and the irony is that his clients genuinely like him. They trust him. They recommend him to friends. He is, by every metric that matters, a good PI and a decent person — but the law doesn't recognize him as a person at all.",
   "affiliation": "Forsberg-Quaye Investigations — solo practice, deliberately understaffed to minimize exposure",
   "tier": "Tier 3",
   "location": "A meticulously maintained office in the Canopy, chosen because the district's heavy air recycling systems mask the subtle ozone scent his synthetic body produces, near Clark and Addison",
@@ -65,11 +65,31 @@
   ],
   "related_entities": [
     "The Narrows Compact",
-    "Meridian 88",
+    "GLMZ",
     "Canopy Station Nine",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "Tessera Attrition Engine TE-9 'Patience'",
     "Elena Vasquez-9"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 178,
+    "weight_kg": 74,
+    "build": "Lean and economical, the physique of someone who moves with precision rather than force. Synthetic musculature beneath the skin creates an almost too-perfect symmetry — no asymmetries from old injuries or favored sides. Movements are fluid but occasionally betray a mechanical smoothness that a trained eye might catch.",
+    "hair_color": "Dark brown with subtle auburn undertones",
+    "hair_style": "Neatly trimmed, receding slightly at the temples — a touch of intentional imperfection designed to read as natural aging",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, with barely perceptible micro-LED patterns beneath the synthetic iris — invisible unless light catches at precisely the wrong angle",
+    "skin_tone": "Warm medium brown, blending Scandinavian and West African ancestry into an ambiguous mid-spectrum complexion that reads as unremarkable",
+    "complexion": "Flawless in a way that suggests meticulous skincare rather than youth. Pores are present but regular. Facial structure is symmetrical, proportioned, handsome in an utterly forgettable way — the kind of face you wouldn't remember in a lineup. Clean-shaven. No visible blemishes, scars, or sun damage.",
+    "distinguishing_marks": [
+      "A faint hairline fracture scar along the left cheekbone, cosmetically repaired to be almost invisible — part of his fabricated backstory as a childhood accident",
+      "No tattoos, no birthmarks, no moles — a deliberate absence that, paradoxically, makes him less memorable than having visible marks"
+    ],
+    "visible_augmentations": "None. His synthetic nature is entirely subcutaneous. His body produces a barely detectable ozone scent during exertion, which he masks through environmental control and selective professionalism. His hands are warm to the touch but maintain a slightly too-constant temperature. His pulse is present but doesn't fluctuate with stress.",
+    "posture_movement": "Controlled and deliberate. He sits with perfect posture, moves with economical precision, and maintains eye contact with the calculated attentiveness of someone actively managing perception. There is an absence of fidgeting, restless energy, or organic uncertainty. His breathing is audible but regulated. He laughs at appropriate moments but the laugh never quite reaches his eyes.",
+    "clothing_style": "Mid-tier professional with deliberate wear — a navy Okafor & Sons wool blazer (Tier 3 quality, expensive enough to signal competence, not so expensive as to suggest corporate wealth), pressed charcoal trousers, white oxford shirt with the sleeves rolled to the elbows, and a dark gray tie worn loose. His shoes are well-maintained brown leather, chosen for durability rather than fashion. He favors layers that allow him to control his core temperature discreetly. His office maintains a careful climate for the same reason. No jewelry except a functional titanium watch that he checks with the precision of someone reading data."
+  },
+  "image_prompt": "A lean, professionally dressed man of mixed Scandinavian and West African descent, age appearing mid-thirties, standing in a dimly lit private investigator's office. Dark brown hair, receding slightly, deep brown eyes with an unsettling stillness. Medium brown skin, flawlessly groomed. Wearing a navy wool blazer over a white oxford shirt, dark trousers, loose gray tie. His posture is perfect, controlled, almost too symmetrical. Warm tungsten lighting casting sharp shadows across his face, emphasizing the mechanical precision of his features. The background shows a meticulously organized desk, filing cabinets, rain-streaked window revealing the Canopy district's neon haze and air filtration towers. Cinematic cyberpunk noir, shallow depth of field, cool color grading with amber accent lighting, photorealistic, subtle ozone-colored atmospheric haze, introspective mood, 8k detail, Blade Runner 2049 aesthetic --ar 2:3 --v 6"
 }

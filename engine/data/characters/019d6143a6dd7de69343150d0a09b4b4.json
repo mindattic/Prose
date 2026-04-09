@@ -195,5 +195,25 @@
     "Lazarus LX-2 'Lab Rat'",
     "Hearthstone Firearms Trail-357 'Pathfinder'"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "East Asian / Northern European (surname etymology suggests mixed diaspora lineage — identity deliberately obscured)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean, almost ascetic — the build of someone who forgets to eat during deep work. Minimal muscle mass, efficient frame, suggests long periods of immobility interrupted by brief, precise movement.",
+    "hair_color": "Black with silver-grey streaking at temples — natural aging or intentional styling unknown",
+    "hair_style": "Pulled back severely, functional rather than aesthetic — no ornamentation, minimal maintenance",
+    "hair_length": "Medium, typically secured",
+    "eye_color": "Dark brown, possibly augmented with neural interface hardware (pupil response inconsistent under certain lighting)",
+    "skin_tone": "Pale, cool undertones — consistent with minimal sun exposure and extended periods in shielded environments",
+    "complexion": "Smooth, unmarked face suggesting either exceptional genetics or medical-grade dermal maintenance. Minimal expression lines despite age — either Botox-grade intervention or someone who doesn't move her face much. High cheekbones, sharp jawline, features that read as deliberately neutral.",
+    "distinguishing_marks": [
+      "Faint scarring at left temple, roughly 3cm in length, consistent with surgical intervention — location suggests neural port installation or removal",
+      "Linear burn mark on inner right wrist, thin and precise, suggests accidental contact with industrial equipment or intentional marking"
+    ],
+    "visible_augmentations": "None visible in standard lighting. Suspected subcutaneous neural interface hardware at temples and base of skull (inferred from operational behavior, not confirmed). Possible counter-surveillance augmentation (facial recognition spoofing, thermal masking) — unconfirmed. No visible chrome, no LED optics, no external modifications.",
+    "posture_movement": "When present: extremely economical movement. Minimal fidgeting, minimal gesturing. Sits in positions that suggest long hours of immobility are normal. When forced to move, motion is fluid and precise — no wasted energy. Default resting state appears to be mild dissociation or deep focus.",
+    "clothing_style": "Tier 2-3 functional minimalism: dark hoodies (Nyx-brand, military-grade synthetic fabric), charcoal grey or black utilities. Clothing designed for quick removal or concealment of hardware. No branding beyond utilitarian logos. Footwear: matte-finish tactical boots, kept in pristine condition. One consistent accessory: a faded wrist cuff (origin unknown) with worn embroidery — only personal item ever mentioned. The overall effect is someone dressing for operations, not for visibility."
+  },
+  "image_prompt": "A 35-year-old East Asian-Northern European woman, lean build, pale skin, dark eyes with faint silver streaking in black hair pulled back severely. Angular features, sharp cheekbones, expression of calculated neutrality. Faint scar at left temple. Seated in dark Nyx tactical hoodie and charcoal utilities, hands positioned over a translucent neural interface panel glowing with code. Minimalist aesthetic, cool color grading — blues and blacks dominating. Dim ambient lighting suggesting underground server room or isolated workspace. Subtle thermal distortion around head suggesting counter-surveillance augmentation active. Photorealistic, high contrast, cyberpunk noir mood, forensic precision in detail, --ar 2:3 --v 6"
 }

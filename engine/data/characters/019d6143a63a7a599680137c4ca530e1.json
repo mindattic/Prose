@@ -14,7 +14,7 @@
   "age": 22,
   "status": "active",
   "location": "The Shelf — operates from a rooftop squat above a defunct laundromat, near Ashland and Chicago Ave",
-  "description": "Jinx Alvarado runs packages across jurisdiction lines faster than anyone in Meridian 88 and has the shattered collarbone scars to prove it. Born on the Shelf, raised in the gap between governance tiers, she learned early that speed is the only resource the excluded have that the corps can't buy. She was running messages for local vendors at twelve, crossing into Milwaukee Core at fourteen, and by sixteen she'd built a reputation as the courier you call when the package absolutely has to cross three jurisdictions before the automated surveillance cycle resets.\n\nShe founded Switchback at nineteen with her two closest friends — not out of ambition, but because running alone was getting people killed. The Shelf's courier kids were being picked off by corporate security teams who treated them like vermin in the infrastructure. A crew meant backup, meant overlapping routes, meant someone noticed when you didn't come home. Three years later, Switchback is the Shelf's premier courier operation: small, fast, and just reckless enough to take jobs that the professional crews won't touch.\n\nJinx is small — five-three, wiry, built for rooftops and ventilation shafts. Her hair is cut asymmetrically and changes color with whatever dye is available. She moves constantly — pacing, climbing, balancing on railings. Stillness is an emergency state. Her augmentations are visible: the spring-loaded ankle joints catch light when she runs, and the grip pads on her palms leave faint marks on everything she touches.",
+  "description": "Jinx Alvarado runs packages across jurisdiction lines faster than anyone in GLMZ and has the shattered collarbone scars to prove it. Born on the Shelf, raised in the gap between governance tiers, she learned early that speed is the only resource the excluded have that the corps can't buy. She was running messages for local vendors at twelve, crossing into Milwaukee Core at fourteen, and by sixteen she'd built a reputation as the courier you call when the package absolutely has to cross three jurisdictions before the automated surveillance cycle resets.\n\nShe founded Switchback at nineteen with her two closest friends — not out of ambition, but because running alone was getting people killed. The Shelf's courier kids were being picked off by corporate security teams who treated them like vermin in the infrastructure. A crew meant backup, meant overlapping routes, meant someone noticed when you didn't come home. Three years later, Switchback is the Shelf's premier courier operation: small, fast, and just reckless enough to take jobs that the professional crews won't touch.\n\nJinx is small — five-three, wiry, built for rooftops and ventilation shafts. Her hair is cut asymmetrically and changes color with whatever dye is available. She moves constantly — pacing, climbing, balancing on railings. Stillness is an emergency state. Her augmentations are visible: the spring-loaded ankle joints catch light when she runs, and the grip pads on her palms leave faint marks on everything she touches.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -193,7 +193,7 @@
     "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Variable Impedance Rifle VIR-9 'Switchback'",
     "Shelf Life",
     "The Shelf",
@@ -204,5 +204,28 @@
     "The Milwaukee Core",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Latin American / Eastern European (Alvarado suggests Spanish lineage; mixed GLMZ diaspora background)",
+    "height_cm": 160,
+    "weight_kg": 48,
+    "build": "Wiry and lean with corded muscle from constant rooftop movement. Minimal body fat, defined shoulders and forearms from climbing and grip work. Chest slightly concave from years of navigating tight spaces. Frame built for speed and vertical displacement rather than mass.",
+    "hair_color": "Currently dyed electric violet with black roots showing (rotates through available pigments: cyan, rust, charcoal, white). Natural color appears dark brown.",
+    "hair_style": "Asymmetrical undercut — left side shaved to scalp, right side longer and swept back. Dyed sections often braided or twisted to keep out of her face during movement.",
+    "hair_length": "Short on left, medium on right",
+    "eye_color": "Dark brown with persistent redness around sclera from dust and industrial particulates. No augmented optics visible.",
+    "skin_tone": "Warm medium brown with olive undertones, darkened by sun exposure and outdoor work",
+    "complexion": "Lean facial structure with sharp cheekbones and a small scar bisecting her left eyebrow (impact from a fall at age sixteen). Skin weathered and marked by minor burns, scrapes, and calluses — the wear of someone who climbs for a living. Minimal grooming beyond what's practical; occasionally wears dark eyeliner that doubles as grime camouflage.",
+    "distinguishing_marks": [
+      "Shattered collarbone scars across both shoulders and upper chest — white and irregular from multiple fractures and repairs, most prominent on left side",
+      "Paired parallel scars along her left ribs (impact scar from a ledge fall at age seventeen, roughly 8cm long, slightly depressed tissue)",
+      "Burn scar on right palm (size of a quarter) from a rooftop electrical conduit contact, three years old, faded to pale pink",
+      "Fine network of scar tissue on both palms and fingertips from gecko-grip pads breaking skin during early augmentation integration",
+      "Small tattoo on inner right wrist — simplified geometric route-map design (gift from Switchback crew on nineteenth birthday)"
+    ],
+    "visible_augmentations": "Spring-loaded ankle joints visible as chrome-plated articulation points at the Achilles tendon, catching light when she walks or runs. Grip pads on palms and fingertips appear as faint metallic-gray subdermal mesh with slightly raised texture, most visible when her hands are wet or under harsh light. Grip pads leave faint marks and micro-abrasions on surfaces she grabs.",
+    "posture_movement": "Never truly still — constant low-level motion: weight shifting, fingers tapping, eyes scanning. When standing, she balances on the balls of her feet as if ready to launch. Movement is economical and three-dimensional: she climbs walls as readily as she walks floors. Her gait is quick and choppy, with springy ankle articulation visible on each stride. In moments of genuine rest (rare), she curls into compact positions — crouched on heels, or folded into corners — minimizing her footprint.",
+    "clothing_style": "Tier 4-5 street courier aesthetic. Base layer: fitted black or dark gray synthetic tank top or sleeveless shirt, designed for movement and thermal regulation. Mid-layer: sleeveless tactical vest with numerous pockets for packages, tools, and spare data drives (brands rotate: unlabeled knockoffs, repurposed corpo surplus, homemade patches). Pants: dark, reinforced synthetic cargo pants or climbing tights with grip-friendly surfaces and zip-off lower legs. Footwear: custom-modified sneakers with reinforced ankle collars and extra traction pads to complement her augmented joints. Jacket (worn): oversized surplus military-grade windbreaker with reflective strips removed to reduce visibility, covered in patches and crude graffiti tags from the Shelf. Accessories: minimalist — worn paracord wristband, encrypted thumb drive on a lanyard, no jewelry. Colors are muted and functional (blacks, grays, dark greens) with occasional neon accents (dyed hair, reflective patch work) for crew identification."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 22-year-old female courier with electric violet asymmetrical undercut, sharp cheekbones, and dark brown eyes. Wiry athletic build, 5'3\", lean muscle definition. Wearing dark tactical cargo pants and sleeveless black shirt under oversized surplus military jacket with reflective patches. Visible chrome spring-loaded ankle joints catch light. Metallic-gray gecko-grip pads visible on palms and fingertips. Shattered white collarbone scars across shoulders and upper chest. Small geometric tattoo on inner wrist. Standing in dynamic balance pose on the edge of a rooftop, urban sprawl of the GLMZ visible in background—industrial buildings, neon signage, surveillance camera rigs. Mood is alert, kinetic energy barely contained. Harsh blue and orange neon lighting, volumetric haze from industrial fog. Gritty street-level cyberpunk aesthetic, Tier 4-5 ungoverned district. Shot from slight low angle emphasizing verticality and readiness. --ar 2:3 --v 6"
 }

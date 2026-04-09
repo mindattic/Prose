@@ -248,5 +248,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Polish-Scandinavian",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Wiry and compact, almost bird-like in frame — minimal body fat, defined forearms from precise repetitive work, hunched slightly forward from years bent over document tables",
+    "hair_color": "Natural black with traces of premature gray at temples",
+    "hair_style": "Wrapped in rotating collection of patterned ankara, kente, and adire cloth; rarely seen uncovered",
+    "hair_length": "Long (shoulder-length when unwrapped)",
+    "eye_color": "Augmented: irises display slow-rotating mandalas in burnt amber and deep violet; sclera unchanged",
+    "skin_tone": "Deep brown with warm undertones characteristic of Yoruba ancestry",
+    "complexion": "Clear but weather-marked by years of chemical exposure; permanent dark staining around nail beds and cuticles from ink; fine creases around eyes from squinting at magnification work; minimal makeup, functional grooming only",
+    "distinguishing_marks": [
+      "Chemical burn scar on the back of her left hand — pale, roughly 4cm across, from early forging accident with solvent",
+      "Microscopic ink tattoo on inner left wrist: a tiny mandala pattern, matching her iris design, approximately 1cm diameter — self-administered and deliberately imperfect as personal critique",
+      "Chronic dark circles beneath eyes from inverted sleep schedule"
+    ],
+    "visible_augmentations": "Iris patterning immediately obvious and striking — mandalas rotate slowly (observable if you watch for 10+ seconds); retinal zoom enhancement visible as occasional subtle pupil dilation/contraction during focus work; micro-tremor suppression invisible but hands never shake regardless of stimulant intake; magnification lenses perpetually pushed up on forehead like a second set of eyes (not technically augmentation but inseparable from her visual signature)",
+    "posture_movement": "Hunched forward slightly, shoulders drawn up — posture of someone who has spent 10,000+ hours bent over detail work; moves with economic precision, no wasted motion; fingers constantly micro-fidgeting (sorting, folding, examining); eye contact uncomfortable and intermittent; speaks in measured, careful tone as if each word is being proofread before utterance",
+    "clothing_style": "Tier 4 utilitarian with deliberate, idiosyncratic flair — black or dark gray fitted cargo pants with excessive pockets and utility loops (filled with tools and sample materials); fitted turtleneck or long-sleeve shirt in dark colors (hides ink stains); layered grey linen overshirt or modified lab coat with custom interior pockets; steel-toed work boots broken in to perfect fit; collection of multi-patterned wraps in vibrant West African textiles that serve as both headwear and occasional statement against the monochromatic workspace; fingerless gloves when handling sensitive documents; no jewelry except a single silver thumb ring inherited from her mother"
+  },
+  "image_prompt": "A 31-year-old West African woman with deep brown Yoruba skin, wiry athletic frame, wearing a dark fitted turtleneck and layered grey linen overshirt with utility pockets, steel-toed work boots; wrapped head in vibrant ankara textile pattern; striking feature: irises displaying slow-rotating geometric mandalas in burnt amber and deep violet that glow subtly; magnification lenses pushed up on forehead; hands stained with permanent ink marks, fingers frozen mid-gesture; intense, focused expression with uncomfortable eye contact; hunched posture of precision craftsperson; cyberpunk document forger in basement workspace, cool LED work-lamp lighting casting sharp shadows across detailed technical environment, moody amber and violet color grading, photorealistic with subtle digital artifact suggesting retinal enhancement tech, high detail on iris patterns and hand staining --ar 2:3 --v 6"
 }

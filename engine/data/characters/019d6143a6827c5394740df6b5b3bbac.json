@@ -226,5 +226,26 @@
     "Cavitation Pulse Carbine CPC-2 'Bends'",
     "The Pale Mile"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Hungarian",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, muscular through the arms and back from decades of precision blade work. Carries weight with the settled confidence of someone past the age of proving anything to anyone.",
+    "hair_color": "Natural silver-grey",
+    "hair_style": "Close-cropped with geometric precision — lines sharp enough to suggest machine work, maintained with ritualistic care",
+    "hair_length": "Short (approximately 1cm uniform length)",
+    "eye_color": "Deep amber (natural), with cosmetic sunflower-pattern irises that appear to bloom/shift with mood and light",
+    "skin_tone": "Warm brown — medium-deep complexion with underlying reddish undertones",
+    "complexion": "Weathered in the specific way of someone who has worked under bright task lighting for five decades. Minimal makeup. Laugh lines around the eyes and mouth suggest frequent, genuine amusement. Skin condition is clean and well-maintained, grooming meticulous.",
+    "distinguishing_marks": [
+      "Pale keloid scarring mapping both forearms in organic linear patterns — legacy of factory accident approximately twenty years prior",
+      "Knuckle scars on both hands — decades of precision work and minor cuts from blade discipline",
+      "Small surgical scars at the base of the left hand where prosthetic fingers interface with remaining bone and tissue"
+    ],
+    "visible_augmentations": "Left hand, ring and pinky fingers replaced with matte-black polymer prosthetics — high-precision engineering with articulated joints. The prosthetics are deliberately visible, unmarked by chrome shine or aesthetic fakery. Cosmetic iris implants with sunflower-pattern pigmentation that shifts subtly with pupil dilation and emotional state.",
+    "posture_movement": "Stands with weight evenly distributed, shoulders back but not rigid. Moves with deliberate economy — no wasted motion. Hands move with the precision of someone who has spent 50 years handling sharp tools; even idle hand movements have a quality of controlled grace. Her gaze is steady and unhurried. When listening, she is still.",
+    "clothing_style": "Consistent daily uniform: Heavy-duty canvas work apron (cream or pale grey, always clean), sleeves of whatever shirt she wears underneath rolled precisely to the elbow. Practical Tier 3 workwear — durable, functional, no corporate branding. Copper pendant of Ogun worn on a simple cord, touched before each cut as ritual. Comfortable work shoes, worn but maintained. No jewelry beyond the pendant and a single thin wedding band (worn on right hand)."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 52-year-old Black woman with sharp silver-cropped hair cut with geometric precision, warm brown skin with pale keloid scarring on forearms, deep amber eyes with sunflower-pattern cosmetic irises. Left hand features two matte-black polymer prosthetic fingers with visible articulated joints. She wears a clean canvas work apron with sleeves rolled to elbows, copper Ogun pendant on cord, expression calm and perceptive. Standing in modest barber shop lit by warm industrial task lights, hands relaxed at sides with characteristic stillness. Gritty Hamtramck Enclave background, weathered and lived-in. High detail, grounded realism, slight warm color cast, professional character study lighting, neon signage visible in background reflection --ar 2:3 --v 6"
 }

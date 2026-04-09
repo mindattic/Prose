@@ -253,5 +253,26 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Rust"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Nigerian / Russian-Jewish)",
+    "height_cm": 174,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, with a powerlifter's frame running slightly toward stockiness; strong through the core and upper body, suggesting decades of carrying equipment and moving through difficult terrain",
+    "hair_color": "Deep black with silver-white streaking throughout, deliberately maintained",
+    "hair_style": "Closely cropped, precision-cut, functional",
+    "hair_length": "Short",
+    "eye_color": "Geneware-patterned irises shifting between amber and rust-red depending on light and mood",
+    "skin_tone": "Deep brown with warm undertones, unmarked and well-maintained",
+    "complexion": "Angular facial structure with a squared jaw and high cheekbones; minimal cosmetic intervention; skin shows sun exposure from fieldwork but no visible scarring; expression lines around the eyes from squinting at maps and taking notes",
+    "distinguishing_marks": [
+      "Faint surgical scar at the base of her right temple, roughly 2cm, from neural lace installation—visible only when hair is swept back",
+      "Thin whitened lines on both index and middle fingertips from repeated haptic feedback calibration sessions, barely noticeable unless examined closely",
+      "No tattoos; the silver hair is her chosen permanent marker"
+    ],
+    "visible_augmentations": "Eyes are clearly modified—the patterned iris geometry catches light unnaturally, shifting color. No external chrome or subdermal plating visible; augmentations are subcutaneous or ocular only. The fingertip scarring hints at sensory mods to those who know what to look for.",
+    "posture_movement": "Upright and deliberate, rarely at rest; constantly mentally rotating spatial geometry even while sitting. Moves with precision economy—no wasted motion, but not tense. Her hands are always doing something: gesturing to describe building layouts, manipulating imaginary topography in the air, reaching for data wafers. She leans in when listening to people, a studied habit that makes informants feel heard.",
+    "clothing_style": "Tier 3-4 field practical: reinforced cargo jacket (Tessera-branded, three years old, meticulously maintained), moisture-wicking undershirt, heavy canvas trousers with oversized thigh and cargo pockets, ankle-height tactical boots rated for water ingress. Layers vary by season but always include at least one vest with internal padding for sensor arrays. Her watch is a ruggedized research-grade unit with mapping overlay. Worn leather satchel, university-issued, packed with survey equipment. Everything is well-used but not shabby—maintained like tools that matter."
+  },
+  "image_prompt": "Rukayat Sobolev-Faleata, 41-year-old woman with deep brown skin and close-cropped silver-streaked black hair, strong broad shoulders and angular face, wearing reinforced cargo jacket and tactical field vest covered in pockets and sensor arrays, standing with precise posture in an urban planning office surrounded by topographic displays and flooded settlement maps, geneware patterned irises glowing amber-to-rust red, holding a collapsible survey drone the size of her fist, morning sunlight streaming through windows overlooking the GLMZ sprawl, cool professional lighting with slight cyan-tinted data overlay visible in the background, cyberpunk academic aesthetic, documentary realism, sharp focus on her eyes and hands, atmospheric but grounded, no exaggeration --ar 2:3 --v 6"
 }

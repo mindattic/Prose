@@ -61,7 +61,7 @@
     "A set of sequence records she has been working on for a year has been quietly reclassified as Helix proprietary data; the university's legal team says there's nothing they can do",
     "She is offered an early promotion and a lab of her own — contingent on transferring her current recovery projects to Helix's internal archive team"
   ],
-  "narrative_function": "Specialist resource for biological and genetic information; potential discoverer of sequences that have been deliberately archived or suppressed; represents the stakes of what is being lost in Meridian 88's frantic present; character in plots involving Helix Biosystems or genetic data; humanizes scientific work through emotional honesty about what the records mean.",
+  "narrative_function": "Specialist resource for biological and genetic information; potential discoverer of sequences that have been deliberately archived or suppressed; represents the stakes of what is being lost in GLMZ's frantic present; character in plots involving Helix Biosystems or genetic data; humanizes scientific work through emotional honesty about what the records mean.",
   "augmentations": "Patterned irises (violet sunburst, chosen cosmetic). Bioluminescent freckle pattern (unintended side effect of UV-response research modification). Fine motor enhancement in both hands (research grant-funded, precision sequencing work). Personal biosample filtration implant (standard lab worker safety equipment).",
   "daily_life": "Morning: sample processing and sequence recovery in the lab. Afternoon: contextualization work — historical ecology, provenance research, documentation. Most evenings: reading. She is extremely well-read and considers it part of her job.",
   "affiliation": "University Spine — Molecular History and Heritage Laboratory; contractually adjacent to Helix Biosystems, whose building they share and whose motives she monitors carefully",
@@ -286,5 +286,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Polish / Polynesian / mixed European-Pacific",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Slight and compact, lean muscle from precise repetitive work rather than athletics. Economy of movement suggests someone built for small spaces and lab benches.",
+    "hair_color": "Dark brown with subtle auburn undertones in direct light",
+    "hair_style": "Practical, usually worn in a low bun or secured with lab clips; occasionally loose to shoulder length",
+    "hair_length": "Medium",
+    "eye_color": "Deep violet with radial sunburst fracture patterns (chosen cosmetic iris modification at age 19)",
+    "skin_tone": "Warm olive-brown, tan-prone, with the even complexion of someone careful about UV exposure",
+    "complexion": "Clean-lined face with wide cheekbones and a long, straight nose. Skin is clear and well-maintained. Distinctive pattern of bioluminescent freckles across nose and cheekbones — faint warm blue-green glow visible in low light, remnant of unreverted UV-response genetic modification.",
+    "distinguishing_marks": [
+      "Bioluminescent freckle constellation across nose and upper cheekbones, glows faintly in ambient darkness (side effect of experimental research modification)",
+      "Faint scarring on inside of left wrist from biosample filtration implant installation",
+      "Small precision-work calluses on fingertips of both hands"
+    ],
+    "visible_augmentations": "Patterned violet iris modifications clearly visible. Bioluminescent freckles glow subtly in low light. No visible chrome or external hardware — all augmentations are subcutaneous or cosmetic.",
+    "posture_movement": "Precise, economical movements with focus in the hands. When standing, slight forward lean as if about to move to the next task. When concentrating, becomes very still. Quick and efficient gait, rarely wastes motion.",
+    "clothing_style": "Tier 2-3 practical elegance. Lab coat (University Spine branded, well-maintained) worn over neutral base layers. Favors dark colors and breathable fabrics suitable for long lab hours. Wears a thin ceramic-composite bracelet (heritage piece or personal memento, worn constantly). Minimal jewelry beyond augmented irises. Footwear is quiet and grip-focused (lab safety + personal preference). Overall appearance reads as 'seriously competent twenty-something academic who has made peace with her own intensity.'"
+  },
+  "image_prompt": "Portrait of a 28-year-old woman with Polish-Polynesian heritage, slight compact build, warm olive-brown skin. Wide cheekbones, long straight nose. Deep violet eyes with radial sunburst fracture patterns (cosmetic iris mod). Dark brown hair secured in a practical bun. Distinctive bioluminescent freckles glowing faintly across nose and cheekbones in a cool blue-green tone. Wearing a crisp University Spine lab coat over dark base layers. Precise, focused expression. Precise hands visible. Soft overhead lab lighting with subtle glow from freckle pattern. Sharp focus, scientific/academic atmosphere, cyberpunk-adjacent near-future setting, 2226 era. Depth of field emphasizing face and hands. Cool color palette with warm skin tones. Professional portrait style. --ar 2:3 --v 6"
 }

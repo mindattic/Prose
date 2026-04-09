@@ -29,7 +29,7 @@
       "That the work they do makes the city worse, not better"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "A crew worth trusting — people who stay when the shooting starts",
       "To matter to someone for who they are, not what they can do"
     ],
@@ -291,5 +291,27 @@
     "Slagworks Industrial",
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Scandinavian / East African",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and wiry with defined musculature from climbing work and military conditioning. No excess body fat. Shoulders broad relative to frame from years of rope work and augmentation weight distribution.",
+    "hair_color": "Platinum blonde with dark roots showing — deliberately maintained, not dyed often",
+    "hair_style": "Pulled back in a tight braid, practical and clean",
+    "hair_length": "Long — past shoulders when unbound",
+    "eye_color": "Steel gray, natural",
+    "skin_tone": "Fair with warm undertones, sun-darkened around the neck and forearms from rooftop work",
+    "complexion": "Sharp cheekbones, narrow nose, angular jawline. Skin is clear but marked by the lifestyle — small scars at knuckles from combat training, faint lines around eyes from nocturnal living and squinting at screens.",
+    "distinguishing_marks": [
+      "Ragged scar across left palm, webbed between thumb and forefinger — from a climbing accident at age 16, before the gecko implants",
+      "Burn mark on right collarbone, thumb-sized, pale and old — classified incident during private security service",
+      "Tattoo on left inner forearm: simple circuit board pattern in matte black ink, clean lines, military-precise",
+      "Fine white scar along right temple, almost hidden by hairline — shrapnel or blade work, never clarified"
+    ],
+    "visible_augmentations": "Right arm is full chromatic replacement from shoulder to fingertips — brushed steel and darker composite polymer, slightly more defined musculature than biological left. The joints are precise, no servo whine. Fingertips show the gecko-grip pads: microfilamented polymer in matte black, visible as a subtle texture difference. Toe pads create small bulges in boots but are not obvious unless she's barefoot.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight balanced forward on the balls of her feet, ready to shift. Climbs with predatory fluidity, three-limb method when using chrome. Eyes rarely settle; constant environmental scanning. Handshake is firm and brief. Smiles infrequently but genuinely when she does.",
+    "clothing_style": "Tier 3-4 practical: black synthetic-weave climbing pants with reinforced knees and cargo pockets, a fitted gray thermal under a matte-black sleeveless technical vest with webbing and tool loops. Boots are aggressive — grippy soles, ankle support, scuffed from real use. Gloves are fingerless tactical leather, reinforced at knuckles, worn. A faded Geartown Municipal patch on her vest — ironic or genuine is unclear. One silver chain around her neck, military-issue dog tag aesthetic but blank. No jewelry beyond function."
+  },
+  "image_prompt": "Cyberpunk rigger woman, Scandinavian-East African heritage, platinum blonde braid, steel gray eyes, sharp angular features, 20 years old, lean muscular build. Full chromatic right arm replacement in brushed steel and black polymer from shoulder to hand, gecko-grip pads visible on fingertips. Wearing black tactical climbing pants, gray thermal undershirt, matte-black technical vest with webbing, fingerless leather gloves, aggressive grip boots. Standing on elevated Canopy walkway at night, neon glow from Geartown below, rain-slicked surfaces, three-limb climbing stance ready. Precise military-trained posture, environmental awareness in eyes. Dark moody lighting, cyberpunk aesthetic, photo-realistic, film noir color grading with neon blues and ambers --ar 2:3 --v 6"
 }

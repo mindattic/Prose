@@ -250,5 +250,25 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East African / Romanian",
+    "height_cm": 173,
+    "weight_kg": 68,
+    "build": "Lean and economical, no excess — the body of someone who has never needed to prove his strength. Wiry rather than muscular, with the posture of a man comfortable in stillness.",
+    "hair_color": "White with faint traces of salt-and-pepper gray at the temples",
+    "hair_style": "Neatly parted, close to the scalp, combed back with precision",
+    "hair_length": "Short",
+    "eye_color": "Modified — concentric rings of amber and brown (geneware iris modification), with darker brown natural iris at the center. The rings create an optical illusion of being constantly observed.",
+    "skin_tone": "Warm brown, sun-weathered, with the even coloration of age and consistent climate",
+    "complexion": "Clean-shaven except for a close-trimmed white beard, about 5mm length, carefully maintained. Fine lines around the eyes and mouth. Skin clear, well-hydrated, without blemish or visible scarring. Expression naturally inclined toward interest and mild amusement.",
+    "distinguishing_marks": [
+      "Small, faded scar above the left eyebrow, approximately 2cm, possibly decades old and nearly invisible",
+      "A thin, pale line running along the right inner forearm where the subdermal transaction ledger implant sits beneath the skin — visible only as a slight discoloration, barely noticeable"
+    ],
+    "visible_augmentations": "The iris geneware is immediately visible in direct light; the concentric ring pattern is unmistakable and deliberate. The subdermal ledger implant is not visible unless he rolls up his right sleeve, and he rarely does. He wears it as a small badge of old-fashioned authenticity.",
+    "posture_movement": "Sits still for long periods without fidgeting. Moves with economy — no excess motion, no nervous habits. His hands are always visible and usually at rest on the counter or in his lap. When he walks, his stride is measured and unhurried. He listens more than he speaks, and his body language communicates patient attention rather than impatience.",
+    "clothing_style": "Clean, worn shirts in earth tones — ochre, rust, pale brown, sometimes cream. The fabric shows age but is meticulously maintained: no stains, no tears, pressed and orderly. Occasionally a linen vest in a neutral color. Dark trousers, probably black or dark gray, simple cut. No logos, no corporate branding, no tier-markers. His clothes suggest deliberate de-escalation: nothing that announces wealth, status, or threat. Worn leather sandals or simple canvas shoes. A small wristwatch with a mechanical face — analogue, no smart features. One thin gold ring on his left hand, marriage band or purely sentimental. In Tier 5 terms, he dresses like someone who has chosen simplicity, not someone who cannot afford better."
+  },
+  "image_prompt": "Portrait of a 54-year-old East African-Romanian man with lean frame, close-trimmed white beard, and warm brown skin. Distinctive modified eyes with concentric amber and brown iris rings. Wearing a clean, worn earth-tone linen shirt, hands visible and calm on wooden counter. Behind him, a small potted succulent plant and shelves of tea packages. Soft morning light from a tea shop window, warm and diffused. Expression of genuine, patient interest. Cyberpunk noir aesthetic, low-key and understated, no neon or chrome. Photorealistic, detailed, intimate portrait lighting. Set in a cramped Tier 5 shop interior with worn wood and practical furnishings. --ar 2:3 --v 6"
 }

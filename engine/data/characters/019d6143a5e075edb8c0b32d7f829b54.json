@@ -14,7 +14,7 @@
   "age": 34,
   "status": "active",
   "location": "Western border — bunks at the farmstead but spends most of his time in the field",
-  "description": "Cutter Vane has killed more Behemoths than anyone currently operating on M88's western border. Not the most ever — that record belongs to a Gleaner named Doss who went out eleven years ago and did not return — but the most among the living. The count is fourteen confirmed kills over nine years of Gleaner operations. Each one was a disaster. Behemoths don't die clean. They die loud, they die thrashing, and killing one attracts others. Every kill on Cutter's count represents a raid that went wrong enough to require lethal force, which means every kill represents a failure he survived.\n\nHe grew up on the western edge — the border communities where Meridian 88's governance dissolves into the contested Iowa corridor. He joined the Gleaners at seventeen because the alternative was starving slowly in a community that couldn't feed itself. Madre found him two years later, already good with a rifle, already hard in ways that seventeen-year-olds shouldn't be. She trained him, kept him alive, and watched him become the most effective field operative she'd ever worked with. She also watched him become colder with each raid, and that's the part that keeps her up at night.\n\nCutter is lean, angular, sun-damaged, with the permanent squint and wind-scoured features of someone who has spent too much time exposed to the Iowa prairie. He moves with the economy of a predator — no wasted motion, constant awareness, an animal stillness when he's watching something. His eyes are the most unsettling thing about him — pale, steady, and focused in a way that makes people feel like terrain being assessed.",
+  "description": "Cutter Vane has killed more Behemoths than anyone currently operating on M88's western border. Not the most ever — that record belongs to a Gleaner named Doss who went out eleven years ago and did not return — but the most among the living. The count is fourteen confirmed kills over nine years of Gleaner operations. Each one was a disaster. Behemoths don't die clean. They die loud, they die thrashing, and killing one attracts others. Every kill on Cutter's count represents a raid that went wrong enough to require lethal force, which means every kill represents a failure he survived.\n\nHe grew up on the western edge — the border communities where GLMZ's governance dissolves into the contested Iowa corridor. He joined the Gleaners at seventeen because the alternative was starving slowly in a community that couldn't feed itself. Madre found him two years later, already good with a rifle, already hard in ways that seventeen-year-olds shouldn't be. She trained him, kept him alive, and watched him become the most effective field operative she'd ever worked with. She also watched him become colder with each raid, and that's the part that keeps her up at night.\n\nCutter is lean, angular, sun-damaged, with the permanent squint and wind-scoured features of someone who has spent too much time exposed to the Iowa prairie. He moves with the economy of a predator — no wasted motion, constant awareness, an animal stillness when he's watching something. His eyes are the most unsettling thing about him — pale, steady, and focused in a way that makes people feel like terrain being assessed.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -196,7 +196,7 @@
     "Crucible Industries Talon-5 'Jackknife'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Eastline",
     "The Nearfield",
     "Flicker",
@@ -208,5 +208,27 @@
     "Elena Vasquez-9",
     "Weathervane"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "Anglo-American / Northern European (prairie settler lineage)",
+    "height_cm": 182,
+    "weight_kg": 74,
+    "build": "Lean and angular with corded muscle concentrated in shoulders and forearms — the build of someone who carries weight efficiently and rarely carries excess. Decades of field work have stripped him down to functional mass.",
+    "hair_color": "Dusty brown, sun-bleached toward blonde at the tips",
+    "hair_style": "Pulled back tight or shaved short; utilitarian, never styled",
+    "hair_length": "Short",
+    "eye_color": "Pale ice-blue with visible augmentation circuitry at the iris margins — targeting calculations flicker behind the pupil in low light",
+    "skin_tone": "Weathered tan with the papery, sun-damaged quality of someone who spent formative years on open prairie",
+    "complexion": "Angular face with high cheekbones and a sharp jawline. Permanent squint lines radiate from the corners of his eyes. Several thin scars bracket his left eye and temple. His skin has the texture of someone who doesn't moisturize and spends too much time in wind. No facial hair — he shaves every morning without fail.",
+    "distinguishing_marks": [
+      "Thin scar running from left temple to cheekbone, approximately 8cm, slightly lighter than surrounding skin — old knife wound from raid gone wrong",
+      "Burn scars across the back of both hands — pale, irregular patches from Behemoth thermal discharge encounter",
+      "Constellation of small white scars along his collarbone and upper chest visible when he removes his shirt — shrapnel from an IED cache during early Gleaner years",
+      "No tattoos. Cutter does not mark his skin for aesthetics."
+    ],
+    "visible_augmentations": "Faint silver circuitry visible at the outer corners of both eyes when light hits them at certain angles. When engaged in targeting, his pupils dilate unnaturally and a barely-perceptible luminescence traces patterns across his sclera. No external chrome — all augmentations are subcutaneous or internal. His arms and shoulders move with mechanical precision that reads as inhuman economy of motion rather than visible robotics.",
+    "posture_movement": "Moves with absolute stillness when stationary — predator at rest. When mobile, every motion is economical and purposeful; no fidgeting, no nervous tics. He walks with his weight forward slightly, balanced for immediate action. His head moves constantly in small increments, scanning. When sitting, he positions himself facing entry points and with sightlines to exits. He does not relax.",
+    "clothing_style": "Tier 4 field operative standard — weathered reinforced canvas cargo pants, insulated tactical boots with good tread, layered synthetic underlayers. Over this: a faded Gleaner-issue grey-green combat jacket with reinforced shoulders and multiple weapon/tool attachment points. The jacket has been patched and re-patched. He wears a simple nylon neck gaiter for dust and sun protection. A worn black baseball cap, brim curved from years of wear. No jewelry, no status symbols, nothing that doesn't serve function. Everything is worn, maintained, and replaced only when it fails. His gear smells like gun oil, sweat, and prairie dust."
+  },
+  "image_prompt": "Lean 34-year-old male tracker and combat specialist with sun-weathered angular face, pale ice-blue eyes with faint silver augmentation circuitry at iris margins, dust-brown hair pulled back tight, permanent squint lines, thin scar running left temple to cheekbone. Wearing faded reinforced grey-green combat jacket with weapon attachment points, cargo pants, insulated tactical boots, worn black baseball cap. Standing in absolute stillness with predatory focus, body balanced for immediate action, cold hard gaze assessing terrain. Prairie background, harsh daylight, wind-scoured aesthetic, no emotion in expression. Cyberpunk military specialist, Gleaner operative, Iowa borderlands. Hyper-detailed realistic portrait photography, weathered and austere --ar 2:3 --v 6"
 }

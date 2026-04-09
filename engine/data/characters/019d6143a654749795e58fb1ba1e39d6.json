@@ -13,7 +13,7 @@
   "age": 68,
   "status": "active",
   "location": "The Garret, a small apartment above a tea house in Edgewater Prism, near Lincoln and Belmont",
-  "description": "Margarethe is a small, upright woman with Namibian-Peruvian heritage evident in her high forehead, deep brown skin, and strong jaw — a face that was striking at thirty and has become architectural at sixty-eight. She wears her white hair pulled back severely and dresses in layers of dark fabric regardless of the season, and the only augmentation visible on her is the faint silver tracery of an old neural text-interface along her left temple, a model so outdated it hasn't been manufactured in thirty years. She moves slowly and deliberately and has the particular stillness of someone who learned long ago that most things do not require urgent response.\n\nShe has published eleven collections of poetry and three novels over forty years, all of them in small runs through independent presses, all of them still in print. She is considered by the underground literary community of Meridian 88 to be among the most significant living writers in the city — a distinction that has brought her no money and considerable quiet satisfaction. She teaches informal writing workshops at The Loft twice weekly, charges nothing, accepts voluntary contributions of food and tea, and is ferociously exacting with her students. She has strong opinions about nearly everything and shares them precisely once per conversation, then considers the matter closed.",
+  "description": "Margarethe is a small, upright woman with Namibian-Peruvian heritage evident in her high forehead, deep brown skin, and strong jaw — a face that was striking at thirty and has become architectural at sixty-eight. She wears her white hair pulled back severely and dresses in layers of dark fabric regardless of the season, and the only augmentation visible on her is the faint silver tracery of an old neural text-interface along her left temple, a model so outdated it hasn't been manufactured in thirty years. She moves slowly and deliberately and has the particular stillness of someone who learned long ago that most things do not require urgent response.\n\nShe has published eleven collections of poetry and three novels over forty years, all of them in small runs through independent presses, all of them still in print. She is considered by the underground literary community of GLMZ to be among the most significant living writers in the city — a distinction that has brought her no money and considerable quiet satisfaction. She teaches informal writing workshops at The Loft twice weekly, charges nothing, accepts voluntary contributions of food and tea, and is ferociously exacting with her students. She has strong opinions about nearly everything and shares them precisely once per conversation, then considers the matter closed.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -59,7 +59,7 @@
     "A former student she mentored thirty years ago has resurfaced — they became a corporate speechwriter for Axiom, which Margarethe considers an unforgivable betrayal — and they are asking for her help with something that might actually matter",
     "Her neural interface is failing and the only remaining technician who knows the obsolete architecture is asking an unusual price for the repair"
   ],
-  "narrative_function": "Sage and knowledge repository — forty years of observation of Meridian 88's underground culture; her writing sometimes encodes information about events she witnessed that others want suppressed; quest giver when a former student needs help",
+  "narrative_function": "Sage and knowledge repository — forty years of observation of GLMZ's underground culture; her writing sometimes encodes information about events she witnessed that others want suppressed; quest giver when a former student needs help",
   "augmentations": "Outdated neural text-interface (left temple, silver tracery — allows direct text composition via thought, though the latency is now significant and she considers it a feature); no other modifications — she considers the body's natural aging a document worth preserving",
   "daily_life": "Rises before dawn to write for three hours without interruption; spends late morning at the tea house below reading and conducting correspondence; workshops at The Loft on Tuesday and Thursday evenings; sleeps early.",
   "affiliation": "Independent; The Loft writing community; informal mentor to several younger writers; occasional contributor to the encrypted literary journal 'Null Margin'",
@@ -234,7 +234,7 @@
     "The Third Rail",
     "Edgewater Prism",
     "The Witnesses of the Last Upload",
-    "Meridian 88",
+    "GLMZ",
     "The Garret",
     "The Heritage Vault",
     "The Loft",
@@ -242,5 +242,24 @@
     "Silver",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Namibian / Peruvian",
+    "height_cm": 157,
+    "weight_kg": 52,
+    "build": "Small-framed and upright with the spare musculature of someone who moves deliberately and economically; no excess weight, posture maintained through discipline rather than youth",
+    "hair_color": "White",
+    "hair_style": "Pulled back severely, likely secured with a simple clasp or tie",
+    "hair_length": "Long",
+    "eye_color": "Deep brown",
+    "skin_tone": "Deep brown with warm undertones characteristic of Namibian-Peruvian lineage",
+    "complexion": "Architectural face with high forehead, strong jaw, and pronounced cheekbones; skin shows age honestly — fine lines mapping decades of thought and expression; minimal cosmetic maintenance; dignified rather than polished",
+    "distinguishing_marks": [
+      "Faint silver tracery of neural text-interface running along left temple in an outdated geometric pattern, approximately 8 centimeters in length, barely visible unless light catches it directly"
+    ],
+    "visible_augmentations": "Only the legacy neural text-interface on left temple; no chrome, no LEDs, no subdermal armor — deliberately minimal modification",
+    "posture_movement": "Moves slowly and deliberately with the economy of motion belonging to someone past sixty who has learned that urgency is rarely justified; carries herself with unshakeable verticality; her stillness is intentional and grounded, suggesting patience rather than stiffness",
+    "clothing_style": "Layers of dark fabric regardless of season — charcoal, deep gray, black; likely natural fibers (cotton, linen, wool) worn for texture and durability rather than status; structured but not fashionable; Tier 3-4 practicality with an intellectual's indifference to trend; age-appropriate without concession to diminishment; small silver jewelry, if any"
+  },
+  "image_prompt": "Portrait of Margarethe Zuberi-Quispe, a 68-year-old woman with Namibian-Peruvian heritage, deep brown skin, high forehead, strong jaw, white hair pulled back severely; wearing layered dark charcoal and black fabrics in loose, architectural draping; faint silver tracery of outdated neural text-interface visible along left temple catching soft light; sitting upright with deliberate stillness and dignified posture; background showing a small apartment interior with books, tea, pre-dawn light filtering through worn windows; warm but muted color palette emphasizing age and intellectualism over augmentation; cyberpunk literary aesthetic; realistic aging, no beauty filters; shot in natural light suggesting early morning; contemplative, unflinching gaze; --ar 2:3 --v 6"
 }

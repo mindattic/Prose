@@ -186,5 +186,26 @@
     "The Pale Mile",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Polish / West African / Russian",
+    "height_cm": 168,
+    "weight_kg": 71,
+    "build": "Lean and compact, softened by age but not frail — the build of someone who has spent decades in small spaces and does not take up room unnecessarily. Shoulders slightly rounded from posture. Hands are surprisingly steady and fine-boned.",
+    "hair_color": "Silver-grey",
+    "hair_style": "Close-cropped, neatly maintained despite circumstances",
+    "hair_length": "Short",
+    "eye_color": "Pale grey-green, alert and diagnostic",
+    "skin_tone": "Grey-brown, desaturated by decades of sub-level fluorescent lighting and poor ventilation",
+    "complexion": "Weathered but clean. Fine creases around the eyes from squinting at small text. The beard is full but trimmed short, entirely silver. Skin has a slightly papery texture from age and dehydration common to Deepwell residents. No visible acne or lesions.",
+    "distinguishing_marks": [
+      "Faint chemical burn scar on the inner left forearm, approximately 8cm long, white and old — from a laboratory incident circa 2195.",
+      "Small dark mole on his right temple, unremarkable.",
+      "Thin white scar along the edge of his right hand, webbing between thumb and index finger — a cut from broken glass, long healed."
+    ],
+    "visible_augmentations": "Clip-on lens augmentations worn over his natural eyes — simple frames with faintly luminescent optical lenses, magnification evident in the slight magnified appearance of his eyes when he wears them. The clips are utilitarian, brass-colored, and show wear. The hepatic filter implant is subcutaneous and invisible, but he sometimes touches the left side of his abdomen absently, a habit that suggests its presence.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Sits slightly forward, shoulders tensed as if ready to engage. His hands are always doing something: sorting, checking labels, organizing. He walks slowly but with purpose. His gaze is diagnostic; he looks at people the way he looks at compounds — carefully reading what they are made of.",
+    "clothing_style": "Dark thermals in black or deep grey, layered. A long coat of heavy synthetic fabric in charcoal, unbranded, worn but meticulously maintained. The coat has at least fifteen internal pockets of varying sizes, all occupied. No visible logos or tier indicators. Scuffed black synthetic boots, practical and resoled multiple times. A thin silver chain around his neck with no pendant — the pendant was removed years ago. Clothing is Tier 4 / sub-grade, practical and invisible, designed not to draw attention."
+  },
+  "image_prompt": "A weathered grey-haired man in his early sixties with pale grey-green eyes, wearing clip-on magnification lenses, grey-brown skin softened by decades of fluorescent lighting. Short silver beard, lean compact build. Dressed in dark thermals and a long charcoal synthetic coat with visible internal pockets, worn boots. He sits at a small folding table in a dimly lit underground station alcove, sorting pharmaceutical bottles by hand. Clinical precision, diagnostic gaze, urban decay setting. Cyberpunk street pharmacist aesthetic, available light from bioluminescent strips and flickering neon overhead, moody and clinical, highly detailed fabric texture, cinematic lighting emphasizing age and gravity. Shot in three-quarter view, intimate and observational. --ar 2:3 --v 6"
 }

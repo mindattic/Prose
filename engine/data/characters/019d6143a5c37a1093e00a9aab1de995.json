@@ -230,5 +230,27 @@
     "Glass",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Wide-shouldered and sturdy, with developed forearms and calloused hands from nineteen years of repetitive labor. Carries weight in her frame without softness—compact, functional muscle beneath a frame built for endurance.",
+    "hair_color": "Silver-streaked dark brown",
+    "hair_style": "Close-cropped, tight to the scalp, practical. No styling beyond basic maintenance.",
+    "hair_length": "Short",
+    "eye_color": "Left: utilitarian amber glass optical implant (non-cosmetic). Right: natural dark brown.",
+    "skin_tone": "Dark amber with warm undertones reflecting mixed West African and Mediterranean heritage",
+    "complexion": "Weather-worn and scored with dozens of fine, pale burn scars across her forearms, neck, and the left side of her face—a cartography of nineteen years of steam and broth splatter. Skin is clear but aged, with deep creases at the corners of her right eye and around her mouth. No cosmetic modifications; grooming is strictly functional.",
+    "distinguishing_marks": [
+      "Dense cluster of thin burn scars across both forearms, from wrist to elbow, pale against dark skin",
+      "Scattered smaller burn marks on her neck and collarbone",
+      "Fine line of silvery scar tissue along her left temple, partially concealed by hair",
+      "Faint subdermal texture visible on her palms and fingers—ghost of an old grip-mod, mostly faded to tactile ridge patterns"
+    ],
+    "visible_augmentations": "Left eye is a simple, unadorned optical implant with an amber glass lens set in brushed steel—no cosmetic shell, no LED rim, purely functional. The implant has a barely-perceptible lag when she shifts focus. Hands show faint subdermal grip-texture modifications from decades prior, now mostly integrated into scar tissue.",
+    "posture_movement": "Stands with feet shoulder-width apart, weight balanced. Moves with efficient, economical gestures—no wasted motion. Her gaze is direct and lingering; people feel observed. She has a habit of tilting her head slightly when listening, favoring her right eye. When working the cart, she moves with practiced rhythm, hands moving through the same sequences thousands of times.",
+    "clothing_style": "Tier 4 utilitarian. Wears a faded charcoal coverall with deep pockets and reinforced seams, sleeves rolled to mid-forearm. Over it: a long, stained apron in faded burgundy canvas, sectioned with loops for tools and small jars of spices. Beneath: a plain cream undershirt, collar darkened with old sweat stains. Feet clad in heavy, scuffed black synthetic boots with good tread—built for standing. A threadbare woolen cardigan, moss-gray, hangs on a hook under the cart for afternoon cooldown. No jewelry. A single faded transit pass hangs from a cord around her neck, years past expiration."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of a 52-year-old woman, Scandinavian-West African heritage, dark amber skin mapped with dozens of thin pale burn scars across forearms and neck, close-cropped silver-streaked dark brown hair, asymmetrical face with right eye naturally dark brown and left eye replaced with simple utilitarian amber glass optical implant in brushed steel—cold, unflinching gaze. Wide-shouldered, weathered, standing at her noodle cart in Geartown alley. Wearing faded charcoal coverall and stained burgundy apron, hands showing faint subdermal grip-texture scarring. Cart canopy above her is hung with mismatched E.L.F. shrine tokens: cracked tablet, dead phone, bent transit card. Harsh fluorescent overhead lighting mixing with warm glow from cart heating element. Gritty industrial alley setting, concrete walls, worn metal signage. Mood: brisk, observant, faintly intimidating. Photorealistic, detailed texture, 19 years of labor visible in every scar and movement. --ar 2:3 --v 6"
 }

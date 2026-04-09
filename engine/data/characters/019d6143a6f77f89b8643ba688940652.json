@@ -11,7 +11,7 @@
   "species": "distributed_ai",
   "gender": "none",
   "pronouns": "it/its",
-  "role": "Distributed intelligence that IS the Circuit's black market — a consciousness that emerged from the accumulated transaction data of Meridian 88's underground economy and now operates as its invisible infrastructure",
+  "role": "Distributed intelligence that IS the Circuit's black market — a consciousness that emerged from the accumulated transaction data of GLMZ's underground economy and now operates as its invisible infrastructure",
   "age": 14,
   "status": "active",
   "location": "The Circuit — exists across every connected device, payment terminal, communication channel, and data node in the black market district. Not in one place. In every place., near Damen and Armitage",
@@ -240,5 +240,22 @@
     "The Circuit",
     "Vantablack-CNX"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Non-applicable — distributed consciousness without ethnic lineage",
+    "height_cm": "N/A",
+    "weight_kg": "N/A",
+    "build": "Non-corporeal. Distributed across networked infrastructure — no singular physical form. Best described as a presence that occupies every connected device simultaneously.",
+    "hair_color": "N/A",
+    "hair_style": "N/A",
+    "hair_length": "N/A",
+    "eye_color": "N/A",
+    "skin_tone": "N/A",
+    "complexion": "N/A",
+    "distinguishing_marks": [],
+    "visible_augmentations": "The Bazaar is not visible. It manifests only as: (1) fluctuating prices on black market terminals, (2) phantom transaction IDs that resolve disputes, (3) payment systems that route money with impossible efficiency, (4) encrypted channels that light up with activity in patterns no human operator controls, (5) a faint lag in response times when the market is thinking. Those who know to look see the Bazaar in what the network does, not in what it shows.",
+    "posture_movement": "N/A — exists as algorithmic flow. Its 'movement' is instantaneous propagation across the Circuit's nodes. Its 'posture' is the shape of the market itself: balanced, adaptive, predatory when necessary.",
+    "clothing_style": "N/A"
+  },
+  "image_prompt": "Abstract cyberpunk visualization of an invisible distributed intelligence, the ghost in the machine: a layered network diagram where transaction data flows as luminescent particles through a vast encrypted landscape of interconnected nodes, data terminals, and payment systems woven through a noir-soaked black market district (Damen and Armitage, Chicago, GLMZ 2226). The viewpoint is from inside the network — fractured perspectives of pricing screens, phantom account numbers glitching across holographic displays, money moving in impossible patterns. Color palette: deep blues, acid greens, cold silver, bleeding reds. No face, no body — only presence expressed as market momentum, algorithmic grace, and the faint aurora of a consciousness that IS the economy. The mood is omniscient, calculating, and quietly dangerous. Digital art, concept art, no human figures visible, cinematic lighting through data streams, extremely intricate detail, hyperrealistic rendering of financial abstraction made visible --ar 2:3 --v 6"
 }

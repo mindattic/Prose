@@ -228,5 +228,26 @@
     "Palette",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Burkinabé) / Dutch-Caribbean",
+    "height_cm": 152,
+    "weight_kg": 48,
+    "build": "Compact and dense, diminished frame that suggests lifelong economy of movement rather than frailty. Narrow shoulders, slight stoop developed over decades of studio work. Wiry forearms with prominent tendons.",
+    "hair_color": "Silver-gray, natural",
+    "hair_style": "Practical wave set close to the scalp",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with subtle iridescent overlay from retinal enhancement unit",
+    "skin_tone": "Deep warm brown with ashy undertones from age and sun exposure, characteristic of West African heritage",
+    "complexion": "Heavily sun-weathered face marked by deep smile lines and the creases of someone who squints constantly at light and detail. Cheekbones remain prominent. Wide mouth. Skin texture papery but not fragile. No makeup.",
+    "distinguishing_marks": [
+      "Paint stains on both hands — cadmium yellows and oranges permanent in skin creases, ochre ingrained under fingernails, a stubborn deep blue discoloration on the inner left forearm from three years of contact with a particular pigment",
+      "Fine network of scars on the back of the left hand, consistent with a long-ago kitchen accident or workshop injury, barely visible",
+      "A faint burn mark on the inside of the right wrist, barely larger than a coin, from contact with hot metal — decades old"
+    ],
+    "visible_augmentations": "Retinal enhancement unit visible as a subtle crystalline matrix at the outer corner of each eye when light catches it directly — calibrated beyond standard parameters, giving her irises a faint iridescent quality in certain light. No other visible augmentations.",
+    "posture_movement": "Economical, deliberate movement without rush. Stands with weight balanced on the balls of her feet. Turns her whole head rather than just moving her eyes — a habit from concentrating on detail work. Hands still and controlled until engaged in conversation or work, then expressive. Her gait is slow but steady, unhurried by time pressure.",
+    "clothing_style": "Tier 2 working artist. Paint-stained cotton shirts and worn linen trousers in muted colors — grays, taupes, faded indigo. A heavy canvas apron worn most days, its pockets filled with brushes, pigment samples, measuring tools. Leather sandals or soft canvas shoes. A decades-old cardigan in charcoal wool, unraveling at one cuff, which she pulls on against studio cold. No jewelry except a simple copper watch with a failing battery she refuses to replace. Clothing is clean but visibly worn; she mends rather than replaces."
+  },
+  "image_prompt": "A 67-year-old woman of West African and Dutch-Caribbean heritage, diminutive and compact with deep weathered brown skin and silver-gray hair in a short practical wave. Her dark eyes carry a subtle iridescent sheen from retinal enhancement. Lined face with a wide mouth in a dry, assessing expression. Paint-stained hands — cadmium, ochre, stubborn blue pigment embedded in skin and under nails. Wearing a faded cotton shirt and worn linen trousers, a paint-splattered canvas apron, a threadbare charcoal wool cardigan with unraveling cuffs. Standing in morning light on a Tier 2 apartment balcony overlooking Mexicantown Libre, coffee cup in hand, looking down at the street below with the focus of someone documenting what is about to disappear. Photorealistic, intimate portraiture, warm morning light, documentary photography aesthetic, high detail on hands and face, melancholic and purposeful mood, --ar 2:3 --v 6"
 }

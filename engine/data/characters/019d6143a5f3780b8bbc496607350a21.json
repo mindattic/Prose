@@ -29,7 +29,7 @@
       "Betrayal by someone they trust — the only currency that matters"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
       "Knowledge — to understand the systems that grind people down"
     ],
@@ -279,5 +279,28 @@
     "Slagworks Industrial",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Traore) / Korean (Park)",
+    "height_cm": 178,
+    "weight_kg": 88,
+    "build": "Stocky and solid with dense musculature — the kind of frame that suggests manual labor history and consistent gym work. Broad shoulders, thick forearms, no excess fat. Built for leverage and durability rather than speed.",
+    "hair_color": "Dark brown, graying at temples",
+    "hair_style": "Kept short and practical, faded tight on the sides, slightly longer on top. No styling — purely functional.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and penetrating",
+    "skin_tone": "Medium-dark brown with olive undertones from mixed Korean heritage, sun-darkened from years in the GLMZ",
+    "complexion": "Angular face with prominent cheekbones and a strong jaw. Weathered appearance — not from age alone but from accumulated stress and nocturnal living. A thin scar runs from left temple toward his ear. His expression defaults to neutral, watchful. Minimal grooming beyond functionality; beard stubble is constant.",
+    "distinguishing_marks": [
+      "Thin, pale scar running from left temple diagonally toward the ear — approximately 8 cm, clean edge suggesting deliberate blade work",
+      "Tattoo on right forearm: circuit pattern in black ink, custom design suggesting early netrunner identity",
+      "Knuckles on both hands show old fracture marks and callusing — evidence of hand-to-hand work or equipment sabotage",
+      "Small burn mark on left wrist, about 2 cm diameter, pale and old — consistent with equipment malfunction"
+    ],
+    "visible_augmentations": "Chrome pain editor visible on the left side of his neck — a silver-gray subcutaneous interface plate approximately 4 cm × 6 cm with faint LED indicators beneath the skin surface. The augmentation is deliberately exposed, no effort to conceal it with clothing or synthetic skin. Gecko-grip fingertip implants visible as faint metallic sheen on finger pads under direct light; toe pads not visible under standard footwear.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion. Sits forward-leaning, weight on the balls of his feet even when stationary. Hands rest palms-down on surfaces or in lap, never crossed. Eyes constantly scan environments. Speaks quietly; people lean in to hear him. When moving through spaces, he favors edges and walls, remains aware of exits. Despite the nocturnal fatigue, his movements remain controlled and purposeful.",
+    "clothing_style": "Tier 3-4 working professional with combat pragmatism. Standard: charcoal or black reinforced cargo pants with weighted pockets for equipment, steel-toed industrial boots (scuffed, well-maintained). Layered tops — usually a dark compression undershirt under a modified tactical vest or worn leather jacket without gang colors. The vest has custom pockets and cable routing for gear. No corpo logos or flashy augmentation showcases; everything is functional. Wears a worn leather wrist cuff on the left arm, probably concealing the pain editor or protective in a fight. His watch is old military-grade, not smart-linked. Small pouch belt carries lock picks, optical drives, and untraceable payment chips.",
+    "scent_profile": "Cordite, machine oil, and the stale recycled air of late-night workshops — not unclean, but marked by nocturnal existence and proximity to electronics"
+  },
+  "image_prompt": "Cyberpunk character portrait, photorealistic, male netrunner in his 40s with West African and Korean heritage. Stocky muscular build, dark brown skin with olive undertones, short dark hair graying at temples, angular weathered face with alert dark eyes and prominent cheekbones. Visible silver-gray chrome pain editor interface implant on left neck with faint LED lights. Scarred knuckles and metallic gecko-grip fingertips. Wearing dark tactical cargo pants and reinforced leather jacket, no corp logos. Kessler Row nighttime setting with neon red and blue lighting from arms dealer signs and augmentation clinic windows. Cool rim lighting emphasizing the chrome. Alert, dangerous expression. Moody cyberpunk noir atmosphere. Shot in 2226 GLMZ aesthetic. --ar 2:3 --v 6"
 }

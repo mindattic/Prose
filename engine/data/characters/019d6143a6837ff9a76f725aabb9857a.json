@@ -233,5 +233,27 @@
     "The Pale Mile",
     "Elena Vasquez-9"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Scottish-Irish",
+    "height_cm": 155,
+    "weight_kg": 42,
+    "build": "Compact and wiry, with the compressed musculature of a runner bred from necessity rather than training. Narrow shoulders, quick-twitch proportions, minimal body fat. Moves like someone who has learned to take up less space than physics requires.",
+    "hair_color": "Natural black with dust-grey undertones from living outdoors",
+    "hair_style": "Self-cut into an uneven, jagged cloud; shorter on the left side where he miscalculated with a salvaged blade",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, almost black, with a wet-surface shine",
+    "skin_tone": "Deep brown with warm undertones; uneven pigmentation from inconsistent sun exposure and poor nutrition",
+    "complexion": "Sharp, angular face with high cheekbones and a narrow jaw. Skin shows minor scarring and old acne marks. Perpetual dark circles under eyes from chronic sleep deprivation. A thin scar runs along his right temple from an unnamed incident. His expression defaults to alertness bordering on anxiety.",
+    "distinguishing_marks": [
+      "Bioluminescent patch on left collarbone: roughly 3cm across, pale blue-green, organic-looking with irregular borders; glows visibly under cold or emotional stress",
+      "Thin white scar along right temple, approximately 2cm long, poorly healed",
+      "Calloused fingertips and palms from gripping cargo handles and climbing",
+      "Several small puncture scars on inner left elbow: remnants of the geneware injection from age nine"
+    ],
+    "visible_augmentations": "Only the bioluminescent patch on left collarbone is visible—a faint, pulsing glow beneath the skin that intensifies when cold or frightened. No chrome, no obvious cybernetics. Appears purely biological to casual observation.",
+    "posture_movement": "Moves with economical precision, never wasting motion. Favors low stances and hugs walls. Eyes scan continuously—doors, exits, potential threats, sources of warmth. Fidgets when stationary. When running, becomes almost fluid, finding angles through crowds that seem impossible. At rest, his body holds tension; he rarely fully relaxes.",
+    "clothing_style": "Tier 5 scavenger aesthetic. Wears a layered patchwork of thermal underlayers (salvaged corporate gym wear), a oversized industrial shipping vest with frayed edges and missing seams, cargo pants held up with wire and improvised suspenders. One shoe is legitimate (grey synthetic leather, left foot), the other is a repaired construction boot wrapped in insulation tape. A frayed wool beanie (inherited, too large, worn low). No logos, no brands—everything is salvaged, traded, or found. Clothing is functional to the point of appearing accidental, designed for temperature regulation and quick movement rather than appearance."
+  },
+  "image_prompt": "14-year-old boy, deep brown skin with warm undertones, tight self-cut black hair in uneven cloud, wide dark alert eyes, sharp angular face with high cheekbones, bioluminescent pale blue-green patch glowing softly on left collarbone, thin scar on right temple, compact wiry build, wearing oversized industrial shipping vest over layered thermal wear, mismatched shoes, frayed wool beanie, wire suspenders holding up cargo pants, tense posture suggesting hypervigilance, cyberpunk Tier 5 urban decay aesthetic, standing in shadow beneath freight elevation ramps with tarp city visible, cool blue bioluminescent glow illuminating collarbone, cinematic lighting, gritty realism, character study portrait --ar 2:3 --v 6"
 }

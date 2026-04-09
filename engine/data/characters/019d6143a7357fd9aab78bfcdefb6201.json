@@ -257,5 +257,25 @@
     "The Pale Mile",
     "Rust"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East African / Polish",
+    "height_cm": 183,
+    "weight_kg": 62,
+    "build": "Tall and angular with minimal body fat; long limbs suggest a frame built for movement rather than strength. Wiry musculature from years of hands-on fabrication work. Slight forward slouch when at rest.",
+    "hair_color": "Black with threads of embedded micro-speakers creating subtle metallic glint",
+    "hair_style": "Tight interlocked locs, shoulder-length, arranged asymmetrically with speaker filaments woven throughout",
+    "hair_length": "Medium",
+    "eye_color": "Left eye: natural deep brown. Right eye: matte ceramic disc, pale grey-white, deliberately unseeing",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Smooth and unmarked except for the bioluminescent tracery. Minimal makeup. Expression typically neutral; gaze is direct and unsettling. Fine bone structure, high cheekbones, sharp jawline.",
+    "distinguishing_marks": [
+      "Slow-pulsing bioluminescent tracery in pale greenish hue mapping across entire body, following vein patterns like circuit diagrams; brightest along forearms, neck, and inner wrists.",
+      "Matte ceramic prosthetic right eye sits flush with socket, unconnected and non-functional, creates uncanny asymmetry in her face."
+    ],
+    "visible_augmentations": "Bioluminescent skin tracery (geneware, active and glowing); micro-speaker filaments woven into locs (activate subtle subsonic hum when she moves); ceramic prosthetic eye (deliberately non-functional, high aesthetic impact); subdermal haptic resonators visible as faint geometric scars in both palms.",
+    "posture_movement": "Moves with deliberate slowness offstage, as if conserving energy. Her gait is fluid but slightly asymmetrical, favoring her left side. Long silences between movements. When working or performing, her hands move with precision and purpose. Stares directly at people for uncomfortably long intervals without breaking eye contact.",
+    "clothing_style": "Tier 4 / working-class artist aesthetic. Favors oversized utility vests with salvaged pockets and cable loops, worn over fitted black undershirts. Frequently wears distressed grey or black cargo pants with tool belts. Footwear: scuffed steel-toed boots or worn canvas sneakers. Minimal jewelry aside from augmentations. Clothes show signs of solder burns, soot, and workshop wear. No corporate branding. Practical rather than fashionable, but the arrangement suggests intentional aesthetic—controlled chaos."
+  },
+  "image_prompt": "cyberpunk portrait of a tall angular Black woman with deep umber skin, bioluminescent circuit-pattern tracery glowing pale green across her body, shoulder-length locs woven with metallic micro-speaker filaments, one natural dark brown eye and one matte grey-white ceramic prosthetic eye staring directly ahead with unsettling intensity, wearing oversized utility vest over fitted black shirt, steel-toed boots, workshop-worn and soldered-stained, standing in dim Tier 4 industrial space with flickering neon reflected in her glowing skin, moody atmospheric lighting with greenish bioluminescence casting shadows, photorealistic cyberpunk aesthetic, grounded and unsettling, high contrast, cinematic depth, --ar 2:3 --v 6"
 }

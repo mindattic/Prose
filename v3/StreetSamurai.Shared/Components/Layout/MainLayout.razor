@@ -1,5 +1,6 @@
 @inherits LayoutComponentBase
 @inject SettingsService SettingsSvc
+@inject IWriteAccessProvider Access
 @inject NavigationManager Nav
 @inject IJSRuntime JS
 @implements IDisposable
@@ -8,7 +9,7 @@
     html, body { font-family: '@SettingsSvc.FontFamily', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 </style>
 
-<div class="app-shell">
+<div class="app-shell @(!Access.CanWrite ? "readonly-mode" : "")">
     <div class="app-container d-flex">
         <NavMenu />
         <main class="flex-grow-1" style="padding: 10px; padding-top: var(--titlebar-offset) !important; min-width: 0; overflow-x: hidden; overflow-y: auto; height: 100vh;">

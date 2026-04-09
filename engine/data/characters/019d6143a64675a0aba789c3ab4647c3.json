@@ -13,7 +13,7 @@
   "age": 19,
   "status": "active",
   "location": "Highland Park Autonomous Zone, works out of a shared fabrication space called The Burrow, near Michigan Ave and Walton",
-  "description": "Kwabena is lanky and perpetually underslept, with the golden-brown skin of his Ghanaian father's family and the sharp Armenian nose he got from his grandmother Tamar, which he has decorated with a small bioluminescent stud that pulses faintly blue when he is in deep concentration — a mod he got at sixteen from a friend rather than a professional, which is both charming and slightly crooked. He moves through The Burrow at a half-jog, always carrying something, often mid-sentence with someone across the room. His hair is shaped into two neat puffs that he maintains with obsessive regularity even when the rest of his presentation is in chaos.\n\nHe has been making VR experiences since he was fourteen — at first pure technical curiosity, then something more urgent. His work is formally experimental and politically raw: his best-known piece, a forty-minute experience called Φ0.00 that simulates one month of existence at rock-bottom UBC stipend with every sensory detail rendered at maximum fidelity, has been downloaded approximately eighty thousand times across underground distribution channels and has been cited in three separate Meridian 88 social policy arguments. He did not intend it to be a policy document. He made it because he and his mother lived it for six months when he was twelve and he wanted to know if he could make someone else understand. The answer, apparently, was yes.",
+  "description": "Kwabena is lanky and perpetually underslept, with the golden-brown skin of his Ghanaian father's family and the sharp Armenian nose he got from his grandmother Tamar, which he has decorated with a small bioluminescent stud that pulses faintly blue when he is in deep concentration — a mod he got at sixteen from a friend rather than a professional, which is both charming and slightly crooked. He moves through The Burrow at a half-jog, always carrying something, often mid-sentence with someone across the room. His hair is shaped into two neat puffs that he maintains with obsessive regularity even when the rest of his presentation is in chaos.\n\nHe has been making VR experiences since he was fourteen — at first pure technical curiosity, then something more urgent. His work is formally experimental and politically raw: his best-known piece, a forty-minute experience called Φ0.00 that simulates one month of existence at rock-bottom UBC stipend with every sensory detail rendered at maximum fidelity, has been downloaded approximately eighty thousand times across underground distribution channels and has been cited in three separate GLMZ social policy arguments. He did not intend it to be a policy document. He made it because he and his mother lived it for six months when he was twelve and he wanted to know if he could make someone else understand. The answer, apparently, was yes.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -172,7 +172,7 @@
   "registered_firearms": [],
   "related_entities": [
     "Highland Park Autonomous Zone",
-    "Meridian 88",
+    "GLMZ",
     "Grandmother",
     "The Quiet Room",
     "Arcturus Defense Solutions",
@@ -181,5 +181,24 @@
     "Slagworks Industrial",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Ghanaian / Armenian",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Lanky and angular, with the restless physique of someone who forgets to eat and moves in bursts of frantic energy rather than deliberate stride. Narrow shoulders, long limbs, minimal muscle definition.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Two neat puffs maintained with obsessive care, cleanly shaped",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, with faint retinal display overlay grid visible in both irises under direct light",
+    "skin_tone": "Golden-brown complexion inherited from Ghanaian heritage",
+    "complexion": "Angular face with pronounced cheekbones, the sharp Armenian nose decorated with a small bioluminescent stud that pulses faint blue under concentration — slightly crooked from informal application. Perpetually underslept with dark under-eye circles. Minimal grooming elsewhere; contrast between obsessive hair maintenance and general dishevelment.",
+    "distinguishing_marks": [
+      "Small bioluminescent nose stud (right nostril) that pulses soft blue when in deep focus or concentration — geneware mod applied informally at age 16, noticeably crooked"
+    ],
+    "visible_augmentations": "Bioluminescent nose stud (active, blue-pulsing). Retinal display overlays visible as faint grid patterns in both eyes when lit from certain angles or during eye contact — occasionally flickers with notifications from previous owner's ghost accounts. Both modifications appear salvaged or informally installed rather than corp-grade.",
+    "posture_movement": "Moves in half-jogs through spaces, always carrying something (tablet, prototype, wiring), perpetually mid-gesture mid-sentence. Rarely still — fidgets with hands when stationary. Leans in intensely during conversation. Body language broadcasts simultaneous excitement and sleep deprivation.",
+    "clothing_style": "Tier 4 working-collective aesthetic: hand-patched oversized hoodies (often with The Burrow's mark or indie media distribution logos), cargo pants with multiple pockets for tools and drives, worn synth-leather boots. Layers suggest he pulls on whatever is nearest. Occasional color clashes. No corporate branding. Functional rather than fashionable, but with intentional anti-establishment edge. Wears a single faded wristband (possibly handmade, possibly from an old VR collective)."
+  },
+  "image_prompt": "Cyberpunk portrait of a 19-year-old Ghanaian-Armenian male, lanky and underslept with angular cheekbones and a sharp nose. Dark brown hair shaped into two neat puffs. Golden-brown skin. Small bioluminescent blue stud in right nostril, slightly crooked, pulsing faintly. Dark brown eyes with subtle retinal display grid overlay visible. Wearing oversized patched hoodie and cargo pants, hands holding a VR headset and wiring. Frenetic energy, mid-gesture, half-smiling. Standing in a dim underground fabrication space (The Burrow) with scattered tech, LED workshop lights, cyberpunk grime aesthetic. Neon blue accent lighting reflecting off his face. High contrast, cinematic cyberpunk lighting, shallow depth of field focus on his face. Captured mid-movement, perpetually exhausted but driven. --ar 2:3 --v 6"
 }

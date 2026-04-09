@@ -279,5 +279,27 @@
     "The Shelf",
     "Free Assembly"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Slavic / West African",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Tall and broad-shouldered with the residual mass of a younger soldier, now settled into measured weight. His frame carries the deliberate posture of someone trained to move with purpose; age and cumulative injury have not yet broken it, but they have negotiated terms with it.",
+    "hair_color": "Grey",
+    "hair_style": "Shaved close to the scalp",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown with faint cybernetic amber glow at the iris rim (military optical enhancement, dated model)",
+    "skin_tone": "Medium brown with warm undertones from mixed heritage",
+    "complexion": "Weathered but maintained. Strong jawline softened by age. Neatly groomed grey beard kept at even length. The left side of his face bears a faint discoloration — pale thermal scarring from temple to cheekbone, deliberately left partially unhealed as a deliberate choice.",
+    "distinguishing_marks": [
+      "Thermal scarring on the left side of his face (temple to upper cheekbone) — pale, textured, partially treated but intentionally incomplete.",
+      "Faint network of surgical scars along the lower back and neck (vertebrae replacement sites), visible only when shirtless.",
+      "Two thin white lines on his right forearm where military-grade subdermal plating was installed — now faded and partially obscured by loose skin from age.",
+      "A pale, L-shaped scar on his left knee (surgical intervention, pre-replacement)."
+    ],
+    "visible_augmentations": "Slight asymmetry in his forearms and shoulders — the left side carries subdued mechanical density under the skin where impact absorption plating resides, now partially degraded. His right hand exhibits a barely perceptible tremor, most noticeable when at rest in cold air. Military-model optical enhancement visible only as faint amber luminescence at the iris edge when light catches it.",
+    "posture_movement": "Stands with weight distributed deliberately — a soldier's stance that has become habitual. Moves with measured deliberation; his left knee creates an almost imperceptible hitch in his gait that he has learned to absorb. His right hand occasionally rests palm-down on surfaces to stabilize the tremor. When seated, he occupies space with quiet authority, shoulders back, elbows at rest. His movements are economical — no wasted motion.",
+    "clothing_style": "Tier 2 utilitarian comfort. Worn Ferrogate Transit gray cargo pants with reinforced thigh pockets. A navy or charcoal long-sleeved shirt (thermal), usually with a Shelf Block 3 Tenants Committee pin on the collar — the only visible declaration of his informal authority. A faded brown wool overjacket for common areas and building meetings. Worn but well-maintained black lace boots with steel toe caps. No visible jewelry except a scratched titanium wedding band worn on a chain around his neck (not on his hand — too much tremor). His clothing is clean, practical, and chosen for durability rather than fashion."
+  },
+  "image_prompt": "Portrait of a 67-year-old Slavic-West African man with a shaved grey head and neat grey beard, standing in soft morning light in a worn Tier 2 apartment building corridor. Medium brown skin with faint thermal scarring on the left side of his face (pale, textured burn from temple to cheekbone). Dark brown eyes with subtle amber cybernetic glow at the iris. Broad shoulders, athletic build worn by age, wearing a faded navy long-sleeved thermal shirt and grey Ferrogate Transit cargo pants. His right hand rests on a worn handrail, showing a slight tremor. Posture is upright and deliberate despite visible left knee stiffness. Visible subdermal augmentation asymmetry in his forearms. Expression is composed, watchful, containing quiet authority. Background: industrial sublevel concrete walls, early morning shadows, vintage fluorescent ceiling panels casting cool light. Cyberpunk noir, grounded realism, character study portrait, cinematic depth, film grain texture. --ar 2:3 --v 6"
 }

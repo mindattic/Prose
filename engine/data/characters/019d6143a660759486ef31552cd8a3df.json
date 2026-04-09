@@ -56,7 +56,7 @@
   "relationships": [],
   "story_hooks": [
     "Nantucket has discovered that an E.L.F. at the Waukegan Shelf is broadcasting something on a frequency that only stateless persons' defunct comm nodes can receive — it appears to be coordinates",
-    "The unreleased Arcturus data they're holding is now relevant to something happening in Meridian 88 — and Arcturus knows someone has it"
+    "The unreleased Arcturus data they're holding is now relevant to something happening in GLMZ — and Arcturus knows someone has it"
   ],
   "narrative_function": "Quest giver and moral compass — can provide context on E.L.F. theology and drifter spiritual practice, has contacts across multiple transit communities, and may task characters with protecting or recovering something with ritual significance.",
   "augmentations": "Retractable claws (cosmetic, kept from Tier 3 life — slightly too elegant for their current circumstances). A subdermal comm node that no longer has an active account attached to it.",
@@ -237,7 +237,7 @@
   "registered_firearms": [],
   "related_entities": [
     "Bridgepoint",
-    "Meridian 88",
+    "GLMZ",
     "Forest Hollow",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Arcturus Defense Solutions",
@@ -246,5 +246,26 @@
     "Synaptic Drift Emitter SDE-4 'Lullaby'",
     "Iron"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "French Creole / Georgian",
+    "height_cm": 173,
+    "weight_kg": 61,
+    "build": "Lean and angular, the kind of thinness that comes from irregular meals rather than deliberate asceticism. Shoulders held with the residual discipline of white-collar posture, but the sternum visible beneath loose layers. Long-limbed in a way that suggests they were never bulky.",
+    "hair_color": "Iron-black with premature white streaking through the twists",
+    "hair_style": "Maintained in tight rope-twists, each wrapped with fraying grey thread or cord",
+    "hair_length": "Shoulder-length",
+    "eye_color": "Deep brown with a faint luminescence at the edges — a subcutaneous neural node glow, barely perceptible in daylight",
+    "skin_tone": "Warm mid-brown with cooler undertones, indicating mixed Central European and West African ancestry",
+    "complexion": "Hollow-cheeked with prominent cheekbones. Skin is clean but weathered — sun-exposure lines around the eyes, the kind of premature aging that comes from outdoor work and inconsistent hydration. No visible acne or dermatitis; they maintain personal hygiene carefully despite their circumstances.",
+    "distinguishing_marks": [
+      "Thin scar along the right temple, pale and old, roughly 3cm long — likely from a past industrial accident or assault",
+      "Faint compliance tattoo on the inside of the left wrist: a small Arcturus corporate sigil, now partially faded, remnant of their previous employment",
+      "Calluses across the palms and fingers, working hands, inconsistent with their careful speech and bearing"
+    ],
+    "visible_augmentations": "Retractable claws on both hands — chrome-inlaid at the knuckle joints, slightly too ornate and delicate for their current Tier 5 circumstances. When extended, they're pearl-grey with faint bioluminescent edges. Subdermal comm node is not visible, but occasionally the skin at the base of their skull shows faint scarring where it was installed.",
+    "posture_movement": "Walks with deliberate, economical steps — no wasted motion. Stands with spine straight, a ghost of middle-tier body discipline. Their hands move when they speak, and they speak clearly and slowly, as if translating their thoughts into a common language. They gesture toward people when listening, a sign of their pastoral work. When tired, they compress into themselves slightly, but never slouch.",
+    "clothing_style": "A grey wool coat, repeatedly mended with visible stitching in darker grey and black thread — the garment itself is high-quality beneath the repairs, suggesting it was kept from their Tier 3 life. Underneath: layered thermal shirts in muted tones, worn through at the elbows. Practical cargo pants in faded black. Boots that are water-resistant but not new, well-maintained. A small leather satchel containing personal effects and ceremony materials. No visible corporate branding. Tier 5 presentation, but with the careful grooming of someone who hasn't given up on dignity."
+  },
+  "image_prompt": "Portrait of a 41-year-old nonbinary figure with deep brown skin, iron-black hair streaked with white in tight rope-twists, hollow cheekbones with kind brown eyes. Pale cosmetic chrome claws visible on both hands. Wearing a grey wool coat covered in visible seams and careful repairs, layered thermal shirts beneath, dark cargo pants. Standing in industrial Lake Michigan setting, morning light from the east, water-stained concrete behind them. Expression is serene and slightly distant, as if listening to something unseen. Cyberpunk aesthetic but weathered and grounded, Tier 5 drifter, spiritual healer. Shallow depth of field, cinematic 35mm film stock look, cool color grading with warm accent lighting on the face. --ar 2:3 --v 6"
 }

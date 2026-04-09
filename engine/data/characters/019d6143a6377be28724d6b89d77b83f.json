@@ -90,7 +90,7 @@
     "A young surgeon from the official system contacts her, claiming to be investigating the same executive, wanting to compare notes — and she has to decide if the offer is genuine or a trap",
     "She is asked to perform an augmentation she finds ethically indefensible, by someone who can expose her entire operation if she refuses"
   ],
-  "narrative_function": "Moral anchor and access point for the body-horror and medical ethics dimensions of Meridian 88; represents the cost of integrity within corrupt systems and the ambiguity of working outside the law for legitimate reasons",
+  "narrative_function": "Moral anchor and access point for the body-horror and medical ethics dimensions of GLMZ; represents the cost of integrity within corrupt systems and the ambiguity of working outside the law for legitimate reasons",
   "augmentations": "Haptic-enhanced fingertips with sub-millimeter tactile resolution — licensed originally, now running on cracked firmware,A low-profile optical overlay in her left eye calibrated for surgical magnification and tissue-spectrum analysis,A blood-chemistry monitor implanted in her forearm that she originally installed for a patient and then replicated for herself",
   "daily_life": "Wakes before the Shelf's artificial dawn cycle, drinks coffee while reviewing whatever cases she has pending. Mornings are for preparation and supply inventory; she sources materials through three separate intermediaries and rotates them to avoid pattern. Procedures run through the afternoon and into the evening depending on complexity. She does not eat during work. After the last client she walks Suture through the lower corridors, which she describes as 'clearing the operating theater from her head.' Reads medical journals — both licensed and grey-market — before sleeping, annotating in a personal cipher she developed in the first year after losing her license.",
   "affiliation": "Unaffiliated; maintains careful neutrality as a matter of professional survival, though her sympathies run clearly toward The Shelf's permanent underclass",
@@ -254,5 +254,26 @@
     "The Pure Hand",
     "Tibor Osei-Svanstrom"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Croatian / South Indian",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, with the low body-fat composition of someone who moves efficiently through confined spaces and stands for long hours. Defined forearms and hands disproportionately strong relative to frame — surgeon's hands.",
+    "hair_color": "Silver-grey",
+    "hair_style": "Close-cropped, precise fade maintained with clinical care",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, left eye displays faint luminescent grid pattern during low-light conditions (optical overlay active)",
+    "skin_tone": "Warm medium brown with Adriatic undertones, weathered by decades of solvent exposure and harsh clinic lighting",
+    "complexion": "Gaunt cheekbones, minimal makeup, perpetually tired eyes with the focused intensity of someone reading vital signs in human tissue. Fine lines around mouth from years of concentration. Skin texture shows chemical scarring on knuckles and fingertips from industrial-grade disinfectants.",
+    "distinguishing_marks": [
+      "Ragged scar along left jawline from angle to earlobe, tissue slightly raised and discolored — described as 'client disagreement,' timing suggests 8-10 years old",
+      "Faint surgical scars on both wrists (dorsal aspect) from early-career licensed work, barely visible unless she extends her hands",
+      "Small tattoo on inner left forearm: stylized medical caduceus in faded black ink, overlapped by subcutaneous blood-chemistry monitor that creates a subtle luminescent blue glow beneath the skin"
+    ],
+    "visible_augmentations": "Left eye shows faint grid overlay visible in direct light or darkness — a slight chromatic aberration when she focuses. Fingertips appear subtly translucent under close inspection, with barely-perceptible seams at the dermis layer where haptic sensors interface with natural tissue. Forearm blood-chemistry monitor visible as a palm-sized patch of skin with slightly altered pigmentation and a faint blue bioluminescent pulse synchronized to heartbeat. No chrome, no obvious rig — all work is integrated and understated.",
+    "posture_movement": "Stands with weight distributed forward on the balls of her feet, ready to pivot. Moves with surgical precision even in casual motion — no wasted gestures. Hands rest in neutral positions unless in conversation, where they become expressive but controlled. When focused, she enters a state of absolute stillness. Eye contact lasts fractionally too long, reading rather than connecting. Walks with the deliberate pace of someone who has learned that haste in The Shelf draws attention.",
+    "clothing_style": "Tier 5 functionality with minimal aesthetic concern. Default outfit: charcoal scrub-pants with deep pockets for tools, loose-fitting grey thermal shirt under a long black medtech coat (frayed cuffs, faded from solvent exposure). Rubber-soled surgical clogs scuffed and re-soled twice. A thin steel chain around her neck with a small surgical key fob — either functional or talisman, unclear. No jewelry. Coat pockets contain gauze, injectable ampules, calibration tools, and a hand-rolled cigarette she never smokes but carries as a prop for thinking. Fabrics are all utilitarian — nothing corpo, nothing aspirational."
+  },
+  "image_prompt": "Portrait of a 41-year-old female biosurgeon, cyberpunk aesthetic, Croatian-South Indian mixed heritage, compact wiry build with defined surgeon's hands, close-cropped silver-grey hair, warm medium brown skin weathered by chemical exposure, dark intense eyes with faint luminescent surgical overlay visible in left eye, pronounced cheekbones and haunted expression. Ragged scar along left jawline. Wearing loose grey thermal shirt and long black medtech coat with frayed cuffs, surgical clogs. Forearm displays faint blue bioluminescent blood-chemistry monitor beneath skin. Standing in dim underground clinic space, harsh fluorescent overhead lighting casting sharp shadows, walls stained with decades of solvent and antiseptic. Stillness and focus, hands at rest in neutral position. Mood: exhausted competence, moral clarity in moral grey zone, the particular tiredness of someone doing necessary work the system abandoned. Gritty realism, film noir lighting, shallow depth of field, 35mm lens equivalent. --ar 2:3 --v 6"
 }

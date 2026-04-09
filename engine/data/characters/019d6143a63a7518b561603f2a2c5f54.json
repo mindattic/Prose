@@ -185,5 +185,26 @@
     "Nightlight",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Congolese-Samoan / Kazakh-Swedish",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and substantial through the chest and upper back, not yet muscled into definition — the frame of someone still settling into his adult body. Carries weight evenly; not soft, not lean, but somewhere between growing into strength and not yet demanding it of himself.",
+    "hair_color": "Natural dark brown, nearly black",
+    "hair_style": "Shaped high and close to the scalp on days off; meticulously maintained in a fade/shape-up. On shift, pinned back under a grey maintenance cap.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm-toned",
+    "skin_tone": "Medium to medium-deep, warm undertone — the blend of Congolese and Samoan heritage mixed with Scandinavian and Central Asian genetics producing a complexion with subtle golden undertones beneath deeper pigmentation.",
+    "complexion": "Young face with an unusual quality: can read as very young one moment (soft jaw, bright eyes) and prematurely aged the next (depending on shift exhaustion and lighting). Clear skin with minimal scarring. Well-groomed on his days off; on shift, often flushed or marked by the physical work of the day.",
+    "distinguishing_marks": [
+      "Faint bioluminescent subdermal pigment running along both temples in a thin, irregular line — blue-silver glow most visible in low light, casting a subtle aura around his hairline.",
+      "Matching bioluminescent trace along the back of both hands, following the knuckle bones — same blue-silver hue, slightly brighter and more visible than the temple work due to thinner skin.",
+      "The bioluminescence shows uneven fading already; the left temple is slightly dimmer than the right, a telltale sign of discount parlor work."
+    ],
+    "visible_augmentations": "Bioluminescent subdermal pigment on temples and dorsal hands — visible primarily in dim lighting as a faint, pulsing blue-silver glow. No obvious chrome, no optical augmentation. Everything else is internal or subcutaneous.",
+    "posture_movement": "Carries himself with the careful quietness of someone trained by small spaces and service work — deliberate, unobtrusive, shoulders slightly rounded as if perpetually ready to make himself smaller. Moves with efficiency rather than haste. Has learned to be present or invisible as the room requires; his default is to observe more than to initiate, but without the rigidity of genuine shyness. Quick reader of social cues.",
+    "clothing_style": "On shift: grey Calumet Rise maintenance uniform (durable synthetic weave, corporate-issued, slightly worn), grey cap, practical slip-on shoes rated for wet floors. Off-shift: Tier 3-4 streetwear — clean but not expensive, often oversized to compensate for his still-unfamiliar frame. Favors muted colors. No corpo branding, but clean enough to suggest he's not Tier 5. Wears a cheap steel chain around his neck with no pendant — a habit more than a statement."
+  },
+  "image_prompt": "Portrait of a 23-year-old male with Congolese-Samoan and Kazakh-Swedish heritage, medium-deep warm brown skin tone, dark hair shaped close to the scalp. Broad, still-growing build. Faint bioluminescent blue-silver glow tracing both temples and the backs of his hands, visible in low light. Warm dark brown eyes. Wears grey maintenance uniform and cap. Quiet, watchful expression with surprising maturity for his age. Standing in dim basement break room lighting with cool fluorescents casting shadows. Cyberpunk aesthetic, hyper-realistic, subtle futurism, professional photography style, depth of field focus on face. Cinematic, moody, low-key lighting. --ar 2:3 --v 6"
 }

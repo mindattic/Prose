@@ -247,5 +247,26 @@
     "Marcus Okafor-7",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Northern European",
+    "height_cm": 182,
+    "weight_kg": 78,
+    "build": "Athletic and lean, muscle definition visible but not bulky. Carries himself with the easy confidence of someone who was once assured of his place. Recent weight loss suggests stress and reduced caloric intake.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Kept short and precise, freshly cut when he can afford it — a vanity holdover from the Spire",
+    "hair_length": "Short",
+    "eye_color": "Deep brown",
+    "skin_tone": "Medium brown with warm undertones",
+    "complexion": "Clear skin showing early signs of strain — dark circles under eyes, a tightness around the mouth. Jaw is sharp, cheekbones prominent. Facial hair kept neatly trimmed or shaved clean.",
+    "distinguishing_marks": [
+      "Surgical scar running across the right shoulder joint where the Type-4 arm was severed, pale and still slightly inflamed",
+      "Small burn scar on left forearm from a dock accident, thin and faded",
+      "Tattoo on inner left wrist: a minimalist Φ symbol, self-done, slightly uneven — represents a shift in identity"
+    ],
+    "visible_augmentations": "Left arm: sleek matte-black Arcturus Type-4 combat prosthetic with visible articulation joints and faint blue LED tracery along the forearm. Right arm: Tier 1 surplus prosthetic, noticeably lighter in color (gray-plastic tone) than his skin, poorly maintained paint job showing cracks and chips. A faint grinding sound audible when the right arm moves. The mismatch is deliberate and shameful.",
+    "posture_movement": "Moves with fluid grace, favoring his left side unconsciously. Leans against things often — walls, tables, other people — as if he needs physical anchoring. Eyes frequently drift downward to his right arm. When he speaks, his left hand gestures expressively while his right hangs stiffly at his side.",
+    "clothing_style": "Hodgepodge Tier 4-5 salvage: faded neon-stripe tank top or loose synthetic shirt worn open over a thermal undershirt, industrial cargo pants with multiple pockets (most empty), worn-out neo-leather boots. A hand-stitched Arcturus Defense patch sewn onto his jacket sleeve — a bitter joke. Sometimes wears a long coat to hide the mismatched arms. Cheap jewelry: a chain necklace, a ring with a cracked stone. Everything clean but worn."
+  },
+  "image_prompt": "A 27-year-old man of mixed West African and Northern European heritage, athletic build, standing in dim industrial dock lighting. Disheveled, with dark brown hair and a sharp jawline. His left arm is a sleek black Arcturus Type-4 combat prosthetic with blue LED tracery; his right arm is a poorly-maintained gray Tier 1 replacement, chipped paint visible, noticeably lighter skin tone. He wears a faded neon-stripe tank over a thermal shirt, industrial cargo pants, and a hand-stitched jacket patch. His posture is deflated, shoulders rounded inward. Cyberpunk aesthetic, gritty, moody blue-orange lighting, graffiti-covered walls behind him, scattered shipping containers. High contrast, cinematic, worn and tired. --ar 2:3 --v 6"
 }

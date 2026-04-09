@@ -254,5 +254,25 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Greek",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Slight and lean, almost ascetic — wiry muscle from standing eight hours daily, minimal body fat, the economical posture of someone who's learned to exist in tight spaces",
+    "hair_color": "Deep violet fading to copper gradient",
+    "hair_style": "Crown of loose dark curls swept back from shaved temples, asymmetrical and deliberately maintained",
+    "hair_length": "Medium (3-4 inches at crown, faded to stubble at sides)",
+    "eye_color": "Concentric calibration rings of grey and gold, pulsing faintly during diagnostic activity",
+    "skin_tone": "Warm amber with subtle undertones of olive",
+    "complexion": "Clean, minimal makeup, professionally groomed. Angular cheekbones, sharp jawline softened by relative youth. Skin shows no visible damage — rigorously maintained, likely a professional habit. Expression typically neutral until engagement, then animated with quiet intensity.",
+    "distinguishing_marks": [
+      "Faint bioluminescent tracery along both forearms — delicate, constellated patterns that glow pale blue-white in low light, done at age 19",
+      "Subdermal neural interface port visible at the base of the skull as a small raised scar with faint circuitry tattoo markers around it"
+    ],
+    "visible_augmentations": "Pulsing calibration-patterned irises (diagnostic; most noticeable during patient sessions). Bioluminescent forearm tracery visible when arms are bare or under clinical lighting. Neural interface port at occipital base visible when hair is swept back. Otherwise presents as baseline human.",
+    "posture_movement": "Precise and economical — minimal wasted motion. Hands in near-constant subtle movement (finger flexing, rhythm-tapping on surfaces) when thinking or between patients. Stands slightly forward-leaning when listening, suggesting active engagement. Movements are deliberate, unhurried, almost meditative.",
+    "clothing_style": "Clean white clinical uniform as standard work attire, well-maintained but not expensive. Single personal embellishment: small embroidered patch of home district on shoulder. Off-shift: Tier 3 casual — functional layers, muted colors, minimal branding. Footwear practical (clinic clogs at work, transit-grade shoes commuting). Jewelry sparse: possibly a single thin ring or wrist cuff with subtle circuitry aesthetic."
+  },
+  "image_prompt": "Nonbinary neural calibrator, Vesimir Achebe-Tsolakidis, age 34, wearing clean white clinical uniform, standing in soft surgical lighting, warm amber skin with subtle olive undertones, shaved temples with crown of loose dark curls dyed deep violet fading to copper, angular face with sharp jawline, eyes with concentric grey and gold calibration rings pulsing faintly, faint bioluminescent blue-white tracery visible on both forearms in the clinical light, small embroidered district patch on shoulder, hands slightly in motion, precise posture, calm and focused expression, cyberpunk medical clinic interior background with soft warm and cool lighting, documentary realism, character portrait, --ar 2:3 --v 6"
 }

@@ -41,7 +41,7 @@
     "secret": "She has been quietly underreporting her cart's income to the Municipal Market Authority for three years to stay below the threshold that would kick her out of the subsidized licensing tier. The amount is small but consistent. She tells herself she'll fix it when she's more stable, which she knows is the thing people say."
   },
   "speech_patterns": {
-    "vocabulary": "Fast, warm, market-inflected Meridian 88 street Portuguese mixed with English, occasional Turkish endearments from her mother's side. Nicknames everyone within two visits.",
+    "vocabulary": "Fast, warm, market-inflected GLMZ street Portuguese mixed with English, occasional Turkish endearments from her mother's side. Nicknames everyone within two visits.",
     "cadence": "Rapid-fire when busy, slows dramatically when something actually matters to her — the shift is noticeable",
     "verbal_tics": [
       "'Irmã' (used for women she likes)",
@@ -213,5 +213,27 @@
     "Rust",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Turkish / Ghanaian",
+    "height_cm": 167,
+    "weight_kg": 74,
+    "build": "Solid, muscular through the shoulders and forearms from years of repetitive cart work — heavy-set but not soft, the build of someone who moves with purpose and doesn't stop moving",
+    "hair_color": "Copper-red (geneware dye, maintained every three weeks)",
+    "hair_style": "Shoulder-length, usually pulled back in a functional braid or knot while working, loose and textured otherwise",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, warm and observant",
+    "skin_tone": "Warm dark brown, the complexion of someone who spends half her day working over steam and open flame",
+    "complexion": "Weathered in the way that comes from early rising and heat exposure — fine lines around the eyes from squinting and smiling, perpetually flushed cheeks from the cart's radiant heat. Calloused hands, nails kept short and practical. Permanently carries the smell of star anise, chili oil, and broth.",
+    "distinguishing_marks": [
+      "Rust-orange cat tail, thick and expressive, installed at age 19 — movements and position clearly reflect her emotional state (tail flicks with irritation, curls with contentment, swishes when she's concentrating on a complex order)",
+      "Heat-resistant subdermal silicone pads visible as slightly raised, translucent patches across both palms — worn from contact with pot handles and steam",
+      "Small scar on her left forearm from a childhood accident, pale against her skin tone",
+      "Calluses across her fingertips and the heel of her right hand from knife work and cart operation"
+    ],
+    "visible_augmentations": "Rust-orange cat tail with visible subdermal anchor points at the base of her spine (visible when her shirt rides up, which it often does during work). Hands show the telltale translucency of subdermal heat-resistant pads. Copper-red hair color has the characteristic slight iridescence of geneware dye under certain light angles.",
+    "posture_movement": "Always in motion — economical, efficient movements honed by years of cart work. She carries herself with a kind of compressed energy, ready to pivot from taking an order to chopping vegetables to handling change without hesitation. Her tail moves independently of her conscious attention, serving as a barometer of her mood that her face might not express. When standing still (rare), she shifts her weight to one leg, typically favoring her left.",
+    "clothing_style": "Practical Tier 3-4 workwear: reinforced apron with deep pockets (usually stained with turmeric, chili oil, broth) worn over a fitted long-sleeved undershirt, sleeves pushed up to mid-forearm. Cargo pants in dark gray or black, pockets full of tools (peeler, lighter, change purse, wrapped mints). Non-slip boots rated for wet surfaces and heat. A lightweight overshirt hanging nearby for when she steps away from the cart. No jewelry except a simple brass ring her daughter made her, worn on her right middle finger. Her appearance is deliberately practical — every item serves a function — but maintained with enough care that it's clear she takes pride in her work."
+  },
+  "image_prompt": "A 38-year-old Turkish-Ghanaian woman with warm dark brown skin and shoulder-length copper-red hair pulled back functionally, standing at a street food cart in a gritty industrial morning market. She wears a stained work apron over a fitted long-sleeved shirt with pushed-up sleeves, dark cargo pants, and heat-resistant boots. A thick rust-orange cat tail extends from the base of her spine, mid-motion. Her forearms show calluses and heat-resistant subdermal pad marks on her palms. She has a warm, observant expression and carries herself with compressed, efficient energy. The cart behind her steams with noodle broth, surrounded by ingredient containers and tools. The setting is Geartown — industrial, gritty, pre-dawn streetlights casting orange-yellow sodium light across wet pavement near a transit underpass. The mood is quietly competent, hustling, early-morning market energy. Cinematic lighting, sharp focus on her figure, cyberpunk realism, working-class dignity. --ar 2:3 --v 6"
 }

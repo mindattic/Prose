@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "The perfect run — one job so clean it becomes legend",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Justice — the corporate kind, where the punishment fits the profit margin"
     ],
     "coping_mechanisms": [
@@ -43,7 +43,7 @@
       "Cannot distinguish between caution and cowardice in themselves or others",
       "Cannot accept help without interpreting it as leverage"
     ],
-    "secret": "Vesna Bergstrom-Konate sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Vesna Bergstrom-Konate sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
@@ -283,5 +283,26 @@
     "Clover",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with corded muscle definition — the physique of someone whose body is a maintained tool rather than incidental cargo. His frame is all efficiency, no excess. Move-by-wire augmentation has eliminated the natural softness of youth; every muscle group maintains tonal readiness even at rest.",
+    "hair_color": "Dark brown with early silver threading at the temples",
+    "hair_style": "Short, practical, minimal maintenance — swept back from the face",
+    "hair_length": "Short",
+    "eye_color": "Light gray-blue, alert and direct",
+    "skin_tone": "Pale amber — mixed heritage showing in warm undertones beneath cool nordic paleness",
+    "complexion": "Sharp-featured face with high cheekbones and angular jaw. Skin is clear but shows the wear of nocturnal living — slight darkness under the eyes that no amount of sleep fully erases. Grooming is meticulous; this is someone who maintains appearance as operational discipline.",
+    "distinguishing_marks": [
+      "Surgical scar at the base of skull, roughly 2cm, partially hidden by hair — the neural interface jack insertion point",
+      "Thin white scar running along the inside of his left forearm, approximately 8cm, poorly healed — evidence of old trauma or rough field surgery",
+      "Faint tattoo on right inner wrist: a circuit pattern in gray ink, barely visible unless light hits it at an angle"
+    ],
+    "visible_augmentations": "Neural interface jack at base of skull is prominently visible — a brushed chrome port the size of a thumbnail, sitting at the C7 vertebra. He makes no effort to conceal it; the jack is part of his professional signature. Move-by-wire system is invisible beneath the skin, but its effects are evident in his unnaturally smooth movements and the predatory precision of his gestures.",
+    "posture_movement": "Stands with minimal wasted position — weight forward on the balls of his feet, ready for quick transition. His movements are economical and controlled, each gesture purposeful. There is a coiled quality to him even at rest, as though the move-by-wire system has encoded constant readiness into muscle memory. He makes eye contact. He doesn't blink as often as baseline humans.",
+    "clothing_style": "Tier 3-4 utilitarian runner aesthetic. Black or dark gray synthetic weave jacket with reinforced panels — not armored, but durable. Understated corporate-adjacent pieces underneath: neutral shirts, fitted but not tailored. Dark pants with cargo pockets. Footwear is serious — matte black smartboots with responsive soles for traction and impact absorption. No visible branding, no flashing chrome accessories. Everything is functional. He dresses like someone who might need to move fast, climb, or fight without warning. Minimal jewelry — only a data-thin bracelet on his left wrist, barely visible unless you're looking for it."
+  },
+  "image_prompt": "Cyberpunk character portrait, male, lean angular build, pale amber skin tone, light gray-blue eyes, dark brown hair with silver at temples swept back, sharp cheekbones, alert expression. Visible brushed chrome neural interface jack at base of skull partially hidden by collar. Black synthetic tactical jacket over neutral shirt, dark cargo pants, matte black smartboots. Standing with predatory poise, coiled readiness, direct stare. Neon-lit Whitecap lakefront setting behind him, rain-slicked concrete and distant LED signage reflecting off water, cool blue and purple ambient lighting, film noir cyberpunk mood, atmospheric fog, professional product photography style, sharp focus on face and chrome port detail, moody cinematic lighting, --ar 2:3 --v 6"
 }

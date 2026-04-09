@@ -245,5 +245,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polynesian",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, all lean muscle with minimal body fat — the physique of someone who moves constantly and eats efficiently. Narrow shoulders, sharp hip bones, the kind of frame that fits easily into tight workspaces.",
+    "hair_color": "Natural black",
+    "hair_style": "Undercut: sides clipped to 3mm, top left long and textured, often pulled back with strips of salvaged synthetic material or left loose to frame her face",
+    "hair_length": "Short on sides, medium-long on top",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Warm deep brown with golden undertones, even complexion",
+    "complexion": "Sharp cheekbones, angular jawline, small nose with a slight curve. Skin is clear but shows signs of reactive irritation around the right shoulder joint — minor chemical burns from solder work, faint but visible. Expression resting at focused intensity; she rarely smiles unless working on something.",
+    "distinguishing_marks": [
+      "Faint scar across the underside of right forearm (chrome side), approximately 4cm long, from an early installation mistake at age 18",
+      "Thin burn marks on inner left wrist from acid chemical contact during parts cleaning, three parallel lines, each 1-2cm",
+      "Surgical scar at right elbow where the patchwork prosthetic attaches, reinforced with subdermal titanium mesh"
+    ],
+    "visible_augmentations": "Right arm from elbow down is a obvious mismatched cybernetic limb: three distinct chrome sections in slightly different finish (brushed matte, polished reflective, and worn gunmetal gray), assembled and reassembled with visible seam work and cross-manufacturer connectors. The palm and fingers show evidence of constant micro-welding and replacement. Mottled gray-black cat ears (geneware) protrude from the top of her skull, naturally expressive — rotate and twitch with her emotional state and attention. A faint outline of reinforced sternum plating is visible under fitted clothing as a subtle geometric pattern beneath the skin.",
+    "posture_movement": "She moves economically and fast, with the precise coordination of someone who works constantly with her hands. Her right arm moves with the fluid but noticeably different rhythm of installed chrome — slightly faster, smoother, zero hesitation. She often holds objects or tools in her chrome hand while working with her left. Cat ears track conversations and movement around her workspace; they point toward whoever is speaking to her. She rarely sits still; even while talking, her fingers are working — stripping wire, sorting components, tightening fasteners. Her gaze is direct and unsentimental.",
+    "clothing_style": "Tier 4 / Ironvein working-class practical: form-fitting dark synthetic bodysuit (midnight blue or black, water-resistant), reinforced at elbows and knees with gray neoprene panels. Oversized sleeveless utility vest in charcoal with deep pockets and magnetic panel-strips for holding small tools and components. Heavy-duty work boots with steel toe and grippy soles (scuffed, well-maintained). Fingerless gloves on her left hand only; her right chrome hand is always bare. A thin chain collar of brushed steel around her neck, no pendant. Her fingers are stained with trace amounts of solder and component residue that never fully wash out. She wears no jewelry beyond the collar and occasionally salvaged circuit-board rings on her left hand (functional and cosmetic)."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 23-year-old Black African-Polynesian woman, short and compact build, sharp angular features, warm deep brown skin. Close-cropped black hair with longer textured top section, large expressive mottled gray-black cat ears (geneware) rotating naturally. Right arm from elbow down is a visibly mismatched patchwork cybernetic limb in three different chrome finishes with obvious seams and cross-manufacturer connectors, showing evidence of repeated repair and installation work. Wearing midnight blue water-resistant bodysuit, oversized sleeveless gray utility vest with deep pockets and magnetic strips, heavy steel-toed work boots. Fingerless left glove, chrome right hand bare. Thin steel collar. Direct intense gaze, hands positioned as if holding tools or components. Standing in a cramped black market electronics stall, neon signs reflecting off chrome limb, warm tungsten work lighting, shallow depth of field, photorealistic with cyberpunk aesthetic, Tier 4 undercity setting, gritty and lived-in --ar 2:3 --v 6"
 }

@@ -217,5 +217,26 @@
     "The Pale Mile",
     "Gold"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Asare) / Eastern European (Voloshchuk)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and economical, minimal body fat, cords of muscle in forearms and shoulders from years of precise surgical work. No wasted volume anywhere.",
+    "hair_color": "Copper-oxide red, natural with silver threads at temples",
+    "hair_style": "Cropped close to skull, severe and functional, no styling beyond cleanliness",
+    "hair_length": "Short",
+    "eye_color": "Right eye: dark brown. Left eye: pale gold with a faint pulsing ring that cycles during active use (Helix Biosystems surgical optic)",
+    "skin_tone": "Warm medium brown with burnished undertones",
+    "complexion": "Lean-faced with pronounced cheekbones and a jaw that appears perpetually tensed. Minimal scarring on face. Skin shows the pallor of someone who spends 12+ hours under surgical lighting—a faint washed-out quality under natural light. Small stress lines around mouth corners.",
+    "distinguishing_marks": [
+      "Small, finely-detailed tattoo on the inside of her right wrist: a submerged cityscape (Lagos Submerged) rendered in blue-green lines so precise they resemble circuit traces",
+      "Faint surgical scars on both palms (legacy marks, mostly faded)",
+      "A small burn scar on her left forearm, partially obscured by the sleeve edge"
+    ],
+    "visible_augmentations": "Left eye displays a subtle gold iris ring that pulses intermittently when active (diagnostic mode). Hands show no visible chrome or subdermal plating, but the precision of her movements and the absence of tremor suggests subdermal vibration dampeners. No external neural interface visible.",
+    "posture_movement": "Stands with shoulders squared but not rigid. Moves with surgical economy—no flourishes, no wasted micro-motions. Hands remain almost unnaturally still even during conversation. When tired, her left eye's pulse becomes slightly erratic. She walks like someone checking a mental list with each step.",
+    "clothing_style": "Tier 2-3 professional: high-quality Aurochs Medical Complex-issued surgical scrubs in deep navy (department head privilege), kept immaculate. Outside surgery: fitted grey or black technical wear from mid-range brands (Vertex, Synthesis)—minimal color, maximum function. Worn shoes (Caterpillar utility boots). No jewelry except a thin wedding band worn on her right ring finger (left is reserved for surgical rotation). Shoulder-slung messenger bag in black leather, visibly worn, containing personal case files and a small wrapped object (the Steadhammer shrine token)."
+  },
+  "image_prompt": "Portrait of a 44-year-old woman with copper-red hair cropped close to skull, dark brown skin with warm undertones, severe angular face with clenched jawline. Left eye glows pale gold with a faint pulsing ring (surgical optic, diagnostic mode). Right eye natural dark brown. Lean muscular build, wearing navy Aurochs Medical Complex surgical scrubs. Fine blue-green tattoo of a submerged city on inside of right wrist visible. Standing in harsh surgical lighting, sterile white hospital background slightly blurred. Posture economical and precise, hands unnaturally still. Cyberpunk medical drama aesthetic. High detail, photorealistic, moody cool-toned lighting with LED pulse accent on left eye. --ar 2:3 --v 6"
 }

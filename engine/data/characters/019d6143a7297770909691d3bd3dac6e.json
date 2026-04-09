@@ -183,5 +183,26 @@
     "Copper",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 158,
+    "weight_kg": 68,
+    "build": "Powerfully compact — muscular through the shoulders and core from fifteen years of maintenance work, with the dense physical presence of someone who moves through the world with purpose. Not lean; functionally strong.",
+    "hair_color": "Copper (geneware-modified, changes weekly)",
+    "hair_style": "Worn natural, shoulder-length, often pulled back with whatever industrial clip or tie is at hand",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, alert and direct",
+    "skin_tone": "Deep black with warm undertones",
+    "complexion": "Clear, weathered hands with calluses and old grease stains that don't fully wash out; face is expressive and animated, lines around eyes from laughing and squinting under depot fluorescents; no makeup, practical grooming",
+    "distinguishing_marks": [
+      "Thin white scar along right temple from a depot collision at age twenty-eight",
+      "Faint chemical burn marks on both forearms from transit solvent exposure, pale against dark skin",
+      "Small tattoo on inside left wrist: a stylized wrench and solidarity fist, done in a Hamtramck shop"
+    ],
+    "visible_augmentations": "Soft, dark feline ears (geneware) mounted where human ears would be, capable of independent swivel and rotation — currently copper-alert, responsive to conversation and mood. Eyes track her attention. Work-reinforced knees are subcutaneous but gait slightly favors them during fatigue, subtle asymmetry visible in long strides.",
+    "posture_movement": "Economical, grounded stance — weight distributed low, ready to move laterally or lift. Walks with the particular balance of someone who's spent years navigating moving vehicles and uneven depot floors. Ears move before her head does; they telegraph attention and emotion. Her smile is wide and deployed consciously — a tool she's learned to use.",
+    "clothing_style": "Tier 3-4 working-class practical. Transit authority maintenance coveralls (navy with TWSU patch roughly stitched over the Ferrogate logo) worn open over a fitted black synthetic shirt. Steel-toed boots, scuffed and maintained. A heavy Cordura jacket with union pins clustered on the left shoulder — accumulated over five years of grievance work. No jewelry except a plain steel band on her right index finger (personal, not augmentation). Off-shift: same boots, dark jeans, union hoodies in rotation. Clothes are functional, worn until they're unwearable, then replaced with identical pieces."
+  },
+  "image_prompt": "Cyberpunk character portrait, 2226, West African-Scandinavian woman, age 33, short and powerfully built with deep black skin and copper-colored shoulder-length hair. Soft dark feline ears mounted where human ears would be, alert and expressive. Direct brown eyes, wide confident smile. Wearing open navy transit maintenance coveralls over fitted black shirt, steel-toed boots. TWSU union patches visible. Thick Cordura jacket with accumulated union pins clustered on shoulder. Setting: industrial transit depot, fluorescent overhead lighting casting harsh shadows, warm practical lighting on her face. Mood: warm, focused, contained power. Hand detail showing calluses and old grease stains. Professional headshot / character study lighting, shallow depth of field, gritty photorealistic cyberpunk aesthetic, highly detailed facial features and ear movement, working-class dignity. --ar 2:3 --v 6"
 }

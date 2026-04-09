@@ -13,7 +13,7 @@
   "age": 65,
   "status": "active",
   "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Division",
-  "description": "Soren Lindqvist-Okafor is slight and easy to overlook, which is exactly the point. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a breacher out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Soren Lindqvist-Okafor agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Soren Lindqvist-Okafor is slight and easy to overlook, which is exactly the point. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a breacher out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Soren Lindqvist-Okafor agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.88,
@@ -29,7 +29,7 @@
       "Their past catching up — debts, enemies, broken promises"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "To find the person who burned them and make it educational",
       "Control — over their body, their schedule, their future"
     ],
@@ -43,7 +43,7 @@
       "Trusts technology more than people — machines don't betray",
       "Overestimates their own abilities in situations outside their specialty"
     ],
-    "secret": "Soren Lindqvist-Okafor sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Soren Lindqvist-Okafor sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
@@ -280,11 +280,33 @@
     "Volkov-Saito Precision VS-10 Match 'Deadlock'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
     "Pellucid Systems"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and wiry, muscle definition visible through minimal body fat — built for explosive movement rather than sustained strength. Age-appropriate atrophy offset by obsessive physical training. Moves like someone who has spent decades conditioning their body as a tool.",
+    "hair_color": "Steel gray with residual blonde undertones",
+    "hair_style": "Cropped short, military-efficient, minimal styling",
+    "hair_length": "Short",
+    "eye_color": "Pale blue, unaugmented",
+    "skin_tone": "Light tan — sun-damaged from outdoor work, underlying Scandinavian pallor showing through",
+    "complexion": "Weathered, lined face with deep creases around eyes and mouth from squinting and grimacing. Sparse stubble, salt-and-pepper. Visible chrome scarring bracketing both temples in thin, jagged lines where cortical hardware was extracted. Nasal passage chrome visible as a faint metallic sheen around nostrils and upper septum. Overall grooming is functional — clean but not maintained for appearance.",
+    "distinguishing_marks": [
+      "Cortical bomb extraction scar tissue visible as irregular puckering across left temple and extending toward the hairline, approximately 8cm in length",
+      "Chemical analyzer installation scarring around nostrils and the bridge of the nose — faint but noticeable under certain lighting, giving the appearance of old burn marks",
+      "Callused knuckles on both hands showing years of impact trauma and unskilled repairing — small white scar tissue lines across the second and third knuckles",
+      "Thin, pale scar running along the left forearm approximately 12cm, likely from blade work or impact trauma"
+    ],
+    "visible_augmentations": "Chrome chemical analyzer hardware visible in nasal passages and around the septum — appears as faint metallic discoloration and scarring. Cortical bomb extraction scar tissue prominent on left temple. No cosmetic attempt to conceal either modification.",
+    "posture_movement": "Stands with weight distributed low and centered, ready to move. Movements are economical and precise — no wasted motion. Walks with a slight forward lean, shoulders loose. Eyes are constantly scanning. Sits in corners or positions allowing full room visibility. Rarely touches his face or adjusts his appearance — self-awareness is minimal.",
+    "clothing_style": "Tier 4 utilitarian — black synthetic fiber jacket with multiple reinforced pockets, worn combat boots (well-maintained but scuffed), dark gray cargo pants with strategic padding at knees and hips. No visible corporate branding or luxury goods. Clothing is chosen for function: reinforced seams, tear-resistant material, pockets sized for tools and equipment. Wears the same style repeatedly. No jewelry, no status symbols. A single worn silver bracelet of unclear origin on his left wrist — possibly the only non-functional item he owns."
+  },
+  "image_prompt": "Portrait of a lean, weathered 65-year-old man with scandinavian-african mixed heritage, steel-gray cropped hair, pale blue eyes, sun-damaged tan skin. Visible chrome scarring on left temple and nasal passages from augmentation extraction. Wearing black utilitarian tactical jacket and dark cargo pants. Harsh overhead lighting emphasizing facial lines and chrome scarring. Cyberpunk noir aesthetic, gritty and functional, no softness. Background suggests a rundown tenement interior, concrete walls, industrial. Photorealistic, raw intensity, composed and dangerous. --ar 2:3 --v 6"
 }

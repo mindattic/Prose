@@ -178,5 +178,26 @@
     "The Pure Hand",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / French-Canadian / Polynesian",
+    "height_cm": 188,
+    "weight_kg": 98,
+    "build": "Large-framed and broad-shouldered with a slow, deliberate heaviness; not fat but dense, the body of someone who has spent six decades moving through physical work with intention rather than haste",
+    "hair_color": "Dark brown-black with grey threading throughout",
+    "hair_style": "Locs gathered into a loose tail at the nape of the neck; well-maintained, clearly a long-term practice",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Deep brown, slightly hooded by age",
+    "skin_tone": "Very dark, almost charcoal in dim workshop light; warm undertones",
+    "complexion": "Deep facial lines around the eyes and mouth from decades of concentration and smile-lines; skin weathered but not ravaged; a few age spots on the temples; no cosmetic modifications, only the earned texture of time",
+    "distinguishing_marks": [
+      "Extensive scarring across both knuckles — white, callused tissue from metal work and decades of handling rough materials",
+      "A thin pale scar running along the outside of his left forearm, approximately 8cm, origin unknown but old",
+      "Small burn marks on the inner wrists (bilateral) from soldering and heat-work, faded to pale patches"
+    ],
+    "visible_augmentations": "A dark metallic cochlear amplifier module visible behind the left ear, discretely integrated into the skin but clearly functional hardware; the amplifier is matte-gunmetal grey with small indicator nodes. Mild subdermal reinforcement visible as subtle thickening along both wrists under the skin, detectable only on close inspection or when his hands are under bright light.",
+    "posture_movement": "Moves slowly and with deliberate weight, as if always listening to the acoustic properties of each space he enters; stands with his shoulders slightly forward, head often tilted as if attending to distant frequencies; his enormous hands move with surprising gentleness and precision; rarely hurries; speaks from stillness rather than animation",
+    "clothing_style": "Tier 4 working-artist aesthetic: worn but clean linen and heavy cotton work clothes in blacks, greys, and deep blues; a faded wool overshirt with fraying at the cuffs; sturdy boots with reinforced soles for workshop use and tunnel navigation; no logos, no chrome, no status markers — function over presentation; a single woven bracelet in earth tones on his left wrist"
+  },
+  "image_prompt": "cyberpunk portrait of a 58-year-old West African-French-Canadian man, very dark skin, grey-streaked locs tied back, deep weathered face, enormous scarred hands at rest, small metallic cochlear amplifier visible behind left ear in matte gunmetal, wearing faded charcoal linen shirt and worn wool overshirt, standing in a dim basement workshop filled with metal sculptures and resonant instrument parts, single warm amber work-light casting long shadows, concrete walls and industrial fixtures in background, quiet authority and introspective presence, photorealistic, moody atmospheric lighting, ultra-detailed hands and face, --ar 2:3 --v 6"
 }

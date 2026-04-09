@@ -202,5 +202,24 @@
     "The Eastline",
     "Ringo DV-4 'Courier'"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Greek / West African",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Whip-thin and wiry, all lean muscle from three years of courier cycling; shoulders slightly hunched from constant posture over handlebars, chest narrow but defined",
+    "hair_color": "Currently cycling autonomously through the geneware spectrum — naturally dark brown beneath the malfunction, but shifts unpredictably between deep burgundy, electric cyan, fluorescent pink, and muted olive depending on the geneware's corruption state",
+    "hair_style": "Curly and unruly when loose; habitually tucked under a rain hood or courier helmet to contain the color-shifting spectacle",
+    "hair_length": "Medium (approximately 10-12cm when loose)",
+    "eye_color": "Dark brown, large and expressive — the kind of eyes that betray emotion despite his preference for opacity",
+    "skin_tone": "Light brown base with uneven tanning across shoulders, forearms, and face from lake spray exposure and inconsistent weather protection; lighter patches where he keeps covered",
+    "complexion": "Clean but weathered for his age; face is angular with high cheekbones and a sharp jaw; skin shows early salt-damage from Old Harbor's constant moisture and spray; dark circles under eyes from irregular sleep tied to courier schedules",
+    "distinguishing_marks": [
+      "Small, finely-lined tattoo of the Old Harbor lighthouse on the inside of his left wrist, rendered in black ink with minimal detail — his only deliberate body modification he hasn't regretted"
+    ],
+    "visible_augmentations": "Faint subcutaneous scarring at the base of his skull where navigation wetware was implanted three years ago; the hair geneware itself is visible as an autonomous color-shift effect across his scalp, with occasional chromatic glitching at the roots when the system malfunctions. No chrome or external augmentation — all his tech is internal and failing quietly.",
+    "posture_movement": "Perpetually slightly hunched, spine curved from years bent over cargo bike handlebars; moves with the efficient, economical grace of someone who has learned to navigate tight spaces and flooded alleys; fidgets with his wrist where the lighthouse tattoo sits when thinking; nervous energy channeled into constant micro-adjustments rather than large gestures",
+    "clothing_style": "Tier 4 working-class courier aesthetic: waterproofed jacket in charcoal or dark blue with reflective piping, worn daily and stained with lake spray salt; cheap synthetic rain hood in rotation; cargo pants with reinforced knee panels and multiple pockets, often damp; worn athletic shoes with grip soles suited to wet surfaces; always wearing a helmet when mobile, usually a secondhand model with cracked visor. No logos or status markers — everything is functional and cheap enough to replace without regret."
+  },
+  "image_prompt": "Cyberpunk courier, 22-year-old Greek-West African male, whip-thin athletic build, dark brown skin with uneven lake-spray tanning, large expressive dark eyes, shoulder-length curly hair cycling through autonomous color changes (currently electric cyan with fragments of pink), small lighthouse tattoo on inner left wrist, slight forward hunch from years on cargo bike, wearing charcoal waterproofed courier jacket with reflective piping and reinforced rain hood, damp cargo pants with knee panels, worn athletic shoes with grip soles, standing in morning fog near Old Harbor docks with shipping containers and crane silhouettes in background, moody nautical cyberpunk atmosphere, cool blue-gray lighting with warm amber dock lights, volumetric mist, cinematic depth, --ar 2:3 --v 6"
 }

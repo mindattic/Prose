@@ -173,5 +173,26 @@
     "The Pure Hand",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Scandinavian (implied from Okonkwo and Daugaard lineages)",
+    "height_cm": 145,
+    "weight_kg": 38,
+    "build": "Compact and wiry with early muscle definition in shoulders and forearms from repetitive tool work; lean through the torso with the functional strength of someone who has labored since childhood",
+    "hair_color": "Dark brown with reddish undertones",
+    "hair_style": "Worn in two thick plaits, usually tucked into collar during work shifts",
+    "hair_length": "Medium (shoulder-length when unplaited)",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep reddish-brown with warm undertones",
+    "complexion": "Youthful face with sharp cheekbones; perpetually smudged with machine lubricant, composite dust, and grease in the creases of her hands and around her fingernails; sun-weathered despite her age from outdoor work areas in the Forge district",
+    "distinguishing_marks": [
+      "Bioluminescent birthmark along right collarbone — a faint greenish patch approximately 3cm across that emits soft glow in low-light conditions, natural and unmodified",
+      "Premature callus thickening on palms and fingers from eight years of tool use",
+      "Minor grease-stain discoloration on inner wrists from repeated contact with hydraulic fluids"
+    ],
+    "visible_augmentations": "Ferrogate-issued haptic feedback work glove on right hand, industrial-grade synthetic polymer with tactile sensor array visible along knuckles and palm; glove is slightly scuffed and non-regulation (logged as damaged, not returned). Safety goggles pushed up on forehead as permanent fixture — modified strap with added elastic to stay in place. No voluntary cybernetic augmentations.",
+    "posture_movement": "Alert and efficient in movement; unconscious habit of keeping hands ready for work. Stands with slight forward lean from years hunching over machinery. Walks with purpose, economical gestures. Occasional explosive laugh punctuates otherwise serious demeanor.",
+    "clothing_style": "Salvaged Ferrogate Transit worker-tier clothing: reinforced synthetic pants with oil-resistant coating, multiple pockets worn smooth; oversized gray work shirt (likely handed down or scavenged) with sleeves rolled to elbows; heavy canvas apron with tools loops. Worn synthetic boots with steel toe reinforcement. No jewelry or decoration. Tier 4 working-class practical aesthetic — function over fashion, everything repurposed or work-issued."
+  },
+  "image_prompt": "13-year-old girl with deep reddish-brown skin, dark hair in two thick plaits, compact athletic build showing early labor-hardened shoulders, wearing oversized gray work shirt and reinforced canvas apron, industrial safety goggles pushed up on forehead, haptic feedback glove on right hand with visible sensor array, faint bioluminescent greenish birthmark glowing softly on right collarbone, perpetually smudged with machine grease and composite dust, hands showing callus thickening, serious expression with occasional brightness in eyes, standing in Dearborn Forge industrial workshop environment with overhead tungsten work lights and stacked machinery parts in background, gritty cyberpunk Tier 4 working-class aesthetic, photorealistic, dramatic side lighting emphasizing the glow of birthmark, 2226 Great Lakes Metropolitan Zone industrial setting --ar 2:3 --v 6"
 }

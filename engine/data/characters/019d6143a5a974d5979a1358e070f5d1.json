@@ -13,7 +13,7 @@
   "age": 23,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Armitage and Milwaukee",
-  "description": "Altan Lindqvist-Okafor are average height but with a presence that fills more space than the body accounts for. At 23, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and they make no effort to hide it.\n\nThey arrived in Meridian 88 six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a rigger out of Glassway, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Altan Lindqvist-Okafor lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Altan Lindqvist-Okafor are average height but with a presence that fills more space than the body accounts for. At 23, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a rigger out of Glassway, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Altan Lindqvist-Okafor lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.36,
@@ -43,7 +43,7 @@
       "Fails to notice when their own behavior mirrors the people they despise",
       "Overestimates their own abilities in situations outside their specialty"
     ],
-    "secret": "Altan Lindqvist-Okafor sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Altan Lindqvist-Okafor sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
@@ -275,9 +275,30 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and efficient, muscular without bulk—built for precision and endurance rather than raw power. Enhanced tendons visible as subtle cord-like definition under the skin of forearms and calves.",
+    "hair_color": "Dark brown with subtle auburn undertones in direct light",
+    "hair_style": "Short, undercut fade with slightly longer crown—clean and utilitarian, styled with practiced casualness",
+    "hair_length": "Short",
+    "eye_color": "Amber-brown, naturally warm but capable of an unsettling flatness when focused",
+    "skin_tone": "Medium-warm complexion—tan undertones from mixed heritage, even-textured",
+    "complexion": "Sharp jawline, high cheekbones, angular features that read differently under varying light. Skin is clear with a faint sheen along the collarbones and neck where synthetic blood circulates closest to the surface. Minimal scarring visible—most damage has been repaired by accelerated healing. Expression is controlled, revealing little by default.",
+    "distinguishing_marks": [
+      "Thin vertical scar along the left temple, faded to white—approximately 3cm, clean cut from old trauma",
+      "Faint subcutaneous tracery visible under the skin of both wrists—luminescent pathways of synthetic blood nanite networks, glowing faintly amber under UV or direct LED light",
+      "Barely visible port scar behind the left ear, healed clean but slightly raised—neural interface legacy"
+    ],
+    "visible_augmentations": "Synthetic blood system is the signature modification—the amber-tinged luminescence is visible beneath translucent skin at the wrists, collarbones, and base of the neck. The circulation network becomes more apparent when they're exerted or under stress. Enhanced tendons show as subtle but pronounced cording in forearms. No obvious chrome plating or mechanical limbs, but the augmentations give them an uncanny precision in movement.",
+    "posture_movement": "Moves with calculated efficiency—no wasted motion, every gesture purposeful. When at rest, maintains a relaxed but alert baseline, weight slightly forward on the balls of their feet. Capable of explosive movement despite the languid default. Makes direct eye contact during negotiations or confrontation; avoids it during cover-identity mundane interactions. Hands are always visible—a trust signal that reads as either confidence or threat depending on context.",
+    "clothing_style": "Tier 3-4 hybrid—expensive technical wear worn with deliberate casualness. Favors modular cargo pants with reinforced seams (grey or black), fitted compression tops or sleeveless technical vests that display the augmentations without apology. Waterproof jacket with internal pockets for hardware. Worn but well-maintained steel-toed boots. Minimal jewelry—a single ring on the left hand (function unclear: controller, marker, or personal anchor). During cover-identity periods, dresses down to blending beige and grey, deliberately unremarkable. Always has some form of low-profile neural interface controller accessible—wrist-mounted, watch face, or pocket device."
+  },
+  "image_prompt": "Cyberpunk rigger, nonbinary androgynous face with sharp angular features, warm amber-brown eyes that shift between trustworthy and predatory, short dark undercut hair. Medium build, lean and efficient muscle definition. Synthetic blood network glowing faintly amber beneath translucent skin at wrists and collarbone, visible in dim neon light. Wearing form-fitting black compression gear with modular grey tactical cargo pants, waterproof jacket open at the collar. Standing in Glassway district at night—neon-lit retail storefronts, heavy surveillance cameras visible in background, wet pavement reflecting holographic advertisements. Cool LED lighting casting sharp shadows. Hands visible and relaxed, controlled posture, dangerous precision in bearing. Photorealistic, cinematic depth of field, --ar 2:3 --v 6"
 }

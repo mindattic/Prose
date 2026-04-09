@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Meridian Station — central transit nexus, neutral ground, near LaSalle and Madison",
-  "description": "Djeneba Aguilar-Annan are athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 45, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Djeneba Aguilar-Annan plans to keep it that way. They work as a rigger out of Meridian Station, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented rigger in Meridian 88, but they might be the most stubborn, and in this city that's worth more.",
+  "description": "Djeneba Aguilar-Annan are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Djeneba Aguilar-Annan plans to keep it that way. They work as a rigger out of Meridian Station, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nthey are not the most talented rigger in GLMZ, but they might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.72,
@@ -275,8 +275,29 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "Meridian 88",
+    "GLMZ",
     "The Nearfield"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "West African / Hispanic (Iberian-influenced Spanish)",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Athletic and lean with defined musculature — the wiry strength of someone who trains daily. No excess fat. Shoulders broad but not bulky. Movement suggests coiled tension.",
+    "hair_color": "Dark brown, naturally textured",
+    "hair_style": "Close-cropped fade on sides, longer on top — practical, minimal maintenance. No ornamentation.",
+    "hair_length": "Short",
+    "eye_color": "Left eye: dark brown, organic. Right eye: cybernetic with silver-chrome iris, LED recording indicators faintly visible around the pupil",
+    "skin_tone": "Medium-to-deep brown with warm undertones, characteristic of West African and Mediterranean heritage mixing",
+    "complexion": "Lean, angular face with high cheekbones and a sharp jawline. Minimal facial hair — meticulously groomed. Skin shows the wear of exposure but is kept clean. Expression naturally guarded, eyes rarely at rest.",
+    "distinguishing_marks": [
+      "Thin scar along left temple running toward the hairline — old trauma, surgical precision suggests medical intervention or augmentation work",
+      "Faint burn scarring across the dorsal surface of right hand and wrist — chemical exposure or electrical feedback, carefully concealed under work gloves when in public",
+      "Small tattoo on the inside of left wrist: minimalist circuit pattern, likely personal significance or dead-name remnant"
+    ],
+    "visible_augmentations": "Right eye is obviously cybernetic — chrome and polished steel casing, LED indicators, slight luminescence when recording. The prosthetic is expensive and deliberately visible; no cosmetic covering. Wired reflexes are subcutaneous, not visible, but affect movement — a coiled readiness in the shoulders and hands, reaction time evident in micro-adjustments.",
+    "posture_movement": "Upright, economical. Moves like someone always calculating trajectory and distance. Hands at rest tend toward positioning that allows rapid movement. Eyes scan constantly — the organic one and the cybernetic one sometimes move at different speeds, creating an unsettling uncanny-valley effect. When focused on a task, becomes absolutely still.",
+    "clothing_style": "Tier 3-4 practical wear. Dark utility jacket (synthetic leather, reinforced) over fitted black undershirt. Cargo pants with multiple pockets, worn grey. Steel-toed boots broken in but well-maintained. No logos or corp affiliation visible. Small rig-rig pouch on belt carrying micro-tools, data sticks, and maintenance gear. Wears a weathered smart-glasses accessory but rarely uses it — prefers unmediated vision. Everything functional, nothing decorative. The wardrobe of someone who doesn't want to be remembered."
+  },
+  "image_prompt": "Cyberpunk portrait of a 45-year-old nonbinary figure with dark brown skin, close-cropped textured hair, and mixed West African-Hispanic heritage. Left eye is organic dark brown, right eye is gleaming chrome cybernetic with silver iris and LED recording indicators. Lean athletic build, angular face with high cheekbones, guarded expression. Thin scar along left temple. Wearing dark utility jacket with reinforced synthetic leather, black undershirt, cargo pants. Hands positioned with coiled readiness. Background is Meridian Station's neutral grey transit hub with subtle neon signage. Cool blue and amber overhead lighting creating dramatic shadows across face. Studio lighting emphasizing the contrast between organic and chrome. Hyper-realistic, sharp focus on eyes, cinematic depth. --ar 2:3 --v 6"
 }

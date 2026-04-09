@@ -64,12 +64,20 @@
   },
   "frequented_by": [
     "Underworld residents seeking quiet contemplation",
-    "Researchers from Meridian 88 Technical University (occasionally, with community permission)",
+    "Researchers from GLMZ Technical University (occasionally, with community permission)",
     "People in grief — the Quiet Room has developed a reputation as a place to process loss"
   ],
   "notable_locations": [
-    "The Transition — the access passage where sound gradually fades, a 20-meter walk from normal acoustics to total silence",
-    "The Offering Shelf — an informal collection of objects left by visitors along the chamber's equator"
+    {
+      "name": "The Transition",
+      "description": "the access passage where sound gradually fades, a 20-meter walk from normal acoustics to total silence",
+      "tags": []
+    },
+    {
+      "name": "The Offering Shelf",
+      "description": "an informal collection of objects left by visitors along the chamber's equator",
+      "tags": []
+    }
   ],
   "coordinates": {
     "district": "Underworld",

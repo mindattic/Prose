@@ -241,5 +241,25 @@
     "Gold",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Serbian / Polynesian",
+    "height_cm": 178,
+    "weight_kg": 92,
+    "build": "Large-framed, substantial without heaviness — the build of someone who has carried weight (literal and emotional) with grace. Soft musculature, no visible tension in shoulders or neck.",
+    "hair_color": "Silver-white with dark roots beneath",
+    "hair_style": "Wrapped in elaborate sections using faded indigo cloth, wrapped tightly at the crown and secured with simple brass pins",
+    "hair_length": "Long (extends to mid-back when unwrapped, but always kept bound)",
+    "eye_color": "Dusty amber with flecks of darker gold — human baseline, no augmentation",
+    "skin_tone": "Very deep brown with warm undertones",
+    "complexion": "Aged gracefully; fine lines around the eyes and mouth from decades of listening intently. Skin texture is smooth and cared-for. The bioluminescent geneware creates a faint warm golden undertone beneath the surface, most visible in low light or along the cheekbones and inner forearms — like old candlelight trapped just beneath the skin. The glow is gentle, almost imperceptible in daylight.",
+    "distinguishing_marks": [
+      "A thin, pale surgical scar along the inside of her left wrist from the neural pain-monitoring implant installation, nearly invisible with age but present if you know to look.",
+      "Fine burnished marks on both palms and inner forearms — ritual scarification from her early thirties, West African tradition, very subtle but intentional."
+    ],
+    "visible_augmentations": "The bioluminescent undertone to her skin is the only visible augmentation — appears as a very faint warm glow in dim light, like someone lit from within by a weak bulb. The neural pain implant is subcutaneous and invisible.",
+    "posture_movement": "Moves with deliberate slowness — not infirmity, but intention. She takes full steps, plants her feet carefully. Her shoulders are relaxed and open. When sitting, she settles into stillness like water finding its level. Her gaze is unhurried; she looks at people for the full duration of listening, not glancing away.",
+    "clothing_style": "Simple, tactile fabrics in muted colors. A worn linen tunic in cream or soft grey, layered with a heavy indigo shawl (hand-dyed, fraying at the edges, clearly decades old). Loose trousers in neutral tones. Bare feet or simple leather sandals indoors; sturdy canvas slip-ons for street work. Her single piece of jewelry is a worn silver chain with a small data locket the size of a thumb drive, always visible at her sternum. No makeup, no adornment. Tier 3 practical, but aged with intention and care — nothing disposable about her appearance."
+  },
+  "image_prompt": "Portrait of an elderly Black woman with silver-wrapped hair in indigo cloth, very dark skin with faint inner bioluminescence like old candlelight just beneath the surface, dusty amber eyes, serene expression, wearing a worn cream linen tunic and heavy indigo shawl, single silver chain with small data locket at sternum, seated in a dimly lit underground chapel with incense smoke and soft LED shrine lights in the background, low warm lighting emphasizing the subtle glow in her skin, cyberpunk spiritual aesthetic, photorealistic, --ar 2:3 --v 6"
 }

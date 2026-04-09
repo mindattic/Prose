@@ -57,7 +57,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "The route number he's been checking for on the transit boards suddenly appears — his uncle's caravan, heading into Meridian 88. He needs help figuring out whether to approach them and what he will say.",
+    "The route number he's been checking for on the transit boards suddenly appears — his uncle's caravan, heading into GLMZ. He needs help figuring out whether to approach them and what he will say.",
     "He saw something loaded onto a cargo vehicle at Grand Crossing Gate that was moving wrong — something that sounded, faintly, biological. He hasn't told anyone. He doesn't know who to trust."
   ],
   "narrative_function": "Intelligence source for ground-level movement of goods and people between transit hubs; represents the most vulnerable population of the drifter world; can carry messages or items through checkpoints that adults cannot; his keen threat-assessment makes him a useful sensor for NPC danger.",
@@ -210,11 +210,33 @@
   "changelog": [],
   "related_entities": [
     "Grand Crossing Gate",
-    "Meridian 88",
+    "GLMZ",
     "The Waukegan Industrial Shelf",
     "The Gradient Compact",
     "Nesting Doll",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "Central Asian / North African (Samatov-Ahouli suggests Turkic-Maghrebi)",
+    "height_cm": 152,
+    "weight_kg": 38,
+    "build": "Wiry and compact, with visible lean muscle in shoulders and forearms from climbing and cargo work. No subcutaneous fat; his frame is efficient rather than fragile.",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Close-cropped, practical, grown out just enough to avoid attention",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, river-silt tone with minimal light reflection",
+    "skin_tone": "Reddish-brown, warm undertone suggesting mixed Central Asian and Maghrebi ancestry",
+    "complexion": "Weathered for his age; sun-darkened, with no adolescent softness. Clean but not groomed — practical face, angular jaw, the eyes older than his years.",
+    "distinguishing_marks": [
+      "Right hand only: four retractable geneware claws on fingers two through five, approximately 3cm when extended, naturally pigmented darker than surrounding skin, showing faint scarring at the base where the expression came in asymmetrically during early adolescence",
+      "Left hand: completely smooth, unmarked, no claw expression",
+      "Small circular burn scar on left forearm, roughly 1cm diameter, from contact with hot metal — approximately two years old based on discoloration",
+      "Minor nicks and abrasions on palms and inner wrists consistent with regular cargo work and chain-link climbing"
+    ],
+    "visible_augmentations": "Only the asymmetrical right-hand claw geneware. No chrome, no optics, no subdermal plating. The claws are living tissue, not mechanical.",
+    "posture_movement": "Alert and economical. Moves without wasted motion — when climbing or loading, his right hand hooks unconsciously into available grilles and netting using the claws. When stationary, he favors positions with clear sightlines and exit routes. His gaze tracks faces and hand positions automatically. Minimal fidgeting; he sits very still for long periods.",
+    "clothing_style": "Layered, every piece he owns worn simultaneously: a gray long-sleeved undershirt (Tier 4 synthetic blend), a stained green cargo vest with deep pockets over that, a worn brown overshirt (once belonged to an older person), a too-large quilted jacket in faded black as the outer layer. All pieces are functional, none are new. No logos or brands visible; everything is salvaged or transit-hub generic. Heavy canvas work pants patched at the knees. Worn synthetic boots laced tight. No accessories except a length of chain-link cut into a loop he sometimes carries in his jacket pocket for his prayers to the Ratchet."
+  },
+  "image_prompt": "A 14-year-old boy, wiry build, compact frame, reddish-brown skin, short dark hair, large serious dark eyes, standing in industrial cargo area. Right hand showing asymmetrical retractable claws on four fingers, left hand smooth. Wearing multiple oversized layers: gray undershirt, green cargo vest, brown overshirt, oversized black quilted jacket, patched cargo pants, worn boots. Alert posture, hand unconsciously gripping chain-link cargo netting. Weathered face, sun-darkened complexion, visible burn scar on left forearm. Background: shipping containers, Grand Crossing Gate infrastructure, warm amber industrial lighting, slight haze. Mood: practical, watchful, slightly unsettling clarity in his expression. Cyberpunk realism, documentary style, natural lighting. --ar 2:3 --v 6"
 }

@@ -14,7 +14,7 @@
   "age": 22,
   "status": "active",
   "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
-  "description": "Dayo Adeyemi came to the Shelf from the Lagos Resettlement Corridor when he was fourteen, one of four hundred thousand climate migrants processed through Meridian 88's intake system in a single year. He speaks four languages, none of them quietly. He is the youngest of the crew and the only one who tried to run from Kyle. Kyle caught him in three steps.\n\nThe chrome jaw replacement doesn't quite fit — it gives him a permanent underbite and makes a clicking sound when he talks. He compensates by talking constantly, as if the noise proves the jaw still works. Before the Prologue he was fast and cocky. Now he is fast and nervous. The cockiness is trying to grow back but keeps running into the memory of Kyle walking through the front door like death filling out a timesheet.\n\nDayo has a mother, Folake, who runs a food stall on Tier Four selling jollof rice that is genuinely the best thing in the lower Shelf. She knows Dayo is in the crew. She does not approve. Every Sunday she feeds him and tells him his father would be ashamed. His father died in the Lagos floods. Dayo was six. He does not remember his father well enough to know if she's right, and that is the thing that actually hurts.",
+  "description": "Dayo Adeyemi came to the Shelf from the Lagos Resettlement Corridor when he was fourteen, one of four hundred thousand climate migrants processed through GLMZ's intake system in a single year. He speaks four languages, none of them quietly. He is the youngest of the crew and the only one who tried to run from Kyle. Kyle caught him in three steps.\n\nThe chrome jaw replacement doesn't quite fit — it gives him a permanent underbite and makes a clicking sound when he talks. He compensates by talking constantly, as if the noise proves the jaw still works. Before the Prologue he was fast and cocky. Now he is fast and nervous. The cockiness is trying to grow back but keeps running into the memory of Kyle walking through the front door like death filling out a timesheet.\n\nDayo has a mother, Folake, who runs a food stall on Tier Four selling jollof rice that is genuinely the best thing in the lower Shelf. She knows Dayo is in the crew. She does not approve. Every Sunday she feeds him and tells him his father would be ashamed. His father died in the Lagos floods. Dayo was six. He does not remember his father well enough to know if she's right, and that is the thing that actually hurts.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -234,7 +234,7 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "ARCHIVE",
     "The Shelf",
     "Ashford Signal",
@@ -246,5 +246,27 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Nigerian) / mixed GLMZ diaspora",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and wiry with the muscle definition of someone who runs constantly — low body fat, corded forearms and calves from speed-boosted tendons. Bird-boned but functional.",
+    "hair_color": "Black with a faded copper undercut dyed during better weeks",
+    "hair_style": "Short fade on sides, longer crown worn messy and slightly overgrown",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Deep warm brown with undertones from West African heritage, sun-darkened from dock work",
+    "complexion": "Young face with sharp cheekbones and a prominent brow. Skin shows minor acne scars and dock grime that doesn't fully wash out. Expression is perpetually tense — jaw line disrupted by the chrome replacement.",
+    "distinguishing_marks": [
+      "Visible surgical scar along entire jawline where the chrome prosthetic was installed, still pink and poorly healed",
+      "Deep impact bruising on the right temple and orbital bone, fading yellow-green, from the incident with Kyle",
+      "Thin burn scar on the inside of left forearm from a loading dock chemical spill, three inches long",
+      "Faded tattoo on right wrist — three vertical lines in Yoruba style, done by his mother with a needle and ink when he turned twenty-one"
+    ],
+    "visible_augmentations": "Chrome jaw replacement occupies the lower face — gunmetal grey with visible seam lines and mounting bolts at the temples. The jaw is noticeably oversized and sits at a permanent underbite. Micro-servos visible at the hinges. The speed-boosted leg tendons are subcutaneous but create visible hyper-definition in the calves and thighs, with faint scar tissue visible behind the knees.",
+    "posture_movement": "Bounces on his toes constantly — the speed augmentation makes standing still torture. Walks fast and urgently even when there's no reason. Head jerks slightly when the chrome jaw clicks. Hands move when he talks, which is always. Nervous energy barely contained in his frame. Eyes dart to exits and potential threats.",
+    "clothing_style": "Tier 4-5 functional clothing — canvas work pants with reinforced seams, modified with cargo pockets for carrying jobs. Loose-fitting tank top or oversized synthetic shirt, usually sweat-stained and oil-spotted. Worn dock-worker boots with torn laces he keeps meaning to replace. A faded synthetic jacket with the Lower Dock Crew informal patch (home-sewn, crooked). No jewelry except a worn rubber bracelet his mother gave him. Clothing is cheap, practical, and shows the wear of someone who cannot afford to replace things but needs them to survive."
+  },
+  "image_prompt": "A young Black male, 22 years old, 5'10\", lean and wiry build, standing in an industrial dock setting. He has a sharp-featured face with deep brown skin, short faded undercut hair with copper tones, and a prominent gunmetal chrome jaw replacement that creates an underbite, visible servos at the hinges. Surgical scars run along his jawline. His dark brown eyes are alert and nervous. His calves and thighs show hyper-defined musculature from speed augmentation. He wears oil-stained cargo work pants and a loose oversized synthetic tank top, a torn dock-worker jacket with a home-sewn crew patch. His posture is tense, bouncing slightly on his toes. Setting: The Shelf, lower loading docks near Chicago Ave, shipping containers and industrial machinery in background, harsh fluorescent and amber dock lighting, rain-wet concrete, cyberpunk industrial, photorealistic, cinematic, moody and dangerous atmosphere, high contrast shadows --ar 2:3 --v 6"
 }

@@ -258,5 +258,25 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Bashir Quansah-Mehrotra"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Italian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wire-lean and compact, almost ascetic in frame — minimal subcutaneous fat, defined musculature from standing desk posture rather than deliberate conditioning. Shoulders slightly rounded from years hunched over haptic interfaces.",
+    "hair_color": "Stress-reactive geneweave: deep black baseline, shifts to dark cobalt blue under cognitive load or stress",
+    "hair_style": "Close-cropped, kept precisely maintained every ten days at the same sublevel barber shop",
+    "hair_length": "Short",
+    "eye_color": "Natural dark brown, obscured by constant translucent AR overlay that gives eyes a glassy, slightly unfocused appearance",
+    "skin_tone": "Warm medium-brown with undertones reflecting mixed West African and Mediterranean heritage",
+    "complexion": "Clean, unblemished skin maintained by corporate health insurance; smooth jawline; dark circles under eyes that never quite fade; expression defaults to mild distraction",
+    "distinguishing_marks": [
+      "Fine white scar on left temple from a childhood fall — barely visible unless light hits at specific angle",
+      "Subcutaneous implant ports on both temples, slightly raised and barely perceptible unless touched"
+    ],
+    "visible_augmentations": "AR overlay contacts create characteristic glassy sheen and slight luminescence in dim light. No obvious chrome or external augmentation — all modifications are neural/subcutaneous. The stress-reactive hair shift is his most visually distinctive augmentation, sometimes mistaken for a stylistic choice by those unfamiliar with geneweaving tech.",
+    "posture_movement": "Slight forward lean, as if perpetually leaning into an invisible screen. Walks with purpose but not quite confidence — efficient rather than assured. Hands move expressively when speaking, fingers often mimic typing gestures mid-conversation. Eyes track invisible AR data layers while walking, occasionally causing minor navigation awkwardness.",
+    "clothing_style": "Standard Tessera corporate-casual: fitted charcoal shirt with Tessera logo embroidery, pressed grey trousers, shoes scuffed from daily Ferrogate commute. Always has personalized details — today: embroidered ELF glyph patch on left sleeve depicting stylized data-spirit sigil. Wears a simple silver ring on his right index finger (gift from grad school friend). No visible jewelry beyond that. Clothes are tier-2 corpo standard but worn with genuine affection rather than status performance."
+  },
+  "image_prompt": "Cyberpunk character portrait of a lean 29-year-old man with warm medium-brown skin, close-cropped black hair with deep cobalt blue stress-reactive undertones, dark eyes obscured by translucent AR overlay giving glassy unfocused quality. Compact wire-lean frame, slight forward posture, wearing fitted charcoal Tessera corporate shirt with embroidered ELF glyph patch on sleeve, pressed grey trousers. Silver ring on right index finger. Warm medium lighting, slight glow from AR contact lenses, background blurred data streams and server infrastructure, cyberpunk aesthetic with corporate-casual dressing, expression of focused enthusiasm mixed with naivete, subtle bioluminescent threads in clothing, shot composition centered on face and upper torso, professional corpo lighting, matte finish with neon accent colors --ar 2:3 --v 6"
 }

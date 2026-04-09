@@ -7,7 +7,7 @@
     "Brainprint"
   ],
   "role": "Private Investigator",
-  "description": "Ravi Eriksson-Mensah is one of perhaps thirty certified BCI forensic examiners in Meridian 88, and one of the best. His work sits at the intersection of neuroscience, data analysis, and detective work — he reads the data that brain-computer interfaces record, voluntarily or involuntarily, and uses it to reconstruct events, prove identity, establish timelines, and occasionally recover memories the subject themselves has forgotten.\n\nBorn to a Swedish-Indian father and Ghanaian mother, Ravi was a neuroscience researcher at the Axiom Institute before the ethical constraints of corporate research drove him into private practice. He discovered that academic rigor applied to investigative work produced results that neither pure scientists nor pure investigators could match. His testimony has been accepted in corporate arbitration courts across Tiers 2-4, and his findings have both convicted and exonerated subjects in cases ranging from theft to murder.\n\nThe darkness of his work is cumulative. Every deep scan means spending hours inside someone else's most intimate neural experiences — their fears, their pleasures, their traumas. Ravi has experienced more of other people's lives than most people experience of their own, and it has made him simultaneously more empathetic and more withdrawn. He knows what people are really thinking because he has literally been inside thousands of heads, and that knowledge has made genuine human connection almost impossible for him.",
+  "description": "Ravi Eriksson-Mensah is one of perhaps thirty certified BCI forensic examiners in GLMZ, and one of the best. His work sits at the intersection of neuroscience, data analysis, and detective work — he reads the data that brain-computer interfaces record, voluntarily or involuntarily, and uses it to reconstruct events, prove identity, establish timelines, and occasionally recover memories the subject themselves has forgotten.\n\nBorn to a Swedish-Indian father and Ghanaian mother, Ravi was a neuroscience researcher at the Axiom Institute before the ethical constraints of corporate research drove him into private practice. He discovered that academic rigor applied to investigative work produced results that neither pure scientists nor pure investigators could match. His testimony has been accepted in corporate arbitration courts across Tiers 2-4, and his findings have both convicted and exonerated subjects in cases ranging from theft to murder.\n\nThe darkness of his work is cumulative. Every deep scan means spending hours inside someone else's most intimate neural experiences — their fears, their pleasures, their traumas. Ravi has experienced more of other people's lives than most people experience of their own, and it has made him simultaneously more empathetic and more withdrawn. He knows what people are really thinking because he has literally been inside thousands of heads, and that knowledge has made genuine human connection almost impossible for him.",
   "affiliation": "Independent — certified BCI forensic examiner, court-recognized expert",
   "tier": "Tier 3",
   "location": "A sterile clinic-office hybrid on Kessler Row, equipped with neural scanning equipment that costs more than most apartments, near Halsted and Chicago Ave",
@@ -64,12 +64,32 @@
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Tessera Industries Deep Scan Penetrating Radar DSR-1",
     "Chimera-Null",
     "Déjà Vu",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / South Asian / West African",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and composed, with the posture of someone who spends most of their time seated at high-resolution neural imaging consoles. Shoulders slightly rounded from years hunched over data. Wiry rather than muscular, with the controlled efficiency of movement that comes from minimal wasted gesture.",
+    "hair_color": "Dark brown with silver threading at the temples",
+    "hair_style": "Swept back neatly, kept short at the sides. Precision-groomed, no affectation",
+    "hair_length": "Short",
+    "eye_color": "Warm brown with faint amber undertones",
+    "skin_tone": "Medium golden-brown, reflecting his mixed heritage with warmer tones in the upper face",
+    "complexion": "Clean-shaven, faint lines around the eyes from years of close work and concentration. Skin is healthy but slightly pallid from clinic-bound hours. Expression tends toward neutral observation rather than warmth.",
+    "distinguishing_marks": [
+      "Faint surgical scar on the left temple, approximately 3cm long, where a diagnostic neural interface was installed during his Axiom Institute years — barely visible unless light catches at certain angles",
+      "Thin white line across the inner left wrist, partially obscured by his watch, from a research-era accident with equipment"
+    ],
+    "visible_augmentations": "None visible. All implants are subcutaneous or internal. He wears a discrete neural readout device on his left wrist — a thin, matte-black band that syncs with his clinic equipment, but it appears to be ordinary chronometry to casual observation.",
+    "posture_movement": "Precise, measured movements. He walks with purpose but without aggression. Sits very still during interviews — rarely fidgets, rarely blinks noticeably. Tends to hold eye contact slightly longer than social convention, an occupational habit from reading micro-expressions. Speaks in measured tones with minimal hand gestures.",
+    "clothing_style": "Tier 2-3 functional minimalism. Favors high-end athleistic wear in muted grays, blacks, and deep blues — brands like Helios and Kasper that advertise durability and precision over ostentation. Wears well-fitted compression shirts under open jackets, functional clothing that suggests athletic maintenance without athletic pretension. His watch is an expensive Swiss-analog piece, a deliberate rejection of smart devices. Minimal jewelry — a simple silver band on his right ring finger, no other adornment. Everything about his appearance is calibrated to project competence and impartiality rather than personality."
+  },
+  "image_prompt": "Cyberpunk portrait of a lean Scandinavian-South Asian-West African man in his early forties with dark brown hair touched by silver at the temples, warm brown eyes, and precise posture. He sits in a sterile high-tech clinic office filled with neural scanning equipment and soft blue holographic displays. Wearing a matte-black compression shirt under a tailored gray jacket, a discrete neural interface band on his left wrist visible. His expression is observant and slightly withdrawn, hands resting calmly. The clinic is minimalist — white walls, chrome equipment racks, soft LED accent lighting in cool tones. The mood is clinical, introspective, professional detachment. Shot as a character study with shallow depth of field, lit by soft clinic lights and the pale glow of neural data interfaces. High detail, photorealistic, cinematic lighting. --ar 2:3 --v 6"
 }

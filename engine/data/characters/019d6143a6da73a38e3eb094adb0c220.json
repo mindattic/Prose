@@ -282,5 +282,26 @@
     "Hearthstone Firearms Trail-357 'Pathfinder'",
     "The Pale Mile"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Irish / West African (Guinean)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Medium frame, dense through shoulders and hips, wiry and compact. Built for endurance and precision rather than strength. Low body fat, defined musculature in forearms and hands from years of surgical work.",
+    "hair_color": "Dark brown, natural coil",
+    "hair_style": "Tightly bound under a surgical-grade hygiene cap in clinical settings; when unbound, worn close to the scalp in natural coils",
+    "hair_length": "Short (shoulder-length when unbound)",
+    "eye_color": "Dark brown, evaluative and steady",
+    "skin_tone": "Fair with warm undertones; pale freckled complexion across nose and cheekbones blending into warmer, deeper tones inherited from Guinean ancestry",
+    "complexion": "Clear, well-maintained skin with visible light freckles across her nose and upper cheeks. Minimal scarring on her face—her professional control extends to her appearance. Slight creases around her eyes from years of focused concentration. Cold lips, minimal color.",
+    "distinguishing_marks": [
+      "Bioluminescent cosmetic tracery in pale green running along both collarbones in intricate geometric patterns—a nineteen-year-old decision she now considers superstitious to remove",
+      "Fine surgical scars on both palms and inner forearms, barely visible unless light catches them at specific angles",
+      "Faint track marks of multiple subdermal implants along the inside of both wrists—temperature sensors, subtle and professional"
+    ],
+    "visible_augmentations": "Bioluminescent collarbone tracery (pale green, visible above neckline), faint subdermal sensor grid visible at inner wrists under certain lighting. Hands show unusual precision in movement—haptic sensitivity enhancement subtle but evident to trained eyes. No visible chrome or external augmentation; all work is discrete and medical-grade.",
+    "posture_movement": "Stands with spine straight but not rigid—the posture of someone accustomed to standing still for long procedures. Moves with economical efficiency, no wasted motion. Hands are always slightly cooler to the touch, move with surgical precision and constant micro-adjustments. Eyes rarely blink; she watches more than she looks. When she walks, each step is deliberate and grounded.",
+    "clothing_style": "Tier 3-4 functional professional. Default: surgical-grade hygiene cap, fitted thermal base layer under a charcoal grey medical-weight coat with discrete padding at shoulders and ribs (Escanaba Skinners protection), black utility trousers with reinforced pockets, sterile nitrile gloves kept in coat pockets. No jewelry except a worn stainless steel ring on her right index finger. Boots are durable, non-slip medical-grade rubber. Everything is kept meticulously clean and shows no signs of wear or staining. She dresses like someone for whom cleanliness is not habit but ideology."
+  },
+  "image_prompt": "Portrait of Sorcha Diallo-Yupanqui, 38-year-old organ harvester, medium height with dense athletic build, pale Irish complexion with warm Guinean undertones and light freckles across nose. Tight natural dark brown coils pulled back tightly, wearing a surgical-grade hygiene cap. Dark evaluative eyes, cold and precise. Glowing pale green bioluminescent tracery running along both collarbones in geometric patterns, visible above neckline. Hands unusually still and surgical-precise, subdermal scars faintly visible at inner wrists. Wearing charcoal grey medical-weight coat with subtle reinforced padding, black utility trousers, sterile nitrile gloves. Standing in a cold-storage facility with clinical lighting, pale greenish-blue industrial fluorescence, frost visible on metal surfaces behind her. Mood: professionally composed, efficient, unsettling calm. Photorealistic cyberpunk noir, clinical precision, atmospheric fog, cold color grading, shallow depth of field. --ar 2:3 --v 6"
 }

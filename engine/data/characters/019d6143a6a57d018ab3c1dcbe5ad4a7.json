@@ -13,7 +13,7 @@
   "age": 42,
   "status": "active",
   "location": "The Burnished Market, The Laceworks district, near Lincoln and Belmont",
-  "description": "Radmila is a tall woman with the posture of someone who was once told to slouch and decided never to again. Her skin is warm brown, her hair a natural silver she has streaked with bioluminescent thread-fibers so it catches and pulses faintly in low light — not a geneware mod but textile craft, and she is meticulous about the distinction. She wears her own creations exclusively: today a structured coat with induction-panel lining that shifts color along the hem, tomorrow a deconstructed layering piece that incorporates a client's old Ferrogate Transit jacket. She has retractable claw geneware on her dominant hand, which she uses with equal facility for detail sewing and emphasis in arguments.\n\nRadmila came from the Balkans diaspora through Lagos and arrived in Meridian 88 with a sewing kit, a secondhand cutting laser, and opinions she has never once kept to herself. She is opinionated about aesthetics to the point of manifesto, believes that how people dress in a corponation city is a political act whether or not they mean it to be, and will refuse a commission she finds artistically dishonest even at cost to herself. She is the kind of person who makes enemies easily and keeps them; her regulars are fiercely loyal because she makes things that fit them like she understood what they needed before they said it.",
+  "description": "Radmila is a tall woman with the posture of someone who was once told to slouch and decided never to again. Her skin is warm brown, her hair a natural silver she has streaked with bioluminescent thread-fibers so it catches and pulses faintly in low light — not a geneware mod but textile craft, and she is meticulous about the distinction. She wears her own creations exclusively: today a structured coat with induction-panel lining that shifts color along the hem, tomorrow a deconstructed layering piece that incorporates a client's old Ferrogate Transit jacket. She has retractable claw geneware on her dominant hand, which she uses with equal facility for detail sewing and emphasis in arguments.\n\nRadmila came from the Balkans diaspora through Lagos and arrived in GLMZ with a sewing kit, a secondhand cutting laser, and opinions she has never once kept to herself. She is opinionated about aesthetics to the point of manifesto, believes that how people dress in a corponation city is a political act whether or not they mean it to be, and will refuse a commission she finds artistically dishonest even at cost to herself. She is the kind of person who makes enemies easily and keeps them; her regulars are fiercely loyal because she makes things that fit them like she understood what they needed before they said it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -232,11 +232,33 @@
     "The Burnished Market",
     "Ferrogate Transit",
     "The Laceworks",
-    "Meridian 88",
+    "GLMZ",
     "Palladian Construction",
     "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Silver",
     "Déjà Vu"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Balkan / West African (Nigerian diaspora)",
+    "height_cm": 182,
+    "weight_kg": 68,
+    "build": "Tall and lean with defined shoulders and wiry musculature from precision hand work; economical movement, no excess",
+    "hair_color": "Natural silver with embedded bioluminescent thread-fibers that pulse faintly in dim light",
+    "hair_style": "Worn long and loose, often pinned asymmetrically with custom hardware; fibers create subtle light-scatter effect",
+    "hair_length": "Long (shoulder-blade length)",
+    "eye_color": "Dark brown with microscopic overlay augmentation visible as faint prismatic shimmer at certain angles",
+    "skin_tone": "Warm medium brown with subtle olive undertone",
+    "complexion": "Sharply defined cheekbones; minimal grooming affectation; perpetual fine stress lines around eyes from decades of detail work; skin shows minor scarring on fingertips and palms from laser burns and needle puncture work",
+    "distinguishing_marks": [
+      "Thin white scar running from right wrist to mid-forearm (old cutting laser accident, 2198)",
+      "Series of small circular marks on inner wrists (textile needle practice scars, self-inflicted in youth)",
+      "Tattoo across right collarbone: geometric pattern in silver ink that reads as abstract until viewed at specific angle, then resolves to Cyrillic text (personal manifesto, refusing translation)",
+      "Right hand shows faint subdermal discoloration where claw geneware retracts; claws are dark amber/tobacco-colored, visible even when withdrawn"
+    ],
+    "visible_augmentations": "Retractable claw geneware on right hand (dark amber, extends approximately 8cm, visible subdermal scarring at base of digits); microscopic focus overlay in right eye (subtle prismatic artifact visible in bright light, manifests as faint rainbow shimmer)",
+    "posture_movement": "Habitually upright and deliberate; walks with measured stride; hands rarely still — constant micro-gestures when speaking, fingers often in needle-and-thread positioning even when empty; extends claws unconsciously when emphasizing points or when concentrating on aesthetic problems",
+    "clothing_style": "Exclusively wears her own designs: structured, asymmetrical pieces that integrate functional elements (induction panels, modular pockets, augmentation-access seams); color palette of deep teals, charcoal, burnt orange, silver; mixing of tailored and deconstructed elements; visible stitching as design feature; often incorporates salvaged fabric from client commissions or historical garments; layers always intentional and visible; leather and synthetic blends; zero corporate branding; Tier 3 independent maker aesthetic — expensive to those who understand the work, invisible wealth to outsiders"
+  },
+  "image_prompt": "Portrait of a tall, silver-haired woman with warm brown skin and sharp, defined features in her early 40s. Hair is long and embedded with bioluminescent fibers that pulse softly in dim light. Her right hand shows retractable dark amber claws, currently sheathed but visible at the knuckles. She wears a meticulously constructed charcoal coat with induction-panel lining that shifts color at the hem; layered beneath are asymmetrical deconstructed pieces in teals and burnt orange. Her right eye catches light with a prismatic shimmer from augmentation overlay. Geometric tattoo visible on collarbone. Studio lighting with moody side-light that catches the thread-fibers in her hair, cyberpunk fashion design aesthetic, intricate textile details sharp in focus, Balkan-Nigerian diaspora heritage evident, confident posture, hands positioned for emphasis or detail work, high fashion streetwear, bespoke maker energy, character portrait, fine art photography style, --ar 2:3 --v 6"
 }

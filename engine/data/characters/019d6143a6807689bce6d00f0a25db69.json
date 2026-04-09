@@ -50,7 +50,7 @@
       "Taps the table when making a point she considers settled"
     ],
     "example_lines": [
-      "'You want to know what Meridian 88 is? Dig down nine meters. The answer is down there, not up here in the neon.'",
+      "'You want to know what GLMZ is? Dig down nine meters. The answer is down there, not up here in the neon.'",
       "'I don't deal in theories. I deal in what I can hold in my hand and date within a twenty-year margin.'"
     ]
   },
@@ -243,5 +243,27 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Chicago"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Scandinavian / Latino",
+    "height_cm": 168,
+    "weight_kg": 92,
+    "build": "Heavyset, broad-shouldered, with the settled solidity of someone who spends long hours hunched over delicate work. Strength in her frame rather than softness.",
+    "hair_color": "Silver at temples, dark charcoal elsewhere",
+    "hair_style": "Cropped close to scalp, practical, showing the texture of her natural hair",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, with subtle amber undertones from archival-grade ocular filter implant",
+    "skin_tone": "Deep umber, rich and warm",
+    "complexion": "Weathered, sun-aged in the way of someone who spent early career years in open excavation sites. Fine lines around eyes from decades of focused detail work. Faint blue-green luminescence visible in low light from subcutaneous bioluminescent nodes mapping excavation sites across her shoulders, forearms, and collarbone.",
+    "distinguishing_marks": [
+      "Constellation of faint, self-applied bioluminescent implant sites across shoulders and upper back, glowing blue-green in darkness",
+      "Chronic orange-rust staining on fingertips and nail beds from archival polymer degradation compounds",
+      "Fine white scar tissue on left palm from a tooling accident during early fieldwork, approximately 4cm long",
+      "Small burn mark on right wrist from a calibration error on an archival laser spectrometer, shaped like a crescent moon"
+    ],
+    "visible_augmentations": "Archival-grade ocular filter implant visible as a subtle amber tint in the sclera and iris. Haptic-enhanced fingertips show no visible sign, but hands move with unusual precision in texture analysis. Bioluminescent nodes are always present but only visible in low light, creating a faint tracery of blue-green light beneath her skin. Magnification lenses perpetually perched on her head like a second set of eyes, even when not in use.",
+    "posture_movement": "Moves deliberately, with the careful economy of someone accustomed to handling irreplaceable objects. Tendency to hunch slightly forward, shoulders curved inward as if protecting something fragile. Hands are precise and steady; she rarely gestures broadly when speaking. Her default expression is focused concentration, interrupted by rare, genuine smiles when discussing artifacts.",
+    "clothing_style": "Tier 2/3 academic utility wear: archival-grade lab coat (University Spine insignia faded from repeated washing), reinforced field vest with multiple pockets containing calibrated tools and specimen bags. Underneath, simple high-collar thermal underlayer in charcoal. Heavy-soled archival boots, scuffed from decades of sublevel work. Wears a worn leather journal clipped to her belt. No jewelry except a simple band on her left ring finger — oxidized silver, pre-flood era, salvaged from a 2087 domestic site."
+  },
+  "image_prompt": "A 54-year-old West African-Scandinavian-Latina woman with deep umber skin and short silver-streaked charcoal hair, standing in a dimly lit underground archive room. Her skin glows faintly with bioluminescent blue-green constellation marks beneath the surface, like a map of submerged cities. She wears a faded University Spine lab coat over a charcoal thermal shirt, archival field vest heavy with tools and specimen bags. Magnification lenses sit perched on her head. Her hands, stained orange from polymer degradation compounds, hold a corroded pre-flood artifact with careful reverence. The lighting is cool fluorescent from overhead lights mixing with her own faint bioluminescence, casting soft shadows across her weathered, focused face. Surrounded by metal shelving, recovered artifacts, and the damp-earth smell of the drowned city. Cinematic, documentary-realism, intimate and scholarly. --ar 2:3 --v 6"
 }

@@ -28,7 +28,7 @@
       "That Sterling-Nakamura will find out what he's suppressing and he will lose the platform and funding that let him do any good at all"
     ],
     "core_desires": [
-      "To produce the paper that genuinely changes Meridian 88's water policy",
+      "To produce the paper that genuinely changes GLMZ's water policy",
       "To stop performing optimism and actually feel it again"
     ],
     "coping_mechanisms": [
@@ -61,7 +61,7 @@
     "One of his graduate students has independently noticed anomalous data in the monitoring array and is coming to him with questions he doesn't know how to answer without revealing the suppressed finding",
     "Sterling-Nakamura's division director schedules an unexpected full audit of the last eighteen months of research data — Emiliano has seventy-two hours to decide what to do"
   ],
-  "narrative_function": "Information source on lake ecology, environmental corporate politics, and what is actually happening to the water table under Meridian 88; quest giver for retrieving deep-lake samples or sensor data; represents the tension between corporate employment and scientific integrity.",
+  "narrative_function": "Information source on lake ecology, environmental corporate politics, and what is actually happening to the water table under GLMZ; quest giver for retrieving deep-lake samples or sensor data; represents the tension between corporate employment and scientific integrity.",
   "augmentations": "Patterned iris modification (amber-to-green spectral shift, cosmetic geneware, 10+ years old); internal data-recording implant in the right forearm (corporate-issued, standard Sterling-Nakamura field-researcher kit).",
   "daily_life": "Morning review of overnight sensor data from the lake's monitoring array, followed by either lab analysis or weekly meetings with the division director, lunch eaten in the facility atrium near the lake-view window, afternoon research or writing; Tuesdays he travels to University Spine to meet his graduate students.",
   "affiliation": "Sterling-Nakamura Environmental R&D, Lacustrine Division — on secondment from University Spine where he holds a honorary lectureship he uses to recruit graduate research assistants",
@@ -180,5 +180,26 @@
     "Big Rig",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Russian / Ghanaian-Ivorian",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "build": "Tall and broad-shouldered, softening through the midsection from years of desk work and lab hours; still carries the lean-muscled efficiency of someone who did fieldwork in harsh conditions, but the shoulders have lost their edge",
+    "hair_color": "Dark brown with premature silver threading through the beard",
+    "hair_style": "Short, neatly combed back; beard kept trimmed to 1-2cm, well-maintained",
+    "hair_length": "Short",
+    "eye_color": "Patterned iris modification — shifts between amber and forest green depending on ambient light; the pattern resembles concentric rings of refracted color, visible as an intentional geometric alteration beneath the surface",
+    "skin_tone": "Medium brown with warm undertones; sun-exposed on the face and forearms from decades of field research",
+    "complexion": "Weathered around the eyes and mouth from squinting at instruments and concentrating; faint laugh lines; skin condition is healthy but lined; a few small scars on his hands from fieldwork accidents",
+    "distinguishing_marks": [
+      "Fine white scar along the inside of the right forearm (approximately 4cm), thin and barely visible, from the implant insertion site — now partially obscured by a faded tattoo of a lake cross-section profile in black ink",
+      "Age spots on the back of both hands, barely noticeable",
+      "Calluses on the palms and fingers from handling sampling equipment"
+    ],
+    "visible_augmentations": "The patterned iris modification is immediately visible — both eyes display the amber-to-green spectral shift with concentric ring geometry when light hits them, unmistakably cosmetic geneware. No external chrome or subdermal visible; the forearm data-recording implant lies beneath the skin with only a faint surgical scar as evidence.",
+    "posture_movement": "Moves with economical, deliberate gestures; walks slightly forward-leaning as if still listening to field instruments; sits with one hand always on a coffee cup or a data tablet; has the unconscious posture of someone used to explaining technical concepts to others — hands move often, shoulders open",
+    "clothing_style": "Tier 2-3 blend: Sterling-Nakamura corporate field jacket (grey-green technical fabric with embedded sensor pockets) worn over a weathered henley or lab shirt; cargo pants with multiple utility pockets, some worn from use; expensive but scuffed field boots that have seen actual use; rarely wears the full Sterling-Nakamura corporate kit, preferring functional field wear. Accessories: a frayed paracord wristband, a water-resistant smartwatch, often a lanyard with a multifunction tool and research keycard. No jewelry except a plain titanium band on his left ring finger."
+  },
+  "image_prompt": "A 43-year-old man of mixed Russian and West African heritage, tall and broad-shouldered with soft middle age, standing in a modern corporate research facility overlooking Lake Michigan. He wears a grey-green technical field jacket and weathered cargo pants. His dark hair is threaded with premature silver in a neatly trimmed beard. His most striking feature is his eyes — a patterned iris modification with concentric geometric rings that shift between amber and forest green depending on the light. His posture is slightly forward-leaning, economical, competent. Faint scars visible on his hands. Warm fluorescent and window-filtered daylight. 35mm documentary photography aesthetic, cyberpunk near-future laboratory setting, photorealistic, intricate detail on the iris modification, subtle cinematic color grading --ar 2:3 --v 6"
 }

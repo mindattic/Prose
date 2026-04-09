@@ -262,5 +262,26 @@
     "The Shelf",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Balkan (Senegalese / Serbian)",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, the kind of thin that comes from decades of controlled caloric intake and purposeful movement rather than deprivation. Corded forearms and minimal body fat; shoulders narrower than his height might suggest, giving him a slightly canted posture.",
+    "hair_color": "Grey",
+    "hair_style": "Close-cropped, military cut maintained with precision, no styling product",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep brown with warm undertones, reflecting West African heritage",
+    "complexion": "Weather-worn, with deep lines around the eyes and mouth from decades of sun exposure and controlled expression. Skin has the particular texture of someone who was trained to suppress micro-expressions; his face rarely moves except when he chooses it to. Clean-shaven, methodical grooming despite resource scarcity.",
+    "distinguishing_marks": [
+      "Pronounced keloid scarring across right shoulder and clavicle in a radiating pattern consistent with blast trauma or shrapnel wound, left deliberately uncovered",
+      "Faint puncture-scar pattern on left temple suggesting old subcutaneous port removal",
+      "Thin white line running from left elbow to wrist, old and faded"
+    ],
+    "visible_augmentations": "Russet-orange cat tail with dark tip extending from base of spine, visibly animate with independent articulation; subdermal port scar on dorsum of left hand where tactical datalink was removed, with raised scar tissue that never healed flush to surrounding skin",
+    "posture_movement": "Economy of motion ingrained to the point of unconscious habit. Walks with measured pace, never rushed. Stands with weight balanced slightly forward on the balls of his feet as if ready to move. Hands rarely gesture; communication is primarily facial and postural. Moves through space as someone aware of sightlines and exits, a reconnaissance habit he cannot disable.",
+    "clothing_style": "Tier 4 functional — worn but maintained Axiom-era fatigue pants, deep grey with reinforced pockets; layered shirts in muted colors (charcoal, slate, dark green) that show careful mending. A long coat from the 2190s, still waterproofed, with internal pockets used for tools and small repair items. Worn synthetic boots with good tread, resoled multiple times. A single piece of jewelry: a thin braided wire bracelet on his right wrist, knotted with small loops he fidgets with during counseling sessions. No visible branding or corpo affiliations — all markings have been removed or faded."
+  },
+  "image_prompt": "portrait of a 68-year-old West African-Balkan man, lean angular build, close-cropped grey hair, deep brown skin with visible keloid scarring across right shoulder and clavicle, dark focused eyes, faint subdermal port scar on left hand, distinctive russet-orange cat tail with dark tip, wearing faded grey fatigue pants and layered muted-color shirts with careful mending, long weathered coat, worn boots, standing with military posture in industrial setting, The Shelf Tier 4 container housing in background, cool morning light, photorealistic portrait, cyberpunk aesthetic, introspective expression, documentary photography style, weathered and worn but meticulous grooming, --ar 2:3 --v 6"
 }

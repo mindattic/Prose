@@ -29,7 +29,7 @@
       "Losing their edge to age — the body slows before the mind accepts it"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Freedom from augmentation debt — the interest compounds like a tumor",
       "Control — over their body, their schedule, their future"
     ],
@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Kamala Sorokin-Gyasi's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Kamala Sorokin-Gyasi's past shows up in GLMZ, carrying old grievances and new chrome",
     "A corporate black site Kamala Sorokin-Gyasi once infiltrated is being reopened, and the people inside know his face",
     "A Tier 4 executive offers Kamala Sorokin-Gyasi a permanent position — the pay is obscene and the strings are invisible until they tighten"
   ],
@@ -276,10 +276,30 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Slagworks Industrial",
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Russian / West African",
+    "height_cm": 189,
+    "weight_kg": 78,
+    "build": "Lean and angular with visible musculature — the physiology of someone who trains constantly. No wasted mass. Shoulders broad but not bulky. Limbs long and proportionally efficient.",
+    "hair_color": "Black with premature gray at temples",
+    "hair_style": "Kept short and neat, styled back from forehead",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Warm medium brown with cool undertones",
+    "complexion": "Sharp cheekbones, angular jaw. Skin shows the strain of nocturnal living — slightly matte, minor discoloration under eyes. Expression habitually neutral and controlled. Grooming is meticulous but not decorative.",
+    "distinguishing_marks": [
+      "Thin pale scar along left jawline, approximately 8cm, slightly raised — old enough to be well-healed but still visible",
+      "Minor burn marks on inner left wrist in a pattern suggesting wire contact — barely noticeable unless pointed out"
+    ],
+    "visible_augmentations": "Gecko-grip implants visible at fingertips and toe pads — matte black synthetic material with subtle iridescent sheening when light catches them at certain angles. The implants create a subtle geometric texture on skin. No visible spinal augmentation — reflex boosters are internal.",
+    "posture_movement": "Stands with economical stillness — every micro-movement deliberate. Walks with minimal wasted motion, weight balanced. Hands rest at sides or on lap when seated, fingers rarely fidget. Movements are smooth and precise when engaged. Eye contact is controlled, neither aggressive nor avoidant. Default expression: guarded neutrality.",
+    "clothing_style": "Tier 3-4 functional wear — dark fitted synthetics, black tactical cargo pants with multiple sealed pockets, lightweight thermal undershirt. Carries a reinforced harness rig for equipment. Boots are matte black with reinforced toe caps (compatible with gecko-grip pads). No visible corp logos or status symbols. Layers suggest someone who works in Steamvent's heat and chemical air — practical, replaceable, purchased for durability not fashion."
+  },
+  "image_prompt": "A tall lean man, dark skin with Russian heritage undertones, sharp angular features, black hair with gray at temples, standing in nocturnal cyberpunk cityscape. Matte black gecko-grip implants visible on fingertips and toe pads with subtle iridescent sheening. Dark tactical clothing, sealed cargo pants, reinforced boots. Posture is economical and controlled, expression carefully neutral. Industrial geothermal district background — steam vents, chemical haze, warm amber and sickly green industrial lighting. Cinematic noir cyberpunk aesthetic, film grain texture, moody atmospheric lighting. Close-up focus on face and implants. --ar 2:3 --v 6"
 }

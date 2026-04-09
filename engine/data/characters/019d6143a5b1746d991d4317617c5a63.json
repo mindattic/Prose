@@ -31,7 +31,7 @@
     "core_desires": [
       "To build something that outlasts the next contract cycle",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Exercises compulsively — the body must be ready, always",
@@ -282,5 +282,26 @@
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian (inferred from Strand-Otieno surname pattern)",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Compact and densely muscled, built low to the ground with a center of gravity engineered for impact absorption. Shoulders broad relative to frame, forearms corded with functional strength rather than display muscle.",
+    "hair_color": "Dark brown, natural with gray threading at temples",
+    "hair_style": "Kept short and practical, faded sides, slightly longer on top — easy to maintain between identities",
+    "hair_length": "Short",
+    "eye_color": "Augmented — chrome iris rings surrounding natural dark brown pupils, capable of thermal and low-light overlay",
+    "skin_tone": "Medium warm brown with subtle undertones reflecting mixed heritage",
+    "complexion": "Weathered but maintained. Fine lines around the eyes from sustained focus work. Jaw defined but not sharp. Grooming is deliberate and controlled — nothing that draws attention, nothing that reads as neglect.",
+    "distinguishing_marks": [
+      "Hairline scar tissue across the left temple and upper scalp, irregular and puckered — site of cortical bomb removal by street doc.",
+      "Thin white scar running from left cheekbone toward jawline, approximately 4 centimeters, likely from blade work.",
+      "Small burn mark on right forearm, diameter of a cigarette, deliberately unremarkable."
+    ],
+    "visible_augmentations": "Chrome iris rings around both eyes — immediately visible as cybernetic enhancement. Scar tissue at left temple is readable as surgical history to anyone trained in augmentation recovery. No visible limb chrome or subdermal plating, but the precision of his movement suggests internal work.",
+    "posture_movement": "Economy of motion. Stands with slight forward cant, shoulders relaxed but ready. Moves quietly and deliberately, weight distributed low. Hands at rest are still — no nervous gesturing. Eyes track constantly, not paranoid but attentive. Transitions between civilian slouch (cover identity) and operational posture are visible to trained observers.",
+    "clothing_style": "Tier 3-4 functional. Unmarked synthleather jacket worn soft from use, matte black. Underneath: nondescript long-sleeve shirt in neutral gray that can pass in both corporate buildings and street-level bars. Cargo pants with reinforced seams and subtle gear loops. Worn boots with good tread — made for running or standing long hours. No obvious logos or affiliation markers. Dressed to be forgotten, not to impress."
+  },
+  "image_prompt": "male character, compact densely muscled build, height 168cm, medium warm brown skin tone, dark hair with gray temples worn short, cybernetic eyes with glowing chrome iris rings and thermal overlay capability, scar tissue visible at left temple from augmentation removal, thin white scar along left cheekbone, weathered focused expression, wearing matte black synthleather jacket over gray long-sleeve shirt and reinforced cargo pants, worn boots, standing in low ready posture with hands at rest, subtle professional alertness in body language, kessler row setting with neon signs and augmentation clinic storefronts in soft focus background, moody cyberpunk lighting with cool blue-gray tones and hints of red neon glow, character portrait, realistic, gritty atmosphere, shot composition emphasizes quiet intensity and operational readiness --ar 2:3 --v 6"
 }

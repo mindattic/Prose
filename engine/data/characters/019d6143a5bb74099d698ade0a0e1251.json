@@ -31,7 +31,7 @@
     "core_desires": [
       "To protect the people in their district who can't protect themselves",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Maintains weapons obsessively — cleaning guns is meditation",
@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "Someone is impersonating Aybek Herrera-Kyei on jobs, and the impersonator is better at the work than the original",
-    "A crew member from Aybek Herrera-Kyei's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Aybek Herrera-Kyei's past shows up in GLMZ, carrying old grievances and new chrome",
     "The fixer who handles Aybek Herrera-Kyei's contracts goes silent — dead, disappeared, or turned"
   ],
   "narrative_function": "Aybek Herrera-Kyei represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
@@ -281,10 +281,31 @@
   "related_entities": [
     "Masquerade",
     "Ironveil Canopy",
-    "Meridian 88",
+    "GLMZ",
     "TESSERA PG-2 'Signature'",
     "The Pure Hand",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Central Asian / Latin American",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Stocky and solid, compact muscle density with a heavyweight fighter's frame — broad shoulders tapering to a narrow waist. Hands are large and calloused, with scarred knuckles. Chest and forearms show pronounced muscle definition.",
+    "hair_color": "Dark brown, graying at temples",
+    "hair_style": "Short, swept back, minimal styling",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unremarkable",
+    "skin_tone": "Tan olive complexion, weathered",
+    "complexion": "Face is worn but not aged — hard angles to the jaw and cheekbones, lines around the eyes from years of squinting. Stubble perpetually at 1-2 days growth. No cosmetic grooming; functional appearance only.",
+    "distinguishing_marks": [
+      "Surgical scar running from left temple to jawline, thin and well-healed, partially obscured by hair growth",
+      "Cluster of three burn marks on the inside of right forearm — old electrical burns, uniform spacing, deliberate cauterization pattern",
+      "Knuckle scars on both hands, deep and raised, telling a history of bare-knuckle violence"
+    ],
+    "visible_augmentations": "Thermal masking system visible as a faint network of luminescent micro-circuitry beneath the skin across the chest and upper back, most visible when ambient light is low. The circuitry runs in geometric patterns along the clavicle and deltoids. Move-by-wire neural integration visible as subtle subdermal striations along the spine when he moves — the muscle control is unnaturally precise, almost mechanical in its efficiency. No chrome limbs; all augmentation is internal or subcutaneous.",
+    "posture_movement": "Stands with weight distributed evenly, shoulders relaxed but ready. Moves with controlled efficiency — no wasted motion. Combat stance is his neutral. Eyes constantly scan — threat assessment is automatic. Handshakes are firm but measured, never aggressive. When focused on a target, he becomes perfectly still, predatory.",
+    "clothing_style": "Tier 3-4 practical wear — charcoal tactical pants with reinforced thigh pockets, black compression shirt layered under a worn gray canvas overshirt with utility pockets and rolled sleeves. Matte black steel-toed boots, well-maintained. Heavy watch on left wrist (analog, no smart features — redundancy is safety). Light gray neural-dampening jacket (non-branded, military-grade) draped over a chair or worn open. Everything is neutral, durable, and designed for quick movement. No logos, no status signifiers — complete functional anonymity."
+  },
+  "image_prompt": "Cyberpunk character portrait, stocky Eurasian male, age 40, dark brown hair graying at temples, olive tan skin, hard angular face, dark penetrating eyes, surgical scar along left jaw, faint luminescent thermal masking circuitry visible beneath chest and upper back skin glowing faintly, wearing matte black compression shirt and worn gray canvas overshirt with tactical pockets, heavy analog wristwatch, neural-dampening jacket draped nearby, standing in neutral combat stance, perfectly still and predatory, moody industrial lighting with cool blue and amber neon accents, cinematic depth of field, photograph style realism, noir cyberpunk aesthetic, 2226 GLMZ setting, high detail facial features --ar 2:3 --v 6"
 }

@@ -13,7 +13,7 @@
   "age": 31,
   "status": "active",
   "location": "Burnside Corridor — transit hub connecting Shelf to Circuit, near North Ave and Damen",
-  "description": "Eshe Zhukov-Wiredu is lean and angular, all sharp edges and visible tension. At 31, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a sniper out of Burnside Corridor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented sniper in Meridian 88, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Eshe Zhukov-Wiredu is lean and angular, all sharp edges and visible tension. At 31, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a sniper out of Burnside Corridor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented sniper in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.32,
@@ -31,7 +31,7 @@
     "core_desires": [
       "Knowledge — to understand the systems that grind people down",
       "To matter to someone for who they are, not what they can do",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Ritual — follows the same pre-job routine every time, superstition as structure",
@@ -276,11 +276,32 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "The Nearfield",
     "Burnside Pocket",
     "Slagworks Industrial"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Russian / West African",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with visible musculature — the build of someone who maintains fitness out of necessity rather than vanity. Long-limbed, minimal body fat, shoulders slightly narrower than hips. There's a coiled tension to his frame, like a spring compressed.",
+    "hair_color": "Dark brown, almost black",
+    "hair_style": "Short, practical cut — no styling product, maintained for function. Slight curl at the temples.",
+    "hair_length": "Short",
+    "eye_color": "Pale gray, natural",
+    "skin_tone": "Medium brown with golden undertones — the blend of his Russian and Wiredu lineage evident in his complexion",
+    "complexion": "Angular, high cheekbones, a narrow jaw that tapers sharply. His face is striking but unrefined — skin shows minor scarring along the left temple (old wound, poorly healed), slight darkness under the eyes from chronic sleep deficit. Facial hair is kept minimal, usually a day or two of stubble rather than fully shaved or grown.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple toward the hairline, approximately 3cm, partially obscured by hair growth",
+      "Faint chemical burn scars on the right side of his neck (approximately 2cm x 1cm) — pale pink, slightly raised, from a volatile extraction gone wrong",
+      "Small tattoo on inner left wrist: a simple crosshair symbol in black ink, barely 1cm diameter"
+    ],
+    "visible_augmentations": "Chrome nasal passages — visible as faint metallic shimmer around his nostrils and the bridge of his nose where the chemical analyzer integrates with natural tissue. The chrome catches light and creates an uncanny reflection. No other visible augmentations, though the pain editor is subcutaneous.",
+    "posture_movement": "He moves with economical precision — no wasted motion. His posture is slightly forward-leaning, as if perpetually tracking something. His head tracks slowly, methodically, eyes registering details. When he sits, he positions himself with clear sight lines to exits. There's a stillness to him when focused, an absence of fidgeting or nervous energy. When not focused, he exhibits minor tremors in his hands — either from stimulant use or the edge that chronic pain-dampening creates.",
+    "clothing_style": "Tier 4 pragmatist. Dark colors — charcoal, black, deep gray. Worn tactical cargo pants with multiple pockets and reinforced seams, synthetic blend that sheds dirt and dries fast. Layered tops: usually a dark long-sleeve compression shirt under a heavier jacket (synthetic leather or ballistic nylon, no visible branding). Boots are military-grade, scuffed, laces double-knotted. A worn canvas messenger bag (faded black, multiple repair patches) carries his essentials. No jewelry except a faded paracord bracelet on his left wrist. His jacket has several deep pockets and one internal pocket where he keeps dead-drop messages. Everything is functional, nothing is fashionable."
+  },
+  "image_prompt": "Portrait of Eshe Zhukov-Wiredu, a lean 31-year-old sniper with angular features and pale gray eyes, dark brown hair in a short practical cut. Medium brown skin with golden undertones, striking but unrefined face. Faint metallic chrome shimmer visible around nasal passages and bridge of nose from a chemical analyzer augmentation. White scar on left temple. Wearing dark tactical cargo pants and a charcoal long-sleeve compression shirt under a worn black synthetic leather jacket. Dark circles under eyes from chronic sleep deficit. Cyberpunk noir aesthetic, moody industrial setting, Burnside Corridor transit hub background with neon signage and rain-slicked surfaces. Cool blue and amber lighting. Gritty realism, portrait orientation, professional photography style, shallow depth of field focusing on face. --ar 2:3 --v 6"
 }

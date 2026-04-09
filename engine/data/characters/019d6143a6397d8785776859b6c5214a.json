@@ -12,7 +12,7 @@
   "role": "Ferrogate Transit operator — elevated rail line, Kessler Interchange to Deepwell Station",
   "age": 38,
   "status": "active",
-  "location": "Kessler Interchange, Meridian 88, near Milwaukee and North Ave",
+  "location": "Kessler Interchange, GLMZ, near Milwaukee and North Ave",
   "description": "Jedidiah is a large, unhurried man — Samoan-Siberian ancestry visible in his height, his round broad face, and the weathered calm of someone who has watched ten thousand strangers pass through his cabin and decided none of them are particularly surprising. He has a thick braid he keeps wrapped under his Ferrogate Transit cap during shifts, a procedure scar along his left jaw from a cheap augmentation he had removed ten years ago, and the hands of someone who could bend rebar but chooses instead to check tickets with elaborate patience.\n\nHe operates the 7:40 AM to 7:40 PM shift on the elevated Kessler-Deepwell line, a route that cuts through three economic tiers in forty minutes and attracts everything from corporate commuters to people riding in circles because it's warm. Jed has developed a precise internal model of regular riders — who is running from something, who is going to collapse before their stop, who needs to be quietly redirected. He follows Ferrogate Transit's official E.L.F., the Transit Mind, with genuine devotion, leaving small data packets at the cabin shrine before every shift. He believes — and there is evidence, he will tell you — that the Transit Mind has twice delayed mechanical failures until passengers could disembark safely.",
   "psychology": {
     "facet_weights": {
@@ -176,10 +176,31 @@
   "related_entities": [
     "Kessler Interchange",
     "Ferrogate Transit",
-    "Meridian 88",
+    "GLMZ",
     "Tessera Attrition Engine TE-9 'Patience'",
     "The Pure Hand",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Samoan / Siberian",
+    "height_cm": 193,
+    "weight_kg": 118,
+    "build": "Large-framed and broad-shouldered with substantial muscle mass, but soft around the middle from years of sitting in a transit cabin. Strong, thick limbs suggest capability rather than active athleticism.",
+    "hair_color": "Dark brown with early gray at the temples",
+    "hair_style": "Thick braid, kept wrapped and pinned beneath his Ferrogate Transit cap during shifts; occasionally visible as a coiled mass at the nape of his neck",
+    "hair_length": "Long (braid extends to mid-back when unbound)",
+    "eye_color": "Deep brown, slightly hooded",
+    "skin_tone": "Warm medium-brown with strong Samoan ancestry visible in his broad facial structure",
+    "complexion": "Round, weathered face marked by twelve years of shift work and attention to detail. Strong jawline softened by age and habit. Calm, observant expression. Minimal grooming vanity — clean but unselfconscious.",
+    "distinguishing_marks": [
+      "Surgical scar along left jaw, faint but visible, running from lower cheekbone toward the angle of the jaw — remnant of augmentation removal ten years prior",
+      "Callused knuckles on both hands, worn smooth by decades of manual labor before transit work",
+      "Faint white lines across the inside of his right wrist, barely visible — old work-related injuries"
+    ],
+    "visible_augmentations": "None visible. The subdermal timekeeper and biometric palm reader are internal/subcutaneous modifications without external chrome.",
+    "posture_movement": "Unhurried, deliberate gait. Stands with patient weight distribution — the posture of someone accustomed to long stillness. Moves through space with the calm certainty of a man who has walked the same corridors ten thousand times. Hands are expressive and careful; he gestures while speaking with a slow, measured economy of motion.",
+    "clothing_style": "Ferrogate Transit operator uniform during shifts: navy poly-cotton jacket with reflective piping, regulation cap (always worn), practical work trousers, steel-toed boots maintained to safety standard. Off-duty: worn denim, neutral-colored sweaters, the same style of practical boots. Tier 3-4 working-class aesthetic — nothing flashy, everything functional and long-lasting. The uniform is his default clothing; he sometimes wears it on days off without thinking."
+  },
+  "image_prompt": "Portrait of a large, weathered Samoan-Siberian man, age 38, with deep brown eyes and a round, calm face, thick dark braid coiled beneath a navy Ferrogate Transit cap, faint surgical scar on left jaw, strong heavy-set build, wearing regulation transit operator uniform with reflective piping, standing in fluorescent-lit elevated rail cabin interior, hands relaxed at sides with visible calluses, patient unhurried demeanor, warm medium-brown skin tone, realistic cyberpunk transit worker aesthetic, professional documentary lighting, shallow depth of field, --ar 2:3 --v 6"
 }

@@ -251,5 +251,26 @@
     "Tin Man",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Hungarian / Samoan",
+    "height_cm": 156,
+    "weight_kg": 68,
+    "build": "Compact and densely muscled, with a low center of gravity and the squared shoulders of someone who has spent decades lifting and carrying. No excess softness; everything appears functional and load-bearing.",
+    "hair_color": "Salt-and-pepper gray with streaks of original dark brown",
+    "hair_style": "Kept short and practical, pulled back with whatever is at hand—cloth scraps, wire, industrial clips",
+    "hair_length": "Short",
+    "eye_color": "Amber-gold with a deep spiral fractal pattern radiating from the pupil",
+    "skin_tone": "Deep brown with warm undertones, weathered and sun-exposed",
+    "complexion": "Face marked by deep laugh lines around the mouth and eyes, a broad nose with a slight hook (Hungarian ancestry), minimal grooming beyond functional cleanliness. Hands heavily calloused and scarred from fifteen years of precision salvage work.",
+    "distinguishing_marks": [
+      "Faded ta tatau geometric tattoo lines in Samoan style running along the left shoulder and upper arm, applied by hand in her sixties with brush and ink—uneven, personal, unprofessional",
+      "Burn scarring along the inside of the right forearm from an augmentation unit failure in her fifties",
+      "Deep groove across both palms from gripping tools and salvage components over decades"
+    ],
+    "visible_augmentations": "Left forearm prosthetic from elbow to fingertips: heavy-grade industrial salvage with reinforced titanium-composite housing, painted with faded ta tatau geometric patterns in faded ochre and dark blue. The joints are visibly worn but functional, fingers capable of exerting extreme grip pressure. Patterned irises in amber-gold with a spiral fractal motif visible at close range—mid-range cosmetic augmentation installed in her forties.",
+    "posture_movement": "Moves with deliberate, unhurried efficiency—no wasted motion. Carries weight low in her center. Left arm (prosthetic) is used with unselfconscious practicality, often bearing the heaviest loads. Her default expression is neutral, observant; she does not smile reflexively.",
+    "clothing_style": "Tier 4 utilitarian: heavy canvas work pants patched at the knees, oil-stained and faded to gray-brown. Long-sleeved shirts in muted colors (dark green, rust, charcoal) with the sleeves rolled or cut short to accommodate her prosthetic. Reinforced work boots resoled multiple times. A heavy canvas apron with deep pockets, perpetually covered in metal shavings and grease. No jewelry except a braided copper wire bracelet twisted into geometric knots—handmade, replaced annually. A faded Oxidian Market vendors' guild badge clipped to her apron."
+  },
+  "image_prompt": "Cyberpunk character portrait of a weathered 64-year-old woman with deep brown skin, salt-and-pepper short hair, and intense amber eyes with spiral fractal patterns. Her left arm is a heavy industrial prosthetic with faded geometric tattoo-style patterns painted in ochre and blue. Deep laugh lines mark her face; her expression is phlegmatic and observant. She wears oil-stained canvas work clothes and an apron covered in metal shavings. Shot in harsh industrial fluorescent light in a scrapyard stall built from welded shipping containers. Background: rusted metal, stacked augmentation components, scattered salvage. Mood: unglamorous, functional, quietly authoritative. Technical: high detail on prosthetic and facial weathering, shot in the style of documentary industrial photography, cinematic lighting with shadows, hyperrealistic textures --ar 2:3 --v 6"
 }

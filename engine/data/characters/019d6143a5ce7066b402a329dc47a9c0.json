@@ -178,5 +178,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Nahuatl / Scandinavian",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "build": "Lean and angular, with the deliberate posture of someone who has trained themselves to occupy space precisely. Long-limbed, minimal subcutaneous fat, visible tendon definition in forearms and neck.",
+    "hair_color": "Variable — currently a muted ash-grey, but shifts through cool-to-warm spectrum (lavender, pale gold, cool silver) in response to emotional state. The mod is visible only if you know what to look for: a faint iridescent quality to the strands under certain light.",
+    "hair_style": "Shoulder-length, often pulled back in a loose knot or left to fall asymmetrically. The color-shift mod requires a certain length to be fully expressive; they would never cut it short.",
+    "hair_length": "Medium",
+    "eye_color": "Augmented: shifting mandala patterns in amber and grey, intricate and almost hypnotic. The patterns move subtly, appearing to rotate when they focus on something. Pupil dilation remains normal.",
+    "skin_tone": "Medium olive with warm undertones — a mixed complexion that reads as neither fully Nahuatl nor fully Scandinavian, but something synthesized between. Sun-exposed areas show slight freckling along the cheekbones and bridge of nose.",
+    "complexion": "Fine-featured, high cheekbones, a narrow jaw that tapers to a pointed chin. Skin is consistently well-maintained but shows the subtle exhaustion of irregular sleep — faint shadows under the eyes that no amount of retinoid will fully erase. Their expression rests in a state of mild irony, eyebrows slightly arched. They rarely show full smiles; instead, they manage controlled expressions that suggest private amusement or calculated warmth.",
+    "distinguishing_marks": [
+      "Faint lunar-shaped scar on the left inner wrist, approximately 2cm long, from an adolescent accident — barely visible but noticeable if they wear their hands bare.",
+      "A series of small constellation tattoos running up the inside of their left bicep (Orion, Cassiopeia, Andromeda) in fine black ink, each roughly 3-4cm. Applied over years, forming a loose narrative of personal mythology.",
+      "Barely-visible subdermal scars at both temples where the neural-state-link implant was integrated; only noticeable in direct overhead lighting when hair is pulled back."
+    ],
+    "visible_augmentations": "The patterned shifting irises are immediately striking — they register as intentional cosmetic work, the kind that announces expertise and investment. The hair's color-response is subtle enough that most observers chalk it up to lighting or dye job; only those familiar with the mod recognize it as active bioware. High-end haptic feedback gloves visible during work sessions — sleek black polymer with silver feedback nodes along palm and fingers, always kept in pristine condition. The gloves are worn with unconscious ease, treated as extensions of thought rather than tools.",
+    "posture_movement": "Economical and precise. They move with the self-consciousness of someone who has internalized how they appear, each gesture calibrated. When alone, the careful architecture drops slightly — they slump, sprawl on floors, let their shoulders round. In professional contexts, they are composed: upright, hands visible and purposeful, eye contact maintained with the precision of someone managing a performance. They have a habit of touching their own forearms absently, fingers finding the constellation tattoos.",
+    "clothing_style": "Context-dependent. In client meetings: high-end corpo-tier pieces (tailored neural-responsive fabrics from designers like Metaxen or Threadline, in cool neutrals and subtle iridescent finishes that coordinate with their hair shifts). Jewelry is minimal but expensive — a thin silver bracelet with an embedded neural interface diagnostic chip, perhaps a ring with an opal or moonstone that catches light. In private: soft, worn pieces in greys and blacks, clothes that have been washed hundreds of times until they feel like skin. Loose linen shirts, old thermal base layers, anything that prioritizes comfort over presentation. Footwear varies: corporate context means sleek, precision-engineered boots or minimalist shoes; at home and in The Garret, they go barefoot or wear soft, shapeless slippers."
+  },
+  "image_prompt": "a lean, 37-year-old nonbinary person with shoulder-length ash-grey hair that shifts hue subtly with mood, intense amber-and-grey mandala patterned irises that slowly rotate, medium olive skin with scattered freckles, high cheekbones, sharp jawline; wearing expensive corporate-tier clothing in cool neutrals with iridescent finishes, black high-end haptic feedback gloves visible on hands, minimal jewelry including a silver neural-interface bracelet; standing in a well-appointed minimalist studio apartment with soft ambient blue-grey lighting, VR rigs and design terminals visible in background, a few constellation tattoos visible on inner bicep; expression conveying private irony and controlled warmth, posture precise and performance-aware; cyberpunk aesthetic, corporate-tier immersive artist, photorealistic portrait, moody atmospheric lighting, intricate detail on iris patterns and subtle hair color shifts, shot at eye level --ar 2:3 --v 6"
 }

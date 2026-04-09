@@ -238,5 +238,25 @@
     "Ironvein",
     "Adaeze Chen-Hawkins"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Mongolian",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Wide-shouldered and slope-backed, substantial without being obese — the build of someone who has spent decades sitting still at desks and tables, accumulating mass in the chest and midsection. His frame suggests settled power rather than kinetic strength.",
+    "hair_color": "Grey",
+    "hair_style": "Cropped close to the scalp in a utilitarian cut",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Deep sepia-brown with subtle warm undertones from his mixed heritage",
+    "complexion": "Wide face with a prominent, squared jaw. Hooded eyes that sit back slightly, creating an impression of perpetual amusement or calculation. Skin is lined but well-maintained, suggesting careful grooming. No visible stubble — he shaves daily. Expression is habitually neutral, mouth relaxed into a faint downward curve.",
+    "distinguishing_marks": [
+      "Fine white scar running 3cm along his left temple, barely visible unless light catches it at an angle — old injury, decades past.",
+      "Thin linear scar on his right knuckles, faded but still visible, suggesting a single incident of direct violence in his youth."
+    ],
+    "visible_augmentations": "Subdermal ledger-display mounted along the left forearm, just below the elbow — a thin luminescent panel beneath translucent skin that occasionally flickers with scrolling numerals visible only to him. The display creates a faint blue-green glow under his shirt cuff when active. No other visible chrome or augmentation; his cochlear filter is completely internal.",
+    "posture_movement": "Stillness is his default. He sits with both feet flat on the floor, shoulders squared, hands often occupied with a polished bone stylus that he rotates methodically through his fingers. When he walks, his gait is deliberate and unhurried — economical, never rushed. His head remains still while his eyes track. There is nothing nervous in his carriage; he moves like a man who has never been surprised.",
+    "clothing_style": "Tier 3-4 working professional with deliberate anachronism. Pressed slacks in charcoal or dark grey. Collared shirts in muted, warm tones — terracotta, ocher, dusty sage — always buttoned to the collar, sleeves rolled to mid-forearm on warmer days. No logos or corporate insignia. A vest in matching neutral tones, tailored but not ostentatious. Shoes are polished leather, practical, decades out of fashion but scrupulously maintained. A single signet ring on his right hand. No jewelry beyond that. His clothing suggests someone who respects formality and tradition, who operates outside corpo time but refuses to embrace street aesthetics."
+  },
+  "image_prompt": "Cyberpunk loan shark, 52-year-old man with deep sepia-brown skin and close-cropped grey hair, wide-shouldered and substantial build, sitting with perfect stillness in a converted barge office, soft blue-green glow emanating from subdermal ledger-display on left forearm visible beneath translucent skin, polished bone stylus turning between fingers, wearing immaculate terracotta collared shirt and pressed charcoal slacks, hooded dark eyes with subtle amusement, patient wide face, harsh overhead fluorescent lighting reflecting off metal furniture and old accounting terminals, Lake Shore backdrop through grimy windows, cyberpunk noir atmosphere, mood: quiet menace and mathematical precision, 2226 GLMZ aesthetic, film noir meets tech decay, shallow depth of field focusing on face and forearm display, cool color grading with warm shirt tones contrasting blue-green augmentation glow --ar 2:3 --v 6"
 }

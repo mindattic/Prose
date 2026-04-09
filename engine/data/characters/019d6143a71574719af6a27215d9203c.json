@@ -14,7 +14,7 @@
   "age": 38,
   "status": "active",
   "location": "Milwaukee Core — operates from a rented office space disguised as an HVAC consulting firm",
-  "description": "Vesper Kade plans extractions the way other people play chess — five moves ahead, every contingency mapped, every variable assigned a probability. She spent twelve years as a logistics coordinator for Torii Security Group before the corp restructured her division and offered her a severance package worth less than her monthly augmentation maintenance. She walked out with her skills, her contacts, and a very detailed understanding of how corporate security systems fail.\n\nShe built the Thermite Collective from the ground up over six years, hand-picking operators who could execute clean work without the ego that gets people killed. The crew's reputation is their product — no collateral damage, no witnesses, no mess. Clients pay a premium because Vesper's plans work. When they don't, she has three backup plans that do.\n\nPhysically unremarkable by design. Medium height, brown hair kept short, clothes that say middle management. She could walk through any lobby in Meridian 88 without triggering a second glance. This is the most dangerous thing about her. The only augmentation visible is a faint dermal port behind her left ear — the rest is all internal, all quiet, all precise.",
+  "description": "Vesper Kade plans extractions the way other people play chess — five moves ahead, every contingency mapped, every variable assigned a probability. She spent twelve years as a logistics coordinator for Torii Security Group before the corp restructured her division and offered her a severance package worth less than her monthly augmentation maintenance. She walked out with her skills, her contacts, and a very detailed understanding of how corporate security systems fail.\n\nShe built the Thermite Collective from the ground up over six years, hand-picking operators who could execute clean work without the ego that gets people killed. The crew's reputation is their product — no collateral damage, no witnesses, no mess. Clients pay a premium because Vesper's plans work. When they don't, she has three backup plans that do.\n\nPhysically unremarkable by design. Medium height, brown hair kept short, clothes that say middle management. She could walk through any lobby in GLMZ without triggering a second glance. This is the most dangerous thing about her. The only augmentation visible is a faint dermal port behind her left ear — the rest is all internal, all quiet, all precise.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -200,12 +200,34 @@
     "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Axiom Industries",
     "Variable Impedance Rifle VIR-9 'Switchback'",
     "Vesper",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Mixed European / East Asian (surname suggests Germanic-influenced hyphenated lineage with possible Korean or Japanese secondary line)",
+    "height_cm": 167,
+    "weight_kg": 62,
+    "build": "Lean and economical — no excess mass, no theatrical musculature. The build of someone who runs three times a week because the schedule requires it, not for pleasure. Postural efficiency over presence.",
+    "hair_color": "Dark brown, naturally graying at temples but kept covered with professional-grade dye",
+    "hair_style": "Cropped short, asymmetrical — longer on left side (covers the dermal port), severely angled. Styled for zero maintenance; takes four minutes to comb.",
+    "hair_length": "Short",
+    "eye_color": "Warm brown with faint amber undertones; no visible augmentation but lens clarity suggests subcutaneous optical overlay integration",
+    "skin_tone": "Even, olive-toned complexion with subtle golden undertone — consistent with mixed heritage",
+    "complexion": "Minimal makeup, minimal grooming ostentation. Skin shows faint stress creases at the corners of eyes and mouth — not from age but from five-hour sleep cycles and constant low-level threat assessment. Pale scar tissue on left knuckles (old injury, professionally healed). Light freckling across the bridge of nose.",
+    "distinguishing_marks": [
+      "Faint linear scar along left jawline, approximately 3cm long, running from ear toward chin — consistent with edged weapon contact, expertly sutured, barely visible unless caught in certain light",
+      "Small dermal port scar behind left ear, roughly the size of a coin, with faint radiating microlaser scarring around perimeter indicating multiple implant revisions",
+      "Callus formations on right index and middle finger consistent with fifteen years of precision input device use",
+      "Thin white scar across the back of left hand between thumb and index — bladed weapon contact, old"
+    ],
+    "visible_augmentations": "Single dermal port behind left ear with subtle iridescent sheen under direct light. Faint surgical scars at hairline suggest internal optical or neural work. Otherwise: none visible. All augmentations subcutaneous or internal — subvocal array leaves no external trace, spatial memory cortex integration invisible, tactical overlay sits behind unmodified iris.",
+    "posture_movement": "Economical and controlled. Stands with weight slightly forward on balls of feet — never fully relaxed, always ready to move. Walks with minimal arm swing, gaze fixed two meters ahead and slightly elevated (tactical awareness pattern). Hands rest palms-down on thighs or table — never fidgeting, never crossing arms. Speaks quietly; makes people lean in. Makes eye contact deliberately, not reflexively — every glance is tactical.",
+    "clothing_style": "Middle-management aggressively neutral. Blazers from corporate surplus retailers (Tier 3 brands like Prometheus Corp Fashions), usually in charcoal or navy. Under-blazer: clean white or gray t-shirts with no graphics or branding. Trousers: dark, tailored, pockets modified for discrete equipment carry. Shoes: black or charcoal, function-focused, worn-in enough to avoid attention. A single piece of jewelry — a watch, utilitarian, possibly with encrypted data access. Deliberately erases herself from memory; someone would struggle to describe her five minutes after meeting."
+  },
+  "image_prompt": "Cyberpunk portrait of a 38-year-old woman with severe, efficient features, dark brown cropped asymmetrical hair, warm brown eyes, lean muscular build, olive skin tone with faint freckling. Wearing charcoal blazer over plain gray t-shirt, minimalist aesthetic. Faint scar along left jawline, dermal port visible behind left ear with iridescent edge. Standing with perfect tactical posture, weight forward, controlled gaze. Cold studio lighting with cyan-tinted shadows, high contrast. Dystopian corporate GLMZ aesthetic, 2226 Milwaukee architecture in soft-focus background. Film noir intensity, absolute lack of ornamentation. Hyper-realistic, photographic precision, clinical precision. --ar 2:3 --v 6"
 }

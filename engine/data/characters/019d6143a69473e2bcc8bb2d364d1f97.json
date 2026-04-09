@@ -13,7 +13,7 @@
   "age": 37,
   "status": "active",
   "location": "The Garret, a converted water-treatment building in Edgewater Prism, near Lincoln and Addison",
-  "description": "Pavlína is compact and precise in their movements, with warm golden-brown skin currently hosting a living portfolio: bioluminescent geometric forms along both arms that shift color with their body temperature, a mossy texture patch on their left shoulder that is genuinely soft to touch (a client gift they kept), and irises engineered to display a slow nautilus spiral in deep amber and black. Their hair is cropped close on one side and grown into a dramatic sweep on the other, currently a matte black that absorbs light strangely.\n\nThey are one of the most sought-after gene-mod body artists in Meridian 88's middle tiers — not cheap enough for Tier 1 walk-ins and not expensive enough for Tier 4 corporate vanity, which suits them perfectly. Their studio occupies two floors of The Garret and smells of antiseptic and the particular warm mineral scent of living tissue culture. They are precise, unhurried, and deeply opinionated about their art form, which they will share with you whether or not you asked. They have no patience for clients who want mods for status signaling and extraordinary patience for clients who want mods to feel like themselves.",
+  "description": "Pavlína is compact and precise in their movements, with warm golden-brown skin currently hosting a living portfolio: bioluminescent geometric forms along both arms that shift color with their body temperature, a mossy texture patch on their left shoulder that is genuinely soft to touch (a client gift they kept), and irises engineered to display a slow nautilus spiral in deep amber and black. Their hair is cropped close on one side and grown into a dramatic sweep on the other, currently a matte black that absorbs light strangely.\n\nThey are one of the most sought-after gene-mod body artists in GLMZ's middle tiers — not cheap enough for Tier 1 walk-ins and not expensive enough for Tier 4 corporate vanity, which suits them perfectly. Their studio occupies two floors of The Garret and smells of antiseptic and the particular warm mineral scent of living tissue culture. They are precise, unhurried, and deeply opinionated about their art form, which they will share with you whether or not you asked. They have no patience for clients who want mods for status signaling and extraordinary patience for clients who want mods to feel like themselves.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -248,12 +248,33 @@
   ],
   "related_entities": [
     "Edgewater Prism",
-    "Meridian 88",
+    "GLMZ",
     "The Garret",
     "Tessera Attrition Engine TE-9 'Patience'",
     "The Gradient Compact",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Slavic / West African / Polynesian",
+    "height_cm": 162,
+    "weight_kg": 58,
+    "build": "Compact and economical, with defined but not heavy musculature. Proportions suggest someone built for precision work rather than endurance—shoulders narrow, hands and fingers notably long-fingered and capable.",
+    "hair_color": "Matte black with light-absorbing quality",
+    "hair_style": "Asymmetrical undercut: one side cropped to 3mm, swept side grown to shoulder length",
+    "hair_length": "Long on one side, short on the other",
+    "eye_color": "Deep amber and black, engineered to display slow-rotating nautilus spiral pattern",
+    "skin_tone": "Warm golden-brown, medium saturation",
+    "complexion": "Smooth and well-maintained with visible signs of careful skincare. No facial hair. Fine-featured with high cheekbones and a sharp jawline. Skin shows the particular luminescence of someone who works with bioluminescent cultures regularly.",
+    "distinguishing_marks": [
+      "Bioluminescent geometric tracery in deep blues and greens along both forearms, temperature-reactive and shifting in hue with body heat",
+      "Mossy texture patch on left shoulder approximately 8cm diameter, genuinely tactile moss-like surface (client gift and ongoing experiment)",
+      "Faint scarring along inner wrists from subdermal tool-grip installations, barely visible unless actively looking"
+    ],
+    "visible_augmentations": "Bioluminescent arm work and shoulder moss patch are immediately striking and unmistakably intentional art. The spiral irises become apparent only in direct eye contact or close proximity. Subdermal hand augmentations show only as unusual dexterity and control—no visible chrome or obvious modification, though hands bear the calluses and minor scars of someone who works directly with living tissue.",
+    "posture_movement": "Economical and precise. Sits with deliberate posture, rarely fidgets. Movements are smooth and controlled, suggesting someone comfortable in their body and conscious of spatial awareness. Hands are almost always in motion—gesturing during conversation, adjusting tools, or resting in a state of readiness. When focused on detailed work, enters a state of near-meditation stillness.",
+    "clothing_style": "Functional Tier 3 aesthetic with deliberate anti-fashion choices. Typically wears a fitted black or charcoal technical shirt (moisture-wicking, easy to clean) paired with loose utility pants in dark colors. Often adds a long linen or canvas overshirt in cream or muted tones—professional but lived-in. Footwear is always sensible: flat-soled boots or slip-on shoes suitable for standing through long procedure days. Minimal jewelry except for a single worn silver ring. Fabric choices prioritize durability and cleanability over trend. Everything fits precisely; nothing is decorative."
+  },
+  "image_prompt": "A nonbinary body artist with warm golden-brown skin and asymmetrical black hair (one side shaved, one side long and swept), standing in a clinical but artistic studio space. Their forearms glow with intricate bioluminescent geometric patterns in deep blue and green that shift with temperature. Their left shoulder bears a soft, living moss-textured patch. Their eyes display slow-rotating amber and black nautilus spirals. They wear a fitted charcoal technical shirt and loose utility pants, hands held with professional readiness showing subdermal augmentations through movement and control. The studio around them smells of antiseptic and tissue culture—sharp clinical lighting mixed with warm accent lighting that catches the bioluminescence. Moody, precise, intensely focused. Cyberpunk body modification artist, genetic engineering, clinical artistry. --ar 2:3 --v 6"
 }

@@ -248,5 +248,26 @@
     "Nesting Doll",
     "Gold"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Polish / Polynesian (Tuamotuan)",
+    "height_cm": 165,
+    "weight_kg": 58,
+    "build": "Lean and compact, economical in movement. Shoulders slightly narrow, core tight from decades of controlled posture. No visible musculature, but the kind of wiry endurance that comes from constant low-level motion rather than deliberate conditioning.",
+    "hair_color": "Copper-dyed over natural black",
+    "hair_style": "Close-cropped, faded at temples, kept very short to minimize grooming maintenance and avoid being grabbed",
+    "hair_length": "Short",
+    "eye_color": "Augmented: concentric rings of deep gold and obsidian black (cosmetic iris implants). Natural color unknown—hazel beneath the modification",
+    "skin_tone": "Deep amber with warm undertones, sun-darkened from years in the Basin's outdoor markets",
+    "complexion": "Fine-featured, high cheekbones inherited from Polynesian ancestry. Skin is clear but weathered—not from sun damage but from low-grade environmental stress, early stress lines around the eyes from constant surveillance work. Minimal makeup. A very slight asymmetry to her left jaw from an old break that healed without proper setting.",
+    "distinguishing_marks": [
+      "Small burn scar on the inner right wrist, roughly 2cm diameter, shaped like a cigarette cherry—received during interrogation in 2219, deliberately inflicted, deliberately visible as a reminder",
+      "Three thin parallel scars running vertically along the left forearm below the elbow, barely visible unless she extends her arm in certain light—surgical marks from data node installation, partially healed with cosmetic sealant",
+      "A faded tattoo on the nape of her neck, Polynesian geometric pattern no larger than a postage stamp, barely visible beneath her close-cropped hair—family marking from her mother's side, kept hidden from most people"
+    ],
+    "visible_augmentations": "The augmented irises are immediately visible when she makes eye contact or removes her tinted contacts—the patterned gold-and-black rings are distinctive and unsettling. The sub-dermal data storage nodes in her left forearm are not visible beneath clothing, but if her sleeve rides up during conversation, faint linear scars from the implant sites can be seen. The auditory filter implant is completely invisible—no external hardware, no tells.",
+    "posture_movement": "Sits with her spine straight but not rigid, hands always occupied—folding, tapping, smoothing. Her gaze moves constantly but without the jerky quality of anxiety; it's methodical, cataloging. She moves through spaces with minimal energy expenditure, taking up as little room as possible. When she walks, her feet land heel-to-toe in an almost silent pattern. Speaks quietly, requiring people to lean in slightly to hear her, which puts them off-balance.",
+    "clothing_style": "Tier 4–5 working class, deliberately forgettable. Worn earth tones: taupe, warm gray, faded olive. Layered functional pieces—a thin jacket over a long-sleeved shirt, often with an unbuttoned overshirt for weather adaptability. Everything is from discount chain retailers or secondhand markets, nothing with visible branding. Her clothing carries the minor stains and repairs of someone who prioritizes durability over appearance. Worn sneakers or practical boots, always lace-up for quick escape. No jewelry except a battered data chip on a thin steel chain around her neck—the 'insurance copy,' kept close."
+  },
+  "image_prompt": "Portrait of a 34-year-old woman with deep amber skin, close-cropped copper-dyed hair, and striking augmented eyes with concentric gold-and-black iris rings. Medium height, lean build, watchful expression. Wearing layered earth-tone clothing—faded taupe overshirt, long sleeves, worn and practical. Sitting in dim interior lighting, hands folded, background blurred industrial apartment setting with water damage visible on walls. Moody cyberpunk noir aesthetic, cool color grading with warm amber skin tones standing out. Shallow depth of field, focused on her unsettling patterned gaze. The atmosphere is tense and controlled, intimate interrogation lighting. Photorealistic with slight digital grain. --ar 2:3 --v 6"
 }

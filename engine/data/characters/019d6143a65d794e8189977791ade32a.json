@@ -248,5 +248,26 @@
     "Silver",
     "Glass"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Slavic / Polynesian-Pacific Islander",
+    "height_cm": 174,
+    "weight_kg": 68,
+    "build": "Lean and angular, with the controlled posture of someone who has spent three decades in offices and interrogation rooms. No softness; muscle definition visible in forearms and neck. Carries herself as if her skeleton is the most honest thing about her.",
+    "hair_color": "Silver-white, natural with no artificial shimmer or dye",
+    "hair_style": "Pulled back in a tight, practical bun at the nape of her neck. No loose strands. Never loose strands.",
+    "hair_length": "Long",
+    "eye_color": "Pale gray-blue, clear and direct",
+    "skin_tone": "Brown-olive, sun-darkened from a desert assignment twenty years prior. The pigmentation is uneven across her shoulders and upper chest — evidence of prolonged outdoor exposure during her field years.",
+    "complexion": "Angular face with sharp cheekbones, high and prominent. Jaw defined and squared. Minimal makeup — a matte lipstick in neutral brown, nothing else. Fine lines around her eyes and mouth that deepen when she listens. Her skin shows the texture of someone who has not prioritized cosmetic treatments; small surgical scars are faintly visible at her temples (implant access ports, old and well-healed).",
+    "distinguishing_marks": [
+      "Thin horizontal scar across the base of her left wrist, approximately 4cm long, white and old — a knife wound from a field assignment in her thirties that she never discusses.",
+      "Faint grid-pattern scarring at her right temple, where the olfactory enhancement implant was installed fourteen years ago; the scarring is thin and pale, professionally done.",
+      "A small burn mark on the inside of her right forearm, the size of a cigarette tip, positioned at her wrist. She does not smoke and will not explain it."
+    ],
+    "visible_augmentations": "None visible. The olfactory enhancement implant is subcutaneous and leaves only the faint temple scarring. She wears no chrome, no LED modifications, no decorative augmentation. Her only concession to her implant is a slight pause sometimes — a moment where she appears to be scenting the air, almost imperceptible unless you're watching for it.",
+    "posture_movement": "She moves with deliberate, economical grace. Her weight shifts before she steps. She sits very still, feet flat on the floor or crossed at the ankle — never slouched. When she listens, her entire body becomes still, as if she is using all available sensory input. Her hands rest on the table or in her lap, never fidgeting. She does not smile easily, but when she does, the entire structure of her face changes; the sharpness softens into something almost gentle. She has learned to use this.",
+    "clothing_style": "Axiom Internal Affairs standard: tailored charcoal blazer (always brushed and pressed), white or pale gray under-shirt with no visible corporate branding, dark trousers with a crisp crease, flat black leather shoes (practical, not fashionable, but expensive in their austerity). A thin silver watch on her left wrist — no smart functions, analog only. A small silver pendant on a thin chain, visible only sometimes: a small religious icon she does not discuss. A leather document folder she carries everywhere, worn and well-used. Tier 2 quality throughout — not ostentatious, but the kind of clothing that signals 'I have authority and comfort in this building.'"
+  },
+  "image_prompt": "Portrait of a 54-year-old woman with silver-white hair pulled back in a tight bun, pale gray-blue eyes, and an angular, sharp-boned face with high cheekbones. Brown-olive complexion with sun-dark pigmentation, faint grid scarring visible at right temple. Lean, controlled posture. Wearing a tailored charcoal blazer over a pale gray shirt, practical black leather shoes. Minimal makeup, direct gaze. Standing in a modern corporate glass corridor, cool white-blue lighting, sharp shadows. Film noir + cyberpunk aesthetic. Professional, intimidating, surgical precision. No augmentations visible except faint facial scarring. Hyperrealistic, corporate office setting, 2220s aesthetic, serious expression, photograph quality. --ar 2:3 --v 6"
 }

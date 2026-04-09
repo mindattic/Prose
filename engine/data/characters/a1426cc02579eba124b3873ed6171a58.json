@@ -7,7 +7,7 @@
     "The Photographer"
   ],
   "role": "Private Investigator",
-  "description": "Bijou Kozlov-Aidoo investigates through the lens. Where other PIs chase data streams or neural traces, Bijou captures light on silver halide crystals and reads the truth in the chemistry. Her methods are considered antiquated by everyone who hasn't needed them, and revelatory by everyone who has.\n\nHer analog approach wasn't a philosophical choice — it was pragmatic. Twenty years ago, she discovered that digital surveillance countermeasures, which are ubiquitous in Meridian 88, are calibrated exclusively to detect and defeat electronic sensors. A chemical-process camera doesn't emit electromagnetic signatures, doesn't connect to any network, and produces images that can't be remotely deleted or altered. In a world where digital evidence is routinely questioned, her chemical photographs carry a weight that pixel-based images can't match.\n\nShe operates from a converted warehouse space in Old Harbor that functions simultaneously as her office, her darkroom, and her archive. The archive is her masterpiece — decades of photographs of Meridian 88's streets, buildings, and people, organized with a librarian's precision. She has been contacted by historians, journalists, and investigators who need visual evidence of the past, and her archive has proven or disproven alibis, established timelines, and documented changes to the cityscape that no digital record captured. She is, without fully intending it, becoming one of the city's most important unofficial historians.",
+  "description": "Bijou Kozlov-Aidoo investigates through the lens. Where other PIs chase data streams or neural traces, Bijou captures light on silver halide crystals and reads the truth in the chemistry. Her methods are considered antiquated by everyone who hasn't needed them, and revelatory by everyone who has.\n\nHer analog approach wasn't a philosophical choice — it was pragmatic. Twenty years ago, she discovered that digital surveillance countermeasures, which are ubiquitous in GLMZ, are calibrated exclusively to detect and defeat electronic sensors. A chemical-process camera doesn't emit electromagnetic signatures, doesn't connect to any network, and produces images that can't be remotely deleted or altered. In a world where digital evidence is routinely questioned, her chemical photographs carry a weight that pixel-based images can't match.\n\nShe operates from a converted warehouse space in Old Harbor that functions simultaneously as her office, her darkroom, and her archive. The archive is her masterpiece — decades of photographs of GLMZ's streets, buildings, and people, organized with a librarian's precision. She has been contacted by historians, journalists, and investigators who need visual evidence of the past, and her archive has proven or disproven alibis, established timelines, and documented changes to the cityscape that no digital record captured. She is, without fully intending it, becoming one of the city's most important unofficial historians.",
   "affiliation": "Independent — works through word of mouth only, no mesh presence",
   "tier": "Tier 2",
   "location": "A darkroom-office in Old Harbor, chemicals and prints hanging from clotheslines alongside case notes, near Michigan Ave South and Cermak",
@@ -62,9 +62,30 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "ARCHIVE",
     "Silver"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Eastern European (Russian) / West African (Ghanaian)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and wiry, with the slightly hunched posture of someone who spends hours bent over light tables and chemical trays. Economical in movement, no wasted motion.",
+    "hair_color": "Natural dark brown with silver threading at the temples and crown",
+    "hair_style": "Pulled back in a practical low bun, often escaping into loose strands during work",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Dark brown with subtle amber undertones in certain light",
+    "skin_tone": "Medium warm complexion with golden and amber undertones — the blend of Russian and Ghanaian heritage",
+    "complexion": "Fine-lined face marked by years of chemical exposure; faint creases around the eyes from squinting at negatives and enlargements. Skin has a slightly matte quality from darkroom work. Sparse freckles across the bridge of nose and cheekbones.",
+    "distinguishing_marks": [
+      "Chemical burn scars on the dorsal surface of both hands — pale, slightly raised patches where developer and fixer splashed decades ago, now integrated into her work-worn appearance",
+      "A thin scar along the left temple (hairline) from a case in 2216 that went sideways, nearly invisible unless hair is swept back",
+      "Permanent staining under the fingernails — silver nitrate deposits that have resisted years of scrubbing, creating a faint grey crescent beneath each nail"
+    ],
+    "visible_augmentations": "None visible. Her work is entirely analog; no neural interfaces, no retinal displays, no chrome. This absence is itself conspicuous in the GLMZ.",
+    "posture_movement": "Moves with deliberate precision — each gesture purposeful, nothing hurried. Stands slightly forward-leaning, as if always about to examine something closer. Her hands are almost always in motion or positioned for work. She makes direct eye contact when listening, a habit built from reading faces in her archive.",
+    "clothing_style": "Tier 3-4 utilitarian with personal wear. Dark, neutral colors (charcoal, deep grey, black) to minimize stains and blend into the city. Favors a worn canvas photographer's vest with deep pockets holding light meters, film canisters, and red-tinted glasses for darkroom work. White cotton shirts underneath, often with faint chemical stains at the cuffs. Dark jeans, reinforced at the knees and thighs. Scuffed leather boots, broken in over years. No jewelry except a simple silver chain around her neck holding a small old-style key to her archive storage. Wear patterns show someone who works with their hands constantly."
+  },
+  "image_prompt": "Portrait of a lean, focused woman in her late forties with dark brown skin and silver-threaded hair pulled back, Eastern European and West African heritage visible in her features. Dark amber eyes, fine lines around the eyes, faint chemical burn scars on her hands. Wearing a worn dark canvas photographer's vest over a white cotton shirt, standing in a dimly lit analog darkroom filled with hanging photographic prints and chemical trays. Warm amber and deep red safelight illumination, chemical reagent bottles glinting on shelves behind her. Her posture is slightly forward-leaning, hands positioned as if examining a negative. Cyberpunk noir aesthetic, analog technology, no visible chrome or digital augmentations, intimate documentary style, grainy film grain effect, moody atmospheric lighting, 2226 dystopian Great Lakes urban setting --ar 2:3 --v 6"
 }

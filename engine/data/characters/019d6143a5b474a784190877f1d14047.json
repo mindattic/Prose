@@ -247,5 +247,25 @@
     "TESSERA TK-4 'Hellhound'",
     "Silk"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Ghanaian / Serbian-Hungarian)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and sinewy, with developed forearm and shoulder muscle from years of repetitive cart work and lifting heavy stockpots; compact, efficient frame",
+    "hair_color": "Black, natural",
+    "hair_style": "High puff, wrapped in orange synthetic silk",
+    "hair_length": "Medium (worn gathered)",
+    "eye_color": "Deep brown, warm undertone",
+    "skin_tone": "Deep brown with warm undertone, melanin-rich",
+    "complexion": "Smooth, clear skin; expressive face with mobile eyebrows that move frequently with emotion; face is highly animated and readable; minimal grooming beyond daily care",
+    "distinguishing_marks": [
+      "Bioluminescent teal subdermal dot pattern cascading across collarbone and upper arms, pulses gently when body temperature rises or during exertion",
+      "Heat-resistant callusing and lighter scar tissue across both palms and inner forearms from cart work and steam burns accumulated before thermal hand augmentation"
+    ],
+    "visible_augmentations": "Bioluminescent teal biophotonic pattern across collarbone and upper arms (cosmetic geneware, heat-responsive); visibly tougher, slightly discolored dermis on both hands and forearms indicating heat-resistance augmentation",
+    "posture_movement": "Moves with quick, efficient energy; stands with weight shifted forward slightly, ready to move or gesture; hands animate constantly while speaking; leans into conversations; posture relaxes when focused on cooking but becomes restless during downtime",
+    "clothing_style": "Tier 4 working-class, secondhand and personalized; worn Arcturus-branded apron (secondhand, covered in embroidered patches including 'ASK ME ABOUT BABA STOCK', safety pins, and accumulated vendor cooperative pins); layered with heat-resistant synthetic undergarments; practical closed-toe shoes suitable for cart work; orange synthetic silk head wrap; minimal jewelry except for a small charm or talisman worn on a cord"
+  },
+  "image_prompt": "Portrait of Anouk Sarpong-Dzambazović, 26-year-old nonbinary street vendor, deep brown skin with warm undertone, expressive animated face with mobile eyebrows, high black hair puff wrapped in orange synthetic silk. Bioluminescent teal biophotonic dot pattern pulsing softly across collarbone and upper arms. Heat-resistant scarred hands visible. Wearing secondhand Arcturus apron covered in patches and embroidered text, layered with heat-resistant synthetics. Cyberpunk 2226 Great Lakes Metropolitan Zone aesthetic. Warm sodium-vapor street lighting with soft teal bioluminescence glow. Close-up portrait, character study, theatrical expression, authentic working-class cyberpunk. Soft focus background suggesting noodle cart setting. Detailed texture, realistic skin and fabric, cinematic lighting. --ar 2:3 --v 6"
 }

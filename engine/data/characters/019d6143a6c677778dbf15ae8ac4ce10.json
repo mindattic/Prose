@@ -259,5 +259,25 @@
     "Copper",
     "Ringo Corponation"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Congolese-Romanian / Zambian-Irish",
+    "height_cm": 167,
+    "weight_kg": 58,
+    "build": "Wiry and kinetic, lean muscle with minimal body fat; movements suggest coiled energy rather than bulk",
+    "hair_color": "Genetically modified, color-cycling: deep violet (productive), burnt copper (presentation mode), flat grey (fatigued). Full spectrum capable but maintains primary palette.",
+    "hair_style": "Deliberately styled to complement mood-color shifts; currently worn short-to-medium, textured at crown for visual interest",
+    "hair_length": "Medium",
+    "eye_color": "Large, dark brown — natural; subtle retinal overlay hardware invisible to casual observation",
+    "skin_tone": "Deep warm brown with amber undertones, reflecting mixed Central African and Eastern European ancestry",
+    "complexion": "Sharp facial geometry, high cheekbones; skin well-maintained but bearing the wear of someone who prioritizes productivity over skincare routines. Expression habitually analytical—eyebrows mobile, mouth precise. A faint warm amber scent baseline (gland enhancement) surrounds them.",
+    "distinguishing_marks": [
+      "Faint linear scar along left temple, approximately 3cm, barely visible unless light catches it directly—somatic trauma, pre-corpo",
+      "Surgical precision marks at inner wrist (bilateral, subcutaneous implant sites) visible only when arms are bare"
+    ],
+    "visible_augmentations": "None obvious. Retinal overlay is subcutaneous and imperceptible. Hair geneware is visible only as the color-cycling itself. Minor scent gland enhancement detectable only as ambient warmth (amber baseline).",
+    "posture_movement": "Sits forward in chairs. Hands gesture with precision during analysis—fingers forming frames, pointing at invisible data. Walks quickly, economically. Eyes rarely settle; constant micro-scanning of environments. When tired, posture flattens slightly, as if energy reserves are visibly depleting.",
+    "clothing_style": "Tier 1-2 corporate: tailored minimal aesthetic. High-quality baseline fabrics (smart-weave, temperature-regulating). Presentations: structured blazers in muted tones that complement hair copper. Office: fitted tech-casual—smart fabrics with discrete interface panels at wrists. Social evenings: deliberately relaxed but expensive, suggesting someone who could dress up but chooses not to. Accessories spare: a thin bracelet that doubles as a data interface, no visible jewelry beyond function."
+  },
+  "image_prompt": "Nonbinary professional in cyberpunk corporate setting, 29 years old, wiry lean build, striking expressive face with large dark eyes, deep warm brown skin with subtle amber undertones, short textured hair in deep violet color-cycling geneware, posture forward and kinetic with analytical hand gestures, wearing tailored Tier-1 smart-fabric blazer in muted grey, sitting at sleek minimalist desk surrounded by floating holographic data feeds in blue and amber, retinal overlay faintly visible in eyes, ambient warm scent baseline suggested by subtle glow, Grand Corridor tower interior with floor-to-ceiling glass overlooking sprawling GLMZ cityscape at late afternoon, moody corporate lighting with accent LEDs, cool blue-amber color palette, photorealistic, sharp focus on face, --ar 2:3 --v 6"
 }

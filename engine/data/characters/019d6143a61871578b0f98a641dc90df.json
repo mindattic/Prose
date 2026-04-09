@@ -28,7 +28,7 @@
       "becoming someone who stops moving and loses themselves"
     ],
     "core_desires": [
-      "to see the full extent of Meridian 88's outer territories by airship",
+      "to see the full extent of GLMZ's outer territories by airship",
       "a crew that actually wants them, not just their small hands"
     ],
     "coping_mechanisms": [
@@ -181,5 +181,27 @@
     "Ringo DV-4 'Courier'",
     "The Pure Hand"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Icelandic",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Slight and wiry, built for climbing and tight spaces rather than strength — the compact frame of someone who has spent three years in cargo holds and engine housings",
+    "hair_color": "Natural dark brown, almost black",
+    "hair_style": "Mass of tight curls, habitually compressed under a faded synthetic-fiber promotional cap",
+    "hair_length": "Medium (shoulder-length when unbound)",
+    "eye_color": "Dark brown",
+    "skin_tone": "Warm medium brown with uneven sun exposure — darker on forearms and neck, lighter on torso from months between deck work and interior spaces",
+    "complexion": "Young face with high cheekbones, sharp jaw, youthful features that read as younger than nineteen; sun-weathered around eyes and lips from constant wind exposure on airship decks; minor scarring on knuckles and forearms from engine work",
+    "distinguishing_marks": [
+      "Three earrings in left ear lobe only — one silver ring from Escanaba, one copper wire-wrapped stone from Milwaukee, one brass small-gauge from Superior — each marking a place they have passed through",
+      "Calluses across palms and inner fingers from rope work and maintenance rigging",
+      "Small chemical burn scar on right forearm (engine housing incident, age seventeen) — pale against darker skin",
+      "Faint tan line around left wrist from wearing a transit ID band for work"
+    ],
+    "visible_augmentations": "Geneware cat tail — warm brown with darker brown tip, approximately 60cm in length, well-maintained with visible care; moves with subtle independent articulation at base; clearly a point of pride and frequent adjustment",
+    "posture_movement": "Loose and economical movement, built for climbing and balancing on moving platforms; constant small fidgeting with cap brim or tail; tendency to be hyperaware of three-dimensional space (ducking through doorways preemptively, assessing weight distribution on floors); sits with knees drawn up or legs folded; walks with quick, light steps",
+    "clothing_style": "Tier 4 working-class transient: worn synthetic-blend cargo pants with multiple pockets (patched at left knee), layered tank and long-sleeve thermal (mismatched in faded colors), an oversized canvas deck jacket with reflective strips and various tool loops (belonged to a crew member, never returned), steel-toed work boots (scuffed, re-laced multiple times), worn fingerless gloves. The Ferrogate Transit cap is a prized possession despite its age. Everything is functional over fashionable; nothing is new. Jewelry limited to ear piercings."
+  },
+  "image_prompt": "19-year-old nonbinary character with warm medium-brown skin, dark curly hair under a faded promotional cap, slight athletic build; wearing patched cargo pants and oversized canvas deck jacket with reflective strips, steel-toed work boots. Prominent brown cat tail with darker tip visible, three earrings in left ear. Standing on industrial airship mooring platform with tension cables and anchor cleats in background, overcast Great Lakes sky, cool blue-gray lighting. Hyperaware posture, fidgeting with cap brim, faint smile. Film photography aesthetic, documentary realism, slight grain. Industrial cyberpunk setting, Tier 4 working-class harbor district, weathered metal and synthetic materials. --ar 2:3 --v 6"
 }

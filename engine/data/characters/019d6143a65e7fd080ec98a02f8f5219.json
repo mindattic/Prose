@@ -180,5 +180,25 @@
     "SynapTech IrisBloom Ocular Color Modulator",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Eastern European / West African (Slavic-Ghanaian diaspora)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Compact and wiry with the restless energy of chronic sleep debt; narrow shoulders, slight frame, no excess weight — the build of someone sustained by coffee and neural stimulants rather than meals",
+    "hair_color": "Mood-chromatic via geneware; currently deep blue (calm state), shifts to red-orange when excited, grey-green when concealing",
+    "hair_style": "Shoulder-length, often half-pinned or wrapped in a loose braid; slightly unkempt, suggesting 3 AM grooming habits",
+    "hair_length": "Medium",
+    "eye_color": "Augmented irises with concentric rings of amber and green; hypnotic patterning that draws sustained attention",
+    "skin_tone": "Warm light brown — olive-undertone complexion reflecting mixed Eastern European and West African heritage",
+    "complexion": "Sharp facial features with high cheekbones; perpetually tired eyes with faint dark circles; smooth skin with no visible blemishes; jaw slightly defined; expression carries a quality of intense, almost unsettling attentiveness",
+    "distinguishing_marks": [
+      "Neural-haptic sync implant port visible at the base of the skull, subtle raised scar tissue in a small circular pattern behind the left ear",
+      "Faint follicular scars along the scalp where geneware was installed, only visible when hair is wet or pulled back"
+    ],
+    "visible_augmentations": "Concentric-patterned irises are immediately striking and impossible to miss; hair color shifts subtly throughout conversation based on emotional state; faint circular port scar at base of skull visible in certain lighting or when hair is drawn back",
+    "posture_movement": "Leans forward slightly when listening, as if physically drawing in what someone is saying; hands are expressive, moving constantly when speaking; restless fidgeting with notebook corners or pen when silent; moves with fluid efficiency despite sleep deprivation, no wasted motion; tends to maintain uncomfortable levels of direct eye contact",
+    "clothing_style": "Tier 3-4 working class with bohemian undertones; worn vintage band t-shirts or modified surplus clothing; black cargo pants or faded jeans with multiple pockets for notes and pens; layered overshirts in muted earth tones; always carries the brick-sized dream notebook in a fabric messenger bag covered in worn patches and pins; wears minimal jewelry except for a silver-toned ring on left middle finger (possibly meaningful, possibly just habit); no corporate branding visible; overall aesthetic is 'perpetually between sleep and vision'"
+  },
+  "image_prompt": "Portrait of a 26-year-old nonbinary person with warm light brown skin and shoulder-length mood-chromatic blue hair, standing in a dimly lit night market booth. Their most striking feature is augmented irises with intricate concentric rings of amber and green that draw the eye hypnotically. They wear a faded black band tee under a layered overshirt in muted sage green, holding a brick-sized leather notebook. Their expression is intensely attentive, leaning slightly forward with dark circles under their eyes suggesting chronic sleep debt and nocturnal lifestyle. Faint neural implant scarring visible at the base of skull. Cyberpunk dreamscape aesthetic, warm neon glow from market lights, atmospheric haze, introspective mood, mystical energy, high contrast lighting with deep shadows. Photography style: character portrait, shallow depth of field, 2:3 aspect ratio. --ar 2:3 --v 6"
 }

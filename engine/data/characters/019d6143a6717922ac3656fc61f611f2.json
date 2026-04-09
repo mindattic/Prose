@@ -282,5 +282,27 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Japanese / West African",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and angular with visible musculature — swimmer's shoulders, minimal body fat. Every movement suggests coiled efficiency rather than relaxation.",
+    "hair_color": "Black with steel-grey undertones from repeated thermal stress near augmentation sites",
+    "hair_style": "Pulled back in a tight, functional braid; no ornament, no wasted length",
+    "hair_length": "Long",
+    "eye_color": "Dark brown — unaugmented, but the stare is unnerving; pupils track with unnatural precision",
+    "skin_tone": "Warm medium brown — Japanese-African blend with slight ashy undertone from thermal masking implant use",
+    "complexion": "Sharp cheekbones, defined jaw. Skin is clear but marked by augmentation scarring. Fine surgical lines visible along temples and jawline where the vocal modulator and thermal masking array were installed; chrome glints slightly beneath the skin at these sites. Minimal grooming beyond function — no jewelry, no makeup. Her face reads as intentionally unremarkable except for the chrome.",
+    "distinguishing_marks": [
+      "Augmentation scarring along both temples — thin, precise surgical lines with faint chrome micro-etching visible beneath the skin surface",
+      "Vocal modulator chrome visible at the base of the jaw, silver-grey and industrial, no attempt at cosmetic concealment",
+      "Thin burn scar running along the inside of her left forearm — old and pale, consistent with thermal equipment failure",
+      "A small, deliberate knife scar on her right palm — pale and precise, possibly a ritual or debt marker"
+    ],
+    "visible_augmentations": "Vocal modulator: visible chrome hardware along the jawline and throat, industrial appearance with no aesthetic softening. Thermal masking system: no visible hardware, but skin around her core occasionally shows faint chromatic distortion when the system activates or cycles. The effect is subtle — a shimmer like heat haze, visible only when she's stationary.",
+    "posture_movement": "Economical and controlled — no wasted motion. She moves like someone counting calories in every gesture. Stands with weight balanced, shoulders slightly forward. When idle, there is visible tension in her hands — fingers flex and reset as if running through muscle memory or code. Her gaze is steady and seldom breaks eye contact; it reads as threat assessment rather than politeness.",
+    "clothing_style": "Tier 3-4 utilitarian black — fitted Kevlar-blend cargo pants with redundant pockets, black thermal-reactive jacket with concealed weapon mounts, unmarked steel-toed boots broken in past comfort into pure function. Everything is matte black or charcoal to reduce thermal signature. No visible branding except for a faded Lattice territory marker on her jacket cuff — a small embroidered cipher, her affiliation token. She wears minimalist jewelry: a single silver band on her right ring finger (purpose unclear — possibly a memento, possibly functional)."
+  },
+  "image_prompt": "cyberpunk character portrait of Nurlan Morita-Antwi, 31-year-old Japanese-African female, lean angular build with visible tension, dark eyes with unnerving precision stare, black hair in tight braid, warm medium brown skin tone, sharp cheekbones and defined jaw, surgical augmentation scars along temples, visible chrome vocal modulator hardware at base of jaw and throat, faint chromatic thermal shimmer around core, pale knife scar on right palm, burn scar on left inner forearm, wearing all-black matte utilitarian cargo outfit with Kevlar blend fabric, thermal-reactive jacket with weapon mounts, steel-toed boots, silver band on right ring finger, standing in Old Harbor black market setting with shipping container background and neon signage, moody blue-red lighting with shadows emphasizing chrome and scar tissue, hard rim lighting, cinematic depth, 35mm lens aesthetic, gritty realism, industrial cyberpunk, no smile, threat assessment expression, sharp focus on face and augmentations --ar 2:3 --v 6"
 }

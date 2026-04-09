@@ -13,7 +13,7 @@
   "age": 71,
   "status": "active",
   "location": "Irkalla — a residential stack in the lower levels near the Gravesend Basin, near Western and Division",
-  "description": "Fatoumata is a small, round woman who has been small and round for as long as anyone in Irkalla can remember, though she was apparently quite tall in photographs from her forties and nobody can fully account for this. Her skin is very dark and very smooth in a way that no longer has a natural explanation, though she is dismissive of questions about it. Her hair is natural and silver-white, kept in a high crown wrap of deep indigo cloth. She has cat ears — small, dark-tipped, mobile — that she got at forty-five after a dream she refuses to describe. They swivel constantly, tracking sound, giving her the air of someone who is always listening to two conversations at once.\n\nFatoumata holds the dying. This is the entire description of her work, and it requires everything. She sits with people in their last hours, facilitates the rituals their families have lost the words to, and manages the terrifying administrative machinery of death in Meridian 88 — the Ferrogate Transit body transit permits, the Helix Biosystems harvesting opt-out paperwork, the Axiom data-legacy protocols. She has done this for forty years. She is simultaneously the most comforting and most disconcerting person in any room, because she has no fear of the subject that frightens everyone else most.",
+  "description": "Fatoumata is a small, round woman who has been small and round for as long as anyone in Irkalla can remember, though she was apparently quite tall in photographs from her forties and nobody can fully account for this. Her skin is very dark and very smooth in a way that no longer has a natural explanation, though she is dismissive of questions about it. Her hair is natural and silver-white, kept in a high crown wrap of deep indigo cloth. She has cat ears — small, dark-tipped, mobile — that she got at forty-five after a dream she refuses to describe. They swivel constantly, tracking sound, giving her the air of someone who is always listening to two conversations at once.\n\nFatoumata holds the dying. This is the entire description of her work, and it requires everything. She sits with people in their last hours, facilitates the rituals their families have lost the words to, and manages the terrifying administrative machinery of death in GLMZ — the Ferrogate Transit body transit permits, the Helix Biosystems harvesting opt-out paperwork, the Axiom data-legacy protocols. She has done this for forty years. She is simultaneously the most comforting and most disconcerting person in any room, because she has no fear of the subject that frightens everyone else most.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -173,7 +173,7 @@
     "Ferrogate Transit",
     "Helix Biosystems",
     "Gravesend Basin",
-    "Meridian 88",
+    "GLMZ",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "ShieldTech SB-3 'Groundstrike'",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
@@ -183,5 +183,25 @@
     "ARCHIVE",
     "Silver"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Hungarian, with possible additional lineages obscured by time and intentional vagueness",
+    "height_cm": 152,
+    "weight_kg": 68,
+    "build": "Small-framed and round, soft at the edges — a body built for holding and being held, with the settled density of someone who has spent seven decades moving through the world with intention rather than haste",
+    "hair_color": "Natural silver-white",
+    "hair_style": "Arranged in a high crown wrap secured with deep indigo cloth, allowing visibility and movement",
+    "hair_length": "Long (underneath wrap, rarely seen fully)",
+    "eye_color": "Dark brown, luminous and unreadable",
+    "skin_tone": "Very dark brown with an unusual smoothness and uniformity of texture that defies natural aging patterns",
+    "complexion": "Unlined in a way that seems deliberate rather than fortunate; minimal visible age spots or sun damage; lips full and dark; face arranged in an expression of permanent gentle attentiveness",
+    "distinguishing_marks": [
+      "Cat ears: small, dark-tipped, mobile feline geneware implants positioned where human ears would be, capable of independent swivel and rotation to track sound sources",
+      "Possible subdermal patterning on her hands and forearms, visible only when light catches at certain angles — she does not explain their origin or meaning"
+    ],
+    "visible_augmentations": "The cat ears are immediately apparent and impossible to miss; they move with her thoughts, often swiveling toward speakers during conversation. Her skin's unusual smoothness reads as either very advanced dermal maintenance or deliberate biological modification — she refuses clarification",
+    "posture_movement": "Moves slowly but never hesitantly, with the centered gravity of someone comfortable in stillness. Sits with her entire body at attention even when appearing relaxed. Her cat ears track independently of her gaze, giving the impression she is listening to multiple conversations, multiple rooms, multiple deaths simultaneously",
+    "clothing_style": "Practical layering favoring natural fabrics in muted tones — deep indigo, charcoal, warm browns. Loose-fitting wrapped garments suitable for long hours of sitting. Wears a distinctive wax-printed shawl in subtle geometric patterns (origin indeterminate). Tier 4 aesthetic: not poor, not wealthy, but deliberately outside corpo fashion cycles. Her indigo head wrap is her signature, replaced frequently but always in the same deep blue-black"
+  },
+  "image_prompt": "A small, dark-skinned woman aged 71, round and soft-bodied, sitting motionless in dim light. She wears deep indigo wrapped cloth around her head and a wax-printed shawl in geometric patterns. Her skin is unusually smooth and luminous. Small mobile cat ears with dark tips protrude from her head, currently swiveled toward an unseen sound. Her expression is calm and indefinably ancient. Cyberpunk setting, Tier 4 residential stack interior, cool fluorescent overhead lighting mixing with amber from old lamps, moody and intimate, bokeh background of industrial architecture, hyperrealistic portraiture, --ar 2:3 --v 6"
 }

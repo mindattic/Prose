@@ -213,5 +213,25 @@
     "The Pale Mile",
     "Gold"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Central African / Swedish",
+    "height_cm": 145,
+    "weight_kg": 38,
+    "build": "Lean and slight, with the angular frame of a preteen who hasn't yet filled into adolescence. Posture suggests stillness trained into him — minimal fidgeting, deliberate movement.",
+    "hair_color": "White-blond, natural",
+    "hair_style": "Shoulder-length, parted simply, brushing his collar. Clean but worn with the unselfconsciousness of a child not yet concerned with appearance.",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, deep-set",
+    "skin_tone": "Pale with uneven tanning — lighter across shoulders and upper back, darker along forearms and neck from outdoor parish work. Undertones suggest his Central African heritage beneath the pallor.",
+    "complexion": "Youthful and fine-featured. Skin shows the slight rawness of a child who spends time outdoors without consistent sun protection. No scarring or blemishes. Expression tends toward quiet focus.",
+    "distinguishing_marks": [
+      "Bioluminescent lines running the length of both forearms in thin traceries — gold-white light that pulses faintly with his heartbeat, most visible in low light.",
+      "Matching bioluminescent lines along both collarbones, visible at the neck of his shirt, same pulse-sync pattern."
+    ],
+    "visible_augmentations": "Bioluminescent dermal inlay along forearms and collarbones — a parish-funded mark of his junior interpretive status. The lines glow softly gold-white and pulse in rhythm with his heartbeat. In daylight, barely visible; in dimmer parish spaces, they are distinctive and deliberate.",
+    "posture_movement": "Sits with hands folded in his lap unless engaged in active study or interpretation. Moves with careful, almost cautious deliberation — the posture of someone who has been taught restraint. Eyes track details with unusual intensity. Speaks rarely and softly.",
+    "clothing_style": "Plain grey tunic and grey trousers — parish-issued, functional, deliberately unpretentious. No augmentation bling or personal styling. Footwear is simple grey slip-ons, worn. The plainness reads as either humility or deprivation; in his case, both are encouraged by the parish culture. Age-appropriate but utilitarian — nothing that suggests Tier 1-2 wealth, aligned with Tier 3-4 community devotional life."
+  },
+  "image_prompt": "Twelve-year-old boy with white-blond shoulder-length hair and deep-set dark brown eyes, pale skin with uneven tan, Central African and Swedish heritage visible in facial structure. Lean preteen build. Wearing plain grey tunic and trousers. Thin bioluminescent gold-white lines running along both forearms and collarbones, glowing softly and pulsing faintly with heartbeat rhythm. Hands folded, posture still and focused. Sitting in a dimly lit devotional space with soft architectural lighting suggesting a cyberpunk-era parish interior. Mood is quiet, contemplative, slightly isolated. Soft golden and blue ambient light emphasizing the bioluminescent marks. Cyberpunk aesthetic with spiritual undertones. Photorealistic, moody lighting, introspective expression. --ar 2:3 --v 6"
 }

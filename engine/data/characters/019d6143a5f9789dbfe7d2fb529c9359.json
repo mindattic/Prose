@@ -201,5 +201,26 @@
     "The Iron Lotus",
     "The Pure Hand"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / French Canadian",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Tall and lean, slightly stooped from decades of bending over birthing beds and examination tables. Shoulders rounded forward, the frame of someone whose body has learned to make itself smaller in the presence of vulnerability.",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, neat, practical",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint corrective implant tracery visible in low light",
+    "skin_tone": "Deep brown with ashen undertones from chronic fluorescent exposure and sleep deprivation",
+    "complexion": "Deeply lined face, particularly around the eyes and mouth — a map of sixty-two years spent witnessing pain, fear, and relief in rapid succession. Skin texture rough and weathered. Grooming meticulous but unstudied: a man who washes thoroughly but does not fuss. Faint smell of medical-grade antiseptic and cardamom tea.",
+    "distinguishing_marks": [
+      "Fine white scar on the back of his left hand, approximately 3cm long, from a delivery complication twenty years ago",
+      "Faded tattoo on his inner right wrist — E.L.F. Candleborn sigil, applied by hand in his early years at Aurochs",
+      "Age spots across the backs of both hands and forearms, darker patches of melanin concentration"
+    ],
+    "visible_augmentations": "Wrist-mounted Aurochs biometric monitoring implant on left wrist, chrome-titanium casing visibly worn and scuffed, with a faintly luminescent health-tracking display that flickers intermittently. Corrective optical implants visible as faint iridescent threading at the edges of both pupils in direct light. No cosmetic modifications. All augmentations appear functional but outdated.",
+    "posture_movement": "Moves with practiced efficiency — no wasted motion, but not rushed. Hands are his primary communication tool: steady, precise, capable of extraordinary gentleness. Leans slightly forward when listening, a habit formed from leaning into delivery rooms. Walks slowly now, deliberately, as if each step is measured and intentional. Eyes track movement constantly, reading the room for distress or need.",
+    "clothing_style": "Tier 3-4 functional practicality. Favors neutral colors — grays, dark blues, blacks. Typically wears well-maintained but worn medical-grade scrubs under a light jacket or cardigan, pockets stuffed with examination tools. No corpo branding. Footwear is practical, broken-in shoes designed for standing long hours. A thin silver chain around his neck holds a small handmade pendant — a data-light offering he created himself. Clothing shows the wear of someone who works constantly and does not invest in appearance, but is kept scrupulously clean."
+  },
+  "image_prompt": "Cyberpunk portrait of an elderly West African-Canadian man, 188cm tall, lean and slightly stooped, deep brown skin weathered by decades of fluorescent light, close-cropped white hair, deeply lined face with kind but exhausted eyes. Wearing faded medical-grade scrubs under a worn cardigan, hands large and impossibly gentle, resting on a patient examination table. Wrist-mounted Aurochs biometric implant glowing faintly on left wrist, visible corrective optical implants with subtle iridescent threading. Background is a modest Tier 3 clinic room, warm incandescent lighting mixed with cold diagnostic screens, cardamom tea steam visible in air. Mood: worn, dignified, deeply human, the presence of someone who has witnessed hundreds of beginnings. Professional medical documentation aesthetic. Shallow depth of field focusing on hands and face. --ar 2:3 --v 6"
 }

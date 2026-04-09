@@ -155,7 +155,7 @@
       "loyalty_break": 6
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "exceptional close-quarters combat",
       "mechanical aptitude — can repair or modify almost anything"
     ],
@@ -286,5 +286,26 @@
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Rawboned and lean — efficient rather than muscular, suggesting either ascetic discipline or chronic underfeeding. Long limbs, minimal body fat, the frame of someone who moves for function rather than appearance.",
+    "hair_color": "Dark brown with premature silver at temples",
+    "hair_style": "Swept back, kept short and precise — no ornamentation, no compromise",
+    "hair_length": "Short",
+    "eye_color": "Chrome iris rings around pale gray — cybernetic enhancement visible at all times",
+    "skin_tone": "Pale with warm undertone — mixed Northern European and West African ancestry reads as slightly olive in poor lighting",
+    "complexion": "Soft features that read as approachable — high cheekbones, fine nose, thin lips. Skin appears almost waxy in certain light due to the synthetic blood running beneath. No visible scarring on face. Grooming is meticulous but austere — no cosmetics, no jewelry, nothing unnecessary.",
+    "distinguishing_marks": [
+      "Thin white scar running from left temple to jawline — old enough to be nearly invisible, positioned where thermal goggles would rest",
+      "Subcutaneous implant ports visible as faint geometric scarring at base of neck, left side — old corpo augmentation work",
+      "Thermal imaging of veins visible under pale skin when exposed to certain light — indication of synthetic blood circulation"
+    ],
+    "visible_augmentations": "Cybernetic eyes with prominent chrome iris rings; thermal and low-light overlay visible as faint luminescence in darkness. Synthetic blood creates subtle visual distortion in veins — visible as thin chrome tracery beneath translucent skin, especially on forearms and wrists. No attempt to conceal any augmentation.",
+    "posture_movement": "Economy of motion — every gesture serves a purpose. Stands with shoulders relaxed but alert, weight distributed for quick lateral movement. Eyes move independently of head, characteristic of cybernetic optical systems. Speech is measured; he pauses before responding, suggesting calculation rather than hesitation. When negotiating, remains perfectly still — unnerving for most people.",
+    "clothing_style": "Tier 3-4 practical: dark synthetic fabrics (charcoal, slate, near-black), layered for easy access and concealment. Fitted tactical jacket over a gray crew-neck shirt. Reinforced cargo pants with subdued pockets and ankle cuffs. Steel-toed boots scuffed from actual use. A single accessory — a worn silver watch, analog, probably a gift. Nothing flashy, nothing that draws the eye. Clothing maintains corporate-adjacent professionalism while operating in runner space — the uniform of someone who knows both worlds."
+  },
+  "image_prompt": "Cyberpunk character portrait of a tall, rawboned male in his early thirties with soft facial features that belie his predatory nature. Pale complexion with warm undertones, dark brown hair with silver at temples, swept back. Striking cybernetic eyes with prominent chrome iris rings and visible thermal overlay glow. Synthetic blood creates faint chrome-like tracery visible in forearms and neck. Wearing fitted dark tactical jacket over gray crew-neck, reinforced cargo pants, steel-toed boots. Standing with economical posture in a shadowed dockside warehouse setting, Lake Michigan visible through grimy windows behind. Moody blue-and-amber lighting, volumetric fog, neon reflection on wet concrete. Film noir meets cyberpunk aesthetic, hyper-detailed face, intricate cybernetic implant work visible at neck, cinematic depth of field, sharp focus on unsettling pale eyes, atmospheric rain. --ar 2:3 --v 6"
 }

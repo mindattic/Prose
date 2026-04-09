@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Ilhan Nakamura-Bello's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Ilhan Nakamura-Bello's past shows up in GLMZ, carrying old grievances and new chrome",
     "Ilhan Nakamura-Bello's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
     "Ilhan Nakamura-Bello intercepts intelligence about a threat to their district and must decide between profit and protection"
   ],
@@ -155,7 +155,7 @@
       "loyalty_break": 7
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "pain tolerance beyond normal limits"
     ],
     "weaknesses": [
@@ -271,9 +271,29 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Nearfield",
     "Burden of Longitude"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "East African / Japanese / Portuguese",
+    "height_cm": 182,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and heavy, muscular without definition — weight distributed across a frame built for durability rather than speed. Chest and shoulders dominate; carries themselves like someone accustomed to absorbing impact.",
+    "hair_color": "Black with premature silver threading at temples",
+    "hair_style": "Cropped close to the scalp, practical, no styling",
+    "hair_length": "Short",
+    "eye_color": "Dark brown — steady, unblinking gaze",
+    "skin_tone": "Warm ochre complexion with undertones of brown and olive",
+    "complexion": "Weathered and composed. No visible scarring on the face — they're careful about that. Skin has a matte quality from subcutaneous treatments. Expression is habitually neutral, jaw set in a way that suggests constant restraint.",
+    "distinguishing_marks": [
+      "Faint linear scar across the left knuckle — old knife work, deliberately left unhealed smooth",
+      "Twin parallel marks on the inner right wrist — augmentation seams, visible when forearms flex"
+    ],
+    "visible_augmentations": "Subdermal weapon mounts visible as angular chrome outlines beneath the skin of both forearms — edges catch light when they move. The mounts are deliberate and unhidden; no attempt at concealment. Forearm fascia shows faint traces of bioware integration at the wrists.",
+    "posture_movement": "Moves with controlled efficiency — no wasted motion, no restlessness. Stands with weight slightly forward, ready to shift. Hands stay visible and relaxed; someone who understands threat assessment. Default expression reads as patient, but there's tension underneath. They don't fidget, don't look away, don't apologize for existing.",
+    "clothing_style": "Tier 3-4 utilitarian. Dark synthetic fabrics — charcoal, midnight blue, matte black. Reinforced jacket with internal pockets (equipment, tools, cash). Cargo pants with tactical weave. Boots are functional and scuffed. No jewelry, no insignia, no markers of affiliation. Everything is designed to be forgettable and cleanable. Operates in clothes they can bleach."
+  },
+  "image_prompt": "A nonbinary person, 182cm tall, broad-shouldered and heavy-built, standing in a neutral stance. Dark brown skin with warm ochre undertones, black hair with silver at temples cropped close to the scalp. Intense, unblinking dark brown eyes with a habitually neutral expression. Visible subdermal chrome weapon mounts beneath the skin of both forearms, edges catching light. Wearing matte-black reinforced synthetic jacket and tactical cargo pants, practical boots. Standing in a neon-lit transit corridor at night, cool blue and amber light casting shadows. Cyberpunk noir, clinical lighting, slight volumetric fog. The figure is composed and threatening without aggression. Professional cleaner aesthetic. Midjourney cinematic photorealism, moody atmosphere --ar 2:3 --v 6"
 }

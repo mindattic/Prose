@@ -238,5 +238,24 @@
     "The Pale Mile",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Mali) / Iranian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and upright, with the kind of economy of movement that comes from decades of sitting vigil — no wasted motion, strong core despite minimal visible musculature",
+    "hair_color": "Natural black with silver at temples",
+    "hair_style": "Worn large and natural, threaded through with small hand-hammered copper discs that create soft percussion when she moves",
+    "hair_length": "Long (shoulder-length when compressed, voluminous when full)",
+    "eye_color": "Pale amber with subtle depth",
+    "skin_tone": "Deep warm brown with undertones of mahogany",
+    "complexion": "Minimal grooming — unlined despite age, with the kind of clarity that comes from intentional living. Sharp Malian cheekbones. Faint cosmetic iridescence visible under direct or angled light: a barely-perceptible rainbow sheen inherited from geneware, never suppressed or hidden",
+    "distinguishing_marks": [
+      "Fine surgical scar along the inside of her left wrist, pale and deliberate-looking, approximately 8cm long — self-inflicted decades ago, kept as intentional reminder rather than removed"
+    ],
+    "visible_augmentations": "None functional. Only the inherited cosmetic geneware: a subtle color-shifting quality to her skin under direct light, like oil on water, so faint most people register it subconsciously rather than consciously",
+    "posture_movement": "Moves with deliberate slowness even when unhurried — a practice of presence. Sits with perfect spinal alignment, knees slightly bent, hands visible and open. Her default expression is between watchful and patient, with the kind of calm that invites speech",
+    "clothing_style": "Tier 3 functional — well-maintained second-hand or co-op linen and cotton, earth tones and deep blues. Loose layers that allow long sitting. Worn leather slip-ons for quick response calls. No jewelry except the copper discs in her hair and a thin steel band on her right ring finger — simple, nothing decorative. Her clothes smell faintly of incense and cleaning herbs"
+  },
+  "image_prompt": "portrait of a 52-year-old West African-Iranian woman with deep warm brown skin bearing subtle iridescent sheen, pale amber eyes, sharp cheekbones, large natural black hair threaded with copper discs, wearing loose earth-tone linen layers, seated in calm meditative posture, soft diffused light catching the iridescence in her skin like oil on water, spiritual and tranquil mood, cyberpunk realism, intimate character study, shallow depth of field, warm color grading --ar 2:3 --v 6"
 }

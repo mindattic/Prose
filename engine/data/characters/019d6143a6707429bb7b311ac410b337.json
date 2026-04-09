@@ -280,5 +280,26 @@
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Russian / West African",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and efficient — muscle distributed for endurance rather than bulk. Shoulders slightly asymmetrical from years of weapon handling and scope work. Core tension visible even at rest.",
+    "hair_color": "Dark brown, streaked with premature silver at temples",
+    "hair_style": "Pulled back in a tight, functional braid. Practical. No styling concessions.",
+    "hair_length": "Medium",
+    "eye_color": "Amber-brown, with faint golden reticle pattern visible in right iris — military-grade targeting overlay, passive mode",
+    "skin_tone": "Olive undertone with grey undertones from years of poor sleep and exposure. Weathered beyond her years.",
+    "complexion": "Sharp cheekbones, angular jaw. Minimal grooming beyond maintenance — no cosmetics, one or two thin scars on her left cheekbone. Expression defaulting to neutral. Eyes track movement without turning her head.",
+    "distinguishing_marks": [
+      "Surgical scar along right collarbone, thin and old, suggesting early augmentation work",
+      "Burn mark on inside of left wrist — shaped like grip, possibly from weapon discharge or training accident",
+      "Small tattoo on right inner forearm: a simple crosshair in black ink, artist's mark from her previous identity — kept deliberately visible as a reminder or message"
+    ],
+    "visible_augmentations": "Chrome pain editor visible at the base of her skull, integrated into her cervical spine at the nape — brushed steel with faint LED pulse indicator. The implant's edges are slightly raised under skin, impossible to fully conceal without surgical revision she refuses to pursue. Right iris shows faint targeting reticle pattern when light catches it at certain angles.",
+    "posture_movement": "Economical. Every gesture calculated to minimize energy waste. Sits with spine against solid surfaces. When she moves, the spinal reflex boosters create a micro-lag stutter in her reflexes that trained eyes might notice — the implants firing faster than her body's proprioception can follow. Hands stay close to her body. Breathing is measured, deliberate. Does not startle easily because her nervous system is engineered not to.",
+    "clothing_style": "Tier 3-4 functional pragmatism — reinforced ballistic weave jacket in matte black, no logos or affiliations visible. Under-layer compression shirt. Cargo pants with custom-fitted magazine pouches she's worn smooth with use. Steel-toed boots, laced tight. A long overcoat in charcoal grey, modified with internal weapon racks — moves with her like a second skin. Nothing new. Nothing that draws attention. Everything selected for what it does, not what it says."
+  },
+  "image_prompt": "A 38-year-old woman with Russian and West African heritage, lean muscular build, dark brown hair streaked silver at temples pulled back tight, amber-brown eyes with subtle targeting reticle overlay. Angular sharp features, weathered skin with olive undertones. Visible brushed steel pain editor implant at base of skull. Wearing tactical ballistic weave jacket and grey modified overcoat with internal weapon racks, cargo pants, steel-toed boots. Sitting with spine against container wall in dim industrial shipping yard setting, hands resting on rifle. Cyberpunk noir aesthetic, moody blue-grey lighting casting long shadows, rust and steel textures in background, rain-slicked metal surfaces, no visible UI elements. Photorealistic, gritty, tense, professional military bearing, looking at viewer with calm predatory focus. Old Harbor industrial district night scene, cinematic depth of field. --ar 2:3 --v 6"
 }

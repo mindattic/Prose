@@ -182,5 +182,26 @@
     "Tessera Corponation",
     "Silver"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Central Asian (Yoruba / Kazakh)",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, muscular from decades of physical labor and outdoor organizing rather than gym work. Carries weight with density, not softness. Chest and shoulders suggest someone accustomed to carrying things — literal and metaphorical.",
+    "hair_color": "Natural black with deep silver threading throughout",
+    "hair_style": "Close-cropped, low-maintenance fade with subtle texture; no styling beyond basic grooming",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and assessing",
+    "skin_tone": "Deep brown with warm undertones, weathered by sun exposure and time",
+    "complexion": "Pronounced laugh lines radiating from eyes and mouth; deep forehead creases from decades of concentration and outdoor work. Skin texture uneven in places — sun damage on shoulders and forearms. Left eyebrow bisected by a thin pale scar running from brow ridge to temple, fully healed but visible. No makeup. Minimal grooming beyond necessity.",
+    "distinguishing_marks": [
+      "Scar bisecting left eyebrow and extending onto temple — thin, well-healed, pale against dark skin; approximately 4cm long, acquired during Ferrogate Transit riot (2196)",
+      "Callused palms and fingers from two decades of manual labor and organizing work",
+      "Minor solar elastosis on forearms and shoulders visible under typical sleeveless clothing"
+    ],
+    "visible_augmentations": "None visible. Subdermal medical alert chip located beneath left collarbone is not visible without direct skin inspection or scanner.",
+    "posture_movement": "Moves with deliberate, economical efficiency. Shoulders back, spine straight — a posture of responsibility rather than militarism. Makes sustained eye contact. Walks slowly through spaces she manages, as if inventory is taking place in her head. Gestures are purposeful, hands often occupied with holding something or gesturing for others to sit/listen. Hands often at her sides or holding council documents/armband.",
+    "clothing_style": "Tier 4 practical. Favors loose-fitting, durable synthetic blends in earth tones and grays. Cotton-linen blend long-sleeve shirt (sleeves often rolled) paired with reinforced work pants or cargo trousers with multiple pockets. Worn synthetic leather belt holding council armband on left arm — the armband itself is faded olive drab with embroidered zone designation, treated as official regalia. Comfortable, broken-in work boots (non-chrome, scuffed leather). A lightweight windbreaker or canvas coat depending on season. No jewelry except a simple steel band on her left ring finger (wedding ring, worn thin). No visible brands; all clothing is functional and sourced through collective networks or secondhand. A shoulder bag, always present, containing council correspondence, medical supplies, and food distribution ledgers."
+  },
+  "image_prompt": "Portrait of a 52-year-old Black woman, broad-shouldered and solid, deep brown skin with weathered texture and laugh lines, short silver-threaded black hair in a close crop, alert dark eyes. Thin pale scar bisects her left eyebrow. Serious, maternal expression. Wearing faded olive drab council armband on left arm over a loose earth-tone linen blend shirt with rolled sleeves, worn reinforced cargo pants, scuffed leather boots. Standing in indirect natural light in an urban autonomous zone setting, residential building background, overcast daylight. Photorealistic documentary style, gritty and dignified, warm but austere lighting. No cosmetic modifications, no chrome, practical and unglamorous. Cyberpunk 2226, working-class neighborhood council organizer. --ar 2:3 --v 6"
 }

@@ -265,5 +265,26 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 202,
+    "weight_kg": 78,
+    "build": "Slender and linear, built like aging infrastructure—no wasted mass, shoulders narrow and slightly rounded forward from decades in evidence labs. Lean musculature suggests minimal physical exertion beyond careful, precise hand work.",
+    "hair_color": "Salt-and-pepper white at temples, dark brown base",
+    "hair_style": "Short locs, individually threaded with thin copper wire throughout",
+    "hair_length": "Short",
+    "eye_color": "Augmented with geometric gold tessellation pattern overlaid on warm brown irises",
+    "skin_tone": "Warm amber-brown with slight undertone of terracotta, even complexion across face and visible limbs",
+    "complexion": "Meticulously groomed, no visible scarring or blemishing. Fine lines around eyes and mouth from decades of microscopic focus work and courtroom testimony. Clean-shaven or maintained with precise stubble. Expression rests in slight skepticism.",
+    "distinguishing_marks": [
+      "Geometric gold tessellation pattern across both irises—augmented cosmetic modification, visible at conversational distance",
+      "Faint horizontal creases on forehead from chronic squinting during lab work",
+      "Small, precise scar on left index fingertip—pre-augmentation evidence of old lab accident, barely visible"
+    ],
+    "visible_augmentations": "Patterned irises are the most immediately noticeable. Haptic feedback gloves appear as standard-issue black synthetic leather with faint silvered contact points at fingertips and palm. Neural indexing implant is subcutaneous—no visible telltale except occasional brief eye-flutter when accessing catalogued data.",
+    "posture_movement": "Habitual forward stoop from apologizing for height in low spaces. Movements are economical and deliberate—no wasted gesture. Hands move with practiced precision when handling objects. Speech is accompanied by minimal animation; he uses silence as emphasis. Walks with the measured pace of someone who has nowhere urgent to be and expects to arrive exactly on schedule.",
+    "clothing_style": "Tessera compliance-tier professional: dark charcoal or navy functional slacks with reinforced pockets for evidence handling. Layered with a subdued olive or grey technical shirt beneath a knee-length lab coat (Tier 3 quality—durable synthetic, faint Tessera compliance badge embroidered at chest). Worn leather shoes, meticulously maintained. No visible jewelry except a thin copper bracelet matching his hair threading. Grooming suggests someone who respects the institutional aesthetic more than personal expression, but whose restraint is itself a choice."
+  },
+  "image_prompt": "A forensic technician in his late forties, tall and slender with warm amber-brown skin, short locs threaded with copper wire, and striking geometric gold tessellation pattern across his irises. He wears a dark charcoal lab coat over grey technical clothing, standing in a sterile evidence processing lab under cool fluorescent light. His posture is slightly stooped, hands positioned with forensic precision. The background shows organized evidence shelving and microscope equipment. Lighting is clinical and desaturated. Cyberpunk aesthetic with subtle biotech augmentation visible in his patterned eyes. Photography-realistic, detailed facial features, professional headshot composition. --ar 2:3 --v 6"
 }

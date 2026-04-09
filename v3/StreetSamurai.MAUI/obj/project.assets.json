@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net10.0-android36.0": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.13.1.1": {
         "type": "package",
         "dependencies": {
@@ -71,6 +84,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -3066,6 +3096,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -3089,6 +3120,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -3101,6 +3133,19 @@
       }
     },
     "net10.0-android36.0/android-arm64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.13.1.1": {
         "type": "package",
         "dependencies": {
@@ -3170,6 +3215,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -6159,6 +6221,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -6182,6 +6245,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -6194,6 +6258,19 @@
       }
     },
     "net10.0-android36.0/android-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.13.1.1": {
         "type": "package",
         "dependencies": {
@@ -6263,6 +6340,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -9252,6 +9346,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -9275,6 +9370,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -9287,6 +9383,19 @@
       }
     },
     "net10.0-android36.0/iossimulator-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.13.1.1": {
         "type": "package",
         "dependencies": {
@@ -9356,6 +9465,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -12345,6 +12471,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -12368,6 +12495,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -12380,6 +12508,19 @@
       }
     },
     "net10.0-android36.0/maccatalyst-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.13.1.1": {
         "type": "package",
         "dependencies": {
@@ -12449,6 +12590,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -15438,6 +15596,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -15461,6 +15620,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -15473,6 +15633,19 @@
       }
     },
     "net10.0-android36.0/win-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.13.1.1": {
         "type": "package",
         "dependencies": {
@@ -15542,6 +15715,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -18531,6 +18721,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -18554,6 +18745,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -18566,6 +18758,19 @@
       }
     },
     "net10.0-ios26.2": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -18619,6 +18824,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -19617,6 +19839,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -19640,6 +19863,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -19652,6 +19876,19 @@
       }
     },
     "net10.0-ios26.2/android-arm64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -19705,6 +19942,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -20697,6 +20951,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -20720,6 +20975,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -20732,6 +20988,19 @@
       }
     },
     "net10.0-ios26.2/android-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -20785,6 +21054,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -21777,6 +22063,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -21800,6 +22087,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -21812,6 +22100,19 @@
       }
     },
     "net10.0-ios26.2/iossimulator-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -21865,6 +22166,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -22857,6 +23175,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -22880,6 +23199,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -22892,6 +23212,19 @@
       }
     },
     "net10.0-ios26.2/maccatalyst-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -22945,6 +23278,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -23937,6 +24287,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -23960,6 +24311,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -23972,6 +24324,19 @@
       }
     },
     "net10.0-ios26.2/win-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -24025,6 +24390,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -25017,6 +25399,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -25040,6 +25423,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -25052,6 +25436,19 @@
       }
     },
     "net10.0-maccatalyst26.2": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -25105,6 +25502,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -26185,6 +26599,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -26208,6 +26623,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -26220,6 +26636,19 @@
       }
     },
     "net10.0-maccatalyst26.2/android-arm64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -26273,6 +26702,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -27256,6 +27702,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -27279,6 +27726,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -27291,6 +27739,19 @@
       }
     },
     "net10.0-maccatalyst26.2/android-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -27344,6 +27805,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -28327,6 +28805,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -28350,6 +28829,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -28362,6 +28842,19 @@
       }
     },
     "net10.0-maccatalyst26.2/iossimulator-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -28415,6 +28908,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -29395,6 +29905,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -29418,6 +29929,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -29430,6 +29942,19 @@
       }
     },
     "net10.0-maccatalyst26.2/maccatalyst-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -29483,6 +30008,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -30466,6 +31008,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -30489,6 +31032,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -30501,6 +31045,19 @@
       }
     },
     "net10.0-maccatalyst26.2/win-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -30554,6 +31111,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -31537,6 +32111,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -31560,6 +32135,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -31572,6 +32148,19 @@
       }
     },
     "net10.0-windows10.0.19041": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -31625,6 +32214,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -32956,6 +33562,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -32979,6 +33586,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -32991,6 +33599,19 @@
       }
     },
     "net10.0-windows10.0.19041/android-arm64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -33044,6 +33665,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -34216,6 +34854,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -34239,6 +34878,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -34251,6 +34891,19 @@
       }
     },
     "net10.0-windows10.0.19041/android-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -34304,6 +34957,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -35476,6 +36146,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -35499,6 +36170,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -35511,6 +36183,19 @@
       }
     },
     "net10.0-windows10.0.19041/iossimulator-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -35564,6 +36249,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -36733,6 +37435,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -36756,6 +37459,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -36768,6 +37472,19 @@
       }
     },
     "net10.0-windows10.0.19041/maccatalyst-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -36821,6 +37538,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -37993,6 +38727,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -38016,6 +38751,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -38028,6 +38764,19 @@
       }
     },
     "net10.0-windows10.0.19041/win-x64": {
+      "BCrypt.Net-Next/4.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Markdig/1.1.2": {
         "type": "package",
         "compile": {
@@ -38081,6 +38830,23 @@
         "type": "package",
         "build": {
           "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "10.0.5",
+          "Microsoft.AspNetCore.Components": "10.0.5"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -39263,6 +40029,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
@@ -39286,6 +40053,7 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Markdig": "1.1.2",
+          "Microsoft.AspNetCore.Components.Authorization": "10.0.5",
           "Microsoft.AspNetCore.Components.Web": "10.0.5",
           "StreetSamurai.Core": "1.0.0"
         },
@@ -39299,6 +40067,37 @@
     }
   },
   "libraries": {
+    "BCrypt.Net-Next/4.0.3": {
+      "sha512": "W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "type": "package",
+      "path": "bcrypt.net-next/4.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net-next.4.0.3.nupkg.sha512",
+        "bcrypt.net-next.nuspec",
+        "ico.png",
+        "lib/net20/BCrypt.Net-Next.dll",
+        "lib/net20/BCrypt.Net-Next.xml",
+        "lib/net35/BCrypt.Net-Next.dll",
+        "lib/net35/BCrypt.Net-Next.xml",
+        "lib/net462/BCrypt.Net-Next.dll",
+        "lib/net462/BCrypt.Net-Next.xml",
+        "lib/net472/BCrypt.Net-Next.dll",
+        "lib/net472/BCrypt.Net-Next.xml",
+        "lib/net48/BCrypt.Net-Next.dll",
+        "lib/net48/BCrypt.Net-Next.xml",
+        "lib/net5.0/BCrypt.Net-Next.dll",
+        "lib/net5.0/BCrypt.Net-Next.xml",
+        "lib/net6.0/BCrypt.Net-Next.dll",
+        "lib/net6.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.0/BCrypt.Net-Next.dll",
+        "lib/netstandard2.0/BCrypt.Net-Next.xml",
+        "lib/netstandard2.1/BCrypt.Net-Next.dll",
+        "lib/netstandard2.1/BCrypt.Net-Next.xml",
+        "readme.md"
+      ]
+    },
     "GoogleGson/2.13.1.1": {
       "sha512": "1yD5W1UPmgEEHrqdtVJI7330h1foGWiehVC07er3NiZxJPMmphTmPz2kuSXawIo8xmeIvd92WpiTOEmYpk6mzQ==",
       "type": "package",
@@ -39393,6 +40192,21 @@
         "buildTransitive/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.targets",
         "microsoft.aspnetcore.components.analyzers.10.0.5.nupkg.sha512",
         "microsoft.aspnetcore.components.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Authorization/10.0.5": {
+      "sha512": "5Svbnp97Bsuwa4rtVIIfNwXWghdd9Fb1FOtxodeQxe427KedAjZ9/S/6yxtSPmtd+kWFXgRAahV8ecqP/ZvShA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.authorization/10.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.dll",
+        "lib/net10.0/Microsoft.AspNetCore.Components.Authorization.xml",
+        "microsoft.aspnetcore.components.authorization.10.0.5.nupkg.sha512",
+        "microsoft.aspnetcore.components.authorization.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Components.Forms/10.0.5": {
@@ -44819,7 +45633,6 @@
       },
       "frameworks": {
         "net10.0-android36.0": {
-          "framework": "net10.0-android36.0",
           "targetAlias": "net10.0-android",
           "projectReferences": {
             "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Core\\StreetSamurai.Core.csproj": {
@@ -44831,7 +45644,6 @@
           }
         },
         "net10.0-ios26.2": {
-          "framework": "net10.0-ios26.2",
           "targetAlias": "net10.0-ios",
           "projectReferences": {
             "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Core\\StreetSamurai.Core.csproj": {
@@ -44843,7 +45655,6 @@
           }
         },
         "net10.0-maccatalyst26.2": {
-          "framework": "net10.0-maccatalyst26.2",
           "targetAlias": "net10.0-maccatalyst",
           "projectReferences": {
             "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Core\\StreetSamurai.Core.csproj": {
@@ -44855,7 +45666,6 @@
           }
         },
         "net10.0-windows10.0.19041": {
-          "framework": "net10.0-windows10.0.19041",
           "targetAlias": "net10.0-windows10.0.19041.0",
           "projectReferences": {
             "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Core\\StreetSamurai.Core.csproj": {
@@ -44881,7 +45691,6 @@
     },
     "frameworks": {
       "net10.0-android36.0": {
-        "framework": "net10.0-android36.0",
         "targetAlias": "net10.0-android",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {
@@ -45214,7 +46023,6 @@
         }
       },
       "net10.0-ios26.2": {
-        "framework": "net10.0-ios26.2",
         "targetAlias": "net10.0-ios",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {
@@ -45547,7 +46355,6 @@
         }
       },
       "net10.0-maccatalyst26.2": {
-        "framework": "net10.0-maccatalyst26.2",
         "targetAlias": "net10.0-maccatalyst",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {
@@ -45881,7 +46688,6 @@
         }
       },
       "net10.0-windows10.0.19041": {
-        "framework": "net10.0-windows10.0.19041",
         "targetAlias": "net10.0-windows10.0.19041.0",
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebView.Maui": {

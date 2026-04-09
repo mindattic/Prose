@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Sinan Tanaka-Frimpong is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a extraction specialist out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented extraction specialist in Meridian 88, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Sinan Tanaka-Frimpong is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a extraction specialist out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented extraction specialist in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.1,
@@ -275,8 +275,29 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Slagworks Industrial"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Japanese / West African (Ghanaian)",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Lean and angular, all efficiency — long limbs with visible musculature but no excess bulk. The physique of someone who has optimized every gram for functional movement rather than appearance.",
+    "hair_color": "Black with premature silver threading at the temples",
+    "hair_style": "Closely cropped, sharp edges, deliberately maintained",
+    "hair_length": "Short",
+    "eye_color": "Chrome iris rings encircling dark pupils — thermal and low-light augmentation visible as faint LED circuitry at the rim",
+    "skin_tone": "Medium warm brown with olive undertones — a blend of his mixed ancestry",
+    "complexion": "Sharp jawline, high cheekbones, composed expression. Skin shows minor scarring around the eye sockets from augmentation integration — thin white lines barely visible in certain light. Clean-shaven. Few wrinkles despite age, suggesting either good genetics or minor dermal maintenance.",
+    "distinguishing_marks": [
+      "Surgical scars encircling both eye sockets in thin white arcs where cybernetic implants were integrated.",
+      "Thin burn scar along the inside of his right forearm — pale against darker skin, roughly 8cm long, from an old extraction gone wrong.",
+      "Small entry wound scar on his left shoulder blade, barely noticeable unless he's shirtless."
+    ],
+    "visible_augmentations": "Chrome iris rings in both eyes — distinctive, deliberate, makes no attempt to hide them. The rings glow faintly in low light with thermal overlay activation. No visible limb augmentation; synthetic blood and nanite system is entirely subcutaneous.",
+    "posture_movement": "Moves with deliberate economy — every motion calculated and efficient. Stands with weight slightly forward, ready to shift direction instantly. Eyes rarely still; constant thermal and visual scanning of his environment. No wasted gestures. Handshake firm but not aggressive. In conversation, he maintains eye contact unflinchingly, the chrome rings catching light.",
+    "clothing_style": "Tier 2-3 functional aesthetic — tailored but utilitarian. Dark monochrome palette: charcoal tactical jacket with internal holsters and cargo placement, black reinforced pants with thigh pockets, grey compression base layer visible at collar and wrists. Unmarked boots (reinforced soles, good traction). Minimal branding; quality is visible but anonymous. Jacket shows subtle wear patterns consistent with field use. No jewelry except a worn titanium watch with military-style face."
+  },
+  "image_prompt": "Cyberpunk character portrait, tall lean Japanese-Ghanaian male, age 33, sharp features, chrome iris rings glowing in eyes with thermal overlay circuitry visible, close-cropped black hair with silver at temples, medium warm brown skin with surgical scars around eye sockets, composed dangerous expression. Wearing dark charcoal tactical jacket over grey compression layer, black reinforced pants, standing with predatory stillness and forward weight. Mid-level corporate residential tower interior in background with ambient neon and cool LED lighting. Dramatic side-lighting emphasizing chrome eye augmentations, photorealistic, cyberpunk noir, high contrast, moody atmospheric depth, cinematic composition --ar 2:3 --v 6"
 }

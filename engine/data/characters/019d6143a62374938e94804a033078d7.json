@@ -62,7 +62,7 @@
   "story_hooks": [
     "Halima Akerblom-Manu intercepts intelligence about a threat to their district and must decide between profit and protection",
     "The fixer who handles Halima Akerblom-Manu's contracts goes silent — dead, disappeared, or turned",
-    "A crew member from Halima Akerblom-Manu's past shows up in Meridian 88, carrying old grievances and new chrome"
+    "A crew member from Halima Akerblom-Manu's past shows up in GLMZ, carrying old grievances and new chrome"
   ],
   "narrative_function": "As a data thief, Halima Akerblom-Manu embodies the tension between independence and isolation. They are a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
   "augmentations": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation. Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
@@ -278,11 +278,32 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "Meridian 88",
+    "GLMZ",
     "The Heritage Vault",
     "Burnside Pocket",
     "Kang-Petrov Arms KPA-15 'Diaspora'",
     "Stratum"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Rawboned and lean — minimal body fat, long limbs built for speed rather than power. Decades of confined-space combat training have carved efficiency into every muscle. No wasted mass.",
+    "hair_color": "Salt-and-pepper gray with natural dark undertones",
+    "hair_style": "Pulled back in a tight, practical braid secured with a steel cable tie",
+    "hair_length": "Long",
+    "eye_color": "Chrome iris rings with amber pupil dilation — cybernetic enhancement visible in lowlight",
+    "skin_tone": "Warm medium brown with ashy undertones — the complexion of someone who spends more time in artificial light than sunlight",
+    "complexion": "Lean, angular face with high cheekbones and a sharp jaw. Skin is weathered but clean — no cosmetic concern, only functional maintenance. Lines around the eyes from decades of focus. The face resists easy categorization — distinctly their own.",
+    "distinguishing_marks": [
+      "Thin surgical scar running 4cm along the left temple, partially obscured by the hairline — old combat injury, professionally closed",
+      "Series of three parallel burn marks across the right forearm, each 2-3cm long and faded to white — chemical splash from a failed extraction, circa 2211",
+      "Small tattoo at the inside of the left wrist — a stylized compass rose in gray ink, barely visible unless specifically looked for"
+    ],
+    "visible_augmentations": "Chrome iris rings with faint LED glow in thermal mode. Wired reflex ports visible along both sides of the neck as raised metallic nodes, pulsing with faint bioluminescent blue when active. The adrenaline pump manifests as a slight broadening at the solar plexus — internal augmentation visible only as a subtle scar pattern beneath fitted clothing.",
+    "posture_movement": "Stands with shoulders slightly forward, weight balanced on the balls of the feet — never fully relaxed, always ready. Movements are economical and precise, no extraneous motion. Eyes scan environments methodically. When they move through space, it's with the calculated efficiency of someone trained in confined-space tactics.",
+    "clothing_style": "Tier 4 pragmatist. Black or dark gray fitted synthetic bodysuit with modular cargo pockets — reinforced stitching, thermal-damping weave for stealth. Over this, a lightweight gray tech-jacket with reflective piping, minimal branding. Worn boots — expensive once, now broken in. No jewelry except the cable tie in their hair. Everything is functional, replaceable, and kept in good repair. Nothing screams wealth or poverty — calculated invisibility."
+  },
+  "image_prompt": "Tall, rawboned nonbinary figure with warm medium-brown skin and salt-pepper hair in a tight braid, age 59, angular face resistant to categorization. Cybernetic eyes with glowing chrome iris rings and thermal overlay, visible reflex augmentation ports along the neck glowing faint blue. Dressed in black fitted synthetic bodysuit with thermal-damping weave, gray tech-jacket with reflective piping, worn tactical boots. Standing in a transit corridor with industrial neon lighting, fluorescent strips casting hard shadows. Posture alert and economical, weight on balls of feet. Fine scar visible on left temple. Cyberpunk espionage specialist aesthetic, gritty realism, low-light urban setting, professional and dangerous. Midjourney cyberpunk style, cinematic lighting, sharp focus --ar 2:3 --v 6"
 }

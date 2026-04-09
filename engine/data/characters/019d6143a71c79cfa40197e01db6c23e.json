@@ -104,5 +104,26 @@
   "district": "The Spires",
   "related_entities": [
     "Chicago"
-  ]
+  ],
+  "physical_description": {
+    "heritage": "West African / South Asian",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Athletic and broad-shouldered, muscle definition visible but not excessive; carries weight in chest and forearms from decades of physical work. Frame suggests controlled strength rather than showiness.",
+    "hair_color": "Black with silver threading at temples",
+    "hair_style": "Tight fade, closely clippered on sides with longer texture on crown",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep warm brown with undertones suggesting mixed West African and South Asian ancestry",
+    "complexion": "Weathered by sun and stress, minimal facial hair except a neatly trimmed goatee. Faint lines around eyes and forehead from squinting and chronic alertness. Skin is clear but bears the texture of someone who doesn't prioritize cosmetic treatments.",
+    "distinguishing_marks": [
+      "Pale burn scar running from right temple down to jawline, approximately 8cm in length, suggesting old thermal weapon or industrial accident",
+      "Faded tattoo on left forearm: abstract geometric pattern in black ink, approximately 10cm across, style suggests personal rather than commercial design",
+      "Thin white scar bisecting left eyebrow, barely noticeable unless light catches it directly"
+    ],
+    "visible_augmentations": "None visible. Any augmentations are subcutaneous or internal—characteristic of someone who values discretion and maintains a low-profile presence despite their role.",
+    "posture_movement": "Stands with weight balanced evenly, shoulders slightly back. Moves with deliberate efficiency—no wasted motion. Eyes constantly assess surroundings, head turns at controlled intervals. Handshake is firm but not aggressive. Speaks from the chest, voice modulated low.",
+    "clothing_style": "Tier 2-3 professional security aesthetic. Typically wears tailored charcoal or matte-black synthlinen jackets with subtle Φ-laced smart-weave (barely detectable); fitted cargo pants with discrete pockets; reinforced undersuit visible at collar and wrists (ballistic-rated, matte finish). Boots are heavy-soled tactical grade, well-maintained but scuffed from use. Favors brands associated with corpo security (Hexus, Ironclad). No jewelry except a worn digital watch on left wrist with encrypted band."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 48-year-old man of West African and South Asian descent, athletic build, 6'2\", close-cropped black hair with silver at temples, dark brown eyes, deep warm brown skin. Weathered professional security operative with pale burn scar running from right temple down jawline. Stands in confident neutral posture with constant alertness. Wearing tailored matte-black synthlinen jacket over reinforced tactical undersuit, fitted cargo pants, heavy tactical boots. Faded geometric tattoo visible on left forearm. Minimal expression, composed demeanor. Indoor setting: Tier 2 corporate environment, soft blue-white ambient lighting with subtle shadows across face. Slight rim-light on shoulders. Moody, professional, dangerous competence. Photography style, sharp focus, cinematic depth of field. --ar 2:3 --v 6"
 }

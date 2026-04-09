@@ -13,7 +13,7 @@
   "age": 41,
   "status": "active",
   "location": "The Narrows, Ironvein, near North Ave and Damen",
-  "description": "Florinel has a face built for reassurance — broad cheekbones, dark warm eyes, a gap-toothed smile they deploy like a tool. Their skin is medium brown with the slightly brighter flush along the jaw that comes from their bioluminescent geneware activating when their temperature rises. They keep their black hair in tight braids coiled at the nape of their neck and wear the same style of sturdy dark apron every day, pockets stuffed with color-coded tube caps and a laminated prayer card to the Ironvein E.L.F. known locally as the Quiet Pump.\n\nThe Ironvein Community Blood Cooperative is one of the few non-corporate blood banks in Meridian 88, and Florinel has kept it running for eleven years through a combination of logistical genius, community trust, and an encyclopedic knowledge of geneware interactions with blood typing. They track thousands of donors across the Narrows, coordinate with street docs like Yewande, and have personally matched blood for procedures in conditions that would make a hospital administrator weep. They find genuine joy in the organizational complexity of their work and are the kind of person who talks about supply chain logistics the way other people talk about sport.",
+  "description": "Florinel has a face built for reassurance — broad cheekbones, dark warm eyes, a gap-toothed smile they deploy like a tool. Their skin is medium brown with the slightly brighter flush along the jaw that comes from their bioluminescent geneware activating when their temperature rises. They keep their black hair in tight braids coiled at the nape of their neck and wear the same style of sturdy dark apron every day, pockets stuffed with color-coded tube caps and a laminated prayer card to the Ironvein E.L.F. known locally as the Quiet Pump.\n\nThe Ironvein Community Blood Cooperative is one of the few non-corporate blood banks in GLMZ, and Florinel has kept it running for eleven years through a combination of logistical genius, community trust, and an encyclopedic knowledge of geneware interactions with blood typing. They track thousands of donors across the Narrows, coordinate with street docs like Yewande, and have personally matched blood for procedures in conditions that would make a hospital administrator weep. They find genuine joy in the organizational complexity of their work and are the kind of person who talks about supply chain logistics the way other people talk about sport.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -232,10 +232,30 @@
   "related_entities": [
     "The Narrows Compact",
     "The Gauze",
-    "Meridian 88",
+    "GLMZ",
     "Ironvein",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Anglo-Saxon",
+    "height_cm": 168,
+    "weight_kg": 71,
+    "build": "Solid, practical frame — neither lean nor heavy, built for standing twelve-hour shifts. Shoulders slightly rounded from years hunched over blood typing workstations. Core strength evident in posture despite desk work.",
+    "hair_color": "Black, natural",
+    "hair_style": "Tight braids coiled and pinned at the nape of the neck in a compact bun",
+    "hair_length": "Long (braided and secured)",
+    "eye_color": "Dark brown, warm",
+    "skin_tone": "Medium brown with warm undertones, enhanced by bioluminescent geneware",
+    "complexion": "Broad cheekbones, gap-toothed smile with visible charm, well-maintained skin. Along the jawline and upper cheekbones, a soft luminescent flush visible under the skin — pale blue-green undertone that glows faintly when body temperature rises. Expression defaults to measured friendliness; creases around the eyes from years of focused precision work.",
+    "distinguishing_marks": [
+      "Faint subcutaneous luminescence along the jawline and high cheekbones (bioluminescent geneware, pale blue-green, most visible when warm)",
+      "Small, nearly imperceptible RFID reader port scar on the inner right thumb pad — barely visible unless pointed out"
+    ],
+    "visible_augmentations": "Bioluminescent geneware flush visible under skin along jaw and cheekbones, most noticeable when flushed or heated. No obvious cyberware; augmentations are largely subcutaneous and geneware-based.",
+    "posture_movement": "Upright, deliberate, economical. Moves with practiced efficiency — no wasted motion. Hands are steady and purposeful; occasionally taps fingers rhythmically when thinking through logistics problems. Calm, unhurried bearing even under pressure. Natural tendency to stand closer to conversation partners, reading their comfort carefully.",
+    "clothing_style": "Tier 3-4 working class, cooperative-standard. Dark, sturdy apron worn daily over plain dark slacks and a simple long-sleeved shirt (usually deep blue or grey). The apron pockets are customized with hand-sewn organizers for color-coded tube caps, marker pens, and notepads. Practical boots suitable for concrete floors and possible fluid spills. A laminated prayer card to the Ironvein E.L.F. (the Quiet Pump) hangs from a beaded cord around their neck — visible, worn, clearly meaningful. No jewelry beyond functional organizational tools."
+  },
+  "image_prompt": "Portrait of a 41-year-old nonbinary person with medium brown skin and tight black braids coiled at the nape of neck, standing in a blood bank workspace. Warm dark eyes, gap-toothed smile, broad cheekbones with a soft bioluminescent blue-green flush visible under the skin (subtle, professional geneware). Wearing a dark practical apron with organized pockets over plain dark slacks and long-sleeved shirt. A laminated prayer card hangs from a beaded cord at the chest. Hands steady, posture upright and focused. Background shows cold storage units and blood typing workstation with soft fluorescent lighting. Cinematic cyberpunk medical drama, grounded realism, warm color grading, steady calm presence, documentary-style portraiture. --ar 2:3 --v 6"
 }

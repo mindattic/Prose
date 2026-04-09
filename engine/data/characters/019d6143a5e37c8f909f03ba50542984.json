@@ -12,7 +12,7 @@
   "role": "Checkpoint Operator, Ferrogate Transit Security",
   "age": 31,
   "status": "active",
-  "location": "Kessler Interchange, Meridian 88, near Milwaukee and Damen",
+  "location": "Kessler Interchange, GLMZ, near Milwaukee and Damen",
   "description": "Daouda is built wide and compact, the kind of body that came from years of adolescent labor before it settled into something functional and calm. His complexion is a warm chestnut brown, his hair worn in tight, close-cut coils shot through with bioluminescent blue threading — a cheap genemod he got at a Mexicantown Libre parlor for his twenty-fifth birthday that he's maintained ever since because his daughter said it made him look like a hero. He has the patient, half-attentive expression of someone who has processed thirty thousand faces through a chokepoint and is no longer surprised by the human shape, but his eyes quicken when something actually breaks pattern.\n\nHe's not corrupt, which at Kessler Interchange makes him something of an oddity. He takes Φ12 under the table maybe twice a year when someone's biometric is glitching and they're going to miss a hospital appointment, and he has decided that this is what his moral flexibility budget allows. He has a small shrine to the Interchange E.L.F. — locally called 'the Turnstile' — affixed to the inside of his booth, decorated with expired transit tokens and a photo of his daughter printed on glossy plastic. He believes the Turnstile has kept three serious incidents off his shift in three years, and he's probably right that something has.",
   "psychology": {
     "facet_weights": {
@@ -239,11 +239,30 @@
     "Mexicantown Libre",
     "The Interchange",
     "Zheng-Dao Heavy Industries Dragon Gate DG-4 'Gatekeeper'",
-    "Meridian 88",
+    "GLMZ",
     "Ferrogate Transit",
     "Turnstile",
     "The Gradient Compact",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Turkish",
+    "height_cm": 172,
+    "weight_kg": 89,
+    "build": "Wide-set and compact, shoulders broad from old labor, chest and torso solid without heaviness. Functional rather than athletic — built to endure, not sprint.",
+    "hair_color": "Black with bioluminescent blue threading",
+    "hair_style": "Tight coils, close-cropped, evenly maintained",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, warm and observant",
+    "skin_tone": "Warm chestnut brown with slight undertone from mixed heritage",
+    "complexion": "Clean-shaven, face weathered lightly by thirty-one years and shift work. Crow's lines around eyes from sustained focus. Expression usually neutral, patient — the face of someone who has absorbed tens of thousands of strangers without judgment.",
+    "distinguishing_marks": [
+      "Small, faded burn scar on left forearm (adolescent labor accident, barely visible)"
+    ],
+    "visible_augmentations": "Right palm bears faint subcutaneous grid pattern where Ferrogate biometric scanner integrates with skin — visible only in direct light as hairline geometric scars. Bioluminescent blue threading in hair glows faintly in low-light conditions.",
+    "posture_movement": "Settled and economical. Stands with weight evenly distributed, shoulders relaxed. Moves with deliberate efficiency — no wasted motion from years at the checkpoint. Head often tilted slightly forward, eyes in a state of passive pattern-matching. Quickens noticeably when something breaks routine.",
+    "clothing_style": "Ferrogate Transit Security uniform (Tier 3 standard): charcoal gray regulation shirt with reflective piping, black cargo pants with utility pockets, steel-toed boots maintained but not polished. On cool shifts, a company-issued navy windbreaker. Off-duty: practical, worn jeans, faded band t-shirts, a blue Ferrogate jacket he wears for his daughter. No jewelry except a thin silver band on his left ring finger."
+  },
+  "image_prompt": "Portrait of a 31-year-old West African-Turkish man in Ferrogate Transit Security uniform, warm chestnut brown skin, short tight coils with glowing bioluminescent blue threading, dark observant eyes, weathered patient expression. Wide-set compact build. Wearing charcoal gray security shirt with reflective piping, standing in fluorescent-lit checkpoint booth with expired transit tokens visible on shrine behind him. Faint geometric scars visible on right palm from integrated biometric scanner. Soft warm lighting mixing fluorescent overhead with bioluminescent hair glow. Cyberpunk, transit corridor, mundane dignity, photorealistic --ar 2:3 --v 6"
 }

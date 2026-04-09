@@ -181,7 +181,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Arrived in Meridian 88 from the Mozambique Diaspora Corridor, aged 40, with a family fermentation recipe and almost no Quanta",
+      "event": "Arrived in GLMZ from the Mozambique Diaspora Corridor, aged 40, with a family fermentation recipe and almost no Quanta",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -232,5 +232,28 @@
     "Arcturus CK-5 'Bloodhound'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South African / Mexican — Stellenbosch Dutch colonial lineage mixed with Viramontes indigenous Mexican ancestry",
+    "height_cm": 183,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thick-limbed with the solid mass of someone who has lifted heavy cooking vessels and fermentation vats for nearly two decades. Not fat, but substantial — the build of labor rather than gym work.",
+    "hair_color": "Iron gray with hints of original black",
+    "hair_style": "Cropped short, practical, swept back from forehead",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, slightly yellowed at the sclera from decades of market-stall smoke and steam",
+    "skin_tone": "Warm deep brown with undertones suggesting mixed heritage — darker than Viramontes average, lighter than pure Stellenbosch ancestry",
+    "complexion": "Heavily lined face mapped with deep creases radiating from the eyes and running from nose to mouth corners. Weathered texture from constant exposure to steam and thermal fluctuation. Stubbled jaw, grooming practical rather than refined. Lines around eyes suggest frequent squinting in bright morning prep light.",
+    "distinguishing_marks": [
+      "Faded Oxidian Market Vendors Guild tattoo on left forearm — stylized oxide-red symbol, approximately 8cm tall, bleeding slightly at edges from age and repeated sun exposure",
+      "Deep scar tissue on bridge of nose from old breaks, creating slight deviation to the left",
+      "Stretched earlobes with visible scarring from removed gauges — lobes hang slightly loose",
+      "Cluster of small burn scars on inner right wrist from early fermentation accidents",
+      "Thin white line scar across left knuckle from market knife accident, circa 2210"
+    ],
+    "visible_augmentations": "Right palm displays subtle thermal implant — faint silver-lined circuitry barely visible beneath dark skin, most obvious when hand is angled in bright light. Appears as network of fine metallic threads running from wrist to fingertips. No external ports or obvious interface points.",
+    "posture_movement": "Moves with deliberate economy of motion — no wasted gesture. Stands with weight distributed evenly, shoulders slightly forward from decades bent over cooking stations. Walks slowly, with the patience of someone who has learned that haste causes spills. Hands are never still when thinking — constantly adjusting, measuring, gesturing with precision.",
+    "clothing_style": "Tier 4 utilitarian market vendor. Wears heat-resistant canvas aprons (cream-colored, stained with fermentation residue and grain dust) over simple dark synthetic shirts. Cargo pants with reinforced pockets for scale weights and coin storage. Worn Veldskoen-style slip-ons (fake leather, comfortable for 18-hour shifts). No visible jewelry except a corroded copper band on left ring finger — a shrine token, not a wedding ring. Clothes are maintained but worn thin; no logos or corporate branding."
+  },
+  "image_prompt": "58-year-old South African-Mexican man, broad shoulders, weathered face carved with deep lines, warm dark brown skin, iron-gray short hair, yellowed dark eyes, broken nose, stretched earlobes. Wearing cream-stained canvas apron over dark synthetic shirt, standing at a fermented food market stall before dawn light. Right palm shows subtle silver thermal implant circuitry. Behind him copper shrine and fermentation vats steaming. Oxidian Market, early morning, cool blue pre-dawn light mixing with amber burner flames, gritty weathered aesthetic, realistic skin texture showing decades of market work, hands positioned over temperature-sensing fermentation, utterly unglamorous cyberpunk blue-collar life, character-driven portraiture --ar 2:3 --v 6"
 }

@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Kamala Nystrom-Keita is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 45, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — bone lacing — titanium mesh throughout skeleton, increases durability and striki — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Kamala Nystrom-Keita describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Kamala Nystrom-Keita is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — bone lacing — titanium mesh throughout skeleton, increases durability and striki — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Kamala Nystrom-Keita describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.25,
@@ -275,10 +275,32 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
     "Titanium",
     "Slagworks Industrial"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Scandinavian / East African",
+    "height_cm": 178,
+    "weight_kg": 74,
+    "build": "Athletic and lean with precise musculature — dancer's flexibility combined with fighter's density. No excess mass; every movement calculated.",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Kept short and practical, swept back from forehead",
+    "hair_length": "Short",
+    "eye_color": "Steel gray — natural but intensified by nocturnal living",
+    "skin_tone": "Warm caramel with underlying golden undertones from mixed heritage",
+    "complexion": "Smooth and angular — high cheekbones, sharp jawline softened only by the gentleness around his eyes. Skin shows the pallor of nocturnal life despite his mixed ancestry; faint dark circles are permanent fixtures.",
+    "distinguishing_marks": [
+      "Faint white scar running 3cm along left temple, partially hidden by hairline — old knife work",
+      "Thin titanium mesh visible beneath translucent skin along right forearm in geometric lattice pattern",
+      "Skeletal chrome outlining both wrists in subtle raised lines where bone lacing meets skin",
+      "Small burn mark on inside of right elbow — injection site scarring from early synthesizer implant work"
+    ],
+    "visible_augmentations": "Titanium bone lacing is deliberately visible — mesh patterns shimmer faintly beneath skin on forearms, wrists, and along the ridge of his jaw. When he moves, the chrome catches light in deliberate, practiced ways. No attempt at concealment. The internal drug synthesizer leaves no external trace.",
+    "posture_movement": "Moves with economical precision — no wasted motion, no flourish. Stands with weight balanced on the balls of his feet, ready to shift direction instantly. When seated, his posture is deceptively relaxed but his eyes track everything. His movements have the fluidity of someone who has internalized violence so deeply it became dance.",
+    "clothing_style": "Tier 2-3 practical minimalism — dark fitted synthweave layers that breathe well during nocturnal work. Favors charcoal and matte black technical fabrics with subtle chrome accents. Wears a worn midnight-blue duster jacket with reinforced shoulders over a black compression shirt. Cargo pants with strategic pockets. Boots are expensive, quiet, practical — scuffed but maintained. No corporate logos, no gang colors. Everything is built for function and unobstructed movement."
+  },
+  "image_prompt": "A 45-year-old male netrunner with Scandinavian-East African heritage, lean athletic build, steel gray eyes, dark hair silvering at temples. Visible titanium bone lacing mesh glimmering subtly beneath warm caramel skin on forearms and wrists. Sharp angular features, faint scar along temple. Wearing fitted black synthweave compression shirt under worn midnight-blue reinforced duster jacket, dark cargo pants, quiet tactical boots. Standing in three-quarter pose with weight balanced, movements economical and precise. Nocturnal pallor, faint dark circles. Cyberpunk setting, moody underground residential tower interior, cool blue-gray lighting with subtle chrome highlights reflecting off augmentations, cinematic depth of field, photorealistic with neon shadows, gritty corporate aesthetic. --ar 2:3 --v 6"
 }

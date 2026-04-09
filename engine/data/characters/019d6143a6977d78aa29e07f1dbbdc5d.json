@@ -267,5 +267,25 @@
     "The Heritage Vault",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "East European (Russian/Soviet) / West African (Ghanaian)",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Muscular and densely compact, with the functional geometry of someone who trains deliberately for force application. Broad shoulders, minimal body fat, forearms noticeably thickened by subdermal armor plating beneath the skin.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Pulled back in a tight braid or high knot, practical and non-regulation-violating",
+    "hair_length": "Medium (gathered)",
+    "eye_color": "Deep brown",
+    "skin_tone": "Deep Ghanaian brown with cool undertones from Slavic heritage",
+    "complexion": "Sharp angular face with broad cheekbones and a wide, distinguished nose. Minimal scarring on face (she keeps professional marks covered). Skin condition is clear but weathered by years of high-impact physical work and irregular sleep. Expression often neutral or controlled, eyes direct.",
+    "distinguishing_marks": [
+      "Fragmentation scars across right shoulder and upper back (pre-2191, largely concealed by tactical gear and armor plating)",
+      "Faint ritual marks on inner left forearm in Amharic script (ELF shrine practice, barely visible unless close)"
+    ],
+    "visible_augmentations": "Retractable subdermal armor plating visible along both forearms as subtle raised geometric lines beneath skin when not deployed; the plating itself remains subcutaneous. Dark green scaled cosmetic tail, approximately 90cm, hangs from base of spine — visible when not concealed by gear or long jackets; scales have an opalescent quality in direct light, and the tail moves with deliberate, almost predatory grace.",
+    "posture_movement": "Stands with centered weight distribution and visible postural awareness. Movements are controlled and economical, never wasted. Walks like someone who is assessing angles and exits in any room. In off-duty settings, posture loosens slightly but never fully relaxes. Hands at rest show slight tension in forearms.",
+    "clothing_style": "On-duty: Axiom Security Division tactical gear — ballistic weave cargo pants, reinforced torso plating, modular utility vest in corporate grey-black. Understated Tier 2 corporate aesthetic. Off-duty: Dark fitted jackets that accommodate the tail, usually worn over simple neutral-toned clothing. Boots always practical and maintained to professional standards. Minimal jewelry except for small worn silver pendant (likely religious). Overall presentation is Tier 2 corporate — well-maintained, functional, without ornamentation."
+  },
+  "image_prompt": "Perpetua Kalashnikova-Agyarko, 37-year-old East European-West African female riot suppression specialist, 178cm muscular build, standing in tactical stance. Deep brown skin with sharp Slavic cheekbones and broad distinguished nose, dark brown hair pulled tight. Wearing Axiom Security Division tactical gear in grey-black — ballistic weave, modular plating, utility vest. Visible subdermal armor plating lines on both forearms beneath skin. Most striking: long dark green scaled cosmetic tail extending 90cm from base of spine with opalescent scales, moving with predatory grace. Professional but weathered expression, deep brown eyes direct and controlled. Cyberpunk riot suppression, tactical industrial lighting, dystopian corporate aesthetic, tight composition showing gear and augmentations, gritty realism with subtle sci-fi elements, moody overhead fluorescent lighting, professional corpo enforcer portrait style --ar 2:3 --v 6"
 }

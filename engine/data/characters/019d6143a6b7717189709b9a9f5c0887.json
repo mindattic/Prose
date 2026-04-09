@@ -13,7 +13,7 @@
   "age": 35,
   "status": "active",
   "location": "Bay View Docks, temporary berth at Pier 14-Gamma (airship caravan The Abundant Error), near Michigan Ave South and Cermak",
-  "description": "Roshani is solid and practical in the way of people who lift and carry things every day — not large but dense with muscle, with the sun-damaged skin of someone who spends significant time on open airship decks and the quick, evaluating eyes of a born trader. Her hair is streaked in color-shifting strands, currently cycling through amber and deep red with the temperature, a mod she wears for professional reasons: 'People remember the hair,' she explains without embarrassment. She has a pattern of scarification on her left forearm in a Zambian geometric style, done by her mother, which she occasionally traces with her thumb when calculating.\n\nRoshani runs textiles, preserved food, hand-fabricated tools, and 'specialty information' (she is vague about this category) between the transit hubs and fringe communities around Meridian 88's industrial periphery. She is a member of a caravan of six airships called The Abundant Error, which operates on informal routes that avoid Ferrogate Transit's official freight lanes and the associated fees. She is sharp, cheerful, aggressively fair in her dealings, and completely at home in ambiguity — she has been in seventeen border disputes, four quarantine zones, and one civil emergency, and approaches all of them with the same businesslike equanimity.",
+  "description": "Roshani is solid and practical in the way of people who lift and carry things every day — not large but dense with muscle, with the sun-damaged skin of someone who spends significant time on open airship decks and the quick, evaluating eyes of a born trader. Her hair is streaked in color-shifting strands, currently cycling through amber and deep red with the temperature, a mod she wears for professional reasons: 'People remember the hair,' she explains without embarrassment. She has a pattern of scarification on her left forearm in a Zambian geometric style, done by her mother, which she occasionally traces with her thumb when calculating.\n\nRoshani runs textiles, preserved food, hand-fabricated tools, and 'specialty information' (she is vague about this category) between the transit hubs and fringe communities around GLMZ's industrial periphery. She is a member of a caravan of six airships called The Abundant Error, which operates on informal routes that avoid Ferrogate Transit's official freight lanes and the associated fees. She is sharp, cheerful, aggressively fair in her dealings, and completely at home in ambiguity — she has been in seventeen border disputes, four quarantine zones, and one civil emergency, and approaches all of them with the same businesslike equanimity.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -235,11 +235,32 @@
   "related_entities": [
     "Ferrogate Transit",
     "Bay View Docks",
-    "Meridian 88",
+    "GLMZ",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Gravimetric Collapse Charge GCC-9",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Southern African (Zambian) / Latin American (Atencio suggests Spanish/Portuguese lineage)",
+    "height_cm": 162,
+    "weight_kg": 68,
+    "build": "Compact and densely muscled, shoulders and forearms developed from years of loading/unloading cargo. No excess fat. Functional rather than aesthetic physique.",
+    "hair_color": "Thermochromic — shifts between amber and deep red depending on ambient temperature; base tone appears dark brown underneath",
+    "hair_style": "Worn in a practical high braid during work hours, loose when off-duty. Deliberately styled to catch light and memory.",
+    "hair_length": "Medium (shoulder-length when down)",
+    "eye_color": "Dark brown with visible pattern recognition — quick, calculating gaze",
+    "skin_tone": "Medium-warm brown with significant sun damage across shoulders, forearms, and face from chronic deck exposure",
+    "complexion": "Weather-worn and frank. Sun spots across nose and cheekbones. No cosmetics typically worn. Hands calloused, nails short and functional.",
+    "distinguishing_marks": [
+      "Zambian geometric scarification pattern on left forearm — parallel lines and interlocking chevrons, faded to pale brown, done in traditional style by her mother",
+      "Sun-bleached patches on temples and upper chest from repeated UV exposure",
+      "Small burn scar on right palm (cargo accident, several years old)"
+    ],
+    "visible_augmentations": "None visible to standard observation. Color-shifting hair appears cosmetic but is thermochromic biotech. Enhanced olfactory glands are internal — no external indicator except occasional deliberate sniffing behavior when assessing cargo.",
+    "posture_movement": "Moves with economical efficiency — no wasted motion. Often stands with weight shifted to one side, thumb tracing left forearm scar when thinking or calculating prices. Handshake is firm and deliberate. Eyes constantly evaluate surroundings and people.",
+    "clothing_style": "Tier 3-4 practical wear: reinforced cargo pants in neutral gray or earth tones (Shimano Logistics or Aerodyne brands), sleeveless or short-sleeved work shirts (often pale linen for heat management), worn leather work vest with multiple pockets and patch repairs. Steel-toed boots, scuffed and practical. Minimal jewelry except for a thin bracelet made from woven synthetic cord — a caravan marker. Functional rather than fashionable; clothes chosen for durability and utility over status."
+  },
+  "image_prompt": "Portrait of a 35-year-old East African-Latina woman, medium height, compact muscular build, standing on an airship cargo deck at sunset. Her shoulder-length hair displays thermochromic color-shifting from amber to deep red. Medium-warm brown skin with sun damage across shoulders and face, dark calculating eyes. Visible Zambian geometric scarification in white lines along left forearm. Wearing practical Tier 3 cargo wear: gray reinforced pants, sleeveless work shirt, worn leather utility vest with patch repairs, steel-toed boots. Hands calloused, posture economical and alert. Standing beside stacked textile cargo, wind-swept, dockside industrial setting with airship mooring cables visible. Golden hour lighting with industrial warehouse shadows. Photorealistic, character study, weathered but capable. --ar 2:3 --v 6"
 }

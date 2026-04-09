@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Meridian 88 Metro Police surveillance drone operator, Brightmoor Reclamation Zone coverage",
+  "role": "GLMZ Metro Police surveillance drone operator, Brightmoor Reclamation Zone coverage",
   "age": 38,
   "status": "active",
   "location": "Fort Anchor, Drone Operations Center — assigned coverage zone: Brightmoor Reclamation and adjacent districts, near Pulaski and Chicago Ave",
@@ -64,7 +64,7 @@
   "narrative_function": "Information source about what has been seen in coverage zones, surveillance infrastructure access point, moral complexity of the watcher who questions their watching",
   "augmentations": "Dual rig-link ocular implants (amber-lit, full drone interface and multi-feed monitoring), haptic feedback suit underlayer (worn under uniform, translates drone flight into physical sensation for precision control), bioluminescent scalp-dot geneware (mood-reactive cyan/violet)",
   "daily_life": "Sits their shift in the Fort Anchor drone ops center running up to six simultaneous coverage feeds over Brightmoor, files incident flags, and hands off to the night operator at shift end; spends off-hours in their Hamtramck apartment running hobby drone builds they are not supposed to be doing with Metro-adjacent components.",
-  "affiliation": "Meridian 88 Metro Police, Aerial Surveillance and Drone Operations Division",
+  "affiliation": "GLMZ Metro Police, Aerial Surveillance and Drone Operations Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -218,5 +218,25 @@
     "Nightlight",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Bulgarian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and spare, the sustained stillness of an operator — narrow shoulders, minimal muscle definition, the kind of thinness that comes from eight-hour shifts in a chair rather than deprivation. Core strength maintained despite sedentary work.",
+    "hair_color": "None (shaved)",
+    "hair_style": "Shaved scalp, bare skin",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown, amber rig-link glow at the corners when active",
+    "skin_tone": "Deep brown, warm undertones consistent with West African heritage",
+    "complexion": "Clean, even-toned skin with minimal scarring. Fine lines at the eyes from years of concentration and the strain of rig-link use. Scalp shows no irritation from the bioluminescent implants — well-maintained.",
+    "distinguishing_marks": [
+      "Scatter of bioluminescent scalp-dots across crown and temple in cyan and violet, approximately 12–16 dots, arranged in asymmetric constellation pattern that pulses in mood-reactive patterns",
+      "Faint scarring at both outer eye corners where rig-link implants interface with skin — clean surgical work, barely visible unless light catches them"
+    ],
+    "visible_augmentations": "Dual rig-link ocular implants with amber glow visible at eye corners when active (most noticeable in low-light environments). Bioluminescent scalp-dots pulse slowly in shifting cyan and violet tones. Haptic feedback suit visible as thin underlayer fabric at neck and wrists beneath uniform.",
+    "posture_movement": "Carries themselves with the glassy ease of someone accustomed to perceiving through external feeds — slightly detached, movements precise but economical. Walks with minimal wasted motion. When engaged with others, eye contact is direct but has a quality of simultaneous distance, as though part of their attention is elsewhere. Sits with the postural memory of long chair-time: spine slightly curved, shoulders rolled inward.",
+    "clothing_style": "GLMZ Metro Police Aerial Surveillance Division uniform (Tier 3 standard-issue): navy tactical jacket with reflective trim and shoulder patch, fitted gray utility undershirt. Off-duty wears practical Hamtramck-sector wear — dark hoodies, cargo pants with tool loops, worn sneakers suitable for quick basement workshop sessions. Minimal jewelry or decoration beyond the bioluminescent scalp-dots. Grooming is precise and utilitarian."
+  },
+  "image_prompt": "Cyberpunk portrait of a slim nonbinary character with deep brown skin and a shaved head decorated with bioluminescent cyan and violet scalp-dots in constellation patterns, pulsing slowly. Twin amber-glowing rig-link ocular implants at eye corners, dark brown eyes with tech-lit quality. Lean, poised posture of a long-hours drone operator. Wearing GLMZ Metro Police navy tactical jacket over gray utility shirt, subtle haptic feedback underlayer visible at neck. Seated in dim Fort Anchor operations center lit by cool blue monitor glow and soft bioluminescence. Sharp focus on face and hands, intricate eye implant detail, mood-reactive scalp art glowing softly. Cyberpunk aesthetic, surveillance operator protagonist, contemplative expression. Professional but weathered appearance. Cinematic lighting, moody atmosphere. --ar 2:3 --v 6"
 }

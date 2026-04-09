@@ -228,5 +228,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pale Mile"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Scandinavian / Andean (Ghanaian-Finnish-Bolivian)",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, the build of someone whose metabolism burns hot when focused; long-limbed with prominent wrist bones and ropey forearm musculature from years of manual work. Chest slightly concave from chronic poor posture over workbenches.",
+    "hair_color": "Black with natural dark brown undertones",
+    "hair_style": "Cropped very short on crown and sides; single thin braid at nape of neck, approximately 20cm long, wrapped at intervals with worn copper wire",
+    "hair_length": "Short with one braided section",
+    "eye_color": "Pale green, naturally occurring, striking against warm amber skin",
+    "skin_tone": "Warm amber with golden undertones, characteristic of Ghanaian-Scandinavian-Andean mixed heritage",
+    "complexion": "Weathered from shop work and poor sleep cycles; fine lines at eye corners from squinting under inadequate lighting. Calloused fingertips and permanent blue-grey staining under fingernails and in creases of palms from ferrogate hydraulic fluid exposure. Clean-shaven, but with visible dark stubble by late afternoon.",
+    "distinguishing_marks": [
+      "Bioluminescent amber stripe modwork running down the outside of both forearms in parallel lines, glowing faintly in low light, purely aesthetic but functionally useful during undercarriage work",
+      "Chronic grease stains on knuckles and hand webbing that no amount of washing fully removes",
+      "Small burn scar on left inner wrist, approximately 3cm, from an early apprenticeship mistake with a pressure coupling"
+    ],
+    "visible_augmentations": "Bioluminescent amber stripe mods on forearms (cosmetic, faintly glowing). Wears custom haptic feedback gloves (non-implanted) with integrated wrist-display that translates machine vibration into tactile data — gloves are heavily modified aftermarket units with reinforced grip zones and visible wear. No internal chrome or subcutaneous augmentations.",
+    "posture_movement": "Perpetually slightly hunched from bench work, shoulders rolled forward. Walks with purposeful efficiency, minimal wasted motion. Hands move with mechanical precision when working, but otherwise held loosely at sides. When engaged with machines or problems, entire body becomes still and focused. Makes direct eye contact when discussing technical matters but avoids it during small talk.",
+    "clothing_style": "Tier 3 working mechanic; permanently oil-stained coveralls (dark blue, Ferrogate-branded but unlicensed customizations) worn over faded cotton t-shirts. Heavy reinforced work boots (scuffed, resoled multiple times). A battered synthetic leather jacket for transit between jobs, pockets stuffed with diagnostic tools, cabling, and salvaged components. No corporate branding beyond the unavoidable Ferrogate logo. Accessories minimal: worn steel-band watch inherited from his father, single copper ring on right index finger (from the same source), small rucksack containing spare gloves and tools. Everything functional, nothing decorative except the braid and bioluminescent mods."
+  },
+  "image_prompt": "A 29-year-old male cyberpunk mechanic with warm amber skin and striking pale green eyes, Ghanaian-Finnish-Bolivian heritage visible in his features. Lean, angular build with long fingers stained in blue-grey hydraulic fluid. Very short black hair with a single copper-wire-wrapped braid at the nape. Bioluminescent amber stripe mods glowing faintly on both forearms. Wearing oil-stained dark blue Ferrogate coveralls over a faded t-shirt, heavy reinforced work boots, weathered synthetic leather jacket. Custom haptic feedback gloves with wrist display visible. Standing in a cluttered but organized underground repair bay, surrounded by vehicle parts and diagnostic equipment, moody amber and cold blue lighting, shallow depth of field, photorealistic, technical, gritty atmosphere, --ar 2:3 --v 6"
 }

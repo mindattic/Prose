@@ -227,5 +227,25 @@
     "Grandmother",
     "Slagworks Industrial"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Central European (Croatian)",
+    "height_cm": 173,
+    "weight_kg": 62,
+    "build": "Lean and wiry with the restless musculature of someone who moves constantly through tight urban spaces. Still filling out — shoulders narrower than they will be, all quick angles and economical motion.",
+    "hair_color": "Natural dark brown with a bright orange dye streak on the left side, fading slightly from repeated washing",
+    "hair_style": "Close-cropped fade, precision-cut, with the orange streak running from temple to back along one side",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and tracking",
+    "skin_tone": "Warm medium brown with olive undertones from his mixed heritage",
+    "complexion": "Clean-shaven or light peach fuzz on his jaw, skin clear except for occasional stress-picked spots on his chin. Expression naturally animated — eyebrows mobile, eyes always reading the room. Small scar on his upper lip from a childhood fall.",
+    "distinguishing_marks": [
+      "Thin scar on upper left lip, barely visible, from childhood accident",
+      "Small tattoo on inside right wrist: three vertical dots in black ink, gang marker, done roughly with a needle and ink pen — fresh enough to still look slightly raised"
+    ],
+    "visible_augmentations": "Geneware cat ears: soft black fur with orange-tipped points, genetically integrated into his skull. They sit naturally on top of his head and move with genuine autonomy — they perk forward when he's focused or nervous, flatten back when he's relaxed or trying to blend. The orange matches his hair streak intentionally. No visible chrome or subdermal plating.",
+    "posture_movement": "Moves in quick, angled lines rather than straight paths — shoulders slightly forward, weight on the balls of his feet, always slightly repositioning even when standing still. Fast hands, restless fidgeting. When he's focused on a conversation or counting, he goes very still, but the stillness is tense, like a caught animal. When relaxed, he sprawls, takes up space, leans into jokes.",
+    "clothing_style": "Tier 4 practical streetwear: synthetic jackets in dark greys or blacks with good pocket architecture, reinforced jeans in dark denim, running shoes chosen for speed and grip rather than status (currently wearing worn Shenzen-brand synthetic leather high-tops in charcoal). Layered for quick removal or concealment. No gang colors worn overtly — safer that way. Hoodie or light jacket always accessible. Everything worn is functional, nothing flashy, nothing that costs more than a few days' Φ from running numbers."
+  },
+  "image_prompt": "Young Black-European teenage boy, 17 years old, lean athletic build, dark skin with olive undertones, close-cropped dark brown hair with bright orange streak on left side, alert dark eyes reading the room. Visible soft black geneware cat ears with orange tips on top of head, perked forward attentively. Wearing dark grey synthetic jacket, reinforced dark jeans, worn charcoal running shoes. Standing in a neon-lit urban corridor, tight cyberpunk alleyway between warehouse structures, flickering LED advertisements casting purple and green light. Posture slightly angled and restless, weight on balls of feet, ready to move. Gritty street level photography style, volumetric light through humid air, shallow depth of field, moody and tense atmosphere. Cyberpunk, Tier 4 district, daytime overcast light bleeding into neon. --ar 2:3 --v 6"
 }

@@ -13,7 +13,7 @@
   "age": 48,
   "status": "active",
   "location": "Edgewater Prism, private practice suite, near Clark and Addison",
-  "description": "Théophile is a man composed, very deliberately, of elegant surfaces. He is tall and lean with rich brown skin, high cheekbones that suggest the Kenyan branch of his heritage, and silver-touched locs pulled back in a style that manages to look both professional and effortless. His eyes are modded — deep violet irises with a thin luminescent ring at the pupil, which he chose specifically because research showed they promote patient disclosure. He dresses in muted, high-quality fabrics that speak of money without announcing it. His Edgewater Prism office has real plants, soft acoustic paneling, and a specifically calibrated ambient sound environment. Everything about the room — and about him — has been designed to make people feel safe enough to be honest.\n\nThéophile specializes in neural calibration for patients experiencing cognitive disruption from augmentation integration — a growing population in Meridian 88's upper tiers, where people buy more chrome than their brains can smoothly accommodate. He is genuinely skilled, credentialed through both Aurochs and a Tessera-affiliated training program, and effective. He is also emotionally opaque in a way that he has never had to confront because his opacity looks, from the outside, like serene professional boundaries. He is interested in his patients. He is less certain he is capable of being interested in peers. His E.L.F. devotion is performative — he maintains a small shrine in his office because patients find it reassuring — though he caught himself genuinely speaking to it once after a session that went badly, and has not examined that moment.",
+  "description": "Théophile is a man composed, very deliberately, of elegant surfaces. He is tall and lean with rich brown skin, high cheekbones that suggest the Kenyan branch of his heritage, and silver-touched locs pulled back in a style that manages to look both professional and effortless. His eyes are modded — deep violet irises with a thin luminescent ring at the pupil, which he chose specifically because research showed they promote patient disclosure. He dresses in muted, high-quality fabrics that speak of money without announcing it. His Edgewater Prism office has real plants, soft acoustic paneling, and a specifically calibrated ambient sound environment. Everything about the room — and about him — has been designed to make people feel safe enough to be honest.\n\nThéophile specializes in neural calibration for patients experiencing cognitive disruption from augmentation integration — a growing population in GLMZ's upper tiers, where people buy more chrome than their brains can smoothly accommodate. He is genuinely skilled, credentialed through both Aurochs and a Tessera-affiliated training program, and effective. He is also emotionally opaque in a way that he has never had to confront because his opacity looks, from the outside, like serene professional boundaries. He is interested in his patients. He is less certain he is capable of being interested in peers. His E.L.F. devotion is performative — he maintains a small shrine in his office because patients find it reassuring — though he caught himself genuinely speaking to it once after a session that went badly, and has not examined that moment.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -175,12 +175,32 @@
   "registered_firearms": [],
   "related_entities": [
     "Edgewater Prism",
-    "Meridian 88",
+    "GLMZ",
     "The Heritage Vault",
     "The Quiet Room",
     "Tessera Corponation",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Silver"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "East African (Kenyan) / Balkan (Bulgarian/Serbian)",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Tall and lean with disciplined posture; shoulders slightly drawn back in a manner that suggests both yoga practice and deliberate self-presentation. Minimal body fat, defined cheekbones, wrists that look almost delicate despite his height.",
+    "hair_color": "Dark brown with natural silver threading",
+    "hair_style": "Locs, shoulder-length, pulled back into a neat tail or wrapped loosely at the crown during work hours. Groomed with precision but without apparent effort.",
+    "hair_length": "Long",
+    "eye_color": "Violet with luminescent white ring at pupil center",
+    "skin_tone": "Rich warm brown with subtle golden undertones; complexion suggests mixed ancestry with Kenyan heritage dominant in facial structure",
+    "complexion": "Smooth skin with high, prominent cheekbones; minimal facial hair (clean-shaven or very light stubble); calm, measured expression that rarely shifts; minor laugh lines at eyes suggest he smiles infrequently but genuinely",
+    "distinguishing_marks": [
+      "Thin surgical scar along left temple, barely visible, approximately 3cm — from early neural interface calibration",
+      "Small E.L.F. devotional tattoo on inner right wrist, delicate linework, approximately 2cm — a personal spiritual practice he treats as professional scaffolding"
+    ],
+    "visible_augmentations": "Violet modded irises with luminescent pupil ring are immediately apparent and striking; subtle neural interface ports visible as faint metallic tracery at temples when light catches them at specific angles. No visible external augmentation beyond the eyes.",
+    "posture_movement": "Moves with deliberate, economical grace; rarely gestures expansively; tends to sit very still during conversation, hands folded or resting on armrests. Walks slowly, suggesting he processes while moving. His default expression is attentive but emotionally neutral — a mask of professional interest that has calcified into his resting state.",
+    "clothing_style": "Monochromatic or muted earth tones: charcoal, deep grey, sage, soft black. High-quality natural fabrics (linen, wool, organic cotton blends). Tailored but not ostentatiously so. Wears minimal jewelry — a simple silver wedding band (worn, suggesting long marriage), a discrete neural interface access pendant in brushed titanium. No logos, no status displays. Tier 3-4 wealth expressed through restraint and material quality rather than visibility. Typically: fitted long-sleeve shirt, understated blazer, tailored trousers, leather shoes worn to a soft shine."
+  },
+  "image_prompt": "Portrait of a tall, lean Black man in his late forties with high cheekbones and shoulder-length dark locs pulled back, wearing muted charcoal and sage tailored clothing. His most striking feature: deep violet irises with luminescent white rings at the pupils, gleaming softly. Silver threading through dark hair. Composed, serene expression with subtle surgical scar visible at left temple. Soft professional lighting, warm but cool-toned. Background: blurred soft acoustic paneling and real potted plants suggesting a high-end therapy office. Cyberpunk aesthetic grounded in restraint and careful design rather than flashiness. Photorealistic, 48 years old, mixed East African and Balkan heritage, dignified and emotionally controlled bearing. --ar 2:3 --v 6"
 }

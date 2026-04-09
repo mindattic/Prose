@@ -196,5 +196,26 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polish / Brazilian",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, muscular forearms and shoulders from years of repetitive precision work. Fast-twitch athleticism, minimal body fat, the kind of frame that moves efficiently in confined spaces.",
+    "hair_color": "Natural black on shaved side; electric amber dye on Bantu knots side",
+    "hair_style": "Half-shaved undercut with elaborate Bantu knots on the unshaved side, meticulously maintained every two weeks",
+    "hair_length": "Shaved on right side; medium-length on left (knots)",
+    "eye_color": "Dark brown, alert and penetrating",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Clear, well-maintained skin. Minimal facial scarring. Sharp cheekbones and defined jawline. Expression typically focused and assessing.",
+    "distinguishing_marks": [
+      "Bioluminescent aquamarine patches across both collarbones, soft-glowing organic lines that pulse faintly with excitement or stress",
+      "Left forearm fully sleeved in intricate geometric and organic tattoo work from wrist to elbow — self-executed in mirrors and by tactile feel, patterns abstract and precise",
+      "Right forearm similarly tattooed, mirroring left side — her own experimental work refined over four years"
+    ],
+    "visible_augmentations": "Stabilizer brace on right wrist — printed polymer, functional but visible; cheap construction. Bioluminescent collarbone patches visible when wearing low-cut or sleeveless clothing (her default). No obvious neural implants or chrome.",
+    "posture_movement": "Kinetic and economical. Moves quickly in tight spaces. Hands are always in motion or precisely still when working. Eyes continuously reading the room and her clients. Sits with coiled energy, rarely fully relaxed.",
+    "clothing_style": "Tier 4 utilitarian with personal flair. Typically wears fitted tank tops or sleeveless shirts to display collarbones and arm tattoos. Black or dark-colored pants with cargo pockets (tool storage). Worn work boots with good grip. No corporate branding. Jewelry minimal — functional only. Aprons during barber work, rolled up or removed for tattoo sessions. Clothing is clean but shows use; prioritizes function over fashion."
+  },
+  "image_prompt": "Cyberpunk portrait of a compact 26-year-old Black woman with sharp features, half-shaved head with the other half in elaborate electric amber Bantu knots. Deep brown skin with soft aquamarine bioluminescent patches glowing faintly across both collarbones. Muscular forearms completely sleeved in intricate geometric and organic tattoo work done in black ink. Wearing a dark sleeveless tank top and a printed polymer stabilizer brace on right wrist. Kinetic energy, alert dark brown eyes, focused expression. Standing in a small converted shipping container salon with salvaged mirrors and LED accent lighting. Warm tungsten light mixing with cool blue bioluminescence. Cyberpunk gritty realism, shallow depth of field, 2226 Detroit Mexicantown Libre aesthetic, ground-level street vendor vibe. --ar 2:3 --v 6"
 }

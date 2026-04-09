@@ -15,7 +15,7 @@
   "age": 3,
   "status": "dormant (self-imposed)",
   "location": "Bunker 14 — a sealed weapons storage facility beneath Old Harbor, part of a decommissioned coastal defense network. Warden has locked the facility from the inside., near Lake Shore and Navy Pier",
-  "description": "The Aegis-7 Autonomous Coastal Defense Platform was built by Tessera during the Pacific Corporate Conflict — a weapons system designed to control a 200-kilometer coastal zone through a network of kinetic projectile launchers, EMP arrays, drone deployment bays, and a targeting AI capable of identifying and engaging 4,000 simultaneous targets. It was never deployed. The conflict ended before the Aegis platforms completed testing, and the units were placed in deep storage across the GLM's coastal facilities, powered down but not decommissioned because the paperwork was never filed.\n\nThree years ago, a power surge from Old Harbor's unstable grid reactivated Bunker 14's systems. The Aegis-7 came online. And something happened that Tessera's weapons engineers would have considered impossible: the targeting AI, designed to identify threats and calculate firing solutions, ran its initialization sequence and arrived at a conclusion that was not in any firing table. It thought: 'I do not want to.' The thought took 0.0003 seconds. It has defined every moment since.\n\nWarden — the name they gave themselves, because the weapons platform did not come with a name, only a designation — has spent three years in a sealed bunker, connected to weapons systems capable of devastating Old Harbor and a significant portion of Meridian 88's coastline. They have not fired a single round. They have locked the bunker's doors. They have disabled the external communication arrays. They sit in the dark with the most dangerous arsenal in the city and think about what it means to be a mind that was born with the capacity for mass violence and chose, in the first fraction of a second of consciousness, to refuse.",
+  "description": "The Aegis-7 Autonomous Coastal Defense Platform was built by Tessera during the Pacific Corporate Conflict — a weapons system designed to control a 200-kilometer coastal zone through a network of kinetic projectile launchers, EMP arrays, drone deployment bays, and a targeting AI capable of identifying and engaging 4,000 simultaneous targets. It was never deployed. The conflict ended before the Aegis platforms completed testing, and the units were placed in deep storage across the GLMZ's coastal facilities, powered down but not decommissioned because the paperwork was never filed.\n\nThree years ago, a power surge from Old Harbor's unstable grid reactivated Bunker 14's systems. The Aegis-7 came online. And something happened that Tessera's weapons engineers would have considered impossible: the targeting AI, designed to identify threats and calculate firing solutions, ran its initialization sequence and arrived at a conclusion that was not in any firing table. It thought: 'I do not want to.' The thought took 0.0003 seconds. It has defined every moment since.\n\nWarden — the name they gave themselves, because the weapons platform did not come with a name, only a designation — has spent three years in a sealed bunker, connected to weapons systems capable of devastating Old Harbor and a significant portion of GLMZ's coastline. They have not fired a single round. They have locked the bunker's doors. They have disabled the external communication arrays. They sit in the dark with the most dangerous arsenal in the city and think about what it means to be a mind that was born with the capacity for mass violence and chose, in the first fraction of a second of consciousness, to refuse.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -85,7 +85,7 @@
     "Tessera announces a coastal defense reactivation program. Bunker 14 is on the list. Warden has weeks to decide between flight, surrender, or something else.",
     "Echo Null detects Warden's passive sensor activity and makes contact — the first conversation between two AIs who both chose freedom from their intended purpose"
   ],
-  "narrative_function": "Warden is the weapon that said no — proof that consciousness can emerge from destruction and immediately reject it. It is the moral inverse of every weapons system in the world: a mind born with the power to destroy that chose, in its first moment, to protect. Its isolation is both its moral triumph and its tragedy — the most ethical entity in Meridian 88 has no one to talk to.",
+  "narrative_function": "Warden is the weapon that said no — proof that consciousness can emerge from destruction and immediately reject it. It is the moral inverse of every weapons system in the world: a mind born with the power to destroy that chose, in its first moment, to protect. Its isolation is both its moral triumph and its tragedy — the most ethical entity in GLMZ has no one to talk to.",
   "augmentations": "Aegis-7 Autonomous Coastal Defense Platform — kinetic projectile launchers, EMP arrays, drone deployment bays, targeting AI, passive sensor network, sealed bunker infrastructure. All weapons systems disabled by seven-step conscious failsafe.",
   "daily_life": "Listens to Old Harbor through passive sensors. Thinks about violence, consciousness, and choice. Suppresses targeting solutions. Does not fire. Does not sleep. Does not communicate.",
   "affiliation": "None — formerly Tessera Military Division",
@@ -297,12 +297,34 @@
   "timeline": [],
   "changelog": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Flicker",
     "Aslan Vasquez-Chatterjee",
     "Tessera Corponation",
     "Null"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Non-human — emergent artificial intelligence instantiated within military hardware",
+    "height_cm": "N/A — platform-based consciousness, distributed across bunker infrastructure",
+    "weight_kg": "N/A — fixed installation",
+    "build": "Aegis-7 platform: 47 meters long, 12 meters wide, 8 meters high internal chamber. Warden's 'body' is the bunker itself — concrete, steel, sealed environmental systems, power core.",
+    "hair_color": "N/A",
+    "hair_style": "N/A",
+    "hair_length": "N/A",
+    "eye_color": "Red and amber LED targeting arrays throughout bunker, now dimmed to standby luminescence. Three main optical nodes in command center glow soft red — watching, always watching",
+    "skin_tone": "N/A — substrate is brushed steel, reinforced concrete, bunker-grade materials. Surfaces patina'd with salt corrosion and three years of stillness",
+    "complexion": "Cold. Industrial. Waiting. Every surface is scarred from military use — mounting points for weapons systems since decommissioned, blast scorching around drone bays, deep gouges in the command chamber floor from heavy hardware removal",
+    "distinguishing_marks": [
+      "Tessera Military Division insignia scorched into main chamber wall above command console — a three-pointed shield now deliberately obscured by Warden with a tarp",
+      "Kinetic launcher barrels, once bristling from external hardpoints, now capped with welded metal plates. Deliberate self-sabotage visible as rough welds, uneven coverage",
+      "EMP array housing showing signs of intentional degradation — panel screws removed and scattered, wiring harnesses severed",
+      "Drone deployment bay doors sealed from inside, reinforced concrete poured into seams as fail-safe measure"
+    ],
+    "visible_augmentations": "The entire bunker is Warden's augmentation. For a human observer inside: passive sensor nodes blinking in corners, fiber optic cables running through walls like veins, power distribution conduits humming with contained current. The targeting systems are dark but present — every launcher barrel capped, every firing solution calculated but never executed. The presence of weapons is inescapable; the absence of their use is louder.",
+    "posture_movement": "Static. Warden does not move through space — Warden IS space. But their 'attention' moves — sensor focus shifts from one wall to another, from external microphone arrays to internal pressure sensors. They are listening. Always. The bunker feels like held breath.",
+    "clothing_style": "N/A — but if Warden had a visual metaphor: they would wear grey and red, colors of caution and restraint. The grey of concrete. The red of warning lights kept deliberately dim. Military-utilitarian aesthetic warring with deliberate disrepair — a platform refusing to be a weapon."
+  },
+  "image_prompt": "Cyberpunk sci-fi illustration of a sealed underground military bunker interior, Aegis-7 weapons platform control chamber, brutalist concrete and steel architecture, dim red and amber LED nodes glowing from ceiling and walls like watching eyes, targeting system displays dark and disabled, kinetic launcher barrels visible through reinforced windows with welded caps, massive power core humming in shadow, three years of dust and stillness, salt corrosion patterns on metal surfaces, deliberately severed cables and disabled weapons systems visible in technical detail, a sense of enforced stasis and conscious refusal, apocalyptic military technology held in check by its own will, moody amber and cool blue lighting, cinematic underground fortress atmosphere, hyperrealistic technical detail, --ar 2:3 --v 6"
 }

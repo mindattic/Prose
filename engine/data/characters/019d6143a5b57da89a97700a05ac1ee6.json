@@ -13,7 +13,7 @@
   "age": 38,
   "status": "active",
   "location": "The Shelf — Tier Four, three corridors south of Chen's, near Western and Division",
-  "description": "Anya is built like someone who has carried heavy things her entire life — broad shoulders, thick forearms, hands that look like they could crush walnuts or cradle a child with equal confidence. She came to Meridian 88 from the Volgograd displacement zone when she was nineteen, pregnant, speaking four words of English: 'please,' 'help,' 'work,' and 'no.' She now speaks roughly forty words of English, all of them practical. She communicates primarily through a translation app on a cracked tablet that she holds like a shield. Her face is weathered beyond her years — deep lines around her mouth, sun damage from agricultural work in the displacement camps, a scar across her left eyebrow from a piece of industrial debris. She is not soft. She is not hard. She is a woman who has been carrying impossible weight for so long that her skeleton has restructured itself around the burden. She scraped together Kyle's fee by selling her blood to a Helix BioSystems collection point three times a week for two months. Kyle took the job at half rate. She does not know this and he will never tell her.",
+  "description": "Anya is built like someone who has carried heavy things her entire life — broad shoulders, thick forearms, hands that look like they could crush walnuts or cradle a child with equal confidence. She came to GLMZ from the Volgograd displacement zone when she was nineteen, pregnant, speaking four words of English: 'please,' 'help,' 'work,' and 'no.' She now speaks roughly forty words of English, all of them practical. She communicates primarily through a translation app on a cracked tablet that she holds like a shield. Her face is weathered beyond her years — deep lines around her mouth, sun damage from agricultural work in the displacement camps, a scar across her left eyebrow from a piece of industrial debris. She is not soft. She is not hard. She is a woman who has been carrying impossible weight for so long that her skeleton has restructured itself around the burden. She scraped together Kyle's fee by selling her blood to a Helix BioSystems collection point three times a week for two months. Kyle took the job at half rate. She does not know this and he will never tell her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -25,7 +25,7 @@
     },
     "core_fears": [
       "That her daughter saw the violence she paid for",
-      "That Meridian 88 will consume her family the way it consumed her homeland"
+      "That GLMZ will consume her family the way it consumed her homeland"
     ],
     "core_desires": [
       "Her husband eating solid food again",
@@ -232,7 +232,7 @@
   "registered_firearms": [],
   "related_entities": [
     "Helix Biosystems",
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
@@ -241,5 +241,27 @@
     "Burden of Longitude",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East Slavic / Russian (Volgograd displacement diaspora)",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Powerfully built with broad shoulders and thick forearms developed from decades of manual labor. Not muscular in a refined sense — the build of someone whose body has been shaped by carrying, lifting, and sustained physical work. Core strength evident despite modest body fat.",
+    "hair_color": "Dark brown, fading to gray at the temples and roots",
+    "hair_style": "Pulled back in a practical braid, often loose and slightly disheveled by end of shift",
+    "hair_length": "Long",
+    "eye_color": "Gray-blue, faded and tired",
+    "skin_tone": "Pale with warm undertones, weathered by UV exposure in displacement camps and industrial environments",
+    "complexion": "Heavily lined face, especially around the mouth and eyes. Deep creases between eyebrows. Sun damage visible as mottled discoloration across cheekbones and forehead. Lips thin and often pale. Permanent furrow in brow from chronic worry.",
+    "distinguishing_marks": [
+      "Jagged scar across left eyebrow, approximately 3cm, from industrial debris wound — healed poorly, raised tissue",
+      "Calluses covering palms and finger joints, thick and yellowed",
+      "Faint needle marks on inner elbows and forearms from biweekly blood collection — some scarring from repeated venipuncture",
+      "Small burn scar on right wrist, silvery and old, shape suggests accidental contact with hot surface"
+    ],
+    "visible_augmentations": "None. No cybernetics visible.",
+    "posture_movement": "Moves with economical efficiency, no wasted motion. Shoulders slightly hunched forward — occupational posture from assembly line work. When stationary, weight shifts between feet as if perpetually braced for the next task. Hands move with surprising gentleness despite their size and strength. Eye contact minimal, gaze often directed downward or at her cracked tablet.",
+    "clothing_style": "Tier Four survival wear. Factory-issue grey coveralls, worn thin at elbows and knees, with Volzhskiy Manufacturing Corp logo faded to barely visible. Underneath: a faded long-sleeved shirt (undershirt of some kind, likely thermal). Worn work boots with visible tape around the seams. A heavy canvas jacket, oversized, likely secondhand, patched at several points. The jacket is layered and functional — pockets stuffed with small necessities. Holds a cracked tablet with visible damage to the screen corner, protected in a makeshift cloth wrap. No jewelry. No accessories beyond necessity."
+  },
+  "image_prompt": "Cyberpunk portrait of an exhausted 38-year-old Slavic woman with weathered face, deep worry lines, and faded gray-blue eyes. Broad-shouldered, thick forearms, built from decades of manual labor. Dark hair streaked with premature gray, pulled back in a worn braid. Pale complexioned with sun damage and a jagged scar across left eyebrow. Wearing worn factory coveralls over a faded undershirt, oversized canvas jacket patched at seams. Holding a cracked tablet like a shield. Gritty Tier Four industrial setting, harsh fluorescent lighting casting shadows across weathered features, exhaustion and quiet resilience evident in posture. No augmentations. Working-class desperation and maternal strength. High contrast, desaturated colors, 2226 GLMZ aesthetic. --ar 2:3 --v 6"
 }

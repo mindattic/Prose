@@ -214,5 +214,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Ethiopian / Tongan / Ukrainian",
+    "height_cm": 163,
+    "weight_kg": 52,
+    "build": "Wiry and compact with defined musculature from four years of courier work — lean legs built for sustained pedaling and sprinting, strong forearms from constant cargo handling and mag-runner control, minimal body fat, the functional fitness of someone who lives on motion",
+    "hair_color": "Natural black with warm undertones",
+    "hair_style": "Practical, usually pulled back in a tight braid or wrapped; no styling flourish",
+    "hair_length": "Medium (shoulder-length when down)",
+    "eye_color": "Dark brown, alert and calculating",
+    "skin_tone": "Deep brown with warm undertones characteristic of Ethiopian-Tongan ancestry",
+    "complexion": "Clear skin marked by minor abrasions and faint scars from courier work; sharp, high cheekbones of Ukrainian descent that she's learned to stop resenting; minimal makeup, functional grooming only",
+    "distinguishing_marks": [
+      "Small black-tipped cat ears positioned on top of her head, mobile and functional with sensory enhancement capability, visible even when hair is pulled back",
+      "Faint scar tissue along both inner forearms from early courier accidents, now mostly faded",
+      "Calluses on fingertips and palms from years of grip work and mag-runner handling"
+    ],
+    "visible_augmentations": "Black-tipped geneware cat ears with visible microservos at the base and slight iridescence in certain light; retractable microfiber grip pads on fingertips visible as faint silvery lines along fingertip edges when extended; small neural interface port behind left ear (typically covered by hair but audible faint whisper from the pace-meter neural feed)",
+    "posture_movement": "Perpetually coiled readiness even when stationary — compact stance with weight distributed for quick movement in any direction. When in motion, economical and efficient, no wasted gesture. Eyes constantly scanning. Ears track ambient noise with visible, unconscious precision. Sits in cafés or common spaces angled toward exits.",
+    "clothing_style": "Tier 3-4 working courier aesthetic: reinforced cargo pants with multiple sealed pockets, cheap thermal base layer under a gray or dark synthetic overjacket with GigFlow logo worn small on the sleeve, reinforced ankle boots with magnetic grip soles, worn tech-fabric gloves. Everything functional, nothing decorative. Gear shows honest wear — small tears repaired with color-mismatched patches, cargo pockets slightly frayed from constant loading. A single piece of jewelry: a thin bracelet made from salvaged mag-runner housing, personal."
+  },
+  "image_prompt": "Young woman, 22 years old, Ethiopian-Tongan-Ukrainian heritage, dark brown skin with warm undertones, sharp high cheekbones, alert dark eyes, black hair in tight practical braid. Distinctly humanoid cat ears, black-tipped, positioned on crown of head, mobile and functional. Wiry athletic build, compact and coiled, lean muscled legs and strong forearms. Wearing reinforced cargo pants, thermal base layer, worn gray synthetic overjacket with courier company logo, reinforced boots. Visible retractable grip pads on fingertips catching light. Standing with coiled ready posture in urban cyberpunk Geartown alley setting, neon signs reflecting off wet pavement, warm artificial light mixing with late afternoon natural light. Highly detailed, gritty realism, street photography aesthetic, shallow depth of field on face, cinematic lighting. Cyberpunk 2226, Great Lakes Metropolitan Zone, courier culture, working class tier 3-4 aesthetic. --ar 2:3 --v 6"
 }

@@ -157,7 +157,7 @@
     "strengths": [
       "social chameleon — adapts to any environment",
       "pain tolerance beyond normal limits",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "old injury that flares under specific conditions",
@@ -279,5 +279,27 @@
     "The Pure Hand",
     "Slagworks Industrial"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Japanese / West African",
+    "height_cm": 172,
+    "weight_kg": 89,
+    "build": "Stocky and dense, heavily muscled through the shoulders and core. Compact frame with no wasted space — built for leverage and durability rather than speed. Chest and forearms show pronounced musculature from years of physical work.",
+    "hair_color": "Black, graying at temples",
+    "hair_style": "Short, practical cut — no styling, functional only",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, sharp and assessing",
+    "skin_tone": "Medium olive, with undertones suggesting both East and West African ancestry",
+    "complexion": "Weathered face with pronounced jaw, sharp cheekbones. Skin shows minor scarring and age lines concentrated around the eyes and mouth — the kind earned through years of tension and calculated expression. Clean-shaven or with minimal stubble. No visible acne or poor grooming — maintenance is part of discipline.",
+    "distinguishing_marks": [
+      "Jagged scar running 8cm down the left side of his jaw, pale and old, likely from edged weapon",
+      "Burn scar on the back of his left hand, roughly 5cm across, discolored and slightly raised — chemical or thermal origin",
+      "Knuckle scars across both hands, faded white lines from repeated impact trauma",
+      "Tattoo on inner left forearm: small kanji character (approximately 3cm), black ink, weathered with age"
+    ],
+    "visible_augmentations": "Chrome hydraulic joint casings at both elbows and knees — silver-gray titanium alloy, functional design with no cosmetic smoothing. The joints are clearly mechanical when he moves, pistons and articulated plates visible at flexion points. No attempt to hide or conceal them. Internal drug synthesizer is not visible externally.",
+    "posture_movement": "Moves with controlled efficiency — no wasted motion. Stands slightly forward-balanced, weight on the balls of his feet even when stationary. Default facial expression is neutral to slightly guarded. Eyes track movement in his peripheral vision automatically. When he walks, the hydraulic joints produce a faint pneumatic hiss at each step — he's long since stopped trying to mask it, treats it as ambient.",
+    "clothing_style": "Tier 4 working-class pragmatism. Dark colors — black or dark gray synthetic jacket (insulated, reinforced stitching, scorched at one shoulder). Underneath: plain black tech-weave shirt, lightweight and treated for chemical resistance. Cargo pants in dark charcoal with reinforced knees and extra pockets. Boots are scuffed work-grade synth-leather with steel toe caps. No visible corpo branding or luxury markers. Everything worn is functional, replaceable, and recently maintained. Occasional leather jacket when weather demands it — old, cracked at the seams, smells like synthetic oil and used territory."
+  },
+  "image_prompt": "Cyberpunk character portrait, stocky Japanese-West African male, age 37, dark weathered face with sharp cheekbones and neutral guarded expression. Visible chrome hydraulic joint casings at elbows and knees in brushed titanium, faint pneumatic detail. Graying black hair, short and functional. Scar on left jaw, weathered knuckles. Wearing dark synth-jacket with reinforced seams, tech-weave undershirt, cargo pants, steel-toe boots. Standing in industrial Steamvent Alley setting with geothermal heat shimmer, chemical fog, corroded metal scaffolding in background. Moody lighting — harsh neon reflection off wet industrial surfaces, warm orange and cool cyan color grade. Photorealistic, gritty urban aesthetic, cinematic depth of field, film noir influence. --ar 2:3 --v 6"
 }

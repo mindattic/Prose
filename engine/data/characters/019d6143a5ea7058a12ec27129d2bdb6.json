@@ -247,5 +247,26 @@
     "Clover",
     "Gold"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Czech",
+    "height_cm": 188,
+    "weight_kg": 98,
+    "build": "Large-framed, solid through the shoulders and chest, carrying weight with the ease of a man who has never pretended to be smaller than he is. A soft belly beginning, but the underlying mass is structural—not yet softness, but heading that direction with the patience of someone who doesn't rush anything.",
+    "hair_color": "Dark brown, heavily grayed throughout",
+    "hair_style": "Combed back from the forehead, kept neat and precise",
+    "hair_length": "Medium, tapered at the sides",
+    "eye_color": "Mood-reactive geneware: shifts between deep amber (neutral/calculating) and vivid green-gold (content/engaged). The transition is visible and smooth, a tell he long ago decided was useful.",
+    "skin_tone": "Warm medium brown with reddish undertones, the complexion of someone with West African heritage and extensive time spent indoors and in the temperate GLMZ climate",
+    "complexion": "Well-maintained despite his age. The skin around his eyes shows crow's feet from decades of calculated smiling. His face is broad, with a strong jawline partially obscured by his signature mustache—gray and dark brown mixed, waxed into precise points that curl slightly upward. No visible acne scarring or serious blemishes. His expression defaults to a patient, heavy-lidded look that could read as boredom or calculation depending on what his irises are doing at the moment.",
+    "distinguishing_marks": [
+      "A thin white scar running from the left corner of his mouth toward his ear, approximately 4cm long, likely from a knife or broken glass twenty-five years ago. It tightens his smile slightly on that side.",
+      "A small, neat burn scar on the inside of his right wrist—old, faded to pale brown, roughly circular and 1cm across. Tool-related, not combat-related.",
+      "A faint tattoo on his left inner forearm: geometric patterns in dark gray, a design from the early 2190s that reads as dated but not regretted. It curves slightly with the motion of his muscle beneath."
+    ],
+    "visible_augmentations": "Only the iris geneware is externally apparent—the color shifts draw attention precisely as Dayo intends. The transaction chip in his left palm is subcutaneous and invisible except under direct light, where a faint silver line is barely visible at the crease of his palm. He keeps that hand relaxed and unobtrusive.",
+    "posture_movement": "Moves with the deliberate, economical motion of someone for whom speed is not the point. His gait is steady and measured, shoulders slightly forward in a posture that seems to take up space without announcing it. He sits heavily but settles quickly, gesturing with his hands in conversational moments—calculated movement, nothing wasted. His hands are large, with blunt fingers and well-maintained nails. He uses them to illustrate a point rather than to intimidate.",
+    "clothing_style": "Real fabric, always: cotton blends, linen, lightweight wools appropriate to the climate. He favors muted earth tones—warm grays, deep browns, rust-tinged neutrals—and subtle geometric patterns in his shirts. His jackets are well-tailored but not ostentatious, worn to fit rather than to impress. His shoes are always clean leather, usually in dark brown or charcoal, polished to a soft shine. No visible corporate branding. His watch, when visible, is functional and expensive-looking but not new. He wears a simple gold band on his ring finger—whether for marriage or as a personal choice is immaterial to his presentation. A thin gold chain, barely visible, runs beneath his collar. He smells consistently of cardamom, black tea, and clean linen."
+  },
+  "image_prompt": "Cyberpunk character portrait, a 52-year-old West African-Czech man with a broad face, warm medium-brown skin, and a magnificent gray-and-black mustache waxed into precise points. His irises are glowing amber-gold with a mood-reactive geneware shift visible in one eye. Large-framed, solidly built, not yet heavy. He wears a well-tailored charcoal linen jacket over an earth-tone shirt with subtle geometric patterns, warm and deliberate in presence. A thin scar visible at the left corner of his mouth. Sitting composed in an evening tea house setting with warm orange and gold lighting, shadows on his face, the ambient glow of neon from street level visible through windows behind him. His hands are resting on a table scattered with loose currency notes and betting slips. The mood is patient, calculated, warm but never naive. Film noir meets cyberpunk, depth of field focus on his face and eyes. Intricate background detail: hanging lanterns, tea service, the texture of aged wood and real fabric. --ar 2:3 --v 6"
 }

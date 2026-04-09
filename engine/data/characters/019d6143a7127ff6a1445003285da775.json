@@ -174,5 +174,27 @@
     "Silver",
     "Glass"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Norwegian / Ghanaian / Mongolian",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and sturdy, with the dense musculature of someone who has spent five decades manipulating hot glass and heavy scaffolding. Not heavy, but solid — the build of functional strength rather than athleticism.",
+    "hair_color": "Natural silver-white",
+    "hair_style": "Cropped close to the scalp on the sides; long and swept back on top, often tied loosely or left to fall forward when working",
+    "hair_length": "Long (top) / Short (sides)",
+    "eye_color": "Pale blue, slightly faded with age",
+    "skin_tone": "Warm medium brown with burnished undertones — a blend of West African and Northern European ancestry deepened by decades of sun exposure near industrial glass furnaces",
+    "complexion": "Deeply lined around the eyes and forehead from decades of squinting at luminous tubes and furnace heat. Skin texture is weathered but well-maintained. Permanent faint violet discoloration on palms and under fingernails from reactive phosphor compound exposure.",
+    "distinguishing_marks": [
+      "Faint bioluminescent cream-white glow running along both collarbones — dermal patches active at dusk and in dim light.",
+      "Bioluminescent patches also glow faintly along the inner forearms in a branching pattern, mimicking neon tube designs.",
+      "Old burn scar on the back of her right hand, silvered and smooth, from a furnace accident in her forties.",
+      "Calluses and minor burn marks across both palms and inner forearms — occupational marks."
+    ],
+    "visible_augmentations": "Thick-framed optical enhancers on a beaded cord worn around her neck (vintage style, non-military). When examined closely, faint seams visible at the tips of her index and middle fingers where fused pressure sensors were installed. Subtle cream-white bioluminescent patches along collarbone and forearms, glowing faintly in low light.",
+    "posture_movement": "Unhurried and deliberate. She moves with the confidence of someone who knows the exact reach of her body in space. Habit of holding her hands up near her face when speaking, fingers gesturing to demonstrate scale and dimension. When working, she hunches slightly forward, shoulders relaxed, entering a focused state. Standing still, she often rests weight on one leg, hip cocked slightly.",
+    "clothing_style": "Functional Tier 3-4 workwear with artistic flourish. Heavy canvas work apron (often stained with phosphor compounds and soot) over sturdy linen or cotton shirts in muted earth tones. Wide-legged trousers in charcoal or dark indigo, reinforced at knees and hems. Worn leather boots with good grip for warehouse flooring. She favors natural fibers and practical layers. Occasionally wears a vintage denim jacket with hand-stitched patches commemorating major installations. No corporate branding, but well-maintained — the aesthetic of someone who respects her tools and workspace."
+  },
+  "image_prompt": "A 52-year-old woman with cropped silver-white hair (long on top, short sides) and warm medium-brown skin, standing in a neon-lit warehouse studio. She wears a stained canvas work apron over an earth-toned linen shirt and dark trousers, holding her hands up expressively. Faint cream-white bioluminescent glows pulse along her collarbones and forearms in branching neon patterns. Her pale blue eyes are lined from decades of furnace work. Thick vintage optical enhancers hang on a beaded cord around her neck. Industrial glass tubes glow softly in the background. Cyberpunk, moody warehouse lighting, warm tungsten and cool neon glow mixing on her weathered face, deep focus on her hands and expressive gesture, detailed character portrait, photorealistic with subtle sci-fi elements, --ar 2:3 --v 6"
 }

@@ -239,5 +239,25 @@
     "Hearthstone Firearms Trail-357 'Pathfinder'",
     "Slagworks Industrial"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Croatian / Ghanaian / Punjabi",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, almost lanky — the physique of someone who subsists on coffee and forgets meals for 12-hour stretches. Minimal upper body mass, defined shoulders from poor ergonomic posture at terminals.",
+    "hair_color": "Chromatic-shift blue-green gradient (currently cycling on four-hour intervals, often stalled mid-cycle)",
+    "hair_style": "Slightly overgrown, pushed back with fingers rather than groomed, with individual strands catching light from the subdermal lattice glow",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown with a perpetual unfocused quality, irises tracking invisible data layers",
+    "skin_tone": "Warm medium brown with undertones reflecting mixed Central European and South Asian ancestry",
+    "complexion": "Fine-featured face that photographs well but reads distracted in person — high cheekbones, straight nose, jawline softened by perpetual exhaustion. Skin slightly sallow from sub-level fluorescent exposure. No visible acne or scarring, but faint dark circles are permanent fixtures.",
+    "distinguishing_marks": [
+      "Subdermal geometric lattice pattern spanning entire left forearm, creating circuit-board filigree that bioluminesces pale blue on low pulse, visible through skin as raised geometric pathways",
+      "Faint coffee stain on right index and middle finger from chronic pen-chewing and terminal contact"
+    ],
+    "visible_augmentations": "Left forearm geneware lattice (subdermal geometric pattern, bioluminescent low-pulse glow). Chromatic-shift hair in blue-green gradient. Neural-link data interface ports visible at base of skull (standard Axiom-issue, small chrome nodes, partially hidden by hair). Standard augmentation cosmetics for high-tier corporate data architect.",
+    "posture_movement": "Sits hunched toward monitors with shoulders raised, neck perpetually craned forward as if watching something six inches above eye level. Moves with distracted efficiency — no wasted motion, but no grace either. Hands gesture unconsciously, tracing invisible network architecture in air. Eyes track in odd vectors during conversation, following invisible data streams.",
+    "clothing_style": "High-tier corporate casual: charcoal Axiom-branded compression shirt (thermoregulation weave, minimal visible branding), custom-fitted black tech pants with discreet silver seams and internal cable routing. Worn grey cardigan that's technically not regulation but nobody stops him. Minimal jewelry — a single chrome band on right wrist (haptic feedback device, Axiom-issue). Soft-shell jacket hangs on chair, never worn. Footwear: matte-black minimalist shoes optimized for standing at terminals, slightly scuffed. Overall presentation: Tier 1-2 corporate, but with the rumpled authenticity of someone who dresses for function, not appearance."
+  },
+  "image_prompt": "Portrait of a lean, perpetually distracted 29-year-old man with Croatian-Ghanaian-Punjabi features, medium-length chromatic-shift blue-green hair, dark brown eyes unfocused and tracking invisible data. Left forearm displays intricate subdermal geometric lattice pattern glowing pale blue bioluminescence, like circuit-board filigree beneath translucent skin. Sitting hunched at a terminal in dim sub-level corporate lighting, fluorescent blue-grey tone. Wearing charcoal Axiom compression shirt and black tech pants. Small chrome neural-link ports visible at base of skull. Exhausted, brilliant, distracted expression. Cyberpunk data architect aesthetic, high-tier corporate setting, cold fluorescent overhead lighting with warm blue bioluminescent accents, photorealistic, technical precision, moody atmosphere, --ar 2:3 --v 6"
 }

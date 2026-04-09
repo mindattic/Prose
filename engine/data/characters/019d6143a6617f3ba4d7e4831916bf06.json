@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Ashland and Division",
-  "description": "Ngaire Kuznetsov-Adu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 52, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a street samurai out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nNgaire Kuznetsov-Adu is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "description": "Ngaire Kuznetsov-Adu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 52, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a street samurai out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nNgaire Kuznetsov-Adu is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.29,
@@ -29,7 +29,7 @@
       "Never being able to stop running — the lifestyle is a trap disguised as freedom"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
       "To build something that outlasts the next contract cycle"
     ],
@@ -43,7 +43,7 @@
       "Assumes their skill set is more transferable than it actually is",
       "Cannot accept help without interpreting it as leverage"
     ],
-    "secret": "Ngaire Kuznetsov-Adu sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Ngaire Kuznetsov-Adu sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
@@ -281,7 +281,7 @@
   ],
   "related_entities": [
     "The Narrows Compact",
-    "Meridian 88",
+    "GLMZ",
     "The Nearfield",
     "The Heritage Vault",
     "Kang-Petrov Arms KPA-15 'Diaspora'",
@@ -289,5 +289,27 @@
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Polynesian / Russian / West African",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Athletic and lean with functional muscle density — the kind of body maintained through deliberate conditioning rather than vanity. Shoulders broad but not overdeveloped, core visibly tight. Movement suggests dancer's proprioception married to fighter's economy of motion.",
+    "hair_color": "Dark brown with early silver threading at temples and sideburns",
+    "hair_style": "Cropped close on sides, longer on top — practical, allows full peripheral vision, easy to maintain",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, natural — no ocular augmentation",
+    "skin_tone": "Medium-warm, sun-darkened undertone suggesting mixed Pacific and Sub-Saharan ancestry with pale Russian ancestry underlying",
+    "complexion": "Strong jawline, high cheekbones, a face that reads as perpetually thirty-five despite the age. Minimal scarring on the face itself — he's careful about visible damage. Skin around eyes shows the creasing of someone who squints at distance and smiles rarely. Clean-shaven or maintaining a precise three-day shadow.",
+    "distinguishing_marks": [
+      "Wired reflex augmentation visible along both forearms as fine metallic threading beneath translucent inlaid paneling, faintly luminescent under LED light",
+      "Thin scar running from left temple to cheekbone — old wound, professionally closed but never fully faded",
+      "Chemical-mechanical adrenaline pump port visible at the base of his neck, just below the right collar, titanium and synthetic flesh interface no larger than a thumbnail",
+      "Faint burn marks across the knuckles of both hands — chemical residue scarring from early augmentation work or weapons testing"
+    ],
+    "visible_augmentations": "Wired reflex augmentation paneling on forearms with visible metallic threading and subdermal circuitry. Adrenaline pump port at base of neck. Subdermal weapon mounts in forearms (not visibly active unless deployed). The chrome is deliberate, worn like a warning label.",
+    "posture_movement": "Moves with controlled fluidity — no wasted motion, weight balanced on the balls of his feet. Stands relaxed but never truly at rest, shoulders loose but hands positioned for immediate access. Makes eye contact without aggression. When still, he's completely still; when moving, the transition is instantaneous.",
+    "clothing_style": "Tier 3-4 functional: insulated synth-leather jacket in matte black, fitted but allowing full range of motion. Reinforced cargo pants with discretely placed armor panels at shins and thighs. Composite boots rated for impact. Understated — no logos, no chrome accessories beyond the augmentations themselves. Clothes serve function over fashion. When maintaining cover, the same pieces cycle through dark neutral colorways. Nothing that draws attention or marks him as corps or crew."
+  },
+  "image_prompt": "Cyberpunk street samurai, 52-year-old male with mixed Polynesian-Russian-West African heritage, athletic lean build, dark brown hair with silver at temples cropped short, deep brown eyes, medium-warm skin tone. Metallic wired reflex augmentation paneling visible on both forearms glowing faintly under neon, chemical-mechanical adrenaline pump port at base of neck, precise three-day shadow. Matte black synth-leather jacket over reinforced cargo pants, composite boots. Standing relaxed but poised, hands loose, gaze intense. Kessler Row setting — cramped industrial corridor with neon signs for augmentation clinics and arms dealers, rain-slicked concrete, shadows and harsh LED light mixing with chrome reflections. Moody, cinematic lighting, shallow depth of field. Film noir meets cyberpunk. Photorealistic, character portrait --ar 2:3 --v 6"
 }

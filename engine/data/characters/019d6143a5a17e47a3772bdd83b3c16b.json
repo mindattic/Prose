@@ -236,5 +236,27 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Russian / Portuguese",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Wide-shouldered, sturdy frame with substantial muscle development in forearms and shoulders from decades of manual labor. Strong, functional build — not athletic, but work-hardened.",
+    "hair_color": "Silver-white, natural gray-out",
+    "hair_style": "Pinned up daily under rotating cloth wraps in various patterns",
+    "hair_length": "Medium (shoulder-length when unbound, kept secured)",
+    "eye_color": "Deep brown, natural",
+    "skin_tone": "Deep warm brown with underlying red undertones from chronic steam and solvent exposure",
+    "complexion": "Face shows fine lines and creases typical of 58 years and decades of heat exposure. Forearms permanently flushed pink at the wrists from repeated chemical contact. Hands calloused and marked with minor burns. Expression typically neutral but observant.",
+    "distinguishing_marks": [
+      "Chronic chemical burns and discoloration at both wrists, extending 5-8cm up the forearms, permanent pink-red flush from decades of industrial solvent contact",
+      "Small circular burn scar on left inner forearm from steam exposure, approximately 2cm diameter, smooth and pale",
+      "Fine network of age-related creases across hands, more pronounced on right hand",
+      "Minor lye-bleach staining on cuticles and nail beds, slightly discolored patches on palms"
+    ],
+    "visible_augmentations": "Bifocal AR lenses hung on a beaded chain around neck (non-networked, worn clipped to shirt when in use). Right fingertips show subtle shimmer of haptic pressure overlay (old model, partially degraded — occasionally visible as slight iridescence under bright light). No obvious chrome or subdermal implants.",
+    "posture_movement": "Stands and moves with deliberate economy. Spine straight, shoulders back from decades of standing at wash stations. Movements are precise and unhurried — no wasted motion. Hands move with practiced gentleness when examining fabric. Gaze is steady and evaluative, often focused on details others miss.",
+    "clothing_style": "Practical Tier 3-4 working dress. Heavy canvas apron in neutral tones, worn daily over simple cotton shift or long-sleeved work tunic (sleeves rolled to elbows, revealing forearms). Wears functional slip-on shoes with reinforced soles for standing. Cloth wraps in rotating patterns — hand-sewn or gifted pieces from regulars, suggesting cultural expression and community bonds. No jewelry except the beaded chain for the AR lenses. Occasionally wears a faded denim or canvas jacket over shoulders when closing the shop. Clothing is always clean, but showing honest wear."
+  },
+  "image_prompt": "Cyberpunk character portrait, Adaeze Volkov-Semedo, 58-year-old woman with deep warm brown skin, silver-white hair pinned under patterned cloth wrap, standing in laundry shop at afternoon light. Wide-shouldered, work-hardened frame, forearms flushed pink from chemical exposure. Wearing heavy canvas apron over simple tunic, rolled sleeves exposing marked forearms. Bifocal AR lenses hanging on beaded chain at neck. Right hand shows subtle haptic overlay shimmer. Neutral, evaluative expression. Background: industrial wash station with steam rising, clothesline, narrow shop window showing Hamtramck street corner, warm sodium lighting mixing with daylight. Photorealistic, detailed hands and forearms showing wear and scars, atmospheric moisture from steam, intimate character study, --ar 2:3 --v 6"
 }

@@ -242,5 +242,27 @@
     "Rust",
     "Déjà Vu"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African (Igbo) / Icelandic Norse",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and thick-limbed, softened by age into a sturdy, earth-rooted frame. Spine curves gently forward in a perpetual lean, giving an impression of listening rather than standing. Hands are large and calloused, fingers stained with capacitor residue.",
+    "hair_color": "White with deep brown roots showing at the scalp",
+    "hair_style": "Wrapped in layered cloth wrappings incorporating blinking fiber-optic threads woven as devotional offerings",
+    "hair_length": "Long (wrapped, not visible)",
+    "eye_color": "Deep brown irises displaying slowly rotating mandala patterns in gold and rust tones",
+    "skin_tone": "Deep mahogany brown, weathered and warm",
+    "complexion": "Worn, lined face with high cheekbones and a wide mouth. Skin condition is dry but well-maintained; face carries the texture of someone who has smiled often and cried when necessary. Faint networks of electrical burns visible near temples.",
+    "distinguishing_marks": [
+      "Faded luminescent tattoo circuits covering both forearms in intricate prayer-pattern designs, now rendered as silver tracery with no active glow",
+      "Faded luminescent tattoo circuit running up the left side of her throat in a spiraling mandala pattern, silver-traced",
+      "Burn scars on the backs of both hands from decades of handling hot circuit boards, pale against her deep skin tone",
+      "A thin white scar running from her left temple to her ear, likely from early cochlear implant installation surgery fifty years prior"
+    ],
+    "visible_augmentations": "Patterned mandala irises with rotating gold and rust imagery (visible only in direct eye contact). Cochlear amplification implant visible as a faint crystalline port behind the left ear, now integrated but still traceable. Faded luminescent tattoos across forearms and throat (no longer illuminate). Blinking fiber-optic threads woven throughout her cloth hair wrapping, pulsing gently in warm white and amber tones.",
+    "posture_movement": "Perpetually leaning slightly forward as if listening intently. Moves slowly and deliberately, each step grounded. Hands move fluidly and with purpose when working with devices or conducting divinations. Her head often tilts toward sources of electrical hum. She speaks in a low, steady voice and pauses frequently as if hearing something others cannot.",
+    "clothing_style": "Tier 4 (working-class, dignified): layered loose linen and cotton robes in cream, rust, and indigo, worn soft with age. Heavy cloth wrappings in her hair incorporate fiber-optic devotional threads. Copper and brass bangles on both wrists, some bearing circuit-pattern engravings. Thick-soled canvas shoes stained with basement shrine dust. A long woven vest with deep pockets for carrying tools and offerings. No corpo branding; instead wears handmade devotional badges and beads earned from her community."
+  },
+  "image_prompt": "Portrait of Odessa Nwachukwu-Sigríðardóttir, 67-year-old woman with deep mahogany skin and white-wrapped hair embedded with softly blinking fiber-optic threads, gentle lean forward posture, patterned mandala irises in gold and rust rotating slowly in her eyes, faded silver luminescent tattoo circuits mapping her forearms and throat, worn linen robes in cream and indigo, copper bangles, basement shrine candlelight and electrical hum, warm amber and blue neon glow from old hardware, incense smoke, devotional offerings in soft focus background, cyberpunk spirituality, sacred technology aesthetic, soft dramatic lighting, intimate and reverent mood, digital painting style, photorealistic portraiture --ar 2:3 --v 6"
 }

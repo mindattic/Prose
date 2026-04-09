@@ -248,5 +248,26 @@
     "Silver",
     "SynapTech ReadRoom Social Cue Enhancer"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East African / Hungarian",
+    "height_cm": 178,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thick-chested, softened at the middle by two decades of sedentary booth work. Still carries the frame of a younger man who did physical labor, now settled into comfortable weight gain. Forearms remain muscular from repetitive rail controls.",
+    "hair_color": "Dark brown with silver threading throughout",
+    "hair_style": "Short, practical cut, swept back from forehead, kept neat by routine",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Warm medium brown with reddish undertone, deepens visibly when cold or irritated",
+    "complexion": "Weathered face with deep lines around eyes and mouth from two decades of concentration and squinting at monitors. Close-cropped dark beard with silver streaking, well-maintained. Sun-weathered from platform exposure. Crow's feet pronounced. Expression carries the stillness of someone accustomed to absolute focus.",
+    "distinguishing_marks": [
+      "Faint scar on left temple, roughly 3cm, likely from an industrial accident decades past",
+      "Callus pattern on right hand palm from decades of haptic interface contact",
+      "Wedding band on left ring finger, worn gold, visible patina from thirty-two years"
+    ],
+    "visible_augmentations": "Right hand displays subtle subdermal haptic interface overlay visible as fine metallic threading across palm and fingertips when hand is extended under light. Interface appears as faint geometric patterns beneath skin surface. Wire-rimmed ID glasses with integrated minor corrective optics, worn constantly.",
+    "posture_movement": "Stands with slight forward lean, as if perpetually monitoring something. Movements economical and deliberate—no wasted motion. Sits with the particular stillness of someone trained to remain motionless during crises. When standing on a platform, weight shifts rhythmically, a habit from years of anticipating train motion. Hands gesture with precision when speaking, especially about transit systems.",
+    "clothing_style": "Ferrogate Transit operator uniform (charcoal-grey Tier 3 industrial cotton blend, union-regulation fit). Uniform jacket worn open over grey undershirt. Standard-issue transit union pin on collar (23-year tenure marker visible). Comfortable worn work boots, well-maintained but scuffed. Off-duty: practical grey trousers, worn cardigans, no affectation. Slight smell of station platform grease and metal polish. Grooming meticulous by working-class standard—clean, practical, dignified."
+  },
+  "image_prompt": "Photograph-realistic portrait of a 61-year-old East African-Hungarian man, Tier 3 working class, sitting in a cramped elevated rail operator's booth. Broad shoulders, warm brown skin with reddish undertone, dark hair silver-threaded and close-cropped, close-cropped dark beard with silver. Wearing worn charcoal Ferrogate Transit uniform, wire-rimmed glasses with integrated optics. Right hand extended, showing fine metallic subdermal haptic interface threading visible beneath skin. Weathered face with deep lines, expression of absolute stillness and focus. Behind him through booth window, blurred elevated rail tracks and Deepwell Station platform below. Soft tungsten booth lighting casting shadows. Slight smell of station grease and metal in the air. Documentary realism, subtle cyberpunk infrastructure, no exaggeration, dignified working-class character portrait, 2226 GLMZ aesthetic --ar 2:3 --v 6"
 }

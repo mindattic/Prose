@@ -242,5 +242,25 @@
     "The Pure Hand",
     "Nightlight"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Mirović suggests Serbian or Croatian descent via Asante's West African roots)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Slight and angular, with the lean musculature of someone who moves carefully through space rather than taking up room. Narrow shoulders, long fingers, slight forward curve to the upper spine from hours hunched over lab stations.",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Short fade on the sides (approximately 3mm), longer on top (approximately 8cm) swept back and secured with a small clip bearing an ELF-glyph stamped into matte steel",
+    "hair_length": "Asymmetrical short-to-medium",
+    "eye_color": "Dark brown with warm undertones",
+    "skin_tone": "Warm golden-brown with slight amber undertones",
+    "complexion": "Clear, youthful skin with fine-grained texture. Faint dark circles under the eyes from irregular sleep. Minimal facial hair. Expression tends toward watchful rather than relaxed.",
+    "distinguishing_marks": [
+      "Bioluminescent capillary threading along both collarbones in a delicate branching pattern, soft blue-white glow visible when excited or after extended neural interface use",
+      "Bioluminescent capillary threading on the backs of both hands in thin web-like lines, same blue-white coloration, most visible in low light or when hands are active"
+    ],
+    "visible_augmentations": "Bioluminescent capillary geneware threading on collarbone and hands (soft blue-white glow, currently visible but sometimes covered by oversized sleeves). No other visible cybernetics; standard Helix neural data-capture module is fully subcutaneous.",
+    "posture_movement": "Moves with economical precision—each gesture deliberate, few wasted motions. Tends to stand slightly compressed, shoulders slightly forward, as if trying to minimize physical presence. Hands move quickly and accurately when working. Maintains careful distance in group settings. Eyes frequently scan environments and track who is paying attention to whom.",
+    "clothing_style": "Helix Biosystems-issue lab coat (white, slightly oversized to accommodate the data-capture interface hardware and to hide the bioluminescent threading when desired). Under the coat: dark gray or black fitted underlayer shirt, often from discount Tier 3-4 retailers (off-brand, functional). Dark stretch pants or slim-fit work trousers in black or charcoal. Practical low-profile sneakers (black, worn). Small personal modifications: clips, subtle pin badges from university orgs. Appearance suggests someone who is learning the rules of corporate dress code while still testing its boundaries."
+  },
+  "image_prompt": "Portrait of Thibault Asante-Mirović, 23-year-old nonbinary biotech intern, slight angular frame, warm golden-brown skin with visible bioluminescent capillary threading glowing soft blue-white along collarbone and backs of hands, dark brown hair cut short on sides and longer on top held back with steel clip, dark watchful eyes, wearing oversized white Helix Biosystems lab coat over dark underlayer, standing in sterile sublevel laboratory with cool fluorescent lighting casting slight blue-white shadows from bioluminescence, subtle glow highlighting nervous energy and concentration, cyberpunk aesthetic, scientific precision, hyperrealistic detailed portraiture, moody clinical lighting, tense observant expression, --ar 2:3 --v 6"
 }

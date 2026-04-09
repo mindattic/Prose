@@ -195,7 +195,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born in Meridian 88, Engelheim district",
+      "event": "Born in GLMZ, Engelheim district",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -245,5 +245,26 @@
     "Arcturus Defense Solutions ETF-3 'Mantis'",
     "The Milwaukee Core"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Polish / Nigerian / Mongolian",
+    "height_cm": 183,
+    "weight_kg": 71,
+    "build": "Tall and attenuated, spine curved with age but still commanding reach. Lean muscle loss apparent in the forearms and hands, which remain dexterous and calloused from decades of handling fragile media.",
+    "hair_color": "White",
+    "hair_style": "Loose cloud, restrained with whatever is at hand — clips, wire, functional objects repurposed as hair fixtures",
+    "hair_length": "Long",
+    "eye_color": "Augmented: amber-to-violet gradient iris, both eyes",
+    "skin_tone": "Medium-dark, sun-weathered, deeply lined from eight decades and countless hours under archive lighting",
+    "complexion": "Gaunt, high cheekbones prominent, age spots scattered across forehead and temples. Deep creases around the eyes and mouth from years of concentration and speaking in careful layers. Skin texture uneven — some areas finely wrinkled, others loose. Stubble or sparse beard growth, inconsistent grooming reflecting indifference to appearance.",
+    "distinguishing_marks": [
+      "Extensive linear scarring on the inner right wrist from a data-storage accident in their fifties — three parallel lines, pale and well-healed",
+      "Small tattoo on the left temple: a minimalist archive symbol (nested boxes), faded to grey-blue from aging",
+      "Burn mark across the back of the right hand from chemical contact with deteriorating magnetic tape, circa 2170s — pale, slightly glossy, roughly the size of a coin"
+    ],
+    "visible_augmentations": "Both eyes replaced with professional-grade Axiom augmentation, clearly visible as a gradient iris shifting from warm amber at the pupil to cool violet at the outer edge. The sclera is slightly iridescent in certain light. A small neural port access point visible at the base of the skull, just above the spine, covered by white hair but occasionally exposed when the hair shifts — appears as a faint metallic circle, unremarkable unless you know to look.",
+    "posture_movement": "Moves slowly, deliberately, with a forward cant to the spine. Hands are constantly in motion — gesturing, sorting invisible items, adjusting glasses or hair. When seated, leans forward intently. Walks with measured steps, sometimes pausing mid-stride as if following a thought. Eyes track constantly, cataloguing, indexing.",
+    "clothing_style": "Tier 4 working-class, practical and worn. Fingerless gloves always present — faded grey wool, darned at the knuckles, stained with dust and handling residue from the archive. Loose linen or cotton shirt in cream or soft grey, often layered with a sleeveless vest that has deep pockets bulging with field notes, a handheld voice recorder, small cataloguing tools. Worn dark trousers, cuffed. Comfortable, scuffed shoes suitable for neighborhood walking. A weather-beaten satchel, older than the satchel fashion cycle, holding recording equipment and archival materials. No jewelry save a faded bangle on the left wrist — something old, personal, never removed."
+  },
+  "image_prompt": "A tall, elderly nonbinary figure with a pronounced forward stoop and deeply lined medium-dark skin, white hair in a loose cloud restrained with wire and clips. Both eyes are augmented with striking amber-to-violet gradient irises that glow subtly. They wear fingerless grey wool gloves, a cream linen shirt, and a dark practical vest, standing in dim warm archive lighting surrounded by stacked media cases and documentation. Soft overhead glow catches the metallic port at the base of their skull. Their posture is deliberate and attentive, hands mid-gesture. The setting is a cluttered residential-turned-archive space, late 2220s cyberpunk, nostalgic and scholarly. Shallow depth of field, warm color grading, 35mm documentary photography aesthetic. --ar 2:3 --v 6"
 }

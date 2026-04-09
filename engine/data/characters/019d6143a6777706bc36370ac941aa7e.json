@@ -208,5 +208,26 @@
     "Tibor Osei-Svanstrom",
     "Nightlight"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Scandinavian / Caucasian (Quliyev suggests Central Asian or Russian lineage)",
+    "height_cm": 183,
+    "weight_kg": 71,
+    "build": "Lean and long-limbed, slight forward stoop from years hunched over fieldwork notes; wiry rather than athletic, the build of someone who walks everywhere and forgets to eat",
+    "hair_color": "Dark brown with reddish undertones",
+    "hair_style": "Short, close-cropped, slightly unkempt; appears to be cut every six months out of necessity rather than intention",
+    "hair_length": "Short",
+    "eye_color": "Modified: slow-rotating geometric pattern in amber and charcoal overlaying dark brown iris",
+    "skin_tone": "Dark reddish-brown with warm undertones; shows the wear of daily outdoor fieldwork across variable weather",
+    "complexion": "Angular face with pronounced cheekbones; close beard that grows patchy at the jawline and is visibly neglected (two-year maintenance gap evident); deep worry lines that deepen in direct light, making him appear significantly older than thirty-four; slight dark circles under eyes suggest chronic sleep deficit from note-taking and fieldwork",
+    "distinguishing_marks": [
+      "Faint scar across left knuckle from a fieldwork incident (2219) — thin white line approximately 2cm long",
+      "Minor burn scar on right forearm (thermal exposure during infrastructure documentation) — pale, roughly circular, 1cm diameter",
+      "Worn groove on left ring finger from constant note-taking stylus use"
+    ],
+    "visible_augmentations": "Modded irises with visible slow-rotating amber and charcoal geometric pattern — immediately noticeable during eye contact; pattern rotates in 12-second cycles. Neural recorder port barely visible at left temple (hairline-level, thin scar, minimal aesthetic intervention). No visible chrome or subdermal plating.",
+    "posture_movement": "Forward-leaning walk as if always listening; hands gesture while speaking but palms-up rather than dominant; habitually touches temple (neural recorder engagement); sits with knees drawn up even in formal contexts; eyes track foot traffic and social groupings even during conversation — occupational observation habit",
+    "clothing_style": "Tier 3 working academic: three-outfit rotation of durable, mended cotton-blend layers (grays, dark blues, earth tones); one slightly better set for University Spine presentations (unfashionable, carefully maintained); worn hiking boots resoled twice; carries a canvas fieldwork satchel with visible stains from multiple neighborhoods; no corporate logos; clothes show authentic wear rather than styled distress; thermal undershirt visible at collar in cold months"
+  },
+  "image_prompt": "Cyberpunk character portrait of a lean 34-year-old Black man with warm reddish-brown skin, close-cropped dark hair with reddish undertones, and patchy neglected beard at the jawline. Eyes have slow-rotating amber and charcoal geometric pattern modification. Angular face with pronounced cheekbones, deep worry lines, exhausted but alert expression. Wearing worn gray cotton layered shirt, thermal undershirt visible at collar. Small scar visible on temple from neural implant. Forward-leaning posture, hands gesturing while listening. Set in Highland Park autonomous zone — industrial fabrication collective interior in background with soft tungsten work lights and exposed piping. Morning light from large windows catching the worry lines, making him appear much older. Gritty, grounded cyberpunk aesthetic, no chrome or flashy augmentations, focus on weathered fieldwork appearance. Photorealistic, documentary-style lighting, worn but thoughtful expression, sociological observer energy. --ar 2:3 --v 6"
 }

@@ -270,5 +270,27 @@
     "VOSS",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Northern European / East Asian (Voss suggests Scandinavian; mixed lineage implied by GLMZ baseline)",
+    "height_cm": 168,
+    "weight_kg": 52,
+    "build": "Lean and angular, almost skeletal — the result of chronic stress and limited resources. Tight muscle definition in shoulders and core from years of mural work and survival. No excess anywhere.",
+    "hair_color": "Black, natural",
+    "hair_style": "Cropped close to scalp, uneven and jagged — self-cut with the claws, deliberately crude",
+    "hair_length": "Short",
+    "eye_color": "Gray-blue, flat and distant",
+    "skin_tone": "Pale Nordic complexion with undertones suggesting mixed heritage; sallow from Shelf-tier living conditions",
+    "complexion": "Sharp, high cheekbones; hollow cheeks; thin-lipped mouth. Skin shows old bruising marks and small scars consistent with alley violence. No cosmetic modifications. Haunted expression — eyes that have witnessed amputation and chosen defiance.",
+    "distinguishing_marks": [
+      "Surgical cauterization scars at both wrists where hands were severed, approximately 8cm across each, pale and smooth despite trauma",
+      "Multiple thin white scars on forearms from years of handling caustic paints and sharp tools",
+      "Dried blood stains (intentional) on chest and neck from her own work — some days fresh, some days old",
+      "Faded tattoo on left shoulder blade: a single brushstroke in gray ink, likely self-done"
+    ],
+    "visible_augmentations": "Both arms replaced from elbow down with military-surplus combat prosthetics. Each terminating in three curved titanium digits (40cm+ in length), wickedly sharp, designed for breaching. The joints are exposed hydraulic cylinders with no attempt at cosmetic covering. Dull gunmetal finish with rust blooming at stress points. Hydraulic fluid sometimes weeps from the seals, leaving dark stains on her clothes. The augmentations are grotesque — clearly weapons retrofitted onto an artist's body.",
+    "posture_movement": "Stands with shoulders forward, habitual defensive posture. Moves efficiently, economically — no wasted motion. The claws make her naturally careful; she doesn't gesture wildly. When painting, she becomes trance-like, body loose and focused. Her movements with the claws are deliberate and precise despite their brutal appearance. She favors her left side when resting, as if protecting something.",
+    "clothing_style": "Sleeveless tank tops or cut-off shirts (Tier 5, worn-out second-hand) in dark colors to hide paint stains. Industrial cargo pants, multiple pockets, patched at the knees. No corpo branding. Heavy boots with welded metal plating on the toes. A long, battered duster coat (original color unknown) worn over everything when moving through Tier-1 areas. No jewelry except a corroded silver ring on what remains of her right thumb — possibly a pre-amputation remnant kept as a relic."
+  },
+  "image_prompt": "Cyberpunk portrait of a fierce 34-year-old woman with pale skin, sharp Nordic features, and cropped black hair cut unevenly with claws. Both arms end in brutal military-grade prosthetic limbs terminating in three enormous curved titanium digits per hand, weapons-grade and exposed, dull gunmetal finish with visible hydraulic joints. Sleeveless dark tank top revealing surgical scars at the wrists and dried blood streaks across her chest and shoulders. Gray-blue eyes distant and haunted, expression flat and dangerous. Standing in a Tier-5 warehouse setting with industrial murals behind her, some marked with fresh claw-gouges and blood-mixed pigment. Moody cinematic lighting, cool blues and harsh shadows emphasizing the prosthetics. Gritty, unflinching realism. Cyberpunk noir aesthetic. --ar 2:3 --v 6"
 }

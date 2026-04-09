@@ -179,5 +179,26 @@
     "Arcturus CK-5 'Bloodhound'",
     "Teak"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Cambodian / Peruvian / Senegalese",
+    "height_cm": 162,
+    "weight_kg": 58,
+    "build": "Compact and wiry, built for movement rather than stillness. Lean musculature across shoulders and forearms from years of standing at decks and manipulating equipment. No excess weight; the build of someone who eats when reminded rather than by schedule.",
+    "hair_color": "Color-shift augmentation cycling amber-to-blue over six-hour intervals",
+    "hair_style": "Shoulder-length, often pulled back with salvaged wire or fabric scraps; perpetually in motion even when restrained",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, alert and quick-tracking",
+    "skin_tone": "Deep weathered teak — a warm mid-brown that holds the mixed heritage of plateau, highland, and coastal ancestry",
+    "complexion": "Sharp angular planes, high pronounced cheekbones, broad nose with a slight asymmetry from an old break. Skin usually marked with dark circles beneath eyes from irregular sleep rhythm. Minimal grooming beyond necessity; calluses on fingertips and palms.",
+    "distinguishing_marks": [
+      "Fine parallel scarring along both inner forearms where subdermal haptic receiver arrays were installed — pale lines about 8cm long, now two years healed but still visible",
+      "Burn scar on left palm, roughly 3cm diameter, from contact with overheating audio equipment during an early performance",
+      "Collection of small stick-and-poke tattoos scattered across knuckles and wrists — abstract sound wave patterns, mostly done by friends in the collective"
+    ],
+    "visible_augmentations": "Color-shift hair is the primary visible augmentation, currently cycling through warm amber to cool electric blue. The forearm scarring indicates subdermal work, though the haptic arrays themselves are not visible beneath skin. No other obvious chrome or prosthetics.",
+    "posture_movement": "Never still for more than a few seconds. Fidgets constantly with hands, tapping rhythms on surfaces, fingers moving as if mixing invisible decks. Leans forward when listening intently. Moves through space with economical efficiency — no wasted motion, but perpetually restless. When engaged with sound equipment, all extraneous movement stops and they become entirely focused.",
+    "clothing_style": "Tier 4 (working class, underground) with intentional anti-fashion. Uniform battered canvas jacket (faded navy, heavily patched with hand-stitched fabric scraps from venues and friends) worn over layers of cheap synthetic tank tops in varying states of disrepair. Cargo pants with cargo pockets filled with audio equipment, patch cables, and recording devices. Scuffed utility boots, laces often untied. Wears a harness of paracord across chest when performing, used to anchor equipment and cable management. No jewelry except a homemade bracelet of copper wire wound around left wrist. Clothes smell permanently of machine oil, tunnel dampness, and cigarette smoke from other people's sets."
+  },
+  "image_prompt": "Cyberpunk character portrait, 24-year-old androgynous Southeast Asian-Andean-West African mixed heritage person, compact athletic frame, sharp cheekbones and broad nose, weathered teak skin tone. Shoulder-length hair with color-shift technology currently cycling amber to electric blue mid-transition. Dark brown alert eyes, slight asymmetrical smile. Wearing heavily patched battered navy canvas jacket covered in hand-stitched fabric patches, synthetic undershirts, cargo pants with dangling cables and patch cords. Paracord harness across torso. Fine scarring visible on inner forearms. Fidgeting hands, fingers in motion. Urban underground aesthetic, low-key mood lighting, slight grain and digital noise, depth of field, 2226 near-future technology. Standing in shadow with cool blue and warm amber color accent from their shifting hair. Cinematic, intricate detail, moody underground rave culture vibe. --ar 2:3 --v 6"
 }

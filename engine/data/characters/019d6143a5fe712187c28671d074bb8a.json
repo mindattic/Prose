@@ -242,5 +242,26 @@
     "The Pale Mile",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Lithuanian / Nigerian",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "build": "Slight and lean, almost angular — the physiology of someone whose formative years were spent hunched over terminal arrays in low-light environments. Narrow shoulders, long limbs with minimal musculature, wrists that look delicate until you notice the faint scarring from repeated micro-abrasions against keyboard edges.",
+    "hair_color": "Dark brown, almost black",
+    "hair_style": "Loose, shoulder-length waves typically pulled back with whatever cable or data-ribbon is nearest — deliberately unmaintained, more functional than aesthetic",
+    "hair_length": "Medium to Long",
+    "eye_color": "Light amber-brown, natural; augmented with visible metallic threading at the iris margins from deep-format optic implant",
+    "skin_tone": "Pale amber — the particular tone that emerges from mixing Lithuanian and Nigerian heritage, dulled slightly by years under fluorescent lighting and kept deliberately unblemished",
+    "complexion": "Youthful face with a long jaw and high cheekbones; skin clear but unmarked, with the almost translucent quality of someone who avoids direct sunlight. Under lab lighting his skin takes on a faint golden undertone. He has the focused, slightly distracted expression of someone always half-listening to data streams in his head.",
+    "distinguishing_marks": [
+      "Bioluminescent tracery along both temples in pale blue-white lines that brighten visibly when concentrating, fade to dim phosphorescence during sleep",
+      "Matching bioluminescent patterns across the back of both hands, branching like lightning strikes from wrist to knuckles, same blue-white geneware",
+      "Nicotine patch port on left forearm, a small circular induction point with faint scarring around the margin — functional, not concealed, bearing the dulled sheen of repeated use"
+    ],
+    "visible_augmentations": "Bioluminescent geneware traceries on temples and hands (pale blue-white, brightest during active concentration); subtle metallic threading visible at iris margins indicating deep-format optic implant; nicotine patch port on left forearm with minor scarring",
+    "posture_movement": "Tends to hunch forward slightly even when standing, shoulders curled inward as if still leaning toward a terminal. Movements are efficient but not graceful — minimal wasted motion, occasional tremor in hands from sustained focus and stimulant use. When engaged in conversation he makes frequent eye contact, but that attention can blink out suddenly when his neural implant catches something in the background data feed. Walks quickly, impatient gait.",
+    "clothing_style": "Tier 3-4 functionality with minimal concession to aesthetics. Base layer: grey or black undershirts, often synthetic, often bearing small stains from lab work or food printer accidents. Usually wears a worn Meridian Heritage Collective soft-shell jacket (corporate-casual blue-grey, logo faded) over a tech vest with mismatched pockets for drives, tablets, and cable management. Trousers are dark utilitarian cargo pants from a mid-tier supplier, pockets heavy with tools. Worn ankle boots, practical treaded soles, possibly with drying mud from Deepwell access tunnels. No jewelry. Cable tie or data-ribbon keeps hair secured. Hands typically bear traces of thermal paste or minor burns from soldering."
+  },
+  "image_prompt": "cyberpunk character portrait of a 28-year-old man with Lithuanian-Nigerian heritage, pale amber skin, long dark hair tied back, slight lean build. Bioluminescent blue-white tracery glowing along temples and back of hands, visible metallic threading at eye irises. Wearing worn grey under-shirt beneath faded blue-grey tech vest and soft-shell jacket. Small circular port visible on left forearm. Dark focused eyes, young-looking face with high cheekbones and long jaw. Nocturnal archivist aesthetic. Set in a dim server lab environment with fluorescent overhead lighting casting cool blue shadows, stacks of hardware and terminal screens in soft focus behind him. Concentrated, slightly distracted expression. Cinematic cyberpunk style, moody lighting, technical detail, character-focused composition --ar 2:3 --v 6"
 }

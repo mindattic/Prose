@@ -256,5 +256,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Slagworks Industrial"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "South Asian (Anand) / Iberian-Portuguese (Ferreira)",
+    "height_cm": 176,
+    "weight_kg": 68,
+    "build": "Lean and angular, with the slight forward-cant posture of someone who spends hours in calibration chairs. Minimal muscle definition — his body is efficient rather than sculpted. Shoulders narrow, hands steady and long-fingered.",
+    "hair_color": "Dark brown with natural greying at the temples",
+    "hair_style": "Close-cropped, precisely maintained, no styling product — clinical neatness",
+    "hair_length": "Short",
+    "eye_color": "Natural amber with patterned concentric ring implants (diagnostic iridescence, rings shift and blur during neural sync)",
+    "skin_tone": "Warm medium brown with golden undertones typical of South Asian-Iberian mixed heritage",
+    "complexion": "Smooth, meticulously groomed, minimal facial hair (clean-shaven daily). Skin shows the pallor of indoor work — fluorescent-lite quality despite the warm tone. No visible blemishes or weathering; suggests someone who controls variables obsessively.",
+    "distinguishing_marks": [
+      "Matte black ceramic port array at left temple — roughly 3cm across, beveled edges, professional Helix Biosystems branding barely visible",
+      "Iridescent tracery of subdermal calibration leads running along left jawline and down the neck, visible as faint opalescent lines beneath skin when light hits at certain angles",
+      "Fine network of neural connectors visible as pale scarring beneath the skin of his neck, geometric and precise"
+    ],
+    "visible_augmentations": "Left temple port array is the most obvious — matte black ceramic with subtle light indicators. Subdermal leads visible as a faint iridescent web along jaw and neck when he turns his head. Eyes immediately draw attention — the concentric ring pattern reads as intentional, diagnostic, slightly unsettling. No obvious limb augmentation.",
+    "posture_movement": "Economical and controlled. He moves with deliberate precision — no wasted motion. When listening, he has a habit of tilting his head slightly toward his left (port-side), as if receiving data. His eyes focus with unusual intensity. In moments of fatigue, his shoulders curl inward. When nervous, his right hand traces the calibration leads on his neck absently.",
+    "clothing_style": "Tier 3 medical professional — clean, functional, muted. Favors dark turtlenecks or high-collared medical-grade shirts (conceals the leads while maintaining mobility). Charcoal grey Aurochs-branded lab coat when at work, tailored to his frame. Outside work: dark jeans, black thermal layers, a worn leather jacket from a higher-tier period he doesn't discuss. Shoes are always clean, usually black or grey. Jewelry: only a thin brushed-steel bracelet with embedded biometric readout on his right wrist. Everything chosen to minimize distraction — his clothes are infrastructure, not expression."
+  },
+  "image_prompt": "Portrait of Suljo Anand-Ferreira, a lean 34-year-old neural calibrator with warm medium-brown skin and close-cropped dark hair greying at temples. His striking amber eyes are patterned with concentric diagnostic rings that shimmer faintly. A matte black ceramic neural port array protrudes from his left temple, sleek and professional. Iridescent subdermal calibration leads trace geometrically along his jawline and neck, visible as pale opalescent scars beneath skin. He wears a high-collared dark turtleneck. His expression is focused and slightly distant, with the controlled composure of someone managing internal overwhelm. Cyberpunk medical facility aesthetic, cool fluorescent overhead lighting casting subtle shadows along his face and neck-ports, moody and introspective. Hyper-detailed facial features, photorealistic, clinical precision. --ar 2:3 --v 6"
 }

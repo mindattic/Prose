@@ -216,5 +216,26 @@
     "Copper",
     "Stalker"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Finnish",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, muscular without bulk — the build of someone who handles confrontation through presence rather than violence. Compact, efficient, built low and wide like ballast.",
+    "hair_color": "Black, natural",
+    "hair_style": "Shaved close on the sides, locked crown on top threaded through with hand-wound copper wire that catches light when she turns her head",
+    "hair_length": "Short (sides) / Medium (crown)",
+    "eye_color": "Right eye: dark brown, natural. Left eye: flat pewter surveillance implant disc, non-blinking, expressionless",
+    "skin_tone": "Dark amber, warm undertone",
+    "complexion": "Strong angular jaw, high cheekbones, minimal facial hair. Skin is weathered but maintained — no scars on the face, suggesting careful hygiene and deliberate grooming despite the uniform neglect. Permanent slight furrow between brows from years of focused observation.",
+    "distinguishing_marks": [
+      "Left eye is a Ferrogate-issue surveillance ocular implant — a flat pewter disc replacing the natural eye, always visible, never cosmetically masked",
+      "Subdermal ridge along the inside of right palm where ID scanner sits flush beneath skin, visible as a thin raised line when hand is open",
+      "Small burn scar on left forearm, roughly 3cm, from old industrial accident — faded but deliberate-looking"
+    ],
+    "visible_augmentations": "Left eye surveillance implant (pewter disc, non-functional iris, glowing faintly in low light). Subdermal ID scanner ridge on right palm. No attempt at cosmetic concealment — augmentations are presented as uniform equipment, not personal modification.",
+    "posture_movement": "Stands with shoulders back, weight balanced, head slightly forward in a stance that communicates alertness without aggression. Movements are economical and deliberate — no wasted motion. Her gaze is steady and scanning, a habitual checkpoint sweep. When still, she has the compressed readiness of a coiled spring.",
+    "clothing_style": "Transit authority grey uniform, always pressed and maintained except for the deliberately unfixed missing top button from six months ago — a small act of controlled nonconformity within rigid structure. Utility belt with standard-issue restraint gear, scanner, and comm unit. Off-duty: practical grey and charcoal layers, minimal adornment except for the copper wire in her hair. Tier 3-4 functional aesthetic — not poor, not wealthy, entirely mission-focused."
+  },
+  "image_prompt": "Portrait of a 34-year-old Black woman with dark amber skin and strong angular features, shaved sides with a tight locked crown threaded with copper wire, 172cm broad-shouldered build. Her left eye is a flat pewter surveillance implant disc, glowing faintly, expressionless and non-human — her right eye is natural dark brown and piercing. She wears a pressed transit authority grey uniform with a deliberately missing top button, utility belt visible. Standing at a futuristic subway checkpoint with steel and LED signage behind her, alert posture, hands relaxed. Harsh fluorescent checkpoint lighting mixing with cool blue neon. Cyberpunk 2226 aesthetic, hyper-detail on the surveillance implant, photorealistic, stoic and precise expression. Shot at chest-up framing, cinematic lighting, neo-noir security checkpoint mood. --ar 2:3 --v 6"
 }

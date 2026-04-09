@@ -244,5 +244,26 @@
     "Aslan Vasquez-Chatterjee",
     "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Burkinabé) / Scandinavian (Swedish)",
+    "height_cm": 188,
+    "weight_kg": 98,
+    "build": "Broad-shouldered and barrel-chested, softening at the waist and midsection with age; still carries the frame of a man who moved heavy things for decades, now settled into deliberate, economical movement",
+    "hair_color": "Red-grey with rust undertones",
+    "hair_style": "Full, unkempt beard extending to mid-chest, unstyled and never trimmed; hair on head short and thinning, greyed almost completely",
+    "hair_length": "Short on head, Long beard",
+    "eye_color": "Dark brown, with faint subretinal augmentation visible as a faint luminescence in low light",
+    "skin_tone": "Deep warm brown with grey undertones from decades of metallic dust exposure",
+    "complexion": "Heavily lined face with deep creases around the eyes and mouth; weathered but clean; small scar through left eyebrow from a tool accident in his fifties; calloused hands, right hand more than left",
+    "distinguishing_marks": [
+      "Deep horizontal scar across the left temple, pale against dark skin, approximately 4cm long from a salvage accident in his forties",
+      "Faint burn marks across the knuckles of his right hand from soldering work, barely visible unless examined closely",
+      "Tattoo on inner right forearm in faded indigo: a geometric pattern of interlocking lines and circles, old-school work from the 2180s, now blurred with age"
+    ],
+    "visible_augmentations": "Left arm prosthetic from elbow down: heavy-duty industrial model in bare gunmetal grey, utilitarian and undecorated, with visible joint articulation and cable routing; no chrome, no color-work, no aesthetic modification. Subretinal augmentation not immediately obvious but produces faint amber glow in darkness when active.",
+    "posture_movement": "Moves slowly and deliberately with the careful economy of an older man who has learned efficiency through forty years of repetition; stands with weight favoring right side due to left arm imbalance; rarely rushes; communicates with economy of gesture and long, appraising stares; carries himself with the quiet confidence of someone in complete command of their small domain",
+    "clothing_style": "Tier 4-5 practical: heavy canvas cargo pants in faded black, patched at both knees with different fabric; worn Carhartt-style jacket in brown, stained with oil and oxidation; thermal undershirt visible at neckline, greyed from washing; steel-toed boots, scuffed and re-soled multiple times; no jewelry except a simple band on right ring finger (silver, old). Everything functional, nothing decorative. No corporate branding. Clothes smell faintly of machine oil and copper oxide."
+  },
+  "image_prompt": "Goran Ouédraogo-Pettersson, 64-year-old junk merchant, weathered dark brown face deeply lined from sixty years in urban industrial setting, high prominent cheekbones inherited from Burkinabé heritage, small watchful dark eyes, massive untrimmed red-grey beard extending to mid-chest, short greyed hair thinning at crown. Heavy utilitarian gunmetal prosthetic arm from elbow down, bare metal without chrome, visible mechanical joints. Wearing faded black cargo pants, oil-stained brown Carhartt jacket, thermal undershirt. Standing in cluttered scrap merchant stall surrounded by salvage, metal parts, junk organized by invisible system, early morning light casting long shadows across aluminum and copper. Warm amber glow visible in eyes indicating subretinal augmentation in dim light. Deep contemplative expression, solid and immovable as machinery. Cyberpunk gritty realism, industrial geartown setting, harsh practical lighting, textured metallic atmosphere, photorealistic --ar 2:3 --v 6"
 }

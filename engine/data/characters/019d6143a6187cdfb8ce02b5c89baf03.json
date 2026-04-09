@@ -13,7 +13,7 @@
   "age": 68,
   "status": "active",
   "location": "Grindstone Shore, Ferrogate Transit maintenance dormitory block C, near Fullerton and Damen",
-  "description": "Galdino is a large, slow-moving man who has been worn smooth by decades of hard weather, like driftwood. His face is broad and deeply seamed, brown skin weathered to near-leather, with the pale eyes his Cook Islands grandfather gave him sitting incongruously pale in that dark face — what his wife used to call 'sky holes.' He moves deliberately, with the careful economy of someone whose joints have logged decades of outdoor labor and who has learned to budget pain. He keeps his grey hair cropped close and wears a Ferrogate Transit maintenance vest over everything regardless of temperature because it has many pockets and he has filled them with things he considers essential: a folding tool, seeds he can no longer plant, a small lacquered image of a lake E.L.F. from a shrine that no longer exists because the land it stood on is now thirty meters underwater.\n\nGaldino's family farmed the eastern Lake Michigan shoreline for four generations until the coastal surge protocols permanently inundated their land in 2189. He has been a climate refugee for eleven years, rotating through seasonal work along Meridian 88's industrial edges — dock maintenance, freight sorting, currently groundskeeping for Ferrogate Transit's maintenance infrastructure at Grindstone Shore. He does not complain about this, exactly, but he talks about soil and planting cycles the way other people talk about deceased relatives. He is patient with almost everyone and genuinely interested in young people in the way of someone who has run out of other things to invest in.",
+  "description": "Galdino is a large, slow-moving man who has been worn smooth by decades of hard weather, like driftwood. His face is broad and deeply seamed, brown skin weathered to near-leather, with the pale eyes his Cook Islands grandfather gave him sitting incongruously pale in that dark face — what his wife used to call 'sky holes.' He moves deliberately, with the careful economy of someone whose joints have logged decades of outdoor labor and who has learned to budget pain. He keeps his grey hair cropped close and wears a Ferrogate Transit maintenance vest over everything regardless of temperature because it has many pockets and he has filled them with things he considers essential: a folding tool, seeds he can no longer plant, a small lacquered image of a lake E.L.F. from a shrine that no longer exists because the land it stood on is now thirty meters underwater.\n\nGaldino's family farmed the eastern Lake Michigan shoreline for four generations until the coastal surge protocols permanently inundated their land in 2189. He has been a climate refugee for eleven years, rotating through seasonal work along GLMZ's industrial edges — dock maintenance, freight sorting, currently groundskeeping for Ferrogate Transit's maintenance infrastructure at Grindstone Shore. He does not complain about this, exactly, but he talks about soil and planting cycles the way other people talk about deceased relatives. He is patient with almost everyone and genuinely interested in young people in the way of someone who has run out of other things to invest in.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -228,12 +228,33 @@
     "Ferrogate Transit",
     "Grindstone Shore",
     "Helix Biosystems",
-    "Meridian 88",
+    "GLMZ",
     "The CEO",
     "The Shore Dogs",
     "Leather",
     "The Pure Hand",
     "The Pale Mile"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Cook Islands Polynesian / Northern European (likely Scandinavian or Germanic)",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Large-framed and broad-shouldered, softened by age but still substantial. Decades of outdoor labor have left him thick through the torso and legs, with the kind of solidity that comes from sustained hard work rather than muscle definition. His movements suggest joint wear — he settles into positions rather than shifts through them.",
+    "hair_color": "Grey",
+    "hair_style": "Cropped close to the scalp, practical and minimal",
+    "hair_length": "Short",
+    "eye_color": "Pale blue-grey, striking against his dark complexion",
+    "skin_tone": "Deep brown, sun-darkened to near-mahogany from decades of outdoor exposure",
+    "complexion": "Extensively weathered with deep facial lines radiating from eyes and mouth. Skin texture is leathery, thick, and creased — particularly across the forehead, around the eyes, and down the cheeks. His broad face has the flattened, patient expression of someone accustomed to endurance. No visible facial hair; skin appears cleanly maintained despite its age.",
+    "distinguishing_marks": [
+      "Extensive sun damage across the backs of both hands and forearms, visible as age spots and leathery texture",
+      "A pale, slightly-raised scar runs along the outer edge of his right palm where the combine accident occurred in 2187, extending partway up the wrist",
+      "Calluses across both palms and fingers, deeper on the left hand from decades of tool work"
+    ],
+    "visible_augmentations": "Prosthetic right index finger, slightly discolored (too pale, synthetic-looking plastic or composite material), with twine wrapped around the base joint for grip enhancement. The twine is worn and patched multiple times, suggesting decades of use and careful maintenance.",
+    "posture_movement": "Moves with deliberate slowness, economical and careful. He settles into positions rather than snapping to them. When standing still, his weight favors his left leg slightly. He handles objects with precision despite his age, suggesting ingrained labor discipline. His gaze is typically downward or toward the water, not defensive but contemplative.",
+    "clothing_style": "Ferrogate Transit maintenance vest (high-visibility, Tier 4 industrial utility wear) worn over simple, worn base layers. The vest has multiple pockets filled with practical items — tools, seeds in small cloth bags, a lacquered shrine item. Beneath, simple work shirts in muted colors (greys, blues, browns), sturdy work trousers, scuffed work boots. Everything is maintained but clearly old, replaced only when worn through. No decorative elements except the lacquered lake E.L.F. image he carries."
+  },
+  "image_prompt": "Weathered 68-year-old Polynesian-European man with deep brown skin and striking pale blue eyes, cropped grey hair, large broad-shouldered build softened by age. Extensive facial weathering with deep seam-like lines. Wearing bright yellow-green Ferrogate Transit maintenance vest over worn work clothes, multiple pockets filled with tools and small cloth bags. Right index finger is a worn plastic prosthetic with twine wrapped around the base. Standing at industrial lakeshore facility at dusk, Lake Michigan visible behind him. Cinematic lighting with cool shadows across face, emphasizing age and contemplation. Hyper-realistic, documentary style, weathered hands prominent, carrying weight of decades. Cyberpunk-adjacent but grounded in industrial realism. --ar 2:3 --v 6"
 }

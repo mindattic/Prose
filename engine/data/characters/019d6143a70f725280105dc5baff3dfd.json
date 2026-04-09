@@ -188,5 +188,24 @@
     "The Quiet Room",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Latin American / East African / Slavic (Orellana-Makhosetive synthesis)",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Lean and angular, with the careful musculature of someone who has maintained discipline through decades rather than intensity. No softness; each movement economical.",
+    "hair_color": "White, natural transition from dark brown",
+    "hair_style": "Close-cropped, precision cut, maintained weekly",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, unmodified",
+    "skin_tone": "Deep brown with warm undertones, even complexion",
+    "complexion": "Minimal grooming vanity — no cosmetic procedures, no age-reduction treatments. Fine lines around the eyes and mouth from thirty years of controlled expression. Skin well-maintained but not manicured. No visible scarring.",
+    "distinguishing_marks": [
+      "A thin, pale scar running approximately 2cm along her left jawline, barely visible unless light catches it directly — origin unknown, never discussed."
+    ],
+    "visible_augmentations": "None. No chrome, no optics, no subdermal indicators. Her deliberate unmodification is itself a visible statement in Tier 1-2 spaces.",
+    "posture_movement": "Spine straight, shoulders back without rigidity. Movements are minimal and purposeful — no flourish, no unconscious fidgeting. When sitting, she occupies exactly the space her body requires. When standing, she has learned to be still in ways that command attention without appearing to demand it.",
+    "clothing_style": "Expensive minimalism. Neutral palette: charcoal, black, cream, dark grey. Tailored wool trousers, linen shirts, fitted blazers from mid-tier corpo brands that signal competence without ostentation. Quality leather belt, no visible jewelry except a thin silver watch (analog, mechanical — another deliberate choice). Her single physical notebook is leather-bound, worn, carried in a canvas messenger bag. Every choice reads as either principle or long habit — the distinction is intentionally unclear."
+  },
+  "image_prompt": "Professional portrait of a 61-year-old Black woman with close-cropped white hair and deep brown skin, lean and angular build, wearing a tailored charcoal blazer and cream linen shirt, standing in a modern university office with soft natural light from floor-to-ceiling windows. Dark wood desk in background, leather-bound notebook visible. Expression neutral and measured, eyes direct but unsmiling. No augmentations visible. Minimalist, dignified, the physical presence of someone accustomed to adversarial spaces. Cyberpunk academic aesthetic, Tier 1 environment, cool color grading, professional lighting, photorealistic, shot at medium distance, contemplative mood --ar 2:3 --v 6"
 }

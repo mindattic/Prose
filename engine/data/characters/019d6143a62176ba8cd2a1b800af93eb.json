@@ -282,5 +282,27 @@
     "Pellucid Systems",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East Asian (Chinese) / West African (Yoruba)",
+    "height_cm": 178,
+    "weight_kg": 92,
+    "build": "Stocky and densely muscled, broad-shouldered with a thick core. Heavy in the way that suggests practical strength rather than aesthetic bulk — the build of someone who trains for impact and durability, not display.",
+    "hair_color": "Black with premature silver threading at the temples",
+    "hair_style": "Close-cropped, functional. Kept short enough that it requires minimal maintenance and won't obstruct vision or provide a target to grab.",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, alert and analytical",
+    "skin_tone": "Warm medium brown with subtle olive undertones from mixed heritage",
+    "complexion": "Weathered and angular — high cheekbones, squared jaw, a scar tissue webbing the right side of his chin. Skin is clear but shows the wear of someone who trains hard and heals fast. No vanity grooming — pragmatic maintenance only.",
+    "distinguishing_marks": [
+      "Jagged scar tissue across the right mandible, roughly 8cm in length, white against darker skin",
+      "Thin horizontal scar above the left eyebrow, approximately 3cm",
+      "Knuckle scarring across both hands — old, healed white lines indicating repeated impact trauma",
+      "Faint stippled burn marks across the inner left forearm, roughly 4cm diameter, consistent with a contact wound or sustained heat exposure"
+    ],
+    "visible_augmentations": "The synthetic blood is his signature — visible as a faint bioluminescent shimmer beneath the skin at pulse points (wrists, neck, temples), most noticeable in low light. The glow is a dull crimson-violet, rhythmic but subtle. No attempt to conceal it. The titanium bone lacing is subcutaneous and invisible, but the increased density and straightness of his posture, the precision of his movements, and the way he absorbs impact hints at skeletal reinforcement to trained eyes.",
+    "posture_movement": "Economical and controlled. He moves with the precision of someone who has internalized that every motion is a statement. No wasted gestures. When still, he is absolutely still — no fidgeting, no micro-expressions. When moving, each step is deliberate and weighted. His hands rest in neutral positions, ready but not threatening. He doesn't flinch.",
+    "clothing_style": "Tier 3-4 utilitarian. Black tactical pants with reinforced knee and thigh panels, worn synthetic leather bomber jacket over a fitted grey compression shirt that allows augmentation visibility without advertising it. Steel-toed boots, scuffed but maintained. No logos, no flash — all function. A single worn silver chain around his neck, visible augmentation access ports deliberately left unhidden. The overall impression is someone who dresses for work, not for appearance."
+  },
+  "image_prompt": "Portrait of a 29-year-old East Asian-African man, stocky athletic build, close-cropped black hair with silver temples, deep brown alert eyes, warm brown skin with angular features. Visible cybernetic augmentations: faint bioluminescent crimson-violet glow beneath skin at wrists and neck, pulsing subtly. Scarred knuckles, scar tissue along right jawline. Wears black tactical pants and worn grey compression shirt under scuffed synthetic leather bomber jacket. Steel-toed boots. Neutral expression, predatory composure, absolutely still posture. Standing in dim neon-lit Tier 5 tenement corridor, concrete and rust, low-angle lighting catching the bioluminescent augmentation glow. Cyberpunk noir, cinematic realism, 2226 GLMZ setting. Professional assassin, dangerous calm. --ar 2:3 --v 6"
 }

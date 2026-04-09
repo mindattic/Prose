@@ -185,5 +185,26 @@
     "Nesting Doll",
     "Ringo Corponation"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Southern African (Zulu/Xhosa) / French-Canadian or European",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and heavy-set with a softened middle — muscular frame gone generous with age, the body of someone who once labored physically and now carries the comfort of years. Still powerful in the chest and arms despite the roundness.",
+    "hair_color": "Black with extensive grey streaking throughout",
+    "hair_style": "Kept short and natural, close to the scalp, greying beard trimmed irregularly in a deliberately unkempt manner — groomed roughly every third day with intentional inconsistency",
+    "hair_length": "Short",
+    "eye_color": "Left eye: matte silver chrome replacement with a fixed circular aperture; Right eye: dark brown, warm and quick",
+    "skin_tone": "Deep brown, rich earthen complexion with warm undertones reflecting Southern African heritage",
+    "complexion": "Deeply lined face, carved by two decades of outdoor performance and sun exposure; expressive around the mouth and eyes; dark complexion emphasizes the silver chrome of the left eye replacement; weathered but maintained with care, grooming shows intention despite its roughness",
+    "distinguishing_marks": [
+      "Left eye socket contains a matte silver chrome replacement with a fixed aperture that does not track naturally — the visible seam runs along the orbital ridge",
+      "Thin scar tissue visible along the left side of the face from the industrial accident that claimed the original eye, partially obscured by beard",
+      "Hands bear calluses and old burn marks on palms and forearms — industrial legacy, now used for precise theatrical gestures"
+    ],
+    "visible_augmentations": "Left eye chrome replacement (matte silver finish, functional but noticeably non-biomimetic, with visible seams around the socket). The fixed aperture and slight tracking lag are intentional performance tools.",
+    "posture_movement": "Stands with weight distributed evenly, grounded — a performer's stance that appears casual but is precisely balanced. Moves with theatrical precision despite his bulk; hands are expressive and controlled, gestures economical but impactful. The chrome eye is used deliberately in conversation, holding it fixed on someone while the natural eye looks away to create deliberate unease. Overall bearing suggests comfort in public space, ease with attention.",
+    "clothing_style": "Layers of mismatched secondhand garments — functional, worn Tier 4-5 clothing that reads as deliberately eclectic rather than poor. Always incorporates one piece of vivid color: a patterned scarf in bold geometric designs, a lacquered button, a piece of dyed fabric. Jacket is likely faded denim or canvas, worn at the cuffs. Worn but clean — maintained with the same deliberate inconsistency as his beard. Footwear is practical, broken-in, moves quietly."
+  },
+  "image_prompt": "Cyberpunk street performer, 58-year-old Southern African-European man, broad-shouldered with age-softened frame, deep brown complexion, grey-streaked black hair kept short, weathered face carved with lines. Left eye is matte silver chrome replacement with fixed aperture and visible seams, right eye dark brown and expressive. Wearing layered secondhand clothing in earth tones with one vibrant accent — a boldly patterned scarf or lacquered button catching light. Standing grounded and confident in an open-air market setting under industrial corrugated metal canopy, warm afternoon light, surrounded by dispersed crowd. Hands are expressive, bearing old calluses and scars. Expression is mid-performance, deeply present. Gritty urban realism, shallow depth of field, warm tungsten and LED market lighting, intimate neighborhood atmosphere, documentary photography style --ar 2:3 --v 6"
 }

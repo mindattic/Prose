@@ -242,5 +242,26 @@
     "The Pale Mile",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Central African / Icelandic",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Lean and compact, muscular in the specific way of someone who moves efficiently through tight spaces for hours—low body fat, defined shoulders and forearms from years of patient handling and IV work",
+    "hair_color": "Natural deep black",
+    "hair_style": "Worn in a high puff, typically wrapped in a green cloth during work shifts; natural texture, well-maintained despite minimal grooming budget",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Pale grey with subtle iridescence—a visible artifact of misaligned retinal enhancement; unnaturally reflective in low light, creating an unsettling 'looking through you' quality",
+    "skin_tone": "Deep warm brown with subtle undertones of red—a mixed heritage complexion showing both Central and Northern ancestry",
+    "complexion": "Clean, minimal makeup, dark circles under eyes from chronic night-shift sleep deprivation; skin shows resilience rather than softness—calloused fingertips from years of clinical work, no visible dermatitis despite frequent handwashing",
+    "distinguishing_marks": [
+      "Small caduceus tattoo crossed with a red line on left shoulder, just above collar—deliberately positioned to hide under scrub neckline",
+      "Fine white scar on right palm from a needle-stick incident, approximately 2cm long",
+      "Faint stippling on inner left forearm from repeated subdermal temperature sensor calibrations"
+    ],
+    "visible_augmentations": "Pale grey eyes with slight luminescence in dim light (retinal enhancement artifact); color-changing nail polish that shifts hue based on mood—currently cycling between muted blues and greys; the subdermal temperature sensor is invisible unless she deliberately shows the small scarred injection point",
+    "posture_movement": "Economical and rapid, movements calibrated for confined spaces—never wastes motion, walks with purpose, tends to scan rooms for patients who need attention; stands with shoulders slightly forward from years of bedside work; maintains eye contact in a way that feels penetrating rather than warm due to the pale grey augmented eyes",
+    "clothing_style": "Tier 3 practical: well-worn but clean hospital scrubs in charcoal grey (neutral color, hides stains), paired with non-slip waterproof boots (Bauer brand, durable utility level); off-shift: simple layered clothing—black fitted tees, worn denim, an oversized grey hoodie with Lowgate Clinic's faded logo; no jewelry except the color-changing nail polish; a green cloth headwrap in natural cotton, worn both as functional hair management and cultural assertion"
+  },
+  "image_prompt": "Cyberpunk portrait of a 29-year-old Black woman with mixed Central African and Scandinavian heritage, lean athletic build, small frame around 158cm. Deep warm brown skin, natural black hair in a high puff wrapped in a green cloth. Striking pale grey augmented eyes with subtle iridescence and an unsettling 'seeing through you' quality—artifact of misaligned retinal enhancement. Wearing worn hospital scrubs in charcoal grey, non-slip utility boots, color-changing nail polish cycling between blue and grey. Small caduceus tattoo with red line crossed through it visible on left shoulder above collar. Exhausted but competent expression—bone-deep tiredness mixed with fierce focus. Night shift clinic setting, dim warm lighting from emergency panels, background blur of medical equipment. Mood: gritty compassion, controlled fury, dark humor. Detailed realistic portrait, shallow depth of field, cyberpunk medical aesthetic, nocturnal lighting. --ar 2:3 --v 6"
 }

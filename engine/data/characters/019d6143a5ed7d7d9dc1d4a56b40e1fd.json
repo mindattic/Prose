@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "Justice — the corporate kind, where the punishment fits the profit margin",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Freedom from augmentation debt — the interest compounds like a tumor"
     ],
     "coping_mechanisms": [
@@ -279,5 +279,26 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Turkish / Ghanaian",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "build": "Wiry and lean with compressed muscle density — the frame of someone who converts nervous energy into motion. Minimal body fat; shoulders slightly forward from years of gripping steering wheels and control surfaces.",
+    "hair_color": "Steel gray with natural dark roots showing beneath",
+    "hair_style": "Short, swept back, functional rather than styled",
+    "hair_length": "Short",
+    "eye_color": "Amber-brown, natural",
+    "skin_tone": "Warm olive with underlying golden undertones from mixed heritage",
+    "complexion": "Sharp, angular facial structure; fine lines around the eyes and mouth from decades of squinting through windscreens and maintaining focus. Skin shows the wear of stimulant cycles — slightly translucent quality suggesting cardiovascular strain. Jaw is defined but carries visible scarring from augmentation installation.",
+    "distinguishing_marks": [
+      "Jagged surgical scar running from left temple to jawline, approximately 12cm, with visible chrome integration points along the line — installation scarring that shows no attempt at concealment or cosmetic refinement",
+      "Smaller augmentation scars at both temples where neural interfaces were anchored, faint white lines barely visible under short hair",
+      "Thin, hairline scar across the back of the right hand — old injury, pre-augmentation"
+    ],
+    "visible_augmentations": "Chrome visible along the left jawline and temple where synthetic blood infusion ports are installed — a metallic sheen visible under skin, particularly noticeable under Canopy's elevated lighting. No attempt to hide the installation; scars are deliberately left raw. Subtle LED pulse visible at the temple under certain angles when circulation is heightened.",
+    "posture_movement": "Restless, economical motion — hands rarely still, fingers often drumming or making subtle adjustment gestures as if calibrating invisible controls. Sits forward in chairs. Walks with a forward-leaning gait that suggests perpetual motion. Eyes track movement compulsively — a habit from high-speed operations that never fully disengages.",
+    "clothing_style": "Tier 3-4 utilitarian: reinforced synthmesh jacket in matte charcoal, multiple deep pockets and anchor points for safety gear. Fitted black cargo pants with integrated knee pads and thigh storage. Steel-toed boots, recently maintained. No corporate branding. Wears a pair of fingerless driving gloves (worn leather, custom-fitted) almost constantly. A single piece of jewelry — a battered platinum ring on the right ring finger, pre-augmentation, kept as anchor to civilian identity."
+  },
+  "image_prompt": "Portrait of a 55-year-old nonbinary Turkish-Ghanaian wheelman in cyberpunk 2226, sharp angular features with steel-gray and dark hair swept back, amber-brown eyes with fine lines from decades of focus, wiry lean athletic build. Visible chrome augmentation scarring along left jawline and temple with metallic LED undertones, no attempt at concealment. Wearing matte charcoal reinforced synthmesh jacket and black cargo pants, fingerless driving gloves, steel-toed boots. Restless posture, forward-leaning energy, hands subtly in motion. Setting: elevated Canopy district walkway above Geartown at dusk with neon signage reflecting off chrome surfaces, cool blue and amber lighting, cyberpunk noir aesthetic, moody atmospheric haze. Hyperrealistic, character portrait, cinematic lighting, high contrast, gritty texture. --ar 2:3 --v 6"
 }

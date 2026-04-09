@@ -238,5 +238,25 @@
     "The Pale Mile",
     "Gold"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Southern African / Eastern European (Tswana / Russian-Polish)",
+    "height_cm": 183,
+    "weight_kg": 62,
+    "build": "Tall and slender with minimal body fat; angular shoulders and defined collarbones. Long-limbed and graceful, built for precision work rather than bulk. Almost deliberately ascetic in frame.",
+    "hair_color": "Natural deep black coils with cosmetic geneware gradient: currently deep violet fading to copper, responsive to mood chemistry and manually overrideable",
+    "hair_style": "Shaved head except for dramatic architectural crest of natural coils, approximately 8-10cm tall, precisely maintained",
+    "hair_length": "Shaved (with crest exception)",
+    "eye_color": "Natural brown base with gold iris mods: six-pointed geometric patterns in pale gold creating a mandala-like effect across the iris",
+    "skin_tone": "Rich, warm dark brown with subtle undertones suggesting mixed heritage; even complexion with a luminous quality from regular skincare",
+    "complexion": "High cheekbones, sharp jawline, expressive face. Skin is clear and meticulously maintained — no visible acne or blemishes. Grooming is intentional and artistic; they are conspicuously beautiful and carry themselves with full awareness of it.",
+    "distinguishing_marks": [
+      "Fine precision-work calluses on fingertips from detailed textile manipulation, barely visible but present on index through ring fingers of both hands",
+      "Faint chemical stains—dyes, reactive fabric compounds—around the cuticles and occasional spots on inner wrists from materials handling"
+    ],
+    "visible_augmentations": "Geometric gold iris mods creating six-pointed star patterns. Cosmetic geneware hair crest with active color-shift capability (currently violet-to-copper gradient). Fingertip precision enhancement implants visible as subtle metallic tracery at the base of fingernails under close inspection. No visible heavy chrome or external cybernetics.",
+    "posture_movement": "Moves with deliberate grace and economical precision—every gesture is purposeful. Stands with weight balanced, ready to shift; hands often animated when speaking about design. Posture is confident but not aggressive; they occupy space thoughtfully. There is a quality of constant creative assessment—eyes track fabrics, patterns, light reflections on surfaces.",
+    "clothing_style": "Always wears their own designs: architectural, theatrical garments with integrated LED piping, reactive smart fabrics that shift patterns based on environment or biometric response. Current uniform: asymmetrical structured jacket in a dark base color with LED thread highlights (currently amber/copper to match hair crest), fitted reactive trousers that shift from charcoal to deep blue under different lighting, custom modular shirt with embedded monitoring nodes visible as subtle geometric seams. Accessories: precision tools worn on a custom leather utility belt; statement jewelry that doubles as diagnostic tools. Tier 2-3 materials quality—expensive but not ostentatiously so. Footwear: custom modular boots with integrated grip and sensor nodes. Overall effect: high-fashion cyberpunk artisan, intentionally designed personal brand."
+  },
+  "image_prompt": "Tall, androgynous nonbinary character with rich dark brown skin and shaved head, striking dramatic crest of natural coils dyed deep violet fading to luminous copper, responsive color-shift geneware. Pale gold iris mods creating intricate six-pointed geometric patterns across eyes. Wearing architectural avant-garde garment of their own design: asymmetrical structured jacket with integrated amber LED piping, reactive smart fabric that shifts subtly with environment, precise geometric seams with embedded monitoring nodes, fitted reactive trousers, custom utility belt with precision tools. Standing in their installation-style stall at The Laceworks artisan marketplace: draped fabrics, soft indirect warm lighting, fabric samples and finished pieces visible in background. Confident, graceful posture with hands positioned expressively. Cyberpunk fashion designer aesthetic, high-end indie artisan, democratic technology maker. Cinematic lighting with warm amber and cool blue reactive fabric glows. Hyper-detailed textile work visible, mood-responsive. --ar 2:3 --v 6"
 }

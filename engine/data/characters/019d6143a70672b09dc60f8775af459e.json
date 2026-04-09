@@ -210,5 +210,26 @@
     "Needle",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Mongolian / West African / Polish",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Lean and functional, muscled through the shoulders and forearms from years of precision work; economical movement, no wasted mass",
+    "hair_color": "None",
+    "hair_style": "Shaved scalp",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown with compound optical modification — iris mod splits into multi-faceted lens pattern under magnification, soft amber-gold when active",
+    "skin_tone": "Warm golden-brown with subtle undertones reflecting mixed heritage",
+    "complexion": "Clear, well-maintained skin bearing light tool marks and minor burn scars from workshop work; clean-shaven face with defined cheekbones; expression typically focused but capable of sudden animation when discussing mechanical elegance",
+    "distinguishing_marks": [
+      "Bioluminescent circuit-diagram tattoo covering the entire scalp in rose-pink UV-reactive ink, glowing softly in low light with detailed pathways tracing from crown to nape",
+      "Faint burn scarring across the dorsal surface of the right hand between thumb and forefinger, partially obscured by retractable claw mechanism",
+      "Small precision-tool calluses on remaining digits of right hand; left forearm absent below elbow"
+    ],
+    "visible_augmentations": "Left forearm prosthetic below elbow with transparent polycarbonate case revealing full internal mechanisms — articulated joints, servo motors, pressure sensors, and hydraulic lines all visible in matte-black housing; retractable claws on right hand that extend 4cm beyond fingertips when deployed, filed to needle points with iridescent finish; iris modification visible as subtle multi-faceted lens pattern in dark eyes that shifts when compound vision mode engages",
+    "posture_movement": "Stands with shoulders slightly forward, weight balanced toward the balls of their feet — a technician's stance ready for precision work at any moment. Moves economically with minimal flourish, but handles objects with deliberate care and respect. Left arm movement compensates naturally, suggesting years of prosthetic integration. Hands are their primary communicative tool — they gesture when explaining mechanical concepts, fingers moving to trace invisible designs in the air",
+    "clothing_style": "Work-worn gray coveralls with multiple pockets all in active use (tools, components, meters), sleeves rolled to mid-forearm to display the transparent prosthetic and allow maximum dexterity; reinforced knees and elbows darkened by shop contact. Undergarments are plain functional black. Boots are steel-toed, scuffed, broken in — practical Tier 3 workwear. No jewelry or adornment beyond the scalp tattoo and augmentations. Clothing bears the faint chemical smell of workshop solvents and the visual texture of someone who has ceased to see their appearance as separate from their function"
+  },
+  "image_prompt": "Portrait of a nonbinary cyberpunk technician with warm golden-brown skin and completely shaved head covered in bioluminescent rose-pink circuit-diagram tattoos that glow softly. Dark brown eyes with subtle compound-optic iris modification. Left forearm replaced below elbow with transparent polycarbonate prosthetic limb showing visible mechanical internals, servo motors, and hydraulic lines in matte-black. Retractable needle-point claws extending from right hand. Wearing gray work coveralls with rolled sleeves, multiple active pockets, steel-toed boots. Standing in a geartown workshop with warm neon backlighting casting rose and amber tones across the scene. Focused, serious expression with hands positioned to gesture about mechanical concepts. Low-light cyberpunk setting with worn industrial aesthetic. Studio lighting emphasizing the glowing scalp tattoo and transparent prosthetic details. Professional, skilled, methodical presence. --ar 2:3 --v 6"
 }

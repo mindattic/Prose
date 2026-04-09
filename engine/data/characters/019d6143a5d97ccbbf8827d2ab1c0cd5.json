@@ -43,7 +43,7 @@
       "Cannot distinguish between caution and cowardice in themselves or others",
       "Fails to notice when their own behavior mirrors the people they despise"
     ],
-    "secret": "Chiamaka Akerlund-Mensah-Bonsu betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+    "secret": "Chiamaka Akerlund-Mensah-Bonsu betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
   },
   "speech_patterns": {
     "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
@@ -277,5 +277,26 @@
     "Slagworks Industrial",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian / Ghanaian",
+    "height_cm": 173,
+    "weight_kg": 68,
+    "build": "Wiry and lean with defined musculature from climbing work; minimal body fat; posture suggests coiled readiness rather than relaxation",
+    "hair_color": "Dark brown with premature silvering at temples",
+    "hair_style": "Close-cropped fade, maintained with precision — functional, unremarkable",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with alert, calculating expression",
+    "skin_tone": "Medium warm brown with undertones reflecting mixed heritage",
+    "complexion": "Weathered but not scarred visibly on the face; jaw clenches habitually; lines around the eyes from sustained focus work; minimal facial hair, kept clean-shaven for operational anonymity",
+    "distinguishing_marks": [
+      "Thin white scar running along the left forearm from wrist to elbow — old injury, poorly healed before augmentation",
+      "Small burn mark on right shoulder blade — chemical exposure during early contract work",
+      "Faint tattoo of a geometric pattern on the inner right wrist — personal marker, always covered by clothing or gloves"
+    ],
+    "visible_augmentations": "Chrome pain editor hardware visible at left temple and along the base of the skull — silvered neural interface nodes barely concealed by hair; gecko-grip finger implants visible as subtle textured ridge patterns along fingertips and the soles visible when barefoot; no attempt at concealment",
+    "posture_movement": "Moves with contained efficiency — no wasted motion, economical gestures. At rest, frequently fidgeting or shifting weight between feet. Eyes track exits and potential obstacles habitually. When in motion, flows through space with the precise coordination of someone who climbs vertical surfaces; quick reflexes, minimal deliberation",
+    "clothing_style": "Dual wardrobe: civilian cover wears nondescript Tier 4 streetwear — cheap synthweave jackets, faded dark cargo pants, worn polymer-soled boots from discount chains, nothing that marks him as memorable. On-contract wears tactical gear: reinforced climbing harnesses, adhesive-grip gloves, sealed utility vest with tool distribution for scene work, dark matte finishes, all function over aesthetics. No corporate branding, no gang markers, no persona."
+  },
+  "image_prompt": "A 40-year-old wiry male of West African and Scandinavian descent, alert and restless, wearing dark tactical climbing gear with visible chrome augmentations at temple and skull base, gecko-grip textured fingertips, precise fade haircut with premature gray at temples. Standing in the dim neon-soaked interior of The Lattice — a vertical slum of scaffolding and unfinished architecture — surrounded by industrial cleaning equipment and dim amber emergency lighting. Hyperrealistic, gritty cyberpunk aesthetic, cool color grading with accent of sickly green biolume, sharp focus on cybernetic details, professional fixer energy, precise and dangerous. Midjourney cyberpunk noir, 35mm film grain, dramatic side-lighting from a distant neon sign. --ar 2:3 --v 6"
 }

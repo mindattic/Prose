@@ -241,5 +241,26 @@
     "Lead",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Armenian / Eastern European Jewish (Belarusian)",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Broad-shouldered and sturdy with the working strength of someone who has lived most of her life on the Shelf. Not athletic in the performance sense, but solidly built through labor and age. Posture upright and grounded.",
+    "hair_color": "Natural black with deep blue undertones",
+    "hair_style": "Single thick braid worn over left shoulder, practical and deliberate",
+    "hair_length": "Long (past shoulders when unbraided)",
+    "eye_color": "Very dark brown, alert and appraising",
+    "skin_tone": "Olive-tan with warm undertones, even complexion despite environmental exposure",
+    "complexion": "Strong, broad nose; wide-set eyes; face marked by attentiveness rather than softness. Minimal makeup. Fine lines around eyes and mouth from decades of focused work and contemplative expression. Skin weathered slightly from Shelf conditions but well-maintained.",
+    "distinguishing_marks": [
+      "Faint linear scar on left forearm, approximately 3cm, sustained during early container-community construction work",
+      "Small burn mark on inner right wrist from a Shabbat candle accident twenty years ago, barely visible but she knows it intimately",
+      "Hands show calluses from manuscript restoration and textile work, particularly on fingertips and the ridge of her right palm"
+    ],
+    "visible_augmentations": "Left eye shows a barely perceptible shimmer when light catches it at certain angles—the reading enhancement lens, so subtle most assume it's a reflection. Wrist-mounted community-band data relay on left wrist: a flat rectangular interface in matte gray QUANTA-issue casing, integrated into a woven fabric band dyed in congregation lake-colors (deep blue and silver-white). The relay shows minor cosmetic wear.",
+    "posture_movement": "Stands with feet planted; moves with deliberate, economical motion—no wasted gesture. When sitting, she typically faces whoever she is addressing directly, shoulders squared. When in public spaces, her attention is divided, aware of the congregation's presence. Her movements are unhurried even when there is urgency; a person accustomed to maintaining calm in crisis.",
+    "clothing_style": "Practical Tier 4 workwear reflecting Shelf life and her role. Typically wears neutral-colored long-sleeved shirts (grey, tan, deep blue) over the tallit katan (fringes visible at waist and wrists). Loose, functional trousers in durable synthetic fabric, often with deep pockets. Closed-toe work boots, well-maintained. Over everything, usually a long linen-blend vest or apron in congregation colors (lake blue and silver), marked with small embroidered symbols. Her kippah is woven in the same lake-color pattern—a distinctive identifier among Shelf residents. No jewelry except a simple silver ring on her left ring finger (a commitment ring from a relationship ended by death thirty years ago). Her clothing is modest and functional; she dresses for her work and her faith, not for display."
+  },
+  "image_prompt": "A 48-year-old woman of West African, Armenian, and Eastern European heritage, medium height with broad shoulders and substantial build, standing in a shipping container interior. She has very dark brown eyes, strong-nosed, olive-tan complexion, and thick jet-black hair in a long single braid draped over her left shoulder. She wears a woven kippah in deep lake-blue and silver, a visible tallit katan under a grey linen shirt, and a long blue-and-silver embroidered vest. A matte gray data relay band is visible on her left wrist. Her expression is alert, skeptical, and deeply attentive. The setting is a modest container community space with prayer items visible on shelves, natural light from a high window casting shadows. Her hands show the calluses of a scholar and worker. Cyberpunk religious figure, Shelf community aesthetic, dignified and grounded, documentary realism style, warm practical lighting, morning light through container window, photorealistic --ar 2:3 --v 6"
 }

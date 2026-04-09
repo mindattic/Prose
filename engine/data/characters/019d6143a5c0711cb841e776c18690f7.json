@@ -59,7 +59,7 @@
     "A fee-paying student has figured out he's the anonymous study-materials seller and is threatening to report him — but wants something in exchange for silence",
     "His scholarship review is coming up and a teacher who has always disliked him is on the committee; he needs a character witness and doesn't know who to ask"
   ],
-  "narrative_function": "Window into class tension within corporate education; quest giver for academic espionage plots or scholarship-threat storylines; represents the grinding cost of upward mobility in Meridian 88.",
+  "narrative_function": "Window into class tension within corporate education; quest giver for academic espionage plots or scholarship-threat storylines; represents the grinding cost of upward mobility in GLMZ.",
   "augmentations": "Axiom-issued academic retinal overlay (school property, must be returned if he loses scholarship); no cosmetic mods — can't afford them and wouldn't risk appearing 'unserious'",
   "daily_life": "Wakes at 4:30 AM in Hough, rides two Ferrogate lines to Engelheim, attends full academic day, stays for mandatory enrichment until 19:00, tutors two fee-paying students for Φ15/hour, rides home, helps with siblings, studies until 1 AM.",
   "affiliation": "Axiom Preparatory scholarship program; Hough Reclamation family (mother, two younger siblings)",
@@ -188,5 +188,25 @@
     "Gravimetric Collapse Charge GCC-9",
     "The Pure Hand"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Congolese / Polynesian",
+    "height_cm": 188,
+    "weight_kg": 71,
+    "build": "Tall and angular, still visibly adolescent — all length with minimal mass, as if he hasn't yet filled out his frame. Shoulders broad but not yet muscled; visible ribs under school uniform when he stretches.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Close-cropped, precisely maintained — cut every two weeks at a budget clipper shop in Hough, always clean",
+    "hair_length": "Short",
+    "eye_color": "Warm brown with faint blue LED glow at iris perimeter when retinal overlay activates",
+    "skin_tone": "Warm brown with subtle reddish undertones, sun-darkened across shoulders and forearms from long commutes",
+    "complexion": "Clear, unblemished skin; the face of someone who has no money for skincare mods so practices obsessive hygiene instead. Sharp cheekbones, slightly prominent ears. Eyes carry exhaustion — dark circles present most days despite youth. Expression tends toward careful neutrality until spoken to directly.",
+    "distinguishing_marks": [
+      "Callus on inner left palm from two-year-old burn scar, barely visible now, from helping mother with reclamation work at age thirteen",
+      "Faint white scar along right collarbone, 4cm long, from a fall onto rebar during childhood in Hough — never treated properly, never became infected"
+    ],
+    "visible_augmentations": "Axiom-issue retinal overlay visible as faint metallic shimmer across both irises; thin silver line of subdermal neural interface connector at base of skull, visible when head is freshly shaved around it. Device produces soft blue flicker when processing complex information. No cosmetic chrome — augmentations are strictly functional and school-issued.",
+    "posture_movement": "Stands slightly too straight, shoulders tensed as if braced for criticism. Moves with efficient economy — no wasted motion. Hands are his anxiety tell: large hands that he clasps, fidgets with, or keeps rigidly at sides in social situations with peers. Walks quickly. Makes minimal eye contact with fee-paying students, direct eye contact with teachers. Sits at the edge of chairs rather than settling back.",
+    "clothing_style": "Axiom Preparatory uniform worn with visible care: navy blazer, pressed daily; white shirt with microscopic starch; dark trousers with re-stitched seams where hems have been professionally adjusted twice. School tie knotted precisely. Outside school: Tier 3 practical wear — gray thermal underlayers, recycled-fabric jacket with reinforced elbows, straight-leg cargo pants with multiple pockets from a discount workwear distributor. Shoes are resoled Axiom-issued dress shoes, dark leather scuffed at the heel where the original finish shows through under the cheap repair sealant. No accessories. No visible jewelry."
+  },
+  "image_prompt": "Cyberpunk portrait of a tall, angular 15-year-old boy with warm brown skin and close-cropped dark hair, standing in harsh institutional lighting. He wears an immaculate navy Axiom Preparatory school uniform with pressed white shirt and tie, slightly too-formal posture, shoulders tensed. His large hands are clasped nervously at his sides. Faint blue light glows in his eyes from a retinal overlay implant that flickers with processing power. Dark circles visible under warm brown eyes suggest chronic sleep deprivation. Background splits between corporate school corridor and working-class commuter station. Cinematic, exhausted, caught between two worlds, hyperdetailed clothing textures showing pristine uniform against worn shoe repairs, cool blue-white institutional lighting, melancholic mood, photorealistic --ar 2:3 --v 6"
 }

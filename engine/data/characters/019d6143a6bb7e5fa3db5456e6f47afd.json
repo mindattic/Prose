@@ -213,5 +213,26 @@
     "Babel",
     "The Milwaukee Core"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Hausa-Yoruba / Russian-Jewish)",
+    "height_cm": 157,
+    "weight_kg": 68,
+    "build": "Broad-shouldered and compact, with dense musculature through the chest and upper back from years of reaching, gripping, and working at pharmacy counters. Not athletic — functional and grounded, built for endurance rather than speed.",
+    "hair_color": "Stark white with warm undertones, natural or early-onset silver that she has chosen not to dye",
+    "hair_style": "Worn in intricate, tight box braids that reach mid-back, studded throughout with small brass, copper, and anodized aluminum charms that clink audibly with movement",
+    "hair_length": "Long",
+    "eye_color": "Deep brown, with a faint iridescent sheen from the optical corrective overlay (contact-lens type)",
+    "skin_tone": "Warm russet-brown with deeper undertones, even complexion with a slight weathered quality from long hours under pharmacy lighting",
+    "complexion": "Open, expressive face with a wide mouth that moves constantly — talking, tasting, thinking out loud. Minimal grooming affectation; skin is clean and practical, with faint chemical stains (iodine, mercurochrome residue) sometimes visible on her jawline or neck from compound work. No makeup.",
+    "distinguishing_marks": [
+      "Fine white scar tissue on the inner surface of both wrists from early experimentation with the gustatory modification; faded and barely visible unless closely examined.",
+      "Chemical burns (pale, almost invisible now) scattered across her knuckles and the backs of both hands from years of handling reactive compounds; marks of competence rather than accidents.",
+      "A small tattoo on her left inner forearm — a stylized pharmaceutical flask overlapped with a Hausan spiral — done in matte black ink, faded to dark gray."
+    ],
+    "visible_augmentations": "Fingertips of both hands show subtle iridescence under direct light where the chemical assay sensors sit just beneath the skin at each fingertip pad — not obviously cybernetic, but noticeably different in texture and slight color variation compared to the rest of her hands. The optical overlay is invisible except for the faint shimmer in her eyes when she's consulting her heads-up display. The gustatory modification is invisible; only the precision of her tasting reveals it.",
+    "posture_movement": "Constantly in motion — fidgeting with charms in her hair, tapping fingers on counters, shifting weight from foot to foot. When focused (tasting a compound, reading data), she goes still and intent, almost meditative. Her hands are always doing something: gesturing when she talks, which she does rapidly and without much pause for breath. She moves through her pharmacy with economical precision, knows every bottle by location and muscle memory.",
+    "clothing_style": "A well-worn lab coat, oversized and cream-colored originally but now stained and softened by countless washings, covered in deep pockets stuffed with vials, test strips, a worn tablet, and loose change. Over whatever she grabbed that morning — usually vintage print shirts (1990s-2010s earth tones, geometric patterns, or intentionally clashing color combinations that she makes work), loose-fitting and practical. Comfortable slip-on shoes, perpetually scuffed. A small silver chain around her neck, occasionally threaded with a compound sample vial when she's testing something. Tier 4 working-class aesthetic — functional, worn, deeply comfortable. No jewelry besides the braided charms and the chain."
+  },
+  "image_prompt": "Cyberpunk pharmacist, female, short and broad-shouldered, warm russet-brown skin, striking stark white hair in tight braids studded with small brass and copper charms, deep brown eyes with optical overlay shimmer, open expressive face with a mouth mid-speech, faint chemical stains on hands and wrists, oversized cream lab coat with deep pockets over mismatched earth-tone printed shirt, standing at a crowded pharmacy counter surrounded by compound vials and test strips, warm pharmaceutical lighting casting soft shadows, Geartown Tier 4 district, slightly cluttered and lived-in, cinematic depth of field, highly detailed hands with subtle iridescent fingertip augmentations, photorealistic with cyberpunk edge, intimate portrait style, captured mid-gesture and mid-thought, --ar 2:3 --v 6"
 }

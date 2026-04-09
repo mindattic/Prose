@@ -252,5 +252,27 @@
     "Stalker",
     "The Milwaukee Core"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African (Congolese) / Scandinavian (Norwegian)",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Lean and angular with minimal subcutaneous fat; the build of someone who moves with economy and precision. Long-limbed, almost rangy, with the kind of posture that suggests both discipline and chronic tension held in the shoulders.",
+    "hair_color": "Dark brown with premature silver threading at the temples",
+    "hair_style": "Pulled back in a tight, functional braid or wrapped in a surgical cap during work hours; when loose, falls past shoulder blades",
+    "hair_length": "Long",
+    "eye_color": "Dark brown with flecks of amber near the iris",
+    "skin_tone": "Medium warm brown with slight undertone of olive — the blended phenotype of their mixed heritage",
+    "complexion": "Gaunt-featured with high cheekbones and a narrow jaw; skin kept meticulous and unblemished, almost clinically clean. Fine lines around the eyes suggest either age or habitually narrow focus. Their expression defaults to professional neutrality — the trained blankness of someone who has learned to keep their face a non-response.",
+    "distinguishing_marks": [
+      "Bioluminescent subdermal streaking in soft blue-green running the length of both forearms in delicate branching patterns, visible under skin as if veins had been replaced with fiber-optic filament",
+      "Matching bioluminescent streaking across the collarbone and upper chest, visible at the neckline of loose clothing",
+      "A thin surgical scar running along the underside of the right wrist — old, healed cleanly, likely self-inflicted during training or early career",
+      "Faint contact dermatitis around the knuckles and between fingers from constant latex exposure and sterilizing agents"
+    ],
+    "visible_augmentations": "The bioluminescent subdermal streaking is immediately visible on forearms and collarbone — soft blue-green light that pulses faintly with heartbeat during dim lighting conditions. The enhanced proprioceptive feedback and neural overlay for physiological monitoring are subcutaneous and invisible; only the preternatural steadiness of their hands hints at augmentation. Their pupils may briefly dilate or focus in ways that suggest active neural processing during medical assessment.",
+    "posture_movement": "Moves with surgical precision — economical, controlled, zero wasted motion. When standing at rest, they favor balanced weight distribution, hands loose at sides with fingers naturally extended and still. During conversation, hands remain remarkably motionless unless deliberately gesturing. Their gaze is penetrating and anatomical; they look at people and visibly assess systems. They walk quietly, almost gliding, with the practiced silence of someone who has learned to enter spaces without announcing themselves.",
+    "clothing_style": "Tier 3-4 working professional. During procedures: sterile surgical scrubs in muted grays or deep blue, clinical and worn with the ease of someone who lives in them. Off-hours: practical, high-function clothing in neutral tones — charcoal, slate, deep green. Form-fitting layers that don't restrict arm movement; clothes that shed biological contamination easily. No logos, no corpo branding, nothing that declares allegiance. Wears a surgical mask around their neck at all times, slipped up instinctively when stressed. Medical-grade gloves in a pocket or tucked into a waistband. No jewelry except a simple silver ring on the right ring finger — the kind you could sterilize in seconds if needed."
+  },
+  "image_prompt": "Portrait of Saoirse Ngoy-Halvorsen, a lean androgynous figure of mixed West African and Scandinavian descent, age 38, with dark brown hair streaked silver at temples pulled back tight. Medium warm brown skin, high cheekbones, dark amber eyes with trained professional neutrality. Bioluminescent blue-green subdermal streaking visible branching across both forearms and collarbone like glowing veins beneath the skin, pulsing faintly. Wearing surgical scrubs in muted gray, mask hung loose around neck. Long surgeon's hands, impossibly still and meticulously clean, positioned with preternatural steadiness. Standing in a dim underground surgical suite lit by harsh overhead fluorescents and the soft glow of the subdermal implants. Cyberpunk medical noir, clinical lighting, depth of field focus on hands and face, photorealistic with subtle bioluminescent glow, moody and tense atmosphere, high resolution. --ar 2:3 --v 6"
 }

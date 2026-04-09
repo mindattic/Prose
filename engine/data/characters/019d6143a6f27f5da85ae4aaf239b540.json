@@ -13,7 +13,7 @@
   "age": 60,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Milwaukee and Damen",
-  "description": "Tenzin Takahashi-Boateng is average height but with a presence that fills more space than the body accounts for. At 60, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a poisoner out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nTenzin Takahashi-Boateng is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Tenzin Takahashi-Boateng is average height but with a presence that fills more space than the body accounts for. At 60, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a poisoner out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nTenzin Takahashi-Boateng is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.97,
@@ -157,7 +157,7 @@
     "strengths": [
       "multilingual — speaks 4+ languages fluently",
       "ability to remain calm under fire",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "emotional volatility under extreme stress",
@@ -276,11 +276,33 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Tibetan / Japanese / West African",
+    "height_cm": 167,
+    "weight_kg": 62,
+    "build": "Lean and compact, deceptively strong. Muscle density concentrated in core and legs from decades of augmentation integration. No wasted mass — economical, efficient.",
+    "hair_color": "Steel gray with natural black undertones",
+    "hair_style": "Pulled back in a tight, functional braid. Practical. No decoration.",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, sharp and assessing",
+    "skin_tone": "Warm medium brown with cool undertones — heritage blend visible in bone structure",
+    "complexion": "Weathered but not aged poorly. Cheekbones sharp, jawline defined. Fine lines around eyes from squinting, not smiling. Skin carries a faint chemical sheen — occupational hazard, never quite washes out.",
+    "distinguishing_marks": [
+      "Keloid scarring along both temples from neural interface installation — visible even with hair pulled back, jagged lines suggesting field work rather than clinic precision",
+      "Surgical scar along right jawline where vocal modulator was installed, partially concealed by bone structure but visible in profile",
+      "Faint chemical burns on fingertips and knuckles — discoloration, textured skin from years handling reactive compounds",
+      "Small tattoo on left inner wrist: three vertical lines in faded black ink, origin and meaning never explained"
+    ],
+    "visible_augmentations": "Hydraulic joints at both knees and elbows — the chrome is evident, brushed steel finish with visible piston housings. No attempt at discretion or cosmetic covering. The joints move with mechanical precision, sometimes a hydraulic hiss when stress loads exceed threshold. Subdermal plating visible along her forearms when sleeves ride up — gray-metal sheen beneath skin.",
+    "posture_movement": "Economical. Moves without flourish — each motion serves a purpose. Stands with weight balanced on the balls of feet, ready to shift. When seated, she maintains alertness rather than relaxation. Her movements carry a mechanical underlayer; the hydraulic joints have a subtle rhythm that marks her as augmented to anyone watching. No fidgeting. No nervous tells.",
+    "clothing_style": "Tier 3-4 transitional — pragmatic rather than aspirational. When in cover identity: neutral corporate-adjacent clothing, forgettable brands, nothing that draws attention. When working: dark fitted synthetics with reinforced seams and hidden pockets, matte finishes to avoid reflection. Favors jackets with high collars to partially conceal scarring. No jewelry except a simple analog watch — nothing wireless that could be traced or hacked. Boots with reinforced ankle support to accommodate hydraulic knee joints. Everything worn shows age; she maintains gear rather than replacing it."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 60-year-old woman of mixed Tibetan, Japanese, and West African heritage, steel-gray hair in tight braid, sharp cheekbones, dark assessing eyes. Visible keloid scarring along temples and jawline from augmentation surgery. Brushed steel hydraulic joint housings visible at elbows and knees, mechanical precision in her posture. Subdermal plating glinting beneath skin on forearms. Wearing matte black tactical synthetics, high-collared jacket, analog watch. Standing with balanced, alert posture. Gritty GLMZ cyberpunk aesthetic, urban decay background with corporate surveillance overlay, cool blue and gray lighting with accent amber, photorealistic detail, --ar 2:3 --v 6"
 }

@@ -13,7 +13,7 @@
   "age": 65,
   "status": "active",
   "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Halsted and Chicago Ave",
-  "description": "Kadiatou Hallberg-Acheampong is lean and angular, all sharp edges and visible tension. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a surveillance specialist out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented surveillance specialist in Meridian 88, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Kadiatou Hallberg-Acheampong is lean and angular, all sharp edges and visible tension. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a surveillance specialist out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented surveillance specialist in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.86,
@@ -31,7 +31,7 @@
     "core_desires": [
       "Justice — the corporate kind, where the punishment fits the profit margin",
       "Stability — a place to sleep that's the same place two nights running",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Maintains weapons obsessively — cleaning guns is meditation",
@@ -272,12 +272,34 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
     "Pellucid Systems",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and angular with visible muscle definition — wiry rather than bulky. The synthetic muscle fiber in his legs gives him a slightly asymmetrical appearance, calves slightly fuller and more defined than natural aging would permit. Minimal body fat, carved by decades of discipline and chemical augmentation.",
+    "hair_color": "Steel gray with residual black at the roots",
+    "hair_style": "Closely trimmed, military-precise",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, naturally — alert and constantly assessing",
+    "skin_tone": "Medium brown with warm undertones, weathered by age and exposure",
+    "complexion": "Deep facial lines around the eyes and mouth — the map of 65 years of tension and squinting at monitors. Jaw prominent and sharp. Skin texture rough in places where augmentation scarring has healed imperfectly.",
+    "distinguishing_marks": [
+      "Chrome circuitry visible at both temples — silver-gray neural interface ports running from jawline to hairline, installed with functional brutality and minimal cosmetic finish.",
+      "Jagged scar tissue along the right jawline where the adrenaline pump was grafted, silvery-white and slightly raised.",
+      "Thin burn marks running down the inside of both forearms — old electrical contact scars from early maintenance mistakes.",
+      "A faded tattoo on his left shoulder blade: a runner's marker from the Shelf, now barely visible under sun damage."
+    ],
+    "visible_augmentations": "Chrome neural interface ports at temples and jawline are immediately obvious — deliberate, unapologetic exposure. The synthetic muscle fiber in his legs creates a subtle visual discontinuity in his calf definition and bulk. His movements are too fast, too precise for his age — the wired reflexes betray their presence in micro-adjustments and reaction speed.",
+    "posture_movement": "Stands with weight balanced, always ready to move. His gait is economical and quick, though he favors flat ground and visibly tenses on stairs — a tell that his leg augmentations don't handle inclines well. His head moves in small, precise rotations, scanning. Even at rest, his hands are never still — fidgeting with a contract chip, a surveillance scanner, something. A man wound too tight.",
+    "clothing_style": "Tier 3-4 functional wear with no pretense of style. Dark gray or black reinforced cargo pants with multiple pockets and a faint sheen of wear-resistant coating. A faded black synth-cotton shirt, sleeves pushed to the elbows to expose the augmentation scars — a statement of acceptance. Over it, a worn grey synthetic jacket with internal cable management and reinforced pockets for surveillance gear. Utilitarian boots, scuffed and re-soled multiple times. No jewelry, no chrome accents. Everything worn, everything practical, nothing decorative."
+  },
+  "image_prompt": "Cyberpunk character portrait, 65-year-old lean angular man with West African and Scandinavian heritage, steel-gray hair cut military-short, dark brown eyes intense and assessing, medium brown weathered skin with deep facial lines. Visible chrome neural interface ports running from jawline to temples in silver-gray, jagged scarring on right jaw. Faded burn marks on forearms. Sleeveless or rolled-up sleeves revealing augmentation scars. Dark gray reinforced cargo pants, worn black synth-cotton shirt, gray weathered synthetic jacket. Standing alert with weight balanced, coiled tension in posture. Crucible Square market background, neon vendor signs, afternoon light. High contrast lighting emphasizing chrome details and scar tissue. Cold color palette with accent neon. Hyper-detailed cyberpunk realism, photographic quality --ar 2:3 --v 6"
 }

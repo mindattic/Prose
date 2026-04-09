@@ -248,5 +248,25 @@
     "Vesper",
     "Glass"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Caucasian Central Asian (Nigerian / Russian)",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Tall and lean, almost ascetic — the build of someone who forgets to eat during focus work. Long limbs, narrow shoulders, minimal musculature. Posture dominated by a habitual forward hunch from years in low-ceilinged laboratory spaces.",
+    "hair_color": "Natural black with silver-gray threading at temples and sideburns",
+    "hair_style": "Close-cropped, neatly maintained, precisely edged",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, obscured behind amber-tinted optical glass",
+    "skin_tone": "Very dark brown, almost black — rich and uniform",
+    "complexion": "Clean-shaven, meticulous grooming despite underground living. Skin shows minimal weathering; fine lines around eyes from concentration squinting. Hands show callus-work from glass beakers and precision pipetting — palms and inner fingers slightly rougher than the rest of his frame.",
+    "distinguishing_marks": [
+      "Fingertip pads emit faint violet bioluminescence during fine motor tasks or in total darkness — a geneware modification visible as thin luminous halos around thumb through ring finger when active.",
+      "Thin surgical scar along inside of left wrist, pale and old, approximately 4cm in length — legacy of early pharmaceutical training accident."
+    ],
+    "visible_augmentations": "Bioluminescent fingertip geneware (faint violet glow during laboratory work). Internal atmospheric filter modification (nose/throat) not externally visible except as slightly unusual nasal structure. Amber-tinted eyeglasses are non-augmented optical wear.",
+    "posture_movement": "Habitual forward hunch from low-ceiling laboratory work. Movements are slow, deliberate, economical — nothing wasted. Hands remain still when thinking, fingers precisely arced when working. Walks with slight downward head inclination. Overall carriage suggests sustained focus and nervous energy held in abeyance.",
+    "clothing_style": "Tier 4 working-class practical with exceptional maintenance discipline. Typically wears dark denim trousers (pressed), dark fitted shirts or lab coats in good condition, steel-toed safety shoes (practical for laboratory environment). No logos or status markers. Everything is clean, wrinkle-free, clearly ironed regularly. A cardigan or unadorned jacket for transit. No jewelry except a simple metal watch (non-augmented). Clothing choices suggest a man who maintains standards of order as a form of personal sovereignty."
+  },
+  "image_prompt": "Character portrait of a tall, lean 38-year-old man with very dark skin, close-cropped black hair graying at temples, wearing round amber-tinted optical glasses. African-Russian heritage, meticulous appearance. Slight forward hunch characteristic of someone accustomed to low ceilings. Hands positioned gracefully, fingertips glowing faint violet bioluminescence from active geneware. Wearing a dark pressed shirt and cardigan, impeccably maintained despite underground laboratory setting. Fine-featured, thoughtful expression, eyes obscured by amber glass. Cyberpunk scientist aesthetic, pharmaceutical technician precision, Tier 4 working-class dignity. Moody lighting with violet bioluminescent accent, shadows emphasizing the habitual hunch. Photorealistic, documentary-style portraiture with subtle sci-fi elements. --ar 2:3 --v 6"
 }

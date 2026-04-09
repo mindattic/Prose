@@ -13,7 +13,7 @@
   "age": 35,
   "status": "active",
   "location": "The Narrows — cramped residential corridors between megastructures, near Milwaukee and North Ave",
-  "description": "Hadiya Karlsen-Sow are slight and easy to overlook, which is exactly the point. At 35, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and they make no effort to hide it.\n\nThey arrived in Meridian 88 six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a courier out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nHadiya Karlsen-Sow operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Hadiya Karlsen-Sow are slight and easy to overlook, which is exactly the point. At 35, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a courier out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nHadiya Karlsen-Sow operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.24,
@@ -43,7 +43,7 @@
       "Overestimates their own abilities in situations outside their specialty",
       "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
     ],
-    "secret": "Hadiya Karlsen-Sow betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+    "secret": "Hadiya Karlsen-Sow betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
   },
   "speech_patterns": {
     "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
@@ -155,7 +155,7 @@
       "loyalty_break": 7
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "pain tolerance beyond normal limits",
       "expert marksman"
     ],
@@ -277,10 +277,32 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "Meridian 88",
+    "GLMZ",
     "The Nearfield",
     "Ringo DV-4 'Courier'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and wiry with functional muscle density concentrated in shoulders and core — built for endurance and rapid movement rather than bulk. The titanium bone lacing adds structural rigidity without visible mass.",
+    "hair_color": "Dark brown with ash-gray streaking at temples",
+    "hair_style": "Pulled back in a tight, utilitarian braid or topknot",
+    "hair_length": "Medium",
+    "eye_color": "Amber-brown, alert and calculating",
+    "skin_tone": "Warm medium brown with Scandinavian undertones — sun-weathered from years of outdoor courier work",
+    "complexion": "High cheekbones, angular jaw, minimal scarring on face despite occupational hazards. Skin shows the wear of someone who prioritizes function over grooming — clean but not pampered. A thin scar traces the right temple, barely visible unless light catches it directly.",
+    "distinguishing_marks": [
+      "Surgical scar along the right collarbone where hydraulic elbow joint was installed — thin white line, roughly 8cm",
+      "Impact bruising across knuckles and forearms in various stages of healing — occupational hazard",
+      "Faint tattoo on inner left wrist: a circuit pattern in matte black ink, minimalist design, approximately 3cm across",
+      "Old burn scar across left shoulder blade, roughly 5cm diameter — circular, predates GLMZ arrival"
+    ],
+    "visible_augmentations": "Chrome hydraulic joints visible at elbows and knees — polished steel with functional pistons, deliberately exposed rather than concealed. The chrome bears micro-scratches and toolmarks suggesting field maintenance. Bone lacing is not externally visible but creates subtle geometric definition under skin, particularly across forearms and shins when tensed.",
+    "posture_movement": "Moves with economic precision — no wasted motion. Stance is naturally grounded and balanced, weight distributed for quick directional shifts. When at rest, maintains situational awareness; eyes track movement peripherally. Transitions between 'civilian mode' and 'operational mode' are subtle but complete — the former involving deliberate slouch and disengagement, the latter a tensile readiness that radiates threat.",
+    "clothing_style": "Tier 3-4 practical hybrid: reinforced cargo pants in charcoal with articulated knee panels, form-fitting compression shirt under a weathered synthetic leather jacket with asymmetric pockets. Low-profile runner boots with grip soles and ankle support. Minimalist accessories — a wrist-mounted data pad with cracked screen protector, a pair of tactical gloves usually tucked in back pocket. No branding or corporate affiliation markers. Clothing shows regular maintenance but deliberate lack of newness — designed for function and anonymity, not status."
+  },
+  "image_prompt": "Cyberpunk character portrait of a lean nonbinary courier, age 35, warm medium-brown skin with Scandinavian undertones, amber-brown eyes, dark brown hair with gray streaking pulled back tight. Visible polished chrome hydraulic joints at exposed elbows and knees, angular face with high cheekbones and surgical scar along collarbone. Wearing reinforced charcoal cargo pants, form-fitting compression shirt, weathered synthetic leather jacket, tactical boots. Standing in three-quarter pose with weight balanced for movement, hands visible showing impact bruising and circuit tattoo on wrist. Narrow corridor setting with industrial megastructure shadows, cool LED neon lighting from signage, slight depth of field. Expression alert and calculating, caught between civilian and operational mindset. Gritty, tactile cyberpunk aesthetic, photorealistic with accent lighting on chrome augmentations, moody Milwaukee-industrial background, shot at eye level --ar 2:3 --v 6"
 }

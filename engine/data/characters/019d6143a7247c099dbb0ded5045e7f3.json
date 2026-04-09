@@ -249,5 +249,27 @@
     "Tessera Corponation",
     "Nightlight"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Georgian / Polynesian",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and substantial, muscular through deliberate work rather than training — strong core and forearms from thirty years of careful handling in tight spaces, carrying nutrient loads, and tending cultivation racks. Not heavy, but densely built.",
+    "hair_color": "Steel gray with dark undertones",
+    "hair_style": "Kept in tight, practical braids pinned close to the scalp; functional, no ornamentation",
+    "hair_length": "Medium",
+    "eye_color": "Deep brown, slightly yellowed at the whites from decades in low-light conditions",
+    "skin_tone": "Deep brown with warm undertones, slightly desiccated from underground humidity cycles",
+    "complexion": "Weathered but clear; minimal cosmetic care; fine lines around the eyes from constant low-light focus; slight age spots on temples. Her face carries the still attention of someone who listens more than speaks.",
+    "distinguishing_marks": [
+      "Faint bioluminescent patches across both forearms in abstract, organic patterns — blue-green photobacterial symbiote that glows softly in darkness, visible at night like living tattoos.",
+      "Similar bioluminescent patches along both sides of the neck, fading toward the collarbone.",
+      "Deep scar running three inches along the outer right forearm — old industrial burn from early years as a food technician, now partially obscured by the bioluminescent growth.",
+      "Small, callused burn mark on the inside of her right wrist — deliberate self-marking from her inoculation thirty years ago, now barely visible."
+    ],
+    "visible_augmentations": "Faint bioluminescent dermal symbiosis (forearms and neck); barely-visible nasal respiratory filter implant (small mesh intake ports flanking the septum, only noticeable in direct light). No obvious chrome or external cybernetics — her augmentations are subtle and biological.",
+    "posture_movement": "Moves with deliberate economy in confined spaces — no wasted motion, minimal jarring. Her gait is slow and careful even when moving quickly, a learned habit. When still, she has an almost meditative posture: shoulders relaxed, hands usually occupied (checking something, touching something, listening through her fingertips). In her gardens, she moves like she's underwater.",
+    "clothing_style": "Tier 5 utilitarian: layered linen and moisture-wicking synth fabrics in muted grays, deep greens, and blacks — practical for temperature fluctuation and fungal spore exposure. Loose fitting to allow movement and air circulation. A long sleeveless vest (no collar, open front) worn over a long-sleeved undershirt — both enable visibility and access to her bioluminescent patches. Worn leather apron with deep pockets and reinforced seams, darkened by thirty years of work. Simple canvas slip-on shoes with good grip. No jewelry except a single thin bracelet of braided plant fiber. Clothes are clean but well-mended, showing careful maintenance rather than replacement."
+  },
+  "image_prompt": "Portrait of a 58-year-old African-Georgian woman with deep brown skin, standing in a dimly lit underground fungal garden chamber, her forearms and neck softly glowing with faint bioluminescent blue-green light from cultivated photobacteria symbiote, steel-gray braids close to her scalp, weathered face with calm, listening eyes, wearing loose layered linen and synth fabrics in grays and deep greens, sleeveless utility vest revealing the glowing bioluminescent patches, hands relaxed, surrounded by cultivation racks and soft blue-green fungal glow, hauntingly beautiful and otherworldly, photorealistic, moody atmospheric lighting, depth of field, underground bio-chamber aesthetic, cyberpunk botanical scifi, --ar 2:3 --v 6"
 }

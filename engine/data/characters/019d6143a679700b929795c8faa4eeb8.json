@@ -42,7 +42,7 @@
     "secret": "Fifteen years ago she repaired a Tessera courier bag and found a data chip stitched into the lining. She didn't report it. She still has it, sewn into the base of her prayer altar to Needle-and-Thread, and she doesn't know what's on it and is afraid to look."
   },
   "speech_patterns": {
-    "vocabulary": "Practical and precise, uses textile metaphors without realizing it, slips between a Lagosian-inflected creole and standard Meridian 88 common depending on stress",
+    "vocabulary": "Practical and precise, uses textile metaphors without realizing it, slips between a Lagosian-inflected creole and standard GLMZ common depending on stress",
     "cadence": "Measured and unhurried, lets silences do work",
     "verbal_tics": [
       "'That'll fray'",
@@ -182,5 +182,27 @@
     "Needle",
     "Rust"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Polish",
+    "height_cm": 168,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and solid, with the dense musculature of someone who has spent four decades at manual work. Not heavy, but substantial — her frame suggests strength rather than softness.",
+    "hair_color": "Dark brown with silver-white threading throughout",
+    "hair_style": "Coiled and wrapped daily in a rust-orange cotton headwrap, reties habitually throughout the day",
+    "hair_length": "Medium (when unwrapped)",
+    "eye_color": "Deep brown, slightly clouded in the left by scratched bifocal insert lens",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Faint depigmentation patches across the jawline and forearms — vitiligo, long accepted and unmasked. Skin shows sun-exposure and years of close detail work. Minimal makeup. Expression typically neutral or quietly amused.",
+    "distinguishing_marks": [
+      "Depigmentation patches across both forearms in irregular mottled pattern, untreathed",
+      "Depigmentation patches along the left and right jawline in faint asymmetrical patches",
+      "Fine calluses across all finger pads and the heel of both palms from decades of needle and thread work",
+      "Faint scars on knuckles from textile needle punctures and burns from steam press contact"
+    ],
+    "visible_augmentations": "Bifocal optical inserts visible as a faint amber tint in both eyes, with a noticeable scratch and slight cloudiness in the left lens. Plain medical-grade finger braces on both hands — unadorned gray polymer, fitted over the first and second knuckles, worn without vanity.",
+    "posture_movement": "Upright, grounded posture with weight distributed evenly. Moves with economical precision — no wasted motion. Hands are always slightly active, unconsciously threading or arranging even when idle. Walks with steady pace regardless of terrain or weather.",
+    "clothing_style": "Tier 4 practical wear. Multiple layered cotton and linen garments in earthy tones — rust, ochre, charcoal — chosen for durability and repairability rather than trend. Apron with deep pockets always worn over her dress. Worn leather work boots, scuffed and resoled multiple times. The rust-orange headwrap is her daily constant. Clothes smell faintly of machine oil and dried marigold."
+  },
+  "image_prompt": "A 58-year-old West African-Polish woman with deep umber skin and faint vitiligo patches across her jawline and forearms, silver-threaded dark brown hair wrapped in a rust-orange cotton headwrap. She wears bifocal optical inserts with a scratched left lens and plain gray medical-grade finger braces on both hands. Broad-shouldered, solid build, deep brown eyes. Dressed in layered earthy-toned cotton and linen — rust, ochre, charcoal — with a worn leather work apron. Standing in morning light at a textile vendor stall, hands mid-motion arranging fabric or threading needle. Cyberpunk realism, Tier 4 working-class setting, cinematic lighting, warm golden hour, shallow depth of field focusing on her weathered hands and face. Burnished Market atmosphere, industrial backdrop. --ar 2:3 --v 6"
 }

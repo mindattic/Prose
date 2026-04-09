@@ -192,5 +192,26 @@
     "Null",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Māori / Czech / Igbo",
+    "height_cm": 174,
+    "weight_kg": 62,
+    "build": "Lean and angular, all restless energy with minimal fat. Defined shoulders and forearms from years of manual labor at the press, but a slight hollow to his chest suggesting erratic eating and chronic sleep deprivation.",
+    "hair_color": "Naturally dark brown, artificially maintained static-white",
+    "hair_style": "Short locs, uneven length (self-maintained), always slightly disheveled",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, natural",
+    "skin_tone": "Warm medium brown with warm undertones — heritage blend of Māori and sub-Saharan ancestry",
+    "complexion": "Sharp cheekbones, slightly gaunt face, perpetual dark circles under eyes. Skin shows minor stress acne along the jawline and forehead. Ink stains on cuticles and the webbing between thumb and forefinger, some permanent despite repeated washing.",
+    "distinguishing_marks": [
+      "Bioluminescent subdermal strip running from wrist to mid-forearm on left arm, emitting blue-white light when agitated (pulses visibly, occasionally flickers erratically due to degradation)",
+      "Small burn scar on right inner wrist from a printing press accident at age 23",
+      "Faint chemical burns on the tips of three fingers (left hand) from homemade geneware pigment paste preparation"
+    ],
+    "visible_augmentations": "Bioluminescent strip on left forearm (glitchy, visible pulsing). Faint scarring around the left temple where the neural mesh was implanted (gray-market work, slightly uneven healing). Occasional eye-flicker when retinal overlay activates during document review — barely perceptible but present to those watching closely.",
+    "posture_movement": "Perpetually tense, weight distributed unevenly as if ready to move at any moment. Fidgets constantly — taps fingers in rhythm, shifts weight from foot to foot, rarely sits still for more than two minutes. Gestures are sharp and emphatic. Walks quickly, often slightly ahead of conversation partners.",
+    "clothing_style": "Tier 4-5 working class with deliberate anti-corporate aesthetic. Habitually wears ink-splattered vintage cotton button-ups (thrifted from pre-2150 stock when possible as a political statement), cargo pants with oversized pockets stuffed with encrypted data chips and worn paper notebooks, black steel-toed boots resoled multiple times. Ragged synthetic bomber jacket with a hand-stitched Null Signal logo on the back. Never wears smartfiber or anything with corporate branding. Accessorizes with a faraday-lined messenger bag (contents: backup drives, physical photographs, encrypted burner phones, and loose papers)."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 27-year-old mixed-heritage activist — Māori-Czech-Igbo features with warm brown skin, angular sharp cheekbones, deep-set dark eyes. Short white locs, self-maintained and slightly uneven. Perpetually tired expression. Left forearm displays a bioluminescent blue-white subdermal strip pulsing with nervous energy. Thin wiry build, ink-stained fingers. Wearing a tattered vintage cotton shirt splattered with black ink, oversized cargo pants, black steel-toed boots. Ragged synthetic bomber jacket with hand-stitched radical press logo. Intense, restless body language, slight forward lean. Gritty warehouse printing shop setting in background — exposed wiring, paper everywhere, flickering fluorescent lights. Moody underground press aesthetic, high contrast shadows, cool blue and warm tungsten lighting, grain and chromatic aberration. Photorealistic with grungy texture. --ar 2:3 --v 6"
 }

@@ -14,7 +14,7 @@
   "age": 31,
   "status": "active",
   "location": "The Meridian Core (official residence), The Circuit (operational base), near LaSalle and Jackson",
-  "description": "Bastian Czernowitz-Olade is the kind of person whose appearance is engineered to be forgotten: medium height, medium build, features that are generically pleasant in a way that resists description. His Silesian-Nigerian heritage gives him warm brown skin and light gray-green eyes that seem slightly wrong on his face—memorable only in the moment you're looking directly at them. He keeps his hair short and neat, dresses in the Meridian Core's standard mid-tier professional palette (charcoal, slate, the occasional muted teal), and moves through spaces like someone who has rehearsed being unremarkable. His augmentations are all internal or invisible by design.\n\nOfficially, Bastian is a Level 4 Infrastructure Compliance Auditor for Heliostat Consolidated, one of the Spire's subsidiary logistics and data architecture firms. His job is to find vulnerabilities in Heliostat's own systems—and, on contract, in the systems of competitors. He is exceptionally good at this. He has three corporate commendations, a clean performance file, and a social profile calibrated to read as ambitious-but-stable. His apartment in the Meridian Core is tidy and impersonal in the way of someone who spends as little time there as possible.\n\nIn The Circuit, in a rented workspace registered to a shell persona, Bastian is Null-Seven: one of the most methodical infrastructure saboteurs operating in Meridian 88. He does not work for ideology in the pure sense—he works from a specific, contained grievance that has grown tendrils. Three years ago, a Heliostat data architecture decision he flagged and documented was overridden by management. Six months later, the resulting failure cascaded into a residential power grid collapse in The Shelf that killed eleven people. The incident was classified as 'infrastructure fatigue.' His report was buried. He has been quietly, surgically dismantling Heliostat's redundancy systems ever since—not to destroy the company, but to force an audit so complete that the buried report will surface. He does not let himself examine whether this plan is rational.",
+  "description": "Bastian Czernowitz-Olade is the kind of person whose appearance is engineered to be forgotten: medium height, medium build, features that are generically pleasant in a way that resists description. His Silesian-Nigerian heritage gives him warm brown skin and light gray-green eyes that seem slightly wrong on his face—memorable only in the moment you're looking directly at them. He keeps his hair short and neat, dresses in the Meridian Core's standard mid-tier professional palette (charcoal, slate, the occasional muted teal), and moves through spaces like someone who has rehearsed being unremarkable. His augmentations are all internal or invisible by design.\n\nOfficially, Bastian is a Level 4 Infrastructure Compliance Auditor for Heliostat Consolidated, one of the Spire's subsidiary logistics and data architecture firms. His job is to find vulnerabilities in Heliostat's own systems—and, on contract, in the systems of competitors. He is exceptionally good at this. He has three corporate commendations, a clean performance file, and a social profile calibrated to read as ambitious-but-stable. His apartment in the Meridian Core is tidy and impersonal in the way of someone who spends as little time there as possible.\n\nIn The Circuit, in a rented workspace registered to a shell persona, Bastian is Null-Seven: one of the most methodical infrastructure saboteurs operating in GLMZ. He does not work for ideology in the pure sense—he works from a specific, contained grievance that has grown tendrils. Three years ago, a Heliostat data architecture decision he flagged and documented was overridden by management. Six months later, the resulting failure cascaded into a residential power grid collapse in The Shelf that killed eleven people. The incident was classified as 'infrastructure fatigue.' His report was buried. He has been quietly, surgically dismantling Heliostat's redundancy systems ever since—not to destroy the company, but to force an audit so complete that the buried report will surface. He does not let himself examine whether this plan is rational.",
   "psychology": {
     "facet_weights": {
       "wound": 0.65,
@@ -250,7 +250,7 @@
     "The Meridian Core",
     "Meridian Core",
     "The Circuit",
-    "Meridian 88",
+    "GLMZ",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Ouroboros Energy Power Distribution Trunk Network",
     "The Spire",
@@ -260,5 +260,24 @@
     "Slagworks Industrial",
     "Null"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Silesian (Central European) / Nigerian (West African)",
+    "height_cm": 174,
+    "weight_kg": 72,
+    "build": "Medium, lean but not wiry—economical muscle distribution from deliberate fitness maintenance rather than athletic pursuit. Posture is neither relaxed nor rigid, calibrated to occupy minimal psychological space.",
+    "hair_color": "Dark brown, naturally straight",
+    "hair_style": "Neatly trimmed, geometric precision. No styling product, no texture. Parted slightly off-center.",
+    "hair_length": "Short",
+    "eye_color": "Light gray-green with slight amber undertone—unusual enough to create momentary cognitive friction, then dissolve from memory",
+    "skin_tone": "Warm brown with subtle olive undertone from mixed heritage—neither distinctly warm nor cool, resistant to categorical description",
+    "complexion": "Clean-shaven, smooth skin with no visible scarring or blemishing. Minimal sun exposure suggests tier-appropriate indoor lifestyle. Features are pleasant and symmetrical in a way that discourages retention—high cheekbones, straight nose, unmarked jawline. Appears five years younger or older depending on lighting angle.",
+    "distinguishing_marks": [
+      "No visible scars, tattoos, or birthmarks—deliberately maintained absence functions as its own mark in the augmented underworld"
+    ],
+    "visible_augmentations": "None visible. The ocular HUD implant is indistinguishable from standard corporate-issue optics during casual observation. All augmentations (neural lace, signal dampener) are completely subcutaneous.",
+    "posture_movement": "Moves with economic efficiency—no wasted gesture, no expansive body language. Walks at consistent pace, neither hurried nor leisurely. Sits with spine slightly forward, ready to stand. Eyes track surroundings in predictable patterns. Speaks in measured tone with minimal vocal inflection. Handshake is firm but brief. Overall impression: someone whose presence is a checkbox rather than a presence.",
+    "clothing_style": "Meridian Core Tier 2-3 professional: charcoal wool trousers, slate technical shirts in breathable microfiber, muted teal or gray blazers from mid-market corpo brands (Zeiss-Luxor, Nakamura Systems). Watches a stainless steel minimalist chronometer (Braun-licensed). Shoes are black leather composite, maintained to utilitarian polish. Bag is a slim messenger in technical fabric—carries encrypted tablet, earpiece, secondary comms device, nothing personal. The effect is of someone assembling a costume from a corporate template."
+  },
+  "image_prompt": "Portrait of a 31-year-old East Central European and Nigerian-heritage man, medium height and lean build, sitting in a minimalist corporate office under cool LED lighting. Warm brown skin with olive undertone, short neat dark brown hair, unusually light gray-green eyes that feel slightly displaced on his face. Wearing charcoal wool and muted teal corporate blazer, stainless steel minimalist watch. Expression is neutral and unremarkable, gaze slightly unfocused as if processing data streams. Harsh overhead lighting casts subtle shadows. Cyberpunk aesthetic, corporate tier 2-3, meticulous grooming, geometric precision. High detail, professional headshot quality, muted color palette with accent of teal. --ar 2:3 --v 6"
 }

@@ -240,5 +240,27 @@
     "Elena Vasquez-9",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Polish / Mongolian",
+    "height_cm": 183,
+    "weight_kg": 98,
+    "build": "Broad-shouldered and thick through the torso, soft belly accumulated over decades of sedentary work punctuated by heavy lifting, legs still sturdy but showing age. Overall impression of a man who was once muscular and has allowed gravity and time to redistribute the mass.",
+    "hair_color": "Grey",
+    "hair_style": "Close-cropped, maintained with indifference, slightly longer at the nape",
+    "hair_length": "Short",
+    "eye_color": "Pale grey-blue, often appearing silver-white in harsh light or under Geartown's industrial illumination",
+    "skin_tone": "Weathered tan with underlying pale European undertone, heavily sun-damaged",
+    "complexion": "Deep creasing around eyes and mouth from squinting in industrial glare for four decades. Close-cropped grey beard worn to approximately 1cm length, kept functional rather than aesthetic. Patches of chemical scarring on cheeks and jawline — discolored, slightly raised tissue from caustic material exposure. Age spots and sun damage across forehead and temples. Perpetually lined expression.",
+    "distinguishing_marks": [
+      "Chemical burn scarring across left cheekbone and upper jaw, pale white tissue with slight hyperpigmentation at edges",
+      "Missing the distal joint of right ring finger, clean amputation approximately 20 years old, callused knuckle",
+      "Dark grease stain across inner left forearm that has become partially permanent — embedded in skin creases",
+      "Small burn scar on right wrist, circular, approximately 2cm diameter, partially obscured by reinforced knuckle plating"
+    ],
+    "visible_augmentations": "Bone-conduction audio implant visible behind right ear as a small raised nodule with faint metallic sheen and occasional blue status LED. Reinforced knuckle plating on right hand: grey-market titanium-composite knuckle guards bolted directly over proximal phalanges, showing patina and toolmarks, functional and well-worn rather than menacing. The plating is scarred and dented from decades of use.",
+    "posture_movement": "Stands with weight slightly favoring left leg. Moves deliberately, economically, each motion purposeful. Shoulders rounded slightly forward from decades of bending over salvage. Hands are in constant micro-motion when stationary — fingers touching beard, adjusting sleeve, arranging nearby objects. When walking, moves with a slight limp on damp mornings (left knee). Gestures are abrupt and emphatic when speaking.",
+    "clothing_style": "Tier 5 / working-class utilitarian. Rotates three canvas work shirts — heavily worn, multiple visible repairs, pockets reinforced with duct tape and leather patches. Shirts stained with machine oil, rust particulate, and mineral residue to the point that they have developed an iridescent sheen from layered compounds. Worn grey canvas work pants with tool belt, leather cuffed at ankles. Heavy steel-toed work boots, resoled multiple times, laces replaced with paracord. Over-shirt in winter: unmarked weathered canvas coat, sleeves rolled habitually. No unnecessary accessories. Gloves when handling sharp salvage: fingerless leather work gloves with reinforced palm."
+  },
+  "image_prompt": "a weathered 67-year-old man with close-cropped grey hair and pale silver-blue eyes, standing in an industrial scrapyard at dawn, Geartown cyberpunk aesthetic, heavy build gone soft at belly but thick shoulders, grey beard touched habitually, face deeply lined and scarred by chemical burns, missing final joint of ring finger on right hand, grey-market reinforced knuckle plating visible on right knuckles, bone-conduction audio implant nodule visible behind right ear with faint LED, wearing heavily stained and patched canvas work shirt with iridescent mineral residue sheen and worn grey canvas pants, steel-toed work boots, surrounded by towering stacks of rusted machinery and salvage, harsh industrial lighting cutting across abandoned press machinery in background, atmospheric haze of particulate matter, gritty realism, weathered hands gesturing, determined expression, moody overcast light, cinematic depth, --ar 2:3 --v 6"
 }

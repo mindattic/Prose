@@ -13,7 +13,7 @@
   "age": 24,
   "status": "active",
   "location": "Irkalla (sleeps rough; known to haunt the edges of Grand Crossing Gate), near Halsted and Division",
-  "description": "Zinnia exists in Meridian 88 the way a smudge exists on glass — present, visible up close, invisible to systems. They are slight and quick, with a narrow face, very dark skin, and hair grown out in a dense, unpruned natural that they've threaded through with copper wire salvaged from old conduit — not for aesthetics exactly, more the way a bird lines a nest. Their eyes are a striking honey-amber with natural starburst patterning in the irises, one of the few things about them that seems to invite attention. They move in a permanent half-crouch, not from fear exactly but from a lifetime habit of occupying less space than they're entitled to. They wear whatever fits and whatever doesn't show stains and have no particular relationship with color or style.\n\nZinnia was born to parents who were themselves Q-zeros — Nigerien refugees who crossed the corponation registration wall and chose invisibility over the terms of citizenship. They have never had a digital footprint, a Quanta account, a biometric record, or a registered name. Legally they do not exist. In practice they are extraordinarily good at existing anyway, navigating the city by a combination of spatial memory, social mimicry, and a preternatural ability to read who in any given space has power and who doesn't. They are not ideological about their status — being Q-zero isn't a choice or a statement, it's just what they are. They are however deeply pragmatic, deeply suspicious of anyone who seems too interested in them, and quietly desperate for something they can't name.",
+  "description": "Zinnia exists in GLMZ the way a smudge exists on glass — present, visible up close, invisible to systems. They are slight and quick, with a narrow face, very dark skin, and hair grown out in a dense, unpruned natural that they've threaded through with copper wire salvaged from old conduit — not for aesthetics exactly, more the way a bird lines a nest. Their eyes are a striking honey-amber with natural starburst patterning in the irises, one of the few things about them that seems to invite attention. They move in a permanent half-crouch, not from fear exactly but from a lifetime habit of occupying less space than they're entitled to. They wear whatever fits and whatever doesn't show stains and have no particular relationship with color or style.\n\nZinnia was born to parents who were themselves Q-zeros — Nigerien refugees who crossed the corponation registration wall and chose invisibility over the terms of citizenship. They have never had a digital footprint, a Quanta account, a biometric record, or a registered name. Legally they do not exist. In practice they are extraordinarily good at existing anyway, navigating the city by a combination of spatial memory, social mimicry, and a preternatural ability to read who in any given space has power and who doesn't. They are not ideological about their status — being Q-zero isn't a choice or a statement, it's just what they are. They are however deeply pragmatic, deeply suspicious of anyone who seems too interested in them, and quietly desperate for something they can't name.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -209,7 +209,7 @@
   "related_entities": [
     "Grand Crossing Gate",
     "Escanaba Gateway",
-    "Meridian 88",
+    "GLMZ",
     "Irkalla",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Gravimetric Collapse Charge GCC-9",
@@ -220,5 +220,26 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Null"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "West African (Nigerien) / Southeast Asian (Ravuiwasa suggests Indonesian or Filipino lineage)",
+    "height_cm": 162,
+    "weight_kg": 48,
+    "build": "Slight and wiry, with minimal muscle definition — the build of someone who moves efficiently rather than powerfully, all lean angles and economical motion",
+    "hair_color": "Natural black with copper wire threaded throughout",
+    "hair_style": "Dense, unpruned natural grown long; copper salvage wire woven throughout in loose, organic patterns like a bird's nest",
+    "hair_length": "Long (shoulder-length and beyond)",
+    "eye_color": "Striking honey-amber with natural starburst patterning in the irises",
+    "skin_tone": "Very dark brown, rich and deep",
+    "complexion": "Narrow face with sharp cheekbones and fine features; skin shows the wear of rough living but is otherwise clear; minimal grooming beyond necessity; expression often reads as guarded or calculating",
+    "distinguishing_marks": [
+      "Natural starburst patterning visible in both irises — a genetic variation that makes eye contact distinctive and memorable",
+      "Hands show signs of day labor: calluses on palms and fingers, occasional minor cuts and scrapes in various stages of healing",
+      "No intentional tattoos or marks; any scars are faint and unremarkable from rough living"
+    ],
+    "visible_augmentations": "None visible. Zero augmentations by choice — skin is unmarked by implant sites, no LED optics, no subdermal tech. The copper wire in their hair is salvage, not neural interface.",
+    "posture_movement": "Permanent half-crouch stance, even when standing still; moves with quick, efficient economy of motion; shoulders slightly inward as if occupying less space than physically present; head often angled to observe without seeming to; never fully relaxed in open spaces",
+    "clothing_style": "Practical Tier 4-5 layering: worn cargo pants or salvaged work trousers with multiple pockets (for scavenging); oversized or ill-fitting jackets and hoodies in neutral grays and blacks; no logos or identifiable branding; clothing selected for function (pockets, durability, lack of stains) rather than style; footwear is worn sneakers or boots held together with improvised repairs; no accessories except the copper wire and whatever they're currently carrying"
+  },
+  "image_prompt": "A 24-year-old nonbinary person with very dark brown skin, striking honey-amber eyes with natural starburst patterns, and long natural black hair threaded with salvaged copper wire in loose organic patterns. Slight, wiry build, 162cm tall, narrow sharp-featured face. Wearing ill-fitting gray and black Tier 5 work clothes — oversized hoodie, cargo pants with visible pockets, worn sneakers. Half-crouch stance, shoulders inward, observing but trying to take up less space. Standing in shadows near an industrial gate structure, weathered concrete and neon signage in background. Cyberpunk GLMZ aesthetic, gritty realism, visible poverty and wear. Moody blue-gray lighting with hints of distant neon. No augmentations visible on skin. Cinematic, documentary-style photography. --ar 2:3 --v 6"
 }

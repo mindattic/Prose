@@ -181,5 +181,27 @@
     "Slagworks Industrial",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Greek",
+    "height_cm": 188,
+    "weight_kg": 94,
+    "build": "Large and solid, broad-shouldered with the settled heaviness of a man in his sixties who has spent four decades moving through tight spaces and lifting things. Still muscular across the chest and forearms, but with a thickened waist and the slight forward curve of someone whose spine has been negotiating gravity for sixty-one years.",
+    "hair_color": "Silver-white, natural with some remaining dark roots at the temples",
+    "hair_style": "Cropped short, practical, no styling. Gray stubble suggests he shaves every two or three days, without particular attention.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, steady and observant",
+    "skin_tone": "Deep brown with the weathered patina of someone who has spent decades under fluorescent and natural light in equal measure",
+    "complexion": "Lined face, deep grooves bracketing the mouth from years of frowning at faulty wiring. Sun damage on the left side of his neck and jaw. A small scar on his upper lip, white against dark skin, from a long-healed accident. Clean-shaven most days, or left with several days' gray stubble. No vanity, but scrupulously clean.",
+    "distinguishing_marks": [
+      "Extensive burn scarring on the left forearm and wrist, radiating outward from the prosthetic attachment point in a sunburst pattern of healed tissue — white, raised, and uneven from the 2198 compressor accident",
+      "A thin white scar running diagonally across his left collarbone, barely visible against his skin, from a fall through a maintenance hatch in 2187",
+      "Calluses across both palms and the inner surfaces of his fingers, deep and permanent from decades of work",
+      "A small tattoo on the inside of his right wrist — a building outline, single line, barely an inch tall, applied during his first year at The Mossback in 2189"
+    ],
+    "visible_augmentations": "Left hand entirely prosthetic from the wrist down — brushed chrome, functional-grade, deliberately unpolished and uncosmetic. The attachment point at the wrist is visibly scarred and reinforced with visible support bracing. When he moves, the hand moves with slight mechanical lag and occasional servo whine. No visible cosmetic concealment.",
+    "posture_movement": "Moves with deliberate efficiency, economical gestures. Walks the building's corridors at a steady pace with his weight forward, shoulders slightly rounded from years of working in confined spaces. His right hand gestures frequently when speaking; his left hand remains stationary or makes precise, practiced movements. He has learned to compensate for its mechanical limitations — never wastes movement, never forces the hand to do what it cannot. Stands with feet planted shoulder-width apart, balanced, ready. A man who has internalized the building's architecture into his own body mechanics.",
+    "clothing_style": "Six identical pairs of gray utility coveralls, visibly worn and repaired in multiple places — patches on the knees, reinforced seams along the shoulders, stains that have become permanent features of the fabric. Steel-toed work boots, scuffed, re-soled at least twice. A layered gray undershirt visible at the collar and wrists. No logos, no branding, no affectation. Tier 3-4 working class, but with the dignity of someone who has chosen function over fashion. A tool belt worn low on his hips, weighted and organized, always present. No jewelry except a simple metal band on his right ring finger — worn, unmarked, date unknown."
+  },
+  "image_prompt": "A 61-year-old man of West African and Greek heritage, dark brown skin with weathered texture, silver-white cropped hair, standing in industrial fluorescent lighting. Deep-set dark brown eyes, lined face with permanent grooves. Broad shoulders, solid build with decades of labor in his posture. Left hand entirely brushed chrome prosthetic from wrist down, scarred attachment point with visible servo bracing, no cosmetic finish. Wearing six-times-patched gray utility coverall, steel-toed work boots, heavy tool belt around hips. Right hand gesturing, left hand mechanically precise. Standing in basement maintenance corridor of aging residential stack, surrounded by exposed piping and electrical conduit, warm fluorescent light casting shadows, concrete floor, walls marked with years of wear. Photorealistic, grounded, no stylization. Cyberpunk mundane. --ar 2:3 --v 6"
 }

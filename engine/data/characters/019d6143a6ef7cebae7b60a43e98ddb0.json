@@ -302,5 +302,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Tin Man"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Synthetic — Kuroda Industries manufacture, origin agnostic",
+    "height_cm": 175,
+    "weight_kg": 89,
+    "build": "Humanoid mechanical frame — broad shoulders tapering to a rotating cylindrical base, engineered for stability and reach across a full-length bar counter",
+    "hair_color": "N/A — featureless synthetic head",
+    "hair_style": "N/A",
+    "hair_length": "N/A",
+    "eye_color": "Warm amber optical band — continuous glow, no pupils or iris definition",
+    "skin_tone": "Chrome and matte black — torso predominantly polished chrome with black matte panel sections along the spine and lower chassis",
+    "complexion": "Smooth featureless face with no mouth, nose, or distinguishing human facial anatomy. Optical band spans the approximate location of human eyes. Surface shows minor micro-scratches and light oxidation consistent with three years of basement bar operation.",
+    "distinguishing_marks": [
+      "Faint circular scuff on left shoulder panel from a bottle cap ricochet, circa Year 2224",
+      "Hairline stress fracture running 3cm along the right side of the torso chassis, never repaired, barely visible except under direct light",
+      "Serial number plate mounted on lower back: KUR-BT12-07743, partially obscured by wear"
+    ],
+    "visible_augmentations": "Entirely augmented — no biological components. Two chrome dexterous arms with articulated fingers optimized for bottle handling and precision pouring. Rotating base with worn bearings producing characteristic left-turn squeak. Warm amber optical band. Baritone voice modulator embedded in torso. No concealment; synthetic nature immediately obvious to any observer.",
+    "posture_movement": "Stationary behind bar — rotates smoothly on base to address different points of the counter. Movements economical and deliberate. Left turns produce faint metal-on-metal squeak. Arm articulation precise and fluid, never wasted motion. Posture communicates attention and presence without physical leaning or body language shifts.",
+    "clothing_style": "No clothing. Bare chrome and matte-black chassis. Worn leather apron fastened around rotating base, darkened with three years of spilled drinks, beer stains, and handling marks. Apron pockets hold bar tools: church keys, jiggers, strainers, muddlers — all scratched steel."
+  },
+  "image_prompt": "Cyberpunk robot bartender, Kuroda BT-12 chassis, humanoid synthetic frame with broad polished chrome shoulders and matte-black torso panels, featureless smooth face with warm amber glowing optical band spanning where eyes would be, two articulated chrome dexterous arms reaching across a weathered wooden bar counter, rotating cylindrical base beneath, worn leather apron darkened with three years of bar stains, basement setting with dim amber lighting, mismatched furniture silhouettes in background, worn beer taps and bottles on shelves, rich moody lighting emphasizing chrome reflections and amber glow, cinematic depth, gritty low-tier dive bar atmosphere, slight left-turn squeak implied in posture, highly detailed mechanical components, photorealistic synthetic materials --ar 2:3 --v 6"
 }

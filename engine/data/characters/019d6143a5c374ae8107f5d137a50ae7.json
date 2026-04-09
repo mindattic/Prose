@@ -190,5 +190,26 @@
     "Arcturus CK-5 'Bloodhound'",
     "Elena Vasquez-9"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East African (Ethiopian) / German-Scandinavian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and wiry, almost delicate — the build of someone who forgets to eat during work cycles. Narrow shoulders, long-limbed proportions that make him appear taller than he is.",
+    "hair_color": "Natural dark brown with subtle warm undertones",
+    "hair_style": "Bound back in a loose braid or knot, often with a few strands escaping; deliberately unkempt rather than carelessly so",
+    "hair_length": "Long (shoulder-length when unbound)",
+    "eye_color": "Warm brown, alert and constantly moving",
+    "skin_tone": "Medium brown with warm, golden undertones — the complexion of East African heritage",
+    "complexion": "Clear skin with the distinctive bioluminescent freckle modification: soft blue-green constellation of freckles across cheekbones, bridge of nose, and extending onto his collarbone and upper chest. The bioluminescence is faint in daylight but becomes visible in low-light environments, creating a subtle glowing network. Face is youthful, unmarked by typical street wear; clean-shaven.",
+    "distinguishing_marks": [
+      "Bioluminescent freckle constellation across cheekbones and nose bridge — gene-art modification in soft blue-green spectrum, active in low light",
+      "Bioluminescent freckles continue down neck and across collarbone — visible when wearing open-collar clothing",
+      "Small scar on left temple, barely visible, likely from childhood"
+    ],
+    "visible_augmentations": "None prominently visible in standard clothing. The neural co-processor is subcutaneous (Ringo-issued, standard issue for speculative systems staff). The bioluminescent freckles are cosmetic geneware and serve as his primary distinguishing feature, though they read as aesthetic modification rather than functional augmentation.",
+    "posture_movement": "Moves with an odd combination of precision and apparent distraction — his body language suggests he's simultaneously present and elsewhere. When focused on conversation or observation, he becomes very still. When thinking, he fidgets: adjusts his clothing, touches his face, shifts weight. Walks with a particular kind of purposefulness that masks actual absentmindedness about his surroundings (he'll collide with objects if thinking intensely). Head often tilted slightly, as if listening to something others can't hear.",
+    "clothing_style": "Deliberately mismatched in a way that reads as intentional rather than careless. Typical uniform: expensive formal jacket (Ringo-issue or thrifted designer) worn over a maintenance-grade base layer (grey, well-worn, no logos). Clean shoes — always clean shoes, oddly formal — paired with intentionally mismatched socks or laces (one neon, one matte). Borrows vests, borrowed jackets, and cardigans from colleagues without returning them. Tier-3/4 presentation overall: access to Ringo corp resources but deliberately rejecting the aesthetic polish expected of speculative systems staff. Pockets are visibly heavy with devices, notepads, small objects of unclear purpose."
+  },
+  "image_prompt": "Portrait of a young East African-German man, age 29, lean and bright-eyed, with shoulder-length dark curled hair bound back loosely. Medium brown skin with a distinctive constellation of soft bioluminescent freckles glowing faintly blue-green across cheekbones, nose bridge, and collarbone. Wearing a crisp formal blazer over a worn grey maintenance underlayer, clean shoes with mismatched laces. Alert, thoughtful expression with an air of distracted focus. Cyberpunk aesthetic, soft backlighting to highlight the glowing freckles, shallow depth of field, shot in a dimly lit research lab or urban sanctuary setting with subtle neon accents. Hyper-detailed skin texture, warm color grading despite cool neon highlights. Introspective mood, technical but humane. --ar 2:3 --v 6"
 }

@@ -62,7 +62,7 @@
   "narrative_function": "Local color and counterculture access point; political complication — his advocacy creates both allies and enemies; can provide access to the HPAZ network and its information; represents the friction between new spiritual practice and both corporate power and traditional religion",
   "augmentations": "Retractable claws (left hand only, used as ritual inscription tools); conductive fingertip pads (geneware, allow him to feel circuit states in surfaces he touches); minimal subdermal chrome inlay at collarbone — a devotional marking of his primary petition",
   "daily_life": "Travels a regular route through Highland Park on his cargo-trike, stopping at established sites to maintain prayer circuits and receive petitioners; attends HPAZ community meetings weekly and uses them as platforms for synthetic rights arguments.",
-  "affiliation": "Highland Park Autonomous Zone community; loosely affiliated with the Chrome Prayer Collective of the Meridian 88 Underside; informal connections to several synthetic advocacy groups",
+  "affiliation": "Highland Park Autonomous Zone community; loosely affiliated with the Chrome Prayer Collective of the GLMZ Underside; informal connections to several synthetic advocacy groups",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -179,5 +179,25 @@
     "Tessera Corponation",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Polish",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Wiry and lean with ropy musculature across shoulders and forearms from years of precise manual work inscribing circuits. No excess weight; body built for endurance and fine motor control rather than strength.",
+    "hair_color": "Natural black",
+    "hair_style": "Close-cropped except for a single braid at right temple wound tightly with conductive prayer-wire, silver-grey metal intertwined through dark hair",
+    "hair_length": "Short",
+    "eye_color": "Natural dark brown",
+    "skin_tone": "Deep brown, even complexion with warm undertones",
+    "complexion": "Face shows focused intensity; sharp cheekbones, precise grooming. Skin is clear and well-maintained, bearing no tattoos or scars except for faint pale lines along his left collarbone where subdermal chrome inlay sits beneath the surface.",
+    "distinguishing_marks": [
+      "Pale subdermal chrome inlay visible as a thin luminescent line running horizontally across the hollow of his left collarbone, marking his primary spiritual petition",
+      "Left hand shows barely-visible seams at knuckle joints where retractable claw mechanism is housed; claws remain retracted most of the time but leave faint silvered scarring around the nail beds"
+    ],
+    "visible_augmentations": "Conductive fingertip pads visible as subtle metallic sheening across fingertips and palms of both hands, most noticeable in direct light. Prayer-wire braided into temple hair. Subdermal collarbone marking visible only at close range or in certain lighting. Retractable claws normally invisible unless extended.",
+    "posture_movement": "Moves with constant kinetic restlessness even when seated — fingers tap, weight shifts, shoulders roll. Economical and precise movements, never wasted motion. Gives the impression of someone perpetually between destinations despite stillness. When standing, leans slightly forward as if about to move. Eyes track movement around him constantly.",
+    "clothing_style": "Tier 4 practical wear: modified cargo vest in reinforced grey synthetic fabric with numerous pockets for prayer materials and circuit-inscribing tools; worn black thermal underlayer; cargo pants with reinforced knees and thigh pockets. Custom-modified fingerless gloves in charcoal leather with conductive thread sewn into palm pads. Worn Yokohama-brand boots with grip soles for trike work. Carries a waist-slung courier pack containing prayer components. Everything is functional, well-maintained but not new, with visible wear patterns indicating heavy use."
+  },
+  "image_prompt": "Portrait of Qoqo Mensah-Żywiecka, 29-year-old male, wiry lean athletic build, deep brown skin, close-cropped natural black hair with single silver prayer-wire braid at right temple. Dark intense eyes, sharp focused expression. Left hand showing faint metallic fingerpad augmentations, retractable claw seams visible at knuckles. Pale luminescent subdermal chrome line visible across left collarbone. Wearing charcoal reinforced cargo vest over black thermal, fingerless conductive gloves, worn black pants. Slight forward lean, restless kinetic energy. Cyberpunk spiritual practitioner, Highland Park aesthetic, moody blue-grey lighting, slight atmospheric haze, shot in 2226 GLMZ, gritty urban sanctuary setting, hyperrealistic detail on augmentation interfaces, --ar 2:3 --v 6"
 }

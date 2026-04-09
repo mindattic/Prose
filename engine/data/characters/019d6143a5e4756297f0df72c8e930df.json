@@ -188,5 +188,26 @@
     "Hearthstone Firearms Trail-357 'Pathfinder'",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polish / Quechua",
+    "height_cm": 189,
+    "weight_kg": 72,
+    "build": "Lean and angular, shoulders slightly narrower than hip width — the build of someone who moves through tight spaces regularly. No excess mass, but functional muscle in the forearms and legs from years of manual press work and quick exits.",
+    "hair_color": "Variable — currently dyed deep indigo at the roots, fading to natural dark brown at the tips. Changes weekly.",
+    "hair_style": "Short twists, approximately 3-4cm length, deliberately asymmetrical and maintained with minimal grooming routine.",
+    "hair_length": "Short",
+    "eye_color": "Aftermarket fractal irises: amber and black geometric spiral patterns, concentric and hypnotic. Purchased secondhand; slight chromatic aberration visible at the edges when light catches at angles.",
+    "skin_tone": "Warm medium brown with underlying golden undertone, consistent with West African and Andean heritage.",
+    "complexion": "Angular face with sharp cheekbones and a narrow jaw. Skin shows minor scarring from chemical burns (ink and solvent exposure) on the right temple. Dark circles under the eyes are chronic — a feature of irregular sleep. Generally ungroomed; stubble typically present. Ink stains permanent on the cuticles and webbing between fingers, darkest around the index and thumb.",
+    "distinguishing_marks": [
+      "Chemical burn scars (1-2cm cluster) on right temple, pale against skin tone, from a solvent accident during early press work.",
+      "Ink stains on both hands, concentrated on fingers and palms — permanent discoloration that no cleaning fully removes, darker on the left palm where the data cache sits beneath the skin.",
+      "Small pockmark scar on left collarbone, circular, approximately 0.5cm diameter — origin unclear to casual observers."
+    ],
+    "visible_augmentations": "Fractal irises are immediately visible and unmistakable — geometric amber-and-black spirals that track and reflect light distinctly. No visible external chrome or subdermal plating. The data cache in the left palm is invisible unless scanning for subdermal hardware; skin shows no bulge or discoloration. Color-cycling hair follicles are visible only as the deliberate hair color changes week to week.",
+    "posture_movement": "Habitually hunched slightly forward, as if ducking under something that isn't there. Moves with deliberate quiet — economical gestures, minimal wasted motion. Frequently touches his left palm unconsciously, a fidget. His gait is fast and slightly irregular, suggesting someone accustomed to moving through crowds and avoiding notice. When stationary, he rarely stays still; fingers drum on surfaces, eyes scan exits.",
+    "clothing_style": "Tier 4-5 utilitarian. Favors dark, unmarked clothing that doesn't register on corpo surveillance thermal imaging: matte-black synthfiber hoodies, worn denim in charcoal, scuffed low-visibility sneakers (current model: Huang-Kwok knockoffs with deadened soles). Carries a satchel with padded internal sleeves for broadsheets and data-spike packages. Jacket pockets deliberately reinforced at the seams. No visible branding or corporate insignia. Accessories minimal: a single chipped silver ring on his right hand (origin: trade, not purchase), a mesh-linked earpiece (older model, visible tuning marks from jury-rigging). Overall aesthetic suggests someone who dresses to move and disappear, not to be seen."
+  },
+  "image_prompt": "Cyberpunk portrait of a lean 27-year-old man with warm medium-brown skin, sharp angular features, and short asymmetrical indigo-dyed twists. His most striking feature: geometric fractal irises in amber and black spiral patterns, hypnotic and aftermarket. Permanent ink stains on his fingers and palms. Hunched posture suggesting years in cramped basement spaces. Wearing a matte-black synthfiber hoodie and scuffed charcoal denim. Dark circles under his eyes, stubble on his jaw, a hint of chemical burn scars on his right temple. Background: dim underground print workshop with halogen work lights, stacks of broadsheets, mesh broadcast equipment glowing softly. Hands positioned near data-spike packages. Mood: restless, watchful, underground. Neon accent lighting in cool blues and ambers reflecting off his irises. Film noir meets low-tier enclave. --ar 2:3 --v 6"
 }

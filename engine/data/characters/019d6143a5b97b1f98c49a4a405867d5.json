@@ -58,7 +58,7 @@
     "A Cirrus Compact enforcer has tracked her to Escanaba and is asking questions around the docks — she needs help either disappearing or negotiating a resolution",
     "She knows the flight path, cargo manifests, and ELF-shrine locations for a specific airship route that someone else urgently needs information about"
   ],
-  "narrative_function": "Mobility asset — can provide access to airship travel and cargo networks; living encyclopedia of port-city conditions across the region; connects players to the wider world outside Meridian 88",
+  "narrative_function": "Mobility asset — can provide access to airship travel and cargo networks; living encyclopedia of port-city conditions across the region; connects players to the wider world outside GLMZ",
   "augmentations": "Bioluminescent geneware tattoos (cargo certification marks, functional); reinforced grip augmentation in both hands (basic, Tier 1 quality, somewhat worn)",
   "daily_life": "Awinita haunts the Escanaba Gateway docking platforms looking for day-hire cargo work, competing with other drifters for short contracts. She eats at communal stalls, maintains her gear obsessively, and in the evenings participates in the informal dock community — card games, storytelling, the ritual leaving of small data offerings at the ELF shrines bolted to the airship mooring pylons.",
   "affiliation": "Freelance — formerly contracted with an independent airship consortium called the Cirrus Compact, now between berths",
@@ -176,5 +176,26 @@
     "The Gradient Compact",
     "The Pure Hand"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Armenian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and ropy, all compact muscle from years of cargo handling. Shoulders broad relative to frame, forearms corded. The kind of body that moves efficiently rather than powerfully — built for endurance on swaying deck platforms, not raw strength.",
+    "hair_color": "Natural deep black with synthetic wraps in neon cyan, hot pink, acid green, and silver—each wrap from a different port city, creating a mobile map of her drifter routes",
+    "hair_style": "Voluminous natural texture, high-crowned and controlled only by the wraps; escapes in tight ringlets around her face and neck",
+    "hair_length": "Long (shoulder-length when unwrapped, fuller when textured out)",
+    "eye_color": "Deep brown, alert and perpetually tracking peripheral movement",
+    "skin_tone": "Deep warm brown with subtle red undertones",
+    "complexion": "Sun-weathered from deck exposure, clear skin showing no acne or damage despite years outdoors. Strong jawline, wide-set eyes, full lips. Calloused patches on the heels of her palms visible when hands are relaxed.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware tattoo lines running from both wrists to elbows in three distinct colors: cyan (Cirrus Compact certification), amber (older West Harbor Collective mark, fading), and violet (Duluth Independent Handlers Union), each glowing faintly in darkness",
+      "Thin white scar across the back of her left hand, approximately 3cm, from a mooring line snap two years ago",
+      "Small burn mark on her right inner forearm, quarter-sized, from a hot cargo securing clamp—she doesn't talk about it"
+    ],
+    "visible_augmentations": "Reinforced grip augmentation visible as faint metallic webbing at the base of all fingers and across palms (Tier 1 quality, worn—chrome showing some oxidation and micro-scarring). The bioluminescent tattoo lines serve as both credential and augmentation, cycling faintly with her heartrate when she's handling cargo.",
+    "posture_movement": "Perpetually ready to shift weight forward; stands on the balls of her feet even at rest. Eyes scan room edges before settling on conversation partner. Moves with economical precision—no wasted motion—but with restless energy, fingers often fidgeting with rope knots, wraps, or cargo manifest tablets. Her default state is coiled rather than relaxed.",
+    "clothing_style": "Tier 3-4 practical drifter wear: well-maintained but weathered. Oversized cargo vest in faded charcoal with multiple deep pockets and reinforced seaming, worn over a fitted long-sleeved compression shirt in muted blue (sweat-wicking, functional). Heavy canvas work pants with cargo loops, cuffed at ankles, patched twice in slightly mismatched fabric. Worn but serviceable ankle-high boots with grip-enhanced soles. A faded Cirrus Compact union pin on her vest collar. Jewelry minimal—a thin silver bracelet on her right wrist (port gift, meaning unknown), no other adornment."
+  },
+  "image_prompt": "cyberpunk portrait of a 27-year-old woman with deep brown skin, enormous natural black hair controlled by neon synthetic wraps in cyan, hot pink, green and silver, lean athletic build from years of cargo work, standing on the balls of her feet with alert eyes tracking sideways, wearing a weathered oversized charcoal cargo vest over compression shirt and heavy canvas work pants, hands showing faint metallic webbing augmentation at fingers and palms with visible wear, bioluminescent tattoo lines glowing faintly in cyan and amber running from wrists to elbows, upper docking platform setting with airship mooring pylons and chain rigging in background, atmospheric LED dock lighting casting cool blue shadows, industrial cyberpunk aesthetic, film noir mood, cinematic lighting from side-mounted platform lights, texture detail on worn fabric and chrome webbing visible, --ar 2:3 --v 6"
 }

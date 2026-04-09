@@ -232,5 +232,25 @@
     "ARCHIVE",
     "Gravimetric Collapse Charge GCC-9"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Spanish / Albanian",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Tall and lean with age-related postural rounding; shoulders slightly forward as if perpetually leaning in. Wiry musculature suggests decades of standing and fine manual work rather than physical labor.",
+    "hair_color": "White, natural",
+    "hair_style": "Close-cropped, precise edges — maintained with deliberate care",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, sharp and alert",
+    "skin_tone": "Deep warm brown with undertones reflecting mixed West African and Mediterranean heritage",
+    "complexion": "Heavily lined face with deep creases around eyes and mouth — map of sixty years of expression. Skin weathered but meticulously groomed. Minimal facial hair, clean-shaven daily. No visible acne or skin lesions; age spots on temples and backs of hands.",
+    "distinguishing_marks": [
+      "Fine scar tissue along left temple, approximately 3cm, consistent with childhood injury — faded but visible under direct light",
+      "Small burn mark on inside of right wrist (2cm diameter), pale and old, location suggests accidental contact with heated equipment decades ago"
+    ],
+    "visible_augmentations": "Thick-framed corrective lenses with barely perceptible overlay interface — distinctly analog-looking, pre-2200s aesthetic. Cochlear enhancement invisible except for occasional micro-adjustments to ear position when listening. No chrome, no subdermal implants, no visible geneware.",
+    "posture_movement": "Habitually leans forward at the torso when speaking or listening, creating an impression of intense engagement. Moves with deliberate slowness — not infirm, but considered. Hands gesture precisely when explaining; fingers move with the dexterity of someone accustomed to handling fragile objects.",
+    "clothing_style": "Deliberately formal regardless of context: pressed collars, polished shoes, fitted vests or blazers even in the Burnished Market. Favors earth tones, grays, and deep blacks. Clothes are well-maintained, slightly dated (2210s-era tailoring), and deliberately read as dignity in working-class Engelheim. Wears a battered leather satchel for daily transactions — genuinely worn, not affectation."
+  },
+  "image_prompt": "A 62-year-old man with deep brown skin, close-cropped white hair, and deeply lined face, standing in a cramped archive stall surrounded by data-plates and vintage media. He wears a pressed gray button-up shirt and dark vest, polished shoes, and thick-framed corrective lenses with subtle overlay tech. Leaning forward with sharp, intelligent eyes. Hands delicately handling old optical discs. Warm overhead lighting casting shadows across rows of sealed cases and handwritten labels. Cyberpunk aesthetic with analog preservation focus. 2226 GLMZ working-class market setting. Dignified, meticulous, slightly weathered. Photograph-realism with noir undercurrent. --ar 2:3 --v 6"
 }

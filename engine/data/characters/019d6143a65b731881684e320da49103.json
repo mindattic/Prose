@@ -235,5 +235,26 @@
     "Silk",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Japanese",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, with the kind of muscular density that comes from two decades of lifting, wringing, and precision needlework. Not soft, not angular — built to endure.",
+    "hair_color": "Silver-gray, natural",
+    "hair_style": "Close-cropped, no styling beyond functional maintenance",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, unaugmented",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Weather-worn and lined in the way of someone who has spent decades under fluorescent light and steam. Her face carries the authority of age — no attempt to soften it. Clear, well-maintained skin despite the industrial scars.",
+    "distinguishing_marks": [
+      "Chemical burn scarring across both forearms in irregular, overlapping patches — pale and slightly raised against the surrounding skin, a topography of old pain from an industrial accident approximately twenty years prior.",
+      "Fine creases around her eyes and mouth that deepen when she concentrates, map of five decades of focus.",
+      "A small, deliberate scar on her left index finger — a needlework accident she does not discuss."
+    ],
+    "visible_augmentations": "None visible. The reinforced lumbar spine is subcutaneous and undetectable without imaging.",
+    "posture_movement": "She moves with economical precision — no wasted motion. When standing, her shoulders are squared, her weight balanced. When working at the alterations table, she leans forward from the hips with the stability of someone who trusts her spine. She walks at a steady, unhurried pace that somehow covers distance faster than it appears. Her hands are always slightly active, even at rest — a fingers-flexing habit of someone whose craft is muscle memory.",
+    "clothing_style": "Practical Tier 3-4 working wear: loose linen apron in faded indigo over simple gray or black long-sleeved shirts (sleeves rolled to show the forearm scars, never hidden). Dark work trousers with reinforced pockets. Practical slip-on shoes, always worn-looking but meticulously maintained. Reading glasses on a beaded chain around her neck. No jewelry except a simple titanium wedding band, worn thin. Her clothes smell of detergent, jasmine synthetic, and steam — the smell of her workspace is her uniform."
+  },
+  "image_prompt": "Portrait of a 54-year-old woman with deep umber skin and silver-cropped hair, wearing reading glasses on a chain, serious and observant expression. Broad shoulders, muscular build. Long-sleeved gray shirt rolled to expose pale chemical burn scarring across both forearms in irregular patches. Dark work apron over practical clothing. Standing in front of a vintage laundromat interior with neon signs and hanging garments. Warm fluorescent and golden steam-lit ambient lighting. Cyberpunk neo-noir, earthy tones, hyperrealistic detail on scars and hands. Shot as head-and-shoulders portrait with shallow depth of field. Gritty, unglamorous, authentic working-class dignity. --ar 2:3 --v 6"
 }

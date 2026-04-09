@@ -203,5 +203,26 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "Siberian Russian / Sierra Leonean",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and precise, muscular without bulk — the build of someone whose body is a tool maintained for function rather than appearance. Shoulders squared from years of steady hands-on work.",
+    "hair_color": "Bleached platinum blonde, intentionally stark and maintained",
+    "hair_style": "Practical braid or low knot when traveling; loose and shoulder-length when stationary. Always positioned for visibility in low-light conditions.",
+    "hair_length": "Medium (shoulder-length when worn down)",
+    "eye_color": "Augmented with concentric rings of deep gold and black — a Helix Biosystems cosmetic modification that creates a hypnotic, almost inhuman symmetry",
+    "skin_tone": "Cool-toned warm beige with golden undertones, reflecting mixed Siberian and West African ancestry",
+    "complexion": "Weathered but not lined; her face shows the calm of exhausted anxiety, with minimal expression at rest. Her skin is clear but marked by the texture of someone who uses water sparingly and sun exposure frequently. High Slavic cheekbones, sharp jaw.",
+    "distinguishing_marks": [
+      "Thin white scar across the inner left forearm near wrist — poorly healed after removal of a Helix corporate ID transponder, jagged edges suggest field surgery",
+      "Small circular indentation below the scar on left forearm — the subcutaneous medical data-port, barely visible beneath skin as a faint depression",
+      "Faint burn mark on right palm (two centimeters, oval) — from a caravan medical incident five years ago, now pale against her skin"
+    ],
+    "visible_augmentations": "The concentric-ring irises are immediately striking and unmistakable in any light. The medical data-port on her left forearm is not visible unless her skin is specifically examined, but the scar tissue around it is noticeable upon close inspection. No chrome, no external augmentation.",
+    "posture_movement": "Moves with economic precision — no wasted motion, no nervous habits. Stands with weight balanced, hands often at rest near her sides or in pockets. When working, she becomes almost meditative in her focus. Her gaze is direct and unsettling; people often look away first. She walks at a steady pace, neither hurried nor casual.",
+    "clothing_style": "Tier 4-5 pragmatism: durable, patched field gear in neutral colors (grey, black, tan). Typical outfit includes reinforced cargo pants with multiple pockets, a fitted thermal base layer, and an oversized caravan collective vest (faded blue with worn embroidered collective insignia). Worn synthetic boots rated for harsh weather. A long, thin medical satchel across her body, always present. No jewelry except a single thin silver bracelet (sentimental, kept from before Helix) and a faded wrist-mounted analog chronometer. Her clothing shows signs of repair and age but is scrupulously clean."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 41-year-old woman with stark platinum blonde hair in a long braid, lean muscular build, cool-toned beige skin with Siberian and West African features. Her irises are augmented with concentric rings of gold and black, hypnotic and unsettling. She wears practical field gear: grey thermal shirt, tan cargo pants with visible pockets, faded blue caravan collective vest. Thin white scar visible on inner left forearm. Standing in three-quarter pose against a dark background, cool neon accent lighting (blue-white) illuminating her face. Her expression is calm and direct, eyes piercing. Medical satchel across her body. Photorealistic, gritty cyberpunk aesthetic, volumetric lighting, shallow depth of field. --ar 2:3 --v 6"
 }

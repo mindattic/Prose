@@ -13,7 +13,7 @@
   "age": 33,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Milwaukee and North Ave",
-  "description": "Kamala Medina-Quaye is lean and angular, all sharp edges and visible tension. At 33, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a breacher out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented breacher in Meridian 88, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Kamala Medina-Quaye is lean and angular, all sharp edges and visible tension. At 33, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a breacher out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented breacher in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.19,
@@ -43,7 +43,7 @@
       "Assumes everyone has an angle because they always have an angle",
       "Cannot accept help without interpreting it as leverage"
     ],
-    "secret": "Kamala Medina-Quaye betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in Meridian 88 knows this."
+    "secret": "Kamala Medina-Quaye betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
   },
   "speech_patterns": {
     "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
@@ -155,7 +155,7 @@
       "loyalty_break": 5
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "technical expertise with augmentation systems"
     ],
     "weaknesses": [
@@ -281,10 +281,33 @@
   ],
   "related_entities": [
     "Bioelectric Muscle Fiber",
-    "Meridian 88",
+    "GLMZ",
     "Geartown",
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Spanish / West African",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and angular with ropy muscle definition. Her frame is all functional tension — minimalist, built for explosive movement rather than mass. Synthetic muscle replacement in both legs gives them a subtly different shape than the rest of her body: smoother curves, too perfect, chrome gleaming under the skin.",
+    "hair_color": "Dark brown, natural base with premature silver threading at the temples",
+    "hair_style": "Pulled back in a tight functional braid, practical and never loose",
+    "hair_length": "Long — reaches mid-back when unbraided, but always secured",
+    "eye_color": "Deep brown with a faint tremor in the iris — side effect of wired reflexes",
+    "skin_tone": "Medium-warm, with an undertone that shifts between olive and copper depending on light",
+    "complexion": "Sharp cheekbones, angular jaw, narrow nose. Skin is weathered in the way of someone who spends time outdoors and doesn't prioritize skincare — small scars from industrial work, a persistent squint line around the eyes. No makeup. Her face has the quality of something designed rather than grown, though that's just her baseline intensity.",
+    "distinguishing_marks": [
+      "Surgical scar running the length of her left thigh, visible through the chrome — where the synthetic muscle was installed six years ago",
+      "Matching scar on the right thigh, same vintage",
+      "Network of fine white burn scars across both palms and inner forearms — old industrial incidents or combat, impossible to tell",
+      "Small keloid scar above her left collarbone, the size of a fingernail",
+      "No visible tattoos, though there is a faint subcutaneous marking on her wrist that catches light — possibly a receipt implant or access code"
+    ],
+    "visible_augmentations": "The chrome in both legs is immediately visible — synthetic muscle shows through translucent dermal sheaths as a faint metallic sheen, most pronounced in the calves and quads. The artificial musculature is too perfect, too symmetrical compared to her natural upper body. When she moves, the legs respond a fraction too quickly. Her pupils occasionally dilate and contract unnaturally — the adrenaline pump kicking in and settling.",
+    "posture_movement": "She stands like a coiled spring, weight forward on the balls of her feet even at rest. Her movements are economical and precise — no wasted motion. When she walks, there's a subtle rhythm discontinuity between her upper body and her augmented legs, a reminder that they don't quite move in sync with her natural reflexes. In high-stress moments, she twitches — fingers drumming, jaw clenching — the chemical-mechanical hybrid augmentation pushing her toward action.",
+    "clothing_style": "Tier 4 utilitarian. Dark tactical pants with reinforced knees and cargo pockets, usually gray or matte black. Steel-toed boots, always laced tight. Sleeveless tank or fitted long-sleeve shirt under a reinforced jacket — the kind designed for industrial work, with hidden pockets and durable synthetic fabric. Everything is worn, tested, patched where necessary. No logos, no flash. A tool belt or chest rig depending on the job. Her jacket has a faint smell of machine oil and ozone."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 33-year-old Afro-Latina breacher woman, lean and angular with sharp facial features and intense brown eyes, dark braided hair pulled tight. Visible chrome synthetic muscle fiber replacement visible through translucent skin on both legs, gleaming metallic sheen. Wearing tactical dark gray pants with reinforced knees, steel-toed boots, fitted sleeveless tank under a worn industrial reinforced jacket. Standing in a relaxed but coiled ready stance, weight forward. Geartown industrial setting in background — neon signs reflecting off wet metal and concrete, grease stains and machinery. Moody blue and amber cyberpunk lighting, film noir atmosphere, cinematic depth of field, photorealistic with subtle sci-fi enhancement, character facing camera with a dangerous calm expression. --ar 2:3 --v 6"
 }

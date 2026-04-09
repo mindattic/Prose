@@ -244,5 +244,26 @@
     "Silver",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Senegalese) / Northern European (Dutch)",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Tall and narrow, almost ascetic — lean muscle without bulk, shoulders slightly forward from decades of surgical posture. A body optimized for precision rather than presence.",
+    "hair_color": "Silver-grey",
+    "hair_style": "Close-cropped, grown out since age 35, worn with no styling products or attention — severe and functional",
+    "hair_length": "Short",
+    "eye_color": "Deep brown (natural); left eye fitted with surgical magnification implant (subtle, detectable only on close inspection)",
+    "skin_tone": "Deep warm brown with slight ashy undertone from chronic fatigue",
+    "complexion": "Angular facial structure, high cheekbones, prominent jaw. Minimal grooming — no makeup, no dermal treatments. Fine lines around the eyes and mouth from squinting under surgical lights. Hands show surgical calluses and minor scars from decades of precision work.",
+    "distinguishing_marks": [
+      "Thin surgical scar running along the inside of her right forearm, approximately 8cm, faded to silver",
+      "Small burn scar on the dorsal surface of her left hand, roughly 1cm diameter, from a cauterization incident during residency",
+      "Barely visible tremor lines (now corrected) faintly etched across both wrists where stabilization braces sit subcutaneously"
+    ],
+    "visible_augmentations": "Matte medical-ceramic prosthetic ring finger on right hand, deliberately unskinned — smooth, seamless integration at the metacarpal joint but visibly non-organic in material and finish. Left eye shows minimal telltale glint of magnification optics under certain angles. Both wrists bear faint surgical seams where the stabilization braces were installed, visible only if she rolls her sleeves.",
+    "posture_movement": "Moves with economical precision — no wasted motion, shoulders slightly hunched from surgical habit. Hands are still except when in motion, then they move with the exact deliberation of someone who has trained every micro-movement. Eyes often slightly narrowed, as if permanently in magnification mode. Stands or sits in compressed positions, gathering herself inward rather than taking up space.",
+    "clothing_style": "Tier 3-4 functional: surgical scrubs under a well-maintained but worn charcoal wool coat (likely fifteen years old). Off-duty favors dark, unremarkable clothing — matte fabrics, no logos, minimal color variation. Flat-soled shoes worn for comfort and durability, not aesthetics. Watches a basic chronometer on a utilitarian band. No jewelry except a simple platinum wedding band on her left ring finger and a threadbare fabric wristband (origin and significance undisclosed) on her right wrist above the prosthetic. Everything about her wardrobe suggests someone who dresses to disappear."
+  },
+  "image_prompt": "A tall, severe African-Dutch woman in her mid-40s with close-cropped silver hair and deep brown skin, standing in a hospital corridor under cold fluorescent light. She wears dark charcoal surgical scrubs and an old wool coat. Her face is angular and composed, with the exhausted focus of a trauma surgeon — dark eyes slightly narrowed, no cosmetic augmentations. Her right hand is visible, showing a matte medical-ceramic prosthetic ring finger, deliberately unskinned and clinical. Faint surgical scars cross her left hand. Her posture is compressed and efficient, shoulders forward, everything pulled inward. Cool clinical lighting casts sharp shadows across her features. Cyberpunk medical aesthetic, photorealistic, moody and reserved. --ar 2:3 --v 6"
 }

@@ -248,5 +248,26 @@
     "Nightlight",
     "The Milwaukee Core"
   ],
-  "district": "Nomadic"
+  "district": "Nomadic",
+  "physical_description": {
+    "heritage": "West African (Igbo) / Polynesian (Samoan)",
+    "height_cm": 162,
+    "weight_kg": 58,
+    "build": "Compact and densely muscled, built for quick movement rather than bulk. Broad-shouldered despite modest height, with the kind of frame that reads as energetic rather than fragile.",
+    "hair_color": "Natural dark brown, near-black",
+    "hair_style": "Pulled back into a puff during duty hours, but sections consistently escape the tie by afternoon, framing the face",
+    "hair_length": "Long (approximately shoulder-length when released)",
+    "eye_color": "Dark brown, alert and mobile",
+    "skin_tone": "Warm medium brown, blended Igbo and Samoan heritage with slight reddish undertones",
+    "complexion": "Broad, expressive facial features with a strong jawline and prominent cheekbones. Smooth skin with three thin horizontal scars across the right temple (childhood accident). The bridge of nose and cheekbones are marked with bioluminescent freckles that glow soft seafoam green under stress or heightened emotion.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles in a scattered pattern across the bridge of nose and cheeks, glow seafoam green under stress/excitement",
+      "Three thin parallel scars across right temple, approximately 2cm each, pale and old",
+      "Small enamel pin of an E.L.F. on left chest (Ferrogate cap); three total personal patron pins worn on cap brim"
+    ],
+    "visible_augmentations": "Ferrogate Transit Authority-issued wrist-mounted scanning cuff on left wrist (matte black polymer with faint LED status indicators), standard checkpoint equipment. The bioluminescent freckles are cosmetic mods, visible only when activated by stress or excitement.",
+    "posture_movement": "Quick, efficient movements with natural fidgeting when at rest. Stands with weight balanced on the balls of feet, ready to pivot. Makes frequent eye contact and uses hands expressively when speaking. Habit of tapping pen against notebook or scanning cuff during quiet moments.",
+    "clothing_style": "Ferrogate Transit Security uniform worn during shifts: pressed dark gray shirt with reflective trim, matching trousers, security blazer with shoulder patches. Off-duty: practical Tier 3 clothing—distressed denim, thrifted band tees or oversized button-ups, worn sneakers. Boots are always mud-tracked from cutting across maintenance tracks. Keeps physical notebook (battered, spiral-bound) in jacket or pants pocket. Wears a single silver ring on left middle finger (no visible religious affiliation, personal choice)."
+  },
+  "image_prompt": "Portrait of a 26-year-old nonbinary person of West African-Polynesian heritage, compact athletic build, warm medium-brown skin, dark hair pulled into an escaping puff, broad expressive face. Bioluminescent seafoam green freckles glowing across bridge of nose and cheeks. Wearing a pressed dark gray Ferrogate Transit Security uniform with reflective trim and shoulder patches, matte black scanning cuff on left wrist. Alert dark eyes, slight fidgeting posture. Background: industrial checkpoint corridor with soft blue-green security lighting, scanner archway partially visible, metal barriers and transit signage. Mood: focused but approachable, young security worker mid-shift. Cinematic cyberpunk, naturalistic lighting, documentary-style realism, character portrait, --ar 2:3 --v 6"
 }

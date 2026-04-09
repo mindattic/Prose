@@ -241,5 +241,25 @@
     "SynapTech IrisBloom Ocular Color Modulator",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Central Asian (Kazakh)",
+    "height_cm": 182,
+    "weight_kg": 68,
+    "build": "Lean and elongated, with a dancer's posture and minimal upper body mass — structured for stillness rather than motion",
+    "hair_color": "Dark brown with subtle grey threading at the temples",
+    "hair_style": "Locs wrapped and coiled into a high, intricate crown arrangement at the back of the head",
+    "hair_length": "Long (locs reach mid-back when unbound)",
+    "eye_color": "Dark brown with subtle radial amber geneware pattern radiating from pupil",
+    "skin_tone": "Deep warm brown with golden undertones, reflecting mixed West African and Central Asian ancestry",
+    "complexion": "High, wide cheekbones with angular facial structure; minimal lines despite age; skin condition clear and well-maintained; minimal makeup, usually just lip balm",
+    "distinguishing_marks": [
+      "Faint scar along left temple, approximately 2cm, mostly obscured by hairline — result of early augmentation procedure",
+      "Subtle birthmark on right collarbone, the size of a thumbnail, darker than surrounding skin"
+    ],
+    "visible_augmentations": "Amber radial patterning visible in both irises when direct light hits them — appears as subtle geometric rings around the pupil. Thin prescription lenses worn in simple rectangular frames (non-augmented optical correction). Neural annotation implant is subcutaneous at the base of skull, not visible.",
+    "posture_movement": "Habitually still and centered, minimal fidgeting or unnecessary movement; walks with deliberate slowness; hands often folded in lap or resting on desk; maintains direct eye contact with practiced gentleness; speaks in measured cadence with long pauses between thoughts",
+    "clothing_style": "Tier 3 professional — tailored but understated. Typically wears dark neutral blazers over natural-fiber undershirts; linen or cotton trousers in charcoal or navy; closed-toe shoes (worn leather loafers or flat boots); minimal jewelry beyond a silver signet ring on her right hand. No corpo branding; all pieces chosen for durability and comfort rather than status. Modest, functional, deliberately unfussy."
+  },
+  "image_prompt": "Portrait of a tall, lean 47-year-old Black woman with angular Ghanaian-Kazakh features, high cheekbones, dark skin with golden undertones. Long dark locs wrapped and coiled into an intricate crown at the back of her head. Wearing slender rectangular prescription lenses. Deep-set dark eyes with subtle glowing amber radial geneware patterns visible in the iris. Serene, almost meditative expression. Wearing a dark tailored linen blazer over a cream undershirt. Sitting upright with deliberate stillness, hands folded, emanating calm authority. Cyberpunk minimalist aesthetic, Tier 3 clinic setting with soft warm lighting, bokeh background of medical equipment and a small mirror shrine. Professional, introspective mood. Shot from chest up, professional portrait composition, soft overhead and key lighting. Shallow depth of field. --ar 2:3 --v 6"
 }

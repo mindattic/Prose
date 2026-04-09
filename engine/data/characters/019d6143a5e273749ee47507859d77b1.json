@@ -249,5 +249,25 @@
     "Elena Vasquez-9",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Balkan (Ghanaian-Serb diaspora lineage)",
+    "height_cm": 178,
+    "weight_kg": 89,
+    "build": "Solidly stocky with developed upper body and core strength — the build of someone who has worked a physical job for nine years without vanity about it. Shoulders broad and held with easy confidence.",
+    "hair_color": "Deep blue with violet undertones (color-shift geneware, shifts to violet under emotional stress)",
+    "hair_style": "Shaved head except for a wide stripe of color-shifting hair running front-to-back",
+    "hair_length": "Shaved (body), Medium stripe (reactive geneware)",
+    "eye_color": "Light amber with concentric ring patterning (iris modification, older consumer-grade, slightly irregular)",
+    "skin_tone": "Warm medium brown, exceptionally clear",
+    "complexion": "Clean, maintained skin with obsessive skincare routine (12-hour daily artificial light exposure). No facial hair. Expression typically neutral and still, which reads as either calm competence or unsettling detachment depending on context.",
+    "distinguishing_marks": [
+      "Concentric patterned iris modification in both eyes — amber rings creating a target-like effect, slightly asymmetrical due to older installation quality",
+      "Neural jack port visible at the base of skull, left side — standard Ferrogate operator hardware, integrated with latency dampener"
+    ],
+    "visible_augmentations": "Iris patterning is immediately noticeable upon close eye contact (slightly uncanny due to imprecise installation). Neural operator jack at base of skull visible if head is tilted back or in bright overhead light. Color-reactive hair geneware is visible but reads as deliberate cosmetic choice rather than augmentation unless someone knows to look for the inconsistent shift pattern under stress.",
+    "posture_movement": "Carries themselves with compact, economical movement — nothing wasted. When standing still, completely still in a way that suggests deliberate control rather than rigidity. Walks with measured pace, shoulders level. On the tram, moves through the cab with practiced precision. Off-duty, posture softens slightly but maintains that same underlying steadiness.",
+    "clothing_style": "Ferrogate Transit operator uniform worn with exacting precision — fabric crisp, fit exact, reflective safety panels properly positioned. The uniform fits them like a chosen second skin, not a reluctant requirement. Off-duty: practical Tier 3-4 wear — durable synthetics, neutral colors, minimal branding. No excess, nothing decorative. Well-maintained boots."
+  },
+  "image_prompt": "Cyberpunk character portrait, nonbinary operator, medium-dark skin tone, warm amber eyes with concentric geometric patterning, completely shaved head with wide stripe of deep blue color-reactive hair, solidly built frame with confident posture, wearing precise Ferrogate Transit operator uniform with safety reflective panels, neural jack port visible at base of skull, clinical artificial lighting casting sharp shadows, professional headshot style, photorealistic, dystopian near-future, cool color grading, mechanical and human coexisting, --ar 2:3 --v 6"
 }

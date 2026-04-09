@@ -256,5 +256,24 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Tessera TK-5 Compact 'Clerk'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polish-Malagasy",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with minimal body fat; long-limbed and economical in frame, built for precision rather than strength",
+    "hair_color": "Black, naturally",
+    "hair_style": "Short, closely cropped, maintained with deliberate evenness",
+    "hair_length": "Short",
+    "eye_color": "Pattern-shifting amber to violet (geneware mod, cycles slowly)",
+    "skin_tone": "Warm dark brown with slight undertone suggesting mixed West African and Southeast Asian ancestry",
+    "complexion": "Deliberately unremarkable — clean-shaven face with no visible acne, scars, or distinguishing marks; skin well-maintained but not luxuriously so; expression neutral and controlled",
+    "distinguishing_marks": [
+      "Fine linear scarring across the anterior neck (barely visible, approximately 3cm horizontal line below the larynx) — evidence of previous throat surgery or injury, now mostly healed"
+    ],
+    "visible_augmentations": "None visible. The pattern-shifting irises are visible only under direct observation and are cosmetic. Sub-dermal data-scratch pads in left forearm are not visible unless sleeve is raised. Vocal modulator is internal, undetectable.",
+    "posture_movement": "Stillness punctuated by constant micro-movements — fingers tap, fold, and straighten invisible objects; jaw subtly shifts; eyes scan without apparent focus. Sits with hands positioned on table or lap, ready to move. Walks with economical gait, minimal wasted motion. Projects clinical detachment and wariness.",
+    "clothing_style": "Mid-tier corporate drone neutrals — slate gray composite jacket (Arcturus Systems house brand), muted tan undershirt, charcoal synth-weave trousers, unremarkable black polymer boots. No visible branding or status symbols. Clothing is clean, well-fitted, utterly forgettable. One deviation: occasionally wears a thin silver ring on his left index finger (appears plain, actually contains encrypted data access)."
+  },
+  "image_prompt": "Cyberpunk portrait of a lean dark-skinned male, age 30s, West African-Polish heritage, sharp angular features, cleanly shaven, with mesmerizing pattern-shifting eyes cycling between amber and deep violet. Short black hair, neutral expression. Wearing unremarkable mid-tier corpo gray and slate clothing, sitting in shadow behind a noodle counter. Hands visible, fingers mid-gesture, tapping an invisible rhythm. Low-key underground market setting, dim neon glow from signs reflected in his shifting irises, industrial-gritty GLMZ lower concourse aesthetic, moody cool lighting, cinematic depth of field, photorealistic with subtle cyberpunk color grading, --ar 2:3 --v 6"
 }

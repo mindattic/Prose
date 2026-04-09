@@ -58,7 +58,7 @@
     "A client's newly fabricated identity is being actively investigated by a Tessera compliance auditor — and the client is coming back to Veslemøy demanding a fix, or a refund, or both",
     "She has been hired to forge documents for someone whose description matches the man she gave a new identity to fifteen years ago — a man who should be dead"
   ],
-  "narrative_function": "Quest giver for identity-adjacent storylines; information source on who in Meridian 88 needs a new face and why; moral complication — a criminal with genuine principles",
+  "narrative_function": "Quest giver for identity-adjacent storylines; information source on who in GLMZ needs a new face and why; moral complication — a criminal with genuine principles",
   "augmentations": "Patterned irises (amber-to-green cosmetic); subdermal haptic sensors in fingertips for detecting paper grain and embedded chips (functional, purchased secondhand)",
   "daily_life": "She opens the shop at 10:00, takes consultations by appointment only until 14:00, then spends the afternoon and evening in production. She attends the small ELF shrine at the corner of the Basin's press district every third day, leaving carefully typeset data offerings — formatted perfectly, because she believes sloppiness offends even digital spirits.",
   "affiliation": "Independent operator; loose arrangement with the Gravesend Basin crime family known as the Copper Ledger",
@@ -252,5 +252,25 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Pale Mile"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Scandinavian / Central Asian",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, with the precise economy of movement of someone who has spent two decades bent over detail work. Minimal fat; functional muscle in forearms and shoulders from decades of hand labor.",
+    "hair_color": "Black with natural silver streaking, deliberately uncolored",
+    "hair_style": "Pinned severely back in a tight bun or crown braid, not a strand loose",
+    "hair_length": "Medium (shoulder-length when down, but habitually secured)",
+    "eye_color": "Cosmetically modified: dual-iris implants that shift between deep amber and pale celadon green depending on ambient light and angle, creating an unsettling kaleidoscopic effect",
+    "skin_tone": "Deep umber, warm undertone",
+    "complexion": "Finely lined around eyes and mouth from decades of close work and squinting. Skin is clean, slightly weathered, with the particular dryness of someone who works constantly around solvents. No makeup. Expression is habitually neutral—professional distance is a habit worn as easily as her clothes.",
+    "distinguishing_marks": [
+      "Web of fine white scar tissue covering the dorsal surface of her right hand and extending partway up her wrist—chemical burn damage from a botched laminate batch approximately twenty years prior, the scars raised slightly and almost geometric in their patterning",
+      "Small, precise tattoo on her left inner wrist: a typographic ornament, possibly a printer's mark or dingbat, in black ink, roughly 2cm across"
+    ],
+    "visible_augmentations": "Cosmetic iris modifications are immediately obvious and deliberately unsettling—the dual-tone, patterned nature of her eyes draws attention and holds it slightly too long. Subdermal haptic sensors in fingertips are not visibly obvious but create subtle micro-scarring and slightly raised dermal texture on her fingerpads if examined closely. Reading lenses on a beaded chain around her neck (rarely used; primarily theatrical).",
+    "posture_movement": "Economical and precise. She moves without wasted motion, shoulders slightly forward from decades of desk work. When handling objects—paper, documents, tools—her movements become almost ritualistic in their deliberation. Her hands are steady. She does not fidget. Her default expression is professional distance verging on coldness, but her eyes—those unsettling, color-shifting eyes—suggest someone calculating several steps ahead.",
+    "clothing_style": "Tier 3 / working professional: well-maintained but worn. Dark, neutral palette (charcoal, deep navy, black). Favors structured, practical pieces: heavy cotton or wool blend shirts; precise tailoring despite the garments' age; a long canvas apron (invariably stained with inks and solvents) worn during work hours. Wears good gloves—leather, supple from oil, often removed but always within reach. A long coat of unknown original color, faded to a uniform grey-brown from solvent exposure and time, worn unbuttoned. Practical footwear, well-maintained. No jewelry except the reading lens chain and, possibly, a small religious token worn discretely beneath her collar."
+  },
+  "image_prompt": "44-year-old woman with deep umber skin and silver-streaked black hair pinned severely back, compact and wiry build from decades of detail work, wearing a faded long canvas apron stained with printer's inks over a dark wool shirt. Her most striking feature: cosmetic iris implants that shift between deep amber and pale green depending on the light, creating an unsettling kaleidoscopic dual-tone effect. Fine white scar tissue maps the dorsal surface of her right hand from an old chemical burn. Reading lenses hang on a beaded chain around her neck. She is standing in a waterlogged underground print shop, surrounded by typesetting equipment, ink bottles, and stacks of documentation, harsh fluorescent light casting sharp shadows. Her posture is precise and economical, hands steady and composed. Mood: professional coldness, meticulous attention to detail, quiet menace. Cyberpunk noir, hyper-realistic, shot like a forensic portrait. --ar 2:3 --v 6"
 }

@@ -184,5 +184,25 @@
     "Gravimetric Collapse Charge GCC-9",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Igbo) / Iberian Portuguese",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and angular, with defined musculature maintained through deliberate discipline rather than intensity. Moves with economical precision — no wasted motion. Shoulders slightly narrow, chest flat, legs long. The body of someone who designs rather than builds.",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Tight fade with a geometric pattern (interlocking hexagons or circuit-board motif) razored into the right side, refreshed every ten days with the consistency of a scheduled system update",
+    "hair_length": "Short (approximately 8mm on top, faded to 2mm on sides)",
+    "eye_color": "Warm brown with faint golden undertone; subtle ocular overlay implant visible as a soft luminescence in low light, like an old monitor warming up",
+    "skin_tone": "Light brown with warm undertones — the result of Igbo and Portuguese ancestry, even-toned across the face and body",
+    "complexion": "Meticulously groomed. Skin is clear and well-maintained, suggesting access to quality skincare and time spent on appearance. Sharp jawline, high cheekbones. The kind of handsome that reads as *managed* — attractive in a way that requires active maintenance. No visible blemishes or scarring on the face.",
+    "distinguishing_marks": [
+      "Cosmetic cat ears (geneware modification): silver-grey fur with black-tipped inner edges, approximately 8cm tall, positioned naturally atop the skull where human ears would sit. They move subtly with emotional states and environmental sound — a tell he hasn't learned to fully suppress.",
+      "Fine white scarring in a branching pattern across the outer edge of the right hand and wrist — visible evidence of the subdermal haptic filament mesh installation, now fully integrated but leaving a faint constellation of entry points beneath the skin."
+    ],
+    "visible_augmentations": "The cat ears are immediately visible and somewhat incongruous with his otherwise corporate aesthetic — they suggest a younger decision he's carried into middle age. The right hand's fine scarring and the subtle shimmer of haptic filaments under the skin are visible only on close inspection or when his hand moves through light. The ocular overlay implant is only visible in dim lighting, as a faint glow. All augmentations are professional-grade rather than flashy — nothing that screams 'modded,' everything that whispers 'enhanced.'",
+    "posture_movement": "Sits with perfect posture in meetings; stands with the slight forward lean of someone ready to move. Moves economically, with precision. His hands are eloquent — designer's hands that gesture through space as though mapping geometry. The cat ears twitch reflexively when processing complex information or when he's absorbing client absurdity without visible strain. When alone and working (especially during the 2-5 AM sessions), his posture relaxes but his focus intensifies. He has a habit of touching the geometric pattern on his head when thinking, as though checking a system status.",
+    "clothing_style": "Tier 1-2 professional aesthetic with deliberate restraint. Favors high-end minimalism: tailored charcoal or navy shirts (expensive fabrics, understated brands), neutral trousers, minimal jewelry except for a thin silver band on his left ring finger (legacy of the ended relationship that also gave him the ears — he doesn't remove it). Shoes are always clean, usually monochrome (grey, black, white). In client meetings, adds a lightweight Tessera-branded or neutral blazer. During late-night personal projects, trades polish for comfort: loose dark clothing, often with the technical precision of fabrics that don't snag on haptic mesh. His entire wardrobe communicates 'professional,' 'trustworthy,' 'will deliver on time' — the opposite of the dense, strange, unpolished work he creates between 2 and 5 AM."
+  },
+  "image_prompt": "A 42-year-old man with angular Igbo-Portuguese features, light brown skin, tight fade haircut with geometric circuit-board pattern razored into one side. Cosmetic silver-grey cat ears tipped in black atop his head. Right hand shows fine white scarring and subtle subdermal shimmer. Warm brown eyes with faint ocular implant glow. Lean, angular build with perfect posture. Wearing tailored charcoal shirt and neutral trousers, minimalist aesthetic, Tier 1 professional polish. Sitting in a modern studio space with soft blue-white ambient light, VR design interface glowing in the background. Mood: composed, controlled, with subtle tension beneath the surface. Sharp focus on face and hands. Cyberpunk noir studio setting, professional yet hints of creative obsession. --ar 2:3 --v 6"
 }

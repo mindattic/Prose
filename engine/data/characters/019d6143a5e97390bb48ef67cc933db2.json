@@ -256,5 +256,25 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Croatian / Ghanaian",
+    "height_cm": 163,
+    "weight_kg": 54,
+    "build": "Compact and wiry, densely muscled from years of handling biohazard containers and processing equipment; economical movements with no excess",
+    "hair_color": "Copper dyed on crown; natural dark brown on sides where regrown stubble shows",
+    "hair_style": "Undercut with aggressive copper dye on top, shaved close on sides",
+    "hair_length": "Short",
+    "eye_color": "Pale hazel-gold with vertical cat-slit pupils (geneware mod, age 22)",
+    "skin_tone": "Light brown with warm undertones, reflecting West African and Mediterranean ancestry",
+    "complexion": "Sharp-featured with high prominent cheekbones; skin shows minor chemical scarring on forearms (faded, managed); perpetually clean despite occupation, with a slightly austere appearance",
+    "distinguishing_marks": [
+      "Chemical burn scars along inner forearms in pale lines, partially obscured by dermal barrier subcutaneous implant",
+      "Faint biosafety tattoo on inner right wrist — small hazard symbol with certification number, occupational marker"
+    ],
+    "visible_augmentations": "Vertical cat-slit pupils in pale hazel irises (unmistakable geneware signature). No other visible chrome. Subdermal chemical barrier and olfactory enhancement are invisible.",
+    "posture_movement": "Moves with precision and economy — no wasted motion. Slight forward tilt when concentrating. Hands positioned ready, fingers often alert as though evaluating a space for contamination vectors. Eyes track detail obsessively.",
+    "clothing_style": "Almost exclusively in immaculate work coveralls — Aurochs Medical Complex issue, graphite gray, modified with extra cargo pockets and sealed seams. Decontamination protocol means they are perpetually pristine despite the work. Beneath: plain gray thermals. Worn tactical boots rated for chemical splash. Thin nitrile gloves often tucked into coverall waistband even off-hours. Tier 4 working-class aesthetic with obsessive maintenance."
+  },
+  "image_prompt": "Cyberpunk character portrait, nonbinary bio-waste technician, compact wiry build, light brown skin with high cheekbones, shaved sides with aggressive copper-dyed hair on crown, striking pale hazel eyes with vertical cat-slit pupils (geneware modification), sharp-featured face. Wearing immaculate graphite gray medical coveralls with extra cargo pockets, sealed seams, tactical boots. Faint chemical scarring visible on inner forearms. Forward-focused posture, hands alert and precise. Geartown industrial setting with bioluminescent hazard warning lights in soft background, cool cyan and amber clinical lighting, slight fog of decontamination mist. Cinematic, sharp focus on intense eyes and facial detail, moody near-future medical facility aesthetic. --ar 2:3 --v 6"
 }

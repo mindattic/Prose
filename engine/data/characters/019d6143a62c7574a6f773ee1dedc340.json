@@ -155,7 +155,7 @@
       "loyalty_break": 10
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "technical expertise with augmentation systems",
       "exceptional close-quarters combat"
     ],
@@ -282,5 +282,28 @@
     "Slagworks Industrial",
     "Clover"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Lean and wiry with dense musculature earned through decades of close-quarters work. Shoulders broad but not bulky; the kind of compact strength that doesn't announce itself until it moves.",
+    "hair_color": "Steel gray with faded copper undertones",
+    "hair_style": "Pulled back in a tight, practical braid. No vanity in it.",
+    "hair_length": "Medium",
+    "eye_color": "Amber-brown, slightly yellowed at the whites from age and augmentation feedback",
+    "skin_tone": "Deep bronze with gray undertones — weathered North African-Scandinavian blend",
+    "complexion": "Heavily lined, particularly around the eyes and mouth. Weathered rather than aged poorly. Skin bears the texture of old scar tissue, partially smoothed by time. Strong jawline, asymmetrical from an old fracture that healed without surgical correction.",
+    "distinguishing_marks": [
+      "Jagged scar running from left temple to left jawline, approximately 8cm, pale and silvery with age.",
+      "Burn scar across the back of both hands — irregular, circa 20% surface area, from an old thermal incident.",
+      "Linear scar bisecting her right eyebrow, thin and white.",
+      "Tattoo on inner left forearm — a minimalist circuit diagram in faded indigo, runner's mark from early 2180s.",
+      "Puncture scar clusters along both inner forearms where the blade mounts were installed, now barely visible beneath the skin."
+    ],
+    "visible_augmentations": "Cyberears — industrial-grade, satin black with chrome contact points, flush-mounted where her natural ears should be. No attempt at organic mimicry; they read as clearly artificial. When she concentrates, the directional microphones visibly swivel. Subdermal weapon mounts along both forearms create subtle ridges under the skin when tensed, and thin vertical scars mark the deployment points.",
+    "posture_movement": "Economical and precise. She doesn't move unless there's a target or a reason. When she does move, it's with the controlled fluidity of someone trained to operate in confined spaces — minimal wasted motion, shoulders low, center of gravity forward. Her head turns before her body does, a habit born from the cyberears' directional input. At rest, she appears coiled rather than relaxed.",
+    "clothing_style": "Tier 5 practical — worn dark synthetics (black, charcoal, deep navy) that don't snag or reflect. Cargo pants with reinforced knees and thighs. A fitted, long-sleeved compression shirt under a gray technical jacket with internal pockets and matte finish. Heavy boots with reinforced ankles and grip soles suitable for vertical surfaces. No logos, no corporate branding, no jewelry. The outfit is designed to be forgettable in poor lighting and invisible in shadows. Everything fits close to the body — nothing loose that could be grabbed in a fight."
+  },
+  "image_prompt": "Cyberpunk character portrait, weathered 63-year-old woman with steel gray hair in a tight braid, deep bronze skin with gray undertones, scarred face like a transit diagram, amber-brown eyes with yellowed whites. Prominent chrome cyberears replacing natural ears, industrial black finish with visible directional microphones. Tight dark synthetics, long-sleeved compression shirt, gray technical jacket. Scars visible on hands and face — old burns and blade-work marks. Wiry athletic build, coiled posture, cold neutral expression. Underground bunker lighting with harsh LED shadows, concrete walls behind her, gritty and worn. Cinematic lighting, photorealistic, moody and tense atmosphere. Not cyberpunk cliché — rawness and survival. --ar 2:3 --v 6"
 }

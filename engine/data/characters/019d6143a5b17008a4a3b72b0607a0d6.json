@@ -226,5 +226,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Stalker"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "East African (Kenyan) / Balkan (Serbian)",
+    "height_cm": 162,
+    "weight_kg": 52,
+    "build": "Slight and wiry, with the precise musculature of someone who spends hours in focused manual work rather than exertion. Her frame carries almost no excess; she moves like she's rationing her own physical presence.",
+    "hair_color": "Natural black with fine texture",
+    "hair_style": "Worn in a high, deliberately unruly cloud, often escaping its own containment after long shifts; she pulls it back absently with her fingers but rarely commits to restraining it",
+    "hair_length": "Long",
+    "eye_color": "Modified: slow spiral pattern of amber and deep violet, the spirals rotating outward from the pupil in a mesmerizing concentric design",
+    "skin_tone": "Warm medium brown with subtle undertones suggesting mixed heritage; clear and even",
+    "complexion": "Fine-featured, angular face with high cheekbones and a sharp jawline. Minimal facial hair. Skin shows the exhaustion of Sub-Level 3 work—slight darkness under the eyes, but the skin itself is well-maintained. Faint stress lines around her mouth from concentration during calibration sessions.",
+    "distinguishing_marks": [
+      "Barely visible surgical scar at the base of her skull (approximately 2cm), concealed most days by her hairline but occasionally exposed when hair shifts",
+      "Small crescent-shaped scar on the inner left wrist from an early augmentation calibration accident at age 26",
+      "No tattoos; she considers permanent marks a personal violation after seeing too many integration failures"
+    ],
+    "visible_augmentations": "The spiral iris modification is immediately striking and unsettling—it draws the eye and creates an almost hypnotic effect. The neural interface port at the base of her skull is usually hidden by hair but occasionally visible at the nape of her neck as a slight raised disc with subtle threading. Her fingertips occasionally display faint LED indicators when her subdermal haptic layer is in active calibration mode. She wears her Aurochs Medical ID badge on her lapel constantly, even off-shift.",
+    "posture_movement": "Moves with compressed efficiency, as though taking up space is a minor inconvenience. Her hands are her most expressive feature—they move with surgical precision and subtle awareness of space, constantly micro-adjusting. She stands slightly forward-leaning, head tilted as though listening to something just below audible range. Makes intense eye contact during work but avoids it socially.",
+    "clothing_style": "Tier 3 medical professional: Aurochs-issued sterile tunic in charcoal gray with the Medical Complex logo (a spiral helix) embroidered on the left shoulder. Under it, typically a plain long-sleeve undershirt in cream or pale blue. Black synthmesh trousers with reinforced knees from frequent kneeling in calibration pods. Worn black slip-on medical shoes with grip soles. Off-shift clothing maintains the same neutral palette and utilitarian cut—no ornamentation, no brands, nothing that signals affiliation beyond Aurochs. Always wears her ID badge. Her clothing shows signs of old stains (calibration fluid, probably) that never quite came out, which she ignores."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 34-year-old East African-Balkan woman with slight, wiry build and warm brown skin, wearing a Tier 3 medical tunic in charcoal gray. Her most striking feature: hypnotic eyes with slow amber-and-violet spiral patterns rotating from the pupils outward. Natural black hair in a high, intentionally disheveled cloud. Faint surgical scar barely visible at the base of her skull where neural interface port sits. Her hands are active and precise, positioned as if about to calibrate delicate technology. ID badge clipped to lapel. Setting: sterile Sub-Level 3 medical complex with cold clinical lighting, soft blue-white LED illumination highlighting her face and the intricate iris patterns. Mood: focused, slightly exhausted, intellectually intense, a woman standing at the border between human and machine and wondering which side she belongs to. Medical aesthetic, precise and anatomical. Shot as close-up character portrait, hyper-detailed on eyes and hands. --ar 2:3 --v 6"
 }

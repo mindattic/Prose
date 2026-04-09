@@ -13,7 +13,7 @@
   "age": 59,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Armitage and Milwaukee",
-  "description": "Daulet Edlund-Gyan is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 59, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a demolitions expert out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Edlund-Gyan is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Daulet Edlund-Gyan is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 59, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a demolitions expert out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDaulet Edlund-Gyan is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.91,
@@ -43,7 +43,7 @@
       "Assumes the worst in corporate people, missing the rare ones who could be allies",
       "Assumes their skill set is more transferable than it actually is"
     ],
-    "secret": "Daulet Edlund-Gyan sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Daulet Edlund-Gyan sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "A former associate resurfaces with evidence that could destroy Daulet Edlund-Gyan's reputation — and a price for silence",
-    "A crew member from Daulet Edlund-Gyan's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Daulet Edlund-Gyan's past shows up in GLMZ, carrying old grievances and new chrome",
     "Daulet Edlund-Gyan intercepts intelligence about a threat to their district and must decide between profit and protection"
   ],
   "narrative_function": "Daulet Edlund-Gyan is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
@@ -278,7 +278,7 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Geartown",
     "Lazarus LX-2 'Lab Rat'",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
@@ -286,5 +286,26 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Athletic and lean with defined musculature — the physique of someone who maintains strength through discipline rather than bulk. Shoulders broad, core tight, no excess. Moves like a dancer or climber, economical and precise.",
+    "hair_color": "Steel gray with natural dark roots showing",
+    "hair_style": "Pulled back in a tight, functional braid; pragmatic rather than fashionable",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown",
+    "skin_tone": "Medium-warm — the mixed heritage of Scandinavian and West African ancestry visible in undertone and structure",
+    "complexion": "Sharp cheekbones, angular jaw. Skin shows the wear of nocturnal work and age — fine lines around eyes and mouth, minor scarring on left temple. Complexion is clear but weathered, the kind of skin that doesn't see sunlight regularly.",
+    "distinguishing_marks": [
+      "Neural interface jack at base of skull — chrome port, roughly 2cm diameter, slightly raised and scarred around the edges from repeated use",
+      "Burn scar on right forearm, approximately 8cm long, pale and smooth — old demolition job gone wrong",
+      "Tactical tattoo on left bicep: schematic of a blast radius pattern in black ink, faded from age"
+    ],
+    "visible_augmentations": "Neural interface jack at base of skull is the only visible chrome. The thermal masking system is subcutaneous and invisible, but someone who works with her might notice her heat signature fluctuates or disappears entirely on thermal imaging.",
+    "posture_movement": "Stands with a slight forward lean, weight balanced on the balls of her feet — ready. Moves without wasted motion, joints loose but controlled. When relaxed, there's still an underlying tension, like a loaded spring. Hands are steady and precise.",
+    "clothing_style": "Tier 3-4 functional aesthetic. Black reinforced cargo pants with multiple pockets and wear patterns from equipment. Dark fitted shirt — often with a tactical vest or harness over top, industrial grade. Steel-toed boots, well-maintained. A long coat or jacket in charcoal or dark olive, worn and practical. No corporate branding. All pieces chosen for durability and utility, not fashion. Jewelry is minimal — worn metal wedding band on left ring finger, no other ornamentation."
+  },
+  "image_prompt": "Professional portrait of a 59-year-old woman, athletic lean build, steel gray hair in a tight braid, dark brown eyes, medium-warm skin tone with Scandinavian and West African heritage visible in facial structure. Sharp cheekbones, faint lines around eyes. Visible neural interface jack port at base of skull in polished chrome. Burn scar on right forearm. Wearing dark tactical cargo pants, fitted black shirt, industrial-grade harness or vest. Standing in three-quarter view with shoulders forward, balanced posture. Nocturnal and worn expression, steady gaze. Geartown industrial backdrop — metal scaffolding, neon glow, dim cyberpunk lighting. Cool blue and orange color grading. Hard light from above casting shadows. Cyberpunk noir, technical and dangerous. High detail, character portrait. --ar 2:3 --v 6"
 }

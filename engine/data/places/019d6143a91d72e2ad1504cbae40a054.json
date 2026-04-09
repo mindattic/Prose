@@ -8,7 +8,7 @@
     "The Quarry",
     "North Shore"
   ],
-  "description": "Alpena sits on the Lake Huron coast where the Thunder Bay River meets the lake, and its economy has been built on the same thing for two centuries: limestone. The quarries surrounding the city produce construction-grade limestone, aggregate, and chemical-grade calcium carbonate for the GLM's construction and manufacturing sectors. Palladian Construction holds sovereign extraction rights over the primary quarry complex — a 30-square-kilometer open pit that has been expanding since the twentieth century and that is now visible from orbit as a pale scar in the Michigan forest.\n\nThe city is small, remote, and thoroughly dependent on the quarry. Palladian employs 60% of the working population directly, and the remainder services Palladian's workers. The arrangement has the stability and the suffocation of any company town — employment is steady, wages are adequate, and the company's interests are the city's interests because no alternative exists. The municipal government administers residential services. Palladian administers everything that matters. Attempts to diversify the economy — tourism, forestry, aquaculture — have repeatedly failed because Palladian's extraction operations contaminate the waterfront, clear the forests, and alter the lake chemistry in ways that make alternative industries unviable. This is not an accident.\n\nLake Huron's coast north of Alpena is the most sparsely populated shoreline in the lower Great Lakes — forest, limestone bluffs, and automated Palladian extraction monitoring stations. The Thunder Bay National Marine Sanctuary, designated to protect the hundreds of shipwrecks on the lake bottom, technically still exists as a federal protection zone, but Palladian's discharge into the lake has made the water turbid enough to render the wrecks invisible from the surface. The sanctuary persists as a legal entity and an ecological ghost. Grindstone Shore is a place where one industry has consumed everything else, not through malice but through the simple mathematics of extraction: the quarry is profitable, and profitability eliminates competition.",
+  "description": "Alpena sits on the Lake Huron coast where the Thunder Bay River meets the lake, and its economy has been built on the same thing for two centuries: limestone. The quarries surrounding the city produce construction-grade limestone, aggregate, and chemical-grade calcium carbonate for the GLMZ's construction and manufacturing sectors. Palladian Construction holds sovereign extraction rights over the primary quarry complex — a 30-square-kilometer open pit that has been expanding since the twentieth century and that is now visible from orbit as a pale scar in the Michigan forest.\n\nThe city is small, remote, and thoroughly dependent on the quarry. Palladian employs 60% of the working population directly, and the remainder services Palladian's workers. The arrangement has the stability and the suffocation of any company town — employment is steady, wages are adequate, and the company's interests are the city's interests because no alternative exists. The municipal government administers residential services. Palladian administers everything that matters. Attempts to diversify the economy — tourism, forestry, aquaculture — have repeatedly failed because Palladian's extraction operations contaminate the waterfront, clear the forests, and alter the lake chemistry in ways that make alternative industries unviable. This is not an accident.\n\nLake Huron's coast north of Alpena is the most sparsely populated shoreline in the lower Great Lakes — forest, limestone bluffs, and automated Palladian extraction monitoring stations. The Thunder Bay National Marine Sanctuary, designated to protect the hundreds of shipwrecks on the lake bottom, technically still exists as a federal protection zone, but Palladian's discharge into the lake has made the water turbid enough to render the wrecks invisible from the surface. The sanctuary persists as a legal entity and an ecological ghost. Grindstone Shore is a place where one industry has consumed everything else, not through malice but through the simple mathematics of extraction: the quarry is profitable, and profitability eliminates competition.",
   "atmosphere": {
     "sights": [
       "The quarry complex — a pale wound in the green forest, terraced walls descending into limestone depths",
@@ -32,7 +32,7 @@
     "tags": []
   },
   "demographics": "Population 14,000. The smallest and most homogeneous settlement on the Lake Huron coast. Multi-generational quarry families, Palladian corporate employees, and a small service population. Tier 2 across the board. Nobody is rich. Nobody is destitute. Everybody breathes limestone.",
-  "economy": "Limestone extraction and processing (Palladian Construction). Monoculture in the purest sense — one industry, one employer, one economic dependency. The port handles limestone export to the construction markets of the southern GLM. Local commerce exists at the subsistence level required to keep the workforce functional.",
+  "economy": "Limestone extraction and processing (Palladian Construction). Monoculture in the purest sense — one industry, one employer, one economic dependency. The port handles limestone export to the construction markets of the southern GLMZ. Local commerce exists at the subsistence level required to keep the workforce functional.",
   "power_structure": "Palladian Construction. The municipal government exists because someone has to maintain the roads between the quarry and the port. The mayor is a Palladian retiree. The city council includes three current Palladian employees. The distinction between corporate governance and municipal governance is academic.",
   "dangers": [
     "Quarry expansion — the extraction zone is growing, and the city's footprint is not",
@@ -42,7 +42,7 @@
     "Isolation — Alpena is 150 kilometers from the nearest significant settlement, and the road infrastructure reflects Palladian's priorities, not the residents'"
   ],
   "opportunities": [
-    "Quarry access — limestone and calcium carbonate have construction and chemical applications across the GLM",
+    "Quarry access — limestone and calcium carbonate have construction and chemical applications across the GLMZ",
     "The marine sanctuary's shipwrecks — legally protected, physically obscured, and containing historical artifacts that certain collectors would pay for",
     "Palladian's operational data — extraction rates, reserves estimates, expansion plans — is valuable competitive intelligence",
     "The remote shoreline north of Alpena provides unmonitored lake access for operations that require discretion"
@@ -80,7 +80,7 @@
     },
     {
       "name": "Palladian Port",
-      "description": "The limestone export facility — the economic connection between the quarry and the rest of the GLM",
+      "description": "The limestone export facility — the economic connection between the quarry and the rest of the GLMZ",
       "tags": []
     }
   ],

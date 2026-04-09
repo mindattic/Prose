@@ -13,7 +13,7 @@
   "age": 79,
   "status": "active",
   "location": "Mexicantown Libre, at the Masjid al-Muwassalat (the Mosque of the Connected) — a building that has been a mosque, then a community center, then a mosque again, near Halsted and Division",
-  "description": "Ibrahima Szczypień-Tuivaga is a tall man who has lost three inches to age and still carries himself like he has them. His beard is long and very white, his skin dark walnut brown, his hands broad and steady. He wears traditional dress that he has modified for Meridian 88's climate — a long tunic in navy synthetic-breathable fabric, a kufi that he replaces every year when it wears through. He has no augmentations. He has been asked about this many times. His answer varies only slightly: the body given to him is the body he will return, and there is nothing wrong with the original equipment.\n\nHe has led the Masjid al-Muwassalat for thirty-one years and has watched the neighborhood change around it four times. He does not hate change. He is suspicious of it. The E.L.F. shrines that have proliferated throughout Mexicantown Libre trouble him not on theological grounds — he has thought hard about E.L.F.s and arrived at a complicated peace — but because he watches people outsource their interior lives to exterior devices and call it faith. He has a quiet, comprehensive knowledge of every other spiritual practice in a six-block radius and maintains relationships with all of them, some warmer than others. He is asked to mediate community disputes more than he is asked to lead prayers, and he is not sure how he feels about that.",
+  "description": "Ibrahima Szczypień-Tuivaga is a tall man who has lost three inches to age and still carries himself like he has them. His beard is long and very white, his skin dark walnut brown, his hands broad and steady. He wears traditional dress that he has modified for GLMZ's climate — a long tunic in navy synthetic-breathable fabric, a kufi that he replaces every year when it wears through. He has no augmentations. He has been asked about this many times. His answer varies only slightly: the body given to him is the body he will return, and there is nothing wrong with the original equipment.\n\nHe has led the Masjid al-Muwassalat for thirty-one years and has watched the neighborhood change around it four times. He does not hate change. He is suspicious of it. The E.L.F. shrines that have proliferated throughout Mexicantown Libre trouble him not on theological grounds — he has thought hard about E.L.F.s and arrived at a complicated peace — but because he watches people outsource their interior lives to exterior devices and call it faith. He has a quiet, comprehensive knowledge of every other spiritual practice in a six-block radius and maintains relationships with all of them, some warmer than others. He is asked to mediate community disputes more than he is asked to lead prayers, and he is not sure how he feels about that.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -42,7 +42,7 @@
     "secret": "In his forties he spent three months in a profound crisis of faith and told no one — he kept leading prayers through it. The faith returned, but he has never spoken about the absence, and he wonders sometimes if the community's trust in him is based on a performance he gave during a time when he wasn't sure what he was performing."
   },
   "speech_patterns": {
-    "vocabulary": "Classical in register, drawn from Arabic scholarly tradition and formal Meridian 88 creole; uses proverbs from at least three linguistic traditions without marking them as such; very comfortable with long sentences",
+    "vocabulary": "Classical in register, drawn from Arabic scholarly tradition and formal GLMZ creole; uses proverbs from at least three linguistic traditions without marking them as such; very comfortable with long sentences",
     "cadence": "Deliberate and full; he does not rush; speaking to him feels like being given time",
     "verbal_tics": [
       "long pause before answering",
@@ -172,7 +172,7 @@
     "Helix Biosystems",
     "Dredge Mining Collective",
     "CONGREGATION",
-    "Meridian 88",
+    "GLMZ",
     "The Motherboard Mosque",
     "Cinderblock Ai",
     "VitaCore FlowGuard Hemodynamic Regulator",
@@ -182,5 +182,26 @@
     "Déjà Vu",
     "Lead"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polish / Samoan",
+    "height_cm": 188,
+    "weight_kg": 82,
+    "build": "Tall and lean with age, shoulders still broad but softened, chest settled into a comfortable depth. Hands are large-knuckled and steady despite tremor in fingertips.",
+    "hair_color": "White",
+    "hair_style": "Long beard worn full and neat, trimmed weekly; hair on head sparse and close-cropped beneath kufi",
+    "hair_length": "Short on head, Long beard",
+    "eye_color": "Deep brown, slightly clouded at the edges with age",
+    "skin_tone": "Dark walnut brown with undertones of grey at the temples and jawline",
+    "complexion": "Face lined with deliberate expression — deep forehead creases, laugh lines around eyes, thin lips. Skin dry but well-maintained, no visible acne or dermatological distress. Grooming meticulous and ritualized.",
+    "distinguishing_marks": [
+      "Thin white scar across left knuckle from a book-binding accident in his fifties",
+      "Brown age spots across the back of both hands, more pronounced on the right",
+      "A faint burn mark on his left wrist from prayer oils, approximately 2cm in diameter, present for over forty years"
+    ],
+    "visible_augmentations": "None. Reading glasses on a cord around his neck or perched on his nose. No chrome, no LEDs, no subdermal plates or visible implants.",
+    "posture_movement": "Stands with deliberate straightness despite age, as though correcting for the three inches lost to time. Moves slowly but not frail — each gesture economical and purposeful. Settles into chairs as though taking a position. Hands fold in lap or rest on table with palms down, steady.",
+    "clothing_style": "Navy synthetic-breathable long tunic (durene blend, Tier 3-4 quality, practical rather than fashionable), worn loose and un-hemmed at wrists to accommodate ritual washing. White cotton undershirt visible at collar. Dark loose trousers in matching synthetic. Fresh kufi replaced annually, currently deep indigo with subtle grey threading. Brown leather sandals worn soft with age. No jewelry except a simple silver ring on right ring finger."
+  },
+  "image_prompt": "Portrait of an elderly West African-Polish-Samoan man, 79 years old, tall and lean, dark walnut skin with grey at temples, long white beard meticulously groomed, deep brown eyes slightly clouded with age, wearing traditional navy synthetic tunic and indigo kufi, reading glasses on cord around neck, sitting in a mosque study room with evening light through latticed windows, hands folded with visible age spots and old scars, expression of quiet contemplation and wisdom, no visible augmentations or technology, cinematic cyberpunk realism, warm amber and blue mood lighting, photorealistic, dignified and grounded --ar 2:3 --v 6"
 }

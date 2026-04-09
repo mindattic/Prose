@@ -13,7 +13,7 @@
   "age": 32,
   "status": "active",
   "location": "The Circuit — neon-lit entertainment and vice district, near Milwaukee and Damen",
-  "description": "Nneka Sjostrom-Kwarteng is compact and densely muscled, built low to the ground like something designed to survive impacts. At 32, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a infiltrator out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Nneka Sjostrom-Kwarteng agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Nneka Sjostrom-Kwarteng is compact and densely muscled, built low to the ground like something designed to survive impacts. At 32, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a infiltrator out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Nneka Sjostrom-Kwarteng agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.24,
@@ -62,7 +62,7 @@
   "story_hooks": [
     "A Tier 4 executive offers Nneka Sjostrom-Kwarteng a permanent position — the pay is obscene and the strings are invisible until they tighten",
     "Nneka Sjostrom-Kwarteng intercepts intelligence about a threat to their district and must decide between profit and protection",
-    "A crew member from Nneka Sjostrom-Kwarteng's past shows up in Meridian 88, carrying old grievances and new chrome"
+    "A crew member from Nneka Sjostrom-Kwarteng's past shows up in GLMZ, carrying old grievances and new chrome"
   ],
   "narrative_function": "Nneka Sjostrom-Kwarteng is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
   "augmentations": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters. Subdermal weapon mount — pop-out blade in each forearm",
@@ -275,11 +275,33 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Circuit",
     "The Gradient Compact",
     "Slagworks Industrial",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Compact and densely muscled, built low to the ground with the proportions of someone engineered for impact absorption and close-quarters work. Broad shoulders taper to a lean waist. Every visible muscle is defined and functional.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Close-cropped, practical, no styling",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint reflective sheen from subcutaneous neural enhancement",
+    "skin_tone": "Medium brown with warm undertones, melanin-rich complexion characteristic of mixed West African and Northern European ancestry",
+    "complexion": "Angular face with a strong jaw. Scar tissue maps across his left cheekbone and temple in pale, raised lines. A thin scar bisects his upper lip. Stubble is perpetual — either by design or neglect. His expression in repose is flat, almost predatory.",
+    "distinguishing_marks": [
+      "Pale keloid scar running from left temple to cheekbone, approximately 8cm, likely from edged weapon or shrapnel",
+      "Thin white scar bisecting upper lip, suggesting old dental trauma or knife wound",
+      "Network of fine scars across knuckles and wrist bones, consistent with repeated hand-to-hand combat",
+      "Faded tattoo on right forearm — geometric pattern in dark blue, partially obscured by cyberware integration seams"
+    ],
+    "visible_augmentations": "Cyberears are the dominant visual signature — sleek chrome replacements with visible directional pickup arrays and sound-dampening ports. Integration seams run along his jawline and behind what remains of his natural ears. Faint luminescence in the ear chambers suggests active electronic systems. Both forearms bear surgical scars and chrome-edged ports along the inner wrist — the weapon mounts are visible as subtle panel lines when his skin is taut.",
+    "posture_movement": "Moves with minimal wasted motion — economy of gesture suggests either military training or years of infiltration work. His center of gravity is low. He doesn't fidget. In conversation, he maintains unbroken eye contact in a way that makes most people uncomfortable. His hands remain visible and still unless he's working. Breathing is shallow and controlled even at rest.",
+    "clothing_style": "Tier 3-4 functional minimalism. Dark synthweave jacket with internal pockets and subdued reflective panels for low-light movement. Unmarked black cargo pants with reinforced seams and hidden utility slots. Steel-toed boots, scuffed and well-maintained. No corporate logos, no gang colors, no fashion statements. Everything is optimized for concealment, durability, and rapid movement. When covering his identity as 'mundane,' he switches to generic corporate casual — polo shirts, neutral slacks, the kind of uniform that erases identity in a crowd."
+  },
+  "image_prompt": "Cyberpunk portrait of a compact, densely muscled 32-year-old man with dark brown skin and short dark hair, intense angular features with visible scar tissue mapping across left cheekbone and lip. Prominent chrome cyberears with directional microphone arrays and glowing internal circuits replacing natural ears. Dark eyes with subtle reflective sheen. Forearms show surgical scars and chrome weapon mount ports along wrists. Wearing dark synthweave tactical jacket and black cargo pants, steel-toed boots, minimalist and functional clothing. Low center of gravity, predatory stillness, unbroken eye contact. Neon-lit Circuit district background with holographic vice advertisements and rain-slick streets. Moody cyberpunk lighting with cool blue and purple neon reflecting off wet pavement. Cinematic, gritty realism, high detail on chrome augmentations and scar tissue. --ar 2:3 --v 6"
 }

@@ -229,5 +229,25 @@
     "Street Custom 'Gallows' Recurve Bow",
     "IRONLIMB Spectre SV-4 Stealth Arm"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Hungarian / West African / Kazakh",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Compact and wiry, with the lean musculature of someone who moves constantly through tight industrial spaces. Shoulders slightly narrower than average, no excess fat. Moves with practiced economy of motion.",
+    "hair_color": "Dark brown, nearly black",
+    "hair_style": "Shaved close to scalp in a practical buzz cut, maintenance-minimal",
+    "hair_length": "Shaved",
+    "eye_color": "Warm brown with a tired, intelligent depth",
+    "skin_tone": "Golden-brown, with the warm undertones of West African and Central European mixed heritage",
+    "complexion": "Youthful features—sharp cheekbones, angular jawline—undercut by the eyes of someone who has seen too many shift cycles. Slight permanent crease between eyebrows from concentration. Skin has a faint sheen from constant exposure to industrial humidity and enzymatic cleaner residue. Clean-shaven, pragmatic grooming.",
+    "distinguishing_marks": [
+      "Elaborate bioluminescent tattoo running from behind left ear down the left side of neck, depicting fractal branching patterns in cool blue-green that pulses softly and can be modulated by conscious effort",
+      "Faint chemical burns on the knuckles of both hands—thin white lines, occupational hazard from early career mistakes with caustic waste"
+    ],
+    "visible_augmentations": "Bioluminescent neck tattoo (active, blue-green glow). Mucous membrane filters are internal and invisible, though a faint clinical scar is barely visible inside the left nostril if examined closely. Industrial-grade filter cartridge visible in shirt pocket.",
+    "posture_movement": "Shoulders slightly forward from habitually moving through cramped sub-level corridors. Movements are efficient and deliberate, with minimal wasted energy. Often stands with weight on one leg, the other slightly bent—the posture of someone used to long shifts. Head tilts slightly when listening, giving the impression of genuine attention.",
+    "clothing_style": "Standard Aurochs Medical Complex disposal coveralls in high-visibility orange with reflective piping, name 'IGNÁC' stenciled across left chest in utilitarian block letters. Underneath, practical undershirt (currently charcoal gray, sweat-stained at collar). Steel-toed composite boots, scuffed and worn. Heavy-duty nitrile glove cuff folded at left wrist. Pervasive faint smell of industrial enzymatic cleaner—the scent signature of his work."
+  },
+  "image_prompt": "Cyberpunk portrait, Tier-5 bio-waste technician, compact wiry Hungarian-West African-Kazakh male, age 29, golden-brown skin, dark shaved head, intelligent warm brown eyes older than face, elaborate bioluminescent blue-green fractal tattoo running from behind left ear down neck pulsing softly, wearing high-visibility orange Aurochs disposal coveralls with black name block letters across chest, steel-toed boots, standing in industrial sub-level concrete corridor with dim fluorescent overhead lighting casting harsh shadows, faint glow from neck tattoo illuminating lower face, slight forward shoulder posture, direct gaze with subtle attentive tilt of head, details of chemical scarring on knuckles visible, faint enzymatic cleaner residue sheen on skin, dystopian medical-industrial background out of focus, cinematic moody lighting, gritty realism, --ar 2:3 --v 6"
 }

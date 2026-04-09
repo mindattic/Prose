@@ -106,5 +106,26 @@
     "The Shelf",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Central European (Hungarian)",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "build": "Solid, angular frame with broad shoulders tapering to a narrow waist. Lean muscle beneath a layer of pragmatic weight — the physique of someone who moves with intention but doesn't obsess over aesthetics.",
+    "hair_color": "Steel grey with patches of residual black",
+    "hair_style": "Worn in tight, methodical braids pulled into a crown atop the head; a few loose strands often escape by evening",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown with faint amber undertones",
+    "skin_tone": "Deep chestnut with warm undertones",
+    "complexion": "Fine lines radiating from the corners of the eyes and mouth — the map of 54 years of calculation and occasional amusement. Skin shows the faint discoloration of old chemical exposure across the left temple. Clean-shaven or sporting a precise two-day shadow depending on the meet.",
+    "distinguishing_marks": [
+      "Thin, jagged scar running horizontally across the right collarbone, approximately 3 inches long, partially obscured by clothing",
+      "Faint burn marks on the inner left forearm in a pattern suggesting old splatter — circa 2198 accident or altercation",
+      "Small, precise tattoo on the left wrist: a stylized circuit junction rendered in matte black ink, barely visible unless backlit"
+    ],
+    "visible_augmentations": "Left eye's iris is a shade too uniform, subtly reflective in direct light—suggests subcutaneous optics integrated into the orbit. Fine silver circuitry visible only when head tilts under certain angles along the right temple, suggesting a neural interface port beneath the skin. Otherwise no visible chrome.",
+    "posture_movement": "Moves with economical precision; no wasted motion. Often stands with weight balanced on the balls of the feet. Hands gesture minimally but deliberately. Eyes track rooms methodically, cataloging exits and potential threats. Has the stillness of someone accustomed to waiting.",
+    "clothing_style": "Tier 3-4 practical: tailored but worn grey wool coat over dark thermal underlayers. Fatigued but maintained—seams are clean, fabric is quality. Cargo pants with reinforced pocket stitching. Unmarked boots, resoled at least twice. No jewelry except a singular stainless steel ring on the right index finger (functional, not decorative). Tends to carry a messenger bag of supple, aged leather worn soft from use."
+  },
+  "image_prompt": "Portrait of a 54-year-old nonbinary character with deep chestnut skin and steel-grey braided hair, dark amber-flecked eyes showing subtle chrome implants. Wearing a worn grey wool coat over thermal underlayers, standing in dim neon-lit industrial setting. Scarred collarbone faintly visible. Expression calm and calculating, posture economical and alert. Cyberpunk noir aesthetic, matte lighting with hints of purple and amber, film grain texture, cinematic 2226 Great Lakes setting, weathered and lived-in appearance --ar 2:3 --v 6"
 }

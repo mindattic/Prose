@@ -13,7 +13,7 @@
   "age": 16,
   "status": "active",
   "location": "Waukegan Industrial Shelf, rotating between three squat locations, near Lake Shore and Wacker",
-  "description": "Ezili is all angles and energy — sharp elbows, quick eyes, a mouth that moves faster than her thoughts can catch up with. She is dark-skinned and underweight in a way that suggests irregular eating rather than any particular biology, and she has a crop of cat ears she got from a budget geneware parlor in exchange for three weeks of courier work — they're a bright, impractical copper that she is extremely proud of and that she knows compromise her ability to be inconspicuous, a trade-off she has decided is worth it. Her natural hair is shaved close underneath the ears, emphasizing them. She dresses in whatever she can find, layered for weather and fast movement.\n\nShe arrived in Meridian 88 four months ago on a hyperlane freight ride, having left a situation she won't describe in detail. She is trying very hard to project competence and confidence and is somewhat successful at this, which has gotten her a network of informal contacts and a reputation as reliable among the Waukegan freight community — she delivers things on time and doesn't look in the packages. She is, under the performance, seventeen kinds of scared and also stubborn as weather, and the combination produces a kind of reckless effectiveness that has so far kept her alive and fed. She talks constantly and processes emotion by generating plans.",
+  "description": "Ezili is all angles and energy — sharp elbows, quick eyes, a mouth that moves faster than her thoughts can catch up with. She is dark-skinned and underweight in a way that suggests irregular eating rather than any particular biology, and she has a crop of cat ears she got from a budget geneware parlor in exchange for three weeks of courier work — they're a bright, impractical copper that she is extremely proud of and that she knows compromise her ability to be inconspicuous, a trade-off she has decided is worth it. Her natural hair is shaved close underneath the ears, emphasizing them. She dresses in whatever she can find, layered for weather and fast movement.\n\nShe arrived in GLMZ four months ago on a hyperlane freight ride, having left a situation she won't describe in detail. She is trying very hard to project competence and confidence and is somewhat successful at this, which has gotten her a network of informal contacts and a reputation as reliable among the Waukegan freight community — she delivers things on time and doesn't look in the packages. She is, under the performance, seventeen kinds of scared and also stubborn as weather, and the combination produces a kind of reckless effectiveness that has so far kept her alive and fed. She talks constantly and processes emotion by generating plans.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -173,7 +173,7 @@
     "Crucible Industries Talon-5 'Jackknife'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Wire Taps",
     "The Waukegan Industrial Shelf",
     "Ringo DV-4 'Courier'",
@@ -181,5 +181,27 @@
     "Copper",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Haitian-Congolese / Ukrainian diaspora lineage)",
+    "height_cm": 162,
+    "weight_kg": 48,
+    "build": "Wiry and angular — all sharp elbows and protruding collarbones, the thinness of someone eating irregularly and moving constantly. Lean muscle in her shoulders and legs from running freight routes; no excess anywhere.",
+    "hair_color": "Natural black",
+    "hair_style": "Shaved close to scalp on sides and back, left slightly longer on top to frame the geneware ears; deliberately styled to emphasize rather than hide her augmentations",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and quick-moving",
+    "skin_tone": "Deep brown with warm undertones",
+    "complexion": "Young face with high cheekbones, sharp jawline, and a mouth that rarely stays still. Skin shows minor scarring and weather damage inconsistent with her age — small cuts, healing scrapes on knuckles, a faint burn mark on her left forearm. No acne; malnutrition has left her skin tight and clear. Dark shadows under eyes from irregular sleep.",
+    "distinguishing_marks": [
+      "Copper geneware cat ears protruding from shaved scalp — bright, impractical, clearly cosmetic grade and occasionally prone to flattening when she experiences genuine fear",
+      "Thin scar running 2cm along her left temple, partially hidden by hair growth",
+      "Burn mark on left forearm (roughly 3cm diameter, pale and old), consistent with industrial accident or careless contact with hot equipment",
+      "Multiple small cuts and fresh scabs across knuckles and palms from constant handling of freight and rough terrain"
+    ],
+    "visible_augmentations": "Copper geneware cat ears — the primary and only visible modification. Budget-quality work; noticeably less refined than corporate-tier augmentation. Ears flatten slightly when she is frightened, betraying her emotional state despite her best efforts at projection.",
+    "posture_movement": "Constantly in motion — stands with weight shifted forward on the balls of her feet, ready to move. Gestures are economical but frequent, hands rarely still. Eyes dart constantly, mapping exits and threats. When running freight, she moves with practiced efficiency; when stationary, there is a coiled-spring quality to her body language. Speaks rapidly, often interrupting herself, processing emotion and uncertainty through constant verbal planning.",
+    "clothing_style": "Scavenged and layered for weather and speed — mismatched cargo pants with multiple pockets (Tier 4-5 industrial wear, stained and repaired), reinforced synthetic jacket in faded black, thermal undershirt visible at collar, worn boots with good tread. No luxury markers. Everything is functional, worn, and chosen for freedom of movement. Carries a battered satchel across her body with route maps, spare food rations, and tools. Dresses like someone who might have to run at any moment and has learned not to become attached to her possessions."
+  },
+  "image_prompt": "Portrait of a 16-year-old girl with dark skin, shaved head with bright copper geneware cat ears protruding from the scalp, sharp angular features, dark alert eyes, wearing layered worn cargo clothing and a black jacket, thin and wiry build suggesting irregular meals, faint scars on temples and forearms, standing in industrial warehouse lighting with harsh shadows, cyberpunk aesthetic, gritty realism, shallow depth of field, shot from chest up, cool blue and orange ambient light from freight platform neon, character exudes nervous energy and coiled readiness, photorealistic with weathered texture, 2226 GLMZ aesthetic --ar 2:3 --v 6"
 }

@@ -239,5 +239,25 @@
     "The Heritage Vault",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Malian / Yoruba / Welsh",
+    "height_cm": 193,
+    "weight_kg": 104,
+    "build": "Large-framed and broad-shouldered with substantial muscle mass carried without aggression; deliberate in movement, economical in gesture. The weight is distributed across a solid foundation — not fat, not bodybuilder-sculpted, but the build of someone who has spent two decades standing at a workstation with precision tools",
+    "hair_color": "Dark brown with silver-gray threading throughout",
+    "hair_style": "Worn in locs, typically pinned up during work hours in a loose crown; worn loose and falling to shoulders in off-hours",
+    "hair_length": "Medium to Long (pinned and loose respectively)",
+    "eye_color": "Photochromatic iris modification — deep violet in normal light, darkening to near-black in bright light; modification was integrated at the sclera level with subtle luminescence at the edges of the iris during transition",
+    "skin_tone": "Warm deep brown with reddish undertones characteristic of West African complexion; even pigmentation with age-appropriate weathering",
+    "complexion": "Clean-shaven or very close-cropped facial hair; no visible scarring on the face; the skin shows the even tone of someone who takes care of it and who spends controlled hours indoors under studio lighting. His expression defaults to calm attentiveness — the resting face of someone listening",
+    "distinguishing_marks": [
+      "Both forearms and upper arms are extensively tattooed in overlapping designs spanning twenty years of his own work — a living portfolio of evolving style with deliberate palimpsest layering where newer pieces integrate with and reference older work beneath them",
+      "Bioluminescent gene-mod design running the length of his spine beneath the skin — a trail of symbols in a script of his own invention, visible as subtle tracery under the skin in daylight and fully luminescent (soft blue-white) only in complete darkness"
+    ],
+    "visible_augmentations": "The photochromatic iris modification is immediately visible and distinctive — the deep violet color and the subtle luminescence during light-transition are striking and clearly intentional. The extensive tattoo work across both arms reads as professional body art rather than augmentation, but the craftsmanship is evident. The spine modification is invisible in normal conditions; only visible in darkness or in medical imaging",
+    "posture_movement": "Moves with deliberate slowness and precision — a conscious choice to avoid the threat-response that large men moving quickly can trigger. His posture is upright and open, shoulders relaxed. When working, he enters a state of focused stillness, hands moving with surgical precision while the rest of his body remains stable. In conversation, he makes direct eye contact and lets silences sit without filling them",
+    "clothing_style": "Studio uniform consists of fitted dark clothing (black or dark gray) that doesn't show pigment transfer from his work — typically well-tailored technical trousers and a long-sleeve compression shirt or fitted henley that displays his tattoo work on the forearms and upper arms. Over this, he wears a custom lab coat in matte black or dark charcoal with reinforced cuffs and an internal array of tool pockets; the coat fits him precisely and is clearly tailored for someone his size. Outside the studio, he wears similar colors and fits — quality technical fabrics, Tier 3 sustainable brands (Refugium, Reweave collective), no logos or corporate affiliation. His jewelry is minimal: a wedding band in dark platinum, and occasionally a single silver ring on his right index finger that he removes during client work. His locs are typically secured with silver or dark metal cuffs when pinned. There is no aspect of his appearance that reads as ostentatious, but everything reads as chosen and maintained with intention"
+  },
+  "image_prompt": "Cyberpunk character portrait of a large Malian-Yoruba-Welsh man, age 44, with deep warm brown skin and silver-threaded dark locs pinned in a crown. His eyes are striking — photochromatic violet irises that darken toward black, with subtle luminescence at the edges. Extensively tattooed forearms and upper arms displaying overlapping body art in a palimpsest style — portfolio of twenty years of evolving designs. He wears a fitted black compression shirt that displays the tattoo work, and a custom tailored matte-black lab coat. His posture is upright and calm, the bearing of someone who moves with deliberate precision. Studio lighting, professional and controlled. Photorealistic, hyper-detailed skin texture, intricate tattoo work visible with crisp definition. Shallow depth of field focusing on his face and the violet eyes. Warm studio lighting with subtle contrast. High-end cosmetic augmentation aesthetic without corpo excess. --ar 2:3 --v 6"
 }

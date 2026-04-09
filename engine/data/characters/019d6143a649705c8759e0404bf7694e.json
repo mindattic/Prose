@@ -246,5 +246,24 @@
     "Ringo Corponation",
     "Rust"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Mestizo (Mesoamerican) / Scandinavian-Bantu (Zimbabwean)",
+    "height_cm": 193,
+    "weight_kg": 68,
+    "build": "Lean and long-limbed with pronounced joint articulation; wiry musculature built for flexibility and agility rather than strength. His frame has an almost leggy awkwardness that reads as boyish rather than graceful — limbs that seem to belong to someone three centimeters shorter.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Close-cropped, neat but not fussy; left slightly longer on top for minimal styling effort",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, warm, expressive",
+    "skin_tone": "Warm reddish-brown with golden undertones; sun-darkened from outdoor street performing",
+    "complexion": "Open, youthful face with high cheekbones and a prominent gap between upper front teeth. Clean-shaven. Skin unmarked except for minor street wear. Appears slightly sleep-deprived most days but smiles frequently enough that it doesn't read as exhaustion.",
+    "distinguishing_marks": [
+      "Rust-colored bioengineered cat ears positioned on crown of head — feline in structure, about 8cm tall, with articulating musculature; they rotate independently of his head position, often at odds with his facial expression, creating unconscious comedy"
+    ],
+    "visible_augmentations": "Only the cat ears — cosmetic geneware, non-functional beyond aesthetic and minor proprioceptive feedback. No chrome, no obvious cybernetics.",
+    "posture_movement": "Perpetually slightly off-balance in a controlled way; moves with exaggerated precision that reads as play. Default slouch masks extraordinary core control. Walks with a subtle loping gait that eats ground despite his self-consciousness about height. Uses his hands constantly, expressively. Smiles easily and often. Cat ears twitch with emotional states independent of conscious intention.",
+    "clothing_style": "Tier 4-5 street wear: thrifted or bartered goods that prioritize mobility. Loose-fitting cargo pants (faded black or earth tones) with reinforced knees and multiple pockets. Oversized hoodies or layered tank tops that move with exaggerated slapstick potential. Worn canvas or synthetic sneakers built for running and tumbling. Sometimes wears mismatched arm wraps or gaff tape on wrists — part utility, part costume. No corporate branding. Clothes smell of sweat and street, but maintained with the care of someone who doesn't have many."
+  },
+  "image_prompt": "Cyberpunk street performer, 19-year-old mestizo boy, 193cm tall, lean and long-limbed with reddish-brown warm skin, close-cropped dark hair, enormous dark expressive eyes. Distinctive rust-colored bioengineered cat ears on head tilted at different angle from face. Gap-toothed smile, youthful and open. Wearing oversized faded hoodie and cargo pants, canvas sneakers, standing in dynamic off-balance pose mid-movement. Set at Grand Corridor junction, Mexicantown Libre, neon signs and street vendor stalls blurred in background, warm evening light catching his skin, slightly grungy Tier 5 urban setting. Comic energy, physical comedy frozen in moment, subtle unconscious humor in ear angle. Shot from low angle looking up, grounded realism with cyberpunk color grading, shallow depth of field. --ar 2:3 --v 6"
 }

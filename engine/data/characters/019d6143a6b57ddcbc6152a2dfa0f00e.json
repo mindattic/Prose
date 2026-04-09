@@ -13,7 +13,7 @@
   "age": 52,
   "status": "active",
   "location": "The Canopy — elevated walkway district above Geartown, near Clark and Belmont",
-  "description": "Rongo Borg-Agyeman are athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 52, their face is memorable in a profession that rewards forgettability, and they have learned to compensate. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a cleaner out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nRongo Borg-Agyeman have survived long enough in the runner game to be either very good or very lucky, and they cultivate ambiguity on the topic.",
+  "description": "Rongo Borg-Agyeman are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 52, their face is memorable in a profession that rewards forgettability, and they have learned to compensate. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and they make no effort to hide it.\n\nThey taught themself the trade through trial, error, and a pain tolerance that concerns the people who know them best. They work as a cleaner out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nRongo Borg-Agyeman have survived long enough in the runner game to be either very good or very lucky, and they cultivate ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.71,
@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "To find the person who burned them and make it educational",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "To protect the people in their district who can't protect themselves"
     ],
     "coping_mechanisms": [
@@ -62,7 +62,7 @@
   "story_hooks": [
     "Rongo Borg-Agyeman discovers a job they completed last year was a setup for something much larger and much worse",
     "Someone is impersonating Rongo Borg-Agyeman on jobs, and the impersonator is better at the work than the original",
-    "A crew member from Rongo Borg-Agyeman's past shows up in Meridian 88, carrying old grievances and new chrome"
+    "A crew member from Rongo Borg-Agyeman's past shows up in GLMZ, carrying old grievances and new chrome"
   ],
   "narrative_function": "Rongo Borg-Agyeman represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
   "augmentations": "Eye replacement — one organic, one cybernetic with recording capability and zoom. Retractable monofilament whip in left forearm — concealed weapon, devastating in close quarters",
@@ -156,7 +156,7 @@
     },
     "strengths": [
       "ability to remain calm under fire",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "old injury that flares under specific conditions",
@@ -276,11 +276,33 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "Meridian 88",
+    "GLMZ",
     "Canopy Station Nine",
     "Geartown",
     "Lazarus LX-2 'Lab Rat'",
     "Clover"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Athletic and lean with visible muscle definition; the economy of movement in a dancer or martial artist — no wasted mass, joints and tendons clearly defined. Age has added subtle thickness to the core but stripped away any softness elsewhere.",
+    "hair_color": "Silver-grey with faint warmth undertones",
+    "hair_style": "Kept short and severe, pulled back from the face — practical for work, no vanity",
+    "hair_length": "Short",
+    "eye_color": "Left eye: warm brown, natural. Right eye: polished chrome with faint circuitry visible at the iris, LED-ringed pupil that adjusts visibly when focusing or recording",
+    "skin_tone": "Deep warm brown with ashy undertones from nocturnal living; melanin-rich complexion that shows minimal sun damage despite age",
+    "complexion": "Sharp facial structure — high cheekbones, defined jaw. Skin is weathered in a deliberate way: small precise scars near the temples and along the left jawline, evidence of old augmentation surgery. No cosmetic softening; they wear their profession visibly. Expression is neutral at rest.",
+    "distinguishing_marks": [
+      "Surgical scar running from left temple down to the jawline, thin and clean, marking the cybernetic eye installation",
+      "Network of thin white scars across both knuckles and the backs of the hands — trauma from close-quarters work",
+      "Faint burn scarring on the inside of the left forearm where the monofilament whip retracts, barely visible but present",
+      "Deliberate scarification pattern on the right shoulder blade — three parallel lines, cultural or personal significance unknown to most"
+    ],
+    "visible_augmentations": "Right eye is unmistakably artificial: polished chrome casing, visible micro-servos at the corners, faint LED glow at the iris edge. The eye moves with slightly different mechanics than the organic left eye — precision over fluidity. Left forearm shows no external augmentation sign; the monofilament is fully concealed beneath skin and synthetic muscle layer, but the forearm itself is subtly thicker and smoother than natural, suggesting internal hardware.",
+    "posture_movement": "Moves with economical precision — every gesture serves a purpose. The body is coiled but not tense; this is the default state of someone who processes threat constantly. Turns using the whole body rather than just the head, likely a compensation for the monoocular focus of the cybernetic eye. Walks quietly, weight forward on the balls of the feet. When at rest, hands are often visible and open — a calculated tell that they're not a threat to people who understand the language.",
+    "clothing_style": "Tier 4 practical — dark, muted colors that don't catch light. Synthweave cargo pants with reinforced thigh pockets for tools. Lightweight tactical jacket with internal pockets, collar always high to protect the neck in close-quarters situations. No logos or corp branding. Boots are worn but well-maintained, studded grip on the soles. All clothing is chosen for mobility and concealment; nothing restricts movement. A single piece of jewelry: a thin silver band on the right ring finger, inscribed with something too small to read at a distance."
+  },
+  "image_prompt": "Cyberpunk character portrait, nonbinary androgynous figure, age 52, deep brown skin tone, sharp cheekbones, silver-grey hair cut short and severe, one organic brown eye and one chrome cybernetic eye with glowing LED iris and visible circuitry, surgical scar running from left temple to jawline, athletic lean build, wearing dark tactical synthweave jacket with high collar and reinforced cargo pants, hands visible showing scarred knuckles, standing in shadow, neon glow from The Canopy walkway behind, cool blue and purple lighting, nocturnal atmosphere, professional cleaner demeanor, dangerous precision in posture, shot from chest-up against blurred urban GLMZ background, cinematic depth of field, photorealistic cyberpunk style --ar 2:3 --v 6"
 }

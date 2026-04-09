@@ -183,5 +183,25 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Polish-Ivorian)",
+    "height_cm": 183,
+    "weight_kg": 72,
+    "build": "Tall and lean with deliberate posture; shoulders squared, minimal excess weight — the physiology of someone who has cultivated presence through economy of movement rather than mass.",
+    "hair_color": "Natural dark brown with hints of auburn in direct light",
+    "hair_style": "Worn natural, voluminous, and textured — typically gathered into a high puff or allowed to frame her face during formal proceedings",
+    "hair_length": "Long (shoulder-length and fuller)",
+    "eye_color": "Deep brown irises with embedded circuit-board tracery pattern in gold and copper tones — a cosmetic augmentation that catches light when she focuses",
+    "skin_tone": "Deep brown-gold complexion with warm undertones, even-toned",
+    "complexion": "Sharp cheekbones, defined jawline, composed expression. Minimal cosmetics — typically matte brown lip color. No visible scarring or blemishes; skin is meticulously maintained. Expression is controlled but not cold; eyes engage directly.",
+    "distinguishing_marks": [
+      "Circuit-tracery pattern overlay on both irises in gold and copper filament — visible only at close range or under direct light",
+      "Small scar on left knuckle, pale and thin, consistent with old courtroom injury or deliberate marking"
+    ],
+    "visible_augmentations": "Only the patterned irises are visible; she carries no chrome, subdermal plating, or external cybernetics. This is deliberate — her unaugmented body is a political stance, a contrast to the synthetics she defends.",
+    "posture_movement": "Walks with measured, economical steps. Stands with weight balanced evenly. Rarely gestures broadly; when she moves her hands, each motion is purposeful and restrained. Her stillness in conversation is notable — she listens more than she speaks. When she does move, it commands attention without effort.",
+    "clothing_style": "Tier 2-3 professional: well-maintained but not expensive. Favors high-necked tunics or collarless shirts in muted earth tones (charcoal, ochre, deep teal) layered with unstructured linen jackets. Trousers are tailored and practical. She wears minimal jewelry — a thin silver bracelet (possibly sentimental) and a wrist-mounted legal pad projector. Her shoes are worn but polished, practical for courtroom and Commons walking. No visible brand signaling; her authority comes from presence, not logos."
+  },
+  "image_prompt": "Portrait of a 38-year-old Black woman, tall and poised, deep brown-gold skin, wearing a high-necked charcoal tunic under a tailored linen jacket. Her hair is natural, voluminous, and textured, worn in a high puff. Her eyes are striking — deep brown irises embedded with intricate circuit-board tracery in gold and copper filament, catching soft light. Her expression is composed and direct, shoulders squared. Background: soft-focus interior of a legal office in a fourth-floor walkup, warm afternoon light from industrial windows, wooden desk with scattered case files visible. Lighting is cool-neutral, emphasizing the architecture of her face and the luminescence of her augmented eyes. Mood: authoritative, grounded, quietly powerful. Cyberpunk setting, realistic portraiture, professional attire, no exaggeration. --ar 2:3 --v 6"
 }

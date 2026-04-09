@@ -44,8 +44,16 @@
     "Family members of the names on the wall, visiting on anniversaries"
   ],
   "notable_locations": [
-    "The memorial wall — 341 plaques and counting, the corridor's most honest record of industrial cost",
-    "The freezer booth — the original meat locker's deepest corner, used for conversations that need maximum privacy"
+    {
+      "name": "The memorial wall",
+      "description": "341 plaques and counting, the corridor's most honest record of industrial cost",
+      "tags": []
+    },
+    {
+      "name": "The freezer booth",
+      "description": "the original meat locker's deepest corner, used for conversations that need maximum privacy",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 44.5133,

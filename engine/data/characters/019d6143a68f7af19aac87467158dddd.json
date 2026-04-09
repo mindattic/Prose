@@ -229,5 +229,25 @@
     "Stalker",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Southern African / Middle Eastern (Bantu / Arabic)",
+    "height_cm": 172,
+    "weight_kg": 63,
+    "build": "Lean and economical, with the precise musculature of someone who moves deliberately. Narrow shoulders, long fingers. No wasted mass.",
+    "hair_color": "Dark brown, naturally textured",
+    "hair_style": "Shoulder-length locs, typically bound back with a simple fabric tie during work",
+    "hair_length": "Long",
+    "eye_color": "Deep brown, natural",
+    "skin_tone": "Warm medium brown with subtle undertones reflecting mixed heritage",
+    "complexion": "Clear, well-maintained skin with minimal facial hair. Fine-featured face with high cheekbones and a contemplative expression. Grooming is meticulous but understated.",
+    "distinguishing_marks": [
+      "Faint bioluminescent tracery along the left forearm in delicate branching patterns resembling neural pathways, soft blue-green glow visible in dim light, acquired at age nineteen and maintained",
+      "Fine surgical scars at both temples from early neural interface calibration work, barely visible unless examined closely"
+    ],
+    "visible_augmentations": "Tessera-brand HapticDrive neural interface gloves — sleek black synthetic leather with silver contact nodes along palms and fingers, worn during work hours. The gloves have a subtle geometric pattern and sit precisely at the wrist with minimal spillover. The bioluminescent forearm tracery glows softly in low-light environments.",
+    "posture_movement": "Moves with economical precision, never gesturing broadly. Stands still for extended periods without fidgeting. Hands are often in a state of readiness or focused intentionality. Eye contact is steady and deliberate. Overall bearing suggests someone comfortable with silence and meticulous work.",
+    "clothing_style": "Tier 3 professional-practical: fitted charcoal or navy tunic-style shirts with moisture-wicking synthetic fabric, clean and pressed. Slim dark trousers or specialized work pants with reinforced pockets for diagnostic tools. Comfortable non-marking shoes suitable for standing all day. A worn leather journal always visible in his left breast pocket or nearby. No visible corporate branding beyond the required Aurochs Medical Complex ID badge. Occasionally wears a simple woven prayer bracelet on his right wrist."
+  },
+  "image_prompt": "Portrait of Ovídio Tshabalala-Qureshi, a 34-year-old neural calibration specialist, cyberpunk medical setting, lean dark-skinned man with shoulder-length dark brown locs tied back, deep brown eyes, warm medium brown complexion, high cheekbones, contemplative expression. Left forearm displays faint bioluminescent neural pathway tracery in soft blue-green glow. Wearing sleek black Tessera HapticDrive neural interface gloves with silver contact nodes, precise and clinical. Dressed in fitted charcoal tunic-style shirt and slim dark trousers, professional Tier 3 style. Standing in sterile neuro-calibration suite with soft clinical lighting and equipment in background. Intense, methodical energy. Quiet precision. High-definition, photorealistic, slight sci-fi medical aesthetic, moody cool lighting with warm skin tones, professional portrait style --ar 2:3 --v 6"
 }

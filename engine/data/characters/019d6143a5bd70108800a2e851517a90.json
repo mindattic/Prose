@@ -177,5 +177,26 @@
     "The Meridian Drift",
     "The Waukegan Industrial Shelf"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Romanian / Polynesian (Samoan)",
+    "height_cm": 157,
+    "weight_kg": 48,
+    "build": "Wiry and lean with the economical musculature of someone who moves carefully through tight spaces—cargo bay frames, maintenance tunnels, airship crawlways. No excess, efficient.",
+    "hair_color": "Natural dark brown with bioluminescent green tips (intermittent, fades when pigment drops run out)",
+    "hair_style": "Short natural cloud, textured and close to the scalp, occasionally decorated with salvaged wire wraps or cord",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and observant",
+    "skin_tone": "Warm medium brown with subtle undertones reflecting mixed heritage",
+    "complexion": "Clean but weathered for their age—minor calluses on hands and palms, sun-exposure marks on forearms from outdoor deck work, a small scar above the left eyebrow from a cargo bay incident. Maintains basic grooming despite resource scarcity.",
+    "distinguishing_marks": [
+      "Single geneware cat ear on left side with furred auricle and pointed tip, the right ear fully human—asymmetry is deliberate and treated with dry humor",
+      "Small white scar (1cm) above left eyebrow, clean edges",
+      "Callus pattern on right palm and fingers from frequent tool use and manual labor"
+    ],
+    "visible_augmentations": "Left geneware cat ear (furred, bioluminescent-capable), bioluminescent green hair tips on short natural hair (active status variable based on pigment maintenance budget). Right ear entirely human—deliberate half-augmentation speaks to economic constraint and personal acceptance.",
+    "posture_movement": "Moves with economical precision—shoulders slightly forward as if habitually ducking through tight spaces. Stillness is their default; they don't fidget or sprawl. When moving, they flow rather than stride, minimizing unnecessary motion. This economy of movement reflects both their physical environment and learned caution about drawing attention.",
+    "clothing_style": "Tier 4-5 working drifter aesthetic. Typically wears salvaged or trade-circuit hand-me-downs: reinforced canvas work pants with multiple pockets, layered tops (thermal undersleeve + overshirt, often mismatched colors), a worn synthetic puffer vest with reflective strips. Steel-toed boots (re-soled multiple times). Waterproof sleeve bag for data-tablet always present. No branded items—everything is functional or salvaged. Clothing is clean but visibly repaired, with visible stitching and fabric patches."
+  },
+  "image_prompt": "A 16-year-old nonbinary character with warm brown skin and short natural dark hair with bioluminescent green-tipped ends, standing in industrial cyberpunk setting. One geneware cat ear on left side with furred texture and pointed tip, right ear fully human—asymmetrical modification. Alert dark eyes, wiry lean build, wearing layered salvaged work clothes: thermal undersleeve, mismatched overshirt, reinforced canvas pants, worn synthetic puffer vest with reflective strips. Steel-toed boots. Waterproof sleeve bag held carefully. Standing in shadow of docked airship cargo bay with moody blue-green industrial lighting, oil-stained concrete, stacked cargo containers in background. Mood: quiet competence, careful awareness, stillness. Cyberpunk drifter aesthetic, Waukegan Shelf industrial decay. Cinematic, grounded realism, no anime style. --ar 2:3 --v 6"
 }

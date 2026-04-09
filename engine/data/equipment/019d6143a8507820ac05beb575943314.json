@@ -32,7 +32,7 @@
     "battery_life": "Passive — draws minimal power from host wiring; indefinite operation"
   },
   "tactical_use": "Deployed in pairs — one Spike placed at an entry or staging point, one carried by the operator inside a target structure. Used when mesh communications are compromised by jamming, Faraday shielding, or hostile signal monitoring. Also used for pre-operation dead drop communication, where both parties agree on a building's electrical infrastructure as their channel. Leaves a physical mark on whatever surface it's driven into, which is a known operational liability.",
-  "cultural_context": "The Mortise Spike carries a distinctly military pedigree in Meridian 88's underworld — seeing one in someone's kit suggests either Arcturus training or serious operational experience. It is not a discreet or convenient device, and choosing to use one signals that the user has decided wireless is no longer an acceptable risk. Among security professionals, it is respected as a piece of engineering that prioritizes function over all other concerns. The physical evidence problem is considered a feature by some — it forces operational discipline.",
+  "cultural_context": "The Mortise Spike carries a distinctly military pedigree in GLMZ's underworld — seeing one in someone's kit suggests either Arcturus training or serious operational experience. It is not a discreet or convenient device, and choosing to use one signals that the user has decided wireless is no longer an acceptable risk. Among security professionals, it is respected as a piece of engineering that prioritizes function over all other concerns. The physical evidence problem is considered a feature by some — it forces operational discipline.",
   "known_users": [
     "Arcturus Defense Solutions breach teams",
     "Corporate black-ops units",
@@ -44,7 +44,7 @@
   "story_hooks": [
     "A Mortise Spike is found still active in the wiring of a building that burned down three weeks ago — it's still receiving, and something on the other end keeps trying to transmit.",
     "Two Spikes have been placed in the same building's infrastructure by different parties who don't know about each other. Both channels are now sharing the same carrier, and each party can hear fragments of the other's communications.",
-    "A corporate security team is tracking Spike placement patterns across Meridian 88 — someone has been systematically wiring up buildings in a specific district, and the pattern suggests they're building a hardwired communication network that bypasses the mesh entirely.",
+    "A corporate security team is tracking Spike placement patterns across GLMZ — someone has been systematically wiring up buildings in a specific district, and the pattern suggests they're building a hardwired communication network that bypasses the mesh entirely.",
     "The players need to communicate inside a fully signal-suppressed facility. The only option is a pair of Mortise Spikes — but driving one into the building's wiring will trigger a structural current alarm they'll need to defeat first."
   ],
   "tags": [

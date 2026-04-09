@@ -13,7 +13,7 @@
   "age": 67,
   "status": "active",
   "location": "The Waukegan Industrial Shelf, Tent Cluster 9 (informally: 'Haf's Row'), near Michigan Ave and Roosevelt",
-  "description": "Hafsatu came to Meridian 88's edges seventeen years ago with twelve people and lost four of them to the journey. She arrived with nothing except a ferocious organizational intelligence and the absolute conviction that the remaining eight would survive. They did. The cluster at Haf's Row has grown to forty-one people now — not all related by blood, but all held in place by a complex web of obligation, affection, and the specific terror of disappointing this woman.\n\nShe is small and tends toward stillness, which makes people underestimate her until they have been in a room with her for five minutes. Her face is a remarkable architecture of age and expression — she has the kind of features that are precise and deliberate even at rest. She wears her natural white hair unprocessed, cut close on the sides and fuller on top. Her hands are her most augmented feature: she accepted a nerve-enhancement package years ago to treat arthritic damage, and the faint silver threads of the implants are visible under the skin of her knuckles when the light is right. She does not consider this augmentation — she considers it a medical necessity, and she resents the question. She is generous to the point of self-destruction with resources and merciless with nonsense, and she has no patience for the distinction between the two.",
+  "description": "Hafsatu came to GLMZ's edges seventeen years ago with twelve people and lost four of them to the journey. She arrived with nothing except a ferocious organizational intelligence and the absolute conviction that the remaining eight would survive. They did. The cluster at Haf's Row has grown to forty-one people now — not all related by blood, but all held in place by a complex web of obligation, affection, and the specific terror of disappointing this woman.\n\nShe is small and tends toward stillness, which makes people underestimate her until they have been in a room with her for five minutes. Her face is a remarkable architecture of age and expression — she has the kind of features that are precise and deliberate even at rest. She wears her natural white hair unprocessed, cut close on the sides and fuller on top. Her hands are her most augmented feature: she accepted a nerve-enhancement package years ago to treat arthritic damage, and the faint silver threads of the implants are visible under the skin of her knuckles when the light is right. She does not consider this augmentation — she considers it a medical necessity, and she resents the question. She is generous to the point of self-destruction with resources and merciless with nonsense, and she has no patience for the distinction between the two.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -39,7 +39,7 @@
       "Cannot accept help gracefully — frames it as weakness even when she is exhausted",
       "Has decided two of her cluster members are trustworthy beyond evidence; has not updated this assessment in years"
     ],
-    "secret": "One of the four people she lost on the journey to Meridian 88 did not die by accident. There was a choice, in the dark, with limited water, and she made it. She has never spoken of it. She carries the name of that person in her mouth like a stone."
+    "secret": "One of the four people she lost on the journey to GLMZ did not die by accident. There was a choice, in the dark, with limited water, and she made it. She has never spoken of it. She carries the name of that person in her mouth like a stone."
   },
   "speech_patterns": {
     "vocabulary": "Formal and precise in three languages, shifts between them within sentences based on emotional register. Sahel-inflected syntax, constructed sentences.",
@@ -187,7 +187,7 @@
     "The Waukegan Industrial Shelf",
     "Ferrogate Transit",
     "Riddle",
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
@@ -197,5 +197,26 @@
     "The Pure Hand",
     "Silver"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Germanic / Persian (suggested by Karimzade patronymic)",
+    "height_cm": 156,
+    "weight_kg": 52,
+    "build": "Small-framed and lean, with the wiry resilience of someone who has spent decades rationing calories and carrying responsibility. No softness; muscle definition visible at wrists and forearms despite age.",
+    "hair_color": "Natural white, unbleached and unprocessed",
+    "hair_style": "Undercut: shaved close at temples and sides, fuller crown left standing approximately 5cm, swept slightly back",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and penetrating",
+    "skin_tone": "Deep warm brown with undertones suggesting mixed Saharan and Mediterranean ancestry",
+    "complexion": "Heavily lined face with pronounced cheekbones and a sharp jawline; deep laugh lines around the eyes and mouth suggest chronic amusement at human folly. Skin weathered but clean, with the particular dryness of someone living in industrial lake-effect zones. No makeup. Expression tends toward stillness until she speaks, then becomes remarkably mobile.",
+    "distinguishing_marks": [
+      "Fine silver threading visible beneath the skin of both knuckles, most visible on the dorsal surface in direct light — the result of subcutaneous nerve-enhancement implants.",
+      "A thin pale scar running along her left temple to jawline, approximately 8cm, healed decades ago; she does not discuss its origin.",
+      "Calluses on both palms and fingertips from seventeen years of manual resource management — food preparation, water distribution, cloth mending."
+    ],
+    "visible_augmentations": "Silver subcutaneous implant threading visible at the knuckles of both hands when light catches them at the correct angle. She makes no effort to conceal this. No other visible augmentation; any internal modifications are not apparent.",
+    "posture_movement": "Carries herself with minimal motion; economical and deliberate. Sits still for extended periods, hands folded, observing before speaking. Moves with the precision of someone managing chronic pain without complaint. When she stands, she rises slowly but completely — no half-measures. Her default expression is rest-neutral, but her eyes miss nothing.",
+    "clothing_style": "Tier 5 practical: hand-mended gray synthetic workpants with reinforced knees, a layered system of undyed linen and recycled thermal-weave that can be adjusted for temperature, and a long vest made from salvaged industrial canvas dyed dark indigo. All items show visible mending; nothing matches by design. Wears a hand-braided cord around her left wrist from which hangs a small cast-iron charm in the shape of an abstract machine (representing Ironlung). Footwear is practical boots with reinforced soles, resoled at least twice. No jewelry except the charm. Clothing is kept scrupulously clean despite the environment."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 67-year-old West African-Germanic woman, small and lean with sharp cheekbones and deep-set dark eyes. She wears her natural white hair in a close undercut with fuller crown. Her hands show faint silver subcutaneous implant threading at the knuckles under her skin. She wears hand-mended gray synthetic workpants, layered linen and thermal-weave tops in neutral tones, and a dark indigo canvas vest with visible repairs. A braided cord around her left wrist holds a small cast-iron charm. Her expression is still and observant. She sits upright with economical posture against the background of an industrial tent-city in the Waukegan Shelf, with corrugated metal and fabric structures, muted lighting from solar strips and ambient industrial glow, cool color grading emphasizing the gray and indigo tones. Photorealistic, dignified, no cosmetic augmentation, Tier 5 refugee aesthetic, morning light, intricate character study --ar 2:3 --v 6"
 }

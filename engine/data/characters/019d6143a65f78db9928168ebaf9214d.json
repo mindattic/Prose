@@ -249,5 +249,27 @@
     "The Pure Hand",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / British",
+    "height_cm": 173,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and muscular through the chest and back, with the dense, functional physique of someone who works with their hands for a living. Her frame carries the weight of practical strength rather than bulk.",
+    "hair_color": "Natural black with early grey threading through",
+    "hair_style": "Long locs, typically pinned tight at the back of her head during work; worn loose and flowing when moving through the Shelf incognito",
+    "hair_length": "Long",
+    "eye_color": "Natural dark brown (left eye); left eye features a subtle medical HUD overlay with faint amber and blue diagnostic glyphs visible in low light",
+    "skin_tone": "Deep warm brown with undertones reflecting mixed West African and Northern European ancestry",
+    "complexion": "Weathered but well-maintained; minimal cosmetic grooming, practical and efficient. A few surgical scars visible at her temples from old augmentation work. Her face carries the settled confidence of someone who has seen trauma and learned to move past it.",
+    "distinguishing_marks": [
+      "Surgical scar along her right temple, roughly 4cm, from early augmentation procedure — faded to pale silver",
+      "Ink stains at the fingertips of her left hand from years of marking dosages and notes on skin during emergency procedures",
+      "A thin white line along her left collarbone, approximately 6cm, from a deep laceration sustained in her twenties",
+      "Calloused palms and fingertips on her left hand, heavily pronounced from precision work"
+    ],
+    "visible_augmentations": "Right arm is a matte-black prosthetic from mid-forearm down — titanium-polymer composite with articulated fingers of impossible precision. The joint at her wrist shows faint seams where modular components connect. Left eye contains a barely-perceptible medical HUD overlay, most visible in dark environments as a faint amber and blue geometric glow. The prosthetic's surface bears minor toolmarks and wear patterns from field maintenance.",
+    "posture_movement": "She moves with deliberate economy — no wasted motion, shoulders slightly forward as if ready to lean into work. Her right arm (the prosthetic) hangs at a slightly different angle than a natural limb would, and she favors her left side instinctively when reaching for delicate work. Her gait is steady and measured, that of someone who has learned to move through dangerous spaces without drawing attention.",
+    "clothing_style": "Tier 4 street-functional — well-maintained but heavily worn. Typically a fitted dark-grey or charcoal utility vest with reinforced pockets for pharmaceuticals and surgical tools over a long-sleeved black shirt (sleeves rolled to the elbow on her left, fitted close on her right to accommodate the prosthetic). Cargo pants in grey or navy with multiple tool belts. Worn leather work gloves on her left hand; the right prosthetic is often left bare for precision work. Her boots are practical military-surplus grade, scuffed but recently resoled. A faded surgical mask hangs loose around her neck at all times — a constant reminder of her work. No jewelry except a plain steel watchband on her prosthetic wrist."
+  },
+  "image_prompt": "Cyberpunk street-level medic, 41-year-old Ghanaian-British woman with deep brown skin and long black locs pinned tight, broad shoulders, muscular build. Right arm is a matte-black titanium prosthetic with visible joint seams and articulated surgical-precision fingers. Left eye contains faint amber-blue medical HUD overlay. Wearing dark grey utility vest over black long-sleeved shirt, cargo pants, worn leather work gloves on left hand. Standing in a gritty converted shipping container clinic with orange adhesive tape on door frame visible behind her. Surgical tools on workbench, dim warm overhead lighting mixing with cool blue-tinted medical equipment glow. Serious, weathered expression. Soft focus industrial haze visible through small window. Film noir meets clinical precision. Highly detailed hands, especially the prosthetic. Shot from waist up, frontal composition. --ar 2:3 --v 6"
 }

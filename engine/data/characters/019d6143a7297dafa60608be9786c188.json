@@ -177,5 +177,25 @@
     "Compass Rose",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Czech-Slovak / Polynesian",
+    "height_cm": 173,
+    "weight_kg": 68,
+    "build": "Lean and precise, with the controlled posture of someone who has learned to take up exactly the space they need and no more. Long-limbed, shoulders slightly forward from desk work.",
+    "hair_color": "Black with natural graying at the temples",
+    "hair_style": "Pulled back in a tight, functional braid or locs, kept meticulously maintained. No ornamentation.",
+    "hair_length": "Medium to Long",
+    "eye_color": "Dark brown with faint amber undertone from optical overlay; the overlay is visible only under direct light as a subtle grid pattern across the iris",
+    "skin_tone": "Deep mahogany brown with warm undertones",
+    "complexion": "Precise grooming, minimal visible wear except fine lines around the eyes from sustained concentration. The bioluminescent cheekbone modification manifests as a faint, steady glow under the cheekbones and along the orbital ridge—soft blue-white, like bioluminescent algae. The glow intensifies perceptibly under emotional stress, particularly anger. Skin is clear, well-maintained despite long hours indoors.",
+    "distinguishing_marks": [
+      "Thin, precise scar across the left knuckle from a filing cabinet accident in 2219, kept as a deliberate reminder of carelessness",
+      "Bioluminescent subdermal pigment running along both cheekbones from temple to jaw, glowing faintly steady at rest, pulsing when emotionally activated"
+    ],
+    "visible_augmentations": "Optical overlay visible as a subtle geometric grid pattern in both eyes under direct light; no external chrome or mechanical augmentation. The bioluminescent cheekbone mod is the only overtly visible biological modification.",
+    "posture_movement": "Still, economical movements. They rarely gesture while speaking; instead, they listen with visible attention, creating a gravitational pull in conversation despite their physical stillness. When walking, each step is deliberate. When seated, they arrange themselves to face the door—a practical habit. The bioluminescent cheekbones pulse slightly when they are processing difficult information or suppressing anger.",
+    "clothing_style": "Tier 3-4 working professional. Layered in muted tones: charcoal, deep gray, black, with occasional subtle color in undershirts (dark rust, forest green). Well-maintained but never new-looking—fabrics are quality but worn in. Practical cotton or linen blends, designed for twelve-hour days. No corporate logos, no flashy augmentation displays. A single worn leather messenger bag, stuffed with case files. Thin silver rings on two fingers, both functional rather than decorative."
+  },
+  "image_prompt": "A nonbinary Black lawyer with precise posture and meticulous presence, standing in the dim light of a cramped legal aid office, wearing layered charcoal and gray clothing. Deep mahogany skin with faint bioluminescent blue-white glow along the cheekbones, most visible in shadow. Dark eyes with subtle optical overlay visible as grid patterns. Tight black braids pulled back severely. Holding case files, surrounded by stacked documents and case law. Mood: focused intensity, quiet determination, the gravitational weight of someone who has learned that sloppiness costs freedom. Cyberpunk noir. Soft overhead fluorescent mixed with cool accent lighting. Shallow depth of field. Gritty realism, high detail on facial features and augmentation. --ar 2:3 --v 6"
 }

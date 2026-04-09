@@ -249,5 +249,26 @@
     "The Coffin Nails",
     "Pellucid Systems"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Balkan)",
+    "height_cm": 183,
+    "weight_kg": 68,
+    "build": "Tall and angular with minimal body fat; long-limbed and defined musculature from years of physical labor and sustained standing. Graceful posture that reads as professional precision rather than relaxation.",
+    "hair_color": "Natural black",
+    "hair_style": "Small tight locs, shoulder-length, threaded throughout with unspooled copper wire for both aesthetic and functional medical access",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, natural; subtly enhanced with basic magnification implant visible only under close inspection (slight prismatic shimmer in bright light)",
+    "skin_tone": "Deep blue-black complexion, rich and saturated in good light, with ashy undertones visible under fluorescent clinical lighting",
+    "complexion": "High, sharp cheekbones; long, precise jawline; minimal facial expression at rest reading as clinical neutrality. Skin is immaculate—meticulously maintained with the care of someone who understands contamination risk. No acne or visible blemishes; a few fine lines around the eyes suggesting chronic exhaustion rather than age.",
+    "distinguishing_marks": [
+      "Small solid blue triangle tattoo at the outer corner of her left eye, positioned horizontally—the mark of a dissolved mutual aid collective, now reading as a personal commitment symbol rather than active affiliation",
+      "Faint surgical scar along the inside of her right forearm (approximately 8cm), barely visible, from early geneware installation",
+      "Three thin parallel scars on her left palm, old and pale, likely from pre-augmentation medical work or accident"
+    ],
+    "visible_augmentations": "Right hand displays retractable medical-grade biometric scanning nails—pearlescent, slightly iridescent in natural light, approximately 2-3mm longer than biological nails when extended. Nails retract flush when not in use. Subtle ocular enhancement in both eyes: fractional shimmer and micro-refocusing visible only in harsh or clinical lighting. No other visible chrome.",
+    "posture_movement": "Moves with economical precision; each gesture deliberate and minimal. Stands with weight evenly distributed, ready to shift. Hands move with the careful intention of someone accustomed to sterile protocols—never sudden, often held loosely at her sides or clasped. Eye contact is direct and sustained. Walking gait is measured and efficient, never hurried even when moving quickly.",
+    "clothing_style": "Tier 4 working-class pragmatism: loose-fitting dark scrubs (faded navy, no corporate branding) worn over a thin compression tank for mobility and temperature regulation. Feet in scuffed, well-maintained clinic clogs (black, medical-grade antimicrobial material, showing wear but kept obsessively clean). Over this, a long unbuttoned linen coat dyed deep indigo, stained with the ghosts of old disinfectant and bleach marks—worn for authority and to conceal the scrubs when making house calls. A simple silver ring on her left ring finger (meaning unclear, possibly a private commitment or memorial). Minimal jewelry otherwise. Small cloth satchel worn crossbody containing portable diagnostic tools, sutures, and unmarked medication bottles. Hair always secured back, never loose. No makeup. Appearance optimized entirely for function, with zero concession to tier or status display."
+  },
+  "image_prompt": "A tall, angular Black woman, age 35, with deep blue-black skin and tight copper-threaded locs, standing in clinical lighting in a modest storefront medical clinic. She wears faded dark scrubs under a long indigo linen coat, hands at her sides with the right hand showing extended iridescent medical-grade biometric scanning nails. Her expression is focused and neutral, eyes sharp with subtle ocular enhancement. A small blue triangle tattoo marks the corner of her left eye. The background shows a utilitarian two-room clinic with metal shelving, diagnostic equipment, cool fluorescent overhead lights casting shadows. Cyberpunk medical noir, photorealistic, hyperdetailed hands and eyes, volumetric lighting, documentary photography style, shallow depth of field, color graded cool blue-indigo, shot on medium format. --ar 2:3 --v 6"
 }

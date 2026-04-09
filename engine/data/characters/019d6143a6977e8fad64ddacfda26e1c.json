@@ -180,5 +180,26 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Malian / Ukrainian)",
+    "height_cm": 157,
+    "weight_kg": 52,
+    "build": "Slight and compact, with the wiry resilience of someone who has moved through the world economically for decades. Minimal body fat; her frame reads as deliberate rather than frail.",
+    "hair_color": "White",
+    "hair_style": "Cropped close to the scalp in an even, austere cut",
+    "hair_length": "Short",
+    "eye_color": "Deep brown iris with embedded gold data-pattern displays that shift slowly like tide charts or stock graphs",
+    "skin_tone": "Deep warm brown with undertones suggesting West African heritage",
+    "complexion": "Densely lined face that maps lived experience — heavy creases around the eyes and mouth, age spots on the temples and cheekbones, skin texture papery but alive. Always clean, never painted. Expression carries a kind of perpetual, gentle attention.",
+    "distinguishing_marks": [
+      "Fine network of laugh lines radiating from the outer corners of both eyes, deep enough to cast shadows",
+      "A single thin scar, nearly invisible, running along her left jawline from ear to chin — old, surgical, precise",
+      "Liver spots across both hands and forearms, clustered most densely on the backs of the hands"
+    ],
+    "visible_augmentations": "Data-pattern irises are the primary visible augmentation — distinctive vintage-style implants, forty years old, displaying slow-moving golden luminescent patterns against deep brown. The patterns shift at roughly one-second intervals, resembling financial charts or tidal data. Skeletal reinforcement in hands and wrists is subtle but visible upon close inspection: slight metallic sheen to the knuckle joints and a faint lattice pattern visible beneath translucent skin at the wrists, particularly on the left side.",
+    "posture_movement": "She moves with a slight forward lean, as though walking perpetually into wind. Her gait is deliberate and unhurried. When seated, she is very still, hands folded on the table in front of her. She makes direct eye contact and rarely blinks. Her voice is soft and requires listeners to lean in slightly.",
+    "clothing_style": "Practical, worn, Tier 4 — she dresses for function and durability, not status. Typically wears a long dark linen jacket (indigo or charcoal) over a plain cream or gray long-sleeved shirt, loose-fitting trousers in neutral tones, and soft leather slip-on shoes worn to a comfortable shape. She owns several identical jackets and rotates them; they are always immaculate. No jewelry except a single thin silver bracelet on her left wrist, possibly meaningful, possibly just old habit. A cloth bag, worn canvas, always with her."
+  },
+  "image_prompt": "An elderly West African-Ukrainian woman, age 67, with cropped white hair and deep brown skin etched with a lifetime of fine lines, standing in a cyberpunk marketplace stall. Her most striking feature: large dark brown eyes with slow-moving golden data-pattern overlays, like tide charts in real time, a vintage forty-year-old augmentation that glows faintly. She wears a simple indigo linen jacket over a cream shirt, hands resting on a cloth-covered table with printed probability maps and a glowing terminal. Her expression is calm, attentive, serene. Subtle metallic sheen visible at her knuckle joints and wrists. Sitting position is very still, composed. Warm tungsten lighting across the stall, ambient glow from E.L.F. sensor data on screens behind her. Cyberpunk marketplace setting, Tier 4, utilitarian, respectful. Photorealistic, contemplative mood, fortune teller's wisdom, data-driven spirituality. --ar 2:3 --v 6"
 }

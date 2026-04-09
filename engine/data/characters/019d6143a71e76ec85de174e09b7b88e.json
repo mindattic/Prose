@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "Someone is impersonating Ximena Engstrom-Fofana on jobs, and the impersonator is better at the work than the original",
-    "A crew member from Ximena Engstrom-Fofana's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Ximena Engstrom-Fofana's past shows up in GLMZ, carrying old grievances and new chrome",
     "Ximena Engstrom-Fofana is offered a contract that would clear all their debts — the target is someone they respect"
   ],
   "narrative_function": "As a fixer, Ximena Engstrom-Fofana embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
@@ -277,10 +277,33 @@
   "related_entities": [
     "Bioelectric Muscle Fiber",
     "Masquerade",
-    "Meridian 88",
+    "GLMZ",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
     "Pellucid Systems"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 183,
+    "weight_kg": 71,
+    "build": "Lean and long-limbed with developed musculature from years of field work. Synthetic muscle fiber in legs adds subtle bulk to calves and thighs — visible as a slight chromatic sheen under skin. Moves with economical, practiced precision.",
+    "hair_color": "Salt-and-pepper gray, naturally dark with silver threading",
+    "hair_style": "Pulled back in a tight, functional braid. Minimal styling — practicality over aesthetics.",
+    "hair_length": "Long",
+    "eye_color": "Warm brown with faint augmentation scarring at the orbital corners",
+    "skin_tone": "Medium-brown with lighter undertones, sun-weathered from decades of variable outdoor work",
+    "complexion": "Mapped with old scar tissue — three thin parallel lines across left cheekbone, puckered burn scar along right temple hairline, white knife-wound scar bisecting upper lip. Minimal makeup. Skin shows texture and history; grooming is clean but not refined.",
+    "distinguishing_marks": [
+      "Three parallel scars across left cheekbone, approximately 8cm total length, surgical-clean edges suggesting deliberate marking rather than accidental injury",
+      "Puckered thermal burn scar along right temple, fading to pale pink, approximately 4cm diameter",
+      "White knife scar bisecting upper lip vertically, thin but prominent, approximately 3cm length",
+      "Chrome-visible synthetic muscle fiber replacement visible along both shins — metallic shimmer beneath skin at calf, particularly visible under bright light",
+      "Faint augmentation scarring at orbital corners where early optic work was considered but not pursued"
+    ],
+    "visible_augmentations": "Synthetic muscle fiber replacement visible in legs as subtle chromatic shimmer under skin, especially calves and thighs — noticeable when she moves quickly or wears form-fitting clothing. Gecko-grip fingertip implants visible as faint metallic stippling on fingertips and toe pads when hands/feet are examined closely. No obvious chrome plating or obvious neural ports.",
+    "posture_movement": "Stands with shoulders relaxed but spine straight. Moves with deliberate economy — every motion purposeful, no wasted energy. Favors stairs with caution due to synthetic leg limitations but compensates with handrail usage. Climbs with unusual fluidity thanks to gecko-grip implants. Resting expression is neutral to slightly weary; maintains eye contact during negotiations.",
+    "clothing_style": "Tier 3-4 functional wear. Standard: fitted dark synthweave pants with cargo pockets, reinforced synthetic leather jacket (usually charcoal or black, worn but maintained), layered base clothes in neutral tones. Footwear is always climbing-friendly (grippy soles). Jewelry minimal — watch with encrypted display (professional tool, not fashion), no other visible adornment. Clothing shows wear and repair but is clean and intentional. No corp branding. Dressed for function and mobility, not status."
+  },
+  "image_prompt": "A 45-year-old woman of Scandinavian and West African descent, tall and lean-muscular, standing in the neon-lit corridors of Meridian Station. Salt-and-pepper gray hair pulled back in a tight functional braid. Warm brown eyes. Her face is mapped with old scars — three parallel lines across left cheekbone, burn scar on temple, thin scar bisecting upper lip. She wears fitted dark synthweave pants and a worn charcoal leather jacket. Visible metallic shimmer along her shins and calves where synthetic muscle fiber replacements catch the light. Faint metallic stippling on her fingertips hints at gecko-grip implants. She stands with relaxed shoulders and straight posture, one hand resting on a reinforced railing. Background shows transit nexus infrastructure, cool blues and purples, neon signage. Mood is competent, weathered, dangerous but professional. Cinematic cyberpunk noir lighting. Shot at eye level. High detail, photorealistic. --ar 2:3 --v 6"
 }

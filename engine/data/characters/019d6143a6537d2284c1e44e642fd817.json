@@ -283,5 +283,27 @@
     "TESSERA PG-2 'Signature'",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and lean with corded muscle — built for speed and precision rather than power. Compact frame with minimal body fat; every movement economical and controlled.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Pulled back in a tight braid, utilitarian — no ornament, designed for function during infiltration work",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown with subtle cybernetic gold rim at pupil edge — thermal masking system integration",
+    "skin_tone": "Medium brown with warm undertones; carries a slight pallor from nocturnal living",
+    "complexion": "Face mapped with thin scar tissue — left cheekbone, across right temple, along jawline. Scars are old, healed clean but visible under certain light. Facial hair sparse; minimal grooming beyond function. Eyes carry exhaustion and calculation in equal measure.",
+    "distinguishing_marks": [
+      "Thin scar across right temple to cheekbone, approximately 8cm, likely from shrapnel or blade",
+      "Linear scar along left jaw line, faded white, suggests old laceration",
+      "Burn scar on inside of left wrist — small, circular, consistent with old electrical contact or device malfunction",
+      "Network of thin white scars across both knuckles — accumulated from years of hand-to-hand work"
+    ],
+    "visible_augmentations": "Chrome thermal masking system visible along lateral neck and upper spine — burnished titanium-grade plating integrated into skin, circuit-line aesthetics visible under strong light. Hydraulic joint articulation visible at elbows and knees — subtle mechanical definition at joints, chrome accents where synthetic meets flesh. Movement reveals the augmentation: precision, inhuman fluidity in absorbing impact.",
+    "posture_movement": "Restless, economical. Never fully still — fingers tap, weight shifts, eyes scan. When moving with purpose, motion is silent and controlled, almost predatory. Sits with visibility of exits. Stands with weight on balls of feet, ready for vertical departure.",
+    "clothing_style": "Tier 3-4 infiltration wear: dark tactical pants with reinforced seams and hidden pockets, fitted black compression shirt under a matte-finish corpo-adjacent jacket in charcoal gray (stolen or black-market, carries no corporate insignia). Boots are military-grade synthleather, scuffed but maintained. No jewelry. Augmentations deliberately left visible — signal of competence and warning. Clothing prioritizes mobility and function; brand markers are utilitarian military surplus or unmarked tactical brands."
+  },
+  "image_prompt": "Cyberpunk infiltrator, nonbinary, 32 years old, wiry athletic build with visible chrome thermal masking system along neck and spine, scar-mapped face with dark brown eyes, tight braided dark hair, medium brown skin tone, wearing matte charcoal tactical jacket and black compression shirt, stands with predatory readiness near floor-to-ceiling windows overlooking Lake Shore Drive at night, neon reflected in chrome augmentations, moody blue and amber lighting, cinematic noir-cyberpunk atmosphere, hyperrealistic detail on augmentation work, nocturnal aesthetic, tense focused expression, shot at 2:3 portrait angle, photographed with film noir aesthetic --ar 2:3 --v 6"
 }

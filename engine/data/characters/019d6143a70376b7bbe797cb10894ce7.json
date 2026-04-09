@@ -247,5 +247,26 @@
     "The Pure Hand",
     "Tibor Osei-Svanstrom"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "East African / Slavic (Kenyan / Serbian or Croatian)",
+    "height_cm": 188,
+    "weight_kg": 98,
+    "build": "Broad-shouldered and heavyset with a slight forward stoop developed over decades of bench work; substantial upper body strength concentrated in chest and shoulders, softened by age but still imposing",
+    "hair_color": "White",
+    "hair_style": "Close-cropped, evenly trimmed",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with subtle neural shimmer from vision correction implant",
+    "skin_tone": "Deep brown with weathered quality; darker at knuckles and joints from decades of mechanical work",
+    "complexion": "Lined face reflecting sixty-two years of precision work and sun exposure; close-trimmed white beard maintained with ritualistic care every three days; eyes intelligent and observant behind reading glasses worn on a beaded cord despite functional implant correction",
+    "distinguishing_marks": [
+      "Old industrial burn scar across the back of right shoulder — smooth, faded silvery tissue roughly 8cm wide from a machinery accident at age 28",
+      "Calloused hands with permanently darkened knuckles and worn fingerprints from four decades of prosthetic fabrication",
+      "Small geometric patterns etched into the brushed housing of left forearm prosthetic — childish but precise line-work created by his daughter at age seven"
+    ],
+    "visible_augmentations": "Left forearm prosthetic below the elbow: mid-range Ferrogate industrial model heavily customized through decades of modification, its housing bearing scratched geometric etchings and showing signs of personal maintenance; bronze-toned articulation joints visible at wrist and finger servos. Vision correction implant detectable only by the subtle luminescence at the edge of his iris in certain light. Mild skeletal reinforcement in both shoulders suggests past industrial injury but visible only as subtle asymmetry in shoulder width.",
+    "posture_movement": "Stands with a slight forward lean developed from years hunched over fitting benches; moves with economical precision despite his age and bulk; handles objects with meticulous care and deliberation; left arm moves with mechanical smoothness but total naturalness — prosthetic is clearly an extension, not an appendage",
+    "clothing_style": "Practical Tier 3-4 working-class aesthetic: well-maintained black cotton work pants with multiple reinforced pockets, fitted long-sleeved thermal shirt (often dark blue or charcoal) rolled to elbows during fitting work, heavy canvas apron with leather-reinforced cuff for his prosthetic side, worn composite steel-toed boots re-soled multiple times. No jewelry except reading glasses cord made from braided synthetic beads. Occasionally wears a thin gold ring on his right hand — simple, well-worn, likely a wedding band or memorial piece."
+  },
+  "image_prompt": "A weathered 62-year-old East African-Slavic man with deep brown skin and close-cropped white beard, standing in a narrow cyberpunk prosthetics workshop surrounded by limb forms and articulation servos, wearing a heavy canvas apron over a dark thermal shirt, his left forearm a modified bronze-toned industrial prosthetic etched with delicate geometric patterns, hands enormous and calloused from decades of precision work, reading glasses hanging from a beaded cord around his neck, warm intelligent eyes with subtle neural implant shimmer, slight forward stoop from years of bench work, harsh fluorescent shop lighting casting sharp shadows across his weathered face, technical detail on the prosthetic components, intimate working-class atmosphere, documentary realism, Tier 3 Great Lakes Metropolitan Zone aesthetic, --ar 2:3 --v 6"
 }

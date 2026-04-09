@@ -263,5 +263,25 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Brass"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "West African / Dutch",
+    "height_cm": 183,
+    "weight_kg": 78,
+    "build": "Tall and broad-shouldered with a composed, athletic frame — the kind of physique that suggests disciplined maintenance rather than vanity. Carries herself with deliberate mass.",
+    "hair_color": "Natural black with silver streaking throughout",
+    "hair_style": "Locs gathered into an architectural updo with precision pins, adding visual authority to her frame",
+    "hair_length": "Long (when down); pinned to shoulder-length when styled",
+    "eye_color": "Patterned amber and black rings (cosmetic augmentation); pupils responsive and alert",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Flawless, well-maintained skin suggesting consistent skincare discipline. Minimal cosmetic adjustment beyond the eye modification. Expression typically composed, with faint lines around the eyes that deepen when she concentrates.",
+    "distinguishing_marks": [
+      "Faint circular scar on the left inner forearm — heat damage from the Calumet Rise collapse incident, mostly faded but visible under direct light.",
+      "Small brass ELF-shrine pendant worn on a thin chain beneath her collar, visible only when she leans forward."
+    ],
+    "visible_augmentations": "Patterned irises with subtle amber-and-black ring pulse under concentration. The subdermal temperature regulation mesh is not visible externally but causes minimal thermal irregularities detectable only through close thermal imaging. Neural compliance-assist chip is entirely subcutaneous—no visible port or indicator.",
+    "posture_movement": "Moves with controlled precision and deliberate pacing. Stands with spine perfectly vertical, shoulders set back. Her gaze lingers—direct eye contact held longer than typical, scanning for inconsistency. Hands rest flat on surfaces when seated, never fidgeting. When walking through corridors, she moves at a measured pace that forces others to either match her speed or step aside.",
+    "clothing_style": "Exclusively Helix-branded charcoal: tailored trousers with a razor crease, high-collared shirt or structured blazer, always pressed immaculately. Minimal jewelry — the pendant, a brushed-steel wrist display (compliance alerts), and a simple platinum band on her left ring finger (wedding or commitment, worn despite no public relationship record). Closed-toe corporate footwear, always polished. Tier 4 corporate, expensive without being ostentatious — the uniform of someone for whom appearance is infrastructure, not expression."
+  },
+  "image_prompt": "Portrait of a tall, commanding Black woman in her late forties with deep umber skin and natural silver-streaked locs pinned in an architectural updo, wearing charcoal Helix-branded corporate formalwear with high collar, posture perfectly composed and authoritative. Her eyes have striking patterned irises with amber and black concentric rings that pulse subtly. Clean-shaven, well-groomed, minimal jewelry except for a brass pendant visible at her collar. Corporate office setting: floor-to-ceiling window behind her overlooking the GLMZ skyline, cool blue-grey ambient lighting, her desk visible with a small brass data-tile shrine and dried marigold, mood of calm institutional power, forensic precision, quiet intimidation. Photography style: high-resolution character portrait, shallow depth of field, cool color temperature, photorealistic, executive portrait aesthetics, cyberpunk corporate setting --ar 2:3 --v 6"
 }

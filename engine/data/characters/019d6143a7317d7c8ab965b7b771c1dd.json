@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Riot Suppression Specialist, Meridian 88 Metro Police",
+  "role": "Riot Suppression Specialist, GLMZ Metro Police",
   "age": 34,
   "status": "active",
   "location": "Fort Anchor, near Pulaski and Chicago Ave",
@@ -64,7 +64,7 @@
   "narrative_function": "Recurring authority figure who is neither villain nor pushover — a moral friction point. Can be a reluctant information source, a character who arrests PCs for things that are technically illegal, or someone who quietly looks the other way when she decides it matters.",
   "augmentations": "Subdermal forearm and clavicle plating (standard Metro issue). LIDAR-ring ocular overlay. Bone-density reinforcement in knees and shins. No geneware — she considers it a personal line she hasn't crossed yet.",
   "daily_life": "Shifts at Fort Anchor start at 0500 — gear check, briefing, deployment to whatever district is running hot. Evenings she trains in Metro's combat gym or visits her mother in Ironvein, bringing groceries and pretending not to notice the UBC stipend notices on the counter.",
-  "affiliation": "Meridian 88 Metro Police, Riot Suppression Unit 7",
+  "affiliation": "GLMZ Metro Police, Riot Suppression Unit 7",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -273,5 +273,26 @@
     "Nightlight",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "South Asian (Gujarati) / West African (Bantu)",
+    "height_cm": 183,
+    "weight_kg": 89,
+    "build": "Powerfully built with exceptional upper body mass — broad shoulders and thick neck that taper to a solid waist. Deliberate posture of controlled presence; carries herself like ballast in motion.",
+    "hair_color": "Natural black with grey undertones at temples",
+    "hair_style": "Cropped close to scalp with geometric fade lines on sides — practical, minimal maintenance",
+    "hair_length": "Short",
+    "eye_color": "Grey (augmented) with visible LIDAR ring overlay — amber luminescence when active",
+    "skin_tone": "Deep warm brown — melanin-rich complexion with subtle warm undertones",
+    "complexion": "Strong facial structure, minimal scarring on face, well-maintained despite work strain. Slight creasing around eyes from eleven years of squinting into crowd noise. No visible cosmetic grooming beyond functional grooming.",
+    "distinguishing_marks": [
+      "Left forearm carries a geometric Amazigh-style tattoo in dark indigo — a personal talisman from maternal lineage, spans from wrist to elbow with angular, interlocking patterns",
+      "Subdermal armor plating along both forearms creates subtle ridge-lines visible beneath skin when she flexes or moves — gives her silhouette unnaturally sharp angles at the wrists and lower forearms",
+      "Clavicle plating creates faint geometric ridge structure across upper chest and shoulders, visible as slight textural discontinuity in skin tone under harsh lighting"
+    ],
+    "visible_augmentations": "LIDAR-ring ocular overlay visible as faint circular amber-tinted rings around iris when active; subdermal plating creates visible geometric ridging along forearms and clavicle — most apparent under direct light or when she flexes. No visible external chrome or prosthetics; reinforcement is internal and subtle but unmistakable to trained eye.",
+    "posture_movement": "Economy of motion — every gesture is deliberate and measured. She stands with weight distributed evenly, shoulders back, creating an impression of immobile stability. When moving through crowds, she parts people by presence alone before physical contact becomes necessary. Off-duty, posture loosens slightly but never fully; muscle memory of tactical readiness is permanent.",
+    "clothing_style": "On-duty: GLMZ Metro Police Riot Suppression kit — reinforced polymer bodysuit in slate grey with reflective striping, ceramic-composite armor panels, weighted utility belt with restraint loops and gas dispersal equipment. Boots are heavy-duty tactical with ankle reinforcement. Off-duty: practical Tier 3 clothing — fitted black synthetic-blend shirts, cargo pants with secure pockets, unmarked grey jacket with internal organization. No visible personal styling or affectation; functional over aesthetic. Occasionally wears an older Amazigh-pattern scarf around her neck when off-duty, gift from mother."
+  },
+  "image_prompt": "Cyberpunk portrait of a 34-year-old Black-South Asian woman, powerfully built with deep brown skin and close-cropped natural hair with geometric fade, stern focused expression, piercing grey augmented eyes with faint amber LIDAR rings, visible subdermal armor plating ridges along forearms and clavicle creating angular geometric patterns beneath skin, geometric Amazigh tattoo on left forearm, wearing GLMZ Metro Police riot suppression tactical gear in slate grey with reflective striping and heavy ceramic plates, standing with perfect controlled stillness and weight-forward stability, Fort Anchor precinct interior in background with harsh industrial lighting, cinematic lighting emphasizing her presence and the subtle glint of subdermal tech, photorealistic, HD, professional tactical portrait style, moody and authoritative --ar 2:3 --v 6"
 }

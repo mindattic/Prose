@@ -225,5 +225,26 @@
     "Rust",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Zimbabwean / British",
+    "height_cm": 152,
+    "weight_kg": 38,
+    "build": "Compact and slight, with the wiry compactness of a naturally small frame rather than malnourishment. Shoulders narrow, posture deliberately upright despite their youth.",
+    "hair_color": "Deep brown with natural warm undertones",
+    "hair_style": "Uncut crown, dense and elaborately textured, typically bound under colored scarves that rotate based on mood or day",
+    "hair_length": "Long (shoulder-length when unbound)",
+    "eye_color": "Deep brown, close-set, magnified slightly behind thick physical lenses",
+    "skin_tone": "Warm rust-brown with underlying golden undertones; even complexion",
+    "complexion": "Smooth, unblemished skin typical of youth. Clean grooming maintained through orphanage routine. Face carries unusual gravity for age — expression often distant or intensely focused. Dark circles beneath eyes from note-taking and reading late.",
+    "distinguishing_marks": [
+      "Faint callus on right middle finger from constant pen use",
+      "Ink smudges on inner wrists from carrying pens and rubbing eyes while writing",
+      "Small permanent indent on bridge of nose from wearing secondhand glasses daily since age 10"
+    ],
+    "visible_augmentations": "None visible. Deliberately and vocally absent. Wears thick-lensed secondhand glasses with plastic frames — actual physical optical lenses, not neural overlays — which they treat as significant personal property.",
+    "posture_movement": "Moves slowly and deliberately, not from limitation but from intentional observation. Often pauses mid-stride to look at something. Sits hunched over notebooks. When walking through Hough, their pace is methodical, almost archival. Hands are expressive when writing but still otherwise. Rarely makes eye contact unless speaking about their documentation.",
+    "clothing_style": "Tier 4/5 orphanage-supplied basics: worn but clean secondhand clothing, neutral tones. Favors layers — oversized sweaters, hand-knit cardigans donated to the home. Always wears at least one scarf, rotated by mood (grey = contemplative, rust = observant, deep blue = grieving, vibrant orange = rare good mood). Carries a canvas satchel that holds their primary notebook, secondary notebooks organized by district, writing implements, and sketching supplies. Shoes are scuffed practical sneakers, re-soled twice."
+  },
+  "image_prompt": "Thirteen-year-old nonbinary child with warm rust-brown skin and close-set eyes magnified behind thick secondhand plastic-framed glasses, uncut dense brown hair bound under a grey scarf. Compact, slightly built frame standing in deliberate posture. Wearing layered Tier 4 orphanage clothing — oversized sweater, hand-knit cardigan over neutral shirt. Canvas satchel across chest containing visible notebooks and pens. Standing in industrial Hough Reclamation neighborhood with weathered brick buildings, faded murals, chain-link fencing in soft afternoon light. Expression serious and observant, caught mid-note-taking. Photorealistic, grounded documentary style, muted color palette with emphasis on textures — worn fabric, old buildings, ink marks on skin. Mood: quiet gravity, archival sadness, earnest witness. --ar 2:3 --v 6"
 }

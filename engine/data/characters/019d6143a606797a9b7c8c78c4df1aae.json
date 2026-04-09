@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Forensic evidence handler and chain-of-custody specialist, Meridian 88 Metro Police",
+  "role": "Forensic evidence handler and chain-of-custody specialist, GLMZ Metro Police",
   "age": 52,
   "status": "active",
   "location": "Fort Anchor, Metro Police Central Evidence Repository, near Halsted and Division",
@@ -63,7 +63,7 @@
   "narrative_function": "Evidence gatekeeper and institutional memory — the person who knows what Metro has, what it had, and what has gone missing. Quest-critical for any story involving forensic evidence, police corruption, or disappeared case materials.",
   "augmentations": "Enhanced tactile sensitivity implant in both hands — originally installed for precise material identification, now standard for her work. Reading enhancement overlay (heads-up document display, low-profile). Nothing cosmetic.",
   "daily_life": "Arrives at the repository before any other staff; processes incoming evidence logs; conducts integrity checks on stored items on a rotating schedule she designed herself; leaves precisely when her shift ends, no earlier, no later.",
-  "affiliation": "Meridian 88 Metro Police — Central Evidence Repository, Fort Anchor",
+  "affiliation": "GLMZ Metro Police — Central Evidence Repository, Fort Anchor",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -200,5 +200,24 @@
     "The Pure Hand",
     "Iron"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Hungarian / Bantu (West-Central African)",
+    "height_cm": 168,
+    "weight_kg": 74,
+    "build": "Sturdy and compact, with the solid frame of someone who moves deliberately and carries weight without bulk. Broad shoulders, strong forearms from two decades of careful handling work.",
+    "hair_color": "Iron-grey with natural dark undertones",
+    "hair_style": "Thick locs, typically pinned up in a tight, functional crown during work hours; worn loose and full outside the repository",
+    "hair_length": "Long (to mid-back when unbound)",
+    "eye_color": "Deep brown, warm",
+    "skin_tone": "Deep brown with a cool, pallid undertone from prolonged exposure to artificial lighting; the quality suggests years spent indoors under LEDs",
+    "complexion": "Unlined face for her age; sharp cheekbones; minimal makeup; fastidiously groomed but without vanity. Hands are her most distinctive feature — calloused at the fingertips and joints, with precise, economical movements.",
+    "distinguishing_marks": [
+      "Small, pale scar on the inside of her left wrist, barely visible, consistent with early-career injury or implant installation site"
+    ],
+    "visible_augmentations": "None visible externally. She wears nitrile or latex gloves during all evidence work; the gloves are removed with deliberate ceremony when work ends. A faint, nearly imperceptible crystalline shimmer at the corner of her right eye when it catches light — her reading enhancement overlay at rest.",
+    "posture_movement": "Stands with precise posture; moves with minimal wasted motion, each gesture intentional and economical. Her hands are her most expressive feature — they move with surgical precision during work. Off-duty, she carries herself with quiet authority but no apparent tension.",
+    "clothing_style": "Professional but worn-in: grey or navy trousers with deep pockets, button-up shirts in neutral tones (charcoal, cream, pale blue), sensible non-slip shoes with reinforced arches. A Metro Police ID lanyard worn outside her shirt, worn and familiar with her. No jewelry. Off-duty: the same practical aesthetic, comfortable black jeans, well-maintained leather jacket (scuffed, vintage, cared-for). She dresses like someone who doesn't think about clothes but respects the tool-like function of fabric."
+  },
+  "image_prompt": "Cyberpunk forensic evidence specialist, 52-year-old woman with iron-grey locs pinned in tight crown, deep brown skin with cool pallor from years under artificial light, sturdy compact build, sharp cheekbones. Wearing grey trousers and neutral button-up shirt, Metro Police ID lanyard, nitrile gloves held in one hand. Standing in sterile evidence repository with climate-controlled shelving and soft amber LED lighting in background. Precise, methodical posture, hands expressive and careful. Faint crystalline shimmer visible at corner of right eye. Cinematic lighting, film noir mood with cyberpunk undertones, photorealistic, 8k, subtle augmentation aesthetic --ar 2:3 --v 6"
 }

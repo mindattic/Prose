@@ -101,5 +101,26 @@
     "Meridian Munitions Dispatch-45 'Last Word'"
   ],
   "registered_firearms": [],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Russian / Turkic",
+    "height_cm": 187,
+    "weight_kg": 89,
+    "build": "Lean and angular, shoulders broad but not bulky. Decades of moving through tight spaces and maintaining low profiles have kept him wiry rather than muscular. Moves with economical precision.",
+    "hair_color": "Salt-and-pepper gray",
+    "hair_style": "Closely cropped, military-neat",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint cataracts forming at edges — signs of age and too many years squinting through scope sights",
+    "skin_tone": "Medium-dark, with underlying cool undertones from his Turkic lineage, weathered to a matte finish",
+    "complexion": "Deep lines around the eyes and mouth, a scar bisecting his left eyebrow, skin bearing the texture of someone who works outdoors in industrial weather. Stubble always present — pragmatic rather than styled.",
+    "distinguishing_marks": [
+      "Surgical scar running 8cm down the left temple, partially hidden by hairline, result of a cortex jack installation",
+      "Burn scarring across the back of his right hand, silvered and smooth, old enough to predate most of his current augmentations",
+      "Small triangular tattoo on his left wrist in faded indigo — a maker's mark from a Tier-5 clinic, specific enough to identify him to those who know what it means"
+    ],
+    "visible_augmentations": "None obvious. A faint whirring occasionally audible beneath his left ear suggests subcutaneous neural processing. No chrome visible — he dresses and maintains himself deliberately invisible.",
+    "posture_movement": "Upright but not rigid. Moves with minimal wasted motion, always aware of exits. Hands positioned low and neutral. Eyes track rooms methodically. Sits with his back to walls. Speaks in measured sentences with long pauses — listening costs nothing.",
+    "clothing_style": "Tier-3 practical wear: charcoal thermal undershirt, unmarked gray composite jacket with internal pockets, dark pants with reinforced knees, worn Black Archon steel-toe boots. A single piece of jewelry — a faded copper wedding band on his left ring finger, worn smooth. Carries a worn canvas satchel, contents unknown. No logos, no status symbols. Everything chosen to disappear into crowds."
+  },
+  "image_prompt": "portrait of a 44-year-old man with West African, Russian, and Central Asian heritage, salt-and-pepper military-short hair, deep brown eyes weathered by age, lean angular build 187cm tall, visible scar bisecting left eyebrow, burn scarring on back of right hand, matte medium-dark skin tone, wearing unmarked gray composite jacket over charcoal thermal shirt, dark tactical pants, Black Archon boots, worn copper wedding band, faded indigo maker's mark tattoo on left wrist, minimalist cyberpunk fixer aesthetic, standing in Old Harbor industrial setting near Michigan Ave, cool dawn lighting with rust-colored neon reflecting off wet concrete, cinematic realism, photorealistic, character study portrait, melancholic and watchful expression, 35mm lens aesthetic --ar 2:3 --v 6"
 }

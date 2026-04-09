@@ -287,5 +287,28 @@
     "Clover",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Spanish / Eastern European / South Asian (Vasquez-Chatterjee lineage suggests Iberian, Slavic, and Bengali/Indian ancestry)",
+    "height_cm": 177,
+    "weight_kg": 68,
+    "build": "Wiry and lean with corded forearm musculature — the build of someone who converts nervous energy into functional strength. Minimal body fat. Decades of street work have kept him spare rather than bulky.",
+    "hair_color": "Salt-and-pepper gray with black undertones",
+    "hair_style": "Kept short and practical, slicked back with a slight curl at the nape",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, naturally warm but hardened by age and repeated trauma",
+    "skin_tone": "Olive-tan complexion with the weathered quality of someone who works outdoors in industrial zones",
+    "complexion": "Deeply lined face — forehead, around eyes, mouth corners — a roadmap of sixty-four years of squinting, grimacing, and stress. Stubble perpetually present (usually gray-black, two days' growth). Skin has the texture of someone who doesn't prioritize skincare; minor acne scarring visible on cheekbones from earlier decades.",
+    "distinguishing_marks": [
+      "Diagonal scar across left cheekbone, approximately 8cm, white and slightly puckered — knife work, old enough to be pale.",
+      "Burn scar on right forearm (inner wrist to elbow) — thermal weapon discharge, irregular edges, darker tan against his base tone.",
+      "Small crescent moon scar on his left temple, barely visible unless light catches it.",
+      "Tattoo on right shoulder blade — faded geometric design in blue-black ink, pre-augmentation era, worn and blurred with age.",
+      "Needle track marks on inner elbows (historical; no longer active substance use) — thin white lines, obvious to someone who knows what to look for."
+    ],
+    "visible_augmentations": "Chrome-plated nasal duct analyzer — visible as a faint glint of polished metal at both nostrils when light hits correctly, most obvious in profile. The metal has a brushed-nickel finish and shows minor patina/scratching from field use. No visible signs of the bioware adrenaline regulator, which is subcutaneous.",
+    "posture_movement": "Restless and economical — no wasted motion, but constant small adjustments (weight shifting, hand repositioning). Sits at angles, never fully relaxing into a chair. Eyes track movement reflexively. When standing still, he appears coiled rather than relaxed. Walks with a slight forward lean, as though perpetually ready to sprint.",
+    "clothing_style": "Tier 3-4 utilitarian streetwear. Favors dark colors (blacks, grays, muted olives). Typically wears reinforced canvas tactical jackets with visible zipper pockets and stitched seams, showing wear and repair. Undershirts are plain synthetic blend or moisture-wicking synthetics. Cargo pants or modified jeans with strategic pockets and reinforced knees. Boots are worn tactical-grade — no logos, scuffed, replaced every 2-3 years. A long coat (leather or synthetic leather, weathered dark brown) over his working gear. Minimal jewelry — one silver ring on left hand, likely sentimental or lucky. No visible corpo branding. Everything is functional; nothing is fashionable."
+  },
+  "image_prompt": "A 64-year-old street samurai with wiry, lean build and salt-and-pepper hair slicked back. Olive-tan skin deeply lined with age and stress, dark brown eyes. Prominent scar across left cheekbone, weathered face with stubble. Faint chrome shimmer visible at nostrils (nasal chemical analyzer). Wearing dark reinforced tactical jacket over synthetic undershirt, cargo pants, and worn leather coat. Standing in an industrial Geartown alley lined with corrugated metal and neon signage, oil-stained concrete beneath boots. Cold blue-purple cyberpunk neon lighting casting harsh shadows across his face. Restless posture, hand resting near gear. Gritty, realistic cyberpunk aesthetic, photorealistic portrait, harsh urban lighting, volumetric fog, cinematic depth --ar 2:3 --v 6"
 }

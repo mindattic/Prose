@@ -192,5 +192,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Ghanaian) / Armenian",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Solidly built with functional muscularity in shoulders and forearms from years of hands-on repair work; no excess, no fragility. Wide-palmed hands with long, dexterous fingers — inherited from her father's lineage and perfectly suited to her profession.",
+    "hair_color": "Natural dark brown, almost black",
+    "hair_style": "Close-cropped, maintenance-minimal, occasionally uneven where she cuts it herself between paying for professional trims",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with warm undertones",
+    "skin_tone": "Medium-warm complexion blending West African and Armenian heritage; olive undertones visible in natural light",
+    "complexion": "Clear and practical — minimal makeup, sun-worn in places from workshop lighting and the occasional rooftop diagnostic run. Perpetual traces of grease under fingernails and in the creases of her palms despite obsessive scrubbing. Small scar on left cheekbone from a tool slip at age thirteen.",
+    "distinguishing_marks": [
+      "Bioluminescent skin mods along both forearms in soft amber that pulse gently in rhythm with her heart rate; most visible in low light or darkness, creating a subtle rhythm effect on her skin",
+      "Fine line scar on left cheekbone near temple, approximately 3cm, pale and barely visible in direct light",
+      "Calluses and minor burn marks across her palms and knuckles from steady repair work; mark of her trade rather than injury"
+    ],
+    "visible_augmentations": "Bioluminescent forearm tracers are her only visibly obvious modification. The subdermal haptic EM-field sensor in her right hand is invisible to casual observation, though she sometimes flexes her right hand unconsciously when diagnosing equipment, and the faint blue LED indicator under the skin at her inner wrist pulses when active. No chrome, no heavy augmentation — she's practical about what's worth the cost and the risk.",
+    "posture_movement": "Confident and economical in movement; stands with slight forward lean as if perpetually about to lean over a workbench. Hands move with precision and purpose. Fidgets with small objects — wrenches, diagnostic tools, circuit fragments — when thinking. Makes direct eye contact. Walks quickly between tasks, rarely leisures.",
+    "clothing_style": "Tier 3-4 working class with practical, salvage-conscious aesthetics. Favors reinforced work pants with multiple pockets (usually Blackwell brand or salvaged surplus), steel-toed boots scuffed and re-sealed multiple times, oversized work shirts or tank tops under a canvas apron with tools. Off-shift: plain fitted tees or salvaged vintage band shirts, same work pants, same boots. A vintage leather jacket from her mother that she's had patched and resealed twice. No corporate branding. One piece of jewelry: a small brass hex wrench on a steel chain around her neck — her father's first apprenticeship gift to her at age twelve. Grease and workshop dust are her default perfume."
+  },
+  "image_prompt": "A 16-year-old girl of West African and Armenian descent, medium height, solidly built with visible arm musculature from technical work, close-cropped natural dark brown hair, deep brown eyes. Wears reinforced work pants, oversized tan canvas apron with tool pockets, steel-toed boots. Her forearms glow with soft bioluminescent amber tracers pulsing in rhythm, most visible in the workshop's cool LED lighting. She stands leaning slightly forward over a workbench in a cluttered Geartown salvage shop, hands positioned over a partially disassembled servo actuator, grease permanently staining her palms. Confident, practical demeanor, faint scar on left cheekbone barely visible. Vintage patched leather jacket draped over a chair nearby. Cool workshop lighting, neon-touched shadows, scattered tools and salvage parts filling shelves behind her. Cyberpunk apprentice technician aesthetic, working-class grit, genuine focus. --ar 2:3 --v 6"
 }

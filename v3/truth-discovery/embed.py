@@ -53,11 +53,15 @@ def run_embedding():
     # Load the "all-MiniLM-L6-v2" model. This is a small but effective model that:
     #   - Produces 384-dimensional embeddings (each sentence becomes 384 numbers)
     #   - Is trained on over 1 billion sentence pairs
-    #   - Runs fast on CPU (no GPU needed)
     #   - Is good enough for clustering similar sentences together
     # The first time you run this, it downloads the model (~80MB). After that, it's cached.
-    model = SentenceTransformer("all-MiniLM-L6-v2")
-    console.print(f"  Model loaded: all-MiniLM-L6-v2")
+    #
+    # GPU acceleration: if a CUDA GPU is available (e.g., RTX 3080 Ti), the model
+    # runs on the GPU automatically, which is significantly faster for large batches.
+    import torch
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    model = SentenceTransformer("all-MiniLM-L6-v2", device=device)
+    console.print(f"  Model loaded: all-MiniLM-L6-v2 on [bold]{device.upper()}[/bold]")
 
     # Connect to the database where extract.py stored the triples
     conn = sqlite3.connect(DB_PATH)

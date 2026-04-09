@@ -203,5 +203,26 @@
     "The Pale Mile",
     "Cedar"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Nigerian) / Scandinavian (Norwegian)",
+    "height_cm": 188,
+    "weight_kg": 102,
+    "build": "Large-framed and broad-shouldered, with visible softness accumulating at the middle and chest; still carries the physical presence of a younger laborer, but gravity and years of standing at workbenches have added weight in his torso",
+    "hair_color": "Dark brown, graying at temples and along the jawline",
+    "hair_style": "Short, tight curls kept practical and low-maintenance; occasionally oil-stained despite regular washing",
+    "hair_length": "Short",
+    "eye_color": "Pale blue (striking contrast against his dark skin tone; left eye shows faint iridescent ring from optical zoom implant when light hits it)",
+    "skin_tone": "Deep brown with warm undertones; richly pigmented across his entire body",
+    "complexion": "Weathered and practical—permanent creases around his eyes from forty-six years of squinting into engine bays; perpetual faint smell of synthetic lubricant embedded in his skin despite washing; small scars on his knuckles and forearms; jaw line still defined beneath a neat, close-trimmed beard flecked with gray",
+    "distinguishing_marks": [
+      "Deep horizontal scar across the back of his right forearm, approximately 12 cm long, from a hydraulic line rupture at age 31",
+      "Faint burn marks (three parallel lines) on the inner left forearm from contact with hot coolant, circa 2214",
+      "Small tattoo on his left wrist: a simplified wrench icon with a sun motif around it, done in black ink, approximately 3 cm across—a tribute to his grandfather and a personal invocation"
+    ],
+    "visible_augmentations": "Right hand: five retractable precision claw mods in place of biological fingers, each articulated with subtle servo mechanics visible at the knuckle joints; brushed steel coloring with grip-texture pads on the inner curve of each claw. Left eye: faint silvery-purple iridescent ring visible around the iris when light strikes it at certain angles, marking the optical zoom implant housing.",
+    "posture_movement": "Stands with the weight-forward stance of someone who has spent decades leaning into work; moves deliberately and without wasted motion, with a mechanic's economy of gesture; right hand often held at chest level when idle, claws partially extended or twitching slightly as if restless; left eye occasionally focuses with an intensity disconnected from what he is actually looking at (optical zoom engaging). Despite his size, his movements are controlled and precise.",
+    "clothing_style": "Tier 3 working-class practical: heavy-duty Ferrogate-branded coveralls (faded indigo, extensively patched at knees and elbows), worn over a simple gray tecnocotton undershirt; steel-toed workboots scuffed to near-matte finish; a worn leather jacket (dark brown, creased at the elbows, with the sleeves pushed up to his forearms) that he shrugs on when leaving the bay. Accessory: a thin silver chain around his neck disappearing into his shirt (contains a small photo of his grandfather). His clothing always smells faintly of cedar cologne underneath the synthetic lubricant—a stubborn refusal to smell entirely like his work."
+  },
+  "image_prompt": "Portrait of a 46-year-old West African-Scandinavian man, broad-shouldered and weathered, dark rich skin tone with pale ice-blue eyes striking against his face, short gray-streaked curls, thin beard. His right hand features five sleek brushed-steel retractable precision claws instead of fingers, partially extended. His left eye has a faint iridescent silvery ring around the iris marking an optical zoom implant. He wears faded indigo Ferrogate coveralls heavily patched at the knees, a gray undershirt, and a worn dark brown leather jacket with pushed-up sleeves. Deep scars mark his forearms. He stands in a cluttered mechanical workshop bay filled with salvaged engine parts, tools, and flickering work lights casting warm amber shadows. Cedar cologne and synthetic lubricant smell emanates from him. Realistic, weathered, no-nonsense expression. Industrial cyberpunk aesthetic, gritty and authentic, shot in warm tungsten workshop lighting. --ar 2:3 --v 6"
 }

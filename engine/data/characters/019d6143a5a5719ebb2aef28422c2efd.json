@@ -28,7 +28,7 @@
       "That her work will only matter after she is gone"
     ],
     "core_desires": [
-      "To produce a complete stratigraphic record of Meridian 88 from lake bed to skyline",
+      "To produce a complete stratigraphic record of GLMZ from lake bed to skyline",
       "To be understood, not just respected"
     ],
     "coping_mechanisms": [
@@ -63,7 +63,7 @@
   ],
   "narrative_function": "Deep background and exposition source for city history; potential quest giver when her archival work uncovers something politically inconvenient; her maps of buried infrastructure could matter enormously to the right people",
   "augmentations": "Cartographic overlay lenses (medical-grade, prescription base with archival enhancement software); subdermal haptic pads on her fingertips for interfacing with physical data-medium artifacts; no geneware",
-  "daily_life": "Arrives at the archive before the building's ventilation cycles warm the space, spends mornings in deep strata analysis, holds an afternoon seminar she calls 'Argument Hour' where graduate students defend their interpretations against her direct challenges, then stays late correlating new finds against her life's work — a continuous map of what Meridian 88 buried to become itself.",
+  "daily_life": "Arrives at the archive before the building's ventilation cycles warm the space, spends mornings in deep strata analysis, holds an afternoon seminar she calls 'Argument Hour' where graduate students defend their interpretations against her direct challenges, then stays late correlating new finds against her life's work — a continuous map of what GLMZ buried to become itself.",
   "affiliation": "University Spine — Department of Palimpsest Studies (a subdiscipline she largely invented); loose consulting relationship with Ferrogate Transit's heritage compliance division",
   "uses_facets": false,
   "narration_voice": "",
@@ -254,5 +254,26 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Chicago"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African (Akan) / Albanian / Brazilian Portuguese",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, decades of fieldwork and archival work have kept her lean without softness; her frame suggests endurance rather than strength, shoulders slightly rounded from hunching over data tables",
+    "hair_color": "Silver-white, natural",
+    "hair_style": "Tight coils pinned back with an rotating collection of hand-carved wooden picks (bone, ebony, salvaged pre-Meridian oak); always neat, never precious",
+    "hair_length": "Short (roughly 5-7cm of coil when unpinned)",
+    "eye_color": "Deep brown, natural; typically obscured by translucent overlay lens projections",
+    "skin_tone": "Warm deep brown, even complexion with the lived patina of someone who has spent 40+ years in archival environments and occasional fieldwork",
+    "complexion": "The face of someone who squints at data constantly; deep crow's feet radiating from the outer corners of both eyes, faint vertical lines between the brows from concentration, a narrow mouth typically set in either close attention or dry amusement. Minimal makeup. Skin slightly lined but not sagging — angular cheekbones still prominent. A small scar on her left temple from a 2194 archive collapse.",
+    "distinguishing_marks": [
+      "Faded cartographic tattoo spanning her entire left forearm — a cross-sectional view of pre-Meridian Chicago's urban strata, rendered in blues and blacks, now softened by six decades of exposure",
+      "Small linear scar on left temple, pale and smooth, approximately 3cm long, angling toward her hairline (from 2194 collapse debris)",
+      "Calluses on the tips of all fingers, particularly pronounced on index and middle fingers of both hands from decades of handling archival materials"
+    ],
+    "visible_augmentations": "Reading lenses mounted in a minimalist wire frame (appears as faint silver at temples and bridge of nose); the lenses project translucent overlays visible to her but subtle to observers unless light catches them at certain angles. Subdermal haptic interface pads under the skin of her fingertips are not visibly detectable but occasionally cause a slight silvery sheen at the tips when active. Otherwise no visible chrome or obvious augmentation.",
+    "posture_movement": "Moves with deliberate economy; no wasted motion. Tendency to walk with head slightly forward, as if already reading the space ahead. When sitting, she is utterly still — hands folded or occupied with delicate handling of artifacts. When engaged in argument or explanation, her hands animate with precise, professorial gestures. Habitual gesture of touching her temple when thinking deeply (near the old scar). Does not make easy eye contact; tends to look at surfaces or middle distance.",
+    "clothing_style": "Consistent uniform of dark, high-function Tier 2 academic wear: tailored charcoal or black trousers (always with reinforced pockets and subtle cargo detailing), layered linen or cotton long-sleeved shirts in neutral tones (cream, gray, dark blue), a structured linen jacket or cardigan in charcoal or black that has been worn for at least a decade. A faded university Spine lanyard (holder for access credentials and occasionally a magnifying loupe). Minimal jewelry — only a thin silver band on her right ring finger. Worn but meticulously maintained leather flats or low boots. The overall effect is austere, practical, and deliberately ageless."
+  },
+  "image_prompt": "Portrait of a 61-year-old West African-Albanian-Brazilian scholar woman, compact and wiry frame, rich deep brown skin, silver-white hair in tight coils pinned back with carved wooden picks, deep crow's feet from decades of focusing on archival data, faint cartographic tattoo wrapping her left forearm, wearing a dark charcoal tailored academic jacket over a cream linen shirt, translucent overlay reading lenses barely visible at her temples catching pale archival light, standing in a cold dimly-lit sublevel archive surrounded by data-medium artifacts and polymer-sealed storage, cool fluorescent overhead lighting casting subtle shadows across angular cheekbones, expression of quiet concentration and dry intelligence, slight forward lean as if reading the space itself, fine art photography style, shallow depth of field, documentary realism with hints of noir atmosphere, cyberpunk academia aesthetic --ar 2:3 --v 6"
 }

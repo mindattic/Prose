@@ -182,5 +182,26 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Italian / Kazakh",
+    "height_cm": 187,
+    "weight_kg": 72,
+    "build": "Rangy and lean with defined musculature from precision work and calibration routines; long-limbed, minimal body fat, economical posture that reads as coiled rather than relaxed",
+    "hair_color": "Natural black with warm undertones",
+    "hair_style": "Grown high and loose, worn in a natural crown; maintained but not styled, suggesting function over aesthetics",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, natural; left eye shows faint crystalline overlay at certain angles (corneal magnification augmentation)",
+    "skin_tone": "Warm ochre-brown with subtle undertones suggesting mixed West African and Mediterranean ancestry",
+    "complexion": "Unreadable face—high cheekbones, composed expression, minimal micro-expressions in repose; well-maintained but unstudied grooming; skin shows the texture of someone who prioritizes function over skincare routine",
+    "distinguishing_marks": [
+      "Surgical scar running along left shoulder and upper chest from the bus accident seven years prior, faint but visible under direct light",
+      "Fine network of barely-visible calibration tattoos on the inside of right wrist in pale ink—depth markers for surgical measurement",
+      "A thin white line along the left elbow joint where the chrome arm interfaces with biological tissue"
+    ],
+    "visible_augmentations": "Full chrome left arm from elbow down: brushed gunmetal finish with articulated surgical-grade Helix manipulators; two amber indicator lights embedded at wrist joints that glow faintly with grip pressure feedback; the arm moves with inhuman precision and minimal lag. Bone-conduction audio implant visible as a subtle metallic disc behind the left ear. Corneal magnification overlay occasionally catches light in the left eye.",
+    "posture_movement": "Stands and moves with surgical economy—minimal wasted motion, spine straight, weight centered. Outside trauma bay: slow, deliberate, almost meditative. In surgery: becomes fluid and fast, movements stripped down to pure function. Hands rest in neutral position when not in use. Left chrome arm moves with mechanical precision that is unsettling in its accuracy.",
+    "clothing_style": "Off-duty favors durable, tier 3-4 minimalist pieces: fitted charcoal synthetic shirts that accommodate the chrome arm without bunching, high-quality work trousers with reinforced pockets, worn leather jacket (real leather, well-maintained, a few years old). No jewelry except a functional smartwatch on right wrist. Shoes are practical—good arch support, worn but clean. In the trauma bay: standard surgical blacks under a lab coat with the Aurochs Medical Complex insignia. The coat is tailored to fit the chrome arm without restriction. Zero ornamentation."
+  },
+  "image_prompt": "Portrait of a tall, lean nonbinary person with warm ochre-brown skin and natural black hair grown high and loose, age 40s, standing in surgical lighting. Left arm is striking brushed gunmetal chrome from elbow down with articulated surgical manipulators and amber indicator lights at wrist joints. Dark brown eyes with subtle crystalline overlay in left eye. Unreadable, composed expression. Wearing a dark fitted shirt and worn leather jacket. Bone-conduction implant visible behind left ear. Background: soft clinical white light, hint of trauma bay environment. Cyberpunk, medical noir, character portrait, photorealistic, anatomically precise augmentation detail, moody professional lighting, shallow depth of field, --ar 2:3 --v 6"
 }

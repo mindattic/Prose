@@ -232,5 +232,25 @@
     "TESSERA TD-3 'Hornet'",
     "Gold"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Samoan-Polynesian / German-Kazakh",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Broad-shouldered and solid through the chest and arms, with pronounced softness at the midsection — the physique of a man whose frame was built for heavy labor but whose daily work has shifted to sustained driving. Still carries underlying mass and strength beneath the slackness.",
+    "hair_color": "Dark brown with white threading, particularly concentrated at the chin and edges of beard",
+    "hair_style": "Short-clipped sides with a modest wave maintained on top; well-maintained without fussiness",
+    "hair_length": "Short",
+    "eye_color": "Warm brown",
+    "skin_tone": "Warm gold-brown — the particular undertone that comes from Samoan-Polynesian sun-darkened skin meeting northern European fairness",
+    "complexion": "Weathered but clean-shaven except for a neatly trimmed beard; sun-marked on the face and forearms from decades of dock-side work and windshield-filtered UV exposure; no cosmetic modifications; the face of someone who has decided to age without resistance",
+    "distinguishing_marks": [
+      "Deep horizontal crease across his lower back (visible only when shirtless) from the embedded spinal support brace running beneath the skin",
+      "Faded scarring on both palms and along the inner sides of forearms, consistent with decades of cable work and dock labor"
+    ],
+    "visible_augmentations": "None visible. The subdermal spinal support brace system is completely subcutaneous and undetectable without medical imaging.",
+    "posture_movement": "Moves with deliberate economy — no wasted motion. Sits with the careful attention of someone managing chronic back strain, favoring slight forward flexion. His default is stillness; when he speaks, his gestures are minimal and purposeful. Walks with a trucker's stride, slightly favoring weight distribution.",
+    "clothing_style": "Ferrogate Transit work pants (Tier 4 industrial-grade, well-maintained), neutral undershirt (usually grey or black), weather-appropriate jacket (canvas or synthetic blend depending on season). Everything is functional, well-worn but clean. A small enamel pin of a cargo ship is affixed to his jacket lapel — the only decorative element, worn daily without variation. No corpo branding or status signaling. Shoes are scuffed steel-toed work boots."
+  },
+  "image_prompt": "Weathered cyberpunk truck driver, 55-year-old Samoan-German-Kazakh man, warm gold-brown skin, short dark hair with white at chin, neatly trimmed beard, broad shoulders softened at middle, wearing worn Ferrogate Transit work pants and canvas jacket with small enamel cargo ship pin on lapel, standing beside a heavy freight cab in predawn light, Lake Michigan docks in background, morning mist, industrial Tier 4 setting, soft golden warm lighting, photorealistic, dignified and patient expression, hands weathered from decades of dock work, no augmentations visible, practical and unadorned, --ar 2:3 --v 6"
 }

@@ -175,5 +175,25 @@
     "SynapTech IrisBloom Ocular Color Modulator",
     "Chicago"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "West African (Malian) / Polynesian (Māori)",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Tall and lean with long limbs — his Malian grandfather's frame — creating an almost stretched quality. Minimal muscle definition; the build of someone who commutes and studies rather than trains. Slight forward curve to his shoulders from hours hunched over coursework.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Short, closely trimmed, neat enough for Axiom Meridian standards but not styled. Practical. No ornamentation.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown base with faint teal geometric circuit-trace patterns across both irises — geneware mod visible only under direct light or when he makes direct eye contact",
+    "skin_tone": "Warm medium brown — the exact midpoint between his Malian and Māori heritage, with subtle undertones that shift depending on light",
+    "complexion": "Fine-featured, with his grandmother's broad jaw and high cheekbones. Skin is clear but shows faint darkness under his eyes — chronic sleep deficit visible to anyone paying attention. Expression usually guarded, mouth held in a neutral line. When unguarded (rare), his face is openly expressive.",
+    "distinguishing_marks": [
+      "Faint linear scar along his right jawline, approximately 3cm, from a childhood accident in Chatham Flats — barely noticeable unless you know to look",
+      "Calluses on the inner edges of his middle and index fingers from pen pressure during intensive note-taking"
+    ],
+    "visible_augmentations": "Only the patterned irises, which read as unusual but not overtly cybernetic — appears biological, almost organic. Most observers miss the circuit-trace geometry unless direct eye contact is made and light catches at the right angle.",
+    "posture_movement": "Controlled and economical. He walks with purpose but without confidence — head slightly down, shoulders carrying tension. At school he makes himself smaller. At home he forgets the restraint, moving with a teenager's natural restlessness. His hands are often occupied: holding a tablet, adjusting a strap, checking a timepiece. Always doing something.",
+    "clothing_style": "Dual wardrobes: At Axiom Meridian he wears the school uniform (grey and slate tailored synthetic blend) kept immaculate, with access shoes that mark him as scholarship-tier (functional brand, not the boutique names his peers wear). Outside school in Chatham Flats: loose-fit utility wear in muted colors, second-hand but maintained, practical layers for the checkpoint commute. No visible branding that marks wealth or aspiration. Everything fits the child of a single mother managing Tier 3 existence carefully."
+  },
+  "image_prompt": "Portrait of a 14-year-old boy with West African and Polynesian heritage, tall and lean with long limbs, warm medium brown skin, short dark hair. Dark brown eyes with faint teal geometric circuit-trace geneware patterns visible in irises. Broad jawline, high cheekbones, expression carefully neutral but eyes betraying exhaustion and suppressed intensity. Sitting at a desk surrounded by tablets and coursework at 2 AM, fluorescent overhead light casting harsh shadows under his eyes. Wearing school uniform (grey tailored synthetic). Background split between sterile corporate academy environment and the warmer, worn textures of a modest Chatham Flats apartment. Cyberpunk aesthetic, introspective mood, emotional weight, photorealistic with subtle sci-fi elements, moody atmospheric lighting, shot in close portrait style --ar 2:3 --v 6"
 }

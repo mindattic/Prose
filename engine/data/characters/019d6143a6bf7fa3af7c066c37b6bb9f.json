@@ -256,5 +256,25 @@
     "SynapTech IrisBloom Ocular Color Modulator",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / East Slavic",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, defined by years of shift work and irregular meals. Shoulders slightly hunched from operating posture. No excess fat; muscle is functional rather than developed.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Loose locs, shoulder-length, usually pinned back with a worn Ferrogate Transit cap",
+    "hair_length": "Long",
+    "eye_color": "Luminous amber with subtle geneware rings that shift in low light",
+    "skin_tone": "Deep brown with East Slavic bone structure; angular cheekbones and narrow jawline",
+    "complexion": "Fine-lined around eyes from squinting at screens and platform lighting. Stubble often visible; grooming is functional rather than fastidious. Tired but alert expression.",
+    "distinguishing_marks": [
+      "Long procedural scar running from left jaw to left collarbone, pale and raised, approximately 12cm in length — result of a classified platform incident three years prior",
+      "Minor calluses on right palm and fingers from tram control grips"
+    ],
+    "visible_augmentations": "Geneware amber irises with faint luminescent rings, most noticeable in dim lighting or at night. No visible external chrome. Neural lag-buffer access port is subcutaneous and concealed.",
+    "posture_movement": "Economical movements, slight forward lean from occupational posture. Walks with purpose but not aggression. Hands gesture frequently when speaking — expressive despite reserved demeanor. Often glances at surroundings with operator's habit of threat assessment.",
+    "clothing_style": "Tier 3-4 working class. Standard Ferrogate Transit uniform (navy shirt with faded logo, grey trousers, worn) worn during shifts. Off-duty: layered practical wear — thermal underlayer, durable grey or brown jacket (synth-leather, scuffed), jeans patched at one knee. Battered Ferrogate cap, always. Worn transit-issue boots. No jewelry except a small E.L.F. token on a cord around his neck. Everything functional, nothing decorative."
+  },
+  "image_prompt": "A lean, angular man with deep brown skin and East Slavic cheekbones, age 34, wearing a faded Ferrogate Transit cap pinned over shoulder-length dark locs. His distinctive luminous amber geneware irises glow softly in shadow. A long pale scar runs from his left jaw to collarbone. He wears worn transit-operator uniform layered under a scuffed synth-leather jacket. His expression is tired but alert, slightly wry. Standing in fluorescent-lit Ironvein Station at 0400 hours, industrial tram platform behind him, moody cyan and amber lighting, digital displays reflected in his geneware eyes. Cyberpunk urban transit worker, photorealistic, gritty realism, shallow depth of field --ar 2:3 --v 6"
 }

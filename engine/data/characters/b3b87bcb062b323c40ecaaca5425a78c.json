@@ -31,7 +31,7 @@
     "Voice recorder with physical tape — no digital footprint",
     "Revolver, .38 caliber, kept in a shoulder holster he's worn so long the leather has molded to his body"
   ],
-  "personality": "Kofi is an anachronism and he knows it. He moves through Meridian 88 like a man displaced in time — slow where everyone else is fast, analog where everyone else is digital, patient where everyone else is frantic. He believes technology makes investigators lazy, that a BCI scan tells you what someone did but never why, and that the why is the only thing that matters. He drinks too much, sleeps too little, and has a moral code so rigid it has cost him every relationship he's ever had. He is unfailingly polite to women and children and unfailingly rude to anyone wearing corporate insignia.",
+  "personality": "Kofi is an anachronism and he knows it. He moves through GLMZ like a man displaced in time — slow where everyone else is fast, analog where everyone else is digital, patient where everyone else is frantic. He believes technology makes investigators lazy, that a BCI scan tells you what someone did but never why, and that the why is the only thing that matters. He drinks too much, sleeps too little, and has a moral code so rigid it has cost him every relationship he's ever had. He is unfailingly polite to women and children and unfailingly rude to anyone wearing corporate insignia.",
   "relationships": [
     {
       "name": "Marta Osei-Volkov",
@@ -75,5 +75,26 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Japanese / Indian",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and sinewy, the physique of someone who walks constantly rather than sits. Minimal subcutaneous fat, visible tendon definition in forearms and neck. Posture slightly stooped from decades hunched over case files.",
+    "hair_color": "Steel gray",
+    "hair_style": "Close-cropped, precisely maintained with manual clippers every two weeks",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, faded to lighter hazel at the iris edges from age",
+    "skin_tone": "Deep brown with warm undertones, weathered to leather finish by sun exposure and neglect",
+    "complexion": "Deeply lined face, particularly around eyes and mouth. Perpendicular creases on forehead. Unshaven most days—gray stubble, sparse. Skin texture rough, age spots on temples and the backs of his hands.",
+    "distinguishing_marks": [
+      "Burn scar on left palm, roughly 5cm diameter, smooth and pale white—cigarette burn from 2174, visible when holding objects",
+      "Thin white scar running from right cheekbone to jawline, barely visible unless light hits at an angle—knife work, pre-2190",
+      "Extensive nicotine staining on the pad of his right index and middle fingers, yellow-brown discoloration"
+    ],
+    "visible_augmentations": "None. Zero chrome. Deliberately analog—no ocular implants, no subdermal arrays, no haptic gloves. This is a choice that marks him as stubbornly countercultural.",
+    "posture_movement": "Moves with deliberate economy, no wasted motion. Slight favoring of his right leg from an old injury he refuses to discuss. Stands with weight balanced, shoulders back—ready to move if necessary. When sitting, hands remain visible on table or lap. Eyes track doorways and exits automatically.",
+    "clothing_style": "A single long wool overcoat in charcoal gray, tailored sometime in the 2180s, worn open over department-store button-ups in muted colors (white, pale blue, cream). No logos. Trousers are dark wool, creased but not fashionably. Black leather shoes, resoled twice, polished weekly. A Timex analog wristwatch with a frayed canvas strap. No jewelry. His coat is his uniform and his armor—patched twice along the hem, one button replaced with a cheap plastic substitute, but otherwise maintained with quiet pride. Tier 3 functionality, Tier 1 intention."
+  },
+  "image_prompt": "Portrait of a 63-year-old African-Japanese-Indian private investigator, weathered deep brown skin with age spots, close-cropped steel gray hair, intelligent faded brown eyes lined with decades of case work. Lean, sinewy build. Wearing a worn charcoal gray wool overcoat over a pale cream button-up shirt, analog Timex watch visible, visible cigarette burn scar on left palm. Standing in dim neon-lit office hallway above a noodle shop, frosted glass door behind with peeling gold-leaf lettering. 1970s noir detective energy transplanted into cyberpunk 2226. Cool tungsten lighting, slight rain on windows, no augmentations visible, intensely human and analog. Film noir aesthetic meets cyberpunk setting. Cinematic, photorealistic, moody. --ar 2:3 --v 6"
 }

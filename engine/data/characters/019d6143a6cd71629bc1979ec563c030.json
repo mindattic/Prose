@@ -280,5 +280,26 @@
     "Slagworks Industrial",
     "Clover"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and angular with visible muscle definition from decades of discipline and combat training. No excess body fat; frame suggests economical, efficient movement rather than bulk.",
+    "hair_color": "Steel gray with faint ash undertones",
+    "hair_style": "Pulled back in a tight, functional braid; severe and practical",
+    "hair_length": "Long (waist-length when unbraided)",
+    "eye_color": "Amber-brown, natural",
+    "skin_tone": "Deep warm brown with lighter undertones across the bridge of nose and cheekbones — mixed Nordic and Manding ancestry visible",
+    "complexion": "Lined face with high, prominent cheekbones; skin texture shows age but remains taut. Minimal makeup. Expression habitually controlled — eyes rarely widen, mouth set in a neutral line that can shift to something dangerous very quickly.",
+    "distinguishing_marks": [
+      "Surgical scar running 4cm along left temple, partially hidden by hairline — precision work, old",
+      "Keloid burns across the back of both hands — defensive wounds, pre-augmentation era",
+      "Small black corporate identification tattoo (faded) on inner right wrist — low-tier security clearance mark from her corporate days"
+    ],
+    "visible_augmentations": "Bioware adrenaline regulator housed in her left shoulder — visible as a faint geometric chrome plate beneath the skin, edges slightly raised and catching light when she moves. The left forearm shows subtle seam-work where the monofilament whip is concealed, detectable only under close inspection or when the weapon deploys. No effort to hide either augmentation; they're statements of capability.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward in a ready stance even when seated. Weight distributed to the balls of her feet. When she walks, each step lands with deliberate placement. Hands are visible and still most of the time; rarely crosses arms. Eyes track movement constantly.",
+    "clothing_style": "Tier 4 utilitarian aesthetic — durable synth-weave cargo jacket in charcoal gray, reinforced at stress points. Fitted black therm-reactive underlayer beneath. Tactical cargo pants with multiple pockets, all functional. Scuffed polymer-soled boots, broken in but maintained. No jewelry. Worn leather shoulder satchel containing data-drives and encrypted comm equipment. Everything is practical; nothing is decorative. Clothing shows signs of recent equipment maintenance and minor repair work."
+  },
+  "image_prompt": "A 65-year-old woman of mixed Scandinavian and West African heritage, lean and angular with defined musculature and sharp features. Steel gray hair pulled back in a severe braid. Deep warm brown skin, amber-brown eyes, high cheekbones with faint surgical scarring along left temple. Visible chrome bioware adrenaline regulator housing glinting beneath left shoulder skin. Wearing a reinforced charcoal gray synth-weave tactical jacket over a black therm-reactive underlayer, tactical cargo pants, scuffed polymer boots. Hands show old keloid burns. Posture is ready and economical, weight forward on balls of feet. Standing in a neon-lit underground corridor in The Shelf, lower district tenements near old lakeshore, cyberpunk 2226, moody blue and amber practical lighting, worn architecture, data-terminal glow in background, photorealistic, cinematic depth, serious expression, survival-hardened, detail-focused, --ar 2:3 --v 6"
 }

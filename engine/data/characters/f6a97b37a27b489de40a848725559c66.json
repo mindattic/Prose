@@ -7,7 +7,7 @@
     "Panopticon"
   ],
   "role": "Private Investigator",
-  "description": "Enver Svensson-Asante has invested approximately Φ1.2 million in investigative augmentation, and he is the augmentation. Every chrome component in his body was chosen specifically for investigative function — not combat, not vanity, not general enhancement, but the specific task of observing, recording, and analyzing. He is a walking surveillance platform, and he has embraced this identity so completely that it's difficult to say where the investigator ends and the cyberware begins.\n\nHis senses operate on a level that unaugmented humans cannot comprehend. He sees across multiple spectra simultaneously, hears conversations happening behind closed doors, smells chemical traces that have been dissipating for hours, and remembers everything — literally everything — he has ever perceived since the eidetic implant was installed eleven years ago. This makes him extraordinarily effective at gathering evidence and catastrophically bad at normal human interaction, because he perceives lies, stress responses, and physiological deception in real-time and has no social filter preventing him from mentioning it.\n\nThe cost of all this chrome is significant. He requires four hours of charging daily for his cybernetic systems. He suffers from sensory overload episodes that leave him incapacitated. He has been rejected from every investigative firm he's applied to because his augmentation level puts him in an insurance category normally reserved for military hardware. So he works alone, takes cases that require his specific capabilities, and spends his downtime in a sensory deprivation tank that is the only place in Meridian 88 where his augmented senses finally shut up.",
+  "description": "Enver Svensson-Asante has invested approximately Φ1.2 million in investigative augmentation, and he is the augmentation. Every chrome component in his body was chosen specifically for investigative function — not combat, not vanity, not general enhancement, but the specific task of observing, recording, and analyzing. He is a walking surveillance platform, and he has embraced this identity so completely that it's difficult to say where the investigator ends and the cyberware begins.\n\nHis senses operate on a level that unaugmented humans cannot comprehend. He sees across multiple spectra simultaneously, hears conversations happening behind closed doors, smells chemical traces that have been dissipating for hours, and remembers everything — literally everything — he has ever perceived since the eidetic implant was installed eleven years ago. This makes him extraordinarily effective at gathering evidence and catastrophically bad at normal human interaction, because he perceives lies, stress responses, and physiological deception in real-time and has no social filter preventing him from mentioning it.\n\nThe cost of all this chrome is significant. He requires four hours of charging daily for his cybernetic systems. He suffers from sensory overload episodes that leave him incapacitated. He has been rejected from every investigative firm he's applied to because his augmentation level puts him in an insurance category normally reserved for military hardware. So he works alone, takes cases that require his specific capabilities, and spends his downtime in a sensory deprivation tank that is the only place in GLMZ where his augmented senses finally shut up.",
   "affiliation": "Independent — too augmented for most firms to insure",
   "tier": "Tier 3",
   "location": "A reinforced apartment in Kessler Row, half living space and half charging station for his extensive cyberware, near Kedzie and Division",
@@ -66,10 +66,32 @@
     "Volkov-Saito Precision VS-R8 'Verdict'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "MindBridge SpectraLens Chromatic Expansion Module",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular, almost ascetic — muscle mass reduced to functional minimum because chrome components handle structural load. His frame is a chassis more than a body.",
+    "hair_color": "Dark brown with premature silver streaking at temples",
+    "hair_style": "Cropped short and utilitarian, never styled, maintained only for hygiene",
+    "hair_length": "Short",
+    "eye_color": "Left eye: standard brown. Right eye: luminous silver with visible microcircuit latticing beneath synthetic cornea, faint amber glow during active sensory mode",
+    "skin_tone": "Medium brown with cool undertones — heritage blend showing through faded and stressed complexion",
+    "complexion": "Gaunt, exhausted. Dark circles under eyes from chronic sensory overstimulation. Skin dry and sometimes marked by charging port irritation. Perpetual expression of someone listening to sounds no one else can hear.",
+    "distinguishing_marks": [
+      "Surgical scars along both sides of skull where sensory arrays were implanted, partially hidden by hair but visible when cropped.",
+      "A thin keloid line running from right temple to jaw — old combat scar from before the augmentation obsession, a relic of civilian life.",
+      "Faint discoloration pattern on forearms where subcutaneous data conduits run beneath skin, visible under certain angles of light like branching circuitry.",
+      "Charging port on base of neck, covered by high collar most days, small titanium-framed aperture approximately 4cm wide."
+    ],
+    "visible_augmentations": "Right eye replacement with visible luminous iris and circuit-pattern microstructure. Charging port at base of neck. Faint thermal signature visible around temples and jawline indicating neural array housing. Slight asymmetry in left arm from integrated sensor cluster. Occasional faint LED indicator blinks at collarbone when systems are in standby mode.",
+    "posture_movement": "Unnaturally still when stationary, as if his body is a platform for his sensory apparatus rather than something that moves. When he does move, it's efficient and precise — no wasted motion. Head often tilted slightly, listening or scanning. Blinks asymmetrically, his right eye operating on different intervals than his left. Makes minimal eye contact because looking at people is literally overwhelming — their body heat, stress pheromones, and micromuscular deception reads assault his augmented perception simultaneously.",
+    "clothing_style": "Tier 4 practical — dark, matte-finish synthetics that don't reflect or interfere with his sensory equipment. Oversized jacket with interior shielding to dampen external stimuli. High collar to conceal charging port. All pockets deliberately empty or lined with sensor-dampening material. Worn boots with electrostatic grounding material in soles. Everything chosen for function, nothing for aesthetic. Clothes smell faintly of the sensory deprivation tank chemicals — a stale, mineral scent that clings to him."
+  },
+  "image_prompt": "A lean, silver-eyed private investigator in dark cyberpunk aesthetic, medium brown skin with premature silver-streaked hair cropped short, Scandinavian-West African features. Right eye glowing luminous silver with visible circuit latticing, left eye standard brown, creating striking asymmetry. Visible charging port at base of neck beneath high collar. Faint surgical scars along skull. Angular, ascetic build suggesting augmented chassis beneath skin. Wearing oversized matte-black synthetic jacket with sensor-dampening interior, dark practical clothing, grounding boots. Posture perfectly still and alert, head tilted as if listening to imperceptible frequencies. Cyberpunk noir detective ambiance, moody underground apartment setting with charging equipment visible in background. Cool-toned lighting emphasizing LED indicators and eye glow. Tired, overstimulated expression. Photorealistic, cinematic, high detail on augmentation visible elements --ar 2:3 --v 6"
 }

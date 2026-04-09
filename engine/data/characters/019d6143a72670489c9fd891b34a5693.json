@@ -185,5 +185,26 @@
     "The Pale Mile",
     "Gold"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African (Yoruba) / Lithuanian / Indian subcontinent (surname Prakapas suggests South Asian connection)",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, carrying weight with dignity rather than heaviness. Decades of standing bedside have kept her posture upright despite age; her frame speaks of physical endurance rather than athleticism.",
+    "hair_color": "Silver-white (naturally unpigmented, maintained by choice)",
+    "hair_style": "Tightly coiled crown, close to the scalp, no braids or extensions",
+    "hair_length": "Short",
+    "eye_color": "Concentric ring iris modification — deep violet inner ring, gold outer ring, against natural dark brown sclera",
+    "skin_tone": "Dark amber with warm undertones, the complexion of West African heritage with age-appropriate weathering",
+    "complexion": "Deep laugh lines around the eyes and mouth. Skin is cared-for but unadorned — minimal cosmetics. Fine creases map her forehead and between her brows from decades of focused attention. Her expression defaults to calm watchfulness.",
+    "distinguishing_marks": [
+      "Pale scarification lines running from collarbone to both wrists in deliberate, parallel patterns — one mark per death attended, each scar approximately 3-4cm long, creating a palimpsest effect across her upper body",
+      "Left wrist bears the densest cluster of scars, stacked nearly overlapping, representing her decade of highest client load",
+      "Faint white lines visible on her inner palms where subdermal haptic sensors are implanted, barely perceptible unless examined closely"
+    ],
+    "visible_augmentations": "Concentric ring irises are immediately striking — violet and gold colored rings replacing typical human iris pattern. The effect is simultaneously serene and unsettling. No visible chrome, no subdermal plating; the haptic sensors in her palms show only as faint scarring.",
+    "posture_movement": "She moves with deliberate slowness, each gesture economical and purposeful. She fills doorways not through size but through presence — her gravitational calm makes faster people unconsciously decelerate around her. She has learned to sit in ways that communicate safety: hands visible, spine against walls, weight distributed to suggest she could rise quickly if needed. Her breathing is audible and measured.",
+    "clothing_style": "Tier 4-5 utilitarian, deliberately chosen for access and ease. Loose linen or hemp tunics in muted earth tones (rust, charcoal, cream) worn loose enough to expose her scarification without being theatrical. Reinforced canvas pants with deep pockets for her marking tools, ledger, and comfort items (clove sticks, water). A long waxed canvas coat, water-stained and age-softened, worn open. Soft-soled boots designed for long standing, visibly repaired multiple times. She wears no jewelry except a tarnished silver band on her right ring finger — unclear if it's a wedding ring or a grief marker. Her clothing carries the ambient smell of clove oil and mineral dust from the deep warrens."
+  },
+  "image_prompt": "Portrait of a 67-year-old West African woman with dark amber skin covered in pale scarification lines running from collarbone to wrists, each scar marking a death she has witnessed. She has a silver-white closely coiled crown of hair and striking concentric ring irises in deep violet and gold. Her expression is calm and centered, with laugh lines around her eyes. She wears a loose rust-colored linen tunic and a weathered waxed canvas coat, standing in the dim amber light of a sub-level warren corridor near old industrial pipes. Soft, contemplative mood lighting. Cyberpunk grief ritualist aesthetic, dignified and haunting. Grounded realism with subtle sci-fi elements. --ar 2:3 --v 6"
 }

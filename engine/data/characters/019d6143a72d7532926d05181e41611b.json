@@ -266,5 +266,26 @@
     "Arcturus CK-5 'Bloodhound'",
     "The Milwaukee Core"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Uzbek/Russian)",
+    "height_cm": 188,
+    "weight_kg": 102,
+    "build": "Formerly massive and muscular, now settled into a broad, heavy frame. Shoulders still wide but rounded with age; barrel chest has dropped slightly. Arms retain functional thickness despite reduced definition. Overall impression: a compression of something that was once formidable.",
+    "hair_color": "White",
+    "hair_style": "Close military crop, precise and maintained",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Warm mid-brown with reddish undertones",
+    "complexion": "Weathered and lined, the landscape of seven decades and thirteen years of combat service. Jaw shows asymmetrical healing from two breaks and imperfect resets. Nose deviates noticeably left from trauma sustained during the Kenosha Crossing siege of 2154. Grooming is meticulous—evidence of discipline maintained.",
+    "distinguishing_marks": [
+      "Ragged surgical scar running from right temple into hairline where combat geneware was surgically extracted post-decommissioning",
+      "Fine webwork of older scars across knuckles and backs of both hands from decades of reinforced strikes",
+      "Thin line scar along left ribs from shrapnel, barely visible under dark skin"
+    ],
+    "visible_augmentations": "None immediately obvious to a stranger, but close observation reveals: slight stiffness in both leg movements suggesting internal skeletal reinforcement; visible knuckle plates under skin when hands are clenched; faint discoloration at right temple from surgical scar tissue around removal site.",
+    "posture_movement": "Slight forward lean—habitual, automatic, as though still braced for incoming fire. Movements economical and precise despite age. Hands are steady and purposeful. When at rest, an underlying tension in shoulders and chest, never fully relaxed.",
+    "clothing_style": "Tier 4 practical: faded Ringo Corporation retro-issue grey work shirt (kept for sentimental/identity reasons, worn soft), black synthetic cargo pants with reinforced knees, scuffed composite work boots. A vest in faded navy, pockets filled with maintenance tools and small repair supplies. No jewelry. Wears a digital wristband—old model, probably non-functional subdermal comms interface monitor. Everything is clean and maintained with care, but all items are years old and showing wear."
+  },
+  "image_prompt": "Cyberpunk portrait of weathered 71-year-old Black man with Uzbek heritage, close-cropped white hair, broken nose angled left, surgical scar right temple into hairline, warm brown skin with reddish undertones, jaw showing old breaks, dark intelligent eyes. Broad shoulders, barrel chest, massive hands with visible knuckle reinforcement under skin. Wearing faded Ringo Corporation grey work shirt, navy vest, black cargo pants, scuffed boots. Slight forward lean posture, expression of acute awareness and permanent readiness. Soft Milwaukee apartment interior, morning light from barred window, worn furniture, grandchildren's school supplies visible in background. Photorealistic, weathered dignity, quiet authority, 2226 GLMZ Tier 4 aesthetic, volumetric lighting --ar 2:3 --v 6"
 }

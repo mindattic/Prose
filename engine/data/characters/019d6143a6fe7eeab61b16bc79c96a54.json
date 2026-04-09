@@ -239,5 +239,26 @@
     "Nightlight",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Finnish",
+    "height_cm": 172,
+    "weight_kg": 64,
+    "build": "Wiry and lean with corded forearm muscles from decades of wrench work; chest narrow but functional, shoulders compact. No excess anywhere.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Fade on sides, tight coils on crown",
+    "hair_length": "Short",
+    "eye_color": "Warm brown, natural",
+    "skin_tone": "Warm medium brown with undertones suggesting mixed heritage",
+    "complexion": "Sun-weathered and perpetually dust-stained from shop work; engine grime settles into pores and creases no shower fully clears. Laugh lines at eye corners. Gap between front incisors — genuine, unfixed, unselfconscious. Hands calloused and stained with hydraulic residue.",
+    "distinguishing_marks": [
+      "Subdermal bioluminescent stripe running from left elbow to wrist in industrial orange — glows faintly in low light, brighter when he concentrates on diagnostic work",
+      "Scattered small burn scars on both hands and forearms from soldering and hot machinery contact",
+      "A thin white scar along the left temple, approximately 3cm, from a shop accident at age 22"
+    ],
+    "visible_augmentations": "Left forearm bioluminescent stripe (orange, subdermal — visible as a glowing line beneath skin when activated). Neural overlay is subcutaneous, not visible, but his pupils occasionally flicker with diagnostic HUD overlay when he's troubleshooting. No external chrome or obvious prosthetics.",
+    "posture_movement": "Restless and kinetic — stands with weight shifting, rarely fully still. Moves economically through workspaces, muscle memory of tight engine bays. Defaults to grinning; eyes are expressive and engaged. Hands gesture frequently when explaining mechanical problems. When focused on detailed work, becomes almost meditative, shoulders relaxed but attention laser-locked.",
+    "clothing_style": "Tier 3-4 working class, practical. Worn dark synthmesh coveralls with Mudflap Repairs faded patch on chest (his shop). Underneath: simple black undershirt, often grease-stained. Steel-toed work boots, scuffed. A woven bracelet (gift from the old shop owner's family) on right wrist — worn thread, significant to him. No jewelry otherwise. Minimal affectation; everything functional."
+  },
+  "image_prompt": "Portrait of a 28-year-old mechanic with warm brown skin and dark curly hair faded at the sides, gap-toothed grin with laugh lines, wearing a grease-stained dark work coversuit in a cluttered engine bay lit by orange industrial lighting, left forearm glowing with a single bioluminescent stripe in neon orange running elbow to wrist, hands calloused and stained with hydraulic fluid, leaning against a half-disassembled hybrid engine block, cyberpunk geartown aesthetic, moody workshop shadows, practical working class attire, photorealistic, character portrait, --ar 2:3 --v 6"
 }

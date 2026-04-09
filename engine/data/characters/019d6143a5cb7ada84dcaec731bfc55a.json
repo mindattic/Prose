@@ -185,5 +185,27 @@
     "Gold",
     "The Milwaukee Core"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African / Serbian",
+    "height_cm": 183,
+    "weight_kg": 71,
+    "build": "Lanky and angular, almost concave through the chest—the build of someone who has spent two decades bent over a work table. Long limbs with visible musculature only in forearms and shoulders from repetitive precision work.",
+    "hair_color": "Black, natural",
+    "hair_style": "Completely shaved, scalp maintained smooth with occasional faint surgical-grade scarring from old augmentation work",
+    "hair_length": "Shaved",
+    "eye_color": "Geneware irises—deep violet at rest, shifting to burnt gold under emotional intensity or bright light; sclera warm brown",
+    "skin_tone": "Warm amber with subtle reddish undertones, consistent with West African and Mediterranean heritage blend",
+    "complexion": "Clean, minimal acne scarring. Fine lines around eyes from decades of close-focus work and squinting. A small burn scar on the bridge of his nose (accidental). Perpetually neat despite the work—someone who understands the power of presentation. Slight downward set to his mouth at rest, giving an impression of concentration or mild disapproval.",
+    "distinguishing_marks": [
+      "Garnet stud earring in left ear lobe, worn continuously since age nineteen—slightly darkened from oxidation",
+      "Network of pale thread-thin scars across both palms and inner wrists from sewing machine accidents and needle work",
+      "Small burn scar on bridge of nose, roughly 1cm, pale and flat",
+      "Faint circular scarring on both wrists (internal augmentation access points from micro-stabilizer installation, now barely visible)"
+    ],
+    "visible_augmentations": "Geneware patterned irises are the primary visible modification—noticeable in person but not immediately jarring. Subdermal thimble caps are invisible under normal light but create slight surface irregularities on the index, middle, and ring finger of each hand if examined closely. Hands move with mechanical precision that suggests augmentation to trained observers. No visible chrome or external hardware.",
+    "posture_movement": "Stands with a slight forward lean, as if perpetually leaning over a work surface. Shoulders rolled inward. Movements are economical and precise—no wasted motion. Hands are always occupied or positioned near fabric; he handles textiles with the deliberation others reserve for explosives. Walks with purpose but not haste. Rarely makes sudden movements.",
+    "clothing_style": "High-Tier 2 aesthetic executed with Tier 3 practicality. Typically wears fitted but functional garments—tailored merino blend shirts in neutral grays, blacks, deep blues; straight-cut work pants with reinforced pockets and seams (often his own creation); a charcoal or black overshirt or light jacket, always open. Shoes are understated—quality leather derby or slip-ons, well-maintained but worn. A cloth tape measure usually coiled around his neck or wrist. Jewelry is minimal: the garnet earring, occasionally a thin steel bracelet on his right wrist. His clothes fit him perfectly because he is his own first client. Nothing cheap, nothing flashy. Everything says 'I know what I'm doing.'"
+  },
+  "image_prompt": "Portrait of Brenno Asare-Djordjevic, a 38-year-old West African-Serbian tailor, cyberpunk 2226, standing in dim neon-filtered light. Angular lanky frame, warm amber skin tone, completely shaved head, wearing fitted charcoal work shirt with cloth measuring tape draped around neck. His eyes are the focal point—geneware patterned irises shifting from deep violet to burnt gold, intense and perceptive. Single garnet earring in left ear. Hands visible and prominent, long-fingered with visible calluses and thread-thin scars, positioned near fabric samples. Posture slightly forward-leaning, concentrated. Background is blurred second-floor shop interior with warm neon bleeding through windows behind him—deep purples and burnt orange from the street below. Lighting is diegetic neon mixed with cool overhead shop lights. Shallow depth of field focusing on face and hands. Moody, introspective, the look of someone who remembers everything. Shot at eye level. Hyper-realistic, precise detail work. Cinematic. --ar 2:3 --v 6"
 }

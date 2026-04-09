@@ -13,7 +13,7 @@
   "age": 27,
   "status": "active",
   "location": "Deepwell Station, Blackpipe Corridor terminal, near sub-level access near Dearborn and Jackson",
-  "description": "Leilani has the particular quality of alertness that comes from years of watching dark tunnel walls for anomalies at speed — she tracks movement in her peripheral vision before she has consciously registered it, and her eyes, which are a modified shifting amber-to-silver gradient (a cheap iris job she got at twenty-two), are always slightly wider than the situation seems to require. She is of medium height with a broad-shouldered Polynesian build softened by her mother's Ghanaian and her father's Polish lines — she inherited cheekbones that catch light and hands that are disproportionately large and capable. She wears her black hair in two long braids that she tucks into her uniform jacket while on duty.\n\nShe drives the Blackpipe Corridor overnight run, which means she sees Meridian 88 in its most honest hours — the 02:00 cargo shifts, the exhausted nurses heading home, the people who ride the deep lines because they have nowhere to sleep that isn't moving. She has a quiet protectiveness toward her passengers that she would not call protectiveness if asked. She would say she is just doing the job. She has a small secondhand speaker mounted against her operator partition that plays low, humming instrumentals during quiet stretches, and she has never been cited for it because none of her supervisors take the overnight inspection tour.",
+  "description": "Leilani has the particular quality of alertness that comes from years of watching dark tunnel walls for anomalies at speed — she tracks movement in her peripheral vision before she has consciously registered it, and her eyes, which are a modified shifting amber-to-silver gradient (a cheap iris job she got at twenty-two), are always slightly wider than the situation seems to require. She is of medium height with a broad-shouldered Polynesian build softened by her mother's Ghanaian and her father's Polish lines — she inherited cheekbones that catch light and hands that are disproportionately large and capable. She wears her black hair in two long braids that she tucks into her uniform jacket while on duty.\n\nShe drives the Blackpipe Corridor overnight run, which means she sees GLMZ in its most honest hours — the 02:00 cargo shifts, the exhausted nurses heading home, the people who ride the deep lines because they have nowhere to sleep that isn't moving. She has a quiet protectiveness toward her passengers that she would not call protectiveness if asked. She would say she is just doing the job. She has a small secondhand speaker mounted against her operator partition that plays low, humming instrumentals during quiet stretches, and she has never been cited for it because none of her supervisors take the overnight inspection tour.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -220,7 +220,7 @@
   "related_entities": [
     "Blackpipe Corridor",
     "Deepwell Station",
-    "Meridian 88",
+    "GLMZ",
     "Bathysphere Networks",
     "Witness",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
@@ -228,5 +228,26 @@
     "The Pure Hand",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Polynesian / West African / Polish",
+    "height_cm": 168,
+    "weight_kg": 68,
+    "build": "Broad-shouldered and solid without being heavy — compact, functional strength in the shoulders and forearms from years of grip-work on control interfaces. Her frame carries the density of someone whose body does precise, sustained work.",
+    "hair_color": "Black, natural",
+    "hair_style": "Worn in two long braids, typically tucked into the collar or pinned beneath her uniform jacket during shifts",
+    "hair_length": "Long",
+    "eye_color": "Modified gradient amber-to-silver, shifting with angle and light. A cheap iris job done at twenty-two, slightly misaligned in low light.",
+    "skin_tone": "Medium-warm, olive undertone — the blended result of Polynesian, Ghanaian, and Eastern European ancestry",
+    "complexion": "High, prominent cheekbones that catch and hold light. Minimal facial scarring; her skin shows the weathering of someone who works nights — slight darkness under the eyes, sun-spared but tired. Expression is habitually alert, eyebrows slightly raised even at rest.",
+    "distinguishing_marks": [
+      "Small, faint scar along her left temple from a childhood accident, barely visible unless lit directly.",
+      "Ferrogate Transit operator insignia (small blue-and-silver tattoo) on her inner right wrist — required registration mark for licensed deep-line operators.",
+      "Faint callus patterns on the palms and fingers of both hands from years of handling ferrogate control yokes and manual correction wheels."
+    ],
+    "visible_augmentations": "Gradient iris modification in both eyes (amber-to-silver, subtly uneven in dim light). No other visible chrome or subdermal hardware — the fatigue-suppression implant is entirely subcutaneous.",
+    "posture_movement": "Economical, forward-leaning posture as if she is perpetually watching a horizon thirty meters ahead. She moves with deliberate stillness when stationary — minimal fidgeting — but her head turns frequently, tracking peripheral space. Her hands are always partially open, ready to grip. She walks with a transit worker's gait: narrow stride, low center of gravity.",
+    "clothing_style": "Ferrogate Transit uniform: charcoal-grey jumper with reflective Ferrogate insignia on the shoulders and chest, dark utility pants with reinforced knees, steel-toed boots (scuffed, well-maintained). Over this, a worn grey-black transit worker's jacket with the collar up. Off-duty: functional, minimal — dark jeans, fitted dark sweaters, older running shoes. No jewelry except her operator tattoo. Everything is clean but heavily used. Tier 2 working-class pragmatism: no waste, no flash."
+  },
+  "image_prompt": "A 27-year-old female ferrogate transit operator, Polynesian-Ghanaian-Polish heritage, medium height with broad shoulders and athletic build. Long black braids tucked into a charcoal-grey Ferrogate Transit uniform jacket, reflective insignia visible. Her defining feature: gradient iris modification shifting from amber to silver, slightly misaligned, eyes perpetually alert and wide. Olive skin tone, prominent cheekbones. She stands in the dim, industrial interior of Deepwell Station's sub-level platform — flickering LED lights casting long shadows on corrugated metal walls, ferrogate track visible below. Her posture is forward-leaning, ready. Worn utility pants, reinforced boots on weathered platform flooring. Cyberpunk, gritty, realistic, night-shift labor aesthetic. Low-key, intimate lighting. Hyperrealistic portraiture. --ar 2:3 --v 6"
 }

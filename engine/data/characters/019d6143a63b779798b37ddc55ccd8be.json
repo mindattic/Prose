@@ -31,7 +31,7 @@
     "core_desires": [
       "Freedom from augmentation debt — the interest compounds like a tumor",
       "To matter to someone for who they are, not what they can do",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
       "Exercises compulsively — the body must be ready, always",
@@ -60,7 +60,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Kadiatou Bergstrom-Konate's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Kadiatou Bergstrom-Konate's past shows up in GLMZ, carrying old grievances and new chrome",
     "A former associate resurfaces with evidence that could destroy Kadiatou Bergstrom-Konate's reputation — and a price for silence",
     "Someone is impersonating Kadiatou Bergstrom-Konate on jobs, and the impersonator is better at the work than the original"
   ],
@@ -274,10 +274,32 @@
   "related_entities": [
     "Masquerade",
     "The Narrows Compact",
-    "Meridian 88",
+    "GLMZ",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and angular — lean muscle with almost no body fat, built for speed and endurance rather than power. Shoulders slightly narrow, chest flat. Movement suggests coiled kinetic energy.",
+    "hair_color": "Dark brown, natural with grey threading at temples",
+    "hair_style": "Pulled back tightly in a functional braid; practical, not aesthetic",
+    "hair_length": "Medium",
+    "eye_color": "Left eye: warm brown, natural. Right eye: chrome-silver with visible circuitry matrix, iris replaced by adjustable aperture lens",
+    "skin_tone": "Deep warm brown with subtle amber undertones",
+    "complexion": "Lean face with high cheekbones and a sharp jaw. Skin weathered from stress and irregular sleep — faint lines around eyes. Minimal grooming beyond functionality; no cosmetics. Scarring visible around temples and jawline from augmentation installation — rough surgical marks, unprofessional work.",
+    "distinguishing_marks": [
+      "Surgical scarring along both temples where subdermal neural interface was installed — approximately 4cm each, slightly raised and irregular.",
+      "Jagged scar along left jawline from installation point of chrome eye assembly — approximately 6cm, pale against skin.",
+      "Faint burn marks across knuckles of both hands — old damage, silvered with scar tissue.",
+      "Small impact scar above right collarbone — appears to be shrapnel wound, partially healed."
+    ],
+    "visible_augmentations": "Right eye is wholly artificial — chrome and circuitry visible in the socket, no organic tissue. Subdermal armor plating visible as faint geometric seams and hard edges beneath skin across shoulders, upper torso, and forearms — military-grade titanium composite, scratched and dull from use. Chrome at wrists where plating meets flesh creates a subtle ridge.",
+    "posture_movement": "Stands with weight forward, ready to move. Walks with economical efficiency — no wasted motion. Fingers often fidgeting or checking equipment. Head moves constantly, cataloguing exits and threats. Right eye often seems to be recording — slight focus shift and micro-adjustments of the iris aperture. Restless even at rest — constant low-level physical tension.",
+    "clothing_style": "Tier 4-5 functional minimalism. Black or dark grey fitted cargo pants with reinforced knees and thigh pockets — worn Syndicate Industrial brand. Tight-fitting compression shirt under a worn leather jacket (grey-brown, creased from use, multiple hidden pockets added by hand). Fingerless gloves with exposed knuckle reinforcement. Steel-toed boots, scuffed and practical. No jewelry or decoration. Everything designed for quick movement and access to tools."
+  },
+  "image_prompt": "Cyberpunk portrait of a 27-year-old Black-Scandinavian woman, wiry athletic build, dark skin with warm undertones. Left eye warm brown organic, right eye completely artificial chrome-silver circuitry matrix with adjustable iris aperture. Visible surgical scarring around temples and jawline from rough augmentation installation. Subdermal armor plating visible as geometric ridges beneath skin on shoulders, torso, and forearms — military-grade scratched titanium. Tight dark compression shirt under worn leather jacket, cargo pants, reinforced boots. Hair pulled back in tight braid with grey threading at temples. Intense forward posture, restless energy, fingers adjusting equipment. The Narrows cyberpunk setting — shadows from megastructure corridors, neon glow from distant signage, industrial decay. Moody blue and amber lighting. Hyperdetailed mechanical eye, sweat-slicked skin texture, worn tactical gear. Film noir cyberpunk aesthetic. --ar 2:3 --v 6"
 }

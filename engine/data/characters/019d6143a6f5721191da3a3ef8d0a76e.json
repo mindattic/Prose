@@ -13,7 +13,7 @@
   "age": 47,
   "status": "active",
   "location": "University Spine, Deepwell Station archival annex, near sub-level access near LaSalle and Congress",
-  "description": "Theophane is a broad-shouldered man who has gone soft in the middle from years of sedentary archival work, with warm brown skin and close-cut hair that has gone gray at the temples in a way he finds interesting rather than alarming. He keeps his irises modded to a deep violet — a choice from his twenties he still actively likes — and his hands are always moving when he talks, tracing patterns in the air that correspond to phonemic structures or grammar trees only he can see. He has retractive claws on his right hand only, a half-finished geneware modification he stopped partway through when the artist moved districts; he has been meaning to complete it for eight years.\n\nHe studies languages that did not exist before Meridian 88 — the creoles that emerged on the Shelf, the signal-argot that E.L.F.s appear to use between devices, the gestural metalanguage that developed among deaf communities in the lower transit corridors without any central design. He approaches these systems with the devotion of someone who believes language is the truest form of evidence about how people actually live, not how they are recorded as living. He is mild-mannered in ways that make people underestimate how deeply unusual his research is, and he has built a quiet career on the gap between what institutions think he studies and what he actually studies.",
+  "description": "Theophane is a broad-shouldered man who has gone soft in the middle from years of sedentary archival work, with warm brown skin and close-cut hair that has gone gray at the temples in a way he finds interesting rather than alarming. He keeps his irises modded to a deep violet — a choice from his twenties he still actively likes — and his hands are always moving when he talks, tracing patterns in the air that correspond to phonemic structures or grammar trees only he can see. He has retractive claws on his right hand only, a half-finished geneware modification he stopped partway through when the artist moved districts; he has been meaning to complete it for eight years.\n\nHe studies languages that did not exist before GLMZ — the creoles that emerged on the Shelf, the signal-argot that E.L.F.s appear to use between devices, the gestural metalanguage that developed among deaf communities in the lower transit corridors without any central design. He approaches these systems with the devotion of someone who believes language is the truest form of evidence about how people actually live, not how they are recorded as living. He is mild-mannered in ways that make people underestimate how deeply unusual his research is, and he has built a quiet career on the gap between what institutions think he studies and what he actually studies.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -236,7 +236,7 @@
   "related_entities": [
     "Deepwell Station",
     "University Spine",
-    "Meridian 88",
+    "GLMZ",
     "Ashford Signal",
     "The Shelf",
     "Palladian Construction",
@@ -246,5 +246,26 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Central African (Bantu) / Northern European (Dutch/Germanic)",
+    "height_cm": 183,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thick-chested, with soft accumulation around the middle — the body of someone who was athletic in youth and has spent fifteen years hunched over archival terminals. Still carries strength in the upper back and arms.",
+    "hair_color": "Dark brown with silver-gray at temples and scattered through the close-cut growth",
+    "hair_style": "Close-cropped, neat, maintained with minimal fuss",
+    "hair_length": "Short",
+    "eye_color": "Deep violet with radial fracture pattern (cosmetic iris mod)",
+    "skin_tone": "Warm medium brown with undertones suggesting mixed heritage — darker on face and forearms from years of travel between districts",
+    "complexion": "Lined around the eyes and mouth from concentration and conversation. Keeps his face clean-shaven. Skin texture shows minor sun damage on the bridge of his nose — older scarring, pre-mod work. Perpetually slightly tired look, but sharp and engaged in conversation.",
+    "distinguishing_marks": [
+      "Fine scar running 2cm along the left temple, barely visible, possibly from childhood injury",
+      "Retractive claw apparatus visible on right hand only — incomplete geneware modification showing partial keratin plates along fingers 2-4, with visible junction scarring where the work was abandoned eight years ago. The claws are dark gray-black, retracted at rest but visibly mechanical beneath the skin.",
+      "Small tattoo on the inside of left wrist: a phonemic cluster in Shelf-Creole gestural notation, done in faded gray-blue ink, approximately 15 years old"
+    ],
+    "visible_augmentations": "Violet iris modification is immediately obvious. Right hand shows incomplete claw apparatus with visible scarring and mechanical edges. Occasionally wears discreet over-ear headphones (custom acoustic enhancement monitoring rig) when working in the annex. The claws are the most obviously unusual feature — most people notice them within seconds of conversation.",
+    "posture_movement": "Sits slightly forward when focused, with shoulders rounded inward. Hands move constantly during speech — tracing complex patterns in the air with fingers and wrists, mapping out grammar structures and phonemic relationships that only he can see. These hand movements are precise and purposeful, almost ritualistic. Walks with deliberate pace, unhurried. Has developed a habit of tilting his head slightly when listening, as if his acoustic implants are actively tuning.",
+    "clothing_style": "Tier 2-3 hybrid: University-issue smart-weave clothing mixed with personal pieces. Usually wears loose linen or cotton shirts (sleeves rolled to mid-forearm, showing the incomplete right-hand modification) in neutral tones — cream, gray, soft blues. Trousers are practical, often University-branded. Jacket is a well-worn charcoal wool blazer with reinforced elbows, suggesting years of leaning on archival terminals. Carries a worn leather satchel with visible signal-logging equipment. Shoes are practical and broken-in. Overall appearance suggests comfort with institutional affiliation but resistance to full corporate compliance — he looks professorial rather than corporate, invested in his work rather than his appearance."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 47-year-old man with broad shoulders and middle-aged softness, warm brown skin with mixed Central African and Northern European heritage, close-cropped dark hair with gray at temples. Deep violet iris modifications with radial fracture patterns. Right hand shows incomplete geneware claw modifications with visible mechanical plating and scarring. Wearing a worn charcoal wool blazer over cream linen shirt with rolled sleeves, practical gray trousers. Slight forward lean, hands positioned mid-gesture tracing invisible phonemic patterns in air. Tired but sharp expression, one hand showing the partial claw apparatus. University archival annex setting with soft terminal glow in background, cool blue-gray lighting, dust motes visible. Contemplative, scholarly, slightly eccentric energy. Depth of field focusing on face and hands. Cinematic, realistic cyberpunk aesthetic, shot like character study for sci-fi documentation --ar 2:3 --v 6"
 }

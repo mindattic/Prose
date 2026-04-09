@@ -194,7 +194,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born in Meridian 88, Grainfort district",
+      "event": "Born in GLMZ, Grainfort district",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -226,7 +226,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Returns to Meridian 88; moves to The Shelf",
+      "event": "Returns to GLMZ; moves to The Shelf",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -263,5 +263,26 @@
     "Gold",
     "Elena Vasquez-9"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African (Senegalese) / Hungarian",
+    "height_cm": 158,
+    "weight_kg": 61,
+    "build": "Compact and wiry, with the reduced muscle mass of advanced age but retained strength in the shoulders and hands from decades of medical work. No excess fat. Moves with economical precision.",
+    "hair_color": "Salt-and-pepper natural grey and black",
+    "hair_style": "Close-cropped, textured, practical",
+    "hair_length": "Short",
+    "eye_color": "Left eye: warm amber-brown (natural). Right eye: honey-gold artificial iris, shifts to pale gold in certain light.",
+    "skin_tone": "Warm amber-brown with underlying ochre undertones",
+    "complexion": "Weathered, lined face with deep creases around the eyes and mouth from decades of squinting in surgical light and laughing. Sun-damaged from rooftop work. Minimal grooming — no makeup, no vanity. Skin texture slightly loose at the jaw and neck. Hands show significant age spotting and scarring, knuckles enlarged from arthritis.",
+    "distinguishing_marks": [
+      "Faded Arcturus Medical Corps tattoo running the inside of the left wrist in faded blue-grey ink — partially obscured by a beaded bracelet made by her granddaughter Yemisi, woven in red and gold thread",
+      "Thin white scar running 4cm along the right temple, barely visible",
+      "Extensive micro-scarring on both palms and fingers from surgical work and industrial accidents"
+    ],
+    "visible_augmentations": "Right eye is noticeably artificial — slightly too bright, iris shift is visible in low light, minor lag in tracking. Subdermal med-monitor patch visible on upper chest as a faint rectangular outline under the skin with barely-perceptible LED indicator (off most of the time). No chrome, no obvious armoring.",
+    "posture_movement": "Stands with slight forward lean from habit — ready to move, respond, work. Walks with economical steps, wrists loose, hands often in motion even at rest (old habit from surgery). Sits with perfect posture. Gestures are minimal but precise. Rare, loud, unexpected laughter that seems to come from her whole body.",
+    "clothing_style": "Tier 5 practicality with touches of dignity. Wears faded charcoal or black utility trousers with multiple pockets, worn soft at the knees. Favors oversized linen shirts in cream or muted green, sleeves rolled to the elbow. Over this, a weathered canvas jacket dyed deep indigo, frayed at the cuffs. Feet in worn synthetic leather boots with reinforced soles. The beaded bracelet is always worn. No jewelry beyond this. Clothes are clean but mended, colors chosen to hide stains. Everything is functional and has been worn for at least 5 years."
+  },
+  "image_prompt": "Portrait of an older Black woman, age 69, compact and precise build, warm amber-brown skin with age lines deep around eyes and mouth, close-cropped salt-and-pepper textured hair. Her right eye is a noticeably artificial honey-gold ocular with subtle LED shimmer; her left eye is warm natural brown, creating striking asymmetry. Faint rectangular outline of subdermal implant visible under collarbone on upper chest. Wearing oversized cream linen shirt with rolled sleeves, deep indigo canvas jacket, weathered from use. A handmade beaded bracelet in red and gold on her left wrist. Seated in a small rooftop garden with medicinal herb pots, urban GLMZ skyline blurred behind her. Warm golden-hour sunlight. Stern expression, lines of weariness and competence, direct gaze. Cyberpunk 2226, Tier 5 Shelf aesthetic, grounded and real, no romanticization. --ar 2:3 --v 6"
 }

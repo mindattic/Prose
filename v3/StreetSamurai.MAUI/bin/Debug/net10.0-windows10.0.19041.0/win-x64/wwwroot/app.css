@@ -330,3 +330,6 @@ textarea.auto-grow {
 }
 .dict-list .list-item:hover { background: #21262d; }
 .dict-list .list-item.active { background: #21262d; border-left-color: #dc3545; }
+
+/* ReadOnly mode: hide New buttons and export buttons across all dictionary pages */
+.readonly-mode .dict-list .btn-outline-danger { display: none !important; }

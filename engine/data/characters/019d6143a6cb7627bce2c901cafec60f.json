@@ -206,5 +206,25 @@
     "Gold",
     "Weathervane"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Italian",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Angular and lean, almost gaunt in the shoulders, with long limbs that suggest a swimmer or someone who moves through space economically. Minimal muscle definition but visibly strong in the forearms and hands.",
+    "hair_color": "Shaved scalp with a single thick braid dyed deep blue-green (like night-dark lake water)",
+    "hair_style": "Single heavy braid running down the center back from crown to mid-spine; braid itself is textured, possibly wrapped with thin wire or fiber-optic threading",
+    "hair_length": "Shaved except for braid",
+    "eye_color": "Dark brown with faint luminescent amber undertones when bioluminescence activates",
+    "skin_tone": "Deep warm brown with subtle golden undertones; has a faint waxy sheen from the bioluminescent geneware",
+    "complexion": "Sharp cheekbones, long narrow face, minimal facial hair. Skin appears almost preternaturally smooth with no visible scars or blemishes. Expression tends toward neutral or slightly withdrawn. Hands are expressive and calloused from equipment work.",
+    "distinguishing_marks": [
+      "Three visible subdermal ridges running along the left jawline, faintly raised and parallel, approximately 2-3mm in height",
+      "Matching three subdermal ridges along the right collarbone just below the shoulder, creating a subtle topographical pattern visible under the skin"
+    ],
+    "visible_augmentations": "Subdermal resonance implants visible as faint ridges along jaw and collarbone that hum and resonate visibly when activated. Bioluminescent geneware manifests as a pulsing amber-gold luminescence under the skin, most prominent at the sternum and spreading outward during elevated heart rate or performance. Bioluminescence becomes dramatic and visible to observers during shows.",
+    "posture_movement": "Tall, with a tendency to fold slightly inward as if apologizing for the space their height occupies. Movements are deliberate and economical, almost meditative offstage. Hands move with precision. When performing or experiencing sound, entire body becomes animated — subtle swaying, hands tracing invisible frequencies, jaw clenching as implants activate.",
+    "clothing_style": "Tier 3-4 working artist aesthetic. Typically wears loose-fitting, high-necked shirts or turtle necks in muted colors (charcoal, deep navy, burgundy) to showcase the collarbone implants and allow skin to breathe/luminesce. Favors layered, minimal jewelry except for a single thick silver or steel ring on the right middle finger (possibly jury-rigged equipment sync interface). Worn but clean workwear — cargo pants or utility trousers with functional pockets for recording equipment, reinforced at the knees. Carries a worn canvas shoulder bag with hydrophone array and mixing equipment. Footwear is practical and quiet (soft-soled boots or slip-ons). Overall aesthetic is deliberately understated offstage, expensive in its simplicity."
+  },
+  "image_prompt": "Cyberpunk portrait of a tall, angular nonbinary figure with shaved head and single thick blue-green braid down the back. Deep warm brown skin with bioluminescent amber-gold undertones glowing faintly at the chest and jawline. Sharp cheekbones, dark eyes, neutral expression. Visible subdermal ridges along jaw and collarbone creating subtle technological pattern. Wearing a loose high-necked charcoal shirt, layered, minimal jewelry. Hands visible with calloused fingers. Moody atmospheric lighting with soft golden bioluminescence emanating from skin, cool shadows, industrial Hamtramck setting suggested in background. Cinematic, introspective, 2226 GLMZ aesthetic. --ar 2:3 --v 6"
 }

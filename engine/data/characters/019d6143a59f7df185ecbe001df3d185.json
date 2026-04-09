@@ -242,5 +242,25 @@
     "Teak",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Ghanaian/Akan) / Eastern European (Russian/Polish)",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solidly built, muscular through the arms and back from decades of precise manual work. Not heavy, but substantial — the kind of frame that suggests strength without seeking it.",
+    "hair_color": "Dark brown with natural silver streaking throughout",
+    "hair_style": "Locs, thick and shoulder-length when loose, typically pinned up under a work bandana during shop hours",
+    "hair_length": "Long",
+    "eye_color": "Cosmetic irises: spiraling amber and black pattern (non-functional augmentation, purely aesthetic)",
+    "skin_tone": "Deep mahogany-brown, the color of dark teak wood",
+    "complexion": "Weathered but well-maintained, minimal makeup, no visible skin damage. Fine lines around her eyes and mouth from fifty-two years of quiet smiling and concentration. Her face has the economy of expression that comes from listening more than speaking.",
+    "distinguishing_marks": [
+      "Small, precise scar on the webbing between her left thumb and index finger — a blade slip from her early twenties, now barely visible.",
+      "Faint burn mark on her right forearm, roughly palm-sized, from a stove incident in her thirties — she never bothers to cover it."
+    ],
+    "visible_augmentations": "Only her cosmetic spiral irises (amber and black) are visible — a deliberate choice made in her forties. She refuses chrome or any functional augmentation on principle.",
+    "posture_movement": "Stands with her weight evenly distributed, shoulders back but not rigid. Moves with economical precision — no wasted motion. Her hands are her language: steady, confident, capable of extreme delicacy or surprising strength. She gestures infrequently but meaningfully. Her gait is unhurried, even during busy hours.",
+    "clothing_style": "Work uniform of a Tier 3-4 independent tradesperson. Usually wears a dark linen work shirt or vintage cotton coverall, sleeves rolled to the elbow. A faded cloth bandana (rotating selection of patterns — geometric, indigo, earth tones) keeps her locs back during work. Practical boots, worn but maintained. Outside the shop, she adds a long cardigan or wool coat depending on season — no corporate branding, no flash. Her clothes are chosen for durability and movement, not status. Everything smells faintly of pomade, soap, and old music."
+  },
+  "image_prompt": "Portrait of a 52-year-old West African-Eastern European woman barber, strong broad shoulders, deep mahogany skin, silver-streaked locs pinned under a faded indigo work bandana, wearing a dark linen work shirt with rolled sleeves, cosmetic spiral irises in amber and black, steady hands, slight frown lines suggesting concentration and quiet humor, standing in vintage barber shop with three analog mirrors and old wood chairs, warm incandescent lighting casting soft shadows, analog aesthetic, worn but dignified, shot in documentary realism style, shallow depth of field, --ar 2:3 --v 6"
 }

@@ -204,5 +204,25 @@
     "Gold",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African Fulani / Scandinavian Swedish",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "build": "Compact and economical, muscular through the shoulders and forearms from decades of precise hand work, no excess anywhere",
+    "hair_color": "Dark brown with natural graying at the temples",
+    "hair_style": "Locs kept in a low, tight bun during work hours; released, they fall mid-back with a slight natural wave",
+    "hair_length": "Long (in locs)",
+    "eye_color": "Pale green with radial geometric gold pattern (augmented irises, cosmetic mod since age 30)",
+    "skin_tone": "Pale gold undertone — a luminous warm beige that reads as neither fully Scandinavian nor fully West African, distinctly his own",
+    "complexion": "Clean-shaven, fine-featured with wide flat cheekbones and a high forehead; skin maintained with professional discipline, no visible blemishes or roughness",
+    "distinguishing_marks": [
+      "Fine linear scar along the left knuckle of his index finger, barely visible, from a blade slip in his apprenticeship",
+      "Faint discoloration on his right wrist from an old chemical burn, well-healed"
+    ],
+    "visible_augmentations": "Radial geometric pattern in burnished gold radiating from the pupil of both eyes — visible only in direct light or close conversation. No external chrome or subdermal visibility.",
+    "posture_movement": "Stands with weight evenly distributed, shoulders relaxed but aligned; moves with economical precision, never wasted motion. Hands rest at chest height when not in use, fingers slightly curved as if ready to work. His gait is measured, almost ceremonial.",
+    "clothing_style": "Tier 3-4 professional grooming sector. White or cream linen smocks over simple dark trousers during work hours; outside the shop, fitted black or charcoal pullovers, well-maintained vintage denim, leather work shoes with good arch support. No corporate branding. One silver chain at the neck — inherited from his father. Grooming is immaculate; he sets his own standard."
+  },
+  "image_prompt": "Cyberpunk portrait of a 44-year-old barber, compact athletic build, pale gold skin with West African and Scandinavian features, wide cheekbones, dark locs in a low bun, striking pale green eyes with gold geometric radial pattern augmentation visible in the iris, clean-shaven, hands positioned at chest height with visible professional care, wearing a pristine cream linen smock over dark trousers, standing in a small neighborhood barbershop interior with mirrors and warm overhead lighting, intimate character study, shallow depth of field, shot at eye level, soft warm practical lighting, hyperrealistic detail on facial features and hand positioning, cyberpunk grooming aesthetic, --ar 2:3 --v 6"
 }

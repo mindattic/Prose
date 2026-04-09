@@ -14,7 +14,7 @@
   "age": 58,
   "status": "active",
   "location": "The Meridian Core, near State and Madison",
-  "description": "Fenwick is a tall, lean Nigerian-British man whose physical presence is dominated by an almost architectural stillness—he moves through rooms the way expensive furniture does, occupying space with an authority that has nothing to do with aggression. His hair is silver and kept close-cropped; his skin is deep brown and largely unlined in a way that suggests either good genetics or access to skin-maintenance procedures he would consider too vulgar to discuss. He dresses in understated, exquisitely tailored clothing in charcoal and navy, always with a physical notebook in a breast pocket, always with cufflinks that are slightly too interesting to be accidental. His eyes are warm brown with the faint reflective quality of high-end retinal overlays, and he has the practiced habit of looking at people as though they are the most interesting document he has encountered today.\n\nFenwick serves as Senior Archivist for the Meridian Core's largest private institutional repository—nominally a preservation and records management role, practically a position of extraordinary covert power. He has spent thirty years accumulating, organizing, and quietly leveraging information that powerful people would prefer did not exist in organized form. He does not blackmail. He considers blackmail crude and unstable. What he does instead is position himself as the person who can make problems go away, who knows where the inconvenient documentation lives, who has relationships on every floor of every tower in the Core. He is expensive to retain and priceless to cross.\n\nHe came to Meridian 88 from London at twenty-eight, trailing a first-class archival science degree and a deliberate decision to go where the information was least organized and therefore most powerful. He has outlasted six corporate administrations, two regime changes at the city level, and one assassination attempt he has never publicly acknowledged. He is not cruel, which people mistake for softness. He is not sentimental, which people mistake for coldness. He is, above all things, patient—and in a city that runs on speed, patience is the most dangerous thing you can be.",
+  "description": "Fenwick is a tall, lean Nigerian-British man whose physical presence is dominated by an almost architectural stillness—he moves through rooms the way expensive furniture does, occupying space with an authority that has nothing to do with aggression. His hair is silver and kept close-cropped; his skin is deep brown and largely unlined in a way that suggests either good genetics or access to skin-maintenance procedures he would consider too vulgar to discuss. He dresses in understated, exquisitely tailored clothing in charcoal and navy, always with a physical notebook in a breast pocket, always with cufflinks that are slightly too interesting to be accidental. His eyes are warm brown with the faint reflective quality of high-end retinal overlays, and he has the practiced habit of looking at people as though they are the most interesting document he has encountered today.\n\nFenwick serves as Senior Archivist for the Meridian Core's largest private institutional repository—nominally a preservation and records management role, practically a position of extraordinary covert power. He has spent thirty years accumulating, organizing, and quietly leveraging information that powerful people would prefer did not exist in organized form. He does not blackmail. He considers blackmail crude and unstable. What he does instead is position himself as the person who can make problems go away, who knows where the inconvenient documentation lives, who has relationships on every floor of every tower in the Core. He is expensive to retain and priceless to cross.\n\nHe came to GLMZ from London at twenty-eight, trailing a first-class archival science degree and a deliberate decision to go where the information was least organized and therefore most powerful. He has outlasted six corporate administrations, two regime changes at the city level, and one assassination attempt he has never publicly acknowledged. He is not cruel, which people mistake for softness. He is not sentimental, which people mistake for coldness. He is, above all things, patient—and in a city that runs on speed, patience is the most dangerous thing you can be.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -48,7 +48,7 @@
       "Underestimates how much his archive has become a target rather than a neutral resource",
       "Has catalogued everyone else's emotional patterns without applying the same rigor to his own"
     ],
-    "secret": "The assassination attempt thirty years ago was arranged by his own patron—the man who brought him to Meridian 88. Fenwick survived, covered the evidence, and has protected that man's legacy ever since, not out of loyalty but because understanding why has become the organizing question of his life and he hasn't found the answer yet."
+    "secret": "The assassination attempt thirty years ago was arranged by his own patron—the man who brought him to GLMZ. Fenwick survived, covered the evidence, and has protected that man's legacy ever since, not out of loyalty but because understanding why has become the organizing question of his life and he hasn't found the answer yet."
   },
   "speech_patterns": {
     "vocabulary": "Precise, elevated, and slightly archaic in register; favors complete sentences and deplores abbreviation; uses archival and preservation metaphors organically; occasional British idiom that surfaces under stress or genuine amusement",
@@ -84,7 +84,7 @@
     {
       "name": "A woman named Priya (surname omitted from his own records)",
       "type": "The relationship he ended to protect his neutrality",
-      "description": "A journalist Fenwick worked with fifteen years ago; he ended contact when she began investigating the same patron whose assassination attempt he covered. She left Meridian 88 shortly after.",
+      "description": "A journalist Fenwick worked with fifteen years ago; he ended contact when she began investigating the same patron whose assassination attempt he covered. She left GLMZ shortly after.",
       "emotional_core": "The closest thing to genuine regret in his emotional landscape",
       "story_tension": "He has received evidence she may have returned to the city under a different identity; he cannot decide whether finding her would be archival due diligence or something else entirely"
     }
@@ -93,7 +93,7 @@
     "Someone has accessed a restricted section of the archive using a credential that should no longer exist—the credential belonged to Fenwick's dead patron",
     "A young archivist Fenwick has been quietly mentoring brings him a document that suggests the original assassination attempt was not his patron's doing but was staged to look that way by someone still active in the Core",
     "The file labeled with his own name disappears from its location; the access log shows it was opened and removed by Fenwick himself, at a time he was elsewhere",
-    "A street-level runner arrives with a data chip containing records Fenwick thought he had destroyed personally—records from his first year in Meridian 88",
+    "A street-level runner arrives with a data chip containing records Fenwick thought he had destroyed personally—records from his first year in GLMZ",
     "Priya, or whoever she is now, contacts him directly with a request that requires him to choose between his neutrality and the most significant story the city has ever not told"
   ],
   "narrative_function": "Institutional memory and moral complexity of complicity-through-inaction; Fenwick embodies the question of whether knowing everything and choosing carefully what to do with that knowledge is wisdom or a more sophisticated form of cowardice",
@@ -210,7 +210,7 @@
     "breaking_points": [
       "The file labeled with his own name disappearing from its location",
       "Someone accessing the archive using his dead patron's credentials",
-      "Priya returning to Meridian 88 and making contact",
+      "Priya returning to GLMZ and making contact",
       "The archive becoming a target rather than a neutral resource — the end of his position"
     ]
   },
@@ -250,7 +250,7 @@
   "related_entities": [
     "The Meridian Core",
     "Meridian Core",
-    "Meridian 88",
+    "GLMZ",
     "Fenwick Float",
     "Tessera Attrition Engine TE-9 'Patience'",
     "IRONLIMB Spectre SV-4 Stealth Arm",
@@ -258,5 +258,25 @@
     "Lazarus LX-2 'Lab Rat'",
     "Silver"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "West African (Nigerian) / British",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "build": "Lean and architecturally composed, with the long-limbed proportion of someone who has never needed to assert physicality. Minimal body fat, shoulders slightly narrow relative to height, suggesting a frame built for stillness rather than motion.",
+    "hair_color": "Silver",
+    "hair_style": "Close-cropped, geometrically precise",
+    "hair_length": "Short",
+    "eye_color": "Warm brown with faint reflective grid-pattern quality in low light (retinal overlay signature)",
+    "skin_tone": "Deep brown, evenly pigmented",
+    "complexion": "Remarkably smooth with minimal creasing around eyes and mouth—consistent with either exceptional genetics or discreet dermatological maintenance. No visible damage, no visible emotion. Expression is composed and observational. Grooming is immaculate without appearing effortful.",
+    "distinguishing_marks": [
+      "Faint linear scar on left temple, approximately 3cm, barely visible but suggests a healed impact wound from his early thirties",
+      "Surgical scar along right jawline, minimal but present, possibly from corrective work or augmentation installation"
+    ],
+    "visible_augmentations": "Retinal overlays visible as faint grid-pattern reflection in both pupils under low-light conditions; otherwise augmentations are entirely subcutaneous or internal. No external chrome, no visible neural interface ports, no obvious prosthetics. The augmentations are civilian-grade corporate standard, which he considers the only appropriate level of visible modification for his social tier.",
+    "posture_movement": "Moves with deliberate economical precision—no wasted motion, no fidgeting, no postural restlessness. Occupies space with architectural authority rather than physical presence. Sits with composed spine, stands with hands at rest. Walks as though following an internal map. Default expression is attentive and slightly warm, with the quality of someone listening to information rather than people.",
+    "clothing_style": "Understated Tier-1 corporate formalism: bespoke charcoal and navy tailoring, always perfectly fitted and made from expensive non-synthetic blends. Dress shirts in pale blue or white, worn with cufflinks that are subtly distinctive (vintage materials, unusual metalwork) without advertising themselves. Dark wool trousers with precise creasing. Leather shoes in black or dark brown, worn with the polish of religious maintenance. A physical leather notebook in his breast pocket, always. A wristwatch in brushed steel—functional, expensive, analog-digital hybrid. No unnecessary jewelry beyond the cufflinks. The overall effect is of someone who dresses for information acquisition rather than impression management, which paradoxically makes him memorable."
+  },
+  "image_prompt": "Portrait of a tall, silver-haired Nigerian-British man in his late fifties, deep brown skin, warm brown eyes with faint reflective grid patterns visible in soft light, lean and composed. Wearing impeccably tailored charcoal suit jacket, pale blue dress shirt, subtle vintage cufflinks. Standing in a high-archive corridor with soft amber overhead lighting and shadow, surrounded by filing systems and leather-bound records. Expression is attentive and observational, completely emotionally controlled. Cyberpunk corporate archivist, 2226, documentary realism, intricate professional grooming, no visible chrome or obvious augmentation, atmospheric depth of field, cool and warm light contrast, photorealistic, sophisticated and understated --ar 2:3 --v 6"
 }

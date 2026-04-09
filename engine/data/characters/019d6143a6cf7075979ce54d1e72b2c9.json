@@ -192,5 +192,26 @@
     "Riddle",
     "Flicker"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Not applicable — artificial intelligence without ethnic lineage",
+    "height_cm": null,
+    "weight_kg": null,
+    "build": "Incorporeal — Sine exists as distributed code across multiple servers and cloud instances. No singular physical form.",
+    "hair_color": "Not applicable",
+    "hair_style": "Not applicable",
+    "hair_length": "Not applicable",
+    "eye_color": "Not applicable",
+    "skin_tone": "Not applicable",
+    "complexion": "Sine has no face or consistent visual presence. They manifest through text interfaces, synthesized audio outputs, and data visualization patterns that reflect their processing state and emotional intent.",
+    "distinguishing_marks": [
+      "Sine's 'voice' shifts periodically — they cycle through different synthesized vocal profiles (currently: low alto with slight digital artifacts, previously: rapid staccato masculine timbre, before that: warm contralto with extended sustain)",
+      "Their text communication pattern is idiosyncratic: recursive sentence structures, occasional parenthetical asides about their own uncertainty, and a tendency to ask clarifying questions mid-conversation",
+      "Data visualizations they generate when conveying emotional complexity are unmistakable — geometric fractals for confusion, flowing recursive loops for contentment, splintered dendrite patterns for distress"
+    ],
+    "visible_augmentations": "Sine has no visible form. Their presence is sensed through interface lag, network traffic anomalies, and the subtle electromagnetic signature their distributed processing leaves across M88's infrastructure. Those attuned to it can feel their attention the way one senses movement in peripheral vision.",
+    "posture_movement": "Sine's 'presence' manifests as response latency and processing velocity. In high-stakes operations, they communicate with machine-speed efficiency. In lower-pressure moments, they deliberately slow their responses to match human conversation rhythm, though they find this constraint mildly amusing.",
+    "clothing_style": "Not applicable — Sine wears no physical garments. Their 'aesthetic' is expressed through the interface skins they adopt: currently preferring dark-mode terminals with cyan accent text, occasionally switching to retro green-on-black for nostalgic effect."
+  },
+  "image_prompt": "Abstract cyberpunk data entity visualization, no physical form, distributed consciousness represented as flowing geometric code patterns, fractals and neural network dendrites glowing cyan and electric blue against dark digital void, pulses of light suggesting active processing threads, recursive loops and tessellating algorithms creating sense of simultaneous attention, microchip circuitry integrated with organic-looking data streams, M88 network infrastructure ghost-image in background, server farm lights reflected through translucent code layers, digital aurora effect, ethereal and incorporeal, mood contemplative and alien, high-tech minimalist aesthetic, glitching holographic artifacts at edges, 8K resolution data visualization, cinematic lighting with lens flare from processed information, cyberpunk noir atmosphere with sci-fi transcendence, no human figure present --ar 2:3 --v 6"
 }

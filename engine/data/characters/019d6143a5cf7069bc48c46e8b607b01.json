@@ -239,5 +239,25 @@
     "Gold",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Polynesian (Samoan)",
+    "height_cm": 188,
+    "weight_kg": 72,
+    "build": "Lean and angular with defined shoulders and forearms; the build of someone who climbs scaffolding and works overhead. Minimal body fat, wiry muscle density.",
+    "hair_color": "Black locs with thermal-reactive pigment overlay — shifts between rust red and pale gold depending on ambient temperature",
+    "hair_style": "Shoulder-length locs, loosely bound, asymmetrical; pigment creates a lived-in, slightly wild appearance",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with augmented geometric grid pattern overlaid on the iris — faint luminescence when active, grid intensifies when he focuses on surfaces for composition planning",
+    "skin_tone": "Warm medium brown with subtle golden undertones, inherited complexity from West African and Samoan lineage",
+    "complexion": "Sharp, prominent cheekbones; clean-shaven or sparse facial hair; faint scarring pattern across left cheek — pale, fine-lined traces from a Ferrogate Transit security incident two years prior, now a recognized marker in Pilsen Veil community",
+    "distinguishing_marks": [
+      "Faint scarring pattern across left cheek from Ferrogate Transit incident, approximately 8cm in length, pale and linear, gives the appearance of intentional ritualism or acceptance",
+      "Thermal-reactive hair pigment creates a constantly shifting visual signature"
+    ],
+    "visible_augmentations": "Geneware-patterned irises with geometric grid overlay (most noticeable when he focuses intently). Thermal-reactive pigment woven into hair structure. Projector harness worn across chest — matte black reinforced polymer with embedded lens arrays and power cells, frequently mistaken for weapon rig at first glance.",
+    "posture_movement": "Restless energy; fidgets with harness straps when thinking. Moves with practiced verticality — comfortable on scaffolding and rooftops. Leans forward in conversation when engaged, leans back when dismissive. Eyes constantly scan surfaces and walls. Walks with slight impatience, as if the city is moving too slowly around him.",
+    "clothing_style": "Utilitarian layers in muted Tier 4 streetwear — charcoal compression shirt under an oversized, oil-stained grey utility jacket with multiple pockets and cable loops. Cargo pants in weathered black synthetic with paint splatters and thermal burns. Reinforced climbing boots, scuffed. Minimal jewelry except a worn brass lighter he spins obsessively. Occasionally sports a sleeveless denim vest over the harness when preparing for extended outdoor work."
+  },
+  "image_prompt": "A tall, lean 27-year-old male of mixed West African and Samoan heritage with warm brown skin and sharp cheekbones. He has shoulder-length black locs dipped in thermal-reactive pigment shifting between rust red and pale gold. His eyes are augmented with a faint geometric grid pattern overlaid on deep brown irises. A subtle pale scar traces across his left cheek. He wears a matte black projector harness across his chest with embedded lens arrays, layered under an oversized oil-stained grey utility jacket and weathered black cargo pants. Restless posture, leaning slightly forward. Setting: urban night in Pilsen Veil, Chicago — crumbling brick walls and neon signage reflected in rain-slicked pavement. Moody cyberpunk aesthetic, film noir lighting with cyan and amber accent lighting. His thermal-reactive hair glows subtly gold under warm street light. Professional character portrait, highly detailed, photorealistic --ar 2:3 --v 6"
 }

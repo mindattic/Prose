@@ -190,5 +190,24 @@
     "Glass",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Southern African / Scandinavian / Latin American",
+    "height_cm": 173,
+    "weight_kg": 62,
+    "build": "Lean and angular with defined shoulders and long limbs; posture suggests constant motion even at rest. Zero excess adipose — the build of someone who moves for work and doesn't accumulate.",
+    "hair_color": "Currently deep copper with natural iridescence; changes weekly",
+    "hair_style": "Textured and deliberately styled to catch light; usually pinned or wrapped in ways that frame their face asymmetrically",
+    "hair_length": "Medium (shoulder-length when down)",
+    "eye_color": "Color-reactive iris modification: shifts between warm gold and deep violet depending on ambient light and emotional state; pupils respond to mood and environment",
+    "skin_tone": "Deep blue-black with natural gloss, enhanced monthly with bioluminescent Dresdan-style topcoat that gives the skin a subtle luminescence in low light",
+    "complexion": "Smooth, intentionally maintained skin with high contrast against the bioluminescent layer. Immaculate grooming; the kind of person who treats their appearance as a daily practice, not an accident. Expressive face with sharp cheekbones and a precise mouth.",
+    "distinguishing_marks": [
+      "Faint subdermal scarring along the left wrist where the NFC chip was installed — visible only in certain light, looks like a thin silver line beneath the skin."
+    ],
+    "visible_augmentations": "Color-reactive irises are immediately noticeable — they shift from gold to violet based on lighting and mood, creating an uncanny depth. Bioluminescent dermal topcoat gives the skin a subtle glow in dim light, most visible on shoulders and cheekbones. Left wrist shows minimal scarring from NFC chip installation.",
+    "posture_movement": "Hands are almost never still — gesturing while speaking, rearranging fabric, illustrating a point with precision. They move with deliberate grace, economical and purposeful. Standing posture is relaxed but alert; they appear to be observing while talking. When listening, they lean in slightly.",
+    "clothing_style": "Intentionally eclectic and curated — always wearing pieces from their own stall or pieces they've modified. Favors asymmetrical silhouettes, unexpected fabric combinations, and layering that creates visual depth. Tends toward jewel tones and metallics. Accessories are always statement pieces: custom jewelry, dyed wraps, pins that double as fasteners and art. Tier 3-4 quality materials elevated through styling and personal modification. Everything signals taste and intention rather than wealth."
+  },
+  "image_prompt": "Nonbinary fashion vendor with deep blue-black bioluminescent skin and copper hair, color-reactive irises shifting gold-to-violet, lean angular build, expressive hands mid-gesture, wearing asymmetrical jewel-tone layered clothing with custom metallic accessories, standing in a vibrant market stall surrounded by pinned fabrics and geneware displays, overhead market lighting catching on bioluminescent skin and copper hair, moody cyberpunk aesthetic, shallow depth of field, high contrast, cinematic lighting, 2226 GLMZ streetwear style, --ar 2:3 --v 6"
 }

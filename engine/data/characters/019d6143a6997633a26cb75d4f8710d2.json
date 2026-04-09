@@ -9,10 +9,10 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Riot Suppression Specialist, Meridian 88 Metro Police",
+  "role": "Riot Suppression Specialist, GLMZ Metro Police",
   "age": 52,
   "status": "active",
-  "location": "The Rampart, Meridian 88, near Kedzie and Division",
+  "location": "The Rampart, GLMZ, near Kedzie and Division",
   "description": "Petros Waweru-Gjakova is the kind of man who seems to occupy more physical space than his actual dimensions justify. He is Kenyan-Albanian in the specific combination that produced a dark-skinned, grey-haired, thick-necked man with a bearing that other officers describe variously as 'a wall that decided to walk around' and 'the most tired person in any room.' At fifty-two he has more scar tissue than most people have skin on their hands — three decades of riot deployment have left a tactile record along both forearms, across his collarbone, bisecting his left eyebrow. He declined the offer of cosmetic scar-smoothing twice. The third time they stopped offering.\n\nPetros is not what people expect when they expect a riot specialist. He is not cruel, not performatively hard, not interested in displays of dominance. He has seen what crowd dynamics become when force is deployed theatrically, and he has been cleaning it up since before most of his unit were born. He runs the Rampart's suppression unit like a disaster-management operation — all contingency, all de-escalation protocols layered beneath the crowd-control hardware — and he is deeply, privately uncertain that the job as it is currently structured is achieving anything worth the cost. He goes to the Rampart's unit shrine — a battered E.L.F. node dedicated to something the older officers call the Crowd — every deployment morning and he does not know if it's prayer or apology.",
   "psychology": {
     "facet_weights": {
@@ -59,10 +59,10 @@
     "A junior officer under his command has filed an excessive force report against a peer; Petros is the unofficial pressure point on whether the report goes anywhere",
     "He has been approached by someone claiming to be a civilian oversight researcher who wants the Hough deployment footage — and he's not sure if they're legitimate or if Command sent them to find out what he filed"
   ],
-  "narrative_function": "Moral weight on policing and crowd control; a figure who can authorize suppression or quietly allow people through; source of historical knowledge about Meridian 88's protest and civil unrest history; potential ally for people working against institutional violence",
+  "narrative_function": "Moral weight on policing and crowd control; a figure who can authorize suppression or quietly allow people through; source of historical knowledge about GLMZ's protest and civil unrest history; potential ally for people working against institutional violence",
   "augmentations": "Military-grade joint reinforcement (knees and shoulders — medical necessity after a crowd crush incident in 2187); impact-dampening subdermal mesh across torso (department-issue for riot specialists); no cosmetic mods",
   "daily_life": "Runs unit readiness training at the Rampart most mornings; attends interdepartmental deployment briefings he finds increasingly political; spends evenings at a community hall in Hough Reclamation, playing chess badly with neighborhood elders who knew the area before the last reclamation push.",
-  "affiliation": "Meridian 88 Metro Police — Civil Response Division",
+  "affiliation": "GLMZ Metro Police — Civil Response Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -178,12 +178,34 @@
   ],
   "related_entities": [
     "The Rampart",
-    "Meridian 88",
+    "GLMZ",
     "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
     "Stratum",
     "The Pure Hand",
     "Hough Reclamation",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "East African / Southeastern European (Kenyan / Albanian)",
+    "height_cm": 188,
+    "weight_kg": 104,
+    "build": "Heavy, barrel-chested with the dense musculature of someone who has spent thirty years bearing weight — not bodybuilder definition, but functional mass. Shoulders and neck thickened by reinforced joint infrastructure. Carries weight forward slightly, a stance that distributes load across reinforced knees.",
+    "hair_color": "Steel grey with dark undertones",
+    "hair_style": "Short, military-standard cut, neat without vanity",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, slightly yellowed at the sclera from age and chemical exposure",
+    "skin_tone": "Deep brown with ashy undertones from accumulated scar tissue and subcutaneous impact mesh creating a mottled, weathered appearance",
+    "complexion": "Heavily lined face — deep creases around the eyes and mouth suggest more frowning than smiling. Jaw prominent and squared. Skin textured and rough, bearing the tactile history of three decades of deployment. No artificial smoothing or cosmetic intervention.",
+    "distinguishing_marks": [
+      "Ragged scar bisecting his left eyebrow, interrupting the brow line — pale tissue from a crowd-control baton strike circa 2195",
+      "Network of crisscrossing pale scars across both forearms, visible from wrist to elbow, with darker impact-pattern marks from riot shield contact",
+      "Long horizontal scar across left collarbone, thick and ropey, from a crush incident in 2187 — the same incident that necessitated joint reinforcement",
+      "Scattered smaller circular burn marks across inner left forearm — chemical exposure, riot dispersal residue"
+    ],
+    "visible_augmentations": "None immediately visible. The joint reinforcement at knees and shoulders is internal (medical-necessity grade, not cosmetic). Impact-dampening subdermal mesh across torso creates a subtle textural irregularity under clothing at chest and abdomen — a faint geometric pattern visible only under tight fabric or in specific light. The wear patterns of his uniform show slight reinforcement at shoulder and knee joints.",
+    "posture_movement": "Moves with deliberate, economical weight distribution — a man conscious of his mass and of how it affects space around him. Stands slightly forward-leaning, shoulders back, creating an impression of imminent readiness rather than relaxation. His stride is controlled and even, knees tracking carefully (the reinforcement surgery left him with a slight stiffness he refuses to acknowledge). Does not gesture expansively; movements are minimal and precise. His resting expression tends toward exhaustion — eyes slightly hooded, mouth in a neutral line that reads as either contemplation or disapproval.",
+    "clothing_style": "Standard GLMZ Metro Police tactical uniform off-duty: charcoal riot suppression fatigues (department-issued, Tier 3 grade material, maintained meticulously), reinforced black boots scuffed from repeated deployment, simple grey undershirt. Off-duty: practical Tier 3 civilian wear — plain cotton shirts in dark colors, heavy canvas work pants, worn leather jacket with department insignia removed. No jewelry except a thin steel wedding band worn smooth. His uniform always shows the wear of actual use rather than presentation; equipment scarred from repeated deployment rather than pristine. Watches the same older model chronometer (non-smart, mechanical backup). Does not maintain the groomed appearance of officers interested in promotion."
+  },
+  "image_prompt": "A worn, heavily-scarred East African-Albanian man in his early fifties, steel-grey hair in military cut, deep brown skin weathered and textured by thirty years of riot deployment. Dark brown eyes carry exhaustion. Ragged scar bisects left eyebrow. Forearms crisscrossed with pale scars from impact trauma. Broad-shouldered, barrel-chested, 188cm tall with reinforced joint infrastructure visible in careful posture. Dressed in worn charcoal tactical fatigues and scuffed black boots, standing with deliberate weight distribution — economical, controlled movement. Subdermal impact mesh creates subtle geometric texture under tight fabric at chest. Resting expression reads as tired contemplation. Photorealistic, gritty cyberpunk aesthetic, overhead police station lighting casting sharp shadows, worn interior of urban precinct with aging tactical equipment behind him, 2226 GLMZ Great Lakes Metropolitan Zone, hyper-detailed skin texture and scar tissue, --ar 2:3 --v 6"
 }

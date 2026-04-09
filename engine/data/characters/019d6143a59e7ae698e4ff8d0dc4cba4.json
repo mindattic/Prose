@@ -242,5 +242,25 @@
     "Needle",
     "Glass"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Zulu-Polish diaspora blend)",
+    "height_cm": 168,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and substantial, with the forward-rounded posture of someone who has spent decades hunched over precision work; strong core and forearms, softer through the middle from age and sedentary labor",
+    "hair_color": "Dark charcoal with silver temples and threading",
+    "hair_style": "Close-cropped, neat, practical; temples show progressive silvering",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, partially obscured by amber-tinted magnification implant rings",
+    "skin_tone": "Very dark complexion with warm undertones, consistent with West African heritage",
+    "complexion": "Lined face showing age with dignity; deep crow's feet from decades of squinting; skin texture unlined elsewhere, well-maintained; no visible blemishes or breakouts",
+    "distinguishing_marks": [
+      "Cosmetic iridescent green scale-patterning on the backs of both hands, faint and deliberately understated, described by the wearer as a relic of younger optimism",
+      "Fine white threading of old scars across both palms consistent with needle-prick accumulation over fifty years of sewing work"
+    ],
+    "visible_augmentations": "Twin magnification ocular rings mounted over eyes—amber-tinted glass bezels that whir audibly during focus adjustment, giving a slight owlish quality; daily-rotated micro-stim patches visible on both wrists, typically flesh-colored or neutral-tone adhesive strips beneath rolled sleeves",
+    "posture_movement": "Carries herself with deliberate dignity despite spinal curvature from occupational posture; walks with a slight forward lean; hands are in near-constant motion—pinching, pulling, and fingering imaginary fabric even at rest; movements are economical and precise, never wasted",
+    "clothing_style": "Practical Tier 3-4 working aesthetic: well-maintained but unpretentious. Typically wears a fitted cotton work dress or tunic in neutral tones (charcoal, taupe, dark indigo) with a fitted linen apron bearing multiple deep pockets worn over the top. Wrists typically bare or wearing the stim patches. Feet in worn but expertly maintained leather slip-ons. No jewelry except a single thin silver band on her left ring finger. Her own clothes are impeccably mended—a living advertisement of her craft."
+  },
+  "image_prompt": "Portrait of Abeke Soriano-Dlamini, 52-year-old seamstress in cyberpunk Hamtramck Enclave, very dark skin, short silver-threaded charcoal hair, dignified posture despite decades of sewing work. Wearing fitted neutral work dress with deep linen apron. Distinctive amber-tinted magnification ocular rings mounted over dark eyes, whirring softly. Faint iridescent green cosmetic scale-patterning on backs of both hands. Micro-stim relief patches visible on wrists. Crowded six-by-eight sewing stall background: bolts of fabric, hanging half-finished coats, spools of thread, salvaged sewing-machine parts forming makeshift shrine. Soft warm overhead lighting from shop lamp. Hands in mid-gesture, fingers perpetually moving. Photorealistic, dignified, weathered but meticulous. 2226 near-future working-class texture. Shallow depth of field focusing on face and hands. --ar 2:3 --v 6"
 }

@@ -59,7 +59,7 @@
     "The back-channel strike deal paperwork has been found by a young labor archivist who is now asking questions; Roksana must decide whether to confess or suppress",
     "A Ferrogate Transit executive has quietly approached her to consult on an internal labor dispute, offering a sum that would meaningfully change her financial situation"
   ],
-  "narrative_function": "Labor history source; advocate and quest-giver for residents dealing with corponation benefit disputes; provides connections to transit worker networks across Meridian 88; represents the grinding institutional injustice of retirement-tier poverty",
+  "narrative_function": "Labor history source; advocate and quest-giver for residents dealing with corponation benefit disputes; provides connections to transit worker networks across GLMZ; represents the grinding institutional injustice of retirement-tier poverty",
   "augmentations": "Bioluminescent subdermal tracery on forearms (cosmetic, aging, pulses blue under stress); cochlear audio enhancer (left ear, Ferrogate-issued, they dispute responsibility for maintenance); reading lens implant (right eye, consumer grade)",
   "daily_life": "Wakes to transit reports out of habit, annotates them in a physical notebook, then opens her door by 0800 for whoever needs help. Spends afternoons at the Ferrogate depot-side memorial wall, maintaining the handwritten additions to the official list of workers injured in the 2178 strike that the company's plaque omits.",
   "affiliation": "Ferrogate Transit Pensioners Association; The Shelf Residents Collective; informal affiliation with multiple labor grievance networks",
@@ -250,5 +250,27 @@
     "The Gradient Compact",
     "Silver"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Russian / Indigenous Aleut",
+    "height_cm": 158,
+    "weight_kg": 61,
+    "build": "Compact and dense, shoulders still squared from decades of standing across negotiating tables; no excess weight, wiry musculature beneath aging skin that suggests physical work rather than gym discipline",
+    "hair_color": "Silver-grey with darker roots, natural aging pattern",
+    "hair_style": "Structured wrap pinned with a 2161 Ferrogate union badge (old design, pre-merger); tightly secured, practical, worn as deliberate identity marker",
+    "hair_length": "Medium (wrapped)",
+    "eye_color": "Brown, natural; right eye bears a faint consumer-grade reading lens implant visible as subtle prismatic refraction at certain angles",
+    "skin_tone": "Deep brown with warm undertones, weathered from seventy-one years and outdoor maintenance work at the depot memorial wall",
+    "complexion": "Lined face with pronounced forehead creases and deep nasolabial folds from decades of sustained intensity; skin condition good for her age, well-maintained; strong jawline, high cheekbones",
+    "distinguishing_marks": [
+      "Bioluminescent subdermal tracery running across both forearms in delicate branching patterns, blue in color, barely visible at rest but pulses noticeably brighter when stress elevates blood pressure",
+      "Calluses on right hand palm and fingers from decades of handshakes and physical labor",
+      "Small burn scar on left inner wrist from 2156 transit depot incident, approximately 3cm, pale and faded",
+      "Surgical scar behind left ear where cochlear audio enhancer was installed, thin and well-healed but visible if hair is pulled back"
+    ],
+    "visible_augmentations": "Bioluminescent forearm tracery (aging, blue, stress-reactive); surgical scar behind left ear indicating cochlear implant; subtle prismatic lens visible in right eye under direct light. All augmentations show age and functional wear rather than corpo gloss.",
+    "posture_movement": "Moves with purposeful quickness despite age; walks from the core outward, grounded stance, no shuffling. Hand gestures are economical and emphatic—decades of negotiating table authority embedded in her physical grammar. Her default expression hovers between attentiveness and irritation. She makes direct eye contact and holds it.",
+    "clothing_style": "Tier 4 working-class, carefully maintained: heavy cotton union-embroidered work shirt (vintage Ferrogate Transit colors, faded), dark practical trousers with cargo pockets, sturdy reinforced shoes suitable for standing all day at the memorial wall. Always wears the 2161 union badge pinned to her wrap. No visible corp branding. Clothing is functional, clean, and chosen to signal allegiance rather than fashion. Small personal touches: a hand-stitched patch on her left shoulder commemorating the 2178 strike."
+  },
+  "image_prompt": "Cyberpunk 2226, portrait of elderly African-Russian-Aleut woman, age 71, compact frame with silver-wrapped hair pinned with union badge, deep brown weathered skin, intense gaze, blue bioluminescent tracery pulsing faintly on forearms, visible surgical scar behind left ear, worn Ferrogate Transit work shirt with faded union colors, cargo pants, standing in industrial setting near old transit depot, warm tungsten lighting with blue accent light highlighting forearm bioware, grounded documentary realism, character study, union leader dignity, slight furrow of righteous anger, high-contrast lighting, The Shelf precinct industrial grit --ar 2:3 --v 6"
 }

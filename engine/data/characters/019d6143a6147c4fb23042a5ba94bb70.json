@@ -203,5 +203,26 @@
     "The Pure Hand",
     "Glass"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Northern European / East Asian",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Solidly compact without visible bulk — the build of someone who trains for function rather than appearance. Broad shoulders, economical muscle distribution, minimal body fat. Moves like a person accustomed to carrying weight efficiently.",
+    "hair_color": "Dark brown, graying at the temples",
+    "hair_style": "Close-cropped, military precision, no styling product",
+    "hair_length": "Short",
+    "eye_color": "Gray-brown, unremarkable",
+    "skin_tone": "Medium, weathered — the complexion of someone who spends time outdoors in the Great Lakes climate without concern for maintenance",
+    "complexion": "Smooth, clean-shaven, minimal scarring on the face. Expression naturally neutral. The kind of face that does not arrest attention — this is intentional and cultivated.",
+    "distinguishing_marks": [
+      "Thin white scar on the left knuckle from a decade-old surveillance job in Detroit.",
+      "Callusing across both hands consistent with daily combat training and reinforced skeletal work.",
+      "Small, faded burn mark on the inside of right wrist — cigarette, self-inflicted, 2195, during the trafficking case. Never discussed."
+    ],
+    "visible_augmentations": "None immediately apparent. His handshake carries a subtle heaviness — reinforced bones in hands and forearms create a density that registers as presence rather than threat. The rest is subcutaneous: adrenal regulator maintaining baseline calm, optical overlay dormant until needed, subvocal communicator embedded beneath the jawline with no external indicators.",
+    "posture_movement": "Upright, economical gait, never hurried. Stands with weight distributed evenly, hands visible and relaxed. Eyes move constantly but without apparent anxiety — threat assessment is passive, automatic. Enters rooms slowly, positions himself with clear sight lines. Never fidgets. Never raises his voice. The physical language is: I have considered all outcomes.",
+    "clothing_style": "Tier 3 professional — clean, well-maintained, deliberately forgettable. Dark slacks or charcoal jeans. Neutral-toned button-up shirts (cotton, never synthetic — easier to move in, easier to clean). A grey wool coat for outdoor work, no logos, no augmentation bling. Shoes are quality leather boots, broken in, maintained. Everything is functional, nothing is fashionable. The aesthetic communicates: I am someone you can trust to handle the unglamorous work."
+  },
+  "image_prompt": "Portrait of a 49-year-old East Asian-Northern European man, cyberpunk 2226, professional field operative, average height, solidly built, dark hair graying at temples cut military-short, gray-brown unremarkable eyes, weathered medium complexion, clean-shaven. Wearing charcoal slacks and a neutral grey button-up shirt under a grey wool coat, quality leather boots. Standing in profile against a window with sight lines across an urban residential street, neon rain-wet pavement below, Chicago brutalist architecture in background. Hands visible at sides, steady posture, baseline calm expression. Subtle optical overlay glow barely visible in left eye. Moody low-key lighting, overcast cyberpunk atmosphere, professional security operative aesthetic. Hyperrealistic, grounded, no flashy augmentations visible. --ar 2:3 --v 6"
 }

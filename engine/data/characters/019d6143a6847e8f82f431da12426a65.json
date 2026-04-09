@@ -9,7 +9,7 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Riot Suppression Specialist, Meridian 88 Metro Police",
+  "role": "Riot Suppression Specialist, GLMZ Metro Police",
   "age": 34,
   "status": "active",
   "location": "Fort Anchor, The Rampart deployment zone, near Western and Chicago Ave",
@@ -63,7 +63,7 @@
   "narrative_function": "Authority figure and moral obstacle; can become reluctant ally if players demonstrate they share her concern for civilian protection; source of Metro Police intel and internal politics; represents the complicated humanity inside institutions",
   "augmentations": "Subdermal impact mesh (torso and forearms, Metro Police-issued), geneware patterned irises (amber/violet stress-reactive), bone-density microlattice in wrists and knuckles (elective, paid out-of-pocket)",
   "daily_life": "Rotates between three-day deployment cycles at Fort Anchor and stand-down periods in her shared quarters at the Rampart barracks; spends stand-down time lifting, maintaining her gear, and making offerings to the E.L.F. she believes inhabits her department-issue riot shield.",
-  "affiliation": "Meridian 88 Metro Police, Riot Control Unit 7",
+  "affiliation": "GLMZ Metro Police, Riot Control Unit 7",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -260,5 +260,25 @@
     "Copper",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 183,
+    "weight_kg": 91,
+    "build": "Densely muscular, powerfully proportioned—broad shoulders and thickened forearms from years of riot control work. No excess adipose; every kilogram is functional mass. Her frame reads as deliberate engineering rather than natural athleticism.",
+    "hair_color": "Natural black with copper filament threading",
+    "hair_style": "Undercut—sides shorn to 3mm, top kept at 4-5cm and combed back, the copper threads woven through the longer sections in geometric patterns",
+    "hair_length": "Short on sides, medium on top",
+    "eye_color": "Geneware-modified irises: amber baseline, cycling to deep violet under stress or elevated cortisol",
+    "skin_tone": "Mahogany—warm, deep brown with underlying reddish undertone",
+    "complexion": "Weathered by years of exposure to dispersal agents and environmental stress. Skin is clear but thick-textured. Her left jaw and collarbone bear prominent scorch scarring in cross-hatched patterns—old thermal weapon residue, poorly healed, never treated cosmetically. The scars pull slightly when she clenches.",
+    "distinguishing_marks": [
+      "Extensive thermal scarring along left jawline and extending down left collarbone in overlapping cross-hatch pattern, approximately 12cm x 8cm, silvered and slightly raised",
+      "Small, precise tattoo on inner right wrist: a levee cross-section in black ink (personal symbol, applied herself during a deployment stand-down)"
+    ],
+    "visible_augmentations": "Subdermal impact mesh visibly ridges under her skin on forearms and torso when she tenses—faint geometric grid pattern becomes apparent under strong light. Her knuckles are subtly oversized, joint architecture altered by bone-density microlattice (visible only to someone who knows what to look for). The geneware irises are immediately noticeable: their color-shift is smooth but uncanny, and they catch light differently than natural eyes.",
+    "posture_movement": "Off-duty: moves with deliberate slowness, each motion controlled and economical, as though constantly managing her own mass. Shoulders slightly rounded, as though the weight of her frame is always present in her awareness. On-duty: shifts into geometric precision—spine vertical, weight distributed across a wider stance, all movement purposeful and angular. Her head turns from the neck rather than the shoulders. She doesn't fidget.",
+    "clothing_style": "On-duty: GLMZ Metro Police Riot Control Unit 7 tactical gear—ballistic mesh undershirt (gray), reinforced duty pants (charcoal, multiple cargo pockets), steel-toe boots (scuffed, maintained). Raid jacket over torso (navy with reflective piping and unit insignia). Helmet stores clipped to equipment belt. Off-duty: plain, durable clothing—black or gray t-shirts (usually oversized), worn canvas work pants, steel-toed boots (kept polished). A faded Rampart barracks hoodie in charcoal. She owns nothing fashionable. Everything is functional, tier 3-4 utilitarian."
+  },
+  "image_prompt": "Cyberpunk character portrait, photorealistic, Onyeka Halvorsen-Traoré, 34-year-old female riot suppression officer, 6 feet tall, densely muscular build, mahogany skin with visible thermal scarring cross-hatched along left jawline and collarbone, black hair with copper filament threading woven through short undercut, geneware iris eyes cycling amber-violet, subdermal impact mesh ridging visible on forearms under skin, wearing GLMZ Metro Police tactical gear—gray ballistic mesh, charcoal reinforced pants, navy raid jacket with reflective piping, steel-toe boots polished and scuffed, standing in neutral posture with geometric precision, controlled and purposeful bearing, Fort Anchor deployment zone aesthetic in background, cool industrial lighting, slight glow from augmentation interfaces, photographic realism, sharp focus on face and scarring detail, serious expression, no warmth --ar 2:3 --v 6"
 }

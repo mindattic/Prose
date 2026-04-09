@@ -267,5 +267,25 @@
     "Ringo Corponation",
     "Lazarus IDP-1 'Teeth'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Central African / Scandinavian",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Broad-shouldered and solid, the muscular definition of his youth softened into functional mass — a body that once moved athletically and now moves with deliberate, economical precision. Chest and shoulders still carry the architecture of old strength.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Worn slightly longer on top, faded at the sides; perpetually slightly disheveled despite clear effort at grooming",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, natural",
+    "skin_tone": "Light brown with warm undertones, reflecting Central African and Northern European heritage",
+    "complexion": "Strong jaw softening with age, kept sharp by a trimmed beard maintained with architectural precision — dark and flecked with early gray. Skin clear, well-maintained. Under-eye shadows from chronic poor sleep are subtle but present.",
+    "distinguishing_marks": [
+      "Bioluminescent pigmentation across both forearms — deep violet, reactive to low light, forms organic branching patterns like neural pathways or lightning; always visible in club environments",
+      "Fine network of barely-visible scarring on the back of both hands — from years of precise haptic interface work, barely noticeable except under bright light"
+    ],
+    "visible_augmentations": "Bioluminescent forearm patterns (violet, low-light reactive); haptic-feedback gloves worn during DJ sets — sleek black synthetic with subtle circuitry visible at the wrist bands. The gray-market emotional-state reader implant is subcutaneous and invisible, but his behavior at the decks — the uncanny read of crowd state — hints at its presence.",
+    "posture_movement": "Moves with focused economy; at rest, he tends toward stillness rather than fidgeting. When working at the decks, his hands move with almost meditative precision — each gesture economical and intentional. Off-duty, there's a subtle weariness in how he carries himself, a tightness in the shoulders. When listening to music, his eyes half-close and his large hands drift slightly, as though conducting invisible air.",
+    "clothing_style": "Expensive secondhand finds, carefully maintained as though new — vintage designer pieces, mostly minimalist: well-cut black or charcoal wool, pristine vintage technical fabrics, vintage leather that's been treated and reconditioned. His shoes are always immaculate, usually understated high-end brands from three to five years prior. Dresses like someone who has made a deliberate choice to invest in quality over quantity, with no visible logos or status signaling. At The Anechoic, often adds a vintage linen shirt worn unbuttoned over a fitted tank to keep his forearm pigmentation visible. A single silver chain, thin and unadorned, worn constantly."
+  },
+  "image_prompt": "Portrait of a 37-year-old man of Central African-Scandinavian heritage, medium height with broad shoulders and solid build, light brown skin, dark eyes, dark trimmed beard with early gray. Bioluminescent violet pigmentation glowing faintly under both forearms in soft blue club lighting, branching like neural pathways. Wearing vintage black designer clothing, pristine and carefully maintained. Standing in a dark club environment with moody purple and blue lighting, his hands positioned near mixing equipment with subtle haptic-feedback gloves visible. Tired but focused expression, half-closed eyes as if listening intently. High-end fashion photography, cyberpunk aesthetic, professional portrait, dramatic low-key lighting, shallow depth of field. Photograph by Anton Corbijn or similar. --ar 2:3 --v 6"
 }

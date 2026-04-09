@@ -13,7 +13,7 @@
   "age": 28,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
-  "description": "Halima Zakharov-Boateng is athletic and fluid, the kind of body that suggests either dancer or fighter — and in Meridian 88, the distinction is academic. At 28, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a fixer out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHalima Zakharov-Boateng operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Halima Zakharov-Boateng is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 28, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a fixer out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHalima Zakharov-Boateng operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.11,
@@ -279,9 +279,31 @@
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Unfinished Theorem",
     "Slagworks Industrial"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Russian / West African",
+    "height_cm": 182,
+    "weight_kg": 78,
+    "build": "Athletic and lean with defined musculature — dancer's grace combined with fighter's economy of movement. No excess weight, all functional.",
+    "hair_color": "Dark brown, naturally",
+    "hair_style": "Short, kept practical and low-maintenance. Occasionally stubbled at the edges where he's trimmed it himself.",
+    "hair_length": "Short",
+    "eye_color": "Cybernetic — chrome iris rings with variable luminescence; natural eye color (dark brown) visible around the augmentation",
+    "skin_tone": "Warm medium brown with slight olive undertone from mixed heritage",
+    "complexion": "Sharp facial features with high cheekbones and a slightly asymmetrical jaw that gives an unfinished quality — not conventionally handsome but striking. Minimal facial hair, kept clean. Skin shows minor scarring around the cybernetic eye installation at orbital bone. Sleep deprivation leaves faint darkness under eyes but he's adapted enough that it doesn't show dramatically.",
+    "distinguishing_marks": [
+      "Thin scar running from left temple to cheekbone, approximately 8cm, partially concealed by the chrome iris ring of his left cybernetic eye",
+      "Burn scar on right forearm (approximately 12cm) partially covered by subdermal armor plating — visible only at wrist where chrome meets skin",
+      "Minor puckered scar tissue at left shoulder where armor plating was installed, visible only without clothing",
+      "Tool marks and micro-scarring across both forearms where military surplus armor was retrofitted — intentionally left unpolished"
+    ],
+    "visible_augmentations": "Subdermal military-grade armor plating across torso and forearms — scratched, with partially-obscured serial numbers filed down. Visible as raised metallic sections beneath skin, with visible seams and edges. Chrome iris rings surrounding cybernetic eyes. The plating is obviously aftermarket and obviously not corpo-clean work.",
+    "posture_movement": "Moves with precision and minimal wasted motion — body always positioned for lateral shift or rapid response. Walks quietly despite height. Sits with spine straight, weight forward on thighs. Eyes track movement even when body is still. Rests rarely and incompletely — appears coiled even when stationary.",
+    "clothing_style": "Tier 3-4 practical wear. Black reinforced cargo pants with utility webbing (worn brands, functional). Sleeveless or short-sleeved tops that expose the arm plating deliberately — a display of capability and commitment. Dark colors dominating (charcoal, black, deep blue). Jackets are oversized and layered for utility and concalment. Heavy boots — scuffed, rebanded multiple times. No visible branding or corpo insignia. Clothing shows wear consistent with active work rather than poverty."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 28-year-old mixed-heritage male fixer, athletic lean build, dark brown skin with warm undertones, sharp striking features with asymmetrical jaw, short dark hair. Striking cybernetic eyes with glowing chrome iris rings and thermal overlay capability. Visible subdermal military-grade armor plating across torso and forearms, scratched and worn with filed serial numbers, metallic surfaces catching light. Thin scar running left temple to cheekbone. Nocturnal character bearing — alert, coiled posture. Wearing sleeveless dark tactical top exposing arm augmentations, heavy utility cargo pants, scuffed boots. Old Harbor setting, shadowy shipping container background, neon reflected off wet pavement, cool blue and amber lighting, high contrast, gritty cyberpunk noir aesthetic, photorealistic with slight digital artifact quality, cinematic composition, intricate detail on metal augmentations --ar 2:3 --v 6"
 }

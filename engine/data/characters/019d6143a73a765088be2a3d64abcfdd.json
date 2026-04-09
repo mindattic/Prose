@@ -232,5 +232,26 @@
     "Gravimetric Collapse Charge GCC-9",
     "The Pale Mile"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Portuguese-Brazilian",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid without excess fat; decades of manual instrument-building and performance have left her muscular through the chest and back, with a slightly thickened waist suggesting age and sustained physicality rather than decline",
+    "hair_color": "Permanent interference-pattern silver with violet undertones",
+    "hair_style": "Shaved close to the scalp except for a single thick braid extending down the back, worn loose or wrapped around itself",
+    "hair_length": "Shaved except for long braid",
+    "eye_color": "Deep brown, naturally warm; cochlear amplifiers give them a barely perceptible crystalline quality at certain angles",
+    "skin_tone": "Deep amber with warm undertones, smooth and well-maintained despite age",
+    "complexion": "Lined around the eyes and mouth from fifty-two years of intense listening and emotional expression; skin unmarked by acne or significant scarring; naturally expressive face that settles into a neutral contemplative state",
+    "distinguishing_marks": [
+      "Bioluminescent constellation tattoos in pale blue across both collarbones that pulse softly when performing or emotionally activated",
+      "Additional bioluminescent patterns scattered across shoulders and upper back in spiraling geometric designs, glowing faintly in darkness",
+      "Fine tracery of old scars on the inside of both forearms from early tattoo work and experimental augmentation installations"
+    ],
+    "visible_augmentations": "Sub-dermal vibration emitter nodes visible as faint metallic glints along each finger, most obvious on the knuckles and palm-side; subtle neural interface port barely visible at the base of her skull beneath the close-shaved hair; cochlear amplifiers create minimal external change but her ear cartilage is slightly modified",
+    "posture_movement": "Moves with economical grace, unhurried and deliberate; walks with weight distributed through her center, shoulders back but not rigid; hands often hang at rest with fingers slightly curled, as if listening; when seated, she tends to occupy space fully without tension; her gaze lingers on things others miss — acoustic details in environments",
+    "clothing_style": "Tier 3-4 working-class eclectic; favors layered, tactile fabrics: heavy linen shirts dyed indigo or charcoal, worn leather vests salvaged and relined, loose canvas pants with deep pockets for equipment; sturdy unmarked boots with worn soles; no corporate branding or luxury indicators; jewelry limited to simple metal rings on most fingers (custom-made, likely by trade with other artisans); occasionally wears a long wool shawl dyed with natural dyes, treating it as both practical and ceremonial"
+  },
+  "image_prompt": "portrait of a 52-year-old West African-Portuguese woman with deep amber skin and close-shaved silver hair with one thick back braid, intense brown eyes, broad shoulders, large calloused hands with subtle metallic implants glinting on fingers, pale blue bioluminescent constellation tattoos glowing softly across collarbones and shoulders, wearing layered indigo linen and worn leather vest, standing in a dim underground studio surrounded by salvaged industrial sound equipment and magnetic tape spools, moody atmospheric lighting with cool blues and warm practical work lights, introspective and reverent expression, cyberpunk sound artist aesthetic, cinematic depth, detailed hands, --ar 2:3 --v 6"
 }

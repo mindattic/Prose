@@ -182,5 +182,25 @@
     "Pellucid Systems",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Serbian",
+    "height_cm": 165,
+    "weight_kg": 52,
+    "build": "Lean and wiry with visible muscle definition in shoulders and forearms from climbing and repetitive fine motor work; no excess body fat; moves with the compressed tension of someone perpetually ready to move fast",
+    "hair_color": "Natural black with artificial deep arterial red in topknot section",
+    "hair_style": "Shaved head except for a 8cm topknot worn centered, recently re-dyed",
+    "hair_length": "Shaved / topknot medium",
+    "eye_color": "Dark brown, subretinal augmentation creates faint metallic sheen under low light",
+    "skin_tone": "Deep warm brown with undertones reflecting West African heritage",
+    "complexion": "Sharp angular features — defined cheekbones, prominent jawline, narrow nose. Skin is clear but weathered from outdoor work and irregular sleep. No grooming excess; functionally clean",
+    "distinguishing_marks": [
+      "Linear scar above left eyebrow, approximately 4cm long, pale and slightly raised, acquired six months prior from fence impact",
+      "Subcutaneous scarring on right palm and inner forearm from claw installation and maintenance"
+    ],
+    "visible_augmentations": "Retractable claws on right hand — matte black, metallic-finish, approximately 3.5cm extended length, visible as subtle bulges along knuckles when retracted; faint crystalline lens distortion in pupils from subretinal low-light enhancement, most noticeable in shadows",
+    "posture_movement": "Perpetually forward-leaning, weight on balls of feet even when standing still. Moves in economical bursts rather than smooth transitions. Head turns sharply; eyes scan surfaces and rooflines before looking at people. Resting expression is alert and slightly skeptical. Fidgets with small objects — paint caps, wire, fabric edges",
+    "clothing_style": "Tier 4 utilitarian — close-fitting dark synthetic layers, often black or charcoal with matte finishes to reduce reflection. Cargo pants with reinforced thigh and calf pockets, climbing harness worn as crossbody strap even indoors. Worn Ferrogate Transit utility jacket (stolen or salvaged). No corporate branding. Rubber-soled climbing shoes, always laced tight. Small tool pouch clipped to belt. Paint stains on fingers and under fingernails in multiple colors — current palette heavy on deep reds and silvers"
+  },
+  "image_prompt": "19-year-old Black female street artist, lean athletic build, shaved head with striking arterial red topknot, dark brown skin, sharp angular facial features, scar above left eyebrow. Right hand fitted with matte black retractable claws. Wearing layered dark synthetic clothing, cargo pants with multiple pockets, worn climbing harness, paint-stained fingers. Standing in three-quarter pose on a grey concrete wall at night, spray paint cans scattered nearby, holographic projector film visible on custom murals behind her. Low-light cyberpunk aesthetic, neon accent lighting in deep red and silver reflecting off chrome augmentations, urban Pilsen rooftop setting with Ferrogate Transit infrastructure visible. Moody, determined expression, cinematic street photography style, high contrast shadows. --ar 2:3 --v 6"
 }

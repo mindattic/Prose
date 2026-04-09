@@ -185,5 +185,27 @@
     "Gravimetric Collapse Charge GCC-9",
     "The Pale Mile"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Congolese / Russian",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and densely muscled, the kind of thinness that comes from decades of sparse living rather than youth — all remaining mass is functional, no softness. Shoulders still broad but slightly rounded forward from age and posture. Hands show the tremor of old age but retain deliberate strength.",
+    "hair_color": "Grey-white, natural",
+    "hair_style": "Closely cropped, uneven, self-cut",
+    "hair_length": "Short",
+    "eye_color": "Pale grey, striking and unaugmented",
+    "skin_tone": "Deep brown with ashy undertones from Pilsen Veil's industrial air exposure; Congolese base with weathered texture from sun and chemical pollution",
+    "complexion": "Deeply lined face, particularly around the eyes and mouth — evidence of decades of outdoor performance and expression. High, broad cheekbones. Clean-shaven except for a grey stubble that appears within hours. Skin has a papery quality but remains unbroken and vital. Permanent creases from smiling.",
+    "distinguishing_marks": [
+      "Long thin scar running from left temple to jaw, pale and old, origin unknown to casual observers",
+      "Calluses on the palms and fingertips of both hands, deep and permanent",
+      "Small burn mark on the inside of his left wrist, circular, approximately 2cm diameter, deliberately positioned where a watch would be",
+      "Faint tattoo on the inside of his right forearm — Cyrillic characters, faded to near-invisibility, possibly a date"
+    ],
+    "visible_augmentations": "None. The audio-capture pendant around his neck is ancient non-networked technology, visibly pre-2190s, with a worn leather cord and dented brass casing — this is a tool, not an augmentation.",
+    "posture_movement": "Stands with weight distributed evenly, rooted — a performer's stance. Moves with deliberate economy, no wasted gesture. When performing, his hands become expressive and fluid despite their age. When listening, his entire body tilts slightly toward the speaker. Walks slowly but with purpose, following the same routes daily.",
+    "clothing_style": "One long coat, charcoal grey wool, heavily patched with fabric of different origins — some synthetic, some organic, some metallic — creating a visible patchwork across the back and sleeves. Beneath it: simple grey or brown cotton shirts, worn thin. Black utility pants, multiple pockets, frayed at the cuffs. Boots resoled multiple times, held together with intention. The overall effect is Tier 5 by necessity but Tier 1 in maintenance and dignity — nothing is discarded, everything is maintained. No jewelry except the pendant. No visible brand markers. Clothing smells of coffee grounds, smoke, and the metallic-chemical tang of industrial runoff."
+  },
+  "image_prompt": "A 67-year-old Congolese-Russian man standing motionless on an urban street corner in cyberpunk 2226, deep brown skin weathered by decades of outdoor exposure, pale striking grey eyes unmodified and piercing, short grey-white hair self-cut and close to the scalp. Wearing a charcoal grey wool overcoat patched with mismatched fabric creating a visible textile map, ancient non-networked audio-capture pendant with dented brass casing hanging from leather cord. Standing with a performer's rooted posture, hands relaxed but expressive, visible calluses on palms. Industrial urban background — Pilsen Veil junction, neon signs reflecting off wet pavement, chemical haze in the air, ferrogate transit structure visible overhead. Soft amber afternoon light cutting through industrial smog. His expression is patient and attentive, ready to listen or speak. Hyper-realistic portrait, documentary photography style, cinematic depth of field, shot at 2:3 aspect ratio, emphasizing dignity and density of presence --ar 2:3 --v 6"
 }

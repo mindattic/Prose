@@ -226,5 +226,25 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Southern African (Setswana/Shona) / Andean Quechua",
+    "height_cm": 168,
+    "weight_kg": 61,
+    "build": "Lean and held with deliberate tension, shoulders squared back as if bracing against invisible pressure. Musculature is wiry rather than athletic—the body of someone who maintains discipline through stillness rather than motion.",
+    "hair_color": "Natural black with subtle warm undertones",
+    "hair_style": "Tightly coiled and pinned close to the scalp in a structured arrangement; no loose strands",
+    "hair_length": "Short (under 5cm when unpinned)",
+    "eye_color": "Deep brown, natural; retinal augmentation creates faint iridescent shimmer when compliance overlay is active",
+    "skin_tone": "Deep warm brown with reddish undertones characteristic of mixed Southern African and Andean ancestry",
+    "complexion": "Clean, minimal makeup. The bioluminescent freckles across nose and cheekbones are her only deliberate modification—faint amber pigmentation visible even when dormant, brightening noticeably under stress. Jawline is prominent and held at a slight tension suggesting constant self-editing.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles in scattered pattern across bridge of nose and high cheekbones—amber-toned, stress-reactive, approximately 3-4mm diameter each",
+      "Small surgical scar on right temple (approximately 1cm), partially hidden by hairline—from retinal augmentation installation"
+    ],
+    "visible_augmentations": "Bioluminescent freckles (only visible cosmetic mod). The neural compliance index overlay is internal (retinal); visible only as a faint iridescence in her eyes when active and under close scrutiny. No chrome, no external cybernetics.",
+    "posture_movement": "Extraordinarily still. Sits with perfect spinal alignment, hands folded or resting on desk edge with fingers slightly curled. Walks with measured pace, economical movement. Speaking involves minimal hand gestures—precision in word choice compensates for physical restraint. Her default expression is neutral-to-severe; smiling appears to require conscious effort.",
+    "clothing_style": "Corporate Tier 2 compliance dress, deliberately one fashion cycle behind current Helix internal standard. Favors charcoal and deep blue tailored blazers with minimal branding, white or cream fitted shirts, dark trousers with knife-edge creases. Shoes are immaculate black leather (non-synthetic), worn low-heeled for stability. Accessories are functional only: a thin steel watch set to three timezones, no jewelry. The overall effect is intentionally professional-but-not-trying, a subtle refusal to perform belonging while performing it perfectly."
+  },
+  "image_prompt": "Portrait of a 47-year-old woman of mixed Southern African and Andean heritage, lean build with perfect posture, deep warm brown skin with subtle reddish undertones. Tight black coils pinned close to scalp, dark brown eyes with faint iridescent shimmer. Distinctive glowing amber bioluminescent freckles scattered across nose and high cheekbones, faintly luminous. Severe, composed expression with prominent jawline held at tension. Wearing immaculate charcoal tailored blazer and crisp white fitted shirt, corporate Tier 2 aesthetic. Seated at modern glass and steel desk with soft blue-white compliance HUD light reflecting faintly in her eyes. Cinematic cyberpunk corporate interior, cool lighting with amber accent from freckles. Hyperrealistic, 8k, professional headshot quality, forensic detail on skin texture and augmentation features, calm controlled atmosphere. --ar 2:3 --v 6"
 }

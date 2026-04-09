@@ -254,5 +254,26 @@
     "Compass Rose",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Polynesian / Polish",
+    "height_cm": 188,
+    "weight_kg": 76,
+    "build": "Long-limbed and angular, naturally lean with defined shoulders and wrists. Moves with restless energy — perpetually adjusting, gesturing, never quite still.",
+    "hair_color": "Color-shift geneware cycling through sunset oranges, amber, deep reds",
+    "hair_style": "Long, restructured into a dramatic wave-crest or crown formation using color-shift gel and styling compounds",
+    "hair_length": "Long (shoulder-length minimum, styled upward)",
+    "eye_color": "Dark brown, with AR overlay contacts that occasionally flash faint augmentation UI",
+    "skin_tone": "Medium olive-brown with warm undertones",
+    "complexion": "Broad, prominent cheekbones characteristic of his Polynesian heritage; clear skin marked by slowly shifting bioluminescent geometric patterns across forearms and neck — blue-white shapes that pulse and reconfigure seasonally. Face is expressive and mobile, almost theatrical in its mobility.",
+    "distinguishing_marks": [
+      "Bioluminescent subdermal patterning across both forearms: geometric shapes (hexagons, wave fractals, angular mandalas) in programmable blue-white that shift every 10-30 seconds",
+      "Bioluminescent patterns climb the right side of his neck from collarbone to jawline, creating a living collar effect",
+      "No visible scars or tattoos — the bioluminescence serves as his primary body art"
+    ],
+    "visible_augmentations": "Bioluminescent subdermal patterning across arms and neck (actively glowing); AR contact lenses visible as subtle prismatic flicker in direct light; color-shift hair geneware obvious in the way his hair cycles through warm chromatic range",
+    "posture_movement": "Constantly in motion — shoulders loose, hands always moving to adjust, drape, gesture. He invades personal space with calculated charm, physically rotating displayed clothing on strangers' bodies to demonstrate fit. His default state is performance; stillness is uncomfortable for him.",
+    "clothing_style": "Tier 3-4 working class with aspirational design flair. Wears his own original designs frequently — high-quality salvage fabrics, unexpected color combinations, pieces that work harder than their materials suggest. Often seen in oversized linen shirts (sleeves rolled to expose the bioluminescence), fitted synthetic pants in matte or metallic finishes, and custom jackets he's reconstructed from vintage fragments. No corporate branding, but meticulous finishing. Favors neutrals and earth tones that let his skin patterns be the focal point."
+  },
+  "image_prompt": "cyberpunk male character, long-limbed and restless, Polynesian-Polish heritage with broad prominent cheekbones, medium olive-brown skin glowing with bioluminescent geometric patterns across forearms and neck in electric blue-white, patterns slowly shifting and reconfiguring, long hair styled upward into dramatic wave-crest crown with color-shift geneware cycling through sunset oranges and ambers, dark eyes with subtle AR contact lens shimmer, expressive theatrical face, wearing oversized linen shirt with rolled sleeves revealing glowing arms, fitted matte synthetic pants, custom reconstructed jacket, set in vibrant Burnished Market stall surrounded by draped replica fashion pieces and original designs, neon market signs and chrome fixtures in background, cool blue-white bioluminescent glow mixing with warm market amber lighting, character mid-gesture adjusting fabric on display, kinetic energy and constant motion implied, cyberpunk streetwear aesthetic, shallow depth of field focusing on face and glowing patterns, volumetric light catching dust in air --ar 2:3 --v 6"
 }

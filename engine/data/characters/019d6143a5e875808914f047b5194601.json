@@ -279,5 +279,27 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "Pellucid Systems"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Scandinavian / West African",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with visible musculature — wiry strength rather than bulk, built for speed and precision. Shoulders slightly narrower than hips, giving an almost skeletal quality. Zero excess body fat.",
+    "hair_color": "Platinum blonde with dark roots showing 2–3 weeks of growth",
+    "hair_style": "Pulled back tight into a short, functional braid or topknot; styled for combat efficiency, not aesthetics",
+    "hair_length": "Short to Medium",
+    "eye_color": "Steel gray, natural",
+    "skin_tone": "Medium-warm complexion — Scandinavian pale beneath sun-darkened forearms and neck from outdoor work",
+    "complexion": "Sharp cheekbones, angular jawline. Skin bears the weathering of Dockside exposure — salt spray, wind burn. Minimal grooming; scarring around temples and along the left jawline from augmentation surgery is deliberate and unhidden. Faint catharral lines around the eyes from chronic sleep deprivation.",
+    "distinguishing_marks": [
+      "Augmentation scar tissue along the left temple, running upward from cheekbone — crude suturing visible, suggesting installation by street-tier surgeon",
+      "Matching scar along the left jawline where monofilament whip was spliced into forearm fascia, raised and slightly discolored",
+      "Burn scar across the back of left hand — pale, old, probably from equipment malfunction or combat",
+      "Faint needle track marks along inner right elbow, consistent with neural interface calibration injections"
+    ],
+    "visible_augmentations": "Left forearm bears a subtle chrome seam running from wrist to mid-forearm where the monofilament whip is housed — appears as a thin metallic line under the skin when flexed. The seam is intentionally visible; Daulet makes no effort to conceal it. Faint LED indicator (inactive/dark) embedded at the wrist junction. Neural dampener ports visible at the temples as small chrome nodes, roughly 5mm in diameter, slightly raised from skin.",
+    "posture_movement": "Stands with weight forward on the balls of their feet — a fighter's stance even at rest. Movements are economical and precise; no wasted motion. Carries tension in the shoulders and neck. Head turns in controlled arcs rather than fluid motion — suggests constant threat assessment. Left arm hangs slightly away from the body, ready for deployment. Walking gait is measured, light-footed, almost predatory.",
+    "clothing_style": "Tier 3–4 street operative. Black cargo pants (reinforced synthetic weave, multiple thigh pockets) tucked into ankle-high combat boots with steel toe and kevlar reinforcement. Sleeveless tactical vest worn over a dark long-sleeved compression shirt — the vest bears ballistic plating visible at the shoulders and torso. Fingerless gloves in worn black leather, left hand reinforced at the palm and wrist. Jacket: oversized charcoal bomber jacket (synthetic leather, Dockside-grade) worn open, ideal for concealing or rapidly accessing tools. Belt: industrial-grade synthetic with reinforced buckle, laden with carabiners and attachment points. No jewelry. Boots and vest show salt staining and wear consistent with regular fieldwork."
+  },
+  "image_prompt": "Cyberpunk surveillance specialist, nonbinary androgynous appearance, 37 years old, platinum blonde hair in tight braid, sharp angular face, steel gray eyes, medium warm complexion, lean muscular build, visible augmentation scars at temples and jawline, chrome monofilament seam visible on left forearm, tactical black sleeveless vest over compression shirt, oversized charcoal bomber jacket, combat boots, fingerless leather gloves, standing in tense fighter's stance, Dockside warehouse setting at night, moody blue and amber neon lighting reflecting off Lake Michigan water, salt-weathered and dangerous, cinematic cyberpunk, character portrait, photorealistic, gritty and worn, atmospheric haze --ar 2:3 --v 6"
 }

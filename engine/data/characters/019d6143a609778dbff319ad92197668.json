@@ -14,7 +14,7 @@
   "age": 28,
   "status": "active",
   "location": "Nomadic between Old Harbor and the underdeck of The Shelf, near Wacker and State",
-  "description": "Eulàlia is a wiry young woman of Catalan-Senegalese heritage with the restless, slightly hollow-eyed look of someone who sleeps in four-hour increments and considers this a feature rather than a problem. She keeps her dark hair in a haphazard knot and dresses in layers that can be shed or added based on which part of the city she needs to move through. She has a habit of mapping her surroundings in her head — exits, sightlines, power sources — that makes her seem distracted in conversation when she is actually paying very close attention to everything except the person speaking.\n\nEulàlia was, until two years ago, a mid-tier data architect employed by a Circuit infrastructure firm, designing the information routing systems that keep Meridian 88's corporate districts legible to themselves. She was twenty-six, overqualified, and beginning to understand the full scope of what her work was being used for. The sequence of events following that understanding resulted in her employment termination, the revocation of her residential registration, the freezing of her financial identity, and what she describes as 'a fairly educational few weeks.' She is now, legally, no one. Her identity exists only in fragments she maintains herself.\n\nShe is not broken by this. She is, if anything, clarified. Eulàlia operates as a freelance network infiltrator and system saboteur, taking contracts that align with her criteria — which are specific, non-negotiable, and not primarily financial. She has a gift for understanding systems architecturally, for finding the load-bearing assumption that, removed, causes something large to stop working. She finds this genuinely interesting. The politics are almost secondary. Almost.",
+  "description": "Eulàlia is a wiry young woman of Catalan-Senegalese heritage with the restless, slightly hollow-eyed look of someone who sleeps in four-hour increments and considers this a feature rather than a problem. She keeps her dark hair in a haphazard knot and dresses in layers that can be shed or added based on which part of the city she needs to move through. She has a habit of mapping her surroundings in her head — exits, sightlines, power sources — that makes her seem distracted in conversation when she is actually paying very close attention to everything except the person speaking.\n\nEulàlia was, until two years ago, a mid-tier data architect employed by a Circuit infrastructure firm, designing the information routing systems that keep GLMZ's corporate districts legible to themselves. She was twenty-six, overqualified, and beginning to understand the full scope of what her work was being used for. The sequence of events following that understanding resulted in her employment termination, the revocation of her residential registration, the freezing of her financial identity, and what she describes as 'a fairly educational few weeks.' She is now, legally, no one. Her identity exists only in fragments she maintains herself.\n\nShe is not broken by this. She is, if anything, clarified. Eulàlia operates as a freelance network infiltrator and system saboteur, taking contracts that align with her criteria — which are specific, non-negotiable, and not primarily financial. She has a gift for understanding systems architecturally, for finding the load-bearing assumption that, removed, causes something large to stop working. She finds this genuinely interesting. The politics are almost secondary. Almost.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -248,11 +248,33 @@
     "Kang-Petrov Arms KP-19 'Workhorse'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Shelf",
     "ARCHITECT",
     "The Heritage Vault",
     "Nesting Doll"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Catalan / West African Senegalese",
+    "height_cm": 164,
+    "weight_kg": 52,
+    "build": "Wiry and lean with the taut musculature of someone who walks constantly and eats when remembering to. No excess, no softness — efficient rather than athletic.",
+    "hair_color": "Dark brown, naturally, with occasional premature silver at the temples from stress or neural interface strain",
+    "hair_style": "Usually gathered into a haphazard knot or bun, sometimes with strands escaping; occasionally tied back with salvaged wire or synthetic cord",
+    "hair_length": "Medium, typically 20-25cm, kept long enough for functionality but not maintenance",
+    "eye_color": "Dark brown with a faint amber tint in the right eye where the retinal overlay circuitry shows through under certain light",
+    "skin_tone": "Warm olive-brown complexion, a blend of Mediterranean and sub-Saharan ancestry",
+    "complexion": "Sharp cheekbones, narrow jaw. Skin appears pale from limited sunlight exposure and the blue-grey pallor of someone running on irregular sleep cycles. Dark circles are permanent fixtures. A few scars around the left temple from old implant work. Generally clean but not groomed — practical rather than cosmetic.",
+    "distinguishing_marks": [
+      "Three thin parallel scars running vertically down the left side of her neck, approximately 8cm total length, from a failed hardware extraction attempt; visibly present, pale and slightly raised",
+      "Faint circular scar tissue on the inner left wrist where an early prototype node was implanted and later removed; barely visible unless specifically examined",
+      "A small burn mark on her right palm, diameter ~2cm, from an electrical discharge during an underdeck salvage operation; pale and well-healed",
+      "Subcutaneous mesh nodes create slight visible bulges under the skin at her collarbone, left hip, and the back of her right ear, visible only when clothing shifts or light hits at specific angles"
+    ],
+    "visible_augmentations": "Retinal overlay creates a faint golden-amber luminescence in the right eye in low-light conditions. Small hardware nodes occasionally visible at the collarbone and hip beneath thin clothing when she moves. The neural interface scar tissue along the left temple and neck is openly visible. No attempt made to conceal any of this.",
+    "posture_movement": "Moves with economical precision — no wasted motion, but not tense. Walks slightly faster than conversational pace. Tends to position herself with clear sightlines and exit vectors. Often appears distracted because she is simultaneously mapping her environment; eye contact is inconsistent. When focused on technical work, becomes nearly motionless. Her hands are always slightly active, fingers moving as if tracing invisible code or pathways.",
+    "clothing_style": "Tier 4-5 functional nomad aesthetic. Layered: typically a fitted black or dark grey thermal base, over which she wears a salvaged circuit-weave vest (conductive material from a decommissioned piece of infrastructure), a water-resistant outer shell in charcoal or deep blue, and cargo pants with reinforced pockets and cargo loops from which small hardware nodes hang. Worn climbing boots with visible sole reinforcement. No logos or corpo branding. Everything is either salvaged, stolen, or purchased through untraceable channels. She owns approximately two complete outfits and cycles them. Her jacket has seven visible pockets and two hidden ones."
+  },
+  "image_prompt": "A wiry 28-year-old woman of mixed Catalan-Senegalese heritage with olive-brown skin and dark hair pulled into a careless knot, standing in shadow. She wears layered functional clothing—black thermal base, dark grey salvaged circuit-weave vest, water-resistant charcoal jacket with multiple pockets, cargo pants and worn climbing boots. Her right eye glows with a faint amber retinal overlay, visible in low light. Three thin scars run vertically down her left neck. Small subcutaneous mesh nodes create subtle bulges at her collarbone. She stands with economical posture, slightly turned, scanning her surroundings with sharp focus. Dark circles under her eyes suggest irregular sleep. Her hands move slightly as if tracing invisible patterns. Background: neon-lit underdeck industrial space, wet metal surfaces, faint circuit-board ambient lighting. Cyberpunk noir aesthetic, high contrast, cool color grading, moody atmospheric lighting, shallow depth of field --ar 2:3 --v 6"
 }

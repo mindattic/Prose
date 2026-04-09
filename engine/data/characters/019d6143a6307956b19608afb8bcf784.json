@@ -186,5 +186,24 @@
     "Tessellate Distribution",
     "Tessera Corponation"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Senegalese) / Polish",
+    "height_cm": 178,
+    "weight_kg": 58,
+    "build": "Tall and angular with minimal subcutaneous fat; long-limbed and graceful but with a tension in the shoulders that suggests constant self-monitoring. The build of someone who moves carefully through spaces that weren't designed for her comfort.",
+    "hair_color": "Dark auburn (dyed; natural color is black)",
+    "hair_style": "Long, straight, worn down or in a single braid; the dye job is precise and maintained — evidence of deliberate curation for institutional acceptance",
+    "hair_length": "Long",
+    "eye_color": "Dark brown, alert and analytical",
+    "skin_tone": "Deep brown with warm undertones, complexion unmarked and clear",
+    "complexion": "High, prominent cheekbones (maternal inheritance); minimal jewelry or grooming affectation; face carries an expression of controlled neutrality that slips into genuine engagement only in unguarded moments",
+    "distinguishing_marks": [
+      "Two small chrome studs at each temple (Tessera Academy-issued neural interface nodes, institutional standard, visible as dull metallic dots approximately 4mm in diameter)"
+    ],
+    "visible_augmentations": "Chrome neural interface studs at temples only — school-mandated, no personal modifications. Studs are institutional-grade and deliberately unremarkable.",
+    "posture_movement": "Moves with deliberate economy; walks quietly and sits with perfect posture in academic settings. In unstructured moments, there is a subtle rigidity that betrays hypervigilance. Her hands are still and controlled. When speaking to authority figures, her body becomes even more compressed; with peers from Chatham Flats, she relaxes fractionally.",
+    "clothing_style": "School uniform at Tessera Prep: tailored black blazer, grey slacks, white shirt, all fitted to her frame with precision — no wrinkles, no variance. At home in Chatham Flats, she wears practical clothing: worn denim, fitted hoodie in neutral colors, comfortable boots. No visible brand signaling; all clothing is functional and unadorned. She owns no jewelry except a small silver ring her grandmother gave her, worn on her right hand."
+  },
+  "image_prompt": "15-year-old Black girl with high cheekbones and dark auburn dyed hair worn long, standing in sharp light against a blurred background of chrome and glass architectural brutalism, deep brown skin, wearing a crisp black Tessera Academy blazer and grey slacks, posture rigidly perfect but eyes carrying suppressed intelligence and anxiety, two small chrome neural interface studs visible at temples catching light, photorealistic cyberpunk portraiture, close-up upper body, cool corporate lighting with shadows, hyper-detailed facial expression showing the strain of constant code-switching, film noir meets future academia, shot in cool metallics and blacks, --ar 2:3 --v 6"
 }

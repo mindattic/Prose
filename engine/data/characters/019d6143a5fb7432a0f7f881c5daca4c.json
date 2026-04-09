@@ -266,5 +266,26 @@
     "The Coffin Nails",
     "The Pale Mile"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Baltic / West African (Ghanaian)",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "build": "Lean and angular, shoulders slightly rounded from decades of bent-over precision work. Wiry muscle in forearms and hands; narrow through the chest and waist. Posture suggests economy of movement.",
+    "hair_color": "Salt-and-pepper gray with darker brown undertones",
+    "hair_style": "Close-cropped, neat and utilitarian",
+    "hair_length": "Short",
+    "eye_color": "Deep brown, natural; left eye hosts a visible metallic monocle implant with faint LED indicators",
+    "skin_tone": "Baltic-pale base with amber and tan staining on hands and forearms from decades of chemical exposure to inks, solvents, and substrate compounds",
+    "complexion": "Weathered but methodically maintained. Deep-set eyes from magnification-intensive work. Fine lines around the eyes and mouth. Neat, well-groomed salt-and-pepper mustache in the style of early 20th-century portraiture. Hands show permanent ink staining in fine lines around nail beds despite meticulous cleaning habits. Overall appearance is professorial and fastidious.",
+    "distinguishing_marks": [
+      "Chemical burns and discoloration across both hands and forearms—pale scars from solvent exposure forming an irregular map across his skin",
+      "Fine ink tattoos along his right inner forearm spelling Latvian text in microscopic lettering (readable only under magnification)",
+      "Small circular scar on left temple where the optical monocle implant was installed, now covered by the metallic fixture itself"
+    ],
+    "visible_augmentations": "Left-eye optical monocle implant with polished titanium mounting and faint blue-green indicator LEDs; visible seam lines suggest high-quality installation. Right forearm displays a subdermal interface panel approximately 8cm x 6cm with subtle raised edges where haptic printer hardware sits beneath the skin—visible as a faint geometric shadow under controlled lighting. No external ports or flashing indicators; the interface is discrete but noticeable to someone examining his hands closely.",
+    "posture_movement": "Deliberately slow and measured, economical in gesture. Sits with perfect posture. Hands rest flat and still until needed, then move with surgical precision. Makes intense eye contact when listening, as if cataloging details. Walks with even, unhurried stride. Overall demeanor suggests absolute confidence in his own expertise and complete disinterest in rushing.",
+    "clothing_style": "Tier 3-4 working professional. White or pale gray cotton dress shirts with sleeves rolled to the forearm, worn under unstructured wool vests in charcoal or navy—allows visibility of his hands and the forearm interface. Black or charcoal trousers, well-maintained, creased sharply. Soft leather apron in dark brown worn during work hours. Reading glasses on a chain around his neck (separate from his implant monocle). No visible corporate branding; all clothing is utilitarian and built for durability. Wears a simple stainless-steel analog watch—affectation of someone who does not trust digital time-keeping. Leather messenger bag in dark cognac, worn and creased from years of carrying substrate samples and specification documents."
+  },
+  "image_prompt": "Portrait of a 44-year-old man of mixed Baltic and West African heritage, lean and angular build, sitting at a precision workbench surrounded by printing equipment and paper samples. He wears a rolled-sleeve cream linen shirt and dark wool vest. His most striking features: deep-set brown eyes, one fitted with a visible metallic optical monocle implant with faint LED indicators; salt-and-pepper close-cropped hair and neatly groomed mustache; long ink-stained fingers with a geometric subdermal interface panel visible on right forearm showing beneath the skin. His skin tone is pale with amber and tan staining from decades of chemical exposure. He holds a magnifying loupe and examines a holographic security thread on a document. Setting: dimly-lit underground print shop, warm tungsten lighting, shallow depth of field focusing on his hands and face, cyberpunk noir aesthetic, photorealistic, intricate detail on hands and augmentations, color grading warm and desaturated --ar 2:3 --v 6"
 }

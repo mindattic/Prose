@@ -261,5 +261,26 @@
     "Iron",
     "Gold"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Russian/Ukrainian)",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and solid, with the compact muscularity of someone who has spent decades doing physical labor. Not lean, but not soft — defined forearms and capable hands, with a slight forward curve to her spine from decades of standing at market stalls.",
+    "hair_color": "Iron-grey with hints of black at the roots",
+    "hair_style": "Dense, oiled coils gathered back and pinned with worn copper clasps in a practical updo",
+    "hair_length": "Medium (shoulder-length when unbound)",
+    "eye_color": "Amber (natural right eye); left eye is basic optical augment tuned to warm gold to match",
+    "skin_tone": "Deep umber with warm undertones",
+    "complexion": "Weathered but unlined in the way of people who have earned their rest. Minimal makeup — her skin is kept clean and oiled. Her hands show the wear of decades of handling acidic ferments and hot brine, with slight discoloration on knuckles.",
+    "distinguishing_marks": [
+      "Faint silver chemical burn scars tracing both forearms in delicate, webbed patterns — residue from vat-farm work at Helix Biosystems, approximately 2180-2190",
+      "Small, precise burn mark on the pad of her right thumb, shaped like a crescent — from a fermentation accident she refuses to discuss",
+      "Calluses on the inner joints of her index and middle fingers from decades of gripping jar lids and stirring implements"
+    ],
+    "visible_augmentations": "Left optical augment with warm gold iris, visible as a slight chromatic aberration at the limbus under direct light. Subdermal temperature regulators in her hands are not visible but create a faint thermal shimmer in infrared — kept subtle and functional, not chrome.",
+    "posture_movement": "Grounded and economical in motion. She doesn't shift her weight unnecessarily. When she leans forward at her counter, it's with the full commitment of someone listening. Her hands move with the precision of someone who handles fragile things daily. She has the stillness of a woman comfortable with silence.",
+    "clothing_style": "Practical Tier 3 workwear. Heavy cotton apron (indigo-dyed, stained with centuries of ferment, reinforced at stress points) worn over a loose linen tunic in cream or muted rust. Loose trousers in charcoal hemp, rolled at the ankles. Worn leather sandals with reinforced soles. A thin brass bangle on her right wrist — a gift from the Market Vendors Guild twenty years ago. No jewelry beyond this and her copper hair clasps. Her clothing smells perpetually of vinegar, salt, and spice."
+  },
+  "image_prompt": "A 58-year-old West African-Eastern European woman with deep umber skin and iron-grey coils pinned back with copper clasps, standing behind a market stall laden with ceramic crocks and bioluminescent fermentation jars glowing violet and green. She wears a heavy indigo-dyed apron stained with ferment over a cream linen tunic, with one eye a warm gold optical augment. Faint silver chemical burn scars trace both her forearms in delicate webbed patterns. She has the settled gravity of someone who has survived hardship, standing with grounded posture amid the smell of vinegar and spice. A small brass E.L.F. figurine sits at the corner of her counter. Warm, diffuse market lighting at dusk, nostalgic and cyberpunk-mundane, shot in the style of documentary portraiture. Geartown, circa 2226. --ar 2:3 --v 6"
 }

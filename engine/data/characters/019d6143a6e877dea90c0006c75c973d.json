@@ -190,5 +190,25 @@
     "Gold",
     "Déjà Vu"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Shona / Scandinavian / Nigerian",
+    "height_cm": 188,
+    "weight_kg": 71,
+    "build": "Lean and angular — all long limbs and knobby joints, still visibly growing into his frame. Chest narrow, shoulders beginning to broaden. Wiry rather than muscular, with the unfinished look of a teenager stretched tall too fast.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Uneven natural — grown out in loose coils, shoulder-length, picked at frequently when anxious. Left side occasionally tucked behind his ear; right side falls loose.",
+    "hair_length": "Long",
+    "eye_color": "Deep brown",
+    "skin_tone": "Deep umber with warm undertones, consistent across his frame",
+    "complexion": "Clean-shaven except for a patchy, sparse attempt at a beard along his jawline — more cosmetic statement than grooming success. His face is still softly rounded at the cheeks, with a prominent nose and full lips. Skin is clear and unblemished except for the bioluminescent freckles.",
+    "distinguishing_marks": [
+      "Bioluminescent freckles scattered across both cheekbones and the bridge of his nose, gold-spectrum, installed at age sixteen — glow brighter when his blood pressure rises (which is nearly constant, meaning they are almost always visibly lit).",
+      "Fine white scar along his right jawline, approximately 3cm, from an adolescent street accident — barely noticeable but catches light when his augmentation lights activate."
+    ],
+    "visible_augmentations": "Bioluminescent freckles glow faintly golden across his cheekbones and nose, brighter when stressed or exerted. The reaction-time neural assist is subcutaneous and invisible, though occasional eye-twitches or brief moments of visible disorientation suggest glitching. No visible chrome or external modifications.",
+    "posture_movement": "Moves fast and low — economy of motion learned young. Always aware of exits and sightlines; tends to position himself at angles to walls. Stands with weight forward on the balls of his feet. When anxious (frequent), his fingers fidget — picking at his hair, checking pocket seams, tapping rhythm patterns on his thighs. When nervous, he laughs too quickly and deflects with self-deprecation. Despite the outward confidence of gang affiliation, his body language reads as coiled tension rather than relaxation.",
+    "clothing_style": "Layered function-over-form, Tier 4 (working-class, utilitarian). Base layer is a fitted compression underlayer (usually dark gray or black, visible at wrists and collar). Two hooded shells in muted colors — charcoal, slate, worn navy — worn open and loose for quick shedding. Cargo pants or reinforced denim with excessive pockets, many bearing the wear marks of constant use (folded Φ notes, burner comlinks, counting chips). Boots are scuffed and practical, broken in but not expensive. A thick canvas jacket with faded gang markings on the interior lining. Everything smells faintly of market grime and industrial coolant. No jewelry except a thin brass ring on his left index finger (his grandmother's, a secret talisman he never mentions)."
+  },
+  "image_prompt": "Cyberpunk portrait of Tafadzwa, a 19-year-old boy with deep umber skin, long uneven natural hair in loose coils, narrow angular frame and long limbs still growing into themselves. His cheekbones and nose are covered in bioluminescent gold freckles that glow faintly, brighter across his face. He wears layered functional streetwear — compression underlayer visible at wrists, two hooded shells in slate and charcoal, cargo pants with many pockets, worn boots. He's positioned low and alert, weight forward, aware of his surroundings with the body language of a scared kid trying to look dangerous. Gold bioluminescent freckles cast a warm glow across his nervous expression. Set in a dimly-lit market corridor with neon signage bleeding through haze, shadows emphasizing his angular features. Moody, tense, grounded cyberpunk aesthetic. High contrast lighting. Shallow depth of field. --ar 2:3 --v 6"
 }

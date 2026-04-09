@@ -249,5 +249,25 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "The Pale Mile"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "Polish / Russian",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean, almost wiry — the physique of someone who forgets to eat regularly. Narrow shoulders, minimal muscle definition, a fragility that reads as either youth or exhaustion, probably both.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Practical, short crop with a single copper-dyed streak above the right ear maintained since university — the one aesthetic indulgence he won't abandon despite current embarrassment",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with a faint grey luminescence from visual acuity enhancement implants — creates an almost unfocused quality even when he's paying attention",
+    "skin_tone": "Pale tan with a greyish undertone from persistent sleep deprivation and fluorescent-lit work environments",
+    "complexion": "Fine-featured, narrow face with heavy dark brows that crowd his eyes. Perpetually tired — dark circles are a permanent fixture. No facial hair, meticulously groomed out of professional habit. Skin is clear but has a drawn quality, like the tissue underneath is slightly dehydrated.",
+    "distinguishing_marks": [
+      "Decorative geneware cat ears in deep charcoal grey implanted at the crown and upper temples — they flatten involuntarily against his scalp when stressed (which is constant) and perk upward with genuine surprise (rare). The surgical scars are barely visible now but visible on close inspection as faint white lines where the ears anchor.",
+      "Small round scar on the inside of his right wrist from a laboratory accident during pharmacy school — pale and faded, approximately 8mm diameter"
+    ],
+    "visible_augmentations": "Decorative charcoal grey cat ears mounted on the skull — currently flattened against his head. The Helix employee data-access implant is not visible (subcutaneous at the base of the skull). Visual acuity enhancement is only apparent as a faint grey luminescence in the iris under certain light.",
+    "posture_movement": "Hunched slightly, as if perpetually leaning toward something he's trying to read. Movements are economical and precise — the careful choreography of someone who spends ten hours a day reaching for small objects. Fidgeting with inventory tabs, pharmaceutical bottles, the edge of his dispensary terminal. His cat ears betray his emotional state constantly: flattened when anxious (his default), briefly perking when startled or when a system notification surprises him.",
+    "clothing_style": "Oversized Helix-branded dispensary coat (charcoal with teal trim) worn loose over equally oversized neutral-toned undershirts — grey, beige, dark blue. The intentional looseness makes him appear smaller than he is, a self-protective visual strategy. Practical trousers in dark grey or black, worn at the knees. Unbranded work shoes, perpetually scuffed. No visible jewellery except for an offline composition device he wears on a cord around his neck — a retro handheld synth from the 2180s that he fidgets with obsessively. His clothes smell faintly of pharmaceutical sanitizer and coffee."
+  },
+  "image_prompt": "Cyberpunk character portrait, 29-year-old lean Polish-Russian male pharmacist, pale tan skin with sleep-deprived dark circles under heavy brown brows, dark hair with single copper streak above right ear, decorative charcoal grey cat ears mounted on crown currently flattened against scalp in anxiety pose, unfocused dark brown eyes with faint grey luminescent iris enhancement, fine features, exhausted expression. Wearing oversized charcoal Helix-branded dispensary coat with teal trim over beige undershirt, standing at a bright pharmaceutical counter with glowing vials and holographic price displays in background, hands reaching for medicine bottles with precise, careful movements, holding retro offline composition device on cord around neck. Fluorescent clinical lighting casting harsh shadows, cool colour palette of blues and greys, slight grain from fatigue, soft focus on tired eyes, 2226 GLMZ Deepwell Station interior, pharmacy aesthetic, mood conveying quiet desperation and subcutaneous anxiety --ar 2:3 --v 6"
 }

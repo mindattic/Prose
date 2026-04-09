@@ -13,7 +13,7 @@
   "age": 58,
   "status": "active",
   "location": "The Garret, permanent residency at a club called The Lowering Bar, near North Ave and Damen",
-  "description": "Eudoxia is a broad, comfortable-looking woman who weaponizes the appearance of comfort. She has silver-threaded locs piled architecturally on her head, a wardrobe of brightly patterned structural jackets, and reading glasses she doesn't actually need that she takes on and off during performances for punctuation. Her eyes have patterned irises — a gift to herself for her fiftieth birthday, concentric rings of amber and dark blue that make her gaze feel like a diagnostic tool. She laughs loudly and often and the laugh is the first thing anyone mentions when describing her.\n\nEudoxia has been performing in Meridian 88 for thirty-one years. She has watched the city transform from positions closer and closer to the ground, and her comedy is a decades-long document of that transformation — who got squeezed out, who moved up, what the corponations promised and what they delivered. She is ferociously funny. She is also the sharpest political satirist working in The Garret, possibly in the city, and she does it standing in front of a microphone with a drink in her hand so everyone can pretend it's just jokes. Three Axiom corporate communications officers have individually tried to have her 'scheduled away' from prominent venues. She considers this her Φ120 UBC bonus.",
+  "description": "Eudoxia is a broad, comfortable-looking woman who weaponizes the appearance of comfort. She has silver-threaded locs piled architecturally on her head, a wardrobe of brightly patterned structural jackets, and reading glasses she doesn't actually need that she takes on and off during performances for punctuation. Her eyes have patterned irises — a gift to herself for her fiftieth birthday, concentric rings of amber and dark blue that make her gaze feel like a diagnostic tool. She laughs loudly and often and the laugh is the first thing anyone mentions when describing her.\n\nEudoxia has been performing in GLMZ for thirty-one years. She has watched the city transform from positions closer and closer to the ground, and her comedy is a decades-long document of that transformation — who got squeezed out, who moved up, what the corponations promised and what they delivered. She is ferociously funny. She is also the sharpest political satirist working in The Garret, possibly in the city, and she does it standing in front of a microphone with a drink in her hand so everyone can pretend it's just jokes. Three Axiom corporate communications officers have individually tried to have her 'scheduled away' from prominent venues. She considers this her Φ120 UBC bonus.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -40,7 +40,7 @@
       "Uses humor to avoid intimacy so smoothly that even she doesn't always notice she's doing it",
       "Assumes she understands young people's experience of the city because she's watched them — she doesn't, quite"
     ],
-    "secret": "She has a complete, finished manuscript — a memoir/political history of Meridian 88 from street level across thirty years — sitting in an encrypted drive. She has not submitted it anywhere. She tells herself she's still revising. The real reason is that publishing it would require naming names, and two of those names belong to people she loves."
+    "secret": "She has a complete, finished manuscript — a memoir/political history of GLMZ from street level across thirty years — sitting in an encrypted drive. She has not submitted it anywhere. She tells herself she's still revising. The real reason is that publishing it would require naming names, and two of those names belong to people she loves."
   },
   "speech_patterns": {
     "vocabulary": "Rich, layered, shifts registers fluidly from formal to Garret slang without seam. Has a particular fondness for obsolete words she deploys precisely.",
@@ -61,7 +61,7 @@
     "A young comedian asks her for mentorship; she realizes mid-first-conversation that this person has been sent by someone to get close to her",
     "The Lowering Bar's owner is being pressured to sell to a Tessera-affiliated development entity, which would end Eudoxia's residency — she's deciding whether to go public or find another way"
   ],
-  "narrative_function": "Information source and social barometer — she knows everyone who comes through The Garret and has thirty years of accumulated context about Meridian 88 politics; quest giver via overheard information; her shows are a place where all tiers occasionally intersect.",
+  "narrative_function": "Information source and social barometer — she knows everyone who comes through The Garret and has thirty years of accumulated context about GLMZ politics; quest giver via overheard information; her shows are a place where all tiers occasionally intersect.",
   "augmentations": "Patterned irises (concentric amber/dark blue, elective cosmetic); minor laryngeal reinforcement (voice projection enhancement, installed after a polyp scare a decade ago)",
   "daily_life": "Writes from seven to noon without exception — fills actual paper notebooks, hates digital drafting; naps; arrives at The Lowering Bar by eight for her ten o'clock set most nights of the week; Mondays off, spent entirely in bed watching old media.",
   "affiliation": "Independent; The Lowering Bar has a long-term arrangement; informal advisory role with Highland Park Autonomous Zone community council",
@@ -201,7 +201,7 @@
     "Crucible Industries Cerberus-357 'Hellhound'"
   ],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Garret",
     "Flicker",
     "Tessera Corponation",
@@ -209,5 +209,25 @@
     "Silver",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Icelandic",
+    "height_cm": 172,
+    "weight_kg": 89,
+    "build": "Broad-shouldered and substantial, carried with deliberate comfort — the kind of presence that takes up space and owns it. Strong core, generous in frame but not soft; built for durability and impact.",
+    "hair_color": "Dark brown with natural silver threading throughout",
+    "hair_style": "Locs piled and pinned into an elaborate architectural structure, often adorned with small brass or copper fixtures that catch stage light",
+    "hair_length": "Long (locs reach mid-back when unbound)",
+    "eye_color": "Augmented: concentric rings of amber (outer) and dark blue (inner), creating a hypnotic diagnostic quality",
+    "skin_tone": "Rich warm brown with olive undertones, evidence of mixed heritage",
+    "complexion": "Weathered and expressive — laugh lines deeply etched around eyes and mouth, skin well-maintained but showing fifty-eight years of stage work and smoke exposure. Minimal makeup, usually just dark liner. Carries herself with the confidence of someone who has earned every line.",
+    "distinguishing_marks": [
+      "Faint scar tissue on throat, barely visible unless lit from certain angles — legacy of the polyp removal and laryngeal work",
+      "Small constellation of old burns on her left forearm (three distinct marks) from a kitchen accident in her thirties, now pale against her skin"
+    ],
+    "visible_augmentations": "Patterned irises are immediately striking and unsettling — they function like enhanced diagnostics, suggesting analytical depth. Minor scarring around the throat hints at laryngeal augmentation but is subtle enough to miss unless she's in harsh lighting. No visible chrome or subdermal plating.",
+    "posture_movement": "Commands space even while standing still. Moves with theatrical precision — every gesture deliberate, whether she's raising a hand to adjust her reading glasses or leaning into the microphone. Her laugh initiates from the diaphragm; her whole body participates. Walks with confidence bordering on swagger, despite her age.",
+    "clothing_style": "Bright, structured jackets with complex geometric or pattern work — Tier 3-4 quality, independent designer sources, never corporate. Prefers fabrics with weight and texture. Underneath: dark, simple base layers (black or charcoal), well-fitted jeans or smart trousers. Practical shoes suited for standing all night. Reading glasses (non-prescription) worn on a cord, used as a prop during performances. Minimal jewelry beyond small brass ear weights. Her style signals: I am not trying to be young, I am not trying to disappear, I am here on purpose."
+  },
+  "image_prompt": "A 58-year-old West African-Icelandic woman with rich warm brown skin and an commanding presence, standing at a microphone with a drink in hand. Her dark hair is gathered into an elaborate architectural structure of locs pinned with small brass fixtures, threaded with natural silver. Her eyes are striking augmented irises with concentric rings of amber and dark blue that feel diagnostic and piercing. She wears a brightly patterned structural jacket with geometric design, dark fitted clothing beneath, and non-prescription reading glasses on a cord. Her expression is mid-laugh, genuine and loud, with deep laugh lines visible. Stage lighting catches the brass in her hair and creates a halo effect. The background is dim and smoky — a worn underground club setting. Her posture radiates theatrical precision and earned confidence. Cyberpunk spoken word performer, gritty realism, warm theatrical lighting, documentary photography style, --ar 2:3 --v 6"
 }

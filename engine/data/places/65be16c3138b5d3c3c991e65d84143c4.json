@@ -44,8 +44,16 @@
     "Talent scouts from Laceworks venues, scouting in disguise"
   ],
   "notable_locations": [
-    "The vehicle bay stage — former fire truck garage, now Meridian's rawest music venue",
-    "The alarm bell behind the bar — Farai's quality control instrument"
+    {
+      "name": "The vehicle bay stage",
+      "description": "former fire truck garage, now Meridian's rawest music venue",
+      "tags": []
+    },
+    {
+      "name": "The alarm bell behind the bar",
+      "description": "Farai's quality control instrument",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.8988,

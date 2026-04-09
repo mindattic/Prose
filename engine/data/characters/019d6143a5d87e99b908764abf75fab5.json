@@ -43,7 +43,7 @@
       "Cannot distinguish between caution and cowardice in themselves or others",
       "Assumes everyone has an angle because they always have an angle"
     ],
-    "secret": "Chiamaka Aguilar-Annan sends anonymous tips to Meridian 88 law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Chiamaka Aguilar-Annan sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
@@ -156,7 +156,7 @@
     },
     "strengths": [
       "intimidating physical presence",
-      "encyclopedic knowledge of Meridian 88 infrastructure"
+      "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
       "grudge-holding that compromises rational decision-making",
@@ -276,5 +276,26 @@
     "The Shelf",
     "Pellucid Systems"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Spanish / Scandinavian (inferred from Aguilar and Annan surnames)",
+    "height_cm": 174,
+    "weight_kg": 62,
+    "build": "Lean and angular with visible musculature — wiry rather than bulky, all efficiency. No excess mass; every pound serves function. Posture suggests coiled readiness.",
+    "hair_color": "Dark brown, naturally, with irregular silver streaks (stress-induced premature graying, not dyed)",
+    "hair_style": "Short, practical undercut — left side shaved to the scalp, longer on top, always pulled back or gelled. Maintenance takes 5 minutes.",
+    "hair_length": "Short",
+    "eye_color": "Warm brown, alert and calculating",
+    "skin_tone": "Medium-warm complexion, olive undertones from mixed heritage",
+    "complexion": "Sharp cheekbones, angular jawline. Minimal facial hair — they keep clean-shaven or with a precise 2-day stubble. Skin bears the wear of stress: fine lines around the eyes, slight tension in the jaw. No cosmetic work; they've never cared enough to hide age.",
+    "distinguishing_marks": [
+      "Surgical scars at the base of the skull, barely visible under short hair — chrome reflex rig entry points, thin white lines running down the back of the neck.",
+      "Thin linear scars on both inner wrists — not self-harm; equipment interface scarring from early augmentation work, deliberately kept visible.",
+      "Burn scar on left shoulder blade, about 3cm across — chemical solvent from a job gone wrong, pale and mottled against their skin tone."
+    ],
+    "visible_augmentations": "Wired reflex system — visible chrome threading at the wrists and neck. Thin metallic ports gleam beneath the skin at the base of the skull. Adrenaline pump injection sites visible as small silvered nodules along the collarbone. When they move quickly, there's an audible faint mechanical hum from the spinal column augmentation. They make zero effort to conceal any of it.",
+    "posture_movement": "Moves with controlled precision — no wasted motion. Sits slightly forward, weight balanced on the balls of their feet. When still, there's visible tension in the shoulders and hands. They have a habit of flexing their fingers in rapid sequences, testing the chrome's response. Eye contact is direct and unwavering. Breathing is shallow and controlled, even at rest.",
+    "clothing_style": "Tier 4 utilitarian — practical, durable, dark. Black synthweave cargo pants with reinforced knees and thigh pockets. Fitted charcoal compression shirts designed for augmentation visibility and concealment (they choose visibility). Worn leather jacket over everything, pre-collapse era or good knockoff, treated with hydrophobic coating. Scuffed tactical boots with grip soles. No jewelry except a simple matte-black band on the right index finger (a talisman or reference point they don't discuss). Clothing shows wear but is always maintained — they understand that gear failure kills you."
+  },
+  "image_prompt": "Portrait of a 43-year-old nonbinary cyberpunk saboteur with dark skin and sharp angular features, short dark hair with silver streaks and an undercut, warm brown eyes. Visible chrome augmentations at wrists, neck, and base of skull with thin metallic ports gleaming. Surgical scars visible on the neck. Wearing a worn leather jacket over a fitted dark compression shirt, tactical pants. Tense posture, hands positioned as if testing augmentations. The Circuit neon-lit district background with distant purple and cyan lighting, gritty urban decay. Cinematic noir lighting, sharp shadows across face. Highly detailed skin texture, augmentation hardware rendered with metallic precision. Direct, unflinching gaze. --ar 2:3 --v 6"
 }

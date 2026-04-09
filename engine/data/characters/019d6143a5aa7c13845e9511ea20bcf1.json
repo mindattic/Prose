@@ -13,7 +13,7 @@
   "age": 49,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Lake Shore and Wacker",
-  "description": "Altan Navarro-Afriyie is compact and densely muscled, built low to the ground like something designed to survive impacts. At 49, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nBorn and raised in Meridian 88, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a courier out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Altan Navarro-Afriyie describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Altan Navarro-Afriyie is compact and densely muscled, built low to the ground like something designed to survive impacts. At 49, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a courier out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Altan Navarro-Afriyie describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.1,
@@ -274,7 +274,7 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Heritage Vault",
     "Kang-Petrov Arms KPA-15 'Diaspora'",
     "The Gradient Compact",
@@ -283,5 +283,27 @@
     "Slagworks Industrial",
     "Pellucid Systems"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Latin American (Spanish/Mexican) / West African (Ghanaian/Nigerian)",
+    "height_cm": 158,
+    "weight_kg": 62,
+    "build": "Compact and densely muscled — low center of gravity, built for impact absorption and explosive movement. No wasted mass; every kilogram serves function. Shoulders and forearms disproportionately developed from climbing work.",
+    "hair_color": "Dark brown with premature silver threading at temples",
+    "hair_style": "Pulled back in a tight, practical braid; functional, not aesthetic",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Deep brown, alert and measuring",
+    "skin_tone": "Medium-warm complexion — olive undertones from Latin heritage, with deeper richness from West African lineage",
+    "complexion": "Weathered by two decades of field work; fine lines radiating from eyes and mouth. Minimal grooming beyond necessity — no cosmetics, no softness. Skin shows minor scarring consistent with urban hazard exposure.",
+    "distinguishing_marks": [
+      "Thin white scar running 4cm along right jawline — impact injury, poorly healed",
+      "Network of faint surgical scars around both wrists and ankles where gecko-grip implants interface with skin",
+      "Burn scar on left inner forearm (8cm long) — chemical exposure, pre-augmentation era",
+      "Small tattoo on right collarbone — abstract geometric pattern, faded, pre-dating chrome work by decades"
+    ],
+    "visible_augmentations": "Wired reflexes visible as faint chrome threading along temples and down the sides of neck — subcutaneous lines catching light. Fingertip and toe-pad gecko-grip implants are visibly metallic at edges where synthetic material meets skin, most obvious on hands when they curl or grip. Adrenaline pump hardware visible as subtle mechanical articulation at base of skull when head is tilted.",
+    "posture_movement": "Economical, predatory grace — moves like someone who has optimized every gesture. Stands with weight balanced on balls of feet, ready for vertical or horizontal movement. Hands at rest near solar plexus. Eyes constantly scanning, cataloging exits and threats. No nervous fidgeting — stillness is absolute or motion is decisive.",
+    "clothing_style": "Tier 3-4 utilitarian: matte-black synthetic jacket with reinforced panels and internal pockets for data storage and small packages. Fitted tactical pants in charcoal with sealed cargo pockets. Magnetically-attached shoulder harness visible under jacket. Steel-toed climbing boots (custom-fitted for gecko-grip work). Minimal jewelry — only a worn titanium wrist cuff, possibly holding encrypted storage. No logos or corp affiliation markers. Everything speaks to function over identity."
+  },
+  "image_prompt": "portrait of a 49-year-old mixed-heritage woman courier, compact muscular build, medium brown skin with olive undertones, dark hair with silver threading pulled in tight braid, deep alert brown eyes, visible chrome augmentations threading neck and temples, metallic gecko-grip fingertips, weathered face with scar on jawline, standing in industrial old harbor warehouse setting with shipping containers and neon sign glow, wearing matte black tactical jacket with reinforced panels and fitted charcoal pants, hands positioned ready, cinematic cyberpunk lighting with cool blue and amber rim light, gritty urban atmosphere, photorealistic character study, --ar 2:3 --v 6"
 }

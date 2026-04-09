@@ -244,5 +244,26 @@
     "Pellucid Systems",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Japanese / Sudanese",
+    "height_cm": 158,
+    "weight_kg": 62,
+    "build": "Compact and densely muscled, economical in frame. Years of standing, lifting patients, and moving quickly through clinic corridors have built functional strength without bulk. No softness.",
+    "hair_color": "Black with prominent grey threading throughout",
+    "hair_style": "Pulled back tightly, usually in a braid or secured knot. Practical. Never decorative.",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Dark brown, unremarkable",
+    "skin_tone": "Dark olive with warm undertones",
+    "complexion": "Weathered but healthy. Fine lines around eyes and mouth from squinting at work and expressions of concentration. Heavy, natural black eyebrows she has never altered. No makeup. Slight tension in the jaw at rest. Her face defaults to a concerned expression even in neutral state — a biological resting expression, not an emotional one.",
+    "distinguishing_marks": [
+      "Small linear scar on left index finger from a scalpel slip during her first year at the clinic",
+      "Faint white line across her right knuckle from a door latch accident in her thirties",
+      "Thin callus across her palms from years of manual medical work"
+    ],
+    "visible_augmentations": "Subdermal health-monitoring implant visible as a faint geometric outline beneath the skin of her inner left wrist — a raised rectangular form about 3cm long, barely noticeable unless specifically looked for. No other visible augmentations.",
+    "posture_movement": "Alert, efficient posture. She moves with purpose and minimal wasted motion. Stands slightly forward on the balls of her feet, ready to respond. Her hands move deliberately — a practiced bedside manner that reads as both competent and careful. Rarely sits still. When she does sit, she sits at the edge of seats, as if prepared to stand again at any moment.",
+    "clothing_style": "Her clinic jacket — faded grey-blue, synthetic blend, bearing small stains and worn cuffs — is her default outer layer regardless of shift status. Beneath: simple t-shirts or long-sleeved shirts in muted colors (grey, black, dark green). Worn utility pants with deep pockets for medical supplies and patient notes. Scuffed, functional shoes with arch support. No jewelry. Minimal personal ornamentation. Tier 4 working-class, practical to the point of invisibility. The clinic jacket is her uniform and her shield, and she knows it."
+  },
+  "image_prompt": "Portrait of Dara Kurosawa-Mubarak, a 45-year-old Japanese-Sudanese woman in a low-cost clinic setting, cyberpunk 2226. Compact, densely muscled build, dark olive skin, heavy natural black eyebrows, tight black curls with grey threading pulled back tightly. Her face defaults to a concerned expression. Wearing a faded grey-blue synthetic clinic jacket over simple dark clothing. Inner left wrist shows faint subdermal health-monitoring implant outline beneath skin. Standing in a narrow clinic hallway with warm fluorescent lighting, worn metal fixtures, and medical supply shelves. Exhausted but clear-eyed. Alert posture, hands ready. Gritty, realistic cyberpunk workplace aesthetic. Photography-style realism, shallow depth of field focusing on face and wrist implant. Warm tungsten clinic lighting with shadows. Tier 4 working-class authenticity. --ar 2:3 --v 6"
 }

@@ -216,5 +216,26 @@
     "Chimera-Null",
     "Slagworks Industrial"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Eastern European / Polynesian (Samoan)",
+    "height_cm": 188,
+    "weight_kg": 102,
+    "build": "Heavy-shouldered and solid, the residual athleticism of a younger man settled into functional mass. Wide chest, thick neck, forearms that still carry definition despite age. No fat softness—compact density from decades of standing in ORs.",
+    "hair_color": "Dark brown with grey at temples and throughout the beard",
+    "hair_style": "Close-cropped on sides, slightly longer on top, kept precisely neat",
+    "hair_length": "Short",
+    "eye_color": "Dark brown with faint silver augmentation luminescence visible under surgical lighting",
+    "skin_tone": "Deep brown with warm undertones, weathered and clear",
+    "complexion": "Weathered but well-maintained. Deep lines around the eyes and mouth from years of surgical concentration and emotional containment. Meticulously groomed—the beard is trimmed to exact specifications, no stubble. Skin shows minor scarring on knuckles (occupational), no visible lesions or blemishes. The default expression is neutral bordering on severe; the face reads as someone who has catalogued every variation of human trauma and filed them away.",
+    "distinguishing_marks": [
+      "Thin surgical scar along the right temple from a retracted scalp incision during his own lumbar surgery, barely visible but present in certain light",
+      "Faint white marks on both palms where haptic implants interface with the skin surface—only noticeable if you know to look",
+      "Small tattoo on the inside of his left wrist: a traditional Samoan star pattern (tatau-style, three points), done decades ago in a style he has never explained"
+    ],
+    "visible_augmentations": "Bilateral optical implants visible as faint silvery-grey rings around the iris under bright light; minute servo micromovements visible when he focuses on small objects. Hands show no external augmentation scarring due to surgical-grade implant integration—the haptics are subcutaneous, but the precision and speed of his hand movements mark them as augmented to anyone watching him work. Occasionally a faint electromagnetic hum from the lumbar spine implants under his shirt during diagnostic scans, but otherwise invisible.",
+    "posture_movement": "Moves with deliberate economy—no wasted motion. Walks slowly through corridors despite his height, as if carrying weight that has nothing to do with body mass. In the OR, he becomes motionless except for his hands and eyes; all concentration funnels downward. Stands with his shoulders slightly forward, spine reinforced by titanium, hands always at rest position—palms down, fingers slightly curved as if on the edge of a surgical field.",
+    "clothing_style": "Surgical scrubs in the hospital (navy blue, Aurochs-issue, worn soft from washing), always immaculate before surgeries despite the catastrophic state after. Outside the hospital (rare observation): plain charcoal or dark grey clothing, well-fitted but anonymous—no logos, no affectation. A single silver chain around his neck under his shirt (never visible but known to exist). Work boots rather than sneakers, practical and unremarkable. Tier 3 functional style: clothes that serve purpose, purchased for durability, replaced when worn rather than for novelty."
+  },
+  "image_prompt": "A 51-year-old trauma surgeon with deep brown skin, close-cropped greying hair, and a meticulously trimmed dark beard, standing in a clinical Tier 3 hospital OR, surgical scrubs navy blue and immaculate. Eastern European and Samoan heritage visible in facial structure and bearing. Tall and heavy-shouldered with the settled solidity of long-held focus. Dark eyes with faint silver augmentation rings visible under bright surgical lighting. Hands poised in surgical rest position, precision and speed implicit in the positioning. Behind him a partially visible personal shrine with Samoan navigation E.L.F. artifacts on his office desk. Harsh clinical overhead lighting, cool whites and greys, shadows under the cheekbones from concentration. Atmosphere of absolute competence and emotional distance, the default expression neither warm nor cold but fundamentally neutral. Cyberpunk medical facility aesthetic, 2226, photorealistic, intense focus, no sentimentality. --ar 2:3 --v 6"
 }

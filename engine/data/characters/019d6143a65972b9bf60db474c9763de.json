@@ -216,5 +216,26 @@
     "The Pure Hand",
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Hungarian / Mongolian",
+    "height_cm": 178,
+    "weight_kg": 89,
+    "build": "Broad-shouldered and compact through the torso, built from two decades of heavy mechanical work — dense muscle without bulk, with weathered forearms that speak to repetitive strain and controlled strength",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Practical short wrap, typically covered with a work cap on the shop floor",
+    "hair_length": "Short",
+    "eye_color": "Brown (natural); right eye contains faint magnification lens visible on close inspection",
+    "skin_tone": "Warm medium brown with amber undertones",
+    "complexion": "Weathered and pragmatic — minimal grooming beyond functional maintenance. Face shows the patient set of someone accustomed to long problem-solving. Hands perpetually stained with grease and machine oil despite regular washing; creases around the eyes from squinting at fine mechanical detail",
+    "distinguishing_marks": [
+      "Twin parallel burn scars running down both forearms from wrist to mid-forearm, pale and smooth from two-decade-old welding accident",
+      "Bioluminescent skin modification panels along both forearms (inner and outer) in blue-green, visible when sleeves roll up, pulsing faintly in low light",
+      "Bioluminescent modification along the collarbones in matching blue-green, visible at the neck when shirt collar is open"
+    ],
+    "visible_augmentations": "Bioluminescent subcutaneous panels on forearms and collarbones (blue-green, aesthetic). Structural wrist augmentation visible as subtle reinforcement plating at both wrists when hands are examined closely. Right eye contains optical magnification lens (subtle but detectable on direct eye contact, faint crystalline structure within the iris)",
+    "posture_movement": "Economical and deliberate — no wasted motion. Stands with weight balanced, hands often at rest but poised for immediate work. Moves with the patience of someone who has learned that rushing breaks things and ruins margins. Direct eye contact, minimal expressiveness, but not hostile — the affect of someone who communicates primarily through work quality rather than warmth",
+    "clothing_style": "Tier 4 practical — grey or blue NCORP-branded work coveralls or sturdy canvas pants with reinforced knees and pockets. Plain fitted undershirt, usually dark. Heavy-duty work boots (current model: Goodyear Vulcan, resoled twice). Sleeves rolled or cut at forearms to accommodate augmentations and allow light to catch the bioluminescence. Worn canvas work cap with an illegible logo. A single silver ring on the left hand (no obvious sentimentality — looks utilitarian). Grease-stained leather apron when doing detailed work. No jewelry beyond the ring. Clothes carry the authentic patina of shop work — not a costume"
+  },
+  "image_prompt": "A nonbinary mechanic in their late thirties with warm brown skin and short dark hair, wearing rolled-sleeve work coveralls stained with machine grease, standing in a cyberpunk vehicle repair bay lit by harsh fluorescent work lights. Their forearms and collarbones glow with faint bioluminescent blue-green panels beneath their skin, visible in the low-light corners of the garage. Heavy-duty work boots, weathered leather work apron, hands deeply creased and stained. Behind them: half-dismantled vehicles, industrial welding equipment, spare engine components. Their expression is neutral and focused, eyes sharp with the precision of someone who has spent decades with fine mechanical work. Realistic cyberpunk, gritty underground setting, warm and cool lighting contrasts, mechanical detail focus, professional photography lighting, 2226 neo-noir aesthetic --ar 2:3 --v 6"
 }

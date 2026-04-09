@@ -242,5 +242,25 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "Vietnamese / Hungarian / Nigerian",
+    "height_cm": 162,
+    "weight_kg": 51,
+    "build": "Slight and angular, all wiry muscle and sharp angles from years of standing over a cart, no excess mass anywhere. The posture of someone constantly in motion even when still.",
+    "hair_color": "Natural deep black with chromatic dye gradient to violet at the tips",
+    "hair_style": "Shoulder-length, usually pulled back or tucked behind the mobile cat ears during work shifts; well-maintained despite budget constraints",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown, quick and observant",
+    "skin_tone": "Deep warm brown with even complexion",
+    "complexion": "Sharp facial features, high cheekbones, defined jawline. Skin is clean and well-kept but shows the minor weathering of someone who works outdoors in all seasons. No visible scarring on the face.",
+    "distinguishing_marks": [
+      "Heat-callused patches on right thumb and forefinger, slightly darker and toughened from chronic exposure to steam spout — occupational rather than augmented",
+      "Faint discoloration across the dorsal surface of both hands from years of minor steam burns that never quite fully healed, creating a mottled pattern"
+    ],
+    "visible_augmentations": "Tawny-furred cat ears with full mobility and expressive range, set naturally into the head. Ears pin back noticeably when annoyed or concentrating. No other visible augmentations; the chromatic hair dye is cosmetic and non-augmented.",
+    "posture_movement": "Restless economy of motion — never wasted movement, but never still either. Tends to shift weight from foot to foot, hands always doing something (stirring, checking temperature, wiping). The cat ears are constantly reading their emotional state; someone learning to read Pham can simply watch the ears. When focused on a problem (whether customer service or urban planning coursework), the entire body becomes very still and the ears flatten slightly in concentration.",
+    "clothing_style": "Tier 4 practical wear. Food-stained apron over durable synthetic-blend work clothes (dark colors, stain-forgiving). Comfortable slip-on shoes with heavy-duty soles for long shifts. Usually wears a lightweight insulated vest or jacket over the apron in cooler months. One small piece of jewelry — a thin silver pendant or worn braided cord — worn daily. Hair dye is the one indulgence; everything else is functional and well-maintained but clearly budget-conscious."
+  },
+  "image_prompt": "A 24-year-old nonbinary Vietnamese-Hungarian-Nigerian street vendor with deep warm brown skin and sharp, angular features, standing behind a noodle and broth cart in a cyberpunk night market. They have shoulder-length natural black hair with violet-dyed tips, and most distinctively, expressive tawny-furred cat ears that pin back expressively on their head. Their dark eyes are quick and observant. Slight build, wiry muscle, hands showing heat-callus patterns from years of work. Wearing a stained food-service apron over practical dark synthetic work clothes and an insulated vest. The cart is steaming with fragrant broth behind them; warm ambient lighting from cart LEDs and neon signs reflecting off the water of Old Harbor in the background. Night market setting, crowded and atmospheric, rain-slicked pavement, the ears are clearly the focal point showing emotion and character. Cyberpunk aesthetic but grounded and real, not overly chrome. --ar 2:3 --v 6"
 }

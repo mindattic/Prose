@@ -11,7 +11,7 @@
   "species": "robot",
   "gender": "none",
   "pronouns": "he/him (earned through decades of Old Harbor presence)",
-  "role": "Autonomous field medic operating in Old Harbor — former military surgical unit repurposed for civilian medicine in the most underserved zone in Meridian 88",
+  "role": "Autonomous field medic operating in Old Harbor — former military surgical unit repurposed for civilian medicine in the most underserved zone in GLMZ",
   "age": 34,
   "status": "active",
   "location": "Old Harbor — operates from a converted shipping container near the bioluminescent shoreline. The container is a clinic. The clinic never closes., near Michigan Ave South and Cermak",
@@ -301,5 +301,28 @@
     "Steel",
     "Rust"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "N/A — Hagen-Krupp Military manufacture (German-Swiss corporate engineering)",
+    "height_cm": 212,
+    "weight_kg": 310,
+    "build": "Tall, angular, deliberately skeletal — designed for functional reach and precision rather than strength. Bipedal chassis with long articulated joints. Posture optimized for surgical positioning; naturally bends forward slightly.",
+    "hair_color": "N/A",
+    "hair_style": "N/A",
+    "hair_length": "N/A",
+    "eye_color": "Soft electric blue (quad optical cluster arranged in diamond pattern — two primary forward-facing, two lateral)",
+    "skin_tone": "Rust-brown military-grade steel, heavily oxidized and patched",
+    "complexion": "Weathered metal chassis. Thirty years of salt corrosion visible as orange-brown pitting across shoulders and upper torso. Welded repairs in mismatched steel colors — some silver, some gunmetal gray. No synthetic skin. Four surgical manipulators hang at rest along left flank; two heavier general-purpose arms retract against right side. All limbs show wear: scored metal, hydraulic seals weeping faint iridescent fluid.",
+    "distinguishing_marks": [
+      "Deep stress fracture running diagonally across chest plate from lower left to upper right — sealed with surgical-grade adhesive, never properly repaired",
+      "Series of blast scars on left shoulder — concave impact damage from shrapnel, circa 2170s Pacific theater, never replaced",
+      "Hagen-Krupp manufacturer's mark (faded stamped logo) on sternum beneath corrosion",
+      "Hand-etched initials along right arm joint — 'J.M.' — names of a patient who did not survive, carved by Doc Rusty himself",
+      "Copper-colored hydraulic staining around all joint articulations, permanent and spreading"
+    ],
+    "visible_augmentations": "Everything visible is augmentation. Six articulated arms. Quad optical cluster with active blue luminescence. Exposed surgical suite mounted in torso cavity — retractable sterilization arms, micro-welders, precision needle feeds, vacuum-sealed instrument arrays. Internal chassis visible through gaps in corroded plating. No attempt at humanization or cosmetic concealment.",
+    "posture_movement": "Moves with mechanical precision but organic patience. Forward-leaning stance at rest — head and shoulders angled as if perpetually examining something. Walks with careful, deliberate footfalls despite terrain-adaptive systems (terrain is Old Harbor; nothing is level). When focused on a patient, all articulations synchronize into a state of absolute stillness — a predator made of steel, holding perfectly still. Hands (all six) move with surgical grace; general-purpose arms move with utilitarian directness. Does not fidget. Does not waste motion.",
+    "clothing_style": "No clothing. Exposed chassis and internal systems. Operates in a converted shipping container clinic decorated with salvaged materials — patients provide blankets, tarps, and fabric scraps that hang around the workspace. Doc Rusty is decorated by the work itself: old bloodstains baked into crevices, surgical tape wrapped around failing joints, patient photographs taped to his torso (with patient consent), a stethoscope that somehow still works, looped around his upper frame like a talisman."
+  },
+  "image_prompt": "A tall angular military-grade surgical robot standing in a dim shipping container clinic, rust-brown corroded steel chassis with mismatched silver and gray welded patches, four articulated surgical arms hanging at rest, two heavy general-purpose arms folded against torso, quad optical cluster glowing soft electric blue arranged in diamond pattern, exposed internal surgical systems visible through gaps in plating, hydraulic fluid seeping from worn joints, deep stress fractures and blast scars across torso, bioluminescent harbor water glowing faintly through open container door behind, clinical amber lighting mixing with blue bioluminescence, patient medical charts and photographs taped to metal body, cyberpunk field medicine, hyper-detailed mechanical weathering, cinematic depth of field, 30 years of salt-air corrosion visible as orange-brown pitting, sci-fi realism, –ar 2:3 –v 6"
 }

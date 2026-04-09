@@ -260,5 +260,27 @@
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Déjà Vu"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Igbo-Polish diaspora)",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, all restless kinetic energy — lean muscle without bulk, built for sustained motion rather than strength. Her frame suggests someone who moves constantly and eats irregularly.",
+    "hair_color": "Natural deep brown-black",
+    "hair_style": "Wrapped in rotating printed cotton fabrics — geometric patterns, protest slogans, recycled textile prints; when unwrapped, kept in close braids or natural texture coils",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Deep brown, with visible ocular implant hardware around the iris — micro-recording lenses catch light with a subtle iridescent sheen",
+    "skin_tone": "Deep warm brown with underlying red undertones",
+    "complexion": "Sharp, angular features — high cheekbones, prominent nose, defined jawline. Skin is clear but weathered by irregular sleep and constant outdoor movement. Dark circles under her eyes are permanent fixtures. Her expression defaults to evaluative intensity.",
+    "distinguishing_marks": [
+      "Thin scar along her left temple, about 3cm, from a crowd-control baton strike during an enforcement sweep in 2224",
+      "Subvocal microphone implant visible as a faint line of scar tissue along the right side of her neck, just below the jawline",
+      "Small tattoo on her left inner wrist: a frequency waveform in black ink, self-done quality",
+      "Calluses on her fingers from constant equipment handling and repairs"
+    ],
+    "visible_augmentations": "Ocular recording implants are immediately visible — the hardware catch-light around her irises, slight mechanical glint when she blinks or shifts focus. The subvocal mic scar is visible only when her neck is exposed. The neural filter is entirely subcutaneous — not visible.",
+    "posture_movement": "Never fully still. Even seated, her hands are working — adjusting her wrap, checking equipment, scripting notes with worn stylus on recycled paper. She moves through space with the efficiency of someone who has mapped every alley and shortcut in Old Harbor. Her gait is quick and purposeful. Her attention cycles visibly — scanning faces, frequencies, the environment for usable information. When she focuses on someone, it's complete but analytical; she watches the way a predator watches terrain.",
+    "clothing_style": "Tier 4 working-class, deliberately anti-corporate. Worn black utility pants with multiple pockets and repair patches. Layered tops — often a faded printed tee under a modified surplus military jacket with circuit-pattern embroidery added by hand. Her wrap-fabric rotates but always carries visual weight — protest imagery, community symbols, recycled materials. Boots are scuffed, well-maintained, practical for running. She wears a secondary microphone jack visible at her collarbone on a frayed cord. Her only jewelry is a series of mismatched silver rings, gifts from contacts or salvage."
+  },
+  "image_prompt": "A 24-year-old woman of West African and Eastern European heritage, compact build, deep brown skin, standing in a dimly lit Old Harbor street at dusk. She wears a faded printed tee under a modified military jacket with hand-stitched circuit patterns, black utility pants with repair patches. Her natural hair is wrapped in bold geometric-patterned cotton fabric. Her eyes are sharp and evaluative with visible ocular implant hardware catching light. Subvocal microphone scar visible along her neck. She holds a handheld recorder device, in mid-motion, hands working with restless energy. Urban cyberpunk aesthetic, gritty street-level, neon signs reflecting off wet pavement behind her, warm tungsten streetlights mixing with cool blue neon glow, moody cinematic lighting, shallow depth of field focusing on her face and hands, documentary journalism energy, Tier 5 district atmosphere, intricate detail, photorealistic --ar 2:3 --v 6"
 }

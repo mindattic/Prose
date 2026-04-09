@@ -232,5 +232,25 @@
     "Gold",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African Yoruba / Polish / Azerbaijani",
+    "height_cm": 174,
+    "weight_kg": 62,
+    "build": "Lean and wiry, all restless kinetic energy. Narrow shoulders that seem to vibrate slightly even at rest. The kind of body that suggests perpetual motion rather than strength.",
+    "hair_color": "Dark brown, natural with occasional premature graying at the temples",
+    "hair_style": "Undercut fade — shaved close on sides and back, erupting into a soft, irregular 5-8cm cloud on top, deliberately unkempt",
+    "hair_length": "Short on sides, medium-long on crown",
+    "eye_color": "Warm brown (base), modified with active geneware iris pattern of concentric gold rings that shimmer and shift during performance states",
+    "skin_tone": "Rich warm brown, a blend of his father's deeper Lagos heritage and his mother's lighter Slavic undertones",
+    "complexion": "High, prominent Slavic cheekbones contrasting with a broad, expressive nose. Broad face with strong jaw. Skin shows the wear of late nights and inconsistent hydration — slight tension around the eyes, a few premature lines radiating from the corners of his mouth. Clean-shaven or sporting a day or two of scruff depending on venue availability. Lips are full and perpetually mobile, even at rest.",
+    "distinguishing_marks": [
+      "Faint scar tissue along the right side of his jaw, approximately 3cm long, from a childhood incident in Lagos — barely visible unless he angles his head into certain light",
+      "Small burn mark on the inside of his right forearm near his wrist, roughly 1.5cm diameter, from a stray plasma cutter during a gig economy delivery job gone wrong"
+    ],
+    "visible_augmentations": "The only immediately visible augmentation is his iris modification — the concentric gold ring pattern becomes spectacularly active during performance, cycling and shifting in response to adrenaline. The subdermal rhythm implant is not externally visible but creates a subtle pulsing beneath the skin of his right forearm if observed closely during intense concentration. No visible chrome, no cybernetic limbs.",
+    "posture_movement": "Constantly in motion even when still — weight shifting from foot to foot, fingers tapping, shoulders rolling. When speaking, his hands are always already moving, ahead of his mouth. He has the nervous energy of someone who's learned to weaponize his inability to stand still. His default expression is a half-smile, eyes wide and scanning. Moves through space with the precision of someone used to small venues and tight crowds — economical, angular, weaving.",
+    "clothing_style": "Intentional chaos dressed as accident. Layers of secondhand everything: vintage band tees under partially unbuttoned overshirts, three visible collars at once, mismatched sleeves of different fabrics (one worn denim, one synthetic mesh, one linen). Pants are usually loose-fitted cargo or vintage tech-weave, pockets loaded with crumpled notes and voice recorder modules. Shoes are worn but functional — affordable gig-worker boots that can handle Pilsen's broken streets. A faded, oversized jacket that might have been corporate-issue once, now bearing a constellation of small pins and hand-stitched patches from venues and collectives. Accessories are minimal but deliberate: a frayed wristband in his crew colors, a borrowed chronometer he keeps forgetting to return. Everything worn just slightly inside-out or backwards, a visual manifestation of his material's logic."
+  },
+  "image_prompt": "cyberpunk portrait of a 24-year-old Black-Polish-Azerbaijani male, lean wiry build, short sides with soft curled cloud of dark hair on top, striking Slavic cheekbones, warm brown skin, hooded Azerbaijani eyes glowing with concentric gold ring iris augmentations mid-shimmer, open-mouthed mid-laugh or mid-speech, hands gesturing dynamically, wearing intentionally chaotic layers of secondhand clothing — three mismatched collars visible, vintage mesh and denim sleeves, oversized faded jacket with pins, worn cargo pants, tapping nervous restless energy visible in posture, underground Pilsen warehouse venue background with dim neon greens and rust-colored brick, dramatic side-lighting catching the gold iris glow, intimate concert lighting, 35mm cyberpunk indie film aesthetic, shallow depth of field, hyper-expressive face, mid-performance intensity --ar 2:3 --v 6"
 }

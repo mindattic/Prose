@@ -196,5 +196,25 @@
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "SynapTech IrisBloom Ocular Color Modulator"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Portuguese / Turkish",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "build": "Lean and angular with pronounced shoulders and a slight forward curve to the spine from prolonged seated work. Long-limbed, almost ascetic in frame, with minimal body fat.",
+    "hair_color": "Black",
+    "hair_style": "Close-cropped, military-neat, maintained for minimal cab-cab friction and sweat management",
+    "hair_length": "Short",
+    "eye_color": "Iridescent peacock-pattern — naturally dark brown base with engineered blue-green-violet shimmer that shifts with light and pupil dilation; geneware modification performed at age 19",
+    "skin_tone": "Warm dark brown with subtle reddish undertones, deepened by years of artificial station lighting and occasional shoreline exposure",
+    "complexion": "Long, lean face with defined cheekbones and a slight forward-set jaw. Skin is clear but shows minor stress lines around the eyes and a perpetual tension across the forehead from focused concentration. Fingernails are consistently clean and well-maintained, sometimes with visible calluses from cab controls.",
+    "distinguishing_marks": [
+      "Faint white scar on the inner left wrist, approximately 3cm long, from a childhood accident — barely visible unless looking closely",
+      "Small burn mark on the back of right hand near knuckle, roughly 1cm diameter, from an old brake-line incident early in his operator career"
+    ],
+    "visible_augmentations": "Peacock-pattern iridescent irises are immediately striking and clearly geneware. Ferrogate-issued neural timing patch is subcutaneous at the base of the skull — invisible unless specifically sought, but a trained eye might catch a faint linear scar at the hairline where it was installed.",
+    "posture_movement": "Habitually slight forward lean even when standing, as if anticipating the need to engage controls. Neck carries perpetual tension. Movements are precise and economical — no wasted motion. When walking, takes measured, deliberate strides. Sits with ankles crossed or feet firmly planted. Eyes move with intense focus before head follows.",
+    "clothing_style": "Tier 3-4 working class. Off-shift: well-maintained dark synthetic pants, long-sleeved shirt in muted colors (grey, charcoal, dark blue) for sun protection and concealment of sweat. Ferrogate-issued operator jacket — dark blue with reflective piping and Line 7 patches, worn during shifts. Practical shoes with good grip. Minimal jewelry except for a worn analog wristwatch and a simple brass ring on left middle finger. Everything is clean, functional, and chosen for durability over style. No visible corporate branding outside the transit uniform."
+  },
+  "image_prompt": "Cyberpunk portrait of a 34-year-old West African-Portuguese-Turkish male transit operator, lean angular build, long face with defined cheekbones, close-cropped black hair, warm dark brown skin. Striking iridescent peacock-pattern irises that shimmer blue-green-violet in light. Slight forward posture suggesting years of focused seated work, tension visible around eyes and forehead. Wearing dark blue Ferrogate Transit operator jacket with Line 7 patches and reflective piping, grey long-sleeved shirt underneath. Clean fingernails, worn brass ring on left hand. Standing in a dimly-lit transit station platform with tunnel entrance visible behind, fluorescent overhead lighting casting harsh shadows. Moody, focused expression. Technical, grounded cyberpunk realism with attention to occupational detail and weariness. Shot at chest level. --ar 2:3 --v 6"
 }

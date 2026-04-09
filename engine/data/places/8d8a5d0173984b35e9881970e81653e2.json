@@ -7,7 +7,7 @@
     "Body Wall",
     "The Hearth"
   ],
-  "description": "The Warm Wall is a freestanding stone wall, two meters high and four meters wide, now enclosed within the interior of a mixed-use commercial building designated Old Harbor 12 on the Meridian 88 waterfront. It is the oldest known object in the city. Not the oldest building — the oldest thing. It predates the city. It predates the record of the city. It predates every structure, document, and artifact that has been found in the region. Carbon dating of organic material trapped in the stone's mortar joints returns dates that are, according to the laboratory that processed them, \"not consistent with any known construction timeline in the Great Lakes region.\" They declined to publish the specific dates. The wall is old. It is warm. It does not explain itself.\n\nThe wall maintains a constant surface temperature of 37.2 degrees Celsius — human body temperature. This has been measured continuously since monitoring began in 2091 and has not deviated by more than 0.01 degrees in over a century of observation. The heat is endogenous: it comes from the stone itself, not from any external or internal source. Thermal imaging shows uniform temperature across the entire surface with no hot spots, no gradients, no indication of a localized heat source. The stone is warm the way a body is warm: everywhere, evenly, as a fundamental property of its being.\n\nThe building was constructed around the wall in 2089 after demolition attempts failed. The demolition crew's refusal to continue is a matter of public record: the crew chief, a woman named Beatrice Nwankwo, filed a report stating that the wall \"does not want to come down\" and paid the resulting fine for non-technical language in an official document rather than retract the statement. Subsequent engineering assessments confirmed that the wall could theoretically be demolished — the stone is limestone, hard but not indestructible — but no crew has been willing to attempt it since Nwankwo's team. The wall was incorporated into the building as a feature wall and is now the back wall of a tea shop operated by Min-Ji Adeyemi.\n\nAdeyemi reports that customers touch the wall constantly. They press their palms against it. They lean against it. They close their eyes. When asked why, the most common response is that the wall feels \"like being held.\" Several customers have described the sensation of a heartbeat in the stone — not a vibration that instruments can detect, but a rhythm felt through the skin that matches no mechanical or geological process. The wall is warm. It has always been warm. No one knows why. The tea shop is the most popular establishment in Old Harbor. No one talks about why.",
+  "description": "The Warm Wall is a freestanding stone wall, two meters high and four meters wide, now enclosed within the interior of a mixed-use commercial building designated Old Harbor 12 on the GLMZ waterfront. It is the oldest known object in the city. Not the oldest building — the oldest thing. It predates the city. It predates the record of the city. It predates every structure, document, and artifact that has been found in the region. Carbon dating of organic material trapped in the stone's mortar joints returns dates that are, according to the laboratory that processed them, \"not consistent with any known construction timeline in the Great Lakes region.\" They declined to publish the specific dates. The wall is old. It is warm. It does not explain itself.\n\nThe wall maintains a constant surface temperature of 37.2 degrees Celsius — human body temperature. This has been measured continuously since monitoring began in 2091 and has not deviated by more than 0.01 degrees in over a century of observation. The heat is endogenous: it comes from the stone itself, not from any external or internal source. Thermal imaging shows uniform temperature across the entire surface with no hot spots, no gradients, no indication of a localized heat source. The stone is warm the way a body is warm: everywhere, evenly, as a fundamental property of its being.\n\nThe building was constructed around the wall in 2089 after demolition attempts failed. The demolition crew's refusal to continue is a matter of public record: the crew chief, a woman named Beatrice Nwankwo, filed a report stating that the wall \"does not want to come down\" and paid the resulting fine for non-technical language in an official document rather than retract the statement. Subsequent engineering assessments confirmed that the wall could theoretically be demolished — the stone is limestone, hard but not indestructible — but no crew has been willing to attempt it since Nwankwo's team. The wall was incorporated into the building as a feature wall and is now the back wall of a tea shop operated by Min-Ji Adeyemi.\n\nAdeyemi reports that customers touch the wall constantly. They press their palms against it. They lean against it. They close their eyes. When asked why, the most common response is that the wall feels \"like being held.\" Several customers have described the sensation of a heartbeat in the stone — not a vibration that instruments can detect, but a rhythm felt through the skin that matches no mechanical or geological process. The wall is warm. It has always been warm. No one knows why. The tea shop is the most popular establishment in Old Harbor. No one talks about why.",
   "atmosphere": {
     "sights": [
       "The wall itself — rough limestone, ancient, visually unremarkable except for the faint shimmer of warmth on its surface",
@@ -37,7 +37,7 @@
     "The wall's resistance to demolition raises questions about what would happen if someone succeeded"
   ],
   "opportunities": [
-    "Understanding — the wall may be a clue to the nature of Meridian 88's other anomalies",
+    "Understanding — the wall may be a clue to the nature of GLMZ's other anomalies",
     "Comfort — the wall provides something that people need, even if no one can define what it is",
     "History — the wall is the oldest thing in the city. Its origin is the city's deepest mystery."
   ],
@@ -48,7 +48,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "Old Harbor waterfront, Meridian 88",
+      "Old Harbor waterfront, GLMZ",
       "Old Harbor 12 commercial building",
       "Adeyemi's Tea Shop"
     ],
@@ -72,8 +72,16 @@
     "Children, who treat the wall the way they treat a favorite tree — as something alive that is also furniture"
   ],
   "notable_locations": [
-    "The Touch Point — the section of wall where the most hands have pressed, polished smooth by decades of contact",
-    "The Plaque — the Structural Safety Commission's admirably honest acknowledgment of ignorance"
+    {
+      "name": "The Touch Point",
+      "description": "the section of wall where the most hands have pressed, polished smooth by decades of contact",
+      "tags": []
+    },
+    {
+      "name": "The Plaque",
+      "description": "the Structural Safety Commission's admirably honest acknowledgment of ignorance",
+      "tags": []
+    }
   ],
   "coordinates": {
     "district": "Old Harbor",

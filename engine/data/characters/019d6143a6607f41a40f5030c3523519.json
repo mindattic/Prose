@@ -187,5 +187,25 @@
     "Copper",
     "Teak"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Nigerian) / Hellenic (Greek) / Persian (Iranian)",
+    "height_cm": 183,
+    "weight_kg": 72,
+    "build": "Rangy and lean with defined musculature; economical frame suggesting minimal wasted motion, built for endurance rather than power",
+    "hair_color": "Natural black",
+    "hair_style": "Close-cropped fade, immaculately maintained",
+    "hair_length": "Short",
+    "eye_color": "Modified: base brown iris with rotating mandala patterns in electric blue and copper that shift slowly, hypnotic",
+    "skin_tone": "Warm teak-brown with slight olive undertones from Hellenic ancestry",
+    "complexion": "Angular face with heavy, expressive brows; clean-shaven; skin clear and well-maintained; high cheekbones; thoughtful expression as default state",
+    "distinguishing_marks": [
+      "Faint burn scar on right forearm near wrist, roughly 4cm long, consistent with old industrial accident or equipment malfunction",
+      "Small tattoo on left inner wrist: circuit board pattern in minimalist black lines, approximately 2cm across"
+    ],
+    "visible_augmentations": "Modded irises with slowly rotating blue and copper mandala patterns, immediately noticeable in direct light. Subvocal comms implant visible as faint silver trace along left jawline beneath skin. Cortical co-processor is subcutaneous, not visible.",
+    "posture_movement": "Upright, precise carriage with economical gesture; moves with deliberate calm and minimal wasted motion; hands often gesture while speaking to emphasize technical points; maintains steady eye contact, the rotating mandala patterns adding an almost meditative quality to his gaze",
+    "clothing_style": "Tier 3 professional aesthetic: pressed synthetic-linen blend shirts (charcoal, navy, cream), fitted technical trousers with reinforced pockets and hidden RFID-blocking panels, waterproofed long-coat in matte black with subtle ceramic plating along shoulders and forearms, quality closed-toe boots rated for industrial environments. Wears faded Axiom University lanyard around neck as permanent affectation — visible status symbol from abandoned academic track. Everything immaculately maintained and one tier above Stockyard baseline, signaling credibility and discipline."
+  },
+  "image_prompt": "cyberpunk portrait of a Nigerian-Greek-Iranian man, age 38, lean and precise, close-cropped black hair, warm teak-brown skin, angular features with heavy brows, eyes modified with slowly rotating electric blue and copper mandala patterns creating hypnotic gaze, faint industrial burn scar on right forearm, minimalist circuit board tattoo on left wrist, subvocal comms implant visible as silver trace along jawline, wearing pressed charcoal synthetic shirt and waterproofed black long-coat with subtle ceramic armor plating, faded Axiom University lanyard around neck, standing in dim warehouse tech bazaar stall with neon signage, cool blue and amber lighting, thoughtful expression, hands gesturing as if explaining complex technical concept, photorealistic, shallow depth of field, cinematic, --ar 2:3 --v 6"
 }

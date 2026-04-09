@@ -274,5 +274,27 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "The Pale Mile"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Romanian / Nigerian",
+    "height_cm": 158,
+    "weight_kg": 52,
+    "build": "Compact and wiry, muscle density concentrated in shoulders and forearms from decades of surgical work; minimal body fat; shoulders slightly rounded forward from habitual posture over operating tables",
+    "hair_color": "Deep black with silver-gray streaking throughout",
+    "hair_style": "Close-cropped, pinned under a faded surgical cap; no styling beyond functional arrangement",
+    "hair_length": "Short",
+    "eye_color": "Left eye: pale gray-green (natural); right eye: burnished amber with faint LED ring (prosthetic)",
+    "skin_tone": "Deep umber, warm undertones characteristic of West African descent",
+    "complexion": "Weathered from exposure and chemical contact; minimal makeup; faint keloid scar encircling right eye socket; left cheekbone slightly more prominent than right, creating subtle facial asymmetry; jaw set in habitual tension",
+    "distinguishing_marks": [
+      "Keloid scar tissue forming a faint ring around the right eye socket where the amber prosthetic is mounted, slightly raised and discolored",
+      "Chemical burns crosshatching both palms and dorsal forearms in irregular white-scar patterns, clustered densely across knuckles and between fingers",
+      "Small burn mark on left inner wrist, thin and precise, suggesting accidental contact during early sterilization work",
+      "Thin pale scar running along the left side of her neck (approximately 8cm), partially obscured by hair"
+    ],
+    "visible_augmentations": "Right eye: burnished amber prosthetic with visible micro-mechanical iris and faint LED ring pulsing at approximately 0.5Hz; low-light enhancement evident in slight glow when pupils would dilate in dim conditions. Haptic feedback mesh in both palms visible as faint geometric lattice pattern under skin across metacarpal region, more pronounced when hands are under direct light. No other visible augmentation; subdural temperature regulation strip not externally apparent.",
+    "posture_movement": "Habitually bent slightly forward from the shoulders, as though perpetually leaning over an operating surface. Movements are deliberate and economical—no wasted motion. Hands move with surgical precision even during casual tasks. When standing at rest, weight shifts to the balls of feet, never fully relaxed. Eye contact with her natural left eye is direct and assessing; right eye (prosthetic) often moves independently, suggesting she is scanning for additional visual data",
+    "clothing_style": "Practical Tier 4 utilitarian: long waterproof duster coat (faded charcoal, multiple stains visible but functional) worn over scrub-green thermal base layer. Pockets visibly bulging with tourniquets, sterile packaging, color-coded vials, and unmarked containers. Wears surgical gloves on a cord around her neck. No jewelry. Footwear appears to be reinforced industrial boots, scuffed and well-maintained. Surgical cap pinned to hair. Overall appearance conveys maximum functionality with zero aesthetic consideration; clothing shows signs of heavy use but meticulous maintenance."
+  },
+  "image_prompt": "Cyberpunk character portrait of a 41-year-old compact Romanian-Nigerian woman, deep umber skin, pale gray-green left eye contrasting with burnished amber prosthetic right eye with LED ring, close-cropped silver-streaked black hair pinned under faded surgical cap, weathered asymmetrical face with keloid scarring around prosthetic eye socket. Hands prominently featured, crosshatched with old chemical burn scars, palms showing geometric haptic mesh pattern under skin. Wearing long waterproof duster coat over scrub-green thermals, multiple bulging pockets containing medical equipment, tourniquets, color-coded vials. Posture habitually forward-bent, shoulders rounded from decades over surgical tables, bearing the precise tension of an unlicensed field medic. Gritty Tier 4 underground aesthetic, clinical but worn. Dramatic side-lighting emphasizing prosthetic eye glow and scar tissue detail. Industrial concrete background suggesting sub-level shipping container clinic setting. Realistic cyberpunk, high detail, photorealism --ar 2:3 --v 6"
 }

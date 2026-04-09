@@ -109,5 +109,26 @@
     "The Shelf",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Greek / West African",
+    "height_cm": 178,
+    "weight_kg": 82,
+    "build": "Stocky and broad-shouldered, carrying weight with deliberate groundedness — the physique of someone who moves through the world with intention rather than haste",
+    "hair_color": "Steel gray with black undertones",
+    "hair_style": "Pulled back in a neat, shoulder-length braid threaded with thin copper wire",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with subtle amber undertones",
+    "skin_tone": "Medium to dark, with warm undertones — Mediterranean and sub-Saharan heritage blended",
+    "complexion": "Weathered and lined, with deep creases around the eyes and mouth suggesting decades of intense focus. Neatly groomed beard, salt-and-pepper, kept close to the jaw. Skin carries a faint, perpetual sheen — either ritual oils or subcutaneous moisture regulation",
+    "distinguishing_marks": [
+      "Ritual scarification along both forearms in geometric patterns — deliberate, ritualistic, not accidental trauma",
+      "A faded birthmark on his left temple, partially obscured by age and pigmentation shift",
+      "Small circular burns on his palms and fingertips, consistent with decades of handling heated or energized objects"
+    ],
+    "visible_augmentations": "None obvious at first glance. However, his eyes occasionally catch ambient light with a faint violet flicker — suggesting subcutaneous neural augmentation tied to perception or sensory processing. His fingertips bear faint luminescent tracery under dim light, barely visible unless he's holding something conductive.",
+    "posture_movement": "Moves with deliberate slowness, almost ritualistic. Each gesture appears weighted with meaning. He stands with feet planted wide, as if rooted. Speaks infrequently but with absolute certainty. His hands are often in motion — not nervous, but conducting some invisible current",
+    "clothing_style": "Tier 3-4 aesthetic: layered linen and synthetic hybrid fabrics in earth tones (rust, charcoal, deep indigo). Wears a long, open-front vest embroidered with hand-stitched circuit patterns and animist glyphs. Underneath, simple cotton undershirt. His belt is woven copper wire and natural fiber. No corporate logos. Functional but ceremonial — clothing as spiritual practice, not status symbol. Worn leather boots, scuffed and purposefully maintained."
+  },
+  "image_prompt": "A 57-year-old male fixer with Greek and West African heritage, stocky build, steel-gray braided hair with copper wire threaded through it, deep brown eyes with amber flickers. Weathered face with ritual scarification on forearms, salt-and-pepper beard. Wearing layered earth-tone fabrics (rust, indigo, charcoal), hand-embroidered vest with circuit patterns and animist glyphs, copper-wire belt. Standing grounded with deliberate posture in a Tier 3-4 shrine space, candlelit with neon accents in the background, cyberpunk techno-animist aesthetic. Faint violet eye-glow, luminescent fingertip tracery. Moody, ritualistic lighting. Photorealistic, character portrait, --ar 2:3 --v 6"
 }

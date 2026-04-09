@@ -30,7 +30,7 @@
     ],
     "core_desires": [
       "To matter to someone for who they are, not what they can do",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of Meridian 88",
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
       "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
     ],
     "coping_mechanisms": [
@@ -280,5 +280,26 @@
     "Slagworks Industrial",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "West African / Japanese / Ghanaian",
+    "height_cm": 188,
+    "weight_kg": 74,
+    "build": "Rawboned and lean — economical frame suggesting decades of calculated living rather than deprivation. Muscle definition visible in forearms and shoulders, but overall spare, efficient. The kind of body that moves without wasted motion.",
+    "hair_color": "Dark brown with salt-gray threading at temples",
+    "hair_style": "Cropped close to the skull, maintained with military precision",
+    "hair_length": "Short",
+    "eye_color": "Cybernetic — chrome iris rings surrounding dark pupils, capable of thermal overlay and low-light enhancement. The rings glow faintly amber when net-jacked",
+    "skin_tone": "Deep brown with warm undertones — complexion reflects mixed West African and East Asian heritage",
+    "complexion": "Weathered without being aged. High cheekbones, sharp jaw. Minimal facial hair — kept to a precise shadow. Fine creases around the eyes and mouth suggest more scowling than smiling. Skin shows the wear of a life lived in transition.",
+    "distinguishing_marks": [
+      "Surgical scar at the base of his skull, barely concealed by cropped hair — the entry point for the neural interface jack, approximately 3cm in length, pale against his skin tone",
+      "Network of thin white scars across the inside of both forearms — old nerve damage from early augmentation rejection, barely visible unless examined closely",
+      "Burn scar on right shoulder blade — shaped like a spread hand, faded to pink-gray, sustained during a contract gone wrong in 2219"
+    ],
+    "visible_augmentations": "Neural interface jack at base of skull — visible when head is tilted or light catches the surgical scar. Cybernetic eyes with chrome iris rings — the only deliberate ornamentation on his body, catches light distinctly. No attempt at bio-mimetic concealment. When jacked in, the iris rings shift to pale amber and remain visible even through closed eyelids.",
+    "posture_movement": "Moves with contained economy — no flourish, no wasted gesture. Stands with weight forward slightly, ready to shift direction. Keeps hands visible. Eye contact is deliberate and sustained, unsettling in its consistency. Speech is sparse; long silences don't make him uncomfortable. Breathing is steady and controlled even under stress.",
+    "clothing_style": "Tier 3-4 pragmatism. Dark neutral colors — charcoal, matte black, dark gray. Modular jacket with reinforced shoulder panels and hidden pocket architecture. Cargo pants with subtle cargo pockets designed for quick access and discrete carry. Black composite-soled boots suitable for extended standing or rapid movement. Minimal branding — functional only. A single piece of jewelry: a worn silver ring on his right index finger, no visible inscription. Clothing is maintained but not pristine — the wear pattern of functional gear, not fashion."
+  },
+  "image_prompt": "Cyberpunk portrait of a 43-year-old man with deep brown skin and salt-grayed temples, closely cropped dark hair. Sharp facial features, weathered from decades of high-risk living. Chrome iris rings in cybernetic eyes glowing faintly amber. Visible surgical scar at base of skull where neural interface jack connects. Wearing matte black modular jacket over dark charcoal undershirt. Lean rawboned frame, intense controlled posture. Moody lighting from below, shadows emphasizing cheekbones and the gleam of chrome irises. Setting is a neutral industrial corridor at Meridian Station—brushed steel walls, soft red emergency lighting casting dramatic shadows. Expression neutral, dangerous calm. Grain and chromatic aberration typical of security camera footage. Film noir cyberpunk aesthetic, high contrast. --ar 2:3 --v 6"
 }

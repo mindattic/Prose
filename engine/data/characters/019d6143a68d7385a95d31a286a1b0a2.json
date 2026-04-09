@@ -182,5 +182,26 @@
     "Gravitic Shear Pistol GSP-7 'Tidal'",
     "The Milwaukee Core"
   ],
-  "district": "Old Harbor"
+  "district": "Old Harbor",
+  "physical_description": {
+    "heritage": "West African / Polynesian / Central European (Czech/Slovak)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Compact and wiry, lean muscle developed through repetitive labor — water-carrier's physique with no excess mass. Shoulders slightly forward from years of backpack weight distribution.",
+    "hair_color": "Natural black, unmodified",
+    "hair_style": "Unstyled, worn loose and shoulder-length, often tied back with salvaged cord during work",
+    "hair_length": "Long",
+    "eye_color": "Light grey — a genetic anomaly he does not acknowledge when others comment on it",
+    "skin_tone": "Rich dark brown, undertones suggesting mixed West African and Polynesian ancestry",
+    "complexion": "Clean-shaven or sparse stubble, skin condition shows weathering from sun and saltwater exposure but well-maintained. No visible scarring on the face. Expression typically neutral, eyes observant rather than engaged.",
+    "distinguishing_marks": [
+      "Faint linear scars on both palms from manual filtration rig assembly and maintenance",
+      "Calloused fingertips and knuckles, water-worker's hands",
+      "Bioluminescent skin modification spans collarbone to upper chest and shoulders — soft blue-green wave pattern, kept covered by high-collared clothing"
+    ],
+    "visible_augmentations": "None typically visible. The full-body bioluminescent mod is deliberately concealed under layered, high-necked garments. Only visible if clothing is removed or severely compromised.",
+    "posture_movement": "Stands with slight forward lean, as if perpetually ready to shoulder burden. Moves deliberately and quietly, economical gestures. Walking pace is measured — he counts steps. Breath shallow, movements controlled. Rarely makes sudden motions.",
+    "clothing_style": "Tier 4-5 transient aesthetic. High-collared thermal undershirts in dark grey or black (bioluminescence concealment priority). Worn synthetic overjackets with multiple patch repairs, water-resistant but aged. Heavy canvas work pants with tool pockets and reinforced seams. Scuffed utility boots rated for wet terrain. Backpack frame is visible constantly — not removed indoors or at rest. No jewelry or ornament. Clothing layers suggest preparedness for weather change rather than style."
+  },
+  "image_prompt": "A compact, quiet man, 28 years old, dark brown skin with light grey eyes, unstyled shoulder-length black hair. Wiry, lean build of a manual laborer. Wears high-collared dark grey thermal undershirt deliberately concealing bioluminescent blue-green patterns beneath, layered with aged water-resistant synthetic jacket and reinforced canvas work pants. Heavy utility boots. A large water-rated backpack frame with manual filtration rig is mounted on his shoulders. Standing on a concrete breakwater at dusk, Grindstone Shore, Lake Michigan industrial backdrop, salvaged metal and crumbling infrastructure visible. Overcast sky, diffuse grey light, faint salt spray atmosphere. Posture: forward-lean, observant, slightly apart from the scene. Cyberpunk nomadic water-carrier aesthetic, gritty and purposeful. Shallow depth of field. Documentary realism. --ar 2:3 --v 6"
 }

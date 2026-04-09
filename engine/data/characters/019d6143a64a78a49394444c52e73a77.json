@@ -219,5 +219,27 @@
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African / Scandinavian (Malian / Danish-Icelandic)",
+    "height_cm": 158,
+    "weight_kg": 48,
+    "build": "Lean and wiry with minimal fat; built for speed and endurance rather than strength. Compact frame shows the result of three years of constant movement through tight urban spaces and climbing.",
+    "hair_color": "Deep violet fading to white at tips",
+    "hair_style": "Shoulder-length, deliberately unkempt; shaved undercut on left side revealing pale scalp",
+    "hair_length": "Medium",
+    "eye_color": "Very dark brown, almost black",
+    "skin_tone": "Medium brown with warm undertones; complexion shows mixed West African and Northern European ancestry",
+    "complexion": "Fine-featured face, sharp cheekbones, angular jaw. Skin is clear but shows minor scars and healing marks from street living. No makeup. Perpetual slight tension in expression.",
+    "distinguishing_marks": [
+      "Two parallel scars on left forearm, thin and precise, approximately 4cm long each — likely self-inflicted, several years old",
+      "Jagged burn scar across the inside of right wrist, approximately 3cm diameter — acquired during a printing press incident eighteen months ago",
+      "Small tattoo on inside of right ankle: a stylized Φ symbol in black ink, applied unprofessionally",
+      "Faint bruising along right ribs, consistent with recent physical confrontation"
+    ],
+    "visible_augmentations": "Functional cat ears, dark brown/black furred, positioned naturally on top of head. Ears are fully mobile and expressive despite her efforts to control them; inner surface is pale pink with visible capillaries. No other visible augmentations — all her modifications are biological inheritance rather than purchased chrome.",
+    "posture_movement": "Moves with controlled restlessness; rarely still for more than moments. Stance is slightly forward-leaning as if ready to sprint. Eyes constantly scanning surroundings. Ears flatten involuntarily when anxious or startled, a tell she resents. Walks with ball-of-foot gait that minimizes sound.",
+    "clothing_style": "Tier 5 utilitarian survivalism. Wears dark, durable, unremarkable clothes designed for rapid movement and minimal snagging: fitted black synthetic-cotton blend pants with multiple pockets (ink stains on thighs), worn gray henley or faded band t-shirts (never official merch, always thrifted), black canvas jacket with reinforced seams and sewn-closed zippers for security. Worn running shoes with replaced soles. No jewelry except a frayed paracord wristband. Carries a canvas messenger bag, permanently damp from press ink and rain."
+  },
+  "image_prompt": "Cyberpunk portrait of a small, lean 19-year-old woman with brown skin, sharp angular features, very dark eyes, and shoulder-length violet hair fading to white at the tips. She has dark-furred functional cat ears on top of her head that are slightly flattened. Wearing faded band t-shirt and worn black jacket, canvas messenger bag slung across chest. Intense, wary expression. Indoor urban setting, dim LED lighting casting cool blue and purple shadows, peeling paint on walls behind her, scattered underground print materials visible. Photorealistic, street photography style, shallow depth of field. --ar 2:3 --v 6"
 }

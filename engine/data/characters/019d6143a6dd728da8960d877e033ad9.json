@@ -184,5 +184,27 @@
     "Needle",
     "Bashir Quansah-Mehrotra"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Polish / West African",
+    "height_cm": 172,
+    "weight_kg": 58,
+    "build": "Willowy and angular, with the compressed posture of someone who spends twelve hours daily hunched over precision work. Shoulders slightly rounded forward, chest narrow. Long-limbed but not fragile — the kind of lean that comes from sustained tension rather than lack of substance.",
+    "hair_color": "Bioluminescent gradient: deep violet to electric coral, mood-responsive geneware, shifts saturation with emotional state",
+    "hair_style": "Asymmetrical undercut: long side falls to mid-shoulder, short side faded to scalp on right temple",
+    "hair_length": "Medium / Shaved (asymmetrical)",
+    "eye_color": "Deep brown, warm undertone",
+    "skin_tone": "Warm golden-brown with subtle reddish undertones, even complexion",
+    "complexion": "Fine-featured, high cheekbones, sharp jaw. Skin shows minor tool scarring on knuckles and palms from workshop work. Faint stress lines around eyes from close-focus work. Habitually picks at loose threads on their own clothing — minor calluses visible on thumb and forefinger. Expression tends toward focused neutrality; eyes register emotion before mouth does.",
+    "distinguishing_marks": [
+      "Jagged scar tissue on right index finger where the retractable needle mod was installed at seventeen, slightly discolored and puckered",
+      "Minor burn scars on left forearm (two parallel lines) from a fabric-printing mishap, pale and faded",
+      "Tool marks and small cuts across all ten fingertips, varying ages — occupational wear",
+      "Subcutaneous tension-sensor installation marks barely visible on fingertip pads as slight discoloration and micro-scarring"
+    ],
+    "visible_augmentations": "Bioluminescent hair geneware (primary visible mod; glows softly in low light, pulses with emotional state). Right index finger shows scar tissue and occasional subtle mechanical movement when the retractable needle attempts deployment. Subdermal tension sensors in fingertips visible only under close scrutiny as faint metallic sheens beneath skin. No chrome — all augmentations are subtle, integrated.",
+    "posture_movement": "Moves with economical precision; minimal wasted motion. Hands in constant low-intensity motion — folding, measuring, picking at fabric or their own clothing. Sits with perfect posture when working, slouches noticeably when not. Eyes track fabric and hands obsessively. When speaking, often looks away or focuses on their work rather than making eye contact — not evasive, just genuinely elsewhere. Stillness when concentrating is absolute; they become almost statue-like.",
+    "clothing_style": "Tier 3/4 working-class aesthetic with intentional avant-garde modifications. Typically wears oversized reclaimed synth-fabric pieces of their own design — asymmetrical cuts, hidden compartments, modular components. Layers: a loose linen overshirt (often with sleeves pushed up), fitted undergarment. Worn jeans or recycled polymer pants with reinforced pockets for tools. Soft-soled shoes for workshop grip. Visible wear and stains from daily work — scorch marks, dye, thread caught in hems. Occasionally wears pieces from their own collection as walking advertisement. Jewelry is minimal and functional: a length of waxed cord threaded through belt loops, a carabiner holding workshop keys. Despite Tier 5 location, they maintain immaculate hygiene and careful grooming — a quiet act of dignity."
+  },
+  "image_prompt": "cyberpunk character portrait, nonbinary androgynous person with warm golden-brown skin, asymmetrical shaved and long black hair with bioluminescent violet-to-coral geneware gradient glowing softly, deep brown eyes with focused intensity, willowy lean build, wearing oversized reclaimed synth-fabric overshirt with asymmetrical sleeves, fitted base layer, worn polymer pants with reinforced pockets, soft-soled workshop shoes, hands in motion showing tension sensor scars on fingertips and retractable needle scar on right index finger, background: interior of converted shipping container lined with fabric bolts and design sketches pinned to walls, warm tungsten lighting mixing with cool bioluminescent hair glow, shallow depth of field emphasizing hands and face, precise documentary style photography, high detail on textile textures and augmentation scarring, cyberpunk fashion, artisan maker aesthetic --ar 2:3 --v 6"
 }

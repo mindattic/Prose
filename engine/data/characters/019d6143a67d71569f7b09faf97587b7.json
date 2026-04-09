@@ -187,5 +187,25 @@
     "Titanium",
     "The Pure Hand"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Latin American / Central Asian",
+    "height_cm": 182,
+    "weight_kg": 94,
+    "build": "Heavyset and solid without excess softness — muscular density concentrated in shoulders and forearms from decades of precision hand work. Chest and midsection carry weight with the settled confidence of someone who stopped worrying about aesthetics years ago.",
+    "hair_color": "Natural black",
+    "hair_style": "Shaved to scalp",
+    "hair_length": "Shaved",
+    "eye_color": "Dark brown (natural); left eye modified with subretinal work-light producing faint amber glow under low light",
+    "skin_tone": "Deep brown with warm undertones, weathered by industrial workshop exposure and age",
+    "complexion": "Weathered but not gaunt — face carries surgical precision in its lines, jaw set with habit of concentration. Forehead smooth, crow's feet deepened by years squinting at fine augmentation work. No beard, kept scrupulously clean.",
+    "distinguishing_marks": [
+      "Fine-line circuit diagram tattoo covering entire shaved scalp in black ink — elaborate journeyman qualification piece with labeled nodes and pathways, visible from any angle",
+      "Pale scar tissue across both palms and fingers from countless incremental augmentation surgeries, creating a topography of overlapping surgical sites"
+    ],
+    "visible_augmentations": "Both hands show obvious titanium reinforcement — finger joints gleam chrome under workshop light, articulations smoother than natural bone. Right hand fingers feature visible retractable panels at knuckles where micro-tools deploy. Left eye glows faint amber in low-light environments from subretinal work-light. Both wrists show faint scarring and subtle metallic sheen at flex points (anti-tremor stabilizers). Hands move with uncanny precision that immediately signals 'augmented tech.'",
+    "posture_movement": "Moves with unhurried, economical motion — no wasted energy, every gesture purposeful. Hands rest in constant micro-adjustment, fingers flexing or adjusting involuntarily even when idle. Leans slightly forward when focused, head tilting to align left eye work-light. Walks with weight distributed even, shoulders level. Speaks with hands frequently, gesturing with augmented fingers in ways that unconsciously display their precision.",
+    "clothing_style": "Worn gray canvas mechanic's apron with oil stains and burn marks, worn over a clean white or pale gray undershirt (practical for workshop but also a statement — clean torso despite the work). Heavy-duty boots with reinforced soles and ankle support. No jewelry, no visible corporate branding. Clothes are Tier 4-5 utilitarian — functional, maintained but not fashionable, marking him as working-class Geartown rather than corpo. A thin wire runs from behind his left ear down his neck (neural interface jack, discreet but visible on close inspection)."
+  },
+  "image_prompt": "A stocky West African-Latin Asian augmentation technician, age 38, shaved head covered in intricate fine-line circuit diagram tattoo, dark brown skin, standing in a dimly-lit underground machine-shop workshop. His titanium-reinforced hands with visible chrome finger joints and retractable micro-tool panels rest on a workbench scattered with augmentation components. Left eye glows faint amber from subretinal work-light. Wearing a worn gray canvas mechanic's apron over clean white undershirt, oil-stained and scarred from years of hands-on aug work. Industrial workshop setting with overhead LED strips, shelves of pharmaceutical vials behind false panels, surgical tools, and neon blue LED fixture visible through doorway. Cinematic cyberpunk noir lighting with cool shadows and warm accent light on hands. Photorealistic, gritty, detailed, --ar 2:3 --v 6"
 }

@@ -55,10 +55,10 @@
   },
   "relationships": [],
   "story_hooks": [
-    "Multiple unconnected clients across the Canopy have reported the same dream — a specific architectural space that does not exist in Meridian 88 — and Havva has cross-referenced it with a spike in E.L.F. activity that points to something in the Edgewater Prism infrastructure no one is supposed to know about",
+    "Multiple unconnected clients across the Canopy have reported the same dream — a specific architectural space that does not exist in GLMZ — and Havva has cross-referenced it with a spike in E.L.F. activity that points to something in the Edgewater Prism infrastructure no one is supposed to know about",
     "A corponation researcher contacts them offering institutional legitimacy for their dream-network theory in exchange for access to their client data — anonymized, they claim"
   ],
-  "narrative_function": "Information source through unusual means; can provide dream-based clues or E.L.F. intelligence that no other source would offer; represents the overlap between mysticism and genuine network insight in Meridian 88",
+  "narrative_function": "Information source through unusual means; can provide dream-based clues or E.L.F. intelligence that no other source would offer; represents the overlap between mysticism and genuine network insight in GLMZ",
   "augmentations": "Amber cat ears (geneware, cosmetic plus sensory enhancement). Interference-pattern irises (geneware, processing artifact rather than intentional design). Subdermal haptic mesh on their forearms — they use it to feel data traffic in walls and devices when counseling clients.",
   "daily_life": "They wake late, spend two hours logging their own dreams in extraordinary detail, then cross-reference overnight network logs before their first client arrives at noon. They see four to six clients per day, take Tuesdays off to walk the entire perimeter of Edgewater Prism without stopping.",
   "affiliation": "Independent practitioner; informal association with Edgewater Prism's resident council",
@@ -171,7 +171,7 @@
   "registered_firearms": [],
   "related_entities": [
     "Edgewater Prism",
-    "Meridian 88",
+    "GLMZ",
     "Canopy Station Nine",
     "Cinderblock Ai",
     "Volkov-Saito Precision VS-40 'Magistrate'",
@@ -180,5 +180,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "West African (Sesay lineage, Sierra Leone) / Yoruba-Nigerian (Kolawole lineage)",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and angular, with prominent collarbones and long limbs. Wiry muscle from decades of sedentary work interrupted by compulsive walking — no bulk, but functional density.",
+    "hair_color": "Natural black with silvered streaks at the temples and crown",
+    "hair_style": "Worn loose and shoulder-length, often pulled back with a strip of copper wire or fabric when working. Slightly unkempt from late-night note-taking.",
+    "hair_length": "Long",
+    "eye_color": "Deep brown with visible interference-pattern irises — concentric rings of iridescent color that shift subtly under different light angles, creating an optical illusion of constant motion when the bearer concentrates",
+    "skin_tone": "Deep warm brown with underlying red undertones, characteristic of West African complexion",
+    "complexion": "Sharp-featured face with high cheekbones, a narrow nose, and a prominent chin. Skin is clear but lined around the eyes from decades of close-focus work — dream-reading and data cross-referencing. A faint chemical burn on the left temple from soldering. Minimal makeup; they favor a single line of kohl on the upper lash line, applied asymmetrically.",
+    "distinguishing_marks": [
+      "Two parallel burn scars on the inside of the left wrist, each 2cm long, from an old soldering accident when they were learning geneware installation",
+      "A faded indigo tattoo on the right inner forearm — a series of concentric circles with a single radial line, resembling a stylized eye or antenna, applied at age 22",
+      "Pale scar tissue on both earlobes from the geneware installation sites; partially obscured by the cat ear mods"
+    ],
+    "visible_augmentations": "Amber-furred cat ears with natural fur texture and cartilage-based articulation, positioned above and slightly behind natural ears. The ears rotate and flex with genuine sensory responsiveness. Subdermal haptic mesh visible on both forearms as faint silvery striations beneath dark skin when light hits at certain angles — more noticeable when they flex their wrists. Interference-pattern irises create a distinct visual signature when they shift focus.",
+    "posture_movement": "Sits with spine slightly rounded, chin tilted forward when concentrating — a habitual posture from years of reading printed documents and handwritten notes. Moves with deliberate, economical gestures; rarely fidgets. When processing information, their ears twitch and rotate independently, unconsciously scanning for ambient data. Walks with long, rhythmic strides, as if counting steps. Hands move slowly and precisely when demonstrating concepts.",
+    "clothing_style": "Tier 3 practical with artistic affectation. Favors oversized hemp and recycled-polymer shirts in cream, grey, or faded indigo, often left unbuttoned over fitted black synthetic undershirts. Loose drawstring trousers in natural fibers, pockets visibly stuffed with notepads and copper wire spools. Wears a long, patched sleeveless coat made from salvaged smart-fabric scraps in muted earth tones — the coat's embedded circuits no longer functional, purely aesthetic. Bare feet indoors; when outside, wears worn canvas slippers or adaptive grip-sole shoes modified for long-distance walking. Multiple rings on both hands — copper, brass, and tarnished silver bands, several with embedded magnets that interact with nearby data nodes. A single pendant: a small brass plate engraved with the first line of a Sesay family prayer, worn on a frayed copper wire."
+  },
+  "image_prompt": "A 44-year-old nonbinary person with deep brown skin and high cheekbones, long black hair with silver streaks, wearing an oversized cream linen shirt over a fitted black undershirt. Amber-furred cat ears with sensory articulation positioned naturally on their head, rotating slightly. Their eyes are distinctive — deep brown with interference-pattern irises creating subtle iridescent concentric rings that shift when they concentrate. They are surrounded by scattered printed dream records and data logs on a cluttered forty-third-floor apartment desk, soldered copper wire and dried lemon rinds visible. Moody cyberpunk interior lighting — warm incandescent bulbs and cool blue screen glow. Their forearms show faint silvery subdermal haptic mesh patterns beneath their skin when light touches them. Fine chemical burn scars visible on left temple. They are tilting their head, ears catching light, wearing a patched smart-fabric coat in muted earth tones and multiple copper rings on both hands. Mood: introspective, obsessive, mystical but grounded. Hyperrealistic portrait, detailed facial features, cinematic 2220s cyberpunk aesthetic, warm and cool color contrast, shallow depth of field -- ar 2:3 --v 6"
 }

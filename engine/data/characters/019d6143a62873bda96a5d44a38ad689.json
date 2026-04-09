@@ -13,7 +13,7 @@
   "age": 45,
   "status": "active",
   "location": "Edgewater Prism — operates out of a rooftop monitoring station leased from a Helix Biosystems subsidiary, near Clark and Belmont",
-  "description": "Hovhannes is stocky and perpetually wind-chapped, with the particular squint of someone who spends significant time looking at horizons. His Armenian-Malian-Andean heritage shows in his broad build and the dark copper of his skin, and he grows a beard every winter that he shaves every spring in a ritual he connects to his modeling calendar. He has a prosthetic left hand he chose not to skin-match — it's matte grey and articulated, and he uses it to gesture when he talks, which is frequently. He has a bioluminescent patch on his right shoulder from a lab accident twelve years ago: a pale green glow, faint, that he has simply incorporated into his aesthetic.\n\nHe is the most accurate storm forecaster in Meridian 88, a title he holds unofficially because the official title belongs to a Ferrogate Transit atmospheric AI he assisted in training and is not particularly bitter about. He is gregarious and funny and committed to translating his work into language that non-scientists can use to make decisions — he runs a free community forecast channel that Shelf residents and dockworkers depend on. Underneath the gregariousness is a man who has spent fifteen years watching models he hoped were wrong be proven exactly right.",
+  "description": "Hovhannes is stocky and perpetually wind-chapped, with the particular squint of someone who spends significant time looking at horizons. His Armenian-Malian-Andean heritage shows in his broad build and the dark copper of his skin, and he grows a beard every winter that he shaves every spring in a ritual he connects to his modeling calendar. He has a prosthetic left hand he chose not to skin-match — it's matte grey and articulated, and he uses it to gesture when he talks, which is frequently. He has a bioluminescent patch on his right shoulder from a lab accident twelve years ago: a pale green glow, faint, that he has simply incorporated into his aesthetic.\n\nHe is the most accurate storm forecaster in GLMZ, a title he holds unofficially because the official title belongs to a Ferrogate Transit atmospheric AI he assisted in training and is not particularly bitter about. He is gregarious and funny and committed to translating his work into language that non-scientists can use to make decisions — he runs a free community forecast channel that Shelf residents and dockworkers depend on. Underneath the gregariousness is a man who has spent fifteen years watching models he hoped were wrong be proven exactly right.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -38,7 +38,7 @@
     "blind_spots": [
       "Overestimates how much accurate data motivates action; assumes that if people know they will change, which decades of evidence contradicts"
     ],
-    "secret": "His long-range models include a scenario he calls 'Threshold-9' — a cascading lake-temperature and atmospheric feedback event that would render significant portions of Meridian 88 uninhabitable within thirty years. He has shared this with two colleagues and no one else, because the last time he circulated a major negative projection it was leaked to financial markets and caused a property crash in Edgewater Prism that displaced several hundred residents. He believes he caused more harm than the forecast would have prevented."
+    "secret": "His long-range models include a scenario he calls 'Threshold-9' — a cascading lake-temperature and atmospheric feedback event that would render significant portions of GLMZ uninhabitable within thirty years. He has shared this with two colleagues and no one else, because the last time he circulated a major negative projection it was leaked to financial markets and caused a property crash in Edgewater Prism that displaced several hundred residents. He believes he caused more harm than the forecast would have prevented."
   },
   "speech_patterns": {
     "vocabulary": "Technical vocabulary delivered casually, as if assuming the listener is smart enough to follow; uses weather as metaphor for everything ('that's a high-pressure situation,' 'I can feel a front coming'); self-deprecating about his own expertise",
@@ -243,7 +243,7 @@
     "Helix Biosystems",
     "Edgewater Prism",
     "Meridian Core",
-    "Meridian 88",
+    "GLMZ",
     "The Heritage Vault",
     "Aslan Vasquez-Chatterjee",
     "Ash Calendar",
@@ -252,5 +252,26 @@
     "Weathervane",
     "Nightlight"
   ],
-  "district": "The Laceworks"
+  "district": "The Laceworks",
+  "physical_description": {
+    "heritage": "Armenian / West African (Malian) / Andean",
+    "height_cm": 174,
+    "weight_kg": 89,
+    "build": "Stocky and solid, broad-shouldered with the weathered musculature of someone who maintains equipment outdoors. No excess fat; dense, functional frame.",
+    "hair_color": "Dark brown with silver threading at temples and jaw",
+    "hair_style": "Full beard during winter months (October–March), meticulously shaved each spring; during bearded season, kept groomed and shaped; head hair kept short and practical",
+    "hair_length": "Short on scalp; variable beard length (3–4 inches in winter)",
+    "eye_color": "Dark brown, left iris displays subtle retinal implant shimmer visible only in direct light—faint geometric grid pattern overlaid on pupil",
+    "skin_tone": "Deep copper-brown, weathered from chronic sun and wind exposure; darker along exposed zones (face, neck, forearms)",
+    "complexion": "Permanent squint lines radiating from outer eyes; wind-chapped lips; sun damage on cheekbones and bridge of nose; clear skin otherwise, minimal scarring except around left wrist prosthetic junction. Horizontal crease across forehead from habitual expression of focus. No facial hair between spring shave and October regrowth.",
+    "distinguishing_marks": [
+      "Faint bioluminescent patch on right shoulder (upper trapezius), pale green, roughly 8cm diameter, glows subtly in darkness from lab accident twelve years prior—fully integrated into aesthetic, never covered",
+      "Surgical scar along left wrist where prosthetic attaches, thin white line, well-healed",
+      "Deep calluses on right hand fingers and palm from years of instrument manipulation and handwriting"
+    ],
+    "visible_augmentations": "Left hand is high-articulation prosthetic with matte grey finish, deliberately unmatched to skin tone—segmented fingers with visible joint articulation, slightly oversized compared to right hand, frequently used for gestural emphasis during speech. Retinal implant visible as faint geometric overlay in left eye under magnification or bright light. Bioluminescent shoulder patch is always visible and unmodified.",
+    "posture_movement": "Stands with shoulders slightly forward, weight balanced toward balls of feet—habitual scanning stance. Moves with purposeful efficiency, no wasted motion. Gestures expansively with prosthetic hand when speaking, using it for emphasis and illustration. Walks with slight leftward tilt to compensate for prosthetic weight distribution. Frequently pauses mid-conversation to look toward windows or sky.",
+    "clothing_style": "Tier 3–4 practical wear. Favors weatherproof field jackets (Helix-branded or generic teal/grey) over university polo when at monitoring station. Layers underneath: synthetic base layer, sometimes visible under rolled sleeves. Cargo pants or work jeans with reinforced knees and pockets heavy with tools/sensors. Steel-toed boots, scuffed and maintained. At university: casual button shirts, usually rolled to forearm, visible Φ500–800 range clothing. Minimal jewelry except functional watch (modified chronometer with barometric readout). Wears a faded wool scarf during winter that appears to be decades old—possible family heirloom."
+  },
+  "image_prompt": "Portrait of a 45-year-old man with deep copper-brown skin, Armenian-Malian-Andean heritage, dark hair with silver temples, perpetual squint lines. Stocky athletic build, weathered from wind and sun. Wearing a weatherproof field jacket over layers, rolled sleeves. Left arm ends in a deliberate matte grey high-articulation prosthetic hand with visible segmented joints. Right shoulder visible with faint pale green bioluminescent patch glowing softly. Dark brown eyes with subtle retinal implant shimmer. Standing on a rooftop monitoring station above Chicago's Edgewater district, early sunrise light, Lake Michigan visible behind him. Gesture captured mid-speaking with prosthetic hand raised. Atmospheric, scientific, urban, cyberpunk-adjacent, warm golden light mixing with cool blue pre-dawn sky. Photorealistic, character portrait, professional yet lived-in --ar 2:3 --v 6"
 }

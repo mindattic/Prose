@@ -81,8 +81,16 @@
     "Anyone trusted enough to be given the route by someone who has been"
   ],
   "notable_locations": [
-    "The cavern bar — built from tunnel debris in a limestone space that predates the city",
-    "The mineral pools — natural limestone basins around the perimeter, cold and clear"
+    {
+      "name": "The cavern bar",
+      "description": "built from tunnel debris in a limestone space that predates the city",
+      "tags": []
+    },
+    {
+      "name": "The mineral pools",
+      "description": "natural limestone basins around the perimeter, cold and clear",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 41.9238,

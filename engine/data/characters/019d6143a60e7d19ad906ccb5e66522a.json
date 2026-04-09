@@ -155,7 +155,7 @@
       "loyalty_break": 10
     },
     "strengths": [
-      "encyclopedic knowledge of Meridian 88 infrastructure",
+      "encyclopedic knowledge of GLMZ infrastructure",
       "photographic memory for faces and layouts",
       "pain tolerance beyond normal limits"
     ],
@@ -281,5 +281,26 @@
     "Stratum",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "Japanese / Ghanaian / Eastern European (mixed diaspora)",
+    "height_cm": 162,
+    "weight_kg": 51,
+    "build": "Lean and wiry — deceptively fragile-looking, but muscular in the shoulders and forearms from years of fieldwork. Low body fat, efficient frame designed for movement rather than presence.",
+    "hair_color": "Black with subtle dark brown undertones",
+    "hair_style": "Pulled back in a tight, practical braid when working; loose shoulder-length when civilian",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown with slight amber undertones",
+    "skin_tone": "Light olive with warm golden undertones — the blended result of mixed heritage",
+    "complexion": "Narrow face with high cheekbones, sharp jawline, minimal facial hair. Skin maintained but not pampered — few blemishes, but the wear of irregular sleep and high-stress work shows in faint lines around the eyes. Lips thin and often set in a neutral expression.",
+    "distinguishing_marks": [
+      "Three parallel horizontal scars on right inner forearm, white and thin — surgical or deliberate, roughly 8cm each, spaced 2cm apart",
+      "Faint burn scar across left shoulder blade, roughly 4cm diameter, slightly raised and lighter than surrounding skin",
+      "Small tattoo on right wrist: minimalist geometric pattern (circles intersecting) — 2cm across, black ink, professional work"
+    ],
+    "visible_augmentations": "Chrome pain editor visible at base of skull — a silvered neural interface jack protruding slightly through skin at C7 vertebra, roughly 8mm diameter. Right temple shows the faint subdermal outline of a neural interface module beneath skin. No visible limb replacements or extensive chrome work — augmentations are strategic and minimal.",
+    "posture_movement": "Economical and controlled — she moves with purpose, never wasted motion. Slight forward lean in the shoulders, as if perpetually ready to move. Eyes track exits and sightlines instinctively. In civilian mode, deliberately adopts a more rounded posture and relaxed gait to avoid drawing attention.",
+    "clothing_style": "Off-duty: neutral Tier 4 basics — fitted dark grey or black synthetic-weave pants, unmarked hoodies or fitted long-sleeves, minimal branding. Worn work boots with good tread. A grey canvas messenger bag, overstuffed and practical. During contracts: reinforced jacket with internal pockets, tactical harness beneath outer layer, gloves. Everything muted, functional, forgettable. Nothing that screams 'runner' — the goal is to blend into the Shelf's existing tension and noise."
+  },
+  "image_prompt": "cyberpunk portrait of a 28-year-old East Asian and Black woman, slight wiry build, narrow face with high cheekbones, dark almond eyes with amber undertones, black hair in tight practical braid, olive skin tone with warm undertones, visible chrome neural interface jack at base of skull protruding through skin, three parallel white scars on inner right forearm, small geometric tattoo on right wrist, wearing fitted dark grey synthetic-weave hoodie and worn tactical boots, sitting in dim neon-lit shelter built onto megastructure exterior, moody and tense expression, cool tungsten and cyan lighting, shallow depth of field, gritty cyberpunk atmosphere, photorealistic, film noir undertones --ar 2:3 --v 6"
 }

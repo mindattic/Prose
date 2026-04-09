@@ -103,5 +103,26 @@
   "related_entities": [
     "The Circuit"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African / Scandinavian",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "build": "Lean and efficient, shoulders squared from years of moving through crowds and confrontations. No wasted mass — functional muscle in forearms and legs.",
+    "hair_color": "Natural black with intentional silver threading at the temples",
+    "hair_style": "Pulled back in a tight, practical braid that wraps around the crown; allows full peripheral vision",
+    "hair_length": "Long (shoulder-blade length when unbound)",
+    "eye_color": "Dark brown, alert and constantly scanning",
+    "skin_tone": "Medium-warm complexion reflecting mixed heritage; sun-weathered in texture",
+    "complexion": "Sharp cheekbones, strong jaw. Minimal makeup — practical grooming. A faint scar runs through her left eyebrow, giving her resting expression an intensity that isn't entirely accidental.",
+    "distinguishing_marks": [
+      "Thin scar through left eyebrow, approximately 3cm, pale and old — source unknown",
+      "Tattooed circuit pattern on inner left wrist in black ink: interconnected nodes forming a simplified map of The Circuit's main streets",
+      "Burn scar on right shoulder blade, roughly 5cm diameter, pale and years old — accident or incident never mentioned"
+    ],
+    "visible_augmentations": "Subdermal LED grid beneath translucent patches of skin on both temples (faint blue-green glow when active, used for heads-up data display). Left ear has a visible jack port behind the lobe, roughly 8mm, chromed steel. No other obvious augmentations.",
+    "posture_movement": "Economical and alert. Walks with purpose, rarely fidgets. Leans against walls or furniture in social situations rather than sitting — maintains sight lines. Speaks with measured deliberation; people instinctively listen. Her gaze lands on faces and holds them.",
+    "clothing_style": "Tier 3-4 pragmatic: fitted charcoal insulated jacket with multiple utility pockets and reinforced elbows (Akira-brand second season), dark gray cargo pants with thigh holster for data-chip case, scuffed black ankle boots with grip-tread. Layers underneath for temperature regulation. A worn leather cord with a single unmarked data-stick hangs under her collar. Her aesthetic prioritizes function over fashion, but the cuts and materials suggest measured investment — nothing cheap, nothing flashy."
+  },
+  "image_prompt": "cyberpunk portrait of a 34-year-old woman, West African-Scandinavian heritage, lean athletic build, dark brown eyes with alert intense gaze, black hair with silver temples pulled in tight braid, medium-warm complexion, sharp cheekbones and strong jaw, faint scar through left eyebrow, subdermal LED grid glowing faint blue-green at temples, visible chromed jack port behind left ear, wearing charcoal insulated tactical jacket with utility pockets, dark cargo pants, black grip-tread boots, leather cord with data-stick under collar, standing against neon-lit urban brick wall at night, dim ambient lighting with blue-green accent light on face, cyberpunk noir atmosphere, grainy film texture, professional documentary photography style, cinematic depth --ar 2:3 --v 6"
 }

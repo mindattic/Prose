@@ -236,5 +236,25 @@
     "The Pale Mile",
     "Nightlight"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Polish / Mongolian / West African (diaspora mixed-lineage)",
+    "height_cm": 178,
+    "weight_kg": 62,
+    "build": "Lean and slightly hunched, shoulders curved inward from years bent over sequencing benches. Wiry frame with minimal muscle definition — the build of someone who lives in climate-controlled labs rather than outdoors.",
+    "hair_color": "Dark brown, natural",
+    "hair_style": "Straight, swept back from his forehead with a few pieces falling forward when he leans — perpetually slightly disheveled",
+    "hair_length": "Medium (collar-length)",
+    "eye_color": "Right eye: pale grey (natural). Left eye: augmented with subtle amber LED ring around the iris for sequencing readout interface",
+    "skin_tone": "Pale, cool-toned complexion with subtle warmth undertone from mixed heritage. Noticeably lighter on his torso and face from minimal sun exposure.",
+    "complexion": "Sharp Slavic facial structure (prominent cheekbones, narrow nose) softened by Mongolian bone geometry (broader face, slightly rounded features). Skin is clear but has the translucent quality of someone who spends most hours indoors under fluorescent light. Faint dark circles under both eyes. Clean-shaven, though perpetually shows 24-hour shadow.",
+    "distinguishing_marks": [
+      "Both forearms glow with bioluminescent amber skin modification — deeper saturation at the wrists, fading toward the elbows; most visible in dim lab lighting and noticeably distracting when he gestures while excited",
+      "Small burn scar on the inside of his left wrist from a sequencing equipment accident, roughly 2cm in length, pale and well-healed"
+    ],
+    "visible_augmentations": "Bioluminescent forearms (amber glow, involuntary in low light). Left eye retinal implant visible as a faint amber LED circle around the iris when light catches it at certain angles — appears as a subtle ring rather than an obvious prosthetic. No visible external ports or obvious chrome.",
+    "posture_movement": "Habitually hunched forward, shoulders rolled slightly inward. When focused on someone or something he is interested in, he leans in without noticing, violating personal space. His hand movements are precise and controlled when working (trained from lab work) but become animated and loose when explaining something he is passionate about. When uncertain, he glances down at his glowing forearms as if surprised they are still there.",
+    "clothing_style": "Tier 3-4 working professional, lab-appropriate. Standard grey Helix Biosystems unisex lab coat over a fitted charcoal turtleneck (practical for hiding the glow of his forearms during client meetings). Dark grey or black utility pants with multiple pockets. Worn synthetic-leather ankle boots. Minimal jewelry — a simple steel watch on his right wrist, a university affiliate pin on his coat lapel. Everything is clean but shows wear; nothing is fashionable or deliberately styled. The effect is carefully rumpled in a way that suggests he does not think much about his appearance."
+  },
+  "image_prompt": "Young East European-Mongolian man, pale skin, sharp Slavic features softened by Mongolian bone structure, dark swept-back hair, lean hunched posture from years at lab benches. Left eye glows with subtle amber LED circle. Both forearms emit deep amber bioluminescence in dim light. Wearing grey Helix Biosystems lab coat over charcoal turtleneck, dark utility pants, worn boots. Standing slightly too close, leaning forward with intensity. Sequencing lab background: glowing biotech displays, dark chrome surfaces, soft blue and amber lab lighting casting his glowing forearms into sharp relief. Mood: earnest, slightly self-conscious, intellectually animated. Cyberpunk, clinical, introspective. Professional but rumpled. High detail on the bioluminescent effect. --ar 2:3 --v 6"
 }

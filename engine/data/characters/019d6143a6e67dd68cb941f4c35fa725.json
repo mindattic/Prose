@@ -177,5 +177,26 @@
     "The Pale Mile",
     "Chicago"
   ],
-  "district": "The Shelf"
+  "district": "The Shelf",
+  "physical_description": {
+    "heritage": "West African (Congolese) / Russian (Volga)",
+    "height_cm": 163,
+    "weight_kg": 58,
+    "build": "Compact and wiry, muscular through the shoulders and core from years of pacing and restless movement. Light-boned but dense, built for quick shifts of weight and sudden stillness.",
+    "hair_color": "Color-shifted: deep blue at roots fading to copper at tips (seasonal rotation)",
+    "hair_style": "Soft natural cloud, deliberately unsculpted, maintained at shoulder length",
+    "hair_length": "Long",
+    "eye_color": "Pale gray-green (inherited Volga ancestry), distinctive against dark skin",
+    "skin_tone": "Deep warm brown with golden undertones, luminous quality under direct light",
+    "complexion": "Sharp cheekbones, wide forehead characteristic of Congolese heritage, clear skin with minimal scarring. Expressive micro-movements around eyes and mouth from years of performance. Dark circles common from poor sleep.",
+    "distinguishing_marks": [
+      "Small circular scar on left inner wrist (subvocal mic implant entry point, thin and pale)",
+      "Faint burn mark across right palm (childhood accident, nearly invisible)",
+      "No visible tattoos or body modifications beyond geneware hair coloration"
+    ],
+    "visible_augmentations": "Color-shifting hair (geneware, cosmetic). Subvocal mic implant visible only as a faint scar on inner wrist. No external chrome or visible cybernetics.",
+    "posture_movement": "Habitually forward-leaning, shoulders slightly tensed as if about to stand. Weight perpetually on the balls of their feet. Moves with compressed energy — pacing rather than strolling. Hands active and precise, often in conversation with their words. On stage, transforms into a coiled spring with calculated stillness; off-stage, the restlessness is always visible.",
+    "clothing_style": "Tier 3-4 working class with intentional counter-culture edge. Favors oversized cardigans and vintage-fitted trousers. Worn canvas high-tops. Layers that suggest they dress for movement rather than appearance. Tea-stained sleeves are a signature. No corporate branding; prefers thrift-store finds and handmade pieces from Hamtramck artisans. Jewelry minimal — a functional watch, rarely anything else."
+  },
+  "image_prompt": "Portrait of a nonbinary performer, compact and restless, dark brown skin luminous with golden undertones, pale gray-green eyes striking against their complexion, wide Congolese forehead. Shoulder-length natural hair in deep blue fading to copper, soft cloud texture. Shoulders forward, weight on balls of feet, coiled energy. Wearing oversized cardigan and fitted vintage trousers, tea-stained sleeves. Faint scar visible on inner wrist. Hamtramck basement venue aesthetic, warm amber stage lighting hitting sharp cheekbones, dark circles visible but expressive. Cyberpunk portraiture, character focus, high contrast lighting, emotional intensity. --ar 2:3 --v 6"
 }

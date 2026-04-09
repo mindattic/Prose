@@ -210,5 +210,25 @@
     "Silver",
     "The Pale Mile"
   ],
-  "district": "Meridian Core"
+  "district": "Meridian Core",
+  "physical_description": {
+    "heritage": "Polynesian (Tongan) / Northern European (Dutch/German)",
+    "height_cm": 167,
+    "weight_kg": 54,
+    "build": "Slight and angular — lean muscle beneath minimal mass, the build of someone who has optimized their body for precision rather than presence. Shoulders narrow, frame almost fragile-looking until movement reveals controlled strength.",
+    "hair_color": "Bioluminescent shift: deep teal to silver, mood-reactive, with fractional luminescence visible in dim environments",
+    "hair_style": "Precision-cut, geometric lines; styled back from face with calculated severity",
+    "hair_length": "Short, approximately 4-5cm on top, faded close on sides",
+    "eye_color": "Dark brown with optical enhancement overlay — slightly increased contrast visibility in pupils under certain light angles",
+    "skin_tone": "Pale olive with warm undertones — mixed Polynesian and Northern European ancestry visible in undertone richness despite limited sun exposure",
+    "complexion": "Sharp cheekbones, defined jaw; minimal facial expression baseline — skin appears professionally maintained, almost unmarked. Zero visible acne, healed injuries, or natural blemishes; complexion has the uncanny smoothness of someone who has removed all casual markers of humanity from their appearance.",
+    "distinguishing_marks": [
+      "Subdermal recording membrane ridge along inner left forearm — barely visible as a faint linear discoloration and slight texture change under skin, visible only in direct light or close inspection",
+      "A single thin scar at left temple, approximately 2cm, nearly invisible but present as a slight disruption in hair growth pattern"
+    ],
+    "visible_augmentations": "Bioluminescent hair (mood-reactive teal-to-silver shift; faint glow in low-light spaces). Subdermal recording membrane not immediately visible but audible if mentioned. Optical enhancements not externally apparent — enhancement is internal.",
+    "posture_movement": "Upright, centered; economical movement with zero wasted energy. Sits at perfect spine angle; walks as if following invisible grid lines. Hands rest with deliberation. Their presence suggests they are always recording, always evaluating — not paranoid, but professionally present in a way that fills nearby space with invisible weight.",
+    "clothing_style": "Axiom Security Division corporate greys — clean, precisely fitted, zero deviation. Jacket tailored to minimize profile; slacks with knife-edge crease; grey compression undershirt visible at collar. No jewelry, no personal markers, no visible brands. Boots: black, polished to mirror finish, military-spec. The uniform is worn as armor and protocol simultaneously."
+  },
+  "image_prompt": "Cyberpunk character portrait of a nonbinary person with pale olive skin, sharp geometric cheekbones, and precision-cut short black hair with bioluminescent teal-to-silver mood-reactive glow. Dark brown eyes with subtle optical enhancement. Slight, angular frame dressed in immaculate Axiom Security Division grey corporate bodysuit with knife-edge creases and black polished boots. Faint subdermal ridge visible along inner left forearm under skin. Expression controlled and evaluative, standing in stark sterile corporate office lighting with hard shadows. Meridian Core aesthetic — chrome and concrete behind figure. Professional, threatening through precision rather than aggression. Cyberpunk noir, clinical lighting, high contrast, sharp focus, intricate detail on uniform and augmentation tech. --ar 2:3 --v 6"
 }

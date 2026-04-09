@@ -186,5 +186,27 @@
     "The Pure Hand",
     "Cedar"
   ],
-  "district": "The Underworld"
+  "district": "The Underworld",
+  "physical_description": {
+    "heritage": "West African / Eastern European (Russian / Polish)",
+    "height_cm": 172,
+    "weight_kg": 78,
+    "build": "Broad-shouldered and substantial, with a compact density that speaks to decades of standing through labors. Not fat — muscled underneath, the kind of weight that comes from carrying bodies and responsibility. Her center of gravity is low, rooted.",
+    "hair_color": "Silver-gray, natural with no dye",
+    "hair_style": "Close-cropped, neat, practical — no styling, just maintenance",
+    "hair_length": "Short",
+    "eye_color": "Deep brown with a faint retinal overlay shimmer visible in certain light angles (diagnostic vitals readout)",
+    "skin_tone": "Very dark brown, rich and grounded",
+    "complexion": "Deeply lined face that reads as a map of attention — forehead creases from concentration, laugh lines around her eyes, thin mouth set in habitual listening. Skin is clear but weathered, with the texture of someone who has worked in humid sub-levels for decades. No makeup. A few age spots on her temples.",
+    "distinguishing_marks": [
+      "Bioluminescent subdermal stripe running from left collarbone down the inside of her left arm to wrist — deep amber color, pulsing faintly at rest, quickening with stress or focus",
+      "Scarring across both palms and fingers from decades of surgical work — old, white, barely visible unless you look for them",
+      "A small burn scar on her right forearm, shaped like a crescent — from an autoclave incident twenty years ago",
+      "A faint ritual scar pattern on her left shoulder blade, three parallel lines, barely raised — cultural marking from her mother's family"
+    ],
+    "visible_augmentations": "The bioluminescent stripe is the only immediately visible augmentation. At close range, a faint shimmer in her pupils suggests the retinal overlay. Her fingers move with mechanical precision when she's examining — haptic feedback sensors are invisible but her hand-steadiness is uncanny. No chrome, no external hardware.",
+    "posture_movement": "She moves slowly and economically, with a settled heaviness that suggests she is never in a hurry. Her shoulders are always slightly forward, as if she is leaning into listening. When she walks, her weight falls through her heels first — grounded, deliberate. She touches things (instruments, patients, doorframes) with a kind of confirmation, making sure they are real. Her hands are almost never still — checking, adjusting, feeling.",
+    "clothing_style": "Tier 3-4 practical: loose dark clothing (charcoal or black linen) that breathes in the humid Hollow, reinforced at seams. A long unbuttoned overshirt in faded indigo that carries instrument pockets and is stained faintly with antiseptic and old stains she stopped trying to get out. Worn canvas boots with good grip for wet sub-level floors. A thin cord necklace with two objects: a small brass compass and a data-chip (the weekly patient vitals offering). No jewelry beyond function. Everything worn soft from use, nothing new. She smells of cedar antiseptic and dried herbs (cardamom, sage)."
+  },
+  "image_prompt": "A 58-year-old West African-Eastern European woman with very dark skin and deep silver-cropped hair, standing in a dimly lit cyberpunk medical sub-level, broad shoulders and grounded presence, hands scarred and steady, bioluminescent amber stripe glowing softly on her left arm from collarbone to wrist, wearing loose charcoal linen and a faded indigo overshirt with instrument pockets, faint retinal overlay shimmer in her dark eyes, weathered face mapped with decades of focused attention, surrounded by medical instruments and sterilization equipment, moody amber and blue lighting reflecting off wet concrete walls, cinematic depth, photorealistic portraiture, --ar 2:3 --v 6"
 }

@@ -14,7 +14,7 @@
   "age": 38,
   "status": "active",
   "location": "The Circuit, near North Ave and Damen",
-  "description": "Tavish Ohlendorf-Crane presents himself as the most boring man in Meridian 88, and he has cultivated this presentation with the care of a topiarist. He is medium height, medium build, with a forgettable face he keeps clean-shaven and hair he keeps the color and style of someone who doesn't think about his hair. His suits are expensive in ways that read as merely appropriate. He smiles at exactly the right frequency. He brokers commercial leases in The Circuit and lower Meridian Core — warehouses, storefronts, sublevel office space — and he is very good at it, and this is genuinely not the interesting thing about him.\n\nThe interesting thing is that Tavish has spent fifteen years quietly embedding himself in the physical infrastructure of Meridian 88's middle layers, and in doing so has accumulated something more valuable than money: he knows who is in every room. His properties house everything from courier fronts to unlicensed server farms to the private meeting spaces where deals that can't happen in public happen. He doesn't ask what his tenants are doing. He charges accordingly. And he listens, through the walls he owns, through the maintenance contracts he controls, through the augmented spatial memory that lets him reconstruct a floorplan — and the conversations within it — from a single walkthrough.\n\nHe is not cruel and he is not ideological and this is perhaps the most unsettling thing about him. He doesn't have a side. He has a ledger. The information he collects is a commodity like any other, and he sells it to whoever can pay, with the single operational rule that he never sells information that would get a tenant killed on his property — too messy, too bad for business. This rule has a name among the people who know about him: they call it 'Ohlendorf's exception,' and the fact that it exists is the only reason anyone trusts him at all.",
+  "description": "Tavish Ohlendorf-Crane presents himself as the most boring man in GLMZ, and he has cultivated this presentation with the care of a topiarist. He is medium height, medium build, with a forgettable face he keeps clean-shaven and hair he keeps the color and style of someone who doesn't think about his hair. His suits are expensive in ways that read as merely appropriate. He smiles at exactly the right frequency. He brokers commercial leases in The Circuit and lower Meridian Core — warehouses, storefronts, sublevel office space — and he is very good at it, and this is genuinely not the interesting thing about him.\n\nThe interesting thing is that Tavish has spent fifteen years quietly embedding himself in the physical infrastructure of GLMZ's middle layers, and in doing so has accumulated something more valuable than money: he knows who is in every room. His properties house everything from courier fronts to unlicensed server farms to the private meeting spaces where deals that can't happen in public happen. He doesn't ask what his tenants are doing. He charges accordingly. And he listens, through the walls he owns, through the maintenance contracts he controls, through the augmented spatial memory that lets him reconstruct a floorplan — and the conversations within it — from a single walkthrough.\n\nHe is not cruel and he is not ideological and this is perhaps the most unsettling thing about him. He doesn't have a side. He has a ledger. The information he collects is a commodity like any other, and he sells it to whoever can pay, with the single operational rule that he never sells information that would get a tenant killed on his property — too messy, too bad for business. This rule has a name among the people who know about him: they call it 'Ohlendorf's exception,' and the fact that it exists is the only reason anyone trusts him at all.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -244,7 +244,7 @@
   "registered_firearms": [],
   "related_entities": [
     "Meridian Core",
-    "Meridian 88",
+    "GLMZ",
     "The Circuit",
     "Ringo DV-4 'Courier'",
     "Adaeze Chen-Hawkins",
@@ -252,5 +252,24 @@
     "Pellucid Systems",
     "Crane"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Germanic-Scandinavian / Anglo-American",
+    "height_cm": 178,
+    "weight_kg": 76,
+    "build": "Medium, slightly lean — the build of someone who maintains himself out of routine rather than vanity. Shoulders narrow but not soft, posture habitually correct without appearing military.",
+    "hair_color": "Medium brown, naturally graying at temples but kept to a consistent salt-and-pepper by maintenance",
+    "hair_style": "Neat, side-parted, cut every three weeks to the same length. The hair of someone who solved the problem and doesn't revisit the decision.",
+    "hair_length": "Short",
+    "eye_color": "Gray-blue, unremarkable. The pupils occasionally show the faintest depth-of-field shimmer when his spatial memory implant is active.",
+    "skin_tone": "Fair, with the even paleness of someone who works indoors under consistent lighting. No sun damage.",
+    "complexion": "Clean-shaven daily. Skin care is methodical and minimal. Face is symmetrical and entirely forgettable — no prominent features, no scars, no markers that would make him stand out in a crowd. This is deliberate.",
+    "distinguishing_marks": [
+      "Faint surgical scar at the base of his skull, barely visible unless his hair is wet, approximately 3cm in length — site of spatial memory implant installation."
+    ],
+    "visible_augmentations": "None visible. The subvocal encryption relay has no external hardware. The spatial memory implant is subcutaneous neural. To a stranger, he appears entirely unmodified.",
+    "posture_movement": "Moves with measured efficiency. Never hurried, never lingering. Stands with weight balanced evenly on both feet. His head turns in controlled arcs rather than snapping attention. When he walks through a space, his eyes track in a systematic pattern — ceiling, walls, floor, fixtures — as if cataloguing. His smile appears at socially appropriate intervals and disappears at socially appropriate intervals. No fidgeting.",
+    "clothing_style": "Expensive suits in neutral colors (charcoal, navy, warm gray) that read as 'appropriate' rather than 'statement.' Shirts in white or pale blue, always pressed. Ties in muted patterns or solid colors. Shoes are well-maintained leather in black or brown. A watch — mechanical, not smart, mid-tier brand, Swiss — on his left wrist. No jewelry beyond this. Jacket pockets contain: a pen, a small leather notebook, sometimes a lens fragment he's currently cataloguing. The overall effect is of a man who dressed himself once and then stopped thinking about clothing."
+  },
+  "image_prompt": "Portrait of a 38-year-old man, Germanic-Scandinavian features, medium brown hair with gray at temples, gray-blue eyes, clean-shaven, entirely forgettable face, standing in a neutral pose. Wearing a charcoal suit jacket, pale blue shirt, muted tie. Mid-tier Swiss watch visible on left wrist. Background is a clean, nondescript corporate interior — fluorescent-lit office hallway or commercial building lobby, slightly washed out. Cyberpunk aesthetic but understated and unglamorous. Lighting is flat and professional. Expression is neutral, neither warm nor cold. The man appears as if photographed in a corporate database. No augmentations visible. Highly detailed, photorealistic, corporate photography style. --ar 2:3 --v 6"
 }

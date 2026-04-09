@@ -178,5 +178,26 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "The Milwaukee Core"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "East African / Armenian",
+    "height_cm": 138,
+    "weight_kg": 32,
+    "build": "Wiry and compact — the lean muscularity of a child who runs constantly and eats irregularly. No fat reserves; defined shoulders and forearms from climbing and hauling. Moves like coiled spring steel.",
+    "hair_color": "Natural black",
+    "hair_style": "Close-cropped on the sides, slightly longer coils on top, uneven from whoever had scissors that week",
+    "hair_length": "Short",
+    "eye_color": "Dark brown",
+    "skin_tone": "Warm dark brown with the undertone of East African and Armenian mixed heritage",
+    "complexion": "Clean but weathered; angular child's face with prominent cheekbones and a sharp jawline. Skin shows minor scrapes and healing scratches from street work. Quick, expressive eyes that dart constantly. Small scar on left eyebrow from an old street incident.",
+    "distinguishing_marks": [
+      "Bioluminescent geneware tattoo on left forearm depicting a cresting wave in faint blue that glows involuntarily when he is cold, scared, or emotionally distressed",
+      "Thin white scar running 3cm along left temple, partially hidden by hair",
+      "Calluses on palms and knuckles from climbing and hauling packages"
+    ],
+    "visible_augmentations": "The glowing wave tattoo on left forearm is immediately visible and responds to his emotional state. No other visible chrome or bioware — he is too young and too poor for anything else.",
+    "posture_movement": "Never still. Bounces slightly even when standing. Moves with the quick, efficient darting of someone who navigates tight spaces constantly. Hands gesture rapidly when talking. Eyes scan constantly — a survival habit. Tends to lean forward when listening, as if afraid to miss information.",
+    "clothing_style": "A oversized jacket three sizes too large, dark charcoal or faded black, with visibly sewn interior lining pockets for carrying messages and small goods. The jacket is his armor and his storage — cuffs rolled multiple times, hem dragging slightly. Underneath: a faded band t-shirt or whatever thermal layer he found that week. Cargo pants or worn jeans held up with a wire twist or frayed belt. Scuffed sneakers with mismatched laces. Everything is Tier 5 — salvaged, repaired, and worn thin. No corp branding. No luxury."
+  },
+  "image_prompt": "Cyberpunk street kid, 11 years old, East African and Armenian features, warm dark brown skin, short black coils close-cropped sides, angular sharp-featured face, dark eyes constantly moving and scanning. Small wiry build, coiled spring tension in posture. Wearing oversized charcoal jacket three sizes too large with visible hand-sewn interior pockets, cuffs rolled, dragging hem, worn faded t-shirt underneath, cargo pants held with wire twist, scuffed mismatched-lace sneakers. Left forearm glowing faint blue bioluminescent wave tattoo. Bouncing slightly, hands gesturing, leaning forward with street-kid alertness. Urban Tier 5 setting: cracked neon signs, maintenance shafts, rat-runs, faded North Ave industrial backdrop. Moody blue-green cyberpunk lighting with practical streetlight grit, shallow depth of field, film grain, 35mm documentary style. --ar 2:3 --v 6"
 }

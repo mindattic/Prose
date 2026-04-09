@@ -44,8 +44,16 @@
     "Corridor travelers passing through Racine who heard about Tuesday nights"
   ],
   "notable_locations": [
-    "The pit — recessed loading dock, the corridor's most respected fighting ring",
-    "The champion board — forty years of names, the corridor's unofficial Hall of Fame"
+    {
+      "name": "The pit",
+      "description": "recessed loading dock, the corridor's most respected fighting ring",
+      "tags": []
+    },
+    {
+      "name": "The champion board",
+      "description": "forty years of names, the corridor's unofficial Hall of Fame",
+      "tags": []
+    }
   ],
   "coordinates": {
     "lat": 42.7261,

@@ -263,5 +263,26 @@
     "Zheng-Dao Heavy Industries Containment Foam Launcher CFL-2 'Amber'",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "West African (Malian) / Balkan (Serbian-Greek)",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Wiry and kinetic, lean muscle with minimal body fat; shoulders slightly narrower than hips; posture that suggests constant motion even when standing still",
+    "hair_color": "Natural dark brown with faint red undertones",
+    "hair_style": "Worn long and loose on days off in natural waves; pulled into tight, compact braids on working days—typically 4-6 thick plaits secured at the nape with recycled polymer clips",
+    "hair_length": "Long (shoulder-length when loose, mid-back when braided)",
+    "eye_color": "Modified: cycles slowly from amber through chartreuse to soft green on ~8-second loop; irises are slightly larger than baseline due to implant housing",
+    "skin_tone": "Medium warm brown with golden undertones; reflects mixed West African and Mediterranean heritage",
+    "complexion": "Youthful face with high cheekbones and a sharp jawline; skin is generally clear but shows signs of inconsistent sleep and stress—faint darkening under eyes; a small scar on the left temple (about 1cm, thin) from a bodmod session gone slightly wrong",
+    "distinguishing_marks": [
+      "Bioluminescent freckle array across nose bridge and upper cheekbones (approximately 12-15 points), pale blue-white when active, barely visible when dormant; pulses noticeably during elevated emotional states",
+      "Matching bioluminescent freckle constellation across upper chest (visible only if shirt is open or loose-fitting), radiating outward from sternum in a loose star pattern",
+      "Small circular scar on inner right forearm (neural ping implant insertion point, approximately 0.5cm diameter, pale and clean-edged)"
+    ],
+    "visible_augmentations": "Color-cycling eye modification is immediately apparent due to the slow, continuous hue shift and slightly non-standard iris diameter; bioluminescent freckles are visible on face and chest when garments expose skin, dormant but traceable under close inspection; neural ping implant is subcutaneous and not externally obvious unless clothing is removed",
+    "posture_movement": "Restless and economical; bounces left knee in rapid intervals when sitting; habitually rotates a stylus or small object (pen, data-chip, transit token) through fingers in continuous loops; walks with quick, efficient strides; hands gesticulate frequently during conversation; eyes track movement and entrances constantly; overall impression is of someone running on high alert but not agitated—controlled kinetic energy",
+    "clothing_style": "Tier 3-4 working class with militant undertones; prefers fitted, durable clothing in muted colors (charcoal, deep blue, rust); typically wears secondhand surplus work pants with reinforced knees, thermal base layers, and a faded Ferrogate maintenance union jacket (unofficial, from a previous campaign) with hand-stitched patches; multiple cargo pockets filled with union literature, encrypted data-chips, and snack bars; insulated boots with grip treads suitable for yard work; a worn canvas shoulder bag with frayed straps that carries personal items and organizing materials; minimal jewelry except for a recycled-metal ring on left ring finger (no clear symbolism, just worn). Appearance communicates 'always ready to move, always working, always listening.'"
+  },
+  "image_prompt": "portrait of a 27-year-old nonbinary transit union organizer with medium warm brown skin, wiry athletic build, and long dark braided hair pulled back tight; striking modified eyes that cycle from amber to green, bioluminescent freckle-constellation glowing faintly across nose and cheekbones in pale blue-white; wearing faded gray Ferrogate maintenance jacket over thermal layers, cargo pants, scuffed work boots; kinetic pose with hands in motion, fingers rotating a stylus, restless energy, slight knee bounce; Dearborn Forge industrial yard setting in background with chain-link fence and shipping containers; cool fluorescent dawn lighting mixing with faint bioluminescent glow; cyberpunk realism, documentary street photography style, shallow depth of field, cinematic, gritty working-class aesthetic, --ar 2:3 --v 6"
 }

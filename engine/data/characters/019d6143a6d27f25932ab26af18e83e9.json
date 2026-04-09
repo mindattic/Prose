@@ -62,7 +62,7 @@
   "narrative_function": "Local authority figure and quest giver; her procedural knowledge makes her invaluable for navigating zone politics; she can open or close doors depending on whether players have earned her trust; represents the slow, grinding work of institutional resistance.",
   "augmentations": "Cosmetic cat-ear geneware (tawny, velvet-tipped, functional swivel); basic cardiac monitor implant (medical necessity, post-stress episode 2196); reading-assist optical overlay for document review — standard elder-care tier",
   "daily_life": "Holds open constituent hours from early morning in the council hall; spends afternoons in procedural meetings, document review, and negotiation calls with corponation liaisons and city administrators; evenings are reserved for community events, which she attends as a participant, not a speaker.",
-  "affiliation": "Highland Park Autonomous Zone Community Council (Chair); Meridian 88 Non-Corporate Zone Solidarity Network; informal mentor to several younger organizers citywide",
+  "affiliation": "Highland Park Autonomous Zone Community Council (Chair); GLMZ Non-Corporate Zone Solidarity Network; informal mentor to several younger organizers citywide",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -269,5 +269,25 @@
     "Silver",
     "Copper"
   ],
-  "district": "The Spires"
+  "district": "The Spires",
+  "physical_description": {
+    "heritage": "Polynesian (Tongan/Samoan) / French-Canadian",
+    "height_cm": 180,
+    "weight_kg": 78,
+    "build": "Tall and broad-shouldered with dignified carriage; strong frame that reads as presence rather than aggression. Carries weight with authority — the build of someone accustomed to labor and leadership in equal measure.",
+    "hair_color": "Silver-white",
+    "hair_style": "Locs arranged in a sculptural updo, secured with copper wire threaded through enamel political pins spanning four decades",
+    "hair_length": "Long (locs reach mid-back when loose)",
+    "eye_color": "Deep brown, warm",
+    "skin_tone": "Warm brown with golden undertones characteristic of Polynesian heritage",
+    "complexion": "Deep-set eyes framed by pronounced crow's feet; face shows four decades of outdoor sun exposure and expression. Minimal makeup. Strong jawline, full mouth. Skin texture is textured and weathered in a way that suggests work and time spent outdoors and in uncontrolled environments. No grooming affectations.",
+    "distinguishing_marks": [
+      "Fine network of expression lines radiating from eyes — crow's feet she treats as credentials of forty years' engagement",
+      "Barely-visible surgical scar along right collarbone (cardiac monitor implant, 2196 — only visible if she's wearing low-neckline clothing, which is rare)"
+    ],
+    "visible_augmentations": "Tawny velvet-tipped cat-ear modifications protruding from upper temples; functional, they swivel noticeably when she's listening intently. The cosmetic work is elegant but unmistakable. Reading-assist optical overlay is not visible during normal interaction but becomes apparent as faint prismatic shimmer when she's reviewing documents under bright light.",
+    "posture_movement": "Moves with unhurried authority — no wasted motion. Stands with shoulders back, weight distributed evenly. Walks slowly and deliberately through spaces she moves through as if she owns them through custodianship. Gestures are economical and purposeful. When seated in meetings, she leans slightly forward when listening, and her cat ears swivel visibly — an unconscious tell that unsettles people unfamiliar with the modification.",
+    "clothing_style": "Tier 4 functional elegance. Favors high-quality, durable fabrics in muted earth tones — charcoal, ochre, deep teal. Standard uniform is tailored linen slacks, long-sleeve cotton or linen shirts (rolled to the elbow), and a vest or overshirt in heavier fabric. Wears leather sandals that have been repaired many times. Minimal jewelry beyond the copper wire and enamel pins in her hair and a simple steel wedding band. Clothing is scrupulously maintained but not expensive — chosen for longevity and practicality, not status. No corporate logos. No synthfiber."
+  },
+  "image_prompt": "Portrait of a 58-year-old Black woman with silver-white locs piled into an architectural updo secured with copper wire and tiny enamel political pins, warm deep brown skin, deep-set eyes with pronounced crow's feet, dignified bearing. Functional tawny velvet-tipped cat-ear geneware modifications protruding from temples. Wearing a tailored linen shirt and weathered leather vest, earth tones, Tier 4 working-class aesthetic. Standing in reclaimed gymnasium space with soft overhead light hitting her face from 45 degrees, creating dramatic shadow under her cheekbones. Her expression is measured and authoritative. Cyberpunk, photorealistic, dignified, documentary-style lighting, warm color grade, --ar 2:3 --v 6"
 }

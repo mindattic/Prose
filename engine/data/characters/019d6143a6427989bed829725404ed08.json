@@ -13,7 +13,7 @@
   "age": 43,
   "status": "active",
   "location": "The Circuit — neon-lit entertainment and vice district, near Damen and Armitage",
-  "description": "Kenji Dahl-Conteh is lean and angular, all sharp edges and visible tension. At 43, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and she makes no effort to hide it.\n\nShe arrived in Meridian 88 six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a wheelman out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nKenji Dahl-Conteh is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Kenji Dahl-Conteh is lean and angular, all sharp edges and visible tension. At 43, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a wheelman out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nKenji Dahl-Conteh is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.87,
@@ -61,7 +61,7 @@
   "relationships": [],
   "story_hooks": [
     "A Tier 4 executive offers Kenji Dahl-Conteh a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "A crew member from Kenji Dahl-Conteh's past shows up in Meridian 88, carrying old grievances and new chrome",
+    "A crew member from Kenji Dahl-Conteh's past shows up in GLMZ, carrying old grievances and new chrome",
     "Kenji Dahl-Conteh's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
   ],
   "narrative_function": "As a wheelman, Kenji Dahl-Conteh embodies the tension between independence and isolation. She is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
@@ -271,12 +271,34 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "Meridian 88",
+    "GLMZ",
     "The Circuit",
     "The Nearfield",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
   ],
-  "district": "The Circuit"
+  "district": "The Circuit",
+  "physical_description": {
+    "heritage": "Japanese / Scandinavian / West African",
+    "height_cm": 168,
+    "weight_kg": 52,
+    "build": "Lean and angular with corded muscle from years of climbing work and high-stress driving; minimal body fat, posture suggesting coiled spring readiness",
+    "hair_color": "Black with silver-grey streaking at temples",
+    "hair_style": "Pulled back in a tight, functional braid; practical, never decorative",
+    "hair_length": "Medium",
+    "eye_color": "Dark brown with faint chromatic iridescence around iris — side effect of dermal camouflage neural integration",
+    "skin_tone": "Medium golden-brown with warm undertones, bearing the subtle sheen of active camouflage pigment cells beneath the surface",
+    "complexion": "Sharp cheekbones, narrow jaw, minimal scarring visible on face but hands show minor chrome integration seams at fingertips; skin appears almost too smooth in places where dermal augmentation runs beneath epidermis; expression habitually neutral, difficult to read",
+    "distinguishing_marks": [
+      "Chrome visible at all ten fingertip pads — gecko-grip implants with faint metallic sheen, barely concealed by skin overlay",
+      "Matching chrome at toe pads, visible when barefoot or in minimal footwear",
+      "Fine scar running along left inner forearm (15cm) from early augmentation surgery, pale and well-healed",
+      "Faint subsurface pattern visible under collarbone area where dermal camouflage control nodes integrate with nervous system"
+    ],
+    "visible_augmentations": "Chrome gecko-grip implants at fingertips and toes — no attempt made to conceal them; faint chromatic skin shimmer visible under certain lighting angles indicating active dermal camouflage layer; eyes show subtle iridescent quality at edges of iris",
+    "posture_movement": "Stands with minimal wasted energy, shoulders slightly forward; movement economical and precise, with unconscious assessment of handholds and vertical surfaces while walking; hands rarely still, fingers moving with independent dexterity; walks with narrow stance suited to balance on vehicle surfaces; maintains careful physical distance, never fully relaxes",
+    "clothing_style": "Function-first Tier 3-4 aesthetic: reinforced black synthetic jacket with internal cable routing visible at seams; fitted grey cargo pants with ankle pockets; grip-sole boots designed for rooftop and vehicle work; minimal branding — no corpo logos, no gang colors; wears a worn leather wrist cuff on left arm (not augmented) with faded embossing; chrome catches light when hands move; no jewelry; single earbud jack visible at left temple (subcutaneous neural interface connection point)"
+  },
+  "image_prompt": "cyberpunk wheelman character, lean angular Japanese-Scandinavian-African woman age 43, black hair with silver streaks pulled tight, sharp cheekbones, dark eyes with subtle iridescence, medium golden-brown skin with faint chromatic shimmer from dermal camouflage augmentation, visible chrome gecko-grip implants at fingertips and toes, functional black reinforced jacket with cable routing, grey cargo pants, grip-sole boots, standing in neon-soaked urban environment at night, The Circuit district neon signs reflecting off chrome, moody blue and magenta lighting, cinematic cyberpunk aesthetic, ultra-detailed hands showing chrome integration, tense posture of coiled readiness, highly detailed face with neutral expression, photorealistic character portrait, --ar 2:3 --v 6"
 }

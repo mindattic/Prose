@@ -181,6 +181,46 @@ Run the Python pipeline periodically (after content generation), then refresh th
 - **Location mismatches:** Character's description says "Circuit" but their district field says "Laceworks"
 - **Attribute drift:** An entity's properties described differently across documents
 
+## Character Portrait Generator (`describe.py`)
+
+Generates FBI/NCIC-style physical descriptions and Midjourney-ready image prompts for all character entities. Uses the Claude API to analyze each character's existing data (name, role, description, augmentations) and produce grounded physical descriptions that respect the Ubiquitous Diaspora naming/heritage conventions.
+
+**Output:** Adds `physical_description` (object) and `image_prompt` (string) fields to each character JSON file.
+
+**Resume-safe:** Skips characters that already have a `physical_description` field.
+
+```bash
+python describe.py                    # Process all 1200+ characters
+python describe.py --limit 10         # Test with 10 characters
+python describe.py --dry-run          # Preview without API calls
+python describe.py --concurrency 30   # Override parallel request count
+```
+
+**Also accessible from the Blazor app:** Settings > Describe Characters button launches the script in a terminal window.
+
+### Physical Description Schema (NCIC-Inspired)
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `heritage` | string | Ethnic/cultural lineage derived from hyphenated surname |
+| `height_cm` | int | Height in centimeters |
+| `weight_kg` | int | Weight in kilograms |
+| `build` | string | Body type with character-specific detail |
+| `hair_color` | string | Natural or modified hair color |
+| `hair_style` | string | How they wear their hair |
+| `hair_length` | string | Short / Medium / Long / Shaved / None |
+| `eye_color` | string | Natural or augmented eye color |
+| `skin_tone` | string | Complexion grounded in mixed heritage |
+| `complexion` | string | Facial features, grooming, skin condition |
+| `distinguishing_marks` | array | Scars, tattoos, burns, birthmarks |
+| `visible_augmentations` | string | What a stranger would notice |
+| `posture_movement` | string | Body language, gait, how they carry themselves |
+| `clothing_style` | string | Default appearance, tier indicators |
+
+### Image Prompt Format
+
+Midjourney-style prompt string with physical descriptors, clothing, setting/mood, lighting, and `--ar 2:3 --v 6` flags. Can be pasted directly into Midjourney or similar AI image generators.
+
 ## Architecture
 
 ```

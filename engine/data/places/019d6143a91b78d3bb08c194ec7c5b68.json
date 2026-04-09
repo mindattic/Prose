@@ -8,7 +8,7 @@
     "Lakehead",
     "North Post"
   ],
-  "description": "Thunder Bay is the end of the line, and it knows it. Situated on the northwest shore of Lake Superior, 1,400 kilometers from Toronto and 700 kilometers from the nearest population center that anyone would call a city, Grainfort exists because geography demands it. The port — one of the largest grain-handling facilities in the western hemisphere — connects the prairie agricultural zones to the Great Lakes shipping network. Grain goes in, everything else goes out, and the city survives on the margin between the two. Ironclad Agrisystems and Sulfur Crown Agriculture maintain competing sovereign terminals on the waterfront, their grain elevators rising like concrete cathedrals above a city that has never had the population to justify the infrastructure.\n\nThe isolation is the defining feature. The Trans-Canada Corridor connects Grainfort to Sault Ste. Marie and eventually Toronto, but the distance is real — 14 hours by ground transport, 3 hours by high-speed maglev if the weather cooperates, which it frequently doesn't. Winter temperatures drop to -40°C, and the lake effect weather systems produce storms that shut down transportation infrastructure for days at a time. During these lockdowns, Grainfort becomes an island — 150,000 people sealed inside a city that was designed for supply chain throughput, not human habitation. The residents have adapted with the particular resourcefulness of people who understand that help is not coming.\n\nThe mining operations north of the city — gold, platinum, rare earth minerals essential for augmentation manufacturing — provide the secondary economic base. Dredge Mining Collective maintains extraction facilities in the Canadian Shield bedrock, and the miners who work them are the hardest people in the GLM. The indigenous communities in the surrounding territory — Anishinaabe, Ojibwe, Métis — maintain treaty-based sovereignty that predates corporate charters, and their relationship with the mining operations is adversarial, litigious, and occasionally violent. Grainfort is where the GLM's supply chain meets the reality of geography, climate, and the people who were here first.",
+  "description": "Thunder Bay is the end of the line, and it knows it. Situated on the northwest shore of Lake Superior, 1,400 kilometers from Toronto and 700 kilometers from the nearest population center that anyone would call a city, Grainfort exists because geography demands it. The port — one of the largest grain-handling facilities in the western hemisphere — connects the prairie agricultural zones to the Great Lakes shipping network. Grain goes in, everything else goes out, and the city survives on the margin between the two. Ironclad Agrisystems and Sulfur Crown Agriculture maintain competing sovereign terminals on the waterfront, their grain elevators rising like concrete cathedrals above a city that has never had the population to justify the infrastructure.\n\nThe isolation is the defining feature. The Trans-Canada Corridor connects Grainfort to Sault Ste. Marie and eventually Toronto, but the distance is real — 14 hours by ground transport, 3 hours by high-speed maglev if the weather cooperates, which it frequently doesn't. Winter temperatures drop to -40°C, and the lake effect weather systems produce storms that shut down transportation infrastructure for days at a time. During these lockdowns, Grainfort becomes an island — 150,000 people sealed inside a city that was designed for supply chain throughput, not human habitation. The residents have adapted with the particular resourcefulness of people who understand that help is not coming.\n\nThe mining operations north of the city — gold, platinum, rare earth minerals essential for augmentation manufacturing — provide the secondary economic base. Dredge Mining Collective maintains extraction facilities in the Canadian Shield bedrock, and the miners who work them are the hardest people in the GLMZ. The indigenous communities in the surrounding territory — Anishinaabe, Ojibwe, Métis — maintain treaty-based sovereignty that predates corporate charters, and their relationship with the mining operations is adversarial, litigious, and occasionally violent. Grainfort is where the GLMZ's supply chain meets the reality of geography, climate, and the people who were here first.",
   "atmosphere": {
     "sights": [
       "Grain elevators towering above the waterfront — concrete monoliths visible from every point in the city",
@@ -33,7 +33,7 @@
   },
   "demographics": "Population 150,000 registered. Indigenous communities in the surrounding territory add an estimated 40,000, though those populations move between urban and traditional territories seasonally. The workforce divides cleanly between port operations and mining, with a small professional class serving both. Tier distribution is flat — mostly Tier 2, with limited Tier 3 corporate management. Nobody comes to Grainfort to be rich.",
   "economy": "Grain transshipment and mineral extraction. Ironclad Agrisystems and Sulfur Crown Agriculture control the port. Dredge Mining Collective controls the northern extraction facilities. The local economy exists to feed, house, and supply the workers who run both. There is no service economy to speak of. There are bars.",
-  "power_structure": "Three corporate sovereigns — Ironclad, Sulfur Crown, and Dredge — with competing interests and overlapping security jurisdictions. Canadian federal authority maintains a military installation (CFB Thunder Bay) for Arctic sovereignty purposes, which gives the federal government more presence here than in most GLM cities. Indigenous treaty councils hold legal authority over surrounding territories and maintain an uneasy détente with the mining operations.",
+  "power_structure": "Three corporate sovereigns — Ironclad, Sulfur Crown, and Dredge — with competing interests and overlapping security jurisdictions. Canadian federal authority maintains a military installation (CFB Thunder Bay) for Arctic sovereignty purposes, which gives the federal government more presence here than in most GLMZ cities. Indigenous treaty councils hold legal authority over surrounding territories and maintain an uneasy détente with the mining operations.",
   "dangers": [
     "Winter lockdowns — supply chain interruption when the corridor closes, sometimes for weeks",
     "Mining operations in unstable Shield bedrock — collapses happen, rescue is slow",
@@ -42,10 +42,10 @@
     "Lake Superior weather — the lake kills ships, and it doesn't distinguish between cargo barges and pleasure craft"
   ],
   "opportunities": [
-    "Rare earth mineral access — the mining operations produce augmentation components that the entire GLM needs",
+    "Rare earth mineral access — the mining operations produce augmentation components that the entire GLMZ needs",
     "Treaty negotiation expertise — mediating between indigenous councils and corporate sovereigns is specialized and well-compensated work",
     "The isolation creates information asymmetry — what happens in Grainfort stays in Grainfort until someone carries it out",
-    "Supply chain chokepoint leverage — control the port and you influence grain prices across the GLM"
+    "Supply chain chokepoint leverage — control the port and you influence grain prices across the GLMZ"
   ],
   "story_hooks": [
     "A Dredge Mining operation has broken through the Shield bedrock into something — not a natural formation, not a geological feature, something built — and they've sealed the site",
@@ -75,12 +75,12 @@
     },
     {
       "name": "CFB Thunder Bay",
-      "description": "Canadian Forces Base — the federal government's Arctic sovereignty anchor, and the only non-corporate military installation in the northern GLM",
+      "description": "Canadian Forces Base — the federal government's Arctic sovereignty anchor, and the only non-corporate military installation in the northern GLMZ",
       "tags": []
     },
     {
       "name": "Sleeping Giant Provincial Reserve",
-      "description": "Protected territory on the peninsula — one of the few places in the GLM where corporate sovereignty has been legally unable to take root",
+      "description": "Protected territory on the peninsula — one of the few places in the GLMZ where corporate sovereignty has been legally unable to take root",
       "tags": []
     }
   ],
