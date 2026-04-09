@@ -388,11 +388,6 @@ def regenerate_surnames(index, dry_run=False):
                 continue
 
             data["name"] = new_name
-            # Update aliases — keep existing, add old name as alias
-            aliases = data.get("aliases", [])
-            if old_name not in aliases:
-                aliases.insert(0, old_name)
-            data["aliases"] = aliases
 
             with open(fp, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
