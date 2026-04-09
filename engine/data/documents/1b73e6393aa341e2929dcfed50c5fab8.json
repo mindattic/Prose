@@ -42,5 +42,44 @@
     "Unit 217",
     "The Wanderer",
     "Unit 044 ('Pilgrim')"
-  ]
+  ],
+  "coordinates": {
+    "lat": 42.0,
+    "lng": -93.5
+  },
+  "map_polygon": {
+    "name": "Iowa Exclusion Zone",
+    "desc": "47,000 sq mi automated farmland. 340 Behemoths. Unauthorized biologicals eliminated on detection.",
+    "strokeColor": "#f0883e",
+    "fillColor": "#f0883e",
+    "fillOpacity": 0.15,
+    "strokeWeight": 2,
+    "coords": [
+      { "lat": 43.50, "lng": -96.64 },
+      { "lat": 43.50, "lng": -96.00 },
+      { "lat": 43.50, "lng": -95.00 },
+      { "lat": 43.50, "lng": -94.00 },
+      { "lat": 43.50, "lng": -93.00 },
+      { "lat": 43.50, "lng": -92.00 },
+      { "lat": 43.50, "lng": -91.20 },
+      { "lat": 43.00, "lng": -91.10 },
+      { "lat": 42.50, "lng": -90.65 },
+      { "lat": 42.00, "lng": -90.64 },
+      { "lat": 41.50, "lng": -90.60 },
+      { "lat": 41.00, "lng": -91.05 },
+      { "lat": 40.60, "lng": -91.40 },
+      { "lat": 40.38, "lng": -91.72 },
+      { "lat": 40.39, "lng": -92.50 },
+      { "lat": 40.44, "lng": -93.50 },
+      { "lat": 40.44, "lng": -94.50 },
+      { "lat": 40.44, "lng": -95.76 },
+      { "lat": 40.58, "lng": -95.87 },
+      { "lat": 41.00, "lng": -95.86 },
+      { "lat": 41.50, "lng": -96.10 },
+      { "lat": 42.00, "lng": -96.40 },
+      { "lat": 42.50, "lng": -96.55 },
+      { "lat": 43.00, "lng": -96.60 },
+      { "lat": 43.50, "lng": -96.64 }
+    ]
+  }
 }
