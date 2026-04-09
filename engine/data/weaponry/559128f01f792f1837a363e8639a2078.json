@@ -42,5 +42,43 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Arcturus Defense Solutions ETF-3 'Mantis'",
+    "Below the Threshold",
+    "GLMZ",
+    "Lazarus Pharmaceuticals Osseous Resonance Implant — 'The Tuning Fork'",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Nika Svensson-Kone",
+    "Nnenna Boateng-Szymański",
+    "Suborbital Acoustic Relay Drone SARD-1 'Tuning Fork'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Tessera Corponation",
+    "The Resonance Communion",
+    "The Threshold",
+    "Transit Mind",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular device resembling a hybrid between a directional microphone and a compact rifle. The chassis tapers toward a wide, parabolic emission array at the forward end. Despite its weapon function, it reads as clinical and almost musical — the parabola suggests audio equipment rather than lethal hardware. Asymmetrical design with a pronounced shoulder mount and stabilizing fins.",
+    "dimensions": "Overall length: 68 cm | Emission array diameter: 22 cm | Width at grip: 8 cm | Height with rail mounts: 14 cm",
+    "weight_description": "Deceptively heavy for its size — 8.4 kg distributed toward the rear creates a forward-weighted balance designed for sustained aiming. Feels purposeful and solid in-hand despite the slim profile. The weight suggests precision over portability.",
+    "primary_material": "Aerospace-grade carbon composite chassis with titanium reinforcement struts around the emission array. Internal framework of hardened aluminum for vibration dampening.",
+    "finish": "Matte gunmetal gray with a subtle brushed texture that resists fingerprints and reflection. The parabolic array features a darker, almost iridescent anodized finish that shifts faintly purple-black under dramatic lighting — suggesting the exotic resonance technology within.",
+    "color_scheme": "Charcoal gray primary body with deep violet-black emission array. Accent trim in brushed titanium along the top rail and grip area. Subtle cyan LED status indicators (power, frequency, resonance lock) arranged vertically along the left side.",
+    "grip_texture": "Ergonomic rubberized polymer with shallow vertical ribs for secure purchase. Textured enough to prevent slipping during sustained operation, but with a soft matte finish that feels almost clinical. Small pressure-responsive pads at thumb and trigger-finger positions.",
+    "distinctive_features": [
+      "Wide parabolic resonance emitter at muzzle — the acoustic 'mouth' that projects the invisible beam",
+      "Three stacked cyan LED indicators on left rail showing power status, active frequency band, and resonance lock confirmation",
+      "Delicate frequency tuning dial (ring-style) positioned just behind the emitter — labeled with Hz ranges in elegant sans-serif numerals",
+      "Heat dissipation fins along the top and sides of the emission array, barely visible but textured to the touch",
+      "Integrated pressure sensor pad on the fore-grip that modulates beam intensity based on grip pressure",
+      "Telescoping stabilization arm that deploys from the underside for sustained aiming",
+      "Faint TESSERA holographic logo etched into the charging port cover — visible only at oblique angles",
+      "Wear pattern evidence: minor scuff marks on the grip rubber, micro-fractures in the matte finish where hands have held it repeatedly"
+    ],
+    "manufacturer_markings": "TESSERA branding appears as a discrete holographic inlay on the left side of the chassis, visible only at 45-degree angles. Serial number stamped in micro-text on the charging port panel. A tiny Φ symbol (QUANTA currency mark) engraved near the rail — indicating high market value.",
+    "condition_typical": "Field units range from pristine corporate inventory (used only in training) to well-maintained security contractor builds with minor cosmetic wear. Battle-worn examples show scuffed finish, stress fractures around the emission array, and replacement grip wraps. Powdust from industrial sites or residue from extended use in confined spaces often visible in the fin gaps."
+  },
+  "image_prompt": "Professional weapon catalog photograph of the Tessera Resonance Projector RP-5 'Tuning Fork' mounted horizontally on a dark matte black display surface, angled 15 degrees toward the camera. Dramatic side-lighting from the left casts sharp shadows that emphasize the parabolic emission array's curves. The background is pure black with subtle atmospheric haze suggesting ultrasonic visualization. Close-up detail of the cyan LED status indicators glowing softly on the left rail. The grip is held lightly by a hand wearing tactical gloves, fingers positioned to show the pressure-sensor pads. Macro shot of the frequency tuning dial showing Hz markings from 7-18. Cool color grading with subtle violet ambient light reflecting off the anodized emission array. High contrast, product photography style with rim lighting around the edges. Cyberpunk aesthetic emphasizing the weapon's clinical precision and exotic technology. --ar 3:2 --v 6"
 }

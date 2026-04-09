@@ -64,5 +64,31 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Tessera Industries Memory Rounds MR-2 'Recall'",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A weathered, dignified silhouette that reads as lived-in wisdom rather than poverty. The full-length greatcoat dominates, its architectural shoulders and deliberate drape suggesting former corpo or professional origins. The patchwork of repairs creates an almost textile archaeology across the fabric — each patch tells a story of survival in the acid-rain Shelf. The overall impression is of someone who has endured and adapted rather than surrendered. The chrome pin catches light like a final small claim to dignity.",
+    "fit": "Structured and tailored through the shoulders, relaxing into a generous, protective drape at the torso and legs. The coat falls mid-calf with intentional length. The turtleneck fits close and supportive. Trousers are full-legged without excess — functional rather than fashionable. Boots are sturdy and grounded, weighted by their many soles.",
+    "primary_material": "Wool-blend base coat (original), rubberized canvas and industrial fabrics (patches), thermal blanket lining (reflective silver), marled knit turtleneck, washed canvas trousers, layered rubber soles, treated leather and synthetic suede boots, felted wool hat",
+    "texture": "Highly varied and tactile. The coat surface is soft where original, stiffened where patched with canvas or rubber. Edges of patches are sealed smooth with self-repair tape. The lining gleams with reflective texture. The turtleneck is loose and comfortable. Boot leather is waxy and slightly sticky from waterproofing compound. Hat felt is dense and worn smooth at high-contact points.",
+    "color_scheme": "Primary: deep faded grays and near-browns, the original charcoal degraded by environmental exposure. Accent patches in olive canvas, charcoal, near-black, industrial gray rubber. Silver-gray repair tape and silver reflective lining visible at edges. The leather belt darkened and aged. Boots in mottled neutrals with waxy finish. Hat in soft felted gray. Single chrome accent on hat band.",
+    "closures": [
+      "Coat: appears to use original button closures (not visible in description but implied by greatcoat construction)",
+      "Wide leather belt: appears to use buckle or tie closure, with evidence of re-stitching",
+      "Boots: likely lace or side-zip closure (resoled originals)",
+      "No magnetic or high-tech closures — purely mechanical/traditional"
+    ],
+    "distinctive_features": [
+      "Extensive visible patch map across shoulders and right sleeve, each layer recording years of acid-rain damage",
+      "Reflective silver thermal-blanket lining visible at collar and hem — functional but accidentally elegant",
+      "Twice-repaired leather belt with visible wet-cure repair marks",
+      "Boots with visible layered sole reaching nearly one inch thick",
+      "Single polished chrome salvage component pinned to hat band — personal memento or aug-scrap repurposed as jewelry",
+      "Marled ash turtleneck with stretched collar — evidence of long wear but structural integrity maintained",
+      "Wide-brim hat with subtle warp, functionally maintained"
+    ],
+    "tier_indicator": "Tier 4-5 transitional. The original coat quality signals Tier 2-3 manufacture, but the extent and pragmatism of repairs, the salvage-sourced lining, and the resoled boots mark this as currently worn by someone operating in sub-grade or street margins. The garment is maintained, not abandoned — dignity preserved through labor rather than Φ.",
+    "cultural_context": "Worn by a survivor of the Shelf — someone with institutional memory (the coat's original quality), practical skills (all repairs self-made), and emotional grounding (the chrome pin, the care taken with seal-tape borders). This is likely an elder or long-term undercity resident, possibly someone who remembers pre-Shelf conditions. The outfit signals street authority, careful self-reliance, and refusal to be discarded. Not corpo, not corpo-aspirant. Outside the system.",
+    "condition_typical": "Weathered, worn, extensively patched, but meticulously maintained. Not trash, not nostalgic vintage — actively lived-in. The self-repair tape is clean and functional. The lining is preserved. The boots are heavy-duty functional despite their age. This is a garment that will continue to be worn and repaired for as long as possible."
+  },
+  "image_prompt": "Close portrait of a weathered elder figure wearing a full-length patchwork greatcoat in faded grays and browns, visible patches in olive canvas and industrial rubber across shoulders and sleeve creating a textile map of survival. Reflective silver thermal-blanket lining glints at collar and hem. Beneath, an ash marled turtleneck and wide-leg canvas trousers. Tall, resoled boots with waxy waterproofed finish in mottled neutrals. Wide-brim felted hat with single polished chrome pin catching light. Acid-rain Shelf aesthetic — moody overhead and sidelight emphasizing fabric textures and repair details, casting small shadows across patches. Dark urban backdrop, industrial architecture, filtered gray daylight. Dignified, uncompromising posture. Film noir meets cyberpunk elder. Shot against worn metal wall or shadowed building alcove. --ar 2:3 --v 6"
 }

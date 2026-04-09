@@ -61,5 +61,48 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Arcturus Defense Solutions Electromagnetic DMR AEDM-3 'Gauss'",
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Breck Tannen",
+    "Ekundayo Vásárhelyi-Nkemdirim",
+    "GLMZ",
+    "Glenville Sound",
+    "Ilhan Sandstrom-Badu",
+    "Irontide Tidal Energy",
+    "Kadiatou Bergstrom-Konate",
+    "Kadiatou Kobayashi-Appiah-Kubi",
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Nika Svensson-Kone",
+    "Nodar Kuznetsov-Adu",
+    "Patient Zero",
+    "PulsePoint ThermoLayer Thermal Regulation Implant",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "Tessera Corponation",
+    "The Quiet Room"
+  ],
+  "physical_description": {
+    "visual_profile": "Aggressively compact bullpup platform with a subtly menacing stance. The GFR-3 reads as purposefully engineered rather than organic — all hard angles, recessed surfaces, and integrated subsystems. The stubby barrel is almost vestigial, dwarfed by the prominent 300-round cassette mounted beneath like a secondary fuselage. Overall impression: a precision tool designed for controlled lethality.",
+    "dimensions": "410mm overall length, 240mm height. Barrel section roughly 120mm. Magazine cassette extends 180mm beneath the receiver, giving it a top-heavy visual weight.",
+    "weight_description": "Balanced and purposeful in hand at 2.8kg loaded — not feather-light, but distributed in a way that feels intentional rather than burdensome. The cassette's weight sits low, creating a natural cant toward the operator's body.",
+    "primary_material": "Aerospace-grade polymer composite matrix (TESSERA proprietary blend) over a steel coil assembly backbone. Cassette housing is reinforced aluminum with ferromagnetic shielding.",
+    "finish": "Matte gunmetal gray with strategic brushed-steel accent panels where coil arrays interface with the polymer shell. The cassette magazine features a subtle carbon-weave texture visible under certain angles. Minimal reflectivity — designed for low-light operations.",
+    "color_scheme": "Gunmetal gray primary, brushed steel accents, charcoal composite inlays. The capacitive grip ring is offset in a darker anthracite tone with subtle RGB status indicators (blue when dormant, amber during spin-up, red during firing).",
+    "grip_texture": "The pressure-sensitive palm grip is wrapped in micro-textured silicone with reinforced polymer substructure — tacky but not soft, designed to maintain contact through sweat or light contamination. Knurled grip ring for index finger pressure modulation.",
+    "distinctive_features": [
+      "Dual thermal vents running along the rear receiver block — visible heat-dissipation channels that glow faintly amber under heavy fire",
+      "Integrated 3-position mode selector marked in Φ-stamped legend: COLUMN, FAN, SAFE",
+      "Faint electromagnetic hum induction coils visible as subtle surface ribbing across barrel shroud",
+      "Flip-up capacitive readout display mounted on left side showing round count, temperature, and power status in cyan HUD numerals",
+      "Four contact pads for external power umbilical (rarely used in field ops)",
+      "Subtle TESSERA corporate hexagon logo embossed on the cassette housing, barely raised above surface",
+      "Ammunition visibility window on cassette showing ferromagnetic flechette arrangement in stacked columns",
+      "Integrated cable management channel along underside of grip for field charging",
+      "Faint scorch marks and micro-abrasions typical of operational wear — not pristine, not battle-scarred, but clearly used"
+    ],
+    "manufacturer_markings": "TESSERA CORPONATION logotype (hexagon emblem) stamped subtly on the cassette spine. Serial number etched in microfont on a recessed steel plate behind the grip. Model designation GFR-3 printed in tactical sans-serif on the barrel shroud. All markings use low-reflectivity phosphate finish.",
+    "condition_typical": "Field-operational. Well-maintained by professional users but showing evidence of repeated use — minor scuff marks on the polymer furniture, faint thermal stress discoloration around the vent channels, slight wear on the grip's micro-texture from gloved handling. Cassette housing shows minor dents consistent with tactical gear contact. No rust or corrosion — TESSERA engineering ensures reliability in GLMZ industrial environments."
+  },
+  "image_prompt": "Product photograph of the TESSERA GFR-3 'Needlerain' gauss flechette repeater, mounted horizontally on a matte charcoal surface. Dramatic side-lighting from the left emphasizing the weapon's angular geometry and the subtle ribbing of the coil shroud. The 300-round cassette magazine sits proud beneath the stubby barrel, casting a sharp shadow. Close-up detail of the brushed-steel accent panels and the glowing capacitive grip indicators. Cyberpunk industrial aesthetic with cool blue-tinted ambient light reflecting off the matte gunmetal polymer. Overhead angle showing the flip-up thermal readout display and mode selector legend. The ferromagnetic flechette silhouettes visible through the cassette transparency window. Ultra-sharp focus on materials and engineering detail. High contrast between matte and brushed surfaces. --ar 3:2 --v 6"
 }

@@ -45,5 +45,43 @@
     "anti_materiel",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions HMR-9 'Colossus'",
+    "Ebele Medina-Quaye",
+    "Kamala Blomberg-Konadu",
+    "NeuralPath Apex Social Integration BCI",
+    "Nika Svensson-Kone",
+    "Solange Mbeki-Vásárhelyi",
+    "TESSERA TX-0 'Mimic'",
+    "The Question",
+    "The Riveters' Round",
+    "Volkov-Saito Precision VS-R8 'Verdict'",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally oversized revolver that dominates the hand — all aggressive geometry and purposeful mass. The eight-inch barrel dominates the silhouette, crowned with an intimidating muzzle brake that looks like it could redirect a hurricane. The titanium frame gleams cold and surgical, with the cylinder gate positioned for reload speed despite the weapon's sheer heft. At first glance: excessive, engineered for punishment, built for someone augmented enough to handle it.",
+    "dimensions": "Overall length: 33 cm | Barrel length: 20.3 cm | Cylinder diameter: 4.2 cm | Grip length: 13 cm | Height across frame: 5.8 cm",
+    "weight_description": "Hefty, reassuring mass — 1.82 kg that demands respect. Not unwieldy for an augmented operator, but punishing for baseline humans. The weight forward-heavy due to the massive barrel, requiring neural interface compensation for sustained aiming.",
+    "primary_material": "Forged titanium alloy frame and cylinder. Steel barrel with integral muzzle brake. Polymer grip panels with embedded neural contact points.",
+    "finish": "Brushed titanium with a cold, industrial sheen. The barrel features a darker DLC (diamond-like carbon) coating that contrasts sharply against the frame. Muzzle brake shows aggressive knurling and blast-scored surfaces suggesting heavy use.",
+    "color_scheme": "Silver-gray brushed titanium dominant, with charcoal DLC-coated barrel. Grip panels in anthracite composite with cyan neural-link contact pads visible at palm and trigger-finger positions.",
+    "grip_texture": "Textured polymer with aggressive knurling for high-G recoil absorption. Neural contact points feel slightly raised, smooth — designed to interface cleanly with subdermal BCI ports. Wrist-mounted electrode points are rubberized for sustained contact during pre-tension signaling.",
+    "distinctive_features": [
+      "Eight-inch barrel with integral multi-chamber muzzle brake — aggressively redirects expanding gases",
+      "Cylinder rated for .500 S&W Magnum — noticeably larger diameter than conventional revolvers",
+      "Cyan LED indicator strip along the left frame — displays BCI connection status and neural sync confidence",
+      "Visible neural contact pads on grip (palm and trigger-finger positions) — integrated subdermal interface points",
+      "Wrist-mounted electrode contacts on grip heel for motor cortex pre-tension signaling",
+      "Arcturus Defense Solutions logo on frame side — bold, minimalist, stamped deep",
+      "Serial plate mounted on cylinder crane — security-etched, difficult to counterfeit",
+      "Heat vents along the frame below the barrel — thermal dissipation for sustained firing",
+      "Single-action hammer with oversized, knurled spur for gloved operation",
+      "Tactical rail on barrel top for scope or targeting systems"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (stylized 'A' interlocking with circuit pattern) stamped on left frame side below cylinder. Serial number and manufacturing date laser-etched on cylinder crane. 'ARC-R500 COLOSSUS' engraved in block letters along the barrel top. 'FORGED TITANIUM' stamp on frame. BCI certification mark (φ symbol) on grip tang.",
+    "condition_typical": "Well-maintained but visibly experienced. Muzzle brake shows blast scarring and carbon residue from repeated magnum discharge. Frame finish is pristine on sheltered surfaces, worn shiny on high-contact grip areas. Thermal vents may show discoloration from sustained firing cycles. Typically kept in hard polymer case with neural calibration documentation."
+  },
+  "image_prompt": "Professional product photography of the Arcturus ARC-R500 Colossus revolver, positioned at three-quarter angle on a dark matte black surface with dramatic side-lighting from cool-white LED. The eight-inch barrel with integral muzzle brake dominates the frame, DLC coating catching light. Brushed titanium frame glows silver-gray against the black backdrop. Cyan neural-link contact pads glow faintly on the grip. A gloved augmented hand (visible subdermal chrome at wrist) holds the revolver in standard grip, showing the scale and heft. Shallow depth of field with sharp focus on the hammer and cylinder. Moody cyberpunk lighting with slight blue color cast. High-resolution product shot emphasizing engineering precision and lethal purpose. 2226 GLMZ military-industrial aesthetic. --ar 3:2 --v 6"
 }

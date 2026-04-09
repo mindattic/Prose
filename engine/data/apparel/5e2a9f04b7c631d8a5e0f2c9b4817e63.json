@@ -50,5 +50,24 @@
     "O'Hare Sovereign",
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Heavy-duty industrial gloves with an unmistakably utilitarian stance. Bright safety yellow dominates the silhouette, creating an immediate high-visibility presence. The cuff extends well past the wrist, designed to interface with augmented limbs. Knuckles and finger backs show pronounced hard-shell ridging that reads as armor-lite.",
+    "fit": "Deliberately oversized and bulky to accommodate multiple material layers and standard chrome augmentation forearms. The cuff is loose and adjustable via wide straps, allowing fit over various prosthetic wrist diameters. Glove body is intentionally roomy to avoid compression of underlying circuitry.",
+    "primary_material": "Outer: abrasion-resistant neoprene in high-visibility yellow. Middle: cross-linked foam dielectric rated to 40kV. Inner: moisture-wicking antimicrobial jersey. Reinforcement: hard polycarbonate on knuckles and finger backs.",
+    "texture": "Outer surface is slightly tacky neoprene with a subtle grip texture. Knuckle and finger ridges feel rigid and molded. Interior jersey is soft and brushed. Cuff straps are rubberized with hook-and-loop texture for tactile grip during fastening.",
+    "color_scheme": "High-visibility safety yellow as primary. Black rubberized accents at cuff straps and port-seal ring. Understated gray or off-white antimicrobial jersey visible at palm interior.",
+    "closures": "Two wide hook-and-loop (Velcro-style) adjustable straps at the cuff. Rubberized port-seal ring at the chrome junction provides mechanical seal rather than additional fastening.",
+    "distinctive_features": [
+      "Rubberized port-seal ring designed to prevent arc-flash ingress at chrome-flesh junction",
+      "Hard polycarbonate knuckle and finger-back armor plating",
+      "Oversized cuff designed to fit over standard augmented forearms",
+      "Triple-layer dielectric construction visible as distinct material transitions at cuff edge",
+      "Manufactured branding (Vansen Industrial Safety) embossed or printed on dorsal palm"
+    ],
+    "tier_indicator": "Tier 3 functional / working-class industrial. Issued or purchased by mid-tier factory workers, field technicians, and chrome-maintenance personnel.",
+    "cultural_context": "Worn by anyone interfacing with high-voltage equipment or handling chrome augmentation repairs. Signals technical competence and workplace safety compliance. Common in factory floors, substations, corpo maintenance bays, and illegal chop-shops alike.",
+    "condition_typical": "Typically broken-in but well-maintained. Outer neoprene may show minor abrasion scuffs from regular handling. Interior jersey retains antimicrobial properties. Hook-and-loop straps show moderate wear but remain functional. No significant patching unless heavily used."
+  },
+  "image_prompt": "Flat lay fashion photography of Vansen ArcSafe Insulated Shock Glove MK-3 displayed on a dark gunmetal mannequin hand and forearm. Glove in bright safety yellow with visible polycarbonate knuckle ridges. Close-up detail shot showing the rubberized port-seal ring at the wrist junction and hook-and-loop cuff straps. Moody industrial lighting with cool blue and amber accent gels. Graffitied concrete backdrop. Shallow depth of field focusing on the glove's intricate layering. Cyberpunk factory aesthetic, worn equipment aesthetic, high contrast. --ar 2:3 --v 6"
 }

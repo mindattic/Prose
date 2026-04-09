@@ -45,5 +45,39 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Eshe Pena-Baah",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Nika Svensson-Kone",
+    "Nkomo-Lindqvist NL-22 'Peacemaker'",
+    "Ringo PD-1 'Citizen'",
+    "Stainless Steel",
+    "The Pure Hand",
+    "Volkov-Saito Precision VS-10 Match 'Deadlock'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, purposeful semi-automatic pistol with classical lines and a boxy, utilitarian silhouette. The Peacemaker projects understated lethality—no flash, no tactical rail clutter, just efficient geometry. The proportions suggest serious intent: a squared-off grip, clean slide, and the visual weight of stainless steel.",
+    "dimensions": "Length: 205mm | Height: 140mm | Grip width: 32mm | Barrel length: 127mm",
+    "weight_description": "Substantial and balanced. At 0.9kg, it sits heavy in the hand with reassuring heft—dense stainless steel that conveys manufacturing precision rather than ergonomic compromise.",
+    "primary_material": "Stainless steel frame and slide; match-grade barrel; polymer grip panels",
+    "finish": "Brushed stainless steel with a matte, non-reflective surface. The finish shows controlled tool marks and deliberate hand-finished characteristics. No aggressive polishing—the steel has a businesslike, industrial sheen.",
+    "color_scheme": "Stainless steel gray with charcoal polymer grip inserts. Tritium night sight posts glow faintly green. No decorative elements or anodizing.",
+    "grip_texture": "Textured polymer panels with subtle checkering—engineered for wet conditions and gloved hands. The backstrap is contoured; the frontstrap features aggressive diagonal grooves. Bare stainless trigger and safety lever.",
+    "distinctive_features": [
+      "Fixed tritium night sights with glowing green front and rear posts—visible in darkness without electronics",
+      "Match-grade barrel visible at the muzzle with precision-machined crown",
+      "Single-action trigger with audible, positive reset",
+      "Beaver-tail grip safety that requires conscious full grip to disengage",
+      "Ten-round magazine with witness holes and aggressive witness grooves",
+      "Minimalist slide serrations (rear only) for manipulation without flashiness",
+      "Rounded edges and corners—no sharp snags, pure functional design",
+      "Magazine release button integrated cleanly into frame without protrusions"
+    ],
+    "manufacturer_markings": "Iron Point Ammunition logo (stylized compass point) engraved on left slide. 'Arcturus PD-6' stamped along right slide. 'PEACEMAKER' in sans-serif block letters across the slide. Serial number on right frame. '.45 ACP' caliber stamp on barrel visible at breech.",
+    "condition_typical": "Well-maintained and meticulously clean. Civilian operators keep the Peacemaker in pristine condition—it's a status object as much as a tool. The stainless finish shows minimal wear unless actively carried daily, in which case it may show light holster wear on the rear sight and muzzle."
+  },
+  "image_prompt": "Professional product photography of the Arcturus PD-6 Peacemaker semi-automatic pistol positioned on a dark gunmetal surface. Three-quarter view showing profile and grip. Dramatic side-lighting from upper left casting sharp shadows, highlighting the brushed stainless steel finish and textured polymer grip. The tritium night sight posts glow faintly green under studio lights. Hand in tactical glove (black leather with gray suede palm) positioned near grip to show scale and ergonomics. Shallow depth of field with blurred background of dark gray concrete or industrial metal. Cyberpunk 2226 aesthetic: cool color grading, slight chromatic aberration, the weapon gleaming with industrial precision. No people visible. Minimize reflections to emphasize the weapon's serious, unglamorous design. --ar 3:2 --v 6"
 }

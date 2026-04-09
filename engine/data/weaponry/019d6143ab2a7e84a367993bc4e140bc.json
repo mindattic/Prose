@@ -53,5 +53,42 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Bogdan Achebe-Svanstrom",
+    "Breck Tannen",
+    "Conductive Polymer",
+    "Crucible Industries CT-X 'Gauntlet'",
+    "GLMZ",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+    "TESSERA PG-2 'Signature'",
+    "The Question",
+    "Vantablack-CNX",
+    "Zheng-Dao Bioelectric Galvanic Dermis Overlay",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, predatory combat glove that clings to the hand like a second skin. The GDG-2 has an aggressive, almost organic silhouette—fingertips taper slightly, and subtle ridges run along the knuckles where discharge nodes sit flush against the surface. The forearm section swells slightly at mid-point where the controller housing integrates, creating an asymmetrical profile that reads as purposeful rather than awkward.",
+    "dimensions": "Fingertip to mid-forearm: 35cm total length. Palm width: 8.5cm. Controller housing depth: 2.2cm. Individual discharge node diameter: 0.6cm.",
+    "weight_description": "Deceptively light in hand—420g total feels almost negligible when worn, distributing weight evenly across the forearm. The titanium mesh substrate creates a responsive, almost alive sensation that shifts slightly with hand movement. Heavy enough to feel engineered, light enough to forget you're wearing it until the nodes activate.",
+    "primary_material": "Conductive polymer shell (outer layer) over flexible titanium mesh substrate (structural layer). Forearm controller housing is brushed steel with reinforced polymer panels. Internal conduction pathways use embedded copper-nickel tracery.",
+    "finish": "Matte charcoal conductive polymer with microscopically textured surface to improve contact conductivity. The titanium mesh visible at stress points (knuckles, finger joints) shows a brushed silver-grey finish with faint anodization marks. Controller housing features worn brushed steel with minor oxidation patina. No chrome or gloss—everything designed for light absorption and professional subtlety.",
+    "color_scheme": "Primary: Deep charcoal grey (#2B2D31). Accents: Brushed steel grey (#8A8C8E) at mesh points and controller. Subtle emerald LED indicator ring around the controller (when powered, indicates mode selection). Biometric lock plate displays amber when locked, green when authorized.",
+    "grip_texture": "The palm and finger surfaces have a deliberate grip-cone texture—micro-ridges that feel almost organic, designed to maximize surface contact without being visibly aggressive. Not rubberized; more akin to textured silicone. The inside of the gauntlet (against skin) features a softer, slightly tacky polymer that prevents slipping during extended wear. Controller buttons are recessed steel with subtle tactile feedback.",
+    "distinctive_features": [
+      "14 galvanic discharge nodes distributed across palm and fingers—visible as slightly raised, perfectly circular contact points with micro-etched ZHENG-DAO symbols",
+      "Three-stage biometric lock indicator plate on wrist section; transitions amber→green when galvanic signature recognized",
+      "Forearm-mounted controller with three deeply recessed mode-selection buttons (unmarked, identified by subtle haptic feedback)",
+      "Faint copper tracery visible through translucent sections of polymer shell—shows internal conduction pathways under certain lighting",
+      "Micro-ventilation ports along the inner forearm (cooling for extended discharge cycles)",
+      "Subtle wear pattern on contact nodes in used units—slight polishing from repeated skin contact during testing/deployment",
+      "Battery status indicator: tiny LED beneath controller housing flashes green (charged) or amber (low)",
+      "No obvious seams or construction lines—appears almost molded as a single unit"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo (stylized DNA helix) stamped on controller housing in small serif characters. Serial plate recessed into wrist section—16-digit alphanumeric identifier. 'GDG-2' designation laser-etched in tiny characters on the inside of the forearm section (only visible to wearer). Law enforcement units have additional regulation stamps; civilian/black market Mk2 units typically have these filed or laser-burned away.",
+    "condition_typical": "Authorized law enforcement units are usually field-maintained, showing minor scuffing on the knuckle nodes and occasional polymer scratches from gear contact. Black market Mk2 units are either pristine (freshly stolen from armory) or heavily modified—field-stripped and repainted, controller swapped with aftermarket variants, or with unlicensed discharge calibration marks. Heavy users show polished contact nodes and slight discoloration around the discharge points from repeated electrical discharge."
+  },
+  "image_prompt": "Close-up product photograph of the Galvanic Disruption Gauntlet GDG-2 'Palsy' laid flat on a dark matte gunmetal surface. Dramatic side-lighting from upper left reveals the textured charcoal polymer shell and brushes the brushed-steel controller housing with highlights. The gauntlet is positioned as if freshly removed, showing the hand-forming curve and mid-forearm extension. Subtle emerald LED glow emanates from the biometric lock indicator. Fine detail shows the 14 discharge nodes as circular contact points across palm and fingers, with visible copper tracery through semi-translucent polymer sections. The background is a neutral cyberpunk industrial texture—worn steel plating with faint circuit-board scoring. A single drop of residual galvanic discharge hangs in air near a discharge node, captured mid-fall, creating a small electrical arc effect. Product photography style: hyperreal, clinical precision with noir cyberpunk atmosphere. Shot from slight overhead angle emphasizing the gauntlet's organic, predatory silhouette. --ar 3:2 --v 6"
 }

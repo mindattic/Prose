@@ -43,5 +43,33 @@
     "disguised",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Castillo-Ababio",
+    "Alper Holmberg-Dembele",
+    "CHROMEWORKS Auris Focal Directional Hearing Suite",
+    "Nika Svensson-Kone",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "physical_description": {
+    "visual_profile": "Compact handheld device resembling a professional laser rangefinder or surveying instrument. Sleek, almost clinical in appearance—something a corpo surveyor or construction tech would carry without question. Cylindrical body with a slightly tapered front section housing the transducer array. The silhouette screams 'legitimate tool' rather than weapon.",
+    "dimensions": "Length: 18 cm | Width: 6.5 cm | Height: 7 cm | Transducer face: 4 cm diameter",
+    "weight_description": "Deceptively light in hand—1.2 kg distributed evenly. Feels professional and balanced, like quality surveying equipment. The low weight makes it easy to aim and sustain beam exposure, disguising its lethality.",
+    "primary_material": "Aircraft-grade aluminum alloy chassis with reinforced polymer casing around the resonance chamber. Internal transducer array is piezoelectric ceramic matrix with acoustic lens focusing system.",
+    "finish": "Brushed aluminum with matte black polymer accents. Anti-glare coating on the front optical section. Weathered in the field—fine micro-scratches consistent with professional equipment that sees regular use.",
+    "color_scheme": "Gunmetal gray with matte black grip zone and lens surround. Subtle Korova Arms branding in silver on the side panel. Looks corporate-neutral, deliberately forgettable.",
+    "grip_texture": "Rubberized non-slip polymer with subtle grip ridges. Textured like genuine surveying equipment—professional, ergonomic, slightly tacky to prevent slipping during sustained aiming.",
+    "distinctive_features": [
+      "Fake LED readout window displaying 'range' and 'distance' metrics—updated in real-time for authenticity",
+      "Small adjustment dial on top (labeled 'resolution') that actually controls ultrasonic frequency calibration",
+      "Heat vents disguised as measurement ports along the sides",
+      "Transducer lens coated in anti-reflection material giving it a faint amber tint",
+      "Battery indicator light (green/yellow/red) positioned like standard equipment diagnostics",
+      "Subtle wear pattern around the trigger area from sustained operation",
+      "Micro-adjustment screws for acoustic focusing, visible but meaningless to untrained observers"
+    ],
+    "manufacturer_markings": "KOROVA ARMS logo stamped in silver on upper left side. Serial plate mounted on the base grip zone (encrypted quantum authentication module beneath cosmetic serial). Small regulatory markings indicating 'Professional Surveying Equipment - ISO Compliant' in multiple languages. Manufacturing date code subtle and authentic-looking.",
+    "condition_typical": "Field-worn but well-maintained. Minor scratches and scuff marks consistent with equipment that has seen regular professional deployment. Lens slightly dusty, grip showing natural wear from extended holds. No obvious battle damage—maintenance protocols keep it in survey-grade condition. Occasionally shows residual thermal discoloration around the transducer lens (barely perceptible) after extended operations."
+  },
+  "image_prompt": "Professional product photography of the Korova Arms Phantom Frequency KA-12 'Ghost Note' sonic weapon disguised as a laser rangefinder. Shot from three-quarter angle on a dark matte black surface, angled to show the cylindrical profile and tapered front transducer lens. Dramatic side-lighting revealing brushed aluminum texture and matte black polymer details. Soft amber glow emanating from the transducer lens suggesting dormant ultrasonic capability. Gloved hand (chrome-augmented fingers visible) holding the device in operating position, finger near the trigger zone. Shallow depth of field with blurred corporate laboratory background. Harsh directional lighting casting subtle shadows emphasizing the device's professional surveying equipment aesthetic while hinting at concealed lethal purpose. High-resolution detail showing the fake LED readout, adjustment dials, and authentic weathering patterns. Cyberpunk minimalist lighting, cool color grading with hints of thermal red around the transducer face. --ar 3:2 --v 6"
 }

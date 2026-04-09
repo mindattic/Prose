@@ -44,5 +44,26 @@
     "Nnamdi Ostrowski-Faletolu",
     "Ringo DV-4 'Courier'",
     "Vulpine Caudal Graft"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A lived-in, weathered silhouette of constant motion — hi-vis yellow shell faded to a sickly chartreuse, compression base layer visible at neck and wrists where the shell has worn transparent. The fox tail geneware loops and sways at the rear, creating asymmetrical balance. Overall impression: someone mid-delivery who hasn't stopped moving long enough to change.",
+    "fit": "Second-skin compression base under a looser, deliberately oversized shell for layering and thermal regulation. Cargo pants sit at natural waist with reinforced thigh pockets. The shell drapes slightly where seams have begun separating. Movement-optimized rather than tailored.",
+    "primary_material": "Gridline synthetic weather-shell (degraded ballistic weave); compression base layer (recycled elastane blend); cargo pants (treated cotton-poly canvas); Lancer Sprint uppers (scuffed synthetic leather and mesh); epoxy-patched heel",
+    "texture": "Shell: slick, slightly tacky from road residue and sweat buildup; compression layer: ribbed, clingy; cargo fabric: rough, stiffened with wear and dried sweat stains; shoes: rough at impact zones, smooth and burnished where the foot naturally moves",
+    "color_scheme": "Faded hi-vis yellow (#D4AF37 degraded to pale saffron) with reflective striping worn to a dull silver. Black compression base layer visible at gaps. Shoes: charcoal with neon accent stitching, heel repair a raw tan epoxy.",
+    "closures": "Shell: primary YKK friction-fit zipper (stuck halfway, always), magnetic snap chest pocket; cargo pants: button fly with tied security loop; shoes: traditional lace-lock system, left lace twice-knotted",
+    "distinctive_features": [
+      "Reflective striping on shoulders and torso — heavily scuffed, reflecting poorly",
+      "Custom-welded tail-loop attachment at rear waistband for geneware counterbalance",
+      "Cargo pockets overstuffed with delivery manifest cards, stim patches, repair tape",
+      "Left shoe heel rebuilt twice with visible epoxy — rough, functional, not cosmetic",
+      "Compression base layer worn through at elbows and lower back — patched with duct tape",
+      "Gridline logo on chest pocket nearly faded to illegibility",
+      "Sweat stains set into permanent patterns on shoulders and spine"
+    ],
+    "tier_indicator": "Tier 3–4 (working class) — functional gear purchased at mid-range, kept operational through personal repair rather than replacement",
+    "cultural_context": "Metropolitan courier or gig-logistics operator; someone who has monetized their physical endurance and speed. The modifications (tail-loop, epoxy repairs) suggest sub-grade self-reliance and street-level ingenuity. Wearing this signals: 'I move faster than your infrastructure can track, and I fix my own gear.'",
+    "condition_typical": "Perpetually worn, never fully clean, always in active use. Not destroyed, but actively degrading. Patches hold patches. The wearer's body heat has set the fabric into permanent wrinkles that match their movement patterns."
+  },
+  "image_prompt": "Close-up fashion photograph of a cyberpunk courier in faded hi-vis yellow Gridline shell and compression base layer, cargo pants with overstuffed pockets, scuffed Lancer Sprint shoes with epoxy-patched heel. A geneware fox tail loops at the rear waistband for counterbalance. Model mid-stride, compression layer visible at worn gaps. Neon city lights reflect off degraded reflective striping. Dark alley backdrop, rain-slicked pavement, motion blur suggesting constant movement. Moody teal and amber street lighting. Shot from waist down, emphasizing worn footwear and custom modifications. --ar 2:3 --v 6"
 }

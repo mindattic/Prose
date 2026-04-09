@@ -43,5 +43,38 @@
     "affordable",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Axiom Corporate Shuttle Bus",
+    "Axiom Systems Ferrofluid Projector FP-3 'Tar Pit'",
+    "Dielectric Filament Anchor Drone DFAD-1 'Cobweb'",
+    "Dragan Petersen-Bah",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "Shelf Life",
+    "The Filament",
+    "Vuk Jorgensen-Toure"
+  ],
+  "physical_description": {
+    "visual_profile": "A chunky, purposeful launcher with a revolver-style cylinder and wide, flared muzzle. The Cocoon resembles a cross between a riot shotgun and a compressed-air tool — industrial, utilitarian, designed for function over form. Its broad shoulders and compact profile suggest stability and ease of aim.",
+    "dimensions": "Length: 52 cm | Width: 8 cm at widest (cylinder) | Height: 18 cm (including sights) | Muzzle bore: 40mm",
+    "weight_description": "Hefty but balanced — 4.6 kg feels substantial in the hands without being unwieldy. The weight is front-loaded toward the muzzle, giving it a stable, grounded feel when shouldered or aimed.",
+    "primary_material": "Reinforced polymer composite frame with steel cylinder housing and aluminum alloy barrel shroud. The trigger group is stainless steel.",
+    "finish": "Matte industrial gray with brushed steel accents on the cylinder and trigger guard. The polymer shows deliberate texture — non-reflective, designed to avoid glint in low-light operations. Minor scuffing and wear marks common on field units.",
+    "color_scheme": "Gunmetal gray primary with brushed steel secondary. Subtle blue accent lines along the cylinder seam indicate polymer cartridge count/safety status.",
+    "grip_texture": "Rubberized overmold with shallow crosshatch pattern — provides solid purchase even with gloved or augmented hands. The grip is slightly oversized to accommodate various hand sizes and interface augmentations.",
+    "distinctive_features": [
+      "Revolver-style 6-round cylinder with visible polymer capsule seating",
+      "Dual micro-LED indicators on the receiver (green: ready, amber: cooling cycle)",
+      "Flared muzzle brake designed to spread filament deployment cone",
+      "Top-mounted picatinny rail for targeting optics or range finder",
+      "Textured charging lever on left side (manual capsule advance)",
+      "Solvent cartridge storage pod integrated into right side of frame",
+      "Worn AXIOM SYSTEMS serial plate on left receiver side"
+    ],
+    "manufacturer_markings": "AXIOM SYSTEMS logo stamped in black on the upper receiver. Model designation 'BL-6' and serial number on the cylinder housing. Safety warnings in multiple languages on the grip.",
+    "condition_typical": "Well-maintained but field-worn — scuffs on the polymer frame, minor scratches around the cylinder latch. Polymer capsules visible through cylinder inspection ports show consistent packing. The solvent pod is typically present but often refilled with generic alternatives."
+  },
+  "image_prompt": "Axiom Systems Binder Launcher BL-6 'Cocoon' resting on matte black tactical surface, angled 45 degrees to show cylinder mechanism and muzzle flare detail. Gloved hand (black tactical glove, hint of LED wrist display) gripping the rubberized stock. Dramatic side-lighting from upper left casting sharp shadows across the polymer composite frame and steel cylinder. Close detail on the 6-round revolving cylinder with visible polymer capsules, the blue safety indicators glowing faintly, and worn AXIOM SYSTEMS markings. Metallic surfaces catching cool blue-white light. Dark cyberpunk environment, industrial aesthetic, product photography style. Shot from slightly above, shallow depth of field focusing on cylinder and muzzle. --ar 3:2 --v 6"
 }

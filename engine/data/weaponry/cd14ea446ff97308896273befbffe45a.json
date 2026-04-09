@@ -44,5 +44,36 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Crucible HS-2 'Hearth'",
+    "Ebele Medina-Quaye",
+    "Ezio Kaboré-Malhotra",
+    "Nika Svensson-Kone",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "The Warm Wall"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, utilitarian carbine with a distinctly civilian aesthetic. The profile is straightforward and unpretentious—short, squared-off receiver with a modest foregrip and minimal tactical furniture. It reads as 'reliable appliance' rather than 'combat tool.' The overall silhouette suggests accessibility and approachability.",
+    "dimensions": "410mm total length, 38mm width at receiver, 85mm height with iron sights. 254mm barrel length.",
+    "weight_description": "Light and balanced. At 2.3kg, it feels controllable for untrained shooters while remaining substantial enough to manage recoil. Carries with ease in one hand; natural muzzle rise is predictable.",
+    "primary_material": "Polymer receiver with steel barrel and bolt carrier. Internal springs and pins are standard steel alloy. No exotic composites—cost-optimized manufacturing.",
+    "finish": "Matte black polymer body with brushed steel barrel. The steel shows minor tool marks from manufacturing; the polymer has a textured, non-slip surface finish. No gloss—everything is deliberately utilitarian.",
+    "color_scheme": "Matte black primary with brushed steel accents. Safety lever has high-visibility red and white paint segments in equal halves, extremely legible.",
+    "grip_texture": "Rubberized pistol grip with shallow finger grooves. Foregrip is wrapped in textured polymer that resists sweating hands. Both surfaces are deliberately non-aggressive—comfortable for sustained holding by users of varying hand sizes.",
+    "distinctive_features": [
+      "Oversized, color-coded dual-stage safety lever (red/white segments, mounted on left receiver side)",
+      "Two-finger magazine release requiring deliberate pinching motion",
+      "Heavy-pull trigger mechanism visible through trigger guard—no creep adjustment",
+      "Fixed iron sights (front post, rear aperture) with no mounting rails",
+      "Prominent, legible magazine witness holes showing round count",
+      "Manufacturer serial plate stamped into receiver near charging handle",
+      "No Picatinny rails, no ambidextrous controls, no tactical accessories",
+      "Charging handle is recessed and requires full-hand manipulation"
+    ],
+    "manufacturer_markings": "HEARTHSTONE FIREARMS and model designation (HDS-5 'HEARTH GUARD') stamped in serif font on left receiver side. Serial number engraved on manufacturer's plate mounted above mag well. No decorative logos—purely functional identification.",
+    "condition_typical": "Factory-fresh units show perfect matte finish and crisp edges. After field use, the polymer grip shows faint wear patterns from hand oils, and the steel barrel develops minor patina. Well-maintained examples remain near-pristine; negligent examples show scuffed polymer and oxidized steel."
+  },
+  "image_prompt": "Professional product photograph of a Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard' 9mm carbine, displayed on a dark matte surface against a neutral backdrop. The weapon is positioned at a three-quarter angle to showcase the oversized red-and-white safety lever and the clean, angular receiver profile. Shot with dramatic side-lighting that emphasizes the matte black polymer texture and brushed steel barrel patina. Shallow depth of field with focus on the safety mechanism and trigger guard. Cyberpunk aesthetic achieved through sterile lighting and clinical composition—this is a tool, not a status symbol. Include close detail of the color-coded safety and magazine witness holes. Captured in the style of corporate weapons catalog photography for GLMZ civilian defense markets. --ar 3:2 --v 6"
 }

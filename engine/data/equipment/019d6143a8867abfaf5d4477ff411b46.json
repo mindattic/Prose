@@ -46,5 +46,24 @@
   "parent_corponation": "",
   "related_entities": [
     "Standard CO2 Propulsion Cartridge SPC-12"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular wrist-mounted launcher resembling a hybrid between a mechanical chronograph and tactical hardware. The device wraps around the forearm with a reinforced polymer chassis angled downward, tapering to a compact muzzle assembly. The overall aesthetic is aggressive and utilitarian—designed for quick deployment rather than concealment.",
+    "dimensions": "180mm length (muzzle to wrist mount), 85mm width across forearm cuff, 65mm depth at thickest point. Compact enough to fit under a reinforced jacket sleeve with minor bulging.",
+    "weight_description": "1.1 kg total—handheld-mounted and wearable, balanced to distribute load across the forearm without causing fatigue during extended use",
+    "primary_material": "Reinforced carbon-polymer chassis with brushed titanium alloy reinforcement bands; tungsten-carbide hook assembly",
+    "finish": "Industrial matte black primary surface with satin-brushed metallic silver accent plating on pressure-release valves and winch housing. Textured grip panels with embedded cooling fins for thermal dissipation.",
+    "color_scheme": "Charcoal black body with gunmetal gray mechanical components; neon-blue capacitor indicator strip running along the wrist-mount spine; amber pressure gauge face",
+    "interface_elements": "Recessed pneumatic cartridge chamber with quick-release lever; digital LED readout (small, 12mm display) showing capacitor charge percentage and cable remaining; manual pressure-relief valve dial; tactile deployment trigger with dual-stage safety mechanism; threaded cable spool access port with magnetic alignment guides",
+    "distinctive_features": [
+      "Integrated heat-dissipation fins along the side of the winch housing, glowing faintly under load from friction",
+      "Magnetic alignment guides visible inside the muzzle—small platinum studs used for hook stabilization",
+      "Braided carbon-fiber cable visible through a reinforced transparent composite window in the upper barrel, showing cable tension and wrapping status",
+      "Blue capacitor indicator light that pulses during recharge cycles",
+      "Weathered ZHENG-DAO logo stamped in metallic relief on the wrist cuff with holographic serial authenticity sticker"
+    ],
+    "manufacturer_markings": "ZHENG-DAO HEAVY INDUSTRIES stamped on wrist cuff; model number PGL-2 engraved on the cartridge chamber; compliance stamps for GLMZ Load Rating Standards (300kg/cyan circle); UL-equivalent safety markings on capacitor housing; batch code laser-etched on internal spool",
+    "condition_typical": "Light surface oxidation on metallic components from use; minor scuff marks on polymer housing from impact with walls or structures; cable window showing faint residue from dust or industrial grime; capacitor indicator showing 40-60% charge during standby"
+  },
+  "image_prompt": "Zheng-Dao PGL-2 grapple launcher mounted on a muscular forearm wearing tactical black glove, positioned flat on a worn steel workbench scattered with pneumatic cartridges and coiled carbon-fiber cable. Dramatic side-lighting casting sharp shadows across the device's fins and muzzle. Close 3:4 crop showing the transparent cable window illuminated from within, neon-blue capacitor indicator glowing softly. Gritty industrial cyberpunk aesthetic, worn metal table surface with oil stains, moody cyan and amber lighting, shallow depth of field, professional product photography style --ar 3:2 --v 6"
 }

@@ -72,5 +72,25 @@
     "Ringo DV-4 'Courier'",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "TESSERA PG-2 'Signature'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, predatory swept-wing glider with an elongated fuselage tapering to a needle-sharp tail boom. The airframe resembles a raptor in flight — angular, minimalist, almost skeletal. The canopy is a teardrop of dark tinted composite barely visible against the airframe. No visible engine, no protruding hardware. Designed to disappear visually at distance.",
+    "dimensions": "9.2m wingspan (folds to 1.8m for transport); fuselage length 7.1m; overall height when standing on landing gear 1.2m. Palm-sized from ground at operational altitude.",
+    "weight_description": "Approximately 85 kg dry weight. Handheld and portable when wings are folded — transportable by two operators or carried via reinforced drone carrier. Landing gear is retractable.",
+    "primary_material": "Aerogel-composite panel construction throughout airframe and control surfaces. Hollow-core composite spars. Thermally inert polymeric resin matrix.",
+    "finish": "Matte charcoal with light-absorbing nanopolymer topcoat. Surfaces are deliberately non-reflective to minimize visual signature. Minimal surface texture — smooth except for barely-perceptible airflow management riblets.",
+    "color_scheme": "Charcoal-gray primary with deep midnight blue accents along leading edges. Underside is flat black. Canopy frame is gunmetal. No reflective markings visible from distance.",
+    "interface_elements": "Single pilot bubble canopy with manual transparency controls and emergency eject mechanism. Minimal cockpit — analog airspeed indicator, altitude variometer, artificial horizon, thermal column detection display (soft-glow amber readout visible only from pilot position). Single sidestick control column. Hard-wired mechanical pitch/roll inputs — no fly-by-wire. Passive thermal and pressure sensor array scattered across upper wing surfaces (barely visible black dots). Data storage module mounted in ventral fuselage. Cargo hardpoint beneath fuselage with manual release mechanism.",
+    "distinctive_features": [
+      "Swept-wing planform at near-extreme angle — appears perpetually in a knife-edge climb stance",
+      "Visible thermal sensor nodules along upper wing surfaces — small black hemispheres in geometric pattern",
+      "Retractable landing gear with spring-loaded forks — minimizes ground profile",
+      "Feathered trim tabs and winglets that adjust autonomously in response to thermal conditions",
+      "Canopy reflection suppression mesh barely visible as fine pattern overlay",
+      "Three-axis control surfaces with mechanical advantage design — no redundancy, pure efficiency"
+    ],
+    "manufacturer_markings": "Ouroboros Energy logo (stylized serpent eating its tail, 3cm) on upper right wing root in flat gray. Small 'LAMMERGEIER' designation in 2cm sans-serif on tail boom. Manufacturer compliance codes printed on interior fuselage bulkhead (not visible without canopy removal). Registration QR code on lower fuselage in monochrome only.",
+    "condition_typical": "Flight-worn finish with dust accumulation on upper surfaces from airflow exposure. Occasional thermal stress discoloration (faint tan marks) where aerogel panels experience repeated heating cycles. Canopy may show light haze from atmospheric particulate. Landing gear and fittings show scuffing from repeated field launches. No visible maintenance access panels — aircraft is intended for minimal serviceable units."
+  },
+  "image_prompt": "Product photography of a matte charcoal swept-wing glider aircraft with 9-meter span, needle-sharp fuselage, and dark tinted canopy, positioned at three-quarter angle on a concrete landing pad at GLMZ industrial district with smoking thermal vents and factory skyline in background. Dramatic raking sidelight reveals aerogel-composite panel structure and subtle thermal sensor array on upper wing. Minimal ground shadow emphasizes weightless design. Adjacent detail shot shows pilot prone position through semi-transparent canopy overlay and mechanical sidestick control interface. Cyberpunk aesthetic: cool color grading, sharp shadows, industrial weathering, no chromatic excess. Equipment catalog photography style. --ar 3:2 --v 6"
 }

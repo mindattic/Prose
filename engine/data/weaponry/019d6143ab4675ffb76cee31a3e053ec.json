@@ -43,5 +43,32 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus HX-1 'Headsman'",
+    "Orbital Drop Pod",
+    "TESSERA PG-2 'Signature'",
+    "The Coffin Nails"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally utilitarian construction tool warped into a weapon—chunky, industrial, and unmistakably dangerous. The overall shape is blocky and aggressive, with a reinforced pneumatic chamber dominating the rear half and a noticeably extended, custom-fabricated barrel that protrudes like a threat. There's nothing sleek about it; this is pure functional violence dressed up as a repurposed tool.",
+    "dimensions": "58 cm overall length, 12 cm width at the magazine housing, 8 cm height. Barrel extension measures 22 cm, adding substantial reach. Strip magazine sits perpendicular, adding 4 cm to the profile.",
+    "weight_description": "Hefty and front-heavy. The oversized pneumatic chamber and reinforced barrel make it feel substantial in hand—roughly 2.8 kg of pure ballistic purpose. Not unwieldy, but noticeably dense compared to commercial firearms.",
+    "primary_material": "Cast aluminum pneumatic body with steel reinforcement plates welded to the barrel housing. The extended barrel sleeve is heavy-gauge steel, evidently hand-rifled and reinforced against deformation.",
+    "finish": "Worn industrial gray with patches of rust-bloom oxidation on the steel components. The aluminum shows dull brushed surfaces marred by tool marks and welding spatter. Oil stains and pneumatic fluid residue streak the chamber. No attempt at cosmetic finish—this is function-first brutalism.",
+    "color_scheme": "Battleship gray aluminum with darker charcoal steel components. The pneumatic charge canister is a utilitarian orange warning stripe on its threaded coupling. Nail strips are visible brass and silver.",
+    "grip_texture": "Bare aluminum with minimal ergonomic concession—sharp edges wrapped loosely with cracked black electrical tape for basic friction. The trigger guard is rough cast metal, never smoothed. It feels like holding raw industry.",
+    "distinctive_features": [
+      "Visibly welded and brazed barrel extension with rough rifling grooves visible in the steel",
+      "Oversized pneumatic chamber with pressure-relief valve and gauge port",
+      "Crude contact safety bypass visible as a filed-away mechanical nub",
+      "30-nail strip magazine loaded perpendicular, brass casings glinting",
+      "Welding spatter and tool marks covering most surfaces",
+      "Threaded pneumatic canister coupling, often stained with fluid residue",
+      "Engraved gang mark or signature scratch on the receiver—personal ownership claim"
+    ],
+    "manufacturer_markings": "Original faded manufacturer's logo (DEWALT, RIDGID, or similar) partially ground off the pneumatic chamber. Crude hand-stamped 'CONFESSION' gouged into the aluminum receiver in uneven capital letters. Serial numbers deliberately defaced. Street crew identifiers scratched into the grip area.",
+    "condition_typical": "Battle-worn and jury-rigged. Regular field use shows dents in the aluminum, corrosion on exposed steel, and jury-patched pneumatic seals. The rifled barrel shows scoring from repeated nail discharge. Maintenance is basic—lubricating oil and pneumatic fluid occasionally applied, but this is a weapon that expects hard use and replacement rather than careful stewardship."
+  },
+  "image_prompt": "A brutally modified pneumatic nail gun photographed against a dark oil-stained concrete surface, side-lit dramatically with harsh shadows emphasizing the crude welded barrel extension and industrial aluminum body. The weapon sits at a 45-degree angle, revealing the perpendicular 30-nail strip magazine and the rough welding spatter across the receiver. Dull orange pneumatic charge canister coupling visible in the foreground. Cold blue-white side-lighting catches the rust bloom on the steel barrel sleeve and highlights the hand-engraved 'CONFESSION' lettering on the frame. Cyberpunk gritty aesthetic with overhead practical work-lamp illumination casting deep shadows. Worn, utilitarian, street-custom threat. Professional product shot with tactical cynicism. --ar 3:2 --v 6"
 }

@@ -35,5 +35,24 @@
     "handmade_repair",
     "winter_wear",
     "salvaged"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Chunky, utilitarian tube socks with a distinctly hand-made quality. They sit mid-calf when elastic functions properly, slouching lower on one foot. The mottled grey-black colorway reads as practical streetwear, suggesting multiple wears and minimal care. The bright orange darning patch at the heel is a bold, unintentional accent that signals resourcefulness over fashion.",
+    "fit": "Loose, slouching tube fit. One sock maintains mid-calf height; the other sags toward the ankle due to degraded elastic. Designed for layering and bulk rather than form-fitting.",
+    "primary_material": "Wool-analog blend (likely recycled synth-wool or treated natural fiber), hand-darned with contrasting orange yarn at stress points",
+    "texture": "Thick ribbed knit with a slightly weathered, nubby surface. The darn is rougher, more visible, creating tactile contrast. Elasticized cuff area shows fraying and loss of tension.",
+    "color_scheme": "Mottled grey-black base with a striking bright orange repair darn at the heel. No pattern except the hand-worked darning.",
+    "closures": "Elasticized cuff — degraded on one sock, still functional on the other",
+    "distinctive_features": [
+      "Hand-darned orange heel repair (visible, unmatched thread)",
+      "One sock with failing elastic, creating deliberate slouch",
+      "Thick ribbed construction for durability and warmth",
+      "Mottled coloring suggesting age or low-quality dye lot",
+      "Evidence of multiple repairs or patch attempts"
+    ],
+    "tier_indicator": "Tier 4-5 functional/salvage. These are survival wear, not fashion.",
+    "cultural_context": "Street-tier, sub-grade. Worn by people in the Shelf or industrial zones who repair what they have rather than replace it. No corporate branding, no aug-integration. Pure necessity.",
+    "condition_typical": "Weathered, patched, one-of-a-kind. These look like they've been through winters. The orange darn is a badge of prolonged use."
+  },
+  "image_prompt": "Closeup fashion shot of mismatched wool-analog tube socks on a tired industrial worker's feet, one slouching lower than the other, the bright orange darned heel catching hard neon light. Dark concrete floor, steam rising in background. Gritty GLMZ Shelf aesthetic. Shot from waist-down, moody blue-orange lighting. --ar 2:3 --v 6"
 }

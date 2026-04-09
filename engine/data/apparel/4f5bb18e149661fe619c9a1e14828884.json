@@ -36,5 +36,26 @@
     "Oxidative Plasma Breath Lance OPBL-1 'Vestment'",
     "The Resonance Communion",
     "Vantablack Media Parasocial Carrier Mask"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A floor-length, ethereal garment with an almost flesh-like luminescence. The robe drapes asymmetrically, with organic folds that seem to shift and breathe independently. The silhouette is deliberately ungainly—neither tailored nor truly loose, suggesting the wearer has yielded their body to the fabric's own agency. Faint bioluminescent veining threads through the material, most visible at the edges and seams.",
+    "fit": "Intentionally loose and unpredictable. The robe does not conform to conventional body dimensions—it clings and releases unprompted, creating bulges and hollows that move across the wearer's form. Sleeves are wide and formless, occasionally adhering to the arm, other times billowing away. No conventional seams or structured panels.",
+    "primary_material": "Living substrate culture—a symbiotic bio-fabric maintained through nutrient solution soaking. The material is partially mineralized cellulose with active cellular colonies, technically neither fully organic nor inorganic. It responds to pH, temperature, and metabolic proximity.",
+    "texture": "Wet silk that occasionally becomes tacky. Up close, the surface appears vaguely mucoid and warm. Fine filaments and root-like structures visible beneath a translucent outer layer. The texture shifts with the wearer's body heat—smoother in cool conditions, slightly bumpy and reactive when warm. Occasional micro-movements are visible without magnification.",
+    "color_scheme": "Base tone of sickly bioluminescent green-white (like deep bioluminescent organisms), with darker veining in deep chlorophyll-green and occasional bruise-purple patches where nutrient density is highest. The color deepens and brightens in response to wearer body temperature. Faint golden phosphorescence under UV or in dim light.",
+    "closures": "None. The robe simply wraps and adheres via static bio-adhesion. The wearer must position it and occasionally the fabric self-corrects its drape. There are no traditional fasteners—the garment remains on through a combination of weight, slight adhesion, and the wearer's commitment to wearing it.",
+    "distinctive_features": [
+      "Substrate maintains active cellular colonies—visibly alive under close inspection",
+      "Bioluminescent veining that responds to wearer temperature and circadian rhythm",
+      "Periodic nutrient soaking requirement (1-2x per week or deterioration begins)",
+      "No conventional seams—growth boundaries instead",
+      "Faint smell of rich earth and fermentation that intensifies with body heat",
+      "Micro-tactile feedback: the robe occasionally 'pulses' subtly against skin",
+      "Hand-cultivated growth patterns unique to each robe—no two are identical"
+    ],
+    "tier_indicator": "Tier 4-5 defiance. While not expensive (substrate cultures are community-grown and distributed freely), wearing one signals rejection of corpo-approved fashion and willingness to embrace biological discomfort as spiritual practice. Extremely uncommon outside specific enclaves.",
+    "cultural_context": "Worn exclusively by Substrate Communion adherents—a quasi-religious movement centered in the ungoverned zones and sub-tier communities. Wearers view themselves as in communion with a higher biological intelligence. Outside these communities, the robe signals either fervent belief or performance of beliefs. Wearing one in a corpo district would be provocative.",
+    "condition_typical": "Well-maintained robes glow gently and smell of living earth. Neglected robes begin to darken, smell sharply of decay, and develop dead patches that become stiff and brittle. Active adherents maintain their robes meticulously despite the discomfort. Wear patterns include faint nutrient stains at the hem, minor discoloration from body oils, and subtle asymmetric fading from repeated wearer positioning."
+  },
+  "image_prompt": "Fashion photography: a figure draped in a flowing bioluminescent living robe, the fabric appearing to gently pulse with internal luminescence in sickly green-white and chlorophyll-green veins. The robe clings and billows unpredictably, its organic texture catching moody ambient light. The wearer stands motionless in a dimly lit urban substrate lab or ungoverned commune space, surrounded by beakers of nutrient solution and hanging bio-fabric samples. Shallow depth of field reveals fine filaments and root-like structures within the fabric. The atmosphere is reverential but unsettling—the robe looks partially alive, almost sentient. Moody cyan and amber rim lighting. Shot in high contrast, emphasizing bioluminescence against deep shadows. Dark background, industrial flooring. Photorealistic texture, slight motion blur on the fabric suggesting ongoing micro-movement. --ar 2:3 --v 6"
 }

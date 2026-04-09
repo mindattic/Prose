@@ -46,5 +46,39 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Charnel Propulsion",
+    "Djeneba Orlov-Obeng",
+    "Eshe Pena-Baah",
+    "GLMZ",
+    "HOLLOW SIGNAL // RADIO",
+    "NeuralPath CalmLine Chronic Pain Suppressor",
+    "Slagworks Industrial",
+    "TESSERA PG-2 'Signature'",
+    "TESSERA TC-3 'Crucible'",
+    "The Shaft"
+  ],
+  "physical_description": {
+    "visual_profile": "A full-sized umbrella indistinguishable from civilian weather gear — compact canopy, straight shaft, standard handle. The deception is absolute: nothing about its silhouette suggests lethal purpose. Only close inspection reveals the slightly reinforced tip and the barely-visible seam running the length of the shaft where the CO2 reservoir is sealed.",
+    "dimensions": "85cm total length when closed. Canopy diameter 95cm when open. Shaft diameter 2.2cm. Dart projectile 5mm diameter, 25mm length.",
+    "weight_description": "Slightly heavier than a standard umbrella due to pressurized CO2 cartridge in shaft, but balanced enough to feel natural in hand during casual carry. The extra 0.4kg is distributed along the shaft, so it doesn't tip noticeably.",
+    "primary_material": "Shaft: aerospace-grade aluminum with carbon-fiber reinforcement. Canopy: high-denier nylon with DWR coating. Handle: injection-molded polymer composite with rubberized grip. Firing mechanism: stainless steel and hardened polymer. Projectile: hardened steel with hollow tungsten-carbide tip.",
+    "finish": "Matte black or charcoal nylon canopy with faint water-repellent sheen. Aluminum shaft has a brushed satin finish to avoid reflective glint. Handle is textured black polymer with subtle grip ridges. All metal components are non-reflective — no chrome, no polish.",
+    "color_scheme": "Monochromatic: blacks, charcoals, and brushed silvers. Entirely unremarkable. Could pass for any mass-produced urban umbrella from a corpo supply catalog.",
+    "grip_texture": "Rubberized polymer with fine cross-hatching for positive grip even when wet. Warm to the touch, ergonomic contour. The concealed firing button is flush-mounted on the handle's left side, requiring only thumb pressure to activate.",
+    "distinctive_features": [
+      "Reinforced umbrella tip designed to withstand repeated firing pressure",
+      "Barely-visible longitudinal seam along shaft marking CO2 reservoir seal",
+      "Flush firing button disguised as part of handle ergonomics — pressure-sensitive, no mechanical click",
+      "Dart loading port concealed beneath canopy attachment ring — accessed by unscrewing collar",
+      "Micro-engraved serial number inside handle (Crucible marking)",
+      "Fine stress marks around the tip from pressurized system",
+      "Weight distribution bias toward the shaft — intentional, to feel 'loaded' but not suspicious"
+    ],
+    "manufacturer_markings": "Crucible Industrial logo (stylized flame symbol) stamped faintly on the inside of the handle. A barely-legible serial plate etched inside the shaft access port. The canopy tag reads 'CRUCIBLE WEATHER SYSTEMS' with a generic model number. Designed to survive cursory inspection as legitimate rain gear.",
+    "condition_typical": "Crucible UB-2s in the field are maintained obsessively — operators know a frayed canopy or visible wear invites scrutiny. Most examples seen are pristine or show only authentic weathering: light water stains, faint scuff marks on the shaft from briefcase carry, minor canopy wear patterns consistent with genuine use. Never visibly modified or battle-scarred; that would defeat the entire purpose."
+  },
+  "image_prompt": "Product photography of a sleek black umbrella photographed from a three-quarter angle, laid across a dark gunmetal table surface. Dramatic side-lighting casts sharp shadows, emphasizing the reinforced tip and barely-visible shaft seam. Gloved hand (black tactical glove) gently grips the handle, thumb positioned near the concealed firing button. Close-up inset showing the flush-mounted activation point and micro-serial etching. Soft bokeh of rain-streaked urban background. Cinematic cyberpunk lighting with cool blue rim-light along the canopy edge and warm amber accent on the metallic tip. Ultra-detailed material rendering showing brushed aluminum and water-beaded nylon fabric. High-contrast, clinical product photography aesthetic mixed with espionage thriller tone. --ar 3:2 --v 6"
 }

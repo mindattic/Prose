@@ -48,5 +48,25 @@
     "Ilhan Nakamura-Bello",
     "The Shelf",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A bulky, utilitarian full-body enclosure that reads as industrial hazmat gear—protective and imposing. The corroded-mustard yellow gives it a worn, industrial aesthetic even when new. The integrated visor hood and shoulder-mounted air intake create an almost insectoid silhouette. On the wearer, it commands space and signals danger-adjacent work.",
+    "fit": "Relaxed and intentionally loose to accommodate layering and basic augmentations (chrome cuffs, subcutaneous gear). Articulated at shoulders, elbows, and hips for mobility despite the bulk. Tapered at wrists and ankles with ratchet buckles that cinch tight for seal integrity.",
+    "primary_material": "Triple-laminate shell: vulcanized polyimide outer layer bonded to woven aramid middle, with bonded inner moisture-wicking membrane. Factory seam tape in neon orange (fading to white as integrity degrades).",
+    "texture": "Smooth synthetic shell with subtle texture from the aramid weave visible under magnification. Seam tape has slight raised profile. Ratchet buckles are cold metal. Inner membrane feels slightly tacky and moisture-resistant.",
+    "color_scheme": "Corroded-mustard yellow as primary, with black chemical-resistance banding at all seams. Neon orange seam tape (degrading to white over time). Matte finish from industrial use.",
+    "closures": "Ratchet buckles at wrists and ankles. Full-body zipper down the front (industrial-grade, likely corroded). No other traditional fasteners—designed for quick donning/doffing.",
+    "distinctive_features": [
+      "Integrated visor hood with filtered air intake mounted on left shoulder",
+      "Factory neon-orange seam tape (fades white when seal integrity compromises)",
+      "Triple-laminate construction visible at torn edges",
+      "Ratchet buckles allow chrome cuff accommodation beneath",
+      "Corroded finish suggesting heavy industrial use",
+      "Black chemical-resistance banding reinforce all high-stress seams"
+    ],
+    "tier_indicator": "Tier 5 salvage/Tier 4 working-class. Gray-market surplus industrial equipment. Affordable to street crews but not aspirational.",
+    "cultural_context": "Shelf worker, salvage crew, acid-flooded industrial basement explorer. Wearing this signals you work in hazardous conditions for subsistence wages. It's practical, not fashionable—a uniform of necessity rather than choice.",
+    "condition_typical": "Weathered and corroded. Seam tape faded to white (ignored). Possible tears or patched sections. Visor scratched from debris. Ratchet buckles stiff from salt corrosion. Stains from acid splash or mineral deposits. Despite wear, still functional because it was built cheap and durable."
+  },
+  "image_prompt": "A weathered Tier 5 salvage worker wearing a corroded mustard-yellow Ferrochem AcidWall Pro MK-4 full enclosure suit with black chemical-resistance seam banding and faded white seam tape. Integrated visor hood with shoulder-mounted air intake. Ratchet buckles visible at wrists and ankles. Chrome cybercuff barely visible beneath cuff. Dark industrial basement backdrop, flooded water reflecting overhead neon. Moody cyan and amber lighting casting harsh shadows. Suit texture emphasizes wear and corrosion. Cinematic, gritty cyberpunk aesthetic. --ar 2:3 --v 6"
 }

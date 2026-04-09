@@ -45,5 +45,36 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Aybek Alvarez-Okonkwo",
+    "Cezar Watanabe-Gyasi",
+    "Focadrin",
+    "Free Assembly",
+    "Nika Svensson-Kone",
+    "Void Ring VR-0 'Phantom Limb'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modular precision rifle with a distinctly urban aesthetic. The Reclaim presents as a purposeful tool rather than a military instrument—clean lines, minimalist ergonomics, and an overall silhouette that emphasizes modularity. The fixed 6x scope sits forward on the receiver in a way that suggests geometric precision. Despite its capability, it carries an almost civilian intentionality.",
+    "dimensions": "Assembled length: 94 cm | Barrel: 41 cm | Receiver: 38 cm | Stock: 28 cm | Width across charging handle: 6.5 cm",
+    "weight_description": "Balanced and manageable at 4.0 kg assembled—hefty enough to feel substantial, light enough for sustained shooting positions or rapid repositioning. The modular design distributes weight intuitively when separated.",
+    "primary_material": "Polymer composite receiver with reinforced aluminum quick-disconnect nodes. Barrel assembly is chromoly steel. Stock is carbon-fiber reinforced polymer with steel locking lugs.",
+    "finish": "Matte graphite-gray polymer body with brushed aluminum junction points. The barrel wears a subdued dark nitrile coating. Quick-disconnect nodes gleam with precision machining—deliberate visual emphasis on the tool's core mechanic.",
+    "color_scheme": "Matte graphite-gray primary with brushed aluminum accents at disconnect points. The illuminated reticle housing is dark gunmetal. Minimal branding in muted gold lettering.",
+    "grip_texture": "Textured polymer grip with subtle honeycomb pattern for secure purchase without being ostentatious. The charging handle is wrapped in thin rubberized material for quiet operation.",
+    "distinctive_features": [
+      "Visible quick-disconnect bayonet lugs at barrel-to-receiver and receiver-to-stock junctions—precision-engineered, color-matched to the finish",
+      "Fixed 6x scope with illuminated reticle featuring urban geometry-optimized crosshairs (nested grid pattern rather than traditional crosshair)",
+      "Charging handle positioned for rapid manipulation during disassembly",
+      "Magazine well features quick-release paddle visible on the left side",
+      "Serial plate mounted on receiver with Kang-Petrov Arms logo and 'RECLAIM' designation in sans-serif font",
+      "Minimal rail system—only top-mounted, leaving sides and bottom uncluttered to facilitate packing into tight spaces",
+      "Heat vents along the barrel shroud in a subtle linear pattern",
+      "Witness marks engraved near quick-disconnect points—subtle alignment guides for rapid reassembly",
+      "Sling attachment points integrated into the quick-disconnect system itself"
+    ],
+    "manufacturer_markings": "Kang-Petrov Arms logo (circular compass-like symbol merging Cyrillic and Latin characters) stamped on the left side of the receiver. 'KPM-15R RECLAIM' printed in gold lettering below the scope rail. Serial number on a stainless steel plate inset into the receiver. Manufacturing origin mark: 'GLMZ-LICENSED' on the barrel assembly near the muzzle.",
+    "condition_typical": "Field-maintained and operational. Finish shows minimal wear despite regular use—matte surfaces are designed to resist reflection and visible damage. Quick-disconnect nodes may show minor scuffing from repeated assembly cycles, but this is expected wear. No rust or corrosion. Optic glass is clean and clear. Overall impression: a tool in regular, professional use—not pristine, not weathered."
+  },
+  "image_prompt": "Professional product photography of the Kang-Petrov Arms KPM-15R Reclaim DMR in three states: fully assembled, partially disassembled showing barrel and receiver separated, and component layout on dark matte surface. Dramatic side-lighting emphasizing the quick-disconnect nodes and aluminum junction points with cool blue-white highlights. Matte graphite-gray polymer catches light subtly. Mounted 6x scope with illuminated reticle visible in close detail. Gloved hand in the frame positioning the assembled rifle on a tactical black canvas, showing scale and the purposeful minimalist design. Urban cyberpunk aesthetic—harsh shadows, professional military catalog style, technical precision. Shot against a charcoal background with minimal reflections. Include the stainless serial plate and GLMZ-licensed markings in sharp focus. --ar 3:2 --v 6"
 }

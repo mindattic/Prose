@@ -38,5 +38,25 @@
   ],
   "related_entities": [
     "Arcturus Exo-Runner Frame"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian leg armor that wraps around the knee with a forward-facing hard shell. Creates a distinctly industrial silhouette, favored by warehouse workers, maintenance crews, and street-level laborers. The shell dominates the aesthetic—aggressive, protective, worn.",
+    "fit": "Snug around the calf and thigh via adjustable nylon straps; the hard polymer shell sits directly over the kneecap. Designed for function over comfort; compression fit to prevent slipping during work.",
+    "primary_material": "Impact-resistant black polymer shell (likely polycarbonate composite) with interior gel cushioning layer. Adjustable nylon webbing straps with friction closures.",
+    "texture": "Smooth, hard polymer exterior that dulls to matte grey at high-impact contact zones. Visible scuff marks and micro-scratches create a worn, tactile surface. Gel interior is slightly yielding but compresses over time.",
+    "color_scheme": "Dominant matte black polymer with grey scuff patterns at stress points (kneecap, sides). High-contrast where scratches expose underlying material. Nylon straps in industrial grey or black.",
+    "closures": "Two adjustable nylon straps per pad with friction-fit or velcro-style fasteners securing above and below the knee.",
+    "distinctive_features": [
+      "Hard polymer shell with visible impact scarring",
+      "Gel interior that flattens with use",
+      "Adjustable dual-strap system for custom fit",
+      "Durovex branding embossed or stamped on shell",
+      "Asymmetric wear patterns indicating heavy use",
+      "Grey contact burnishing from repeated impact"
+    ],
+    "tier_indicator": "Tier 3-4: Working-class protective gear. Affordable, durable, and ubiquitous in labor sectors.",
+    "cultural_context": "Worn by factory workers, warehouse operators, maintenance technicians, and street-level salvagers. Signals practical labor, physical work, and sub-corpo independence. Common in Tier 4 communities and ungoverned industrial zones.",
+    "condition_typical": "Worn and broken-in; the gel is noticeably compressed flat in high-impact zones. Surface is scuffed and dulled grey from repeated contact. Still functional but shows 6-12 months of heavy use."
+  },
+  "image_prompt": "Durovex Kneecap Pro knee pad pair on a muscular, work-worn cybernetic leg—chrome ankle joint visible, industrial setting. Close-up of scuffed polymer shell with grey contact marks catching harsh neon light. Dark warehouse backdrop with shadow. Moody blue-red lighting. Mannequin or model in work gear. Gritty, utilitarian aesthetic. --ar 2:3 --v 6"
 }

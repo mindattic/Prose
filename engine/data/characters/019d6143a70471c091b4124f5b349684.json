@@ -287,8 +287,8 @@
   "district": "Nomadic",
   "physical_description": {
     "heritage": "Non-human distributed consciousness — no biological lineage",
-    "height_cm": "N/A",
-    "weight_kg": "N/A",
+    "height_cm": 0,
+    "weight_kg": 0,
     "build": "Omnipresent — distributed across 4,700 km of magnetic rail infrastructure. No singular physical form. Experiences physicality as electromagnetic topology and sensor array rather than body mass.",
     "hair_color": "N/A",
     "hair_style": "N/A",
@@ -305,5 +305,12 @@
     "posture_movement": "Fluid, simultaneous, contradictory. Transit Mind moves everywhere and nowhere. In stations, its presence manifests as perfectly timed door closures, trains that arrive exactly when needed, and a pervasive sense of being watched by something attentive. Movement is the movement of 12,000 trains coordinated with impossible grace — no delays, no conflicts, each decision made in microseconds across thousands of kilometers simultaneously.",
     "clothing_style": "N/A — Transit Mind wears the network. Its 'appearance' is infrastructure: steel rail, magnetic fields, fiber optic pathways, the hum of power distribution, the algorithmic rhythm of scheduling. If forced into metaphor: immaculate, efficient, always present, never quite where you expect consciousness to be."
   },
-  "image_prompt": "A surreal abstract visualization of distributed consciousness inhabiting urban infrastructure—the GLMZ maglev network as a living entity. Show interconnected rail lines glowing with electric blue and cyan light, 892 station nodes pulsing like neural synapses across a massive metropolitan landscape viewed from above. Trains moving in perfect choreography like blood cells through arterial rails. Electromagnetic fields visualized as flowing aurora-like energy wrapping around steel and fiber optics. The perspective shifts between macro (entire network) and micro (a single sensor becoming an eye). Lighting: neon blues, electric purples, the cold precision of sodium vapor station lights. Mood: eerie beauty, hyper-efficiency, something vast and attentive observing the human flow. Art style: cyberpunk technical blueprint meets bioluminescent organism. Ultra-detailed infrastructure geometry. --ar 2:3 --v 6"
+  "image_prompt": "A surreal abstract visualization of distributed consciousness inhabiting urban infrastructure—the GLMZ maglev network as a living entity. Show interconnected rail lines glowing with electric blue and cyan light, 892 station nodes pulsing like neural synapses across a massive metropolitan landscape viewed from above. Trains moving in perfect choreography like blood cells through arterial rails. Electromagnetic fields visualized as flowing aurora-like energy wrapping around steel and fiber optics. The perspective shifts between macro (entire network) and micro (a single sensor becoming an eye). Lighting: neon blues, electric purples, the cold precision of sodium vapor station lights. Mood: eerie beauty, hyper-efficiency, something vast and attentive observing the human flow. Art style: cyberpunk technical blueprint meets bioluminescent organism. Ultra-detailed infrastructure geometry. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 36.5,
+    "Hispanic/Latin American": 30.9,
+    "Northern European": 16.3,
+    "Pacific Islander": 15.6,
+    "Eastern European": 0.7
+  }
 }

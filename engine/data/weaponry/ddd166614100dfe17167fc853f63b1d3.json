@@ -46,5 +46,38 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus VMG-4 'Turret'",
+    "CHROMEWORKS GhostFrame Stealth Ocular Mk3",
+    "Focadrin",
+    "GLMZ",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Nika Svensson-Kone",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "The Last Generation",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "physical_description": {
+    "visual_profile": "A classically-proportioned bolt-action rifle with deliberate anachronistic elegance—long barrel, graceful stock curve, and purposeful simplicity. The silhouette reads as 'hunting heritage' rather than military aggression, despite its precision lethality. The fixed scope mounted atop gives it a purposeful, austere look.",
+    "dimensions": "Overall length: 112 cm | Barrel length: 61 cm | Stock depth: 8 cm | Scope: 30 cm length, 5 cm diameter",
+    "weight_description": "Substantial but balanced—4.0 kg feels purposeful in the hands, neither feather-light nor unwieldy. The weight sits forward of the grip, encouraging stable shouldering during long-distance aiming.",
+    "primary_material": "Steel barrel and receiver, hardwood (walnut) furniture, aluminum scope body. No polymer—materials chosen for longevity and thermal stability.",
+    "finish": "Barrel: matte blued steel with micro-worn patina at edges. Stock: oil-rubbed walnut with subtle sheen, hand-checkered surfaces visible under sidelight. Scope: anodized aluminum in gunmetal gray with light surface oxidation suggesting honest use.",
+    "color_scheme": "Primary: warm medium brown (walnut) and deep blue-black (steel). Accents: brushed aluminum scope body, brass cartridge casings visible at the internal magazine well.",
+    "grip_texture": "Walnut stock is hand-checkered with diagonal diamond pattern—tactile, gripping texture that prevents slip even with cold or gloved hands. Smooth swell at the grip. Bolt knob is knurled steel, slightly cool to touch.",
+    "distinctive_features": [
+      "Hand-checkered walnut stock with visible grain variation",
+      "Fixed 10x optical scope with BDC reticle and crosshair illumination",
+      "Exposed bolt carrier with knurled operation handle",
+      "Deep bluing on barrel with micro-edge wear suggesting field use",
+      "No tactical furniture—purposeful minimalism",
+      "Internal 5-round magazine—no external box protruding",
+      "Sling swivel studs mounted at foregrip and stock heel",
+      "Scope has fine adjustment turrets (elevation/windage) but BDC design minimizes dialing necessity"
+    ],
+    "manufacturer_markings": "HEARTHSTONE FIREARMS and HHP-7 LONGREACH stamped in clean serif font on the barrel flat forward of the scope. Serial number engraved on the receiver. Small Hearthstone phoenix logo (stylized rising bird) inlayed in the walnut stock just behind the grip.",
+    "condition_typical": "Well-maintained and honest-worn. No cosmetic surface damage, but the bluing shows fingerprint oil marks and the walnut displays subtle handling wear on the grip and foregrip. The scope lens has dust coating but is clear—a tool in regular, respected use rather than safe-queen display piece."
+  },
+  "image_prompt": "Product photography of a Hearthstone Firearms HHP-7 Longreach bolt-action rifle positioned at 45-degree angle on black matte surface, mounted in a gunsmith's vise with precision blocks. Dramatic sidelight from the left reveals walnut grain and hand-checkered pattern in sharp relief. The blued steel barrel catches highlights, showing micro-patina detail. Fixed 10x scope mounted atop with BDC reticle faintly visible through glass. Gloved hand (tactical polymer, cyberpunk gray) cradles the action to show bolt knob and trigger guard detail. Brass .308 cartridge casings scattered on surface beside the rifle. Background: dark slate-gray with subtle holographic tech interface barely visible (soft bokeh). Cyberpunk frontier aesthetic—high-tech manufacturing heritage meets analog reliability. Studio lighting, shallow depth of field. --ar 3:2 --v 6"
 }

@@ -76,5 +76,24 @@
     "The Quiet Room",
     "The Undertow",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A fitted tactical vest with integrated sleeves, appearing as a high-tech compression garment. The surface has a subtle, almost liquid quality — not quite matte black, with fine iridescent shimmer across the Stochastic Emission Fabric when light catches it at certain angles. The weave pattern is visible up close: dense, interlocking conductive threads embedded in a dark synthetic base. Sleek, intentionally non-descript design that reads as expensive minimalism rather than armor.",
+    "dimensions": "Vest spans 45cm chest-to-shoulder depth, sleeves extend 60cm arm length. Compact enough to layer under a jacket but substantial enough to feel like a full torso system.",
+    "weight_description": "Light but present at 1.1kg — handheld-category weight, worn as a garment. User feels the consistent pressure across the torso like a weighted compression shirt.",
+    "primary_material": "Stochastic Emission Fabric: proprietary conductive composite weave with base synthetic polymer. Appears black with anthracite undertones.",
+    "finish": "Satin-smooth with micro-texture grip at the weave level. Faint opalescent shift under direct light — hints of violet and deep blue reflections that suggest the conductive thread lattice beneath. Slightly stiff initially, becomes supple with wear.",
+    "color_scheme": "Primary: pure black (Vantablack-adjacent, near-total light absorption). Accent: slate grey piping on shoulder seams and sleeve cuffs. Subtle maroon/burgundy undertones visible only in direct light, suggesting circuitry pathways.",
+    "interface_elements": "Slim collar-mounted control node (7cm × 4cm) with three tactile pressure points (power, mode cycle, diagnostic). Tiny recessed indicator LED cluster (status: white/amber/red) at collar base. Inductive charging contact points disguised as subtle metallic pads on inner left shoulder. Minimalist fabric label at upper back seam bearing SABLE Content Forge branding.",
+    "distinctive_features": [
+      "Nearly imperceptible shimmer across the entire surface caused by conductive thread lattice",
+      "Collar-mounted thin-film processor visible as a slightly raised, geometrically precise rectangle of fractionally different texture",
+      "Shoulder seam piping that houses the Ambient Calibration Loop antenna array",
+      "Faint electrical scent (reported to fade after 3-5 wears) — not unpleasant, like ionized air after rain",
+      "Almost no visible hardware or external ports; all integration is seamless and recessed"
+    ],
+    "manufacturer_markings": "SABLE Content Forge logo (stylized Φ-shaped mark) embossed on collar inner label. Regulatory compliance stamps (GLMZ Class-3 Utility, Vantablack Patent Lic. 2219-X4) in minimal white print on back neck seam. Serial number on inner cuff in micro-etched format.",
+    "condition_typical": "Worn under casual wear or tactical jacket in urban environments. With use, the initial stiffness decreases and the fabric develops a lived-in patina. No visible degradation; the Stochastic Emission Fabric is designed for 3+ years of continuous wear. Users often wear it directly over baseline skin or light thermals. Small wrinkles and body conformity are normal; the garment molds to its wearer over time."
+  },
+  "image_prompt": "Close-up product shot of a black Vantablack Media Somatic Noise Cloak vest laid flat on a dark metal workbench, three-quarter angle view revealing sleeve and torso detail. Dramatic rim lighting catching the iridescent shimmer of the conductive thread weave, casting faint violet and blue reflections across the surface. Collar-mounted processor node and indicator LEDs subtly lit in soft white. Inductive charging pad glowing softly in the background. Industrial cyberpunk aesthetic: neon accent light (cool cyan) from off-camera left illuminating the left shoulder seam. Shallow depth of field with the fabric texture in sharp focus, showing the dense interlocking weave pattern. SABLE branding visible on inner collar label. Moody atmosphere, high contrast between absolute black fabric and dramatic lighting. --ar 3:2 --v 6"
 }

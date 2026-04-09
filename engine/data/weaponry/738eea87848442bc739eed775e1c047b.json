@@ -43,5 +43,38 @@
     "security",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Ekundayo Vásárhelyi-Nkemdirim",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Nika Svensson-Kone",
+    "Tessera Nexus Town Car",
+    "The Bazaar",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
+    "ZhengDao Bioelectric LumbarBrace Pro"
+  ],
+  "physical_description": {
+    "visual_profile": "A chunky, utilitarian semi-automatic pistol with an aggressive squared-off profile. The wide frame and blocky slide give it a brutish, no-nonsense appearance — built for function over finesse. The slide-to-frame ratio creates a purposeful silhouette that screams 'working weapon' rather than precision instrument.",
+    "dimensions": "Total length 203mm, slide width 35mm, frame height 138mm, barrel length 127mm with threading visible at muzzle",
+    "weight_description": "Hefty but manageable — 0.95kg settles solidly in the palm with a forward-heavy balance when unloaded. The mass feels purposeful rather than cumbersome, suggesting real stopping power without being unwieldy.",
+    "primary_material": "Steel-reinforced polymer frame with hardened steel slide and barrel. The polymer exhibits visible ribbing for structural integrity.",
+    "finish": "Matte black slide with a slightly worn, service-grade patina suggesting field use. Frame features a textured dark gunmetal-gray polymer with subtle brush marks from manufacturing. No unnecessary shine — tactical aesthetics dominate.",
+    "color_scheme": "Matte black slide with dark gunmetal-gray polymer frame. Stainless steel threaded barrel muzzle provides subtle metallic contrast.",
+    "grip_texture": "Aggressively textured polymer grip with vertical stippling patterns for enhanced purchase. Designed to bite into gloved hands — no ergonomic coddling.",
+    "distinctive_features": [
+      "Threaded muzzle with visible 1/2-28 threading",
+      "Suppressor-height tritium front sight post (faintly glowing amber)",
+      "Picatinny rail underneath frame in front of trigger guard",
+      "Wide, squared-off slide with sharp edges",
+      "Double-stack magazine well creating pronounced magazine bulge",
+      "Ambidextrous slide catch levers",
+      "Takedown lever positioned for gloved operation",
+      "Faint witness holes on frame sides indicating round count"
+    ],
+    "manufacturer_markings": "Kang-Petrov logo stamped on slide rear. 'KP-45 TACTICAL SLEDGE' markings on frame right side. Caliber and serialization on frame left. Small Φ currency symbol indicating 2226-era manufacture near trigger guard.",
+    "condition_typical": "Well-maintained but field-worn. Slide shows light holster marks and micro-scratches. Frame retains original finish with minimal wear. A weapon that's been regularly cleaned and serviced rather than abused — the duty weapon of a professional with a budget."
+  },
+  "image_prompt": "Product photography of a matte black Kang-Petrov KP-45 Tactical Sledge pistol positioned on a dark carbon-fiber surface. Camera angle slightly from above-left, showing the threaded barrel and accessory rail detail. Gloved hand gripping the frame from right side, wearing industrial security contractor gloves. Dramatic side-lighting casting sharp shadows across the slide, highlighting the squared-off geometry and textured polymer frame. Suppressor-height sights catching rim light. Cyberpunk aesthetic: cool blue-tinted ambient light mixing with warm tungsten accent light. Minimal background blur. High detail on the suppressor threads and Picatinny rail. --ar 3:2 --v 6"
 }

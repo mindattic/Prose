@@ -58,5 +58,29 @@
     "The Shelf",
     "The Third Rail",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A weathered, purpose-built layering system that reads as practical survivalism — utilitarian, scarred, and heavily patched. The silhouette is blocky and load-bearing, designed for crawling and climbing rather than movement or aesthetics. Every visible surface tells a story of repair and repurposing.",
+    "fit": "Loose, deliberately oversized for layering and pack-wearing. Compression base fits snug; vest and anorak drape with room for equipment and breathing apparatus. Trousers are relaxed through the hips, tapered slightly at the ankle for boot security.",
+    "primary_material": "Mixed salvage: faded synth-cotton compression base, factory-second canvas work vest, surplus Solberg-Maru anorak shell, conveyor belt rubber panels, treated leather boot uppers, layered salvage rubber soles",
+    "texture": "Heavily worn — pilled compression fabric, stiff and cracked canvas, creased from pressure and age, quilted thermal lining audibly crinkles, rubber panels are scored and scuffed, boots show visible cracks sealed with weatherstrip compound",
+    "color_scheme": "Dominant ash-gray and charcoal with rusted olive accents. Restitched seams create intentional color blocking: black thread, tan thread, then bright industrial orange cutting across the left shoulder like a wound or warning stripe. Scuffs and stains create organic patina throughout.",
+    "closures": "Zip-front vest, anorak pulls overhead with drawstring hood, cargo pants use standard button-and-zipper, boots laced with braided comms wire instead of traditional laces",
+    "distinctive_features": [
+      "Cracked rubber collar seal designed for hazmat hood interface — non-functional but retained",
+      "Mismatched reinforced webbing on every pocket in different industrial colors",
+      "Three visible restitchings on left shoulder in contrasting thread colors (black, tan, bright orange)",
+      "Knee panels cut from conveyor belt rubber, stitched flat for crawling",
+      "Stuffed right thigh pocket; left thigh patched with Tenex sealant tape over healed tear",
+      "Salvaged thermal mylar hood lining that crinkles audibly when moving",
+      "Boots resoled with layered salvage rubber, uppers sealed with weatherstrip compound",
+      "Scuffed chrome neural port cap clipped to vest collar as non-functional badge",
+      "Transit card wedge and self-repair tape in chest pocket visible",
+      "Boot laces replaced with braided comms wire"
+    ],
+    "tier_indicator": "Tier 5 sub-grade salvage. Every component is factory-seconds, surplus, or repurposed. Nothing matches; everything is patched, restitched, or sealed. The outfit signals someone living on the edge of ungoverned space.",
+    "cultural_context": "Tunnel Runner — someone who navigates the acidic, unstable infrastructure of the Shelf and underground transit corridors. The rig says: I survive in places designed to kill you. No corpo would be seen in this. This is the uniform of necessary poverty and hard-won expertise.",
+    "condition_typical": "Perpetually weathered and patched. The compression base is pilled from pack friction. Seams show multiple repair attempts in different materials and threads. Boots are cracked and sealed rather than replaced. The anorak carries stains that won't come out. Yet everything is functional and regularly maintained — this is not careless neglect, but strategic repair."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a tunnel runner in layered survival gear standing in a dystopian underground corridor. Ash-gray and charcoal compression anorak with visible restitched orange seams, olive canvas work vest with mismatched webbing pockets, heavy cargo pants with rubber knee panels, black work boots resoled with layered salvage rubber. Scuffed chrome neural port cap clipped to collar. Moody amber and teal neon lighting casting long shadows on cracked concrete walls. Character leaning against industrial pipe, motion-blurred thermal mylar hood. Grit, wear, and patched repairs visible throughout — this is survival fashion, not style. Dark industrial brutalist background with acid-washed overpass infrastructure. --ar 2:3 --v 6"
 }

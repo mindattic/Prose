@@ -46,5 +46,28 @@
     "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
     "The Filament",
     "VitaCore BloomFilter Olfactory Modulation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A striking two-piece set that transforms from matte-black minimalism into a reactive light show. The crop top sits high-necked and fitted, while the trousers drape wide and dramatically around the legs, creating an exaggerated silhouette that reads as both street-ready and performance-oriented. Glowing amber seams frame the entire garment, creating a skeletal light architecture.",
+    "fit": "Crop top: form-fitting through the torso with a high crew neck. Trousers: low-slung at the hip with an extremely wide, high-volume leg that tapers slightly at the ankle. Designed to accommodate both baseline human and digitigrade leg augmentations without restriction.",
+    "primary_material": "SoundThread™ — proprietary micro-piezoelectric filament mesh woven into matte-black elastane base. Responsive textile technology.",
+    "texture": "Smooth, almost oily matte finish in silence. Under sound stimulus, the surface shimmers with electromagnetic activity. Seams possess a wet, luminous quality from integrated biolux elements.",
+    "color_scheme": "Dominant matte black with reactive electric blue and violet blooms across bass-frequency zones. Persistent amber biolux trim along all seams and structural edges. High-frequency whites pulse at hem and collar edges.",
+    "closures": [
+      "Crop top: friction-fit high neckline, no visible fasteners",
+      "Trousers: magnetic snap waistband, side seam friction closures"
+    ],
+    "distinctive_features": [
+      "Micro-piezoelectric SoundThread fabric reacts to ambient audio in real-time",
+      "Persistent amber biolux seam trim (battery-independent, self-luminous)",
+      "Rear tail-vent on trousers for movement and digitigrade accommodation",
+      "Vex Nocturn circuit-print brand tag on inner waistband",
+      "Zero visible hardware — entirely seamless construction",
+      "Sound-reactive visual mapping: bass = blue/violet, treble = white"
+    ],
+    "tier_indicator": "Tier 4-5 boundary: street-manufactured luxury. Not corpo-tier, but distinctly above salvage. Premium street culture artifact.",
+    "cultural_context": "Rave/club subculture, circuit-community identity. Wearer signals: underground music scene affiliation, body-mod acceptance, willingness to be seen as performatively augmented. Anti-corpo aesthetic with high-tech execution.",
+    "condition_typical": "Pristine when new; develops subtle wear around seam stress points and waistband friction zones over 3-6 months. Biolux trim slowly dims after ~18 months of continuous wear (replaceable). SoundThread remains responsive indefinitely."
+  },
+  "image_prompt": "Fashion photograph of a Vex Nocturn Pulse-Skin rave set on an androgynous cyberpunk model with visible subcutaneous tech ports on collarbones. Model stands in a dark underground club with neon blue and purple ambient lighting. The garment glows with electric blue reactive patterns across the wide-leg trousers from bass-heavy music playing in the venue. Amber seams trace the silhouette like internal circuitry. Matte black base reads as void-like against warm tungsten spotlight. Shot from mid-thigh up, emphasizing the high-neck crop top and wide-leg drape. Cinematic, moody, dancefloor atmosphere. --ar 2:3 --v 6"
 }

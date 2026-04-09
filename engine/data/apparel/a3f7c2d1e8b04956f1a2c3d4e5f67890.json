@@ -41,5 +41,26 @@
     "Ringo DV-4 'Courier'",
     "Tiare Nishi-Anim",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian straight-leg silhouette with pronounced cargo architecture. Sits confidently at mid-rise, creating a balanced proportional line. The grid-textured ripstop catches light subtly, giving an industrial rather than tactical appearance. Designed to read as 'practical professional' rather than 'paramilitary.'",
+    "fit": "Straight through hip and thigh with gusseted crotch for unrestricted movement. Mid-rise waist. Tapered slightly at ankle without being slim-fit. Accommodates layered thermals or light armor inserts beneath without bunching.",
+    "primary_material": "Military-grade ripstop (synthetic poly-cotton blend), matte finish. Reinforced stress-point stitching creates a subtle grid topography across the surface.",
+    "texture": "Crisp hand-feel with visible grid pattern from reinforcement weaving. Slightly stiff when new, breaking in to supple over weeks of wear. Matte surface resists shine and light reflection.",
+    "color_scheme": "Matte graphite (cool gray) or olive drab. No contrasting trim. Stitching matches base color for seamless industrial aesthetic.",
+    "closures": "Heavy-duty friction-fit waistband with reinforced belt loops. Magnetic-snap fly (silent, reliable). No visible zippers on external pockets—concealed magnetic retention.",
+    "distinctive_features": [
+      "Six external cargo pockets (two thigh, two knee-height, two hip/calf) with angled flap entries",
+      "Four concealed interior pockets distributed across waistband and upper thigh",
+      "Reinforced stress-point grid stitching creating texture and durability",
+      "Gusseted crotch panel for full range of motion",
+      "Subtle Tactec woven label at waistband (sans-serif, minimal branding)",
+      "Tool-loops on hip pockets and left thigh",
+      "Ripstop weave visible in angled light—signals practicality without announcing it"
+    ],
+    "tier_indicator": "Tier 3 functional. Affordable durability. Street-respectable without corpo polish. Not cheap-looking, not luxury.",
+    "cultural_context": "Security contractors, warehouse supervisors, independent couriers, off-shift emergency responders, anyone who needs carry capacity without advertising it. Worn by people who solve problems, not people who delegate them.",
+    "condition_typical": "Broken-in. Minor fraying at pocket seams. Possible reinforced patches at high-stress points. Faded graphite or weathered olive from UV exposure and wash cycles. Authenticity comes from earned wear, not styled distressing."
+  },
+  "image_prompt": "Fashion photography of Tactec Meridian 6-Pocket Cargo Pants on androgynous model with subtle cybernetic neck port visible, standing in shadow under amber neon floodlight. Shot at slight downward angle to emphasize cargo pocket architecture and ripstop texture. Dark industrial backdrop—corrugated metal wall, faint QUANTA script graffiti. Matte graphite pair with magnetic fly and tool-loops in sharp focus. Moody, desaturated color grading with warm neon accent. No smile, neutral expression. --ar 2:3 --v 6"
 }

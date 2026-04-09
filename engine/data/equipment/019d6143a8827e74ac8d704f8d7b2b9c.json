@@ -77,5 +77,24 @@
     "The Human Baseline Alliance",
     "The Underlayer Collective",
     "Zheng-dao Bioelectric"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting full-body compression underlayer resembling high-tech athletic wear. The garment clings to the torso, limbs, and torso with surgical precision. A distinctive hinged heat-sink collar protrudes from the back of the neck—a polished metallic component roughly the size of a closed fist, with visible micro-vents arranged in concentric circles. The overall silhouette reads as medical-grade performance wear, deliberately ambiguous between therapeutic and tactical.",
+    "dimensions": "Full-body garment; collar component approximately 8cm wide × 6cm tall × 4cm deep; worn as a second skin under standard clothing",
+    "weight_description": "Lightweight and pocketable when compressed; 1.4kg total, distributed across the body—barely noticeable when worn. Collar adds minimal neck strain.",
+    "primary_material": "Bioelectric-responsive smart textile base (synthetic polymer blend with embedded conductive mesh); heat-sink collar is brushed titanium-aluminum composite",
+    "finish": "Matte compression fabric with a subtle iridescent sheen visible only under direct light, suggesting embedded circuitry. Collar features micro-etched cooling vents with satin finish; internal surfaces show faint traces of thermal paste around node junctions",
+    "color_scheme": "Charcoal gray compression layer with muted silver node points visible as raised dimples across chest, shoulders, and spine. Heat-sink collar in brushed gunmetal gray with faint blue LED indicators along the vent edges (inactive until powered)",
+    "interface_elements": "Minimalist design: small recessed charging port (USB-C) at the base of collar; single capacitive touch zone on the left shoulder for calibration mode activation; discrete status indicator (three-LED array) hidden beneath collar rim; no visible screens or aggressive controls",
+    "distinctive_features": [
+      "Hinged heat-sink collar with concentric cooling vents that articulate slightly during operation",
+      "Raised bioelectric node points across the garment surface—subtle texture like acupuncture meridian mapping",
+      "Faint copper-colored conductive pathways visible at seams and junction points under close inspection",
+      "Thermal gradation visible on collar surface during use—cooler at vents, warmer at base",
+      "Internal neck webbing with calibration contact points"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo embroidered in metallic thread at the shoulder seam (small, 2cm); regulatory stamp stating 'MEDICAL AUTONOMIC SUPPORT LAYER' and compliance certifications at the collar base; serial number etched subtly into underside of collar",
+    "condition_typical": "When worn under clothing, only the collar is visible—appearing as an unusual but plausible medical device. In stealth use, the garment is worn with minimal upper body coverage to maximize heat dissipation through the collar. After extended use (2+ hours), micro-condensation may bead on collar vents. Unit shows slight wear at contact points after sustained calibration cycles."
+  },
+  "image_prompt": "Product photography: Zheng-Dao Dermal Emission Suppressor laid flat on a brushed steel workbench under cool LED lighting, with the metallic heat-sink collar articulated upward and in sharp focus. The charcoal compression layer spreads beneath it, node points catching light to reveal the circuit-like texture. A calibration tool with blue contact pins rests nearby. In the background, a thermal imaging monitor displays a blurred human silhouette. Dramatic side-lighting emphasizes the collar's vents and internal structure. Cyberpunk aesthetic: cold color grading, high contrast, slight chromatic aberration. Overhead and detail shots showing the copper conductive pathways at seams. --ar 3:2 --v 6"
 }

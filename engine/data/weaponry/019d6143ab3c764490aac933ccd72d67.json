@@ -54,5 +54,48 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Microwave Area Denial MAD-3 'Sunburn'",
+    "Ferrogate Enforcer Cruiser",
+    "GLMZ",
+    "Independent Micro-Grid Power Cooperative",
+    "Lazarus Pharmaceutical Emetix-9 'Purge'",
+    "Lazarus Pharmaceuticals",
+    "Narrowcast",
+    "Ouroboros Energy SolarHarvest Orbital Collection Array",
+    "Praevex",
+    "Pressure Drop",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Stormvein Dynamics PelagicStride DP-3 Aquatic Leg",
+    "SynapTech IrisBloom Ocular Color Modulator",
+    "TESSERA PG-2 'Signature'",
+    "The Pure Hand",
+    "The Resonance Communion",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Vantablack Media Spectral Barrier Display System"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular carbine with a distinctly medical aesthetic corrupted by weaponization. The frame tapers from a bulbous emitter head down to a narrow stock, resembling a stylized syringe or surgical tool repurposed for lethality. Its silhouette is deliberately narrow and non-threatening at casual glance—a weapon designed to not *look* like one until the moment of discharge.",
+    "dimensions": "68 cm overall length. Emitter head measures 12 cm in diameter with a recessed lens crown. Stock is 8 cm wide at grip. Depth profile averages 4 cm except at the photovoltaic capacitor housing (6 cm bulge mid-frame).",
+    "weight_description": "Deceptively light at 3.1 kg—feels almost fragile in hand despite lethal purpose. Weight concentrates in the mid-body capacitor cluster, creating a forward-heavy balance that rewards braced shooting. Feels more like precision instrumentation than a combat weapon.",
+    "primary_material": "Aerospace-grade titanium-aluminum composite frame with carbon-fiber grip panels. Emitter lens housing is reinforced borosilicate glass with ceramic heat-dissipation fins.",
+    "finish": "Matte gunmetal gray with an iridescent oil-slick sheen across the capacitor housing—visible only under direct light, suggesting the photovoltaic charge state. Lens crown has a faint amber tint from NIR filtering coatings.",
+    "color_scheme": "Gunmetal gray primary. Accent colors: deep amber/orange lens ring, pale ceramic white heat fins, black rubberized grip.",
+    "grip_texture": "Textured black polymer grip with shallow diamond knurling—designed for gloved hands. Cool to the touch due to passive heat-sink integration. Ergonomically contoured but deliberately minimalist, offering no comfort, only control.",
+    "distinctive_features": [
+      "Recessed emitter lens with concentric amber-tinted focusing rings visible beneath borosilicate dome",
+      "Three stacked ceramic heat-dissipation fins running along starboard side, creating a surgical/medical instrument aesthetic",
+      "Dual photovoltaic capacitor cells visible as bulging housings on either side of the mid-frame, with subtle status LEDs (amber for charging, pale green for ready)",
+      "Absence of any visible barrel or muzzle—the weapon is all lens and housing",
+      "Fine engraved charging time readout (1.4s) etched into the stock in minimalist sans-serif font",
+      "Faint microcircuit traces visible beneath translucent panel sections on the left side of the frame",
+      "Cable routing channels for optional targeting optics along the dorsal surface",
+      "Deliberately exposed internal geometry—nothing is hidden, yet the weapon's true function remains obscure to untrained observers"
+    ],
+    "manufacturer_markings": "Ironside Armaments circular logo (a gear bisected by a rifle sight) stamped in relief on the left capacitor housing. Serial plate mounted on the stock (brushed steel, approximately 3×1.5 cm). Arcturus Defense Solutions microlicense marking etched below the emitter on the frame—small, easily missed.",
+    "condition_typical": "Field units show thermal stress patterns on the ceramic fins—faint browning or blotching from repeated firing cycles. Lens occasionally develops micro-fractures from shock. Grip panels wear smooth with use. Well-maintained examples retain the iridescent capacitor sheen; neglected units develop a dull, oxidized appearance. Combat-worn examples show scuffing on the composite frame and occasional scorching around the emitter housing from proximity discharge."
+  },
+  "image_prompt": "Professional product photography of the Photovoltaic Hemorrhage Emitter PHE-3 'Sunburn' carbine rifle, mounted horizontally on a matte black gel surface or cradled in a gloved operative's hands. The weapon is gunmetal gray with amber-tinted emitter lens, cream-colored ceramic cooling fins, and black ergonomic grip. Dramatic side-lighting from a cool blue-white source creates sharp shadows across the photovoltaic capacitor housings, highlighting the iridescent sheen and internal circuitry visible through semi-transparent panels. The emitter lens glows faintly amber from internal optics. Clinical, sterile aesthetic meets weaponized surgical tool. Cyberpunk dystopian weapons catalog style. Ironside Armaments branding visible on the frame. High contrast, cool color temperature dominated by grays and amber accents. --ar 3:2 --v 6"
 }

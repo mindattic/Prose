@@ -36,5 +36,26 @@
   "related_entities": [
     "Arcturus Exo-Runner Frame",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Imposing, angular silhouette with a militaristic presence. Overlapping hard-shell plates create a segmented, almost biomechanical appearance. Shoulders sit broad and squared, torso armored front and back. The overall effect is aggressive yet disciplined—a uniform of controlled force.",
+    "fit": "Compression-fitted base layer with modular plate coverage. Articulated at joints to allow controlled movement. Restrictive by design but engineered for officer endurance during extended riot deployments.",
+    "primary_material": "High-density polycarbonate composite plates over flame-retardant aramid weave. Internal cooling channels run through woven synthetic polymer mesh.",
+    "texture": "Hard plates have a matte, slightly textured finish to reduce glare. Base layer is smooth and slightly elastic. Visible ribbing from internal cooling channels creates subtle linear patterns across exposed fabric.",
+    "color_scheme": "Matte charcoal gray with black accent plating. Reflective piping at joints and edges in high-visibility gray. Pinnacle Security insignia in brushed steel on chest and shoulders.",
+    "closures": "Heavy-duty magnetic retention clasps on plate segments. Friction-fit compression seals on limbs. Central sternum magnetic lock for rapid deployment/removal.",
+    "distinctive_features": [
+      "Segmented hard-shell plating with overlapping coverage for impact distribution",
+      "Visible cooling channel ribbing across torso and limbs",
+      "Groin plate protection with articulated thigh coverage",
+      "Reflective accent piping at high-stress joints",
+      "Pinnacle Security corporate logo embossed on shoulder and chest",
+      "Impact-absorption dimpling across all hard surfaces",
+      "Integrated sweat-management ports along sides"
+    ],
+    "tier_indicator": "Tier 1–2 corporate security equipment. High cost, restricted distribution, signifies official authority and significant institutional backing.",
+    "cultural_context": "Worn by corporate security forces, law enforcement, and private riot-response teams. Signals authority, force readiness, and institutional power. Instantly recognizable in street confrontations. Associated with crowd suppression and control.",
+    "condition_typical": "Maintained in near-pristine condition when actively deployed. Scuff marks and minor impact dents accumulate from field use. Well-maintained examples show minimal wear; heavily used suits may have plate replacements or localized reinforcement patches."
+  },
+  "image_prompt": "Corporate riot officer in full Pinnacle Security armor, standing in three-quarter pose against a rain-slicked urban backdrop of brutalist architecture and neon signage. Moody cinematic lighting from above, casting hard shadows across the segmented plating. Close detail shot of overlapping chest plates and cooling channel ribbing. Dark teal and amber ambient light. Mannequin display alternative: riot suit mounted on tactical stand with visible plate articulation and magnetic clasps. Gritty, high-contrast cyberpunk aesthetic. --ar 2:3 --v 6"
 }

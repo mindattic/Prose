@@ -220,5 +220,13 @@
     "posture_movement": "Moves with deliberate quietness and spatial awareness — fluid, economical gestures that minimize unnecessary motion. Stands with slight forward lean, weight distributed to the balls of their feet, ready to shift direction. Eyes habitually track exits, camera angles, and ambient light sources. Stillness is their default state.",
     "clothing_style": "Tier 3-4 utilitarian: work-issued gray maintenance coveralls (Clearpath logo on chest, worn smooth from laundering), gray or black merino base layer underneath, scuffed synthetic-leather work boots with reinforced toe caps. Off-shift: the same mended knit cap, fitted dark jeans, oversized layered tees, a long charcoal hoodie with a broken zipper they've never bothered to replace. No logos, no aspirational branding. Everything chosen for durability and the ability to move without sound."
   },
-  "image_prompt": "cyberpunk character portrait of a lean nonbinary person of mixed Italian and West African descent, age 29, dark brown skin with faint bioluminescent blue-green stripes glowing subtly along collarbones, short dark hair with close-cropped sides, wearing a heavily patched knit cap and gray maintenance coveralls, angular thoughtful face with intelligent dark eyes, standing in a dark empty corporate lobby at night with soft blue security lighting, moody and atmospheric, film noir cyberpunk aesthetic, dramatic shadows, photorealistic, detailed fabric textures, cinematic lighting, --ar 2:3 --v 6"
+  "image_prompt": "cyberpunk character portrait of a lean nonbinary person of mixed Italian and West African descent, age 29, dark brown skin with faint bioluminescent blue-green stripes glowing subtly along collarbones, short dark hair with close-cropped sides, wearing a heavily patched knit cap and gray maintenance coveralls, angular thoughtful face with intelligent dark eyes, standing in a dark empty corporate lobby at night with soft blue security lighting, moody and atmospheric, film noir cyberpunk aesthetic, dramatic shadows, photorealistic, detailed fabric textures, cinematic lighting, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 28.2,
+    "East Asian": 27.9,
+    "South Asian": 18.4,
+    "Northern European": 12.8,
+    "North African": 9.9,
+    "Sub-Saharan African": 2.8
+  }
 }

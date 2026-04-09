@@ -44,5 +44,36 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "CRUCIBLE Vantage Artisan Precision Hand",
+    "Lowline Press",
+    "Malika Zhukov-Wiredu",
+    "The Pure Hand",
+    "The Shelf",
+    "Tungsten Carbide",
+    "VitaCore ClearCourse Addiction Suppressor",
+    "VitaCore SteadyThread Precision Motor Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "An elegant string of decorative beads indistinguishable from costume jewelry at casual glance. The tungsten carbide spheres catch light with a subtle metallic sheen. When worn, it drapes naturally as a bracelet or necklace. The deception is its defining characteristic—it appears fragile and ornamental.",
+    "dimensions": "60cm deployed length; individual beads 8mm diameter; 1mm monofilament wire gauge",
+    "weight_description": "Featherlight—85g total, barely noticeable when worn. The minimal weight enhances its jewelry disguise and allows extended wear without fatigue.",
+    "primary_material": "Tungsten carbide beads threaded on 1mm monofilament wire (likely polyethylene or similar synthetic fiber rated to 400kg breaking strength)",
+    "finish": "Tungsten carbide beads possess a satin-matte metallic finish with subtle gray-silver tone. The monofilament is nearly invisible, creating the visual illusion of floating beads",
+    "color_scheme": "Gunmetal gray with faint metallic highlights. Some street variants use mixed bead finishes or anodized accents to enhance the costume jewelry aesthetic",
+    "grip_texture": "The beads themselves are smooth and cool to the touch. When deployed as a garrote, the tungsten carbide spheres provide knurled anchor points for bare fingers or gloved hands—grip is secure despite the weapon's delicate appearance",
+    "distinctive_features": [
+      "Perfect spherical tungsten carbide beads with microscopic precision machining",
+      "Nearly invisible monofilament creates 'floating bead' visual effect",
+      "Minimal clasp mechanism—typically a simple magnetic or friction lock disguised as jewelry hardware",
+      "No manufacturer branding visible (street craft production)",
+      "Subtle wear marks on beads from hand contact during concealment",
+      "Wire may show microscopic fraying at clasp points from repeated deployment"
+    ],
+    "manufacturer_markings": "None—street custom assembly by hand leaves no serial numbers or identifying stamps. This anonymity is intentional",
+    "condition_typical": "Pristine cosmetic condition maintained deliberately; any visible damage compromises its disguise. Combat-used variants may show minor bead surface scratches or slight wire discoloration but are otherwise indistinguishable from new"
+  },
+  "image_prompt": "Close-up product photography of a tungsten carbide bead garrote disguised as delicate costume jewelry, draped across a dark matte surface. The beads are rendered in satin metallic gray, catching dramatic side-lighting that emphasizes their perfect spherical geometry and subtle surface reflections. The nearly-invisible monofilament creates an optical illusion of floating beads suspended by light alone. A gloved hand (chrome-augmented fingers visible) gently lifts one end of the bracelet, revealing the weapon's elegant deception. Extreme shallow depth-of-field isolates the beads in sharp focus against a blurred cyberpunk neon backdrop—rain-wet pavement, distant holographic storefronts. The image conveys lethal beauty: ordinary-looking jewelry transformed into precision assassination tool. Tungsten carbide detail shots show manufacturing perfection. Cyberpunk product photography, high contrast lighting, moody color grading. --ar 3:2 --v 6"
 }

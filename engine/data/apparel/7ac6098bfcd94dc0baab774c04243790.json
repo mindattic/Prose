@@ -38,5 +38,25 @@
     "Ouroboros Energy",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A tailored business suit in deep burgundy with gold accents, projecting corporate formality with an undertone of inescapable authority. The silhouette is precision-cut and imposing without appearing overtly threatening—the uniform of someone who will wait in your office until the conversation ends the way they want it to.",
+    "fit": "Precisely tailored through the shoulders and torso; the smart-fabric actively adjusts micro-tension throughout the day for consistent comfort and posture reinforcement. Sleeve and trouser break are immaculate. The fit adapts subtly to body movement, creating an unsettling perfection that never wrinkles or slouches.",
+    "primary_material": "Smart-fabric blend (polycarbon-reactive fibers with embedded biometric sensors and frequency-dampening weave). Lightweight but structured, designed to maintain shape under stress.",
+    "texture": "Smooth, almost glacial surface with a faint shimmer under direct light where the anti-recording weave refracts. Seams are sealed rather than stitched, indicating advanced manufacturing. The fabric has a subtle coolness to the touch.",
+    "color_scheme": "Deep burgundy (nearly oxblood) as the primary color with thin gold piping along lapels, cuffs, and the interior jacket seam. No secondary patterns—the simplicity is intentional and unsettling.",
+    "closures": "Magnetic snap buttons concealed beneath the fabric surface, allowing invisible closure. The jacket front appears seamless until opened. Trouser closure is similarly concealed.",
+    "distinctive_features": [
+      "Ouroboros serpent sigil embroidered in gold thread on interior breast pocket lining—hidden unless jacket is opened, emphasizing 'implied authority'",
+      "Anti-recording audio weave (subtle frequency degradation visible as occasional iridescence in seams)",
+      "Biometric sensor integration throughout fabric (invisible to naked eye but detectable with scanner)",
+      "Augment-compatible tailoring with reinforced synthetic-leather panels at shoulders and cuffs for cyberlimb compatibility",
+      "Interior breast pocket fitted with a discrete data-logging nodule",
+      "Jacket cut slightly longer than standard business wear, creating a formal silhouette that reads as authority without militarism"
+    ],
+    "tier_indicator": "Tier 4 corporate-issued uniform masquerading as accessible formal wear. The manufacturing quality and smart-fabric integration are beyond reach for Tier 5 individuals; the uniform is only worn by employed Ouroboros staff.",
+    "cultural_context": "Wearing this uniform transforms the wearer into an extension of corporate inevitability. In the GLMZ financial districts, spotting the burgundy-and-gold combination causes immediate recognition: debt collection, contract enforcement, or 'resolution consultation.' The wearer is a messenger of financial consequence, trained to let the suit's formality do the psychological work. Compliance staff wear it during all client interactions as a constant reminder that this is official business.",
+    "condition_typical": "Pristine and immediately maintained. Any fiber damage is reported to maintenance; the uniform is replaced quarterly regardless of wear. The fabric self-repairs minor creasing through its smart-weave properties. A worn Compliance uniform would be considered a breach of protocol."
+  },
+  "image_prompt": "Fashion photography of a Ouroboros Compliance Division Dress Uniform on a stoic androgynous model with subtle augmentation ports visible at the collarbone. The suit is deep burgundy with gold piping; photograph the jacket open to reveal the hidden Ouroboros serpent sigil embroidered at the interior breast pocket. Model standing in a corporate office overlooking a rain-slicked GLMZ skyline at dusk, cool blue and amber neon light casting sharp shadows across the fabric. The smart-fabric has a faint iridescent shimmer in the seams where the anti-recording weave catches the light. Close-up detail shot of the magnetic snap button mechanism and sealed seam construction. Formal, cold, inevitable atmosphere. --ar 2:3 --v 6"
 }

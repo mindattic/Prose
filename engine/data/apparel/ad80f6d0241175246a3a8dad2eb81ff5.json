@@ -37,5 +37,26 @@
     "Ezio Kaboré-Malhotra",
     "Sorin Ekwensi-Balasanyan",
     "Vantablack Media Parasocial Carrier Mask"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting medical garment resembling a compression shirt with a distinctive asymmetrical left-side opening. Sterile and clinical in appearance with visible patch arrays along the torso and shoulder. Reads as functional medical equipment rather than fashion, with a slightly translucent quality that hints at embedded technology.",
+    "fit": "Compression fit that hugs the body without restricting movement, designed for post-op comfort. The garment drapes smoothly over the torso with gentle tapering at the waist. Sleeve length is standard but construction allows for easy one-handed donning.",
+    "primary_material": "Medical-grade synth-polymer blend with antimicrobial nanoweave, slightly elastic. The left panel features a translucent smart-fabric section revealing the drug-delivery patch matrix beneath.",
+    "texture": "Smooth, almost liquid-like to the touch with a subtle ribbed micro-pattern for grip. The patch zones have a slightly raised, quilted texture where medication reservoirs are embedded. Left opening edge is finished with friction-seal material rather than traditional stitching.",
+    "color_scheme": "Clinical white with matte grey patch zones. Subtle biometric readout indicators in soft cyan along the right shoulder. A small Prometheus Medical logo in silver sits at the collarbone.",
+    "closures": "Full left-side asymmetrical opening secured by magnetic neo-clasps spaced at sternum, waist, and hip. The opening requires no arm elevation to fasten—designed for patients with limited shoulder mobility.",
+    "distinctive_features": [
+      "Embedded drug-delivery patch array visible through translucent zones",
+      "Antimicrobial treatment creates faint iridescent sheen under certain light",
+      "Biometric sensor nodes at pulse points (wrist, neck)",
+      "Left-side opening runs from armpit to hip with reinforced edges",
+      "Serial number and prescription data printed in thermochromic ink that fades after 14 days",
+      "Tiny drainage tube channels woven into fabric seams",
+      "Non-removable Prometheus Medical care tag with patient return instructions"
+    ],
+    "tier_indicator": "Tier 2-3 institutional issue. Signals access to quality medical care but not luxury. Wearing one publicly indicates recent surgery or chronic medical management.",
+    "cultural_context": "Worn by post-operative patients, chronic pain management cases, and those recovering from augmentation procedures. Streetsiders sometimes wear expired ones as fashion-irony or actual medical necessity. Visible wearing indicates vulnerability and medical status.",
+    "condition_typical": "Pristine and sterile when issued. After 3-5 days of wear, subtle creasing appears at joint flexion points. By day 7, the patch zones show slight discoloration from medication absorption. After patch exhaustion, the garment often shows signs of extended wear—fading serial numbers, slight pilling at stress points, occasional stains that wouldn't have occurred during active drug release."
+  },
+  "image_prompt": "Close-up fashion photograph of a Prometheus Medical Post-Op Recovery Layer on a lean cyberpunk model with visible augmentation ports, shot from a 3/4 angle against a dimly lit medical facility backdrop. The left-side opening is unfastened, revealing the translucent smart-fabric and glowing cyan biometric nodes. Moody hospital lighting casts cool shadows across the antimicrobial fabric, making its subtle iridescent sheen visible. The drug-delivery patches glow faintly beneath the surface. Background shows out-of-focus medical equipment and chrome clinical walls. Model's expression is neutral, clinical. The garment's asymmetry and technological integration are emphasized. --ar 2:3 --v 6"
 }

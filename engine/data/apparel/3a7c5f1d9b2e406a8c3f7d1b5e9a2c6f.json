@@ -49,5 +49,26 @@
     "The Bazaar",
     "The Shelf",
     "The Spire"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, utilitarian mid-thigh parka with an austere silhouette. Matte black technical shell creates a void-like visual presence that absorbs light. When activated, cool blue-white bioluminescent seams trace the shoulders and collar, creating an eerie, organic glow that suggests embedded biotechnology rather than crude LED strips. The overall effect is minimalist-futurist: function over flash.",
+    "fit": "Relaxed but structured through the torso, with articulated shoulders that allow unrestricted arm movement. Cut long enough to provide core warmth without bulk. The fit suggests someone who works outdoors or in unpredictable environments—practical rather than tailored.",
+    "primary_material": "Matte black ballistic weave technical shell with DWR (durable water-resistant) coating. Synthetic down-analogue insulation core rated for extreme cold. Bioluminescent panel inlays are engineered algae-film sealed within the seam structure.",
+    "texture": "Outer shell is smooth, almost slick to the touch with subtle technical weave visible under close inspection. Seams are clean and professional. The bioluminescent strips create a faint raised texture along edges—barely perceptible unless touched directly. Interior is soft, slightly quilted insulation.",
+    "color_scheme": "Dominant matte black throughout. Cool blue-white bioluminescent glow along shoulder seams and collar edge when activated. No color blocking, no visible branding. The glow reads as cyan or pale ice-blue in darkness.",
+    "closures": "Center storm placket with hidden magnetic snaps (no visible zipper pull). Wrist-mounted pressure pad (embedded in cuff material) for bioluminescent activation—no obtrusive buttons or hardware.",
+    "distinctive_features": [
+      "Integrated bioluminescent panel system running shoulder seams and collar perimeter",
+      "Wrist-mounted pressure pad for glow activation/suppression",
+      "Two functional hand pockets with internal reinforcement",
+      "Single interior chest pocket (RFID-shielded)",
+      "Clean, hardware-minimal design—zero decorative zips or straps",
+      "Extreme-cold synthetic insulation rated for GLMZ winter conditions",
+      "Seams are sealed and reinforced for durability in harsh environments"
+    ],
+    "tier_indicator": "Tier 2-3 crossover. The parka itself is solid Tier 3 functional quality, but the integrated biotech elevates it into Tier 2 luxury territory. It signals someone with disposable income who prioritizes substance over ostentation.",
+    "cultural_context": "Appeals to working-class professionals, independent contractors, and mid-tier corpo field operatives. The glow feature reads as a safety tool in industrial/outdoor contexts, a subtle flex in working neighborhoods, and 'trying too hard' in Spire circles. Wearer projects competence, self-sufficiency, and measured tech-literacy.",
+    "condition_typical": "Arrives pristine. Breaks in quickly to look worn-but-maintained. The black shell hides minor scuffs. Bioluminescent strips remain vibrant for 18-24 months before gradual dimming occurs. Patina-friendly; aged versions look more credible than pristine ones."
+  },
+  "image_prompt": "Cyberpunk fashion photography: model wearing matte black Novacore Lumen Parka, glowing bioluminescent seams activated along shoulders and collar edge with ethereal cyan-blue light. Dark industrial warehouse setting, cold atmospheric fog, dramatic side-lighting. Close-up detail shot of wrist pad and shoulder seam glow. Model's face partially shadowed, augmented features subtly visible. Rain-slicked ground reflects the bioluminescence. Shot with shallow depth of field emphasizing the organic glow against the technical black shell. Moody, functional, understated luxury. --ar 2:3 --v 6"
 }

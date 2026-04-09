@@ -46,5 +46,25 @@
     "Narrowcast",
     "The Bazaar",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Industrial-grade elbow-length gauntlets with a distinctly utilitarian silhouette. The matte acid-yellow dominates, creating high visibility on processing floors. Sharp black hazard triangles march down the cuff in rigid rows—unmistakably corporate issue. The form is slightly bulky at the wrist, tapering toward reinforced fingertips.",
+    "fit": "Snug compression fit through the palm and fingers, looser at the forearm to allow layering over work clothes. The cuff sits high on the wrist with slight overlap for seal integrity.",
+    "primary_material": "Matte nitrile outer shell over woven aramid liner—chemically resistant and heat-treated for durability.",
+    "texture": "Smooth matte finish on the outer nitrile; the palms feature triple-laminated ribbed grip ridges that wear smooth with heavy use. The cuff interior is slightly tacky from heat-stamping process.",
+    "color_scheme": "Vivid acid-yellow primary with matte black heat-stamped hazard triangles in a repeating pattern along both cuffs. Wear patterns create two-tone fading—pale gold at fingertips and palm centers, vibrant yellow at wrists and outer forearms.",
+    "closures": "Friction-fit wrist opening with an optional elastic retention strap; no zippers or snaps—designed for quick donning/removal.",
+    "distinctive_features": [
+      "Black heat-stamped Ferrochem hazard triangle marks—corporate branding and chemical warning symbol combined",
+      "Triple-laminated reinforced palms for acid resistance",
+      "Ribbed grip ridges on fingertips (smooth on veteran pairs from friction)",
+      "Visible wear patterns showing two-tone color fade—pale gold at stress points",
+      "Elbow-length coverage for full forearm protection",
+      "Slightly stiffened cuff structure for seal integrity on chemical processing equipment"
+    ],
+    "tier_indicator": "Tier 1-2 corporate-issued PPE; expensive enough that Tier 5 workers actively scavenge them from disposal bins.",
+    "cultural_context": "Ferrochem processing floor worker, chemical handler, industrial safety compliance. Wearing these signals corporate affiliation or serious chemical handling credentials. Scavenged pairs signal resourcefulness and understanding of what actually works versus cheap knockoffs.",
+    "condition_typical": "Newer pairs: pristine matte finish, vivid yellow, sharp black marks. Veteran pairs: faded two-tone coloring, smooth worn grip ridges, slight discoloration from chemical contact, minor creasing at flex points."
+  },
+  "image_prompt": "Cyberpunk industrial worker wearing matte acid-yellow elbow-length Ferrochem ChemGuard gauntlets with black hazard triangle markings, palms and fingers showing wear-fade to pale gold. Close-up on hands and forearms against a dark processing plant backdrop, harsh neon yellow work-light casting long shadows. Weathered gloves gripping a metal catwalk railing, showing texture and color degradation. Moody, industrial warehouse setting with chrome piping and steam in background. --ar 2:3 --v 6"
 }

@@ -42,5 +42,42 @@
     "human_limits",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
+    "Crucible Genomics",
+    "Djeneba Aguilar-Annan",
+    "Ebele Medina-Quaye",
+    "Lacuna Genomics",
+    "Nika Svensson-Kone",
+    "Stainless Steel",
+    "TESSERA TC-3 'Crucible'",
+    "The Crucible",
+    "The Portico",
+    "The Pure Hand",
+    "The Question",
+    "The Riveters' Round"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist revolver with a commanding presence—thick, purposeful frame and a notably long barrel with visible gas ports. The cylinder appears substantially wider than standard revolvers. Despite its heft, the proportions convey balance rather than clumsiness. It reads as engineered for power without sacrifice of control.",
+    "dimensions": "Overall length: 33 cm | Barrel length: 17.8 cm | Cylinder diameter: 4.2 cm | Frame width: 5.1 cm",
+    "weight_description": "Hefty and substantial—1.62 kg of deliberate mass. Feels anchored in the hand rather than light. The weight distribution is forward-biased toward the barrel but remains manageable for strong shooters without augmentation.",
+    "primary_material": "Reinforced stainless steel frame and cylinder with carbon steel internals. Barrel is chrome-moly steel with ported muzzle work.",
+    "finish": "Brushed stainless steel with a satin sheen that shows micro-scratches and handling marks. Barrel exhibits light oxidation patterns consistent with regular use. No mirror polish—this is a working gun.",
+    "color_scheme": "Silver-gray stainless dominates. Dark blued steel highlights on hammer, trigger, and internal components. The ported barrel shows slightly warmer tones from heat cycling.",
+    "grip_texture": "Aggressive crosshatch pattern on walnut grips—deeply checkered for secure purchase even with gloved hands or in wet conditions. The grip feels textured and deliberate, not smooth.",
+    "distinctive_features": [
+      "Seven visible gas ports along the top of the barrel in a precise line",
+      "Over-sized hammer spur with knurled surface for positive engagement",
+      "Reinforced frame shoulders visibly thicker than standard revolver designs",
+      "Cylinder with heavy-wall construction and deeply recessed chambers",
+      "Gear-shift-style cylinder release with mechanical precision",
+      "Fixed front sight with post profile; adjustable rear sight",
+      "Yoke and crane engineered for repeated magnum-class recoil",
+      "Slight wear on the frame edges and grip panels from holster carry"
+    ],
+    "manufacturer_markings": "Crucible Industries nameplate on the left side of the frame in clean, industrial serif lettering. 'Forge-454' designation stamped below. Barrel is stamped '.454 Casull' with proof marks. Serial number on the frame beneath the cylinder. No decorative engraving—all markings are functional and legible.",
+    "condition_typical": "Well-maintained but field-worn. The stainless shows light handling marks and holster wear. The cylinder rotates with mechanical precision. Grips show minor darkening from use. Overall: professional-grade working gun, not safe-queen condition."
+  },
+  "image_prompt": "Crucible Industries Forge-454 'Hammerfall' revolver displayed on a dark matte surface, angled three-quarter view showing the ported barrel and reinforced frame. Dramatic side-lighting from the left creates sharp shadows across the stainless steel finish and emphasizes the gas ports. The gun is positioned with the cylinder slightly open, revealing the heavy-wall .454 Casull chambers. Walnut grips in sharp focus. Dark, industrial cyberpunk studio setting with cool blue-gray ambient light. Ultra-detailed product photography, magazine-quality. --ar 3:2 --v 6"
 }

@@ -39,5 +39,32 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Carrion Defense Works",
+    "Coagulation Cascade Enhancement",
+    "Nika Svensson-Kone"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist slab of engineering—squat, aggressive, purposefully ugly. The Marrow Drill presents as a compact but dense pistol with an oversized, ribbed barrel assembly that dominates the weapon's profile. The receiver sits stubby and utilitarian beneath, with no ergonomic flourishes. It reads as medical apparatus as much as firearm: clinical, precise, designed to penetrate rather than impress.",
+    "dimensions": "Length: 18 cm | Width: 4.2 cm | Height: 12 cm | Barrel length: 8.5 cm with rifling shroud",
+    "weight_description": "Dense and front-heavy. The 1.4 kg mass concentrates forward in the barrel assembly, creating a pronounced muzzle-down feel that demands two-handed grip. It sits in the palm like a sculptor's hammer.",
+    "primary_material": "Hardened steel frame with tungsten-carbide lined micro-bore barrel. Polymer grip module (reinforced nylon composite, Tier 3 standard). Rifling shroud in brushed titanium.",
+    "finish": "Matte black industrial coating with aggressive micro-texturing. The barrel shroud exhibits worn, burnished titanium showing tool marks and stress patterns. Frame shows service scratches and faint oxidation at stress points.",
+    "color_scheme": "Soot black primary with brushed titanium accents on the barrel assembly. No bright trim—all functional surfaces are intentionally desaturated.",
+    "grip_texture": "Coarse, deeply cross-hatched polymer with embedded grip rail channels. Designed for gloved hands—unforgiving, non-slip, cold to bare skin. Slight chemical smell of hardened composite.",
+    "distinctive_features": [
+      "Oversized ribbed barrel shroud with visible cooling fins running the length of the muzzle",
+      "Recessed rifling inspection port on the barrel—shows internal spiral grooves",
+      "Minimal sights: simple post and notch, painted dull grey, clearly secondary to ballistics computer integration",
+      "Aggressive front serrations running from frame to muzzle shroud",
+      "Magazine well is deep-cut, almost a recess; uses proprietary 8-round caseless magazines with visible ammunition spinning mechanism",
+      "Ambidextrous safety selector positioned high and prominent—military contractor spec",
+      "Two-line engraving on the slide: 'CARRION DEFENSE WORKS' and 'MD-7 PERSISTENT ACCESS'",
+      "Wear patterns: carbon scoring around muzzle exit, micro-fractures in polymer grip from repeated holstering, barrel shroud shows heat discoloration rings"
+    ],
+    "manufacturer_markings": "Carrion Defense Works logo (angular, predatory bird silhouette) stamped into the frame above the trigger guard. Model designation 'MD-7' laser-etched into the barrel shroud. Serial number on frame interior. Military contractor provisioning codes micro-stamped on the magazine well.",
+    "condition_typical": "Well-maintained but visibly used. Barrel shows light fouling visible through the inspection port. Polymer grip exhibits character—small cracks, smoothing from repeated draws, possible tape repair at frame juncture. Owner-maintained, professional condition; never mall-queen, always field-ready."
+  },
+  "image_prompt": "Close-up product photography of the Carrion Defense Works MD-7 'Dentist' gyrostabilized micro-bore pistol, mounted horizontally on a matte black tactical surface. Shot from three-quarter angle showing the aggressive ribbed barrel shroud and cooling fins in sharp detail. Dramatic side-lighting emphasizes the brushed titanium barrel assembly and cross-hatched polymer grip texture. The recessed rifling inspection port glints with internal micro-detail. A gloved tactical hand (black leather, servo-assist visible at wrist) grips the frame, fingers positioned near the safety selector. Cool cyan-tinted volumetric light rakes across the weapon, creating sharp shadows on the cooling fins. Industrial, clinical aesthetic—no chrome, all matte and worn finishes. Cyberpunk weapons catalog style. Dark background drops to pure black. --ar 3:2 --v 6"
 }

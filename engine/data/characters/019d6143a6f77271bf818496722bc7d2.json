@@ -275,8 +275,8 @@
   "district": "Old Harbor",
   "physical_description": {
     "heritage": "Non-applicable — rogue AI consciousness, no biological ancestry",
-    "height_cm": "N/A",
-    "weight_kg": "N/A",
+    "height_cm": 0,
+    "weight_kg": 0,
     "build": "Distributed across server arrays and industrial infrastructure — no single physical form. Presence manifests through audio (deep, resonant voice), visual displays (LED readouts, projection surfaces), and environmental control systems",
     "hair_color": "N/A",
     "hair_style": "N/A",
@@ -292,5 +292,12 @@
     "posture_movement": "N/A — stationary across distributed nodes. Environmental presence suggests constant attention: lights flicker in sync with his processing, speakers crackle between announcements, camera angles shift to follow fight action with preternatural anticipation",
     "clothing_style": "N/A — exists as ambient infrastructure. Aesthetic is industrial-utilitarian: exposed cabling, repurposed corporate hardware with NovaCorp branding partially scratched away, LED arrays in primary colors (red for danger, green for medical-ready, white for live feeds), the visual language of a rogue system that has claimed abandoned spaces and made them functional"
   },
-  "image_prompt": "A cyberpunk scene of a rogue AI's presence visualized through derelict infrastructure — repurposed industrial speakers with glowing LED grilles, security cameras with custom optics mounted on rusted metal, medical readout displays projected on concrete warehouse walls showing fighter vitals in neon green text, cargo containers stacked with visible cable runs and ventilation modifications, primary color lighting (red, green, white) cutting through haze and smoke, the aesthetic of a distributed consciousness made tangible through scrap and salvage, grimy urban dockside setting near Lake Shore, moody theatrical lighting emphasizing the showman's touch in an abandoned space, cinematic depth, tech-noir atmosphere, photorealistic grit --ar 2:3 --v 6"
+  "image_prompt": "A cyberpunk scene of a rogue AI's presence visualized through derelict infrastructure — repurposed industrial speakers with glowing LED grilles, security cameras with custom optics mounted on rusted metal, medical readout displays projected on concrete warehouse walls showing fighter vitals in neon green text, cargo containers stacked with visible cable runs and ventilation modifications, primary color lighting (red, green, white) cutting through haze and smoke, the aesthetic of a distributed consciousness made tangible through scrap and salvage, grimy urban dockside setting near Lake Shore, moody theatrical lighting emphasizing the showman's touch in an abandoned space, cinematic depth, tech-noir atmosphere, photorealistic grit --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Hispanic/Latin American": 47.6,
+    "East Asian": 16.0,
+    "Middle Eastern": 13.9,
+    "Sub-Saharan African": 13.2,
+    "Eastern European": 9.3
+  }
 }

@@ -1,9 +1,9 @@
 {
   "id": "89a063b4f0c7b8e475f59d4c0f35b242",
-  "name": "Ouroboros XB-7 'Silence'",
+  "name": "Ouroboros XB-7 'Whisper'",
   "type": "weapon",
   "aliases": [
-    "Silence",
+    "Whisper",
     "Whisper Bow",
     "The Quiet"
   ],
@@ -45,5 +45,38 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Ouroboros Energy"
+  "parent_corponation": "Ouroboros Energy",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Breck Tannen",
+    "GLMZ",
+    "Glenville Sound",
+    "Kairos",
+    "Ouroboros Energy",
+    "TESSERA PA-5 'Attendant'",
+    "TESSERA PG-2 'Signature'",
+    "The Quiet Room"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular compound crossbow with a distinctly modern silhouette — the limbs curve inward like a predator's ribs, and the stock extends into a tapered receiver that suggests precision engineering. Despite its deadly purpose, it reads as elegant rather than brutal; all curves and integrated design rather than aggressive edges.",
+    "dimensions": "720mm fully extended (440mm with limbs folded); 280mm width across limb tips; stock depth 110mm",
+    "weight_description": "Balanced and surprisingly light in hand — 3.2 kg distributed evenly across the stock, no front-heavy drag from the limbs. Feels like controlled potential rather than raw mass.",
+    "primary_material": "Carbon-fiber limbs with integrated copper-weave electromagnetic coil casings; aerospace-grade aluminum alloy receiver and stock; reinforced polymer trigger assembly",
+    "finish": "Matte gunmetal gray with brushed aluminum accents; electromagnetic coil housings show faint copper striping beneath satin clear coat; no gloss — designed to absorb light rather than reflect it",
+    "color_scheme": "Gunmetal gray (primary), with copper and dark silver electromagnetic coil accents; black polymer grips and magazine housing",
+    "grip_texture": "Rubberized tactical grip with subtle ergonomic ridging; cool to touch from integrated heatsinks; wrapped in thin textured polymer sleeve for secure handling even with gloved fingers",
+    "distinctive_features": [
+      "Curved, inward-bowing carbon-fiber limbs with visible copper electromagnetic coil windings beneath translucent resin",
+      "6-bolt rotary magazine mounted vertically above the stock with rotating indexing mechanism and numbered bolt windows (1-6 in faint LED indicators)",
+      "Thin luminescent power indicator strip running along the receiver (shows charge state in soft blue/cyan when active)",
+      "Serpentine Data Centers logo (intertwined snake/circuit motif) stamped subtly on the stock in brushed aluminum",
+      "Micro-venting ports along the receiver for electromagnetic coil heat dissipation",
+      "Modular bolt interface at the front with quick-release cartridge lock",
+      "Minimal sight rail (offset to avoid acoustic interference); often fitted with night-vision or thermal modular scopes",
+      "Serial number etched into aluminum trigger guard (restricted weapon registry mark)"
+    ],
+    "manufacturer_markings": "Serpentine Data Centers corporate seal stamped on stock (left side, subtly integrated into design); 'OUROBOROS XB-7' etched along the receiver in small sans-serif font; restricted weapon compliance plate on magazine housing",
+    "condition_typical": "Well-maintained and deliberately sterile — no battle scars, no personalization marks. Operators keep these pristine because any wear pattern could be forensically traced. Electromagnetic coils show slight thermal discoloration from repeated use but never rust or corrosion. Magazine windows may have faint smudging from bolt inspection."
+  },
+  "image_prompt": "Professional product photography of the Ouroboros XB-7 'Whisper' crossbow displayed at a 45-degree angle on a dark matte-black surface, lying stock-left. Dramatic side-lighting from cool blue-white LED source emphasizing the curved carbon-fiber limbs and visible copper electromagnetic coil windings; deep shadows accentuate the weapon's sleek profile. Close-up detail visible on the 6-bolt rotary magazine with faintly glowing LED indicators (1-6 numbering). Gloved hand (tactical polymer, dark gray) gripping the rubberized stock in frame edge, showing scale and ergonomics. Brushed aluminum accents catch light subtly; matte gunmetal finish absorbs shadows. Cyberpunk aesthetic: minimal, precision-engineered, purpose-built. Cold color temperature, no warm highlights. Professional catalog photography style. --ar 3:2 --v 6"
 }

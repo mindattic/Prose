@@ -61,5 +61,26 @@
     "Vantablack VS-3 'Skin Job'",
     "Veslemøy Achebe-Tursynov",
     "Zheng-Dao Bioelectric Chemoreceptive Dermal Patch"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A heavily worn, purpose-built labor rig that reads as practical armor rather than fashion. The silhouette is blocky and utilitarian—broad-shouldered, reinforced at stress points, with visible patches and repairs creating an asymmetrical patchwork. The overall impression is of someone who works in hazardous conditions and trusts their gear with their life.",
+    "fit": "Relaxed and accommodating—cut for movement and layering, with extra room across the chest and shoulders for the compression base layer beneath. The boilersuit hangs straight from the hips, designed for function over form. The over-vest sits loose enough to be donned quickly.",
+    "primary_material": "Heavyweight Crucible surplus industrial canvas boilersuit (faded olive drab, stiffened by years of chemical exposure); reinforcement panels in rubberized canvas and industrial conveyor belting; quilted synthetic insulation in the over-vest; neoprene anti-friction lining; nylon back-support belt; waxed cord stitching",
+    "texture": "Rough, weathered, and tactilely complex—the primary fabric is stiffened and slightly brittle from repeated exposure to oils and sealants. The acid-shield patch has a raised, cracked adhesive ridge. Conveyor belting section is textured rubber. Chrome channel lining is smooth neoprene. Quilting in the vest creates a padded, slightly rumpled surface.",
+    "color_scheme": "Dominant faded olive drab boilersuit; charcoal gray acid-shield patch with topographic adhesive ridging; black quilted over-vest; gray compression underlayer visible at openings; steel gray half-mask respirator; waxed cord stitching in three colors (pale tan, rust, dark brown)",
+    "closures": "Industrial snaps on the over-vest (two mismatched replacements evident); boilersuit appears to be standard front zip (worn and possibly seized); belt is buckle-fastened; boots laced with waxed cord",
+    "distinctive_features": [
+      "Left shoulder cut away and fitted with chrome-compatible open channel (lined with neoprene) for partial arm augmentation",
+      "Large rectangular acid-shield patch on chest with cracked, re-applied adhesive bead forming visible ridges",
+      "Right knee reinforced with rubberized canvas; left knee reinforced with riveted industrial conveyor belting",
+      "Boots with triple-resoled uppers, steel plate toe box, and multi-colored waxed cord seam repairs",
+      "Half-mask respirator worn around neck, filter cartridge visibly aged with hand-scratched date marking",
+      "Wide reinforced nylon back-support belt",
+      "Visible compression gray spandex-blend underlayer at neck, cuffs, and aug channel opening"
+    ],
+    "tier_indicator": "Tier 4–5 salvage and working class. The garment is genuine industrial surplus and self-maintained, not aspirational. Every repair is visible and functional rather than aesthetic.",
+    "cultural_context": "Shelf hauler, heavy industrial labor, corrosive-environment worker. Wearing this signals someone who works in the GLMZ's ungoverned industrial zones—possibly a independent contractor or sub-grade laborer in chemical processing, scrap reclamation, or infrastructure maintenance. The augmentation channel indicates integration into corpo-adjacent work without corpo resources.",
+    "condition_typical": "Chronically weathered and patched. The garment is in active heavy use, repaired the same night it tears, washed infrequently due to water scarcity. Every visible panel tells a story of damage and repair. Not pristine, not collapsing—functional and hardened."
+  },
+  "image_prompt": "Cyberpunk fashion photography of a weathered industrial worker in full Ironthread Shelf Hauler's kit: faded olive drab boilersuit with charcoal gray acid-shield chest patch (raised adhesive ridging visible), left shoulder cut away to expose chrome-compatible neoprene channel, reinforced knees in mismatched canvas and riveted conveyor belting, triple-resoled boots with steel toe, quilted black over-vest with mismatched snaps, gray compression underlayer visible at openings, wide nylon back-support belt, half-mask respirator hanging at neck with aged filter cartridge. Model or mannequin posed in moody industrial setting—dim warehouse lighting, oil-stained concrete floor, shadows from chain-link fencing or structural steel, slight cyan-amber color grade to suggest acid-rain weathering. Capture the tactile damage and repair—every patch, stitch, and replacement visible. Dark, grimy atmosphere. Cyberpunk worker aesthetic, post-industrial. --ar 2:3 --v 6"
 }

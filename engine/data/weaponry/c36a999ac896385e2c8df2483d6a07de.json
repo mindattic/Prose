@@ -43,5 +43,39 @@
     "adaptable",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Brecken Yılmaz-Osei",
+    "Nika Svensson-Kone",
+    "Sagyn Padilla-Nti",
+    "Slagworks Industrial",
+    "Street Custom 'Widowmaker' Rigged Power Tool",
+    "TESSERA TC-3 'Crucible'",
+    "Tenzin Popov-Adjei",
+    "The Crucible",
+    "Volkov-Saito Precision VS-R8 'Verdict'"
+  ],
+  "physical_description": {
+    "visual_profile": "A purposeful, utilitarian combat shotgun with a distinctly modular architecture. The Tempest-12 presents as a sleek, purpose-built platform rather than a traditional hunting gun—its lines are clean and industrial, with visible quick-swap mechanical interfaces along the barrel and stock junction. The extended tube magazine extends noticeably beneath the forearm, creating a balanced mass distribution that suggests serious fieldwork capacity.",
+    "dimensions": "Overall length: 94-108 cm (stock dependent). Barrel length: 51 cm with interchangeable choke housing. Tube magazine: 25 cm. Width at receiver: 7.2 cm.",
+    "weight_description": "Substantial but balanced—3.5 kg feels purposefully distributed rather than front-heavy, despite the extended magazine. Hefty enough to absorb recoil, light enough for sustained tactical movement. The weight settles comfortably in the hand rather than pulling downward.",
+    "primary_material": "Hardened steel receiver and barrel. Polymer furniture (stock, grip panels, handguard). Aluminum alloy choke housing with stainless steel quick-change threads. Magazine tube: chrome-lined steel.",
+    "finish": "Matte black receiver with brushed steel barrel. The choke housing has a subtle satin finish with precision-cut threading marks visible near the muzzle. Polymer components show a textured, non-reflective matte black. Wear patterns visible on control surfaces—thumb safety, charging handle, magazine tube release.",
+    "color_scheme": "Primary: matte black receiver and polymer. Accent: brushed steel barrel, polished aluminum choke collar, Crucible Industries red accent stripe along the tube magazine (thin, corporate branding).",
+    "grip_texture": "Rubberized polymer with aggressive checkering on both the pistol grip and handguard. The safety lever and charging handle feature textured polymer overlays. Stock furniture (when attached) uses contoured grip panels with reinforced finger grooves.",
+    "distinctive_features": [
+      "Hexagonal quick-change choke housing at muzzle—three different choke tubes visible in typical field kit",
+      "Modular stock receiver with color-coded quick-release lugs (red indicators for locked position)",
+      "Oversized charging handle with integrated cocking indicator",
+      "Extended tube magazine with witness holes showing round count at 2-round intervals",
+      "Picatinny rail section above receiver for mounting optics or iron sights",
+      "Aggressive venting ports along handguard to manage heat signature",
+      "Mechanical safety lever with tactile detents (safe/fire positions clearly defined)",
+      "Serial plate on left side of receiver with Crucible logo stamped in relief"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES logo stamped on the receiver side plate in bold sans-serif. 'TEMPEST-12' marked in smaller font below the logo. Serial number and manufacturing date code (GLMZ facility stamp) etched on the barrel. Choke tube housings individually marked (CYL, MOD, FULL) with laser-cut indicators.",
+    "condition_typical": "Field weapons show minor scuffing on receiver edges and handguard. Stock conversion hinges may show wear polish from repeated swaps. Barrel exhibits light carbon residue near the muzzle (post-fire appearance). Magazines typically show minor pressure marks from repeated loading. Well-maintained examples appear combat-ready but clearly used."
+  },
+  "image_prompt": "Product photography of the Crucible Industries Tempest-12 'Widowmaker' shotgun. Weapon positioned at 45-degree angle on a dark gunmetal surface, three interchangeable choke tubes arranged beside the muzzle. Shot with dramatic side-lighting from upper left, casting sharp shadows across the receiver and highlighting the matte black finish and brushed steel barrel. Gloved hand (tactical polymer glove, fingers visible on grip) steadying the weapon from below. Close-up detail of the quick-change choke housing and modular stock receiver visible. Warm amber and cool blue lighting contrast emphasizing the industrial cyberpunk aesthetic. High-resolution texture detail on rubberized grip and aluminum components. Shallow depth of field with serial markings subtly visible. Professional studio lighting, 2226 GLMZ tactical weapon catalog style --ar 3:2 --v 6"
 }

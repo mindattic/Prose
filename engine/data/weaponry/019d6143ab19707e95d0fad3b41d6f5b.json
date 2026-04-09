@@ -55,5 +55,43 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Inoue-Aidoo",
+    "Arcturus Defense Solutions EL-9 'Heron'",
+    "Arcturus HX-1 'Headsman'",
+    "Ekundayo Vásárhelyi-Nkemdirim",
+    "GLMZ",
+    "Helix Biosystems",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Irontide Tidal Energy",
+    "Kadiatou Bergstrom-Konate",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "PulsePoint ThermoLayer Thermal Regulation Implant",
+    "TESSERA PG-2 'Signature'",
+    "Tessera TAR-12 'Consensus'",
+    "The Calumet Sink",
+    "Xochitl Adaeze Velarde-Okeke"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, organic-looking lance with a tapered profile that suggests biological rather than mechanical engineering. The shaft has a subtle helical twist visible along its length, and the tip comes to a precise, almost surgical point. The overall impression is of a medical instrument that happens to be lethally sharp—clinical and purposeful rather than brutish.",
+    "dimensions": "90 cm total length; 2.2 cm shaft diameter at grip, tapering to 0.8 cm at tip; grip section 15 cm",
+    "weight_description": "Deceptively light—1.4 kg distributed evenly along the shaft creates excellent balance. Feels almost weightless in motion but carries substantial presence due to its rigidity and the subtle vibration of the induction coil when powered.",
+    "primary_material": "Carbon-fiber spine wrapped in layered PZT piezoelectric crystal stacks; visible translucent crystalline layers along the shaft with a semi-flexible polymer sheath binding them",
+    "finish": "Matte charcoal with an iridescent blue-violet sheen across the crystal layers that shifts in light; the tip is polished to a mirror finish for conductivity",
+    "color_scheme": "Charcoal gray body with deep iridescent blue-purple crystal layers; grip section in black synthetic with silver accent trim; subtle bioluminescent cyan capacitor indicator running along the shaft's spine",
+    "grip_texture": "Textured black synthetic polymer with microscopic conductive threading woven through; slightly tacky, designed for secure contact even with sweat or augmentation fluid; subtle ridges provide feedback during the drain cycle",
+    "distinctive_features": [
+      "Helical twist pattern visible along crystal layers—not decorative, but the physical manifestation of the induction coil spiral",
+      "Bioluminescent charge indicator strip running 8 cm up from the grip, glowing cyan when capacitor is charging, shifting to amber at 75% charge, bright white when fully charged",
+      "Microscopic etched grid pattern around the tip—conductivity enhancement matrix",
+      "Three small sensor ports (1 cm diameter) spaced along the upper shaft—diagnostic readouts for HELIX service technicians, repurposed for visual feedback by operators",
+      "Faint residual corona effect visible around the tip when charged—barely perceptible shimmer in dark conditions",
+      "Wear patterns around the tip and lower shaft from sustained contact with targets—micro-scarring in the polymer sheath",
+      "Grip section has a subtle swell at the pommel end (3 cm sphere) for counterbalance and to house part of the capacitor bank"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo (stylized double helix) etched into the pommel in silver; regulatory classification plate (15 mm × 8 mm) adhesive-mounted 5 cm below the grip reading 'CLASS II BIOELECTRIC DIAGNOSTIC INSTRUMENT BB-2291'; small serial number laser-burned into the shaft 20 cm from the tip",
+    "condition_typical": "Well-maintained examples show minimal wear; heavy-use variants display micro-fractures in the outer polymer sheath (easily repairable), scuffing around the tip from repeated contact, and faint burn marks where the capacitor has discharged. The indicator strip may be dimmed or flickering in neglected units. Black market variants sometimes have removed or defaced HELIX markings."
+  },
+  "image_prompt": "Product photograph of the Bioelectric Induction Lance BIL-3 'Lamprey' laid diagonally across a matte black brushed steel surface, angled to catch dramatic side-lighting from the left. The light emphasizes the helical crystal layers running along the shaft, creating prismatic blue-violet refractions. The polished tip gleams with surgical precision. A gloved hand (augmented with visible silver circuitry at the wrist) grips the textured polymer section, showing the tactile detail. The bioluminescent charge indicator on the shaft glows a soft cyan-white, suggesting dormant readiness. Cinematic cyberpunk lighting with cool color temperature, subtle corona shimmer around the tip, shallow depth of field with the grip in sharp focus and the tip slightly blurred. Dark reflections on the steel surface. Product photography style with technical precision. --ar 3:2 --v 6"
 }

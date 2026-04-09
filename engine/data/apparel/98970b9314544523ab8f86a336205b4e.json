@@ -40,5 +40,25 @@
     "The Question",
     "The Quiet Room",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, architectural two-piece suit that seems to absorb and reproject its surroundings in a subtle, phase-shifted manner. The silhouette is impeccably tailored—sharp shoulders, clean lines, almost liquid drape—but the fabric itself appears to shimmer and shift with delayed environmental reflection, creating an uncanny sense that the wearer is partially transparent or phase-displaced from the room around them.",
+    "fit": "Perfect, adaptive compression. The suit reads micro-movements and adjusts tension across the entire garment through embedded microfilaments. It moves as if bonded to skin without any visible strain, bunching, or excess fabric. The fit shifts fluidly with posture and breathing.",
+    "primary_material": "Solenne mirrorweave—proprietary photonic thread structure blended with high-grade synthetic base. The weave is dense enough to hold shape but light enough to move like liquid.",
+    "texture": "Smooth to touch with an almost imperceptible shimmer. The surface has a soft luster rather than high gloss. Up close, the photonic threads catch light in subtle iridescent patterns. Seams are invisible or integrated into the fabric's weave pattern.",
+    "color_scheme": "Adaptive. The base suit reads as charcoal or deep navy depending on viewing angle, but the mirrorweave effect overlays shifted reflections of the immediate environment—walls, light sources, other people—creating a ghostly, abstracted echo of surroundings. The effect can be tuned from subtle (barely perceptible) to disorienting (clearly artificial).",
+    "closures": "Magnetic snaps concealed within the fabric, possibly supplemented by friction-fit layering. No visible zippers or hardware. Closure is seamless and silent.",
+    "distinctive_features": [
+      "Mirrorweave photonic threading creating delayed environmental reflection effect",
+      "Distributed microfilament network in lining providing real-time fit adjustment",
+      "BCI-responsive controls for color temperature and reflection intensity",
+      "Invisible or fully integrated seams and closures",
+      "Bespoke tailoring to individual body and augment configuration",
+      "Lifetime alteration guarantee implies structural durability far beyond standard formal wear"
+    ],
+    "tier_indicator": "Tier 1 luxury—absolute top tier. Sub-tier 4-5 buyers are ultra-wealthy or culturally significant. Fewer than 40 produced annually.",
+    "cultural_context": "Worn by those who have transcended traditional status signaling. The suit is a declaration of arrival at the point where visibility becomes a choice rather than a necessity. In Tier 5 circles, it signals curation over competition. Paradoxically, it's both maximally present and maximally absent—a performance of erasure that is itself impossible to ignore.",
+    "condition_typical": "Always pristine. Lifetime alterations and 10-year structural warranty mean a Solenne suit is never weathered or patched. Even aged Solenne pieces appear new, maintained obsessively by owners who understand the garment as an investment and argument simultaneously."
+  },
+  "image_prompt": "A cyberpunk fashion photograph of a bespoke Solenne Mirrorweave Spire Gala Suit on an ethereal model with subtle augmentation—perhaps a faintly luminescent temple graft or optical implant. The suit appears to be wearing the architecture around it: the walls, city lights, and background environment are subtly reflected and phase-shifted across the fabric surface, creating a ghostly, displaced echo effect. The lighting is cool and moody, neon-tinged, with volumetric light cutting through a dark gallery or corporate atrium. The suit fits perfectly, moving as if bonded to skin. The mirrorweave effect is active but refined—visible to the trained eye but not aggressively obvious. The overall impression is of a figure caught between presence and absence, simultaneously the most visible person in the room and the least. Shot against a dark, reflective backdrop with urban architecture or high-end interior design visible in the negative space. --ar 2:3 --v 6"
 }

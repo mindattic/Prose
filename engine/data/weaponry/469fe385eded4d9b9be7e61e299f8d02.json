@@ -43,5 +43,39 @@
     "arcturus",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Brecken Yılmaz-Osei",
+    "Kairos",
+    "Nenad Vargas-Baffour",
+    "Nika Svensson-Kone",
+    "Tessera TK-20 Apex 'Mandate'",
+    "The Quiet Room",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
+    "Zheng-Dao Bioelectric Neural Cipher Bridge"
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately understated compact pistol with a razor-thin slide and absence of aggressive styling. The Diplomat's entire design language whispers rather than shouts—no tactical rails, no external safeties, no pronounced controls. Its silhouette resembles a dress watch translated into steel and polymer. The weapon's subtlety is its defining characteristic.",
+    "dimensions": "178mm length, 32mm width, 128mm height. Barrel: 89mm",
+    "weight_description": "Surprisingly light at 0.62kg—lighter than a full drink glass. Feels balanced between thumb and forefinger, designed for one-handed manipulation even in formal wear or confined spaces. Never feels ungainly or front-heavy despite its precision internals.",
+    "primary_material": "Aerospace-grade aluminum alloy frame with carbon-composite slide. Internal components utilize hardened steel with ceramic wear surfaces for BCI sensor integration.",
+    "finish": "Matte gray with near-invisible brushed texturing that defeats both light reflection and fingerprinting. The finish is so subtle it appears to absorb light rather than deflect it. No shine, no shine whatsoever—deliberately designed to disappear against any environment.",
+    "color_scheme": "Dove gray primary with minimal accent work. Ultra-subtle graphite inlays along the slide serrations. No logos visible from more than arm's length.",
+    "grip_texture": "Micro-dimpled polymer with embedded conductive tracery for BCI hand-positioning feedback. The texture is almost imperceptible—feels like holding slightly textured ceramic rather than traditional grip tape. Warm to the touch due to integrated biometric sensors.",
+    "distinctive_features": [
+      "Recessed, flush-mount rear sights that sit level with the slide",
+      "Absence of an external safety mechanism (BCI-managed)",
+      "Minimal trigger guard geometry—designed for gloved operation",
+      "Barely-visible neural interface port beneath the trigger housing",
+      "Integrated biometric sensor array along the grip",
+      "Subdued slide serrations that catch no light",
+      "Magazine well milled to exact tolerance with zero play",
+      "Witness holes showing round count on magazine",
+      "Custom contoured grip angle optimized for 92% accuracy scenario"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (a minimal constellation pattern) etched into the left frame, visible only under direct inspection. Model designation 'ARC-SLP' stamped discretely on the right slide. Serial number on the frame, not the slide. No other branding—registration is entirely BCI-linked.",
+    "condition_typical": "Immaculate. The Diplomat is religiously maintained by professional operators. Any visible wear is cosmetic—minor slide racking marks, the matte finish developing a barely-perceptible patina from handling. Well-maintained examples appear virtually unused because they see infrequent deployment. When fired, the weapon operates with surgical precision."
+  },
+  "image_prompt": "Product photography of the Arcturus ARC-SLP 'Diplomat' compact pistol in matte gray, displayed at three-quarter angle on a dark gunmetal surface under dramatic side-lighting that emphasizes its minimalist profile and lack of reflective surfaces. The gun rests next to a formal dress glove (white or charcoal) to establish scale and context. Soft shadows define its thin slide and recessed controls without harsh highlights. Close-up detail showing the barely-visible neural interface port beneath the trigger. Cyberpunk aesthetic with cool color temperature, muted blues and grays, subtle technical overlays suggesting BCI integration. The lighting should reveal the gun's designed-for-invisibility aesthetic—a weapon that seems to recede even when fully visible. Executive protection context implied. Professional product photography with extreme attention to detail. --ar 3:2 --v 6"
 }

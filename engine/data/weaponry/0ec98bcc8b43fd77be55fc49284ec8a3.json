@@ -41,5 +41,34 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "GLMZ",
+    "Idris Forsberg-Quaye",
+    "Nika Svensson-Kone",
+    "Slagworks Industrial",
+    "SynapTech Prism AR Personal Neural Interface"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular directed energy rifle with a distinctive prismatic aesthetic. The weapon features a long, tapered barrel with visible internal optical arrays that hint at its multi-frequency capability. The overall silhouette is aggressive and purposeful — a sniper's profile married to sci-fi energy weapon design. Crystal-like lens arrays are visible along the barrel housing.",
+    "dimensions": "127 cm length, 8 cm width at widest point (barrel assembly), 6.5 cm grip diameter. Barrel section spans 71 cm with stepped optical focusing chambers",
+    "weight_description": "Substantial but well-balanced at 6.4 kg — hefty enough to convey serious weaponry, but ergonomically distributed for sustained aim. The weight settles naturally in the shoulder",
+    "primary_material": "Titanium-aluminum composite frame with reinforced polycarbonate lens housings and carbon-fiber barrel shroud",
+    "finish": "Matte gunmetal gray body with iridescent prismatic coating on optical components that subtly shifts through spectral colors under light. Strategic brushed chrome accents at junction points",
+    "color_scheme": "Gunmetal gray primary with pearl-white optical housings, accented by faint iridescent rainbow flecks visible in the lens arrays and a deep indigo grip section",
+    "grip_texture": "Textured non-slip polymer with integrated cooling channels — slightly warm to touch even unpowered. Subtle grip serrations for augmented and biological hands alike",
+    "distinctive_features": [
+      "Multi-chambered optical barrel with visible prismatic lens stacks",
+      "Stepped focusing array creating a geometric stepped-cone profile",
+      "Subtle LED power indicators running along the top rail in cool blue",
+      "Heat dissipation vents arranged in geometric patterns along the handguard",
+      "Polychromatic lens array at barrel tip that shifts color when charged",
+      "Field charging port with crystalline contact points",
+      "Integrated capacitor housing visible through semi-transparent side panel"
+    ],
+    "manufacturer_markings": "Embossed 'STERLING-NAKAMURA' across the receiver in sans-serif font, model designation 'SN-15' stamped on the barrel shroud. Serial plate mounted on the left side with holographic security seal. Regulatory licensing mark etched below charging port",
+    "condition_typical": "Maintained to exacting standards by Tier 4 operators — pristine optics, minimal battle wear, occasional scorching around muzzle from multi-spectrum discharge. Professional-grade fielded condition with meticulous upkeep"
+  },
+  "image_prompt": "Sterling-Nakamura Photonic Disruptor SN-15 rifle photographed against a reflective dark composite surface, weapon angled at 45 degrees. Dramatic side-lighting in cool blue and violet tones, highlighting the prismatic optical lens arrays along the barrel with subtle rainbow refractions. Show the geometric focusing chambers and heat vent details. Professional product photography with shallow depth of field, emphasizing the crystalline lens housings and polychromatic potential. Cyberpunk aesthetic, GLMZ industrial style, titanium-composite finish with iridescent accents catching light. Suggest the weapon is charged and ready, with subtle blue LED indicators visible. --ar 3:2 --v 6"
 }

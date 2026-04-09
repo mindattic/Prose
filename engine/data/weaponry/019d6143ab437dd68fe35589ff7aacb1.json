@@ -40,5 +40,31 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus VMG-4 'Turret'",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA PG-2 'Signature'",
+    "Vespid Dynamics Shrike Autonomous Turret SAT-2"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact disc-shaped tactical emitter with a low-profile industrial design. The top surface features a subtle lens array arranged in a concentric pattern around a central optic dome. Minimal external controls, designed for rapid deployment and concealment.",
+    "dimensions": "8 cm diameter × 3.2 cm height. Lens array spans 6 cm across the top surface.",
+    "weight_description": "Remarkably light — feels almost insubstantial in the palm, belying its sophisticated internals. Balanced for throwing or placement without fatigue.",
+    "primary_material": "Aerospace-grade polymer composite frame with embedded graphene heat-dissipation matrix. Optical crown machined from synthetic sapphire.",
+    "finish": "Matte gunmetal polymer body with brushed titanium accent ring around the lens assembly. Anti-reflective coating on optics creates a faint purple-tinted sheen under direct light.",
+    "color_scheme": "Charcoal gray primary with brushed silver accent ring. Lens crown appears deep indigo under illumination.",
+    "grip_texture": "Textured polymer with subtle radial grip channels molded into the sides for secure single-hand throws. Cool to the touch.",
+    "distinctive_features": [
+      "Concentric lens array with 7 micro-emitter nodes arranged in circular pattern",
+      "Central sapphire optic dome with faint internal glow during operation",
+      "Recessed power indicator — single RGB status LED barely visible at 2 o'clock position",
+      "Thermal vent micro-slots along the bottom rim (thermal signature simulation heat dissipation)",
+      "Barely-visible acoustic speaker grille on underside",
+      "Proprietary quick-deploy attachment lug at base for drone integration"
+    ],
+    "manufacturer_markings": "STERLING-NAKAMURA logo (interlocking S-N monogram) laser-etched on one side of the accent ring. Tiny serial plate (2mm × 4mm) mounted below the power indicator. Minimal text — just model 'HDP-3' and manufacture date code.",
+    "condition_typical": "Field units show subtle wear — minor scuff marks on the grip channels, faint burn marks around the thermal vents from repeated deployment cycles, occasional discoloration of the polymer from dust and thermal cycling. Lenses remain pristine (sapphire is scratch-resistant)."
+  },
+  "image_prompt": "Overhead and three-quarter product photography of a Sterling-Nakamura HDP-3 Mirage holographic projector. Disc-shaped tactical emitter with concentric lens array on dark matte black surface. Dramatic side-lighting from upper left reveals brushed titanium accent ring and lens crown with subtle purple-blue optical sheen. Recessed RGB status indicator glows faint amber. Shot from directly above and angled to show lens detail and thermal vent micro-slots on rim. Cyberpunk tactical aesthetic, military precision hardware, shallow depth of field isolating the device. Cold color temperature, moody sci-fi mood. High-resolution detail photography. --ar 3:2 --v 6"
 }

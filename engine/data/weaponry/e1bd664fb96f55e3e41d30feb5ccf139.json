@@ -42,5 +42,35 @@
     "poverty",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Eshe Pena-Baah",
+    "GLMZ",
+    "Glenville Sound",
+    "Ilhan Sandstrom-Badu",
+    "NeuralPath Conduit Everyday Neural Mesh",
+    "Patient Zero",
+    "TESSERA PG-2 'Signature'",
+    "The Fathom Line"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally simple cylinder of dull steel pipe, roughly 40-60cm long, with visible end caps welded or threaded shut. The weight is immediately apparent in its density and the slight sag it creates when held. No ergonomics, no pretense—just industrial material repurposed into violence.",
+    "dimensions": "Length: 40-60 cm (typically 50 cm), Outer diameter: 3-5 cm, Wall thickness: ~3mm",
+    "weight_description": "Hefty and unbalanced toward the weighted end. The 2-4 kg mass creates a pronounced gravitational pull downward, requiring conscious control to manage. Swinging feels like moving through resistance—slow to start, devastating once momentum builds.",
+    "primary_material": "Seamless or welded industrial steel pipe, typically Schedule 40. End caps are either welded steel discs or threaded iron pipe fittings. Interior packed with lead shot, steel ball bearings, or concrete slurry.",
+    "finish": "Oxidized matte black with rust bloom in stress areas. Welded seams show discoloration and scale marks from the cutting torch. Patina of handling: fingerprint oils, small dents from impacts and careless storage.",
+    "color_scheme": "Gunmetal gray to deep rust-black. Welded end caps may show brighter steel where recently sealed. Occasional streaks of reddish oxidation along the length.",
+    "grip_texture": "Bare steel pipe—cold, slightly oily, with a light grip texture from manufacturing. Some field versions wrapped in salvaged leather strips, cord, or cloth tape for retention and minor comfort. Bare grip is intentionally unpleasant: sweat and calluses bond to cold metal.",
+    "distinctive_features": [
+      "Welded or threaded end caps, slightly proud of the pipe diameter",
+      "Audible slosh or rattle of internal fill material when shaken",
+      "Stress marks and micro-fractures around the weld zone where caps meet pipe",
+      "Occasional etching or crude initials scratched into the surface",
+      "Wear polishing on the striking end from repeated impacts",
+      "Wrist loop of paracord or leather threaded through drilled holes near the non-striking end"
+    ],
+    "manufacturer_markings": "None. Original pipe may have faded mill markings or lot stamps, barely visible under the patina. No serial number. Self-made variants sometimes bear owner's initials gouged or burned into the grip area.",
+    "condition_typical": "Field-worn and utilitarian. Cosmetic damage from use and storage is the default state. Battle-scarred examples show denting and impact deformation that paradoxically makes them more menacing—visible evidence of the weapon's work."
+  },
+  "image_prompt": "Midjourney product photography of a crude steel pipe weapon, 50cm length, resting on a dark matte surface against a black backdrop. Dramatic side-lighting from a single hard light source reveals the oxidized steel finish, welded end caps, and faint internal weight distribution shadows. A gloved hand (chrome-lined tactical glove, worn leather) grips the pipe near the non-striking end, showing the brutal simplicity of the design. Shallow depth of field blurs the background. Cyberpunk aesthetics: gritty, industrial, lower-tier GLMZ. Visible imperfections: rust bloom, welding scale, micro-fractures. No branding. Cinematic lighting reveals the sinister utility of the object. --ar 3:2 --v 6"
 }

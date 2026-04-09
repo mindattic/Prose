@@ -64,5 +64,28 @@
     "The Shelf",
     "The Underlayer Collective",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately anonymous, urban sentinel silhouette. The layered set creates a streamlined, almost formless profile in shades of black, charcoal, and muted olive — designed to dissolve into industrial shadows. The reinforced hood and cropped jacket suggest someone built for function over presence. Block artist sigil on the back reads as street-credentialed territory marker.",
+    "fit": "Slim through the core with intentional slack at shoulders for movement freedom. The cropped jacket sits at hip with relaxed sleeves; hood constructed to sit flat against the head without puffing. Tactical trousers taper gently to the ankles, allowing clear lines to the boots. Compression-adjacent through the thermal layer, but the mid and outer layers add just enough volume to move in.",
+    "primary_material": "Matte black synthetic thermal base; deep charcoal fleece mid-layer; matte dark olive ballistic ripstop outer jacket. Black rubber-composite boots. Gray neoprene-hybrid neck gaiter. Heat-sealed seams and adhesive patches throughout.",
+    "texture": "Thermal layer smooth and thin; fleece slightly napped and insulating; ripstop with tight-weave industrial texture. Visible heat-bond tape edges on the cropped hem create subtle ridged lines. Boot soles worn smooth with tactile adhesive grip strips. Raw cut edges on jacket reinforce the salvage aesthetic.",
+    "color_scheme": "Foundation of pure matte black throughout (thermal, boots, gaiter). Mid-layer in deep charcoal (fleece). Outer layer muted olive drab (ripstop). Accent: rust-orange block artist sigil on back panel. Emergency reflective tape hidden in kangaroo pocket (silver-white). Subtle wear-fading on trousers creates shadow-line patterns.",
+    "closures": "Hoodie: standard drawcord with metal aglets; kangaroo pocket secured with interior elastic loop dividers. Jacket: friction-fit cropped cut with no closures by design; central back channel uses snap-flap access for aug-rig compatibility. Neck gaiter: worn loose, no fasteners. Trousers: likely magnetic snap or friction waistband (not specified, assumed standard tactical). Boots: adhesive grip-strip application, lug-sole wear.",
+    "distinctive_features": [
+      "Wire-reinforced hood brim salvaged from hard hat — maintains shape without collar pull",
+      "Kangaroo pocket subdivided with sewn-in elastic loops for small tools (flashlight, multi-tool stored ready)",
+      "Double-layer knee patches with iron-on rubber application — shows tactical wear prep",
+      "Cropped jacket with raw edge sealed via heat-bond tape — visible industrial modification",
+      "Central back channel with snap-flap closures for spinal rig augmentation compatibility",
+      "Neoprene cuff replacements on thermal layer secured with seam tape — extended lifespan hack",
+      "Rust-orange block sigil stencil on back panel — territorial/rotation marker by local artist",
+      "Retreaded boot soles with adhesive grip strips on ball-of-foot for silent grating movement",
+      "Neck gaiter doubling as emergency face cover — quick deployment design"
+    ],
+    "tier_indicator": "Tier 5 salvage-core, with intentional Tier 3 functional workwear baseline. The modifications and street-artist sigil signal sub-grade territory identification, but the preserved functionality suggests someone operating with discipline and resources (tools, adhesives, contact with local artists). Not luxe, not corporate — this is earned street credibility through careful maintenance of hand-me-down kit.",
+    "cultural_context": "Wears as: Shelf block watcher, industrial maintenance or cargo handler, possibly informal security or territorial infrastructure guardian. The aug-rig compatibility suggests ongoing relationship with subcutaneous or frame mods (Tier 5 typical). The sigil marks tribal affiliation to a specific Shelf rotation. Silent movement on metal grating + tool loop prep = someone who works in the cold dark corridors between megastructures. Not trying to be seen; trying to be functional and unremembered.",
+    "condition_typical": "Deliberately worn and patched, but meticulously maintained. Boots are retreaded (not replaced), indicating resourcefulness. Seams are sealed, cuffs replaced, patches iron-on secure. The raw-cut jacket edge and heat-bond tape are *intentional* design choices, not damage. Overall impression: broken-in and well-loved by someone who knows every pocket, every grip surface, every modification they made themselves."
+  },
+  "image_prompt": "A lean cyberpunk sentinel in layered blacks and muted olive, standing three-quarter profile in a dim industrial corridor lined with corrugated metal. Thermal layer visible at wrists; charcoal fleece hood fits snug against the head with reinforced wire brim holding its shape. Cropped jacket sits at hip with raw heat-sealed edges catching pale overhead light. Rust-colored geometric sigil is faintly visible on the back panel. Neck gaiter loose around throat. Tactical trousers fade to matte black boots with worn tread and visible adhesive grip strips on the soles. One hand rests on the kangaroo pocket, suggesting access to tools. Moody blue-gray ambient light from high industrial fixtures; wet metal grating reflects pale light at floor level. Background blurs into stacked cargo containers and shadow. The figure reads as deliberate, territorial, built for cold and silence. --ar 2:3 --v 6"
 }

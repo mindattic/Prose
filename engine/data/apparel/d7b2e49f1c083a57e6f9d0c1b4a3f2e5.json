@@ -47,5 +47,25 @@
     "LifeWire LumiFace Bioluminescent Subdermal Accent",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleeveless, body-hugging shell jacket with an aggressive, avant-garde silhouette. At rest, appears as a matte black second skin; under sound frequencies above 60Hz, the surface ignites with violet-to-amber pulse patterns that cascade across the torso and shoulders. The outer surface is segmented into overlapping laser-cut scales that shimmer and vibrate independently in loud environments, creating a hypnotic ripple effect. Interior lining glows cyan beneath the scales, visible at movement and between beats.",
+    "fit": "Compression-fit through the torso, deliberately tailored to accommodate spinal augmentation rigs and neural port clusters at the neck. Sleeveless with form-fitting armholes. Sits snug against the body without restricting movement or interfering with back-mounted tech.",
+    "primary_material": "Sound-reactive photochromic synth-weave outer layer with laser-cut scale paneling; bioluminescent mesh interior lining (cyan phosphorescent polymer); haptic-sensitive synthetic casing at wrist cuffs",
+    "texture": "Smooth, almost liquid-like outer surface at rest with segmented ridges from the overlapping scales. Under vibration, the scales create a rippling, almost organic texture. Inner lining is soft mesh with subtle grid pattern from bioluminescent thread weaving.",
+    "color_scheme": "Matte black base with violet-to-amber gradient pulse patterns (triggered by sound). Cyan bioluminescent interior visible through gaps and at sleeve openings. Black scale segments with subtle iridescent edges catching light.",
+    "closures": "No traditional closures — friction-fit compression design with optional haptic-strip wrist anchor points that sync to DJ broadcast signals",
+    "distinctive_features": [
+      "Sound-reactive photochromic outer layer — responds to bass frequencies above 60Hz",
+      "Laser-cut overlapping scale segments that vibrate independently in high-pressure sound environments",
+      "Bioluminescent cyan mesh interior lining that glows passively between beats",
+      "Spinal rig and neural port accommodation at collar — cut asymmetrically to allow hardware clearance",
+      "Embedded haptic strips at wrist cuffs synchronized to shared DJ broadcast signals",
+      "Vex & Ruin street label branding (unlicensed, Circuit district origin)"
+    ],
+    "tier_indicator": "Tier 4–5 crossover: sub-grade/ungoverned street fashion. Unlicensed manufacture signals anti-corpo positioning; advanced biotech integration suggests skilled maker or salvaged military-grade components.",
+    "cultural_context": "Circuit district rave culture, underground DJ scene, neural-mod enthusiast community. Wearing this signals rejection of corpo fashion hierarchies, immersion in street tech culture, and likely neural augmentation. Association with Vex & Ruin brand marks wearer as part of the ungoverned creative underground.",
+    "condition_typical": "Rarely pristine — bioluminescent lining typically shows minor scuffs; scale segments may have micro-scratches from dance floor contact. Haptic strips show wear from repeated signal syncing. Photochromic layer remains responsive even with cosmetic aging."
+  },
+  "image_prompt": "A sleeveless photochromic rave shell jacket on a dark-skinned, spinal-rig-augmented cyberpunk model in a Circuit district underground club setting. The jacket glows matte black at rest, with cyan bioluminescent mesh visible at the armholes and neck. Laser-cut overlapping scale segments catch low purple neon lighting. Model posed mid-dance move; bass frequency visualization around the jacket shows violet-to-amber pulse patterns rippling across the torso. Background: dark warehouse techno club with strobing purple and amber lights, vinyl scratch patterns and neural port clusters faintly visible on model's neck. Moody, high-contrast neon aesthetic. --ar 2:3 --v 6"
 }

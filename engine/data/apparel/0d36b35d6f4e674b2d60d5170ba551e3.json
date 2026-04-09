@@ -37,5 +37,25 @@
   "related_entities": [
     "New Windsor / Novaya Windsorka",
     "SynapTech AromaVeil Olfactory Filter"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A ethereal, gossamer head covering that frames the face like a living watercolor. When worn, it creates an abstract halo of shifting patterns around the head and shoulders, obscuring facial features while maintaining an almost spectral elegance. The fabric moves with subtle fluidity independent of the wearer's movements.",
+    "fit": "Draped loosely over the crown and face, held in place by barely-perceptible tension filaments. Sits weightlessly against the skin, never clinging, always floating. Covers from hairline to lower jaw, with optional extended panels down the shoulders.",
+    "primary_material": "Smart-weave composite — programmable synthetic polymers interwoven with reactive chromatophore threads and biometric sensors. Responds to electrical impulses and environmental input.",
+    "texture": "Appears gossamer-thin and permeable when transparent, becoming dense and velvet-like when opaque. Surface has a living, organic quality with subtle undulations. Never feels clingy; texture shifts from silk-smooth to almost cloud-like depending on opacity state.",
+    "color_scheme": "Highly variable by commission. Default palette ranges from deep midnight blues bleeding into iridescent silvers, shifting through teals and purples. Full opacity renders complex, organic fractal patterns — mandalas, neural networks, bloom formations. Each veil has a unique pattern signature.",
+    "closures": "None visible — held in place by micro-tension filaments and static adhesion bonding to skin oils. Controlled via neural-link wrist interface or haptic remote.",
+    "distinctive_features": [
+      "Biometric opacity response — shifts based on wearer's heart rate, cortisol levels, emotional state",
+      "Manual pattern cycling via wrist controller",
+      "Integrated micro-LED threading for subtle glow effects in low light",
+      "Artist-commissioned unique pattern library per unit",
+      "Frictionless surface resists dust and contaminants",
+      "Barely perceptible edge definition — fades into air at boundaries"
+    ],
+    "tier_indicator": "Tier 1 ultra-luxury exclusive — price point Φ45,000+ depending on artist commission. Entry to invitation-only social spaces.",
+    "cultural_context": "Worn by elite corporate members, syndicate leaders, and ultra-wealthy independents who treat anonymity as a leisure activity rather than survival. Signals absolute wealth, artistic patronage, and status secure enough to obscure identity at will. A statement of untouchable power.",
+    "condition_typical": "Always pristine — self-cleaning micro-fibers. Shows only subtle wear through pattern personalization and micro-scratches on the control interface indicating frequent use."
+  },
+  "image_prompt": "High-fashion cyberpunk portrait of an androgynous model wearing a shimmering smart-fabric veil that obscures their face in swirling iridescent patterns of deep blue and silver. The veil glows softly with inner light, appearing semi-transparent in places, opaque in others. Head tilted slightly upward in an elegant, aloof pose. Moody ambient lighting with neon accent lighting in cool tones reflecting off the veil's smart-fabric surface. Minimalist dark backdrop with subtle geometric architecture. Fine detail on the fabric's organic flowing patterns. Shot against a slick black studio setting. Cinematic, exclusive, ethereal. --ar 2:3 --v 6"
 }

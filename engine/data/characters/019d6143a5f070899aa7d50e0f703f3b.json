@@ -289,5 +289,12 @@
     "posture_movement": "Moves with fluid grace, favoring his left side unconsciously. Leans against things often — walls, tables, other people — as if he needs physical anchoring. Eyes frequently drift downward to his right arm. When he speaks, his left hand gestures expressively while his right hangs stiffly at his side.",
     "clothing_style": "Hodgepodge Tier 4-5 salvage: faded neon-stripe tank top or loose synthetic shirt worn open over a thermal undershirt, industrial cargo pants with multiple pockets (most empty), worn-out neo-leather boots. A hand-stitched Arcturus Defense patch sewn onto his jacket sleeve — a bitter joke. Sometimes wears a long coat to hide the mismatched arms. Cheap jewelry: a chain necklace, a ring with a cracked stone. Everything clean but worn."
   },
-  "image_prompt": "A 27-year-old man of mixed West African and Northern European heritage, athletic build, standing in dim industrial dock lighting. Disheveled, with dark brown hair and a sharp jawline. His left arm is a sleek black Arcturus Type-4 combat prosthetic with blue LED tracery; his right arm is a poorly-maintained gray Tier 1 replacement, chipped paint visible, noticeably lighter skin tone. He wears a faded neon-stripe tank over a thermal shirt, industrial cargo pants, and a hand-stitched jacket patch. His posture is deflated, shoulders rounded inward. Cyberpunk aesthetic, gritty, moody blue-orange lighting, graffiti-covered walls behind him, scattered shipping containers. High contrast, cinematic, worn and tired. --ar 2:3 --v 6"
+  "image_prompt": "A 27-year-old man of mixed West African and Northern European heritage, athletic build, standing in dim industrial dock lighting. Disheveled, with dark brown hair and a sharp jawline. His left arm is a sleek black Arcturus Type-4 combat prosthetic with blue LED tracery; his right arm is a poorly-maintained gray Tier 1 replacement, chipped paint visible, noticeably lighter skin tone. He wears a faded neon-stripe tank over a thermal shirt, industrial cargo pants, and a hand-stitched jacket patch. His posture is deflated, shoulders rounded inward. Cyberpunk aesthetic, gritty, moody blue-orange lighting, graffiti-covered walls behind him, scattered shipping containers. High contrast, cinematic, worn and tired. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 35.4,
+    "East Asian": 19.7,
+    "Hispanic/Latin American": 19.6,
+    "Sub-Saharan African": 12.9,
+    "Pacific Islander": 12.4
+  }
 }

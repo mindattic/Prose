@@ -41,5 +41,25 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Gesture",
     "The Witnesses of the Last Upload"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A flowing, knee-length robe with clinical precision. High collar, straight lines, minimal drape. The left breast features a pale blue vertical panel—stark, unmissable, deliberately neutral. Silhouette reads formal and austere, suggesting medical authority without aggression.",
+    "fit": "Relaxed through the torso, designed to fit over layers or augmentation rigs without binding. Sleeves are three-quarter length, functional rather than decorative. Allows unrestricted arm movement for document handling and testimony gestures.",
+    "primary_material": "Synthetic silk—high-thread-count, pharmaceutical-grade. Soft to touch but with subtle rigidity for structure. Chosen for stain resistance and cleanability, not luxury.",
+    "texture": "Smooth, almost luminous surface with faint ribbed weave visible under direct light. No nap or pile—designed to shed ink, blood, biological residue without absorption. Feels clinical beneath fingertips.",
+    "color_scheme": "Pristine off-white (not pure white—warmer tone suggesting medical contexts). Pale blue panel at left breast is exact, institutional blue—the Tribunal's registered neutral marker. No other colors. No patterns.",
+    "closures": "Single long magnetic snap at the neckline discreetly marked with the Lazarus rod-and-helix symbol (small, chrome-plated, barely 8mm). No visible zippers or buttons. Friction-fit cuff seals at wrists allow easy removal of gloves or augmented limbs.",
+    "distinctive_features": [
+      "Left-breast blue panel: intentional, required, unmissable",
+      "Lazarus rod-and-helix at collar: subtle, professional, unavoidable",
+      "Underarm reinforcement panels: designed to endure repeated hand-raising during testimony",
+      "Hidden document pockets along interior hem: stitched with reflective thread for low-light retrieval",
+      "Micro-weave grid visible only under magnification: pattern aids ink-seal adhesion, prevents document slippage",
+      "No rank indicators, no shoulder boards, no tier markers: deliberate institutional restraint"
+    ],
+    "tier_indicator": "Tier 3-4 professional. Accessible to working-class advocates and mid-tier Lazarus staff, but costs Φ340-500 new. Signals institutional credibility without excessive wealth display.",
+    "cultural_context": "Wearing this robe means you are present at a Synthetic Personhood hearing as a neutral witness. It signals medical/legal authority while attempting (imperfectly) to claim neutrality. In activist circles, it's controversial—seen by some as complicit in Lazarus's profiteering from Synthetic rights. Those who wear it often do so with acknowledged ambivalence. The robe carries the weight of that contradiction.",
+    "condition_typical": "Worn robes show subtle ink staining around the pocket areas despite the stain-resistant weave. The blue panel may have pale watermarks from repeated exposure to Tribunal seal liquids. Edges remain crisp; fabric resists wrinkling. A well-maintained robe looks austere and competent. A worn one looks weathered by institutional use."
+  },
+  "image_prompt": "Clinical fashion photograph of a Lazarus Synthetic Personhood Formal Witness Robe on a dark mannequin or tall figure with subtle augmentation visible at the wrists. The robe hangs pristine and white, the pale blue panel at the left breast catching precise overhead lighting. Stark, institutional setting—polished gray floor, minimalist backdrop suggesting a tribunal chamber or medical facility. Cool white and blue light emphasizing the robe's clinical purpose. Small detail shot of the Lazarus rod-and-helix collar snap. Moody, formal, slightly sterile atmosphere. No flesh tones, no warmth. --ar 2:3 --v 6"
 }

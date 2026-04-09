@@ -57,5 +57,45 @@
     "tier 5",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Abeke Soriano-Dlamini",
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Arcturus KS-4 'Knitter'",
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Helix Biosystems",
+    "Meridian Core",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "NeuralPath EasePoint Chronic Pain Implant",
+    "Priya Subramaniam-Vogt",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Filament",
+    "The Skinners",
+    "Vantablack-CNX",
+    "VitaCore FlowGuard Hemodynamic Regulator"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist energy rifle with an almost surgical aesthetic — longer and thinner than conventional firearms, with a pronounced emitter head that dominates the weapon's forward profile. The design reads as clinical precision rather than brutal force; it resembles specialized medical equipment more than a combat weapon. The overall silhouette is angular and refined, with sharp shoulders at the grip transition and a tapering barrel assembly.",
+    "dimensions": "Length: 41 cm | Emitter head width: 6.5 cm | Grip depth: 4.2 cm | Barrel assembly length: 18 cm",
+    "weight_description": "Surprisingly light and balanced — 1.4 kg distributed evenly along the length creates a sensation of effortless control rather than heft. The weight sits forward of the grip, encouraging one-handed steadiness and reducing fatigue during extended positioning.",
+    "primary_material": "Aerospace-grade carbon composite frame with brushed titanium accents at stress points (grip housing, antenna mounting, trigger guard). The emitter head is polished medical-grade ceramic with embedded phased-array circuits visible as a geometric pattern beneath a translucent thermal window.",
+    "finish": "Matte gunmetal gray primary body with brushed satin titanium mounting hardware. The emitter head features a subtle pearlescent shimmer from the ceramic substrate, while circuit pathways are highlighted in muted electroluminescent green that pulses faintly during standby mode.",
+    "color_scheme": "Gunmetal gray with titanium silver accents; muted electroluminescent green on the emitter head and around the microcapacitor array housing at the rear. Minimal branding in discrete white lettering.",
+    "grip_texture": "Textured polymer with a diamond-knurl pattern, treated with a hydrophobic coating that feels slightly cool and grip-optimized for extended precision shooting. The trigger guard is wrapped in thin woven carbon fiber for sensory feedback.",
+    "distinctive_features": [
+      "Phased-array antenna visible as a geometric lattice pattern within the translucent ceramic emitter head — appears as fine interlocking hexagons that glow faintly green in low light",
+      "Capacitor bank housing at the weapon's rear with illuminated charge-state indicator running along the stock: green when full, amber during cycling, red when depleted",
+      "Minimal sighting system: a narrow LED reticle projected onto a micro-display recessed into the top rail; designed for anatomical precision rather than distance estimation",
+      "Atmospheric compensation vents along the barrel assembly — small slotted apertures that release ionized air and dissipate thermal buildup",
+      "Filament discharge port at the emitter tip: a barely-visible ceramic nozzle with pinpoint precision aperture (2mm diameter) surrounded by static discharge collectors that appear as fine metallic whiskers",
+      "Serial plate mounted on the left side of the grip in minimalist white-on-gray lettering",
+      "Neural feedback loop status indicator near the thumb rest — a small display showing real-time targeting lock and nerve cluster proximity data",
+      "Wear patterns on this tier-5 example: minor scuff marks on the composite frame, slight oxidation on titanium accents suggesting field use; the emitter head shows faint scorching from repeated discharge cycles"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS mark in discrete white serif lettering on the left grip (3cm x 0.4cm) | ARCTU­RUS DEFENSE SOLUTIONS licensing stamp on the rear capacitor housing | Serial number in monospace font (bottom of grip rail)",
+    "condition_typical": "Field-maintained, well-cared-for by skilled operators. Generally shows minor cosmetic wear — small scratches on the composite, faint thermal discoloration around the emitter head from discharge cycles — but mechanical components remain pristine. Units in active service show evidence of meticulous cleaning; black market examples may show heavier wear or jury-rigged modifications to the targeting system."
+  },
+  "image_prompt": "Product photography of the Capacitive Nerve Induction Lance CNIL-1 'Threadneedle' energy weapon, mounted horizontally on a dark matte-black surface. Dramatic side-lighting from the left reveals the brushed titanium accents and the faint geometric pattern of the phased-array antenna visible through the translucent ceramic emitter head. The capacitor bank at the rear glows softly with electroluminescent green charge indicators. A tactical-gloved hand (black synthetic leather with carbon-weave knuckle reinforcement) grips the weapon from below, showing the textured diamond-knurl pattern and the minimal LED reticle display recessed into the top rail. The overall aesthetic is clinical, precise, and surgical — more medical instrument than firearm. Subtle ionized air shimmer trails from the atmospheric compensation vents. Shot against a neutral cyberpunk grey backdrop with cool overhead bounce-fill lighting that emphasizes the weapon's refined, almost elegant geometry. 8K, studio product photography, cyberpunk tech aesthetic, precise focus on the emitter head and its internal lattice structure --ar 3:2 --v 6"
 }

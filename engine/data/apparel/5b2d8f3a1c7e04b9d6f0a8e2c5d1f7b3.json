@@ -53,5 +53,29 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Synaptrel",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sharp, militaristic silhouette with authoritative presence. The navy duty jacket commands attention with its structured lines and mandarin collar, projecting operational competence and institutional hierarchy. Worn by someone who moves between platforms and machinery with practiced efficiency.",
+    "fit": "Tailored but not restrictive—designed for twelve-hour mobility. The jacket sits square on the shoulders with enough room for layering. Trousers are straight-leg and pressed, creating clean vertical lines. The overall cut is regulation-formal, not fashion-forward.",
+    "primary_material": "Navy wool-analog synthetic for the jacket and cap; performance-blend poly for the moisture-wicking polo; heavyweight cotton-weave for the charcoal trousers; matte composite with synth-leather accents for the shoe and scanner holster.",
+    "texture": "The jacket has a slight nap, catching light subtly. The polo is smooth and engineered for durability. Trousers are crisp with tight weave. The MagLock shoe sole is slightly textured for grip. The brushed aluminum rank tab and belt buckle are intentionally matte to reduce glare on night shifts.",
+    "color_scheme": "Deep navy as primary (jacket, polo, cap); charcoal grey (trousers, liner vest, shoe); silver accents (embroidered insignia, rank tab, badge, belt buckle); black reflective piping on shoe outer edge; white or cream internal collar lining visible at mandarin collar edges.",
+    "closures": "Double-breasted magnetic snap closure on jacket (reliable in electromagnetic environments); standard button placket on polo; webbing belt with brushed metal KTA-stamped buckle; slip-on MagLock shoe design with low-profile lace alternatives; magnetic cover flap over rear neck BCI port.",
+    "distinctive_features": [
+      "Embroidered KTA insignia on left breast: stylized rail line bisecting a hexagon in silver thread",
+      "Low-profile BCI hardware port channel in rear collar with magnetic security flap",
+      "Removable brushed aluminum rank tab on right shoulder",
+      "Reinforced seat and double-stitched inner thigh on trousers (platform duty wear)",
+      "Reflective piping strip on shoe outer edge for maglev platform visibility",
+      "Molded synth-leather hip holster for handheld scanner unit",
+      "Optional charcoal-grey insulated liner vest for cold months",
+      "Stiff-brimmed transit cap with silver KTA badge",
+      "Static-discharge rated MagLock Flatfoot sole design",
+      "Hidden interior collar pin: local shrine festival enamel (personal customization)"
+    ],
+    "tier_indicator": "Tier 3 functional—working-class infrastructure employee. The uniform signals stable employment with a major metropolitan authority. Not luxury, but quality and purpose-built. Worn by those who maintain the systems others rely on.",
+    "cultural_context": "Transit infrastructure operator. Someone disciplined by schedules, machinery logic, and public safety protocols. Likely mixed heritage reflective of GLMZ demographics (the hidden shrine pin suggests East/Southeast Asian cultural identity). The BCI port indicates this worker is augmented for duty efficiency. Wearing this means you are essential infrastructure.",
+    "condition_typical": "Pressed and regulation-correct during shifts, but subtly worn in character. The jacket shows creases from repeated movement. The trousers are clean but the inner thigh shows patina from daily wear. The shoe sole has minor scuff marks from platform edges. The uniform is maintained but not pristine—it's a working uniform, not dress uniform. Personal items (the shrine pin) indicate long-term ownership and identity investment."
+  },
+  "image_prompt": "Cyberpunk transit worker in full Kelvex MagRail night shift uniform standing in a dimly lit MagLev platform station, neon purple and cyan accent lighting reflecting off the navy wool jacket and matte black shoes, rain-slicked platform surface beneath. Model has visible subtle augmentation ports or cyberware implied by posture. The KTA hexagon insignia catches studio light in silver thread. Handheld scanner unit visible at hip in synth-leather holster. Transit cap brim casts shadow across face. Moody, cinematic lighting with industrial brutalist architecture in soft focus background. Reflective shoe piping glows faintly. Medium shot, slight upward angle to emphasize authority and duty. Film noir meets corporate infrastructure aesthetic. --ar 2:3 --v 6"
 }

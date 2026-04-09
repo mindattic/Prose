@@ -58,5 +58,27 @@
     "TESSERA TC-3 'Crucible'",
     "Tessera Nexus Town Car",
     "The Crucible"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian one-piece coverall in deep crimson red dominating the silhouette, cinched at the waist with reinforced charcoal grey panels across the chest and thighs creating a blocky, industrial aesthetic. The high collar with chin guard snap and oversized safety helmet in matching red convey serious factory work. The overall impression is 'property of Crucible' — functional, standardized, instantly identifiable in a crowd.",
+    "fit": "Relaxed through the torso and legs for mobility and layering; tapered slightly at wrists and ankles for seal integrity around gloves and boots. The high collar sits snug against the neck. The cut prioritizes access and safety over fashion — roomy enough for a heat-dispersing base layer underneath, but not baggy.",
+    "primary_material": "Flame-resistant synthetic blend (primary coverall); charcoal grey ballistic-weave reinforcement panels; insulated synth-leather work gloves; heat-resistant composite on helmet; steel-shank safety boots with thermal-resistant sole",
+    "texture": "Smooth, slightly matte flame-resistant fabric on the main body; rougher, more tactile ballistic weave on reinforcement zones; rubber grip texture on glove palms; scuffed and worn helmet shell typical of floor use",
+    "color_scheme": "Deep crimson red as primary (Crucible corporate standard); charcoal grey reinforcement panels; light grey heat-dispersing base layer visible at cuffs and collar; silver heat-bonded logos and white name patch; metallic grey safety hardware (snaps, chest ring)",
+    "closures": "Heavy-duty front zip down the center of the coverall; velcro-and-snap aug channel on left sleeve allowing full peelback or removal; magnetic snap chin guard on helmet; clip attachments for gloves to chest ring; friction-fit boots",
+    "distinctive_features": [
+      "Velcro-and-snap augmentation channel on left sleeve (mandatory Crucible 2189 labor compact accommodation)",
+      "High collar with integrated chin guard snap for respirator attachment",
+      "Silver heat-bonded Crucible triangular logo on upper back and left chest",
+      "White embroidered name patch above right breast pocket",
+      "Hard-shell safety helmet with flip-down UV-filter visor and rear port for BCI hard-line floor network connection",
+      "Small chest ring for glove attachment",
+      "Informal apprentice tallies/stickers hand-scratched or affixed to helmet tracking shifts toward journeyman certification",
+      "Penrose Weld Boots with composite toe and heat-resistant sole"
+    ],
+    "tier_indicator": "Tier 3 — working class, corporate-assigned, standardized. Marks the wearer as employed but low-rank within Crucible's hierarchy. Not custom or choice-based; issue standard.",
+    "cultural_context": "Apprentice-grade fabrication worker on Crucible Industries' fab-floor. Wearer is one step below full technician — assigned to feed lines, basic presses, materials handling. The deep red instantly signals Crucible affiliation in the streets of Circuit; both protective (corpo backing) and occasionally hostile (rival fabricator resentment). The aug channel indicates the wearer either has or may acquire forearm chrome; it is mandatory accommodation, not luxury.",
+    "condition_typical": "Broken-in and weathered from regular floor use — small scorch marks on the legs, minor singes on cuffs, oil stains on the grey reinforcement panels. The helmet accumulates tallies and stickers over time as an unofficial tradition. Gloves show heavy creasing and grip wear. Boot soles darkened from heat and wear. Still functionally intact and regularly laundered by Crucible facilities, but clearly used rather than pristine."
+  },
+  "image_prompt": "A Tier 3 factory apprentice in Crucible Industries deep crimson coveralls stands on a moody industrial fab-floor set, harsh sodium lighting casting long shadows. The coverall dominates — vivid red with charcoal reinforcement panels, silver Crucible triangular logo gleaming on the chest and upper back. The high collar and red hard-shell helmet with flipped-down UV visor frame the model's face. The left sleeve's aug channel is clearly visible — velcro and snaps ready for arm chrome. Insulated grey gloves clip to the chest ring. Heavy Penrose Weld Boots ground the figure. The helmet is covered in small hand-scratched tally marks and worn stickers — unofficial shift counters. Behind: out-of-focus industrial machinery, orange heat glow, chains. Moody cyan and amber lighting. The figure looks durable, utilitarian, marked as corporate property but human beneath the gear. --ar 2:3 --v 6"
 }

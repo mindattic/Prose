@@ -48,5 +48,24 @@
     "Idris Forsberg-Quaye",
     "Jefferson Switch",
     "WELLSPRING"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, pistol-grip handheld scanner resembling a compact thermal imaging device. The form factor is aggressive and utilitarian—designed for rapid deployment in field conditions. Slight forward taper toward the optical head gives it a predatory appearance.",
+    "dimensions": "18 cm long, 8 cm wide, 5 cm deep—roughly the size of a modern dental imaging tool",
+    "weight_description": "150 grams; lightweight and pocketable with a wrist strap, designed for one-handed operation during rapid document sweeps",
+    "primary_material": "Reinforced polymer chassis with rubberized grip sections; anodized aluminum trim around the optical array",
+    "finish": "Matte charcoal with brushed aluminum accents; textured grip panels to prevent slipping during wet-work scenarios",
+    "color_scheme": "Gunmetal gray body with crimson accent striping along the trigger guard and status indicator ring; silver-chrome optical lens housing",
+    "interface_elements": "Recessed touchscreen (2.1-inch OLED display) on dorsal surface showing live preview and encryption status; capacitive trigger button; micro-USB charging port hidden beneath a security clasp; three physical status LEDs (power, encryption, transmission) arranged vertically on the right flank",
+    "distinctive_features": [
+      "Rotating optical head with integrated UV lamp array visible beneath translucent lens cap",
+      "Pulsing crimson LED ring that illuminates during active encryption—cyclic pattern indicates data scrambling in real-time",
+      "Laser targeting dot (non-visible to human eye but cast onto documents for alignment) creates subtle shimmering effect on paper",
+      "Subtle Sterling-Nakamura etched logo on grip: intertwined S and N kanji character",
+      "Transmission antenna nodes visible as slight bulges on upper casing"
+    ],
+    "manufacturer_markings": "STERLING-NAKAMURA EDS-3 laser-etched on left flank; regulatory stamps (GLMZ approved, encryption certification code) on base; serial number engraved into charging port surround",
+    "condition_typical": "Light wear on grip sections from repeated handling; fine scratches on lens cover from document contact; faint heat discoloration around the optical array from sustained use"
+  },
+  "image_prompt": "Handheld Sterling-Nakamura EDS-3 document scanner on a sleek chrome workbench, mid-scan of classified papers. Dramatic side-lighting casting sharp shadows. Crimson LED encryption ring glowing intensely, reflected in polished aluminum surface. Scattered documents with watermarks and security fibers visible under UV lamp glow emanating from the optical head. Cyberpunk product photography, moody neon accents, shallow depth of field isolating the device in sharp focus. Wet, noir aesthetic with cool blue overhead lighting and warm amber practical illumination from the scanner itself. Close enough to see texture of rubberized grip and laser targeting dot on paper. --ar 3:2 --v 6"
 }

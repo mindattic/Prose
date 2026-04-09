@@ -44,5 +44,26 @@
     "Lazarus HZ-4 'Cleanroom'",
     "Sorin Ekwensi-Balasanyan",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A long, utilitarian overcoat with a distinctly industrial silhouette. The laminated polyfilm creates a stiff, almost architectural drape that hangs away from the body. Visually reads as protective gear rather than fashion — imposing, angular, deliberately unglamorous. The material has a slight sheen that catches light unevenly.",
+    "fit": "Loose and intentionally oversized to allow layering underneath and unrestricted movement. Sleeve length extends to the wrist; coat reaches mid-calf. Cut is straight and boxy with no waist definition. Built for function over form.",
+    "primary_material": "Laminated polyfilm composite — a synthetic membrane bonded to reinforced textile backing. Acoustically crunches and crinkles with movement. Feels plasticky and slightly stiff to the touch.",
+    "texture": "Smooth outer laminate with subtle micro-texture from the weave beneath. Develops a dull, worn sheen with age. Creases hold permanently. Patches of different ages create visible quilted or slightly raised sections.",
+    "color_scheme": "Factory yellow-gray transitioning to dingy beige and gray after weathering. Some specimens show darker chemical staining around the hem and sleeve cuffs. Patches in mismatched tones of gray, tan, and faded yellow from repair grafts.",
+    "closures": "Central full-length zipper (often replaced or reinforced on older coats). Neck seals with hook-and-bar Velcro-style closure that tightens around the throat. Wrist cuffs have friction-fit elastic or snap closures.",
+    "distinctive_features": [
+      "Oversized hood with reinforced brim and sealed seams",
+      "Multiple external pockets with sealed zippers",
+      "Visible patching and repair work — textile archaeology of different ChemShell generations",
+      "Noxfield branded tab on inner collar (often worn or removed)",
+      "Reinforced seams along high-stress areas",
+      "Faded or worn Noxfield Safety logo on left chest",
+      "Chemical staining or discoloration on lower sections typical of heavy use"
+    ],
+    "tier_indicator": "Tier 3-4 functional. Affordable protective equipment for working-class residents in remediation zones. Resale and repair economy suggests Tier 5 sub-grade wearing generations-old patched versions.",
+    "cultural_context": "Marks the wearer as a Shelf resident, industrial zone worker, or remediation technician. Signals practical survival in contaminated areas rather than status. Worn by those for whom chemical exposure is daily reality, not exception. Heavy resale culture — seeing one suggests economic constraints and resourcefulness.",
+    "condition_typical": "Worn and weathered. Most in circulation show visible patching, faded coloring, and accumulated chemical staining. Zippers are often replaced or reinforced. Creasing is permanent. A pristine ChemShell is rare; broken-in is the baseline."
+  },
+  "image_prompt": "A weathered yellow-gray laminated polyfilm overcoat on a lean model standing in a derelict industrial setting, toxic buffer zone aesthetic. Moody sodium-vapor lighting casting sickly amber-green tones. Visible patches of different textile repairs cover the sleeves and torso. The coat crinkles audibly in the still air. Dark cinderblock wall with chemical staining and remediation markers visible behind. Gritty, utilitarian, worn — beauty in survival gear. Close detail showing the hook-and-bar neck seal and faded Noxfield branding. --ar 2:3 --v 6"
 }

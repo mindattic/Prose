@@ -43,5 +43,36 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Magpie",
+    "Nika Svensson-Kone",
+    "Othniel Babić-Asantewaa",
+    "TESSERA TX-12 'Chorus'",
+    "Tessera Corponation",
+    "Tessera TAR-12 'Consensus'",
+    "The Collective",
+    "The Consensus",
+    "West Town Upside"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modular SMG with a distinctly networked aesthetic—sharp angles and protruding data nodes suggest constant connectivity. The profile is compact and angular rather than organic, with visible mesh networking ports along the receiver. Appears purpose-built for teams rather than solo operators.",
+    "dimensions": "38cm overall length, 22cm barrel, 7cm width at receiver, 4cm depth. Magazine well sits forward of the trigger guard.",
+    "weight_description": "Balanced and responsive at 1.9kg—light enough for sustained CQC operations but substantial enough to feel controllable during high cyclic rates. Notably front-weighted due to the barrel assembly.",
+    "primary_material": "Reinforced polymer composite frame with 7075 aluminum receiver. Modular rail system in hardened steel. Internal components designed for quick-swap modularity.",
+    "finish": "Matte gunmetal gray with anthracite accents. Surfaces treated with anti-reflective coating to minimize signature. Networking ports finished in brushed titanium.",
+    "color_scheme": "Gunmetal gray primary with matte black grip panels and accent edging. Subtle phosphorescent green status indicators at key networking nodes.",
+    "grip_texture": "Textured polymer grip with aggressive diamond checkering. Slightly contoured for natural pointer-finger indexing. Cool to the touch, intentionally non-slip in both dry and wet conditions.",
+    "distinctive_features": [
+      "Three visible data-mesh networking nodes along the left receiver rail—small titanium ports with LED status indicators (green when networked, amber when searching, red when locked)",
+      "Integrated BCI link antenna port recessed into the charging handle—minimal profile to prevent snagging",
+      "Magazine well features translucent witness ports with round-count markings visible to both operator and networked team members",
+      "Modular barrel assembly with quick-detent locking mechanism for field maintenance and variant swaps",
+      "Heat sink fins along the top receiver to manage thermal signature from sustained 850 rpm fire",
+      "Ambidextrous safety lever with triangular detents—audible click when switching fire modes (safe/semi/burst/full)"
+    ],
+    "manufacturer_markings": "TESSERA logo stamped into the left receiver rail in brushed aluminum. Serial plate mounted on the right side of the frame with QR code for network authentication. 'CHORUS TNSM-3' designation laser-etched in small print along the magazine well. Caliber marking (4.6mm CASELESS) on the barrel collar.",
+    "condition_typical": "Field-maintained and well-cared-for in team environments. Minor wear on the grip panels from glove use. Networking ports show signs of dust covers being frequently removed and replaced. Polymer may exhibit fine scratches from urban CQC operations, but internal components remain clean due to modular design facilitating regular maintenance."
+  },
+  "image_prompt": "Product photography of the Tessera TNSM-3 Chorus SMG, a compact networked submachine gun, positioned on a dark gunmetal surface. Show the weapon from a three-quarter left profile, tilted slightly to reveal the distinctive networking mesh ports along the receiver glowing with soft phosphorescent green indicators. Dramatic side-lighting emphasizes the matte gunmetal gray finish and aluminum receiver details. Include a gloved tactical hand gripping the textured polymer foregrip. Atmospheric cyberpunk lighting with cool blue-green ambient glow reflecting off the polished titanium networking ports. Shallow depth of field with the weapon in sharp focus against a blurred GLMZ cityscape background. Show the magazine witness ports with visible round counts. Capture the integrated antenna port on the charging handle. Emphasize the weapon's modular, tech-forward aesthetic with subtle glow effects on the LED status nodes. Cinematic, professional military catalog style. --ar 3:2 --v 6"
 }

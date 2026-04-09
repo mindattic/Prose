@@ -36,5 +36,26 @@
   ],
   "related_entities": [
     "Neural Feedback Carbine NFC-3 'Mirrorgun'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Form-fitting tactical gloves with a sleek, professional appearance. The hands look sharper and more controlled when worn, with subtle technological integration visible along the knuckles and palm. Gives an impression of precision and readiness.",
+    "fit": "Compression fit with articulated finger sections that conform closely to the hand without restricting movement. Wrist cuff extends 3-4 inches up the forearm with adjustable closure for varied arm sizes.",
+    "primary_material": "Smart-responsive synthetic leather with embedded conductive threading and pressure-sensitive microfiber panels on palm and finger surfaces.",
+    "texture": "Smooth synthetic leather exterior with subtle raised grid patterns on the grip zones. Interior features soft microfiber lining with tactile feedback nodes that are barely perceptible to touch.",
+    "color_scheme": "Matte charcoal black with gunmetal gray accents along seams and wrist cuff. Subtle phosphorescent fiber tracery visible only under UV or low light, running along the metacarpal ridge.",
+    "closures": "Magnetic snap wrist closure with friction-fit Velcro adjustment strip for variable tension. No visible fasteners.",
+    "distinctive_features": [
+      "Embedded pressure sensors in all fingertips and palm center",
+      "Haptic feedback nodes (subtle vibration points) distributed across knuckles",
+      "Data-transmission textile in wrist cuff — barely visible tech interface",
+      "Reinforced synthetic leather on trigger finger and index finger",
+      "Sentinel Corp minimalist logo stamped in matte finish on back of hand",
+      "Micro-perforations on sides of fingers for breathability during extended wear",
+      "Integrated temperature-regulation threads (invisible but functionally apparent)"
+    ],
+    "tier_indicator": "Tier 2 professional-grade equipment. High cost, restricted distribution. Signals corpo security, licensed trainer, or institutional employee.",
+    "cultural_context": "Worn by firearms trainers, corporate security personnel, tactical professionals, and rehabilitation specialists. Signals authority, discipline, and institutional trust. In some circles, these gloves mark someone as 'monitored' — compliance-oriented.",
+    "condition_typical": "Pristine to lightly worn. Signs of use appear as minor scuff marks on knuckles and a slight darkening of grip zones from repeated pressure mapping. Well-maintained due to their high cost and data-logging importance."
+  },
+  "image_prompt": "Close-up fashion photography of Sentinel Corp smart-fabric trigger-discipline gloves on a cybernetically-augmented hand with visible chrome knuckle plating. Matte charcoal leather with gunmetal gray seams catching moody neon blue light. Hand positioned in a precise, controlled grip pose. Dark urban laboratory or armory backdrop, bokeh industrial details. Haptic feedback nodes barely visible under soft side-lighting. Wrist cuff showing subtle data-transmission textile glow. Professional tactical aesthetic, clinical precision. --ar 2:3 --v 6"
 }

@@ -53,5 +53,27 @@
     "Synaptrel",
     "The Seam",
     "Veldtmann Steelcap 7"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sharp, utilitarian uniform silhouette projecting institutional authority and working-class competence. The structured navy jacket with mandarin collar creates a compact, professional torso line. The hi-vis orange leg stripe and cap create bright accent points against the navy base. On a body, reads as someone who has earned their place in the transit infrastructure—clean but lived-in.",
+    "fit": "Tailored but not restrictive; jacket sits close through the shoulders with room for movement through the torso. Cargo trousers have a straight cut from hip to ankle with reinforced articulation points at the knees. Boots provide ankle stability with a grounded, wide stance. Overall fit suggests functionality over fashion—built for 12-hour shifts moving between platform and cabin.",
+    "primary_material": "Navy polyblend synthetic jacket (wrinkle-resistant, stain-treated); charcoal moisture-wicking thermal base layer (synthetic blend with thermal regulation); cargo trousers in heavy-duty navy twill composite; Veldtmann composite boots with rubber and synthetic leather construction.",
+    "texture": "Jacket surface has a subtle sheen from polyblend finish, smooth to the touch but engineered for durability. Thermal base layer has fine ribbed texture for moisture management. Trousers show a tight weave with reinforced panels at knees (slightly raised texture). Boot material is textured rubber with oil-resistant finish—grip-focused, scuffable.",
+    "color_scheme": "Primary navy blue throughout jacket and trousers; charcoal thermal base and watch cap provide tonal variation. Accent colors: bright orange-and-grey chevron shoulder patch (corporate branding), hi-vis orange retro-reflective leg stripe, small Stratum emblem on cap cuff.",
+    "closures": "Jacket: snap-close breast pockets (quick-access), mandarin collar (no separate closure). Trousers: magnetic closures on side cargo pockets (silent, secure). Boots: lace-up with ankle wrap support. Watch cap: pull-on knit.",
+    "distinctive_features": [
+      "Stratum Logistics orange-and-grey chevron shoulder patch permanently stitched into seam",
+      "Left-chest embroidered name panel in block lettering (individual identification)",
+      "Retro-reflective hi-vis orange leg stripe running outer seam (safety/visibility)",
+      "Reinforced knee panels on cargo trousers (wear-point durability)",
+      "Low-profile tool loop on right thigh for fare scanner or comms holster",
+      "Moisture-wicking charcoal thermal base layer (temperature regulation for platform/tunnel environment)",
+      "Veldtmann Steelcap construction: steel toe cap, oil-resistant tread, ankle support wrap",
+      "Small Stratum emblem on watch cap cuff (corporate consistency)"
+    ],
+    "tier_indicator": "Tier 3 (working class). Company-issued uniform signals stable employment with a major infrastructure corponation. Quality is consistent and durable but not luxury—functional rather than aspirational.",
+    "cultural_context": "Wearing this uniform identifies the wearer as a Stratum Logistics transit operator—a skilled, essential infrastructure worker. The pressed-but-lived-in condition signals respect for the job and years of service. In the GLMZ, this uniform carries implicit trust: the wearer knows the M88 elevated rail and underground tube systems intimately. It also signals a person anchored to institutional employment rather than gig or street-level work.",
+    "condition_typical": "Pressed and maintained but showing honest wear. Scuff marks on boots from platform concrete. Slight fading on the thigh tool loop from daily use. Wrinkles that reappear after a few hours on shift. The name panel is crisp; the shoulder patch shows no sign of separation. Overall: clean enough for inspection, weathered enough to be credible."
+  },
+  "image_prompt": "Professional cyberpunk fashion photograph of a Stratum Logistics transit operator uniform on a dark-skinned model with subtle subdermal LED implants along the jawline. Model stands in three-quarter pose wearing the navy polyblend jacket with orange-and-grey shoulder patch clearly visible, charcoal thermal base layer visible at half-zip neck, navy cargo trousers with bright retro-reflective orange leg stripe, and oil-scuffed Veldtmann steel-toe boots. Charcoal watch cap with emblem sits at regulation angle. Setting: moody underground transit platform with warm platform lighting casting long shadows. Digital fare display screens glow faintly in soft focus background. Cinematic side-lighting emphasizes the texture of the jacket weave and the reflective stripe. Gritty, institutional atmosphere. Photograph conveys competence, exhaustion, and quiet authority. --ar 2:3 --v 6"
 }

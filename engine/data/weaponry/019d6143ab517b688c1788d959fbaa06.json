@@ -38,5 +38,35 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Bathysphere Networks",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Nika Svensson-Kone",
+    "Ouroboros PG-2 'Blackout'",
+    "Slagworks Industrial",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular carbine with a distinctly futuristic aesthetic. The silhouette is compact and purposeful, with a slightly tapered profile that narrows toward the muzzle. The weapon has a predatory, minimalist appearance—all function, no ornamentation. The receiver appears almost liquid in its curves, contrasting sharply with the rigid geometry of the barrel assembly.",
+    "dimensions": "Overall length: 78 cm. Barrel length: 38 cm. Width across rails: 8 cm. Height with sight rail: 12 cm.",
+    "weight_description": "Balanced and manageable at 3.1 kg despite its dense construction. The weight is distributed toward the receiver, making it feel stable and controlled rather than nose-heavy or unwieldy.",
+    "primary_material": "Aerospace-grade carbon composite frame with reinforced polymer sections. Internal mechanisms utilize precision-machined titanium alloy components. The barrel assembly features a specialized reactive metal housing designed to contain and channel the PhotoNull aerosol discharge.",
+    "finish": "Deep matte black with subtle graphite undertones. The surfaces appear almost non-reflective, designed to minimize tactical signatures. Wear patterns reveal burnished edges and micro-scratches from field use. Some Tessera units show residual photonic scorch marks—faint iridescent stains from compound detonation.",
+    "color_scheme": "Primary: midnight black. Accents: deep navy blue striping along the rail systems and trigger guard. Minimal chrome detailing on the firing mechanism—only where necessary for durability.",
+    "grip_texture": "The forward grip is wrapped in non-slip polymer with a subtle honeycomb texture, designed for gloved operation. The pistol grip features aggressive knurling that feels almost sandpaper-rough—intentional for maintaining control during suppression operations. The charging handle is bare anodized aluminum, cool to the touch.",
+    "distinctive_features": [
+      "Oversized muzzle brake with asymmetrical venting—allows aerosol cloud to expand in controlled pattern",
+      "Dual-stage ejection port with sealed chamber to contain compound residue",
+      "Integrated pressure-release valve on the gas tube, glowing faintly amber when charged",
+      "Rail-mounted photonic density indicator: a small digital readout showing nanoparticle suspension status",
+      "Custom serial placard with Tessera's theta-wave logo stamped in recessed lettering",
+      "Magazine well has a translucent polymer insert showing round count and compound integrity",
+      "Witness holes along the receiver for internal mechanism inspection",
+      "Subtle diagonal hatching on receiver sides to reduce glint"
+    ],
+    "manufacturer_markings": "Tessera Industries logo (concentric circles with theta symbol) stamped into the left-side receiver panel. 'BLACKOUT BC-4' engraved in clean sans-serif font along the barrel shroud. Hazmat notation—yellow and black striped diamond—appears on the magazine well and chamber door, indicating photon-suppression payload. Serial number marked in micro-etching on the lower receiver.",
+    "condition_typical": "Field-maintained and regularly deployed. Most examples show minor scuffing on the muzzle brake and faint photonic scorching around the ejection port—evidence of compound detonation. Well-cared-for tactical weapons, kept clean but bearing the patina of operational use. Minimal wear on controls suggests disciplined operator base."
+  },
+  "image_prompt": "Professional product photography: Tessera BC-4 Blackout Carbine positioned on a matte gunmetal surface, angled 45 degrees. Dramatic side-lighting from upper left casts deep shadows across the receiver, emphasizing the angular geometry. A gloved hand in tactical black holds the grip, fingers positioned on the trigger guard. The muzzle brake dominates the frame with its distinctive asymmetrical venting. Close detail shot of the photonic density indicator glowing faintly amber. Backdrop: dark blue-black gradient fading to shadow. Atmospheric: subtle particle haze near the muzzle suggesting lingering nanoparticles. Cyberpunk aesthetic: cool color temperature, high contrast, noir-industrial lighting. Material focus on the carbon composite texture and titanium components. --ar 3:2 --v 6"
 }

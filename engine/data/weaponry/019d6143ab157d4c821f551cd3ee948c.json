@@ -59,5 +59,39 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Dragan Petersen-Bah",
+    "GLMZ",
+    "Godfrey Nkemezue-Torghayev",
+    "Lazarus APC-2 'Locust'",
+    "Marrowvault Cryogenics",
+    "Ringo Corponation",
+    "Ringo Corponation Ambient Mesh Leech",
+    "TESSERA CC-6 'Shepherd'",
+    "Ximena Bautista-Nwosu",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact spherical drone roughly the size of a grapefruit, with a seamless polymer shell that resembles a smooth ball bearing. The sphere appears almost innocuous at first glance—until you notice the pressurized canister bulge on one end and the faint seams where propulsion vents are hidden. The overall impression is deceptively harmless; corporate marketing deliberately emphasizes its 'friendly' spheroid shape to contrast with the brutality of its function.",
+    "dimensions": "148mm diameter (spherical); pressurized adhesive canister protrudes approximately 35mm at deployment axis",
+    "weight_description": "Dense and hefty in hand—890 grams loaded gives it significant heft, making it feel more like a weighted ball than a delicate drone. The mass distribution is perfectly balanced around the sphere's center.",
+    "primary_material": "Reinforced carbon-polymer composite chassis with impact-resistant elastomer coating; internal frame of lightweight titanium alloy to manage pressurized payload; adhesive canister is aerospace-grade aluminum with pressure-relief valve assembly",
+    "finish": "Matte charcoal-black outer shell with a slight rubberized texture for grip; brushed aluminum canister cap with minimal reflection; wear patterns typically show micro-abrasions from handling and deployment cycles",
+    "color_scheme": "Matte black primary body; satin aluminum canister cap; faint RINGO CORPORATION blue accent striping around the equator (optional fleet identification); warning label yellow/red pressure indicators near canister valve",
+    "grip_texture": "The elastomer coating provides a soft, slightly tacky grip texture—intentionally forgiving to reduce accidental deployment from fumbling. No sharp edges or uncomfortable pressure points.",
+    "distinctive_features": [
+      "Pressurized adhesive canister bulge with relief valve cap (brushed aluminum, threaded for proprietary solvent cartridge access)",
+      "Four micro-propulsion vents arranged symmetrically on the sphere (barely visible, sensor-optimized)",
+      "Central biometric telemetry node—a small graphite-black sensor cluster approximately 8mm wide, embedded flush with the surface",
+      "RINGO CORPORATION serial plate stamped on the equator (6cm × 1.5cm, white lettering on matte black)",
+      "Thermal imaging window (appears as a slightly raised 12mm × 12mm square with faint amber tint) near the deployment axis",
+      "Pressure gauge dial (small, 2cm diameter) visible through a recessed window—reads compound charge status",
+      "Micro-LED status indicator (triple-color: green/yellow/red) recessed just above the thermal window"
+    ],
+    "manufacturer_markings": "RINGO CORPORATION logo (a stylized shipping container with motion lines) stamped on the equator in white; serial number and batch code laser-etched below the logo; 'AADD-2 BARNACLE' designation stenciled in small lettering; Meridian Chemical Control Act compliance plate (white safety label) adhered near the canister cap",
+    "condition_typical": "Field units typically show minor cosmetic wear—light scuffs on the matte finish, occasional adhesive residue around the canister valve from rapid-deployment cycles, small dents from impact landings. Well-maintained corporate fleet units appear nearly pristine; field-operated bounty hunter units often bear visible stress marks and jury-rigged solvent-release holders attached magnetically to the sphere. The pressure gauge dial often shows discoloration from repeated charging cycles."
+  },
+  "image_prompt": "Product photography of a spherical AADD-2 'Barnacle' drone, approximately grapefruit-sized, matte charcoal-black carbon-polymer shell with satin aluminum pressurized canister bulge visible on one side. Drone resting on a dark matte surface (industrial concrete or brushed steel) with dramatic side-lighting creating sharp shadows and subtle highlights on the sphere's curve. Close-up detail visible: brushed aluminum canister cap with pressure-relief valve, RINGO CORPORATION equatorial branding in white lettering, small thermal imaging window with amber tint, micro-LED status indicator glowing soft green. A single gloved hand (corporate security contractor gray glove, synthetic leather) hovering near the sphere, palm-up, suggesting careful handling. Background: deep charcoal to black gradient, cyberpunk-minimalist. Lighting: hard side-light from upper left, creating a sharp black shadow on the right side of the sphere, emphasizing the sphere's perfect geometry and the slight raised texture of the elastomer coating. Small depth-of-field blur on background RINGO branding materials barely visible in soft focus. Cinematic, cold, corporate aesthetic. --ar 3:2 --v 6"
 }

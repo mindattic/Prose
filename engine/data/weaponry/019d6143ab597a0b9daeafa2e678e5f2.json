@@ -38,5 +38,32 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus PX-1 'Phantom'",
+    "Carrion Defense Works Neural Lash NL-3 'Agony'",
+    "Charnel Propulsion",
+    "TESSERA PG-2 'Signature'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, predatory instrument resembling a hybrid between a precision medical injector and a tactical dart gun. The silhouette is angular and organic—curved grip flowing into a tapered barrel that suggests calculated lethality. The overall impression is of something designed by someone who understands both neurology and ballistics.",
+    "dimensions": "32 cm length, 8 cm width at grip, 6 cm height. Barrel length: 14 cm. Compact enough to conceal in a shoulder holster, substantial enough to feel intentional in hand.",
+    "weight_description": "Surprisingly light at 1.2 kg—it feels almost delicate, with a perfectly balanced center that makes micro-aiming effortless. The lightness is unsettling; it doesn't feel like it should do what it does.",
+    "primary_material": "Aerospace-grade carbon composite frame with anodized aluminum barrel shroud. The propulsion chamber is reinforced titanium.",
+    "finish": "Matte gunmetal gray with a subtle iridescent sheen that shifts faintly under light—a result of the neural-conductive coating. The barrel has a mirror polish that reflects in thin lines.",
+    "color_scheme": "Charcoal gray primary with accent striping in bioluminescent cyan along the pressure release vents and trigger guard. Small golden serial numerals catch light.",
+    "grip_texture": "Textured silicone wrapped around a narrow polymer core—ergonomic enough for extended hold, with tiny hexagonal indents for finger lock. Slightly tacky to encourage steady aim.",
+    "distinctive_features": [
+      "Four precision dart magazine slots visible along the left side, each cradling a razor-thin projectile with a micro-transmitter node at the tip",
+      "Twin pneumatic pressure vents on the underbarrel that glow faint blue when charged",
+      "Minimalist LED indicator (single dot) on the rear receiver—green when armed, amber when recharging",
+      "Weapon name 'SCREAM' etched in micro-font along the receiver in chrome inlay",
+      "Micro-capacitor bank visible through a small transparent window on the grip—tiny red diodes pulse softly when powered",
+      "Calibration notches along the sight rail for distance compensation",
+      "Almost no external moving parts—the design prioritizes stealth and precision over visual aggression"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS logo (stylized wasp head) stamped in matte relief on the barrel shroud. Serial plate on grip with micro-etched manufacture date. Patent markings for neural-interface delivery system on the receiver.",
+    "condition_typical": "Field-maintained and meticulous. These weapons are rarely seen dirty—owners understand that a single fiber of debris can compromise the micro-transmitter payload. Usually shows minor handling marks but pristine bore and magazine housing."
+  },
+  "image_prompt": "Product photography of the Vespid Dynamics Neural Feedback Dart NFD-2 'Scream' on a dark matte black surface, held at a 45-degree angle in a gloved hand wearing tactical gray neoprene. Dramatic side-lighting casting sharp shadows, cool cyan accent lighting illuminating the pressure vents and LED indicator. The dart magazine glints with metallic precision. Shallow depth of field focusing on the weapon's tapered barrel and micro-transmitter dart tips. Dark cyberpunk aesthetic, clinical and menacing, suggesting medical precision weaponization. Minimalist composition emphasizing the weapon's sleek, dangerous elegance. --ar 3:2 --v 6"
 }

@@ -44,5 +44,24 @@
     "Ambrosia Fekete-Waiyaki",
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
     "Shelf Zipline Network"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek fingerless gloves with a technical, modular aesthetic. Slate blue leather palms contrast with charcoal knit backs. Compact rolled finger-caps sit at the wrist like armored bracelets, ready for deployment. The design reads as practical and augmentation-aware—clean lines, minimal excess.",
+    "fit": "Snug over the hand and wrist with elasticated chrome-knuckle gussets that accommodate both organic and synthetic fingers. The rolled caps add no bulk when stowed. Designed for precision grip without compromising dexterity.",
+    "primary_material": "Slate blue synthetic leather palm (durability and grip); charcoal thermal knit back panel (heat retention); reinforced chrome-elasticated gussets at knuckles",
+    "texture": "Smooth, treated synthetic leather on palm with slight texture for grip; soft, dense thermal knit on back; elasticated gussets feel firm and structured",
+    "color_scheme": "Slate blue synthetic leather contrasted with charcoal thermal knit; chrome accents at knuckles; neutral grey-blue palette with industrial metallic highlights",
+    "closures": "Dual micro-zippers on rolled caps (one per glove) for secure attachment; elasticated wrist opening with chrome-reinforced gusset system",
+    "distinctive_features": [
+      "Modular zip-on/off full-finger caps stored rolled at wrist",
+      "Chrome-knuckle elasticated gussets designed to fit over cybernetic hand augmentations",
+      "Fingerless design prioritizes tactile work while thermal caps provide cold-weather conversion",
+      "Solberg-Maru branding embossed on palm in matte finish",
+      "Micro-zip design minimizes snag risk in industrial environments"
+    ],
+    "tier_indicator": "Tier 2-3 functional luxury. Premium materials and augmentation-aware design suggest corpo or skilled trade access, but the modular, practical focus avoids tier-1 ostentation.",
+    "cultural_context": "Worn by augmented technicians, field engineers, and corpo field operatives. Signals technical competence and investment in reliable gear. The augmentation accommodation marks wearer as either cybernetically enhanced or regularly working alongside augmented colleagues.",
+    "condition_typical": "Pristine when new; develops scuffing on leather palms and slight fraying at knit edges with use. Caps remain crisp; elasticated gussets show compression marks over time."
+  },
+  "image_prompt": "Close-up fashion shot of slate blue and charcoal Solberg-Maru ShiftLayer thermal gloves on a cybernetic hand model, fingerless design showcasing chrome knuckle gussets and precision grip. Rolled thermal caps visible at wrist in matte grey. Hand positioned against an industrial metal surface, dramatic side-lighting casting sharp shadows. Moody GLMZ warehouse backdrop, neon blue accent light reflecting off chrome augmentation. Ultra-sharp detail on texture contrasts between leather and knit. Dark, professional product photography aesthetic. --ar 2:3 --v 6"
 }

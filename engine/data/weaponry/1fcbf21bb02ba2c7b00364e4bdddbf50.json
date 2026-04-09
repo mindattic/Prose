@@ -42,5 +42,39 @@
     "unpowered",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Doru Fofana-Câmpeanu",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Patient Zero",
+    "Photonic Stress Fracture Pistol PSFP-3 'Cleaver'",
+    "Praevex",
+    "Slagworks Industrial",
+    "Steel",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist single-edged chopping blade with aggressive forward weight bias. The silhouette reads as pure function — a wedge-shaped cutting tool scaled to human combat. No curves, no ornamentation, no concessions to elegance. The blade dominates, thick and blunt-backed, tapering to a surgical edge. The grip is almost an afterthought by comparison.",
+    "dimensions": "Total length 75 cm, blade 55 cm, grip approximately 12 cm. Blade width at base approximately 6 cm, tapering slightly toward edge.",
+    "weight_description": "Deceptively hefty. The 2.8 kg weight is concentrated forward, creating pronounced tip-heaviness that pulls downward in the hand. Not unwieldy, but deliberately fatiguing — designed to punish extended use. Feels like swinging a sledgehammer head attached to a baton.",
+    "primary_material": "Aerogel-reinforced tungsten composite — a dark gunmetal alloy with visible striations where the aerogel matrix catches light differently than the tungsten base",
+    "finish": "Matte technical finish with subtle directional brushing. The blade surface shows a faint spiderweb pattern from the aerogel reinforcement — not reflective, slightly textured. No mirror polish. Functional rather than aesthetic.",
+    "color_scheme": "Gunmetal gray-black blade with charcoal handle. No accent colors except occasional dull bronze where the pommel cap meets the grip.",
+    "grip_texture": "Wrapped in industrial-grade rubberized cord, wound tight with visible knots every 2 cm. Slightly tacky, designed for sweat and blood rather than comfort. The pommel is bare tungsten — cold, heavy, a counterweight meant to be felt.",
+    "distinctive_features": [
+      "Pronounced forward weight concentration visible in blade geometry — blade thickens toward the tip rather than tapering",
+      "Unsharpened spine running down the blade's back, flat and sturdy",
+      "Subtle aerogel matrix pattern visible across blade surface under certain angles",
+      "Grip cord shows wear and staining typical of field use",
+      "Pommel finished as a simple tungsten cylinder with knurled grip area",
+      "No crossguard — grip extends directly to blade root",
+      "Edge shows micro-serrations from industrial sharpening — not uniform, but brutally effective"
+    ],
+    "manufacturer_markings": "Iron Point Ammunition stamp on the spine near the pommel — small, pressed into metal without fill. Arcturus Defense Solutions logo (a stylized point symbol) etched faintly on the pommel cap. Model designation 'CF-5' inscribed on the blade spine in utilitarian sans-serif font. No serial number visible — treated as an industrial tool, not a regulated weapon.",
+    "condition_typical": "Well-maintained but marked by serious use. The blade shows micro-scratches across its surface from contact with structural materials — cables, conduits, reinforced barriers. The grip cord is frayed at the edges and darkened by organic residue. The pommel is scuffed from impact. This is a tool that has been worked, not a collector's piece."
+  },
+  "image_prompt": "Product photography of an industrial melee weapon: heavy single-edged falchion with forward-weighted tungsten composite blade, 75cm total length. Photographed on dark matte black metal surface, angled to show the aggressive blade geometry and subtle aerogel matrix pattern across the cutting edge. Hand in tactical glove gripping the rubberized-cord wrap to demonstrate scale and weight distribution. Dramatic side-lighting from cool LED panels creating sharp shadows that emphasize the blade's thickness and the forward weight bias. The grip shows authentic wear and field staining. No reflections on the finish — matte technical surfaces only. Cyberpunk industrial aesthetic, blue-white lighting temperature, clinical and functional composition. Mounted or resting to show the pronounced tip-heavy balance. Close detail of the Arcturus Defense Solutions pommel marking visible. --ar 3:2 --v 6"
 }

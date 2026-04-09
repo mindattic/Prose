@@ -49,5 +49,25 @@
     "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
     "The Corridor",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A classic trucker silhouette with modern street credibility—fitted through the shoulders and chest, cropping at the hip to create a balanced, intentional proportion. The signature yoke seaming across the back creates visual depth and authentic workwear heritage. On-body, it reads as both vintage-adjacent and contemporary, marking the wearer as someone aware of independent streetwear culture.",
+    "fit": "Tailored through the chest and shoulders with a cropped hip length. Not oversized, but not form-fitting—designed to layer over undergarments or light augmentation ports. Sleeve length is standard, cuffs sit at the wrist bone.",
+    "primary_material": "Medium-weight indigo denim, sourced and treated by Suntera's Pilsen workshop. The weave is dense enough for durability but has enough give for comfortable wear over several seasons. Durable enough to withstand street wear and minor impacts.",
+    "texture": "Crisp when new with visible warp-weft structure. With wear, the denim softens and develops a lived-in hand feel. The fabric naturally fades in high-friction zones—thighs, cuffs, pocket edges—creating unique wear patterns. Raw indigo bleeds slightly in the first month; pre-faded versions skip this stage.",
+    "color_scheme": "Available in three finishes: raw indigo (deep, saturated blue with high contrast fading potential), pre-faded light wash (cream and pale blue tones), and deep black that gradually shifts toward greenish-grey as indigo oxidizes and fades. No graphic prints—design relies on seaming, fading, and material authenticity.",
+    "closures": "Vintage-style metal buttons on the front placket and cuffs. No zippers. Simple, functional, repairable.",
+    "distinctive_features": [
+      "Signature yoke seaming across the back shoulders—structural and decorative",
+      "Four-pocket configuration: two chest pockets with button flaps, two side entry pockets",
+      "Medium-weight denim that fades unevenly and uniquely per wearer",
+      "No branding visible except a small woven label at the side seam (Pilsen-district authenticity marker)",
+      "Button cuffs allow for roll-up styling",
+      "Raw-edge hems option available on select colorways"
+    ],
+    "tier_indicator": "Tier 3 with strong Tier 3+ aspirations. Suntera positions itself above fast-fashion corpo retail chains but below luxury designer houses. The price point (Φ180–220 depending on finish) signals someone with disposable income who actively rejects corpo-approved fashion.",
+    "cultural_context": "The Suntera Trucker marks the wearer as part of Pilsen's independent streetwear community—someone who shops outside corpo distribution, values material longevity, and understands that fashion is a statement of values, not just cover. Wearing it signals DIY ethos, local loyalty, and subtle resistance to corporate homogenization. There's a mild gatekeeping element: long-time Suntera wearers recognize each other; others sometimes view the brand loyalty with skepticism.",
+    "condition_typical": "Raw indigo versions look crisp and dark when purchased, then gradually soften and lighten over 6–12 months of regular wear. Pre-faded versions are ready-to-wear with an already-lived-in aesthetic. After a year, the jacket develops character—faded stress points, softened seams, a patina that's individual to the wearer. Well-maintained jackets last 5–10 years; they're meant to be repaired, not replaced."
+  },
+  "image_prompt": "A Suntera Denim Trucker jacket displayed on a slender, mixed-heritage cyberpunk model in a moody Pilsen warehouse setting. The model wears the raw indigo version, showcasing the rich blue denim and visible yoke seaming. Moody amber and teal neon backlighting casts long shadows across exposed brick walls. The model's posture is relaxed but intentional—hand in a side pocket, slight turn to emphasize the jacket's cut. Close detail shot of the chest pocket button flap and another of the yoke seaming visible from the back. Film grain, high contrast, cinematic depth. Shot with subtle augmentation glint at the model's neck/collarbone hinting at subdermal tech. Dark, street-level atmosphere. --ar 2:3 --v 6"
 }

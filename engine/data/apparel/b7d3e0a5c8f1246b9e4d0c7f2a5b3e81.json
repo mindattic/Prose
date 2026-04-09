@@ -47,5 +47,28 @@
     "Ilhan Nakamura-Bello",
     "MERIDIAN",
     "O'Hare Sovereign"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Heavy-duty work glove with pronounced bulk through the palm and forearm, tapering slightly at the wrist. Salt-weathered exterior with high-visibility orange stripe creates a utilitarian, no-nonsense silhouette. Extended cuff sits mid-forearm, suggesting serious industrial purpose.",
+    "fit": "Relaxed, generous fit designed for layering under dock gear. Right glove has functional cutaways at thumb and index fingertip. Adjustable wrist strap allows customization for both biological and prosthetic limbs.",
+    "primary_material": "Recycled wool blend outer shell, closed-cell neoprene insulation core, silver mylar vapor barrier inner lining",
+    "texture": "Rough, salt-crusted exterior with visible wear and staining. Neoprene provides subtle quilted appearance. Mylar lining adds subtle shimmer when cuff folds back.",
+    "color_scheme": "Cream-grey base with heavy salt staining and dark patina spots. Bright orange reflective stripe running horizontally around cuff. Inner lining shows silver-grey mylar.",
+    "closures": [
+      "Adjustable fabric wrist strap with friction-fit closure",
+      "Chrome-arm variant features ratchet strap for prosthetic seal"
+    ],
+    "distinctive_features": [
+      "Cutaway thumb and index finger (right glove only) for bare-skin scanner operation",
+      "Reflective safety stripe at cuff",
+      "Tether-clip attachment point on wrist strap",
+      "Extended mid-forearm cuff with reinforced sealing lip for prosthetic interface",
+      "Visible salt-weathering and dock-use patina",
+      "Heavy quilted insulation visible at joints"
+    ],
+    "tier_indicator": "Tier 3-4 functional industrial wear — affordable, practical equipment for working-class dock labor",
+    "cultural_context": "Worn by cryo-chain handlers, freight dock workers, cold-storage personnel in GLMZ port zones. Signals blue-collar labor, Lake Meridian affiliation, and routine exposure to sub-zero environments. Chrome-arm variants indicate mixed-augmentation workforce integration.",
+    "condition_typical": "Heavily weathered and salt-stained from daily dock exposure. Cuff edges show fraying. Patches of white salt residue. Mylar lining visible at finger cutaways from repeated scanner use. Well-broken-in and functional despite cosmetic wear."
+  },
+  "image_prompt": "Close-up fashion shot of a worn Dockside IsoKnit Cryo-Handler Glove on a diesel-stained industrial worker's hand, positioned near a frost-rimed cryo-container. Right glove with visible finger cutaways shows bare skin at fingertips. Orange reflective stripe glows under cold blue warehouse lighting. Moody, high-contrast shot emphasizing salt staining and neoprene texture. Dark industrial dock background with Lake Meridian shipping containers. Cyberpunk realism style. --ar 2:3 --v 6"
 }

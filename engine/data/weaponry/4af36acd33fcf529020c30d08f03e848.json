@@ -42,5 +42,41 @@
     "close_quarters",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Ebele Medina-Quaye",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Kairos",
+    "MERIDIAN",
+    "Narrowcast",
+    "Nika Svensson-Kone",
+    "Noir Dining",
+    "Shelf Life",
+    "Switchblade Alley",
+    "The Question",
+    "The Shelf",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally minimalist pump-action shotgun stripped to its functional skeleton. Aggressive forward-swept silhouette dominated by a short, thick barrel with pronounced heat shield. Pistol grip extends downward like a clenched fist. No stock, no rails, no unnecessary geometry—pure violence compressed into a 56cm package.",
+    "dimensions": "Overall length: 56 cm | Barrel length: 14 cm | Height with grip: ~20 cm | Width at receiver: 5 cm",
+    "weight_description": "Dense and front-heavy at 2.5 kg—substantial enough to feel purposeful, light enough for one-handed carry. The weight sits forward in the barrel assembly, creating leverage pressure in the grip.",
+    "primary_material": "Steel receiver and barrel with reinforced aluminum pump mechanism. Polymer furniture on grip and heat shield mounting points.",
+    "finish": "Mil-spec matte black on steel surfaces with functional wear—scuffs and handling marks. Heat shield shows oxidized steel with brushed finish in high-contact areas. Bare aluminum visible at pump rails from repeated cycling.",
+    "color_scheme": "Flat black primary with brushed steel/aluminum accents. Bare brass bead sight glints dully at muzzle. Heat shield slots reveal burnt orange interior from barrel heat.",
+    "grip_texture": "Stippled polymer—aggressive micro-texture for wet-hand retention. Slight contour to cradle palm. Pump handles wrapped in thin rubberized coating, worn smooth at contact points.",
+    "distinctive_features": [
+      "Prominent ribbed barrel heat shield with lateral cooling vents",
+      "Brass bead sight soldered directly to barrel—no adjustment, point-and-aim",
+      "Exposed pump rod with knurled grip texture",
+      "Charging handle positioned for single-handed operation",
+      "Magazine tube cap worn shiny from loading",
+      "Visible gas tube seams running along top of receiver",
+      "Trigger guard sized for gloved operation",
+      "Sling loop welded at receiver rear"
+    ],
+    "manufacturer_markings": "MERIDIAN MUNITIONS stamped in block letters on left receiver flat. Serial number etched below. 'DEFENDER-12' roll-marked on barrel. Gauge marking (12) stamped near magazine tube. Minimal branding—utilitarian manufacturer stamp only.",
+    "condition_typical": "Field-worn but maintained. Polymer shows handling scuffs. Steel surfaces exhibit light rust bloom in sheltered areas—typical of Shelf humidity exposure. Heat shield interior blackened from use. Bead sight shows wear marks from aiming. Magazine tube cap shows repeated hand oils and wear polish."
+  },
+  "image_prompt": "Product photography of a Meridian Munitions Defender-12 shotgun lying on dark gunmetal surface. Weapon angled 45 degrees to showcase pistol grip, ribbed heat shield with cooling vents, and brass bead sight. Gloved hand (tactile polymer glove) gripping receiver. Dramatic side-lighting emphasizing barrel texture, heat shield geometry, and matte black finish. Dark teal and burnt orange accent lighting reflecting off aluminum pump rails. Cyberpunk industrial aesthetic with shallow depth of field. Studio background: blurred neon signage suggesting Shelf alley setting. Cinematic, gritty realism. --ar 3:2 --v 6"
 }

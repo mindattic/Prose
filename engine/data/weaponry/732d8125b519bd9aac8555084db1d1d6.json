@@ -45,5 +45,35 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Breck Tannen",
+    "Focadrin",
+    "Nika Svensson-Kone",
+    "TESSERA ES-4 'Perimeter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modular precision rifle with a distinctly corporate aesthetic. The integrated smart-scope dominates the upper receiver as a pronounced hexagonal turret, bristling with sensor arrays and optical elements. The profile is angular and purposeful—clean lines interrupted by purposeful technical details. The weapon reads as intelligent surveillance hardware first, lethal tool second.",
+    "dimensions": "Overall length: 1,120mm. Barrel length: 560mm. Smart-scope turret: 85mm long, 65mm diameter. Magazine well positioned for rapid reloads.",
+    "weight_description": "Balanced and manageable at 4.5kg, with the mass distributed toward the scope turret. Feels slightly nose-heavy when shouldered, demanding steady cheek-weld technique. The balance point suggests hours of precision work rather than spray-and-pray engagement.",
+    "primary_material": "Aerospace-grade carbon composite chassis with reinforced polymer furniture. Smart-scope housing is brushed titanium alloy with embedded sensor ports. Barrel is chrome-molybdenum steel.",
+    "finish": "Matte gunmetal gray on the composite surfaces with a subtle brushed sheen on titanium components. The finish is deliberately subdued—corporate discretion rather than tactical flash. Minor wear patterns on the charging handle and magazine well suggest field deployment.",
+    "color_scheme": "Matte gunmetal-gray primary with brushed titanium accents on the scope turret. Subdued Arcturus blue accent striping along the receiver rail (corporate branding, minimal). Black rubberized grip and foregrip.",
+    "grip_texture": "Textured thermoplastic grip with subtle finger grooves, designed for prolonged shooting sessions. Cool to the touch, non-slip even when wet. Foregrip is wrapped in rubberized polymer with fine crosshatch pattern for weapon-mounted sensor cable management.",
+    "distinctive_features": [
+      "Hexagonal smart-scope turret with visible sensor clusters and LED indicator ring (currently dark)",
+      "Thin optical window showing multi-layered lens assembly",
+      "Recessed BCI neural link port on the left side of the scope housing (protected by magnetic dust cap bearing Arcturus logo)",
+      "Three heat vents positioned along the receiver rail for thermal management during sustained operation",
+      "Integrated cable management channels running along the rail system",
+      "Soft-touch polymer coating on all user contact surfaces",
+      "Subtle Arcturus 'A' logo etched into the magazine well",
+      "Ambidextrous safety lever with detent click mechanism",
+      "Quick-detach magazine release with indexed rotational design"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo and 'ADM-10 OVERSEER' designation etched into the dust cover in corporate sans-serif font. Serial number engraved on the lower receiver. 'BLACKWOOD COMMERCIAL GROUP' stamped discreetly on the barrel collar in 4-point font. Compliance markings and caliber designation marked on the magazine.",
+    "condition_typical": "Well-maintained and field-ready. This is a corporate asset with regular service cycles. You'd see minor scuff marks on the composite surfaces but no pitting or corrosion. The smart-scope shows signs of active use—slight dust accumulation in the sensor ring, but lens surfaces are clean. This weapon is regularly calibrated and updated."
+  },
+  "image_prompt": "Product photography of the ADM-10 Overseer DMR rifle displayed on a dark reflective surface, angled 45 degrees right. The rifle is held in the grip of a gloved corporate security hand (chrome-knuckled tactical glove visible). Dramatic side-lighting from upper left, creating sharp shadows that emphasize the hexagonal smart-scope turret and sensor array details. Cool blue accent lighting on the BCI port area to suggest active neural interface capability. Background is deep gunmetal gradient fading to black. Show the brushed titanium smart-scope housing in sharp detail with visible lens layers and sensor clusters. Include subtle corporate surveillance aesthetic—hint at digital overlay effect in the scope window without being explicit. Cyberpunk precision weaponry, institutional security contractor tool. High-tech military-industrial aesthetic. Shot at macro detail on scope, environmental at rifle. --ar 3:2 --v 6"
 }

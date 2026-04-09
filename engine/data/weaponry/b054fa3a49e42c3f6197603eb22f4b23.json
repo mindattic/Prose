@@ -39,5 +39,31 @@
     "tier_1",
     "concealed"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Dawnlight Industries LuxDefend LD-1 'Clutch'",
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A slim, protective smartphone case with a subtly aggressive aesthetic. At first glance, it reads as premium protective gear — businesslike and utilitarian. The textured grip ridges running vertically down both sides are the only hint of its dual purpose, creating a faintly tactical appearance beneath the veneer of consumer tech accessory.",
+    "dimensions": "Approximately 15.5cm height × 7.8cm width × 0.8cm depth (case only, fitted to standard smartphone form factor). Adds negligible bulk to any contemporary mobile device.",
+    "weight_description": "Balanced and hand-friendly at 42 grams — light enough to feel like standard protective gear, with subtle weight distribution that places the stun capacitors' mass near the grip ridges. Feels confident in hand without revealing its purpose.",
+    "primary_material": "High-impact thermoplastic polymer (TPE) composite base with reinforced edges. Internal conductive mesh embedded within grip structure. Micro-USB charging port discretely integrated into bottom edge.",
+    "finish": "Matte charcoal black with brushed texture throughout. The grip ridges feature a finely crosshatched pattern that mimics rubberized traction ridges but actually houses the electrode contacts. No shine or gloss — deliberately understated.",
+    "color_scheme": "Flat charcoal black primary with gunmetal gray accent lines tracing the electrode pathways beneath the surface texture. Minimal branding in muted silver foil.",
+    "grip_texture": "Deeply textured crosshatch polymer with microridges that feel like premium industrial grip tape. The ridges are intentionally pronounced to suggest ruggedness while concealing electrode contacts. Slightly tacky grip ensures confident handling during normal phone use and during activation sequence.",
+    "distinctive_features": [
+      "Nearly invisible electrode contact points hidden within grip ridge texture",
+      "Micro-USB charging port (bottom edge, flush-mounted) separate from phone's charging system",
+      "Minimal LED indicator (single pale blue light, concealed beneath top edge) blinks when fully charged",
+      "Precisely molded grip ridges that align electrode contacts with palm edges and fingertips at optimal contact points",
+      "Perfectly flush screen cutout — no raised bezel that might hint at internal complexity",
+      "Volume button pass-through with subtle pressure-point marking (nearly undetectable to untrained eye)"
+    ],
+    "manufacturer_markings": "UMBRALINE PERSONAL DEFENSE etched in tiny serif capitals (3mm high) on the bottom rear edge. Serial number printed on interior case lip. Discreet radioactive trefoil symbol (2mm diameter) near charging port indicating electrical component. Genuine units feature a holographic authenticity seal on the interior back panel.",
+    "condition_typical": "Pristine and presentable in formal market. Field units show minor cosmetic wear — micro-scratches on edges, slight discoloration of grip ridges from sweat and oil contact, occasional dust accumulation in texture. Even well-used examples maintain their deceptive appearance as standard protective cases. Counterfeit versions often have rough texturing, inconsistent grip ridge depth, and visible electrode contact points."
+  },
+  "image_prompt": "Product photography of Umbraline PhoneShell PS-X 'Last Call' phone case mounted on a jet-black matte surface, shot from three angles: front grip view showing crosshatched texture, side profile displaying electrode ridge integration, and detail shot of concealed micro-USB port. Dramatic side-lighting emphasizing the subtle topography of grip ridges with cool blue-gray accent light. Hands wearing tactical gloves (charcoal leather) positioned to show both normal grip and activation grip pattern. Dark cyberpunk aesthetic with moody tungsten backlighting. Shallow depth of field isolating the case's texture details. Clean minimal composition befitting a consumer defense product catalog. The phone inside remains deliberately obscured — we see only the protective case itself. Include small text label reading 'Φ160' and 'UMBRALINE PERSONAL DEFENSE' positioned discretely in frame. --ar 3:2 --v 6"
 }

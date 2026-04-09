@@ -38,5 +38,26 @@
     "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
     "Nodar Kuznetsov-Adu",
     "TESSERA TC-3 'Crucible'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Imposing and utilitarian, the Welding Crown dominates the head with its broad, angular silhouette. The auto-darkening visor creates a dark, reflective face that reads as both protective and slightly ominous. Crown-mounted ventilation ducts rise from the sides like mechanical gills, giving it an almost organic-industrial hybrid appearance. Worn by fabrication workers and scrappers, it signals hands-on labor and technical competence.",
+    "fit": "Oversized and deliberately bulky, designed to sit low over the brow with a snug rear-crown strap system. The helmet extends well beyond natural head dimensions, creating negative space around the face. Heavy enough to require proper neck support; the weight is distributed through reinforced shoulder points integrated into the upper torso.",
+    "primary_material": "Heat-resistant ceramic composite shell exterior over an impact-rated polymer subframe. The visor is specialized electrochromic glass with rapid-response liquid crystal technology. Internal padding is thermally treated synthetic foam.",
+    "texture": "The ceramic exterior is matte and slightly rough, with visible stress lines and micro-fractures from repeated thermal cycling. The visor glass is smooth but often shows circular arc-burn marks and oxidation streaks. Ventilation ducts have a ribbed, functional texture.",
+    "color_scheme": "Gunmetal gray ceramic with deep charcoal polymer frame. The visor ranges from transparent clear to deep charcoal-black depending on activation state. Accent orange warning stripes run along the crown ventilation system. Occasional rust-orange oxidation blooming on older units.",
+    "closures": "Friction-fit rear crown strap with adjustable tension locks. Side magnetic clasps secure the visor in open position. No traditional buckles — all closures are tool-free quick-release for emergency removal.",
+    "distinctive_features": [
+      "Electrochromic auto-darkening visor with 0.3ms response time",
+      "Crown-mounted air filtration and circulation ducts",
+      "Ashcroft Industries stamped logo on left temple",
+      "Welding spatter scars and impact dimples across ceramic surface",
+      "Integrated thermal sensors in the polymer frame (barely visible)",
+      "Reinforced chin guard for debris protection",
+      "Ventilation grilles with replaceable particulate filters"
+    ],
+    "tier_indicator": "Tier 3-4 functional workwear. Standard-issue equipment, widely affordable, no luxury markers. Signals technical skill and industrial work rather than status.",
+    "cultural_context": "Worn by crucible fabricators, autodoc technicians, arc-welders, and fabrication yard workers. Recently adopted as street art icon in Shelf districts, representing analog labor dignity against corpo-abstraction. Sometimes worn by Tier 5 scrappers as a badge of survival and practical competence.",
+    "condition_typical": "Well-used and showing wear — accumulated spatter burns, ceramic micro-cracks, slightly yellowed visor from cumulative arc exposure, worn strap edges. Fully functional but bearing the honest patina of industrial work. Rarely pristine unless recently issued."
+  },
+  "image_prompt": "Brutal cyberpunk product shot of an Ashcroft Industries Welding Crown mounted on a dark industrial mannequin head against a weathered steel backdrop. The helmet dominates the frame, its matte gunmetal ceramic shell catching hard neon blue and orange accent lighting. The visor is partially activated, showing deep charcoal opacity with faint arc-burn reflection. Crown-mounted ventilation ducts cast sharp shadows. Foreground shows a heavy workbench with welding tools. Moody, industrial atmosphere. Shot from 3/4 angle, slight upward tilt to emphasize the imposing silhouette. Raw, grainy film quality. --ar 2:3 --v 6"
 }

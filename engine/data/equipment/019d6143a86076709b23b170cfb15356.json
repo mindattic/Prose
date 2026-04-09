@@ -81,5 +81,24 @@
     "The Bazaar",
     "The Nearfield",
     "VitaCore BloomFilter Olfactory Modulation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, medical-grade pressurized canister topped with an integrated auto-injector mechanism. The form resembles a high-end aerosol inhaler crossed with a pharmaceutical delivery system — utilitarian and clinical, but engineered for one-handed emergency deployment. The canister body is rigid and cylindrical with a slightly tapered grip zone.",
+    "dimensions": "Approximately 15cm tall, 5cm diameter at widest point — slightly larger than a standard spray deodorant canister, designed to fit inside an emergency medical pouch or duty belt holster.",
+    "weight_description": "0.9kg total (canister plus injector assembly) — handheld, easily carried in a medical rig or jacket pocket; noticeable but not burdensome.",
+    "primary_material": "Aircraft-grade aluminum alloy body with medical-grade polycarbonate pressure gauge housing and injection mechanism.",
+    "finish": "Matte anodized aluminum with a subtle brushed texture to prevent slipping during emergency use. The polycarbonate gauge window is semi-translucent with faint UV reactive elements.",
+    "color_scheme": "Clinical silver-grey primary body with accent striping in Lazarus's signature teal-blue. Pressure gauge dial face features black numerals on white with a red warning threshold line. Injectable tip is metallic gunmetal.",
+    "interface_elements": "Pressure gauge with rotating dial (0–500ml capacity indicator), tactile grip-sensor pad on the barrel (reads patient weight via brief contact), safety release lever (slide-to-unlock), and a single illuminated status indicator (green = ready, amber = partial pressure, red = expired/compromised). Injection port at canister tip is standard 18-gauge IV-compatible.",
+    "distinctive_features": [
+      "Rotating capacity dial that visibly depletes as suspension is dispensed",
+      "Grip-sensor technology that auto-calibrates flow rate — displays estimated patient weight on micro LCD (1cm x 0.5cm) mounted on barrel",
+      "Safety lever with tactile 'click' feedback that prevents accidental discharge",
+      "Faint holographic Lazarus Pharmaceuticals seal on the canister body that changes color under different light angles",
+      "Pressure relief valve marked with a small Φ symbol (QUANTA pricing indicator)"
+    ],
+    "manufacturer_markings": "Embossed 'LAZARUS MEDICAL DEVICES' across top band. Smaller text: 'HEMOLYTIC SUSPENSION MATRIX | Lot/Expiry Date' printed on lower body. Regulatory compliance stamps: GLMZ Medical Authority approval seal, ISO emergency medical standard markings, and biohazard symbol (faint amber).",
+    "condition_typical": "Used units show micro-scratches on the aluminum from field rig contact and fingerprints on the polycarbonate gauge window. Pressure indicator needle will visibly recede after use. Grip sensor shows minimal wear but may have residual organic matter from patient contact — always wiped clean between uses."
+  },
+  "image_prompt": "Product photography of a Lazarus Pharmaceuticals Hemolytic Suspension Matrix canister on a stainless steel medical workbench. Dramatic overhead lighting casts sharp shadows. The canister is positioned at a 45-degree angle, pressure gauge facing camera. Teal-blue accent stripes glow subtly under cool LED work lights. Blurred syringe and surgical instruments in the background suggest emergency medical context. Shallow depth of field isolates the device. Cyberpunk aesthetic: clinical, sterile, but with an undercurrent of street-level necessity. Gritty, high-contrast lighting. --ar 3:2 --v 6"
 }

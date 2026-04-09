@@ -66,5 +66,23 @@
     "TESSERA PG-2 'Signature'",
     "The Dead Channel",
     "Vantablack Media"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A translucent, paper-thin adhesive membrane with an iridescent black finish that seems to absorb light rather than reflect it. When applied to skin, it becomes nearly invisible at casual distance, appearing as a subtle sheen or faint prismatic distortion. The surface has a soft, matte quality broken only by gossamer-thin conductive traceries visible at oblique angles.",
+    "dimensions": "Facial overlay variant 22cm x 14cm; forearm variant 18cm x 8cm; thickness approximately 0.3mm",
+    "weight_description": "Sub-30 grams — lighter than a postage stamp, completely imperceptible when worn",
+    "primary_material": "Biocompatible elastomer substrate with embedded graphene conductive mesh and piezoelectric microlayers",
+    "finish": "Vantablack-coated surface with anti-reflective nanotexture; edges slightly raised and beveled for seamless adhesion",
+    "color_scheme": "Deep absorption black with hints of oil-slick iridescence at acute viewing angles; subtle silver tracery of conductive pathways visible under close inspection",
+    "interface_elements": "Minimal — microscopic application nodes at corners; integrated bioelectric harvest sites calibrated to skin conductivity; no visible indicators, buttons, or screens",
+    "distinctive_features": [
+      "Liquid-like surface that catches light as though it's drinking photons",
+      "Barely-perceptible circular harvest nodes (3mm diameter) positioned at pulse points",
+      "Hairline conductive pathways forming organic circuit patterns reminiscent of neural tissue",
+      "Sealed edge trim with subtle holo-reactive security gradient visible only under specific wavelengths"
+    ],
+    "manufacturer_markings": "Microscopic Vantablack Media logo embossed at one corner; invisible unless backlit; regulatory cipher stamps in UV-reactive ink along lower edge",
+    "condition_typical": "When worn on face: appears as cosmetic skin treatment or subtle AR display artifact; slight thermal blooming around edges if actively transmitting; after 48+ hours shows minor creasing at articulation points (jaw, neck, wrist)"
+  },
+  "image_prompt": "Close-up product shot of a Vantablack Media Parasocial Carrier Mask overlay adhesive patch displayed on a workbench. The mask is partially applied to translucent silicone skin model, showing both sealed and peeling edges. Dramatic side-lighting reveals the mesh of nearly-invisible conductive traceries embedded in the ultra-thin black membrane. Soft neon blue accent lighting highlights the barely-perceptible harvest nodes. Background shows worn composite workbench with scattered application tools, regulatory documentation with UV-reactive stamps, and a disconnected AR display. Cyberpunk aesthetic with cold color grading, shallow depth of field. --ar 3:2 --v 6"
 }

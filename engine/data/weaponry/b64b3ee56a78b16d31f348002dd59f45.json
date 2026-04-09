@@ -43,5 +43,40 @@
     "anti-cyberware",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions Compressed Lattice Ascender",
+    "Crucible Genomics",
+    "Crucible Industries Siege-12 'Battering Ram'",
+    "Forge-Smith Collective Thermal Cleave 'Ember'",
+    "GLMZ",
+    "Ihaia Nystrom-Keita",
+    "Ilhan Sandstrom-Badu",
+    "Kang-Petrov Arms KPM-6 'Equalizer'",
+    "Meridian Core",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Nneka Lindqvist-Okafor",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist statement piece — massive ceramic knuckle guards that completely envelope the fist, transforming the hand into a blunt geometric weapon. The silhouette is deliberately monolithic and aggressive, with sharp angular edges and a top-heavy appearance that reads as industrial weaponry rather than sporting equipment.",
+    "dimensions": "12 cm length (fingertip to wrist coverage), 8 cm width across knuckle face, 6 cm depth. Impact surface roughly 40 cm² of concentrated striking area.",
+    "weight_description": "Substantial and deliberate — 600 grams of solid ceramic per hand creates a noticeable drag that demands commitment from the wearer. Not light, but balanced enough for single power strikes; rapid combinations would induce fatigue.",
+    "primary_material": "Solid Ablonite-KR ceramic block — a dense, engineered ceramic compound with extreme hardness and reactive thermal properties on ferrous contact.",
+    "finish": "Matte ceramic surface with subtle tool marks and machine-smooth facets. The striking face shows a finely honed edge with slight surface irregularities from precision machining. No polish — functionality over aesthetics.",
+    "color_scheme": "Industrial grey-white ceramic with subtle warm undertones from the mineral composition. Some units show faint heat-stress discoloration (amber/rust streaking) from repeated reactive impacts against cyberware.",
+    "grip_texture": "Ergonomic inner palm contact features subtle knurling or textured grip zones molded into the ceramic. The underside and finger cavities are precision-fitted but bare ceramic — designed for direct skin contact without padding.",
+    "distinctive_features": [
+      "Full-fist envelope coverage with individual finger guard channels",
+      "Prominent knuckle ridge running across the striking face with geometric precision",
+      "Wrist-cuff integration that anchors to the forearm without straps — gravity-fitted",
+      "Heat patina marks and micro-scarring on impact surfaces from ferrous contact burns",
+      "Slight asymmetry in wear patterns indicating dominant-hand preference",
+      "Precision drainage grooves along the palm side (aesthetic or functional thermal management)"
+    ],
+    "manufacturer_markings": "FORGE-SMITH COLLECTIVE embossed discreetly on the inner wrist cuff in sans-serif type. A small batch/serial number stamped into the palm-side arch. No flashy branding — the weapon speaks for itself.",
+    "condition_typical": "Field-worn but meticulously maintained. The ceramic surface shows evidence of impact (micro-fracture lines, heat discoloration) but no structural damage. These are working tools in the hands of dedicated practitioners — battle-scarred but functional."
+  },
+  "image_prompt": "Product photography of massive Ablonite-KR ceramic trench knuckles held in a gloved, muscular hand against dark matte surface. Extreme close-up on the knuckle striking face showing geometric precision, heat-stress discoloration marks, and impact scarring. Dramatic side-lighting that casts hard shadows across the ceramic geometry, emphasizing weight and density. Include tool marks and micro-fractures visible on the surface. Industrial warehouse lighting. Cyberpunk weaponry catalog aesthetic. Dark background. --ar 3:2 --v 6"
 }

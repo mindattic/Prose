@@ -37,5 +37,26 @@
     "GLMZ",
     "Sulfur Crown Agriculture",
     "Variable Impedance Rifle VIR-9 'Switchback'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A crisp, structured patrol cap with a pronounced stiff brim and slightly rounded crown. Clean lines and utilitarian silhouette evoke military-adjacent professionalism without tactical aggression. Sits squarely on the head with subtle forward pitch.",
+    "fit": "True to size, sits level on the crown with a secure but comfortable band. Brim depth ~2.5 inches, provides substantial sun/rain coverage without obstructing peripheral vision. Adjustable rear closure allows for augmentation accommodation (neural jacks, subcutaneous ports).",
+    "primary_material": "High-grade synth-cotton blend with woven micro-ventilation channels throughout the crown. Inner moisture-wicking synth-fabric band. Brim reinforced with rigid composite insert (non-magnetic, non-conductive).",
+    "texture": "Smooth, tightly-woven exterior with subtle channeled pattern visible on the crown. Soft matte finish resists glare. Interior band is soft, slightly brushed texture. Brim edge is cleanly finished with minimal fraying.",
+    "color_scheme": "Available in slate grey, sand beige, or olive drab. Solid, no patterns. Subtle Harrow & Finch embroidered logo on the front panel in matching thread.",
+    "closures": "Adjustable rear closure with friction-fit synthetic strap (no metal hardware to corrode in GLMZ humidity). Modern buckle-free design.",
+    "distinctive_features": [
+      "Micro-ventilation channels woven into crown for extended wear comfort",
+      "Rigid brim insert maintains shape under rain/moisture",
+      "Moisture-wicking inner band prevents sweat accumulation",
+      "Low-profile embroidered branding",
+      "UV-resistant treatment",
+      "Designed to sit over augmentation hardware without pressure points",
+      "Minimal seams to reduce water infiltration"
+    ],
+    "tier_indicator": "Tier 2-3 transitional: affordable quality without luxury pricing, standard issue for private security and working professionals",
+    "cultural_context": "Worn by patrol officers, security contractors, outdoor maintenance workers, street hustlers with steady income, anyone prioritizing function over fashion. Signals reliability and outdoor competence. Not uncommon in mid-tier corpo security uniforms.",
+    "condition_typical": "Breaks in cleanly with wear; develops subtle creasing along the crown and slight patina on the brim from sun exposure. Resists staining and maintains structural integrity through heavy use. Well-maintained examples look nearly new after 2+ years."
+  },
+  "image_prompt": "A structured slate-grey patrol cap displayed on a dark matte mannequin head, positioned at a slight forward angle. Close-up detail shot showing the woven micro-ventilation pattern on the crown. Moody cinematic lighting from the side, casting subtle shadows across the channels. Urban industrial background: rain-slicked concrete wall with faint corporate signage and neon reflection. Cyberpunk aesthetic, professional product photography. --ar 2:3 --v 6"
 }

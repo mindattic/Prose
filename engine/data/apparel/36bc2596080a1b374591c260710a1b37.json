@@ -47,5 +47,25 @@
     "Ringo DV-4 'Courier'",
     "SynapTech Lumen AR Entertainment BCI",
     "Synaptrel"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek moto jacket with aggressive, functional silhouette. Tapered at the waist, broad through shoulders. Asymmetric front creates dynamic visual tension. At rest, appears as premium black leather with subtle textured paneling. When activated, luminous circuit patterns ignite across shoulders, sleeves, and spine — transforming the wearer into a moving light source.",
+    "fit": "Tailored through torso with pre-curved sleeves for riding position. Fitted at waist, relaxed enough for layering. Movement-optimized — not fashion-forward slim, not oversized. Built for function without sacrificing silhouette.",
+    "primary_material": "Matte black synth-leather (petroleum-resistant, temperature-adaptive). Electroluminescent thread embedded in structural weave. Reinforced ballistic panels at impact zones.",
+    "texture": "Smooth synth-leather surface with raised circuit-line texture from embedded EL thread. Slightly quilted at shoulder/elbow protection zones. Matte finish absorbs light when dark; thread creates subtle topography.",
+    "color_scheme": "Deep matte black base. Electroluminescent patterns in cool white or amber (user-switchable). Subtle grey contrast stitching on seams and collar.",
+    "closures": "Asymmetric front zipper (brushed steel pull, YKK industrial grade). Snap-down collar with reinforced rivets. Wrist zippers with friction-fit cuffs.",
+    "distinctive_features": [
+      "Embedded electroluminescent thread in circuit-board aesthetic",
+      "Pulse/glow activation via subdermal QUANTA chip interface",
+      "CE-rated impact armor (shoulders, elbows) — visible as raised panels",
+      "Lumen Arc branding on left sleeve (stylized circuit loop)",
+      "Hidden inner pockets (RFID-lined for courier use)",
+      "Reinforced seams at stress points — visible as double stitching"
+    ],
+    "tier_indicator": "Tier 2-3 crossover. Premium materials and embedded tech push toward Tier 2, but street-brand origin and courier functionality ground it firmly in working-class tier 3 accessibility.",
+    "cultural_context": "Night-shift courier culture. Underground racing crews. Club-goers prioritizing visibility and aesthetic. Anyone who needs to be seen and wants to project controlled danger. Not corpo (too aggressive), not sub-grade (too refined).",
+    "condition_typical": "Pristine when new with activation. Breaks in quickly — creases form at elbows and shoulders. Light scuffing on synth-leather from courier work. EL threads remain bright for 2-3 years before dimming slightly."
+  },
+  "image_prompt": "Cyberpunk fashion photography: model wearing matte black Lumen Arc moto jacket with glowing electroluminescent circuit patterns activating across shoulders and sleeves in cool white light. Shot from three-quarter angle, jacket zipped, collar snapped. Dark urban warehouse backdrop with rain-slicked concrete. Moody neon rim lighting on left side. Model has mixed heritage features, subtle visible augmentation (subdermal wrist port). Shallow depth of field. Cinematic, street-level perspective. --ar 2:3 --v 6"
 }

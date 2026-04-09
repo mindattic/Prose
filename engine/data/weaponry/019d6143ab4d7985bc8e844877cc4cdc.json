@@ -55,5 +55,37 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Jedidiah Sorokin-Faleolo",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA PG-2 'Signature'",
+    "TESSERA TD-3 'Hornet'",
+    "Tessera Nexus Town Car",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, wide-bodied semi-automatic pistol with an oversized cylindrical magazine housing that dominates its lower profile. The weapon presents a squat, purposeful silhouette — less elegant firearm, more precision tool. The drum magazine is the visual anchor, extending the grip area into an almost shield-like form.",
+    "dimensions": "Overall length: 22cm | Barrel length: 8cm | Width (drum-inclusive): 5.5cm | Height: 14cm",
+    "weight_description": "Deceptively light — 1.2kg loaded feels almost insubstantial for its apparent bulk, creating an uncanny disconnect between visual mass and actual heft. Feels perfectly balanced in hand despite the wide magazine well.",
+    "primary_material": "Reinforced polymer frame (impact-resistant engineering-grade blend) with steel barrel assembly and drum magazine chassis. Internal components utilize bioelectric-optimized alloys to house piezoelectric actuators.",
+    "finish": "Matte charcoal polymer with brushed steel accents around the barrel and breech. The drum magazine exhibits a subtle metallic sheen beneath its charcoal finish, suggesting internal mechanical precision.",
+    "color_scheme": "Dominant matte charcoal grey with brushed steel grey highlights. Accent striping in cold blue along the magazine rotation serrations — a subtle nod to Zheng-Dao's bioelectric branding.",
+    "grip_texture": "Textured polymer grip with embedded micro-ridges for positive purchase in wet conditions. The grip wraps around the oversized magazine well, creating a continuous tactile surface. Slightly rubberized where thumb and fingers naturally rest.",
+    "distinctive_features": [
+      "Rotating drum magazine with visible indexing marks — 8 positions for cluster rounds",
+      "Ultra-compact pneumatic discharge port (appears as a small fluted vent above the trigger guard) — responsible for the signature 'pop'",
+      "Zheng-Dao bioelectric activation indicator: a small sapphire-blue LED beneath the safety lever that pulses faintly when piezo-coating is primed",
+      "Deeply recessed muzzle (nearly flush with the frame) to minimize acoustic signature",
+      "Secondary charging handle positioned low on the frame for ambidextrous operation",
+      "Flechette ejection slot integrated into the trigger guard area — subtly beveled to prevent snagging",
+      "Manufacturer serial plate: laser-etched Zheng-Dao ideogram flanked by alphanumeric codes, positioned on the left frame panel",
+      "Wear pattern typically shows minor scuffing around the magazine well from repeated drum rotations"
+    ],
+    "manufacturer_markings": "Zheng-Dao Bioelectric logo (stylized DNA helix rendered as angular Chinese characters) stamped into the right frame panel, just behind the drum magazine. Serial number laser-etched on left frame below the safety. Subtle 'SFL-4' designation engraved near the muzzle. No ornamentation — purely functional marking.",
+    "condition_typical": "Field-maintained and well-cared-for by operators who understand its specialized purpose. Minor cosmetic wear but mechanically pristine. The drum magazine shows wear patterns from regular rotation and indexing. Muzzle may show micro-abrasion from the piezoelectric activation aperture. Rarely heavily battle-worn; operators tend to retire the weapon before it reaches that threshold due to its specialized role."
+  },
+  "image_prompt": "Product photography of the Subharmonic Flechette Launcher SFL-4 'Hornet' mounted on a matte black synthetic surface, shot from a slight overhead angle to showcase the drum magazine's cylindrical profile and rotating indexing marks. Gloved hand (black tactical polymer glove, fingers slightly extended) gripping the weapon from the side to emphasize its unexpected lightness and compact form. Dramatic side-lighting from cool tungsten-blue LED panel creates sharp shadows across the charcoal polymer surfaces, highlighting the brushed steel accents and the faint blue glow of the piezoelectric activation indicator beneath the safety lever. Close-up detail visible on the ultra-compact muzzle and the flechette ejection slot. Zheng-Dao bioelectric logo catches rim light on the frame panel. Fine dust particles visible in the light beam, suggesting an industrial or underground setting. Cyberpunk aesthetic: clinical, precise, morally ambiguous technology. Professional weapons catalog presentation. --ar 3:2 --v 6"
 }

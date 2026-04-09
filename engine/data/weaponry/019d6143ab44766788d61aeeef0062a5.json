@@ -37,5 +37,33 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "GLMZ",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'"
+  ],
+  "physical_description": {
+    "visual_profile": "A crude, brutally functional contraption: a standard commercial aerosol can wrapped in multiple layers of gray duct tape, with a salvaged piezoelectric igniter rig bolted or taped to the nozzle area. Looks simultaneously pathetic and menacing — the aesthetic of desperation weaponized.",
+    "dimensions": "18-22 cm length (with igniter assembly), 6-7 cm diameter at can body, igniter housing adds 3-4 cm forward of nozzle",
+    "weight_description": "Light and awkwardly balanced — the full can feels deceptively substantial until ignited, then becomes increasingly lighter as fuel depletes. Grip-heavy forward, making sustained aiming difficult.",
+    "primary_material": "Aluminum aerosol can (inner), duct tape (outer wrapping), salvaged lighter components (igniter — typically brass or cheap steel), wire or bracket adhesive",
+    "finish": "Matte gray duct tape, worn and peeling in places from handling and heat stress. Visible aluminum showing through rips. Igniter components show tarnish and soot from testing or use. Nozzle may be blackened from flame blow-back.",
+    "color_scheme": "Gunmetal gray (duct tape dominant), dull aluminum showing through tears, dark brass/steel igniter hardware, occasional rust-orange corrosion on metal components",
+    "grip_texture": "Textured roughness of duct tape — sticky, slightly tacky, prone to degrading from heat and friction. Poor ergonomics; no deliberate grip design. Igniter trigger area is bare wire or cheap plastic, uncomfortable and liable to slip.",
+    "distinctive_features": [
+      "Visible duct tape layering, some peeling or bubbling",
+      "Crude wire framework or bracket holding igniter to can",
+      "Scorched and blackened nozzle tip with carbon buildup",
+      "Small piezo igniter button, often hastily soldered or glued in place",
+      "Hairline cracks in duct tape from previous ignition heat",
+      "Possible manufacturer label partially visible under tape (hairspray, WD-40, bug killer, etc.)",
+      "Rough solder joints or epoxy blobs where igniter wiring connects",
+      "Scorch marks and soot staining around the flame exit point"
+    ],
+    "manufacturer_markings": "Original aerosol can label barely visible under duct tape (brand varies: generic spray adhesive, off-brand lubricant, discount hairspray). 'Street Custom' is purely an unofficial street-tier designation; no legitimate maker's mark exists. Possible handwritten initials or gang tags scratched into tape.",
+    "condition_typical": "Heavily worn and battle-scarred. Duct tape is dingy, cracked, and peeling. Soot and burn residue around nozzle. The device is perpetually on the edge of mechanical failure — igniter may be unreliable, tape may be partially melted, nozzle may be clogged with propellant residue. Each use risks catastrophic failure (can rupture, igniter misfire, backflash). Field units show tape repairs over tape repairs."
+  },
+  "image_prompt": "Close-up product photography of a crude improvised flamethrower: a duct-taped aerosol can with a salvaged piezoelectric igniter assembly bolted to the nozzle. Lay weapon diagonally on a matte black steel surface under dramatic side-lighting that highlights the worn gray duct tape texture, peeling edges, and tarnished brass igniter hardware. Show soot and scorch marks around the nozzle tip. Include a gloved hand (chrome-augmented fingers, tactical glove) gripping the can for scale. Cyberpunk aesthetic: gritty, desperate, dangerous. Moody tungsten lighting creating harsh shadows. GLMZ street-tier weapon aesthetic. --ar 3:2 --v 6"
 }

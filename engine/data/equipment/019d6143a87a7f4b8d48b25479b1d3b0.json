@@ -73,5 +73,24 @@
     "The Collective",
     "Tsveta Nwosu-Karlsdóttir",
     "Vantablack Media"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek deployable mesh networking system consisting of twelve identical adhesive disc nodes. Each disc is a minimalist engineering statement—a flat, featureless black circle with a barely-perceptible metallic sheen that catches light only at extreme angles. The discs appear almost anti-design in their simplicity, intentionally forgettable.",
+    "dimensions": "Individual nodes: 28mm diameter (roughly the size of a UK pound coin or US quarter), 4mm thick. Complete kit in carrying case: approximately 120mm × 80mm × 30mm (slightly larger than a hardcover book).",
+    "weight_description": "Extremely lightweight and pocketable. Individual nodes: 4g each. Complete kit with carry case: under 150g. Can be carried in a jacket pocket or messenger bag without notice.",
+    "primary_material": "Housing: aerospace-grade polymer composite. Adhesive backing: pressure-sensitive acrylic gel (designed to bond without leaving residue). Antenna array: etched into interior circuit board.",
+    "finish": "Matte Vantablack-derived coating with near-zero reflectivity. Surface is designed to accept environmental contamination—dust, grime, paint, and weathering make nodes blend seamlessly with surroundings. Minimal logo marking on one face.",
+    "color_scheme": "Primary: deep charcoal black with near-imperceptible gradient. Accent: barely-visible Subliminal Overlay Division logo in dark gray on one side. No LED indicators or status lights—visual silence by design.",
+    "interface_elements": "Minimal. No buttons, screens, or ports on individual nodes. Configuration is handled through a paired handheld interface device (not shown) via NFC tap-pairing before deployment. Pre-deployment setup includes: deployment duration timer (mechanical dial, 1-3cm diameter) on the carry case, encrypted key storage, and a small handheld OLED status unit (approximately 8cm × 6cm) for network verification.",
+    "distinctive_features": [
+      "Pressure-sensitive adhesive backing allows placement on any clean surface—walls, ceilings, conduits, under furniture",
+      "Flat disc form factor designed to disappear visually; can be covered by paint or stickers",
+      "Absence of any LEDs or status indicators—network operation is entirely invisible",
+      "Carrier case features minimalist industrial design: matte black anodized aluminum or polymer with discreet Vantablack Media branding",
+      "Self-wipe mechanism—no physical trigger or indicator; nodes simply stop transmitting after configured timer expires"
+    ],
+    "manufacturer_markings": "Subliminal Overlay Division (parent company: Vantablack Media) — small embossed logo on one face of each node. Serial batch codes on carry case. Regulatory compliance markings present but minimal and non-conspicuous.",
+    "condition_typical": "Fresh from the case: pristine matte black finish, adhesive backing protected by thin release liner. In-field: nodes rapidly accumulate dust, fingerprints, paint overspray, and environmental grime, rendering them nearly invisible. Deployed nodes show no signs of active operation—no heat signature, no electromagnetic emissions detectable at operating distance, no acoustic signature."
+  },
+  "image_prompt": "Flat lay product photography of the Vantablack Media Distributed Echo Mesh Kit on a dark concrete workbench. Twelve matte-black adhesive disc nodes arranged in a loose circle, each catching minimal light to emphasize their near-invisibility. Compact carrying case (matte aluminum or polymer) sits open in the background, revealing organized foam insert. One node is shown mid-application on a concrete sample, its pressure-sensitive backing visible. Handheld status unit (small OLED display) positioned nearby showing encrypted mesh network schematic. Dramatic overhead lighting with cool blue-white gels to emphasize the anti-reflective finish of the nodes. Background texture: industrial urban environment—weathered concrete, cables, faint datajack ports. Cyberpunk aesthetic with emphasis on tactical minimalism and covert operational design. Shallow depth of field focusing on individual node detail. --ar 3:2 --v 6"
 }

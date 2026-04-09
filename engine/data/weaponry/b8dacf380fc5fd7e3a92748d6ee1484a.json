@@ -41,5 +41,35 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Nika Svensson-Kone",
+    "Noor Farouk",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist monolith disguised as precision engineering — a sealed, obsidian-black apparatus that resembles equal parts scientific instrument and execution device. Its form suggests containment rather than projection: a squat, heavily reinforced chassis with no visible barrel, vents, or exhaust ports. The overall impression is of something designed to be handled but never truly understood, like holding a theorem made physical.",
+    "dimensions": "68 cm length × 34 cm width × 28 cm height; targeting aperture (sealed) 12 cm diameter",
+    "weight_description": "Brutally hefty — 45 kg of dead mass that sits low in the hands, demanding two-handed operation and anchoring the operator's entire body. The weight distribution is deliberately unforgiving, shifting slightly toward the rear, as if the apparatus resists being aimed.",
+    "primary_material": "Aerospace-grade carbon composite shell over a tungsten-alloy internal frame, with sealed titanium access panels that are welded shut at the factory.",
+    "finish": "Deep matte black with a faint iridescent oil-slick quality under angled light, suggesting the surface has been treated with something that isn't quite paint. Subtle wear marks and microscopic scoring indicate it has been handled, but never scratched or dented — the material itself seems hostile to damage.",
+    "color_scheme": "Primary: absolute black with mercury-silver accent panels for the targeting system window. No logos or branding visible on the surface.",
+    "grip_texture": "Knurled titanium grip zones with a texture that feels almost medical — precise, cold, designed for gloved hands only. The grip absorbs no warmth.",
+    "distinctive_features": [
+      "Sealed targeting aperture with a three-lens optical assembly visible through reinforced quartz",
+      "Four flush-mounted indicator lights (currently dark) arranged in a diamond pattern on the left side",
+      "A counting dial on the upper surface, numbered 0-5, currently set to 5",
+      "Quantum field stabilization vents along the bottom (inert, sealed)",
+      "A single red capacitive touch panel near the grip — the only interactive surface",
+      "Microscopic serial etchings that are deliberately unreadable at normal distances",
+      "A retinal-scanning biometric lock recessed into the stock",
+      "Two satellite tracking nodes (subtle raised points on the chassis, smaller than thumbtacks)"
+    ],
+    "manufacturer_markings": "The word 'ARCTURUS' stamped in a single line across the rear charging collar, followed by 'ZPE-1' and a string of 47 alphanumeric characters. Below: 'SEALED UNIT — RETURN ONLY TO ARCTURUS.' No unit number visible — the weapon is unmarked beyond this.",
+    "condition_typical": "Pristine and untouched. Each of the five existing units is stored in a climate-controlled environment and only exposed to atmosphere during authorized operations. Surface appears laboratory-fresh, impossible to date by wear. This is a weapon that exists to not be fired."
+  },
+  "image_prompt": "Overhead product photography of a sealed black aerospace weapons system on matte gunmetal surface. The device is a heavily shielded rectangular apparatus with a central targeting aperture and recessed indicator lights. Dramatic side-lighting from cool blue-white source reveals subtle iridescent surface treatment and titanium accent panels. Surgical precision. Scientific dread. No visible barrel or exhaust — pure geometric restraint. Shot from 45-degree angle to emphasize mass and density. Shallow depth of field isolates the targeting window. Cyberpunk weapons catalog aesthetic, classified-document photography style, quantum-horror mood. --ar 3:2 --v 6"
 }

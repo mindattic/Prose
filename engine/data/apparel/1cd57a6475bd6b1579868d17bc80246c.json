@@ -36,5 +36,25 @@
   "related_entities": [
     "Crucible Industries CR-9 'Foundry'",
     "TESSERA TC-3 'Crucible'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, angular helmet with pronounced forward-jutting brow ridge and reinforced temple panels. Sits low on the head with a bulky, utilitarian silhouette. Suggests protection over aesthetics—something built to absorb punishment rather than turn heads.",
+    "fit": "Compression-tight around the crown and temples, with internal gel-padding that molds to individual skull geometry. Chin strap runs snug but not restrictive. Peripheral vision slightly reduced by the aggressive brow angle.",
+    "primary_material": "Layered carbon-ceramic composite shell with embedded shock-absorption gel liner. Exterior has a semi-matte industrial finish; interior padding is soft and slightly tacky to the touch.",
+    "texture": "Outer shell is smooth but not glossy—finely textured from the molding process, with faint grid-pattern reinforcement lines visible under certain angles. The carbon weave creates subtle micro-ridges. Liner feels gel-like, yielding under pressure.",
+    "color_scheme": "Gunmetal gray primary with charcoal and matte-black reinforcement panels. Minimal branding—small Crucible Genomics logo stamped in weathered silver on the left temple. Some units show faded safety-yellow accent stripes (original foundry requirement).",
+    "closures": "Magnetic snap chin strap with friction-fit adjustment, rated for quick-release impact scenarios. Side-panel access vents sealed with micro-magnetic clips.",
+    "distinctive_features": [
+      "Pronounced carbon-ceramic brow ridge designed to deflect downward strikes",
+      "Integrated ventilation grid along temples to prevent heat buildup",
+      "Auto-adjusting internal gel-liner conforms to head shape within 60 seconds of wear",
+      "Reinforced impact zones at temples and back-skull marked by raised ridges",
+      "Minimal optical cutout—maximizes protective coverage at cost of peripheral awareness",
+      "Burnished brass grommets for attachment points (modular visor/filter add-ons)"
+    ],
+    "tier_indicator": "Tier 3-4 functional. Affordable, durable, but visibly industrial. Signals working-class or sub-grade origins but also street credibility in Shelf districts and fighting communities.",
+    "cultural_context": "Worn by Crucible foundry crews, demolition teams, unlicensed pit fighters, and Shelf-district security contractors. Associated with people in dangerous, low-paying work who prioritize protection over status. In pit-fighting circles, it's a mark of scrappy resilience. Among corpo types, it reads as either slumming or a deliberate anti-fashion statement.",
+    "condition_typical": "Usually weathered—scuffed outer shell, faded safety markings, gel liner compressed on one side from habitual wear. Chin strap shows creasing from regular use. Rarely pristine; owners wear them hard."
+  },
+  "image_prompt": "Vostok Industrial Hardshell Helm on a lean, tattooed model in a foundry or warehouse setting. Harsh tungsten lighting casting deep shadows across the helmet's angular brow ridge. Charred metal walls and industrial decay in the background. The helmet's carbon-ceramic shell gleams dully under overhead floods. Model's jaw clenched, eyes shadowed under the aggressive brow angle. Ground-level POV emphasizing the helmet's brutal geometry. Moody, gritty cyberpunk fashion photograph. --ar 2:3 --v 6"
 }

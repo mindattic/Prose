@@ -50,5 +50,35 @@
     "night",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Crucible TR-7 'Triage'",
+    "GLMZ",
+    "Night Market Noodles",
+    "Ouroboros Energy PiezoCore LD-5 Pedestrian Kinetic Harvesting Grid",
+    "Sine",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, cylindrical capsule with an industrial medical aesthetic — resembles a pressurized inhaler or diagnostic transducer rather than a weapon. Smooth, purposeful form factor designed for concealment and discrete placement.",
+    "dimensions": "45mm diameter × 65mm length (excluding any adhesive mount variants)",
+    "weight_description": "Light and handheld — 180g feels almost insubstantial, deceptively innocuous in a gloved palm. No sense of mass distribution typical of conventional ordnance.",
+    "primary_material": "Aerospace-grade aluminum alloy shell with embedded piezoelectric ceramic matrix components visible beneath translucent polymer viewport sections",
+    "finish": "Satin gunmetal gray with light oxide weathering; viewport sections feature anti-reflective coating to minimize detection under IR imaging",
+    "color_scheme": "Charcoal gray primary body with muted teal accent striping along the pressure calibration band; minimal branding to avoid identification",
+    "grip_texture": "Smooth, slightly textured polymer coating — designed for adhesive mount compatibility; no traditional grip owing to placement-based deployment method",
+    "distinctive_features": [
+      "Recessed pressure calibration dial (0.8–1.4 bar scale) with tiny adjustment ports",
+      "Three-state trigger interface: wireless receiver nub, pressure-sensitive adhesive pad, and timed fuse access cavity",
+      "Hairline seams indicating modular internal architecture",
+      "Small diagnostic LED (infrared-only, invisible to unaided eye) indicating charge state",
+      "Micro-port arrays on curved surface — acoustic tuning vents for subsonic resonance optimization",
+      "Tessera Corporation micro-stamp hidden beneath satin finish (discoverable only under magnification)"
+    ],
+    "manufacturer_markings": "TESSERA branding obscured or absent on field variants; serial identifier etched as microdots on the pressure calibration band — deniable as research equipment markings",
+    "condition_typical": "Pristine and sterile-appearing — field operators maintain flawless condition to avoid suspicion. No visible wear, scoring, or patina; maintains clinical appearance even after deployment in harsh environments"
+  },
+  "image_prompt": "Product photography of a compact cylindrical pressure charge device, 45mm diameter, satin gunmetal gray finish with teal calibration markings, resting on a matte black surface under dramatic side-lighting that emphasizes the metallic finish and micro-port vents. Gloved hand in soft focus holding the device, showing scale. Harsh shadows, cool color temperature, clinical yet ominous aesthetic. Cyberpunk corporate design language. High-resolution detail emphasizing the piezoelectric viewport sections and pressure dial. No text visible. Dark studio environment with accent lighting revealing surface texture. Weapon of quiet corporate lethality. --ar 3:2 --v 6"
 }

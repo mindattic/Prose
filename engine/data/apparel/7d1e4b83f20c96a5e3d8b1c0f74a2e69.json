@@ -42,5 +42,29 @@
     "8.6x70mm Electrothermal Chemical Projectile ETC-86",
     "Crucible Industries CX-1 'Golem'",
     "Tessera Industries Optical Disruptor OD-4 'Strobe'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian quasi-military uniform with high-visibility color blocking. Presents as authoritative and functional—broad-shouldered silhouette from modular pauldrons, tapered at waist by load-bearing rig. The wearer reads as official infrastructure security rather than combat operative. Transit orange fatigues visible at collar, cuffs, and inner thighs create a safety-reflective accent system.",
+    "fit": "Relaxed through torso to accommodate armor shell and equipment; articulated at shoulders and elbows for mobility. Load-bearing rig cinches at waist with compression straps. Cargo thighs provide expansion pockets. Overall impression is functional rather than fitted—designed for extended shifts and equipment access over aesthetic form.",
+    "primary_material": "Modular ballistic weave composite armor shell in gunmetal grey; transit-orange fire-resistant nylon fatigues underneath; rubberized strapping on load-bearing rig; steel-toed polymer boot shells with thermal insulation lining",
+    "texture": "Armor panels have slight dimpled surface for grip and light diffusion; fatigues are ripstop-weave with subtle texture; load-bearing rig straps show rubberized grip texture; helmet has reinforced edge beading for impact distribution",
+    "color_scheme": "Dominant gunmetal grey (armor panels) and safety transit orange (fatigues, accent piping, helmet stripe). High-visibility amber reflective tape on armor edges and boot caps. Black synthetic accents on rig and helmet mounting hardware. The MTA circular crest features silver outline with amber interior.",
+    "closures": "Magnetic snap fasteners on armor side panels for rapid on/off; friction-fit helmet with chin strap magnetic lock; load-bearing rig uses dual slide buckles and friction-lock quick-release tabs; boot side zippers with thermal sealing",
+    "distinctive_features": [
+      "MTA circular rail-and-lightning bolt crests stenciled on both shoulder pauldrons and helmet visor housing",
+      "Integrated mesh comms grille on helmet temple areas",
+      "Crowd-control strobe emitter housings (amber-tinted) mounted at temple points",
+      "Low-profile hard hat hybrid design—CP-rated for transit infrastructure hazards",
+      "Dedicated baton loop cluster (triple carry) on right hip",
+      "Zip-restraint pouch array (four pouches, color-coded by restraint grade) on left hip",
+      "Compact fare-enforcement scanner in sternum-mount rigid holster with quick-release tab",
+      "Reflective piping along all armor panel seams",
+      "Thermal insulation visible at boot collar and cuff edges",
+      "Stratum Logistics contract stamp (small) on inner collar"
+    ],
+    "tier_indicator": "Tier 3-4 functional. Government-issued infrastructure equipment—not luxury, not salvage. Standardized across 40,000+ transit personnel in the GLMZ. Quality is institutional-grade: durable, replaceable, unglamorous.",
+    "cultural_context": "Wearer is a Line Guard: platform safety officer, fare enforcer, crowd controller, emergency responder. Instantly recognizable as transit authority personnel. Signals baseline civic infrastructure employment—steady work, modest augmentation profile typical (comms implant, maybe optical overlay), union-adjacent benefits. The gear projects competence and jurisdiction without menace.",
+    "condition_typical": "Broken-in field wear. Armor panels show micro-scuffs from platform contact and chemical splash exposure. Fatigues have creasing at movement joints. Boots display salt staining and platform grime in sole treads. Load-bearing rig shows wear polish from repeated scanner access. Helmet visor has light surface scratching. Overall impression: maintained but not pristine—this is work equipment cycling through real shifts."
+  },
+  "image_prompt": "Cyberpunk MTA transit security officer in full line guard kit, standing on a rain-slicked elevated platform overlooking the glowing rail network of the Great Lakes Metropolitan Zone at dusk. Moody amber and grey color palette dominates the frame. Model wears gunmetal modular armor shell over transit-orange fatigues, low-profile hard hat with integrated comms mesh visible at temple, load-bearing rig with visible fare-enforcement scanner at sternum. Steel-toed boots plant firmly on platform edge. MTA circular crest visible on shoulder pauldron and helmet visor. Harsh sodium-vapor uplighting from below casts deep shadows across armor panels; distant rail lights create bokeh in background. Rain reflects equipment. Gritty, institutional atmosphere. Product photography style, slight dutch angle, dark urban industrial backdrop. --ar 2:3 --v 6"
 }

@@ -55,5 +55,40 @@
     "energy",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Microwave Area Denial MAD-3 'Sunburn'",
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "GLMZ",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Nnamdi Ostrowski-Faletolu",
+    "Omnipex",
+    "Phased Acoustic Neurostimulator PAN-3 'Tinnitus'",
+    "Sustrel",
+    "The Human Baseline Alliance",
+    "The Pure Hand",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist rifle-cannon hybrid with an aggressive angular profile. The CDP-9 has a pronounced forward taper toward a wide, slightly flared muzzle assembly that resembles a radiant iris or corona opening. The receiver is chunky and utilitarian, with a pronounced charging handle and visible heat management fins along the barrel section. Overall impression is of contained energy barely restrained by its polymer chassis.",
+    "dimensions": "Total length: 98 cm. Barrel section: 54 cm. Muzzle assembly flare: 12 cm diameter. Magazine housing depth: 8 cm. Width across capacitor fins: 11 cm.",
+    "weight_description": "Hefty but balanced. The forward-heavy muzzle assembly is counterweighted by a substantial capacitor bank in the stock, making the weapon point-stable despite its 4.1 kg mass. Feels purposeful and planted in the hands.",
+    "primary_material": "Aerospace-grade polymer chassis with embedded aluminum heat dissipation frame. Muzzle assembly is reinforced carbon composite. Capacitor bank housing is brushed titanium-alloy.",
+    "finish": "Matte charcoal polymer with satin-finish metal accents. Heat venting fins are deliberately left bare to show underlying metal. Scorching marks and thermal discoloration streaks radiate outward from the muzzle assembly on well-used units.",
+    "color_scheme": "Dominant charcoal gray with brushed silver/titanium accents on capacitor fins and charging handle. Faint amber/orange glow visible through translucent charging port window when capacitor bank is active.",
+    "grip_texture": "Textured polymer grip with subtle vertical ribs for purchase, designed for gloved operation. The charging handle is wrapped in thin heat-resistant cord to prevent burn-through during sustained discharge cycles.",
+    "distinctive_features": [
+      "Radiant-iris muzzle assembly that visibly expands when preparing discharge",
+      "Transparent capacitor status window (amber to red gradient) on the right side of the stock",
+      "Prominent aluminum cooling fins running the length of the barrel, some with minor scorch marks from plasma bleed-off",
+      "Recessed charging port (right side, mid-receiver) with protective rubber dust cover",
+      "Four-point Picatinny rail system on upper receiver, rarely used",
+      "Subtle crosshair reticle etched into muzzle assembly",
+      "Heavy wear patterns on polymer from field handling — scuff marks, minor cracks in heat vents, dust patina in recesses"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (a stylized aurora/corona symbol) stamped in white on the left side of the receiver. Model designation 'CDP-9' engraved below. Serial number on the right side of the capacitor housing in small white lettering. Military acceptance stamp (RESTRICTED) on the charging handle.",
+    "condition_typical": "Field-worn but maintained. The polymer shows honest scuffing and thermal stress marks, but firing mechanisms are clean. Capacitor fins often show buildup of conductive dust. Many operational units display ad-hoc tape reinforcement around the charging mechanism or muzzle assembly."
+  },
+  "image_prompt": "A Coronal Discharge Projector CDP-9 'Sunburn' cradled horizontally across a black carbon-fiber work table, photographed from a 45-degree overhead angle. The muzzle assembly faces left, its flared iris-like opening catching dramatic hard side-lighting from the right that reveals internal ribbing. Warm amber light glows faintly through the capacitor status window on the stock. The aluminum cooling fins cast sharp geometric shadows. A single gloved hand (chrome knuckle reinforcements visible) grips the mid-receiver, showing scale. Background is dark matte black with subtle grid texture. Volumetric lighting emphasizes particulate dust around the heat vents. Cyberpunk aesthetic with utilitarian military design language. Arcturus Defense Solutions branding visible on receiver. --ar 3:2 --v 6"
 }

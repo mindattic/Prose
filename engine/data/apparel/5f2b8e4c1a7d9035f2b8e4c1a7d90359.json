@@ -46,5 +46,26 @@
     "Noir Dining",
     "Tessera Nexus Town Car",
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A strikingly bright, unambiguous presence on any wearer—the jacket demands visibility from every angle. The silhouette is straightforward and utilitarian: a slightly oversized, boxy cut that prioritizes function over form. Retroreflective chevron stripes running across chest, back, and arms create a geometric, almost target-like pattern that catches and throws back light with unsettling intensity. The wearer becomes a beacon.",
+    "fit": "Relaxed, oversized cut designed to layer over work clothes or light augmentation rigs. Generous arm mobility for reach-heavy labor. Dropped shoulder line. Hood sits loose and adjustable.",
+    "primary_material": "Lightweight ripstop nylon shell with wind and water resistance. Breathable mesh lining to prevent sweat buildup during active work. Non-insulated.",
+    "texture": "Smooth, slightly waxy synthetic exterior that sheds water. Fine mesh lining visible at cuffs and hood opening. Retroreflective tape has a subtle bumped texture that optimizes light reflection.",
+    "color_scheme": "ANSI-compliant fluorescent yellow-green as primary color—a sickly-bright hue that practically vibrates against dark urban backgrounds. Silver-white retroreflective chevron stripes in standard high-visibility pattern (two horizontal stripes across torso, one around each arm). Pelikan wordmark in small dark gray at left chest.",
+    "closures": "Full-length front zip with durable plastic pull tab. Hood drawcord with single-point adjustment. Velcro cuff adjusters at wrists. No collar fastener—hood drapes open when not deployed.",
+    "distinctive_features": [
+      "Retroreflective chevron striping meets ANSI 107-2015 Class 3 standards",
+      "Reflective tape visible from 100+ meters in headlight or flashlight beam",
+      "Mesh lining visible at interior—speaks to ventilation priority",
+      "Adjustable hood with single drawcord—fast deployment in rain",
+      "Minimal branding: small Pelikan chest logo only",
+      "Lightweight construction prioritizes packability over durability",
+      "Slightly translucent quality to fluorescent material under certain light angles"
+    ],
+    "tier_indicator": "Tier 3 functional / Tier 4 working-class infrastructure tool. Affordable, mass-produced, utilitarian. No luxury markers.",
+    "cultural_context": "The uniform of necessity. Road crews, dock workers, site safety monitors across the GLMZ wear this daily. Increasingly adopted by Shelf residents and unlicensed transit workers in ungoverned zones—visibility as survival strategy. Also worn ironically by corpo workers slumming in lower districts. The jacket announces: *I am working. I am visible. I exist.*",
+    "condition_typical": "Usually broken-in and weathered. Scuffs on synthetic exterior from work contact. Possible tape repairs where reflective patches have been re-glued after heavy wear. Lining may be slightly faded and pilled. Reflective strips show accumulated grime that dulls their shine until next cleaning."
+  },
+  "image_prompt": "A figure in a sickly-bright fluorescent yellow-green safety jacket stands under cold gray industrial lighting in a rain-slicked urban corridor, wet pavement reflecting streaks of reflected chevron tape. The retroreflective stripes glow with aggressive silver-white intensity under directional light sources. Moody, desaturated background of concrete brutalism and dark metal scaffolding. The wearer is sharp and centered; the jacket dominates the frame with its utilitarian, almost hostile visibility. Shot from mid-torso to head. --ar 2:3 --v 6"
 }

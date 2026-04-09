@@ -72,5 +72,24 @@
     "Ouroboros Energy Power Distribution Trunk Network",
     "The Dead Channel",
     "Zoë Mbekele-Thorvaldsdóttir"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, deliberately inconspicuous box resembling industrial power management hardware. Rectangular slab with slightly beveled edges and a minimalist industrial aesthetic designed to blend into server rooms and utility closets. Top surface features a subtle company nameplate; the device prioritizes function over corporate flash.",
+    "dimensions": "28cm wide × 18cm deep × 7cm tall — roughly the footprint of a large paperback book standing on edge",
+    "weight_description": "1.4kg — easily handheld but substantial enough to feel engineered; requires mounting bracket for permanent installation",
+    "primary_material": "Brushed aluminum chassis with stainless steel reinforcement at connection points",
+    "finish": "Matte gunmetal-gray anodized aluminum with non-reflective surface treatment to minimize visual detection. Minimal texture, designed for institutional anonymity.",
+    "color_scheme": "Gunmetal gray as primary; accents in subdued corporate teal (Ouroboros Energy brand color) only on manufacturer nameplate and single status indicator LED",
+    "interface_elements": "Single status LED (teal, small); two physical ports on rear: one ruggedized Ouroboros grid-connector (proprietary hardwire jack, gold-plated contacts) and one secondary access port (sealed under warning labels). Minimal buttons — only a recessed reset. No displays, no screens, no visual feedback beyond the status light.",
+    "distinctive_features": [
+      "Hardwire-only design creates visible distinction from wireless devices — cable permanence is its signature",
+      "Grid connector is oversized relative to body, clearly designed for single-purpose industrial integration",
+      "Top surface etched with faint warning text in multiple languages: 'AUTHORIZED PERSONNEL ONLY' and Ouroboros proprietary data handling notices",
+      "Thermal venting along rear edge suggests active cooling for continuous operation",
+      "Complete absence of branding beyond the Amp Audio Systems/Ouroboros Energy logotype — intentionally bland corporate aesthetic"
+    ],
+    "manufacturer_markings": "Amp Audio Systems logo (stylized wave form) embossed on top left; Ouroboros Energy corporate seal beneath; regulatory compliance stamps (FCC-equivalent GLMZ Authority approval) along bottom edge; unique serial number laser-etched on underside",
+    "condition_typical": "Mounted permanently to server rack or utility panel in secured facility, with cable bundle leading into conduit. Dust accumulation minimal due to controlled environment. Status LED glowing steady teal in darkened server room. Device essentially disappears into infrastructure — the goal of its design."
+  },
+  "image_prompt": "Ouroboros Serpent Tongue Relay communications device photographed on a stainless steel workbench in a dimly-lit corporate server room, industrial overhead lighting casting sharp shadows. Device positioned at slight angle, heavy gauge shielded cable trailing from rear connector coiling across the bench surface. Surrounding context includes circuit boards, diagnostic equipment blurred in background. Gunmetal finish catches dramatic side-lighting, showing the austere minimalism of its design. Teal status LED glowing softly on top surface. Moody cyberpunk aesthetic, institutional surveillance tech vibe, corporate coldness. Photography style emphasizes how utterly forgettable the device appears — designed to vanish into infrastructure. --ar 3:2 --v 6"
 }

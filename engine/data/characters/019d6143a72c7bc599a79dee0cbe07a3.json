@@ -206,5 +206,13 @@
     "posture_movement": "Moves with deliberate economy. Upright despite her age, though gravity has claimed an inch or two. Her gait is slow but not hesitant—each step chosen. Her hands move with surgical precision when needed, but otherwise rest calmly in her lap or folded at her sternum. She has learned not to waste energy on movement that isn't purposeful.",
     "clothing_style": "Always natural fiber when possible—wool, linen, cotton. Default palette is dark grey or dark green, occasionally black. Simple long-sleeve tunic or button-front shirt, loose trousers, worn but immaculately clean. No logos, no corporate branding. Worn leather slip-ons, sensible and broken in. She dresses for function and for respect to the people she sits with—nothing distracting, nothing that announces her tier or status. Tier 3-4 practical."
   },
-  "image_prompt": "Portrait of an 78-year-old woman of mixed Kazakh and Portuguese-Brazilian heritage, barely 5 feet tall, with long flowing white hair past her shoulders and a deeply lined face that speaks of decades of presence and witness. Dark brown eyes, warm medium-brown skin with olive undertones, hands notably large for her small frame and visibly steady. Wearing a simple dark grey linen tunic and black trousers, no augmentations visible. Sitting in soft, natural light, posture upright and attentive despite her age. Expression calm, non-judgmental, radiating both pragmatism and profound tenderness. Ground-floor apartment interior in background, warm and sparse. Photorealistic, compassionate lighting, cinematic depth. Cyberpunk setting, 2226, Ashfeld district. --ar 2:3 --v 6"
+  "image_prompt": "Portrait of an 78-year-old woman of mixed Kazakh and Portuguese-Brazilian heritage, barely 5 feet tall, with long flowing white hair past her shoulders and a deeply lined face that speaks of decades of presence and witness. Dark brown eyes, warm medium-brown skin with olive undertones, hands notably large for her small frame and visibly steady. Wearing a simple dark grey linen tunic and black trousers, no augmentations visible. Sitting in soft, natural light, posture upright and attentive despite her age. Expression calm, non-judgmental, radiating both pragmatism and profound tenderness. Ground-floor apartment interior in background, warm and sparse. Photorealistic, compassionate lighting, cinematic depth. Cyberpunk setting, 2226, Ashfeld district. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 32.3,
+    "Sub-Saharan African": 26.2,
+    "East Asian": 19.1,
+    "Hispanic/Latin American": 11.1,
+    "Eastern European": 6.2,
+    "South Asian": 5.1
+  }
 }

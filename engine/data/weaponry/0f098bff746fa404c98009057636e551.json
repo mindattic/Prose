@@ -42,5 +42,38 @@
     "infiltration",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "ARCHIVE",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "Cutter Vane",
+    "GLMZ",
+    "Kairos",
+    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
+    "Nitinol",
+    "TESSERA PG-2 'Signature'",
+    "TESSERA TC-3 'Crucible'",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek folding knife with an almost organic quality to its design. When deployed, it presents a traditional fighting knife silhouette with a subtly curved blade that catches light along its edge. The handle is compact and ergonomic, designed for concealment as much as combat. In its cold, deformed state, the blade can appear warped or coiled with an unsettling flexibility that betrays its exotic material.",
+    "dimensions": "12 cm blade length (deployed), 24 cm total length (deployed). When deformed for concealment, blade can compress to 3-5 cm thickness depending on configuration.",
+    "weight_description": "Surprisingly light in hand at 140 grams — balanced toward the blade despite the modest heft. Feels almost delicate when cold, but carries a sense of contained potential.",
+    "primary_material": "Crucible proprietary shape-memory alloy blade; aerospace-grade titanium-reinforced polymer handle with embedded thermal sensors",
+    "finish": "Satin-brushed memory alloy with a faint iridescent sheen that shifts subtly as light plays across the surface. Handle features a matte charcoal composite with brushed metal accents.",
+    "color_scheme": "Silvered gray blade with hints of blue undertone in certain light angles. Charcoal-black handle with gunmetal gray frame components and minimal accent striping in faint copper.",
+    "grip_texture": "Textured polymer grip with subtle raised diamond pattern for retention even in gloved hands. Frame components are smooth but deliberately etched to prevent slipping.",
+    "distinctive_features": [
+      "Blade exhibits faint metallic striations visible in certain angles, marking the memory alloy's crystalline structure",
+      "Subtle thermal indicator strip embedded in the spine — color shifts from blue (cold/inactive) to red (warmed/active)",
+      "Minimalist handle design with no excessive ornamentation — pure function",
+      "Blade profile shows an almost liquid quality when deformed, as if caught mid-transformation",
+      "Frame lock mechanism is nearly invisible, integrated into the handle spine",
+      "Crucible Industries manufacturer mark is laser-etched and nearly flush with the handle surface"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES mark appears as a subtle geometric logo on the handle spine near the frame lock. Serial number etched microscopically on the blade tang, visible only under magnification. No aggressive branding — designed for operatives who prefer discretion.",
+    "condition_typical": "Field-worn specimens show micro-scratches on the blade face that fade within hours as the alloy self-restores. Handle polymer may show patina from extended use but remains functionally unmarked. The weapon ages gracefully, with no visible degradation even after years of deployment."
+  },
+  "image_prompt": "Product photograph of a Crucible Industries Memory Alloy Switchblade MS-6 'Recall' displayed on matte black surface, partially held in a gloved hand showing the deployed blade. Dramatic side-lighting emphasizes the satin-brushed silvered-gray blade with its subtle iridescent blue undertones and the charcoal handle with gunmetal accents. Close-up detail showing the thermal indicator strip shifting from cool blue to warm red where the handle meets skin contact. Macro photography reveals the faint crystalline striations in the blade surface. Include a second frame showing the blade in a deformed state — bent or twisted — to emphasize its shape-memory properties. Cyberpunk aesthetic: cold, clinical lighting with slight blue-tinted atmosphere suggesting GLMZ corporate environment. Professional weapon catalog photography style. --ar 3:2 --v 6"
 }

@@ -42,5 +42,26 @@
   "parent_corponation": "",
   "related_entities": [
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist combat boot with aggressive, angular armor plating that rises to mid-calf. The silhouette is imposing and geometric—sharp edges and layered panels create a predatory appearance. Worn primarily by corporate enforcers and PMC operatives in the GLMZ's contested zones.",
+    "fit": "Snug, anatomically precise fit through the foot with reinforced ankle support. The calf-high design locks the leg in place; compression-molded around the shin. Designed for structural stability during high-impact operations.",
+    "primary_material": "Matte-black ballistic-grade synthetic composite with steel-reinforced toe and heel caps. The sole integrates thermoplastic polyurethane (TPU) with embedded vibration-dampening gel in the strike zone.",
+    "texture": "The armor panels have a deliberately rough, knurled finish for grip. The leather-synthetic hybrid upper is smooth but worn to a subtle sheen from field use. Visible stress lines and micro-scratches from impact contact.",
+    "color_scheme": "Flat black throughout with gunmetal-gray composite edges catching harsh light. No branding visible on the exterior—unmarked and utilitarian.",
+    "closures": "Heavy-duty friction-fit lacing system with recessed eyelets. A reinforced calf strap with magnetic snap closure provides rapid on/off capability for tactical scenarios.",
+    "distinctive_features": [
+      "Layered, angular composite armor shell covering toe, ankle, and shin",
+      "Knurled surface texture on all protective panels for enhanced grip",
+      "Reinforced heel designed for breaching-kick impact absorption",
+      "Vibration-dampening gel core in the sole for hard-strike stability",
+      "Recessed lacing system to prevent snagging in combat",
+      "Steel-tipped toe cap with visible stress scoring",
+      "Ankle articulation joint with exposed reinforcement ribs"
+    ],
+    "tier_indicator": "Tier 4 corporate-military hardware—expensive, specialized, purpose-built for enforcement and PMC work. Price point ~450-600 Φ.",
+    "cultural_context": "A uniform component for corpo security, private military contractors, and enforcement specialists. Wearing these signals authority, preparation, and willingness to engage in physical conflict. Rarely seen on street-level workers or civilians.",
+    "condition_typical": "Well-maintained but visibly worn. Scuff marks on the toe cap, micro-scratches on armor panels from field contact. The soles show wear patterns consistent with rapid movement and hard landings. Lacing is always taut."
+  },
+  "image_prompt": "Fashion photography of Harkon Siege Assault Boots on a muscular cyberpunk model in tactical gear, standing in a power stance on a rain-slicked industrial platform. Low-angle three-quarter shot emphasizing the aggressive angular armor geometry. Dark moody lighting with cool blue and amber neon reflections bouncing off wet concrete. Close-up detail of the sole and heel's vibration-dampening tech visible. Dystopian warehouse backdrop with exposed steel beams and GLMZ skyline in hazy distance. Ultra-high contrast, gritty texture. --ar 2:3 --v 6"
 }

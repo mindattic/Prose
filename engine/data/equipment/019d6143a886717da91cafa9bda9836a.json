@@ -48,5 +48,23 @@
   "related_entities": [
     "Narrowcast",
     "The Collective"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A modular seismic sensor network comprising individual ground-spike sensors and a handheld controller unit. Each sensor resembles a hardened nail or surveying spike with an integrated vibration-detection head, while the controller is a rugged palm-sized device with a small holographic display node.",
+    "dimensions": "Individual sensors: 15cm length, 1.2cm diameter spike. Controller unit: 12cm × 8cm × 4cm",
+    "weight_description": "Each sensor weighs 200g, easily pocket-carried in clusters. Controller handheld, lightweight carrying strap optional for extended fieldwork.",
+    "primary_material": "Sensor spikes: hardened tungsten-steel alloy with vibration-responsive piezoelectric crystal core. Controller: aerospace-grade polymer frame with rubberized impact zones.",
+    "finish": "Sensor spikes: dull gunmetal with etched calibration marks and depth graduations. Controller: brushed charcoal finish with textured grip panels.",
+    "color_scheme": "Matte dark gray spikes with luminous teal accent rings marking the sensor head. Controller body charcoal black with cyan status indicators and Zheng-Dao brand stripe.",
+    "interface_elements": "Controller features micro-holographic readout (2cm projection), four tactile pressure buttons (deploy/retrieve/classify/sync), neural-link induction plate, and weathered tactile feedback haptic strips. USB-C charging port on side.",
+    "distinctive_features": [
+      "Piezoelectric sensor head glows faintly cyan when active during vibration detection",
+      "Depth-marking rings laser-etched every 2cm down the spike shaft",
+      "Holographic AR readout displays concentric threat-rings showing detected movement vectors",
+      "Zheng-Dao Heavy Industries ideogram stamped on controller base"
+    ],
+    "manufacturer_markings": "ZHENG-DAO HEAVY INDUSTRIES logo on controller grip; SSN-3 model number etched beneath. Regulatory compliance stamps: GLMZ Tier 2 certified, neural-interface safe rating.",
+    "condition_typical": "Sensors often show soil caking and mineral deposits after deployment. Controller weathered from field use, with minor scuffs on polymer edges. Teal accent markers dulled from sunlight exposure but functional."
+  },
+  "image_prompt": "Product photography of a Zheng-Dao Heavy Industries SSN-3 seismic sensor network laid out on a scarred industrial workbench. Five ground-spike sensors arranged in a tactical formation, each showing dull gunmetal finish with glowing cyan sensor-head rings, some dusted with pale soil and mineral deposits. Handheld controller centered, displaying a holographic AR readout with concentric threat-rings and movement vectors in cyan and red. Cyberpunk aesthetic with dramatic side-lighting casting sharp shadows, warm practical work-light mixing with cool holographic glow. Weathered steel workbench surface, scattered tactical equipment background. Close-up detail showing sensor spike depth markings and controller haptic feedback strips. —ar 3:2 --v 6"
 }

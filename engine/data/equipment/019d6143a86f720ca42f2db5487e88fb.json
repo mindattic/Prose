@@ -48,5 +48,25 @@
     "Arcturus Defense Solutions Thermal Longsword TL-3 'Cauterizer'",
     "Crucible VG-7 'Bastion'",
     "Nika Svensson-Kone"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally functional ballistic shield fashioned from a vehicle door panel or welded steel plate sections. The surface is visibly utilitarian—dented, scarred, and bearing the marks of its salvaged origin. Crude but effective. The shield presents a roughly rectangular face with an off-center viewport cut or punched at eye level, bordered by jagged edges ground smooth only partially. Welded handle brackets—often mismatched steel tubing or repurposed vehicle frame sections—protrude from the rear in an ergonomic but inelegant arrangement.",
+    "dimensions": "65-75 cm wide × 85-95 cm tall, approximately 8-12 cm thick at the core. Viewport opening roughly 12-15 cm diameter, positioned 160-170 cm from ground when carried.",
+    "weight_description": "Heavy and cumbersome—8-20 kg depending on composition. Requires dedicated single-arm carry or dual-bracket mounting on torso harness. Not pocketable; backpack-sized at minimum, typically requiring both hands or shoulder rig for sustained deployment.",
+    "primary_material": "Automotive steel door panels, scrap steel plate, layered industrial composites (rubber, ceramic, or ballistic fabric backing). Often a visible sandwich of heterogeneous materials bolted or welded together.",
+    "finish": "Raw and weathered. Unpolished steel with oxidation staining, welding seams visible and crude, paint from original vehicle source (often faded or partially stripped). Rear handle brackets show tool marks and hasty fabrication. No aesthetic finish—purely functional.",
+    "color_scheme": "Gunmetal gray and rust-toned steel dominate. Flecks of original automotive paint (midnight blue, industrial beige, faded red) visible under wear patterns. Black welding slag and oxidation streaks. Some examples show hasty spray-paint overpaint in matte black or tactical gray.",
+    "interface_elements": "Viewport: circular or rectangular cutout with either rough steel edges, a bolted-on transparent polycarbonate panel, or a hinged steel shutter. Rear-facing handle brackets: welded steel tube or angle iron, often with wrapped cord or fabric for grip. No electronic components. Carrying points sometimes marked with spray-paint or crude etchings.",
+    "distinctive_features": [
+      "Visible welding seams and structural repair patches",
+      "Off-center viewport often ringed with impact damage from rounds",
+      "Mismatched material layers—distinct color/texture boundaries showing composite construction",
+      "Crude grip handles with paracord or fabric wrapping",
+      "Bullet strike divots and dents in the frontal surface from field use",
+      "Salvaged manufacturer badges or VIN stamps still visible from original vehicle source"
+    ],
+    "manufacturer_markings": "Rarely present—street custom implies no formal branding. Some shields carry spray-painted crew tags, gang insignia, or owner initials. Occasionally retains faded automotive logos or door panel stamps from salvage origin (Ford, General Motors, Hyundai emblems half-ground off).",
+    "condition_typical": "Visibly used and abused. Impact marks, welding repairs, patched sections. Mounting brackets loose or slightly corroded. Viewport may show radial cracks from near-misses or a replacement panel bolted over damage. Overall aesthetic: pre-used, field-tested, trusted by those who depend on it."
+  },
+  "image_prompt": "Overhead workbench shot of a Street Custom Iron Curtain ballistic shield propped at 45-degree angle, revealing its sandwich-layered construction and crude welded handles. Harsh LED work lights casting sharp shadows across the dented steel face and off-center viewport. A bullet-strike divot visible in the upper-left quadrant. Surrounding the shield: scattered welding tools, a roll of paracord, spare steel plate scraps, and a worn carrying harness. Cyberpunk gritty aesthetic, industrial salvage aesthetic, dramatic sidelighting emphasizing texture and wear patterns. Shot from above slightly offset to show both front viewport and rear mounting brackets. --ar 3:2 --v 6"
 }

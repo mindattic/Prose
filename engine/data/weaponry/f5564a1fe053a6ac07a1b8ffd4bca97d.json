@@ -39,5 +39,29 @@
     "tier_3",
     "status_symbol"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower"
+  ],
+  "physical_description": {
+    "visual_profile": "An elegant, elongated atomizer that could pass for high-end fragrance at first glance — refined and aspirational rather than utilitarian. The form factor deliberately mimics luxury cosmetic design, with a tapered body and a delicate trigger mechanism that feels more like a perfume applicator than a defensive tool.",
+    "dimensions": "Height: 12.5 cm, Diameter: 3.2 cm at widest point (canister body), Trigger reach: 2.8 cm from canister surface",
+    "weight_description": "Light and balanced, 85 grams sits comfortably in a closed fist without fatigue — designed for extended carry in a pocket or clutch without noticeable burden. The weight distribution favors the hand, never feeling top-heavy despite the pressurized contents.",
+    "primary_material": "Brushed titanium canister body with precision-machined aluminum trigger assembly and sapphire-crystal metering valve window",
+    "finish": "Brushed titanium with a soft, non-reflective matte surface that catches light subtly rather than gleaming. Micro-etched grip panel with pearl-effect inlay that catches light when rotated. Anodized aluminum accents in soft silver-gray.",
+    "color_scheme": "Soft brushed titanium (cool silver-gray) with frosted translucent sapphire metering window showing pale opalescent liquid. Subtle pearl-gray grip inlay.",
+    "grip_texture": "Smoothly textured micro-etched titanium with a pearl-effect grip panel that provides subtle tactile feedback without appearing industrial — feels expensive and refined to the touch, with just enough texture to prevent slipping when sprayed.",
+    "distinctive_features": [
+      "Sapphire-crystal metering valve window displaying remaining dose capacity and formulation color",
+      "Precision trigger with micro-click feedback at 50% and full depression",
+      "Dawnlight Industries signature engraved below the metering window in elegant serif font",
+      "Soft amber indicator light (hidden, activates on arm) near the trigger guard",
+      "Discrete serial number etched in micro-text on the bottom rim",
+      "Refill port caps the base with a quarter-turn bayonet lock",
+      "Aerosol release valve produces barely-audible hiss, far quieter than commercial pepper spray"
+    ],
+    "manufacturer_markings": "Dawnlight Industries logo (stylized ascending sun symbol) engraved below the metering window. Model designation 'PM-4' in micro-text on the trigger guard. 'Angel Breath' branding on the gift-box sleeve, not on the canister itself.",
+    "condition_typical": "Typically pristine and showroom-ready — owners maintain these as luxury items. Light carry wear on grip panel edges possible after months of use. The brushed titanium shows fingerprints easily but resists scratching. Most PM-4s never see deployment."
+  },
+  "image_prompt": "Product photography of the Dawnlight Industries PurityMist PM-4 'Angel Breath' chemical defense spray held in a manicured hand wearing soft charcoal-gray tactical gloves, positioned at 45-degree angle against a dark matte black surface. Brushed titanium body catching dramatic side-lighting that emphasizes the soft metallic sheen. Sapphire metering window glowing with pale opalescent liquid. Engraved branding visible. High-end luxury cosmetic aesthetic meets cyberpunk self-defense — spa-like sophistication. Moody cool-toned lighting with warm key light highlighting the titanium grain. GLMZ 2226 setting. --ar 3:2 --v 6"
 }

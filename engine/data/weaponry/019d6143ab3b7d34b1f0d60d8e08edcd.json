@@ -57,5 +57,40 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "GLMZ",
+    "Helix Biosystems",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Serafin",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Industries Phantom Comms Relay PCR-3",
+    "Tithe Harmonic",
+    "Vantablack-CNX",
+    "WELLSPRING"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, elongated precision rifle with an almost medical aesthetic — more laboratory instrument than traditional firearm. The profile is intentionally slim and balanced, suggesting advanced engineering rather than raw power. The dual-emitter muzzle is distinctly unusual, housing two precision optical elements in tight parallel alignment.",
+    "dimensions": "112cm overall length, 48cm barrel, 8cm width at receiver, 6cm height at scope rail",
+    "weight_description": "Deceptively light at 5.2kg — feels balanced and almost delicate in trained hands, lacking the heft expected of a weapon system. Excellent weight distribution creates a sensation of effortless control.",
+    "primary_material": "Aerospace-grade carbon composite chassis with anodized aluminum receiver and optical housings. Barrel features a polished fused-silica lens array.",
+    "finish": "Matte charcoal composite with brushed silver aluminum accents. The dual emitters feature brilliant optical black coating to minimize reflectivity. Minimal weathering on well-maintained examples.",
+    "color_scheme": "Charcoal gray composite primary with silver-gray metallic accents. Emitter housings in deep matte black. Helix branding in phosphorescent cyan.",
+    "grip_texture": "Stippled polymer grip with ergonomic finger grooves, cool to the touch. Magazine well reinforced with textured aluminum. Charging handle wrapped in thin synthetic cord.",
+    "distinctive_features": [
+      "Dual-emitter muzzle with separated UV primer and visible-spectrum trigger optics",
+      "Unusual lack of heat venting or thermal dissipation design — weapon generates minimal waste heat",
+      "Transparent capacitor housing on left side showing glowing HL-12 power cell with dual-channel indicator lights",
+      "Precision graduated reticle with photovoltaic-reactive target compensation markers",
+      "Minimal mechanical controls — most functions are electronic and gesture-responsive",
+      "Faint phosphorescent charging status along the receiver spine",
+      "Custom engraved nomenclature: 'PCR-3 TITHE' with Helix biometric lock indent"
+    ],
+    "manufacturer_markings": "Helix Biosystems logo embossed on left receiver. Serial number etched in UV-reactive ink on capacitor housing. Regulatory licensing stamp — cyan Φ currency symbol with 'LICENSED' — on right side of mag well.",
+    "condition_typical": "Immaculate. The Tithe is a precision instrument maintained obsessively by its operators. Even field-used examples show minimal wear; users favor careful cleaning and inspection over rugged durability. Collectors keep them in near-pristine condition."
+  },
+  "image_prompt": "Product photography of the Photovoltaic Cascade Rifle PCR-3 'Tithe' at 3/4 angle on dark gunmetal surface, slight upward tilt. Dramatic side-lighting from upper left reveals the matte charcoal composite and brushed aluminum receiver details. Focused cyan glow from the transparent capacitor housing showing dual-channel power indicator. Close detail of the dual-emitter muzzle housing both UV primer and visible-spectrum trigger optics in sharp focus. Operator's gloved hand (black synthetic) gripping the stippled polymer handguard. Cyberpunk aesthetic: clean geometric lines, minimal ornamentation, precision engineering. Cold color temperature with accent cyan from Helix branding. --ar 3:2 --v 6"
 }

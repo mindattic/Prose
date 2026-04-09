@@ -37,5 +37,24 @@
   "related_entities": [
     "Phased Acoustic Neurostimulator PAN-3 'Tinnitus'",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively simple titanium band that appears entirely unremarkable — the kind of ring anyone might wear. Its minimalist design creates an impression of understated elegance or practical simplicity, depending on context. On the hand, it catches light with a subtle metallic sheen but draws no attention. Perfect anonymity.",
+    "fit": "Snug but not constrictive; sized to sit flush against the skin for optimal NFC contact. Worn on any finger, though index or middle finger is standard for data transfer operatives.",
+    "primary_material": "Aerospace-grade titanium alloy with embedded encrypted data core (composition proprietary to Nexus Integration). Non-reactive, biocompatible.",
+    "texture": "Smooth, polished finish with barely perceptible micro-ridging from manufacturing. Cool to the touch. No seams, no visible joints — seamlessly integrated.",
+    "color_scheme": "Brushed titanium gray with subtle warm undertones. No accent colors, no markings, no serial numbers visible to the naked eye.",
+    "closures": "None — a continuous band, permanently sealed. The data core is inaccessible without corporate-level decryption hardware.",
+    "distinctive_features": [
+      "Zero external indicators (no LEDs, no haptic feedback, no visible tech)",
+      "Imperceptible weight difference from standard titanium rings",
+      "NFC activation requires skin contact with compatible terminal",
+      "2TB encrypted storage capacity",
+      "Military-grade encryption that survives biometric scanning"
+    ],
+    "tier_indicator": "Tier 2 corporate espionage asset or Tier 3 information broker tool — the cost is accessible to mid-level operatives, but its utility marks the wearer as plugged into high-value networks.",
+    "cultural_context": "Information broker, corporate intelligence operative, black-market fixer, or someone deep in the shadow economy. Wearing this signals you deal in data as currency. It's the ring of someone whose handshake might be worth Φ500,000 to the right buyer.",
+    "condition_typical": "Always pristine — scratches or damage compromise the NFC field. Obsessively maintained. A worn ring is a dead ring."
+  },
+  "image_prompt": "Close-up fashion photography of a titanium Nexus Integration Data-Carry Ring on the index finger of a cyberpunk operative's hand. Moody blue-green neon lighting reflecting off the brushed metal. Dark urban rooftop backdrop with rain-slicked surfaces. Shallow depth of field emphasizing the ring's seamless, featureless design. Hand partially in shadow, ring catching ambient light. Worn leather jacket sleeve visible at frame edge. No visible tech, pure minimalist elegance. Cyberpunk noir aesthetic. --ar 2:3 --v 6"
 }

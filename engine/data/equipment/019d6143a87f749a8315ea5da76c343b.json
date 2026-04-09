@@ -48,5 +48,24 @@
   "related_entities": [
     "Lighthouse",
     "Vespid Dynamics"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek cylindrical command beacon resembling a tactical flashlight crossed with a communications relay. The form is purposefully compact and mobile, designed for rapid deployment across urban and industrial environments. Its tapered top narrows to a broadcasting antenna array, while the base widens slightly to accommodate inductive charging pads and a heavy-duty magnetic mounting system.",
+    "dimensions": "15 cm tall, approximately 5 cm diameter at widest point (base)",
+    "weight_description": "0.8 kg—handheld and pocketable in tactical gear, though typically carried in a quick-access pouch or mounted via magnetic base",
+    "primary_material": "Aerospace-grade polymer composite housing with embedded copper mesh shielding; aluminum alloy base ring",
+    "finish": "Matte gunmetal with subtle anti-reflective coating; visible heatsink ribbing along upper cylinder; polished aluminum charging contacts",
+    "color_scheme": "Matte charcoal gray body with electric teal accent strips running vertically; bronze/copper inductive charging pad rings visible at base; faint phosphorescent emergency stripe",
+    "interface_elements": "Top-mounted status LED ring (multicolor: green for active relay, amber for mesh connection, red for low power); four flush inductive charging pads arranged in circular pattern on base; recessed toggle power switch; small diagnostic holodisplay port (3mm); integrated antenna array at apex with micro-adjustable pivot joints",
+    "distinctive_features": [
+      "Layered antenna crown with 6 articulated micro-relay spines that physically fan out when powered",
+      "Four inductive charging pads that glow faintly blue during active charging cycle",
+      "Mesh networking indicator: secondary LED band that pulses to show connected beacon count in local network",
+      "Magnetic base with adjustable tension—strong enough to hold on moving vehicles or drones",
+      "Vespid security hologram on lower cylinder that shifts color when tilted (anti-counterfeit measure)"
+    ],
+    "manufacturer_markings": "Vespid Dynamics logo embossed on upper third; 'SRB-4' designation below logo; regulatory stamps (GLMZ compliance, QUANTA pricing: Φ2,400); serial number laser-etched on base ring",
+    "condition_typical": "In field deployment, typically mounted magnetically on vehicle dash, rooftop relay point, or held by handler in tactical harness. Charging pads show minor scuff marks from micro-drone contacts. Antenna spines are often slightly oriented toward signal source."
+  },
+  "image_prompt": "Product photography of Vespid Dynamics SRB-4 swarm relay beacon on industrial workbench, shot from 45-degree angle. Cylinder stands upright next to a handful of hexagonal micro-drones and a corpo tactical loadout harness. Cinematic lighting emphasizes the matte charcoal finish and teal accent stripes; cool blue ambient glow from inductive charging pads. Out-of-focus background shows holographic network topology display. Tactile texture visible on antenna crown. Shallow depth of field. Cyberpunk neo-military aesthetic. Shot on dark metal workbench with light grid backdrop. --ar 3:2 --v 6"
 }

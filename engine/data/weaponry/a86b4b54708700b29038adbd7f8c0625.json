@@ -43,5 +43,39 @@
     "close-quarters",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Arcturus Defense Solutions",
+    "Aybek Alvarez-Okonkwo",
+    "GLMZ",
+    "Glenville Sound",
+    "Lazarus Pharmaceuticals Splanchnic Triage Automaton",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Piezoelectric Scatter Pistol PSP-2 'Gravel'",
+    "Street Custom 'Glass Garden' Caltrops",
+    "The Swarm",
+    "Vespid Dynamics Swarm Canister SC-2 'Hornets'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, wide-muzzled scatter weapon with an aggressive forward-swept stance. The barrel flares dramatically at the terminus, resembling a predatory flower or insect mandible. Squat, muscular frame suggests contained explosive potential rather than graceful ballistics. Angular, asymmetrical geometry prioritizes function over elegance.",
+    "dimensions": "Length: 58 cm | Width at muzzle: 12 cm | Height (including feed mechanism): 16 cm | Barrel length: 22 cm",
+    "weight_description": "Substantial but not unwieldy — 4.1 kg with full magazine distributes across a compact frame, making it feel dense and purposeful in two-handed grip. The rotary cassette assembly sits low in the frame, anchoring weight near the centerline for quick target acquisition.",
+    "primary_material": "Reinforced polymer composite with internal electromagnetic lattice frame; wide-bore barrel of hardened steel with magnetic shielding coils embedded in the walls",
+    "finish": "Battleship-gray anodized steel with matte polymer accent surfaces. The barrel mouth shows characteristic scorch marks and micro-metal scoring from fer-ceramic sliver discharge. Supercapacitor housing has a subtle iridescent shimmer under light — evidence of electromagnetic flux dampening coating.",
+    "color_scheme": "Gunmetal gray primary body, matte charcoal polymer grip frame, brass-colored capacitor terminals visible through port vents, occasional burnt orange/copper discoloration at barrel rim from thermal stress",
+    "grip_texture": "Rubberized polymer with aggressive cross-hatching, designed for gloved operation. The grip bulges at stress points and terminates in a paddle-style magazine release. Secondary grip points molded below the barrel for two-handed stance control.",
+    "distinctive_features": [
+      "Flared wide-bore muzzle with radiating magnetic coil vanes visible as raised ridges",
+      "Rotary cassette magazine with six clearly labeled slots, each holding a translucent ferro-ceramic cassette visible through clear polymer backing",
+      "Status LED trio (power, charge, cassette status) mounted on the right side — typically glowing amber during charge cycle",
+      "Heat dissipation vents along the barrel in geometric pattern, showing minor discoloration from use",
+      "Electromagnetic field indicator strip on top of receiver — color-shifting material that intensifies during capacitor discharge",
+      "Tactile feedback notches on the magazine rotation mechanism",
+      "Arcturus Defense Solutions' stylized 'AD' monogram stamped (not engraved) on the grip — deliberately functional, no decoration"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo on left side of frame near safety selector. Serial plate mounted on underside of grip: 'SF-2/HORNETS NEST' followed by six-character alphanumeric code. Regulation stamp: 'LICENSED ANTI-DRONE PLATFORM — GLMZ AUTHORITY' in small print on barrel shroud.",
+    "condition_typical": "Well-maintained by working operators — no deep gouges, but visible micro-scratches on the polymer grip and burnished spots on the barrel from repeated handling. Light corrosion around cassette vents from metal micro-particles. Supercapacitor port shows faint electrical scoring from connector use. Weapon clean enough to function, marked enough to show field service."
+  },
+  "image_prompt": "Professional product photograph of the Arcturus Defense Solutions SF-2 'Hornets Nest' scatter-gun mounted on a matte gunmetal display stand against a dark slate background. Dramatic side-lighting emphasizes the flared barrel's geometric complexity and the glint of embedded magnetic coils. Close detail shot of the rotary cassette mechanism shows translucent ferro-ceramic cassette housings. Overhead angle shows the full profile with capacitor vents and LED status indicators softly glowing amber. Hand-holding detail: gloved hand (chrome-knuckle combat glove visible) gripping the rubberized lower frame, trigger discipline position. Cinematic cyberpunk aesthetic with subtle neon accent reflection on barrel rim. Hyper-detailed material textures: matte polymer grain, anodized steel weathering, burnished aluminum heat sinks. Professional product lighting with rim-light catch on the muzzle flare. Sharp focus throughout. GLMZ industrial aesthetic — functional, militaristic, unglamorous. --ar 3:2 --v 6"
 }

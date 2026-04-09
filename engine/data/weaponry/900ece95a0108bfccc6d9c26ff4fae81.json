@@ -43,5 +43,35 @@
     "corporate",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Nika Svensson-Kone",
+    "Slagworks Industrial",
+    "Tessera Corponation",
+    "The Question",
+    "Warden"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modern revolver with unmistakable corporate precision engineering. The Inquisitor presents as compact and purposeful, with clean lines and integrated tech ports along the frame. The silhouette is traditionally revolver-shaped but refined — no bulky rail systems, instead subtle access points for data connectivity. It reads as 'professional oversight' rather than 'street enforcer.'",
+    "dimensions": "19.5 cm overall length, 13.2 cm barrel, 5.1 cm height across frame. Compact enough for duty carry but with substantial heft in the cylinder.",
+    "weight_description": "Balanced and authoritative in hand at 1.08 kg — not light, not heavy, but confident. The weight distribution favors the cylinder, lending stability. Single-handed control is smooth; double-handed stance is rock-solid.",
+    "primary_material": "Stainless steel frame and barrel with reinforced polymer grip module. Cylinder is aerospace-grade aluminum alloy. Internals are precision-machined steel.",
+    "finish": "Brushed stainless steel on frame and barrel with a charcoal anodized cylinder. The polymer grip panels are matte black with subtle texture. BCI access ports feature recessed brushed titanium bezels.",
+    "color_scheme": "Dominant brushed steel-silver with charcoal-black accents. The grip panels are matte black. Tessera's corporate teal appears as thin accent striping along the top strap and ejector rod housing.",
+    "grip_texture": "Textured polymer with aggressive diagonal grip panels designed for reliability in wet or gloved conditions. The grip transitions to bare brushed steel at the trigger guard — cold, industrial touch point.",
+    "distinctive_features": [
+      "Recessed BCI data port (rear frame, just above grip) with illuminated access indicator — glows soft white when powered, amber during data transmission",
+      "Minimalist rear sight with integrated optical reference point for smart-link overlay alignment",
+      "Cylinder with precision-indexed alignment marks visible when swung open — no guessing, no improvisation",
+      "Ejector rod with Tessera's Φ currency symbol micro-etched near the muzzle end",
+      "Trigger guard slightly oversized for gloved operation, with subtle checkering",
+      "Recessed hammer with anti-snag profile — designed for shoulder carry in corporate contexts",
+      "Round count indicator — small LED window on left frame showing remaining chambers (displays as white dots, dims as rounds fire)"
+    ],
+    "manufacturer_markings": "Tessera Behavioral Exchange logo stamped cleanly on right frame (just below cylinder pin). Micro-stamped 'TKR-SL' on top strap. Serial plate on left frame with registration QR code. Corporate security certification hologram affixed to trigger guard.",
+    "condition_typical": "Immaculate. The Inquisitor exists in corporate security arsenals where maintenance logs are as important as rounds fired. Typical field units show zero wear — protective lubricant sheen, perfect edges, pristine grip panels. This is a tracked, audited weapon. Abuse is liability."
+  },
+  "image_prompt": "Professional product photography of a Tessera TKR-SL 'Inquisitor' revolver. Weapon positioned at 45-degree angle on matte black surface, six-inch barrel pointing upper left. Dramatic side-lighting from cool white 4000K source, emphasizing brushed stainless steel frame and charcoal cylinder. Ambient blue-teal cyberpunk accent lighting reflected off BCI data port on rear frame (port glowing soft white). Gloved hand (black tactical leather) entering frame from bottom, fingers positioned on grip for scale. Shallow depth of field with sharp focus on trigger guard and BCI alignment indicators. High-detail capture of Tessera corporate logo stamping. Futuristic, sterile, corporate aesthetic — this is oversight weaponry, not street iron. Visible reflection of manufacturing precision. Shot on studio cyc with minimal shadow detail. Professional security catalog photography style. --ar 3:2 --v 6"
 }

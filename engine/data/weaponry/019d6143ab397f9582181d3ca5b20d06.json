@@ -56,5 +56,38 @@
     "circuit",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Grave Protocol Arms Terminus GPA-1 'Last Rites'",
+    "Ihaia Nystrom-Keita",
+    "Lazarus Pharmaceuticals Splanchnic Triage Automaton",
+    "Nenad Vargas-Baffour",
+    "Sine",
+    "TESSERA PG-2 'Signature'",
+    "The Resonance Communion",
+    "Zheng-Dao Bioelectric Peristaltic Breach Driver",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, almost organic rifle with a distinctive bulbous front end. The silhouette is longer than conventional rifles but surprisingly streamlined, with a pronounced forward taper leading to the emitter dish. Its aesthetic suggests medical equipment crossed with a directed-energy weapon — clinical precision meeting lethal purpose.",
+    "dimensions": "Length: 71 cm | Barrel to emitter dish: 28 cm | Emitter dish diameter: 22 cm | Width at grip: 8 cm | Height including sights: 12 cm",
+    "weight_description": "Hefty but balanced — 4.1 kg distributed toward the rear with the heavy capacitor stack counter-weighted by the piezoelectric emitter assembly. Feels purposeful and planted in the shoulder.",
+    "primary_material": "Brushed titanium-alloy frame with integrated polymer housing. The emitter dish itself is ceramic-backed composite with visible piezoelectric cell arrays underneath a translucent protective dome.",
+    "finish": "Matte gunmetal titanium with subtle iridescent sheen under certain angles — a deliberate design choice suggesting advanced engineering. The polymer sections are textured charcoal with slight wear showing silver undertones.",
+    "color_scheme": "Gunmetal gray primary with charcoal polymer accents. The emitter array glows faintly blue under power — tiny piezoelectric cells arrayed in spiral pattern like a geometric mandala.",
+    "grip_texture": "Textured polymer grip with subtle ergonomic ribbing, treated for sweat resistance. Cool to the touch, deliberately non-slip. Minimal ornamentation.",
+    "distinctive_features": [
+      "Fibonacci-spiral piezoelectric transducer array visible through translucent emitter dome — glows soft blue when charged",
+      "Three physical power-setting detents on the left side of the receiver: Suppress / Incapacitate / Terminate",
+      "Heat dissipation vents along the barrel assembly — thin slots arranged asymmetrically",
+      "ZD-Cell Type IV power cell cartridge bay on the underside, marked with a small Φ symbol",
+      "Integrated targeting laser (red) mounted top-rail — commercial-grade, deliberately unremarkable",
+      "No traditional sights — appears designed for close-quarters precision",
+      "Subtle manufacturer marking: 'ZHENG-DAO BIOELECTRIC' etched along the receiver in clean sans-serif",
+      "A small warning label near the emitter: international symbol for 'non-ionizing energy hazard'"
+    ],
+    "manufacturer_markings": "Zheng-Dao Bioelectric corporate logo (stylized double helix) stamped on the left side of the receiver in brushed relief. Serial number panel recessed under the power cell bay. No other branding — deliberately corporate-austere.",
+    "condition_typical": "Well-maintained, professional. The PCR-4 is expensive enough that even black-market operators keep them pristine. Might show minor wear on the grip from intensive training, but the emitter array remains unmarred — too valuable, too delicate. No battle scars; weapons of this type are used once, cleaned, and retired to secure storage."
+  },
+  "image_prompt": "Peristaltic Compression Rifle PCR-4 'Constrictor' lying on dark matte surface, angled slightly to reveal the Fibonacci-spiral piezoelectric emitter dish glowing soft electric blue from within its translucent dome. Dramatic side-lighting from cool LED panels casts sharp shadows across the gunmetal titanium frame, highlighting the heat-dissipation vents and smooth polymer grip. Shallow depth of field focuses on the emitter array's geometric precision. Professional product photography aesthetic. Cyberpunk biotech aesthetic: cold, clinical, lethal. Shot against black carbon-weave surface with faint neon reflection. --ar 3:2 --v 6"
 }

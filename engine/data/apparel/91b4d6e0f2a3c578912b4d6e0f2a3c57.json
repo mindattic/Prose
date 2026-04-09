@@ -44,5 +44,25 @@
     "TESSERA PG-2 'Signature'",
     "The Filament",
     "VitaCore BloomFilter Olfactory Modulation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A minimalist fitted crop top that hits at the natural waist, creating a clean horizontal line across the torso. The silhouette is deliberately understated until light activation reveals a slow-shifting geometric pattern inspired by Andean weaving. Worn by someone moving between streetside clubs and day-shift work.",
+    "fit": "Fitted through the torso with enough stretch for breathing and movement. The wide scoop neck sits low but not dramatically — accessible for layering. Crop length is precise, not oversized.",
+    "primary_material": "Photochromic synthetic blend woven with conductive filament threads that respond to UV and direct light without requiring power. Soft hand-feel, moisture-wicking base layer construction.",
+    "texture": "Smooth and fluid in low light; the woven photochromic threads create subtle texture variation when activated. The pattern emerges gradually rather than sharply — almost imperceptible unless you're watching for it.",
+    "color_scheme": "Base: dove grey in ambient/indoor light. Activation pattern: amber and copper geometric designs (Andean-inspired tessellations) that bloom under UV or direct sunlight, then fade back to grey as light drops. No high-contrast graphics.",
+    "closures": "None — slip-on construction. The wide scoop neck provides easy dressing without fastenings.",
+    "distinctive_features": [
+      "Photochromic filament threading woven throughout (no power requirement)",
+      "Andean textile-inspired geometric activation pattern",
+      "Deliberately subtle light-response (slow bloom, not flash)",
+      "Clean minimalist cut with no structural seams or panels",
+      "Moisture-wicking interior for club and transit wear",
+      "No visible branding — Lumen's identity is the tech itself"
+    ],
+    "tier_indicator": "Tier 3 — affordable street fashion with accessible tech. Expensive enough to signal style-awareness, cheap enough for regular wear. No corpo exclusivity.",
+    "cultural_context": "Worn by people who move between underground club scenes and day employment. Appeals to those who want personalization without registration or power-dependency. Signals: creative, tech-comfortable, culturally aware, bridge between formal and informal economies.",
+    "condition_typical": "Pristine to broken-in. The photochromic effect is durable — no fading expected over normal wear. May show minor wear at scoop neck after 6+ months. Usually kept clean since the effect is the whole point."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a fitted dove-grey crop top on a model with mixed-heritage features, positioned in a club vestibule lit by neon strip lights and afternoon sun. The photochromic pattern is mid-bloom — warm amber and copper Andean geometric tessellations slowly activating across the torso in response to mixed UV and direct light. Wide scoop neck, minimal styling, high-waisted black trousers visible below. Moody side-lighting emphasizes the textile detail and the slow color shift. Urban dystopian backdrop with visible augmentation ports on the model's neck. Shot against exposed metal wall panels and flickering neon. --ar 2:3 --v 6"
 }

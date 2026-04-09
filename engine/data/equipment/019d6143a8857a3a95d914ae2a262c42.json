@@ -53,5 +53,25 @@
   "parent_corponation": "",
   "related_entities": [
     "Nitinol"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, military-grade survival capsule that transitions from a reinforced tactical backpack into a rigid, ovoid emergency habitat. The packed form is sleek and utilitarian; deployed, it becomes a self-contained bunker with a smooth, armorlike exterior.",
+    "dimensions": "Packed: 55cm H × 35cm W × 20cm D (backpack form). Deployed: 200cm L × 100cm W × 100cm H (oblong pod)",
+    "weight_description": "8 kg packed — handheld/carry-strap weight. Deployed pod is rigid but lightweight due to shape-memory alloy frame and composite shell.",
+    "primary_material": "Shape-memory titanium-aluminum alloy frame (deployed structure), ballistic-rated composite shell (polymer-ceramic hybrid), reinforced technical fabric exterior (packed state)",
+    "finish": "Matte tactical gray with subtle metallic fleck; deployed pod surface has a subtle diamond-plate texture for grip. Weather-sealed seams visible at panel joints.",
+    "color_scheme": "Gunmetal gray primary, with high-visibility safety orange trim on pack handles and deployment toggles. Internal pod walls are pale cream with color-coded system panels.",
+    "interface_elements": "Packed: dual deployment toggles (red, recessed), 7-segment LCD status readout (power/integrity/beacon), tactile latch system. Deployed: sealed hatch with interior override wheel, small circular viewport, integrated control panel with atmospheric/water/beacon controls, emergency ration access port, medical kit compartment marked with white cross.",
+    "distinctive_features": [
+      "Spring-loaded deployment frame visible as geometric seams when packed",
+      "Beacon antenna that extends from top of deployed pod (retractable)",
+      "Three small drain/exchange ports along pod base for emergency water/waste",
+      "Faint Zheng-Dao Heavy Industries logo (stylized ⟨◆⟩) embossed on pack exterior",
+      "Wear-resistant grip patches on pack shoulders",
+      "Glow-in-dark emergency exit marking (chevron pattern) on interior hatch"
+    ],
+    "manufacturer_markings": "Zheng-Dao Heavy Industries logo; regulatory stamps (GLMZ Standard 2224-NBC-Tier2, Ballistic Rating 3, Emergency Beacon ID printed on label); serial number on pack and pod. Small QUANTA price label (Φ18,500 typical retail).",
+    "condition_typical": "Pristine, military-clean condition when new; worn units show scuffed pack fabric, faded trim, and dust accumulation around seams. Deployed pods often show impact scorches or microfractures from real-world deployment in harsh conditions."
+  },
+  "image_prompt": "Product photography: Zheng-Dao ESP-2 emergency shelter pod displayed in two states on a steel workbench. Left side shows the compact gray tactical backpack with deployment toggles visible, safety orange handles catching sharp light. Right side shows the deployed metallic ovoid pod in full habitat form, 2 meters long, with extended beacon antenna, sealed hatch with circular viewport illuminated from within showing faint green atmospheric indicator lights, and small drain ports visible. Industrial workspace backdrop with dramatic rim lighting, cool cyan and orange gels, weathered concrete floor. Cinematic cyberpunk product shot, high contrast, shallow depth of field. --ar 3:2 --v 6"
 }

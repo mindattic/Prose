@@ -42,5 +42,24 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Circuit",
     "The Peninsula"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Relaxed, streetwear silhouette with exaggerated box-cut shoulders and length that reaches mid-hip. The hood features an asymmetrical split seam along the right side, creating a deliberately open channel that frames rather than fully encloses the head—practical accommodation for visible neural port hardware. Reads as casual-tough, comfortable enough for a dive bar but intentionally designed for augmented bodies.",
+    "fit": "Oversized and boxy through the chest and torso, with dropped shoulders and generous sleeve length. Not tailored—deliberately slouchy, designed to drape over cybernetic augmentations without compression or binding. Cuffs are fitted with double-stitching for durability.",
+    "primary_material": "Heavy brushed synth-wool blend, mid-grade thermal composite rated for GLMZ winters. Durable enough for repeated wear and machine wash, but not premium enough to signal wealth.",
+    "texture": "Brushed napped surface on the interior for insulation and soft hand-feel. Outer facing is smooth but slightly textured from the weave structure. Seams are visibly stitched with contrasting thread, emphasizing utilitarian construction.",
+    "color_scheme": "Deep charcoal gray with minimal branding. Subtle tonal striping along the torso seams. Kangaroo pocket outlined in slightly lighter gray thread.",
+    "closures": "Heavy-duty full-length zipper with oversized pull tab, finished with rubberized grip material. Optional magnetic snap reinforcement at chest.",
+    "distinctive_features": [
+      "Port-split hood design—right-side seam extends from shoulder to crown, creating open channel for neural clusters",
+      "Large kangaroo pocket with reinforced edges and interior depth for carrying small electronics or personal items",
+      "Double-stitched cuff reinforcement to prevent fraying after repeated wear",
+      "Brushed interior lining for thermal retention",
+      "Subtle Coldbreak Basics woven label at lower left hem, deliberately understated"
+    ],
+    "tier_indicator": "Tier 3-4 functional wear. Affordable circuit market brand, not luxury, but intentional design rather than salvage. Signals working-class augmentation acceptance.",
+    "cultural_context": "Street culture, corpo mid-tier employees who keep augmentations visible, medical workers on off-hours, indie contractors. Wearing this says: 'I have port hardware and I'm not hiding it; I shop practical; I don't perform for corporate aesthetics.' Not salvage culture, not wealthy, just real.",
+    "condition_typical": "Worn broken-in on first wear. After 3-6 months: subtle pilling on high-friction areas (lower hem, pocket edges), slight fading of charcoal, possible selective distressing from port contact wear. Still functional and acceptable for years. Rarely looks pristine."
+  },
+  "image_prompt": "Close-up of a charcoal oversized hoodie draped over a dark mannequin, shot from three-quarter angle. The right side of the hood is pulled back slightly, revealing the asymmetrical split seam and a visible chrome neural port cluster on the model's neck. Kangaroo pocket is in sharp focus in the foreground. Moody neon-blue overhead lighting casting dramatic shadows across the brushed fabric texture. Urban backdrop: rain-wet concrete wall with faint corporate ad holograms fading in the background. Shallow depth of field on the zipper pull. Cyberpunk fashion catalog aesthetic. --ar 2:3 --v 6"
 }

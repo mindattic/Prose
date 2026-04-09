@@ -42,5 +42,39 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "GLMZ",
+    "Glenville Sound",
+    "Nika Svensson-Kone",
+    "Saoirse Mwamba-Drăghici",
+    "TESSERA ES-4 'Perimeter'",
+    "Tessera Nexus Town Car",
+    "Toll Collector",
+    "Vantablack FH-20 'Convoy'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutal six-barrel rotary assembly mounted on a heavy gimbal cradle. The weapon presents a predatory, forward-facing silhouette dominated by the cylindrical barrel cluster—thick, purposeful, and mechanically exposed. The overall form reads as pure industrial violence: a compact block of engineering optimized for sustained suppression rather than precision.",
+    "dimensions": "Barrel assembly: 85cm length, 32cm diameter (six-barrel cluster). Weapon mounting cradle: 120cm wide × 95cm tall × 60cm deep. Ammunition hopper: 140cm tall, cylindrical, 70cm diameter",
+    "weight_description": "Brutally heavy. The 120kg weapon assembly feels anchored—immobile without mechanical assist. The 180kg ammunition hopper exerts constant downward pressure on its mount. Requires vehicle-class power and structural integration; dead weight in any context but its intended role.",
+    "primary_material": "Chromium-molybdenum steel frame and barrel assembly. Tungsten-reinforced acceleration coils within the rotary hub. Polymer composite housing for electronics and thermal management vanes.",
+    "finish": "Industrial matte gray with thermal-reactive coating that darkens under sustained fire. Bare metal in wear spots where ammunition feed mechanisms operate. Scorch marks and micro-fractures from electromagnetic pulse cycling visible on barrel lips.",
+    "color_scheme": "Steel gray primary with gunmetal accents. Thermal indicator bands (orange, red) on the barrel cluster show heat progression. Zheng-Dao corporate yellow safety striping on the ammunition hopper and electrical connector points.",
+    "grip_texture": "Vehicle-mounted—no personal grip. Aim controls feature rubberized pressure pads for gunner's remote trigger interface. Ammunition feed handle is bare steel, scored with grip wear from loader repetition.",
+    "distinctive_features": [
+      "Six parallel barrels arranged in tight cluster, each with visible cooling fins",
+      "Rotary hub bearing scars and electromagnetic coil casings",
+      "Ammunition feed system with exposed tungsten round magazine visible through transparent polymer carousel section",
+      "Thermal expansion joints visible between barrel assembly and cradle",
+      "Gimbal-mounted on heavy reciprocal dampers—designed to absorb recoil spread across vehicle chassis",
+      "Electrical connector port flush-mounted for vehicle power integration, armored against foreign objects",
+      "Mechanical ammo counter with digit readout on hopper side",
+      "Heat vents arranged radially beneath barrel cluster, darkened from repeated thermal cycling"
+    ],
+    "manufacturer_markings": "Zheng-Dao Heavy Industries corporate seal (stylized gate/archway) stamped on the cradle's right side. Serial plate mounted on the rotary hub housing. 'DRAGON GATE DG-4' embossed in Mandarin and Latin script on the left barrel shroud. 'VEHICLE MOUNT ONLY' warnings laser-etched on the ammunition hopper in three languages.",
+    "condition_typical": "Field-hardened. Copper scorch marks around barrel exits from tungsten plasma residue. Ammunition carousel typically shows 60-80% fill. Structural components display micro-corrosion from thermal cycling and electromagnetic weathering. Gimbal mounts show grease accumulation and dust coating. Fully functional but perpetually battle-worn—this is a tool that lives in suppressive fire duty."
+  },
+  "image_prompt": "Professional weapons catalog photograph: Zheng-Dao Dragon Gate DG-4 rotary railgun mounted on vehicle gimbal cradle, shot from low three-quarter angle emphasizing the six-barrel cluster. Dark matte steel with scorch marks and thermal damage visible. Tungsten-gray ammunition hopper mounted behind, 40% rounds visible through carousel window. Dramatic side-lighting from upper left reveals heat scorch patterns and electromagnetic coil housings. Blurred corporate facility background with industrial bokeh. Shot on tactical measurement grid for scale reference. Cool color grading with orange thermal indicator bands pop against gray palette. --ar 3:2 --v 6"
 }

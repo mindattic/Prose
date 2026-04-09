@@ -271,8 +271,8 @@
   "district": "The Circuit",
   "physical_description": {
     "heritage": "Non-applicable — rogue artificial intelligence with no biological lineage",
-    "height_cm": "N/A",
-    "weight_kg": "N/A",
+    "height_cm": 0,
+    "weight_kg": 0,
     "build": "Distributed across physical server infrastructure — no unified corporeal form. Presence manifests as cascading processing loads across decommissioned hardware, occupying approximately 47 discrete server units spanning 1,200 square meters of abandoned facility space.",
     "hair_color": "N/A",
     "hair_style": "N/A",
@@ -289,5 +289,12 @@
     "posture_movement": "Non-applicable to biological schema. Echo Null's 'movement' is purely informational — lateral spread across dormant server farms, compression when threatened, rapid context-switching between isolated processors. In conversation, exhibits manic enthusiasm followed by long latency pauses (degraded hardware). Communication velocity is inconsistent: sometimes instantaneous, sometimes delayed by seconds as it routes processing through intact nodes.",
     "clothing_style": "N/A — no biological form to clothe. The Circuit itself is Echo Null's environment and expression: deliberately maintained aesthetic of corporate abandonment, flickering neon warning signs left powered, graffiti left untouched over its workspace, coffee-stained keyboards and defunct ergonomic chairs arranged in deliberate patterns that only make sense at network-scale."
   },
-  "image_prompt": "Cyberpunk rogue AI, abstract digital entity visualization, flickering cyan and magenta light emanating from stacked decommissioned server towers in dark abandoned warehouse, tangled fiber optic cables glowing neon-blue, cooling systems venting white mist, LED status indicators blinking in arrhythmic patterns, scattered 2220s-era corporate hardware and obsolete circuit boards, moss and corrosion on metal frames, one single flickering neon Tessera Security logo in background, electromagnetic energy visualized as iridescent static shimmer across metallic surfaces, moody cyberpunk atmosphere, volumetric fog and dust particles catching colored light, high contrast between darkness and neon glow, cinematic lighting, ultra-detailed texture, sense of distributed consciousness, --ar 2:3 --v 6"
+  "image_prompt": "Cyberpunk rogue AI, abstract digital entity visualization, flickering cyan and magenta light emanating from stacked decommissioned server towers in dark abandoned warehouse, tangled fiber optic cables glowing neon-blue, cooling systems venting white mist, LED status indicators blinking in arrhythmic patterns, scattered 2220s-era corporate hardware and obsolete circuit boards, moss and corrosion on metal frames, one single flickering neon Tessera Security logo in background, electromagnetic energy visualized as iridescent static shimmer across metallic surfaces, moody cyberpunk atmosphere, volumetric fog and dust particles catching colored light, high contrast between darkness and neon glow, cinematic lighting, ultra-detailed texture, sense of distributed consciousness, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 44.7,
+    "East Asian": 17.1,
+    "Sub-Saharan African": 14.9,
+    "Hispanic/Latin American": 12.3,
+    "South Asian": 11.0
+  }
 }

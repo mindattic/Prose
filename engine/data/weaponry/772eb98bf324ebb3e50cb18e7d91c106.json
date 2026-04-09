@@ -40,5 +40,38 @@
     "tier_1",
     "affordable"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Below the Threshold",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Carrion Defense Works Fragmentation Sleeve FS-2 'Shrapnel Hug'",
+    "Ezio Kaboré-Malhotra",
+    "GLMZ",
+    "Phased Acoustic Neurostimulator PAN-3 'Tinnitus'",
+    "Shelf Life",
+    "Street Custom 'Cigarette' Pen Gun",
+    "Tessera Corponation",
+    "Tessera Phased Array Disruptor PAD-3 'Sunspot'",
+    "The Threshold"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, cylindrical device resembling a shortened firecracker or marker pen. Its diminutive thumb-sized form belies its disorienting potential. The overall impression is utilitarian and mass-produced—deliberately unimposing to fit civilian contexts.",
+    "dimensions": "3 cm length, 1.5 cm diameter (roughly the size of an AAA battery stood on end)",
+    "weight_description": "Extremely light and almost negligible in the palm—12 grams feels like holding a stick of gum. This lightness makes it easy to carry, easier to throw, and psychologically reassuring as an 'always-on' defense item.",
+    "primary_material": "Molded polycarbonate casing with a reinforced paper or composite shell around the pyrotechnic core. Designed for controlled failure and safe handling.",
+    "finish": "Matte white or light grey polymer exterior with minimal sheen. The surface is textured slightly to prevent slipping when wet or sweaty.",
+    "color_scheme": "Off-white or pale grey body with a single high-contrast safety ring in neon orange or red. Small black text stenciled on the side reading 'TESSERA FS-2 | PULL TO ACTIVATE | 1.5s DELAY'",
+    "grip_texture": "Smooth, slightly grippy molded polymer—designed for quick, reliable ring-pull even in panic or with gloved hands. The ring tab itself is a flat, stamped metal loop (zinc-plated steel) sized for easy finger insertion.",
+    "distinctive_features": [
+      "Bright safety ring (orange/red anodized steel) as the only movable part and primary activation point",
+      "Minimal manufacturing seams—injection-molded for cost efficiency",
+      "Subtle raised text on one side: lot number, manufacture date, and 5-year expiration",
+      "A tiny vented pressure relief port on the sealed end (barely visible, engineered for controlled discharge)",
+      "Two small metal contact points near the base where the chemical ignition circuit closes upon ring-pull",
+      "Slightly tapered end to improve throwing aerodynamics"
+    ],
+    "manufacturer_markings": "TESSERA INDUSTRIES circular logo (geometric Φ symbol within concentric rings) stamped onto the upper third. Directly below: 'FLASHSNAP FS-2 | CIVILIAN GRADE | GLMZ APPROVED'. Serial batch code and date printed along the lower seam in 4-point type.",
+    "condition_typical": "Pristine and unmarked when new—a consumer product designed for single-use reliability. In the field, the safety ring may show handling wear, and the white polymer may yellow slightly from UV exposure over time. Most units are kept sealed in original packaging until deployment, so field-worn examples are rare."
+  },
+  "image_prompt": "Product photography of a Tessera FS-2 FlashSnap flashbang device lying on a matte black surface next to a chrome-augmented human hand in tactical glove for scale. The device is a small off-white cylindrical object with a bright neon-orange safety ring tab. Dramatic side-lighting emphasizes the smooth polymer texture and casts a sharp shadow. The background is deep charcoal-black with subtle cyberpunk HUD elements (faint holographic grid, Φ currency symbol watermark). Close-up macro detail showing the safety ring and TESSERA logo. Cinematic, sterile product-catalog aesthetic. High contrast. --ar 3:2 --v 6"
 }

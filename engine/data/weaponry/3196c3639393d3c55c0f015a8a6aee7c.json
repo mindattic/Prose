@@ -42,5 +42,41 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Alper Holmberg-Dembele",
+    "Free Assembly",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Nika Svensson-Kone",
+    "Ringo Heavy Transit MagRail Levitation Transport Network",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "The Chorus of David Park",
+    "The Compact",
+    "The Pure Hand",
+    "Vantablack Media"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist pistol with an oversized upper assembly that dwarfs its grip. The barrel section is chunky and angular, dominated by the visible electromagnetic accelerator rails running its length. Despite being 'compact,' it reads as purposeful and dense—a weapon built for lethality over ergonomics. The profile is asymmetrical: top-heavy with a pronounced rail housing, tapered grip.",
+    "dimensions": "Overall length 24cm, barrel 12cm, width at rail housing 3.2cm, grip diameter 2.8cm",
+    "weight_description": "Hefty and front-weighted. 2.1kg feels substantial in one hand, the mass concentrated forward of the trigger group. Balanced on a knife's edge between 'controllable' and 'unwieldy'—demands respect and two-handed shooting stance despite single-hand capability.",
+    "primary_material": "Aerospace-grade polymer frame with integrated titanium rail housing. Capacitor bank occupies the grip interior, visible as layered metallic components through transparent grip sections.",
+    "finish": "Matte gunmetal polymer body with brushed titanium rail guides. Heat-stress discoloration visible along the barrel in well-used examples—oxidized blues and purples creeping from the muzzle back 4-5cm.",
+    "color_scheme": "Industrial gray-black primary with silver-titanium accelerator rails exposed. Capacitor components visible through grip translucency in deep metallic blue.",
+    "grip_texture": "Textured polymer with embedded heat-dissipation lattice pattern. Slight tackiness from capacitor thermal management. Finger grooves deliberately aggressive—built for control, not comfort.",
+    "distinctive_features": [
+      "Exposed dual electromagnetic rails running full barrel length—primary visual signature",
+      "Translucent grip section revealing capacitor architecture beneath",
+      "Heat vents cut into upper rail housing as geometric patterns",
+      "Ammo counter LED on left side—small red/green indicator",
+      "Tungsten needle loading breach on top of rail assembly",
+      "Charging port on grip base (proprietary Vanta connector)",
+      "Wear rings around muzzle from barrel thermal stress",
+      "Faint grid-pattern etching from rail coil wrapping showing through finish"
+    ],
+    "manufacturer_markings": "VANTA ORDNANCE in block letters stamped on left rail housing. Serial plate (brushed aluminum, 2cm x 0.8cm) mounted below charging port. RP-1 designation and railgun warning symbol (⚡ in circle) engraved above trigger guard.",
+    "condition_typical": "Field specimens show predictable heat-scarring on barrel. Capacitor housing invariably shows micro-scratches from repeated charging cycles. Professional operators maintain matte finish; some aftermarket grip wraps appear in grey or black. Thermal discoloration inevitable and considered a badge of proper use."
+  },
+  "image_prompt": "Close-up product shot of VANTA Ordnance RP-1 Thumbtack railgun pistol, lying on dark matte black surface. Dramatic side-lighting emphasizing the exposed electromagnetic rails and titanium accelerator housing. Weapon angled 45 degrees to show both profile brutalism and translucent grip revealing internal capacitor architecture. Metal components catch light with cool blue highlights. Photorealistic cyberpunk aesthetic. Worn heat discoloration visible along barrel. Shallow depth-of-field on trigger guard. Cinematic futuristic industrial styling. --ar 3:2 --v 6"
 }

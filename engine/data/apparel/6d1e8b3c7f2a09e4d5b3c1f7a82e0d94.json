@@ -53,5 +53,25 @@
     "Dzemal Acholonu-Patagiri",
     "Nodar Kuznetsov-Adu",
     "The Pure Hand"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A rain-walker's silhouette: broad and protective, built for chemical exposure and street survival. The matte charcoal poncho-coat dominates, creating a loose, enveloping shape that reads utilitarian and deliberately unglamorous. Layered beneath are faded teal compression and olive work trousers that suggest practical modification over time. The overall impression is weathered, functional, and marked by visible repair—someone who exists in the acid-season gutters of the GLMZ and makes no apology for it.",
+    "fit": "Loose and oversized through the poncho-coat; compression top fitted but tucked; work trousers wide-leg and relaxed, held by drawstring. The ensemble is designed for mobility and chemical protection, not aesthetics. Tall boots provide rigid structural support.",
+    "primary_material": "Rubberized synthetic (poncho-coat), dense-knit synth-wool blend (compression top), heavyweight canvas (trousers), cracked synthetic leather with rubber-compound resole (boots), waxed canvas (hat), worn leather with embedded grip-tape (gloves)",
+    "texture": "Matte and slightly tacky (poncho-coat); fine ribbed knit (compression top); rough, heavy weave (trousers); cracked and weathered (boot leather); stiff, wax-stiffened (hat); callused leather with hard rubber nodes (gloves). Every surface reads as reconditioned and broken-in.",
+    "color_scheme": "Dominant matte charcoal with uneven fading; accents of bright yellow hazard tape (four patches on hem); dark teal compression faded to gray-teal; olive-brown canvas with stains and discoloration; black and tan leather; matte tan waxed canvas with acid pitting. High-contrast utility aesthetic.",
+    "closures": "Poncho-coat: friction-fit and overlap; trousers: drawstring waist; boots: lace-up (weathered cord); gloves: friction-fit pull-on; hat: none",
+    "distinctive_features": [
+      "Four bright yellow hazard-tape patches on poncho-coat hem — functional and defiant",
+      "Gene-compatible rear seam with elastic gusset on trousers — signals geneware modification or secondhand origin",
+      "Fingerless gloves with embedded industrial grip-tape rubber nodes on knuckles",
+      "Knee-high salvage boots with thick chemical-treated rubber resole and foam-insulation lining replacement",
+      "Wide-brimmed waxed-canvas hat, acid-pocked, shaped with permanent lean",
+      "Visible patches, fading, and wear throughout — no attempt at repair concealment"
+    ],
+    "tier_indicator": "Tier 5 salvage / sub-grade street wear. Every component is sourced from industrial surplus, secondhand markets, or self-modification. The outfit signals someone outside corpo infrastructure, built from what the Shelf economy provides.",
+    "cultural_context": "Acid-season rain-walker; Shelf market denizen; likely geneware-modded; someone who walks toxic gutters and chemical runoff zones for work or survival. The visible modifications and hazard tape suggest someone proud of their survival adaptation rather than ashamed of their tier.",
+    "condition_typical": "Weathered, patched, faded, and broken-in. This outfit is not pristine—it is lived-in, chemically exposed, and showing its age. Wear is the point. Pristine condition would signal this is a fake or unused."
+  },
+  "image_prompt": "A lean figure in a matte charcoal rubberized poncho-coat with bright yellow hazard-tape patches on the hem, standing in an acid-rain alley beneath flickering neon. Dark teal compression top barely visible beneath, olive-brown canvas work trousers with visible rear geneware seam, knee-high cracked synthetic leather boots. Fingerless gloves with rubber-node knuckles. Wide-brimmed waxed-canvas hat, acid-pocked and tilted. Moody cyan and amber neon casting shadows on wet industrial concrete. Dripping chemical runoff in the background. The figure is weathered, functional, unglamorous—a Shelf survivor. Shot from waist-up against dark brutalist architecture. --ar 2:3 --v 6"
 }

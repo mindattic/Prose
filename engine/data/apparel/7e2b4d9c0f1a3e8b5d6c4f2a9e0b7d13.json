@@ -50,5 +50,24 @@
     "TESSERA PG-2 'Signature'",
     "Tessera Industries Memory Rounds MR-2 'Recall'",
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Nearly invisible at distance—a second skin in charcoal grey that blurs the boundary between glove and flesh. Worn loose or fitted to the wrist, they read as absence rather than garment. When examined close, the micro-texture catches light in a faint, static-like shimmer.",
+    "fit": "Skintight, second-skin compression that conforms to hand and wrist anatomy without restriction. Seamless at the fingertips, with deliberate pre-cut seams along index and middle fingers for optional augmentation access.",
+    "primary_material": "Synthetic dermis—a biotech-adjacent polymer that mimics skin elasticity and thermal conductivity, treated with passive print-disruption coating",
+    "texture": "Micro-textured surface feels almost organic, faintly granular to touch. Inner palm contains gecko-fiber adhesion strips—barely perceptible raised channels that activate under pressure and release cleanly on flex",
+    "color_scheme": "Charcoal grey, desaturated to minimize visual contrast with human skin tones. No patterns; uniformly matte with reflective micro-static shimmer under direct light",
+    "closures": "None—friction-fit at the wrist, no seams or fasteners visible. Designed for immediate on/off without drawing attention",
+    "distinctive_features": [
+      "Passive fingerprint-disruption coating—contact leaves only smeared static, no usable forensic data",
+      "Pre-slit seam channels running across index and middle fingers for quick augmentation access",
+      "Gecko-fiber palm adhesion strips for grip without abrasion or residue",
+      "Unmarked street manufacturing—zero branding, zero serial tracking",
+      "Sold in matched pairs in sealed, unmarked pouches"
+    ],
+    "tier_indicator": "Tier 4-5 functional / black-market specialty. Expensive enough to signal intentional acquisition, cheap enough to remain deniable. Street-label manufacturing keeps it off corpo inventory.",
+    "cultural_context": "Worn by infiltrators, data couriers, security-adjacent operatives, and anyone operating in the legal grey. Signals preparedness, operational awareness, and willingness to move without leaving traces. Associated with Brineworks street ethos—practical, untraceable, built for people who need to vanish.",
+    "condition_typical": "Pristine or broken-in depending on use; gecko-fiber strips lose adhesion with repeated flex cycles. Wear is mostly invisible—slight dulling of the micro-texture, possible micro-tears at the fingertip seams if augmentation access has been exercised multiple times. Treated with gentle care to preserve the fingerprint-disruption coating."
+  },
+  "image_prompt": "Closeup fashion shot of charcoal-grey Nullframe GhostTouch gloves on augmented hands against a dark urban backdrop—concrete wall, neon edge-light catching the micro-texture in faint static shimmer. Hands posed in a neutral grip, showing the seamless fingertip work and pre-slit seams barely visible along index and middle fingers. Moody single-source lighting from the left, casting subtle shadows. Cyberpunk operative aesthetic, tactile and minimal. Dark tones with high contrast on the glove surface. --ar 2:3 --v 6"
 }

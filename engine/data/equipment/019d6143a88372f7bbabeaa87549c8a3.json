@@ -81,5 +81,24 @@
     "TESSERA PG-2 'Signature'",
     "Vantablack-CNX",
     "Zheng-dao Bioelectric"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A form-fitting reactive body armor system consisting of overlapping ceramic composite plates with a distinctive oil-slick iridescent sheen. The segmented plating follows the torso and shoulder musculature, with articulated upper-arm sections that allow mobility. The surface ripples subtly with embedded conductive polymer mesh visible beneath a semi-transparent protective coating, creating an almost organic, scaled appearance despite its technological nature.",
+    "dimensions": "Torso coverage spans approximately 45cm height × 38cm width; shoulder pauldrons extend 20cm laterally; upper arm sections wrap 28cm circumference. Overall backpack-sized when assembled, but worn as a second skin.",
+    "weight_description": "8.4 kg total — distributed across the torso and shoulders. Handheld during fitting, but weight-balanced to feel lighter during wear due to its ergonomic conformity. Requires a harness system for proper load distribution.",
+    "primary_material": "Semi-rigid ceramic composite (outer shell) with embedded piezoelectric transducers; conductive polymer mesh layer beneath; bioelectric charge matrix distributed through microchannel pathways integrated into structural ribbing.",
+    "finish": "Matte ceramic with iridescent oil-slick sheen caused by the underlying conductive mesh. Surface appears to shift between dark blues, purples, and metallic greens depending on angle and light. Slightly textured grip zones on impact-optimized areas.",
+    "color_scheme": "Midnight black ceramic base with iridescent conductive mesh creating shifting blue-violet-bronze undertones. Accent strips of reflective safety-grade phosphor stripe along seams (required by GLMZ workplace safety codes). Faint cyan glow from internal status LEDs visible at edge seams during active operation.",
+    "interface_elements": "Right-shoulder mounted control interface: small raised panel with three tactile buttons for charge mode selection (passive/active/diagnostic). Wrist-side port (reinforced USB-C analog) for Dermosync calibration. Status LED strip running along the right side seam — indicates charge cycle readiness (blue = ready, amber = cooling, red = fault). Haptic feedback nodes distributed across inner surface where it contacts skin.",
+    "distinctive_features": [
+      "Oil-slick iridescent sheen that shifts color with movement and light angle — signature visual marker of Zheng-Dao bioelectric tech",
+      "Faint crackling aura visible around edges during high-voltage discharge events",
+      "Micro-articulated plate segments that move independently with torso flexion",
+      "Subtle cyan glow emanating from seam gaps when active",
+      "Organic scaling appearance despite synthetic construction — intentional biomimetic design language"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo (stylized circuit-heart symbol) embossed on right shoulder in raised chrome. Serial number and batch code laser-etched on inner left torso seam. Regulatory stamps: GLMZ approval seal, NIJ Level IIIA equivalent rating label, bioelectric hazard warning (skull with electrical bolts) on shoulder pauldron. Warranty void if opened; tamper-evident hologram seal present at battery access port.",
+    "condition_typical": "In active use: faint cyan glow at seams, subtle warmth radiating from ceramic (thermal dissipation), micro-vibrations felt against skin during discharge cycles. Under examination: iridescent finish catches light dramatically; inner Dermosync calibration layer visible through access panel shows fine silver trace pathways. Worn gear shows scuff marks on impact zones, slight discoloration from sweat/saltwater buildup along contact points despite hydrophobic coating."
+  },
+  "image_prompt": "Product photography of a Zheng-Dao Bioelectric Galvanic Carapace Shell body armor displayed on a sleek steel workbench with cyberpunk industrial aesthetic. The armor is positioned at three-quarter angle to showcase its iridescent oil-slick ceramic plating that shifts between dark blue, violet, and metallic bronze. Dramatic overhead lighting casts sharp shadows across the segmented plate structure, while a secondary blue-tinted accent light from the left illuminates the subtle cyan glow emanating from seam edges, suggesting active bioelectric charge matrix. The background is a soft-focus bokeh of neon signs (Mandarin characters, electrical symbols) and diffused tungsten lighting. Shallow depth of field focuses on the right shoulder control panel and its three tactile buttons. The ceramic surface captures light like oil on water, creating a mesmerizing iridescent shimmer. Include a small product label placard reading 'ZHENG-DAO BIOELECTRIC — GALVANIC CARAPACE SHELL' with circuit-heart logo. Atmosphere should feel high-tech, dangerous, and coveted — the sort of gear worn by corporate security and street legend enforcers alike. --ar 3:2 --v 6"
 }

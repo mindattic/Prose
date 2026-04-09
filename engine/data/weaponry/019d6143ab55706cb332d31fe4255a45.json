@@ -55,5 +55,37 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Fatoumata Belov-Ntim",
+    "GLMZ",
+    "Ihaia Nystrom-Keita",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "The Crucible",
+    "The Pure Hand",
+    "Vantablack-CNX",
+    "VitaCore BloomFilter Olfactory Modulation Implant",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, egg-shaped grenade with a subtly bulbous profile — distinctly non-military in its organic contours. The form suggests fragility despite its destructive purpose, almost like a ceramic vessel rather than a weapon. At rest, it appears inert and deceptively delicate.",
+    "dimensions": "62mm diameter (sphere-approximate), 68mm height including activation crown. Compact enough to palm, substantial enough to demand respect.",
+    "weight_description": "Hefty for its size — 310g distributed uniformly creates a satisfying, dense feel in hand. Not light, not cumbersome; the balance point sits naturally in the center of the palm.",
+    "primary_material": "Ceramic-composite shell (likely alumina-silicate blend reinforced with carbon fibers) housing an inner aerogel bladder. The ceramic provides fracture-point precision and thermal resistance.",
+    "finish": "Matte cream-white ceramic exterior with faint structural scoring patterns visible under side-light — stress-relief grooves that double as grip aids. Interior visible through small inspection port shows translucent amber-tinted aerogel matrix.",
+    "color_scheme": "Cream-white primary body with deep charcoal-gray dual piezoelectric activation crown (mushroom-cap styled, ~12mm tall). Faint amber glow visible through translucent sections of the housing.",
+    "grip_texture": "Smooth ceramic surface with micro-textured grip zones on opposing sides — not rough, but sufficient friction to prevent slipping. The activation crown has a rubberized, slightly convex top for positive thumb pressure.",
+    "distinctive_features": [
+      "Dual piezoelectric fracture caps forming a distinct crown atop the body — visible as two dark, rounded lobes",
+      "Small circular inspection port (8mm diameter) on the side revealing the amber aerogel suspension within",
+      "Hairline fracture-guide scoring etched across the ceramic surface in a radial starburst pattern from the pole",
+      "Faint yellow oxidation residue marking the equator (residual from manufacturing or intentional batch-identification)",
+      "Pressure-relief vents (4x 2mm slots) positioned at cardinal points, disguised as aesthetic striations"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logotype (circular, with angular 'A' symbol) stamped in raised relief on one hemisphere. Serial number plate (stainless steel, 1.5cm x 0.8cm) affixed near the base with micro-etched batch code. Legality warning (red text, difficult to read without magnification) on opposite side.",
+    "condition_typical": "Field units show minor cosmetic scuffing on the ceramic surface and faint soot residue around the relief vents from pre-detonation thermal staging. Well-maintained examples exhibit pristine cream finish; black-market variants often show improvised handling marks, tape residue, or field repairs using adhesive polymer patches."
+  },
+  "image_prompt": "Product photography of the TSG-4 Thermite Suspension Grenade: egg-shaped cream-white ceramic sphere with visible dual charcoal piezoelectric crown, positioned on dark reflective surface. Side-lit dramatically with cold blue-white key light revealing the faint amber translucent aerogel matrix visible through inspection port. Matte ceramic finish contrasts with glossy crown. Hands in tactical gloves (black leather, wire-reinforced) carefully holding the grenade at cardinal points, fingers clear of activation mechanism. Fine detail: hairline fracture-guide scoring visible on surface, small relief vents catching light. Background: dark industrial setting, hint of server infrastructure or concrete bulkhead. Cyberpunk aesthetic with subtle cyan accent lighting reflecting off logo. Sharp focus on grenade, shallow depth of field. Product shot, forensic precision. --ar 3:2 --v 6"
 }

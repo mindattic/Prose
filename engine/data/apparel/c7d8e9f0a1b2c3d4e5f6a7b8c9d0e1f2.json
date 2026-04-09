@@ -38,5 +38,26 @@
   "parent_corponation": "",
   "related_entities": [
     "Hearthstone Firearms Trail-357 'Pathfinder'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A skeletal, modular sandal with an aggressive stance. Open framework reveals the foot entirely—no enclosing walls or toe boxes. Thick lugged sole dominates visually, creating a rugged, utilitarian silhouette. Webbing straps crisscross in a technical lattice pattern. Looks purpose-built and uncompromising.",
+    "fit": "Completely adaptive—zero structural constraints. Contoured footbed accommodates digitigrade, ungulate, and clawed morphologies equally. Six adjustment points allow infinite micro-fitting. Heel cage stabilizes without clamping.",
+    "primary_material": "High-grip vulcanized rubber sole with aggressive lug pattern. Reinforced synthetic webbing straps in mil-spec ballistic weave. Contoured footbed is molded polyurethane with drainage channels.",
+    "texture": "Sole is deeply textured with geometric lugs for mud/rock grip. Webbing has a stiff, technical feel—slightly fuzzy against skin, designed to resist fraying. Footbed surface is slightly tacky and dimpled for traction.",
+    "color_scheme": "Military grey-green rubber sole. Webbing in charcoal or burnt orange. Footbed in neutral tan with darker grip zones. Minimal branding—small Φ-stamped metal adjustment points.",
+    "closures": "Six friction-fit webbing adjustment points along the midfoot and heel. Pull-tight mechanism with heat-sealed stops. No buckles or magnetic snaps—purely mechanical, field-repairable.",
+    "distinctive_features": [
+      "Completely open frame—no toe box or heel cup",
+      "Six independent webbing adjustment zones for custom fit",
+      "Contoured footbed with micro-drainage channels",
+      "Heel cage strap with triple-pass webbing",
+      "Oversized lug pattern rated for loose substrate",
+      "Bare metal adjustment anchor points (corrosion-resistant)",
+      "Field-replaceable sole option available through Quell service centers"
+    ],
+    "tier_indicator": "Tier 2-3 functional/outdoor. Expensive enough to signal investment in quality gear (Φ180-220 range), but purely performance-oriented with no luxury markers.",
+    "cultural_context": "Worn by outdoor workers, geneware users with non-human foot morphology, peri-urban fringe dwellers, and corporate environmental teams. Signals competence in rough terrain, acceptance of non-standard biology, and self-reliance.",
+    "condition_typical": "Usually scuffed and mud-caked. Webbing shows wear but holds. Sole develops personalized wear patterns from user's gait. Well-maintained pairs last 18+ months. Patched straps are common field modifications."
+  },
+  "image_prompt": "Close-up fashion photograph of a Quell Open-Structure Trail Sandal on a digitigrade foot with subtle iridescent skin plating. Worn stance in a muddy peri-urban fringe zone, industrial ruins in soft focus. Moody grey-green lighting reflecting off the lugged rubber sole. Webbing straps taut and detailed, metal adjustment points catching dim neon glow. Dark ground with scattered tech debris. Shot against weathered concrete wall with faded corpo signage. Emphasize the adaptive frame and technical webbing detail. High contrast, gritty aesthetic. --ar 2:3 --v 6"
 }

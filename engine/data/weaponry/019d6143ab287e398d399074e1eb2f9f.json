@@ -58,5 +58,44 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Arcturus UW-8 'Barracuda'",
+    "Focadrin",
+    "GLMZ",
+    "Lazarus Pharmaceuticals",
+    "Lazarus Pharmaceuticals Adrenal Phantom Graft — 'The Surge'",
+    "Ouroboros Energy ThermalSink UR-3 District Waste Heat Exchange Network",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "The Bridge Kings",
+    "The Resonance Communion",
+    "Vantablack PA-1 'Pacifier'",
+    "Veslemøy Achebe-Tursynov",
+    "WELLSPRING"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, menacing long-form rifle with an unnervingly organic aesthetic — the barrel tapers toward a distinctive ring-shaped emitter at the muzzle that resembles a predatory iris. The overall silhouette is predatory and clinical simultaneously, with an almost skeletal frame emphasizing the precision instrument beneath the surface.",
+    "dimensions": "118 cm length overall, 28 cm width at scope mount, 12 cm height at receiver. Barrel section 76 cm. Annular emitter ring diameter 4.2 cm with 0.8 cm wall thickness.",
+    "weight_description": "7.4 kg — substantial and deliberate, with weight distributed forward toward the emitter. Balanced on the scope mount, settling with purposeful heaviness in the shoulder. Not unwieldy, but demands respect and control.",
+    "primary_material": "Carbon-fiber reinforced polymer chassis with anodized aluminum receiver and scope rail. The annular emitter is precision-cast tungsten-alloy with embedded microwave waveguide matrix.",
+    "finish": "Matte gunmetal gray polymer with brushed aluminum accents. The emitter ring displays a distinctive oil-slick iridescence — nanometric coating that helps dissipate thermal bleed. Micro-abrasion marks suggest field use.",
+    "color_scheme": "Dominants: gunmetal gray and charcoal black. Accents: anodized silver-blue on the scope rail and power cell housing. The emitter ring gleams with dark rainbow sheen.",
+    "grip_texture": "Textured polymer grip with embedded cooling channels (warm to touch after discharge). Forward grip is wrapped in thin heat-resistant synthetic cord for precision handling.",
+    "distinctive_features": [
+      "Annular emitter ring at muzzle with visible waveguide segmentation",
+      "Thermal endocrine contrast scope mounted on raised rail — 4x-16x magnification with amber reticle",
+      "Power cell housing on right side: hexagonal medical-grade battery indicator with three LED status lights (green/amber/red)",
+      "Precision anatomical measurement marks etched into the scope's windage adjustment — numbered torso corridor reference points",
+      "Heat dissipation fins running along the barrel in a wave pattern",
+      "Microwave shielding panels with subtle ribbing along the receiver sides",
+      "Serial plate stamped with ARCTURUS DEFENSE SOLUTIONS logo and a blocky alphanumeric ID code",
+      "Discharge counter dial on the left side of the power cell housing (mechanical, not digital — 9 slots, movable indicator)"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (stylized command triangle with downward arrow) stamped on the power cell housing and receiver. Serial number and date code on the left-side panel. Small warning triangle with microwave symbol repeated near the emitter ring and scope mount.",
+    "condition_typical": "Field-maintained but not pristine. Minor scuffs on the polymer chassis, slight discoloration around the emitter from thermal stress and residual phase-transition particulates. Scope lens shows faint dust shadows. Grip areas show wear from gloved handling. Battery indicator shows amber — unit is combat-ready but approaching mid-cycle on its power charge."
+  },
+  "image_prompt": "Product photograph of the ECVL-5 'Burnout' microwave endocrine volatilization lance, lying at a 30-degree angle on a dark industrial steel surface. The weapon is cradled in a gloved operator's hand (tactical black leather glove, augmented finger joints visible). Dramatic side-lighting from the upper left casts sharp shadows across the annular emitter ring, revealing the waveguide matrix inside. The thermal scope glows subtly with amber targeting reticle visible through the lens. The oil-slick iridescence of the emitter is emphasized by the lighting, creating a rainbow sheen against the matte gunmetal gray chassis. Fine wisps of imagined thermal distortion ripple near the barrel. The background is out-of-focus dark metal and black composite material. The power cell housing shows LED indicator lights: amber status light glowing. Cyberpunk assassination weapon aesthetic — clinical, lethal, impossibly precise. Professional catalog photography quality with hyperrealist detail on the grip texture and scope optics. --ar 3:2 --v 6"
 }

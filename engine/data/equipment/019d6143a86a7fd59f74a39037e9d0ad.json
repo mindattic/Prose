@@ -90,5 +90,25 @@
     "The Portico",
     "Variable Impedance Rifle VIR-9 'Switchback'",
     "ZhengDao Bioelectric LumbarBrace Pro"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A flattened ovoid delivery platform with a distinctive crown of seven overlapping camera lenses arranged in a ring around its upper hemisphere. The body resembles a sleek, armored briefcase suspended beneath a symmetrical six-rotor assembly with contra-rotating props. The overall impression is utilitarian but refined—industrial-grade logistics equipment designed for high-frequency urban deployment.",
+    "dimensions": "74 cm long × 58 cm wide × 22 cm tall (body with rotors folded); approximately briefcase to small suitcase sized",
+    "weight_description": "Handheld but substantial; typically requires two hands for loading, though the carrying handle integrated into the upper frame allows single-operator transport",
+    "primary_material": "Composite polymer chassis with carbon-fiber rotor arms; reinforced elastomer payload cradle housing",
+    "finish": "Matte industrial gray with subtle texture; rotor arms feature anodized aluminum accents; lens ring has anti-reflective coating with faint blue-purple iridescence",
+    "color_scheme": "Matte graphite-gray primary body, black rotor assemblies, gunmetal lens ring, accent strips of electric blue along the optical aperture rim and power status indicators",
+    "interface_elements": "Seven circular wide-angle lens ports arranged in a crown formation (primary visual feature); small rubberized control pad on dorsal surface with LED status cluster (power, signal, payload status); biometric lock panel (fingerprint reader) on payload bay hatch; hot-swap battery ports with magnetic coupling on ventral side; external hardpoint mount bracket on undercarriage",
+    "distinctive_features": [
+      "Seven-lens optical array creating a crown-like silhouette unique to Stacked Lens platform",
+      "Contra-rotating rotor assembly visible from below—props spin in opposing directions creating hypnotic visual pattern",
+      "Tensioned band payload cradle visible through semi-transparent port windows in body sides",
+      "Subtle LED breathing pattern (blue pulse) indicating active navigation and power state",
+      "Weatherproofing gasket lines visible around lens ring and battery compartments",
+      "Optional external cargo module hardpoint—cylindrical mount point on undercarriage showing wear patterns from repeated module changes"
+    ],
+    "manufacturer_markings": "Ringo Corponation logo (stylized 'R' with circular orbit lines) on port-side panel; 'STACKED LENS COURIER' typography in technical sans-serif; Bright Block Childcare regulatory stamp (small, lower starboard); serial number and UL-equivalent GLMZ compliance label on battery access panel; faint optical alignment calibration marks etched near lens ring",
+    "condition_typical": "Field-worn but maintained; minor scuff marks on composite body from loading cradle contact; lens ring shows dust accumulation requiring periodic cleaning; props show slight discoloration from rotor stress; battery contacts show light oxidation (cosmetic, normal); payload bay hatch displays micro-scratches around biometric lock from repeated use"
+  },
+  "image_prompt": "Overhead three-quarter product shot of the Ringo Corponation Stacked Lens Courier Drone on a brushed steel workbench, illuminated by cold blue-white LED task lighting from above and behind. The seven-lens crown is rendered in sharp focus, catching subtle reflections. Rotors are slightly blurred to suggest movement. A translucent package visible through the side port window glows faintly under internal cabin lighting. Surrounding the drone: scattered small cargo modules, a biometric unlock reader, and a hot-swap battery cell. Cyberpunk aesthetic with industrial grit, cool color temperature, dramatic shadow definition. Background: blurred circuit board texture suggesting tech workspace. --ar 3:2 --v 6"
 }

@@ -39,5 +39,30 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Carrion Defense Works",
+    "Shelf Life"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist semi-automatic shotgun with an aggressive, purposeful stance. The ES-4 'Ragnarok' reads as deliberately menacing — angular receiver, flared muzzle brake, and a prominent top-mounted rail system give it a predatory silhouette. The overall impression is industrial violence: compact, efficient, unapologetically lethal.",
+    "dimensions": "Overall length: 98 cm | Barrel length: 51 cm | Receiver width: 8.5 cm | Stock depth: 32 cm",
+    "weight_description": "Hefty and front-heavy when loaded (4.6 kg), with noticeable mass concentrated in the receiver and barrel assembly. Unloaded it sits at roughly 3.1 kg — substantial enough to command respect, balanced enough for practiced two-handed control despite the brutal recoil profile.",
+    "primary_material": "Reinforced polymer composite receiver with steel internal components; barrel is hardened surgical steel with proprietary corrosion-resistant treatment (withstands the entropic compound's residual effects)",
+    "finish": "Matte gunmetal gray with deliberate weathering patterns — scuffed edges, worn corners, surface micro-scratches suggesting field use. The barrel shows darker bluing in patches. Not pristine, but deliberately maintained.",
+    "color_scheme": "Gunmetal gray primary with charcoal polymer accents; heat-resistant black grip sections; dull steel hardware. Accent: deep crimson warning stripe along the magazine well and around the muzzle break — industrial hazard marking.",
+    "grip_texture": "Aggressive rubberized polymer grip with vertical grooves — designed for bare hand or light glove contact. Aggressive palm swell. The foregrip is wrapped in textured synthetic cord for secondary control.",
+    "distinctive_features": [
+      "Proprietary Carrion 14-gauge shell magazine with visible ammunition count window (shells visible through smoked acrylic)",
+      "Vented muzzle brake with asymmetrical slots — aesthetically menacing, functionally manages the violent recoil from entropic detonation",
+      "Top-mounted Picatinny rail with factory iron sights (co-witness configuration)",
+      "Crimson warning stripe and biohazard-adjacent Carrion Defense Works triple-chevron logo laser-etched on receiver",
+      "Heat-dissipation vents along the barrel shroud (compound generates thermal bloom on activation)",
+      "Manual safety lever with tactile detent — positioned for thumb manipulation",
+      "Serial plate flush-mounted on receiver left side with micro-etched date code and batch number"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS triple-chevron logo embossed on left receiver above trigger guard. 'ES-4 RAGNAROK' stamped below the charging handle. Proprietary 'ENTROPIC CONTAINMENT SYSTEM' micro-etched on barrel shroud. Serial number and manufacture date on right receiver.",
+    "condition_typical": "Field-worn but meticulously maintained. The ES-4 is a precision tool for serious work — users keep it clean to maintain reliability, but the finish shows honest wear. Micro-scratches, minor scuffing on the stock, slight salt-corrosion patina on exposed steel components typical of Great Lakes climate exposure."
+  },
+  "image_prompt": "Professional product photography of a Carrion Defense Works ES-4 'Ragnarok' entropic shotgun, positioned at 45-degree angle on a matte gunmetal surface. Dramatic side-lighting emphasizing the brutal geometry of the muzzle brake and receiver angles. The shotgun is partially cradled in gloved tactical gloves (black synthetic), magazine well visible showing entropic shell casings through the acrylic count window with faint red-orange luminescence hinting at the reactive compound inside. Surface textures sharp and detailed: worn polymer grip, weathered finish, crimson warning stripes catching the light. Background is dark gradient (charcoal to black), with subtle depth of field blur. Cyberpunk atmosphere: cool color temperature with accent highlights catching sharp edges. The image conveys industrial brutality and chemical menace without glorification — this is a tool of calculated destruction. --ar 3:2 --v 6"
 }

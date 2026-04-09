@@ -38,5 +38,27 @@
     "The Fathom Line",
     "The Shelf",
     "The Spire"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively civilian-coded security uniform that reads as premium business wear at distance but reveals threat-response architecture up close. Sharp, angular silhouette with controlled aggression in the cut. High collar and structured shoulders suggest both formality and readiness. Minimal branding creates an understated authority — the uniform of someone who doesn't need to advertise their capability.",
+    "fit": "Tailored through the chest and waist with articulated hip and knee construction for unrestricted mobility. Not relaxed, not form-fitting — precisely engineered for rapid weapon access and tactical movement while maintaining boardroom presentation. Slight architectural stiffness in the shoulders from reinforced micro-plating.",
+    "primary_material": "Rigid-weave graphene-threaded synthetic fabric that mimics charcoal wool in appearance but offers Level IIA ballistic resistance. Lapels feature micro-plating reinforcement. High-performance ballistic weave across threat zones.",
+    "texture": "Smooth, dense weave with subtle structural rigidity. Lapels have a faint metallic undertone from integrated micro-plating. Matte finish with no sheen — designed to absorb rather than reflect attention.",
+    "color_scheme": "Charcoal to deep graphite gray with minimal accent. Oxidized-silver hex badge at breast pocket provides only visible branding — deliberately restrained. All closures and reinforcements blend into the fabric.",
+    "closures": "Magnetic snap closures on jacket front and cuffs for rapid access to integrated hardware. Wrist port panels feature seamless friction-fit design. Thigh holster channel on right leg uses internal magnetic-closure system invisible from exterior.",
+    "distinctive_features": [
+      "High reinforced collar protecting carotid without appearing tactical",
+      "Oxidized-silver Arcturus hex badge at breast pocket — sole branding",
+      "Micro-plating reinforcement on lapels",
+      "Articulated hip and knee construction for tactical mobility",
+      "Hidden magnetic-closure thigh holster channel in right leg lining",
+      "Wrist port access panels for BCI cuff-links and neural-tether hardware",
+      "Level IIA ballistic resistance across chest and shoulders",
+      "Graphene-threaded weave with matte finish"
+    ],
+    "tier_indicator": "Tier 1-2 corporate security tier disguised as accessible Tier 3-4. The cost and exclusivity mark this as premium, but the deliberate aesthetic restraint avoids corporate ostentation.",
+    "cultural_context": "Worn by Arcturus CorpSec detail officers protecting high-net-worth individuals in Tier 4-5 client assignments. Signals: vetted professional, armed, well-funded protection detail, and proximity to someone important enough to hire the best. On the Shelf (ungoverned zones), this uniform clears crowds. In the Spire (corpo towers), it's as unremarkable as a maitre d's coat — normalized authority.",
+    "condition_typical": "Pristine to well-maintained. Arcturus officers maintain uniform integrity as part of their professional image. Minor wear patterns emerge around the collar and cuff ports from regular hardware cycling, but overall appearance remains boardroom-ready. No visible patching or distressing."
+  },
+  "image_prompt": "Professional fashion photograph of a tall androgynous model with subtle chrome eye augmentation, wearing the Arcturus CorpSec Spire Detail Dress Uniform. Charcoal graphene-threaded jacket with high reinforced collar, oxidized-silver hex badge visible at breast pocket. Tailored trousers with visible articulated knee construction. Wrist port panels catching moody light. Dark minimalist background suggesting a corporate security checkpoint or corpo tower lobby. Cool LED accent lighting highlighting the micro-plating on lapels and the subtle ballistic weave texture. Model stands in alert but composed posture, one hand near jacket front, suggesting professional readiness. High-end fashion photography aesthetic with cyberpunk security detail undertones. --ar 2:3 --v 6"
 }

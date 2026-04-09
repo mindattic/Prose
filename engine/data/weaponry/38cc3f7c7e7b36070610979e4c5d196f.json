@@ -42,5 +42,38 @@
     "standard-issue",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Ambrosia Fekete-Waiyaki",
+    "Arcturus Defense Solutions",
+    "Crucible LL-4 'Peacekeeper'",
+    "Djeneba Orlov-Obeng",
+    "GLMZ",
+    "Lacuna Genomics",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Tessera Nexus Town Car",
+    "ZhengDao Bioelectric LumbarBrace Pro"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purpose-built security baton with a distinctly corporate aesthetic. When collapsed, it resembles a compact flashlight or handle; when extended, it becomes a rigid rod with subtle technological integration. The design prioritizes professional intimidation and rapid deployment over raw visual aggression.",
+    "dimensions": "Collapsed: 22 cm length × 3.2 cm diameter. Extended: 55 cm length × 2.8 cm diameter. Grip section: 8 cm circumference.",
+    "weight_description": "Balanced and purposeful at 380 grams — heavy enough to deliver impact force, light enough for extended carry and rapid deployment. Feels substantial in the hand without being fatiguing.",
+    "primary_material": "Aircraft-grade aluminum alloy telescoping sections; reinforced polymer grip casing; brushed stainless steel discharge node at tip.",
+    "finish": "Matte gunmetal gray with brushed aluminum barrel sections. The discharge node gleams dull silver. Minimal reflectivity by design — corporate black-ops aesthetic.",
+    "color_scheme": "Gunmetal gray primary body with carbon-black grip section and silver discharge electrode. Subtle Arcturus Defense Solutions logo in muted blue on the handle.",
+    "grip_texture": "Textured polymer with subtle anti-slip ridges; feels like professional-grade tool equipment. Ergonomic finger grooves molded into the material. Slightly tacky to the touch, designed for gloved operation.",
+    "distinctive_features": [
+      "Compact LED intensity indicator on the handle (5 discrete lights, blue to amber progression)",
+      "Discharge node at tip surrounded by concentric copper contact rings",
+      "Subtle 'COMPLIANCE | INCAPACITATION' indicator markings along the barrel",
+      "Recessed safety lever near the grip",
+      "Faint wear patterns on the discharge electrode indicating heavy field use",
+      "Micro-texture on barrel sections for grip during extended use",
+      "Small charging port inset into the base of the handle (proprietary connector)"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (small, professional blue delta-shield) on upper grip. 'CB-8 PEACEKEEPER' stamped in white lettering along the barrel. Serial number plate (brushed stainless) on the handle. Small 'BLACKWOOD COMMERCIAL GROUP' text near the base.",
+    "condition_typical": "Well-maintained and field-ready. Discharge node shows minor scuffing from impact use. Grip shows light wear patterns from heavy rotation in security rotations. No significant damage; corporate equipment is regularly serviced."
+  },
+  "image_prompt": "Product photography of Arcturus CB-8 Peacekeeper baton shown both collapsed (left) and fully extended (right) against a dark matte surface, angled 45 degrees. Close-up detail of the discharge node with copper contact rings catching dramatic side-lighting. Gloved hand (black tactical glove) gripping the collapsed version. Cool blue and white LED indicators visible on the handle. Harsh side-lighting creates sharp shadows, emphasizing the brushed aluminum texture. Gunmetal and silver finish reflects light coldly. Corporate-professional aesthetic with subtle cyberpunk wear. Shallow depth of field. High detail on material surfaces. --ar 3:2 --v 6"
 }

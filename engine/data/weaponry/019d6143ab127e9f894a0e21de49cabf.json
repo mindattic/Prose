@@ -45,5 +45,31 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Biometric Denial Charge BDC-1",
+    "Irontide Tidal Energy"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist rifle with an oversized, angular barrel assembly dominating its profile. The weapon has a distinctly industrial aesthetic—sharp edges, recessed panels, and a prominent heat sink lattice running along the top rail. The overall impression is of a piece of infrastructure weaponized rather than a traditional firearm.",
+    "dimensions": "Rifle length: 127 cm. Barrel assembly: 58 cm. Width at widest point (heat sink): 12 cm. The backpack power unit adds an additional 35 cm height when mounted.",
+    "weight_description": "The rifle itself feels deceptively light in hand (4.8 kg), but the tethered backpack power pack (3.5 kg) creates an unbalanced, top-heavy sensation. The weapon demands two-handed control and shifts its center of gravity constantly during aim adjustment.",
+    "primary_material": "Aerospace-grade carbon composite primary frame with integrated aluminum heat sink ribs. Steel reinforcement along the barrel assembly and capacitor housing. The backpack is titanium-alloy casing with visible internal capacitor bank geometry visible through semi-translucent polymer panels.",
+    "finish": "Matte military black with brushed titanium accents on the barrel shroud. The heat sink ribs have an anodized gunmetal gray finish with visible thermal discoloration marks—characteristic scorch patterns from repeated discharge cycles. The backpack shows micro-abrasion marks and faint scuff patterns indicating field use.",
+    "color_scheme": "Primary: deep matte black. Accents: gunmetal gray, anodized titanium silver. Power indicators glow in cold cyan blue when charged.",
+    "grip_texture": "Textured rubberized polymer with embedded conductive grip strips (to safely interface with the weapon's exterior charge). Subtle vertical ribbing provides indexing feedback. The charging tether connection point is a recessed metal coupler with raised tactile edges.",
+    "distinctive_features": [
+      "Prominent heat sink lattice running the full length of the barrel—appears as parallel aluminum fins with thermal scoring",
+      "Recessed aiming module with holographic reticle display (faint blue glow when powered)",
+      "Exposed capacitor connection terminals along the right side of the receiver—brass-colored connectors with warning engravings",
+      "Dual charge-indicator LEDs (cyan when ready, amber during recharge cycle) mounted flush in the upper receiver",
+      "Cable management clips routing the tethered power pack connection along the right rail with quick-disconnect magnetic coupler",
+      "Faint electromagnetic warning symbols etched into the barrel shroud",
+      "Cooling vent matrix (hexagonal perforations) along the muzzle brake",
+      "Worn contact points on the charging interface—evidence of frequent hot-swaps"
+    ],
+    "manufacturer_markings": "\"ARCTURUS DEFENSE SOLUTIONS\" stamped in sans-serif block letters on the upper receiver. \"DER-5 'BLACKOUT'\" engraved on the barrel shroud in smaller capitals. \"IRON POINT AMMUNITION\" manufacturers mark on the backpack. Military restricted designation mark (inverted triangle with Φ symbol) stamped below the charging interface. Serial plate (faint, worn) on the left side of the receiver.",
+    "condition_typical": "Field-worn but meticulously maintained. The black finish shows light scuffing consistent with professional military use; the heat sink ribs display thermal stress marks from regular discharge. The cable connection point shows signs of frequent coupling/decoupling. No active rust, but the weapon has clearly seen repeated deployment and capacitor cycling. Maintenance scoring visible around the ventilation ports suggests regular inspection and cleaning."
+  },
+  "image_prompt": "Product photography of the Arcturus DER-5 'Blackout' EMP rifle mounted on a dark carbon-fiber surface, photographed in dramatic low-angle side-lighting revealing the heat sink lattice and capacitor geometry. The tethered backpack power unit is positioned behind and slightly elevated. Gloved hands (black leather with conductive thread visible on fingertips) grip the weapon's textured polymer stock. Cyan power indicator LEDs glow softly in the shadows. The muzzle cooling vents catch edge-light, emphasizing the weapon's industrial design. Military-grade aesthetic dominates—raw materials, precision engineering, purposeful brutalism. Cyberpunk aesthetic with high-contrast lighting, cool color temperature, shallow depth of field focusing on the barrel assembly. Dark background with subtle grid pattern suggesting a weapons testing facility. --ar 3:2 --v 6"
 }

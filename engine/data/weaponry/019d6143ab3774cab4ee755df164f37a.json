@@ -62,5 +62,41 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions ARC-SLP 'Diplomat'",
+    "GLMZ",
+    "Lazarus Pharmaceuticals",
+    "Palladian Construction",
+    "TERMINUS",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "The Quiet Room",
+    "The Third Rail",
+    "Vantablack Media Orphan Signal Cartridge",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, pen-like device with a bulbous reservoir chamber and tapered delivery nozzle. Resembles a high-end medical injector or cosmetic applicator — deliberately designed to blend into clinical or civilian environments. No visible barrel, trigger, or traditional weapon cues.",
+    "dimensions": "28 cm length, 3.2 cm diameter at reservoir, 1.8 cm diameter at nozzle. Compact enough to palm or conceal in a medical satchel.",
+    "weight_description": "Deceptively light — feels almost insubstantial in the hand when unloaded. Balanced toward the reservoir, giving it the heft of a luxury pen or small applicator.",
+    "primary_material": "Medical-grade polymer composite (pressure-resistant, biocompatible) with internal pressure-distribution lattice. Nozzle tip is sapphire-coated ceramic to resist wear from osmotic discharge.",
+    "finish": "Matte white with soft gradient transitions to medical silver. Surfaces are anti-reflective and fingerprint-resistant — designed for sterile, clinical handling.",
+    "color_scheme": "Pharmaceutical white as primary, with brushed steel/silver accents at the nozzle and micro-capacitor housing. Faint blue LED indicator ring near the activation point.",
+    "grip_texture": "Textured medical polymer — slightly grippy, non-slip even when wet. Ergonomic contours suggest clinical precision rather than tactical aggression.",
+    "distinctive_features": [
+      "Modular 10 mL cartridge chamber with quick-swap interface (standard pharmaceutical form factor)",
+      "Transparent polymer window on one side of reservoir showing payload level and suspension clarity",
+      "Micro-capacitor indicator: small circular display showing charge level (0–200 deliveries)",
+      "Sapphire nozzle tip with microscopic pressure orifice (nearly invisible to the naked eye)",
+      "No traditional trigger — activation via pressure-sensitive grip pad that mimics medical applicator design",
+      "Faint cooling vents along the barrel to dissipate capacitor thermal bleed"
+    ],
+    "manufacturer_markings": "Sunrise Senior Care logo (a subtle curved sunrise arc) embossed on the grip. Small Lazarus Pharmaceuticals microstamp on the capacitor housing. Serial plate etched on the rear, clinical calibration codes laser-printed on the cartridge interface.",
+    "condition_typical": "Field variants show minimal wear — scuffed polymer, micro-scratches on the nozzle tip from cartridge swaps, faint discoloration from residual payload exposure. Medical variants are pristine, clinical white. Tactical black-market variants exist with matte stealth finishes and obscured branding."
+  },
+  "image_prompt": "Product photography of the OPIS-1 'Skindeep' injection system. Weapon mounted horizontally on a dark medical surface (brushed black steel or dark composite table). Dramatic side-lighting from the left, casting sharp shadows across the nozzle tip. Close-up detail on the transparent cartridge chamber showing faint blue liquid payload suspension inside. Gloved hand (white nitrile or augmented chrome fingertips) holding the device at the grip, emphasizing its clinical, pen-like form factor. Sterile, cold lighting (5600K clinical white balanced with cool blue undertones). Shallow depth of field with sharp focus on the sapphire nozzle tip and micro-capacitor indicator. Cyberpunk aesthetic: sleek, medical, sinister understatement. No smoke, no debris — pure pharmaceutical precision. --ar 3:2 --v 6"
 }

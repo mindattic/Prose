@@ -41,5 +41,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Ferrofluid Armor",
+    "Ilhan Sandstrom-Badu",
+    "Nika Svensson-Kone",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "The Coffin Nails",
+    "The Pure Hand",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A bulky, purpose-built electromagnetic rifle with a pronounced angular aesthetic. The weapon has a distinctive boxy receiver with prominent capacitor housings along both sides. The barrel is oversized and slightly tapered, with visible cooling fins. Heavy, imposing, and deliberately industrial — designed to project raw technological force rather than elegance.",
+    "dimensions": "127 cm overall length, 58 cm barrel, 12 cm width at receiver, 8 cm height at capacitor stack",
+    "weight_description": "Hefty and substantial — 10.6 kg feels authoritative in the hands, requiring proper stance. Balanced toward the receiver due to the internal capacitor bank, with a slight front-heavy pull from the barrel assembly.",
+    "primary_material": "Reinforced carbon-composite frame with tungsten-alloy barrel shroud and steel reinforcement ribs. Capacitor housings are brushed aluminum.",
+    "finish": "Matte charcoal composite with brushed aluminum accents. The barrel shroud shows a dark gunmetal patina. Deliberate lack of gloss — designed for low-visibility ops.",
+    "color_scheme": "Charcoal gray primary with brushed aluminum silver on capacitor banks and barrel cooling fins. Accent copper trim on the charging port.",
+    "grip_texture": "Rubberized polymer grip with aggressive checkering. Slight warmth to the touch due to capacitor proximity. The foregrip is wrapped in textured carbon-fiber tape.",
+    "distinctive_features": [
+      "Twin cylindrical capacitor housings flanking the receiver, each with glowing charge-state indicator rings (soft blue when charged)",
+      "Visible electromagnetic focusing coil ring around the barrel muzzle",
+      "Magnetic charge meter — an analog gauge on the left side showing charge level via a needle",
+      "Four-round magazine well with oversized, fluted magazine release button",
+      "Vented heat sink fins along the barrel shroud",
+      "Weapon-mounted targeting crosshair reticle etched into the left receiver rail",
+      "Faint carbon scoring on the barrel shroud from sustained fire",
+      "Copper cooling vanes visible through semi-translucent panels on the capacitor housings"
+    ],
+    "manufacturer_markings": "Zheng-Dao Heavy Industries logo (stylized circular symbol with electromagnetic waves) stamped in matte chrome on the left receiver panel. Serial number and manufacturing date engraved on the barrel shroud. 'ML-6 PULSAR' designation in block letters on the right side of the receiver.",
+    "condition_typical": "Well-maintained, though showing signs of regular use. The barrel shroud displays minor carbon scoring and thermal stress marks. The grip shows slight shine from operator perspiration. Capacitor housings are clean, indicating proper maintenance protocols. Not pristine — this is an active weapon, not a showpiece."
+  },
+  "image_prompt": "Product photography of the Zheng-Dao Magnetar Lance ML-6 Pulsar rifle in a cyberpunk weapons catalog style. Camera angle is 3/4 view from above, showing the weapon laid on a dark matte-black surface with subtle reflection. The barrel points toward the upper right. Dramatic side-lighting casts deep shadows across the carbon-composite frame, highlighting the brushed aluminum capacitor housings with cool blue accent lighting. The two cylindrical capacitors glow faintly with soft blue charge-state indicators. The electromagnetic coil ring around the muzzle catches warm metallic highlights. Professional studio lighting emphasizes the industrial geometry and angular design. The background is a gradient from deep charcoal to near-black. Include subtle holographic UI elements floating near the weapon showing power output metrics. Cyberpunk aesthetic with hard technological focus. Shot with Zeiss optics, high contrast, cinematic depth of field. --ar 3:2 --v 6"
 }

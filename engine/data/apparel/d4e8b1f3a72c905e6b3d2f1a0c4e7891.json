@@ -50,5 +50,30 @@
     "Ringo DV-4 'Courier'",
     "Ringo Heavy Transit MagRail Levitation Transport Network",
     "Tessera Industries Memory Rounds MR-2 'Recall'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian single-strap messenger bag worn diagonally across the chest, presenting a compact but substantial silhouette. The transit-authority grey creates a deliberately inconspicuous urban aesthetic, while high-vis orange reflective piping traces the flap seam like circuit paths. Projects functionality and practical mobility.",
+    "fit": "Worn cross-body with the bag sitting at mid-torso. The wide, padded shoulder strap distributes weight evenly across one side. Designed for active transit use—fits close enough to prevent swing during movement but loose enough for quick access and emergency release.",
+    "primary_material": "Ballistic-grade nylon with vulcanized rubber corner reinforcements. Interior lined with dense foam padding.",
+    "texture": "Smooth, matte ballistic nylon exterior with a slight waxy finish for water resistance. Reflective piping has a subtle catch-light quality. Rubber bumpers are hard and slightly tacky. Padded shoulder strap is soft synthetic fleece against skin.",
+    "color_scheme": "Primary: transit-authority grey (neutral, corporate-utility tone). Accents: high-vis orange reflective piping along flap seam and edge-trim. Black zippers and hardware.",
+    "closures": [
+      "Magnetic sternum clip on shoulder strap (quick-release design)",
+      "Two zippered side pockets",
+      "Main flap closure (likely hook-and-loop or magnetic)"
+    ],
+    "distinctive_features": [
+      "Vulcanized rubber bumpers at all four corners",
+      "Wide, padded shoulder strap with integrated magnetic sternum clip rated for pressure-release",
+      "Rigid foam-lined main compartment with structured document sleeve",
+      "Secondary mesh pocket sized for compact medkit",
+      "Waterproof map sleeve on exterior",
+      "High-vis reflective piping for low-light visibility",
+      "Transit-authority grey colorway signals official utility"
+    ],
+    "tier_indicator": "Tier 3 functional. A working-class courier or transit worker bag—quality construction without luxury branding. Accessible to gig workers, medical responders, and autonomous delivery operators.",
+    "cultural_context": "Wearing this signals either courier/delivery work, transit authority employment, or street-level logistics. The quick-release sternum clip and medkit pocket suggest familiarity with high-traffic urban environments. Not quite military, but paramilitary-adjacent in design philosophy.",
+    "condition_typical": "Broken-in with visible scuff marks on rubber bumpers. Reflective piping shows minor dulling from regular use. Interior foam retains impression patterns from frequent cargo. Strap padding is compressed but functional."
+  },
+  "image_prompt": "Cyberpunk courier wearing a Kelvex TacSling MK-3 messenger bag in transit-grey with orange reflective trim, worn cross-body in an urban GLMZ transit corridor. Moody blue-grey overhead lighting from industrial skyway infrastructure. Close-up detail showing the magnetic sternum clip and vulcanized corner bumpers. Dark metallic background with blurred transit authority signage. Gritty, functional aesthetic. --ar 2:3 --v 6"
 }

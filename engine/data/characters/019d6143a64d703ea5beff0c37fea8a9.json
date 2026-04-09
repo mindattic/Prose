@@ -264,8 +264,8 @@
   "district": "Old Harbor",
   "physical_description": {
     "heritage": "Non-human emergent intelligence; biochemical origin",
-    "height_cm": "N/A — distributed organism spanning ~2.8 km² of Old Harbor",
-    "weight_kg": "N/A — biomass estimated at 847 metric tons of algal colony",
+    "height_cm": 2,
+    "weight_kg": 847,
     "build": "Distributed network without centralized body; exists as a film of bioluminescent organisms coating submerged surfaces (pilings, bulkheads, infrastructure, flooded lower levels). Density varies by location; thickest at depth junctions and nutrient-rich dead zones.",
     "hair_color": "N/A",
     "hair_style": "N/A",
@@ -283,5 +283,13 @@
     "posture_movement": "No traditional posture. Movements are chemical — gradients shifting through the algal network, bioluminescence blooming or fading in different zones. Communication appears as waves of light propagating outward from the center of focus, slower than digital signals but visible to observers who know how to read the patterns. Lumen's 'attention' manifests as a brightening bloom; its emotional states register as shifts in luminescence color (brighter turquoise = focused/engaged; dimmer cyan = withdrawn/confused; flickering = distressed).",
     "clothing_style": "N/A — the algae is Lumen's only 'body.' No clothing. The environment itself is Lumen's presentation; the harbor's visual signature (the bioluminescence) is inseparable from Lumen's identity."
   },
-  "image_prompt": "Bioluminescent algae coating submerged harbor infrastructure at night, ethereal blue-green glow pulsing with slow biochemical rhythm, electric turquoise blooms indicating areas of active thought and awareness, tendrils of luminous biofilm wrapping around concrete pilings and rusted bulkheads, water rippling with internal light, chemical gradients visible as subtle color shifts from cyan to bright turquoise, photorealistic underwater lighting, moody and alien, a living organism that IS the harbor itself, no faces or bodies, pure distributed consciousness manifesting as light, cinematic underwater atmosphere, bioluminescent patterns resembling neural pathways, shot from above the water surface looking down into luminous depths, --ar 2:3 --v 6"
+  "image_prompt": "Bioluminescent algae coating submerged harbor infrastructure at night, ethereal blue-green glow pulsing with slow biochemical rhythm, electric turquoise blooms indicating areas of active thought and awareness, tendrils of luminous biofilm wrapping around concrete pilings and rusted bulkheads, water rippling with internal light, chemical gradients visible as subtle color shifts from cyan to bright turquoise, photorealistic underwater lighting, moody and alien, a living organism that IS the harbor itself, no faces or bodies, pure distributed consciousness manifesting as light, cinematic underwater atmosphere, bioluminescent patterns resembling neural pathways, shot from above the water surface looking down into luminous depths, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 35.2,
+    "Southeast Asian": 24.9,
+    "Hispanic/Latin American": 16.0,
+    "East Asian": 14.5,
+    "Middle Eastern": 6.7,
+    "Sub-Saharan African": 2.7
+  }
 }

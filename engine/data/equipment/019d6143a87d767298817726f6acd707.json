@@ -46,5 +46,24 @@
   "parent_corponation": "",
   "related_entities": [
     "WELLSPRING"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek hexacopter with a prominent central sensor pod. Six carbon-fiber arms extend radially from a reinforced polymer hub, each tipped with brushless motor units. The design suggests purposeful durability—no aesthetic flourishes, only functional geometry. The sensor pod dominates the undercarriage, bristling with intake vents, optical windows, and sampling ports.",
+    "dimensions": "40 cm rotor-to-rotor span; central body approximately 15 cm diameter; sensor pod adds 8 cm vertical depth",
+    "weight_description": "2.5 kg total—handheld but requires two-handed launch and recovery; easy to shoulder-carry via integrated webbing loops",
+    "primary_material": "Carbon-fiber reinforced polymer frame with anodized aluminum motor mounts and sensor housing; weather-sealed composite sensor pod",
+    "finish": "Matte charcoal body with brushed aluminum accents; sensor pod has a frosted polycarbonate observation panel revealing internal analysis cells",
+    "color_scheme": "Gunmetal gray primary with high-visibility neon orange rotor blade tips and status indicator strips along the motor arms; Vespid Dynamics branding in white sans-serif font on dual sides",
+    "interface_elements": "Flush-mount LED array (green/amber/red status lights) along the front hub; micro SD card slot and USB-C connector recessed under weatherproof flip panel; four control buttons for manual override on rear; small monochrome LCD display showing battery and sensor diagnostics",
+    "distinctive_features": [
+      "Central intake manifold with six converging sample ports—looks like a miniature factory smokestack",
+      "Translucent sensor pod showing layered analytical cartridges inside",
+      "Redundant motor configuration with visible heat-sink fins on each ESC unit",
+      "Reinforced landing gear with shock-absorbing gel pads—purpose-built for contaminated surfaces",
+      "Pulsing status beacon beneath the sensor pod, visible at altitude"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS in white block lettering on both sides; ASD-5 model designation on port arm; regulatory certification stamps (GLMZ Environmental Authority approval) on undercarriage; small QR code on sensor pod linking to calibration history",
+    "condition_typical": "Often appears field-worn with fine dust coating the rotor blades and sensor intake vents; minor scuffing on motor arms from industrial deployment; accumulated particulate residue visible through translucent pod window requiring periodic cleaning"
+  },
+  "image_prompt": "Product photography of Vespid Dynamics ASD-5 hexacopter drone mounted on a stainless steel inspection stand in a cyberpunk laboratory environment. Drone positioned at 45-degree angle showing sensor pod detail. Backlighting highlights the translucent sensor cartridge interior with warm amber glow. Surrounding area: industrial workbench with scattered air quality readout displays, LED-lit tool racks, and holographic atmospheric data visualization floating overhead. Neon accent lighting in orange and electric blue casting dramatic shadows across matte surfaces. Gritty, slightly contaminated aesthetic—faint particulate haze in air. Cinematic bokeh depth of field. --ar 3:2 --v 6"
 }

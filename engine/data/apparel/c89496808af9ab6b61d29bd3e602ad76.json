@@ -36,5 +36,26 @@
   "related_entities": [
     "Independent Micro-Grid Power Cooperative",
     "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting long-sleeve base layer with a subtle shimmer across the torso and arms. The fabric has an almost opalescent quality under light, with faint linear patterns that catch and refract illumination. Worn close to the skin, creating a second-skin aesthetic that emphasizes musculature without bulk.",
+    "fit": "Compression fit — snug through the torso, shoulders, and upper arms to maximize skin contact for energy harvesting. Tapers slightly at wrists and ankles. The waistband is reinforced and slightly thicker, housing the integrated battery module.",
+    "primary_material": "Synth-polymer weave embedded with flexible photovoltaic micro-threads; lightweight, breathable, conductive inner lining",
+    "texture": "Smooth and slightly tacky against skin; micro-ridged surface designed to optimize light absorption. The waistband battery section feels rigid but not uncomfortable — molded to follow the spine and sides.",
+    "color_scheme": "Matte charcoal gray base with iridescent threads running in parallel lines across the chest and sleeves that shimmer between deep blue and silver depending on light angle. Waistband accent in darker graphite with faint LED indicator strip (currently dark/offline).",
+    "closures": "Friction-fit construction; no traditional closures. Pulls on like a compression shirt. The waistband has a subtle magnetic alignment guide for battery module docking.",
+    "distinctive_features": [
+      "Integrated waistband battery pack with status LED indicators",
+      "Visible photovoltaic thread matrix across chest and shoulders",
+      "Textured micro-ridges optimized for light absorption",
+      "Hidden micro-connector ports at wrists for direct device charging",
+      "Lumen Dynamics logo embossed in reflective material at left shoulder",
+      "Low-profile cable routing channels along spine",
+      "Anti-microbial treatment visible as slight sheen"
+    ],
+    "tier_indicator": "Tier 2-3 boundary — premium functional wear. Too expensive for street-tier survival, too practical for pure luxury corp.",
+    "cultural_context": "Field operatives, remote researchers, off-grid contractors, augmentation technicians, emergency response personnel. Signals self-sufficiency and technical competence rather than wealth.",
+    "condition_typical": "Typically worn under other layers; shows minimal visible wear if maintained. Battery waistband develops slight stress creases from repeated use. Photovoltaic threads may show dulling after heavy use in contaminated environments."
+  },
+  "image_prompt": "Close-fitting photovoltaic base layer on a lean andromorphic model with visible augmentation ports, shot in industrial warehouse lighting where neon and pale daylight create contrast. The fabric's iridescent threads catch the light, creating subtle blue-silver shimmer across the torso. Tight crop showing the illuminated LED indicator on the waistband battery. Dark metallic background with scattered work-light sources. Moody, technical, functional aesthetic. Shot from chest up, model's expression neutral and professional. --ar 2:3 --v 6"
 }

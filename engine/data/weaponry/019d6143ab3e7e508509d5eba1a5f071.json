@@ -52,5 +52,42 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "GLMZ",
+    "Kairos",
+    "Lazarus Pharmaceuticals",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Narrowcast",
+    "Patient Zero",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Tessera Corponation",
+    "Uncle Jun's Synth-Noodle Window"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, clinical carbine with an aerosol projector aesthetic rather than ballistic. The silhouette is deliberately medical-looking — smooth, pressurized, with internal reservoirs visible through translucent polymer panels. Resembles a high-end nebulizer crossed with a precision rifle. No traditional muzzle flash or mechanical recoil indicators.",
+    "dimensions": "Length: 68 cm | Barrel/nozzle: 12 cm | Width at breach: 8 cm | Height with sights: 11 cm",
+    "weight_description": "Deceptively light — 2.6 kg feels almost delicate in trained hands, creating a false sense of precision that belies its lethality. The weight distribution is forward-heavy due to pressurized nanoparticulate cartridge, but balanced for sustained aim.",
+    "primary_material": "Aerospace-grade polymer composite (pressure-rated) with internal titanium reinforcement around nozzle assembly and pressurized chamber. Cartridge housing is polycarbonate-laminate for visibility of suspension medium.",
+    "finish": "Matte clinical white with charcoal gray breech and valve assembly. Sterile, pharmaceutical aesthetic. Finish is treated for easy decontamination.",
+    "color_scheme": "Sterile white primary with charcoal gray accents; translucent polymer panels revealing amber or clear suspension medium inside cartridge reservoirs. Subtle biolume indicator strips (pale blue) along the pressure gauge.",
+    "grip_texture": "Textured medical-grade polymer with antimicrobial coating — slightly tacky, designed for steady control without sweat slip. Feels clinical and precise, almost like holding a medical instrument.",
+    "distinctive_features": [
+      "Pressure gauge display window with numerical readout (Φ-marked for corporate registry)",
+      "Dual-stage nozzle assembly with aerosol diffusion chamber visible beneath transparent shroud",
+      "Internal suspension medium visible through translucent cartridge housing — amber coloration signals active nanoparticulate load",
+      "Biolume pressure indicator strips running along left side of receiver",
+      "Serial plate with ARCTURUS DEFENSE SOLUTIONS and TESSERA CORPORATION co-licensing stamps",
+      "Integrated cartridge ejection mechanism (pneumatic, silent)",
+      "Thermal management vents near pressurized chamber (no heat signature — cold aerosol projection)",
+      "Rail-mounted targeting assist ports (for chemical dispersal sensors, not traditional optics)",
+      "Subtle scratch patterns around nozzle from field decontamination protocols"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (angular, corporate serif) stamped on upper left receiver. TESSERA CORPORATION licensing insignia on polymer shroud. Serial plate below safety indicator. Discreet Φ symbol near trigger guard for corporate registry. No traditional weapon manufacturer branding — deliberately clinical.",
+    "condition_typical": "Well-maintained, sterile appearance. Field-worn examples show minor decontamination scratches around nozzle and pressure release vents. Cartridge housings frequently replaced per protocol. No rust or corrosion — typically found in near-mint condition due to medical-grade material standards and hazmat handling procedures."
+  },
+  "image_prompt": "Product photography of a clinical pharmaceutical weapon: sleek white and charcoal carbine with translucent pressure-rated polymer cartridge reservoir showing amber suspension medium. Positioned on dark metallic surface angled 45 degrees, with gloved hand (tactical black latex) gripping the antimicrobial textured polymer handguard. Dramatic side-lighting from cool-white LED source creating shadows across the dual-stage nozzle assembly and pressure gauge display. Internal biolume indicator strips glowing pale blue. Hyperclean, sterile aesthetic with slight pharmaceutical/medical device visual language — NOT military-rough. Shallow depth of field focusing on the nozzle and gauge. Cyberpunk 2226 GLMZ aesthetic: corporate precision, post-biological warfare aesthetic, Tessera and Arcturus branding visible. Dark background with subtle reflection of the carbine's white finish. --ar 3:2 --v 6"
 }

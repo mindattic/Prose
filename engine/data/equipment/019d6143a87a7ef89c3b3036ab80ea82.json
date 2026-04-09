@@ -77,5 +77,24 @@
     "Vantablack Media",
     "Vantablack-CNX",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately nondescript urban fixture designed to be visually ignored—weathered utility panel, damaged transit shelter panel, or cracked municipal infrastructure signage. The exterior mimics years of neglect with authentic-looking corrosion, graffiti patches, and UV degradation. No visible electronics or antenna arrays. Resembles discarded urban detritus rather than functional hardware.",
+    "dimensions": "8–30cm housing depending on disguise form factor; most commonly 20×15×4cm (utility panel variant)",
+    "weight_description": "Lightweight, handheld or wall-mountable; 300–800g depending on housing material and internal shielding mass",
+    "primary_material": "Exterior: fiber-reinforced polymer or corroded steel cladding (cosmetic). Interior: 3mm mu-metal Faraday cage with composite RF shielding; dense tungsten-lead layer for signal isolation",
+    "finish": "Deliberately weathered and degraded—faded paint, rust bloom patterns, mock water stains, authentic scuff marks and scratches. Some variants feature printed graffiti tags or municipal stickers to enhance camouflage. Non-reflective matte surface throughout",
+    "color_scheme": "Drab utility palette: muted grays, browns, faded industrial greens, corroded copper tones. Accent layers in weathered blues or yellow warning stripe fragments. All colors intentionally desaturated and aged-looking",
+    "interface_elements": "Virtually none visible externally. Disguise authenticity includes fake panel rivets, mock bolt heads, printed warning labels. Internal access point (hidden beneath cosmetic layer) features recessed 2mm diagnostic port and orientation marker visible only to operator. No LEDs, displays, or indicators; all status confirmation silent and electromagnetic",
+    "distinctive_features": [
+      "Authentically mimicked environmental decay—micro-texturing replicates real corrosion and weathering",
+      "Zero visible antenna or transmission hardware; RF harvesting grid embedded in shielding layers",
+      "Internal burst transmitter frequency-locked to keyed query device only; cross-talk rejection rated to −180dB",
+      "Thermal signature matches ambient within 0.3°C due to passive RF harvesting (no active heating)",
+      "Cosmetic damage patterns randomized during manufacture to prevent serial recognition"
+    ],
+    "manufacturer_markings": "Vantablack Media brand mark laser-etched into internal mu-metal shield (invisible without disassembly). No external manufacturer identification; deliberately absent to maintain camouflage. Regulatory compliance marks printed on internal cavity only. Unit serial encoded in burst transmission metadata only",
+    "condition_typical": "Appears abandoned and non-functional in situ. May accumulate real dust, debris, or environmental weathering during deployment. No maintenance indicators or status lights. Operator must physically approach within 2m with keyed fob to confirm operational status via silent microsecond handshake"
+  },
+  "image_prompt": "Product photography of a cracked urban utility panel relay, disguised as abandoned street infrastructure, mounted on a concrete wall. Panel shows authentic rust blooms, faded paint, and UV degradation. Dramatic low-angle lighting reveals subtle metallic shielding through a intentional crack in the housing. Cyberpunk aesthetic with cool blue accent light catching the edges of the Faraday cage visible through damage. Keyed fob resting nearby on weathered concrete. High contrast, moody atmosphere suggesting covert dead-drop infrastructure. Deep focus on weathering details and hidden RF shielding layers. --ar 3:2 --v 6"
 }

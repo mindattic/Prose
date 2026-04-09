@@ -57,6 +57,41 @@
   ],
   "parent_corponation": "",
   "related_entities": [
-    "University Spine"
-  ]
+    "University Spine",
+    "Alper Holmberg-Dembele",
+    "Breck Tannen",
+    "Brewer's Spine",
+    "GLMZ",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Jitterbug",
+    "Nurlan Holmberg-Dembele",
+    "Rickshaw Drone",
+    "Synaptrel",
+    "The Nearfield",
+    "The Resonance Communion",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, rifle-length instrument with an unusually elongated barrel dominated by two parallel ribbed arrays running its full length. The profile is angular and clinical rather than aggressive—more medical device than traditional firearm. The barrel arrays give it a distinctly alien, almost skeletal appearance.",
+    "dimensions": "Overall length: 118 cm. Barrel length: 71 cm. Width across transducer arrays: 8.5 cm. Height with mounted reticle: 12 cm.",
+    "weight_description": "Hefty but well-balanced—5.3 kg distributed along the barrel's length creates a forward-heavy feel that requires steady shoulder mounting. The weight feels intentional, engineered for precision rather than portability.",
+    "primary_material": "Aerospace-grade carbon composite chassis with titanium-reinforced barrel collar. The transducer arrays are encased in specialized bioelectric-shielded polymer housings.",
+    "finish": "Matte gunmetal gray with subtle iridescent shimmer in direct light—a function of the bioelectric shielding. Barrel arrays have a brushed silver finish with faint etched grid patterns marking individual transducer elements.",
+    "color_scheme": "Charcoal gray chassis with silver-brushed barrel arrays. Accent color: cold cyan on power indicators and reticle optics. Minimal branding in corporate white.",
+    "grip_texture": "Rubberized ergonomic polymer with deep diamond-pattern knurling for wet-hand retention. The fore-grip area beneath the barrel arrays features a slightly tacky conductive coating—necessary for bioelectric field calibration feedback.",
+    "distinctive_features": [
+      "Paired piezoelectric transducer arrays running parallel along barrel—visible as ribbed silver modules with micro-grid etching",
+      "Anatomical targeting reticle display with overlaid nerve-trunk markers in cyan—visible on right side mount",
+      "Heat dissipation vents arranged in precise geometric patterns along the barrel collar",
+      "Bioelectric status indicator ring (cyan when armed, amber during field generation, red during overheat)",
+      "Frequency tuning dial (8–22 Hz) on the left side of the receiver, marked with subtle haptic detents",
+      "Power cell interface beneath the receiver—accepts standard Tier 3+ bioelectric cartridges",
+      "Microscopic conductive trace patterns visible beneath semi-transparent housing sections—aesthetic and functional",
+      "No conventional iron sights—entirely dependent on the integrated reticle system"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo (stylized double-helix wrapped around a capacitor symbol) etched in white on the left barrel collar. Serial plate mounted on the right receiver—brushed aluminum with laser-engraved identification. Small text warning (in Mandarin and English) regarding bioelectric hazard printed on a discrete panel below the power cell interface.",
+    "condition_typical": "Field versions show light operational wear: minor scratches on the barrel arrays from deployment and redeployment, faint discoloration around the power cell interface from repeated charging cycles. The transducer elements remain pristine—users learn quickly that damage here means total failure. Biological residue (dried neural fluid, blood) sometimes visible on the barrel tip in criminal-context examples, but this is rapidly cleaned in professional security usage."
+  },
+  "image_prompt": "Professional product photography of a futuristic bioelectric weapon—the Axonal Stretch Resonance Lance—mounted horizontally on a matte black composite surface or gripped in a gloved left hand (glove showing tactical padding). Dramatic side-lighting from the right, casting sharp shadows that emphasize the parallel piezoelectric transducer arrays running the barrel's length. Cold cyan accent lighting reflects off the brushed silver barrel arrays and the anatomical targeting reticle. The carbon composite chassis appears charcoal gray with subtle iridescent shimmer. Close-up detail visible on the frequency tuning dial and the bioelectric status indicator ring (glowing soft cyan). Surrounding darkness emphasizes the weapon's clinical, medical aesthetic—more precision instrument than crude firearm. Sharp focus on the distinctive ribbed transducer elements and the grid-etched surface patterns. Cyberpunk aesthetic: sterile, engineered, slightly unsettling. No human blood or trauma—pure hardware showcase. --ar 3:2 --v 6"
 }

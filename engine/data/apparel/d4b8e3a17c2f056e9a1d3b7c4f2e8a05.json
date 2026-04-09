@@ -43,5 +43,24 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Patient Zero",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, utilitarian second-skin that hugs the torso and legs with athletic precision. The charcoal base reads as industrial and no-nonsense, while the teal panels create visual interest along the ribcage and inner thigh—functional accent placement that suggests augmentation readiness. On-body, it disappears under outerwear but commands attention when worn alone.",
+    "fit": "Compression fit throughout—snug without restriction. Torso sits close to the body; three-quarter leggings taper slightly toward the calf. Designed to work as a standalone base or seamlessly under bulkier jackets and tactical gear.",
+    "primary_material": "Dense 4-way stretch synth-nylon—the workhorse of street-tier compression wear. Durable, moisture-wicking, resistant to urban abrasion.",
+    "texture": "Smooth, almost matte finish with a subtle ribbed weave that catches light subtly. Flat-lock seams create nearly invisible interior seaming—functional comfort over aesthetic flair.",
+    "color_scheme": "Charcoal gray base (Circuit-standard neutral) with muted teal paneling running vertically along the ribcage and inside thighs. High contrast without screaming.",
+    "closures": "None—pulls on over the head and hips. Friction-fit design with engineered stretch.",
+    "distinctive_features": [
+      "Port-channel notches at shoulders and mid-spine for flush chrome limb integration",
+      "Muted teal accent paneling suggesting augmentation compatibility",
+      "Flat-lock seams designed to prevent chafing under heavy gear",
+      "4-way stretch construction for unrestricted movement",
+      "Thick enough to feel protective, thin enough to layer invisibly"
+    ],
+    "tier_indicator": "Tier 3–4 functional. Not luxury, not salvage—honest working-class equipment that doesn't pretend to be more than it is. Circuit-tier manufacturing means affordable reliability.",
+    "cultural_context": "Street labor, chrome work, gig economy body modification. Wearing this signals you're augmentation-ready, physically active, and practical about gear. Could be a warehouse tech, a modular assembly worker, a courier with subcutaneous upgrades. Not corporate leisure; not sub-grade desperation.",
+    "condition_typical": "Worn broken-in but not destroyed. Slight fading at high-stress seams, maybe a minor snag or two from gear mounting. The charcoal hides wear well; the teal panels stay vibrant."
+  },
+  "image_prompt": "Fashion photograph of Ironmarrow PressureFlex compression set on a lean androgynous model with visible subcutaneous augmentation ports along the collarbone. Shot against a dark industrial backdrop—corrugated metal wall, sodium-vapor orange light casting sharp shadows. Charcoal base layer with muted teal ribcage paneling visible as model twists slightly, arms raised to show shoulder port-channels. Moody, utilitarian, no jewelry. Film-noir cyberpunk aesthetic. Tight crop from chest to mid-thigh. --ar 2:3 --v 6"
 }

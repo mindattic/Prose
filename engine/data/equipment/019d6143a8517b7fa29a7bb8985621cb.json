@@ -47,5 +47,24 @@
     "The Nearfield",
     "The Question",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A tactical plate carrier with a distinctly industrial aesthetic—angular and geometrically organized. The front torso displays a 4×6 grid of raised, hexagonal reactive cell housings arranged in overlapping diamond patterns. Each cell is a distinct raised module with a slightly beveled face, creating a 3D quilted appearance. The overall silhouette is utilitarian and imposing, designed for maximum impact absorption visibility.",
+    "dimensions": "Standard adult torso fit; approximately 56cm wide across the shoulders, 60cm length front-to-back including side panels. Cell modules protrude roughly 2.5cm from the carrier surface.",
+    "weight_description": "9.8 kg fully loaded—significant enough to require proper load distribution. Designed to be worn with support harness; not pocketable or handheld.",
+    "primary_material": "Ballistic-grade synthetic polymer matrix housing with embedded reactive cell cartridges; reinforced nylon webbing and load-bearing straps",
+    "finish": "Matte industrial gray with anodized black accent rigging. Reactive cell faces have a subtle oil-slick iridescence—evidence of energetic compound layering beneath transparent polymer caps.",
+    "color_scheme": "Gunmetal gray primary; matte black webbing and adjustment hardware; faint rainbow sheen visible on cell faces under direct light, hinting at volatile chemistry within",
+    "interface_elements": "Quick-release magnetic cartridge ports along both lower sides (marked with white tactile indicators); adjustment straps with mil-spec ladder-loc buckles; small LCD readout panel on right shoulder showing cell integrity status and detonation history; numbered cell positions (1-24) laser-etched in white on each module",
+    "distinctive_features": [
+      "Hexagonal raised cell modules with faint vapor-etched warnings in Arcturus corporate script",
+      "Iridescent reactive compound visible through transparent cell caps—material shifts color under angle changes",
+      "Scorch marks and blast scorching visible on field-used units around previously activated cells",
+      "Kinetic dampening gel layer visible as faint translucent striations between outer housing and cell cartridges",
+      "Minimalist AR-compatible hardpoint slots for mounting additional tactical equipment"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS embossed in sans-serif across upper back yoke; small regulatory stamps indicating GLMZ compliance and explosive ordnance certification; serial number engraved on rear mounting plate; Φ price tier indicator (3+) stamped in corner",
+    "condition_typical": "Operators typically wear with visible dust accumulation in crevices. Field-used examples show replacement cell cartridges in various states of installation. Blast residue darkening around edges of previously-detonated modules is common. Webbing develops color fade from UV and sweat exposure."
+  },
+  "image_prompt": "Product photograph of Arcturus Defense Solutions Reactive Plate Carrier Mk. VII displayed on a tactical gear workbench. The carrier is positioned front-facing, chest harness unbuckled and splayed slightly to show the hexagonal reactive cell grid arrangement. A single 4-cell replacement cartridge pack sits adjacent to the carrier with one cell module visibly half-inserted into a side-mounted port. Dramatic blue-white industrial lighting casts sharp shadows across the reactive cell geometry, accentuating the iridescent sheen within the transparent cell caps. Surrounding elements include a spray bottle of kinetic gel coolant, worn leather work gloves, and digital readout displaying cell integrity. Background is dark charcoal concrete wall with subtle circuit board texture overlay. Cyberpunk aesthetic with clinical precision lighting and gritty worn texture visible on straps. --ar 3:2 --v 6"
 }

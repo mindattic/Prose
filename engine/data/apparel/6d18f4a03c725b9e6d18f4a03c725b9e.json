@@ -44,5 +44,25 @@
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A structured yet approachable single-button sport coat with classical tailoring. The cream-and-charcoal houndstooth pattern reads as deliberately understated—professional without corporate edge. Sits comfortably on the shoulders with a subtle drape through the torso. Projects quiet confidence rather than status.",
+    "fit": "Relaxed tailored. Generous through the chest and shoulders, with a gentle taper at the waist. Sleeve length hits at the wrist bone. Not compression-fit or oversized—designed for layering and movement during transit commutes.",
+    "primary_material": "Wool-viscose blend woven in a traditional houndstooth pattern. The blend balances structure and breathability—viscose adds drape and recovery, wool holds shape through wear.",
+    "texture": "Smooth, densely woven face with a subtle tooth. Microweave lining inside (deep burgundy) is soft and catches light with subtle iridescence. No synthetic sheen—deliberately matte finish.",
+    "color_scheme": "Cream and charcoal in a classic houndstooth check. Interior lining is deep burgundy microweave that creates visual depth when the jacket opens or moves.",
+    "closures": "Single button closure at the chest (likely matte gunmetal or bone). Functional button flaps on interior chest and hip pockets.",
+    "distinctive_features": [
+      "Notched lapels in moderate width—not aggressive or conservative",
+      "Functional chest pocket with subtle topstitching",
+      "Two interior slip pockets plus one button-flap security pocket",
+      "Burgundy microweave lining with subtle light-catching quality",
+      "Reinforced seams at stress points—made for frequent wear",
+      "No visible branding or logos—confidence through craft"
+    ],
+    "tier_indicator": "Tier 3 Professional. Signals someone who has moved past entry-level but hasn't ascended to corpo wealth. The price point and construction quality position this as aspirational working-class—accessible luxury.",
+    "cultural_context": "Worn by project managers, junior academics, gallery curators, mid-level engineers, and transit district professionals. Signals intentional personal style without performative status-signaling. The wearer chose this jacket because they understand tailoring, not because they needed to prove something.",
+    "condition_typical": "Broken-in but well-maintained. Slight softening at the elbows and collar from regular wear. Creases at the button from repeated fastening. Shows character rather than wear—a jacket that improves slightly with age."
+  },
+  "image_prompt": "Fashion photograph of a Calder & Murn Houndstooth Sport Coat on a medium-brown-skinned model with subtle augmentation ports visible at the jaw. The jacket is cream-and-charcoal houndstooth, single-button, worn over a simple white undershirt. The model stands in a Milwaukee transit corridor at dusk, moody amber-and-blue lighting from overhead fixtures and distant neon signage. The burgundy lining is visible as the model moves. Shallow depth of field, cinematic grain. Dark concrete and industrial glass backdrop. Studio-quality fabric detail visible in the weave. --ar 2:3 --v 6"
 }

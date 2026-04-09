@@ -58,5 +58,27 @@
     "TESSERA PG-2 'Signature'",
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
     "Yusra Ntambwe-Cakić"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately disheveled layered ensemble that reads as street-salvaged poverty wear but functions as a high-spec operative disguise. The silhouette is intentionally slouched and asymmetrical—patched panels in clashing earth tones create visual noise that defeats pattern-recognition algorithms. On the body, it creates a fragmented, almost ghost-like presence: nothing cohesive enough for drones to lock onto, nothing expensive enough to draw corpo attention.",
+    "fit": "Intentionally slack and oversized through the torso to accommodate hidden geneware; tapered slim through the hips and thighs for mobility. The base layer compression is invisible under the patchwork exterior. The wide-brim hat sits low, casting shadow across the upper face.",
+    "primary_material": "Composite: Vantex scanner-absorbent weave (olive panels), ballistic flex-armor micro-weave (charcoal), thermal-suppression synthetic fabric (indigo), treated cotton-poly blend base layer with reinforced back paneling, composite-soled boots",
+    "texture": "Deliberately worn and rough—multiple visible repairs, frayed seams, fabric creasing that suggests long field use. The patchwork creates visual texture variation. Base layer is smooth and compression-tight against skin. Boot leather is scuffed and darkened.",
+    "color_scheme": "Deep olive, charcoal grey, faded indigo, washed slate. The color variation is intentional camouflage chaos—no dominant hue, designed to break up human silhouette recognition. Laces on boots are mismatched colors (one worn copper, one faded grey).",
+    "closures": "Reinforced magnetic zips hidden within seams; the back panel zip runs from collar to waist with sound-dampened closure. Trousers feature friction-fit internal pocket closures. Boots use traditional lacing deliberately mismatched. Hat stays in place via subtle friction-fit band.",
+    "distinctive_features": [
+      "Asymmetrical patchwork panels in three distinct functional materials",
+      "Back seam zip designed to accommodate spinal/wing geneware without compromising external silhouette",
+      "Four concealed internal trouser pockets with sound-dampened closures",
+      "Wide-brim sun-faded hat that obscures facial geometry from aerial surveillance",
+      "Mismatched boot laces signaling Shelf aesthetic",
+      "Hardened composite boot toe-cap rated for breach kicks",
+      "Thermal-bleed fabric sections that suppress heat signatures",
+      "Scanner-absorbing panels invisible to standard recon drones"
+    ],
+    "tier_indicator": "Visually reads as Tier 5 sub-grade salvage; functionally a Tier 1-2 custom operative set. The disguise is the point—wealthy enough to commission unlicensed fabrication, street-smart enough to make it look worthless.",
+    "cultural_context": "Worn by ghosts, fixers, independent operators, and anyone who needs to move through the GLMZ without drawing algorithmic attention. Signals 'I know what I'm doing and I can't be scanned.' Associated with Needlebone collective aesthetics—Shelf culture mixed with off-grid operational necessity. Not corpo, not military, not governable.",
+    "condition_typical": "Deliberately weathered and patched, appearing field-worn from first wear. Frays are intentional. Wear patterns are strategized. It should look like it's been through ten deployments, not five days of wear."
+  },
+  "image_prompt": "A lean figure in a patchwork ghost operative coat photographed in harsh neon shadows—olive, charcoal, and indigo panels creating fragmented silhouette against industrial concrete backdrop. Low-brim hat casts deep shadow across face, revealing only jawline and neck. Mismatched boot laces catch stray light. Moody cyan and rust ambient lighting. The composition emphasizes visual noise and broken geometry. Shot from 3/4 angle, slightly overhead to show how the panels defeat surveillance. Dark urban warehouse setting, faded graffiti barely visible. Fashion editorial meets tactical documentation. --ar 2:3 --v 6"
 }

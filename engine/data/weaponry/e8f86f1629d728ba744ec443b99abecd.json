@@ -41,5 +41,33 @@
     "administrative",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "GLMZ",
+    "Kwabena Ilyich Ferreira-Sattout",
+    "Nika Svensson-Kone",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A diminutive, almost austere semi-automatic pistol with the proportions of a bureaucrat's compromise — sleek enough to disappear into a blazer pocket, but substantial enough to feel like a real firearm. The silhouette is angular and rectilinear, deliberately stripped of aggression. It looks like a tool designed by committee.",
+    "dimensions": "127mm length, 89mm height, 25mm width. Barrel length: 76mm.",
+    "weight_description": "Noticeably light and well-balanced despite its compact frame — easily pocketable, but substantial enough not to feel like a toy. Sits naturally in the palm without demanding attention.",
+    "primary_material": "Injection-molded reinforced polymer frame with steel slide and barrel. The grip section is composite; internals are precision steel.",
+    "finish": "Matte charcoal gray anodized steel slide with a slightly textured polymer frame in matching corporate gray. No shine, no chrome — designed to be visually forgettable.",
+    "color_scheme": "Corporate charcoal gray (RAL 7024) as primary, with minimal metallic gray accents around the trigger guard and magazine well. Subtle TESSERA branding in silver.",
+    "grip_texture": "Smooth-molded polymer with subtle grip texture — not aggressive, almost clinical. Designed to be comfortable for 8-hour desk shifts rather than tactical use. Slightly cool to the touch.",
+    "distinctive_features": [
+      "Small biometric scanner built into the grip panel (barely visible seam under the trigger guard)",
+      "Minimalist controls — no external safeties, only a decocker lever integrated into the slide",
+      "Magazine well is beveled and reinforced, suggesting frequent insertions during training",
+      "Witness holes in the magazine showing round count",
+      "Small red LED indicator on the grip that glows when battery is low",
+      "Serial number laser-etched on the slide in tiny digits",
+      "Heavy, deliberate trigger with pronounced staging — visible as a slightly raised trigger bow",
+      "Rounded edges throughout, no sharp corners or snagging points"
+    ],
+    "manufacturer_markings": "TESSERA CORPORATION wordmark in silver on the slide, left side. Small TK-5 designation stamped above the trigger guard. Corporate shield logo embossed on the left grip panel. Serial number and compliance markings on the frame.",
+    "condition_typical": "Pristine to lightly used — most examples are drawer-kept and see minimal handling. When issued, they arrive in a soft molded holster alongside two spare magazines in a desk organizer. Well-maintained but psychologically unloved by their carriers."
+  },
+  "image_prompt": "Product photography of a Tessera TK-5 Compact pistol lying on a dark brushed steel surface next to a corporate ID badge and a ballpoint pen, showing scale. The weapon's matte charcoal gray polymer and steel are illuminated by dramatic side-lighting from the left, creating subtle highlights on the slide and grip texture. Shallow depth of field emphasizes the biometric grip seam. High-contrast cyberpunk lighting with cool blue accent light catching the small red LED indicator. Corporate environment aesthetic — clean, clinical, bureaucratic. The gun appears more like office equipment than a weapon. Shot from 45-degree angle. --ar 3:2 --v 6"
 }

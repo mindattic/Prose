@@ -55,5 +55,44 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Brewer's Spine",
+    "Free Assembly",
+    "GLMZ",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Isadora Vukić-Nambiar",
+    "Kamala Fedorov-Ampofo",
+    "Nodar Kuznetsov-Adu",
+    "Slagworks Industrial",
+    "Standard CO2 Propulsion Cartridge SPC-12",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "The Filament",
+    "The Nearfield",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "VitaCore BloomFilter Olfactory Modulation Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, ceremonial-modern whip that reads as both performance instrument and lethal close-quarters weapon. The handle dominates—a tapered, aggressive grip that widens toward the pommel. From it extends a rigid graphene spine that curves slightly, giving the weapon an almost serpentine elegance despite its technological purpose. The collapsed form suggests contained power.",
+    "dimensions": "Collapsed length: 28 cm. Operational filament: 180 cm. Handle grip section: 12 cm. Spine diameter at base: 8 mm, tapering to 3 mm at articulation point.",
+    "weight_description": "Deceptively light in hand—1.1 kg creates an almost unbalanced sensation, with weight concentrated in the grip assembly. Feels more like a performance tool than a weapon until the operator recognizes the density of the microwave emitter housing.",
+    "primary_material": "Graphene-reinforced articulated spine; grip housing is aerospace-grade aluminum alloy with integrated capacitor cell embedded in pommel. Microwave emitter chamber uses ablative ceramic composite.",
+    "finish": "Brushed charcoal-gray aluminum with matte thermal-resistant coating. Spine shows subtle iridescence where graphene layers catch light. Emitter vents reveal burnished copper heat-dissipation fins. Wear patterns typical: scuff marks on articulation joints, micro-pitting on handle edges from repeated field deployment.",
+    "color_scheme": "Primary: charcoal gray and dark gunmetal. Accents: copper-toned heat vents, faint blue-white glow at the emitter aperture when powered. Grip wrapping in matte black synthetic leather.",
+    "grip_texture": "Tightly wrapped matte-black synthetic leather over knurled aluminum core. Slight tacky feel from ionic discharge residue when freshly used. Ergonomic contours suggest high-end manufacturer attention—shaped for both theatrical flourish and tactical efficiency.",
+    "distinctive_features": [
+      "Microwave emitter aperture at grip base—circular opening ringed by copper heat fins",
+      "Subtle Silhouette House emblem (theatrical masque profile) etched below the emitter",
+      "Series of three small blue indicator LEDs along the spine showing power state and field mode (tight-cut vs. diffuse-bloom)",
+      "Articulation joints along spine visible as carbon-composite segments with magnetic coupling rings",
+      "Pommel is domed and weighted—designed for impact use or to anchor the whip during grappling maneuvers",
+      "Faint scorch marks near the emitter where plasma filament ionizes",
+      "Custom wear: some operators wrap electrical tape around the lower spine for improved handling in wet conditions"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS stamp on the grip underside, tiny and precise. Silhouette House fabrication serial number etched into pommel. License date and GLMZ compliance marker stamped on a small brass plate set flush into the aluminum at the grip base.",
+    "condition_typical": "Field examples show moderate battle-wear: emitter aperture slightly discolored from repeated microwave discharge, articulation joints showing minor corrosion, handle grip darkened from sweat and ionic residue. The weapon is maintained obsessively by tier-4 operators but shows honest wear—never pristine, rarely neglected."
+  },
+  "image_prompt": "Plasmatic Induction Whip PIW-4 'Threadbare' in tactical product photography: sleek matte-gray aluminum grip housing with copper heat-dissipation fins clustered around the microwave emitter aperture at base. Rigid graphene spine curves elegantly upward, articulated segments visible as matte carbon-composite rings with barely-visible magnetic coupling points. Three small blue indicator LEDs glow faintly along the spine. Weapon rests on dark carbonite surface, angled 45 degrees, held loosely in a gloved hand wearing matte-black tactical synthetic leather. Dramatic side-lighting from upper left casts sharp shadows across the grip knurling and emphasizes the thermal fins. Background is dark gunmetal gray with subtle cyberpunk grid pattern. Faint blue-white glow emanates from the emitter aperture suggesting dormant plasma ionization chamber. Close detail shot shows Silhouette House masque emblem etched beneath emitter and ARCTURUS DEFENSE SOLUTIONS micro-marking on grip. Worn finish shows honest field use: micro-scuffing on spine articulations, slight discoloration on emitter ring from discharge residue. Cyberpunk aesthetic: clinical, lethal elegance. --ar 3:2 --v 6"
 }

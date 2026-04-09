@@ -49,5 +49,25 @@
   "related_entities": [
     "Carrion Defense Works",
     "TESSERA ES-4 'Perimeter'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact cylindrical canister resembling a high-pressure spray can, but with reinforced ribbed sidewalls and a wider base for stability. The top features a prominent two-stage trigger mechanism — primary arming switch and secondary deployment lever. Clean industrial design with aggressive angular lines.",
+    "dimensions": "12 cm tall, 7 cm diameter — slightly larger than a standard aerosol spray can",
+    "weight_description": "600 grams per unit — handheld, pocketable in reinforced cargo gear or tactical harnesses; light enough for repeated throws",
+    "primary_material": "Aluminum alloy canister body with internal pressure-resistant composite liner; rubberized grip panels",
+    "finish": "Matte textured powder coat with high-friction grip surface; slight industrial sheen on polished aluminum endcaps",
+    "color_scheme": "Matte charcoal gray body with safety-orange grip panels and warning stripe; neon yellow arming indicator dot near trigger",
+    "interface_elements": "Top-mounted dual-stage trigger (safety lock + deployment lever), pressure gauge window showing canister status (green/yellow/red), recessed fill valve on base, molded finger grooves along grip, printed deployment instructions in white sans-serif lettering",
+    "distinctive_features": [
+      "Ribbed pressure-resistant sidewalls resembling industrial gas cylinders",
+      "Integrated rubber shock absorber around base impact zone",
+      "Translucent pressure gauge window with color-coded status indicator",
+      "Two-stage trigger with tactile safety engagement click",
+      "Embossed Carrion Defense Works logo — stylized vulture skull wreathed in concentric circles",
+      "Mandatory disposal notice stamp in small print"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS etched into shoulder; TDF-3 model designation; GLMZ regulatory compliance stamps; manufacturing date code; batch number; pressure rating in PSI",
+    "condition_typical": "Pristine and sealed in retail state; worn grip panels and minor denting common after field use; pressure gauge window may cloud with age; arming indicator fades to dull orange after 2-3 years"
+  },
+  "image_prompt": "Overhead product photography of Carrion Defense Works TDF-3 foam canister on dark carbon fiber workbench. Close-up showing ribbed aluminum body, safety-orange grip panels, dual-stage trigger mechanism, and yellow arming indicator dot. Dramatic side-lighting casting sharp shadows, with soft blue-tinted ambient backlighting creating depth. One canister in focus center-frame, second unit slightly out-of-focus in background. Shallow depth of field. Cyberpunk industrial aesthetic with neon accents, moody dark background, professional tactical equipment photography style. --ar 3:2 --v 6"
 }

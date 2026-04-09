@@ -42,5 +42,37 @@
     "reliable",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus LS-5 'Sentinel'",
+    "Cinderblock Ai",
+    "Hearthstone Firearms Model 9 'Payday'",
+    "Nika Svensson-Kone",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "TESSERA CORPONATION Sentinel Executive Security BCI",
+    "The Hearthstone",
+    "The Shelf",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A purposeful, no-nonsense full-size pistol with clean lines and industrial functionality. The Sentinel-9 reads as serious hardware—chunky polymer frame contrasts with a darker steel slide, creating visual weight despite moderate actual mass. The proportions are classically pistol-shaped with no exotic curves or tactical mall aesthetics; it looks built to work rather than impress.",
+    "dimensions": "203mm overall length, 38mm width at slide, 140mm height with magazine inserted. Barrel length 102mm.",
+    "weight_description": "Balanced and substantial in the hand—0.72kg loaded feels intentional and trustworthy without being burdensome. The steel slide provides enough heft to tame recoil, while the polymer frame keeps it accessible for extended carry.",
+    "primary_material": "Reinforced polymer composite frame with embedded steel slide rails; steel slide and barrel.",
+    "finish": "Matte charcoal polymer body with a darker DLC (diamond-like carbon) or parkerized steel slide. The contrast between materials is deliberate—functional rather than aesthetic.",
+    "color_scheme": "Gunmetal gray slide over charcoal-black polymer frame. Minimal accent colors; perhaps small red or white witness dots on the magazine.",
+    "grip_texture": "Slightly textured polymer grip—not aggressively stippled, but with enough micro-dimpling to prevent slipping during sustained use or in adverse conditions. Ergonomic without being fancy.",
+    "distinctive_features": [
+      "Picatinny rail under dust cover for tactical accessories",
+      "Striker-fired safety witness hole on slide",
+      "Beveled magazine well for smooth reloads",
+      "Dovetail-cut sight notch (compatible with aftermarket sights)",
+      "Visible sear spring and firing pin channel (industrial design honesty)",
+      "Subtle wear marks on slide edges from fieldstripping—factory-applied to suggest reliability testing",
+      "Magazine catch accessible but not proud"
+    ],
+    "manufacturer_markings": "HEARTHSTONE FIREARMS stamped on left slide in utilitarian sans-serif. SENTINEL-9 and caliber marking (9X19) on right slide. Serial number on left frame in small digits. No logo flourishes—purely informational stamps.",
+    "condition_typical": "Well-maintained and field-ready. Light surface marks consistent with regular use, but no deep corrosion or abuse damage. This is a weapon that's been cared for by owners who couldn't afford replacements—every scuff tells a story of responsible ownership."
+  },
+  "image_prompt": "Product photography: Hearthstone Sentinel-9 pistol displayed on dark concrete surface, angled 45 degrees toward camera. Held in tactical gloved hand in secondary shot. Dramatic side-lighting reveals matte charcoal polymer and parkerized steel slide textures. Shallow depth of field with magazine in frame. Cyberpunk industrial aesthetic, cool blue-gray color grading, minimal background. Late-night security footage meets retail catalog. Include close detail of Picatinny rail and manufacturer stamps. --ar 3:2 --v 6"
 }

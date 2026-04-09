@@ -39,5 +39,28 @@
     "Red Circuit RC-Pit 'Dogfighter'",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Reclamation Assembly"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Heavy-duty industrial jacket with pronounced shoulder width and reinforced structure. Dominates the silhouette with its bulk and authority — a garment that announces its wearer as certified for hazardous work. The high collar and sealed construction give it an almost armor-like presence. Orange hi-vis panels on shoulders and sleeves create visual breaks against the muted base color. Reads as utilitarian and protective rather than fashionable.",
+    "fit": "Relaxed through the body to accommodate layered undergarments and range of motion for overhead work. Deliberately oversized at the shoulders to fit both baseline and augmented anatomy. Articulated elbow panels create subtle texture breaks that allow flexion without compromising the shell. Wrist cuffs are snug and reinforced. Overall impression is functional rather than flattering.",
+    "primary_material": "Lead-composite fiber weave bonded to thermoplastic inner layer — visibly denser and heavier than standard work wear. The outer shell has a subtle sheen from the composite weave, slightly industrial-looking. The material has weight and presence.",
+    "texture": "Smooth composite shell with a faint cross-hatch weave pattern visible under close inspection. Articulated elbow panels show quilted ribbing for flexibility. Inner thermoplastic layer is sleek and chemical-resistant. Magnetic closure points have subtle metallic texture. The dosimeter strip on the left wrist has a semi-glossy, almost medical appearance.",
+    "color_scheme": "Muted industrial gray base with international-orange hi-vis panels on shoulders and full sleeve stripes. The Harborworks Collective crane-hook logo in metallic gray sits on the right chest. Dosimeter strip in the wrist area starts as a neutral beige/cream, with color-change capability (yellow, red at thresholds).",
+    "closures": "Magnetic snap system running down the center front, integrated with the collar seal for respirator compatibility. Reinforced magnetic points at wrist cuffs. No traditional zippers — the magnetic system is more reliable in contaminated environments and easier to operate with heavy gloves or augmented hands.",
+    "distinctive_features": [
+      "Integrated dosimeter strip on left wrist with color-change radiation threshold indicators",
+      "Tall sealed collar with magnetic closure designed to lock with compatible respirator collars",
+      "Articulated elbow panels with quilted ribbing for unrestricted overhead motion",
+      "Reinforced port-access panels at wrists and forearms for augmentation compatibility",
+      "Wide-cut shoulder seams designed to fit prosthetic and enhanced limbs",
+      "International-orange hi-vis shoulder and sleeve panels meeting harbor safety standards",
+      "Harborworks Collective crane-hook logo in metallic gray on right chest",
+      "Lead-composite outer shell with visible weave pattern",
+      "Multiple internal pockets with magnetic closures for tools and dosimetry cards"
+    ],
+    "tier_indicator": "Tier 2-3 functional. The certification requirement and manufacturing standard elevate it above typical Tier 3 work wear, but the utilitarian design and radiation-shielding purpose keep it from Tier 1 luxury. It is valuable specifically within its operational context.",
+    "cultural_context": "This jacket is a credential, not just clothing. Wearing it signals you are certified for hazardous cargo operations at Meridian Harbor — a skilled position with gatekeeping and peer culture. The jacket marks you as part of an insular professional community. Among dock workers, it is worn with pride; outside that context, it reads as industrial worker. The presence of augmentation-accommodation features acknowledges the prevalence of cyberware among experienced operators. A pristine jacket on a new worker draws scrutiny from veterans.",
+    "condition_typical": "Well-worn but meticulously maintained. The outer composite shell shows wear patterns consistent with 8–12 hour shifts: scuffing at the wrists, minor stress marks around the elbow articulation, occasional thermal discoloration from proximity to hot cargo. The hi-vis orange may fade slightly. The dosimeter strip is regularly checked and noted — its color progression is a running log of the wearer's exposure history. Most operators replace jackets when the dosimeter hits yellow, but some aggressive or underpaid workers push to red before requesting replacement."
+  },
+  "image_prompt": "Industrial fashion photography: Male model of mixed Southeast Asian descent wearing Meridian Harbor Crane Operator Rated Jacket, standing in profile against a backdrop of stacked cargo containers in muted gray and rust tones. Harsh sidelit fluorescent lighting casts sharp shadows across the heavy lead-composite shell, emphasizing the weave texture. The orange hi-vis panels glow under the industrial lights. Close detail of the left wrist dosimeter strip visible, currently at beige baseline. The jacket's scale dominates the frame, making the wearer appear protected but constrained. Grimy harbor terminal setting with faint atmospheric haze suggesting industrial contamination. Moody, desaturated color palette broken only by the safety orange. --ar 2:3 --v 6"
 }

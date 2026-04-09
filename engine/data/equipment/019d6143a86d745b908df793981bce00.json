@@ -47,5 +47,24 @@
     "Idris Forsberg-Quaye",
     "Specter ID Spoofer — 'Janus Mask'",
     "SynapTech AromaVeil Olfactory Filter"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting rebreather mask that hugs the lower face like a second skin. The design prioritizes discretion over bulk, with clean lines and minimal protrusion. The mesh filter panel dominates the front, creating a semi-transparent window that reveals layered filtration cartridges beneath. Subtle ribbing along the sides suggests reinforced flex-points for comfort during extended wear.",
+    "dimensions": "Approximately 12 cm wide × 8 cm tall × 4 cm deep at the deepest point. Fits entirely below the cheekbones, leaving eyes and forehead exposed.",
+    "weight_description": "120 grams total—light enough for all-day wear without fatigue. Handheld when not worn; negligible burden when mounted on face.",
+    "primary_material": "Aerospace-grade polymer composite with embedded micro-fan housing. Charcoal and HEPA cartridge chambers molded into the structure.",
+    "finish": "Matte charcoal-gray housing with a brushed titanium accent strip running horizontally across the filter mesh. The mesh itself has a faint iridescence—signature of catalytic conversion coating.",
+    "color_scheme": "Gunmetal gray primary body with matt-black mesh panel and silver-gray accent stripping. Subtle cyan indicator lights embedded at the corners where the mask contacts the jawline.",
+    "interface_elements": "Two discrete circular LED indicators (cyan and amber) at jaw-level corners show battery/filter status. A minimalist power button recessed into the right temple area. Magnetic cartridge release points visible on either side of the mesh panel. No screen display—status communicated through light color and pulse rate.",
+    "distinctive_features": [
+      "Layered mesh panel revealing stacked filter cartridges—a transparent view of the filtration architecture",
+      "Faint cyan glow from catalytic conversion layer visible through mesh under certain angles",
+      "Micro-perforations along the cheekbone contact points for micro-ventilation and comfort",
+      "Sterling-Nakamura embossed logo on the right temple in chrome-finish lettering",
+      "Magnetic quick-release cartridge system—dual silver snap-points where filters engage"
+    ],
+    "manufacturer_markings": "Sterling-Nakamura logo (stylized 'SN' interlocked design) in chrome relief on right temple. Tiny regulatory stamp (GLMZ-TIER1-CERTIFIED) etched below logo. Cartridge compatibility marking on filter housing.",
+    "condition_typical": "In daily use, light condensation may bead on the mesh from exhaled breath due to positive pressure. The cyan status lights pulse softly when battery is above 75%; they remain solid when dropping below that threshold. After extended use in heavily contaminated zones, the mesh takes on a visible gray-brown patina—visual indicator that cartridge replacement is due."
+  },
+  "image_prompt": "Cyberpunk product photography: Sterling-Nakamura PAF-4 rebreather mask displayed on a brushed-steel workbench under cool LED strips. Shot from a 3/4 angle showing the translucent mesh filter revealing layered cartridges within. Cyan status indicators glowing softly. A replacement filter cartridge placed adjacent for scale. Dramatic side-lighting casts sharp shadows, emphasizing the mask's contoured form-factor. Background shows a blurred GLMZ industrial district skyline with acid-rain haze. Shallow depth of field isolates the mask in sharp focus. Cyberpunk aesthetic: clean minimalist design meets harsh urban survival gear. --ar 3:2 --v 6"
 }

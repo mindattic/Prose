@@ -36,5 +36,26 @@
     "Halverson & Obi Hall",
     "Tessera Nexus Town Car",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A classic two-piece silhouette with restrained elegance. Moderate notch lapels, single-breasted button closure, and a straight cut that reads as authoritative without pretension. The jacket hangs with quiet confidence on the shoulders; the trousers fall with subtle intention. This is the uniform of professional competence.",
+    "fit": "Tailored but not tight. The jacket drapes comfortably through the chest with a slight suppression at the waist. Trousers sit at natural waist with a straight leg and minimal taper—designed for long hours at a desk or in a meeting room. Modest waistband flex accommodates movement and minor geneware modifications.",
+    "primary_material": "Synth-wool blend—durable, temperature-regulating, takes a press well. The fabric has the tactile warmth of natural fiber with the durability and low-maintenance properties of synthetic engineering.",
+    "texture": "Smooth surface with a subtle weave pattern visible in certain light. Full canvas chest piece (visible only to the wearer as internal structure) creates a stable, structured feel. Gunmetal grey lining is smooth and cool to the touch, resists creasing.",
+    "color_scheme": "Deep charcoal or slate blue as primary. The gunmetal grey lining peeks at cuffs and lapels. No patterns—the fabric's inherent weave is the only visual interest. Understated elegance through restraint.",
+    "closures": "Single-breasted with two-button closure—standard, reliable, forgettable in the best way. All closures are physical buttons, no smart-fastenings.",
+    "distinctive_features": [
+      "Full canvas chest piece—uncommon at this price point, signals quality engineering",
+      "Thirty-year design consistency from Halverson & Crane",
+      "Augment-compatible back panel option (Φ15 alteration)",
+      "Gunmetal grey lining with subtle durability reinforcement",
+      "Modest waistband flex for geneware tolerance",
+      "Real stitched interfacing throughout",
+      "Clean, functional design with zero decorative elements"
+    ],
+    "tier_indicator": "Tier 2-3 aspirational wear. Signals professional responsibility and financial stability without announcing wealth. In Tier 4 context, reads as deliberate understatement or recent shift in fortune.",
+    "cultural_context": "The uniform of those climbing or holding the line—corporate supervisors, municipal administrators, union representatives, and mid-tier bureaucrats. Worn to arbitration boards and quarterly reviews. This suit says: *I am competent, I take this seriously, I am not frivolous.* In the GLMZ, it is the suit of people who have something to prove and the discipline to prove it.",
+    "condition_typical": "Broken-in but maintained. After six months of regular wear, the fabric develops a subtle sheen at stress points (elbows, lapels, trouser knees) that only adds to its gravitas. Minor creasing is expected and accepted. Worn garments show the confidence of their wearer."
+  },
+  "image_prompt": "Dark charcoal Halverson synth-wool suit on a cyberpunk-era model with subtle facial augmentation, photographed in stark fluorescent office lighting against a wet concrete wall streaked with rain. The model stands in three-quarter profile, jacket buttoned, one hand in trouser pocket, expression neutral and focused. Moody cyan and grey color grading. Shallow depth of field emphasizes the fabric's weave texture and the gunmetal lining visible at the cuff. Urban GLMZ background suggests a municipal building or corporate corridor. Hyper-realistic fabric detail. --ar 2:3 --v 6"
 }

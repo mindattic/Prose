@@ -39,5 +39,25 @@
     "Synaptrel",
     "Vantablack Media Parasocial Carrier Mask",
     "VitaCore LinguaSync Real-Time Translation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Austere, utilitarian silhouette with a crisp, almost rigid drape. Straight-leg cut that reads as deliberately conformist — the uniform of Tier 3 transit workers and mid-level corporate drones. Sits at the ankle with minimal taper.",
+    "fit": "Tailored but not form-fitting; designed for comfort during 8+ hour shifts. Waistband sits at natural hip level. Generous through the thigh and knee to accommodate prosthetic integration without visible bulging. Legs hang clean and parallel.",
+    "primary_material": "Charcoal poly-wool blend (60% polyester, 40% wool). Permanently press-treated with heat-set resin coating — fabric memory is engineered into the fiber structure.",
+    "texture": "Smooth, almost slick surface with subtle ribbed weave visible on close inspection. The permanent-press finish gives it a slightly waxy, low-friction feel. No natural softness; this is intentionally industrial.",
+    "color_scheme": "Deep charcoal gray — neutral enough to pair with anything, dark enough to hide dirt from factory floors or transit grime. No patterns; absolute color uniformity across all pairs.",
+    "closures": "Standard front fly with magnetic snap (superior to zippers for rapid undressing in medical contexts). No buttons — all fastening is magnetic or friction-fit. Side seam integration uses recessed friction snaps flush with the weave.",
+    "distinctive_features": [
+      "Hidden snap channels along both side seams (inset 8mm) for standard prosthetic leg attachments up to 40mm diameter",
+      "Reinforced internal gusset at crotch (ballistic weave insert) for durability during repetitive motion",
+      "Six standardized inseam lengths (28, 30, 32, 34, 36, 38 inches) — no custom tailoring offered",
+      "Stratum branding (small woven label, inner waistband only — no visible logos)",
+      "Thermal-regulation weave: moisture-wicking inner lining to prevent sweat accumulation during commutes",
+      "RFID pocket sewn into right hip seam (for transit pass or credential chip)"
+    ],
+    "tier_indicator": "Tier 3 — working-class standard issue. Not cheap enough to be Tier 4 salvage, not refined enough for Tier 1-2 corpo wear. This is the uniform of the functional middle.",
+    "cultural_context": "Worn by transit workers, mid-level manufacturing plant staff, medical facility orderlies, and corporate middle-management. Signals reliability and conformity — the wearer has accepted their place in the system. Common in the ungoverned zones among those trying to signal 'legitimacy' to corpo patrols.",
+    "condition_typical": "Perpetually pristine due to permanent-press coating. After 200+ wears, fabric begins to pill slightly at inner thighs and around the magnetic snap anchors. Magnetic snaps can wear out (friction causes micro-corrosion). Typical lifespan: 18-24 months before replacement."
+  },
+  "image_prompt": "A Tier 3 worker wearing charcoal Stratum Mid-Level Pressed Trousers, standing in harsh neon-blue fluorescent lighting inside a transit station. The trousers hang with geometric precision, catching cold light. Close-up detail of the snap channel along the side seam, visible where fabric meets reinforced edge. Dark mannequin alternative: trousers displayed on matte black form against a grimy concrete wall with faint GLMZ transit map graffiti. Moody, desaturated palette with single neon accent. Shot from mid-thigh down, emphasizing the relentless uniformity and industrial precision of the cut. --ar 2:3 --v 6"
 }

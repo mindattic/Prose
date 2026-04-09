@@ -47,5 +47,25 @@
     "Sterling-Nakamura Heritage Roadster",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Spire"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A timeless double-breasted silhouette with commanding presence—structured shoulders, a mid-thigh length line, and an air of composed authority. The coat reads 'professional with depth,' neither aggressively fashionable nor stubbornly retro. High, wide collar frames the face; exaggerated lapels suggest intentional style without pretension.",
+    "fit": "Tailored but not constraining—room through the chest and shoulders for layering, a subtle taper at the waist. Sleeves hit the wrist bone cleanly. The cut assumes good posture and purposeful movement.",
+    "primary_material": "Medium-weight boiled wool blend from the New Glasgow mill—dense enough to cut wind and weather, with subtle surface texture that catches light unevenly.",
+    "texture": "Smooth with embedded nap; the boiled process gives it a soft, almost suede-like hand despite being wool. Shows wear patterns gracefully—slight shine at stress points becomes a mark of authenticity.",
+    "color_scheme": "Charcoal (primary), toffee, or deep burgundy. Current season emphasizes the burgundy—a color that reads as blood-dark in lowlight, nearly black in shadow but luminous in street-level neon.",
+    "closures": "Six polished button fronts (double-breasted configuration); a soft fabric belt with through-loops, typically worn untied and draped.",
+    "distinctive_features": [
+      "Deep slash pockets—spacious and functional",
+      "Storm flap detailing across the back shoulders",
+      "Half-lining in printed silk-analog with subtle pattern—visible when coat opens",
+      "Understated Calder & Rhys woven label at interior neck",
+      "No visible tech integration or augmentation ports",
+      "Proportioned for layering over light aug-wear or jacket"
+    ],
+    "tier_indicator": "Tier 3–4. Accessible to working professionals and mid-tier corporate staff, but signals someone with taste and staying power rather than new wealth.",
+    "cultural_context": "Worn by architects, mid-level analysts, journalists covering the Spire, and anyone who needs to look credible across mixed social tiers. It's the uniform of people building something that matters, or convincing others they are. No street edge; no corpo flash.",
+    "condition_typical": "Broken-in and worn with intention. The belt hangs loose rather than cinched. Slight shine at lapel edges and cuffs from repeated wear. Shows character without looking neglected."
+  },
+  "image_prompt": "A mid-level corpo in a charcoal Calder & Rhys wool trench, shot from three-quarter angle against a rain-slicked urban wall lit by cold neon and late-afternoon light. The belt drapes open at the sides, lapels catching subtle highlights. Moody, professional atmosphere—think architectural photography meets street fashion. Slightly desaturated color palette with burgundy or charcoal variants glowing under wet pavement reflections. Model has mixed heritage features, calm expression, minimal visible augmentation. Shot in 35mm cinematic style, deep shadow detail. --ar 2:3 --v 6"
 }

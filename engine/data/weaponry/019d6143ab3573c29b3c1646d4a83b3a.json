@@ -63,5 +63,38 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Breck Tannen",
+    "GLMZ",
+    "Neuromorphic Pressure Cestus",
+    "Ringo Corponation",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "TESSERA PG-2 'Signature'",
+    "The Human Baseline Alliance",
+    "The Signal"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular carbine with an almost surgical precision to its design. The barrel is noticeably slender and tapers slightly, housing the electromagnetic emitter array. The profile suggests a weapon built for neural precision rather than kinetic force — less brutalist assault rifle, more specialized medical instrument. The stock and grip are ergonomically sculpted with visible sensor arrays breaking the surface.",
+    "dimensions": "Overall length: 94 cm | Barrel length: 38 cm | Stock depth: 22 cm | Grip width: 4.2 cm",
+    "weight_description": "Surprisingly light and well-balanced at 2.8 kg — floats naturally in the firing position. The weight distribution pulls slightly toward the barrel despite the compact form, hinting at the heavy capacitor bank housed deeper in the body. Feels almost delicate compared to conventional carbines of similar length.",
+    "primary_material": "Primary frame: Carbon-composite skeletal structure with titanium-alloy reinforcement at stress points. Barrel housing: Brushed steel electromagnetic containment sleeve. Grip section: Textured polymer with embedded sensor nodules.",
+    "finish": "Matte black primary finish with brushed steel accents. The barrel housing catches light differently — intentionally high-polish to manage thermal dissipation from the emitter array. Sensor array contact points on grip show slight wear patterns from repeated bare-skin contact, creating micro-scratches in the finish.",
+    "color_scheme": "Primary: Deep matte black | Accents: Brushed steel gray | Highlights: Thin violet accent lines running along the barrel shroud (dormant state) | Sensor node contacts: gunmetal gray",
+    "grip_texture": "Rubberized polymer with deliberate micro-texturing designed to maximize bare-skin contact. Slightly tacky to touch — engineered to prevent slipping when wet with sweat or blood. The texture transitions to smoother titanium-reinforced sections at trigger guard and charging mechanism.",
+    "distinctive_features": [
+      "Visible sensor array embedded in grip — small circular contact nodes (8-12mm diameter) arranged in a grid pattern across palm and fingers contact zones",
+      "Coherent electromagnetic emitter array visible as a series of stacked ring-shaped components within the clear polymer-windowed barrel shroud",
+      "Five-position intensity dial on the left side of the receiver — marked with stylized icons rather than numbers (motor disruption symbol → sensory overload → coordination failure → augmentation lockout → shutdown symbol)",
+      "Pulse/Continuous toggle switch disguised as minimal aggressive geometry in the safety area",
+      "High-density capacitor pack visible through right-side reinforced viewport — cylindrical ceramic component with cooling fins",
+      "Thermal vent array along the length of the barrel shroud designed to bleed off electromagnetic field heat",
+      "Zero conventional iron sights — mounting rails absent; weapon is designed entirely for integrated augmented targeting systems or direct aim",
+      "Emitter discharge port: unusual octagonal geometry rather than circular — designed to shape the neural feedback beam profile"
+    ],
+    "manufacturer_markings": "RINGO CORPONATION logo embossed in recessed rectangle on the left side of the receiver, just forward of the intensity dial. Serial plate mounted on the underside of the barrel shroud — stainless steel with laser-etched alphanumeric code. Small text warning printed in three languages along the grip: 'BARE SKIN CONTACT REQUIRED | INEFFECTIVE AGAINST UNAUGMENTED TARGETS | CLASS-A BIOHAZARD EMISSION'",
+    "condition_typical": "Usually encountered in one of two states: either pristine and carefully maintained by military quartermasters (specialist tools receive obsessive care), or showing signs of heavy field use with scorched polymer patches, micro-fractures in the barrel shroud viewport, and polished contact points on the grip from repeated neural sampling. Battle-scarred examples show discoloration around the vent array from repeated electromagnetic discharge cycling."
+  },
+  "image_prompt": "Product photography of the Neural Feedback Carbine NFC-3 'Mirrorgun' lying on a dark brushed steel surface, angled to showcase the barrel shroud and grip sensor array. Dramatic side-lighting from the left creates sharp shadows highlighting the ergonomic angles and reveals the internal capacitor pack through the viewport. The emitter array is clearly visible through the polymer window, stacked rings of electromagnetic coils. Grip sensor nodes catch specular highlights. Background is deep black with subtle violet neon accent lighting reflecting off the brushed steel barrel section, echoing the weapon's dormant violet accent lines. The overall aesthetic is surgical precision meets cyberpunk weaponry — clinical, elegant, dangerous. Captured with shallow depth of field focusing on the grip sensor array in foreground. --ar 3:2 --v 6"
 }

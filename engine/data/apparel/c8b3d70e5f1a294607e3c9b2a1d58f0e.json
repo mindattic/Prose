@@ -52,5 +52,26 @@
     "Tessera Corponation Peripatetic Address Shell",
     "The Riveters' Round",
     "The Underlayer Collective"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting underlayer that hugs the torso and upper legs like a second skin. The matte black surface is nearly invisible under street clothes, creating an imperceptible silhouette beneath looser wear. The high neckline suggests protective intent without shouting it.",
+    "fit": "Compression-tight through the core and thighs, designed for zero bulk and maximum concealability. Allows full range of motion while maintaining contact with skin for optimal impact response.",
+    "primary_material": "Shear-thickening gel-impregnated synthetic weave with ceramic whisker tape reinforcement at stress points",
+    "texture": "Smooth, slightly tacky surface at rest with an underlying quilted architecture. The hexagonal pattern is subtle but tactile — raised ridges marking each protected zone. Chrome-routing channels feel cool and slightly metallic to the touch.",
+    "color_scheme": "Deep matte black throughout, with faint silver-grey hexagonal quilting visible under direct light. Chrome snap covers gleam subtly at forearm and spine junctures.",
+    "closures": "Snap-close covers over chrome-routing channels; body seams are friction-fit and seamless",
+    "distinctive_features": [
+      "Shear-thickening gel fiber in torso and upper thigh — rigid on impact, pliable at rest",
+      "Faint hexagonal quilting pattern delineating armor zones",
+      "Ceramic whisker tape reinforcement along shoulder and side seams",
+      "Integrated chrome-routing channels on inner forearms and upper spine",
+      "High neckline for throat protection",
+      "Industrial solvent scent — signature of gel impregnation",
+      "Thermal retention properties"
+    ],
+    "tier_indicator": "Tier 3 functional with Tier 2 aspirations — street-corponation hybrid manufacturing suggests accessible luxury for working-class professionals, mercenaries, and corpo security contractors",
+    "cultural_context": "Worn by street operatives, independent security, corpo mid-level staff, and anyone navigating high-risk zones without full ballistic gear. Signals practical paranoia and street credibility without the obvious aggression of visible armor.",
+    "condition_typical": "Pristine when new with industrial smell; develops subtle wear patterns where gel channels see repeated flex. Snap covers may show micro-corrosion after months of use. Remains functionally intact for years."
+  },
+  "image_prompt": "Close-up fashion shot of a cyberpunk model wearing the Ironmarrow SoftArmor Ballistic Underlayer, displayed as a high-neck compression base layer on muscular, augmented torso. Matte black fabric catches moody neon-blue and acidic-yellow lighting that emphasizes the faint hexagonal quilting pattern across the chest and shoulders. Chrome-routing channels gleam along the inner forearms and spine. Model positioned against a rain-slicked industrial wall, possibly a megastructure support pillar in the GLMZ. Shallow depth of field focuses on the texture and seam details. Dark, gritty atmosphere with overhead sodium-vapor warehouse light. Shot from three-quarter angle. --ar 2:3 --v 6"
 }

@@ -42,5 +42,41 @@
     "shelf",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Nika Svensson-Kone",
+    "Nurlan Holmberg-Dembele",
+    "Parliament",
+    "Patient Zero",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "Shelf Life",
+    "The Hearthstone",
+    "The Pure Hand",
+    "The Shelf",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, purposeful shotgun with child-scaled proportions—shorter and narrower than standard arms without appearing toy-like. The silhouette reads as serious hardware miniaturized for smaller hands, with a stubby barrel and proportionally shorter fore-end. Unmistakably functional rather than decorative.",
+    "dimensions": "Overall length 89 cm, barrel 22 cm, length of pull 33 cm, receiver width 4.2 cm",
+    "weight_description": "Noticeably light in hand—approximately 2.0 kg—designed to reduce fatigue during extended grip and allow younger shooters to manage recoil without muscular strain. Balanced toward the receiver rather than front-heavy like full-size shotguns.",
+    "primary_material": "Investment-cast steel receiver with reinforced polymer furniture. Barrel is hammer-forged 4140 steel. Magazine tube is blued steel.",
+    "finish": "Satin black electroless nickel on barrel and receiver; matte charcoal polymer on stock, fore-end, and grip surfaces. Minimal gloss to reduce glint.",
+    "color_scheme": "Industrial gunmetal black accents with warm charcoal polymer—practical rather than flashy. No tactical colors or aggressive styling.",
+    "grip_texture": "Rubberized polymer grip with shallow grip angle suited to smaller hands. Fore-end has subtle radiused checkering for secure purchase without sharp edges. Trigger guard is oversized slightly to accommodate gloved hands.",
+    "distinctive_features": [
+      "Noticeably shorter pump stroke marked by a subtle witness line on the fore-end",
+      "Reduced-force trigger with lightened spring—audibly crisper than full-size Hearthstone models",
+      "Tubular magazine with four-round capacity visible as a shortened bulge under the barrel",
+      "Safety lever positioned for smaller hand reach without awkward repositioning",
+      "Low-profile receiver without tactical rail—cleanly utilitarian",
+      "Wear-resistant polymer with slight texture to reduce slip during presentation",
+      "Subtle Hearthstone serif logo etched into the receiver—understated branding"
+    ],
+    "manufacturer_markings": "HEARTHSTONE FIREARMS stamped in serif typeface on left receiver flat. MODEL: YOUTH-20 'FIRST STEP' engraved below serial plate. Safety manual reference code printed on the right stock. No aggressive branding or corporate chrome.",
+    "condition_typical": "Factory-fresh or well-maintained. Hearthstone includes a trigger lock and storage guidance; typical examples show minimal wear. When fielded, light operational wear on pump handle and receiver edges rather than battle-scarring—this weapon is for defense, not heavy combat."
+  },
+  "image_prompt": "Product photograph of a scaled-down 20-gauge shotgun resting on weathered dark steel surface, angled to show the shortened profile and reduced dimensions. Held at three-quarter angle in a gloved hand (adolescent-sized) against a matte charcoal background. Dramatic side-lighting highlights the satin-black receiver and warm charcoal polymer stock, with subtle reflections on the blued barrel. Safety lever and lightened trigger mechanism subtly visible. Hearthstone logo visible on receiver. Cyberpunk aesthetic conveyed through industrial materials and utilitarian design without ornamentation—emphasis on honest engineering for scaled users. Clean, serious product photography mood. --ar 3:2 --v 6"
 }

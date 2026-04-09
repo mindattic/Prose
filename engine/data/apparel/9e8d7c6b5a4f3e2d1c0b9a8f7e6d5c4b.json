@@ -44,5 +44,25 @@
     "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
     "Lazarus LX-2 'Lab Rat'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modern athletic jacket with deliberate minimalist styling. The slim-cut silhouette reads as contemporary sportswear with subtle fashion-forward details. Thin horizontal electric blue stripes create visual rhythm against matte black, catching light differently at various angles. On-body, it creates a streamlined vertical impression without bulk.",
+    "fit": "Slim but not restrictive. Tailored through the shoulders and chest, with enough room at the torso and sleeves for unrestricted movement. Cut for someone who moves—runners, couriers, people who transition between exertion and social spaces.",
+    "primary_material": "Lightweight ripstop nylon with durable water repellent (DWR) finish. Shell has an imperceptible thin-film solar weave integrated into shoulder and upper-back panels.",
+    "texture": "Smooth, slightly crisp ripstop weave with a subtle grid pattern visible under close inspection. DWR coating gives it a light sheen without shine. Non-reflective unless wet. Solar panels are completely tactile-transparent—indistinguishable by touch.",
+    "color_scheme": "Deep matte black base with thin horizontal stripes in electric blue (approximately 3mm width, evenly spaced). Stripes run the full length of the front, back, and sleeves. Minimal contrast creates a 'barely there' aesthetic from distance.",
+    "closures": "Full-length center zip in gunmetal gray with rubberized grip. Small zippered chest pocket doubles as a stuff sack—self-sealing with internal friction fit.",
+    "distinctive_features": [
+      "Integrated thin-film solar weave on shoulders and upper back—no visible seams or texture changes",
+      "Chest pocket designed to double as a compression stuff sack; entire jacket packs into it when inverted",
+      "Minimal branding: small woven 'Noru' label on left chest, metallic",
+      "Seams are flat-stitched and taped for weather resistance",
+      "Subtle tonal Noru logo jacquard on upper back yoke",
+      "Reflective piping only visible on inner collar—safety without aesthetic compromise"
+    ],
+    "tier_indicator": "Tier 3 functional luxury. Affordable performance engineering with design intention. Accessible to working professionals, couriers, athletes, and mid-city residents who value both utility and visual cohesion.",
+    "cultural_context": "Street-athletic hybrid. Worn by people who move through the city intentionally—messengers, personal trainers, shift workers with style, corpo junior staff on their off hours. Signals: competent, mobile, design-conscious but not status-driven. Solar weave positions wearer as tech-aware without being corpo-ostentatious.",
+    "condition_typical": "Breaks in beautifully. New examples show crisp stripes and uniform sheen. Well-worn pieces develop creasing at elbows and shoulders, slight pilling at stress points. DWR finish degrades gracefully—water still beads but less dramatically after 2-3 years. Scuffs from bag straps and urban contact are expected wear."
+  },
+  "image_prompt": "Fashion photography of a Noru Signal Windbreaker on a lean cyberpunk model mid-stride through a rain-slicked mid-city street, neon blue reflections from wet pavement echoing the jacket's stripe work. Model wearing it unzipped over a charcoal compression base layer, arms in motion. Moody sodium-vapor street lighting casting amber-yellow against the black fabric, electric blue stripes glowing subtly. Rain droplets bead on the DWR finish, catching ambient light. Urban backdrop: brutalist concrete, holographic ad flicker in soft focus, mid-distance neon signage. Close detail shot inset: chest pocket with solar weave barely visible under magnification, metallic Noru branding catching light. Dark, cinematic atmosphere. Product photography fashion editorial style. --ar 2:3 --v 6"
 }

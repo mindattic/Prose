@@ -58,5 +58,26 @@
     "Tessera Industries Optical Disruptor OD-4 'Strobe'",
     "The Shelf",
     "VitaCore LinguaSync Real-Time Translation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately chaotic, high-impact rave silhouette combining industrial salvage with bioluminescent accents. Asymmetric and layered, projecting defiant DIY energy—part survival gear, part performance art. The outfit commands attention through asymmetry, exposed construction, and embedded light technology.",
+    "fit": "Deliberately oversized and unconventional. The crop top is intentionally loose and misaligned across the chest; cargo trousers are wide-leg with strategic cuts and relacing for augmentation accommodation. The half-cloak drapes loosely from one shoulder. Overall aesthetic is 'worn by choice, not by accident.'",
+    "primary_material": "Reclaimed industrial mesh, acid-bleached synth-cotton, matte black nylon, synth-rubber, salvaged translucent poly, mismatched treated leather scraps, embedded bioluminescent thread",
+    "texture": "Mixed and deliberately jarring—smooth mesh contrasts with frayed knit, cracked iridescent boot coating, exposed seam tape, wire-clasped utility pouches, elastic cord relacing. Weathered, broken-in, intentionally imperfect.",
+    "color_scheme": "Charcoal mesh and matte black as base; silver-grey synth-knit accents; bioluminescent cyan and acid-green thread (dormant gray in daylight); cracked iridescent boot highlights; acid-rain-stained translucent poly cloak; mismatched leather belt in browns and blacks",
+    "closures": "Safety pins (exposed, functional), friction-bonded seam tape, elastic cord relacing (outer leg), wire-clasped utility pouches, salvaged pipe-clamp (half-cloak shoulder fastening), friction-fit throughout",
+    "distinctive_features": [
+      "Hand-sewn bioluminescent circuit-pattern thread across chest and left shoulder (dim daylight, glows UV-reactive cyan/acid-green)",
+      "Asymmetric sleeveless crop with overlapping mesh and knit panels",
+      "One cargo pant leg cut open at outer seam, relaced with elastic for augmentation compatibility",
+      "Low-slung patchwork belt with mismatched leather scraps and wire-clasped utility pouches",
+      "Cracked iridescent coating on platform boots that catches strobe light",
+      "Frayed translucent poly half-cloak fastened with salvaged pipe-clamp",
+      "Exposed safety pins and seam tape throughout (construction visible as design element)"
+    ],
+    "tier_indicator": "Tier 5 salvage construction aesthetics worn by Tier 1-2 wealth—deliberately mixing sub-grade DIY with intentional luxury attitude. Signals resources AND anti-establishment values.",
+    "cultural_context": "Underground rave subculture. Wearer is a performance-oriented, augmentation-open survivor who rejects corpo polish. Signals technical familiarity (augmentation relacing), UV-era party immersion, and street-level resourcefulness applied with artistic intent.",
+    "condition_typical": "Intentionally weathered and patched. Acid stains, fraying, cracking, and visible wear are features, not flaws. Bioluminescent thread may flicker or dim inconsistently. Nothing is pristine—everything is lived-in and combat-ready."
+  },
+  "image_prompt": "Cyberpunk underground rave fashion shoot: model wearing acid-bleached asymmetric mesh crop and wide-leg cargo trousers with one leg cut and relaced, knee-high iridescent platform boots, patchwork leather belt, translucent poly half-cloak draped from one shoulder. Bioluminescent cyan and acid-green circuit patterns embedded in the chest. Dark urban warehouse backdrop with exposed brick and industrial piping. Heavy strobe and UV lighting, moody purples and dark blues, with bright neon accents reflecting off the iridescent boots and mesh panels. Close detail on the safety pins, exposed seam tape, and glowing thread. Model has visible chrome augmentation on one limb, dystopian makeup. Shot on dark mood, high contrast. --ar 2:3 --v 6"
 }

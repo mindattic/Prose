@@ -35,5 +35,25 @@
   "related_entities": [
     "Tessera Nexus Town Car",
     "The Underlayer Collective"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting full-body underlayer that clings to the body like a second skin. The surface has a subtle iridescent sheen that shifts between silver and deep blue depending on angle and lighting. Appears almost liquid in its seamlessness, with no visible seams or paneling breaks.",
+    "fit": "Compression-tight throughout — second-skin fit with strategic stretch zones at joints and mobility points. Designed to layer invisibly under armor, workwear, or corporate attire without adding volume.",
+    "primary_material": "Smart-fabric composite: thermoregulating polymer blend with embedded micro-channel network. Feels like treated neoprene but breathes like technical mesh.",
+    "texture": "Smooth, almost frictionless surface with a subtle scaled or quilted micro-pattern visible under close inspection — the underlying fluid-pathway matrix showing through the translucent top layer. Slightly cool to the touch.",
+    "color_scheme": "Gunmetal gray base with iridescent blue-to-silver gradient that intensifies along the spine and major artery routes, suggesting heat distribution pathways. Subtle branded accent stripe in Cascade Biotech cyan down the left side.",
+    "closures": "None visible — the garment pulls on like a swimsuit. Likely uses friction-fit material memory at wrists and ankles to stay secure.",
+    "distinctive_features": [
+      "Faintly visible luminescent threading marking internal heat-redistribution channels",
+      "Gradient intensity corresponding to thermoregulation zones",
+      "Seamless construction with articulated joint zones at shoulders, elbows, knees",
+      "Cascade Biotech logo embossed (not sewn) on left chest in reflective material",
+      "Micro-venting at armpits and groin designed to work under sealed armor without pooling sweat",
+      "Serial tracking number on inner neckline (invisible unless garment is removed)"
+    ],
+    "tier_indicator": "Tier 2-3 professional-grade. Expensive enough to signal serious work (corpo field ops, emergency services, industrial), but common enough in working-class circles that it's not a status symbol — it's practical infrastructure.",
+    "cultural_context": "The uniform of people who work outside in the brutal GLMZ climate: maintenance engineers, atmospheric explorers, hazmat responders, corporate security in arctic zones. Wearing one says 'I work hard in hostile conditions and can afford the right tools.'",
+    "condition_typical": "Pristine to well-maintained. The fabric resists staining and wear by design. Even heavily used examples look nearly new, though repeated compression can wear the iridescent sheen flat in high-stress zones (armpits, inner thighs, neck)."
+  },
+  "image_prompt": "Sleek androgenous cyberpunk model wearing a gunmetal-gray full-body compression base layer with iridescent blue-silver gradient down the spine and limbs. The garment clings like a second skin, barely visible seams, with faint luminescent channel-lines visible along major heat-redistribution pathways. Set in a brutalist industrial warehouse with harsh blue-white overhead lighting and frost on the metal beams. Dark moody aesthetic, slight mist in the air suggesting extreme cold environment. Cascade Biotech branding visible on left chest. Shot from torso up, three-quarter angle. Cinematic cyberpunk aesthetic. --ar 2:3 --v 6"
 }

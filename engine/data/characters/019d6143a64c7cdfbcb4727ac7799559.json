@@ -323,5 +323,12 @@
     "posture_movement": "Economical and controlled — no wasted motion. Stands with weight slightly forward, shoulders relaxed but ready. Eyes track movement constantly. When in motion, each gesture is deliberate and calibrated; the move-by-wire system makes her movements appear slightly too smooth, slightly too perfect, subtly inhuman.",
     "clothing_style": "Tier 3-4 utilitarian — dark, durable fabrics that don't show wear or blood. Long sleeves standard to cover augmentation scarring. Worn synth-leather jacket with hidden pockets for maintenance tools and ammunition. Cargo pants with reinforced thigh pockets. Steel-toed boots, scuffed and practical. No ornamentation or chrome jewelry — chrome is functional, not decorative. Between contracts, favors baggy hoodies and neutral colors to become forgettable."
   },
-  "image_prompt": "Cyberpunk character portrait of a 36-year-old woman of mixed Scandinavian and West African descent, slight and lean build, dark brown hair pulled back tightly, gray-green piercing eyes. Visible chrome surgical scarring along temples and jawline, subdued metallic sheen visible under skin at wrists indicating neural augmentation. Wearing dark utilitarian synth-leather jacket and cargo pants, steel-toed boots. Standing in dim neon-lit warehouse setting, cool blue and purple lighting casting sharp shadows. Expression neutral and focused, movement posed with unnatural precision. Gritty, photorealistic cyberpunk aesthetic, high detail on augmentation scarring and neural chrome, moody atmospheric lighting --ar 2:3 --v 6"
+  "image_prompt": "Cyberpunk character portrait of a 36-year-old woman of mixed Scandinavian and West African descent, slight and lean build, dark brown hair pulled back tightly, gray-green piercing eyes. Visible chrome surgical scarring along temples and jawline, subdued metallic sheen visible under skin at wrists indicating neural augmentation. Wearing dark utilitarian synth-leather jacket and cargo pants, steel-toed boots. Standing in dim neon-lit warehouse setting, cool blue and purple lighting casting sharp shadows. Expression neutral and focused, movement posed with unnatural precision. Gritty, photorealistic cyberpunk aesthetic, high detail on augmentation scarring and neural chrome, moody atmospheric lighting --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Southeast Asian": 23.9,
+    "Eastern European": 22.7,
+    "Sub-Saharan African": 21.7,
+    "Northern European": 18.5,
+    "South Asian": 13.2
+  }
 }

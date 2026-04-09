@@ -50,5 +50,25 @@
     "Praevex",
     "The Corridor",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A striking colorblock pullover that reads as deliberately bold without trying too hard. The rust-orange torso contrasts sharply with near-black sleeves, creating a visual weight that draws the eye to the chest and shoulders. The oversized hood dominates the silhouette when pulled up, framing the face with an almost protective quality. Worn relaxed and low-slung on the body, it has the confident asymmetry of street-wear that knows what it is.",
+    "fit": "Relaxed and intentionally oversized through the body and shoulders, with sleeves that taper slightly at the wrist but remain slouchy. The hood is generously cut and drops well past the shoulders when worn up. The overall cut prioritizes movement and layering compatibility over fitted tailoring.",
+    "primary_material": "Mid-weight fleece-backed synth-cotton blend — durable and temperature-regulating without the brittleness of pure synthetic fabrics",
+    "texture": "Soft brushed interior with a subtle nap; exterior has a slight texture created by the cotton-synthetic weave, giving it visual depth and preventing it from looking flat or cheap",
+    "color_scheme": "Deep rust-orange (almost burnt sienna) across the body; near-black (charcoal-weighted) on both sleeves. A clean horizontal seam at chest height marks the color transition. No additional trim or contrast stitching — the colorblock is the design statement.",
+    "closures": "Pullover style; no zippers or buttons. The kangaroo pocket is simple and unadorned, with a relaxed opening",
+    "distinctive_features": [
+      "Bold colorblock construction — intentional, not accidental",
+      "Oversized unlined hood that can fully obscure the face when pulled down",
+      "Deep kangaroo pocket suitable for large objects (tools, devices, hands)",
+      "Clean horizontal seam at chest marking the two-panel construction",
+      "Small embossed lightning bolt on the interior neck tag (Ferro's signature detail, difficult to counterfeit cleanly)",
+      "Honest construction visible in seam work — no hidden overlocking or glossy finishing"
+    ],
+    "tier_indicator": "Tier 3-4 functional aesthetic with street credibility. Not luxury, not salvage — deliberate and made-to-last",
+    "cultural_context": "Signals independent street culture, Chicago-corridor affiliation, and a wearer who values honest design over corporate branding. Worn by technicians, courier riders, street artists, and working-class augment-modders who recognize quality construction and aren't trying to perform wealth they don't have",
+    "condition_typical": "Broken-in rather than pristine. After a few months of wear, the exterior develops a subtle patina from handling, the pocket edges show character, and the fabric softens further. Rarely looks new, but rarely looks neglected — it's made to be used"
+  },
+  "image_prompt": "A Ferro Colorblock Hoodie on a lean, augmented model shot in three-quarter profile against a rain-slicked Chicago warehouse wall at dusk. The rust-orange body and near-black sleeves are dramatically lit by amber overhead lights reflecting off wet concrete. The model's hood is pulled up, shadowing their face but revealing a faint cybernetic jaw implant catch light. The kangaroo pocket is visible and deep. Ambient neon from a distant storefront bleeds blue into the background. Urban, moody, authentic, no artifice. --ar 2:3 --v 6"
 }

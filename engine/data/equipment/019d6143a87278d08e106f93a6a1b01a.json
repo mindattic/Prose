@@ -44,5 +44,26 @@
     "survival",
     "tier 1"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "physical_description": {
+    "visual_profile": "Asymmetrical, crude torso protection assembled from salvaged materials. Multiple disparate layers visible — jagged metal plates wired or taped over ceramic tile sections, all held together with industrial duct tape in grey and silver. The construction looks deliberately rough, almost punk-aesthetic in its refusal of finished appearance.",
+    "dimensions": "Torso-covering vest form factor, approximately 60cm wide × 50cm tall, extending from shoulders to waist",
+    "weight_description": "Heavy depending on build — ceramic-tile variants weigh 4-8kg and require shoulder support; lighter duct-tape versions around 2-3kg but less protective",
+    "primary_material": "Composite — ceramic tile sections, cut road sign metal (steel/aluminum), salvaged vehicle floor mats (rubber, plastic composites), reinforced with industrial duct tape and wire binding",
+    "finish": "Raw, unfinished. Weathered metal with rust patina, chipped white ceramic tile edges, torn grey duct tape with visible seams, frayed rubber mat edges. No polish or refinement.",
+    "color_scheme": "Monochromatic greys and silvers — rust-stained metal, grey duct tape, off-white ceramic tile, charcoal rubber. Occasional faded road sign paint (yellows, reds) showing through gaps",
+    "interface_elements": "None — completely passive. Leather or synthetic straps for securing; visible wire loops or D-rings for attachment points. No electronics, displays, or interactive elements.",
+    "distinctive_features": [
+      "Visible layering with gaps showing interior construction",
+      "Multiple tape seams creating geometric segmentation",
+      "Protruding wire frame visible at edges holding plates together",
+      "Uneven surface with tiles and metal at different depths",
+      "Dried mud or street grime in seams",
+      "Worn rope or paracord binding at shoulders",
+      "Faded reflective road-sign segments catching light"
+    ],
+    "manufacturer_markings": "None — street custom means no branding. Occasionally street artist tags or names spray-painted on duct tape, personal modifications only",
+    "condition_typical": "Visibly battle-worn. Duct tape peeling at edges, visible impact dents in metal and tile, fresh tears alongside old patches. Looks perpetually one bad fight away from catastrophic failure"
+  },
+  "image_prompt": "Street-worn Trash Armor vest lying on grimy workbench under neon workshop lights, showing layered ceramic tile, jagged steel road sign plates, and peeling grey duct tape construction. Gritty detail shot highlighting raw seams, wire bindings, and impact scars. Cyberpunk dystopian gear aesthetic with dramatic shadow play, grime-filled cracks, and worn industrial materials. Hovering welder's torch nearby. Tier-5 underground fabrication environment. --ar 3:2 --v 6"
 }

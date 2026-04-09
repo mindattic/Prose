@@ -45,5 +45,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Lazarus NI-1 'Earwig'",
+    "Nika Svensson-Kone",
+    "TESSERA CR-12 'Whisper'",
+    "TESSERA PG-2 'Signature'",
+    "TESSERA WL-6 'Stacker'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, tapered assault rifle with an unusually bulbous forward section that gradually narrows toward the muzzle. The suppression shroud dominates the weapon's visual presence, creating a distinctive silhouette that suggests advanced thermal management. The overall aesthetic is deliberately understated—form follows function, with no aggressive angles or tactical flash. It reads as clinical, almost surgical.",
+    "dimensions": "Total length: 94 cm | Barrel length (integral): 38 cm | Suppression shroud outer diameter: 6.5 cm (tapering) | Magazine well depth: 8 cm",
+    "weight_description": "Balanced and manageable at 4.2 kg—noticeably lighter than conventional assault rifles due to the caseless ammunition system and composite construction. Feels front-weighted due to the suppression shroud's mass, but the weight is distributed smoothly along the barrel, creating a natural pivot point near the operator's support hand.",
+    "primary_material": "Carbon-fiber composite frame with aerospace-grade aluminum suppression shroud. Bolt carrier and internal mechanisms are hardened steel. Caseless ammunition feed system uses polymer-composite magazines.",
+    "finish": "Matte graphite with subtle iridescent cooling-line patterns visible under direct light—evidence of the thermal-circulating system beneath the surface. The suppression shroud has a slightly honeycomb texture where cooling channels indent the exterior. Intentionally non-reflective to defeat optics scanning.",
+    "color_scheme": "Gunmetal gray primary | Deep charcoal accents | Faint cyan LED indicators visible through translucent polymer ports along the suppression shroud",
+    "grip_texture": "Textured polymer grip with micro-serrations for secure purchase with gloved hands. The handguard features a woven carbon-fiber overlay that provides tactile feedback without creating friction noise. Upper receiver has subtle grip-zone indentations.",
+    "distinctive_features": [
+      "Integral suppression shroud with visible radial cooling fins",
+      "Three small cyan LED indicator ports (one per section of shroud) showing real-time acoustic and thermal efficiency",
+      "Recessed muzzle end—no visible brake or flash hider, just a slightly beveled opening",
+      "Modular BCI socket integrated into the upper receiver (rear-mounted, unobtrusive)",
+      "Caseless ammunition port with polymer dust cover",
+      "Thermal circulation access ports along suppression shroud (sealed with flush-fit plugs)",
+      "Ambidextrous safety selector with subtle mechanical click",
+      "Low-profile integrated rail system (4x attachment points) rather than traditional Picatinny—intentionally minimal to reduce acoustic reflection"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (stylized 'A' star) laser-etched on the lower receiver, barely visible in low light. 'WHISPER SR-6' designation stamped on the suppression shroud in minimalist sans-serif font. Serial number (20-character alphanumeric) on the inside of the magazine well—deliberately hidden from casual observation. BCG Blackwood Commercial Group ownership plate affixed to the stock with flush screws.",
+    "condition_typical": "Immaculate. These weapons are issued to deniable operations teams with strict maintenance protocols. Any unit in the field shows zero cosmetic wear—the matte finish and dark coloration hide even microscopic blemishes. Internal mechanisms are pristine due to advanced polymer components and sealed bearing systems. After firing, residue containment means the weapon remains externally clean."
+  },
+  "image_prompt": "Professional product photograph of the Arcturus Specter SR-6 'Whisper' assault rifle, laid horizontally on a matte black tactical mat. Dramatic side-lighting from the left reveals the graphite finish and subtle cooling-fin textures of the integral suppression shroud. Close-up of the muzzle end showing the recessed opening and honeycomb micro-texture. The cyan LED indicator ports glow faintly. A gloved tactical operator's hand (matte black tactical glove) cradles the rifle at the magazine well, fingers avoiding the trigger. Cool color grading with slight cyan and silver highlights on the aluminum shroud. Hyperrealistic materials—carbon-fiber weave visible on grip, brushed aluminum finish, metallic depth. Shot from a 45-degree angle to showcase the weapon's tapered profile and clean lines. Shallow depth of field emphasizes the forward section. Cyberpunk-noir aesthetic with industrial precision. --ar 3:2 --v 6"
 }

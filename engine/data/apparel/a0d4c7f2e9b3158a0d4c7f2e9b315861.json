@@ -47,5 +47,26 @@
     "MERIDIAN",
     "Nodar Kuznetsov-Adu",
     "Synaptrel"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Classic American varsity silhouette with a contemporary cyberpunk edge—structured, athletic, instantly recognizable. The boiled wool body creates a substantial presence while leather sleeves add sharp contrast. Proportions are slightly cropped at the waist, emphasizing the torso. The ribbed knit trim at collar, cuffs, and waist creates clean lines and a tailored impression despite the relaxed athletic heritage.",
+    "fit": "Relaxed through the body with a subtle taper at the waist. Sleeves are fitted but not restrictive, allowing augmented limbs full range of motion. Length hits just below the hip. Designed for layering over light armor undergarments or data-mesh without bulk.",
+    "primary_material": "Boiled wool body (genuine or wool-analog depending on tier) with genuine or synthetic leather sleeves. The contrast between materials is intentional—wool provides insulation and water resistance, leather adds durability and aesthetic weight.",
+    "texture": "Boiled wool has a dense, almost felted quality with subtle horizontal grain. Leather sleeves range from buttery soft (Tier 1+) to slightly plastic-feeling (budget synthetics). Ribbed knit collar and cuffs have a tight, uniform texture with slight elasticity.",
+    "color_scheme": "Traditional varsity palette: typically solid wool body in black, charcoal, navy, or deep burgundy. Sleeves in contrasting black, brown, or oxblood leather. Ribbed trim matches sleeves or body. Large chenille team patch on chest in team colors—bright, saturated, impossible to ignore.",
+    "closures": "Snap-button front closure down the center—heavy-duty chrome or gunmetal snaps that feel substantial. Functional and iconic, echoing vintage design while being practical for quick augment access if needed.",
+    "distinctive_features": [
+      "Large chenille team or district patch on left chest—textured, dimensional, clearly labeled with team identity",
+      "Optional back patch with wearer's name and number (custom order feature)",
+      "Ribbed knit collar, cuffs, and waistband in high-contrast color",
+      "Leather sleeves with subtle stitching along seams",
+      "Stratos brand tag visible at interior collar",
+      "Reinforced snap button placements to handle wear",
+      "Clean, minimal design with no excessive cybernetic modifications—retro-styled but modern in execution"
+    ],
+    "tier_indicator": "Tier 1 aspirational (Φ45 grey-market wool-analog with synthetic sleeves) to Tier 3 standard (Φ120+ genuine boiled wool and leather) to Tier 4 custom bespoke. The jacket democratizes aspiration—entry-level versions accessible to working-class fans, premium versions attainable through savings or team loyalty programs.",
+    "cultural_context": "Signals local pride and community belonging. Wearer is invested in GLMZ sports culture, team loyalty, or district identity. Not military, not corporate in the strict sense, but celebratory. A Tier 3 wearer shows they've earned enough disposable income for genuine goods. A Tier 1 wearer shows aspirational engagement. A Tier 4 executive wearing this signals humility and team connection rather than detached corpo status.",
+    "condition_typical": "Pristine on first wear, then quickly broken-in with character. Genuine wool/leather versions age beautifully—scuffs on sleeves from augment friction, slight wear at cuff edges, maybe a patch repair. Budget versions show creasing and synthetic sheen loss faster. Most wearers treat their varsity with care—it's an identity marker."
+  },
+  "image_prompt": "Stratos Meridian Varsity jacket displayed on a dark mannequin torso, shot against a moody neon-lit backdrop of a GLMZ urban storefront. The jacket's boiled wool body is deep charcoal, sleeves are oxblood leather with subtle stitching visible. A vibrant chenille team patch glows under cool cyan and magenta street lighting. Snap buttons catch highlights. Ribbed knit collar and cuffs are crisp. Shallow depth of field with bokeh city lights blurred behind. Product photography style—clean, sharp focus on the garment's texture and construction, evoking both vintage varsity nostalgia and 2226 streetwear authenticity. --ar 2:3 --v 6"
 }

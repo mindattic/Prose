@@ -36,5 +36,24 @@
     "sandal",
     "footwear",
     "cooling"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Minimalist open-footbed sandal with a distinctly utilitarian aesthetic—clean lines, exposed sole architecture, and heritage-inspired webbing straps in warm earth tones. The wide toe-box creates a relaxed, accommodating silhouette that reads as both functional and intentionally designed.",
+    "fit": "Relaxed and deliberately spacious through the forefoot; adjustable nylon-webbing straps allow customization for various foot augmentations. The design consciously avoids pressure points around ankle-mounted chrome or subcutaneous modifications.",
+    "primary_material": "Recycled rubber-composite sole with integrated cooling gel layer; adjustable nylon-webbing straps in deep brown and terracotta colorways.",
+    "texture": "Smooth, slightly grippy composite sole with visible recycled aggregate pattern; soft nylon webbing with subtle ribbed texture and reinforced stitching at stress points.",
+    "color_scheme": "Deep brown and terracotta webbing over dark gray-black recycled composite sole; natural, matte finish with minimal branding.",
+    "closures": "Friction-fit webbing straps with adjustable positioning; no buckles or fasteners—designed for quick on-off functionality.",
+    "distinctive_features": [
+      "Cooling gel insole layer embedded in sole—visible as slightly translucent thermochromic strip",
+      "Wide toe-box with asymmetrical strap placement to clear geneware foot modifications",
+      "East African/Andean strap-tradition aesthetic combined with cyberpunk pragmatism",
+      "Recycled material composition with visible aggregate texture",
+      "Minimal Solberg-Maru branding—subtle geometric logo debossed into sole"
+    ],
+    "tier_indicator": "Tier 3 functional—affordable, practical design reflecting working-class values; accessible pricing around 85-120 Φ",
+    "cultural_context": "Street-oriented, augmentation-friendly wear; appeals to field workers, delivery operatives, and modified-body communities who need reliable footwear that accommodates chrome without compromise. Signals practicality over status.",
+    "condition_typical": "Breaks in quickly with comfortable wear; shows light dust and scuff marks on sole; webbing may develop slight fraying at edges after extended use; thermal properties remain consistent across lifespan"
+  },
+  "image_prompt": "Close-up fashion photograph of Solberg-Maru CoolDrift Vent Sandals on a cyberpunk model's feet—one foot planted on heat-warped urban pavement, one relaxed. Model has subtle visible augmentation: chrome ankle joint or bio-luminescent foot subdermal. Warm terracotta and brown webbing contrasts against dark recycled composite sole. Moody late-afternoon GLMZ lighting—urban decay backdrop with corrugated metal and neon signage slightly out of focus. Shallow depth of field emphasizing sole texture and cooling gel layer detail. Gritty, documentary street-fashion aesthetic. --ar 2:3 --v 6"
 }

@@ -54,5 +54,26 @@
     "TESSERA PG-2 'Signature'",
     "The Quiet Room",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sharp, deliberate formal silhouette that treats augmentation as design statement rather than concealment. The left sleeve frames chrome prosthetics as architectural feature. Overall impression: a specialist who has earned their modifications and wears them to the boardroom without apology.",
+    "fit": "Slim double-breasted jacket with structured tailoring. Trousers slim through thigh with moderate break. Compression-adjacent but not restrictive — designed for someone with integrated hardware.",
+    "primary_material": "Nullweave signature matte-black light-absorbing structural fabric (jacket and trousers). Deep charcoal poplin (shirt). Brushed steel accent (BCI port frame).",
+    "texture": "Matte, light-absorbing surfaces throughout — fabric reads almost as void in standard lighting. Sharp contrast provided by mirror-polished chrome toe-cap and brushed steel BCI port. Micro-reflective thread on tie catches light subtly.",
+    "color_scheme": "Dominant deep matte black with charcoal undertones. Single accent: mirror-polished chrome on boot toe-caps and framing augmentation channels. Micro-reflective diagonal thread on tie.",
+    "closures": "Double-breasted jacket with implied button/magnetic closure. Standard trousers with implied fastening. Open-channel system on left sleeve and right leg allows augmentation integration without traditional fastening.",
+    "distinctive_features": [
+      "Full open-channel system on left sleeve (shoulder to wrist) framing augmentation display",
+      "Matte black piping borders aug-channel, making prosthetic integration intentional",
+      "Single aug-channel seam on outer right leg",
+      "Exposed, uncovered BCI port at temple with brushed steel framing",
+      "Mirror-polished chrome toe-caps on boots as sole reflective element",
+      "Micro-reflective diagonal thread on tie (catches light when moving)",
+      "Charcoal shirt instead of traditional white — signal of intentional departure from corpo standard"
+    ],
+    "tier_indicator": "Tier 4 — working-class specialist with earned augmentations. Affordable bespoke customization (2-week lead time) signals stability and technical skill, not raw wealth.",
+    "cultural_context": "The wearer is a specialist (engineer, surgeon, combat tech, interface specialist) who has integrated chrome through work rather than choice. The suit says: I've earned this hardware and I'm not hiding it. Appeals to corpo-adjacent professionals, security contractors, medical technicians, and augmentation designers.",
+    "condition_typical": "Pristine to broken-in. The fabric is chosen to hide wear — scuffs blend into the matte-black void. Augmentation-display channels remain crisp. BCI port brushed steel develops a light patina over time."
+  },
+  "image_prompt": "Fashion photography of a Tier 4 cyberpunk formal suit on a angular, augmented model: left arm is a sleek chrome prosthetic with articulated fingers, visible through the open-channel sleeve framing. Model wears the suit standing in a corporate atrium lit by cold fluorescent light that makes the matte-black Nullweave fabric read as pure shadow. The chrome toe-caps of boots catch sharp highlights. Unblemished BCI port visible at right temple, brushed steel catching subtle light. Right side of frame shows standard black sleeve. Cinematic, high-end corporate aesthetic. Moody blue-white lighting. Dark marble or steel background. --ar 2:3 --v 6"
 }

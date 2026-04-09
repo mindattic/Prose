@@ -60,5 +60,42 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Iowan Behemoth — 'Thunderhead'",
+    "Mika Sorel",
+    "Nodar Kuznetsov-Adu",
+    "Somadina Karlsen-Sow",
+    "Street Custom 'Glass Garden' Caltrops",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA PG-2 'Signature'",
+    "Zheng-Dao Marrow-Pulse Implant",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact quadrotor platform with an aggressive, angular chassis. The EPD-3 reads as a predatory insect crossed with military hardware—four swept-back carbon-fiber rotors mounted on articulated arms, centered on a reinforced polymer drone body bristling with exposed capacitor banks and ionization hardware. The silhouette is deliberately compact to suggest lethality compressed into minimal volume.",
+    "dimensions": "480mm (width/length across rotor diameter) × 480mm (rotor span) × 220mm (height from base to capacitor stack apex). Effective visual footprint suggests a large dinner plate when hovering.",
+    "weight_description": "Substantial but not unwieldy—3.8 kg is heavy enough to convey engineering density without appearing cumbersome. Feels engineered rather than assembled; purposeful mass distributed through reinforced frame points.",
+    "primary_material": "6061-T6 aluminum frame with carbon-fiber rotor arms. Chassis body is reinforced polycarbonate composite with integrated graphite-epoxy panels to house capacitor banks. Heat-dissipation ribs are visible along the fuselage.",
+    "finish": "Matte gunmetal gray with brushed aluminum accents. Capacitor housing shows anodized dark blue with metallic bronze highlights. Weathering typical of field deployment—micro-abrasions along rotor guards, scuff marks on lower chassis from repeated landings, slight discoloration around UV laser emission lens from thermal cycling.",
+    "color_scheme": "Dominant matte gray (RAL 7015), accent anodized blue on capacitor modules, bronze/brass coloring on conductive contact points and laser aperture surround. LED status indicators glow pale cyan (standby) or violent amber (charge state).",
+    "grip_texture": "N/A (aerial platform). Contact points feature knurled titanium alloy for operator handling during setup/maintenance—deliberate friction texture suggesting precision engineering.",
+    "distinctive_features": [
+      "Exposed high-voltage capacitor banks arranged in visible stacked modules along central fuselage",
+      "Dual UV laser emission ports (front-mounted, recessed beneath polycarbonate dome) with visible lens flare during charge cycle",
+      "Four articulated rotor arms with swept-back geometry and active vibration-dampening joints",
+      "Conductive plasma-channel ionization grid visible as fine mesh beneath forward quarter of chassis",
+      "Status LED array (cyan/amber/red) mounted asymmetrically on starboard side, displaying charge state and operational mode",
+      "Heat-dissipation fins running the length of capacitor housing—visible thermal stress discoloration on veteran units",
+      "ZHENG-DAO corporate seal (Φ-encircled dragon motif) stamped on port rotor guard",
+      "Recessed mounting points for optional Faraday-scatter panels (visible as hardpoint sockets at cardinal positions)"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC corporate logo (brass-colored Φ with stylized dragon) embossed on port rotor arm guard. Serial number etched into anodized blue capacitor panel (format: ZD-EPD3-[6-digit alphanumeric]). Class designation sticker (TIER-3 LICENSED) mounted on undercarriage with warning glyphs in Mandarin and English.",
+    "condition_typical": "Well-maintained field platforms show micro-pitting on rotor leading edges from ion discharge residue, slight corona-scorch marks around laser aperture, and minor corrosion along conductive contact points. Battle-worn units display cracked polycarbonate panels (taped or replaced), accumulated carbon scoring from repeated discharges, and occasionally crude reinforcement bands added by operators. Pristine examples are rare outside corporate stockrooms and represent recent-manufacture Tier-2+ inventory."
+  },
+  "image_prompt": "Product photography of ZHENG-DAO BIOELECTRIC EPD-3 Thunderhead drone hovering 15cm above matte black reflective surface, shot from three-quarter angle. Dramatic blue-tinted side-lighting emphasizes capacitor housing and heat-dissipation fins. UV laser apertures glow soft cyan as if mid-charge cycle. Rotor blades partially blurred to suggest active hover. Weathered aluminum frame and brushed metal accents catch sharp highlights. Dark background with subtle grid pattern suggesting industrial setting. Cyberpunk aesthetic—neon-adjacent color temperature, precise engineering visible in every edge. Include shallow depth-of-field with rotor detail sharp, background soft. --ar 3:2 --v 6"
 }

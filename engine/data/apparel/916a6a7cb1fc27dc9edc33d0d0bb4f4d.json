@@ -37,5 +37,24 @@
     "GLMZ",
     "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
     "TESSERA TC-3 'Crucible'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek neck lanyard worn suspended from shoulders, terminating at chest level with an integrated badge holder. The lanyard creates a vertical accent line down the torso, positioning corporate identity at the heart. Reads as both functional utility and psychological collar.",
+    "fit": "Adjustable length, worn loosely around neck to allow natural movement. Badge holder sits approximately 4-6 inches below collarbone. Not form-fitting; the lanyard itself is thin and minimal, letting the corponation colors dominate the visual impression.",
+    "primary_material": "High-grade synthetic blend webbing with reinforced stitching. Material varies by corponation but maintains durability for daily handling—resistant to sweat, thermal fluctuation, and minor abrasion. Subtle sheen indicates technical treatment.",
+    "texture": "Smooth to slightly textured surface; the webbing has a tight weave that catches light subtly. Badge holder is hard composite plastic with precision-molded edges. RFID token adds discrete weight and a faint metallic finish.",
+    "color_scheme": "Corponation-specific: Crucible = copper and charcoal striped or blocked; Sentinel = cold steel blue with silver accents; Cascade = clean white with kelly green trim. Colors are unmistakable and intentionally bold for instant recognition.",
+    "closures": "Adjustable friction-fit clasp at back of neck or magnetic snap mechanism. Badge holder secured via tension clip or subtle velcro strips. No unnecessary ornamentation.",
+    "distinctive_features": [
+      "Embedded RFID token adds subtle weight and defines corponation affiliation",
+      "Badge holder displays corporate logo and employee tier designation",
+      "Access card slots visible but secured",
+      "Stitching is precise and reinforced—signals investment in durability",
+      "Corponation colors are saturated and unmissable from distance"
+    ],
+    "tier_indicator": "Tier 1-2 for employees who wear them; the lanyard itself indicates corporate employment. Wearing one outside work signals privilege, security clearance, and institutional identity.",
+    "cultural_context": "The wearer is bound to a corponation. Wearing it off-hours signals either fierce loyalty, inability to separate self from work, or performative corporate dedication. Not wearing it when employed reads as quiet rebellion or compartmentalization of identity.",
+    "condition_typical": "Pristine and maintained if wearer takes pride in corporate affiliation; worn soft at edges and faded if constantly used; deliberately removed and stored if wearer maintains boundary between work and life."
+  },
+  "image_prompt": "Fashion photograph of a Crucible Corporation loyalty lanyard displayed on a dark metallic mannequin against an industrial GLMZ skyline backdrop. The lanyard hangs centered on the mannequin's torso, copper and charcoal webbing catching moody neon light from above. Close-up detail of the badge holder showing corporate logo and employee tier. Dark warehouse setting with ambient blue and copper accent lighting. Secondary image shows lanyard worn by a model in corporate attire, emphasizing how it functions as both utility and psychological marker of belonging. Cinematic cyberpunk aesthetic, sharp focus on textile details and RFID token. --ar 2:3 --v 6"
 }

@@ -54,5 +54,42 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Alper Holmberg-Dembele",
+    "Aminata Vargas-Baffour",
+    "Felix Drum",
+    "GLMZ",
+    "Lazarus Pharmaceuticals",
+    "Pavlína Abubakar-Temarii",
+    "Ringo RR-1 'Rattlesnake'",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "TESSERA PA-5 'Attendant'",
+    "The Clock",
+    "The Pure Hand",
+    "Tympanic Membrane Galvanic Rupture Carbine",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, medical-grade injector pen with an almost clinical aesthetic—deliberately engineered to evoke pharmaceutical legitimacy. Its elongated cylindrical form tapers subtly toward the delivery end, where a barely-visible micro-aperture sits flush with the housing. At first glance, indistinguishable from a standard dermal applicator or luxury pen.",
+    "dimensions": "140mm length, 12mm diameter, delivery head projects 2-3mm from barrel terminus",
+    "weight_description": "Deceptively light—38g creates an almost negligible heft in the palm, lending it the feel of a premium writing instrument rather than a weapon. The weight is perfectly balanced along its length, designed to rest naturally in a closed fist or nestle invisibly in jacket pockets.",
+    "primary_material": "Aerospace-grade titanium-aluminum alloy chassis with a medical-grade polymer grip collar",
+    "finish": "Brushed satin finish across the barrel with a subtle gradient—clinical white-silver at the grip transitioning to matte gunmetal at the delivery end. No visible seams or panel lines.",
+    "color_scheme": "Sterile white-silver primary with matte charcoal micro-accents around the trigger mechanism and delivery aperture. Grip collar in soft dove gray.",
+    "grip_texture": "Textured medical-grade silicone with barely-perceptible dimpling—designed to prevent slip during 'social contact scenarios.' Feels almost organic against skin.",
+    "distinctive_features": [
+      "Nearly-invisible micro-needle array concealed within the delivery aperture—no protrusion, only a microscopic perforated opening",
+      "Flush, pressure-sensitive trigger mechanism requiring deliberate depression—disguised as a standard applicator button",
+      "Cartridge-lock collar at the barrel base: single-use indicator, changes color subtly from clear to opaque post-discharge",
+      "Minimalist laser-etched serial numbering on the underside of the grip (only visible under direct light inspection)",
+      "No manufacturer logos visible on the primary surface—all branding relocated to concealed documentation"
+    ],
+    "manufacturer_markings": "Lazarus Compound Operations identifier etched microscopically on the internal cartridge collar; visible only when disassembled. Marketing documentation, if recovered, bears only generic medical device certification marks.",
+    "condition_typical": "Pristine and sterile—maintained in protective polymer sleeves. Field units show minimal wear; the weapon's assassination-specific use means it spends minimal time in actual combat environments. Storage in climate-controlled cases is standard for black-market operators."
+  },
+  "image_prompt": "Product photograph of a medical injector pen, 14cm long, brushed satin titanium finish with clinical white-to-charcoal gradient, resting on black matte surface. Dramatic side-lighting emphasizes the subtle taper toward the delivery aperture. Textured gray silicone grip visible at barrel base. Shot against deep charcoal background with professional laboratory lighting. Ultra-clean pharmaceutical aesthetic. Detail focus on the flush trigger mechanism and microscopic delivery opening. Cyberpunk medical noir style—sterile, corporate, sinister in its mundanity. Shallow depth of field. --ar 3:2 --v 6"
 }

@@ -37,5 +37,25 @@
     "The Quiet Room",
     "Vantablack VS-3 'Skin Job'",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A conventional two-button formal suit that appears as pure visual absence rather than garment—a void in human shape that registers more as depth than clothing. The silhouette is classically tailored, but the fabric's extreme light absorption creates an uncanny effect: the wearer seems to be a walking shadow, a negative space in the room. Under bright lighting, faint fabric texture becomes visible; under low light, the figure becomes difficult to track visually.",
+    "fit": "Precisely tailored, conventional formal cut—structured shoulders, clean lines, slight taper at the waist. Two-button closure with notched lapels. The fit is neither loose nor restrictive; it prioritizes movement and professional bearing over aesthetic statement.",
+    "primary_material": "Proprietary Vantablack weave—a light-absorbing synthetic composite that absorbs ~94% of visible light across the spectrum. The weave is smooth to the touch but engineered for structural integrity rather than luxury feel.",
+    "texture": "Deceptively smooth surface with imperceptible micro-texture visible only under direct examination. The fabric has slight weight and controlled drape. Under magnification, the weave structure reveals itself; otherwise, it reads as a uniform, featureless plane that seems to recede from observation.",
+    "color_scheme": "Absent. The suit does not register as black—black implies reflection of some wavelengths. Instead, it reads as an optical void, depth without dimension. Lapels, button line, and seaming are invisible at distance; only the geometric outline of the suit remains visually trackable.",
+    "closures": "Two conventional buttons (material and finish invisible); likely reinforced with magnetic override for rapid fastening. No visible zippers, snaps, or friction-fit elements. All closures blend into the suit's visual absence.",
+    "distinctive_features": [
+      "Privacy-weave lining blocks biometric scanning at commercial sensor ranges",
+      "Absolute absence of visible branding or identifying marks—intentional design brief",
+      "Lapels and seaming remain geometrically present but optically disappear",
+      "Slight structural shimmer visible only in specific light angles, indicating fabric density rather than reflectivity",
+      "Pocket placement is conventional but sealed/disguised; no visible pocket flaps or edges",
+      "The suit's most distinctive feature is its non-distinctive nature—memorable only in its refusal to be remembered clearly"
+    ],
+    "tier_indicator": "Tier 4-5 institutional access only—not for sale through any commercial channel. Signals exclusive corporate/governmental liaison function rather than personal wealth.",
+    "cultural_context": "Worn only by Vantablack personnel attending diplomatic, legal, or inter-corporate formal functions where representation must remain opaque. Its presence in a room is recognized by intelligence community members as a signal: an unnamed interest is being represented. To those outside that circle, it is either invisible or deeply alarming—a garment designed to make the wearer present but unknowable.",
+    "condition_typical": "Always pristine when worn. No aging or distressing acceptable. The suit's power depends on its refusal to accumulate visual information, including wear patterns. Maintained at institutional standard."
+  },
+  "image_prompt": "A figure standing in shadow and fluorescent overhead lighting, wearing a conventional formal suit that appears as pure visual absence—a void in human form, a walking negative space. The suit's outline is sharp and geometric, but its surface refuses to reflect light, creating an unsettling depth effect rather than a color. Notched lapels and button line remain faintly visible only by geometry. Moody cyberpunk corporate atrium backdrop, cold blue-white lighting from above casting harsh geometric shadows. The figure's hands and face remain visible and human; only the suit vanishes into optical void. High contrast, cinematic noir atmosphere. Film grain. Professional, cold, intentionally depersonalized. --ar 2:3 --v 6"
 }

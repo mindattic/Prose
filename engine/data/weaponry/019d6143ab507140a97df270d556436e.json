@@ -58,5 +58,40 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Crucible Industries CT-X 'Gauntlet'",
+    "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
+    "GLMZ",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kadiatou Bergstrom-Konate",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Neuromorphic Pressure Cestus",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Sentinel-Guard-88",
+    "Tessera Industries Sensory Overload Grenade SOG-3 'Flashbang Plus'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, predatory combat gauntlet with an angular, biomechanical aesthetic. The palm and finger assemblies are noticeably thicker than a standard tactical glove, housing the coil arrays beneath a translucent polymer shell that hints at the dense circuitry within. The overall silhouette is aggressive yet refined — not clunky or overdone, but purposefully engineered. A rigid forearm cuff extends 15cm up the arm, housing the visible burst capacitor with its characteristic ribbed cooling fins.",
+    "dimensions": "Gauntlet length (wrist to fingertip): 32cm. Palm width: 11cm. Forearm cuff depth: 8cm. Capacitor unit dimensions: 12cm × 8cm × 6cm.",
+    "weight_description": "Balanced but substantial — 1.8kg distributed across palm, fingers, and forearm. Feels purposeful in hand, never clumsy. The weight settles naturally against the forearm, with the palm-mounted coils creating a subtle gravitational bias toward the heel of the hand. Not light, but engineered for sustained combat use.",
+    "primary_material": "Aerospace-grade carbon composite frame wrapped in laminated superconductive coil housing. The capacitor casing is brushed titanium-steel alloy with visible ribbed cooling fins. Contact surfaces (palm and finger pads) are a high-conductivity polymer composite with minimal dielectric resistance.",
+    "finish": "Matte charcoal carbon composite with satin-brushed titanium accents. The translucent polymer sections reveal glimpses of the coil architecture beneath — fine copper and silver filament visible in precise geometric patterns. Minimal wear-resistant coating; the finish is intentionally austere, suggesting heavy industrial use.",
+    "color_scheme": "Gunmetal gray and deep charcoal primary, with polished titanium silver highlights on the capacitor fins and wrist articulation joints. Faint amber LED indicators along the capacitor casing (inactive state: dim; charge state: pulsing).",
+    "grip_texture": "Textured synthetic polymer with a slight tackiness to prevent slip during high-stress application. The fingers are wrapped in a fine crosshatch pattern for purchase. The forearm cuff uses a softer, rubberized elastic material for comfort during extended wear, with micro-grip points at the articulation zones.",
+    "distinctive_features": [
+      "Translucent polymer palm panel revealing superconductive coil geometry beneath",
+      "Amber charge-state LED strip running along the forearm capacitor, visible even under clothing",
+      "Ribbed titanium cooling fins on the burst capacitor — essential for thermal management after rapid discharge cycles",
+      "Micro-articulated finger joints allowing independent movement while maintaining coil alignment",
+      "Contact-sensing micro-switches embedded in the palm and fingertip pads (activate on skin-to-skin or thin-material contact)",
+      "Barely visible neural feedback connector port on the inner wrist (for diagnostic and recalibration)",
+      "Minimal branding: small ZHENG-DAO cipher etched into the capacitor housing"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC stamp discreetly laser-etched into the titanium capacitor casing, approximately 2cm × 0.5cm. A tiny serial number plate (brushed aluminum, ~1.5cm × 0.8cm) affixed to the inner wrist cuff, largely hidden during normal wear. No overt branding; the weapon's reputation precedes it.",
+    "condition_typical": "Field-worn but meticulously maintained. Micro-scratches across the palm contact surfaces indicate repeated use. The translucent polymer may show faint stress fractures from high-temperature coil discharge cycles. Operators treat the SOG-3 with ritualistic care — it's irreplaceable and expensive. Usually shows light battle scoring on the knuckle guards and wrist cuff, but the coil housing is kept pristine."
+  },
+  "image_prompt": "Zheng-Dao Bioelectric SOG-3 Seizure gauntlet lying flat on dark gunmetal surface, dramatic side-lighting emphasizing the translucent polymer palm panel revealing intricate copper and silver superconductive coils beneath. Forearm capacitor unit with ribbed titanium cooling fins catching amber light. Faint pulsing amber LED indicators visible along the charge port. Matte charcoal and brushed titanium finish contrasting against black background. High-resolution detail shot showing the textured grip polymer and contact-sensing microcircuitry on the fingertip pads. Cyberpunk combat aesthetic, industrial precision, neural warfare technology. --ar 3:2 --v 6"
 }

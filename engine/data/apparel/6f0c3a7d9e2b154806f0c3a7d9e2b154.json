@@ -53,5 +53,26 @@
     "The Spire",
     "VitaCore ClearCourse Addiction Suppressor",
     "Warm Wire, Small Hand"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "An understated elegance that reads as effortless wealth. The mandarin collar sits close to the neck without constraining, while the long-body silhouette drapes with fluid grace. On a person, it projects quiet confidence—the kind of garment that doesn't announce itself but commands attention through pure refinement. The overall impression is almost meditative: expensive restraint.",
+    "fit": "Relaxed yet intentional. Not oversized, but generously cut through the shoulders and torso, allowing the silk to move with the body rather than cling. The long body extends past typical shirt length, creating an elongated silhouette that suggests both comfort and deliberate proportion.",
+    "primary_material": "Cultured mulberry silk, grown in bioreactor and hand-processed. The consistency is flawless, with a subtle natural sheen that catches light without gloss.",
+    "texture": "Impossibly smooth to the eye, with a soft luster that suggests touch without demanding it. The weave is so fine and regular it appears almost liquid when photographed. French seams create imperceptible internal structure.",
+    "color_scheme": "Deep burgundy, grey-green (Moss Water), or warm ivory depending on seasonal run. Each color is muted and sophisticated—no vibrance, only depth.",
+    "closures": "Mother-of-pearl buttons sourced from Pacific coastal cooperative. Buttons are small, subtle, and perfectly spaced down the front placket.",
+    "distinctive_features": [
+      "Mandarin collar—narrow, precise, structurally perfect",
+      "French seams throughout—visible only to those who know what to look for",
+      "Mother-of-pearl buttons with subtle iridescence",
+      "Long-body cut extending beyond standard shirt length",
+      "No external branding whatsoever",
+      "Interior hand-stitched thread mark in seasonal color—readable only to Aurelius clientele as production run identifier",
+      "Untagged construction"
+    ],
+    "tier_indicator": "Tier 1 luxury—beyond luxury. This is Spire-tier couture. The price point exceeds monthly rent for most GLMZ residents.",
+    "cultural_context": "Worn by Aurelius House clientele who exist in the rarefied upper echelons of GLMZ society. Signaling anything would be beneath them; this garment is for those whose wealth is so established it needs no announcement. The wearer is likely a corpo executive, board member, or legacy money. To wear this is to participate in a conversation only Spire dwellers understand.",
+    "condition_typical": "Pristine when new. With wear, it softens further, becoming even more beautiful. The silk develops a subtle patina of use that only enhances its value. Aurelius clients have these for decades."
+  },
+  "image_prompt": "Luxury fashion photograph of an Aurelius House Silk Banded-Collar shirt in deep burgundy, draped on a minimalist dark mannequin or worn by an elegant model with subtle augmentation visible at the jawline. Moody studio lighting with cool top-light casting the fabric's sheen into soft relief. Background: abstract deep shadow with hints of geometric brutalist architecture. Extreme close-up detail shot of mandarin collar and mother-of-pearl buttons, showing the flawless weave and subtle iridescence. The overall mood is serene, untouchable, quietly powerful. --ar 2:3 --v 6"
 }

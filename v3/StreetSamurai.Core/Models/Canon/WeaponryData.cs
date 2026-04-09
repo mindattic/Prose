@@ -1,3 +1,4 @@
+using System.Text.Json;
 using System.Text.Json.Serialization;
 using StreetSamurai.Core.Interfaces;
 
@@ -26,4 +27,5 @@ public class WeaponryData : ICanonEntity
     [JsonPropertyName("story_hooks")] public List<string> StoryHooks { get; set; } = [];
     [JsonPropertyName("ammunition_type")] public List<string> AmmunitionType { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
+    [JsonExtensionData] public Dictionary<string, JsonElement>? ExtraData { get; set; }
 }

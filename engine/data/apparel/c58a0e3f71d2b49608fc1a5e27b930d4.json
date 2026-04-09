@@ -51,5 +51,25 @@
     "TESSERA PG-2 'Signature'",
     "The Pure Hand",
     "Vantablack BC-1 'Briefcase'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist wraparound visor that dominates the upper face with a seamless curved lens. The design reads as deliberately understated—purposefully anonymous rather than flashy. Worn low on the bridge, it frames the eyes with architectural precision, creating an impassive, augmented appearance that suggests enhanced perception rather than visual aggression.",
+    "fit": "Snug but not clamping; the wraparound geometry distributes weight across temple and nose bridge. The thickened arms grip the sides of the head with engineered precision, leaving no gaps. Adjustable friction-fit contact points allow micro-positioning without visible fasteners.",
+    "primary_material": "Aerospace-grade matte charcoal polymer composite with optical-grade curved lens in anti-reflective smart-glass capable of dynamic tinting",
+    "texture": "Smooth, slightly grippy matte finish on the polymer frame; the lens is glass-smooth with a faint warm-copper iridescence visible only when light hits at oblique angles. Temple arms have subtle knurled sections for secure grip and thermal dissipation",
+    "color_scheme": "Matte charcoal-black polymer frame with a clear-to-dark-smoke gradient lens. Copper contact rail glints subtly along the inner brow. Faint rainbow iridescence shifts across lens surface at certain angles—a deliberate Nullform signature",
+    "closures": "Friction-fit temple arms with micro-adjustment points; no buckles or snaps—designed for quick removal without fumbling",
+    "distinctive_features": [
+      "Single-piece curved lens with adaptive tint technology (transparent to privacy-dark in <200ms)",
+      "Dual micro-processor housings integrated into thickened temple arms",
+      "Short-range mesh antenna embedded in left temple",
+      "Copper BCI contact rail along inner brow for direct neural-interface compatibility",
+      "Iridescent coating visible only at oblique angles—signature Nullform aesthetic",
+      "No visible branding—deliberately unmarked for operational discretion"
+    ],
+    "tier_indicator": "Tier 2-3 borderline; independent tech, not corpo-grade but clearly well-engineered. Signals technical sophistication and discretionary budget without conspicuous wealth",
+    "cultural_context": "Field operative, off-books analyst, covert information broker, independent security contractor. Worn by people who need augmented vision but cannot afford—or do not want—obvious corpo AR rigs. Signals competence, privacy consciousness, and potential legal ambiguity",
+    "condition_typical": "Pristine to lightly worn; kept meticulously clean to maintain optical clarity. Minor micro-scratches on lens from field use, but never patched or visibly damaged—this is a tool that must function flawlessly"
+  },
+  "image_prompt": "Close-up fashion portrait of a sharp-featured model with dark skin tone wearing a matte charcoal Nullform AR Visor MK-3, lens tinted to opaque smoke-black, copper contact rail glinting along the brow. Profile view and three-quarter angle showing the wraparound geometry and subtle iridescent shimmer on the lens surface. Model's expression is calm, focused, augmented. Dark moody cyberpunk setting with rain-slicked pavement and neon reflection—blues and coppers. Shallow depth of field, cinematic lighting. --ar 2:3 --v 6"
 }

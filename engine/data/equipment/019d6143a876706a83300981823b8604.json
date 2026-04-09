@@ -49,5 +49,24 @@
     "Concrete",
     "IRONLIMB Revenant Void-Form Digi Leg",
     "Narrowcast"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, ergonomic handheld scanner resembling a high-tech surveying tool crossed with a tactical device. The main body is cylindrical-tapered, widening slightly at the grip section, with a pronounced directional antenna array protruding from the front face. The overall silhouette suggests precision instrumentation with purposeful industrial design.",
+    "dimensions": "38 cm long, 8 cm diameter at grip, antenna head 12 cm wide",
+    "weight_description": "Handheld but substantial—2.5 kg requires a secure grip or shoulder strap for extended fieldwork",
+    "primary_material": "Aircraft-grade aluminum chassis with reinforced polymer grip panels",
+    "finish": "Matte gunmetal with anodized accents; textured grip sections for moisture resistance",
+    "color_scheme": "Gunmetal gray primary body with deep cyan accent lines along the antenna array and control panel; matte black grip zones",
+    "interface_elements": "Small 4-inch flexscreen display on the upper grip section showing real-time waveform data; three capacitive touch controls (scan/pause/mode); micro-USB and neural-link induction port on the base; status indicator LEDs (amber, cyan, red) clustered near the antenna feed",
+    "distinctive_features": [
+      "Phased-array antenna head with visible radiator elements arranged in a honeycomb matrix",
+      "Cyan running lights along the antenna perimeter that pulse during active scanning",
+      "Dual-axis gimbal mounting points for tripod or vehicle attachment",
+      "Recessed cable conduit running the length of the body",
+      "Tessera Industries holographic warranty seal on the lower grip"
+    ],
+    "manufacturer_markings": "TESSERA INDUSTRIES embossed vertically along the grip; DSR-1 model number with serial barcode on the battery compartment; GLMZ certification stamps; ultra-wideband frequency warning label near antenna",
+    "condition_typical": "In fieldwork, the device is held at various angles with the antenna face directed toward target surfaces; often strapped to tactical vests or carried in a weatherproof hard case; the flexscreen displays constantly updating 3D voxel clouds and depth metrics"
+  },
+  "image_prompt": "Tessera Industries DSR-1 ground-penetrating radar handheld unit on a stainless steel workbench, angled 45 degrees to show antenna array detail. Cyan diagnostic lights pulsing on the antenna face. In the background, a holographic display showing real-time 3D scan visualization of underground tunnel networks. Weathered metal workbench with calibration tools scattered nearby. Cyberpunk industrial aesthetic with dramatic blue-white overhead lighting casting sharp shadows. The device's metallic surfaces gleam under the light, emphasizing the precision engineering. --ar 3:2 --v 6"
 }

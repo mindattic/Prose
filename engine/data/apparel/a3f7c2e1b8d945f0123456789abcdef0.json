@@ -43,5 +43,24 @@
     "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
     "The Shelf",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A classic corporate dress shirt with understated sophistication. Pale blue ground with a subtle white windowpane check creates a professional, non-threatening aesthetic. The silhouette is modern business-casual—fitted shoulders that don't restrict movement, a relaxed torso that skims without clinging, and a structured rear box pleat that allows for actual motion. On the body, it reads as 'competent professional who doesn't need to prove anything.'",
+    "fit": "Slim through shoulders and upper back; relaxed through the chest and torso. Sleeves taper gently to the cuff. Not tailored-tight, not oversized—the Goldilocks fit of office wear. Designed for an eight-hour desk shift without binding or billowing.",
+    "primary_material": "Cotton-linen weave blend—breathable, naturally resistant to wrinkles, ages gracefully. The blend gives subtle texture without looking textured.",
+    "texture": "Smooth with a faint matte finish. The weave is visible under close inspection but reads as flat and crisp when worn. No synthetic sheen. Buttons are matte horn-analog—warm, slightly rough tactile surface.",
+    "color_scheme": "Pale blue base (not navy, not sky—corporate neutral blue) with a fine white windowpane check overlay. The check is small enough to read as a solid from five feet away but interesting enough to show intentionality up close.",
+    "closures": "Flat-felled placket with matte horn-analog buttons. Cuffs are button-closeable or designed to roll neatly for a semi-casual look.",
+    "distinctive_features": [
+      "Rear box pleat for mobility",
+      "Flat-felled seams (durability and professional finish)",
+      "Matte horn-analog buttons (eco-adjacent, less 'shiny corpo')",
+      "Collar designed for natural crispness without stiffening agents",
+      "No visible branding or logos—the cut is the signature"
+    ],
+    "tier_indicator": "Tier 3-4 working professional. Not luxury (Tier 1-2 would have subtle smart-threading or adaptive fibers). Not sub-grade salvage. This is the uniform of the stable, competent middle class.",
+    "cultural_context": "Signals: corporate workforce, Meridian office corridor, middle-management aspirational, someone who values function over fashion. Wearing this says 'I have a desk job, I take it seriously, and I don't waste Φ on unnecessary status signaling.' It's the anti-augmentation garment—pure analog professionalism.",
+    "condition_typical": "Worn in: crisp on the first day, slightly softened after ten washes, still holding shape after two years. The windowpane check hides minor wear well. Typically tucked, sleeves rolled during focused work, buttoned cuffs during meetings."
+  },
+  "image_prompt": "Clean corporate fashion shot: pale blue oxford shirt with white windowpane check displayed on a dark masculine mannequin or worn by a mixed-heritage model in a sleek Meridian office tower hallway. Overhead LED panels cast cool white light. Shirt sleeves rolled to forearm, collar crisp and natural. Subtle augmentation visible on model's wrist—maybe a thin biolume data-strip or minimal chrome—to show this is 2226, not 2024. Matte horn buttons catch the light softly. Background: floor-to-ceiling windows overlooking a rain-slick Great Lakes sprawl, or abstract bokeh of corpo-glass and neon. Mood: professional, unflashy, reliable. --ar 2:3 --v 6"
 }

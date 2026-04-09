@@ -41,5 +41,26 @@
     "contamination",
     "enclosure"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "physical_description": {
+    "visual_profile": "A utilitarian full-body enclosure suit with an integrated hard helmet, presenting a bulky, technical silhouette. The institutional yellow outer shell dominates the visual impression, marked with stark black Veldtmann chevrons and visible attachment points. The suit reads as industrial and purposeful—designed for function over form, with the rigid helmet creating an almost alien presence.",
+    "fit": "Oversized and loose-fitting throughout the torso and limbs, with sealed compression cuffs at wrists and ankles. The suit accommodates layering beneath and allows restricted mobility in exchange for maximum protection. The helmet sits flush with shoulder seals, creating a monolithic upper profile.",
+    "primary_material": "Dense lead-composite polyfilm (outer shell), triple-sealed radiation-dampening aerogel batting (middle layer), moisture barrier (inner), hard polycarb with leaded-glass visor (helmet)",
+    "texture": "Matte, slightly ribbed polyfilm exterior with a dull institutional finish. Pressure-bonded seams create subtle linear texture across the suit. The visor has a faint amber tint from lead-glass, creating a subtle reflective quality. All surfaces designed for easy decontamination.",
+    "color_scheme": "Institutional matte yellow (#D4C51A) as primary, with high-contrast black Veldtmann chevrons stenciled across chest and back. Red pressure-bonded seams trace critical radiation barriers along shoulders, spine, and limb joints. The visor interior amber-tinted from leaded glass.",
+    "closures": "Heavy-duty magnetic seals at neck, wrists, and ankles. Central front placket with friction-fit locking mechanism and pressure-bonded overlap seams for airtight integrity. Helmet locks via three-point magnetic coupling to suit collar.",
+    "distinctive_features": [
+      "Integrated hard polycarb helmet with leaded-glass visor",
+      "Three dosimeter attachment points (chest, wrist, collar) with reinforced Φ-rated mounting tabs",
+      "Color-coded seams—red for primary radiation barriers, standard black for secondary",
+      "Veldtmann black chevron company logo stenciled across chest and back",
+      "Pressure-bonded seams throughout for inspection visibility",
+      "Stenciled RAD-IV certification marking and inspection date stamps on left thigh",
+      "Reinforced articulation panels at elbows, knees, and groin for increased protection in high-exposure zones"
+    ],
+    "tier_indicator": "Tier 3 functional corporate equipment—standardized safety gear for working-class industrial maintenance personnel employed by corpo subsidiaries",
+    "cultural_context": "Worn by reactor maintenance workers, contaminated zone salvagers, and sub-level infrastructure personnel. Signals employment in hazardous corporate infrastructure roles. The suit implies exposure to unstable Shelf zones or legacy nuclear facilities—not casual streetwear but recognizable and respected among industrial workers.",
+    "condition_typical": "Usually worn with visible dosimeter wear marks, minor paint scuffs on the yellow exterior from industrial handling, and faint radiation-detection tape residue at seams. The suit is periodically pressure-tested; successful tests leave visible inspection stamps. Most units show 3-5 years of weathered use despite being regularly decontaminated."
+  },
+  "image_prompt": "A Tier 3 cyberpunk worker in a dense yellow Veldtmann RadCore Reactor Zone Enclosure Suit with integrated hard polycarb helmet and leaded-glass visor, standing in a dimly lit contaminated industrial facility. The suit's matte yellow shell reflects cool fluorescent overhead lighting, with red seams and black chevron logos clearly visible. The helmet's amber-tinted visor casts an eerie glow. Industrial background: corroded metal walls, warning striping, dosimeter equipment. Gritty, utilitarian aesthetic. Shot from mid-thigh up, dramatic side-lighting emphasizing the suit's protective geometry and technical seams. Film grain, moody color grading. --ar 2:3 --v 6"
 }

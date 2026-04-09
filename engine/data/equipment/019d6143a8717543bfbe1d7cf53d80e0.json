@@ -44,5 +44,25 @@
   "parent_corponation": "",
   "related_entities": [
     "Vesna Szymczak-Ranginui"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A skeletal collapsible frame system resembling an industrial flat-pack, designed to disappear beneath layers of urban detritus. When deployed, it becomes a low-profile human-sized cavity invisible under camouflage dressing. The frame itself is utilitarian and angular—pure function with no aesthetic pretense.",
+    "dimensions": "Collapsed to 60cm x 40cm x 8cm; deployed footprint 2m x 1m x 0.5m (occupies ground-level cavity)",
+    "weight_description": "2 kg total—lightweight enough for solo transport via backpack or cargo harness; frame alone ~1.2 kg, adaptable fabric covering ~0.8 kg",
+    "primary_material": "Anodized aluminum frame joints and struts; heavy-weave synthetic fiber base fabric (desert tan/industrial gray)",
+    "finish": "Matte anodize on frame to prevent reflection; fabric has subtle texture to break up surface definition; minimal sheen to avoid light catches",
+    "color_scheme": "Neutral industrial palette—matte gunmetal gray frame, base fabric in weathered khaki/concrete gray; no corporate branding colors",
+    "interface_elements": "Fabric attachment points (D-rings and velcro strips); optional periscope mount (quick-release); interior observation slits with subtle cross-stitching to prevent light bloom; collapsible hinges with positive click-lock mechanisms; minimal labeling",
+    "distinctive_features": [
+      "Modular frame design with tool-free assembly via friction locks",
+      "Viewing slits engineered with internal baffles to eliminate silhouette glint",
+      "Attachment points for periscope optics (optional tier-1 package)",
+      "Dressing system: fabric loops and velcro grid for anchoring local trash/rubble/construction materials",
+      "Ventilation mesh hidden along bottom edges",
+      "Wear marks and stress fractures in anodize indicating field use"
+    ],
+    "manufacturer_markings": "Small embossed 'SC' logo on frame joint (almost illegible under grime); no visible price tags or regulatory stamps—designed for black market distribution",
+    "condition_typical": "Deployed units appear as innocuous urban debris piles—trash heaps, construction waste, collapsed cardboard—indistinguishable from environment. Stored units show minor dings and fabric fraying consistent with field equipment."
+  },
+  "image_prompt": "A Street Custom Spider Hole concealment kit displayed in two states on a grimy industrial workbench: left side shows the collapsed frame (aluminum struts and gray fabric bundle, 60cm length, partially coiled); right side shows a deployed unit photographed from above, disguised under a dressing of corrugated cardboard, crushed aluminum cans, and concrete dust, with barely-visible fabric edge peeking through debris. Low-angle dramatic lighting from a single halogen work lamp creates harsh shadows across the components, emphasizing the matte finishes and utilitarian design. Cyberpunk aesthetic: desaturated urban color palette, slight grain texture, cool blue overhead light mixed with warm tungsten bench lamp. Background suggests a Tier 5 black-market workshop—oil stains, scattered tools, discarded augmentation parts. --ar 3:2 --v 6"
 }

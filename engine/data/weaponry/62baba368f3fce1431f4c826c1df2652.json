@@ -39,5 +39,35 @@
     "tier_3",
     "avoidance"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus PG-3 'Aegis'",
+    "Chromeworks Silhouette-S Ghost Walker Leg",
+    "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
+    "GLMZ",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "The Bazaar",
+    "The Blind"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, contemporary urban bomber or harrington jacket with an almost imperceptible shimmer across the lining when powered. At rest, it appears as an ordinary commuter garment — understated and forgettable. When active, a faint iridescent ripple plays across the wearer's silhouette, like heat distortion or a troubled window reflection.",
+    "dimensions": "Length: 62–75 cm (depending on size); Sleeve length: 58–70 cm; Chest width (laid flat): 48–58 cm; Collar to hem: standard jacket proportions",
+    "weight_description": "Noticeably heavier than a standard jacket due to the embedded battery network and micro-emitter grid, but well-balanced and distributed — feels substantial without being burdensome, approximately 680g total",
+    "primary_material": "Water-resistant synthetic polymer outer shell with elasticated trimming; the inner lining contains a gossamer-thin photonic interference grid woven into microfiber batting",
+    "finish": "Matte textile exterior with subtle articulated stitching; inner lining has a soft silken texture that conceals the crystalline micro-emitter nodes. Battery pack (removable from rear inner pocket) is brushed gunmetal with soft-touch rubber accents",
+    "color_scheme": "Charcoal, navy, or dark green outer shell; silver-white photonic grid visible only when active or under close inspection; battery pack in dark gray",
+    "grip_texture": "Outer fabric is smooth, slightly textured polyester; inner pockets lined with soft microsuede; the activation switch inside the left pocket is smooth polymer, slightly recessed",
+    "distinctive_features": [
+      "Barely-visible micro-emitter nodes arranged in a grid pattern along the inner lining — only noticeable under close inspection or direct light",
+      "Faint shimmer or iridescent ripple visible across the wearer's outline when the distortion field is active",
+      "Removable battery pack with LED charge indicator (green/amber/red) housed in a rear interior compartment",
+      "Minimalist branding: small woven Aegis Personal Systems label on inner collar, no obvious tactical design cues",
+      "Articulated seams and ventilation apertures positioned for unrestricted movement",
+      "Hidden activation switch recessed into left interior pocket — deliberately unobtrusive"
+    ],
+    "manufacturer_markings": "Aegis Personal Systems woven label on inner collar (upper right); small embossed serial plate inside rear battery compartment; model designation WC-2 printed on the interior tag alongside size and care instructions",
+    "condition_typical": "When new: pristine, with faint warehouse handling marks. In regular field use: minimal wear on outer shell, battery pack shows minor scuff marks from repeated removals, seams remain tight, lining undamaged. After prolonged use: possible fading on outer fabric, slight wear at pocket edges, battery contacts show light oxidation"
+  },
+  "image_prompt": "Product photograph of the Aegis WardCloak WC-2 'Ghost' jacket displayed on a dark gunmetal stand, angled 3/4 view to show both front and inner lining. The jacket is charcoal gray, modern and understated, resembling a high-end urban commuter piece. Dramatic side-lighting from the left creates sharp shadows and emphasizes texture. A secondary softer light reveals the faint photonic grid along the inner lining when the distortion field is activated — showing a subtle iridescent shimmer across the wearer's silhouette. Battery pack visible in an interior pocket, LED indicator glowing soft green. Minimalist Aegis branding subtly visible on inner collar. Dark matte background, cyberpunk aesthetic with cool color temperature. Hyperrealistic materials: smooth outer synthetic polymer, delicate inner grid, soft-touch rubber accents. --ar 3:2 --v 6"
 }

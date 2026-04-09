@@ -44,5 +44,25 @@
   "parent_corponation": "",
   "related_entities": [
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Form-fitting second-skin gloves that cling to the hand like a shadow. Minimal visual presence — almost invisible when worn, creating an impression of bare skin with a subtle grey overlay. Sleek, utilitarian, purposefully unmarked. The wearer appears augmented at the fingertips without visible chrome or bulk.",
+    "fit": "Compression fit, engineered to conform to individual hand geometry. Tight enough to maintain adhesion function, loose enough at the wrist to roll down and pocket. Mid-wrist cut exposes the lower forearm.",
+    "primary_material": "Ultra-thin silicone composite bonded to breathable mesh substrate. Print-suppression polymer lining on palm and finger contact zones.",
+    "texture": "Outer surface: micro-textured, matte, finely granular to the eye — resembles gecko foot structure at 0.5mm scale. Inner surface: molecular-smooth, chemically treated to prevent friction-ridge transfer. Overall tactile impression is slippery and controlled simultaneously.",
+    "color_scheme": "Matte charcoal grey monochromatic. No accent colors, no patterns. Deliberately featureless. Slight variation in sheen between textured outer and smooth inner visible only in direct light.",
+    "closures": "None. Friction-fit compression closure — the glove stretches over the hand and locks in place via elastic recovery of the silicone blend. Thumb split-tip secured via internal bonded seam, folds inward when not in use.",
+    "distinctive_features": [
+      "Gecko-texture micro-adhesion outer surface for glass and polymer grip without glue or suction",
+      "Molecular print-suppression lining — no forensic trace signature",
+      "Internal bonded seams, zero exterior stitching for minimal profile and durability",
+      "Split-tip thumb design for precision work — folds flat or extends for tool manipulation",
+      "Compressible to pocket-size when removed, rolls into tight bundle",
+      "Unlicensed street manufacture — no branding, serial numbers, or manufacturing marks"
+    ],
+    "tier_indicator": "Tier 4–5 street economy. Expensive enough to require purpose and savings, cheap enough to be semi-disposable. No corporate licensing, no warranty. Signals either technical skill or need for anonymity.",
+    "cultural_context": "Worn by field operators, street techs, break-in specialists, evidence-aware individuals, augmentation technicians working in ungoverned zones. The print-suppression lining marks the wearer as someone who moves through monitored spaces — corpo security, law enforcement surveillance, biometric scanners. Practical and paranoid in equal measure.",
+    "condition_typical": "Pristine when fresh from manufacture — perfect micro-texture, unblemished grey. With use: micro-scratches accumulate on the textured outer surface from repeated climbing or contact; the inner lining remains chemically inert and unchanged. No visible staining or wear patterns; degradation is slow and invisible. Street gloves are typically replaced rather than repaired."
+  },
+  "image_prompt": "Close-up fashion shot of a cyberpunk hand model wearing charcoal-grey Ashwall Grip-Null secondskin gloves, fingers splayed against a wet black glass panel. The glove outer surface shows micro-textured matte detail, fingers gripping seamlessly with gecko-style adhesion. Soft blue neon backlighting from rain-slicked urban environment. Dark moody warehouse or transit hub backdrop with vertical steel columns. Split-thumb detail visible on dominant hand. Minimal branding, unmarked gloves, street-tech aesthetic. Shot from wrist to fingertips, shallow depth of field. Neo-noir cyberpunk catalog style. --ar 2:3 --v 6"
 }

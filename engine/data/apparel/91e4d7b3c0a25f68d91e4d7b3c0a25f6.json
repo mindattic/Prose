@@ -48,5 +48,24 @@
     "Aphelion",
     "Lacunal",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately exposed, architectural silhouette designed for synthetic bodies with exaggerated proportions. The open-panel vest frames the chassis like a sculptural display, while the wide-leg drape creates an ethereal, almost liquid lower half. Reads as intentionally inhuman—a celebration of synthetic form rather than camouflage.",
+    "fit": "Precision-engineered for non-standard anatomy: elongated limbs, digitigrade stance, extended torso geometry. The vest sits rigid and geometric; the pants drape with intentional excess, floating at the waist via tension mechanics. Accommodates servo lines, wiring, and modular components.",
+    "primary_material": "Gunmetal tensile mesh (vest panels), liquid-black synth-silk (pants), molded carbon platform sole, translucent smoked polymer (optional mantle)",
+    "texture": "Mesh is smooth with subtle gridwork pattern; synth-silk has a luxurious fluid drape with minimal memory; carbon sole is matte industrial; smoked polymer is semi-translucent with soft frosted finish",
+    "color_scheme": "Gunmetal gray, liquid black, and smoked translucent polymer accents. Cool, neutral palette emphasizing sleek synthetic aesthetic.",
+    "closures": "Magnetic snap system on vest panels, tension-anchored floating waistband (no loops), magnetic attachment points for optional shoulder mantle. Zero friction-based fasteners.",
+    "distinctive_features": [
+      "Open-panel architecture deliberately exposing synthetic chassis as design intent",
+      "Floating tension-anchor waistband compatible with non-standard torso geometry",
+      "Digitigrade-compatible pant cut with integrated sole wrap system",
+      "Optional translucent smoked polymer shoulder mantle with magnetic clip mounts",
+      "Magnetic-only closure system (synthetic-body friendly, zero pinch risk)"
+    ],
+    "tier_indicator": "Tier 1-2 luxury / specialized synthetic market. Bespoke proportional engineering and advanced material selection signal corpo-level resources or high-tier synthetic community status.",
+    "cultural_context": "Worn by synthetic sentients, high-end androids, or those who've undergone extreme corporeal modification. Signals ownership of custom-built synthetic bodies, corp-grade augmentation, or deliberate posthuman identity. Not camouflage—assertion.",
+    "condition_typical": "Pristine and maintained; synthetic bodies don't weather fabrics normally. Surfaces show deliberate design wear (if any) as intentional aesthetic, never accidental damage."
+  },
+  "image_prompt": "Fashion photography of a tall, angular synthetic humanoid wearing a gunmetal open-panel mesh vest exposing geometric chassis details, paired with flowing liquid-black synth-silk wide-leg pants and molded carbon platform boots. Optional translucent smoked polymer shoulder mantle clips magnetically. Model has elongated proportions and digitigrade stance. Dark moody lighting from above, industrial cyberpunk warehouse setting with neon accent glow reflecting off mesh panels. Mannequin pose emphasizing architectural geometry of the rig. Professional catalog style, high contrast. --ar 2:3 --v 6"
 }

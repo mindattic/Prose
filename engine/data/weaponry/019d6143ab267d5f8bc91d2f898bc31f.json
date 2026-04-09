@@ -51,5 +51,35 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Biometric Denial Charge BDC-1",
+    "GLMZ",
+    "Guardian PocketShock PSR-1 'Nudge'",
+    "Kadiatou Bergstrom-Konate",
+    "Lazarus LX-2 'Lab Rat'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Ringo Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact spherical device with a pronounced crown of segmented metal plates — resembles a modernist chess piece or command module. The upper hemisphere bristles with radiator fins and a recessed tuning dial, while the lower half is a smooth pressure-cast shell with a spring-loaded pull ring embedded in a reinforced grip boss.",
+    "dimensions": "110 mm diameter sphere; tuning dial face 45 mm diameter; pull ring extends 25 mm when armed",
+    "weight_description": "Deceptively dense — 0.9 kg feels substantial in palm despite compact profile, suggesting core mass concentrated in the flux coil assembly. Balanced but top-heavy from the radiator cluster.",
+    "primary_material": "Die-cast aluminum alloy housing with embedded copper flux coil cage; tungsten-lined detonation chamber; ceramic frequency modulators",
+    "finish": "Brushed gunmetal with oxidized copper patina visible in ventilation slots; matte anodized surface to reduce electromagnetic reflectance",
+    "color_scheme": "Cool silver-grey primary with burnt orange/copper accents in radiator fins and frequency dial markings; black rubber pull ring assembly",
+    "grip_texture": "Knurled aluminum circumference band for bare-handed operation; lower section wrapped in thin Faraday-mesh fabric rated for operator protection",
+    "distinctive_features": [
+      "Crown of 12 symmetrical radiator fins — heat dissipation for flux generator prep",
+      "Recessed tuning dial with five labeled preset positions (Cyb | Veh | Comm | Drone | Broad) plus unlabeled manual override slot requiring technician key",
+      "Pressure-sensitive grip region — detonation prevented if grip released prematurely",
+      "Hairline seams visible around equator indicating modular casing for field replacement of flux coil",
+      "Halcyon Senior Living corporate logo stamped on upper pole — elegant serif lettering",
+      "Small engraved serial plate beneath pull ring with military classification markings",
+      "Faint scorch marks around detonation aperture — typical wear from flux discharge prep cycles"
+    ],
+    "manufacturer_markings": "Halcyon Senior Living wordmark laser-etched on top hemisphere in 8mm serif font; RINGO CORPORATION technical key symbol stamped near manual override slot; military spec designation EPG-5 DEADSTOP printed in blocky sans-serif on lower band; individual serial number on base plate",
+    "condition_typical": "Military-issue grenades display field wear — micro-scratches on shell, slight darkening of copper radiators from oxidation, wear ring on grip from handling in gloved tactical operations. Well-maintained but never pristine; operator protection fabric shows creasing from storage in webbing rigs."
+  },
+  "image_prompt": "Product photography of the EPG-5 Deadstop EMP grenade on a dark matte black surface, shot from 45-degree angle revealing the spherical crown and tuning dial detail. Dramatic side-lighting from cool LED strips illuminates the radiator fins and creates sharp shadows in ventilation slots. Secondary warm spotlight highlights the copper patina and Halcyon wordmark. Pull ring positioned for activation-readiness. Faraday-mesh grip fabric visible. Cyberpunk military aesthetic — precise, clinical, lethal. Shot on neutral grey background suggesting sterile armory environment. --ar 3:2 --v 6"
 }

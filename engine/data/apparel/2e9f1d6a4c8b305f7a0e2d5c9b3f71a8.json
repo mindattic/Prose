@@ -46,5 +46,25 @@
   "related_entities": [
     "Lazarus Pharmaceuticals",
     "Serafin"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A clinical yet form-fitting full-torso compression garment that reads as medical-grade and distinctly corpo. The pale grey base creates a sterile, almost ghost-like silhouette, broken only by soft amber sensor piping that traces the torso and shoulders like circuitry. On a wearer, it appears sleek and utilitarian—neither fashion nor activewear, but explicitly therapeutic. The aesthetic sits firmly in Tier 1-2 corpo medical infrastructure.",
+    "fit": "Precision-fitted compression throughout. Snug against the torso and thighs without restriction; graduated compression panels taper from mid-thigh up through the chest. The fit is anatomically tailored to the individual wearer—no standard sizing after thermal bonding at discharge. Shoulders and collarbone remain unobstructed for mobility.",
+    "primary_material": "Medical-grade synth-composite with embedded sensor filaments; smooth, breathable, slightly cool to the touch. Thermally bonded to patient measurements.",
+    "texture": "Smooth, matte finish with a subtle grip texture on compression zones. Sensor piping adds thin, thread-like tactile variation along key lymphatic pathways. No padding—purely technical.",
+    "color_scheme": "Pale clinical grey as dominant color. Soft amber sensor piping traces symmetrical lines down the sides, across the chest, and along the shoulders. Amber indicator light at the sternum pulses when inflammation is detected.",
+    "closures": "Magnetic snap closures running down the sternum and left side for post-operative access and removal without stress on healing tissue. No velcro.",
+    "distinctive_features": [
+      "Embedded wound-site sensors with amber indicator light at sternum base",
+      "Graduated compression panel zones targeting lymphatic drainage",
+      "Heat-stamped Lazarus Pharmacy Group logo above left hip",
+      "Thermally bonded to individual patient measurements",
+      "Magnetic sternum and side closures for surgical access",
+      "Soft ambient sensor piping visible as tonal amber lines"
+    ],
+    "tier_indicator": "Tier 1-2 corpo luxury medical. This is prescribed medical hardware, not accessible to street tiers. Signals wealth, corpo employment, or corporate insurance coverage.",
+    "cultural_context": "Wearer is recently post-surgical, likely corpo-affiliated, and under active medical monitoring. Lazarus Pharmacy branding signals trust in corpo medical infrastructure. Not fashion—a status indicator of access to premium healthcare and corpo wellness.",
+    "condition_typical": "Pristine when issued; develops subtle wear at magnetic closure points and slight discoloration at pressure zones over weeks of wear. Sensor piping may fade slightly. Typically replaced at 6-8 week post-op mark."
+  },
+  "image_prompt": "Cyberpunk medical fashion photography: pale grey compression base-layer on a sleek, androgynous model with subtle chrome finger augmentations and a calm, clinical expression. Soft amber sensor piping glowing faintly along the torso in moody blue-grey lighting. Dark metallic backdrop with subtle holographic medical UI elements. Close detail shot of Lazarus Pharmacy logo heat-stamped on hip. Sternum amber indicator light pulsing softly. Professional product photography aesthetic mixed with cyberpunk noir mood. --ar 2:3 --v 6"
 }

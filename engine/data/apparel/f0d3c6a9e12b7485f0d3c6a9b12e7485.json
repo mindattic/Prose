@@ -36,5 +36,26 @@
     "thrift",
     "worn"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "physical_description": {
+    "visual_profile": "Classic straight-leg silhouette with a lived-in slouch; the waistband sits naturally low on the hips. Despite decades of wear, the cut remains flattering and intentional-looking. The fabric drapes with soft heaviness, pooling slightly at the ankles.",
+    "fit": "Relaxed straight leg, mid-rise with natural sag at waistband. Not tight, not baggy — the ease of something worn into comfort rather than purchased that way.",
+    "primary_material": "Synth-cotton blend (60% synthetic polymer, 40% reclaimed organic fiber) — the formula Velex used in the 2150s before discontinuation",
+    "texture": "Incredibly soft and pilled from age; the weave is loose and almost gauzy at stress points. Knees and inner thighs are translucent, showing faint shadowing of skin or underlying layers. Hems fray into soft, naturally separated threads. The fabric has a lived, velvet-like quality from repeated washing.",
+    "color_scheme": "Indigo faded to dusty periwinkle and pale denim gray; darker saturated color at seams and interior. Scattered bleach stains and brownish wear marks at pocket edges and fly. Lighter areas where sweat and friction have aged the dye.",
+    "closures": "Traditional five-button fly with worn brass buttons; waistband has a single S-curve anchor point where metal has oxidized green. No zipper, no modern magnetic snaps.",
+    "distinctive_features": [
+      "Translucent panels at knees and upper thighs exposing underlying fabric or skin",
+      "Frayed hem edges that naturally separate into soft fringe rather than a clean line",
+      "Sagging waistband with visible fabric relaxation at sides",
+      "Velex brand tag still visible inside waistband, text faded but readable",
+      "Worn coin pocket with darker patina",
+      "Stress whitening around pocket openings and upper thigh",
+      "Faint cross-hatch pattern from being dried on wire racks rather than machine dried"
+    ],
+    "tier_indicator": "Originally Tier 2 luxury-adjacent (affordable quality denim for mid-grade workers). Now worn by Tier 3-4 as heritage/retro or Tier 5 by accident of salvage.",
+    "cultural_context": "Wearing these signals nostalgia, thrift, or genuine poverty dressed as aesthetic choice. Corpo kids buy reproductions; street workers actually own worn pairs. The fraying and transparency read as either 'I found these' or 'I'm ironic enough to wear degraded fabric on purpose.'",
+    "condition_typical": "Heavily worn, soft, translucent at stress points, frayed hems, sagging waistband. Not falling apart, but clearly approaching the end of functional life. Each pair is slightly different depending on wearer and wash history."
+  },
+  "image_prompt": "Overhead fashion shot of threadbare Velex synth-cotton jeans draped on a dark matte mannequin, legs slightly splayed. Harsh neon-blue side lighting reveals translucent fabric at knees glowing pale indigo against dark background. Close detail of frayed hem showing individual separated threads in sharp focus. Moody GLMZ warehouse aesthetic — concrete, scattered coolant drips, faint holo-advertisement flicker in soft background. Dust particles visible in light. Nostalgic 2150s-era product photography style. --ar 2:3 --v 6"
 }

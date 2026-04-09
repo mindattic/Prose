@@ -44,5 +44,39 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus HD-1 'Homestead'",
+    "Focadrin",
+    "GLMZ",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Lazarus EC-4 'Companion'",
+    "Nika Svensson-Kone",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "TESSERA PG-2 'Signature'",
+    "The Vagrant"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist rifle with a distinctly utilitarian aesthetic. The HSR-10 presents a slim profile dominated by its carbon-fiber barrel wrap, which gives it an almost organic appearance despite its mechanical nature. The skeletonized receiver creates negative space throughout the frame, reducing visual mass. Fixed 4x scope mounted forward of receiver. Folding stock collapsed creates a compact, almost backpack-ready silhouette.",
+    "dimensions": "Overall length (stock extended): 94 cm | Overall length (stock folded): 68 cm | Barrel length: 46 cm | Width across controls: 7 cm",
+    "weight_description": "Noticeably light for its category—feels almost delicate in hand despite robust construction. Balanced slightly forward due to barrel wrap mass distribution. Carries like a tool rather than a weapon, with responsive handling characteristics.",
+    "primary_material": "Skeletonized 7075 aerospace-grade aluminum receiver | Carbon-fiber-wrapped steel barrel | Polymer furniture (grip, handguard panels)",
+    "finish": "Matte anodized gray receiver with micro-texture to reduce glint | Barrel wrap exhibits natural carbon weave visible beneath matte polyurethane topcoat | Polymer components in warm tan/khaki with textured grip zones | Scope body brushed aluminum with matte black lens housings",
+    "color_scheme": "Gunmetal gray primary | Warm tan/khaki accents | Carbon black weave visible on barrel | Minimal contrast—designed for field neutrality",
+    "grip_texture": "Textured polymer grip with vertical serrations | Magazine well features stippled finish for sure purchase | Handguard has fine knurled texture under palm | Folding stock latch mechanism exposed but smoothly finished",
+    "distinctive_features": [
+      "Visible carbon-fiber barrel weave beneath protective topcoat",
+      "Skeletonized receiver showing internal lightening cuts and spring mechanisms",
+      "Integral picatinny rail only at scope mount—no additional accessory rails",
+      "Fixed 4x optical scope with simple crosshair reticle, no electronic components",
+      "Folding stock mechanism with audible detent click",
+      "Two-stage trigger visible through magazine well—unusually transparent design philosophy",
+      "15-round single-stack magazine with witness holes and numbered round count",
+      "Minimal controls—safety lever, charging handle, bolt catch only",
+      "Absence of dust covers or port doors—design assumes field maintenance discipline"
+    ],
+    "manufacturer_markings": "HEARTHSTONE FIREARMS stamped on receiver below charging handle in sans-serif block letters | HSR-10 WANDERER designation on left side of receiver | Caliber marking: 6.5MM on barrel near receiver junction | Serial number engraved on upper receiver bridge | Small Φ900 price marking laser-etched on magazine well—intentional design choice emphasizing affordability",
+    "condition_typical": "Showroom examples appear pristine with bright anodize. Field-used units show honest wear: scuff marks on polymer furniture, fine scratches on scope objective lens from brush and sand, minor fouling residue in charging handle track, carbon scoring on gas key area. No operator attempts heavy customization—stock configuration reflects design intent."
+  },
+  "image_prompt": "Product photography of Hearthstone HSR-10 'Wanderer' rifle displayed across dark matte black surface, three-quarter profile view showing both collapsed folding stock and extended barrel. Dramatic side-lighting (bright key light from left, rim-light accent on carbon fiber barrel wrap) highlighting material transitions between brushed aluminum receiver and tan polymer furniture. Fixed 4x optical scope in sharp focus. Gloved hand (weathered tactical glove, gray/black leather) gripping the rifle at magazine well, showing textured grip detail. Background deep charcoal with subtle bokeh. Emphasize lightweight engineering through negative space visible in skeletonized frame. Cyberpunk frontier aesthetic—functional, minimalist, no-nonsense design language. Worn but maintained condition. --ar 3:2 --v 6"
 }

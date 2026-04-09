@@ -44,5 +44,39 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Focadrin",
+    "GLMZ",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Lacuna Genomics",
+    "NeuralPath HarmonicRoot Perfect Pitch Mod",
+    "Nika Svensson-Kone",
+    "Street-Custom Gutter Katana 'Flatline'",
+    "TESSERA CORPONATION Elysia Sensorum Totalis",
+    "The Pure Hand",
+    "Volkov-Saito Precision VSM-14 'Carthage'"
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian designated marksman rifle with clean, angular lines and purposeful simplicity. The KPM-6 reads as 'working tool' rather than prestige platform — no chrome, no excess. Its profile is slightly compact for a DMR, with a moderately long barrel paired with a streamlined receiver that emphasizes function over form. The fixed scope mounting gives it a distinctive silhouette: scope-forward, balanced, business-like.",
+    "dimensions": "Overall length: 115 cm | Barrel length: 56 cm | Width (scope mounted): 8 cm | Height (with scope): 18 cm",
+    "weight_description": "Balanced and manageable at 4.2 kg — not light, but not punishing. The weight sits naturally forward of the grip, centering the balance point near the scope mount for natural sight alignment. Feels confidence-inspiring rather than burdensome in sustained shooting positions.",
+    "primary_material": "Polymer receiver and furniture (reinforced composite), chrome-moly steel barrel, stamped steel internal components. The manufacturing philosophy prioritizes cost-efficiency without compromising barrel integrity.",
+    "finish": "Matte black polymer with brushed steel barrel showing micro-scratches from field use. The receiver has a slightly textured matte finish to reduce glare; no glossy surfaces anywhere. Minimal contrast — everything subdued.",
+    "color_scheme": "Flat matte black primary, brushed gunmetal secondary (barrel, bolt carrier), with minimal accent colors. Optional BCI module (if mounted) features small amber indicator lights along the rail.",
+    "grip_texture": "Rubberized polymer grip with subtle horizontal ridging — functional and non-slip, comfortable enough for extended use but not ergonomically crafted. Slightly rough-feeling, utilitarian. The handguard is smooth polymer with shallow rail slots.",
+    "distinctive_features": [
+      "Fixed 6x optical scope mounted low and forward — permanently zeroed at factory",
+      "Simple dual-aperture rear sight backup (iron) set behind scope",
+      "Free-floating barrel assembly visible in cutaway sections of receiver",
+      "Picatinny rail sections top and sides for optional BCI module or accessories",
+      "Magazine well shows reinforced polymer with light wear marks from repeated insertions",
+      "Barrel marked with subtle erosion patterns from high-round-count testing",
+      "Simple push-button safety on trigger guard",
+      "No dust cover; weapon designed for reliable function in field conditions"
+    ],
+    "manufacturer_markings": "KANG-PETROV ARMS stamped in sans-serif font on receiver left side, just above the magazine well. Serial number laser-etched on barrel tang. Model designation 'KPM-6 EQUALIZER' printed in small text on the scope mount. Manufacturing origin mark (GLMZ) subtle on lower receiver. No corporate flourish — strictly utilitarian identification.",
+    "condition_typical": "Well-maintained but showing realistic field wear: minor scuff marks on polymer from gear contact, microscopic wear on the bolt carrier path visible through dust cover gaps, light powder residue in crevices, scope glass clear but housing showing faint handling marks. Looks like a tool that works and is used regularly, not a safe queen."
+  },
+  "image_prompt": "Cyberpunk DMR product photography: KPM-6 Equalizer rifle laid on dark matte metal surface, three-quarter angle showing scope and barrel. Matte black polymer receiver catches dramatic side-lighting from cool tungsten angle, emphasizing texture and worn finish. Brushed steel barrel picks up reflected light. Fixed 6x scope mount visible. Optional BCI module socket visible on rail. Gloved hand (industrial black tactical glove) positioned on grip for scale. Dark urban backdrop suggesting working-class GLMZ district. Minimalist styling, no branding props, clean composition. Ultra-sharp product focus. Cyberpunk utilitarian aesthetic emphasizing function over form, affordability through design discipline. --ar 3:2 --v 6"
 }

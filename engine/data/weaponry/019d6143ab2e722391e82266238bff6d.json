@@ -58,5 +58,43 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus NX-1 'Sandman'",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "GLMZ",
+    "Helix Biosystems",
+    "Nenad Vargas-Baffour",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "NeuralPath FlowState Focus Regulator",
+    "Palladian Construction Seismic Anchor Cradle",
+    "TESSERA TN-1 'Cradle'",
+    "Tessera TX-15 'Cradle Song'",
+    "The Third Rail",
+    "Zheng-Dao Bioelectric CellStack BM-3 Biological Microbial Fuel Cell Implant",
+    "Zheng-Dao Bioelectric Cortical Pressure Valve",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "physical_description": {
+    "visual_profile": "A shouldered containment projector with an organic, almost bio-mechanical silhouette. The main body curves inward like a cradling palm, with a central emission aperture that seems to focus rather than fire. When active, a faint prismatic shimmer surrounds the muzzle — the hydrostatic field's ionic matrix becoming briefly visible. At rest, it resembles a medical device more than a weapon.",
+    "dimensions": "Shoulder mount: 58 cm length, 22 cm width across the back plate, 16 cm depth. Emission aperture: 8 cm diameter. Wrist interface: 12 cm × 8 cm, 2 cm thick. Total assembly spans 65 cm when mounted and interfaced.",
+    "weight_description": "Hefty but balanced — 3.8 kg shoulder unit sits snug against the back, weight distributed across the shoulder plate. The 0.6 kg wrist interface is negligible. Feels less like a gun and more like wearing a specialized exoskeleton component. Operator reports describe it as 'anchoring' rather than burdening.",
+    "primary_material": "Aerospace-grade titanium alloy frame with bio-polymer composite housing. The aperture assembly uses reinforced cermet lined with ionic-conductive mesh. Internal channels are wrapped in flexible hydrogel conductors that glow faintly when active.",
+    "finish": "Matte gunmetal gray with brushed titanium accents. The housing has a subtle pearlescent sheen under direct light — a side effect of the bioactive polymer coating. No obvious wear resistance treatments; the finish shows micro-abrasions and faint oxidation patterns consistent with field use. The aperture rings show a faint blue-green oxidation layer.",
+    "color_scheme": "Gunmetal gray primary with titanium silver trim. Accent lighting: soft cyan LEDs along the interface seams and aperture ring. Wrist unit features an amber status indicator and navigational cyan thread-lights.",
+    "grip_texture": "Shoulder plate: textured polymer with moisture-wicking channels — designed for prolonged contact with tactical gear. Wrist interface: soft silicone over flex-mesh, ergonomic palm cup. Both surfaces have subtle grip ridging and a slightly tacky feel from ion-reactive coating.",
+    "distinctive_features": [
+      "Prismatic shimmer around the aperture when powered — visible ionic field suspension",
+      "Soft, almost inaudible hum emanating from internal piezo-acoustic cells (the 'lullaby's older sibling')",
+      "Four parallel vent channels along the shoulder mount housing for thermal dissipation",
+      "Twin BioCell cartridge ports on the dorsal surface — glowing faintly amber when charged",
+      "Neural feedback matrix visible through semi-transparent panel on wrist unit — thin filaments of conductive gel visible beneath protective resin",
+      "Targeting reticle projected onto operator's retinal overlay via the wrist interface (not visible on device itself)",
+      "Faint bioelectric luminescence at the aperture edge during calibration cycles"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo stamped in raised chrome lettering on the shoulder plate's upper surface. Serial number etched into the titanium frame near the cartridge ports. A small medical cross icon appears on the wrist interface — corporate branding attempting to emphasize the 'medical restraint' narrative. No other visible markings; HELIX deliberately avoids aggressive manufacturer iconography.",
+    "condition_typical": "Field units show light scarring on the housing, minor scuffs on the shoulder plate from repeated mount/dismount cycles. The ionic matrix channels remain pristine — they're self-cleaning. Most units show slight discoloration around the aperture from accumulated micro-particulate residue. Operator units are meticulously maintained; extraction team gear shows signs of professional care despite heavy use."
+  },
+  "image_prompt": "A Hydrostatic Nerve Cradle HNC-3 mounted on a black tactical stand, shot in three-quarter view. The device is matte gunmetal gray with brushed titanium accents, shoulder-mounted architecture with a prominent central aperture ringed in faint cyan LED indicators. Wrist interface visible nearby on the stand, displaying amber charge status. Dramatic side-lighting emphasizing the subtle pearlescent sheen of the bio-polymer housing and the faint blue-green oxidation at the aperture ring. A prismatic shimmer effect radiates faintly from the aperture mouth — rendered as soft iridescent waves in the air. Dark matte black background with subtle reflection. Cyberpunk medical-device aesthetic: sterile, precise, unsettling in its ergonomic cruelty. Shot in cold color grading with accent cyan and amber highlights. Product photography style, clinical precision. --ar 3:2 --v 6"
 }

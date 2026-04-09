@@ -44,5 +44,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Ouroboros Energy"
+  "parent_corponation": "Ouroboros Energy",
+  "related_entities": [
+    "Brecken Yılmaz-Osei",
+    "Carbon Fiber",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "GLMZ",
+    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
+    "Ouroboros Energy",
+    "Praevex",
+    "SafeStep Promenade Defender PD-2 'Elderwood'",
+    "The Shaft"
+  ],
+  "physical_description": {
+    "visual_profile": "An elegant walking cane of refined minimalist design—subtly tapered shaft with a slight curve at the handle, appearing indistinguishable from high-end mobility or fashion accessories. The silhouette reads as civilized luxury rather than weaponry at first glance.",
+    "dimensions": "Overall length: 90 cm. Blade length (concealed): 60 cm. Handle diameter: 3.2 cm. Shaft diameter: 2.8 cm tapering to 2.2 cm.",
+    "weight_description": "Surprisingly light and perfectly balanced for long-term carry. At 0.7 kg, it feels natural in hand during extended walking—no fatigue or awkwardness. The weight distribution is deliberately optimized for a gentleman's daily accessory rather than a combat tool.",
+    "primary_material": "Carbon-fiber composite shaft with titanium ferrule and handle fittings. The carbon weave is visible beneath the matte finish.",
+    "finish": "Satin-matte black carbon fiber with brushed titanium accents. The handle features a subtle grip section with fine crosshatching. Zero reflective surfaces—designed to absorb rather than catch light.",
+    "color_scheme": "Deep matte black primary with gunmetal-gray titanium fittings and inlays. Minimal branding restraint—only Ouroboros's signature ouroboros serpent motif subtly embossed on the lower shaft in raised carbon.",
+    "grip_texture": "The handle section features a finely cross-hatched titanium grip sleeve over the carbon core. Thin enough to appear delicate but textured to prevent slipping when twisted for the draw mechanism. Warm to the touch—not cold like bare metal.",
+    "distinctive_features": [
+      "90-degree twist-lock mechanism at handle base—barely perceptible mechanical detent when rotated",
+      "Subtle circular indicator window (2mm diameter) showing monomolecular edge status via color gradient (green: sharp, amber: degraded, red: requires service)",
+      "Titanium ferrule end with microscopic Ouroboros logo stamp",
+      "Barely-visible seam line running lengthwise where the blade-housing section separates during draw",
+      "Ouroboros serial number laser-etched on ferrule: visible only under direct light",
+      "Faint wear pattern on handle from repeated twist-draws—marks of an active user"
+    ],
+    "manufacturer_markings": "Ouroboros Solar Array Division logo embossed in satin relief on the lower shaft. Serial number laser-etched on the ferrule end. A holographic authenticity seal embedded in the titanium handle cap—iridescent, visible only at sharp angles.",
+    "condition_typical": "Well-maintained and meticulously clean. The matte finish shows no oxidation or damage. Owners of Φ8,000 accessories maintain them obsessively. Handle may show subtle wear from regular draw practice. The indicator window appears undamaged and readable—a maintained weapon ready for immediate use."
+  },
+  "image_prompt": "Professional product photograph of the Ouroboros CS-4 'Gentleman' walking cane held diagonally across the palm of a black-gloved hand against a dark charcoal surface. Dramatic side-lighting from upper left reveals the carbon-fiber weave and brushed titanium fittings. The cane appears elegant and refined—a luxury accessory first, weapon second. Close detail of the twist-lock mechanism visible at the handle, with subtle indicator window showing matte reflection. Ultra-sharp focus on the matte black finish and metal accents. Cyberpunk aesthetic: minimalist, expensive, perfectly maintained. Background dark and uncluttered. Lighting emphasizes the quality of materials and precision engineering. --ar 3:2 --v 6"
 }

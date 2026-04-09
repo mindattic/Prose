@@ -68,5 +68,24 @@
     "Subdermal Shear Projector SSP-1 'Faultline'",
     "The Riveters' Round",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting technical jacket with subtle paneling that betrays its protective function only upon close inspection. The outer membrane drapes with the natural ease of premium sportswear, yet the weight distribution and seam engineering mark it as specialized gear. At rest, it reads as high-end urban outerwear rather than armor—a deliberate design choice that obscures its true purpose.",
+    "dimensions": "Approximately 65 cm torso length, 180 cm shoulder span when worn; compact enough to roll into a 40 cm × 25 cm bundle when not in use",
+    "weight_description": "3.1 kg total; handheld when folded, worn as a comfortable jacket—no carrying strap necessary, though a reinforced interior anchor loop suggests optional sling attachment",
+    "primary_material": "Outer membrane: advanced polymer composite with embedded ceramic particulate coating; inner lamination layers house the shear-thickening fluid suspension in sealed micro-channels",
+    "finish": "Outer surface exhibits a subtle matte texture with light gray ceramic particulate visible under oblique lighting; areas show micro-abrasion patterns from ablative degradation. Interior reveals dark fabric backing with visible stitching and sealed channel demarcation lines.",
+    "color_scheme": "Primary: charcoal gray with subtle gunmetal undertones; accent panels in muted blue-black along seams and shoulder geometry; cream-colored chemical indicator strip visible at interior collar",
+    "interface_elements": "Minimal visible controls—functionality is passive. Chemical indicator strip at inner collar (cream baseline, shifts to orange-red when fluid integrity drops). Small embossed pressure-test ports at sternum and lower ribs allow manual fluid distribution verification. Arcturus branding debossed into upper back panel.",
+    "distinctive_features": [
+      "Near-invisible seam topology that traces the shear-thickening suspension channels—visible only as subtle raised lines under certain angles of light",
+      "Ceramic ablative coating exhibits a faint granular shimmer in bright light, appearing almost like fine dust embedded in the fabric",
+      "Chemical indicator strip integrated into interior collar tag, color-shift visible through translucent inspection window",
+      "Pressure-test ports with small rubber access covers marked with Φ symbol (QUANTA cost reference)",
+      "Asymmetrical shoulder and torso articulation suggests purposeful body geometry optimization"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions hexagonal logo embossed on upper back; Aegis Vehicle Works sub-manufacturer stamp on interior seam; GLMZ compliance certification hologram (2.5 cm diameter) on right inner pocket; Class IIIA ballistic equivalent notation printed in micro-text on interior chest panel",
+    "condition_typical": "In active use, surfaces show fine scuffing and micro-damage consistent with urban wear; ablative coating exhibits powder residue and abrasion patterns in wear zones; indicator strip remains cream-colored on well-maintained examples, showing orange discoloration on units near service threshold"
+  },
+  "image_prompt": "Overhead product photography of a Reactive Shear Mantle laid flat on a brushed steel workbench under cool LED accent lighting. The jacket is positioned to showcase both exterior and interior simultaneously—one half draped to reveal the matte gray ceramic-particulate outer surface with subtle ablation marks, the other flipped to display the dark backing fabric and visible seam channel topology. A chemical indicator strip glows faintly cream-colored at the interior collar. Soft blue-black shadows emphasize the seam geometry. In the background, a GLMZ corporate security officer's silhouette wears an identical Mantle. Dramatic side-lighting reveals the micro-textured finish and embedded channel precision. Cyberpunk aesthetic: cool color grading, neon-adjacent accent lighting on the holographic compliance seal, clean minimalist presentation. --ar 3:2 --v 6"
 }

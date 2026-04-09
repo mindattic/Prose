@@ -49,5 +49,29 @@
     "Lazarus IDP-1 'Teeth'",
     "Lazarus LX-2 'Lab Rat'",
     "Yusra Ntambwe-Cakić"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, asymmetrical tactical ensemble designed for augmented bodies. The mid-length jacket dominates with its structured silhouette and dramatic rear vent, creating a predatory, ready-for-movement aesthetic. Wide hip cut and long lines read as purposefully concealing. The full outfit presents as dark, matte, and deliberately non-reflective — built to vanish into shadow.",
+    "fit": "Oversized through the chest and hip with tailored articulation at the thighs and ankles. The dorsal vent runs center-back without constraining movement. Jacket sleeves are precisely cut to allow weapon access. Trousers sit relaxed at the waist but taper with intentional bias at the calf.",
+    "primary_material": "Matte thermal-neutral ballistic weave jacket exterior; scanner-diffusing baffled lining. Base layer in treated synthesis-cotton. Trousers in reinforced dark-dyed composite twill. Boots in matte anthracite synth-leather with pressure-resistant sole structure.",
+    "texture": "Jacket exterior is smooth and matte with subtle horizontal grid texture from scanner baffling visible through strategic gaps. Base layer shows fine ribbed texture. Trouser fabric has a soft nap finish. Boot leather is grainy and deliberately scuffed to avoid light reflection.",
+    "color_scheme": "Primary palette: deep teal-grey jacket, charcoal base layer, dark olive trousers, anthracite boots. Accent: dark indigo waist wrap. Overall monochromatic with cool undertones — designed to blend urban concrete and shadow.",
+    "closures": "Continuous pressure-release dorsal zipper on jacket (single-hand operable, thermally neutral teeth). Magnetic snap chest pockets. Friction-fit weapon channels. Adjustable velcro-and-snap ankle closures on boots. Wrap waist secured with tactical toggle release.",
+    "distinctive_features": [
+      "Full-length dorsal vent with pressure-release zipper accommodating tails up to 90cm",
+      "Four concealed weapon channels (two chest, left hip cross-draw, lower-right compact sidearm)",
+      "Scanner-diffusing baffled interior lining",
+      "Bioluminescence-dampening panels on forearms and collar (70% light reduction)",
+      "Reinforced tail-channel waistband on trousers",
+      "Articulated thigh sections for dynamic movement",
+      "Segmented sole on boots for acoustic dampening",
+      "Detachable indigo waist wrap with distraction-throw capability",
+      "Deep cargo pockets with internal dividers",
+      "Thermally neutral zipper compound for infrared evasion"
+    ],
+    "tier_indicator": "Tier 3-4 functional with Tier 2 technical specifications. Expensive enough to indicate professional runner status, but street-manufactured rather than corpo-produced. Price point: mid-range professional gear.",
+    "cultural_context": "Street runner culture, specifically genemod community and augmented population. Signals: tactical expertise, visible biological modification, active evasion operations, underground collective loyalty. Worn by those who move through restricted spaces and need to move fast. Anti-corpo aesthetic with practical black-ops functionality.",
+    "condition_typical": "Broken-in but meticulously maintained. Jacket shows minor scuffing on shoulders and hem from use. Zipper track may show subtle wear. Base layer potentially shows faint bioluminescent staining if wearer's mods are active. Boots develop characteristic creasing but remain functionally pristine. Overall: field-ready, not showroom."
+  },
+  "image_prompt": "Fashion photography of a cyberpunk Duskframe Tailvent Infiltration Set on an androgynous model with visible bioluminescent skin (subtle glow along cheekbones and collarbone). Model shot in three-quarter profile against a dark industrial warehouse backdrop with wet concrete and neon blue accent lighting. Jacket dorsal vent is unzipped to reveal the charcoal base layer, with model's synthetic tail (translucent bioluminescent, approximately 80cm) extended and threaded through the vent channel. Footwear close-up shows segmented boot sole texture. Overhead warehouse lighting casts sharp shadows. Color grade: deep teals and charcoals with cool cyan rim lighting. Moody, tactile, professional runner aesthetic. --ar 2:3 --v 6"
 }

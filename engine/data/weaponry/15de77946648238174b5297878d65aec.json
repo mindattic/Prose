@@ -47,5 +47,35 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Acoustic Marrow Shear Rifle AMSR-6 'Tutor'",
+    "Crucible Industries CX-1 'Golem'",
+    "GLMZ",
+    "ShieldTech SB-3 'Groundstrike'",
+    "TESSERA PG-2 'Signature'",
+    "The Lakeshore Corridor",
+    "The Shelf"
+  ],
+  "physical_description": {
+    "visual_profile": "A skeletal, brutalist recurve bow with pronounced curves at both limbs. The riser is a bare amalgamation of welded steel and polymer plates, held together with visible cable ties and industrial rivets. The limbs curve back sharply, almost menacing, giving it a predatory insect silhouette. There's nothing sleek about it — every element screams improvised survival engineering.",
+    "dimensions": "Overall length 160-180 cm. Riser width 4-6 cm, limb thickness 2-3 cm. Draw depth approximately 25 cm at full draw. Arrow shelf 8-10 cm from riser centerline.",
+    "weight_description": "Hefty but not unwieldy — 1.2 to 1.8 kg distributed along the limbs makes it feel alive in the hands, with tension always present. The weight bias toward the limb tips creates a sense of coiled spring potential.",
+    "primary_material": "Layered automotive leaf spring steel forming the limbs; welded steel plate and scrap polymer composite for the riser; industrial aircraft cable for the bowstring (typically 3-4mm diameter, frayed at the nocking points).",
+    "finish": "Battle-worn and oxidized. Primary limbs show varying degrees of rust patina — some areas polished by handling, others streaked with red oxide. The riser is a patchwork: bare welded seams with scale, areas of chipped black paint, bare polymer showing through worn synthetic coating. No protective lacquer — just raw material aged by exposure.",
+    "color_scheme": "Charcoal to gunmetal gray limbs with rust-orange patina streaks. Riser a chaotic mixture of black primer, bare steel silver, and tan/cream polymer. Cable bowstring appears worn hemp-brown with frayed gray fibers at the nocking loops.",
+    "grip_texture": "Rough and intentional — wrapped with water-damaged athletic tape or fabric strips, textured for purchase without slip. Some builders use bare welded steel, which is unforgiving but honest. The grip surface is never smooth; every hand that's held it has left micro-abrasions.",
+    "distinctive_features": [
+      "Asymmetrical limb curves reflecting the specific leaf springs salvaged",
+      "Three-point cable attachment system using crimped steel ferrules and safety wire",
+      "Arrow shelf fashioned from a single piece of beveled spring steel, sharp edges filed smooth by use",
+      "Nocking points marked with wrap-around tape or burned-in leather burns — no paint (paint flakes in the rain)",
+      "Visible stress cracks in the limb material, deliberately reinforced with backing cable to prevent failure",
+      "Crude sight reference — sometimes just a file mark on the riser, sometimes a tiny notch cut by the builder",
+      "No manufacturer nameplate — only crude scratch marks or burn marks identifying the builder (if at all)"
+    ],
+    "manufacturer_markings": "Unmarked or bearing only the builder's street tag burned into the riser with a heating element. Some Gallows carry initials filed into the limb or welded steel plate, but not for traceability — purely for builder pride. No serial numbers. No regulatory stamps.",
+    "condition_typical": "Field-worn and deliberately maintained in that state. Minimal cleaning — rust is armor against corrosion investigation. String shows wear at nocking points, limbs display micro-cracks from stress cycling but remain structurally sound. This is a weapon that looks broken until you draw it and feel the stored energy — then it becomes brutally sophisticated."
+  },
+  "image_prompt": "Product photograph of a handmade recurve bow constructed from salvaged automotive leaf springs and industrial steel, riser wrapped in worn fabric tape, bowstring frayed industrial cable. Positioned diagonally across a dark charcoal concrete surface, held at the riser by a gloved hand (black leather, chrome-reinforced knuckles suggesting cyberpunk augmentation). Dramatic side-lighting from upper left, casting deep shadows along the limb curves and highlighting the rust patina and welded seams. Background soft-blurred urban cyberpunk: distant neon glow suggesting rooftop perch in the Shelf district. Raw, unfinished materials contrasted against sleek gloved augmentation. Gritty, anti-corporate aesthetic. Zero polish, maximum lethality. --ar 3:2 --v 6"
 }

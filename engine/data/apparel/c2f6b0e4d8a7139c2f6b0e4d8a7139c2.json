@@ -47,5 +47,24 @@
     "The Shelf",
     "Tshiamo Vukić-Arellano",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Deceptively minimal athletic vest with a clean, understated silhouette. From the front, indistinguishable from casual layerwear—the kind worn by Tier 2-3 workers for extra insulation under jackets or alone in summer. No visible logos, no tactical aesthetic. Reads as practical, not threatening. The interior tells a different story.",
+    "fit": "Slim but not tight; cut to layer cleanly over a standard shirt without bunching. Sits just above the hip, leaving torso mobility untouched. Designed to be unremarkable under a coat or worn solo without drawing attention.",
+    "primary_material": "Matte synthetic shell (likely recycled polyester blend or ballistic-weave composite), smooth-faced exterior with minimal texture. Interior lining is heavier-gauge, reinforced at chest and side panel zones.",
+    "texture": "Exterior: smooth, almost matte, with a slight friction grip to prevent sliding. Interior: subtle quilting where ballistic reinforcement runs; concealment pockets have discreet edge-binding to prevent snagging.",
+    "color_scheme": "Matte black (primary) or deep olive. No contrasting trim, no branding. Designed to vanish into any urban wardrobe.",
+    "closures": "Single-track metal zipper, matte-black finish, smooth pull. No visible snap points or tactical hardware. Zips fully from collar to hem.",
+    "distinctive_features": [
+      "Four flat internal concealment pockets: two chest-width (compact sidearm or folded documents), two flank-positioned (blade sheath, tech module, or secondary storage)",
+      "Reinforced ballistic panel at chest—light-grade, stops low-velocity handgun rounds and shrapnel but not rifle fire",
+      "Zero external branding; Ironmarrow trust-mark is interior neck label only",
+      "Zippered access pockets designed so contents don't print through fabric",
+      "Slight structural padding at shoulders and chest that mimics athletic wear, not armor"
+    ],
+    "tier_indicator": "Tier 3 functional. Priced for working-class carry. Signals practical street sense, not corporate wealth or sub-grade desperation.",
+    "cultural_context": "Street-level fixers, off-duty security personnel, couriers moving sensitive cargo, anyone who has decided discretion matters more than display. Worn by people with reasons but not spectacle. Marks the wearer as someone who thinks ahead without advertising it.",
+    "condition_typical": "Pristine to broken-in. Ironmarrow quality means it wears well. Most units show minimal fading after months of use. Worn seams are rare. The vest ages into its purpose rather than degrading."
+  },
+  "image_prompt": "Close-fitting black synthetic tactical conceal vest displayed on a dark urban mannequin or worn by a lean cyberpunk model with subtle augmentation (thin neck cable, chromed fingers). Moody blue-grey warehouse lighting casting sharp shadows. Vest unzipped slightly to hint at interior pocket construction. Textured concrete wall and industrial piping in background. Rain-slicked surfaces, neon glint on metal fixtures. High contrast, cyberpunk noir aesthetic. No logos visible. --ar 2:3 --v 6"
 }

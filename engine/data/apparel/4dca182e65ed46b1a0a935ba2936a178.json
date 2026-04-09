@@ -38,5 +38,25 @@
     "TESSERA ES-4 'Perimeter'",
     "TESSERA PG-2 'Signature'",
     "The Registry"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately forgettable silhouette—austere and recessive. The wearer becomes a negative space in the room: a flat charcoal figure that the eye slides past. The uniform's effect is psychological; it reads as 'present but not there.' Slim, efficient lines from shoulder to ankle create the impression of someone built for observation rather than action.",
+    "fit": "Close-cut and compression-oriented without being restrictive. The shirt hugs the torso and shoulders; the trousers taper slightly at the ankle. Designed for unrestricted movement during long surveillance shifts, but tailored enough to maintain a professional boundary. Sits somewhere between athletic and formal—neither quite accessible.",
+    "primary_material": "Matte microfiber engineered with light-absorption properties. Feels dense and smooth to the touch but has an almost non-reflective quality under any lighting condition. The fibers are treated to reduce light bounce, making the uniform visually 'quieter' than standard fabrics.",
+    "texture": "Completely smooth and featureless at a distance; up close, a tight microfiber weave with almost imperceptible surface variation. No shine, no sheen, no texture that catches light. Deliberately austere.",
+    "color_scheme": "Flat, desaturated charcoal throughout—no accent colors, no piping, no variation. A single tone chosen to blend into shadows and corporate interiors alike. The uniformity is absolute.",
+    "closures": "Magnetic closures on both chest pockets (silent, secure, no audible click). The shirt itself closes with a friction-fit magnetic collar system that leaves no visible seams. Trousers feature a standard magnetic waistband closure, unmarked.",
+    "distinctive_features": [
+      "Integrated signal-dampening layer in the collar—invisible to the eye but disrupts BCI handshake emissions within a one-meter radius",
+      "Reinforced knee panels (subtly darker, barely visible) for durability during extended surveillance work",
+      "Laser-etched Vantablack registry code inside the collar—the only identifying mark, meant to be found only on inspection",
+      "Sealed magnetic chest pockets with no visible hardware",
+      "Absence of any corporate branding, logos, or visual markers—complete anonymity by design",
+      "Microfiber engineered to absorb ambient light at a higher rate than standard materials"
+    ],
+    "tier_indicator": "Tier 3-4 functional—not luxury, but precision-engineered and expensive in ways only other operatives would recognize. The cost is in the materials and the silence, not in visible status markers.",
+    "cultural_context": "Worn by the invisible layer of Vantablack's security apparatus—perimeter and surveillance personnel who are meant to be forgotten the moment they're no longer in direct line of sight. Signals corporate surveillance infrastructure, unglamorous but essential fieldwork, and participation in the hidden scaffolding of corpo power. The wearer is present but psychologically absent—a tool rather than a person in the eyes of those around them.",
+    "condition_typical": "Impeccably maintained and worn. No patching, no weathering, but constant use. The fabric shows the faintest scuff marks at the knees and elbows—evidence of surveillance work in industrial and corporate settings. Each uniform is rotated and cleaned to maintain optimal light-absorption properties."
+  },
+  "image_prompt": "Midjourney fashion photography: A lithe androgynous figure in a flat charcoal microfiber uniform—close-cut long-sleeve shirt and reinforced trousers—standing in shadow against a brutalist corporate lobby or dimly-lit transit hub. The fabric absorbs light unnaturally, creating an almost void-like silhouette. Moody tungsten and neon backlighting emphasizes the uniform's ability to recede visually. Subtle magnetic closures catch the faintest reflection. The model's expression is neutral, professional, forgettable. Dark urban cyberpunk aesthetic, clean lines, cold color temperature, atmospheric perspective. Fashion photography with an unsettling sense of erasure. --ar 2:3 --v 6"
 }

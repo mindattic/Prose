@@ -74,5 +74,24 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "TESSERA CR-12 'Whisper'",
     "TESSERA PG-2 'Signature'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A slim, disc-shaped relay module resembling a large commemorative coin or industrial button. The face is dominated by a subtle holographic mesh pattern that shifts between deep indigo and cyan when light catches it. The perimeter features a barely-visible micro-suction backing ring. Minimalist industrial design with no visible seams or screws.",
+    "dimensions": "28mm diameter, 4mm thickness — coin-sized, pocketable in quantities",
+    "weight_description": "6g per unit; negligible weight, designed for adhesive deployment on any surface without structural stress",
+    "primary_material": "Biodegradable polymer composite matrix with embedded graphene mesh conductors and rare-earth trace elements",
+    "finish": "Matte charcoal base with iridescent holographic topcoat; micro-textured to prevent fingerprinting and light reflection during deployment",
+    "color_scheme": "Gunmetal gray primary; holographic shift pattern in deep indigo, cyan, and violet that activates under ambient light",
+    "interface_elements": "Single status LED cluster (3mm) positioned at 12 o'clock position — cycles through green (active), amber (searching), and red (compromised); micro-contact pads on reverse for optional hardwired integration; no user-facing controls",
+    "distinctive_features": [
+      "Holographic mesh pattern that mimics circuit topology — active shimmer indicates transmission state",
+      "Micro-suction backing appears as concentric ring impressions, nearly invisible unless backlit",
+      "LED status indicator housed in a recessed well to minimize external visibility",
+      "Zero-profile edge design — sits flush against walls, infrastructure, vehicle underbodies",
+      "Surface exhibits faint thermal gradient coloring under IR (intentional noise signature)"
+    ],
+    "manufacturer_markings": "RINGO CORPONATION embossed in 1mm serif font at 6 o'clock position; Φ price marking on blister packaging only, never on units themselves; FCC/GLMZ regulatory exemption stamp on packaging",
+    "condition_typical": "Deployed units adhere to vertical surfaces, infrastructure conduits, undercarriage panels, or concealed ledges; clusters of 2-8 nodes visible as thin holographic discs in low-light scanning; individual units invisible to naked eye at distances >2 meters unless actively transmitting (LED status pulses)"
+  },
+  "image_prompt": "Product photography of a Ringo Corponation Drift Mesh Node: a coin-sized holographic disc positioned on a rain-slicked industrial surface, surrounded by a scattered blister pack of 11 additional units. Dramatic side-angle lighting from neon blue source reveals the iridescent mesh pattern shimmering across the primary unit's surface; status LED glowing soft green. Background shows weathered concrete infrastructure and chrome conduit piping, cyberpunk urban decay aesthetic. Shallow depth of field isolates the hero unit in sharp focus. Scattered water droplets catch the holographic refraction. Dark, moody GLMZ warehouse setting with overhead gantry lighting creating hard shadows. Shot from 45-degree angle to emphasize the paper-thin profile. Cinematic color grading with desaturated browns and amplified cyan/indigo accent lighting. --ar 3:2 --v 6"
 }

@@ -42,5 +42,35 @@
     "EMP-immune",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Crucible Genomics",
+    "Ferrogate Enforcer Cruiser",
+    "GLMZ",
+    "Patient Zero",
+    "Svetlana Boateng-Quiñonez",
+    "TESSERA PG-2 'Signature'",
+    "The Collective"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist double-bitted thermal axe with a pronounced symmetrical head design. Both cutting edges glow with contained heat, visible as a faint orange corona around the blade tips. The handle tapers from a thick, gripped midsection to a counterbalanced butt. The overall silhouette reads as deliberately functional — no ornamentation, pure purpose.",
+    "dimensions": "Total length: 70 cm (handle 55 cm + head assembly 15 cm); blade width per edge: 15 cm; head depth (front to back): 12 cm",
+    "weight_description": "Hefty but balanced. The 2.2 kg mass distributes evenly across the double-bitted head and reinforced handle, making it manageable for sustained rotational strikes despite the thermal load it carries.",
+    "primary_material": "Hardened steel frame for the head assembly; carbon-composite reinforced polymer for the handle core with steel spine running through the length for structural integrity",
+    "finish": "Battle-worn brushed steel on the axe head with heat-stress discoloration — blues and browns marking the thermal cycling. The handle shows scuffed matte black polymer coating with exposed wear patches revealing raw composite beneath.",
+    "color_scheme": "Steel gray and charcoal black primary; orange-amber heat glow at the blade edges; copper-toned ferrocerium cell casing visible through a reinforced viewport near the handle base",
+    "grip_texture": "Textured rubberized polymer with grooved finger channels; the grip itself is wrapped with thin heat-resistant aramid cord providing additional purchase and thermal dissipation",
+    "distinctive_features": [
+      "Dual cutting edges positioned on opposite sides of the axe head, each independently heated",
+      "Visible ferrocerium fuel cell casing at handle base with a small pressure-relief vent",
+      "Heat-stress coloration on blade surfaces (oxidized blues and purples from repeated thermal cycling)",
+      "Thermal shimmer visible around blade edges when activated",
+      "Carved registration marks on the handle for alternating strike position tracking",
+      "A small rotation collar at the head junction allowing the wielder to track which edge is 'hot'",
+      "Dried cauterized residue (dark brown/black) staining the blade edges from previous use"
+    ],
+    "manufacturer_markings": "FORGE-SMITH COLLECTIVE stamped in clean sans-serif font on the handle spine, approximately 20 cm from the grip. A serial plate (brushed aluminum) mounted on the lower handle near the fuel cell shows etched production lot number and activation date. The maker's personal mark — a small smith's hammer icon — is hand-engraved near the blade root.",
+    "condition_typical": "Well-maintained but clearly field-used. The weapon shows deliberate care in its primary structure but bears the honest scars of repeated thermal cycling and impact. No jury-rigging; this is a tool kept in reliable working condition by someone who understands its value."
+  },
+  "image_prompt": "Product photography of a double-bitted thermal axe laying across a dark matte surface, shot from a 45-degree angle. The steel axe head catches dramatic side-lighting with warm tungsten highlights revealing heat-stress coloration — blues, purples, and copper tones. The blade edges glow faintly orange, suggesting active thermal charge. The carbon-composite handle lies in cooler shadow, textured rubberized grip visible with aramid cord wrapping catching light. Ferrocerium fuel cell casing at the handle base shows metallic copper reflection. Slight thermal shimmer effect around the cutting edges. Cyberpunk industrial aesthetic. Shallow depth of field. Shot on dark charcoal background. --ar 3:2 --v 6"
 }

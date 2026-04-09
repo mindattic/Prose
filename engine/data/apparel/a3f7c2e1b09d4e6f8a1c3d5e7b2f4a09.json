@@ -48,5 +48,26 @@
     "Réginald Asomaning-Čabarkapa",
     "Sable Dzokoto-Mirković",
     "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian face shield with an industrial, brutalist aesthetic. The amber lens dominates the front, casting a warm, aged glow. Asymmetrical and deliberately imperfect, it reads as functional armor rather than fashion—the kind of gear worn by people who can't afford to look polished. Worn low on the face like a welder's shield, it conveys both protection and a certain street credibility.",
+    "fit": "Loose and adjustable via salvaged buckle straps; sits firmly across the eyes and bridge of nose without being constrictive. The conveyor belt straps wrap around the back of the head with friction-fit adjustment, allowing for quick removal or repositioning.",
+    "primary_material": "Salvaged welding visor glass (amber-tinted), stripped industrial conveyor belt rubber, flattened tin drum material for frame reinforcement, hand-applied resin patches",
+    "texture": "Rough and tactile—the glass is smooth but dulled by age and acid rain, the rubber straps are worn and slightly cracked, the tin frame shows visible weld seams and rivet heads. The resin patch has a waxy, yellowed quality. Overall: deliberately unrefined.",
+    "color_scheme": "Dominant amber/golden-brown from the lens, creating a warm, murky visual tone. Gunmetal gray and rust-orange from the welded metal frame and rivets. Faded tan/cream from the aged resin patches. The rubber straps are weathered black with hints of brown oxidation.",
+    "closures": "Riveted buckles (salvaged from industrial equipment) replace original adjustment mechanisms. Secondary friction-fit straps for head tension. No traditional fasteners—fully manual.",
+    "distinctive_features": [
+      "Cracked corner of lens patched with hand-applied yellowed resin",
+      "Multiple visible weld beads where frame has been broken and re-joined",
+      "Oversized rivets at stress points, some slightly misaligned",
+      "Acid rain weathering on lens surface creating micro-etching effect",
+      "Faint solder flux and rust inhibitor patina visible in crevices",
+      "Asymmetrical silhouette from repair history",
+      "No branding—pure utilitarian function"
+    ],
+    "tier_indicator": "Tier 5 sub-grade salvage. This is ungoverned-sector gear, fabricated from industrial waste by informal collectives. No corporation would manufacture or endorse this.",
+    "cultural_context": "Signals someone operating in the Shelf (sub-grade industrial zones). Worn by scrappers, informal fabricators, black-market welders, and those who live outside corpo infrastructure. Conveys self-sufficiency, technical competency, and a willingness to work with dangerous equipment. A badge of survival rather than status.",
+    "condition_typical": "Perpetually weathered and patched. Users expect cosmetic damage and ongoing maintenance. The shield looks better the more scars it carries—each weld bead is a story of field repair."
+  },
+  "image_prompt": "A Tier 5 cyberpunk scavenger wearing the Scrapweld Buckle-Visor MK-1, face obscured by the amber-tinted welding shield. Close-up shot emphasizing the cracked lens, visible weld seams, and rusted rivets. Dark industrial warehouse backdrop with overhead warning lights casting amber and red shadows. Moody, grainy texture suggesting acid rain-weathered surfaces. Shot against a grimy metal wall, one visible augmented hand adjusting the visor strap. --ar 2:3 --v 6"
 }

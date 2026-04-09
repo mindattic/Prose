@@ -40,5 +40,26 @@
   "parent_corponation": "",
   "related_entities": [
     "Immaculée Dalgaard-Nwosu"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek, minimalist low-top silhouette with a subtle platform effect. The shoe reads as effortlessly contemporary — neither aggressively techwear nor casual-slouch. Clean lines and restrained proportions make it work across corpo and street contexts without compromise.",
+    "fit": "Snug through the midfoot with a slightly tapered toe box. The elevated sole (approximately 1.2cm) provides subtle lift without bulk. Designed for precision fit via auto-lace rather than manual adjustment.",
+    "primary_material": "Smooth, tightly woven synthetic textile upper — supple and durable. Sole is responsive polymer composite with embedded micro-motor housing visible as discrete seams along the lacing channel.",
+    "texture": "Glossy-finish synthetic weave with a barely-there sheen. Upper has minimal texture variation; deliberately uniform. Lace channels are reinforced with thin haptic-feedback strips that respond to motor engagement.",
+    "color_scheme": "Available in Tier 1-appropriate colorways: pure white, matte black, or warm stone gray. Accent stitching in muted silver or graphite. No branding except small embossed Calloway logo on heel collar.",
+    "closures": "Embedded micro-motors in the lace channels activate via capacitive touch nodes (heel and toe) or direct BCI interface. Manual lacing holes present as backup. No traditional lace knots — polymer strands auto-tension or release.",
+    "distinctive_features": [
+      "Touch-responsive lace engagement zones (heel and forefoot)",
+      "Barely-visible motor housings along lace channels",
+      "Reinforced midfoot panel suggesting integrated flex sensors",
+      "Haptic feedback strips for proprioceptive lacing confirmation",
+      "Magnetic heel tab for quick release",
+      "Minimalist branding — Calloway logo debossed only on collar interior",
+      "Micro-articulation sole designed for extended walking comfort"
+    ],
+    "tier_indicator": "Tier 1-2 luxury. The price point and BCI integration signal high disposable income and corpo-proximity. Not accessible to working-class or sub-grade populations.",
+    "cultural_context": "Worn by mid-to-senior corpo staff, affluent independents, and augmentation-forward professionals who value seamless tech integration. Signals confidence and discretionary spending without ostentation. The kind of shoe you wear when you're already assumed to be important.",
+    "condition_typical": "Pristine or very lightly worn. Calloway materials resist visible scuffing. Lace channels remain immaculate; motors are sealed and require professional service. Cosmetic aging is minimal across first 18 months of ownership."
+  },
+  "image_prompt": "Fashion photograph of a Calloway Pressline Auto-Lace Sneaker displayed on a pale augmented foot or dark minimalist mannequin leg. Close-up shot showing lace channel detail and subtle motor housing. Moody overhead lighting with soft shadows. Matte dark background with faint blue accent glow along the lace zones. Hyperclean product presentation suggesting Tier 1 luxury. Shallow depth of field. Shot against a brushed steel or darkened glass surface. Cyberpunk aesthetics — minimal, clinical, precise. --ar 2:3 --v 6"
 }

@@ -56,5 +56,40 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions EL-9 'Heron'",
+    "Breck Tannen",
+    "GLMZ",
+    "Jedidiah Sorokin-Faleolo",
+    "Nurlan Holmberg-Dembele",
+    "Ouroboros Energy ThermalSink UR-3 District Waste Heat Exchange Network",
+    "Réginald Asomaning-Čabarkapa",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Synaptrel",
+    "TESSERA ES-4 'Perimeter'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, medical-adjacent device with predatory lines—resembles a high-end diagnostic scanner crossed with a directed-energy rifle. The form factor is elongated and purposeful, with a pronounced emitter head that tapers to a crystalline focusing lens array. Despite its lethal purpose, it carries an unsettling clinical aesthetic, like a piece of surgical equipment weaponized.",
+    "dimensions": "119 cm overall length (collapsed stock: 94 cm). Emitter head depth: 8 cm. Width across lens array: 12 cm.",
+    "weight_description": "Hefty but surprisingly balanced—4.7 kg distributed along the length. The power pack sits forward, creating intuitive pointing characteristics. Feels deliberate in the hand, not unwieldy.",
+    "primary_material": "Titanium-reinforced polymer chassis with precision-machined aluminum alloy emitter housing. Internal crystalline lens stack mounted in thermally conductive ceramic matrix.",
+    "finish": "Matte gunmetal gray with brushed-finish aluminum accents around the emitter. The lens array gleams faintly—precision optics visible beneath hardened sapphire windows. Minimal chrome, mostly industrial matte.",
+    "color_scheme": "Gunmetal gray body with arctic-white LED status indicators arrayed along the upper rail. Emitter head: deep graphite with silver lens bezels. Accents of cold cyan on the power coupling.",
+    "grip_texture": "Textured rubberized polymer with integrated finger grooves—medical-instrument grip, not tactical. Wrapped in a thin thermally conductive mesh that dissipates heat from the sustained-fire cycle.",
+    "distinctive_features": [
+      "Multi-element ultrasonic lens array visible through protective sapphire window—arranged in precise concentric rings",
+      "Millimeter-wave scanner aperture recessed above grip—flat black sensor face with faint grid pattern",
+      "Status LED strip (cyan/amber/red) indicating power state, targeting lock, and sustained-fire duration",
+      "Collapsible stock mechanism with spring-loaded articulation—folds under 30 seconds",
+      "Heat-dissipation vents along the barrel—subtle linear striations",
+      "Power coupling dock (underside rear)—aerogel insulation visible in socket",
+      "Subtle Zheng-Dao characters etched into emitter collar—professional, almost invisible",
+      "Faint ultrasonic emission whine when powered (inaudible to most humans at distance)"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo in micro-print on the power pack shroud. Regulatory compliance stamps (civil medical device certification) faintly visible on the stock. Serial designation laser-etched on emitter collar in traditional characters and numeric code.",
+    "condition_typical": "Well-maintained when fielded. No battle scarring typical—the weapon doesn't take impact damage gracefully. Usually shows minor dust accumulation on lens sapphire (cleaned obsessively by operators). Power couplings show signs of frequent charge-dock use. Thermal scuff marks around vents from sustained-fire cycles."
+  },
+  "image_prompt": "Product photograph of a medical-grade ultrasonic directed-energy weapon, titanium-polymer chassis in gunmetal gray, mounted on a dark carbon-fiber display stand. Close-up detail of the precision lens array glowing faintly cyan under dramatic side-lighting. Sapphire emitter window catching light like a surgical instrument. Millimeter-wave scanner aperture visible along the upper rail. Collapsed stock folded beneath the receiver. Cyberpunk aesthetic with clinical coldness—no gore, pure technological menace. Shot on high-contrast black background with rim-lighting emphasizing the lens geometry and metallic curves. Mounted in latex-gloved hand in second frame for scale. Professional armory documentation style. --ar 3:2 --v 6"
 }

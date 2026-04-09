@@ -44,5 +44,40 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "GLMZ",
+    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Mika Sorel",
+    "Nika Svensson-Kone",
+    "Nodar Kuznetsov-Adu",
+    "Tessera Nexus Town Car",
+    "Tessera TK-20 Apex 'Mandate'",
+    "The Human Baseline Alliance",
+    "The Transparency Mandate"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modern assault rifle with aggressive angular geometry. The receiver tapers slightly toward the muzzle, giving it a predatory silhouette. The integrated BCI port creates a distinctive raised module along the upper receiver. Overall impression: corporate precision meets combat pragmatism — expensive, purposeful, and designed for sustained fire.",
+    "dimensions": "Overall length: 94 cm | Barrel length: 41 cm | Width at receiver: 6.2 cm | Height with BCI module: 8.1 cm",
+    "weight_description": "Balanced and surprisingly manageable at 3.4 kg — the polymer-ceramic construction keeps it light without feeling fragile. Hangs naturally in a two-handed grip, with weight distributed evenly between receiver and barrel.",
+    "primary_material": "Polymer-ceramic composite receiver with steel barrel and bolt carrier group. Helical magazine housing is reinforced thermoplastic.",
+    "finish": "Matte gunmetal grey with brushed steel accents on the barrel and bolt carrier. The polymer-ceramic receiver has a subtle pearlescent sheen under direct light, hinting at its advanced composite construction.",
+    "color_scheme": "Gunmetal grey primary | Steel grey barrel | Glossy black polymer furniture and grip | White/silver manufacturer markings",
+    "grip_texture": "Textured polymer grip with shallow horizontal ridges for positive purchase even in wet conditions. The ergonomic curve fits naturally into a palm.",
+    "distinctive_features": [
+      "Raised BCI neural-link module integrated flush into the upper receiver — circular port with data contact pins visible",
+      "Helical magazine with transparent polymer body showing 6.5mm caseless rounds stacked in spiral pattern",
+      "Charging handle positioned ambidextrous, recessed flush when not in use",
+      "Rail-less upper receiver — aesthetic of streamlined minimalism",
+      "Three small LED indicator ports (power, safety, target-lock) near the BCI module",
+      "Caseless ammunition feed system visible through magazine well — no brass ejection port",
+      "Muzzle slightly flared with recoil mitigation vanes",
+      "Ferro-ceramic heat sink band wrapped around mid-barrel, barely visible beneath finish"
+    ],
+    "manufacturer_markings": "\"ARCTURUS DEFENSE SOLUTIONS\" stamped in sans-serif block letters along the left side of the receiver. \"AR-7 MANDATE\" engraved above the magazine well. Serial number laser-etched into the polymer furniture. Small Arcturus corporate sigil (stylized A with crosshairs) printed near the charging handle.",
+    "condition_typical": "Field-maintained and well-used. Most combat Mandates show wear on the grip texture, minor scratches on the muzzle, and discoloration around the magazine well from repeated loading cycles. Operators tend to keep them clean — IFF transponder circuits require maintenance. Grey market units often have the BCI module gutted or disabled, leaving visible scarring where the port was sealed."
+  },
+  "image_prompt": "Product photograph of the Arcturus AR-7 Mandate assault rifle positioned at 45-degree angle on dark gunmetal surface. Weapon held in left gloved hand (tactical glove, black leather with reinforced palm), right side facing camera. Dramatic side-lighting from upper left creating sharp shadows across the receiver and emphasizing the matte gunmetal finish. LED indicator lights near the BCI module subtly glowing ice-blue. 40-round helical magazine loaded, transparent polymer showing the spiral arrangement of 6.5mm caseless rounds backlit with soft amber. Background: blurred GLMZ cityscape (neon signs, chrome architecture) in deep blues and purples. Foreground: scattered 6.5mm caseless cartridges on brushed steel surface. Style: corporate product photography meets cyberpunk grit, clean professional lighting with tactical detail emphasis. Cinematic color grading with cool tones and high contrast. --ar 3:2 --v 6"
 }

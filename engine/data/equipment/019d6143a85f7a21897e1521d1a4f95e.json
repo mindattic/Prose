@@ -82,5 +82,24 @@
     "Tessera Industries Memory Rounds MR-2 'Recall'",
     "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'",
     "Zheng-Dao Bioelectric Chemoreceptive Dermal Patch"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A rectangular medical patch with a glossy crimson polymer face, slightly convex to suggest internal pressure from the reactive substrate beneath. The surface has a subtle holographic safety pattern that shifts when viewed at angles—anti-counterfeit measure. Edges are beveled and sealed with a transparent adhesive margin. Aesthetically positioned between clinical precision and street-level practicality.",
+    "dimensions": "12cm × 9cm, approximately 4mm thick in compressed state",
+    "weight_description": "Lightweight at 38g—easily pocketable, designed to be carried in kit rigs, emergency pouches, or tactical vests without burden",
+    "primary_material": "Polymer-laminate housing with embedded synthetic fibrinogen matrix and vasoconstrictor microspheres; pressure-reactive foam substrate core",
+    "finish": "High-gloss crimson outer face with embossed Lazarus Pharmaceuticals script logo; matte backing strip for adhesion readiness",
+    "color_scheme": "Trademark Lazarus crimson (emergency red) as primary; silver holographic safety overlay; charcoal gray adhesive strip on reverse",
+    "interface_elements": "Peel-back adhesive tab (labeled with application arrows in white ink), temperature-sensitive indicator strip along left edge (turns blue when within optimal application window), small data matrix code for batch tracking on lower right corner",
+    "distinctive_features": [
+      "Holographic anti-counterfeit pattern that cycles through blue-green iridescence",
+      "Embossed Lazarus Φ symbol in center, indicating pricing tier and authenticity",
+      "Dual-layer visual thickness suggesting internal chemistry complexity",
+      "Rounded corners and beveled edges for rapid blind application in field conditions",
+      "Faint residual texture from underlying foam matrix visible through translucent outer layer"
+    ],
+    "manufacturer_markings": "Lazarus Pharmaceuticals logo (serif 'L' with pharmaceutical cross), batch number, expiration date, data matrix code, regulatory compliance marks (GLMZ medical authority stamp), and small printed warning about counterfeit detection",
+    "condition_typical": "Pristine and sealed in retail—glossy surface reflects light sharply. In field use: adhesive tab partially peeled, patch affixed to wound site with slight darkening at contact edges as blood activates the foam substrate"
+  },
+  "image_prompt": "Close-up product photography of a crimson Lazarus Coagulant Surge Patch on a stainless steel medical workbench, peel-back tab partially lifted. Dramatic side-lighting reveals the holographic safety pattern shimmering across the patch surface. Shallow depth of field with bokeh of trauma kit equipment (sutures, tourniquets, data pad) in soft focus background. Cyberpunk aesthetic: cold neon rim-light (blue and red) casting shadows on brushed metal surface, slight moisture condensation suggesting urgency. Data matrix code visible in macro detail. Gritty GLMZ street-clinic environment suggested by worn workspace. --ar 3:2 --v 6"
 }

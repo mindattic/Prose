@@ -39,5 +39,26 @@
     "Pikasso Wemba-Þórðarson",
     "TESSERA TC-3 'Crucible'",
     "Vantablack Media Parasocial Carrier Mask"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Bulky, industrial heat-shielding gauntlets that extend from fingertips to mid-forearm. Angular and geometric, with visible ceramic weave texture and reflective silver striping. Presents as utilitarian and purpose-built rather than fashionable — pure function over form.",
+    "fit": "Rigid and oversized through the palm and fingers to accommodate the thick thermal layers. Tapered slightly at the wrist for seal compatibility with coveralls. No stretch or give; the wearer adapts to the gauntlet, not vice versa.",
+    "primary_material": "Outer: woven ceramic fiber composite. Middle: reflective mylar thermal barrier. Inner: phase-change gel matrix in fabric casing.",
+    "texture": "Outer surface is rough and slightly bumpy from ceramic weave pattern. Mylar layer creates a subtle sheen beneath. Fingertips show reinforced stitching and subtle grip texture (raised nodules for handling hot materials).",
+    "color_scheme": "Matte charcoal gray outer with horizontal strips of polished silver (mylar showing through reinforced seams). Internal gel layer visible as faint amber-tinted translucence at wrist cuff.",
+    "closures": "Friction-fit seal at wrist with embedded magnetic contact points for docking with Crucible-standard coverall wrist ports. No traditional closures — the gauntlet slides on and locks into place.",
+    "distinctive_features": [
+      "Ceramic fiber outer shell with visible wave-pattern weave",
+      "Silver reflective striping every 2-3cm along forearm for heat reflection",
+      "Reinforced fingertip grip pads with subtle texture",
+      "Magnetic dock ports at wrist for rapid seal engagement",
+      "Crucible Genomics industrial division stamped insignia on dorsal forearm",
+      "Heat-discoloration patina typical on aged pairs (amber and rust streaking)",
+      "Slight curvature to palm even at rest due to rigid thermal layers"
+    ],
+    "tier_indicator": "Tier 3 functional — working-class industrial equipment. No luxury; pure value engineering for harsh environments.",
+    "cultural_context": "Marks the wearer as a foundry operative, molten-material handler, or industrial fabrication technician. Signals honest manual labor and exposure to hazardous conditions. Street credibility among workers; no corp prestige.",
+    "condition_typical": "Worn gauntlets show heat scorch marks, minor cracks in ceramic near fingertips, amber discoloration from repeated thermal cycling, and small gaps in the mylar layer from heavy use. Pristine pairs are rare and expensive; most are patched or partially delaminated."
+  },
+  "image_prompt": "Industrial heat-handler gauntlets displayed on a dark chrome mannequin hand, mid-forearm to fingertip. Molten orange light raking across the ceramic texture, highlighting the silver reflective striping. Backdrop: out-of-focus foundry interior with orange furnace glow and smoke. Gauntlets show battle-worn patina with amber heat scorch marks. Moody, harsh lighting. Cyberpunk industrial aesthetic. --ar 2:3 --v 6"
 }

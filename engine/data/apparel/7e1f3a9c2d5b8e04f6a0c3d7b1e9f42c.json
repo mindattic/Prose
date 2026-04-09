@@ -49,5 +49,25 @@
     "Réginald Asomaning-Čabarkapa",
     "Sable Dzokoto-Mirković",
     "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist wrap-around visor that frames the upper face with a continuous curved lens. The design reads as both protective and aspirational—corporate-approved but street-aware. The continuous arc creates an almost insectoid silhouette, softened by the warm bronze tone of the frame.",
+    "fit": "Snug but not compression; sits flush against the brow and temples with minimal weight distribution. Designed for 8+ hour daily wear without pressure points. The curve follows the natural contour of the skull.",
+    "primary_material": "Brushed bronze-tone recycled aluminum frame; electrochromic smart-film lens (transitions clear to 80% tint on demand)",
+    "texture": "Frame is brushed matte—non-reflective, warm to the touch, slightly textured to prevent slipping. Lens is smooth glass-like polymer, cool and frictionless. Neural sync tab has a subtle grip texture.",
+    "color_scheme": "Muted bronze-gold frame with clear-to-dark gray lens gradient. Minimal branding—Duskframe logo laser-etched at the right temple in matte silver.",
+    "closures": "Friction-fit temple arms with micro-adjustable tension; no visible clasps or snaps. Seamless integration.",
+    "distinctive_features": [
+      "Continuous curved lens spanning temple-to-temple (no bridge break)",
+      "Electrochromic tint activation (manual or neural-linked)",
+      "Discreet neural-port sync tab at right temple—flush-mounted, barely visible",
+      "Integrated AR projection (peripheral display layer, invisible when inactive)",
+      "Recycled aluminum frame—subtle sustainability signal",
+      "Anti-glare coating with faint holographic shimmer under direct light"
+    ],
+    "tier_indicator": "Tier 3 professional—expensive enough to signal stability and access, cheap enough to be replaceable. Not street-luxury, but clearly above salvage.",
+    "cultural_context": "Transit worker, mid-tier corpo, logistics coordinator, medical technician. Wearing this says: 'I have access to networked tools and steady employment.' Also appeals to privacy-conscious commuters and those who need AR without looking militant.",
+    "condition_typical": "Pristine to lightly worn. Occasional smudges on lens; frame shows minimal scratches. If patched, it would signal financial strain—most Tier 3 users replace rather than repair."
+  },
+  "image_prompt": "Cyberpunk fashion photography: close-up of a Duskframe AR Wrap Visor on a dark-skinned model's face, viewed from a three-quarter angle. The visor's electrochromic lens is at 40% tint, reflecting cool blue AR data streams at the periphery (faint holographic text). Brushed bronze frame catches moody neon—cool cyan and warm amber. Dark urban transit station backdrop, bokeh of distant LED signage. Model wears neutral clothing, allowing the visor to dominate. Shallow depth of field emphasizing frame detail and lens clarity. Film noir meets corporate minimalism. --ar 2:3 --v 6"
 }

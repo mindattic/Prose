@@ -44,5 +44,33 @@
     "compliance",
     "less_lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Dragan Petersen-Bah",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Glass Garden' Caltrops",
+    "TESSERA TC-3 'Crucible'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular compact pistol with a widened muzzle assembly that tapers to a flared scatter-projection head. The profile suggests clinical precision wrapped in corporate aesthetic—all sharp edges and minimalist lines, clearly engineered for boardroom presentations before field deployment.",
+    "dimensions": "18cm length, 11cm height, 4.5cm width at widest point. Muzzle flare extends 3cm beyond barrel terminus.",
+    "weight_description": "Light and balanced, feeling almost insubstantial in the palm—the integrated charge cell is distributed through the frame rather than concentrated in a magazine, creating an unexpectedly nimble handling profile despite its lethal potential.",
+    "primary_material": "Titanium-aluminum alloy frame with carbon-composite muzzle assembly. Internal charge cell encased in reinforced polymer.",
+    "finish": "Brushed silver-gray anodized aluminum with matte charcoal carbon-composite accents. No reflective surfaces—designed to avoid board-meeting glint.",
+    "color_scheme": "Steel gray primary with charcoal composite accents. Subtle cyan LED charge indicators recessed into the slide.",
+    "grip_texture": "Textured polymer grip with subtle ergonomic ridges, treated with an anti-slip coating. Cool to the touch.",
+    "distinctive_features": [
+      "Flared muzzle head with micro-perforation ports (barely visible pitting across the discharge face)",
+      "Recessed cyan charge-status LED strip running along the slide",
+      "Angular trigger guard with serrated upper edge",
+      "Cartridge window on the right side showing micro-pellet load status",
+      "Faint etched circumferential grooves around the muzzle (heat dissipation)",
+      "Subtle wear patterns on grip edges (field use despite 'pristine' marketing)"
+    ],
+    "manufacturer_markings": "Crucible Crop Sciences logo—a stylized cellular helix—etched into the slide above the cartridge window. Serial plate mounted on the left frame: small raised numerals with QR-code equivalent. 'SCATTERPULSE SP-1' stamped in clean sans-serif font beneath the muzzle.",
+    "condition_typical": "Kept in meticulous condition by corporate security teams who understand the reputational cost of a malfunctioning compliance tool. Minor scuff marks on grip from regular training. Occasional micro-pellet residue visible in cartridge window. Internal charge cell shows standard degradation patterns after 100+ deployments."
+  },
+  "image_prompt": "Product photography of the Crucible Scatterpulse SP-1 'Static Cling' pistol. Gun mounted on a dark reflective surface with a gloved corporate security hand gripping from upper right. Dramatic cool-blue side-lighting emphasizing the brushed aluminum finish and the faint cyan LED indicators along the slide. The flared muzzle head in sharp focus showing micro-perforation detail. Background: dark charcoal gradient with subtle holographic reflection suggesting high-end corporate presentation. Cyberpunk aesthetic with clinical precision. Professional weapons catalog style. --ar 3:2 --v 6"
 }

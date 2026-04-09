@@ -44,5 +44,38 @@
     "controversial",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions ARC-S12 'Harbinger'",
+    "Ekundayo Vásárhelyi-Nkemdirim",
+    "Nika Svensson-Kone",
+    "Parliament",
+    "Slagworks Industrial",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, purposeful semi-automatic shotgun with an angular, almost predatory stance. The receiver features pronounced cooling ribs and a distinctly modern aesthetic — tactical rather than traditional. The dual-stack magazine creates a slightly wider profile than conventional shotguns, and the entire weapon conveys controlled aggression.",
+    "dimensions": "96 cm overall length, 8.2 cm receiver width, 7.1 cm height at sight rail. 51 cm barrel length with integrated muzzle brake.",
+    "weight_description": "Hefty but balanced — 4.1 kg distributed across the frame creates a weapon that settles naturally in a firing stance. Front-heavy from dual-magazine column but manageable for extended engagements.",
+    "primary_material": "Aerospace-grade aluminum alloy receiver with steel barrel and bolt carrier. Polymer furniture reinforced with carbon-composite panels.",
+    "finish": "Matte charcoal with brushed-steel accents on the bolt carrier and magazine wells. Micro-etched BCI contact points gleam faintly beneath the matte coating.",
+    "color_scheme": "Gunmetal gray primary with chrome-silver mechanical details and blue-tinted polymer grips. Faint amber/gold accent lines trace the cooling ribs.",
+    "grip_texture": "Textured soft-touch polymer with embedded micro-grip nodes for gloved operation. Ergonomic palm swell with subtle finger ridges.",
+    "distinctive_features": [
+      "Dual-stack magazine with visible ammunition type indicators (red buckshot column, silver slug column)",
+      "Integrated BCI contact crown atop the charging handle — small crystalline nodes that flush with the surface",
+      "Linear cooling ribs running the length of the receiver — functional and visually aggressive",
+      "Ambidextrous charging handle with textured aluminum ring",
+      "Integrated rail system with custom sight mounts pre-calibrated for smart-link overlay",
+      "Magazine ejection port features redundant dual-stack feed indicators — small colored tabs",
+      "Muzzle brake with asymmetrical port design for controllable recoil signature",
+      "Faint warranty hologram beneath the ejection port (Arcturus Defense Solutions seal)",
+      "Ghost-lettering on the receiver: 'OATHKEEPER — PATTERN PREDICTION ENABLED'"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (stylized 'A' in a circle) stamped into the left receiver side, angled 15 degrees. Serial number plate mounted on the right side of the magazine housing in raised numerals. 'ARC-SL12' engraved in block letters beneath the rail system. Ironside Armaments sub-contractor mark (small 'IA' stamp) on the barrel lug.",
+    "condition_typical": "Field units show wear patterns consistent with heavy use in ungoverned zones — scuffed muzzle brakes, worn grip texture from gloved handling, faint powder residue around the ejection port, and micro-scratches on the BCI contact crown from repeated interface cycles. Well-maintained examples retain the matte finish, but most show cosmetic degradation around high-contact areas."
+  },
+  "image_prompt": "Professional product photograph of the Arcturus ARC-SL12 Oathkeeper shotgun positioned on a dark gunmetal surface, angled 45 degrees to showcase the dual-stack magazine profile and cooling rib details. Right side illuminated by dramatic side-light revealing the brushed-steel bolt carrier and BCI contact points. Left side in shadow creating depth. Close-up inset showing the dual-magazine column indicators and ghost-lettering on the receiver. Cyberpunk aesthetic emphasizing the fusion of aerospace materials and neural-interface technology. Ambient blue and amber accent lighting reflecting off chrome details. Shot as if for a Tier-5 underground weapons catalog. --ar 3:2 --v 6"
 }

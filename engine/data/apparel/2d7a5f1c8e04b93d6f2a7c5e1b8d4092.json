@@ -53,5 +53,27 @@
     "Tessera Industries Memory Rounds MR-2 'Recall'",
     "The Burden Clause",
     "Vantablack Media Parasocial Carrier Mask"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A floor-length silhouette that seems to absorb and redirect attention. The cloak drapes with deliberate weight, creating defined folds that shift in appearance depending on viewing angle. In motion, the surface ripples with a subtle chromatic distortion—light fragmenting and reassembling with noticeable lag. Stationary in shadow, the wearer becomes nearly invisible, a void with only the hood's outline suggested. The overall impression is predatory and intentional, more weapon than garment.",
+    "fit": "Loose, enveloping drape with a deep hood that obscures facial features entirely. The internal cut is generous enough to conceal augmentation rigs and weapons harnesses. No cinching at waist or hem—it moves as a unified mass, obscuring body shape completely.",
+    "primary_material": "Outer shell: layered metamaterial photonic panels with programmable light-replication. Inner lining: raw charcoal jersey knit, unwashed softness against bare skin.",
+    "texture": "Outer surface shifts visually between matte and shimmering depending on active state and ambient conditions. Touch: the metamaterial is smooth but subtly resilient, cool to contact. Inner jersey is soft, slightly napped, warm. The back yoke where the battery integrates is reinforced and slightly rigid.",
+    "color_scheme": "Primary matte black with a half-second-delayed chromatic echo that mirrors surroundings—the effect is desynchronized and slightly nauseating to track. No fixed secondary colors; the shimmer adapts to environment. In deep shadow, appears as pure black void.",
+    "closures": "No visible closures—the cloak wraps and drapes freely, settling naturally. Hood seals via friction-fit against the jersey interior. Battery panel at back yoke is sealed with proprietary magnetic connectors.",
+    "distinctive_features": [
+      "Metamaterial photonic cells capable of real-time ambient light sampling and replication",
+      "Integrated slim-profile battery pack in back yoke (6-hour continuous operation)",
+      "Deep hood lined in metamaterial, fully obscures wearer's face and augmentation signatures",
+      "Noticeable latency in light replication creates 'smearing' effect that eye instinctively avoids",
+      "Raw, unsealed charcoal jersey interior suggests industrial purpose over luxury",
+      "Considerable weight indicates engineering priority over comfort",
+      "No manufacturer branding visible—unmarked except for internal serial beneath hood",
+      "Reinforced panels at high-stress points suggest tactical durability"
+    ],
+    "tier_indicator": "Tier 5 black-market/contractor-grade. The price point is not public, acquisition is referral-only. Legal to own but ownership is tracked and flagged.",
+    "cultural_context": "Worn by people operating outside corporate and governmental oversight—runners, infiltrators, wetwork operatives, high-tier insurgents. The wearer is signaling they have resources, dangerous intent, and acceptance of consequences. It is not aspirational fashion; it is a declaration.",
+    "condition_typical": "Pristine when new, but the metamaterial shows micro-scratches and photonic lag degradation with use. Well-maintained examples retain responsiveness; heavy-use versions have visible panel damage and slower light-replication cycles. Battery efficiency degrades predictably. The inner jersey remains soft regardless of external wear."
+  },
+  "image_prompt": "Nullform Adaptive Stealth Cloak draped on a dark chrome mannequin in a concrete warehouse interior. The cloak's surface ripples with a nauseating chromatic shimmer—light fragmenting and reassembling with visible latency. Deep hood obscures the mannequin's head entirely, creating an unsettling void. Industrial fluorescent lighting casts hard shadows that the cloak partially replicates, creating desynchronized echoes. In the background, razor-wire fencing and dimly-lit server towers. The overall mood is predatory, technological, morally ambiguous. Cyberpunk noir aesthetic. Professional product photography with moody, cold color grading. --ar 2:3 --v 6"
 }

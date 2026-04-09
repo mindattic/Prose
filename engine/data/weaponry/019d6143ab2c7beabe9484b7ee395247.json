@@ -53,5 +53,40 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": "Ouroboros Energy"
+  "parent_corponation": "Ouroboros Energy",
+  "related_entities": [
+    "Barometric Implosion Carbine BIC-5 'Sinkhole'",
+    "Bathysphere Networks",
+    "Cavitation Pulse Carbine CPC-2 'Bends'",
+    "GLMZ",
+    "Kamala Mori-Sefa",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Ouroboros Energy",
+    "Praevex",
+    "TESSERA PG-2 'Signature'",
+    "Tender Collapse",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A disturbingly perfect sphere, like a polished ball bearing rendered in matte gunmetal and deep composite black. The form is almost too symmetrical — unsettlingly so. There are no conventional weapon aesthetics: no sharp angles, no aggressive lines. It resembles industrial safety equipment more than ordnance, which is precisely why it's terrifying. The overall impression is of something that should not exist, a physics violation made manifest.",
+    "dimensions": "18 cm diameter sphere; fits in a palm with 2-3 cm clearance on all sides",
+    "weight_description": "Surprisingly dense and hefty for its size — 3.2 kg concentrated into a compact form makes it feel like holding a lead shot put. The weight distribution is perfect, gravity-balanced. Unsettling in its flawlessness.",
+    "primary_material": "Layered carbon-composite shell over tungsten-alloy core casing; internal gravimetric capacitor matrix housed in radiation-shielded titanium subchamber",
+    "finish": "Matte anthracite-black composite outer shell with brushed tungsten-gray access panels. Absolutely no reflectivity — light seems to be absorbed rather than reflected. The surface has a faint iridescence when rotated under certain angles, like oil on water.",
+    "color_scheme": "Deep matte black primary with gunmetal-gray accent panels; faint violet capacitor glow visible through micro-transparent sections near the equator",
+    "grip_texture": "Bare composite — slightly cool, very smooth, almost frictionless. Grip points are subtly recessed into the sphere's surface, ergonomic depressions that guide where your fingers naturally curl.",
+    "distinctive_features": [
+      "Hairline seam running through exact hemisphere, barely visible until traced by fingertip",
+      "Four micro-LED status indicators arranged in a diamond pattern (armed/disarmed/capacitor charge state/detonation circuit status)",
+      "Faint engraved formula around the equator: gravimetric field equations in miniature",
+      "Barely-visible distortion halo around the sphere when photographed — lens artifacts from gravimetric field bleed even in standby",
+      "Impact striker mechanism (recessed) at the pole",
+      "Remote signal receiver antenna (coiled, internal — invisible without disassembly)",
+      "Thermal regulation micro-vents (10 microscopic holes arranged in Fibonacci spiral)",
+      "OUROBOROS ENERGY corporate sigil embossed in one hemisphere — deliberately understated, almost humble"
+    ],
+    "manufacturer_markings": "OUROBOROS ENERGY sigil (Φ-symbol rendered as encircling snake) subtly embossed on upper hemisphere; tiny serial plate set flush into lower hemisphere with 16-character alphanumeric code; no warning labels — the weapon is designed to be deniable",
+    "condition_typical": "Field units are typically pristine or destroyed — there is no middle ground. Either the sphere is flawlessly maintained (often stored in specialized magnetic suspension containers), or it has detonated and ceased to exist. Second-hand GCC-9s are extremely rare; most black market units are stolen directly from OUROBOROS facilities."
+  },
+  "image_prompt": "Product photography of a perfect gunmetal-black sphere (18cm diameter) resting on a dark matte surface, photographed from a 45-degree angle with dramatic side-lighting from a single cool-white LED source. The sphere casts a sharp shadow. Gloved hand (chrome-augmented fingers, black synthetic leather glove) visible at 4 o'clock position, fingertips touching the sphere's edge. The lighting reveals faint iridescent distortions across the surface — oil-on-water shimmer. Visible micro-details: recessed grip depressions, hairline hemisphere seam, four tiny LED indicators glowing violet (armed state). Background is a textured carbon-composite table mat, very dark with minimal reflectivity. Shot in ultra-high resolution, professional product lighting, cyberpunk aesthetic, no reflections in the sphere itself — light is absorbed, not reflected. Corporate facility aesthetic, cold and clinical. --ar 3:2 --v 6"
 }

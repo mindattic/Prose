@@ -85,5 +85,24 @@
     "The Interchange",
     "The Pure Hand",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting full-body suit that appears to shimmer and shift with surrounding environment. The outer surface has an almost liquid quality — constantly rippling with reflected light patterns that make it difficult to focus on. Under static lighting, reveals a dense geometric lattice of micro-apertures and recessed micro-LED points across every surface. The hood covers the entire head with a translucent smart-fabric faceplate that allows vision outward while maintaining the camouflage effect. Gloves extend to mid-forearm with articulated finger design.",
+    "dimensions": "Full-body coverage; approximately 175–190 cm tall when worn, fitted close to human form without bulk",
+    "weight_description": "6.1 kg distributed evenly — handheld when folded, barely noticeable when worn due to advanced load distribution",
+    "primary_material": "Tessera proprietary Fold-Reactive polymer outer layer; acoustic dampening laminate mid-layer; passive thermal baffle membrane; distributed micro-cell power grid woven into synthetic substrate lining",
+    "finish": "Outer surface: iridescent, semi-matte with micro-texture; appears to shift and flow with ambient light. Sensor apertures create subtle shadow patterns across the suit. Seams and panel lines barely visible, integrated seamlessly into the overall camouflage matrix.",
+    "color_scheme": "Base color shifts depending on environment — predominantly charcoal-grey with hints of silver and deep blue in the micro-LED array. When active, displays real-time color sampling of surroundings, creating an ever-changing adaptive palette.",
+    "interface_elements": "Minimal visible controls: small haptic touch panel on left wrist with raised Tessera logo marker; soft-glow status indicator strip along right hip (green/amber/red for power states); embedded micro-ports at sternum (power coupling, sealed with diamond-polymer caps); internal heads-up display projection integrated into hood faceplate",
+    "distinctive_features": [
+      "Constantly rippling micro-LED surface creates hypnotic, almost liquid appearance when illuminated",
+      "Micro-aperture sensor grid visible as subtle shadow pattern across entire suit",
+      "Smart-fabric hood faceplate maintains camouflage effect while allowing wearer vision",
+      "Barely perceptible seam work — appears almost organic rather than constructed",
+      "Tessera's proprietary geometric quilting pattern visible under close inspection"
+    ],
+    "manufacturer_markings": "Small raised Tessera Corporation logo on left wrist (chrome inlay); regulatory stamp on right shoulder blade (barely visible, intended for authorized personnel only); serialized micro-etch on sternum power coupling, obscured by design",
+    "condition_typical": "When powered and active: appears to shimmer and shift as it samples and re-emits ambient light — hypnotic, slightly unsettling to observe directly. When dormant: appears as a high-end tactical bodysuit with visible sensor grid and LED matrix, dark grey-blue. Even at rest, the micro-apertures and recessed diodes create subtle depth and movement."
+  },
+  "image_prompt": "Product photography of the Tessera Laminar Ghost Chassis stealth suit laid flat on a high-tech workbench under cool cyan and amber accent lighting. The suit's outer surface ripples with an iridescent, barely-perceptible shimmer as micro-LEDs sample and reflect the surrounding environment. Geometric sensor apertures create shadow-patterns across the material. One gloved hand is visible adjusting the left wrist control panel, showing the faint Tessera logo. Dramatic rim lighting emphasizes the liquid, shifting quality of the Fold-Reactive polymer. In the background, blurred diagnostic readout screens show power status and thermal suppression metrics. Shallow depth of field. Cyberpunk aesthetic with emphasis on cutting-edge biotech materials and stealth design. --ar 3:2 --v 6"
 }

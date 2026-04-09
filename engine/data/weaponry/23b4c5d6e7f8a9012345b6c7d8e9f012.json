@@ -42,5 +42,36 @@
     "professional",
     "executive-protection"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Fanta Kato-Adomako",
+    "Irontide Tidal Energy",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "MERIDIAN",
+    "Narrowcast",
+    "The Circuit",
+    "The Convergence Ministry",
+    "The Spire",
+    "The Undertow"
+  ],
+  "physical_description": {
+    "visual_profile": "A matched pair of compact, utilitarian shock batons with a distinctly corporate aesthetic. Each baton presents as a sleek, tapered cylinder that widens slightly at the grip section. The design reads as purposeful and restrained — no aggressive flourishes, just engineering. The paired presentation suggests twin components of a larger system.",
+    "dimensions": "45 cm length per baton (total reach), 3.2 cm diameter at shaft, grip section 11 cm long. Compact enough to fit inside a jacket interior pocket or sit flush in a dual-hip holster rig.",
+    "weight_description": "Each baton weighs 0.52 kg — substantial but not burdensome. Balanced and quick to deploy, with slightly front-weighted bias from the electrode assembly. Designed for rapid two-handed manipulation without fatigue in close quarters.",
+    "primary_material": "Impact-resistant polymer composite shaft with anodized aluminum grip sleeve. Stainless steel electrode tips with conductive silver plating. Internal frames use reinforced carbon-polymer to distribute electrical load.",
+    "finish": "Matte polymer body with a subtle brushed aluminum grip section. Electrode tips show a mirror-polished silver finish that catches light distinctly. Minimal glossiness overall — a deliberately subdued corporate finish designed for professional environments.",
+    "color_scheme": "Charcoal-gray polymer shaft with brushed gunmetal aluminum grips. Bright silver conductive tips. Subtle ShieldTech logo and mode indicator in white/pale gray on the lower grip.",
+    "grip_texture": "Textured polymer grip with shallow vertical ribbing for secure two-handed handling. Designed for both bare hand and gloved operation. Slightly tacky, non-slip compound that remains effective even when wet.",
+    "distinctive_features": [
+      "Dual-position mode toggle switch on the lower grip (Solo/Synchronized) with tactile detent",
+      "Power indicator LED (white) recessed into the grip near the pommel — pulses when active, solid when charged",
+      "Electrode contact point at the baton's tip: a flared silver electrode assembly (approximately 2 cm diameter) with slightly exposed conductive prongs",
+      "Recessed power-cell access point on the grip bottom (ShieldTech ST-Cell 2 proprietary connector)",
+      "Etched serial number and regulatory compliance markings on the grip sleeve",
+      "Faint wear patterns from training use — light scuffing on the shaft edges, polish marks on electrode tips from cleaning"
+    ],
+    "manufacturer_markings": "ShieldTech corporate logo stamped in white on the grip sleeve, approximately 6 cm from the pommel. Serial number and compliance codes etched into the aluminum grip near the cell access point. Small regulatory approval stamps near the electrode tip. Understated and professional — no aggressive branding.",
+    "condition_typical": "Well-maintained, showing light professional use. Electrodes are clean and polished. Shaft shows minor cosmetic wear from carry and training drills but no damage. Power cell contacts show no corrosion. This is a tool treated with respect by a trained operator."
+  },
+  "image_prompt": "Product photography: Two matched silver-tipped shock batons laid parallel on a dark carbon-fiber surface, slightly offset to show both units clearly. Dramatic side-lighting from the left emphasizes the brushed aluminum grip texture and casts sharp shadows. Close detail shot of one electrode tip showing the silver conductive prongs catching light. Second angle: single baton held in a gloved hand (tactical black glove, augmented fingers subtle chrome knuckle plating visible), grip portrait orientation showing the mode toggle and power indicator LED. Cyberpunk aesthetic with cool color temperature, slight blue-white LED glow, high-contrast lighting. Corporate weapon design language. Professional catalog photography. --ar 3:2 --v 6"
 }

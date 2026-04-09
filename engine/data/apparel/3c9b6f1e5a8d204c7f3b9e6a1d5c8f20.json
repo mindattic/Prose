@@ -47,5 +47,24 @@
     "Hearthstone Firearms Trail-357 'Pathfinder'",
     "Lazarus EC-4 'Companion'",
     "Lazarus LX-2 'Lab Rat'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purpose-built trail runner that bridges outdoor functionality with subtle cybernetic integration. The silhouette is athletic and tapered, with a slightly aggressive forward stance. Low-profile but confident, designed for someone equally comfortable in wilderness data-logging as urban commuting.",
+    "fit": "Snug around the midfoot with a responsive heel cup; toe box allows natural splay without excess volume. Compression-ready for performance but not restrictive.",
+    "primary_material": "Breathable synthetic mesh upper with ballistic weave reinforcement; midsole composite blends EVA with piezoelectric-responsive polymer; lugged rubber outsole with grip-optimized tread.",
+    "texture": "Mesh is smooth but structured; reinforced toe guard has a slight raised texture; outsole lugs are deeply cut and tactile; subtle ribbing along the lateral arch.",
+    "color_scheme": "Offered in forest green (primary), slate (neutral variant), and burnt orange (accent). Primary option features deep forest green mesh with slate-grey reinforcement panels and burnt orange toe-cap accent stripe.",
+    "closures": "Pressure-lace system with friction-fit anchors; no traditional eyelets—laces thread through integrated loops that reduce snag points on uneven terrain.",
+    "distinctive_features": [
+      "Embedded biometric array visible as faint metallic threads in insole cushioning (visible if you remove insole)",
+      "Reinforced toe guard with subtle chrome-flecked accents indicating durability-grade materials",
+      "Passive active cushioning—imperceptible to user but responsive to incline detection",
+      "Micro-textured heel counter for BCI contact feedback",
+      "Stratos Outdoor logo embossed (not printed) on tongue and lateral heel—understated luxury indicator"
+    ],
+    "tier_indicator": "Tier 2–3 boundary: premium functional wear. Too sophisticated for sub-grade, too practical for pure corpo leisure.",
+    "cultural_context": "Wearer signals: active lifestyle, minor augmentation comfort, enough disposable Φ for smart-gear but not enough for full chrome. Appeals to outdoor enthusiasts in the working-professional bracket, nature-adjacent corpo employees, and data-conscious athletes.",
+    "condition_typical": "Arrives pristine but develops character quickly—slight creasing around the toe box, faint dust on lugs, minor scuff marks on heel from repetitive terrain contact. Maintains structural integrity for 2-3 years of heavy use."
+  },
+  "image_prompt": "Close-up of a Stratos Biosync Trail Runner in forest green with slate-grey and burnt orange accents, displayed on a sleek dark mannequin foot angled slightly forward. The shoe is positioned against a moody, rain-slicked urban pavement backdrop with soft neon glow reflecting off wet surface. Shallow depth of field with the insole's biometric threading just barely visible inside the shoe opening. Lighting emphasizes the lugged outsole texture and the reinforced toe guard's subtle chrome accents. Cyberpunk aesthetic: industrial, purposeful, augmented-ready. --ar 2:3 --v 6"
 }

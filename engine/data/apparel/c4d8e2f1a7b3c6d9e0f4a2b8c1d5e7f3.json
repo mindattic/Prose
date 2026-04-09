@@ -59,5 +59,27 @@
     "The Pure Hand",
     "Veslemøy Achebe-Tursynov",
     "VitaCore HydraSync Fluid Balance Monitor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian streetworker silhouette — deliberately unglamorous and thoroughly functional. The outfit reads as a patchwork of reliable surplus pieces assembled through street salvage and personal modification, worn with the confidence of someone who knows their tools better than their employer. The overall impression is weathered independence: layered, reinforced, and conspicuously augmentation-ready.",
+    "fit": "Relaxed and deliberately roomy — designed for movement, layering, and accessibility rather than form-fitting. The work shirt hangs loose enough for motion; the reinforced trousers are cut with a straight leg that sits over the boot cuff. Everything is sized for function, not fashion.",
+    "primary_material": "Heavyweight charcoal canvas work shirt; faded safety-orange hi-vis vest (synthetic blended); dark olive Goretek tactical weave trousers; real leather hand-stitched tool belt; black rubber Deepwade work boots with steel shank; knit charcoal cap or salvaged hard hat",
+    "texture": "Heavy-duty and tactile — visible double-stitching, tape-reinforced knees showing slight fraying at edges, the worn softness of surplus fabric that's been through multiple owners. The leather belt is creased and darkened from use. Everything has the texture of reliability, not newness.",
+    "color_scheme": "Industrial palette: charcoal canvas, faded safety orange (deliberately de-logoed but ghost-stencil visible), dark olive trousers, black boots, charcoal cap. The orange vest is the only bright accent — dulled by age and work, not vibrant. Occasional personal color choice visible only on hard hat duct tape repair.",
+    "closures": "Functional and redundant: heavy-duty zipper on cargo pockets; laced boots (tight over trouser cuffs); snap-away forearm panels (hand-modified with industrial snaps from street vendors); leather belt with burnished buckle; velcro wrist closures on work gloves",
+    "distinctive_features": [
+      "Double-stitched seams at every joint — visible reinforcement",
+      "Reinforced pocket flaps on chest and forearms — designed for tool weight",
+      "Hand-modified snap-away forearm panels for chrome augmentation access",
+      "Ghost-stencil of removed Meridian Harbor Authority logo still visible on vest back",
+      "Knee and inner-thigh tape reinforcement (worn but intact)",
+      "Integrated tool belt with grip wrench, carabiners, cargo scanner, and work gloves",
+      "Hard hat with duct-tape brim repair (color chosen by wearer as only personal expression)",
+      "Cracked brim indicator of genuine field use, not costume"
+    ],
+    "tier_indicator": "Tier 3-4 (working class, independent contractor tier). The outfit signals someone who operates outside corpo hierarchy — assembled from reliable surplus, not issued. Every piece is utilitarian, nothing is decorative.",
+    "cultural_context": "Dockworker, night shift, independent hauler. This outfit communicates: I am not corpo, I am not contracted, I know this space intimately, I maintain my own gear, I modify for augmentation without permission, and I navigate the vague manifests and gray cargo of Meridian Harbor's outer berths. Wearing this means you've chosen autonomy over stability.",
+    "condition_typical": "Well-broken-in but meticulously maintained. The fabric shows wear at high-contact points (pocket edges, belt loops, boot cuffs) but no tears. Tape reinforcements are carefully applied, not haphazard. Stitching is visible and intentional. The aesthetic is 'field-proven,' not 'neglected.'"
+  },
+  "image_prompt": "A weathered dockworker in Meridian Harbor outer berth at night, wearing faded orange hi-vis vest over charcoal canvas work shirt with visible double-stitching, dark olive reinforced trousers taped at the knees, black rubber Deepwade boots laced tight over cuffs. Hard hat with duct-tape brim repair pulled low. Real leather tool belt laden with cargo scanner and carabiners visible at hip. Forearm panels snapped open to show modification scars. Hands in work gloves. Standing under harsh overhead dock lighting casting long shadows, with stacked containers and red warning lights in the background. Moody, industrial, utterly functional. --ar 2:3 --v 6"
 }

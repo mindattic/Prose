@@ -45,5 +45,35 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Kairos",
+    "Neuromorphic Pressure Cestus",
+    "Nika Svensson-Kone",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular PDW with a distinctly futuristic aesthetic—sharp edges and purposeful geometry. The weapon has a pronounced forward magazine well and a minimalist profile designed for rapid concealment. The receiver tapers from a slightly bulbous rear section down to a pencil-thin barrel shroud. Overall impression: surgical, not brutal.",
+    "dimensions": "Length: 28cm (collapsed), 34cm (extended); Width: 4.2cm; Height: 8.1cm; Barrel length: 10.5cm",
+    "weight_description": "Remarkably light in hand—1.8kg feels almost weightless for a PDW, with careful weight distribution that centers the balance point near the grip. The lightness makes it feel responsive and nervous rather than stable.",
+    "primary_material": "Aerospace-grade carbon composite frame with hardened steel barrel and bolt carrier. Receiver panels are layered graphene-polymer composite.",
+    "finish": "Matte gunmetal with DLC (Diamond-Like Carbon) coating on all steel surfaces. The composite shows a subtle iridescent sheen under certain light angles—hints of deep blue and slate gray.",
+    "color_scheme": "Primary: gunmetal gray with charcoal composite sections. Accent colors: slim bands of high-visibility cyan running along the magazine well and ejection port (BCI status indicators). The holster interface gleams in brushed aluminum.",
+    "grip_texture": "Textured polymer with microscopic ridges for enhanced grip, embedded with barely-visible capacitive sensors. Cool to the touch, slightly tacky when dry. The grip is slightly undersized—designed for precision rather than combat spray.",
+    "distinctive_features": [
+      "Recessed holster contact point on the frame (where capacitive pre-chamber systems interface)",
+      "Micro-LED indicator strip along the upper receiver: cyan when armed via BCI, amber during low-battery warnings, red during system fault",
+      "Minimalist iron sights (backup only) integrated flush into the receiver top",
+      "Asymmetrical magazine well with witness holes showing round count",
+      "Modular fore-end with quick-disconnect rails for future attachment points",
+      "Ejection port with particle deflector angled downward at 45 degrees",
+      "Neural interface port (USB-C style connector) recessed into the lower receiver, protected by a spring-loaded cover",
+      "Serial number and Abu Dhabi Cognitive Zone Corp logo laser-etched into the carbon-composite grip panel, barely visible unless the light hits at a specific angle"
+    ],
+    "manufacturer_markings": "Abu Dhabi CZ Corp. logo (three interlocking circuit-path nodes forming a triangle) printed discreetly on the left side of the receiver. Text reading 'TESSERA TPDS-1 REFLEX' in sans-serif font along the top rail. Serial number and compliance certifications micro-etched on the frame's lower surface.",
+    "condition_typical": "Professional operators maintain them obsessively—the weapon's BCI integration means any contamination risks system failure. Typically pristine, with only minor wear on the grip texture from holster draw. The cyan status indicators remain consistently bright. No visible battle damage in any field photos."
+  },
+  "image_prompt": "Product photography of the Tessera TPDS-1 Reflex SMG against a black matte surface, positioned at 45-degree angle showing left profile. Gloved hand (tactical synthetic weave, neutral gray) steadying the weapon at the grip. Dramatic side-lighting from upper left creating sharp shadows along the receiver contours and highlighting the carbon-composite iridescence with hints of deep blue. Micro-LED indicator strip glowing soft cyan along the upper receiver. Shallow depth of field. High-end cyberpunk aesthetic—clinical, precision-engineered, frictionless. Abu Dhabi tech aesthetic. Shot composition emphasizes compact form factor and angular geometry. Studio setting, minimalist background. --ar 3:2 --v 6"
 }

@@ -55,5 +55,37 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "GLMZ",
+    "Lazarus APC-2 'Locust'",
+    "TESSERA PG-2 'Signature'",
+    "The Collective",
+    "The Resonance Communion",
+    "The Swarm",
+    "Tympanic Membrane Galvanic Rupture Carbine",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, cylindrical dispersal canister resembling a high-tech thermos or industrial aerosol. The body tapers slightly toward the base, with a segmented honeycomb pattern along the mid-section that hints at the fracture mechanism. The top features a recessed activation panel with minimal external controls. At rest, it appears inert and utilitarian—designed for quick deployment and forgotten storage.",
+    "dimensions": "28cm height × 9cm diameter. Tapers to 7cm at the base. Activation panel sits flush 2cm from the top.",
+    "weight_description": "Deceptively light and balanced despite 1.1kg loaded mass. Feels engineered for single-handed carry and quick hand-off. The weight distribution is slightly forward-biased, suggesting internal mass concentration near the fracture mechanism.",
+    "primary_material": "Aircraft-grade aluminum composite body with reinforced honeycomb segmentation. Internal structure is titanium-alloy fracture-trigger framework. Top activation panel is heat-treated polymer.",
+    "finish": "Matte gunmetal gray with a subtle brushed texture. The segmented mid-section has a slightly raised, laser-etched honeycomb pattern that catches light. Wear patterns typical of field-carried units show scuff marks and micro-abrasions on edges.",
+    "color_scheme": "Matte gunmetal gray primary. Activation panel is midnight black with faint green phosphorescent IFF indicator ring (barely visible until powered). Iron Point Ammunition branding in subdued metallic silver.",
+    "grip_texture": "Bare brushed aluminum with subtle knurling near the base for non-slip deployment grip. The mid-section honeycomb provides micro-texture without aggressive traction.",
+    "distinctive_features": [
+      "Segmented honeycomb fracture-line pattern along the mid-body—marks where the canister splits on activation",
+      "Recessed circular activation panel (2cm diameter) flush-mounted on crown, with micro-tactile feedback button",
+      "Faint green phosphorescent IFF indicator ring around the panel edge—glows only when armed",
+      "Manufacturer serial plate laser-etched on the base: 'ASDU-3 / IRON POINT AMMUNITION / Single-Use'",
+      "Subtle directional vents (3mm slots) near the base to bias swarm dispersal pattern",
+      "Military variant carries a secondary 'degradation counter' scratched onto the base—tracks estimated IFF accuracy loss over time",
+      "Field-worn examples show handling marks and minor dents consistent with vest-pouch carry"
+    ],
+    "manufacturer_markings": "Iron Point Ammunition logo (stylized bullet point inside a hexagon) stamped in silver on the upper third, approximately 5cm from apex. Serial designation 'ASDU-3' stamped directly below. 'SINGLE-USE DISPERSAL UNIT' runs vertically along the lower body in small sans-serif font.",
+    "condition_typical": "Military and PMC variants are maintained in near-pristine condition, stored in custom foam inserts within tactical rigs. Black market canisters show obvious degradation: corroded activation panels, worn-through paint, scratched IFF indicator rings, and handwritten lot numbers or modification marks. Suspected counterfeit units are often noticeably lighter or have visible seam gaps where the honeycomb segments meet."
+  },
+  "image_prompt": "Product photography of the ASDU-3 'Locust' dispersal canister: sleek matte gunmetal cylindrical device with segmented honeycomb mid-section, 28cm tall, resting on a dark matte black surface. Dramatic side-lighting emphasizes the raised honeycomb fracture-line pattern and micro-texture. Top activation panel with faint green phosphorescent IFF indicator barely glowing. Manufacturer markings visible in silver. Shot from three-quarter angle. High-resolution detail on the brushed aluminum finish and subtle wear patterns. Cold cinematic lighting with slight blue undertone to emphasize cyberpunk military aesthetic. Minimalist dark background. --ar 3:2 --v 6"
 }

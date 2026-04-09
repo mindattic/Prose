@@ -71,5 +71,24 @@
     "Tessera Corponation",
     "The Collective",
     "The Lattice"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact cylindrical repeater node resembling a truncated industrial capsule or thick pen barrel, with a slightly tapered end designed for adhesive mounting. The form factor is deliberately inconspicuous—engineered to blend into urban infrastructure.",
+    "dimensions": "2.1cm diameter × 5.8cm length (thumb-sized; individual unit)",
+    "weight_description": "Lightweight and pocketable at 18g per unit; deployable in clusters without significant carrying burden",
+    "primary_material": "Brushed matte polymer composite housing with embedded EM harvesting mesh beneath surface layer",
+    "finish": "Textured, non-reflective matte gunmetal grey with subtle iridescent EM-reactive circuitry visible beneath semi-translucent polymer sections",
+    "color_scheme": "Charcoal grey primary body; accent bands of deep copper/bronze along ridged grip zones and ports; minimal contrast to avoid visual detection",
+    "interface_elements": "Micro-USB port recessed at tapered end for optional power supplementation; trio of micro-status LEDs (signal, mesh-sync, power harvest) embedded flush in housing; no external buttons or mechanical switches—all configuration via wireless lattice handshake",
+    "distinctive_features": [
+      "Hexagonal grip ridges running the length of the cylinder for secure adhesive application and handling",
+      "Semi-translucent polymer window revealing faint lattice circuit pattern beneath surface",
+      "Integrated adhesive pad (non-permanent, repositionable) at tapered terminus",
+      "Barely-visible etched lattice symbol (Φ-derived mesh glyph) on housing",
+      "Warm amber/copper status LEDs that pulse softly when part of active cluster"
+    ],
+    "manufacturer_markings": "TESSERA CORPONATION logo (stylized tessellating geometric mark) on body; tiny regulatory stamp; no serial number visible (deliberately anonymized for black-market deployment)",
+    "condition_typical": "Field units appear weathered within days—dust, particulate accumulation on adhesive end, fingerprint smudges from repeated repositioning; status LEDs dim and pulse irregularly as EM harvesting fluctuates with environment; clusters deployed in industrial/urban zones often show adhesive residue or soot marking"
+  },
+  "image_prompt": "Product shot of five Tessera Lattice Whisper Nodes arranged in a loose triangular cluster on a weathered steel workbench, some adhered to corroded metal surfaces, others lying at angles showing the micro-USB ports and grip ridges. Cool neon-blue and warm amber light raking across the matte housings, reflecting faintly off the semi-translucent polymer windows revealing circuit patterns beneath. Moody industrial cyberpunk aesthetic with deep shadows, one node's status LEDs glowing softly in copper-amber. Urban decay background: rusted metal, exposed wiring, concrete dust. Shot at macro depth with selective focus on the mesh topology. Cinematic key light from upper left, rim light catching the texture. --ar 3:2 --v 6"
 }

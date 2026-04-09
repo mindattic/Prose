@@ -46,5 +46,25 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Vantablack Media Parasocial Carrier Mask"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively minimal fitted long-sleeve shirt that reads as professional and understated at first glance. The silhouette is clean and contemporary—form-fitting but not restrictive, designed to layer under corporate wear or worn alone in casual professional settings. The charcoal or white colorway appears almost aggressively plain, creating an illusion of simplicity that masks its embedded technology.",
+    "fit": "Slim, compression-adjacent without feeling restrictive. Contours to the body's natural lines while allowing full range of motion. Sleeves taper smoothly to the wrist. Collar sits neat and close to the neck without choking. The stretch-composite material hugs without clinging, creating a second-skin sensation.",
+    "primary_material": "Proprietary stretch-composite blend—likely recycled synthetic base with conductive microfiber threaded throughout. High breathability rating with moisture-wicking properties. Feels like a premium athletic fabric but designed for all-day office or street wear, not just performance.",
+    "texture": "Smooth to the touch with an almost imperceptible grid texture from the embedded sensor matrix. The fabric has a subtle sheen in certain light, betraying its technical nature. The collar seam features a thin, tactile sensor strip—cool to the touch, barely thicker than a thread—running as a continuous loop.",
+    "color_scheme": "Charcoal gray or off-white/bone white as primary options. No visible branding or pattern; the aesthetic is pure minimalist corporate. The sensor strip at the collar is slightly darker or slightly luminescent depending on the variant, creating a single line of visual interest.",
+    "closures": "None—crew neck or high mock-neck design. The garment is meant to be pulled on and worn as-is. No buttons, zippers, or fasteners; the simplicity reinforces the 'invisible tech' marketing.",
+    "distinctive_features": [
+      "Embedded conductive sensor strip running continuously through the collar seam",
+      "Invisible biometric data transmission via passive BCI/device sync",
+      "Nexigen branding tag inside collar only—no external logos",
+      "Microfiber conductive threading woven throughout for temperature and perspiration monitoring",
+      "Heart rate variability detection woven into the fabric structure",
+      "Subtle anti-microbial treatment to reduce odor accumulation over long wear"
+    ],
+    "tier_indicator": "Tier 3–4 functional luxury. Not expensive enough to be corpo elite status symbol, but clearly positioned above survival-level clothing. The technology and proprietary materials signal mid-tier purchasing power and wellness consciousness.",
+    "cultural_context": "Worn by corporate middle-management, medical professionals, wellness-conscious knowledge workers, and anyone wanting passive biometric monitoring without the stigma of visible wearables. It signals someone who's plugged into their own data, trusts technology to optimize their health, and has the disposable income to afford preventative monitoring. Also worn by some Tier 4 laborers in physically demanding roles who use the data to track fatigue and prevent injury.",
+    "condition_typical": "Pristine to broken-in. The fabric and design are engineered for durability, so even well-worn examples maintain their form. Sensor strip remains functional across many wash cycles. Minor pilling may occur in high-friction zones (armpits, collar), but this is rare. Most users keep them in near-mint condition due to the perceived value of the embedded tech."
+  },
+  "image_prompt": "Fashion photography of a Nexigen Biometric Base Layer displayed on a sleek humanoid mannequin or worn by an androgynous cyberpunk model with subtle augmentations (faint subdermal LED implants visible at temples). The garment is charcoal gray, form-fitting, pristine. Shot in a minimalist corporate-tech showroom with cool overhead lighting casting subtle shadows. Close-up detail of the collar seam revealing the thin sensor strip glowing faintly with bioluminescent text (temperature/HR readout). Moody ambient blue and gray color palette. Dark polished concrete floor. Shallow depth of field with the sensor detail sharp. Professional, clinical aesthetic—the vibe of wellness tech marketing collateral. --ar 2:3 --v 6"
 }

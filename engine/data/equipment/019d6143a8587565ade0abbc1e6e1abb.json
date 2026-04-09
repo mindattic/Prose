@@ -53,5 +53,24 @@
     "Lazarus Pharmaceuticals",
     "Lazarus Pharmaceuticals Rapid Wound Closure Nanite System",
     "The Suture Collective"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A militarized surgical kit housed in a ruggedized hard case with a split-clamshell design. The interior reveals a densely organized foam insert with custom-cut compartments for each instrument. The aesthetic is utilitarian and combat-focused—more field hospital than sterile clinic. The case exterior shows tactical mounting points and a reinforced carry handle. All surfaces are designed for rapid access under stress.",
+    "dimensions": "45 cm × 28 cm × 12 cm (closed); case roughly briefcase-sized but significantly heavier",
+    "weight_description": "5 kg in hardened case; requires two-handed carry or shoulder strap for extended transport; easily mounted to tactical vests or med-pack frames",
+    "primary_material": "Shock-absorbent polycarbonate composite case exterior; stainless steel and anodized aluminum surgical instruments; silicone-coated foam interior",
+    "finish": "Matte black tactical finish on case with anti-reflective coating; instruments feature a satin-brushed steel appearance with some black oxide coating for low-light operation; grip surfaces have rubberized texture for bloodied hands",
+    "color_scheme": "Charcoal black case with crimson emergency stripe along spine; instrument handles in gunmetal gray with crimson accents; Lazarus nanite injectors in translucent amber housings revealing their fluid contents; diagnostic scanner has a dark green display screen",
+    "interface_elements": "Spring-latched compartments; tactile pressure-release locks on nanite injectors; diagnostic scanner with 7-inch holographic display head and neural interface jack (silver crown connector); cauterizer unit has physical dial and grip-friendly trigger; UV sterilization lamp powered by internal battery with LED status indicator (blue when active)",
+    "distinctive_features": [
+      "AR surgical guide interface jack that glows faintly when active—neural link engagement shows as pulsing cyan light",
+      "Diagnostic scanner's holographic display projects anatomy overlays directly above the surgical field",
+      "Nanite injectors marked with Biohazard ☢ and RWCNS proprietary logo in white lettering",
+      "Oscillating bone saw has a red warning stripe and produces a characteristic high-pitch hum when powered",
+      "Interior foam is bright medical white with color-coded compartments: red for hemostatic tools, blue for retractors/spreaders, yellow for cautery/electrical, green for nanite delivery"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS logo stamped in white on case spine; FSK-6 designation laser-etched on interior lid; regulatory stamps including GLMZ Medical Authority approval, warranty void if opened without authorization seal; serial number on underside of case",
+    "condition_typical": "In field use: case exterior shows scuff marks and weathering from tactical environments; instruments may show biological residue despite field sterilization attempts; neural interface port shows minor oxidation from humidity exposure; nanite injectors often partially depleted; diagnostic scanner screen may have fingerprints or dried blood spatter that crews wipe clean between procedures"
+  },
+  "image_prompt": "Overhead shot of an open Carrion Defense Works FSK-6 surgical kit on a gritty metal field table, foam interior revealed with gleaming surgical instruments arranged in organized compartments. Dramatic red emergency stripe visible along the case spine. The handheld diagnostic scanner displays a holographic human anatomy overlay with cyan neural interface glow. Three amber RWCNS nanite injectors are prominently placed in their foam slots. Dark cyberpunk warehouse setting with harsh tungsten and neon accent lighting casting sharp shadows across the instruments. Blood-speckled stainless steel scalpels and bone saw catch harsh light. Neural interface cable coiled nearby. Gritty, combat-worn aesthetic. Shot from 45-degree angle. --ar 3:2 --v 6"
 }

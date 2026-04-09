@@ -36,5 +36,34 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Carbon Fiber",
+    "Carrion Defense Works",
+    "Charnel Propulsion",
+    "Piezoelectric Fracture Pistol PFP-7 'Hairline'",
+    "TESSERA PG-2 'Signature'",
+    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist wrist-mounted apparatus that resembles a tactical chronograph crossed with a medical injector. The profile is deliberately understated — a slim, angular band that sits flush against the forearm with an almost invisible firing mechanism. No obvious barrel or aggressive geometry; instead, it presents as sophisticated medical tech repurposed for lethal precision.",
+    "dimensions": "Wrist unit: 12cm length × 3.5cm width × 2cm depth. Firing orifice diameter: 1.2mm. Total dart length: 8mm × 0.1mm diameter.",
+    "weight_description": "Featherweight. Barely perceptible on the wrist — weighs less than a smartwatch. The user feels it more as a presence than a burden, allowing hours of wear without fatigue.",
+    "primary_material": "Titanium-alloy casing with aerospace-grade polymer underlays. Dart fabrication: uncoated carbon-fiber with nano-etched tip.",
+    "finish": "Matte gunmetal gray with subdued brushed finish. Zero reflectivity. The surface is deliberately non-reflective to avoid catching light or surveillance imaging.",
+    "color_scheme": "Gunmetal gray primary, with muted charcoal and near-black accent plating around the firing mechanism. No logos or bright indicators — visual camouflage.",
+    "grip_texture": "Micro-textured silicone underlayer adheres to skin or synth-leather gloves. The wrist band is wrapped in non-slip medical-grade polymer that molds to individual wrist contours.",
+    "distinctive_features": [
+      "Micro-pneumatic pressure gauge (barely visible dial, 2mm diameter) recessed into the wrist band",
+      "Three tiny cartridge window indicators — clear synthetic showing dart count",
+      "Hairline seam running the length of the unit indicating dart magazine chamber",
+      "Firing trigger: integrated into palm-facing surface, requires precise finger position and grip pressure to activate",
+      "Minimal LED indicator (infrared-only) for charge status, invisible to naked eye",
+      "Micro-calibration screw (1.5mm hex) for range compensation — only visible if actively maintained",
+      "Pneumatic exhaust vents disguised as ventilation slots along the underside"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS engraved in 2pt font on the inner wrist surface — only visible to wearer during donning. No serial plate; unmarked by design. A microscopic tally mark appears on the titanium casing for each successful deployment, hidden under the wrist band.",
+    "condition_typical": "Meticulously maintained. Operators keep this pristine — no corrosion, no wear patterns. A used unit shows only micro-abrasions from regular field handling. The weapon exists in a state of clinical readiness, suggesting its owners understand that any visible degradation signals careless operator discipline."
+  },
+  "image_prompt": "Overhead product photography of a matte gunmetal wrist-mounted micro-dart launcher on a dark carbon-fiber surface, gloved hand positioned to show scale and activation points. Sharp dramatic side-lighting emphasizing the minimalist titanium casing and barely-visible cartridge indicators. Close-up inset showing the 8mm carbon-fiber dart held against a hair strand for scale contrast. Cyberpunk noir aesthetic, cold surgical lighting, high-contrast blacks and silvers. Photography style: clinical precision mixed with lethal elegance. --ar 3:2 --v 6"
 }

@@ -48,5 +48,23 @@
     "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
     "Static",
     "The Signal"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, disc-shaped device resembling a premium hockey puck or compact speaker. Symmetrical, minimalist industrial design with slightly convex top surface. Projects an aura of corporate discretion and technical sophistication.",
+    "dimensions": "10 cm diameter, 4 cm height",
+    "weight_description": "300 grams — easily pocketable or held in one hand, light enough for continuous handheld use but substantial enough to feel engineered",
+    "primary_material": "Brushed titanium-grade composite housing with integrated acoustic mesh panels",
+    "finish": "Matte metallic with subtle iridescent oil-slick sheen; micro-texture grip surface around perimeter",
+    "color_scheme": "Gunmetal gray primary with silver accent ring around top edge; minimal branding in near-white",
+    "interface_elements": "Single large central activation button (matte black, slightly recessed); thin LED status ring (cyan when active, amber when charging); three micro indicator dots along bottom edge (power level, field integrity, thermal status); USB-C port concealed under magnetic access panel",
+    "distinctive_features": [
+      "Faint concentric circle pattern etched into top surface — aesthetic and acoustic design element",
+      "Soft cyan LED glow emanating from internal matrix when active, visible through translucent edge gaps",
+      "Barely audible subsonic harmonic vibration when operating — felt more than heard",
+      "Micro heat dissipation vents arranged in geometric pattern along sides"
+    ],
+    "manufacturer_markings": "AXIOM SYSTEMS logo (interlocking A and S) embossed on top; tiny regulatory stamps (GLMZ certified, CE-equivalent markings); serial number on bottom; warranty hologram near port access",
+    "condition_typical": "Clean, pristine finish typical of corporate equipment; no scuff marks or signs of field use — designed to look perpetually new. Slight dust accumulation possible on mesh vents. When active, emits barely visible electromagnetic shimmer in humid environments"
+  },
+  "image_prompt": "Product photography of the Axiom Systems WNB-1 white noise bubble generator on a sleek glass negotiation table, photographed from 45-degree angle. Device is active, showing soft cyan LED glow at edges. Surrounding the puck are holographic sound wave visualizations rippling outward in concentric patterns, frozen mid-wave. Background shows blurred corporate office with floor-to-ceiling windows overlooking GLMZ skyline at dusk. Dramatic rim lighting from above creates metallic highlights on brushed titanium surface. Shallow depth of field. Cyberpunk corporate aesthetic, color-graded with cool teals and desaturated grays. High-end product shot. --ar 3:2 --v 6"
 }

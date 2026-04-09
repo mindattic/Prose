@@ -54,5 +54,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Concrete",
+    "GLMZ",
+    "Iowan Behemoth — 'Palisade'",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Oumarou Svec-Ranginui",
+    "Praevex",
+    "Tessera Corponation",
+    "The Resonance Communion"
+  ],
+  "physical_description": {
+    "visual_profile": "A flat, rectangular adhesive charge panel with a clinical, almost medical aesthetic — like a high-tech patch or smart bandage. The surface is dominated by a central circular piezoelectric array surrounded by concentric rings of microcircuitry. Despite its lethal function, it has an almost inert, unassuming appearance until you notice the precision engineering.",
+    "dimensions": "200mm width × 140mm height × 18mm depth. Compact enough to palm, substantial enough to feel engineered.",
+    "weight_description": "Deceptively light — 420g total — which creates cognitive dissonance with its destructive capability. Feels balanced, with weight distributed evenly across the panel. The adhesive backing adds negligible mass but increases tactile grip friction.",
+    "primary_material": "Carbon-fiber composite body with embedded piezoelectric ceramic discs. Backing is industrial-grade pressure-sensitive adhesive on synthetic polymer substrate.",
+    "finish": "Matte gunmetal gray with a subtle iridescent sheen across the piezoelectric array — optical interference from the crystalline structure. The surface is micro-textured to prevent fingerprints and reflect minimal light. Minimal gloss; maximum stealth.",
+    "color_scheme": "Primary: matte gray-black. Accents: faint iridescent blue-violet from the piezoelectric crystals under certain angles. Minimal branding in dull silver.",
+    "grip_texture": "The adhesive backing is tacky but not sticky; designed to conform to irregular surfaces without premature adhesion. The exposed top surface is micro-ridged for stability during placement.",
+    "distinctive_features": [
+      "Central honeycomb pattern of piezoelectric ceramic discs arranged in a 70mm diameter circle",
+      "Three micro-LED status indicators (power, calibration, armed) embedded flush into the upper right corner",
+      "Recessed circular detonation port (8mm diameter) at the geometric center, barely visible",
+      "Hairline engraved calibration reference grid (0-280mm scale) along the bottom edge",
+      "Moisture-resistant gasket seal running the perimeter — thin line of translucent silicone",
+      "Serial number and manufacturer stamp (Lucid Dreams Sleep Technology logo) in 4pt font, bottom left corner",
+      "Thermochromic ink that reveals internal circuit topology when temperature exceeds 25°C (debugging feature retained from development)"
+    ],
+    "manufacturer_markings": "Lucid Dreams Sleep Technology logo — a minimalist sleeping eye icon — stamped in matte silver at bottom left. Serial number in 4pt numerals directly below. No other markings; the aesthetic is deliberately corporate-clinical, suggesting medical/therapeutic origin rather than military.",
+    "condition_typical": "Breach operators keep these in pristine condition until deployment. After adhesive application to a surface, the visible face remains clean and unmarred — the weapon is invisible until detonation. Pre-deployment units show no wear; post-mission units are considered single-use and disposed of."
+  },
+  "image_prompt": "Product photography of a flat rectangular adhesive charge panel, 200mm × 140mm, photographed from a 45-degree angle on a dark charcoal matte surface. Central focus on the circular piezoelectric crystal array (iridescent blue-violet under dramatic side-lighting from the left). Matte gunmetal gray carbon-fiber body with barely-visible micro-circuitry patterns. Three flush-mounted LED indicators glowing subtle amber in the upper right corner. Adhesive backing visible on the bottom edge, tacky synthetic polymer with slight sheen. Shot with surgical precision lighting — cool 5600K key light from upper left, deep shadow fill on the right side creating dimensional contrast. Background is pure black with slight vignette. No hands, no scale reference — let the engineering speak. Hyper-detailed macro focus on the surface texture and crystal structure. Cyberpunk aesthetic: minimalist, clinical, deceptively innocent. Lucid Dreams Sleep Technology branding visible in small silver serif font. --ar 3:2 --v 6"
 }

@@ -36,5 +36,25 @@
   "related_entities": [
     "The Bazaar",
     "The Underlayer Collective"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A form-fitting long-sleeve undershirt with subtle horizontal thermal lines visible across the torso. The silhouette is lean and utilitarian, designed to layer seamlessly under heavy outerwear. The garment hugs the core while allowing freedom of movement through the shoulders and arms.",
+    "fit": "Compression-adjacent; snug through the chest and torso to maximize heat transfer, with slightly relaxed sleeves for unrestricted arm mobility. Designed to sit flush against skin or over minimal layers.",
+    "primary_material": "Polyester-blend synthetic fabric with integrated resistive heating wire mesh",
+    "texture": "Smooth, slick synthetic surface with faint ribbed thermal channels running horizontally across the chest and back. Small, firm rectangular battery module at the waistband feels distinctly different from the rest of the fabric.",
+    "color_scheme": "Utilitarian matte black or charcoal gray with silver-gray resistive heating grid lines faintly visible under direct light. Minimal branding—small Nomura logo on left chest in reflective silver.",
+    "closures": "Friction-fit crew neck and elastic cuffs; no fasteners. Open design for easy layering.",
+    "distinctive_features": [
+      "Visible horizontal heating element channels across chest, kidneys, and lower back",
+      "Small rectangular rechargeable battery module integrated into the waistband on the right hip—roughly 3x2 inches, slightly raised",
+      "Minimal status indicator: single small LED light (red/green) near the battery module",
+      "Thermal contact patches reinforced with slightly thicker material at core heat zones",
+      "No smart-fabric integration—purely resistive heating",
+      "Waistband has small rubberized grip to prevent battery pack from shifting"
+    ],
+    "tier_indicator": "Tier 3-4: Working class, budget-conscious solution. Affordable enough for precariat and service workers; reliable enough that it becomes a winter staple.",
+    "cultural_context": "Worn by warehouse workers, transit operators, delivery couriers, and anyone spending extended time outdoors or in unheated industrial spaces. Signals practicality over status—this person chooses function over fashion, survives on tight margins.",
+    "condition_typical": "Broken-in within weeks of regular use. The synthetic fabric pills slightly at high-friction points (underarms, collar). Battery pack shows wear marks from repeated charging. Small creases form where the battery sits. Despite wear, it remains functional—these garments are designed to last through multiple winters of heavy use before degradation."
+  },
+  "image_prompt": "A lean, weathered model wearing a Nomura Heated Core Layer base shirt under an open heavy winter coat, standing in an industrial Shelf district warehouse corridor at dusk. Moody blue-gray lighting casts long shadows. Close-up detail shot of the battery module on the waistband, showing the small red charging indicator glowing faintly. Temperature-warped air visible around the torso in cool tones. Worn concrete walls, stacked shipping containers blurred in background. Fashion catalog aesthetic—utilitarian, honest, no glamour. --ar 2:3 --v 6"
 }

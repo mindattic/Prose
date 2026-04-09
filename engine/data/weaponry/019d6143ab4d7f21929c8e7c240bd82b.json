@@ -53,5 +53,40 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus UT-5 'Lamprey'",
+    "Charnel Propulsion",
+    "GLMZ",
+    "Helix Biosystems",
+    "Kenji Guerrero-Osei-Mensah",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Narrowcast",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "TESSERA PG-2 'Signature'",
+    "The Sump",
+    "Zheng-Dao Bioelectric Peristaltic Breach Driver"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, biomimetic cylinder tapering slightly at both ends, resembling an eel or lamprey fish. The form factor is deliberately organic — smooth, hydrodynamic, purposefully evolved rather than engineered. At first glance, it reads as biological before the industrial details resolve.",
+    "dimensions": "34 cm length × 6 cm diameter (roughly the size of a large flashlight or rolled newspaper)",
+    "weight_description": "Surprisingly dense for its compact profile — 1.8 kg feels substantial in hand despite the slim geometry. The weight is distributed evenly, creating a balanced, almost organic heft. Not unwieldy, but deliberate.",
+    "primary_material": "Reinforced polymer shell with embedded pressure-resistant elastomer segments. The peristaltic pump chambers create visible ribbed segmentation along the body, like a biological organism's musculature.",
+    "finish": "Matte charcoal with industrial-grade sealant. The surface has a subtle iridescent sheen where light catches the elastomer joints — faint greens and purples suggesting bioluminescent adaptation. Intentionally designed to fade into shadow.",
+    "color_scheme": "Charcoal grey body with dark teal accent lines tracing the pump chambers. Translucent amber viewport at the nose cone reveals sonar optics. Minimal branding — intentional absence reads as regulation avoidance.",
+    "grip_texture": "Not designed for human grip. Smooth, slightly tacky polymer that resists water. Mounting points are recessed and threaded for deployment apparatus, not hands. The body itself is grip-resistant by design.",
+    "distinctive_features": [
+      "Nine visible peristaltic pump bulges running the length of the body, rippling visually like vertebrae",
+      "Translucent amber dome at the forward end housing sonar array and navigation optics",
+      "Recessed payload bay midship, seamlessly integrated into the hull",
+      "Micro-acoustic transducers embedded at the tail section, barely visible as hairline seams",
+      "Pressure relief vents along the lateral seams, designed to equalize without creating acoustic signature",
+      "Minimal exhaust ports — the drone produces virtually no visible discharge",
+      "Faint etching marks indicating pressure test ratings and depth certifications",
+      "Low-profile neutral buoyancy design — the drone neither floats nor sinks aggressively"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo etched in microscopic text along the forward 1/3 of the hull. Serial plate recessed beneath a rubberized access port at the tail. Regulatory certification stamps laser-marked in nearly invisible UV-reactive ink on the payload bay — designed to be present for inspections but invisible to casual observation.",
+    "condition_typical": "Field-deployed units show minimal wear — the smooth polymer resists corrosion and scarring. Sediment residue and algae biofilm accumulate on units left dormant in flooded systems, creating a living camouflage. Well-maintained black market variants are often cleaned meticulously. Military/faction units show micro-scratches from deployment apparatus contact and occasionally faint blast residue patterns where payload detonations have been survived."
+  },
+  "image_prompt": "Cyberpunk weapon catalog photography: sleek biomimetic drone cylinder 34cm long, 6cm diameter, positioned horizontally on wet obsidian surface with droplets. Charcoal matte polymer body with visible segmented peristaltic pump ribbing, dark teal accent lines, translucent amber sonar viewport at nose. Dramatic low-angle side-lighting casting shadows between pump segments, emphasizing organic musculature. Gloved hand (chrome knuckle-guards, black synthleather) hovering above for scale. Water droplets catching harsh blue-white LED edge-light, revealing iridescent sheen in elastomer joints. Background: bokeh of flooded GLMZ infrastructure, partially submerged concrete and corroded steel pipe. Minimal branding, industrial minimalism. Regulatory certification marks visible but nearly illegible. Foreground sharp, background cyberpunk haze. --ar 3:2 --v 6"
 }

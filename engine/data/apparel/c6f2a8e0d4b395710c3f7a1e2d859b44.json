@@ -40,5 +40,26 @@
   ],
   "related_entities": [
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Clinical and authoritative — a sharp silhouette that reads as both functional and hierarchical. The extended white coat drapes past the hips, creating an elongated vertical line. The crisp geometry is broken only by the wraparound visor's subtle curve and the satchel's organic bulge at the hip. Projects Tier 1-2 corpo prestige within a controlled, sterile aesthetic.",
+    "fit": "Tailored precision with compression elements. The coat is slim through the torso with subtle articulated panels at the shoulders and elbows for mobility. Charcoal trousers are slim-fit with a slight taper, allowing full range of motion without excess fabric. The close-fit cap and visor create a snug, secure feeling around the head.",
+    "primary_material": "Treated biosynth-cotton blend for the coat (stain and fluid resistant), performance charcoal twill for trousers, translucent thermoplastic elastomer for gloves, polycarbonate composite for shoes and visor lens.",
+    "texture": "Smooth and clinical — the coat has a subtle sheen from its chemical-resistant treatment. Gloves carry a slight tackiness for grip. Visor lens is optically clear with an almost invisible UV-reactive coating. Shoes have a textured, non-slip sole pattern visible from below.",
+    "color_scheme": "Pristine white (coat, cap, shoes) with charcoal gray trousers. Translucent pale blue gloves add a medical coolness. The embossed security strip at collar reads as subtle dark gray. Visor lens is clear with barely perceptible amber tint.",
+    "closures": "Magnetic snap buttons down the coat front (silent, secure, durable). Friction-fit wrist seals on the coat cuffs. Elastic pull-on cap. Wraparound visor sits snug via contoured fit. Gloves slip over sealed cuffs with a sealed overlap. Shoes have friction-lock laces (never come undone).",
+    "distinctive_features": [
+      "Embossed Pragma BioSynth security strip at collar — doubles as wear verification and access credential",
+      "Integrated climate regulation layer in coat lining (subtle quilting visible at seams)",
+      "Sealed wrist cuffs designed to overlap with glove cuffs — prevents contamination ingress",
+      "UV-filter wraparound visor with blue-light reduction coating",
+      "Close-fit white cap with internal BCI port access channel (fabric slightly raised at crown)",
+      "Hip-mounted compact satchel with reinforced sample vial pockets and spectrometer holster",
+      "Composite shoes with conductive grounding strip along sole edge (visible as thin silver line)"
+    ],
+    "tier_indicator": "Tier 1-2 luxury corpo. The precision tailoring, integrated tech, and Pragma BioSynth branding signal access to high-end pharma facilities and research infrastructure. This is not off-the-rack; it's personalized labwear.",
+    "cultural_context": "Pharmaceutical researcher, biotech sector. Wearing this rig announces expertise, corporate affiliation, and authorized lab access. It carries the weight of institutional trust and regulatory compliance. The wearer is credentialed, vetted, and operating within corporate hierarchies.",
+    "condition_typical": "Pristine to lightly worn. The coat maintains crisp edges and bright white despite frequent washing (treated fibers resist yellowing). Gloves show minor stress creases at knuckles from pipette work. Shoes have a barely-scuffed composite toe. The rig is replaced or professionally restored when damage occurs — this is not a secondhand garment."
+  },
+  "image_prompt": "Fashion photograph of a Tier 1 pharmaceutical researcher in a pristine white Pragma BioSynth lab coat and charcoal slim trousers, wearing a wraparound safety visor and close-fit white cap. Translucent pale blue gloves sealed at cuffs. Hip-mounted compact satchel with visible sample vials. White composite shoes with slip-resistant tread. Posed in a sterile, minimalist lab setting with cool LED accent lighting — blue and white tones. Dark concrete floor, glass partitions slightly out of focus in background. Model has visible BCI port scar on temple, subtle augmentation wear. Hyper-clean, clinical aesthetic. Moody, corporate, serious. --ar 2:3 --v 6"
 }

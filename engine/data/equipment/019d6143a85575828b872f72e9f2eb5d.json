@@ -46,5 +46,23 @@
     "TESSERA PG-2 'Signature'",
     "The Transfer",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A featureless, inert-looking micro-device resembling a flattened ceramic wafer or industrial sensor component. Deliberately nondescript to avoid attention or recognition. When embedded, appears as part of surrounding material — indistinguishable from concrete, drywall, or industrial composite.",
+    "dimensions": "20mm × 10mm × 5mm (roughly the size of a large postage stamp, thickness of two credit cards stacked)",
+    "weight_description": "Negligible — under 3 grams, instantly pocketable or embeddable without detection",
+    "primary_material": "Reinforced silicate composite with inert ceramic housing",
+    "finish": "Matte, non-reflective surface with subtle micro-texture to resist optical scanning. Designed to blend seamlessly into concrete, plaster, or industrial materials when embedded.",
+    "color_scheme": "Neutral gray-beige primary with barely-visible charcoal circuit tracery visible only under magnification. No branding visible on surface.",
+    "interface_elements": "No external interface — all interaction is neural. Single microscopic contact pad on underside (0.5mm) for optional hardline diagnostics. No LED indicators, screens, or mechanical components.",
+    "distinctive_features": [
+      "Perfectly flat, featureless face designed to evade visual inspection",
+      "Micro-etched serial number on rear (requires magnification to read)",
+      "Imperceptible haptic response when neural authentication succeeds",
+      "Barely-visible manufacturing flaw (intentional) to distinguish from surveillance devices"
+    ],
+    "manufacturer_markings": "Axiom Systems corporate sigil (Φ enclosed in a circuit ring) laser-etched on reverse in 2mm font. Model identifier 'NDD-2' in microscopic print. GLMZ regulatory stamp present but degraded-looking.",
+    "condition_typical": "Appears weathered or aged even when new — designed to look like forgotten hardware or industrial debris. In embedded form, indistinguishable from wall/concrete texture."
+  },
+  "image_prompt": "Close-up product photography of a featureless gray ceramic micro-wafer (20mm × 10mm) lying on a brushed steel workbench next to a neural interface jack for scale. Harsh top-lighting reveals barely-visible circuit tracery. Shallow depth-of-field. Concrete dust and industrial debris scattered nearby. Embedded version shown in cutaway: device half-sunk into gray concrete wall texture. Cyberpunk espionage aesthetic, cold color grading, desaturated. Dramatic shadows. Canon macro lens style. --ar 3:2 --v 6"
 }

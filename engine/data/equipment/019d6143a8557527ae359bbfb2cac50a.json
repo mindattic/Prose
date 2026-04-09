@@ -48,5 +48,24 @@
     "Tessera Corponation",
     "Tessera Industries Holographic Data Storage",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A precision-engineered coin-sized disc with a jewel-like center that shifts between deep indigo and teal under light. The Tessera crystal at its core is visible through a transparent security window, suspended in a gossamer suspension field that creates subtle chromatic aberrations. The device has an almost biological elegance despite its industrial housing.",
+    "dimensions": "3 cm diameter, 0.8 cm thickness — fits in the palm of a hand or between two fingers",
+    "weight_description": "Feather-light at 10 grams; pocketable, easily swallowable in emergency protocols",
+    "primary_material": "Aerospace-grade titanium-ceramic composite housing with polycarbonate crystal view port",
+    "finish": "Satin gunmetal with brushed micro-texturing to reduce fingerprints; holographic rainbow fleck pattern across the rim that catches light",
+    "color_scheme": "Matte charcoal grey housing with the central Tessera crystal displaying an opalescent indigo-to-teal gradient. Axiom branding in discrete metallic silver. Small biometric scanner ring in matte black.",
+    "interface_elements": "Miniature holographic contact points (visible only when powered); neural interface port recessed into bottom surface; secondary fingerprint scanner ring around the perimeter; tiny status LED (green idle, amber reading, red tamper alert) embedded flush in upper edge",
+    "distinctive_features": [
+      "Visible Tessera crystal suspended in micro-field within transparent window — appears to float",
+      "Holographic shimmer across the device's rim that pulses faintly when active",
+      "Biometric scanner ring that glows faint amber during authentication",
+      "Aerospace-precision tolerances visible in panel seams and port edges",
+      "Axiom Systems corporate security hologram etched into bottom — only visible under specific light angle"
+    ],
+    "manufacturer_markings": "AXIOM SYSTEMS text in minimalist serif font on upper face; MCA-4 designation below; regulatory stamps for GLMZ Tier 4+ clearance; microscopic serial number laser-etched inside crystal view port",
+    "condition_typical": "Pristine, as field operatives maintain obsessive care; often observed being handled with microfiber cloth; frequently paired with discrete wrist-mounted neural interface jack"
+  },
+  "image_prompt": "Close-up product photography of a futuristic coin-sized data storage device on a brushed aluminum workbench, surrounded by soft blue-green halo lighting. The Tessera crystal interior glows faintly indigo through a transparent window, creating chromatic aberrations. Axiom Systems branding visible. Shallow depth of field. Cyberpunk aesthetic with dramatic side-lighting revealing micro-texturing and holographic rim details. Moody atmosphere, corporate surveillance tech aesthetic. Shot from 45-degree angle. --ar 3:2 --v 6"
 }

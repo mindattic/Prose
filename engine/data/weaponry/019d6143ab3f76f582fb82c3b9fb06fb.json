@@ -61,5 +61,41 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Electrostatic Flensing Projector EFP-1 'Skinreader'",
+    "Ferrogate Enforcer Cruiser",
+    "GLMZ",
+    "Helix Biosystems",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Sable",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Clock",
+    "The Collective",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Vantablack VD-2 'Paparazzi'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist pistol with an oversized, asymmetrical emitter head that dominates the weapon's forward profile. The twin apertures sit recessed in a heat-dispersal collar, giving it the appearance of a predatory insect or surgical instrument retrofitted for violence. Compact and top-heavy.",
+    "dimensions": "28 cm length overall, 12 cm height including emitter collar, 6 cm width at widest point (emitter head). Twin apertures separated by 3.2 cm centerline.",
+    "weight_description": "Dense and front-loaded — 1.4 kg feels heavier in hand due to the concentrated mass of the emitter assembly. Requires deliberate wrist support, not a casual grip weapon.",
+    "primary_material": "Tungsten-impregnated polymer frame with steel reinforcement around the grip and trigger assembly. Emitter collar is aerospace-grade aluminum with integrated heat-sink fins.",
+    "finish": "Matte titanium-gray on the frame with anodized black on the grip section. The emitter collar bears a brushed aluminum finish with visible thermal stress marks — faint oxidation streaks and heat-discoloration rings around the apertures.",
+    "color_scheme": "Primary slate gray with charcoal black accents on the grip and trigger guard. The emitter apertures have a faint iridescent burn-ring around each — amber to violet from repeated thermal cycling.",
+    "grip_texture": "Textured polymer with aggressive crosshatch pattern, wrapped at the rear with thin corded synthetic leather for purchase. Deliberately angular, designed for a firm two-handed stance despite its pistol size.",
+    "distinctive_features": [
+      "Twin circular apertures recessed in the emitter collar, separated by interference-pattern alignment ridge",
+      "Prominent heat-sink fins running laterally along the emitter assembly",
+      "Thermal contrast overlay display window — a small smoked acrylic panel above the iron sights showing target heat signature",
+      "Pyrolytic induction cell charge indicator: three discrete LED dots (red-yellow-green) on the left frame, glowing faintly during charge cycle",
+      "Engraved serial plate on right grip: ARCTURUS DEFENSE SOLUTIONS logo (stylized A with orbital ring) and model designation 'PFPS-2'",
+      "Burn-pattern scarring on the emitter collar apertures — evidence of high-power discharge cycles and fascial vaporization",
+      "Trigger guard is reinforced and overbuilt, designed for gloved operation"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (orbital-A symbol) stamped on the right grip panel below the trigger guard. Model designation 'PEELER' and 'PFPS-2' engraved in small serif type on the left frame above the safety lever. Serial number on the grip backing plate.",
+    "condition_typical": "Well-maintained field weapon with evidence of regular use — micro-scarring around the apertures from thermal cycling, faint carbon discoloration on the emitter collar, grip polymer worn smooth in the operator's contact zones. No visible damage; treated as a precision tool despite its brutal application."
+  },
+  "image_prompt": "Product photography of a compact, brutalist pyrolytic pistol with twin emitter apertures. Resting on dark matte surface with tactical gloved hand gripping the textured polymer frame. Dramatic side-lighting emphasizing the oversized heat-sink collar and the faint iridescent burn-rings around the apertures. Thermal glow visible in the charge indicator LEDs (amber). Matte titanium-gray finish contrasted against charcoal grip. Background is diffuse dark cyberpunk aesthetic with faint neon reflection on the weapon's surface. Close enough to see the wear patterns and fascial-tissue scorch marks on the emitter head. Cold, clinical, surgical-weapon vibe. --ar 3:2 --v 6"
 }

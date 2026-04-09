@@ -80,5 +80,24 @@
     "The Cistern",
     "The Peninsula",
     "Zheng-dao Bioelectric"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, fish-like autonomous drone with a tapered fusiform body. The hull curves smoothly from a rounded, sensor-studded nose cone to a flexible trailing section. Instead of rigid propellers, the rear third undulates with segmented myomer fins that ripple in coordinated waves. The overall silhouette is organic and predatory — a mechanical remora fish scaled for underwater reconnaissance.",
+    "dimensions": "1.4 meters long, 0.22 meters maximum body diameter. Roughly the size of a large cuttlefish or small barracuda. Handheld and portable, though typically deployed from waterproof transit cases.",
+    "weight_description": "Neutrally buoyant when ballasted; approximately 8-12 kg. Carried by two-person team or single operator with stabilizing rig; light enough to be deployed from harness or pack.",
+    "primary_material": "Myomer-composite flexible spine with segmented polycarbonate hull sections. Forward pressure housing is reinforced titanium alloy around the primary sensor cluster.",
+    "finish": "Matte biofilm-coated exterior with anti-reflective, sonar-absorbing properties. Surface appears dark gray-green with subtle iridescent shimmer where light catches the organic coating. Hull sections show faint hexagonal panel seams.",
+    "color_scheme": "Gunmetal gray primary hull with bioluminescent green accent nodes along the lateral line sensor array. Navigation lights are minimal—soft amber for tether-connection status, dim red for active recording.",
+    "interface_elements": "Flush-mounted dorsal access panel (requires magnetic key). Acoustic transducer port at nose cone. Illuminated depth/status readout on small OLED patch near center of gravity. Bayonet hardpoint on ventral surface (near tail) for payload mounting. Low-frequency tether connector at stern (sealed when autonomous).",
+    "distinctive_features": [
+      "Distributed pressure-sensitive nodes running full length of hull—visible as subtle raised bumps mimicking fish lateral line",
+      "Undulating myomer fin array at rear, appearing as segmented ribbons rather than rigid propellers",
+      "Biofilm coating gives surface organic, slightly wet appearance even when dry",
+      "Minimal visible lighting—deliberately subdued for stealth operations",
+      "Flexible spine visible where hull sections meet, allowing visible articulation"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo (stylized fish-scale pattern in white) on dorsal panel. Serial number and depth rating etched on titanium nose cone. Small QUANTA price mark (Φ equivalent) stamped on ventral ballast chamber access.",
+    "condition_typical": "Fresh from maintenance shows pristine biofilm coating. In extended field use, coating develops patina of actual algae and microbial film, further reducing sonar signature but adding organic camouflage. Minor mineral crusting around tether connector after saltwater or industrial channel operations."
+  },
+  "image_prompt": "Product photography of a 1.4m fish-like underwater drone on a wet stainless steel workbench, rain-slicked and glistening under cold LED workshop lighting. The drone's myomer fins are slightly articulated, visible undulating motion frozen mid-ripple. Matte gray-green hull with subtle bioluminescent green sensor nodes running along its length. Dramatic side-lighting emphasizes the smooth, organic curves and the segmented tail fin structure. Dark water droplets cling to the biofilm-coated surface. Background shows blurred maintenance tools and a dimly lit industrial workshop setting. Cyberpunk aesthetic with emphasis on biological engineering and stealth design. --ar 3:2 --v 6"
 }

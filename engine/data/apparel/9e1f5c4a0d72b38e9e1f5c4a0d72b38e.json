@@ -47,5 +47,26 @@
     "Subsonic Caseless Bolt Rifle SCBR-1 'Quiet Ledger'",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Ledger"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A pristine, almost architectural garment that reads as understated luxury. The shirt maintains an impeccable silhouette even when unworn — structured yet fluid, suggesting power without announcement. It's the kind of piece that makes the wearer appear composed before they open their mouth.",
+    "fit": "Precisely tailored through the chest with a gradual taper to the waist. Not slim or aggressive, but intentionally shaped. The proportions suggest someone who has been measured, not fitted off-rack. Sleeves fall with geometric precision to the wrist.",
+    "primary_material": "Long-staple Egyptian-analog cotton from southern biofarm production. Thread count so high the weave is nearly imperceptible. The fabric has a subtle luminescence in direct light — not reflective, but as if it generates its own low-level glow.",
+    "texture": "Impossibly smooth. Runs the hand like cool water. The weave is so tight it barely has texture — the eye reads it as finish rather than fabric. Under magnification, the surface is so uniform it almost seems synthetic, but the organic warmth contradicts that immediately.",
+    "color_scheme": "Off-white (cream baseline with the faintest warmth), pure white (surgical precision), and a nearly-invisible pale blue that collapses to white under anything but optimal light. No logos, no stitching variations, no visual noise.",
+    "closures": "Real shell buttons — slow-sourced, hand-cut. Each button placement is deliberate and spaced for visual balance. No magnetic snaps, no friction-fit compromises.",
+    "distinctive_features": [
+      "Numbered interior placket — each shirt registered to buyer, creating provenance",
+      "French cuffs as standard",
+      "Semi-spread collar that functions with or without neckwear",
+      "Hand-stitched by a team of twelve in a dedicated workshop",
+      "Zero-wrinkle guarantee implied by design philosophy",
+      "Shell button work visible only as subtle dimensional variation in light",
+      "Seamless integration of construction — no racing stitches or visible reinforcement"
+    ],
+    "tier_indicator": "Tier 5 obscure luxury. Not Tier 1 corporate flash — this is the clothing of people who have moved beyond the need to signal wealth. The price is astronomical but invisible.",
+    "cultural_context": "Worn by independent operators, old-money families who predate the GLMZ consolidation, medical directors, independent syndicate heads, and people whose security depends on not being noticed. The wearer is someone who has earned the right to be boring.",
+    "condition_typical": "Pristine. Worn once, then pressed into a cedar closet. The guarantee isn't just the fabric — it's the lifestyle. Wrinkles don't happen to these shirts because wrinkles happen to people in motion, in stress, in ordinary life."
+  },
+  "image_prompt": "Aurelian & Co. Poplin Dress Shirt on a severe dark mannequin or architectural male figure, shot in a minimalist brutalist studio with cold overhead lighting that catches the fabric's faint luminescence. The white-on-white composition emphasizes the near-imperceptible weave and the hand-stitched details at the collar and cuffs. Shell buttons catch single-point highlights. Background: concrete or polished dark metal, suggesting a high-floor workshop overlooking the GLMZ. The shirt appears untouched, evoking sterile luxury and old money. --ar 2:3 --v 6"
 }

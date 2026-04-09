@@ -77,5 +77,25 @@
     "The I-75 Spine",
     "The Root",
     "Yusra Ntambwe-Cakić"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact cylindrical deployment canister with a ribbed grip section, topped by a quick-release valve mechanism. The canister houses coiled mycelium-composite rope with a distinctive organic texture visible through the translucent polymer window panel. Accompanying hardware includes six short, brutal anchor bolts with bulbous fungal root heads in various states of dormancy, and a palm-sized tension spool with an integrated digital readout.",
+    "dimensions": "Canister: 28cm height × 10cm diameter. Rope deployment length: 80m. Anchor bolts: 12cm with 4cm root head diameter. Tension spool: 12cm diameter.",
+    "weight_description": "Canister with full rope load: 1.8kg — easily handheld and packable. Anchor bolts negligible weight. Tension spool: 400g. Total kit mass allows carrying via single strap across chest or integrated pack loop.",
+    "primary_material": "Canister body: reinforced polycarbonate with rubberized titanium alloy base ring. Rope: engineered mycelium strands braided with carbon nanotube filaments. Anchor bolts: hardened steel with biological expansion heads. Spool mechanism: aircraft-grade aluminum core with organic composite rim.",
+    "finish": "Canister features a matte industrial grey powder coat with visible wear patterns from field use. The translucent window shows the rope's dark grey-green coil beneath. Anchor bolts have a dull metallic finish with slightly biological-looking root structures. Tension spool has brushed aluminum housing with soft rubber grip zones.",
+    "color_scheme": "Primary: industrial charcoal grey (canister, bolt shafts). Accent: dark sage green (visible rope through window, fungal root heads, spool rim stripe). Secondary: silver (titanium base, aluminum spool). Status indicators: pale cyan LED on tension readout.",
+    "interface_elements": "Quick-release valve on canister top with safety catch. Translucent polymer window for visual rope inventory. Six anchor bolt insertion ports on deployment bracket. Tension spool features a small holographic readout display (showing load in tonnes), mechanical tension dial, and manual feed/lock lever. Color-coded deployment guide printed on canister side: pale cyan for 'ready,' amber for 'armed,' green for 'anchored.'",
+    "distinctive_features": [
+      "Dark grey-green rope coil visible through window, with faintly fibrous texture unlike synthetic cord",
+      "Fungal root expansion heads on anchor bolts — organic, bulbous, slightly asymmetrical",
+      "Self-repair microfiber layer on rope generates subtle iridescent shimmer under certain light angles",
+      "Tension spool displays load sensor readout in real-time as rope deploys",
+      "Faint bioluminescent markings on anchor bolts (saline-activated, dormant until deployment)",
+      "Ironclad Agrisystems logo — geometric wheat-and-circuit hybrid — embossed on base ring"
+    ],
+    "manufacturer_markings": "IRONCLAD AGRISYSTEMS, GLMZ Division printed in white block sans-serif across canister. Regulatory stamps: GLMZ Municipal Vertical Access Approved (green circle), tensile rating 2.4T printed in small silver letters. Serial number laser-etched on base. Patent reference to 'Mycelium-Composite Fiber Technology' on side label.",
+    "condition_typical": "Field-used kits show scuff marks on polycarbonate from carabiners and contact with concrete surfaces. Rope visible in window often displays minor abrasion marks from previous deployments — the faint self-repair shimmer indicates active healing. Anchor bolts may show small mineral deposits from deployment in mineral-rich substrates. Tension spool sometimes has chalk dust or concrete residue from impact testing."
+  },
+  "image_prompt": "Product photography of Ironclad Agrisystems Mycelial Anchor Net kit laid out on worn steel workbench, dramatic side-lighting casting sharp shadows. Cylindrical deployment canister in center with translucent window showing coiled dark grey-green rope beneath. Six anchor bolts arranged in arc formation, their bulbous fungal root heads catching light with subtle organic texture. Tension spool positioned to show holographic readout glowing pale cyan. Industrial workshop background with concrete pillar, neon cable runs, scattered climbing gear. Cyberpunk aesthetic: cool color temperature, rim lighting on rope coil through window, faint bioluminescent glow on dormant anchor root heads. Close-up detail of rope texture visible — dark sage-grey fibers with self-repair shimmer. Cinematic product shot for field deployment manual. --ar 3:2 --v 6"
 }

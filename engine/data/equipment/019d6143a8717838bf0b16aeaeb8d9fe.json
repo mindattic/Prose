@@ -45,5 +45,25 @@
   "parent_corponation": "",
   "related_entities": [
     "Arcturus KS-9 'Orchard'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian cylindrical device with jury-rigged construction — part theatrical equipment, part improvised weapon. The body shows visible welds, mismatched plating, and exposed heating coils. A large pressurized tank forms the core, with heating elements wrapped around it like mechanical tendrils. The nozzle is wide and flared, designed for maximum dispersal. Overall aesthetic is functional brutalism: no polish, all pragmatism.",
+    "dimensions": "45cm tall, 20cm diameter cylinder — backpack or shoulder-carry sized",
+    "weight_description": "2-3kg when full — handheld but requires stabilizing strap or mount when deployed",
+    "primary_material": "Salvaged stainless steel pressure vessel, aluminum heating jacket, rubber-coated steel trigger assembly",
+    "finish": "Bare metal with visible oxidation and heat-discoloration marks; welding seams prominent and unground; rubber grip sections worn glossy from use",
+    "color_scheme": "Metallic silver-grey with dark carbon scorching around heating coils; accents of burnt orange rust; matte black trigger guard and safety lever",
+    "interface_elements": "Pressure gauge (analog needle, red warning zone at 80PSI); manual ignition button (large, recessed, industrial); safety lever (flip-up); refill port with threaded brass cap; venting valve with manual release knob",
+    "distinctive_features": [
+      "Visible braided metal heating coil wrapped in tight spirals around upper tank section",
+      "Handwritten pressure capacity markings (in marker) on side panel",
+      "Duct-taped wiring bundle running from ignition module to heating element",
+      "Custom-welded mounting bracket suggesting field modification",
+      "Scorch marks and chemical staining around nozzle outlet",
+      "Pressure relief tube venting downward with a small copper funnel"
+    ],
+    "manufacturer_markings": "Faded 'STREET CUSTOM' stencil on tank face; no regulatory stamps (intentionally removed or never present); handwritten serial number scratched into base plate",
+    "condition_typical": "Active use shows residual white powder coating on nozzle edges; faint chemical odor clings to exterior; pressure gauge needle sitting 40-60PSI range; trigger assembly shows minor corrosion from glycol exposure"
+  },
+  "image_prompt": "Cyberpunk product shot of a jury-rigged theatrical fog machine converted into a street-custom smoke dispersal device, positioned on a grimy metal workbench in a neon-lit underground workshop. The device is gunmetal grey with visible welding seams, wrapped heating coils glowing faintly red, and pressure gauges catching harsh blue-white LED light. Foreground shows scattered tools, empty glycol canisters, and titanium dioxide powder residue. Dramatic chiaroscuro lighting with deep shadows emphasizing the brutal, improvised construction. Shot from 45-degree angle showing nozzle detail and control interface. Gritty, industrial cyberpunk aesthetic. --ar 3:2 --v 6"
 }

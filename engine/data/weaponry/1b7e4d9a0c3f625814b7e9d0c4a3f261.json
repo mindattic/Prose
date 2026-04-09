@@ -44,5 +44,38 @@
     "restricted",
     "arcturus"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Irontide Tidal Energy",
+    "Kairos",
+    "Nodar Kuznetsov-Adu",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "The Pure Hand",
+    "The Shaft"
+  ],
+  "physical_description": {
+    "visual_profile": "A refined L-shaped impact tool with martial heritage — sleek and purposeful. The long shaft presents as a reinforced forearm guard when carried traditionally, while the perpendicular handle suggests coiled mechanical efficiency. At rest, it reads as a compact striking implement; in motion, as an extension of the wielder's own limbs.",
+    "dimensions": "Main shaft 560mm long, 18mm diameter; perpendicular handle 180mm long, positioned 140mm from the shaft's base; overall L-footprint approximately 560mm × 180mm when extended",
+    "weight_description": "Balanced at 820g — substantial enough to deliver impact force, light enough for rapid rotation and multi-strike sequences. Feels anchored in the hand without being burdensome; designed for prolonged control work",
+    "primary_material": "Titanium-polymer composite main shaft; high-density capacitor housing within the grip handle; internal insulated discharge conduit running the full length",
+    "finish": "Matte gunmetal on the main shaft with a subtle brushed texture; the grip handle features a slightly raised rubberized coating for secure contact during high-exertion use. Minimal reflectivity by design — tactical matte throughout",
+    "color_scheme": "Gunmetal grey primary with dark charcoal grip; silver electrode strip accent near the tip running 150mm up the shaft, providing visual indication of the discharge zone",
+    "grip_texture": "Rubberized ergonomic polymer with fine crosshatch texturing for wet-hand retention; the perpendicular handle sits comfortably in the palm with subtle finger grooves matching average hand width",
+    "distinctive_features": [
+      "Silver electrode strip running 150mm from tip, visually distinct from main shaft",
+      "Subtle charging indicator light embedded in grip handle (dim amber when charged, green during discharge)",
+      "Arcturus Defense Solutions logo stamped flush into the grip near the base",
+      "Three micro-vent ports along the grip handle for internal capacitor thermal dissipation",
+      "Faint wear marks from repeated holstering and forearm carry — micro-scratches on the shaft near the handle junction",
+      "Discharge contact points at the tip slightly darkened from repeated electrical arcing"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (circular with stylized 'A') stamped in raised relief on the grip handle, approximately 40mm from the base; serial plate (6-character alphanumeric) etched near the junction of shaft and handle; voltage specification (65K) stamped minimally on the lower grip",
+    "condition_typical": "Field-worn but meticulously maintained — the finish is clean with shallow scuff marks from duty carry, but no deep gouges. Charging contacts are regularly cleaned. Operators treat the ETF-3 with professional respect; it is rarely found neglected or battle-scarred due to its limited issue and the training required to use it"
+  },
+  "image_prompt": "Close-up product photograph of the Arcturus ETF-3 Mantis electrified tonfa resting on a matte black tactical mat. Dramatic side-lighting from the left, casting the silver electrode strip in sharp relief against the gunmetal shaft. The rubberized grip handle prominent in the foreground, showing fine crosshatch texture and the faint Arcturus logo. Shallow depth of field with the discharge tip slightly soft. Cool LED charging indicator glowing dim amber in the grip. Cyberpunk aesthetic with industrial minimalism. Shot from a 45-degree angle emphasizing the L-geometry and balanced weight distribution. Professional tactical equipment photography style. --ar 3:2 --v 6"
 }

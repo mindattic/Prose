@@ -43,5 +43,40 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Electromagnetic DMR AEDM-3 'Gauss'",
+    "Breck Tannen",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Irontide Tidal Energy",
+    "Kadiatou Bergstrom-Konate",
+    "Nika Svensson-Kone",
+    "TESSERA PG-2 'Signature'",
+    "The Pure Hand",
+    "The Undertow",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular precision rifle with an aggressive forward-swept design. The profile suggests compressed power—lean and purposeful, with a distinctive raised receiver spine and prominent coil housings along the barrel. Visually aggressive despite its lack of mechanical bulk.",
+    "dimensions": "Overall length: 118 cm | Barrel length: 71 cm | Width across coil housing: 8.2 cm | Height from grip to scope rail: 12 cm",
+    "weight_description": "Surprisingly light for its capability—5.5 kg feels balanced and controllable, though the forward weight distribution demands respect. The separate power cell backpack (3.0 kg) shifts the weapon system's center of gravity noticeably rearward when fully integrated.",
+    "primary_material": "Aerospace-grade carbon composite frame with integrated electromagnetic coil housing; tungsten-reinforced receiver sections at stress points; brushed titanium alloy barrel jacket",
+    "finish": "Matte gunmetal gray primary finish with anodized black accents on the coil housing. High-polish titanium barrel details catch light sharply. Wear-resistant ceramic coating on all friction surfaces—resists scoring even under heavy use.",
+    "color_scheme": "Gunmetal gray base with deep charcoal black coil housings; brushed titanium highlights on barrel jacket and control surfaces. Subtle blue accent lighting on capacitor status indicators.",
+    "grip_texture": "Textured rubber composite grip with integrated microstructure for enhanced purchase, even when wet. Stippled texture mimics the grip of precision Earth-era rifles, providing intuitive hand familiarity. Subtle thermal feedback through grip material indicates capacitor charge state.",
+    "distinctive_features": [
+      "Pronounced dual electromagnetic coil housings running parallel along barrel—visible magnetic field distortion shimmer in certain lighting",
+      "Integrated rail-mounted targeting computer with holographic display interface (mounted above receiver)",
+      "Four small status LEDs on receiver spine—red/amber/green for power and weapon-learning algorithm status",
+      "Cooling fins on coil housings designed to dissipate capacitor discharge heat",
+      "Custom serial-lock mechanism integrated into magazine well—physically prevents installation of unauthorized power cells",
+      "Faint grid-pattern etching on side panels from precision manufacturing tolerances",
+      "Minimal muzzle brake design—electromagnetic discharge vents rather than traditional ports",
+      "Weapon-learning data port (covered by armored flip cap) on left receiver side"
+    ],
+    "manufacturer_markings": "VOLKOV-SAITO PRECISION logo etched in chrome on upper receiver in precise Cyrillic-influenced typography. Serial number and individual weapon-learning ID code engraved into titanium barrel shroud—unique to each unit. Small certification hologram mounted below charging port indicating tier/authorization level.",
+    "condition_typical": "Meticulously maintained. Precision weapons demand care—scuff marks are rare, coil housings show no corrosion. Black anodize remains crisp. Capacitor dust covers show careful handling. Well-maintained examples look almost clinical in their pristine state; even heavily-used units maintain immaculate appearance due to their elite owner demographics."
+  },
+  "image_prompt": "Professional product photograph of the Volkov-Saito VS-50EM Thunderbolt precision rifle on a dark matte black surface. Weapon positioned at 45-degree angle, displaying full profile. Dramatic side-lighting from upper left creates sharp shadows across electromagnetic coil housings and emphasizes the angular receiver geometry. Brushed titanium barrel jacket catches highlights in cool blue-white tones. Close-up of grip area shows textured rubber composite and status LED indicators glowing soft blue. In background, slightly out-of-focus: the power cell backpack unit with visible cooling fins. Environment: sterile corporate catalog setting with subtle holographic grid patterns suggesting high-tech precision manufacturing facility. Cool color temperature emphasizing the weapon's technological sophistication. No human presence. Include subtle electromagnetic shimmer distortion around coil housings. Style: high-end military/corporate hardware catalog photography, cyberpunk precision aesthetics --ar 3:2 --v 6"
 }

@@ -282,5 +282,13 @@
     "posture_movement": "Moves with economical precision, rarely shifting weight unnecessarily. Sits in absolute stillness during consultations, hands resting palms-down on the table. In the Market, they navigate crowded spaces as if people part around them rather than through them. Direct and unblinking eye contact.",
     "clothing_style": "Heavy layered fabrics in burgundy and black — natural textiles, no synthetic shimmer or corp-tier tech fabric. Multiple loose outer layers worn like ceremonial vestments. Hung with small Deep Lantern E.L.F. fetish objects: braided copper wire, fragments of old LCD screen glass, data chips etched with prayer-code on thin chains. The overall effect is part prophet, part archivist. Tier 4 aesthetic — deliberately anti-corporate, anti-augmentation statement masked as spiritual devotion."
   },
-  "image_prompt": "Androgynous figure, tall and angular, deep brown skin with geometric ritual scarification along jawline, natural dark eyes, long straight black hair with silver threads, wearing heavy burgundy and black layered fabrics hung with wire and glass fragments, sitting in dim candlelit market stall, hands resting on worn consultation table, direct intense gaze, cyberpunk fortune teller aesthetic, ethnically mixed Ukrainian-Ghanaian features, unaugmented by choice, moody warm lighting, atmospheric occult mysticism, high contrast shadow, --ar 2:3 --v 6"
+  "image_prompt": "Androgynous figure, tall and angular, deep brown skin with geometric ritual scarification along jawline, natural dark eyes, long straight black hair with silver threads, wearing heavy burgundy and black layered fabrics hung with wire and glass fragments, sitting in dim candlelit market stall, hands resting on worn consultation table, direct intense gaze, cyberpunk fortune teller aesthetic, ethnically mixed Ukrainian-Ghanaian features, unaugmented by choice, moody warm lighting, atmospheric occult mysticism, high contrast shadow, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 24.3,
+    "Sub-Saharan African": 23.2,
+    "East Asian": 21.4,
+    "Eastern European": 20.0,
+    "Northern European": 7.4,
+    "Southeast Asian": 3.7
+  }
 }

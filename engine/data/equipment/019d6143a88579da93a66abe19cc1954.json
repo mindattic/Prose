@@ -47,5 +47,23 @@
   "related_entities": [
     "Kennel",
     "TESSERA PG-2 'Signature'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular backpack with a pronounced central dorsal ridge housing the graviton emitter core. The design resembles a exoskeletal carapace rather than traditional luggage — aggressive, purpose-built, with downward-swept side panels and reinforced load-bearing struts. The pack sits high on the shoulders, distributing weight through a rigid titanium frame.",
+    "dimensions": "48 cm tall × 35 cm wide × 18 cm deep; compact enough for urban movement but visually imposing",
+    "weight_description": "5.5 kg — handheld carrying weight, but intended to be worn; shoulder straps are padded and adjustable; the pack rides high and tight against the back",
+    "primary_material": "Carbon-composite polymer shell with titanium load frame; internal cavity lined with industrial-grade thermal dispersion material",
+    "finish": "Matte gunmetal with brushed titanium accents; textured grip panels on shoulder straps; slight iridescent sheen on the graviton emitter housing from metamaterial coating",
+    "color_scheme": "Charcoal gray primary with neon cyan accent striping along seams and control interfaces; Zheng-Dao brand red (deep crimson) on corner reinforcements",
+    "interface_elements": "Central thumb-dial control (rotating input wheel) on right shoulder strap; LED status bar running down dorsal ridge (blue = idle, cyan = active, red = low battery); micro-haptic feedback pads; small holographic display panel (2.5 inch) above right shoulder showing charge percentage and weight reduction percentage; emergency manual kill-switch recessed on left side",
+    "distinctive_features": [
+      "Visible graviton emitter core visible through reinforced translucent panel on dorsal ridge — appears as a faintly luminous crystalline structure with subtle wavering distortion field",
+      "Thermal venting grilles on lower back panel with active blue LED cooling indicator",
+      "Attachment rails on all four sides for modular load carriers",
+      "Haptic feedback grid embedded in straps for touch-based control feedback"
+    ],
+    "manufacturer_markings": "Large Zheng-Dao Heavy Industries ideogram (燕道) embossed on left shoulder panel in metallic cyan; serial number and regulatory certification stamps on interior access panel; small printed warning labels in English, Mandarin, Spanish, and Swahili",
+    "condition_typical": "Scuffed from field use, minor scratches on composite shell; cooling vents often show dust accumulation; holographic display sometimes partially obscured by sweat or condensation during active use; users frequently tape emergency release instructions on the back"
+  },
+  "image_prompt": "Product photography of a cyberpunk gravity assist backpack on a mechanics' workbench, three-quarter view showing the central graviton emitter core glowing with cyan bioluminescence, neon accent lighting reflecting off the matte gunmetal finish, worn leather work surface, ambient overhead glow-tubes casting dramatic shadows, shallow depth of field with bokeh city lights in blurred background, gritty GLMZ industrial aesthetic, --ar 3:2 --v 6"
 }

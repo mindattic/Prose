@@ -31,5 +31,25 @@
     "UV protection",
     "outdoor",
     "maintenance"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, nearly translucent base layer that disappears under outer wear. Clean minimalist silhouette with subtle luminescent quality under certain light angles. Designed for invisible functionality—corporate pragmatism meets worker protection.",
+    "fit": "Slim, form-fitting compression cut that moves with the body without restriction. Tailored through shoulders and torso to layer seamlessly under maintenance suits or street wear.",
+    "primary_material": "Proprietary UV-blocking synth-blend with embedded zinc-oxide nanoparticles. Lightweight, moisture-wicking technical fabric rated UPF 50+.",
+    "texture": "Smooth, almost liquid-like feel. Micro-ribbed surface catches light subtly, revealing faint iridescent sheen from nanoparticle matrix when viewed at angles.",
+    "color_scheme": "Matte charcoal base with barely-visible silver undertone from UV-reflective particles. Minimal branding—small embossed Duskline logo on left chest.",
+    "closures": "None—pullover crew neck with reinforced binding. Friction-fit design for durability in repeated wash cycles.",
+    "distinctive_features": [
+      "Invisible under outer layers due to transparency and slim profile",
+      "Zinc-oxide nanoparticle matrix visible as faint metallic sheen in direct light",
+      "UPF 50+ rating printed on interior neck tag in thermochromic ink (visible only when warm)",
+      "Reinforced collar and cuff seams rated for 500+ wash cycles",
+      "Moisture-management channels woven into fabric structure",
+      "No visible branding—corporate function over aesthetics"
+    ],
+    "tier_indicator": "Tier 2–3 crossover. Premium protective technology accessible to working-class outdoor crews via corporate subsidies. Not luxury, but specialized industrial functionality.",
+    "cultural_context": "Worn by outdoor maintenance workers, Spire facade technicians, and rooftop agriculture crews in GLMZ upper districts. Signals practical safety-consciousness and exposure to intense reflective environments. Invisible uniform of those who work where sunlight becomes hazard.",
+    "condition_typical": "Pristine when new; develops subtle wear patterns around collar and cuffs after 20+ washes. Nanoparticle matrix remains effective through full service life. Never shows visible degradation despite harsh UV exposure."
+  },
+  "image_prompt": "Close-up fashion photography of a Duskline UV-Shield Base Tee on a dark-skinned model in a GLMZ rooftop environment. Bright sunlight reflecting off distant Spire surfaces creates harsh, blue-white backlighting. The tee appears nearly invisible against the model's skin, with only the faint metallic sheen of zinc-oxide particles visible where light hits the fabric at acute angles. The model's muscular torso and augmented arm (chrome shoulder joint visible) are partially exposed. Moody overexposed sky behind them, heat shimmer rising from reflective surfaces. Shot with shallow depth of field to emphasize the fabric's subtle iridescence. High contrast, desaturated blues and grays, cinematic lighting. --ar 2:3 --v 6"
 }

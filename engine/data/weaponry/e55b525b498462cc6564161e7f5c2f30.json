@@ -41,5 +41,36 @@
     "elimination",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Blessing Ó Treasaigh-Nanumea",
+    "Breck Tannen",
+    "Cutter Vane",
+    "Galvanic Myofibril Lash",
+    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
+    "Plasmatic Induction Whip PIW-4 'Threadbare'",
+    "VitaCore SteadyThread Precision Motor Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A coiled whip-weapon with a deceptively elegant silhouette — when extended, it resembles a standard monofilament whip, but the guidance sleeve gives it substantial visual weight and purposeful heft. At rest, it coils into a tight, almost organic spiral. The weighted sleeve catches light in a way that suggests hidden lethality.",
+    "dimensions": "2.5 meters total length when fully extended; 8 cm diameter coiled state; guidance sleeve diameter approximately 4-5 mm",
+    "weight_description": "Hefty and balanced despite its slender profile — the 650g mass is concentrated in the guidance sleeve, making it feel deceptively heavy for its apparent delicacy. Handles with deliberate momentum, not quick or whip-like in feel until the strike begins.",
+    "primary_material": "Guidance sleeve: hardened titanium-carbon composite weave with internal tension filaments; core monofilament: carbon lattice 3 nanometers diameter (invisible to naked eye)",
+    "finish": "The guidance sleeve has a matte gunmetal-gray brushed finish with faint directional striations from the manufacturing process. The monofilament core is optically invisible but creates subtle refraction artifacts under oblique lighting — barely perceptible shimmer at certain angles.",
+    "color_scheme": "Gunmetal gray sleeve with charcoal-black grip section; accent points where the sleeve retracts mechanism engages are slightly lighter — polished aluminum",
+    "grip_texture": "Wrapped in industrial-grade thermoplastic elastomer with aggressive micro-knurling; designed for wet, gloved, or augmented hands; slightly tacky feel that prevents slip even under stress",
+    "distinctive_features": [
+      "Retraction mechanism at grip — subtle recessed lever barely visible unless actively searched for",
+      "Faint laser-etched depth markers along the sleeve (every 50 cm) for distance estimation during strikes",
+      "Microscopic pitting across the guidance sleeve surface (designed to reduce visual reflection)",
+      "The point where sleeve separates from monofilament — a subtle transition zone with slightly raised edge",
+      "Asymmetrical coil pattern suggesting directional throw — right-handed bias built into the winding",
+      "Weight-bearing anchor point at coil center reinforced with discrete chrome coupling"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS serial plate mounted on grip (2 cm × 1.5 cm) with laser-etched registration number and monofilament batch code. Tiny Φ symbol stamped above the grip seam (military contract designation). Certification hologram embedded in the grip wrap (faint, only visible under UV light).",
+    "condition_typical": "Field-ready examples show micro-abrasions on the guidance sleeve from environmental contact and handling, but the weapon is obsessively maintained by users due to self-injury risk. Battle-worn examples are rare — most are either pristine or damaged beyond field use. Light patina develops on exposed aluminum surfaces with age, but operators typically replace the grip wrap regularly, keeping it fresh."
+  },
+  "image_prompt": "Product photography of a coiled monofilament whip weapon — Arcturus Defense Solutions ML-1 'Razor Rain' — displayed coiled on a dark charcoal surface, with a gloved hand (black tactical glove, slight chrome augmentation visible on knuckles) holding the grip section. Dramatic side-lighting casting sharp shadows from the coils, revealing the subtle striations and micro-pitting of the gunmetal-gray guidance sleeve. The lighting should catch faint refraction artifacts suggesting the invisible monofilament core running through the center. Grimy, high-tech aesthetic with cold color temperature (blues and silvers). Cyberpunk military equipment photography. Sharp focus on the grip mechanism and the point of sleeve separation. --ar 3:2 --v 6"
 }

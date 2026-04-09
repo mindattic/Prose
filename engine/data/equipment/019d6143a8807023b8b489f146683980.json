@@ -48,5 +48,23 @@
     "Arcturus PX-1 'Phantom'",
     "Lighthouse",
     "TESSERA PG-2 'Signature'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A flat, disc-shaped thermal emitter with a slightly domed top surface. The form factor resembles a sophisticated smoke detector crossed with a tactical device. Its compact, minimalist design belies its sophisticated heat-generation internals. The top features a subtle hexagonal pattern of thermal vents.",
+    "dimensions": "15 cm diameter disc, approximately 2.5 cm thick",
+    "weight_description": "Lightweight and pocketable at 150 grams — easily deployable in multiples. Adhesive backing allows one-handed placement.",
+    "primary_material": "Aircraft-grade polymer composite housing with embedded ceramic thermal elements",
+    "finish": "Matte charcoal-gray with slight texture for grip; top surface has micro-perforated venting pattern",
+    "color_scheme": "Gunmetal gray primary with accent strips of crimson-red edge banding. Vespid Dynamics branding in white sans-serif lettering.",
+    "interface_elements": "Recessed tactile button on underside (power/profile selector), single tri-color LED indicator (green/amber/red) embedded in top center, micro-USB charging port on edge shrouded by rubber gasket",
+    "distinctive_features": [
+      "Hexagonal thermal vent pattern on top surface glowing faintly orange-red during operation",
+      "Adhesive backing visible around circumference — designed for single-use deployment",
+      "Subtle angular Vespid Dynamics delta-wing logo etched into edge band",
+      "Operational mode indicator: running/walking/stationary select via recessed button underneath"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS stamped in white; MODEL TDB-3 serial number on backing; GLMZ manufacturing compliance stamps; warranty void if adhesive tampered",
+    "condition_typical": "Fresh units show pristine finish; deployed units still adhere firmly to walls/floors with orange glow visible around thermal vents. Field-used units may show dust accumulation on vents or slight adhesive residue."
+  },
+  "image_prompt": "Product photography of Vespid Dynamics TDB-3 thermal decoy beacon on tactical workbench. Gunmetal-gray disc device with red accent edge shown in three angles: top-down view showing hexagonal vent pattern glowing faint orange, side profile showing 2.5cm thickness and adhesive backing, angled 45-degree view. Dramatic blue-red cyberpunk lighting casting sharp shadows. Mounted on sleek black composite surface alongside tactical gear. LED indicator glowing amber. Photorealistic with subtle heat shimmer effect around vents. GLMZ Great Lakes industrial aesthetic. --ar 3:2 --v 6"
 }

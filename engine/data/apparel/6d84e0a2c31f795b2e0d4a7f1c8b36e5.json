@@ -46,5 +46,25 @@
     "Dzemal Acholonu-Patagiri",
     "Irontide Tidal Energy",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian rain shell with a slightly extended back hem, creating an asymmetrical silhouette when worn. Clean, minimalist lines with no excess ornamentation. Reads as practical workwear rather than fashion—the kind of jacket that disappears into background functionality until you need it.",
+    "fit": "Relaxed and oversized through the torso, designed to layer over hoodies and thermal wear without restriction. Sleeves are straight and untatpered. The extended back hem sits 2-3 inches lower than standard jackets, covering the waistband when leaning or bending.",
+    "primary_material": "Three-layer bonded nylon ripstop with durable water-repellent (DWR) finish. Synthetic, engineered for maximum weather resistance with minimal weight.",
+    "texture": "Smooth, slightly glossy nylon exterior. Ripstop weave creates a subtle grid pattern visible on close inspection. Seams are visibly taped, appearing as flat, reinforced lines running along shoulders and sides.",
+    "color_scheme": "Slate grey (neutral Tier 3 standard), deep navy, safety olive, and high-visibility amber-yellow. No patterns or graphics—solid utilitarian colorways.",
+    "closures": "Full front zipper with storm flap. Pit zip vents on both sides for thermal regulation. Friction-fit elastic cuffs at wrists. No visible buttons or snaps.",
+    "distinctive_features": [
+      "Extended back hem—cuts 2-3 inches lower to cover waistband during forward-leaning work",
+      "Pit zips for ventilation in rain and exertion",
+      "Fully taped seams throughout for weatherproofing",
+      "Integrated chest pocket serves as compression sack—entire jacket packs into itself",
+      "Minimal branding—small woven Orvaine label only",
+      "No hood (designed for layering under separate headwear)"
+    ],
+    "tier_indicator": "Tier 3 functional workwear. Affordable, durable, and ubiquitous among working-class and maintenance crews throughout the GLMZ.",
+    "cultural_context": "Worn by corridor maintenance workers, delivery personnel, field technicians, and anyone spending extended hours exposed to GLMZ weather systems. Signals practical priorities over status. The amber-yellow variant is standard issue for municipal infrastructure crews.",
+    "condition_typical": "Broken-in and weathered. Beading effect on DWR coating diminishes slightly with repeated washing, but water-shedding remains effective for years. Visible creases from packdown. Minimal visible wear—nylon ripstop resists tears and discoloration."
+  },
+  "image_prompt": "A utilitarian rain jacket on a dark mannequin or tired cyberpunk worker model, photographed in slate grey colorway. Shot under dim warehouse lighting with rain streaking across the background. Close detail showing the extended back hem draping slightly beyond the model's waistband, seam-taped seams catching light. Moody, industrial GLMZ corridor setting. High-visibility amber variant visible hanging in soft focus behind. --ar 2:3 --v 6"
 }

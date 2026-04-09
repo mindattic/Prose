@@ -52,5 +52,27 @@
     "The Filament",
     "The Lattice",
     "The Quiet Room"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sculptural crown-like fascinator that frames the wearer's head with an asymmetric halo of articulated wire filaments. The exposed neural port sits as the dramatic focal point, surrounded by a swept platinum wire armature and radiating golden chromalloy lattice. The bioresin base catches light and shifts color with movement. Reads as haute couture augmentation jewelry rather than traditional headwear.",
+    "fit": "Custom-fitted to individual scalp anatomy; mounts via invisible hair clips or direct scalp anchor ports. Lightweight despite visual impact. Sits high and proud on the crown, extending laterally and backward in an asymmetric sweep.",
+    "primary_material": "Hand-formed iridescent bioresin base, platinum wire frame, gold-tone chromalloy filaments, cultured bioluminescent pearl micro-droplets, exposed neural-port hardware",
+    "texture": "Smooth, lustrous bioresin with subtle depth and opalescence. Delicate articulated wire filaments with a brushed metallic finish. Pearl tips catch light with soft bioluminescence. Smooth where it contacts skin.",
+    "color_scheme": "Iridescent bioresin shifting violet-to-gold depending on viewing angle. Platinum and gold-tone metallics. Warm bioluminescent pearls (cream-white with subtle glow). High contrast between glossy resin and brushed metal.",
+    "closures": "Invisible friction-fit hair clips or direct scalp port integration; no visible mechanical fasteners",
+    "distinctive_features": [
+      "Exposed neural-port hardware as centerpiece",
+      "Articulated chromalloy filaments with bioluminescent pearl tips",
+      "Active BCI relay functionality",
+      "Public identity tag broadcast capability",
+      "No two pieces identical — couture-made",
+      "Asymmetric lattice geometry",
+      "Swept platinum wire frame architecture",
+      "Iridescent bioresin that color-shifts with angle"
+    ],
+    "tier_indicator": "Tier 1 luxury — haute couture neural augmentation jewelry at Spire level. Five to six-figure Φ price point.",
+    "cultural_context": "Worn by elite corporate consciousness-jockeys, high-society BCI enthusiasts, and augmentation fashionistas who view neural ports as aesthetic statements. Signals wealth, cutting-edge biotech integration, and willingness to broadcast identity intentionally. Corpo socialite to high-end rogue consciousness explorer.",
+    "condition_typical": "Pristine to museum-quality when new; aged pieces show subtle micro-scratches on chrome filaments and slight dulling of pearl luminescence. Each piece gains character over years of use. Never salvaged or mass-produced."
+  },
+  "image_prompt": "Solenne Neuralcrest Lattice Fascinator II on high-cheekboned model with shaved temple, iridescent bioresin catching deep violet-to-gold light shift, exposed neural port gleaming at crown, delicate gold-tone chromalloy filaments radiating asymmetrically with bioluminescent pearl tips glowing softly, platinum wire frame barely visible, dark moody lighting with accent rim light catching the lattice geometry, dystopian luxury backdrop of GLMZ corporate tower interior with holographic ads slightly blurred, cyberpunk haute couture editorial style, cinematic depth of field --ar 2:3 --v 6"
 }

@@ -73,5 +73,24 @@
     "The Pure Hand",
     "Vantablack Media Spectral Barrier Display System",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A heavy tactical overcoat resembling high-end weathergear, with a slightly stiffened silhouette from embedded metamaterial mesh. The cut is deliberately oversized and utilitarian — broad shoulders, deep pockets, extended length to mid-thigh. At casual glance, indistinguishable from premium winter outerwear; closer inspection reveals deliberately reinforced seams and subtle geometric quilting patterns beneath the outer fabric that hint at internal layering without announcing it.",
+    "dimensions": "Standard overcoat proportions; torso coverage 60cm deep, shoulder span 50cm, length 110–125cm depending on size variant",
+    "weight_description": "2.4kg; handheld but designed for wearing. Noticeable heft when carried, but distributes naturally when worn due to careful weight engineering",
+    "primary_material": "Outer shell: ballistic nylon blend with DWR treatment. Inner lining: proprietary Nullweave metamaterial composite woven through mesh substrate. Interlayer: conductive trace webbing for signal distribution",
+    "finish": "Matte technical fabric, slightly textured to obscure the mesh grid beneath. Seams are reinforced with flat-lock stitching. Collar and cuffs feature soft fleece lining in muted gray. Buttons are molded polymer, deliberately generic",
+    "color_scheme": "Muted charcoal to dark slate outer shell with gunmetal-gray trim. Inner collar and pocket linings show faint iridescent shift under direct light—a telltale signature of the Nullweave metamaterial showing through slightly at stress points",
+    "interface_elements": "Left chest: subtle indicator cluster recessed behind reinforced fabric panel—three small LED dots (power, passive/active mode toggle, signal suppression status) visible only when actively sought. Right hip: concealed access port for power cell swap, disguised as a reinforced pocket seam. Collar: embedded control nodule (thumbnail-sized, tactile activation) for mode switching and envelope adjustment. No visible screens or external jacks",
+    "distinctive_features": [
+      "Geometric quilting pattern on torso follows metamaterial mesh layout—not decorative, functional",
+      "Seams subtly reinforce signal-blocking pathways; stitching density varies visibly",
+      "Slight static cling to synthetic materials due to active charge distribution in Nullweave",
+      "Faint metallic whisper sound when fabric is flexed, from mesh grid movement",
+      "Under oblique lighting, the lining shows faint grid interference pattern—the Nullweave signature"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions embossed discreetly on inner collar tag in metallic thread. Regulatory/FCC compliance markings hidden on inner seam near hem. Serial number laser-etched on power cell access panel (visible only when opened). No external branding",
+    "condition_typical": "When worn: sits naturally like premium tactical wear, though shoulders ride slightly higher due to metamaterial stiffness. When carried/stored: maintains shape better than normal fabric, creases don't fully release. Active-mode users often unconsciously touch the collar nodule repeatedly; worn activation points show faint fingerprint polishing on fabric"
+  },
+  "image_prompt": "Product photography of a dark charcoal tactical overcoat draped over a chrome workbench or mannequin torso, shot from three-quarter angle. Cool blue-white overhead lighting with dramatic side accent casting the geometric quilting pattern into sharp relief, revealing the metamaterial mesh structure beneath. Close-up detail insert showing the faint iridescent shimmer of Nullweave threads in the lining where the coat is partially opened at the chest, and the recessed LED indicator cluster barely visible through reinforced fabric. Another insert showing the thumbnail-sized control nodule on the inner collar in tactile detail. Cyberpunk aesthetic: neon blue accent lighting reflecting off the metallic embroidery and power cell access seam, suggesting active signal suppression field. Gritty GLMZ industrial background—circuit boards, RF shielding, test equipment. Cinematic depth of field. High-resolution tactical product catalog style --ar 3:2 --v 6"
 }

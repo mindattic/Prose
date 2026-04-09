@@ -85,5 +85,23 @@
     "The Human Baseline Alliance",
     "The Pure Hand",
     "Zurab Ivanov-Appiah"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, elongated sensor wand resembling a high-tech dowsing rod or diagnostic probe. The form factor is purposefully clinical and precise — narrower grip section tapering toward a slightly bulbous sensing head studded with microscopic receptor filaments. The overall aesthetic straddles professional laboratory instrument and field-deployed tactical tool.",
+    "dimensions": "280mm length × 45mm grip diameter × 35mm at sensor head. Roughly the size of a large marker or small flashlight.",
+    "weight_description": "340g; handheld and pocketable with carrying case, no strap required but often worn in hip-mounted holster for field operatives.",
+    "primary_material": "Aerospace-grade polymer composite body with embedded conductive traces; sensor head features bioengineered synthetic chemoreceptor array housed in optically transparent biofilm membrane.",
+    "finish": "Matte textured polymer grip with soft-touch coating; sensor head has faint iridescent sheen from membrane, reminiscent of insect exoskeleton. Minimal reflectivity by design.",
+    "color_scheme": "Gunmetal gray body with deep teal accents around sensor head. Helix Biosystems branding in chrome. Faint bioluminescent accent strip along grip (indicator status).",
+    "interface_elements": "Small high-contrast LCD display (30mm) mounted on grip showing directional compass, confidence percentage, and chemical identifier. Three tactile buttons (scan, index, log). USB-C charging port masked by textured cap. Micro-OLED overlay capable of AR integration with user's visual neural interface.",
+    "distinctive_features": [
+      "Microscopic chemoreceptor filament array visible as fine crystalline matrix across sensor head surface",
+      "Soft pulsing bioluminescent status indicator (green=ready, amber=scanning, red=high-concentration alert) running along grip edge",
+      "Helix Biosystems embossed logo with registered trademark and 'LEGAL FORENSIC ONLY' disclaimer etched in microtext",
+      "Faint organic shimmer to sensor membrane — biological component references its olfactory epithelium origin"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo (stylized double helix) in chrome on grip. Model designation OGP-7.2 laser-etched. Serial number and regulatory compliance stamps (GLMZ-EPA-APPROVED, CORPS-LICENSED) on base. Subscription status indicator on display.",
+    "condition_typical": "In field use, the probe is held at arm's length, swept side-to-side like a metal detector. Display continuously updates directional bearing and concentration gradient. Chemoreceptor filaments may show microscopic wear after extensive use; biofilm membrane occasionally requires refresh (proprietary cartridge, Φ240 per replacement). Dust and residue accumulation on sensor head is common; requires careful cleaning with provided solvent swab."
+  },
+  "image_prompt": "Cyberpunk product photography: Helix Biosystems Olfactory Gradient Probe displayed on a brushed stainless steel forensic workbench, angled to showcase the sensor head's iridescent chemoreceptor filament array catching dramatic blue-teal laboratory lighting. LCD display glowing amber mid-scan. Shallow depth of field with moody noir lighting — sharp focus on probe, blurred background of chemical reference vials and GLMZ corporate signage. Slight cinematic fog haze. High-tech medical/forensic aesthetic. --ar 3:2 --v 6"
 }

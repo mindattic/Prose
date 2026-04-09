@@ -42,5 +42,42 @@
     "dueling",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "Djeneba Park-Traore",
+    "GLMZ",
+    "Glenville Sound",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "NeuralPath HarmonicRoot Perfect Pitch Mod",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "TESSERA TC-3 'Crucible'",
+    "The Heritage Vault",
+    "The Nearfield",
+    "The Resonance Chamber",
+    "The Resonance Communion",
+    "Volkov-Saito Precision VS-O/U Sport 'Duelist'"
+  ],
+  "physical_description": {
+    "visual_profile": "A katana-profile blade with an elegant, almost liquid shimmer along its cutting edge when activated. The silhouette is traditionally Japanese — slightly curved, balanced, dignified — but the subtle iridescence and barely-visible vibration distortion mark it as cutting-edge military hardware. At rest, it appears almost serene; activated, it seems to exist in a state of controlled violence.",
+    "dimensions": "Blade length: 71 cm; Total length: 102 cm; Blade width at base: approximately 3.2 cm",
+    "weight_description": "Exceptionally light and balanced — only 0.9 kg total — creating a sensation of responsive grace in the hand rather than heft. The weight distribution favors the blade slightly, encouraging fluid cutting motions without requiring muscular compensation.",
+    "primary_material": "Layered carbon-lattice composite blade with aerospace-grade polymer and brushed titanium alloy in the handle and tsuba",
+    "finish": "The blade exhibits a subtle satin-gray finish with an opalescent sheen along the edge that intensifies when the piezoelectric system activates. The handle features a matte charcoal polymer with brushed titanium accents. The tsuba is polished titanium with geometric etchings.",
+    "color_scheme": "Primary: gun-metal gray blade with pearl-white opalescent edge shimmer (when active). Handle: charcoal matte with titanium silver accents. Accent: subtle blue micro-LED indicators along the handle base (power/frequency status).",
+    "grip_texture": "Tightly wrapped in black synthetic cord with raised diamond-pattern grip points, providing secure purchase even with synth-skin gloves or augmented hands. The handle tapers naturally toward the pommel.",
+    "distinctive_features": [
+      "Shimmer/iridescence along the cutting edge intensifying during vibration activation",
+      "Subtly visible harmonic distortion around the blade's edge (like heat shimmer) when powered",
+      "Embedded blue micro-LED status indicators (three small dots) along the handle base showing power level and resonance tuning",
+      "Precision etchings on the tsuba depicting a sound-wave pattern",
+      "Exposed micro-capacitor housing at the handle base with visible cooling vents",
+      "The blade produces an audible 40 kHz harmonic hum when activated — visible in the air as a faint shimmer",
+      "Hand-tuned frequency calibration plate etched into the blade near the tang (unique serial tuning data per unit)"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES logo embossed in the tsuba center. Model designation 'RK-7' engraved along the upper handle in minimalist sans-serif lettering. Hand-tuning certificate hologram embedded beneath the grip wrapping, visible from the side. Serial number etched into the blade tang.",
+    "condition_typical": "When freshly maintained: pristine, gleaming, barely-visible wear. In active duelist hands: minimal wear (blade doesn't dull from vibration), possible shallow scratches on the flat from blocked strikes, grip wrapping occasionally re-tied. Corporate executive carry: museum-condition, regularly inspected. Street duelists' blades: battle-worn polymer handle, micro-scratches on the blade surface, faint discoloration from sweat/blood, grip rewrapped with personal touches."
+  },
+  "image_prompt": "Midjourney product photograph of a Crucible Industries Resonance Katana RK-7 'Singing Edge' held in a gloved cyberpunk operative's hand against a dark charcoal surface. The blade glows with an ethereal pearl-white opalescent shimmer along the cutting edge, with visible harmonic distortion hazing the air around it. Dramatic side-lighting from the left casts the blade in gunmetal gray with crisp edge highlights. The titanium tsuba gleams with precision geometric etchings. Three small blue LED indicators pulse subtly at the handle base. The carbon-lattice composite structure catches light with a liquid, almost alive quality. Background is deep shadow with faint reflected neon glow (teal/purple). Professional product lighting with volumetric atmosphere suggesting active piezoelectric hum. Japanese katana elegance meeting cyberpunk lethality. --ar 3:2 --v 6"
 }

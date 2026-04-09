@@ -53,5 +53,27 @@
     "MERIDIAN",
     "The Pure Hand",
     "The United Workers Front"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A practical, weather-hardened street vendor silhouette. Full-length rubberized charcoal apron dominates the visual frame, stamped with GridFeed's white fork-and-signal-wave logo across the chest bib. Burnt orange thermal undershirt visible at collar and cuffs. Navy cargo trousers peek below apron hem. Black work boots anchor the frame. White cook's cap or charcoal rain hat tops the ensemble. Overall impression: utilitarian, functional, Circuit-tier working class.",
+    "fit": "Relaxed and purposefully loose. The apron hangs straight without cinching, allowing full range of motion for food prep and cart operation. Thermal shirt has easy shoulder room; cargo trousers sit high on the waist with a generous cut through the thigh. Boots are sturdy and slightly broken-in. Everything designed for twelve-hour outdoor shifts, not aesthetics.",
+    "primary_material": "Rubberized synthetic rubber (apron); merino-blend thermal knit (undershirt); synth-cotton stain-resistant blend (trousers); vulcanized rubber and black leather (boots); nitrile for gloves (consumable); cotton-poly blend (cook's cap and rain hat)",
+    "texture": "Apron has a smooth, slightly tacky rubberized finish that sheds grease and condensation. Thermal shirt is soft ribbed knit with subtle texture at cuffs and collar. Cargo trousers have a matte, utilitarian weave. Boots are scuffed and broken in, with tread-worn rubber soles.",
+    "color_scheme": "Dominant charcoal (apron, rain hat). Bright white (GridFeed logo, cook's cap). Burnt orange (thermal undershirt). Navy (cargo trousers). Black (boots). Secondary grease and food stains (organic accumulation) visible on apron bib and pocket edges.",
+    "closures": "Apron: ties at neck and waist (adjustable fabric straps). Thermal shirt: open collar, no buttons. Trousers: standard synthetic zipper fly with wide fabric waistband. Boots: lace-up with friction-fit heel. Rain hat: chin strap with magnetic snap. Glove pocket: friction-fit elastic opening.",
+    "distinctive_features": [
+      "Reinforced tail slot at apron back hem — finished opening accommodating prehensile geneware without restriction",
+      "GridFeed logo stamped in white across chest bib (membership marker, not employment)",
+      "Integrated pocket configuration on apron: left side holds order stylus and cleaning cloth, right side holds rotating nitrile gloves",
+      "Front cargo trousers pocket engineered for simultaneous card reader and personal comm unit carry",
+      "Breast pockets on thermal shirt (left pocket typically occupied by stylus, right for notes or comms)",
+      "Non-slip sole on Ashgrove Linework boots — rated for grease and wet surfaces",
+      "Repeating GridFeed logo on rain hat brim",
+      "Permanent food-oil and fermented-soy patina on apron fabric from daily wear"
+    ],
+    "tier_indicator": "Tier 3–4 working class. GridFeed cooperative membership signals a formalized vendor operation (Tier 3 stability), but the assembled, repair-ready nature of components and the weathering suggest Circuit-level economy rather than corpo infrastructure.",
+    "cultural_context": "Street vendor, food cart operator, Circuit economy worker. Wearing this marks someone as functionally independent — not employed by a mega-corp, but part of a local cooperative network. The tail slot signals acceptance and normalization of geneware modification in working-class spaces. This is the uniform of someone who feeds the GLMZ's transit hubs, factory gates, and informal markets.",
+    "condition_typical": "Broken-in and perpetually weathered. The apron will show stains from the day's menu (oil residue, soy-paste splatters, rain streaks), but the rubberized surface keeps it from absorbing odors permanently. Boots scuffed and creased from constant movement. Thermal shirt collar slightly frayed at the edges. Overall: functional, worn, honest."
+  },
+  "image_prompt": "Cyberpunk street vendor in full GridFeed rig: charcoal rubberized apron with white fork-and-wave logo centered on chest, burnt orange thermal shirt visible at collar and cuffs, navy cargo trousers, black Ashgrove lace-up work boots with visible tread wear. White cook's cap or waterproof charcoal rain hat with GridFeed logo on brim. Model standing at three-quarter angle against rain-slicked pavement, acid-rain haze in background, LED neon from overhead transit signage reflecting off apron surface. Close-up detail of stained apron pocket holding order stylus and cleaning cloth. Moody, cool-toned lighting emphasizing the rubberized texture and permanent food-oil patina. Atmospheric rain-steam visible in background. Shot on dark, textured urban ground. --ar 2:3 --v 6"
 }

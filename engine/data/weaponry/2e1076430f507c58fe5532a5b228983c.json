@@ -42,5 +42,33 @@
     "grappling",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Omnipex",
+    "Pikasso Wemba-Þórðarson",
+    "TESSERA ES-4 'Perimeter'",
+    "The Pure Hand",
+    "VitaCore SteadyThread Precision Motor Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A pair of crude hand wraps that transform ordinary fists into multi-directional cutting weapons. The silhouette is unmistakably hands, but with a rougher, more aggressive appearance — coils of glinting wire spiral around padded frames, catching light with menacing reflections. They look like something salvaged from a perimeter fence and hastily wound around improvised gloves.",
+    "dimensions": "Approximately 20cm long (wrist to fingertip), 10cm wide (palm width), 8cm deep (knuckle profile). Wire coils extend 0.5-1cm from the padded base surface.",
+    "weight_description": "Surprisingly light — only 200-300g per hand — but the weight is distributed unevenly. The padded core feels substantial and grounding in the palm, while the wire exterior creates an unsettling sense of fragility and danger. Balanced enough for rapid striking, but the user constantly feels the sharp presence on their own skin.",
+    "primary_material": "Industrial-grade razorwire (salvaged, typically from perimeter security fencing) wound tightly around a core of molded closed-cell foam or industrial padding. Underlying frame is often cheap polymer or scrap metal mesh.",
+    "finish": "Worn and weathered — the razorwire shows oxidation and discoloration from outdoor exposure, with occasional rust bloom at wire intersections. The foam core is typically stained, compressed unevenly from wear, and may show surface degradation. No protective coating; the wire is raw and unfinished.",
+    "color_scheme": "Matte gray-silver wire with rust-brown streaking and oxidation patina. The padding underneath is industrial beige, tan, or faded black, visible between wire coils. Some examples show darkened areas from blood staining that's difficult to fully clean.",
+    "grip_texture": "The padded interior is rough — closed-cell foam with a slightly tacky surface, often wrapped with torn athletic tape or cloth strips for additional grip security. The exterior is pure sharp wire; the sensation is one of dangerous contact. Sweat and friction cause the padding to stick slightly to the palm during extended wear.",
+    "distinctive_features": [
+      "Spiraling razorwire coils that follow the contours of the hand — tighter wrapping at knuckles, looser at the webbing between fingers",
+      "Exposed wire where wrapping has loosened or shifted, creating additional hazard points",
+      "Darkened staining on the padding from previous combat — blood, sweat, and grime ground into the material",
+      "Visible scars and gouges in the foam from wire punctures (both self-inflicted during construction and from combat wear)",
+      "Irregular wire tension visible as loose coils or over-compressed sections",
+      "Fraying cloth tape or binding at the wrist entry point, often wrapped multiple times in an attempt to secure the weapon to the wearer's hand"
+    ],
+    "manufacturer_markings": "None. These are self-made weapons with no branding. Occasionally, original manufacturing stamps from the salvaged wire source (perimeter fence logos, security installation dates) are visible on sections of the wire, but these are accidental and not intentional marks of ownership.",
+    "condition_typical": "Battle-worn and dangerous. Well-used Glass Hands show significant wear — shifted wire exposing the foam underneath, darkened from multiple combats, padding compressed and stained. Even 'new' Glass Hands appear crude and hastily assembled, as proper finishing would defeat their purpose. The casual, improvised appearance is the norm; pristine examples would be suspicious (and likely ineffective)."
+  },
+  "image_prompt": "Overhead product shot of a pair of Street-Custom Razorwire Wraps 'Glass Hands' resting on a dark matte surface, positioned as if a fighter has just removed them. Close-up detail showing the spiraling industrial razorwire coils glinting under dramatic side-lighting, the raw unfinished surface catching highlights along sharp edges. The underlying beige and darkened foam padding visible between wire sections, stained and compressed from use. Weathered razor wire shows oxidation, rust streaking, and discoloration. Include a bloodstained cloth wrist binding loosely wound around the entry point. Shallow depth of field emphasizing the dangerous wire geometry. Cyberpunk gritty aesthetic — this is lower-tier street weapon technology, salvaged and improvised, no polish or refinement. Harsh neon side-light creating sharp shadows between wire coils. Shot against black industrial surface with subtle depth suggesting a cramped 2226 GLMZ undercity workshop. --ar 3:2 --v 6"
 }

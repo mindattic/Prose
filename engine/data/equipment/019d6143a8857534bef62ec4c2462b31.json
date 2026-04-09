@@ -48,5 +48,25 @@
   "related_entities": [
     "GLMZ",
     "Ouroboros Energy Power Distribution Trunk Network"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A rugged cylindrical supercapacitor resembling a military-grade water canteen with pronounced ribbed cooling fins running vertically along its body. The form factor is deliberately blocky and industrial, designed for grip and durability rather than aesthetic refinement. Top-mounted interface cluster with three distinct connection ports.",
+    "dimensions": "18cm height × 8cm diameter (standard canteen proportions)",
+    "weight_description": "0.8 kg — handheld and pocketable with carrying strap attachment points; balanced enough for one-handed operation despite dense internal engineering",
+    "primary_material": "Aerospace-grade aluminum alloy chassis with embedded carbon-composite reinforcement bands",
+    "finish": "Matte gunmetal with anodized texture; cooling fins have a brushed finish with slight iridescence from thermal dissipation coatings",
+    "color_scheme": "Gunmetal gray primary with electric cyan accent striping along the seams and port surrounds; Zheng-Dao branding in burnt orange",
+    "interface_elements": "Top cluster features three illuminated ports: USB-C power output (blue-ringed), vehicle interface connector (orange magnetic latch), and weapon/high-draw pulse port (red safety-gated). Dual-mode toggle switch with haptic feedback. Hexagonal charge indicator readout (7-segment LED cascade) displaying percentage in dim cyan. Heat-dissipation vent grilles near the base.",
+    "distinctive_features": [
+      "Prominent vertical cooling fins with gradient from matte to reflective surfaces",
+      "Tri-color port ring system indicating discharge mode capability",
+      "Rotating charge indicator dial with mechanical clicking feedback",
+      "Impact-resistant corner guards with grip texture",
+      "Subtle pulse-frequency blue underglow when at full capacity (passive charge state indicator)",
+      "Serialized safety certification stamp embossed into lower panel"
+    ],
+    "manufacturer_markings": "ZHENG-DAO HEAVY INDUSTRIES embossed in simplified logographic characters across upper third; regulatory stamps for GLMZ tier-2+ compliance; batch code and manufacturing date laser-etched on base",
+    "condition_typical": "In active use, slight residual heat signature visible along cooling fins; charge indicator pulsing softly in cyan; minor scratching on the aluminum from field deployment is cosmetically normal and expected"
+  },
+  "image_prompt": "Product photography of a Zheng-Dao EPC-5 supercapacitor on a dark metal workbench under dramatic studio lighting. Close-up three-quarter angle showing the cylindrical form with vertical cooling fins, tri-color illuminated ports on top, and the cyan charge indicator glowing. Industrial cyberpunk aesthetic with hard shadows. Metallic surfaces catching blue-tinted accent light. Background slightly out-of-focus showing faint circuit boards and power tools. --ar 3:2 --v 6"
 }

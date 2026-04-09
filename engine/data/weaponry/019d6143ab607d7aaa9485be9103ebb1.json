@@ -35,5 +35,30 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Kamala Nystrom-Keita",
+    "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A flat, hockey-puck-shaped demolition charge with a deliberately industrial aesthetic—no curves, no ergonomics. It's a tool designed to be buried and forgotten. The top surface features a recessed circular panel with precision-machined grooves radiating outward from a central detonation node, suggesting the internal resonance chambers within.",
+    "dimensions": "25 cm diameter × 8 cm height. Compact enough to palm, heavy enough to demand respect.",
+    "weight_description": "Hefty and dense despite modest size—3.2 kg creates genuine heft in the hand, pulling downward. The weight distribution is perfectly centered, making it feel like holding a shot put made of lead and malice.",
+    "primary_material": "Reinforced polymer composite body with internal steel resonance chambers visible through translucent sections. The exterior casing is injection-molded for precision, with microscopic stress-relief patterns etched into the surface.",
+    "finish": "Matte industrial gray with brushed steel accent panels. The top surface has a subtle anodized bronze tone highlighting the resonance groove array. Light surface oxidation and micro-scratches suggest heavy field use despite the 'new' appearance.",
+    "color_scheme": "Gunmetal gray primary with bronze and steel accents. No branding colors—purely utilitarian. A single red dot marks the detonation point on top.",
+    "grip_texture": "The beveled edge is textured with a crosshatch pattern for secure handling while wearing demolition gloves. The surface has subtle grip indentations molded into the bottom, preventing rotation when placed.",
+    "distinctive_features": [
+      "Radial resonance chamber grooves etched across the top surface in a precise geometric pattern",
+      "Central detonation node marked by a recessed steel circle with a single red indicator dot",
+      "Translucent polymer sections on the side revealing internal steel reinforcement framework",
+      "Timer/trigger interface port hidden beneath a spring-loaded panel on the base (keeps debris out during burial)",
+      "Safety interlocks visible as raised ridges forming a circuit pattern around the circumference",
+      "Zheng-Dao serial number laser-etched on the bottom in micro-text"
+    ],
+    "manufacturer_markings": "The Zheng-Dao Heavy Industries logo—a stylized tectonic plate symbol—is etched in bronze on one side panel. The model designation 'TC-5' and 'FAULT LINE' are stamped beneath in small raised characters. A licensing barcode occupies the bottom center.",
+    "condition_typical": "Usually pristine before deployment, but field specimens show dust residue, minor dents from transport, and scratches from rough handling. Never visibly damaged—failure is not an option. Post-deployment examples are simply gone."
+  },
+  "image_prompt": "Industrial demolition charge photographed from above and 45-degree angle on a dark concrete slab, dramatic side-lighting casting sharp shadows across the radial groove pattern on top. Gloved hand (augmented with subtle chrome knuckle plating) positioning the disc, fingers gripping the textured edge. The translucent polymer sections glow faintly under the lighting, revealing the steel resonance chambers within. Zheng-Dao markings visible on the side. Cyberpunk product photography style with cool blue-gray color grading and subtle lens flare. --ar 3:2 --v 6"
 }

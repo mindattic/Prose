@@ -55,5 +55,45 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Charnel Propulsion",
+    "GLMZ",
+    "Helix Biosystems",
+    "Ilhan Sandstrom-Badu",
+    "Iowan Behemoth — 'Obelisk'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Nika Svensson-Kone",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "TESSERA PG-2 'Signature'",
+    "The Human Baseline Alliance",
+    "The Pure Hand",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, clinical pistol with an almost medical aesthetic—compact and purposeful, designed to disappear into a tactical rig. The profile suggests precision and restraint rather than raw power. The rotary cylinder is the dominant visual feature, sitting proud of the grip like a surgical instrument's chamber.",
+    "dimensions": "220mm length, 135mm height, approximately 35mm width at widest point (cylinder). Barrel stub approximately 60mm.",
+    "weight_description": "Distinctly light—0.7 kg loaded feels almost toy-like in hand, which belies its function. The balance tips slightly forward toward the barrel, encouraging controlled aim. Handled with the weight of a high-end airsoft replica, but with denser, more precise construction.",
+    "primary_material": "Aerospace-grade polymer composite body with titanium-alloy internal mechanisms. The rotary cylinder is hardened stainless steel to contain pressurized nitrogen capsules.",
+    "finish": "Matte forensic black on the polymer frame, contrasting with brushed surgical-steel accents around the cylinder release and trigger housing. The cylinder itself bears a subtle iridescence where light catches the precision-machined grooves.",
+    "color_scheme": "Primary matte black with brushed steel/titanium accents. Faint cyan accent lighting around the CO2 cartridge chamber indicator—a small LED that pulses to show remaining shots.",
+    "grip_texture": "Textured medical-grade polymer with gentle ergonomic contouring—not aggressive, but firmly grippy. Barely any stippling; it feels designed for precision and control rather than combat aggression. Cool to the touch.",
+    "distinctive_features": [
+      "Six-round rotary cylinder with individual nitrogen-sealed capsule wells, each marked with a micro-etched dart status indicator",
+      "Tiny cyan LED pulse indicator on the lower receiver showing CO2 charge level",
+      "Aperture sight with tritium inlays for low-light targeting",
+      "CO2 cartridge window on the left side showing remaining propellant pressure gauge",
+      "Integrated safety lever that glows faintly when armed",
+      "Serial micro-etchings along the frame—minimalist manufacturer stamps",
+      "Minimal texture on the muzzle brake—just the smallest ports for CO2 venting",
+      "A small ejector pin on the cylinder that gently pops spent capsules sideways, leaving no brass"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo (a double helix wrapped around a stylized neural synapse) etched subtly into the left side of the frame at mid-length. Serial number in micro-font on the right side of the cylinder hub. No aggressive branding—this is a black-market weapon; discretion is built in.",
+    "condition_typical": "Field specimens range from pristine (recently stolen from corpo armory) to well-maintained but subtly worn. Operators obsessively care for the nitrogen-sealed cylinder mechanism, so cosmetic wear is common while mechanical wear is rare. Some veteran examples show faint finger oils on the grip and microscratches around the cylinder from rapid reloads. Rarely battle-scarred—this weapon is used in planned extractions, not firefights."
+  },
+  "image_prompt": "Product photography of the Neural Disruption Pistol NDP-4 'Stutter' displayed on a polished obsidian surface, shot from a 45-degree angle under dramatic cool side-lighting. The weapon rests in a synthetic-leather-gloved corporate hand, fingers relaxed but positioned as though mid-draw. Cinematic lighting emphasizes the brushed titanium accents and the subtle cyan LED glow of the cartridge indicator. The rotary cylinder is in sharp focus showing individual nitrogen-sealed capsule wells with micro-etchings visible. Background is a dark gradient tech-noir aesthetic—blurred GLMZ skyline or corporate facility. Render with high-end materiality: the matte black polymer should have forensic precision, the stainless steel cylinder should catch light like surgical instruments. Cyberpunk color grade with cool blues and silvers dominating. Ultra-sharp detail on the HELIX BIOSYSTEMS branding and aperture sights. No smoke, no blood—this is a clinical presentation of a clinical weapon. --ar 3:2 --v 6"
 }

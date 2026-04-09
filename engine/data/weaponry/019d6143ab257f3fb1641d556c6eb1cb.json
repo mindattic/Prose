@@ -58,6 +58,38 @@
   ],
   "parent_corponation": "",
   "related_entities": [
-    "University Spine"
-  ]
+    "University Spine",
+    "Brewer's Spine",
+    "Djeneba Park-Traore",
+    "Ferrogate Enforcer Cruiser",
+    "GLMZ",
+    "Helix Biosystems",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Ironclad Agrisystems Deadfield Jammer — 'The Fallow'",
+    "TESSERA PG-2 'Signature'",
+    "The Resonance Communion",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, medical-instrument-turned-weapon with an ergonomic surgical aesthetic. Resembles a high-end diagnostic probe or therapeutic device rather than conventional gunware—deliberately deceptive. Tapered, almost organic curves suggest biotech origin. The barrel is narrow and recessed, with a faint ionization glow visible in dim light.",
+    "dimensions": "55 cm length overall; barrel depth 8 cm; grip width 4.2 cm; profile roughly 12 cm at widest (rear capacitor housing)",
+    "weight_description": "Surprisingly light and balanced despite internal power cells—2.8 kg distributes toward the rear, making it point-light and controllable in one hand. Feels like holding a high-end medical scanner rather than lethal hardware.",
+    "primary_material": "Medical-grade polymer housing (white/translucent composite) over carbon-fiber reinforced skeleton. Internal architecture visible through frosted polymer panels on the rear capacitor assembly.",
+    "finish": "Matte translucent white polymer with brushed stainless steel accents. Internal circuitry and dual-cell power core slightly visible through panel seams—a design choice that reads as professional rather than militaristic. Minimal paint; most surfaces are bare composite.",
+    "color_scheme": "Clinical white and ice-blue primary; stainless steel secondary accents. Faint cyan glow from active capacitor cells visible through rear housing panels. No tactical black or drab finishes—the weapon deliberately mimics medical equipment.",
+    "grip_texture": "Textured medical-grade silicone wrapped around the rear grip section. Slightly tacky, designed for precision control during extended use. Finger grooves are subtle and anatomically refined.",
+    "distinctive_features": [
+      "Recessed ionization barrel with faint blue corona discharge visible when armed",
+      "Dual-cell HBE-7 power core visible through translucent rear panel with blue electrolyte glow",
+      "Frequency calibration dial (3.4 MHz marking) on the left side grip",
+      "Minimal sighting system—optical targeting reticle on top rail, sleek and low-profile",
+      "Heat-dissipation vents along the barrel shroud (surgical cooling design, not tactical)",
+      "Pulse-feedback indicator lights (cyan LED) on the capacitor housing, stepping up in intensity during charge cycle",
+      "No visible safety selector—safety is likely biometric or firmware-locked",
+      "Wear-resistant nano-coating on barrel tip—almost invisible, but catches light with an oil-slick iridescence"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo (double helix in chrome) stamped on the left side of the capacitor housing. Serial number engraved on a small stainless steel plate recessed into the grip. Regulatory/hazard markings in small text on the barrel shroud (barely visible, clinical rather than tactical).",
+    "condition_typical": "Field units range from pristine to lightly worn. Some show discoloration around the barrel tip from electrolytic discharge residue (faint mineral staining). Grip silicone may show minor scuffs. Operators maintain these meticulously—they're surgical instruments first, weapons second. Black-market units sometimes show jury-rigged modifications to the targeting system or power cell housing."
+  },
+  "image_prompt": "Clinical product photography of an Electrolytic Bone Density Projector EBDP-4 'Chalk' on matte dark surface. Medical-grade white translucent polymer housing with brushed steel accents and visible cyan-glowing capacitor cells in rear panel. Narrow recessed barrel with faint ionization aura. Gripped by a gloved hand (black tactical glove with silver palm plating). Dramatic side-lighting from cool blue LED source, creating sharp shadows and highlighting the translucent polymer panels and internal circuitry. Cyberpunk biotech aesthetic—surgical precision meets lethal purpose. Dark blurred background suggesting GLMZ corporate lab environment. Sharp focus on barrel and targeting optics. Professional medical-instrument composition. --ar 3:2 --v 6"
 }

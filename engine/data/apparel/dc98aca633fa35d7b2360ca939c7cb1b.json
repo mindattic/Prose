@@ -37,5 +37,25 @@
     "Crucible Industries CR-9 'Foundry'",
     "Independent Micro-Grid Power Cooperative",
     "Slagworks Industrial"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, fitted hood that hugs the head and drapes down the neck and upper shoulders. The fabric has a subtle sheen from embedded circuit matrices. The design is minimalist and functional, with a streamlined silhouette that suggests advanced engineering. Visually reads as medical-grade or industrial-specialist gear.",
+    "fit": "Close-fitting and compression-like around the cranium and neck; extends down to mid-shoulder with gentle taper. Designed to maintain skin contact for optimal thermoregulation feedback. Not restrictive but intentionally snug.",
+    "primary_material": "Nano-weave synthetic composite blended with phase-change polymer packets. Core fabric is a treated ballistic-grade synth-wool hybrid with embedded copper-silver microcircuitry.",
+    "texture": "Smooth outer surface with subtle quilted micro-sections where phase-change material is distributed. Inner lining feels cool and slightly slick due to thermal-responsive coating. Fine metallic threads visible under close inspection.",
+    "color_scheme": "Matte charcoal gray base with silver accent threading running along cervical ridge and temple zones. Faint iridescent oil-slick gradient visible when light hits the circuit-embedded sections.",
+    "closures": "Magnetic snap closure at the nape of neck; friction-fit design at the base means no fasteners needed once positioned. Self-adhering micro-grip edges prevent slippage.",
+    "distinctive_features": [
+      "Integrated thermal-sensing nodes (small raised dots) distributed across crown and temples",
+      "Body-heat harvesting filament woven into inner surface — invisible but creates slight texture variation",
+      "Phase-change material pockets visible as subtle quilted diamond patterns",
+      "Cascade Biotech logo stamped in corner using thermochromic ink (only visible when hood is actively regulating)",
+      "Micro-vents near ear passages for acoustic clarity and moisture escape",
+      "Reinforced thermal-bridge break at base to prevent heat loss to torso"
+    ],
+    "tier_indicator": "Tier 2-3 crossover. Expensive enough to signal investment in worker safety, common enough in industrial sectors that Tier 3 foundry workers can access through corpo employment packages.",
+    "cultural_context": "Worn by foundry workers, hazmat specialists, deep-storage warehouse staff, and off-grid researchers. Signals either corpo-sponsored labor or self-sufficient independent operator. Associated with dangerous, temperature-extreme professions. Wearing one says: 'I work where conditions would kill the unprepared.'",
+    "condition_typical": "Pristine when new (expensive enough to be maintained); develops slight discoloration over months from body salts and foundry particulate. Thermal nodes may show faint scoring from repeated activation. Phase-change pockets retain subtle creasing from repeated thermal cycling. Rarely patched — usually replaced when worn beyond function."
+  },
+  "image_prompt": "A sleek charcoal gray thermoregulation hood fitted snugly on a cybernetic model's head and shoulders, silver circuit threading visible along the nape and temples. Close-up detail showing quilted phase-change material patterns and faint iridescent sheen. Moody industrial backdrop with red foundry light casting shadows; cool blue accent lighting highlights the hood's thermal nodes. Harsh rim lighting emphasizes the fabric's subtle metallic sheen. Dark concrete wall and molten-orange bokeh in background suggest extreme-temperature workspace. Minimalist, clinical product photography with cyberpunk edge. --ar 2:3 --v 6"
 }

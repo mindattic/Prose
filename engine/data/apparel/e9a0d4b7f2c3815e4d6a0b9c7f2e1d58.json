@@ -57,5 +57,28 @@
     "The Reclaimed",
     "The Shelf",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally practical salvage worker's ensemble built from medical surplus and scrap-market components. The silhouette is blocky and utilitarian—layered for chemical resistance and thermal protection, with functional bulk at the torso. The most striking feature: vestigial geneware wings folded against the back, visible through reinforced slits in the vest, adding an unsettling organic contrast to the industrial wear. The overall impression is someone who works in zones where ordinary fabric fails—seasoned, patched, and still functional.",
+    "fit": "Compression base layer hugs the torso; sleeveless vest sits loose and wide for mobility and heat dissipation. Trousers are relaxed and sturdy, tucked into boots for waterproofing. The apron drapes from waist to knee with slight sag from accumulated weight and moisture. Gloves are tight but creased from repeated use.",
+    "primary_material": "Rust-orange medical-grade compression knit (base layer); heavy waxed canvas, oil-darkened (vest); canvas duck cloth khaki (trousers); matte rubber (wading boots); oilskin fabric (apron); rubberized work gloves with textile palming; industrial webbing (respirator strap); reinforced binding tape (wing slits)",
+    "texture": "Base layer: smooth, moisture-wicking knit with subtle ribbing. Vest: waxy, slightly stiff, with deep stains that have darkened and hardened the fibers. Trousers and apron: rough canvas weave, heavily salt-crusted and chemically discolored. Boots: matte, grippy rubber with subtle wear marks. Gloves: textured rubberized surface, one thumb wrapped in self-repair tape creating visible ridging.",
+    "color_scheme": "Rust-orange base layer (bright, medical-supply origin); mottled dark olive-to-black waxed vest with irregular oil staining; faded khaki trousers with salt residue rings and chemical bleaching; matte black boots; cream-yellow oilskin apron darkened with brine and chemical splatter; dusty gray-brown wing feathers; industrial webbing in steel gray; self-repair tape in off-white.",
+    "closures": "Metal clasp (interior chest pocket, salvaged from corpo document case); friction-fit rubber boots with no visible closures; tied oilskin apron (cord closure); pull-on gloves; respirator hangs on webbing with no fastening.",
+    "distinctive_features": [
+      "Reinforced wing-slits in vest back with binding tape, accommodating folded vestigial geneware wings (real feather and bone, gene-splice origin)",
+      "Six external pockets of varying sizes, all heavily used and stained",
+      "Salvaged metal clasp from a corporation document case repurposed for interior chest pocket",
+      "Heavy rubberized work gloves with one thumb wrapped in self-repair tape over a healed-badly fracture (visible damage beneath wrapping)",
+      "Hand-scratched personal mark on boots (original corpo logo scrubbed out)",
+      "Battered wide-face respirator hanging ready on industrial webbing, showing age and use",
+      "Salt-brine crust visible on trousers, apron, and boots—occupational weathering",
+      "Chemical discoloration patterns on oilskin apron (splatter stains, systematic wear zones)",
+      "Reinforced seams and tape repairs throughout, especially at stress points"
+    ],
+    "tier_indicator": "Tier 5 (sub-grade/ungoverned). Every component is salvage, medical surplus, or scrap-market sourced. The outfit signals someone working in ungoverned or heavily degraded zones where corpo standards don't apply. The geneware wings—vestigial, decorative, and real—suggest informal body modification access, typical of sub-grade communities.",
+    "cultural_context": "A salvage hauler, chemical processor, or brine-zone reclaimer. Wearing this marks you as someone who works with hazardous materials in flooded industrial waterfronts, where ordinary clothing fails in weeks. The presence of real geneware wings (even non-functional ones) signals acceptance within a sub-grade community. This is not fashion; this is survival gear.",
+    "condition_typical": "Heavily weathered and broken-in. The vest is darkened with years of oil and brine staining. The apron is actively stained, suggesting recent use. The glove wrapping is fresh but the glove itself is creased and worn. The boots show scrubbing marks where the logo was removed. All seams show reinforcement tape. This outfit is in continuous use, not storage—it's a working kit that will be worn tomorrow in the same conditions that created these stains."
+  },
+  "image_prompt": "A scarred, tired Tier 5 salvage worker in rust-orange compression base layer, sleeveless oil-darkened waxed canvas vest with reinforced back slits, standing in a flooded industrial waterfront warehouse. Vestigial geneware wings folded against their back, visible through the slits in dusty gray-brown feathers. Heavy khaki canvas trousers tucked into matte black rubber wading boots. Oilskin apron splattered with brine residue and chemical stains, draped from waist to knee. Rubberized work gloves, one thumb heavily wrapped in self-repair tape. Battered respirator hanging loose around the neck on gray industrial webbing. Moody blue-green overhead lighting casting shadows across oil-stained concrete and brackish water. Salt crust visible on all surfaces. Camera angle: full-body profile, slight tilt to show wing slits and weathered fabric details. Dark, utilitarian, working-class aesthetic. Cyberpunk industrial scrapyard atmosphere. --ar 2:3 --v 6"
 }

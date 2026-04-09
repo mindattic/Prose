@@ -38,5 +38,28 @@
     "Lazarus Pharmaceuticals",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A stark white single-piece coverall with bold red banding at shoulders, wrists, and ankles. Clean, clinical silhouette that reads as both medical authority and corporate efficiency. The high-visibility striping creates a sharp, almost institutional aesthetic that commands attention in chaotic environments.",
+    "fit": "Tailored but not form-fitting—designed for layering over light augmentation and allowing full range of motion during emergency response. Relaxed through the torso, tapered slightly at wrists and ankles where the red banding cinches. Shoulders slightly structured to accommodate dorsal panel breakaway seams.",
+    "primary_material": "Triple-layer biohazard-rated membrane composite. Medical-grade synth-polymer with sealed seams throughout. Outer layer has a subtle matte finish that resists fluid sheening.",
+    "texture": "Smooth, almost slick surface with micro-ridged seams visible under close inspection. The red banding has slightly higher friction than the white base. Integrated glove attachment rings feel rigid and precise at the cuffs.",
+    "color_scheme": "Clinical white as primary, with high-visibility red-orange banding at shoulders (full width), wrists (2cm band), and ankles (2cm band). Subtle Lazarus logo in matte red on left chest. Equipment pocket labels in minimal black stencil.",
+    "closures": "Full-length magnetic seal down the center front, reinforced with friction-fit tabs. Breakaway seams at dorsal panels (designed to separate under pressure without full removal). Port-access panels at forearms secured with medical-grade magnetic clasps.",
+    "distinctive_features": [
+      "Sealed seams throughout for biohazard Level 2 rating",
+      "Chest pocket: labeled 'AIRWAY'",
+      "Thigh pockets: labeled 'COMPRESSION' and 'DIAGNOSTIC'",
+      "Integral pharmacological pouch on right hip",
+      "Glove attachment rings (silicone-grip) at both cuffs",
+      "Dorsal panel breakaway seams for spinal augmentation access",
+      "Forearm port-access panels for wrist-jack diagnostics",
+      "Optional custom tail/horn/ear modifications (aftermarket or special order)",
+      "Minimal branding—Lazarus wordmark only, no corporate flourish"
+    ],
+    "tier_indicator": "Tier 2-3 corporate-issue. The precision construction and biohazard certification mark it as higher-grade than street wear, but the emphasis on function over aesthetics keeps it accessible to working-class responders.",
+    "cultural_context": "Worn by Lazarus emergency response personnel across mid and lower-tier GLMZ. Signals both medical authority and corporate extraction of crisis labor. Circulates secondhand in Tier 1 markets as durable protective workwear. Deeply ambiguous in Shelf culture—reassurance and dread combined.",
+    "condition_typical": "Varies sharply: pristine when fresh from Lazarus supply (rarely seen past first deployment), or heavily stained with dried biological matter and field repairs. Many reused coveralls show bleach marks, tape patches on sealed seams, and faded red banding. Disposal protocol is often circumvented by lower-tier responders who treat them as reusable gear."
+  },
+  "image_prompt": "Fashion photograph of a Lazarus Emergency Response Triage Coverall on a dark-skinned cyberpunk model wearing augmentation ports visible at temples and forearms. The model stands in a dimly lit industrial medcenter, soft white overhead lights casting shadows across the coverall's stark white fabric. The red banding at shoulders and wrists glows with slight reflected light. A diagnostic scanner and compression wrap visible in the chest and thigh pockets. Moody, clinical atmosphere with concrete walls and soft blue ambient lighting in the background. Shallow depth of field focusing on the garment's sealed seams and precision construction. Gritty, documentary-style. Shot from waist up. --ar 2:3 --v 6"
 }

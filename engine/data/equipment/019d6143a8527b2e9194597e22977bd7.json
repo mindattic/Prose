@@ -50,5 +50,24 @@
   "related_entities": [
     "Aybek Alvarez-Okonkwo",
     "The Burnline"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Compact spherical grenade with a slightly flattened top and a spring-loaded pull ring. Resembles a classic fragmentation grenade but with smooth, featureless surfaces interrupted only by a central activation mechanism. Industrial and purposeful.",
+    "dimensions": "8.5 cm diameter sphere, 10 cm height including ring assembly",
+    "weight_description": "250 grams — easily pocketable and throwable; fits in palm or tactical vest pouch",
+    "primary_material": "Hardened polycarbonate shell with titanium-reinforced ring assembly and contact points",
+    "finish": "Matte textured grip surface to prevent slipping when wet; subtle diagonal ribbing for ergonomic throw",
+    "color_scheme": "Matte charcoal gray body with electric blue accent striping along three equatorial bands; stainless steel pull ring with blue retention clip",
+    "interface_elements": "Single pull ring (non-replaceable); three small indicator LEDs (amber, green, red) positioned around the equator; minimal tactile feedback on activation",
+    "distinctive_features": [
+      "Three bright electric-blue horizontal bands that glow faintly under low light — identifying the jamming spectrum visually",
+      "Textured grip zones in raised geometric patterns for positive grip under gloved operation",
+      "A small Φ-denomination cost marking etched near the base (Tier 3+ pricing)",
+      "Faint warning text in micro-print: 'NEURAL INTERFACE HAZARD' and 'BROADBAND EMISSION CLASS-3'",
+      "Slightly warm to the touch due to capacitor pre-charge state"
+    ],
+    "manufacturer_markings": "Murmuration Systems logo (stylized flock-of-birds silhouette) stamped on top; 'SJG-3' designation and batch serial number on side; regulatory compliance icons for GLMZ electronic warfare standards",
+    "condition_typical": "Clean and ready-to-deploy from inventory, with protective pull-ring clip engaged. Shows minor handling wear in field use but remains fully functional. Slight condensation or dust coating possible depending on storage conditions."
+  },
+  "image_prompt": "Close-up product photography of the Arcturus SJG-3 signal jammer grenade on a worn steel tactical workbench, surrounded by scattered electronic components and jamming spectrum analyzer readouts. The grenade is centered with its electric blue bands catching cool neon-blue accent lighting, emphasizing the high-tech threat nature. Dramatic side-lighting creates sharp shadows. Blurred tactical gear and GLMZ urban skyline visible through an industrial window in the background. Cyberpunk electronic warfare aesthetic with high contrast and cool color temperature. --ar 3:2 --v 6"
 }

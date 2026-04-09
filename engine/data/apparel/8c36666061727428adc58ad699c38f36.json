@@ -37,5 +37,25 @@
     "Altan Tanaka-Frimpong",
     "Irontide Tidal Energy",
     "Serafin"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Second-skin gloves that cling to the hand like a tech-integrated membrane. Appear almost organic—dark and sleek with barely-visible tech integration. The fingertips have a faint luminescent quality when powered, suggesting embedded circuitry. Create an impression of surgical precision merged with street-tech resourcefulness.",
+    "fit": "Form-fitting and elastic, molding perfectly to hand anatomy without restriction. Designed for maximum tactile sensitivity and dexterity. Compression-style fit that maintains contact with skin for signal transduction.",
+    "primary_material": "Responsive synth-polymer blend with conductive graphene-thread weaving. The base is a nano-mesh that breathes while maintaining electromagnetic coherence.",
+    "texture": "Smooth, almost silky surface with micro-textured fingertips for grip. The pads have a slightly raised, calibrated roughness—engineered rather than organic. Subtle ribbing along the knuckles provides structural support.",
+    "color_scheme": "Matte charcoal-black with deep slate accents on the palm. The fingertips fade to dark gunmetal gray, with faint traces of circuitry visible under direct light—thin silver-white veining pattern.",
+    "closures": "Friction-fit elastic cuff at the wrist, no zippers or snaps. The gloves stay secure through responsive nano-adhesion—they cling without constricting.",
+    "distinctive_features": [
+      "Piezoelectric fingertip nodes visible as slightly raised circular pads",
+      "Embedded conductive trace network barely visible as faint etching",
+      "Micro-LED indicators at the base of each fingertip (dormant until powered)",
+      "Reinforced palm and inner fingers for durability during circuit work",
+      "Subtle Nimbus Fabrication branded heat-stamp on the inner wrist",
+      "Haptic feedback microtexture on the index and middle fingertips"
+    ],
+    "tier_indicator": "Tier 2-3 hybrid. Developed for Tier 2 corporate techs but widely counterfeited and bootlegged into Tier 3 street markets. The authentic version signals specialized tech expertise; knockoffs signal aspiration or desperation.",
+    "cultural_context": "Worn by: circuit repair technicians (legitimate), data infiltration specialists (criminal), corpo security breach teams, and ambitious street-hackers trying to punch above their weight. Wearing these openly marks you as either legally employed in tech or unofficially dangerous.",
+    "condition_typical": "Well-maintained when legitimate; gleaming and precise. Street versions show micro-scratches on fingertips from heavy lock-bypassing, possible burn marks from failed circuit interfaces, stress creasing at the knuckles, and occasional discoloration from contact with reactive compounds."
+  },
+  "image_prompt": "Close-up fashion shot of hands wearing sleek matte-black Conductor's Touch gloves, fingertips glowing faintly with embedded circuitry. Hands hovering over a holographic interface or touching a neon-lit circuit board. Dark urban tech-lab backdrop with blue-green neon accents. Shallow depth of field highlighting the gloves' second-skin precision fit and the subtle silver veining pattern. Moody, high-contrast lighting emphasizing the gloves' surface texture. Model's hands appear calm, professional, dangerous. --ar 2:3 --v 6"
 }

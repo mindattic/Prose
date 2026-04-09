@@ -44,5 +44,24 @@
     "Ambrosia Fekete-Waiyaki",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Industrial-utilitarian elbow-length gauntlets with a bold matte yellow exterior that commands attention on the wrist and forearm. The silhouette is slightly oversized and rigid, projecting authority and technical competence. Worn primarily by chemical handlers and hazmat specialists across the GLMZ.",
+    "fit": "Snug compression fit from fingertip through mid-forearm, then deliberately relaxed at the flared cuff to accommodate layered undergarments or augmentation ports. Finger articulation is stiff and deliberate—designed for precision gripping rather than dexterity.",
+    "primary_material": "Layered nitrile-analog compound (synthetic polymer blend) bonded over a moisture-wicking knitted fiber substrate. High chemical and thermal resistance rated for industrial M88 compliance zones.",
+    "texture": "Exterior is smooth and seamless from fingertip to mid-forearm, transitioning to a pronounced textured grip band at the wrist before the rolled-cuff edge. Interior lining is soft, perforated weave with visible moisture-management channels.",
+    "color_scheme": "Matte industrial yellow (high-visibility standard) with embossed gray compliance stamp at the wrist. Minimal pattern—function-first design with no decorative elements.",
+    "closures": "No closures—gauntlets slip on. Secured via friction fit and the rolled-cuff inversion system that anchors the moisture-wicking liner to the hand.",
+    "distinctive_features": [
+      "Embossed Vansen compliance stamp at wrist (M88 regulatory requirement)",
+      "Replaceable inner lining via inversion-cuff system",
+      "Textured grip band for chemical-resistant handling",
+      "Seamless exterior construction reducing contamination vectors",
+      "Flared cuff design for augmentation-port accessibility"
+    ],
+    "tier_indicator": "Tier 2 standard-issue; Tier 1 black-market variants with removed compliance stamps",
+    "cultural_context": "Corporate chemical handler, hazmat specialist, or unlicensed industrial worker. Wearing these signals either licensed corporate employment or illegal black-market chemical work. Compliance stamp presence is a legal marker.",
+    "condition_typical": "Pristine when new with visible embossed branding; becomes stained and slightly discolored with chemical exposure over weeks of use. Worn units often show faded yellow and cracked texture at the grip band. Illegally modified versions have the compliance stamp abraded or laser-removed."
+  },
+  "image_prompt": "Cyberpunk fashion close-up of a Vansen ChemGuard nitrile gauntlet displayed on an augmented mannequin hand against a dark industrial backdrop. Matte industrial yellow material catches moody neon backlighting—blues and magentas—highlighting the seamless exterior and textured grip band. Embossed Vansen compliance stamp visible at wrist in shallow focus. Grimy concrete wall and flickering M88 regulatory signage in soft-focus background. Cinematic, sterile, corporate-utilitarian aesthetic. --ar 2:3 --v 6"
 }

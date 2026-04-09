@@ -57,5 +57,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Ouroboros Energy"
+  "parent_corponation": "Ouroboros Energy",
+  "related_entities": [
+    "GLMZ",
+    "Ihaia Nystrom-Keita",
+    "Ouroboros Energy",
+    "Patient Zero",
+    "The Nearfield",
+    "The Undertow"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular pistol with an unusually deep profile — the grip-to-muzzle ratio suggests internal complexity. The barrel appears shortened and slightly wider than conventional firearms, tapering into a distinctive cylindrical emitter head that dominates the front third of the weapon. The overall shape reads as 'aggressive geometry': sharp edges, pronounced angles, no curves except where function demands them.",
+    "dimensions": "Length: 28 cm | Grip depth: 5.2 cm | Emitter head diameter: 4.1 cm | Barrel effective length: 8 cm",
+    "weight_description": "Hefty and front-heavy — the 2.3 kg mass concentrates forward in the induction array housing, giving the weapon a pronounced muzzle-down bias. Requires deliberate wrist support; not a weapon for one-handed sustained aim.",
+    "primary_material": "Aerospace-grade polymer composite frame with embedded ferrous stabilization ribs. Internal structure visible through semi-translucent panels on slide showing layered induction coils. Muzzle emitter is hardened steel with visible thermal scoring.",
+    "finish": "Matte gunmetal polymer with brushed steel accents. The induction head displays characteristic scorch marks and mineral discoloration from repeated mass-energy cycling — faint rainbow oxidation patterns around the emitter aperture. Wear concentrated on grip and charging mechanism from field use.",
+    "color_scheme": "Primary: dark gunmetal gray (polymer body) | Accents: brushed steel (emitter, charging lever, sight rails) | Highlights: faint iridescent heat-stress coloration (purple, amber) around the muzzle from energy discharge",
+    "grip_texture": "Textured polymer with knurled grip panels — aggressive checkering pattern designed for gloved operation. The charging lever is wrapped in thin rubberized material, worn smooth from repeated cycling. The trigger guard is sharp-edged and feels intentionally hostile.",
+    "distinctive_features": [
+      "Recessed induction array visible as concentric rings through semi-opaque polymer panel on slide",
+      "Two prominent heat vents (upper/lower receiver) with visible internal ribbing for thermal dissipation",
+      "Unconventional charging mechanism — a side-mounted lever with detents indicating four discrete power settings",
+      "Cylindrical emitter head features three small alignment ports arranged in a triangular pattern (targeting system calibration points)",
+      "OUROBOROS logo etched into slide — a serpent consuming its tail, stylized with geometric precision",
+      "Serial plate mounted on frame showing manufacturing date and induction array generation (OIC-1 specification)",
+      "Faint scorch marks radiating from the emitter aperture — evidence of repeated field use",
+      "Deep wear grooves in the grip from organic oil absorption despite polymer construction",
+      "A small red indicator dot on the charging lever — position indicates current power setting and charge status"
+    ],
+    "manufacturer_markings": "OUROBOROS ENERGY corporate logo (Φ-stamped serpent motif) on left slide; serial plate mounted on lower receiver with alphanumeric identifier, manufacturing date, and OIC-1 power cell specification; small warning glyph (radiation-adjacent symbol denoting gravitational hazard) below the ejection port.",
+    "condition_typical": "Well-maintained but operationally weathered — no visible cracks or structural compromise, but surface shows consistent use: scuff marks on the grip, micro-scratches on the sight rails, accumulated polymer dust in the charging mechanism detents. The emitter head displays permanent thermal discoloration and mineral deposits from power cell residue. Kept functional but not pristine — field-operator aesthetic."
+  },
+  "image_prompt": "Close-up product photography of the Gravimetric Induction Pistol GIP-4 'Undertow' mounted on a matte black steel display platform. Dramatic side-lighting from the upper left casts deep shadows across the receiver, emphasizing the angular geometry and induction array depth. The emitter head glows subtly with faint iridescent heat-stress coloration (amber and purple undertones). A gloved hand (tactical polymer, neutral gray) grips the weapon from the right, fingers positioned on the charging lever to show the red power-setting indicator. Background: dark matte surface with minimal reflection. Lighting reveals texture: polymer composite grain, brushed steel wear patterns, thermal scoring around the muzzle. OUROBOROS logo clearly visible on the slide. Cyberpunk aesthetic: industrial, precise, dangerous. Cold color temperature with amber accent lighting on the emitter. --ar 3:2 --v 6"
 }

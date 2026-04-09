@@ -47,5 +47,25 @@
     "Arcturus Defense Solutions Proprioceptive Lattice Sleeve",
     "Arcturus GE-1 'Garrison'",
     "Tessera Nexus Town Car"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sophisticated body harness system comprising interconnected modular pouches and holsters arranged in a tactical grid pattern across the torso and thighs. The design resembles a minimalist load-bearing vest but far more compact and concealable, with a skeletal frame of webbing and anchor points rather than a solid backing. When laid flat, it appears almost like a body-map blueprint of storage capacity.",
+    "dimensions": "Custom-fitted to individual wearer; typical harness spans 45-60cm vertically across torso, with thigh components extending 20-25cm down each leg",
+    "weight_description": "Lightweight and highly portable when empty (0.5kg); distributes load across multiple body points to feel like natural weight distribution even when fully loaded",
+    "primary_material": "Heavy-duty nylon webbing with neoprene backing; reinforced stitching at stress points",
+    "finish": "Matte textured surface with minimal reflectivity to prevent light catch; wear patterns visible on high-friction areas from repeated draw cycles",
+    "color_scheme": "Charcoal grey primary webbing with black neoprene backing; accent stitching in gunmetal grey or muted olive depending on customization",
+    "interface_elements": "Modular snap-fit connectors throughout; adjustable retention straps with subtle pull-tabs; quick-release buckles on shoulder loops; reinforced D-rings and carabiners at key anchor points; internal elastic loops for tool organization; velcro patches for customizable pouch arrangement",
+    "distinctive_features": [
+      "Asymmetric pouch arrangement optimized for specific load-outs and body contours",
+      "Neoprene backing creates subtle compression against body while wicking moisture",
+      "Internal cable routing channels to keep tool cords organized and invisible",
+      "Thigh component designed to sit flush against leg even during movement",
+      "Custom-dyed sections matching individual wearer's skin tone variants in the GLMZ population",
+      "Micro-textured grip surfaces on holster retention points"
+    ],
+    "manufacturer_markings": "Embossed 'Street Custom' logo on rear center panel; small regulatory tag sewn discreetly into interior seam; no barcode or serial number visible (by design)",
+    "condition_typical": "Shows wear patterns from repeated access; holster leather slightly darkened from sweat and oil; some velcro patches worn smooth from frequent reattachment; micro-scratches on metal carabiners from daily tool contact"
+  },
+  "image_prompt": "Product photography of a custom tactical concealment harness laid flat on a worn steel workbench under cool cyan-blue lighting, partially backlit to show the skeletal webbing structure. The harness is arranged to display its modular pouch system and thigh components, with a single 9mm pistol and spare magazine positioned near the primary holster to suggest capacity. Neoprene backing visible where webbing folds, showing the matte grey nylon texture and worn velcro patches. Dramatic shadows cast across the harness emphasize its three-dimensional anchor points and D-rings. A small embossed 'Street Custom' logo visible on the rear panel. Background is blurred concrete and scattered tools, GLMZ gritty aesthetic. Cyberpunk color grading with slight magenta and cyan color cast. --ar 3:2 --v 6"
 }

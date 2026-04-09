@@ -41,5 +41,25 @@
   "related_entities": [
     "Patient Zero",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian work boot with a chunky, no-nonsense silhouette. Wide toe box and generous ankle collar give it a stocky, purposeful appearance. The lug sole is visibly aggressive with deep treads. Presents as pure function—the kind of boot you see on construction crews, warehouse floors, and street-level survival.",
+    "fit": "Relaxed and accommodating through the forefoot, with extra room in the toe box to accommodate both natural broad feet and augmented prosthetics. The ankle collar sits high and structured, offering support without constriction. Designed for all-day wear on hard floors.",
+    "primary_material": "Plain black synthetic leather upper; standard lug rubber sole with reinforced heel. Aug-compatible variants feature thickened, impact-resistant synthetic leather around the toe box and instep.",
+    "texture": "Smooth synthetic leather with a slight waxy sheen (typical of budget synthetics). The sole is deeply treaded and slightly tacky, designed to grip wet or oily surfaces. Scuff marks and creasing appear quickly with wear.",
+    "color_scheme": "Solid matte black throughout, with natural rubber sole in dark gray-brown. No branding, no accent colors—pure industrial anonymity.",
+    "closures": "Standard lace-up with metal eyelets. Simple, replaceable, no-frills. The laces themselves are usually synthetic cord, often frayed or mismatched by the time the boot is heavily worn.",
+    "distinctive_features": [
+      "Broad, squared-off toe box suitable for wide feet and prosthetic compatibility",
+      "Reinforced toe cap on aug-compatible variants (thicker synthetic leather)",
+      "Deep lug sole for oil/water resistance and grip",
+      "Minimal branding—Rannoch General Goods stamped discreetly on heel",
+      "Straight-stitch construction, visibly repaired many times over",
+      "Scuff marks, creased leather, and patched seams standard after first few months"
+    ],
+    "tier_indicator": "Tier 3-4. Budget-tier workwear with no corporate polish. Affordable enough for working-class purchase, durable enough to be a pragmatic choice across tiers.",
+    "cultural_context": "Worn by warehouse workers, construction crews, maintenance techs, augmentation surgeons, sub-grade laborers, and anyone whose job involves standing all day on unforgiving surfaces. A mark of honest work and lack of pretense. Signals function over fashion.",
+    "condition_typical": "Usually broken-in and weathered. Leather creased, sole worn flat in high-contact areas, small repairs (stitched tears, glued splits) visible. Many wearers patch the toe box or heel repeatedly rather than replace. The longer someone owns a Rannoch boot, the more personal history it carries."
+  },
+  "image_prompt": "A worn black Rannoch General Boot photographed on a cyberpunk worker's foot, standing on a grimy warehouse floor under cold industrial lighting. The boot's wide lug sole is visible, caked with dust and oil. Weathered synthetic leather shows creases and scuff marks. The background is a blurred steel catwalk and machinery. Side profile shows the reinforced toe box and deep tread detail. Moody blue-gray lighting with harsh shadows. --ar 2:3 --v 6"
 }

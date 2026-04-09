@@ -45,5 +45,37 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "GLMZ",
+    "Kang-Petrov Arms KPA-15 'Diaspora'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Nika Svensson-Kone",
+    "Nnamdi Ostrowski-Faletolu",
+    "Patient Zero",
+    "Sorin Ekwensi-Balasanyan",
+    "The Human Baseline Alliance",
+    "WELLSPRING"
+  ],
+  "physical_description": {
+    "visual_profile": "A modernist assault rifle with clean, purposeful lines. The KPA-8 reads as accessible and utilitarian rather than aggressive—its form follows function without unnecessary chrome or intimidation styling. The profile is slightly more compact than contemporary military platforms, with a distinctive angular receiver that suggests both precision engineering and collective design input.",
+    "dimensions": "Overall length 94 cm (16 cm with stock collapsed), barrel length 41 cm, width across charging handle 7 cm",
+    "weight_description": "Balanced and manageable at 3.4 kg—feels purposeful in hand without excessive heft. The weight distribution favors forward control, designed for sustained fire rather than quick-draw tactics.",
+    "primary_material": "Aluminum 7075-T6 receiver with chrome-lined steel barrel, polymer furniture",
+    "finish": "Matte charcoal-grey receiver with satin-finish chrome barrel visible through ejection port. The polymer handguards and stock show a subtle textile-weave pattern—industrial, not glossy.",
+    "color_scheme": "Charcoal grey primary with brushed chrome accents. BCI interface housing features a pale cyan diagnostic panel on the left side of the receiver.",
+    "grip_texture": "Rubberized polymer grip with subtle radial ribbing—engineered for bare hands or light glove work. Handguard is textured with a fine crosshatch pattern that suggests many hands have held it.",
+    "distinctive_features": [
+      "Pale cyan-lit BCI interface panel (left receiver side) with community-maintained software stamp visible",
+      "Chrome-lined barrel visible through side charging port—industrial aesthetic statement",
+      "Modular top rail with community-designed optic standardization marks etched in white",
+      "Simplified charging handle with cooperative symbol (interlocked hands) stamped into the tang",
+      "Magazine well features text-etched capacity marking in English and Mandarin",
+      "Dust cover marked with QR code linking to open-source maintenance documentation",
+      "Slight wear patina on aluminum—suggests field testing by multiple operators"
+    ],
+    "manufacturer_markings": "KANG-PETROV ARMS stamped along upper receiver in sans-serif font. Below: 'SOLIDARITY PLATFORM' with small Kang-Petrov logo (stylized 'KP'). Serial number on lower receiver in discreet grey. Union cooperative endorsement marks from three major labor collectives etched into the left side of the stock.",
+    "condition_typical": "Well-maintained but not pristine—field-ready. Minor dings on the polymer furniture from transport and training use. Chrome barrel shows slight oxidation at the muzzle brake, consistent with regular firing and conscientious maintenance. BCI interface housing shows no corrosion, suggesting regular software updates and care."
+  },
+  "image_prompt": "Product photography of a Kang-Petrov KPA-8 Solidarity assault rifle laid diagonally across a brushed steel surface. The rifle is held in gloved hands (tactical grey gloves) at the foregrip and stock. Dramatic side-lighting from the left reveals the satin-finish chrome barrel and matte charcoal receiver, with shadows defining the angular receiver profile. The pale cyan BCI interface panel glows subtly under the light. Background is deep industrial grey. Close detail shot of the cooperative symbol on the charging handle tang in sharp focus. Cyberpunk aesthetic emphasizing open-source technology and labor symbolism rather than corporate chrome. Professional product lighting with rim-light on the barrel. --ar 3:2 --v 6"
 }

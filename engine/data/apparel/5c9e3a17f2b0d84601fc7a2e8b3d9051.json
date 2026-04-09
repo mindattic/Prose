@@ -46,5 +46,28 @@
     "Lazarus HZ-4 'Cleanroom'",
     "Narrowcast",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A pristine, ghost-white full-body coverall that reads clinical and sterile. The garment envelops the wearer completely—sealed hood with integrated clear face shield, booties fused to leg openings, triple-layered glove cuffs extending past wrists. The silhouette is boxy and featureless, emphasizing function over form. It has the austere, antiseptic appearance of medical or pharmaceutical-grade PPE.",
+    "fit": "Loose, intentionally oversized to accommodate layering underneath and allow unrestricted movement in laboratory environments. The coverall hangs straight from shoulders to ankles with no tapering. Glove cuffs are deliberately voluminous to overlap protective sleeves worn beneath.",
+    "primary_material": "Electrostatically dissipative polyethylene composite—a synthetic blend engineered for contamination control and static suppression. Shell has a waxy, rigid texture characteristic of industrial-grade cleanroom polymers.",
+    "texture": "Stiff and plastic-like with an audible crinkle at every movement. The surface is smooth but slightly tacky from the anti-static coating. Seams are ultrasonically welded, creating subtle raised ridges where panels bond. The material has a faint antiseptic, chemical odor embedded in the polymer itself that persists through multiple washes.",
+    "color_scheme": "Bright white with a faint pearl sheen from the dissipative coating. All hardware and closures are polished chrome or stainless steel. The laminated ID card panel on the left forearm is metallic silver with a holographic verification stripe.",
+    "closures": "No visible zippers or mechanical closures—the entire suit is sealed via ultrasonication. Access is gained by carefully peeling seams apart at designated break points. The face shield hinges open on micro-magnetic latches. The ID card panel uses friction-fit retention.",
+    "distinctive_features": [
+      "Ultrasonically welded seams throughout—no stitching visible",
+      "Integrated sealed hood with optically clear anti-static face shield",
+      "Triple-layer glove cuffs designed for overlap with secondary gloves",
+      "Fused booties with reinforced sole grip pattern",
+      "Laminated BCI proximity ID card acceptance panel on left forearm",
+      "Electrostatic dissipative surface coating (visible as faint milky sheen)",
+      "Manufactured branding: 'NULLVAULT' embossed subtly on upper left chest",
+      "Engineered asymmetry—all functional panels positioned for right-handed access",
+      "No pockets, no hardware protrusions, no external attachment points"
+    ],
+    "tier_indicator": "Tier 1-2 corporate. This is expensive, purpose-built cleanroom equipment. Only accessible to chip fabrication technicians, geneware clinic staff, and other high-tier pharmaceutical/biotech workers. The Helix Corp subsidiary pricing ensures gatekeeping.",
+    "cultural_context": "Wearing this signals employment in sterile, high-value industries—geneware modification clinics, advanced chip fabs, genetic research. It's a badge of corporate legitimacy and technical expertise. In sub-grade zones, a worn Nullvault suit is either a priceless salvage item or signals black-market biotech work.",
+    "condition_typical": "New suits are pristine and crinkly. After 50+ hours of use, creases develop in the hood and at joints from repeated sealing/unsealing. The white develops a grayish patina from residual antiseptic vapor and handling. The face shield may develop micro-scratches. Well-maintained suits show no tears; damaged seams render the suit unusable for Class-10 work and are typically discarded or sold to salvage networks."
+  },
+  "image_prompt": "Close-up fashion photograph of a Nullvault Cleanroom Iso-Suit Type-C on a sleek chrome mannequin, centered against a dark graphite laboratory backdrop. The white coverall gleams under cool blue-white surgical lighting, its sealed seams catching hard shadows. The integrated hood and transparent anti-static face shield are visible, reflecting neon accent lights. The laminated ID panel on the left forearm glows faintly with holographic verification patterns. The material's stiff, plastic texture and crinkled surface are clearly visible. Moody, sterile atmosphere with chrome laboratory equipment and blurred depth-of-field bokeh in background. Captured with clinical precision, emphasizing the garment's industrial purpose and corporate tier-1 aesthetic. --ar 2:3 --v 6"
 }

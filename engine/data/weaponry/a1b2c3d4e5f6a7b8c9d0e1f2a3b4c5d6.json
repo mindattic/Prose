@@ -45,5 +45,33 @@
     "shelf",
     "tier 1"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "Lazarus Pharmaceuticals",
+    "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
+    "The Shelf",
+    "Vantablack-CNX",
+    "the_meridian_office_park"
+  ],
+  "physical_description": {
+    "visual_profile": "An unobtrusive medical implant — barely visible as a thin, flesh-toned silicone sheath approximately the size and shape of a contraceptive device. When removed from packaging, it appears as a small, curved medical prosthetic with no obvious aggressive features. The true horror is internal and invisible until activated.",
+    "dimensions": "7.2cm length × 2.1cm width × 1.8cm depth",
+    "weight_description": "Negligible — 12g total weight makes it virtually imperceptible when worn. Users report forgetting it's there entirely within hours of insertion.",
+    "primary_material": "Medical-grade silicone sleeve (bio-compatible, inert) containing pressure-sensitive mechanical components and sealed chemical reservoir",
+    "finish": "Semi-translucent flesh-tone silicone with a subtle matte coating to prevent adhesion slippage. Minimal visible seaming along the dorsal edge. Clinical, sanitary appearance.",
+    "color_scheme": "Pale peach/flesh-tone primary with darker translucent sections revealing the internal micro-hook mechanism. Minimal branding — no aggressive visual language.",
+    "grip_texture": "Smooth, slightly tacky silicone surface designed for insertion ease. No grip texture intentional — this is not meant to be handled frequently once deployed.",
+    "distinctive_features": [
+      "Subtle pressure-activation indicator mark (barely visible hairline seam)",
+      "Translucent sections allowing glimpse of retracted barbed mechanism inside",
+      "Miniaturized chemical reservoir visible as darker internal pocket",
+      "Surgical extraction pull-tabs recessed into silicone body",
+      "Medical lot number and expiration date printed in microfont on rear",
+      "Zero user controls or activation buttons — entirely passive",
+      "Tamper-evident seals along injection pathway"
+    ],
+    "manufacturer_markings": "Lazarus Pharmaceuticals logo embossed subtly on rear surface. Serial number and batch code printed in 4-point font. Regulatory compliance markings minimal — marked only as 'Medical Defense Prosthetic' per GLMZ health codes. No aggressive branding.",
+    "condition_typical": "Clinical and pristine in original sealed medical packaging. Once deployed, the user's own body becomes the 'housing' — never seen in field condition by outside observers. If extracted surgically post-activation, it appears damaged and biological, surrounded by trauma markers."
+  },
+  "image_prompt": "Clinical product photography of a small flesh-tone silicone medical device on a sterile white surface, backlit to show internal mechanism through translucent sections. Macro lens reveals tiny barbed hooks visible through silicone. Beside it, a sealed Lazarus pharmaceutical packaging box with minimal branding. Overhead surgical lighting casts sharp shadows emphasizing the device's small, innocuous appearance. Nearby: a surgical extraction kit with sterile instruments. Color grading: cool clinical whites and flesh tones, zero warmth. The composition should evoke medical equipment rather than weapons — the uncanny horror comes from knowing what it does, not how it looks. --ar 3:2 --v 6"
 }

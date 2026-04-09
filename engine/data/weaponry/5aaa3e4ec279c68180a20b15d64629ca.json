@@ -41,5 +41,35 @@
     "moon_clip",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Aurocet",
+    "Nika Svensson-Kone",
+    "Tessera Corponation",
+    "Tessera TK-20 Apex 'Mandate'",
+    "The Riveters' Round"
+  ],
+  "physical_description": {
+    "visual_profile": "A sophisticated corporate revolver with refined, angular lines — all business and precision. The TKR-10 reads as expensive and controlled, with a distinctly modern aesthetic that eschews traditional revolver curves in favor of geometric planes and purposeful edges. It's immediately recognizable as a Tessera product.",
+    "dimensions": "Overall length: 24.5 cm | Barrel length: 10.2 cm | Cylinder diameter: 3.8 cm | Grip height: 12.1 cm",
+    "weight_description": "Hefty but balanced — 0.98 kg sits comfortably in the hand with forward bias toward the cylinder, creating inherent stability. Substantial enough to feel serious, not so heavy as to fatigue during extended carry.",
+    "primary_material": "Stainless steel frame and cylinder with polymer grip panels; internal lockwork is hardened steel",
+    "finish": "Brushed stainless steel with matte-black DLC (diamond-like carbon) coating on internal components and trigger mechanism; the cylinder retains a polished satin finish to reduce friction and show the precision moon-clip recesses",
+    "color_scheme": "Silver-gray stainless as primary, with satin-black grip panels featuring subtle Tessera corporate branding; small Φ symbol in matte black on the frame",
+    "grip_texture": "Textured polymer with shallow diamond-pattern crosshatching for positive purchase; warm slightly-rubberized finish that doesn't require gloves but accommodates them",
+    "distinctive_features": [
+      "Six recessed moon-clip seats visible in the cylinder face — precision-machined circular depressions that guide rimless cartridges",
+      "Biometric sensor panel flush-integrated into the upper grip panel (backstrap) — thin optical line of ruby-red LEDs (dormant until activated)",
+      "Triggerguard has subtle forward curl, aggressive but refined",
+      "Top of frame features integral Picatinny rail (compact, 15mm length) for optional reflex sight",
+      "Cylinder release button is oversized and textured, positioned in classic L-frame manner",
+      "Minimalist iron sights — low-profile front post, adjustable rear notch",
+      "Moon-clip ejector rod recessed into frame — no external rod, flush design",
+      "Cylinder flutes are shallow and numerous, emphasizing precision manufacturing",
+      "Fine horizontal striations on frame sides (deliberate finish, not wear)"
+    ],
+    "manufacturer_markings": "TESSERA CORPORATION etched in small serif font on the left frame flat, above the cylinder; TKR-10 'EXECUTOR' in taller letters on the right frame flat; tiny delta-Φ symbol (corporate logo) stamped near the topstrap, barely visible in normal light; serial number engraved on the frame underside (visible only on disassembly, per Tessera's security policy)",
+    "condition_typical": "Field-grade maintained — brushed finish shows microscopic wear patterns and light handling marks, but no rust or damage; biometric panel is pristine and responsive; cylinder rotates with mechanical smoothness; edges remain sharp; moon-clip recesses are clean and exact; a weapon that is regularly inspected, properly serviced, and carried with professional respect"
+  },
+  "image_prompt": "Product photography of the Tessera TKR-10 'Executor' revolver positioned at 3/4 angle on a brushed-aluminum platform, dramatic side-lighting from the left creating sharp highlights on the stainless-steel barrel and satin cylinder finish, deep shadows defining the angular frame geometry, biometric sensor panel glowing with faint ruby-red indicator light, moon-clip recesses catching light to emphasize precision engineering, futuristic cyberpunk corporate aesthetic, professional armorer's setup, shallow depth of field with blurred corporate facility background, highly detailed materials with visible brush-strokes on metal and texture on grip, cinematic lighting, 2226 GLMZ technology tier 2+ styling --ar 3:2 --v 6"
 }

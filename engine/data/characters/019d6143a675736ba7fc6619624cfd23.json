@@ -326,5 +326,12 @@
     "posture_movement": "Carries themselves with the controlled tension of someone always assessing threat vectors. Movements are economical and deliberate — no wasted motion. They favor stillness over fidgeting; when they do move, it's purposeful. Their default expression is neutral to the point of opacity, a learned defense mechanism.",
     "clothing_style": "Tier 3-4 utilitarian. Worn synthetic jacket with reinforced seams and multiple pockets, the kind designed for function rather than fashion. Underneath, thermal layers in muted grays and blacks. Cargo pants with tool loops. Boots are heavy, practical, scuffed from actual use. Nothing new or shiny — everything has been broken in through real work. No corporate branding, but the gear quality suggests someone with steady income and practical priorities."
   },
-  "image_prompt": "Portrait of a nonbinary fixer in cyberpunk 2226, broad-shouldered and heavy-set, dark brown hair with silver temples pulled back tightly, pale gray-blue eyes sharp and assessing, medium-deep mixed heritage skin tone with nocturnal pallor, thin scar along left jawline, visible chrome seam across sternum with metallic silver showing, wearing worn synthetic tactical jacket and gray thermal layers, practical heavy boots, neutral stoic expression, standing in dim neon-tinted corridor lighting between megastructures, moody atmospheric cyberpunk setting, night cycle ambiance, photorealistic, character portrait, --ar 2:3 --v 6"
+  "image_prompt": "Portrait of a nonbinary fixer in cyberpunk 2226, broad-shouldered and heavy-set, dark brown hair with silver temples pulled back tightly, pale gray-blue eyes sharp and assessing, medium-deep mixed heritage skin tone with nocturnal pallor, thin scar along left jawline, visible chrome seam across sternum with metallic silver showing, wearing worn synthetic tactical jacket and gray thermal layers, practical heavy boots, neutral stoic expression, standing in dim neon-tinted corridor lighting between megastructures, moody atmospheric cyberpunk setting, night cycle ambiance, photorealistic, character portrait, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Eastern European": 27.6,
+    "South Asian": 25.3,
+    "Sub-Saharan African": 25.1,
+    "Pacific Islander": 13.2,
+    "North African": 8.8
+  }
 }

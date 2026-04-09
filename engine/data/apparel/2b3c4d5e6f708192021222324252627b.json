@@ -42,5 +42,25 @@
     "MERIDIAN",
     "ShieldTech SB-3 'Groundstrike'",
     "Tessera Nexus Town Car"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, corporate-coded dress shirt that reads as upper-tier professional. The pale steel blue creates a cool, clinical impression—corporate but approachable. The slim fit skims the body without clinging, projecting understated confidence and desk-work competence. On the street, it signals either a Helix employee or someone aspirational enough to own one.",
+    "fit": "Slim, tailored through the shoulders and torso with a slight taper at the waist. Designed for prolonged seated wear—ergonomic rather than fashion-forward. Sleeves hit just at the wrist bone. Not restrictive; built for comfort during marathon office shifts.",
+    "primary_material": "High-grade synthetic blend—likely 60% recycled polyester, 40% lab-grown cotton analog. Smooth finish with subtle moisture-wicking properties. Durable enough to survive corporate laundry cycles and cheap enough to replace if lost in a Helix relocation.",
+    "texture": "Deceptively textured: the fabric has a fine vertical weave that catches light subtly, preventing the shirt from looking flat or cheap. Up close, the weave is visible but not rough. The buttons are matte, slightly textured to prevent glare under office lighting.",
+    "color_scheme": "Proprietary 'Helix Meridian Blue'—a pale, cool steel blue that sits between industrial gray and soft cyan. The tone-on-tone helix logo on the left chest is embroidered in a fractionally darker blue, visible only when light hits it directly. White or silver thread would break the brand cohesion, so Helix chose subtlety.",
+    "closures": "Standard matte buttons, small and precisely matched to the shirt fabric. Six buttons down the front; one at each cuff. No visible branding on buttons themselves—Helix reserves overt logos for less visible placements.",
+    "distinctive_features": [
+      "Tone-on-tone embroidered helix logo on left chest—visible only at certain angles, a subtle corporate flex",
+      "Fine vertical texture woven throughout, preventing a flat corporate appearance",
+      "Spread collar designed to sit well under a Helix-issued blazer or on its own",
+      "Invisible internal reinforcement at stress points (button holes, collar, cuffs)—built to last",
+      "Micro-perforations in fabric blend allow airflow during long office days",
+      "Seams are precisely finished; no loose threads even when new"
+    ],
+    "tier_indicator": "Tier 2 corporate issue. Not luxury, but solidly above working-class. Free distribution signals employee value without actual wage increases.",
+    "cultural_context": "Wearing this outside work hours reads as either: (a) loyal Helix employee, (b) someone who can't afford better, or (c) someone performing corporate competence. On the street, it marks you as office-bound, potentially middle-management or administrative. In a Tier 5 zone, it might make you a target.",
+    "condition_typical": "Pristine when issued, quickly becoming 'broken-in' within a week. After a few months: slightly softer, faint creasing at the elbows and chest from wear, but still presentable. Helix employees often wear these outside the office because they're the nicest thing they own; street wear shows more visible wrinkles and minor stains."
+  },
+  "image_prompt": "Cyberpunk fashion photography: a slim administrative worker in a pale steel blue Helix Corp dress shirt, shot from the waist up against a dark urban backdrop. Moody cyan and blue lighting emphasizes the subtle vertical texture of the fabric and catches the tone-on-tone helix logo embroidered on the left chest, making it flicker in and out of visibility. The spread collar sits crisp and clinical. Background: rain-slicked mega-building facade, holographic Helix signage blurred behind. Model has mixed heritage features, subtle augmentation visible at the temple. Shirt is pristine, recently laundered. Midjourney style: corporate glamour meets street authenticity. --ar 2:3 --v 6"
 }

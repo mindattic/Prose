@@ -52,5 +52,24 @@
     "Street Custom 'Glass Garden' Caltrops",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "TESSERA PG-2 'Signature'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A rigid, modular collar assembly that sits flush against the base of the neck and upper shoulders. The design resembles a segmented tactical piece rather than jewelry — industrial and purposeful. The front features a central control node flanked by sensor pods that curve around the sides.",
+    "dimensions": "Approximately 28cm circumference, 4.5cm vertical height, 1.2cm depth",
+    "weight_description": "Handheld weight (150g) — barely noticeable when worn; distributes evenly across shoulders",
+    "primary_material": "Reinforced polymer composite with embedded sensor arrays; aluminum alloy mounting brackets",
+    "finish": "Matte tactical black with brushed metallic accents; surface texture is slightly ribbed for grip and sensor optimization",
+    "color_scheme": "Matte black primary with gunmetal gray sensor pods; amber and red LED indicator clusters along the front collar face",
+    "interface_elements": "Dual tactile pressure-response buttons (top center); small holographic micro-display embedded in the front node (displays battery/status in low-light); three micro-ports (neural interface jack on right side, charging port on left, diagnostics port rear-center); wireless proximity indicator LEDs",
+    "distinctive_features": [
+      "Segmented sensor pods that protrude slightly from the collar curve, giving it a crested appearance",
+      "Pulsing amber LEDs that intensify to red when threats are detected",
+      "Micro-holographic status display that projects minimalist threat vector data",
+      "Articulated rear fastening system with quick-release magnetic clasp",
+      "Acoustic detection membranes visible as subtle ribbed surfaces on the upper curve"
+    ],
+    "manufacturer_markings": "Aegis Vehicle Works logo (stylized shield) embossed on center front node; TDC-2 designation laser-etched beneath logo; regulatory compliance stamps on rear clasp",
+    "condition_typical": "Worn snugly against the neck with neural interface cable routed beneath collar; indicator LEDs active (soft amber in idle state); faint electronic humming audible in quiet environments"
+  },
+  "image_prompt": "Close-up product photography of a Threat Detection Collar TDC-2 positioned on a sleek black carbon-fiber mannequin neck mounted on a gunmetal workbench. The collar displays pulsing amber LEDs that cast sharp geometric shadows. Surrounding the mannequin: holographic readout overlays showing threat vectors, disconnected neural interface cables, and scattered sensor diagnostic tools. Dramatic three-point lighting with cool blue side-light accentuating the sensor pod geometry and warm amber accent lighting reflecting off the aluminum brackets. Shallow depth of field with the collar in sharp focus, background blurred with data streams and workshop equipment. Cyberpunk aesthetic with HUD elements subtly integrated into the scene. --ar 3:2 --v 6"
 }

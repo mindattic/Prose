@@ -38,5 +38,26 @@
     "TESSERA PG-2 'Signature'",
     "Tessera Nexus Town Car",
     "The Pure Hand"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A crisp performance polo with corporate precision tailoring. Deep crimson body with black ribbed collar and sleeve trim creates a striking, authoritative silhouette. The gloss black Ringo 'R' wordmark at the breast reads as a badge of insider status. Worn by camera operators and broadcast technicians on studio floors, it projects competence and access.",
+    "fit": "Athletic-cut with gusseted shoulder seams for full range of motion during rig work and camera operation. Slightly tapered at the torso to accommodate core augmentations without bunching. Available in standard and wide-shoulder augment-frame cuts for chrome-limb operators. Stretch blend allows for unrestricted arm extension.",
+    "primary_material": "Performance stretch synth-blend with moisture-wicking properties. Heat-resistant treatment rated for sustained 120°F studio environments. Cable-resistant weave prevents snagging on broadcast equipment and harness rigs.",
+    "texture": "Smooth, technical fabric with subtle horizontal ribbing on collar and sleeve trim. Finish is slightly matte to reduce glare under studio lighting. Seams are flat-locked and reinforced at stress points.",
+    "color_scheme": "Deep crimson red (Ringo corporate standard) with black ribbed collar, black sleeve trim edges, and black gloss wordmark. Monochromatic branding emphasizes corporate identity over ornamentation.",
+    "closures": "Friction-fit button placket with matte black polymer buttons. Low-profile closure minimizes visual disruption across the chest during wide-angle camera shots.",
+    "distinctive_features": [
+      "Reinforced hip loop (left side) sized for standard headset clip attachment",
+      "BCI sync port embedded at right collar point for hands-free comms integration",
+      "Gusseted shoulder seams for unrestricted overhead motion",
+      "Gloss black Ringo 'R' wordmark at breast pocket position",
+      "Flat-locked seams throughout for durability under constant equipment contact",
+      "Heat-resistant treatment visible as subtle texture variation under direct light",
+      "Optional wide-shoulder augment-frame cut for chrome-limb operators"
+    ],
+    "tier_indicator": "Tier 2-3 aspirational. Signals working access to broadcast infrastructure and media production sphere. Recognizable as crew, not talent.",
+    "cultural_context": "Wearing Ringo crew colors means you're inside the apparatus that shapes metropolitan narrative. In affluent Tier 2 districts, the polo opens doors. In contested Tier 4-5 zones, it marks you as someone with potential access to surveillance feeds and broadcast privilege—viewed with suspicion or envy depending on local sentiment.",
+    "condition_typical": "Worn units show cable wear along hips and shoulders, minor bleaching from repeated heat exposure, and faint sweat staining at collar and underarms from 12-hour studio shifts. Rarely patched—Ringo supplies fresh units regularly. BCI sync port develops subtle contact wear around the contacts."
+  },
+  "image_prompt": "Cyberpunk fashion photography: Ringo Broadcast Operations crew polo draped on a sleek dark mannequin with subtle chrome augmentation plating visible at shoulder joint. Deep crimson fabric catches moody studio lighting against a dark background with faint broadcast equipment silhouettes—camera rigs, cable harnesses, light rigging—slightly out of focus. Black collar and trim pop under cool LED backlighting. Close detail shot of the gloss black 'R' wordmark and BCI sync port at collar. Urban broadcast studio aesthetic, hyperrealistic fabric texture, cinematic color grading with cool blues and deep reds. --ar 2:3 --v 6"
 }

@@ -35,5 +35,25 @@
     "aug_compatible",
     "thermal",
     "tailored"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Tailored business-formal silhouette with a distinctly modern edge—sleek and understated at first glance, revealing subtle cultural markers only to the wearer. Sits at the hip with a refined break at the ankle, projecting quiet corporate competence.",
+    "fit": "Slim through hip and thigh with a gentle taper to the ankle. Cut to accommodate cybernetic augmentation without excess fabric. Waistband sits neutral and comfortable; the proprietary stretch weave prevents bunching around prosthetic interfaces.",
+    "primary_material": "Halverson Draftweave—a bio-engineered synthetic blend (polyamide/algae-cellulose core with phase-change polymer microcapsules). Matte finish with imperceptible sheen under direct light.",
+    "texture": "Smooth, almost liquid-like surface. Close inspection reveals fine ribbed structure that dissipates heat. Fabric drapes cleanly and has a subtle weight that signals quality without ostentation.",
+    "color_scheme": "Charcoal-brown base (Pantone 19-1318—a versatile neutral that reads as both professional and street-smart). Interior waistband features a narrow Scandinavian-West African geometric jacquard in cream, ochre, and deep indigo—visible only when waistband is exposed or folded.",
+    "closures": "Center fly with discrete magnetic snap (Halverson signature). Right-side concealed zipper (8 cm) positioned for easy prosthetic limb donning/removal—integrated into the seam so it's invisible when closed. Standard belt loops.",
+    "distinctive_features": [
+      "Proprietary Draftweave fabric with temperature-regulating phase-change microcapsules",
+      "Concealed side-zip prosthetic access panel—seamlessly integrated, zero visual indicator when fastened",
+      "Hidden cultural waistband print—visible only to the wearer or intimate observers",
+      "Reinforced interior thigh and crotch seams for durability and prosthetic friction points",
+      "Magnetic snap closure reduces snagging with augmentation contact points",
+      "Halverson & Mäki subtle woven label at interior waistband"
+    ],
+    "tier_indicator": "Tier 2–3 boundary. Affordable luxury positioning—expensive enough to signal stable employment and access to corpo amenities, yet accessible to upwardly mobile working class.",
+    "cultural_context": "Worn by mixed-heritage GLMZ professionals—corpo office workers, mid-level administrators, medical/tech sector employees who navigate both climate-controlled towers and street-level urban exposure. The hidden cultural print signals diaspora pride worn close to the body; a private affirmation of identity in homogenized corporate spaces.",
+    "condition_typical": "Pristine to lightly broken-in. Draftweave resists wrinkles and pilling; even after months of wear, these retain a fresh, 'just-tailored' appearance unless actively abused. Minor creasing at the knee and a soft shine at the inner thigh from prosthetic contact is normal and expected."
+  },
+  "image_prompt": "Fashion photograph of a Halverson Draftweave Slim Dress Trouser on an androgynous model with a visible chrome prosthetic leg, positioned in a moody downtown GLMZ office corridor. Overhead fluorescent and neon glow cast cool blue-purple shadows. Model shown mid-stride, trouser fabric catching light to reveal its subtle drape and sheen. Close-up detail shot inset showing the concealed side zipper and interior waistband cultural print. Dark concrete and glass backdrop, cyberpunk aesthetic. Cinematic, high-fashion editorial style. --ar 2:3 --v 6"
 }

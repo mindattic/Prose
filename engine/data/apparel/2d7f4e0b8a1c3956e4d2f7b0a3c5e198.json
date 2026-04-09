@@ -41,5 +41,24 @@
   ],
   "related_entities": [
     "Crucible Industries Storm Carbine SC-4 'Downpour'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek, utilitarian rain shell with a modern athletic silhouette. When packed, nearly invisible—a fist-sized bundle. When worn, it drapes with minimal bulk, emphasizing clean lines and functional geometry. The deep teal reads as professional-adjacent without corporate pretension.",
+    "fit": "Relaxed athletic cut with tapered sleeves. Sits just past the hip. Designed for layering over augmentation rigs or standard wear without restriction. Packs down to eliminate storage footprint.",
+    "primary_material": "Lightweight synthetic hydrophobic weave (likely recycled polyester composite with DWR treatment). Matte finish suggests mid-tier manufacturing—durable, not luxe.",
+    "texture": "Smooth, slightly crinkled when packed. Port-aligned seams are reinforced with micro-welded tape, creating subtle ridged lines across the torso. Hood fabric is marginally softer than body panels.",
+    "color_scheme": "Deep teal (primary)—desaturated enough to read practical rather than fashion-forward. Matte black seam tape and spinal-rig channel create strong vertical accent lines down the back. Minimal contrast branding.",
+    "closures": "Magnetic snap hood seal (front center). Main body likely front-zip. Chest pocket features self-sealing friction fit for storage pouch.",
+    "distinctive_features": [
+      "Packable into own chest pocket—stores to fist-size for commute flexibility",
+      "Rear spinal-rig channel: pre-sewn conduit for augmentation cable management, a nod to Tier-3/4 clientele with active subcutaneous or skeletal mods",
+      "Magnetic hood seal for one-handed closure during rain or quick deployment",
+      "Port-aligned matte black seams: both reinforcement and visual reference to tech integration",
+      "Minimal visible branding—Veldtmark wordmark likely small, upper chest"
+    ],
+    "tier_indicator": "Tier 3–4 functional. Pricing suggests Φ180–280 range. Not corpo luxury, but above salvage. Built for the daily GLMZ commuter with modest augmentation.",
+    "cultural_context": "Marks the wearer as practical, transit-dependent, and likely augmented. Suggests technical literacy without wealth signaling. Common among mid-level corp workers, independent contractors, and station dock staff. The spinal-rig channel is subtle gatekeeping—you recognize it only if you have active mods.",
+    "condition_typical": "Pristine when new, but designed to weather. After 6 months: minor creasing in storage folds, possible fraying at seam edges, scuff marks on the lower torso from bag straps. Wears in gracefully rather than degrading."
+  },
+  "image_prompt": "A Tier-3 commuter model in the Veldtmark StormDrift Rain Shell, deep teal with black seam accents, standing in a rain-slicked GLMZ transit station. Model half-turned, one hand touching the magnetic hood closure. Close-up detail shot of the spinal-rig channel on the rear panel visible in soft edge lighting. Packed jacket visible as fist-sized bundle in inset. Moody, cool-toned ambient light. Rain streaks on background metal. Dark mannequin display shot alternative. Hyperreal product focus, cyberpunk streetwear aesthetic. --ar 2:3 --v 6"
 }

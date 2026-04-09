@@ -42,5 +42,24 @@
     "Tessera Nexus Town Car",
     "The Heritage Vault",
     "Wool"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A timeless crewneck silhouette with subtle Nordic minimalism—clean lines, understated elegance. The sweater reads as intentionally classic, almost austere in its refusal to trend. On-body, it creates a composed, centered impression: neither tight nor loose, neither statement nor invisible.",
+    "fit": "Classic, slightly relaxed through the body with a modern taper at the waist. Not oversized, not tailored—calibrated for layering and longevity. The ribbed crew neckline sits flush; cuffs and hem are proportionate and structured.",
+    "primary_material": "100% cultured merino wool (lab-grown protein fiber). The material has a uniform luster—matte without being dull, with a subtle sheen under direct light that reveals the density of the knit.",
+    "texture": "Dense, fine-gauge knit with a smooth hand. The surface is uniform and pill-resistant; slight ribbing visible at crew, cuffs, and hem. No fuzzing or loose fibers. Tactile warmth without scratchiness.",
+    "color_scheme": "Five signature colorways: charcoal (deep neutral), ivory (cool cream), camel (warm sand), dusty cedar (muted sage-brown), and lake (deep teal-blue with slight grey undertone). Each color is understated, earthy, and lab-consistent—no dye variation batch-to-batch.",
+    "closures": "None—pullover construction. No zippers, snaps, or fasteners.",
+    "distinctive_features": [
+      "30-year design consistency—minimal iteration signals confidence and heritage",
+      "Lab-grown merino fiber (vat-cultured, post-2100 standard) visible in fiber uniformity",
+      "Ribbed crew, cuffs, and hem in matching wool—precision finishing",
+      "Low-temperature washability marked on care tag (water conservation, energy efficiency)",
+      "Subtle Oskar & Fen woven label at side seam—small, Scandinavian understated"
+    ],
+    "tier_indicator": "Tier 1–2 luxury (accessible high-end). The price point and material sourcing signal wealth and discernment, not ostentatious spending.",
+    "cultural_context": "Professional, educated, stability-oriented. Worn by researchers, architects, remote knowledge workers, and corpo middle-management who value durability over trend. Also appeals to climate-conscious consumers and those rejecting fast fashion cycles. The wearer signals: taste, restraint, Northern European heritage or affinity, and an understanding that 'luxury' means longevity.",
+    "condition_typical": "Pristine to gently broken-in. Even after years of wear, the merino holds its shape and resists visible distress. When owned, usually owned in multiples (rotate through several colors). Looks as good in year five as year one."
+  },
+  "image_prompt": "Fashion photograph of Oskar & Fen merino crewneck on a pale-skinned model with subtle augmentation (bioluminescent nape tattoo barely visible), posed in three-quarter stance against a rain-slicked concrete brutalist wall, cool overhead lighting casting gentle shadows. Sweater in charcoal, worn with minimal styling. Dark background, moody Northern European aesthetic—restrained, timeless, slightly austere. Photograph emphasizes fabric texture and fit precision. Studio-grade color grading, cool white balance, shallow depth of field on the knit detail. --ar 2:3 --v 6"
 }

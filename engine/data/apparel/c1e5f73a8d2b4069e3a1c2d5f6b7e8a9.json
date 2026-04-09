@@ -42,5 +42,25 @@
     "GLMZ",
     "Kang-Petrov Arms KPA-8 'Solidarity'",
     "SynapTech ReadRoom Social Cue Enhancer"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, utilitarian mid-calf boot with a contemporary urban silhouette. The seamless molded upper creates a smooth, almost liquid appearance that tapers cleanly to a reinforced toe box. Designed for function without sacrificing aesthetic—sits between streetwear and tactical gear.",
+    "fit": "Snug, compression-molded fit around the ankle and midfoot for stability on wet surfaces. Roomier through the toe box to accommodate thick socks or light augmentation cabling. Mid-height shaft (approximately 6-7 inches) hugs the leg without restriction.",
+    "primary_material": "Seamless molded thermoplastic upper—durable, waterproof, and lightweight. ActiveGrip pressure-sensitive rubber compound outsole with engineered micro-channel tread.",
+    "texture": "Matte finish on the upper creates a soft, non-reflective surface; slightly tacky to the touch without being sticky. Outsole has a subtle ribbed texture from the micro-channel pattern, visible as faint linear grooves.",
+    "color_scheme": "Available in slate (cool medium gray), olive (muted green-brown), or deep navy (near-black blue). Subtle metallic accent stripe runs along the heel collar in matte silver or matching tone.",
+    "closures": "Quick-friction pull-loop system at heel and calf; no zippers or buckles—designed for speed in wet weather. Internal elastic gusset for ease of entry.",
+    "distinctive_features": [
+      "Seamless molded construction eliminates weak points",
+      "ActiveGrip outsole with pressure-sensitive micro-channels that activate when wet",
+      "Reinforced toe cap with subtle internal padding",
+      "Integrated drainage aperture at the arch to prevent water pooling",
+      "Matte finish resists water beading and smudging",
+      "Torrent branding embossed (not printed) on lateral heel"
+    ],
+    "tier_indicator": "Tier 3 functional—affordable working-class standard that signals practical investment rather than status. Quality construction accessible to service workers, couriers, maintenance crews.",
+    "cultural_context": "Worn by courier nets, maintenance crews, street medics, and anyone navigating GLMZ during flood season. Signals preparedness and street sense without pretense. Common enough to be invisible in rain-heavy districts.",
+    "condition_typical": "Pristine or gently worn when new; develops subtle scuff marks and minor discoloration on the matte upper from city contact. The ActiveGrip outsole shows accelerated wear in high-grip zones (toe, ball of foot) but remains functional well beyond aesthetic decline."
+  },
+  "image_prompt": "Cyberpunk fashion photograph: Torrent Foulweather Grip Boot on a sleek andromorphic mannequin or augmented model, shot from mid-shin down. Dark rain-slicked urban setting—wet pavement reflecting neon signage in slate blue and olive tones. Moody overhead lighting casts the boot in sharp relief against chrome and concrete. Close detail shows the matte thermoplastic upper and micro-channel tread pattern. Urban decay backdrop with GLMZ architecture—brutalist pillars, rain cascading past dim overhead lights. Atmospheric mist rises from the wet street. --ar 2:3 --v 6"
 }

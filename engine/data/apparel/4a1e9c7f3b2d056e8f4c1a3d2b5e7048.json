@@ -39,5 +39,24 @@
     "Dzemal Acholonu-Patagiri",
     "ShieldTech SB-3 'Groundstrike'",
     "Warm Wire, Small Hand"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Three unpretentious, worn boxer briefs in muted tones — the kind that fade into a person's daily routine. Each shows honest use: one solid black, one faded navy with visible re-stitching along the waistband, one grey with a discrete inner-seam patch. No branding visible, or what remains is faded beyond recognition. They hang limp on a line or lay flat, each slightly different from the others, suggesting they came from different sources and wear timelines.",
+    "fit": "Standard brief cut — sits mid-hip, loose enough for comfort but not baggy. The elastic bands vary slightly in tension; the navy pair sags fractionally at one side where it was re-hemmed. Leg holes are relaxed, not form-fitting.",
+    "primary_material": "Blended cotton-synthetic blend, degraded from original specification. The black retains some elasticity; the navy and grey are softer, thinner from repeated washing. Likely secondhand or bulk overstock clearance.",
+    "texture": "Soft and worn — pillowed in some spots from wash cycles, faintly pilled on the grey pair. The navy waistband shows flat polythread stitching, slightly raised and rougher to the touch than the original seam. The grey patch is a different fabric weight, slightly stiffer.",
+    "color_scheme": "Black (faded to charcoal in creases), faded navy (almost slate), heathered grey with white repair patch visible at inner thigh. No patterns; all solid or uniform.",
+    "closures": "Elastic waistbands — black and grey intact, navy re-sewn with flat polythread. No zippers or buttons.",
+    "distinctive_features": [
+      "Navy pair: flat polythread re-stitching on waistband, indicating field repair or salvage market reclamation",
+      "Grey pair: white or off-white synthetic patch at inner seam, roughly 2x3 inches, sewn with visible overstitching",
+      "Black pair: least worn, but still shows fading at stress points (waistband, leg holes)",
+      "Mixed provenance — three different manufacturers bundled together for bulk sale",
+      "No visible branding or brand names intact"
+    ],
+    "tier_indicator": "Tier 5 — sub-grade salvage. The definition of disposable comfort wear, bundled at Ruck Markets for those who need clean underwear without asking questions about origin.",
+    "cultural_context": "Worn by sub-grade workers, undocumented residents, and anyone living below the corporate safety net. These are the boxer briefs of people who buy in bulk at salvage markets because new ones cost Φ12–15 and these cost Φ2.50 for three. No status attached; pure utility.",
+    "condition_typical": "Worn, patched, re-hemmed, faded. They look like they've survived at least 2–3 years of weekly rotation. The black pair might get another season; the grey and navy are already on borrowed time."
+  },
+  "image_prompt": "Three mismatched worn boxer briefs laid flat on a dark metal surface under harsh fluorescent light — one black, one faded navy with visible flat polythread re-stitching on the waistband, one grey with a white synthetic patch at the inner seam. Shallow depth of field, gritty Ruck Market aesthetic, urban laundromat or salvage bin environment in soft-focus background. Cyberpunk everyday wear, tier 5 survival gear. Shot from above. --ar 2:3 --v 6"
 }

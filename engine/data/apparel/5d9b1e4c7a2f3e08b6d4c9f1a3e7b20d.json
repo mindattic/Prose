@@ -52,5 +52,27 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Synaptrel",
     "Tessera Nexus Town Car"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian layered ensemble presenting as a compact, purposeful silhouette. The deep navy color palette with reflective striping creates a visual hierarchy that reads as both functional and deliberately visible in transit tunnels and maintenance shafts. The overall impression is blue-collar reliability with augmentation-conscious design—professional, weathered, built for crawlspaces.",
+    "fit": "Relaxed and deliberately loose through the torso for layering and augmentation clearance. The jacket is waist-length and boxy; the work shirt drapes naturally; trousers are cut straight with a generous thigh for cargo pockets and movement in confined spaces. Everything accommodates spinal rigs without binding.",
+    "primary_material": "Navy ballistic weave jacket shell; heavy-duty cotton-blend canvas trousers; reinforced synth-leather elbow and knee patches; knit wool watch cap",
+    "texture": "The jacket has a tight, water-resistant weave with broad matte reflective tape (slightly raised, tactile striping). The work shirt is soft cotton with subtle texture variation. Canvas trousers have a broken-in, slightly napped finish. Synth-leather patches feel smooth and durable. Matte black rubber soles and steel-toe caps.",
+    "color_scheme": "Deep navy blue as dominant color; broad bands of high-visibility reflective white/silver at chest, waist, and cuffs; gunmetal grey synth-leather patches; matte black boots; white printed Kelvex logo and MAINTENANCE lettering",
+    "closures": "Jacket: full-length YKK zipper with magnetic storm flap; Work shirt: hidden snap placket (industrial-grade); Trousers: hook-and-loop cargo pocket closures, standard waist button and zip; Boots: traditional laced with secondary magnetic snap ankle keeper",
+    "distinctive_features": [
+      "Rear dorsal seam split to accommodate spinal augmentation rigs",
+      "Rear panel with tall retroreflective MAINTENANCE lettering (visible in headlamp beam)",
+      "Kelvex Transit Authority logo on left breast pocket",
+      "Tool loop array on right hip (4-6 loops for wrench/socket positioning)",
+      "Double-layered seat and knee reinforcement on trousers",
+      "Non-conductive rubber sole on boots (electrical safety)",
+      "Elbow and knee patches in contrasting gunmetal synth-leather",
+      "Rear hem vent on jacket for ventilation in tunnels"
+    ],
+    "tier_indicator": "Tier 3–4 (working class/essential infrastructure). Issue uniform signals regular employment and system integration, but material quality and wear patterns reflect blue-collar functionality rather than luxury.",
+    "cultural_context": "The wearer is a transit infrastructure worker—someone who crawls through MagRail underbelly maintenance shafts, handles live equipment, and keeps the metropolitan pulse running. This outfit communicates competence, regulated employment, and comfort with industrial environments. No corpo affectation, no street hustle—pure functional authority.",
+    "condition_typical": "Broken-in and well-maintained. The reflective tape shows minor scuffing; the synth-leather patches on elbows and knees are darkened from repeated contact with tunnel walls and crawl-space grime. The boots are regularly cleaned but retain a dull patina from non-conductive rubber wear. The work shirt collar shows faint sweat-line darkening. Everything is regulation-clean but visibly used."
+  },
+  "image_prompt": "Fashion catalog shot of a Kelvex Transit Maintenance Ground Kit displayed on a weathered mannequin or worn by a tired, augmentation-modified model with visible spinal implant ports. Deep navy jacket with retroreflective white striping catches studio lighting. Tight framing on upper torso showing Kelvex logo, then full-body shot showing cargo trousers, tool loops, matte black boots. Dark concrete tunnel or industrial warehouse backdrop with harsh LED sidelighting casting geometric shadows. Moody, desaturated color grading with accent lighting on reflective striping. Catalog code and Φ pricing overlay. Shot style: utilitarian uniform photography, 2226 infrastructure worker aesthetic. --ar 2:3 --v 6"
 }

@@ -82,5 +82,23 @@
     "The Nearfield",
     "Vantablack Media Spectral Barrier Display System",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian rectangular brick with industrial aggression; resembles a hardened tactical device rather than consumer electronics. Three sides feature discrete recessed antenna arrays that break the matte surface. Control interface is sealed and minimalist, designed for gloved operation. Overall impression is military-grade suppression hardware, purposefully anonymous.",
+    "dimensions": "28cm x 19cm x 7cm (roughly hardback book-sized; fits in a large shoulder bag or equipment case)",
+    "weight_description": "1.4kg — portable but substantial; requires single-hand carry for brief periods, benefits from sling or bag mounting for sustained deployment",
+    "primary_material": "Reinforced polymer composite with internal RF shielding; recessed antenna arrays in brushed aluminum",
+    "finish": "Matte charcoal grey with micro-texture to reduce glint and fingerprints; antenna areas show slight metallic sheen where recessed into body",
+    "color_scheme": "Charcoal grey primary with brushed aluminum antenna accents; minimal branding — Arcturus logo in grey-on-grey embossed stamp on top panel",
+    "interface_elements": "Top-mounted tactile control panel with 4 physical buttons (power, mode, frequency select, execute); small monochrome LCD screen (4-line display) set into slightly recessed pocket; removable power cell access port on left side; sealed connector jack for external antenna (rarely used); minimal indicator LEDs (power status, RF output, lock status) flush with housing",
+    "distinctive_features": [
+      "Three recessed antenna arrays creating deliberate asymmetry — passive design to minimize active RF signature when dormant",
+      "Tactile button feedback override — designed for field operation without removal of tactical gloves or winter gear",
+      "Subtle venting pattern on right edge suggesting internal heat management for sustained high-output operation",
+      "Carry loop integration points molded into top corners — discreet anchor points for paracord or cable attachment"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (embossed grey-on-grey on top panel); regulatory compliance stamps on bottom panel in tiny print (FCC-style, though compliance is theoretical for black-market units); unit serial number laser-etched on rear panel; no user-facing branding beyond logo",
+    "condition_typical": "In the field, typically mounted in Faraday-lined tactical pouch or wedged into equipment rack; external power cell visible in insertion slot; antenna arrays may show minor dust accumulation in recesses; operation generates moderate heat, so units in active use often show thermal tracking on matte surface"
+  },
+  "image_prompt": "Product photography: Arcturus Spectral Deadfall Jammer on weathered steel workbench, angled 45 degrees to show recessed antenna arrays on multiple sides. Matte charcoal grey housing catches hard key light from above-left, emphasizing texture and antenna geometry. Monochrome LCD screen glows faintly cool blue in soft shadows. Surrounding clutter: tactical gear, signal analyzer displays with scrolling frequency data, Φ-marked payment chip readers. Cyberpunk workshop aesthetic — neon accent lighting (cool cyan/violet) bleeding across metal work surface. Shallow depth of field, focus sharp on control interface. Dark, professional, sinister functionality. --ar 3:2 --v 6"
 }

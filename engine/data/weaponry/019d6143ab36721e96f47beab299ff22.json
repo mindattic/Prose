@@ -54,5 +54,43 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Biometric Denial Charge BDC-1",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Cassiel Brandt-Ouedraogo",
+    "GLMZ",
+    "Helix Biosystems",
+    "Kairos",
+    "Lazarus LX-2 'Lab Rat'",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "PulsePoint MoodGlow Affective Display Implant",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA CC-6 'Shepherd'",
+    "TESSERA PG-2 'Signature'",
+    "Ximena Bautista-Nwosu"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, predatory sphere with a forward-swept asymmetrical profile—like a clenched fist with teeth. The Shepherd resembles a segmented insect or tightly coiled spring, with six articulated fins that double as electromagnetic radiators. Its silhouette reads as aggressive despite its small size: purposeful, engineered for pursuit.",
+    "dimensions": "180mm length (snout to tail fin), 140mm width (broadest point across radiator fins), 120mm height (when resting on center chassis)",
+    "weight_description": "Dense and substantial for its volume—0.9 kg feels weighty in the palm, bottom-heavy from battery and processor core. Balanced around the center point, but the nose-weighted forward bias makes it feel like a coiled spring eager to launch.",
+    "primary_material": "Aerospace-grade carbon-titanium composite chassis with segmented ceramic radiator panels. Polymer intake shrouds around thrust vectoring vents.",
+    "finish": "Matte gunmetal gray composite with brushed titanium accent bands along the fin edges. Heat-dispersal ceramic has a slightly glossy, charcoal finish with micro-fracture patterns from thermal cycling. Sections show light oxidation streaking.",
+    "color_scheme": "Gunmetal gray primary, brushed silver-titanium accent stripes, charcoal radiator panels. Signature HELIX cyan underglow on the broadcast array lens (visible when powered).",
+    "grip_texture": "Not designed for human grip—features electromagnetic cradle mounts and launch rail contact points with textured polymer indexing stops for positioning in deployment harnesses.",
+    "distinctive_features": [
+      "Six articulated carbon-ceramic radiator fins with servo-motor articulation points",
+      "Forward-facing crystalline broadcast lens (appears smoky under normal light, luminous cyan when active)",
+      "Dual micro-turbine intake vents with variable geometry shrouds along the flanks",
+      "Segmented spine with visible thermal expansion grooves running root-to-tail",
+      "Three micro-sensor turrets (passive scan array) mounted on the dorsal surface",
+      "HELIX proprietary neural-lock marking etched near the rear battery cap—anti-tamper hologram",
+      "Micro-LED status array (barely visible unless powered, then glows soft blue for passive mode, pulsing red during broadcast)",
+      "Debris-shedding grooves along the pressure hull to reduce aerodynamic drag"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS corporate logo (stylized double helix) embossed on the starboard flank below the thermal badge. Serial number laser-etched on rear battery housing beneath tamper-evident hologram seal. Regulatory compliance marks stamped on the port air intake shroud—barely legible.",
+    "condition_typical": "Field units show light micro-abrasion on the nose cone from high-speed impacts with urban infrastructure. Radiator fins often bear minor scoring from repeated thermal cycling. The broadcast lens typically shows light dust accumulation and minor impact crazing from target environment exposure. Some units in active law enforcement use display UV-reactive dust tracking on the composite, used to verify deployment history."
+  },
+  "image_prompt": "Hyper-detailed product photograph of the Neuromorphic Intercept Drone NID-6 'Shepherd' mounted in a vertical launch cradle, shot from a 45-degree angle against a dark metallic background. The drone is a compact sphere with six articulated thermal radiator fins, composed of matte gunmetal carbon-titanium composite with brushed silver accent bands and charcoal ceramic heat-dispersal panels. Its forward-facing crystalline broadcast lens glows soft cyan. Dramatic side-lighting emphasizes the segmented spine and micro-sensor turrets along the dorsal surface, casting sharp shadows that define the aggressive asymmetrical profile. A gloved hand (synthetic polymer with neural-interface tracery visible on the knuckles) reaches toward the launch mount point from the lower frame edge. The background shows subtle circuit board texture and a faint HELIX BIOSYSTEMS watermark. Cinematic lighting with slight chromatic aberration at the edges. Ultra-high detail on material transitions and thermal grooves. Cyberpunk aesthetic with cold blue-gray color grading and cyan accent highlights. --ar 3:2 --v 6"
 }

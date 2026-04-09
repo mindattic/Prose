@@ -41,5 +41,27 @@
     "Vantablack VS-3 'Skin Job'",
     "VitaCore ClearCourse Addiction Suppressor",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A figure that seems to absorb light rather than reflect it—almost dimensionless in poor lighting, appearing as a negative space in a room. The silhouette is deliberately unremarkable: straight-lined, angular, and designed to convey precision without aggression. When photographed or captured on low-resolution surveillance, the wearer becomes slightly ghostly, edges softening into the background.",
+    "fit": "Slim and tailored, with no excess fabric. The suit follows the body's geometry without clinging or flaring. Movements appear efficient and controlled. The cut discourages bulk or augmentation visibility—designed for analysts who rely on subtlety rather than presence.",
+    "primary_material": "Vantablack-grade synthetic composite with light-absorption coefficients approaching 99.9%. The fabric is matte to the point of appearing non-reflective, with a faint texture that suggests woven depth despite the absence of visible pattern. Incorporates passive signal-dampening threads throughout the weave.",
+    "texture": "Ultra-matte, almost velvet-like in appearance but smooth to the touch. The fabric has an unusual quality—it seems to pull light into itself rather than scatter it. Slight give under pressure, suggesting technical construction beneath the surface. No wrinkles photograph normally; they appear as shadow variations rather than creases.",
+    "color_scheme": "Pure matte black with zero accent colors. The uniformity is absolute. The only visual variation comes from embedded haptic node arrays at the wrists, which create subtle geometric patterns visible only under direct light—faint metallic grid formations, deliberately minimal.",
+    "closures": "No visible fasteners. The suit appears to be a single seamless garment despite being constructed in standard pieces. Seams are invisible or internal. Wrist cuffs are friction-fit, secured by internal mechanical tension rather than zippers or magnets, making them silent to adjust.",
+    "distinctive_features": [
+      "Zero external pockets—all storage is internal and inaccessible without removing the suit",
+      "Embedded haptic node arrays at both wrists for encrypted tap-communication",
+      "Passive signal-dampening weave that reduces but does not eliminate BCI broadcast signature",
+      "Completely unmarked—no brand logos, no manufacturer insignia, no identification tags",
+      "Seams so perfectly integrated they are nearly invisible, suggesting machine construction",
+      "The fabric's light-absorption property creates a slight 2D effect in photographs and surveillance footage",
+      "High collar that can be adjusted without visible mechanisms",
+      "Cuffs designed to rest precisely at the wrist, no spillover"
+    ],
+    "tier_indicator": "Tier 4-5 institutional control. The uniform is issued, tracked, and reclaimed. It signals access to restricted information and authority to evaluate high-level security concerns. Its expense is hidden—no visible luxury, only invisible technical sophistication.",
+    "cultural_context": "Worn exclusively by Vantablack internal security analysts—corporate investigators and threat assessors operating in the GLMZ's most sensitive spaces. The uniform's anonymity paradoxically makes the wearer immediately recognizable. Seeing someone in this suit in a corporate lobby or meeting signals that something significant is being examined. It communicates authority through absence: no weapons, no ego, no compromise. The wearer is not here to intimidate; they are here to know things.",
+    "condition_typical": "Pristine. The suit is issued in perfect condition and must be maintained to that standard. Any visible wear is grounds for replacement. Analysts understand the uniform as a tool rather than personal property—it belongs to Vantablack. When reassigned, they return it. Those who attempt to keep theirs receive one polite contact, then the matter is resolved without further documentation."
+  },
+  "image_prompt": "A slim figure in a pure matte-black suit standing in a high-security corporate corridor, bathed in cool blue-white overheads. The suit absorbs all reflected light, appearing almost two-dimensional against the sterile geometric architecture. Wrist cuffs catch faint metallic highlights from embedded haptic nodes. Low-resolution surveillance camera footage aesthetic overlaid—the figure slightly ghostly, edges softening into the background. No visible seams, no logos, no ornament. The absence of detail is the entire design. Dark moody lighting with clinical corporate interior. Model or mannequin rendered with absolute minimalism, appearing almost dimensionless. --ar 2:3 --v 6"
 }

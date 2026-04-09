@@ -54,5 +54,36 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "GLMZ",
+    "Ihaia Nystrom-Keita",
+    "Mireille Fontaine-Obi",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "The Resonance Communion",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist pistol that resembles a precision medical diagnostic tool more than a lethal weapon. The profile is angular and geometric, with a pronounced forward-swept transducer array forming a subtle bulge at the muzzle. The overall aesthetic is clinical and corporate — nothing about it suggests weaponry to untrained eyes.",
+    "dimensions": "240mm length, 120mm height, 40mm depth. The muzzle transducer cluster extends 35mm beyond the frame.",
+    "weight_description": "Deceptively light in hand — approximately 1.1kg distributed across a compact frame gives it an almost toy-like feel despite its lethal function. The balance tilts slightly forward due to the transducer array, requiring deliberate control.",
+    "primary_material": "Aerospace-grade polymer composite over a titanium-reinforced internal structure. The frame is a matte graphite composite designed to absorb thermal signature.",
+    "finish": "Matte gunmetal gray with subtle surface texture to reduce reflection. The transducer array housing features a darker charcoal anodized finish with micro-etched grip panels.",
+    "color_scheme": "Monochromatic gray-to-black gradient: matte graphite body with charcoal accents at the muzzle and trigger guard. Minimal chrome on internal springs visible through the ejection port.",
+    "grip_texture": "Micro-textured polymer with embedded grip grooves, designed for precision two-finger indexing. The surface is slightly tacky, non-reflective, and engineered to absorb moisture without becoming slick.",
+    "distinctive_features": [
+      "Forward-mounted piezoelectric transducer array: 7 hexagonal projectors arranged in a compact cluster, faintly visible through the translucent cowl",
+      "Minimal iron sights: low-profile tritium dots integrated into the slide",
+      "Passive scan indicator: subtle LED in the grip that pulses faintly when pre-scan mode is active",
+      "Ultrasonic power cell port: located on the left side, recessed flush with the frame",
+      "No visible trigger guard articulation — the trigger itself retracts fully when not in firing position",
+      "Dissipation vents: three thin parallel slots along the left side of the barrel for piezo heat management",
+      "Serial port hidden under a flush-fit maintenance panel at the grip heel"
+    ],
+    "manufacturer_markings": "Seo Research Compliance Group logo (stylized Φ symbol in a circle) stamped discretely on the grip panel in matte silver. Serial number laser-etched on the right side of the frame in 6mm characters. No model designation visible on the exterior — all branding is minimal and corporate.",
+    "condition_typical": "Immaculate. The ACRP-2 is a precision tool maintained obsessively by its operators. Field examples show virtually no wear: no scuff marks, no powder residue (none exists), no mechanical degradation. When neglected, dust accumulation on the transducer cowl is the only sign of use."
+  },
+  "image_prompt": "Overhead three-quarter product shot of the Acoustic Cavity Resonance Pistol ACRP-2 'Hollowpoint' resting on a brushed black titanium surface, fingers of a gloved hand cradling the grip from the left. Dramatic side-lighting from the upper right, creating sharp shadows across the transducer array at the muzzle. Cold blue accent lighting reflecting off the micro-etched grip texture and the faint piezo cluster beneath the translucent cowl. Shallow depth of field with the trigger mechanism and power cell port in crisp focus. Cyberpunk aesthetic: minimal, clinical, corporate brutalism. The background is a soft blur of dark composite materials and blue circuit-board traces. Ultra-high detail on the surface finishes, material textures, and the intricate hexagonal transducer elements. Photograph style: clinical product documentation meets weaponry catalog. Moody, cold, precision-engineered. --ar 3:2 --v 6"
 }

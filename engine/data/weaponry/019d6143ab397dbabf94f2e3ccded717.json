@@ -54,5 +54,44 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Carrion Defense Works Autonomous Perimeter Defense Ecosystem",
+    "GLMZ",
+    "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'",
+    "Hydroxyapatite",
+    "Ihaia Nystrom-Keita",
+    "Irontide Tidal Energy",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "The Resonance Communion",
+    "The Undertow",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist medical instrument disguised as a weapon — a heavy carbine with an oversized cylindrical emitter head that dominates the front third. The profile is deliberately ungainly, suggesting raw functionality over ergonomic grace. The emitter head is wider than the receiver, creating an unbalanced, top-heavy silhouette that reads as 'dangerous medical device' rather than ballistic firearm.",
+    "dimensions": "Overall length: 118 cm. Emitter head diameter: 12 cm. Receiver depth: 8 cm. Barrel equivalent (emitter bore): 6 cm. Width at grip: 5.5 cm.",
+    "weight_description": "Genuinely hefty — 5.8 kg feels like dead weight in the shoulder, all of it concentrated forward. The power cell mounted low in the stock provides some balance, but the large emitter head still pulls the weapon nose-heavy. Handling requires both upper body strength and deliberate movement; it is not a weapon for spray-and-pray work.",
+    "primary_material": "Titanium-reinforced polymer chassis with aluminum heat-sink ribbing along the emitter housing. The power cell casing is sealed stainless steel. Internal structure incorporates copper windings visible through transparent polymer access panels on the sides.",
+    "finish": "Matte industrial gray with satin-finish aluminum ribbing. The emitter head is anodized charcoal black with faint thermal discoloration marks (browns and purples) radiating outward from the emitter bore — evidence of repeated high-heat cycles. The grip section shows subtle scoring from gloved hands. TESSERA logos are stamped in military block-serif sans-serif on the receiver.",
+    "color_scheme": "Battleship gray primary with charcoal black emitter head. Copper-bronze heat venting creates warm accent lines running vertically down the sides. Minimal red accent striping on the safety lever and power indicator.",
+    "grip_texture": "Textured polymer with fine cross-hatching, designed to bite into gloved hands without sawing skin. Cool to the touch, slightly gritty, with a texture that suggests industrial-grade non-slip treatment rather than ergonomic comfort.",
+    "distinctive_features": [
+      "Large cylindrical emitter head with visible thermal scarring and concentric alignment rings etched into the front face",
+      "Transparent polymer service panels on both sides revealing copper resonance coils and capacitor arrays",
+      "Heat-sink fins running the length of the emitter housing, some discolored from thermal stress",
+      "Acoustic return sensor array (three small apertures) arranged in an isosceles triangle on the top of the emitter head",
+      "Cooling vent cluster (honeycomb pattern) running along the rear of the emitter housing",
+      "Red and amber LED indicator strip on the right side of the receiver (power state, frequency lock, thermal status)",
+      "Oversized power cell visible through a reinforced window in the stock — a darkened energy core with faint internal glow",
+      "Articulated thermal management collar between emitter and receiver, designed for passive heat dissipation"
+    ],
+    "manufacturer_markings": "TESSERA CORPORATION stamped in block capitals on the left side of the receiver. Military acceptance mark (crossed wrench and lightning bolt) on the stock beneath a serial plate. Frequency calibration serial beneath the emitter base.",
+    "condition_typical": "Field-worn but meticulously maintained. Thermal scarring on the emitter head is expected and normal. Internal optics and resonance sensors are protected by sealed access panels. No rust or corrosion — military-grade materials show minimal degradation. Grip shows honest wear from use. The weapon has the appearance of a specialized tool that is respected and carefully managed, not casually deployed."
+  },
+  "image_prompt": "Product photograph of a heavy cyberpunk medical-grade weapon: a titanium-gray carbine with an oversized cylindrical emitter head, thermal-scarred charcoal black, mounted on a dark polymer workbench. Dramatic side-lighting from upper left casts sharp shadows across the heat-sink ribbing and reveals thermal discoloration streaks on the emitter housing. A gloved tactical hand (fingers in sharp focus) grips the cross-hatched polymer grip from the right side. Transparent panels on the receiver glow faintly with copper-bronze internal coils and capacitor geometry visible inside. Red and amber LEDs illuminate along the receiver spine. Shot at 45 degrees to emphasize the top-heavy, brutalist silhouette and the contrast between clinical gray polymer and industrial aluminum. Deep navy background. Photorealistic, high contrast, technical precision aesthetic. --ar 3:2 --v 6"
 }

@@ -44,5 +44,38 @@
     "mass-availability",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Cezar Watanabe-Gyasi",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "Crucible Genomics",
+    "Djeneba Park-Traore",
+    "Doru Fofana-Câmpeanu",
+    "GLMZ",
+    "Kenji Guerrero-Osei-Mensah",
+    "SafeStep Promenade Defender PD-2 'Elderwood'",
+    "The Collective",
+    "The Cutters Guild"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist working blade with authoritative presence — thick, forward-heavy silhouette that reads as tool-first, weapon-second. The blade dominates the visual profile with its substantial rectangular geometry, while the handle recedes into functional simplicity. No ornament, no flourish. Pure utility wedge.",
+    "dimensions": "Blade length: 45 cm | Total length: 58 cm | Blade width at base: 6.5 cm | Blade thickness: 8 mm",
+    "weight_description": "Dense and purposeful in hand — 650 grams feel substantial but not exhausting. The forward weight bias creates a natural chopping momentum; the tool wants to swing downward. Balanced on the edge of heft, where fatigue sets in only after sustained use.",
+    "primary_material": "Solid carbon-lattice composite — a rigid engineered framework that looks almost skeletal under magnification, visible as a faint tracery pattern across the blade surface under certain angles of light",
+    "finish": "Matte gunmetal with subtle texture from the lattice structure. Not polished; deliberately industrial. Where the working edge meets the flat, a slightly lighter zone shows micro-wear from handling and use. No protective coating — the material doesn't require it.",
+    "color_scheme": "Gunmetal gray primary | Dark charcoal undertones in the lattice structure | Natural silver-gray at the sharpened edge where material density concentrates",
+    "grip_texture": "Wrapped in black synthetic cord over a reinforced polymer core — the cord is cross-wound for grip security and shows subtle wear from palms. The feel is rough and deliberate, designed for sweaty or gloved hands. No padding; direct feedback from the material.",
+    "distinctive_features": [
+      "Visible carbon-lattice weave pattern across blade surface — geometric, almost circuit-board-like",
+      "Significant blade thickness taper from base to edge",
+      "Full tang reinforced pommel with aggressive angular profile for striking capability",
+      "Working-edge bevel optimized for chopping rather than slicing — blunt angle that catches light differently than conventional knives",
+      "Subtle weight distribution ridges running lengthwise along the blade",
+      "Grip cord shows authentic field wear — fraying at the pommel junction, darkened from handling",
+      "No crossguard — blade extends directly to grip, emphasizing the unified tool design"
+    ],
+    "manufacturer_markings": "FORGE-SMITH COLLECTIVE stamped in sans-serif block letters along the blade base, right-side profile | FSC logo (geometric anvil symbol) punched into the pommel cap | Serial code etched below the maker's mark — thin but legible",
+    "condition_typical": "Well-used but maintained. The blade shows consistent wear patterns along the edge — micro-nicks from real work rather than battle damage. The grip cord is darkened from regular handling, possibly showing slight fraying at stress points. The blade surface may bear light oxidation bloom or dust from active use. Not showroom-clean, but not neglected either — this is a working tool in daily rotation."
+  },
+  "image_prompt": "Product photography of Forge-Smith Collective Carbon Machete 'Cane Cutter' blade lying across dark weathered metal surface, angled to show both edge profile and lattice weave pattern under dramatic side-lighting. Gloved hand (synthetic black tactical glove) gripping wrapped cord handle, fingers curled naturally around pommel. Lighting: sharp single-source key light from left, casting deep shadow across opposite blade face, highlighting texture and lattice geometry. Background: dark industrial surface with subtle rust patina or tool marks. Cinematic, utilitarian cyberpunk aesthetic — emphasize material density and working-class durability over aesthetic refinement. Atmospheric slight haze suggesting factory or salvage environment. Professional catalog photography style. --ar 3:2 --v 6"
 }

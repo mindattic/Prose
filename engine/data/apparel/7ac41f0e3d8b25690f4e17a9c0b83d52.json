@@ -40,5 +40,24 @@
   "parent_corponation": "",
   "related_entities": [
     "Variable Impedance Rifle VIR-9 'Switchback'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Aggressive, aerodynamic low-profile racing shoe with a sleek silhouette that hugs the foot. Structural fins curve along the ankle collar, creating a predatory appearance reminiscent of a street racer's mentality. The iridescent black finish shifts between deep purple and oil-slick green under light, catching attention without screaming for it.",
+    "fit": "Snug, compression-style fit through the midfoot and arch, with a streamlined toe box that prioritizes pedal feedback over comfort. The ankle collar sits low but supportive, designed for drivers who need tactile connection to their vehicle's controls.",
+    "primary_material": "Advanced synthetic performance polymer shell with variable-hardness rubber sole compound. The upper is a ballistic-grade synth-weave reinforced at high-stress points.",
+    "texture": "Smooth, almost liquid-looking iridescent finish on the upper with subtle grip texturing on the inner pedal surface. The sole shows visible layering — soft, slightly tacky rubber at the toe transitioning to harder, more resistant compound at the heel and lateral edges.",
+    "color_scheme": "Iridescent black base that shifts between deep violet and petrol green depending on angle and light. Subtle matte black accent stitching along the fin detailing. No logos prominently displayed — manufacturer identity is intentionally subtle.",
+    "closures": "Friction-fit with a hidden magnetic micro-snap system along the side seam, disguised within the fin structure. No laces or visible hardware.",
+    "distinctive_features": [
+      "Structural aerodynamic fins running along both sides of the ankle — functional for ankle stability, aesthetic for street credibility",
+      "Variable-hardness rubber sole with visible demarcation between grip zones and wear-resistant zones",
+      "Pedal-contact zone on inner sole features ultra-fine grip texture, invisible unless directly inspected",
+      "Integrated flex channels on the sole that align with pressure points during acceleration and braking",
+      "Minimalist branding — only a small embossed Torsion logo on the heel counter"
+    ],
+    "tier_indicator": "Tier 3-4 boundary: affordable performance gear that signals serious street or track involvement without corporate excess. Licensed track drivers and underground racers both wear these.",
+    "cultural_context": "Worn by people who live for speed — illegal street racers in the GLMZ undercity, licensed motorsport competitors, and anyone with serious vehicle control skills they want to weaponize. This shoe is a statement: 'I know how to handle machinery.' Often paired with racing suits, haptic feedback rigs, or augmented reaction-time implants.",
+    "condition_typical": "Typically shows accelerated heel wear on the driven side from repeated braking. The iridescent finish develops micro-scuffs and marks from track work or street racing. Well-maintained examples show pristine pedal-contact zones; heavily used ones display darkened, burnished sole patterns where the driver's foot makes contact repeatedly."
+  },
+  "image_prompt": "Close-up fashion photography of Torsion Apex Street Racer shoes on a cyberpunk model's feet, shot from a low angle inside a dimly-lit underground garage. The model is positioned as if on a motorcycle or in a racing simulator, shoes angled to show the aerodynamic fin detailing along the ankle. Iridescent black material catches neon purple and cyan accent lighting, creating oil-slick color shifts. Dark concrete floor beneath, blurred augmented vehicle controls or racing rig in background. Moody, high-contrast lighting emphasizing the shoe's aggressive profile and the variable-texture sole. Shot against industrial metal and dark carbon fiber surfaces. Cyberpunk street racing aesthetic. --ar 2:3 --v 6"
 }

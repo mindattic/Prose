@@ -1,7 +1,7 @@
 @* Reusable multi-select tag filter dropdown.
    Usage: <TagFilter AllTags="tagList" SelectedTags="selectedSet" SelectedTagsChanged="callback" /> *@
 
-<div class="tag-filter-wrapper position-relative" @onfocusout="HandleFocusOut" tabindex="-1">
+<div class="tag-filter-wrapper position-relative" @onfocusout="HandleFocusOut" tabindex="-1" style="z-index:100;">
     <button class="btn btn-sm btn-outline-secondary w-100 text-start d-flex align-items-center"
             @onclick="ToggleOpen" @onclick:stopPropagation="true">
         <i class="bi bi-tags me-1"></i>
@@ -19,7 +19,7 @@
     @if (isOpen)
     {
         <div class="tag-dropdown bg-dark border border-secondary rounded shadow-lg position-absolute w-100 mt-1"
-             style="z-index:200; max-height:300px; overflow-y:auto;" @onclick:stopPropagation="true">
+             style="z-index:9999; max-height:300px; overflow-y:auto; pointer-events:auto;" @onclick:stopPropagation="true">
             <div class="p-2 border-bottom border-secondary">
                 <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
                        placeholder="Search tags..." @bind="tagSearch" @bind:event="oninput" />
@@ -94,6 +94,7 @@
             SelectedTags.Remove(tag);
         else
             SelectedTags.Add(tag);
+        isOpen = false;
         await SelectedTagsChanged.InvokeAsync(SelectedTags);
     }
 

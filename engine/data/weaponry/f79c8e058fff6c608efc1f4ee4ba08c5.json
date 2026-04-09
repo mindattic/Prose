@@ -39,5 +39,31 @@
     "escape_tool",
     "tier_2"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Bathysphere Networks",
+    "GLMZ",
+    "Iowan Behemoth — 'Thunderhead'",
+    "Ossuary Arms Memento Mori OA-3 'Wake'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, vertical canister resembling a compact water bottle or thermos. Cylindrical body with a slightly tapered shoulder leading to a ribbed deployment nozzle at the top. The overall silhouette reads as utilitarian and compact — designed for quick deployment rather than prolonged handling.",
+    "dimensions": "15 cm height × 5 cm diameter. Nozzle extension adds approximately 2 cm",
+    "weight_description": "Moderate density — notably heavier than a ballpoint pen but light enough for one-handed operation. The 180g mass feels purposeful and controlled in the palm, not burdensome",
+    "primary_material": "Aircraft-grade aluminum alloy canister with reinforced polymer deployment mechanism and pressure-sealed cap",
+    "finish": "Brushed aluminum with matte anodized coating — subtle metallic sheen without reflectivity. A thin bead-blasted texture reduces glare and improves grip",
+    "color_scheme": "Primary silver-gray anodized aluminum body with safety-orange pressure indicator stripe running vertically along the seam. Black deployment nozzle and cap with Kyūsei Chemical's teal-blue accent ring below the nozzle",
+    "grip_texture": "Textured polymer grip band wraps the mid-body — knurled surface with microscopic ridges for purchase even when palms are damp. Upper third remains bare brushed aluminum for heat dissipation",
+    "distinctive_features": [
+      "Pressure gauge indicator visible through a small transparent window on the lower third — glowing green when charged, amber when depleted",
+      "Directional spray nozzle with four micro-ports arranged in a slight cone pattern rather than a single jet",
+      "Relief vent holes near the cap base to prevent over-pressurization",
+      "Deployment trigger integrated into the nozzle ring — requires deliberate squeeze rather than a traditional lever",
+      "Manufacturing date and batch code laser-etched in fine characters along the upper aluminum body",
+      "Kyūsei Chemical's stylized kanji mark (京清) stamped in discrete teal ink on the lower shoulder"
+    ],
+    "manufacturer_markings": "Kyūsei Chemical's English-language logo and 'FOGWALL FW-2' designation appear as a printed label on the upper canister body, positioned to face the user's palm when held. Serial number and regulatory compliance stamps (GLMZ-approved, Tier 2+) on the lower third in small legible font",
+    "condition_typical": "Field-worn units show light micro-scratches in the anodized finish from pocket carry and brief contact with urban environments. Pressure gauge occasionally shows amber tinting from residual aerosol settling. The grip band may exhibit slight discoloration from extended sweat exposure. Well-maintained units retain the full silver-gray sheen with intact indicator stripe"
+  },
+  "image_prompt": "Product photography of the Kyūsei Chemical FogWall FW-2 defensive spray canister. Show the sleek brushed aluminum cylinder standing upright on a matte black surface, photographed from a 45-degree angle with dramatic side-lighting that emphasizes the anodized metallic finish and the safety-orange pressure stripe. Include a gloved hand (tactical glove, dark synthetic material) gripping the textured mid-body to show scale and ergonomics. Close-up detail of the teal-blue nozzle ring and deployment trigger mechanism. Backlighting to subtly highlight the transparent pressure gauge window, glowing amber against the dark background. Cyberpunk aesthetic: cool color temperature, minimal reflections, industrial minimalist staging. Japanese manufacturing aesthetic meets GLMZ tactical equipment. Shot in profile to emphasize the vertical silhouette and compact proportions. --ar 3:2 --v 6"
 }

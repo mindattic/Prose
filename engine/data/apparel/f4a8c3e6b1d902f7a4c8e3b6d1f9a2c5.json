@@ -44,5 +44,26 @@
   "related_entities": [
     "Dzemal Acholonu-Patagiri",
     "Tessera Industries Memory Rounds MR-2 'Recall'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively austere rain jacket with clean lines and minimal ornamentation. The silhouette is athletic but not fitted — designed to layer over tactical wear or office clothing without bunching. Storm hood stows at the collar on magnetic clasps, creating a seamless neckline when retracted. The overall impression is professional-grade outdoor gear, nothing that reads as 'protective' at first glance.",
+    "fit": "Relaxed through the shoulders and chest with subtle articulation at the waist and elbows. Designed for layering and mobility without excess fabric. Pit zips allow adjustment of internal microclimate. Sleeves taper slightly to prevent material bunching over wrists.",
+    "primary_material": "Outer shell: ripstop-weave synthetic polymer in matte finish. Inner backer: brushed micro-fleece for moisture-wicking and comfort. Hidden middle layer: proprietary ballistic-grade composite membrane (imperceptible to touch).",
+    "texture": "Outer shell is smooth and slightly waxy to touch, with a technical weave pattern visible only under close inspection. Inner fleece is soft and napped. Seams are sealed with thermal-bonded tape and have a subtle ridge when run across the grain.",
+    "color_scheme": "Flat anthracite grey (near-neutral, slight cool tone). Understated charcoal metal hardware on hood clasps and pit-zip pulls. No logos or brand marking on exterior.",
+    "closures": "Full-length YKK-equivalent coil zipper with an internal wind baffle. Magnetic clasp system on storm hood (dual points for secure retention without loose straps). Adjustable waist drawcord with friction-lock toggles. Pit-zip sliders for ventilation access.",
+    "distinctive_features": [
+      "Helmet-compatible storm hood with magnetic secure-point system",
+      "Sealed thermal-bonded seams throughout (no needle holes for water ingress)",
+      "Dual pit-zip ventilation ports with water-shedding geometry",
+      "Internal ballistic composite membrane (invisible, adds <8oz)",
+      "Subtle articulation panels at shoulders and elbows for mobility",
+      "Recessed chest pocket with secure magnetic closure",
+      "Minimal branding — Rheon Systems mark appears only on an inside pocket tag"
+    ],
+    "tier_indicator": "Tier 3-4 professional-grade. The price point (≈2,800 Φ) and performance specs are accessible to middle-tier workers, not corpo elite. No conspicuous luxury markers.",
+    "cultural_context": "The wearer signals competence in risk-aware fields: field journalism, corporate investigation, district politics, security contracting, emergency response. Wearing this suggests you work in environments where protection is pragmatic, not paranoid. It reads as 'prepared professional,' not 'armed combatant.'",
+    "condition_typical": "Rheon Systems TacShell Mark IVs are typically kept in clean, serviceable condition. Light weathering on the outer shell (water beads and sheds, so staining is minimal). Pit zips may show stress marks from repeated opening. After 12-18 months of field use, micro-scuffing appears on shoulders and forearms. The ballistic layer beneath remains flawless — it's designed to absorb punishment without degradation."
+  },
+  "image_prompt": "A cyberpunk model wearing a flat anthracite-grey Rheon Systems TacShell Mark IV jacket, positioned three-quarter view against a rain-slicked concrete wall in the GLMZ industrial sector. Storm hood stowed at collar, pit zips slightly open. Moody blue-grey tungsten lighting casting hard shadows. The model's subtle augmentation (a faint biolume subcutaneous line at the jawline) hints at professional corpo-adjacent work. Rain droplets bead off the technical outer shell. Minimal background detail: rusted fire escape, neon corporate signage blurred out of focus. Shot with shallow depth of field, emphasizing the clean geometry and ballistic-rated seams. --ar 2:3 --v 6"
 }

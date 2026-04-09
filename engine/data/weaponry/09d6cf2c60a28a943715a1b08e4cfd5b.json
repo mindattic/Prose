@@ -42,5 +42,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Idris Forsberg-Quaye",
+    "Nika Svensson-Kone",
+    "SynapTech Clarity Pro Neural Interface",
+    "TESSERA TC-3 'Crucible'",
+    "Yelena Okafor-Chen"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modular precision rifle with an oversized sensor pod dominating the upper receiver. The weapon presents as a fusion of optical instrument and firearm—angular, minimalist, with clean lines interrupted by jutting sensor arrays and thermal vents. The profile suggests surveillance equipment weaponized rather than a traditional sniper platform.",
+    "dimensions": "Overall length: 118 cm | Barrel: 61 cm | Sensor pod: 15 cm × 8 cm × 7 cm | Weight distributed toward the front due to integrated optics",
+    "weight_description": "Noticeably front-heavy (6.8 kg), with the sensor suite pulling the balance forward of the trigger group. Despite the heft, the ergonomic weight distribution feels almost balanced in supported firing positions. Unwieldy when unsupported, but purposefully designed for prone or bipod use.",
+    "primary_material": "Aerospace-grade aluminum chassis with carbon-fiber furniture; sensor pod housing is reinforced polymer composite with embedded thermal dissipation channels",
+    "finish": "Matte gunmetal gray on the receiver with brushed anthracite anodizing. The sensor pod features a subtle iridescent coating that shifts between deep blue and violet under direct light—a practical thermal management finish that also signals the weapon's advanced nature.",
+    "color_scheme": "Gunmetal gray primary | Anthracite accents | Iridescent sensor pod | Accent elements in Sterling-Nakamura's signature violet (BCI interface indicators)",
+    "grip_texture": "Textured polymer grip with subtle radial ridging; cold to the touch. The stock incorporates a soft rubberized cheek rest integrated with a micro-display housing",
+    "distinctive_features": [
+      "Asymmetrical sensor pod mounted on top of receiver with multiple lens apertures facing left, right, and forward",
+      "Four small heatsink fins arranged radially around the sensor pod junction",
+      "BCI neural interface contact points (three small platinum-coated pads) recessed into the stock beneath a removable access panel",
+      "Thermal vent striations along the left side of the lower receiver",
+      "Minimalist iron sights—thin, tucked, nearly invisible behind the sensor array",
+      "Violet LED indicator cluster (three lights) beneath the rear of the sensor pod, visible only from the operator's position",
+      "Modular power cell cartridge accessible via a quick-release panel on the right side of the chassis",
+      "Subtle wear patterns on the stock's cheek rest indicating heavy use",
+      "Faint circuit-board patterns etched into the aluminum receiver as manufacturer branding"
+    ],
+    "manufacturer_markings": "STERLING-NAKAMURA corporate logo stamped in micro-text along the left side of the lower receiver, barely visible unless light catches it. Serial number engraved on the power cell housing. Model designation 'SN-11' printed in small sans-serif font on the sensor pod itself. No overt branding—the design language speaks louder than logos.",
+    "condition_typical": "Well-maintained and field-worn; the finish shows light scuffing on the receiver from tactical use and careful handling. The sensor pod surface is pristine—protected obsessively by operators who understand the weapon's true value lies in its eyes, not its trigger. The stock shows patina from repeated contact with body armor and BCI neural interfaces."
+  },
+  "image_prompt": "Product photography of a Sterling-Nakamura Clarity SN-11 'Glass Eye' sniper rifle in matte gunmetal gray with iridescent violet-blue sensor pod. Weapon rests on its side across a dark composite surface, angled to display the dominant top-mounted multi-spectrum sensor array with its protruding lens apertures. Soft dramatic side-lighting from the left catches the brushed anodizing and highlights the thermal vent striations. The sensor pod's iridescent coating shifts between deep blue and violet in the light. Violet LED indicators glow faintly beneath the sensor assembly. No human present; weapon presents as surveillance instrument and precision firearm. Background is matte charcoal with subtle grid pattern suggesting a corpo testing facility. Cyberpunk aesthetic emphasizing sleek modularity, advanced optics, and neural interface technology. 2226 GLMZ corporate military aesthetic. --ar 3:2 --v 6"
 }

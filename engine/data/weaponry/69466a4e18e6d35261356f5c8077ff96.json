@@ -42,5 +42,35 @@
     "beginner",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Patient Zero",
+    "Ringo PD-1 'Citizen'",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, almost toy-like semi-automatic pistol with clean lines and a deliberately approachable aesthetic. The silhouette is classic and unadorned—a full-size training platform that looks more like precision sporting equipment than a weapon. Its proportions feel intentionally friendly, lacking the aggressive cant or tactical protrusions of duty weapons.",
+    "dimensions": "19 cm overall length, 12 cm grip height, 3.2 cm slide width. Barrel length: 10.2 cm.",
+    "weight_description": "Remarkably light in hand—0.38 kg feels almost insubstantial, almost plastic-toy-light. Perfectly balanced for extended training sessions, with no muzzle-heavy feel. Recoil impulse is barely perceptible.",
+    "primary_material": "Lightweight reinforced polymer frame with steel slide and barrel. Internal components are hardened steel.",
+    "finish": "Matte charcoal-gray polymer with brushed stainless steel slide. Deliberately unmarred and clean, giving it a medical or educational device appearance rather than combat aesthetic.",
+    "color_scheme": "Gunmetal gray frame with brushed silver slide. Minimal accent colors—perhaps muted teal or navy safety indicators.",
+    "grip_texture": "Lightly textured polymer grip with gentle stippling pattern. Ergonomic finger grooves. Not aggressive or tactical—more like high-end sporting equipment. Slightly warm to the touch.",
+    "distinctive_features": [
+      "Minimal control levers—simplified safety and slide release for new shooters",
+      "Magazine well with subtle witness holes showing round count",
+      "Crisp, easy-to-read sights—three-dot tritium setup in muted colors",
+      "Lightening cuts in frame visible through semi-translucent polymer",
+      "Recessed serial plate on left frame, deliberately small and unobtrusive",
+      "Extremely short trigger reset and take-up for accuracy training",
+      "Very slight forward serrations on slide—more aesthetic than functional"
+    ],
+    "manufacturer_markings": "Small 'NKOMO-LINDQVIST' text embossed on left frame in clean sans-serif font. 'NL-22 PEACEMAKER' engraved on right side of slide in italics. Serial number plate is recessed and modest. South African and Scandinavian small-print compliance markings on grip.",
+    "condition_typical": "Pristine or near-pristine—maintained like training equipment rather than field gear. Occasional use scratches on frame from range bag contact, but generally unblemished. The weapon looks educational, not battle-tested."
+  },
+  "image_prompt": "Product photography of the Nkomo-Lindqvist NL-22 'Peacemaker' .22 LR training pistol lying on matte black surface, slightly angled to show both profile and three-quarter view. Dramatic side-lighting from left reveals brushed steel slide and matte polymer frame contrast. Gloved hand (tactical synthetic material) gently resting on grip to show scale and ergonomics. Clean, educational aesthetic—the weapon appears almost like precision sporting equipment or training tool rather than combat firearm. Minimal cyberpunk augmentation visible on hand. Dark Studio backdrop with cool-toned side-light creating sharp shadows. High-resolution detail capturing the texture of polymer and steel finish. Cyberpunk 2226 aesthetic with training-grade, accessible design language. --ar 3:2 --v 6"
 }

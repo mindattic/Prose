@@ -60,5 +60,30 @@
     "The Pure Hand",
     "West Town Upside",
     "Yusra Ntambwe-Cakić"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purposeful silhouette designed for nocturnal infiltration. The reversible jacket dominates — slim and tailored, hitting mid-hip with a structured collar that conceals a deployable hood. Layered beneath is a fitted thermal base. The trousers are equally austere: narrow through the hip and thigh, with subtle reinforcement panels and integrated hardware channels that suggest function over form. The boots are minimalist and predatory. Overall impression: a ghost waiting to move.",
+    "fit": "Compression-adjacent without restriction. The jacket is slim but allows movement; the thermal underneath creates a second skin. Trousers are close-fit with strategic gussets for modified physiology. Everything moves with the wearer, nothing flaps or catches. Designed for maximum range of motion and minimum acoustic signature.",
+    "primary_material": "Ballistic synth-weave outer (navy/charcoal reversible), noise-dampening microfiber on all articulation points, bioluminescence-blocking bio-treated inner layer on thermal shirt, memory-foam sole, treated leather reinforcement panels",
+    "texture": "Smooth outer shell with barely-perceptible texture; seams are flat and sealed. Microfiber on zippers and edges feels almost slick to the touch. The thermal base has a soft, compressive feel. Heel-to-toe memory foam yields without sound.",
+    "color_scheme": "Primary: deep navy blue and charcoal grey (reversible). Secondary: matte black (thermal layer, trousers, boots). Accents: dark olive on trousers. No logos, no reflective elements, no visible stitching in high-contrast colors.",
+    "closures": "Silent-spec closures throughout: magnetic snaps and friction-fit systems on the jacket, no traditional zippers or velcro (replaced with microfiber-lined mechanical slides). Ankle wrap on boots uses reinforced friction straps, no buckles or metal hardware. Hood deploys via internal collar mechanism.",
+    "distinctive_features": [
+      "Reversible jacket design — full color/silhouette change in under eight seconds",
+      "Integrated balaclava hood that deploys from collar roll without removing jacket",
+      "Chest-mounted holster channels (left and right) shaped for chrome handguns",
+      "Flat document sleeve running along lower back interior",
+      "Hip-mounted battery pack housing with dual-routing conduit for chrome limb power",
+      "Bioluminescence-blocking outer treatment on thermal shirt — suppresses geneware glow when buttoned",
+      "Digitigrade gusset option in seat and thighs (for gene-modified runners)",
+      "Silent-edge hem cuffs that produce no rasp on surfaces",
+      "Thigh-holster integration on right leg",
+      "Recessed toe cap on boots — no protruding hardware",
+      "All microfiber-lined articulation points — zippers, seam edges, closures are acoustically inert"
+    ],
+    "tier_indicator": "Tier 3 functional with Tier 2 craftsmanship touches. Street-made, not corporate, but built with precision that suggests either a highly skilled single fabricator or a very small crew. The price point and anonymity place it in the working-class professional market — runners, fixers, night-shift operatives who can afford custom gear.",
+    "cultural_context": "Worn by nocturnal professionals: corporate infiltrators, data runners, black-market couriers, chrome-augmented operatives working off-books. The design philosophy screams 'I work in the dark and I don't want to be heard or remembered.' Wearing this says: I have skills, I have chrome, I have work that doesn't happen in daylight, and I can afford anonymity.",
+    "condition_typical": "Pristine when new; worn pieces show localized creasing at elbows, knees, and collar from repeated deployment cycles, but never torn or visibly damaged. Owners maintain these meticulously — a broken seam could mean death. After heavy use, the microfiber edges may show slight wear, and the memory foam sole develops subtle compression marks, but the silence signature remains intact."
+  },
+  "image_prompt": "Cyberpunk fashion photography: sleek androgenous model or dark mannequin draped in a reversible navy-to-charcoal slim insulated jacket, chest harnesses barely visible beneath, deployable hood coiled at collar. Fitted black thermal long-sleeve visible at neckline. Close-fit olive tech trousers with integrated thigh-holster channel. Matte black memory-foam boots with recessed toe caps. Half the frame shows the wearer mid-motion, jacket beginning to flip — the grey reverse just becoming visible. Moody tungsten and cool blue ambient lighting, hard shadows. Urban backdrop: rain-slicked alley, abandoned warehouse corner, or neon-edged Circuit District rooftop. Zero reflective surfaces, zero color pop — everything designed to dissolve into shadow. Cinematic, predatory, silent. --ar 2:3 --v 6"
 }

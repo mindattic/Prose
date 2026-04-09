@@ -54,5 +54,50 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Axiom Systems Synapse Interruptor SI-3 'Stutter'",
+    "Biometric Denial Charge BDC-1",
+    "Crucible Industries CT-X 'Gauntlet'",
+    "Djeneba Park-Traore",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Kamala Blomberg-Konadu",
+    "Nnenna Boateng-Szymański",
+    "Palladian Construction",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA SC-7 'Compliance'",
+    "TESSERA WL-6 'Stacker'",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "The Portico",
+    "Vantablack-CNX",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Yannick Tofauti-Szarvásy",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting combat gauntlet that extends from knuckles to mid-forearm, resembling a high-tech MMA glove crossed with a neural interface device. The surface gleams with internal crystalline structure visible beneath semi-translucent panels. It has an aggressive, surgical appearance—all precision edges and purposeful geometry.",
+    "dimensions": "Glove span: 22 cm (knuckle to wrist), forearm coverage: 15 cm, overall depth at palm: 4.5 cm, finger-to-fingertip: 10 cm",
+    "weight_description": "Surprisingly light and balanced despite the dense piezoelectric lattice—feels around 1.1 kg distributed across the entire hand and forearm, never accumulating dead weight at the strike point. Sits on the hand like precision sports equipment.",
+    "primary_material": "Rigid carbon-composite exoskeleton with embedded synthetic piezoelectric crystal arrays. Inner surface lined with conductive nano-mesh interface layer. Structural bracing uses aerospace-grade aluminum alloy.",
+    "finish": "Matte gunmetal gray primary with brushed titanium accent striping along knuckle guards and wrist reinforcement. Semi-translucent resin panels reveal faint geometric crystal lattice patterns beneath. Minimal reflectivity—designed for low-light tactical work.",
+    "color_scheme": "Gunmetal gray dominant, titanium silver accents, with faint blue-white glow from piezoelectric charging indicators visible in the palm and finger contact zones",
+    "grip_texture": "Inner surface features advanced textured polymer with micro-grip pattern, wrapped at wrist with thin medical-grade silicone band for secure positioning. Fingertip contact zones are smooth, conductive polymer for neural handshake interface.",
+    "distinctive_features": [
+      "Five small LED charge indicators running along the knuckle ridge—illuminate blue when buffered strikes are available",
+      "Semi-translucent crystal panels on dorsal surface revealing internal lattice geometry",
+      "Conductive contact nodes at each fingertip—subtle raised metallic points",
+      "Wrist-mounted neural interface pad with faint circuit etching",
+      "Heat dissipation vents along the forearm in geometric pattern",
+      "Impact-hardened knuckle guard with subtle Blackwood Commercial Group logo engraved",
+      "Micro-actuator texture on palm surface for optimal grip during discharge",
+      "Faint hairline cracks in the semi-translucent panels—intentional stress-relief design, not battle damage"
+    ],
+    "manufacturer_markings": "Blackwood Commercial Group logo subtly stamped on knuckle guard, barely visible in matte finish. Serial plate on inner wrist surface (typically hidden from view). Model designation PSDG-2 embossed along forearm brace in minimalist sans-serif font.",
+    "condition_typical": "Pristine, well-maintained. Corporate security weapons are regularly serviced and rarely show external wear. Charging indicators are routinely reset. The only sign of use is occasional micro-scratches on the impact zones and subtle discoloration where dermal interface contacts accumulate residue from repeated neural handshakes."
+  },
+  "image_prompt": "Professional product photography of the Piezoelectric Synaptic Disruption Gauntlet PSDG-2, displayed on a gloved tactical operator's hand against a dark matte black background. Dramatic side-lighting reveals the gunmetal gray finish and semi-translucent crystal lattice panels glowing faintly blue from charge indicators. Show the gauntlet from knuckle to mid-forearm, emphasizing the form-fitting ergonomic design and conductive fingertip contacts. Include subtle heat-venting geometry and the Blackwood Commercial Group branding. Cyberpunk aesthetic: clean, surgical precision mixed with bioluminescent tech. Shallow depth of field, bokeh background suggests corporate security environment. Shot from 45-degree angle to showcase the distinctive crystal panel geometry and internal lattice structure. --ar 3:2 --v 6"
 }

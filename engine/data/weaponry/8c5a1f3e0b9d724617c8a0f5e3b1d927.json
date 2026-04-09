@@ -45,5 +45,41 @@
     "licensed",
     "skill_required"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Carbon Fiber",
+    "Carrion Defense Works Neural Lash NL-3 'Agony'",
+    "Fanta Kato-Adomako",
+    "Fanta Pena-Baah",
+    "GLMZ",
+    "Ira Volkov",
+    "MERIDIAN",
+    "Plasmatic Induction Whip PIW-4 'Threadbare'",
+    "Slagworks Industrial",
+    "Solveig Tambadou-Kereselidze",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A hybrid melee weapon combining organic whip-like flexibility with mechanical precision—the braided cable flows from a compact, pistol-grip generator unit like a high-tech scorpion's tail. The exposed contact nodes along the cable's length create an almost skeletal appearance, interrupting the smooth braid at regular intervals.",
+    "dimensions": "Total length 1,600mm (140cm cable + 26cm handle). Cable diameter approximately 8mm. Handle grip width 4cm, depth 5.5cm. Ceramic tip 2.5cm diameter.",
+    "weight_description": "Balanced and deceptively light—the 520g generator unit feels substantial but well-distributed in the palm, while the 180g cable creates negligible drag during manipulation. Feels like controlled potential energy ready to deploy.",
+    "primary_material": "Tungsten-carbon fiber braided cable with aerospace-grade aluminum alloy handle frame and reinforced polymer grip casing. Ceramic weighted tip. Internal generator housing in milled steel.",
+    "finish": "Matte gunmetal gray on the handle unit with brushed aluminum accents around the contact nodes. The tungsten-carbon braid has a subtle iridescent sheen—almost charcoal with hints of silver depending on light angle. Ceramic tip is glossy charcoal with faint heat-stress micro-cracks.",
+    "color_scheme": "Primary: gunmetal gray and charcoal. Accents: brushed aluminum silver on node rings, faint electric-blue glow in the generator's LED status window (when active).",
+    "grip_texture": "Textured thermoplastic with shallow honeycomb pattern for moisture resistance. Slightly tacky, designed for gloved and bare-hand use equally. A raised ridge runs along the underside for index-finger anchor.",
+    "distinctive_features": [
+      "Seven exposed contact nodes spaced at 200mm intervals—polished aluminum rings that break the cable braid and crackle with residual static discharge",
+      "Compact generator unit with a small LED status indicator (green/amber/red for charge state) recessed into the handle's upper flange",
+      "Cable braid shows slight color variation where nodes interrupt—darker tungsten-rich sections between silver-aluminum contact rings",
+      "Ceramic tip has a subtle concave profile, designed to concentrate impact force and maximize electrical transfer on contact",
+      "Thin silver electrical trace visible along the underside of the top 5cm of cable where it exits the handle—primary power conduit",
+      "Micro-wear patterns on the grip from hundreds of practice cycles",
+      "Faint Kestrel Fabrications logo stamp on the handle's spine (5mm serif lettering)",
+      "Small regulatory compliance plate laser-etched on the generator housing: 'KF AW-1 | 80kV | LICENSED TIER 2+'"
+    ],
+    "manufacturer_markings": "Kestrel Fabrications serif-style logo (approx 8mm) stamped on the handle spine. Serial number engraved on the aluminum barrel collar where cable meets handle. Compliance and voltage rating plate on the generator's side face in laser-etched text.",
+    "condition_typical": "Well-maintained by serious users—the cable shows minimal fraying, contact nodes gleam from regular cleaning, and the grip has patina from regular handling but no cracks. Battle-worn examples show scorched braid sections from mishandled discharges and micro-pitting on the ceramic tip. Field-grade units often accumulate scratches and coating wear on the generator housing."
+  },
+  "image_prompt": "Product photography of the Kestrel Fabrications AW-1 'Liveline' arc whip—weapon laid in a loose coil on matte black reflective surface, generator handle prominent in center frame, cable arranged to show the seven exposed aluminum contact nodes spaced along its length, ceramic tip positioned at frame edge. Gloved hand (chrome-augmented fingers, tactical gray glove) gently holding the handle grip from above. Dramatic side-lighting from upper left emphasizing the iridescent tungsten-carbon braid and casting sharp shadows across the contact nodes. Cool blue-white accent light on the generator's LED status window. High-contrast cyberpunk aesthetic. Product photography style, sharp focus, shallow depth of field. Materials: brushed aluminum, matte gunmetal, charcoal ceramic. --ar 3:2 --v 6"
 }

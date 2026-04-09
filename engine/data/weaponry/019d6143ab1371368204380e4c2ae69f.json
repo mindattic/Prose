@@ -38,5 +38,34 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Charnel Propulsion",
+    "Nika Svensson-Kone",
+    "Tessera Corponation Palimpsest Identity Engine",
+    "The Riveters' Round",
+    "Vantablack FH-20 'Convoy'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist cartridge with an aggressive, military aesthetic. The round presents as a massive cylindrical projectile with a pronounced ogival tip and a distinctly segmented body — the separation between conventional and rocket-boosted stages is visibly marked by a circumferential seam and heat-scorched aluminum ring. The entire assembly has the menacing geometry of purpose-built destruction.",
+    "dimensions": "Overall length: 127mm. Bullet diameter (20mm tungsten penetrator): 20.3mm. Case length: 98mm. Rocket motor housing diameter: 22mm. Appears oversized even compared to other anti-materiel rounds.",
+    "weight_description": "Exceptionally dense and hefty — 180g creates a substantial feel despite compact form factor. The tungsten penetrator core loads forward weight, creating an unbalanced, nose-heavy impression that suggests kinetic power.",
+    "primary_material": "Tungsten carbide penetrator core, brass composite case with embedded aluminum alloy rocket motor housing. Structural integrity reinforced with carbon-polymer sabot collar.",
+    "finish": "Satin brass casing with oxidized dark patches from manufacturing heat stress. The rocket motor section features a distinctive burnt-orange anodized aluminum collar. Tungsten tip has a gunmetal gray, slightly textured finish from tungsten carbide working.",
+    "color_scheme": "Burnished brass primary, charcoal-gray tungsten penetrator, burnt-orange rocket motor band accent. Subtle scorch marks and carbon streaking suggest field use or bench-testing.",
+    "grip_texture": "Not applicable — designed as a magazine-loaded projectile. The case neck features subtle knurling for loading assistance.",
+    "distinctive_features": [
+      "Visible circumferential seam marking stage separation point at 50mm mark",
+      "Burnt-orange anodized aluminum rocket motor housing ring",
+      "Etched serial number array on case side (ADS-KIR10-5STAGE nomenclature)",
+      "Shallow concentric grooves around ogival tip for aerodynamic stability",
+      "Microscopic ablation scarring on penetrator tip from velocity testing",
+      "Hermetically sealed rocket motor ignition port (threaded brass plug)",
+      "Propellant charge inspection window on aft section (transparent polymer inlay)"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo embossed on brass case at midpoint. Text reads: 'ARCTURUS KIR-10 HAMMERFALL | 20MM | DUAL-STAGE | MIL-RESTRICTED' in 2mm serif lettering. Serial batch code stamped in tiny characters on the aluminum rocket collar. NATO compliance marking laser-etched on penetrator.",
+    "condition_typical": "Field-ready, pristine specimens show minimal wear; however, ammunition typically exhibits micro-oxidation on brass casings and slight polymer discoloration from thermal cycling in combat conditions. Storage marks from magazine compression visible on sabot collar."
+  },
+  "image_prompt": "Professional weapons catalog photograph of the Arcturus KIR-10 'Hammerfall' 20mm kinetic impactor round. The cartridge is positioned horizontally on a matte black steel surface, slightly angled to showcase the two-stage separation seam and burnt-orange rocket motor collar. Dramatic side-lighting from the left creates sharp shadows defining the ogival tungsten penetrator tip and emphasizes the material transitions between brass casing and anodized aluminum sections. The penetrator tip catches cool rim-light. Shallow depth of field keeps the round in sharp focus. Hyperrealistic detail showing serial markings, ablation scarring on the tip, and the faint propellant charge inspection window. Cyberpunk aesthetic: cool color grading with slight teal tint in shadows, slight chromatic aberration at edges, subtle holographic lens flare suggesting military targeting systems. Technical overlay visible in corner (barely): ballistic trajectory data. Stealth-tech matte textures contrasted against polished metals. --ar 3:2 --v 6"
 }

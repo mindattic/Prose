@@ -35,5 +35,24 @@
     "blazer",
     "aug_compatible",
     "BCI_compatible"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A refined, understated blazer with a modern relaxed silhouette. The deep navy reads as sophisticated without ostentation. Sits with gentle authority on the shoulders, avoiding the aggressive tapers of corpo wear while maintaining structure. The single-button closure creates a clean, uncluttered front panel.",
+    "fit": "Slightly relaxed through the shoulder and chest, with enough room to accommodate cybernetic augmentation without bunching. Tapers subtly at the waist. Sleeves have a gentle drop that works for both standard and augmented limbs. Not tailored-tight, but far from oversized — calibrated for working professionals.",
+    "primary_material": "Premium ponte knit fabric — a stable poly-blend composite that holds its shape while offering slight give. Treated for mild stain resistance and temperature regulation.",
+    "texture": "Smooth surface with barely-visible ribbing at close inspection, particularly along the upper back and sleeves. The weave has a soft sheen without gloss — catches light subtly.",
+    "color_scheme": "Deep navy with charcoal undertones. Entirely monochromatic; the design relies on cut and material quality rather than contrast.",
+    "closures": "Single mother-of-pearl or composite button at chest. Friction-fit sleeve cuffs. Clean, minimal hardware.",
+    "distinctive_features": [
+      "BCI-port lined interior pocket — allows inductive charging of neural interface devices",
+      "Chrome-compatible shoulder architecture — internally reinforced to accommodate augmentation weight distribution",
+      "Discreet woven label inside neck — Verath & Lund mark only, no flashy branding",
+      "Slight asymmetrical hem wear pattern typical of Tier 3 professional use",
+      "Interior cell-lined for signal mitigation"
+    ],
+    "tier_indicator": "Tier 2–3 crossover. High-quality workmanship and material costs suggest affluent working class or lower-tier corpo. The lack of status signaling reads as confidence rather than poverty.",
+    "cultural_context": "Worn by augmented professionals, biotech sector employees, mid-level corpo managers, and augmentation technicians who need both credibility and practical functionality. Signals competence and accessibility — you're important but not untouchable.",
+    "condition_typical": "Pristine or gently broken-in. Verath & Lund quality means it ages slowly. Minor thread wear at cuffs after 18+ months of use is expected and accepted."
+  },
+  "image_prompt": "High-fashion cyberpunk product photography of a deep navy Verath & Lund ponte blazer displayed on a matte black augmented mannequin with visible chrome shoulder articulation. Overhead moody lighting casts subtle shadows across the fabric's fine ribbing. Background: blurred neon signage reflecting off wet GLMZ street pavement, suggesting late evening in a biotech district. The mannequin's posture is confident but approachable. Close detail shot of interior pocket lining shows faint BCI circuitry patterns. --ar 2:3 --v 6"
 }

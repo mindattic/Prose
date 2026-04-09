@@ -43,5 +43,25 @@
     "The Bazaar",
     "The Underlayer Collective",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, militaristic bodysuit with pronounced angular shoulders and a tapered waist. The matte charcoal base creates a shadow-like silhouette broken only by high-vis amber accent panels running across the shoulders and upper back. Reads as 'armed professional' — intimidating but refined, not brutish.",
+    "fit": "Compression-tailored through the torso and limbs, allowing full mobility without excess fabric. The chest and shoulders are slightly built-up by internal plating, creating a subtly armored profile. Collar is wide and sits high on the neck.",
+    "primary_material": "Graphene-weave composite bonded to rigid UHMWPE (ultra-high-molecular-weight polyethylene) plate inserts at critical impact zones. Outer facing is treated synthetic microfiber for ballistic abrasion resistance.",
+    "texture": "Smooth, almost laminated surface with faint woven pattern visible under direct light. Plate areas have slightly raised edges where bonding seams run. Conductive thread tracery is subtle but tactile along major seams.",
+    "color_scheme": "Dominant matte charcoal-gray with Arcturus signature high-vis amber stripes running horizontally across shoulder panels and upper back. No logos visible — the uniform itself is the brand marker.",
+    "closures": "Magnetic snap system down the front centerline with friction-fit reinforcement panels. Wrist and ankle cuffs use micro-tension bands. Reinforced tail-loop seam at posterior hem for compatibility with rear-mounted augmentation.",
+    "distinctive_features": [
+      "Pre-cut neural interface ports at left forearm and base of skull (standard-grade BCI compatible)",
+      "Double-stitched conductive threading routing biomonitor data throughout",
+      "Reinforced posterior seam loop for geneware-modified spinal hardware",
+      "UHMWPE plate inserts at chest, shoulders, and forearms with visible bonding edges",
+      "Wide collar clearance for grade-standard horn implants",
+      "High-visibility amber banding that serves as visual intimidation and zone identification"
+    ],
+    "tier_indicator": "Tier 2 corporate authority — too refined and expensive for working-class wear, but militant enough to signal enforcement rather than leisure or service roles.",
+    "cultural_context": "Arcturus CorpSec contractor uniform. Wearer is an armed security professional with legal authority in Tier 2 zones. Street reading: enforcement, surveillance, not to be crossed. Off-duty wearing in Tier 1 zones carries implicit threat value.",
+    "condition_typical": "Pristine when issued; worn examples show scuff marks on plates and fading of amber trim from ambient ionization. Conductive seams may show minor discoloration from biomonitor signal stress."
+  },
+  "image_prompt": "Arcturus CorpSec Tier-2 Response Uniform on a muscular, augmented model in a dark rain-slicked corporate corridor. Matte charcoal compression bodysuit with high-visibility amber shoulder panels and visible UHMWPE plating at chest and shoulders. Wide tactical collar, reinforced forearm ports glowing faintly with bioluminescent neural interface markers. Moody blue and amber neon backlighting creating sharp shadows across the figure. Close detail shot showing conductive thread seams and bonded plate edges. Ultra-modern, intimidating, precise. --ar 2:3 --v 6"
 }

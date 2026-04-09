@@ -71,5 +71,25 @@
     "The Nearfield",
     "The Quiet Room",
     "Vantablack Media Subvocal Ghost Codec — 'The Murmur'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A discrete tactical system consisting of a rectangular processor unit paired with a segmented collar array. The chest unit resembles a reinforced tech pack with subtle ergonomic curves; the collar appears as eight small hemispherical emitter pods distributed around a flexible retention band, designed to sit snug against the base of the neck and shoulders.",
+    "dimensions": "Processor unit: 19cm × 12cm × 4.5cm (thick paperback form factor). Collar array spans approximately 36cm circumference with individual emitters 2.8cm diameter.",
+    "weight_description": "0.9kg total system weight — handheld in palm (processor alone), but worn distributed across chest and neck for balance. Light enough for all-day wear under tactical gear.",
+    "primary_material": "Processor housing: brushed titanium-composite with rubberized grip panels. Emitter collar: flexible smart-polymer backbone with ceramic acoustic nodes. Internal casing: anodized aluminum frame.",
+    "finish": "Matte anthracite with subtle oil-slick iridescence on emitter domes. Processor displays industrial mil-spec texture; collar band has soft-touch non-slip coating. Light weathering typical on field units.",
+    "color_scheme": "Primary: gunmetal gray and black. Accent: emerald status LEDs on processor face, faint cyan glow from active emitter nodes during operation. Manufacturer branding in matte silver.",
+    "interface_elements": "Processor unit features: small 3.8cm monochrome OLED status display, three recessed mechanical buttons (power, mode, calibrate), three 2mm diagnostic ports, battery indicator LED array (8-segment). Collar: no direct user interface — connects via flex-ribbon.",
+    "distinctive_features": [
+      "Eight hemispherical emitter pods with barely-visible acoustic mesh intake ports",
+      "Modular quick-disconnect emitter nodes — field-replaceable without tools",
+      "Predictive algorithm indicator: pulsing blue LED when gait-lock is acquired",
+      "Minimal visible branding — deliberately understated 'industrial safety' aesthetic",
+      "Harmonic resonance venting ports on processor dorsal surface (prevent feedback whine buildup)",
+      "Flexible spine connecting collar to processor allows natural movement under clothing"
+    ],
+    "manufacturer_markings": "Tessera Corporation circular logo (small, rear-facing) and 'Murmur-3' designation in conservative sans-serif on processor. Legal gray-zone labeling: 'Industrial Acoustic Suppression System' with regulatory compliance marks (real or cosmetic).",
+    "condition_typical": "Field units show scuff marks on processor casing, slight discoloration around emitter domes from acoustic dampening material exposure. Battery indicator LED often dim (4-5 segment glow indicates worn power cell). Collar band may show creasing from being worn under jackets. Some units display faint scratches from rapid deployment."
+  },
+  "image_prompt": "Flat-lay product photography of a Murmur-3 acoustic suppression system on a brushed steel workbench. Processor unit dominates foreground with collar array uncoiled behind it, emitter nodes catching dramatic sidelight to reveal subtle ceramic texturing. Cool cyberpunk lighting — single hard cyan key light from upper left, creating sharp shadows, with ambient neon blue and deep purple backlight spilling across the surface. Shallow depth of field keeps emitter pods in soft focus. Include a gloved hand (chrome-knuckled) adjusting one modular emitter node mid-change. Weathered workbench surface with tool marks, faint hydraulic stains. Minimalist, tactical aesthetic — no distracting props. Product shot with manufacturer precision but worn field-usage patina. Cyberpunk GLMZ setting implicit in color palette and lighting design. --ar 3:2 --v 6"
 }

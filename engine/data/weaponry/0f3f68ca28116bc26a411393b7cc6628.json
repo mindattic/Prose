@@ -45,5 +45,39 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus VMG-4 'Turret'",
+    "Aslan Blomberg-Konadu",
+    "Concrete",
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "Ringo RM-4 'Thresher'",
+    "TESSERA ES-4 'Perimeter'",
+    "Vantablack FH-20 'Convoy'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist industrial weapon system with a pronounced boxy receiver and prominent belt feed mechanism. The MGL-8 reads as pure mechanical function — no aesthetic concessions, all aggressive angles and utilitarian protrusions. Its silhouette is dominated by the wide ammunition housing and the chunky barrel assembly that dominates the profile.",
+    "dimensions": "127 cm overall length, 38 cm barrel length, 42 cm width across feed system, 34 cm height at receiver",
+    "weight_description": "Formidable and anchored — 28 kg feels substantial and unyielding in a mounting cradle, designed for crews not individuals. The weight is distributed across a wide footprint, creating a stable but unmovable presence.",
+    "primary_material": "Stamped steel receiver with tungsten-reinforced barrel assembly, aluminum alloy feed housing for weight optimization without sacrificing durability",
+    "finish": "Military matte black oxide coating with industrial wear patterns visible at stress points and contact surfaces. Chrome-lined bore visible through barrel opening. Underlying steel shows through high-friction areas.",
+    "color_scheme": "Flat tactical black primary, with exposed brushed steel and chrome highlights at mechanical interfaces. Faint factory stenciling in gray on the receiver.",
+    "grip_texture": "Rubberized cold-weather grip pads at the dual spade handles, textured to prevent slipping under recoil. Bare steel mounting points where the tripod or gimbal interface accepts the weapon.",
+    "distinctive_features": [
+      "32-round disintegrating belt visible in open-sided feed mechanism with color-coded ammunition indicators (yellow, red casings)",
+      "Hydraulic recoil cylinder running parallel to barrel with pressure relief markings",
+      "Dual spade-grip handles positioned low and wide for crew stability during sustained fire",
+      "Rapid-traverse mounting gimbal base with degree-marking scales for targeting coordination",
+      "Heat vents cut into the receiver around the chamber area with visible scoring from thermal cycling",
+      "Heavy-duty feed cover with quick-release lever and ammunition counter dial",
+      "Integral muzzle brake assembly with perforated steel shroud showing carbon scoring",
+      "Cable routing for electric trigger solenoid visible along left side"
+    ],
+    "manufacturer_markings": "ZHENG-DAO HEAVY INDUSTRIES stamped in deep relief on both sides of the receiver. Serial plate mounted on right side of frame with manufacturing date (2219) and compliance stamp showing military-only designation. Cautionary symbols in multiple languages etched near firing mechanism.",
+    "condition_typical": "Field-worn with carbon scoring around the muzzle and thermal discoloration on the barrel shroud. Hydraulic fluid residue at seal points. Ammunition belt show handling marks from repeated loading cycles. The weapon operates until failure — maintenance is reactive, not preventive, in most deployments."
+  },
+  "image_prompt": "Product photography of a Zheng-Dao MGL-8 'Thresher' grenade launcher mounted on a tactical rig, positioned at 45-degree angle on a dark industrial gunmetal surface. Dramatic side-lighting casting deep shadows across the belt-feed mechanism and receiver. Close detail of the disintegrating 32-round belt visible, color-coded ammunition casings reflecting cool overhead LED light. Emphasis on the matte black oxide finish, exposed hydraulic recoil cylinder, and dual spade-grip handles. Cyberpunk military aesthetic, showing fatigue marks and thermal scoring from sustained fire cycles. Professional defense contractor catalog style, no human figures. --ar 3:2 --v 6"
 }

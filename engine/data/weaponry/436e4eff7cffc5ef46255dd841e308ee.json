@@ -43,5 +43,34 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Lazarus APC-2 'Locust'",
+    "Lazarus LP-3 'Clinic Spider'",
+    "Nika Svensson-Kone",
+    "Stainless Steel",
+    "Tessera Corponation",
+    "Zurab Ivanov-Appiah"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular submachine gun with an organic, almost insectoid aesthetic. The chassis tapers from a bulbous receiver housing to a slender, knife-like muzzle. Its proportions suggest precision engineering rather than brute force — compact, purposeful, built for surgical application rather than suppressive fire.",
+    "dimensions": "Overall length: 32cm | Barrel length: 12cm | Width at receiver: 6cm | Height: 8cm",
+    "weight_description": "Light and balanced — 1.4kg feels almost insubstantial in hand, with weight distributed forward toward the electromagnetic capacitor assembly. Maneuvers like rapid target acquisition require minimal effort.",
+    "primary_material": "Titanium-aluminum composite frame with reinforced polymer grip sections. The receiver housing is brushed aerospace-grade aluminum to dissipate electromagnetic interference. Muzzle shroud is carbon-weave composite.",
+    "finish": "Matte gunmetal gray with subtle iridescent oil-slick patterns from the electromagnetic field resonance. The finish has a slightly frosted quality where capacitor venting creates micro-abrasions in the material.",
+    "color_scheme": "Gunmetal gray primary with accent colors in electric cyan at the charging port and flechette cassette interface. Status indicator LEDs glow pale blue when armed.",
+    "grip_texture": "Rubberized polymer with microscopic grip-assist texturing. The palm swell is wrapped in thin synthetic leather for moisture management. Trigger guard is textured steel for gloved operation.",
+    "distinctive_features": [
+      "Twin electromagnetic coil housings visible as subtle vents along the barrel assembly",
+      "Flechette cassette port with quick-change mechanism on the left side — curved ergonomic design for one-handed reload",
+      "BCI neural-link contact pad recessed into the top rail — six small copper contacts arranged in a neural-pattern configuration",
+      "Charging port on the right side with a keyed connector for the proprietary power cell tether",
+      "Muzzle features a three-chambered spread-control aperture with visible electromagnetic focusing rings",
+      "Wear pattern: minor carbon scoring near the flechette ejection port from micro-particle discharge",
+      "Subtle etching along the receiver: 'NovaMind TSM-4 LOCUST | 2224 | Φ11000'"
+    ],
+    "manufacturer_markings": "NovaMind Consumer Division logo (stylized 'Ψ' in a diamond outline) stamped on the receiver just forward of the grip. Serial number laser-etched on the bottom rail. Property stamp for registered users appears on the magazine port.",
+    "condition_typical": "Well-maintained, field-ready. Minor carbon buildup near electromagnetic vents. Flechette cassette shows evidence of frequent changes. No battle damage — designed for close-protection work where operators prioritize weapon care."
+  },
+  "image_prompt": "Product photography of the NovaMind TSM-4 Locust micro-PDW, lying on a dark brushed-steel surface at a slight angle. Dramatic side-lighting from upper left, highlighting the electromagnetic coil vents and the blue status LED glow. Close-up detail on the flechette cassette interface and BCI contact pad. Shallow depth of field with the muzzle in sharp focus. Cyberpunk aesthetic: cool color temperature, subtle neon cyan accent lighting reflecting off the titanium-aluminum composite. Show a proprietary power cell tether coiled nearby. Highly detailed, product catalog style. --ar 3:2 --v 6"
 }

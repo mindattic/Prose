@@ -53,5 +53,41 @@
     "circuit",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "GLMZ",
+    "Glenville Sound",
+    "Ihaia Nystrom-Keita",
+    "Ilhan Sandstrom-Badu",
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "Lazarus Pharmaceuticals Splanchnic Triage Automaton",
+    "Nenad Vargas-Baffour",
+    "Sinan Vasquez-Chatterjee",
+    "TESSERA PG-2 'Signature'",
+    "The Signal",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A chunky, asymmetrical instrument that straddles the line between industrial survey tool and directed-energy weapon. The wide dual-emitter head dominates the front, giving it a blunt, almost brutalist silhouette. The pistol grip and frame recede behind, making it front-heavy and purpose-built rather than ergonomic.",
+    "dimensions": "58cm total length, 21cm width at emitter head, approximately 12cm depth at grip. Dual emitter apertures separated by 8cm.",
+    "weight_description": "Hefty and unbalanced — 4.7kg concentrated forward in the emitter assembly. Feels planted and deliberate in hand, requiring two-handed control. The weight bias makes it feel less like a gun and more like a tool being wielded.",
+    "primary_material": "Brushed titanium-alloy frame with reinforced polymer heat-sink housing around the emitter head. Internal radiator fins visible through vented panels.",
+    "finish": "Matte gunmetal gray with industrial weathering — scuff marks from field use. The emitter head has a subtle iridescent heat-treatment sheen (titanium oxide layer). Wear patterns show heavy handling around grip and dial.",
+    "color_scheme": "Dominantly gunmetal gray with charcoal polymer accents. Accent trim in deep blue anodized aluminum around power cell housing and rotary dial. Faint manufacturer stamps in silver.",
+    "grip_texture": "Textured polymer with integrated finger grooves, slightly tacky from thermal management compound. The rear grip wraps around the power cell housing with raised rubber ribs for positive purchase even in wet conditions.",
+    "distinctive_features": [
+      "Large rotary dial on starboard side with tactile detents for vortex intensity/frequency adjustment — marked 40, 120, 240, 480, 800 RPM",
+      "Dual circular infrared emitter apertures (8mm diameter each) recessed 4mm into the head, with cooling fins radiating outward",
+      "Three soft-glow LED status indicators (cyan, amber, red) along the top spine indicating charge state and coherence lock",
+      "Ventilation grilles along the sides of the emitter head, often darkened by thermal residue",
+      "Heavy-gauge power cell cartridge visible through transparent polymer window on grip — internal components barely visible but suggest active cooling loops",
+      "Integrated flip-up iron sights (purely mechanical, no electronic dependency) mounted on the upper rail",
+      "Deep machining marks from CNC fabrication visible on the frame, intentionally left unpolished for grip texture",
+      "Faint resonance scoring on the emitter head from repeated thermal cycling — hairline fractures in the anodize layer"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo stamped in silver on the left side of the grip housing, with serial plate mounted on the underside of the frame. Small 'INDUSTRIAL PROTOTYPE — NOT FOR CONSUMER USE' warning text laser-etched above the trigger guard in English and Mandarin characters, partially worn.",
+    "condition_typical": "Field-worn but meticulously maintained. The Millstone appears in black market hands, so cosmetic damage is expected but mechanical condition is usually excellent — users understand the physics involved and respect the tool's precision requirements. Thermal cycling stains around the vents, minor gouges on the grip, but no internal degradation. Occasional jury-rigged modifications: aftermarket battery leads, custom mounting brackets, or reinforced emitter shrouds."
+  },
+  "image_prompt": "Product photography of a Zheng-Dao STVP-2 'Millstone' thermal vortex projector resting on a dark carbon-fiber surface, shot from a 45-degree angle. The weapon's dual emitter head is in sharp focus, showing the recessed apertures and cooling fins with subtle iridescent heat-treatment shimmer. Dramatic side-lighting from above-left creates sharp shadows across the matte gunmetal frame and highlights the textured polymer grip. The large rotary dial is clearly visible, marked with RPM increments. A gloved hand (synthetic polymer, matte black) grips the pistol-grip from the right side, fingers on the trigger guard. The LED status indicators glow soft cyan along the top spine. The background is pure black with light atmospheric haze suggesting industrial air. Cinematic cyberpunk color grading with cool blue and amber accent tones. High detail on material surfaces — weathering, thermal residue on vents, machining marks on frame. Shot as a product catalog image for black market weapons dealers. --ar 3:2 --v 6"
 }

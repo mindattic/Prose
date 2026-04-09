@@ -37,5 +37,25 @@
     "Nnamdi Ostrowski-Faletolu",
     "The Shelf",
     "The Spire"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A knee-length formal dress with graceful crepe drape that suggests careful maintenance despite visible history. The silhouette is elegant and understated — neither corpo-sleek nor street-rough, but deliberately preserved. On the wearer, it reads as intentional formality: someone who understands the power of showing up dressed.",
+    "fit": "Tailored through the bodice with a gently flared skirt. Not tight, not loose — designed to move with dignity. The fit accommodates varied body types and allows for layering underneath, practical for unheated Shelf environments.",
+    "primary_material": "Synthetic crepe — mid-grade polymer blend with enough weight to drape without clinging. Originally produced as Tier 2-3 mass-market formal wear, now fragile with age but still serviceable.",
+    "texture": "Smooth crepe surface with a subtle crosshatch weave visible in direct light. The fabric has developed a soft patina from handling and cleaning. Seams are visible, evidence of repair work. The overall texture conveys care rather than wear.",
+    "color_scheme": "Deep charcoal or navy base — practical for hiding age and stains. The back hem features two visible repair lines: one in black thread (older, slightly puckered), one in pale copper or warm gold tone (newer, slightly uneven but intentional-looking). These repairs are not hidden; they are witnessed.",
+    "closures": "Original side or front invisible zipper (if functional), replaced back closure using salvaged hook-and-eye hardware — brass or copper-toned, slightly oxidized. The transition is visible but handled with care, not crude.",
+    "distinctive_features": [
+      "Double-stitched hem repairs in contrasting threads that read as deliberate rather than desperate",
+      "Salvaged hook-and-eye back closure (3-4 clasps) replacing original zipper",
+      "Reinforced seams at stress points (shoulders, armholes)",
+      "Hand-pressed creases that suggest careful storage",
+      "Faint wear marks consistent with multiple wearing occasions",
+      "No branding or logos — anonymity is its own statement"
+    ],
+    "tier_indicator": "Tier 1-2 formal-adjacent; worn by Tier 3-4 individuals on occasions that demand presentation. The garment's history makes it Tier 5 by origin, but the care taken elevates its context.",
+    "cultural_context": "Shelf dignity. This is worn to Synthetic Personhood hearings, housing tribunals, custody reviews, job interviews for positions just outside reach, funerals for people the wearer loved. Wearing it says: I understand the rules of this room, I respect the gravity of this moment, I am here as a full human regardless of my tier. The visible repairs are not shame — they are evidence of resourcefulness and care.",
+    "condition_typical": "Meticulously maintained but not pristine. Creases are set, hem is secure, hooks are functional. Under Shelf lighting (dim, often flickering) it appears formal. Under bright light, the repairs are obvious and beautiful. The wearer knows both truths and accepts them."
+  },
+  "image_prompt": "A woman of mixed heritage wearing a deep charcoal synthetic crepe dress, standing in the harsh fluorescent light of an administrative waiting room or hearing hall. The dress is knee-length with visible hand-stitched hem repairs in contrasting threads — black and pale copper — that suggest intentional care rather than damage. A salvaged brass hook-and-eye closure is visible at the back. The fabric drapes with quiet dignity despite its age. Mood: formal, somber, resolute. The woman's posture is upright, hands clasped. Cyberpunk aesthetic but grounded — no excessive chrome, focus on quiet resilience. Dark urban backdrop, institutional lighting. Shot from mid-thigh up to show the full dress and the wearer's composed expression. --ar 2:3 --v 6"
 }

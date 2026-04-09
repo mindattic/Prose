@@ -54,5 +54,23 @@
     "The Signal",
     "Vantablack-CNX",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, predatory-looking cube with aggressive aesthetic cues. Black anodized aluminum housing with sharp, angular edges that suggest danger. The form factor evokes a spider's body — deliberately unsettling, designed to intimidate if discovered. Top surface features a recessed LED array arranged in a pattern resembling compound eyes.",
+    "dimensions": "8cm × 8cm × 6cm (roughly a deck of cards standing on edge)",
+    "weight_description": "Pocketable — approximately 100 grams, light enough for concealment in gear or mounted under furniture",
+    "primary_material": "Matte-black anodized aluminum chassis with carbon fiber reinforcement panels",
+    "finish": "Brushed black with oil-slick iridescent accents on beveled edges; anti-reflective coating to minimize visibility in low light",
+    "color_scheme": "Deep matte black primary with crimson LED indicators and faint violet accent lines tracing circuit patterns across the surface",
+    "interface_elements": "Recessed 0.8cm touchpad on top surface (barely visible); micro-USB diagnostic port on underside (tamper-sealed); three tiny status LEDs (green standby, red active, violet intrusion detected); minimal labeling — only a stylized spider web icon embossed above the touchpad",
+    "distinctive_features": [
+      "Eight symmetrically-drilled ventilation ports arranged like fangs on the front face",
+      "Soft crimson glow emanating from internal LED array when armed, visible through semi-translucent black resin accent strip",
+      "Asymmetrical weight distribution creating a naturally predatory appearance when viewed from angles",
+      "Ultra-minimal design language — almost no visible screws, suggesting sealed/irreparable construction"
+    ],
+    "manufacturer_markings": "Tiny 'Street Custom' logo (stylized SC in angular script) etched into underside; no regulatory stamps (characteristic of Tier 2-3 street-manufacture); hand-stamped serial number suggesting small-batch production",
+    "condition_typical": "Sits inert and dark on a network perimeter, almost invisible until armed — then emits barely-perceptible crimson pulse; shows fingerprint oils and dust accumulation from field use; may have small scratches or dents from rough handling in urban environments"
+  },
+  "image_prompt": "Close-up product shot of a matte-black cube-shaped cyberpunk honeypot device on a grimy workbench, surrounded by scattered circuitry and hacking tools. Crimson LED glow emanating from internal mechanisms, visible through accent lines. Dramatic side-lighting emphasizing angular edges and threatening geometry. Moody violet and amber workshop lighting. Ultra-detailed texture showing anodized aluminum grain. Spider-web motif barely visible. Cyberpunk noir aesthetic, cinematic. Shot at eye level, shallow depth of field. --ar 3:2 --v 6"
 }

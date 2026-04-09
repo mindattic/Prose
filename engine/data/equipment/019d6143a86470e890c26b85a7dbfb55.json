@@ -69,5 +69,24 @@
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
     "The Pure Hand",
     "The Shaft"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, predatory aerial platform with a serpentine fuselage and swept-back delta wing geometry. The hull resembles a flattened teardrop optimized for thermal penetration. Ducted fan arrays dominate the undercarriage, arranged in counter-rotating pairs. Heat-exchange fins crown the fuselage crown. Distinctive upswept winglets contain thermal sensors and venting slots.",
+    "dimensions": "5.8 meter wingspan, 3.2 meters length fuselage, 0.9 meters vertical profile. Mid-size reconnaissance craft category.",
+    "weight_description": "Approximately 280 kg operational weight. Handheld cargo capacity but requires ground crew or vehicle mounting for transport. Typically stored on magnetic hardpoints or specialized cradles.",
+    "primary_material": "Composite thermal-ceramic hull with aluminum-titanium internal frame. Ducted fan shrouds are reinforced carbon-silk weave.",
+    "finish": "Matte heat-reactive coating (appears dull gray-blue at ambient, develops heat-bloom distortion when operating over active vents). Radiant surfaces feature subtle thermal radiator texturing. All seams are flush-welded.",
+    "color_scheme": "Deep slate gray primary with acid-yellow thermal warning striping along leading edges and fan intake lips. Copper-bronze accent weathering on heat-exchanger fins indicating operational patina.",
+    "interface_elements": "Minimalist cockpit with dual control columns, holographic HUD projection plates, thermal readout screens. Ventral access panels for battery cartridge swaps. Heat-signature calibration port aft of cabin. Magnetic cargo bay latch beneath fuselage centerline.",
+    "distinctive_features": [
+      "Radiator fin crown running the length of the fuselage — actively sheds waste heat during thermal soaking",
+      "Thermal updraft detection array: ring of micro-vanes that passively sense heat column geometry",
+      "Counter-rotating ducted fan pairs with variable pitch blades — individually modulated for thermal vector exploitation",
+      "Asymmetrical cockpit bubble offset to starboard, providing unobstructed thermal sensor sightline",
+      "Thermochromic panel sections that visibly brighten/cool in response to ambient heat exposure"
+    ],
+    "manufacturer_markings": "OUROBOROS ENERGY corporate sigil (interlocking serpent helix) stamped in white on tail section. Regulatory compliance tags mounted on fuselage sides. Serial number and thermal tolerance rating placard on landing gear nacelle.",
+    "condition_typical": "Operational units display heat discoloration across upper surfaces — accumulation of mineral deposits and thermal stress patina from repeated geothermal exposure. Exhaust ports exhibit sodium-vapor residue staining (yellow-orange). Sensor housings are often encrusted with silicate buildup requiring maintenance cycles between survey runs."
+  },
+  "image_prompt": "Industrial aerial reconnaissance vehicle mounted on maintenance cradle in a GLMZ lower district workshop. The Ouroboros Energy Thermal Vent Skimmer is angled to show its predatory delta-wing profile and dominant ducted fan array undersides. Harsh amber-white workshop lights cast sharp shadows across the heat-reactive hull coating, which displays subtle thermal bloom distortion patterns. Heat-exchange fins catch dramatic rim lighting. A technician in thermal-resistant orange oversuit performs sensor calibration on the fuselage, their hand near the thermochromic panels. Background shows industrial geothermal infrastructure — pipes, vents, heat shimmer. Gritty cyberpunk aesthetic with saturated colors, emphasizing the vehicle's purpose-built industrial design and heat-tolerance engineering. Cinematic depth of field with workshop tools and component boxes in soft focus behind. --ar 3:2 --v 6"
 }

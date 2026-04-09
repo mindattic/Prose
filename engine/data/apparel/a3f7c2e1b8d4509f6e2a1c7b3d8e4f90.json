@@ -42,5 +42,25 @@
     "Axiom Systems BCI-Integrated Mesh Network Protocol",
     "Immaculée Dalgaard-Nwosu",
     "TESSERA PG-2 'Signature'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist oxford with clean lines and a deliberately understated presence. The low-profile silhouette sits just above the ankle, presenting an almost monolithic face with subtle topstitching. Modern and architectural—neither bulky nor delicate.",
+    "fit": "Precision-engineered compression fit with adaptive tension. Molds to the foot's natural contours; appears snug but not restrictive. The micro-tensioner system creates almost imperceptible micro-adjustments that prevent the characteristic slack of traditional lacing.",
+    "primary_material": "Burnished synthetic leather—a high-grade ballistic composite with bio-resin laminate. Engineered for durability and breathability without the ethical overhead of animal products.",
+    "texture": "Matte finish with a soft, slightly tactile hand. The surface has a subtle pebbled quality visible in direct light, suggesting precision manufacturing. Burnishing creates depth without shine.",
+    "color_scheme": "Available in three tiers: deep black (neutral corporate standard), oxblood red (working-class accent choice), and slate grey (understated professional). Each colorway has the same matte finish to maintain consistency.",
+    "closures": "Embedded micro-tensioner lacing system integrated into the shoe's structure. Traditional lace eyelets interface with subcutaneous pressure-sensors; no visible tech, but the laces themselves contain conductive filament. Friction-fit heel with reinforced counter.",
+    "distinctive_features": [
+      "Micro-tensioner lacing system with pressure-responsive adjustment",
+      "Barely visible topstitching suggesting internal structure",
+      "Reinforced toe box and heel counter for durability",
+      "Embedded haptic feedback nodes (subtle vibration when fit adjusts)",
+      "Cordis logo stamped (not embossed) on the tongue—minimalist branding",
+      "Antistatic sole for sensitive environments (corpo spaces, sterile areas)"
+    ],
+    "tier_indicator": "Tier 2-3 crossover. Premium enough for working professionals with corpo aspirations; accessible to upper working-class on payment plans. The tech is functional, not ostentatious.",
+    "cultural_context": "Appeals to efficiency-minded workers, corporate middle-management, and augmentation-positive individuals who value invisible tech. Worn by data-runners, logistics coordinators, and junior executives who log serious walking time. Signals someone who invests in subtle optimization.",
+    "condition_typical": "Maintains pristine appearance for extended periods due to the burnished finish's resistance to scuffing. When worn, develops a broken-in patina around the heel and toe—dignified aging. The matte finish hides dust better than glossy alternatives."
+  },
+  "image_prompt": "Close-up fashion photograph of Cordis Autofit oxford shoes displayed on a minimalist chrome or dark composite mannequin foot. Shot against a textured industrial backdrop—concrete wall or brushed steel surface with soft neon edge lighting in cool blue and amber. Shallow depth of field emphasizes the matte leather texture and topstitching detail. The shoe should gleam subtly under directional key light, emphasizing the burnished quality without gloss. Cyberpunk aesthetic: clinical precision meets street wear. Include subtle holographic reflection on nearby surface. --ar 2:3 --v 6"
 }

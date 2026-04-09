@@ -39,5 +39,35 @@
     "bci_disruption",
     "tier_2"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus PX-1 'Phantom'",
+    "Aybek Alvarez-Okonkwo",
+    "Kang-Petrov Arms KPM-6 'Equalizer'",
+    "SentryGuard PepperShot PS-1 'Sting'",
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
+    "Tessera Nexus Town Car",
+    "The Wire Taps"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, compact canister with a distinctly medical-tech aesthetic — part pharmaceutical dispenser, part defensive tool. The streamlined cylindrical body tapers slightly toward the nozzle, giving it an almost clinical appearance despite its purpose. The overall impression is precision-engineered consumer protection: expensive, legitimate, and purpose-built.",
+    "dimensions": "11.5 cm length, 3.2 cm diameter, 2.8 cm width at grip",
+    "weight_description": "Lightweight and balanced — feels substantial enough to inspire confidence without being burdensome. The weight distribution favors the grip, making it naturally point-able.",
+    "primary_material": "Aerospace-grade polymer composite (primary body) with anodized aluminum nozzle assembly",
+    "finish": "Matte gunmetal gray with subtle iridescent shimmer in the polymer — suggests advanced chemical containment. The aluminum nozzle has a brushed satin finish with micro-etched cooling vents.",
+    "color_scheme": "Matte gunmetal gray body with accents of electric blue (SentryGuard brand stripe) and cold silver (nozzle, safety ring, pressure indicator). Minimal branding — understated luxury.",
+    "grip_texture": "Textured polymer grip with subtle vertical ridges — designed for sweaty or augmented hands. Slightly warm to the touch from internal chemistry.",
+    "distinctive_features": [
+      "Dual-action trigger with tactile safety lock",
+      "Pressure gauge window (small circular lens at 9 o'clock position) showing remaining burst capacity with blue luminescent indicator",
+      "Micro-etched vents around the nozzle tip suggesting NeuroDisrupt compound separation technology",
+      "SentryGuard logo subtly embossed on grip (not stamped)",
+      "Faint warning hologram stripe running vertically — only visible at certain angles",
+      "Small cylindrical chamber visible through translucent top section showing pale blue-tinted chemical suspension",
+      "Breech ring with numbered burst counter (8 down to 0)"
+    ],
+    "manufacturer_markings": "SentryGuard Consumer Defense' logo appears as a raised emblem on the grip. Tiny serial number laser-etched into the aluminum nozzle collar. 'NB-3 BRAINFREEZE' printed in small caps along the pressure gauge side. Regulatory stamps and GLMZ licensing hologram on the underside of the grip.",
+    "condition_typical": "Pristine or near-pristine — these are professional-grade self-defense tools kept in purses and jacket pockets, rarely deployed. When used, they show minor scuffing and potential chemical residue around the nozzle. Infrequently maintained by owners who aren't field operatives."
+  },
+  "image_prompt": "Professional product photography of the SentryGuard NeuralBurn NB-3 'Brainfreeze' spray canister. Positioned on a dark matte black surface at a slight 45-degree angle, held in a gloved cybernetic hand with subtle chrome knuckle plating. Dramatic side-lighting from the left casting sharp shadows, highlighting the brushed aluminum nozzle and the luminescent blue pressure gauge window. The matte gunmetal polymer body reflects cool blue accent lighting. Close-up detail shot showing the micro-etched vents around the nozzle tip and the holographic safety strip. Cyberpunk aesthetic with clinical precision. Corporate product photography style. Shot against a black brushed steel background with soft bokeh city lights (neon blues and silvers) in the background. High-contrast lighting emphasizing the device's advanced chemistry containment. --ar 3:2 --v 6"
 }

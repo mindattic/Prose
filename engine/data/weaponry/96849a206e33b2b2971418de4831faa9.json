@@ -39,5 +39,39 @@
     "tier_1",
     "anti_grab"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Autonomous Adhesive Denial Drone AADD-2 'Barnacle'",
+    "Fanta Kato-Adomako",
+    "Irontide Tidal Energy",
+    "Patient Zero",
+    "Shelf Life",
+    "Slagworks Industrial",
+    "Sorin Ekwensi-Balasanyan",
+    "The Bazaar",
+    "The Undertow",
+    "Vuk Jorgensen-Toure",
+    "Zheng-Dao Bioelectric Chemoreceptive Dermal Patch"
+  ],
+  "physical_description": {
+    "visual_profile": "A thin, almost translucent square patch resembling a circuit board sticker. At first glance, it appears inert — a piece of tech no more threatening than a diagnostic label. The outer surface displays fine copper tracery etched across a pale polymer base, with contact points visible at the edges. Deceptively flat and mundane, but the copper pathways hint at its electrical nature.",
+    "dimensions": "5 cm x 5 cm square, 0.4 mm thickness",
+    "weight_description": "Negligible — weighs only 3 grams. So light it's almost unnoticeable once adhered to fabric or skin. No heft whatsoever; the patch clings like a second skin.",
+    "primary_material": "Flexible polymer substrate (likely PET or polyimide) with printed copper circuit traces and a pressure-sensitive adhesive backing",
+    "finish": "Matte translucent polymer face with metallic copper circuitry visible beneath. The adhesive side is glossy and slightly tacky to the touch. No reflection — designed to be inconspicuous.",
+    "color_scheme": "Off-white or pale cream polymer base with bright copper-gold circuit traces. Minimal branding — subtle gray Axiom Systems lettering in one corner. The reverse side shows the adhesive as a faint amber tint.",
+    "grip_texture": "Not gripped — applied as an adhesive patch. The polymer face is smooth and slightly waxy. The backing is pressure-sensitive and tacky, adhering firmly to fabric or skin without requiring activation to stick.",
+    "distinctive_features": [
+      "Etched copper electrode pathways forming concentric circuit patterns",
+      "Pressure-sensitive contact points along the outer edge",
+      "Tiny capacitor reservoir visible as a raised nodule in the center",
+      "Minimal Axiom Systems branding — intentionally low-profile",
+      "Fine copper traces that shimmer faintly under light, hinting at electrical charge",
+      "Matte finish prevents reflection and glare — designed to blend into bags and clothing",
+      "Razor-thin profile allows seamless adhesion to straps, collars, and curved surfaces"
+    ],
+    "manufacturer_markings": "Axiom Systems logo (small, 3-4mm) in gray printed text at the bottom right corner. Serial batch number printed in micro-font along one edge. Instruction symbols for activation threshold printed in white ink beneath the logo.",
+    "condition_typical": "Fresh patches appear pristine and uniform — manufactured to exacting standards. In the field, patches waiting for deployment show no visible wear. Post-activation patches appear charred or discolored at the contact point where the arc occurred, rendering them obviously spent. Used patches are typically discarded or replaced within hours."
+  },
+  "image_prompt": "Close-up product photography of a Axiom Systems TouchShield TS-3 'Porcupine' adhesive patch. The patch lies flat on a dark matte surface, slightly angled to show the copper circuitry etched beneath the translucent polymer face. Dramatic side-lighting reveals the fine copper traces, casting sharp shadows that emphasize the circuit patterns. A gloved hand (synthetic polymer, cyberpunk-style) peels back one corner to reveal the tacky adhesive backing. Minimalist composition with shallow depth of field. Cool blue-white lighting from the left, warm accent light from the right revealing the metallic sheen of the copper. High-resolution detail showing the pressure-sensitive contact points along the edges. Cyberpunk aesthetic emphasizing the tech-noir mundanity of everyday self-defense technology. Background suggests a delivery bag or tactical rig. Professional catalog photography style. --ar 3:2 --v 6"
 }

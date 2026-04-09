@@ -42,5 +42,41 @@
     "anti_personnel",
     "aerosol"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Castling",
+    "Cinderblock Ai",
+    "GLMZ",
+    "Mika Sorel",
+    "Red Circuit RC-Pit 'Dogfighter'",
+    "Shelf Life",
+    "Slagworks Industrial",
+    "Sorin Ekwensi-Balasanyan",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Iron Lotus",
+    "The Pure Hand",
+    "The Shelf",
+    "Tomasz Wren"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact aerosol canister with the unmistakable silhouette of a mass-produced self-defense tool — slightly wider at the shoulder, tapered toward the nozzle, designed to nest in a closed fist. The form factor screams 'vending machine product': utilitarian, standardized, instantly recognizable.",
+    "dimensions": "Height: 11.2 cm, diameter: 3.8 cm, nozzle guard protrusion: 1.1 cm",
+    "weight_description": "Light and easy to palm — approximately 125g fully pressurized, with a slight top-heavy balance from the nozzle assembly. Feels insubstantial in the hand, almost toy-like, which is intentional.",
+    "primary_material": "Recycled injection-molded polymer, steel pressure vessel core with polymer outer shell",
+    "finish": "Matte recycled plastic with visible micro-texturing from the injection mold; the red is slightly faded from UV exposure typical of vending machine stock, giving it a sun-blanched appearance",
+    "color_scheme": "SafeStep corporate red (Pantone 200C approximation) on the upper half with a safety-stripe band of dark grey wrapping the lower canister body; white label band running the circumference with black compliance text",
+    "grip_texture": "Slightly tacky recycled polymer surface with faint horizontal ribbing for grip purchase; thumb-rest area on the nozzle guard is smoother from repeated contact",
+    "distinctive_features": [
+      "Spring-loaded thumb nozzle guard with minimal detent resistance",
+      "Conical spray disperser head — wide-angle design visible under the guard",
+      "White wraparound label with dense multilingual warning text (English, Mandarin, Spanish, Vietnamese, Somali, Arabic)",
+      "SafeStep corporate logo stamped into the polymer at 45° angle on the upper shoulder",
+      "Tiny batch-code laser-etched into the underside of the canister: manufacturing date and lot identifier",
+      "Faint stress marks radiating from the base of the nozzle where the assembly is ultrasonically welded",
+      "A small pressure-relief port barely visible at the very top"
+    ],
+    "manufacturer_markings": "SafeStep corporate mark (stylized 'S' in a hexagon) embossed on the upper third; compliance text loop-printed in white on a band running the full circumference; small 'MADE IN NORTH AMERICAN FEDERATION' stamp on the bottom; batch code and manufacture date in 8-point font on the canister underside",
+    "condition_typical": "Well-handled and worn — surfaces show contact marks from being carried in pockets, bags, and jacket linings; the red finish is often sun-faded or scuffed; the label may be peeling at the edges or have adhesive residue from being stacked in vending machine bins; the nozzle guard shows minor play from repeated actuations; some units have marker annotations ('EXPIRES [date]' or initials written by social workers)"
+  },
+  "image_prompt": "Product photography of a SafeStep PocketGuard OC-1 oleoresin capsicum spray canister, shot from a 3/4 angle on a dark gunmetal surface. The canister is rendered in faded safety red and grey polymer with visible wear patterns and a white compliance label band. Dramatic single-source side-lighting from the left creates sharp highlights on the nozzle guard assembly and throws the conical spray disperser into relief. The background is deep charcoal with subtle bokeh suggesting a vending machine environment. Include visible texture of recycled plastic, stress marks at the nozzle weld, and the embossed SafeStep hexagon logo catching light. The thumb guard should show tactile ribbing. Cyberpunk aesthetic: clinical product-shot lighting with a slight blue-tinted fill light suggesting ambient neon from unseen signage. Shot from slightly above at eye-level as if on a vendor shelf. --ar 3:2 --v 6"
 }

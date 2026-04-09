@@ -46,5 +46,29 @@
     "TESSERA TC-3 'Crucible'",
     "Tshiamo Vukić-Arellano",
     "VitaCore FlowGuard Hemodynamic Regulator"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A full-body utilitarian jumpsuit with a commanding industrial presence. The deep orange shell dominates the silhouette, broken by retroreflective silver striping running down arms and outer legs in clean, geometric lines. Reinforced padding at knees, elbows, and shoulders creates subtle bulk and geometry. The overall impression is functional, durable, and intentionally visible—a worker's uniform designed to survive and be seen.",
+    "fit": "Relaxed and purposeful, not tailored. Cut with generous room through the torso and thighs for movement and tool carry, but with articulated sleeves and tapered cuffs that accommodate cybernetic limbs. The hood sits proud of the neckline, designed to clear augmentation hardware. Rear seam reinforcement allows accommodation of non-standard body modifications.",
+    "primary_material": "Flame-retardant polyaramid composite shell with ceramic-fiber impact padding at stress points. Self-cleaning nano-coating applied to exterior surfaces. Collar and cuff trim in treated synthetic blend for durability and articulation.",
+    "texture": "Smooth, slightly waxy feel from the nano-coating; impact padding creates subtle quilted texture at shoulders, knees, and elbows. Retroreflective striping has a crisp, raised tactile quality. Well-worn examples show a broken-in suppleness with minor creasing and surface irregularity.",
+    "color_scheme": "Dominant deep safety orange (#FF6B35 equivalent) with retroreflective silver striping in 2-3cm bands down arms and legs. Dark charcoal or black at collar, cuffs, and zipper placket. Individual personalizations—patches, stitched names, union insignia—introduce secondary colors in worn examples.",
+    "closures": "Heavy-duty magnetic-snap front placket with concealed zipper backup. Sealed chest pocket with magnetic closure. Tool loops and magnetic clip points distributed across torso and thighs. Wrist and ankle cuffs secured with friction-fit elastic or magnetic snaps.",
+    "distinctive_features": [
+      "Retroreflective silver striping on arms and legs for industrial visibility",
+      "Reinforced ceramic-fiber padding at high-impact zones (shoulders, elbows, knees)",
+      "Integrated tool loops and magnetic clip points designed for industrial gear carry",
+      "Sealed data-chip storage chest pocket with magnetic closure",
+      "Hood design engineered to clear augmentation hardware (horns up to 18cm, neck ports, etc.)",
+      "Articulated sleeve construction for seamless chrome limb accommodation",
+      "Reinforced rear seam to accommodate tail augmentations",
+      "Self-cleaning nano-coating on exterior surfaces",
+      "Dual-closure front (magnetic snaps + concealed zipper) for redundancy",
+      "Deep orange color chosen specifically for high-visibility in foundry/fabrication environments"
+    ],
+    "tier_indicator": "Tier 1-2 corporate-issued uniform; signals stable employment and industrial workforce status. The jumpsuit's durability and multi-generational lifespan give worn examples an unexpected prestige—evidence of long-term employment stability in uncertain economic conditions.",
+    "cultural_context": "The uniform of GLMZ's physical infrastructure backbone—furnace operators, crane riggers, pipeline crews, fabrication technicians. Wearing a HeavyWorks signals membership in the industrial working class, particularly Tier 2 laborers. Personalization is culturally expected and company-tolerated, making each worn suit a personal labor history. Ex-Crucible workers continue wearing theirs as a badge of experience and reliability. In Tier 1-2 districts, a well-patched HeavyWorks commands quiet respect as evidence of sustained employment.",
+    "condition_typical": "Issued examples are pristine and uniform. Worn examples show broken-in comfort and accumulated patches—stitched union insignia, personal name embroidery, repair patches in contrasting colors, possibly faded from industrial heat cycles. Retroreflective striping remains crisp and unobscured by company mandate. Some multi-generational suits show visible repair and restitching while maintaining structural integrity."
+  },
+  "image_prompt": "A Crucible HeavyWorks maintenance jumpsuit photographed on a muscular androgynous cyberpunk model with visible chrome augmentation on one forearm and subtle neck-port visible at collarbone. The model wears the deep orange jumpsuit with silver retroreflective striping, positioned with one hand resting on a tool loop, the other adjusting the hood. The suit shows subtle wear—faded patches, a stitched union emblem on the chest, a name tag in white thread. Dark industrial warehouse backdrop with amber-tinted security lighting catching the retroreflective elements. Moody, high-contrast lighting emphasizing the safety orange and metallic striping. Shallow depth of field on the subject. --ar 2:3 --v 6"
 }

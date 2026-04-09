@@ -41,5 +41,27 @@
     "TESSERA PG-2 'Signature'",
     "Tessera Nexus Town Car",
     "The Human Baseline Alliance"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A clinical yet functionally augmented surgical uniform in Lazarus's iconic pale blue-green. The silhouette is slightly loose through the torso to accommodate varied body types and geneware, with visible reinforced port access panels at the forearms and neck. The white caduceus at the left shoulder is immediately recognizable across the GLMZ. Overall impression: medical authority mixed with the worn familiarity of working-class utility.",
+    "fit": "Relaxed through the chest and abdomen with tapered sleeves; high stretch coefficient accommodates both baseline humans and geneware-bearing bodies without restriction. Waistband sits mid-hip with reinforced tail slot edging visible. The fabric moves with the body rather than constraining it — designed for 12+ hour surgical rotations.",
+    "primary_material": "Synthetic-cellulose blend, Class 4 biohazard rated. Micro-textured surface with integrated low-level electrostatic charge sustained by body heat. Fabric weight suggests durability but not bulk.",
+    "texture": "Micro-textured surface with subtle grid pattern visible under direct light — tactile grip prevents slipping during high-stakes procedures. Seams are reinforced with sealed edging. Port access panels show slightly raised borders with sealed gasket grooves. Overall feel: clinical precision with practical durability.",
+    "color_scheme": "Signature Lazarus pale blue-green (slightly desaturated, calming) across the entire set. White caduceus symbol printed at left shoulder. Reinforced panel borders in neutral gray or matching tone. On worn examples: visible nano-adhesive patches in slightly off-tone whites or grays.",
+    "closures": "Front zip or friction-fit magnetic snap closure (upper torso). Elastic waistband with drawstring at hip. Sleeve cuffs are fitted elastic. Neck opening accommodates hardline BCI port without gaping.",
+    "distinctive_features": [
+      "Forearm port access panels with sealed gasket grooves for hardline neural connections",
+      "Neck port accommodation with molded insertion collar",
+      "Pre-cut, reinforced tail slot in waistband for geneware accommodation",
+      "Hood option with molded horn-clearance inserts (if full set)",
+      "Lazarus caduceus in white at left shoulder — universal medical authority symbol",
+      "Micro-textured bacterial-inhibiting surface",
+      "High stretch coefficient throughout fabric",
+      "Common sight: nano-adhesive patches at stress points on second/third-hand examples"
+    ],
+    "tier_indicator": "Tier 1-2 luxury (subsidized cost for licensed practitioners) / Tier 3-5 functional workwear (commercial markup or salvaged/patched versions). The same garment signals different economic realities depending on condition and context.",
+    "cultural_context": "Medical authority and working-class exhaustion. In Tier 1 zones, marks the wearer as healthcare provider — someone with informal social power. In higher tiers, signals overwork and underpayment. Universally recognized across GLMZ; wearing one outside medical context is unusual and raises questions. The pale blue-green is neurologically associated with patient calm — wearing it triggers subconsious trust responses.",
+    "condition_typical": "Pristine in Tier 1 subsidized settings (first rotation); broken-in and patched in understaffed clinics; weathered with visible nano-adhesive repairs in third-hand Tier 3-5 versions. Discoloration around seams common from repeated high-heat sterilization. Port access panels show friction wear from repeated hardline connections."
+  },
+  "image_prompt": "Fashion photography of a Lazarus MedCore surgical scrub set on a cyberpunk model with visible subdermal implants along the neck and collarbone. The model wears the pale blue-green scrubs with the white caduceus visible at left shoulder; forearm port access panel is clearly rendered with micro-textured surface detail. Dark medical facility backdrop with blue-tinted ambient lighting casting subtle shadows. One version shows pristine Tier 1 condition; alternate shows weathered patches and nano-adhesive repairs. Close detail shot emphasizing the reinforced seam work and electrostatic micro-texture. Moody, clinical atmosphere. --ar 2:3 --v 6"
 }

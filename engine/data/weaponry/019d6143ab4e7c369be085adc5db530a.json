@@ -50,5 +50,40 @@
     "armor",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions ETF-3 'Mantis'",
+    "GLMZ",
+    "Lazarus Pharmaceuticals Osseous Resonance Implant — 'The Tuning Fork'",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Street Custom 'Panic Room' Deployable Safe Space",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "The Resonance Communion",
+    "WELLSPRING",
+    "Zheng-dao Bioelectric",
+    "Zurab Ivanov-Appiah"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, swept-wing aerial platform with a distinctive bulbous central pod housing the phased acoustic array. The fuselage tapers from a spherical transducer cluster at the nose to a lean tail boom, giving it a tuning fork silhouette in profile. Stabilizer fins angle slightly upward, and the overall impression is of predatory elegance—purposeful, minimalist, built for high-altitude persistence rather than speed.",
+    "dimensions": "Wing span: 210 cm. Fuselage length: 145 cm. Height (on landing gear): 38 cm. Central transducer pod diameter: 34 cm.",
+    "weight_description": "Deceptively light for its wingspan—7.4 kg total gives it a fragile, almost skeletal feel. The hydrogen cell and phased array are balanced to center mass slightly forward of the wing root, creating neutral pitch stability without apparent ballast. Feels like holding a high-tension aerospace component rather than a weapon.",
+    "primary_material": "Carbon-fiber reinforced polymer airframe with hollow internal ribs. Transducer pod is composite resin-bonded ceramic piezoelectric matrix. Landing gear is aluminum alloy spring-loaded struts. Heat dissipation fins on the motor mounts are brushed titanium.",
+    "finish": "Matte charcoal composite with a subtle iridescent sheen that shifts from slate blue to deep purple under angular light—a signature of ZHENG-DAO BIOELECTRIC's proprietary carbon weave. Transducer pod is glossy obsidian black with subtle etching marks from the phased array calibration jigs. Motor housings show bare anodized aluminum beneath minimal wear.",
+    "color_scheme": "Primary: Deep charcoal with purple-black iridescence. Accents: Brushed titanium on fin edges and motor housings. Transducer cluster: Matte obsidian. LED status rings on the motor pods glow pale cyan.",
+    "grip_texture": "Not designed for sustained hand-holding. The fuselage has minimal grip texture—smooth composite designed for minimal air resistance. Battery access panels feature fine knurled edges and textured polymer handholds for field maintenance.",
+    "distinctive_features": [
+      "Phased transducer array visible as concentric rings of piezoelectric elements set into the obsidian nose pod, each element slightly recessed",
+      "Four small LED diagnostic rings (cyan, amber, red) arranged around the motor pod nacelles—status indicators for phase lock and transducer coherence",
+      "Thin slot vents along the fuselage leading edge for passive cooling of the interferometric compensation electronics",
+      "Custom ZHENG-DAO BIOELECTRIC proprietary handshake receiver antenna—a small helical coil wrapped around the tail boom in copper wire",
+      "Hydrogen fuel cell access panel on the ventral surface marked with trilingual warnings and a faint biohazard symbol",
+      "Microscopic etching marks from the acoustic calibration process visible under magnification on the transducer pod surface",
+      "Wear patterns where the carbon fiber weave is slightly abraded from high-altitude wind stress"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC stamped in small chrome characters on a riveted plate beneath the left wing root, with serial number and manufacturing date in microprint. A second plate on the motor pod identifies the licensed ARCTURUS DEFENSE SOLUTIONS transducer upgrade (visible only if the drone has been weaponized). Faint regulatory markings on the hydrogen pod in Mandarin, English, and Arabic warning of hazardous materials.",
+    "condition_typical": "Field units range from pristine laboratory condition (civilian survey variants) to battle-worn operational assets. Typical black-market variants show light scuffing on the fuselage from rough deployment and recovery, minor creasing on the wing leading edges from atmospheric stress at altitude, and occasional burn marks around the motor housings from aggressive phase-shift cycling. Transducer pods often show micro-fracturing in the ceramic matrix from high-intensity subharmonic transmissions, visible only under close inspection."
+  },
+  "image_prompt": "Overhead three-quarter view of the SARD-1 'Tuning Fork' drone positioned on a matte obsidian platform, shot with dramatic side-lighting from the upper left that casts sharp shadows from the swept wings. The charcoal carbon-fiber fuselage shows iridescent purple-blue highlights along the leading edges. The spherical transducer pod at the nose is rendered in glossy black with visible concentric piezoelectric element rings, each catching rim-light. Four cyan LED diagnostic rings glow softly on the motor nacelles. The swept tail boom extends toward the frame edge, with the helical antenna receiver visible as a delicate copper spiral. High-contrast lighting emphasizes the aerospace precision and alien geometry. The platform surface is wet, reflecting the drone's silhouette in muted tones. Cyberpunk aesthetic: high-tech, predatory, cold. Shot as a tactical asset catalog image. --ar 3:2 --v 6"
 }

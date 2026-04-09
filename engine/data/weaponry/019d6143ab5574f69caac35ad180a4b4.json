@@ -53,5 +53,47 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Biometric Denial Charge BDC-1",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "GLMZ",
+    "Helix Biosystems",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Oumarou Svec-Ranginui",
+    "Ringo Corponation",
+    "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Sustrel",
+    "TESSERA PG-2 'Signature'",
+    "The Fathom Line",
+    "The Resonance Communion",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, precision instrument that reads as a hybrid between a surgical tool and a rifle—elegant rather than aggressive. The extended barrel dominates the profile, crowned with a prominent flared muzzle assembly that suggests optical precision rather than ballistic violence. The overall silhouette is lean and purposeful, with an almost medical aesthetic that belies its function.",
+    "dimensions": "Overall length: 127 cm. Barrel length: 71 cm. Muzzle assembly diameter: 8.5 cm. Stock depth: 16 cm. Width across grip: 7.2 cm.",
+    "weight_description": "Balanced and surprisingly light in hand at 5.8 kg—weight distributed toward the muzzle assembly to stabilize the dual emitter array. Feels engineered rather than heavy, with a center of gravity that sits naturally when shouldered. The thermal cell battery pack in the lower receiver adds subtle heft but maintains overall ergonomic balance.",
+    "primary_material": "Aircraft-grade aluminum alloy chassis with reinforced polymer composite handguard. The muzzle housing is titanium-ceramic composite to withstand thermal cycling. Internal emitter array is precision-machined steel with thermal dissipation fins.",
+    "finish": "Brushed satin silver on aluminum surfaces with matte black thermal-resistant coating on the muzzle assembly and around the dual emitter apertures. Wear patterns typical: fingerprint oils on grip, micro-scratches on barrel from field handling, slight heat discoloration around muzzle lip from thermal bleed-through.",
+    "color_scheme": "Gunmetal silver primary, matte charcoal black on emitter housing and upper receiver. Accent: deep blue charging indicator strip running along the thermal cell chamber.",
+    "grip_texture": "Rubberized polymer with subtle knurling for wet-hand control. Textured for precision rather than grip security—designed for steady aim at range rather than close combat handling. Slightly warm to the touch due to thermal cell proximity.",
+    "distinctive_features": [
+      "Oversized flared muzzle assembly housing dual thermal-acoustic emitter array—the signature visual identifier",
+      "Faint blue luminescent charging indicator that glows softly when powered and brightens during the 4-second charge cycle",
+      "Subsonic pulse vent ports arrayed around muzzle perimeter—small honeycomb apertures that are barely visible until light hits them",
+      "Thermal dissipation fins running along the upper rear of the barrel casing",
+      "Recessed scope rail atop receiver in brushed steel—designed for thermal targeting optics",
+      "Audible charging hum source located in the receiver—a faint vibration felt through the stock",
+      "Power indicator and thermal cell status readout on the right side of the receiver, glowing amber/green",
+      "Minimal ergonomic controls: safety lever, trigger guard with oversized guard for gloved operation, thermal cell release catch",
+      "Serial number and HELIX BIOSYSTEMS mark etched into the lower receiver in small precision typeface"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo (stylized double helix) stamped on the left side of the lower receiver in polished chrome. Serial plate inset flush with the right-side receiver panel. Model designation 'TLCR-4' engraved in micro-font below the scope rail. Batch and thermal cell compatibility codes on the battery housing.",
+    "condition_typical": "Field-worn but meticulously maintained. Operators treat this weapon with surgical precision—the tolerances are too tight for neglect. Typical examples show light scratching on the barrel, fingerprints on the charging indicator, and occasional dust accumulation around the emitter ports. The muzzle assembly often shows subtle heat-stress coloration despite the thermal-resistant coating. Handles and receivers often bear personalized operator marks or small etchings, the 'Deflater' nickname sometimes appears as a microscopic engraving."
+  },
+  "image_prompt": "Catalog product photograph of the TLCR-4 rifle, positioned at a three-quarter angle on a dark graphite surface. The weapon is cradled in a gloved hand wearing matte black synthetic gloves with textured grip, fingers supporting the underside of the barrel to showcase the flared titanium-ceramic muzzle assembly. Dramatic side-lighting from the upper left reveals the brushed satin aluminum finish and illuminates the subtle heat-stress discoloration around the emitter apertures. A soft blue glow emanates from the charging indicator strip, suggesting standby power state. The background is deep charcoal with subtle scanlines suggesting corporate product documentation aesthetic. Metallic surfaces catch highlights showing precision manufacturing. Include fine detail of the honeycomb pulse vent ports and thermal dissipation fins. Cyberpunk medical-industrial aesthetic—clean, clinical, precise, unsettling in its elegance. --ar 3:2 --v 6"
 }

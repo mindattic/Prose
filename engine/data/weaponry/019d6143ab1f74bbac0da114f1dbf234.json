@@ -55,5 +55,40 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Biometric Denial Charge BDC-1",
+    "Deshi Baluarte-Thorvaldsen",
+    "GLMZ",
+    "Helix Biosystems",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Nnenna Boateng-Szymański",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA PG-2 'Signature'",
+    "The Portico",
+    "The Resonance Communion",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A pair of aggressive knuckle guards with a biomechanical aesthetic — bulbous, asymmetrical nodules protrude from the striking surface like chitinous growths. The overall impression is of something that weaponizes biology itself rather than replacing it. They fit over the hand like brass knuckles for a posthuman age.",
+    "dimensions": "12 cm length (knuckle to wrist), 8 cm width across striking face, 5 cm depth. Each emitter node projects 0.8 cm beyond the primary striking surface.",
+    "weight_description": "Deceptively light in hand — 0.6 kg per unit creates a strange disconnect between visual heaviness and actual heft. The weight sits forward in the knuckles, creating a naturally aggressive balance point that wants to drive downward.",
+    "primary_material": "Boron carbide ceramic striking plates bonded to a titanium internal frame, housed within reinforced polymer-ceramic composite guard structure.",
+    "finish": "Matte gunmetal gray with a slight translucent quality to the guard material — you can almost see the layered construction beneath. The ceramic emitter nodes have a dull pearl finish with micro-fracture patterns visible under close inspection.",
+    "color_scheme": "Gunmetal gray primary with deep teal accent striping around each emitter node. The piezoelectric nodes glow faintly amber when charged.",
+    "grip_texture": "Textured polymer grip wrap with asymmetric finger recesses — designed for knuckle-down striking position. Slightly tacky to discourage slipping during liquid spray conditions.",
+    "distinctive_features": [
+      "Four raised hemispherical emitter nodes, one per knuckle, with visible piezoelectric cores",
+      "Micro-capacitor housing visible as a subtle bulge along the wrist guard",
+      "Faint amber LED indicators (one per node) that brighten during charge cycle",
+      "Hairline fracture patterns etched into ceramic surface — either design or battle scars",
+      "Asymmetrical finger recesses suggesting a specific combat grip",
+      "USB-C hardline port recessed into the guard's heel",
+      "Serial number and ZHENG-DAO BIOELECTRIC ideogram stamped into titanium base"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo (stylized DNA helix intertwined with circuit trace) stamped on the wrist guard. Tiny alphanumeric serial plate mounted flush with the capacitor housing. Removed 'NON-LETHAL COMPLIANCE TOOL' designation visible as faint ghost text on older units.",
+    "condition_typical": "Field units show heavy use — ceramic striking surfaces accumulate microscopic pitting from impact with synthetic augmentation plating. Older models display evidence of repeated capacitor cycling (slight discoloration around the port). Most street-level operators maintain them meticulously; a malfunctioning capacitor means reduced striking power and a significant tactical disadvantage."
+  },
+  "image_prompt": "Product photography of ZHENG-DAO BIOELECTRIC Cavitation Pulse Knuckles CPK-5, pair of gunmetal gray knuckle guards with prominent amber-glowing piezoelectric emitter nodes. Mounted on a matte black stand or held in black-gloved tactical glove hand, palm-forward. Dramatic side-lighting from upper left reveals ceramic surface micro-fractures and translucent guard material. Shallow depth of field. Cyberpunk aesthetic with subtle bioluminescent glow from the teal accent striping and amber capacitor indicators. Cold color grading with highlights on the boron carbide striking faces. High-resolution detail showing the serial plate and ZHENG-DAO logo. Dark reflective surface beneath. Professional product shot with clinical precision undermined by the weapon's visceral, organic appearance. --ar 3:2 --v 6"
 }

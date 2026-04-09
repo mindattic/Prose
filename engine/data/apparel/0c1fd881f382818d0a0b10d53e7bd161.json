@@ -36,5 +36,27 @@
   "related_entities": [
     "Dzemal Acholonu-Patagiri",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A imposing, full-body protective shell with a distinctly industrial silhouette. The aluminized exterior creates a mirror-like, almost chrome appearance that catches light dramatically. The suit reads as utilitarian and heavy, with pronounced shoulders and a rigid stance even when not being worn.",
+    "fit": "Loose and deliberately oversized to allow layering underneath and accommodate movement during welding work. The construction prioritizes protective coverage over body-conforming fit, creating a boxy, fortress-like profile.",
+    "primary_material": "Aluminized fire-resistant synthetic composite — a treated ballistic weave with a reflective aluminum coating that gives it a metallic sheen",
+    "texture": "Stiff and slightly ribbed, with visible quilting in the body panels for thermal insulation. The seams are visibly sealed with reflective tape. Surface is glossy in some areas, matte in others where wear has dulled the coating.",
+    "color_scheme": "Silver-gray aluminized base with charcoal gray reinforced panels at shoulders, elbows, and torso. Bright warning orange accents on cuff hems and collar binding. Some darker, heat-scorched patches visible from previous use.",
+    "closures": "Heavy-duty magnetic snaps down the front placket, friction-fit gauntlet cuffs with reinforced elastic, and friction-sealed ankle cuffs. A double-snap neck collar designed to secure welding helmet attachment points.",
+    "distinctive_features": [
+      "Integrated gauntlets that extend over the wrists with fire-sealed seams",
+      "Reinforced collar with helmet-seating grommets and stress-points",
+      "Spark-catch cuffs at ankles with raised edges to deflect falling sparks",
+      "Sealed seams throughout (visible reflective tape at every joint)",
+      "Ashcroft Industries stamped logo on upper back in heat-resistant ink",
+      "Wear patches showing heat discoloration and minor scorching from heavy use",
+      "Padded thermal quilting visible through seams",
+      "Multiple industrial loops for attaching tool harnesses or safety tethers"
+    ],
+    "tier_indicator": "Tier 3 functional — working-class industrial gear. Expensive enough to indicate serious labor investment, but purely utilitarian with no luxury considerations.",
+    "cultural_context": "Marks the wearer as a heavy-industry laborer, likely employed by a manufacturing corp or independent fab shop. Signal of physical risk-acceptance and skill. Common in the industrial sectors of the GLMZ — especially the burned-out factory zones of Detroit, Chicago, and Milwaukee.",
+    "condition_typical": "Broken-in and weathered. Most examples show visible heat damage, scorching, patched seams from repair work, and a dull finish from sweat and environmental exposure. Well-maintained specimens show careful seam sealing and fresh orange trim; neglected ones show cracked aluminum coating and failing fire-seals."
+  },
+  "image_prompt": "A Tier 3 industrial worker wearing an Ashcroft Industries Heavy Welding Suit, full-body shot against a dark metal factory wall lit by harsh blue-white arc light. The aluminized suit reflects the welding glow dramatically, creating pools of silver and shadow. Close detail on the reinforced gauntlets and sealed seams. The model is posed as if mid-task, gaunt and weathered face visible above the heat-sealed collar. Gritty, utilitarian, heavy. Moody neon-blue and amber industrial lighting. Dark grain texture in background. --ar 2:3 --v 6"
 }

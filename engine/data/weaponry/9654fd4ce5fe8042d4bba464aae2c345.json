@@ -42,5 +42,40 @@
     "slim",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Cem Watanabe-Amponsah",
+    "Ekundayo Vásárhelyi-Nkemdirim",
+    "Ezio Kaboré-Malhotra",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "Parliament",
+    "TESSERA TC-3 'Crucible'",
+    "The Crucible",
+    "The Question",
+    "Veslemøy Achebe-Tursynov"
+  ],
+  "physical_description": {
+    "visual_profile": "A razor-thin, almost skeletal pistol that reads as aggressive minimalism — all business, no waste. The profile is unnaturally flat, like a playing card stood on edge. The slide runs the full length of the frame with minimal overhang. Low-mounted controls and sights refuse to break the weapon's sleek geometry.",
+    "dimensions": "Length: 17.8 cm | Width: 1.9 cm | Height: 12.1 cm | Barrel length: 10.2 cm",
+    "weight_description": "Surprisingly light and perfectly balanced — sits in the palm like it weighs nothing, yet carries substantial recoil authority. The slim profile makes it feel delicate until you fire it.",
+    "primary_material": "Hardened steel slide over aluminum-polymer lower receiver frame — weight distribution optimized for single-hand carry",
+    "finish": "Matte gunmetal gray slide with DLC (diamond-like carbon) coating; polymer frame in tactical black with subtle brushed aluminum accents around grip and trigger guard",
+    "color_scheme": "Gunmetal gray and matte black with stainless steel magazine catch and trigger; minimal accent lighting in amber/gold around the sighting system",
+    "grip_texture": "Textured polymer with stippled grip surface for sweat/augmentation compatibility; ergonomic finger grooves worn smooth from heavy use in field conditions",
+    "distinctive_features": [
+      "Ultra-thin profile — less than 2cm wide, designed for pocket carry without printing",
+      "Flush-fit magazine with anti-snag baseplate",
+      "Low-profile tritium night sights integrated flush into slide",
+      "Recessed grip safety under thumb ledge",
+      "Minimal controls: slide stop, mag release only",
+      "Small Φ-stamped rune on grip indicating pricing tier",
+      "5.7x28mm chamber stamp on barrel (visible through ejection port)",
+      "Heat stress marks on slide from high-velocity round signature",
+      "Custom stippling pattern resembling circuit traces"
+    ],
+    "manufacturer_markings": "Crucible Industries logo (geometric C intersecting with I) stamped subtly on left slide; 'TALON-5 JACKKNIFE' engraved along right slide in stark sans-serif; serial number on lower frame; small 'TIER 3+' compliance marking on grip",
+    "condition_typical": "Field-maintained, lightly worn; slide shows micro-scratches from holster friction and polymer frame exhibits faint wear marks from extended pocket carry. Well-lubricated, professionally maintained but clearly used"
+  },
+  "image_prompt": "Product photography of a Crucible Industries Talon-5 'Jackknife' 5.7x28mm pistol lying flat on a dark gunmetal surface, shot from a 45-degree angle. The weapon is positioned with slide facing camera to emphasize its impossibly thin profile. Gloved hand (chrome-fingered tactical glove) positioned near the grip to show scale. Dramatic side-lighting from cool-blue cybernetic work-lamp casts sharp shadows emphasizing the weapon's razor-thin silhouette. Magazine placed beside weapon showing flush-fit design. High-contrast lighting reveals matte gunmetal finish, DLC coating sheen, and textured polymer frame. Futuristic workshop background with soft bokeh. Shallow depth of field. Cinematic cyberpunk industrial aesthetic. --ar 3:2 --v 6"
 }

@@ -49,5 +49,24 @@
     "TESSERA PG-2 'Signature'",
     "Tessera Industries Adaptive Disguise Matrix ADM-1",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek pendant device resembling a polished gemstone or corporate seal, subtly angular with a slightly convex face. The form suggests precision engineering rather than jewelry — it reads as professional security tech disguised as luxury accessory. Approximately the size of a large coin or small pendant.",
+    "dimensions": "4.5 cm height × 3.2 cm width × 1.8 cm depth (pendant form); can convert to 2.1 cm × 2.1 cm × 0.9 cm lapel pin configuration",
+    "weight_description": "Featherweight — 30 grams. Comfortably pocketable or wearable on chain without fatigue; designed for all-day corporate wear.",
+    "primary_material": "Brushed titanium alloy housing with sapphire crystal front lens",
+    "finish": "Matte metallic body with mirror-polished sapphire lens face; subtle iridescent coating on edges that shifts between gunmetal and deep blue under light",
+    "color_scheme": "Gunmetal gray with accents of electric cyan and platinum; Sterling-Nakamura corporate silver trim",
+    "interface_elements": "Minimal — single raised cylindrical button (power/sync) on lower edge; tiny pinhole apertures for biometric sensors (thermal, optical) arranged in symmetrical pattern; subtle LED indicator ring (hidden beneath sapphire lens, visible only when active — glows soft cyan for verification pending, green for match confirmed, amber for identity anomaly)",
+    "distinctive_features": [
+      "Sapphire crystal lens front with anti-reflective coating — appears almost invisible until light catches it",
+      "Embedded haptic motor produces distinct vibration patterns: single pulse (verified), double pulse (anomaly), sustained buzz (critical threat)",
+      "Barely-visible sensor array etched into titanium — only apparent at close inspection",
+      "Chain attachment loop reinforced with micro-magnetic coupling",
+      "Faint Sterling-Nakamura logo engraved on reverse in 2mm lettering"
+    ],
+    "manufacturer_markings": "Sterling-Nakamura corporate logo (interlocking S-N monogram) subtly engraved on rear; model number IVP-2 laser-marked on interior clasp; regulatory compliance stamps (GLMZ Data Authority approval, biometric privacy certification Φ) on tiny brass plate on chain",
+    "condition_typical": "Worn on thin platinum or steel chain around neck, or clipped to lapel via magnetic pin conversion. In active use, the lens catches light with faint cyan glow. Minor wear on chain contact points is common; sapphire resists scratching. Professional aesthetic — belongs in boardrooms and diplomatic venues."
+  },
+  "image_prompt": "Sterling-Nakamura IVP-2 Identity Verification Pendant displayed on black glass workbench, angled to catch dramatic blue-cyan LED glow beneath sapphire lens. Pendant suspended on thin platinum chain, with lapel pin conversion component beside it. Close-up detail of sensor apertures visible. Neon accent lighting from above, deep shadow background. Corporate cyberpunk aesthetic, 2226 GLMZ. High-end product photography. --ar 3:2 --v 6"
 }

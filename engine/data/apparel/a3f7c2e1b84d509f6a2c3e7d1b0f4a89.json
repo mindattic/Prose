@@ -57,5 +57,30 @@
     "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
     "Veslemøy Achebe-Tursynov",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A weathered, functional survival silhouette telling a story of years on the street. Layered and deliberately over-equipped, with visible wear patterns and jury-rigged repairs that create a complex visual texture. The figure appears compact and ready for immediate action, with asymmetrical details (rolled sleeve, drop-leg pouch) suggesting someone who lives in their clothes.",
+    "fit": "Deliberately loose and utilitarian — the compression base layer fits close for heat retention, but the work shirt and cargo trousers hang roomily to allow for movement and additional gear. The hi-viz vest drapes as an outer shell without constraint. Everything is sized for function over form.",
+    "primary_material": "Thermal compression blend (base, synthetic/cotton mix, heavily worn), heavy canvas (work shirt), ripstop cotton-nylon blend (trousers), salvaged industrial materials (belt, tape seals), cracked leather and resoled rubber (boots), nylon (utility pouch and patches), hi-viz poly-cotton (outer vest)",
+    "texture": "Heavily textured with intentional roughness — pilled fabric on the base layer, stained and creased canvas, visible stitching and rivet work, duct-taped seams, waterproof tape overlays creating ridged surfaces, worn leather with visible cracks, mismatched rubber sole compounds with uneven wear",
+    "color_scheme": "Dominant palette of ash-gray, muted olive, rust-brown, and cracked charcoal black, with dull orange acid-resistant patches replacing the original hi-viz reflective strips. Accented by silver-chrome prosthetic limb and the metallic hex-bolt buckle. No bright colors — everything aged and desaturated.",
+    "closures": "Functional and varied — friction-fit compression base, canvas work shirt appears button-front (buttons likely replaced or missing), cargo trousers with likely a zipper fly and belt closure via the salvaged hex-bolt buckle, multiple riveted nylon reinforcements on pockets, waterproof tape seals on boots, duct tape securing the prosthetic gasket",
+    "distinctive_features": [
+      "Exposed chrome forearm prosthetic with makeshift rubber gasket duct-taped at elbow joint",
+      "Heavily riveted and reinforced cargo pockets with visible nylon corner patches",
+      "Asymmetrical left sleeve rolled to expose augmentation",
+      "Drop-leg utility pouch in cracked nylon, visibly overstuffed with unidentified gear",
+      "Industrial conveyor rubber belt with hand-drilled holes and salvaged hex-bolt buckle",
+      "Balaclava tucked at collar, ready for deployment",
+      "Patched hi-viz vest with dull orange acid-resistant panels replacing reflective strips",
+      "Boots with resoled soles showing three different rubber compounds",
+      "Waterproof seam-seal tape wrapped around ankle joints",
+      "Handwritten size marker on self-repair tape replacing original brand tag",
+      "Asymmetrical weathering suggesting constant use and environmental exposure"
+    ],
+    "tier_indicator": "Tier 5 sub-grade salvage aesthetic — every piece is either second-hand, repurposed from industrial surplus, or self-modified from street market scraps. No new manufactured garments. The outfit screams survival necessity over consumer choice.",
+    "cultural_context": "Street survivor, likely someone who works in the ungoverned ashpiles or acid-rain zones of the GLMZ. The augmentation and jury-rigged repairs suggest someone who has invested in keeping themselves functional through self-maintenance rather than corporate repair shops. This is the clothing of someone who cannot afford to fail — every pocket, every seal, every patch is there because they've needed it before.",
+    "condition_typical": "Perpetually weathered and in active use. Worn through at stress points (elbows, seat, knees), visibly stained with industrial grime, patches and repairs in various states of degradation, duct tape needing regular replacement, boot soles wearing unevenly, fabric pilling and thinning but still functional. This outfit improves with wear because every new tear gets addressed with another repair."
+  },
+  "image_prompt": "Gritty cyberpunk fashion photograph of a lean, chrome-augmented model wearing layered survival gear — ash-gray thermal base layer under heavily patched olive canvas work shirt, rust-brown ripstop cargo trousers with cracked black utility pouch, salvaged hi-viz vest with dull orange acid-resistant panels, waterproof-taped boots with mismatched resoled soles. Left sleeve rolled to expose chrome forearm prosthetic with duct-taped gasket. Gray balaclava tucked at collar. Moody industrial lighting casting sharp shadows across weathered fabric textures. Stark concrete warehouse backdrop with acid-rain streaks on metal. Close-up detail shots of rivet-reinforced pockets, hex-bolt buckle, and peeling tape seals. Desaturated color grading emphasizing wear patterns. Grim, functional, survival-ready aesthetic. --ar 2:3 --v 6"
 }

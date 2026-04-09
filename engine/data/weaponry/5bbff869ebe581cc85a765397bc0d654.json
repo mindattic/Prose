@@ -43,5 +43,39 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "AXIOM-PRIME",
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions Thermal Longsword TL-3 'Cauterizer'",
+    "Aslan Granlund-Tawiah",
+    "Crucible Industries CR-9 'Foundry'",
+    "GLMZ",
+    "Iron Meridian (The Long Walk Home)",
+    "MERIDIAN",
+    "Nika Svensson-Kone",
+    "Nnamdi Ostrowski-Faletolu"
+  ],
+  "physical_description": {
+    "visual_profile": "A purposeful, industrial machine gun with clean lines and no unnecessary ornamentation. The profile is compact and forward-heavy, with a distinctive squared-off receiver and prominent top-mounted feed system. The overall impression is utilitarian and honest—this is a tool built for work, not aesthetics.",
+    "dimensions": "1,240mm length overall, 635mm barrel length, 230mm width at feed tray, 180mm height at sight rail",
+    "weight_description": "Hefty but balanced—10.4 kg distributes across the frame in a way that feels grounded when mounted on a tripod or shouldered against a barricade. Heavy enough to absorb recoil, light enough for two-person team repositioning.",
+    "primary_material": "Stamped steel receiver with chrome-lined barrel. Polymer furniture on grip and charging handle. Gas piston tube and bolt carrier milled from tool steel.",
+    "finish": "Matte parkerized steel with light surface oxidation from field use. Polymer components in flat black with minor scuffing and wear marks. No polished surfaces—all finishes are functional and anti-reflective.",
+    "color_scheme": "Gun-metal gray steel with flat black polymer accents. Minimal contrast. Bare aluminum on the ammunition feed tray.",
+    "grip_texture": "Rubberized polymer with pronounced vertical grip texture—molded for gloved hands in all weather. Charging handle wrapped in cord for grip security.",
+    "distinctive_features": [
+      "Prominent vertical ammunition feed tray mounted on top—raw aluminum with visible wear grooves from belt feeding",
+      "Simple notch-and-post iron sights with no electronic components",
+      "Large cocking handle on the right side with witness holes for chamber status verification",
+      "Vented barrel shroud with cooling slots running the length of the tube",
+      "Quick-change barrel latch visible on the left side—tool-free field replacement",
+      "Open-bolt design visible through ejection port—mechanical purity",
+      "Heat-discoloration patina on barrel tube from sustained fire cycles",
+      "Modular tripod mounting plate with standard NATO interface—visibly bolted"
+    ],
+    "manufacturer_markings": "Iron Meridian Cooperative logo (stylized gear inside a circle) stamped on the left side of the receiver. Caliber and serial number engraved on the barrel extension. 'IMC-3 BACKBONE' printed in white stencil on the feed tray.",
+    "condition_typical": "Well-maintained but showing honest field wear. Light surface rust in recessed areas. Bore shows minimal fouling from regular cleaning. Finish is matte and non-reflective—evidence of heavy use in training and low-tier municipal deployments."
+  },
+  "image_prompt": "Product photograph of the Iron Meridian Cooperative IMC-3 Backbone machine gun positioned on a dark gunmetal surface, three-quarter view from the right. Dramatic side-lighting from the left reveals the matte parkerized finish and the ventilated barrel shroud. In the foreground, a gloved hand (tactical leather, weather-worn) grips the charging handle. Background is deep shadow with subtle warm overhead light catching the bare aluminum feed tray. The ammunition belt lies coiled beside the weapon in loose links. Cyberpunk aesthetic: cool tungsten lighting, minimal but sharp focus on mechanical detail, shallow depth of field. The setting suggests a worker collective armory—functional, unglamorous, built to last. High contrast between matte surfaces and the glossy aluminum feed system. --ar 3:2 --v 6"
 }

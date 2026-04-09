@@ -72,5 +72,24 @@
     "The Collective",
     "The Lattice",
     "The Root"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately austere rectangular slab resembling a hardcover book or thick architectural digest. The top surface is slightly convex, suggesting the curvature of contained pressure. Two recessed grip channels run along the long edges. The front face presents a minimalist control interface with no visible seams where panels meet housing.",
+    "dimensions": "22cm × 14cm × 6cm (hardcover book-sized, fits under one arm or into a large jacket pocket when carrying strap is removed)",
+    "weight_description": "1.1kg — handheld, light enough for prolonged carry on a shoulder strap or hip-mounted bracket, but substantial enough to feel engineered",
+    "primary_material": "Palladian proprietary stress-ceramic composite; industrial-grade, designed to survive rough field conditions and temperature cycling",
+    "finish": "Matte ceramicized surface with micro-texturing to improve grip; shows minor scuff marks and dust accumulation in normal use, mimicking field-deployed equipment",
+    "color_scheme": "Gunmetal gray primary body with darker charcoal stress-relief striping along seams and edges. Accent elements in pale industrial blue (power/status indicators). Manufacturer nameplate in brushed aluminum inlay.",
+    "interface_elements": "Front panel: small circular dimple-button (power toggle), three status LED indicators (green/amber/red for network integrity, dust capacity, and power), and a semi-flush data port (encrypted micro-connector). Right edge: two analog dials (one for relay-dust dispersal rate, one for channel fragmentation depth). Top surface: covered canister lock with fine machined ridges for manual reload.",
+    "distinctive_features": [
+      "Pressure-relief vents disguised as decorative striping along the bottom edge, allowing passive EM harvesting",
+      "Top-mounted rotating canister lock (appears similar to a camera lens cap) with graduation markers for dust-dispersal tracking",
+      "Faint ghosting of internal circuitry visible through translucent corner sections of the ceramic housing",
+      "Weighted base with adhesive-backed rubber pads, allowing temporary mounting to walls or underside of furniture",
+      "Asymmetric cooling fins on the underside, barely visible without inspection"
+    ],
+    "manufacturer_markings": "PALLADIAN CONSTRUCTION logo (stylized Φ in a geometric frame) stamped into aluminum nameplate on front. Regulatory compliance stamps in tiny text on rear: GLMZ Tier 2+ certification, power consumption rating, and a faded serial number. Small warning symbol indicating micro-relay dust handling precautions.",
+    "condition_typical": "Deployed units show wear: dust accumulation in vent striping, minor scuff marks on corners and grip channels, occasional corrosion bloom around the data port. The status LEDs are perpetually illuminated when active, cycling between green and amber. The canister lock often shows tool marks from field reloads."
+  },
+  "image_prompt": "Palladian Gravemind Relay Hub placed on a weathered metal workbench in a cyberpunk workshop, dramatically sidelit by cold blue-green neon tubes. The hub is angled to show its matte ceramicized surface and pressure-relief striping. Micro-relay dust is shown as a faint golden particulate haze hovering above and around the device, catching the light. Behind it, blurred silhouettes of a soldering station and diagnostic equipment. The scene has high contrast — deep shadow on one side, vivid neon on the other. Cinematic depth of field, shallow focus on the hub. --ar 3:2 --v 6"
 }

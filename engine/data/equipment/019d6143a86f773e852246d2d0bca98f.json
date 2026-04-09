@@ -47,5 +47,24 @@
   "related_entities": [
     "MindBridge Flare Social Feed BCI",
     "TESSERA PG-2 'Signature'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A cylindrical chemical flare cartridge with a stabilizing parachute pack mounted to its top. The body is a reinforced aluminum tube with a slightly tapered nose cone. The parachute housing forms a bulbous cap above the flare body, with deployment lines visible along the sides. Utilitarian and purposeful — designed for function over aesthetics.",
+    "dimensions": "Flare cartridge 12cm long, 4cm diameter; parachute housing adds 6cm height; total loaded length approximately 18cm",
+    "weight_description": "400 grams per flare — handheld, fits in a tactical pouch or cargo pocket; light enough for rapid deployment",
+    "primary_material": "Anodized aluminum tube body; composite parachute canister; steel deployment springs",
+    "finish": "Matte anodize with visible machining marks; weathered from street use; minor oxidation stains visible on lower sections",
+    "color_scheme": "Dull steel-gray body with orange warning bands around the base; white stenciled labels and ignition instructions; red deployment-pull ring",
+    "interface_elements": "Friction-grip pull ring at base; pressure-activated ignition switch recessed into the cap; safety pin securing parachute deployment mechanism; printed ignition countdown timer and safety warnings in multiple languages",
+    "distinctive_features": [
+      "Small perforated cooling vents running the length of the cartridge body",
+      "Factory-spray yellow chevron warning marks indicating upward-pointing orientation",
+      "Handwritten street modifications: wire wrapping around the base for reinforcement, crude solder joints where owners have replaced deployment springs",
+      "Parachute compartment lid features improvised adhesive patches from repair tape",
+      "Residual burn residue and scorch marks from previous test fires"
+    ],
+    "manufacturer_markings": "Street Custom logo (stylized lighthouse beam silhouette) stamped into aluminum; manufacturing date code; batch number; regulatory compliance stamp showing GLMZ safety certification; small print warning about eye damage and night-vision equipment interference",
+    "condition_typical": "Used units show handling wear — scuffed anodizing, slight dents from carrying, oxidation patina. Pristine versions appear too sterile for street work. Most users carry 2-3 in a bandolier across their chest or in drop-leg tactical pouches"
+  },
+  "image_prompt": "Street Custom Lighthouse flare cartridge mounted upright on a darkened warehouse workbench, parachute compartment and pull ring visible. Surrounding items: tactical ammo pouch, ignition manual, used flare casings still glowing faintly orange. Dramatic side-lighting casting sharp shadows, emphasizing the aluminum body's texture and warning markings. Background shows nighttime industrial GLMZ skyline through grimy windows. Worn, utilitarian cyberpunk aesthetic. Close product detail showing deployment mechanisms and street modifications. --ar 3:2 --v 6"
 }

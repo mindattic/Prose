@@ -42,5 +42,26 @@
     "Saodat Mirzoyan-Fubara",
     "The Mirror",
     "The Undertow"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek, imposing yet refined silhouette that balances corporate elegance with tactical authority. The wearer appears as a high-end security presence rather than militaristic threat — crisp lines, minimalist geometry, and strategic color blocking create an impression of premium professionalism. The white-and-electric-blue palette reads as forward-thinking and expensive.",
+    "fit": "Slim-profile, tailored cut that accommodates armor panels without bulk. Fitted through the torso and shoulders, allowing unrestricted movement for tactical response. Fatigues underneath maintain a streamlined aesthetic rather than baggy military cut.",
+    "primary_material": "Lightweight ballistic composite panels (Tier 1 grade) over treated tactical cotton-synth blend fatigues. White polymer webbing load rig. Composite-toe hybrid boots with polymer and treated microfiber.",
+    "texture": "Smooth, hard-edged armor panels with subtle matte finish; glossy chrome-foil logo accents catch light sharply. Fatigues have fine ribbed weave. Mirror-polished boot finish creates reflective highlights.",
+    "color_scheme": "Glacier white primary with electric blue secondary accents. Chrome-foil BL-infinity logo on shoulders and helmet visor band. Tinted AR visor with subtle blue undertone. White composite webbing throughout.",
+    "closures": "Magnetic snap fasteners on armor panels for rapid deployment. Friction-fit tactical belt with quick-release buckle. Helmet integrates with snap-lock interface. Tablet mount features push-release polymer clips.",
+    "distinctive_features": [
+      "Stylized BL-infinity chrome-foil logo on both shoulders and helmet visor band",
+      "Sleek low-profile helmet with tinted AR visor and integrated discreet earpiece array",
+      "Minimalist white polymer webbing with concealed sidearm holster",
+      "Integrated client-ID verification tablet mount on load rig",
+      "Restraint kit pouches designed for unobtrusive carry",
+      "Mirror-polished composite-toe dress-tactical hybrid boots",
+      "Armor panels contoured to body silhouette for slim appearance"
+    ],
+    "tier_indicator": "Tier 1-2 luxury security. Premium manufacturing, expensive materials, corporate badge of authority.",
+    "cultural_context": "Corporate security elite operating in high-wealth client environments. Wearer is a branded extension of Brightline's prestige — meant to reassure rather than intimidate. Signals access to restricted spaces and client proximity. Corpo-sanctioned authority.",
+    "condition_typical": "Pristine and meticulously maintained. Armor panels are spotless, boots polished daily, logo foil unmarked, webbing crisp. Any damage is liability — uniform is replaced immediately."
+  },
+  "image_prompt": "Fashion editorial: Brightline corporate security guard in full glacier-white and electric-blue armor kit, standing in a sleek GLMZ high-rise lobby with floor-to-ceiling windows overlooking neon-lit Great Lakes skyline at dusk. Soft cold lighting emphasizes chrome BL-infinity logo on shoulder and helmet visor band. Model is posed with relaxed authority — one hand resting on client-ID tablet, polished white boots reflecting ambient light. Tinted AR visor glows faintly blue. Minimalist white webbing load rig contrasts sharp against tailored fatigues. Dark marble floor, distant corpo-tower silhouettes backlit in electric blue and white. Cinematic, high-fashion, corporate surveillance aesthetic. --ar 2:3 --v 6"
 }

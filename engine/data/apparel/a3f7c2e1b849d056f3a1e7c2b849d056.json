@@ -44,5 +44,26 @@
     "Cordis Autofit Dress Oxford",
     "Nnamdi Ostrowski-Faletolu",
     "VitaCore LinguaSync Real-Time Translation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "The uniform silhouette of corporate compliance—a grey button-down tucked into charcoal trousers, presenting a vertically neutral column interrupted only by a teal ID lanyard at the chest. The impression is one of deliberate uniformity: anonymous, standardized, designed to be forgotten the moment you clock out.",
+    "fit": "Straight-cut and deliberately adequate rather than flattering. The shirt drapes with geometric precision, the trousers maintain rigid geometry front and back. Everything sits at regulation distance from the body—close enough to signal 'professional,' distant enough to feel like borrowed cloth.",
+    "primary_material": "Medium-grey poly-synth for the shirt; Helix DuraWeave (proprietary poly-blend composite) for the trousers. Both are engineered for durability and crease retention over comfort. The belt is black synthetic leather with a brushed-nickel buckle.",
+    "texture": "The shirt carries a subtle herringbone weave—visible but not tactile. The trousers have a faint crosshatch from the DuraWeave blend, creating micro-ridges that catch fluorescent light. Both fabrics are treated for stain resistance and reduced wrinkle recovery, giving them a faintly plastic hand-feel.",
+    "color_scheme": "Medium grey (shirt) over charcoal (trousers), anchored by matte black synth-leather shoes and belt. The teal laminated ID lanyard provides the only chromatic break—a visual tether to corporate identity. Brushed-nickel buckle catches overhead lights.",
+    "closures": "Standard button placket on the shirt; the description notes a discrete BCI port loop sewn into the left placket for standard 3mm neural jacks. Trousers feature a conventional zippered fly and button waist. Shoes are auto-lacing with magnetic snap-closure. ID lanyard clips to the second shirt button.",
+    "distinctive_features": [
+      "BCI port loop integration in left shirt placket (neural jack compatible, 3mm standard)",
+      "Helix Corp logo embossed on brushed-nickel belt buckle",
+      "Laminated corporate teal ID lanyard with standard clip attachment",
+      "DuraWeave trousers engineered for crease retention and stain resistance",
+      "Cordis Autofit Dress Oxfords with auto-lacing and matte finish",
+      "Herringbone texture on shirt (subtle, almost invisible)",
+      "Regulation button spacing and collar width—nothing to distinguish the wearer"
+    ],
+    "tier_indicator": "Tier 3 corporate-subsidized. The quality is adequate and standardized; nothing suggests individuality, expense, or access to black-market customization. This is the uniform of the working-class office pod.",
+    "cultural_context": "Wearing this outfit signals: employed by a mid-tier corpo (Helix), bound to a pod and shift schedule, compliant with neural interface standards, and either willing or resigned to anonymity. It reads as 'middle management adjacent' or 'system administrator'—functionally important, socially invisible.",
+    "condition_typical": "Pristine on day one; broken-in and slightly limp by week two. The creases fade, the synth-leather belt develops micro-scuffs, the ID lanyard corners curl. By month three, the shirt collar shows faint wear at the BCI port loop from repeated neural jack insertion. Nothing is visibly damaged—Helix QA ensures durability—but the outfit quietly documents time served."
+  },
+  "image_prompt": "A Tier 3 corpo in Helix Corp standard-issue grey poly-synth button-down and charcoal DuraWeave trousers, standing in profile under sickly fluorescent overhead lighting. The shirt is precisely tucked; the trousers hold their crease. A teal laminated ID lanyard hangs at chest height. Matte black Cordis Oxfords on synthetic tile. The background is a blurred cubicle partition wall in grey polymer, with faint screen-glow suggesting the pod beyond. Moody cool-temperature lighting emphasizes the lifelessness of the outfit. The model's expression is neutral, compliant. Everything about the composition screams 'regulation,' 'standardization,' 'forgettable.' Shot in flat, institutional light. High contrast, desaturated palette. --ar 2:3 --v 6"
 }

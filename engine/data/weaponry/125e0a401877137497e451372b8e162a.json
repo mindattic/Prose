@@ -41,5 +41,38 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Aminata Vargas-Baffour",
+    "Crucible Industries Phalanx Building-Scale Deflector",
+    "Ilhan Sandstrom-Badu",
+    "LifeWire SolarShield UV Dermal Protection Layer",
+    "Nika Svensson-Kone",
+    "The Resonance Communion",
+    "Vantablack Media",
+    "Vesna Ito-Takyi",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "physical_description": {
+    "visual_profile": "A imposing, angular support weapon with a pronounced forward-swept profile. The body tapers from a bulbous receiver housing down to a narrower barrel assembly, giving it an almost predatory silhouette. Electromagnetic field coils wrap visibly around the barrel in a helical pattern. The overall impression is military-industrial and deliberately intimidating — a weapon designed to be seen and respected.",
+    "dimensions": "127 cm length overall, 8 cm receiver width, 6 cm height at coil assembly. 61 cm barrel length with integrated field resonator.",
+    "weight_description": "Hefty and purposeful at 13.8 kg. Balanced slightly forward toward the barrel, requiring a strong stance and deliberate control. Feels anchored to the shooter rather than quick-handling.",
+    "primary_material": "Reinforced composite polymer frame with integrated steel load-bearing skeleton. Barrel assembly is heat-treated steel with chromium carbide coating. Electromagnetic coils are wrapped copper wound around ferrite cores.",
+    "finish": "Matte gunmetal polymer with brushed steel accents on the barrel and receiver housing. Heavy use in field conditions shows worn polymer edges and burnished spots where gloved hands grip repeatedly. Some units display light scorching from electromagnetic field stress.",
+    "color_scheme": "Charcoal gray primary with gunmetal steel secondary. Accent lines in deep blue running along the electromagnetic coil housing, marking the field generation zones. Optional corporate unit markings in reflective white or unit colors.",
+    "grip_texture": "Rubberized overmold with aggressive diamond-pattern knurling. The forestock features a wraparound palm-swell designed for sustained gripping during both fire and shield phases. Textured polymer charging handle with serrated edges.",
+    "distinctive_features": [
+      "Helical electromagnetic coil assembly running the length of the barrel — three primary coil rings with visible copper windings",
+      "Dual-mode indicator array: small LED cluster (red for fire mode, blue for shield mode) mounted on the upper receiver",
+      "Heat dissipation fins along the receiver housing — necessary for rapid mode switching without thermal buildup",
+      "Integral top-mounted field strength gauge with analog needle, glowing faintly in low light",
+      "Magazine well recessed slightly, accepting 300-round drum magazines with audible seating click",
+      "Rear dampening system with visible pneumatic buffers to manage recoil during sustained 600 RPM fire",
+      "Small maintenance access panels on both sides, marked with caution striping",
+      "Forward bipod assembly that deploys for stabilized fire or shield projection — folds flush when retracted"
+    ],
+    "manufacturer_markings": "VANTA ORDNANCE stamped in bold sans-serif font across the upper receiver. Serial number and date code engraved on a discrete steel plate inset into the left side of the frame. Tier 4+ licensing mark stamped near the magazine well. Small Φ symbol indicating cost-of-manufacture certification beneath the field gauge.",
+    "condition_typical": "Field-worn and well-maintained. Scuffing on the polymer from gloved handling and tactical gear contact. The barrel shows light oxidation patina from electromagnetic stress. Most operators keep the coil assembly clean of debris, as contamination affects field projection. A few cosmetic dings and scratches are expected; structural damage is rare given the robust composite design. Well-maintained units show clear indicator lights and responsive mode-switching. Neglected examples display sluggish response times and dimmer status displays."
+  },
+  "image_prompt": "Product photography of the Vanta Ordnance Phalanx VO-8 Centurion support weapon, tactical configuration. Mounted on a matte black polymer rest or held in gloved tactical hands, angled 45 degrees to showcase the helical electromagnetic coil assembly along the barrel. Cinematic side-lighting casts dramatic shadows across the receiver housing and illuminates the faint blue glow of the field-strength gauge. The matte gunmetal polymer and brushed steel barrel catch light with subtle metallic sheen. Shallow depth of field with the weapon in sharp focus against a dark cyberpunk background suggesting an industrial firing range or tactical briefing room. Details: visible coil windings, LED status indicators, heat dissipation fins, magazine drum attachment. Mood: military-grade support weapon, reliable and imposing. cinematic, technical, cyberpunk 2226 aesthetic --ar 3:2 --v 6"
 }

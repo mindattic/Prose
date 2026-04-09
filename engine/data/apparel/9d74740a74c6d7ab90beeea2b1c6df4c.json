@@ -41,5 +41,27 @@
     "Stainless Steel",
     "SynapTech ReadRoom Social Cue Enhancer",
     "The Collective"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A classic analog wristwatch with understated elegance—deliberately retro in an era of neural implants and wrist-mounted displays. The watch commands attention through absence: no screens, no telemetry, no integration. It sits on the wrist like a small act of rebellion, a reminder that time existed before the network.",
+    "fit": "Snug but comfortable against the wrist; the leather band conforms to skin temperature and movement. The case diameter is modest—approximately 38mm—proportioned for daily wear without bulk. Band adjustment via traditional buckle allows for precise fitment.",
+    "primary_material": "Case: brushed stainless steel, locally machined in GLMZ fabrication hubs. Band: genuine leather, rare and expensive—vegetable-tanned, sourced from reclaimed stock or black-market agricultural zones. Movement: mechanical, with exposed or semi-visible components depending on case back design.",
+    "texture": "Case finish is matte and tactile, micro-scratched from use but intentionally unsealed to develop patina. Leather band is smooth with a subtle grain, warm to the skin. The dial is minimalist—matte or slightly brushed finish with raised numerals or indices that catch light.",
+    "color_scheme": "Primary: brushed steel gray (case and bracelet hardware). Dial: cream, off-white, or deep charcoal with black hands and numerals. Leather band: natural tan, cognac brown, or dark chocolate. Minimal accent color on the seconds hand—perhaps a subtle red or blue to break the neutral palette.",
+    "closures": "Traditional pinned leather band with stainless steel buckle—either simple three-fold clasp or burnished tang buckle. No magnetic or electronic fastening; purely mechanical security.",
+    "distinctive_features": [
+      "No wireless connectivity or smart features whatsoever",
+      "Visible mechanical movement (partial or full transparency depending on variant)",
+      "Date window at 3 or 6 o'clock position",
+      "Second hand with independent subdial or integrated sweep",
+      "Case back may be solid or exhibition (sapphire crystal showing movement)",
+      "Maker's mark: Chronotek logo subtly engraved or printed on dial",
+      "Hand-wound or automatic movement audible when held to ear",
+      "Genuine leather band—conspicuously rare and valuable in 2226"
+    ],
+    "tier_indicator": "Tier 2-3 boundary. The Meridian Standard is expensive enough to signal deliberate choice (a Tier 3 worker would save for months), but the minimalist design avoids ostentatious luxury. Tier 1 corpo might wear it as ironic statement; Tier 3 wears it as conviction.",
+    "cultural_context": "Privacy advocate. Anti-corporate. Old-school craftsperson or data-paranoid. Someone who rejects the assumption that all time must be networked, tracked, synchronized. Wearing one signals distrust of ubiquitous surveillance, preference for analog authenticity, or romantic attachment to pre-Diaspora timekeeping culture. Possibly military, hacker, or off-grid sympathizer.",
+    "condition_typical": "New examples are pristine, with sharp case edges and supple leather. Worn examples show honest patina: micro-scratches on the case, a darkened leather band shaped to the wearer's wrist, possibly visible wear on the buckle. Some owners intentionally preserve them; others let them age naturally as proof of use."
+  },
+  "image_prompt": "Close-up product photography of a brushed stainless steel analog wristwatch on a tanned leather band, displayed on a pale cyberpunk model's wrist against a dark urban backdrop. Moody cinematic lighting emphasizing the mechanical dial and leather texture. Shallow depth of field with the watch face in sharp focus. Minimalist composition, suggesting quiet defiance against networked timekeeping. Dark rain-slicked concrete wall behind. Cool blue accent lighting reflecting off the polished case. --ar 2:3 --v 6"
 }

@@ -85,5 +85,25 @@
     "The Fathom Line",
     "The Pure Hand",
     "Uncle Jun's Synth-Noodle Window"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately anonymous, infrastructure-mimetic device designed to disappear into urban environments. The terminal presents as whatever mundane object it's been disguised as — electrical junction box, ventilation panel, wall tile — with no visible cybernetic or technological markers. Only upon close inspection do subtle irregularities emerge: seams that don't quite match standard industrial tolerances, a faint thermal signature from the kinetic harvesting cell, anomalous material density.",
+    "dimensions": "Variable by deployment spec, typically 15–40 cm in primary dimension; compact enough to fit within standard wall-mounted infrastructure profiles",
+    "weight_description": "Lightweight despite internal shielding; easily wall-mounted or surface-adhesed; no carrying requirement",
+    "primary_material": "Composite polymer housing with embedded kinetic transducers; outer cladding matches the infrastructure it mimics (galvanized steel for junction boxes, ABS for panels, ceramic-composite for tiles)",
+    "finish": "Deliberately weathered and aged to match surrounding environment; micro-scratches, oxidation patterns, and dust accumulation are intentional. Interior surfaces are matte to avoid reflections; no gloss or chrome.",
+    "color_scheme": "Neutral industrial palette — gunmetal gray, weathered steel, municipal beige, or pale concrete depending on deployment type. Ringo Corponation markings (when visible) are embossed rather than printed, appearing as subtle texture rather than color.",
+    "interface_elements": "Minimal to invisible in passive state. Contact-based near-field receiver requires close physical proximity (fingertip or palm placement) to activate; no screens, no LEDs, no audible feedback. Internal status indicators are shielded from external view. Companion transmitter pairing occurs through capacitive touch interface on the back or underside — deliberately awkward to discover accidentally.",
+    "distinctive_features": [
+      "Seam pattern that subtly deviates from standard industrial specifications",
+      "Thermal microvariations from kinetic harvesting cell — visible only to thermal imaging",
+      "Contact-reactive surface beneath innocuous cladding — requires precise pressure/duration sequence to activate",
+      "No external connector ports, antennas, or power indicators",
+      "Embedded optical window (barely visible) for physical intrusion detection trigger",
+      "Ringo Corporation's signature — embossed Φ symbol on internal surfaces only, invisible when mounted"
+    ],
+    "manufacturer_markings": "Ringo Corponation logo (Φ symbol) embossed subtly on rear or underside; no serial numbers visible externally; manufacturing date encoded in the kinetic cell's material signature, readable only by authorized diagnostics",
+    "condition_typical": "Appears weathered and forgotten, accumulating environmental patina consistent with its disguise. In active use, shows no signs of operation — no warming, no transmission artifacts, no electromagnetic leakage detectable by standard counterintelligence sweeps."
+  },
+  "image_prompt": "Close-up product photography of a disguised dead drop terminal mounted flush against a concrete wall, appearing as an unmarked electrical junction box with weathered gray paint and oxidized steel trim. Low-angle dramatic lighting reveals subtle seam inconsistencies and micro-texture variations. In soft focus background, a companion encryption device lies on a dark workbench with faint LED indicators. Cyberpunk aesthetic with cold blue-green rim lighting and shadows emphasizing the device's deliberate anonymity and industrial camouflage. Shallow depth of field isolates the junction box. Gritty GLMZ infrastructure aesthetic. --ar 3:2 --v 6"
 }

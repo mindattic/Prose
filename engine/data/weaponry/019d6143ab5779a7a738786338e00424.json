@@ -55,5 +55,37 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Copperveil Intelligence",
+    "GLMZ",
+    "Plot 17",
+    "SynapTech AromaVeil Olfactory Filter",
+    "TESSERA PG-2 'Signature'",
+    "The Nearfield",
+    "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, shoulder-mounted emitter resembling a hybrid between a directed-energy weapon and medical imaging equipment. The primary body is a reinforced cylinder with a flared emission head that rotates on a gimbal mount. Looks industrial, purpose-built, utterly devoid of ergonomic softness — all angles and functional geometry. The emitter crown features a radial array of emission nodes arranged like a abstract flower or tactical muzzle brake.",
+    "dimensions": "Overall length 62 cm (including shoulder stock), emitter head diameter 14 cm, width across pivoting gimbal assembly 18 cm. Barrel projection (emission cone focal length) approximately 8 cm from the head housing.",
+    "weight_description": "Hefty but manageable on shoulder rig — 4.4 kg feels substantial without being cumbersome, weight distributed toward the shoulder brace. Requires stable positioning; not a weapon for spray-and-pray ergonomics.",
+    "primary_material": "Titanium-reinforced polymer composite frame with aluminum heat-sink collar around the emitter head. Steel gimbal mount and shoulder brace. Internal oscillator pack encased in ferrite-shielded aluminum housing.",
+    "finish": "Matte gunmetal gray with brushed aluminum accents on the gimbal and heat vents. Worn in field examples show bare composite showing through high-contact areas. No glossy surfaces — all surfaces are functionally textured to reduce reflectivity.",
+    "color_scheme": "Gunmetal gray primary, brushed aluminum accents, with dark charcoal polymer sections. Integral targeting display screen glows soft cyan when powered.",
+    "grip_texture": "Shoulder brace wrapped in rubberized tactical grip material with subtle knurling. The auxiliary grip forward of the emitter head is bare aluminum knurl, designed for left-hand stabilization during gimbal control.",
+    "distinctive_features": [
+      "Radial emission node array on the crown (17 frequency-tuned emitter elements visible as slight raised nodes)",
+      "Gimbal-mounted pivoting head with full 360-degree horizontal sweep and 60-degree vertical articulation",
+      "Integral 4-inch tactical display screen showing emission frequency readout and cone targeting reticle",
+      "Heat-dissipation vents running the length of the barrel assembly (17 parallel ridges corresponding to frequency channels)",
+      "Safety interlock switch with three-position detent (SAFE / STANDBY / ACTIVE) molded into the trigger guard",
+      "Modular oscillator pack cartridge slot on the underside of the barrel with quick-release catch",
+      "Faint laser targeting dot (red wavelength) projected from the emitter crown center",
+      "Serial/batch number engraved on the shoulder brace in white fill"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS stamped on the shoulder brace in serif lettering. Smaller text: MODEL TNSE-5, MILITARY CONTRACT ONLY, and an ARCTURIAN star-glyph logo (stylized A in a circle) embossed on the left side of the housing. Confidential licensing label on the oscillator cartridge bay.",
+    "condition_typical": "Field-maintained examples show light scuffing on the composite, occasional carbon scoring around the emitter nodes from high-frequency discharge residue, and wear polishing on the gimbal pivot from constant repositioning. Operators typically keep the targeting display lens clean and the frequency-cycle indicator LED functional. Long-deployed units show stress marks on the shoulder-brace contact points."
+  },
+  "image_prompt": "Close-up product photograph of the TNSE-5 Transcutaneous Neural Static Emitter mounted on a weapons rack, shot from the left quarter-view. The weapon rests on dark tactical netting against a matte black surface. Dramatic side-lighting from a single source illuminates the brushed aluminum gimbal assembly and highlights the radial emitter node array with sharp shadows. The integral targeting display screen glows a pale cyan, showing frequency readout numerals. Shallow depth of field keeps the emission head in razor focus while the shoulder brace softens slightly in the background. Reflections catch on the knurled grip texture and the ferrite-shielded aluminum housing. Cyberpunk aesthetic: cold metallics, clinical precision, no heroic posturing — the lighting is cool and technical, evoking medical/laboratory equipment repurposed as a weapon. Background subtly suggests a military contractor workshop or extraction team briefing room. --ar 3:2 --v 6"
 }

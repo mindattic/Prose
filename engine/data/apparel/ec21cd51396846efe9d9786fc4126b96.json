@@ -36,5 +36,25 @@
   "related_entities": [
     "Fanta Kato-Adomako",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting base layer that hugs the body like a second skin. Visible conductive thread traces create a subtle grid or web-like pattern across the torso, limbs, and neck — almost like circuit board pathways mapped onto human anatomy. The overall impression is of wearable technology disguised as athletic wear.",
+    "fit": "Compression fit, anatomically contoured to the body without restricting movement. Designed to sit flush against skin or over standard undergarments, with strategic stretch panels at joints for augmentation hardware access points.",
+    "primary_material": "High-grade synthetic blend: conductive polymer composite woven with silver-threaded pathways, moisture-wicking base fabric. Feels like advanced athletic mesh but with subtle metallic conductivity.",
+    "texture": "Smooth and sleek to the touch, with raised conductive thread lines that create a tactile relief pattern. The surface has a slight sheen from the conductive elements — not shiny, but clearly tech-forward. Lightweight and breathable despite the embedded circuitry.",
+    "color_scheme": "Charcoal grey or matte black base with silver or copper conductive thread pathways creating geometric grid patterns. Optional glow option: low-voltage phosphorescent accents along major pathways visible in low light.",
+    "closures": "None — pulls on like compression wear. Seamless construction with magnetic snap junction ports at standardized augmentation hub points (shoulders, wrists, lower spine, temples).",
+    "distinctive_features": [
+      "Visible conductive thread pathways mapping across the body",
+      "Standardized augmentation interface ports (magnetic snap connectors)",
+      "Helion Manufacturing logo heat-sealed at sternum",
+      "Temperature-regulating micro-perforations along high-heat areas",
+      "Reinforced pad areas at common augmentation sites",
+      "Subtle wear patterns showing thread compression at contact points"
+    ],
+    "tier_indicator": "Tier 2-3 boundary: expensive enough to signal augmentation investment, but mass-produced by a established manufacturer rather than bespoke corpo tech",
+    "cultural_context": "Wearer is significantly augmented — this signals commitment to integrated cybernetics rather than scattered implants. Associated with corpo workers, military personnel, or independent operators with serious chrome. Not street-salvage; this is intentional tech integration.",
+    "condition_typical": "Pristine when new, but quickly shows wear as conductive threads compress against augmentation hardware. Older suits develop visible stress marks at interface points, slight discoloration from electrical micro-arcing, and faint permanent creasing along major pathways."
+  },
+  "image_prompt": "Sleek cyberpunk fashion photo of a heavily augmented model wearing a form-fitting charcoal Helion Manufacturing conductive base layer, visible silver thread pathways glowing faintly with low-voltage blue luminescence across torso and limbs. Close-up detail shot showing the conductive grid pattern and interface ports at shoulders and spine. Model's chrome augmentations (visible at wrists and neck) connect seamlessly to the undersuit's pathways. Dark studio backdrop with neon accent lighting casting sharp shadows. High-contrast, moody aesthetic. Shot from chest-up, slight angle. --ar 2:3 --v 6"
 }

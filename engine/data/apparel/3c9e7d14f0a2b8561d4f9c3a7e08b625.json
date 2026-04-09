@@ -47,5 +47,24 @@
     "Tessera Industries Memory Rounds MR-2 'Recall'",
     "The Underlayer Collective",
     "Vantablack-CNX"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist torso garment that disappears under layers. Off-white with a barely-visible embossed triple-hex tessellation pattern creating subtle light-play across the surface. Fitted but not restrictive — designed for concealment beneath professional or casual wear without telltale silhouette.",
+    "fit": "Slim, body-conforming compression fit. Hugs the torso without compression restricting movement. Designed to sit flush under a dress shirt or fitted jacket with zero visible bulk or print-through.",
+    "primary_material": "Non-Newtonian smart composite (proprietary Rheon blend) — pliable and lightweight when at rest, capable of rigidifying on sudden impact across designated strike zones.",
+    "texture": "Smooth, almost slick surface with subtle embossed hex pattern that catches light at acute angles. Perforated underarm and neck panels have a softer, mesh-like texture for breathability. Overall feel is engineered rather than organic.",
+    "color_scheme": "Off-white (near-cream) as primary, with embossed triple-hex pattern in fractionally darker tone — creates relief only under certain lighting. No bright accents or branding visible on exterior surface.",
+    "closures": "None — designed as a slip-on full-torso underlayer. Seamless or minimal seaming to avoid detection.",
+    "distinctive_features": [
+      "Embossed triple-hex tessellation pattern (Rheon Systems trademark, subtle)",
+      "Perforated underarm and neck panels for thermoregulation",
+      "Non-Newtonian impact-responsive zones across chest, flanks, and upper back",
+      "Minimal seaming; engineered for zero print-through under fitted garments",
+      "Faint chemical smell on first wear (dissipates within ~1 hour)"
+    ],
+    "tier_indicator": "Tier 3-4 functional tech. Affordable enough for working-class adoption, sophisticated enough to signal corpo-adjacent safety consciousness or corporate employee status.",
+    "cultural_context": "Worn by mid-tier corporate workers, security-conscious professionals, street fixers, and anyone in moderate-risk occupations. Signals pragmatic self-preservation without overt paranoia — 'I take reasonable precautions.' Common in GLMZ professional districts and mixed-tier neighborhoods.",
+    "condition_typical": "Pristine on first wear (with fading chemical smell). Remains crisp through standard washing. Over time, embossed pattern may slightly diminish; perforated panels retain texture. Rarely visibly damaged unless subjected to actual ballistic impact, at which point localized rigification leaves permanent stress marks in the composite."
+  },
+  "image_prompt": "Close-up fashion photograph of an off-white Rheon Systems SoftShell Ballistic Underlayer on a lean androgynous cyberpunk model, shot from the side. The garment's embossed triple-hex pattern catches cool blue-tinted studio lighting, creating subtle relief across the torso. Model's skin tone contrasts with the pale fabric. Visible perforated underarm panel. Dark industrial backdrop with faint neon glow. Minimalist, clinical aesthetic. Professional product photography style with moody overhead lighting. --ar 2:3 --v 6"
 }

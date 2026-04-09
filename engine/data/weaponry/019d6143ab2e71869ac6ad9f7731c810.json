@@ -57,5 +57,37 @@
     "water",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "IRONLIMB Revenant Void-Form Digi Leg",
+    "Palladian Construction",
+    "Rashid Tuiasosopo-Erkens",
+    "Sine",
+    "Slagworks Industrial"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist construction tool transfigured into a weapon. The HPL-1 reads as industrial scaffold equipment at first glance—all angular housings and pronounced geometric channels. The emitter resembles a shortened jackhammer head or concrete breaker tip, flared and ribbed for resonance. Heavy, intentional, purposefully unglamorous.",
+    "dimensions": "89 cm length overall. Emitter head: 12 cm diameter, flared. Grip section: 18 cm. Fluid canister housing: 22 cm × 8 cm. Barrel equivalent: 28 cm emitter column.",
+    "weight_description": "Solidly hefty at 6.8 kg—feels anchored in the hand, requires two-handed stance or mounted grip. Weight distributed toward the emitter end, creating forward momentum bias. Balanced for controlled recoil absorption rather than quick handling.",
+    "primary_material": "Extruded aluminum chassis with titanium-reinforced emitter head. Fluid containment core wrapped in pressure-rated composite jacket. Internal resonance chamber visible through ribbed polymer sidewalls.",
+    "finish": "Weathered industrial gray with functional scoring marks. Anodized aluminum with matte finish. Pressure gauge housing features scuffed brushed steel. Hydraulic seals show faint rust bloom at edges—maintained but not pristine.",
+    "color_scheme": "Gunmetal gray (primary), with charcoal composite accents. Pressure readout ring in oxidized copper. Fluid canister window shows deep amber hydraulic liquid inside. Palladian logos and safety warnings in faded yellow-orange stencil.",
+    "grip_texture": "Rubberized polymer with aggressive knurl pattern for two-handed control. Grip wrapping shows minor splitting from thermal cycling. Secondary grip saddle below main handle finished in bare aluminum—worn smooth from handling.",
+    "distinctive_features": [
+      "Eight ribbed channels running the length of the emitter head—resonance wave guides, visually prominent",
+      "Pressure gauge with dual-reading dial (PSI / resonance frequency) mounted on left flank",
+      "Quick-release fluid canister with manual bleed valve, bright safety-yellow locking collar",
+      "Heat dissipation fins along rear chamber housing—visible warping from thermal stress",
+      "Power mode selector (rotary dial with tactile detents) marked LOW / MED / HIGH / OVER in worn stencil",
+      "Cooling status LED (amber/green) embedded in grip saddle",
+      "Internal resonance chamber visible through clear composite window—hydraulic fluid sloshes during handling",
+      "No muzzle brake—emitter is clean-lined and flared, optimized for pressure wave coherence",
+      "Palladian Construction stencil logo on left side, partially obscured by wear",
+      "Pressure release vent ports along the emitter collar—tiny exhaust holes for harmonic tuning"
+    ],
+    "manufacturer_markings": "PALLADIAN CONSTRUCTION stamped in industrial sans-serif on upper left flank. Model designation HPL-1 in smaller characters. Serial plate (brushed steel) riveted to grip section, numbers partially filed. Faded regulatory warnings in English and Mandarin stenciled along the pressure housing.",
+    "condition_typical": "Field-worn but maintained. Anodize dulled from handling and moisture. Hydraulic seals showing minor weeping (normal). Pressure gauge dial slightly hazed from use. No dents or major deformation—solid construction. Some users file serial markings, leaving visible gouges. Canister typically shows replacement scars from refills."
+  },
+  "image_prompt": "Industrial hydrostatic pressure weapon HPL-1 'Deepwater' mounted on dark gunmetal surface, 3/4 angle view. Brutalist demolition tool form factor with ribbed emitter head and visible pressure chamber. Materials: weathered anodized aluminum, titanium-reinforced resonance head, amber hydraulic fluid visible through window. Dramatic side-lighting catching the ribbed geometry and pressure gauge, casting deep shadows through the channel grooves. Cool blue accent light reflecting off the pressure readout dial. Background: dark industrial setting, concrete texture. Cyberpunk aesthetic: utilitarian, purposeful, menacing through function rather than form. Slight moisture reflection on grip. --ar 3:2 --v 6"
 }

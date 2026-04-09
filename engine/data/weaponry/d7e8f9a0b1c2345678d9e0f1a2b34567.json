@@ -44,5 +44,40 @@
     "luxury",
     "combat"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "Fanta Kato-Adomako",
+    "MERIDIAN",
+    "Praevex",
+    "Subdermal Shear Projector SSP-1 'Faultline'",
+    "TESSERA TC-3 'Crucible'",
+    "The Cutters Guild",
+    "The Spire",
+    "Zheng-Dao Heavy Industries Portable Fusion Battery PFB-2"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, aggressive single-edged sword with a pronounced forward curve and menacing presence. The blade tapers to a razor-thin plasma-containment edge that glows faintly even at rest. The hilt is compact and ergonomic, dominated by a robust thermal isolation collar that separates the scorching blade from the operator's hand. The overall silhouette reads as predatory—built for swift, devastating cuts rather than defensive parrying.",
+    "dimensions": "Blade length: 90 cm; Total length: 115 cm; Hilt length: 25 cm; Blade width (base): 4.5 cm, tapering to plasma edge",
+    "weight_description": "Deceptively light in hand (2.1 kg) due to aerospace-grade material distribution, but the weight concentrates toward the blade, creating a pronounced forward momentum that demands respect. Feels balanced for a single-hand closing strike rather than sustained combat.",
+    "primary_material": "Ceramic-tungsten composite blade; thermal isolation polymer hilt with embedded micro-fusion cell and discharge capacitor array",
+    "finish": "Blade: brushed charcoal ceramic with a barely-visible plasma-containment field shimmer—faint blue-white luminescence at the edge, intensifying when activated. Hilt: matte graphite polymer with visible heat-dissipation ribbing and thermal venting channels. No chrome or reflective surfaces; entirely designed to absorb rather than reflect.",
+    "color_scheme": "Charcoal gray blade body with electric blue plasma-edge glow. Matte black thermal isolation hilt with accent copper-gold heat sinks along the guard and pommel. Subtle Crucible Industries branding in dark red.",
+    "grip_texture": "Contoured thermal isolation polymer with a subtle knurled texture—not rough, but grippy enough to prevent sweat slippage. Slightly cool to the touch despite blade heat, thanks to the isolation collar. Guard is reinforced with exposed copper-composite heat dissipation fins.",
+    "distinctive_features": [
+      "Faintly glowing plasma containment field visible as electric blue shimmer along the blade edge, intensifying with power-up",
+      "Visible thermal venting channels running the length of the hilt, exhaling faint heat shimmer in use",
+      "Copper-gold heat sink fins along the guard and pommel, functional and visually aggressive",
+      "Micro-fusion cell indicator: subtle LED array on the hilt showing remaining charge (green to red gradient)",
+      "Discharge capacitor readout window—translucent polymer showing blue capacitor fluid level",
+      "Serial plate on the pommel: 'CRUCIBLE INDUSTRIES | PB-7 SOLSTICE | Φ25,000 | Fusion Core: [####]'",
+      "Impact-resistant edge reinforcement showing hairline micro-fractures from previous high-temperature plasma cycling",
+      "Slight radiant heat distortion visible around the blade in product photography—suggests active or recently-used status"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES logo (angular, corporate serif) stamped into the thermal isolation collar. Model designation 'PB-7 SOLSTICE' engraved in clean sans-serif font along the blade base. Serial number plate on pommel with model specifications and micro-fusion cell identifier. Pricing and regulatory compliance stamp (directed energy melee certification) on rear guard in small white text.",
+    "condition_typical": "Pristine on retail display; well-maintained in collector/corporate hands. Field examples show subtle plasma-edge micro-scarring, faint heat-discoloration at the thermal collar, and minor gouging on the blade flat from electrical discharge contact. Operator sweat and oil residue typical on grip texture. Thermal vents often show carbon residue from micro-fusion cell cycling."
+  },
+  "image_prompt": "Product photography of the Crucible Industries Pyre Blade PB-7 'Solstice': 90cm single-edged plasma sword with glowing electric-blue containment field edge, resting on a dark matte gunmetal surface. Shot in dramatic side-lighting that catches the faint plasma shimmer and casts deep shadows across the brushed charcoal ceramic blade. Thermal isolation hilt in matte black with visible copper-gold heat sink fins, micro-fusion cell indicator LEDs glowing faint green on the pommel. Close detail showing the barely-visible distortion haze around the plasma edge, suggesting residual heat. Cyberpunk weapons catalog aesthetic: ultra-premium melee directed-energy tool, corporate-grade, extreme price-point luxury. Render in hyperreal material detail with chromatic aberration at the plasma edge. Studio lighting with cool blue rim-light on blade, warm amber bounce-light from thermal elements. --ar 3:2 --v 6"
 }

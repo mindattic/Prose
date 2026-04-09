@@ -55,5 +55,35 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Ekundayo Vásárhelyi-Nkemdirim",
+    "Eshe Pena-Baah",
+    "GLMZ",
+    "Iowan Behemoth — 'Palisade'",
+    "Kairos",
+    "TESSERA PG-2 'Signature'",
+    "The Resonance Communion",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A squat, disc-like device resembling a medical diagnostic unit or industrial sensor module. Deceptively innocuous — something that could plausibly be a building component, pressure gauge, or environmental monitor. The circular form factor and matte finish make it visually 'soft' despite its lethal function.",
+    "dimensions": "110mm diameter (4.3 inches), 45mm height (1.8 inches). Compact enough to fit in a palm, small enough to conceal beneath flooring or inside wall cavities.",
+    "weight_description": "Dense and solid in hand — 420 grams (14.8 oz) feels substantial despite the small footprint, suggesting concentrated internal engineering. The weight is centered, giving it stability when placed on a surface.",
+    "primary_material": "Ceramic composite matrix — non-conductive, chemically inert, designed to defeat standard metal detection and scanning protocols.",
+    "finish": "Matte ceramic surface with a faint natural grain visible under side-lighting. No reflective properties. The surface has a slightly chalky, almost bone-like appearance — deliberately unmarked and featureless.",
+    "color_scheme": "Neutral grey-white ceramic with darker micro-fracture patterns visible in relief. Minimal color variation — designed for visual anonymity.",
+    "grip_texture": "Smooth ceramic exterior with subtle micro-texturing from the composite weave. Not intentionally ergonomic — meant to be placed rather than wielded. Cool to the touch.",
+    "distinctive_features": [
+      "Flush-mounted passive acoustic sensor array hidden beneath the top surface — only detectable under extreme magnification",
+      "Hairline seams where the piezoelectric stack housing meets the ceramic shell",
+      "Minimal asymmetry: a barely-visible pressure-relief micro-vent on the lower edge",
+      "No visible indicator lights, markings, or branding — completely unmarked",
+      "Absolutely no external cabling or attachment points — fully self-contained",
+      "The bottom surface shows faint contact scoring consistent with industrial placement tools"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC intentionally omits external markings to aid concealment. Only a laser-etched serial number exists on the interior cavity — inaccessible without disassembly.",
+    "condition_typical": "As deployed in the field: immaculate and pristine. Any cosmetic damage would attract attention. Appears unused and inert — this is the point of its design."
+  },
+  "image_prompt": "Product photography of a ceramic composite disc-shaped charge device, 110mm diameter, matte grey-white finish. Placed on dark brushed steel surface with dramatic side-lighting creating subtle relief shadows across the micro-textured surface. One unit positioned flat, a second shown at 45-degree angle to emphasize thickness and density. Shallow depth of field with slight bokeh behind. Ultra-minimal, sterile aesthetic with cool tungsten lighting at 5500K. The object should appear completely unmarked and clinical — like medical or industrial equipment. No visible ports, seams, or branding. Cyberpunk catalog style with slight color grading toward cool blue-grey tones. Macro detail inset showing ceramic composite weave texture. Shot against matte black backdrop with subtle subsurface scattering visible on ceramic edges. --ar 3:2 --v 6"
 }

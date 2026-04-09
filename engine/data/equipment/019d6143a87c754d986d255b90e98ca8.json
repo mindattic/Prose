@@ -80,5 +80,25 @@
     "Vantablack Media Spectral Barrier Display System",
     "Veslemøy Achebe-Tursynov",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting textile insert resembling a minimalist tactical vest liner or high-collar shirt insert. The outer surface appears as matte charcoal-black fabric with a subtle iridescent sheen that shifts when light catches it at oblique angles—the signature of embedded conductive mesh. The interior reveals densely woven filament architecture: copper-threaded conductor arrays interlaced with what appears to be graphene lattice, creating a visual texture reminiscent of circuit board traces translated into cloth. No visible digital display or controls; the device is entirely passive and haptic in operation.",
+    "dimensions": "Vest insert form factor, typically 45–55 cm in width when laid flat, 25–30 cm in height. Fits snugly against the torso beneath street clothing; collapses to pocket-sized when folded.",
+    "weight_description": "Handheld/wearable weight (340g). Light enough to wear under clothing for extended periods without fatigue; noticeable but unobtrusive during tactical movement.",
+    "primary_material": "Tri-layer composite: outer ballistic nylon weave treated with Vantablack proprietary coating, middle conductive mesh layer (copper and graphene filament), inner moisture-wicking polymer-silk blend housing the thermocouple array.",
+    "finish": "Matte absorption-black with micro-texture surface treatment that deadens reflectivity. Seams reinforced with silver-thread topstitching. The inner lining exhibits a faint honeycomb texture where thermocouple nodes interface with body heat.",
+    "color_scheme": "Primary: dead-flat black (EM-absorbing Vantablack treatment). Accent: minimal silver topstitching at seams and thermocouple interface points. Decoder pairing indicator uses discrete amber LED embedded in back-panel corner pocket.",
+    "interface_elements": "Zero visible interactive elements. Wearers interface via haptic feedback: a small rubberized patch on the right side permits fingertip calibration taps (frequency selection, pairing mode). Thermocouple array visible as subtle dimpled grid pattern on inner surface. Decoder pairing port hidden behind reinforced seam (micro-connector, proprietary standard).",
+    "distinctive_features": [
+      "Iridescent sheen revealing embedded conductive mesh only when light strikes surface at acute angles",
+      "Visible graphene filament matrix creating circuit-board-like aesthetic on interior",
+      "Thermocouple node grid visually prominent on inner lining—evokes high-tech thermal mapping garment",
+      "Reinforced seams with silver topstitching suggest military/tactical provenance",
+      "Entirely seamless user interface—no buttons, screens, or visible controls; pure passive operation",
+      "Faint honeycomb microstructure pattern hinting at distributed EM mimicry sensory array"
+    ],
+    "manufacturer_markings": "Subtle Voss Signal Intelligence logo (minimalist stylized V in silver thread) embroidered inside back collar. Regulatory compliance stamps for GLMZ Tier 2+ signal architecture (small textile label, nearly invisible against black). Serial number printed in thermographic ink visible only under IR light. Care instructions in five languages reference 'signal privacy apparel for executive discretion'—the oblique marketing fiction.",
+    "condition_typical": "Worn concealed beneath a work shirt, tech vest, or formal corporate layer. When visible (during changing or inspection), the black matte surface absorbs light dramatically—appears almost two-dimensional against surrounding environment. After extended wear, minor creasing visible at body contact points; no visible degradation to conductive mesh."
+  },
+  "image_prompt": "Flat-lay product photography of a folded Vantablack Media Spectral Relay Shroud vest insert on a brushed steel workbench, positioned beneath a single moody overhead LED source casting dramatic shadows. The charcoal-black fabric dominates the frame with its absorption-dead surface; at one edge, the interior is folded back to reveal the intricate copper-graphene filament matrix and honeycomb thermocouple grid pattern. A paired Vantablack decoder unit (sleek palm-sized black rectangle with single amber indicator LED) rests at 45-degree angle nearby, suggesting active operational state. Fine silver topstitching catches sidelight. Immediate environment hints at mid-tier syndicate safe house: scattered components, encrypted datapad edge-of-frame, industrial-grade signal jammer dormant in background. Cyberpunk aesthetic emphasizes material texture over tech flash—the Shroud is understated, functional, lethal in its simplicity. Ambient EM interference visualization (faint purple-blue haze/particles) suggested in air around the garment. --ar 3:2 --v 6"
 }

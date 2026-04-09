@@ -43,5 +43,25 @@
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
     "The Seam",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian mid-cut work boot with an unflinching industrial aesthetic. The steel toe cap creates a distinctive blunt silhouette at the forefoot, visible as a raised seam rather than hidden. Chunky, grounded presence with aggressive tread pattern. Pure function—no ornamentation, no apology.",
+    "fit": "Snug but not restrictive around the ankle; roomier through the midfoot to accommodate socks and swelling during long shifts. Designed for durability and multiple resoling cycles rather than fashion. Breaks in quickly but feels substantial from day one.",
+    "primary_material": "Flat black waxed canvas upper with visible double-stitching along the welt. Thick rubber lug sole with deep, angular treads. Steel reinforcement cap at the toe.",
+    "texture": "The canvas has a subtle matte finish with slight tactile ripples from the wax treatment. The rubber sole is deeply textured with pronounced geometric lugs. Steel shows minimal shine—intentionally unpolished.",
+    "color_scheme": "Monolithic flat black. No accent colors, no branding flourishes. The only visual variation is the darker stitch lines and the slightly lighter gray of the exposed steel toe.",
+    "closures": "Traditional lace-up with four eyelets; standard flat canvas laces. No hidden hardware—every fastening point is visible and accessible.",
+    "distinctive_features": [
+      "Exposed steel toe cap visible at the seam—design statement of refusing aesthetic softening",
+      "Double-stitched welt showing robust construction",
+      "Deep lug sole with aggressive angular tread pattern",
+      "Minimal branding—only small embossed Veldtmann logo on heel counter",
+      "Waxed canvas that develops patina over time",
+      "Resoled multiple times typical—readily available replacement soles"
+    ],
+    "tier_indicator": "Tier 2-3 working class. Affordable, durable, designed for those who value tool replacement over fashion. Ubiquitous in industrial and construction settings.",
+    "cultural_context": "Signals hands-on labor—factory work, construction, infrastructure maintenance, warehouse operations. Worn by people who trust equipment that doesn't lie about what it does. A badge of practical work rather than status.",
+    "condition_typical": "Weathered but maintained. Canvas may show scuffs and water marks; sole shows worn tread from heavy use but rarely replaced unless sole is critically compromised. Laces are typically frayed or replaced. Stitching may show stress points but rarely breaks."
+  },
+  "image_prompt": "Cyberpunk fashion photography: Veldtmann Steelcap 7 work boot on a muscular, augmented worker's foot, shot from a dynamic low angle. Black waxed canvas gleaming under neon sodium light, steel toe cap catching harsh cyan and magenta reflections. Distressed canvas showing wear patterns from real labor. Background: gritty GLMZ industrial sector—corrugated metal wall, oil stains, puddles reflecting overhead lighting. Moody, harsh lighting with deep shadows. Hyper-detailed close-up of thick rubber lug sole and double-stitched welt. The boot looks lived-in, functional, uncompromising. --ar 2:3 --v 6"
 }

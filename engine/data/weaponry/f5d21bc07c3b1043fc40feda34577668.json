@@ -44,5 +44,35 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "Solina Barreto-Kiptoo",
+    "Synaptrel",
+    "The Human Baseline Alliance"
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian, deliberately simple assault rifle with a distinctly modular aesthetic. The KPA-15 presents a clean, angular silhouette dominated by stamped steel components and polymer furniture. Its design philosophy is visible in every line—no unnecessary curves, minimal ornamentation, everything optimized for factory production and field repair. The rifle has a squared-off receiver, a flat-top picatinny rail system, and a characteristic modular rail interface port on the left side of the lower receiver that marks it immediately as a Diaspora variant.",
+    "dimensions": "Overall length: 94.5 cm (carbine config), Barrel length: 41.6 cm, Width across furniture: 8.2 cm",
+    "weight_description": "Noticeably light in hand—3.2 kg feels almost hollow compared to heavier military platforms. The balance is slightly forward-heavy due to barrel and gas tube, but deliberately manageable for prolonged use. Has the feel of a weapon designed for sustained volume fire rather than precision work.",
+    "primary_material": "Stamped and welded steel receiver and barrel group, polymer lower furniture, aluminum rail segments, synthetic polymer handguard and stock",
+    "finish": "Matte black phosphate coating on steel components—utilitarian and non-reflective. The polymer furniture shows a slightly textured, dull dark gray finish typical of injection-molded components. Some variants display visible stamping marks and assembly seams from mass production.",
+    "color_scheme": "Predominantly matte black steel with dark gray polymer accents. Minimal branding—silver or dark gray markings only",
+    "grip_texture": "Rubberized pistol grip with subtle vertical ribbing for retention. Polymer handguard has a lightly textured surface designed for gloved operation. The magazine well is oversized for easy manipulation even in tactical gear.",
+    "distinctive_features": [
+      "Characteristic modular BCI-link interface port on left side of receiver—recessed rectangular mounting point with four threaded holes",
+      "Flat-top picatinny rail running the full length of upper receiver",
+      "Stamped steel construction visible as subtle linear patterns and slight surface imperfections",
+      "Universal mag well designed for rapid magazine changes",
+      "Gas tube and charging handle positioned for ambidextrous operation",
+      "Simplified front and rear iron sights—polymer, low-profile, field-replaceable",
+      "Magazine catch and release buttons slightly oversized for tactical glove compatibility",
+      "Ventilation cuts in polymer furniture to reduce weight without sacrificing durability"
+    ],
+    "manufacturer_markings": "KANG-PETROV ARMS logo stamped in small silver text on left side of receiver above the magazine well. Serial number plate (stainless steel) mounted on left side of lower receiver with Φ-currency denomination and production date codes. Regional manufacturer variant stamps appear on the barrel beneath the gas tube.",
+    "condition_typical": "Well-maintained examples show light wear on high-contact points—charging handle, magazine well edges, and grip area. Battle-worn variants display scratched polymer furniture, scuffed rail finishes, and visible component replacement (mixing parts from different production runs). Even heavily used Diasporas maintain function due to stamped simplicity—rarely pristine, always serviceable."
+  },
+  "image_prompt": "Product photography of the Kang-Petrov Arms KPA-15 Diaspora assault rifle positioned on a dark matte surface, three-quarter view angle showing the distinctive BCI-link interface port on the left receiver. Dramatically lit with cool blue-white side lighting emphasizing the matte black phosphate finish and stamped steel construction. Gloved hands (tactical gloves, dark synthetic material) holding the rifle by the handguard and pistol grip, fingers clear of trigger. Show the modular rail interface port in sharp focus with subtle LED indicator points visible. Dark gray polymer furniture and gray-metal accents catch side-light to show material contrast. Cyberpunk GLMZ aesthetic—gritty, utilitarian, mass-produced quality, the look of a weapon that arms millions. 2226 tech-noir environment suggested through lighting. Shallow depth of field. --ar 3:2 --v 6"
 }

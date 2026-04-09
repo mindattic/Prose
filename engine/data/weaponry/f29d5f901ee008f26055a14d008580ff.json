@@ -45,5 +45,36 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Arcturus Defense Solutions CrisisNet BT-4 Battlefield Triage",
+    "Djeneba Orlov-Obeng",
+    "GLMZ",
+    "Tessera Corponation",
+    "Tessera Corponation Distributed Reflex Mesh",
+    "The Shelf",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "physical_description": {
+    "visual_profile": "A bulky shoulder-mounted launcher with a distinctive wide, flared muzzle. The profile suggests industrial restraint equipment rather than traditional weaponry — more tool than gun. The barrel widens toward the tip like a megaphone, designed to unfurl the net without tangling. Overall silhouette is angular and functional, with prominent shoulder stock and integrated sighting rail.",
+    "dimensions": "550mm length overall, 280mm barrel length, 180mm width at widest point (muzzle flare), 120mm height at stock",
+    "weight_description": "Noticeably hefty at 3.0kg — balanced toward the shoulder stock for stability, but the wide muzzle creates forward-heavy feel. Requires two-handed shouldering. Feels industrial and purposeful, not nimble.",
+    "primary_material": "Reinforced polymer composite frame with steel deployment mechanism. The muzzle flare is rigid molded polymer with internal steel support ribs.",
+    "finish": "Matte gunmetal gray polymer with brushed steel accents around the firing mechanism. Some weathering expected from field use — scuff marks on the shoulder stock, micro-abrasions on the polymer surfaces.",
+    "color_scheme": "Gunmetal gray primary, steel gray deployment collar, black rubber grip and cheek rest, accent lines of matte anthracite along the muzzle flare",
+    "grip_texture": "Rubberized polymer grip with deep crosshatch pattern for secure shouldering with gloved hands. Cheek rest is padded with thermoplastic elastomer for comfort under body armor.",
+    "distinctive_features": [
+      "Oversized flared muzzle designed for net unfurling without snags",
+      "Integrated pressure gauge on left side showing deployment charge status",
+      "Cartridge ejection port with spring-loaded cover on right side of receiver",
+      "Picatinny rail mounted on top for optional targeting systems",
+      "Single large trigger guard designed for gloved operation",
+      "TESSERA corporate logo stamped into left shoulder stock",
+      "Net deployment cartridge visible through reinforced transparent polymer window in the receiver",
+      "Faint wear patterns from repeated shouldering and field deployment"
+    ],
+    "manufacturer_markings": "TESSERA PAYROLL SERVICES logo (stylized checkmark) embossed on left shoulder stock. Serial number plate mounted on right receiver with microscopic text. Model designation 'NL-6' stamped above the trigger guard. Optional regulatory compliance marking on barrel.",
+    "condition_typical": "Well-maintained in licensed hands — cleaned and pressure-tested regularly. Field-worn but functional, with visible patina on steel components and minor cosmetic damage to polymer from transport and deployment operations."
+  },
+  "image_prompt": "Product photography of a TESSERA NL-6 Web Caster shoulder-mounted net launcher, positioned on dark matte black surface at 45-degree angle. Dramatic side-lighting from upper left reveals the reinforced polymer composite frame in gunmetal gray and brushed steel deployment collar. The distinctive oversized flared muzzle catches light to show its industrial geometry. Gloved hand (tactical leather, subtle chrome knuckle augment visible) grips the rubberized stock. Shallow depth of field with sharp focus on the muzzle flare and pressure gauge. Cyberpunk aesthetic: neon reflection on the transparent cartridge window showing the coiled deployment net. Cool color grading with blue-tinted shadows. Studio-quality lighting emphasizing the tool-like functionality and corporate manufacturing precision. --ar 3:2 --v 6"
 }

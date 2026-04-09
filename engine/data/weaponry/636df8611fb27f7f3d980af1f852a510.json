@@ -37,5 +37,34 @@
     "frequency_adaptive",
     "tier_3"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Axiom Systems Synapse Interruptor SI-3 'Stutter'",
+    "GLMZ",
+    "Narrowcast",
+    "NullPoint Technologies NeuroGuard NG-1 'Static'",
+    "Volkov-Saito Precision VS-40 'Magistrate'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, pistol-like cylinder with a forward-facing emitter array. The design emphasizes precision and directed targeting — nothing like a traditional firearm. It reads as medical-tech crossed with targeting equipment, with a pronounced muzzle cap that houses the focusing array. The overall impression is clinical efficiency: compact, purposeful, slightly intimidating.",
+    "dimensions": "12 cm length, 4 cm diameter cylinder. Emitter aperture approximately 2.5 cm diameter. Ergonomic grip section 3 cm deep.",
+    "weight_description": "Balanced and light in hand — 145g feels almost insubstantial, making it easy to aim and maintain on target. The weight distribution favors the grip, creating minimal muzzle-heavy sensation.",
+    "primary_material": "Medical-grade polymer composite body with embedded conductive trace patterns visible beneath translucent sections. Forward emitter housing is brushed aluminum alloy with precision-machined focusing rings.",
+    "finish": "Matte charcoal polymer with satin-finish aluminum accents. The emitter cap shows faint oxidation patterns suggesting precision machining marks. Minimal wear-resistant coating.",
+    "color_scheme": "Charcoal gray body with gunmetal silver emitter ring. Accent lighting: faint blue LED indicators on the grip section (dormant unless active).",
+    "grip_texture": "Soft-touch rubberized polymer with subtle grip stippling. Finger wells are precisely molded. Activation button sits naturally under index finger — textured metal beneath rubber coating for positive feedback.",
+    "distinctive_features": [
+      "Forward-facing electromagnetic focusing rings (3 stacked rings of brushed aluminum)",
+      "Translucent polymer sections revealing internal capacitor coils and circuitry",
+      "Small blue LED array on grip (status/frequency lock indicator)",
+      "Textured metal activation button with slight resistance",
+      "Narrow cooling vents along grip section",
+      "Micro-laser targeting point on emitter (faint red)",
+      "Frequency-lock indicator window showing active profile",
+      "Recessed charging port on grip base (gold contacts visible)"
+    ],
+    "manufacturer_markings": "NullPoint Technologies logo (Φ symbol variant) centered on grip. 'SYNAPSEJAM SJ-3' etched below logo. Serial number stamped on charging port plate. Regulatory compliance stamps in micro-text along barrel. Thin white accent line running along seam between body and grip.",
+    "condition_typical": "Maintained in pristine condition by owners — this is a precision instrument requiring care. Security consultant inventory models show minimal handling wear. Field units may exhibit faint wear on grip stippling and slight scuffing on emitter cap from storage, but typically kept clean and carefully stored."
+  },
+  "image_prompt": "Product photography: NullPoint Technologies SynapseJam SJ-3 'Migraine' BCI disruption device, held in a gloved hand (dark tactical glove, augmented knuckles visible) against a brushed steel surface. Three-quarter angle showing emitter array and grip detail. Dramatic side-lighting revealing the translucent polymer sections and internal circuitry. Blue LED indicators glow softly on the grip. Shallow depth of field, sharp focus on emitter cap with its concentric focusing rings. Cold color grading (blue-gray tones). Scattered beside it: technical readouts on translucent HUD overlay, frequency profile data. High-tech medical-device aesthetic, cyberpunk GLMZ security equipment. --ar 3:2 --v 6"
 }

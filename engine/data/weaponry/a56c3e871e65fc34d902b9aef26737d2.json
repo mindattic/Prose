@@ -43,5 +43,39 @@
     "artisan",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Boubacar Krstić-Amara",
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "Saoirse Mwamba-Drăghici",
+    "Sherman Heights",
+    "Solange Mbeki-Vásárhelyi",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "The Heritage Vault"
+  ],
+  "physical_description": {
+    "visual_profile": "A classicist's revolver—deliberately retro with the clean lines of pre-21st century gunsmithing. The octagonal barrel catches light like a jeweler's cut, tapering gracefully from frame to muzzle. The frame has the warm, subtle gradations of case-hardened steel, while the wooden grips suggest heirloom furniture more than a weapon. At first glance: precision nostalgia wrapped in hand-finished steel.",
+    "dimensions": "Total length: 23 cm | Barrel length: 10.2 cm | Frame width at cylinder: 4.1 cm | Cylinder depth: 3.8 cm",
+    "weight_description": "Hefty but balanced—the .44 Special doesn't bite like a Magnum, but the 1.04 kg sits solid in the hand. Single-action mechanics add no unnecessary weight; every gram serves purpose or aesthetics.",
+    "primary_material": "Case-hardened steel frame and cylinder; octagonal barrel in high-carbon steel; reclaimed hardwood grip panels (species varies: walnut, cherry, oak, hickory sourced from GLMZ deconstructed structures)",
+    "finish": "The frame and barrel feature a mottled, gradient case-hardening finish—blues and purples bleeding into gun-metal gray, no two examples identical. Wear develops character intentionally. Octagonal barrel has a polished-satin finish that reflects without gloss.",
+    "color_scheme": "Primary: Deep case-hardened steel (charcoal-blue-purple gradients) | Secondary: Rich warm wood tones (medium to dark brown) | Accents: Matte black trigger and hammer, steel spring visible through frame cutouts",
+    "grip_texture": "Reclaimed hardwood panels, hand-sanded smooth with subtle grain visible. Checkering (fine crosshatch) in the grip's upper third provides purchase without feeling rough. The wood has the patina of age—slightly warmed from handling, protective oils in the grain.",
+    "distinctive_features": [
+      "Octagonal barrel with subtle fluting at the breech",
+      "Exposed hammer with hand-knurled spur, polished to a high shine",
+      "Visible trigger spring and sear mechanism through frame window",
+      "Hand-fitted cylinder with perfect radial alignment—no wobble",
+      "Generous ejector rod beneath barrel, knurled for grip",
+      "Recessed loading gate with beveled edge",
+      "Signature Volkov-Saito maker's mark inlaid in steel at frame base",
+      "Certificate number etched in tiny serif font on barrel underside",
+      "Slight patina on internal springs—intentional aging for aesthetic consistency"
+    ],
+    "manufacturer_markings": "Volkov-Saito Precision logo (stylized V-S cipher) inlaid as steel-on-steel on the left frame, above trigger guard. Caliber marking (.44 SPECIAL) stamped in classical serif font on barrel top, in line with the sighting plane. Model designation (VS-R44 HERITAGE) hand-stamped on frame left side. Gunsmith's initials (two letters) appear on the right frame—each unit hand-built, each builder identified.",
+    "condition_typical": "Most examples pristine or near-mint, kept in leather presentation cases. Those carried show honest wear: a soft patina on the grip from hand oils, micro-scratches on the barrel from holster friction, cylinder slightly darkened from handling. Battle-worn examples are vanishingly rare—these are not disposable weapons. Even 'used' examples are meticulously maintained."
+  },
+  "image_prompt": "Volkov-Saito VS-R44 Heritage revolver photographed from three-quarter angle, resting on a matte black gunsmith's workbench. The octagonal barrel is center-frame, catching dramatic side-lighting that reveals the mottled case-hardening blues and purples. The reclaimed wood grips are warm and visible, grain texture clear. A gloved hand (leather, neutral color) cradles the grip, finger alongside frame. Background: soft-focus workshop setting with brass casing, gunsmith tools slightly out of focus. Lighting is warm side-key with cool rim-light. Highly detailed surface texture—every checkering mark, every sanding mark in the wood, every steel reflectance visible. Cyberpunk context: subtle—QUANTA symbol on a mounted price placard behind, or minimalist workshop UI on a holodisplay. The weapon itself is timeless, the setting is 2226. Professional gunsmith catalog aesthetic, luxury goods presentation. --ar 3:2 --v 6"
 }

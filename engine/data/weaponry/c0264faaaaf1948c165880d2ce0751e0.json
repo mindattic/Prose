@@ -42,5 +42,34 @@
     "quality",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Dragan Petersen-Bah",
+    "Nika Svensson-Kone",
+    "Oleander Tetteh-Vasyliev",
+    "The Portico",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
+    "ZhengDao Bioelectric LumbarBrace Pro"
+  ],
+  "physical_description": {
+    "visual_profile": "A purposefully austere full-size pistol with aggressive angular geometry — the slide features sharp, forward-raked cocking serrations that catch light dramatically. The frame tapers cleanly from trigger guard to grip, projecting controlled authority rather than flashiness. The overall impression is surgical precision wrapped in gunmetal restraint.",
+    "dimensions": "Length: 203mm | Height: 138mm | Width: 33mm | Barrel length: 102mm",
+    "weight_description": "Substantial but balanced — 0.92kg feels confident in the hand without inducing fatigue, the billet aluminum keeping it lighter than steel competitors while maintaining solid recoil absorption",
+    "primary_material": "Aerospace-grade billet aluminum frame with hardened steel slide and match-grade barrel",
+    "finish": "Matte gunmetal grey with brushed micro-texture, absolutely zero shine — designed to absorb light rather than reflect it. The slide shows intentional tool marks from precision machining, visible under close inspection",
+    "color_scheme": "Cool gunmetal grey as primary; hardened steel slide with faint blue undertones from heat treatment; minimal accent color except functional markings",
+    "grip_texture": "Subtly checkered aluminum grip with fine diamond-pattern knurling — aggressive enough for positive purchase through gloves, restrained enough to appear professional during credential inspections",
+    "distinctive_features": [
+      "Forward cocking serrations arranged in aggressive parallel lines that catch side-lighting",
+      "Machining marks deliberately left visible on frame sides — proof of billet-cut precision",
+      "Minimalist iron sights with tritium dots (faintly visible as tiny luminous points)",
+      "No rail system or accessory mounting — pure function",
+      "Ambidextrous slide stop levers integrated flush with frame",
+      "Cleanly stamped caliber and model designation on slide",
+      "Recessed grip safety with sharp edges for positive disengagement"
+    ],
+    "manufacturer_markings": "VOLKOV-SAITO PRECISION stamped in thin serif font on slide; VS-40 designation and MAGISTRATE engraved in matte finish below ejection port; serial number on frame in microscopic font; manufacturer's mark (stylized VS monogram) on grip side — all markings integrated into the design rather than applied",
+    "condition_typical": "Exceptionally well-maintained — these weapons see regular professional cleaning and inspection. Field-worn examples show subtle erosion of finish on grip corners and rear serrations, but frame and slide remain pristine. Holster wear appears as a faint circular impression on frame side where standard duty rigs contact the weapon"
+  },
+  "image_prompt": "Product photography of the Volkov-Saito VS-40 Magistrate pistol positioned at 45-degree angle on matte black carbon-fiber surface, dramatic side-lighting from upper left creating sharp shadows across angular slide serrations and billet frame texture. Gloveless hand (bare skin, possibly with subtle augmentation scars on wrist) gripping frame from right side, trigger finger straight along frame. Aerospace aluminum frame catches directional light showing microscopic machining patterns. Cool gunmetal color scheme with minimal highlights. Professional studio setup, shallow depth-of-field with weapon tack-sharp. High-detail capture of tritium sight dots, crisp serial number markings, and functional geometry. Cyberpunk industrial aesthetic, corporate security weapon aesthetic, 2226 GLMZ enforcement standard. --ar 3:2 --v 6"
 }

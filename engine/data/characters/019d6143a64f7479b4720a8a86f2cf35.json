@@ -215,5 +215,13 @@
     "posture_movement": "Hunched slightly forward, as if permanently leaning toward a screen. Movements are economical and precise when purposeful, but otherwise loose and fidgeting. Hands gesticulate when explaining technical concepts. Walks with eyes down or unfocused. When engaged in problem-solving, becomes almost motionless except for rapid finger movements.",
     "clothing_style": "Tier 2 student aesthetic — functional, thrifted, layered. Typical outfit: oversized grey Institute hoodie with fraying cuffs, black utility pants with multiple pockets (actual tools in them), scuffed platform sneakers with mismatched laces. Wears the same three hoodies on rotation. One visible patch on left shoulder reads 'E.L.F. THEOLOGY' in hand-stitched letters. Jewelry is minimal — a single silver ring on right index finger that doubles as a micro-tool. Presentation reads: 'I do not care about appearance, but I have thought about how to dress functionally.'"
   },
-  "image_prompt": "Portrait of a seventeen-year-old nonbinary hacker with Ukrainian-Tahitian heritage, medium height with soft build and exhausted expression, dark wavy shoulder-length hair threaded with glowing white bioluminescent strands (one strand malfunctioning amber), warm olive skin tone, deep brown eyes, angular face with dark circles. Visible silver-chrome audio amplifier behind left ear. Wearing oversized grey technical institute hoodie with fraying cuffs and black utility pants, sitting hunched forward in basement server room aesthetic, neon server lights reflecting on face, hands positioned near keyboard in focused gesture, cyberpunk 2226, moody blue and amber lighting, photorealistic, detailed facial features showing strain and intellectual intensity, --ar 2:3 --v 6"
+  "image_prompt": "Portrait of a seventeen-year-old nonbinary hacker with Ukrainian-Tahitian heritage, medium height with soft build and exhausted expression, dark wavy shoulder-length hair threaded with glowing white bioluminescent strands (one strand malfunctioning amber), warm olive skin tone, deep brown eyes, angular face with dark circles. Visible silver-chrome audio amplifier behind left ear. Wearing oversized grey technical institute hoodie with fraying cuffs and black utility pants, sitting hunched forward in basement server room aesthetic, neon server lights reflecting on face, hands positioned near keyboard in focused gesture, cyberpunk 2226, moody blue and amber lighting, photorealistic, detailed facial features showing strain and intellectual intensity, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 37.7,
+    "Hispanic/Latin American": 23.7,
+    "Sub-Saharan African": 12.9,
+    "Middle Eastern": 11.7,
+    "Southeast Asian": 8.8,
+    "Eastern European": 5.2
+  }
 }

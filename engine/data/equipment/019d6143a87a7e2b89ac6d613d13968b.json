@@ -74,5 +74,24 @@
     "The Dead Channel",
     "The Undertow",
     "Vantablack Media"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A pair of slim, matte black rectangular cards resembling high-end access badges or thin encrypted storage media. Each unit has a subtle convex pressure surface on one face with barely visible micro-dimpling arranged in a 4x6 grid pattern. The opposite face is recessed slightly, creating an almost imperceptible cup — designed to nestle against a palm. No obvious lights or displays; information is minimalist and internal.",
+    "dimensions": "8cm wide x 5cm tall x 2cm thick per unit; credit-card-thin profile except for a subtle raised spine",
+    "weight_description": "90g per unit — light enough to pocket, substantial enough to feel intentional in hand; carries weight like a small ceramic tile",
+    "primary_material": "Aerospace-grade matte black composite with microstructured grip surface; edges beveled slightly to reduce tactile edges",
+    "finish": "True vantablack-adjacent absorption finish — light seems to die on the surface; minimal reflection even under direct lighting. Grip dimples catch only the faintest highlights",
+    "color_scheme": "Nearly absolute matte black with minimal accent: tiny Neon Arcade Interactive logo in charcoal barely distinguishable on lower spine; hairline etching of paired unit serial numbers visible only at extreme angles",
+    "interface_elements": "Biometric pressure array of 24 contact points across the concave palm-facing surface — individual points unmarked but detectable as slight topographical variations. Ultra-thin connector port (custom, proprietary standard) recessed into bottom edge. No buttons, screens, or LED indicators anywhere on housing",
+    "distinctive_features": [
+      "Grip pressure surface creates 24-point biometric lock — no visual indication of contact points",
+      "Vantablack-grade matte finish that absorbs rather than reflects light",
+      "Intentionally featureless design — only the pressure geometry hints at function",
+      "Paired units must physically touch or be held simultaneously to activate — tactile handshake protocol",
+      "Recessed connector port suggests field maintenance but is rarely used"
+    ],
+    "manufacturer_markings": "Neon Arcade Interactive logo (small, charcoal on black) on lower spine; laser-etched unit pairing identifiers (serial pairs); faint regulatory marking (GLMZ compliance stamp) on reverse edge, almost invisible",
+    "condition_typical": "Units are carried in soft pouches or jacket pockets, often with slight scuff marks on edges from repeated pocket carry. Grip dimples may show faint skin oils or wear patterns from heavy use. Serial markings may be deliberately obscured with tape or marker by users in sensitive work"
+  },
+  "image_prompt": "Two matte black Vantablack Media Consensual Blind Relay units photographed on a brushed steel workbench under cool blue-white LED task lighting, one unit rotated 45 degrees to show its pressure-dimpled palm surface against a blurred cyberpunk city backdrop through rain-streaked glass. Dramatic side lighting creates imperceptible highlights on the vantablack finish while leaving surfaces largely light-absorbent and mysterious. Hand reaching toward paired units suggesting simultaneous grip activation. Neon Arcade Interactive branding barely visible on spines. --ar 3:2 --v 6"
 }

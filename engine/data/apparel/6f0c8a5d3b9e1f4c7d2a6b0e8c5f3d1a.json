@@ -44,5 +44,29 @@
   "related_entities": [
     "Irontide Tidal Energy",
     "The Undertow"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A streamlined mid-length jacket that bridges professional and utilitarian aesthetics. Sits between hip and mid-thigh, creating a compact silhouette that reads as deliberately minimalist. The matte gray exterior shifts tonally under different lighting, creating an almost adaptive appearance. Worn by working professionals who need reliability without drawing attention.",
+    "fit": "Slim but not constricting. Tailored through the shoulders and chest, with enough room in the torso for layering. Sleeves taper toward the wrist where the control dial is mounted. The cut allows it to function under corporate office wear or over base layers for fieldwork.",
+    "primary_material": "Matte-finish nylon exterior; thin synthetic insulation layer; integrated thin-film battery panel and heating element mesh in back lining. Durable and treated against moisture and minor abrasion.",
+    "texture": "Smooth, non-reflective nylon face with a slightly technical tactile quality. Interior lining feels subtly textured where the heating elements run — barely noticeable but present. Has the precision feel of industrial apparel rather than consumer fashion.",
+    "color_scheme": "Medium gray base that appears neutral in most light but shifts slightly cooler or warmer depending on ambient conditions. No pattern. Minimal contrast — zipper pulls and dial housing are dark gunmetal.",
+    "closures": [
+      "Full-length front zipper (YKK spec, gunmetal slider)",
+      "Magnetic storm flap overlay",
+      "Wrist cuff friction-fit adjustment"
+    ],
+    "distinctive_features": [
+      "Analog rotary dial at left cuff controlling three heat settings (low/medium/high)",
+      "Visible thin-film battery panel across back lining (functional, not decorative)",
+      "Reinforced thermal seams along spine and shoulder blades",
+      "Subtle Graymark woven label at interior neckline",
+      "Hidden zippered pocket inside right chest panel (battery status indicator light accessible from outside)",
+      "No visible branding on exterior — designed for professional discretion"
+    ],
+    "tier_indicator": "Tier 3 aspiration — accessible technical investment wear. Not luxury, not salvage. Signals someone who budgets carefully for tools that last.",
+    "cultural_context": "Worn by logistics coordinators, dock workers, municipal infrastructure staff, mid-level corporate employees, and anyone working outdoor/temperature-variable environments in the GLMZ. Signals practical competence and modest financial stability. Popular among people who reject BCIs as unnecessary but embrace functional augmentation.",
+    "condition_typical": "Broken-in. After a season or two of use, small wear marks appear at the cuff where the dial is adjusted repeatedly. Nylon develops a patina. Battery panel backing shows minor scratches from daily handling. Still functionally pristine — Graymark designs for durability, not planned obsolescence."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a Graymark Thermal Shell on a lean, augmented model against an industrial concrete wall. Overcast GLMZ lakefront lighting, cool and diffuse. The jacket's matte gray nylon catches light unevenly, emphasizing its technical texture. Close detail shot of the left cuff showing the analog heat dial with low-medium-high markings. Model's hand resting near zipper pull. Minimal styling — no jewelry, functional aesthetic. Background suggests Great Lakes harbor infrastructure in soft focus. Moody, professional, utilitarian. --ar 2:3 --v 6"
 }

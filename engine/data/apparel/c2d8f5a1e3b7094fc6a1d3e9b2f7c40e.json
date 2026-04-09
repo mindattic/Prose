@@ -55,5 +55,30 @@
     "ShieldTech CLA-3 'Cascade'",
     "Synaptrel",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "High-visibility utility silhouette optimized for industrial electrical work. The wearer appears competent, grounded, and marked by the GLMZ's essential infrastructure class. Sun-faded mustard yellow forms the visual anchor, grounded by tan canvas and charcoal mesh. The retroreflective tape catches light like a safety beacon. This is the uniform of someone who keeps the city's nervous system alive.",
+    "fit": "Relaxed, functional, movement-prioritized. The shirt drapes loosely over the chest for air circulation under load. The vest sits unstructured over the shirt. Trousers cut straight and roomy through the leg with a gusseted crotch for crouching and climbing. Boots anchor the frame with solid, non-negotiable stance. Everything sized for layering and rapid augment access.",
+    "primary_material": "FR-rated aramid blend shirt and vest (flame-resistant to 600°F); FR canvas trousers in tan; brown leather-analog work boots with composite toe; nitrile-coated cotton gloves. All materials selected to survive arc flash, thermal stress, and electrical contact without conducting.",
+    "texture": "The shirt has a slight weave texture, softened by repeated washing and sun exposure. The vest mesh is open-weave, airy. Canvas trousers carry a broken-in, slightly stiff hand. Boots are utilitarian matte leather-analog with textured grip soles. Nitrile gloves have a slightly tacky, non-slip grip surface. Retroreflective tape has a subtle prismatic shimmer.",
+    "color_scheme": "Sun-faded mustard yellow (shirt) as primary; charcoal gray (vest) as secondary; tan canvas (trousers); brown leather-analog (boots). Bright yellow hard hat with GridPatch decal. Retroreflective tape in safety white/silver across upper back. No bright accent colors—all choices driven by visibility and thermal safety, not fashion.",
+    "closures": "Pearl-snap closures on shirt (arc-safe). Velcro breakaway on right cuff (augment accommodation). Metal-free hook-and-loop on trouser cargo pockets. Lace-up dielectric boots. Hard hat clips to vest retention loop via metal-free strap.",
+    "distinctive_features": [
+      "GridPatch utility patch embroidered on left chest pocket",
+      "Pre-modified right cuff velcro breakaway for chrome augmentation access",
+      "Mesh back panel on vest for heat dissipation during summer shifts",
+      "Broad retroreflective safety tape across upper back (visibility in grid substations and tunnels)",
+      "Reinforced collar loop for hard hat retention strap",
+      "Hammer loop on left thigh",
+      "Double-pocket design on shirt (practical storage for tools, components, permits)",
+      "Gusseted crotch in trousers (designed for climbing and crawling through maintenance shafts)",
+      "Composite toe cap on boots (non-conductive, won't spark against metal grates)",
+      "Dielectric rating on boots (electrical hazard protection)",
+      "All metal hardware replaced with metal-free alternatives"
+    ],
+    "tier_indicator": "Tier 3 — working-class functional. This is the uniform of essential infrastructure labor, neither discardable nor compensated at corporate rates. GridPatch-issued vest and hard hat signal employment stability. Personal-purchase components (shirt, trousers, boots) show quality consciousness within budget constraints — the wearer knows their job can kill them.",
+    "cultural_context": "Electrical maintenance crew member for GridPatch Infrastructure Services. Marks the wearer as someone who understands power systems, augmentation compatibility, and industrial safety protocols. A visible grid-keeper in a city dependent on uninterrupted current. The worn appearance and practical modifications signal years of field experience, not green naïveté.",
+    "condition_typical": "Broken-in and field-worn. The mustard shirt shows UV fading and minor scuff marks from tool belts and equipment contact. The vest has been patched once or twice on the mesh panel. Trousers bear stains and scuffs that won't come out—grease, concrete dust, trace copper oxides. Boots are scuffed but maintained (work boots are expensive and footwear failures in electrical work are fatal). The hard hat has minor impact marks. Everything is cleanable but shows honest use."
+  },
+  "image_prompt": "A weathered electrical maintenance worker in full GridPatch dayside kit stands against the interior of a dimly-lit power distribution substation, red warning lights casting amber shadows across sun-faded mustard shirt and charcoal mesh vest. The hard hat with GridPatch decal sits firmly on their head. Retroreflective safety tape glows white where a portable work light catches it. Their boots grip a metal grate floor with confident stance. Industrial cables and transformer equipment loom in soft focus behind. Moody industrial lighting, cool shadows meeting warm work lights. Fine detail on fabric texture—frayed cuff, canvas wear patterns, glove nitrile texture. The wearer appears mid-shift, capable, essential. --ar 2:3 --v 6"
 }

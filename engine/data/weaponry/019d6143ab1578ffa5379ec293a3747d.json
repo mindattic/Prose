@@ -39,5 +39,33 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Guardian PocketShock PSR-1 'Nudge'",
+    "Marrowvault Cryogenics",
+    "VitaCore BloomFilter Olfactory Modulation Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist shoulder-mounted cannon with a pronounced forward-raking stance. The barrel assembly dominates the profile — a chunky, heat-sink-ribbed cylinder that tapers slightly toward the muzzle. The weapon has an aggressive, purposeful geometry that reads as purely military. The capacitor pack forms a heavy dorsal hump behind the breech, creating a distinctive silhouette when shouldered.",
+    "dimensions": "Overall length: 94 cm | Barrel length: 52 cm | Width at capacitor pack: 18 cm | Height from mounting rail to top of heat dissipation fins: 24 cm",
+    "weight_description": "Hefty and front-heavy — the barrel assembly pulls the center of mass forward, requiring braced shouldering. The 8.2 kg distributed load feels substantial but manageable for a two-handed mount. Users describe it as 'anchor-like but purposeful.'",
+    "primary_material": "Aerospace-grade titanium alloy frame with tungsten thermal-sink barrel assembly. Capacitor pack housing is reinforced carbon composite with embedded copper heat-dissipation pathways visible through semi-translucent resin sections.",
+    "finish": "Matte charcoal black with raw brushed-metal heat dissipation fins running the length of the barrel. The titanium frame shows deliberate tool marks and micro-scratches from field handling. Capacitor housing has a satin finish with visible thermal scorch marks from repeated charge cycles.",
+    "color_scheme": "Gunmetal black primary with brushed silver-gray barrel ribbing. Accent colors: deep orange around the muzzle aperture (heat-resistant optical coating), thin crimson warning striping along the capacitor pack.",
+    "grip_texture": "The rear grip assembly is wrapped in reinforced non-slip rubber with a slight chevron pattern. The foregrip (mounted on the barrel assembly for stabilization) features knurled titanium beneath a thin grippy polymer overlay. The shoulder cup is padded with ceramic-infused foam designed to dissipate heat transfer.",
+    "distinctive_features": [
+      "Prominent spiral heat-sink fins running the full length of the barrel — actively cool to the touch between cycles but glow faintly orange after sustained fire",
+      "Recessed thermal bloom containment optics mounted just forward of the breech — a cluster of small hexagonal apertures that appear to shift color from amber to pale blue depending on charge state",
+      "Dual capacitor status LEDs on the dorsal pack: one red (low charge), one amber (partial charge), one green (ready) — cycling in sequence during recharge cycles",
+      "Muzzle aperture appears as a flat, slightly recessed circular opening with faint concentric rings — the focusing lens is recessed 3 cm behind the muzzle face",
+      "Integrated pressure-relief vents along the sides of the barrel assembly — small slotted openings that hiss quietly during thermal dissipation",
+      "Weapon-mounted thermal profiler lens: a small secondary optic mounted at 45-degree angle on the left side of the breech, allowing operator sight-line confirmation of target heating",
+      "Scorch marks and micro-fractures around the muzzle and barrel flanges from repeated thermal cycling — evidence of field stress",
+      "Mounting rail underside shows a series of alignment marks and calibration scratches"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (a stylized compass rose with thermal wave motif) stamped in deep relief on the left side of the capacitor pack. 'SUNSTROKE TL-9' engraved in military stencil font on the right barrel flange. Iron Point Ammunition subsidiary stamp on the dorsal capacitor housing. Serial number laser-etched along the underside of the mounting rail. Faint crossed-circle 'military restricted' warning symbol molded into the grip assembly.",
+    "condition_typical": "Field-worn but meticulously maintained. The weapon shows evidence of active deployment: scorch marks, minor dents in the capacitor housing, heat-stress discoloration around the muzzle. However, the heat-sink fins are clean, optics are clear, and all LEDs function crisply. Operators of this tier-4+ weapon treat it with professional care — corrosion is minimal, wear patterns are uniform. The rubber grip shows compression marks from gloved hands."
+  },
+  "image_prompt": "Product photography of the Arcturus TL-9 Thermal Lance 'Sunstroke' shoulder-mounted energy weapon. Camera angle: 3/4 view from the left, weapon mounted on a burnished steel maintenance rack against a deep charcoal matte background. Dramatic side-lighting from a warm orange-tinted key light, casting sharp shadows that emphasize the barrel's heat-sink ribbing and the capacitor pack's dimensional depth. The amber thermal bloom optics catch the light and glow subtly. A gloved operator's bare metal hand (chrome-plated index and thumb cybernetics visible) rests on the foregrip, suggesting scale. Cinematic cyberpunk lighting: faint bloom around the muzzle, subtle ambient glow from dormant but powered-up green status LEDs on the capacitor pack. Materials visible: raw titanium, brushed metal, carbon composite, rubber grip texture. The weapon should read as military-industrial, purpose-built, and dangerous. Hyper-detailed focus on the muzzle aperture and thermal containment optics. Color grading: cool shadows with warm-toned highlights, emphasizing the thermal aesthetic. --ar 3:2 --v 6"
 }

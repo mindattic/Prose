@@ -45,5 +45,26 @@
     "Brecken Yılmaz-Osei",
     "CHROMEWORKS FlexSheath Graphene Spinal Wrap",
     "Slagworks Industrial"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A crisp, clinical silhouette that reads institutional and authoritative. Mid-thigh length with a slightly boxy cut that drapes cleanly over the body. The bright white creates a stark, almost luminous presence in urban settings, making the wearer appear either competent or conspicuously out of place depending on context.",
+    "fit": "Relaxed through the torso with fitted, adjustable cuffs at the wrists. Designed for layering over street clothes or protective gear without restriction. The cut allows freedom of movement for lab work — arms sit slightly away from the body rather than hugging.",
+    "primary_material": "Polymer-cotton blend with hydrophobic treatment. The fabric has a slight sheen that catches light, distinguishing it from natural cotton. Resists chemical and biological surface contamination.",
+    "texture": "Smooth and slightly stiff when new, developing a soft broken-in quality with wear. The hydrophobic coating gives it a subtle waxy feel that repels moisture visibly. Seams are reinforced and appear structurally overbuilt compared to casual wear.",
+    "color_scheme": "Bright pharmaceutical white as primary color. No patterns. Occasionally shows subtle discoloration or faint staining from use that persists despite the hydrophobic coating — a badge of actual lab work or aesthetic affectation.",
+    "closures": "Friction-fit buttons down the front placket (usually white or chrome depending on manufacturing batch). Press-closure flaps on all pocket openings to create sealed compartments. Wrist cuffs have adjustable snap closures.",
+    "distinctive_features": [
+      "Sealed pocket flaps with press closures for contamination control",
+      "Adjustable, snug cuffs designed for glove compatibility",
+      "Hydrophobic coating visible as bead-pattern water resistance",
+      "Reinforced seams and structurally robust construction",
+      "Kellstrom Biological Systems logo embroidered subtly on left chest pocket",
+      "Multiple internal and external pockets of varying depths",
+      "Slightly stiff fabric drape that emphasizes clinical aesthetic"
+    ],
+    "tier_indicator": "Tier 3-4 boundary. Legitimizes the wearer within medical/research spaces (Tier 4 institution standard-issue), but affordable and accessible enough for independent researchers and geneware modification clinic operators. When worn casually, signals either genuine expertise or performative authority.",
+    "cultural_context": "Worn by licensed biotech workers, independent researchers, unlicensed geneware modification clinic staff seeking legitimacy, underground biomodding enthusiasts, and street-level artists using the blank canvas. In the GLMZ, it's become a cultural marker of someone engaged with biology — whether legally or not.",
+    "condition_typical": "Pristine when new; develops subtle discoloration and faint chemical stains with heavy use. Well-maintained lab versions show minimal wear. Street-worn versions may have reinforced patches, marker art, or deliberately distressed sections. The hydrophobic coating eventually degrades, making older coats absorb stains despite their original purpose."
+  },
+  "image_prompt": "Kellstrom BioWatch Lab Coat on a cyberpunk model in a moody underground laboratory setting. Bright pharmaceutical white coat contrasting against dark, moisture-laden walls with bioluminescent blue and violet accent lighting. Model stands near a cluttered workbench with faint neon signage reading 'GENEWARE MODIFICATION' in the blurred background. Hydrophobic water beads visible on the coat fabric catching overhead light. Subtle Kellstrom logo visible on chest pocket. The coat drapes cleanly over street clothes visible at the collar and cuffs. Cinematic, clinical atmosphere with hints of illicit biotech operations. Shot on a dark mannequin-like figure with only ambient neon and practical lab lighting. --ar 2:3 --v 6"
 }

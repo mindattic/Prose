@@ -47,5 +47,25 @@
     "Sorin Ekwensi-Balasanyan",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Underlayer Collective"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Visibly handmade, chunky thermal base layer with an intentionally rough aesthetic. Silhouette is slightly oversized through the torso and shoulders, creating bulk at the neckline and cuffs. The garment reads as DIY salvage—uneven seams catch light, creating a tactile, almost quilt-like appearance. Worn under outerwear, it's meant to show at collar and wrist as a badge of Shelf survival.",
+    "fit": "Relaxed and deliberately oversized through the body for maximum insulation and layering capability. Arms are roomy, allowing for thick outerwear over top. Waist is loose, no tailoring. Designed for visibility at edges—collar flares slightly where materials overlap.",
+    "primary_material": "Salvaged fleece offcuts, industrial insulation batting, recycled synthetic jersey in patchwork sections. Heat-bond tape seals at stress points; wire thread visible on reinforced seams.",
+    "texture": "Heavily textured and inconsistent. Fleece sections are soft but napped with use; batting creates quilted, dimpled areas; jersey creates smooth valleys between irregular stitching. Seams are rough, some doubled, creating raised ridgelines. Surface is deliberately imperfect—this is the aesthetic.",
+    "color_scheme": "Mottled ash-gray, oil-stained beige, and dark charcoal where material sources changed mid-construction. No pattern—organic color blocking from salvage scarcity. Oil stains and weathering add unplanned depth.",
+    "closures": "None. Pullover style, meant to be worn as a close underlayer. No fasteners—simple rolled or flat seams at neckline.",
+    "distinctive_features": [
+      "Visible mismatched seams in wire thread and standard thread",
+      "Heat-bond tape patches visible on surface",
+      "Color shifts mid-construction showing material transitions",
+      "Double-stitched reinforcement at shoulders and underarms",
+      "Intentional bulk at collar and wrists for visibility when layered",
+      "No brand markings—maker's signature is the irregular handwork itself"
+    ],
+    "tier_indicator": "Tier 5 salvage. This is survival wear, not fashion. The construction method and material sourcing scream sub-grade ungoverned zone.",
+    "cultural_context": "Shelf settlement identity. Wearing this announces you survive on salvage, endure acid-rain lake corridor weather, and belong to informal craft communities. It's anti-corpo, anti-sleek—authenticity through imperfection. Also signals technical competence: if you can stitch insulation batting to fleece with wire thread, you know how to survive.",
+    "condition_typical": "Worn and weathered from day one. Seams show stress marks; batting is compressed in high-friction areas; oil stains spread naturally over time. The garment doesn't degrade—it ages into its purpose."
+  },
+  "image_prompt": "Flat lay and on-body hybrid shot of a chunky, handmade thermal wrap layer made from patchwork fleece, insulation batting, and synthetic jersey. Visible mismatched seams in wire thread and heat-bond tape. Mottled ash-gray and oil-stained beige coloring with uneven dark patches. Worn layered under a torn, weathered synth-coat on a Tier 5 model with subcutaneous bioware visible at the temple. Dark industrial setting—concrete wall behind, acid-rain window reflection. Moody blue-green neon accent lighting from overhead. Textile texture prominent. Fashion photography, gritty cyberpunk aesthetic, high detail on seams and material transitions. --ar 2:3 --v 6"
 }

@@ -50,5 +50,27 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "TESSERA TC-3 'Crucible'",
     "Tiare Nishi-Anim"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Heavy-duty industrial apron with a commanding presence — split bib design creates a squared-off chest silhouette, while leg panels hang loose and utilitarian. Cross-back harness system adds structural weight and a tactical aesthetic. Overall impression is pure function: a garment built to survive extreme environments, worn by people who work metal and fire.",
+    "fit": "Intentionally oversized through the torso for layering over thermals and padding; leg panels are deliberately loose and split for unrestricted movement during forge work. The cross-back harness distributes weight across the shoulders, preventing sagging under the apron's considerable mass.",
+    "primary_material": "Aluminized carbon-ceramic felt (bib and skirt panels); reinforced webbing harness in synthetic aramid-weave; heat-treated leather analog binding at collar; magnetic clasps on side tabs",
+    "texture": "Heavy and dimpled — the ceramic-felt surface shows visible impact craters from welding spatter and arc flash scars. Rough-textured, with a tactile sense of abuse and survival. The leather collar is deliberately aged, with visible cracks and re-oil stains. Webbing is slightly frayed at stress points.",
+    "color_scheme": "Charred graphite (primary), rust-brown accents, deep brown heat-treated leather collar. Occasional burn marks and metallic scorch discoloration across the panels create uneven patinas. The dimpled surface catches light unevenly, giving a weathered, heat-stressed appearance.",
+    "closures": "Quick-release buckles on cross-back harness (sternum-mounted); magnetic snaps on side-tab leg panels for rapid removal; no front closure — the apron is pulled on over the head",
+    "distinctive_features": [
+      "Split-bib design with reinforced grommet eyelets for tool attachment",
+      "Dimpled/cratered aluminized ceramic surface showing authentic spatter damage",
+      "Cross-back harness system with quick-release emergency buckles",
+      "Magnetically-clasped side panels for rapid leg access",
+      "Crucible forge-anvil manufacturer stamp pressed into left chest",
+      "Heat-treated leather analog collar binding — visibly cracked and re-oiled",
+      "Multiple burn streaks and oxidation marks across panels",
+      "Reinforced seaming at high-stress points; visible stitching pattern"
+    ],
+    "tier_indicator": "Tier 3 (working class) — expensive enough to signal serious industrial work, but street-adjacent manufacturing keeps it accessible to independent fabricators and foundry workers",
+    "cultural_context": "Worn by arc welders, forge technicians, and metal fabricators across the GLMZ. The apron signals hands-on technical labor, self-reliance, and someone who works with extreme heat and danger regularly. Wearing this in public reads as 'I build things' — respected in working-class and fringe communities.",
+    "condition_typical": "Intentionally weathered and scarred. Authentic wear includes spatter pitting, burn marks, oil stains from repeated re-oiling, and thread-fraying at seams. The apron improves with age and use — each scar is a story of survived heat."
+  },
+  "image_prompt": "A weathered Crucible ForgeWall MK-3 foundry apron displayed on a broad-shouldered dark mannequin, split-leg panels hanging loose and heavy. Close-up detail of the charred graphite and rust-brown aluminized ceramic felt, dimpled surface catching hard industrial lighting. Visible burn streaks, heat-treatment cracks in the deep brown leather collar binding, and the pressed forge-anvil stamp on the left chest panel. Cross-back harness straps sit taut across the shoulders with quick-release buckles visible at sternum. Dark warehouse setting — concrete walls, harsh overhead arc-light casting sharp shadows. Moody, utilitarian mood. --ar 2:3 --v 6"
 }

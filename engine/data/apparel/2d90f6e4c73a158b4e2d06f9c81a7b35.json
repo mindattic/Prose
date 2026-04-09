@@ -55,5 +55,25 @@
     "Tessera Nexus Town Car",
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
     "Yusra Ntambwe-Cakić"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A layered observation rig that reads as deliberately unremarkable — muted earth tones stacked for eight-hour surveillance endurance. The sand-ochre anorak dominates, its structured hood creating a subtle anonymity effect. Beneath, the slate thermal base and grey trousers form a neutral column. The outfit's genius is its invisibility: it registers as background-noise workwear to both human and machine vision, yet every element serves precision function.",
+    "fit": "Relaxed but intentional — the anorak hangs with enough volume to conceal the chest harness beneath, but the trousers sit clean and straight, avoiding both baggy and fitted extremes. The silhouette is designed for stillness: no excess fabric to telegraph movement, no compression that would restrict breathing during long static holds.",
+    "primary_material": "Anorak in treated synthetic-wool composite (stain-resistant, low-sheen). Base thermal in moisture-wicking synth-blend knit. Trousers in hardwearing cotton-poly reinforced at stress points. Shoes in recycled polymer mesh with elastomer sole.",
+    "texture": "Anorak has a matte, slightly weathered hand — subtle vertical ribbing catches light minimally. Thermal shirt is smooth, almost liquid against skin. Trouser fabric has a tight weave suggesting durability. Shoe uppers show deliberate cleanliness; sole treads are deep and utilitarian.",
+    "color_scheme": "Primary: sand-ochre anorak with muted vertical striping in taupe. Thermal base in deep slate grey. Trousers in medium grey. Shoes in off-white with dark charcoal accents. Overall palette is pre-dawn industrial — nothing that registers as chromatic noise to surveillance sweeps.",
+    "closures": "Anorak front-zip with magnetic snap-backs to prevent reflection glint. Hood drawcords blend into fabric (no hanging loose ends). Trousers have hidden magnetic waistband pockets. Shoes use friction-fit lacing system that won't catch on harness anchor points.",
+    "distinctive_features": [
+      "Structured hood with internal wire framing — collapses to shape facial recognition angles from above and sides",
+      "Modular chest harness beneath anorak with four interchangeable quick-swap pouches (sidearm, relay unit, standard loadout compatible)",
+      "BCI-port collar notch at rear nape of thermal base — neural jack access without removing anorak",
+      "Internal wire-routing sleeve along right trouser leg for augmentation power lines",
+      "Three hidden waistband pockets accessible only from interior — defeats casual pickpocketing",
+      "Intentional wear pattern on anorak (subtle scuffs, faded hem) contrasts with pristine off-white shoes — signals aspirational Tier 2 authenticity"
+    ],
+    "tier_indicator": "Tier 2–3 boundary. The anorak and thermal suggest working-class functional, but the precision engineering and modular system design, plus the clean shoes, indicate someone with access to specialized gear. Price point is mid-tier contractor or security freelancer — enough Φ to afford purpose-built kit, not enough to show wealth.",
+    "cultural_context": "Street-side observer, surveillance professional, private security, investigative work. Wearing this says: 'I am trained to be invisible. I am equipped for extended static operations. I move through crowds without intention.' It reads as neither aggressive nor servile — just present, watching, waiting.",
+    "condition_typical": "Broken-in but maintained. The anorak shows weathering and careful wear; the shoes stay pristine (a tell of someone who knows that footwear discipline prevents pattern recognition). Harness beneath stays hidden until revealed. Seams are tight, zippers function silently. No fraying, no loose threads — maintenance discipline."
+  },
+  "image_prompt": "A cyberpunk recon operative in a sand-ochre anorak with structured hood half-raised, revealing the deep slate thermal base beneath. The hood frames the figure's face in shadow — geometric and deliberate. Chest harness visible where anorak zipper opens slightly, showing modular quick-swap pouches. Straight-cut grey trousers fade into off-white high-performance shoes that gleam with deliberate cleanliness. Figure stands motionless in a dimly lit transit corridor or market stall alcove — under harsh sodium vapor lighting and blue neon accent. The anorak's vertical striping catches light subtly, almost disappearing into background. Moody, surveillance-camera aesthetic. Dark concrete walls, distant crowd blur. The outfit reads as professional invisibility. Cinematic, low-contrast, industrial. --ar 2:3 --v 6"
 }

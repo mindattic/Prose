@@ -38,5 +38,27 @@
   "related_entities": [
     "Dzemal Acholonu-Patagiri",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A weathered athletic shoe that reads as pure street survival — silhouette still vaguely runner-shaped but heavily patched. The upper is a chaotic patchwork of mismatched synth-mesh panels in grey, faded red, and dirty white, creating an accidental abstract pattern. Sole shows significant wear with yellowed adhesive visible at the heel. Laces are frayed synthetic cord, possibly replaced.",
+    "fit": "Designed as a snug athletic fit, but deformation from repeated wear and patching has made it slightly loose in the midfoot. Heel cup is flattened. Toe box shows creasing and stress marks.",
+    "primary_material": "Synth-mesh composite (various recycled batches), worn rubber/EVA sole, structural adhesive (polyurethane-based, yellowed with age)",
+    "texture": "Rough and tactile — patches are slightly raised, creating a quilted effect. Sole adhesive is glossy and hardened. Mesh panels show fraying at edges where patches overlap. Overall texture is uneven and organic despite synthetic materials.",
+    "color_scheme": "Dominant: washed grey with accents of faded rust-red and dirty white. Yellowed adhesive bead at heel. Underlying shoe color barely visible beneath patches — hints of original charcoal grey.",
+    "closures": [
+      "Frayed synthetic laces (non-adjustable functionality)"
+    ],
+    "distinctive_features": [
+      "Patchwork upper — at least 8-10 visible repair panels",
+      "Delaminating heel with thick structural adhesive repair",
+      "No branding visible — original Vance Athletic logo worn away",
+      "Mismatched lacing patterns suggesting multiple re-lacing events",
+      "Creased and stress-marked toe box",
+      "Worn through synth-mesh in several spots despite patches"
+    ],
+    "tier_indicator": "Tier 5 — sub-grade salvage footwear. Worn by the ungoverned and street-level workers who cannot afford replacement.",
+    "cultural_context": "Courier, night-shift laborer, street dweller, or independent operator. Signals resilience and poverty — someone who walks everywhere and cannot replace worn gear. No corpo would be caught dead in this; it's a badge of survival in the GLMZ underbelly.",
+    "condition_typical": "Weathered and heavily patched, held together by repairs stacked upon repairs. Sole adhesive is aged and brittle. Laces are nearly non-functional. Still wearable but approaching end-of-life."
+  },
+  "image_prompt": "Close-up product photography of a heavily patched, worn athletic shoe on dark concrete background. Patchwork synth-mesh upper in grey, faded red, and dirty white. Yellow structural adhesive visible on delaminating heel. Harsh overhead lighting emphasizing wear patterns and texture. Frayed synthetic laces. Shot from 45-degree angle showing sole and upper. Cyberpunk street wear aesthetic. Dark, gritty, industrial mood. --ar 2:3 --v 6"
 }

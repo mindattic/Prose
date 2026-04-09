@@ -65,5 +65,35 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "CHROMEWORKS Auris Focal Directional Hearing Suite",
+    "GLMZ",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purposeful precision weapon with a distinctly medical aesthetic—resembling a hybrid between a laser rifle and a surgical instrument. The long barrel dominates the silhouette, tapering slightly toward the muzzle. The frame is angular and compact, suggesting careful weight distribution. Overall impression: clinical lethality.",
+    "dimensions": "Length: 88 cm | Barrel length: 52 cm | Width at grip: 4.2 cm | Height (including sight rail): 7.8 cm",
+    "weight_description": "Hefty but well-balanced—3.7 kg distributed across the length creates a steady, shoulderable feel despite its weight. The long barrel steadies aim but requires two-handed control.",
+    "primary_material": "Carbon-composite frame with aerospace-grade aluminum barrel casing. Pyroelectric crystal housing encased in thermally-resistant polymer composite.",
+    "finish": "Matte gunmetal gray with brushed aluminum barrel. The crystal housing glows with faint amber undertones beneath a translucent protective shroud.",
+    "color_scheme": "Gunmetal gray frame, brushed aluminum barrel, amber-tinted crystal housing with black sight rails. Accent trim in deep bronze.",
+    "grip_texture": "Textured rubber polymer grip with slight ergonomic finger contours. Warm to touch due to passive heat dissipation from the crystal array. Wrapped sections near the trigger guard in high-grip rubberized material.",
+    "distinctive_features": [
+      "Long precision barrel with micro-vanes for thermal regulation",
+      "Translucent amber crystal housing running beneath the barrel—visible pyroelectric element array glowing faintly",
+      "Integrated electromagnetic scanning sensor ring (0.8 cm width) positioned 12 cm from muzzle",
+      "Dual-stage trigger mechanism with tactile resistance",
+      "Modular pyroelectric cell port on the underside with locking lugs",
+      "LED status indicator array (3 lights) on the right rail—amber for standby, red for overtemp warning",
+      "Crosshair reticle sight with secondary augmentation-signature overlay indicator",
+      "Micro-vent patterns along the barrel mid-section for heat dissipation",
+      "Serial plate with ZHENG-DAO BIOELECTRIC branding (traditional Mandarin/Roman hybrid script)",
+      "Faint manufacturing scuff marks and test-fire carbon scoring typical of weapons fresh from licensed armory stock"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo (interlocking DNA helix) stamped in matte finish on the left receiver rail. PSP-9 designation and serial number engraved below. Licensing stamp: 'CORPORATE SECURITY ONLY' in red block lettering on barrel shroud.",
+    "condition_typical": "Factory-fresh to lightly field-used. Most examples show no visible wear—kept secure in corporate security vaults between deployments. Occasional examples display carbon scoring from live-fire testing or light tactical use, but battle scars are rare (weapon either remains pristine or is destroyed in engagement)."
+  },
+  "image_prompt": "Product photograph of a sleek cyberpunk precision rifle—the Pyroelectric Spinal Projector PSP-9 'Vertebrae'—mounted horizontally on a brushed steel surface or cradled in gloved hands (dark tactical gloves). The weapon features a long gunmetal-gray carbon-composite frame with a tapered aluminum barrel. Beneath the barrel, visible through a translucent amber shroud, the pyroelectric crystal array glows with soft golden luminescence. Dramatic side-lighting emphasizes the barrel's micro-venting and the ethereal glow of the crystal housing. Dark background with cyan and amber neon accents reflecting off the barrel and grip. High-contrast shadows emphasize the weapon's surgical precision and clinical lethality. Bokeh city lights in background suggest GLMZ corporate district. Ultra-detailed material textures—brushed metal, carbon weave, rubber grip. Cinematic cyberpunk aesthetic with emphasis on hard sci-fi authenticity. --ar 3:2 --v 6"
 }

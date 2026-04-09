@@ -56,5 +56,37 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Djeneba Park-Traore",
+    "Ezio Kaboré-Malhotra",
+    "GLMZ",
+    "Kamala Mori-Sefa",
+    "Nnenna Boateng-Szymański",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "Tessera Corponation",
+    "The Resonance Communion"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, egg-shaped charge roughly the size of a grapefruit with a deliberately organic, almost biological appearance — the opposite of angular military hardware. Its form suggests precision engineering wrapped in biotech aesthetics, with subtle ribbing that runs along its circumference like gill marks or neural pathways.",
+    "dimensions": "12 cm length × 9 cm width × 8 cm height. Activation mechanism sits flush in a recessed crown area at the apex.",
+    "weight_description": "Deceptively hefty for its size — 1.4 kg gives it a solid, dense feel that belies its compact footprint. Sits heavy in an open palm, suggesting dense piezoelectric core beneath the casing.",
+    "primary_material": "Shock-isolated polymer shell with visible internal lattice structure visible through translucent sections — the piezoelectric matrix is intentionally exposed as a design statement rather than hidden.",
+    "finish": "Matte polymeric coating with a slight iridescent sheen under direct light, suggesting nano-composite treatment. The translucent panels reveal crystalline lattice geometry beneath, with faint bioluminescent trace-lines following the piezoelectric pathways.",
+    "color_scheme": "Charcoal grey primary body with deep teal accent lines running through visible lattice sections. Activation crown is midnight black with subtle silver contact points.",
+    "grip_texture": "Textured polymer with shallow diamond-pattern grip points — designed to nestle securely in a gloved hand without requiring conscious gripping. Feels almost organic, like holding a tense muscle.",
+    "distinctive_features": [
+      "Translucent polymer panels exposing crystalline piezoelectric lattice interior",
+      "Faint bioluminescent trace-lines along internal crystal matrix — faintly glowing in darkness",
+      "Recessed, flush activation mechanism in the crown — no protruding buttons or switches",
+      "Subtle ribbing pattern running circumferentially suggesting 'breathing' resonance chambers",
+      "Tessera Orbital Labs logo embossed in the crown recess alongside frequency-tuning readout window",
+      "Micro-seams visible where shock-isolation mounts connect the core to the outer casing",
+      "Heat-dissipation vents disguised as aesthetic ribbing along the sides"
+    ],
+    "manufacturer_markings": "Tessera Orbital Labs corporate sigil embossed in shallow relief on the crown, flanked by a tiny alphanumeric serial plate. A small frequency-tuning readout window displays tuning parameters in orange LED numerals.",
+    "condition_typical": "Field specimens show micro-wear on the grip texture and occasional carbon scorching around the activation seams from repeated use. Bioluminescent trace-lines may dim with age due to phosphorescent substrate degradation. Well-maintained examples retain full luminescence and pristine translucent clarity."
+  },
+  "image_prompt": "Tessera RODC-2 Resonant Overpressure Charge centered on matte black reflective surface, shot from above at slight angle. Charcoal and teal compact ovoid with translucent crystalline lattice visible inside, faint blue-green bioluminescence flowing through geometric internal structure. Gloved tactical hand (black leather, silver fingertip augmentation) holding it from left side, fingers curled protectively. Dramatic side-lighting from upper right creates depth shadows across ribbed surface, highlights the translucent panels and internal geometry with sharp contrast. Crown activation mechanism in sharp focus. Cyberpunk aesthetic: clinical, precise, menacing simplicity. Cool color temperature. Professional military hardware photography style. --ar 3:2 --v 6"
 }

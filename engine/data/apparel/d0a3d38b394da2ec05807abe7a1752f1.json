@@ -35,5 +35,24 @@
   ],
   "related_entities": [
     "The Cutters Guild"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A substantial, utilitarian wristband that reads as industrial jewelry—sits flush against the wrist with a minimalist aesthetic despite its functional density. Projects quiet competence and hands-on pragmatism. The brushed surface catches light subtly, appearing sophisticated rather than crude.",
+    "fit": "Snug but not restrictive, engineered for comfort during extended wear. Contours to the wrist without gaps, secured via friction-fit magnetic clasp that's nearly invisible when closed.",
+    "primary_material": "Brushed titanium outer shell over soft synthetic comfort liner (likely a pressure-responsive gel blend for sweat management and impact absorption).",
+    "texture": "The titanium exhibits a matte, directional grain from brushing—refined but deliberately un-polished. The edges are beveled smoothly. Tool seams are nearly imperceptible when flush; you feel them only as slight topographic variations under fingertips.",
+    "color_scheme": "Gunmetal gray titanium with black comfort liner visible only at the inner wrist edge. Minimal branding—Kaida Fabrication mark subtly etched on one edge.",
+    "closures": "Magnetic snap mechanism integrated into the titanium band. Silent, tool-accessible, and security-checkpoint-ambiguous by design.",
+    "distinctive_features": [
+      "Five fold-out tools nested flush into the band surface: wire cutters, flat-head driver, bottle opener, glass breaker, 5cm serrated blade",
+      "Tools deploy via indexed pressure points—quiet, deliberate mechanical action",
+      "Serrated blade edge is why upgraded security scanners now flag the device",
+      "Comfort liner inner surface designed for sustained wear without chafing",
+      "Weight distributed to feel substantial without unbalancing the wrist"
+    ],
+    "tier_indicator": "Tier 3—working class tool, affordable but quality-engineered. Not aspirational, but respected. Second-hand market strong in sub-districts.",
+    "cultural_context": "Worn by maintenance workers, field mechanics, salvage operators, and anyone in the GLMZ who works with their hands. Signals practical self-sufficiency and trade competence. In corpo zones, sometimes worn ironically by lower-tier techs; in Tier 5 ungoverned sectors, considered essential kit.",
+    "condition_typical": "Broken-in and patina'd with use—the titanium develops a deeper matte finish from handling, minor scratches around tool access points, the comfort liner may show compression marks. Owner marks and modifications common (notches, scratches, personal symbols)."
+  },
+  "image_prompt": "Close-up fashion photograph of Kaida Fabrication Multi-Tool Wristband on the left wrist of a calloused hand against dark industrial background. Brushed titanium catching moody blue-orange neon light. Wrist angled to show tool seams and magnetic clasp detail. Fingertips visible, worn from work. Cinematic shallow depth of field. Urban maintenance bay or workshop blurred behind. Cool color temperature with warm accent lighting. High contrast. --ar 2:3 --v 6"
 }

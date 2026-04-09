@@ -78,5 +78,25 @@
     "TESSERA PG-2 'Signature'",
     "The Counter",
     "Zheng-Dao Heavy Industries Portable Fusion Battery PFB-2"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A flattened, oblate ovoid resembling a compressed grenade or thick hockey puck. The device has an organic, almost biological quality to its form — not angular or aggressive, but deliberately unassuming. Its surface is deliberately bland to avoid attention, with no dramatic vents or warning indicators. The top hemisphere is slightly domed, the bottom features a prominent magnetic base ring.",
+    "dimensions": "11cm x 7cm x 4cm; roughly the size of a small paperback book stood on edge, or a military-grade hockey puck",
+    "weight_description": "340g — handheld but substantial, dense enough to feel purposeful. Easily pocketable in cargo gear or a utility bag, pocketable in a heavy coat. Magnetic mount means it clings to metal rather than requiring straps.",
+    "primary_material": "Brushed titanium-composite housing with internal micro-fusion cell shielding. The casing appears matte and industrial, not polished.",
+    "finish": "Matte charcoal-grey with microscopic texturing that defeats fingerprint visibility and reduces light reflection. Deliberately non-reflective to avoid scanner glints. Subtle radial scoring patterns suggest heat-dissipation channels.",
+    "color_scheme": "Dominantly charcoal-grey with accent bands of muted teal (frequency indicator stripe) and faint phosphorescent green edge-trim (activation state indicator visible only in darkness). Minimalist branding in industrial sans-serif.",
+    "interface_elements": "Top surface features a single flush recessed button (manual activation toggle), a tiny teal LED status window (triangular, 8mm), and a maintenance port hidden under a magnetic cover. Magnetic base ring doubles as charging contact. Optional rubber saddle mount points flank the sides. No screen, no feedback — intentionally silent.",
+    "distinctive_features": [
+      "Magnetic base ring with interlocking ferrite core visible as a dark circle",
+      "Radial cooling channels etched across the dome as functional art",
+      "Teal frequency-lock indicator stripe wrapping the equator",
+      "Phosphorescent green edge highlights that glow subtly under blacklight (activation status)",
+      "Nearly invisible Infinite Loop Recycling mark — just a tiny circular Ouroboros symbol stamped on one edge in matching grey",
+      "Micro-fusion cell visible as a slightly raised golden-bronze disc beneath the dome (backlit through thin composite)"
+    ],
+    "manufacturer_markings": "Infinite Loop Recycling circular Ouroboros logo (snake eating its tail) stamped subtly on lower edge. Micro-fusion tech derived from Ouroboros Energy branding on the magnetic base ring in laser-etched lettering. Serial number laser-marked on base. No regulatory stamps visible (intentional design).",
+    "condition_typical": "In field use, typically shows dust accumulation in the radial grooves, faint magnetic residue smudges on the base ring from multiple mounting/unmounting cycles, and occasional small dents from impact or pressure. When active, the teal frequency indicator flickers in a specific pattern (one pulse per 3 seconds) visible only to those who know to look."
+  },
+  "image_prompt": "Close-up product photography of a charcoal-grey oblate titanium device, roughly grenade-sized, sitting on a dark metal workbench with dramatic side-lighting from a single neon-blue LED strip. The magnetic base ring catches harsh light, revealing ferrite core geometry. A faint teal stripe wraps the equator. Shallow depth of field; a second unit slightly out of focus in the background. Cyberpunk aesthetic — moody, industrial, slightly sinister. The device is surrounded by scattered components: fiber optic cable, magnetic mounts, a small frequency analyzer displaying red warning triangles. Subtle phosphorescent glow visible on the edge-trim under UV backlighting. Cold color grading, high contrast. --ar 3:2 --v 6"
 }

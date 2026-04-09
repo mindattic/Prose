@@ -42,5 +42,27 @@
     "The Nearfield",
     "Veslemøy Achebe-Tursynov",
     "Ximena Bautista-Nwosu"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A high-visibility sleeveless utility vest in electric yellow with bold black Ringo wordmark across the back and smaller chest logo. Designed for immediate recognizability on camera and in crowd footage. Cuts a purposeful, functional silhouette that reads as 'working journalist' rather than tactical or military.",
+    "fit": "Standard cut, medium-relaxed through the torso to accommodate layering and equipment. Not tailored; designed for functionality over form. Accommodates most standard human frames but sits awkwardly on wearers with significant cybernetic modifications.",
+    "primary_material": "Medium-weight weather-resistant ripstop in synthetic polymer blend. Treated with visual-prominence coating for enhanced camera reflectivity and crowd visibility.",
+    "texture": "Crisp ripstop weave with slight stiffness from treatment. Matte finish with subtle reflective quality under direct light. Pockets have reinforced edges and internal ribbing.",
+    "color_scheme": "Dominant electric yellow (Ringo brand signature) with stark black wordmark lettering and logo. Minimal accent colors; stripped-down corporate aesthetic.",
+    "closures": "Magnetic snap buttons down the front; friction-fit shoulder adjusters. Twelve external pockets with magnetic closure lips to prevent equipment loss in crowds.",
+    "distinctive_features": [
+      "BCI-sync port at collar for direct LiveStream infrastructure connection",
+      "Passive GPS weave embedded in fabric — traceable by Ringo logistics",
+      "Twelve strategically placed external pockets: four at chest, four at waist, two at hip, two internal",
+      "Reinforced data-chip slots at left ribs",
+      "Bold Ringo wordmark across entire back panel",
+      "Smaller Ringo logo at left chest in corporate sans-serif",
+      "No ballistic or chemical protection (officially)",
+      "Worn instances frequently show aftermarket trauma insert patches in nondescript gray"
+    ],
+    "tier_indicator": "Tier 2-3 (corporate-issued uniform, but worn by working-class field personnel; signals employment with a major media corp rather than personal wealth)",
+    "cultural_context": "Worn by Ringo field press: reporters, fixers, content capture crews working outside controlled studios. Signals witness, accountability, and journalistic presence — or corporate extraction, depending on the viewer's politics. Visibility is both protection and liability. Common in volatile coverage zones, Shelf assignments, and unrest hotspots throughout the GLMZ.",
+    "condition_typical": "Worn examples show weathering: faded yellow from UV and exposure, scuffed logos, visible patching at pockets from field modification. Newer vests crisp and reflective; field-worn vests dull, stained, reinforced with unauthorized trauma inserts in gray or matte black."
+  },
+  "image_prompt": "Fashion editorial photograph of Ringo Field Press Vest on a dark cyborg model in urban GLMZ setting. Electric yellow ripstop vest with bold black wordmark, multiple visible tech pockets, BCI port gleaming at collar. Moody neon-lit backdrop with industrial scaffolding, rain-slicked concrete. Model's augmented arm visible, mixed-heritage features. Harsh cyan and amber lighting, shallow depth of field focusing on vest logo and pocket detail. Gritty, documentary-style composition suggesting active field journalism. --ar 2:3 --v 6"
 }

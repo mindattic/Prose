@@ -58,5 +58,35 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Djeneba Orlov-Obeng",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Marrowvault Cryogenics",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tessera Corponation",
+    "The Clock",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular carbine with a distinctly medical aesthetic — all matte-white polymer and precision engineering. The barrel is noticeably thicker than conventional weapons, wrapped in prominent horizontal heat-sink ribbing that makes it look like a piece of clinical equipment rather than a gun. The overall silhouette is compact and forward-heavy, with a pronounced grip angle suggesting precision over spray-and-pray.",
+    "dimensions": "520mm length overall; barrel 280mm; 85mm width across heat-sink fins; 55mm grip diameter",
+    "weight_description": "Hefty but balanced — 2.2 kg feels substantial in hand but never unwieldy, weight distributed toward the barrel assembly where the Peltier chambers sit. The grip sits lower relative to the bore axis, demanding careful control but rewarding it with predictable recoil characteristics.",
+    "primary_material": "Aerospace-grade polymer composite with embedded aluminum heat-sink framework; barrel assembly houses stainless steel Peltier chamber housings; titanium alloy breech block",
+    "finish": "Matte white with brushed aluminum accents on heat-sink ribbing; anti-glare coating gives it a faintly clinical sheen rather than tactical matte-black. Micro-texturing across major surfaces to reduce fingerprints and thermal signature reflection.",
+    "color_scheme": "Primary: pharmaceutical white (RAL 9016); accents: gunmetal gray on ribbed heat-sink fins and breech assembly; cryogenic-blue LED indicator strips along the receiver",
+    "grip_texture": "Textured polymer with diamond-pattern surface treatment for secure hold even when wet or contaminated; slight cooling to the touch due to passive heat dissipation through the grip frame. Ergonomic contours favor trigger-finger precision.",
+    "distinctive_features": [
+      "Asymmetrical heat-sink ribbing running the full length of barrel — each fin precision-milled for thermal efficiency",
+      "Cryo-blue LED status indicators clustered near the power cell housing (visible on starboard side): charge level, cooldown timer, thermal equilibrium status",
+      "Recessed liquid-nitrogen cell port with quick-disconnect coupling on the frame — designed for rapid 8-second swaps",
+      "Transparent polycarbonate coolant circulation window running along the upper receiver, showing dark fluid cycling through micro-channels",
+      "Precision optics mounting rail with integrated rangefinder interface window",
+      "Discharge orifice with six small radiator fins surrounding muzzle opening — appears more like a precision medical instrument than a weapon aperture"
+    ],
+    "manufacturer_markings": "TESSERA CORPORATION logo stamped in matte inlay on starboard receiver; TSI-2 'COLD CASE' designation below; serial plate (brushed stainless) on lower frame; safety warnings in three languages micro-etched on grip frame; cryogenic handling symbols on cell housing",
+    "condition_typical": "When field-used, accumulated frost residue collects around the discharge orifice and heat-sink fins despite thermal insulation — a thin, persistent rime of frozen atmospheric moisture. Handled units show fingerprint oils and microscopic coolant seepage staining around the cell port. Licensed corporate units are meticulously maintained with NO visible wear; unlicensed or heavily-used examples develop scratching on the white finish and discoloration around thermal vents."
+  },
+  "image_prompt": "Sleek white tactical carbine with pronounced horizontal aluminum heat-sink ribbing along its barrel, photographed in three-quarter view against a dark gunmetal surface. Liquid-nitrogen cryogenic cell glowing faintly with cryogenic-blue indicator LEDs visible on the receiver. Held in a gloved black tactical hand, showing textured polymer grip. Dramatic side-lighting emphasizing the precision-engineered fins and transparent coolant circulation window. Cool blue-white color temperature, with frost details visible around the discharge orifice. Hyper-detailed aerospace-grade polymer and stainless steel surfaces. Cyberpunk corporate security aesthetic, clinical and lethal. --ar 3:2 --v 6"
 }

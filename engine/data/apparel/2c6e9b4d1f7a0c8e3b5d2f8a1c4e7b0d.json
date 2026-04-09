@@ -59,5 +59,29 @@
     "Penrose Weld Boot",
     "Synaptrel",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian night-shift uniform with high-visibility overlay. Reads as serious infrastructure worker — charcoal base layer anchored by neon-yellow safety vest with reflective striping. Silhouette is squared-off and built for motion through tight spaces, not form. Hard hat with integrated headlamp adds industrial authority.",
+    "fit": "Relaxed through the torso for layering and equipment access, articulated at shoulders for reach and climb. Trousers have a straight leg with reinforced stress points at knees. Overall impression is function-first, silhouette-second — nothing tailored, everything practical.",
+    "primary_material": "Flame-resistant synth-cotton blend (shirt), high-visibility woven polyester (vest), arc-flash rated cotton-blend twill (trousers), dielectric composite (boots), polycarbonate (hard hat)",
+    "texture": "Shirt has a soft worn matte finish with subtle flex weave. Vest is crisp and slightly stiff with woven reflective tape that catches light sharply. Trousers are tight-knit twill with reinforced knee panels. Boots are scuffed matte rubber with ribbed sole tread. Hard hat is textured polymer.",
+    "color_scheme": "Safety yellow and deep charcoal primary; 360-degree reflective silver striping on vest; grey and yellow crew patch (wrench + lightning bolt); matte black boots. Accent of raw metal (grounded buckle, headlamp brass ring).",
+    "closures": "Magnetic closures on chest pockets (rated for EMI environments), snap closures on back pocket and knee pads, side zip on boots for speed, standard button-fly trousers, nylon rigger belt with metal buckle, hard hat chin strap (industrial quick-release)",
+    "distinctive_features": [
+      "Spinal rig channel — reinforced rear yoke seam with snap-open access panels for external augmentation hardware",
+      "Laminated crew ID badge clip on right chest",
+      "Ironpass Maintenance Division patch (wrench over lightning bolt) on left shoulder",
+      "Radio holster on right chest of vest",
+      "Mounted LED headlamp on hard hat with flip-down polycarbonate face shield",
+      "Deep back pocket with circuit documentation capacity",
+      "Arc-rated synth-leather work gloves (stored in cargo pocket)",
+      "EMI-rated magnetic closures",
+      "Grounded metal buckle on belt (intentional electrical safety feature)",
+      "Dielectric boot sole (electrical insulation)"
+    ],
+    "tier_indicator": "Tier 3-4: Working class essential infrastructure. Issued uniform signals stability and credential. Not salvage, not corpo luxury — employer-standard issue worn by people maintaining the grid.",
+    "cultural_context": "Night infrastructure maintenance crew. Wearer is electrician, rig technician, or conduit specialist operating in the ungoverned substrate of the GLMZ. Equipment suggests active spinal augmentation (rig porting). Presence of laminated crew ID indicates institutional affiliation — likely Ironpass Infrastructure Division or contracted subsidiary. Person wearing this crawls through 0300 tunnels and lives in electromagnetic fields.",
+    "condition_typical": "Pristine at shift start (0000 hours). By midshift (0300), carries accumulated tunnel damp, ozone smell, cable dust in chest pockets, minor scuffs on knees and shins. Vest reflective tape may show smudges. Hard hat visor possibly fogged. Overall still functional and maintained — this is a working uniform, not a fashion statement."
+  },
+  "image_prompt": "A rugged night-shift electrician stands in a dark underground tunnel illuminated by their headlamp. Charcoal flame-resistant work shirt with visible spinal rig channel seams visible at rear shoulder. High-visibility safety yellow vest with sharp silver reflective striping catches the beam of light. Deep charcoal arc-flash rated trousers with reinforced knees. Matte black dielectric boots with visible tread. Yellow hard hat with mounted LED headlamp creating a pool of light on tunnel infrastructure — exposed conduit, cables, metal piping. Crew ID badge clips to right chest. Gloved hands hold circuit documentation. Ozone haze and tunnel damp atmosphere. Shot from front-right angle showing equipment detail and industrial setting. Gritty, unglamorous, essential. --ar 2:3 --v 6"
 }

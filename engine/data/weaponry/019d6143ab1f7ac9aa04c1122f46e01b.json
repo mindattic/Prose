@@ -58,5 +58,37 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Breck Tannen",
+    "GLMZ",
+    "Iowan Behemoth — 'Palisade'",
+    "Magpie",
+    "Piezoelectric Ceramic",
+    "The Resonance Communion"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular carbine resembling a futuristic rifle, but with an unusually bulbous, asymmetrical muzzle assembly. The barrel section flares into a parabolic housing that dominates the weapon's front end — organic and almost biological in its curves, contrasting sharply with the rigid geometry of the stock and receiver. At rest, it appears eerily quiet and unassuming, like medical equipment rather than a weapon.",
+    "dimensions": "Overall length: 78 cm | Barrel/emitter housing: 22 cm | Muzzle diameter: 8 cm | Stock to trigger: 35 cm",
+    "weight_description": "Deceptively light and balanced — 3.1 kg distributed forward into the parabolic muzzle assembly. Feels almost delicate in the hand despite the precision engineering, creating a false sense of fragility that belies its lethality.",
+    "primary_material": "Matte composite polymer frame with carbon-fiber reinforced stock. Muzzle housing is brushed titanium-aluminum alloy to dissipate heat from the piezoelectric array. Internal ceramics and phased emitter matrix visible through subtle transparent polymer window panels.",
+    "finish": "Matte charcoal gray composite with brushed metallic titanium accents. No gloss — all surfaces are deliberately non-reflective. Thermal management vents along the muzzle housing show faint burnishing from heat cycling.",
+    "color_scheme": "Gunmetal gray primary with titanium silver accent bands around the muzzle. Small sections of the parabolic housing feature dark metallic blue where the phased emitter array sits beneath.",
+    "grip_texture": "Textured polymer grip with subtle ergonomic contouring. Wraparound finger grooves suggest precision targeting. Cool, slightly tacky to the touch — designed for gloved operation in cold or high-stress scenarios.",
+    "distinctive_features": [
+      "Parabolic muzzle assembly with visible piezoelectric ceramic segments arranged in concentric rings beneath translucent housing panels",
+      "Discreet LED status indicator array (three small lights) on the right side of the receiver — cyan for standby, amber for targeting lock, red for firing ready",
+      "Bone-conduction mapping port: a small circular aperture with diagnostic connector just above the trigger guard",
+      "Thermal management vents arranged in organic, asymmetrical patterns along the muzzle barrel",
+      "Custom mil-spec rail system along the top for integrated targeting scope or sensor package",
+      "Faint micro-etched frequency band markings (18-22 Hz / 28-34 kHz) engraved beneath the rail",
+      "Capacitor discharge port with warning stripe (silver/black chevron) on the lower receiver",
+      "Minimalist charging port (flush-mounted) accessible from the left side"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (stylized hexagon with compass rose) stamped in raised relief on the upper receiver, just forward of the safety selector. Serial plate mounted on the lower receiver features alphanumeric code and production date. Small 'SGATU-3' marking etched near the muzzle aperture, indicating the onboard targeting processor.",
+    "condition_typical": "Exceptionally well-maintained. Professional-grade weapons rarely show battle wear — they're tools of assassination and precision work, not field combat. Surface may show minor micro-abrasions from handling, but no gouges or scoring. Thermal vents occasionally show faint carbon residue from capacitor discharge, suggesting recent operational use."
+  },
+  "image_prompt": "Sleek matte charcoal cyberpunk acoustic weapon on a dark brushed steel surface, angled 45 degrees to show the distinctive parabolic muzzle assembly with visible piezoelectric ceramic emitters glowing subtly beneath translucent panels. Dramatic side-lighting from upper left casts sharp shadows across the composite frame, highlighting the titanium-silver accent bands and thermal management vents. Close-up detail of the minimalist LED status array (cyan-amber-red) glowing on the receiver. Gloved hand (tactical black leather) gripping the ergonomic stock, fingers positioned on trigger guard. Sharp focus on the organic, almost biological muzzle design contrasting with rigid geometric receiver. Cyberpunk aesthetic with industrial lighting, no visible ammunition, sterile laboratory-clean condition suggesting cutting-edge ARCTURUS Defense Solutions engineering. --ar 3:2 --v 6"
 }

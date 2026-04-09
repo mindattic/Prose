@@ -40,5 +40,30 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Carrion Defense Works",
+    "Plasmatic Induction Whip PIW-4 'Threadbare'"
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively elegant polymer whip that appears almost organic in its fluid form, with a sinuous, rope-like construction. At first glance it resembles a high-end training implement, but closer inspection reveals 12 discrete electromagnetic nodules embedded at regular intervals along its length, creating subtle bulges and a faintly menacing segmented appearance.",
+    "dimensions": "200 cm total length, 8mm core diameter, nodules protrude approximately 3mm from surface. Handle grip measures 12cm long, 2.5cm diameter.",
+    "weight_description": "Remarkably light and balanced — approximately 400 grams total. Feels almost insubstantial in the hand despite its lethal purpose, with weight distributed throughout the length rather than concentrated in the handle.",
+    "primary_material": "Flexible synthetic polymer core (likely reinforced thermoplastic or carbon-weave composite) with embedded electromagnetic emitter nodes. Handle features metallic capacitor housing at base.",
+    "finish": "Matte charcoal polymer body with brushed titanium alloy nodes that catch light along the whip's length. Handle grip has a subtle non-slip texture. Capacitor casing shows weathered industrial finish with faint scorching around contact points.",
+    "color_scheme": "Gunmetal gray polymer body with silver-white electromagnetic nodes. Handle transitions from dark charcoal to dull steel at the capacitor module. Occasional faint orange heat-discoloration around node clusters.",
+    "grip_texture": "Rubberized, slightly tacky polymer with microscopic grid pattern for purchase. Cool to touch despite operational status. Subtle ridging that accommodates both overhand and underhand grip positions.",
+    "distinctive_features": [
+      "12 visible hemispherical electromagnetic nodules arranged at roughly 17cm intervals",
+      "Faint blue-white corona discharge visible around nodes in darkness when charged",
+      "Micro-capacitor display on handle showing charge percentage in small amber LED",
+      "Fine copper threading visible beneath translucent polymer sections",
+      "Subtle scoring and micro-abrasions from repeated contact impact",
+      "Handle features Carrion Defense Works embossed skull-and-circuit logo",
+      "Barely audible high-frequency hum when powered, similar to old electrical transformers"
+    ],
+    "manufacturer_markings": "Carrion Defense Works stylized logo (interlocking skull and circuit board) embossed into handle grip. Serial number laser-etched on capacitor housing. Model designation 'NL-3' printed in white on handle. 'AGONY' variant name etched below serial with worn clarity.",
+    "condition_typical": "Field-worn but maintained. Surface shows micro-abrasions consistent with storage and occasional handling. Electromagnetic nodes appear scored from target contact. No visible corrosion or structural damage. Capacitor module shows thermal stress marks. Whip strands maintain structural integrity despite cosmetic wear."
+  },
+  "image_prompt": "Close product photography of a coiled neural lash whip on matte black surface, hand holding handle section displaying embedded electromagnetic nodules, dramatic side-lighting emphasizing the segmented silver emitter nodes against charcoal polymer, subtle blue electrical corona visible around nodes, weathered titanium and gunmetal aesthetic, cyberpunk interrogation device, sharp focus on capacitor housing and serial markings, professional weapon catalog style, dark moody lighting with accent highlights on metallic components --ar 3:2 --v 6"
 }

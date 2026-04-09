@@ -39,5 +39,34 @@
     "tier_2",
     "everyday_carry"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Ambrosia Fekete-Waiyaki",
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Ossuary Arms Memento Vivere OA-7 'Momento'",
+    "Slagworks Industrial",
+    "The Human Baseline Alliance",
+    "WELLSPRING"
+  ],
+  "physical_description": {
+    "visual_profile": "A chunky, high-fashion statement bracelet that reads as expensive streetwear rather than a weapon. The band is wide and angular with a subtle tech-forward aesthetic. It sits confidently on the wrist like jewelry from a luxury brand, not defensive gear.",
+    "dimensions": "7-9 cm inner diameter (adjustable), 3.2 cm width, 1.8 cm thickness",
+    "weight_description": "Substantial without feeling burdensome — 64 grams sits solidly on the wrist with a reassuring heft that telegraphs quality and durability",
+    "primary_material": "Aerospace-grade polymer composite outer shell with internal conductive lattice and capacitor grid",
+    "finish": "Textured composite surface with a brushed or matte treatment that conceals the electrode grid; available in matte black, brushed silver, rose gold, and seasonal colorways",
+    "color_scheme": "Primary: matte black or brushed silver (most common); accents: rose gold trim or seasonal limited-edition gradients; inner LED indicator glows soft blue when charged",
+    "grip_texture": "Textured composite is warm to the touch, slightly grippy without being sticky — designed to feel like premium fashion jewelry",
+    "distinctive_features": [
+      "Electrode contact grid barely visible under textured surface, extends 2mm on activation",
+      "Concealed thumb-activated pressure pad on inner surface (only the wearer knows its location)",
+      "Subtle blue LED indicator on inner band — charge level visible only to wearer",
+      "Seamless band design with no visible seams or hatches",
+      "Slightly beveled edges for ergonomic wrist contact during strike deployment",
+      "Faint VOLTLINE branding embossed into the outer surface"
+    ],
+    "manufacturer_markings": "VOLTLINE PERSONAL ELECTRONICS wordmark subtly embossed on the outer band at 12 o'clock; small serial plate recessed into inner surface; model designation 'SB-4' laser-etched near clasp",
+    "condition_typical": "Pristine and well-maintained — cosmetic scratches minimal due to fashion-conscious owners; electrode contacts clean and fully functional; charge cycles tracked via companion app"
+  },
+  "image_prompt": "Professional product photography of a matte black VoltLine ShockBand SB-4 bracelet, displayed on a dark slate surface or held in a gloved hand (tactical black glove with fingers curled as if about to activate). Dramatic side-lighting emphasizing the textured polymer surface and the barely-visible electrode grid. The inner wrist surface shows the faint blue LED charge indicator. Cyberpunk aesthetic with cool blue and silver accent lighting. Clean, high-end jewelry photography style merged with tactical gear presentation. --ar 3:2 --v 6"
 }

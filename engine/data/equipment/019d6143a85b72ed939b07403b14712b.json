@@ -85,5 +85,24 @@
     "The Nearfield",
     "Vantablack Media Parasocial Carrier Mask",
     "WELLSPRING"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, elongated autoinjector with a distinctly medical aesthetic corrupted by industrial brutalism. The form suggests controlled violence — tapered needle housing, aggressive grip texture, and a wide thumb-activated plunger mechanism. The amber-tinted transparent barrel dominates the visual, revealing the luminous saline suspension within that faintly glows electric blue at rest.",
+    "dimensions": "18cm length, 2.8cm diameter at widest point (barrel), palm-filling handheld form factor",
+    "weight_description": "94g loaded — light enough for quick deployment but substantial enough to feel purposeful. Pocketable but typically carried in a quick-access thigh rig or med kit due to fragility and immediate-use protocols.",
+    "primary_material": "Aircraft-grade polymer composite body with reinforced injection-molded grip zones; transparent polycarbonate barrel; stainless steel needle cartridge with titanium safety collar",
+    "finish": "Matte-finish polymer with high-friction rubber grip panels; gloss amber tint on barrel; micro-etched depth markings along needle housing. Industrial, utilitarian — stripped of unnecessary aesthetics.",
+    "color_scheme": "Primary: Deep amber/cognac transparent barrel with faint blue bioluminescent suspension visible inside. Accents: matte charcoal-gray body, electric blue indicator LED at trigger point, chrome safety collar",
+    "interface_elements": "Single large thumb-button plunger with tactile click-through safety detent; small circular LED indicator (blue when armed, red when expired/compromised); biometric contact pad on grip (subtle, recessed); pressure-release valve port near needle tip; dose counter digital readout (small LCD window, white numerals on black)",
+    "distinctive_features": [
+      "Faint electric-blue luminescence visible through transparent barrel at rest, intensifying during biometric handshake",
+      "Amber-tinted barrel creates distinctive 'liquid gold' visual in low-light contexts — instantly recognizable in medical and underground scenes",
+      "Click-through safety mechanism with audible three-stage engagement",
+      "Micro-etching showing flow gradient inside barrel, hinting at nanite saturation levels",
+      "Recessed grip biometric sensor creates subtle fingerprint-catch pattern visible under angled light"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo (interlocking double helix) embossed in chrome on barrel shoulder; regulatory stamp (GLMZ Medical Authority cert number) laser-etched on safety collar; lot/expiration date printed in white on black label strip running down rear grip",
+    "condition_typical": "Fresh units gleam with pharmaceutical sterility — pristine, almost precious. Field-used injectors show wear: scuffed matte finish on grip, discolored safety collar from repeated UV exposure in field kits, faint frost patterns on barrel from temperature cycling. Gray-market units often bear strip-off regulatory labels or have serial numbers deliberately obscured."
+  },
+  "image_prompt": "Close-up product photography of a Helix Biosystems Nanite Flood Injector autoinjector on a surgical steel workbench, shot from 45-degree angle. The transparent amber barrel glows with faint electric-blue bioluminescence from the nanite suspension inside, casting eerie light onto matte charcoal body. Dramatic single-source overhead lighting creates sharp shadows across the grip ridges and safety collar. Shallow depth of field keeps needle tip and plunger mechanism in razor-sharp focus while background blurs into dark tones. Moody cyberpunk medical aesthetic with clinical precision — sterile, purposeful, slightly unsettling. Shot in cool color grading with amber and cyan color contrast. --ar 3:2 --v 6"
 }

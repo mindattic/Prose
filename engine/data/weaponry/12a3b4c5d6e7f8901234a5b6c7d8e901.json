@@ -42,5 +42,38 @@
     "fashion",
     "concealable"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Cavitation Pulse Knuckles CPK-5 'Bloodwater'",
+    "Fanta Kato-Adomako",
+    "Ira Volkov",
+    "Kairos Blunt",
+    "Lazarus EC-4 'Companion'",
+    "MERIDIAN",
+    "Ossic Fracture Charge OFC-7 'Jawbreaker'",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "TESSERA PG-2 'Signature'",
+    "TESSERA TC-3 'Crucible'",
+    "Timur Osei-Bjelke"
+  ],
+  "physical_description": {
+    "visual_profile": "Four interlocking brass-weight rings connected by a unified palm grip — resembles a hybrid between a traditional knuckleduster and a piece of wearable tech. The rings dominate visually; the palm bridge is secondary, almost invisible when worn. At rest, the device has an aggressive, almost skeletal quality.",
+    "dimensions": "Ring diameter: 2.2 cm each; palm grip width: 8.5 cm; overall hand span when worn: 12 cm; thickness at knuckle face: 1.8 cm",
+    "weight_description": "Hefty but balanced — 310 grams total distributed across four contact points creates a sense of purposeful density without feeling clumsy. The weight sits naturally in a closed fist.",
+    "primary_material": "Brass-weight composite rings (primary load-bearing structure); anodized aluminum palm bridge; embedded micro-capacitor cells in ring cores",
+    "finish": "Brushed steel base finish with matte black as standard street variant; limited Meridian Gold option shows polished edges with brushed centers; discharge electrode faces show fine machining marks",
+    "color_scheme": "Matte black with gunmetal-grey electrode contact points; brushed steel variant shows warm grey tones with darker grey accents; Meridian Gold is warm champagne with darker shadow recesses",
+    "grip_texture": "Palm bridge wrapped in textured polymer (non-conductive) with subtle diamond-plate pattern for secure grip even under sweat or adrenaline; ring surfaces are smooth machined metal — cold to touch",
+    "distinctive_features": [
+      "Four micro-discharge electrodes positioned at leading knuckle face — slightly raised, roughly 2mm diameter each",
+      "Subtle capacitor bulges visible inside each ring where micro-cells are embedded",
+      "Inductive charging contact points on inner palm surface (three discrete points aligned with wristband receiver)",
+      "Machining marks radiating from electrode faces — deliberate design choice suggesting precision manufacturing",
+      "Very faint Crucible Industries marking stamped on palm bridge (small serif font, approximately 8mm tall)",
+      "Minimal branding — logo is understated, almost apologetic, as if acknowledging legal grey-zone status"
+    ],
+    "manufacturer_markings": "Crucible Industries logo (minimalist angular C-shape) stamped on inner palm bridge; serial number laser-etched on ring inner surfaces (visible only when removed); no visible batch codes or regulatory stamps (legal classifications handled via digital registry, not physical marking)",
+    "condition_typical": "Street-worn units show micro-scratches on ring surfaces from contact with concrete, glass, or metal; electrode faces accumulate fine carbon scoring from repeated discharge; palm bridge polymer develops scuff marks and slight discoloration from sweat and grip oils; battle-scarred examples show deep gouges and burn marks around discharge points; most users keep units deliberately worn-looking to avoid appearing corporate or 'try-hard'"
+  },
+  "image_prompt": "Product photography of Crucible Industries Volt Knuckle VK-1 'Jawbreaker' knuckleduster set in matte black finish, shown in a gloved cyberpunk streetfighter's hand against dark industrial surface. Four interlocking brass-weight rings with visible micro-discharge electrodes on knuckle faces, connected by anodized aluminum palm grip. Dramatic cool-blue side-lighting emphasizing the machined electrode contact points and subtle capacitor geometry visible through rings. Dark background with faint rain-slick reflection, suggesting wet GLMZ street environment. Close-up detail shows texture of non-conductive palm wrap and fine machining marks. Cyberpunk aesthetic — utilitarian, street-legal weapons-grade tech, worn but maintained. Include companion charging wristband partially visible at wrist. Minimalist Crucible Industries marking visible on palm bridge. --ar 3:2 --v 6"
 }

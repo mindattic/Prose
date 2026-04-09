@@ -57,5 +57,44 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Crucible UB-2 'Umbrella'",
+    "Fatoumata Belov-Ntim",
+    "GLMZ",
+    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
+    "Mika Sorel",
+    "Narrowcast",
+    "Nnamdi Ostrowski-Faletolu",
+    "Ringo Corponation",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA PG-2 'Signature'",
+    "The Crucible",
+    "The Pure Hand",
+    "Vantablack Media Parasocial Carrier Mask",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, tapered directed-energy weapon resembling a precision surgical instrument crossed with a futuristic sidearm. The body tapers from a broad grip section to a narrow, almost delicate emitter head, giving it an unexpectedly elegant silhouette despite its cruel function. The overall impression is clinical and cold — something designed in a laboratory rather than a foundry.",
+    "dimensions": "48 cm overall length, 8 cm grip width, 3.5 cm depth at emitter head. The narrow barrel-like emitter section extends 12 cm from the forward grip, tapering to a 1.2 cm diameter focusing aperture.",
+    "weight_description": "Surprisingly light and balanced — approximately 1.6 kg distributed to favor forward handling. The grip-to-emitter weight ratio feels naturally pointer, encouraging precision aim rather than brute control.",
+    "primary_material": "Aerospace-grade polymer composite body with embedded copper heat-dissipation matrix visible through translucent panels. The emitter head is matte black titanium-alloy shroud housing the infrared optics.",
+    "finish": "Deep matte black polymer with brushed titanium accents around the emitter aperture. Subtle iridescent oil-slick finish on the transparent heat-sink windows reveals internal radiator fins. Minimal weathering in field use, though older units show faint stress marks around the charging port.",
+    "color_scheme": "Primary black with gunmetal grey heat-sink panels and barely-visible RGB status indicators (amber/red) nested beneath the grip. The emitter lens has a faint violet-tinted protective cover.",
+    "grip_texture": "Textured polymer with subtle finger-tracking grooves. Slightly tacky, rubberized feel that aids precision control. The grip surface has microscopic etching to aid sweat and oil resistance — ironic given the weapon's function.",
+    "distinctive_features": [
+      "Integrated beam-focus dial at 2 o'clock position on grip — rotating knurled knob with 1-20m range markings etched in minimal relief",
+      "Transparent side panels revealing copper serpentine heat-dissipation tubes running the length of the frame",
+      "Slim RGB status LED array (3 lights) nested under the grip near the trigger guard — indicates charge status and thermal state",
+      "Charging socket recessed on the rear grip, protected by spring-loaded titanium cover",
+      "Precision aperture at emitter head with internal optical focusing lens visible as slight purple tint",
+      "Minimal ergonomic finger-grooves, suggesting this is a weapon for precise placement rather than sustained handling",
+      "Hairline etching around the emitter head showing thermal stress patterns from repeated use"
+    ],
+    "manufacturer_markings": "Small RingoFuel corporate sigil (stylized 'R' with fuel-drop motif) laser-etched on the right side of the grip. Serial number and certification stamps embossed on the charging port cover in tiny, precise characters. Regulatory compliance markings appear on the left side near the grip — Tier 3+ licensing identifier.",
+    "condition_typical": "Well-maintained, often showing signs of professional service and careful handling. The delicate optics and precision components mean most field units appear almost clinical in their cleanliness. Veteran units may show micro-scarring on the aperture cover from repeated deployment, or faint heat-stress discoloration around the emitter head. The weapon's prestige status means owners keep it in working condition — visible neglect is rare."
+  },
+  "image_prompt": "Product photography of the Thermocatalytic Sebaceous Ignition Lance TSIL-1 'Waxwork' mounted on a matte black minimalist display stand, viewed from three-quarter angle. Dramatic side-lighting reveals the internal copper heat-dissipation matrix through translucent polymer panels, casting subtle shadows across the sleek black titanium emitter head. The integrated beam-focus dial is clearly visible on the grip. Shallow depth of field emphasizes the precision optics at the aperture. Small flecks of iridescent light play across the violet-tinted emitter lens. Photorealistic, clinical cyberpunk aesthetic. Dark charcoal background with reflection. High-end product photography quality, emphasizing the weapon's medical-laboratory origins and deadly precision. --ar 3:2 --v 6"
 }

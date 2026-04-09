@@ -57,5 +57,44 @@
     "drone",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Axiom Systems Cognitive Grenade CG-1 'Brainstorm'",
+    "Aybek Alvarez-Okonkwo",
+    "Cem Lund-Bangura",
+    "GLMZ",
+    "Helix Biosystems",
+    "Ilhan Sandstrom-Badu",
+    "Kamala Blomberg-Konadu",
+    "Nenad Vargas-Baffour",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "NeuralPath Cascade Standard Feed BCI",
+    "Nnenna Boateng-Szymański",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "TESSERA PG-2 'Signature'",
+    "Zheng-Dao Marrow-Pulse Implant",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, ovoid charge device with an aggressive industrial aesthetic. The form factor suggests organized lethality—smooth curves interrupted by functional venting and sensor arrays. At rest, it resembles a scaled-up medical diagnostic pod crossed with a breaching charge. The device projects controlled menace rather than raw destructiveness.",
+    "dimensions": "Height: 8.2cm, diameter: 5.8cm, depth: 6.1cm",
+    "weight_description": "Deceptively heavy for its size—290g creates substantial heft in the palm, suggesting dense internals. Balanced but not comfortable; designed for confident grip rather than prolonged handling.",
+    "primary_material": "Aerospace-grade composite shell with segmented titanium-reinforced polymer casing. Internal framework is precision-machined steel for electromagnetic shielding integrity.",
+    "finish": "Matte gunmetal gray with brushed titanium accents. The surface bears intentional micro-texturing to prevent slipping. Wear patterns show scuffing consistent with field deployment and hasty storage.",
+    "color_scheme": "Gunmetal gray primary with gunmetal titanium bands at equator and base. Accent: cold electric blue on sensor housings and frequency-tuning port.",
+    "grip_texture": "Rubberized polymer with aggressive grip texture—designed for gloved or augmented hands. The equatorial band is wrapped in thin textured steel mesh for enhanced purchase.",
+    "distinctive_features": [
+      "Twin hemispherical sensor arrays (blue-tinted sapphire optics) positioned at north and south poles for frequency calibration",
+      "Micro-venting channels along the equatorial band to dissipate residual electromagnetic bleed",
+      "Small recessed tuning port (2cm diameter) marked with frequency calibration hash marks",
+      "Zheng-Dao and Helix Biosystems dual-stamp logos (partially removed/obscured on many examples)",
+      "Serial plate roughed and refinished, suggesting deliberate identification erasure on black-market units",
+      "Faint stress fractures around the equatorial band on well-used examples",
+      "Minimal indicator lights (red/amber, rarely visible) beneath the forward sensor pod"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo (faint) on upper hemisphere; HELIX BIOSYSTEMS stamped on lower base. Most field-recovered units have these markings partially filed or chemically etched away. Serial codes are present but often corrupted. Manufacturing date codes (2219-2221) indicate pre-termination production.",
+    "condition_typical": "Well-maintained examples are rare; most field units show battle-worn polymer with micro-cracking, faded lettering, and accumulated residue from electronic contamination. Storage damage (desiccation rings, corrosion bloom around sensor seals) is common. Military surplus stockpiles show orderly wear; black-market examples often bear jury-rigged repairs and aftermarket Faraday tape applied to critical surfaces."
+  },
+  "image_prompt": "Product photography of a compact neural disruption charge (NDC-7 'Brainstorm') centered on a dark matte-black surface. Overhead dramatic side-lighting casting sharp shadows, revealing the ovoid gunmetal gray composite body with titanium-banded equatorial band. Twin sapphire-blue sensor arrays visible at top and bottom poles, glowing faintly under studio lights. Recessed tuning port visible, marked with frequency calibration hash marks. A gloved hand (chrome-augmented fingers visible) enters frame from lower right, reaching toward the device to demonstrate scale and field-use realism. Shallow depth of field keeps the charge in sharp focus while blurring the dark background. Cool color grading emphasizes the device's electronic nature—electric blues and gunmetal tones dominant. Emphasize the blend of medical precision and lethal engineering. Cyberpunk 2226 GLMZ aesthetic, sterile-yet-sinister product photography style. --ar 3:2 --v 6"
 }

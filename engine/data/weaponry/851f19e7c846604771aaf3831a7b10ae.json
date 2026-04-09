@@ -42,5 +42,40 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Nika Svensson-Kone",
+    "Toluwani Przhevalskyj-Mboyo",
+    "Zheng-Dao Heavy Industries Mass Driver Turret MDT-6 'Trebuchet'",
+    "Zheng-Dao Heavy Industries Portable Fusion Battery PFB-2",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist electromagnetic rifle with exaggerated proportions — a massive, blocky accelerator chamber dominates the upper receiver, flanked by stabilizing rails and heat-dissipation fins. The silhouette is aggressive and industrial, resembling a scaled-down naval gun mounted on a rifle stock. Heavy, purposeful, intimidating.",
+    "dimensions": "156 cm overall length, 28 cm width across stabilizer rails, 12 cm depth at chamber. Barrel/accelerator tube: 84 cm. Firing stock extends 38 cm rearward.",
+    "weight_description": "A genuinely heavy weapon — 25 kg base unit feels like shouldering a loaded toolbox. The weight is front-loaded, requiring braced shooting positions. The dorsal fusion cell adds another 8 kg mounted on the undercarriage. Unwieldy without proper stance and support.",
+    "primary_material": "Stamped steel accelerator chamber, reinforced carbon-composite stock and handguard, aluminum alloy mounting rails for modularity. The magnetic coil assembly is shielded in a ferrous-core housing.",
+    "finish": "Industrial matte black with brushed steel accelerator tube. The coil housing shows oxidized copper patina from heavy electromagnetic cycling. Tactical rail surfaces are anodized gray. Scorched polymer grip wrapping from repeated capacitor discharge heat.",
+    "color_scheme": "Dominant matte black with gunmetal gray accents on the rails. Copper-bronze discoloration visible around coil vents. Fusion cell is industrial orange with black warning striping.",
+    "grip_texture": "Heavily textured, scorched rubberized polymer — designed for sweating, augmented hands. The rear stock features a knurled steel cheek rest. All gripping surfaces are aggressively textured to prevent slipping under recoil.",
+    "distinctive_features": [
+      "Oversized cylindrical accelerator chamber with visible copper coil windings through vented steel lattice",
+      "Two parallel stabilizer rails running the full length, mounted at 45-degree angles for rigid bracing",
+      "Massive electromagnetic recoil dampening actuator mounted beneath the chamber — a chromed pneumatic-magnetic hybrid cylinder",
+      "Array of amber and red LED status indicators clustered on the left receiver — power, charge state, thermal warning, capacitor status",
+      "Heat radiator fins molded into the stock and chamber housing, showing scorch marks from thermal cycling",
+      "Modular dorsal fusion cell mounted on top via quick-disconnect clamps, itself a compact cylindrical unit with orange warning bands",
+      "Single massive round loading aperture on the starboard side — large enough to hand-load a 500-gram slug",
+      "Capacitor discharge vents arranged in a grid pattern along the right side, slightly ablated from arcing",
+      "Serial and nomenclature plates stamped into the receiver in both Mandarin and English",
+      "Custom wear patterns on the stock from operator shoulders and sustained contact"
+    ],
+    "manufacturer_markings": "ZHENG-DAO HEAVY INDUSTRIES stamped in block letters across the top of the chamber housing. Model designation MD-10 engraved below. Small serial plate riveted to the left rail. Warning labels in multiple languages decal-applied on the fusion cell: high-voltage hazard and electromagnetic field warnings.",
+    "condition_typical": "Well-maintained but heavily used — scorch marks around vents, micro-abrading on the grip from gloved handling, slight discoloration on the recoil actuator from multiple thermal cycles. The weapon shows professional maintenance rather than cosmetic care. Battle-worn but functional."
+  },
+  "image_prompt": "Professional product photography: Zheng-Dao MD-10 Trebuchet mass driver rifle mounted horizontally on a dark matte black surface, angled 35 degrees to showcase the massive accelerator chamber and stabilizer rail architecture. Dramatic side-lighting from the left, casting deep shadows that emphasize the industrial geometry and heat-fin textures. Close detail of the copper-discolored coil housing and amber LED indicators glowing softly. Dorsal fusion cell mounted with orange warning stripes visible. The rubberized, scorched grip texture sharp in focus. Cyberpunk industrial aesthetic — clinical, militaristic, pure kinetic brutalism. Shot in studio with metallic accents reflecting hard directional light. Dark teal and warm amber ambient wash. Canon EOS R5 quality, hyperreal material definition. --ar 3:2 --v 6"
 }

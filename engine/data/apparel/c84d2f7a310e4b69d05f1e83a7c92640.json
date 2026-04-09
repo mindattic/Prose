@@ -57,5 +57,26 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Underlayer Collective",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, utilitarian silhouette built for repetitive heavy labor. The figure reads as grounded and functional—broad across the shoulders, tapered at the ankles. The jacket dominates visually, giving an impression of durability and wear-readiness. The stenciled orange triangle on the left sleeve breaks the monochrome palette and signals affiliation or jurisdiction. Overall impression: street-tier independent worker, self-assembled kit, no corporate branding.",
+    "fit": "Relaxed through the chest and shoulders with intentional room in the thighs for crouching and bending. The henley is fitted enough to layer but not constrictive. Trousers are cut wide at the hip-thigh, tapering slightly toward the ankle. Boots are chunky and grounded. Everything designed for 12-hour shifts, not aesthetics.",
+    "primary_material": "Faded waxed cotton jacket (street-surplus); heavyweight charcoal cotton henley; navy canvas work trousers; grey knit wool balaclava; composite-rubber dock boots with steel toe caps",
+    "texture": "The jacket has a weathered, creased waxed-cotton surface with visible softening at stress points. The henley is dense and slightly nubby. Canvas trousers show a broken-in surface with subtle fading at the knees and seat. Balaclava is tightly knitted, slightly pilled from use. Boots are scuffed grey at the toe, showing underlying composite beneath the wear.",
+    "color_scheme": "Dominant navy (jacket, trousers) and charcoal (henley) create a low-contrast base. Grey knit cap with a single faded orange horizontal stripe. The stenciled orange triangle on the left sleeve (dock-lot mark) is the only bright accent. Boot toe caps weathered to light grey. Overall palette is industrial and drained of color.",
+    "closures": "Jacket: five-button front plus concealed hidden snap placket; two chest flap pockets with reinforced bar-tack stitching; hood collapsed into collar with friction fit. Henley: three-button placket. Trousers: zip fly with reinforced bartack stitching, two front pockets, cargo pockets on both legs with flap closures. Belt: heavy-duty friction-fit webbing with D-ring riveted attachment. Boots: side-zip entry with reinforced eyelets.",
+    "distinctive_features": [
+      "Spinal-rig accommodation channel: back panel slit along spine and re-laced with industrial paracord to allow for spinal augmentation gear or load-bearing exoskeleton harness integration",
+      "Hand-stenciled orange triangle with number on left sleeve (dock lot designation, crew mark, or union section ID)",
+      "Chest pockets reinforced with street-sewn bar tacks indicating frequent high-load carry",
+      "Knee pad channels with pads currently inserted (removable, replaceable)",
+      "Wide webbing belt with heavy D-ring attachment point; carries hook tool, work-lamp clip, battered multi-use utility holster",
+      "Paracord re-lacing on jacket spine visible from back",
+      "Balaclava worn pulled back as watch cap; faded orange stripe indicates either crew affiliation or age-wear"
+    ],
+    "tier_indicator": "Tier 4–5 boundary. No corporate issuing, no warranty branding. Every piece selected for function and durability, not status. Assembled from street-label surplus and generic industrial runs. The custom spinal-rig accommodation suggests either personal augmentation investment or frequent work with exoskeleton systems.",
+    "cultural_context": "Independent dock labor, gig-economy freight handler, day-hire autonomous-cargo assistant. Someone who works across multiple small operations, never long enough to get a company uniform. The kit signals: reliable, augmentation-aware, self-maintained, crew-adjacent but not institutionally loyal. No corpo affiliation; possibly union-adjacent or informal collective-member. Willing to customize gear for personal needs.",
+    "condition_typical": "Deliberately worn. Not pristine; not destroyed. The jacket is broken in but well-maintained. Boots scuffed at toe caps from concrete and steel dock surfaces. Canvas trousers show patina at stress points but no major holes or tears. The paracord re-lacing is recent enough to be functional, old enough to be trusted. Everything smells like salt water, grease, and industrial disinfectant."
+  },
+  "image_prompt": "Overhead 3/4 view of a cyberpunk dock worker in faded waxed-cotton navy jacket, stenciled orange triangle on left sleeve, paracord-laced spine channel visible from back angle. Charcoal henley visible at collar and placket. Navy canvas work trousers with knee pads in place, heavy webbing belt with D-ring and utility holster, grey knit balaclava worn as watch cap with orange stripe. Scuffed composite-rubber dock boots with grey toe caps. Model stands on weathered industrial dock, stacked cargo containers and overhead LED gantry lights in soft blue-amber haze behind. Tight crop on torso showing fabric detail, wear pattern, and reinforced stitching. Moody industrial lighting, slight orange sodium-vapor wash across left side. Dark asphalt foreground, wet from recent rain. --ar 2:3 --v 6"
 }

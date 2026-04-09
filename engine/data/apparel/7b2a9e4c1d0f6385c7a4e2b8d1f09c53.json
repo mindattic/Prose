@@ -48,5 +48,25 @@
     "The Cinder Notch",
     "Thermite Cavity Disbursement Shell TCDS-3",
     "VitaCore BloomFilter Olfactory Modulation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A heavy-duty split-front forge apron with a pronounced angular silhouette. The garment hangs straight and utilitarian, with visible heat damage and discoloration creating organic mottled patterns across the torso. Despite industrial wear, it reads as purposeful and protective—a second skin for high-heat work.",
+    "fit": "Oversized and loose-fitting, designed to be worn over standard workwear without restriction. The split front allows full leg mobility. Adjustable at three points (neck, waist, thigh) for secure positioning during movement.",
+    "primary_material": "Ceramic-fiber mat bonded to carbonized kevlar weave outer layer; aramid fleece moisture-wicking inner contact layer",
+    "texture": "Rough and slightly singed outer surface with visible heat-bloom discoloration; the ceramic-fiber mat has a slightly chalky, textured finish. Inner aramid fleece is smooth and soft by contrast. Overall impression is tactile and weathered.",
+    "color_scheme": "Deep char-gray base with irregular heat-bloom discoloration patterns—lighter charcoal and cream streaks across chest and lap from sustained thermal exposure. Natural wear creates organic striping.",
+    "closures": "Three ceramic buckles: neck, waist, and thigh. Fast-release design for emergency doff. No zippers or magnetic snaps—purely mechanical.",
+    "distinctive_features": [
+      "Split front design for mobility and heat dispersal",
+      "Built-in tool channel along right hip",
+      "Ceramic fiber outer bonded to kevlar—genuine thermal protection, not cosmetic",
+      "Heat-bloom discoloration patterns indicating authentic heavy use",
+      "Ceramic buckles instead of metal (non-conductive)",
+      "Designed for layering over workwear"
+    ],
+    "tier_indicator": "Tier 2-3 functional. The apron itself is Tier 2 quality (durable, purpose-built), but worn by both corpo foundry workers and street-level scrap-smelters, indicating cross-tier utility.",
+    "cultural_context": "Worn by foundry workers, smelters, and dangerous-trade laborers in the GLMZ. Signals skilled manual work, heat-industry experience, and practical toughness. The wear patterns are badges of competence.",
+    "condition_typical": "Weathered and well-used. Heat-bloom discoloration, minor fraying at the split seam, possible small tears patched with reinforced aramid tape. Never pristine—this is a working garment."
+  },
+  "image_prompt": "Crucible HeatWall Forge Apron MK-6 displayed on a dark industrial mannequin in a dimly-lit foundry setting. The apron hangs heavy and angular, char-gray fabric with visible heat-bloom discoloration patterns across the chest and lap in cream and lighter charcoal tones. Ceramic buckles catch weak overhead light. Split front seam visible. Right hip tool channel distinct. Background: blurred industrial shelving, amber forge glow, concrete floor. Moody, high-contrast lighting emphasizing texture and wear. Cyberpunk workwear aesthetic. --ar 2:3 --v 6"
 }

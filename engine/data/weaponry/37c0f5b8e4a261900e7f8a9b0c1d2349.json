@@ -45,5 +45,36 @@
     "shieldtech",
     "anti_personnel"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions Cryogenic Projector CP-4 'Frostbite'",
+    "Arcturus Exo-Runner Frame",
+    "Marrowvault Cryogenics",
+    "Mika Sorel",
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TERMINUS",
+    "The Heritage Vault",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, utilitarian canister with a professional medical-equipment aesthetic — cylindrical body with a pronounced domed top and integrated trigger-grip assembly. The silhouette reads as clinical and purposeful rather than aggressive; it resembles a high-end inhaler or pharmaceutical delivery system more than a traditional self-defense spray.",
+    "dimensions": "Height: 14.5 cm, diameter: 4.2 cm, grip width: 3.8 cm. Nozzle protrusion: 1.2 cm",
+    "weight_description": "Balanced and moderate — approximately 280g when full. Sits comfortably in a closed fist with slight forward weight bias toward the nozzle; pressure-rated canister construction gives it a dense, engineered feel",
+    "primary_material": "Anodized aluminum body with steel pressure-rated inner vessel; polymer grip and trigger housing",
+    "finish": "Matte anodized silver-gray on the primary canister body, with a darker charcoal grip panel. The nozzle collar is brushed stainless steel with subtle industrial knurling",
+    "color_scheme": "Primary: metallic silver-gray with charcoal accents. Safety band: bright blue stripe circumscribing the upper third of the canister, denoting cryogenic hazard classification",
+    "grip_texture": "Rubberized polymer with fine crosshatch pattern for wet or gloved hand retention; slightly tacky to the touch without being adhesive",
+    "distinctive_features": [
+      "Precision-engineered trigger with dual-stage pressure mechanism and safety lever requiring deliberate dual-hand engagement",
+      "Blue hazard warning stripe with safety pictogram (snowflake icon with prohibition symbol)",
+      "Pressure relief valve visible at the apex of the dome — small brass fitting with graduated markings",
+      "Serial number and certification stamps embossed on the lower body in bold sans-serif font",
+      "Nozzle features a micro-perforated dispersal head with visible fine rifling to direct the cryogenic stream into a tight effective cone",
+      "Faint frost residue often visible around the nozzle tip and dispersal head from production testing or prior discharge"
+    ],
+    "manufacturer_markings": "SHIELDTECH logo embossed prominently on upper body in corporate sans-serif. Regulatory text below: 'CryoStop CS-3 | LICENSED PROFESSIONAL USE ONLY | -78°C to -95°C WARNING'. Certification stamp and batch code stamped into the aluminum beneath the trigger guard",
+    "condition_typical": "Field units are usually pristine or near-pristine due to single-use deployment cycles and strict professional handling protocols; minor handling scratches on the grip and occasional frost bloom around the nozzle are normal. Well-maintained contractor units show no active corrosion, though some show light scuff marks from holster retention"
+  },
+  "image_prompt": "Professional product photography of a ShieldTech CryoStop CS-3 cryogenic spray canister. Shot from a slight 3/4 angle on a dark matte black surface. The canister is metallic silver-gray with a charcoal rubberized grip, bright blue hazard stripe, and brushed steel nozzle. Dramatic cool-toned side-lighting from the left emphasizes the aluminum body and casts sharp shadows; a subtle frost shimmer or vapor effect around the nozzle tip suggests cryogenic potency. The trigger guard and safety lever are clearly visible, with SHIELDTECH branding and certification stamps legible. Cyberpunk aesthetic: include a gloved hand (tactical leather or polymer noir glove) positioned at the grip, showing the dual-stage trigger mechanism. Clinical, professional, menacing in restraint. Shot in sterile laboratory or secure facility environment. High contrast, cool color grading --ar 3:2 --v 6"
 }

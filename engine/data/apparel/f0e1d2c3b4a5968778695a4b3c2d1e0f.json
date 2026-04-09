@@ -48,5 +48,26 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Shelf",
     "VitaCore LinguaSync Real-Time Translation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A refined, understated charcoal gray longline coat with clean lines and a professional silhouette. Appears as everyday corporate wear—no visible armor, no tactical affectation. The subtle raised collar detail is the only hint of purposeful design. Drapes with natural fluidity despite concealed ballistic panels.",
+    "fit": "Tailored but not restrictive. Structured through the shoulders and torso, with enough room for layering and movement without excess fabric. The longline cut extends mid-thigh, providing coverage while maintaining a civilian profile.",
+    "primary_material": "Wool-poly blend exterior (60% wool, 40% synthetic fiber), matte finish. Interior lined with flexible ceramic-polymer composite ballistic panels in a seamless matrix.",
+    "texture": "Exterior: smooth, dense weave with subtle texture from wool content. Interior panels: slightly textured matte finish, engineered for flex without acoustic signature. Seams reinforced at stress points.",
+    "color_scheme": "Charcoal gray exterior with slate undertones. Interior ballistic panels are muted graphite with minimal contrast. No bright accents or branding visible.",
+    "closures": "Front button closure (4 buttons, brushed steel), hidden interior magnetic snaps for quick panel access. Wrist cuffs have friction-fit closures.",
+    "distinctive_features": [
+      "Raised back collar protecting cervical spine",
+      "Invisible ballistic liner extending full torso—chest, back, and side panels",
+      "NIJ Level IIIA ceramic-polymer composite construction",
+      "Hidden interior seam access for maintenance or panel replacement",
+      "Unpadded, unremarkable exterior—no tactical aesthetic",
+      "Kestrel brand insignia (small woven tag inside collar only)",
+      "Reinforced interior anchor points for optional hardware"
+    ],
+    "tier_indicator": "Tier 3 professional—functional protection marketed as civilian wear. Price point suggests mid-level corpo, security specialist, or established fixer. Not cheap, but not ostentatiously wealthy.",
+    "cultural_context": "Worn by people who live in managed danger: corporate investigators, freelance journalists in contested zones, diplomatic security, fixers who handle sensitive work, mid-tier operatives. Signals quiet competence and acceptance of risk without broadcasting vulnerability.",
+    "condition_typical": "Pristine to broken-in. When new, the coat looks corporate-generic. Over time, subtle creases form around the panel seams (internal), minor scuffs accumulate on cuffs and lower hem, and the fabric develops a lived-in patina. Ballistic panels show no external wear."
+  },
+  "image_prompt": "Fashion photograph of a charcoal gray Kestrel Armored Liner Coat on a lean cyberpunk model in a dimly-lit corporate lobby or parking structure. Model wearing dark turtleneck underneath, subtle chrome wrist augmentation visible on one hand. Coat buttoned, collar raised slightly, hands in pockets. Moody neon accent lighting (cool blue and amber) casting sharp shadows across fabric. Close-up detail shot of interior showing matte ballistic panel edges. Dark textured background with industrial geometry. Professional, understated, the coat looks expensive but not flashy. High contrast, film noir aesthetic. --ar 2:3 --v 6"
 }

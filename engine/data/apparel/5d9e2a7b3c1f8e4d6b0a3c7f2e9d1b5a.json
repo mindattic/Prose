@@ -45,5 +45,24 @@
     "Irontide Tidal Energy",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
     "The Undertow"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A structured, slightly oversized single-breasted sport coat with a refined silhouette that reads as intentionally vintage-inspired rather than contemporary corporate. The wider notched lapels and classic cut evoke pre-Collapse tailoring, grounding it in a sense of continuity and craft rather than cutting-edge design. On a body, it drapes with quiet confidence—not aggressively fitted, but not slouchy either.",
+    "fit": "Relaxed-tailored. Sits naturally on the shoulders with room through the chest and torso. Sleeves end just at the wrist bone. Allows for layering underneath without pulling or bunching. Cut to complement a range of body types without drawing attention to silhouette.",
+    "primary_material": "Mid-weight wool-linen blend—durable and breathable, with a slight textural variance that prevents flatness. The blend resists wrinkles while maintaining a lived-in appearance.",
+    "texture": "Subtle houndstooth weave visible on close inspection, creating visual depth without overwhelming. The surface is smooth but not glossy; it has a matte, natural quality. The interior lining is a fine jacquard silk-analog with a soft hand.",
+    "color_scheme": "Two signature options: charcoal base with cream houndstooth (sophisticated, conservative, pairs with everything), or black base with rust/copper houndstooth (more distinctive, slightly avant-garde while remaining grounded). Both read as intentional color choices rather than defaults.",
+    "closures": "Two-button front closure, mother-of-pearl or bone buttons with a subtle satin finish. Clean, understated, functional.",
+    "distinctive_features": [
+      "Notched lapels cut slightly wider than current Tier 2 corpo fashion",
+      "Patch pockets at hips—functional and visible, rejecting hidden pocket aesthetic",
+      "Full interior jacquard silk-analog lining with subtle geometric or heritage pattern",
+      "Subtle Kellstrom & Vane label at interior breast pocket—small, woven, not a statement logo",
+      "Wear pattern potential: soft fading at collar edges and cuffs with age, maintaining integrity"
+    ],
+    "tier_indicator": "Tier 3 aspirational—signals economic stability and aesthetic sophistication without corporate excess. Accessible to working creatives, academics, and mid-level professionals who value durability and design heritage over status symbols.",
+    "cultural_context": "Wearer is someone who thinks about their choices—a junior architect defending a design concept, an academic attending departmental meetings, a creative director who doesn't need logos to prove capability. Suggests connection to old Chicago craft traditions (Wicker Park lineage) and skepticism toward disposable fast-fashion. Reads as anti-corpo aesthetic even when worn in corporate contexts.",
+    "condition_typical": "Broken-in and cared-for. A new Kellstrom & Vane coat shows crisp fold lines and perfect edges; after six months of regular wear, the shoulders settle, the houndstooth gains subtle shine in high-friction areas, edges soften naturally. Owners tend to maintain these pieces—a tailor's visit, occasional pressing, spot-cleaning. The fabric is meant to age gracefully."
+  },
+  "image_prompt": "Fashion photograph of a Kellstrom & Vane houndstooth sport coat displayed on a dark-skinned male model with visible subcutaneous augmentation scarring at the temple. Model wears the charcoal-and-cream version, paired with dark 2226-era denim and a black minimalist shirt. Shot in moody sidelit studio against a weathered brutalist concrete wall. Overhead neon GLMZ district signage casts cool blue-purple shadows across the fabric, highlighting the houndstooth weave. Details: close-up of lapel, interior jacquard lining visible at shoulder. Styling suggests intellectual rather than corporate—worn with intention, not desperation. Cinematic, high-contrast lighting. --ar 2:3 --v 6"
 }

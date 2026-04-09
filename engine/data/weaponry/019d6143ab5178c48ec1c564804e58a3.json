@@ -39,5 +39,33 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "CortexDynamics Apex Drive Performance Neural BCI",
+    "Deshi Baluarte-Thorvaldsen",
+    "Free Assembly",
+    "Kenji Guerrero-Osei-Mensah",
+    "Tympanic Membrane Galvanic Rupture Carbine"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek wrist-mounted apparatus resembling a modified smartband with a recessed spike chamber. The device has a minimalist, clinical aesthetic—all function, no decoration. At rest, only a subtle metallic seam marks the spike's housing along the inner wrist. When deployed, a translucent carbon-ceramic needle extends with predatory precision.",
+    "dimensions": "Wrist band: 18cm circumference × 3.2cm width × 1.8cm depth. Spike projection: 6cm length when extended, 0.4cm diameter",
+    "weight_description": "Remarkably light and balanced—barely noticeable on the wrist until deployed, then the mechanical tension in the spring mechanism creates a sense of coiled potential. Feels like wearing a high-end prosthetic rather than a weapon.",
+    "primary_material": "Titanium-reinforced polymer frame with carbon-ceramic spike assembly. Fiber-optic conduit runs through the spike's hollow core. Contact pads are surgical-grade stainless steel.",
+    "finish": "Matte gunmetal gray with brushed titanium accents. The spike chamber has a slight iridescent sheen from the embedded fiber-optic bundling visible through semi-translucent ceramic housing.",
+    "color_scheme": "Gunmetal gray primary with brushed silver contact pads. The spike interior shows faint rainbow refraction from the fiber-optic core when light hits it at certain angles.",
+    "grip_texture": "The wrist band features a subtle textured silicone underlay for biocompatibility and sweat resistance. The material feels medical-grade—similar to augmentation interfaces. Minimal texture, maximum skin contact for neural signal transmission.",
+    "distinctive_features": [
+      "Recessed spike chamber with barely-visible seam line",
+      "Contact pad array (4 micro-points) arranged in a small circuit along the inner wrist—matte stainless steel",
+      "Subtle indicator LED (amber when armed, green when synced with neural interface) embedded in the band's edge",
+      "Fiber-optic core visible as a faint luminescent line through the semi-translucent ceramic when powered",
+      "Small pressure-release valve on the outer edge—prevents backpressure buildup",
+      "Micro-articulated spring mechanism visible as hairline indentations along the deployment axis"
+    ],
+    "manufacturer_markings": "Gestalt Workforce Solutions logo (interlocking geometric symbol) etched subtly into the inner wrist band. Serial number laser-burned on the underside of the band. 'DS-1 UPLOAD' designation stamped on the spike chamber's external edge in 4pt type.",
+    "condition_typical": "Well-maintained and clean—operators handle this with medical precision. Even black-market units show minimal wear because the mechanism is so refined. Occasional microscopic stress fractures around the spike chamber from repeated deployment are the only sign of heavy use."
+  },
+  "image_prompt": "Overhead product shot of a wrist-mounted Data Spike DS-1 'Upload' laid on matte black carbon fiber, slightly tilted to show the inner wrist with contact pads. Spike extended mid-deployment, the 6cm carbon-ceramic needle catching dramatic side-lighting that reveals the fiber-optic core glowing faintly amber. Hands in black tactical gloves positioning the device. Harsh directional lighting from upper left, creating sharp shadows around the deployment mechanism. Shallow depth of field with the spike chamber in perfect focus. Cyberpunk aesthetic: clinical precision meets body-horror potential. Detail visible on the Gestalt Workforce Solutions logo, the indicator LED status, and the hairline stress fractures around the housing. Moody blue-tinted ambient light reflecting off the titanium accents. Product photography style, museum-quality clarity. --ar 3:2 --v 6"
 }

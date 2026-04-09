@@ -38,5 +38,26 @@
     "Lazarus HZ-4 'Cleanroom'",
     "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, full-body containment suit with an almost liquid appearance. The silhouette is streamlined and deliberate—neither bulky nor form-fitting, but engineered for maximum mobility within a hazardous envelope. The suit reads as high-tier biotech protective wear: clinical, intimidating, and purposeful. Chrome accent panels run along the spine and shoulders, housing sensor arrays.",
+    "fit": "Compression-adjacent but not restrictive—tailored for precise movement during delicate substrate handling. The torso sits snug against the body, while the limbs allow articulation without excess fabric. The hood seals at the neck with a reinforced collar that integrates with an external respirator interface.",
+    "primary_material": "Proprietary substrate-repellent polymeric composite with a semi-translucent outer membrane. The base layer is ballistic-grade synthetic weave. Under magnification, the surface has a subtle iridescent sheen from the biological-resistant coating.",
+    "texture": "Smooth and almost slick to the touch, with fine micro-etching across the exterior that prevents substrate adhesion. Seams are reinforced and thermally sealed. Internal lining is soft, moisture-wicking treated synth-cotton. Embossed warning striping along joints.",
+    "color_scheme": "Gunmetal gray as the primary color, with translucent frost-white panels at the chest and forearms (monitoring zones). Bioluminescent green accent lines trace the spinal column and wrist cuffs, cycling faintly to indicate system status. Cascade Biotech's stylized 'CB' logo in chrome on the left shoulder.",
+    "closures": "Full-length magnetic-lock zipper running from the groin to the nape of the neck, sealed with friction-fit security tabs. Wrist and ankle cuffs feature triple-latch compression seals. The hood integrates magnetically with the suit collar.",
+    "distinctive_features": [
+      "Integrated biometric sensor array along the spine—faintly visible beneath the translucent sections",
+      "Transparent polymer observation panels on chest and forearms for real-time substrate monitoring",
+      "Reinforced palm and heel contact points for grip",
+      "Built-in pressure gauge readout at the wrist (glowing numeric display)",
+      "Substrate intrusion alarm system—subtle but functional indicator lights at the collar",
+      "Double-sealed joint reinforcement at elbows, knees, and shoulders",
+      "Cascade Biotech certification hologram embedded in the right chest panel"
+    ],
+    "tier_indicator": "Tier 1-2 corporate. This suit is expensive, exclusive, and signals access to cutting-edge biotech infrastructure.",
+    "cultural_context": "Worn by research specialists, substrate handlers, and biotech engineers within corporate or collective facilities. Signals expertise, danger clearance, and proximity to experimental biological work. Wearing this outside authorized zones would trigger immediate security alerts.",
+    "condition_typical": "Pristine or meticulously maintained. Cascade Biotech facilities enforce strict decontamination protocols. Any visible wear (micro-scratches, seal degradation) indicates imminent suit retirement. Most suits are replaced rather than repaired."
+  },
+  "image_prompt": "A Tier 1 biotech specialist in a sleek gunmetal-gray Cascade Biotech Substrate Containment Suit, standing in a sterile research lab with bioluminescent green accent lighting tracing her spine and wrists. The suit's translucent frost-white observation panels glow faintly with embedded sensor data. Dark, clinical backdrop with neon biohazard iconography. Moody teal and green accent lighting. Dark concrete floor, chrome lab fixtures in soft focus behind. Professional, intimidating, high-tech. Detailed fabric texture visible on seams and reinforced joints. --ar 2:3 --v 6"
 }

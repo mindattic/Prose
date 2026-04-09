@@ -42,5 +42,26 @@
     "The Furnace",
     "The United Workers Front",
     "The Witnesses of the Last Upload"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A striking, floor-length ceremonial robe with substantial presence and weight. Deep iron-gray base with rich copper and char-orange trim running the front edges and collar. The silhouette is formal and authoritative—structured shoulders, generous drape through the torso, slight A-line fall. The embossed foundry mark on the chest panel catches light with raised copper thread detail. Worn only once, the robe carries the gravitas of a single transformative moment.",
+    "fit": "Tailored yet generous through the shoulders and chest, allowing for layered wear beneath. Straight cut through the torso with subtle room for movement. Full-length skirt with controlled drape—neither fitted nor loose, but purposefully composed. Sleeves are three-quarter length with deep cuffs trimmed in copper.",
+    "primary_material": "Heavy heat-resistant formal weave—a dense synthetic-natural composite blend that holds structure and weight. Lining is a softer, treated cotton-equivalent with slight sheen for comfort against skin.",
+    "texture": "The outer weave is smooth but substantial, almost architectural in its density. The copper trim has slight oxidized patina even when new. The embossed foundry mark creates raised tactile detail across the chest. Interior lining is soft, almost downy, contrasting sharply with the formal exterior.",
+    "color_scheme": "Dominant deep iron-gray (near-black with warm undertone). Copper and char-orange trim along front closures, collar, cuff edges, and the foundry mark. The copper has natural warm reddish tone; the orange is muted, almost rust-colored. No pattern—pure color blocking and tonal contrast.",
+    "closures": "Magnetic snaps hidden beneath the copper-trimmed front overlap, spaced down the center front. No visible hardware—the closures are seamlessly integrated into the layered trim design.",
+    "distinctive_features": [
+      "Embossed Crucible foundry mark in raised copper thread centered on chest panel",
+      "Real copper thread trim—sourced from Crucible's own smelting operations, not synthetic",
+      "Interior lining stamped with appointee's name, investiture date, and witness signatures",
+      "Deliberately heavy construction—weight as symbolic burden of responsibility",
+      "Never worn a second time—sealed in a fabricated case immediately after ceremony",
+      "Copper trim has subtle oxidation patina suggesting age and value",
+      "Hidden pockets at side seams for ceremonial items during investiture"
+    ],
+    "tier_indicator": "Tier 4 (upper working/lower professional class in terms of access, but signals entry into a distinct ceremonial class within Crucible hierarchy). The robe's value and exclusivity are cultural rather than monetary in typical terms.",
+    "cultural_context": "Worn exclusively during Crucible Operations Director investiture ceremonies—closed events restricted to senior management. Represents a rite of passage within Crucible's internal hierarchy. The robe's existence is semi-mythologized among furnace-floor workers; its cost is a known point of resentment and aspiration. Signals absolute loyalty to Crucible, or—if sold—signals a deliberate break from that loyalty. It is a garment of institutional belonging.",
+    "condition_typical": "Pristine and singular. Unworn after investiture, sealed immediately. Any existing robes that are displayed show preservation in climate-controlled cases. The few that have been sold carry the wear and handling of careful storage, but are otherwise frozen in their post-ceremony state—a deliberate, haunting newness."
+  },
+  "image_prompt": "A formal dark studio with deep shadows and single overhead light. A Crucible Operations Director in full investiture robe stands centered, facing slightly three-quarter view. The heavy iron-gray fabric drapes with architectural precision. Copper and char-orange trim glows faintly under moody light, the embossed foundry mark catching highlights on the chest. The robe is pristine, untouched—almost frozen in ceremonial time. Cool blue-gray ambient lighting frames the figure against a darker industrial backdrop hinting at Crucible's furnace complex. The model's expression is neutral, composed, dignified. The robe dominates the frame with its weight and solemnity. Shot in high contrast, emphasizing texture and the symbolic copper detailing. --ar 2:3 --v 6"
 }

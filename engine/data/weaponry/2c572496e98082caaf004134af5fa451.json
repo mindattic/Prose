@@ -43,5 +43,35 @@
     "controversial",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Biometric Denial Charge BDC-1",
+    "Djeneba Park-Traore",
+    "Eshe Pena-Baah",
+    "Nika Svensson-Kone",
+    "The Fathom Line",
+    "Vuk Jorgensen-Toure"
+  ],
+  "physical_description": {
+    "visual_profile": "A bulbous, organic-looking projector with a pronounced nozzle assembly. The weapon resembles a hybrid between a caulking gun and a medical nebulizer — smooth, almost biological curves interrupted by sharp magnetic coil housings. The silhouette is asymmetrical, weighted toward the reservoir chamber.",
+    "dimensions": "62 cm long, 18 cm wide at the widest point (reservoir bulge), 14 cm tall. Nozzle protrudes 8 cm from the main body.",
+    "weight_description": "Hefty and front-heavy when loaded (8.2 kg). The weight distribution favors the reservoir — requires two-handed grip for sustained firing. Balanced at the trigger guard, but the ferrofluid payload makes it feel like it wants to tip forward.",
+    "primary_material": "Aerospace-grade polymer frame with embedded magnetic coil housings. Nozzle assembly is reinforced titanium-steel composite to withstand ferrofluid pressure cycles.",
+    "finish": "Matte charcoal polymer body with brushed gunmetal accents around the magnetic housing. The reservoir chamber has a subtle iridescent sheen — visible ferrofluid moving beneath translucent viewport panels catches light like oil on water.",
+    "color_scheme": "Charcoal gray primary with gunmetal silver magnetic coil rings. The ferrofluid visible through viewport windows appears as a deep, shifting black-bronze liquid.",
+    "grip_texture": "Rubberized non-slip polymer with embedded texture grips. The grip wraps around the trigger guard with raised ridges for two-handed purchase. Cool to the touch due to thermal regulation of the ferrofluid reservoir.",
+    "distinctive_features": [
+      "Four stacked magnetic coil rings mounted vertically along the barrel assembly — visibly humming with barely-contained energy",
+      "Transparent polycarbonate viewport panels on the reservoir bulge — shows ferrofluid level and movement",
+      "Twin pressure gauges flanking the nozzle — one for fluid pressure, one for magnetic field strength",
+      "Remote activation transmitter mounted on top rail — compact, with a small LCD display showing target lock status",
+      "Heat vents along the magnetic housing — fine mesh grilles releasing faint thermal shimmer during operation",
+      "Weapon serial plate etched into the grip safety — Axiom Systems logo prominent",
+      "Ferrofluid splatter patterns around the nozzle lip — residual traces of previous firings create dark staining"
+    ],
+    "manufacturer_markings": "AXIOM SYSTEMS logo embossed on the upper receiver in silver-etched lettering. Serial number and 'NON-LETHAL CLASSIFICATION' stamp on a brass plate riveted to the left side of the reservoir. Pressure warnings in three languages stamped near the nozzle.",
+    "condition_typical": "Well-maintained by professional operators, but showing field wear. Ferrofluid residue around the nozzle is expected. Magnetic housing may show minor scoring from coil activation cycles. For Tier 3+ users, the weapon appears functional and cared-for — corporate contractors maintain these as precision tools."
+  },
+  "image_prompt": "Product photography of the Axiom Systems Ferrofluid Projector FP-3 'Tar Pit' held in a gloved operator's hands, palms forward grip position. Dark matte background with dramatic side-lighting from the left, creating deep shadows along the magnetic coil rings and highlighting the translucent ferrofluid viewport with an oily, iridescent sheen. The ferrofluid inside catches light like liquid mercury. Show the brushed gunmetal nozzle assembly and the pressure gauges with small LED indicators glowing faintly. Cyberpunk aesthetic with cold, clinical lighting. Professional corporate security weapon. Shallow depth of field on the operator's gloved fingers. --ar 3:2 --v 6"
 }

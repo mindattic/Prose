@@ -45,5 +45,38 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
+    "Crucible Industries CX-1 'Golem'",
+    "Dzemal Acholonu-Patagiri",
+    "Glenville Sound",
+    "Kamala Mori-Sefa",
+    "Nika Svensson-Kone",
+    "The Pure Hand",
+    "The Shelf",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally utilitarian contraption—essentially a length of industrial plumbing pipe welded to a crude trigger assembly salvaged from a pump-action shotgun. The overall impression is of something assembled in desperation: functional but volatile, held together by determination and whatever welding equipment was available. No smoothness, no design language, just raw purpose.",
+    "dimensions": "Overall length: 65-75 cm | Pipe bore: 50-80 mm | Trigger assembly depth: 8-12 cm | Grip length: 12-15 cm",
+    "weight_description": "Hefty and front-heavy. The mass concentrates in the barrel section, creating a pronounced muzzle-down bias. Feels unbalanced in hand—requires two-handed management, with the forward grip taking most of the weight. Not unwieldy in the sense of being oversized, but definitely awkward.",
+    "primary_material": "Mild steel or galvanized plumbing pipe (barrel), welded to a repurposed shotgun breach assembly. Grip may be wrapped in cord, electrical tape, or bare metal depending on builder preference.",
+    "finish": "Heavily oxidized steel with visible weld seams and grinding marks. Bare metal showing surface corrosion, rust bloom in irregular patches. No protective coating—this is a weapon that exists in the weather. Some examples show heat discoloration from repeated firing. Welding joints are rough, sometimes with slag still visible.",
+    "color_scheme": "Dull gunmetal gray with rust-brown oxidation. Accent areas (trigger assembly, firing pin) often show darker heat-treat coloring from the salvaged shotgun components. Grip wrapping, if present, might be neon tape or reflective cord for handling visibility.",
+    "grip_texture": "Bare welded metal or rough electrical tape wrap. If cord-wrapped, texture is coarse and slightly sticky from age and grime. No ergonomic consideration—just something to hold onto.",
+    "distinctive_features": [
+      "Visible weld seams running the length of the barrel, some with visible stress fractures",
+      "Crude gas vent ports drilled or cut into the pipe sidewall (emergency pressure relief)",
+      "Firing pin assembly hanging exposed beneath the pipe, secured with safety wire",
+      "Ammunition loading aperture: no breech mechanism, rounds are loaded from the muzzle or side opening and seated with a ramrod",
+      "Propellant chamber marked with scratched notches indicating shot count",
+      "Heat discoloration rings around the muzzle from repeated detonations",
+      "Maker's mark: often a scratched initial or symbol gouged into the metal",
+      "No sights—aiming is purely instinctive or marked with a crude notch filed into the barrel"
+    ],
+    "manufacturer_markings": "None official. Builders usually mark ownership with scratched initials, gang tags, or tally marks indicating rounds fired. Serial numbers are nonexistent. Occasionally a maker's symbol (stylized X, personal glyph, block tag) etched into the breach assembly.",
+    "condition_typical": "Battle-worn and jury-rigged. Evidence of field repairs: fresh weld spatter near fracture sites, safety wire wrapped around suspected weak points, tape patches covering small splits. Every weapon shows the scars of its builder's learning curve and its operator's desperation."
+  },
+  "image_prompt": "Close-up product photograph of a crude single-shot improvised grenade launcher made from industrial steel plumbing pipe and salvaged shotgun breach assembly. Weapon rests at angle on dark tactical fabric, harsh side-lighting emphasizing weld seams, rust bloom, and metal fatigue marks. Gloved hand (tactical glove, neon trim) gripping the wrapped barrel section. Shallow depth of field isolates the crude firing mechanism and muzzle end. Atmospheric haze of workshop dust. Cyberpunk industrial aesthetic, post-industrial Shelf brutalism. Raw, dangerous, utterly without polish. --ar 3:2 --v 6"
 }

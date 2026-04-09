@@ -43,5 +43,24 @@
     "Noir Dining",
     "The United Workers Front",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian fitted crew-neck thermal shirt with a distinctly industrial aesthetic. Sits close to the torso without compression, allowing freedom of movement under outer layers. The brushed interior creates subtle texture depth visible at neckline and cuffs. Reads as pure function—no style flourishes, no attitude.",
+    "fit": "Fitted but not tight; cut to accommodate a standard working frame with room for arm movement. Tapers slightly at the waist. Sleeves are precisely proportioned to end at the wrist without excess fabric. Designed to layer invisibly under jackets and hi-vis vests.",
+    "primary_material": "Brushed synthetic fleece-back jersey. Exterior: smooth, dense knit for glide under outerwear. Interior: deep pile brushed fleece for thermal retention and moisture wicking.",
+    "texture": "Smooth, almost slick exterior with faint knit grid pattern. Interior features pronounced brushed pile that catches light softly. Cuff seams are visibly reinforced with crisp, flat-locked stitching.",
+    "color_scheme": "Available in safety orange (high-visibility standard), slate gray (neutral industrial), and dark olive (low-profile variant). No patterns or graphics; solid colorways only.",
+    "closures": "None—pull-over crew-neck construction. No fasteners or zippers.",
+    "distinctive_features": [
+      "Reinforced forearm panels in double-layer construction",
+      "Upper back reinforcement panel for harness and load contact zones",
+      "Doubled, stretch-resistant stitching at cuffs—engineered for repeated gripping of cold objects",
+      "Small woven manufacturer label at inside collar only—no exterior branding",
+      "Flat-lock seams to prevent snag points on machinery or tools"
+    ],
+    "tier_indicator": "Tier 3-4 functional workwear. Solberg-Maru positions at accessible working-class price point with industrial-grade durability. Not luxury, not salvage—reliable infrastructure.",
+    "cultural_context": "Worn by warehouse workers, dock handlers, infrastructure maintenance crews, GLMZ waterfront laborers, and Iowan Behemoth supervisors who work in unheated zones. Signals competence, exposure to genuine weather, physical labor. Worn by people who cannot afford to be cold and have no sympathy for aesthetics.",
+    "condition_typical": "Broken-in but not destroyed. Minor pilling from repeated friction, possible faint stains from machine oil or rust water. Cuffs show wear from constant contact with tools and metal surfaces. Interior brushing remains fully functional even after 200+ wash cycles. Never pristine; always worked."
+  },
+  "image_prompt": "A Tier 3 industrial worker wearing a fitted safety orange Solberg-Maru thermal layer, photographed against a backdrop of corroded metal warehouse scaffolding. Moody sodium-vapor warehouse lighting casts sickly gold shadows across the fabric. The model's forearm reinforcement panels are subtly visible, catching light to show the double-layer construction. Close detail shot of the cuff stitching and brushed interior texture near the neckline. Dark, utilitarian, no lifestyle styling—this is equipment, not fashion. Shot from front and side angles showing the fitted silhouette under a semi-transparent hi-vis vest. Desaturated color palette with accent on the orange. Cyberpunk industrial aesthetic, Lake Erie waterfront morning atmosphere. --ar 2:3 --v 6"
 }

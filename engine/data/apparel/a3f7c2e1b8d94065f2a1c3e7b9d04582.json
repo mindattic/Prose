@@ -45,5 +45,24 @@
     "Ilhan Nakamura-Bello",
     "Slagworks Industrial",
     "TESSERA TC-3 'Crucible'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek mid-cut boot with pronounced industrial aesthetic—matte black synthetic leather interrupted by brushed alloy toe caps and scattered rivet detailing that catches light. The silhouette is subtly tapered at the ankle, widening slightly through the shaft to accommodate both organic and prosthetic geometry. Looks equally at home in a corpo office tower or on a factory floor.",
+    "fit": "Adaptive compression fit. The interior foam-lattice memory sleeve molds within minutes to the wearer's ankle profile—whether biological or augmented. The configurable nature means no pressure points; the exterior maintains a clean, tailored appearance despite internal accommodation.",
+    "primary_material": "Matte black synthetic leather (likely ballistic-grade poly-composite); brushed stainless alloy toe caps and structural rivet accents",
+    "texture": "Smooth matte leather exterior contrasts with textured brushed metal caps and small raised rivet heads. The lateral closure system shows tactile velcro strips and industrial ratchet mechanisms—surfaces designed for repeated handling even with prosthetic digits.",
+    "color_scheme": "Matte black primary with brushed silver-gray alloy accents; rivet heads add micro highlights. No branding visible—pure functional aesthetic.",
+    "closures": "Wide lateral velcro-and-ratchet system running from ankle to mid-calf—engineered for single-handed operation and removal over fixed prosthetic limbs. No traditional lacing.",
+    "distinctive_features": [
+      "Hollow shell chassis with interior configurable foam-lattice memory sleeve",
+      "Brushed alloy toe caps with visible rivet detailing",
+      "Lateral ratchet-and-velcro closure system optimized for prosthetic wearers",
+      "Pressure-molding interior—custom fit achieved within minutes",
+      "Wide ankle opening for easy removal over augmented geometry"
+    ],
+    "tier_indicator": "Tier 2 augmented professional—premium functionality masquerading as style, priced beyond working-class budget but below luxury corp-wear",
+    "cultural_context": "Worn by augmented workers who move between corporate and industrial environments; signals both technical sophistication and prosthetic-positive identity. The chrome detailing deliberately frames augmentation as design choice rather than visible disadvantage.",
+    "condition_typical": "Pristine to well-maintained; the synthetic leather resists weathering, and the metal accents develop a subtle patina with wear. Velcro system may show lint accumulation but remains functional indefinitely."
+  },
+  "image_prompt": "Product photography of a sleek black Crucible Chromestep Mid boot displayed on a dark chrome mannequin leg (prosthetic aesthetic, subtle iridescent sheen). Close-up detail shows brushed alloy toe cap and rivet detailing catching moody blue-amber neon light. Lateral ratchet closures visible. Urban GLMZ backdrop—rain-slicked concrete, distant megastructure silhouette, subtle holographic signage blur. Shot from three-quarter angle, dramatic side lighting. Cyberpunk fashion catalog, high-end industrial aesthetic. --ar 2:3 --v 6"
 }

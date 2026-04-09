@@ -50,5 +50,25 @@
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
     "Ringo Heavy Transit MagRail Levitation Transport Network",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Heavy-duty work gloves with a utilitarian aesthetic—mid-forearm length, structured hand shape, industrial presence. Matte gunmetal exterior reads as serious protective gear, the orange stitching providing high-visibility accent lines that catch light along knuckle articulation points.",
+    "fit": "Snug compression fit through the hand with reinforced knuckle zones; mid-forearm cuff sits secure but not restrictive. Pre-curved fingers optimize grip posture for repetitive tool manipulation. Designed for gloved-hand dexterity rather than bare-hand sensitivity.",
+    "primary_material": "Matte gunmetal dielectric composite shell (ballistic-grade polymer) over compressed aerogel thermal core; anti-vibration gel padding in palm zones.",
+    "texture": "Exterior: smooth, slightly textured matte finish with embossed badge detailing. Palm side: gel-padded, slightly tacky grip surface. Knuckle ridges: pronounced raised seams with high-visibility stitching creating tactile landmarks.",
+    "color_scheme": "Matte gunmetal gray as dominant color; high-visibility safety orange thread running along knuckle ridges and cuff trim. Embossed voltage-rating badge in raised metallic gray on back of hand.",
+    "closures": "Friction-fit cuff with internal compression webbing; no external closures—designed for quick on/off during shift work.",
+    "distinctive_features": [
+      "Embossed 40kV Class E voltage-rating badge on back of hand",
+      "High-visibility orange stitching along all knuckle articulation points",
+      "Aerogel thermal insulation visible as slight texture variation",
+      "Pre-curved fingers locked in tool-grip position",
+      "Anti-vibration gel-padded palms with grip texture",
+      "Veldtmann branding subtly integrated into badge design"
+    ],
+    "tier_indicator": "Tier 2-3 issued equipment—corporate infrastructure sector. Represents mid-grade occupational gear with genuine safety certification, not luxury or sub-grade improvisation.",
+    "cultural_context": "Signals electrical maintenance worker, MagRail infrastructure crew, or corponation-affiliated technician. Wearing these in public marks you as either active workforce or recently employed. The 40kV rating communicates expertise in high-voltage environments.",
+    "condition_typical": "Well-broken-in after first month; tool-score marks and carbon smudging accumulate quickly from field use. Palms show darkened gel from repeated grip contact. Still functional after three years of daily wear, but exterior shows scuff patterns and minor tears in seam areas."
+  },
+  "image_prompt": "Close-up fashion shot of Veldtmann ArcShield work gloves on a muscular, augmented model's hands—chrome knuckle implants visible where gloves meet exposed skin. Gloves mid-forearm, showing embossed voltage badge and orange stitching detail sharp in focus. Dark industrial workshop background with blue electrical discharge arcs in soft focus. Harsh LED task lighting casting shadows across knuckle ridges. Weathered tool marks visible on matte gunmetal surface. Cyberpunk near-future aesthetic, gritty corporate infrastructure vibe. --ar 2:3 --v 6"
 }

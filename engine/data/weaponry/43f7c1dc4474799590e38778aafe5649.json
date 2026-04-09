@@ -44,5 +44,36 @@
     "limited_production",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Kang Athletics KA-500 'Sparmate'",
+    "NeuralPath Apex Social Integration BCI",
+    "Nika Svensson-Kone",
+    "Oumarou Svec-Ranginui",
+    "Specter",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A slim, almost elegant semi-automatic pistol with a distinctive extended barrel profile. The integrated suppressor creates an organic taper rather than a bolted-on module — the entire front end flows as one unified piece. The slide features minimal visual clutter, with recessed controls and a clean sight plane. Overall impression is surgical precision wrapped in restraint.",
+    "dimensions": "Total length 210mm, barrel 102mm, height 135mm, width 32mm",
+    "weight_description": "Surprisingly balanced and manageable at 0.96kg — dense enough to feel substantial without inducing fatigue, the weight distributed along the suppressor creates natural muzzle steadiness",
+    "primary_material": "Hardened steel slide and frame with reinforced polymer lower receiver, carbon-composite grips",
+    "finish": "Deep matte black DLC (diamond-like carbon) coating on all steel surfaces with brushed titanium accents around the suppressor assembly",
+    "color_scheme": "Primary: charcoal black with gunmetal gray suppressor tube; Accents: brushed titanium bands at barrel transitions",
+    "grip_texture": "Carbon-composite grips with shallow vertical ridging — not aggressive, designed for precision over purchase; slightly warm to the touch",
+    "distinctive_features": [
+      "Seamlessly integrated suppressor with cooling fins subtly machined into the tube",
+      "Recessed slide serrations that are barely visible until light catches them",
+      "Minimal BCI interface port — barely a seam on the left grip panel",
+      "Three-dot sight configuration with tritium vials in amber",
+      "Ambidextrous thumb safety with tactile detents",
+      "Serial number hand-etched in Cyrillic on the frame (each unit individually numbered)",
+      "Tiny Volkov-Saito diamond logo inlaid in silver on the slide",
+      "Magazine well beveled for smooth insertion",
+      "Small heat-dissipation vents along the suppressor rear section"
+    ],
+    "manufacturer_markings": "Volkov-Saito Precision, Moscow-Saito Collective [logo] embossed in silver inlay on left slide; 'VS-S1 NIGHTCOURT' engraved in Cyrillic and Latin on right slide; suppressor stamped with caliber and sound rating",
+    "condition_typical": "Factory-fresh units arrive in pristine condition with minimal wear; field weapons show subtle carbon scoring on the suppressor exterior and faint fingerprint oils on the slide, but rarely exhibit heavy wear due to the professional operator demographic"
+  },
+  "image_prompt": "Professional product photograph of a Volkov-Saito VS-S1 Nightcourt pistol displayed at 45-degree angle on matte black surface, cradled in gloved cybernetic hand with visible servo details. Dramatic side-lighting emphasizes the seamless suppressor taper and DLC finish. Close detail of hand-etched Cyrillic serial number and silver inlay logo. Tungsten and amber color palette. Cyberpunk aesthetic: cold, precise, surgical. Clinical studio backdrop with subtle holographic registration marker. --ar 3:2 --v 6"
 }

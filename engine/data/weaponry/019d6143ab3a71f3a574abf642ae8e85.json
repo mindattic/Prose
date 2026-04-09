@@ -48,5 +48,36 @@
     "market",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "GLMZ",
+    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
+    "Kamala Mori-Sefa",
+    "Kamala Nystrom-Keita",
+    "Nenad Vargas-Baffour",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA PG-2 'Signature'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, clinical cylinder resembling a high-end cosmetic inhaler scaled to grenade size. The form is almost sterile—brutalist minimalism suggesting pharmaceutical precision rather than crude explosives. Its smooth profile and tapered ends give it an unsettling elegance that contradicts its lethal function.",
+    "dimensions": "88mm length, 42mm diameter. Compact enough to palm, dense enough to feel consequential.",
+    "weight_description": "Deceptively hefty for its size—310g concentrated in a small footprint creates an off-balance sensation in hand, like holding compressed gravity. Sits low in the palm with an anchor-like quality despite modest dimensions.",
+    "primary_material": "Aerospace-grade polymer composite casing with micro-perforated titanium-alloy breach nodes. Internal charge chamber lined with industrial ceramic to contain osmotic payload.",
+    "finish": "Matte gunmetal grey with a subtle satin texture. Casing shows deliberate manufacturing precision—no sharp edges, no aggressive knurling. Surfaces are almost clinical in their smoothness, suggesting medical-grade attention to detail rather than weapons-grade brutality.",
+    "color_scheme": "Gunmetal grey primary with accent pinstripes of bright safety orange around the fuse collar and breach perimeter nodes. The orange stands out jarringly against the understated grey—a regulatory requirement that looks like a warning.",
+    "grip_texture": "Textured polymer grip band in the grenade's center third—slightly tacky, designed for precision handling in gloved fingers. Not aggressive knurling; more like surgical grip tape. The unpatterned top and bottom thirds remain smooth and cool to touch.",
+    "distinctive_features": [
+      "Micro-perforated breach nodes arranged in a spiral pattern around the casing—appearing as deliberate aesthetic elements but serving as hygroscopic agent delivery points",
+      "Recessed fuse well with adjustable delay timer (1.0-4.0s) visible as a dialed ring interface—looks like a combination lock rather than a traditional fuse",
+      "Faint etched serial numbering and batch codes along the base, barely visible unless backlit",
+      "Two small LED indicator ports (currently dark) positioned at opposing cardinal points—activate during arming",
+      "Barely perceptible weight distribution markers embossed on grip section",
+      "Tapered ends that come to soft points rather than rounded domes—suggests containment engineering rather than aerodynamics"
+    ],
+    "manufacturer_markings": "Iron Point Ammunition logo (stylized point/iron cross hybrid) stamped in recessed panel on one side of grip band. Appears almost apologetic in size and placement. Adjacent text reads 'PODG-1 | CLASSIFIED PAYLOAD | AUTHORIZED USE ONLY' in 4pt sans-serif. A small Φ symbol denotes military procurement tier pricing.",
+    "condition_typical": "Pristine in military inventory. In field use, minimal wear visible—polymer casing resists abrasion. Operators maintain these meticulously; damage compromises seal integrity. May show scuff marks or dulled sections of finish, but overall appearance remains clinical. No blood or residue—the weapon's entire mechanism is internal."
+  },
+  "image_prompt": "Flat-lay product photography of a sleek gunmetal grey cylindrical grenade with micro-perforated titanium nodes in spiral relief. Resting on matte black tactical surface next to a gloved hand (chrome-augmented fingers visible). Dramatic side-lighting casting sharp shadows that emphasize the precision-engineered perforations. Orange safety accent stripes visible around fuse collar catching light. Medical-grade aesthetic clashing with its lethal purpose. Shallow depth of field isolating the weapon. Cyberpunk corporate military hardware aesthetic. Sterile, cold, pharmaceutical design language. --ar 3:2 --v 6"
 }

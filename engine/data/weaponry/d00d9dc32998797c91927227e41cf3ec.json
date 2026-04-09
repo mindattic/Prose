@@ -45,5 +45,41 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Brecken Yılmaz-Osei",
+    "Focadrin",
+    "GLMZ",
+    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'",
+    "Nika Svensson-Kone",
+    "Noir Dining",
+    "Pikasso Wemba-Þórðarson",
+    "Plot 17",
+    "TESSERA TC-3 'Crucible'",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modern full-sized pistol with a purposeful defensive stance. The Watchdog presents as a contemporary polymer-framed semi-automatic with aggressive ergonomic angles. Its profile is distinctly utilitarian—no chrome flash or tactical aesthetic excess, but rather the measured geometry of a weapon designed for liability-conscious civilians. The integrated rail system and biometric sensor array give it a slightly bulkier grip than traditional 9mms.",
+    "dimensions": "200mm overall length, 130mm height (grip to slide top), 32mm width at grip. Barrel length 102mm. Magazine well depth 95mm.",
+    "weight_description": "Balanced and manageable at 800 grams—present without being burdensome. The weight distribution favors the grip, making it stable for inexperienced hands. Feels heavier than its actual mass due to the dense biometric sensor package in the frame.",
+    "primary_material": "Reinforced polymer composite frame (Crucible's proprietary DuraGlass blend) with steel slide. Internally: steel breech block, titanium-alloy springs. Integrated circuit boards in grip cavity are aluminum-shielded.",
+    "finish": "Matte charcoal polymer with brushed stainless steel slide. The finish is deliberately non-reflective—anti-glare treatment on all surfaces. Rail system shows light tool marks from factory machining. Charging dock contact points have subtle wear patterns even on new units.",
+    "color_scheme": "Gunmetal gray frame with contrasting satin silver slide. LED indicator ring (around biometric sensor) glows soft blue when powered/locked, amber when charging. Rail-mounted flashlight bezel is black polymer with slightly frosted lens.",
+    "grip_texture": "Textured polymer grip with shallow finger grooves. The texture pattern includes micro-nodules that simulate skin-contact feedback for biometric scanning. Slightly tacky to discourage slipping—feels intentionally engineered rather than naturally ergonomic.",
+    "distinctive_features": [
+      "Biometric sensor array integrated into grip—visible as a subtle rectangular panel below trigger guard with microscopic scanning emitters",
+      "Palm-vein authentication window on grip side (clear polymer lens revealing internal sensor array beneath)",
+      "Integrated rail-mounted LED flashlight with automatic activation circuit",
+      "Charging dock contacts: three brass contact points on frame bottom, visible when held",
+      "Status indicator: small blue/amber LED ring around grip safety",
+      "Magazine witness holes showing round count",
+      "Striker-fired design with visible firing pin indent",
+      "Serrated rear slide for cycling with one hand (standard feature, but meticulously finished)",
+      "Crucible corporate logo embossed on slide—subtle, understated branding",
+      "Micro-engraved safety warnings and biometric lock indicator on frame"
+    ],
+    "manufacturer_markings": "Crucible logo (stylized flame-and-shield) centered on slide. 'CRUCIBLE PD-3 WATCHDOG' in sans-serif font running horizontally on frame. Serial number micro-etched on frame interior (visible when slide is removed). 'BIOMETRIC LOCK ENGAGED' indicator light-etched onto grip panel. QR code for warranty/cloud backup on frame interior (deliberately hidden from casual view).",
+    "condition_typical": "Factory units appear pristine with protective polymer wrap still intact. Field-used Watchdogs show minimal wear—these are home-defense weapons, rarely carried openly. Common wear patterns: slight finish wear on grip corners from holster friction, minor scratches on charging dock contacts from repeated docking cycles, occasional dust/lint caught in the biometric sensor window requiring cleaning."
+  },
+  "image_prompt": "Product photography of a Crucible PD-3 Watchdog 9mm pistol on a dark graphite surface, shot from slightly elevated three-quarter angle. The weapon rests on a black tactical cloth mat next to its charging dock accessory. Dramatic side-lighting from a cool blue-tinted key light emphasizes the brushed steel slide and matte polymer frame contrast. A second warm accent light catches the biometric sensor window on the grip, showing internal circuitry slightly backlit. The flashlight rail is highlighted to show the integrated technology. In the background, soft bokeh suggests a modern interior setting. Close-up detail shot inset shows the biometric palm-vein authentication window and grip texture. Cyberpunk aesthetic achieved through sharp geometric shadows, cool color grading, and emphasis on the integrated smart-tech elements. Shot on grey cyclorama backdrop. Professional firearms photography, commercial product catalog style. --ar 3:2 --v 6"
 }

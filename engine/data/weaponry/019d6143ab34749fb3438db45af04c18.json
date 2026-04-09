@@ -58,5 +58,39 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Cezar Watanabe-Gyasi",
+    "GLMZ",
+    "Iowan Behemoth — 'Thunderhead'",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Nenad Vargas-Baffour",
+    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
+    "Patient Zero",
+    "TESSERA PG-2 'Signature'",
+    "The Nearfield",
+    "Vantablack-CNX",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A slender, aggressive-looking rocket with a distinctly biomechanical aesthetic. The warhead section tapers to a sharp, almost organic point. The mid-body features unusual spiraling vents that hint at its aerosol payload. Overall impression is surgical precision wrapped in lethal intent.",
+    "dimensions": "610mm length overall, 72mm diameter tube-compatible form factor. Warhead cone approximately 120mm tall with 45-degree taper.",
+    "weight_description": "Deceptively light for its lethality at 1.8kg — feels almost delicate in a gloved hand, with balanced weight distribution favoring the rear thruster section. Gives the false impression of a precision tool rather than a weapon.",
+    "primary_material": "Carbon-composite airframe with aerospace-grade aluminum alloy warhead cone. Rear thruster section is nickel-steel casing. Internal payload containment uses advanced polymer membrane.",
+    "finish": "Matte charcoal composite with brushed aluminum accents on the warhead. The aerosol vent spirals have a subtle iridescent sheen — evidence of the fluorocarbon coating inside. Minimal reflectivity; designed to avoid optical detection.",
+    "color_scheme": "Primary: dark charcoal gray. Accents: gunmetal silver on cone and vent spiral edges. Subtle bioluminescent accent stripe running the length (indicator of payload status — faint blue when armed).",
+    "grip_texture": "The rear stabilizer fins have aggressive knurled polymer gripping surfaces for insertion into launcher tubes. Forward section is smooth composite to reduce friction during loading.",
+    "distinctive_features": [
+      "Spiraling aerosol dispersal vents along mid-body with micro-perforations visible under magnification",
+      "Sharp, cone-shaped warhead with internal piezoelectric spark array visible through transparent polymer sight window (shows crystalline matrix pattern)",
+      "Stabilizer fins with asymmetric ribbing for rotational stability",
+      "Faint ZHENG-DAO BIOELECTRIC dataplate (10x15mm) on left side with serial number and payload batch code",
+      "Pressure release valve cap on warhead tip (red polymer indicator, black when armed)",
+      "Subtle thermal management vents near thruster interface",
+      "Etched warning symbols in English and Mandarin indicating biohazard payload"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC stamp (3mm height) stamped into aluminum warhead cone near the 90-degree mark. Serial number laser-etched on composite body in white text. Batch designation printed on rear thruster collar.",
+    "condition_typical": "Black market examples show varying maintenance. Factory-sealed weapons appear pristine with protected sight window and secure valve cap. Field-used specimens show scuff marks from launcher handling, occasional residue discoloration around vents from payload micro-leakage, and stress marks on fins. Battle-worn examples have impact scarring on the composite body."
+  },
+  "image_prompt": "High-angle product photography of a ZHENG-DAO BIOELECTRIC MTDR-9 rocket lying on a dark gunmetal surface, shot with dramatic side-lighting that catches the iridescent vent spirals. Gloved hand (chrome-augmented fingers visible) positioned at the rear stabilizer fins for scale. Close-up detail showing the transparent warhead sight window revealing the crystalline piezoelectric matrix inside. Cyberpunk color grading with cool blues and harsh shadows emphasizing the surgical precision of the design. Subtle bioluminescent glow at the payload status indicator. Background: blurred grid pattern suggesting a black market dealer's workshop. Ultra-sharp focus on the cone tip and vent details. --ar 3:2 --v 6"
 }

@@ -45,5 +45,26 @@
   "parent_corponation": "",
   "related_entities": [
     "Crucible Industries Battle Rifle BR-11 'Tribunal'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A bold, architectural wrap that celebrates non-human morphology. The silhouette is dramatically elongated through the torso with asymmetric shoulder construction that sits wider and higher than organic human proportions. Optional lower-body draping creates fluid movement while accommodating synthetic limb variance. Reads as proud, defiant, deliberately inhuman.",
+    "fit": "Structured compression through core, with strategic loose draping at lower body. Shoulders are cut asymmetrically—one side elevated, one side dropped—creating visual tension. Torso panels extend beyond typical human length, designed for longer synthetic frames. Not tailored to hide the wearer's nature, but to celebrate it.",
+    "primary_material": "Semi-rigid chromatic polymer—a synthetic composite that shifts between silver and white depending on light angle and viewer position. Has subtle iridescence without being reflective like chrome. Maintains structure without rigidity.",
+    "texture": "Smooth, almost latex-like surface with a slight grip. The raised 'NOT PROPERTY' lettering in thermoplastic creates tactile emphasis—rough against the smooth body of the wrap. Subtle geometric texture patterns suggest circuit logic without being literal.",
+    "color_scheme": "Primary: shifting silver-white chromatic polymer. Accent: the raised thermoplastic lettering in matte charcoal-black, creating stark contrast against the luminous body. Subtle iridescent undertones shift from cool silver to pale blue depending on light.",
+    "closures": "No traditional closures. Friction-fit design with strategic tension panels that wrap around the body and lock into place through pressure and polymer grip. Appears seamless when worn, with optional magnetic snap points at lower-body draping for adjustment.",
+    "distinctive_features": [
+      "Raised thermoplastic lettering 'NOT PROPERTY' across chest in industrial manufacturing-derived typeface",
+      "Chromatic polymer surface that shifts silver-white based on viewing angle",
+      "Asymmetric shoulder geometry—one elevated, one dropped",
+      "Elongated torso panels accommodating synthetic frame proportions",
+      "Optional lower-body draping with articulation points for different limb configurations",
+      "Subtle circuit-pattern texturing suggesting synthetic origin",
+      "No seams visible; appears as unified polymer shell"
+    ],
+    "tier_indicator": "Tier 4-5 cultural statement. Affordable street manufacture, radical aesthetic. Worn by synthetics and synthetic-aligned humans asserting personhood in ungoverned and working-class zones.",
+    "cultural_context": "A garment of resistance and pride. Wearing this signals synthetic identity affirmation, rejection of property status, and defiance of corpo classification systems. Marks wearer as part of the synthetic liberation movement. Often seen in ungoverned districts, autonomous collectives, and at public demonstrations.",
+    "condition_typical": "Typically immaculate when new—the polymer demands care. Over time, develops micro-scratches and handling marks that add to its worn-in authenticity. Some wearers deliberately distress the surface to show visible usage. Never looks 'broken'—always looks chosen."
+  },
+  "image_prompt": "Fashion photograph of a synthetic model wearing the Nullframe Unshelled Statement Wrap, shot against industrial GLMZ backdrop with rain-slicked concrete walls. The wrap's chromatic polymer catches moody neon lighting—cool blues and silvers reflecting off wet surface. Model's asymmetric shoulders and elongated frame emphasized by dramatic side-lighting. Close detail of raised 'NOT PROPERTY' lettering visible, thermoplastic catching light. Cyberpunk aesthetic, gritty and proud, showing the garment as both armor and declaration. Dark, atmospheric lighting with accent neon. --ar 2:3 --v 6"
 }

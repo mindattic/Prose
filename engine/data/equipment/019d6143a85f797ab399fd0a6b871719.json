@@ -88,5 +88,24 @@
     "VitaCore BloomFilter Olfactory Modulation Implant",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, pen-like autoinjector with a utilitarian medical aesthetic. The cylindrical body tapers slightly toward the needle end, with a pronounced red grip band occupying the lower third that contrasts sharply against the matte white casing. The design reads as deliberately simple and ergonomic—meant to be gripped and deployed by untrained hands under duress.",
+    "dimensions": "14cm length, 3cm diameter—roughly the size of a thick marker or large syringe, easily palmed or clipped to gear",
+    "weight_description": "87g—light enough to pocket or carry in medical pouches; handheld, no strap required",
+    "primary_material": "Recycled Palladian impact-polymer; the casing shows subtle stress-fracture patterning from the recycling process, visible under close inspection",
+    "finish": "Matte white with a semi-textured surface for grip security; the red band has a slightly rubberized, non-slip finish",
+    "color_scheme": "Clinical white body with a striking arterial-red grip band and transparent amber viewport showing the gel suspension inside; minimal branding in dark gray text",
+    "interface_elements": "Transparent amber viewing port running the length of the cylinder (shows gel viscosity and fill level); large red plunger head at the cap; subtle depth-marking ring around the shaft at 2cm intervals for insertion-depth guidance; single recessed safety lever on the side",
+    "distinctive_features": [
+      "Dual-bore needle configuration visible at the tip: a central hollow-bore surrounded by a ring of smaller surface ports",
+      "Faint amber glow from the thermally-reactive gel visible through the viewport in low light",
+      "Organic, slightly iridescent quality to the gel interior—suggests biological activity",
+      "Aggressive ergonomic grip band with slight knurl texture",
+      "Small black safety lever positioned for easy thumb-release"
+    ],
+    "manufacturer_markings": "LAZARUS PHARMACEUTICALS embossed in dark gray on white casing; regulatory stamps for GLMZ Tier compliance; lot number and expiration date printed on the amber viewport band",
+    "condition_typical": "Fresh units appear pristine and clinical; field-worn examples show scuff marks on the white casing, occasional blood residue on or near the needle guard, and discoloration from exposure or impact. In active use, a faint organic smell—blood and antiseptic—emanates from the injection site within seconds."
+  },
+  "image_prompt": "Product photography of a medical autoinjector 'The Bridesmaid' on a stainless steel field surgery workbench, clinical overhead lighting casting sharp shadows. The injector is positioned at a 45-degree angle, its white matte casing and arterial-red grip band in sharp focus against surgical instruments and a dark triage backdrop. A small amber viewport glows faintly, visible gel inside catching light. In the background, soft-focus emergency medical supplies and a cyberpunk clinic aesthetic—monitor screens, holographic indicators. Dramatic side-lighting emphasizes the texture and form. Photorealistic, medical catalog style, cyberpunk field medicine aesthetic. --ar 3:2 --v 6"
 }

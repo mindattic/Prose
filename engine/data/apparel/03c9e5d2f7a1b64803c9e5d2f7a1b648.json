@@ -45,5 +45,25 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Clock",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A crisp, corporate-casual polo that reads 'functional employee' at a glance. The charcoal base with white geometric striping creates a subtly authoritative silhouette — not intimidating, but unmistakably uniform. On the street, it signals middle-management precarity: steady employment within a mega-corp ecosystem, but visible labor.",
+    "fit": "Straight-cut and slightly tapered through the torso. Designed for comfort across diverse body types without custom tailoring — roomy enough at the shoulders, not billowing at the waist. The sleeves hit mid-bicep with a clean seam. Intended to look 'neat' rather than fashionable; it achieves this through precision fit rather than style.",
+    "primary_material": "Proprietary polycotton blend — likely 65% polyester, 35% cotton. Tight-knit weave that resists wrinkles and maintains shape through heavy wear. Machine-washable, fade-resistant, designed for institutional laundry cycles.",
+    "texture": "Smooth and uniform to the touch, with a subtle sheen from the synthetic content. No visible texture variation — the fabric is engineered for consistency. The collar has reinforced stitching that keeps it stiff and symmetrical.",
+    "color_scheme": "Charcoal gray base (approximately Pantone 18-0605) with thin white vertical pinstripes at irregular intervals, creating visual rhythm without drawing attention. The Stratum logotype is embroidered in white thread at the left chest — minimalist, sans-serif, corporate-standard.",
+    "closures": "Standard two-button polo collar with button-through placket. The buttons are resin (matte gray) — functional, not decorative. No additional closures; the fit is designed to sit naturally without fastening.",
+    "distinctive_features": [
+      "White-thread Stratum logotype embroidery on left chest — subtle but unmistakable identifier",
+      "Proprietary charcoal-and-white colorway that's become iconic in Tier 2 transit zones",
+      "Reinforced collar stitching designed to withstand frequent wear and institutional washing",
+      "Slightly oversized fit through the torso to accommodate diverse body types without tailoring",
+      "Pocket-free design — eliminates bulk and maintains clean lines",
+      "Uniform weave consistency that resists visible wear patterns despite heavy use"
+    ],
+    "tier_indicator": "Tier 2 corporate uniform. Signals stable, corpo-affiliated employment but not executive status. The standardization and mass production are visible in its perfect uniformity.",
+    "cultural_context": "Wearing this on-shift = client-facing Stratum subsidiary employee (hospitality, guest relations, administrative support). Wearing it off-shift in Tier 2 neighborhoods = either a rule-breaker comfortable with their visible corporate affiliation, or someone buying credibility through a knockoff. In Tier 3-4 zones, it can read as either 'I have a job' or 'I'm pretending to have legitimacy.'",
+    "condition_typical": "When new: pristine, crisp collar, bright white embroidery. After regular wear: still functional and neat, but the white stripes may yellow slightly from washings, the collar softens, and the embroidery thread can fray at the edges. Knockoff versions deteriorate faster — their imitation embroidery lifts within weeks."
+  },
+  "image_prompt": "A charcoal-and-white striped polo shirt displayed on a dark chrome mannequin torso, positioned against a rain-slicked corporate glass facade at dusk. Close detail on the left chest showing the embroidered Stratum logotype in stark white thread. Moody blue-gray overhead lighting casting harsh shadows. The mannequin stands in a generic corporate lobby setting with synthetic potted plants and sleek titanium furniture slightly out of focus in the background. Neon Φ currency display glowing faintly on a distant wall. The fabric's precision and institutional uniformity emphasized. Wide angle to show the polo's clean lines and careful engineering. Shot in 2226 GLMZ aesthetic — sterile, functional, slightly dystopian. --ar 2:3 --v 6"
 }

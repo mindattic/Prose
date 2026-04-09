@@ -42,5 +42,37 @@
     "tessera",
     "high_end"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Arcturus LS-5 'Sentinel'",
+    "Arcturus PG-3 'Aegis'",
+    "Lazarus EC-4 'Companion'",
+    "Mika Sorel",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+    "TESSERA CORPONATION Sentinel Executive Security BCI",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, pen-sized aerosol device with the refined minimalism of luxury corpo tech. The form factor suggests precision engineering over tactical bulk—this is a tool for boardrooms and penthouse suites, not field operatives. The capacitive selector ring dominates the midline, glowing subtly when powered. Compact enough to palm entirely, yet commanding visual presence through its material authority.",
+    "dimensions": "90mm length × 28mm diameter (cylindrical body); selector ring adds 3mm radial depth",
+    "weight_description": "Deceptively dense for its size. The aerospace titanium imparts satisfying heft—0.09 kg feels substantial in the hand, suggesting engineered gravitas rather than true heaviness. Perfectly balanced for single-handed precision control.",
+    "primary_material": "Aerospace-grade titanium alloy; internal pressure vessel; precision-machined nozzle assembly",
+    "finish": "Brushed titanium with a satin sheen that resists fingerprints and reflections. The surface has a controlled, almost clinical smoothness—no aggressive texturing or tactical knurling. This is executive restraint weaponized.",
+    "color_scheme": "Primary: matte titanium silver-grey. Accent: the capacitive selector ring in one of four colorways (Charcoal, Obsidian, Moonstone, or Champagne chrome). The nozzle tip shows barely visible secondary charging ports in contrasting anodized finish.",
+    "grip_texture": "Smooth, contoured titanium body with ergonomic finger indexing—no aggressive grip texture, but tactile enough to prevent slip. The biometric activation zone feels warmer than the surrounding metal, hinting at embedded contact sensors. Deliberately civilian, never tactical.",
+    "distinctive_features": [
+      "Capacitive selector ring with soft LED indicators (one indicator per mode, glows briefly on activation)",
+      "Biometric lock plate along the lower grip—almost invisible, just a subtle panel break in the titanium",
+      "Dual secondary vents near the nozzle assembly (for Mode 3 aerosol dispersal)",
+      "Micro-stamped TESSERA branding and regulatory compliance marks on the lower barrel",
+      "Faint thermal indicator strip that shows canister pressure (embedded in rear third)",
+      "Charging port (USB-C) recessed into the bottom cap with magnetic alignment"
+    ],
+    "manufacturer_markings": "TESSERA CORPONATION logo (geometric shield) laser-etched into the upper barrel, right side. Serial number and regulatory stamps (Meridian Compliance, GLMZ Tier 4+) on the lower rear. Microscopic QR code on the activation cap linking to the Sentinel Monitoring subscription database.",
+    "condition_typical": "Pristine, rarely field-used. Most SDC-1s are maintained in executive condition—polished, registered, and active on Sentinel Monitoring subscriptions. If deployed, shows minimal wear; if used extensively (rare), the titanium develops micro-scratches and the LED indicators may show uneven degradation."
+  },
+  "image_prompt": "Product photography of a sleek, compact titanium aerosol device—TESSERA Corponation Sentinel Compact SDC-1—held vertically in a gloved (black leather, augmented fingertips visible) hand against a dark carbon-fiber surface. Dramatic side-lighting from a single LED source illuminates the brushed titanium body, highlighting the capacitive selector ring glowing faintly in champagne chrome. Secondary rim-lighting catches the nozzle tip and biometric lock plate. Background shows blurred GLMZ skyline reflected in glass. Cyberpunk luxury aesthetic—refined, restrained, dangerous through engineering rather than aggression. Product photography quality, shallow depth of field. --ar 3:2 --v 6"
 }

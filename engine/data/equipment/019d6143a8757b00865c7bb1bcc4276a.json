@@ -51,5 +51,24 @@
     "Programmable Matter",
     "Specter ID Spoofer — 'Janus Mask'",
     "Tessera Corponation"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A nearly invisible second skin — a translucent, opalescent membrane that clings seamlessly to the face. When inactive, it appears as a subtle iridescent sheen across the wearer's features, almost imperceptible in normal lighting. During transformation, the surface ripples with bioluminescent patterns as the programmable matter reconfigures, creating an unsettling but mesmerizing effect. The membrane's surface mimics authentic skin — pores, fine wrinkles, stubble patterns, and even microexpressions render convincingly.",
+    "dimensions": "Facial coverage only — approximately 600 cm² of surface area spanning forehead to neck, cheekbone to cheekbone. Stored in a compact application kit the size of a credit card (8.5 × 5.4 × 0.3 cm).",
+    "weight_description": "80 grams total — the membrane itself is imperceptible when worn; the application kit fits in a pocket or small pouch.",
+    "primary_material": "Tessera proprietary programmable matter composite — a responsive gel-polymer matrix with microscopic actuators. Housing for the storage cartridge is molded aerospace-grade polymer with embedded neural-response circuits.",
+    "finish": "The membrane has a wet-silk texture with subtle self-cleaning microbiology. The application cartridge has a matte charcoal finish with soft-touch grip zones. Contact points are polished stainless steel.",
+    "color_scheme": "The membrane is translucent with an underlying pearlescent sheen that shifts between violet and cyan depending on angle. The storage cartridge is gunmetal gray with white accent lines marking the activation points. LED indicator bands glow soft amber when idle, pulse cyan during transformation.",
+    "interface_elements": "Minimal tactile interface — a thumb-press activation pad on the cartridge, a small holographic display (2.2 cm diagonal) projecting the current template identity and remaining battery percentage. A neural-link port (type-μ) for wireless template download. Haptic feedback through the wearing membrane itself communicates system status.",
+    "distinctive_features": [
+      "Bioluminescent reconfiguration waves visible across the face during transformation",
+      "Programmable matter surface that naturally sweats and responds to temperature",
+      "Barely-visible template indicator tattooed in UV-reactive ink on the inner wrist of the application kit",
+      "Self-healing micro-tears — the membrane can repair minor damage autonomously",
+      "Dual-mode activation: manual pressure or subcutaneous neural command (with implant upgrade)"
+    ],
+    "manufacturer_markings": "Tessera Industries logo (a geometric Φ-shaped tessellation) embossed subtly on the storage cartridge. Regulatory stamp (GLMZ Bio-Prosthetic License Tier-4) and serial number printed in white on the underside. Safety warning in seven languages etched in 2pt font.",
+    "condition_typical": "In active use, the wearer appears completely natural — the disguise is flawless. The membrane's surface reflects light identically to human skin. Subtle condensation may form on the surface during high emotional stress (tension that bypasses the disguise's expression-mimicry). When transitioning between faces, the wearer's eyes briefly lose focus as neural receptors recalibrate."
+  },
+  "image_prompt": "Close-up product photography of a translucent, opalescent facial membrane draped over a chrome mannequin head, mid-transformation with cyan bioluminescent waves rippling across the surface. Next to it, a sleek gunmetal-gray storage cartridge the size of a credit card with white accent lines and a holographic display showing a flickering template identity. Dark cyberpunk workbench setting with dramatic side-lighting from a blue LED strip, casting sharp shadows. Shallow depth of field. High detail on the membrane's natural skin-like texture and the cartridge's metallic finish. Moody atmosphere with neon reflections on polished stainless steel. --ar 3:2 --v 6"
 }

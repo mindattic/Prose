@@ -40,5 +40,25 @@
     "Oxidative Plasma Breath Lance OPBL-1 'Vestment'",
     "The Archive",
     "The Burden Clause"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A flowing, floor-length formal robe with architectural dignity. The silhouette is deliberately imposing—broad shoulders, graceful drape—designed to command presence during ceremony. Deep burgundy dominates the exterior; cream silk-analog peeks from the interior lining and layered construction, creating a subtle two-tone effect when the wearer moves. The overall impression is ecclesiastical and corporate simultaneously, neither fully religious nor fully business formal.",
+    "fit": "Tailored yet flowing; constructed for ceremonial movement rather than daily wear. The shoulders are structured and slightly broad, the torso fitted through the ribs, then released into elegant folds that sweep to the floor. Designed to fit a range of body types through the layered construction—the robe accommodates without clinging. The fit suggests temporary occupancy: it is made to drape on whoever wears it, not to belong to them.",
+    "primary_material": "Silk-analog blend (likely bio-synthetic, GLMZ-manufactured), with platinum thread detailing on interior. The silk-analog has a subtle sheen that shifts under different light. Moderate weight—substantial enough to move with intention, light enough to flow.",
+    "texture": "Smooth and deliberately luxurious on the exterior. The self-color weave of the ouroboros motif creates micro-texture variations visible only under UV light—a hidden complexity that rewards close inspection. The interior lining is slightly more tactile, meant for the wearer's skin. Edges are finished with precision; no fraying or distress.",
+    "color_scheme": "Deep burgundy (Pantone 19-1546 equivalent) as the primary exterior. Cream/ivory lining creates sharp contrast at openings and layered edges. The woven ouroboros motif is imperceptible in natural light—only the platinum thread numbering on the interior is immediately visible to the wearer. Under UV inspection (common in Tier 1-2 environments), the serpent-eating-tail pattern emerges across the shoulders and down the back.",
+    "closures": "No visible fasteners. The robe is designed to be donned and removed with ceremonial care—likely secured by magnetic anchor points at the shoulders (invisible to casual observation) or friction-fit at the back seam. The closure mechanism is intentionally obscured; the robe should appear to simply be worn, not fastened.",
+    "distinctive_features": [
+      "Platinum-thread numeral on interior lining recording ceremony count—updated after each use, visible only to the wearer",
+      "UV-visible ouroboros motif woven in self-color across shoulders and spine",
+      "Layered construction with cream silk-analog visible at strategic openings",
+      "Ouroboros corporate mark embossed (not sewn) at the interior neckline",
+      "Precise, pristine tailoring that signals institutional rather than individual craftsmanship",
+      "Floor-length with a subtle train, designed for ceremonial pacing"
+    ],
+    "tier_indicator": "Tier 4-5 access only. This is not purchased; it is temporarily granted. The ceremony itself signals Tier 4 senior management status, but the robe's repeated use and archival status suggest Tier 1-2 institutional wealth. The contradiction is intentional—the garment belongs to the corporation, not the wearer.",
+    "cultural_context": "Wearing this robe signals participation in Ouroboros's most secretive and psychologically loaded ritual. It marks a moment of ascension immediately followed by symbolic removal—a deliberate statement about institutional primacy over individual ego. Former wearers often reference the ceremony's end (robe removal) as a pivotal moment in understanding Ouroboros's culture. This is not celebratory formal wear; it is a test garment and a mirror.",
+    "condition_typical": "Pristine. The robe is archived between ceremonies in climate-controlled conditions. Each wearing is documented and ceremonially prepared for. There are no signs of wear, no creasing, no patina—only the invisible accumulation of wear recorded in the platinum numeral. This immaculate condition is itself a power statement: the corporation can afford to keep a garment in perfect condition despite repeated use. It suggests that the wearer will be returned to baseline just as the robe is."
+  },
+  "image_prompt": "A formal ceremonial robe photographed on a dark mannequin or augmented model in a minimalist gallery setting. The robe is deep burgundy with subtle cream lining visible at the shoulders and hem. The fabric has a soft sheen and flows with architectural precision. Moody overhead lighting casts the robe in shadow; a single cool-blue accent light reveals faint traces of the woven ouroboros motif under near-UV wavelength, creating an ethereal serpent pattern across the shoulders. The background is a dark gradient (charcoal to black) suggesting an archival vault or ceremonial chamber. Close detail shot of the interior showing platinum thread numerals on cream lining (visible only to the wearer). The overall mood is simultaneously prestigious and unsettling—beautiful and constraining. Shot as high-fashion editorial for corporate documentation. --ar 2:3 --v 6"
 }

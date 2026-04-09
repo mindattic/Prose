@@ -45,5 +45,39 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Aphelion",
+    "Breck Tannen",
+    "Focadrin",
+    "GLMZ",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "Nika Svensson-Kone",
+    "Radiant Thermal Lance RTL-8 'Hearthstone'",
+    "TESSERA ES-4 'Perimeter'",
+    "The Collective",
+    "VitaCore CardiaWatch Cardiac Rhythm Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A purposeful, utilitarian rifle with a distinctly angular profile optimized for elevated shooting. The stock slopes downward at an aggressive angle, creating an asymmetrical silhouette that reads immediately as purpose-built rather than conventional. The free-floated barrel sits proud within a ventilated handguard, and the whole weapon conveys patient watchfulness—compact enough for tower deployment, robust enough for years of fieldwork.",
+    "dimensions": "Overall length: 98 cm | Barrel length: 55 cm | Handguard length: 38 cm | Height with scope: 26 cm",
+    "weight_description": "Substantial but manageable at 4.1 kg—heavy enough to feel serious and minimize recoil, light enough for a tower operator to handle during long watches. The weight distribution favors the shoulder, resting naturally in the cheek when aimed downward.",
+    "primary_material": "Chromoly steel receiver with free-floated barrel. Handguard and furniture are reinforced polymer composite with aluminum inserts at stress points. Stock is laminated hardwood beneath polymer cheek rest.",
+    "finish": "Matte parkerized steel with a slight bronze undertone suggesting age and honest use. Polymer components wear a satin dark gray with scuff marks from concrete and stone. Scope rings show burnished steel where scope base interfaces, suggesting repeated mounting cycles.",
+    "color_scheme": "Charcoal gray and matte gun-metal black primary | Weathered aluminum accents | Natural wood tones visible through stock wear",
+    "grip_texture": "Pistol grip wrapped in textured polymer with shallow checkering for wet-weather grip. Forearm furniture smooth satin polymer, designed for gloved operation. Cheek rest padded with reinforced synthetic leather—worn but supple.",
+    "distinctive_features": [
+      "Exaggerated downward-angle stock geometry—cheek rest cants 8° below horizontal",
+      "Ventilated handguard with deep radial cooling fins running full length",
+      "Reinforced scope mount base with visible overbuilt mounting lugs—significantly heavier gauge than standard",
+      "Fixed 8x scope with simple mil-dot reticle, no magnification markings visible (analog, no electronics)",
+      "10-round single-stack magazine well with witness holes",
+      "Sling attachment points rated for concrete—hardened steel inserts flush-mounted",
+      "Barrel vents at 12 and 6 o'clock positions every 3cm",
+      "Charging handle serrated and oversized—designed for gloved or cold-weather operation"
+    ],
+    "manufacturer_markings": "HEARTHSTONE FIREARMS arcing above a stylized watchtower icon on the receiver left side, deeply stamped. Serial number stamped into steel beneath the scope mount. VIGIL / HWR-4 / 6.5MM etched into barrel near the receiver. No electronic components—completely mechanical, every marking hand-applied or machine-stamped.",
+    "condition_typical": "Well-maintained but field-worn. The finish shows honest handling—micro-scratches on the handguard from years of tower ledge contact, a slight ding on the stock where a scope was once reset. The scope mount shows zero creep scars (old witness marks crossed out by newer ones). Fundamentally sound—this is a weapon maintained daily by someone whose life depends on reliability."
+  },
+  "image_prompt": "Product photography of the Hearthstone Firearms Watchtower Rifle HWR-4 Vigil in matte gun-metal and charcoal gray, positioned at a sharp downward angle on a weathered concrete surface to emphasize its tower-optimized geometry. Dramatic side-lighting from above-right, harsh and cool-toned, casting sharp shadows from the ventilated handguard fins. The fixed 8x scope catches edge-light, showing its optical clarity without glare. Foreground shows a worn leather shooting glove gripping the pistol grip, callused fingers visible. Background: blurred industrial watchtower silhouette. Ultra-detailed texture on parkerized steel and polymer wear patterns. Cyberpunk 2226 aesthetic: utilitarian, mechanical, utterly devoid of screens or LEDs—pure ballistics engineering. Shot emphasizes the distinctive downward-angled stock and reinforced scope base. Commercial product photography, catalog quality, photorealistic. --ar 3:2 --v 6"
 }

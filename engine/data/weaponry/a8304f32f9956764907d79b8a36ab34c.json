@@ -44,5 +44,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Arcturus PX-1 'Phantom'",
+    "Breck Tannen",
+    "Focadrin",
+    "Nika Svensson-Kone",
+    "Tessera Corponation",
+    "Zurab Ivanov-Appiah"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular designated marksman rifle with an unmistakably networked aesthetic. The frame tapers from a robust receiver to a precision barrel, with prominent data conduits running along the left side. The overall impression is clinical and interconnected—less military hardware, more distributed intelligence made physical.",
+    "dimensions": "Overall length: 118 cm. Barrel length: 61 cm. Width at receiver: 8 cm. The weapon has a distinctly modular profile with visible junction points where network modules interface.",
+    "weight_description": "Hefty but well-balanced at 4.6 kg. The weight sits forward, centered on the barrel, making shouldering natural despite the sophisticated electronics distributed throughout the frame.",
+    "primary_material": "Carbon-composite chassis with precision-machined steel barrel and receiver. Polymer rail systems with embedded conductive traces. Aluminum heat-sink panels along the upper receiver.",
+    "finish": "Matte charcoal composite with brushed steel receiver accents. The data conduits have a subtle iridescent sheen—optical fiber bundles visible beneath translucent polymer cladding.",
+    "color_scheme": "Charcoal gray primary, with gunmetal steel highlights. Tessera's signature electric blue accent lines trace the distributed targeting network across the rail system and scope mount.",
+    "grip_texture": "Textured polymer grip with integrated haptic feedback nodules. Slightly stippled for secure purchase even with augmented or gloved hands. The fore-grip is wrapped in soft-touch rubber with embedded temperature sensors.",
+    "distinctive_features": [
+      "Dual networked scope mounts with active alignment indicators",
+      "Visible optical fiber data conduits running the length of the upper rail",
+      "Modular network interface junction boxes on either side of the receiver",
+      "Heat-sink cooling fins integrated into the rail system",
+      "Minimal iron sights—weapon relies entirely on networked smart-scope integration",
+      "Integrated antenna array disguised as rail components along the handguard",
+      "Ballistic data share indicator lights (blue LEDs) positioned on the right receiver panel",
+      "Thermal management vents sculpted into the composite furniture",
+      "Precision-machined action with minimal surface irregularities"
+    ],
+    "manufacturer_markings": "TESSERA corporate logo stamped into the left side of the receiver in brushed steel. 'TNDM-6 ORACLE' etched below in small caps. Network certification seal (circular, with frequency specification) positioned on the right rear of the receiver. Individual unit serial plate mounted on the magazine well in monospace font.",
+    "condition_typical": "Factory-pristine to field-worn. Oracles in active networks show minimal cosmetic damage but may have scuff marks on the data conduit cladding from rough handling. Thermal management systems often show discoloration from extended engagements. The optical surfaces are meticulously maintained—network data depends on clean sensor windows."
+  },
+  "image_prompt": "Professional product photography of the Tessera TNDM-6 Oracle DMR mounted on a dark gunmetal table, angled 45 degrees to showcase the precision barrel and networked scope integration. Dramatic side-lighting emphasizing the electric blue data conduit traces and heat-sink geometry. The smart-scope features blue LED indicator lights glowing subtly. Hands in tactical gloves position the weapon, fingers clear of trigger. Shallow depth of field isolating the receiver and network interface modules. Cyberpunk aesthetic with high-tech minimalism. Stark studio background with grid lighting. --ar 3:2 --v 6"
 }

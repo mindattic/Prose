@@ -36,5 +36,25 @@
   "related_entities": [
     "Ebele Medina-Quaye",
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Aggressive, street-ready hand armor that broadcasts combat intent. Sleek fingerless silhouette with prominent metallic knuckle guards that catch light. The exposed fingers create a paradox of vulnerability and lethality — you're ready to strike, but nothing protects what matters least.",
+    "fit": "Snug compression fit across the palm and wrist, with reinforced stitching at the base of each finger. The knuckle area sits slightly proud of the hand, creating a subtle gauntlet effect without full coverage.",
+    "primary_material": "Ballistic weave base layer with tungsten-carbide knuckle inserts; shock-absorbing gel-foam padding in the palm and back-of-hand",
+    "texture": "Smooth synthetic leather on the grip surface, slightly tackier than skin. The knuckle inserts are cold, precisely engineered metal with a subtle brushed finish. Palm padding has a quilted relief pattern for impact distribution.",
+    "color_scheme": "Deep matte black primary with gunmetal-gray tungsten knuckle plates. Contrast stitching in electric red or neon cyan running along the finger edges and wrist cuff.",
+    "closures": "Magnetic snap closure at wrist, friction-fit finger loops for security. No unnecessary straps — designed for quick on/off between rounds.",
+    "distinctive_features": [
+      "Tungsten-carbide knuckle inserts with visible segmented plating",
+      "Gel-foam impact-absorption padding visible as quilted channels",
+      "Redline Combat brand embossing on the outer knuckle guard",
+      "Fingerless design with reinforced stitching at knuckle joints",
+      "Wrist cuff slightly wider than standard, sits above jacket sleeves intentionally",
+      "Grip surface intentionally textured to prevent slipping during contact"
+    ],
+    "tier_indicator": "Tier 3-4: Working-class street culture. Affordable enough for regular pit-fighters, expensive enough to signal commitment rather than casual interest.",
+    "cultural_context": "Redline Shelf districts, semi-legal fighting circuits, street cred in working-class neighborhoods. Wearing these outside the pit says: 'I know how to throw hands' or 'I want you to think I do.' Associated with gig fighters, underground athletes, and people who solve problems with physicality.",
+    "condition_typical": "Broken-in, with visible scuff marks on the knuckle plates and stress creasing at the finger joints. Small tears in the webbing between thumb and index are normal — patched with carbon-tape or worn through. Padding compresses with use, revealing the internal structure."
+  },
+  "image_prompt": "Close-up fashion shot of Redline Combat Streetfighter fingerless gloves on a fighter's hands, knuckles forward in aggressive stance. Tungsten-carbide plates catch harsh overhead neon light—electric cyan and red. Worn ballistic weave with visible gel-foam padding. Urban Shelf district backdrop: concrete wall with flickering holo-ad, rain-slicked surface. Hands belong to mixed-heritage model with visible subcutaneous augmentation tracery on forearms. Moody, cinematic lighting. Dark tones with neon accent colors. --ar 2:3 --v 6"
 }

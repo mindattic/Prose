@@ -46,5 +46,26 @@
     "The Burnline",
     "The Signal",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately forgettable silhouette—intentionally generic office-tech aesthetic that allows the wearer to move through corporate spaces without drawing attention. The slate gray jacket and charcoal trousers create a neutral, blended appearance. Tall, lean posture is encouraged by the slim cut. The white sneakers provide a subtle 'technical professional' touch without marking the wearer as security or military. Overall impression: someone you wouldn't remember seeing.",
+    "fit": "Slim, tailored through the shoulders and torso but with strategic room at the jacket hem and trouser thighs for concealment and movement. The turtleneck is compression-cut but not restrictive. Sleeves end at the wrist without overhang—precision tailoring suggests custom work or high-grade aftermarket modification.",
+    "primary_material": "Brushed slate-gray ballistic weave (jacket), signal-isolating smart-fabric (turtleneck—embedded copper mesh micro-threads), charcoal synthetic wool blend (trousers), medical-grade white polymer composite (sneakers)",
+    "texture": "Jacket exterior: matte, slightly rough brushed finish that resists reflective detection. Interior: smooth Faraday-lined panels with subtle quilting. Turtleneck: dense, almost paper-thin but with internal metallic sheen visible at stretched seams. Trousers: flat, nearly slick weave. Sneakers: clean industrial matte.",
+    "color_scheme": "Slate gray, charcoal, white with no branding or accent colors. Deliberate desaturation—nothing that would trigger facial-recognition pattern-matching algorithms tuned for 'unusual fashion choices.'",
+    "closures": "Jacket: magnetic snaps (silent, no mechanical click) with secondary friction-fit overlaps at the BCI-port panels to maintain isolation integrity. Trousers: magnetic waist closure with flat profile (no visible zipper track). Sneakers: friction-grip lacing with embedded microfiber, no metal eyelets.",
+    "distinctive_features": [
+      "BCI-port access panels at collar and temples—custom-cut apertures with shielded rims, designed to integrate with neural interface jacks without compromising garment integrity",
+      "Faraday-lined interior compartments in jacket—invisible from outside, sized for standard data-storage arrays and cold-storage drives",
+      "Signal-isolating turtleneck creates passive wireless dead zone around head and neck—defeats passive RF tracking and biometric sensor sweeps within 2-meter radius",
+      "Data-chip concealment seams in trousers thighs—flat-profile channels sewn into internal seam structure, indistinguishable from reinforcement stitching",
+      "No visible branding, tags, or model markings—all labels are sublimated directly into fabric in near-invisible gray-on-gray print",
+      "Wear-resistant stress points reinforced with nearly-invisible carbon-thread lattice",
+      "Temperature-regulating micro-ventilation at jacket underarms and trouser inner thighs—designed to defeat thermal imaging by maintaining body-temp equilibrium"
+    ],
+    "tier_indicator": "Tier 3-4 (working-class professional) on surface; Tier 1 in actual manufacturing sophistication and cost. Deliberately signals middle-management or technical contractor to avoid attracting corpo security or street predation.",
+    "cultural_context": "Worn by data runners, black-market sys-admins, corporate infiltrators, and signal technicians operating in legal gray zones. The outfit says: 'I move through secure spaces, I am forgettable, I solve problems quietly.' Associated with anti-surveillance culture and dark-market technical communities. Greynode operates outside corpo channels—gear like this is typically acquired through fixers, dark net markets, or direct trade.",
+    "condition_typical": "Pristine when new; after 2-3 months of regular operational use, shows subtle wear at the magnetic snaps and nearly imperceptible fraying at concealment seams. Worn specimens develop a slight patina from RF shielding degradation but remain functionally intact for months. Never distressed intentionally—any damage reduces effectiveness."
+  },
+  "image_prompt": "Fashion photograph of a Greynode operational outfit on a androgynous cyberpunk model or sleek dark mannequin. The model stands in a neutral three-quarter pose against a dimly-lit corporate office backdrop—floor-to-ceiling windows showing a night cityscape with distant holographic advertisements. Moody blue-gray side-lighting emphasizes the brushed texture of the slate jacket and the near-invisible shielding details at the collar BCI ports. The turtleneck's subtle metallic sheen catches the light where the fabric stretches. Close detail shot of the flat-profile data-chip seams in the trouser fabric showing reinforcement stitching. The overall aesthetic is stealth-technical, deliberately forgettable, professional. Cyberpunk noir. --ar 2:3 --v 6"
 }

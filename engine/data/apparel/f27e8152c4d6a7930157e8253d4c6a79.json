@@ -43,5 +43,25 @@
     "Arcturus LS-5 'Sentinel'",
     "Nodar Kuznetsov-Adu",
     "TESSERA CORPONATION Sentinel Executive Security BCI"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively understated moto jacket with clean lines and minimal visual aggression. The silhouette is slightly structured through the shoulders and chest, tapering gently at the waist. Reads as premium workwear rather than tactical gear—the kind of jacket a corpo security detail or seasoned fixer wears to blend in.",
+    "fit": "Medium, tailored through the chest and shoulders with enough ease for layering and movement. Not oversized, not form-fitting; designed for practical mobility and concealment of internal ballistic architecture.",
+    "primary_material": "High-grade synth-leather with a subtle matte finish, bonded over flexible ballistic composite panels (aramid-polymer weave) at interior chest, back, and upper arms. Lining is technical textile—breathable, durable, designed to work against skin or over base layers.",
+    "texture": "Smooth, slightly waxy exterior leather with minimal creasing; interior panels have a subtle ribbed texture where they bond to lining. Hardware feels precise and minimal—no rattling, no excess.",
+    "color_scheme": "Primarily black or dark olive—both colors designed for urban environments and low visibility. No logos visible on exterior. Matte finish prevents light reflection.",
+    "closures": "Vertical front zip with reinforced slider; magnetic snap collar closure for silent operation. Wrist zippers have friction-fit adjustment tabs rather than traditional cuffs.",
+    "distinctive_features": [
+      "Invisible interior ballistic panels (chest, back, upper arms)",
+      "Reinforced seaming at stress points",
+      "Discrete chest pockets with security closures",
+      "Integrated cable routing channels (compatible with various augmentation aftermarket interfaces)",
+      "Subtle textured grid pattern at shoulders (improves ballistic panel adhesion—barely noticeable)",
+      "No visible branding—authenticity verified through encrypted serial encoding"
+    ],
+    "tier_indicator": "Tier 3-4 functional luxury. Affordable for working professionals but expensive enough to signal serious purpose. Accessible to private contractors and corporate middle management; aspirational for Tier 4 street workers.",
+    "cultural_context": "Security culture. Worn by people who've calculated risk: private security contractors, fixers working contested zones, corpo investigators, medical transport personnel in unstable districts. The lack of flash says competence over posturing.",
+    "condition_typical": "Broken-in but meticulous. Shows patina from use but no visible damage—scuffs are worn into the leather gradually. Wearers maintain it religiously because it's both protection and identity."
+  },
+  "image_prompt": "High-end cyberpunk fashion photography: model wearing a black Durovex Sentinel Armored Jacket, 3/4 seated pose against a rain-slicked industrial wall with faint neon signage bleeding from nearby streets. Moody side-lighting from a single source reveals the subtle texture of the matte synth-leather, the precision of the magnetic collar, the functional geometry of the shoulders. No visible augmentation, but the character reads as someone who's made hard choices. Dark urban backdrop with glowing circuit traces in shallow depth of field. Product clarity on garment, atmospheric tension in setting. Photograph should feel like security footage meets high fashion. --ar 2:3 --v 6"
 }

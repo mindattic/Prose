@@ -54,5 +54,30 @@
     "Synaptrel",
     "The Circuit",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A professional electrical infrastructure worker's uniform that reads as high-spec and aug-integrated. The slate blue shirt and matching trousers create a cohesive base, layered with a charcoal insulated over-vest. The silhouette is structured and functional—broad shoulders to accommodate chrome limbs, tapered at the waist, with visible tool distribution across the body. The Solberg-Maru yellow hard hat (when worn) adds a high-visibility accent. Overall impression: a working specialist in a mid-tier corpo infrastructure division, equipped for serious electrical hazards.",
+    "fit": "Engineered compression through the torso with relaxed upper sleeves to clear augmented limbs. The trousers are straight-leg with reinforced stress points. The over-vest sits snug but not restrictive, designed for layering. Boots are broad and stable. Every element prioritizes function over aesthetic drape.",
+    "primary_material": "Flame-resistant arc-flash-rated synthetic blend (shirt), dielectric-rated insulated composite (over-vest), reinforced ballistic weave with Kevlar gusset (trousers), steel-cap boot leather with rubber/polymer soles (boots), polycarbonate shell (hard hat)",
+    "texture": "Shirt has a tight, crisp weave with a slight sheen from flame-retardant treatment. Over-vest features quilted padding on chest and back for visible structure. Trousers have a textured matte finish with reinforced seams running visibly along stress zones. Boots show industrial wear-resistance coating. Hard hat is smooth and slightly textured for grip.",
+    "color_scheme": "Slate blue (primary—shirt and trousers), charcoal (over-vest), Solberg-Maru safety yellow (hard hat and accent trim), white (name patch text), silver (embroidered logo), matte black (BCI port cover)",
+    "closures": "Magnetic-snap track along sleeve seams for aug-accommodation, flat-front zip on over-vest, side-zip on boots, snap-on BCI port cover, clip-attachment hard hat ring, D-ring carry points for gauntlets",
+    "distinctive_features": [
+      "Magnetic-snap sleeve construction allowing chrome arm clarity without garment removal",
+      "Solberg-Maru double-helix-and-bolt logo in silver embroidery on right chest",
+      "Personalized white name patch on left chest",
+      "Broad rear pocket on over-vest fitted for rolled arc-flash shield",
+      "Built-in knee pads on trousers",
+      "Multiple tool pockets distributed across trousers and vest",
+      "Reinforced gusset in trousers for mobility and durability",
+      "Voltage-rated gauntlet gloves on D-ring carry",
+      "Matte black snap-on BCI port cover protecting neural interface",
+      "Hard hat with back-ring clip for hands-free carry",
+      "Dielectric-rated sole and materials throughout for electrical safety"
+    ],
+    "tier_indicator": "Tier 3—working-class corpo infrastructure. Solberg-Maru is a major power-grid operator, so crew wear signals skilled labor and company affiliation, but not wealth. The aug-accommodation design reflects a company that invests in retention for experienced workers.",
+    "cultural_context": "Electrical infrastructure specialist in a mega-corp utility division. Wearing this rig signals: you've been on the job long enough to have chrome, you work high-voltage, you're trusted by Solberg-Maru, and you know electrical hazards. In the GLMZ, this is respectable Circuit-tier labor—not sub-grade salvage work, not corpo boardroom tier.",
+    "condition_typical": "Worn and professionally maintained. The shirt shows minor arc-scarring and soot residue on the cuffs. The over-vest padding shows creasing from constant use. Trousers have grass stains and minor thermal scorching on the right boot area. Hard hat has faint dents and a few scratches on the visor. Everything is kept functional—patched where necessary, but not glamorous. This is gear that lives in active work zones."
+  },
+  "image_prompt": "A Tier-3 electrical infrastructure worker in full Solberg-Maru crew rig, standing in profile against a moody industrial backdrop—a high-voltage transmission tower or substation visible in soft focus behind. The worker wears the slate blue arc-flash shirt with visible magnetic-snap sleeve tracks, charcoal insulated over-vest zipped halfway, matching slate trousers with reinforced knees, and steel-cap dielectric boots. The Solberg-Maru yellow hard hat is clipped to the vest's rear ring. Their right arm is a matte-chrome cybernetic limb, the sleeve open at the magnetic snaps to showcase the arm's junction with shoulder. Voltage-rated gauntlets hang from the hip D-ring. The BCI port cover is visible as a matte black circle at the base of the skull. Moody neon-tinged lighting—blue and amber warehouse sodium lights—casts sharp shadows across the rig. Slight thermal shimmer and electrical hum suggested by particle effects near the chest and arm. Gritty, professional, lived-in. --ar 2:3 --v 6"
 }

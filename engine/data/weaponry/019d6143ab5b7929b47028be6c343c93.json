@@ -36,5 +36,31 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Ouroboros Energy PiezoCore LD-5 Pedestrian Kinetic Harvesting Grid",
+    "Vespid Dynamics",
+    "the_meridian_office_park"
+  ],
+  "physical_description": {
+    "visual_profile": "A low-profile disc resembling a flattened metal mushroom or sensor node. Deceptively compact and industrial—the kind of object that could pass for buried infrastructure or a forgotten piece of city hardware. The casing has a domed top with subtle panel lines indicating micro-drone deployment seams.",
+    "dimensions": "150mm diameter, 80mm height. Deployment profile extends approximately 50mm above ground when activated.",
+    "weight_description": "Surprisingly light and dense—approximately 1.5kg feels compact and portable despite the engineering density. Designed for rapid placement rather than sustained carry.",
+    "primary_material": "Reinforced polymer composite (HDPE-carbon matrix) with hardened steel internal chassis. Seams indicate pressure-cast construction.",
+    "finish": "Matte olive-drab polymer with brushed steel contact points. Thermal-dissipating coating creates a slightly grainy texture. Minor scuff marks and dirt accumulation typical of field deployment.",
+    "color_scheme": "Weathered olive-green primary with gunmetal gray accent bands around the circumference. Faint VESPID DYNAMICS logo in reflective gray at the dome apex.",
+    "grip_texture": "Not designed for handheld grip—textured polymer exterior provides friction for burial and placement. Deployment handle (if equipped) would be recessed ribbed aluminum.",
+    "distinctive_features": [
+      "Six radial micro-seams arranged in hexagonal pattern across dome—drone emergence points barely visible when closed",
+      "Central thermal sensor lens (dark smoky glass, 8mm diameter) positioned at apex",
+      "Pressure activation plate recessed beneath 3mm polymer lip",
+      "Barely perceptible LED status indicator (red/green) tucked into a recessed pocket—visible only when examining closely",
+      "Serial/batch etching along the bottom rim",
+      "Faint heat-stress discoloration marks where internal charge chambers sit"
+    ],
+    "manufacturer_markings": "VESPID DYNAMICS stamped in sans-serif lettering (12pt) on the lower band. SIM-2 variant designation laser-etched on deployment face. Lot number and manufacturing date (MMYY format) stamped on base plate.",
+    "condition_typical": "Field-worn but functional—buried units show soil compaction marks and minor corrosion scoring. Active units display slight thermal discoloration from recent arming. No cosmetic maintenance expected; purely utilitarian appearance. Some units show evidence of hasty placement (mud splatter, partial burial indicators)."
+  },
+  "image_prompt": "Overhead and side-angle product photography of a Vespid Dynamics SIM-2 'Anthill' anti-personnel mine on dark concrete surface. Show the low-profile disc-shaped casing with subtle dome panels, weathered olive-drab polymer finish, and brushed steel accents. Include close detail of the central thermal sensor lens and hexagonal micro-seam pattern indicating drone launch points. Dramatic side-lighting casts sharp shadows emphasizing the shallow profile and industrial geometry. Gloved hand (chrome-augmented fingers visible) carefully positions the mine for scale. Cyberpunk color grading with cool blues and amber accent lighting on the VESPID DYNAMICS markings. Background: out-of-focus tactical grid or military equipment crate. Cinematic, slightly ominous tone emphasizing the deceptive simplicity of the weapon. --ar 3:2 --v 6"
 }

@@ -74,5 +74,23 @@
     "Vantablack Media",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "WELLSPRING"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist cylinder resembling a precision flare or signal cartridge. The form factor is deliberately anonymous — no branding, no distinctive aesthetic flourishes. Its surface appears almost matte-black, absorbing light rather than reflecting it. The overall impression is clinical, utilitarian, designed to disappear into a pocket or pack without drawing attention.",
+    "dimensions": "18cm tall, 3cm diameter cylinder — roughly the size of a large marker or distress flare",
+    "weight_description": "Handheld and pocketable; light enough for a vest pocket or cargo pouch, easily concealed in a messenger bag",
+    "primary_material": "Proprietary water-soluble polymer composite with embedded thermal-erasure circuitry; interior titanium-alloy shielding for RF isolation",
+    "finish": "Vantablack-grade absorptive surface coating; the polymer has a slightly waxy, organic texture that feels warm to the touch. No reflections under direct light — it seems to swallow illumination.",
+    "color_scheme": "Near-absolute black with subtle charcoal micro-striations suggesting internal segmentation. No accent colors or branding — visibility is actively avoided.",
+    "interface_elements": "Single recessed USB-C data input port (flush-mounted, dust-capped with a minimal polymer plug). Mechanical timer ring around the bottom third of the cylinder with tactile notches for 1-minute increments, unmarked beyond faint alignment markers. No LEDs, displays, or power indicators — intentionally silent.",
+    "distinctive_features": [
+      "Recessed data port barely visible against the black finish — designed for tactile access in darkness",
+      "Mechanical timer ring with detent clicks; purely mechanical, no electronic timer display",
+      "Thermal vent slots concealed as faint horizontal scoring near the top — opens only during transmission",
+      "Absence of any manufacturer marking, serial number, or regulatory stamp — deliberately unmarked"
+    ],
+    "manufacturer_markings": "None visible. Vantablack Media deliberately omits all identifying marks; authenticity verified only through secure supply chain and key-pair documentation provided separately.",
+    "condition_typical": "Pristine and sealed when new. Pre-use Cartridges show no wear. Post-transmission units are typically destroyed or dissolved; recovered casings are warped and porous, with internal components charred beyond forensic recovery."
+  },
+  "image_prompt": "A sleek black cylindrical Orphan Signal Cartridge lying on a weathered steel workbench, dramatically lit by a single overhead neon strip light that casts sharp shadows. The cartridge's vantablack surface absorbs the light, appearing as a void. Nearby: a data cable, a faint glow from a decryption key device, scattered water droplets on the bench suggesting dissolution testing. Moody cyberpunk workspace, rain-slicked window visible in background showing GLMZ megastructures. Product photography style, shallow depth of field focusing on the cartridge's mechanical timer ring detail. --ar 3:2 --v 6"
 }

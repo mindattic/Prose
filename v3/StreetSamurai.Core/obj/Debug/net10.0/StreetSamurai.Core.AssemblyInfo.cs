@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StreetSamurai.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f9b0d91b10417f17fcd90db0225112ff6c1f4a53")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e2860f037d9bae7809161e2aa9886dd17242ee6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("StreetSamurai.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StreetSamurai.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

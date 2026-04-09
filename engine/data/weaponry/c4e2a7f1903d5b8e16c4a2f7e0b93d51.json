@@ -43,5 +43,36 @@
     "civilian",
     "tier1"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Ira Volkov",
+    "Lacuna Genomics",
+    "MERIDIAN",
+    "Stainless Steel",
+    "The Question",
+    "Yuki Nwosu-Petrenko"
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian cattle prod: a long, straight fiberglass rod tapering slightly toward a dual-pronged steel contact tip. Inelegant and purely functional. No aesthetic concession whatsoever. Looks like exactly what it is — a farm tool that happens to deliver electrical shock.",
+    "dimensions": "90cm total length; 2.5cm diameter at grip; dual-prong contact spread 3cm apart",
+    "weight_description": "Lightweight and well-balanced; feels substantial enough to have heft but not fatiguing to hold or swing. Approximately 480g distributed evenly along the rod.",
+    "primary_material": "Fiberglass composite rod core wrapped in rigid ABS plastic casing",
+    "finish": "Matte industrial finish — no gloss, minimal reflection. Scuffed and slightly yellowed from sun exposure and field use. Weathered rather than worn.",
+    "color_scheme": "Pale cream or off-white ABS body with stainless steel prong contact at the tip. Battery compartment at grip end is darker plastic, often with faded Meridian Municipal Supply branding.",
+    "grip_texture": "Slightly textured ABS plastic with no intentional gripping aid — plain, rough enough to prevent slipping, cold to the touch",
+    "distinctive_features": [
+      "Dual stainless steel contact prongs at the tip, spread slightly and dulled from repeated use",
+      "Simple sliding power switch near the grip — no LED indicators or feedback lights",
+      "Exposed battery compartment cap at the base (removable via coin or tool)",
+      "Faint manufacturing seams running the length of the rod",
+      "No safety guard, no wrist loop, no decorative elements",
+      "Fine hairline cracks in the ABS finish on most units, especially near the grip",
+      "Contact prongs often darkened with oxidation despite stainless steel"
+    ],
+    "manufacturer_markings": "Meridian Municipal Supply AG-7 stamped in raised text along the upper third of the rod. Serial numbers and regulatory marks in tiny print near the battery cap. No logos beyond the manufacturer name.",
+    "condition_typical": "Field-worn but functional. Minor cosmetic damage expected. Contact prongs show oxidation. ABS casing may be cracked or discolored. Battery compartment cap often scratched from repeated access. Never pristine; always serviceable."
+  },
+  "image_prompt": "Product photography of a Meridian Municipal Supply AG-7 cattle prod lying diagonally across a worn dark metal surface, illuminated by dramatic side-lighting that casts sharp shadows. The matte cream-colored fiberglass rod is clearly visible, slightly yellowed and weathered, with the dual stainless steel contact prongs at the tip catching highlights. A gloved hand in dark tactical glove material grips the lower section of the rod, emphasizing its utilitarian simplicity. The battery compartment cap is visible at the grip end. Cyberpunk utilitarian aesthetic — no shine, pure function. Dark neutral background with industrial texture. Shot from a 45-degree angle to show length and proportion. Professional product catalog style but gritty and worn. --ar 3:2 --v 6"
 }

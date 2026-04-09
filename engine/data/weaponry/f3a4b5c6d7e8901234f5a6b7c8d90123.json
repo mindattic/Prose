@@ -42,5 +42,38 @@
     "biometric",
     "mobility-aid"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "Ezio Kaboré-Malhotra",
+    "Fanta Kato-Adomako",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "MERIDIAN",
+    "Noor Farouk",
+    "Patient Zero",
+    "Plot 17",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Tessera Industries Phase Disruptor PD-2 'Glitch'"
+  ],
+  "physical_description": {
+    "visual_profile": "An understated walking cane of refined proportions—elegant and unassuming at first glance, with the subtle gravitas of a gentleman's accessory from a previous century. Only close inspection reveals the precision polymer craftsmanship and modern weight distribution that mark it as contemporary design.",
+    "dimensions": "95 cm length overall; 8 cm curved handle; 2.5 cm diameter shaft; ferrule diameter 1.8 cm",
+    "weight_description": "Deceptively light at 420 grams—balanced and comfortable in sustained grip, with weight distributed toward the handle in a way that feels intentional and deliberate rather than like a typical cane's bottom-heavy character",
+    "primary_material": "Carbon-reinforced composite polymer with woodgrain surface texture, engineered for both structural integrity and convincing aesthetic authenticity",
+    "finish": "High-quality woodgrain texture printed and embedded into composite surface; satin matte coating with subtle surface variation to mimic natural wood grain aging; no glossy polymer shine",
+    "color_scheme": "Primary: Deep espresso brown to charcoal black gradient in woodgrain pattern; Accents: Matte gunmetal gray on biometric sensor ring and ferrule band; rubber ferrule tip in natural black",
+    "grip_texture": "Smooth composite handle with subtle ergonomic finger channels; integrated biometric sensor ring sits flush with handle surface, imperceptible to casual touch; grip surface designed for skin contact without being obviously textured",
+    "distinctive_features": [
+      "Flush biometric sensor ring embedded in handle—no visible button or raised control mechanism",
+      "Nearly invisible electrode contact points scattered across grip surface, disguised within the material texture",
+      "Precision-machined ferrule with replaceable rubber tip showing minimal wear even on well-used units",
+      "Subtle weight-bearing reinforcement visible only in cross-section—hollow core design maintains structural integrity",
+      "Micro-USB-C charging port concealed beneath removable ferrule cap",
+      "Biometric enrollment indicator: tiny LED (disabled by default) can be activated via companion app for user confirmation"
+    ],
+    "manufacturer_markings": "SafeStep logo etched subtly into the handle grip in 4mm serif font; serial number laser-printed on interior of removable ferrule cap; no visible safety warnings or weapon designations anywhere on exterior",
+    "condition_typical": "Pristine or very lightly worn—these are showpiece objects carried by their owners with care; heavy patina or battle-scars are exceptionally rare and indicate either genuine daily mobility use or deliberate cosmetic aging"
+  },
+  "image_prompt": "Product photography of a sophisticated walking cane against deep charcoal background, shot in three-quarter view at slight angle. Cane rests diagonally across image, handle facing camera. Wood-grain composite surface catches dramatic side-lighting—cool LED key light from left emphasizing texture depth, warm accent rim-light on handle reveals subtle biometric sensor ring. Gloved hand (black leather, augmented knuckles visible) grips handle to show natural holding position and scale. Close-up detail inset shows ferrule and micro-USB charging port. Cyberpunk aesthetic through lighting only—weapon itself remains civilian-refined, almost period piece. Dark composition emphasizes the object's deceptive elegance and concealment. --ar 3:2 --v 6"
 }

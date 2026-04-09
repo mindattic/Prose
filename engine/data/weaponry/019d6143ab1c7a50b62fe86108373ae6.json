@@ -40,5 +40,33 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Biometric Denial Charge BDC-1",
+    "Carrion Defense Works",
+    "Narrowcast",
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
+    "Uncle Jun's Synth-Noodle Window"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, brutalist handheld sprayer with a wide nozzle cone and reinforced pressure chamber. The silhouette is deliberately menacing—hunched shoulders with a prominent spray head that resembles a corroded organic mouth. Heavy, industrial aesthetic with zero ergonomic pretense.",
+    "dimensions": "28cm length, 12cm width at nozzle, 8cm depth. Barrel spray head extends 4cm from main body.",
+    "weight_description": "Hefty and unbalanced—front-loaded. Feels like holding a pressurized threat. 0.8kg manifests as deliberate mass, not graceful.",
+    "primary_material": "Surgical steel pressure chamber with carbon-reinforced polymer body. Internal surfaces treated to resist NecroSolve corrosion.",
+    "finish": "Matte industrial gray with localized surface oxidation—intentionally weathered to suggest chemical exposure. Nozzle cone shows deep pitting and discoloration consistent with acid spray use.",
+    "color_scheme": "Gunmetal gray body with charcoal polymer grip sections. Nozzle cone transitions to sickly bone-white at the aperture. Safety guards in dull biohazard yellow.",
+    "grip_texture": "Textured rubber-polymer hybrid with pronounced ridges. Deliberate texture for wet/gloved operation. Slightly tacky to discourage bare-hand use.",
+    "distinctive_features": [
+      "Wide conical spray nozzle with visible internal ridging—resembles organic aperture",
+      "Pressurized gauge window showing fluid level (contents appear cloudy amber/tan)",
+      "Manual pump trigger with secondary safety lock requiring two-finger activation",
+      "Vent ports along pressure chamber—designed to release thermal buildup from chemical reactions",
+      "Corroded manufacturer plate recessed into grip—partially obscured by wear",
+      "Faint etching marks on grip where user handles repeatedly",
+      "Heat-discolored sections around nozzle—browns and blacks from residual compound contact"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS stamped in raised serif font on left grip panel, heavily oxidized. Serial number laser-etched on chamber, intentionally shallow to suggest field modification. Small biohazard symbol embossed below trigger guard.",
+    "condition_typical": "Severely battle-worn and contaminated. Visible chemical scarring on nozzle and upper body. Organic residue staining around spray aperture despite cleaning attempts. Pressure seals show signs of degradation. Typical field unit shows signs of frequent use and inadequate maintenance—a weapon carried by desperate users."
+  },
+  "image_prompt": "Product photography of a Carrion Defense Works NAS-2 'Rot' necrotizing agent sprayer. Handheld chemical weapon sprayer positioned on dark gunmetal surface, shot from 45-degree angle. Dramatic side-lighting casting sharp shadows, illuminating the corroded spray nozzle cone and pressure chamber. Close detail on the bone-white aperture and biohazard yellow safety guards. Gloved hand (latex, sealed) gripping textured polymer handle. Cyberpunk aesthetic: industrial, menacing, purposefully horrifying form factor. Heavy atmospheric haze suggesting chemical residue. Grimdark color palette—grays, blacks, sickly yellows. Ultra-realistic materials: oxidized steel, degraded polymer, chemical scarring. Mounted on dark reflective surface with shallow depth of field. --ar 3:2 --v 6"
 }

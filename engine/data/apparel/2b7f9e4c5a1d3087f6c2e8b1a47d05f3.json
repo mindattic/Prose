@@ -39,5 +39,27 @@
   "related_entities": [
     "Slagworks Industrial",
     "Tomasz Wren"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sturdy, utilitarian work pant with a straight leg and pronounced knee reinforcement. Silhouette reads as practical and grounded—designed for labor, not aesthetics. The hard-cap knee panels create a subtle but visible bulge at the kneecap, giving the wearer a slightly mechanical appearance.",
+    "fit": "Relaxed through hip and thigh with strategic stretch for mobility. Tapered slightly at ankle. Waistband sits at natural hip height. Designed for layering over compression underlayers or thermal base wear.",
+    "primary_material": "Heavy-duty stretch canvas (85% recycled polyfiber, 15% organic cotton blend), treated with hydrophobic coating. Knee panels are molded impact-absorbing polymer composite with ballistic weave backing.",
+    "texture": "Canvas body has a slightly nubbed, worn surface with visible weave pattern. Knee panels are smooth and slightly glossy, contrasting sharply with the matte body fabric. Edges show intentional reinforcement stitching.",
+    "color_scheme": "Primary: sand beige or warm earth brown. Knee panels in darker charcoal or gunmetal. Stitching in contrasting tan or copper tone. Minor fading and dirt stains are expected.",
+    "closures": "Five-point reinforced button fly with secondary magnetic closure for durability. Heavy-gauge coated zipper rated for repetitive use.",
+    "distinctive_features": [
+      "Molded hard-cap knee panels with visible impact-absorption ridges",
+      "Three oversized cargo pockets (thigh and hip placement)",
+      "Hammer loop on right hip in reinforced nylon webbing",
+      "Front utility slot for small tool roll or cable storage",
+      "Reinforced crotch panel and seat in ballistic weave",
+      "Reflective piping along side seams for low-light visibility",
+      "Kelden Site logo (embroidered) on rear right waistband",
+      "Pre-existing wear patterns: scuff marks, minor fraying at hem"
+    ],
+    "tier_indicator": "Tier 3-4 functional working class. Not cheap or salvaged, but unambiguously practical and utilitarian.",
+    "cultural_context": "Construction worker, site crew, logistics handler, or manual labor professional in the GLMZ. Signals reliability, physical labor, and corpo-adjacent industrial work. Worn by people who climb, crouch, and move heavy objects for salary.",
+    "condition_typical": "Broken-in and weathered. Knees show darkening from repeated impact and abrasion. Canvas body has oil stains, concrete dust residue, and minor fraying. Still functional and regularly re-treated with hydrophobic coating."
+  },
+  "image_prompt": "Kelden Site construction pants on a rugged cyberpunk worker model, shot from waist to ankle to emphasize the molded charcoal knee panels. Model wears scuffed steel-toe boots. Dark industrial warehouse backdrop with harsh sodium-vapor lighting, casting shadows across the fabric's weave pattern. Close-up detail of the impact-absorbing knee ridge texture visible in frame. Gritty, utilitarian aesthetic. Moody, desaturated color grading with warm earth tones. --ar 2:3 --v 6"
 }

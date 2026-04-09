@@ -36,5 +36,25 @@
   "related_entities": [
     "The Underlayer Collective",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting full-body thermal suit that hugs the silhouette while creating subtle dimensional layering. The garment presents as a unified thermal cocoon — high neckline, long tapered sleeves with integrated thumb loops, and ankle-length legs. Despite its technical function, it maintains clean minimalist aesthetics with subtle ribbed texture breaks.",
+    "fit": "Compression-adjacent but not restrictive; snug enough to maximize heat retention and minimize air pockets, with articulated panels at joints (shoulders, elbows, knees) allowing full mobility. Engineered for layering under bulkier protective gear.",
+    "primary_material": "Triple-layer synthetic composite: inner moisture-wicking microfiber (hydrophobic treatment), middle thermal-retention foam (aerogel-infused), outer wind-blocking ballistic weave with DWR coating",
+    "texture": "Smooth inner surface with subtle grid quilting visible through the outer layer; the outer face has a soft matte finish with micro-dimple texture for water shedding. Thumb loop cuffs are reinforced with friction-grip ribbing.",
+    "color_scheme": "Deep arctic blue-gray base with charcoal thermal gradient panels along spine, shoulder blades, and outer thighs. Subtle reflective piping at seams (safety visibility in snow glare). Frostline Gear branding in minimal white serif text at sternum.",
+    "closures": "Full-length rear zipper with thermally-insulated slider and internal wind baffle. Magnetic snap closure at neck to prevent zipper failure in extreme cold. Thumb loops are friction-fit elastic.",
+    "distinctive_features": [
+      "Integrated thumb loops prevent sleeve creep under external gloves",
+      "Taped seams throughout to eliminate thermal leakage points",
+      "Reinforced panel zones (shoulders, lower back, calves) with secondary insulation layer",
+      "Subtle Frostline Gear geometric logo — a stylized snowflake/thermal wave pattern",
+      "Heat-mapped color gradation suggesting insulation density distribution",
+      "Interior neck tag with manufacturing date and thermal rating (rated -40°C to -65°C operational)"
+    ],
+    "tier_indicator": "Tier 2-3 functional luxury. Expensive enough to signal corporate affiliation or specialized trade credential, yet purely utilitarian in design. Not aspirational fashion — this is survival equipment that costs what it costs because lives depend on it.",
+    "cultural_context": "Worn by external infrastructure maintenance crews, aerial scaffold workers, and upper-tier structure repair specialists. Signals dangerous, cold-exposure work on the GLMZ's highest platforms. Also worn by enthusiasts of extreme-environment recreation. The garment says: 'I work where it kills the unprepared.'",
+    "condition_typical": "Pristine or slightly broken-in when new; with use, develops subtle creasing at joints and minor discoloration from sweat salt. Well-maintained specimens show no damage; damaged units (torn seams, zipper failure, thermal degradation) are immediately replaced — equipment failure = medical emergency."
+  },
+  "image_prompt": "Hyper-detailed fashion product photography: a sleek arctic blue-gray thermal bodysuit displayed on a muscular matte-black mannequin with subtle cybernetic arm plating visible at shoulder junction. The garment's triple-layered construction suggested by soft dimensional quilting. Moody cool-temperature lighting with icy blue rim lights emphasizing the fabric's thermal-reflective properties. Urban backdrop: snow-dusted industrial architecture, frost-covered metal scaffolding, the silhouette of a raised upper-tier structure in background fog. Close detail insert showing the reinforced shoulder panel and Frostline Gear snowflake logo. Atmospheric breath-like vapor wisps around the model. Professional equipment photography aesthetic. --ar 2:3 --v 6"
 }

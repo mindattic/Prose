@@ -77,5 +77,24 @@
     "Steel",
     "Suki Ekberg-Asare",
     "TESSERA PG-2 'Signature'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian pneumatic driver resembling a short-barreled industrial nail gun, with a pronounced forward-facing chamber housing the spike. Angular, purpose-built industrial aesthetic with exposed mechanical elements and a rotatable locking collar mechanism visible near the muzzle.",
+    "dimensions": "41cm length, 8cm diameter barrel — handheld tool size, slightly larger than a concrete nailer",
+    "weight_description": "1.4 kg unloaded — carries like a power drill, light enough for sustained one-handed use during climbing operations",
+    "primary_material": "Reinforced polymer composite frame with steel pressure chamber and titanium-alloy locking collar; osmium-tungsten spike",
+    "finish": "Matte industrial coating with visible knurling on the grip section; the pressure chamber shows faint stress-relief etching patterns; locking collar has a brushed metallic finish with calibration markings",
+    "color_scheme": "Charcoal gray frame with high-visibility safety orange pressure-release indicator band; Palladian Construction branding in white stencil; the spike reveals dull metallic osmium-core sheen when chambered",
+    "interface_elements": "Tactile trigger mechanism with safety override lever; rotatable locking collar with detent positions marked 1-4 for substrate density presets; integrated gas cartridge loading port on the underside with quick-release mechanism; included retrieval wrench with T-grip handle stored in a clip mount on the body",
+    "distinctive_features": [
+      "Radially-expanding barb array visible at the spike tip — designed to catch light and show mechanical complexity",
+      "Calibration dial on the locking collar with substrate density markings (soft/medium/hard/steel)",
+      "Clear polymer loading window showing the osmium-core spike in profile",
+      "Pressure gauge with red warning zone at 12 o'clock position",
+      "Woven nylon carrying strap with carabiner loop for harness attachment"
+    ],
+    "manufacturer_markings": "PALLADIAN CONSTRUCTION embossed on grip; TECTONIC ANCHOR SPIKE SYSTEM in technical sans-serif; regulatory compliance stamps including GLMZ construction authority certification; serial number engraved on the barrel; max load rating (800 kg) stamped in white lettering",
+    "condition_typical": "Showing light use wear — scuffed muzzle from contact with various substrates, minor concrete dust accumulation in the collar mechanism, oxidation patina on the titanium collar, spike reflecting recent deployment marks from substrate friction"
+  },
+  "image_prompt": "Industrial product photography of a pneumatic anchor spike tool photographed on a weathered steel workbench scattered with concrete dust, construction debris, and a coiled nylon safety line. The tool is positioned at a 45-degree angle showing the profile and muzzle details under dramatic sidelight. Overhead hard LED lighting reveals texture in the polymer frame and reflects off the osmium spike. Dark background, moody cyberpunk industrial setting, shallow depth of field. Include the retrieval wrench in soft focus beside the main tool. Shot in high detail, emphasizing the mechanical complexity of the barb deployment collar and the quality of the manufacturing. Cyberpunk color grading with cool blue-gray tones and warm orange safety accents. --ar 3:2 --v 6"
 }

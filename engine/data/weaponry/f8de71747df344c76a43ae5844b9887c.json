@@ -45,5 +45,39 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus KS-11 'Coffin Nail'",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Free Assembly",
+    "Kang-Petrov Arms KPM-6 'Equalizer'",
+    "Nika Svensson-Kone",
+    "Orbital Drop Pod",
+    "Patient Zero",
+    "Solveig Tambadou-Kereselidze",
+    "Street Custom 'Angry Mary' Aerosol Flamethrower",
+    "The Reclamation Assembly",
+    "The Shelf"
+  ],
+  "physical_description": {
+    "visual_profile": "A crude, skeletal pistol that looks like it was assembled from plumbing scraps. The barrel is a short steel pipe with one end roughly finished. The grip is minimal — barely more than a wrapped handle protruding from the rear. No trigger guard. No safety. The whole device suggests maximum lethality with zero refinement.",
+    "dimensions": "Overall length 120-150mm. Barrel length 60-100mm. Grip width 25-30mm. Chamber depth approximately 40mm.",
+    "weight_description": "Light and unbalanced — the barrel end is noticeably heavier than the grip, creating a forward-heavy feel that requires a firm grip to manage. Sits uncomfortable in the palm.",
+    "primary_material": "Low-grade steel pipe (likely salvaged from industrial scrap). The firing pin is a bent galvanized nail. The striker mechanism uses rubber bands — visible, worn, sometimes double-wrapped.",
+    "finish": "Bare steel with oxidation staining, inconsistent filing marks where the chamber was crudely bored. No polish, no coating. Some examples show surface rust. Others bear fresh file scratches from recent assembly.",
+    "color_scheme": "Gunmetal gray with orange-rust streaking. Accent of dull red rubber bands wrapped around the striker assembly.",
+    "grip_texture": "Bare steel or wrapped with electrical tape, frayed cord, or athletic tape — whatever the builder had available. Rough, non-slip by necessity. Some examples show bare grip with corrosion and skin oil staining.",
+    "distinctive_features": [
+      "Nail firing pin, visibly bent and protruding slightly through the chamber wall",
+      "Rubber band striker mechanism fully exposed — no housing, no shroud",
+      "Uneven barrel bore — visible light variance when looking down the muzzle",
+      "Chamber threads where the barrel screws into the grip assembly",
+      "Crude file marks and drill-bit chatter visible on all surfaces",
+      "No ejection port — rounds removed by unscrewing the barrel",
+      "Occasional knife scratches or notch marks indicating reload count or user tally"
+    ],
+    "manufacturer_markings": "None. 'Street Custom' is a production philosophy, not a brand stamped on the weapon. Possibly crude initials scratched into the grip by the builder — two or three letters indicating maker or owner.",
+    "condition_typical": "Well-used and weathered. Patina on the barrel. Rubber bands replaced multiple times (visible indentations and wear marks). Some flaking rust. The grip wrap is always failing — tape peeling, cord fraying. Functionally maintained but aesthetically neglected."
+  },
+  "image_prompt": "Product photograph of a crude improvised steel pipe pistol (Nail Biter), single-round capacity, laid across a scarred concrete surface. Bare steel barrel with orange oxidation, rubber-band striker mechanism fully visible, wrapped tape grip with fraying edges. Dramatic side-lighting revealing file marks and corrosion texture. Dark industrial background. Cyberpunk street weapon aesthetic. Shot from above at 45 degrees. Include small details: bent nail firing pin, chamber threads, wear marks. Gritty, unrefined, lethal minimalism. --ar 3:2 --v 6"
 }

@@ -46,5 +46,40 @@
     "crowd_control",
     "cognitive"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Dewpoint",
+    "GLMZ",
+    "Lacunal",
+    "Lazarus Pharmaceuticals",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Narrowcast",
+    "Oracle Drift Systems",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Pure Hand",
+    "Uncle Jun's Synth-Noodle Window"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, clinical dispersal device resembling a high-end inhaler crossed with a precision chemical applicator. Sleek and purposeful, with an ergonomic grip designed for one-handed deployment. The form factor projects clinical authority rather than lethality — it could pass as medical equipment to the untrained eye.",
+    "dimensions": "18cm length, 5.5cm width at grip, 4cm depth. Canister body approximately 12cm tall, 3cm diameter.",
+    "weight_description": "Surprisingly light — feels almost insubstantial in the hand when full. Balanced toward the grip end, making it feel stable and controllable during operation.",
+    "primary_material": "Aerospace-grade polymer composite body with integrated steel pressure vessel. Delivery mechanism uses precision machined aluminum alloy.",
+    "finish": "Matte charcoal grey base with brushed titanium accents around the trigger mechanism and canister coupling. The polymer has a soft-touch coating that resists fingerprints.",
+    "color_scheme": "Charcoal grey primary with titanium silver and clinical white accent panels. Minimal branding uses a muted corporate serif font.",
+    "grip_texture": "Textured polymer grip with subtle ergonomic ridging — designed for gloved operation. Cool to the touch, slightly grippy.",
+    "distinctive_features": [
+      "Digital pressure gauge integrated into the canister coupling — small LCD readout showing remaining doses",
+      "Dual-stage trigger mechanism with tactile feedback and safety lock",
+      "Fine-mist nozzle with adjustable dispersion pattern (2-meter focused or 3-meter wide)",
+      "Passive thermal vent system along the barrel to prevent heat-induced compound degradation",
+      "Subtle LED indicator (blue when armed, amber when low pressure) embedded in the grip",
+      "Lazarus Pharmaceutical corporate mark and regulatory certification stamps on the canister",
+      "Serial number and compound designation (LZR-41S) laser-etched along the body"
+    ],
+    "manufacturer_markings": "LAZARUS PHARMACEUTICAL logo in serif type on the grip panel. Regulatory compliance marks (GLMZ Category II, Licensed Security Use Only) on the canister. QR code for dosage/safety data located on the bottom of the grip.",
+    "condition_typical": "Kept in pristine condition by licensed operators — the device's clinical nature means it's typically well-maintained. Field units show minimal wear; deployment-heavy units may show slight nozzle discoloration from residual aerosol particulate."
+  },
+  "image_prompt": "Product photography of the Lazarus Pharmaceutical DriftHaze LZR-H3 dispersal device, mounted on a matte black display surface with gloved corporate security hand gripping it at 45-degree angle. Dramatic side-lighting reveals the matte charcoal polymer body and titanium accents with subtle sheen. LED indicator glows subtle blue in the grip. Closeup on the precision nozzle and pressure gauge. Clinical, authoritarian aesthetic with cool color temperature. Dark background emphasizes the device's sleek, medical-authority silhouette. Cyberpunk corporate security equipment. Shot from multiple angles to show trigger mechanism detail and canister coupling. --ar 3:2 --v 6"
 }

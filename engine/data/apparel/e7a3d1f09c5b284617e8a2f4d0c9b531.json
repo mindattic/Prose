@@ -49,5 +49,24 @@
     "O'Hare Sovereign",
     "Platinum",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A commanding broad wrist cuff that reads as both jewelry and industrial interface—polished white gold that catches light dramatically, sitting flush against the wrist like a statement of augmented privilege. The tessellated geometric pattern creates a subtle 3D effect that makes the cuff seem to shift and breathe with movement.",
+    "fit": "Precisely tailored to the wrist with a rigid titanium core—sits snug but not restrictive, designed for those accustomed to augmentation wear. The 52mm width commands presence without bulk.",
+    "primary_material": "Polished white gold over titanium core, with pale blue bioluminescent resin accent ring",
+    "texture": "Smooth polished outer surfaces with hand-engraved negative relief creating subtle tactile geometry—runs of light and shadow from the knotwork and adire patterns. The port surround is glossy resin.",
+    "color_scheme": "Bright white-gold primary with pale blue bioluminescent resin glowing softly around the inner port. The engraved lines create shadow-depth against the mirror finish.",
+    "closures": "Friction-fit or magnetic clasp (implied by luxury design); the cuff is a rigid band without traditional fasteners",
+    "distinctive_features": [
+      "Flush BCI interface port at inner wrist for direct neural handshake",
+      "Hand-engraved tessellated pattern blending Yoruba adire and Scandinavian knotwork in negative relief",
+      "Pale blue bioluminescent resin hairline ring framing the port",
+      "Polished white gold over titanium—high-grade materials signal extreme wealth",
+      "Catches and refracts light across geometric planes with movement"
+    ],
+    "tier_indicator": "Tier 1 luxury — Spire-tier corporate, cutting-edge augmentation tech, hand-crafted by artisan brand",
+    "cultural_context": "Worn by high-level corporate operatives, neural-integrated executives, and augmented elites who move through secured Spire environments. The cultural fusion of adire and knotwork signals cosmopolitan taste and hybrid heritage—a statement of individual identity within corporate uniformity.",
+    "condition_typical": "Pristine, meticulously maintained. The bioluminescent resin glows consistently; the engraving shows no wear. This is a piece kept in perfect condition as both tool and status symbol."
+  },
+  "image_prompt": "Close-up fashion photograph of a polished white-gold wrist cuff with hand-engraved geometric patterns—Yoruba adire fused with Scandinavian knotwork in negative relief. Mounted on the wrist of a dark-skinned model with subtle chrome finger augmentations, pale blue bioluminescent glow framing the inner BCI port. Dramatic side-lighting emphasizes the tessellated geometry and reflective surfaces. Urban neo-noir studio backdrop, dark textured wall, moody blue-white accent lighting. Shallow depth of field. Cyberpunk luxury aesthetic. --ar 2:3 --v 6"
 }

@@ -44,5 +44,25 @@
   "parent_corponation": "",
   "related_entities": [
     "Galvanic Periosteal Fatigue Emitter GPFE-4 'Hairline'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, body-conforming two-piece set in muted charcoal that reads as clinical-professional rather than athletic. The silver sensor traces create a subtle lattice pattern across the torso and limbs, giving the impression of a nervous system mapped onto skin. When idle, it appears almost invisible; during biometric activity, faint bioluminescent pulses along the traces create an eerie, organic rhythm. The set conveys both vulnerability and technological integration — a body made transparent to its own systems.",
+    "fit": "Compression-adjacent but not restrictive; second-skin tightness that allows full range of motion without bagging. High waist on leggings creates a unified silhouette with the long-sleeve top. Designed to nest seamlessly under outerwear or worn as a statement piece.",
+    "primary_material": "Four-way stretch synth-blend with moisture-wicking properties and thermal regulation weave. Matte charcoal finish suppresses reflectivity; sensor traces are photonic-conductive silver filament embedded during manufacture.",
+    "texture": "Smooth, cool to touch, with a barely perceptible grip texture for sensor contact. Seams are flatlock-bonded and imperceptible — the garment feels like a continuous second skin. Sensor nodes have subtle raised profiles when traced by fingertip.",
+    "color_scheme": "Charcoal grey base with hairline silver conductor traces. Accent color: soft bioluminescent blue that pulses during biometric reads. Small branded Nexkin logo at left collarbone in matte silver.",
+    "closures": "Magnetic overlap at left collarbone for BCI node access. Leggings feature a friction-fit waistband with integrated micro-display strip (no visible seams). No traditional closures — entire set is pull-on.",
+    "distinctive_features": [
+      "Photonic-conductive silver sensor traces mapping ribs, forearms, outer thighs",
+      "BCI sync node recessed at left collarbone with magnetic access panel",
+      "Micro-display strip embedded in waistband showing real-time biometrics (heart rate, core temp, hydration flag)",
+      "Flatlock seaming creates seamless integration",
+      "Faint bioluminescent blue pulse during active scanning",
+      "Thermal regulation weave maintains core temperature ±0.3°C"
+    ],
+    "tier_indicator": "Tier 2–3 crossover. Mid-tier corporate wellness product positioned as professional health management, but accessible to affluent working-class individuals. Not luxury, not bargain.",
+    "cultural_context": "Worn by corporate wellness enthusiasts, medical professionals, high-level service workers, and the body-conscious wealthy. Signals trust in Nexkin systems, compliance with health monitoring, and investment in self-optimization. Subtle but visible assertion of technological integration and biometric transparency.",
+    "condition_typical": "Pristine to lightly worn. Sensor traces remain luminous and functional for years. Fabric resists pilling and wear. Micro-display strip may show minor scuffing after extended use. Typically appears 'fresh' because the wearer tends to it carefully — it's a status piece."
+  },
+  "image_prompt": "Fashion photograph of a Nexkin ThermaSync Biometric Base Layer displayed on a sleek dark mannequin with subtle cybernetic augmentation on arms and neck. Close-up detail of silver sensor traces running along ribs and forearms, with soft bioluminescent blue pulses glowing faintly across the chest. Charcoal grey matte fabric under moody neon-tinted studio lighting. Low-angle shot emphasizing the integrated BCI node at collarbone. Dark urban backdrop with holographic Nexkin branding slightly out of focus. Medical-clinical aesthetic with subtle cyberpunk edge. --ar 2:3 --v 6"
 }

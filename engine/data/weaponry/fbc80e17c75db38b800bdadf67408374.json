@@ -42,5 +42,38 @@
     "courier",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Ebele Medina-Quaye",
+    "Ignác Fofana-Tursynbekov",
+    "Kang-Petrov Arms KP-19 'Workhorse'",
+    "Nika Svensson-Kone",
+    "Ringo DV-4 'Courier'",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "TESSERA TN-1 'Cradle'",
+    "Tessera Industries Memory Rounds MR-2 'Recall'",
+    "The Compact"
+  ],
+  "physical_description": {
+    "visual_profile": "A stubby, aggressive wedge — bullpup-proportioned with the action pushed rearward, creating a compressed silhouette. The shortened grip and trimmed barrel give it a blunt, businesslike appearance. Visually reads as 'coiled spring' rather than elegant pistol.",
+    "dimensions": "Length: 16.5 cm | Barrel: 9 cm | Width: 3.2 cm | Height (grip): 9.8 cm",
+    "weight_description": "Deceptively dense — 680 grams feels heavier in hand than its compact profile suggests. The mass is concentrated forward around the barrel assembly, creating a front-heavy balance that demands respect during draw and presentation.",
+    "primary_material": "Steel slide with integral rail system, reinforced polymer lower receiver in high-impact engineering resin, stainless steel trigger group",
+    "finish": "Matte black slide with micro-textured DLC coating; polymer frame in dark gunmetal gray with subtle diamond-knurled sections at pressure points. Minimal gloss — strictly functional.",
+    "color_scheme": "Gunmetal and matte black primary; brushed steel takedown lever and safety selector as accent elements",
+    "grip_texture": "Aggressive — textured polymer with pronounced 45-degree diamond pattern. Sharp enough to cut skin if raked. The abbreviated grip circumference (7.6 cm) forces high hand positioning and a 'claw grip' technique.",
+    "distinctive_features": [
+      "Integrated Picatinny rail under muzzle (laser/light mount)",
+      "Recessed take-down lever with Japanese-inspired clean lines",
+      "Oversized manual safety ambidextrous lever",
+      "Flush-fit magazine design with sharp 8-round profile",
+      "Extended pinky-rest baseplate in glossy black polymer (included in box)",
+      "Minimal sights — low-profile fixed tritium night sights, co-witness ready",
+      "Polygonal barrel visible in slide cutaway",
+      "Crowned muzzle with subtle cosmoline patina typical of factory finish"
+    ],
+    "manufacturer_markings": "KANG-PETROV ARMS etched into left side of slide in angular sans-serif font; model designation 'KP-10C' and caliber '10mm AUTO' stamped on right side just forward of trigger guard; micro-serialization laser-marked inside trigger guard housing",
+    "condition_typical": "Courier models show accelerated wear — holster rub on barrel edges, grip tape residue, scratched rail system from quick-attach optics swaps. Well-maintained but obviously field-used. A few units show scuff marks from being chambered and de-chambered repeatedly during crossing checkpoints."
+  },
+  "image_prompt": "Product photography of a compact bullpup pistol on matte black steel surface, shot from three-quarter angle. Emphasize the shortened 9cm barrel and stubby profile. Tactical gloved hand (black leather, cybernetic wrist cuff visible at cuff edge) cradling frame to show aggressive texture of grip. Dramatic side-lighting (cold tungsten at 45 degrees) casting sharp shadows across slide and rail system. Matte black DLC finish reflecting minimal light, stainless steel accents catching edge highlights. Include extended pinky-rest magazine baseplate positioned nearby. Dark, sterile background suggesting corpo armory or licensed courier kit. Shallow depth of field isolating weapon details. Cyberpunk aesthetic: cold color temperature, high contrast, industrial precision. --ar 3:2 --v 6"
 }

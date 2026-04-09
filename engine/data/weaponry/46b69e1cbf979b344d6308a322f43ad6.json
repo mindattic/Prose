@@ -45,5 +45,34 @@
     "resistance",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Cezar Watanabe-Gyasi",
+    "Crucible Genomics",
+    "Crucible LL-4 'Peacekeeper'",
+    "Kang-Petrov Arms KPA-8 'Solidarity'",
+    "Patient Zero",
+    "The Collective",
+    "The Composite Index"
+  ],
+  "physical_description": {
+    "visual_profile": "A streamlined, modernist take on the traditional Okinawan tonfa—smooth cylindrical shaft with an elegant perpendicular grip jutting from the midpoint. The aerogel composite gives it an almost weightless appearance despite its solid presence, with a subtle matte finish that suggests advanced materials. Balanced and purposeful, designed for community defense rather than corporate intimidation.",
+    "dimensions": "Shaft: 50 cm length × 3.2 cm diameter. Side handle: 12 cm perpendicular grip. Total profile when extended: approximately 50 cm long × 12 cm wide at handle junction.",
+    "weight_description": "Deceptively light in hand—600 grams per unit feels almost insubstantial until grip pressure reveals the dense aerogel-composite construction. Balanced at the handle junction for rapid transitions between extended strikes and close defensive positioning. Distributed weight allows extended manipulation without arm fatigue.",
+    "primary_material": "Aerogel-reinforced carbon composite—a micro-cellular structure that appears as a semi-translucent, slightly off-white composite with subtle grain patterns visible under the surface finish.",
+    "finish": "Matte powder-coat with subtle texture to prevent grip slip. Industrial aesthetic—no chrome or polish. The surface shows intentional wear resistance rather than cosmetic shine. Slight tactile grain pattern across the shaft.",
+    "color_scheme": "Charcoal matte black primary shaft with gunmetal gray side handle. Accent striping in industrial orange runs along the grip for grip identification and visual balance in paired configuration.",
+    "grip_texture": "Knurled rubber overmold with embedded micro-ridges for positive grip security. The handle section is wrapped in pressure-bonded elastomer that grips even in wet conditions or gloved hands. Functional, not luxurious.",
+    "distinctive_features": [
+      "Perpendicular side handle precisely machined for lever mechanics",
+      "Subtle aerogel composite grain visible through semi-translucent finish",
+      "Micro-texture across shaft surface for twirling control",
+      "Slight swelling at impact end—reinforced strike point",
+      "Forensic ID markings along handle in white numerals (serial/pair identification)",
+      "Wear-resistant edge definition at grip junction where repeated blocks will occur"
+    ],
+    "manufacturer_markings": "Forge-Smith Collective circular stamp (Φ symbol integrated with hammer/anvil motif) stamped in white on the grip handle near the junction. Serial number in small white numerals. No branding on shaft—deliberately unmarked for low-profile deployment.",
+    "condition_typical": "Field-ready and well-maintained. In working-class communities, these weapons show signs of legitimate use—minor impact marks on the shaft, scuff patterns on the grip from repeated training contact, accumulated wear at the natural block contact points. Never pristine; always functional."
+  },
+  "image_prompt": "Professional product photography of Forge-Smith Collective Riot Answer tonfa pair arranged in dynamic defensive formation on dark matte surface. Both tonfas positioned to show side-handle perpendicular geometry and shaft extension, one angled upward for block position, one angled downward for strike readiness. Dramatic side-lighting emphasizes the aerogel-composite texture and micro-grain surface details. Close detail shot showing the charcoal-matte finish, gunmetal gray handle overmold, and industrial orange accent striping. Photorealistic materials with subtle tactile grain visible in composite structure. Cyberpunk utilitarian aesthetic—no fantasy elements, pure community defense engineering. Worn but functional appearance. Dark background drops to black. Shot from above-left angle with strong rim lighting on the shafts. Gloved hand optional—bare grip surface visible showing knurled elastomer texture. --ar 3:2 --v 6"
 }

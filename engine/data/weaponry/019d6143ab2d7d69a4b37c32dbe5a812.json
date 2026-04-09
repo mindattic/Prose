@@ -61,5 +61,35 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "GLMZ",
+    "Nenad Vargas-Baffour",
+    "Ouroboros Energy ThermalSink UR-3 District Waste Heat Exchange Network",
+    "Ringo Corponation",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+    "The Quiet Room"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact handheld scanner with clinical precision engineering. At first glance, indistinguishable from legitimate industrial thermal imaging equipment—deliberate design choice for operational cover. The profile is rectilinear and utilitarian, with a squared-off front housing a dark optical aperture. No aggressive aesthetics; instead, calculated anonymity.",
+    "dimensions": "28cm length, 8cm width, 6cm depth. Beam aperture is 12mm diameter at the emitter face.",
+    "weight_description": "Deceptively light at 1.4kg—feels balanced in the palm despite concentrated power density. Hefty enough to feel substantial and engineered, but light enough for prolonged handheld operation without fatigue.",
+    "primary_material": "Medical-grade polymer composite chassis with embedded shielding matrix. Graphite-reinforced sections around the microwave driver cell. Aerogel thermal isolation layers visible through translucent panel seams.",
+    "finish": "Matte charcoal polymer with brushed aluminum heat-sink fins along the dorsal edge. The finish is deliberately unmarked and featureless—corporate anonymity aesthetic. Minimal reflectivity to avoid detection in low-light tactical environments.",
+    "color_scheme": "Charcoal grey primary, with gunmetal accents around the optical aperture and thermal vents. Subtle RingoTransit logo in muted silver on the grip, positioned to look like standard manufacturer identification.",
+    "grip_texture": "Ergonomic rubberized polymer with subtle non-slip texture. Designed for extended handheld use; feels clinical and professional rather than tactical. Grip index finger well suggests trigger-less activation—likely voice or neural interface.",
+    "distinctive_features": [
+      "Dark optical aperture at the front—larger than typical scanner optics to accommodate focused microwave/IR beam geometry",
+      "Thermal vent strips along the upper housing—three linear grilles spaced evenly, suggesting active cooling for the microwave driver",
+      "Subtle LED indicator cluster on the dorsal surface—power, targeting, charge status lights in dim amber/red",
+      "Translucent panel seam running the length of the device—visible aerogel insulation and shielding matrix interior",
+      "Recessed activation stud on the grip—likely neural-linked or capacitive rather than traditional trigger",
+      "Calibration adjustment port on the rear—suggests field-tunable enzyme excitation frequency",
+      "Asymmetrical weight distribution suggesting dense microwave driver cell on the rear two-thirds"
+    ],
+    "manufacturer_markings": "RingoTransit corporate logo in muted silver on the grip face. Serial plate etched into the rear panel—deliberately minimal and resembles legitimate food processing equipment certification marks rather than weapons-grade labeling. Model designation 'HGDP-2' subtle on the optical housing in nano-etched characters.",
+    "condition_typical": "Obsessively maintained. Black market operators keep these in pristine condition—cosmetic wear would compromise the cover story as legitimate industrial equipment. Typical field specimens show zero battle scarring, minimal handling marks. The weapon is meant to pass casual inspection as a food processing thermal scanner."
+  },
+  "image_prompt": "Product photography of a compact handheld thermal scanner-form handheld device, 28cm length, charcoal grey matte polymer with gunmetal heat-sink fins, dark optical aperture front, subtle amber LED indicators on dorsal surface. Held in a gloved hand against dark surface, dramatic side-lighting emphasizing the thermal vent geometry and translucent panel seams revealing internal shielding. Cold clinical atmosphere—medical-industrial aesthetic, no tactical aggression. Cyberpunk GLMZ 2226 aesthetic: high-tech bioweapon disguised as consumer equipment. Sharp focus on the optical aperture and RingoTransit branding. Atmospheric lighting suggesting a sterile technical environment. --ar 3:2 --v 6"
 }

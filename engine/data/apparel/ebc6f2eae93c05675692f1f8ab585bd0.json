@@ -32,5 +32,25 @@
     "load-bearing",
     "MOLLE",
     "utility"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian Y-back harness system that crosses the shoulders and anchors to the waist, creating a industrial-chic silhouette. The suspenders frame the torso and add visual structure to any outfit, emphasizing shoulder breadth and creating a militaristic posture impression.",
+    "fit": "Adjustable strap length accommodates various torso sizes; sits snugly across shoulders without restricting arm movement. Designed to distribute heavy loads evenly across the shoulder girdle rather than concentrating weight at the hip.",
+    "primary_material": "Heavy-gauge elasticated synthetic weave with reinforced nylon webbing at stress points. Clips are injection-molded polycarbonate composite with steel internal springs.",
+    "texture": "Ribbed elastic with a slight grip finish; webbing has a matte, slightly textured surface to prevent slipping. Metal clips have a brushed industrial finish.",
+    "color_scheme": "Matte charcoal gray with black reinforced webbing. Clips finished in gunmetal gray. Optional neon accent stitching in cyan or safety orange on newer models.",
+    "closures": "Spring-loaded polycarbonate clips on both sides that grip fabric securely; adjustable slider mechanisms on each strap for length customization.",
+    "distinctive_features": [
+      "Three MOLLE-compatible attachment points per strap (six total) for modular pouches",
+      "Reinforced stress-stitching at all clip anchors",
+      "Laser-etched Harrow & Finch logo on right shoulder strap",
+      "Load-rated to 15kg per shoulder without deformation",
+      "Reflective piping option for safety wear",
+      "Slightly weathered finish on standard-issue versions; pristine on premium variants"
+    ],
+    "tier_indicator": "Tier 2-3 crossover: Harrow & Finch is a mid-market contractor supplier, but the suspenders have become aspirational street wear among Tier 3 workers and fashion-forward Tier 2 youth.",
+    "cultural_context": "Signals functional competence, working-class authenticity, or industrial aesthetic adoption. Worn by construction workers, security staff, warehouse logistics, and affectation-conscious mid-tier urbanites. Increasingly seen in DIY repair communities and drone technician subcultures.",
+    "condition_typical": "Brand-new pairs show pristine black webbing and polished clips; worn versions develop subtle fraying at stress points, dulled clip finishes, and fabric shine from repeated adjustments. Heavily used models may show storage creases or minor clip discoloration."
+  },
+  "image_prompt": "Cyberpunk fashion photography: angular model wearing Harrow & Finch duty suspenders over a sleek black synth-fabric undershirt, suspenders positioned prominently across shoulders and chest. Close-up detail shot of polycarbonate clip mechanism with MOLLE webbing visible. Moody neon-tinted overhead lighting casting sharp shadows. Dark urban warehouse interior with exposed piping and chain-link fence in soft focus background. Model has subtle chrome shoulder augmentation visible under strap. Emphasize industrial utility and street credibility. Shot from front-angled perspective. --ar 2:3 --v 6"
 }

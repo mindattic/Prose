@@ -46,5 +46,37 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Brighton Arc",
+    "GLMZ",
+    "Irontide Tidal Energy",
+    "TESSERA TC-3 'Crucible'",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "The Shelf",
+    "Vantablack FH-20 'Convoy'",
+    "Zheng-Dao Marrow-Pulse Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A concealed vehicle-mounted weapon system — no visible barrel or traditional gun form. The operational core is a horizontally-arrayed antenna cluster hidden behind the vehicle's front grille, with thick reinforced mounting brackets and a control module barely visible through mesh venting. At rest, completely indistinguishable from standard vehicle infrastructure.",
+    "dimensions": "Antenna array: 120cm width × 45cm height × 35cm depth. Control module: 60cm × 40cm × 30cm. System extends across entire front grille mounting area.",
+    "weight_description": "Substantial and immobile — 80kg total system weight distributed across vehicle frame. The capacitor bank alone creates a noticeable downward bias; designed for permanent installation rather than field repositioning.",
+    "primary_material": "Antenna array: aerospace-grade aluminum alloy with ferrite core elements. Capacitor bank housing: reinforced polymer composite with internal copper winding visible through translucent sections. Control module frame: brushed stainless steel with heat-dissipation fins.",
+    "finish": "Antenna elements: satin silver with anodized aluminum trim. Capacitor housing: matte charcoal polymer with frosted translucent sections revealing copper coil layers beneath. Control module: brushed steel with black powder-coat accent panels. All external surfaces show light oxidation and thermal stress marks.",
+    "color_scheme": "Silver-gray antenna array, charcoal-black housing, stainless steel accents. Status indicator strip in control module glows amber-orange during charging cycle.",
+    "grip_texture": "Not applicable — system is vehicle-mounted and interfaced through vehicle control systems only. Internal heat-sink fins feature knurled grip texture for maintenance access.",
+    "distinctive_features": [
+      "Horizontal antenna array with 7 individual emitter elements spaced precisely 18cm apart",
+      "Frosted polymer windows in capacitor bank revealing nested copper windings and dielectric layers",
+      "Thermal vent grating across top of control module with micro-fins for heat dissipation",
+      "Amber-orange charging indicator strip that cycles intensity during 45-second recharge",
+      "Heavy-gauge mounting brackets with vibration dampeners at all connection points",
+      "Sealed connector ports with military-spec quick-disconnect couplings",
+      "Faint scorch marks and heat discoloration around antenna elements indicating repeated discharge",
+      "Maintenance access panel with biometric lock — small handprint scanner flush with surface"
+    ],
+    "manufacturer_markings": "PureFiber Nutrition corporate logo stamped on control module corner (ironic placement on weapons system). Serial plate mounted on capacitor housing reads: 'CRUCIBLE VE-7 ARC WELDER | MFG 2223 | MILITARY EW ONLY'. Faint factory test markings on antenna mounting brackets.",
+    "condition_typical": "Field-worn but meticulously maintained. Antenna elements show light oxidation from exposure and thermal cycling. Capacitor housing has minor scuff marks from service work. Control module displays signs of heavy use: discolored charge indicator from repeated cycling, reinforced wiring at connector joints suggesting field repairs, thermal stress patterns around vents. Weapon maintains operational readiness despite visible age."
+  },
+  "image_prompt": "Product photograph of vehicle-mounted EMP weapon system: close-up on the concealed antenna array and capacitor bank assembly mounted behind a vehicle front grille, dramatic side-lighting emphasizing metallic silver antenna elements and frosted polymer capacitor housing revealing copper windings. Control module visible with glowing amber charging indicator. Brushed stainless steel mounting brackets and heat-dissipation fins in sharp focus. Dark gunmetal background. Cyberpunk military aesthetic, showing thermal stress marks and field-worn patina. Overhead angle showing 7-element antenna array geometry. Cinematic side-key lighting casting shadows through frosted polymer sections. --ar 3:2 --v 6"
 }

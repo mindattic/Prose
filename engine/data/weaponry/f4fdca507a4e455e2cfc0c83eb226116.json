@@ -43,5 +43,35 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Brecken Yılmaz-Osei",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Nika Svensson-Kone",
+    "Ossuary Arms Memento Mori OA-3 'Wake'",
+    "TESSERA PG-2 'Signature'",
+    "The Riveters' Round"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular rifle with a distinctly medical or surgical aesthetic — all clean lines and purposeful geometry. The receiver appears almost anatomical, with subtle curves suggesting data flow rather than ballistics. The overall impression is of a precision instrument that happens to be lethal.",
+    "dimensions": "Overall length: 94 cm | Barrel length: 51 cm | Width at receiver: 8 cm | Height with sights: 12 cm",
+    "weight_description": "Surprisingly balanced despite its 4.8 kg mass — the weight feels distributed toward the user's natural shoulder pocket. Heavy enough to feel substantial and purposeful, light enough for precision work. The electromagnetic modules in each round add barely perceptible heft to the magazine.",
+    "primary_material": "Aerospace-grade carbon composite frame with brushed titanium alloy receiver and barrel jacket. The magazine housing is reinforced polymer with embedded conductive traces for data transmission.",
+    "finish": "Matte gunmetal gray with brushed titanium accents. The barrel jacket has a faint iridescent sheen from electromagnetic shielding. Receiver bears light surface wear from field use — small scratches that catch light, revealing underlying chrome.",
+    "color_scheme": "Gunmetal gray primary with brushed titanium silver accents. Deep matte black grip sections. Subtle violet bioluminescent trim around the data module chamber, visible only in dim light.",
+    "grip_texture": "Rubberized polymer with fine crosshatch pattern — designed for sweaty or gloved hands. Slightly tacky, almost medical-grade texture. The magazine well has a smooth, almost slippery polymer coating for rapid reloads.",
+    "distinctive_features": [
+      "Transparent data module window on the left receiver side — visible electromagnetic coil inside each chambered round",
+      "Thin violet LED status strip running along the top rail (armed/disarmed/data-loaded indicator)",
+      "Unusual charging handle with integrated touchpad for data programming",
+      "Heat vents along the barrel jacket arranged in precise geometric patterns",
+      "Serialized data encryption plate on the right side of receiver",
+      "Magazine shows individual round status — tiny LEDs marking data payload integrity",
+      "Minimalist iron sights with polarized glass for clarity at range"
+    ],
+    "manufacturer_markings": "Large 'OSSUARY ARMS' serif stamp on left receiver. 'MEMENTO VIVERE' engraved in elegant script below. Model designation 'OA-7' stamped on the barrel jacket. Small circled-Φ symbol (QUANTA currency mark) near the trigger guard — price per round encoding service. Serial number on underside of frame.",
+    "condition_typical": "Well-maintained field weapon — pristine internal mechanisms, minimal corrosion. External finish shows light field wear: small scratches on the stock, faint fingerprint oils on the grip, occasional smudges on the data module window from gloved handling. No battle scarring; operators who field this weapon tend toward precision and preservation."
+  },
+  "image_prompt": "Product photograph of the Ossuary Arms Memento Vivere OA-7 rifle held at a 45-degree angle in a chrome-gloved hand against a dark matte black surface. Dramatic side-lighting emphasizing the brushed titanium receiver and the faint violet bioluminescent trim. The transparent data module window catches light, revealing the electromagnetic coil inside a chambered round. Shallow depth of field with the receiver in sharp focus, background soft. Cyberpunk aesthetic with clinical precision — like a medical device designed to kill. Cool color palette (grays, violets, silvers) with accent highlights on the titanium. Include subtle lens flare on the glass sight. --ar 3:2 --v 6"
 }

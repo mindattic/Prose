@@ -36,5 +36,27 @@
     "MERIDIAN",
     "TESSERA PG-2 'Signature'",
     "Tessera Nexus Town Car"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian one-piece coverall in mid-grey that reads as completely forgettable — the kind of garment that makes eyes slide past the wearer in corporate corridors and industrial zones. Cut loose enough to move freely but structured enough to look professional. Small rectangular 'VAT SYSTEMS / FACILITY SERVICES' patch on left arm in muted blue and grey. Zero flashiness. Designed to be present without being noticed.",
+    "fit": "Relaxed but not baggy; a functional cut that accommodates equipment and movement without excess fabric. Tapered at wrists and ankles with ribbed cuffs. Sits at natural waist with minimal taper through the torso. Allows full range of motion for climbing, reaching, bending.",
+    "primary_material": "Signal-dampening synthetic weave (outer face) bonded to moisture-wicking mesh (inner face). The outer layer has a subtle matte finish that absorbs light rather than reflects it. Durable, industrial-grade composite fibers with embedded conductive properties for EM reduction.",
+    "texture": "Outer surface is smooth and slightly rough to touch — not soft, designed for durability over comfort. Matte finish with minimal sheen. Inner lining is soft and breathable. Seams are flat-stitched and reinforced. Overall impression is tactile and functional, not luxurious.",
+    "color_scheme": "Mid-grey throughout (approximately pantone 11-0604 TCX) with minimal contrast. Patch uses muted blue-grey and charcoal. No reflective trim. Color designed to be neutral in both natural and artificial light, reading as industrial-anonymous regardless of environment.",
+    "closures": "Heavy-duty magnetic snap system down the center front — silent, reliable, no audible click. Wrists and ankles have friction-fit elasticated cuffs with small nylon adjusters. No visible zippers except for a concealed back-panel access hatch (disguised as seam detail).",
+    "distinctive_features": [
+      "Outer signal-dampening weave reduces electromagnetic and thermal signatures",
+      "VAT SYSTEMS / FACILITY SERVICES patch (left arm) — known cover identity in Meridian security circles",
+      "Deep, internally reinforced cargo pockets on thighs and torso",
+      "Mapped cable routing channels along spine and limbs for BCI hardware and subdermal augment power interfaces",
+      "Concealed equipment harness attachment system integrated into back panel",
+      "Magnetic snap closures (silent operation)",
+      "Reinforced panel work across shoulders and forearms",
+      "Comes with forged Meridian Facilities Workers Local union affiliation documentation"
+    ],
+    "tier_indicator": "Tier 3-4 functional — signals working-class infrastructure maintenance, not wealth or status. Deliberately mimics contractor-grade equipment.",
+    "cultural_context": "This is a 'visible invisibility' garment. Wearing it broadcasts 'I have legitimate facility access and you should not think about me.' The VAT Systems cover is burned regularly in security circles but remains effective because maintenance workers are genuinely overlooked. Gray-market availability means non-Vantablack operators also wear it for the signal-dampening properties and access psychology. It's worn by infiltrators, facility contractors, corporate security doing undercover work, and anyone who needs to move through restricted zones without triggering attention.",
+    "condition_typical": "Typically pristine or minimally worn when issued; accumulates subtle dirt, scuff marks, and minor tears with use. Professional stains (hydraulic fluid, coolant residue) are expected and help sell the cover. Worn examples retain the grey colorway but show evidence of actual facility work."
+  },
+  "image_prompt": "Cyberpunk fashion photography: Vantablack Site Assessment Technician Coverall on an androgynous model with visible subdermal augmentations along the collarbone. Mid-grey one-piece uniform with small 'VAT SYSTEMS' patch on left arm. Standing in a dim corporate facility corridor, sodium-vapor lighting casting amber and blue shadows. Reinforced utility pockets visible on torso. Model's posture is deliberately neutral and unmemorable. Dark urban industrial background with concrete and cable tray infrastructure. Moody, desaturated color palette emphasizing the EM-dampening matte finish of the fabric. Product photography style with tactical functionality emphasized over fashion. --ar 2:3 --v 6"
 }

@@ -57,5 +57,27 @@
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "Yusra Ntambwe-Cakić",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively corporate silhouette that conceals tactical infrastructure. Forest green structured jacket reads as mid-management logistics wear at distance, but reverses to charcoal-black for rapid identity shift. Worn over fitted burgundy button-down and straight-cut charcoal trousers. Clean, professional lines that mask extensive gear integration.",
+    "fit": "Tailored and structured through the torso; jacket sits sharp at shoulders with room for holster channels beneath. Shirt fitted but not restrictive; trousers straight-cut with deliberate seam architecture. Overall impression: controlled, ready, deceptively casual.",
+    "primary_material": "Outer jacket: brushed matte synthetic (reversible). Shirt: scanner-resistant silk-synthetic blend. Trousers: charcoal synthetic twill with integrated power-routing strip. Boots: dark brown synthetic leather.",
+    "texture": "Jacket outer: matte, non-reflective. Jacket inner: smooth charcoal. Shirt: subtle weave, slight grip texture. Trousers: flat twill with seam detailing. Boots: polished but scuffed from use.",
+    "color_scheme": "Primary: forest green (outer) / charcoal black (inner reverse). Accent: deep burgundy (shirt), dark brown (boots). Muted, low-visibility palette.",
+    "closures": "Jacket: hidden snap system for collar reconfiguration, primary zip likely concealed. Shirt: standard button-down. Trousers: friction-fit waistband with discreet augmentation access ports. Boots: side zip with blade channel retention.",
+    "distinctive_features": [
+      "Reversible jacket design for rapid identity shift",
+      "Dual holster channels with polymer retention clips on inner breast panels",
+      "Six micro-pockets along inner hem for comm gear and breach tools",
+      "Scanner-resistant silk-synthetic shirt fabric",
+      "Full power-routing strip along left trouser seam (aug-compatible, hip to ankle)",
+      "External power port at boot cuff for chrome-leg compatibility",
+      "Hidden blade channel in right boot shaft",
+      "Left forearm wrist-wrap housing passive comm relay and micro-display strip"
+    ],
+    "tier_indicator": "Tier 3 functional with Tier 2 tactical infrastructure. Reads corporate-legitimate at surface level; actual purpose signals operator-class street professional.",
+    "cultural_context": "Extraction operative, intelligence contractor, or corpo black-ops field agent. Someone who needs plausible deniability and rapid tactical repositioning. The 'second identity before nightfall' aesthetic speaks to high-stakes work in GLMZ ungoverned zones.",
+    "condition_typical": "Pristine outer presentation; inner infrastructure shows minimal wear from professional maintenance. Boots subtly scuffed from field use but kept operationally clean. No visible patching—this is maintained gear, not salvage."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a androgynous operative wearing a reversible forest-green structured jacket over deep burgundy fitted button-down and charcoal straight-cut trousers. Dark brown Chelsea boots with subtle scuffing. Left forearm wrapped with discrete wrist-comm assembly. Model posed three-quarter stance, hand near jacket interior to hint at hidden holster channels. Moody underground parking garage setting with cool LED uplighting in blues and greens. Jacket partially unfolded to show charcoal-black inner lining. Camera angle emphasizes tailored shoulders and subtle tactical aesthetic. Sharp focus on fabric texture and seam detailing. GLMZ corporate-meets-street atmosphere. Professional, alert posture. --ar 2:3 --v 6"
 }

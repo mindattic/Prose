@@ -36,5 +36,25 @@
   ],
   "related_entities": [
     "Stainless Steel"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A pair of small rectangular stainless steel tags suspended on a worn ball chain around the neck. The tags catch light with a dull metallic gleam, hanging at mid-chest. The overall impression is utilitarian, honest, and subtly defiant—a public declaration of preparedness and augmentation status.",
+    "fit": "Loose around the neck on adjustable ball chain; tags rest naturally at chest level. Not form-fitting; designed to be visible and accessible.",
+    "primary_material": "Brushed stainless steel tags; surgical-grade ball chain in nickel or titanium alloy",
+    "texture": "Smooth brushed metal face with slight grip texture from micro-etching on reverse; chain has fine segmented links with subtle wear patina",
+    "color_scheme": "Matte silver-gray steel with darker etched text and QR code on reverse. Chain develops a soft bronze patina over time from body heat and wear.",
+    "closures": "Ball chain held together by simple split ring or crimp connector; no clasp—meant to be permanent or semi-permanent",
+    "distinctive_features": [
+      "Front face stamped with name, blood type, augmentation registry number",
+      "Medical directives engraved in micro-text",
+      "Micro-etched QR code on reverse linking to encrypted medical database",
+      "Slight dents or scratches from impact exposure—common in working conditions",
+      "Faint oxidation marks from skin contact and sweat exposure"
+    ],
+    "tier_indicator": "Tier 3-4 functional; standard among augmented workers and street operatives. Accessible pricing (50-200 Φ) but signals someone with integrated tech and street-smart preparedness.",
+    "tier_indicator_explanation": "Not a luxury item, but essential infrastructure for anyone with augmentations or living in high-risk environments. Wearing them signals you're augmented, medically complex, and operating in spaces where corpo hospitals might not have your records.",
+    "cultural_context": "Worn by augmented workers, military veterans, runners, street medics, anyone with non-standard biology or combat implants. Signals self-awareness about mortality and the need for others to understand your body without you speaking. A quiet cry for help before you need it.",
+    "condition_typical": "Worn and broken-in. Tags show minor dents from impacts, chain develops a patina, edges lose their factory sharpness. The weathered look is intentional and expected—pristine tags suggest someone who hasn't needed them yet."
+  },
+  "image_prompt": "Close-up fashion photography of stainless steel dog tags hanging on a ball chain against the chest of a cyberpunk model with visible neck augmentation ports or subdermal implants. Moody studio lighting casting sharp shadows across brushed metal surfaces, highlighting the micro-etched QR code on the reverse tag catching dim light. Dark urban background with scattered neon glow. Tags rest at natural chest level, catching overhead light. Model's skin shows signs of augmentation integration—faint scarring or interface ports visible at neck base. Cinematic, documentary-style realism. --ar 2:3 --v 6"
 }

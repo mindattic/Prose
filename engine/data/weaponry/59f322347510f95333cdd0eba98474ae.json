@@ -45,5 +45,37 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Lacuna Genomics",
+    "MERIDIAN",
+    "Meridian Munitions MM-4 'Breadwinner'",
+    "Nika Svensson-Kone",
+    "Ringo DV-4 'Courier'",
+    "Slagworks Industrial",
+    "Vespid Dynamics Pheromone Marker Gun PMG-1 'Breadwinner'"
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately compact, almost skeletal assault rifle with aggressive minimalism. The folded profile resembles a submachine gun crossed with a precision instrument—all sharp angles and purposeful geometry. The design emphasizes function over aesthetics; every curve and edge serves concealment or performance.",
+    "dimensions": "380mm overall length (stock folded), 520mm (stock extended); 65mm width across receiver; 120mm height at charging handle. Barrel length 180mm. Suppressor adds 120mm when threaded.",
+    "weight_description": "Lightweight and balanced despite its compact form—feels almost hollow in the hand. Controllable during sustained fire, but front-heavy when suppressed. Noticeably less substantial than full-size rifles, which contributes to its appeal as a 'invisible' weapon.",
+    "primary_material": "Hybrid polymer-aluminum frame with reinforced composite lower receiver and steel barrel. Polymer components are injection-molded reinforced thermoplastic; aluminum is 6061-T6 alloy.",
+    "finish": "Matte charcoal polymer on receiver and handguard; brushed natural aluminum on exposed frame rails and charging handle. Barrel exhibits light oxidation patina suggesting field use. Suppressor is blackened steel with minimal reflectivity.",
+    "color_scheme": "Predominantly matte black and dark charcoal with brushed silver/aluminum accents. No vibrant colors; designed to avoid visual attention.",
+    "grip_texture": "Rubberized, slightly tacky polymer grip with shallow finger grooves. Textured to prevent slipping in wet conditions. The folding stock area is bare aluminum where the grip interface transitions.",
+    "distinctive_features": [
+      "Aggressive folding stock mechanism with visible locking lugs",
+      "Top-mounted Picatinny rail running full length of receiver with integrated BCI aim-assist mount",
+      "Threaded muzzle with distinctive rapid-detach suppressor coupling",
+      "Recessed magazine well showing magazine compatibility indexing marks",
+      "Charging handle positioned far forward to maintain compact profile",
+      "Dual-stage safety selector with engraved icons barely visible under field grime",
+      "Heat-dissipation vents along polymer handguard showing internal ribbing",
+      "Serial number etched microscopically along lower receiver edge",
+      "Faint wear marks on grip from repeated draw and manipulation"
+    ],
+    "manufacturer_markings": "MERIDIAN MUNITIONS block-letter logo stamped on both sides of lower receiver near magazine well. Model designation 'MCR-2' and 'ERRAND' printed in small sans-serif font on receiver rail. 'CASELESS 6MM' stamped near chamber. Meridian's stylized 'M' stamp on suppressor coupling nut.",
+    "condition_typical": "Well-maintained but field-worn. Light scratches on polymer from bag carry, minor oxidation on exposed aluminum, suppressor showing carbon bloom around the muzzle. Weapon appears functional and regularly used rather than safe-queen pristine."
+  },
+  "image_prompt": "Product photography of a futuristic compact folding assault rifle displayed on matte black surface. Show weapon both collapsed and extended configurations. Dramatic side-lighting casting sharp shadows, emphasizing angular geometry and minimalist design. Cyberpunk aesthetic: cold, utilitarian, tactical. Close detail of threaded suppressor coupling and BCI rail system visible. Hand in tactical glove grasping grip to show scale and ergonomics. Matte black polymer and brushed aluminum materials must be clearly visible. 2226 GLMZ tech aesthetic—sleek, field-worn, professional. High-contrast lighting revealing carbon deposits and micro-scratches indicating actual use. --ar 3:2 --v 6"
 }

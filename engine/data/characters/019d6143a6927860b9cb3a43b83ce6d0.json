@@ -212,5 +212,12 @@
     "posture_movement": "Moves with quick, efficient gestures — no wasted motion. Tends toward small, compressed posture when uncertain (hunching shoulders, making themselves smaller). When performing (as distraction artist), shifts entirely: becomes expansive, bouncy, takes up more space. Baseline resting state is alertness; eyes track movement in rooms automatically.",
     "clothing_style": "Tier 4-5 scavenge: oversized hand-me-down hoodie (usually gray or black, Copperhead colors when available), cargo pants with multiple pockets and fraying hems, cheap knock-off trainers with mismatched socks. Layers against cold. Copper-dyed fabric on wrist is the only intentional styling. Grooming is inconsistent — depends on whether they slept at the community house (where water is available) or the stash house. Hygiene matters to them but is secondary to survival."
   },
-  "image_prompt": "13-year-old nonbinary cyberpunk orphan, small compact frame, golden-brown skin, black hair in copper-dyed braids, cosmetic pattern irises with shifting honeycomb geometry in amber and copper, unsettling and algorithmic. Wearing oversized gray hoodie, cargo pants, cheap trainers, copper-dyed fabric knotted around left forearm as gang marker. Alert, wary posture, slight hunch, quick-eyed. Gritty Tier 5 GLMZ setting, industrial Milwaukee street corner, cool fluorescent and sodium-light ambiance, photorealistic with cyberpunk undertones, detailed facial expression caught between wariness and dark humor. --ar 2:3 --v 6"
+  "image_prompt": "13-year-old nonbinary cyberpunk orphan, small compact frame, golden-brown skin, black hair in copper-dyed braids, cosmetic pattern irises with shifting honeycomb geometry in amber and copper, unsettling and algorithmic. Wearing oversized gray hoodie, cargo pants, cheap trainers, copper-dyed fabric knotted around left forearm as gang marker. Alert, wary posture, slight hunch, quick-eyed. Gritty Tier 5 GLMZ setting, industrial Milwaukee street corner, cool fluorescent and sodium-light ambiance, photorealistic with cyberpunk undertones, detailed facial expression caught between wariness and dark humor. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 49.0,
+    "Southeast Asian": 18.2,
+    "Eastern European": 12.6,
+    "East Asian": 11.4,
+    "Indigenous American": 8.8
+  }
 }

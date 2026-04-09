@@ -42,5 +42,26 @@
     "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
     "The Shelf",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, militaristic full-body suit with a utilitarian silhouette that projects controlled authority. The matte-grey colorway absorbs light rather than reflects it, creating a presence of deliberate anonymity. Shoulder panels sit slightly elevated and defined. The overall impression is of someone sealed and isolated, yet ready for immediate action.",
+    "fit": "Precision-tailored compression fit through the torso and limbs, allowing full tactical mobility without excess fabric. The suit hugs the body closely, emphasizing augmentation ports and professional posture. Slightly loose at the wrists and ankles for equipment attachment and seal compatibility.",
+    "primary_material": "Aramid-polysilicate weave—a high-tech ballistic composite with chemical-resistant coating. The outer shell is durable and self-healing under minor damage. Matte finish suppresses reflectivity.",
+    "texture": "Smooth but slightly textured surface with a faint grid pattern from the weave structure. The rebreather collar features fine ribbed segments for seal integrity. Wrist and ankle cuffs have a softer, more flexible texture for comfort under extended wear.",
+    "color_scheme": "Matte industrial grey throughout, with subdued phosphor-reactive grey Arcturus logos on shoulder panels (invisible under normal light, bright silver-green under UV). Chrome accent ports gleam at wrists, spine, and left forearm.",
+    "closures": "Full-length magnetic-snap closure running down the front center, reinforced with friction-fit thermal seals at the neck, wrists, and ankles. The rebreather collar locks via quarter-turn bayonet mechanism.",
+    "distinctive_features": [
+      "Integrated pressurized rebreather collar with 30-minute clean air capacity",
+      "Chrome-lined augmentation interface ports at both wrists, upper spine, and left forearm",
+      "Phosphor-reactive Arcturus branding visible only under UV light",
+      "Sealed inner membrane with micro-ventilation channels",
+      "Reinforced shoulder panels with built-in cable routing for external tools",
+      "Subtle hazard striping on inner collar (visible only when sealed)",
+      "Utility loops along hip and thigh areas for cordless equipment"
+    ],
+    "tier_indicator": "Tier 2-3 corporate issue—expensive enough to signal institutional backing, austere enough to suggest serious operational purpose rather than vanity",
+    "cultural_context": "Wearing this suit announces corporate authority, hazmat containment clearance, or theft of same. In the Shelf and lower districts, it triggers immediate social distance and suspicion. Street runners recognize it as either a corpo asset or a very dangerous scavenger.",
+    "condition_typical": "When properly maintained: pristine, with chrome ports polished and seals intact. When field-worn: minor scuffs and micro-tears patched with bio-adhesive, collar seals showing salt deposits, phosphor logos beginning to fade from UV exposure"
+  },
+  "image_prompt": "A stern augmented figure in a matte-grey Arcturus Hazmat Liaison Suit standing in profile against a rain-slicked urban wall, neon signage reflecting off their chrome wrist ports. Suit seals gleaming under moody blue-violet streetlight, shoulder logos barely visible. Rebreather collar locked tight. Dark cyberpunk warehouse district backdrop, industrial scaffolding and chemical warning signage blurred behind. Dramatic side-lighting emphasizing the suit's compression fit and tactical geometry. --ar 2:3 --v 6"
 }

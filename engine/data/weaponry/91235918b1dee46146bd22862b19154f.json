@@ -45,5 +45,38 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Focadrin",
+    "GLMZ",
+    "MERIDIAN",
+    "Nika Svensson-Kone",
+    "Sixtus Amara-Volkaerts",
+    "The Nearfield",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modern DMR with a distinctly technological aesthetic. The MSM-5 reads as 'smart rifle' at first glance — its profile is clean and purposeful, with integrated sensor clusters breaking up what would otherwise be a conventional rifle silhouette. The receiver and handguard feature subtle illuminated ridges that hint at the computational hardware within. It looks less like a traditional marksman rifle and more like precision instrumentation designed to be lethal.",
+    "dimensions": "Overall length: 1,120mm | Barrel length: 560mm | Height (with integrated scope rail): 95mm | Handguard width: 55mm",
+    "weight_description": "Balanced and surprisingly light at 4.3kg — the weight is distributed forward slightly due to sensor packages in the upper receiver and barrel assembly. Feels premium in hand, not heavy, with excellent muzzle control. The caseless ammunition feed system contributes to the overall reduction in felt mass.",
+    "primary_material": "Titanium-aluminum alloy receiver with polymer modular components. The barrel is hammer-forged chromium-vanadium steel. Handguard is carbon-composite with integrated heat-dissipation channels.",
+    "finish": "Matte gunmetal gray with brushed titanium accents around sensor housings. The barrel features a subtle iridescent thermal-treatment finish that shifts between blue and purple under direct light, indicating precision engineering. All metal surfaces are treated with a corrosion-resistant nano-coating standard in Tier 2+ equipment.",
+    "color_scheme": "Gunmetal gray primary with brushed titanium and charcoal accents. Sensor clusters and status indicators feature deep blue LED accents. The charging handle and magazine well have subtle chrome highlighting.",
+    "grip_texture": "Rubberized ergonomic grip with fine crosshatch texturing for secure purchase even with gloved hands. The handguard features a woven non-slip polymer surface with subtle ridging to guide hand placement. Everything is designed for consistent, controlled positioning.",
+    "distinctive_features": [
+      "Integrated AI sensor cluster atop the receiver — a subtle array of optical, thermal, and wind-speed sensors visible as small black apertures",
+      "Multi-axis gimbal-mounted muzzle sensor assembly for real-time environmental telemetry",
+      "Blue-tinted status LEDs along the left side of the receiver indicating AI computation status and solution lock",
+      "Open-architecture smart-scope interface (rail-mounted, weapon-agnostic) with visible micro-connector ports",
+      "Caseless ammunition feed system with transparent round-count window on the magazine",
+      "Heat-dissipation vents running along the handguard underside",
+      "Meridian Munitions logo etched into the titanium rear receiver cap",
+      "Three-position environmental mode selector (Urban/Rural/Extreme) near the trigger guard",
+      "Subtle etchings on the barrel indicating manufacturing date and ballistic profile designation"
+    ],
+    "manufacturer_markings": "MERIDIAN MUNITIONS laser-etched into the receiver top (forward of the optic rail), with serial number and ballistic calibration data stamped on the titanium rear cap. A small Φ symbol (QUANTA currency marker) appears discretely below the manufacturer name, indicating the weapon's Φ5,500 cost tier. Meridian's precision-engineering hallmark — a small compass rose — is etched near the muzzle brake.",
+    "condition_typical": "Field-ready and well-maintained. Meridian Munitions equipment typically shows minimal wear because the demographic using these weapons (corporate security, defense cooperatives, training squads) maintain their gear meticulously. However, the technological complexity means even light use shows fingerprints and dust on optical sensors — a constant maintenance concern. Professional operators keep the sensor array clean; neglectful ones quickly find accuracy degradation. The weapon itself rarely looks truly 'battle-worn' because the organizations deploying it rotate inventory to avoid degraded computational reliability."
+  },
+  "image_prompt": "Product photography of the Meridian Munitions MSM-5 'Indexer' DMR rifle. Weapon laid horizontally on matte black carbon-composite surface, angled 45 degrees toward dramatic side-lighting from the left. Cool-blue LED status indicators glowing subtly along the receiver. Metallic gunmetal gray and brushed titanium surfaces catching sharp light, emphasizing the precision-instrument aesthetic. Visible sensor cluster atop receiver with fine optical detail. Caseless ammunition magazine in foreground showing transparent round-count window. Environment: sleek, minimalist photography studio with dark background and blue accent lighting, cyberpunk corporate aesthetic. Gloved hand (black tactical glove) positioned at the grip, suggesting professional operator. High contrast, clean, technical product photography style. 4K detail level emphasizing material quality and integrated technology. --ar 3:2 --v 6"
 }

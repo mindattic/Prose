@@ -78,5 +78,25 @@
     "The Pipe Seams Hold (Until They Don't)",
     "The United Workers Front",
     "Variable Impedance Rifle VIR-9 'Switchback'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutal, angular six-track utility vehicle with a utilitarian cab mounted high over a wide, splayed chassis. The design prioritizes function over aesthetics — exposed hydraulic lines, reinforced frame members, and a boxy operator's compartment dominate. The track assemblies are massive and heavily treaded, capable of dramatic stance adjustment that visibly changes the vehicle's footprint. First impression: industrial, purpose-built, intimidating.",
+    "dimensions": "6.1 m length, 2.1–3.4 m width (variable), 2.8 m height. Vehicle-class; occupies significant space in any environment.",
+    "weight_description": "Heavy — approximately 8,500 kg dry weight. Requires dedicated parking and can sink into soft ground if stance is not properly adjusted. Mounted on its own weight-distribution system.",
+    "primary_material": "Welded steel frame with composite reinforcement panels. Tracks are elastomer-steel composite with tungsten carbide tooth inserts. Cab is structural steel with polycarbonate viewport strips.",
+    "finish": "Industrial matte — weathered gray-green outer paneling from factory primer + accumulated road chemical staining. Hydraulic lines are bare steel with zinc plating showing oxidation. Rubber track treads are heavily worn and discolored with soil and chemical residue.",
+    "color_scheme": "Primer gray-green base with worn institutional yellow striping (safety markings on track guards and cab edges). Ironclad logo (white serif type) stenciled on both sides of cab. Rust bloom visible at seam lines and fastener points.",
+    "interface_elements": "Operator cab interior visible through reinforced polycarbonate windows — analog pressure gauges, mechanical lever controls for track steering and stance adjustment, digital display panel mounted on dashboard showing hydraulic pressure and fuel status. External attachment couplings (front/rear) are massive ISO-standard quick-release hydraulic connectors with color-coded fluid lines (red, blue, yellow pressure circuits visible). Mounting points for implements are visibly worn from repeated coupling cycles.",
+    "distinctive_features": [
+      "Six independently-articulated track assemblies with visible piston rods controlling stance width — in splayed position, chassis spreads to nearly 3.4 m, in contracted mode hunches inward",
+      "Dual hydraulic pump housings mounted on engine block, visible on side of vehicle",
+      "Heavy-duty front and rear towing/coupling frame extensions that accept IAS-7 standard implement connectors",
+      "Positive-pressure cab air intake manifold mounted on roof (intake filter visible)",
+      "Tool racks welded to exterior of cab — carbide digging tools, repair kits, spare track segments stored openly",
+      "Worn hydraulic line routing along the frame; several lines show patched sections wrapped in pressure tape"
+    ],
+    "manufacturer_markings": "IRONCLAD AGRISYSTEMS stenciled in white on both sides of cab. Model designation TRAVERSE CULTIVATOR RIG in smaller font below. Regulatory placards (CBRN CLASS IV certification, fuel type, pressure ratings) mounted on cab rear. Serial number stamped into chassis frame. Fleet operators often add their own paint-spray codes on track guards.",
+    "condition_typical": "Well-used. Exterior shows chemical staining (rust spots, discoloration where crop-treatment residue has etched the paint). Track treads are visibly compressed and worn; tread pattern is still aggressive but clearly not new. Hydraulic lines may show minor seeping at coupling points (normal wear). Cab interior is industrial and spartan — no comfort features, heavily stained by operator sweat and soil. The vehicle operates but shows honest wear from frequent deployment in harsh environments."
+  },
+  "image_prompt": "Industrial product photography of a six-tracked utility vehicle in splayed stance, viewed from three-quarter angle on a scarred concrete test ground, dramatic side-lighting revealing piston rods and hydraulic detail, weathered gray-green paint with rust bloom, massive treaded tracks churning at soft ground, cab interior dimly visible through reinforced polycarbonate windows showing mechanical controls, Ironclad Agrisystems decals prominent, cyberpunk industrial aesthetic, moody overcast lighting, shallow depth of field on front coupling attachment, raw metallic and worn rubber textures, --ar 3:2 --v 6"
 }

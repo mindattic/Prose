@@ -38,5 +38,36 @@
     "tier_2",
     "everyday_carry"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "CHROMEWORKS FlexSheath Graphene Spinal Wrap",
+    "Crucible Industries CR-2 'Trapdoor'",
+    "Ezio Kaboré-Malhotra",
+    "Fanta Kato-Adomako",
+    "MERIDIAN",
+    "Makena Johanssen-Diallo",
+    "TESSERA ES-4 'Perimeter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek urban bomber jacket with a minimalist aesthetic that reveals nothing of its electrical nature at first glance. The silhouette is contemporary and fitted but not restrictive—designed to move with the wearer. The outer surface appears identical to high-end casual outerwear, with no visible seams, ports, or indicator lights breaking the clean lines.",
+    "dimensions": "Jacket length: 58 cm (shoulder to hem), sleeve length: 65 cm (shoulder to wrist), chest width: 48 cm (laid flat, medium size). Battery pack in lining: 12 cm × 8 cm × 2 cm",
+    "weight_description": "Substantial but not burdensome—the jacket feels slightly heavier than standard fabric wear due to the integrated conductive grid and battery pack, but weight is evenly distributed across the garment. Approximately 720 grams total, noticeable when lifting but imperceptible during wear.",
+    "primary_material": "High-density synthetic blend with conductive fiber weave. Outer layer is a matte-finish technical polymer-cotton hybrid. Interior lining is soft microfiber with integrated flexible circuit board pathways.",
+    "finish": "Matte charcoal or matte black powder-coated exterior with a subtle texture that suggests technical purpose without screaming 'weapon.' No reflective surfaces—designed to absorb light rather than draw attention.",
+    "color_scheme": "Primary: charcoal gray or deep black. Accents: minimal—only the discrete left-sleeve activation switch (recessed, gunmetal gray) and faint stitching that follows the invisible conductive grid pattern.",
+    "grip_texture": "The outer fabric is smooth to the touch with a fine weave texture—deliberately non-threatening to casual contact. Interior collar and cuffs are soft microfiber. The activation switch is smooth aluminum with a slight concave indent for ergonomic thumb access.",
+    "distinctive_features": [
+      "Recessed activation switch inside left sleeve cuff—requires intentional actuation, not accidental trigger",
+      "Subtle geometric stitching pattern that traces the conductive fiber grid without drawing obvious attention",
+      "Left shoulder subtle Meridian Weartech logo embossed (not printed) in matte finish",
+      "Micro-ventilation panels along sides for breathability, camouflaging the flexible electrode grid beneath",
+      "Removable battery pack accessible via hidden zipper in interior lining—modular design for washing",
+      "Serial number and voltage warning label discreetly placed inside right front pocket",
+      "Cuff design slightly thicker than standard jacket—houses conductive contact zones",
+      "No external charging port—designed for complete electronics removal"
+    ],
+    "manufacturer_markings": "MERIDIAN WEARTECH stamped in minimalist sans-serif font on interior tag behind left shoulder. Model designation 'SW-3' and color code on inner zippered pocket. 'THISTLE' variant marking in small caps on battery pack itself (interior access only). Caution label in four languages on interior right chest.",
+    "condition_typical": "Factory-fresh units show pristine matte finish and crisp stitching. Field-worn examples develop subtle scuffing on cuffs and collar from daily contact, minor creasing at flex points (elbows, shoulders), but the conductive surface remains undamaged since it's protected by the outer synthetic layer. Well-maintained units show no visible wear to the activation switch. Neglected examples may have battery corrosion visible through the interior pocket window."
+  },
+  "image_prompt": "Professional product photography of a charcoal gray Meridian Weartech ShockWeave SW-3 'Thistle' jacket displayed on a featureless dark gunmetal surface, photographed from a three-quarter angle to showcase the fitted silhouette and subtle geometric stitching pattern. The jacket is positioned as if laid flat but with the left sleeve artfully bent to reveal the recessed activation switch inside the cuff—barely visible but technically clear. Dramatic side-lighting from the left creates a sharp highlight along the left shoulder and sleeve, emphasizing the matte finish and the almost-imperceptible conductive fiber weave texture. Cool color temperature (5500K) with deep black background to isolate the garment. A gloved corporate hand (augmented with minimal chrome fingers, Tier 2 aesthetic) emerges from the right edge, thumb poised near the left sleeve's activation switch, suggesting deliberate operation. Include subtle electrical arcs or a faint blue corona around the cuff area to hint at the 45,000-volt system, but keep it understated—this is a tool, not a weapon. Render with hyperrealistic fabric texture and material authenticity. Shot from a slight overhead angle. Include a Meridian Weartech product label card (white, minimalist sans-serif) leaning against the jacket base. Cyberpunk metropolitan aesthetic—clean, corporate, lethal. --ar 3:2 --v 6"
 }

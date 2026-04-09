@@ -56,5 +56,25 @@
     "TESSERA PG-2 'Signature'",
     "Thornback Agrichemical",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, utilitarian hood with pronounced architectural lines. The split-channel seam creates a subtle ridge down the back, giving it an almost vertebral appearance. When worn, it frames the face with sharp angles and projects an unmistakably security-oriented aesthetic. The matte finish absorbs light, making it blend into shadow while the olive undertone catches ambient neon.",
+    "fit": "Snug and conforming around the head and neck without restriction. The hood sits close to the skull to accommodate augmentation profiles underneath. Designed for layering over chrome and internal hardware rather than direct skin contact.",
+    "primary_material": "Laminated ballistic ripstop — a synthetic composite with woven reinforcement visible as subtle grid texture",
+    "texture": "Smooth matte finish with a faint tactile ripple from the ripstop weave. The balaclava liner is softer, brushed on the interior. The flex-rubber grommets at the crown have a slightly rubbery grip. The split-channel seam is bonded and raised, creating a tactile ridge.",
+    "color_scheme": "Matte black base with subdued olive-green undertone that emerges under direct light or neon glow. No visible logos or patches — pure functional minimalism.",
+    "closures": "None — designed as a pull-over hood. Attachment points are magnetic snap receptors at the collar for tactical rig integration, not closure.",
+    "distinctive_features": [
+      "Split-channel rear seam running crown to neck for spinal rig and dorsal chrome accommodation (up to 40mm profile)",
+      "Reinforced horn slots at crown with bonded flex-rubber grommets",
+      "Built-in balaclava liner that rolls down into collar for modular coverage",
+      "Standard tactical plate carrier mounting points at collar",
+      "Laminated ballistic ripstop construction visible as grid texture",
+      "No branding — manufacturer confidence through design alone"
+    ],
+    "tier_indicator": "Tier 3–4 functional. Priced for working security, enforcement, and street operators. Not entry-level Tier 5, but not corpo luxury Tier 1.",
+    "cultural_context": "Signals active security work, street enforcement, or augmentation-heavy lifestyle. Worn by those with spinal rigs, chrome dorsal work, or tactical coordination. Marks the wearer as someone who operates in gray zones—not corporate, not civilian, not underground.",
+    "condition_typical": "Typically appears broken-in but maintained. Light abrasions on the crown from repeated donning; the flex-rubber grommets show minor wear polish. No tears or patches — users replace before that threshold."
+  },
+  "image_prompt": "Close-up fashion shot of a Thornback Tactical Hood worn by an augmented model in profile, revealing the split-channel rear seam and reinforced horn slots. Matte black ripstop catches faint neon glow (cyan and violet). Dark urban rooftop or Circuit Ward alley backdrop. Moody rim lighting emphasizes the hood's architectural geometry and the subtle olive undertone. Model's visible augmentation (chrome neck port, subdermal luminescence) contrasts with the hood's tactical utilitarianism. Sharp focus on texture and seaming. Cinematic, high-contrast cyberpunk aesthetic. --ar 2:3 --v 6"
 }

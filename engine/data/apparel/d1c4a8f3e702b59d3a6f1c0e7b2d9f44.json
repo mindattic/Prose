@@ -45,5 +45,25 @@
     "Eshe Pena-Baah",
     "Marrowvault Cryogenics",
     "Ringo DV-4 'Courier'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian single-strap courier sling with understated elegance, worn diagonally across the torso. The deep slate-blue canvas reads professional and weathered, projecting quiet competence. The orange stress-stitching creates subtle geometric accents at corners that catch light. Proportioned for quick-access efficiency without excessive bulk.",
+    "fit": "Worn cross-body, sits at hip-to-ribcage depending on wearer height. Strap length adjustable via friction-fit aluminum hardware. The bag itself maintains a structured rectangular profile, neither oversized nor cramped.",
+    "primary_material": "Waxed Senegalese cotton canvas — heavyweight, naturally water-resistant, develops rich patina over time. Intentionally sourced, not synthetic knockoff.",
+    "texture": "Smooth waxed surface with visible canvas weave grain. Stress-stitched corners create subtle relief lines. Base shows authentic scuffing and wear — intentional design feature that improves with age.",
+    "color_scheme": "Deep slate-blue primary (nearly charcoal in shadow), contrasted with bright orange thread at stress points. Aluminum hardware in brushed silver-gray. Interior lining likely neutral grey or black.",
+    "closures": "Magnetic flap seal with secondary lockable buckle clip. Friction-fit strap adjustment points. Designed for one-handed operation during courier runs.",
+    "distinctive_features": [
+      "Flat aluminum rail embedded in strap — anti-slice-theft specification",
+      "Padded interior sleeve sized for data-slates (Tier 1-2 compatible formats)",
+      "Rigid-walled cold pocket with insulation — rated for biologic sample transport",
+      "Scuff marks at base from transit platform contact — developing patina is worn as status marker",
+      "Orange stress-stitching at corners — functional reinforcement, aesthetic signature",
+      "Carrow & Fenn maker's mark (likely embossed or woven into canvas)"
+    ],
+    "tier_indicator": "Tier 2-3 crossover. Not corpo-luxury, but above street-tier salvage. Quality speaks to professional courier work, not disposable fashion.",
+    "cultural_context": "Courier, logistics operator, data-runner. Someone who moves through the GLMZ's layered infrastructure — transit hubs, corporate foyers, underground networks. The bag signals reliability and practical skill. A worn Carrow & Fenn Dispatch is a union card.",
+    "condition_typical": "Broken-in authenticity. Fresh bags look pristine, but the appeal grows with honest scuffing at the base. Regulars view patina as proof of active duty — a bag without wear marks looks new, suspicious, or under-utilized."
+  },
+  "image_prompt": "Professional courier in dark tactical wear standing in a neon-lit transit station, Carrow & Fenn Dispatch Sling Pack worn cross-body in deep slate-blue waxed canvas. Close-up detail of the orange stress-stitching at corner seams and the embedded aluminum rail on the strap catching amber station lighting. Scuffed base visible, showing honest wear and patina. Moody cyberpunk aesthetic with industrial concrete, holographic advertisements, and cool blue-to-orange color contrast. Shallow depth of field on the bag hardware. Shot against a dark urban backdrop with overhead LED strips. --ar 2:3 --v 6"
 }

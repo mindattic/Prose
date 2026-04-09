@@ -45,5 +45,37 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Emeka Johansson-Orozco",
+    "Lazarus Pharmaceuticals Splanchnic Triage Automaton",
+    "Myoelectric Seizure Projector MSP-6 'Marionette'",
+    "Nika Svensson-Kone",
+    "Tessera Corponation",
+    "The Nearfield",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, almost organic assault rifle with no visible mechanical protrusions. The Puppeteer presents as a smooth, integrated form factor — more like a precision instrument than traditional small arms. Its silhouette tapers toward the muzzle with subtle ergonomic curves that suggest neural-responsive design rather than mechanical function.",
+    "dimensions": "680mm overall length, 55mm width at receiver, 110mm height with optics rail. Barrel length: 420mm. Magazine well: 35-round capacity requiring deep grip.",
+    "weight_description": "Deceptively light at 3.1kg — feels almost weightless in trained hands, yet the weight distribution is front-heavy due to sealed receiver components and neural interpretation engine housing behind the receiver. Balanced but suggests hidden density.",
+    "primary_material": "Advanced polymer composite (graphene-reinforced bio-polymer) with embedded circuitry layers. Fully sealed aluminum alloy receiver housing neural interpretation engine and power distribution.",
+    "finish": "Matte gunmetal polymer with subtle iridescent shift under angled light — evidence of embedded neural response substrate. Internal geometry visible through semi-translucent polymer panels at receiver sides, showing circuit traces like dark capillaries.",
+    "color_scheme": "Matte charcoal gray primary body with deep blue-black metallic accents at receiver endplate. Thin accent striping in cold cyan along the rail system — indicator of active neural monitoring state.",
+    "grip_texture": "Textured polymer grip with micro-ridged surface for moisture control. The grip itself is subtly contoured and slightly warmer to touch due to embedded neural interface contact points. No traditional trigger guard — instead, a smooth thumb shelf.",
+    "distinctive_features": [
+      "Complete absence of trigger, trigger guard, or manual safety — only a recessed power switch at the receiver tail",
+      "Semi-translucent polymer body panels revealing circuit patterns and component layout",
+      "Integrated BCI contact interface at grip — faint neural feedback haptics visible as micro-texture variation",
+      "Sealed muzzle brake with no visible gas ports — all exhaust managed internally",
+      "Thin status LED strip running along the top rail — cyan when active, amber when idle, red when offline",
+      "No manual charging handle — recipient only accesses magazine well and power switch",
+      "Rail-mounted optics plate with neural targeting overlay compatibility",
+      "Thermal management vents disguised as aesthetic ribbing along the receiver"
+    ],
+    "manufacturer_markings": "SYNAPSE GAMING embossed discretely into the grip panel (requires angle to see). Serial plate mounted inside magazine well — not visible without magazine removal. Small Φ symbol etched above the power switch indicating Tier 4+ pricing point.",
+    "condition_typical": "Immaculate in field deployment — the sealed design eliminates visible wear patterns. Well-used units show faint micro-scratches on polymer and occasional evidence of BCI contact point burnishing on the grip. No mechanical wear, no corrosion, no fouling — maintenance is purely diagnostic through the neural link."
+  },
+  "image_prompt": "Product photography: Tessera TNAS-1 Puppeteer neural assault rifle lying on matte charcoal surface, dramatic side-lighting revealing iridescent polymer finish and internal circuit traces through semi-translucent panels. Cyberpunk aesthetic. Weapon shows no trigger, trigger guard, or manual controls — only smooth polymer curves and a recessed power switch. Cyan LED status strip glowing faintly. Close-up detail of textured grip with neural interface contact points. Clean, pristine condition suggesting sealed mechanism. Neural targeting overlay visible in holographic hint above receiver. Held steady on dark gunmetal background with soft blue accent lighting on the receiver endplate. Ultra-modern, almost organic weapon design. Corporate presentation quality. --ar 3:2 --v 6"
 }

@@ -43,5 +43,40 @@
     "BCI",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Breck Tannen",
+    "Crucible LL-4 'Peacekeeper'",
+    "Lacuna Genomics",
+    "MERIDIAN",
+    "Nika Svensson-Kone",
+    "Stormvein Dynamics PelagicStride DP-3 Aquatic Leg",
+    "Tessera Corponation",
+    "The Pure Hand",
+    "The Riveters' Round"
+  ],
+  "physical_description": {
+    "visual_profile": "A lean, purpose-built precision rifle with a distinctly utilitarian aesthetic. The MAC-1 reads as honest industrial engineering—no chrome flash or designer curves. Long sight plane with a prominent top-mounted rail system. The overall impression is 'tool, not trophy': squared-off receiver, minimal ornamentation, clean lines optimized for function over form.",
+    "dimensions": "Overall length: 118 cm | Barrel length: 61 cm | Magazine well depth: 8 cm | Width across scope rail: 4.2 cm",
+    "weight_description": "Balanced and manageable at 5.2 kg—noticeably lighter than military equivalents, with weight distributed toward the rear for sustained aim. Feels purposeful in the hand without the heft of over-engineered systems.",
+    "primary_material": "Aluminum 6061-T6 receiver with steel barrel. Polymer furniture (furniture, grip, handguard) in industrial-grade polycarb blend rated for thermal cycling and corrosive environments.",
+    "finish": "Matte anodized aluminum with a textured non-reflective coating. Steel barrel shows a dark grey Parkerized finish. Polymer components sport a slightly weathered satin finish—intentionally unmarred to avoid premature patina.",
+    "color_scheme": "Gun-metal grey primary with charcoal-black polymer accents. Stainless steel magazine release and charging handle catch cool highlights. No secondary colors or branding livery.",
+    "grip_texture": "Rubberized polymer grip with crosshatch pattern for all-weather purchase. Charging handle wrapped in thin Cordura tape for tactile feedback without sacrificing speed of action. Foregrip features subtle vertical serrations.",
+    "distinctive_features": [
+      "Top-mounted Picatinny rail spanning full receiver length—accepts standard scopes without proprietary adapters",
+      "BCI neural interface port (small circular receptacle) integrated into rear receiver—flush-mounted, minimalist design",
+      "Micro-guidance fin stabilization markers etched faintly along barrel—visual reference for micro-round compatibility",
+      "Eight-round detachable magazine with witness holes and numbered capacity bands",
+      "Modular gas tube assembly (quick-detach pins) visible on left side—field-serviceable design",
+      "Machined bolt carrier with visible locking lugs—precision-fit tolerances without cosmetic chrome",
+      "Ergonomic magazine release button with subtle raised edge for gloved operation",
+      "Small MERIDIAN ARMORY COLLECTIVE placard—laser-etched, not embossed—on receiver left side"
+    ],
+    "manufacturer_markings": "MERIDIAN ARMORY COLLECTIVE logo (geometric interlocking rings) laser-etched in 8mm height on the left receiver rail. Serial number stamped in 4mm numerals below the logo. Caliber marking (6.5MM MAC SMART) engraved on barrel in clean sans-serif font. No decorative engravings or prestige markings.",
+    "condition_typical": "Field-maintained and well-respected. Finish shows micro-scratches from professional handling but no significant wear. Polymer components may show light UV discoloration from outdoor deployment. Barrel typically exhibits light carbon residue but shows evidence of regular cleaning. Overall impression: 'trusted community tool,' neither pristine nor neglected."
+  },
+  "image_prompt": "Product photography of the Meridian Armory Collective MAC-1 sniper rifle resting on a dark industrial steel surface, angled 45 degrees left-to-right. Dramatic side-lighting from upper left reveals matte anodized aluminum receiver and charcoal polymer furniture. Bright tactical key light on the barrel and bolt carrier group to emphasize precision engineering. BCI neural interface port visible and subtly highlighted. Top-mounted Picatinny rail and detachable magazine in sharp focus. Dark, neutral cyberpunk backdrop—concrete wall texture or brushed black steel. Cool color temperature (5000K) with warm fill light at 30% to suggest tactical readiness without glamor. Shallow depth of field keeps rear sight and BCI port crisp while magazine well softly blurs. Shot from shooter's perspective, suggesting operational deployment in GLMZ municipal security context. --ar 3:2 --v 6"
 }

@@ -43,5 +43,30 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Nika Svensson-Kone"
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively sleek, almost minimalist submachine gun that resembles corporate communication hardware more than a weapon. The Cicada presents a smooth, rounded profile with no aggressive angles or protruding components. At rest, it appears almost like a tablet device or secure communicator rather than a lethal instrument.",
+    "dimensions": "Length: 38cm (stock collapsed), 52cm (stock extended); Width: 6.5cm; Height: 9cm; Barrel length: 15cm",
+    "weight_description": "Light and balanced, approximately 1.5kg. Feels responsive in hand without being insubstantial — designed for quick target acquisition in confined corporate spaces without inducing fatigue during extended shifts.",
+    "primary_material": "Aerospace-grade polymer composite frame with reinforced receiver housing. Internal components utilize steel and aluminum alloys for durability without adding visual bulk.",
+    "finish": "Matte grey with a subtle brushed texture — deliberately non-reflective and tactically neutral. The finish is designed to blend with corporate environments rather than stand out against walls or furniture.",
+    "color_scheme": "Primary: Muted gunmetal grey. Accents: Subtle silver/chrome on mag well and charging interface. BCI module features a small amber LED indicator (inactive when holstered).",
+    "grip_texture": "Textured polymer with recessed grip panels that provide purchase without aggressive knurling. Designed to feel professional and controlled rather than aggressive.",
+    "distinctive_features": [
+      "Integrated BCI smart-link module mounted atop the receiver — flush design with minimal profile",
+      "Magazine well shrouded and nearly invisible when loaded — magazines sit completely internal to the grip profile",
+      "No visible charging handle; charging mechanism is recessed into the right side",
+      "Heat vents running along the top receiver in subtle linear patterns",
+      "Ambidextrous mag release buttons, barely raised above surface",
+      "Custom mounting plate for duty rig integration at rear of frame",
+      "Amber status LED on BCI module (glows only during active target scanning)"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (stylized A in a hexagon) stamped subtly on left side of frame below charging port. Serial number plate on bottom of grip — small, brushed aluminum rectangle with raised numbers. Caliber marking (4.6mm CASELESS) micro-etched above mag well.",
+    "condition_typical": "Corporate security models maintain pristine or near-pristine condition due to strict maintenance protocols and limited field exposure. Duty rig wear may show on rear mounting interface and grip edges from holster friction. No visible battle damage expected; cosmetic wear indicates an actively-used security detail."
+  },
+  "image_prompt": "Product photography of the Arcturus CSW-4 Cicada SMG in corporate security context. Weapon mounted on dark grey matte surface or held in gloved hand against neutral backdrop. Dramatic side-lighting emphasizing the smooth, minimalist profile and matte grey polymer finish. Close-up detail of BCI module with subtle amber LED glow. Overhead angle showing integrated magazine well and concealed charging mechanism. Cyberpunk aesthetic with cool lighting, slight rim-light separation from background. Include subtle AR overlay visual hint to suggest smart-link functionality. Shot in high-resolution product photography style with deep depth of field. --ar 3:2 --v 6"
 }

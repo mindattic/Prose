@@ -50,5 +50,41 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Anatoliy Faye-Nkrumah",
+    "GLMZ",
+    "Kairos",
+    "Kamala Mori-Sefa",
+    "Mireille Fontaine-Obi",
+    "Palladian Construction",
+    "Ringo Corponation",
+    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+    "The Reclamation Assembly",
+    "The Resonance Chamber",
+    "The Resonance Communion",
+    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
+    "Zheng-Dao Marrow-Pulse Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular device resembling a metallic starfish or angular clamp. The form is deliberately geometric — four splayed magnetic prongs radiate from a central cylindrical core, creating a low, aggressive silhouette designed for rapid deployment and secure contact.",
+    "dimensions": "Central body: 12cm diameter, 8cm height. Magnetic prongs extend 6cm outward when deployed. Total footprint when anchored: approximately 24cm across.",
+    "weight_description": "Dense and purposeful — 2.3kg feels substantial in hand but not unwieldy. The weight is concentrated in the core, making it easy to place with precision despite the prong assembly.",
+    "primary_material": "Reinforced titanium-composite alloy frame with hardened steel magnetic contact prongs. Internal capacitor bank housed in a sealed pressure chamber.",
+    "finish": "Matte gunmetal gray with industrial texture to reduce reflectivity. The prongs are brushed steel with faint corrosion patterns suggesting field use.",
+    "color_scheme": "Gunmetal gray primary body with darker charcoal accents around the prong assembly. Minimal color — function over aesthetics.",
+    "grip_texture": "The central body features a deeply textured, rubberized grip section with subtle ridges for positive hold even with gloved hands. Designed for one-handed placement.",
+    "distinctive_features": [
+      "Four splayed magnetic contact prongs with visible contact surfaces",
+      "Central cylindrical body with recessed arming dial (2–30 second adjustment knob)",
+      "Small LED status indicator array (red/amber/green) mounted on the top surface",
+      "Micro-sensor vents along the base — barely visible grilles housing the resonance-detection array",
+      "Faint Halloran Security Consulting logo etched into one prong",
+      "Thermally discolored patches on the prongs from previous deployments",
+      "Subtle manufacturing serial number stamped on the underside of the body"
+    ],
+    "manufacturer_markings": "Halloran Security Consulting logo (a stylized shield within crosshairs) etched subtly into the upper surface of one magnetic prong. Serial number stamped in small font on the underside. No product name visible — designed for anonymity.",
+    "condition_typical": "Well-maintained but battle-worn. The prongs show micro-scratches from repeated contact with concrete and steel. The rubberized grip section is darkened from handling oils and dirt. No major damage, but the device reads as a tool that has seen field deployment — scuffed, functional, and deliberately inconspicuous."
+  },
+  "image_prompt": "Product photography of the Seismic Resonance Charge SRC-2, mounted on brushed steel surface. Close-up angle emphasizing the four splayed magnetic prongs radiating from the central cylindrical body. Dramatic side-lighting creates sharp shadows highlighting the geometric prong geometry and the textured grip section. The device gleams gunmetal gray under cool industrial lighting. Minimal background — dark matte black surface. Slight depth of field blur on the background. The arming dial and LED indicators visible on the top surface catch the light subtly. Close-up detail shows the textured prong contact surfaces and faint Halloran Security branding. Cyberpunk aesthetic: cold, precise, industrial. The device reads as dangerous through form alone — no flash, no decoration, pure function. Shot from a 45-degree angle to emphasize the aggressive splayed prong design. --ar 3:2 --v 6"
 }

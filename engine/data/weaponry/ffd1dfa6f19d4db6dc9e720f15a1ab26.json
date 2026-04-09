@@ -44,5 +44,35 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Automated Street Sweeper",
+    "Kang-Petrov Arms KPS-9 'Rattler'",
+    "MERIDIAN",
+    "Nika Svensson-Kone",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tessera Phased Array Disruptor PAD-3 'Sunspot'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, aggressive assault carbine with a distinctly urban aesthetic. The short profile and forward-swept lines suggest speed and maneuverability in tight spaces. The ported barrel dominates the front end with visible radial ports that give it an almost brutalist appearance. Sleek and purposeful rather than militaristic.",
+    "dimensions": "Overall length: 680mm | Barrel length: 280mm | Width at receiver: 65mm | Height with optics rail: 120mm",
+    "weight_description": "Noticeably light and well-balanced, feels alive in the hand despite 2.6kg mass. The short barrel and compact frame distribute weight forward without creating muzzle heaviness.",
+    "primary_material": "Reinforced polymer composite frame with chrome-molybdenum steel barrel assembly and receiver section. Polymer deliberately chosen over traditional materials for weight reduction and cost optimization.",
+    "finish": "Matte gunmetal gray polymer with brushed stainless steel accents around the barrel ports and receiver. The porting is left with a light machine-mark finish that catches light dramatically.",
+    "color_scheme": "Charcoal matte gray as primary with brushed metallic silver highlighting the barrel porting, trigger guard, and rail sections. Accent touches of electric blue from integrated BCI indicator lights along the upper receiver.",
+    "grip_texture": "Textured polymer grip with subtle ergonomic finger grooves. Slightly aggressive texture provides secure purchase even with gloved hands or synthetic skin. The underside has fine cross-hatching for thumb placement.",
+    "distinctive_features": [
+      "Radial barrel porting with visible machining marks and heat discoloration around ports",
+      "Integrated BCI neural-link interface node mounted above charging handle with small LED status indicators (blue idle, amber processing, red threat-lock)",
+      "Abbreviated 1913 Picatinny rail running full length of receiver",
+      "Aggressive muzzle brake geometry with pronounced porting angles",
+      "Thin, minimalist charging handle recessed into receiver profile",
+      "Streamlined magazine well with witness holes showing round count",
+      "Fine wear marks and micro-scratches on grip and barrel from field use"
+    ],
+    "manufacturer_markings": "MERIDIAN MUNITIONS logo stamped in small lettering above the magazine well in brushed inlay. Model designation 'MUC-6' and serial plate mounted on the lower receiver left side. Small ⌀ currency symbol etched below the safety selector indicating Φ3,400 retail tier.",
+    "condition_typical": "Well-maintained but clearly field-used. Polymer shows micro-scratches and light scuff marks around the grip and trigger guard. Barrel porting displays minimal oxidation and light carbon scoring from regular discharge. Overall impression of a working tool kept in operational condition rather than a showcase piece."
+  },
+  "image_prompt": "Product photography of the Meridian Munitions MUC-6 Crosswalk urban assault carbine. Weapon mounted on dark matte black surface or held in gloved augmented hand with visible neural-link port. Dramatic side-lighting emphasizing the radial barrel porting and brushed metallic highlights. Close detail showing BCI indicator node with subtle electric blue glow. Cyberpunk aesthetic with shallow depth of field. Dark urban background suggesting concrete parking structure. Include reflections on polymer surfaces. Cinematic dramatic lighting that reveals texture and form. --ar 3:2 --v 6"
 }

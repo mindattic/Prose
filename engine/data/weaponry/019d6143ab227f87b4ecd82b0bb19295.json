@@ -53,5 +53,40 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": "Ouroboros Energy"
+  "parent_corponation": "Ouroboros Energy",
+  "related_entities": [
+    "Arcturus Defense Solutions Cryogenic Projector CP-4 'Frostbite'",
+    "Cezar Watanabe-Gyasi",
+    "GLMZ",
+    "Helix Biosystems DermRenew Cellular Renewal Lattice",
+    "Ihaia Nystrom-Keita",
+    "Ilhan Sandstrom-Badu",
+    "Ouroboros Energy",
+    "Ouroboros Energy Corporate Power Supply Contracts",
+    "Patient Zero",
+    "Vantablack-CNX",
+    "Zheng-Dao Marrow-Pulse Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular energy weapon with a pronounced forward-swept barrel shroud. The silhouette suggests surgical precision—all clean lines and minimal ornamentation. The nozzle dominates the profile, appearing almost insectoid with its layered thermal-management fins. At rest, it has an unsettling stillness, like a predator in repose.",
+    "dimensions": "610 mm length overall; barrel shroud extends 180 mm; nozzle diameter 32 mm; width across grip 65 mm; height including top-mounted charge indicator 95 mm",
+    "weight_description": "Surprisingly balanced despite the 3.4 kg loaded mass. The weight sits low in the grip, creating a natural forward-cant. Feels substantial without being unwieldy—a surgeon's tool, not a sledge.",
+    "primary_material": "Brushed titanium-carbon composite chassis with integrated thermal dissipation channels. Nozzle assembly is aerospace-grade aluminum with cryogenic-resistant ceramic liner.",
+    "finish": "Matte charcoal with strategic anodized metallic accents along the expansion shroud. The nozzle section gleams with a faint blue-white iridescence—anti-reflection coating optimized for cryogenic surfaces. Scuff marks and frost residue are inevitable.",
+    "color_scheme": "Dominant: charcoal gray composite. Accents: brushed silver on the piezoelectric barrel shroud, pale blue glow from the thermoelectric window, cyan pressure-gauge ring.",
+    "grip_texture": "Textured polymer with embedded heat-dissipation mesh. Slightly cool to the touch even at rest—passive thermal venting through the grip material. Finger wells are sharply defined, designed for augmented hands as much as organic.",
+    "distinctive_features": [
+      "Piezoelectric vibration module visible as a ribbed cylindrical section running the length of the barrel shroud",
+      "Transparent pressure gauge on the left side showing nitrogen-fluoride reservoir state (cyan liquid level with ice-crystal formations)",
+      "Integrated thermal exhaust vents positioned in a symmetrical grid pattern across the mid-body",
+      "Serpentine Data Centers logo—a coiled circuit motif—etched in silver on the receiver",
+      "Fractional charge-state indicators (LED dots) arranged vertically above the trigger guard",
+      "Nozzle lip features radiating thermal fins with visible micro-erosion from cryogenic bloom",
+      "Dual selector switch: FREEZE/PULSE, mounted behind the trigger",
+      "Faint frost bloom patterns visible on the nozzle shroud in use, leaving ghostly thermal shadows"
+    ],
+    "manufacturer_markings": "Serpentine Data Centers corporate seal (silver) on the left receiver panel, below which runs a stamped serial number. Military variant bears a small OUROBOROS ENERGY subcontractor mark on the barrel shroud. Pressure compliance certifications appear as microscopic etched text on the bottom rail.",
+    "condition_typical": "Military/enforcement variants show controlled wear—ice accumulation on the nozzle, minor scoring on the grip from field handling, discoloration rings around exhaust vents from repeated thermal cycling. Civilian demolition models are cleaner but often bear condensation rings and residual frost patterns. Both types maintain pristine optical clarity on the gauge and indicator windows."
+  },
+  "image_prompt": "A cryogenic pressure emitter CPE-2 'Frostbite' resting on a dark matte-black technical workbench, angled 35 degrees to the right. Dramatic side-lighting from cool blue-white LEDs accentuates the brushed titanium surfaces and reveals fine frost crystals clinging to the nozzle assembly. The pressure gauge glows with cyan liquid and visible ice formations. In the background, subtle thermal distortion ripples above the weapon from residual cold emission. Shot in high-contrast cyberpunk product photography style, emphasizing the surgical precision of the design. A gloved hand (chrome knuckle augmentation visible) steadies the grip, showing the textured polymer detail. Shallow depth of field keeps the nozzle fins in sharp focus. Color palette: charcoal, brushed silver, cyan accents against deep black. --ar 3:2 --v 6"
 }

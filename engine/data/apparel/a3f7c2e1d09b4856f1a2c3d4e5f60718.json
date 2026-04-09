@@ -49,5 +49,28 @@
     "Sorin Ekwensi-Balasanyan",
     "The Undertow",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A militaristic corporate silhouette: broad-shouldered and purposeful. The matte slate-grey jacket dominates, creating a imposing geometric form. Visible tech integration along the spine and wrists signals expensive augmentation compatibility. The overall impression is controlled, modular, and designed for rapid reconfiguration. This is a uniform that says authority and deployment-readiness.",
+    "fit": "Deliberately oversized through the torso to accommodate concealed armor and rig channels, but tapered at the wrists and ankles for equipment lock-down. Compression-grade at the shoulders and forearms. The cargo trousers are cut with articulated panels at the thighs and knees—mobility-first, not aesthetic.",
+    "primary_material": "Ballistic-weave synthetic shell (jacket), graphene-composite tactical vest (under-layer), charcoal ripstop polymer (trousers). All treated for fire resistance and electrical insulation.",
+    "texture": "Matte, slightly grippy surface on the jacket—designed to shed moisture and reduce reflection. The cargo fabric has a subtle grid texture from its ripstop weave. Chrome accents are high-polish, creating stark contrast.",
+    "color_scheme": "Matte slate-grey dominant, charcoal accents, brushed chrome on wrist closures and boot tabs. No bright colors—designed for low visibility in urban or industrial settings.",
+    "closures": "Magnetic snap system on chrome arm cuffs, mag-lock tabs at ankle boot interface, friction-fit hood attachment with quick-release pins. Jacket uses a hybrid magnetic zip-and-velcro system.",
+    "distinctive_features": [
+      "Integrated spinal-rig channel running full dorsal seam (for cybernetic spine augmentation compatibility)",
+      "Helmet-ready collar with reinforced edge binding",
+      "Removable hood with embedded AR visor mount (clips to jacket collar)",
+      "Velcro-swappable corporate insignia patches—modular allegiance indicators",
+      "Chrome-arm cutaway cuffs (reveals wrist augmentation points)",
+      "Knee reinforcement panels (ballistic-grade composite)",
+      "Mag-lock boot interface tabs (connects to compatible tactical boots)",
+      "Low-profile trauma plate carrier concealed beneath jacket",
+      "Detachable tactical vest layer (graphene-weave, visible when jacket is open)"
+    ],
+    "tier_indicator": "Tier 1-2 corporate luxury. This is expensive, bespoke equipment. The modular design and seamless augmentation integration marks the wearer as someone with serious Φ and corpo authorization.",
+    "cultural_context": "CorpSec contractor or private military operator. Wearing this signals you work enforcement for a megacorp (Rheon Systems explicitly), or you're a hired gun with enough credentials to rock corporate-grade kit. The swappable patches indicate contract fluidity—you follow the work, not the loyalty.",
+    "condition_typical": "Pristine or very lightly broken-in. Corporate-issued gear is maintained to spec. Minor scuff marks on the chrome accents, perhaps a faint crease at the spine from rig integration, but otherwise showroom-ready. This is not salvage; this is professional equipment."
+  },
+  "image_prompt": "A sleek cyberpunk operator in full Rheon Systems CorpSec loadout: matte slate-grey ballistic jacket with visible chrome wrist closures, graphene-weave tac-vest partially visible at the chest, articulated charcoal cargo trousers with prominent knee panels. Detachable hood hangs at the collar, AR visor mount catching cold light. Steel-toe Harkon boots, mag-lock tabs gleaming. Model has subtle chrome arm augmentations visible at the wrist cutaways. Posed against a dark industrial backdrop—warehouse or parking structure—with harsh neon accent lighting (cool blues and purples). Moody, professional, lethal. Headshot and full-body variant. --ar 2:3 --v 6"
 }

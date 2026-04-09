@@ -60,5 +60,28 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Seam",
     "Variable Impedance Rifle VIR-9 'Switchback'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian, purpose-built silhouette. Medium grey work jacket over high-vis yellow shirt creates visible layering; charcoal trousers anchor the figure. Broad shoulders from jacket cut, tapered at wrists. Overall impression: competent, authorized, invisible in corporate infrastructure.",
+    "fit": "Relaxed through torso for movement and tool access; articulated at knees and elbows. Jacket slightly oversized to accommodate layering and aug hardware. Trousers sit at natural waist with reinforced thigh for equipment. Designed for function over form.",
+    "primary_material": "Synth-fleece outer shell with water-resistant laminate (jacket); heavy-weight canvas (trousers); oiled composite leather (boots)",
+    "texture": "Jacket surface is matte with subtle ribbed weave; brushed fleece lining visible at cuffs and collar. Canvas has tight, industrial weave with visible stitching. Leather worn smooth at stress points. All materials show controlled wear.",
+    "color_scheme": "Medium grey (jacket), safety yellow (shirt, hard hat accents), charcoal (trousers), dark brown (boots). Black and yellow Axgrip patch on chest. High contrast between grey shell and neon yellow undershirt.",
+    "closures": "Jacket: heavy-duty YKK zipper front, double-stitched. Aug-accommodation channel runs full right sleeve with secondary reinforced zip. Trousers: button and zipper at waist, six external pockets with snap closures. Boots: traditional lace with quick-release side zip assist.",
+    "distinctive_features": [
+      "Full-length augmentation accommodation channel on right sleeve with stress-reinforced seams",
+      "Embroidered contractor patch (Axgrip Facilities Group) on left chest",
+      "BCI sync port relief notch cut into yellow shirt collar",
+      "Articulated knee sections with internal padded kneeling patch",
+      "Hammer loop on right thigh",
+      "Safety glasses clipped to front zipper pull",
+      "Yellow hard hat secured to tool bag strap",
+      "Worn canvas tool bag with patched corner (adhesive synth-fabric repair)",
+      "Composite-toe construction visible at boot tip"
+    ],
+    "tier_indicator": "Tier 3–4 working class. Contractor-issued jacket signals formal employment; self-purchased secondary items from discount workwear outlets signal modest personal income. The aug accommodation indicates augmented status common to infrastructure workers.",
+    "cultural_context": "Building maintenance crew. Corpo-authorized contractor worker in Circuit's M88 district. Anonymity by design—this outfit confers invisible authority in residential and commercial infrastructure. Wearer is trusted to move through locked doors and restricted crawlspaces without question.",
+    "condition_typical": "Broken-in and well-maintained. Jacket shows fading at stress points (cuffs, hem) and minor scuff marks. Tool bag patched at corner indicates active use. Boots scuffed but regularly cleaned. All safety equipment functional. No tears or major damage—maintenance crews must present competent appearance to remain trusted in client buildings."
+  },
+  "image_prompt": "Cyberpunk fashion photography: male model wearing grey synth-fleece work jacket with black-and-yellow Axgrip Facilities patch, safety yellow high-vis undershirt with visible BCI port notch at collar, charcoal heavy-canvas articulated-knee trousers, dark brown oiled-leather composite-toe boots with side zip. Right sleeve aug-accommodation channel visible, zipper running shoulder to cuff. Worn canvas tool bag slung over shoulder, yellow hard hat clipped to strap, safety glasses hanging from jacket zipper pull. Model stands in dimly lit Circuit building interior—exposed conduit, concrete wall, industrial fluorescent overhead. Moody cool-toned lighting casts long shadows. Dust and wear visible on garment surfaces. Stance is casual but alert, someone who belongs here. Dark cyberpunk aesthetic with practical haute-couture workwear focus. --ar 2:3 --v 6"
 }

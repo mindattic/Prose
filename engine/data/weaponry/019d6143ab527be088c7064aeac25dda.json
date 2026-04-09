@@ -40,5 +40,31 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+    "Vuk Jorgensen-Toure",
+    "Yannick Tofauti-Szarvásy"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular pistol-grip device with a pronounced forward-projecting lens assembly. The OD-4 has an aggressive wedge shape that tapers toward its emitter, suggesting focused intensity. Its compact profile belies its specialized function — it reads as a precision instrument rather than a conventional firearm.",
+    "dimensions": "21 cm length, 8 cm grip width, 6 cm height. Lens assembly projects 4 cm forward from body.",
+    "weight_description": "Surprisingly light and balanced — 0.4 kg feels almost insubstantial in the palm, allowing for quick directional tracking without arm fatigue. Weight distribution centers toward the grip.",
+    "primary_material": "Aircraft-grade aluminum alloy frame with polycarbonate lens housing. Thermal dissipation channels integrated into barrel shroud.",
+    "finish": "Satin titanium with matte black polymer grip sections. The lens housing has a faint iridescent coating that shifts from deep purple to cyan under direct light, hinting at optical manipulation.",
+    "color_scheme": "Gunmetal gray and matte black primary, with accent striping in electric blue around the lens bezel. Subtle Lumina Home Automation branding in silver.",
+    "grip_texture": "Rubberized, slightly granular polymer with ergonomic finger grooves. Heat-dissipation design creates subtle ridged patterns that aid grip purchase even with gloved hands.",
+    "distinctive_features": [
+      "Oversized lens assembly with internal multi-axis refracting optics visible through transparent sections",
+      "Three small LED status indicators (power, frequency lock, heat level) arranged vertically on right side",
+      "Cooling vents as radial lines across barrel shroud",
+      "Recessed power actuator with tactile feedback detent",
+      "Frequency calibration dial on left grip — marked with cryptic symbols instead of numbers",
+      "Faint residual heat shimmer visible around lens in thermal imaging"
+    ],
+    "manufacturer_markings": "Lumina Home Automation logomark stamped on left grip. 'TESSERA INDUSTRIES OD-4 STROBE' in small sans-serif text along barrel shroud. Serial number etched below grip. 'LICENSED RIOT CONTROL' warning label on barrel in yellow/black.",
+    "condition_typical": "Well-maintained and calibrated. Lenses kept pristine to preserve beam coherency. Frequent users show micro-scratches on grip from constant recalibration adjustments. Occasional dust deposits in cooling vents from field use in urban environments."
+  },
+  "image_prompt": "Product photography: Tessera Industries OD-4 Strobe optical disruptor held in a gloved hand against dark matte surface. Dramatic side-lighting from upper left creates sharp shadows and highlights the iridescent lens coating in electric blue-to-purple gradient. Close focus on lens assembly showing internal refracting optics. Metallic accents gleam against matte black polymer. Cyberpunk aesthetic with clinical precision. Shot from three-quarter angle. --ar 3:2 --v 6"
 }

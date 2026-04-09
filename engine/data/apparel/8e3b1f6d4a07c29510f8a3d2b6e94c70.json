@@ -46,5 +46,29 @@
     "Marcus Bellamy",
     "Sorin Ekwensi-Balasanyan",
     "Vespid Dynamics Neuroelectric Lance NL-5 'Synapse'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Industrial technician silhouette with tactical functionality—broad-shouldered from reinforced canvas jacket, tapered at waist by integrated tool roll, grounded stance from heavy boots. Asymmetrical equipment distribution creates a utilitarian, purpose-built aesthetic. Visor harness adds a distinctive tech-forward crown element.",
+    "fit": "Relaxed through torso for movement and equipment layering, tapered at wrists and ankles for seal integrity. Trousers sit at natural waist with generous thigh room for crouching. Gloves and boots are precision-fitted for dexterity and safety compliance.",
+    "primary_material": "Heavy charcoal canvas (jacket), treated cotton-synthetic blend (trousers), reinforced neoprene-leather hybrid (gloves), ballistic composite with steel cap (boots)",
+    "texture": "Jacket surface is rough, slightly weathered from workshop use; seams are visibly reinforced with triple-stitch and cable channels. Trousers have subtle ribbed texture in high-wear areas. Gloves are smooth yet grippy with conductive silver webbing visible at fingertips. Boots show scuff marks and anti-static coating sheen.",
+    "color_scheme": "Charcoal gray and gunmetal throughout; accent colors include conductive silver on fingertips and visor frame, matte black rubber at boot soles, minimal reflective piping at cuffs for low-light visibility",
+    "closures": "Jacket: heavy-duty brass YKK zippers with grip tabs; Trousers: reinforced button fly with friction-fit side cargo pockets; Gloves: elastic wrist cinches; Boots: traditional lacing with reinforced eyelets; Tool roll: magnetic snap-closure sections",
+    "distinctive_features": [
+      "Shoulder and forearm aug-channel seams designed for easy access during neural-link installation",
+      "Integrated magnification visor with dual articulating lenses on padded head harness—flips down for precision work",
+      "Ear-cup attachment blocks servo noise (80+ dB dampening)",
+      "Conductive fingertip pads on gloves for live-current testing and precision torque work",
+      "Cable-management loops at hip for hose routing and tool tethering",
+      "Reinforced knee patches (treated ballistic weave) on trousers",
+      "Anti-static sole grounding contact on composite boots",
+      "Double-wrap tool roll at waist holds drivers, calibration keys, and nerve-signal tester",
+      "Triple-stitch reinforcement at all stress points",
+      "Subtle maker's mark 'VANSEN TECHNICAL' woven into jacket collar"
+    ],
+    "tier_indicator": "Tier 3 professional—high-functionality specialist gear suggesting mid-tier corpo employment or skilled independent contractor. Quality construction and integrated tech indicate stable income, not luxury.",
+    "cultural_context": "Wearer is a neural-augmentation technician—corpo biotech sector or high-end clinic environment. Outfit signals expertise, precision, and safety compliance. Suggests someone trusted with invasive augmentation procedures. Persona: methodical, detail-oriented, comfortable with dangerous current and microsurgery.",
+    "condition_typical": "Broken-in and well-maintained. Canvas shows subtle creasing from repeated wear; tool roll edges are softened from use. Gloves show burnished patches from frequent handling. Boots have scuff marks but soles are regularly cleaned for anti-static effectiveness. Overall: professional wear, not pristine but meticulously functional."
+  },
+  "image_prompt": "Professional cyberpunk technician in Vansen AugMount full rig, standing at three-quarter angle before a modular augmentation workstation. Charcoal canvas jacket with visible shoulder aug-channels, visor harness raised, integrated ear-cup visible. Insulated gloves catch cool blue workshop lighting, conductive fingertip pads glinting. Tool roll at waist displays calibrated instruments. Steel-capped boots planted firmly on anti-static mat, slight reflection of overhead diagnostic displays. Dark industrial clinic backdrop—stainless steel and warm task lighting. Model has subtle augmentation scarring visible at neck. Moody, precise, clinical atmosphere. --ar 2:3 --v 6"
 }

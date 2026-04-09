@@ -51,5 +51,28 @@
     "The Bazaar",
     "The Burden Clause",
     "Variable Impedance Rifle VIR-9 'Switchback'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, utilitarian silhouette built for endurance work in harsh weather. The sage-green anorak forms the visible outer shell, creating a neat waist-length profile that reads as both practical and street-authentic. Layered beneath are visible rust-orange funnel-neck thermal and charcoal apron creating a warm color gradient when the anorak is unzipped. The overall impression is professional-adjacent but unmistakably Circuit-tier—function-first, personalization-second.",
+    "fit": "Anorak: slightly relaxed through shoulders to accommodate layering and movement; apron: fitted at the shoulders with slightly loose torso to allow deep pocket loading without bulging; thermal: close-fitting compression cut; cargo trousers: straight-leg with room at the thigh, tapered at ankle; boots: snug ankle support with wide forefoot.",
+    "primary_material": "Anorak: weatherproof synth-wax over ripstop base; apron: heavy-duty charcoal canvas (12+ oz); thermal layer: merino-blend synthetic knit; trousers: treated synth-twill; boots: composite leather/synth-rubber hybrid with reinforced toe.",
+    "texture": "Anorak: smooth waxy exterior with subtle ripple texture, slightly stiff when new, breaking in to supple; apron: rough canvas weave, fades and softens with wear; thermal: fine ribbed knit; trousers: tight diagonal twill weave; boots: matte finish with subtle texture variation from wear.",
+    "color_scheme": "Sage-green anorak (primary), rust-orange thermal (mid-layer peek), charcoal canvas apron, dark olive cargo trousers, black/tan boots. Accent colors from personalization: hand-embroidered stall number in thread color of vendor's choice, painted pocket details, clip-on charms.",
+    "closures": "Anorak: full front zipper with toggle drawstring hood adjustment, magnetic chest pocket flap; apron: cross-back buckle straps (often widened for augmentation), side snap closures on front pockets; thermal: pullover (no closure); trousers: friction-fit waistband with reinforced belt loops; boots: side zip with secondary lace closure.",
+    "distinctive_features": [
+      "Embroidered circuit market registry stall number on left shoulder with hand-added decorative border",
+      "Transparent ID-sleeve pocket on apron bib holding commerce license",
+      "Deep front pockets on apron (multiple, tool-rated stitching)",
+      "Knee-reinforced cargo trousers for kneeling work",
+      "Magnetic chest pocket on anorak (weatherproof seal)",
+      "Toggle drawstring hood cinch",
+      "Oil-resistant sole on Ashgrove work boots",
+      "Hand-sewn modifications for gene-compatible augmentations (widened straps, enlarged hood)",
+      "Personalization markers: painted pockets, charms clipped to zipper pulls, laminated recipe cards"
+    ],
+    "tier_indicator": "Tier 3–4 (working class, street-licensed). Functional gear purchased from mid-range street brands and market suppliers. Not cheap, not aspirational—reliable equipment for people who spend 10-hour shifts in weather.",
+    "cultural_context": "Circuit vendor, market operator, mobile cart worker. Wearing this announces you're licensed, credentialed, and actively working the street economy. The personalized touches (embroidery, charms, painted details) signal pride in craft and community identity—this isn't corporate uniform, it's earned working kit.",
+    "condition_typical": "Well-broken-in. Anorak shows faded patches at elbows and shoulders from repeated pack-carrying. Apron has paint stains, small visible repairs in pocket seams, patina from seasons of spill and wash. Trousers show worn spots at knees. Boots are scuffed but maintained. The personalization markers are fresh in contrast—recently added or refreshed charms, newer paint on pockets. Overall: clean enough for regulatory compliance, weathered enough to tell a story of actual use."
+  },
+  "image_prompt": "A Circuit-level street vendor in full layering kit, shot from mid-thigh up against a backdrop of rain-slicked elevated walkway and neon-lit food cart silhouettes. Sage-green synth-wax anorak unzipped slightly to reveal rust-orange thermal and charcoal apron beneath. Close detail on embroidered stall number on left shoulder with hand-added decorative border in contrasting thread. Soft neon glow from below (food cart lights, wet pavement reflections) casting shadows across the apron's painted pocket detailing and clipped charms. Vendor's hands visible, resting on apron pockets laden with tools and cards. Moody, cool-toned lighting with warm accent from personal details. Dreary Great Lakes weather suggested by mist and grey sky. --ar 2:3 --v 6"
 }

@@ -262,5 +262,12 @@
     "posture_movement": "Moves with economical precision; stands with weight balanced, minimal wasted motion. Hands are often still or moving in slow, deliberate gestures. Maintains unusual eye contact — the geneware patterns make their gaze feel analytical even when relaxed. Overall impression is of someone listening to something others can't hear.",
     "clothing_style": "Expensive minimalism: fitted black or deep indigo technical fabrics, usually with subtle tonal seaming. Layered tanks and cropped overshirts in natural fibers (linen, silk-synthetic blend). Tier 2 level pieces from boutique makers — the kind that cost Φ800 but look like they cost Φ80. No visible branding. Favors jewelry that's either completely absent or precisely minimal (single ring, sometimes a thin bracelet with embedded haptic feedback). In evening/DJ context, switches to sleeker silhouettes but maintains the same color palette and price-point philosophy."
   },
-  "image_prompt": "Portrait of a slender, angular nonbinary person with dark amber skin and a voluminous natural hairstyle threaded with iridescent filaments shifting from indigo to copper. Their eyes are striking: deep brown with geometric concentric geneware patterns in silver and gold. They wear expensive, minimalist black technical clothing with subtle tonal seaming. The background is softly out of focus, cool-toned, suggesting a calibrated neural interface clinic. Soft, directional lighting with no harsh shadows, warm key light from the left. Their expression is composed and watchful, hands visible with precise posture suggesting technical skill. Cyberpunk, near-future luxury, clinical atmosphere with organic warmth. Hyperrealistic. --ar 2:3 --v 6"
+  "image_prompt": "Portrait of a slender, angular nonbinary person with dark amber skin and a voluminous natural hairstyle threaded with iridescent filaments shifting from indigo to copper. Their eyes are striking: deep brown with geometric concentric geneware patterns in silver and gold. They wear expensive, minimalist black technical clothing with subtle tonal seaming. The background is softly out of focus, cool-toned, suggesting a calibrated neural interface clinic. Soft, directional lighting with no harsh shadows, warm key light from the left. Their expression is composed and watchful, hands visible with precise posture suggesting technical skill. Cyberpunk, near-future luxury, clinical atmosphere with organic warmth. Hyperrealistic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 35.8,
+    "Eastern European": 23.0,
+    "Northern European": 21.8,
+    "Sub-Saharan African": 11.7,
+    "Hispanic/Latin American": 7.7
+  }
 }

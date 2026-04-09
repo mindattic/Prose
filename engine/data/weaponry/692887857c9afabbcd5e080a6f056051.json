@@ -45,5 +45,40 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Director Harlan Cross",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Nika Svensson-Kone",
+    "Ringo PD-1 'Citizen'",
+    "Slagworks Industrial",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "Tessera Industries Data Spike DS-1 'Upload'",
+    "The Warden",
+    "Warden"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular assault rifle with a distinctly corporate aesthetic. The SAR-3 Warden presents itself as a tool of institutional authority—squared-off receiver, integrated upper rail system, and a prominent forward-mounted sensor array that gives it an almost insectoid appearance. The design prioritizes ergonomic precision over aggressive styling.",
+    "dimensions": "Overall length: 94 cm | Barrel length: 41 cm | Receiver width: 6.5 cm | Height with rail mounts: 12 cm",
+    "weight_description": "Balanced and manageable at 3.3 kg—designed for extended urban patrols without fatigue. The weight distribution favors the grip, making it feel stable in close-quarters scenarios typical of dense metropolitan environments.",
+    "primary_material": "Aerospace-grade polymer composite chassis with reinforced aluminum alloy receiver sections. The barrel is hardened steel with port venting.",
+    "finish": "Matte anthracite polymer body with brushed aluminum rail sections. Surfaces show a subtle anti-reflective treatment to minimize tactical glint.",
+    "color_scheme": "Gunmetal gray primary with anthracite accents. Arcturus corporate blue accent piping along the receiver and grip. Raised titanium-colored sensor modules.",
+    "grip_texture": "Textured polymer grip with integrated palm swell. The controls feature haptic feedback zones—raised ridges indicate safety and fire-mode selectors. Rubberized trigger guard.",
+    "distinctive_features": [
+      "Integrated IFF transponder module mounted above the receiver—spherical sensor with faint blue optical indicator",
+      "Forward-mounted target acquisition pod with multi-spectrum lens array",
+      "Digital readout display set into the left side of the upper receiver (small monochrome LCD showing round count, audit status, compliance lock indicator)",
+      "Ported barrel with enlarged venting ports visible from the side",
+      "Compliance override button—recessed and color-coded red—positioned at the lower receiver",
+      "GPS module antenna protruding slightly from the charging handle assembly",
+      "Serial plate stamped with 'AUDIT LOGGING ACTIVE' warning in Arcturus branding font",
+      "Ambidextrous safety lever with three detents: SAFE, FIRE, AUDIT-HOLD"
+    ],
+    "manufacturer_markings": "Large Arcturus Defense Solutions logo embossed on the left side of the receiver. Model designation 'SAR-3 WARDEN' stamped in corporate sans-serif font beneath the rail. Serial number and compliance certification visible on a polished aluminum name plate riveted to the lower receiver. Subtle repeated text reading 'EVERY ROUND LOGGED' etched into the grip.",
+    "condition_typical": "Corporate police weapons are meticulously maintained—expect pristine condition with no visible wear, though field units show minor surface scratches from duty gear contact. The sensor array is consistently clean and protected. No modifications permitted by operators; compliance violations trigger automatic deactivation and retrieval."
+  },
+  "image_prompt": "Product photograph of a sleek cyberpunk tactical rifle (SAR-3 Warden assault rifle) lying across a dark graphite surface, angled 45 degrees toward camera. Overhead dramatic side-lighting creates sharp shadows across the matte anthracite polymer chassis and brushed aluminum rails. Blue LED indicator on the integrated sensor module glows softly. Close-up reveals the integrated IFF transponder pod and digital readout display showing glowing green text. Corporate Arcturus logos visible on the receiver. Background is deep charcoal with subtle grid pattern suggesting a corporate armory. Moody cyberpunk aesthetic, cold color temperature with accent blue lighting. Shallow depth of field focusing on the trigger assembly and compliance override button. --ar 3:2 --v 6"
 }

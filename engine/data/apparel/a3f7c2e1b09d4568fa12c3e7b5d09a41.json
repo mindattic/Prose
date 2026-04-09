@@ -48,5 +48,26 @@
     "LifeWire DermaCast Programmable Skin Display",
     "PulsePoint AuraGland Pheromone Synthesis Node",
     "The Bleach Boys"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian lifeline wrapped around the hips — industrial and deliberately mismatched. Wide enough to anchor multiple tools and salvage, sits slung low and loose. Projects competence born from necessity rather than aesthetics.",
+    "fit": "Loose and adjustable, meant to cinch over layered clothing. The hook closure allows infinite positioning. Settles naturally at hip level, weight distributed across the torso to prevent strain.",
+    "primary_material": "Heavy industrial canvas webbing, reclaimed and UV-degraded. Reinforced at stress points with bare copper wire, hand-stitched in crude triple-pass patterns.",
+    "texture": "Rough and weathered — the canvas is stiff but softened by years of sweat and dirt. Frayed edges are sealed with scorch marks from heat-gun work. Copper wire is oxidized green in places, shiny in others where it's been handled.",
+    "color_scheme": "Mottled grey-brown base with irregular acid-bleach streaks creating abstract discoloration. Aged copper wire adds verdigris accents. No dyes — all patina is from use and environmental exposure.",
+    "closures": "Heavy salvaged dock rigging hook, bent slightly from impact damage. No buckle. The hook threads through a reinforced eyelet loop and locks via friction and weight.",
+    "distinctive_features": [
+      "Three canvas pouches of visibly different ages and wear patterns",
+      "Mismatched D-rings bolted on at random intervals, some bent, some straight",
+      "Bent carabiner clipped to one side loop — functional but compromised",
+      "Heat-sealed frayed edges throughout, some sealing degraded and re-sealed",
+      "Visible repair stitching in different thread colors where patches overlap",
+      "Copper wire reinforcement at all stress points — DIY structural engineering",
+      "Faint scorch marks and chemical burn marks across the surface"
+    ],
+    "tier_indicator": "Tier 5 salvage economy — entirely self-made from reclaimed industrial materials. Zero corporate branding. Zero aesthetic intentionality.",
+    "cultural_context": "Scavenger, salvage worker, sub-grade street dweller. Someone who lives by what they can carry and repair. The belt speaks to survival in the ungoverned zones and barter districts. Worn by people who cannot afford manufactured gear and do not trust corporate supply chains.",
+    "condition_typical": "Perpetually weathered and actively in-use. New repairs are constant — patches overlap older patches. Heat-sealed edges continue to degrade. The hook shows fresh dents. Wearer expects it to fail and keeps spare cord nearby."
+  },
+  "image_prompt": "Patchline Scavenger's Utility Belt on a lean, weathered model in a rain-slicked GLMZ alley, neon graffiti bleeding through wet concrete backdrop. Belt cinched low over torn synth-wool coat, pouches heavy with undefined salvage. Close-up detail shots showing the oxidized copper wire, mismatched D-rings, and bent carabiner. Moody teal-and-amber industrial lighting casting hard shadows across the canvas weave. Slight film grain, harsh contrast. Model's hands visible, calloused and augmented with subcutaneous circuitry scars. --ar 2:3 --v 6"
 }

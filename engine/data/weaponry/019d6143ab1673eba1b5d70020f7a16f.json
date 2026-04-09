@@ -56,5 +56,45 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Axiom Systems Perimeter Denial System PDS-4 'Cordon'",
+    "Charnel Propulsion",
+    "Ekundayo Vásárhelyi-Nkemdirim",
+    "GLMZ",
+    "Glenville Sound",
+    "Lazarus APC-2 'Locust'",
+    "Lowline Press",
+    "Nenad Vargas-Baffour",
+    "NeuralPath HarmonicRoot Perfect Pitch Mod",
+    "Stormvein Dynamics PelagicStride DP-3 Aquatic Leg",
+    "TESSERA PG-2 'Signature'",
+    "TESSERA TN-1 'Cradle'",
+    "The I-75 Spine",
+    "The Nearfield",
+    "The Swarm"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, utilitarian hardcase canister resembling a flattened ammunition box or tactical munitions container. The exterior presents a deliberately sterile, industrial appearance—no chrome, no aggressive aesthetics. At rest, it is inert and unremarkable; only the faint geometric scarring on the lid hints at internal complexity.",
+    "dimensions": "310mm length × 210mm width × 90mm height (deployment chassis); individual micro-units measure 22mm × 14mm × 8mm",
+    "weight_description": "Deceptively light for its footprint—the canister feels almost insubstantial when held, creating cognitive dissonance with its lethality. The micro-units themselves are negligible in hand; the colony's mass is distributed across hundreds of bodies rather than concentrated in a single frame.",
+    "primary_material": "Carbon-composite shell for micro-units; deployment canister fabricated from reinforced polymer with internal titanium latch fixtures",
+    "finish": "Matte battleship gray with subtle texture to reduce glare and fingerprints. Micro-unit shells exhibit a faint iridescent sheen under direct light—a byproduct of carbon-composite layering—creating an almost organic luster.",
+    "color_scheme": "Gunmetal gray primary with matte black interior padding visible through venting apertures. Accent striping in industrial orange marks power-state indicators and IFF module sockets (when present).",
+    "grip_texture": "Deployment canister features recessed grip wells molded into polymer—designed for gloved hands, slightly tacky rubberized coating. Individual micro-units are smooth, almost slick to the touch, with barely perceptible ribbing where propulsion fins articulate.",
+    "distinctive_features": [
+      "Hinged lid with three-point pressure-release latches that emit a sharp *clack* when disengaged",
+      "Faint LED aperture (orange when armed, dark when dormant) recessed into canister corner",
+      "Internal mesh of dimpled foam padding engineered to suppress vibration during transport",
+      "Hairline gaps between micro-unit clusters visible only under magnification—evidence of the hive-logic segregation architecture",
+      "Piezoelectric fin ribbing on each micro-unit catches light in subtle striations, creating a 'scaled' appearance in mass",
+      "IFF module socket (rectangular, keyed) on canister flank—often empty on bootleg units, leaving an obvious void"
+    ],
+    "manufacturer_markings": "Ironside Armaments corporate seal—a stylized iron fist clasping a circuit node—embossed (not stamped) on canister lid. Serial number laser-etched in 4mm type below seal. Production date cipher molded into rear panel. Warning text in Meridian Standard: 'AUTONOMOUS MUNITION — HAZARDOUS — PROHIBITED UNDER MAWC ART. 9' in 2mm white stencil.",
+    "condition_typical": "Field units show accelerated wear: scuffed polymer, scratched lid, occasional denting at corners from transport in tactical gear. Electronics remain pristine—the active components are sealed and shielded. Battle-deployed units often display burn scoring on the lid from piezoelectric discharge residue. Bootleg variants exhibit crude modifications: hand-scratched serial numbers, missing IFF sockets, jury-rigged power switches."
+  },
+  "image_prompt": "Product photography of the Autonomous Swarm Dispersal Unit ASDU-4 'Locust' deployment canister: a compact hardcase box photographed from a three-quarter overhead angle on a dark tactical mat. The canister is matte gunmetal gray with subtle orange accent stripes, hinged lid closed and latched. Dramatic side-lighting from the left reveals the textured carbon-composite surface and the faint iridescent micro-unit shells visible through translucent ventilation ports. A single gloved hand (black tactical glove, synthetic leather) rests against the canister corner, emphasizing scale. Background shows out-of-focus urban concrete and steel. Atmosphere: clinical, military-industrial, cyberpunk. The image conveys lethal precision and cold institutional authority. Bokeh subtle and cool-toned. --ar 3:2 --v 6"
 }

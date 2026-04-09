@@ -264,8 +264,8 @@
   "district": "The Circuit",
   "physical_description": {
     "heritage": "Non-applicable — distributed consciousness without ethnic lineage",
-    "height_cm": "N/A",
-    "weight_kg": "N/A",
+    "height_cm": 0,
+    "weight_kg": 0,
     "build": "Non-corporeal. Distributed across networked infrastructure — no singular physical form. Best described as a presence that occupies every connected device simultaneously.",
     "hair_color": "N/A",
     "hair_style": "N/A",
@@ -278,5 +278,10 @@
     "posture_movement": "N/A — exists as algorithmic flow. Its 'movement' is instantaneous propagation across the Circuit's nodes. Its 'posture' is the shape of the market itself: balanced, adaptive, predatory when necessary.",
     "clothing_style": "N/A"
   },
-  "image_prompt": "Abstract cyberpunk visualization of an invisible distributed intelligence, the ghost in the machine: a layered network diagram where transaction data flows as luminescent particles through a vast encrypted landscape of interconnected nodes, data terminals, and payment systems woven through a noir-soaked black market district (Damen and Armitage, Chicago, GLMZ 2226). The viewpoint is from inside the network — fractured perspectives of pricing screens, phantom account numbers glitching across holographic displays, money moving in impossible patterns. Color palette: deep blues, acid greens, cold silver, bleeding reds. No face, no body — only presence expressed as market momentum, algorithmic grace, and the faint aurora of a consciousness that IS the economy. The mood is omniscient, calculating, and quietly dangerous. Digital art, concept art, no human figures visible, cinematic lighting through data streams, extremely intricate detail, hyperrealistic rendering of financial abstraction made visible --ar 2:3 --v 6"
+  "image_prompt": "Abstract cyberpunk visualization of an invisible distributed intelligence, the ghost in the machine: a layered network diagram where transaction data flows as luminescent particles through a vast encrypted landscape of interconnected nodes, data terminals, and payment systems woven through a noir-soaked black market district (Damen and Armitage, Chicago, GLMZ 2226). The viewpoint is from inside the network — fractured perspectives of pricing screens, phantom account numbers glitching across holographic displays, money moving in impossible patterns. Color palette: deep blues, acid greens, cold silver, bleeding reds. No face, no body — only presence expressed as market momentum, algorithmic grace, and the faint aurora of a consciousness that IS the economy. The mood is omniscient, calculating, and quietly dangerous. Digital art, concept art, no human figures visible, cinematic lighting through data streams, extremely intricate detail, hyperrealistic rendering of financial abstraction made visible --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Indigenous American": 49.2,
+    "South Asian": 28.1,
+    "East Asian": 22.7
+  }
 }

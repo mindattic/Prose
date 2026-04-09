@@ -55,5 +55,41 @@
     "energy",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Lebedev-Tutu",
+    "Bathysphere Networks",
+    "Biometric Denial Charge BDC-1",
+    "Free Assembly",
+    "GLMZ",
+    "Helix Biosystems",
+    "Lacuna Genomics",
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "Phased Acoustic Neurostimulator PAN-3 'Tinnitus'",
+    "TESSERA PG-2 'Signature'",
+    "Zheng-Dao Marrow-Pulse Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, clinical carbine that resembles advanced medical imaging equipment more than a conventional firearm. The barrel assembly dominates the weapon's profile, featuring a distinctive bulbous parabolic focusing chamber that tapers toward a smooth, featureless muzzle. The overall aesthetic is precisely engineered and dehumanizing — all curves and optimization with no aggressive edges.",
+    "dimensions": "Carbine length: 68 cm. Barrel with focusing array: 32 cm. Focusing chamber diameter: 8 cm at widest point. Height across receiver: 6 cm.",
+    "weight_description": "Deceptively light for its size — 3.1 kg distributed across a well-balanced frame. Feels almost insubstantial, like holding precision laboratory equipment rather than a weapon. No felt recoil due to ultrasonic firing mechanism.",
+    "primary_material": "Aerospace-grade titanium-aluminum composite chassis. Parabolic focusing array is biocompatible acoustic ceramic with embedded transducer lattice.",
+    "finish": "Surgical grade — matte gunmetal gray with brushed satin accents. The ceramic focusing chamber has a subtle pearlescent quality under certain light, faintly iridescent like opalescent medical glass.",
+    "color_scheme": "Dominant matte gunmetal gray. Accent striping in clinical white along the receiver rail. The ceramic focusing array shows faint iridescent blue-gray undertones. A small crimson power indicator sits near the grip.",
+    "grip_texture": "Textured medical-grade thermoplastic polymer — not rubberized, but slightly grippy and temperature-inert. Ergonomic contours suggest precision handling rather than combat muscle memory.",
+    "distinctive_features": [
+      "Parabolic ceramic focusing chamber dominates barrel — geometric precision, no industrial roughness",
+      "Featureless muzzle with no visible aperture (ultrasonic emission is silent and invisible)",
+      "Integrated digital readout display (3cm screen) on left receiver showing firing profile, pulse parameters, and remaining cell charge",
+      "Four recessed profile selector buttons (Aphasia, Motor Drop, Blank, Archive) with faint LED backlighting — currently dark",
+      "Proprietary Helix DAT-cell contact points visible on right side beneath the chamber — gold-plated conductors",
+      "Minimal rail system — only a top-mounted optical guide for targeting (sight is digital, not magnified)",
+      "No cooling vents; surgical-sealed construction suggests internal heat dissipation",
+      "Subtle HELIX BIOSYSTEMS logo engraved in microscopic text on the focusing chamber rim",
+      "Wear pattern: typically pristine; any field use shows zero carbon scoring, instead showing faint thermal stress marks on the ceramic"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo (interlocked DNA helix) laser-engraved in 2mm letters on the left receiver flat. Serial number etched in microscopic font on the ceramic focusing array rim. Proprietary military classification markings in red on the underside of the receiver.",
+    "condition_typical": "Maintained in forensic cleanliness. Field weapons show microscopic thermal stress discoloration on the ceramic focusing array but remain otherwise pristine. The weapon is too specialized and expensive for battle-wear; it is either immaculate or confiscated/destroyed."
+  },
+  "image_prompt": "Helix Biosystems Lacunar Infarct Induction Carbine lying horizontally on a surgical steel examination table, shot from above at a 45-degree angle. Dramatic cool-white surgical lighting casting sharp shadows. The matte gunmetal finish reflects blue-tinged light. Close detail on the parabolic ceramic focusing chamber showing its iridescent subtle blue-gray sheen. The digital readout screen is dark. A gloved hand (latex, clinical) enters frame from the right, touching the grip. The background is deep black with clinical precision. Cyberpunk aesthetic emphasizing cold medical technology, not warfare — this is an instrument of interrogation disguised as science. High key lighting on the weapon, absolute black surrounding. --ar 3:2 --v 6"
 }

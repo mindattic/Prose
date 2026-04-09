@@ -42,5 +42,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Alper Lebedev-Tutu",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
+    "Solveig Tambadou-Kereselidze",
+    "Vespid Dynamics",
+    "Zurab Ivanov-Appiah"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular launcher resembling a hybrid between a grenade launcher and a sci-fi carbine. Its silhouette is dominated by a boxy magazine assembly beneath the barrel, with a pronounced upper receiver housing the targeting/control systems. The overall impression is predatory and modular — designed for rapid deployment and magazine swaps.",
+    "dimensions": "Launcher: 78 cm length, 12 cm width, 16 cm height. Magazine: 22 cm length, 11 cm width, 8 cm depth. Barrel section: 24 cm.",
+    "weight_description": "Hefty but balanced. The launcher alone (9.4 kg) requires confident two-handed control, while the detachable drone magazine (6.2 kg) is compact and quick-swap friendly. Feels purpose-built rather than awkward.",
+    "primary_material": "Titanium-reinforced polymer frame with segmented steel barrel assembly. Magazine housing is reinforced composite with visible internal lattice structure to reduce weight while maintaining drone stabilization.",
+    "finish": "Matte gunmetal gray with brushed steel accents around the magazine release and barrel collar. Light wear and micro-scratches consistent with field use. Small heat-discoloration marks near the barrel tip from drone launch thermal bloom.",
+    "color_scheme": "Matte gunmetal gray (primary), brushed steel accents (magazine collar, trigger guard, barrel ring), with thin accent lines in electric blue along the upper receiver housing. Vespid Dynamics branding in metallic silver.",
+    "grip_texture": "Rubberized polymer with deep-cut geometric patterns for secure gloved handling. The stock area features wrapped tactical cord for sling mounting. Magazine grip points are aggressively textured to prevent fumbling during rapid reloads.",
+    "distinctive_features": [
+      "Modular drone magazine with visible indicator lights (green/amber/red) showing remaining drone count and charge status",
+      "Upper receiver bristles with four targeting sensors (forward, left, right arrays) for drone guidance synchronization",
+      "Distinctive barrel crown features six micro-apertures for drone separation trajectory control",
+      "Integrated targeting crosshair etched into the upper receiver mounting plate",
+      "Magazine release lever shaped like a stylized wasp — Vespid's signature detail",
+      "Vented heat sink fins along the barrel exterior, glowing faintly amber during active drone link",
+      "Wrist-mounted fiber-optic cable attachment points for swarm telemetry feedback"
+    ],
+    "manufacturer_markings": "Large 'VESPID DYNAMICS' stamp on the left side of the upper receiver. Serial plate mounted on the right side of the magazine well. Smaller 'HP-6 SWARMKEEPER' designation engraved below the barrel. Regulatory stamps and military restriction logos are laser-etched in tiny text along the trigger guard.",
+    "condition_typical": "Well-maintained field unit. Polymer shows strategic battle-wear on edges and corners. Magazine contact points are slightly scuffed from quick swaps. Heat marks around the barrel from repeated drone launches indicate regular use. No major damage — operators who lose Swarmkeepers don't survive to report it."
+  },
+  "image_prompt": "A Vespid Dynamics Hive Projector HP-6 'Swarmkeeper' launcher photographed in profile on a matte black composite surface. Dramatic side-lighting casts hard shadows, emphasizing the angular titanium-polymer frame and modular magazine assembly. The matte gunmetal finish catches light along the brushed steel barrel collar and upper receiver sensor array. The detached drone magazine sits beside the launcher, its internal lattice structure faintly visible. The indicator lights on the magazine glow soft amber against dark surroundings. A black-gloved operator's hand grips the rubberized stock, showing the textured grip patterns. Futuristic targeting crosshairs are subtly illuminated. Cyberpunk aesthetic with clean industrial photography lighting, cool color temperature. --ar 3:2 --v 6"
 }

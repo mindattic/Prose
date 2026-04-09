@@ -38,5 +38,32 @@
     "tier_1",
     "everyday_carry"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Street Custom 'Cigarette' Pen Gun",
+    "Tessera Nexus Town Car"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, pocket-sized stun device with the form factor of a premium lighter or compact vape — deliberately non-threatening industrial design. Rounded edges with a subtle ergonomic grip, dual prong electrodes protruding from one end like small fangs.",
+    "dimensions": "70 mm length × 30 mm width × 15 mm depth. Electrode protrusion: 12 mm",
+    "weight_description": "Feather-light in hand — 38 grams gives it almost no heft, making it feel more like a utility gadget than a weapon. Balanced enough for single-hand operation despite the compact size.",
+    "primary_material": "Injection-molded thermoplastic polymer body with hardened steel electrode prongs. Internal capacitor housing visible as subtle ribbed reinforcement along seams.",
+    "finish": "Matte or satin polymeric coating with subtle texture for grip. VoltLine offers utilitarian black as standard, but also bright neon accents (electric blue, safety orange, hot pink) on grip areas and button housing to read as civilian tech rather than weaponry.",
+    "color_scheme": "Primary matte black or dark grey polymer; accent colors on thumb button and grip strip (often high-visibility or aesthetic brights). Electrode prongs: brushed steel or gunmetal grey.",
+    "grip_texture": "Subtly textured thermoplastic with micro-grip pattern — slightly adhesive feel that prevents slip even in wet conditions. Thumb button area molded with slight finger notch for intuitive control.",
+    "distinctive_features": [
+      "Dual steel electrode prongs separated by 12 mm gap, slightly splayed for contact consistency",
+      "Low-profile power button on top edge, recessed slightly to prevent accidental discharge",
+      "Micro-cell charging port (proprietary connector) on rear lower edge",
+      "Subtle indicator LED on button housing — green when charged, amber when depleted",
+      "Safety lever or physical contact guard (optional variant) that must be cleared before discharge",
+      "Minimalist VoltLine branding: small embossed logo on grip panel",
+      "Serial number plate (2 mm × 8 mm) stamped on rear lower body"
+    ],
+    "manufacturer_markings": "VoltLine Personal Electronics logo (small, understated) embossed on grip side. Model designation 'MT-2' printed in tiny text near charging port. Serial number stamped on rear. No aggressive branding — deliberately manufactured to read as consumer electronics.",
+    "condition_typical": "Pristine or lightly used — designed for high-volume consumer market so most examples are well-maintained. Worn units show minor scuffing on edges and slight discoloration around button from repeated thumb contact. Battery indicator may show age (amber more frequently). No rust or corrosion due to polymer-dominated construction."
+  },
+  "image_prompt": "Product photograph of a compact VoltLine MT-2 'Bite' stun device on matte black surface, shot from slight overhead angle. Device positioned with dual steel electrode prongs facing forward, gleaming under dramatic sidelighting that highlights the metallic fangs and textured polymer body. One variant shown in matte black with electric blue accent on button and grip strip. Micro-cell charging port detail visible on rear. Soft shadow cast to right. Photograph styled like premium consumer electronics catalog — clinical, clean, non-threatening aesthetic. Inset: extreme close-up of electrode gap showing brushed steel detail and safety spacing. Cyberpunk product photography, shallow depth of field, cool color temperature, professional lighting setup. --ar 3:2 --v 6"
 }

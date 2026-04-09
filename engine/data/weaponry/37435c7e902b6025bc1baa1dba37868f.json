@@ -42,5 +42,43 @@
     "budget",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Emiljan Nzinga-Kovačević",
+    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'",
+    "Hearthstone Firearms Defender-38 'Snubnose'",
+    "MERIDIAN",
+    "Meridian Munitions Coach-12 'Stagecoach'",
+    "Narrowcast",
+    "Nika Svensson-Kone",
+    "Patient Zero",
+    "The I-75 Spine",
+    "The Shelf",
+    "The Wire Taps",
+    "Volkov-Saito Precision VS-O/U Sport 'Duelist'",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A classic break-action shotgun with a distinctly vertical silhouette. The over-under barrel arrangement creates a tall, narrow profile compared to side-by-side coaches. Exposed hammers give it a utilitarian, no-frills appearance—pure function. The overall impression is of deliberately stripped-down simplicity: honest steel, minimal ornamentation, built to work rather than impress.",
+    "dimensions": "Total length: 102 cm | Barrel length: 18 cm each | Height at receiver: 8 cm | Width at breech: 4.5 cm",
+    "weight_description": "Solid and hefty in hand—2.7 kg of stamped steel and hardwood that feels dense but not unwieldy. The vertical barrel axis makes it balance slightly forward, with weight centered over the grip. Feels like a tool, not a precision instrument.",
+    "primary_material": "Stamped steel receiver and barrels | Hardwood furniture (minimal finishing) | Simple blued barrel coating",
+    "finish": "Blued steel with worn patina—functional rather than gleaming. Exposed metal shows honest wear from handling. Hardwood stock left largely unfinished, showing natural grain variation and tool marks from manufacturing. No protective lacquer or varnish—just raw wood sealed with basic oil.",
+    "color_scheme": "Dark steel blue-grey on barrels | Warm medium-brown hardwood stock and foregrip | Natural wood grain visible",
+    "grip_texture": "Hardwood grip with minimal shaping—slightly rough, unpolished finish. Texture is honest wood grain with occasional tool marks. No rubber overmold or ergonomic contouring. Forestock is similarly plain, designed for function over comfort.",
+    "distinctive_features": [
+      "Twin exposed external hammers with simple mechanical reliability",
+      "Simple bead front sight mounted on upper barrel",
+      "Break-action hinge visible at receiver junction",
+      "Stamped steel receiver with minimal fitment—visible gaps between wood and metal",
+      "Two parallel 18-inch barrels in strict vertical alignment",
+      "Minimal checkering on grip panels—production-grade texturing only",
+      "Manual safety lever positioned for intuitive operation",
+      "Tool marks and manufacturing stamps visible on receiver"
+    ],
+    "manufacturer_markings": "MERIDIAN MUNITIONS stamped into left side of receiver in utilitarian serif font | Serial number plate on underside of breech | Caliber marking (12 GAUGE) stamped on barrel rib",
+    "condition_typical": "Field-worn and practical. Surface shows handling wear, minor dings in blued finish, hardwood with scuffs and scratches from actual use. Never pristine—these are working weapons that see use. Mechanically sound but cosmetically honest."
+  },
+  "image_prompt": "Product photography of Meridian Munitions Over-Under Coach shotgun photographed from three-quarter angle against dark graphite surface. Weapon displayed break-open position showing internal action. Dramatic side-lighting from left emphasizing worn blued steel barrels and warm hardwood grain. Gloved hand (synthetic material, tactile texture) gripping hardwood foregrip in bottom right of frame. Raw industrial aesthetic, cyberpunk utilitarian—no glamour, pure function. Cool color temperature with amber highlights on wood. Weathered finish detail visible. GLMZ atmosphere: gritty, working-class weapon photography. --ar 3:2 --v 6"
 }

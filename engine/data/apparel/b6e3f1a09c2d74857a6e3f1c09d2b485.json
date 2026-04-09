@@ -41,5 +41,25 @@
   ],
   "related_entities": [
     "Ambrosia Fekete-Waiyaki"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian mitt-style glove with a bulkier, tech-forward silhouette. The chrome-socket palm catches light distinctly, creating a cyborg-ready aesthetic. Wrist cuff is engineered and structured, suggesting integrated hardware. Reads as working-class augmentation wear rather than fashion.",
+    "fit": "Snug compression fit through the fingers and palm, with generous wrist cuff designed to accommodate interface ports and battery cell. Neoprene conforms to the hand but leaves room for subdermal hardware and augmentation mounts.",
+    "primary_material": "High-grade neoprene shell with inner thermal lining; reinforced chrome-alloy socket embedded in palm; conductive thread tracing for heating element distribution",
+    "texture": "Smooth neoprene exterior with slight grip texture on palm. Chrome socket area is cool and metallic to touch, with visible weld seams. Wrist cuff has subtle ribbing for seal integrity.",
+    "color_scheme": "Predominantly matte black with gunmetal chrome accents on palm socket and wrist hardware. Heating wire visible as faint copper traces beneath translucent neoprene.",
+    "closures": "Friction-fit wrist cuff with integrated magnetic snap tabs; chrome socket uses precision-fit design rather than visible closure",
+    "distinctive_features": [
+      "Chrome-alloy socket palm with augmentation mounting points",
+      "Embedded resistive heating wire throughout neoprene",
+      "Wrist battery cell dock with visible connector port",
+      "Reinforced seams at palm-to-cuff junction",
+      "Vansen branding embossed on cuff",
+      "Slight wear expected on chrome socket from handling"
+    ],
+    "tier_indicator": "Tier 3–4 functional wear; signals working-class augmentation use and climate-intensive labor",
+    "cultural_context": "Worn by field technicians, industrial workers, augmentation-integrated laborers in cold-zone operations. Signals practical body modification and outdoor endurance work in the GLMZ.",
+    "condition_typical": "Broken-in and heavily used; chrome socket shows patina and micro-scratches; neoprene may have minor creasing at knuckles and wrist"
+  },
+  "image_prompt": "Close-up fashion shot of Vansen ArcWarm heated gloves on a cyberpunk model's hands, chrome palm socket catching neon blue and orange overhead light. Thick black neoprene with visible heating wire tracery. Wrist battery cell glowing faintly. Hands positioned against a rain-slicked industrial metal surface or augmentation workbench. Moody, cool color grade. Dark urban warehouse backdrop with subtle holographic reflection on metal. –ar 2:3 –v 6"
 }

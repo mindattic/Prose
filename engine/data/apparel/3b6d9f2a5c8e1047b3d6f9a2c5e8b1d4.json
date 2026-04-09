@@ -51,5 +51,26 @@
     "Tessera Industries Memory Rounds MR-2 'Recall'",
     "The Bazaar",
     "The Heritage Vault"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian mid-length parka with a clean, no-nonsense silhouette. The matte ripstop shell absorbs light, creating a flat, industrial aesthetic. Hood sits high and structured with synthetic fur trim. Visible cuff controls and battery pack outline create subtle tech signatures without ostentatious branding. Reads as durable streetwear rather than fashion statement.",
+    "fit": "Relaxed through the torso with subtle tapering at the waist; room for layering without excess bulk. Sleeves cut straight and honest. Hem falls mid-thigh. Designed for movement and functionality over aesthetic tailoring.",
+    "primary_material": "Ripstop nylon outer shell (tightly woven, matte finish); synthetic pile fur hood lining; internal graphene-filament heating mesh; flexible battery polymer casing",
+    "texture": "Outer shell is smooth and slightly stiff with a faint grid texture from ripstop weave. Synthetic fur is uniformly dense and plush. Interior mesh has a subtle crinkle. Battery pack edge is barely perceptible through fabric.",
+    "color_scheme": "Matte black as dominant option, with navy and deep forest green variants. All desaturated and muted. Minimal contrast except for dark gray battery connector at hem.",
+    "closures": "Full-length two-way YKK-style zipper with storm flap. Detachable hood secured via anchor points and tension snaps. Cuff adjustment via friction-fit velcro strap.",
+    "distinctive_features": [
+      "Push-button heat control tab at left cuff (three settings, mechanical, no electronics)",
+      "USB-C charging connector at hem with subtle protective flap",
+      "Detachable synthetic fur hood",
+      "Deep hand-warmer pockets with internal mesh lining",
+      "Left side panel houses thin flexible battery pack (barely visible seam)",
+      "Reinforced ripstop at high-stress points (shoulders, elbows, hem)",
+      "No visible branding except small woven Fenrir label at interior collar"
+    ],
+    "tier_indicator": "Tier 2–3 bridge: affordable luxury tech without conspicuous consumption. Built for people who work in cold environments and expect gear to just work.",
+    "cultural_context": "Transit workers, construction crews, warehouse staff, night-shift engineers, medical field responders. The choice of someone who values reliability over status. Signals Scandinavian manufacturing ethos and skepticism of cloud-dependent gadgetry.",
+    "condition_typical": "Broken-in and practical. Minor scuffs on the ripstop from use. Fur hood slightly compressed from handling. Battery connector shows wear patterns from repeated charging. Otherwise structurally sound; improves with age."
+  },
+  "image_prompt": "Cyberpunk fashion catalog photo: A figure wearing a matte black Fenrir Thermal-Arc Parka stands against an industrial Great Lakes backdrop—corrugated metal siding and frost-covered infrastructure visible behind. Moody cyan and amber neon from distant signage casts shadows across the parka's ripstop surface, emphasizing texture. Close-up detail shot of the left cuff shows the mechanical heat control button; another angle reveals the USB-C charging port at the hem glowing faintly. The detached synthetic fur hood rests beside the figure. Overcast winter lighting, 2226 GLMZ aesthetic, worn boots on concrete. Camera angle slightly elevated, fashion editorial tone. --ar 2:3 --v 6"
 }

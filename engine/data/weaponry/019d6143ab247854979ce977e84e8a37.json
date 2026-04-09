@@ -54,5 +54,42 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Alper Inoue-Aidoo",
+    "Biometric Denial Charge BDC-1",
+    "Dragan Petersen-Bah",
+    "Fanta Kato-Adomako",
+    "Free Assembly",
+    "GLMZ",
+    "LifeWire LumiFace Bioluminescent Subdermal Accent",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "Yannick Tambadou-Reinholt",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist sprayer device with an oversized conical nozzle dominating the front — appears part industrial decontamination equipment, part bioweapon. The wide, flared nozzle gives it an aggressive, predatory silhouette. Dual cylindrical tanks sit behind the nozzle like vestigial organs, connected by visible electrochemical plumbing. The overall impression is utilitarian menace: something designed to dissolve rather than pierce.",
+    "dimensions": "44cm overall length; 18cm conical nozzle assembly; 12cm width across tank cluster; 8cm depth at grip",
+    "weight_description": "Hefty and front-heavy when loaded — approximately 4.2kg distributed unevenly toward the nozzle assembly. Requires two-hand operation or braced single-hand grip. The weight feels deliberate, suggesting serious chemical payload rather than elegant engineering.",
+    "primary_material": "Anodized aluminum frame; reinforced polymer composite tank housings (chemical-resistant); stainless steel nozzle assembly with ceramic ionization grid insert",
+    "finish": "Industrial matte gunmetal gray with deliberate wear patterns; the nozzle shows heat-stress discoloration (faint brown oxidation rings where ionization has scorched the ceramic). Tank housings have a satin finish with faint factory labeling still visible beneath wear.",
+    "color_scheme": "Matte industrial gray with gunmetal accents; faint amber/copper electrochemical scorching around nozzle interior; minimal corpo branding in dark red (Zheng-Dao house color)",
+    "grip_texture": "Rubberized polymer grip with raised grip panels for gloved operation; textured surface is slightly tacky (chemical residue sealed into texture). Thumb dial for voltage tuning is hard plastic with minute numeric gradients (O/S/M markings visible in wear)",
+    "distinctive_features": [
+      "Wide conical nozzle with visible ceramic grid interior (faint blue-white when powered)",
+      "Dual transparent reagent tanks with fluid level indicators — base tank larger than catalyst tank",
+      "Visible electrochemical conduit tubing connecting tanks to nozzle (thin, flexible, heat-marked)",
+      "Thumb-dial voltage adjuster on grip with three labeled positions (O / M / S) — dial shows wear from repeated tuning",
+      "Faint electrical crackling audible during idle (high-voltage capacitor hum just below hearing range)",
+      "Small exhaust vent on lower frame (ionization byproduct outlet)",
+      "Weathered Zheng-Dao Bioelectric stamp on left tank housing with serial plate (worn but legible)",
+      "Faint iridescent residue staining on nozzle interior (evidence of reactive aerosol contact)"
+    ],
+    "manufacturer_markings": "Zheng-Dao Bioelectric emblem (stylized electromagnetic coil within circle) stamped in dark red on upper left tank; serial plate recessed into grip (alphanumeric code worn to illegibility); 'INDUSTRIAL DECONTAMINATION DEVICE' stenciled in small white text on tank housing (faded)",
+    "condition_typical": "Well-maintained but battle-worn; field operators keep nozzle clean to prevent residue buildup, but the device shows consistent evidence of active use — scuffed grip, faint chemical etching on frame, heat stress marks on nozzle interior. Never pristine, always operational."
+  },
+  "image_prompt": "Industrial electrochemical sprayer mounted on tactical display stand, angled 45 degrees to show conical nozzle and dual reagent tanks. Dramatic side-lighting with blue-tinted accent light on nozzle interior to hint at ionization grid. Dark matte surface beneath (industrial concrete texture). Gloved operator hand gripping device, thumb poised on voltage dial. Faint wisps of iridescent aerosol mist suspended in light around nozzle cone — nearly invisible but shimmering. Emphasize worn metal, chemical residue staining, and military-industrial aesthetic. Zheng-Dao branding visible on tank. Cyberpunk gray-and-copper color grading. Gritty, utilitarian GLMZ-era manufacturing quality. --ar 3:2 --v 6"
 }

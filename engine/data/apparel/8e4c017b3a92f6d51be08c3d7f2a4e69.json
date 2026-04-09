@@ -41,5 +41,25 @@
   "related_entities": [
     "Kadiatou Bergstrom-Konate",
     "The Keel"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A dominating, industrial footwear statement with aggressive geometric proportions. The boot rises mid-calf with a stark, utilitarian silhouette that reads as purpose-built rather than fashionable. The chunky sole platform creates a lifted, grounded presence; the wearer appears anchored and deliberate.",
+    "fit": "Snug and compression-oriented through the ankle and midfoot via magnetic-closure straps. The calf sits fitted but not constricting. The sole is rigid and unyielding—no flex—designed for stability in variable gravity environments.",
+    "primary_material": "Brushed gunmetal composite with ballistic weave reinforcement on the upper. The sole is a layered tech-polymer housing visible magnetic coil apparatus.",
+    "texture": "The upper is matte and brushed, showing light tool marks and intentional scuff patterns. The sole platform is textured with geometric grip channels and visible vent slots that reveal metallic coil windings beneath semi-transparent polymer casing.",
+    "color_scheme": "Gunmetal gray as primary, accented with silver-chrome magnetic coil housings visible through vents. Matte finish with reflective metallic accents that catch sharp light.",
+    "closures": "Four magnetic-snap straps (two per side) replace traditional lacing, allowing rapid secure fastening and release. Straps are treated in the same gunmetal composite.",
+    "distinctive_features": [
+      "Visible magnetic coil housing integrated into the sole platform with functional vent slots",
+      "Asymmetrical magnetic-snap strap system optimized for vacuum or pressure-suit interfacing",
+      "Reinforced toe box with impact-absorption plating",
+      "Orbital Systems Co. stamped logo on the heel in raised chrome",
+      "Anti-slip grip channels etched across the 4cm platform sole",
+      "Micro-capacitive contact points on the strap anchors for tech integration"
+    ],
+    "tier_indicator": "Tier 2 specialty industrial—expensive, purpose-built tech, accessible only to orbital workers, high-end transport crews, or wealthy enthusiasts who value technical authenticity over fashion.",
+    "cultural_context": "Signals expertise in zero-gravity operations, membership in off-world labor class, or serious financial investment in niche cybernetic lifestyle. Wearing these civilian-side suggests either recent orbital work, corporate transport affiliation, or aspirational tech-culture posturing.",
+    "condition_typical": "Civilian versions are pristine and showroom-ready; working versions show micro-abrasions, dust residue in vent slots, and faint magnetic discharge marks on the sole edges from repeated use in low-gravity sectors."
+  },
+  "image_prompt": "Cyberpunk fashion photograph: Orbital Systems Gravlock Boot displayed on a dark chrome mannequin leg, viewed from a three-quarter angle against a dimly-lit industrial backdrop. The boot's brushed gunmetal surface reflects overhead neon strips in cool blue-white tones. Dramatic side-lighting emphasizes the chunky 4cm platform sole and the visible magnetic coil housings glowing faintly beneath semi-transparent polymer. Magnetic vent slots catch sharp highlights. Fine dust particles hang in the air around the sole, suggesting orbital dock environment. Dark gray concrete floor beneath. Moody cyberpunk warehouse aesthetic. --ar 2:3 --v 6"
 }

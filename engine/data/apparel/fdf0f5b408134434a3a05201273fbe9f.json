@@ -42,5 +42,27 @@
     "Variable Impedance Rifle VIR-9 'Switchback'",
     "Veslemøy Achebe-Tursynov",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sharp, utilitarian silhouette built for constant motion and tool-carrying. Deep violet base with silver accents creates a distinctive corporate identity. The wearer appears prepared, organized, and subordinately authoritative — visible but not meant to be noticed.",
+    "fit": "Structured and athletic. The vest sits fitted through the chest and torso with a slight taper at the waist, allowing freedom of movement without excess fabric. Trousers are slim-cut but not restrictive, designed for climbing, crouching, and rapid repositioning. The base layer clings without compression, allowing layering and air circulation.",
+    "primary_material": "High-performance synthetic blend: moisture-wicking microfiber base layer, ballistic weave cargo vest with reinforced stress points, and treated utility cotton-synth trousers with DWR finish for weather resistance.",
+    "texture": "The vest has a subtle ribbed texture from its weave; pocket edges show visible stitching. The base layer is smooth and slightly tacky to the touch. Trousers have a matte finish with reinforced seams at stress points that create subtle topographical lines.",
+    "color_scheme": "Deep violet (Ringo's corporate signature) as primary, with silver piping along seams, pocket edges, and shoulder panels. The Ringo eye-logo in silver embroidery on the right shoulder. Black utility belt and reinforced trouser cuffs provide grounding contrast.",
+    "closures": "Heavy-duty metal zippers on vest pockets, magnetic snap closures on larger utility pockets for one-handed operation. Trousers feature a friction-fit waistband with integrated snap closure for tail accommodation. Base layer pulls over the head.",
+    "distinctive_features": [
+      "Fourteen external pockets in graduated sizes, each with visible labeling worn into the material from repeated use",
+      "Two dedicated BCI override dongle pockets with reinforced corners and subtle stitching patterns",
+      "Wing-bud clearance vents at the back of the vest, sealed with magnetic flaps",
+      "Pre-cut tail accommodation on trouser waistband with snap closure and heat-sealed edges",
+      "Visible wear patterns on pocket edges from eighteen-hour operational days",
+      "Silver Ringo eye-logo embroidered on right shoulder, slightly faded on older sets",
+      "Internal cable management loops and gear-anchoring D-rings",
+      "Moisture-wicking odor-suppressing treatment visible as a subtle sheen"
+    ],
+    "tier_indicator": "Tier 3-4 corporate entry-level. The uniform signals employment within a major media conglomerate but explicitly marks the wearer as support staff, not talent or executive.",
+    "cultural_context": "Wearing Ringo violet means you're part of the media infrastructure that shapes GLMZ's narrative. PAs are the invisible scaffolding of entertainment — recognized by residents who grew up consuming Ringo content, but also subtly marked as overworked operational tissue. The uniform commands a specific kind of respect and ambivalence.",
+    "condition_typical": "Worn but meticulously maintained. Pockets show creasing and fading from heavy tool rotation. Seams remain intact due to ballistic-grade construction. The silver piping may be dulled but rarely scratched. Personal modifications to pocket organization are common — tape labels, color-coded thread, re-stitched configurations. Stains are cleaned quickly but micro-tears on the trouser cuffs from eighteen-hour days are common and accepted."
+  },
+  "image_prompt": "Fashion photograph of a Ringo Entertainment Group production assistant in full field uniform: deep violet cargo vest with fourteen external pockets and silver piping, slim-cut utility trousers, long-sleeve moisture-wicking base layer visible at collar and wrists. Silver Ringo eye-logo embroidered on right shoulder. Model wearing the set looks exhausted but composed, hands naturally resting near pocket closures. Captured in moody backstage lighting with soft purple gels and harsh LED spill. Urban GLMZ backdrop: industrial scaffolding, broadcast equipment racks, rain-slicked concrete floor. Visible wear on pocket edges and trouser cuffs. Studio photography, dark background, cinematic depth, --ar 2:3 --v 6"
 }

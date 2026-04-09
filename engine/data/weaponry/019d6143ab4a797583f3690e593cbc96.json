@@ -36,5 +36,32 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Steel",
+    "TESSERA PG-2 'Signature'",
+    "The Shaft",
+    "Tomasz Wren"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutish, utilitarian weapon that screams improvised street fabrication — a thick steel rod bent into a crude handle with perpendicular rebar spikes jutting outward like a medieval mace crossed with industrial scaffolding. No aesthetic refinement, all functional menace.",
+    "dimensions": "Shaft length: 40-60 cm (typically 50 cm), spike length: 5-10 cm protruding radially, total head width with spikes: 20-25 cm. Grip section 8-12 cm",
+    "weight_description": "Genuinely hefty and unbalanced — head-heavy, requiring commitment to swing. Feels like swinging a length of steel pipe studded with nails. Not a weapon for finesse.",
+    "primary_material": "Mild steel construction rebar — industrial-grade, unrefined",
+    "finish": "Raw mill scale and rust blooms — dark gray to brown oxidation, inconsistent surface from poor welding. Some sections show bright fresh welds, others weathered patina. No protective coating.",
+    "color_scheme": "Dark gunmetal gray with rust-brown discoloration, bright silver weld seams scattered across shaft and spike roots",
+    "grip_texture": "Bare steel, possibly wrapped with torn fabric, electrical tape, or cord for grip — rough, utilitarian, offers minimal comfort. Hand-bending marks visible in the handle curve.",
+    "distinctive_features": [
+      "Asymmetrical spike placement — not precision-welded, noticeably crude",
+      "Visible weld beads — rough, unground, some with spatter",
+      "Heat discoloration rings around each weld junction — blue-gray oxidation halos",
+      "Rough cut ends on spike sections, un-dressed by grinding",
+      "Handle bend shows hammer-work marks, not precision tube bending",
+      "Possible dents and dings from test-swings or actual use",
+      "Occasional grease or construction site grime in weld valleys"
+    ],
+    "manufacturer_markings": "None — this is street fabrication. Possibly spray-painted initials or gang tags on the shaft by the creator, but no official markings. Some examples may have torch-cut numbers stamped by the welder.",
+    "condition_typical": "Field-worn and functional — this weapon is used, not maintained. Rust in weld valleys, splatter patterns from multiple fabrication attempts, possible bent spikes from impact, handle wrap deteriorating from sweat and grime. Each example is unique in its wear."
+  },
+  "image_prompt": "Raw industrial photograph of a crude steel rebar spike mace lying on a scorched concrete surface, beside a gloved hand gripping the bent shaft. Dark dramatic side-lighting reveals rough weld seams and rust blooms, casting sharp shadows from the jutting spikes. Shallow depth of field focuses on weld detail. Gritty, brutalist cyberpunk aesthetic — street weapon, not showpiece. Midjourney product style. --ar 3:2 --v 6"
 }

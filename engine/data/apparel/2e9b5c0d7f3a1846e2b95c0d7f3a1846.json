@@ -41,5 +41,25 @@
     "Arcturus Exo-Runner Frame",
     "Irkalla",
     "Tanaquil Sow-Radovanović"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian knee-length cargo shorts with a distinctive modular aesthetic. The split panels create vertical lines down both outer legs, giving the silhouette an intentionally deconstructed, tech-forward appearance. Reads as functional and purpose-built rather than fashion-forward.",
+    "fit": "Relaxed, straight-leg cut through the thigh with subtle taper at the knee. Designed for comfort over augmented limbs and frequent panel manipulation. Sits at natural waistline with reinforced belt loops.",
+    "primary_material": "Olive-tan ripstop nylon composite — military-spec abrasion resistance with slight sheen under direct light",
+    "texture": "Tightly woven ripstop grid texture visible at close range, creating a subtle pattern across the surface. Panels feature smooth magnetic closure trim with minimal tactile feedback.",
+    "color_scheme": "Muted olive-tan base with darker tan reinforcement stitching and charcoal magnetic closure strips along panel edges",
+    "closures": "Magnetic snaps running the full length of both outer leg split panels (hip to hem), allowing complete panel separation. Traditional button fly on waistband.",
+    "distinctive_features": [
+      "Full-length magnetic split panels on both outer legs",
+      "Four cargo pockets total (two per side) with reinforced bar-tack stitching",
+      "Contrasting dark stitching at stress points",
+      "Integrated cable routing guides along interior seams",
+      "Tactec branding on right thigh pocket in subdued embroidery",
+      "Moisture-wicking inner thigh panels"
+    ],
+    "tier_indicator": "Tier 3-4 functional. Quality construction and specialized design indicate working-class prosperity or lower-mid corpo adoption.",
+    "cultural_context": "Worn by prosthetic users, field technicians, maintenance workers, and aug-communities in warm climates. Signals practical priorities over appearance — wearer values access and serviceability.",
+    "condition_typical": "Broken-in but maintained. Mild fading in high-stress areas around cargo pockets and magnetic closures. No major damage, but visible creasing from repeated panel opening."
+  },
+  "image_prompt": "Fashion photography of Tactec SplitPanel Cargo Shorts on a dark mannequin with one leg augmented by a sleek chrome prosthetic, split panels partially open revealing magnetic closures, photographed against a humid industrial backdrop with neon amber accent lighting highlighting the ripstop texture and panel geometry, shallow depth of field focusing on the magnetic closure mechanism and leg junction, cyberpunk utilitarian aesthetic --ar 2:3 --v 6"
 }

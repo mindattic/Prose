@@ -64,5 +64,38 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Aybek Alvarez-Okonkwo",
+    "Crucible Industries CF-1 'Carapace'",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Vantablack-CNX",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact bullpup carbine with an aggressive, industrial aesthetic. The barrel assembly dominates the upper profile—a segmented, ribbed tube with visible electrode bands spiraling along its length. The weapon reads as purpose-built and utilitarian, all hard angles and functional geometry with no concessions to ergonomics or aesthetics.",
+    "dimensions": "Overall length: 68 cm | Barrel length: 38 cm | Width across grip: 7 cm | Height (with rail mounts): 12 cm",
+    "weight_description": "Hefty but balanced—3.8 kg distributed across the bullpup frame creates a weapon that feels substantial without being unwieldy. The segmented barrel adds perceived weight forward without the actual burden.",
+    "primary_material": "Hardened polymer composite frame with brushed titanium alloy barrel segments and steel internal assembly. The breech block and magazine well are reinforced steel.",
+    "finish": "Matte charcoal polymer body with burnished steel barrel segments showing subtle oxidation patina. The electrode bands are bare brushed titanium with faint electrical scoring marks from repeated charge cycles.",
+    "color_scheme": "Gunmetal gray and charcoal black primary, with silver titanium barrel accents. Faint copper-orange corrosion blooming at electrode contact points.",
+    "grip_texture": "Rubberized textured polymer, deeply knurled to accommodate gloved hands. Slight tacky residue from particle discharge buildup—users rarely fully clean this weapon.",
+    "distinctive_features": [
+      "Segmented barrel with visible helical electrode bands spaced 8mm apart",
+      "Static discharge indicator strip along the right side—changes color under electrostatic load",
+      "Swappable canister breech with bayonet-style locking tabs",
+      "Ventilation slots along the barrel shroud to dissipate triboelectric heat",
+      "Iron Point Ammunition 'IP' logo stamped on the dust cover, partially worn",
+      "Custom operator callsigns scratched or burned into the polymer stock by field users",
+      "Faint white particulate residue caked around the muzzle crown and venting ports",
+      "Integrated particle filtration intake vent near the trigger guard"
+    ],
+    "manufacturer_markings": "Iron Point Ammunition logo (stylized iron claw) stamped on the upper receiver. Serial plate on the left side of the breech block. Warning labels for electrostatic discharge in Mandarin and English stamped on the magazine well.",
+    "condition_typical": "Battle-worn with heavy use marks. The barrel segments show scorching and micro-fracturing from repeated charge cycles. Grip tape is worn through in places. The polymer stock bears impact scars and burn marks. The weapon is meticulously maintained internally despite external grime—users know this platform's reliability depends on clean barrel linings."
+  },
+  "image_prompt": "Product photograph of the ACDR-2 'Sandpaper' disruption rifle, bullpup carbine configuration, laid diagonally across a brushed steel workbench under harsh side-lighting. Close-up detail of the segmented titanium barrel with visible electrode bands and triboelectric charge scoring. Callused gloved hand (black synthetic leather with copper knuckle guards) gripping the ribbed polymer stock. Muzzle detail showing white particle residue and scorch marks. Cool blue-white LED static indicator lighting the discharge meter. Shallow depth of field, dark charcoal background. Industrial, worn, functional aesthetic. Cyberpunk weapon design. --ar 3:2 --v 6"
 }

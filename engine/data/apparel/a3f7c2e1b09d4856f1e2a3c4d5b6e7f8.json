@@ -49,5 +49,28 @@
     "Aybek Alvarez-Okonkwo",
     "Ringo Heavy Transit MagRail Levitation Transport Network",
     "The Fathom Line"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian, highly visible transit worker ensemble projecting competence and safety compliance. The silhouette is blocky and functional—broad shoulders from the anorak, tapered through the torso, with cargo-heavy hips and legs grounded by aggressive platform boots. The overall impression is industrial, approachable, and deliberately conspicuous on crowded MagRail platforms.",
+    "fit": "Relaxed through the torso for movement and layering; tapered at the waist via the safety-orange webbing belt; cargo pockets sit mid-thigh with intentional volume; boots are snug around the ankle with reinforced heel counter.",
+    "primary_material": "Bonded synth-nylon anorak shell; charcoal ribbed thermal synthetic knit base layer; Goretek ballistic nylon trousers with reinforced knee panels; steel-capped polymer/composite platform boots with anti-static sole matrix",
+    "texture": "Smooth, slightly waxy nylon exterior with subtle sheen from factory treatment; ribbed thermal knit with tactile depth; matte ballistic nylon on knee reinforcements; aggressive tread pattern on boot sole; nylon webbing with slight friction grip",
+    "color_scheme": "Kelvex corporate navy (anorak, trousers, cap) as dominant; charcoal grey (thermal base, cap); reflective silver tape accents; safety-orange webbing belt; gunmetal grey ballistic panels; white heat-pressed logo and embroidered crew number; black anti-static sole",
+    "closures": "Anorak: full-length main zipper with storm flap; thermal mock-neck: half-zip; trousers: standard fly with magnetic cargo closures; boots: side-zip with reinforced pull tab; belt: friction-lock nylon webbing",
+    "distinctive_features": [
+      "Diagonal and vertical reflective silver tape strips for platform floodlight visibility",
+      "Heat-pressed Kelvex K-transit logo on left breast",
+      "Embroidered crew number patch on right chest",
+      "Reinforced knee panels in contrasting gunmetal ballistic nylon",
+      "Dedicated tool loop strip along right thigh with secure clip point",
+      "Safety-orange nylon webbing belt with integrated multi-tool carrier and lanyard anchor",
+      "Steel-capped platform treads with anti-static conductive soles",
+      "Knit cap with single reflective stripe aligned with rear neural port",
+      "Magnetic closures on cargo pockets (silent, non-conductive)"
+    ],
+    "tier_indicator": "Tier 3 working class—corporation-issued, durable, standardized, but quality construction and reflective safety features signal stable employment in essential infrastructure",
+    "cultural_context": "Wearer is essential MagRail ground crew: platform maintenance, safety checks, tunnel access, coordination between automated systems and human operators. The uniform signals trustworthiness, visibility, and technical competence. Wearing this in public outside the platform marks someone as transit-sector employed—stable, working-class, infrastructure-aligned.",
+    "condition_typical": "Worn but maintained—minor creasing from daily movement, small wear marks on knee panels from kneeling, slight fading on the chest logo from sweat and repeated arc-flash exposure, boots scuffed and well-broken-in. Never shabby; corporation maintains minimum standards. Often dusty from mag-rail platform particulate."
+  },
+  "image_prompt": "Fashion editorial shot of a Kelvex Transit ground crew worker in full uniform rig, standing on a dimly lit MagRail platform with blue-white fluorescent overhead lighting catching the diagonal reflective silver tape. Dark teal and navy fabrics dominate; safety-orange webbing belt is the primary warm accent. The model wears the charcoal knit cap low, neural port visible at the base of the skull. Steel-capped boots plant firmly on scored platform flooring. In the background, a blurred automated cargo transport or mag-rail pod in shadow. Moody, industrial lighting with hard shadows emphasizing the high-visibility tape pattern. Gritty, professional, utilitarian aesthetic. Shot from mid-thigh up, slight 3/4 angle to show cargo pocket detail and logo. Dark urban environment, cool color temperature. --ar 2:3 --v 6"
 }

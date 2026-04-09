@@ -35,5 +35,26 @@
   ],
   "related_entities": [
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, second-skin silhouette that clings to the body like a high-tech wetsuit. The garment presents a unified aesthetic of medical functionality meets athletic wear—smooth, purposeful, with subtle geometric segmentation across major muscle groups. When worn, the wearer appears almost augmented, their natural physiology enhanced by visible pressure architecture.",
+    "fit": "Compression-fitted, anatomically contoured to follow the body's natural lines. Snug through the torso, shoulders, and limbs without restriction of movement. Designed to be worn as a base layer beneath loose work clothes, creating an invisible performance shell.",
+    "primary_material": "Medical-grade synthetic elastomer blend with embedded bio-responsive microfiber—a proprietary smart-fabric that conducts electrical signals to micro-pump actuators. The base is breathable moisture-wicking poly-blend with antimicrobial treatment.",
+    "texture": "Smooth and slightly tacky to the skin with subtle ribbed pressure channels running longitudinally along arms and legs. The surface has a faint sheen suggesting synthetic sophistication. Embedded micro-pump lines create barely perceptible ridges at key vascular points.",
+    "color_scheme": "Matte charcoal-black primary with accent strips in bioluminescent cyan and medical white at pressure zones (wrists, ankles, sternum, lower back). Faint grid patterns visible under certain light angles indicate sensor arrays.",
+    "closures": "Full-body zipper running from left ankle, up the inside leg, across the torso and up to the right shoulder. Magnetic snap seals at wrists and ankles for micro-pump connection points. Friction-fit collar with velcro closure at the neck for sensor contact optimization.",
+    "distinctive_features": [
+      "Embedded pressure-gradient visualization—darker at high-compression zones, lighter at lower-compression areas",
+      "Visible micro-pump bladder lines along forearms, calves, and lower back—faint tubing visible beneath translucent material panels",
+      "Sensor array indicators (small metallic contacts) at pulse points: neck, wrists, inner elbows, ankles",
+      "MedTech Solutions logo embroidered in reflective thread at left chest",
+      "Small digital readout port (magnetic coupling) at upper right shoulder for wireless data sync",
+      "Graduated compression zones marked by subtle color gradation and material texture shifts",
+      "Reinforced panels at high-stress areas (shoulders, glutes, hamstrings, calves) with visible stitching"
+    ],
+    "tier_indicator": "Tier 2-3 boundary. Expensive enough to signal investment in one's body (Tier 2 corpo athletes, augmentation patients), but increasingly common among Tier 3 laborers and industrial workers who pool resources to afford one. A status item disguised as medical necessity.",
+    "cultural_context": "Worn by augmentation recovery patients during the painful integration period post-surgery. Construction workers, dock laborers, and combat-sport athletes use these to convert sleep into productive recovery. The suit marks the wearer as someone whose body is both an asset and a liability—someone who pushes themselves to the edge professionally.",
+    "condition_typical": "Pristine and well-maintained when new (expensive to replace). With use, develops slight discoloration at pressure points from sweat and skin oils. Seams remain tight; the material is engineered for durability. Faint creasing at flex points. After months of use, may show slight dulling of the bioluminescent accents where sensors have been repeatedly activated."
+  },
+  "image_prompt": "Full-body fashion photography of a MedTech Solutions Compression Recovery Suit on a sleek cyberpunk model with visible subcutaneous augmentations. The model is positioned in a three-quarter stance, mid-stretch or in a recovery pose. Dramatic side-lighting emphasizes the suit's pressure channel lines and bioluminescent cyan accents glowing softly against matte charcoal skin-tight material. Urban medical facility backdrop with soft blue ambient lighting from holographic displays. Close detail shots of the wrist sensor contact point and shoulder data port visible in secondary frame. Moody, clinical atmosphere suggesting post-augmentation recovery. Dark concrete walls, subtle neon reflections. --ar 2:3 --v 6"
 }

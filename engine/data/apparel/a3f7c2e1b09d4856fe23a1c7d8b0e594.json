@@ -48,5 +48,27 @@
     "Makena Johanssen-Diallo",
     "Ringo Heavy Transit MagRail Levitation Transport Network",
     "Street Custom 'Ghostwriter' Grafitti Flamethrower"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist half-face shield that sits like a riot visor, dominating the upper face and cheeks. Angular, industrial, looks like it was torn from a construction site and reassembled by someone who needed protection more than aesthetics. Asymmetrical edges and visible seams give it a menacing, jury-rigged appearance.",
+    "fit": "Sits snug against the skull and upper face, held by friction and improvised straps (likely salvaged webbing or wire). The pivoting lower panel can be flipped up to cover the nose and mouth, or locked down for full lower-face protection. Slight pressure-points from uneven padding.",
+    "primary_material": "Reclaimed industrial polycarbonate (main shield), corrugated sheet steel (reinforcement), chemical-resistant gasket rubber (sealing strips), cracked welding glass (eye slit insert)",
+    "texture": "Heavily scratched and pitted surface with visible acid damage and oxidation. Rough, unfinished edges. Medical tape visible at seams where padding is affixed. Bolt hardware shows corrosion and misalignment. Welding glass insert is spider-webbed with cracks.",
+    "color_scheme": "Predominant grey-to-rust-orange from oxidation and age. Occasional crude spray tags in faded white, neon yellow, or gang colors. Darker stress marks and burn scorches around the hinge mechanism. Medical tape appears dingy beige or yellowed.",
+    "closures": "Pivoting lower panel secured by a bent wire clasp (manual lock). No traditional straps visible—likely held by friction against the head or with improvised rope/webbing loops behind the ears.",
+    "distinctive_features": [
+      "Pivoting lower-face panel that can be flipped up or locked down",
+      "Cracked welding glass eye slit (UV-filtering but translucent)",
+      "Mismatched and corroded bolt hardware across seams",
+      "Medical adhesive and foam padding (unevenly taped inside)",
+      "Spray-tagged with crew markers and graffiti",
+      "Visible acid and oxidation pitting across entire surface",
+      "Bent wire clasp mechanism for panel lock",
+      "Corrugated steel reinforcement visible at edges"
+    ],
+    "tier_indicator": "Tier 5 salvage — pure ungoverned-shelf fabrication. No polish, no safety certifications, no corporate branding. Built from found materials in a scrap yard or Shelf workshop.",
+    "cultural_context": "Worn by scroungers, Shelf dwellers, industrial salvage workers, and street-level enforcers in the GLMZ underbelly. Signals survival, desperation, blue-collar hazard work, or crew affiliation. Suggests exposure to chemical/industrial hazards and a person comfortable operating outside corpo infrastructure.",
+    "condition_typical": "Perpetually weathered and damaged. Never pristine. Appears to have been through multiple near-death situations. Wearer likely makes field repairs with more tape and improvised fasteners. May have fresh graffiti from recent Shelf crew activity."
+  },
+  "image_prompt": "A Tier 5 salvage headwear photograph: A battered Scrapwall Faceguard MK-0 mounted on a dark weathered mannequin or worn by a hardened Shelf worker with visible subcutaneous augmentation scars. Extreme close-up on the scratched polycarbonate shield and cracked welding glass, showing oxidized corrosion and crude spray-paint tags. Harsh neon-blue and industrial sodium-light cinema lighting emphasizing pitting and damage. Gritty urban backdrop: corrugated metal wall, shipping container, or abandoned factory interior. Shallow depth of field on the eye slit. Moody, dystopian, tactile. --ar 2:3 --v 6"
 }

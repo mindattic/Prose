@@ -63,5 +63,48 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "80mm x 0.3mm Tungsten Conductive Needle Array TNA-80",
+    "Alper Holmberg-Dembele",
+    "Arcturus Exo-Runner Frame",
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Iowan Behemoth — 'Obelisk'",
+    "Lazarus LP-3 'Clinic Spider'",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Ringo Corponation",
+    "Ringo Corponation R-Cell Type-9 RC-9",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "Tessera Industries Data Spike DS-1 'Upload'",
+    "Tessera Nexus Town Car",
+    "The Filament",
+    "Tympanic Membrane Galvanic Rupture Carbine",
+    "Vantablack-CNX",
+    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purposeful rifle with an oversized upper receiver dominated by a boxy modulation processor — resembles a sniper platform crossed with medical instrumentation. The silhouette is angular and authoritative, with the processor creating an asymmetrical top-heavy appearance that reads as 'precision tool' rather than raw firepower.",
+    "dimensions": "Overall length: 92 cm | Barrel length: 58 cm | Processor unit height: 16 cm above receiver | Width at processor: 8 cm",
+    "weight_description": "Hefty but balanced — the 3.4 kg feels distributed across the frame rather than nose-heavy, though the processor unit creates a subtle shift in balance point. Controllable in shoulder mount despite apparent bulk.",
+    "primary_material": "Aerospace-grade polymer composite chassis with brushed titanium alloy receiver; modulation processor housing is reinforced polymer with embedded heat-dissipation channels",
+    "finish": "Matte gunmetal gray composite with brushed-steel accents on the processor unit. Visible heat venting across the processor shows micro-etched RINGO branding. Barrel section maintains a satin-black finish with faint electromagnetic shielding mesh pattern visible under side-light.",
+    "color_scheme": "Dominant matte gray-black with titanium silver processor accents; neon-blue LED indicator stripe running along the processor's leading edge (inactive state: dim cyan)",
+    "grip_texture": "Textured polymer grip with subtle channeling for finger purchase; wrapped with a thin conductive adhesive layer (part of the weapon's integrated ground system) that feels slightly tacky. Magazine well area is smooth molded polymer.",
+    "distinctive_features": [
+      "Oversized NMP-2 processor unit dominating the top receiver — the 'brain' — with visible cooling fins and a horizontal LED pattern indicator bar (8 discrete segments, one per charge pattern)",
+      "Rotary cassette loader on the right side with 6 spring-loaded positions, each cassette color-coded: red, amber, yellow, green, blue, violet",
+      "Integrated rangefinder sight mounted on processor unit with small digital readout window",
+      "Needle-contact confirmation indicator: small green diode near the barrel exit that pulses to indicate successful needle deployment",
+      "Electrostatic discharge vents along the barrel: micro-perforations that glow faintly when weapon is charged",
+      "Real-time modulation feedback display on the processor face: a series of small LCD windows showing current interference pattern schematic",
+      "Custom RINGO Corponation proprietary quick-disconnect charging interface (standardized among their detention-class weapons)",
+      "Faint geometric etchings on the polymer chassis — abstract circuit patterns, likely laser-etched for aesthetic detail"
+    ],
+    "manufacturer_markings": "RINGO CORPONATION serif wordmark stamped in recessed lettering on the processor housing (upper left). Serial plate (aluminum) mounted on the receiver above the magazine well with laser-etched sequence number. Compliance tag near trigger guard lists Class-B DI certification code and neural modulation frequency band.",
+    "condition_typical": "Well-maintained in the field — Tier-3 security contractors keep these scrupulously clean as the modulation processor is sensitive to debris. Light wear on grip from gloved handling; occasional scuff marks on the polymer chassis from transport. The processor unit typically shows faint residue from electrostatic discharge (faint white salt-like buildup) that operators wipe during maintenance cycles."
+  },
+  "image_prompt": "Product photography of the Electrostatic Needle Array Rifle ENAR-3 'Porcupine' against a dark matte charcoal surface. Weapon angled at 45 degrees to show the dominant boxy modulation processor unit and the 6-position rotary cassette loader in vivid detail. Dramatic side-lighting from the upper left casts sharp shadows, illuminating the brushed-steel processor accents and the faint LED indicator stripe running along the processor (rendered in cool cyan glow). The neon-blue elements should pop against the dark background. Show the color-coded cassettes (red, amber, yellow, green, blue, violet) in the rotary loader, slightly separated to show the quick-change mechanism. Include a detail shot or reflection showing the textured grip and the conductive adhesive finish. Cyberpunk detention-class tech aesthetic — clinical precision mixed with authoritarian design language. Shot in sterile corporate lighting, as if photographed for an internal Ringo Corponation security contractor catalog. --ar 3:2 --v 6"
 }

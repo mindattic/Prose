@@ -48,5 +48,25 @@
     "Crucible Industries Phalanx Building-Scale Deflector",
     "Synaptrel",
     "Zheng-Dao Heavy Industries Gecko Ascender GA-4"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Form-fitting tactical glove with a sleek, minimal silhouette. Fingers appear slightly bulbous at the tips due to the gecko-pad surface, creating a subtly alien aesthetic. The overall impression is utilitarian and deliberate — designed for function over flash, but with an undeniable edge aesthetic that reads as street-competent and dangerous.",
+    "fit": "Compression-tight across the palm and knuckles, conforming closely to hand geometry. Fingers are snug but not restrictive. Cuff sits just below the wrist with enough give for layering under jacket sleeves.",
+    "primary_material": "Neoprene-analog synthetic with microsuction gecko-pad composite on palms and finger surfaces. Electrostatically neutral polymer shell.",
+    "texture": "Outer surface is smooth, almost slick to the eye — designed to be touch-neutral. Palm and finger tips have a distinctive rippled, almost honeycomb microstructure visible under close inspection. Interior is velvet-smooth to minimize friction.",
+    "color_scheme": "Matte charcoal or deep graphite with subtle iridescent gray undertones that catch light at certain angles. No visible branding or color blocking — pure functional monochrome.",
+    "closures": "None. Friction-fit design that pulls on and off with a slight snap. Pull-tabs at each finger tip allow controlled deployment of the tips.",
+    "distinctive_features": [
+      "Slit finger-tips with pull-tab retraction system for selective touch access",
+      "Gecko-pad microsuction surface on palms and digit pads",
+      "Electrostatically neutral outer coating defeating print scanners",
+      "Small embossed triangle identifier inside left cuff only",
+      "Seamless construction with minimal external detailing",
+      "Interior smooth finish preventing secondary print transfer"
+    ],
+    "tier_indicator": "Tier 3-4 functional — street-accessible but with high-end spec origins. Secondary market Phalanx Systems sourcing signals working-class infiltrator or corpo-adjacent operative.",
+    "cultural_context": "Worn by urban infiltrators, runners, security specialists, and anyone who climbs ferrocrete or needs tactile precision without leaving traces. Signals technical competence, discretion, and comfort with gray-market hardware. Not street gang — more specialized professional.",
+    "condition_typical": "Pristine to lightly worn. Well-maintained as a tool, not as fashion. May show micro-abrasions on gecko pads from active use, but overall kept in operational condition."
+  },
+  "image_prompt": "Close-up fashion shot of a tan-skinned hand wearing charcoal Phalanx Systems GripShadow gloves, fingers slightly curled against a reflective lacquered metal surface. Gecko-pad texture visible on palm. Cyberpunk urban setting with neon signs reflected in wet ferrocrete behind. Model's augmented arm partially visible, chrome shoulder joint catching blue-tinted rim lighting. Dark moody atmosphere, high contrast, sharp focus on glove detail. Shot from above at 45-degree angle. --ar 2:3 --v 6"
 }

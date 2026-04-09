@@ -45,5 +45,36 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Carrion Defense Works Suppression Collar SC-4",
+    "Crucible Industries Storm Platform CP-8 'Deluge'",
+    "Ebele Medina-Quaye",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Lazarus Pharmaceuticals Splanchnic Triage Automaton",
+    "Nika Svensson-Kone",
+    "TESSERA TC-3 'Crucible'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, brutalist assault carbine with aggressive angularity. The SC-4 reads as purpose-built industrial—all business, minimal aesthetic flourish. Short stocky profile with a pronounced drum magazine that dominates the lower receiver. The counterweight system creates a slightly bulbous, asymmetrical look to the bolt carrier housing. Optical rail runs the full length of the upper receiver.",
+    "dimensions": "Overall length: 58 cm | Barrel length: 22 cm | Magazine height adds 12 cm | Width (magazine): 8.5 cm",
+    "weight_description": "Surprisingly balanced despite 2.8 kg weight. The counterweight system and drum magazine placement create a forward-neutral center of gravity. Hefty enough to feel substantial but not unwieldy—designed for one-handed control during dynamic movement through tight spaces.",
+    "primary_material": "Aluminum alloy 7075-T6 upper receiver. Polymer-reinforced magnesium lower frame. Steel barrel with hydrogen-embrittlement treatment for frangible round compatibility.",
+    "finish": "Hardcoat anodized matte gunmetal gray on aluminum surfaces. Parkerized steel components with light oxidation patina. Polymer sections feature a fine-grit textured finish—non-reflective, industrial.",
+    "color_scheme": "Gunmetal gray primary with matte black polymer accents. Stainless steel feed lips and chamber wear-ring create silver highlights. Optional safety selector and mag release in burnt orange anodize for quick target acquisition in low-light conditions.",
+    "grip_texture": "Rubberized pistol grip with vertical ridging for pressure-suited gloves. Fore-end features wraparound textured polymer—tacky to touch, engineered for movement in zero-g or pitch corridors. Charging handle has knurled steel inlays.",
+    "distinctive_features": [
+      "Exposed counterweight bolt carrier with visible piston rods running parallel to barrel",
+      "Drum magazine with witness holes and numbered round count (5-round increment markers)",
+      "Integrated ejection port shroud to contain frangible round fragmentation debris",
+      "Short Picatinny rail sections with QD hard-points at 45-degree intervals",
+      "Muzzle device with four symmetrical expansion ports—designed for frangible round energy dispersal",
+      "Pressure-relief vents machined into the upper receiver body",
+      "Faint laser-etched serial numbering on lower receiver with safety-cert hologram",
+      "Magazine release lever reinforced with additional polymer gusset"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES corporate logo (interlocking C and I in a gear) stamped on charging handle. SC-4 'DOWNPOUR' designation laser-marked on dust cover in clean sans-serif. 4.6mm HV FRANGIBLE / HULL-SAFE stamped on barrel in small letters. License plate on magazine identifying as Tier 3+ restricted armament.",
+    "condition_typical": "Field units show micro-scratches on aluminum surfaces and slight bluing loss on steel components. Polymer shows minor scuff marks from equipment rack storage. Dust covers rarely pristine—operational carbines accumulate salt spray or coolant residue from shipboard/station environments. Maintenance-conscious operators keep feeds and ejection ports meticulously clean."
+  },
+  "image_prompt": "Product photography of the Crucible Industries Storm Carbine SC-4 Downpour, sleek compact assault carbine with 50-round drum magazine. Weapon mounted horizontally on dark brushed steel surface, dramatic side-lighting with cool blue-white highlights accentuating the aluminum upper receiver and counterweight bolt carrier housing. Gunmetal anodized finish catching sharp edge-light. Matte black polymer accents receding into shadow. Stainless steel magazine witness holes faintly glowing. Close tactical detail of the muzzle device and rail system. Cyberpunk aesthetic—industrial, utilitarian, pressure-vessel design language. Minimal accessories. Dark studio backdrop. Professional armory catalog lighting. --ar 3:2 --v 6"
 }

@@ -50,5 +50,24 @@
     "Crucible Industries CT-X 'Gauntlet'",
     "Magpie",
     "Ximena Bautista-Nwosu"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A rigid-yet-flexible tactical forearm platform combining military engineering with wearable tech aesthetics. The primary housing wraps around the ventral forearm like a reinforced vambrace, with a segmented flexible OLED display dominating the interior surface. The overall silhouette is angular and modular, with accessory mounting points along the edges.",
+    "dimensions": "20 cm length × 8 cm width when wrapped around forearm; approximately 3-4 cm thick at control module",
+    "weight_description": "0.6 kg—handheld equivalent weight, worn but not burdensome for extended tactical operations",
+    "primary_material": "Reinforced graphite-composite housing with titanium mounting brackets; flexible polymer substrate for display segment",
+    "finish": "Matte charcoal gunmetal with slight anti-reflective coating; brushed texture on control surfaces to prevent slip",
+    "color_scheme": "Gunmetal gray primary with neon cyan accent lighting; black rubber grip zones; status LEDs in amber and tactical red",
+    "interface_elements": "Segmented flexible OLED wrap-around display (20×8 cm), seven tactile pressure-sensitive buttons along right edge, rotary input dial near wrist junction, three hardened USB-C ports (charging, data, drone link), haptic feedback actuators embedded in housing",
+    "distinctive_features": [
+      "Flexible forearm-wrap OLED display with visible segment divisions",
+      "Four corner-mounted drone control nodes with independent status LEDs",
+      "Arcturus Defense Solutions chevron logo stamped in metallic ink on dorsal mounting plate",
+      "EMP-hardened antenna bulge at proximal wrist",
+      "Modular quick-release battery cartridge with remaining-charge indicator bar"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS embossed on dorsal surface; regulatory stamps (GLMZ Corps Standard TCG-5, Tier 3+) along lower edge; serial number laser-etched on battery cartridge",
+    "condition_typical": "Field-worn with light scuff marks and dust; display showing active squad position markers, drone feed thumbnails, and tactical overlay; status LEDs cycling through connection confirmations"
+  },
+  "image_prompt": "Tactical command gauntlet worn on tactical operator's forearm, mounted on workbench under cold blue-white LED shop lighting with dramatic side-angle shadows. The flexible OLED display glows cyan, showing a live tactical map with squad member icons and drone flight paths. Chrome and brushed steel surfaces catch highlights. Surrounding the gauntlet: rifle cartridges, encrypted data chip, drone remote, all arranged on a carbon-fiber mat. Cyberpunk military-contractor aesthetic, high contrast, shallow depth of field focused on the gauntlet's display segment. Moody, professional product photography with visible cable connectors and modular battery cartridge. --ar 3:2 --v 6"
 }

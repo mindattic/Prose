@@ -56,5 +56,34 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Axiom Systems Perimeter Denial System PDS-4 'Cordon'",
+    "GLMZ",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively mundane cylindrical medical monitoring device — resembles a portable neural feedback scanner or biometric health pod. Smooth, clinical aesthetic with no obvious explosive character. The form factor intentionally mimics legitimate Asante Wellness clinic equipment, designed to blend into medical environments, office spaces, and residential settings without triggering suspicion.",
+    "dimensions": "11 cm height × 7 cm diameter (cylindrical form). Compact enough to fit in a palm, small enough to conceal in a desk drawer, pocket, or ventilation shaft.",
+    "weight_description": "Deceptively light — 0.9 kg feels almost insubstantial, like a portable medical device rather than a weapon. The weight distribution is forward-heavy due to the shaped charge core, but balanced enough that it sits stable on flat surfaces without tipping.",
+    "primary_material": "Medical-grade polymer composite shell with embedded passive scanning arrays. The exterior is reinforced with carbon-fiber mesh beneath the polymer skin to contain fragmentation. Internal core is precision-machined steel for charge containment.",
+    "finish": "Matte clinical white with soft-touch rubber coating. Top surface features a subtle brushed aluminum biometric sensor lens (8mm diameter). Minimal branding — small Asante Wellness logo printed on one side, maker's mark difficult to spot unless specifically searched for. No aggressive industrial finish; deliberately sterile and institutional.",
+    "color_scheme": "Primary: clinical white with light gray accent panels. Sensor lens: brushed aluminum with slight blue LED indicator ring (visible only when armed). Subtle gradient shading to enhance medical-device legitimacy.",
+    "grip_texture": "Soft-touch rubberized polymer — designed to be held comfortably in a gloved hand during 'installation' or 'maintenance.' The texture is warm and slightly tacky, reducing likelihood of accidental drops.",
+    "distinctive_features": [
+      "Biometric sensor lens at top — small circular aperture with subtle blue indicator ring (illuminates during active scanning)",
+      "Sealed seams with no visible fasteners — monolithic construction gives no indication of internal mechanisms",
+      "Passive heat vents on lower third (disguised as medical device ventilation slots)",
+      "Subtle tactile dimple on bottom for 'reset' function (actually safe/arm toggle, requires specific pressure sequence)",
+      "Micro-USB port on side (disguised as power input; actually used for profile upload via encrypted connection)",
+      "Serial plate inset flush with the body — barely raised, requires close inspection to read"
+    ],
+    "manufacturer_markings": "Asante Wellness Clinics logo (small, subtle) printed on upper-side panel. Serial number and lot code stamped on bottom surface in microtext. No 'TESSERA' markings visible — Asante provides plausible deniability as the 'original' manufacturer.",
+    "condition_typical": "Pristine condition maintained — the weapon is designed to sit unnoticed and unmolested in target environments. Field units show no wear marks, weathering, or patina. If found and inspected, impeccable condition reinforces medical-device legitimacy. Some units field-deployed in harsh environments show minimal polymer discoloration or scuff marks, but these are intentionally minimal to maintain cover."
+  },
+  "image_prompt": "Product photograph of a compact white cylindrical biometric medical device, 11cm tall, sitting on a dark matte black surface. Dramatic side-lighting (80-degree angle) casts sharp shadows across the clinical polymer shell, revealing the subtle brushed aluminum sensor lens at the apex. The light catches the soft-touch rubber coating, emphasizing its medical-device legitimacy. In the background, blurred hospital-grade shelving. A gloved hand (chrome-tipped augmented fingers visible) hovers near the device in the secondary shot, showing scale. Cyberpunk aesthetic: sterile, clinical, deceptive innocence. Cold color grading with subtle blue LED indicator visible in the lens. Product photography style, neutral white background option also shown. The device's mundane appearance contrasts sharply with its lethal function — a weapon designed to look like wellness technology. --ar 3:2 --v 6"
 }

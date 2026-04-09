@@ -36,5 +36,25 @@
   "related_entities": [
     "Neural Feedback Carbine NFC-3 'Mirrorgun'",
     "Sterling-Nakamura Clarity SN-11 'Glass Eye'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Translucent, second-skin gloves that appear almost invisible on the hand. The material has a faint iridescent sheen under light, with barely visible circuit tracery running along the fingertips and palm. They cling to the hand like a membrane, creating an uncanny sense of augmentation without obvious bulk.",
+    "fit": "Form-fitting, compression glove that follows every contour of the hand. Sits flush against skin with no loose material. Wrist edge has a subtle ribbed retention band that grips without constricting.",
+    "primary_material": "Biocomposite polymer blend with embedded nanoscale haptic transducers. The base is a sterile, lab-grade synthetic material that feels like treated silk-thin latex but with slightly more elasticity.",
+    "texture": "Smooth and frictionless on the outer surface, almost slick. The inner palm area has micro-textured grip nodes spaced in surgical precision. Under magnification, fine conductive threads are visible beneath the translucent surface.",
+    "color_scheme": "Translucent pale blue-white with faint bioluminescent trace patterns along nerve pathways. Under sterile packaging, the blue tint is barely perceptible—they appear almost colorless until activated.",
+    "closures": "None — the gloves are compression-fit, sealed at the wrist with a friction band that uses electrostatic adhesion. Designed for single application and removal; no reusable fasteners.",
+    "distinctive_features": [
+      "Embedded haptic feedback sensor network visible as hairline circuitry under the material",
+      "Sterile packaging with expiration timestamp printed on wrist band",
+      "MedTech Solutions holographic certification seal on the palm side",
+      "Ultra-thin construction creates an almost invisible appearance on hand",
+      "Micro-textured palm grip nodes for surgical precision",
+      "Bioluminescent trace activation indicators along fingertip pads"
+    ],
+    "tier_indicator": "Tier 1-2 medical/corpo luxury. Cost-prohibitive for general population; available only through licensed medical institutions or high-end augmentation clinics.",
+    "cultural_context": "Worn by elite surgeons, augmentation specialists, and forensic investigators. Signals access to cutting-edge biotech and surgical authority. In civilian contexts, wearing these marks someone as a medical professional or black-market body modder.",
+    "condition_typical": "Always pristine and unused when worn. Single-use design means every glove is fresh from sterile packaging. The decomposition timeline (72 hours post-opening) means they're never patched or weathered—only discarded."
+  },
+  "image_prompt": "Close-up fashion photography of translucent surgical gloves on a hand, palm open, fingers slightly splayed. The hand belongs to a figure in a dimly lit medical augmentation clinic, soft bioluminescent blue trace patterns glowing faintly along the fingertips and circuitry visible beneath the material. Background: blurred surgical instruments and dark chrome surgical chair. The gloves appear almost invisible, catching light to reveal the intricate haptic sensor network embedded within. Professional, sterile aesthetic with moody cyberpunk medical ambiance. Shot at macro detail to showcase the nano-circuitry and iridescent sheen. --ar 2:3 --v 6"
 }

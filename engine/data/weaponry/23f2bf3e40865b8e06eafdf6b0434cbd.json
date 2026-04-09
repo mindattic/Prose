@@ -40,5 +40,36 @@
     "tier_3",
     "fashion"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Aybek Alvarez-Okonkwo",
+    "Bogdan Achebe-Svanstrom",
+    "Dawnlight Industries PurityMist PM-4 'Angel Breath'",
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Irontide Tidal Energy",
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A sophisticated luxury clutch purse that reads as high-end fashion at first glance, with no visible indication of its self-defense systems. The rigid silhouette suggests structured designer craftsmanship rather than tactical equipment. Its compact, elegant form factor belies the ballistic-rated polycarbonate frame beneath supple genuine leather.",
+    "dimensions": "22 cm length x 14 cm height x 5 cm depth. Detachable strap spans 60 cm when extended.",
+    "weight_description": "Deceptively substantial at 340 grams — heavier than a standard clutch due to internal ballistic frame, but distributed to feel balanced and natural in hand. The weight registers as quality rather than bulk.",
+    "primary_material": "Genuine leather exterior with concealed ballistic-rated polycarbonate frame core. Premium hardware throughout.",
+    "finish": "Supple, hand-finished leather with a subtle sheen. Hardware shows brushed metal accents (likely titanium or aerospace-grade aluminum). Interior clasp mechanism has a barely-visible activation point disguised as decorative detailing.",
+    "color_scheme": "Seasonal palettes and designer collaborations; typically luxe neutrals (midnight black, champagne, deep burgundy, caramel) with subtle metallic hardware. Limited edition colorways in contemporary fashion tones.",
+    "grip_texture": "Premium leather handle with slight ergonomic curve, topped with a squeeze-activated panic system disguised as decorative grip padding. Feels supple and expensive, with no texture that hints at embedded electronics.",
+    "distinctive_features": [
+      "Concealed clasp mechanism requires precise open-close-open activation pattern within 1 second to trigger stun emitter",
+      "Barely-visible micro-perforations along the clasp housing for stun electrode conductivity",
+      "Reinforced detachable cord strap with woven composite reinforcement",
+      "Subtle LED indicator (likely beneath leather trim) that glows faintly when charged",
+      "Panic system integrated into handle grip — pressure-sensitive without visible button",
+      "Internal ballistic frame creates sharp, rigid silhouette that distinguishes it from soft-sided clutches",
+      "Minimal branding — Dawnlight Industries logo likely appears as subtle stamped or embossed mark on interior"
+    ],
+    "manufacturer_markings": "Dawnlight Industries branding appears as discrete embossing or etching on interior leather, possibly near a serial plate. No external tactical-style markings; maintains luxury product aesthetic.",
+    "condition_typical": "Pristine to well-maintained. Designed to remain fashionable through regular use. Users maintain leather conditioning and hardware polish to preserve luxury appearance. Ballistic frame shows no external wear. May accumulate minor cosmetic marks from daily accessory use."
+  },
+  "image_prompt": "Product photography of a luxury leather clutch purse (22cm x 14cm), midnight black or champagne leather with brushed titanium hardware, shot on dark reflective surface. Clutch positioned at three-quarter angle showing clasp detail and detachable reinforced cord strap. One gloved hand (chrome-accented tactical glove) holding the clutch, demonstrating grip. Dramatic side-lighting emphasizing leather texture and hardware shine. Close-up inset showing concealed stun emitter micro-perforations near clasp mechanism. Overall aesthetic balances high-fashion luxury with subtle cyberpunk self-defense technology. Photorealistic, premium product catalog style. --ar 3:2 --v 6"
 }

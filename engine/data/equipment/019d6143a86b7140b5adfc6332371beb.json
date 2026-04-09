@@ -75,5 +75,24 @@
     "Symbiont",
     "The Footprint",
     "Vantablack Media"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, wedge-shaped urban microvan with an aggressive forward rake and flush, aerodynamic surfaces. In standard mode, it presents a compact sedan-like silhouette; in collapsed state, it becomes a narrow, elongated form factor resembling a high-tech motorcycle with an enclosed cabin. The Tandem Fold System's mechanical nature is visually evident — visible interlocking structural ribs along the sides create a segmented, modular appearance.",
+    "dimensions": "Standard: 410cm L × 180cm W × 155cm H; Collapsed: 250cm L × 110cm W × 155cm H. Vehicle-scale, fits standard parking spaces in compressed mode.",
+    "weight_description": "Approximately 1,200 kg; heavy enough to require powered steering and braking, light enough for single-charge efficiency across GLMZ distances.",
+    "primary_material": "Aluminum alloy chassis with carbon-fiber composite body panels. Pneumatic sleeve joints use reinforced elastomer.",
+    "finish": "Matte gunmetal-gray primary with brushed aluminum accent strips along the fold seams. Surfaces treated with anti-reflective coating to minimize corporate surveillance detection.",
+    "color_scheme": "Gunmetal gray (#2F3437) body with chrome-silver fold mechanisms and accent stripping. Optional tier 1 corporate livery packages available in deep blue or midnight black.",
+    "interface_elements": "Centralized 12-inch holographic heads-up display mounted above steering yoke; physical emergency collapse/deploy lever (red anodized aluminum) on driver's right knee panel; capacitive touch pad for tertiary controls; dual USB-C ports for auxiliary systems; pneumatic pressure gauge visible on lower left flank.",
+    "distinctive_features": [
+      "Visible interlocking structural ribs that shift position during compression — creates a rippling, organic motion during fold/unfold cycle",
+      "Pneumatic sleeve joints glow faintly blue when system is pressurized (nitrogen-based indicator dye)",
+      "Recessed LED light strip that runs the length of both flanks, angles dynamically during turns",
+      "Transparent polycarbonate side panels on rear cargo section revealing folded seat mechanisms",
+      "Modular snap-point anchors visible across interior frame for aftermarket augmentation mounting"
+    ],
+    "manufacturer_markings": "Ringo Corporation's interlocked-ring logo (Φ-stamped) on driver-side lower panel in raised chrome; 'TANDEM FOLD SYSTEM™' laser-etched along right shoulder line; regulatory compliance stamps (GLMZ Urban Vehicle Authority, split-axle certification) on rear bumper in white reflective text.",
+    "condition_typical": "In urban deployment, typically observed in compressed state in tight parking corridors and narrow side streets; occasional street-market presence where drivers expand to full width for short-haul cargo missions. Light surface wear accumulates in salt-spray zones near Great Lakes access routes; pneumatic joint seals show minor dust accumulation requiring seasonal maintenance."
+  },
+  "image_prompt": "Product photography of a Ringo Tandem Fold Microvan, positioned in a narrow GLMZ infrastructure alleyway between brutalist concrete structures. Vehicle shown mid-transformation, partially compressed with visible interlocking ribs in motion, pneumatic sleeves glowing soft blue. Dramatic neon accent lighting in cyan and magenta reflecting off matte gunmetal body. Wet pavement from recent rainfall, creating mirror reflections. Overhead: exposed industrial piping and holographic corporate signage casting colored shadows. Ultra-detailed mechanical joints, visible carbon-fiber weave. Cyberpunk aesthetic with documentary realism. Shot from three-quarter front angle, 50mm lens equivalent, shallow depth of field isolating vehicle details against blurred megacity backdrop. --ar 3:2 --v 6"
 }

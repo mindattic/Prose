@@ -44,5 +44,41 @@
     "high_voltage",
     "arcturus"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Arcturus ST-4 'Verdict'",
+    "Fanta Kato-Adomako",
+    "Ira Volkov",
+    "Lazarus Pharmaceuticals Nociceptive Threshold Adjuster",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Osvaldo Mensah-Kovalenko",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "Tessera Nexus Town Car",
+    "The Burden Clause",
+    "The Pure Hand",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A purposeful baton with a subtle high-tech edge—rigid, authoritative stance. The hardened polymer body tapers slightly toward a reinforced striking end, while the grip section flares minutely to accommodate the recessed rotary selector. No aggressive angles; this is engineered restraint wearing the language of control.",
+    "dimensions": "650mm overall length; grip section 120mm; striking head 80mm diameter; 45mm diameter rotary selector housing",
+    "weight_description": "Substantial without being cumbersome—940g distributed along the shaft creates deliberate momentum. Feels planted in a closed grip, engineered for sustained holding without fatigue across extended enforcement operations.",
+    "primary_material": "Military-specification hardened polymer composite; core structure likely carbon-reinforced polymer with impact-absorbing elastomer lamination",
+    "finish": "Matte tactical finish with subtle texture grip—non-reflective to minimize target awareness in low-light operations. Selective brushed-metal accents around the selector housing and power-cell access panel. Evidence of use: minor scuff marks consistent with field deployment.",
+    "color_scheme": "Gunmetal grey body with darker charcoal grip panels. The rotary selector features discrete voltage-setting markings in faded white text (10K, 30K, 60K, 120K) with the fifth position marked by a single red band and no label—intentional ambiguity.",
+    "grip_texture": "Rubberized polymer grip with shallow crosshatch texture for wet-glove traction. The selector itself has a knurled surface requiring deliberate two-finger manipulation—tactile feedback prevents accidental escalation.",
+    "distinctive_features": [
+      "Recessed rotary selector requiring coordinated press-and-turn action",
+      "Red band marking on fifth selector position (unmarked/unlabeled setting)",
+      "Visible capacitor-block access panel on lower grip (quick-swap design)",
+      "Faint Arcturus Defense Solutions and 'VVR-5' designation stamped into upper body",
+      "Faintly luminescent contact points at striking head (residual capacitor field indicators)",
+      "Subtle wear pattern on selector knurling—evidence of repeated operator use"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (stylized 'A' with targeting reticle) stamped on grip panel; 'VVR-5 DIAL' designation below; contract-issued variants include military procurement codes laser-etched on the capacitor access panel. Secondary-market units often have these markings deliberately obscured.",
+    "condition_typical": "Field-maintained and serviceable. Well-cared-for contractor weapons show minimal damage; black-market examples exhibit wear consistent with multiple handovers—selector roughness, minor polymer stress cracks near impact points, sometimes poorly applied grip tape over original coating."
+  },
+  "image_prompt": "Product photography of an Arcturus VVR-5 shock baton displayed horizontally on a dark matte surface, held in gloved tactical hands at a low 45-degree angle. Dramatic side-lighting from upper left reveals the brushed metal selector housing and subtle polymer texture. The red band on the fifth selector position catches directional light. Background: dark grey gradient fading to black, suggesting an enforcement-operations environment. Include shallow depth of field with Arcturus branding visible but slightly out of focus on the grip. Cyberpunk aesthetic: cool blue ambient backlighting frames the entire piece, emphasizing the capacitor access panel and faint luminescent contact points. Include subtle electrical shimmer effect around the striking head. Shot from a 3/4 view angle. --ar 3:2 --v 6"
 }

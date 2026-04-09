@@ -57,5 +57,28 @@
     "The Pure Hand",
     "The Seam",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Imposing, utilitarian silhouette — broad shoulders tapered by reinforced panels, long and angular from waist to ankles. The garment reads as protective fortification rather than fashion: industrial, deliberately scarred, built for survival in harsh environments. A person in this outfit appears grounded, capable, ready for physical labor or conflict.",
+    "fit": "Deliberately oversized through the torso and thighs, allowing layering and unobstructed movement. The chest and shoulders are structured by fused ballistic patches that create subtle bulk. Right leg is wide and loose to accommodate chrome prosthetic; left leg tapers slightly toward the boot cuff.",
+    "primary_material": "Dense slate-grey canvas (base), charcoal dungaree twill, grey-black ballistic weave patches (shoulder/elbow reinforcement), recovered polycarbonate sheeting (chest plate), dark leather (bib strap, tool belt, gloves), black leather boots, industrial conveyor belt rubber (sole), rust-brown cotton (balaclava)",
+    "texture": "Rough and tactile — heavy canvas with visible weave, fused patches create subtle armor-like ridges and sheen variation, leather is cracked and supple from use, polycarbonate plate is matte and rigid, rubber sole is deeply grooved and gripping",
+    "color_scheme": "Slate-grey and charcoal foundation with grey-black ballistic accents; dark brown leather providing warmth and contrast; rust-brown balaclava adds historical decay aesthetic; steel-grey metal hardware (rivets, snaps, carabiners) scattered throughout",
+    "closures": "Heavy-duty snaps (right leg seam access), rivet stitching (leather bib strap), lace-up boots with thick cordage, friction-fit tool belt, carabiners securing cords",
+    "distinctive_features": [
+      "Fused ballistic weave patches at shoulders and elbows — dual-layer armor aesthetic",
+      "Polycarbonate chest plate sewn into dungaree bib — visible protective panel",
+      "Right leg open seams with industrial snaps for prosthetic access and maintenance",
+      "Riveted leather bib strap replacing original fabric — marks of custom repair",
+      "Cut-away fingerless right-hand glove fingers for dexterity",
+      "Tool belt with multi-tool, carabiners, safety cord — working utility integrated into garment",
+      "Tall steel-toed boots with industrial conveyor belt resole",
+      "Rust-brown balaclava stowed in chest pocket — ready-access face protection",
+      "Visible wear: creased canvas, weathered leather, scuff patterns on reinforced zones"
+    ],
+    "tier_indicator": "Tier 4-5 functional salvage — self-constructed from industrial surplus, no luxury markers, built for survival and hard labor rather than status",
+    "cultural_context": "Street engineer, industrial salvage worker, or dockside maintainer. Signals competence, scarcity mindset, and willingness to work dangerous jobs. The chrome prosthetic visibility (via accessible snaps) indicates visible augmentation — common among working-class GLMZ residents who can't afford invisible subcutaneous tech. This is worn by people who fix things, move things, survive things.",
+    "condition_typical": "Perpetually weathered — creases in the canvas from repeated bending, scuffed polycarbonate plate, salt stains on leather, worn brass rivets, frayed lace ends, grease and grime settling into seams. Each piece looks broken-in and jury-rigged, maintained through necessity rather than aesthetics."
+  },
+  "image_prompt": "Cyberpunk fashion photography: tall androgynous figure wearing slate-grey canvas work shirt with charcoal dungaree overlayer, reinforced shoulder and elbow patches of ballistic weave creating subtle armor texture. Visible polycarbonate chest plate. Right leg dungaree snapped open to reveal chrome prosthetic limb. Tall steel-toed lace-up boots with industrial rubber sole. Leather tool belt hanging across hips with carabiners and cord. Thick cut-fingered work gloves on hands. Rust-brown balaclava peeking from chest pocket. Shot against moody neon-lit industrial backdrop — corrugated metal wall, overhead sodium light casting harsh shadows. Cool color grade with warm leather and rust tones. Detailed close-ups of patched reinforcements and prosthetic access snaps. Dark, utilitarian aesthetic, Great Lakes Metropolitan Zone dockside aesthetic, 2226. --ar 2:3 --v 6"
 }

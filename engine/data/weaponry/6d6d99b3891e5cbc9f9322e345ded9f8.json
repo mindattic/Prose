@@ -42,5 +42,35 @@
     "BCI",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Ilhan Sandstrom-Badu",
+    "Irkalla",
+    "Nika Svensson-Kone",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Sisay Bergqvist-Mallari",
+    "Vantablack FH-20 'Convoy'",
+    "Volkov-Saito Precision VS-44 'Fenris'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular precision rifle with a pronounced bullpup-influenced silhouette. The receiver tapers from a robust breech assembly to a slender, almost surgical barrel. The overall aesthetic is predatory—sharp lines and minimal ornamentation. The gun reads as purpose-built military hardware, with an almost organic aggression to its form.",
+    "dimensions": "Overall length: 98 cm | Barrel length: 61 cm | Width at receiver: 8.5 cm | Height with scope rail: 12 cm",
+    "weight_description": "Hefty but well-balanced. At 7.2 kg, it settles into the shoulder with confident authority—substantial enough to absorb recoil, but not so heavy as to feel unwieldy during sustained aim.",
+    "primary_material": "Titanium-reinforced polymer chassis with steel receiver and barrel. The breach housing shows machined steel to handle the explosive bolt separation mechanism.",
+    "finish": "Deep matte charcoal polymer with brushed steel accents around the receiver and breech. High-wear areas show a silvered burnish from repeated handling. The barrel has a faint oil-slick iridescence from bore coating.",
+    "color_scheme": "Matte charcoal-black primary with gunmetal gray steel accents. Subtle teal accent lines run along the rail system—BCI-linked status indicators.",
+    "grip_texture": "Textured polymer grip with shallow fingergrooves. Slightly tacky rubberized overmold for secure purchase even in gloved hands. The magazine well is reinforced with slight ribbing.",
+    "distinctive_features": [
+      "Flush-mounted BCI interface pad on the left receiver—pale luminescent ring that pulses when linked to guidance package",
+      "Three precision-machined apertures visible at the muzzle brake, hinting at the internal separation mechanism",
+      "Elongated charging handle set slightly proud of the body for tactical glove compatibility",
+      "Magazine marked with trio of red diamond symbols indicating split-munition loadout",
+      "Integrated rail system with low-profile mounting points for optics—designed for minimal profile",
+      "Heat vents along the receiver body, barely visible but tactilely apparent",
+      "Serial plate on left side reads: FENRIS FB-7-WOLFPACK with micro-etched batch codes"
+    ],
+    "manufacturer_markings": "FENRIS BALLISTICS stamped in small caps on the left receiver. A raised Fenris wolf-head logo (stylized single eye) embossed on the magazine floorplate. Serial designation plate inset flush into the lower receiver with batch traceability codes.",
+    "condition_typical": "Field-worn but maintained. Polymer shows micro-scratches and slight discoloration from weather exposure. Steel components retain luster but show faint patina from regular use. No visible damage—this is a weapon that sees regular deployment and professional care."
+  },
+  "image_prompt": "Product photograph of the Fenris Ballistics Howl FB-7 'Wolfpack' sniper rifle lying on a dark gunmetal surface, angled 45 degrees. Dramatic side-lighting from upper left casting sharp shadows across the muzzle brake and receiver. The BCI interface pad glows a faint teal in the shadows. Close-up detail showing the three apertures at the muzzle and the charging handle. Textured polymer grip in sharp focus. Cyberpunk aesthetic: hard-edged, military-grade, precise. Dark background with subtle reflected light off brushed steel accents. The wolf-head logo subtly visible on the magazine. Professional tactical equipment photography. --ar 3:2 --v 6"
 }

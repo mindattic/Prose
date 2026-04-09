@@ -50,5 +50,27 @@
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Neural Feedback Carbine NFC-3 'Mirrorgun'",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A muscular, industrial silhouette—rigid exoframe overlaying a fitted compression base. The gunmetal titanium exoskeleton dominates the visual; orange hydraulic lines trace the spine and legs like glowing veins. Hi-vis amber panels at shoulders and thighs create warning-stripe contrast against slate gray. Reads as purposeful, augmented, working-class utility.",
+    "fit": "Form-fitting compression base under rigid exoframe; articulated joints at elbows, knees, hips, and shoulders allow mobility. The exoskeleton sits slightly proud of the body, creating a layered, armored aesthetic. Compression suit hugs the torso and limbs; exoframe adds 2–3 inches of bulk.",
+    "primary_material": "Brushed gunmetal titanium-alloy exoframe, polycarb joint housings, stretch-aramid compression base suit, translucent silicone pressure hose (orange), synthetic rubber reinforcement panels",
+    "texture": "Smooth brushed metal on the exoframe with visible machining marks; matte polycarb joints; ribbed stretch-aramid on the base suit; translucent orange hose with visible fluid inside; rubber grip zones on palms and knees",
+    "color_scheme": "Gunmetal gray (exoframe), dark slate gray (base suit), hi-vis amber (shoulder and thigh panels), translucent orange (hydraulic lines), matte black (joint caps and connectors)",
+    "closures": "Integrated neural interface collar (BCI contact points); friction-fit articulated frame; reinforced elastic cuffs at wrists and ankles; pressure-sealed joints; no visible zippers or manual closures",
+    "distinctive_features": [
+      "Visible hydraulic pressure lines running spine and outer legs",
+      "Brushed titanium-alloy exoframe with articulated polycarb joint housings",
+      "High-visibility amber paneling at shoulders and thighs (safety compliance or street intimidation)",
+      "Neural interface collar for BCI load-sensing feedback",
+      "Reinforced palms, knees, elbows in abrasion-resistant rubber",
+      "Translucent orange pressure hoses with visible hydraulic fluid",
+      "Axiom Defense branding (subtle, on chest and shoulder)",
+      "Tool-attachment points and cable routing channels on thighs"
+    ],
+    "tier_indicator": "Tier 3–4 functional: expensive enough to signal corporate affiliation or salvage-market investment, practical enough for blue-collar legitimacy. Black-market demolition crews modify and re-sell these.",
+    "cultural_context": "Construction worker, demolition operator, or sub-grade salvage worker. Wearing this signals technical skill, augmentation acceptance, and either corpo contract work or black-market familiarity. The exoframe reads as body-honest—this person does heavy lifting for a living.",
+    "condition_typical": "Factory-fresh examples show pristine brushed finish and clear orange hose; field-worn versions display scratched titanium, stained hydraulic fluid in hoses, and patched aramid on knees and elbows. Shelf demolition variants often show crude repairs, rust blooming, and reinforced welds."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a construction worker wearing an Axiom Defense ArcShell exo-suit, full-body pose in a dark industrial setting—abandoned skyscraper frame, steel scaffolding, or demolition site in shadow. Harsh overhead lighting catches the brushed titanium exoframe and orange hydraulic lines, creating stark highlights and shadows. Model stands in power stance, hands slightly flexed to show reinforced palms. Neural interface collar glows faintly blue. Dark slate gray compression base visible at the neck, wrists, and ankles. Hi-vis amber panels on shoulders and thighs catch the light. Gritty concrete floor, metal debris scattered. Mood: utilitarian, augmented, working-class strength. Shot on dark background or silhouetted against industrial geometry. Moody neon amber reflected in wet pavement. --ar 2:3 --v 6"
 }

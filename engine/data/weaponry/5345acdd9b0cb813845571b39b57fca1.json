@@ -41,5 +41,43 @@
     "mystery",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
+    "Arcturus Defense Solutions",
+    "Arcturus KS-11 'Coffin Nail'",
+    "Bay View Docks",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Glenville Sound",
+    "Lambeau Terminus",
+    "Nenad Vargas-Baffour",
+    "Nika Svensson-Kone",
+    "Nnamdi Ostrowski-Faletolu",
+    "Tessera Corponation",
+    "Vantablack BC-1 'Briefcase'",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally minimalist break-action railgun that resembles a surgical instrument more than a conventional firearm. The silhouette is dominated by a severely tapered barrel that emerges from a compact receiver barely larger than a pistol grip. The overall aesthetic is skeletal and purposeful — every curve and angle justified by ballistics, nothing extraneous.",
+    "dimensions": "Total length: 52 cm | Barrel length: 40 cm | Receiver width: 8 cm | Height (mounted): 6 cm",
+    "weight_description": "Deceptively light in hand at 4.2 kg — the weight is concentrated in the barrel and receiver, creating a front-heavy balance that demands precision grip. Feels like holding compressed intent.",
+    "primary_material": "Tungsten-alloy barrel over carbon-composite receiver. Breach block machined from aerospace-grade titanium. Integration points forged steel.",
+    "finish": "Matte black titanium with brushed graphite accents. The barrel has a subtle iridescent sheen where electromagnetic coils are embedded beneath the surface — visible only under direct light as faint interference patterns. No reflective surfaces.",
+    "color_scheme": "Deep matte black primary with gunmetal gray breach mechanism. Minimal accent lighting in cold blue from the capacitor status indicator (recessed into the left receiver face).",
+    "grip_texture": "Textured polymer with embedded dissipative coating to prevent capacitor feedback. Rough, almost abrasive — designed to be gripped hard without slipping even with sweat or blood.",
+    "distinctive_features": [
+      "Capacitor indicator: small LED array (blue-green) recessed into left receiver, glowing during charge cycle",
+      "Breach mechanism: exposed titanium clamshell that rotates downward for needle loading — no external lever, motion is mechanical and deliberate",
+      "Barrel porting: microscopic electromagnetic field vents are invisible to naked eye but create subtle thermal distortion signature",
+      "Serial plate: single etched line of numbers on the receiver bottom, barely legible even at close range, laser-marked rather than stamped",
+      "Accelerator coils: faint hexagonal grid pattern visible along barrel length where composite wraps around ferrous core",
+      "No safety. No selector. No accessories rails.",
+      "Integrated thumbhole that doubles as capacitor heat sink"
+    ],
+    "manufacturer_markings": "No logo. No branding. A single serial number etched into the bottom of the receiver in microscopic characters: position it under magnification to read. This is the only identification the weapon carries — no 'GRAVE PROTOCOL ARMS' stamp, no manufacturer claim, nothing that could be traced.",
+    "condition_typical": "Field units show deliberate wear patterns — never battle-scarred (these weapons are rarely fired twice), but bearing evidence of hasty preparation and swift deployment. Minor holster scratches on the receiver. Occasional residual polymer dust in the breech from transportation in sealed cases. Otherwise maintained obsessively by operators who understand they have one engagement and must execute perfectly."
+  },
+  "image_prompt": "Product photography: Grave Protocol Arms Terminus GPA-1 sniper railgun lying on a matte black fabrication surface, photographed from a three-quarter angle. The weapon is compact and skeletal, barely 52cm long, with a severely tapered tungsten-alloy barrel that tapers to a needle point. Carbon-composite receiver in matte black, titanium breach block gleaming gunmetal gray. Recessed blue-green capacitor indicator glows softly on the left side. Dramatic side-lighting creates subtle iridescence where electromagnetic coils are embedded beneath the surface. Surrounding the weapon: precision measurement tools, a sealed transport case corner visible, and a cyberpunk workshop aesthetic with dark tones and cold lighting. The weapon appears clinical, purposeful, impossible — a tool designed for a single perfect moment. No human hands visible. Cinematic, high-detail, hyper-realistic materials. Cyberpunk aesthetic, Great Lakes Metropolitan Zone 2226. --ar 3:2 --v 6"
 }

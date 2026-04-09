@@ -45,5 +45,34 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "NeuralPath VaultPay Subdermal Transaction Node",
+    "Nika Svensson-Kone",
+    "The Human Baseline Alliance",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, anatomically sculpted precision rifle with flowing ergonomic lines. The silhouette is distinctly modular yet cohesive—every surface seems intentional. The receiver is tapered and refined, suggesting bespoke engineering. The stock curves to match spinal geometry, and the grip appears custom-molded. Overall impression: surgical precision wrapped in lethal elegance.",
+    "dimensions": "Length: 1,065 cm (configuration-dependent); barrel length: 56-61 cm typical; width across stock: 8 cm; height with optics: 18-22 cm",
+    "weight_description": "Perfectly balanced despite 4-6 kg mass—weight distributes along the length and through the shoulder stock, creating the sensation of an extension of the user's body rather than a tool being held. Feels responsive and alive in the hands.",
+    "primary_material": "Aerospace-grade titanium alloy receiver; carbon-fiber composite stock and handguard; custom-fitted steel barrel; reinforced polymer inserts at stress points",
+    "finish": "Satin-anodized titanium with mil-spec matte base. Selective brushed stainless accents on trigger assembly and rail interface. The finish shows intentional wear patterns from hand-fitting—micro-scratches that prove individual craftsmanship rather than CNC perfection.",
+    "color_scheme": "Gunmetal gray primary (titanium anodize); matte black composite (stock/handguard); polished chrome/steel accents on mechanical components; deep charcoal grip panels with subtle metallic fleck",
+    "grip_texture": "Textured polymer with embedded micro-dimples for neural interface contact points. Custom-contoured to individual buyer's palm geometry. Subtle warmth from embedded conduction layer beneath surface.",
+    "distinctive_features": [
+      "Neural interface calibration nodes (3-4 small flush-mounted sensors) along the grip and rear stock—barely visible without close inspection",
+      "Custom engraved serial number (individual Masterwork identifier) on left receiver side, accompanied by owner's personal mark",
+      "Hand-fitted action cover with witness marks from gunsmith's finishing work",
+      "Bespoke optics rail with integrated cable management for BCI feed",
+      "Asymmetrical charging handle positioned for individual shooter's dominant hand preference",
+      "Ejection port design optimized for cartridge type with custom feed-ramp geometry",
+      "Subtle maker's mark: VOLKOV-SAITO crest etched near the front sight base",
+      "Tension screw heads with custom torque-applied patina (proof of precision assembly)",
+      "Magazine well lip radiused to shooter's insertion habit signature"
+    ],
+    "manufacturer_markings": "VOLKOV-SAITO PRECISION logo (Cyrillic 'V' interlock with Japanese character, ~1.5 cm height) etched on left receiver just forward of charging handle. Serial number below: [VSCS-1-XXXX] in fine serif font. Birth certificate plate affixed to stock: maker/date/owner initials. No mass-production markings—this is a signature piece.",
+    "condition_typical": "Arrives in pristine condition. Field condition shows selective wear: grip textured areas darken from use, the bolt carrier develops a patina, optics mount shows minimal scarring. The weapon ages gracefully, each mark a record of its shooter's practice and missions. Masterworks are jealously maintained—damage is professional-grade and minimal."
+  },
+  "image_prompt": "Volkov-Saito VSCS-1 Masterwork DMR lies diagonally across matte charcoal gunsmith's bench, shot from above. Dramatic side-lighting (cool blue-white LED + warm tungsten accent) highlights the titanium receiver's satin-anodized finish and carbon-fiber stock's subtle weave. Gloved hand (midnight blue tactical glove with conductive fingertips) adjusts the custom-fitted optics. Shallow depth of field isolates the weapon. Visible details: engraved serial number, flush-mounted neural interface nodes, hand-fitted mechanical components showing individual gunsmith witness marks, custom trigger assembly. Cyberpunk aesthetic: precision engineering meets intimate craftsmanship, the rifle glowing subtly from embedded calibration LEDs. Background: blurred workshop tools, precision instruments, titanium shavings. Professional product photography quality, cinematic cyberpunk noir lighting. --ar 3:2 --v 6"
 }

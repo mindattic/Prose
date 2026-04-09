@@ -41,5 +41,26 @@
     "The Human Baseline Alliance",
     "The Shelf",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian combat silhouette with deliberate menace. Broad-shouldered, fitted through the torso, with reinforced panels that create subtle geometric shadows across the chest and back. The deep charcoal absorbs light, making the wearer appear heavier and more solid than they are. Embossed silver Arcturus sigils catch ambient light like hunting scars. Overall impression: authorized predator.",
+    "fit": "Wide through shoulders and upper chest to accommodate cybernetic augmentation, tapered at the waist, with articulated gusset at rear waistband for baseline geneware. Compression-fitted through the limbs without restricting movement. Collar and cuff ports create subtle architectural breaks in the silhouette.",
+    "primary_material": "Aramid-graphene weave with semi-rigid trauma plate integration. Treated with ThermoNull coating (proprietary Arcturus thermal-scattering technology).",
+    "texture": "Smooth, almost liquid appearance in normal light due to ThermoNull treatment, but micro-textured to the touch with faint ribbing where impact plates lie beneath. Embossed sigils are slightly raised and cool to contact.",
+    "color_scheme": "Deep charcoal (near-black) as primary; matte silver embossed Arcturus sigils on chest and back that shift subtly under UV. Darker shadows pooling in seams and articulation points.",
+    "closures": "Magnetic pressure-seal system along center front, rated for one-handed operation. Friction-fit collar and cuff ports with indexed keying for BCI hardline routing. Rear gusset secured with hidden elastic tensioning.",
+    "distinctive_features": [
+      "Embossed Arcturus sigils on chest and back (UV-reactive, passive drone ID protocol)",
+      "Collar and cuff ports for BCI hardline pass-through without breaking sealed integrity",
+      "Articulated tail gusset at rear waistband (geneware accommodation)",
+      "Wide shoulder cut accommodating standard chrome arm augments",
+      "Integrated RFID layer in weave (employment token validation)",
+      "ThermoNull coating scatters thermal imaging and resists incendiary splash",
+      "Aramid-graphene semi-rigid trauma plates (hardens on impact, returns to flexibility in 0.3s)"
+    ],
+    "tier_indicator": "Tier 3-4 working/enforcement class, but signals Tier 1 authority through restricted institutional access. Possession without valid Arcturus employment token is a restricted-carry offense.",
+    "cultural_context": "Arcturus field operative; sanctioned threat-response authority. Wearing this uniform triggers immediate social deference or evasion depending on location tier. For the wearer, it is psychological armor separating operative from accountability — you are the uniform, the uniform is the contract.",
+    "condition_typical": "Pristine or near-pristine when active (weekly maintenance required). ThermoNull coating shows micro-abrasions and minor scorching in high-deployment operatives. Embossed sigils remain sharp; any degradation triggers mandatory uniform replacement per Arcturus protocol."
+  },
+  "image_prompt": "Arcturus FieldGuard MK-7 tactical uniform displayed on a sleek dark mannequin or worn by a cybernetic-augmented model, deep charcoal fabric with matte silver embossed sigils catching rim light on chest and back. Moody blue-green neon backlighting cutting through industrial smoke in a GLMZ enforcement precinct setting. Close-up detail of collar port and BCI routing. Wide shoulders emphasized. ThermoNull coating creates subtle liquid sheen. Atmosphere: authoritarian, precise, lethal. Dark urban warehouse backdrop with holographic Arcturus branding barely visible in shadows. --ar 2:3 --v 6"
 }

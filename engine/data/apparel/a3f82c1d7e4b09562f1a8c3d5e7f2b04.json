@@ -55,5 +55,27 @@
     "Periscope",
     "Tessera Industries Optical Disruptor OD-4 'Strobe'",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately deconstructed rave ensemble that reads as high-risk, high-reward street glamour. The silhouette is deliberately asymmetrical and fragmentary — exposed skin patches between torn mesh and scrap fabric create visual rhythm. Bioluminescent thread traces erratic pathways across the torso, pulsing softly with body heat. The overall impression is one of controlled chaos: barely-held-together, dangerous, and hypnotic under strobelight.",
+    "fit": "Barely-there and intentionally unstable. The halter top hangs loose and backless, relying on the wearer's movement to stay positioned. High-cut shorts cling asymmetrically — one side intact and fitted, the other side frayed and loose. Nothing is tailored; everything shifts during motion.",
+    "primary_material": "Reclaimed bioluminescent mesh (aqua-green), scrap synth-latex (sheer black), salvaged synth-leather (one leg intact, one shredded), emergency reflective tape, hand-injected biolum thread, adhesive grip-tape, mismatched recycled platform materials with cosmetic chrome cladding.",
+    "texture": "Varied and tactile — mesh is translucent and slightly sticky, synth-latex is slick and paper-thin, leather is worn and supple, fringe is rough-cut and sharp at the edges, grip-tape is adhesive and textured, biolum thread creates subtle raised stitching that glows. Deliberately rough-finished throughout.",
+    "color_scheme": "Primary aqua-green bioluminescent mesh over black sheer base. Biolum thread shifts blue-green to pale yellow depending on thermal input. Accent colors include emergency orange reflective tape (waistband), weathered chrome (wrist cuff), and the natural browns/blacks of aged synth-leather. Foot wraps in matte black adhesive tape.",
+    "closures": "Minimal and improvised — friction-fit halter (relies on tension), no fasteners on shorts (held by synth-leather cling and tape wrapping), wrap-adhesive grip-tape on feet, mismatched platform sandals held together with duct-tape or thermal-seal patches.",
+    "distinctive_features": [
+      "Hand-injected black-market biolum thread pulsing erratically with thermal response",
+      "Backless halter design with intentional tears and layering",
+      "One-leg-intact, one-leg-frayed synth-leather shorts creating dramatic asymmetry",
+      "Emergency reflective tape repurposed as waistbanding",
+      "Cracked cosmetic chrome cuff (non-functional augmentation aesthetic)",
+      "Mismatched platform heel heights on repurposed sandals",
+      "Adhesive grip-tape wrapping on bare feet",
+      "Throughout wear pattern showing imminent failure — threads coming loose, seams splitting, patches showing"
+    ],
+    "tier_indicator": "Tier 5 / sub-grade street aesthetic masquerading as Tier 1 luxury through bioluminescence. The biolum thread and mesh are expensive in their raw form, but the assembly is pure salvage and DIY black-market work. Signals: 'I have access to contraband, I'm willing to risk it on the dance floor, I don't care if it falls apart.'",
+    "cultural_context": "Rave underground, black-market biotech enthusiast, DIY body-mod culture. Wearing this signals participation in ungoverned nightlife, comfort with illegal biolum sourcing, and aesthetic commitment to 'beautiful disaster.' The wearer is likely a denizen of basement clubs, illegal raves, or the fringes of corpo-sponsored events where security is too busy to care.",
+    "condition_typical": "Worn and actively falling apart — threads loose, seams stressed, synth-latex showing cracks and fatigue, chrome cuff already cracked and dull. Typically shows fresh stains from club atmosphere (sweat, synthetic fog residue, spilled beverages). The biolum thread may be dimming or flickering inconsistently from cumulative wear and repeated body heat cycles."
+  },
+  "image_prompt": "Cyberpunk fashion photograph: a lean, augmented model wearing a deconstructed Ashveil biolum rave outfit — backless aqua-green mesh halter over sheer black scrap, asymmetrical synth-leather shorts with one leg intact and one leg shredded into fringe, adhesive grip-tape feet wrapped in mismatched platform sandals, cracked chrome cuff catching light on one wrist. Bioluminescent thread glows soft blue-green across the torso, pulsing irregularly. Dark underground club setting with scattered neon and strobe lighting; reflective tape accents catch flashes of color. Model's skin shows the wear of the fabric against bare patches. Moody, high-contrast lighting emphasizing the glow of the biolum and the fragile, dangerous aesthetic of the ensemble. Shot in dark cyberpunk style with emphasis on movement and texture. --ar 2:3 --v 6"
 }

@@ -51,5 +51,41 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Arcturus KS-11 'Coffin Nail'",
+    "Aurocet",
+    "GLMZ",
+    "Kairos",
+    "Makena Johanssen-Diallo",
+    "Sable",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Subdermal Shear Projector SSP-1 'Faultline'",
+    "The Resonance Communion",
+    "Zheng-Dao Heavy Industries Space Elevator Tether System",
+    "Zheng-Dao Marrow-Pulse Implant",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, almost clinical handgun with an unusually elongated muzzle cap housing the piezoelectric resonance chamber. Silhouette suggests precision instrumentation rather than crude force — sleek, almost medical in appearance. The proportions feel deliberate and engineered for minimal visual disruption.",
+    "dimensions": "14 cm length overall, 6 cm grip height, 3.2 cm width at slide. Muzzle cap extends 4 cm with subtle ribbed venting. 180g total mass.",
+    "weight_description": "Deceptively light and well-balanced — feels more like a diagnostic tool than a weapon. Sits naturally in the palm without fatigue, weight distributed forward toward the precision chamber rather than rear.",
+    "primary_material": "Matte-finish engineered polymer composite frame with internal piezoelectric ceramic matrix visible through subtle translucent sections. Slide appears to be brushed aerospace-grade aluminum.",
+    "finish": "Matte charcoal black polymer with brushed gunmetal accents. No gloss — intentionally designed to avoid light reflection. Subtle frosted treatment across grip reduces tactile signature.",
+    "color_scheme": "Dominant matte charcoal black with brushed silver-gray slide sections and minimal accent striping in pale cyan along the targeting reticle housing.",
+    "grip_texture": "Microtextured polymer with light grip angle — feels almost clinical, slightly cool to touch. Subtle ergonomic ridges rather than aggressive traction patterns. Minimal tactile feedback by design.",
+    "distinctive_features": [
+      "Oversized muzzle cap with precision resonance chamber — 4cm ribbed extension housing piezoelectric discharge matrix",
+      "Passive IR targeting window recessed below the sights — glows faint amber during power-up",
+      "Translucent polymer sections revealing internal ceramic piezo stacks pulsing with faint bioluminescent charging indicators",
+      "Minimal sighting system — simple notch rear, bead front, optimized for close-quarters target acquisition",
+      "Weapon safe indicator: small cyan LED that extinguishes upon active lock",
+      "Micro heat-venting ports along the chamber collar — barely visible unless examined closely",
+      "Aggressive bevels and rounded edges throughout — designed to slip through conventional threat scanning systems"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC etched in micro-font along the left frame, barely legible. Serial plate sits flush beneath the slide on the right side — deliberately obscured during standard observation angles. No visible model designation on exterior.",
+    "condition_typical": "Field-worn examples show minimal cosmetic damage but revealing signs of actual use: micro-scratches on the chamber vents from repeated cleaning, slight polymer stress marks near the trigger guard from high-frequency discharge cycling, occasional residual surface oxidation on the aluminum slide from moisture exposure. Operators keep them meticulously maintained — any mechanical failure risks exposure during the critical window between firing and withdrawal."
+  },
+  "image_prompt": "Product photography of a compact matte-black piezoelectric pistol with extended resonance chamber, held in a gloved (synthetic polymer) hand against a dark brushed steel surface. Side-lit with cool cyan accent lighting revealing internal ceramic piezo matrix through translucent polymer sections. Shallow depth of field focusing on the clinical precision muzzle cap and amber IR targeting window. Cyberpunk biotech aesthetic, clinical sterility meets weaponized precision. Corporate weapon catalog style. --ar 3:2 --v 6"
 }

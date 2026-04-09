@@ -47,5 +47,27 @@
     "Dzemal Acholonu-Patagiri",
     "Tafara Quiñones-Saarinen",
     "The Reclamation Assembly"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Utilitarian streetwear uniform presenting as functional and unpretentious — a figure in muted earth tones designed for extended standing labor. The slate grey apron dominates the silhouette, worn mid-thigh with visible pockets and rust-orange branding. Burnt sienna shirt collar visible at neckline. Overall impression is hardworking, modest, and deliberately non-threatening — the uniform of the service economy.",
+    "fit": "Relaxed and practical throughout. The apron hangs straight without shaping, allowing freedom of movement and layering. The crew shirt sits comfortably tucked, not form-fitting. Trousers have a high rise with straight legs and ample room through the hip — designed for long hours of standing without restriction. Clogs provide wide, flat support.",
+    "primary_material": "Canvas work apron (heavy-duty, treated for water resistance), moisture-wicking synthetic blend crew shirt, synth-cotton blend trousers, matte black cushioned clog with slip-resistant sole, translucent grey technical rain shell with reflective tape trim",
+    "texture": "Apron surface is slightly stiff and utilitarian, with visible weave structure. Shirt fabric has a subtle sheen from moisture-management treatment. Trousers are smooth but durable. Clogs are molded synthetic with subtle grip texture on sole. Rain shell is crinkly, lightweight technical material.",
+    "color_scheme": "Primary palette: slate grey apron, burnt sienna crew shirt, charcoal trousers, matte black clogs. Accent color: rust-orange embroidered NutriRoute logo on apron bib; matching orange reflective seam tape on rain shell. Translucent grey overlay shell. Overall warm, desaturated, professional.",
+    "closures": "Apron: likely friction-fit or hook-and-loop at sides; shirt: standard buttons down front; trousers: zip fly with button waist; clogs: slip-on design; rain shell: full-length front zipper with storm flap",
+    "distinctive_features": [
+      "NutriRoute licensing logo embroidered in rust-orange on apron bib — marks wearer as franchisee, not independent operator",
+      "Three functional front pockets on apron (order slips, payment hardware, cloth)",
+      "Rear neck port collar on shirt — molded soft rubber, sized for standard neural interface jack",
+      "Reflective seam tape on rain shell for visibility during evening shifts",
+      "Slip-resistant sole on clogs with wide toe box for all-day standing",
+      "High-rise, flat-front trousers with deep hip pockets",
+      "Packable rain shell hung from cart hook when not worn",
+      "Visible wear and minor staining expected after typical 14-hour shift"
+    ],
+    "tier_indicator": "Tier 3 (working class) — mass-produced, franchise-issued, designed for service sector labor. No luxury markers, but clean and deliberately non-degrading.",
+    "cultural_context": "Street food service worker, GLMZ franchise economy. Wearing this uniform signals honest labor, regulatory compliance (licensed cart operator), and acceptance of the service tier. The neural port collar acknowledges augmentation as ordinary among working-class GLMZ residents. Acceptable in all public spaces; recognizable by cart customers.",
+    "condition_typical": "Broken-in after a few weeks of use. Minor grease spots and food stains on apron and shirt cuffs. Apron shows creasing and soft fraying at pocket edges. Clogs show scuff marks and worn heel. Rain shell clean but wrinkled from storage. Overall 'lived-in' but maintained — the wearer takes pride in the uniform's presentability within reason."
+  },
+  "image_prompt": "Cyberpunk street food vendor in full NutriRoute uniform standing at a corner cart in the GLMZ, wearing slate grey canvas apron with rust-orange logo over burnt sienna crew shirt and charcoal trousers, black slip-on clogs visible. Translucent grey rain shell draped over cart handle in background. Moody evening lighting, elevated transit line casting shadow overhead, slight chemical haze in air. Tired but professional expression. Dark urban alleyway backdrop with neon signage reflecting off wet pavement. Detailed close-up of apron pockets and port collar visible. --ar 2:3 --v 6"
 }

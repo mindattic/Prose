@@ -249,5 +249,11 @@
     "posture_movement": "Moves with deliberate efficiency and minimal sound, a habit of not drawing attention. Stands slightly tensed, ready to orient toward exits or threats. Her posture is neither defeated nor defiant — simply functional. Maintains careful eye contact when she chooses to engage.",
     "clothing_style": "Tier 5 migrant — hand-me-downs from processing annex donation bins. Oversized thermal layer (probably meant for an adult), patched grey cargo pants with multiple pockets she has filled with small useful objects, worn athletic shoes held together with synthetic cord. A jacket two sizes too large in faded blue that serves as both warmth and portable storage. No branding visible. Everything has been chosen and organized for utility rather than appearance."
   },
-  "image_prompt": "portrait of a 12-year-old girl with mixed Serbo-Croatian and West African heritage, serious and watchful expression, warm medium brown skin, very dark eyes with distinctive amber rings at the iris edge, jawline scar from broken glass, unevenly grown dark brown hair, small and wiry build, wearing oversized faded blue jacket and patched cargo pants, industrial waterfront setting at dusk, Lake Shore in background, cool harsh lighting, cyberpunk neo-noir, gritty realism, depth of field, shot in style of documentary photography, --ar 2:3 --v 6"
+  "image_prompt": "portrait of a 12-year-old girl with mixed Serbo-Croatian and West African heritage, serious and watchful expression, warm medium brown skin, very dark eyes with distinctive amber rings at the iris edge, jawline scar from broken glass, unevenly grown dark brown hair, small and wiry build, wearing oversized faded blue jacket and patched cargo pants, industrial waterfront setting at dusk, Lake Shore in background, cool harsh lighting, cyberpunk neo-noir, gritty realism, depth of field, shot in style of documentary photography, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Middle Eastern": 57.5,
+    "East Asian": 23.2,
+    "Hispanic/Latin American": 11.7,
+    "Northern European": 7.6
+  }
 }

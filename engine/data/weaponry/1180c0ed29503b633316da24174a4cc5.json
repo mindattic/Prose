@@ -45,5 +45,38 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "GLMZ",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Nika Svensson-Kone",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA TC-3 'Crucible'",
+    "The Riveters' Round",
+    "The Shelf"
+  ],
+  "physical_description": {
+    "visual_profile": "A pump-action shotgun with an unmistakable bright safety-orange finish dominating its entire receiver and foregrip, creating immediate visual distinction from lethal weapons. The profile is utilitarian and aggressive — compact, purpose-built, with a pronounced pump mechanism and reinforced action designed for repeated cycling of less-lethal loads. The barrel appears slightly longer than standard tactical shotguns, suggesting precision in projectile stabilization.",
+    "dimensions": "Length: 840mm overall | Barrel length: approximately 460mm | Width at receiver: 65mm | Height with sights: 180mm",
+    "weight_description": "Substantial but manageable — 3.4 kg (7.5 lbs) feels heavy enough to absorb recoil from less-lethal loads but light enough for sustained crowd-control operations. The weight distribution favors the shooter, settling slightly forward of the trigger guard.",
+    "primary_material": "Steel receiver with reinforced polymer furniture; barrel is cold-rolled steel optimized for rifling geometry. Pump handle utilizes glass-reinforced polymer with integrated heat dissipation channels.",
+    "finish": "High-visibility safety orange on all exposed metal and polymer surfaces — a corporate mandate that ironically obscures the weapon's lethal capability within its classification. The orange is automotive-grade enamel, matte rather than glossy, showing finger oils and dust easily. Steel beneath shows minor corrosion in typical field conditions.",
+    "color_scheme": "Dominant bright safety orange (Pantone 151 or equivalent) across receiver, pump handle, and magazine tube. Black polymer furniture on furniture and grips. Minimal chrome on internal components. Some operators apply black electrical tape over portions of the orange finish in the field, contradicting the manufacturer's safety protocol.",
+    "grip_texture": "Textured black polymer grip with aggressive checkering — designed for gloved hands operating in wet or chaotic conditions. The pump handle features vertical grooves and a slight curve, naturally guiding the palm. No secondary grips; mounting points visible at 3 and 9 o'clock suggest aftermarket tactical accessories.",
+    "distinctive_features": [
+      "Specialized rifled barrel with unique groove pattern visible at the muzzle — optimized for bean bag and rubber slug stabilization rather than traditional buckshot",
+      "Oversized pump handle with integrated charging indicator — a small witness mark showing chambered status",
+      "Breech-loading port with safety-orange surround emphasizing chamber status",
+      "Minimal iron sights — small ghost-ring rear and front post, low-profile to permit red-dot mounting",
+      "Heat vent slots along top of receiver running from ejection port to charging handle",
+      "Manufacturer's 'Peacekeeper' logo in black block letters on left receiver, with product tier designation",
+      "Serial number and legality stamps on underside of receiver in compliance with GLMZ corporate-security regulations",
+      "Magazine witness holes along tubular magazine — round count visible without unloading",
+      "Safety lever positioned unusually far forward, requiring deliberate manipulation to prevent accidental engagement",
+      "Corrosion spotting on steel components from repeated exposure to tear gas residue and weather"
+    ],
+    "manufacturer_markings": "Crucible Agricultural Consulting logo (stylized grain stalk in circle) stamped at 2 o'clock on receiver in black. 'LL-4 PEACEKEEPER' in block letters at 9 o'clock. Serial plate riveted to underside of receiver with 12-digit manufacturing code and compliance stamp. 'LESS-LETHAL ONLY' in small print above magazine tube.",
+    "condition_typical": "Field-worn but maintained — the bright orange finish shows heavy scuffing and wear from holster carry and repeated cycling. Minor dents in magazine tube from transport impacts. Polymer furniture displays micro-scratches from glove contact. Internals kept clean by professional operators (security contractors) but show accelerated wear from bean bag load friction. Optics mount shows salt-spray corrosion in coastal GLMZ operations."
+  },
+  "image_prompt": "Cyberpunk product photography of a Crucible LL-4 'Peacekeeper' shotgun, lying at 45-degree angle on a dark matte-black surface. High-visibility bright orange finish dominates the composition, contrasting sharply with black polymer furniture and steel components. Dramatic side-lighting from upper left casts harsh shadows emphasizing the pump mechanism and rifled barrel. Hand in tactical glove (black synthetic leather with blue reflective stripes) gripping the pump handle from above frame. Shallow depth of field isolates the weapon against a blurred industrial background of concrete and harsh neon glow. Close-up detail showing the 'Peacekeeper' logo in sharp focus while barrel extends into soft focus. High contrast, desaturated color grading with orange rendered as an almost unnatural safety signal. Include visible wear patterns, dust, and field damage. Futuristic armory aesthetic with soft underglow from fictional product display. --ar 3:2 --v 6"
 }

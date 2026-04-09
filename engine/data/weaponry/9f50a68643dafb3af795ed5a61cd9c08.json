@@ -43,5 +43,35 @@
     "high_capacity",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Aybek Alvarez-Okonkwo",
+    "Kang-Petrov Arms KP-10C 'Bullpup'",
+    "Nika Svensson-Kone",
+    "TESSERA TC-3 'Crucible'",
+    "The Burden Clause",
+    "The Crucible",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist wedge — aggressive and compact. The action is visually pushed back, creating an angular profile that tapers from a chunky receiver to a purposeful muzzle. The overall impression is utilitarian aggression: all business, minimal aesthetic concession.",
+    "dimensions": "66 cm overall length, 18-inch (45.7 cm) barrel, 23 cm depth front-to-back at receiver, 8 cm width at widest point (magazine well)",
+    "weight_description": "Hefty but balanced — 3.4 kg centered over the shoulder rather than cantilevered forward. Feels planted and controllable in-hand despite the mass; no forward-heavy drag",
+    "primary_material": "Reinforced polymer receiver and foregrip; steel barrel and bolt carrier; aluminum alloy magazine housing",
+    "finish": "Matte industrial black polymer with brushed steel barrel and dark anodized aluminum accents. Minimal gloss — everything is dull and absorptive",
+    "color_scheme": "Flat black primary with gunmetal gray and brushed steel secondary accents. No brightness or chrome",
+    "grip_texture": "Aggressively textured polymer grip (front and rear controls) with raised grip panels; slightly knurled charging handle; sharp, defined edges designed for gloved operation",
+    "distinctive_features": [
+      "Bullpup action visibly compressed behind trigger group — receiver ends dramatically shorter than traditional shotguns",
+      "Ten-round magazine protrudes from lower receiver with witness holes showing round count",
+      "Dust cover rail running full length of top receiver for optics mounting",
+      "Gas tube visible along top of barrel with distinctive venting ports",
+      "Ambidextrous safety lever and charging handle positioned for immediate access",
+      "Crude MIL-SPEC Picatinny sections forward of magazine well",
+      "Muzzle brake (or blast diffuser) with three prominent horizontal ports"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES stamped in aggressive sans-serif font along the left side of receiver. Serial number and tactical weapon certification plate mounted on right side of lower receiver. 'SIEGE-12 BATTERING RAM' engraved (not printed) below the charging handle",
+    "condition_typical": "Operates in field-worn condition — scratches and scuffs on polymer from contact, carbon buildup around gas ports, minor dings on magazine from repeated loading cycles. Well-maintained internally but cosmetically aged from use"
+  },
+  "image_prompt": "Product photography of a Crucible Industries Siege-12 'Battering Ram' shotgun in matte black, positioned at 45-degree angle on a dark industrial surface. Dramatic side-lighting from upper left illuminates the brushed steel barrel and gas tube details, casting sharp shadows. The bullpup action and compressed receiver are clearly visible. Mounted on polymer textured grip shows ambidextrous controls. Ten-round detachable box magazine visible with witness holes. Muzzle brake ports sharp in focus. Cyberpunk aesthetic: neon-blue rim-light along receiver edges, slight lens flare from metal accents. Concrete and steel background. Shot from professional tactical catalog angle showing full profile and distinctive geometry. Professional gloved hand gripping controls for scale. Studio lighting emphasizing industrial materials and worn finish. --ar 3:2 --v 6"
 }

@@ -42,5 +42,38 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Altan Tanaka-Frimpong",
+    "Irontide Tidal Energy",
+    "Nika Svensson-Kone",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "TESSERA ES-4 'Perimeter'",
+    "Tessera Corponation",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purposefully alien assault rifle that reads as mechanically optimized rather than organically comfortable. The silhouette is sharp and geometric—no curves for human hands, no ergonomic forgiveness. It has the cold aesthetic of industrial machinery repurposed as a weapon, with an almost skeletal frame that prioritizes structural efficiency over intuitive handling.",
+    "dimensions": "Overall length: 78 cm | Barrel length: 42 cm | Width at receiver: 8.5 cm | Magazine well depth: 6 cm",
+    "weight_description": "Deceptively light at 3.6 kg—it feels hollow in human hands, almost fragile. The weight is distributed in ways that create an unbalanced, unsettling feel when gripped traditionally. Servo-grade loading points make it feel like it's waiting for something stronger.",
+    "primary_material": "Aerospace-grade titanium alloy frame with reinforced polymer upper receiver. The construction prioritizes heat dissipation and cyclic durability over human comfort.",
+    "finish": "Matte gunmetal grey with selective brushed titanium accents around the data port and fire control housing. Heat-treated sections show dark oxide patina. Everything is utilitarian—no aesthetic flourishes, only functional surface treatments.",
+    "color_scheme": "Gunmetal grey dominating, with deep charcoal polymer sections and brushed metallic silver highlights around the hardened data port. Accent lighting on control surfaces in cool cyan when powered.",
+    "grip_texture": "Smooth, hard synthetic polymer—deliberately unfriendly to human skin. No stippling or grip texture. The magazine well is oversized and sharp-edged. The charging handle is a servo-actuated rod, not hand-operable.",
+    "distinctive_features": [
+      "Oversized hardened data port (optical/electrical hybrid) mounted where a BCI connector would be on human weapons",
+      "15kg trigger pull assembly—visibly heavy spring housing",
+      "Servo access panels along the receiver side",
+      "Heat vents designed for drone mounting, not handheld operation",
+      "Caseless ammunition feed system with visible round staging",
+      "Ghost ring sights (non-functional for humans—purely aesthetic compliance)",
+      "Cyclic rate limiter visible as a mechanical governor on the bolt carrier",
+      "Asymmetrical charging handle—right-side servo rod only",
+      "Cable routing channels along the frame for drone integration hardpoints"
+    ],
+    "manufacturer_markings": "TESSERA logo stamped in steel relief on the upper receiver, small and clinical. Serial plate (titanium) mounted on the left side of the receiver with alphanumeric drone-pairing codes rather than traditional serial numbers. Fine print warning: 'MACHINE OPERATION ONLY' engraved in 4pt font along the lower receiver.",
+    "condition_typical": "Factory-pristine when deployed with new drones; accumulates carbon scoring and micro-abrasions from cyclic heat and mounting stress. No traditional wear patterns—damage appears as localized burn marks from sustained fire or servo mounting scars. Often shows installation marks from drone hardpoint coupling."
+  },
+  "image_prompt": "Product photography of a TESSERA TARP-3 Delegate assault rifle lying on a matte black composite surface, shot from a 45-degree angle. The weapon is photographed with a precision-gloved servo-manipulator hand gripping the underslung rail, showing the alien ergonomics. Dramatic side-lighting in cool steel-blue and cyan, emphasizing the hardened data port with subtle LED activation glow. Shallow depth of field focusing on the receiver and the data coupling interface. Gunmetal and brushed titanium surfaces catch light to show aerospace-grade material quality. Matte polymer sections absorb light, creating visual contrast. Background is blurred GLMZ industrial facility aesthetic—circuit patterns and mounting rails out of focus. The composition should convey 'machine efficiency meets lethal purpose' rather than conventional weapon aesthetics. --ar 3:2 --v 6"
 }

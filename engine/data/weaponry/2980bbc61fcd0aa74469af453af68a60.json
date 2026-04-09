@@ -45,5 +45,35 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Breck Tannen",
+    "Focadrin",
+    "MERIDIAN",
+    "Nika Svensson-Kone"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, modular DMR with a distinctive dual-chamber housing along the upper receiver. The weapon presents as longer and more angular than conventional marksman rifles, with a pronounced central axis that hints at its internal barrel-rotation mechanism. The profile is purposefully compact despite dual-barrel complexity—designed for operators who can't afford bulk. At rest, it reads as a precision instrument with combat-hardened edges.",
+    "dimensions": "Overall length: 1,120mm (6.5mm mode) / 1,085mm (8.6mm mode); barrel length: 610mm (6.5mm) / 550mm (8.6mm); receiver width: 85mm (housing both barrel channels); height over bore: 95mm",
+    "weight_description": "Hefty but balanced—5.0kg distributed to favor the shooter's natural point of aim. The dual-barrel housing creates a counterweight that doesn't feel unwieldy despite the mechanical complexity. Settles into prone position with deliberate stability; feels engineered rather than improvised.",
+    "primary_material": "Aerospace-grade carbon composite receiver with internal steel barrel channels. Titanium alloy breech housing and rotation mechanism. Polymer furniture with embedded aramid reinforcement. Smart-scope mounting is precision-milled aluminum.",
+    "finish": "Matte gunmetal gray with satin-black accents on the dual-barrel housing. The internal barrel channels are visible through strategic cutouts—brushed steel showing beneath composite shell. Wear reveals lighter composite substrate underneath. Meridian engravings are gunmetal inlays that catch light subtly.",
+    "color_scheme": "Primary: gunmetal gray with near-black composite. Accents: brushed steel (barrel housing), anodized blue (safety lever and magazine well), faint crimson indicator line along the active-barrel position marker.",
+    "grip_texture": "Textured polymer with embedded cooling channels—feels slightly cold to bare skin, intentionally so for heat dissipation during sustained fire. Stippled for purchase even in damp conditions. Magazine well is hard-anodized aluminum with a tactile click-groove for indexing.",
+    "distinctive_features": [
+      "Rotating dual-barrel housing with mechanical indicator window showing active caliber (6.5mm red / 8.6mm blue)",
+      "BCI neural-link port (small circular recess behind charging handle with blue indicator LED)",
+      "Ballistic computer display (small e-ink screen integrated into smart-scope rail showing range, wind, and active caliber)",
+      "Integrated heat-bleed vents along the barrel housing in a radial pattern",
+      "Dual magazine ports (offset slightly to prevent cross-loading)",
+      "Mechanical barrel-swap indicator—a rotating ring that shows 6.5 or 8.6 to the operator",
+      "Factory test-fire micro-engravings along the upper receiver flats",
+      "Quick-detach bipod sockets (integrated into foregrip area)",
+      "Meridian holographic nameplate showing MDDM-7 and serial batch"
+    ],
+    "manufacturer_markings": "Meridian Munitions logo (stylized 'M' with twin vertical bars suggesting dual barrels) inlaid in gunmetal on the left side of receiver. 'MDDM-7 SWITCHBACK' stamped below. Small Φ9,500 price marking etched discreetly on the lower receiver. Serial number and batch code laser-marked on the breech block.",
+    "condition_typical": "Factory-new examples show razor-sharp edges and pristine composite. Field-worn Switchbacks bear scuff marks on the barrel housing from mag transitions and gear contact. Operational examples show carbon buildup around the barrel-swap mechanism and micro-scratches on the smart-scope display from rapid target acquisition. Well-maintained variants retain their matte finish; heavily deployed versions show worn high-spots on the grip and receiver rails."
+  },
+  "image_prompt": "Product photography of the Meridian Munitions MDDM-7 Switchback DMR positioned at a 45-degree angle on a brushed-steel surface. The weapon's dual-barrel housing is prominent and clearly visible, showing the mechanical rotating channels beneath semi-transparent composite. Dramatic side-lighting from the left creates sharp shadows that emphasize the contours of the barrel-swap mechanism and reveals the brushed-steel interior through cutouts. The smart-scope's e-ink display shows faint blue text. A gloved hand (black tactical glove, fingers extended) grips the stock, showing the textured polymer and cooling-channel detail. The background is deep charcoal with neon-blue accent lighting hitting the BCI neural-link port. Meridian Munitions engravings catch light subtly. The image conveys precision engineering meets cyberpunk lethality—clean, modular, purposeful. Cyberpunk aesthetic, product photography, professional catalog style. --ar 3:2 --v 6"
 }

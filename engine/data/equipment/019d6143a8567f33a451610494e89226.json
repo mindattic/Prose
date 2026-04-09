@@ -49,5 +49,24 @@
   "related_entities": [
     "Orhan Dlamini-Kurikka",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular security module resembling a high-end network adapter with integrated heat dissipation fins. Sleek, defensive industrial design with prominent cable management ports. Feels like advanced medical hardware crossed with military-grade encryption tech.",
+    "dimensions": "12cm length × 4cm width × 3cm height (roughly a thick smartphone)",
+    "weight_description": "Extremely lightweight (20g) — easily pocket-sized, worn on a belt clip or integrated into a neural rig harness",
+    "primary_material": "Aerospace-grade titanium alloy housing with embedded copper heat-sink fins; reinforced polymer connector shrouds",
+    "finish": "Brushed gunmetal with a matte non-reflective coating; thin anodized lines marking data flow direction; soft-touch rubberized grip edges",
+    "color_scheme": "Gunmetal gray primary with accent stripes in electric blue (active monitoring indicator) and red (threat/panic alert); subtle Axiom Systems branding in silver",
+    "interface_elements": "Dual redundant neural interface connectors (recessed, keyed); one status LED array (8-segment bar graph showing threat level); tactile panic button (recessed, requires deliberate press); micro USB for daily threat signature updates; secondary diagnostic port (maintenance-locked)",
+    "distinctive_features": [
+      "Heat dissipation fins arranged in asymmetric pattern suggesting directional data flow",
+      "Dual-redundancy visual indicator: twin LED micro-arrays that pulse in opposition during active filtering",
+      "Recessed panic button with mechanical click-feedback and haptic confirmation",
+      "Transparent polymer window over internal circuit path showing layered PCB architecture",
+      "Military-spec connector locking mechanism with visible torque indicators"
+    ],
+    "manufacturer_markings": "Axiom Systems logo (embossed) on top; serial/batch number laser-etched on underside; regulatory stamps (GLMZ-certified, neural-interface-safe, warranty void if opened); threat-signature version number displayed on status strip",
+    "condition_typical": "In active use, mounted inline between a user's neural port and their primary data-link (usually worn on collar, wrist, or integrated into augmentation rig). Blue LEDs pulse steadily during normal operation; red LED flashes briefly when threats are detected and neutralized."
+  },
+  "image_prompt": "Product photography of the Axiom Systems NIF-3 neural firewall, mounted on a sleek brushed-metal workbench under dramatic side-lighting. The module displays active blue LEDs pulsing gently, with a transparent polymer window revealing intricate PCB layers inside. Nearby: a disconnected neural-interface cable with recessed connectors, a small status readout display showing threat statistics (Φ2,400 price tag visible). Dark cyberpunk workshop background with neon blue accent lighting reflecting off the gunmetal finish. Sharp focus on the device's heat fins and LED array. Cinematic, professional product shot emphasizing security and precision engineering. --ar 3:2 --v 6"
 }

@@ -65,5 +65,42 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Arcturus BH-2 'Marrow'",
+    "GLMZ",
+    "Glenville Sound",
+    "Irontide Tidal Energy",
+    "Lazarus Pharmaceuticals",
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Ringo Corponation",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "The Undertow"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular rifle with a distinctly medical aesthetic corrupted by tactical brutalism. The form reads as precision instrument rather than traditional firearm—sleek, almost surgical in its lines, with an unsettling clinical coldness. The silhouette is narrow and purposeful, suggesting something designed to violate rather than defend.",
+    "dimensions": "112 cm length overall; 8 cm width at widest point; 6.5 cm height including collimator assembly. Barrel section 34 cm, tapering gradually to a fine conductive emitter tip.",
+    "weight_description": "Deceptively light in hand at 2.6 kg—lighter than expected for its length, creating an almost eerie weightlessness that belies its capacity for harm. Balanced forward toward the emitter, encouraging natural aim at vital zones.",
+    "primary_material": "Aerospace-grade aluminum composite frame with integrated piezoelectric ceramic pockets embedded throughout the body. Conductive pathways threaded through structural members in visible microchannel grooving.",
+    "finish": "Brushed satin silver with oxidized copper accent striping along the energy channels. The finish is deliberately clinical and sterile, occasionally interrupted by microscopic burn marks from galvanic feedback. Appears polished but shows heat-stress discoloration in use.",
+    "color_scheme": "Metallic silver-gray primary with oxidized copper accent lines tracing the galvanic pathways. RINGO branding in medical-grade white. Dark polymer endcaps and grip in charcoal-black.",
+    "grip_texture": "Thermally-treated polymer grip with microscopic diamond-pattern texturing—designed to shed sweat and maintain contact during high-stress use. Slightly warm to the touch, conducting minor residual charge that creates subtle tingling against bare skin.",
+    "distinctive_features": [
+      "Adjustable exposure dial (0.4–2.8 mA) mounted on the left side with numbered severity gradations and a haunting medical-aesthetic scale",
+      "Conductive beam collimator at the muzzle—a series of nested ceramic rings that glow faintly under operation",
+      "Visible microchannel grooves running the length of the frame in a web-like pattern that suggest internal current pathways",
+      "Three small piezoelectric impact sensors spaced along the barrel, flush-mounted and ringed with copper contact points",
+      "Galvanic cell pack housing recessed into the stock, transparent polymer window showing the blue-tinted electrolytic fluid within",
+      "Low-profile charging port disguised as a cosmetic seam on the rear endcap",
+      "No traditional safety mechanism—instead, an encrypted biometric trigger pad that glows soft amber when armed",
+      "Faint etched serial number and regulatory compliance stamps arranged in a deliberately clinical font",
+      "Heat vents along the upper receiver designed to resemble medical equipment rather than weapons"
+    ],
+    "manufacturer_markings": "RINGO CORPONATION logo (stylized R enclosing a sine wave) laser-etched in white onto the left side of the lower receiver. Below it: 'GALVANIC MARROW PROJECTOR GMP-1' in sans-serif type. Serial plate mounted on the stock with compliance certification stamps. Model number and manufacturing date rendered in tiny white text beside the galvanic cell window.",
+    "condition_typical": "Field-deployed units show burnishing on grip surfaces from gloved use, faint scorch marks around the collimator from electrical creep, and wear on the exposure dial from frequent adjustment. The aluminum shows minor stress micro-fractures in the channel grooves. Copper accent lines oxidize unevenly in use, creating a mottled patina that suggests the weapon has been actively firing. Many units show custom grip wraps or electrical tape modifications applied by field operators attempting to insulate against feedback, suggesting user discomfort with the weapon's residual conductivity."
+  },
+  "image_prompt": "Product photography of the Galvanic Marrow Projector GMP-1 'Marrowbone' displayed horizontally on a glossy obsidian surface, dramatically lit from the upper left with cool 5000K side-lighting that casts sharp shadows emphasizing the conductive channel grooves. A gloved tactical hand (black neoprene with copper contact pads visible) grips the stock. The aluminum frame reflects electric blue accent light along the pathway tracings. Extreme close-up detail on the ceramic collimator emitter tip, which glows with faint bioluminescent blue. Background is deep charcoal cyberpunk aesthetic with soft hex-grid projection mapping barely visible. The weapon's medical instrument design contrasts with tactical brutality. Sharp focus on the exposure dial showing numerical severity markings. The transparent galvanic cell window reveals swirling electrolytic fluid with suspended metallic particulates. Cinematic product lighting emphasizing both precision engineering and implied violation. Corporate RINGO branding visible but not dominant. --ar 3:2 --v 6"
 }

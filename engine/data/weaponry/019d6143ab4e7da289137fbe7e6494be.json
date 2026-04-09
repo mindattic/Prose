@@ -57,5 +57,46 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": "Ringo Corponation"
+  "parent_corponation": "Ringo Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Below the Threshold",
+    "Charnel Propulsion",
+    "GLMZ",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Nenad Vargas-Baffour",
+    "Nika Svensson-Kone",
+    "Patient Zero",
+    "Ringo Corponation",
+    "TESSERA CORPONATION Elysia Sensorum Totalis",
+    "TESSERA PG-2 'Signature'",
+    "The Blackout Syndicate",
+    "The Ledger",
+    "The Threshold",
+    "Vantablack PA-1 'Pacifier'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular precision rifle with an unusually compact profile when folded. The design emphasizes acoustic suppression hardware — the integrated wet suppressor dominates the muzzle end, appearing as a distinctive bulbous chamber. The overall aesthetic is clinical and purposeful, with clean lines and minimal ornamentation. At rest, it suggests corporate engineering rather than military brutality.",
+    "dimensions": "940mm deployed length, 680mm with folded stock. Barrel section approximately 520mm. Wet suppressor assembly adds 180mm to muzzle. Magazine well positioned high on receiver for stripper-clip loading.",
+    "weight_description": "Hefty and substantial at 4.4kg — the tungsten-core ammunition and liquid baffle system concentrate mass forward, requiring deliberate handling. Feels balanced across the shoulder despite the suppressor weight, suggesting precision engineering.",
+    "primary_material": "Receiver and action housing in hardened aerospace-grade polymer composite with carbon-fiber weave reinforcement. Barrel is chrome-lined steel. Wet suppressor chamber in sealed titanium-aluminum alloy. Stock mechanism uses spring-steel hinges.",
+    "finish": "Matte gunmetal gray polymer with brushed steel accents on the bolt carrier and trigger guard. The wet suppressor chamber has a subdued satin titanium finish with faint machining marks. No gloss or reflective surfaces — designed to minimize visual detection alongside acoustic signature.",
+    "color_scheme": "Dominant matte gray with dark gunmetal accents. Minimal branding and no high-visibility elements. The liquid baffle cartridge slot features a small amber indicator window showing baffle fluid level.",
+    "grip_texture": "Textured polymer grip with subtle diamond knurl pattern. Ergonomic thumb rest molded into the handguard. Trigger guard oversized for gloved operation, with a lightly knurled steel trigger itself.",
+    "distinctive_features": [
+      "Integrated wet suppressor with visible titanium chamber and cartridge access port",
+      "Amber fluid-level indicator window on suppressor side",
+      "Folding stock with silent locking detent mechanism",
+      "Top-mounted stripper-clip feed slot with precision guides",
+      "Manual rotary bolt with textured cycling handle positioned for thumb operation",
+      "Minimalist 5-round magazine well with witness holes for ammunition count",
+      "Proprietary ammunition-only marking on mag well (RINGO cipher stamp)",
+      "Small Φ symbol (QUANTA currency) micro-etched on receiver — a subtle nod to corporate ownership",
+      "Picatinny rail segment on receiver top for optics mounting",
+      "Heat vents along barrel jacket in a linear pattern"
+    ],
+    "manufacturer_markings": "RINGO CORPONATION logo (stylized R within concentric circles) stamped in recessed area on receiver side, deliberately small and positioned where it requires close inspection. Serial number etched on the wet suppressor chamber in RINGO's proprietary alphanumeric format. No other visible branding — the weapon is designed to be unremarkable.",
+    "condition_typical": "Black market examples typically appear immaculately maintained, as they command premium prices and operators understand the specialized ammunition supply chain creates liability. The wet suppressor shows evidence of regular baffle cartridge replacement (faint scratches around the access port). No battle wear expected — this is a weapon for single precise engagements, not sustained fire. When used, it's kept in shadow or stored immediately after deployment."
+  },
+  "image_prompt": "Product photography of the SCBR-1 'Quiet Ledger' rifle displayed horizontally on a dark matte black surface with dramatic side-lighting creating sharp shadows. Show the weapon at three-quarter angle to emphasize the distinctive bulbous titanium wet suppressor assembly at the muzzle. Include a gloved hand (gray synthetic polymer glove, white-collar assassin aesthetic) gripping the textured polymer handguard. The suppressor's amber fluid-level window should catch reflected light. Background is deep charcoal concrete or brushed steel, with subtle cyberpunk ambiance — maybe a faint Φ currency symbol hologram blur in the background. Lighting should be cool and clinical, suggesting corporate precision engineering. Include a detail insert showing the proprietary RINGO cipher ammunition stamp on the magazine well. Composition emphasizes the weapon's compactness and purpose-built acoustic design. Cyberpunk 2226 aesthetic, corporate assassination tool. --ar 3:2 --v 6"
 }

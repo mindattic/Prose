@@ -50,5 +50,25 @@
     "The Nearfield",
     "Vuk Jorgensen-Toure",
     "Waxwing Neuromedia"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, professional combat helmet with a low-profile silhouette designed for tactical operations. The matte-black finish gives it a severe, utilitarian appearance that reads as high-security and authority. Angular, purposeful lines with minimal ornamentation convey military-grade function.",
+    "fit": "Snug, form-fitting design that contours to the head without excess bulk. The chin strap sits firmly beneath the jaw with quick-release locks for fast removal. Slightly wider at the crown to accommodate the modular rail system, tapering smoothly at the temples.",
+    "primary_material": "Ceramic composite ballistic shell with internal aramid-fiber liner providing impact and projectile protection. Hard, rigid construction throughout.",
+    "texture": "Matte-textured ceramic composite surface with a slightly rough, non-reflective finish to minimize tactical signature. Smooth polymer chin strap with tactile dual-lock mechanisms. The flip-down AR visor has a faint iridescent gunmetal tint.",
+    "color_scheme": "Dominant matte black with gunmetal-gray tinted visor. Rubber gasket accents around the rear aug-port in dark gray. Minimal branding in subdued metallics.",
+    "closures": "Quick-release dual-lock polymer chin strap with dual-latch system for rapid helmet removal in emergency scenarios.",
+    "distinctive_features": [
+      "Modular rail system at crown and temples for mounting lights, sensor pods, and breaching tools",
+      "Flip-down ballistic-rated AR visor with tactical overlay projection capability",
+      "Recessed rear aug-port with rubber gasket cover for seamless neural interface compatibility",
+      "Low-profile design minimizes sniper signature while maintaining full peripheral vision",
+      "BCI/HUD integration channels integrated into the liner structure",
+      "Axiom Defense Solutions logo subtly embossed on left temple"
+    ],
+    "tier_indicator": "Tier 1-2 corporate luxury, indicating CorpSec or licensed private operator status",
+    "cultural_context": "Worn by corporate security personnel, private military contractors, and licensed enforcement operatives. Signals authority, access, and affiliation with established power structures in the GLMZ. Not street wear.",
+    "condition_typical": "Maintained in pristine or near-pristine condition by professional operators. Scratch-resistant coating shows minimal wear. Visor may have micro-scratches from field use but remains fully functional and clear."
+  },
+  "image_prompt": "Axiom Defense Mk-4 tactical combat helmet displayed on a dark chrome mannequin head, positioned at a three-quarter angle against a dimly lit GLMZ corporate security facility backdrop. Moody blue and gunmetal lighting accentuates the matte-black ceramic composite shell and the gunmetal-gray AR visor. Dramatic side-lighting reveals the modular rail system at the crown and temples, with subtle reflections off the ballistic surface. The rear aug-port is visible but subtly shadowed. Minimalist, professional product photography with a cybernetic edge. Dark urban industrial environment with blurred security checkpoint elements in background. --ar 2:3 --v 6"
 }

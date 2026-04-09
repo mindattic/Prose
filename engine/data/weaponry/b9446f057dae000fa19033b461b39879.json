@@ -40,5 +40,32 @@
     "tier_1",
     "affordable"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Crucible Industries Scatterpulse SP-1 'Static Cling'",
+    "GLMZ",
+    "Hearthstone Firearms Single-20 'Farmhand'",
+    "Iowan Behemoth — 'Thunderhead'",
+    "TESSERA TC-3 'Crucible'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, sphere-like capsule roughly the size of a golf ball with a slightly flattened profile. Clean, industrial appearance suggests precision manufacturing rather than improvised weaponry. The form factor is deliberately innocuous — something that could pass for a tech gadget or novelty item at casual glance.",
+    "dimensions": "Diameter: 4.3 cm (spheroid); compact enough to palm or pocket",
+    "weight_description": "Light and dense — 35g provides satisfying heft without burden. Feels substantial enough to throw with accuracy, but light enough for extended carry without fatigue.",
+    "primary_material": "Reinforced polycarbonate shell with internal binary chemical chambers separated by precision-engineered breakable membrane",
+    "finish": "Semi-gloss white polymer with subtle grip-enhancing micro-texture. Surface has faint concentric rings suggesting industrial injection molding, not hand-crafted.",
+    "color_scheme": "Primary: brilliant optic white (matching the smoke output). Accent: metallic silver band around equator containing manufacturer markings and safety information in micro-print.",
+    "grip_texture": "Smooth polycarbonate with gentle dimpled texture across 60% of surface — prevents slipping when thrown but doesn't catch fabric in pockets",
+    "distinctive_features": [
+      "Equatorial silver band with Crucible Industries logo and 'Curtain Call' branding",
+      "Micro-embossed directional indicator showing 'THROW DOWNWARD' with arrow",
+      "Faint pressure-relief vents (non-functional aesthetically, engineering necessity)",
+      "Subtle rainbow shimmer in certain angles — artifact of IR-scattering particle suspension visible through polycarbonate",
+      "Manufacturing batch code laser-etched on base",
+      "No visible seams or activation mechanisms — completely smooth, sealed unit"
+    ],
+    "manufacturer_markings": "Crucible Industries logo (stylized flame within circle) on silver equatorial band. 'SmokePop SP-1 CURTAIN CALL' printed in micro-font. Safety warnings in five languages occupying 40% of the band. Batch code and manufacturing date stamped on bottom pole.",
+    "condition_typical": "Pristine condition required — any visible cracks or surface damage indicates potential membrane compromise and renders the unit unreliable. Users typically keep capsules in dedicated carry cases. Well-maintained examples show zero wear; they're single-use, so field-worn examples are simply 'spent' (empty shells)."
+  },
+  "image_prompt": "Photorealistic product shot of SmokePop SP-1 'Curtain Call' smoke capsule. Pristine optic-white polycarbonate sphere, 4.3cm diameter, displayed on black matte surface under dramatic side-lighting that reveals the subtle rainbow shimmer of IR-scattering particles within. Silver equatorial band with Crucible Industries branding catches light at 45-degree angle. Second shot: capsule held in gloved cybernetic hand (chrome knuckles visible) against dark background, fingers positioned as if about to throw. Cinematic lighting emphasizes the industrial precision of the form. Cyberpunk aesthetic with cool color temperature and subtle neon rim-light from behind. Minimalist composition, shallow depth of field. --ar 3:2 --v 6"
 }

@@ -41,5 +41,25 @@
     "TESSERA TC-3 'Crucible'",
     "The Portico",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A clean, conservative single-breasted silhouette with notch lapels and a modest two-button front. The suit drapes with neutral formality—neither sharp nor slouched. It reads as institutional: built to disappear into boardrooms, tribunal chambers, and corporate orientation videos. On the wearer, it creates a buffer between their body and the institution's gaze.",
+    "fit": "Tailored but not fitted. Shoulders are structured but not aggressive. The jacket sits with approximately one inch of shirt cuff showing at the wrist. Trousers have a straight leg with a slight break at the shoe. The back vent allows accommodation for spinal port hardware or chrome lumbar housings without visible strain.",
+    "primary_material": "Synth-wool blend—a polymer composite engineered to mimic natural wool's weight and drape. Affordable, durable, and moisture-resistant, but prone to pilling in high-friction zones after extended wear.",
+    "texture": "Smooth with a subtle nap. Up close, the weave is visible and uniform, lacking the organic irregularity of natural wool. The fabric has a faint sheen under direct light. After wear, stress points develop a fuzzy, pilled surface.",
+    "color_scheme": "Available in four utilitarian tones: ash (pale gray), deep navy, corporate slate (muted blue-gray), and a warm brown that photographs nearly black under fluorescent institutional lighting. All colors are desaturated, designed for minimal visual impact.",
+    "closures": "Two genuine bone-resin buttons on the jacket front (notched for durability), matching button on each cuff. A functional back vent with button closure. Trouser fly is a standard YKK zipper with a single button waist closure.",
+    "distinctive_features": [
+      "Back vent designed to accommodate standard spinal port braces and lower-lumbar chrome housings without visible protrusion",
+      "Subtle Halverson & Crane woven label at interior left chest—small but visible to those who know to look",
+      "Machine-tailored construction with minimal hand-finishing—flat-fell seams on trousers, fused canvas in the chest",
+      "Inner left jacket pocket fitted with reinforced topstitching (designed to hold tribunal documents, credentials, or official correspondence)",
+      "Slight synthetic sheen visible under fluorescent lighting—marks it as synth-wool to trained eyes",
+      "Prone to pilling at inner thigh and under-arm seams after 12-18 months of regular wear"
+    ],
+    "tier_indicator": "Tier 2 aspiration with Tier 3 functionality. Expensive enough to represent effort and seriousness. Cheap enough to feel transitional. Worn by people trying to move upward or stabilize at their current level.",
+    "cultural_context": "The 'hearing suit'—worn to tribunal appearances, corporate onboarding, citizenship certification hearings, and Lazarus appeals. Signals deference to institutional authority and a desire to be taken seriously by systems indifferent to individual identity. Popular in Tier 2 district storefronts and transit hub resellers. Worn by people who need institutions to see them as compliant, qualified, or worthy of consideration.",
+    "condition_typical": "Worn examples show pilling at stress points (inner thigh, underarms), minor fading along fold lines, and a slightly softened nap from dry-cleaning cycles. Buttons remain intact. The synthetic fabric resists major creasing but develops permanent wrinkles at the elbow and knee with age. Tribunal-worn suits often carry faint stains or wear marks from being sat in for hours."
+  },
+  "image_prompt": "Fashion photography of a Halverson synth-wool two-button suit in deep navy, worn by a Tier 2 worker with subtle augmentation traces (faint port scarring visible at collar). The model stands in a corporate tribunal waiting room under fluorescent panel lighting, casting harsh shadows. The suit drapes cleanly but without luxury—it fits well but looks functional, institutional. The synthetic fabric shows a faint sheen under the overhead lights. A closed folder rests in one hand. Moody institutional color palette: cool grays, sallow fluorescent tones. Dark concrete and glass backdrop. The suit should look hopeful but practical, aspirational without pretense. --ar 2:3 --v 6"
 }

@@ -32,5 +32,25 @@
     "concealed carry",
     "Sentinel",
     "weapons"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A barely-visible bulge at the 3-4 o'clock position on the hip when worn IWB. Under clothing, it reads as a subtle contour rather than a distinct object. The holster itself, when exposed, has a sleek, minimal aesthetic—smooth curves that follow weapon geometry with no excess material.",
+    "fit": "Skin-tight against the torso via friction-fit waistband anchor. The holster body conforms precisely to a single firearm's profile after activation, leaving zero gap or rattle. Sits deep in the waistband for maximum concealment.",
+    "primary_material": "Thermoformed ballistic polymer composite—lightweight, heat-moldable, and non-reactive with standard lubricants and solvents.",
+    "texture": "Smooth, almost glossy finish on the exterior. Interior features subtle friction ridges molded to weapon contours. Minimal tactile signature when worn under clothing.",
+    "color_scheme": "Gunmetal gray or charcoal black; some units available in dark polymer variants that match common weapon finishes. No visible branding when concealed.",
+    "closures": "Passive retention lock—mechanical detent that requires deliberate upward draw motion to disengage. No buckles, snaps, or zippers. Friction-fit anchor system integrated into waistband.",
+    "distinctive_features": [
+      "Custom thermoformed profile—molds to individual weapon after heat-activation cycle",
+      "Passive retention lock prevents accidental discharge during draw",
+      "Single-weapon-specific design prevents cross-compatibility",
+      "Minimal profile—reads as body contour, not separate object",
+      "IWB design places weapon at hip crease for maximum concealment",
+      "Sentinel Corp heat-stamp logo on retention tab (internal, not visible when worn)"
+    ],
+    "tier_indicator": "Tier 2 authorized carry—luxury/premium security equipment. Licensed restricted item.",
+    "cultural_context": "Corporate security, private military contractors, licensed bounty agents, corpo executives with discretionary carry permits. Signals authorization without advertisement. Heavy presence in GLMZ financial districts and gated enclaves.",
+    "condition_typical": "Pristine or very light wear when new; develops subtle scuff marks and weapon-specific patina over months of use. Thermoformed fit means it doesn't degrade structurally—lasts the life of the weapon unless physically damaged."
+  },
+  "image_prompt": "Sleek Tier 2 corporate security operative, mid-draw stance, revealing a matte gunmetal thermoformed holster at hip under partially unbuttoned synth-tactical shirt. Close-up on retention detail and weapon interface. Moody neon-blue and gray lighting, minimalist urban background—glass and steel corpo architecture. Shot against dark charcoal backdrop. Model displays professional bearing, augmented hand visible on draw arm. --ar 2:3 --v 6"
 }

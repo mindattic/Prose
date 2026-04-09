@@ -43,5 +43,37 @@
     "area-denial",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Arcturus VMG-4 'Turret'",
+    "CRUCIBLE Auric Sovereign Bespoke Arm",
+    "Djeneba Park-Traore",
+    "Nika Svensson-Kone",
+    "TESSERA ES-4 'Perimeter'",
+    "Tessera Corponation",
+    "The Collective",
+    "The Lattice"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular autonomous turret with a distinctly modular design. Low-profile polygonal body sits on a stabilized tripod base, topped with a rotating sensor head and barrel assembly. Appears engineered rather than organic — all hard geometry and purposeful mounting points.",
+    "dimensions": "Height: 38 cm (turret body), 48 cm (with sensor head raised). Width: 32 cm (base footprint). Depth: 28 cm. Barrel length: 22 cm (5.56mm caseless).",
+    "weight_description": "Solid and deliberate — 18 kg feels substantial but portable. Balanced on the tripod with a low center of gravity. Designed to be man-portable but not light.",
+    "primary_material": "Aircraft-grade aluminum alloy chassis with steel reinforcement plates at stress points. Titanium barrel assembly. Sensor dome is hardened polycarbonate composite.",
+    "finish": "Matte gunmetal gray with brushed aluminum accents. Polymer components are textured dark gray to reduce glint. Minimal reflective surfaces — designed for low visibility.",
+    "color_scheme": "Matte gunmetal gray primary, with charcoal black mounting brackets and power conduits. Accent strips of deep blue along the sensor array (Tessera corporate branding). Red status indicator ring around the barrel collar.",
+    "grip_texture": "Textured polymer grip points on the tripod legs for deployment. Control surfaces are knurled steel. Mounting points have rubberized quick-release handles.",
+    "distinctive_features": [
+      "Rotating sensor head with lidless optic clusters arranged in overlapping arcs",
+      "Integrated mesh-network antenna array (thin copper fins protruding from upper body)",
+      "Red/amber/green status indicator ring encircling the barrel mount",
+      "Tessera angular logo stamped into the base plate",
+      "Quick-release ammunition feed system with visible 500-round magazine loading port",
+      "Thermal venting grilles running along both flanks of the turret body",
+      "Articulated barrel assembly that allows independent elevation adjustment",
+      "Small blue LED port on the rear for BCI uplink synchronization"
+    ],
+    "manufacturer_markings": "Tessera corporate logo (angular T-shape) prominently stamped on the base. Serial number plate on left flank. Tessera SL-3 designation and 'QUILT UNIT 1/4' printed on a small placard near the mounting interface.",
+    "condition_typical": "Field-deployed units show minor wear: dust accumulation on sensor domes, slight polymer scuffing on mounting legs, burn marks around the barrel collar from sustained fire. Well-maintained corporate systems appear pristine. Ungoverned/black-market units show improvised repairs and aftermarket modifications."
+  },
+  "image_prompt": "Product photography of the Tessera SL-3 'Quilt' autonomous turret, single unit displayed on a dark industrial surface, 3/4 view angle. Compact angular gunmetal gray turret with matte finish, hexagonal base mount, rotating sensor head with visible optic clusters, short 5.56mm barrel, integrated mesh-network antenna fins, red status indicator ring, Tessera corporate logo on base plate. Dramatic side-lighting from cool blue source highlighting the sensor geometry and aluminum edges. Dark background, cinematic shadows. Cyberpunk military-industrial aesthetic. Corporate security briefing photography style. --ar 3:2 --v 6"
 }

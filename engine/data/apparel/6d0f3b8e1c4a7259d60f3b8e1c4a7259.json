@@ -50,5 +50,28 @@
     "The Collective",
     "The Peninsula",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A substantial, deliberately asymmetrical quilted coat that reads as both utilitarian armor and curated chaos. The silhouette is boxy and protective, with prominent horizontal and vertical stitching lines creating a grid of mismatched rectangular panels. Worn with intention by people who understand the statement it makes.",
+    "fit": "Relaxed and roomy through the torso, built for layering and movement. Sleeves are slightly tapered. Cut long enough to cover the hips. Designed for function over flattery, but the generous proportions have become inadvertently flattering in certain subcultures.",
+    "primary_material": "Patchwork composite: salvaged industrial fabrics including ballistic weave scraps, decommissioned military cold-weather material, dead-stock synthetic blends, recycled polyester panels. Each panel sourced differently. Fill is reclaimed insulation material — polyester, wool blends, whatever was available that week.",
+    "texture": "Highly textured. Surface reads as variegated — some panels smooth and worn, others quilted and raised, some with visible weave texture. Heavy stitching creates tactile ridges. Individual panels show different wear patterns and material degradation. Overall effect is deliberately rough, inviting touch.",
+    "color_scheme": "No fixed palette. Each coat is unique. Typical combinations: deep greys, blacks, faded olives, rust, industrial blues, charcoal, occasionally burnt orange or forest green. Contrasting thread in neons or bright accents — lime, acid pink, electric blue — creates visual rhythm across seams. Color distribution appears random but is intentional.",
+    "closures": "Heavy-duty industrial zipper (often salvaged, sometimes mismatched brand) running center front from collar to hem. Secondary magnetic snap closures along the upper chest. Reinforced stress points.",
+    "distinctive_features": [
+      "Every panel visibly different — no two jackets identical",
+      "Contrasting heavy thread in bright or metallic colors stitching all seams",
+      "Visible quilting lines creating geometric grid pattern",
+      "Deep utility pockets, asymmetrically placed and generously sized",
+      "Hidden interior pocket system for data storage or survival gear",
+      "Redline Workshop hand-stamped tag (usually inside left chest) — deliberately crude, hand-applied",
+      "Reinforced shoulder panels and elbow areas showing additional layering",
+      "Hem often deliberately unfinished or raw-edged",
+      "Some coats include integrated small pouches or attachment loops"
+    ],
+    "tier_indicator": "Tier 5 origin, Tier 3-4 adoption. Signals sub-grade resourcefulness that has become aesthetically desirable to mid-tier consumers with political consciousness.",
+    "cultural_context": "Wearing this signals: alignment with Shelf economies, resistance to corpo mass production, appreciation for function over fashion (even though it has become fashionable), support for community fabrication networks. Also signals that the wearer understands the irony of a Tier 2 person wearing survival gear as a statement piece. Increasingly recognized as status symbol among younger mid-tier workers and activists.",
+    "condition_typical": "Broken-in and worn, but not degraded. These are meant to last. Visible creases at joints, fading along folds, occasional stains from actual use. Patched or repaired areas add character rather than detract. Each jacket accumulates its own scar tissue — evidence of real wearing."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a Redline Workshop Thermal Patchwork jacket on a mixed-heritage model with subtle chrome neck aug, shot against a Shelf warehouse backdrop with industrial string lights. Jacket patchwork clearly visible, showing mismatched panel colors and bright contrasting stitching. Moody blue-grey lighting with warm amber highlights catching the texture. Model positioned in three-quarter stance, one hand in oversized pocket, expression neutral and direct. Background suggests concrete, exposed wiring, stacked salvage materials slightly out of focus. Film-noir color grading with lifted blacks. --ar 2:3 --v 6"
 }

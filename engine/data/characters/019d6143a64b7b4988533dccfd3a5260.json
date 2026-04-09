@@ -319,5 +319,13 @@
     "posture_movement": "Still. Conserves motion. Walks with minimal upper body movement, lets hips lead. Stands in corners when stationary, back always positioned with sightline control. Doesn't fidget. His stillness is his primary invisibility asset — easier to overlook someone who isn't performing visibility.",
     "clothing_style": "Tier 3-4 utilitarian. Charcoal gray tech-weave utility jacket with reinforced forearm panels — practical, worn enough to be invisible but maintained. Black cargo pants with custom pockets. Steel-toed boots, scuffed but functional. Thin high-neck undershirt in black, covers any subdermal scarring. No branding visible. Everything selected for silence — no rustling fabrics, muted colors, nothing that broadcasts presence. The overall effect is someone designed to be forgotten."
   },
-  "image_prompt": "Cyberpunk character portrait of a lean 45-year-old man with mixed Japanese, West African, and Eastern European features, dark brown eyes, silver-threaded dark hair pulled back tight, angular face with visible scars on eyebrow and cheekbone. Right forearm features polished stainless steel smartgun link port showing beneath skin. Wearing charcoal gray reinforced tech-weave utility jacket and black cargo pants, high-neck black undershirt, steel-toed boots. Standing in shadow with minimal posture, back against wall, stillness suggesting professional cleaner. Cool blue and gray lighting, cyberpunk noir atmosphere, gritty urban residential setting, sharp focus on face and forearm augmentation, photorealistic, moody atmospheric lighting, cinematic depth --ar 2:3 --v 6"
+  "image_prompt": "Cyberpunk character portrait of a lean 45-year-old man with mixed Japanese, West African, and Eastern European features, dark brown eyes, silver-threaded dark hair pulled back tight, angular face with visible scars on eyebrow and cheekbone. Right forearm features polished stainless steel smartgun link port showing beneath skin. Wearing charcoal gray reinforced tech-weave utility jacket and black cargo pants, high-neck black undershirt, steel-toed boots. Standing in shadow with minimal posture, back against wall, stillness suggesting professional cleaner. Cool blue and gray lighting, cyberpunk noir atmosphere, gritty urban residential setting, sharp focus on face and forearm augmentation, photorealistic, moody atmospheric lighting, cinematic depth --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 48.1,
+    "Hispanic/Latin American": 23.2,
+    "Sub-Saharan African": 15.0,
+    "Central Asian": 7.3,
+    "East Asian": 3.4,
+    "North African": 3.0
+  }
 }

@@ -61,5 +61,40 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus ST-4 'Verdict'",
+    "GLMZ",
+    "Lazarus Pharmaceuticals",
+    "Narrowcast",
+    "Nenad Vargas-Baffour",
+    "Patient Zero",
+    "The Iron Lotus",
+    "The Question",
+    "The Suture Collective",
+    "VitaCore ClearCourse Addiction Suppressor"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, instrument-grade device with the ergonomic proportions of a surgical tool rather than a firearm. The form suggests precision and control—narrow, almost delicate in profile, with a focus aperture that dominates the forward end. The silhouette is vertical and compact, betraying its medical heritage.",
+    "dimensions": "Length: 28 cm | Width: 4.2 cm | Height: 5.1 cm (including focusing aperture housing) | Aperture protrusion: 1.8 cm",
+    "weight_description": "Balanced and light—0.9 kg feels almost negligible in hand, creating a deceptive sense of weightlessness that belies its lethal precision. The weight distribution favors the barrel, giving subtle directional intent.",
+    "primary_material": "Surgical-grade titanium alloy frame with reinforced polymer handgrip sections. The focusing aperture housing is precision-machined aluminum with internal beam-shaping optics.",
+    "finish": "Matte gunmetal gray with brushed titanium accents. The focusing aperture is polished to a mirror-bright surgical finish. Minimal wear patterns visible—this is a maintained tool, not a battle rifle.",
+    "color_scheme": "Primary: cool gunmetal gray with surgical silver accents. Secondary: dark polymer black on grip sections. Accent: faint LAZARUS green indicator lights along the power cell housing.",
+    "grip_texture": "Textured medical-grade polymer with shallow ergonomic indentations. Slightly tacky, designed for precision control even in gloved or wetted hands. Minimal vibration damping—this is not a comfort grip.",
+    "distinctive_features": [
+      "Precision focusing aperture at forward end—a narrow, precisely engineered opening that seems almost impossibly small",
+      "Integrated targeting assist array: four subtle optical sensors arranged around the beam emitter, barely visible as dark pinpoints",
+      "Power cell housing with faint bioluminescent charging indicators (LAZARUS green) along the side",
+      "Minimal sighting system—a thin etched reticle line on the aperture housing itself",
+      "Heat dissipation vents along the barrel: thin slots suggesting controlled thermal management",
+      "No safety lever or physical trigger guard—instead, a sensitive capacitive contact zone on the grip requiring deliberate finger placement",
+      "Serial/batch identifier etched in micro-font: 'CRS-7-[XXXX]' with pharmaceutical regulatory stamps",
+      "Subtle wear marks on the grip from gloved hands, but the aperture remains pristine—well-maintained by someone who understands what they're holding"
+    ],
+    "manufacturer_markings": "LAZARUS PHARMACEUTICALS logo—a stylized medical rod wrapped in a helix—engraved in matte finish on the upper grip section. Small regulatory compliance stamps appear on the power cell housing. No aggressive branding; this reads as medical equipment first, weapon incidentally.",
+    "condition_typical": "Meticulously maintained. This is not a weapon carried by soldiers. The operator keeps it clean, checks the aperture for particulate contamination regularly, and ensures the power cell is charged. It shows signs of careful use—no dings, no corrosion, no jury-rigging. It looks expensive and precise."
+  },
+  "image_prompt": "Product photograph of the Coherent Radiation Scalpel CRS-7 'Suture' on a dark graphite surface, positioned at 45-degree angle. Gloved hand (black medical latex) steadies the weapon near the grip, fingers positioned precisely as if ready for the capacitive trigger. Dramatic side-lighting from upper left casts the focusing aperture into sharp relief, highlighting its mirror-bright surgical finish and the subtle targeting sensor array. Cool clinical LED indicators glow faint green along the power cell. Background: soft bokeh of dark blurred medical equipment or surgical theater. Atmospheric haze to suggest precision industrial environment. Emphasize the tool-like elegance—this is a surgeon's instrument weaponized, not a gun retrofitted with surgery. Cyberpunk aesthetic with clinical pharmaceutical overtones. --ar 3:2 --v 6"
 }

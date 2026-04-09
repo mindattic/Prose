@@ -47,5 +47,25 @@
     "Tessera Industries Optical Tap Micro-Splice OT-1",
     "The Counter",
     "The Wire Taps"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A compact handheld diagnostic unit with a wedge-shaped profile — tapered from a thick control end to a slender probe tip. The design suggests precision instrumentation: clean angles, minimal ornamentation. Two prominent fiber-optic connector ports occupy the narrow end, flanked by status indicators. Overall impression is industrial and purposeful.",
+    "dimensions": "18 cm length, 7 cm width at widest (control section), 4 cm depth. Pocket-sized to backpack-portable.",
+    "weight_description": "500 grams — handheld with ergonomic grip. Light enough for sustained fieldwork, substantial enough to suggest quality engineering.",
+    "primary_material": "Anodized aerospace-grade aluminum chassis with reinforced polymer grip panels",
+    "finish": "Matte gunmetal with micro-textured grip surfaces. Chassis edges beveled and polished. Connector end polished to high gloss to minimize dust.",
+    "color_scheme": "Gunmetal gray body with black grip panels. Accent lights: amber for active scan, red for anomaly detection, blue for standby. Stainless steel probe tip with faint iridescent oil-film from precision machining.",
+    "interface_elements": "Two SC/APC fiber-optic connectors at probe end. 2.4-inch monochrome LCD display (320x240) with blue-tinted matrix readout. Five tactile buttons arranged in cross pattern below display: SCAN, LOCATE, MAP, RESET, MENU. USB-C charging port on right side. 3.5mm jack for auxiliary telemetry output.",
+    "distinctive_features": [
+      "Micro-precision fiber connectors with dust caps tethered by kevlar cord",
+      "Real-time waveform graph scrolling continuously across LCD — shows fiber signal strength topology",
+      "Tessera Industries logo embossed in lower right, overlaid with Vasquez Biocompatible Materials copyright stamp",
+      "Small circular window above left connector showing fiber coupling lens — visible as faint blue-tinted optics beneath strengthened glass",
+      "Subtle horizontal ridges across grip panels for tactile feedback during precision manipulation",
+      "Battery status bar integrated into LCD frame — depletes visually as charge drains"
+    ],
+    "manufacturer_markings": "Tessera Industries logo (interlocking tessellated squares in serif typeface). Vasquez Biocompatible Materials name stamped on back. Model designation OFT-1 laser-etched below display. Regulatory compliance marks: GLMZ-certified, UL equivalent mark, recycling symbol.",
+    "condition_typical": "Field-worn units show micro-scratches on aluminum chassis. Connector ends frequently wrapped in protective silicone dust covers. Display may have faint burn-in of grid patterns from extended use. Grip panels sometimes replaced with aftermarket rubberized overlays for better handling in cold environments. Unit often paired with external telemetry recorder clipped to user harness."
+  },
+  "image_prompt": "Professional product photography of Tessera Industries OFT-1 Optical Fiber Tap Detector mounted on a white aluminum test bench, surrounded by coiled single-mode fiber spools and connector adaptors. Device positioned at slight angle showing probe end and LCD display. Dramatic side-lighting casting shadows across the gunmetal chassis, emphasizing textured surfaces. Small holographic depth-of-field overlay visible on LCD screen showing a simulated fiber topology map with red anomaly flags. GLMZ corporate skyline visible soft-focus through window in background. Cyberpunk aesthetic: cool color temperature, neon accent lighting reflecting off connectors, minimal but precise visual information density. Product photography style, counter-surveillance equipment aesthetic, 2226 technology level --ar 3:2 --v 6"
 }

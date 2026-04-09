@@ -43,5 +43,25 @@
     "The Fathom Line",
     "The Underlayer Collective",
     "Tiare Nishi-Anim"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A broad-shouldered work jacket in high-visibility industrial orange with graphite grey underlayer visible at cuffs and collar. The back features a large reflective silver anvil logo—Crucible's mark of authority. Despite its utilitarian construction, it reads as confident and command-oriented on the wearer; the silhouette suggests capability and experience rather than fashion.",
+    "fit": "Generously cut through the shoulders and torso to accommodate diverse body types and upper-body augmentation. Sleeves are slightly relaxed but taper toward rollable cuffs secured at the elbow. The cut allows freedom of movement without excess fabric—practical for close-quarters fabrication work.",
+    "primary_material": "Flame-resistant aramid-cotton blend rated for 400°C incidental exposure and weld splash. Durable, slightly stiff when new, softening with wear. Graphite grey visible at seams and interior.",
+    "texture": "Structured, with a subtle ribbed weave. Reinforced seams throughout, especially at shoulders. The reflective anvil logo has a raised, heat-resistant quality. Shows scuff marks and minor discoloration easily, patina deepening with use.",
+    "color_scheme": "Crucible industrial orange (primary) over graphite grey. Heat-resistant silver reflective ink on back logo. No bright accent colors—pure function.",
+    "closures": "Heavy-duty magnetic snaps down the front placket. Magnetic tool clips along the chest in a deliberate row—form following function. Cuff closures at elbows via friction-fit retention straps.",
+    "distinctive_features": [
+      "Large reflective silver anvil logo centered on back panel",
+      "Row of magnetic tool clips on chest for diagnostic tablets and hardware",
+      "Reinforced shoulder seams to accommodate cybernetic arm attachment points",
+      "Tail-loop access cut into back panel for geneware modifications",
+      "Roll-and-secure sleeves at elbow for precision work",
+      "Visible wear patterns become badges of experience—scuff marks, fading, heat discoloration accepted as proof of tenure"
+    ],
+    "tier_indicator": "Tier 2-3 functional authority wear. Not wealthy, but clearly positioned above line workers. Signals mid-management access and earned competence.",
+    "cultural_context": "Uniform of a Crucible floor supervisor in the GLMZ manufacturing sector. Wearing this jacket means you've proven yourself on the line and earned the trust of site management. It carries social weight—workers defer, managers listen. A battered jacket is a resume of survival and expertise. The fit accommodates the mixed-augmentation reality of Crucible's workforce without comment.",
+    "condition_typical": "Worn in deliberately. New jackets look slightly stiff and overly bright; veteran jackets show heat scars, minor burns, chemical stains, and discoloration that supervisors wear like medals. A pristine jacket signals either a recent promotion or someone still proving themselves."
+  },
+  "image_prompt": "Industrial-grade work jacket in burnt orange and graphite grey on a weathered cyberpunk worker, sleeves rolled at elbows. Large reflective silver anvil logo visible on back. Close-up detail of magnetic tool clips holding diagnostic hardware on chest. Harsh warehouse lighting casting long shadows, grime and heat-scars visible on fabric. Dark metallic factory backdrop with hanging cables and industrial fixtures. Moody, utilitarian aesthetic. --ar 2:3 --v 6"
 }

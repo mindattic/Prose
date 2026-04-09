@@ -41,5 +41,25 @@
   "related_entities": [
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "The Pure Hand"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian silhouette built from repurposed military-medical gear, worn with the precise, economical posture of someone trained to move efficiently in high-stress environments. The overall impression is one of controlled competence—no excess, no flourish, every element serving a function. The rolled sleeves expose augmentation, signaling both capability and a deliberate choice not to hide it.",
+    "fit": "Slim, tapered trousers with a high waist for stability; henley fitted but not tight through the chest and shoulders to allow unrestricted arm movement; apron sits low on the hips, doesn't interfere with torso rotation.",
+    "primary_material": "Ironpass ballistic-weave trousers (reinforced Cordura composite); standard cotton-poly blend henley; black canvas apron with ripstop reinforcement at stress points.",
+    "texture": "Trousers have a subtle grip texture from their original combat coating, now worn smooth at the knees and thighs. Henley is soft from repeated washing but retains a slight stiffness along the seams. Apron canvas is broken-in, with a soft nap but structured enough to hold its shape when loaded.",
+    "color_scheme": "Charcoal-gray trousers with OD green webbing; olive henley; matte black canvas apron. The chrome augmentation on the left forearm provides a cool metallic accent against warm skin tone.",
+    "closures": "Trousers: traditional button fly with reinforced stitching. Henley: pullover, no closure. Apron: heavy-duty D-ring adjustment at the back, allows quick on/off.",
+    "distinctive_features": [
+      "Medical-kit loop webbing still stitched into left thigh—now repurposed to hold a vintage steel bottle opener and a bleached cotton rag",
+      "Henley sleeves always rolled to the elbow in a precise, practiced fold—the crease holds even after washing",
+      "Left forearm featuring two mismatched chrome fingers: older, matte-gray surgical-grade on index; newer, polished titanium-alloy on ring finger, suggesting incremental augmentation over years",
+      "Apron front pockets designed to hold glassware without shifting; rear reinforcement for carrying full drink trays",
+      "Faded stress marks on trousers at hip flexors and thigh where medical gear used to mount",
+      "Slight discoloration on the henley's left shoulder—old blood stain that won't fully wash out, now a ghost of the wearer's former life"
+    ],
+    "tier_indicator": "Tier 3 functional, bordering Tier 4. The base garments are quality working-class (Ironpass is mid-market), but they're heavily worn and repurposed. The chrome augmentation is modest—surgical-grade, not flashy—suggesting practical enhancement over status.",
+    "cultural_context": "Signals a former military-medical background (combat medic) now civilian-employed in the service industry. The visible augmentation and utilitarian aesthetic broadcast competence and a refusal to code-switch. Wearing this outfit says: 'I know how to work under pressure, I've saved lives, and now I'm building a different kind of livelihood. Take me as I am.'",
+    "condition_typical": "Broken-in but maintained. Trousers are creased where they fold, fabric slightly faded at the seams from repeated wear and laundering. Apron shows scuffs and faint stains (lime juice, bitters, old coffee) that don't fully come out. The henley is soft, possibly re-dyed once or twice to keep it looking intentional rather than threadbare. The chrome fingers are clean and functional—they receive regular maintenance. Nothing is torn or actively falling apart, but nothing is new either."
+  },
+  "image_prompt": "A former combat medic working the bar shift, shot in moody golden-amber neon light from overhead. Dark-skinned model with a calm, focused expression, standing three-quarter to camera, left arm extended slightly to show the mismatched chrome fingers catching the light—one dull surgical gray, one polished titanium. Charcoal trousers crisp at the thigh where the medical webbing is visible, holding a vintage bottle opener. Olive henley with sleeves precisely rolled to the elbows, no wrinkles. Black canvas apron worn low, front pockets shadowed and deep. Background: a GLMZ dive bar interior, blurred bottles on shelves, wet counter surface reflecting neon. Mood: quiet competence, no wasted movement. Shot from a distance that captures the full utilitarian silhouette against a dark brick wall with faint holographic ad interference. --ar 2:3 --v 6"
 }

@@ -39,5 +39,25 @@
   ],
   "related_entities": [
     "CHROMEWORKS FlexSheath Graphene Spinal Wrap"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian one-piece silhouette that hangs straight from shoulders to ankles, projecting no-nonsense durability. The coverall reads as work-worn authenticity—neither tailored nor baggy, but deliberately proportioned for function over form. On-body presence suggests someone who builds, repairs, or maintains infrastructure.",
+    "fit": "Relaxed straight-cut through the torso and hips with no taper; generous in the thigh and calf. Cut to accommodate movement and layering underneath. Sleeves sit at mid-forearm with a slight taper. Collar sits flat and wide.",
+    "primary_material": "Heavy ironweave canvas—a ballistic-grade synth-natural blend (60% treated hemp composite, 40% synthetic reinforcement fibers). Matte finish from industrial pre-washing.",
+    "texture": "Soft but rigid canvas with a visible weave pattern. Surface is slightly pilled from wear. Double-stitched seams create subtle ridge texture along stress points (shoulders, crotch, sleeve hems). Faded to a uniform charcoal-gray with no sheen.",
+    "color_scheme": "Muted charcoal gray with darker charcoal topstitching. Faded union patch on left sleeve in faded red and white. Name-badge slot appears as a slightly lighter rectangular ghost from repeated use.",
+    "closures": "Full-length heavy-duty brass YKK slider zipper down center front from neck to groin. Concealed snap buttons at collar. Reinforced belt loops (no belt included).",
+    "distinctive_features": [
+      "Chest pocket with embroidered name-badge slot and faded union seal patch",
+      "Double-stitching at all stress points (shoulders, underarms, crotch seam, hem)",
+      "Pre-worn matte finish—intentionally broken-in by manufacturer",
+      "Halversen Workwear Co. woven label at neck (faded)",
+      "Subtle wear creases at elbows and knees from factory treatment",
+      "Tool loops on thighs (left and right)"
+    ],
+    "tier_indicator": "Tier 3-4 functional working-class. Affordable durability, not luxury.",
+    "cultural_context": "Worn by infrastructure workers, maintenance crews, factory floor personnel, and ungoverned-sector salvagers. Signals honest labor and union affiliation (historical). Common in GLMZ dockside, industrial sectors, and remote station repair crews. Occasionally worn ironically by Tier 2 youth.",
+    "condition_typical": "Broken-in and weathered on arrival. Creases at joints, faded color gradients from sun and sweat, small stains or scuffs normalized as part of the aesthetic. Designed to look lived-in immediately."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a charcoal ironweave Halversen coverall on a dark-skinned model with subtle neural-interface temple tattoos, shot against an industrial GLMZ warehouse backdrop. Moody cyan-and-amber warehouse lighting, rain-slick concrete floor, overhead cable conduit visible. Model stands in three-quarter pose, hand resting on thigh tool loop, coverall zipper half-open revealing a dark undershirt. Visible wear creases at elbows and knees. Faded union patch on left sleeve catches low amber light. Shallow depth of field, cinematic grain. --ar 2:3 --v 6"
 }

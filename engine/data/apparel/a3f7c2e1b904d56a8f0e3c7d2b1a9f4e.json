@@ -50,5 +50,26 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "SynapTech ReadRoom Social Cue Enhancer",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A standardized corporate silhouette: clean lines, muted authority, algorithmic precision. The wearer appears pressed into uniformity—neat but slightly undersized, as if tailored by committee rather than craft. Conveys compliance and administrative function without warmth or individuality.",
+    "fit": "Precisely tailored to a body-scanning algorithm: collarless shirt sits high at the neck, cuffs narrow at the wrist. Blazer cut in four standard sizes, likely not a perfect match. Trousers sit straight-legged with a permanent factory crease worn smooth from repetitive seating. Compression-adjacent without being performance wear.",
+    "primary_material": "Administratum weave polysynth blend (proprietary Helix Corp formulation) for shirt and blazer; matching slate-grey synthetic for trousers. Matte charcoal synthetic leather for Cordis Autofit dress oxfords.",
+    "texture": "Shirt fabric is smooth, slightly stiff from anti-wrinkle treatment, engineered to resist pilling and moisture. Seams show stress fractures at shoulders. Blazer lining pilled from years of friction. Shoes buffed to a low sheen with visible polishing marks masking scuff wear.",
+    "color_scheme": "Muted slate-blue and slate-grey throughout—a corporate palette designed for visual blandness and easy laundry identification across subsidiary offices. No accent colors, no patterns. Intentional chromatic monotony.",
+    "closures": "Single-button blazer closure. Button-front shirt (standard polymer buttons, slightly yellowed). Magnetic closure on dress oxfords (factory replacement for frayed original laces).",
+    "distinctive_features": [
+      "Embossed Helix Corp chevron on left breast pocket—subtle, institutional branding",
+      "Hand-cut neural port collar-notch at back of neck with crude iron-on binding tape (unauthorized worker modification)",
+      "Lanyard with printed-polymer ID badge worn front-facing at chest—mandatory policy compliance",
+      "Permanent factory crease in trousers worn smooth at inner thigh from daily transit seating",
+      "Stress fractures visible at shoulder seams",
+      "Buffing marks on shoe leather from repeated scuff removal",
+      "Pilled blazer lining visible at edges"
+    ],
+    "tier_indicator": "Tier 3 working-class corporate. Standard issue, mass-produced, algorithmically fitted rather than tailored. Affordable uniformity. Not aspirational, not salvage.",
+    "cultural_context": "Helix Corp administrative worker, likely BCI-augmented (evidenced by neural port modification). Signals compliance, predictability, mid-tier corporate function. Wearer has internalized the uniform—years of identical days in identical outfits. No room for self-expression within dress code parameters.",
+    "condition_typical": "Broken-in and worn. Not damaged, but lived-in. Seams stressed, lining pilled, shoes scuffed and re-polished. The uniform of someone who has worn it every working day for years without complaint or customization beyond the practical neural port cut."
+  },
+  "image_prompt": "Cyberpunk corporate worker in muted slate-blue Helix Corp compliance uniform standing under cold fluorescent overhead lighting in a glass-walled office cubicle or transit station. Flat, institutional lighting casts no shadows. Close-up detail of embossed chevron on breast pocket and crude hand-cut neural port notch at nape of neck visible. ID badge lanyard prominent at chest. Shoes show subtle buffing marks. The figure appears geometrically perfect yet subtly ill-fitting—tailored by algorithm rather than human hand. Neutral grey background, steely color grading, sharp focus on seams and wear patterns. Mood: compliant, exhausted, uniform. Professional product photography with documentary undertone. --ar 2:3 --v 6"
 }

@@ -36,5 +36,27 @@
   "related_entities": [
     "Arcturus Defense Solutions Proprioceptive Lattice Sleeve",
     "The Wire Taps"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian cross-body harness that wraps around the torso and shoulders, creating a geometric web of routing channels and attachment points. When worn, it presents a functional, almost tactical silhouette that suggests competence and technical expertise. The harness sits flush against the chest and sides, with multiple rigid guide tubes and elastic restraint loops creating visual texture across the body.",
+    "fit": "Compression-fitted to the torso with adjustable side-buckle straps that allow for layering over work shirts or directly against skin. Designed to stay secure during crawling, climbing, and lateral movement through confined spaces. The shoulder cross-straps distribute weight evenly and prevent cable load from pulling the wearer off-balance.",
+    "primary_material": "High-grade ballistic weave reinforced with embedded rigid polymer routing channels and medical-grade silicone strain-relief loops. The base is a breathable nylon composite with sweat-wicking treatment.",
+    "texture": "Tactile and industrial—the weave has a subtle ribbed texture, while the integrated channels create hard edges and geometric ridges. Strain loops feel slightly elastic and cool to the touch. Multiple wear surfaces show reinforced stitching at stress points.",
+    "color_scheme": "Matte charcoal gray base with high-visibility phosphorescent lime green accent piping on all cable channels and attachment loops. Logos and manufacturers markings in brushed steel gray.",
+    "closures": "Quick-release magnetic snaps at the shoulders, friction-fit side-buckles with tool-accessible adjustment tabs, and friction-lock clip points for cable retention throughout the harness body.",
+    "distinctive_features": [
+      "Integrated rigid polymer tubes that guide cables along the spine and ribcage",
+      "Quick-release magnetic snap shoulders for fast removal without undressing completely",
+      "Color-coded channel sections (green for data, orange accent for power, blue for diagnostic)",
+      "Strain-relief silicone loops spaced every 10 centimeters to prevent cable kinking",
+      "Tool-accessible side-buckles designed for one-handed adjustment in darkness",
+      "Embossed Helion Manufacturing logo on left shoulder",
+      "Reinforced stress points at shoulders, sides, and waist with triple-stitching",
+      "Subcutaneous biolink anchor points hidden beneath interior padding for augmentation integration"
+    ],
+    "tier_indicator": "Tier 3 functional—a working-class tool worn by technicians, maintenance contractors, and field engineers. Not luxury, not salvage, but honest gear that signals technical competence and years in the crawlspaces.",
+    "cultural_context": "Worn by GLMZ infrastructure maintenance workers, freelance technicians, corporate field service engineers, and anyone who spends time inside Iowan Behemoth chassis doing diagnostics or repair work. Marks the wearer as someone who knows their way through the mechanical guts of the city—a specialized trade skill. Also worn by military field-repair units and black-market augmentation technicians.",
+    "condition_typical": "Typically worn broken-in, with faint cable abrasion marks on the channels, small stress cracks in the polymer tubes from repeated use, and slight discoloration from sweat and industrial residue. Rarely pristine; always functional."
+  },
+  "image_prompt": "Close-up fashion photography of a Helion Manufacturing Cable-Management Harness on a lean, mixed-heritage cyberpunk technician with visible forearm augmentation ports. The harness is worn over a dark compression shirt, with visible cable routing channels and lime-green accent piping catching hard directional lighting. Shot in an industrial maintenance corridor with flickering neon work lights and exposed ventilation shafts in soft focus background. Shallow depth of field on the shoulder magnetic snap detail. Moody cyan and orange gel lighting, emphasizing the tactile geometry of the harness. Dark cinematic aesthetic. --ar 2:3 --v 6"
 }

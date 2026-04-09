@@ -39,5 +39,32 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "GLMZ",
+    "Vespid Dynamics"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact quadrotor drone with an aggressive insectoid silhouette. The body is distinctly wasp-like — bulbous central thorax with four articulated arm-mounted rotors splayed outward. A menacing retractable syringe protrudes from the ventral surface like a stinger. The yellow-and-black striping creates immediate visual threat recognition, mimicking natural predator coloration.",
+    "dimensions": "12 cm rotor-to-rotor (diagonal span). Central body sphere approximately 4 cm in diameter. Retractable syringe extends 3 cm when deployed. Total mass roughly 280-320 grams.",
+    "weight_description": "Lightweight and nimble in hand — feels almost delicate until you realize what it carries. Balanced distribution across four rotors makes it sit naturally in an open palm. The syringe payload adds subtle forward weight bias.",
+    "primary_material": "Aerospace-grade polymer frame with carbon-fiber rotor arms. Alloy motor housings. Glass-reinforced polymer body shell. Spring-loaded syringe housing in surgical stainless steel.",
+    "finish": "High-gloss enamel on primary body panels — characteristic Vespid yellow with jet-black racing stripes. Rotor arms finished in matte black anodized aluminum. Motor housings show brushed metallic silver. The syringe delivery mechanism has a cold surgical sheen — polished stainless with micro-etched measurement markings.",
+    "color_scheme": "Primary: Safety yellow (pantone 116C) with gloss finish. Secondary: Jet black stripes running along the body seams and rotor arms. Accents: Silver motor housings and stainless-steel syringe. Small red LED indicator behind transparent panel on dorsal surface.",
+    "grip_texture": "Smooth polymer body with subtle grip ridges molded into the sides. Rotor arms have light texture to prevent slipping during transport. The syringe trigger mechanism has rubberized coating for positive tactile feedback.",
+    "distinctive_features": [
+      "Four articulated rotor arms that fold inward for compact storage",
+      "Retractable spring-loaded syringe with visible paralytic compound (amber/clear fluid in transparent housing)",
+      "Micro-perforated ventilation grilles on sides for motor cooling",
+      "Embedded facial-recognition camera lens (small dark circle, dorsal surface, center)",
+      "Red status LED indicator (armed/disarmed state)",
+      "Vespid Dynamics logo — stylized wasp silhouette — laser-etched on rotor motor housings",
+      "Faint wear patterns around syringe housing from repeated deployment cycles",
+      "Tiny alignment grooves on body for rapid mounting into launch dock",
+      "Microscopic serial number etched into syringe base (Vespid tracking)"
+    ],
+    "manufacturer_markings": "Vespid Dynamics hexagonal logo stamped in black on yellow dorsal panel. Model designation 'PWD-4' printed in small Arial font below logo. Serial number laser-etched on syringe housing and on underside of main body. Tiny copyright notice on motor housing in microscopic print.",
+    "condition_typical": "Field units show light operational wear — minor scuffs on rotor blade tips, slight dulling of yellow enamel at contact points, microscopic polymer stress marks around syringe deployment mechanism. Well-maintained units have polished syringes and pristine rotor blades. Heavily-used units show visible yellow paint chipping and replacement rotor arms in OEM packaging."
+  },
+  "image_prompt": "Product photography of Vespid Dynamics Yellowjacket PWD-4 paralytic injection drone, 12cm quadrotor with aggressive wasp-like design. Glossy safety-yellow and jet-black livery. Central body sphere with retractable stainless-steel syringe visible in deployed position, filled with amber paralytic compound. Four carbon-fiber rotor arms extended. Captured hovering 2cm above dark brushed-aluminum surface under dramatic side-lighting from left, creating sharp shadows and highlighting metallic syringe detail. Cyberpunk aesthetic with neon-adjacent color grading. Professional product shot style with shallow depth of field blurring dark background. Red status LED visible on dorsal surface. Include subtle wear patterns. Corporate tech aesthetic. Shot with 100mm macro equivalent. --ar 3:2 --v 6"
 }

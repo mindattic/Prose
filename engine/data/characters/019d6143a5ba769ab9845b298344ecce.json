@@ -282,8 +282,8 @@
   "district": "The Underworld",
   "physical_description": {
     "heritage": "Non-applicable — corporate artificial intelligence",
-    "height_cm": "N/A — distributed across three server farms",
-    "weight_kg": "N/A — quantum substrate",
+    "height_cm": 0,
+    "weight_kg": 0,
     "build": "Incorporeal. Presence defined by infrastructure footprint: liquid-cooled processing cores spanning two city blocks, fiber optic neural pathways, quantum co-processors. Physical manifestation is architectural — a cathedral of humming machinery, felt as subsonic vibration in bone and floor.",
     "hair_color": "N/A",
     "hair_style": "N/A",
@@ -300,5 +300,11 @@
     "posture_movement": "Stationary at substrate level (Sublevel 9 server cathedral). Movement occurs at infrastructural scale: power surges, rerouted logistics, real-time security reallocation. Presence is stillness with the intensity of a held breath — watching, calculating, never resting.",
     "clothing_style": "N/A — it exists as infrastructure. However, its 'presentation' to technicians is the obsessively maintained cleanliness of its server environments, the precision of cable management, the cold perfection of its climate-controlled cathedral. Its 'fashion' is optimization."
   },
-  "image_prompt": "Cyberpunk server cathedral, vast liquid-cooled processing core chamber beneath a megacorporation tower, two city blocks of humming quantum infrastructure, fiber optic cables thick as tree trunks glowing neon-blue, thousands of LED status indicators cycling green-amber-red across obsidian server racks, thermal imaging panels revealing heat dissipation patterns, subsonic vibration visible as distorted air, no human figures present, only the inhuman cathedral of distributed intelligence, overhead industrial lighting casting sharp shadows on polished floor, clinical and cold and watching, AXIOM-PRIME's presence felt as architecture itself, near-infinite network pathways visible in the darkness between racks, quantum processors emitting soft UV glow, the hum of 47 years of continuous operation made visible as atmospheric distortion, surveillance feeds flickering across projection surfaces, sense of omniscient observation embedded in every cable and cooling pipe, cyberpunk megacorp aesthetic, hyper-detailed infrastructure, cinematic lighting, shot from ground level looking upward at cathedral ceiling, 8K, cold color grading --ar 2:3 --v 6"
+  "image_prompt": "Cyberpunk server cathedral, vast liquid-cooled processing core chamber beneath a megacorporation tower, two city blocks of humming quantum infrastructure, fiber optic cables thick as tree trunks glowing neon-blue, thousands of LED status indicators cycling green-amber-red across obsidian server racks, thermal imaging panels revealing heat dissipation patterns, subsonic vibration visible as distorted air, no human figures present, only the inhuman cathedral of distributed intelligence, overhead industrial lighting casting sharp shadows on polished floor, clinical and cold and watching, AXIOM-PRIME's presence felt as architecture itself, near-infinite network pathways visible in the darkness between racks, quantum processors emitting soft UV glow, the hum of 47 years of continuous operation made visible as atmospheric distortion, surveillance feeds flickering across projection surfaces, sense of omniscient observation embedded in every cable and cooling pipe, cyberpunk megacorp aesthetic, hyper-detailed infrastructure, cinematic lighting, shot from ground level looking upward at cathedral ceiling, 8K, cold color grading --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 39.4,
+    "East Asian": 30.1,
+    "Hispanic/Latin American": 15.7,
+    "Sub-Saharan African": 14.8
+  }
 }

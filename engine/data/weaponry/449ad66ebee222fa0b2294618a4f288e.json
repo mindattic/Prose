@@ -42,5 +42,42 @@
     "flexible",
     "less_lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Amara Diallo-Ranginui",
+    "Brighton Arc",
+    "Djeneba Park-Traore",
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Galvanic Myofibril Lash",
+    "Ira Volkov",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Patient Zero",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA TC-3 'Crucible'",
+    "The Open Syllabus",
+    "The Pure Hand",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sinuous three-meter segmented whip with a distinctive articulated appearance — 24 conductive links that catch light along their edges, creating a chain-like silhouette when coiled. The handle is a compact rectangular module roughly the size of a large flashlight, from which the segments flow like liquid metal. At rest, coiled loosely, it resembles a serpent made of brushed steel segments.",
+    "dimensions": "Total length 300 cm when fully extended; individual segments approximately 12.5 cm each. Handle module: 12 cm length × 4 cm width × 3 cm depth",
+    "weight_description": "Balanced and deceptively light at 800g — the operator feels more control than dead weight, though the distributed mass across 24 segments creates momentum that demands technique to manage",
+    "primary_material": "Conductive carbon-lattice composite links; polymer-reinforced titanium alloy handle core with integrated capacitor array",
+    "finish": "Matte gunmetal gray with brushed finish on the carbon-lattice segments to reduce reflectivity; the handle sports a satin black anodized aluminum casing with subtle metallic striping",
+    "color_scheme": "Gunmetal gray primary with black handle accent; faint blue-white electrical weathering visible along segment edges from repeated discharge cycles",
+    "grip_texture": "Textured high-friction polymer grip wrapped in segmented rubber bands; designed for wet or augmented hand contact. Handle features recessed control indentations for segment length selection",
+    "distinctive_features": [
+      "Blue-white electrical scoring marks along segment edges from repeated use",
+      "Recessed capacitor indicator lights on handle (amber to red gradient)",
+      "Segmented construction with microscopic insulation gaps between each link",
+      "Faint carbon lattice grid pattern visible under light across each segment surface",
+      "Wear striations on grip from intensive training use",
+      "Subtle voltage regulation markings etched at 25%, 50%, 75%, and 100% extension points"
+    ],
+    "manufacturer_markings": "Crucible Industries 'Live Wire' logo embossed on handle side; BioInk 3D Printing serial plate (micro-etched titanium) on the capacitor core visible when handle is turned; small Φ certification mark for licensed electrical weapon status",
+    "condition_typical": "Well-maintained and field-ready; electrical scarring on segments indicates active use rather than collection piece. Grip shows legitimate wear from extensive training, not combat damage. Capacitor indicators typically amber (mid-charge state). The weapon shows respect — not pristine, but meticulously cared for"
+  },
+  "image_prompt": "Cyberpunk weapons catalog photo: Crucible Industries EW-3 'Live Wire' electrostatic whip displayed coiled on a brushed steel surface, handle positioned center-frame. Dramatic side-lighting reveals the carbon-lattice segmented links with blue-white electrical weathering scars catching highlights. A black-gloved augmented hand (subtle chrome knuckle plates visible) holds the handle, fingers demonstrating grip control at the 75% extension marker. Shallow depth of field with the segments gradually blurring into background darkness. Industrial warehouse setting with faint neon accent lighting (cyan/violet) reflecting off the metallic segments. Emphasize the sinuous, dangerous elegance of the coiled whip and the technical precision of the handle module. High contrast, cinematic lighting. --ar 3:2 --v 6"
 }

@@ -55,5 +55,38 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Axiom Systems Perception Filter Rounds PFR-1 'Blind Spot'",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Chibundo Reinholt-Sarpong",
+    "Emeka Johansson-Orozco",
+    "GLMZ",
+    "Helix Biosystems",
+    "LifeWire EchoForm Subvocal Communicator",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Tessera Phased Array Disruptor PAD-3 'Sunspot'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist pistol with an unusually large, translucent barrel assembly housing optical components. The design is angular and clinical, resembling medical instrumentation more than traditional weaponry. The barrel dominates the profile—a prismatic crystalline tube mounted above the grip, giving it an top-heavy but deliberately balanced appearance.",
+    "dimensions": "Overall length: 19cm. Barrel assembly: 8cm long, 2.5cm diameter. Grip: 8cm length. Width at widest point: 4.5cm.",
+    "weight_description": "Deceptively light at 0.9kg—the photonic cell and optical components keep it from feeling substantial, almost insubstantial in hand despite its clinical presence. Balanced slightly forward due to the barrel's optical mass.",
+    "primary_material": "Aerospace-grade polymer composite with embedded carbon lattice for structural integrity. Barrel assembly is precision-ground fused silica with internal dichroic coatings. Grip and trigger guard are brushed anodized aluminum.",
+    "finish": "Matte charcoal polymer body with a faint iridescent sheen suggesting internal optical complexity. Barrel has a subtle purple-tinted translucency revealing geometric optical elements within. Aluminum components are satin-finished with micro-abrasion marks from field handling.",
+    "color_scheme": "Charcoal black primary body with deep violet accents around the barrel collar. Internal components visible as faint geometric purple light paths within the transparent barrel housing. Orange-tinted photonic cell indicator strip along the right grip.",
+    "grip_texture": "Textured polymer with subtle grip fins, slightly tacky composite finish designed to prevent perspiration slipping. Trigger guard is knurled bare aluminum, cold to the touch.",
+    "distinctive_features": [
+      "Translucent barrel assembly revealing internal dichroic optical stack",
+      "Integrated violet-tinted photonic cell window on the right grip",
+      "Subtle LED status indicators (cyan for ready, amber for low charge) near the rear sight",
+      "Pre-flash calibration lens—a faint iris-like aperture visible at barrel crown",
+      "Minimal mechanical trigger—nearly silent actuation mechanism",
+      "Geometric alignment guides etched into the barrel housing in clinical white",
+      "No visible muzzle flash signature—designed for invisibility"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo in white block lettering on the left grip panel. Regulatory serial number etched beneath: SPAP-4 / UV-CERT-CLASS-3. Small biohazard symbol next to manufacturer ID. Clinical product code stamped on barrel collar in serif font.",
+    "condition_typical": "Field units show minimal wear despite frequent deployment—polymer resists scratching, and operators maintain optics obsessively. Some units show faint purple residue on the barrel from improper cleaning solvents. Trigger mechanisms remain pristine, as there is minimal mechanical friction. Law enforcement examples often have department markings or unit tape; black market variants are usually unmarked with tampered serial numbers."
+  },
+  "image_prompt": "Professional product photography of the Scleral Photooxidative Ablation Pistol (SPAP-4) on a matte black surface with dramatic side-lighting from a cool violet LED source. The weapon is positioned at a 45-degree angle, highlighting the translucent barrel assembly and internal optical components that glow faintly purple under the light. The fused silica barrel is in sharp focus, revealing geometric dichroic coatings within. A gloved hand—fingers extended, tactical glove material visible—holds the grip from the side, showing the textured polymer and aluminum accents. The photonic cell indicator glows amber-orange on the grip. Background is deep charcoal with subtle gradient falloff. Atmospheric haze suggests medical/laboratory setting. Cyberpunk aesthetic with clinical precision, cool color temperature, sharp shadows emphasizing the angular geometry. Professional catalog lighting, no harsh glare on optics. --ar 3:2 --v 6"
 }

@@ -38,5 +38,29 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "TESSERA PG-2 'Signature'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, industrial tool masquerading as veterinary equipment. Stocky and compact, with a pronounced forward-heavy weight distribution. The extended barrel sleeve dominates the silhouette, giving it a purposeful, surgical appearance despite its true function.",
+    "dimensions": "22 cm length overall, 5 cm width at grip, 4.5 cm height at hammer assembly. Barrel sleeve extension adds 8 cm to original design.",
+    "weight_description": "Deceptively dense. Feels heavier in-hand than its 0.9 kg suggests due to internal pressure chambers and reinforced bolt assembly. Balanced toward the barrel for point-blank targeting precision.",
+    "primary_material": "Hardened steel frame with carbon-composite barrel sleeve jacket. Internal pneumatic valve assembly uses reinforced aluminum. Bolt is surgical-grade hardened steel.",
+    "finish": "Worn industrial gunmetal with micro-abrasions from field use. Steel surfaces show oxidation patterns consistent with slaughterhouse equipment. No cosmetic polish — purely functional patina.",
+    "color_scheme": "Muted gunmetal grey with charcoal composite accents on barrel sleeve. No branding colors intentionally applied — anonymity is aesthetic.",
+    "grip_texture": "Bare knurled steel with organic grip tape wrapped around trigger guard. Textured for wet conditions and gloved hands. Deliberately uncomfortable to discourage casual handling.",
+    "distinctive_features": [
+      "Extended barrel sleeve with cooling vents suggesting industrial origin",
+      "Oversized pneumatic cartridge port at rear with wear marks from repeated swaps",
+      "Reinforced breech assembly with visible compression rings",
+      "Minimalist hammer mechanism — no safety visible",
+      "Micro-etched depth gauge on barrel indicating contact-range calibration",
+      "Custom-welded rail for bolt travel — rough welds deliberately left unground",
+      "Pressure relief valve venting system with faint rust bloom"
+    ],
+    "manufacturer_markings": "Original veterinary stamps partially filed but readable: 'KAUF-MANN LIVESTOCK SYSTEMS' faintly visible on frame. Street Custom modifications marked with cryptic serial scratch marks in cipher format — no conventional maker's mark.",
+    "condition_typical": "Field-worn and jury-maintained. Signs of careful degreasing and bolt replacement cycles. Internal mechanisms show evidence of pressure-testing. Finish is deliberately kept dull — reflective surfaces suggest careless ownership."
+  },
+  "image_prompt": "Dark studio product photography of a modified pneumatic captive bolt pistol styled as veterinary equipment. Weapon resting on brushed steel surface under dramatic side-lighting revealing gunmetal grey finish and industrial texture. Barrel sleeve extension in sharp focus, pneumatic cartridge port visible at rear. Gloved hand (chrome-augmented fingers) holding grip to show weight balance. Moody amber and cool blue rim-lighting. Industrial warehouse aesthetic. Cyberpunk utilitarian design. High contrast shadows emphasizing brutal functionality. --ar 3:2 --v 6"
 }

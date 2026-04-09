@@ -48,5 +48,25 @@
     "The Iron Lotus",
     "The Peninsula",
     "Tomasz Wren"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Heavy-duty tactical duffel bag with industrial webbing and reinforced stitching. Compact, modular kit that unfolds into multiple rigid components: steel door bars, translucent polymer window panels, mesh curtain rolls, and smaller accessory modules. Designed for rapid deployment rather than aesthetics.",
+    "dimensions": "Duffel bag form: 65cm L × 35cm W × 30cm D when packed; door bars extend to standard doorframe widths (60-90cm); window panels scale to typical windows (up to 1.5m × 1.2m); Faraday curtain covers ~3-meter radius when deployed",
+    "weight_description": "12 kg total — handheld with shoulder strap, manageable for one person but fatiguing over distance. Packed as single compact unit; components redistribute weight when deployed",
+    "primary_material": "Heavy-gauge canvas and nylon exterior; steel reinforcement bars (chrome-plated); ballistic-grade polycarbonate panels; conductive mesh (copper-threaded); aluminum frame components",
+    "finish": "Matte industrial gray canvas with black cordura reinforcement patches. Steel bars have brushed chrome finish with subtle wear patterns. Mesh has dull copper sheen. Polymer panels semi-translucent with faint holographic security holograms embedded",
+    "color_scheme": "Charcoal gray primary, matte black accents, brushed chrome metallic details, copper mesh undertones. Minimal branding — functional over stylish",
+    "interface_elements": "White noise generator: small 8cm cylindrical unit with simple toggle switch, LED power indicator (amber/green), 3.5mm audio jack. Emergency supply compartments have numbered tabs (1-4) for quick access. Door bar has mechanical locking pins (no electronics). Mesh curtain has adhesive contact strips and snap points",
+    "distinctive_features": [
+      "Modular construction — each component can be deployed independently",
+      "Faraday mesh curtain with integrated thermal blocking (dull copper weave pattern visible when deployed)",
+      "Door bars with shock-absorption rubber end caps",
+      "Ballistic panels have subtle linear reinforcement ribs running horizontally",
+      "White noise generator has industrial minimalist design with no branding visible on front",
+      "Emergency supplies packed in color-coded soft cases (red first aid, blue nutrition, yellow water, gray tools)"
+    ],
+    "manufacturer_markings": "Street Custom logo (angular 'SC' monogram) embossed on duffel bag tab. Small regulatory compliance label on corner listing GLMZ safety certifications and Faraday effectiveness rating. Serial number and manufacture date etched on door bar frame",
+    "condition_typical": "Well-maintained units show minor wear on canvas corners and reinforcement patches. Steel bars may have light surface oxidation from humidity. Mesh curtain may have slight creases from storage. Units in active use show scuff marks on polymer panels and wear on strap webbing from repeated deployment cycles"
+  },
+  "image_prompt": "Overhead flat-lay product photography of unfolded Street Custom Panic Room kit on industrial steel workbench. Canvas duffel bag open at center, steel door reinforcement bars laid horizontally with chrome gleaming under cool cyan lighting. Translucent ballistic-polymer window panels arranged diagonally showing internal reinforcement ribs. Copper-threaded Faraday mesh curtain draped partially deployed in background. Small white noise generator and color-coded emergency supply cases arranged around components. Deep shadows emphasize functional design. Moody cyberpunk aesthetic with neon accent lighting (amber on generator, blue on mesh). Gritty workbench surface with slight wear and dust. Shot from 45-degree angle. --ar 3:2 --v 6"
 }

@@ -49,5 +49,26 @@
     "The Circuit",
     "The Shelf",
     "The Signal"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A floor-length ceremonial robe that creates an optical void around the wearer's silhouette. The outer surface appears to absorb light rather than reflect it, creating an uncanny absence against any background. The structured hood frames the head like a crown, emphasizing neural port hardware as sacred geometry. Movement reveals fleeting glimpses of inner gold embroidery—brief flashes of intricate circuit patterns that seem to glow from within the darkness.",
+    "fit": "Loose, flowing, and deliberately voluminous through the body. The hood is architecturally structured to accentuate the upper torso and head. Sleeves are wide and dramatic, tapering slightly at the wrist. The robe moves like liquid shadow, pooling at the floor with deliberate architectural precision.",
+    "primary_material": "Vantablack-treated silk-analog outer layer paired with hand-embroidered silk lining. The treatment creates near-total light absorption (99.7%+ light absorption). Inner lining is premium grade silk with gold-thread work.",
+    "texture": "Outer surface is impossibly smooth and matte—visually flat, almost tactile in its lightlessness. The silk-analog has a subtle whisper-soft hand. Inner lining is smooth silk with raised embroidery—delicate gold thread creating textured circuit maps that catch light only from within.",
+    "color_scheme": "Vantablack (the outer layer appears as pure absence—darker than the shadow it casts). Interior reveals intricate gold-thread circuit diagrams in luminous contrast against dark silk backing. Occasional platinum accent threading highlights neural pathways.",
+    "closures": "Magnetic snap closures along the front placket—concealed within the folds, signaling Tier 1 corpo manufacturing. No visible fasteners; the robe drapes and settles through friction-fit layering.",
+    "distinctive_features": [
+      "Vantablack-treated surface creates optical void effect—wearer appears as negative space",
+      "Structured hood designed to frame neural ports as crown-like adornment",
+      "Hand-embroidered interior lining with unique circuit-diagram maps reflecting wearer's individual neural signature",
+      "Gold-thread neural pathway embroidery only visible from within or during movement",
+      "Custom commission—no two robes have identical embroidery patterns",
+      "Floor-length with architectural pooling at hem",
+      "Subtle Solenne Atelier mark—embroidered in platinum thread at inner neckline"
+    ],
+    "tier_indicator": "Tier 1 luxury—commission-only piece representing the absolute apex of spiritual/corpo fashion collaboration",
+    "cultural_context": "Worn by members of the Church of the Signal Unbroken during BCI neural communion rituals. Signals deep engagement with transhumanist spirituality, wealth, and access to cutting-edge material science. Wearer is positioned as enlightened intermediary between digital and flesh consciousness.",
+    "condition_typical": "Always pristine—custom pieces are maintained by commission. Gold embroidery may show subtle wear patterns along inner seams from repeated ritual use, but outer Vantablack surface remains unblemished."
+  },
+  "image_prompt": "Solenne Atelier Vantablack Devotion Robe worn by a figure against a dim industrial backdrop. The robe appears as a void—a perfect absence that creates negative space around the wearer's form. Structured hood frames visible neural port hardware on the figure's temple, styled as sacred adornment. As the model moves, fleeting glimpses of inner gold-thread circuit embroidery illuminate from within the darkness like bioluminescent pathways. Moody violet and deep indigo rim-lighting defines the robe's silhouette. Concrete wall and ambient neon glow in background. Shot from full-body angle emphasizing floor-length drape and architectural void effect. --ar 2:3 --v 6"
 }

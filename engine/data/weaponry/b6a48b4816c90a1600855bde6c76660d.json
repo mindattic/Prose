@@ -45,5 +45,34 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": "Vantablack Media"
+  "parent_corponation": "Vantablack Media",
+  "related_entities": [
+    "Carrion Defense Works Neural Lash NL-3 'Agony'",
+    "GLMZ",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA ES-4 'Perimeter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, futuristic rifle with an unusually smooth profile — no visible cooling vents or conventional barrel. The emitter array is recessed slightly behind a flat, darkened faceplate that appears almost organic in its seamless integration. It has the predatory posture of a directed-energy platform, all forward momentum despite its lack of mechanical aggression.",
+    "dimensions": "900mm total length, 65mm width at the receiver, 85mm height including integrated sights. Emitter dish face is approximately 120mm diameter.",
+    "weight_description": "Substantial and forward-heavy due to battery pack (8.5 kg total) — designed for supported firing from shoulder or bipod. The weight distribution demands control; it's not a weapon for sustained handheld operation without fatigue.",
+    "primary_material": "Carbon-composite chassis with aerospace-grade polymer skin. The emitter array housing is precision-molded aluminum with thermal dissipation fins concealed beneath the outer shell.",
+    "finish": "Deep matte black with a vantablack-coated emitter face that appears to absorb light almost completely — it looks like a void when viewed straight-on. Brushed metallic accents on the grip and control surfaces show intentional contrast.",
+    "color_scheme": "Dominant: absolute black. Accents: gunmetal gray and subtle amber warning striping along the power coupling and thermal management zones.",
+    "grip_texture": "Textured rubberized polymer with subtle grip ridges — designed for gloved operation. The grip angle is aggressive, almost vertical, suggesting a platform meant for rapid targeting.",
+    "distinctive_features": [
+      "Recessed emitter array with concentric thermal rings visible through translucent housing sections",
+      "Integrated LED status strip running along the left rail — green when operational, red when overheated or powered down",
+      "Heavy battery coupling at the rear with oversized connector — clearly modular design",
+      "Top-mounted aiming module with digital crosshair projection (not visible in passive mode)",
+      "Dual thermal vents along the barrel shroud, disguised as aesthetic ribbing",
+      "Vantablack corporate logo stamped near the power coupling — minimalist, almost invisible against the black finish",
+      "Serial plate in small numerals beneath the ejection port (corporate tracking requirement)",
+      "Wear-resistant polymer covering at the shoulder contact point, slightly discolored from repeated use"
+    ],
+    "manufacturer_markings": "Vantablack corporate logo appears as a subtle embossed icon near the battery coupling. Model designation 'PA-1' and 'PACIFIER' are printed in tiny white lettering on the left receiver rail. Serial number and corporate registration code stamped on a steel plate recessed into the lower chassis.",
+    "condition_typical": "Field-worn but meticulously maintained by corporate security teams. The finish shows micro-scratches and scuff marks consistent with regular deployment and cleaning. The battery coupling shows signs of repeated mating cycles. The rubberized grip may show slight salt staining or wear polish from gloved hands."
+  },
+  "image_prompt": "Product photography of the Vantablack PA-1 Pacifier microwave dispersal rifle positioned on a matte dark gray surface, angled 45 degrees to show the recessed emitter array and thermal venting. Tactical gloved hand gripping the stock. Dramatic side-lighting from the left highlighting the brushed aluminum accents and the absolute black matte finish of the chassis, creating deep shadows that emphasize the recessed emitter void. Cool cyan accent lighting on the LED status strip. The emitter face should appear to absorb light unnaturally. Corporate environment background slightly blurred. Cyberpunk aesthetic with high contrast and clinical precision. --ar 3:2 --v 6"
 }

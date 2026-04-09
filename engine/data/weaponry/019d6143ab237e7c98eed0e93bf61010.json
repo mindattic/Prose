@@ -61,5 +61,39 @@
     "circuit",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "GLMZ",
+    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA PG-2 'Signature'",
+    "The Bazaar",
+    "The Nearfield",
+    "The Pure Hand",
+    "The Resonance Communion",
+    "Vantablack-CNX",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting smart-fabric glove that mimics premium work gloves at first glance—five-fingered, tapered, with a subtle sheen. The real weapon lies in its deceptive simplicity: it looks like something a corpo executive or skilled technician would wear. Only the slim metallic cuff at the wrist hints at its true nature, appearing as a fashionable accessory or medical device.",
+    "dimensions": "Glove length: 28 cm (wrist to fingertip); cuff width: 4 cm; cuff circumference: adjustable 16–22 cm to fit various wrist sizes",
+    "weight_description": "Exceptionally light and balanced—180 grams distributed across hand and wrist feels almost weightless in motion. The cuff is slightly heavier than the glove itself, but weight is concentrated at the wrist where it doesn't impede hand dexterity.",
+    "primary_material": "Smart-fabric composite outer layer (pressure-responsive polymer blend); embedded piezoelectric mesh beneath the surface; flexible steel-alloy internal skeleton; FlexCell battery casing in the cuff",
+    "finish": "Matte or satin finish on glove panels to avoid reflectivity; brushed titanium-grade finish on the cuff accents; surface texture varies subtly—some areas slightly raised to house activation nodes",
+    "color_scheme": "Primary: charcoal gray or black with discrete undertones; Accents: brushed silver or muted rose-gold highlights on cuff controls; optional color variants in midnight blue or off-white for corpo/medical aesthetics",
+    "grip_texture": "The glove palm features a tight, almost imperceptible textured weave—grippy enough for precision work but without the obvious traction patterns of combat gear. Fingertips have a subtle raised pattern for dexterity. The cuff is smooth metal with minimal texture, designed for comfort during extended wear.",
+    "distinctive_features": [
+      "Embedded thumb-dial control on the cuff (rotational, pressure-sensitive, labeled with suppression/incapacitation/lethal detents—visible only under close inspection)",
+      "Pressure-sensitive activation nodes distributed across the palm surface (invisible to the naked eye; only detectable by bioelectric scanners)",
+      "Tiny LED indicator strip along the inner wrist (dim in sleep mode, glows faintly blue when armed, shifts to amber during suppression, red during lethal mode—hidden from external view unless arm is raised)",
+      "Minimal ZHENG-DAO branding: a small 'Φ' symbol embossed subtly on the cuff, easily mistaken for a manufacturer's mark on ordinary gloves",
+      "Micro-seam detail along the knuckle ridge where piezoelectric mesh reinforces contact points",
+      "Charging port disguised as a standard smart-fabric sync connector on the inner cuff",
+      "Faint prismatic distortion across the outer surface when the field is active—visible only in certain lighting angles, like heat shimmer"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo appears as a discrete embossed 'Φ' symbol on the inner cuff near the charging port; a model designation 'DPIG-4' laser-marked on the cuff interior; no serial number visible on legitimate units (black-market versions often lack proper markings entirely)",
+    "condition_typical": "Field units show minimal wear due to lack of ballistic impact—gloves typically appear pristine or near-pristine. Potential degradation appears as slight discoloration on the palm from repeated activation heat, micro-scratching on the cuff from holster contact, or faint residue staining from prolonged skin contact (never truly clean after lethal use). Black-market units often show signs of hasty assembly or field repairs."
+  },
+  "image_prompt": "Product photograph of a ZHENG-DAO DPIG-4 'Secondskin' glove: sleek charcoal-gray smart-fabric glove with brushed titanium cuff accent, displayed on dark matte-black surface. Close-up detail of right hand wearing the glove, palm facing camera to show pressure-sensitive activation nodes as subtle surface variations. Dramatic side-lighting with cool blue and warm amber rim-light to emphasize the barely-visible piezoelectric mesh beneath the fabric. The cuff's thumb-dial control visible in sharp focus, with faint LED glow (blue) indicating armed status. Fingertips and palm in sharp detail showing textured weave pattern. Background: deep black with subtle geometric grid overlay, suggesting surveillance or tech interface. Shallow depth of field. Cyberpunk aesthetic with minimalist corporate design language. --ar 3:2 --v 6"
 }

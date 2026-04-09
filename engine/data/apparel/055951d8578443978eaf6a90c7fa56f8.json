@@ -41,5 +41,27 @@
     "TESSERA PG-2 'Signature'",
     "The Shelf",
     "Vantablack Media Spectral Barrier Display System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deceptively simple mid-length coat that seems to absorb light itself. Silhouette is lean and tailored, sitting just below the hip with a subtle A-line that allows mobility without bulk. On first glance it reads as high-end civilian streetwear—expensive, understated, forgettable. In low light, the wearer's edges blur and soften, making the eye slip past them. The coat seems to exist in slight visual deficit to its surroundings.",
+    "fit": "Trim but not restrictive. Shoulders sit precisely at the natural shoulder point with minimal padding. Sleeves are tapered to the wrist, allowing for augmented limbs or standard anatomy without binding. The body is cut straight through the torso with minimal waist definition—functional rather than fashionable, though fashion is the disguise.",
+    "primary_material": "High-grade synthetic weave impregnated with Vantablack's proprietary light-absorption compound. The exterior is matte to the point of appearing slightly textured at close range, though direct light reflection is virtually nonexistent. The lining is a dense RF-dampening mesh woven into treated synthetic silk.",
+    "texture": "Smooth and almost frictionless to the touch on the exterior, with a subtle grain barely perceptible when run against the light. The compound creates a faint static charge that repels dust. The interior lining has a fine waffle-weave pattern that dissipates body heat and provides grip points for the sensor-filament network beneath.",
+    "color_scheme": "Absolute matte black—the kind of black that seems to have depth rather than surface. No accent colors, no branding, no visible stitching on the exterior (seams are heat-fused). The only visible break is the subtle iridescence of the concealed spectral tag location in the left cuff under specific scanner wavelengths (invisible to human sight).",
+    "closures": "Magnetic snaps concealed beneath a false front placket, allowing rapid opening without audible clicks. The snaps are encrypted to Vantablack's biometric key. A single concealed zipper runs the full length of the front seam beneath the magnetic locks, allowing for rapid access to interior pockets.",
+    "distinctive_features": [
+      "Microscopic spectral tag embedded in left cuff—readable only by Vantablack-issued scanners",
+      "Hidden BCI port concealed in collar seam, flush with the neck lining",
+      "Internal sensor-filament network mapping immediate environment",
+      "RF-shielded pockets with magnetic closures—no external seams visible",
+      "Signal-dampening mesh lining that reduces electronic signature in monitored spaces",
+      "Completely seamless construction on the exterior; all seams are interior-facing or heat-fused",
+      "Subtle ergonomic shaping allowing for unrestricted arm movement and augmentation accommodation",
+      "The fabric appears to 'drink' light, creating a visual receding effect"
+    ],
+    "tier_indicator": "Tier 1-2 material quality and construction, but designed to masquerade as Tier 3-4 civilian wear. The real cost is in materials and embedded systems, not visible prestige markers. Possession outside official channels is treated as Tier 5 criminal acquisition.",
+    "cultural_context": "This is an intelligence operative's outer layer—the uniform of people who aren't supposed to exist in a space but do. Wearing it signals either direct employment by Vantablack or very serious problems. In M88's corporate circles, seeing someone in a coat that eats light is understood as a conversation you won't remember afterward, and possibly one you shouldn't have had. Among street-level workers (Tier 4-5), the coat marks the wearer as either corpo operatives or salvagers who've acquired something far too advanced for their layer.",
+    "condition_typical": "Pristine. The material resists wear, and any damage compromises the light-absorption properties and sensor network. Worn examples are immediately pulled from service and replaced. If you see a creased or weathered version, it's a coverall someone has thrown over the real thing."
+  },
+  "image_prompt": "Vantablack Ops Liaison Jacket displayed on a sleek dark chrome mannequin in a dimly lit corporate safe house. The coat appears to absorb the ambient light, its edges blurring subtly into shadow. Overhead neon strips in cool blue-white cast harsh shadows that seem unable to quite define the garment's silhouette. The mannequin's face is obscured. Behind it, a rain-slicked urban rooftop with the glow of distant GLMZ towers creating a bokeh halo. Close detail shot of the left cuff showing the microscopic spectral tag location as an almost-imperceptible shimmer. High contrast, moody, espionage aesthetic. Cinematic noir-cyberpunk. --ar 2:3 --v 6"
 }

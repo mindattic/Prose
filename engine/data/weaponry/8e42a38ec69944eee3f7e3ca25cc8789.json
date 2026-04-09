@@ -43,5 +43,38 @@
     "residential",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus HD-1 'Homestead'",
+    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'",
+    "Iowan Behemoth — 'Palisade'",
+    "Kang-Petrov Arms KPS-410 'Hallway'",
+    "Nika Svensson-Kone",
+    "The Shelf",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally compact, purposeful defensive shotgun with an aggressive forward-leaning stance. The pistol-grip stock dominates the rear, creating an almost right-angled profile that looks more tactical sidearm than traditional long gun. The 14-inch barrel appears stubby and squared-off, with the receiver sitting high and prominent.",
+    "dimensions": "Overall length: 62 cm (24.4 in); Barrel length: 14 cm (5.5 in); Width across grip: ~8 cm",
+    "weight_description": "Hefty but manageable—2.4 kg feels substantial when shouldered but remains controllable one-handed. The compact frame concentrates mass into a dense package that rewards a firm grip.",
+    "primary_material": "Steel receiver and barrel with polymer furniture; reinforced polymer stock and foregrip",
+    "finish": "Matte phosphate black on steel surfaces with a slight grey undertone from use. Polymer components show a satin-finish gunmetal grey with subtle wear marks and handling scuffs.",
+    "color_scheme": "Charcoal black steel paired with gunmetal grey polymer; minimal accent color beyond functional details",
+    "grip_texture": "Rubberized pistol grip with raised diamond pattern for indexing; fore-end features aggressive vertical ribbing with pronounced purchase points for support-hand control",
+    "distinctive_features": [
+      "Prominent angular pistol grip at approximately 45-degree angle",
+      "Top-mounted pump handle with serrated grip texture",
+      "Tubular magazine tube running underneath, visible beneath the stubby barrel",
+      "Ghost-ring rear sight with tritium vial (faintly glowing green in darkness)",
+      "Front sight post welded to barrel with luminous paint chip",
+      "Four crimped cooling vents along the barrel jacket at 90-degree intervals",
+      "Oversized safety lever on left side, tactile and textured",
+      "Factory-installed sling loop at rear stock",
+      "Wear pattern around pump handle indicating frequent cycling",
+      "Small batch serial number stamped on left side of receiver"
+    ],
+    "manufacturer_markings": "KANG-PETROV ARMS in bold sans-serif font stamped on left side of receiver; KPS-20 COMPACT and HOUSEKEEPER designations on right side; legal compliance markings and 20 GA designation on barrel",
+    "condition_typical": "Well-maintained field condition—no rust or active corrosion, but visible handling wear on grip panels and pump handle. Polymer shows minor gouges from apartment corner impacts and storage scratches. Internally reliable, externally honest about frequent use."
+  },
+  "image_prompt": "Product photograph of a Kang-Petrov KPS-20 Compact 'Housekeeper' shotgun positioned diagonally across a textured dark concrete surface, angled to showcase the aggressive pistol grip and stubby 14-inch barrel. Photograph from the right side profile. The weapon is illuminated by cold blue-grey dramatic side-lighting from the left, creating sharp shadows that emphasize the angular receiver and pump handle geometry. In the background, subtle out-of-focus apartment interior details—a dark corridor corner, concrete wall texture. Gloved tactical hand visible at bottom frame gripping the fore-end, wearing reinforced polymer gloves. Highlight the matte black steel finish, gunmetal grey polymer furniture, and the subtle wear patterns on the grip. High resolution, cinematic cyberpunk industrial lighting, moody atmosphere. --ar 3:2 --v 6"
 }

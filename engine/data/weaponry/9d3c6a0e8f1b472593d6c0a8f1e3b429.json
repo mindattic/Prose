@@ -45,5 +45,35 @@
     "tier1",
     "single_use"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Fanta Kato-Adomako",
+    "Free Assembly",
+    "GLMZ",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Ira Volkov",
+    "LifeWire CivClock Circadian Precision Implant",
+    "ShieldTech SB-3 'Groundstrike'"
+  ],
+  "physical_description": {
+    "visual_profile": "A pen-sized stun device with an almost mundane appearance — deliberately designed to blend into everyday pocket carry. The upper two-thirds is a smooth, cylindrical body with subtle ridging at the grip zone; the lower third tapers slightly to a blunt contact tip with a visible annular electrode ring. At the pocket end, a small clip and three stacked LED pips (charge indicator) are the only concessions to its function.",
+    "dimensions": "140mm length × 18mm diameter. Contact tip protrudes ~8mm beyond the body, recessed when armed.",
+    "weight_description": "Extremely light and balanced — 45 grams feels like holding a thick dry-erase marker. The weight is evenly distributed, making it feel insubstantial until the user remembers what it does.",
+    "primary_material": "ABS polymer throughout — injection-molded for cost and mass production. Internally, a compressed capacitor assembly and minimal electronics occupy the core.",
+    "finish": "Matte black polymer with a subtle texture to reduce grip slip. No gloss, no reflectivity — designed to be visually forgettable.",
+    "color_scheme": "Flat matte black body with a single accent: the charge indicator LED array (three stacked indicator pips) glowing pale blue when charged, amber when depleted.",
+    "grip_texture": "Textured polymer with fine horizontal ridging in the middle third — enough grip retention for a firm squeeze without feeling aggressive. The overall feel is almost clinical, like a medical device.",
+    "distinctive_features": [
+      "Annular contact electrode at the tip — a visible metallic ring that marks the discharge point",
+      "Three-pip LED charge indicator at the pocket clip end — stacked vertically, pale blue when active",
+      "90-degree rotatable upper third that both arms the device and extends the contact tip into firing position",
+      "Recessed pocket clip with integrated carry loop",
+      "Minimal branding — small embossed 'GUARDIAN' text on one side, barely visible",
+      "Contact tip slightly beveled for skin contact without puncture risk"
+    ],
+    "manufacturer_markings": "Tiny embossed 'GUARDIAN' logo on the body near the clip, approximately 4mm tall. Serial number and single-use warning printed in white ink on opposite side. 'PSR-1 NUDGE' stamped subtly near the grip zone.",
+    "condition_typical": "Pristine and unused when sold; develops micro-scratches and minor scuffs from pocket carry within weeks. Used units are discarded immediately after the capacitor depletes — they are not refurbished or recycled."
+  },
+  "image_prompt": "Product photography of a Guardian PSR-1 'Nudge' stun device, pen-sized black polymer cylinder, shot against a dark charcoal surface under dramatic side-lighting that catches the annular electrode ring at the blunt contact tip. One gloved hand (synthetic leather, matte black) holds it at a slight angle, revealing the textured grip zone and the three stacked blue LED charge indicator pips near the pocket clip. Extreme close-up detail on the contact electrode and the rotatable upper section. Minimalist, clinical aesthetic. Corporate cyberpunk product shot. --ar 3:2 --v 6"
 }

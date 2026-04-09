@@ -43,5 +43,36 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "MERIDIAN",
+    "Nika Svensson-Kone",
+    "TESSERA TC-3 'Crucible'",
+    "Tessera Corponation",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
+  ],
+  "physical_description": {
+    "visual_profile": "A skeletal, purposefully unfinished SMG with a modular construction that reads as deliberately incomplete — like an assembly kit caught mid-build. The receiver is a flat, geometric polymer-steel hybrid stripped down to functional essentials, with prominent standardized interface points that break the weapon's silhouette into discrete, swappable sections. It looks less like a finished weapon and more like the frame upon which weapons are built.",
+    "dimensions": "Base receiver: 28cm length, 5cm width, 4cm height. Total weapon length with stock: 45-65cm variable. Barrel length: 10-18cm depending on configuration. Overall dimensions shift with component selection.",
+    "weight_description": "Remarkably light in base form (1.5kg empty), but feels deliberately incomplete—like holding a skeleton rather than a finished tool. Weight becomes substantial and unpredictable once components are attached, ranging from balanced to front-heavy depending on barrel and stock selection.",
+    "primary_material": "Anodized aluminum receiver with integrated polymer interface blocks. Universal attachment points are precision-machined steel bosses. Aesthetic is intentionally industrial and unadorned—function before finish.",
+    "finish": "Matte gunmetal gray with visible machining marks and micro-scratches from repeated component swaps. The aluminum shows wear patterns radiating from each attachment point. Some units bear factory dull-black coating on steel interface bosses, contrasting sharply against the gray aluminum.",
+    "color_scheme": "Gunmetal gray base with charcoal black interface points and attachment bosses. When components are mounted, the mismatched aesthetics of salvaged parts create a deliberately chaotic visual cacophony.",
+    "grip_texture": "Bare knurled aluminum or rubberized polymer depending on configuration. The base platform offers no grip—users must attach compatible grips from other weapon systems. This enforces modularity at the most visceral level.",
+    "distinctive_features": [
+      "Twelve visible universal interface points arranged in standardized grid pattern across receiver",
+      "Serialized quick-disconnect bosses with color-coded indexing rings to prevent incompatible mating",
+      "Exposed bolt carrier visible through top charging slot—no dust cover",
+      "Minimalist two-rail system for optics/accessories integration",
+      "Kang-Petrov compatibility chart etched into left receiver face",
+      "Modular magazine interface with spring-loaded capture tabs",
+      "Deliberately asymmetrical receiver—built to accept left or right mounting depending on component selection",
+      "Welded reinforcement ribs at stress points, visible as subtle ridges",
+      "Empty spaces where components aren't yet installed—functional voids"
+    ],
+    "manufacturer_markings": "KANG-PETROV ARMS logo stamped above left interface group. Serial number engraved on a replaceable steel plate secured by two universal screws. Tiny 'KPS-3M' marking on receiver. Compatibility codes printed on interface bosses themselves. Multiple warning labels in simplified pictograph format.",
+    "condition_typical": "Field guns appear worn and mismatched—a visual frankenstein of salvaged components in varying conditions. Scratches concentrate around interface points from repeated component swaps. The receiver itself remains pristine due to minimal user contact; the real wear manifests as component incompatibility—slightly bent interface points, stripped quick-disconnect threads, grime accumulation in mating surfaces. Well-used Mongrels look like they were assembled this morning from yesterday's battlefield."
+  },
+  "image_prompt": "Product photography of a modular SMG receiver laid flat on dark brushed steel surface, angled 45 degrees to showcase the standardized interface points and grid of attachment bosses. Gunmetal gray aluminum receiver with charcoal black precision-machined steel bosses. Dramatic single side-light (cyberpunk blue-white) illuminates the interface geometry and etched compatibility markings, casting sharp shadows into the empty modular spaces. One gloved hand (wearing tactical gray polymer gloves) grips the bare aluminum receiver from the side, emphasizing its incompleteness and skeletal design. Shallow depth-of-field. Hyper-detailed close-up showing machining marks, color-coded indexing rings on interface points, and Kang-Petrov branding. Gritty, industrial, deliberately unfinished aesthetic. Cyberpunk 2226 GLMZ salvage-core weapon design. --ar 3:2 --v 6"
 }

@@ -73,5 +73,25 @@
     "Saoirse Tambadou-Nystr��m",
     "The Cutters Guild",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist handheld thermal weapon resembling a short-barreled industrial blowtorch crossed with a military service rifle. The design prioritizes function over ergonomics—angular, purpose-built geometry with no unnecessary curves. The cutting head dominates the forward third, a reinforced nozzle assembly that looks capable of withstanding immense thermal stress. The grip section is clearly designed for gloved hands and two-person operation.",
+    "dimensions": "55cm length, 12cm diameter at fuel chamber. Handheld but substantial—requires both hands and a stable stance to operate effectively.",
+    "weight_description": "3.8kg with full fuel rod. Heavy enough to demand respect and two-handed control, light enough for field operators to carry for extended periods with a shoulder rig or hardpoint mount.",
+    "primary_material": "Tungsten-composite nozzle assembly; titanium alloy body frame; ceramic-matrix insulation layers visible between segments; steel reinforcement bands at stress points.",
+    "finish": "Matte industrial coating with deliberate heat-stress discoloration patterns—purples, deep blues, and charred blacks radiating outward from the nozzle. Textured grip wrapping in heat-resistant polymer. Deliberately utilitarian, no cosmetic polish.",
+    "color_scheme": "Gunmetal gray base with accent bands in ARCTURUS corporate red (almost maroon). Fuel rod chamber housing is dark charcoal with warning striping in high-visibility yellow-orange at connection points. Nozzle tip shows gradient from metallic silver to oxidized copper-brown.",
+    "interface_elements": "Single large ignition button on the grip (rubberized, recessed to prevent accidental activation). Analog pressure gauge on fuel chamber showing rod capacity. Digital readout display (small, military-spec LED screen) showing fuel duration remaining, nozzle temperature, and feedback loop status. Thermal imaging port on top of handle for operator aiming. Quick-release fuel rod cartridge system with positive-lock collar. Vent ports along the body—necessary for thermal management.",
+    "distinctive_features": [
+      "The adaptive nozzle geometry—visible as nested ceramic rings that subtly shift position during operation feedback cycles",
+      "Continuous thermal stress patterns on the nozzle—rainbow oxidation marks that deepen with age and use",
+      "Recessed optical sensor array just below the nozzle aperture—small red lens visible when powered",
+      "The fuel rod cartridge interface resembles an oversized industrial gas cylinder connector but with redundant safety latches",
+      "Heat shimmer distortion visible around the nozzle even when idle due to residual thermal energy",
+      "Scoring marks and micro-fractures on the nozzle tip—evidence of repeated extreme temperature cycling"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (a stylized four-pointed star) stamped on the fuel chamber. Serial number arrays prominently displayed on the grip (or deliberately removed on black-market 'Blind Torches'). Regulatory stamps for military-grade equipment in GLMZ standard format. 'CAUTION: CLASS-7 THERMAL WEAPON' warning label in English and Mandarin.",
+    "condition_typical": "In active field use: scuffed and stress-marked from tactical operations, nozzle showing signs of recent cutting (residual heat shimmer, micro-scoring). In storage: wrapped in specialized thermal blanket, fuel rods stored separately in shielded containers. Operator hands show calluses and minor thermal scarring from proximity burns."
+  },
+  "image_prompt": "Product photography of a brutal cylindrical thermal breach torch, 55cm length, mounted horizontally on a scarred steel workbench in an underground GLMZ maintenance bay. Tungsten-composite nozzle assembly in sharp focus, showing oxidized heat-stress patterns in deep blues and purples. Recessed ignition button and small LED display screen visible on the grip section. Four replacement fuel rod cartridges arranged beside the weapon, charcoal with yellow-orange warning striping. Dramatic single-source lighting from above-left creating hard shadows, emphasizing the industrial geometry and heat-damaged surfaces. Slight thermal shimmer effect around the nozzle tip. Background: concrete wall with water stains, scattered tool marks, corporate security placard partially visible. Cyberpunk tactical aesthetic, no people, clinical equipment documentation style. --ar 3:2 --v 6"
 }

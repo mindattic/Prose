@@ -52,5 +52,25 @@
     "Synaptrel",
     "Tessera Nexus Town Car",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Industrial-grade safety gloves with a bold high-visibility aesthetic. Wide gauntlet cuff extends several inches up the forearm, creating a protective band. The silhouette is bulky through the palm and knuckles, tapering slightly at the fingers for dexterity. Striking safety-yellow dominates with utilitarian black accents.",
+    "fit": "Structured and snug through the hand with compression-fit fingers for tactile control. The gauntlet sits loose enough to layer over standard work sleeves but secured by velcro and snap fasteners to prevent slippage during live-line work.",
+    "primary_material": "Rubberized dielectric outer shell over compressed aerogel mid-layer; moisture-wicking interior mesh lining",
+    "texture": "Outer surface is smooth, slightly tacky rubber with a matte finish designed to grip wet surfaces. Inner mesh is soft and breathable. Double-layered knuckle and palm zones feel rigid and padded; fingertips are noticeably thinner for better contact sensitivity.",
+    "color_scheme": "Safety yellow dominant across back of hand and gauntlet; black rubberized palm panels and finger pads; minimal branding in reflective gray",
+    "closures": "Velcro and snap system at gauntlet cuff; friction-fit fingers with no individual closures",
+    "distinctive_features": [
+      "Wide gauntlet cuff rated to seal over standard work sleeves",
+      "Double-layered knuckle and palm zones for impact and heat protection",
+      "Single-layer fingertips for enhanced dexterity on terminal contacts",
+      "40kV dry-contact dielectric rating visibly certified with regulatory stamps",
+      "Optional chrome-flange channel upgrade for augment-worker compatibility",
+      "Reflective accent stitching at cuff edges for low-light visibility"
+    ],
+    "tier_indicator": "Tier 2-3 functional safety wear; regulation compliance signals transit/utility employment",
+    "cultural_context": "Worn by electrical infrastructure workers, M88 grid maintenance crews, live-line technicians. The gloves announce competence in hazardous-duty repair and adherence to corpo safety mandates. Augment-worker variants signal either augmented limbs or proximity to augmentation tech.",
+    "condition_typical": "Pristine or lightly scuffed when in active rotation; may show minor burn marks or discoloration from contact with corroded terminals. Well-maintained by safety-conscious workers; worn-out pairs are immediately replaced per regulation."
+  },
+  "image_prompt": "Pair of safety-yellow rubberized industrial gloves with black palm panels and wide protective gauntlet cuffs, displayed on a dark mannequin hand under moody blue-tinted workshop lighting. Close-up detail showing the double-layered knuckle zones and reflective stitching. Gritty urban background of an M88 electrical grid maintenance facility with aged metal framework and faint neon utility signage. Shallow depth of field emphasizing the dielectric texture and 40kV certification markings. --ar 2:3 --v 6"
 }

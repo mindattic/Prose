@@ -35,5 +35,31 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Carrion Defense Works",
+    "Cezar Watanabe-Gyasi",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, industrial dispersal weapon with a pronounced barrel assembly and bulbous pressure chamber. Resembles a hybrid between a riot launcher and a pressurized pesticide applicator — all hard angles and utilitarian bulk. The silhouette reads as deliberately ominous: wide stance, asymmetrical weight distribution, mechanical. No grace; pure function.",
+    "dimensions": "Overall length: 68 cm | Barrel assembly: 32 cm | Pressure chamber diameter: 11 cm | Magazine depth: 14 cm | Width at grip: 8.5 cm",
+    "weight_description": "Hefty and front-heavy when unloaded (4.1 kg fully loaded). The weight shifts forward toward the barrel, demanding two-handed control. Balanced on the magazine well, it feels purposeful and grounded — no quick-draw weapon, but stable and authoritative in sustained aim.",
+    "primary_material": "Reinforced injection-molded polymer frame with steel pressure chamber lining. Aluminum alloy mounting rail system. Stainless steel nozzle array and canister indexing mechanism.",
+    "finish": "Matte industrial grey-black polymer body with visible stress-relief ribbing. Steel pressure chamber shows brushed finish with micro-oxidation scarring from repeated pressurization cycles. Nozzle tips feature burnt bronze patina from off-gassing residue exposure.",
+    "color_scheme": "Gunmetal grey primary body | Charcoal black ribbed grip zones | Burnt copper/bronze nozzle accents | Red pressure-release valve cap (safety indicator)",
+    "grip_texture": "Deeply ribbed textured polymer with aggressive ergonomic molding. Two-point grip area: side-mounted assist handle wrapped in degraded rubberized coating. Main grip is almost sandpaper-rough for wet/gloved use in riot conditions.",
+    "distinctive_features": [
+      "Dual pressure gauges mounted on chamber flank (red/amber/green threat-level indicators)",
+      "Spring-loaded canister indexing carousel with numeric load-state engraving (1-6)",
+      "Vented exhaust ports along barrel with visible carbonized residue buildup",
+      "Prominent safety interlocks with manual mechanical override (corroded brass housing)",
+      "Manufacturer serial plate stamped directly into polymer body — faded but legible",
+      "Custom wear marks and chemical etching on nozzle tip from persistent compound exposure",
+      "Integrated mounting rail (Picatinny) scarred and salt-corroded from field deployment"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS logo embossed on left side of pressure chamber | Model designation 'MP-5' stamped above grip | 'PLAGUE BEARER' variant tag laser-etched on barrel shroud | Serial number and certification code on chamber flank | Hazmat/corrosive material warning symbols on both sides of grip",
+    "condition_typical": "Field-worn and chemically stained. Polymer body shows stress crazing in high-impact areas. Nozzle assembly exhibits patina from repeated off-gassing events. Pressure gauges often smudged or fogged. Magazine carousel mechanism loose from wear. This is not a pristine asset — it's a working tool showing honest battle scars."
+  },
+  "image_prompt": "Product photography: Carrion Defense Works Miasma Projector MP-5 'Plague Bearer' lying on dark tactical mat, angled 45 degrees. Close-up of barrel assembly and nozzle array showing burnt patina and carbonized residue. Gloved hand (industrial grey tactical glove) gripping polymer body, fingers on dual pressure gauges. Dramatic side-lighting casting sharp shadows across ribbed grip zones and vented exhaust ports. Emphasis on industrial brutalism and chemical weathering — burnt copper nozzle tips glinting, pressure chamber aluminum showing micro-oxidation scars. Dark cyberpunk aesthetic, matte surfaces, no reflective shine except on metal components. GLMZ-era field weathering visible throughout. --ar 3:2 --v 6"
 }

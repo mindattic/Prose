@@ -42,5 +42,35 @@
     "martial-arts",
     "less_lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Djeneba Park-Traore",
+    "GLMZ",
+    "Independent Micro-Grid Power Cooperative",
+    "Ira Volkov",
+    "TESSERA ES-4 'Perimeter'",
+    "TESSERA TC-3 'Crucible'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, purposeful combat staff with a futuristic aesthetic — perfectly balanced and tapered toward both ends. The carbon-lattice composite gives it a distinctive crystalline appearance along its length, catching light with subtle iridescence. Both terminal ends feature pronounced electrical discharge nodes that resemble segmented crowns or Tesla coils, with visible capacitor housings integrated into the grip section at the midpoint.",
+    "dimensions": "150 cm total length; discharge nodes extend 4 cm from each terminus; grip section 12 cm diameter at thickest point",
+    "weight_description": "Surprisingly light and well-balanced despite its length — approximately 1.2 kg distributed evenly allows one-handed rotational control. Feels responsive rather than cumbersome, with the weight concentrated slightly toward the grip for superior handling in staff-fighting techniques.",
+    "primary_material": "Carbon-lattice composite shaft with aerospace-grade polymers forming the capacitor housings and discharge node terminals",
+    "finish": "Matte gunmetal gray with subtle iridescent carbon weave visible beneath. Discharge nodes feature brushed chromium plating that contrasts sharply against the darker shaft. Grip section wrapped in thin graphene-reinforced rubber showing minor scuffs from field use.",
+    "color_scheme": "Gunmetal gray primary with brushed chrome discharge nodes; subtle blue-white LED status indicators along the grip section indicating capacitor charge state",
+    "grip_texture": "Textured rubberized polymer with subtle geometric grip aids — designed for secure handling even with sweaty or gloved hands. The grip naturally prevents slippage during rapid rotational strikes.",
+    "distinctive_features": [
+      "Segmented discharge nodes at both ends resembling miniature Tesla coils",
+      "Visible capacitor plates recessed into the grip section with blue-white charge indicators",
+      "Subtle carbon-weave lattice pattern across entire shaft surface",
+      "Fine mist of ionization visible around active nodes during discharge",
+      "Crucible Industries serial plate inlaid into grip section",
+      "Micro-circuit tracery running along the shaft — power distribution pathways",
+      "Balanced centerpoint marked with faint machinist's line"
+    ],
+    "manufacturer_markings": "Crucible Industries logo (geometric lightning bolt enclosed in hexagon) stamped into the grip section; serial number and 'SS-2 THUNDERSTICK' engraved on one side; regulatory safety markings and voltage warnings on the opposite side",
+    "condition_typical": "Field-used but well-maintained — light scuffing on the shaft from impact sparring, minor wear on the grip rubber from regular use, discharge nodes show faint oxidation from continuous capacitor cycling. No structural damage; maintained by security professionals who understand the weapon's value."
+  },
+  "image_prompt": "Product photography of Crucible Industries Shock-Staff SS-2 'Thunderstick' — 150cm carbon-lattice melee staff with dual electrical discharge nodes, held diagonally across frame by a gloved hand. Dramatic side-lighting emphasizing the crystalline weave pattern and brushed chromium nodes at both ends. Blue-white electrical charge visible around active terminals. Dark composite surface backdrop. Cinematic cyberpunk aesthetic, professional riot-control weapon, far-future technological finish. Close-up detail of grip section showing capacitor indicators. --ar 3:2 --v 6"
 }

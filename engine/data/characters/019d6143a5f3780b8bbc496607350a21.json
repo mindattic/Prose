@@ -324,5 +324,13 @@
     "clothing_style": "Tier 3-4 working professional with combat pragmatism. Standard: charcoal or black reinforced cargo pants with weighted pockets for equipment, steel-toed industrial boots (scuffed, well-maintained). Layered tops — usually a dark compression undershirt under a modified tactical vest or worn leather jacket without gang colors. The vest has custom pockets and cable routing for gear. No corpo logos or flashy augmentation showcases; everything is functional. Wears a worn leather wrist cuff on the left arm, probably concealing the pain editor or protective in a fight. His watch is old military-grade, not smart-linked. Small pouch belt carries lock picks, optical drives, and untraceable payment chips.",
     "scent_profile": "Cordite, machine oil, and the stale recycled air of late-night workshops — not unclean, but marked by nocturnal existence and proximity to electronics"
   },
-  "image_prompt": "Cyberpunk character portrait, photorealistic, male netrunner in his 40s with West African and Korean heritage. Stocky muscular build, dark brown skin with olive undertones, short dark hair graying at temples, angular weathered face with alert dark eyes and prominent cheekbones. Visible silver-gray chrome pain editor interface implant on left neck with faint LED lights. Scarred knuckles and metallic gecko-grip fingertips. Wearing dark tactical cargo pants and reinforced leather jacket, no corp logos. Kessler Row nighttime setting with neon red and blue lighting from arms dealer signs and augmentation clinic windows. Cool rim lighting emphasizing the chrome. Alert, dangerous expression. Moody cyberpunk noir atmosphere. Shot in 2226 GLMZ aesthetic. --ar 2:3 --v 6"
+  "image_prompt": "Cyberpunk character portrait, photorealistic, male netrunner in his 40s with West African and Korean heritage. Stocky muscular build, dark brown skin with olive undertones, short dark hair graying at temples, angular weathered face with alert dark eyes and prominent cheekbones. Visible silver-gray chrome pain editor interface implant on left neck with faint LED lights. Scarred knuckles and metallic gecko-grip fingertips. Wearing dark tactical cargo pants and reinforced leather jacket, no corp logos. Kessler Row nighttime setting with neon red and blue lighting from arms dealer signs and augmentation clinic windows. Cool rim lighting emphasizing the chrome. Alert, dangerous expression. Moody cyberpunk noir atmosphere. Shot in 2226 GLMZ aesthetic. --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Sub-Saharan African": 55.1,
+    "South Asian": 31.5,
+    "Hispanic/Latin American": 8.1,
+    "East Asian": 2.2,
+    "Northern European": 1.8,
+    "Eastern European": 1.3
+  }
 }

@@ -49,5 +49,27 @@
     "Tessera Corponation",
     "Tessera Nexus Town Car",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A pristine, clinical full-body coverall that renders the wearer as an anonymous, sterile form. The silhouette is deliberately shapeless and featureless—designed to contain, not flatter. The integrated hood with clear polycarbonate face shield creates an imposing, almost dehumanized appearance. White dominates, broken only by subtle grey grid logos repeating across the chest and sleeves. The overall impression is institutional, hyper-clean, and vaguely ominous.",
+    "fit": "Loose, roomy, and intentionally non-form-fitting to prevent particulate contact with skin. Elasticated cuffs at wrists and ankles create sealed compression points. The torso and limbs hang in smooth, unflattering planes.",
+    "primary_material": "Ultra-low-particulate spunbonded polyolefin with antistatic thread woven throughout. Non-breathable by design, engineered for isolation rather than comfort.",
+    "texture": "Crisp and papery with a subtle crinkle that audibly accompanies movement. Smooth surface with no pile or nap. Ultrasonically bonded seams create barely-visible ridges; zero traditional stitching visible. The integrated hood's clear polycarbonate face shield has a faint anti-fog coating sheen.",
+    "color_scheme": "Sterile ISO white as primary. Subtle grey repeating TESSERA grid-logo pattern across chest and sleeves. Face shield is transparent polycarbonate with slight blue tint from anti-fog coating.",
+    "closures": "Full-length front zip with sealed guard flap (not visible in catalog pose). Elasticated cuffs at wrists and ankles that mate to sterile gloves and booties. Friction-fit hood seal at neckline.",
+    "distinctive_features": [
+      "Integrated hood with clear polycarbonate anti-fog face shield",
+      "HEPA-filtered breath vent at chin with audible micro-fan",
+      "Repeating grey TESSERA grid-logo branding",
+      "Ultrasonically bonded seams—zero traditional stitching",
+      "Antistatic thread woven throughout",
+      "Elasticated cuff compression points designed for sterile glove integration",
+      "Audible crinkle with movement (material property)",
+      "Non-form-fitting, deliberately depersonalizing silhouette"
+    ],
+    "tier_indicator": "Tier 1-2 corporate—expensive, restricted-access gear. Only authorized personnel in high-security geneware and chip-fab environments wear this.",
+    "cultural_context": "The wearer is a TESSERA employee, scientist, or technician operating in hyper-sterile environments. Wearing this signals compliance, institutional authority, and access to proprietary fabrication processes. It erases individual identity in favor of corporate uniformity.",
+    "condition_typical": "Always pristine. These are single-use or heavily laundered between cycles. Any visible wear, staining, or degradation indicates protocol failure. A worn TESSERA coverall is a liability."
+  },
+  "image_prompt": "Fashion catalog photo of TESSERA BioSeal Class-1 Cleanroom Coverall on a featureless pale mannequin or model in profile, arms at sides. Garment is crisp ISO-white with subtle grey repeating grid logo. Integrated hood with clear polycarbonate face shield is raised and sealed. Elasticated cuffs visible at wrists and ankles. Moody, sterile laboratory lighting—cool LED strips overhead casting sharp shadows. Dark charcoal backdrop suggesting a sealed cleanroom environment. Slight crinkle texture visible in the material. Studio fashion photography, clinical and institutional aesthetic. --ar 2:3 --v 6"
 }

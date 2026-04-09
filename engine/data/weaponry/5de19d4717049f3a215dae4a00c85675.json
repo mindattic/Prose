@@ -45,5 +45,37 @@
     "tier 1",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Ballistic Resonance Carbine BRC-6 'Kettledrum'",
+    "Kang-Petrov Arms KPS-410 'Hallway'",
+    "Nika Svensson-Kone",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Solina Barreto-Kiptoo",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutish, utilitarian submachine gun dominated by an enormous cylindrical drum magazine that bulges aggressively from beneath the receiver. The weapon has a compact, almost organic silhouette — wide and bottom-heavy, with a pronounced grip angle. It reads as deliberately unrefined, engineered for function over form.",
+    "dimensions": "Length: 38cm (stock collapsed), 42cm (stock extended); Width: 12cm at drum magazine; Height: 22cm (including drum); Barrel length: 12.7cm",
+    "weight_description": "Hefty and front-weighted when loaded — the drum magazine shifts the balance point noticeably downward. Feels substantial and purposeful in the hand, demanding respect through its mass.",
+    "primary_material": "Stamped steel receiver with polymer furniture; drum magazine is aluminum alloy with reinforced ribbing",
+    "finish": "Matte phosphate-coated steel on the receiver with brushed aluminum accents on the drum. Worn in appearance — the phosphate shows micro-scratches and slight surface oxidation suggesting field use rather than parade polish.",
+    "color_scheme": "Gunmetal gray body with the drum magazine in darker aluminum gray; accents of industrial black on the polymer handguard and charging handle",
+    "grip_texture": "Rubberized polymer grip with aggressive vertical ribbing for control; the magazine well has textured grip panels to assist loading and manipulation",
+    "distinctive_features": [
+      "Oversized cylindrical drum magazine with radial cooling vents",
+      "Simplified blowback bolt carrier with exposed top charging handle",
+      "Minimalist iron sights (non-adjustable post and aperture)",
+      "Two stubby picatinny rails mounted on the receiver sides",
+      "Prominent heat vents along the barrel shroud",
+      "Kang-Petrov Arms logo stamped into the steel above the magazine well",
+      "Serial number plate with date-of-manufacture stamp",
+      "Slight carbon scoring around the muzzle and barrel shroud from sustained fire",
+      "Loose rattle when magazine is fully loaded — audible round count indicator"
+    ],
+    "manufacturer_markings": "KANG-PETROV ARMS in Cyrillic and Latin script stamped into the left side of the receiver; KPS-12D engraved below the charging handle; manufacturer serial plate on the right side with holographic anti-counterfeiting thread",
+    "condition_typical": "Field-worn but functional. The phosphate coating shows honest use — scratches, minor dents, and discoloration from handling. Operators rarely maintain aesthetic condition; the weapon is expected to be dirty and scarred. The drum magazine often bears impact marks and improvised repair tape at seams."
+  },
+  "image_prompt": "Overhead flat-lay product photography of the Kang-Petrov KPS-12D Typhoon SMG mounted on a matte black gunmetal surface. The weapon is oriented at a 45-degree angle showcasing the massive bulbous 75-round drum magazine protruding from the bottom of the receiver. Dramatic side-lighting from the upper left casts deep shadows across the stamped steel body, emphasizing the utilitarian ribbing and wear patterns. Show the brushed aluminum drum magazine texture in sharp detail. Include a gloved tactical hand gripping the polymer handguard. Incorporate subtle QUANTA currency symbol (Φ) watermark in the corner. Cyberpunk aesthetic: cool color grading with slight desaturation, subtle neon reflection on the phosphate-coated steel, industrial background. The overall mood should convey brutal efficiency and suppressive firepower. Professional weapons catalog photography, product-focused, no backgrounds. --ar 3:2 --v 6"
 }

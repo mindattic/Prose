@@ -53,5 +53,24 @@
     "SynapTech IrisBloom Ocular Color Modulator",
     "The Filament",
     "The Third Rail"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A cropped, aggressive bomber silhouette that hugs the torso with striking presence. The matte black synthleather absorbs light, creating a void-like surface punctuated by thread-thin LED channels that activate with sound. When dormant, it reads as sleek minimalist streetwear; activated, it becomes a mobile light show—violet blooms cascade down the arms during bass drops, cyan fractal arcs spider across the chest during vocal peaks. The mirrored collar and cuffs catch ambient light in sharp flashes.",
+    "fit": "Deliberately cropped at the waist, sits snug through the shoulders and torso with slight articulation at the sides. Cut to accommodate both unaugmented humans and minor geneware (subdermal muscle mass, lightweight skeletal reinforcement). Slightly relaxed at the biceps to allow arm movement and sensor breathing room.",
+    "primary_material": "Matte-finish synthleather (petroleum-free, treated polymer composite), micro-filament LED threading (flexible conductive polymer), sound-dampening closed-cell foam at collar/cuffs, mirrored mylar trim, UV-reactive woven back panel",
+    "texture": "Smooth, almost liquid-looking synthleather with a faint grain; LED channels create subtle raised ridges beneath the surface. Collar and cuffs are tactilely plush—soft foam backed by crinkly, reflective mylar that produces quiet rustling. Back panel weave is slightly raised, almost embossed.",
+    "color_scheme": "Primary matte black throughout. Accent colors exist only when activated: deep violet (low frequencies), cyan fractals (mid/high frequencies), mirror-silver on collar/cuffs. Under UV light, the back panel reveals a hidden neon-green frequency map pattern.",
+    "closures": "Magnetic snaps along the front placket (4 snaps, positioned to avoid LED channels); friction-fit at the wrists with adjustable mylar-trimmed cuffs; no back closure—pulls over the head",
+    "distinctive_features": [
+      "Sound-reactive micro-filament LED system (proprietary Vex & Ruin circuit architecture, color-coded by frequency band)",
+      "Mirrored mylar collar and cuff trim (both functional—sound dampening—and aesthetic)",
+      "Hidden UV-reactive back panel: woven frequency map of GLMZ underground club district (underground credential/subcultural marker)",
+      "Asymmetrical pocket placement on right side (small, for a neural spike or credstick)",
+      "No visible branding except a tiny embossed Φ symbol inside the left cuff (anti-corpo statement)"
+    ],
+    "tier_indicator": "Tier 3–4 (working class/street). The unlicensed manufacturing and DIY aesthetic signal street origin, but the integrated tech and design sophistication place it above pure salvage. Street-tier luxury.",
+    "cultural_context": "GLMZ club culture; underground electronic music scene; subcultural identity marker for those who know the hidden geography. Wearing this signals you're in the scene, you've got aug-friendly taste, and you're not aligned with corpo homogeneity. Vex & Ruin is known for sound-reactive tech that skirts legal licensing.",
+    "condition_typical": "Pristine to lightly worn. The synthleather ages well and shows intentional distressing only after heavy use. LEDs remain reliable for ~18 months before individual channels start to dim. Most Nullsound owners replace or upgrade the LED threading annually. Mylar trim accumulates minor creasing at the wrists."
+  },
+  "image_prompt": "Fashion photograph of a Vex Nullsound Reactive Club Shell on an androgynous cyberpunk model with visible subcutaneous implants along the jawline. Model posed mid-movement, arms raised slightly. The shell's LED channels are actively pulsing in response to off-camera bass frequencies—deep violet blooms down the sleeves, cyan fractals cutting across the chest and shoulders. Mirrored collar catches strobe-like light. Dark underground club setting with rain-slicked concrete backdrop, neon signage reflected in puddles. Moody violet and cyan rim lighting. UV light bleeding in from the left reveals the hidden frequency map on the back panel, glowing neon green. Shot from a slight low angle to emphasize the cropped silhouette. Film noir mood meets cyberpunk edge. --ar 2:3 --v 6"
 }

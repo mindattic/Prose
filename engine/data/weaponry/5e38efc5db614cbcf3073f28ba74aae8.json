@@ -43,5 +43,35 @@
     "formation",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Aurocet",
+    "Crucible Genomics",
+    "Djeneba Park-Traore",
+    "GLMZ",
+    "Rogers Reef",
+    "ShieldTech SB-3 'Groundstrike'",
+    "The Collective",
+    "The Corridor"
+  ],
+  "physical_description": {
+    "visual_profile": "A imposing three-pronged spear with a deliberately brutal silhouette. The shaft is straight and purposeful, while the three tines flare outward in a threatening spread. Backward-facing barbs catch light along each prong, creating visual hooks that draw the eye downward. The overall impression is ancient and predatory — a weapon that speaks to something primal in human threat recognition.",
+    "dimensions": "Total length 200 cm (shaft 160 cm, tines 40 cm each). Tine spread approximately 15 cm across the widest point. Shaft diameter tapers from 3.5 cm at grip to 2.8 cm at tine junction.",
+    "weight_description": "Hefty but balanced. The 2.6 kg weight distributes across the full length, making it feel alive in the hand rather than unwieldy. The carbon-lattice construction gives it a density that feels engineered — not crude.",
+    "primary_material": "Case-hardened carbon-lattice steel. The lattice structure is visible in subtle cross-hatching patterns along the shaft and tines when light catches it at certain angles.",
+    "finish": "Matte gunmetal grey with selective polish on the barbs themselves. High-wear areas show burnished steel where previous wielders' hands have gripped. The barbs possess a sharper, mirror-like finish that contrasts with the duller shaft.",
+    "color_scheme": "Gunmetal grey primary with steel-grey accent highlights on barbed edges. Occasional rust bloom in recessed barb geometry from field use.",
+    "grip_texture": "Wrapped in layered carbon-fiber reinforced polymer strips, slightly textured for purchase even when wet or bloody. The wrapping is practical rather than decorative, with visible stitch holes at 2 cm intervals.",
+    "distinctive_features": [
+      "Three individually barbed tines with smith-specific barb patterns — these vary from simple backward angles to complex spiral configurations",
+      "Micro-etched maker's mark on the shaft near the grip (Forge-Smith Collective stamp plus individual smith identifier)",
+      "Subtle spiral grooves running the length of each tine — part of the anti-extraction mechanism that catches and rotates during extraction attempts",
+      "Slight discoloration at the tine base where case-hardening changes the steel's surface properties",
+      "Deep gouges and impact marks in the shaft from tactical use — each scar tells a story of armor penetration",
+      "The three tines are slightly offset from true vertical, creating an asymmetrical crown that's visually unsettling"
+    ],
+    "manufacturer_markings": "Forge-Smith Collective symbol (a hammer over three vertical lines) stamped into the shaft 15 cm from the grip. Below it, a unique 4-character smith identifier etched in micro-lettering. No serial number — these are artisan weapons, tracked by reputation rather than registry.",
+    "condition_typical": "Field-worn but meticulously maintained. The barbs are kept razor-sharp through ritual honing. The shaft shows battle scarring — dents from armor impact, blood etching in the barb valleys, and patina from extended field use. A Reef Breaker in the hands of a working combatant is never pristine, but always lethal."
+  },
+  "image_prompt": "Forge-Smith Collective Reef Breaker trident held vertically in a black-gloved cybernetic hand against a dark gunmetal background. Dramatic side-lighting casting sharp shadows through the three barbed tines, each barb glinting with mirror-like reflection. The spiral barb geometry visible in close detail, showing the anti-extraction spiral grooves. Matte grey case-hardened steel shaft contrasting with polished barbed edges. Maker's mark visible near the wrapped grip. The tines create an ominous crown silhouette. Cyberpunk aesthetic with industrial lighting, slight bokeh of urban metallic surfaces in background. Product photography style. --ar 3:2 --v 6"
 }

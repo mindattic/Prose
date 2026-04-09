@@ -44,5 +44,26 @@
   ],
   "related_entities": [
     "The Nearfield"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A commanding, tailored silhouette that reads haute couture even in cyberpunk context—sharp lapels frame the chest, structured shoulders create angular presence. The coat commands attention without ostentation, suggesting wealth through restraint and precision engineering.",
+    "fit": "Bespoke, made-to-measure accommodation; cuts cleanly to the knee with no excess fabric. Tailored through the torso and shoulders, with articulated seams that allow freedom for augmented limbs without bunching or gaps.",
+    "primary_material": "Liquid-resistant wool-cashmere analog exterior (synth-blend maintaining natural drape); phase-change smart fabric interior lining with embedded thermal regulation threads",
+    "texture": "Exterior: smooth with subtle nap, feels substantial and warm to touch. Interior: faintly textured thermal weave with barely-perceptible grid pattern from embedded sensor nodes. Hand-stitched lapels show micro-irregularities that signal artisanal quality.",
+    "color_scheme": "Deep obsidian black (near-black, near-absolute) as primary; interior seams emit faint amber glow when thermal system engages; subtle silver threading at buttonholes and edge-binding",
+    "closures": "Hand-matched obsidian-tone buttons (likely mother-of-pearl or high-grade synth-ceramic) down center front; magnetic micro-snaps at cuff and hem for seamless closure around augmented wrists/ankles",
+    "distinctive_features": [
+      "Phase-change thermal lining powered by paired BCI interface",
+      "Interior seams glow amber under active thermal regulation",
+      "Hand-stitched lapels with visible craftsmanship",
+      "Invisible sensor grid embedded in lining for continuous temperature monitoring",
+      "Seam-integrated fiber optics along interior edges",
+      "Articulated cut to accommodate any augmentation configuration without tailoring gaps",
+      "Liquid-resistant outer shell (spill/rain resistant, not waterproof)"
+    ],
+    "tier_indicator": "Tier 1 luxury—handmade, bespoke, BCI-integrated, Spire District provenance, price point likely Φ8,000+",
+    "cultural_context": "Signals corpo elite or high-end independent contractor. Wearer prioritizes cutting-edge biotech integration with aesthetic refinement. Suggests stability, discretionary wealth, and comfort with visible body modification.",
+    "condition_typical": "Pristine when acquired; breaks in beautifully with age, developing subtle creases that enhance tailored silhouette. Unlikely to show wear given material durability and wearer's socioeconomic tier."
+  },
+  "image_prompt": "High-fashion cyberpunk editorial photograph of a bespoke Solenne Atelier ThermaVeil coat displayed on a sleek dark mannequin or worn by a mixed-heritage model with subtle chrome facial augmentation. Deep obsidian wool-cashmere blend coat, knee-length with sharp tailored lapels, photographed from slightly below to emphasize sculptural shoulders. Interior lining visible at lapel, glowing faint amber from active thermal sensors. Moody overhead lighting casting dramatic shadows across structured seams. Dark urban Spire District interior backdrop—gleaming black marble, subtle neon accent lighting, rain-wet surfaces. Close detail shot of hand-stitched lapels and silver-threaded buttonholes. Cinematic, luxury fashion magazine aesthetic. --ar 2:3 --v 6"
 }

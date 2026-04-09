@@ -38,5 +38,29 @@
   "related_entities": [
     "Cezar Watanabe-Gyasi",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A modified tactical utility vest with a distinctly DIY aesthetic. The silhouette is boxy and functional, layered with visible pockets, antenna mounts, and cable management loops. Hand-painted frequency numbers (88.1 FM, 91.3 FM, etc.) cover the front and back panels in bold, dripping lettering. Anti-corponation slogans like 'AIRWAVES FREE' and 'KILL THE BANDWIDTH WALL' are stenciled across the chest and shoulders. Wires and antenna components are intentionally exposed, creating a lived-in, working-tool appearance.",
+    "fit": "Oversized and deliberately slouched. Designed to layer over street wear or light armor. Deep armholes allow freedom of movement for radio operation. The vest sits low on the hips with extended side panels for equipment mounting.",
+    "primary_material": "Salvaged ballistic weave base (grey-black, formerly military surplus) with patches of treated canvas and recycled synthetic leather reinforcing high-stress areas. Fabric shows intentional distressing.",
+    "texture": "Rough and tactile — heavy weave with visible stitching. Hand-painted surfaces have a matte, slightly textured finish from repeated use. Cable sleeves are smooth nylon, contrasting with the rough vest body. Antenna mounts are corroded brass or steel, adding to the worn aesthetic.",
+    "color_scheme": "Base: charcoal grey-black ballistic weave. Hand-painted accents in high-contrast white, acid green, and hot pink graffiti-style lettering. Rust stains and weathering create organic brown-orange discoloration on metal components. Occasional electrical tape patches in neon yellow and orange.",
+    "closures": "No traditional closures — the vest hangs open. The wearer relies on a friction-fit leather belt system and magnetic snap chest panels for the battery pack housing. Antenna mounts use friction-fit compression rings.",
+    "distinctive_features": [
+      "Integrated FM transmitter unit mounted in a reinforced front pocket with tactile tuning knobs exposed",
+      "Telescoping antenna stored in vertical sleeve on left shoulder, deployable mid-broadcast",
+      "Hand-painted frequency numbers covering 40% of surface area, updated as frequencies are changed",
+      "Anti-corponation slogans: 'AIRWAVES FREE,' 'KILL THE BANDWIDTH WALL,' 'YOUR VOICE MATTERS'",
+      "Exposed wiring harnesses connecting battery pack to transmitter, color-coded (red, black, yellow)",
+      "Multiple carabiner attachment points for mic cord and headphone cable management",
+      "Patch pockets with reinforced edges showing heavy wear patterns",
+      "Emergency frequency card laminated to back panel (88.1 FM, 91.3 FM, 94.7 FM)",
+      "Hand-stitched Free Signal collective symbol (Φ overlaid with radio waves) on left breast pocket",
+      "Cable management sleeves with velcro straps, some torn and improvised"
+    ],
+    "tier_indicator": "Tier 5 / sub-grade. This is resistance wear — handmade, salvaged, and deliberately anti-corporate. It signals refusal of official structures and affiliation with ungoverned Shelf districts.",
+    "cultural_context": "Worn by Free Signal pirate radio operators in the GLMZ. The vest announces the wearer as a media insurgent, someone broadcasting truth to areas abandoned by mainstream corpo networks. In Shelf districts, it's a badge of honor. In corporate zones, it's inflammatory and instantly recognizable to corpo security.",
+    "condition_typical": "Always worn and weathered. New vests look suspicious — a Free Signal vest should show evidence of field use: paint fading, cable fraying, antenna dents, battery acid stains. The more battered, the more broadcasts it's made."
+  },
+  "image_prompt": "A Free Signal pirate radio vest displayed on a dark urban mannequin in a cramped Shelf district basement, illuminated by the green glow of a portable FM transmitter's LED display. Hand-painted frequency numbers and anti-corponation slogans are visible on the chest panel. A telescoping antenna extends from the left shoulder. Exposed wiring harnesses catch harsh neon pink light filtering through a small grimy window. The background shows cinder-block walls covered in pirate radio QR codes and resistance posters. Moody, documentary-style lighting. --ar 2:3 --v 6"
 }

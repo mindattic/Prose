@@ -11,7 +11,7 @@ A Python-based machine learning pipeline that reads 10,000+ worldbuilding entity
 
 ```bash
 # Navigate to the pipeline
-cd D:\Projects\MindAttic\StreetSamurai\v3\truth-discovery
+cd D:\Projects\MindAttic\StreetSamurai\v3\python
 
 # Run everything — extract, embed, cluster, score, and auto-repair
 python run_pipeline.py
@@ -33,7 +33,7 @@ python query.py "Arcturus Defense Solutions"      # Query a specific subject
 ## Setup
 
 ```bash
-cd v3/truth-discovery
+cd v3/python
 pip install -r requirements.txt
 cp .env.example .env
 # Edit .env with your Anthropic API key

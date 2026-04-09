@@ -47,5 +47,26 @@
     "Synaptrel",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Human Baseline Alliance"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, utilitarian work shirt with athletic undertones. The fitted silhouette skews modern-professional rather than traditional business—built for movement and long hours at a desk or on your feet. The grey-blue tone reads as practical and neutral, neither corporate formality nor street wear.",
+    "fit": "Fitted through the torso with tapered sleeves; cut to accommodate slight movement without excess fabric. Designed to sit comfortably over light augmentation or body-worn tech without bunching.",
+    "primary_material": "Grey-blue ripstop cotton-analog with four-directional stretch. Treated for stain resistance and static suppression.",
+    "texture": "Subtle diagonal ripstop weave visible under light; the fabric has a slight sheen from the treatment. Smooth to the touch but with tactile grip—not slippery. Micro-ribbed in places where conductive thread is embedded.",
+    "color_scheme": "Muted grey-blue base (hex: #5a7a8c or similar). No visible patterns; the ripstop weave creates understated visual texture. Snaps and collar trim in brushed silver or charcoal.",
+    "closures": "Magnetic snap buttons down the front placket (quieter than traditional buttons, better for office environments). Snap closures on both chest pockets and the discreet sleeve pocket.",
+    "distinctive_features": [
+      "Relaxed point collar—structured but informal",
+      "Two chest pockets with snap closures",
+      "Hidden sleeve pocket on right arm for stylus or ID card",
+      "Embedded conductive thread pattern visible as faint gridlines across upper back and shoulders",
+      "Small circular haptic feedback module at collar (matte black, roughly 1.5cm diameter)",
+      "Interior neck tag with Novalign branding and calibration QR code",
+      "Reinforced shoulder and upper back panels where tech threads concentrate"
+    ],
+    "tier_indicator": "Tier 3–4 functional. Mid-range corp-tech apparel. Accessible to working-class professionals but not luxury.",
+    "cultural_context": "Worn by office workers, server technicians, data analysts, facilities managers—people who exist in the grey zone between desk and physical labor. Signals someone who treats their body as a tool and invests in comfort tech. Pragmatic, not fashionable.",
+    "condition_typical": "Worn in—creases at the elbows and collar from daily use. Possible faint stain marks that the treatment has minimized. The haptic module might show micro-scratches. Overall: functional and lived-in, not pristine."
+  },
+  "image_prompt": "Cyberpunk fashion photograph of a fitted grey-blue ripstop work shirt on a lean androgynous model with visible collarbone and partial augmentation (maybe a chrome neck port or subtle implant). The model is mid-gesture, hand near the collar, highlighting the small haptic feedback module. Cool overhead lighting casts subtle shadows across the chest pocket snaps and shoulder panel texture. Dark urban backdrop—server room or corporate office interior, all blue-grey tones and neon detail. Shallow depth of field on the collar area. Moody, professional, utilitarian aesthetic. --ar 2:3 --v 6"
 }

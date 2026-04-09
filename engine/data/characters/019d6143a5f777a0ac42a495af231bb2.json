@@ -271,5 +271,13 @@
     "posture_movement": "Measured, economical gait — no wasted motion. Stands with slight forward lean, weight distributed to balls of feet as if ready to shift direction. Keeps his hands visible and low. His eye contact is selective; he looks at people long enough to know them, not long enough to be remembered. Moves like someone navigating a space where being noticed is dangerous",
     "clothing_style": "Tier 4-5 functionality. Weathered grey-black canvas work jacket with multiple pockets (for carrying physical Quanta, tools, necessities — not for augmentation ports). Thermal-lined hoodie beneath, faded black. Workpants with reinforced knees, scuffed synthetic leather boots. No corporate branding, no fashion markers, no status indicators. Everything is worn past the point of style into pure utility. A weathered grey scarf, wrapped loose around his neck, that can serve as hood or face cover. His hood is always accessible"
   },
-  "image_prompt": "Cyberpunk character portrait of a tall, lean 52-year-old Black man with deep blue-black skin and striking pale grey-green eyes, long grey-threaded locs wrapped and tucked under a weathered hood, dressed in worn grey-black canvas work jacket and thermal hoodie, standing in shadow with geometric industrial architecture behind him, no augmentations visible, deliberate absence of chrome or neon on his body, measured posture, calculating gaze, moody cinematic lighting with cool undertones, bokeh city lights in soft focus background, photorealistic, gritty cyberpunk aesthetic, portrait framing, --ar 2:3 --v 6"
+  "image_prompt": "Cyberpunk character portrait of a tall, lean 52-year-old Black man with deep blue-black skin and striking pale grey-green eyes, long grey-threaded locs wrapped and tucked under a weathered hood, dressed in worn grey-black canvas work jacket and thermal hoodie, standing in shadow with geometric industrial architecture behind him, no augmentations visible, deliberate absence of chrome or neon on his body, measured posture, calculating gaze, moody cinematic lighting with cool undertones, bokeh city lights in soft focus background, photorealistic, gritty cyberpunk aesthetic, portrait framing, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 36.8,
+    "Hispanic/Latin American": 28.5,
+    "Sub-Saharan African": 23.2,
+    "Southeast Asian": 6.6,
+    "Central Asian": 3.4,
+    "Northern European": 1.5
+  }
 }

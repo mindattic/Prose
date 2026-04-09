@@ -56,5 +56,39 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Bathysphere Networks",
+    "Coherent Thermal Excitation Rifle CTER-7 'Ashmaker'",
+    "GLMZ",
+    "Grave Protocol Arms Terminus GPA-1 'Last Rites'",
+    "Lockpick",
+    "Palladian Construction",
+    "Philibert Mwangi-Djordjevic",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist energy weapon with a distinctly industrial aesthetic — part demolition tool, part military instrument. The ITR-5 presents as a chunky, purposeful rifle with an oversized barrel assembly and prominent toroidal field generator at the muzzle. The silhouette reads 'heavy infrastructure' rather than sleek lethality, with a center-of-gravity bias toward the barrel that makes it appear perpetually aimed downward.",
+    "dimensions": "91 cm overall length. Barrel assembly extends 28 cm from receiver. Toroidal magnetic collar at terminus measures 12 cm in diameter × 8 cm depth. Magazine well accommodates TGC-4 canisters at rear. Stock-to-muzzle sight line approximately 8 cm above centerline.",
+    "weight_description": "Substantial and forward-heavy — 6.8 kg empty feels like handling a loaded fire axe. With full TGC-4 canister (9.2 kg total), the weapon demands both hands and a firm stance. The weight is honest rather than elegant, distributing toward the barrel where the plasma generation and confinement systems live. Balanced for two-handed shouldering, not one-handed spray.",
+    "primary_material": "Steel reinforced polymer composite frame. Barrel and confinement assembly are matte-finished steel with internal copper coil windings visible through inspection ports. The toroidal collar is brushed titanium alloy with visible electromagnetic shielding. Magazine well is injection-molded polymer rated for thermal stress.",
+    "finish": "Utilitarian matte black with extensive heat-stress patination — surface shows thermal bloom marks, oil-staining around the radiator vents, and micro-scratches from industrial deployment. The titanium collar has a worn brushed appearance with faint oxidation discoloration. Wear patterns concentrate around the barrel's exhaust ports where plasma bleed occurs during operation.",
+    "color_scheme": "Matte black primary with brushed titanium/silver toroidal collar. Accent colors include burnt orange heat-discoloration streaks around the radiative cooling fins, and faint warning-yellow paint on the two-position safety lever. TESSERA corporation branding appears in gray stencil.",
+    "grip_texture": "Rubberized polymer grip with aggressive diagonal texturing — designed for pressure-gloved handling. The foregrip is wrapped in heat-resistant cord binding in several places where previous operators reinforced it. The charging handle is knurled bare steel, cold to the touch even after thermal operation.",
+    "distinctive_features": [
+      "Toroidal magnetic field generator ring at barrel terminus — glows faint blue-white when powered",
+      "Eight radiative cooling fins running the length of the barrel, stained with heat oxidation",
+      "Transparent inspection ports showing copper induction coils winding around the plasma chamber",
+      "Two-position safety lever in warning yellow, positioned for thumb operation",
+      "Pressure gauge on right side showing fuel canister status (red zone clearly marked)",
+      "Exhaust port vents with articulating heat shielding to prevent lateral thermal bleed",
+      "Reinforced magazine well with thermal stress indicators (color-change polymer)",
+      "Burnt-orange discoloration bloom around exhaust ports and radiator sections",
+      "Service markings and ammunition type stenciled in faded gray on the receiver",
+      "Mounting rail for targeting optics, though most combat operators remove it for weight"
+    ],
+    "manufacturer_markings": "TESSERA COMPLIANCE GROUP stamped in gray stencil on the left receiver panel, above the trigger guard. Serial plate (brushed aluminum) mounted on the rear stock with 12-digit identifier and manufacturing date. Warning placards in Mandarin and English on the fuel canister coupling. 'ASHMAKER' designation is field-applied by users, not factory-marked.",
+    "condition_typical": "Well-maintained but heavily used. Military variants show careful mechanical upkeep alongside visible combat scarring — dents in the polymer from impacts, scorch patterns from nearby blast, heat-stress discoloration throughout. Industrial demolition variants are cleaner but show heavy thermal stress and operator wear. Field weapons typically have jury-rigged reinforcements around the grip and modifications to the radiator system."
+  },
+  "image_prompt": "Product photography of the Ionic Thermoclastic Rifle ITR-5 'Ashmaker' positioned diagonally across a worn steel work surface, three-quarter view showing the oversized toroidal magnetic collar at the muzzle and the length of the radiative cooling fins. Harsh side-lighting from the left reveals the matte black polymer and brushed steel textures, with emphasis on heat-discoloration patterns and the worn rubberized grip. The transparent inspection ports glow subtly blue. A gloved hand (tactile pressure glove with visible augmentation points at the wrist) grips the foregrip. Shallow depth of field blurs a TESSERA compliance stamp on the receiver. Dark cyberpunk industrial workshop aesthetic with background bokeh suggesting factory equipment. --ar 3:2 --v 6"
 }

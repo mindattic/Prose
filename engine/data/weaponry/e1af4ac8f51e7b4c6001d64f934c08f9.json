@@ -46,5 +46,36 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions CrisisNet BT-4 Battlefield Triage",
+    "Ira Volkov",
+    "Lazarus Pharmaceuticals",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Nitinol",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Synaptrel",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, predatory launcher with an organic aesthetic that evokes its namesake. The barrel splays slightly at the muzzle like tentacle openings, with a bulbous capacitor chamber dominating the rear section. The overall silhouette is aggressive yet ergonomic — something designed to be gripped firmly and aimed with deliberation.",
+    "dimensions": "340mm length, 120mm width at capacitor housing, 85mm height. Barrel spreads to 110mm at muzzle aperture.",
+    "weight_description": "Deceptively dense — feels heavier than its 2.1kg suggests due to concentrated mass in the capacitor. Balanced slightly forward toward the barrel, requiring a firm two-handed grip or a single reinforced grip on trained operators.",
+    "primary_material": "Titanium-reinforced polymer frame with integrated heatsinks. Capacitor housing is brushed steel with embedded cooling fins.",
+    "finish": "Matte charcoal polymer body with high-gloss gunmetal accents around the trigger assembly and muzzle. Cooling fins on the capacitor have a satin nickel finish that catches light when discharged.",
+    "color_scheme": "Deep charcoal gray primary with electric blue accent striping along the barrel ridges and capacitor vents. Trigger housing is flat black.",
+    "grip_texture": "Textured polymer with aggressive diamond-pattern knurling for wet or augmented-hand operation. Slightly tacky, heat-resistant elastomer coating.",
+    "distinctive_features": [
+      "Splayed muzzle aperture resembles jellyfish tentacle roots",
+      "Three parallel cooling fins running the length of the capacitor housing, pulsing with faint bioluminescent charge indicators",
+      "LED status ring around the trigger guard — cycles blue (armed), amber (discharging), red (depleted)",
+      "Etched charge count window on the left side showing cartridge remaining",
+      "Faint electrical scorch marks around the muzzle from deployment stress",
+      "Small vent ports along the barrel that emit faint ozone smell when active"
+    ],
+    "manufacturer_markings": "LAZARUS BIOWORKS logo embossed on the left side of the capacitor housing in matte black. Serial number stamped into the grip. Tier-3 licensing plate recessed into the right side frame.",
+    "condition_typical": "Well-maintained but showing field wear. Light polymer scuffs from equipment racks, faint electrical burn marks around the muzzle aperture from repeated deployment. Capacitor fins may show dust accumulation or slight discoloration from sustained-discharge residue."
+  },
+  "image_prompt": "Lazarus NB-4 'Jellyfish' stun launcher product photograph. Weapon mounted horizontally on dark gunmetal surface, positioned at 45-degree angle. Dramatic blue-tinted side-lighting emphasizing the splayed muzzle aperture and cooling fin geometry. Capacitor housing glowing subtly with electric blue accent lines. Gloved tactical hand gripping the textured polymer frame in the lower right corner, augmented fingers visible. Close-up detail of the trigger guard's LED status ring showing amber charge state. Shallow depth of field with blurred LAZARUS BIOWORKS branding in background. Cyberpunk noir aesthetic with cool color temperature. Hint of atmospheric haze suggesting ozone discharge residue. --ar 3:2 --v 6"
 }

@@ -72,5 +72,24 @@
     "The Burnline",
     "Thibault Achebe-Sørensen",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A slim, rectangular palm device with a subtly aggressive industrial aesthetic. The form factor resembles a high-end transit card or slim wallet, but with deliberate visual weight — the casing suggests containment of something dangerous. The front face is dominated by a dark display panel flanked by minimalist tactile controls. The overall impression is corporate-military: functional, compact, built for people who move through restricted spaces.",
+    "dimensions": "6.2 cm × 3.8 cm × 1.1 cm (slightly larger than a standard payment card, fits in a jacket pocket or palm)",
+    "weight_description": "90 grams — light enough to carry unnoticed, substantial enough to feel engineered. Pocketable without burden.",
+    "primary_material": "Aerospace-grade aluminum chassis with reinforced polymer impact edges. Housing designed to resist scanning penetration.",
+    "finish": "Satin-matte gunmetal with rubberized grip zones on the short edges. Subtle texture pattern to reduce fingerprint visibility. Intentionally unmarked and sterile-looking.",
+    "color_scheme": "Dark gun-metal gray primary, with recessed black polymer corners. Single accent of deep teal (Arcturus corporate blue) visible only around the edge-lit display bezel when powered.",
+    "interface_elements": "Monochrome OLED display (passive state shows no information; active state shows rotating ghost-profile ID summary in minimalist sans-serif font). Four recessed capacitive touch zones: power, rotation-mode cycling, panic-wipe (deliberately isolated), and status. Single USB-C port concealed behind a flush panel on the bottom edge. Subtle LED status indicator (red/amber/green) beneath the front display, barely visible unless directly observed.",
+    "distinctive_features": [
+      "Edge-lit display that activates with a faint teal glow when in use, creating an eerie minimal interface",
+      "Panic-wipe button physically separated and slightly recessed to prevent accidental activation",
+      "Mesh venting on the back panel (suggests heat management from active signal processing)",
+      "No visible branding or regulatory markings on the user-facing side — all identification on interior/underside only",
+      "Weight distribution that feels intentionally front-loaded, suggesting dense electronics"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (minimalist Φ symbol integrated into a geometric shield shape) stamped on underside only. FCC/regulatory equivalents printed in tiny font on the back panel, barely legible. Serial number etched in non-reflective numerals. No retail packaging branding visible.",
+    "condition_typical": "Usually encountered in active use: cradled in a palm, display faintly glowing with ghost-profile rotation. In standby, appears completely inert — just a blank metallic rectangle. Secondary-market units often show minor cosmetic wear (micro-scratches on the aluminum, worn grip zones) but rarely show functional damage; field-recovered units maintain military durability standards."
+  },
+  "image_prompt": "Close-up product photography of a slate-gray rectangular device (6cm × 4cm) positioned on a reflective stainless steel workbench. The device's edge-lit teal display is faintly illuminated, showing minimalist rotating text. Surrounding the spoofer are scattered related items: a GLMZ civil transit card, fragmented RFID tags, and a small network node. Dramatic side-lighting creates deep shadows across the aluminum casing, emphasizing its industrial density. The background shows a blurred cyberpunk city skyline through a rain-streaked window. Shallow depth of field keeps the device razor-sharp. Film noir color grading with emphasis on cool blues and gunmetal tones. Cinematic bokeh of distant neon signs. --ar 3:2 --v 6"
 }

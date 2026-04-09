@@ -36,5 +36,26 @@
   "related_entities": [
     "GLMZ",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist silhouette — broad and blocky across the shoulders, visually widening the upper body into an almost tank-like stance. The rigid plates create sharp geometric lines, making the wearer appear heavier and more grounded. The high-visibility reflective panel on the back reads as a stripe of neon safety in dim environments.",
+    "fit": "Deliberately stiff and restrictive. The vest sits snug against the torso with minimal give, distributing load across the chest and shoulders. Movement is constrained; the wearer moves like someone carrying weight they cannot shed. The rigid plates create visible armor plating.",
+    "primary_material": "Heavy-duty ballistic weave bonded to rigid polycarb plates on shoulders and upper back. The core material is industrial-grade synthetic with a matte non-reflective finish. The back panel is thermoreactive reflective composite that glows under incident light.",
+    "texture": "Rough, utilitarian — the weave has a slightly nubbed, industrial texture. The polycarb plates are smooth but cold to the touch, with subtle stress-mark scratches from impact testing. The reflective panel has a slightly waxy, slick finish that catches light irregularly.",
+    "color_scheme": "Muted charcoal-gray primary body with flat black rigid plates. The back reflective panel is safety-orange-yellow with integrated reflective striping. Minimal branding: small Drake Industrial stencil on the left chest in white sans-serif font.",
+    "closures": "Four heavy-duty magnetic snap points down the front center, sized for gloved hands. Two additional side-panel friction-fit straps with pull-tabs for rapid adjustment. The neck collar extension uses a friction-lock system that prevents accidental release but allows emergency removal.",
+    "distinctive_features": [
+      "Rigid polycarb plate armor across shoulders and upper back — visible as raised panels",
+      "Integrated neck collar extension — adds 2 inches of rigid protection around base of skull",
+      "High-visibility thermoreactive reflective panel spanning full width of back",
+      "Underarm ventilation mesh panels (non-protective, functional)",
+      "Weight distribution webbing on interior — creates visible linear impressions on the wearer's shoulders",
+      "D-ring attachment points at chest and back for tool tethers",
+      "Wear pattern: scuffed plates, worn snap points, faded reflective panel from exposure"
+    ],
+    "tier_indicator": "Tier 3 functional — standard issue for working-class construction and demolition workers across GLMZ. The vest itself has no luxury markers, but mandatory compliance signals stable employment and regulated sector work.",
+    "cultural_context": "Wearing this marks the wearer as construction/demolition sector — visible, unglamorous, essential labor. Insurance compliance is implied in every thread. The vest communicates: 'I work in ruins. Falling things are a calculated risk I accept.' It's practical armor, not fashion.",
+    "condition_typical": "Weathered and broken-in. Visible scratches on polycarb plates from contact with rebar and concrete. The reflective panel is often faded to a dull orange-yellow from months of UV exposure on rooftops. Snap points show wear; the magnetic contacts develop slight corrosion. The vest smells like concrete dust and sweat no matter how recently washed."
+  },
+  "image_prompt": "A worn Drake Industrial Falling-Object Protection Vest displayed on a muscular dark-skinned male mannequin in industrial gray primer finish, positioned in three-quarter profile against a derelict GLMZ construction site backdrop. Neon safety-orange reflective panel glowing under harsh sodium-vapor lighting. Rigid polycarb shoulder plates catch hard shadows. Concrete rubble and twisted rebar visible in background. The vest dominates the frame, emphasizing its blocky, protective silhouette. Moody, desaturated color grading with high-contrast highlights on reflective elements. Shallow depth of field, soft bokeh of distant city lights and warning beacons. Gritty, documentary-style lighting. --ar 2:3 --v 6"
 }

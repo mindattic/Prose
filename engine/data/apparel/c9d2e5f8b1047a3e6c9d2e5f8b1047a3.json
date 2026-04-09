@@ -53,5 +53,25 @@
     "The Near Palisade",
     "VitaCore FlowGuard Hemodynamic Regulator",
     "VitaCore LinguaSync Real-Time Translation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A classic double-breasted trench with restrained elegance—knee-length silhouette with subtle A-line flare at the hem. Structured shoulders anchored by functional epaulettes. The coat reads as intentional, professional without pretension: a garment that belongs in both a corporate atrium and a rain-soaked street market.",
+    "fit": "Tailored through the torso with controlled ease across the shoulders. The A-line cut accommodates various body types without clinging or ballooning. Sleeves are proportioned for layering; the belt cinches the waist without aggressive compression. Collar stands crisp and tall.",
+    "primary_material": "Mid-weight wool-poly blend—synthetic fibers for durability and weather resistance, natural wool for warmth and drape",
+    "texture": "Smooth face with subtle nap. Tightly woven to shed water. The lining is heavier, a soft brushed plaid that contrasts visually and tactilely with the exterior weave.",
+    "color_scheme": "Available in three colorways: warm camel (default), charcoal grey, and dark meridian green. Each features a deep burgundy or navy plaid lining visible at the lapels, collar, and cuffs.",
+    "closures": "Six-button double-breasted front (four functional, two decorative). Buckled belt with D-ring hardware in brushed steel or gunmetal. Wrist cuffs have button closures.",
+    "distinctive_features": [
+      "Functional shoulder epaulettes with button-down straps",
+      "Welted patch pockets on the hip",
+      "Storm flap detail across the back yoke",
+      "Deep plaid lining in contrasting burgundy or navy",
+      "Structured, minimalist aesthetic—no logos, no integrated tech",
+      "Subtle brand label inside collar; hand-dated manufacturing code on the interior seam"
+    ],
+    "tier_indicator": "Tier 3—accessible premium. Not corpo luxury (Tier 1-2), not utilitarian street-wear (Tier 4-5). Signals education, professional stability, and deliberate taste.",
+    "cultural_context": "Worn by mid-career professionals, educators, architects, and knowledge workers who reject both corpo conformity and studied anti-fashion posturing. Carries mild street cachet among discerning GLMZ residents. The wearer values longevity and craft over trend or augmentation.",
+    "condition_typical": "Arrives pristine with a center crease. After 1-2 seasons, develops a lived-in patina at the collar and cuffs. Wrinkles soften the structure in an appealing way. Cared-for examples show minimal wear; resale pieces hold their form and color."
+  },
+  "image_prompt": "Fashion photograph of a Halversen Trench No. 4 in charcoal grey, double-breasted with burgundy plaid lining visible at the open collar and cuffs. Worn by an androgynous model with visible augmentation—subtle chrome at the temple, wrist. Mannequin-still pose, three-quarter turn, hands resting on the buckled D-ring belt. Dark urban backdrop: rain-slicked concrete, neon bleed from offscreen signage reflecting on wet pavement. Cool, moody lighting with warm accent on the plaid lining. Fine fabric detail visible. Shot from chest up. Cyberpunk Tier 3 professional aesthetic. --ar 2:3 --v 6"
 }

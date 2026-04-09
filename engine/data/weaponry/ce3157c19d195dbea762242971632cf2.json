@@ -42,5 +42,45 @@
     "specialist",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Bogdan Achebe-Svanstrom",
+    "Brecken Yılmaz-Osei",
+    "Crucible Industries Close Defense Weapon CDW-8 'Barricade'",
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Iowan Behemoth — 'Palisade'",
+    "Kang Athletics KA-200 'Padwork'",
+    "Nika Svensson-Kone",
+    "Stainless Steel",
+    "TESSERA TC-3 'Crucible'",
+    "The Crucible",
+    "The Pure Hand",
+    "The Riveters' Round",
+    "Vantablack Media Orphan Signal Cartridge",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'",
+    "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist study in industrial excess—a massive stainless steel revolver that dominates the hand with aggressive, purposeful geometry. The frame is substantially larger than conventional pistols, with a noticeably thick barrel assembly crowned by angular compensator vents that cut upward like a predatory maw. The overall impression is one of barely-contained kinetic energy: heavy, deliberate, and uncompromising.",
+    "dimensions": "Overall length: 25.4 cm | Barrel length: 12.7 cm | Frame width: 5.8 cm | Cylinder diameter: 4.9 cm",
+    "weight_description": "Genuinely hefty—2.1 kg of pure metallurgical presence that demands respect in the hand. Not unbalanced, but decidedly front-heavy; the barrel assembly and compensator create a palpable sense of mass that requires confident grip and positioning.",
+    "primary_material": "Investment-cast stainless steel throughout frame, barrel, and cylinder. Reinforced steel internals rated for sustained .500 S&W pressures.",
+    "finish": "Brushed stainless steel with a matte protective coating that resists corrosion and fingerprints. The compensator vents feature slightly darker parkerizing to reduce glare. Minor machining marks visible at contact points—functional, not cosmetic.",
+    "color_scheme": "Gunmetal gray-silver stainless with darker steel accents. No decorative elements or anodizing; pure industrial aesthetic.",
+    "grip_texture": "Textured polymer grip panel (dark gray with slight grip-tape texture) over underlying steel frame. Knurled grip safety lever. The backstrap is bare brushed steel for maximum surface contact.",
+    "distinctive_features": [
+      "Prominent angular compensator ports cut into the top 5cm of barrel—four vertical vents designed to redirect muzzle gases upward",
+      "Oversized trigger guard accommodating gloved trigger finger",
+      "Heavily reinforced frame shoulders where cylinder pin interfaces",
+      "Cylinder has pronounced fluting to reduce weight without sacrificing strength",
+      "Exposed mainspring housing with visible coil spring",
+      "Adjustable rear sight with wide notch for rapid target acquisition",
+      "Ejector rod mechanism is thicker than conventional revolvers, with visible locking collar",
+      "Muzzle face is recessed to accommodate full cartridge diameter"
+    ],
+    "manufacturer_markings": "Crucible Industries logo (stylized interlocking 'C' and 'I') stamped on left frame above trigger guard. 'TITAN-500' inscribed in block letters on right barrel. '.500 S&W MAGNUM' chamber designation stamped on frame left side. Serial number plate (brushed stainless insert) mounted on grip frame bottom. Heavy weapons permit registration codes laser-etched on cylinder face.",
+    "condition_typical": "Typically field-worn but well-maintained. Light scratches on stainless finish from gear contact and holster wear. Slight discoloration around compensator vents from powder residue and heat cycling. Well-oiled action with no visible rust. Owners tend to baby these—too expensive and powerful to neglect."
+  },
+  "image_prompt": "Professional product photography of a Crucible Industries Titan-500 'Earthquake' revolver. Massive stainless steel .500 S&W Magnum revolver with prominent upward-angled compensator vents on barrel, heavy-duty investment-cast frame, textured dark polymer grip. Weapon positioned on dark graphite surface at 45-degree angle, barrel pointing upper-left. Dramatic low-angle sidelighting from left side creating hard shadows, emphasizing the angular compensator geometry and brushed stainless finish. Secondary rim-light on right edge highlights the cylinder fluting. Cyberpunk aesthetic: neon cyan accent light reflecting off compensator vents. Bare gloved tactical hand (dark leather, reinforced knuckles) gripping frame from upper-right corner. Shallow depth of field. Industrial, utilitarian mood. High contrast. --ar 3:2 --v 6"
 }

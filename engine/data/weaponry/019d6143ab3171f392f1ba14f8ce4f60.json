@@ -55,5 +55,43 @@
     "water",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Breck Tannen",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "Eshe Pena-Baah",
+    "GLMZ",
+    "Helical Vortex Penetrator HVP-4 'Corkscrew'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Kadiatou Bergstrom-Konate",
+    "Kairos",
+    "Kamala Nystrom-Keita",
+    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
+    "Marcus Bellamy",
+    "PulsePoint ThermoLayer Thermal Regulation Implant",
+    "Tessera Corponation",
+    "Tessera Nexus Town Car",
+    "Tympanic Membrane Galvanic Rupture Carbine"
+  ],
+  "physical_description": {
+    "visual_profile": "A single-edged combat blade with a distinctly segmented appearance along its length, giving it an almost crystalline or articulated quality. The blade tapers to a sharp point and maintains a sleek, minimalist profile despite its complex internal systems. The segmentation is visible as fine lines running perpendicular to the blade's length, creating a striped or segmented visual pattern that distinguishes it from conventional blades. The hollow spine is subtly visible as a darker channel running down the center of the blade.",
+    "dimensions": "Blade length: 28 cm. Total overall length including grip: approximately 38-40 cm. Blade width at widest point: 4.2 cm. Spine thickness: 1.1 cm. Grip length: 10-12 cm.",
+    "weight_description": "Balanced and surprisingly light for its destructive capability at 0.9 kg — the hollow spine and ferromagnetic segmentation keep weight distributed evenly. Feels responsive in the hand without being fragile, with weight concentrated slightly toward the blade tip for penetration authority.",
+    "primary_material": "Ferromagnetic segmented alloy (TESSERA-classified composition). Grip assembly appears to be brushed aluminum or carbon-composite housing the micro-battery and activation controls. Coil array housing integrated into the spine cavity.",
+    "finish": "Matte gunmetal or dark graphite on the blade segments, with a subtle iridescent shimmer visible under certain angles — likely a side effect of the ferromagnetic treatment. The grip features a slightly worn anodized finish with micro-abrasions suggesting field use. No obvious rust or corrosion despite the ferromagnetic material.",
+    "color_scheme": "Primary: Deep metallic gunmetal gray with near-black shadowing in the segmentation lines. Accent: Brushed silver or platinum on the grip assembly and any exposed coil housing. Small indicator accent lights (likely blue or amber LED) embedded near the grip activation point.",
+    "grip_texture": "Textured non-slip polymer or wrapped paracord with a thin layer of rubberized coating. The grip is ergonomically contoured for a secure hold even with gloved hands. Subtle knurling or micro-ridges along the grip surfaces improve purchase during fluid combat movements.",
+    "distinctive_features": [
+      "Visible segmentation running perpendicular across the entire blade — 14 distinct segments separated by microscopically thin expansion gaps",
+      "Hollow spine channel visible as a darker longitudinal line down the blade's center",
+      "Minimal LED status indicator (likely blue when inactive, amber or red when activated) embedded in the grip pommel area",
+      "Activation control: likely a pressure-sensitive or button mechanism integrated into the grip, recessed to prevent accidental engagement",
+      "No external coil visible, but the blade's slight iridescence hints at ferromagnetic treatment",
+      "Fine serration or micro-texture on the blade's edge — purposefully designed for initial contact grip",
+      "Disassembly points: subtle grooves or threads visible at segment junctions, allowing field breakdown"
+    ],
+    "manufacturer_markings": "TESSERA CORPORATION logo (stylized geometric shape) laser-etched on the grip near the pommel, approximately 1cm x 0.8cm. Minimal additional marking — the 'MTB-7' designation may appear as a small stamp or engraving on the grip spine. No serial number visible on the public-facing surfaces (likely on internal components to maintain disassembly plausibility).",
+    "condition_typical": "Field-deployed MTB-7s show subtle wear: fine scratches along the blade's flat sides from sheath contact, slight micro-damage along the edge (invisible to naked eye but suggesting use), and minor discoloration or fingerprint smudging on the grip from organic contact. Immaculate black-market specimens appear almost pristine, suggesting recent manufacture or storage. Battle-scarred examples show potential segmentation stress marks where the magnetic field cycling has strained the ferromagnetic lattice over repeated activations."
+  },
+  "image_prompt": "Product photography of the Magnetic Torsion Blade MTB-7 'Shearwater' on a dark matte black surface, shot from a 45-degree angle showing both the blade's lateral edge and the segmented structure. The blade is positioned point-upward with the grip in foreground, held in a gloved tactical hand (black neoprene or synthetic leather) for scale reference. Dramatic side-lighting from the left casts deep shadows between each ferromagnetic segment, emphasizing the blade's articulated construction. The lighting reveals the subtle iridescent shimmer of the ferromagnetic treatment and catches the small LED indicator near the grip in a faint blue glow suggesting armed status. The background is deep matte gray with slight texture, cyberpunk aesthetic. Include shallow depth of field with grip sharp and blade edge transitioning to slight blur at the point. Studio lighting setup with sharp rim-light on the blade edge to emphasize sharpness. The overall mood is surgical and lethal. --ar 3:2 --v 6"
 }

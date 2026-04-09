@@ -39,5 +39,31 @@
     "tier_2",
     "concealed"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Fanta Kato-Adomako",
+    "Guardian PocketShock PSR-1 'Nudge'",
+    "Patient Zero",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, premium ballpoint pen with a subtle aggressive edge — perfectly innocent until you notice the aggressive tip housing. At 14cm, it's a standard executive pen length, but the grip section feels slightly overbuilt. The clip is sturdier than typical, with a deliberate mechanical feel. Overall reads as high-end office tool at first glance, corporate aesthetic with latent lethality.",
+    "dimensions": "Length: 14 cm, Barrel diameter: 0.8 cm, Clip-to-tip: 12 cm, Writing tip: 1mm ball point",
+    "weight_description": "Substantial but balanced — the 34 grams feel concentrated in the barrel rather than distributed. Natural writing weight, slightly front-heavy. Sits perfectly in a professional grip without raising suspicion.",
+    "primary_material": "Brushed titanium alloy barrel, reinforced polymer grip section, steel clip and tip housing",
+    "finish": "Matte gunmetal gray with subtle satin finish. The clip has a polished stainless accent. Tip housing is slightly darker — almost black — creating a visual break that hints at dual purpose if you know what to look for.",
+    "color_scheme": "Gunmetal gray primary, stainless steel accents, charcoal black tip housing. Minimal branding in subdued silver lettering.",
+    "grip_texture": "Textured polymer with fine knurling — provides tactile feedback without being obvious. Designed to feel premium and professional, not tactical.",
+    "distinctive_features": [
+      "Clip with pronounced mechanical tension — designed to withstand pressure from activation hold",
+      "Recessed tip housing that's slightly wider than the barrel, concealing electrode contact points",
+      "USB-C magnetic charging cap (uses standard pen cap size, no visual differentiation)",
+      "Faint blue LED indicator recessed into the barrel near the clip — only visible when armed",
+      "Subtle 'AP-2' and 'VOLTLINE' engraving on clip in 2pt font",
+      "Electrode contact points visible as thin metallic lines within the black tip housing (intentionally semi-visible for trained eyes)"
+    ],
+    "manufacturer_markings": "VOLTLINE PERSONAL ELECTRONICS engraved along the clip in minimalist sans-serif. Serial number on the barrel just below the clip. No threat indicators — reads as premium office brand.",
+    "condition_typical": "Pristine to lightly used — these are replaced frequently as consumables. The writing tip wears naturally. Professional users maintain them carefully; field units show minor clip wear from repeated activation holds. Never fully battle-worn — the deception depends on apparent legitimacy."
+  },
+  "image_prompt": "Professional product photography of a premium titanium ballpoint pen (VoltLine ArcPen AP-2) centered on a dark matte black surface, angled 45 degrees to show both the barrel and the aggressive recessed tip housing. Dramatic side-lighting from the left reveals the satin finish and catches the stainless steel clip accent. A gloved hand (black synthetic material with exposed fingertip) grips the pen naturally as if mid-write. The blue LED indicator on the barrel is subtly illuminated. Close enough to see the minimal engraving and the faint metallic electrode lines in the tip housing. Cyberpunk aesthetic: corporate sleek, dystopian functionality, deniable weapon. Dark teal backlighting creates a tech-noir atmosphere. Sharp focus on the pen's dual nature — office tool and hidden threat. Professional corporate product shot with dystopian edge. --ar 3:2 --v 6"
 }

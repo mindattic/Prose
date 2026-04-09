@@ -43,5 +43,34 @@
     "aerosol",
     "industrial_repurposed"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Inoue-Aidoo",
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Dragan Petersen-Bah",
+    "GLMZ",
+    "MERIDIAN",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact industrial spray canister with aggressive medical-industrial aesthetic. Cylindrical body with a prominent pressurized dome top and a wide trigger-guard spray mechanism. The overall impression is clinical and utilitarian — something that belongs in a repair depot, not a street fight.",
+    "dimensions": "Height: 18cm, Diameter: 5.5cm, Trigger assembly width: 3.2cm",
+    "weight_description": "Deceptively light when empty or half-full; substantial heft when pressurized (approximately 180g full). The weight sits forward in the trigger hand, making it feel more aggressive than its size suggests.",
+    "primary_material": "Anodized aluminum pressure vessel with polymer grip sleeve and rubber seal components",
+    "finish": "Matte industrial gray with brushed aluminum ribs on the pressure dome. Heavy-use scuffs and micro-scratches visible on lower body. Some specimens show faded discoloration patterns where the corrosive contents have leaked against external seals.",
+    "color_scheme": "Gunmetal gray body with bright safety-orange pressure indicator bands and black polymer grip. Meridian branding in corporate blue.",
+    "grip_texture": "Rubberized polymer sleeve with textured grip pattern; feels deliberately clinic-professional. The trigger guard is bare anodized aluminum, cold to touch.",
+    "distinctive_features": [
+      "Pressure gauge window with red/yellow/green safety zones on the dome cap",
+      "Spray nozzle assembly with dual-orifice design — wide mist setting and precision jet",
+      "Faded 'OXIDATIVE HAZARD' diamond stamped below the midline",
+      "Serial plate engraved with batch lot and disposal instruction code",
+      "Faint residual corrosion staining around the nozzle tip (common in field use)",
+      "Instruction warning labels in four languages, partially worn or deliberately obscured",
+      "Small chrome oxidation discoloration on trigger mechanism from splatter exposure"
+    ],
+    "manufacturer_markings": "Meridian Municipal Supply logo (stylized 'MMS' in corporate serif) embossed above the grip. Barcode and regulatory stamps on the lower back. Product designation 'OxiStrip MMS-C4' in smaller print along the cylinder. Serial number etched into the pressure dome.",
+    "condition_typical": "Field-worn examples show nozzle corrosion, grip darkening from sweat and residue exposure, and faded warning labels. Licensed depot stock appears pristine with intact instruction sheets. Secondary-market specimens often show signs of hasty repacking, illegible lot numbers, or refilled/pressure-topped containers."
+  },
+  "image_prompt": "Product photography of an industrial spray canister (120ml) against a dark gunmetal surface, positioned at a three-quarter angle. Metallic gray anodized aluminum body with bright safety-orange pressure indicator bands on the dome. The trigger and grip assembly rendered in rubberized black polymer with visible texture. Dramatic side-lighting from a cool LED source creates sharp highlights on the pressure dome and harsh shadows in the nozzle assembly. Small chrome oxidation marks and micro-scratches visible on the cylinder surface, indicating field wear. Faded warning labels partially visible. Background is deep charcoal with subtle cyberpunk grid overlay or scattered circuit traces. Minimalist composition with technical typography displaying product name and hazard symbols. Overhead shot includes drops of corrosive residue on the surface beside the canister for emphasis. --ar 3:2 --v 6"
 }

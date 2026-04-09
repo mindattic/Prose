@@ -56,5 +56,37 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Lazarus Pharmaceuticals"
+  "parent_corponation": "Lazarus Pharmaceuticals",
+  "related_entities": [
+    "Arcturus HW-1 'Goliath'",
+    "Forge-Smith Collective Composite Tonfa 'Riot Answer'",
+    "GLMZ",
+    "Lazarus Pharmaceuticals",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Nurlan Holmberg-Dembele",
+    "Ouroboros Energy PiezoCore LD-5 Pedestrian Kinetic Harvesting Grid",
+    "ShieldTech Enforcer DM-4 'Crossover'",
+    "The Nearfield"
+  ],
+  "physical_description": {
+    "visual_profile": "A flat, disc-shaped pressure mine with a clinical aesthetic—resembles a medical device more than a traditional weapon. The top surface features a subtle convex dome with precision-machined edges. The design suggests pharmaceutical engineering rather than military manufacture, with clean lines and minimal ornamentation. An unsettling contradiction: it looks sterile, almost therapeutic.",
+    "dimensions": "180mm diameter, 35mm height. Compact enough to fit in a palm, yet substantial enough to feel engineered rather than improvised.",
+    "weight_description": "Moderately hefty—680g gives it a solid, deliberate feel without being cumbersome. Balanced distribution across the disc allows single-handed placement. The weight suggests dense internal acoustic architecture.",
+    "primary_material": "Medical-grade titanium alloy casing with internal polymer acoustic chambers. The exterior is precision-machined, suggesting laboratory origins rather than battlefield manufacture.",
+    "finish": "Matte brushed titanium with faint biotech aesthetic. The surface is treated to resist corrosion and fingerprints. Subtle wear patterns on pressure-activation rim from field deployment and handling.",
+    "color_scheme": "Gun-metal gray with accent striping in sterile white—LAZARUS PHARMACEUTICALS corporate branding colors. Subtle bioluminescent indicator strip (inactive when dormant) runs along the equatorial seam in pale clinical blue.",
+    "grip_texture": "Smooth, cold titanium on top surface; textured polymer grip ring around the perimeter edge for secure placement and transport. The grip has an almost medical feel—designed for precision handling rather than tactical combat.",
+    "distinctive_features": [
+      "Central pressure-activation dome with concentric machining marks",
+      "Equatorial seam housing neural feedback interface—appears as a thin line with micro-LED indicator ports",
+      "Four small vent ports around the base (0.8mm diameter) for acoustic calibration",
+      "Tiny serial identification laser-etched on the underside",
+      "Subtle LAZARUS PHARMACEUTICALS logo embossed on rim—looks like a pharmaceutical marker rather than weapons manufacturer branding",
+      "Faint acoustic chamber texture visible through semi-translucent titanium sections when light passes through",
+      "Micro-switches for trigger mode selection (barely visible, flush-mounted)"
+    ],
+    "manufacturer_markings": "LAZARUS PHARMACEUTICALS logo and 'PARCM-6' designation laser-etched in white on the circumferential rim. Small safety certification marks in multiple languages (corporate compliance fiction). Serial number on underside. No overt military insignia—designed to appear as civilian medical research equipment if cursory inspection occurs.",
+    "condition_typical": "Well-maintained. Field operators treat these with clinical precision—they're expensive and require careful handling. Dust and concrete particulates may accumulate on the pressure dome. No rust or corrosion. Psychological wear pattern: users often wipe the surface obsessively, as if that removes moral responsibility. Minor scuff marks from placement in confined spaces."
+  },
+  "image_prompt": "Product photography of a titanium disc mine, 180mm diameter lying flat on dark gunmetal surface. Shot from slightly above at 45-degree angle to show the dome profile and rim detail. Hard dramatic side-lighting casting razor shadows across the pressure dome, emphasizing the concentric machining marks. The bioluminescent indicator strip glows faint clinical blue. Close-up detail of the LAZARUS PHARMACEUTICALS branding on the rim in sharp focus. Sterile cyberpunk aesthetic—laboratory precision meets weaponization. The lighting should feel cold and clinical, like medical equipment under examination. Gloved hand (black synthetic material) gently touching the rim edge to show scale and handling. Ultra-high contrast, metallic sheen on titanium, deep black background. Cinematic product shot, pharmaceutical horror aesthetic. --ar 3:2 --v 6"
 }

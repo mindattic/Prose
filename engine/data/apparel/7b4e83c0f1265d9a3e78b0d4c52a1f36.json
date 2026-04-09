@@ -46,5 +46,25 @@
     "NeuralPath CivID Plus Identity & Payment BCI",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "Tessera Nexus Town Car"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sophisticated wrist-worn device that bridges professional minimalism with subtle tech prestige. The flush face sits nearly level with the wrist, creating a sleek, integrated appearance. The warm gunmetal casing catches light with a brushed, non-reflective finish that reads as intentionally understated—expensive restraint rather than chrome flash.",
+    "fit": "Snug but not restrictive—designed for all-day wear under dress sleeves or visible on casual Tier 3 workwear. The modular strap system allows micro-adjustments; sits flush against the wrist bone without tension.",
+    "primary_material": "Brushed titanium-analog casing with dark oxblood synthetic leather modular strap. The strap has subtle cross-grain texture mimicking genuine leather without the fragility.",
+    "texture": "Casing is matte with micro-brushed finish—warm to the touch, slightly grippy. Strap is smooth on the outer surface with a soft suede-like inner face against skin. Display is perfectly flush, uninterrupted glass.",
+    "color_scheme": "Warm gunmetal gray (#5a5a5a tones) casing paired with deep oxblood burgundy (#4a1a1a) strap. Micro-OLED face glows soft amber when displaying analog mode, sharp white when in data overlay.",
+    "closures": "Magnetic snap connections on the strap ends—quick-release modular system. No visible buckles or holes; the strap segments simply click into recessed ports on either side of the casing.",
+    "distinctive_features": [
+      "Flush micro-OLED display (analog dial default, toggles to full UI overlay)",
+      "Inner-wrist BCI port with standard handshake protocol compatibility",
+      "Modular strap system—swappable without tools",
+      "Vanthorpe Systems branding as subtle engraved mark on 6 o'clock position",
+      "Subtle beveled edge around casing perimeter",
+      "72-hour battery indicator visible only in data mode"
+    ],
+    "tier_indicator": "Tier 3 professional aspirational—visible enough to signal competence and access to mid-grade corporate infrastructure, subtle enough not to provoke resentment in peer groups.",
+    "cultural_context": "Worn by desk workers, logistics coordinators, and mid-level corpo staff who interface between field ops and management. Signals reliable, connected professionalism without flash. Common in GLMZ administrative hubs and finance districts.",
+    "condition_typical": "Usually pristine to lightly worn—occasional micro-scratches on the casing from daily contact with desk edges. Strap may show subtle creasing from repeated folding. Display remains protected by gorilla glass; no visible wear on face."
+  },
+  "image_prompt": "Close-up fashion product shot of a brushed gunmetal wristframe device with deep oxblood leather strap, displayed on a dark-skinned left wrist of a cyberpunk model in office wear. Warm moody lighting highlighting the micro-brushed casing texture and subtle beveled edges. Dark urban background with soft neon accent glow (amber or cyan) reflecting off the device surface. Shallow depth of field emphasizing the flush micro-OLED display. Professional product photography meets cyberpunk aesthetic. --ar 2:3 --v 6"
 }

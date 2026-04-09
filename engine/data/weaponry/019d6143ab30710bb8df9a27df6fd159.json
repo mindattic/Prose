@@ -54,5 +54,43 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Counter-Personnel Loiter Munition CPLM-7 'Patience'",
+    "GLMZ",
+    "Kadiatou Bergstrom-Konate",
+    "Narrowcast",
+    "New Windsor / Novaya Windsorka",
+    "Phased Acoustic Neurostimulator PAN-3 'Tinnitus'",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "Tessera Nexus Town Car",
+    "The Pure Hand",
+    "The Resonance Communion",
+    "Vantablack PA-1 'Pacifier'",
+    "Vantablack-CNX",
+    "WELLSPRING"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist energy cannon with an oversized, dominating emitter head that tapers slightly from the breech. The weapon has the silhouette of a breach tool — industrial, purposeful, deliberately intimidating. The emitter head is a precisely engineered cylindrical assembly roughly the diameter of a coffee can, festooned with visible superconducting coil rings and heat dissipation fins. It reads as a weapon designed for institutional violence rather than personal combat.",
+    "dimensions": "78cm overall length; 31cm width at the emitter head assembly; emitter bore approximately 12cm diameter; toroidal field projection 90cm diameter at standard calibration",
+    "weight_description": "Substantial and front-heavy — 8.4kg distributed toward the emitter head, requiring two-handed grip and shoulder bracing. Feels like shouldering industrial equipment rather than a conventional firearm.",
+    "primary_material": "Reinforced polymer composite chassis with titanium alloy superconducting coil housing; anodized aluminum heat sink fins around the emitter head; internal tungsten shielding for electromagnetic containment",
+    "finish": "Matte gunmetal gray composite with brushed titanium accents; the emitter head shows polished aluminum fins with subtle oxidation patina suggesting field use; exposed superconducting coil rings beneath protective transparent sapphire plates",
+    "color_scheme": "Charcoal gray chassis with silver-white titanium emitter assembly; ice-blue indicator lights around the coil array; subtle violet luminescence visible only during charge cycle within the coil chamber",
+    "grip_texture": "Rubberized polymer with textured side panels for two-handed purchase; integral accessory rail grip forward of the trigger guard; cool to the touch due to passive heat dissipation into the grip frame",
+    "distinctive_features": [
+      "Visible superconducting coil rings arranged in a cylindrical array within the emitter head, visible through sapphire observation ports",
+      "Radial aluminum heat sink fins protruding from emitter assembly like a sci-fi cooling system",
+      "Dual charging indicator lights (blue) flanking the sight mount, brightening during 2.1-second charge cycle",
+      "Recessed muzzle opening with concentric ring geometry — designed to project the toroidal field",
+      "Integrated pressure relief vents along the barrel junction",
+      "Engraved power cell compartment on the underside marked with discharge counter (0-12)",
+      "Faint hairline fractures in the anodized finish from sustained electromagnetic stress during operation"
+    ],
+    "manufacturer_markings": "TESSERA CORPONATION logo stamped in chrome on the left side of the chassis; KRE-1 'HALO' designation laser-etched on the emitter head; Tessera TC-20 power cell specification plate recessed into the grip; serial number on the underside compliance sticker (military registry)",
+    "condition_typical": "Well-maintained but visibly used — the aluminum fins show minor oxidation and stress marks; polymer chassis bears micro-abrasions from tactical handling and cover contact; sapphire observation ports are pristine (regularly maintained); internal superconducting coils show no visible damage but faint discoloration indicates thermal cycling"
+  },
+  "image_prompt": "Product photograph of the Kinoplasmic Resonance Emitter KRE-1 'Halo' energy weapon. Weapon mounted horizontally on a dark matte black surface, slightly angled to emphasize the dominating emitter head assembly with visible superconducting coil rings through sapphire ports. Dramatic side-lighting from the left, casting sharp shadows across the aluminum heat sink fins and revealing the brushed titanium finish. The sapphire coil observation ports should faintly glow violet-blue as if mid-charge cycle. Gloved hand (black tactical glove) visible gripping the forward rail for scale context. Background deep charcoal with subtle grid pattern suggesting a military armory or Tessera testing facility. High contrast, cyberpunk industrial aesthetic, emphasizing the weapon's institutional purpose and electromagnetic nature. Include barely-visible charge indicator lights illuminated ice-blue on the side. Photography style: sterile military catalog with dramatic sci-fi lighting. --ar 3:2 --v 6"
 }

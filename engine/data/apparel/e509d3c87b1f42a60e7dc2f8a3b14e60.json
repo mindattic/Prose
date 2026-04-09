@@ -54,5 +54,24 @@
     "Sulfur Crown Agriculture",
     "SynapTech AromaVeil Olfactory Filter",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting full-face covering that hugs the skull and neck contours. Matte black dominates the front and sides with slate-grey paneling along the crown and occiput, creating a geometric, tactical aesthetic. The weave catches minimal light—deliberately non-reflective. Appears almost featureless from distance, like a void where a face should be.",
+    "fit": "Second-skin compression fit; the four-way stretch thermal-weave conforms tightly to facial geometry without bunching. Sits snug against the jawline, cheekbones, and temples. The rear panel extends down to mid-cervical, allowing integration with spinal rigs without gaps.",
+    "primary_material": "Four-way stretch thermal-weave synthetic blend (heat-retention, moisture-wicking core) with integrated PM2.5 filter layer in the mouth-nose zone. Flat-bonded seams throughout—no raised stitching.",
+    "texture": "Smooth, slightly ribbed matte finish on the black sections. The grey panels show a finer weave texture. The PM2.5 filter zone is subtly quilted for durability. Overall: utilitarian, non-glossy, designed to remain tactile even in sub-zero conditions.",
+    "color_scheme": "Matte black primary (face, front neck); slate-grey secondary (crown panels, occiput channel). No logos visible; branding is a small woven tag at the rear neckline. Zero reflectivity.",
+    "closures": "Magnetic flaps seal the three crown port-access slits; friction-fit neck opening with optional elastic closure strap (removable). No zippers or buckles—designed for quick BCI access.",
+    "distinctive_features": [
+      "Three magnetic port-access slits at crown—allows BCI jack insertion without removal",
+      "Wide occiput seam channel for spinal rig anchor-plate accommodation",
+      "Integrated PM2.5 filter layer (mouth-nose zone)",
+      "Flat-bonded seams—zero bulk under helmet or secondary mask layer",
+      "Thermal-weave maintains insulation while remaining thin enough for stacking"
+    ],
+    "tier_indicator": "Tier 3 functional—mid-grade tactical apparel. Priced Φ180–240 through mid-tier suppliers. Not corpo luxury (no smart-fiber, no HUD integration), but above salvage-tier anonymous wear.",
+    "cultural_context": "Operatives, couriers, street runners, security personnel, corpo contractors, and anyone requiring anonymity + thermal protection. Worn by people who move through the GLMZ's colder zones (late autumn–spring) without drawing attention. Popular in ungoverned districts and corpo logistics chains.",
+    "condition_typical": "Broken-in after 3–4 weeks: minor pilling on high-friction zones (jawline, neck), possible slight discoloration around the filter layer from repeated breathing/condensation. Long-term wear shows wear-shine on crown port seals and fading at pressure points. Well-maintained specimens remain nearly pristine."
+  },
+  "image_prompt": "Full-body shot of a cyberpunk operative wearing a matte black and slate-grey Coldveil balaclava, face completely obscured, standing in a dimly lit industrial corridor with cold blue-grey overhead lighting. Frost or condensation visible on the filter zone. Dark tactical coat visible beneath. The model's shoulders slightly raised, conveying alertness. Moody, shadowy ambient light reflecting faintly off the matte black weave. Foreground detail: a close-up of the magnetic port-access slit at the crown, one seal partially lifted, revealing a BCI jack port beneath. Urban GLMZ backdrop—corrugated metal walls, flickering neon strip lights casting blue and cyan shadows. Cinematic, cold color grading. Dark, anonymous, purpose-built. --ar 2:3 --v 6"
 }

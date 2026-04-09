@@ -50,5 +50,23 @@
     "Flicker",
     "Tessera Corponation",
     "The Question"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular wand resembling a hybrid between a tactical flashlight and a medical diagnostic probe. The barrel tapers from a wider grip section to a narrower emission head. The front emitter face features a complex array of micro-optics arranged in a geometric lattice pattern. Overall aesthetic is clinical and purposeful, with an almost surgical precision to its construction.",
+    "dimensions": "28 cm length, 4.5 cm grip diameter, emitter head 3 cm diameter. Handheld wand category, extends from fingertips to mid-forearm when gripped.",
+    "weight_description": "0.5 kg — comfortably handheld for extended periods, lightweight enough to pocket or attach to gear harness, but substantial enough to feel engineered rather than toy-like.",
+    "primary_material": "Aerospace-grade aluminum frame with reinforced polymer grip section; emission head is precision glass/synthetic crystal matrix.",
+    "finish": "Matte charcoal gray powder-coat on barrel with anodized aluminum accents. Grip features knurled texturing. Emitter face has subtle iridescent coating that shifts between blue-violet in certain angles — visible indication of optical complexity beneath.",
+    "color_scheme": "Gunmetal gray body with slate blue grip accent stripe. Emitter face faintly opalescent. Three indicator LEDs (red/amber/green) embedded near the activation switch.",
+    "interface_elements": "Recessed push-button activation switch on grip (requires deliberate pressure). Digital readout display (small 2x1 cm monochrome LCD) showing battery percentage and current output intensity. Micro-USB charging port with protective cap. Three-position intensity dial (low/medium/high) with tactile detents.",
+    "distinctive_features": [
+      "Emitter head features visible geometric lattice of micro-optics that creates faint light-diffraction patterns even when powered down",
+      "Faint violet glow visible from the emitter face when active — structured light pattern visible as subtle shimmer",
+      "Heat-dissipation ribbing along barrel gives it a slightly biomechanical appearance",
+      "Tessera Industries branded holographic nameplate (fitting for a device that defeats holograms) on barrel near grip"
+    ],
+    "manufacturer_markings": "Tessera Industries logo (geometric T within a circle) on barrel. 'RAP-1' designation below logo. Vasquez Biocompatible Materials certification mark near charging port. Regulatory stamps for GLMZ electromagnetic compliance. Serial number etched on grip.",
+    "condition_typical": "Usually seen mounted on a tactical rail or held at ready during counter-surveillance operations. Battery indicator typically shows 60-80% charge from regular use. May show minor scorching or discoloration around emitter face from extended high-intensity operation."
+  },
+  "image_prompt": "Product photography: Tessera Industries RAP-1 Reality Anchor Projector handheld wand displayed at 45-degree angle on matte black workbench surface. Dramatic side lighting emphasizes the geometric micro-optics in the emitter head, which glows faintly violet. The matte gray barrel reflects cool, directional studio light while the grip's knurled texture casts fine shadows. In soft focus background, holographic artifacts and AR glitch overlays are visible on a test surface being illuminated by the device — fractured light patterns, corrupted holograms flickering. Cyberpunk aesthetic with neon rim lighting on the emitter array. High-tech counter-surveillance tool. Professional product shot. --ar 3:2 --v 6"
 }

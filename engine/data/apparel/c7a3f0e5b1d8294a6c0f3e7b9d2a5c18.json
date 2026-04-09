@@ -46,5 +46,26 @@
     "The Shelf",
     "The United Workers Front",
     "Veslemøy Achebe-Tursynov"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A structured, utilitarian silhouette that projects immediate authority. The vest sits squarely on the shoulders with defined edges at the armholes, creating a blocky, imposing profile. The soft armor panels underneath create subtle dimensional bulges across the chest and back, preventing a completely flat appearance. Multiple rows of MOLLE webbing create a grid-like texture across the torso.",
+    "fit": "Relaxed and deliberately oversized through the chest to accommodate soft armor panels and layering. Cut to sit clear of the body without being baggy—engineered for all-day wearability and quick movement. Adjustable side straps with friction-fit closures allow customization for different body types and heavy gear loads.",
+    "primary_material": "Dense ballistic-weave nylon with integrated modular soft armor panels (polyethylene composite). The exterior is ripstop-treated nylon for durability. Armor panels are removable for maintenance.",
+    "texture": "The outer surface is smooth but subtly gridded from the underlying MOLLE webbing. Armor panels create a slightly raised, quilted appearance where they're laminated into pockets. The nylon has a soft sheen under direct light, with a slightly waxy feel from weatherproofing treatment.",
+    "color_scheme": "Primarily matte black with slate grey and dark navy variants. Accents include black plastic hardware and dark olive-drab friction straps. Manufacturer branding (Nakamura-Voss logo) is typically minimal and gray-on-black, positioned center chest.",
+    "closures": "Double-width main zipper down the front (heavy-gauge, tactical-grade), reinforced with friction-fit side straps with climbing-style buckles. Shoulder straps can be adjusted via velcro tabs.",
+    "distinctive_features": [
+      "MOLLE webbing across chest and sides for modular pouch attachment",
+      "Removable soft armor panels (front and back rated for low-velocity impact and blade resistance)",
+      "Reinforced stitching along all seams with bar-tacks at stress points",
+      "Internal mesh lining visible through the front zipper for breathability",
+      "Minimalist Nakamura-Voss wordmark and logo (center chest, gray embroidery)",
+      "Multiple small loops and D-rings for equipment attachment",
+      "Slightly longer rear tail for additional coverage when seated"
+    ],
+    "tier_indicator": "Tier 2-3 boundary. Accessible to mid-tier security contractors and corpo divisions, signaling competence and training rather than luxury. Ubiquitous enough to be recognized as standard-issue, not aspirational.",
+    "cultural_context": "The uniform of armed private security, building protection, and low-level corpo enforcement. Wearing it identifies the wearer as someone with authority to enforce rules on corporate or contracted property. On the Shelf (Tier 5), it reads as a threat or as evidence of collaboration.",
+    "condition_typical": "Worn-in but well-maintained. Regular users keep it clean and functional, with possible wear on the zipper pull and minor scuffing on the armor panel edges. Dust and minor stains from urban environments are common. Some patches or replaced straps may appear on older units."
+  },
+  "image_prompt": "Professional tactical gear photograph of a Nakamura-Voss NV-7 patrol vest displayed on a dark mannequin or worn by a cyberpunk security contractor model. Matte black ballistic-weave nylon with visible MOLLE webbing grid across chest and sides, subtle quilted armor panel definition. Front zipper detail visible. Moody studio lighting with blue-tinted side rim light. Urban dystopian warehouse or corporate building interior backdrop. Dark gray concrete or industrial metal surfaces. Small product nameplate or branding visible. Clean, catalog-ready presentation emphasizing authority and functionality. --ar 2:3 --v 6"
 }

@@ -50,5 +50,26 @@
     "Sable Dzokoto-Mirković",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, aggressive wraparound visor that dominates the face with a single curved lens extending from temple to temple. The matte teal frame has a futuristic, almost predatory quality—minimal and functional. Sits low on the nose, framing the eyes like a second skin.",
+    "fit": "Snug and adjustable. The silicone bridge pad conforms to the nose, while thumb-screws at each temple allow fine-tuning for different head shapes. Wraps around the face without feeling claustrophobic—designed for extended wear.",
+    "primary_material": "Matte recycled polycarbonate frame (deep teal); curved photochromic composite lens (smoke to opaque); antimicrobial silicone bridge padding",
+    "texture": "Smooth, engineered plastic with a slightly grippy matte finish; lens has a faint iridescent shimmer when light hits it; bridge padding is soft, almost tacky to touch",
+    "color_scheme": "Deep teal matte frame with a neutral smoke-to-clear photochromic lens that darkens under UV. Subtle silver accents around the temple micro-projectors where the frame transitions to lens housings.",
+    "closures": "Thumb-screw adjusters at each temple for size customization; no traditional closure—friction-fit and bridge pressure keep it seated",
+    "distinctive_features": [
+      "Embedded micro-projectors in temple arms for HUD overlay projection",
+      "Single-piece curved lens for unobstructed field of view",
+      "Gesture-and-blink input sensors (no neural port required)",
+      "Photochromic lens with UV-reactive darkening",
+      "Adjustable antimicrobial silicone bridge pad",
+      "Minimal Wrenwire circuit-board logo etched on the right temple",
+      "Micro-ventilation channels in the frame to prevent lens fogging"
+    ],
+    "tier_indicator": "Tier 3–4 functional street tech. Too refined for pure salvage (Tier 5), but affordable enough for working-class users. Not corpo-grade (Tier 1–2) precision, but street-made with real engineering.",
+    "cultural_context": "Worn by people locked out of neural infrastructure—whether by choice, economic circumstance, or ideological resistance. Common among Circuit fabricators, independent contractors, street operators, and augment-skeptics. Signals technical literacy without corpo dependence.",
+    "condition_typical": "Usually worn in and broken-in—the bridge pad shows minor discoloration from skin oils and sweat; the frame may have light micro-scratches; the lens collects dust and fingerprints easily but remains optically clear. Users typically keep it meticulously maintained since it's their primary interface."
+  },
+  "image_prompt": "Close-up fashion shot of a Wrenwire Portless AR visor on a dark-skinned cyberpunk model's face, shot from a slight 3/4 angle. The matte deep teal wraparound frame dominates the frame, with the photochromic lens catching ambient neon light—faint blue and purple reflections play across its surface. The bridge silicone is visible, slightly worn. Background: dark urban Circuit quarter, rain-slicked pavement with soft bokeh neon signage (blues, teals, magentas). Moody, cinematic lighting. 35mm lens equivalent. Model's expression is neutral, focused. --ar 2:3 --v 6"
 }

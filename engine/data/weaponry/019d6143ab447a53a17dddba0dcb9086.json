@@ -39,5 +39,34 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Brecken Yılmaz-Osei",
+    "Idris Forsberg-Quaye",
+    "Nika Svensson-Kone",
+    "TESSERA PG-2 'Signature'",
+    "The Quiet Room"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, almost elegant pistol with an unusually long, tapered barrel that seamlessly integrates into the frame — no visible suppressor threads or muzzle crown. The profile is understated and deliberately non-threatening, resembling a precision instrument more than a weapon. The overall silhouette is sleek and purposeful, with minimal protruding edges.",
+    "dimensions": "Length: 24.5 cm (including integral suppressor barrel), Width: 3.2 cm, Height: 13 cm, Barrel length: 22 cm",
+    "weight_description": "Light in hand at 0.95 kg — balanced and refined, sitting comfortably in a palm without the heft expected of a full-size pistol. The weight distribution is forward-heavy due to the integrated suppressor, but feels deliberate and controlled rather than cumbersome.",
+    "primary_material": "Aerospace-grade aluminum alloy frame with stainless steel slide and barrel components. The integral suppressor housing is reinforced titanium composite for durability and thermal management.",
+    "finish": "Deep matte graphite with subdued brushed stainless accents on the suppressor housing. The frame has a subtle satin finish to minimize light reflection. No glossy surfaces — purely functional aesthetics.",
+    "color_scheme": "Charcoal gray frame with gunmetal suppressor housing and matte black internal components visible through machined gaps. Minimal contrast — designed to disappear visually.",
+    "grip_texture": "Microgrooved polymer grip with a fine crosshatch pattern — secure without being aggressive. The texture is almost invisible to the eye but provides positive purchase. Completely non-reflective.",
+    "distinctive_features": [
+      "Integral suppressor barrel with no removable components or visible seams",
+      "Recessed loading port flush with the frame — no traditional slide serrations",
+      "Tiny maintenance hatch behind the trigger guard (wipe system access every 50 rounds)",
+      "Minimal sight profile — low-profile night sights integrated into the slide top",
+      "Heat dissipation vents machined along the suppressor housing in geometric patterns",
+      "No external magazine release — magnetic catch concealed in the grip",
+      "Whisper-quiet mechanical components with dampening elastomers visible through frame cutouts",
+      "Sterling-Nakamura logo subtly etched on the slide — barely perceptible unless light hits it directly"
+    ],
+    "manufacturer_markings": "Sterling-Nakamura corporate logo etched in matte finish on the slide near the rear sight. 'SE-9 HUSH' stamped discreetly on the frame below the grip. Serial number laser-marked on the barrel extension, visible only when field-stripped. Compliance markings in microfont inside the trigger guard.",
+    "condition_typical": "Pristine to well-maintained — these weapons are issued to professional security personnel and rarely see prolonged field use. Surfaces remain unmarked and unscratched. Any wear appears as subtle patina from careful handling rather than battle damage."
+  },
+  "image_prompt": "Cyberpunk product photography of Sterling-Nakamura SE-9 'Hush' pistol lying on dark charcoal composite surface, shot from 45-degree angle. Dramatic side-lighting emphasizing the integral suppressor barrel's geometric heat vents and the seamless frame-to-suppressor integration. Hand in tactical glove (black neoprene with smart-fiber threading) holding grip at bottom frame. Shallow depth of field with shallow focus on the sight line. GLMZ corporate security aesthetic: clean, clinical, professional. Stainless and titanium surfaces catching cold blue-white accent light. Minimize background — dark gradient fading to near-black. No blood, no grit, no worn aesthetics — this is a precision instrument of executive protection. Include barely-visible Sterling-Nakamura logo catch under dramatic lighting. --ar 3:2 --v 6"
 }

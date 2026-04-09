@@ -42,5 +42,38 @@
     "family",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Constance",
+    "Crucible LL-4 'Peacekeeper'",
+    "Ebele Medina-Quaye",
+    "Lacuna Genomics",
+    "MERIDIAN",
+    "Meridian Munitions Wheelgun-38 'Roundhouse'",
+    "Nika Svensson-Kone",
+    "Steel",
+    "TESSERA PG-2 'Signature'",
+    "TESSERA TC-3 'Crucible'",
+    "The Question"
+  ],
+  "physical_description": {
+    "visual_profile": "A classic service revolver with honest, utilitarian lines. The Peacekeeper presents a compact, reassuring silhouette—neither aggressive nor delicate. Its proportions suggest competence rather than flash: a working gun that's been trusted by multiple generations.",
+    "dimensions": "Overall length 203mm, cylinder diameter 38mm, grip height 127mm, barrel length 102mm",
+    "weight_description": "Hefty but balanced—0.94kg sits comfortably in the palm, with enough substance to absorb recoil without becoming fatiguing. The weight is distributed to the frame, making it feel grounded rather than muzzle-heavy.",
+    "primary_material": "Carbon steel frame and cylinder with minimal polymer overlay",
+    "finish": "Worn matte gunmetal with patches of bare steel showing through decades of wear. Surface shows honest labor—holster marks along the frame, light scratches on the trigger guard, faded Parkerization in recessed areas. Not neglected, but lived-in.",
+    "color_scheme": "Primary gunmetal gray with darker bluing in protected areas. Grip panels in faded black synthetic with visible wear patterns on contact surfaces.",
+    "grip_texture": "Checkered synthetic polymer with shallow diamond pattern—grippy even if wet, with subtle wear polish from repeated draw-and-fire cycles",
+    "distinctive_features": [
+      "Recessed half-moon clip grooves visible on cylinder face",
+      "Simple fixed sights—blade front, notch rear, unadorned",
+      "Smooth trigger with visible serrations worn nearly smooth",
+      "Cylinder release lever showing manufacturing stamp marks",
+      "Four-inch barrel with sharp edge where finish has worn to bare steel",
+      "Slightly loose rattling from decades of lockup play—mechanically sound but cosmetically honest"
+    ],
+    "manufacturer_markings": "MERIDIAN MUNITIONS stamped above trigger guard, mostly legible beneath wear. Cylinder base engraved with serial number, partially obscured by oxidation. No chrome or decorative plating anywhere.",
+    "condition_typical": "Field-worn but mechanically pristine. This is a gun that shoots better than it looks—cosmetic degradation masks underlying mechanical reliability. Evidence of regular maintenance: faint oil sheen, clean cylinder chambers. Holster wear, minor rust bloom in crevices, grip slightly loose on frame."
+  },
+  "image_prompt": "Product photography of a worn Meridian Munitions Peacekeeper-45 revolver resting on black matte steel surface. Dramatic side-lighting reveals bare steel patches and honest wear through faded gunmetal finish. Gloved hand (synthetic tactical glove, black with gray palm) grips the cylinder release, showing scale. Shallow depth of field, industrial cyberpunk aesthetic. Dark background, cool-toned LED accent lighting catching the barrel edge. Sharp focus on half-moon clip grooves and trigger mechanism detail. Emphasize utilitarian design and decades of reliable use. --ar 3:2 --v 6"
 }

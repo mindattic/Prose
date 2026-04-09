@@ -280,5 +280,13 @@
     "posture_movement": "Moves with controlled precision, economical gestures. Sits hunched slightly forward when working, shoulders tensed. When mobile, walks with purpose but without hurry—someone accustomed to not drawing attention. Hands are rarely still; fidgets with small objects (reagent vials, a lighter, a pen) as a means of processing thought. Breathing shallow, vocal register naturally soft—a learned habit from operating in spaces where being overheard carries consequences.",
     "clothing_style": "Tier 4 working-class, practical and worn. Default uniform: faded charcoal synthetic lab coat (repaired multiple times, sleeves rolled), black cargo pants with reinforced pockets, steel-toed work boots scuffed from The Narrows concrete. Surgical mask worn around the neck at all times, pulled up during synthesis work. A single piece of jewelry: a thin steel ring on the left ring finger (no romantic significance; a tool for opening vials). No branding, no status markers. Clothes are clean but well-used, patched visibly at the left knee and right hip seam."
   },
-  "image_prompt": "Portrait of a 31-year-old nonbinary person, lean angular build, dark brown skin with West African and Scandinavian heritage visible in facial structure, tight coiled hair cropped very short, striking copper hexagon geometric patterned irises on deep brown eyes. Wearing faded charcoal synthetic lab coat with rolled sleeves, surgical mask draped around neck, steel-toed work boots. Yellow chemical staining visible on fingertips. Sparse background of a cluttered underground storage unit with dim overhead lighting, shelves of glass vials and reagent bottles slightly out of focus. Soft cyberpunk noir lighting, cool color grading with amber chemical glow from bottles. Precise, austere expression, hands visible and still. Hyperrealistic portrait photography, clinical and intimate, --ar 2:3 --v 6"
+  "image_prompt": "Portrait of a 31-year-old nonbinary person, lean angular build, dark brown skin with West African and Scandinavian heritage visible in facial structure, tight coiled hair cropped very short, striking copper hexagon geometric patterned irises on deep brown eyes. Wearing faded charcoal synthetic lab coat with rolled sleeves, surgical mask draped around neck, steel-toed work boots. Yellow chemical staining visible on fingertips. Sparse background of a cluttered underground storage unit with dim overhead lighting, shelves of glass vials and reagent bottles slightly out of focus. Soft cyberpunk noir lighting, cool color grading with amber chemical glow from bottles. Precise, austere expression, hands visible and still. Hyperrealistic portrait photography, clinical and intimate, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "South Asian": 47.4,
+    "Central Asian": 21.8,
+    "Sub-Saharan African": 14.1,
+    "Southeast Asian": 9.5,
+    "Hispanic/Latin American": 5.5,
+    "Eastern European": 1.7
+  }
 }

@@ -54,5 +54,49 @@
     "tier 4",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Compressed Lattice Ascender",
+    "Aïssé Dragomirescu-Faalelei",
+    "Carrion Defense Works Tactical Smoke Grenade TSG-5",
+    "Cezar Watanabe-Gyasi",
+    "Crucible Industries CT-X 'Gauntlet'",
+    "Felix Drum",
+    "GLMZ",
+    "Ihaia Nystrom-Keita",
+    "Ilhan Sandstrom-Badu",
+    "Kairos",
+    "Patient Zero",
+    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
+    "Plot 17",
+    "Praevex",
+    "Stanislav Lebedev-Tutu",
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
+    "Subdermal Shear Projector SSP-1 'Faultline'",
+    "The Resonance Communion",
+    "Thermite Suspension Grenade"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting combat gauntlet that merges the aesthetic of tactical gear with surgical precision. The silhouette is distinctly anthropomorphic — hugging the hand and forearm in articulated segments that suggest both protection and controlled lethality. At rest, it appears almost understated; in motion, the interlocking plates catch light in ways that hint at the technology beneath.",
+    "dimensions": "Gauntlet length: 32 cm (hand to mid-forearm). Knuckle plate array: 8 cm across. Palm width: 10 cm. Designed to fit standard adult hand frame.",
+    "weight_description": "Balanced and purposeful at 1.4 kg. The weight distribution favors the knuckles without creating wrist fatigue; operators report it feels like wearing a weighted glove rather than armor, responsive to natural hand movement.",
+    "primary_material": "Matte-black articulated titanium-composite plating over a gel-damping inner glove layer. The knuckle nodes are reinforced ceramic-polymer hybrid housing the piezoelectric transducers.",
+    "finish": "Deep matte black with a subtle brushed texture that resists reflective signature. Wear patterns typically show faint discoloration at impact zones from residual frequency harmonics. The plating edges have a satin finish.",
+    "color_scheme": "Primary: industrial matte black. Accent: minimal — faint phosphorescent blue traces along the articulation joints visible only under direct light, indicating power state.",
+    "grip_texture": "The inner glove is textured rubberized polymer with subtle radial grip pads on the palm. The knuckle plates are bare composite with microscopic finger-contact sensors — smooth but not slippery, designed for both bare skin and standard combat glove integration.",
+    "distinctive_features": [
+      "Sixteen evenly-spaced raised knuckle nodes arranged in a double-row pattern, each approximately 0.8 cm in diameter",
+      "Fingertip contact pads: subtle circular indentations on each digit, visible only on close inspection",
+      "Minimal power indicator: thin phosphorescent line along the inner wrist edge that pulses faintly when charged",
+      "Articulated finger segments with concealed joint mechanics, allowing full dexterity",
+      "Heat vents as micro-perforations along the inner forearm edge, nearly invisible without magnification",
+      "Inductive charge port: recessed circular pad on the dorsal forearm, flush-mounted",
+      "Reinforced knuckle ridge with subtle serration for structural emphasis rather than cutting (purely aesthetic)",
+      "The gel-damping layer visible at seams and wrist opening, appearing as dark amber translucent material"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo embossed on the outer wrist plate in minimal serif lettering (2 cm wide). Serial designation 'TSG-4' laser-etched on the inductive pad housing. No visible wear numbers or operational markings — deliberately clean for field deployment.",
+    "condition_typical": "Field units show progressive discoloration at the knuckle nodes (faint dark rings) from repeated stress-mapping operations and microfracture residue. Well-maintained gauntlets retain the matte finish; heavily-used variants develop a worn sheen at impact points. Military exemplars are meticulous — gel layers are monitored and replaced per spec, power cells swapped at regulation intervals. Battle-scarred variants show cracked plating around the knuckle array and darkened surfaces from heat exposure during extended strike sequences."
+  },
+  "image_prompt": "Product photograph of a Tectonic Shear Gauntlet (TSG-4) in military matte black, displayed on a gloved hand partially submerged in shadow. The gauntlet's articulated knuckle nodes catch dramatic side-lighting from above, revealing the raised ceramic-composite transducer array in sharp relief. Phosphorescent blue power indicators glow faintly along the wrist edge. The fingertip contact pads reflect cool light. Background is deep charcoal with subtle grid pattern suggesting a military or industrial testing environment. Shallow depth of field keeps the knuckles sharp and the forearm slightly soft-focused. Tactile details visible: gel-damping layer at seams, micro-perforations, inductive charge port. Mood: surgical precision meets urban warfare tech. High-contrast cyberpunk military aesthetic. --ar 3:2 --v 6"
 }

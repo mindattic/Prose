@@ -53,5 +53,38 @@
     "tier 3",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "GLMZ",
+    "Kadiatou Kobayashi-Appiah-Kubi",
+    "Lazarus LX-2 'Lab Rat'",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Sisay Bergqvist-Mallari",
+    "Sterling-Nakamura Augmented Reality Court System",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Sustrel",
+    "The Nearfield"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, angular ovoid chassis resembling a hardened seed pod or insect carapace. The parent drone has a vaguely organic silhouette—biomimetic but unmistakably synthetic. Slightly wider in the middle, tapered at both ends with subtle ventilation ribbing along the sides. At rest, it appears inert and innocuous; the real threat is invisible until dispersal.",
+    "dimensions": "11cm length × 9cm width × 7cm height. Sub-drones measure 14mm × 8mm (roughly the size of a large grain of rice or small ant). Parent chassis fits in a closed fist.",
+    "weight_description": "Dense and surprisingly hefty for its size—340g feels substantial in the palm, suggesting concentrated internal architecture. Not uncomfortable to hold, but the weight distribution is deliberately front-heavy, hinting at payload concentration.",
+    "primary_material": "Reinforced carbon-polymer composite chassis with heat-resistant epoxy coating. Internal structure utilizes micro-lattice titanium-aluminum frame to support 400–600 sub-unit payload. Sub-drones are constructed from flexible silicone dermis over micro-filament skeleton.",
+    "finish": "Matte charcoal-black primary body with brushed gunmetal accent panels. The surface has a slightly textured, non-reflective finish designed to minimize visual signature. Worn areas reveal underlying gray composite beneath the black coating.",
+    "color_scheme": "Dominant matte black with gunmetal-gray accent ribbing and status indicator panels. Minimal color variation—purely functional aesthetic. No corporate branding prominently displayed on body itself.",
+    "grip_texture": "Smooth, slightly cool polymer with strategically placed knurled grip zones near the equator of the chassis. The surface is deliberately non-porous to prevent micro-drone adhesion during handling.",
+    "distinctive_features": [
+      "Symmetrical micro-vents running along upper and lower thirds—allow dispersal gas escape without visually compromising structure",
+      "Faint seam line running equatorially around the widest section—the dispersal canister separation point, sealed with barely-visible magnetic lock",
+      "Three tiny recessed status LEDs (red/amber/green) clustered on the topmost curve—indicate power state, target acquisition readiness, and swarm coordination signal strength",
+      "Miniature launch-compatible hardpoint stub on ventral surface—threads for 40mm tube adapter",
+      "Subtle electromagnetic induction charging port (recessed circular aperture) on dorsal spine—for field recharging parent chassis",
+      "Micro-abrasion marks and impact scarring across surface—battle-worn finish suggests field deployment history"
+    ],
+    "manufacturer_markings": "Blackwood Commercial Group logo (small stylized 'BCG' triangle) laser-etched on ventral surface near charging port, barely 8mm across. Serial number stamped in tiny numerals on a recessed nameplate integrated into the aft endcap. No other visible branding—intentionally unmarked for deniability.",
+    "condition_typical": "Field units show moderate wear—scuffed black coating, minor pressure dents, possible residual bio-matter residue from deployment. Better-maintained units appear pristine, though even clean examples show deliberate weathering lines to mask use."
+  },
+  "image_prompt": "Product photography: Neurolytic Swarm Dispersal Drone NSD-7 'Locust' displayed on a dark matte-black surface, angled slightly to show equatorial dispersal seam and recessed status indicators. Secondary shot shows parent chassis held in a gloved tactical hand (black synthetic military glove with knuckle reinforcement), revealing palm-sized scale and textured grip zones. Dramatic side-lighting from cool-white LED (5600K), casting sharp shadows to emphasize ribbed ventilation detail and composite surface texture. Close macro inset of sub-drone swarm sample (3–4 fingernail-sized units magnified, arranged in formation) to convey distributed threat concept. Cyberpunk aesthetic: minimal, functional, purposefully unmarked. Dark GLMZ industrial background—brushed steel, dim biolume accent. Moody, sterile, utilitarian. --ar 3:2 --v 6"
 }

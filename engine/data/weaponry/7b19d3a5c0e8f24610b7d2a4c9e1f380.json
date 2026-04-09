@@ -42,5 +42,37 @@
     "consumer",
     "civilian"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Lebedev-Tutu",
+    "Ambrosia Fekete-Waiyaki",
+    "Arcturus Defense Solutions SAR-3 'Warden'",
+    "Fanta Kato-Adomako",
+    "Glenville Sound",
+    "Hearthstone Firearms Guardian-12 'Bedside'",
+    "Ira Volkov",
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Synaptrel"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, pen-sized cylinder that transforms into a shock baton. When collapsed, it resembles an oversized marker or tactical flashlight—innocuous enough for pocket carry. Deployed, the three-section shaft becomes a compact 52cm rod with a pronounced contact electrode tip that glints under light, giving it an unmistakably aggressive stance.",
+    "dimensions": "Collapsed: 22cm length × 2.8cm diameter. Extended: 52cm length × 2.5cm diameter. Contact electrode tip: ~8mm diameter, recessed 3mm into the shaft.",
+    "weight_description": "Light and balanced when collapsed—barely noticeable in a jacket pocket. When extended, the weight distribution shifts toward the electrode tip, creating a purposeful forward bias that feels responsive without being unwieldy.",
+    "primary_material": "Aircraft-grade aluminum alloy shaft with reinforced polymer housing for the grip section and battery compartment. Contact electrode is tungsten-plated copper.",
+    "finish": "Satin-anodized aluminum with a matte charcoal-black polymer grip. The electrode tip has a brushed metallic sheen that contrasts sharply against the darker upper sections. Micro-texturing on the grip to prevent slippage.",
+    "color_scheme": "Charcoal black primary with brushed silver-grey electrode tip and faint cyan accent line running the length of the shaft indicating active charge status.",
+    "grip_texture": "Aggressive micro-texturing—feels like fine sandpaper, designed to maintain grip even with sweat or gloved hands. The thumb-switch area has a slightly more pronounced ridge for positive tactile feedback.",
+    "distinctive_features": [
+      "Three visible locking seams that become apparent only when fully extended",
+      "Recessed thumb safety switch with subtle haptic feedback indent",
+      "USB-Ω charging port concealed under a magnetic dust cap at the base",
+      "Faint blue LED indicator ring around the electrode tip (glows when charged, dims when depleted)",
+      "Guardian logo stamped horizontally along the lower grip section",
+      "Audible click-locks that sound like mechanical certainty with each section deployment"
+    ],
+    "manufacturer_markings": "GUARDIAN wordmark stamped in silver on the grip in clean sans-serif font. Tiny serial number and safety certification marks laser-etched just above the charging port. 'CTR-1 EXTEND' printed in white block letters on the upper polymer section.",
+    "condition_typical": "Retail examples appear pristine and highly polished. Field-worn units show micro-scratches on the shaft from repeated deployment, blackened scuff marks on the grip from holster wear, and a slight discoloration around the electrode tip from residual electrical marking. Some user units have aftermarket grip tape applied over the factory texture."
+  },
+  "image_prompt": "Professional product photography of a Guardian CTR-1 shock rod in both collapsed and fully extended positions, arranged diagonally across a matte black surface. One unit is shown mid-deployment with all three sections visible, the other lies compactly folded. Dramatic side-lighting from the left reveals the brushed aluminum sections and illuminates the cyan charge indicator running along the shaft. The tungsten electrode tip catches a bright highlight. A gloved hand (tactical black leather) grips the extended unit, thumb on the safety switch. Close-up detail inset showing the USB-Ω charging port and Guardian markings. Cyberpunk aesthetic: neon cyan accent glow reflecting off the dark polymer, shallow depth of field, high contrast lighting, chrome reflections. Clinical, product-focused composition with slight dystopian edge. Futuristic material samples visible at frame edge (polymer swatches, circuit board fragment). --ar 3:2 --v 6"
 }

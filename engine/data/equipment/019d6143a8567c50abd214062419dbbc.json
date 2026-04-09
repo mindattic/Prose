@@ -47,5 +47,25 @@
     "The Burnline",
     "Vuk Jorgensen-Toure",
     "Ximena Bautista-Nwosu"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A ruggedized briefcase-style terminal with a distinctly utilitarian military-industrial aesthetic. The PDT-4 resembles a hardened communications device from the early 2200s, featuring a boxy, angular form factor designed for durability over aesthetics. The top surface slopes slightly and includes a recessed satellite antenna array that deploys vertically when powered on.",
+    "dimensions": "42cm wide × 28cm deep × 16cm tall (briefcase form factor)",
+    "weight_description": "3 kg — handheld but substantial; typically carried with reinforced carry handle or shoulder strap; deployable on a workbench or tripod mount",
+    "primary_material": "Titanium-reinforced polycarbonate composite chassis with magnesium alloy frame",
+    "finish": "Textured matte gunmetal gray with micro-perforated ventilation panels; sealed against environmental ingress (IP67 rated)",
+    "color_scheme": "Gunmetal gray primary body with charcoal accent panels; white LED indicators; Φ-branded blue accent lighting around perimeter when active",
+    "interface_elements": "Top-mounted 12cm monochrome LCD status display (showing signal strength, user count, bandwidth allocation); four recessed tactile buttons (power, mode select, emergency reset, diagnostic); dual USB-C ports (data/charging) on right side; status LED cluster (power, satellite lock, network activity, thermal warning) positioned above display; integrated heatsink vents along back edge",
+    "distinctive_features": [
+      "Deployable satellite antenna array (4 phased elements) that rises 8cm from center-top when powered; retracts flush when dormant",
+      "Axiom Systems corporate sigil embossed in chrome on lower right corner",
+      "Emergency manual release keyhole for content filter override (physical failsafe)",
+      "Subtle etched regulatory compliance matrix (FCC, GLMZ authorities, Axiom ACI certification) on back panel",
+      "Cooling fins on rear housing — terminal runs hot under sustained load",
+      "Faint holographic security seal on battery compartment showing Axiom anti-tampering verification"
+    ],
+    "manufacturer_markings": "AXIOM SYSTEMS in sans-serif block capitals across top bezel; PDT-4 model designation above LCD; manufacturing date code and serial number on lower left; regulatory stamps (GLMZ 2226 certification, Diaspora compliance authority approval) on rear",
+    "condition_typical": "When deployed in field, antenna array is fully extended; LED indicators glow soft blue (network active) or amber (searching for satellite); used units show scuff marks, impact adhesive patches, and weathering on edges; units in high-use infrastructure-poor zones accumulate dust in ventilation grilles; antenna tips occasionally show minor corrosion from environmental exposure"
+  },
+  "image_prompt": "Product photograph of Axiom Systems PDT-4 Diaspora Terminal positioned on a weathered metal workbench in a dimly-lit operations center. Terminal shown with satellite antenna array fully deployed, glowing soft blue LED indicators visible in shadow. Dramatic overhead lighting casting strong shadows, emphasizing industrial ruggedization and military aesthetic. Dark utilitarian workspace background with cable conduit and blurred equipment racks. Cyberpunk color grading with cool blue and amber tones. Professional catalog photography style. --ar 3:2 --v 6"
 }

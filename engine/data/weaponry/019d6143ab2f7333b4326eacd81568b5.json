@@ -59,5 +59,41 @@
     "narrows",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Alper Lebedev-Tutu",
+    "Arcturus Defense Solutions ETF-3 'Mantis'",
+    "Coherent Radiation Scalpel CRS-7 'Suture'",
+    "GLMZ",
+    "Helix Cortex Laminate — 'The Second Skin'",
+    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
+    "Irontide Tidal Energy",
+    "Kessler Kinetics VelocityFrame MkIV Sprint Leg",
+    "Narrowcast",
+    "Slagworks Industrial",
+    "The Pure Hand",
+    "Volkov-Saito Precision VS-O/U Sport 'Duelist'",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular energy weapon resembling a stylized tuning fork or trident, with an elongated handle extending downward into a split emitter fork. The fork's prongs glow faintly when powered. The overall impression is surgical precision wrapped in industrial cyberpunk aesthetics — more laboratory instrument than conventional firearm.",
+    "dimensions": "61cm total length (handle + emitter fork); emitter fork spans 8cm across at widest point; plasma sheet projects 1.4m perpendicular to the fork axis when activated; handle grip diameter ~3.5cm",
+    "weight_description": "Moderately weighted at 1.8kg, with mass concentrated toward the emitter fork. Feels balanced in the hand but front-heavy — requires controlled wrist strength to prevent field misalignment during extended use. Lighter than expected for a melee weapon, suggesting reliance on electromagnetic suspension rather than physical mass.",
+    "primary_material": "Aerospace-grade titanium alloy frame with integrated electromagnetic coil housing; ceramic thermal baffles around the emitter fork to contain plasma bleed",
+    "finish": "Matte gunmetal with brushed directional grain. Emitter fork surfaces feature a subtle iridescent coating (anti-static, ZHENG-DAO proprietary) that shifts faintly between blue-violet and silver under light. Grip wrapped in textured thermoplastic polymer with subtle circumferential channels.",
+    "color_scheme": "Gunmetal gray primary with matte black polymer accents. Emitter fork and capacitor nodes fade to deep teal-blue. Active plasma blade renders as pale electric white with cyan-violet corona.",
+    "grip_texture": "Ribbed thermoplastic with slight tackiness, designed to resist slippage during high-stress activation sequences. Subtle depressed grip zones for thumb and forefinger positioning to maintain field guide alignment.",
+    "distinctive_features": [
+      "Dual electromagnetic field guide nodes mounted at emitter fork tips — glowing faintly blue when powered",
+      "Tapered capacitor array visible as segmented chrome banding along upper handle shaft",
+      "Micro-status LED cluster (power, thermal, field integrity) recessed into grip near trigger interface",
+      "Fine etching along the handle depicting the ZHENG-DAO corporate sigil and what appear to be operator warning markers",
+      "Slight scorch discoloration on the emitter fork prongs from repeated use and minor field collapses",
+      "Proprietary lock mechanism on the power cell housing — silver release lever visible at handle base"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC stamped in chrome on the grip in both Latin and simplified Chinese characters. Serial plate (approximately 2cm x 1cm) inset flush into the upper handle, containing manufacturing date code and operator license encryption chip. A small warning glyph — ionized atom symbol — etched near the trigger guard.",
+    "condition_typical": "Well-maintained on legitimate operator hands; black market units show signs of amateur field repair, micro-fractures in the ceramic baffles, and occasional pitting on the emitter fork from dropped loads or misaligned plasma discharge. Licensed ISP-2 units have pristine emitter geometry; street variants are identifiable by the slightly warped, asymmetrical plasma sheet they produce."
+  },
+  "image_prompt": "Product photography of the ZHENG-DAO ISP-2 'Splitvolt' ionic plasma blade, held horizontally in a gloved tactical hand against a matte black surface. Dramatic side-lighting from the left casts the emitter fork in sharp shadow; light catches the brushed titanium alloy, revealing its directional grain. The electromagnetic field guide nodes glow faintly electric blue. A faint corona effect (VFX) halos the emitter tips, suggesting dormant plasma containment. The grip shows thermoplastic texture and micro-warning etchings. Background is deep charcoal with subtle bokeh of industrial cyberpunk architecture. Hyper-detailed focus on the emitter fork geometry and capacitor segments. High-tech, sterile product presentation with a sinister edge — surgical precision meets lethal intent. --ar 3:2 --v 6"
 }

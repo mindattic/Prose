@@ -49,5 +49,26 @@
     "Tessera Industries Memory Rounds MR-2 'Recall'",
     "The Bazaar",
     "The Undertow"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A monolithic, utilitarian silhouette in high-visibility ochre-yellow with strategic black reinforcement geometry. Reads as industrial armor—sleek, purposeful, intimidating. The color scheme broadcasts hazard warning across any processing floor. Creates a uniform, almost faceless presence when fully sealed.",
+    "fit": "Compression-tailored throughout with articulated joint zones. Snug at the torso and limbs to minimize folds and chemical pooling. The hood is structured and helmet-like, sitting high on the shoulders. Wrist rings create a distinct mechanical breakpoint.",
+    "primary_material": "Triple-laminate vitrex-polymer shell bonded over woven aramid core. Slick, non-porous outer surface designed to shed liquid. Ultrasonically welded seams with chemical-resistant tape for absolute barrier integrity.",
+    "texture": "Smooth, almost plastic-like outer face with a slight sheen that catches industrial lighting. Seam tape creates tactile ridges along shoulders, sides, and arms. Inner surface likely brushed for moisture wicking. Reinforcement panels at elbows and knees have a subtly raised, reinforced texture.",
+    "color_scheme": "Dominant ochre-yellow (OSHA-grade visibility standard) with matte black reinforcement panels at knees, elbows, shoulder seams, and chest logo zone. The contrast is stark and unmistakable—safety first aesthetic.",
+    "closures": "Full-body integration with magnetic torso seals and friction-fit compression openings at wrists and ankles. Integrated breakaway gloves with quick-swap wrist rings allow rapid glove replacement without suit removal. Hood sits fixed, designed to mate with drop-face respirator (sold separately).",
+    "distinctive_features": [
+      "Integrated breakaway gloves with snap-release wrist rings",
+      "Fixed hood geometry compatible with standard drop-face respirator interfaces",
+      "Ultrasonically welded seam tape visible along major stress points",
+      "Black reinforcement panels at high-stress joints",
+      "Veldtmann Industrial Systems branding on left chest",
+      "Chemical burn staining (pale discoloration on forearms) typical on used units",
+      "Shoulder-mounted access port for internal cooling duct attachment (Tier 1/2 deluxe models)"
+    ],
+    "tier_indicator": "Tier 1-2 industrial labor. Veldtmann is a premium manufacturer—only mega-corps and licensed Tier 1 processing facilities spec these new. Used units filter to Tier 2 technical workers and hazmat specialists.",
+    "cultural_context": "Signals industrial hazmat professionalism, corpo-sanctioned safety compliance, and chemical handling authority. Wearer is either a licensed processor or a salvage worker mimicking legitimacy. Rare to see on street—this is floor equipment.",
+    "condition_typical": "Arrives on secondary market already chemically stained. Pale burns and discoloration ghost the forearms and inner wrists from repeated acid exposure. Seam tape may show wear. Outer surface remains functional but cosmetically weathered. Pristine units are corpo inventory only."
+  },
+  "image_prompt": "A cyberpunk hazmat technician in an ochre-yellow and black Veldtmann ChemSeal Pressline fullsuit MK-4, standing motionless under harsh industrial halogen lighting in a Great Lakes Metropolitan processing facility. The suit's slick vitrex-polymer surface reflects blue and amber factory light. Chemical stains ghost the forearms. The fixed hood looms dark and featureless. Surrounding environment: steel catwalks, corroded pipe work, amber warning beams cutting through chemical vapor. Moody, dystopian, utilitarian. High contrast between the suit's hi-vis yellow and deep shadow. Shot frontally on a dark mannequin or suited model, no face visible. --ar 2:3 --v 6"
 }

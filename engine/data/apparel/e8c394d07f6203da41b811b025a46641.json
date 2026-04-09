@@ -41,5 +41,26 @@
     "ShieldTech SB-3 'Groundstrike'",
     "The Nearfield",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting full-body suit with a distinctive matte rubber sheen. The silhouette is streamlined but slightly bulky due to the layered dielectric material, creating a subtle puffy appearance. High-collar design that extends protectively around the neck. Appears almost futuristic—like a hazmat suit's more refined cousin. Conveys both technical authority and tangible danger.",
+    "fit": "Compression-tailored through the torso and limbs, allowing mobility while maintaining complete skin coverage. Wrist and ankle cuffs are snug to prevent any gap exposure. The suit clings without restricting movement—essential for workers performing delicate live-line work at height or in confined spaces.",
+    "primary_material": "Layered dielectric rubber composite (outer) over moisture-wicking synthetic comfort shell (inner). The rubber is industrial-grade, designed to dissipate electrical charge across its surface rather than conduct it inward.",
+    "texture": "Matte, slightly tacky rubber exterior with fine ribbing for grip and heat dissipation. The inner shell is smooth and breathable. Visible seams are reinforced and sealed with conductive thread to prevent weak points. Surface has subtle wear patterns from repeated donning/doffing.",
+    "color_scheme": "Bright safety orange primary with high-visibility yellow striping along the spine, shoulders, and limbs. Black reinforced panels at stress points (elbows, knees, palms, soles). Silver reflective piping at major joints. Helion Manufacturing's angular chrome logo embossed on the left chest.",
+    "closures": "Full-length center-front magnetic-snap system for rapid donning and emergency removal. Reinforced side zippers as redundant closure. Sealed magnetic clips at wrists and ankles ensure no gaps. A pull-tab at the neck for emergency quick-release.",
+    "distinctive_features": [
+      "Integrated testing port on the right forearm—a small circular connector where daily voltage-resistance tests are performed",
+      "Printed testing log grid on the left forearm (date, voltage tested, tech ID, pass/fail)",
+      "Conductive copper thread tracing visible along all seams for charge distribution",
+      "Reinforced palm and sole grips with raised treads for electrical work platforms",
+      "Sealed shoulder panels with internal padding to support equipment harnesses",
+      "Color-coded size markers on inner collar (white text on black background)",
+      "Manufacturing date and next mandatory replacement date embossed inside neck"
+    ],
+    "tier_indicator": "Tier 3 (working-class essential equipment)—expensive enough to require corporate or union backing, but not a luxury item. Worn by those whose labor literally keeps the city powered.",
+    "cultural_context": "Worn by electrical lineworkers, power plant technicians, and grid maintenance crews. Signals expertise, danger tolerance, and essential infrastructure work. The suit is a uniform of necessity, not choice. Wearing one in public outside of work context signals membership in a specific, respected caste of dangerous-job workers.",
+    "condition_typical": "Well-maintained but visibly used. Rubber shows micro-scratches and minor scuffs from field work. Testing log entries fill the forearm grid. Seams remain pristine (failure point = death). Inner collar shows sweat stains. The suit is religiously cleaned but never looks new—it's a working tool, not a showpiece."
+  },
+  "image_prompt": "High-contrast fashion photography of a Helion Manufacturing High-Voltage Insulation Suit displayed on a athletic female cyberpunk model with visible neck augmentation ports. The suit is bright safety orange and yellow with black reinforced panels, shown from mid-torso up, emphasizing the high collar and chest-mounted testing port. Model wears the suit in a power stance against a dark industrial backdrop—vertical electrical transmission lines and grid infrastructure blurred behind. Moody amber and cyan lighting casts dramatic shadows across the rubber material's matte surface, highlighting the conductive thread seams. The testing log grid on the forearm is visible with hand-written entries. Gritty, technical atmosphere. Shot in a high-security electrical facility. --ar 2:3 --v 6"
 }

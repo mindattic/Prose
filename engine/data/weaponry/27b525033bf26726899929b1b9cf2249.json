@@ -42,5 +42,35 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Constance",
+    "Djeneba Orlov-Obeng",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "TESSERA Widow Mk. III",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, centaur-like emplaced weapon: a squat, heavily-armored gun carriage with a long, angular barrel assembly rising from its center. The overall silhouette suggests patient, coiled menace — low and wide at the base, tapering to a precise firing mechanism. Aesthetically industrial rather than sleek, conveying engineering over speed.",
+    "dimensions": "Carriage base: 120cm L × 95cm W. Barrel assembly: 180cm total height when fully elevated. Barrel: 65cm length. Rotating turret diameter: 85cm.",
+    "weight_description": "Extremely heavy and immobile — 42kg is the gun assembly alone, excluding the self-leveling platform base which adds another 60-80kg. Feels planted, permanent, institutional. Not a weapon meant to be moved once positioned.",
+    "primary_material": "Reinforced steel frame and carriage with carbon-composite barrel jacket. Aluminum alloy rotational housing. Synthetic polymer covers for electronics and ammunition hopper.",
+    "finish": "Matte industrial gray with worn anthracite accents. Heavy-duty corrosion-resistant coating showing minor surface wear and dust accumulation. Functional, unglamorous — designed for multi-week outdoor deployment.",
+    "color_scheme": "Battleship gray body with black barrel assembly. Accent bands of institutional yellow-green around the ammunition hopper and self-leveling gyro housing. Copper-colored cooling fins along the barrel jacket.",
+    "grip_texture": "N/A — this is an emplaced weapon with no handheld component. Maintenance access points feature textured grip strips on the ammunition loading mechanism and calibration panels. Cold, unforgiving steel and scored polymer.",
+    "distinctive_features": [
+      "360-degree rotating turret with visible gyroscopic self-leveling mechanism",
+      "8-pronged ammunition hopper with 2,000-round capacity — hexagonal cross-section visible from above",
+      "Recessed sensor array (LIDAR, thermal, kinetic tracking) positioned above the barrel",
+      "Extended heat-dissipation fins running the length of the barrel jacket — functional, deliberate design",
+      "Tripod-mounted stabilization legs with hydraulic dampers",
+      "Power cell bay marked with Φ currency symbol and battery-status indicator window",
+      "Worn cable conduits and pneumatic lines running to the auto-targeting module",
+      "Service placard on the base listing 'AUTONOMOUS SUSTAINED FIRE MODE' and fire-rate specifications"
+    ],
+    "manufacturer_markings": "ParaNeural Interfaces logo (nested hexagon symbol) stamped on the turret housing in brushed steel. Model designation 'TE-9' laser-etched on the barrel shroud. Serial plate mounted on the carriage base. Smaller text warning label: 'SIEGE AUTHORIZATION REQUIRED — CORPORATE SOVEREIGN TERRITORY ONLY.'",
+    "condition_typical": "Perpetually field-worn but meticulously maintained. Dust accumulation on horizontal surfaces, minor pitting on exposed metal from weeks of outdoor siege deployment. Ammunition hopper shows handling scuffs. Targeting system lens clear and actively powered. Overall impression: tired but reliable, a machine designed to outlast the conflict it participates in."
+  },
+  "image_prompt": "Industrial emplaced weapon system photographed from a three-quarter angle on a concrete siege-line surface. Brutalist steel-and-composite gun carriage with 360-degree rotating turret and angular 65cm barrel assembly. Matte gray finish with yellow-green ammunition hopper accents and copper cooling fins. Visible sensor array, hydraulic stabilizers, and power cell bay. Dramatic side-lighting (warm tungsten from the left, cool blue shadow on the right) casting sharp shadows of the barrel assembly across the surface. Dust motes visible in the light. ParaNeural Interfaces logo visible on turret housing. Nearby: spent 8mm caseless ammunition casings scattered on concrete, a power cell waiting for swap-out. Cyberpunk industrial aesthetic — this is institutional violence, patient and relentless. Photograph as a corporate equipment catalog entry for Tier 5 siege-warfare contractors. --ar 3:2 --v 6"
 }

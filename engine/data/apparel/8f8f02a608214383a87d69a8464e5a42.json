@@ -38,5 +38,26 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Registry",
     "VitaCore LinguaSync Real-Time Translation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately unremarkable corporate uniform that reads as institutional and bureaucratic. The silhouette is boxy and slightly ill-fitting by design, projecting efficiency over personality. Charcoal-grey poplin shirt paired with slate trousers creates a monochromatic, intentionally forgettable appearance. The overall impression is one of mid-tier corporate neutrality — unmemorable, standardized, and designed to make the wearer disappear into institutional machinery.",
+    "fit": "Deliberately oversized through the chest and shoulders, with tapered but not fitted trousers. The cut is comfortable for long desk shifts but unflattering — no tailoring is intentional, as perfect fit would suggest personal investment. The collar sits slightly loose to accommodate subdermal augmentations.",
+    "primary_material": "Poplin cotton-synthetic blend (shirt) with a light stain-repellent treatment; poly-wool blend (trousers) in a durable, industrial weave. Both fabrics are practical, machine-washable, and resistant to coffee and document-handling wear.",
+    "texture": "Smooth, pressed poplin with a slight sheen that dulls with wear. Trousers have a subtle ribbed texture from the poly-wool blend. The stain-repellent finish creates a faint plastic-like quality when new, softening slightly after washing.",
+    "color_scheme": "Charcoal grey shirt with slate grey trousers. Monochromatic, deliberately bland. The only accent is a small embroidered Ouroboros snake sigil at the left breast pocket in a slightly darker grey thread.",
+    "closures": "Standard button front on the shirt; standard fly zipper on trousers. All closures are institutional-grade, durable, and replaceable. No magnetic snaps or tech integration.",
+    "distinctive_features": [
+      "Small embroidered Ouroboros ouroboros-snake sigil at breast pocket",
+      "Recessed fabric notch at right temple for BCI port access",
+      "Flat collar designed to sit over subdermal neck implants without bunching",
+      "Light stain-repellent treatment on all fabrics",
+      "Deliberate oversizing through shoulders and chest",
+      "No branding or decorative elements beyond the sigil",
+      "Worn appearance develops slowly — pilling on trousers, faded collar from repeated wear"
+    ],
+    "tier_indicator": "Tier 2-3 institutional employment. Marks the wearer as stable, employed by a major corporation, but not high enough to wear tailored executive wear. The uniform signals medium-wage bureaucratic work.",
+    "cultural_context": "Ouroboros claims processing staff. The wearer is part of a massive, grinding institutional machine — reliable but creatively suffocated. Many workers personalize subtly with pins or patches to retain identity. Clients often recognize the uniform and respond with sympathy or frustration. The uniform is *issued*, not owned, creating a psychological distance from one's own clothing.",
+    "condition_typical": "Issued uniform shows signs of wear after 6 months: collar slightly faded, minor pilling on trousers, faint stains despite the stain-repellent treatment. The fabric maintains its shape but loses its initial crispness. Many worn uniforms have small pins or patches sewn near the cuff or collar — subtle acts of personalization within strict guidelines."
+  },
+  "image_prompt": "Professional corporate product photography of an Ouroboros claims processing uniform displayed on a dark grey mannequin torso and lower body, posed in a sterile white or grey institutional office environment. Harsh overhead fluorescent lighting casts sharp shadows. The charcoal poplin shirt sits slightly loose on the mannequin shoulders, with the small embroidered Ouroboros snake sigil visible at the breast pocket. The right temple area shows the recessed BCI port notch. Slate grey trousers hang slightly loose at the ankles. A paper coffee cup with a small stain sits nearby, suggesting the practical reality of desk work. The background is a blurred corporate office wall or filing cabinet. The overall mood is clinical, slightly depressing, and matter-of-fact — the visual equivalent of institutional bureaucracy. --ar 2:3 --v 6"
 }

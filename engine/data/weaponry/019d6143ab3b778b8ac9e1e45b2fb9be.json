@@ -60,5 +60,39 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Carrion Defense Works Field Surgical Kit FSK-6",
+    "Fanta Popov-Adjei",
+    "GLMZ",
+    "Helix Biosystems",
+    "Ihaia Nystrom-Keita",
+    "Narrowcast",
+    "Philibert Mwangi-Djordjevic",
+    "TESSERA PG-2 'Signature'",
+    "The Bazaar",
+    "The Composite Index"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, minimalist sidearm with an almost surgical precision to its lines. The frame tapers from a slightly wider grip to a narrow, almost pen-like barrel assembly. The overall impression is of refined lethality — less brutal instrument, more engineered scalpel. Sits low and compact in the hand.",
+    "dimensions": "Length: 18.5 cm | Width: 4.2 cm | Height: 12 cm (grip to top of slide) | Barrel length: 8.3 cm",
+    "weight_description": "Deceptively light — 0.9 kg feels almost insubstantial until you realize the photonic cell and targeting assembly account for most of that mass. Balanced toward the grip, making it feel like an extension of the hand rather than a tool being wielded.",
+    "primary_material": "Carbon-composite polymer frame with reinforced titanium alloy slide and barrel assembly. The photonic emitter housing is aerospace-grade ceramic to withstand thermal cycling.",
+    "finish": "Matte black throughout — not the aggressive black of military hardware, but the clinical black of surgical instruments. The finish has a slight satin quality that prevents glare.",
+    "color_scheme": "Primary: Deep matte black | Accent: Violet (the indicator light housing and minimal trim around the emitter aperture)",
+    "grip_texture": "Textured polymer with fine cross-hatching — mimics medical-grade glove grip patterns from its surgical heritage. Slightly textured, not aggressive, designed for precision rather than purchase.",
+    "distinctive_features": [
+      "Deep violet indicator light positioned above the trigger guard that pulses once before each shot",
+      "Circular aperture for photonic emission, smaller than typical laser weapons — almost innocuously small",
+      "Minimal control surface — trigger, safety lever, and charge status indicator. No visible rails or attachment points",
+      "Heat vents along the grip frame in a subtle geometric pattern, barely visible",
+      "Target-assist laser sight integrated into the top — appears as a thin crimson line when active",
+      "Photonic cell housing visible as a slight bulge in the grip, with faint status LEDs (green/yellow/red) along the spine",
+      "Serial plate etched subtly into the left side of the frame in small type"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo (interlocking DNA helix) etched in chrome on the right side of the slide, about 2 cm from the rear. Tiny 'PSFP-3' designation stamped below it. Serial number on left frame spine. 'CLEAVER' designation is not official — it's user-applied by field operators, sometimes as custom engravings.",
+    "condition_typical": "Well-maintained in standard field use — the matte finish shows micro-wear patterns from holster draw and handling, but the weapon is typically kept clean. The photonic emitter aperture remains pristine due to self-cleaning thermal pulses. In heavy-use conditions, faint scorch marks may appear around the emitter housing from ambient material fracturing."
+  },
+  "image_prompt": "Product photography of the Photonic Stress Fracture Pistol PSFP-3 'Cleaver' by HELIX BIOSYSTEMS. Lay the compact, matte-black sidearm on a dark brushed-steel surface, angled to show the violet indicator light housing and the small, almost delicate photonic emitter aperture. Dramatic side-lighting from the left reveals the subtle texture of the grip and the geometric heat-vent pattern. The violet accent light pulses faintly, suggesting power-on state. Include a gloved hand in tactical gloves gently gripping the weapon, showing scale and the refined precision of its form factor. Cyberpunk aesthetic: cool color temperature, hints of chrome and carbon composite in the background. Forensic clinical lighting. The violet glow should dominate the lighting, casting cool shadows. Professional product shot for a weapons catalog. --ar 3:2 --v 6"
 }

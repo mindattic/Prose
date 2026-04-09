@@ -66,5 +66,24 @@
     "The Pure Hand",
     "The Signal",
     "Tomasz Wren"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian flat plate device with a brushed steel face and a pronounced adhesive mounting surface. The transmitter resembles an industrial vibration sensor disguised as unremarkable construction hardware. Minimalist design with subtle accent lighting around its perimeter. The receiver is a smaller contact pad with a flexible piezoelectric element visible beneath transparent protective resin.",
+    "dimensions": "Transmitter 9cm × 5cm × 3cm (passport-sized flat plate); Receiver 6cm × 4cm (palm-sized contact pad)",
+    "weight_description": "Transmitter 180g (handheld, clip to tool belt or magnetic mount); Receiver 90g (pocketable, designed to press against structural members)",
+    "primary_material": "Transmitter: aerospace-grade aluminum chassis with reinforced mounting bracket; Receiver: polycarbonate housing with embedded piezoelectric transducer array",
+    "finish": "Transmitter: brushed gunmetal with industrial mil-spec texture; Receiver: matte charcoal with grip-textured contact surface",
+    "color_scheme": "Gunmetal gray primary, with faint cyan accent lighting along the transmitter's edge; minimal branding in subdued white lettering",
+    "interface_elements": "Transmitter: single physical dial for frequency adjustment (8–40 Hz), three status LEDs (power/signal/encryption), micro-USB charge port recessed beneath rubber flap; Receiver: no interface—passive contact sensor with indicator gel on contact surface, single status LED buried under translucent resin dome",
+    "distinctive_features": [
+      "Adhesive mounting surface on transmitter designed to adhere directly to concrete, steel, or rebar",
+      "Piezoelectric contact pad on receiver shows faint iridescent sheen under oblique light",
+      "Minimal industrial aesthetic—deliberately designed to blend with construction site equipment",
+      "Faint cyan pulse emanating from edge-mounted power indicator",
+      "Magnetic mounting bracket with quick-release mechanism on transmitter base"
+    ],
+    "manufacturer_markings": "PALLADIAN CONSTRUCTION in subdued white sans-serif on transmitter face; small regulatory stamp (GLMZ-CERT-2218) on rear; no serial number visible on street-market units",
+    "condition_typical": "Transmitter shows dust and concrete particulate residue; faint scratches from mounting/remounting; receiver's contact gel slightly discolored from repeated use against various building materials"
+  },
+  "image_prompt": "Palladian Construction Structural Echo Tap components arranged on an industrial concrete workbench under harsh neon workshop lighting. Transmitter unit mounted adhesive-side-up on concrete block, its brushed steel face catching cyan rim-light; receiver pad positioned nearby with contact gel glistening. Surrounding details: steel ruler, multimeter, construction site blueprints, scattered rebar snippets. Dramatic shadows cast by overhead sodium-vapor work lights. Cyberpunk industrial aesthetic. Shallow depth of field. --ar 3:2 --v 6"
 }

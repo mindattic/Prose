@@ -44,5 +44,41 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Thermal Longsword TL-3 'Cauterizer'",
+    "Aslan Granlund-Tawiah",
+    "Cezar Watanabe-Gyasi",
+    "Inductive Thermal Lance",
+    "Nika Svensson-Kone",
+    "TESSERA TC-3 'Crucible'",
+    "Tessera Corponation",
+    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
+    "The Pure Hand"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist assault rifle with aggressive, angular lines and a distinctly utilitarian silhouette. The monolithic receiver dominates the platform, creating an almost architectural appearance—like industrial machinery weaponized. No curves or ergonomic softening; every surface serves function. The long gas piston tube runs above the barrel in a pronounced ridge. Heavy, purposeful, unmistakably built to endure.",
+    "dimensions": "965mm overall length, 127mm width at magazine well, 95mm height from rail to charging handle. 558mm barrel length with deep rifling visible at muzzle.",
+    "weight_description": "Substantial and balanced—4.1kg sits solidly in the shoulder without feeling front-heavy despite the monolithic construction. Hefty enough to command respect, distributed well for sustained fire. The oversized charging handle adds tactile weight to the control interface.",
+    "primary_material": "Monolithic steel-ceramic composite block forms the receiver—a seamless casting with no visible seams or rail bolts. The gas tube and barrel are high-carbon steel. Bolt carrier is hardened steel with visible tool marks from machine finishing.",
+    "finish": "Matte black parkerized coating with visible wear patterns revealing grey steel underneath at edges and charging handle. The composite receiver shows a subtle speckled texture—darker grey with charcoal flecks from the ceramic matrix. Intentionally anti-reflective; no polish or shine anywhere.",
+    "color_scheme": "Primary: Deep matte black with gunmetal grey undertones on the composite receiver. Accents: Bright tritium green in the iron sight posts. Steel grey on exposed machining marks.",
+    "grip_texture": "Aggressively textured rubberized pistol grip with vertical ribs for bare-handed or gloved purchase. The charging handle is knurled steel with deep grooves sized for prosthetic digits. Oversized magazine well edges provide grab points.",
+    "distinctive_features": [
+      "Monolithic receiver with zero visible fasteners or junction lines",
+      "Pronounced long-stroke gas piston tube running the length of the upper receiver",
+      "Tritium-illuminated iron sights with witness marks for field zeroing",
+      "Oversized charging handle with knurled grip and witness lines",
+      "Heavy muzzle brake with four angled ports",
+      "Rail-less design—no picatinny; pure mechanical sights only",
+      "Steel magazine with witness holes and numbered round counts",
+      "Bolt carrier shows deliberate machine tool marks—no polish",
+      "Heat vents machined into the gas tube shroud",
+      "Field-strip markings engraved along the receiver seam"
+    ],
+    "manufacturer_markings": "Crucible Industries logo—angular Φ symbol inside a hexagon—stamped on the left side of the receiver. Model designation 'FR-9 IRONMONGER' stamped in sans-serif caps below the logo. Serial number on the right receiver panel. 'GENE-FORGE MFG' stamped on the barrel near the receiver interface. Manufacturing date code etched below the charging handle.",
+    "condition_typical": "Field-worn but meticulously functional. Parkerize finish shows honest use—scuff marks on the furniture, patina on the composite where hands grip it repeatedly. No rust or corrosion; maintenance is evident despite the battle scars. Some operators customize the furniture with leather wraps or tactical tape, but the core receiver remains unmodified."
+  },
+  "image_prompt": "Professional product photography of the Crucible Industries FR-9 'Ironmonger' assault rifle. Weapon displayed on a brushed steel table at 45-degree angle, receiver facing dramatic side-light that emphasizes the monolithic steel-ceramic composite texture and machine tool marks. Three-quarter view showing the long-stroke gas piston tube, oversized charging handle, and tritium iron sights. Background: dark industrial concrete. Lighting: moody side-light casting sharp shadows, slight rim-light on the matte black parkerize finish revealing underlying metal. Gloved hand (black tactical glove) grips the rubberized pistol grip, showing scale and the deep textured grip pattern. Shallow depth of field. Cyberpunk aesthetic—cool color temperature, slightly desaturated, emphasizing utilitarian brutalism and mechanical reliability over polish. Suggest harsh functionality and frontier durability. --ar 3:2 --v 6"
 }

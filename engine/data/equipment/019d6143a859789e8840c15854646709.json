@@ -47,5 +47,25 @@
     "Othniel Babić-Asantewaa",
     "Patient Zero",
     "The Clock"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A ruggedized trauma-kit case with a medical-industrial aesthetic. Rectangular hard-shell container with rounded corners, designed for rapid field deployment. The case opens in a clamshell configuration revealing color-coded compartments and sealed pouches organized in a grid layout. Has the functional, no-nonsense appearance of emergency response equipment.",
+    "dimensions": "28cm x 18cm x 8cm (briefcase-sized, slightly larger than a standard first aid kit)",
+    "weight_description": "1.2 kg — handheld, can be carried in a tactical vest pouch or emergency pack. Light enough for one-handed grab-and-go",
+    "primary_material": "Reinforced polymer composite shell with pressure-sealed edges; interior lined with foam cutouts and biohazard-grade plastic separators",
+    "finish": "Textured matte finish for grip; UV-resistant coating. Faint radioactive trefoil and biohazard embossments visible under raking light",
+    "color_scheme": "High-visibility safety orange exterior with charcoal gray accents; interior white with color-coded pouches (green for chemical, red for biological, yellow for radiation)",
+    "interface_elements": "Dual latches with quick-release buttons; transparent sealed pouches allow contents verification without opening; laminated instruction card affixed to interior lid in multiple languages; small digital readout (battery-powered expiration date display) mounted top-left corner",
+    "distinctive_features": [
+      "Holographic 'OPEN IN EMERGENCY' warning sticker with CARRION DEFENSE WORKS logo",
+      "Integrated wrist strap with carabiner attachment point",
+      "Three distinct treatment zones visually separated by internal dividers",
+      "Compact chelation injector housed in reinforced gel-pack chamber",
+      "Vacuum-sealed disposable coveralls compressed into accordion-fold pouch",
+      "QR code linking to decontamination protocol video on interior"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS stamped in black serif font across top; Φ2400 price marking faded from repeated handling; batch number and manufacturing date on rear; small regulatory certification stamps (GLMZ-approved, CBRN-rated)",
+    "condition_typical": "Cosmetic scuffs and wear from field deployment; latches show patina; instruction card edges curled; often found with medical tape reinforcing the latch seals; occasionally taped to vehicle dashboards or worn in outer tactical vest pouches"
+  },
+  "image_prompt": "Professional product photography of a worn Carrion Defense Works PDK-3 decontamination kit lying open on a brushed steel workbench, interior compartments and sealed pouches clearly visible. Dramatic side-lighting casts sharp shadows across the orange exterior. Latex-gloved hand reaches toward the chelation injector. Gritty cyberpunk environment: concrete wall backdrop, scattered chemical burn marks on bench surface, faint holographic warning label glowing under black light. Shallow depth of field. Hyper-realistic material detail showing polymer wear and seal integrity. --ar 3:2 --v 6"
 }

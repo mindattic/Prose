@@ -42,5 +42,37 @@
     "variable_choke",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions ARC-EM12 'Scatterstorm'",
+    "Kang-Petrov Arms KPS-410 'Hallway'",
+    "Nika Svensson-Kone",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "Tessera Corponation",
+    "The Quiet Room",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Vuk Yamamoto-Darko"
+  ],
+  "physical_description": {
+    "visual_profile": "A purposeful, compact semi-automatic shotgun with a distinctly corporate aesthetic. The receiver is streamlined and geometric, with subtle angular lines suggesting precision engineering. A faintly glowing neural interface array is visible along the left side of the receiver, just above the trigger guard. The overall impression is clinical authority — a weapon designed by committee, for professionals.",
+    "dimensions": "Overall length: 102 cm | Barrel length: 51 cm | Receiver depth: 8.5 cm | Width at widest point: 6.2 cm",
+    "weight_description": "Substantial but well-balanced — 3.9 kg sits comfortably in a trained grip, with weight distributed toward the mid-receiver to offset barrel mass. Not light, but engineered to feel purposeful rather than burdensome during extended tactical engagements.",
+    "primary_material": "Aerospace-grade polymer composite with internal steel action components. The receiver is reinforced polycarbonate-nylon hybrid; barrel is cold-hammer-forged steel with chromium plating.",
+    "finish": "Matte charcoal-gray polymer with brushed-steel accents on the barrel shroud and trigger guard. The finish is deliberately non-reflective — designed to minimize light signature in low-light breaches. Micro-abrasion marks suggest intentional surface texturing for grip security.",
+    "color_scheme": "Charcoal gray as primary, with stainless steel barrel and chrome choke ring visible at the muzzle. Accent lighting: pale blue status LEDs embedded in the BCI interface plate.",
+    "grip_texture": "Textured polymer with shallow diamond-pattern knurling, wrapped with a thin layer of chemically-treated rubberized coating for moisture resistance. The grip is designed for gloved manipulation — no bare-skin ergonomics.",
+    "distinctive_features": [
+      "Neural interface array: a recessed plate of pale blue status LEDs and haptic feedback nodes mounted flush against the left receiver wall",
+      "Piezoelectric choke motor housing: visible as a raised cylindrical boss immediately forward of the muzzle, with fine cooling vents",
+      "Biometric scanner integration: subtle metallic contact pads embedded in the pistol grip, barely noticeable unless you know to look",
+      "Selector markings: engraved choke preset indicators (C, I, M, F, XF) adjacent to the neural interface, not physical controls",
+      "Magazine tube: clean-lined steel with witness holes at 2-round intervals, marked with Tessera corporate lettering",
+      "Charging handle: recessed T-shaped lever, minimalist design",
+      "Mounting rail: Picatinny rail integrated into the top flat of the receiver, seamlessly molded into the upper profile"
+    ],
+    "manufacturer_markings": "TESSERA CORPORATION stamped in all-caps serif font on the left side of the receiver, with a small Φ symbol (QUANTA currency reference, corporate asset tracking). Serial number etched on the barrel. 'TKS-SL ADJUDICATOR' engraved below the rail in smaller lettering. A biometric lock plate with the Tessera logomark is visible inside the trigger guard.",
+    "condition_typical": "Well-maintained and field-ready. Polymer shows minor scuff marks consistent with tactical handling; barrel retains its chrome shine. The neural interface LEDs pulse softly with status indicators. This is a weapon kept in regulation condition — no personalization or battle-scarring, as Tessera demands adherence to specifications."
+  },
+  "image_prompt": "Product photography of a Tessera TKS-SL 'Adjudicator' semi-automatic shotgun, angle: three-quarter left profile. The weapon rests on a matte-black carbon-fiber platform. Dramatic side-lighting from the left casts the receiver geometry in sharp relief, while rim-lighting traces the barrel and choke mechanism. The pale blue neural interface LEDs glow softly, their light reflecting subtly off the polished barrel. In-frame detail of the muzzle shows the visible piezoelectric choke motor housing with its fine cooling vents. A gloved hand (tactical polymer glove, dark gray) holds the grip with trigger finger indexed along the frame. The background is deep charcoal with soft bokeh suggesting a corporate testing facility. Atmosphere is clinical, precise, authoritative — a weapon of institutional control. Hyperrealistic materials, photographic quality, cyberpunk aesthetic. --ar 3:2 --v 6"
 }

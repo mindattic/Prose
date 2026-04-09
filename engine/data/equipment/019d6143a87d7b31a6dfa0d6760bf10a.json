@@ -46,5 +46,24 @@
   "related_entities": [
     "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
     "The Quiet Room"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek quadcopter with an insectoid aesthetic, dominated by four articulated ultrasonic emitter/receiver arrays mounted on extended arms. The central chassis is deliberately compact and aerodynamic, resembling a wasp or hornet with swept-back stabilizers. The frame suggests predatory grace rather than utilitarian function.",
+    "dimensions": "15 cm rotor-to-rotor wingspan; central body approximately 8 cm long, 5 cm wide",
+    "weight_description": "Handheld and pocketable — 250 grams; easily deployable from a wrist launcher or thrown by hand through confined spaces",
+    "primary_material": "Lightweight graphene-composite frame with titanium reinforcement struts; ultrasonic emitter heads in piezoelectric polymer",
+    "finish": "Matte charcoal with satin-polished titanium accents; deliberately non-reflective to minimize acoustic interference; micro-textured surface reduces vibration artifact",
+    "color_scheme": "Gun-metal gray primary with electric cyan accent lines tracing the ultrasonic transducer arrays; soft amber indicator LEDs nested in the central hub",
+    "interface_elements": "Minimalist design: one tactile power button (recessed, colored amber); three micro-status LEDs (mapping/armed/signal); flush-mounted optical charging port on dorsal surface; no external antenna",
+    "distinctive_features": [
+      "Four asymmetrical emitter pods with radiating fin-like cooling ribs resembling acoustic horns",
+      "Pulsing cyan LED array that illuminates during active mapping to visualize echolocation pulses",
+      "Exposed piezoelectric crystal teeth along the leading edge of each arm — deliberately visible to emphasize acoustic capability",
+      "Gyroscopic stabilizer rings visible within the transparent rotor guards",
+      "Hairline fissures etched into the frame in a circuit-board pattern — purely aesthetic but reinforces the 'mapped space' theme"
+    ],
+    "manufacturer_markings": "Vespid Dynamics corporate logo (stylized wasp silhouette) laser-etched on dorsal hull; regulatory compliance stamps in micro-font; model designation 'AMD-2' in white serif type; QUANTA pricing label (Φ8,400 Tier 2 retail) printed on packaging insert",
+    "condition_typical": "Usually seen hovering in surveillance stance, cyan LEDs pulsing in rhythmic echolocation bursts; exterior shows minor scuff marks from deployment through tight spaces; acoustic windows may exhibit residual dust that technicians regularly clean with compressed air"
+  },
+  "image_prompt": "Product photography of the Vespid Dynamics AMD-2 acoustic mapping drone, 15cm quadcopter with articulated ultrasonic emitter arrays, hovering above a darkened concrete workbench. Matte charcoal graphene frame with cyan accent lighting tracing the transducer pods. Dramatic blue-amber spotlight from above casts sharp shadows; bioluminescent cyan pulses emanate from the central hub simulating active echolocation mapping. Background is a soft-focus warehouse interior suggesting GLMZ industrial setting. Shallow depth of field isolates the drone. Cyberpunk aesthetic with emphasis on surveillance technology elegance. Intricate piezoelectric details visible. Cinematic atmospheric haze. --ar 3:2 --v 6"
 }

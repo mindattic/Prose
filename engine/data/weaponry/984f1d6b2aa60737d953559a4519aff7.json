@@ -43,5 +43,34 @@
     "customizable",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "SynapTech GripTrue Palmar Adhesion Implant",
+    "The Nearfield"
+  ],
+  "physical_description": {
+    "visual_profile": "A full-sized competition pistol with aggressive, utilitarian geometry. The six-inch bull barrel dominates the profile, creating a front-heavy silhouette that reads as purposeful and uncompromising. Flat-sided frame with sharp angles, minimal ergonomic softness — this is precision engineered for function over comfort. The dust cover extends visibly forward, housing the customizable tungsten weight system.",
+    "dimensions": "Overall length: 22.5cm | Barrel length: 15.2cm | Slide height: 13cm | Width at frame: 3.8cm",
+    "weight_description": "Substantial and intentional. At 1.22kg, it's noticeably heavier than service pistols, with a forward bias from the bull barrel and tungsten inserts. Feels planted in the hand — recoil management through mass rather than springs. Adjustable balance means weight distribution shifts subtly depending on owner configuration.",
+    "primary_material": "Stainless steel slide and barrel | Hardened polymer frame (carbon-reinforced) | Tungsten inserts in grip and dust cover | Machined aluminum controls",
+    "finish": "Brushed stainless steel slide with micro-roughened texture to reduce glint. Frame in matte charcoal polymer with subtle grip texture. Barrel shows the characteristic tool marks of precision boring — minor longitudinal striations visible under close inspection. No chrome or glossy surfaces.",
+    "color_scheme": "Primary: brushed steel-gray with gunmetal undertones | Accents: flat black polymer frame | Trigger and safety lever: polished aluminum silver",
+    "grip_texture": "Aggressive cross-hatching on polymer grip panels — sharp, almost aggressive texture designed for secure purchase even with wet or gloved hands. Feels deliberately rough, not user-friendly. The tungsten insert access points are knurled aluminum, cold to the touch.",
+    "distinctive_features": [
+      "Six-inch bull barrel with visible precision rifling and slight muzzle crown bevel",
+      "Modular tungsten weight inserts visible in dust cover — three distinct ports showing metallic insert edges",
+      "Adjustable rear sight with fine-grain elevation and windage turrets (marked in 1/4 MOA increments)",
+      "Extended slide stop lever (aluminum, polished)",
+      "Magazine well slightly beveled for competition speed-loading",
+      "Accessory rail under dust cover (Picatinny MIL-STD-1913)",
+      "Dual recoil spring guide system visible through disassembly points",
+      "Serial number engraved on frame in sans-serif block numerals"
+    ],
+    "manufacturer_markings": "VOLKOV-SAITO PRECISION stamped vertically on left slide in clean sans-serif | VS-10 MATCH engraved below that | Caliber marking: 10MM AUTO on right slide | Small Cyrillic-Latin hybrid logomark (merged V-S) on dust cover in 8mm",
+    "condition_typical": "Competition models arrive pristine with protective cosmoline. Field-used Deadlocks show accelerated wear on grip panels from adjustments and tungsten port edges. Slide scratches from holster friction common. Muzzle crown typically unmarred (protected by owner pride). Dust cover inserts may show oxidation if not properly maintained."
+  },
+  "image_prompt": "Product photography of a Volkov-Saito VS-10 Match 'Deadlock' precision pistol on a dark matte gunmetal surface, angled 45 degrees to showcase the six-inch bull barrel and modular tungsten weight system in the dust cover. Gloved hand (tactical glove, subtle augmentation interface visible on wrist) gripping the pistol firmly, showing aggressive grip texture and control. Dramatic side-lighting from upper left casts deep shadows across the slide, emphasizing the brushed stainless steel finish and micro-roughened texture. Cool color temperature, slight blue-cyan rim light catching the barrel crown. Sharp focus on trigger guard and adjustable rear sight details. Cyberpunk aesthetic: minimalist background, faint holographic overlay grid barely visible on surface. Professional competition weapon photography style, cinematic clarity, 2226 GLMZ industrial setting implied through lighting. --ar 3:2 --v 6"
 }

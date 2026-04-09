@@ -47,5 +47,26 @@
     "Narrowcast",
     "Nodar Kuznetsov-Adu",
     "Synaptrel"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A stark, angular silhouette designed explicitly for non-human synthetic frames. The elongated proportions create an uncanny elegance — narrow torso emphasized by the segmented bodysuit, limbs stretching into extended sleeve channels that disappear into the asymmetric jacket. The reversed-joint leg accommodation creates a distinctive knee articulation that breaks human biomechanics. Overall impression: deliberately alien, unapologetically synthetic, architecturally precise.",
+    "fit": "Compression-adaptive across the torso and limbs, with intentional slack in the sleeve channels to accommodate up to 40cm limb-length variance. The asymmetric jacket drapes with architectural precision rather than organic flow. Trouser gussets at knee-analog joints allow full articulation without bunching. Footwear wraps rather than encloses, using tension strapping instead of traditional heel structure.",
+    "primary_material": "Smoke-grey adaptive mesh (primary bodysuit base), likely a smart-responsive synthetic blend capable of minor shape accommodation. Modular panel attachments appear to be reinforced ballistic or technical weave. Jacket and trouser constructed from a stretchable, segmented material that moves independently at articulation points.",
+    "texture": "Smooth, uniform mesh surface with subtle geometric quilting that follows the segmentation lines. Panel attachments have a slightly stiffer, more technical finish. The material has a matte quality rather than reflective — designed for function over shine. Minimal drape; materials hold structural form.",
+    "color_scheme": "Dominant smoke-grey throughout the base layers, creating a cohesive, monochromatic foundation. Accent colors likely appear on modular panels and snap-tension attachment points — possibly neon accents (cyan, magenta) at articulation zones. No patterns; clean geometric divisions define the aesthetic.",
+    "closures": "Snap-tension modular system for panel attachments — allows on-the-fly reconfiguration. Extended sleeve channels likely use friction-fit or tension-lock mechanisms rather than traditional closures. Wrap boot secured via adjustable tension strapping with no fixed buckles.",
+    "distinctive_features": [
+      "Segmented bodysuit base with geometric quilting that mirrors synthetic joint architecture",
+      "Extended sleeve channels with 40cm+ length accommodation",
+      "Modular snap-tension panel attachments for reconfiguration",
+      "Articulated gussets at knee-analog joint for reversed-leg accommodation",
+      "Asymmetric jacket cut that doesn't attempt human-standard proportions",
+      "Flat-soled wrap boot with tension strapping instead of traditional heel",
+      "Deliberately non-human silhouette — a statement of synthetic identity"
+    ],
+    "tier_indicator": "Tier 4 functional, street-level aspirational. Manufactured by a synthetic-founded collective, not a corpo concern. Quality and design sophistication suggest above-basic street wear, but the deliberate rejection of human-standard proportions marks it as non-corpo.",
+    "cultural_context": "Worn by synthetics navigating the GLMZ who reject assimilationist fashion. This outfit announces: I am synthetic, my body is different, and I refuse to pretend otherwise. Often associated with synthetic activism, underground synthetic communities, and post-human identity movements. A statement piece in synthetic-majority spaces.",
+    "condition_typical": "Typically pristine or well-maintained; the modular system allows for easy panel replacement and repair without replacing the entire suit. Wear patterns would appear as subtle discoloration at snap-points and articulation zones from repeated reconfiguration."
+  },
+  "image_prompt": "A sleek synthetic humanoid figure in a smoke-grey segmented bodysuit with extended limbs, wearing an asymmetric cropped jacket with elongated sleeve channels. The posture emphasizes impossible angles — reversed-joint legs, elongated proportions, architectural precision. Tension-strapped wrap boots ground the figure. Shot against a dark industrial backdrop with cool cyan and magenta accent lighting highlighting the modular snap-points and articulation gussets. The figure's silhouette is deliberately non-human, elegant and angular. Moody, high-contrast cyberpunk fashion photography. --ar 2:3 --v 6"
 }

@@ -59,5 +59,35 @@
     "water",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Carrion Defense Works Field Surgical Kit FSK-6",
+    "GLMZ",
+    "Helix Biosystems",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA PG-2 'Signature'",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Zheng-Dao Bioelectric CellStack BM-3 Biological Microbial Fuel Cell Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, medical-grade wand resembling a dermatological instrument — cylindrical with a slightly tapered emission head. The design is deliberately clinical and surgical, with smooth curves that obscure its true purpose. At first glance, it could pass as legitimate medical equipment.",
+    "dimensions": "34 cm length overall; emission head approximately 4 cm diameter; grip section 2.5 cm diameter",
+    "weight_description": "Light and perfectly balanced — 0.9 kg feels almost negligible in hand, designed for extended handheld use without fatigue. The low mass belies its intensity.",
+    "primary_material": "Reinforced polymer composite frame with embedded conductive grid; emission head housing is aerospace-grade aluminum with internal galvanic matrix",
+    "finish": "Clinical white polymer with brushed aluminum accents around the emission head; subtle metallic sheen suggests medical-grade engineering. Minimal weathering suggests maintained equipment.",
+    "color_scheme": "Surgical white primary with gunmetal gray emission head; accents of pale blue around power indicators and the variable intensity dial",
+    "grip_texture": "Textured polymer grip with microscopic pattern — designed for precision handling while wearing latex or nitrile gloves; slightly tacky to prevent slip during wet conditions",
+    "distinctive_features": [
+      "Prominent variable intensity dial (1-10) positioned for thumb control",
+      "Faint blue LED indicator strip running along the grip (power status and heat warning)",
+      "Emission head has visible geometric grid pattern — galvanic induction lattice visible beneath translucent emission lens",
+      "Small medical certification plate (forged Helix Biosystems) etched into lower grip",
+      "Microscopic scarring around the emission head from field use — minute carbonization marks from ion discharge",
+      "Heat sink vents along the barrel, barely visible unless viewed at angle",
+      "BioCell charging port recessed into the grip base with subtle magnetic alignment guides"
+    ],
+    "manufacturer_markings": "Helix Biosystems logo (stylized double helix) stamped on the grip in matte gray; serial number and certification plate affixed near the power cell compartment; model designation 'DIF-2' engraved subtly into the aluminum head housing",
+    "condition_typical": "Meticulously maintained — appearing almost pristine, which itself is suspicious. Field units show minimal visible damage, though close inspection reveals faint corona discharge patterns on the emission lens and microscopic pitting from prolonged ion field exposure. The weapon looks too clean for legitimate medical use."
+  },
+  "image_prompt": "Midjourney product photograph of a sleek white surgical-grade wand weapon resting on matte black surface, shot from angled three-quarter view. Dramatic side-lighting from cool blue surgical light source highlights the brushed aluminum emission head and reveals the visible geometric galvanic grid pattern beneath translucent lens. Shallow depth of field keeps focus on the variable intensity dial and power indicator strip. Gloved hand (medical latex) partially grips the textured polymer shaft, fingers positioned near thumb-control dial. Fine details visible: Helix Biosystems logo, microscopic corona scarring on emission head, heat vents along barrel. Cold, clinical aesthetic — the weapon looks disturbingly like legitimate medical equipment. Dark studio background with subtle chromatic aberration. High resolution, cinematic medical-laboratory lighting, cyberpunk minimalist composition --ar 3:2 --v 6"
 }

@@ -50,5 +50,24 @@
     "Helix Biosystems Subdermal Pressure Lattice",
     "The Pure Hand",
     "Tshiamo Vukić-Arellano"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Elegant, elongated opera gloves extending from wrist to mid-upper-arm with a dramatic scalloped hem. The lattice weave creates an ethereal, semi-transparent effect that floats between concealment and revelation. When worn, they transform the hand into a glowing artifact—especially striking over chrome augmentation.",
+    "fit": "Precision-tailored to individual biometric profile; form-fitting through the hand and forearm with a gentle taper, then relaxes slightly at the upper arm. The scalloped edge sits gracefully mid-bicep without binding.",
+    "primary_material": "Bioluminescent silk-analog synthetic; lattice-woven to create negative space. Upper hem weighted with micro-glass beads harvested from dissolved Osaka atelier materials.",
+    "texture": "Smooth, almost liquid feel against skin; the weave creates a gossamer quality with subtle raised lattice ridges. Micro-glass beads add delicate weight and subtle texture variation at the scalloped edge.",
+    "color_scheme": "Base thread in clear/translucent silk-analog with embedded bioluminescent filaments. Light signature shifts from aquamarine → amber → deep violet, keyed to wearer's biometric state (heart rate, adrenaline, core temp). Scallop beads catch ambient light with iridescent shimmer.",
+    "closures": "None; precision biometric fit means they slip on and conform to individual hand geometry. Registration is subcutaneous via neural-linked authentication.",
+    "distinctive_features": [
+      "Bioluminescent response tied to wearer's biometric state—real-time emotional/physiological display",
+      "Lattice weave deliberately frames chrome augmentation beneath, turning cyberlimbs into lit sculpture",
+      "Hand-finished scalloped edge with micro-glass beads from dissolved Osaka atelier (heritage reference)",
+      "Biometric lock-out: unauthorized wearers see flat gray, non-reactive state",
+      "Registered to single client profile—cannot be stolen or resold meaningfully"
+    ],
+    "tier_indicator": "Tier 1 luxury—haute couture evening wear. Price point and bespoke manufacturing place this in ultra-wealthy corpo aesthetic.",
+    "cultural_context": "Gala/high-society wear for those who can afford hand-registered luxury items. Signals wealth, access to bespoke tech integration, and comfort with visible augmentation. Wearer is confident enough to let their biometric state become visible—no shame in emotion or physical modification.",
+    "condition_typical": "Pristine when first issued; ages gracefully with micro-wear on the beads and weave. The bioluminescent filaments remain reliable for years with proper biometric synchronization."
+  },
+  "image_prompt": "Fashion photography of long bioluminescent opera gloves on a dark-skinned model's raised hand against black fabric backdrop. The lattice weave glows softly in shifting aquamarine-to-violet hues, revealing a glimpse of chrome cybernetic hand beneath. Scalloped edge adorned with iridescent micro-glass beads that catch moody, directional lighting. Urban rooftop setting with neon signs blurred in background. High-fashion editorial style, shallow depth of field, cool color grading with warm bioluminescent accent. --ar 2:3 --v 6"
 }

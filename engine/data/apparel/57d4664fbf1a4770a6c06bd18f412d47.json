@@ -41,5 +41,26 @@
     "The Shelf",
     "VitaCore LinguaSync Real-Time Translation Implant",
     "Zoë Mbekele-Thorvaldsdóttir"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A knee-length dress coat with the weathered dignity of multiple owners. Silhouette is slightly loose through the torso, structured at the shoulders. The charcoal-rust patina catches light unevenly, creating depth that suggests age rather than intentional design. Lapels are pressed with a practiced hand; the coat reads as formal despite its humble origins.",
+    "fit": "Relaxed through the body with defined shoulders. Not tailored, but worn into shape by its predecessors. Sleeves end at the wrist with a slight drape. The coat hangs with the particular ease of a garment that has learned to forgive its wearers.",
+    "primary_material": "Wool-blend base layer, heavily worn. Lining is replacement poly-satin in a noticeably different sheen—cream or pale gray, visibly mismatched when lapels fold back.",
+    "texture": "Napped wool, soft but thin at the elbows and shoulder seams from friction and use. The pile has directional wear patterns. Lapels have a slight crisping from repeated hand-pressing. Buttons vary in texture—some plastic, some horn, some salvaged metal.",
+    "color_scheme": "Base charcoal-gray with rust-oxide undertones that shift depending on angle and light source. The mismatched lining adds unexpected cream or pale yellow accents when revealed.",
+    "closures": "Buttons—five down the front, none matching. All present, all functional. No magnetic systems, no smart closures.",
+    "distinctive_features": [
+      "Visibly hand-pressed lapels with subtle wrinkles from a pipe-iron method",
+      "Mismatched replacement lining visible at seams and lapel rolls",
+      "Nearly invisible mending at right shoulder seam—careful, thread-matched repair",
+      "Uneven sheen at elbows from legitimate wear, not distressing",
+      "Five non-matching buttons in varying materials",
+      "Absence of any augment ports or tech integration",
+      "Faint stains at hem and cuffs that speak to street-level living"
+    ],
+    "tier_indicator": "Tier 3-4 functional. Signals not poverty but precarity—the wearer has chosen to invest their limited Quanta in dignity rather than chrome. On the Shelf, this is luxury.",
+    "cultural_context": "Worn by people for whom formal wear is a borrowed tool. Custody hearings, job interviews, funerals, community ceremonies. Represents the act of insisting on being taken seriously despite structural neglect. Often communally shared within Shelf networks—this specific coat may have been worn by three neighbors in the last year.",
+    "condition_typical": "Broken-in and carefully maintained. Patched where necessary with invisible stitching. Never pristine, never abandoned. Shows the specific wear patterns of someone who launders by hand and hangs carefully to dry."
+  },
+  "image_prompt": "Cyberpunk fashion photograph: a weathered knee-length coat displayed on a dark mannequin or worn by a gaunt figure under industrial sodium lighting. The charcoal-rust fabric catches uneven light, revealing careful hand-pressed lapels and the subtle sheen of mismatched cream lining. Close detail of worn elbows and barely-visible shoulder seam repair. Urban backdrop: a Shelf residential tower, cracked concrete, or dimly-lit laundromat. Moody, high-contrast lighting that emphasizes the coat's texture and history. The overall mood is dignified poverty—something worn to insist on being seen. Cinematic, gritty, documentary-like quality. --ar 2:3 --v 6"
 }

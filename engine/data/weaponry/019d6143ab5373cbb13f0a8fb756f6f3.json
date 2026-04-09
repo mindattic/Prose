@@ -41,5 +41,29 @@
     "tier 3",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "MindBridge SpectraLens Chromatic Expansion Module"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, ovoid grenade with a distinctly technical aesthetic. The casing appears segmented into distinct functional zones—a primary detonation chamber at the center with visible port arrays around the circumference. The overall impression is that of controlled chaos: purposefully designed to assault every sensory vector simultaneously. The shape suggests deliberate engineering rather than military tradition.",
+    "dimensions": "Height: 8.5 cm, Width: 5.8 cm, Depth: 5.8 cm. Compact enough to grip in a closed fist, yet visually dense with integrated subsystems.",
+    "weight_description": "Balanced and reassuringly substantial at 350 grams—heavy enough to feel engineered and reliable, light enough for accurate throwing. The weight distribution favors the center, making it feel controlled in hand despite its payload complexity.",
+    "primary_material": "Titanium-reinforced polymer composite shell with embedded micro-perforations for synchronized payload dispersal. Internal structure incorporates ablative ceramic chambers for chemical containment and EM shielding integrity.",
+    "finish": "Matte gunmetal gray with a slight industrial texture. The surface shows deliberate micro-pitting from precision manufacturing, not wear. Subtly reflective under direct light, suggesting anodized treatment.",
+    "color_scheme": "Gunmetal gray primary with accent rings of deep violet (neural disruption indicator) and acid-yellow warning striping around the access cap and fuse assembly.",
+    "grip_texture": "Textured polymer coating with fine cross-hatching. Slightly tacky feel—designed for both bare skin and gloved grip. Small indent patterns suggest ergonomic research for consistent throw mechanics.",
+    "distinctive_features": [
+      "Eight symmetrically-arranged micro-vent ports along the equator, each roughly 3mm diameter, designed for synchronized payload dispersal",
+      "Violet LED indicator ring beneath the surface at the equator—indicates armed status and countdown visibility through the translucent accent band",
+      "Fuse cap assembly recessed into the top pole, with mechanical safety pin threaded through a raised grip loop",
+      "Subtle etched grid pattern across the entire surface—aesthetic nod to 'Tessera' (tessellation/tiles) branding",
+      "Serial plate on the side with manufacturer code 'ONRI-SOG3-[####]', stamped in sans-serif font",
+      "Bottom access cap with hex-socket recess for field technician reload access",
+      "Barely-visible micro-vents along the bottom hemisphere, concealed unless examined closely"
+    ],
+    "manufacturer_markings": "Osei Neural Research Institute logo (a stylized neural pathway symbol) embossed subtly on the upper hemisphere. 'TESSERA INDUSTRIES' in small caps along one side. 'SOG-3 FLASHBANG PLUS' on the opposite side in smaller font. A tiny Φ symbol and a number indicating the batch/lot stamped on the access cap.",
+    "condition_typical": "Factory-fresh units appear pristine and clinical. Field-deployed grenades show minimal wear—the tough polymer resists cosmetic damage, though repeated handling creates subtle scuff marks. Combat-used specimens may show minor discoloration from detonation residue on the vent ports, faint burn marks around the fuse cap, or slight deformation if deployed under extreme conditions. Properly maintained grenades retain a clean, deliberate appearance throughout their service life."
+  },
+  "image_prompt": "Product photography of a Tessera Industries SOG-3 Flashbang Plus grenade, professional military hardware catalog style. Ovoid matte gunmetal casing with violet accent ring and yellow warning striping. Show the symmetrical vent ports and fuse cap assembly clearly. Positioned on a dark carbon-fiber surface beside a gloved tactical hand wearing reinforced polymer gloves, fingers barely touching the safety pin loop. Dramatic side-lighting from the left creating sharp shadows that emphasize the micro-perforations and segmented design. Cool blue-violet accent lighting on the device itself to highlight the neural-disruption indicator band. High contrast against neutral background. Shallow depth of field. Ultra-detailed macro elements showing the grid etching and manufacturer stamps. Cyberpunk industrial aesthetic with clinical precision. Sci-fi military hardware photography. Professional studio lighting. --ar 3:2 --v 6"
 }

@@ -54,5 +54,47 @@
     "drone",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Cryogenic Projector CP-4 'Frostbite'",
+    "Cezar Watanabe-Gyasi",
+    "Charnel Propulsion",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Crucible TR-7 'Triage'",
+    "Djeneba Park-Traore",
+    "GLMZ",
+    "Hearthstone Firearms Trail-357 'Pathfinder'",
+    "Ihaia Nystrom-Keita",
+    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
+    "Nenad Vargas-Baffour",
+    "Nurlan Holmberg-Dembele",
+    "Street Custom 'Glass Garden' Caltrops",
+    "The Filament",
+    "VitaCore BloomFilter Olfactory Modulation Implant",
+    "Yannick Tambadou-Reinholt"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist, angular weapon with an oversized hexagonal bore that dominates its silhouette. The body reads as purposefully alien — more laboratory apparatus than conventional firearm. Wide and compact through the chamber section, it tapers slightly toward a distinctive frosted-glass reservoir tank that occupies roughly a third of the weapon's length. The overall impression is something between a cryo-engineering tool and a weaponized cryogenic dispenser.",
+    "dimensions": "82 cm overall length, 58 cm barrel. Bore diameter approximately 4.2 cm (hexagonal profile). Reservoir tank: 22 cm tall, 8 cm diameter. Width at widest point (chamber): 11 cm.",
+    "weight_description": "Noticeably hefty at 6.8 kg fully loaded — balanced toward the rear due to the pressurized cryo-cell architecture. The weight is distributed in a way that feels frontally anchored rather than barrel-heavy; operators report it as manageable but demanding in sustained-fire scenarios.",
+    "primary_material": "Aerospace-grade titanium-alloy chassis with reinforced steel internal pressure chambers. The hexagonal barrel is hard-anodized steel with laser-etched rifling grooves. Cryo-reservoir is borosilicate glass rated for extreme thermal stress.",
+    "finish": "Matte gunmetal gray with brushed titanium accents around the chamber breech. The borosilicate reservoir is deliberately left frosted and translucent, revealing the faint blue glow of active cryogenic charge within. Barrel bore shows light oxidation and micro-scratching from sustained use.",
+    "color_scheme": "Primary: industrial gray and gunmetal. Accents: brushed silver titanium, deep cyan/blue (cryogenic indicator glow). Control surfaces: matte black polymer inlays.",
+    "grip_texture": "Textured, grip-tape-wrapped composite handle with shallow vertical grooves for finger placement. The material is cold to the touch even at rest — deliberately designed to handle thermal stress. Slightly tacky from residual condensation in humid conditions.",
+    "distinctive_features": [
+      "Hexagonal muzzle bore — six-sided geometry visible down the barrel",
+      "Frosted borosilicate reservoir tank with internal cyan/blue cryo-luminescence when charged",
+      "Visible pressure-relief valve assembly on top of chamber with safety interlock indicator",
+      "Micro-condensation weeping along the barrel's lower edge in humid conditions",
+      "Eight segmented cooling fins running along the chamber exterior for thermal dissipation",
+      "Recessed LED status cluster (red/amber/blue) above the grip indicating charge level and thermal stability",
+      "Calibration engraving marks along the barrel's 6 o'clock position",
+      "Minimal iron sights — optics-ready Picatinny rail on upper receiver"
+    ],
+    "manufacturer_markings": "Iron Point Ammunition logo (circular crosshair motif) stamped on the left side of the chamber in raised serif letters. Serial number (CDSC-4-[8 alphanumeric digits]) laser-etched on the barrel, faded and worn. Original manufacturer marking 'ARCTURUS DEFENSE SOLUTIONS' visible as a ghost-stamp on the rear of the receiver — partially obscured, suggesting intentional removal/refurbishment.",
+    "condition_typical": "Field-worn but rigorously maintained by underground operators. Light surface corrosion on the barrel, condensation staining around the reservoir base, small dents and micro-gouges consistent with tactical deployment. The frosted glass reservoir shows residual frost buildup and minor thermal stress fractures that don't compromise function. Overall impression: functional black-market hardware, well-cared-for but unafraid of use."
+  },
+  "image_prompt": "Cryogenic Dendrite Scatter Cannon CDSC-4 'Frostbite' lying on a dark matte-black industrial surface, angled 45 degrees toward viewer. Dramatic side-lighting from cool blue-white LED gels illuminating the frosted borosilicate reservoir tank, which glows faint cyan from internal cryo-luminescence. The hexagonal bore catches hard directional light, emphasizing its geometric perfection. Fine wisps of condensation trail around the barrel and chamber in dramatic volumetric lighting. Operator's gloved hand (tactical polymer weave) gripping the textured composite handle in the background, out of focus. Background: deep matte gray cyberpunk workshop setting with subtle neon accent lines. High-contrast lighting to emphasize metallic gunmetal finish, cooling fins, and the weapon's brutalist industrial aesthetic. Gritty, worn texture visible on surfaces. 35mm equivalent focal length, shallow depth of field. --ar 3:2 --v 6"
 }

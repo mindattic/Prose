@@ -41,5 +41,42 @@
     "heavy",
     "enforcement"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions PanicFront PF-2 'Dread'",
+    "Arcturus Exo-Runner Frame",
+    "Brighton Arc",
+    "Fanta Kato-Adomako",
+    "Hauler",
+    "Ira Volkov",
+    "MERIDIAN",
+    "Narrowcast",
+    "Plot 17",
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
+    "The Burden Clause",
+    "The Nearfield",
+    "The Shelf"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist two-handed maul dominated by an oversized striking head — industrial and deliberately intimidating. The form suggests a construction tool weaponized: thick, purposeful, engineered for maximum impact transfer. The grip tapers downward from the heavy head, creating an unbalanced-looking but calculated silhouette.",
+    "dimensions": "140 cm total length; striking head approximately 18 cm wide × 12 cm deep; grip section 35 cm long with 5 cm diameter at thickest point",
+    "weight_description": "Hefty and unforgiving — 7.2 kg requires confident two-handed control. The weight is front-loaded toward the striking head, creating momentum-driven swing dynamics rather than a balanced feel. Noticeably fatigue-inducing for untrained operators.",
+    "primary_material": "Tungsten-carbide composite head mounted on a reinforced steel core shaft; insulated polymer grip with embedded capacitor housing",
+    "finish": "Matte gunmetal gray on the striking head with visible surface machining marks and cooling vents. The shaft is brushed steel with carbon-black anodizing. The grip is textured matte polymer with anti-slip micro-ribs.",
+    "color_scheme": "Dominant gunmetal gray and industrial black; accent colors include status indicator LEDs (blue for charged, red for depleted, amber for mid-charge) set into the grip near the power cell interface",
+    "grip_texture": "Two-section insulated polymer with aggressive crosshatch texture for grip purchase; the lower section incorporates raised finger guards and a pronounced pommel. Slightly tacky, designed for sweaty or gloved hands.",
+    "distinctive_features": [
+      "Recessed charge-state display window on the grip showing capacitor bank fill level via LED gradient",
+      "Heat vents arranged in geometric patterns across the striking head face — functional and deliberately menacing",
+      "Proprietary ADS ProCell-8 power cell housing with quick-release magnetic coupling at the grip base",
+      "Voltage adjustment dial (200kV / 500kV / 800kV) recessed into the grip to prevent accidental changes",
+      "Three-point capacitor bank visible through semi-transparent polymer sections on the upper grip",
+      "Reinforced strike edge with reinforced tungsten-carbide bevel",
+      "Manufacturing alignment marks and stress-test certifications laser-etched into the lower shaft"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (stylized ⚡ shield) stamped prominently on the upper grip; 'HMR-9 COLOSSUS' engraved in all caps along the shaft; serial number and batch code on the power cell housing; municipal licensing approval marks (varies by jurisdiction) on the lower grip",
+    "condition_typical": "Field units show moderate wear — scuffed strike head with impact discoloration, micro-fractures in the grip polymer from repeated drops, faint burn marks around the heat vents from electrical discharge. Well-maintained enforcement units retain sharper edges and cleaner lettering; heavily deployed versions show abraded texture and replacement grip sections."
+  },
+  "image_prompt": "Arcturus HMR-9 'Colossus' shock maul displayed on a dark matte gunmetal surface, photographed from a 3/4 overhead angle. The two-handed grip occupies the lower frame with textured matte polymer clearly visible; the oversized tungsten-carbide striking head dominates the upper section with visible heat vents and geometric machining marks. Blue LED charge indicators glow softly in the grip housing. Dramatic side-lighting from the upper left casts harsh shadows across the impact head, emphasizing its brutal geometry. The background is deep charcoal concrete. Professional product photography with industrial cyberpunk aesthetic, showing both the weapon's engineered precision and its intimidating scale. --ar 3:2 --v 6"
 }

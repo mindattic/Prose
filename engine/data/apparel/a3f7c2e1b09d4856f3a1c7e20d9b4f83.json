@@ -53,5 +53,29 @@
     "Sorin Ekwensi-Balasanyan",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A layered survival silhouette that reads as practical, worn, and purposefully assembled from scrap. The figure appears armored by necessity rather than design—each piece adding bulk and texture in different directions. The overall impression is of someone who has survived industrial zones and made their kit from what they could salvage and repair. The aesthetic is deliberately unglamorous: honest wear patterns, visible stitching, and mismatched repairs create a texture-heavy visual.",
+    "fit": "Oversized and loose through the torso for layering flexibility; the military jacket sits cropped at the ribs, allowing cargo pants with a straight leg to hang comfortably. Sleeves are slightly long, cuffed and frayed. The scarf wraps high and loose around the neck and shoulders, functional as hood. Boots fit snug at the ankle. Overall: built for movement and protection, not silhouette.",
+    "primary_material": "Faded cotton-blend thermal base; heavy canvas work shirt; military-grade synthetic-cotton blend jacket; 100% ripstop nylon knee panel; treated leather boots with synthetic sealant overlay; salvaged synthrubber insulation patch; self-repair fabric tape; faux-fur collar lining; cotton-linen wrapped scarf",
+    "texture": "Heavily textured and tactile: frayed cuffs, rough self-stitched seams, quilted tape repair lines, acid-scarred fabric, cracked and re-sealed leather, rough pop-riveted steel reinforcement, worn synthrubber that's slightly sticky, the contrasting nap of faux-fur, and the stiffness of industrial ripstop. Surfaces are worn smooth in high-friction areas; edges are deliberately rough.",
+    "color_scheme": "Rust-orange thermal base visible at wrists; faded olive canvas; industrial gray military jacket with silver and black repair tape stripes; dark charcoal cargo pants with a block of black ripstop at the knee; yellowed sealant streaks on leather boots; dirty ivory scarf; matte gray non-functional neural port cover as pendant. No bright colors; an overall palette of exhaustion and rust.",
+    "closures": "Wire loops replacing two buttons on canvas shirt; friction-fit layering; standard cargo pants belt loops; zip pouch on thigh; contact adhesive and pop rivets securing boot reinforcement; scarf wraps and knots casually",
+    "distinctive_features": [
+      "Frayed re-stitched cuffs in mismatched gray thread",
+      "Acid-burn scarred military jacket patched with silver and black self-repair tape",
+      "Synthrubber pipe-wrap insulation shoulder patch, asymmetrical",
+      "Faux-fur lined collar in visible faux-fur",
+      "Ripstop knee panel in different fabric, stiff and clearly grafted",
+      "Zip pouch sewn directly to left thigh cargo pocket",
+      "Four functional cargo pockets plus thigh pouch",
+      "Leather boots with yellowed waterproof sealant, cracked",
+      "Steel toe plate held by contact adhesive and visible pop rivets",
+      "Non-functional salvaged neural port cover worn as pendant/talisman"
+    ],
+    "tier_indicator": "Tier 5 (sub-grade/ungoverned). Every piece signals resource scarcity and self-sufficiency. This is survival wear assembled from industrial surplus and Shelf market finds, not commercial retail.",
+    "cultural_context": "Sootwall district survivor, industrial zone worker, or someone who has lived through environmental hazard and material scarcity. The gear speaks to someone who repairs their own kit, salvages components, and has learned to make one piece do the work of three. The pendant non-functional neural port suggests past contact with chrome culture but current lack of access—kept as reminder or talisman. No corporate affiliation; anti-corpo by default.",
+    "condition_typical": "Perpetually broken-in and patched. This outfit is *meant* to look weathered and actively used. Pristine condition would be a lie. Wear patterns deepen with use; repairs accumulate. Sealant yellows further. Threads come loose and get re-tied. This is gear that ages visibly and honestly."
+  },
+  "image_prompt": "Full-body fashion photograph of a Tier 5 cyberpunk survivor wearing a layered street rig: rust-orange thermal base layer, patched olive canvas shirt, cropped acid-scarred military jacket with silver repair tape stripes and synthrubber shoulder patch, dark charcoal cargo pants with black ripstop knee panel, cracked leather boots with steel toe reinforcement, dirty ivory wrap-scarf, and a non-functional neural port cover hanging as pendant. Model stands in sharp three-quarter pose against a dark concrete industrial wall with rust stains and water damage. Moody blue-amber neon glow from upper left, casting long shadows. Fabric textures and repair details sharp and visible. Gritty, honest, unglamorous. Worn by necessity, not choice. Sootwall district Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6"
 }

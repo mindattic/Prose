@@ -252,5 +252,13 @@
     "posture_movement": "Deliberate and economical. Moves with the careful precision of someone navigating fragile archival spaces; avoids sudden gestures. Walks at moderate pace, head slightly forward in attentive posture. When sitting at work, she becomes nearly motionless — all activity concentrates in her hands and eyes.",
     "clothing_style": "Tier 2/3 academic-practical: high-quality but worn linen and wool layers, earth tones (slate, rust, cream, charcoal). Favors structured blazers and reinforced work trousers with adequate pockets. Worn leather satchel (pre-Collapse era, genuine leather, carefully maintained) carries tablets and handwritten notes. Shoes are functional, broken-in, excellent condition. Minimal jewelry except for a thin silver band on her right ring finger (no wedding ring visible). No visible corporate branding; clothes pre-date fast fashion cycles."
   },
-  "image_prompt": "A 54-year-old Arab-Portuguese-Mongolian woman with silver-white densely braided hair and deep brown skin, standing in a data vault surrounded by server towers and archival LED lights, wearing a structured charcoal linen blazer and reading glasses on her forehead; faint bioluminescent blue-green traceries barely visible along her jawline and collarbones; warm, focused expression; optical implant glowing faintly amber in left eye in dim server room lighting; holding a damaged storage device in careful hands; shot in cool fluorescent-and-blue ambient light with deep shadows, professional archive photography style, --ar 2:3 --v 6"
+  "image_prompt": "A 54-year-old Arab-Portuguese-Mongolian woman with silver-white densely braided hair and deep brown skin, standing in a data vault surrounded by server towers and archival LED lights, wearing a structured charcoal linen blazer and reading glasses on her forehead; faint bioluminescent blue-green traceries barely visible along her jawline and collarbones; warm, focused expression; optical implant glowing faintly amber in left eye in dim server room lighting; holding a damaged storage device in careful hands; shot in cool fluorescent-and-blue ambient light with deep shadows, professional archive photography style, --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "Northern European": 41.8,
+    "Sub-Saharan African": 29.9,
+    "Eastern European": 11.7,
+    "Hispanic/Latin American": 8.3,
+    "South Asian": 6.2,
+    "Middle Eastern": 2.1
+  }
 }

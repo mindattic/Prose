@@ -47,5 +47,26 @@
     "Dzemal Acholonu-Patagiri",
     "Sorin Ekwensi-Balasanyan",
     "Stelceram-7"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Full tactical body armor kit projecting corporate military authority—sleek, modular, built for function over aesthetics. Silhouette is broad-shouldered and geometric, with clean lines broken only by articulated joint guards and utility pouches. The figure appears engineered rather than dressed.",
+    "fit": "Compression-tight undersuit beneath articulated plating; structured and rigid where reinforced, allowing controlled mobility at joints. Chest plate sits flush against torso, thigh pouches seal against legs without bulk. Designed to accommodate subcutaneous and neural augmentations without gaps.",
+    "primary_material": "Ceramic-composite shell plating, graphene-weave undersuit base, gunmetal-grey reinforced polymer at joints, chrome-alloy arm channels, composite-toe boots with specialized sole technology",
+    "texture": "Matte finish on helmet and chest plates (non-reflective, tactical); slight grip texture on arm and leg guards; smooth synthetic weave visible at undersuit seams; metallic sheen along chrome sleeve channels",
+    "color_scheme": "Dominant matte black throughout, gunmetal grey accents at elbows and knees, chrome metallic highlights along arm channels, charcoal undersuit with high-vis orange UV-reactive piping (concealed under normal light)",
+    "closures": "Magnetic snap-seals on thigh pouches, friction-fit armor segments locking into place at shoulders and waist, helmet neural-port clasp system, boot lace-alternative tension straps",
+    "distinctive_features": [
+      "Integrated AR-overlay visor with neural-port passthrough on helmet",
+      "Chrome arm channels running full sleeve length for tech integration or neural pathways",
+      "Velcro-swappable unit insignia patches (corpo branding)",
+      "Spinal rig cutouts for backplate augmentation compatibility",
+      "Anti-magnetic-mine sole technology on boots",
+      "Hidden high-vis orange seam piping visible only under UV light",
+      "Modular thigh pouch system with mag-seals"
+    ],
+    "tier_indicator": "Tier 1 corporate security—high-end military-grade equipment, expensive material composition, cutting-edge integration tech. Only accessible to corpo loyalists or elite mercs on contract.",
+    "cultural_context": "Wearer is corporate security apparatus, mercenary, or sanctioned enforcer. Uniform signals obedience, expendability within hierarchy, neural-integration readiness. The swappable patches emphasize contractual loyalty over personal identity.",
+    "condition_typical": "Pristine when issued; quickly shows wear through scuff marks on plating, dust accumulation in crevices, possible micro-fractures in ceramic composite from impact. Field units rarely look showroom-fresh past first deployment."
+  },
+  "image_prompt": "Sleek cyberpunk CorpSec soldier in matte-black ceramic-composite tactical armor, standing rigid in three-quarter view against neon-lit industrial warehouse backdrop. Matte-black helmet with AR visor glowing faint blue, chrome arm channels catching overhead fluorescent light, gunmetal grey joint armor sharp and geometric. Undersuit visible at neck and wrists, high-contrast black and charcoal. Velcro insignia patches glow faintly corporate-branded. Anti-glare, tactical lighting from above left. Dark concrete floor, distant cyberpunk cityscape haze. Shot from waist-up, stoic professional posture. Hyperrealistic materials, moody cool-toned color grade. --ar 2:3 --v 6"
 }

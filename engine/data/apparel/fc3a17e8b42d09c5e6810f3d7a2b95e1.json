@@ -52,5 +52,26 @@
     "SynapTech IrisBloom Ocular Color Modulator",
     "TESSERA PG-2 'Signature'",
     "The Ghost Ronin"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A high-fashion sculptural headpiece that transforms medical neural interface hardware into a luxe aesthetic statement. The fascinator creates an asymmetric, organic crest rising from the left temple, framing and elevating exposed BCI port technology into deliberately visible ornamentation. The effect is simultaneously avant-garde, vulnerable, and unapologetically augmented—turning biological modification into couture.",
+    "fit": "Low-profile chromium headband that sits snugly against the skull without obscuring the wearer's face. The mounting bracket is precision-engineered to accommodate both four-port and six-port cranial BCI configurations. Custom-fitted to individual neural port geometry; worn slightly back on the head to allow the crest to rise naturally from temple to crown area.",
+    "primary_material": "Hand-formed biosync resin petals (primary visual element); precision-machined chromium headband (infrastructure); embedded microfilament threading (functional accent)",
+    "texture": "Petals are translucent and smooth with a subtle depth suggesting liquid-glass quality. Warm amber tone with faint internal luminescence. Microfilaments create fine linear tracery visible beneath resin surface. Headband is cool, polished chrome with micro-etched artisan signature.",
+    "color_scheme": "Warm translucent amber petals with internal bioluminescent glow (warm white-gold). Matte to high-polish chromium headband in silver-gray. Microfilaments in contrasting platinum or faint copper depending on individual neural signature.",
+    "closures": "Friction-fit mounting system integrated into chromium band; magnetic micro-locks at BCI port interface points. No traditional closures; secured by precision engineering and neural-port coupling.",
+    "distinctive_features": [
+      "Asymmetric petal arrangement rising from left temple only",
+      "Biosync resin petals synchronized to wearer's real-time neural activity via passive BCI tap",
+      "Pulsing microfilaments that sync to brainwave patterns",
+      "Precision-engineered mounting accommodates multiple standard port configurations",
+      "Hand-signed by individual Solenne artisan inside headband",
+      "Translucent material deliberately showcases the BCI port hardware beneath",
+      "Bioluminescent properties require no external power (bioelectric harvesting from neural interface)"
+    ],
+    "tier_indicator": "Tier 1-2 luxury. Solenne Atelier is a bespoke haute couture house; custom fabrication, artisan signatures, and medical-grade biosync materials position this as premium corpo/elite augmentation wear.",
+    "cultural_context": "Worn by augmented elite who view neural modification not as necessity but as aesthetic and social identity. Signals wealth, access to cutting-edge biotech, confidence in visible augmentation, and participation in post-human luxury fashion. Appeals to individuals who embrace rather than hide their enhancements—corpo executives, high-tier neural specialists, wealthy early adopters, and status-conscious augmentation enthusiasts.",
+    "condition_typical": "Pristine. Bespoke pieces are maintained in museum-quality condition. Petals remain luminous and transparent; chromium polished. Microfilaments glow reliably. Any wear would be regarded as damage and subject to warranty service or artisan restoration."
+  },
+  "image_prompt": "High-fashion cyberpunk headwear on a elegant model with visible cranial BCI ports, shot in profile. Translucent amber resin petals rise asymmetrically from left temple, softly glowing with warm bioluminescence. Fine platinum microfilaments pulse gently beneath the petals' surface. Polished chromium headband sits sleek and low. Dark studio backdrop with moody blue-and-amber volumetric lighting that emphasizes the petal glow. Shallow depth of field. Close-up detail showing the artisan's signature etched inside the band. Luxury medical-fashion aesthetic. Editorial beauty lighting. --ar 2:3 --v 6"
 }

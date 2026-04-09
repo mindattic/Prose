@@ -42,5 +42,35 @@
     "adaptive",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Free Assembly",
+    "Nika Svensson-Kone",
+    "Synaptrel",
+    "Tessera Adaptive Platform TAP-5 'Chameleon'",
+    "Tessera Corponation",
+    "The Compact"
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian semi-automatic pistol with a distinctly modular architecture. The design emphasizes geometric simplicity and tool-less reconfigurability — clean lines, accessible quick-change ports, and minimal ornamentation. The fire control unit forms the visual anchor, with frame and barrel modules clicking into place around it. Appears deliberately engineered rather than organic.",
+    "dimensions": "Compact frame: 16.5cm L × 3.2cm W × 11cm H | Full-size frame: 19.2cm L × 3.4cm W × 12.7cm H | Subcompact frame: 14cm L × 3.1cm W × 9.5cm H | Barrel lengths: 8cm standard, 10cm extended, 7.5cm threaded",
+    "weight_description": "Balanced and responsive. Compact frame feels light in hand (520g), full-size has substantial but manageable heft (820g). The serialized fire control unit is the dense core; frame/barrel assemblies are relatively light, making swaps feel intuitive rather than burdensome.",
+    "primary_material": "Serialized fire control unit: hardened steel with precision CNC tolerances. Frame modules: aerospace-grade polymer composite with steel reinforcement inserts at wear points. Barrels: chrome-moly steel with hard-anodized finish.",
+    "finish": "Satin black anodize on steel surfaces with matte charcoal on polymer. Intentionally non-reflective to minimize visual signature. Barrel threads show brushed steel where anodize thins from handling.",
+    "color_scheme": "Matte black primary with charcoal-gray polymer accents. Serialized fire control group marked with discrete Φ TESSERA numbering in laser-etched silver. Minimal accent lighting — optional tritium sight posts in pale green.",
+    "grip_texture": "Textured polymer grip with shallow diamond pattern for secure purchase without bulk. Ergonomic but deliberately utilitarian — no luxury finish. Thumb rest areas show slightly raised retention ridges.",
+    "distinctive_features": [
+      "Exposed quick-change barrel catch — bright-anodized silver lever beneath slide",
+      "Modular frame interface: visible alignment rails and locking lugs with micro-tolerances",
+      "Serialized fire control unit stamped with unique TESSERA ID and Φ conversion cost (Tier 2+ pricing)",
+      "Magazine well designed for tool-free configuration swaps",
+      "Ambidextrous mag release buttons with subtle textural difference for touch-identification",
+      "Accessory rail on dust cover (standard and full-size frames only)",
+      "Slide top milled flat for optic mounting (full-size frame standard)",
+      "Wear pattern markers: faint ghost-outline indicating where barrels seat, suggesting frequent reconfiguration"
+    ],
+    "manufacturer_markings": "TESSERA CORPORATION laser-etched along slide in angular sans-serif typeface. Fire control unit serial number stamped on frame interior — registration requirement. Small Φ symbol centered on slide rear. QR matrix code on frame rail beneath trigger guard linking to TESSERA modular parts database.",
+    "condition_typical": "Well-maintained. Light wear around quick-change interfaces from regular barrel swaps. Minimal corrosion due to anodize quality. Sight pictures often show minor dust in crevices from field assembly/disassembly. Operators typically keep all three frame configurations in rotation — each shows subtle individual wear patterns reflecting mission history."
+  },
+  "image_prompt": "Product photograph of a modular semi-automatic pistol system showing all three frame sizes arranged in configuration hierarchy: subcompact, compact, full-size, with quick-change barrels displayed separately (standard, threaded, extended). Weapon components rest on a dark brushed steel surface under dramatic side-lighting emphasizing the geometric precision of the quick-change interfaces. Close detail of the serialized fire control unit and the bright-anodized quick-change lever catch. Matte black finish reflects light minimally; anodize gradations visible on barrel threads. Professional armory aesthetic, cyberpunk military-industrial styling, 2226 Great Lakes Metropolitan Zone aesthetic. Shallow depth of field isolating fire control unit in sharpest focus. --ar 3:2 --v 6"
 }

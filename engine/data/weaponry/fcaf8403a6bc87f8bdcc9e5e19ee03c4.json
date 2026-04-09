@@ -39,5 +39,31 @@
     "everyday_carry",
     "affordable"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Crucible ER-5 'First Response'",
+    "GLMZ",
+    "Mika Sorel",
+    "Street Custom 'Ghostwriter' Grafitti Flamethrower"
+  ],
+  "physical_description": {
+    "visual_profile": "A compact, utilitarian aerosol canister with a distinctly consumer-grade aesthetic—roughly the size of a lighter but slightly bulkier. The form factor is deliberately non-threatening, designed for ease of carry and quick deployment from a pocket or bag. The overall silhouette is cylindrical with subtle ergonomic curves at the grip zone.",
+    "dimensions": "9 cm height × 3 cm diameter. Compact enough to fit in a closed fist with the nozzle exposed.",
+    "weight_description": "Light and well-balanced—48 grams feels almost negligible in the hand, lending a deceptive sense of casualness despite its serious function. Users rarely notice it in a pocket or bag.",
+    "primary_material": "High-impact polymer body with a pressure-rated aluminum alloy canister core. The polymer is formulated for durability against drops and friction wear from constant carrying.",
+    "finish": "Matte finish with a slight texture to prevent slipping. The polymer shows a soft sheen under light rather than a glossy reflection. Aluminum core is brushed to reduce glare.",
+    "color_scheme": "Flat safety-orange polymer body with black ribbed grip zone and white trim around the flip-top safety mechanism. The nozzle cone is gunmetal gray. SentryGuard branding appears in bold sans-serif white lettering across the upper canister.",
+    "grip_texture": "Pronounced vertical ribs molded into the lower two-thirds of the canister. The texture is aggressive enough to ensure grip security even with sweaty or gloved hands, but not so sharp as to be uncomfortable during extended carry.",
+    "distinctive_features": [
+      "Flip-top safety cap in contrasting white plastic—tactile click when engaged/disengaged",
+      "Conical spray nozzle with slight serrated texture for grip",
+      "Pressure-relief valve visible as a recessed hex fitting on the canister base",
+      "Wear-resistant rubber bumper ring at the bottom edge",
+      "Transparent pressure indicator window (small circular lens) showing approximate remaining spray capacity",
+      "Faint UV-reactive coating visible under certain light—the dye component creates a barely perceptible opalescent sheen on the canister surface itself"
+    ],
+    "manufacturer_markings": "SentryGuard Consumer Defense logo—a stylized shield with a checkmark—stamped in white at the midpoint. Serial number and batch code printed in micro-font along the bottom rim. Manufacturing date and expiration date in white digits on the base. 'PS-1 STING' designation in small letters beneath the logo.",
+    "condition_typical": "Well-maintained and frequently carried. Light scuff marks on the polymer from pocket carry. The safety cap may show minor stress marks from repeated use. Older examples often have worn lettering and a dulled finish from months of handling. Even 'clean' specimens show the patina of daily carry—slightly faded orange, small dings on the bumper ring, microscopic scratches on the pressure window."
+  },
+  "image_prompt": "Close-up product photograph of a SentryGuard PS-1 pepper spray canister shot against a dark urban surface (worn concrete or brushed steel). The canister is held at a slight angle in a gloved cyberpunk-style tactical hand—chrome-knuckle gloves, synthetic polymer palm. Dramatic side-lighting casting sharp shadows, with cool blue-tinted fill light from above. The safety cap is in the flipped-open position, nozzle cone catching light. The transparent pressure indicator window glows faintly from internal lighting. Background is dark with bokeh lights suggesting GLMZ nighttime urban environment—neon signage slightly out of focus. The orange polymer body pops against the dark tones. Cinematic, product-catalog style with shallow depth of field. Cyberpunk aesthetic, worn-future aesthetic, corporate consumer tech feel. --ar 3:2 --v 6"
 }

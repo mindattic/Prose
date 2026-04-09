@@ -42,5 +42,38 @@
     "assassination",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Alper Castillo-Ababio",
+    "Arcturus PX-1 'Phantom'",
+    "CHROMEWORKS Phantom Stealth Ocular Recorder",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "GLMZ",
+    "Nika Svensson-Kone",
+    "TESSERA PG-2 'Signature'",
+    "Tessera Corponation",
+    "Vantablack-CNX"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular precision rifle with an exceptionally long suppressor assembly that dominates its silhouette. The weapon has a predatory, minimalist aesthetic—all hard lines and purposeful geometry. The integral suppressor creates the impression of a weapon designed to vanish acoustically before it vanishes visually.",
+    "dimensions": "Overall length: 118 cm | Barrel length: 61 cm (including 14-baffle suppressor) | Width at widest point: 8 cm | Height with low-profile optics mount: 12 cm",
+    "weight_description": "Balanced and controllable at 5.4 kg—heavy enough to absorb recoil smoothly, light enough for sustained precision work. The weight is distributed forward, giving it a purposeful heft rather than unwieldy bulk.",
+    "primary_material": "Aerospace-grade carbon composite with steel reinforcement at stress points. The thermal masking sleeve is a proprietary phase-change polymer composite.",
+    "finish": "Deep matte black with a barely-perceptible diamond-plate texture that resists reflection. The suppressor has a micro-brushed steel accents around baffle ports. Thermal sleeve shows a subtle iridescent oil-film patina from operational heating.",
+    "color_scheme": "Primary: Stealth matte black | Accents: brushed gunmetal gray on baffle ring, faint copper-tone heat discoloration on sleeve near muzzle",
+    "grip_texture": "Ergonomic polymer grip with aggressive crosshatch texturing, slightly tacky to resist slipping in gloved hands. The magazine well has raised ribbing for positive tactile feedback during reloads in low-light conditions.",
+    "distinctive_features": [
+      "14-baffle integral suppressor with visible serrated rings at baffle junctures",
+      "Thermal masking sleeve with microscopic heat-dispersal vanes running length of barrel",
+      "Quantum-dot serialization plate recessed into left receiver—faintly luminescent under certain angles",
+      "Minimal iron sights (co-witness height) with tritium inserts",
+      "Fluted receiver walls to reduce weight while maintaining structural integrity",
+      "Caseless ammunition magazine with transparent polymer sides showing round count",
+      "Integrated cable management channels routed along top rail for BCI optics tethering",
+      "Slight wear marks on stock shoulder—evidence of repeated deployment"
+    ],
+    "manufacturer_markings": "TESSERA logo (angular Φ-derived geometric form) machined into upper receiver, left side. Quantum-dot identifier sits in recessed steel plate on left rail. Serial number acid-etched in faded numerals on lower receiver—deliberately worn-looking, possibly already 'cleaned' by a street armorist.",
+    "condition_typical": "Field-ready with light operational wear. The thermal sleeve shows faint heat stress marks. The suppressor baffles have minor carbon fouling visible in ports. Grip shows signs of gloved handling. Overall: meticulously maintained but used, never safe-queen pristine."
+  },
+  "image_prompt": "Product photograph of the Tessera Phantom Mark IV 'Ghost Writer' sniper rifle resting on a dark matte-black composite surface, positioned at 45-degree angle to emphasize the extended integral suppressor assembly. Dramatic side-lighting from the left reveals the baffle ring geometry and thermal sleeve vane texture. The rifle's black finish absorbs light while carefully positioned key light catches the brushed steel accents around the muzzle brake and highlights the quantum-dot serialization plate. The caseless ammunition magazine sits nearby, its transparent polymer sides glowing faintly. Background: deep charcoal gradient typical of GLMZ arcology lighting. Cyberpunk aesthetic: cold, precise, sterile. Shot composition emphasizes the weapon's predatory minimalism and its role as a tool for deniable operations. 3/4 view reveals the rail system and heat-dissipation design. --ar 3:2 --v 6"
 }

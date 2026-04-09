@@ -46,5 +46,26 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Tessera Nexus Town Car",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A crisp, utilitarian ensemble designed for high-heat kitchen environments. The silhouette is clean and functional — the double-breasted chef's coat creates a structured, authoritative front, while the wide-leg trousers provide a deliberate loose fit that reads as both practical and subtly professional. The overall impression is of competent uniformity: deliberately neutral, meant to fade into the background of a working kitchen.",
+    "fit": "Relaxed and spacious throughout. The coat is cut for layering and movement; sleeves are rolled-ready with reinforced cuffs. Trousers are wide-leg with a high waist, designed to sit clear of heat sources and allow unrestricted motion. The apron hangs straight from the shoulders without cinching the torso.",
+    "primary_material": "Heat-resistant synthetic-cotton blend (rated 280°C continuous exposure). Apron is a heavier grease-resistant canvas weave with hydrophobic coating.",
+    "texture": "Smooth, slightly stiff when new with a subtle textile sheen from the synthetic fibers. Canvas apron has a visible weave texture and matte finish. Both materials develop soft patina with repeated washing and kitchen exposure.",
+    "color_scheme": "Stark white as primary, with black piping along the collar and cuffs. Apron is natural canvas with darker staining patterns (oil, char, food residue) that develop over time. No decorative pattern — branding space left intentionally blank for restaurant customization via embroidery or heat-transfer.",
+    "closures": "Double-breasted button front on the coat (traditional white buttons, often replaced after heavy use). Apron fastens with neck loop and waist ties in black cotton twill. Trousers feature a standard fly with button closure.",
+    "distinctive_features": [
+      "Rear yoke panel with opening for tail clearance — geneware accommodation",
+      "Low-sitting collar designed to avoid friction with neck augmentation hardware",
+      "Reinforced cuffs rated for repeated hot-water washing",
+      "Grease-resistant canvas apron with deep front pocket for tools and towels",
+      "Wide-leg trouser cut to prevent heat trapping near open flame or induction surfaces",
+      "Toque and close-fit net cap options included — both with augmentation-specific sizing",
+      "Blank front chest area reserved for restaurant branding patches"
+    ],
+    "tier_indicator": "Tier 2-3 functional. This is the standard-issue uniform, accessible to entry-level kitchen staff and mid-career food service workers. Higher tiers wear the Sable & Fork Maison line with additional tailoring and premium materials.",
+    "cultural_context": "This uniform signals stable, blue-collar employment in GLMZ's essential food service sector. Worn by the invisible workers who feed the metropolitan zone — rare sight to Tier 1 residents, but ubiquitous in working-class neighborhoods. The condition of the set (crisp and new vs. soft and stained) is a quiet autobiography of employment tenure and kitchen assignment.",
+    "condition_typical": "Varies dramatically by wearer. New uniforms arrive pristine and stiff. After weeks of service, the white dulls slightly, black piping softens, and the apron develops organic staining patterns — char marks, oil shadows, coffee rings — that are nearly impossible to completely remove. Long-term wearers' uniforms become soft, slightly faded, with visible rewashing wear at collar and cuffs. Most Sable & Fork sets are replaced annually, though kitchen veterans often request their old sets be retired rather than reassigned."
+  },
+  "image_prompt": "Fashion photography of a Sable & Fork food service uniform set displayed on a dark mannequin or worn by a cyberpunk-styled figure with subtle augmentations visible at neck and hands. The double-breasted white chef's coat is crisp with black piping at collar and cuffs; wide-leg work trousers hang clean and functional; a grease-resistant canvas apron drapes from the shoulders. Moody industrial kitchen lighting casts sharp shadows across the white fabric, emphasizing texture and practical design. Background is a blurred GLMZ urban kitchen or service corridor — stainless steel, warm overhead lights, wet concrete. The uniform reads as both anonymous and essential, clean but clearly designed for work. Slight visible wear or aging preferred to show authenticity. Shot against dark tones to make the white coat the focal point. --ar 2:3 --v 6"
 }

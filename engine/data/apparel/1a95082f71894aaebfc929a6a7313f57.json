@@ -39,5 +39,24 @@
     "Saodat Mirzoyan-Fubara",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Quiet Room"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sharp, authoritative silhouette — tailored formal suit jacket and trousers with an understated luxury edge. The defining feature is the polished chrome display panels flanking the upper lapels, catching light like corporate insignia. Projects controlled ambition and institutional allegiance.",
+    "fit": "Precision tailored; fitted through the chest and waist with structured shoulders. Cut to accommodate augmented physiology without constraint. Clean lines, no excess fabric. The kind of fit that signals expensive tailoring.",
+    "primary_material": "Deep navy or charcoal wool-analog synthetic with a tight, high-quality weave. Matte in daylight, subtly lustrous under interior lighting. Durable, wrinkle-resistant, designed for climates without seasonal variation.",
+    "texture": "Smooth, densely woven fabric with a refined hand. The chrome panels are mirror-polished and cool to the touch. Collar features subtle BCI-module integration barely visible to the naked eye — a small circular dimple where the connectivity sits.",
+    "color_scheme": "Deep navy or charcoal as primary. The chrome panels provide high-contrast metallic accents along the lapels. Interior lining typically corporate gray or navy. Minimal additional color — buttons are matte gunmetal.",
+    "closures": "Single-breasted button front with two or three matte gunmetal buttons. Magnetic closure option available on inner panels for augment access. Trousers feature standard zip and magnetic waistband closure.",
+    "distinctive_features": [
+      "Polished chrome display panels on upper lapels — thought-responsive via BCI module",
+      "Can toggle between corporation logo, tier-certification emblem, or mirror chrome states",
+      "Augment-compatible shoulder and side seaming with discrete access points",
+      "Nearly invisible BCI receiver at collar — indicates high-end augmentation integration",
+      "Minimal branding — only subtle Stratum weave code visible in interior seam"
+    ],
+    "tier_indicator": "Tier 1-2 luxury presentation masking Tier 3-4 corporate identity. The suit itself costs significantly more than standard corporate wear, but availability is restricted to company employees.",
+    "cultural_context": "Worn at corporate partnership events, tier-ascension ceremonies, inter-corporate diplomatic functions, and high-stakes corporate representation. The chrome panels are a deliberate signal of Stratum affiliation — a flag. Mid-level executives sometimes remove or cover panels at personal events to avoid constant institutional visibility.",
+    "condition_typical": "Pristine and meticulously maintained. Dry-cleaned regularly, chrome panels polished to mirror finish. The kind of garment that shows wear only after years of heavy rotation. When newer, shows almost no wrinkles."
+  },
+  "image_prompt": "A Tier 1 corporate executive in a tailored deep navy formal suit, standing in profile against a sleek interior corporate backdrop with floor-to-ceiling windows showing the GLMZ skyline at dusk. The chrome display panels along the lapels catch cool blue-white LED lighting, mirroring faintly. High-end fashion photography, sharp focus on the polished chrome insets and the jacket's refined tailoring. Subtle BCI interface at the collar. The suit is immaculate, the posture commanding. Corporate boardroom ambiance, moody professional lighting, subtle augmentation visible at the neck and shoulder seams. Cyberpunk executive wear. --ar 2:3 --v 6"
 }

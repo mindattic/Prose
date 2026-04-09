@@ -62,5 +62,34 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "GLMZ",
+    "Ouroboros PG-2 'Blackout'",
+    "Réginald Asomaning-Čabarkapa",
+    "Solveig Tambadou-Kereselidze",
+    "Tessera Corponation",
+    "The Resonance Communion"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, clinical sidearm with an almost surgical aesthetic — compact and precise rather than aggressive. The weapon has an asymmetrical profile dominated by a bulbous, translucent emitter head that dominates the muzzle end, giving it an unnerving resemblance to an oversized eye itself. The emitter chamber is the visual anchor of the design, a faintly luminescent polycarbonate dome that suggests fragility despite being hardened polymer. The grip tapers smoothly into the body, engineered for precision rather than raw control.",
+    "dimensions": "24 cm length overall, 18 cm barrel-to-emitter-tip, 6 cm grip width. The emitter head occupies 8 cm of forward length and 5 cm in diameter at its widest point.",
+    "weight_description": "Deceptively light — 1.4 kg feels almost insubstantial in the hand, like holding medical instrumentation rather than a weapon. The weight distribution is front-heavy due to the emitter assembly, creating an odd balance that requires conscious adjustment.",
+    "primary_material": "Aerospace-grade polymer chassis with reinforced polycarbonate emitter dome. Internal field-projection array uses precision-cut ceramic matrices and micro-etched copper conductors.",
+    "finish": "Satin white and clinical grey, with a faint nacreous sheen across the emitter housing that shifts subtly under light. The grip section is matte charcoal with micro-texturing. No weathering in stock condition — this is a tool meant to look pristine and trustworthy.",
+    "color_scheme": "Predominantly off-white and clinical grey with translucent amber accents visible within the emitter dome where field-generation matrices are visible. Accent trim in brushed nickel at control points.",
+    "grip_texture": "Textured polymer with shallow vertical ribbing — designed for precision two-finger control rather than full-handed grip. Slightly tacky to prevent slippage, almost medical-glove smooth.",
+    "distinctive_features": [
+      "Translucent polycarbonate emitter dome revealing glowing field-matrix arrays within",
+      "Adjustable power dial on left side marked with power increments and a red 'HIGH' threshold warning zone",
+      "Micro-LED status indicator strip running along the top — cycles through green (charged), amber (active), red (safety engaged)",
+      "Fine cross-hair etching on the emitter dome surface for targeting reference",
+      "Subtle Tessera Corporation medical-division marking (stylized 'T' with ophthalmology symbol) engraved on grip",
+      "Dielectric field-bleed indicator — faint aurora-like shimmer visible around emitter in low light when powered",
+      "Recessed charging port on rear grip styled like medical equipment connectors"
+    ],
+    "manufacturer_markings": "Tessera Corporation's stylized 'T' logo with embedded ophthalmology rod symbol engraved discreetly on the grip. Serial number plate mounted on the left side in small, clinical typeface. The subsidiary production designation is stamped internally only.",
+    "condition_typical": "Field-used units show minimal visual wear — scuffed grip texturing, faint scratches on the emitter dome from careful handling, micro-wear on the power dial from repeated adjustments. Battle-worn examples develop stress fractures around the emitter base and discoloration in the polycarbonate from repeated field-cycling. Well-maintained examples retain full translucency; neglected weapons develop a milky, stress-marked emitter."
+  },
+  "image_prompt": "Product photography of the DVHA-2 'Snowglobe' dielectric agitator weapon on a dark slate surface, angled to emphasize the translucent emitter dome glowing with faint amber field matrices visible inside. A gloved hand (grey tactical glove) grips the weapon from the right, fingers positioned for precision trigger control. Dramatic side-lighting from the upper left casts the emitter dome in sharp relief, causing internal refractions and a subtle aurora-like shimmer. The clinical white and grey finish reflects coolly; brushed nickel accents catch highlights. The power dial on the left side is visible and marked with red warning zone. Background is deep charcoal with subtle tech-noir bokeh. Cyberpunk medical-device aesthetic, clinical precision, slightly unsettling beauty. High contrast, sharp focus on emitter and control surfaces. --ar 3:2 --v 6"
 }

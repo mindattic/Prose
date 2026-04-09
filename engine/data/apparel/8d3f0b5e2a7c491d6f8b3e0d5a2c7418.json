@@ -42,5 +42,25 @@
     "MERIDIAN",
     "SynapTech ReadRoom Social Cue Enhancer",
     "The Bazaar"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian work boot with a distinctly widened last designed for prosthetic foot integration. Heavy, purposeful silhouette that sits flat and stable. No aesthetic flourish—pure industrial form following function. The boot reads as infrastructure rather than fashion.",
+    "fit": "Wide, roomy last accommodating prosthetic feet and cybernetic ankles. Structured around chrome foot geometry rather than biological anatomy. The fit is deliberately generous to allow mounting hardware and articulation systems without compression.",
+    "primary_material": "Scuffed treated leather upper (tan or dark brown) with visible grain marks from industrial tanning. Reinforced stitching throughout. Steel shank embedded in sole structure visible at heel.",
+    "texture": "Rough, work-worn leather with tool marks and creasing. Sole is thick vulcanized rubber with aggressive tread pattern. Metal eyelets and heel plate catch light. Overall tactile impression is heavy and durable.",
+    "color_scheme": "Muted earth tones—tan, chocolate brown, or weathered grey. Chrome hardware (heel plate, eyelets, shank reinforcement) provides metallic accents. No branding beyond small stamped model codes on the tongue and heel.",
+    "closures": "Traditional lace-up with metal eyelets and secondary locking mechanism—speed-lace option with friction-fit toggle at midfoot for quick adjustments with gloved or augmented hands.",
+    "distinctive_features": [
+      "Prosthetic model code sizing (not human shoe sizes) marked on tongue and insole",
+      "Recessed mounting points on sole for modular foot attachment systems",
+      "Reinforced heel counter with steel plate for prosthetic socket stability",
+      "Rocker-geometry sole designed for servo-motor gait compensation",
+      "Drain holes near toe box for water management in augmented feet",
+      "Serial number embossed on leather for supply chain tracking"
+    ],
+    "tier_indicator": "Tier 3—functional working class. Produced at industrial scale, affordable, ubiquitous in labor zones. No luxury markers, no customization tax.",
+    "cultural_context": "The boot of augmented laborers, warehouse workers, maintenance crews, anyone with chrome limbs who needs dependable footwear. Signals honest work and visible augmentation acceptance. Wearing this means your prosthetics are open-source or standardized, not bespoke corpo hardware.",
+    "condition_typical": "Weathered and broken-in. Scuffs, mud stains, oil marks. Laces replaced multiple times. Insole may show compression. Sole edges worn darker from repetitive contact. Still structurally sound—these boots are meant to outlast the feet they hold."
+  },
+  "image_prompt": "Wide-angle product shot of a Meridian Standard Chrome-Last Boot displayed on a dark metal prosthetic foot model, positioned on weathered concrete. Industrial warehouse lighting casts sharp shadows. Close-up detail inset showing the recessed mounting points and embossed model code on leather. Gritty GLMZ color palette: rust, concrete grey, chrome highlights. Foreground slightly blurred with oil stains and tool marks. Moody, utilitarian aesthetic with zero lifestyle photography polish. --ar 2:3 --v 6"
 }

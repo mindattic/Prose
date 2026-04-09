@@ -44,5 +44,28 @@
     "Ambrosia Fekete-Waiyaki",
     "Immaculée Dalgaard-Nwosu",
     "Pyroelectric Sebum Volatilization Projector"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A high-visibility emergency response uniform commanding immediate recognition. The wearer appears as a mobile trauma station—the signal-orange jacket creates a striking silhouette against urban backgrounds, while the black cargo base grounds the look with tactical authority. The dual-shoulder harness and rear pack add functional bulk that reads as capability rather than clutter.",
+    "fit": "Relaxed through the torso to accommodate layered undergarments and equipment access; tapered cargo legs with reinforced knee zones. The harness is adjustable and distributes weight across shoulders and hips. Helmet sits secure with integrated chin strap. Overall cut prioritizes mobility and rapid gear deployment over fashion.",
+    "primary_material": "Signal-orange ballistic nylon jacket with sealed synthetic interior; reinforced black cargo weave trousers; hard-shell polycarbonate helmet; nitrile gloves; waterproof composite boots with steel toe reinforcement",
+    "texture": "Jacket exterior is smooth ballistic weave with retro-reflective raised ridging on chest panels; cargo fabric is slightly textured for grip; helmet is hard-glazed polymer; boots feature rugged tread and weld-seam details",
+    "color_scheme": "Primary signal-orange (jacket, helmet, gloves) with black reinforcement zones and cargo trousers. Retro-reflective silver-white striping across chest and shoulders. Matte black hardware and boot accents.",
+    "closures": "Jacket: heavy-duty friction-fit magnetic snaps with backup velcro flaps. Cargo trousers: friction-lock quick-release tabs at both knees; standard lace closure at waist. Helmet: integrated chin strap with emergency-quick magnetic release. Boots: corrosion-resistant steel laces with elasticated loop-back.",
+    "distinctive_features": [
+      "Retro-reflective chest panels built into jacket exterior for 360° visibility",
+      "Integrated BCI vitals relay and radio receiver in helmet crown",
+      "Polycarbonate flip-down visor with anti-glare coating",
+      "Dual-shoulder harness with quick-access side panels",
+      "Rear pack with modular cassette slots for defibrillator units",
+      "Sealed interior pockets (waterproof zippers) in jacket",
+      "Quick-release knee tabs for rapid trouser removal in contamination scenarios",
+      "Ironpass Tactical Medical logo embossed on shoulder patches",
+      "Color-coded pocket labels (red for trauma, blue for airway, yellow for splint)"
+    ],
+    "tier_indicator": "Tier 2–3 institutional/municipal. High-quality Ironpass manufacturing signals mid-tier corpo contracts or well-funded emergency services. Not luxury, but clearly superior to salvage-class gear.",
+    "cultural_context": "Worn by paramedics, emergency response teams, hospital rapid-deployment units, and disaster-zone medical personnel across the GLMZ. The uniform signals immediate authority and medical competence—wearing this outside of active duty is legally restricted in most municipal codes. It reads as 'trained professional' and 'trust me with your life.'",
+    "condition_typical": "Broken-in with visible wear patterns—scuffed helmet visor, faded orange on forearms from repeated glove friction, minor staining on cargo legs (cleaned but residual). Equipment pouches show compression marks. Retro-reflective panels remain bright, but jacket fabric may show weathering from repeated decontamination cycles."
+  },
+  "image_prompt": "A paramedic in full Ironpass MedCore Emergency Rig stands in a rain-slicked GLMZ industrial district, neon med-clinic signs reflecting off wet pavement. Signal-orange jacket catches harsh overhead work lights; retro-reflective chest panels glow white-silver. Black cargo trousers and steel-toe boots positioned in ready stance. Dual-shoulder harness fully laden with trauma cassettes visible through transparent rear pack. Hard-shell helmet with flip-down visor raised, BCI relay light indicator subtle blue glow at crown. Heavy-duty orange nitrile gloves at rest. Moody cyan and orange ambience, shallow depth of field on torso detail. Rain droplets on jacket surface and helmet visor. Dark urban medical facility backdrop, cinematic lighting, photorealistic. --ar 2:3 --v 6"
 }

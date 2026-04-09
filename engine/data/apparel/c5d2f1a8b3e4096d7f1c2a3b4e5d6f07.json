@@ -50,5 +50,27 @@
     "Tessera Nexus Town Car",
     "Tshiamo Vukić-Arellano",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A stark, utilitarian full-body coverall with an integrated hood that frames the face. The silhouette is straight-cut and minimal — no curves, no excess. When worn, it reads as clinical and protective, not fashionable. The glacial white creates an almost sterile appearance, broken only by soft grey piping that traces seams and reinforcement lines.",
+    "fit": "Trim and purposeful, cut to eliminate excess fabric that could shed particles. Not tailored or body-conforming — instead, it hangs with enough room for layered undergarments and augmentation wear beneath. The forearm channels in Augmented Cut variants allow chrome limbs to interface without bulk.",
+    "primary_material": "Antistatic microfilament spunbond composite — lightweight, breathable enough for extended wear, and engineered to minimize particulate release. The conductive grid woven at 5mm intervals is invisible at distance but visible up close as a faint cross-hatching pattern.",
+    "texture": "Smooth and slightly matte to the eye, with a faint static-resistant sheen. Up close, the microfilament has a delicate, almost cloth-like surface; the conductive grid creates subtle texture variations. Feels cool and slightly stiff when new, softening with wear.",
+    "color_scheme": "Dominant glacial white (near-pure, clinical white with a hint of blue undertone) with soft grey piping along all major seams, hood edge, and zipper flaps. No patterns — the conductive grid is functional, not decorative.",
+    "closures": "Continuous-zip with overlapping seam tape along the full front and side seams. Magnetic dust-sealed flap at left temple for BCI port access. No buttons, snaps, or traditional fasteners — all closures prioritize contamination control.",
+    "distinctive_features": [
+      "Integrated hood with soft face-frame designed to accept clip-on face shields or respirators",
+      "Left temple seam BCI port access panel with dust-sealed magnetic closure",
+      "5mm conductive grid woven throughout for ESD protection",
+      "Continuous-zip front with overlapping seam tape",
+      "Forearm channel seams on Augmented Cut variants to accommodate chrome limbs",
+      "Dust-sealed design at all potential ingress points",
+      "Nullvault branding (discrete, embossed) at left chest",
+      "Reinforced shoulder and knee panels (slightly raised texture)"
+    ],
+    "tier_indicator": "Tier 3–4 functional corporate issue. Standard-issue for mid-tier biotech and chip fabrication workers. Signals employment in regulated, high-precision industries rather than wealth or status.",
+    "cultural_context": "Worn by chip fab technicians, geneware clinic staff, biotech synthesis lab workers, and contamination-control specialists. Identifies the wearer as part of the technical workforce in controlled environments. Zero fashion value — pure functionality. Wearing one off-site signals either a shift break or someone cutting corners on safety protocols.",
+    "condition_typical": "When new, pristine and stiff. With regular use, it becomes soft and slightly creased, particularly at elbows and knees. Wear patterns emerge along zipper tracks and hood edges. Occasional patch-repairs appear on high-stress seams. Conductive grid remains visible throughout lifespan. No visible soiling if worn correctly; if visibly stained, the wearer is marked as careless."
+  },
+  "image_prompt": "Nullvault BioSeal Type-F cleanroom coverall on a cyberpunk model in a sterile, industrial lab setting. Glacial white fabric with soft grey piping along seams, integrated hood framing the face, visible 5mm conductive grid pattern, continuous-zip front with seam tape overlay, magnetic access panel visible at left temple. Model stands in neutral pose under clinical LED lighting that emphasizes the fabric's matte, static-resistant sheen. Dark concrete lab walls and stainless steel surfaces in background. Cool, blue-tinted moody atmosphere. Dark shadows contrast with the bright white coverall. --ar 2:3 --v 6"
 }

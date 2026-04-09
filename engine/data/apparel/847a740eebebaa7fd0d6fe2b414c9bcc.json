@@ -37,5 +37,25 @@
   "related_entities": [
     "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
     "Iowan Behemoth — 'Palisade'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A minimalist stud earring that sits flush against the earlobe, barely noticeable during daylight. The design reads as medical-grade luxury—clinical precision softened by gentle curves. In low light, a faint bioluminescent pulse becomes visible, creating an intimate, almost vulnerable aesthetic.",
+    "fit": "Pierced earring; sits snug against the earlobe without protruding. Weight is negligible due to biocomposite casing. Designed for all-day wear without discomfort.",
+    "primary_material": "Medical-grade biocomposite polymer housing with embedded sapphire lens over the LED; surgical-steel post and backing for biocompatibility",
+    "texture": "Smooth, polished surface with a slightly domed crown. The sapphire lens has a subtle lens-like quality that catches light faintly. Backing is matte to prevent skin irritation.",
+    "color_scheme": "Matte gunmetal gray housing with a clear sapphire lens crown. The embedded LED pulses in soft bioluminescent cyan or rose-gold depending on model variant. The post is surgical steel silver.",
+    "closures": "Standard friction-fit piercing post and backing; no additional fastening required once inserted",
+    "distinctive_features": [
+      "Embedded vital-sign monitoring sensor array (heart rate, blood pressure, cortisol)",
+      "Micro-LED that pulses synchronously with wearer's heartbeat",
+      "Short-range encrypted wireless communication module",
+      "Cascade Biotech logo subtly etched on the backing",
+      "Sapphire-topped lens that glows faintly in darkness",
+      "Biocompatible surgical-steel components for sensitive skin"
+    ],
+    "tier_indicator": "Tier 2 luxury—expensive medical technology positioned as a lifestyle accessory for the wealthy and health-conscious",
+    "cultural_context": "Signals access to premium biometric tech, medical sophistication, and intimate social bonds. Common among corpo families, medical professionals, and couples in committed relationships. Subtly performative—the wearer displays their vitals to select intimates, suggesting both vulnerability and trust.",
+    "condition_typical": "Pristine; designed for durability and daily wear. The sapphire lens remains clear even with years of use. Minimal visible wear unless damaged."
+  },
+  "image_prompt": "Close-up fashion photography of a Cascade Biotech Life-Sign Earring on a model's earlobe, gunmetal-gray biocomposite with clear sapphire crown. Soft cyan bioluminescence pulses subtly visible in dim, moody lighting. Dark urban backdrop with neon city lights slightly out of focus. Model's skin tone diverse and warm. Macro-level detail showing the medical precision and luxury aesthetic. Intimate, vulnerable mood. Shot against shadowed industrial setting. --ar 2:3 --v 6"
 }

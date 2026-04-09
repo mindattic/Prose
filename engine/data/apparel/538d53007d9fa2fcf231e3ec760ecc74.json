@@ -37,5 +37,27 @@
   "related_entities": [
     "Alper Holmberg-Dembele",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A bulky, utilitarian silhouette dominated by rigid segmented plating and thick fabric layering. The suit presents as an armored second skin with deliberate industrial geometry—high shoulders, articulated joints, reinforced torso. Despite its mass, it reads as purposefully engineered rather than crude, with clean lines between plate sections and fabric zones.",
+    "fit": "Heavily oversized and deliberately loose-fitted to accommodate rapid donning/doffing and allow air circulation. The suit sits away from the body with intentional gaps at joints for articulation. Movement is restricted but calculated—every looseness serves blast dispersion.",
+    "primary_material": "Layered ballistic weave composite (kevlar-grade synth-aramid blend) over rigid high-density polymer plates and steel inserts at critical zones. The face shield is reinforced polycarbonate-titanium hybrid rated for fragmentation.",
+    "texture": "Heavy and heavily textured—quilted ballistic sections, rough industrial plating with utilitarian matte finish, ribbed reinforcement panels along stress points. Multiple material transitions create visual texture breaks. The helmet has a slightly weathered, scuffed appearance.",
+    "color_scheme": "Industrial grey-black base with high-visibility reflective trim at shoulders, wrists, and torso front. Accent striping in safety orange/yellow along plate seams. Worn stainless steel hardware and dull gunmetal plating. The face shield tints slightly amber when viewed head-on.",
+    "closures": "Heavy-duty magnetic release latches at shoulders for rapid suit removal, reinforced friction-fit seals at neck and wrists, multi-point velcro anchors at waist and thighs, locking collar mechanism.",
+    "distinctive_features": [
+      "Integrated cooling channels visible as subtle ribbed patterns beneath outer fabric",
+      "Manufacturer's Korvain Dynamics logo embossed on left chest plate",
+      "Oversized reinforced gloves with segmented finger articulation and grip-rated palms",
+      "Heavy-duty visor with interior anti-glare coating and slight optical distortion",
+      "Mounting points for sensor arrays and communication equipment on helmet crown",
+      "Explosive-rated cabling visible at joint areas—deliberate exposure of internal structure",
+      "Carrying/transport handles built into shoulders",
+      "Inspection markings and blast-test certification stamps on torso"
+    ],
+    "tier_indicator": "Tier 1-2 specialized equipment (expensive, corporation-issued, high-tech), though the wearer is typically working-class Tier 3-4 hazmat operator",
+    "cultural_context": "Military/paramilitary/specialized hazmat operator. Signals someone who regularly converses with devices that explode. Worn by EOD teams, bomb disposal units, hazmat contractors. The suit itself is a job description and a prayer.",
+    "condition_typical": "Well-maintained but bearing visible scars—small blast scoring on plating, minor cracks in non-critical areas repaired with matching material, dust and grime buildup in crevices. The suit is worn regularly and respected. It shows professional use, not negligence."
+  },
+  "image_prompt": "A figure in a Korvain Dynamics EOD blast suit standing against an industrial urban backdrop—rusted megastructure supports and graffitied concrete walls. The suit fills the frame, shot from front-left angle, emphasizing bulk and layered plating. Harsh tungsten side-lighting casts sharp shadows across the chest plate and visor. The reflective trim glows faintly in the low light. The figure's posture is tense, slightly forward-leaning. Rain-slicked pavement beneath. Cool color temperature. --ar 2:3 --v 6"
 }

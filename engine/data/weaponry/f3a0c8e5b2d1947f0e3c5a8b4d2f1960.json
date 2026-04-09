@@ -43,5 +43,42 @@
     "security",
     "licensed"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Fanta Kato-Adomako",
+    "GLMZ",
+    "Ilhan Sandstrom-Badu",
+    "Jefferson Switch",
+    "Kairos",
+    "ShieldTech SB-3 'Groundstrike'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA ES-4 'Perimeter'",
+    "The Blind",
+    "The Portico",
+    "The Shaft"
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian impact baton with a aggressive, purpose-built silhouette. The shaft is straight and cylindrical with a subtle taper toward the tip, featuring a pronounced grip section in the lower third marked by a recessed toggle switch. The upper third shows faint linear scoring along the shaft—the electrode array tracks. Overall impression is corporate-industrial: clean lines, no decorative elements, designed for function rather than intimidation.",
+    "dimensions": "560mm overall length; 45mm shaft diameter; grip section 120mm with 35mm diameter; tip electrode assembly extends 30mm",
+    "weight_description": "Hefty but balanced. At 780g, it has substantial presence in the hand without being cumbersome. The weighted polymer core shifts mass toward the tip slightly, creating a natural swing-point that feels controlled rather than wild.",
+    "primary_material": "Reinforced polycarbonate shaft with embedded polymer weighting; aluminum alloy grip frame; surgical-grade stainless steel electrode contacts",
+    "finish": "Matte charcoal-black polycarbonate with light surface texturing to reduce glare and improve grip security. The grip section features brushed aluminum with a subtle diamond-knurl pattern. Electrode contacts are polished to a neutral silver-gray. Minimal branding reflects security-sector restraint.",
+    "color_scheme": "Charcoal black primary (polycarbonate shaft), gun-metal gray secondary (grip frame and electrode contacts), with muted blue accent line running 40mm along the lower grip marking the power indicator zone",
+    "grip_texture": "Lower grip is wrapped in a thin layer of rubberized polymer coating with a subtle crosshatch texture—professional, non-slip, designed to shed moisture. Upper shaft is smooth polycarbonate, slightly cool to the touch. The recessed toggle switch has a tactile detent.",
+    "distinctive_features": [
+      "Recessed toggle switch on lower grip with positive mechanical feedback—not a slide, a true toggle requiring deliberate activation",
+      "Faint linear electrode scoring visible along upper 200mm of shaft, appearing as thin silver-gray inlays beneath the polycarbonate",
+      "Tip assembly: dual-contact electrode configuration—primary strike contact point plus secondary ring electrode 80mm back",
+      "Micro-LED charge indicator cluster on grip section (3 small white LEDs showing capacity status)",
+      "Inductive charging port recessed into grip base (round magnetic contact plate)",
+      "ShieldTech logo stamped in matte silver on grip section",
+      "MMSS-7 compliance marking and regulatory text in small font along shaft lower third",
+      "Hairline stress-relief grooves around grip-to-shaft junction",
+      "Subtle wear pattern on impact tip from training use—micro-scuffing in a radial pattern"
+    ],
+    "manufacturer_markings": "ShieldTech logo (geometric shield with internal crosshatch) stamped at 90-degree angle on grip frame, approximately 40mm from base. Regulatory text (MMSS-7 CERTIFIED / LICENSED USE ONLY) runs vertically along lower shaft in 4pt sans-serif font. Serial number plate (small aluminum rectangle, 20mm x 8mm) affixed to grip base. Model designation 'DM-4' embossed on upper grip.",
+    "condition_typical": "Well-maintained field condition. The polycarbonate shows no cracks or serious scarring, but the tip electrode contact exhibits the micro-scuffing pattern expected from regular impact drills and compliance training. Grip rubber shows minor compression wear in the lower contact zone from repeated use. The charging port shows light oxidation from inductive coupling cycles. Scratches are minimal—this is a tool kept in serviceable condition, not display condition."
+  },
+  "image_prompt": "Product photography of a ShieldTech DM-4 Enforcer baton. Shot from a 45-degree angle on a matte black surface, partially held by a gloved security officer's hand (dark synthetic glove, fingers visible around grip). Dramatic side-lighting from upper left emphasizing the polycarbonate shaft's subtle texture and the electrode scoring along the upper third. Soft rim light catching the brushed aluminum grip frame and creating a subtle glow along the contact points. The recessed toggle switch is visible in sharp detail. Cool color temperature (5000K), with blue accent line on grip subtly lit. Cyberpunk security aesthetic: professional, authoritative, designed for compliance. The LED charge indicators glow faintly (two blue LEDs lit). Dark background is a metallic gray surface suggesting an urban security environment. --ar 3:2 --v 6"
 }

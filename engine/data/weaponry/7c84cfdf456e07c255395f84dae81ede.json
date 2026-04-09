@@ -43,5 +43,34 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
+    "Liora Sundberg-Boadu",
+    "Nika Svensson-Kone",
+    "Solina Barreto-Kiptoo",
+    "Volkov-Saito Precision VS-SL40 'Partisan'"
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately heavy, architecturally angular assault rifle with a pronounced forward-weighted profile. The liquid-cooled barrel jacket gives it a distinctive ribbed, almost skeletal appearance along the muzzle end. The stock is modular and angular, suggesting industrial precision rather than ergonomic softness. Overall impression: a weapon built for grinding attrition rather than speed.",
+    "dimensions": "Overall length 1020mm (adjustable stock: 950–1050mm), barrel length 530mm, width across cooling jacket 85mm at widest point",
+    "weight_description": "Noticeably hefty but balanced—the liquid-cooled barrel system distributes weight forward predictably. Feels planted and stable in a supported position; unbalanced for rapid movement but reassuring in a foxhole",
+    "primary_material": "Reinforced polymer lower receiver (dark gray-black) with integrated aluminum-alloy cooling jacket surrounding steel barrel. Upper receiver is tool steel with mil-spec hard-coat anodizing",
+    "finish": "Matte black polymer with brushed anodized aluminum on cooling jacket. Heat-stress discoloration common on well-used examples—bronze and amber patina on jacket where thermal cycling has oxidized the aluminum",
+    "color_scheme": "Charcoal black primary with natural brushed aluminum secondary (cooling jacket). Accent details in muted gunmetal gray",
+    "grip_texture": "Aggressive cross-hatch polymer on pistol grip and forend. Rubberized cheek rest on adjustable stock. Cooling jacket surface is smooth anodized aluminum—intentionally cold to the touch",
+    "distinctive_features": [
+      "Prominent ribbed liquid-cooled barrel jacket with visible inlet/outlet ports near muzzle and mid-barrel",
+      "Integrated bipod that deploys from forend (thin steel arms, rubber feet)",
+      "Three-position adjustable cheek riser on stock (mechanical detents, visible height steps)",
+      "Cant-adjustable stock with indexed rotation collar",
+      "Upper receiver has integrated Picatinny rail with light-duty optical mount pre-fitted",
+      "Magazine well shows wear rings from repeated insertions; magazine is flush-fit 25-round polymer type",
+      "Thermal indicator strip on cooling jacket (color-shift polymer that darkens with heat)",
+      "Charging handle is oversized and ambidextrous"
+    ],
+    "manufacturer_markings": "VOLKOV-SAITO PRECISION in small sans-serif stamp on upper receiver just forward of charging handle. Cyrillic/Japanese fusion logo (overlapped V and S characters) on left side of magazine well. Serial plate (stainless steel) mounted on lower receiver, stamped with production date and batch code. Model designation 'VSR-20' and 'PARTISAN' engraved (not inlaid) on stock in English",
+    "condition_typical": "Field examples show wear consistent with active use: polymer grip has micro-scratches from tactical gloves, cooling jacket bears thermal stress marks and minor dents from hard contact, bipod feet show rubber wear. Kept scrupulously clean otherwise—dust and debris impair cooling efficiency. Well-maintained weapons show pristine internals; neglected examples exhibit rust blooming on exposed steel surfaces"
+  },
+  "image_prompt": "Product photography of the Volkov-Saito Precision VSR-20 'Partisan' assault rifle. Weapon positioned at 45-degree angle on matte black industrial surface, deployed bipod resting on edge. Dramatic side-lighting from upper left, casting deep shadows across the ribbed liquid-cooling jacket and emphasizing the angular geometry of the receiver. Gloved hand (tactical black leather) gripping rear stock with thumb extended over safety selector. Close-up shows thermal discoloration on aluminum cooling jacket—bronze and amber burnishing from heat stress. Shallow depth of field focuses on barrel and jacket detail, blurs background to dark neutral gradient. Cyberpunk aesthetic: cold color temperature (5000K–6500K), slight blue color-cast in shadows, subtle lens flare catching the brushed aluminum surfaces. Include faint depth-of-field bokeh suggesting industrial setting (concrete, metal surfaces). Style: technical product catalog with tactical documentation feel. --ar 3:2 --v 6"
 }

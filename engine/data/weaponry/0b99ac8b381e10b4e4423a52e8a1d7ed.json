@@ -42,5 +42,39 @@
     "guided",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Cassiel Brandt-Ouedraogo",
+    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
+    "Nenad Vargas-Baffour",
+    "Nika Svensson-Kone",
+    "TESSERA CC-6 'Shepherd'",
+    "TESSERA PG-2 'Signature'",
+    "The Pure Hand",
+    "The Riveters' Round"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, angular sniper platform with an oversized barrel assembly and pronounced cooling shroud. The rifle presents a predatory silhouette — long and lean with aggressive geometry. The barrel appears almost skeletal, a latticed electromagnetic rail housing rather than a traditional tube. Overall impression: surgical precision married to raw kinetic violence.",
+    "dimensions": "Rifle: 147cm overall length, 8.2cm barrel diameter (shrouded), 6cm width at receiver. Barrel proper: 89cm. Power pack (backpack unit): 38cm H × 28cm W × 16cm D",
+    "weight_description": "The rifle itself is surprisingly balanced — 9.2kg feels distributed along the length rather than muzzle-heavy. The power pack is noticeably hefty at 5.8kg but designed for dorsal mounting. Together, the system feels purposeful and locked-in, not unwieldy.",
+    "primary_material": "Carbon-titanium composite chassis with integrated electromagnetic rail assembly. Cooling shroud is aerospace-grade aluminum. Receiver block is hardened steel with embedded superconductor loops.",
+    "finish": "Matte gunmetal with selective brushed steel accents around the rail housing. The cooling shroud features a subtle anodized bronze patina from thermal cycling. Electromagnetic components show deliberate oxidation patterns — worn but maintained.",
+    "color_scheme": "Gunmetal grey primary with dark bronze/copper accents highlighting the electromagnetic rail system. Minimal signage in dull white stencil. The power pack features warning striping in Iowan amber along capacitor vents.",
+    "grip_texture": "Textured polymer grip with integrated palm-rest designed for sustained BCI neural link positioning. Wraparound thumb shelf in rubberized composite. Trigger guard features raised knurling for gloved manipulation.",
+    "distinctive_features": [
+      "Skeletal latticed barrel shroud with active cooling vents running the length",
+      "Prominent cooling radiator fins on the muzzle assembly",
+      "Recessed neural-link interface port behind the charging handle (sealed with a tactile confirmation cover)",
+      "Rail alignment sight mounts with integrated Faraday shielding",
+      "Capacitor discharge indicator (three-dot LED array: green/amber/red) mounted on the receiver",
+      "Faint electromagnetic arc scoring visible inside the barrel shroud (evidence of repeated thermal cycling)",
+      "Dorsal power coupling at the rear stock — ruggedized contacts with manual safety interlock",
+      "Selector lever marked only in pictographs: single round, standby, BCI-link modes"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions logo (minimalist geometric shield) stamped in dull white on the upper receiver. Serial plate sits flush on the left side of the power pack, etched rather than embossed (stealth consideration). 'SHEPHERD GRR-12' appears in microscopic lettering along the rail housing — meant for factory inspection, not field readability. Ironside Armaments subcontractor mark (small circular stamp) near the grip.",
+    "condition_typical": "Well-maintained field condition: the electromagnetic shroud shows carbon scoring from repeated thermal cycles, and the cooling fins bear dust and residue patterns consistent with desert or urban operations. The muzzle region shows faint blue-white discoloration from micro-thruster ignition. No rust or corrosion. The weapon is clean but not pristine — it's actively used, not displayed."
+  },
+  "image_prompt": "Product photography of the Arcturus Shepherd GRR-12 railgun sniper rifle, laid flat on a matte charcoal surface. Show the full system: the main rifle body angled at 45 degrees to reveal the skeletal electromagnetic barrel shroud with cooling fins, and the dorsal supercapacitor power pack positioned behind it with visible connector coupling. Dramatic side-lighting from upper left, casting sharp shadows that emphasize the geometric angles of the rail housing and the contoured receiver. Close-up detail of the neural-link interface port (sealed) and the three-LED capacitor indicator glowing subtle amber. The weapon surfaces show brushed gunmetal finish with bronze anodizing highlights catching light. A single gloved hand (tactical leather, cybernetic fingertip augmentation visible) grips the textured polymer stock, fingers positioned on the neural-link trigger. Dark industrial cyberpunk studio setting with faint electromagnetic shimmer in the air near the barrel. Cinematic, clinical, ominous. --ar 3:2 --v 6"
 }

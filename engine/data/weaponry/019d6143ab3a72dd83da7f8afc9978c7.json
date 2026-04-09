@@ -52,5 +52,41 @@
     "tier 2",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Breck Tannen",
+    "GLMZ",
+    "Helix Biosystems",
+    "Helix Biosystems Compact Power Cell HB-3",
+    "Irontide Tidal Energy",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Rashid Tuiasosopo-Erkens",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
+    "Zheng-Dao Marrow-Pulse Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, cylindrical directed-energy weapon resembling a premium tactical flashlight or compact spotlight. The form factor is deliberately unobtrusive—designed to pass casual inspection as industrial or medical equipment rather than a weapon. The barrel tapers slightly toward the emitter lens, giving it an almost elegant profile that masks its neurological lethality.",
+    "dimensions": "28cm length overall; 4.5cm diameter at grip, tapering to 3.2cm at emitter. Emitter lens diameter: 2.8cm. Compact enough to fit inside a jacket pocket or be palmed in a gloved hand.",
+    "weight_description": "Substantial but well-balanced at 0.6kg—feels confident in hand without being tiring. The weight distribution favors the grip section, allowing precise targeting control. Hefty enough to suggest professional-grade equipment, light enough for covert carry.",
+    "primary_material": "Aerospace-grade carbon composite body with reinforced polycarbonate lens housing. Internal architecture is titanium alloy for thermal dissipation. Frame is designed to withstand repeated thermal cycling from rapid discharge sequences.",
+    "finish": "Matte gunmetal gray with micro-textured coating to reduce reflectivity and fingerprints. The emitter lens housing features a brushed chrome bezel. No glossy surfaces—everything reads as deliberately non-reflective, almost clinical.",
+    "color_scheme": "Primary: charcoal gray with gunmetal accents. Secondary: polished chrome around lens. Minimal branding—all text is engraved rather than printed, making it nearly invisible under normal lighting.",
+    "grip_texture": "Tightly knurled textured polymer with rubberized inlay sections at pressure points. The grip is contoured for a two-hand hold but equally comfortable one-handed. Designed to interface with tactical gloves without losing tactile feedback.",
+    "distinctive_features": [
+      "Integrated polarizing filter ring around emitter—visible as a faintly iridescent circular element",
+      "Minimal indicator LED (deep blue, nearly invisible in daylight) embedded flush with the grip—only shows status to the operator",
+      "Micro-precision focusing ring with tactile detents (unmarked—requires operator familiarity)",
+      "Helix Biosystems serial plate engraved on the grip: designates it as 'Research Equipment' despite weaponization",
+      "Integrated heat-dispersal fins along the upper barrel section (subtle ribbed texture)",
+      "Modular power cell interface at the rear—proprietary Helix HB-3 connector",
+      "Safety interlock visible only through the grip—a recessed switch requiring deliberate thumb engagement"
+    ],
+    "manufacturer_markings": "HELIX BIOSYSTEMS etched in small lettering on the grip, with 'RESEARCH EQUIPMENT - NOT FOR MEDICAL USE' disclaimer below (legally positioning the weapon as industrial). Model designation 'PNSD-1' on the emitter bezel. Serial number on a concealed plate, visible only when power cell is removed.",
+    "condition_typical": "Field examples range from laboratory-pristine (research division stock) to battle-worn with micro-scratches and polymer stress marks at the grip. Most operational units show subtle scuffing from tactical gear friction but maintain their clinical finish—the weapon is treated as precision equipment, not a disposable implement. Heat discoloration may appear around the emitter lens on heavily used units."
+  },
+  "image_prompt": "Close product photograph of the PNSD-1 Flashburn disruptor against a dark matte black surface, shot from a 45-degree angle. Weapon is held in a gloved hand (black tactical glove) with fingers positioned on the grip, emphasizing the compact form factor. Hard dramatic side-lighting from the left reveals the micro-textured polymer finish and subtle ribbed heat-dispersal fins along the barrel. The polished chrome emitter lens bezel catches light with a sharp highlight, creating visual emphasis. The brushed gunmetal gray body is rendered in cool tones. Shallow depth of field with the emitter lens in sharp focus. Include a blurred background suggesting a clinical lab or tactical briefing environment. The image conveys the weapon's deceptive similarity to professional medical equipment while hinting at its lethal functionality through material quality and precision engineering. Cyberpunk aesthetic: clean, corporate, clinical—the weaponization is invisible at first glance. --ar 3:2 --v 6"
 }

@@ -65,5 +65,41 @@
     "fire",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "Arcturus Defense Solutions",
+    "Breck Tannen",
+    "Cezar Watanabe-Gyasi",
+    "GLMZ",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Street Custom 'Glass Garden' Caltrops",
+    "Subdermal Shear Projector SSP-1 'Faultline'",
+    "Synaptrel",
+    "TESSERA Widow Mk. III",
+    "Zheng-Dao Marrow-Pulse Implant"
+  ],
+  "physical_description": {
+    "visual_profile": "A precision rifle with an unnervingly clinical aesthetic — long, slender barrel tapering slightly toward the muzzle, with a distinctive translucent crystalline emitter shroud visible along the barrel's distal third. The overall silhouette suggests a high-end surgical instrument crossed with a sniper rifle. No visible muzzle flash or recoil mechanisms; instead, a faint iridescent shimmer plays across the emitter chamber. The weapon projects cold, methodical purpose.",
+    "dimensions": "Overall length: 118 cm. Barrel length: 72 cm. Width at receiver: 8.5 cm. Height with integrated targeting scope: 14 cm.",
+    "weight_description": "Hefty but well-balanced — 3.4 kg distributed along the barrel and receiver to favor steady aim. Feels engineered for extended holds; front-heavy in the way that rewards braced positions.",
+    "primary_material": "Titanium-reinforced polymer receiver and stock. Barrel constructed from precision-machined durasteel with embedded piezoelectric actuator lattice. Emitter shroud is synthetic sapphire composite.",
+    "finish": "Matte gunmetal with strategic brushed chrome accents around the emitter chamber and scope mounts. The sapphire shroud has a faintly frosted appearance, catching light with an opalescent quality that shifts from pale blue to violet depending on angle.",
+    "color_scheme": "Gunmetal gray primary. Brushed chrome on the emitter shroud and scope rings. Deep navy-black grip and stock. Accent trim in cold steel silver.",
+    "grip_texture": "Textured polymer grip with microscopic dimpling for non-slip purchase even in gloved hands. Wraparound palm swell and finger grooves indicate heavy use in tactical contexts. Grip feels deliberately sterile — no warmth, pure function.",
+    "distinctive_features": [
+      "Transparent sapphire emitter shroud revealing internal crystalline resonator array",
+      "Integrated three-axis anatomical targeting reticle with dwell-time countdown display (small LED screen set into scope body)",
+      "Dual mode selector lever (standard/scatter) positioned for thumb operation",
+      "Faint ultraviolet scintillation visible within the emitter chamber during power-up sequence",
+      "Blackwood Commercial Group manufacturer stamp on left receiver (small engraved serif lettering)",
+      "Serial number plate (CSPR-2 variant identifier) in reflective chrome on barrel mid-section",
+      "Heat dissipation vents along the upper receiver (slots, not grilles — precision machined)",
+      "Power cell housing at the rear of the receiver with status indicator (small LED, currently dark)",
+      "Integral muzzle brake replaced with a flat emitter face, slightly recessed"
+    ],
+    "manufacturer_markings": "Blackwood Commercial Group maker's mark etched in small serif font on the left side of the receiver, just forward of the trigger guard. Serial identifier (BCG-CSPR2-[alphanumeric]) stamped in reflective chrome on the barrel, positioned where a slide charge handle would be on a conventional rifle.",
+    "condition_typical": "Well-maintained but field-worn. The stock and receiver show micro-scratches consistent with transport in cases and field positioning; the grip's texture is slightly worn smooth in high-contact zones. The sapphire shroud remains pristine and clear — obsessively cleaned, as it must remain transparent for proper beam focus. The Chrome accents show oxidation spots suggesting regular use without fanatic polishing. This is a working weapon, not a showpiece, but one treated with professional respect."
+  },
+  "image_prompt": "Professional product photography of the Crystalline Synovial Pressure Rifle CSPR-2 'Kneemaker' lying across a matte black tactical case lined with segmented foam. Dramatic side-lighting emphasizes the translucent sapphire emitter shroud with faint UV-blue luminescence leaking through the crystalline chamber. The weapon's brushed chrome accents catch sharp highlights. A gloved hand (tactical black leather, augmented knuckles visible) steadies the rifle's fore-end, revealing the textured polymer grip and scope-mounted targeting reticle. Shallow depth of field isolates the weapon; dark cyberpunk warehouse backdrop slightly out of focus. Cold color temperature (5600K), emphasizing the weapon's clinical, surgical precision. Mounted on a tilted angle to showcase the anatomical targeting interface and dwell-time LED. No reflections from reflector fill — only hard key light from the left, creating sharp shadows that emphasize the barrel's taper and the shroud's crystalline geometry. --ar 3:2 --v 6"
 }

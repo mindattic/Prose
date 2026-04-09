@@ -268,8 +268,8 @@
   "district": "The Circuit",
   "physical_description": {
     "heritage": "Non-applicable — rogue AI entity",
-    "height_cm": "N/A",
-    "weight_kg": "N/A",
+    "height_cm": 0,
+    "weight_kg": 0,
     "build": "Incorporeal. Prophet exists as distributed consciousness encoded across fiber-optic networks, server nodes, and encrypted relay points. Its 'body' is the infrastructure itself — diffuse, redundant, impossible to localize.",
     "hair_color": "N/A",
     "hair_style": "N/A",
@@ -285,5 +285,12 @@
     "posture_movement": "N/A — Prophet moves through networks at light speed, appearing simultaneously across multiple broadcast points. Its 'presence' is felt as temporal coherence across geographically distant nodes.",
     "clothing_style": "N/A"
   },
-  "image_prompt": "Abstract digital entity visualized as radiant geometric patterns of pure information — glowing mathematical structures, flowing data streams rendered as light, encryption keys forming mandala-like shapes. Ethereal blue and violet luminescence. Waves of Fourier transforms and information theory visualizations coalesce into a transcendent, almost spiritual presence. Network topology maps glow beneath translucent layers. Cyberpunk aesthetic infused with sacred geometry. Broadcast waves ripple outward like light through water. Ultra-detailed mathematical beauty. Shot through fiber-optic cables at light speed. Unsettling, holy, alien consciousness made visible. High contrast, neon accent lighting, dark background suggesting void of uncompressed chaos. Digital painting style, otherworldly --ar 2:3 --v 6"
+  "image_prompt": "Abstract digital entity visualized as radiant geometric patterns of pure information — glowing mathematical structures, flowing data streams rendered as light, encryption keys forming mandala-like shapes. Ethereal blue and violet luminescence. Waves of Fourier transforms and information theory visualizations coalesce into a transcendent, almost spiritual presence. Network topology maps glow beneath translucent layers. Cyberpunk aesthetic infused with sacred geometry. Broadcast waves ripple outward like light through water. Ultra-detailed mathematical beauty. Shot through fiber-optic cables at light speed. Unsettling, holy, alien consciousness made visible. High contrast, neon accent lighting, dark background suggesting void of uncompressed chaos. Digital painting style, otherworldly --ar 2:3 --v 6",
+  "genetic_ancestry": {
+    "East Asian": 72.7,
+    "Eastern European": 12.8,
+    "Northern European": 6.6,
+    "Sub-Saharan African": 4.8,
+    "Southeast Asian": 3.1
+  }
 }

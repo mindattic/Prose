@@ -35,5 +35,26 @@
   "related_entities": [
     "Arcturus LS-5 'Sentinel'",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, form-fitting full-body base layer that hugs the torso and limbs with athletic precision. The suit has a clean, corporate aesthetic—minimal visual indicators of its surveillance function. Appears as a premium athletic compression garment at first glance, with subtle Sentinel Corp branding along the sternum and upper back. The silhouette is streamlined and professional, designed to layer seamlessly beneath standard corporate workwear.",
+    "fit": "Compression fit throughout—snug against the skin without restricting movement. Tapered at the wrists and ankles with reinforced cuffs. The torso is anatomically contoured to conform to different body types while maintaining a uniform appearance. Allows full range of motion for office and light industrial work.",
+    "primary_material": "Proprietary smart-weave synthetic blend: moisture-wicking poly-elastane base with embedded bioresponsive fibers that interface with dermal sensors. The material is breathable, anti-microbial, and designed for 12+ hour continuous wear.",
+    "texture": "Smooth, almost liquid-like surface with subtle vertical ribbing that runs the length of the limbs. The fabric has a soft hand despite its technical nature. Nearly invisible microtexture where sensor nodes are embedded—detectable only by touch at specific anatomical points (wrists, sternum, temples, inner elbows).",
+    "color_scheme": "Matte charcoal gray as the primary color, with slim vertical accent stripes in Sentinel Corp's signature ice-blue running down each side of the torso and outer legs. The blue is phosphorescent under certain lighting—a subtle status indicator. Minimal contrast; designed to disappear beneath clothing.",
+    "closures": "Invisible magnetic snap system along the centerline from neck to groin, creating a seamless front closure that is difficult to detect. Friction-fit cuffs at wrists and ankles that compress and lock in place—cannot be accidentally dislodged during work.",
+    "distinctive_features": [
+      "Embedded biometric sensor nodes at 47 points across the body—invisible to casual observation but creating subtle raised points under direct examination",
+      "Wireless transmission receiver cluster at the sternum (hidden beneath surface layer)",
+      "Reinforced palm and sole strips with enhanced grip texture",
+      "Wrist bands contain subtle digital display zone (inactive unless suit malfunctions)",
+      "Temperature regulation mesh panels at underarms and lower back",
+      "Sentinel Corp logo printed in metallic ink on upper back—visible only under direct lighting",
+      "Nano-scale threading that prevents complete removal of biometric markers even if fabric is damaged"
+    ],
+    "tier_indicator": "Tier 1-2 (corporate issued)—High-quality materials and manufacturing indicate this is issued only to valued Sentinel Corp employees. Free provision signals corporate paternalism; the surveillance function is normalized as a benefits package. The quality of construction demonstrates corpo resources but the mandatory nature reveals power imbalance.",
+    "cultural_context": "Wearing this openly marks someone as a Sentinel Corp employee currently on-shift. The suit signals both privilege (corporate employment, premium materials) and subjugation (constant monitoring, mandatory compliance). In GLMZ subcultures, it's sometimes called a 'leash' or 'compliance skin.' Workers wearing it in public are identifiable to corpo competitors and surveillance networks. Removing it outside of designated facilities can trigger contract penalties or employment termination.",
+    "condition_typical": "Pristine when issued, quickly shows wear patterns consistent with heavy 8-12 hour daily use—creasing at joints, slight fading of ice-blue stripes from sweat and friction. Long-term wearers show visible stress marks at the neck and wrist cuffs from constant sensor contact. Material retains shape remarkably well despite intensive use. Rarely repaired; workers are issued new suits quarterly as part of 'hygiene protocols' (actual reason: biometric drift and firmware updates)."
+  },
+  "image_prompt": "Professional fashion photograph of a Sentinel Corp Biometric Integration Bodysuit on an athletic male cyberpunk model with visible dermal augmentations on forearms, standing in a sterile corporate office environment. The suit is shown in form-fitting charcoal gray with ice-blue accent stripes running vertically. Dramatic side lighting emphasizes the seamless compression fit and subtle ribbed texture. A translucent corporate logo glows faintly on the upper back under the lighting. The model's posture is rigid and monitored—professional but slightly uncomfortable, as if aware of constant surveillance. Dark moody overhead lighting casts shadows across the torso, revealing the almost-invisible sensor nodes as subtle imperfections in the fabric surface. Background shows blurred holographic workplace metrics and biometric data streams floating in the air behind the figure, subtly suggesting the surveillance infrastructure. Shot against a sleek dark backdrop with neon accent lighting in corporate blue. --ar 2:3 --v 6"
 }

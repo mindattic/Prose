@@ -37,5 +37,25 @@
     "jeans",
     "everyday"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "physical_description": {
+    "visual_profile": "Classic straight-leg silhouette with a mid-rise waistband. Appears to be traditional denim at first glance, but the subtle sheen and drape suggest advanced synthetic blending. The cut is neither slim nor baggy — it's the utilitarian baseline that works across body types and professions.",
+    "fit": "Mid-rise, straight through hip and thigh, relaxed at the ankle. The elastane creates a second-skin comfort without visible compression or stretch-panel seams. Moves with the wearer rather than against them.",
+    "primary_material": "Hybrid denim weave: 82% cotton-equivalent synthetic blend with 18% elastane for imperceptible stretch. The base mimics vintage indigo-dyed cotton but with modern durability.",
+    "texture": "Smooth yet slightly textured from the weave pattern. The light wash version shows subtle fading at stress points; raw indigo maintains uniform depth. No artificial distressing — wear patterns emerge naturally with use.",
+    "color_scheme": "Two options: light wash (faded gray-blue with cream highlights at seams and creases) or raw indigo (deep saturated blue, no fading). Both feature natural copper-tone rivets and contrast topstitching.",
+    "closures": "Five-pocket configuration with traditional button fly and single-button waistband. No magnetic closures or tech integrations — pure mechanical reliability.",
+    "distinctive_features": [
+      "Invisible elastane weave — no visible stretch panels or seams",
+      "Reinforced stress points at pocket corners and inseams",
+      "Vansen brand patch at rear waistband in embroidered serif font",
+      "Copper rivets at pocket base and fly",
+      "Flat-felled inseams for durability and comfort",
+      "No artificial distressing — designed for natural patina development"
+    ],
+    "tier_indicator": "Tier 3 functional. Affordable enough for working-class everyday wear, quality enough for longevity. Not luxury, not salvage.",
+    "cultural_context": "Worn by delivery runners, warehouse crews, service sector workers, and anyone who values comfort during long shifts. The 'no-modification' aesthetic appeals to people who prefer traditional clothing over augmented smart-fabrics — a quiet statement of practicality over corp tech dependency.",
+    "condition_typical": "Broken-in and worn with character. Light creasing at the thighs, subtle fading at the ankles and behind the knees from constant movement. After 6-12 months, a personalized patina emerges despite the durable synthetic blend."
+  },
+  "image_prompt": "A worker in Vansen Stretch Denim Straight Leg jeans, light wash version, standing under a flickering neon sign in a GLMZ delivery hub at dusk. The jeans show natural creasing and subtle wear at the ankles. Shot from waist-down to emphasize the clean silhouette and denim texture. Dark urban backdrop with industrial scaffolding and blue-tinted ambient light. The person has visible cybernetic augmentations — a chrome wrist port, subtle subdermal implant at the temple. Shallow depth of field, moody and documentary-style. --ar 2:3 --v 6"
 }

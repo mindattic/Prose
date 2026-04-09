@@ -50,5 +50,26 @@
     "Patient Zero",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Burden Clause"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A deliberately austere silhouette that reads as administrative authority without commanding respect. The outfit presents as compact and controlled—shoulders squared by the blazer's structure, torso lengthened by the vertical line of the button-down and unbroken trouser leg. The effect is simultaneously professional and diminished, like someone dressed for a job that pays just enough to matter and pays for everything.",
+    "fit": "Precisely tailored but not luxuriously so. The blazer sits with a slight tension across the shoulders, trousers break sharply at the ankle without pooling, the shirt collar sits flat but not smooth. The fit suggests a body scanned once at initial employment and never adjusted. Everything functions without transcending.",
+    "primary_material": "Trousers and blazer: mid-grade synthetic wool blend with memory finish (fades after heavy use). Shirt: corp-standard broadcloth with minimal stretch. Shoulder bag: embossed synthetic leather over composite frame. Oxfords: fused leather substitute with pressure-reactive autofit sole.",
+    "texture": "Slightly mechanical. The shirt's broadcloth has a faint grid weave visible in certain light. The blazer's fabric carries a barely-perceptible sheen from factory treatment. The trousers feel crisp but will pill at stress points. The bag's synthetic leather is smooth but slightly plastic-slick, with visible stitch marks. The BCI port cover is textured rubber, tacky with age.",
+    "color_scheme": "Flat medium grey (dominant), crisp white with faint blue stripe (shirt), black (oxfords). The Stratum compliance pip is polished silver. The Stratum asset tag is brushed steel with printed barcode, worn to a smudged patina.",
+    "closures": "Standard button-down shirt (plastic buttons, Stratum-molded), single-breasted blazer (three buttons, slight wear on middle button from repeated fastening), trouser side zip with hook clasp, shoulder bag uses a magnetic snap closure (sometimes slow to engage), oxford laces in dark synthetic cord.",
+    "distinctive_features": [
+      "BCI port access notch at right collar with yellowed rubberized cover—mark of mandatory corporate neural interface",
+      "Compliance division pip on left lapel: small silver insignia meaningful only within corporate hierarchy",
+      "Barely-visible window-pane check on trousers: detail meant to suggest texture without drawing attention",
+      "Stratum branding on blazer interior and embossed on shirt buttons",
+      "Asset tag riveted to shoulder bag strap: corporation owns the bag, technically",
+      "Left oxford grips tighter than right: autofit calibration never corrected",
+      "Visible stress creasing already present at trouser knees and blazer elbows from wear"
+    ],
+    "tier_indicator": "Tier 3 (working class, corporate-employed). This outfit costs approximately Φ340-420 through employer subsidy, or Φ580-680 at retail. The subsidy exists to keep the wearer invested in compliance.",
+    "cultural_context": "Wearing this signals corporate employment in a mid-tier administrative role. You are literate, authorized to access certain systems, but not trusted with independent decision-making. You represent the company's interest in spaces they deem important enough to monitor but not important enough to staff with Tier 1 talent. The outfit says: I have cleared background checks. I have a net address. I can be held accountable.",
+    "condition_typical": "Worn but maintained. The blazer shows micro-wrinkles at the inner elbow by 2 PM. The trouser crease survives until lunch. The shirt collar frays imperceptibly at the BCI port notch from daily access. Small coffee stains appear and are carefully spot-cleaned. The black oxfords develop a fine scuff pattern across the toe box. The shoulder bag carries the weight of tablets, credential dongles, and printouts—its synthetic leather stretches slightly at the seams. By year two of continuous wear, the entire ensemble reads as slightly deflated."
+  },
+  "image_prompt": "Midjourney fashion photography: a Tier 3 corporate compliance officer in full Stratum regulation grey day set, photographed front-facing and three-quarter on a dark composite backdrop. Cool fluorescent overhead lighting casting sharp shadows. Model or mannequin displays perfect posture—shoulders back, blazer buttoned, white shirt crisp but already showing subtle wrinkles at the collar. Charcoal synthetic leather shoulder bag hangs at the left hip, asset tag visible and slightly worn. Black autofit oxfords planted firmly on an abstract grey floor. Close-up detail insert showing the rubberized BCI port cover at the right collar—yellowed and tacky. Emphasis on the compliance division silver pip catching light. Mood: clinical, bureaucratic, quietly anxious. Color grading: desaturated greys and whites with cool blue undertones. No smile. No joy. Absolute corporate authenticity. --ar 2:3 --v 6"
 }

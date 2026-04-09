@@ -52,5 +52,27 @@
     "Narrowcast",
     "Subdermal Shear Projector SSP-1 'Faultline'",
     "Vantablack VS-3 'Skin Job'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian, heavily armored one-piece suit that reads as industrial and brutalist. The silhouette is blocky and functional—broad shoulders from reinforcement panels, tapered slightly at the waist where the exoframe harness cinches, flared at hips for equipment attachment points. When worn, it dominates the wearer's form, making them appear larger and more geometric. The integrated hood and face shield give an insectoid, depersonalized appearance.",
+    "fit": "Compression-tight through the torso and limbs to accommodate the internal exoframe harness and pressure sealing. The reinforced panels sit proud of the base material, creating a segmented, articulated look. Glove cuffs and ankle seals are snug and lockable. Overall a technical, ergonomic fit designed for function over comfort.",
+    "primary_material": "Cordura-steel weave outer shell (charcoal matte), ABS polymer impact panels (knees, elbows, shoulders), silicone-sealed pressure bladder layer beneath, reinforced nylon webbing for harness integration",
+    "texture": "The main shell is smooth but slightly matte from abrasion and dust accumulation; scuffed in high-contact areas. The ABS panels have a harder, plasticky texture with visible stress cracks and stress-whitening. Where panels have been field-replaced with knock-off Shelf fab units, the mismatched texture is obvious—slightly shinier or rougher depending on source material. Welded seams are visible as raised ribbing.",
+    "color_scheme": "Matte charcoal-gray base with blackened ABS polymer panels. Accent colors are purely utilitarian: high-visibility yellow/orange striping on collar and wrists for rescue visibility; raw metal or dull copper at pressure valve and connector points. Hand-painted miner's marks (names, dates, tally notches) in white or bright spray paint vary by suit.",
+    "closures": "Heavy-duty friction-fit pressure seals at wrists and ankles; magnetic snap collar to secure hood; full-length dorsal spine zip (sealed and reinforced) running from neck to tailbone for entry/exit. Pressure equalization valve at collar is manual twist-lock design.",
+    "distinctive_features": [
+      "Integrated exoframe harness running spine and hips—visible as reinforced webbing and attachment D-rings",
+      "Sealed face shield with dust filter cartridge (replaceable, often stained or clouded)",
+      "Low-light optical enhancement module on left temple (small raised housing)",
+      "Pressure equalization valve at collar—distinctive brass twist-lock knob",
+      "Mismatched ABS panel repairs—genuine Strata panels mixed with cheaper Shelf fabricator knockoffs, visibly different finishes",
+      "Carved or spray-painted personal identification marks—miner names, date marks, tally notches for shifts worked",
+      "Multiple cargo pockets with welded seams and reinforced stitching",
+      "Anchor points and D-rings along sides for carabiners and safety equipment"
+    ],
+    "tier_indicator": "Tier 2 corpo manufacturing (Strata Deep Industrial) downgraded by Tier 4 knockoff repairs and field salvage. The suit signals working-class labor with access to corporate equipment, but the visible patch-work and paint marks indicate a miner—someone in the depths where status symbols don't matter.",
+    "cultural_context": "Wearing this suit means you work in pressurized subsurface zones—dangerous, unglamorous, well-compensated labor. The hand-painted marks are intimate; they're how you claim identity in darkness. The visible repairs indicate experience and survival: you've been down long enough to break things and fix them yourself. It's a badge of hard work, not fashion.",
+    "condition_typical": "Weathered and heavily used. The matte finish is dulled by dust and mineral deposits. ABS panels show spider-crack stress patterns; several are obviously non-original replacements (different plastic type, slightly different shade). The sealed face shield is often clouded from constant humidity and micro-scratches. Pressure seals are grimy. Paint marks are faded or layered from years of re-marking. The suit looks lived-in, abused, trusted."
+  },
+  "image_prompt": "A Tier 4 miner in a battle-worn Strata Deep TunnelHide pressure suit, standing in a moody industrial deep-mine facility. The suit is charcoal-gray cordura with mismatched black ABS polymer reinforcement panels—some original Strata-branded, some clearly cheap knockoff Shelf fab units with visible stress cracks. The integrated exoframe harness runs visibly along the spine. The sealed face shield reflects cool tungsten work-lights, slightly fogged and clouded. White spray-painted tally marks and a name run down the suit's side. Dust and mineral deposits coat the material. Harsh overhead lighting creates stark shadows on the reinforced panels. Dark concrete and jagged rock face backdrop. Moody, claustrophobic industrial atmosphere. --ar 2:3 --v 6"
 }

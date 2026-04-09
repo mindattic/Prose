@@ -59,5 +59,38 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Arcturus Defense Solutions NociStrike NS-3 'Flense'",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "GLMZ",
+    "Irontide Tidal Energy",
+    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Nenad Vargas-Baffour",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "The Nearfield",
+    "Zheng-dao Bioelectric"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist directed-energy weapon with a distinctive parabolic dish front — resembles a compact satellite emitter or medical radiator crossed with a riot control projector. The silhouette is aggressive but asymmetrical, front-heavy with the emitter array dominating the profile.",
+    "dimensions": "46 cm length overall; parabolic emitter array face approximately 18 cm diameter; grip section 12 cm; width at widest point (emitter) 20 cm",
+    "weight_description": "Hefty but balanced — 2.1 kg sits forward in the emitter assembly, requiring forearm support during sustained aiming. Feels purposeful and planted in hand rather than quick-handling.",
+    "primary_material": "Hardened aluminum frame with embedded dielectric polymer emitter array; capacitor bank housing in reinforced thermoplastic composite",
+    "finish": "Matte charcoal with brushed aluminum accents around emitter ring; high-wear areas show bare metal where gloved hands grip repeatedly",
+    "color_scheme": "Charcoal gray primary with silver/aluminum emitter ring; control interfaces in subdued amber LED",
+    "grip_texture": "Textured rubberized polymer with subtle grid pattern for sweat resistance; finger grooves indicate enforcement-grade ergonomics",
+    "distinctive_features": [
+      "Seven-element parabolic dielectric array with visible concentric rings creating a hypnotic target-like appearance",
+      "Capacitor bank heat vents along the barrel, arranged in a linear pattern with faint scorch marks from discharge heat",
+      "Charge buildup indicator: small amber LED that brightens during capacitor cycling",
+      "Mode selector dial at grip rear with three positions marked by raised detents (Compliance/Suppression/Flense — though only first two are officially labeled)",
+      "Bioelectric sensor ports (small circular apertures) on either side of the emitter array, slightly recessed",
+      "Discharge corona points visible as tiny metallic studs around the emitter perimeter",
+      "Weathering and small burn marks on the emitter dish surface consistent with field use",
+      "Serial number and ZHENG-DAO BIOELECTRIC logo laser-etched into the aluminum receiver"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo (stylized lightning-bolt-through-helix symbol) stamped on left side of receiver; serial plate mounted on grip backstrap; 'EFP-1 SKINREADER' designator engraved (not official — field modification marker)",
+    "condition_typical": "Well-maintained enforcement variants show minimal wear; black-market modified units bear scorch marks, crude aftermarket capacitor venting, and evidence of field-stripping for charge tuning"
+  },
+  "image_prompt": "Product photography of ZHENG-DAO EFP-1 Skinreader electrostatic projector held in gloved tactical hands against dark matte background. Dramatic side-lighting emphasizes the parabolic dielectric emitter array with visible faint electrical shimmer/corona effect around the dish. Charcoal gray matte finish contrasts with brushed aluminum ring detail. Small amber LED indicator glowing at grip. Close-up focus on the seven-element concentric emitter geometry with subtle heat discoloration. Cyberpunk enforcement aesthetic, clinical but menacing. Cool color temperature lighting with accent highlights on metallic elements. --ar 3:2 --v 6"
 }

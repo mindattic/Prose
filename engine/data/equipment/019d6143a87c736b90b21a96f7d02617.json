@@ -79,5 +79,24 @@
     "Timur Osei-Bjelke",
     "Vantablack Media",
     "Zheng-Dao Bioelectric Chemoreceptive Dermal Patch"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, ultra-thin adhesive medical patch with a matte black surface that absorbs light rather than reflecting it. The main patch resembles a sophisticated bandage or medical sensor strip, slightly larger than a standard postage stamp. Its edges are beveled and seamless, designed to sit flush against skin without visible edges or lifting corners. The accompanying bone conduction receiver is nearly invisible—a tiny flesh-toned or gunmetal micro-patch no larger than a hearing aid component.",
+    "dimensions": "Main patch: 7 cm × 4 cm × 0.2 cm (roughly the size of a large adhesive bandage). Bone conduction patch: 4 cm × 1.5 cm (smaller than a fingernail).",
+    "weight_description": "Extremely lightweight and pocketable—12 grams for the main patch (lighter than a playing card), 4 grams for the secondary. Designed to be imperceptible when worn.",
+    "primary_material": "Biocompatible polymer substrate with embedded nanotextile signal-conducting layer. Adhesive backing uses smart-release formula that degrades after 72 hours.",
+    "finish": "Vantablack-coated surface—ultralight-absorbing matte black that creates an almost three-dimensional void effect. Secondary patch has a subtle metallic satin finish to catch bone conduction vibrations.",
+    "color_scheme": "Primary: absolute matte black (Vantablack coating). Secondary patch: either flesh-neutral tan or brushed gunmetal gray. Minimal branding in barely-visible embossed lettering.",
+    "interface_elements": "No visible buttons, screens, or controls. The main patch contains only a subtle haptic feedback zone (a 2 mm raised circle) for confirming activation. A micro-contact port hidden beneath a nearly-invisible flap for charging via induction. The secondary patch has no user interface—purely passive bone conduction.",
+    "distinctive_features": [
+      "Light-absorbing Vantablack coating that makes the patch appear to sit slightly recessed in reality",
+      "Virtually invisible when adhered to skin—blends with neck/jaw complexion",
+      "No visible wires, earpieces, or external antenna",
+      "Haptic-only feedback system (vibration confirms calibration, message receipt, signal loss)",
+      "Edge-beveled design prevents snag-catching on clothing or collars"
+    ],
+    "manufacturer_markings": "Tiny embossed Vantablack Media logo (Φ symbol) on rear surface, visible only at extreme angles. Regulatory stamps in micro-print along bottom edge. Serial number encoded in invisible bioresponsive ink that activates only under specific wavelengths—anti-counterfeiting measure.",
+    "condition_typical": "In use, the patch is almost entirely concealed beneath clothing or hair, visible only as a faint dark shadow against skin. The bone conduction receiver sits completely hidden behind the ear or along the jaw ramus. A wearer appears to be doing nothing—silent, still, unremarkable."
+  },
+  "image_prompt": "Close-up product shot of a Vantablack Subvocal Relay Patch on a clean brushed-steel workbench. Main patch displayed at a 45-degree angle, showing its ultra-matte black absorptive surface that seems to create a void in the image. Soft rim lighting highlights the barely-visible beveled edges. The secondary bone conduction micro-patch is positioned nearby on a clear acrylic display stand. Dramatic side-lighting creates subtle shadows. Clinical cyberpunk aesthetic with warm accent lighting—perhaps a single amber LED casting light across the scene. Photorealistic, shallow depth of field, hyper-detailed surface texture. No visible packaging. 2226 GLMZ undercover operations aesthetic. --ar 3:2 --v 6"
 }

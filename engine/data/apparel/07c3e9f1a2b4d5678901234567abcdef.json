@@ -45,5 +45,25 @@
     "Hearthstone Firearms Trail-357 'Pathfinder'",
     "Ringo Popup Stall Trailer",
     "Yannick Tambadou-Reinholt"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A relaxed, effortlessly styled crop tank with generous proportions that reads as intentionally undone—sophisticated street wear with zero corporate polish. Sits confidently between athletic and avant-garde.",
+    "fit": "Straight-cut with a wide, low armhole that creates a relaxed shoulder line; crops two inches above the natural waist. Loose enough to breathe, structured enough to hold shape. Accommodates augmented frames without bunching.",
+    "primary_material": "Cotton-analog blend (synthetic cellulose base), garment-dyed to preserve natural variation and depth",
+    "texture": "Softly textured, lightweight with substantial hand-feel; uneven dye absorption creates subtle micro-variations in surface appearance that catch light differently across the garment",
+    "color_scheme": "Deep, moody colorways: acid-washed indigo with faded blue halos, rust-dye terracotta with burnt umber undertones, muddy sage with greenish-grey cast, or near-black that fades to charcoal at stress points and after repeated washing",
+    "closures": "None—basic crew/scoop neckline, no hardware",
+    "distinctive_features": [
+      "Hand-dyed batch variation—no two garments identical",
+      "Generous scoop neckline with soft edge",
+      "Extra-wide armhole that reads as intentional design, not oversizing",
+      "Cropped hem with clean, straight cut",
+      "Fabric retains slight sheen from dye process without being glossy",
+      "Natural fading and color shift visible after wear"
+    ],
+    "tier_indicator": "Tier 2/3 crossover—too distinctive and artisanal for corpo uniform, too quality-conscious for sub-grade salvage",
+    "cultural_context": "Street musician, athlete, creative class—worn by people with personal style autonomy who reject both corpo branding and conspicuous poverty signaling. Strong subcultural cache without gatekeeping.",
+    "condition_typical": "Broken-in and softened after first few washes; color deepens slightly with wear; edges remain clean; occasional pull or soft crease from movement"
+  },
+  "image_prompt": "Fashion photograph of a Drakeyard Pigment Crop Tank displayed on a dark chrome mannequin or worn by a diverse model with subtle augmentation ports visible at collarbone. Close-up detail shot of the fabric texture and dye variation, moody blue-tinted studio lighting casting soft shadows across the wide armhole. Urban warehouse backdrop with exposed ductwork and warm neon signage (Φ symbol visible blurred in distance). Shallow depth of field emphasizing fabric quality and hand-dyed character. Cool color grading with warm accent highlights. --ar 2:3 --v 6"
 }

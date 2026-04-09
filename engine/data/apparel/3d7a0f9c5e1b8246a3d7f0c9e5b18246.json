@@ -48,5 +48,27 @@
     "Slagworks Industrial",
     "The Shelf",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A streamlined mid-thigh parka with a clean, minimalist aesthetic that reads as premium streetwear rather than overtly technical gear. The matte finish and structured shoulders give it a polished, corpo-adjacent silhouette while remaining functional enough for working-class daily wear. The detachable hood can be stowed or worn for full environmental protection.",
+    "fit": "Tailored but not restrictive—designed to layer comfortably over augmentation arrays and thermal wear without excess bulk. The torso is contoured, sleeves taper slightly, and the hem hits at mid-thigh for unrestricted movement. Articulated shoulder panels allow for arm extension without riding up.",
+    "primary_material": "Matte-finish weatherproof synth-composite shell (likely PTFE-bonded recycled polymer blend). Lightweight but durable, with a subtle texture that resists fingerprints and dust accumulation. Interior lined with microfiber and the thin-film heating mesh.",
+    "texture": "Smooth, almost suede-like matte outer surface with minimal sheen. The weave is tight and uniform, suggesting quality manufacturing. Interior heating layer feels delicate but resilient—almost imperceptible against skin.",
+    "color_scheme": "Neutral palette: charcoal, slate gray, or deep navy as primary. Subtle accent stitching in muted silver or off-white along seams. Zipper hardware in brushed steel or gunmetal. No loud branding—Axiom Systems logo is small, embroidered in understated position (shoulder or cuff).",
+    "closures": "Full-length weatherproof two-way zipper (magnetic-assisted for smooth engagement). Magnetic snap-down hood attachment points. Small haptic control panel recessed into left cuff beneath a fabric flap. No visible BCI integration port—wireless only.",
+    "distinctive_features": [
+      "Detachable hood with reinforced edging and integrated micro-vents",
+      "Deep cargo pockets with internal thermal-control bypass switches",
+      "Kinetic-charge cell indicator (small LED beneath left shoulder seam—visible only when active)",
+      "Haptic feedback control panel in left cuff (subtle raised outline under fabric)",
+      "Invisible thin-film heating element network (no visible gridwork)",
+      "Seam-sealed construction for full weatherproofing",
+      "Optional BCI neural interface compatibility (unmarked on exterior)",
+      "Integrated cable management loop inside for augmented sensor rigs"
+    ],
+    "tier_indicator": "Tier 3–4 crossover. The technology and build quality signal mid-tier corporate manufacturing, but the design avoids the ostentatious styling of Tier 2 luxury. Accessible to working-class professionals who can afford quality gear; aspirational for Tier 4 workers.",
+    "cultural_context": "Worn by GLMZ climate-control engineers, logistics personnel, night-shift technicians, and corpo field operatives who need gear that performs without announcing its intelligence. The smart layer is optional—meaning the wearer can choose whether to advertise their augmentation compatibility. This makes it neutral enough for those who value discretion.",
+    "condition_typical": "Breaks in beautifully with minimal wear; the matte finish hides scuffs and dust well. After months of use, creasing develops along movement points (elbows, shoulders) but remains dignified. Well-maintained units look nearly new; heavily used ones show subtle color variation from sweat and thermal cycling."
+  },
+  "image_prompt": "Axiom Systems ThermaLayer Smart Parka displayed on a sleek dark chrome mannequin in a moody brutalist concrete warehouse. The parka is charcoal gray with visible detached hood folded nearby. Moody blue-tinted LED lighting from above casts sharp shadows across the fabric, highlighting the matte texture and subtle stitching. Left cuff slightly pulled back to suggest the haptic control panel beneath the fabric. Urban GLMZ skyline visible through grimy warehouse windows in soft focus background. Shot as premium tech-wear catalog photography. --ar 2:3 --v 6"
 }

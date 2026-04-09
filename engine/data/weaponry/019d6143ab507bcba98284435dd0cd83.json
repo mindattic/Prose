@@ -41,5 +41,30 @@
     "tier 5",
     "lethal"
   ],
-  "parent_corponation": "Tessera Corponation"
+  "parent_corponation": "Tessera Corponation",
+  "related_entities": [
+    "Saodat Mirzoyan-Fubara",
+    "Tessera Corponation"
+  ],
+  "physical_description": {
+    "visual_profile": "A imposing, industrial directed-energy cannon resembling a hybrid between a particle accelerator and a precision surgical instrument. The weapon presents a stark, engineered silhouette with minimal ornamentation — all function, no flourish. The barrel assembly dominates the profile, a long tapered column that seems to taper toward an almost invisible aperture.",
+    "dimensions": "Main assembly: 185cm length, 45cm width at mount base, 110cm height on tripod. Barrel taper section: 120cm. Beam aperture: 5cm diameter.",
+    "weight_description": "Massively hefty — requires vehicle mounting or permanent emplacement. The tripod alone feels anchored to the earth; the gun itself resists casual handling with its distributed mass across the massive fusion capacitor core.",
+    "primary_material": "Brushed titanium-composite frame with embedded superconductor channels visible beneath transparent thermal-shielding panels. The barrel is a layered assembly of high-density ceramic and magnetized ferro-alloy.",
+    "finish": "Industrial matte gunmetal with sectional anodized panels in deep charcoal. Thermal-dissipation fins along the emitter neck show a polished, mirror-smooth surface. Wear patterns and scorch marks from repeated firing cycles visible around the barrel aperture.",
+    "color_scheme": "Gunmetal gray primary, charcoal black accents, with cobalt-blue luminescent coolant visible through reinforced viewport ports. Tessera Industries' corporate silver badge contrasts against the dark palette.",
+    "grip_texture": "Twin reinforced handles wrapped in rubberized polymer with integrated capacitive contact pads for power distribution and targeting. Non-slip, heat-resistant coating shows micro-abrasion from gloved operator hands.",
+    "distinctive_features": [
+      "Translucent thermal-monitoring viewport running the length of the emitter column, glowing faint blue with circulating coolant",
+      "Array of status LEDs (amber, red, green) clustered at the rear junction box indicating power state, thermal load, and targeting lock",
+      "Fine particulate exhaust vents along the barrel taper, designed to safely disperse ablated matter",
+      "Precision crosshair reticle marking visible on the minimal aperture opening",
+      "Angular heat-sink fins flared asymmetrically around the focusing coil — engineered for active thermal management",
+      "Cable conduit running from the weapon body to external fusion generator, shielded in reinforced armored flex-cable",
+      "Scorch and micro-ablation marks radiating outward from the barrel aperture — evidence of weapons testing"
+    ],
+    "manufacturer_markings": "Tessera Industries corporate logo (stylized geometric hourglass) stamped on the left thermal panel in brushed silver. Serial number and testing classification (TESSERA/MIL-CLASS-5/TEST) etched in small font on the junction box. Red warning placards with radioactive and directed-energy symbols mounted on the tripod base.",
+    "condition_typical": "Well-maintained but combat-worn. The weapon shows evidence of rigorous testing — the barrel aperture has micro-scarring patterns from repeated molecular-level discharge events, and the thermal vents display oxidized residue from dispersed ablated materials. No visible rust or corrosion, suggesting meticulous maintenance protocols. The finish retains its industrial integrity despite obvious field deployment."
+  },
+  "image_prompt": "Tessera Industries AMB-2 Eraser particle beam cannon on heavy tripod mount, photographed from low angle against dark composite backdrop. Dramatic side-lighting casting deep shadows across the barrel taper and thermal-panel assembly, highlighting the brushed titanium and charcoal anodized surfaces. The translucent coolant viewport glows faint cobalt blue with internal luminescence. Wear marks and micro-ablation scars visible around the barrel aperture catching the light. In the background, subtle hint of a vehicle-mounted fusion generator and cable conduit running out of frame. Industrial, clinical aesthetic emphasizing the weapon's precision engineering and lethal molecular-level design. Cinematic cyberpunk military hardware. --ar 3:2 --v 6"
 }

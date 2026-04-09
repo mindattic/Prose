@@ -45,5 +45,38 @@
     "ceramic",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Brecken Yılmaz-Osei",
+    "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
+    "GLMZ",
+    "Kang-Petrov Arms KPS-410 'Hallway'",
+    "Street Custom 'Glass Garden' Caltrops",
+    "TESSERA PG-2 'Signature'",
+    "TESSERA TC-3 'Crucible'",
+    "The Composite Index"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutally utilitarian break-action shotgun with a stocky, wedge-shaped profile. The receiver dominates the design — a massive, sculptural ceramic block that tapers toward a surprisingly short barrel. The silhouette reads as compact and aggressive, all business with zero aesthetic concession. Looks like a tool designed by someone who'd used it.",
+    "dimensions": "Overall length: 58 cm | Barrel length: 28 cm | Receiver width: 8.5 cm | Height (top of hammer to bottom of grip): 16 cm",
+    "weight_description": "Hefty but balanced. The 2.8 kg mass sits predictably in the hand — not unwieldy despite the wide receiver, because the weight is concentrated and compact. Feels purposeful, like holding a breach hammer that happens to shoot.",
+    "primary_material": "Ablonite-KR ceramic composite for the receiver and breech block. Steel internal mechanisms (hammer, trigger bar, sear). Reinforced polymer foregrip and stock sections. The barrel is chrome-lined steel.",
+    "finish": "The ceramic receiver has a matte, slightly grainy surface — unsealed Ablonite-KR, deliberately left to show micro-fractures and wear. Not polished. The steel internals show functional wear — smudged chrome with darkened edges where fingers grip. Overall impression is anti-gloss: designed to not reflect light in tactical situations.",
+    "color_scheme": "Primary: industrial grey-white (the Ablonite-KR ceramic, slightly off-white with shadow grain). Steel internals show dark gunmetal. Polymer grip sections: matte black. Minimal contrast — the weapon merges into industrial environments.",
+    "grip_texture": "Rough, aggressive polymer with deep horizontal grooves. Textured to bite even through gloves. The trigger guard is sharp-edged, unapologetic. Metal hammer spur is bare, unpadded.",
+    "distinctive_features": [
+      "Oversized, flat-topped ceramic receiver block with visible surface micro-fractures",
+      "Prominent top-mounted hammer with deep knurling",
+      "Wide, gaping breech opening when action is open — looks like a yawning mouth",
+      "Short, fat barrel with visible chrome bore",
+      "Functional wear patterns on ceramic where the action cycles",
+      "No rail systems, no accessory mounting — pure mechanical design",
+      "Stamped steel reinforcement bands around the receiver at hammer pin and breech",
+      "Minimal trigger guard, just a sharp bracket",
+      "Serial number etched into ceramic in small block text, almost invisible unless you know where to look"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES stamped in small serif letters on the left side of the ceramic receiver, positioned low. 'BA-4 DOORKNOCKER' engraved directly below in utilitarian block letters. Below that: 'BREACHING TOOL — NOT FOR MILITARY USE' (legal boilerplate). No logo flourish — all text is purely functional, industrial lettering.",
+    "condition_typical": "Well-maintained but visibly used. The ceramic receiver shows fine scratches and micro-cracks from repeated cycling and field contact. The steel internal parts show light oxidation from humidity exposure. Grip polymer has scuff marks from holstering and extraction. Everything points to regular use by someone who respects the weapon but doesn't baby it. The breech block has faint carbon residue around the edges from shell ejection."
+  },
+  "image_prompt": "Product photograph of the Crucible Industries BA-4 Doorknocker break-action shotgun, positioned at 45 degrees on a matte gunmetal grey surface. Dramatic side-lighting from upper left, casting sharp shadows that emphasize the blocky ceramic receiver and hammer geometry. The weapon is being held in a gloved tactical hand (black leather, visible wear) gripping the foregrip. Close-up detail showing the oversized ceramic receiver with its grainy, micro-fractured texture clearly visible. Chrome barrel reflecting narrow light lines. Ablonite-KR ceramic in cool industrial grey-white. Steel internals showing functional wear and dark patina. Background is soft black, keeping focus on the weapon's brutal geometry and material contrasts. Cyberpunk aesthetic: cold, utilitarian, forensically designed. Moody and tactical, no chrome or excessive detail — pure function. --ar 3:2 --v 6"
 }

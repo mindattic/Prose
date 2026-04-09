@@ -55,5 +55,24 @@
     "TESSERA CR-12 'Whisper'",
     "The Bazaar",
     "The Burnline"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A nondescript hooded cloak resembling a oversized streetwear hoodie or monk's garment. The silhouette is deliberately unremarkable—designed to blend into urban crowds without drawing attention. The hood is deep and shadowing, concealing the wearer's face when drawn.",
+    "dimensions": "Approximately 120-140 cm in length; hood opening roughly 35-40 cm wide. Sized to drape loosely over average adult frame while maintaining mobility.",
+    "weight_description": "Handheld/wearable at 1.2 kg; light enough for extended wear but noticeably substantial compared to standard clothing due to embedded electronics",
+    "primary_material": "Dense synthetic-polymer weave base fabric interlaced with conductive jamming fibers (appears as fine metallic threading running throughout)",
+    "finish": "Matte, non-reflective coating to minimize visual detection. Surface feels slightly stiff and technical rather than soft fabric—almost like reinforced textile. Micro-texture visible under close inspection from woven mesh pattern.",
+    "color_scheme": "Deep charcoal gray or matte black as primary; inner hood lining occasionally features faint iridescent shimmer (indicating signal-disrupting fiber matrix beneath). Accent stitching in dark gray or charcoal.",
+    "interface_elements": "Minimalist design: subtle power indicator (small LED embedded in right shoulder seam, cycles amber when active), recessed charging port hidden within left cuff seam (micro-USB or proprietary connector), palm-sized battery status display patch woven into inner collar (backlit text showing remaining hours). No external buttons—activation likely via pressure-sensitive fabric or near-field gesture.",
+    "distinctive_features": [
+      "Visible metallic fiber threading creates subtle geometric lattice pattern across fabric surface",
+      "Faint electrical hum when activated (imperceptible to most but detectable in quiet environments)",
+      "Slight static charge aura around hood perimeter when active (can cause minor hair lift)",
+      "Internal lining features orientation grid markers to help wearer center themselves in the 2-meter suppression radius",
+      "Reinforced collar area with subtle cable routing visible as raised ridges"
+    ],
+    "manufacturer_markings": "CARRION DEFENSE WORKS logo (angular corvid silhouette) embossed on inner neck label. Serial number and jurisdiction compliance stamps on interior right seam. Discreet TIER 2+ regulatory mark woven into hem. No external branding—designed for operational discretion.",
+    "condition_typical": "In active use, the cloak appears perfectly normal from distance; up close, the faint shimmer and fiber lattice suggest technical sophistication. When powered down, indistinguishable from any dark street garment. Light creasing and wear patterns develop naturally along fold lines. Battery indicator subtly glows in darkness when powered."
+  },
+  "image_prompt": "Carrion Defense Works Whisper Veil Counter-Surveillance Cloak displayed on a tech workbench in a dimly-lit GLMZ equipment lab. The cloak is draped over a featureless mannequin or hung from a equipment stand, hood raised and slightly angled. Dramatic side-lighting emphasizes the embedded metallic jamming fiber lattice running through the dark fabric, creating a subtle geometric shimmer. Small LED power indicator glows amber on the shoulder. Charging cable lies coiled nearby. The background shows blurred cybernetic equipment and holographic display panels. The overall aesthetic is industrial cyberpunk—moody, technical, with cool blue and amber accent lighting casting sharp shadows. The cloak's nondescript silhouette contrasts with the obvious technological sophistication visible in the material. --ar 3:2 --v 6"
 }

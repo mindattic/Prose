@@ -51,5 +51,26 @@
     "O'Hare Sovereign",
     "Oxidative Plasma Breath Lance OPBL-1 'Vestment'",
     "The Shelf"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A spectral echo of judicial authority: a deconstructed Spire robe worn as a statement of deliberate divestment. The silhouette is tall and austere, shoulders structured but not aggressive, hem reaching mid-calf. The overall impression is one of dignified bankruptcy—someone who walked away from everything except the garments themselves.",
+    "fit": "Relaxed through the body with architectural precision in the shoulders; the robe drapes cleanly without clinging. High-waisted trousers sit at the natural waist with a slight taper. The collarless shirt is tucked cleanly, creating vertical emphasis. The coat set reads as intentionally formal despite its degradation.",
+    "primary_material": "Original robe: premium ballistic-blend weave (Spire-grade, now faded to grey-charcoal). Collarless shirt: worn silk-analog with a subtle sheen loss. Trousers: tailored wool-composite twill. Shoes: genuine leather (wholecuts), resoled with functional Shelf-grade rubber.",
+    "texture": "Smooth but dull—the robe and trousers have lost their original luster through wear and hand-cleaning. The silk-analog shirt shows soft draping wrinkles. The shoes have the patina of expensive restoration: visible sole seams from rework, leather slightly creased but meticulously maintained. Ghost-stitching on the robe is faintly raised where panels were removed.",
+    "color_scheme": "Monochromatic grey palette: charcoal robe, medium grey shirt, trousers in faded charcoal with nearly invisible grey plaid. Shoes in aged tan leather. No accent colors—the austerity is deliberate. The effect is camera-film noir: every tone muted and worn.",
+    "closures": "Robe: magnetic snaps, corroded and barely functional (some snap with hesitation). Shirt: none (collarless, tucked). Trousers: high-waisted friction-fit with a minimal black hook-and-loop closure. Shoes: unadorned whole-cut wholecuts, no visible laces or hardware.",
+    "distinctive_features": [
+      "Ghost-stitching visible where rank insignia panels were surgically removed",
+      "Robe hem hand-restitched with uneven thread (appears done by the wearer)",
+      "Faded Spire-tier construction visible under minimal wear",
+      "Scratched neural port housing at temple—expensive BCI, no active power indicator",
+      "Shoes resoled twice; seams visible from Shelf-grade repairs",
+      "High-waisted trousers with faint grey plaid (luxury weave, now dulled)",
+      "All buttons and fastenings intentionally minimal and unadorned"
+    ],
+    "tier_indicator": "Tier 5 (sub-grade/ungoverned) worn by someone who originated in Tier 1. The garments are Spire-tier in origin but have been deliberately stripped, faded, and re-tailored. The neural port is top-shelf but unpowered—a relic of former status.",
+    "cultural_context": "Worn by someone who has *left* the system: a former judge, likely disgraced or voluntarily exiled. This is not poverty; it is renunciation. Every stitch and faded seam is a deliberate rejection of corpo identity. In the GLMZ, wearing Spire garments as a Tier 5 person signals either defiance, exile, or a dangerous past. The immaculate condition despite the degradation suggests obsessive maintenance—ritual, not function.",
+    "condition_typical": "Pristine but aged: no tears, no stains, but clear wear patterns. The hand-stitching and patch-work are evidence of self-maintenance over professional upkeep. Everything is faded by time and hand-washing, never by carelessness. This is a uniform of resignation, maintained with precision."
+  },
+  "image_prompt": "A tall, somber figure in a deconstructed judicial robe, photographed in cool overhead lighting against a brutalist concrete wall. The robe hangs cleanly, charcoal and grey, with visible ghost-stitching on the chest where insignia was removed. Below, high-waisted formal trousers with the faintest plaid, aged bespoke shoes with visible resoled seams. One temple shows a scratched, unpowered neural port housing. The model's posture is rigid, dignified, facing slightly away. Moody, desaturated palette; a single blue accent light catches the scratches on the port. Dark urban backdrop with utilitarian fixtures. Shot as a fashion documentation, not a portrait. --ar 2:3 --v 6"
 }

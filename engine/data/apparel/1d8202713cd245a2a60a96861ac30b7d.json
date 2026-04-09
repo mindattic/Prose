@@ -39,5 +39,26 @@
     "Tessera Corponation",
     "Tomasz Wren",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A crisp, authoritative lab coat with pronounced structure and subtle luxury markers. Sits at mid-thigh length with a commanding presence. The raised iridescent helix logo catches light at the left breast, signaling rank instantly to those who know TESSERA's internal hierarchy. The silhouette is professional but engineered for augmented bodies—deliberate asymmetries and panel work accommodate non-standard physiology.",
+    "fit": "Tailored through the shoulders with generous ease through the torso and back. The back panel features a structured vertical split seam running from collar to hem, designed to accommodate wingspan-adjacent geneware or dorsal modifications without distorting the coat's lines. Sleeves are cut slightly longer than standard, ending just above the wrist bone to allow magnetic cuff locks to sit cleanly. The collar is higher and stiffer than technician-grade coats, engineered to sit flush against fur-line, scaled, or modified neck tissue.",
+    "primary_material": "Heavy-weight biopel-weave—a proprietary TESSERA synthetic composite that resists Class 2 biocontaminants (viral, bacterial, and select fungal agents) without requiring overlay protection. The fabric has a subtle sheen and provides its own containment barrier.",
+    "texture": "Smooth and dense to the touch, with a slight waxy undercoat that enhances biocontaminant resistance. The raised thread logo adds tactile dimensionality. The back panel split seam is reinforced with visible topstitching in matching thread, providing both structural integrity and intentional visual emphasis of the modification accommodation.",
+    "color_scheme": "Clinical white as primary, with subtle warm gray undertones in the biopel weave that prevent harsh glare. The TESSERA helix logo is rendered in raised iridescent thread that shifts between deep teal and violet depending on light angle and viewing direction. Internal collar band is dark graphite. Magnetic cuff locks are brushed steel with faint blue indicator lights.",
+    "closures": "Half-twist magnetic locks at both cuffs—a proprietary TESSERA closure system that seals with a quarter-turn motion and locks with an audible micro-click. No traditional buttons or zippers on the front; the coat drapes closed with internal magnetic anchors that are invisible from the outside. The front closure creates a clean, uninterrupted line.",
+    "distinctive_features": [
+      "Raised iridescent helix logo at left breast—shifts color in light, marking wearer as Director-grade TESSERA staff",
+      "Structured back panel split seam running full length, deliberately designed to accommodate wingspan, gill, or dorsal geneware modifications",
+      "Half-twist magnetic cuff locks instead of elastic—signals rank and technical sophistication",
+      "Higher, stiffer collar engineered to sit cleanly against modified neck tissue (fur-line, scales, gills)",
+      "RFID-isolated internal pockets—visible as subtle raised edges in the side seams, used for proprietary genetic sequence data storage",
+      "Reinforced topstitching on back panel split seam in matching thread—structural and symbolic",
+      "No external buttons, zippers, or branding other than the logo—deliberately minimalist to emphasize the single ranking marker"
+    ],
+    "tier_indicator": "Tier 3-4 functional professional wear with luxury material markers. The biopel-weave, magnetic closures, and customization engineering signal technical resources and status within a major biotech corporation. The coat costs roughly 800-1200 Φ when issued.",
+    "cultural_context": "TESSERA employee uniform that encodes rank within the organization's strict hierarchy. Directors wear this; technicians wear visibly cheaper variants. Outside TESSERA facilities, the coat broadcasts significant biotech affiliation and draws deference in corpo-aligned neighborhoods and active suspicion in street-level or sub-grade districts where biotech research carries cultural baggage. Wearing a Director coat outside company facilities is considered either confident or reckless depending on the zone.",
+    "condition_typical": "When first issued, pristine and clinical. With wear, the biopel-weave develops a soft patina and the magnetic locks show minor scuffing. Long-term Director coat wearers may have visible stressing around the back panel split seam from years of geneware accommodation, and the iridescent logo may show subtle fading or micro-scratches from lab chemical exposure, but these marks are worn with quiet pride as proof of rank tenure."
+  },
+  "image_prompt": "A TESSERA Genomics Director coat displayed on a sleek dark mannequin with subtle augmented anatomy—subtle scaled or fur-textured neck detail visible where the collar sits. The coat is crisp white with slight warm gray undertones, photographed in cool clinical lighting from a three-quarter front angle. The raised iridescent helix logo at the left breast catches and shifts between teal and violet in the light. The back panel split seam is visible in a secondary angle shot, showing the deliberate structural opening. Magnetic cuff locks glint with faint blue indicator light. The background is a soft-focus biotech facility aesthetic—blurred lab equipment, dim blue safety lighting, and stainless steel surfaces. Moody, professional, authoritative. High contrast, clinical color grading. --ar 2:3 --v 6"
 }

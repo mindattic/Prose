@@ -39,5 +39,26 @@
     "Meridian Munitions Dispatch-45 'Last Word'",
     "Sorin Ekwensi-Balasanyan",
     "SynapTech IrisBloom Ocular Color Modulator"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A structured, utilitarian enforcement jacket with a rigid silhouette that commands presence. The wide-cut torso tapers slightly at the waist, designed to sit over augmented frames without restriction. The Arcturus sigil on the left breast is the only soft branding—matte gray on charcoal, understated but unmistakable. Shoulders are reinforced with visible trauma plate channels, creating angular, armor-like contours. The overall effect is controlled aggression: professional, imposing, but not quite militarized.",
+    "fit": "Relaxed through the torso and shoulders to clear dorsal ports and spinal housings; adjustable magnetic side panels allow customization for subdermal plating. Sleeves are standard length but cut wide enough for wrist-mounted augmentation interfaces. The back is deliberately roomy—a feature, not a flaw—to prevent bunching against spinal chrome.",
+    "primary_material": "ARCWEAVE-9 composite outer shell (rigid-flex ballistic weave); treated synthetic-leather reinforcement at shoulders and forearms; embroidered unit code on right sleeve in high-visibility thread. Lining is standard abrasion-resistant poly-blend, often customized by long-term wearers.",
+    "texture": "The outer shell has a matte, slightly dimpled texture from impact-absorption weaving. Trauma plate channels create subtle linear ridges across chest and shoulders. Seams are double-stitched and sealed. The wear pattern typically shows scuffing along the lower back and sleeves, with occasional heat-tape residue or patch adhesive from modifications.",
+    "color_scheme": "Primary charcoal-gray ARCWEAVE-9 with matte-gray Arcturus sigil. Accent colors vary by unit (dispatch codes embroidered in high-visibility yellow, red, or white). Many field-worn jackets show heat-tape patches in non-regulation colors—blues, greens, blacks—from personal modifications.",
+    "closures": "Full-length magnetic-snap front closure (allows rapid access to equipment); magnetic side panels that can be adjusted without unfastening the jacket; standard friction-fit collar with embossed Arcturus branding on the neckline loop.",
+    "distinctive_features": [
+      "Modular trauma plate channels rated for low-velocity ballistics—visible as raised horizontal lines across chest and shoulders",
+      "Wide-cut back silhouette designed to clear dorsal chrome ports and spinal augment housings",
+      "Embroidered unit code on right sleeve (required by dispatch protocol)",
+      "Matte-gray Arcturus sigil stamped on left breast—authority signifier that doesn't become a target",
+      "Magnetic side panels adjustable for subdermal plating and custom augmentation geometry",
+      "Double-sealed seams rated for fluid resistance (crowd-control scenarios)",
+      "High-wear zones at lower back, elbows, and wrists showing scuff patterns and patch repairs"
+    ],
+    "tier_indicator": "Tier 2-3 corporate enforcement—premium over civilian wear, visibly equipped for duty, but not the full-kit expenditure of higher-tier tactical operatives. The ARCWEAVE-9 composite is expensive enough to signal institutional backing; the modular design signals field-tested pragmatism over cutting-edge gear.",
+    "cultural_context": "Arcturus crowd-control jackets are the uniform of the GLMZ's middle-zone enforcement presence. To Shelf residents, the jacket represents both law and threat—protective order or threat of dispersal depending on context. Off-duty officers sometimes wear them unbuttoned in public spaces, generating complicated social reactions (authority flexed casually; a warning; a statement). Stolen jackets circulate on the gray market and are prized by Shelf gangs for pure intimidation value. Long-term officers customize their liners with personal patches, heat-tape insignia, and memorial tabs for fallen colleagues—a practice officially discouraged but universally tolerated.",
+    "condition_typical": "Field-worn jackets show scuffing, occasional heat-tape adhesive residue, and patrol wear at impact zones. Off-duty or lower-shift examples may appear cleaner, but even pristine examples retain the matte finish of active-duty use. Many bear witness to three, five, or ten years of crowd-response operations—visible in the layering of unofficial patches beneath the collar or along the inner lining."
+  },
+  "image_prompt": "A Tier 2-3 Arcturus enforcement officer stands in profile against the flickering neon haze of a GLMZ transit hub. The Arcturus CorpSec jacket is buttoned, charcoal-gray ARCWEAVE-9 catching moody sodium-orange and blue-white LED wash. The matte-gray Arcturus sigil on the left breast glows faintly under backlighting. Visible trauma plate channels run horizontally across the shoulders and chest, casting subtle shadows. The model's right sleeve shows an embroidered unit code in high-visibility yellow thread. Wide-cut silhouette accommodates chrome dorsal ports visible at the collar. The jacket bears subtle wear at the elbows and lower back—scuff marks, faded heat-tape residue from modifications. Dark urban environment, neon reflections on wet pavement, distant Iowan Behemoth silhouette in the fog. The jacket exudes controlled authority and fieldwork credibility. --ar 2:3 --v 6"
 }

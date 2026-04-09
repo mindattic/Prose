@@ -42,5 +42,42 @@
     "stopping_power",
     "lethal"
   ],
-  "parent_corponation": ""
+  "parent_corponation": "",
+  "related_entities": [
+    "Crucible Industries Long Arm LA-20 'Verdict'",
+    "Ebele Medina-Quaye",
+    "Ferrogate Enforcer Cruiser",
+    "Last Word",
+    "MERIDIAN",
+    "Nika Svensson-Kone",
+    "Oleander Tetteh-Vasyliev",
+    "Steel",
+    "Tessera Nexus Town Car",
+    "The Bazaar",
+    "The Compact",
+    "The Counter",
+    "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian full-size pistol with an unglamorous, squared-off silhouette. The Dispatch-45 looks exactly like what it is: functional, no-frills, mass-produced. Its aesthetic is pure industrial efficiency—no curves, no flourishes, no pretense. At first glance, it reads as cheap but honest.",
+    "dimensions": "Overall length 216mm, slide width 28mm, grip height 135mm, barrel length 127mm",
+    "weight_description": "Substantial but not burdensome—0.82kg feels solid in hand, providing good recoil management without excessive bulk. The weight is evenly distributed; it balances forward slightly at the muzzle.",
+    "primary_material": "Glass-filled nylon polymer frame, carbon steel slide",
+    "finish": "Matte phosphate steel on slide with a dull gray-black tone; satin polymer frame showing slight surface texture from injection molding",
+    "color_scheme": "Gun-metal gray slide with charcoal-black nylon frame; minimal contrast, deliberately unremarkable",
+    "grip_texture": "Coarse, slightly rubberized polymer with shallow horizontal grip serrations—functional but not comfortable, textured enough for a secure purchase in wet conditions",
+    "distinctive_features": [
+      "Molded-in sights (no separate rear sight post, front sight integrated into slide)",
+      "Recessed grip safety lever, visible but not prominent",
+      "Simple ejection port with no beveling",
+      "Flat-faced trigger guard, minimal styling",
+      "Takedown lever is stamped rather than precision-machined",
+      "Visible tool marks and minor casting imperfections on frame rails",
+      "Parkerized finish shows micro-scratches and patina from handling",
+      "No safety decals or instruction markings—minimal labeling"
+    ],
+    "manufacturer_markings": "Faint 'MERIDIAN MUNITIONS' stamp on left side of slide; 'DISPATCH-45' on right slide in small, utilitarian font; serial number stamped on frame (often worn or partially illegible after use)",
+    "condition_typical": "Field-worn but functional. Slide shows handling marks, minor finish loss at contact points, chamber/bore darkened by use. Frame exhibits scuff marks from holster wear. Sights are sharp. Action cycles smoothly despite cosmetic degradation. The gun looks like it belongs on a Shelf district enforcer's hip—practical, lived-in, still dangerous."
+  },
+  "image_prompt": "Product photography of a Meridian Munitions Dispatch-45 pistol: full-size .45 ACP semi-automatic with matte phosphate steel slide and black injection-molded nylon frame, positioned on dark gunmetal surface or held in gloved weathered hand. Shot with dramatic side-lighting emphasizing tool marks and utilitarian design. Close detail of molded sights, simplified trigger guard, and coarse grip texture. Cyberpunk aesthetic: industrial, no-frills, functional poverty. Include shallow depth of field on slide markings. Lighting is cool and clinical, highlighting the materials and manufacturing reality. --ar 3:2 --v 6"
 }

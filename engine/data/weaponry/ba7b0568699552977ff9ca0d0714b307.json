@@ -44,5 +44,39 @@
     "detection-evasive",
     "lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Alper Lebedev-Tutu",
+    "Arcturus Defense Solutions",
+    "Cutter Vane",
+    "Ebele Medina-Quaye",
+    "GLMZ",
+    "Ihaia Nystrom-Keita",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
+    "Street Custom 'Glass Garden' Caltrops",
+    "TESSERA PG-2 'Signature'",
+    "The Portico"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist electromagnetic scatter cannon with a pronounced angular aesthetic. The Shardstorm resembles a hybrid between a traditional shotgun and a scientific instrument—all hard edges, industrial geometry, and purposeful bulk. The rifled fracture sleeve barrel dominates the weapon's profile, visibly machined with internal stress-inducing ridges visible through the transparent breach housing. The overall impression is one of calculated violence: engineered, precise, and merciless.",
+    "dimensions": "Overall length 78 cm, barrel length 42 cm, width at receiver 8 cm, height with dorsal capacitor 12 cm",
+    "weight_description": "Hefty and front-weighted—5.6 kg distributed toward the barrel assembly. Feels purposeful and grounded in the hand, with substantial recoil impulse. Despite the weight, the balance point is aggressive rather than comfortable, making it a weapon designed for controlled bursts rather than sustained handling.",
+    "primary_material": "Reinforced polymer composite chassis with aluminum alloy receiver. The fracture sleeve barrel is precision-machined stainless steel with visible rifling geometry. Dorsal capacitor housing is carbon-fiber reinforced polymer.",
+    "finish": "Matte gunmetal gray primary finish with brushed aluminum accents around the receiver and charging mechanism. The fracture sleeve barrel displays a darker burnished finish from repeated electromagnetic cycling. Wear reveals pale composite substrate beneath, creating natural battle-worn striations.",
+    "color_scheme": "Gunmetal gray with brushed aluminum accents, black polymer grip, and faint indigo LED indicators at the capacitor junction. The internal rifling of the fracture sleeve creates a subtle metallic gradient visible through the transparent breach.",
+    "grip_texture": "Textured black polymer grip with vertical ridging for traction, designed to absorb recoil. Forward stock is wrapped in synthetic cord woven with conductive filament. The trigger guard is bare brushed aluminum—cold and utilitarian.",
+    "distinctive_features": [
+      "Transparent ammunition breach housing revealing the fracture sleeve's internal stress ridges",
+      "Prominent dorsal capacitor housing with faint indigo charging indicators",
+      "Linear electromagnetic accelerator coils visible beneath the breech area",
+      "Integrated autoloader magazine tube with engraved capacity markings (4 slugs)",
+      "Rifled fracture sleeve barrel with precisely machined internal stress lines",
+      "Heat vents along the receiver sides—ceramic-lined for electromagnetic discharge dissipation",
+      "Arcturus Defense Solutions logo stamped on the receiver in metallic plate",
+      "Charge status window with capacitor voltage scale etched in Φ-currency denominations"
+    ],
+    "manufacturer_markings": "Arcturus Defense Solutions hexagonal logo stamped in matte finish on the left receiver. Serial plate mounted below the breech with alphanumeric designation and manufacturing year (2224). 'SHARDSTORM SH-3' engraved in all-caps sans-serif font along the barrel shroud. Restricted ammunition warning symbol laser-etched on the magazine tube.",
+    "condition_typical": "Field-worn but meticulously maintained. The matte finish shows light scoring from tactical slings and environmental contact. The transparent breach housing often displays faint residue rings from ceramic fragmentation dispersal. The capacitor housing may show slight discoloration from electromagnetic cycling. Well-maintained examples appear almost surgical in their precision; heavily-used units develop a patina of use but retain mechanical integrity."
+  },
+  "image_prompt": "Product photography of the Arcturus Shardstorm SH-3 scatter cannon, mounted on a dark matte black tactical surface angled at 45 degrees. Dramatic side-lighting emphasizing the brushed aluminum receiver and the transparent breach housing revealing internal rifled fracture sleeve geometry. Gloved tactical hands (synthskin augmentation visible at wrists) positioned for chambering. Shallow depth of field isolating weapon details. Gunmetal gray finish catching hard specular highlights, faint indigo LED glow from capacitor indicators. Cyberpunk industrial aesthetic, sterile laboratory lighting, high contrast. Background blurred GLMZ security grid infrastructure. --ar 3:2 --v 6"
 }

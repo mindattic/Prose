@@ -46,5 +46,44 @@
     "tier 2",
     "less_lethal"
   ],
-  "parent_corponation": "Arcturus Defense Solutions"
+  "parent_corponation": "Arcturus Defense Solutions",
+  "related_entities": [
+    "Arcturus Defense Solutions",
+    "Arcturus Defense Solutions Kinetic Denial System KDS-4 'Bouncer'",
+    "Cogito",
+    "Cutter Vane",
+    "GLMZ",
+    "Glenville Sound",
+    "Ihaia Nystrom-Keita",
+    "Ilhan Sandstrom-Badu",
+    "Nika Svensson-Kone",
+    "Nnamdi Ostrowski-Faletolu",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "SynapTech ReadRoom Social Cue Enhancer",
+    "TESSERA GK-8 'Doorman'",
+    "Tessera Nexus Town Car",
+    "Vantablack Media Parasocial Carrier Mask"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist carbine with a distinctly industrial aesthetic — all hard angles and purposeful geometry. The Bouncer resembles a conventional tactical rifle but with a noticeably robust, reinforced receiver and oversized gas system. Its silhouette is aggressive yet clinical, designed to project authority rather than lethality.",
+    "dimensions": "Length: 680mm overall. Barrel: 410mm. Width at receiver: 65mm. Magazine well depth: 90mm.",
+    "weight_description": "Hefty but balanced — 3.1kg distributed toward the receiver. Feels substantial in the hands, with a low center of gravity that encourages controlled rapid fire. The gas tube and piston system add noticeable heft forward of the charging handle.",
+    "primary_material": "Aluminum 7075-T6 receiver with polymer handguard and furniture. Steel barrel and gas tube. Reinforced polymer magazine well rated for sustained friction.",
+    "finish": "Tactical matte black with brushed steel accents on the barrel and receiver. Polymer components have a slightly textured finish to reduce glare. Wear patterns typical of heavy deployment: scuffed edges, scratched rail systems, abraded paint on the magazine well.",
+    "color_scheme": "Primary: matte black. Accents: gunmetal gray on barrel and charging handle. Safety selector and magazine release rendered in high-visibility orange.",
+    "grip_texture": "Aggressive rubberized grip with pronounced waffle-pattern texture. Molded to encourage a firm, aggressive purchase. Furniture is hard polymer — unpadded and utilitarian.",
+    "distinctive_features": [
+      "Oversized gas block vented to manage higher-pressure impulses from composite rounds",
+      "18mm breech face markedly larger than conventional rifle bore to accommodate deformable projectiles",
+      "Magazine well reinforced with steel inserts to handle repeated loaded magazine impacts",
+      "Velocity indicator on receiver side — small numbered scale showing projected impact energy at various ranges",
+      "Integral rail system along receiver and handguard for mount points (optics, lights, additional grips)",
+      "Bold 'RL-2' designation stamped on both sides of receiver",
+      "Muzzle brake designed to scatter impact flash and dust, obscuring operator visibility during rapid fire",
+      "Magazine spring marked with wear grooves from high-velocity round cycling"
+    ],
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo stamped prominently on left receiver side. Serial number on bottom of receiver. 'LESS-LETHAL' and 'AUTHORIZED SECURITY USE ONLY' engraved on both sides of magazine well. Licensing compliance marks on the barrel.",
+    "condition_typical": "Well-maintained by standards of heavy-use equipment — regular cleaning evident in the receiver's finish, but the muzzle brake and furniture show carbon fouling and polymer discoloration. Magazines show extensive wear from field loading/unloading cycles. Paint chipped at edges where the weapon contacts vehicle mounts or riot shield racks."
+  },
+  "image_prompt": "Professional product photography of the Arcturus RL-2 Bouncer carbine lying on a matte black tactical mat, positioned at 45 degrees. Overhead dramatic side-lighting casting hard shadows on the gas block and receiver. Close detail shot showing the oversized 18mm breech face and reinforced magazine well. Worn matte black polymer with gunmetal steel accents. Orange safety selector visible. ARCTURUS logo clearly lit on receiver. Cyberpunk aesthetic: clinical, industrial, authoritarian design language. Shallow depth of field. Cold color temperature with hints of amber reflection on the barrel. --ar 3:2 --v 6"
 }

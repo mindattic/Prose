@@ -51,5 +51,26 @@
     "TESSERA PG-2 'Signature'",
     "The Shelf",
     "VitaCore BloomFilter Olfactory Modulation Implant"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A dramatic full-length cloak with structured shoulders and a deep, voluminous hood. When inactive, it presents as an elegant charcoal garment with a subtle oil-slick iridescence that shifts between deep purples and teals in certain light. The silhouette is deliberately imposing—broad at the shoulders, flowing to the ankles—designed to obscure body shape entirely. Activation renders the wearer nearly invisible, with only faint shimmer artifacts visible at edges.",
+    "fit": "Generously cut through the shoulders and torso to accommodate the power cell panel at the small of the back without visible bulging. The cloak drapes loosely, allowing freedom of movement. The hood is deep enough to completely obscure facial features when pulled forward.",
+    "primary_material": "Meta-material photonic lattice textile—a proprietary weave combining synthetic fibers with embedded light-bending photonic circuitry. The base is a treated ballistic-grade synth-wool composite for durability and weight distribution.",
+    "texture": "Smooth and slightly cool to the touch, with an almost liquid surface quality. Up close, the fabric reveals an intricate geometric micron-pattern that refracts light. When inactive, it appears almost oily, with a subtle shimmer. The interior lining is soft matte nanofiber for comfort against skin and augmentations.",
+    "color_scheme": "Deep charcoal with iridescent shifts to oil-dark teals, purples, and gunmetal grays depending on viewing angle and ambient light. When activated, the cloak appears to match its background with minor chromatic aberration at edges.",
+    "closures": "Magnetic closure points hidden beneath the left front panel; a reinforced friction-fit clasp at the neck that doubles as the BCI trigger zone. The power cell access panel at the small of the back is sealed with a biometric lock.",
+    "distinctive_features": [
+      "Embedded photonic lattice visible as faint grid patterns in the weave",
+      "BCI-triggered activation zone woven into the neckline clasp",
+      "Flat power cell panel housing at the small of the back (subtly outlined)",
+      "Deep structured hood with reinforced rim",
+      "Aurelux branding—a minimal luminescent Φ symbol on the inner neck tag that glows faintly when powered",
+      "Interior pockets lined with signal-blocking material",
+      "Slight wear at the hem and sleeve cuffs despite the garment's newness—intentional distressing to suggest legitimate use rather than fresh black market acquisition"
+    ],
+    "tier_indicator": "Tier 5 exclusive—this garment exists in a grey zone between corpo-tech and street-level acquisition. Official sales are restricted to verified Tier 5 clients, but black market copies and grey-market authentic pieces circulate among those with connections and Φ to spare.",
+    "cultural_context": "Worn by corporate infiltration specialists, high-tier fixers, black ops contractors, and the genuinely paranoid ultra-wealthy. Possession signals either deep corpo connections, illegal acquisition capabilities, or significant underground credibility. In sub-grade zones, wearing one is a statement of either serious capability or serious debt.",
+    "condition_typical": "Pristine electronics with deliberately weathered edges. The garment is built to last, so visible wear is usually cosmetic—fraying at the hood rim, slight discoloration at pressure points from the power cell—rather than structural. Many owners obsessively maintain them; some cultivate a deliberately roughed appearance to avoid attention."
+  },
+  "image_prompt": "A figure in a floor-length charcoal cloak with deep hood pulled forward, obscuring their face entirely. The fabric shimmers with subtle oil-slick iridescence—hints of teal and purple visible as they move. One hand emerges from the draped folds, showing chrome augmentation. The cloak appears to be mid-transition between inactive and active states, with faint shimmer artifacts and light-bending distortions rippling across the surface. Background is a moody GLMZ street at dusk—rain-slick pavement, neon signage bleeding through semi-transparent geometry. Narrow depth of field keeps the figure sharp while the urban backdrop softens. Dramatic sidelighting emphasizes the fabric's iridescent properties and the subtle glow of the Φ symbol barely visible at the neckline. Cyberpunk noir aesthetic, high contrast, cinematic. --ar 2:3 --v 6"
 }

@@ -35,5 +35,25 @@
   ],
   "related_entities": [
     "Brighton Arc"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Sleek, minimalist eyewear with a distinctly tech-forward aesthetic. The frames sit comfortably bridging the gap between high fashion and functional equipment, suggesting both intelligence and capability. Angular titanium geometry catches light with subtle highlights.",
+    "fit": "Snug but not constrictive; sits slightly raised on the bridge to accommodate micro-projectors integrated into the frame arms. Adjustable nose pieces and temple grips ensure stability during movement.",
+    "primary_material": "Titanium-alloy frame with aerospace-grade polymer bridges. Photochromic lenses shift from optically clear to gradient smoke gray.",
+    "texture": "Frame has a brushed metallic finish with fine crosshatching for grip. Lenses are smooth glass with a faint holographic iridescence visible at shallow angles. The neural-port adapter junction on the right temple has a subtle textured grip.",
+    "color_scheme": "Gunmetal gray titanium with charcoal lenses. Accent highlights in pale blue (inactive HUD projection indicators) along the inner frame edge.",
+    "closures": "Friction-fit temples with micro-adjusters; no traditional closures—secured by design tension and ergonomic fit.",
+    "distinctive_features": [
+      "Micro-holographic projectors embedded in frame arms",
+      "Standard neural-port adapter socket on right temple",
+      "Photochromic lens technology with gradient transition",
+      "Kessler Optics branding etched subtly on left temple",
+      "Ventilation channels along top of frame to prevent lens fogging",
+      "Minimal bezels to maximize field-of-view projection area"
+    ],
+    "tier_indicator": "Tier 2–3 professional-grade. Expensive enough to signal financial stability and technical competence, but not so exclusive as to mark the wearer as extreme wealth.",
+    "cultural_context": "Courier, fixer, mid-tier corpo analyst, data broker, or anyone who moves through the city with purpose and information at their fingertips. Signals a person who lives in augmented layers—not fully chrome, but deeply integrated with the network.",
+    "condition_typical": "Pristine to lightly used. Professional maintenance keeps them clean and functional. Occasional micro-scratches on lenses from heavy use, but owners take pride in their upkeep."
+  },
+  "image_prompt": "Close-up fashion shot of Kessler Optics ARC-7 AR glasses worn by a sharp-featured model with mixed heritage, moody blue-gray neon lighting reflecting off the titanium frame and photochromic lenses. The HUD projection glows faintly in the glass. Dark urban warehouse background with rain-slicked concrete and distant holographic signage. Shallow depth of field, focus on the glasses themselves. Cyberpunk professional aesthetic. --ar 2:3 --v 6"
 }

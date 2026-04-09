@@ -40,5 +40,26 @@
     "Tessera Nexus Town Car",
     "The Threshold",
     "VitaCore ClearCourse Addiction Suppressor"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "Institutional medical wear with deliberate looseness for emergency mobility. The silhouette reads clinical but tactically considered — a uniform that signals both care and containment. Wearer appears ready for physical exertion and biological hazard.",
+    "fit": "Intentionally relaxed through the torso and sleeves to accommodate full range of motion and layered armor inserts. Tapered at wrists and ankles with reinforced elasticized cuffs. Pre-fitted port-access panels at wrists, forearms, and neck that contour around augmentation without bunching.",
+    "primary_material": "Tight-weave synthetic ballistic composite designed for fluid resistance and decontamination durability. Feels smooth and cool to touch, slightly stiff when new. Faintly reflective under certain angles.",
+    "texture": "Smooth, clinical finish with subtle ribbing along reinforcement seams. Port-access panels are slightly raised with elasticized edges. Neck and cuff linings (when geneware-modified version) are soft synthetic fur, contrasting the rigid body fabric.",
+    "color_scheme": "Institutional Lazarus teal as primary — a blue-green that reads both medical and corporate. Crisp white caduceus-serpent logo on left chest. Right shoulder features a matte-finish QR-patch with biodata encoding. Natural fabric wear creates lighter stress-pattern zones.",
+    "closures": "Full-length magnetic snap front closure with concealed overlap. Elasticized wrist and ankle cuffs with friction-fit adjustment. Reinforced seams throughout — designed to withstand repeated decontamination spray-downs.",
+    "distinctive_features": [
+      "Pre-reinforced port-access panels at wrist, forearm, and dorsal-neck BCI standard locations",
+      "Elasticized conforming zones around augmentation ports that stretch to different chrome profiles",
+      "QR-linked ID patch on right shoulder — feeds credentials to hospital intake systems on scan",
+      "Caduceus-serpent branding in high-visibility white on left chest",
+      "Concealed torso panel slots designed for armor inserts (unofficial but accommodated in spec)",
+      "Optional tail-slot rear panels and furred collar/cuff linings for geneware-modified staff",
+      "Slightly oversized cut allows layering of tactical inserts without visible bulk"
+    ],
+    "tier_indicator": "Tier 2-3 functional. High durability and technical features signal institutional access. The teal color carries ambiguous status — lifesaving in Tier 1, predatory billing in others.",
+    "cultural_context": "Lazarus triage staff exist in liminal space: neither street medics nor corpo doctors, but the threshold enforcers. Wearing this uniform means you answer calls from both clinics and alleyways. Personal modifications and patches are common — staff humanize the corporate teal with individual markers.",
+    "condition_typical": "Field-worn but meticulously maintained. Micro-stress patterns from repeated decontamination spray-downs visible around seams. Small reinforcement patches common at high-flex zones. Logos crisp but fabric slightly faded from exposure. Personal patches or insignia often added by wearer over time."
+  },
+  "image_prompt": "Lazarus paramedic in institutional teal scrub uniform photographed against neon-lit clinic corridor backdrop. Cyberpunk model with visible forearm chrome port access and wrist BCI augmentation, posed in readiness stance. Scrub fabric catches overhead fluorescent and blue emergency lighting. Close detail on reinforced port-access panel conforming around chrome wrist. QR-patch visible on right shoulder glowing faintly. Dark atmospheric lighting with medical green accent lighting. Moody, clinical, utilitarian. Worn condition with subtle stress patterns visible on fabric. Shot composition emphasizes both medical functionality and tactical readiness. --ar 2:3 --v 6"
 }

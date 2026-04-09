@@ -47,5 +47,24 @@
   "parent_corponation": "",
   "related_entities": [
     "Tomasz Wren"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian desktop device resembling a toaster-oven hybrid with aggressive angular edges. Matte charcoal housing with visible internal chamber behind reinforced polycarbonate window. Design prioritizes function over aesthetics — industrial, unadorned, built to survive heavy handling.",
+    "dimensions": "28cm wide × 22cm deep × 18cm tall; roughly equivalent to a microwave but more compact",
+    "weight_description": "1.5 kg; handheld but with carrying handle molded into top panel; designed for portable workspace mounting",
+    "primary_material": "Brushed aluminum frame with impact-resistant polymer housing; internal processing chamber lined with stainless steel",
+    "finish": "Matte powder-coat charcoal with fine abrasion marks from field use; scuffed aluminum trim showing underlying metal; anti-microbial coating visible as slight iridescent sheen under direct light",
+    "color_scheme": "Gunmetal gray primary with accent strips of industrial orange along top edge; status indicator ring glows cyan when idle, shifts to acidic yellow during processing",
+    "interface_elements": "Single rotary input dial on lower right (material density selector); three-button cluster (START/STOP, BATCH COUNTER, VITAMIN BLEND TOGGLE); LED strip running vertical along left edge showing battery charge; circular button-press release for output tray; small mono LCD screen (3cm) displaying process timer and remaining charges",
+    "distinctive_features": [
+      "Transparent processing chamber window allows visibility of material conversion; contents appear to roil and crystallize",
+      "Modular input hopper with translucent ribbed design — removable for cleaning organic residue",
+      "Segmented output tray with six individual bar-slots; bars eject automatically when pressed",
+      "Venting grill on rear emits faint thermal shimmer and faintly acrid chemical smell during operation",
+      "Heavy-duty power connector rated for solar or drone-dock charging — proprietary multi-pin design"
+    ],
+    "manufacturer_markings": "Street Custom logo (angular SC monogram) embossed on top; regulatory compliance stamps for GLMZ Tier waste-processing certification; serial number etched on rear panel; small warning label in faded yellow text: 'REPEAT: THIS DOES NOT TASTE GOOD'",
+    "condition_typical": "Usually appears worn — dust accumulation around vents, organic residue dried on hopper edges, scratches across polycarbonate window from improper cleaning, power connector shows oxidation from frequent dock cycles, surface scratches indicating field repairs with industrial sealant tape"
+  },
+  "image_prompt": "Product photography of the Street Custom 'Last Meal' fabricator sitting on a weathered metal workbench in harsh neon lighting. Workbench surface scattered with organic waste scraps, discarded ration bars, charging cables. Device photographed at 3/4 angle with processing window illuminated from inside showing swirling nutrient material mid-conversion. Dramatic cyan and orange accent lighting from above. Background shows blurred urban GLMZ workspace — modular housing wall, hanging power conduits, chrome pipes. Cinematic depth of field with sharp focus on device interface and material window. Moody, industrial cyberpunk aesthetic emphasizing survival-tier technology. --ar 3:2 --v 6"
 }

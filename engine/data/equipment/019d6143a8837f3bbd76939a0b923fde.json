@@ -81,5 +81,24 @@
     "TESSERA PG-2 'Signature'",
     "The Pure Hand",
     "Zheng-dao Bioelectric"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A sleek, handheld bioelectric sensor unit with an aggressive ergonomic grip. The main body is angular and compact, designed for one-handed operation. A prominent central spike probe extends downward when deployed, flanked by a constellation of six smaller contact points that fan outward like a spider's legs. The overall impression is surgical precision meets underground infiltration tech.",
+    "dimensions": "Central unit 220mm tall × 80mm wide × 60mm deep; full probe assembly extends 450mm when deployed. Handheld primary unit, backpack-portable full kit.",
+    "weight_description": "1.8kg total — light enough for extended fieldwork, requiring only a chest harness or equipment belt for hands-free carry. Main unit fits comfortably in a tech-loadout vest.",
+    "primary_material": "Aerospace-grade polymer composite body with reinforced titanium contact points and injection-molded rubber grip sections. Central probe spike is hardened steel with conductive coating.",
+    "finish": "Matte charcoal primary finish with high-visibility contact points marked in neon cyan. Grip sections feature micro-textured rubber for wet/gloved operation. Wear-resistant coating shows minor scuffing typical of field use.",
+    "color_scheme": "Charcoal grey body with cyan-phosphorescent contact markers. Accents in muted industrial orange on cable ports. Status indicators glow soft green (standby) or active blue during operation.",
+    "interface_elements": "Recessed 4.3-inch curved display screen (rear-facing for operator readout), mechanical tactile buttons for mode selection (SCAN/SWEEP/CALIBRATE), micro-USB power/data port, threaded contact-wire coupling points, LED status ring around main probe injection point.",
+    "distinctive_features": [
+      "Six articulated peripheral contact probes that deploy radially from the main spike — resembles a biotech specimen probe",
+      "Central spike features micro-etched depth markings every 10cm",
+      "Circular LED ring that pulses during galvanic injection cycles, shifting from blue to violet as conductivity increases",
+      "Grip texture mimics neural pathways — subtle raised ridges that improve tactile feedback",
+      "Data-sync port glows softly when connected to external displays"
+    ],
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC stamped in small caps on upper left corner. Model designation 'GTS-7.2' laser-etched on grip. Regulatory compliance marks (GLMZ Environmental, Bioelectric Safety Commission) on rear panel. Serial number engraved on contact spike base.",
+    "condition_typical": "Regular field units show soil residue in contact point crevices, minor corrosion on exposed steel, display screen with minor dust/moisture condensation in high-humidity environments. Cable ports often wrapped with weatherproofing tape. Well-maintained units have the cyan markers still bright; field-worn examples show faded or dulled contact point markers."
+  },
+  "image_prompt": "Product photography of a Zheng-Dao Bioelectric Galvanic Terrain Scribe on a concrete-textured workbench. The device sits at a 45-degree angle with its six peripheral contact probes deployed outward in a threatening stance. The central spike probe is driven into a cross-section of soil-filled resin block to show penetration. Dramatic backlighting emphasizes the cyan phosphorescent contact markers glowing softly. The display screen shows a layered subsurface scan visualization in blues and yellows. Surrounding the device are scattered soil samples, a calibration standard, and a weathered field notebook. Dark moody cyberpunk lighting with hard shadows. High-tech laboratory atmosphere with gritted, industrial aesthetics. Close product shot with shallow depth of field. --ar 3:2 --v 6"
 }

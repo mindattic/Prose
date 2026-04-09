@@ -41,5 +41,36 @@
     "tier 4",
     "lethal"
   ],
-  "parent_corponation": "Crucible Genomics"
+  "parent_corponation": "Crucible Genomics",
+  "related_entities": [
+    "Alper Holmberg-Dembele",
+    "GLMZ",
+    "Glenville Sound",
+    "Nika Svensson-Kone",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
+    "TESSERA PG-2 'Signature'",
+    "TESSERA TC-3 'Crucible'"
+  ],
+  "physical_description": {
+    "visual_profile": "A brutalist support weapon with aggressive angular lines. The CP-8 presents as a compact, bullpup-oriented platform dominated by a distinctive rotating barrel cluster at the muzzle — three gleaming cylinders arranged in a triangular formation that dominate the front profile. The weapon has a wedge-like receiver with pronounced top rails and venting, giving it a predatory, heat-management aesthetic. At full profile, it reads as industrial and purposeful rather than sleek.",
+    "dimensions": "Overall length: 67 cm. Barrel cluster diameter: 4.2 cm. Width at receiver: 8.5 cm. Height with sights: 12 cm.",
+    "weight_description": "Dense and authoritative in the hand — 11.2 kg of weapon alone demands respect and core strength to manipulate. Balanced forward of the trigger group to manage rotational momentum of the barrel cluster. With backpack magazine system connected, the platform becomes a two-piece unit with distributed weight — heavy but not unwieldy for sustained suppressive fire.",
+    "primary_material": "Reinforced polymer composite receiver with steel barrel cluster and rotating breach housing. Feed chute and magazine coupling points are hardened steel. Buttstock incorporates shock-absorbing elastomer.",
+    "finish": "Matte graphite polymer with brushed steel barrel assembly. The barrel cluster shows visible heat-bluing from sustained fire cycles — intentional aesthetic that signals the weapon's thermal pedigree. Receiver rails have a anodized gunmetal finish with subtle grooving for equipment mounting.",
+    "color_scheme": "Charcoal gray polymer body with steel-silver barrel cluster. Accent trim in tactical orange on the charging handle and magazine coupling indicator.",
+    "grip_texture": "Rubberized pistol grip with aggressive stippling for wet-glove handling. Magazine housing grip (on backpack unit) uses softer elastomer for extended carry comfort. Fore-grip is wrapped in textured neoprene with beveled edges.",
+    "distinctive_features": [
+      "Three-barrel rotating cluster with individual heat sinks machined into the shroud",
+      "Large spiral grooves on barrel housing for visual heat dissipation design language",
+      "Prominent feed chute with armored flex coupling connecting to backpack magazine",
+      "Charging handle positioned high and rearward, chrome-plated and oversized for gloved operation",
+      "Picatinny rail running full length of receiver with secondary rails on both sides",
+      "Thermal indicator stripe (color-shift paint) running along receiver — green at cold, yellow at warm, red at critical",
+      "Audible feedback port with acoustic amplification chamber beneath muzzle brake",
+      "Magazine coupling lock mechanism with redundant fail-safe indicators"
+    ],
+    "manufacturer_markings": "CRUCIBLE INDUSTRIES stamped in angular sans-serif on the receiver left side. Model designation 'CP-8' on the dust cover. Serial plate mounted on the barrel cluster housing. Tier 4+ military authorization stamp on the magazine coupling. CASELESS 6MM etched near the feed port.",
+    "condition_typical": "Field units show visible heat-bluing progression on barrel clusters from sustained cyclic fire. Polymer shows micro-scratches from equipment contact and sand infiltration in urban environments. Magazine coupling points bear minimal wear despite frequent detachment. Operators often customize rail-mounted accessories, leaving variable coverage patterns."
+  },
+  "image_prompt": "Professional weapons catalog photography of the Crucible Industries CP-8 'Deluge' squad support weapon. Three-quarter angle view against matte dark charcoal surface. Focus on the distinctive rotating barrel cluster at muzzle — three gleaming steel cylinders arranged triangularly with visible heat-bluing and thermal sink machining. Weapon held in a gloved tactical hand (black tactical gloves with chrome knuckle reinforcement visible). Dramatic side-lighting from upper left creates strong shadows across the bullpup polymer receiver and emphasizes the brushed steel barrel assembly. The thermal indicator stripe shows yellow-orange progression along the receiver. Backpack magazine connection visible in soft focus behind weapon. Hard cyberpunk aesthetic with industrial color grading. Cold, tactical atmosphere. Military-spec condition with battle-worn polymer and precision-maintained steel. Professional product photography, high contrast, sharp focus on barrel cluster detail. --ar 3:2 --v 6"
 }

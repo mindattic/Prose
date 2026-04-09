@@ -61,5 +61,28 @@
     "The Seam",
     "Thermite Cavity Disbursement Shell TCDS-3",
     "Tympanic Membrane Galvanic Rupture Carbine"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A utilitarian factory uniform that reads as pure function—blocky silhouette, layered protection, visual weight concentrated at the torso and feet. The wearer appears grounded, built for 12-hour shifts on a production floor. Dull orange and charcoal create a visual rhythm of safety protocol meeting industrial grime. The dangling goggles and repositioned bump cap suggest mid-shift fatigue and familiarity with the work.",
+    "fit": "Relaxed and intentionally loose through the torso for movement and layering; structured at the shoulders from the work coat; tapered slightly at the ankles by the self-tightening boot straps. Sleeves designed for both removal and accommodation of chrome augmentation without compromise.",
+    "primary_material": "Flame-resistant charcoal canvas work coat and trousers; faded safety-orange crew-neck work shirt in reinforced synthetic cotton blend; composite safety boots with puncture-resistant polymer midsole; hardshell polycarbonate bump cap",
+    "texture": "Worn-soft canvas with subtle scuffing and heat-stress marks; reinforced patches feel thicker and stiffer; visible double-stitching at stress points; scratched, frosted goggles lens; self-tightening ankle strap has a tacky grip texture",
+    "color_scheme": "Charcoal gray as dominant; muted clay-orange (faded from safety orange) on shirt; bright dull orange accent on Crucible logo and bump cap; one mismatched goggles arm in a contrasting shade (possibly yellow or lime)",
+    "closures": "Snap fasteners on jacket sleeves for quick removal; traditional button-front on work shirt; cargo-style snap pockets on trousers; friction-fit self-tightening boot ankle strap; elastic goggles band",
+    "distinctive_features": [
+      "Heat-transfer printed Crucible hex-and-anvil logo across upper back in dull orange",
+      "Snap-off sleeves for floor adaptability",
+      "Left-sleeve aug-accommodation channel stitched into seam for flush chrome hardware integration",
+      "Double-stitched thigh reinforcement panels",
+      "Full ring of tool eyelets at waist—multiple loops for hammer and wrench attachment",
+      "Clear-window ID slot on right chest pocket",
+      "Scratched and partially damaged safety goggles with mismatched replacement arm",
+      "Hardshell bump cap with wear marks and scuffing",
+      "Thick composite sole boots with visible tread wear"
+    ],
+    "tier_indicator": "Tier 3–4 (working class, essential operations). The uniform signals neither wealth nor sub-grade desperation, but rather institutional stability and blue-collar necessity. Well-maintained but clearly worn.",
+    "cultural_context": "Factory floor operative, shift worker, Crucible Industries employee. The wearing of this uniform signals membership in the industrial backbone of the GLMZ—someone who keeps systems running. The aug-accommodation detail suggests familiarity with chrome and integration into corpo augmentation culture, but at the working level rather than executive tier. The mismatched goggles and pushed-back cap reveal personality within institutional constraint.",
+    "condition_typical": "Broken-in and worn, but not destroyed. Canvas shows heat-stress discoloration and minor fraying at edges; shirt is faded from countless washings; patches are clean and functional; boots show tread wear and minor scuff marks. The uniform reads as maintained equipment rather than salvage."
+  },
+  "image_prompt": "A Crucible Industries floor worker in full shift uniform stands under harsh industrial sodium lighting in a steel-and-concrete factory setting. The model—mid-thirties, mixed heritage, subtle chrome visible at one wrist—wears the charcoal flame-resistant jacket with snap-off sleeves rolled back, revealing the faded safety-orange crew shirt with reinforced elbow patches and the telltale aug-accommodation seam running down the left arm. Heavy canvas work trousers with visible tool eyelets and a hammer loop. Composite safety boots with self-tightening straps. Scratched safety goggles hang around the neck, one arm a mismatched yellow. The hardshell bump cap sits pushed back on the forehead. The Crucible hex-and-anvil logo glows dully in the light across the upper back. Background: stacks of metal stock, machinery, and warning tape. Moody, saturated color grading. Documentary-style realism. --ar 2:3 --v 6"
 }

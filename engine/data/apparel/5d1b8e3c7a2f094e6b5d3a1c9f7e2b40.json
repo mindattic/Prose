@@ -41,5 +41,24 @@
   "related_entities": [
     "Nodar Kuznetsov-Adu",
     "Tessera Industries Memory Rounds MR-2 'Recall'"
-  ]
+  ],
+  "physical_description": {
+    "visual_profile": "A refined ankle boot with a tapered silhouette that bridges utilitarian function and minimalist elegance. The design reads as contemporary corporate-casual, neither overtly tech-forward nor dated. Sits at mid-ankle with a subtle forward rake, creating a dynamic visual line when standing.",
+    "fit": "Snug through the arch and heel with structured ankle support; slightly roomy in the toe box for circulation. The silhouette appears slim without compression, suggesting engineered efficiency rather than fashion excess.",
+    "primary_material": "Premium synth-leather exterior with subtle grain texture; thermoregulation mesh lining visible at the cuff seam",
+    "texture": "Smooth, almost glass-like outer surface with micro-grain detailing; inner lining is soft, breathable mesh with embedded conductive filaments barely perceptible to touch",
+    "color_scheme": "Available in charcoal (matte, light-absorbing), navy (subtle satin undertone), and sand (warm, neutral); minimal accent stitching in matching thread tone",
+    "closures": "Full-length concealed side zip with smooth pull tab; friction-fit ankle collar with subtle elastic reinforcement",
+    "distinctive_features": [
+      "Embedded thermoregulation layer—no visible vents or grilles, maintaining clean aesthetic",
+      "Barely-noticeable seam pattern around the cuff indicating the tech integration",
+      "Subtle Velantis Systems logo (small, embossed, left heel counter)",
+      "Conductive mesh lining creates faint shimmer under direct light",
+      "Micro-textured sole with heat-dissipating properties"
+    ],
+    "tier_indicator": "Tier 2 luxury—high-end corporate augmentation without ostentation",
+    "cultural_context": "Signals corporate professional or corpo-adjacent worker who values invisible tech integration; someone who commutes between climate-controlled executive zones and street-level meetings. Practical for someone who works across multiple GLMZ thermal zones.",
+    "condition_typical": "Pristine when new; develops subtle scuff patterns on the toe box and heel from daily wear; the lining may show mild discoloration from sweat after months of use, but the thermoregulation efficiency remains stable"
+  },
+  "image_prompt": "Close-up fashion shot of charcoal Velantis Thermcore Mid Boot on a augmented model with visible chrome ankle implant on one leg, standing in a neon-lit GLMZ subway corridor. Cool blue and amber lighting casting sharp shadows across the boot's smooth surface, revealing subtle thermoregulation mesh at the cuff. Dark polished concrete floor below. Moody, corporate-noir aesthetic. Shot from side angle emphasizing the structured silhouette and seamless tech integration. --ar 2:3 --v 6"
 }
